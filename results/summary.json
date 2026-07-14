@@ -1,0 +1,141 @@
+{
+  "methods": [
+    {
+      "method": "semantic_rag",
+      "mean_composite_score": 0.4114583333333333,
+      "mean_llm_judge": 0.4166666666666667,
+      "mean_token_f1": 0.3125,
+      "exact_match_rate": 0.4166666666666667,
+      "contains_answer_rate": 0.5,
+      "total_tokens": 16242,
+      "prompt_tokens": 15700,
+      "completion_tokens": 542,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 0.14166312498855405,
+      "mean_query_latency_seconds": 1.5544654444189898,
+      "p95_query_latency_seconds": 2.0487364020518726,
+      "total_elapsed_seconds": 32.748532750003505,
+      "tokens_per_query": 1353.5
+    },
+    {
+      "method": "graph_rag",
+      "mean_composite_score": 0.11073717948717948,
+      "mean_llm_judge": 0.18333333333333335,
+      "mean_token_f1": 0.009615384615384616,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.25,
+      "total_tokens": 6725,
+      "prompt_tokens": 3584,
+      "completion_tokens": 3141,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 277.3378802500083,
+      "mean_query_latency_seconds": 14.815198913160808,
+      "p95_query_latency_seconds": 20.99191643314407,
+      "total_elapsed_seconds": 477.8677461250045,
+      "tokens_per_query": 560.4166666666666
+    },
+    {
+      "method": "graph_local_rag",
+      "mean_composite_score": 0.14737428160919538,
+      "mean_llm_judge": 0.32749999999999996,
+      "mean_token_f1": 0.011997126436781608,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.25,
+      "total_tokens": 4497,
+      "prompt_tokens": 2530,
+      "completion_tokens": 1967,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 0.0006853750091977417,
+      "mean_query_latency_seconds": 10.885271454586473,
+      "p95_query_latency_seconds": 12.882740275147079,
+      "total_elapsed_seconds": 150.71541850001086,
+      "tokens_per_query": 374.75
+    },
+    {
+      "method": "hybrid_rag",
+      "mean_composite_score": 0.3495959595959596,
+      "mean_llm_judge": 0.5666666666666667,
+      "mean_token_f1": 0.2483838383838384,
+      "exact_match_rate": 0.16666666666666666,
+      "contains_answer_rate": 0.4166666666666667,
+      "total_tokens": 20667,
+      "prompt_tokens": 18517,
+      "completion_tokens": 2150,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 0.044208375009475276,
+      "mean_query_latency_seconds": 10.716684708332954,
+      "p95_query_latency_seconds": 13.042708883306478,
+      "total_elapsed_seconds": 142.67639054200845,
+      "tokens_per_query": 1722.25
+    },
+    {
+      "method": "lazygraph_rag",
+      "mean_composite_score": 0.32760376345160097,
+      "mean_llm_judge": 0.5666666666666667,
+      "mean_token_f1": 0.07708172047307034,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.6666666666666666,
+      "total_tokens": 4133,
+      "prompt_tokens": 2296,
+      "completion_tokens": 1837,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 57.40795108300517,
+      "mean_query_latency_seconds": 9.311800298664215,
+      "p95_query_latency_seconds": 11.394286521205503,
+      "total_elapsed_seconds": 191.30399520799983,
+      "tokens_per_query": 344.4166666666667
+    }
+  ],
+  "scenarios": [
+    {
+      "method": "graph_local_rag",
+      "query_type": "hybrid",
+      "mean_composite_score": 0.025208333333333333
+    },
+    {
+      "method": "graph_local_rag",
+      "query_type": "local",
+      "mean_composite_score": 0.2695402298850575
+    },
+    {
+      "method": "graph_rag",
+      "query_type": "hybrid",
+      "mean_composite_score": 0.0
+    },
+    {
+      "method": "graph_rag",
+      "query_type": "local",
+      "mean_composite_score": 0.22147435897435896
+    },
+    {
+      "method": "hybrid_rag",
+      "query_type": "hybrid",
+      "mean_composite_score": 0.3491919191919192
+    },
+    {
+      "method": "hybrid_rag",
+      "query_type": "local",
+      "mean_composite_score": 0.35000000000000003
+    },
+    {
+      "method": "lazygraph_rag",
+      "query_type": "hybrid",
+      "mean_composite_score": 0.35746493136648866
+    },
+    {
+      "method": "lazygraph_rag",
+      "query_type": "local",
+      "mean_composite_score": 0.2977425955367132
+    },
+    {
+      "method": "semantic_rag",
+      "query_type": "hybrid",
+      "mean_composite_score": 0.3020833333333333
+    },
+    {
+      "method": "semantic_rag",
+      "query_type": "local",
+      "mean_composite_score": 0.5208333333333334
+    }
+  ]
+}

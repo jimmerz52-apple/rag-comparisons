@@ -1,0 +1,15 @@
+{
+  "dataset": "HotpotQA",
+  "paper": "Yang et al., EMNLP 2018",
+  "citation": "https://hotpotqa.github.io/",
+  "setting": "distractor",
+  "source": "hotpotqa/hotpot_qa (HuggingFace)",
+  "n_questions": 12,
+  "n_documents": 119,
+  "type_counts": {
+    "bridge": 6,
+    "comparison": 6
+  },
+  "corpus_dir": "/Users/jimmyscray/Code/rag-benchmark/data/corpus_hotpot",
+  "qa_path": "/Users/jimmyscray/Code/rag-benchmark/data/qa/hotpot_eval.json"
+}

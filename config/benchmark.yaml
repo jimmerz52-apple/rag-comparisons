@@ -1,0 +1,79 @@
+benchmark:
+  name: rag_token_accuracy_benchmark
+  random_seed: 42
+  reuse_indexes: true
+
+llm:
+  backend: local
+  ollama_base_url: http://127.0.0.1:11434
+  chat_model: llama3.2:3b
+  embedding_model: all-MiniLM-L6-v2
+  judge_model: llama3.2:3b
+  graphrag_chat_model: llama3.2:3b
+  graphrag_embedding_model: nomic-embed-text
+
+corpus:
+  source_dir: data/corpus
+  max_documents: 10
+  chunk_size: 600
+  chunk_overlap: 80
+
+semantic_rag:
+  top_k: 8
+  collection_name: semantic_rag_corpus
+
+graph_rag:
+  workspace_dir: graphrag_workspaces/full
+  # fast = spaCy NLP graph + community text reports (reliable with local LLMs)
+  # standard = LLM entity extraction (needs stronger models; often fails on 3B)
+  indexing_method: fast
+  search_method: global
+  community_level: 2
+
+lazygraph_rag:
+  # NOT Microsoft LazyGraphRAG (not OSS yet). This is GraphRAG fast NLP index + basic search.
+  workspace_dir: graphrag_workspaces/lazy
+  indexing_method: fast
+  search_method: basic
+  community_level: 2
+  # Reserved for real LazyGraphRAG when/if CLI exposes relevance-test budget:
+  relevance_budget: 500
+
+light_rag:
+  # HKUDS LightRAG (EMNLP 2025) — pip package lightrag-hku
+  workspace_dir: lightrag_workspaces/default
+  mode: hybrid  # naive | local | global | hybrid | mix
+  embedding_dim: 768  # nomic-embed-text
+
+hippo_rag:
+  # HippoRAG 2 (OSU-NLP) — pip install hipporag==2.0.0a3 --no-deps (+ igraph gritlm)
+  workspace_dir: hipporag_workspaces/default
+
+hybrid_rag:
+  # Reuses graph_rag workspace; queries with local search, fuses with vector chunks
+  graph_search_method: local
+
+graph_local_rag:
+  search_method: local
+
+drift_rag:
+  search_method: drift
+
+evaluation:
+  qa_path: data/qa/eval_questions.json
+  metrics:
+    - llm_judge
+    - token_f1
+    - contains_answer
+  judge_temperature: 0.0
+
+pricing:
+  llama3.2:3b:
+    input: 0.0
+    output: 0.0
+  all-MiniLM-L6-v2:
+    input: 0.0
+    output: 0.0
+  nomic-embed-text:
+    input: 0.0
+    output: 0.0

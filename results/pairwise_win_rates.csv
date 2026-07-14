@@ -1,0 +1,37 @@
+method_a,label_a,method_b,label_b,wins_a,wins_b,ties,n,win_rate_a,mean_delta_a_minus_b
+frontier_rag,FrontierRAG (adaptive+CRAG),graph_rag,GraphRAG global,8,2,2,12,0.6666666666666666,0.30816163003663005
+frontier_rag,FrontierRAG (adaptive+CRAG),graph_local_rag,GraphRAG local,7,4,1,12,0.5833333333333334,0.27152452791461407
+hybrid_rag,Hybrid (vec+graph local),lazygraph_rag,GraphRAG fast/basic,7,5,0,12,0.5833333333333334,0.0219921961443587
+frontier_rag,FrontierRAG (adaptive+CRAG),lazygraph_rag,GraphRAG fast/basic,7,4,1,12,0.5833333333333334,0.09129504607220863
+graph_local_rag,GraphRAG local,graph_rag,GraphRAG global,6,2,4,12,0.5,0.03663710212201592
+adaptive_rag,Adaptive router,graph_local_rag,GraphRAG local,6,4,2,12,0.5,0.27673286124794744
+adaptive_rag,Adaptive router,lazygraph_rag,GraphRAG fast/basic,6,6,0,12,0.5,0.09650337940554198
+adaptive_rag,Adaptive router,graph_rag,GraphRAG global,6,2,4,12,0.5,0.31336996336996337
+lazygraph_rag,GraphRAG fast/basic,rerank_semantic,Vector + rerank,5,7,0,12,0.4166666666666667,-0.09799147464363722
+lazygraph_rag,GraphRAG fast/basic,semantic_rag,Semantic (vector),5,7,0,12,0.4166666666666667,-0.08385456988173244
+hybrid_dense_sparse,BM25+dense (RRF),lazygraph_rag,GraphRAG fast/basic,5,7,0,12,0.4166666666666667,-0.03370495392779136
+adaptive_rag,Adaptive router,semantic_rag,Semantic (vector),4,4,4,12,0.3333333333333333,0.012648809523809534
+hybrid_dense_sparse,BM25+dense (RRF),hybrid_rag,Hybrid (vec+graph local),4,4,4,12,0.3333333333333333,-0.05569715007215007
+hybrid_rag,Hybrid (vec+graph local),semantic_rag,Semantic (vector),4,5,3,12,0.3333333333333333,-0.061862373737373744
+frontier_rag,FrontierRAG (adaptive+CRAG),hybrid_rag,Hybrid (vec+graph local),4,5,3,12,0.3333333333333333,0.06930284992784992
+adaptive_rag,Adaptive router,hybrid_rag,Hybrid (vec+graph local),4,4,4,12,0.3333333333333333,0.07451118326118328
+hybrid_rag,Hybrid (vec+graph local),rerank_semantic,Vector + rerank,4,5,3,12,0.3333333333333333,-0.07599927849927851
+frontier_rag,FrontierRAG (adaptive+CRAG),semantic_rag,Semantic (vector),4,4,4,12,0.3333333333333333,0.007440476190476201
+adaptive_rag,Adaptive router,frontier_rag,FrontierRAG (adaptive+CRAG),3,3,6,12,0.25,0.005208333333333333
+rerank_semantic,Vector + rerank,semantic_rag,Semantic (vector),3,3,6,12,0.25,0.014136904761904767
+graph_local_rag,GraphRAG local,hybrid_dense_sparse,BM25+dense (RRF),3,7,2,12,0.25,-0.14652452791461412
+frontier_rag,FrontierRAG (adaptive+CRAG),rerank_semantic,Vector + rerank,3,2,7,12,0.25,-0.006696428571428566
+frontier_rag,FrontierRAG (adaptive+CRAG),hybrid_dense_sparse,BM25+dense (RRF),3,2,7,12,0.25,0.125
+adaptive_rag,Adaptive router,rerank_semantic,Vector + rerank,3,4,5,12,0.25,-0.0014880952380952421
+adaptive_rag,Adaptive router,hybrid_dense_sparse,BM25+dense (RRF),3,2,7,12,0.25,0.13020833333333334
+graph_local_rag,GraphRAG local,semantic_rag,Semantic (vector),2,8,2,12,0.16666666666666666,-0.2640840517241379
+graph_rag,GraphRAG global,hybrid_dense_sparse,BM25+dense (RRF),2,7,3,12,0.16666666666666666,-0.18316163003663002
+graph_rag,GraphRAG global,hybrid_rag,Hybrid (vec+graph local),2,10,0,12,0.16666666666666666,-0.23885878010878012
+graph_rag,GraphRAG global,lazygraph_rag,GraphRAG fast/basic,2,10,0,12,0.16666666666666666,-0.2168665839644214
+graph_rag,GraphRAG global,semantic_rag,Semantic (vector),2,8,2,12,0.16666666666666666,-0.30072115384615383
+graph_local_rag,GraphRAG local,rerank_semantic,Vector + rerank,2,8,2,12,0.16666666666666666,-0.27822095648604267
+graph_local_rag,GraphRAG local,hybrid_rag,Hybrid (vec+graph local),2,10,0,12,0.16666666666666666,-0.20222167798676416
+hybrid_dense_sparse,BM25+dense (RRF),rerank_semantic,Vector + rerank,2,2,8,12,0.16666666666666666,-0.13169642857142858
+hybrid_dense_sparse,BM25+dense (RRF),semantic_rag,Semantic (vector),2,3,7,12,0.16666666666666666,-0.1175595238095238
+graph_local_rag,GraphRAG local,lazygraph_rag,GraphRAG fast/basic,2,10,0,12,0.16666666666666666,-0.1802294818424055
+graph_rag,GraphRAG global,rerank_semantic,Vector + rerank,1,9,2,12,0.08333333333333333,-0.31485805860805854

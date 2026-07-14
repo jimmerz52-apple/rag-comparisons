@@ -1,0 +1,110 @@
+[
+  {
+    "id": "local_einstein_birth",
+    "question": "When was Albert Einstein born and where?",
+    "expected_answer": "Albert Einstein was born on 14 March 1879 in Ulm, in the Kingdom of Württemberg in the German Empire.",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "albert_einstein",
+    "rationale": "Single-entity fact with exact date/place — vector chunk match wins."
+  },
+  {
+    "id": "local_python_creator",
+    "question": "Who created the Python programming language and when was it first released?",
+    "expected_answer": "Python was created by Guido van Rossum and was first released in 1991.",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "python_programming_language",
+    "rationale": "Entity-local factoid in one article."
+  },
+  {
+    "id": "local_mars_nickname",
+    "question": "Which planet is known as the Red Planet?",
+    "expected_answer": "Mars is known as the Red Planet.",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "mars",
+    "rationale": "Simple phrase match in a single document."
+  },
+  {
+    "id": "local_jupiter_size",
+    "question": "What is the largest planet in the Solar System?",
+    "expected_answer": "Jupiter is the largest planet in the Solar System.",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "solar_system",
+    "rationale": "Direct fact retrieval."
+  },
+  {
+    "id": "global_ai_themes",
+    "question": "Across this corpus, how are artificial intelligence, machine learning, and neural networks related?",
+    "expected_answer": "Machine learning is a subset of artificial intelligence, and neural networks are a key machine learning approach used to build AI systems.",
+    "query_type": "global",
+    "best_method": "graph_rag",
+    "source_doc": null,
+    "rationale": "Cross-document thematic synthesis — GraphRAG global/community reports."
+  },
+  {
+    "id": "global_ww2_scope",
+    "question": "What were the major theaters or sides involved in World War II according to the corpus?",
+    "expected_answer": "World War II involved the Allies and the Axis powers, fought across Europe, the Pacific, and other theaters, ending in 1945.",
+    "query_type": "global",
+    "best_method": "graph_rag",
+    "source_doc": "world_war_ii",
+    "rationale": "Broad thematic / overview question."
+  },
+  {
+    "id": "hybrid_einstein_relativity_ai",
+    "question": "How does Einstein's theory of relativity relate to themes of modern AI and machine learning in this corpus?",
+    "expected_answer": "Einstein is best known for the theory of relativity; the corpus discusses AI and machine learning separately as computational fields, so any connection is thematic (scientific discovery / modeling) rather than a direct technical link.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "Needs entity fact (Einstein/relativity) plus cross-topic synthesis — hybrid or DRIFT."
+  },
+  {
+    "id": "hybrid_python_ml",
+    "question": "Why is Python commonly associated with machine learning and neural networks?",
+    "expected_answer": "Python emphasizes readable syntax and is widely used for machine learning and neural network development and tooling.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "Joins Python article facts with ML/neural network topics — multi-doc entity link."
+  },
+  {
+    "id": "multihop_us_space",
+    "question": "What connections exist between the United States, the Solar System exploration context, and Mars or Jupiter in this corpus?",
+    "expected_answer": "The United States is a major actor in space exploration; Mars and Jupiter are Solar System planets discussed as objects of scientific study and exploration.",
+    "query_type": "hybrid",
+    "best_method": "drift_rag",
+    "source_doc": null,
+    "rationale": "Multi-hop entity linking across US / Solar System / Mars / Jupiter — DRIFT or hybrid."
+  },
+  {
+    "id": "local_ml_subset",
+    "question": "What is machine learning a subset of?",
+    "expected_answer": "Machine learning is a subset of artificial intelligence.",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "machine_learning",
+    "rationale": "Single-sentence fact — semantic search."
+  },
+  {
+    "id": "local_ww2_end",
+    "question": "When did World War II end?",
+    "expected_answer": "World War II ended in 1945.",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "world_war_ii",
+    "rationale": "Exact date factoid."
+  },
+  {
+    "id": "global_planet_overview",
+    "question": "Summarize the key planets discussed in this corpus and what distinguishes Mars and Jupiter.",
+    "expected_answer": "The corpus discusses the Solar System including Mars (the Red Planet) and Jupiter (the largest planet).",
+    "query_type": "global",
+    "best_method": "graph_rag",
+    "source_doc": null,
+    "rationale": "Dataset-wide summary across planetary articles."
+  }
+]

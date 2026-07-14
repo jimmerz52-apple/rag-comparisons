@@ -1,0 +1,25 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Local vector DB / rebuildable indexes (large; regenerate with reuse_indexes)
+.chroma/
+graphrag_workspaces/
+hipporag_workspaces/
+lightrag_workspaces/
+**/output/
+**/cache/
+*.parquet
+
+# Keep results/ (CSVs, charts, playbooks) — ignore only logs
+*.log

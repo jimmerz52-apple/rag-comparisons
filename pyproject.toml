@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-benchmark"
+version = "0.1.0"
+description = "Benchmark Semantic, GraphRAG, Hybrid, LightRAG, and related RAG stacks locally"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyter>=1.0.0",
+    "ipykernel>=6.29.0",
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.0",
+    "tiktoken>=0.7.0",
+    "openai>=1.40.0",
+    "chromadb>=0.5.0",
+    "tenacity>=8.3.0",
+    "pydantic>=2.7.0",
+    "graphrag>=2.7.0",
+    "lightrag-hku>=1.4.0",
+    "rapidfuzz>=3.9.0",
+    "sentence-transformers>=3.0.0",
+    "datasets>=2.19.0",
+    "rank-bm25>=0.2.2",
+]
+
+[project.optional-dependencies]
+hipporag = [
+    "hipporag==2.0.0a3",
+    "igraph>=0.11.0",
+    "gritlm>=1.0.0",
+    "networkx>=3.0",
+]
+
+[project.scripts]
+rag-benchmark = "rag_benchmark.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

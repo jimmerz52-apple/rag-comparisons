@@ -1,0 +1,2 @@
+question,gold,hotpot_type,choose,choose_method,choose_score,over,over_method,over_score,margin,rule
+Are Random House Tower and 888 7th Avenue both used for real estate?,no,comparison,Semantic (vector),semantic_rag,0.625,GraphRAG local,graph_local_rag,0.45,0.175,Simple comparison/factoid → prefer vector RAG (cheap + EM-friendly).
