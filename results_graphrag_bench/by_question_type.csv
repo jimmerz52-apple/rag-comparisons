@@ -1,0 +1,17 @@
+graphrag_bench_type,method,composite_score
+Complex Reasoning,hybrid_rag,0.11135218365061589
+Complex Reasoning,frontier_rag,0.08960562987736902
+Complex Reasoning,semantic_rag,0.0625
+Complex Reasoning,rerank_semantic,0.0
+Contextual Summarize,frontier_rag,0.07948717948717948
+Contextual Summarize,rerank_semantic,0.07948717948717948
+Contextual Summarize,semantic_rag,0.06682544757033249
+Contextual Summarize,hybrid_rag,0.04987068965517242
+Creative Generation,hybrid_rag,0.22155172413793106
+Creative Generation,semantic_rag,0.10574712643678161
+Creative Generation,frontier_rag,0.08539823008849558
+Creative Generation,rerank_semantic,0.005555555555555555
+Fact Retrieval,hybrid_rag,0.21022727272727273
+Fact Retrieval,semantic_rag,0.0625
+Fact Retrieval,frontier_rag,0.0
+Fact Retrieval,rerank_semantic,0.0

@@ -2,6 +2,7 @@
 
 from rag_benchmark.benchmark import BenchmarkRunner, MethodRunResult
 from rag_benchmark.config import BenchmarkConfig
+from rag_benchmark.graphrag_bench import build_graphrag_bench_subset
 from rag_benchmark.hotpotqa import build_hotpot_subset
 from rag_benchmark.llm_factory import create_tracked_client
 from rag_benchmark.metrics import AccuracyEvaluator
@@ -17,4 +18,5 @@ __all__ = [
     "AccuracyEvaluator",
     "fetch_corpus",
     "build_hotpot_subset",
+    "build_graphrag_bench_subset",
 ]

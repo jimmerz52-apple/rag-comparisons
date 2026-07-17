@@ -83,6 +83,17 @@ FRAMEWORKS: list[dict[str, str]] = [
         "notes": "Retrieve wide then MiniLM cross-encoder rerank (BGE/Cohere-style stage).",
     },
     {
+        "id": "graphrag_bench",
+        "name": "GraphRAG-Bench (ICLR 2026)",
+        "status": "integrated",
+        "notes": (
+            "Xiang et al. — when do graphs help? Novel+Medical corpora; "
+            "Fact Retrieval → Complex Reasoning → Contextual Summarize → Creative Generation. "
+            "Use build_graphrag_bench_subset / scripts/run_graphrag_bench.py."
+        ),
+        "url": "https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
+    },
+    {
         "id": "ket_rag",
         "name": "KET-RAG",
         "status": "deferred",

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "Novel-0cac50ed",
+    "question": "In Samuel Pepys's diary, with whom did Pepys have a conversation during the course of his recorded events?",
+    "expected_answer": "Tom",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Fact Retrieval) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Fact Retrieval",
+    "hotpot_type": "Fact Retrieval",
+    "evidence": "Samuel Pepys had a conversation with an individual named Tom."
+  },
+  {
+    "id": "Novel-eefdc433",
+    "question": "How did the Lady treat Samuel Pepys when he visited her at the Wardrobe, as detailed in his diary account?",
+    "expected_answer": "Kindly",
+    "query_type": "local",
+    "best_method": "semantic_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Fact Retrieval) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Fact Retrieval",
+    "hotpot_type": "Fact Retrieval",
+    "evidence": "The Lady treated Samuel Pepys kindly when he visited her at the Wardrobe."
+  },
+  {
+    "id": "Novel-55f0c0e2",
+    "question": "What role did Aunt Katy Demitt play in Suza Fairfield's upbringing, and how is Suza Fairfield regarded in Port William?",
+    "expected_answer": "The Duke of York sent an order to Samuel Pepys.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Complex Reasoning) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Complex Reasoning",
+    "hotpot_type": "Complex Reasoning",
+    "evidence": "The Duke of York sent an order to Samuel Pepys."
+  },
+  {
+    "id": "Novel-68694b91",
+    "question": "During his visit to the Wardrobe, how did Lady interact with Samuel Pepys, and what was her manner toward him as described in the narrative?",
+    "expected_answer": "Lady treated Samuel Pepys kindly at the Wardrobe.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Complex Reasoning) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Complex Reasoning",
+    "hotpot_type": "Complex Reasoning",
+    "evidence": "Lady treated Samuel Pepys kindly at the Wardrobe."
+  },
+  {
+    "id": "Novel-feba1552",
+    "question": "How does the sequence of events involving my Lord's appointment as Embassador, his interactions with others, and his preparations for travel reflect the structure of command and influence in the narrative?",
+    "expected_answer": "My Lord Embassador, after being made by the King, ordered Mr. Creed, was angry with W. Howe, and is to go to Algier, reflecting his authority and active role.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Contextual Summarize) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Contextual Summarize",
+    "hotpot_type": "Contextual Summarize",
+    "evidence": "My Lord was made Embassador by the King.; My Lord ordered Mr. Creed.; My Lord was angry with W. Howe.; My Lord is to go to Algier.; This reflects his authority and active role."
+  },
+  {
+    "id": "Novel-710f8505",
+    "question": "What does Madame Palmer's presence at the Theatre suggest about the King's interests in both personal relationships and cultural events beyond his official royal duties?",
+    "expected_answer": "The King's mistress, Madame Palmer, was at the Theatre where Harry the 4th was shown, suggesting the King's interests include personal relationships and cultural events.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Contextual Summarize) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Contextual Summarize",
+    "hotpot_type": "Contextual Summarize",
+    "evidence": "Madame Palmer was at the Theatre where Harry the 4th was shown.; Madame Palmer is known to be the King's mistress.; This suggests the King's interests include personal relationships and cultural events."
+  },
+  {
+    "id": "Novel-0d6bcca0",
+    "question": "Rewrite the events as a diary entry from Samuel Pepys, focusing on his preparations for the Queen and observations of court drama involving my Lord and W. Howe, including my Lord's new role.",
+    "expected_answer": "Diary Entry \u2014 This day, my chief occupation was in making ready sundry items to be dispatched to the Queen, who is soon to be brought over to England by my Lord, now lately advanced to the dignity of Embassador by His Majesty. The court is in a state of great agitation; I observed my Lord, usually so composed, lose his temper with W. Howe, the exchange sharp and ill-concealed from those nearby. Such tempers, I think, are but a reflection of the weighty matters at hand, for the Portuguese Embassador himself came to White Hall to take leave of the King, signaling the nearness of the Queen's arrival and the delicate business that attends it. Amidst these preparations and intrigues, I find myself both anxious and eager, for the eyes of many are upon us in these days of high expectation.",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": "Novel-4128",
+    "rationale": "GraphRAG-Bench Novel (Creative Generation) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
+    "graphrag_bench_type": "Creative Generation",
+    "hotpot_type": "Creative Generation",
+    "evidence": "Samuel Pepys prepared items to be sent to the Queen.; The Queen is to be brought to England by my Lord.; My Lord is newly made Embassador by the King.; The atmosphere at court is charged.; My Lord lost his temper with W. Howe.; These tensions reflect the high stakes of ongoing diplomatic efforts.; The Portuguese Embassador took leave of the King."
+  }
+]

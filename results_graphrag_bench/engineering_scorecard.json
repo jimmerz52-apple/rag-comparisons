@@ -1,0 +1,182 @@
+{
+  "audience": "engineering",
+  "latency_slo_seconds": 5.0,
+  "min_quality_bar": 0.35,
+  "n_eval_queries": 7,
+  "caveats": [
+    "Eval set size n=7 \u2014 treat rankings as directional, not production SLAs.",
+    "Overlapping quality CIs are common at this n; trust large gaps (latency/tokens/local EM) over 0.01 composite deltas.",
+    "Composite mixes EM/F1/judge; generative graph answers often lose on EM even when useful.",
+    "Absolute latency depends on hardware + model size; use relative ordering for stack choice.",
+    "Graph index build dominates cold-start cost; measure amortized $/query at your QPS."
+  ],
+  "default_production_method": {
+    "method": "rerank_semantic",
+    "label": "Vector + rerank",
+    "reason": "No method met latency SLO; picking fastest mean latency",
+    "quality": 0.023504273504273504,
+    "usable_answer_rate": 0.0,
+    "p95_latency_s": 7.645524012413806,
+    "tokens_per_query": 4517.714285714285
+  },
+  "routing_by_query_type": [
+    {
+      "query_type": "hybrid",
+      "scenario": "multi_hop",
+      "recommended_method": "frontier_rag",
+      "recommended_label": "FrontierRAG (adaptive+CRAG)",
+      "quality": 0.08471676976351852,
+      "margin_over_next": 0.02408272438638301,
+      "tie_broke_on_cost": true,
+      "tokens_per_query": 6939.714285714285,
+      "guidance": "Bridge / cross-doc multi-hop \u2192 FrontierRAG (adaptive+CRAG) (quality tie \u2192 cheaper tokens). mean\u0394=0.024 but H2H 2W-3L \u2192 prefer head-to-head winner"
+    },
+    {
+      "query_type": "local",
+      "scenario": "local_factoid",
+      "recommended_method": "hybrid_rag",
+      "recommended_label": "Hybrid (vec+graph local)",
+      "quality": 0.21022727272727273,
+      "margin_over_next": 0.14772727272727273,
+      "tie_broke_on_cost": false,
+      "tokens_per_query": 5048.857142857143,
+      "guidance": "Single-entity / comparison factoids \u2192 Hybrid (vec+graph local)."
+    }
+  ],
+  "methods": [
+    {
+      "method": "semantic_rag",
+      "mean_composite_score": 0.06991400308249238,
+      "mean_llm_judge": 0.24714285714285714,
+      "mean_token_f1": 0.03251315518711233,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.0,
+      "total_tokens": 55783,
+      "prompt_tokens": 54998,
+      "completion_tokens": 785,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 0.8745371669938322,
+      "mean_query_latency_seconds": 5.68717088086331,
+      "p95_query_latency_seconds": 7.3403239537088645,
+      "total_elapsed_seconds": 49.11595854201005,
+      "tokens_per_query": 7969.0,
+      "label": "Semantic (vector)",
+      "quality_per_1k_tokens": 0.008773246716337354,
+      "meets_latency_slo": false,
+      "meets_quality_bar": false,
+      "usable_answer_rate": 0.2857142857142857
+    },
+    {
+      "method": "rerank_semantic",
+      "mean_composite_score": 0.023504273504273504,
+      "mean_llm_judge": 0.05714285714285715,
+      "mean_token_f1": 0.03687423687423687,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.0,
+      "total_tokens": 31624,
+      "prompt_tokens": 30929,
+      "completion_tokens": 695,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 0.02228974999161437,
+      "mean_query_latency_seconds": 5.05369126786744,
+      "p95_query_latency_seconds": 7.645524012413806,
+      "total_elapsed_seconds": 43.013801249995595,
+      "tokens_per_query": 4517.714285714285,
+      "label": "Vector + rerank",
+      "quality_per_1k_tokens": 0.005202691453640101,
+      "meets_latency_slo": false,
+      "meets_quality_bar": false,
+      "usable_answer_rate": 0.0
+    },
+    {
+      "method": "hybrid_rag",
+      "mean_composite_score": 0.1377788594577219,
+      "mean_llm_judge": 0.30428571428571427,
+      "mean_token_f1": 0.10397258068803035,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.14285714285714285,
+      "total_tokens": 35342,
+      "prompt_tokens": 32543,
+      "completion_tokens": 2799,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 950.6634237499966,
+      "mean_query_latency_seconds": 20.14513703556648,
+      "p95_query_latency_seconds": 29.290656979309272,
+      "total_elapsed_seconds": 1101.2673127909948,
+      "tokens_per_query": 5048.857142857143,
+      "label": "Hybrid (vec+graph local)",
+      "quality_per_1k_tokens": 0.027289118222060246,
+      "meets_latency_slo": false,
+      "meets_quality_bar": false,
+      "usable_answer_rate": 0.42857142857142855
+    },
+    {
+      "method": "frontier_rag",
+      "mean_composite_score": 0.060511978402513225,
+      "mean_llm_judge": 0.13285714285714284,
+      "mean_token_f1": 0.10919077075291003,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.0,
+      "total_tokens": 48578,
+      "prompt_tokens": 46695,
+      "completion_tokens": 1883,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 0.07695633298135363,
+      "mean_query_latency_seconds": 13.013628279565767,
+      "p95_query_latency_seconds": 27.694081549998362,
+      "total_elapsed_seconds": 101.30167974997312,
+      "tokens_per_query": 6939.714285714285,
+      "label": "FrontierRAG (adaptive+CRAG)",
+      "quality_per_1k_tokens": 0.008719664226966788,
+      "meets_latency_slo": false,
+      "meets_quality_bar": false,
+      "usable_answer_rate": 0.0
+    }
+  ],
+  "efficiency_ranking": [
+    {
+      "method": "hybrid_rag",
+      "label": "Hybrid (vec+graph local)",
+      "mean_composite_score": 0.1377788594577219,
+      "usable_answer_rate": 0.42857142857142855,
+      "tokens_per_query": 5048.857142857143,
+      "quality_per_1k_tokens": 0.027289118222060246,
+      "p95_query_latency_seconds": 29.290656979309272
+    },
+    {
+      "method": "semantic_rag",
+      "label": "Semantic (vector)",
+      "mean_composite_score": 0.06991400308249238,
+      "usable_answer_rate": 0.2857142857142857,
+      "tokens_per_query": 7969.0,
+      "quality_per_1k_tokens": 0.008773246716337354,
+      "p95_query_latency_seconds": 7.3403239537088645
+    },
+    {
+      "method": "frontier_rag",
+      "label": "FrontierRAG (adaptive+CRAG)",
+      "mean_composite_score": 0.060511978402513225,
+      "usable_answer_rate": 0.0,
+      "tokens_per_query": 6939.714285714285,
+      "quality_per_1k_tokens": 0.008719664226966788,
+      "p95_query_latency_seconds": 27.694081549998362
+    },
+    {
+      "method": "rerank_semantic",
+      "label": "Vector + rerank",
+      "mean_composite_score": 0.023504273504273504,
+      "usable_answer_rate": 0.0,
+      "tokens_per_query": 4517.714285714285,
+      "quality_per_1k_tokens": 0.005202691453640101,
+      "p95_query_latency_seconds": 7.645524012413806
+    }
+  ],
+  "recommendations": [
+    "Ship a query router, not one RAG stack: local factoids vs multi-hop need different paths.",
+    "MULTI_HOP: FrontierRAG (adaptive+CRAG) (q=0.08, \u0394=0.02, 6940 tok/q) [cost tie-break].",
+    "LOCAL_FACTOID: Hybrid (vec+graph local) (q=0.21, \u0394=0.15, 5049 tok/q).",
+    "Highest token cost: Semantic (vector) (7969 tok/q) \u2014 gate behind hard-query classifier.",
+    "Misses p95\u22645.0s SLO: Semantic (vector), Vector + rerank, Hybrid (vec+graph local), FrontierRAG (adaptive+CRAG). Keep interactive path on vector; run graph/hybrid async or on stronger GPUs.",
+    "Rebuild GraphRAG indexes only on corpus change; amortize index_seconds over expected volume."
+  ]
+}

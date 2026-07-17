@@ -1,0 +1,22 @@
+{
+  "dataset": "GraphRAG-Bench",
+  "paper": "Xiang et al., ICLR 2026",
+  "citation": "https://arxiv.org/abs/2506.05690",
+  "subset": "novel",
+  "source": "Novel-4128",
+  "n_questions": 7,
+  "n_documents": 27,
+  "type_counts": {
+    "Fact Retrieval": 2,
+    "Complex Reasoning": 2,
+    "Contextual Summarize": 2,
+    "Creative Generation": 1
+  },
+  "corpus_dir": "/Users/jimmyscray/Code/rag-benchmark/data/corpus_graphrag_bench",
+  "qa_path": "/Users/jimmyscray/Code/rag-benchmark/data/qa/graphrag_bench_eval.json",
+  "catalog_path": "/Users/jimmyscray/Code/rag-benchmark/results/graphrag_bench_question_catalog.csv",
+  "findings": {
+    "obs1": "Basic RAG matches GraphRAG on Fact Retrieval",
+    "obs2": "GraphRAG excels on Complex Reasoning / Summarize / Creative"
+  }
+}

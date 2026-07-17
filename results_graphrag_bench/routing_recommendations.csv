@@ -1,0 +1,3 @@
+query_type,scenario,recommended_method,recommended_label,quality,margin_over_next,tie_broke_on_cost,tokens_per_query,guidance
+hybrid,multi_hop,frontier_rag,FrontierRAG (adaptive+CRAG),0.08471676976351852,0.02408272438638301,True,6939.714285714285,Bridge / cross-doc multi-hop → FrontierRAG (adaptive+CRAG) (quality tie → cheaper tokens). meanΔ=0.024 but H2H 2W-3L → prefer head-to-head winner
+local,local_factoid,hybrid_rag,Hybrid (vec+graph local),0.21022727272727273,0.14772727272727273,False,5048.857142857143,Single-entity / comparison factoids → Hybrid (vec+graph local).

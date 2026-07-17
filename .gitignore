@@ -17,6 +17,7 @@ build/
 graphrag_workspaces/
 hipporag_workspaces/
 lightrag_workspaces/
+data/graphrag_bench_cache/
 **/output/
 **/cache/
 *.parquet

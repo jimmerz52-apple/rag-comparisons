@@ -1,0 +1,9 @@
+method,query_type,mean_composite_score
+frontier_rag,hybrid,0.08471676976351852
+frontier_rag,local,0.0
+hybrid_rag,hybrid,0.10879949414990153
+hybrid_rag,local,0.21022727272727273
+rerank_semantic,hybrid,0.03290598290598291
+rerank_semantic,local,0.0
+semantic_rag,hybrid,0.07287960431548932
+semantic_rag,local,0.0625
