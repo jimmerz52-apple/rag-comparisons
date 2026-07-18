@@ -86,7 +86,11 @@ def main() -> None:
 
     plot_dashboard(out)
     print_leaderboard(out)
-    scorecard = build_engineering_scorecard(summary_df, scenario_df, accuracy_df)
+    scorecard = build_engineering_scorecard(
+        summary_df=summary_df,
+        scenario_df=scenario_df,
+        accuracy_df=accuracy_df,
+    )
     paths = save_engineering_scorecard(scorecard, out)
     print_engineering_briefing(scorecard)
     build_decision_artifacts(results_dir=out, qa_path=Path(built["qa_path"]))

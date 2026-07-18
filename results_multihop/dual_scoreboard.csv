@@ -1,0 +1,4 @@
+scenario,generative_winner,generative_score,extractive_winner,extractive_score,composite_winner,composite_score,ranking_flips
+comparison_query,Hybrid (vec+graph local),0.633,FrontierRAG (adaptive+CRAG),0.0,Hybrid (vec+graph local),0.317,False
+inference_query,Hybrid (vec+graph local),0.633,Hybrid (vec+graph local),0.023,Hybrid (vec+graph local),0.328,False
+temporal_query,FrontierRAG (adaptive+CRAG),0.533,FrontierRAG (adaptive+CRAG),0.0,FrontierRAG (adaptive+CRAG),0.267,False

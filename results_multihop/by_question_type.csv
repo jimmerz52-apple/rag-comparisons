@@ -1,0 +1,13 @@
+multihop_type,method,generative_score
+comparison_query,hybrid_rag,0.6333333333333333
+comparison_query,rerank_semantic,0.5
+comparison_query,frontier_rag,0.3333333333333333
+comparison_query,semantic_rag,0.3333333333333333
+inference_query,hybrid_rag,0.6333333333333333
+inference_query,semantic_rag,0.6
+inference_query,frontier_rag,0.4666666666666666
+inference_query,rerank_semantic,0.4666666666666666
+temporal_query,frontier_rag,0.5333333333333333
+temporal_query,rerank_semantic,0.5333333333333333
+temporal_query,semantic_rag,0.5333333333333333
+temporal_query,hybrid_rag,0.3333333333333333

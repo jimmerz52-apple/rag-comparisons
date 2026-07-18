@@ -1,0 +1,9 @@
+{
+  "n_rows": 36,
+  "judge_ge_05_but_em_0": 6,
+  "contains_but_not_em": 30,
+  "graph_em_rate": null,
+  "top_judge_method": "semantic_rag",
+  "top_judge_value": 0.2,
+  "top_generative_multihop": null
+}

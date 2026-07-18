@@ -1,0 +1,7 @@
+method_a,label_a,method_b,label_b,wins_a,wins_b,ties,n,win_rate_a,mean_delta_a_minus_b
+frontier_rag,FrontierRAG (adaptive+CRAG),hybrid_rag,Hybrid (vec+graph local),3,3,3,9,0.3333333333333333,-0.046361282801995224
+hybrid_rag,Hybrid (vec+graph local),rerank_semantic,Vector + rerank,3,3,3,9,0.3333333333333333,0.018583505024217444
+hybrid_rag,Hybrid (vec+graph local),semantic_rag,Semantic (vector),3,3,3,9,0.3333333333333333,0.023367641704905857
+rerank_semantic,Vector + rerank,semantic_rag,Semantic (vector),2,1,6,9,0.2222222222222222,0.004784136680688413
+frontier_rag,FrontierRAG (adaptive+CRAG),semantic_rag,Semantic (vector),1,1,7,9,0.1111111111111111,-0.022993641097089363
+frontier_rag,FrontierRAG (adaptive+CRAG),rerank_semantic,Vector + rerank,0,1,8,9,0.0,-0.027777777777777776
