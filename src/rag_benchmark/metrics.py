@@ -44,6 +44,24 @@ class AccuracyResult:
             parts.append(1.0 if self.contains_answer else 0.0)
         return sum(parts) / len(parts) if parts else 0.0
 
+    def generative_score(self) -> float:
+        """Judge + contains — fair for generative GraphRAG prose."""
+        parts: list[float] = []
+        if self.llm_judge_score is not None:
+            parts.append(self.llm_judge_score)
+        if self.contains_answer is not None:
+            parts.append(1.0 if self.contains_answer else 0.0)
+        return sum(parts) / len(parts) if parts else 0.0
+
+    def extractive_score(self) -> float:
+        """EM + token F1 — Hotpot-style short-span scoring."""
+        parts: list[float] = []
+        if self.token_f1 is not None:
+            parts.append(self.token_f1)
+        if self.exact_match is not None:
+            parts.append(1.0 if self.exact_match else 0.0)
+        return sum(parts) / len(parts) if parts else 0.0
+
 
 def load_eval_questions(path: Any) -> list[EvalQuestion]:
     with open(path, "r", encoding="utf-8") as handle:

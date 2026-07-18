@@ -13,7 +13,9 @@ How this HotpotQA harness relates to newer evaluation suites. Use these when gra
 
 ## Takeaways for this repo
 
-1. **HotpotQA remains the lingua franca** for multi-hop GraphRAG papers — keep it as the smoke / routing bake-off.
-2. **Next upgrades:** MultiHop-RAG (retrieval quality) + CRAG-style trust scores + BenchmarkQED AutoE pairwise (judge ≠ generator).
-3. **GraphRAG-Bench** is the right “is graph worth it?” follow-on after FrontierRAG routing looks good on Hotpot.
-4. Pair **EM/F1** (extractive) with **contains + stronger judge** — newer suites already treat EM-only as insufficient for generative RAG.
+1. **HotpotQA** — smoke / routing bake-off. See `notebooks/hotpot_metric_autopsy.ipynb` (GitHub-rendered).
+2. **MultiHop-RAG** — news multi-doc reasoning. See `notebooks/multihop_rag_bench.ipynb` + `scripts/run_multihop_benchmark.py`.
+3. **GraphRAG-Bench** — task ladder (fact → creative). See `notebooks/rag_benchmark.ipynb`.
+4. **Dual scoreboard (required):** `generative = mean(judge, contains)` vs `extractive = mean(F1, EM)`.
+   On Hotpot multi-hop, GraphRAG fast/basic **wins generative** while composite can crown Frontier — do not conclude “graphs lose multi-hop” from composite alone.
+5. Next: BenchmarkQED AutoE with a **stronger separate judge**; official GraphRAG-Bench `Evaluation/` ROUGE/coverage.

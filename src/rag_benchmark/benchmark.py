@@ -429,6 +429,16 @@ class BenchmarkRunner:
                 {
                     "method": result.method,
                     "mean_composite_score": float(accuracy_df["composite_score"].mean()),
+                    "mean_generative_score": float(
+                        pd.DataFrame(
+                            [{"s": item.generative_score()} for item in result.accuracy]
+                        )["s"].mean()
+                    ),
+                    "mean_extractive_score": float(
+                        pd.DataFrame(
+                            [{"s": item.extractive_score()} for item in result.accuracy]
+                        )["s"].mean()
+                    ),
                     "mean_llm_judge": float(
                         pd.DataFrame(
                             [{"s": item.llm_judge_score or 0.0} for item in result.accuracy]
@@ -485,6 +495,8 @@ class BenchmarkRunner:
                         "exact_match": item.exact_match,
                         "contains_answer": item.contains_answer,
                         "composite_score": item.composite_score(),
+                        "generative_score": item.generative_score(),
+                        "extractive_score": item.extractive_score(),
                     }
                 )
         return pd.DataFrame(rows)

@@ -1,0 +1,18 @@
+{
+  "dataset": "MultiHop-RAG",
+  "paper": "Tang & Yang, COLM 2024",
+  "citation": "https://arxiv.org/abs/2401.15391",
+  "n_questions": 9,
+  "n_documents": 30,
+  "n_gold_docs": 22,
+  "n_distractors": 8,
+  "type_counts": {
+    "inference_query": 3,
+    "comparison_query": 3,
+    "temporal_query": 3
+  },
+  "corpus_dir": "/Users/jimmyscray/Code/rag-benchmark/data/corpus_multihop",
+  "qa_path": "/Users/jimmyscray/Code/rag-benchmark/data/qa/multihop_eval.json",
+  "catalog_path": "/Users/jimmyscray/Code/rag-benchmark/results/multihop_question_catalog.csv",
+  "note": "Closed-world: gold evidence articles + distractors. Use generative_score (judge+contains) for multi-hop fairness."
+}

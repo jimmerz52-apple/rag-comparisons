@@ -1,0 +1,3 @@
+scenario,generative_winner,generative_score,extractive_winner,extractive_score,composite_winner,composite_score,ranking_flips
+hybrid,GraphRAG fast/basic,0.667,FrontierRAG (adaptive+CRAG),0.396,FrontierRAG (adaptive+CRAG),0.406,True
+local,Vector + rerank,0.625,Semantic (vector),0.5,Vector + rerank,0.557,False

@@ -1,0 +1,5 @@
+scenario,generative_winner,generative_score,extractive_winner,extractive_score,composite_winner,composite_score,ranking_flips
+Complex Reasoning,Semantic (vector),0.208,Semantic (vector),0.087,Semantic (vector),0.147,False
+Contextual Summarize,FrontierRAG (adaptive+CRAG),0.1,FrontierRAG (adaptive+CRAG),0.059,FrontierRAG (adaptive+CRAG),0.079,False
+Creative Generation,FrontierRAG (adaptive+CRAG),0.4,FrontierRAG (adaptive+CRAG),0.068,FrontierRAG (adaptive+CRAG),0.234,False
+Fact Retrieval,FrontierRAG (adaptive+CRAG),0.375,FrontierRAG (adaptive+CRAG),0.12,FrontierRAG (adaptive+CRAG),0.248,False

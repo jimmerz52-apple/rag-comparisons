@@ -1,0 +1,146 @@
+[
+  {
+    "id": "mh-inf-000-meta",
+    "question": "What company, recently scrutinized by European consumer groups for its ad-free subscription model's GDPR compliance and by EU regulators for content moderation during the Israel-Hamas war, also faces allegations of bias in suppressing Palestinian voices, as reported by TechCrunch?",
+    "expected_answer": "Meta",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "European consumer groups band together to fight Meta\u2019s self-serving ad-free sub \u2014 branding it \u2018unfair\u2019 and \u2018illegal\u2019",
+      "Meta says it\u2019s prioritizing livestreaming checks during Israel-Hamas war",
+      "Meta has a moderation bias problem, not just a \u2018bug,\u2019 that\u2019s suppressing Palestinian voices"
+    ]
+  },
+  {
+    "id": "mh-inf-001-meta",
+    "question": "Which company, featured in TechCrunch articles, is both seeking to involve parents in the oversight of teens' app usage and addressing content moderation challenges related to livestreaming during the Israel-Hamas war, while also facing criticism for alleged moderation biases affecting Palestinian voices?",
+    "expected_answer": "Meta",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Meta seeks legislation that would require parents to approve teens\u2019 app downloads",
+      "Meta says it\u2019s prioritizing livestreaming checks during Israel-Hamas war",
+      "Meta has a moderation bias problem, not just a \u2018bug,\u2019 that\u2019s suppressing Palestinian voices"
+    ]
+  },
+  {
+    "id": "mh-inf-002-uber",
+    "question": "What company, according to TechCrunch, experienced a 38% decrease in reported sexual assault rates between its first and second safety reports, faces criticism for inadequate background checks aimed at quick driver sign-up, and reported $394 million in operating income and $219 million in net income in the third quarter?",
+    "expected_answer": "Uber",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Uber sexual assault survivors call for in-car cameras, tech upgrades",
+      "Uber sexual assault survivors call for in-car cameras, tech upgrades",
+      "Uber\u2019s Q3 numbers include impressive profitability gains, slower-than-expected growth"
+    ]
+  },
+  {
+    "id": "mh-com-003-no",
+    "question": "Does 'The Independent - Life and Style' article suggest that Taylor Swift is secretive about her relationship with Travis Kelce, while the 'FOX News - Lifestyle' article indicates that she engaged with a viral TikTok video, and does the other 'The Independent - Life and Style' article claim that she has a firm commitment to her Eras Tour schedule?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Travis Kelce faces backlash after comments about \u2018finding a breeder\u2019 resurface amid Taylor Swift romance",
+      "Young Taylor Swift fans go viral for struggling to open the star's CD: 'Making me laugh'",
+      "Taylor Swift is Time\u2019s Person of the Year"
+    ]
+  },
+  {
+    "id": "mh-com-004-no",
+    "question": "Did the TechCrunch article indicate that Google's release of the Gemini Pro model was comprehensive and on par with the full Gemini Ultra model, while the other TechCrunch article and the article from The Age both imply misconduct on Google's part, with the former accusing Google of anticompetitive behavior towards news publishers and the latter suggesting a general acceptance of foul play allegations against Google?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Google fakes an AI demo, Grand Theft Auto VI goes viral and Spotify cuts jobs",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-005-no",
+    "question": "Does 'The Verge' article suggest that Sam Bankman-Fried set withdrawal permissions based on his favorite ice cream flavor, while 'Fortune' and 'TechCrunch' articles focus on his personal actions and influence, such as persuading Adam Yedidia to join his companies and committing fraud for personal gain, without mentioning specific operational policies at FTX?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "In the end, the FTX trial was about the friends screwed along the way",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-006-no",
+    "question": "Was there no change in the portrayal of Google's influence on the digital ecosystem between the report from The Verge on Google's impact on the internet's appearance published on November 1, 2023, and the report from TechCrunch on a class action antitrust suit against Google published later?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "The people who ruined the internet",
+      "Epic v. Google, explained",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-007-no",
+    "question": "Has the advice provided by Sporting News to bettors regarding the evaluation of betting opportunities and offers involved reading requirements, going with the favored Eagles, and focusing on hype between the reports published on September 28, 2023, and December 18, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "NBA Rookie of the Year Odds - Wembanyama the early favorite",
+      "Best sportsbook bonus offers for NFL Monday Night Football Eagles vs. Seahawks: Claim over $5,000 in bonuses from Bet365, BetMGM, BetRivers, Caesars Sportsbook, DraftKings and FanDuel\u00a0",
+      "FanDuel 'Prop Stars' Picks: Best bets for Travis Kelce & Taylor Swift-inspired props for Chiefs-Jets Week 4"
+    ]
+  },
+  {
+    "id": "mh-tem-008-no",
+    "question": "Was there inconsistency in Jada Pinkett Smith's statements regarding what she learned from her children after The Independent - Life and Style's report on her views on self-acceptance published at 13:41:30, and before The Independent - Life and Style's subsequent report on the same topic published at 15:48:10 on the same day?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
+      "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
+      "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?"
+    ]
+  }
+]
