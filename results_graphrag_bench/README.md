@@ -1,21 +1,20 @@
-# GraphRAG-Bench (ICLR 2026) — local demo notes
+# GraphRAG-Bench mini results (ICLR 2026)
 
-Paper: [When to use Graphs in RAG](https://arxiv.org/abs/2506.05690) (Xiang et al.)  
-Official: https://github.com/GraphRAG-Bench/GraphRAG-Benchmark · https://graphrag-bench.github.io
+Local bake-off on the **Novel** split (`Novel-4128`, Samuel Pepys diary), ~2 questions × 4 task levels.
 
-## Task ladder
-1. Fact Retrieval — basic RAG competitive (Obs.1)
-2. Complex Reasoning — GraphRAG helps (Obs.2)
-3. Contextual Summarize — GraphRAG helps
-4. Creative Generation — GraphRAG helps
+| Artifact | Purpose |
+|----------|---------|
+| `by_question_type.csv` | Winner per GraphRAG-Bench level |
+| `accuracy_results.csv` | Per-question metrics (+ `graphrag_bench_type`) |
+| `summary.csv` / `scenario_results.csv` | Overall + local/hybrid routing views |
+| `engineering_briefing.md` | Tokens / latency / default path |
+| `routing_cheatsheet.md` | Choose-A-over-B from this run |
 
-## This repo
-- Builder: `src/rag_benchmark/graphrag_bench.py`
-- Runner: `scripts/run_graphrag_bench.py`
-- Notebook: `notebooks/rag_benchmark.ipynb`
-- Outputs: `results_graphrag_bench/`
-- Catalog: `results/graphrag_bench_question_catalog.csv`
+**Notebook demo:** `notebooks/rag_benchmark.ipynb`  
+**Rebuild / re-run:**
 
 ```bash
-PYTHONPATH=src python scripts/run_graphrag_bench.py semantic_rag,rerank_semantic,hybrid_rag,frontier_rag 2
+PYTHONPATH=src python scripts/run_graphrag_bench.py semantic_rag,rerank_semantic,hybrid_rag,frontier_rag 2 Novel-4128
 ```
+
+Paper: [arXiv:2506.05690](https://arxiv.org/abs/2506.05690) · [Leaderboard](https://graphrag-bench.github.io/)

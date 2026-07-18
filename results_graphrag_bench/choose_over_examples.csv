@@ -1,2 +1,1 @@
-question,gold,hotpot_type,choose,choose_method,choose_score,over,over_method,over_score,margin,rule
-"How did the Lady treat Samuel Pepys when he visited her at the Wardrobe, as detailed in his diary account?",Kindly,Fact Retrieval,Hybrid (vec+graph local),hybrid_rag,0.4204545454545454,Semantic (vector),semantic_rag,0.125,0.2954545454545454,"On this question, Hybrid (vec+graph local) beat Semantic (vector)."
+

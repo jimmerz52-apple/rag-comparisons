@@ -93,6 +93,56 @@ def _pick_source(corpus: list[dict], questions: list[dict]) -> str:
     return ranked[0][1]
 
 
+def _tokenize(text: str) -> set[str]:
+    return {t for t in re.findall(r"[a-z0-9]+", text.lower()) if len(t) > 2}
+
+
+def _qa_looks_coherent(question: dict) -> bool:
+    """Drop obviously misaligned GraphRAG-Bench rows (bad upstream pairs).
+
+    Example failure mode: Port William question paired with a Pepys gold answer.
+    Heuristic: require some content-word overlap between Q and A, or between A and
+    evidence snippets when evidence is available.
+    """
+    q = str(question.get("question", ""))
+    a = str(question.get("answer", ""))
+    q_tok, a_tok = _tokenize(q), _tokenize(a)
+    if not a_tok:
+        return False
+    # Proper-name-ish tokens in the question should not be totally absent from answer
+    # when the answer is short (fact / complex). Skip if Q∩A is empty AND answer
+    # also fails to overlap evidence.
+    q_cap = set(re.findall(r"\b[A-Z][a-zA-Z]{2,}\b", q)) - {
+        "What",
+        "How",
+        "Which",
+        "When",
+        "Where",
+        "Who",
+        "Why",
+        "During",
+        "Rewrite",
+        "Describe",
+        "Explain",
+        "The",
+        "This",
+    }
+    if q_cap and not any(name.lower() in a.lower() for name in q_cap):
+        evidence = question.get("evidence") or []
+        ev_text = " ".join(str(e) for e in evidence[:8])
+        if a_tok.isdisjoint(_tokenize(ev_text)) and q_tok.isdisjoint(a_tok):
+            return False
+    # Soft positive: any token overlap Q↔A or A↔evidence
+    evidence = question.get("evidence") or []
+    ev_tok = _tokenize(" ".join(str(e) for e in evidence[:12]))
+    if q_tok & a_tok:
+        return True
+    if a_tok & ev_tok:
+        return True
+    # Creative / summarize answers can be long paraphrases — allow if answer is long
+    return len(a) >= 120
+
+
 def _chunk_novel(text: str, *, max_chars: int = 3500) -> list[str]:
     """Split a novel into paragraph packs (hard-split oversized paragraphs)."""
     paras = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
@@ -142,8 +192,16 @@ def build_graphrag_bench_subset(
 
     selected: list[dict] = []
     for qt in QUESTION_TYPES:
-        # Prefer shorter gold answers for local EM/F1 readability
-        ranked = sorted(by_type.get(qt, []), key=lambda r: len(str(r.get("answer", ""))))
+        pool_qt = [q for q in by_type.get(qt, []) if _qa_looks_coherent(q)]
+        if len(pool_qt) < n_per_type:
+            # Fall back to remaining rows if filter is too aggressive
+            seen = {q["id"] for q in pool_qt}
+            pool_qt.extend(q for q in by_type.get(qt, []) if q["id"] not in seen)
+        # Prefer mid-length answers (very short often noisy; very long hard for EM)
+        ranked = sorted(
+            pool_qt,
+            key=lambda r: abs(len(str(r.get("answer", ""))) - 80),
+        )
         selected.extend(ranked[:n_per_type])
 
     corpus_dir = project_root / "data" / "corpus_graphrag_bench"

@@ -1,51 +1,51 @@
 [
   {
-    "id": "Novel-0cac50ed",
-    "question": "In Samuel Pepys's diary, with whom did Pepys have a conversation during the course of his recorded events?",
-    "expected_answer": "Tom",
+    "id": "Novel-1d62116d",
+    "question": "What agreement did Mr. Pepys make with Mr. Goodgroome for singing lessons, according to his diary?",
+    "expected_answer": "Mr. Pepys agreed to give Mr. Goodgroome 20s. entrance and 20s. a month to teach him to sing.",
     "query_type": "local",
     "best_method": "semantic_rag",
     "source_doc": "Novel-4128",
     "rationale": "GraphRAG-Bench Novel (Fact Retrieval) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
     "graphrag_bench_type": "Fact Retrieval",
     "hotpot_type": "Fact Retrieval",
-    "evidence": "Samuel Pepys had a conversation with an individual named Tom."
+    "evidence": "Mr. Pepys agreed to give Mr. Goodgroome 20s. for entrance.; Mr. Pepys agreed to give Mr. Goodgroome 20s. a month for singing lessons."
   },
   {
-    "id": "Novel-eefdc433",
-    "question": "How did the Lady treat Samuel Pepys when he visited her at the Wardrobe, as detailed in his diary account?",
-    "expected_answer": "Kindly",
+    "id": "Novel-a8bad1cf",
+    "question": "Where did Lady Sandwich treat Samuel Pepys kindly during his visit, as described in his diary?",
+    "expected_answer": "Lady Sandwich treated Samuel Pepys kindly at the Wardrobe.",
     "query_type": "local",
     "best_method": "semantic_rag",
     "source_doc": "Novel-4128",
     "rationale": "GraphRAG-Bench Novel (Fact Retrieval) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
     "graphrag_bench_type": "Fact Retrieval",
     "hotpot_type": "Fact Retrieval",
-    "evidence": "The Lady treated Samuel Pepys kindly when he visited her at the Wardrobe."
+    "evidence": "Lady Sandwich treated Samuel Pepys kindly.; Lady Sandwich treated Samuel Pepys kindly at the Wardrobe."
   },
   {
-    "id": "Novel-55f0c0e2",
-    "question": "What role did Aunt Katy Demitt play in Suza Fairfield's upbringing, and how is Suza Fairfield regarded in Port William?",
-    "expected_answer": "The Duke of York sent an order to Samuel Pepys.",
+    "id": "Novel-95217448",
+    "question": "How does the King's relationship with Mrs. Palmer connect back to the Portuguese Embassador?",
+    "expected_answer": "The Portuguese Embassador took leave of the King, who has mistress Mrs. Palmer.",
     "query_type": "hybrid",
     "best_method": "hybrid_rag",
     "source_doc": "Novel-4128",
     "rationale": "GraphRAG-Bench Novel (Complex Reasoning) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
     "graphrag_bench_type": "Complex Reasoning",
     "hotpot_type": "Complex Reasoning",
-    "evidence": "The Duke of York sent an order to Samuel Pepys."
+    "evidence": "The Portuguese Embassador took leave of the King.; The King has mistress Mrs. Palmer."
   },
   {
-    "id": "Novel-68694b91",
-    "question": "During his visit to the Wardrobe, how did Lady interact with Samuel Pepys, and what was her manner toward him as described in the narrative?",
-    "expected_answer": "Lady treated Samuel Pepys kindly at the Wardrobe.",
+    "id": "Novel-a0c1c9cd",
+    "question": "What evidence from the narrative indicates that members of the royal family, including the King, the Duke, the Duchess, and the Queen of Bohemia, attended the Opera?",
+    "expected_answer": "The Opera was attended by the King, the Duke, the Duchess, and the Queen of Bohemia.",
     "query_type": "hybrid",
     "best_method": "hybrid_rag",
     "source_doc": "Novel-4128",
     "rationale": "GraphRAG-Bench Novel (Complex Reasoning) \u2014 Xiang et al., ICLR 2026 / arXiv:2506.05690",
     "graphrag_bench_type": "Complex Reasoning",
     "hotpot_type": "Complex Reasoning",
-    "evidence": "Lady treated Samuel Pepys kindly at the Wardrobe."
+    "evidence": "The Opera was attended by the King.; The Opera was attended by the Duke.; The Opera was attended by the Duchess.; The Opera was attended by the Queen of Bohemia."
   },
   {
     "id": "Novel-feba1552",
