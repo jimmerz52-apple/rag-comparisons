@@ -14,9 +14,11 @@ build/
 
 # Local vector DB / rebuildable indexes (large; regenerate with reuse_indexes)
 .chroma/
+results_embedding_bakeoff/
 graphrag_workspaces/
 hipporag_workspaces/
 lightrag_workspaces/
+memory_workspaces/
 data/graphrag_bench_cache/
 **/output/
 **/cache/

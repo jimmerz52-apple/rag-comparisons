@@ -110,6 +110,36 @@ def cmd_frameworks(_args: argparse.Namespace) -> None:
     print_framework_catalog()
 
 
+def cmd_layers(_args: argparse.Namespace) -> None:
+    print(
+        """
+=== Separation of concerns ===
+
+1) SDK  (rag_benchmark.sdk)
+   Embedder · SourceRef · LineageVectorStore · RagPipelineOrchestrator
+   - Source lineage next to every vector (citations, delete, sync)
+   - Incremental re-embed by source_id / content_hash
+   - One Chroma collection per embedding model
+
+2) Method bake-off  (BenchmarkRunner / python -m rag_benchmark run)
+   Compare RAG *architectures* (semantic, graph, hybrid, RAPTOR, …)
+   Embedder is fixed from config.
+
+3) Embedding bake-off  (scripts/run_embedding_bakeoff.py)
+   Same orchestrator pipeline; swap embedding models.
+   Results → results_embedding_bakeoff/  (not results/)
+
+Demo incremental sync (no full revectorize on small edits):
+  PYTHONPATH=src python scripts/demo_incremental_sync.py
+
+Enterprise reindex flags (audit before act):
+  PYTHONPATH=src python scripts/demo_reindex_flags.py
+  orch.audit_index()   # flag only
+  orch.ensure_index()  # flag + remediate + stamp registry
+""".strip()
+    )
+
+
 def main() -> None:
     _setup_path()
     load_dotenv(PROJECT_ROOT / ".env")
@@ -129,6 +159,12 @@ def main() -> None:
 
     fw_p = sub.add_parser("frameworks", help="List integrated / deferred RAG frameworks")
     fw_p.set_defaults(func=cmd_frameworks)
+
+    sep_p = sub.add_parser(
+        "layers",
+        help="Explain SDK vs method bake-off vs embedding bake-off",
+    )
+    sep_p.set_defaults(func=cmd_layers)
 
     args = parser.parse_args()
     args.func(args)

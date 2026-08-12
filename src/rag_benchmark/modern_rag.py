@@ -15,7 +15,8 @@ from rank_bm25 import BM25Okapi
 from rag_benchmark.config import BenchmarkConfig
 from rag_benchmark.corpus import TextChunk, chunk_documents, load_documents
 from rag_benchmark.llm_factory import TrackedLLMClient
-from rag_benchmark.semantic_rag import ANSWER_PROMPT, QueryResult, SemanticRAG
+from rag_benchmark.prompts import ANSWER_PROMPT
+from rag_benchmark.semantic_rag import QueryResult, SemanticRAG
 from rag_benchmark.token_tracker import TokenLedger
 
 

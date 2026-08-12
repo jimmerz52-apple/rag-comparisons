@@ -108,10 +108,53 @@ FRAMEWORKS: list[dict[str, str]] = [
         "url": "https://github.com/HKUDS/MiniRAG",
     },
     {
-        "id": "raptor",
-        "name": "RAPTOR",
+        "id": "raptor_rag",
+        "name": "RAPTOR (lite)",
+        "status": "integrated",
+        "notes": (
+            "Sarthi et al. ICLR 2024. GMM+BIC soft clustering + collapsed-tree retrieve "
+            "(paper-preferred). Deferred: UMAP two-step clustering, paper summarizer/embedder."
+        ),
+        "url": "https://arxiv.org/abs/2401.18059",
+    },
+    {
+        "id": "parent_child_rag",
+        "name": "Parent–child / small-to-big",
+        "status": "integrated",
+        "notes": (
+            "Retrieve fine child chunks; expand to parent windows for generation. "
+            "LlamaIndex ParentDocumentRetriever family — not MemGPT."
+        ),
+    },
+    {
+        "id": "proposition_rag",
+        "name": "Proposition index (Dense X)",
+        "status": "integrated",
+        "notes": (
+            "Chen et al. EMNLP 2024 Dense X Retrieval. Local LLM propositionizer "
+            "(paper: Flan-T5). Sentence-split is only a fallback."
+        ),
+        "url": "https://arxiv.org/abs/2312.06648",
+    },
+    {
+        "id": "memgpt",
+        "name": "MemGPT / Letta",
         "status": "deferred",
-        "notes": "Tree-of-summaries; cited in LazyGraphRAG comparisons. Heavy to reimplement locally.",
+        "notes": (
+            "Packer et al. 2023 — OS-style agent memory (working + FIFO + archival via tools). "
+            "Not a static RAG index; wrong abstraction for this closed-world QA harness."
+        ),
+        "url": "https://arxiv.org/abs/2310.08560",
+    },
+    {
+        "id": "memwalker",
+        "name": "MemWalker",
+        "status": "deferred",
+        "notes": (
+            "Chen et al. 2023 — contiguous summary tree + interactive LLM navigation. "
+            "Paper notes navigation needs large instruction-tuned models (~70B); poor fit for local 3B."
+        ),
+        "url": "https://arxiv.org/abs/2310.05029",
     },
 ]
 

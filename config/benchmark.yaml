@@ -22,6 +22,16 @@ semantic_rag:
   top_k: 8
   collection_name: semantic_rag_corpus
 
+# ---------------------------------------------------------------------------
+# Embedding bake-off (SEPARATE from method bake-off / BenchmarkRunner)
+# Run: PYTHONPATH=src python scripts/run_embedding_bakeoff.py
+# Each model → its own lineage collection under .chroma/embedding_bakeoff/
+# ---------------------------------------------------------------------------
+embedding_bakeoff:
+  models:
+    - all-MiniLM-L6-v2
+    - BAAI/bge-small-en-v1.5
+
 graph_rag:
   workspace_dir: graphrag_workspaces/full
   # fast = spaCy NLP graph + community text reports (reliable with local LLMs)
@@ -48,6 +58,22 @@ light_rag:
 hippo_rag:
   # HippoRAG 2 (OSU-NLP) — pip install hipporag==2.0.0a3 --no-deps (+ igraph gritlm)
   workspace_dir: hipporag_workspaces/default
+
+raptor_rag:
+  # RAPTOR-lite (Sarthi et al., ICLR 2024) — GMM cluster + collapsed-tree retrieve
+  workspace_dir: memory_workspaces/raptor
+  max_levels: 2
+  cluster_size: 4
+
+parent_child_rag:
+  # Small-to-big / ParentDocumentRetriever-style hierarchy
+  workspace_dir: memory_workspaces/parent_child
+  child_chunk_size: 200
+  parent_chunk_size: 800
+
+proposition_rag:
+  # Dense X Retrieval propositions (local LLM propositionizer)
+  workspace_dir: memory_workspaces/propositions
 
 hybrid_rag:
   # Reuses graph_rag workspace; queries with local search, fuses with vector chunks

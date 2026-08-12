@@ -13,6 +13,7 @@ from rag_benchmark.frontier_rag import FrontierRAG
 from rag_benchmark.hippo_rag import HippoRAGRunner
 from rag_benchmark.hybrid_rag import HybridRAG
 from rag_benchmark.light_rag import LightRAGRunner
+from rag_benchmark.memory_structures import ParentChildRAG, PropositionRAG, RaptorRAG
 from rag_benchmark.modern_rag import AdaptiveRAGRouter, HybridDenseSparseRAG, RerankSemanticRAG
 from rag_benchmark.llm_factory import TrackedLLMClient, clone_client_for_ledger, create_tracked_client
 from rag_benchmark.metrics import AccuracyEvaluator, AccuracyResult, load_eval_questions
@@ -324,6 +325,57 @@ class BenchmarkRunner:
             "hippo_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
         )
 
+    def run_raptor(self) -> MethodRunResult:
+        """RAPTOR-lite hierarchical summary tree (Sarthi et al., ICLR 2024)."""
+        ledger = TokenLedger()
+        client = self._client_for(ledger)
+        rag = RaptorRAG(self.config, client, ledger)
+        start = time.perf_counter()
+        index_start = time.perf_counter()
+        rag.build_index()
+        index_seconds = time.perf_counter() - index_start
+        answers, accuracy, query_latencies = self._evaluate_method(
+            "raptor_rag", rag.query, client
+        )
+        elapsed = time.perf_counter() - start
+        return MethodRunResult(
+            "raptor_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+        )
+
+    def run_parent_child(self) -> MethodRunResult:
+        """Small-to-big: retrieve child chunks, expand to parent windows."""
+        ledger = TokenLedger()
+        client = self._client_for(ledger)
+        rag = ParentChildRAG(self.config, client, ledger)
+        start = time.perf_counter()
+        index_start = time.perf_counter()
+        rag.build_index()
+        index_seconds = time.perf_counter() - index_start
+        answers, accuracy, query_latencies = self._evaluate_method(
+            "parent_child_rag", rag.query, client
+        )
+        elapsed = time.perf_counter() - start
+        return MethodRunResult(
+            "parent_child_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+        )
+
+    def run_proposition(self) -> MethodRunResult:
+        """Dense-X-style proposition index (local LLM propositionizer)."""
+        ledger = TokenLedger()
+        client = self._client_for(ledger)
+        rag = PropositionRAG(self.config, client, ledger)
+        start = time.perf_counter()
+        index_start = time.perf_counter()
+        rag.build_index()
+        index_seconds = time.perf_counter() - index_start
+        answers, accuracy, query_latencies = self._evaluate_method(
+            "proposition_rag", rag.query, client
+        )
+        elapsed = time.perf_counter() - start
+        return MethodRunResult(
+            "proposition_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+        )
+
     def run_all(self, methods: list[str] | None = None) -> list[MethodRunResult]:
         runners: dict[str, Callable[[], MethodRunResult]] = {
             "semantic_rag": self.run_semantic,
@@ -338,6 +390,9 @@ class BenchmarkRunner:
             "rerank_semantic": self.run_rerank_semantic,
             "adaptive_rag": self.run_adaptive,
             "frontier_rag": self.run_frontier,
+            "raptor_rag": self.run_raptor,
+            "parent_child_rag": self.run_parent_child,
+            "proposition_rag": self.run_proposition,
         }
         selected = methods or [
             "semantic_rag",

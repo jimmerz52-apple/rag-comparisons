@@ -25,7 +25,7 @@ from rag_benchmark.config import BenchmarkConfig
 from rag_benchmark.hybrid_rag import HybridRAG
 from rag_benchmark.llm_factory import TrackedLLMClient
 from rag_benchmark.modern_rag import HybridDenseSparseRAG, RerankSemanticRAG, _tokenize
-from rag_benchmark.semantic_rag import ANSWER_PROMPT
+from rag_benchmark.prompts import ANSWER_PROMPT
 from rag_benchmark.token_tracker import TokenLedger
 
 GRADE_PROMPT = """You are a retrieval grader for RAG.

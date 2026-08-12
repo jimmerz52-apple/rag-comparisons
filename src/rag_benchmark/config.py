@@ -27,6 +27,17 @@ class BenchmarkConfig:
     lightrag_mode: str = "hybrid"
     lightrag_embedding_dim: int = 768
     hipporag_workspace: Path = field(default_factory=lambda: Path("hipporag_workspaces/default"))
+    raptor_workspace: Path = field(default_factory=lambda: Path("memory_workspaces/raptor"))
+    raptor_max_levels: int = 2
+    raptor_cluster_size: int = 4
+    parent_child_workspace: Path = field(
+        default_factory=lambda: Path("memory_workspaces/parent_child")
+    )
+    parent_child_child_size: int = 200
+    parent_child_parent_size: int = 800
+    proposition_workspace: Path = field(
+        default_factory=lambda: Path("memory_workspaces/propositions")
+    )
     graph_search_method: str = "global"
     graph_indexing_method: str = "fast"
     hybrid_graph_search_method: str = "local"
@@ -60,6 +71,9 @@ class BenchmarkConfig:
         lazy = raw.get("lazygraph_rag", {})
         light = raw.get("light_rag", {})
         hippo = raw.get("hippo_rag", {})
+        raptor = raw.get("raptor_rag", {})
+        parent_child = raw.get("parent_child_rag", {})
+        prop = raw.get("proposition_rag", {})
         evaluation = raw.get("evaluation", {})
         pricing = raw.get("pricing", {})
         llm = raw.get("llm", {})
@@ -104,6 +118,16 @@ class BenchmarkConfig:
             lightrag_embedding_dim=int(light.get("embedding_dim", 768)),
             hipporag_workspace=project_root
             / hippo.get("workspace_dir", "hipporag_workspaces/default"),
+            raptor_workspace=project_root
+            / raptor.get("workspace_dir", "memory_workspaces/raptor"),
+            raptor_max_levels=int(raptor.get("max_levels", 2)),
+            raptor_cluster_size=int(raptor.get("cluster_size", 4)),
+            parent_child_workspace=project_root
+            / parent_child.get("workspace_dir", "memory_workspaces/parent_child"),
+            parent_child_child_size=int(parent_child.get("child_chunk_size", 200)),
+            parent_child_parent_size=int(parent_child.get("parent_chunk_size", 800)),
+            proposition_workspace=project_root
+            / prop.get("workspace_dir", "memory_workspaces/propositions"),
             graph_search_method=graph.get("search_method", "global"),
             graph_indexing_method=graph.get(
                 "indexing_method",

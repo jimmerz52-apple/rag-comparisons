@@ -1,28 +1,23 @@
+"""Classic dense RAG method — thin wrapper over the SDK lineage store.
+
+Uses ``rag_benchmark.sdk`` for embedder + SourceRef + incremental index.
+Method bake-offs keep calling this class; apps should prefer
+``RagPipelineOrchestrator`` for citations / sync APIs.
+"""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
 
-import chromadb
 import numpy as np
 
 from rag_benchmark.config import BenchmarkConfig
-from rag_benchmark.corpus import TextChunk, chunk_documents, load_documents
+from rag_benchmark.corpus import TextChunk, load_documents
 from rag_benchmark.llm_factory import TrackedLLMClient
+from rag_benchmark.prompts import ANSWER_PROMPT
+from rag_benchmark.sdk.embedder import TrackedClientEmbedder
+from rag_benchmark.sdk.vector_store import LineageVectorStore
 from rag_benchmark.token_tracker import TokenLedger
-
-
-ANSWER_PROMPT = """Answer the question using only the provided context.
-Prefer a short, direct answer (entity name, date, number, or yes/no) when that matches the question.
-Put that short answer on the FIRST line by itself. Do not hedge if the answer is clearly stated.
-If the context is insufficient, say you do not have enough information.
-
-Question: {question}
-
-Context:
-{context}
-
-Answer:"""
 
 
 @dataclass
@@ -36,67 +31,61 @@ class SemanticRAG:
         self.config = config
         self.client = tracked_client
         self.ledger = ledger
+        self._embedder = TrackedClientEmbedder(tracked_client, config.embedding_model)
+        self._store = LineageVectorStore(
+            root=config.project_root / ".chroma" / "sdk_lineage",
+            base_collection=config.semantic_collection,
+            embedder=self._embedder,
+            chunk_size=config.chunk_size,
+            chunk_overlap=config.chunk_overlap,
+        )
         self._chunks: list[TextChunk] = []
-        self._collection = None
+
+    @property
+    def _collection(self):
+        """Back-compat for HybridDenseSparseRAG / RerankSemanticRAG."""
+        return self._store.collection
+
+    @_collection.setter
+    def _collection(self, value) -> None:
+        # Allow subclasses/tests to poke the collection; prefer store APIs.
+        if value is not None:
+            self._store._collection = value
 
     def build_index(self) -> None:
         documents = load_documents(self.config.corpus_dir, self.config.max_documents)
+        if not documents:
+            raise ValueError(f"No chunks found in corpus: {self.config.corpus_dir}")
+
+        if not self.config.reuse_indexes:
+            self._store.reset()
+            self._store.upsert_documents(documents, phase="semantic_index")
+        else:
+            self._store.sync_documents(documents, drop_missing=True, phase="semantic_index")
+
+        # Materialize chunks for BM25 hybrid subclass
+        from rag_benchmark.corpus import chunk_documents
+
         self._chunks = chunk_documents(
             documents,
             chunk_size=self.config.chunk_size,
             chunk_overlap=self.config.chunk_overlap,
         )
-        if not self._chunks:
-            raise ValueError(f"No chunks found in corpus: {self.config.corpus_dir}")
-
-        chroma_path = self.config.project_root / ".chroma" / self.config.semantic_collection
-        chroma = chromadb.PersistentClient(path=str(chroma_path))
-
-        if not self.config.reuse_indexes:
-            try:
-                chroma.delete_collection(self.config.semantic_collection)
-            except Exception:
-                pass
-
-        self._collection = chroma.get_or_create_collection(self.config.semantic_collection)
-
-        if self.config.reuse_indexes and self._collection.count() >= len(self._chunks):
-            return
-
-        batch_size = 64
-        for start in range(0, len(self._chunks), batch_size):
-            batch = self._chunks[start : start + batch_size]
-            embeddings = self.client.embed_texts(
-                [chunk.text for chunk in batch],
-                model=self.config.embedding_model,
-                phase="semantic_index",
-            )
-            self._collection.upsert(
-                ids=[chunk.chunk_id for chunk in batch],
-                documents=[chunk.text for chunk in batch],
-                embeddings=embeddings,
-                metadatas=[
-                    {"doc_id": chunk.doc_id, "source_path": str(chunk.source_path)}
-                    for chunk in batch
-                ],
-            )
 
     def retrieve(self, question: str) -> list[str]:
-        """Return top-k chunks without generating an answer (for hybrid fusion)."""
-        if self._collection is None:
+        """Return top-k chunk texts (for hybrid fusion / method bake-off)."""
+        if self._store.count() == 0:
             raise RuntimeError("Semantic index not built. Call build_index() first.")
-
-        query_embedding = self.client.embed_texts(
-            [question],
-            model=self.config.embedding_model,
-            phase="semantic_query",
-        )[0]
-
-        results = self._collection.query(
-            query_embeddings=[query_embedding],
-            n_results=self.config.semantic_top_k,
+        hits = self._store.query(
+            question, top_k=self.config.semantic_top_k, phase="semantic_query"
         )
-        return results.get("documents", [[]])[0]
+        return [text for text, _ref, _dist in hits]
+
+    def retrieve_with_sources(self, question: str):
+        """Enterprise path: texts + SourceRef lineage."""
+        return self._store.query(
+            question, top_k=self.config.semantic_top_k, phase="semantic_query"
+        )
 
     def query(self, question: str) -> QueryResult:
         retrieved = self.retrieve(question)

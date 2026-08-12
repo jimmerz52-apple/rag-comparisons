@@ -68,8 +68,11 @@ class TrackedLocalLLM:
         model: str | None = None,
         phase: str,
     ) -> list[list[float]]:
+        # Honor model= so embedding bake-offs can swap vector spaces without
+        # rebuilding the chat client. Each model_id uses a separate ST cache entry.
         model = model or self.config.embedding_model
-        vectors = self._embedder.encode(texts, show_progress_bar=False, convert_to_numpy=True)
+        embedder = _get_embedder(model)
+        vectors = embedder.encode(texts, show_progress_bar=False, convert_to_numpy=True)
         for text in texts:
             self.ledger.record(
                 phase=phase,

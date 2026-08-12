@@ -22,6 +22,9 @@ METHOD_LABELS = {
     "rerank_semantic": "Vector + rerank",
     "adaptive_rag": "Adaptive router",
     "frontier_rag": "FrontierRAG (adaptive+CRAG)",
+    "raptor_rag": "RAPTOR (collapsed tree)",
+    "parent_child_rag": "Parent–child (small→big)",
+    "proposition_rag": "Proposition index",
 }
 
 METHOD_ORDER = list(METHOD_LABELS.keys())
