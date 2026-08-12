@@ -164,6 +164,105 @@ def scenario_dual_leaderboard(
     return pd.DataFrame(rows)
 
 
+CORE_TRIO = ("semantic_rag", "graph_rag", "lazygraph_rag")
+
+
+def method_clear_wins(
+    accuracy_df: pd.DataFrame,
+    qa_path: Path,
+    *,
+    methods: tuple[str, ...] = CORE_TRIO,
+    score_col: str = "composite_score",
+    min_margin: float = 0.12,
+    min_vs_each: float = 0.05,
+) -> pd.DataFrame:
+    """Questions where method M clearly beats all other methods in `methods`."""
+    qa_by_id = {q["id"]: q for q in json.loads(Path(qa_path).read_text(encoding="utf-8"))}
+    df = enrich_accuracy(accuracy_df)
+    pivot = df.pivot_table(
+        index="question_id", columns="method", values=score_col, aggfunc="mean"
+    )
+    rows: list[dict[str, Any]] = []
+    for qid in pivot.index:
+        if not all(m in pivot.columns for m in methods):
+            continue
+        scores = {m: float(pivot.loc[qid, m]) for m in methods if pd.notna(pivot.loc[qid, m])}
+        if len(scores) < len(methods):
+            continue
+        for winner, w_score in scores.items():
+            rivals = {m: s for m, s in scores.items() if m != winner}
+            if not rivals:
+                continue
+            best_rival_m = max(rivals, key=rivals.get)  # type: ignore[arg-type]
+            best_rival_s = rivals[best_rival_m]
+            margin = w_score - best_rival_s
+            if margin < min_margin:
+                continue
+            if any(w_score - s < min_vs_each for s in rivals.values()):
+                continue
+            q = qa_by_id.get(str(qid), {})
+            sub = df[(df.question_id == qid) & (df.method == winner)].iloc[0]
+            rows.append(
+                {
+                    "winner": winner,
+                    "winner_label": METHOD_LABELS.get(winner, winner),
+                    "question_id": qid,
+                    "question": q.get("question", qid),
+                    "gold": q.get("expected_answer", ""),
+                    "hotpot_type": q.get("hotpot_type", q.get("query_type", "")),
+                    "score_col": score_col,
+                    "winner_score": round(w_score, 3),
+                    "runner_up": best_rival_m,
+                    "runner_up_label": METHOD_LABELS.get(best_rival_m, best_rival_m),
+                    "runner_up_score": round(best_rival_s, 3),
+                    "margin": round(margin, 3),
+                    "llm_judge": round(float(sub["llm_judge_score"]), 3),
+                    "token_f1": round(float(sub["token_f1"]), 3),
+                    "exact_match": bool(sub["exact_match"]),
+                    "contains_answer": bool(sub["contains_answer"]),
+                    "generative_score": round(float(sub["generative_score"]), 3),
+                }
+            )
+    out = pd.DataFrame(rows)
+    if out.empty:
+        return out
+    return out.sort_values(["winner", "margin"], ascending=[True, False])
+
+
+def format_method_win_examples_markdown(wins_df: pd.DataFrame) -> str:
+    if wins_df.empty:
+        return "_No clear wins at the chosen margin threshold._"
+    lines = [
+        "# Clear wins: Semantic vs GraphRAG vs LazyGraph",
+        "",
+        "A **clear win** means the method beats *both* rivals in the trio by at least "
+        "the margin threshold on the chosen score column.",
+        "",
+    ]
+    for method in CORE_TRIO:
+        sub = wins_df[wins_df.winner == method]
+        label = METHOD_LABELS.get(method, method)
+        lines.append(f"## {label}")
+        if sub.empty:
+            lines.append("_No clear wins on this slice at this threshold._\n")
+            continue
+        for _, r in sub.iterrows():
+            lines.append(f"### {r['question'][:80]}{'…' if len(str(r['question'])) > 80 else ''}")
+            lines.append(f"- **Gold:** `{r['gold']}` ({r['hotpot_type']})")
+            lines.append(
+                f"- **{r['score_col']}:** {r['winner_score']:.2f} vs "
+                f"{r['runner_up_label']} {r['runner_up_score']:.2f} "
+                f"(margin **{r['margin']:.2f}**)"
+            )
+            lines.append(
+                f"- **Breakdown:** judge={r['llm_judge']:.2f}, contains={int(r['contains_answer'])}, "
+                f"F1={r['token_f1']:.2f}, EM={int(r['exact_match'])}, "
+                f"generative={r['generative_score']:.2f}"
+            )
+            lines.append("")
+    return "\n".join(lines)
+
+
 def write_autopsy_artifacts(
     *,
     results_dir: Path,
@@ -191,10 +290,24 @@ def write_autopsy_artifacts(
     (results_dir / "metric_disagreement.json").write_text(
         json.dumps(stats, indent=2), encoding="utf-8"
     )
+
+    composite_wins = method_clear_wins(acc, qa_path, score_col="composite_score")
+    generative_wins = method_clear_wins(acc, qa_path, score_col="generative_score")
+    composite_wins.to_csv(results_dir / "method_clear_wins_composite.csv", index=False)
+    generative_wins.to_csv(results_dir / "method_clear_wins_generative.csv", index=False)
+    wins_md = format_method_win_examples_markdown(composite_wins)
+    wins_md += "\n\n---\n\n## Same filter on generative score (judge + contains)\n\n"
+    wins_md += format_method_win_examples_markdown(generative_wins)
+    wins_md_path = results_dir / "method_win_examples.md"
+    wins_md_path.write_text(wins_md, encoding="utf-8")
+
     return {
         "enriched": results_dir / "accuracy_enriched.csv",
         "profile": results_dir / "metric_breakdown_by_method.csv",
         "catalog": catalog_path,
         "dual": results_dir / "dual_scoreboard.csv",
         "disagreement": results_dir / "metric_disagreement.json",
+        "wins_composite": results_dir / "method_clear_wins_composite.csv",
+        "wins_generative": results_dir / "method_clear_wins_generative.csv",
+        "wins_md": wins_md_path,
     }
