@@ -27,7 +27,7 @@ METHODS = [
 
 
 def main() -> None:
-    n = int(sys.argv[1]) if len(sys.argv) > 1 else 12
+    n = int(sys.argv[1]) if len(sys.argv) > 1 else 24
     print(f"Building HotpotQA distractor subset (n={n})...")
     built = build_hotpot_subset(project_root=ROOT, n_questions=n)
     print(built["meta"])
@@ -42,11 +42,13 @@ def main() -> None:
     config.lightrag_workspace = ROOT / "lightrag_workspaces" / "hotpot"
     config.hipporag_workspace = ROOT / "hipporag_workspaces" / "hotpot"
     config.max_documents = 10_000
-    config.reuse_indexes = True
+    # Original n=12 index covered 119 docs; n=24 corpus is 231 — must rebuild.
+    config.reuse_indexes = n <= 12
     config.graph_indexing_method = "fast"
     config.semantic_top_k = 8
 
-    print(f"Docs={len(list(config.corpus_dir.glob('*.txt')))} methods={METHODS}")
+    n_docs = len(list(config.corpus_dir.glob("*.txt")))
+    print(f"Docs={n_docs} methods={METHODS} reuse_indexes={config.reuse_indexes}")
     runner = BenchmarkRunner(config, create_tracked_client(config))
     results = runner.run_all(methods=METHODS)
     saved = runner.save_results(results)

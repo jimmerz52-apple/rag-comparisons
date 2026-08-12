@@ -40,7 +40,8 @@ def _merge_csv(path: Path, new_df: pd.DataFrame, key_cols: list[str]) -> pd.Data
 
 def main() -> None:
     print(f"Building/reusing HotpotQA subset; methods={METHODS}")
-    built = build_hotpot_subset(project_root=ROOT, n_questions=12)
+    n = int(sys.argv[2]) if len(sys.argv) > 2 else 24
+    built = build_hotpot_subset(project_root=ROOT, n_questions=n)
     print(built["meta"])
 
     config = BenchmarkConfig.from_yaml(ROOT)
@@ -53,7 +54,7 @@ def main() -> None:
     config.lightrag_workspace = ROOT / "lightrag_workspaces" / "hotpot"
     config.hipporag_workspace = ROOT / "hipporag_workspaces" / "hotpot"
     config.max_documents = 10_000
-    config.reuse_indexes = True
+    config.reuse_indexes = n <= 12
     config.graph_indexing_method = "fast"
     config.semantic_top_k = 8
 

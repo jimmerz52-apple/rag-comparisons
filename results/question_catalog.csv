@@ -5,9 +5,21 @@ Q3,5a8e3ea95542995a26add48d,bridge,"The director of the romantic comedy ""Big St
 Q4,5abd94525542992ac4f382d2,bridge,2014 S/S is the debut album of a South Korean boy group that was formed by who?,YG Entertainment,0.2222222222222222,0.4033333333333333,0.22822822822822822,0.3333333333333333,0.36833333333333335,0.22522522522522526,Semantic (vector)
 Q5,5a85b2d95542997b5ce40028,bridge,Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?,Eenasul Fateh,0.3333333333333333,0.5222222222222223,0.3447293447293447,0.4444444444444444,0.4833333333333333,0.33903133903133903,Hybrid (vec+graph local)
 Q6,5a87ab905542996e4f3088c1,bridge,The arena where the Lewiston Maineiacs played their home games can seat how many people?,"3,677 seated",0.0,0.2222222222222222,0.027272727272727268,0.0,0.1111111111111111,0.013636363636363634,Hybrid (vec+graph local)
-Q7,5a8b57f25542995d1e6f1371,comparison,Were Scott Derrickson and Ed Wood of the same nationality?,yes,0.2222222222222222,0.3111111111111111,0.23456790123456792,0.3333333333333333,0.3222222222222222,0.22839506172839505,GraphRAG fast/basic
-Q8,5adbf0a255429947ff17385a,comparison,Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?,no,0.4444444444444444,0.5333333333333333,0.0,0.7777777777777778,0.6555555555555556,0.2222222222222222,Adaptive router
-Q9,5a8db19d5542994ba4e3dd00,comparison,Are Local H and For Against both from the United States?,yes,0.2222222222222222,0.5555555555555556,0.22657952069716775,0.4444444444444444,0.5,0.22440087145969498,Semantic (vector)
-Q10,5ab56e32554299637185c594,comparison,Are Random House Tower and 888 7th Avenue both used for real estate?,no,0.1111111111111111,0.32222222222222224,0.0,0.3333333333333333,0.3277777777777777,0.05555555555555555,GraphRAG global
-Q11,5ab29c24554299449642c932,comparison,Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?,yes,0.6666666666666666,0.5333333333333333,0.6703703703703704,0.7777777777777778,0.6555555555555556,0.6685185185185185,GraphRAG fast/basic
-Q12,5a8133725542995ce29dcbdb,comparison,"Which writer was from England, Henry Roth or Robert Erskine Childers?",Robert Erskine Childers DSC,0.0,0.6000000000000001,0.4861204137066205,0.8888888888888888,0.7444444444444445,0.24306020685331026,Adaptive router
+Q7,5a7bbb64554299042af8f7cc,bridge,"Who is older, Annie Morton or Terry Richardson?",Terry Richardson,,,,,,,
+Q8,5a7166395542994082a3e814,bridge,"What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",Kansas Song,,,,,,,
+Q9,5a877e5d5542993e715abf7d,bridge,"What screenwriter with credits for ""Evolution"" co-wrote a film starring Nicolas Cage and Téa Leoni?",David Weissman,,,,,,,
+Q10,5ab3b0bf5542992ade7c6e39,bridge,What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?,1999,,,,,,,
+Q11,5ab6d09255429954757d337d,bridge,The football manager who recruited David Beckham managed Manchester United during what timeframe?,from 1986 to 2013,,,,,,,
+Q12,5a75e05c55429976ec32bc5f,bridge,Brown State Fishing Lake is in a country that has a population of how many inhabitants ?,"9,984",,,,,,,
+Q13,5a8b57f25542995d1e6f1371,comparison,Were Scott Derrickson and Ed Wood of the same nationality?,yes,0.2222222222222222,0.3111111111111111,0.23456790123456792,0.3333333333333333,0.3222222222222222,0.22839506172839505,GraphRAG fast/basic
+Q14,5adbf0a255429947ff17385a,comparison,Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?,no,0.4444444444444444,0.5333333333333333,0.0,0.7777777777777778,0.6555555555555556,0.2222222222222222,Adaptive router
+Q15,5a8db19d5542994ba4e3dd00,comparison,Are Local H and For Against both from the United States?,yes,0.2222222222222222,0.5555555555555556,0.22657952069716775,0.4444444444444444,0.5,0.22440087145969498,Semantic (vector)
+Q16,5ab56e32554299637185c594,comparison,Are Random House Tower and 888 7th Avenue both used for real estate?,no,0.1111111111111111,0.32222222222222224,0.0,0.3333333333333333,0.3277777777777777,0.05555555555555555,GraphRAG global
+Q17,5ab29c24554299449642c932,comparison,Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?,yes,0.6666666666666666,0.5333333333333333,0.6703703703703704,0.7777777777777778,0.6555555555555556,0.6685185185185185,GraphRAG fast/basic
+Q18,5a8133725542995ce29dcbdb,comparison,"Which writer was from England, Henry Roth or Robert Erskine Childers?",Robert Erskine Childers DSC,0.0,0.6000000000000001,0.4861204137066205,0.8888888888888888,0.7444444444444445,0.24306020685331026,Adaptive router
+Q19,5ae2070a5542994d89d5b313,comparison,"Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",Badly Drawn Boy,,,,,,,
+Q20,5abd259d55429924427fcf1a,comparison,"Are both Dictyosperma, and Huernia described as a genus?",yes,,,,,,,
+Q21,5ae4a3265542995ad6573de5,comparison,"Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?","Fujioka, Gunma",,,,,,,
+Q22,5abc0a5d5542993f40c73c64,comparison,Are Freakonomics and In the Realm of the Hackers both American documentaries?,no,,,,,,,
+Q23,5a7cc50e554299452d57ba3e,comparison,"Which band, Letters to Cleo or Screaming Trees, had more members?",Letters to Cleo,,,,,,,
+Q24,5ab51dae5542991779162d82,comparison,Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?,no,,,,,,,
