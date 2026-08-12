@@ -1,0 +1,4 @@
+question_id,question,gold,hotpot_type,graph_composite,semantic_composite,graph_generative,semantic_generative,margin_composite,margin_generative
+5a8133725542995ce29dcbdb,"Which writer was from England, Henry Roth or Robert Erskine Childers?",Robert Erskine Childers DSC,comparison,0.3288461538461538,0.125,0.6,0.25,0.2038461538461538,0.35
+5a8b57f25542995d1e6f1371,Were Scott Derrickson and Ed Wood of the same nationality?,yes,comparison,0.2,0.0,0.4,0.0,0.2,0.4
+5ab56e32554299637185c594,Are Random House Tower and 888 7th Avenue both used for real estate?,no,comparison,0.45,0.625,0.9,0.75,-0.175,0.15000000000000002
