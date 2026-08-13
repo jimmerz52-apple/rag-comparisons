@@ -903,7 +903,9 @@ def build() -> Path:
     out_results = ROOT / "results" / "dashboard.html"
     out_results.parent.mkdir(parents=True, exist_ok=True)
     out_results.write_text(html, encoding="utf-8")
-    (ROOT / "results_code_rag" / "dashboard.html").write_text(html, encoding="utf-8")
+    code_rag_dash = ROOT / "results_code_rag" / "dashboard.html"
+    code_rag_dash.parent.mkdir(parents=True, exist_ok=True)
+    code_rag_dash.write_text(html, encoding="utf-8")
 
     # Lightweight Pages README
     (docs / "README.md").write_text(
