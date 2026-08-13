@@ -13,6 +13,7 @@ Outputs: docs/index.html · results/dashboard.html · docs/dashboard_data.json
 
 from __future__ import annotations
 
+import html as html_lib
 import json
 import math
 from datetime import datetime, timezone
@@ -177,10 +178,16 @@ METRIC_DEFS = [
         "means": "Semantic correctness vs gold. Correlates better with humans than EM on generative QA, but is not faithfulness-to-context.",
     },
     {
-        "id": "tokens_per_query",
-        "name": "Tokens / query",
-        "range": "count ↓",
-        "means": "Cost proxy. Graph global / frontier often win quality on some slices while burning tokens.",
+        "id": "latency",
+        "name": "Query latency (mean / p50 / p95)",
+        "range": "seconds ↓",
+        "means": "Wall-clock per question after the index exists. p95 is the SLO number — a method with mean 2s and p95 15s will feel broken in interactive UI.",
+    },
+    {
+        "id": "index",
+        "name": "Index build time",
+        "range": "seconds ↓",
+        "means": "One-time (or rebuild) cost. GraphRAG global is dominated by this. Amortize over expected query volume.",
     },
 ]
 
@@ -246,6 +253,94 @@ METHOD_DEFS = {
 }
 
 
+def _howto_html() -> str:
+    path = ROOT / "docs" / "how-to-run.md"
+    if not path.exists():
+        return "<p class='muted'>docs/how-to-run.md missing.</p>"
+    md = path.read_text(encoding="utf-8")
+    chunks: list[str] = []
+    in_code = False
+    code: list[str] = []
+    in_table = False
+    table_rows: list[str] = []
+
+    def flush_table() -> None:
+        nonlocal in_table, table_rows
+        if not table_rows:
+            in_table = False
+            return
+        cells = [r.split("|") for r in table_rows]
+        cells = [[c.strip() for c in row if c.strip() != ""] for row in cells]
+        if len(cells) >= 2:
+            head, body = cells[0], cells[2:] if cells[1] and set(cells[1][0]) <= set("-: ") else cells[1:]
+            # skip separator row
+            body = [r for r in body if not all(set(c) <= set("-: ") for c in r)]
+            thead = "<tr>" + "".join(f"<th>{html_lib.escape(c)}</th>" for c in head) + "</tr>"
+            tbody = "".join(
+                "<tr>" + "".join(f"<td>{html_lib.escape(c)}</td>" for c in row) + "</tr>"
+                for row in body
+            )
+            chunks.append(f"<table><thead>{thead}</thead><tbody>{tbody}</tbody></table>")
+        table_rows = []
+        in_table = False
+
+    for raw in md.splitlines():
+        line = raw.rstrip()
+        if line.startswith("```"):
+            if in_code:
+                chunks.append("<pre>" + html_lib.escape("\n".join(code)) + "</pre>")
+                code = []
+                in_code = False
+            else:
+                flush_table()
+                in_code = True
+            continue
+        if in_code:
+            code.append(line)
+            continue
+        if line.startswith("|"):
+            in_table = True
+            table_rows.append(line)
+            continue
+        if in_table:
+            flush_table()
+        if not line:
+            continue
+        if line.startswith("# "):
+            chunks.append(f"<h2>{html_lib.escape(line[2:])}</h2>")
+        elif line.startswith("## "):
+            chunks.append(f"<h3>{html_lib.escape(line[3:])}</h3>")
+        elif line.startswith("---"):
+            chunks.append("<hr/>")
+        elif line.startswith("- "):
+            chunks.append(f"<li>{html_lib.escape(line[2:])}</li>")
+        else:
+            chunks.append(f"<p>{html_lib.escape(line)}</p>")
+    if in_code:
+        chunks.append("<pre>" + html_lib.escape("\n".join(code)) + "</pre>")
+    flush_table()
+    # wrap consecutive <li>
+    out: list[str] = []
+    in_ul = False
+    for c in chunks:
+        if c.startswith("<li>"):
+            if not in_ul:
+                out.append("<ul>")
+                in_ul = True
+            out.append(c)
+        else:
+            if in_ul:
+                out.append("</ul>")
+                in_ul = False
+            out.append(c)
+    if in_ul:
+        out.append("</ul>")
+    return '<div class="howto">' + "".join(out) + "</div>"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {}
+
+
 def _meta(path: Path) -> dict:
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
@@ -294,6 +389,76 @@ def _lens_summary(accuracy: list[dict]) -> list[dict]:
     return out
 
 
+def _ops_stats(results_dir: Path) -> tuple[list[dict], list[dict], dict]:
+    """Latency / token / index stats from CSVs. Sample latencies for boxplots."""
+    lat_path = results_dir / "latency_results.csv"
+    tok_path = results_dir / "token_results.csv"
+    ops: dict[str, dict] = {}
+    samples: list[dict] = []
+
+    if lat_path.exists() and lat_path.stat().st_size > 3:
+        lat = pd.read_csv(lat_path)
+        if "query_latency_seconds" in lat.columns:
+            phase_col = lat["phase"] if "phase" in lat.columns else pd.Series([None] * len(lat))
+            is_index = phase_col.fillna("").astype(str).str.lower().eq("index")
+            queries = lat.loc[~is_index]
+            indexes = lat.loc[is_index]
+            for method, g in queries.groupby("method"):
+                vals = pd.to_numeric(g["query_latency_seconds"], errors="coerce").dropna()
+                vals = vals[vals > 0]
+                if vals.empty:
+                    continue
+                ops.setdefault(method, {})
+                ops[method].update(
+                    {
+                        "n_latency": int(len(vals)),
+                        "mean_query_latency_seconds": float(vals.mean()),
+                        "p50_query_latency_seconds": float(vals.quantile(0.50)),
+                        "p95_query_latency_seconds": float(vals.quantile(0.95)),
+                        "min_query_latency_seconds": float(vals.min()),
+                        "max_query_latency_seconds": float(vals.max()),
+                    }
+                )
+                take = vals.sample(n=min(200, len(vals)), random_state=0) if len(vals) > 200 else vals
+                for v in take.tolist():
+                    samples.append(
+                        {
+                            "method": method,
+                            "method_label": LABELS.get(method, method),
+                            "query_latency_seconds": float(v),
+                        }
+                    )
+            for method, g in indexes.groupby("method"):
+                ops.setdefault(method, {})
+                ops[method]["index_seconds"] = float(
+                    pd.to_numeric(g["query_latency_seconds"], errors="coerce").dropna().sum()
+                )
+
+    if tok_path.exists() and tok_path.stat().st_size > 3:
+        tok = pd.read_csv(tok_path)
+        if "phase" in tok.columns:
+            totals = tok[tok["phase"].astype(str).eq("__total__")]
+            for _, r in totals.iterrows():
+                method = r.get("method")
+                ops.setdefault(method, {})
+                n_lat = ops[method].get("n_latency") or 1
+                total_tok = float(r.get("total_tokens") or 0)
+                ops[method]["total_tokens"] = total_tok
+                ops[method]["tokens_per_query"] = total_tok / max(n_lat, 1)
+                ops[method]["prompt_tokens"] = float(r.get("prompt_tokens") or 0)
+                ops[method]["completion_tokens"] = float(r.get("completion_tokens") or 0)
+                elapsed = float(r.get("elapsed_seconds") or 0)
+                ops[method]["wall_seconds"] = elapsed
+
+    rows = []
+    for method, stats in ops.items():
+        stats = dict(stats)
+        stats["method"] = method
+        stats["method_label"] = LABELS.get(method, method)
+        rows.append(stats)
+    return rows, samples, ops
+
+
 def collect_payload() -> dict:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     benches = []
@@ -306,12 +471,17 @@ def collect_payload() -> dict:
         dual = _safe_csv(spec["results"] / "dual_scoreboard.csv")
         wins = _safe_csv(spec["results"] / "method_clear_wins_composite.csv")
         routing = _safe_csv(spec["results"] / "routing_recommendations.csv")
+        ops_rows, lat_samples, ops_by_method = _ops_stats(spec["results"])
         briefing_path = spec["results"] / "engineering_briefing.md"
         briefing = briefing_path.read_text(encoding="utf-8") if briefing_path.exists() else ""
         scored = len({r.get("question_id") for r in accuracy}) if accuracy else 0
         indexed_q = meta.get("n_questions")
         for row in summary:
             row["method_label"] = LABELS.get(row.get("method", ""), row.get("method", ""))
+            extra = ops_by_method.get(row.get("method"), {})
+            for k, v in extra.items():
+                if row.get(k) in (None, 0, 0.0, ""):
+                    row[k] = v
         for row in accuracy:
             row["method_label"] = LABELS.get(row.get("method", ""), row.get("method", ""))
         benches.append(
@@ -343,6 +513,8 @@ def collect_payload() -> dict:
                 "summary": summary,
                 "accuracy": accuracy,
                 "lens": _lens_summary(accuracy),
+                "ops": ops_rows,
+                "latency_samples": lat_samples,
                 "dual": dual,
                 "clear_wins": wins[:40],
                 "routing": routing,
@@ -357,6 +529,7 @@ def collect_payload() -> dict:
         "metric_map": METRIC_MAP,
         "research_findings": RESEARCH_FINDINGS,
         "method_defs": METHOD_DEFS,
+        "howto_html": _howto_html(),
         "benches": benches,
     }
 
@@ -430,7 +603,11 @@ button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 details{border-top:1px solid var(--line);padding:8px 0}
 summary{cursor:pointer;font-weight:650}
 code{font-family:var(--mono);font-size:12px}
-pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;color:#d7e2ff;padding:12px;border-radius:8px;max-height:280px;overflow:auto}
+.howto h3{margin:18px 0 6px;font-size:15px}
+.howto ol{padding-left:20px}
+.howto li{margin:4px 0}
+.howto pre{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;color:#d7e2ff;padding:12px;border-radius:8px;overflow:auto}
+.howto table{margin:8px 0 16px}
 </style>
 </head>
 <body>
@@ -451,8 +628,10 @@ pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;col
 
 <div class="tabs">
   <button class="tab on" data-view="explore">Explore</button>
+  <button class="tab" data-view="latency">Latency / cost</button>
   <button class="tab" data-view="decision">Decision Lab</button>
   <button class="tab" data-view="research">Research Lens</button>
+  <button class="tab" data-view="howto">How to run</button>
 </div>
 
 <div class="layout">
@@ -467,7 +646,9 @@ pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;col
       <option value="mean_token_f1">Token F1</option>
       <option value="contains_answer_rate">Contains rate</option>
       <option value="tokens_per_query">Tokens / query</option>
-      <option value="mean_query_latency_seconds">Latency (s)</option>
+      <option value="mean_query_latency_seconds">Mean latency (s)</option>
+      <option value="p95_query_latency_seconds">p95 latency (s)</option>
+      <option value="index_seconds">Index time (s)</option>
     </select>
     <label for="qtype">Question type</label>
     <select id="qtype"><option value="__all__">All types</option></select>
@@ -513,6 +694,33 @@ pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;col
         <h2>Per-question explorer</h2>
         <input type="search" id="qsearch" placeholder="Filter question id / type…"/>
         <div class="table-wrap" style="margin-top:10px" id="qTable"></div>
+      </div>
+    </section>
+
+    <section class="view" id="view-latency">
+      <div class="callout">
+        <strong>Latency, tokens, index cost</strong>
+        Quality without p95 and tokens/query is not a ship decision. Index time is a one-shot
+        (or rebuild) bill — GraphRAG global is usually dominated by it. Query latency here is
+        retrieve + generate on this hardware (local llama3.2:3b unless you changed
+        <code>config/benchmark.yaml</code>).
+      </div>
+      <div class="stats" id="latStats"></div>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Per-query latency distribution</h2>
+          <p class="muted" style="margin:0 0 8px">Box = spread across questions. Outliers are the SLO killers.</p>
+          <div id="latBox" class="chart tall"></div>
+        </div>
+        <div class="panel">
+          <h2>Quality vs latency</h2>
+          <p class="muted" style="margin:0 0 8px">Ideal: top-left (high composite, low mean latency).</p>
+          <div id="latScatter" class="chart tall"></div>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:12px">
+        <h2>Ops table (this bench · selected methods)</h2>
+        <div class="table-wrap" id="opsTable"></div>
       </div>
     </section>
 
@@ -566,6 +774,9 @@ pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;col
         <div id="methodGlossary"></div>
       </div>
     </section>
+    <section class="view" id="view-howto">
+      <div class="panel" id="howtoBody"></div>
+    </section>
   </main>
 </div>
 
@@ -578,11 +789,13 @@ pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;col
 <script id="dashboard-data" type="application/json">__DATA_JSON__</script>
 <script>
 const DATA = JSON.parse(document.getElementById('dashboard-data').textContent);
-const COSTISH = new Set(['tokens_per_query','mean_query_latency_seconds']);
+const COSTISH = new Set(['tokens_per_query','mean_query_latency_seconds','p95_query_latency_seconds','index_seconds']);
 const METRIC_LABEL = {
   mean_composite_score:'Composite', mean_llm_judge:'LLM judge', mean_token_f1:'Token F1',
   contains_answer_rate:'Contains rate', tokens_per_query:'Tokens / query',
-  mean_query_latency_seconds:'Latency (s)',
+  mean_query_latency_seconds:'Mean latency (s)',
+  p95_query_latency_seconds:'p95 latency (s)',
+  index_seconds:'Index time (s)',
 };
 const state = { benchId: DATA.benches[0]?.id, metric:'mean_composite_score', qtype:'__all__', methods:new Set(), focusMethod:null, search:'' };
 
@@ -603,6 +816,8 @@ document.querySelectorAll('.tab').forEach(tab=>{
     setTimeout(()=>window.dispatchEvent(new Event('resize')), 50);
     if(tab.dataset.view==='decision') renderDecision();
     if(tab.dataset.view==='research') renderResearch();
+    if(tab.dataset.view==='latency') renderLatency();
+    if(tab.dataset.view==='howto') renderHowto();
   };
 });
 
@@ -625,12 +840,13 @@ function init(){
   document.getElementById('glossary').innerHTML = DATA.metric_defs.map(m=>
     `<details><summary>${m.name} <span class="muted">${m.range}</span></summary><p class="muted">${m.means}</p></details>`
   ).join('');
-  updateHelp(); syncMethods(true); render(); renderResearch();
+  updateHelp(); syncMethods(true); render(); renderResearch(); renderHowto();
 }
 
 function updateHelp(){
   const map={mean_composite_score:'composite',mean_llm_judge:'llm_judge',mean_token_f1:'extractive',
-    contains_answer_rate:'generative',tokens_per_query:'tokens_per_query',mean_query_latency_seconds:'tokens_per_query'};
+    contains_answer_rate:'generative',tokens_per_query:'tokens_per_query',
+    mean_query_latency_seconds:'latency',p95_query_latency_seconds:'latency',index_seconds:'index'};
   const d=DATA.metric_defs.find(x=>x.id===map[state.metric]);
   document.getElementById('metricHelp').innerHTML = d?`<strong>${d.name}</strong><br>${d.means}`:'';
 }
@@ -705,20 +921,21 @@ function renderBar(){
 }
 
 function renderScatter(){
-  const rows=filteredSummary().filter(r=>r.mean_composite_score!=null&&r.tokens_per_query!=null);
+  const rows=filteredSummary().filter(r=>r.mean_composite_score!=null);
+  const useTok = rows.some(r=>Number(r.tokens_per_query)>0);
   Plotly.newPlot('scatterChart',[{
     type:'scatter', mode:'markers+text',
-    x:rows.map(r=>r.tokens_per_query), y:rows.map(r=>r.mean_composite_score),
+    x:rows.map(r=> useTok ? r.tokens_per_query : r.mean_query_latency_seconds),
+    y:rows.map(r=>r.mean_composite_score),
     text:rows.map(r=>r.method_label), textposition:'top center',
     marker:{size:13,color:rows.map(r=>r.method===state.focusMethod?'#063a9c':'#0b5fff')},
-    customdata:rows.map(r=>[r.method,r.mean_llm_judge,r.mean_query_latency_seconds]),
-    hovertemplate:'<b>%{text}</b><br>Composite %{y:.3f}<br>Tokens/q %{x:.0f}<br>Judge %{customdata[1]:.3f}<extra></extra>',
-  }], plotLayout({xaxis:{title:'Tokens / query ↓ cheaper'}, yaxis:{title:'Composite ↑ better',range:[0,1]}}), {responsive:true});
-  document.getElementById('scatterChart').on('plotly_click',ev=>{
-    const m=ev.points?.[0]?.customdata?.[0]; if(!m)return;
-    state.focusMethod=state.focusMethod===m?null:m; render();
-  });
-}
+    customdata:rows.map(r=>[r.method,r.mean_llm_judge,r.mean_query_latency_seconds,r.tokens_per_query]),
+    hovertemplate:'<b>%{text}</b><br>Composite %{y:.3f}<br>Tokens/q %{customdata[3]:.0f}<br>Latency %{customdata[2]:.2f}s<extra></extra>',
+  }], plotLayout({
+    xaxis:{title: useTok ? 'Tokens / query ↓ cheaper' : 'Mean latency (s) ↓ faster (tokens not in this slice)'},
+    yaxis:{title:'Composite ↑ better',range:[0,1]}
+  }), {responsive:true});
+
 
 function renderBox(){
   const by={};
@@ -736,9 +953,79 @@ function renderHeat(){
   });
   const tok=rows.map(r=>Number(r.tokens_per_query)||0); const tmax=Math.max(...tok,1e-9);
   z.push(tok.map(v=>1-v/tmax)); keys.push(['tokens','Cheap tokens']);
+  const lat=rows.map(r=>Number(r.mean_query_latency_seconds)||0); const lmax=Math.max(...lat,1e-9);
+  z.push(lat.map(v=>1-v/lmax)); keys.push(['Fast mean']);
+
   Plotly.newPlot('heatChart',[{type:'heatmap',z,x:rows.map(r=>r.method_label),y:keys.map(k=>k[1]),colorscale:'Blues',
     hovertemplate:'%{y} · %{x}<br>norm %{z:.2f}<extra></extra>'}],
     plotLayout({margin:{t:24,r:16,b:80,l:90}}), {responsive:true});
+}
+
+function fmtNum(v, digits){
+  if(v==null || v==='' || Number.isNaN(Number(v))) return '—';
+  const n=Number(v);
+  if(Math.abs(n)>=100) return n.toFixed(0);
+  return n.toFixed(digits);
+}
+
+function renderLatency(){
+  const ops=(bench().ops||[]).filter(r=>state.methods.has(r.method));
+  const sum=filteredSummary();
+  const fastest = [...sum].filter(r=>r.mean_query_latency_seconds>0).sort((a,b)=>a.mean_query_latency_seconds-b.mean_query_latency_seconds)[0];
+  const cheapest = [...sum].filter(r=>r.tokens_per_query>0).sort((a,b)=>a.tokens_per_query-b.tokens_per_query)[0];
+  const p95best = [...sum].filter(r=>r.p95_query_latency_seconds>0).sort((a,b)=>a.p95_query_latency_seconds-b.p95_query_latency_seconds)[0];
+  const idxCheap = [...sum].filter(r=>r.index_seconds>0).sort((a,b)=>a.index_seconds-b.index_seconds)[0];
+  document.getElementById('latStats').innerHTML = `
+    <div class="stat"><div class="k">Fastest mean</div><div class="v">${fastest?fmtNum(fastest.mean_query_latency_seconds,2)+'s':'—'}</div><div class="h">${fastest?fastest.method_label:''}</div></div>
+    <div class="stat"><div class="k">Best p95</div><div class="v">${p95best?fmtNum(p95best.p95_query_latency_seconds,2)+'s':'—'}</div><div class="h">${p95best?p95best.method_label:''}</div></div>
+    <div class="stat"><div class="k">Cheapest tokens/q</div><div class="v">${cheapest?fmtNum(cheapest.tokens_per_query,0):'—'}</div><div class="h">${cheapest?cheapest.method_label:''}</div></div>
+    <div class="stat"><div class="k">Fastest index</div><div class="v">${idxCheap?fmtNum(idxCheap.index_seconds,1)+'s':'—'}</div><div class="h">${idxCheap?idxCheap.method_label:''}</div></div>`;
+
+  const samples=(bench().latency_samples||[]).filter(r=>state.methods.has(r.method));
+  const by={};
+  for(const r of samples) (by[r.method_label] ||= []).push(r.query_latency_seconds);
+  const traces=Object.entries(by).map(([name,y])=>({type:'box',name,y,boxpoints:'outliers',marker:{size:4}}));
+  if(traces.length){
+    Plotly.newPlot('latBox', traces, plotLayout({showlegend:false,yaxis:{title:'Query latency (seconds) ↓'}}), {responsive:true});
+  } else {
+    document.getElementById('latBox').innerHTML='<p class="muted">No latency_results.csv yet for this bench (or still indexing).</p>';
+  }
+
+  const rows=sum.filter(r=>r.mean_composite_score!=null && r.mean_query_latency_seconds);
+  Plotly.newPlot('latScatter',[{
+    type:'scatter', mode:'markers+text',
+    x:rows.map(r=>r.mean_query_latency_seconds),
+    y:rows.map(r=>r.mean_composite_score),
+    text:rows.map(r=>r.method_label), textposition:'top center',
+    marker:{size:13,color:rows.map(r=>r.method===state.focusMethod?'#063a9c':'#0b5fff')},
+    customdata:rows.map(r=>[r.method,r.p95_query_latency_seconds,r.tokens_per_query,r.index_seconds]),
+    hovertemplate:'<b>%{text}</b><br>Composite %{y:.3f}<br>Mean %{x:.2f}s<br>p95 %{customdata[1]:.2f}s<br>Tok/q %{customdata[2]:.0f}<br>Index %{customdata[3]:.1f}s<extra></extra>',
+  }], plotLayout({xaxis:{title:'Mean query latency (s) ↓ faster'}, yaxis:{title:'Composite ↑ better',range:[0,1]}}), {responsive:true});
+
+  const tableSrc = ops.length ? ops : sum;
+  document.getElementById('opsTable').innerHTML = `<table><thead><tr>
+    <th>Method</th><th>n</th><th>Mean lat (s)</th><th>p50</th><th>p95</th><th>Min</th><th>Max</th>
+    <th>Index (s)</th><th>Tokens/q</th><th>Prompt tok</th><th>Completion tok</th><th>Wall (s)</th>
+  </tr></thead><tbody>
+  ${tableSrc.map(r=>`<tr>
+    <td>${r.method_label||labelOf(r.method)}</td>
+    <td>${r.n_latency||r.n_scored||'—'}</td>
+    <td>${fmtNum(r.mean_query_latency_seconds,3)}</td>
+    <td>${fmtNum(r.p50_query_latency_seconds,3)}</td>
+    <td>${fmtNum(r.p95_query_latency_seconds,3)}</td>
+    <td>${fmtNum(r.min_query_latency_seconds,3)}</td>
+    <td>${fmtNum(r.max_query_latency_seconds,3)}</td>
+    <td>${fmtNum(r.index_seconds,1)}</td>
+    <td>${fmtNum(r.tokens_per_query,0)}</td>
+    <td>${fmtNum(r.prompt_tokens,0)}</td>
+    <td>${fmtNum(r.completion_tokens,0)}</td>
+    <td>${fmtNum(r.wall_seconds,1)}</td>
+  </tr>`).join('')}
+  </tbody></table>`;
+}
+
+function renderHowto(){
+  document.getElementById('howtoBody').innerHTML = DATA.howto_html || '<p class="muted">See docs/how-to-run.md in the repo.</p>';
 }
 
 function renderQTable(){
@@ -832,6 +1119,7 @@ function render(){
   }
   renderBar(); renderScatter(); renderBox(); renderHeat(); renderQTable();
   if(document.getElementById('view-decision').classList.contains('on')) renderDecision();
+  if(document.getElementById('view-latency').classList.contains('on')) renderLatency();
 }
 
 init();
@@ -861,8 +1149,8 @@ def build() -> Path:
     (docs / "README.md").write_text(
         "# Research-refined RAG dashboard\n\n"
         "Open **[index.html](./index.html)** on GitHub Pages.\n\n"
-        "Tabs: **Explore** · **Decision Lab** (generative vs extractive, routing) · "
-        "**Research Lens** (RAGAS metric map + 2025–26 findings).\n\n"
+        "Tabs: **Explore** · **Latency / cost** · **Decision Lab** · "
+        "**Research Lens** · **[How to run](./how-to-run.md)**.\n\n"
         "Rebuild: `PYTHONPATH=src python scripts/build_dashboard.py`\n",
         encoding="utf-8",
     )

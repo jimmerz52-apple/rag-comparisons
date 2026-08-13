@@ -491,7 +491,7 @@ class BenchmarkRunner:
                 )
             if i % checkpoint_every == 0 or i == total:
                 rows = []
-                for item in accuracy:
+                for item, lat in zip(accuracy, query_latencies):
                     rows.append(
                         {
                             "method": item.method,
@@ -504,6 +504,7 @@ class BenchmarkRunner:
                             "composite_score": item.composite_score(),
                             "generative_score": item.generative_score(),
                             "extractive_score": item.extractive_score(),
+                            "query_latency_seconds": lat,
                         }
                     )
                 pd.DataFrame(rows).to_csv(ckpt_path, index=False)
@@ -527,6 +528,11 @@ class BenchmarkRunner:
         # Lightweight live summary so dashboard leaderboard moves
         summary_rows = []
         for m, g in merged.groupby("method"):
+            lat = (
+                g["query_latency_seconds"].replace(0, pd.NA).dropna()
+                if "query_latency_seconds" in g.columns
+                else pd.Series(dtype=float)
+            )
             summary_rows.append(
                 {
                     "method": m,
@@ -537,9 +543,16 @@ class BenchmarkRunner:
                     "contains_answer_rate": float(g["contains_answer"].mean()),
                     "tokens_per_query": 0.0,
                     "n_scored": int(g["question_id"].nunique()),
+                    "mean_query_latency_seconds": float(lat.mean()) if len(lat) else 0.0,
+                    "p50_query_latency_seconds": float(lat.quantile(0.50)) if len(lat) else 0.0,
+                    "p95_query_latency_seconds": float(lat.quantile(0.95)) if len(lat) else 0.0,
                 }
             )
         pd.DataFrame(summary_rows).to_csv(self.config.results_dir() / "summary.csv", index=False)
+        if "query_latency_seconds" in merged.columns:
+            live_lat = merged[["method", "question_id", "query_latency_seconds"]].copy()
+            live_lat["question_index"] = range(len(live_lat))
+            live_lat.to_csv(self.config.results_dir() / "latency_results.csv", index=False)
         meta = {
             "live_partial": True,
             "updated_method": method,
