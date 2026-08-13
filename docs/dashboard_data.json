@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 22:13 UTC",
+  "generated_at": "2026-08-13 22:19 UTC",
   "repo": "rag-comparisons",
   "research_version": "2026-08 research-refined",
   "metric_defs": [
@@ -161,46 +161,32 @@
       },
       "indexed_questions": 7405,
       "indexed_documents": 66569,
-      "scored_questions": 12,
+      "scored_questions": 50,
       "scores_are_partial": true,
-      "live_partial": false,
-      "status": "scored",
+      "live_partial": true,
+      "status": "scoring live",
       "summary": [
         {
-          "method": "semantic_rag",
-          "mean_composite_score": 0.4114583333333333,
-          "mean_llm_judge": 0.4166666666666667,
-          "mean_token_f1": 0.3125,
+          "method": "adaptive_rag",
+          "mean_composite_score": 0.4241071428571428,
+          "mean_llm_judge": 0.375,
+          "mean_token_f1": 0.4047619047619047,
           "exact_match_rate": 0.4166666666666667,
           "contains_answer_rate": 0.5,
-          "total_tokens": 16242,
-          "prompt_tokens": 15700,
-          "completion_tokens": 542,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.141663124988554,
-          "mean_query_latency_seconds": 1.5544654444189898,
-          "p95_query_latency_seconds": 2.048736402051873,
-          "total_elapsed_seconds": 32.748532750003505,
-          "tokens_per_query": 1353.5,
-          "method_label": "Semantic"
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
+          "method_label": "Adaptive"
         },
         {
-          "method": "graph_rag",
-          "mean_composite_score": 0.1107371794871794,
-          "mean_llm_judge": 0.1833333333333333,
-          "mean_token_f1": 0.0096153846153846,
-          "exact_match_rate": 0.0,
-          "contains_answer_rate": 0.25,
-          "total_tokens": 6725,
-          "prompt_tokens": 3584,
-          "completion_tokens": 3141,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 277.3378802500083,
-          "mean_query_latency_seconds": 14.815198913160808,
-          "p95_query_latency_seconds": 20.99191643314407,
-          "total_elapsed_seconds": 477.8677461250045,
-          "tokens_per_query": 560.4166666666666,
-          "method_label": "GraphRAG global"
+          "method": "frontier_rag",
+          "mean_composite_score": 0.4188988095238095,
+          "mean_llm_judge": 0.375,
+          "mean_token_f1": 0.4672619047619047,
+          "exact_match_rate": 0.3333333333333333,
+          "contains_answer_rate": 0.5,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
+          "method_label": "Frontier"
         },
         {
           "method": "graph_local_rag",
@@ -209,16 +195,31 @@
           "mean_token_f1": 0.0119971264367816,
           "exact_match_rate": 0.0,
           "contains_answer_rate": 0.25,
-          "total_tokens": 4497,
-          "prompt_tokens": 2530,
-          "completion_tokens": 1967,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.0006853750091977,
-          "mean_query_latency_seconds": 10.885271454586473,
-          "p95_query_latency_seconds": 12.88274027514708,
-          "total_elapsed_seconds": 150.71541850001086,
-          "tokens_per_query": 374.75,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
           "method_label": "GraphRAG local"
+        },
+        {
+          "method": "graph_rag",
+          "mean_composite_score": 0.1107371794871794,
+          "mean_llm_judge": 0.1833333333333333,
+          "mean_token_f1": 0.0096153846153846,
+          "exact_match_rate": 0.0,
+          "contains_answer_rate": 0.25,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
+          "method_label": "GraphRAG global"
+        },
+        {
+          "method": "hybrid_dense_sparse",
+          "mean_composite_score": 0.2938988095238095,
+          "mean_llm_judge": 0.375,
+          "mean_token_f1": 0.2172619047619047,
+          "exact_match_rate": 0.1666666666666666,
+          "contains_answer_rate": 0.4166666666666667,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
+          "method_label": "BM25+dense"
         },
         {
           "method": "hybrid_rag",
@@ -227,15 +228,8 @@
           "mean_token_f1": 0.2483838383838384,
           "exact_match_rate": 0.1666666666666666,
           "contains_answer_rate": 0.4166666666666667,
-          "total_tokens": 20667,
-          "prompt_tokens": 18517,
-          "completion_tokens": 2150,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.0442083750094752,
-          "mean_query_latency_seconds": 10.716684708332954,
-          "p95_query_latency_seconds": 13.042708883306478,
-          "total_elapsed_seconds": 142.67639054200845,
-          "tokens_per_query": 1722.25,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
           "method_label": "Hybrid"
         },
         {
@@ -245,52 +239,9 @@
           "mean_token_f1": 0.0770817204730703,
           "exact_match_rate": 0.0,
           "contains_answer_rate": 0.6666666666666666,
-          "total_tokens": 4133,
-          "prompt_tokens": 2296,
-          "completion_tokens": 1837,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 57.40795108300517,
-          "mean_query_latency_seconds": 9.311800298664217,
-          "p95_query_latency_seconds": 11.394286521205505,
-          "total_elapsed_seconds": 191.30399520799983,
-          "tokens_per_query": 344.4166666666667,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
           "method_label": "GraphRAG fast/basic"
-        },
-        {
-          "method": "adaptive_rag",
-          "mean_composite_score": 0.4241071428571428,
-          "mean_llm_judge": 0.375,
-          "mean_token_f1": 0.4047619047619047,
-          "exact_match_rate": 0.4166666666666667,
-          "contains_answer_rate": 0.5,
-          "total_tokens": 18473,
-          "prompt_tokens": 17224,
-          "completion_tokens": 1249,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.0318894159863702,
-          "mean_query_latency_seconds": 4.681543958254527,
-          "p95_query_latency_seconds": 10.019189618450763,
-          "total_elapsed_seconds": 68.9173053749837,
-          "tokens_per_query": 1539.4166666666667,
-          "method_label": "Adaptive"
-        },
-        {
-          "method": "hybrid_dense_sparse",
-          "mean_composite_score": 0.2938988095238095,
-          "mean_llm_judge": 0.375,
-          "mean_token_f1": 0.2172619047619047,
-          "exact_match_rate": 0.1666666666666666,
-          "contains_answer_rate": 0.4166666666666667,
-          "total_tokens": 16282,
-          "prompt_tokens": 15759,
-          "completion_tokens": 523,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.0585315830248873,
-          "mean_query_latency_seconds": 1.6136721180785871,
-          "p95_query_latency_seconds": 2.097692057988024,
-          "total_elapsed_seconds": 33.073795875010546,
-          "tokens_per_query": 1356.8333333333333,
-          "method_label": "BM25+dense"
         },
         {
           "method": "rerank_semantic",
@@ -299,194 +250,24 @@
           "mean_token_f1": 0.369047619047619,
           "exact_match_rate": 0.3333333333333333,
           "contains_answer_rate": 0.5,
-          "total_tokens": 15179,
-          "prompt_tokens": 14651,
-          "completion_tokens": 528,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.0375302089960314,
-          "mean_query_latency_seconds": 1.543994708331108,
-          "p95_query_latency_seconds": 2.703099224690231,
-          "total_elapsed_seconds": 32.02805687498767,
-          "tokens_per_query": 1264.9166666666667,
+          "tokens_per_query": 0.0,
+          "n_scored": 12,
           "method_label": "Rerank"
         },
         {
-          "method": "frontier_rag",
-          "mean_composite_score": 0.4188988095238095,
-          "mean_llm_judge": 0.375,
-          "mean_token_f1": 0.4672619047619047,
-          "exact_match_rate": 0.3333333333333333,
-          "contains_answer_rate": 0.5,
-          "total_tokens": 24707,
-          "prompt_tokens": 22821,
-          "completion_tokens": 1886,
-          "estimated_cost_usd": 0.0,
-          "index_seconds": 0.1803427500126417,
-          "mean_query_latency_seconds": 7.144507066002309,
-          "p95_query_latency_seconds": 14.633763158149668,
-          "total_elapsed_seconds": 98.76645174997977,
-          "tokens_per_query": 2058.9166666666665,
-          "method_label": "Frontier"
+          "method": "semantic_rag",
+          "mean_composite_score": 0.3619761904761905,
+          "mean_llm_judge": 0.416,
+          "mean_token_f1": 0.3319047619047619,
+          "exact_match_rate": 0.3,
+          "contains_answer_rate": 0.4,
+          "tokens_per_query": 0.0,
+          "n_scored": 50,
+          "method_label": "Semantic"
         }
       ],
       "accuracy": [
         {
-          "method": "semantic_rag",
-          "question_id": "5a8c7595554299585d9e36b6",
-          "query_type": "hybrid",
-          "llm_judge_score": 0.5,
-          "token_f1": 0.0,
-          "exact_match": false,
-          "contains_answer": false,
-          "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a85ea095542994775f606a8",
-          "query_type": "hybrid",
-          "llm_judge_score": 0.0,
-          "token_f1": 0.0,
-          "exact_match": false,
-          "contains_answer": false,
-          "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a8e3ea95542995a26add48d",
-          "query_type": "hybrid",
-          "llm_judge_score": 0.5,
-          "token_f1": 0.7499999999999999,
-          "exact_match": false,
-          "contains_answer": true,
-          "composite_score": 0.5625,
-          "generative_score": 0.75,
-          "extractive_score": 0.3749999999999999,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5abd94525542992ac4f382d2",
-          "query_type": "hybrid",
-          "llm_judge_score": 1.0,
-          "token_f1": 1.0,
-          "exact_match": true,
-          "contains_answer": true,
-          "composite_score": 1.0,
-          "generative_score": 1.0,
-          "extractive_score": 1.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a85b2d95542997b5ce40028",
-          "query_type": "hybrid",
-          "llm_judge_score": 0.5,
-          "token_f1": 0.0,
-          "exact_match": false,
-          "contains_answer": false,
-          "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a87ab905542996e4f3088c1",
-          "query_type": "hybrid",
-          "llm_judge_score": 0.0,
-          "token_f1": 0.0,
-          "exact_match": false,
-          "contains_answer": false,
-          "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a8b57f25542995d1e6f1371",
-          "query_type": "local",
-          "llm_judge_score": 0.0,
-          "token_f1": 0.0,
-          "exact_match": false,
-          "contains_answer": false,
-          "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5adbf0a255429947ff17385a",
-          "query_type": "local",
-          "llm_judge_score": 0.5,
-          "token_f1": 0.0,
-          "exact_match": true,
-          "contains_answer": true,
-          "composite_score": 0.625,
-          "generative_score": 0.75,
-          "extractive_score": 0.5,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a8db19d5542994ba4e3dd00",
-          "query_type": "local",
-          "llm_judge_score": 0.5,
-          "token_f1": 1.0,
-          "exact_match": true,
-          "contains_answer": true,
-          "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5ab56e32554299637185c594",
-          "query_type": "local",
-          "llm_judge_score": 0.5,
-          "token_f1": 0.0,
-          "exact_match": true,
-          "contains_answer": true,
-          "composite_score": 0.625,
-          "generative_score": 0.75,
-          "extractive_score": 0.5,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5ab29c24554299449642c932",
-          "query_type": "local",
-          "llm_judge_score": 0.5,
-          "token_f1": 1.0,
-          "exact_match": true,
-          "contains_answer": true,
-          "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
-          "method_label": "Semantic"
-        },
-        {
-          "method": "semantic_rag",
-          "question_id": "5a8133725542995ce29dcbdb",
-          "query_type": "local",
-          "llm_judge_score": 0.5,
-          "token_f1": 0.0,
-          "exact_match": false,
-          "contains_answer": false,
-          "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
-          "method_label": "Semantic"
-        },
-        {
           "method": "graph_rag",
           "question_id": "5a8c7595554299585d9e36b6",
           "query_type": "hybrid",
@@ -495,8 +276,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -508,8 +289,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -521,8 +302,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -534,8 +315,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -547,8 +328,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -560,8 +341,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -573,8 +354,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.2,
-          "generative_score": 0.4,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -586,8 +367,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.25,
-          "generative_score": 0.5,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -599,8 +380,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.05,
-          "generative_score": 0.1,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -612,8 +393,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.45,
-          "generative_score": 0.9,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -625,8 +406,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.05,
-          "generative_score": 0.1,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -638,8 +419,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.3288461538461538,
-          "generative_score": 0.6,
-          "extractive_score": 0.0576923076923076,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG global"
         },
         {
@@ -651,8 +432,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -664,8 +445,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -677,8 +458,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.01875,
-          "generative_score": 0.0,
-          "extractive_score": 0.0375,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -690,8 +471,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0825,
-          "generative_score": 0.165,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -703,8 +484,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.05,
-          "generative_score": 0.1,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -716,8 +497,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -729,8 +510,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -742,8 +523,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.375,
-          "generative_score": 0.75,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -755,8 +536,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.2,
-          "generative_score": 0.4,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -768,8 +549,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.45,
-          "generative_score": 0.9,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -781,8 +562,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.2,
-          "generative_score": 0.4,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -794,8 +575,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.2672413793103448,
-          "generative_score": 0.5,
-          "extractive_score": 0.0344827586206896,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG local"
         },
         {
@@ -807,8 +588,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -820,8 +601,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4651515151515151,
-          "generative_score": 0.9,
-          "extractive_score": 0.0303030303030303,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -833,8 +614,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.08,
-          "generative_score": 0.1,
-          "extractive_score": 0.06,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -846,8 +627,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -859,8 +640,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 1.0,
-          "generative_score": 1.0,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -872,8 +653,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.3,
-          "generative_score": 0.5,
-          "extractive_score": 0.1,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -885,8 +666,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -898,8 +679,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.45,
-          "generative_score": 0.9,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -911,8 +692,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.25,
-          "generative_score": 0.5,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -924,8 +705,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -937,8 +718,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -950,8 +731,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.525,
-          "generative_score": 0.75,
-          "extractive_score": 0.3,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Hybrid"
         },
         {
@@ -963,8 +744,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.1,
-          "generative_score": 0.2,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -976,8 +757,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4580645161290322,
-          "generative_score": 0.9,
-          "extractive_score": 0.0161290322580645,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -989,8 +770,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4612068965517241,
-          "generative_score": 0.75,
-          "extractive_score": 0.1724137931034483,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1002,8 +783,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4635135135135135,
-          "generative_score": 0.9,
-          "extractive_score": 0.027027027027027,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1015,8 +796,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4006410256410256,
-          "generative_score": 0.75,
-          "extractive_score": 0.0512820512820512,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1028,8 +809,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.2613636363636363,
-          "generative_score": 0.5,
-          "extractive_score": 0.0227272727272727,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1041,8 +822,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4027777777777778,
-          "generative_score": 0.75,
-          "extractive_score": 0.0555555555555555,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1054,8 +835,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1067,8 +848,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.3848039215686274,
-          "generative_score": 0.75,
-          "extractive_score": 0.0196078431372549,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1080,8 +861,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.2,
-          "generative_score": 0.4,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1093,8 +874,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.4583333333333333,
-          "generative_score": 0.9,
-          "extractive_score": 0.0166666666666666,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1106,8 +887,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.3405405405405405,
-          "generative_score": 0.6,
-          "extractive_score": 0.081081081081081,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "GraphRAG fast/basic"
         },
         {
@@ -1119,8 +900,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1132,8 +913,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1145,8 +926,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1158,8 +939,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1171,8 +952,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 1.0,
-          "generative_score": 1.0,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1184,8 +965,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1197,8 +978,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1210,8 +991,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.75,
-          "generative_score": 1.0,
-          "extractive_score": 0.5,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1223,8 +1004,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1236,8 +1017,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1249,8 +1030,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1262,8 +1043,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.7142857142857143,
-          "generative_score": 1.0,
-          "extractive_score": 0.4285714285714285,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Adaptive"
         },
         {
@@ -1275,8 +1056,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1288,8 +1069,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1301,8 +1082,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.5625,
-          "generative_score": 0.75,
-          "extractive_score": 0.3749999999999999,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1314,8 +1095,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1327,8 +1108,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1340,8 +1121,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1353,8 +1134,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1366,8 +1147,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.75,
-          "generative_score": 1.0,
-          "extractive_score": 0.5,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1379,8 +1160,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.375,
-          "generative_score": 0.75,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1392,8 +1173,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1405,8 +1186,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1418,8 +1199,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.7142857142857143,
-          "generative_score": 1.0,
-          "extractive_score": 0.4285714285714285,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "BM25+dense"
         },
         {
@@ -1431,8 +1212,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1444,8 +1225,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1457,8 +1238,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.5178571428571429,
-          "generative_score": 0.75,
-          "extractive_score": 0.2857142857142857,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1470,8 +1251,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 1.0,
-          "generative_score": 1.0,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1483,8 +1264,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1496,8 +1277,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1509,8 +1290,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1522,8 +1303,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.75,
-          "generative_score": 1.0,
-          "extractive_score": 0.5,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1535,8 +1316,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1548,8 +1329,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1561,8 +1342,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1574,8 +1355,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.7142857142857143,
-          "generative_score": 1.0,
-          "extractive_score": 0.4285714285714285,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Rerank"
         },
         {
@@ -1587,8 +1368,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1600,8 +1381,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1613,8 +1394,8 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.5625,
-          "generative_score": 0.75,
-          "extractive_score": 0.3749999999999999,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1626,8 +1407,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1639,8 +1420,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1652,8 +1433,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1665,8 +1446,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1678,8 +1459,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1691,8 +1472,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.125,
-          "generative_score": 0.25,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1704,8 +1485,8 @@
           "exact_match": false,
           "contains_answer": false,
           "composite_score": 0.0,
-          "generative_score": 0.0,
-          "extractive_score": 0.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1717,8 +1498,8 @@
           "exact_match": true,
           "contains_answer": true,
           "composite_score": 0.875,
-          "generative_score": 0.75,
-          "extractive_score": 1.0,
+          "generative_score": null,
+          "extractive_score": null,
           "method_label": "Frontier"
         },
         {
@@ -1730,82 +1511,732 @@
           "exact_match": false,
           "contains_answer": true,
           "composite_score": 0.7142857142857143,
+          "generative_score": null,
+          "extractive_score": null,
+          "method_label": "Frontier"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8b57f25542995d1e6f1371",
+          "query_type": "local",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8c7595554299585d9e36b6",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a85ea095542994775f606a8",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5adbf0a255429947ff17385a",
+          "query_type": "local",
+          "llm_judge_score": 1.0,
+          "token_f1": 0.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 0.75,
+          "generative_score": 1.0,
+          "extractive_score": 0.5,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8e3ea95542995a26add48d",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.5714285714285715,
+          "exact_match": false,
+          "contains_answer": true,
+          "composite_score": 0.5178571428571429,
+          "generative_score": 0.75,
+          "extractive_score": 0.2857142857142857,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5abd94525542992ac4f382d2",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a85b2d95542997b5ce40028",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a87ab905542996e4f3088c1",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a7bbb64554299042af8f7cc",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 0.875,
+          "generative_score": 0.75,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8db19d5542994ba4e3dd00",
+          "query_type": "local",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a7166395542994082a3e814",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a877e5d5542993e715abf7d",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab3b0bf5542992ade7c6e39",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab56e32554299637185c594",
+          "query_type": "local",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab6d09255429954757d337d",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a75e05c55429976ec32bc5f",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab3e45655429976abd1bcd4",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab29c24554299449642c932",
+          "query_type": "local",
+          "llm_judge_score": 0.5,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 0.875,
+          "generative_score": 0.75,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae0d4c9554299603e418468",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8133725542995ce29dcbdb",
+          "query_type": "local",
+          "llm_judge_score": 1.0,
+          "token_f1": 0.8571428571428571,
+          "exact_match": false,
+          "contains_answer": true,
+          "composite_score": 0.7142857142857143,
           "generative_score": 1.0,
           "extractive_score": 0.4285714285714285,
-          "method_label": "Frontier"
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae7a8175542993210983ed8",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae6050f55429929b0807a5e",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5adddccd5542997dc7907069",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae2070a5542994d89d5b313",
+          "query_type": "local",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae22b8d554299234fd0440f",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a722b8655429971e9dc9329",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5adf37a95542995ec70e8f97",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5abd259d55429924427fcf1a",
+          "query_type": "local",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a828c8355429966c78a6a50",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8a3e745542996c9b8d5e70",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ac23ff0554299636651994d",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae4a3265542995ad6573de5",
+          "query_type": "local",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ae0361155429925eb1afc2c",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.5,
+          "exact_match": false,
+          "contains_answer": true,
+          "composite_score": 0.5,
+          "generative_score": 0.75,
+          "extractive_score": 0.25,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5abc0a5d5542993f40c73c64",
+          "query_type": "local",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a7cc50e554299452d57ba3e",
+          "query_type": "local",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5abf63f15542997ec76fd3ea",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.6666666666666666,
+          "exact_match": false,
+          "contains_answer": true,
+          "composite_score": 0.5416666666666666,
+          "generative_score": 0.75,
+          "extractive_score": 0.3333333333333333,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8ef2a75542995a26add583",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 0.75,
+          "generative_score": 0.5,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a80721b554299485f5985ef",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 1.0,
+          "exact_match": false,
+          "contains_answer": true,
+          "composite_score": 0.5,
+          "generative_score": 0.5,
+          "extractive_score": 0.5,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab51dae5542991779162d82",
+          "query_type": "local",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 0.625,
+          "generative_score": 0.75,
+          "extractive_score": 0.5,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a7571135542992d0ec05f98",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a7a0e1e5542990783324e1a",
+          "query_type": "local",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a74106b55429979e288289e",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a79311755429970f5fffe67",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab2d3df554299194fa9352c",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.8,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.2,
+          "generative_score": 0.4,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a760ab65542994ccc918697",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a7d54165542995f4f402256",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.5,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.125,
+          "generative_score": 0.25,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5ab859a955429934fafe6d7b",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5add61d65542995b365fab21",
+          "query_type": "hybrid",
+          "llm_judge_score": 0.0,
+          "token_f1": 0.0,
+          "exact_match": false,
+          "contains_answer": false,
+          "composite_score": 0.0,
+          "generative_score": 0.0,
+          "extractive_score": 0.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5a8e068b5542995085b37384",
+          "query_type": "local",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
+        },
+        {
+          "method": "semantic_rag",
+          "question_id": "5abbf698554299114383a0b5",
+          "query_type": "hybrid",
+          "llm_judge_score": 1.0,
+          "token_f1": 1.0,
+          "exact_match": true,
+          "contains_answer": true,
+          "composite_score": 1.0,
+          "generative_score": 1.0,
+          "extractive_score": 1.0,
+          "method_label": "Semantic"
         }
       ],
       "lens": [
         {
           "method": "adaptive_rag",
-          "generative": 0.4375,
-          "extractive": 0.41071428571428575,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.42410714285714285,
           "n": 12,
           "method_label": "Adaptive"
         },
         {
           "method": "frontier_rag",
-          "generative": 0.4375,
-          "extractive": 0.40029761904761907,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.41889880952380953,
           "n": 12,
           "method_label": "Frontier"
         },
         {
           "method": "graph_local_rag",
-          "generative": 0.28875,
-          "extractive": 0.0059985632183907995,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.1473742816091954,
           "n": 12,
           "method_label": "GraphRAG local"
         },
         {
           "method": "graph_rag",
-          "generative": 0.21666666666666667,
-          "extractive": 0.0048076923076923,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.11073717948717948,
           "n": 12,
           "method_label": "GraphRAG global"
         },
         {
           "method": "hybrid_dense_sparse",
-          "generative": 0.3958333333333333,
-          "extractive": 0.1919642857142857,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.29389880952380953,
           "n": 12,
           "method_label": "BM25+dense"
         },
         {
           "method": "hybrid_rag",
-          "generative": 0.4916666666666667,
-          "extractive": 0.20752525252525253,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.3495959595959596,
           "n": 12,
           "method_label": "Hybrid"
         },
         {
           "method": "lazygraph_rag",
-          "generative": 0.6166666666666667,
-          "extractive": 0.03854086023653514,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.32760376345160086,
           "n": 12,
           "method_label": "GraphRAG fast/basic"
         },
         {
           "method": "rerank_semantic",
-          "generative": 0.5,
-          "extractive": 0.3511904761904762,
+          "generative": NaN,
+          "extractive": NaN,
           "composite": 0.42559523809523814,
           "n": 12,
           "method_label": "Rerank"
         },
         {
           "method": "semantic_rag",
-          "generative": 0.4583333333333333,
-          "extractive": 0.3645833333333333,
-          "composite": 0.4114583333333333,
-          "n": 12,
+          "generative": 0.408,
+          "extractive": 0.31595238095238093,
+          "composite": 0.3619761904761905,
+          "n": 50,
           "method_label": "Semantic"
         }
       ],

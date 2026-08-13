@@ -436,24 +436,51 @@ class BenchmarkRunner:
         ckpt_path = out_dir / f"_checkpoint_{method}_accuracy.csv"
 
         for i, question in enumerate(self.questions, start=1):
-            query_start = time.perf_counter()
-            result = query_fn(question.question)
-            query_latencies.append(time.perf_counter() - query_start)
-            row = {
-                "question_id": question.id,
-                "question": question.question,
-                "answer": result.answer,
-                "query_type": question.query_type,
-            }
-            if hasattr(result, "retrieved_chunks"):
-                chunks = result.retrieved_chunks
-                row["retrieved_chunks"] = len(chunks) if chunks is not None else 0
-            if extra_fields:
-                row.update(extra_fields(result))
-            answers.append(row)
-            accuracy.append(
-                evaluator.evaluate(method=method, question=question, prediction=result.answer)
-            )
+            try:
+                query_start = time.perf_counter()
+                result = query_fn(question.question)
+                query_latencies.append(time.perf_counter() - query_start)
+                row = {
+                    "question_id": question.id,
+                    "question": question.question,
+                    "answer": result.answer,
+                    "query_type": question.query_type,
+                }
+                if hasattr(result, "retrieved_chunks"):
+                    chunks = result.retrieved_chunks
+                    row["retrieved_chunks"] = len(chunks) if chunks is not None else 0
+                if extra_fields:
+                    row.update(extra_fields(result))
+                answers.append(row)
+                accuracy.append(
+                    evaluator.evaluate(
+                        method=method, question=question, prediction=result.answer
+                    )
+                )
+            except Exception as exc:  # noqa: BLE001 — keep thousand-scale runs alive
+                print(f"  [{method}] ERROR on {question.id}: {exc!r}", flush=True)
+                query_latencies.append(0.0)
+                answers.append(
+                    {
+                        "question_id": question.id,
+                        "question": question.question,
+                        "answer": "",
+                        "query_type": question.query_type,
+                        "error": repr(exc),
+                    }
+                )
+                accuracy.append(
+                    AccuracyResult(
+                        question_id=question.id,
+                        method=method,
+                        query_type=question.query_type,
+                        llm_judge_score=0.0,
+                        token_f1=0.0,
+                        exact_match=False,
+                        contains_answer=False,
+                        judge_rationale=f"error: {exc!r}",
+                    )
+                )
             if i == 1 or i % 25 == 0 or i == total:
                 mean_c = sum(a.composite_score() for a in accuracy) / len(accuracy)
                 print(
