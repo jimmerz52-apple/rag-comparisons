@@ -57,20 +57,33 @@ class SemanticRAG:
         if not documents:
             raise ValueError(f"No chunks found in corpus: {self.config.corpus_dir}")
 
-        if not self.config.reuse_indexes:
+        existing = self._store.count()
+        if self.config.reuse_indexes and existing >= max(1, int(0.9 * len(documents))):
+            print(
+                f"  Reusing semantic index ({existing} vectors ≥ 90% of {len(documents)} docs)",
+                flush=True,
+            )
+        elif not self.config.reuse_indexes:
+            print(f"  Rebuilding semantic index from scratch ({len(documents)} docs)...", flush=True)
             self._store.reset()
             self._store.upsert_documents(documents, phase="semantic_index")
         else:
+            print(
+                f"  Syncing semantic index (have {existing}, corpus {len(documents)})...",
+                flush=True,
+            )
             self._store.sync_documents(documents, drop_missing=True, phase="semantic_index")
 
         # Materialize chunks for BM25 hybrid subclass
         from rag_benchmark.corpus import chunk_documents
 
+        print(f"  Materializing chunks for BM25/hybrid...", flush=True)
         self._chunks = chunk_documents(
             documents,
             chunk_size=self.config.chunk_size,
             chunk_overlap=self.config.chunk_overlap,
         )
+        print(f"  Index ready: store={self._store.count()} chunks={len(self._chunks)}", flush=True)
 
     def retrieve(self, question: str) -> list[str]:
         """Return top-k chunk texts (for hybrid fusion / method bake-off)."""

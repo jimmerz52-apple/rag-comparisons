@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import time
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any, Callable
 
 import pandas as pd
@@ -428,8 +429,13 @@ class BenchmarkRunner:
         answers: list[dict[str, Any]] = []
         accuracy: list[AccuracyResult] = []
         query_latencies: list[float] = []
+        total = len(self.questions)
+        checkpoint_every = 25 if total >= 500 else max(5, min(25, total // 5 or 5))
+        out_dir = self.config.results_dir()
+        out_dir.mkdir(parents=True, exist_ok=True)
+        ckpt_path = out_dir / f"_checkpoint_{method}_accuracy.csv"
 
-        for question in self.questions:
+        for i, question in enumerate(self.questions, start=1):
             query_start = time.perf_counter()
             result = query_fn(question.question)
             query_latencies.append(time.perf_counter() - query_start)
@@ -448,7 +454,74 @@ class BenchmarkRunner:
             accuracy.append(
                 evaluator.evaluate(method=method, question=question, prediction=result.answer)
             )
+            if i == 1 or i % 25 == 0 or i == total:
+                mean_c = sum(a.composite_score() for a in accuracy) / len(accuracy)
+                print(
+                    f"  [{method}] {i}/{total}  "
+                    f"last_latency={query_latencies[-1]:.1f}s  "
+                    f"running_composite={mean_c:.3f}",
+                    flush=True,
+                )
+            if i % checkpoint_every == 0 or i == total:
+                rows = []
+                for item in accuracy:
+                    rows.append(
+                        {
+                            "method": item.method,
+                            "question_id": item.question_id,
+                            "query_type": item.query_type,
+                            "llm_judge_score": item.llm_judge_score,
+                            "token_f1": item.token_f1,
+                            "exact_match": item.exact_match,
+                            "contains_answer": item.contains_answer,
+                            "composite_score": item.composite_score(),
+                            "generative_score": item.generative_score(),
+                            "extractive_score": item.extractive_score(),
+                        }
+                    )
+                pd.DataFrame(rows).to_csv(ckpt_path, index=False)
+                # Publish live partial scores into accuracy_results for the dashboard
+                self._publish_live_accuracy(method=method, checkpoint=ckpt_path)
         return answers, accuracy, query_latencies
+
+    def _publish_live_accuracy(self, *, method: str, checkpoint: Path) -> None:
+        """Merge checkpoint into accuracy_results.csv so Pages/dashboard can show thousands mid-run."""
+        out = self.config.results_dir() / "accuracy_results.csv"
+        enriched = self.config.results_dir() / "accuracy_enriched.csv"
+        fresh = pd.read_csv(checkpoint)
+        if out.exists() and out.stat().st_size > 3:
+            old = pd.read_csv(out)
+            old = old[old["method"] != method]
+            merged = pd.concat([old, fresh], ignore_index=True)
+        else:
+            merged = fresh
+        merged.to_csv(out, index=False)
+        merged.to_csv(enriched, index=False)
+        # Lightweight live summary so dashboard leaderboard moves
+        summary_rows = []
+        for m, g in merged.groupby("method"):
+            summary_rows.append(
+                {
+                    "method": m,
+                    "mean_composite_score": float(g["composite_score"].mean()),
+                    "mean_llm_judge": float(g["llm_judge_score"].mean()),
+                    "mean_token_f1": float(g["token_f1"].mean()),
+                    "exact_match_rate": float(g["exact_match"].mean()),
+                    "contains_answer_rate": float(g["contains_answer"].mean()),
+                    "tokens_per_query": 0.0,
+                    "n_scored": int(g["question_id"].nunique()),
+                }
+            )
+        pd.DataFrame(summary_rows).to_csv(self.config.results_dir() / "summary.csv", index=False)
+        meta = {
+            "live_partial": True,
+            "updated_method": method,
+            "n_rows": int(len(merged)),
+            "n_questions": int(merged["question_id"].nunique()),
+        }
+        (self.config.results_dir() / "live_partial_meta.json").write_text(
+            json.dumps(meta, indent=2), encoding="utf-8"
+        )
 
     @staticmethod
     def to_latency_frame(results: list[MethodRunResult]) -> pd.DataFrame:
@@ -631,6 +704,26 @@ class BenchmarkRunner:
         eng_paths = save_engineering_scorecard(scorecard, out_dir)
         decision_paths = build_decision_artifacts(out_dir, self.config.qa_path)
 
+        # Refresh the multi-bench HTML dashboard when any run completes
+        try:
+            from scripts.build_dashboard import build as build_html_dashboard
+
+            dash = build_html_dashboard()
+        except Exception:
+            try:
+                import importlib.util
+
+                spec = importlib.util.spec_from_file_location(
+                    "build_dashboard",
+                    self.config.project_root / "scripts" / "build_dashboard.py",
+                )
+                mod = importlib.util.module_from_spec(spec)  # type: ignore[arg-type]
+                assert spec and spec.loader
+                spec.loader.exec_module(mod)
+                dash = mod.build()
+            except Exception:
+                dash = None
+
         return {
             "accuracy_csv": str(accuracy_path),
             "token_csv": str(token_path),
@@ -642,6 +735,7 @@ class BenchmarkRunner:
             "engineering_briefing": str(eng_paths["briefing"]),
             "routing_cheatsheet": str(decision_paths["cheatsheet"]),
             "choose_over_examples": str(decision_paths["examples"]),
+            "dashboard_html": str(dash) if dash else None,
             "accuracy_df": accuracy_df,
             "token_df": token_df,
             "latency_df": latency_df,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 21:58 UTC",
+  "generated_at": "2026-08-13 22:13 UTC",
   "repo": "rag-comparisons",
   "research_version": "2026-08 research-refined",
   "metric_defs": [
@@ -163,6 +163,7 @@
       "indexed_documents": 66569,
       "scored_questions": 12,
       "scores_are_partial": true,
+      "live_partial": false,
       "status": "scored",
       "summary": [
         {
@@ -2042,21 +2043,24 @@
         "paper": "Wang et al., NAACL Findings 2025",
         "citation": "https://arxiv.org/abs/2406.14497",
         "homepage": "https://code-rag-bench.github.io/",
-        "slice": "basic_programming",
-        "source": "code-rag-bench/humaneval + mbpp + programming-solutions",
-        "n_questions": 664,
-        "n_documents": 464,
+        "slice": "basic_plus_open_domain",
+        "source": "humaneval + mbpp + ds1000 + odex \u00b7 programming-solutions + library-documentation",
+        "n_questions": 2103,
+        "n_documents": 34467,
         "type_counts": {
           "humaneval": 164,
-          "mbpp": 500
+          "mbpp": 500,
+          "ds1000": 1000,
+          "odex": 439
         },
-        "protocol": "Canonical solutions for evaluated tasks are excluded from the retrieval corpus (CodeRAG-Bench leave-gold-out).",
-        "note": "Full CodeRAG-Bench also includes DS-1000, ODEX, RepoEval, SWE-bench-Lite, and CodeSearchNet-Py. This harness ships the complete basic-programming category (HumanEval 164 + MBPP 500) with the programming-solutions datastore."
+        "protocol": "Leave-gold-out for HumanEval/MBPP solutions; open-domain tasks retrieve against library docs (\u00b1 StackOverflow).",
+        "note": "Full CodeRAG-Bench also includes RepoEval / SWE-bench-Lite / CodeSearchNet-Py (repo-level + retrieval). This harness ships the complete basic + open-domain categories (~2.1k Q / ~35k docs)."
       },
-      "indexed_questions": 664,
-      "indexed_documents": 464,
+      "indexed_questions": 2103,
+      "indexed_documents": 34467,
       "scored_questions": 20,
       "scores_are_partial": true,
+      "live_partial": false,
       "status": "scored",
       "summary": [
         {
@@ -2829,6 +2833,7 @@
       "indexed_documents": 27,
       "scored_questions": 7,
       "scores_are_partial": true,
+      "live_partial": false,
       "status": "scored",
       "summary": [
         {
@@ -3428,6 +3433,7 @@
       "indexed_documents": 141,
       "scored_questions": 9,
       "scores_are_partial": true,
+      "live_partial": false,
       "status": "scored",
       "summary": [
         {

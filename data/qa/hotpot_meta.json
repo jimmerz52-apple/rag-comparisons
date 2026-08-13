@@ -4,12 +4,14 @@
   "citation": "https://hotpotqa.github.io/",
   "setting": "distractor",
   "source": "hotpotqa/hotpot_qa (HuggingFace)",
-  "n_questions": 24,
-  "n_documents": 231,
+  "n_questions": 7405,
+  "n_documents": 66569,
+  "full_validation": true,
   "type_counts": {
-    "bridge": 12,
-    "comparison": 12
+    "comparison": 1487,
+    "bridge": 5918
   },
   "corpus_dir": "/Users/jimmyscray/Code/rag-benchmark/data/corpus_hotpot",
-  "qa_path": "/Users/jimmyscray/Code/rag-benchmark/data/qa/hotpot_eval.json"
+  "qa_path": "/Users/jimmyscray/Code/rag-benchmark/data/qa/hotpot_eval.json",
+  "note": "Full distractor validation = 7405 hard Q / ~66k paragraphs. Local GraphRAG runs are practical at n\u2248100\u2013500; use n=all only with vector-only methods or a large compute budget."
 }

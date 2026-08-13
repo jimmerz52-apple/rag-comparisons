@@ -1,0 +1,21 @@
+{
+  "dataset": "CodeRAG-Bench",
+  "paper": "Wang et al., NAACL Findings 2025",
+  "citation": "https://arxiv.org/abs/2406.14497",
+  "homepage": "https://code-rag-bench.github.io/",
+  "slice": "basic_plus_open_domain",
+  "source": "humaneval + mbpp + ds1000 + odex \u00b7 programming-solutions + library-documentation",
+  "n_questions": 2103,
+  "n_documents": 34467,
+  "type_counts": {
+    "humaneval": 164,
+    "mbpp": 500,
+    "ds1000": 1000,
+    "odex": 439
+  },
+  "corpus_dir": "/Users/jimmyscray/Code/rag-benchmark/data/corpus_code_rag",
+  "qa_path": "/Users/jimmyscray/Code/rag-benchmark/data/qa/code_rag_eval.json",
+  "catalog_path": "/Users/jimmyscray/Code/rag-benchmark/results/code_rag_question_catalog.csv",
+  "protocol": "Leave-gold-out for HumanEval/MBPP solutions; open-domain tasks retrieve against library docs (\u00b1 StackOverflow).",
+  "note": "Full CodeRAG-Bench also includes RepoEval / SWE-bench-Lite / CodeSearchNet-Py (repo-level + retrieval). This harness ships the complete basic + open-domain categories (~2.1k Q / ~35k docs)."
+}

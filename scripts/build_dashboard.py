@@ -331,8 +331,15 @@ def collect_payload() -> dict:
                 "indexed_questions": indexed_q,
                 "indexed_documents": meta.get("n_documents"),
                 "scored_questions": scored,
-                "scores_are_partial": bool(indexed_q and scored and scored < int(indexed_q)),
-                "status": "scored" if summary else "corpus only",
+                "scores_are_partial": bool(
+                    indexed_q and scored and scored < int(indexed_q)
+                ),
+                "live_partial": (spec["results"] / "live_partial_meta.json").exists(),
+                "status": (
+                    "scoring live"
+                    if (spec["results"] / "live_partial_meta.json").exists()
+                    else ("scored" if summary else "corpus only")
+                ),
                 "summary": summary,
                 "accuracy": accuracy,
                 "lens": _lens_summary(accuracy),
