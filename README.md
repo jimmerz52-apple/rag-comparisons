@@ -7,9 +7,15 @@ on HotpotQA, CodeRAG-Bench, GraphRAG-Bench, and MultiHop-RAG.
 
 **[Open the live dashboard →](https://jimmerz52-apple.github.io/rag-comparisons/)**
 
-Tableau-style filters: pick a benchmark, metric, and methods — leaderboard, quality-vs-cost scatter, per-question boxes, heatmap, and question explorer update together.
+Research-refined (2024–2026 eval practice), Tableau-style:
 
-Metric glossary and “indexed vs scored” provenance are built into the page so partial runs are not mistaken for full validation.
+| Tab | What you get |
+|-----|----------------|
+| **Explore** | Filters, leaderboard, quality–cost Pareto, per-question explorer |
+| **Decision Lab** | Generative vs extractive scatter, dual scoreboard, routing, engineering briefing |
+| **Research Lens** | RAGAS-style metric map (incl. honest gaps), GraphRAG-Bench / CodeRAG findings |
+
+Grounded in: RAGAS retrieval-vs-generation split · GraphRAG-Bench “when graphs help” · CodeRAG-Bench leave-gold-out · Hotpot EM/F1 under-crediting generative answers.
 
 Rebuild after new scores:
 
@@ -17,7 +23,6 @@ Rebuild after new scores:
 PYTHONPATH=src python scripts/build_dashboard.py
 # writes docs/index.html (Pages) and results/dashboard.html (local)
 ```
-
 ## Full-scale data
 
 | Bench | Indexed | Default scoring |

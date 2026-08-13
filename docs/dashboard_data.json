@@ -1,68 +1,149 @@
 {
-  "generated_at": "2026-08-13 21:47 UTC",
+  "generated_at": "2026-08-13 21:58 UTC",
   "repo": "rag-comparisons",
+  "research_version": "2026-08 research-refined",
   "metric_defs": [
     {
       "id": "composite",
-      "name": "Composite score",
-      "range": "0\u20131, higher better",
-      "means": "Primary ranking metric. Blend of LLM-judge (generative quality) and token F1 / exact-match style extractive overlap. Use this to pick a default method unless your product is judge-only or F1-only."
+      "name": "Composite",
+      "range": "0\u20131 \u2191",
+      "means": "Mean of available judge, F1, EM, contains. Default ranker \u2014 blends generative and extractive pressure."
+    },
+    {
+      "id": "generative",
+      "name": "Generative lens",
+      "range": "0\u20131 \u2191",
+      "means": "Judge + contains. Fairer to GraphRAG prose that humans accept but Hotpot F1 punishes."
+    },
+    {
+      "id": "extractive",
+      "name": "Extractive lens",
+      "range": "0\u20131 \u2191",
+      "means": "Token F1 + EM. Classic Hotpot scoring. Prefer when answers must be short spans."
     },
     {
       "id": "llm_judge",
       "name": "LLM judge",
-      "range": "0\u20131, higher better",
-      "means": "A local judge model scores whether the answer is correct / useful relative to gold. Rewards fluent, correct answers even when wording differs from gold. Can be generous to chatty graph answers."
-    },
-    {
-      "id": "token_f1",
-      "name": "Token F1",
-      "range": "0\u20131, higher better",
-      "means": "Token overlap between prediction and gold (classic Hotpot-style). Strict: paraphrases score lower. Good for short factual answers."
-    },
-    {
-      "id": "contains",
-      "name": "Contains answer",
-      "range": "rate 0\u20131",
-      "means": "Fraction of questions where gold (or key gold tokens / code body) appears in the prediction. Loose recall-style check."
+      "range": "0\u20131 \u2191",
+      "means": "Semantic correctness vs gold. Correlates better with humans than EM on generative QA, but is not faithfulness-to-context."
     },
     {
       "id": "tokens_per_query",
       "name": "Tokens / query",
-      "range": "count, lower cheaper",
-      "means": "Average prompt+completion tokens per question. Proxy for $ and latency. A method with slightly lower quality but far fewer tokens may still be the right production choice."
+      "range": "count \u2193",
+      "means": "Cost proxy. Graph global / frontier often win quality on some slices while burning tokens."
+    }
+  ],
+  "metric_map": [
+    {
+      "ragas": "Answer relevance \u2248 LLM judge",
+      "ours": "llm_judge_score",
+      "layer": "Generation",
+      "status": "proxied",
+      "note": "Local judge scores usefulness vs gold. Not identical to RAGAS answer_relevancy (query-conditioned, often reference-free)."
     },
     {
-      "id": "latency",
-      "name": "Query latency",
-      "range": "seconds, lower faster",
-      "means": "Mean wall-clock time per question after the index exists."
+      "ragas": "Faithfulness / groundedness",
+      "ours": "\u2014 (gap)",
+      "layer": "Generation",
+      "status": "missing",
+      "note": "2026 guides treat faithfulness as mandatory. This bake-off does not yet score claim-vs-context; do not equate judge with faithfulness."
     },
     {
-      "id": "dual",
-      "name": "Dual scoreboard / flips",
-      "range": "winner labels",
-      "means": "Generative winner (judge-heavy) vs composite winner. A flip means the metric you optimize changes who wins \u2014 do not trust a single leaderboard number without checking this."
+      "ragas": "Context precision / recall",
+      "ours": "\u2014 (gap)",
+      "layer": "Retrieval",
+      "status": "missing",
+      "note": "Separate retrieval eval (nDCG@k, recall@k) is standard in CodeRAG-Bench and GraphRAG-Bench. End-to-end scores alone hide retrieval failures."
+    },
+    {
+      "ragas": "Correctness (lexical)",
+      "ours": "token_f1 + exact_match",
+      "layer": "Generation",
+      "status": "covered",
+      "note": "Hotpot-style. Underestimates fluent paraphrases (Qi 2025; LLM-as-judge reassessments 2025)."
+    },
+    {
+      "ragas": "Soft recall / containment",
+      "ours": "contains_answer",
+      "layer": "Generation",
+      "status": "covered",
+      "note": "Loose check that gold (or code body tokens) appear in the prediction."
+    },
+    {
+      "ragas": "Cost / latency (ops)",
+      "ours": "tokens_per_query, latency",
+      "layer": "Ops",
+      "status": "covered",
+      "note": "Production selection is multi-objective \u2014 quality alone is not a ship decision (Braintrust / Atlan 2026 practice)."
+    }
+  ],
+  "research_findings": [
+    {
+      "claim": "No single RAG paradigm wins everywhere",
+      "evidence": "Unified evaluations (RAG vs GraphRAG systematic studies, 2025\u201326) and GraphRAG-Bench show vector RAG competitive on fact lookup; graphs pull ahead on complex reasoning / contextual summarize. Hybrid or routed stacks beat either alone.",
+      "dashboard": "Use Decision Lab \u2192 generative vs extractive + routing table; don\u2019t pick from one bar chart.",
+      "cites": [
+        "Xiang et al. arXiv:2506.05690",
+        "Han et al. arXiv:2502.11371"
+      ]
+    },
+    {
+      "claim": "Separate retrieval from generation",
+      "evidence": "RAGAS / DeepEval / 2026 guides: a pipeline can look \u2018faithful\u2019 while context recall quietly collapses. CodeRAG-Bench explicitly reports retrieval nDCG and end-to-end gen.",
+      "dashboard": "Metric map marks context precision/recall as gaps \u2014 treat end-to-end ranks as provisional.",
+      "cites": [
+        "Es et al. RAGAS 2024",
+        "Wang et al. CodeRAG-Bench 2025"
+      ]
+    },
+    {
+      "claim": "EM/F1 under-credit generative answers",
+      "evidence": "Hotpot-style extractive metrics penalize correct verbose answers. LLM-as-judge closes much of the gap to human ratings; dual scoreboards routinely flip winners.",
+      "dashboard": "Dual scoreboard + Generative vs Extractive scatter are first-class, not footnotes.",
+      "cites": [
+        "Qi 2025 (stop-only-Hotpot caution)",
+        "arXiv:2504.11972 LLM-as-judge QA"
+      ]
+    },
+    {
+      "claim": "Code RAG bottleneck is often retrieval, not generation",
+      "evidence": "CodeRAG-Bench: gold docs help even strong models; current retrievers struggle on DS-1000 / ODEX / SWE-style tasks. Leave-gold-out is required for honest basic-programming eval.",
+      "dashboard": "CodeRAG card explains leave-gold-out; expand scored n before claiming production readiness.",
+      "cites": [
+        "Wang et al. Findings NAACL 2025"
+      ]
+    },
+    {
+      "claim": "Ship a router, not a religion",
+      "evidence": "Industry + academic synthesis 2026: route local factoids to vector+rerank; reserve graph / frontier for multi-hop or corpus-wide synthesis; watch token/latency SLOs.",
+      "dashboard": "Routing recommendations + Pareto (quality vs tokens) encode that tradeoff.",
+      "cites": [
+        "VentureBeat GraphRAG synthesis 2026",
+        "this harness engineering_briefing.md"
+      ]
     }
   ],
   "method_defs": {
-    "Semantic": "Dense vector retrieval (embeddings) + LLM generate over top-k chunks.",
-    "Rerank": "Semantic retrieve, then cross-encoder / LLM rerank before generate.",
-    "BM25+dense": "Hybrid sparse (BM25) + dense retrieval fused before generate.",
-    "Hybrid": "Graph + vector hybrid path used in this harness.",
-    "GraphRAG fast/basic": "Microsoft GraphRAG-style fast NLP index + basic/local search (not global).",
-    "GraphRAG global": "Community-summary / global GraphRAG search over the knowledge graph.",
-    "GraphRAG local": "Entity-neighborhood local GraphRAG search.",
-    "Frontier": "Adaptive routing + corrective RAG style frontier stack.",
-    "Adaptive": "Query router that picks retrieval strategy per question."
+    "Semantic": "Dense vector retrieve + generate. Strong baseline for single-hop / local factoids.",
+    "Rerank": "Retrieve then rerank. Often best quality/latency interactive path in this harness.",
+    "BM25+dense": "Sparse+dense fusion. Helps keyword-heavy queries; paper-standard hybrid retriever.",
+    "Hybrid": "Vector + graph local path in this harness.",
+    "GraphRAG fast/basic": "Fast NLP graph index + basic/local search. Often high generative / contains, low F1.",
+    "GraphRAG global": "Community-summary global search. Costly; for corpus-wide themes, not factoids.",
+    "GraphRAG local": "Entity-neighborhood search.",
+    "Frontier": "Adaptive + corrective-style stack \u2014 multi-hop candidate in routing table.",
+    "Adaptive": "Per-query router among retrieval strategies."
   },
   "benches": [
     {
       "id": "hotpot",
       "title": "HotpotQA distractor",
       "short": "Hotpot",
-      "what": "Multi-hop Wikipedia QA (distractor setting). Each question needs evidence from \u22652 paragraphs; the corpus also includes distractor paragraphs that look related but are not gold.",
-      "how_to_read": "Higher composite is better. Tokens/query is cost. Graph methods often win on LLM-judge but lose on extractive F1 \u2014 check Dual scoreboard and the Quality vs Tokens chart.",
+      "era": "2018 classic \u00b7 still useful, metric-sensitive",
+      "what": "Multi-hop Wikipedia QA (distractor). Gold answers are short extractive spans. Recent critiques (Qi 2025) note EM/F1 punish fluent generative answers that humans accept \u2014 which is why this dashboard always shows generative vs extractive lenses.",
+      "how_to_read": "Prefer composite for a balanced rank; check generative if your UX is chatty prose; check extractive if you need short-span fidelity. Ranking flips are expected.",
+      "paper": "Yang et al., EMNLP 2018 \u00b7 https://hotpotqa.github.io/",
       "meta": {
         "dataset": "HotpotQA",
         "paper": "Yang et al., EMNLP 2018",
@@ -1653,6 +1734,80 @@
           "method_label": "Frontier"
         }
       ],
+      "lens": [
+        {
+          "method": "adaptive_rag",
+          "generative": 0.4375,
+          "extractive": 0.41071428571428575,
+          "composite": 0.42410714285714285,
+          "n": 12,
+          "method_label": "Adaptive"
+        },
+        {
+          "method": "frontier_rag",
+          "generative": 0.4375,
+          "extractive": 0.40029761904761907,
+          "composite": 0.41889880952380953,
+          "n": 12,
+          "method_label": "Frontier"
+        },
+        {
+          "method": "graph_local_rag",
+          "generative": 0.28875,
+          "extractive": 0.0059985632183907995,
+          "composite": 0.1473742816091954,
+          "n": 12,
+          "method_label": "GraphRAG local"
+        },
+        {
+          "method": "graph_rag",
+          "generative": 0.21666666666666667,
+          "extractive": 0.0048076923076923,
+          "composite": 0.11073717948717948,
+          "n": 12,
+          "method_label": "GraphRAG global"
+        },
+        {
+          "method": "hybrid_dense_sparse",
+          "generative": 0.3958333333333333,
+          "extractive": 0.1919642857142857,
+          "composite": 0.29389880952380953,
+          "n": 12,
+          "method_label": "BM25+dense"
+        },
+        {
+          "method": "hybrid_rag",
+          "generative": 0.4916666666666667,
+          "extractive": 0.20752525252525253,
+          "composite": 0.3495959595959596,
+          "n": 12,
+          "method_label": "Hybrid"
+        },
+        {
+          "method": "lazygraph_rag",
+          "generative": 0.6166666666666667,
+          "extractive": 0.03854086023653514,
+          "composite": 0.32760376345160086,
+          "n": 12,
+          "method_label": "GraphRAG fast/basic"
+        },
+        {
+          "method": "rerank_semantic",
+          "generative": 0.5,
+          "extractive": 0.3511904761904762,
+          "composite": 0.42559523809523814,
+          "n": 12,
+          "method_label": "Rerank"
+        },
+        {
+          "method": "semantic_rag",
+          "generative": 0.4583333333333333,
+          "extractive": 0.3645833333333333,
+          "composite": 0.4114583333333333,
+          "n": 12,
+          "method_label": "Semantic"
+        }
+      ],
       "dual": [
         {
           "scenario": "hybrid",
@@ -1847,14 +2002,41 @@
           "contains_answer": true,
           "generative_score": 0.75
         }
-      ]
+      ],
+      "routing": [
+        {
+          "query_type": "hybrid",
+          "scenario": "multi_hop",
+          "recommended_method": "frontier_rag",
+          "recommended_label": "FrontierRAG (adaptive+CRAG)",
+          "quality": 0.40625,
+          "margin_over_next": 0.0487850686335114,
+          "tie_broke_on_cost": false,
+          "tokens_per_query": 2058.9166666666665,
+          "guidance": "Bridge / cross-doc multi-hop \u2192 FrontierRAG (adaptive+CRAG)."
+        },
+        {
+          "query_type": "local",
+          "scenario": "local_factoid",
+          "recommended_method": "rerank_semantic",
+          "recommended_label": "Vector + rerank",
+          "quality": 0.5565476190476191,
+          "margin_over_next": 0.0208333333333333,
+          "tie_broke_on_cost": false,
+          "tokens_per_query": 1264.9166666666667,
+          "guidance": "Single-entity / comparison factoids \u2192 Vector + rerank. H2H 1W-1L vs runner-up (mean\u0394=0.021; treat as soft)"
+        }
+      ],
+      "briefing": "# Engineering scorecard\n\nDefault interactive path: **Vector + rerank**\n- Reason: Best quality among methods with p95 \u2264 5.0s\n- Quality: 0.426 | usable: 75%\n- p95 latency: 2.70s | tokens/query: 1265\n\n## Routing (by scenario)\n- **multi_hop** \u2192 FrontierRAG (adaptive+CRAG) (q=0.406, 2059 tok/q) \u2014 Bridge / cross-doc multi-hop \u2192 FrontierRAG (adaptive+CRAG).\n- **local_factoid** \u2192 Vector + rerank (q=0.557, 1265 tok/q) \u2014 Single-entity / comparison factoids \u2192 Vector + rerank. H2H 1W-1L vs runner-up (mean\u0394=0.021; treat as soft)\n\n## Recommendations\n- Ship a query router, not one RAG stack: local factoids vs multi-hop need different paths.\n- MULTI_HOP: FrontierRAG (adaptive+CRAG) (q=0.41, \u0394=0.05, 2059 tok/q).\n- LOCAL_FACTOID: Vector + rerank (q=0.56, \u0394=0.02, 1265 tok/q).\n- Usable-answer leader (GraphRAG fast/basic, 83%) differs from composite leader (Vector + rerank) \u2014 pick the metric that matches your UX.\n- Highest token cost: FrontierRAG (adaptive+CRAG) (2059 tok/q) \u2014 gate behind hard-query classifier.\n- Misses p95\u22645.0s SLO: GraphRAG global, GraphRAG local, Hybrid (vec+graph local), GraphRAG fast/basic, Adaptive router, FrontierRAG (adaptive+CRAG). Keep interactive path on vector; run graph/hybrid async or on stronger GPUs.\n- Rebuild GraphRAG indexes only on corpus change; amortize index_seconds over expected volume.\n\n## Caveats\n- Eval set size n=12 \u2014 treat rankings as directional, not production SLAs.\n- Overlapping quality CIs are common at this n; trust large gaps (latency/tokens/local EM) over 0.01 composite deltas.\n- Composite mixes EM/F1/judge; generative graph answers often lose on EM even when useful.\n- Absolute latency depends on hardware + model size; use relative ordering for stack choice.\n- Graph index build dominates cold-start cost; measure amortized $/query at your QPS.\n"
     },
     {
       "id": "code_rag",
       "title": "CodeRAG-Bench",
       "short": "CodeRAG",
-      "what": "Code generation with retrieval (Wang et al., NAACL Findings 2025). HumanEval / MBPP / DS-1000 / ODEX. Canonical solutions are leave-gold-out of the datastore.",
-      "how_to_read": "Code-aware metrics: contains/judge look for function bodies and key tokens, not wiki-style short answers. Prefer composite + judge together.",
+      "era": "NAACL Findings 2025",
+      "what": "Wang et al.: retrieval-augmented code generation across basic programming and open-domain tasks. Canonical solutions are leave-gold-out. Paper finding: high-quality context helps, but retrievers often fail to fetch it \u2014 end-to-end RAG \u2260 oracle RAG.",
+      "how_to_read": "Code-aware contains/judge matter more than wiki-style F1. Compare methods under the same datastore; do not treat token F1 as pass@k.",
+      "paper": "Wang et al., Findings NAACL 2025 \u00b7 https://code-rag-bench.github.io/",
       "meta": {
         "dataset": "CodeRAG-Bench",
         "paper": "Wang et al., NAACL Findings 2025",
@@ -2560,6 +2742,24 @@
           "method_label": "Rerank"
         }
       ],
+      "lens": [
+        {
+          "method": "rerank_semantic",
+          "generative": 0.45499999999999996,
+          "extractive": 0.14980209052375856,
+          "composite": 0.3024010452618793,
+          "n": 20,
+          "method_label": "Rerank"
+        },
+        {
+          "method": "semantic_rag",
+          "generative": 0.4025,
+          "extractive": 0.1379782341928278,
+          "composite": 0.2702391170964139,
+          "n": 20,
+          "method_label": "Semantic"
+        }
+      ],
       "dual": [
         {
           "scenario": "humaneval",
@@ -2582,14 +2782,30 @@
           "ranking_flips": false
         }
       ],
-      "clear_wins": []
+      "clear_wins": [],
+      "routing": [
+        {
+          "query_type": "local",
+          "scenario": "local_factoid",
+          "recommended_method": "rerank_semantic",
+          "recommended_label": "Vector + rerank",
+          "quality": 0.3024010452618793,
+          "margin_over_next": 0.0321619281654654,
+          "tie_broke_on_cost": false,
+          "tokens_per_query": 6817.55,
+          "guidance": "Single-entity / comparison factoids \u2192 Vector + rerank."
+        }
+      ],
+      "briefing": "# Engineering scorecard\n\nDefault interactive path: **Semantic (vector)**\n- Reason: No method met latency SLO; picking fastest mean latency\n- Quality: 0.270 | usable: 85%\n- p95 latency: 5.03s | tokens/query: 6905\n\n## Routing (by scenario)\n- **local_factoid** \u2192 Vector + rerank (q=0.302, 6818 tok/q) \u2014 Single-entity / comparison factoids \u2192 Vector + rerank.\n\n## Recommendations\n- Ship a query router, not one RAG stack: local factoids vs multi-hop need different paths.\n- LOCAL_FACTOID: Vector + rerank (q=0.30, \u0394=0.03, 6818 tok/q).\n- Usable-answer leader (Semantic (vector), 85%) differs from composite leader (Vector + rerank) \u2014 pick the metric that matches your UX.\n- Highest token cost: Semantic (vector) (6905 tok/q) \u2014 gate behind hard-query classifier.\n- Misses p95\u22645.0s SLO: Semantic (vector), Vector + rerank. Keep interactive path on vector; run graph/hybrid async or on stronger GPUs.\n- Rebuild GraphRAG indexes only on corpus change; amortize index_seconds over expected volume.\n\n## Caveats\n- Eval set size n=20 \u2014 treat rankings as directional, not production SLAs.\n- Overlapping quality CIs are common at this n; trust large gaps (latency/tokens/local EM) over 0.01 composite deltas.\n- Composite mixes EM/F1/judge; generative graph answers often lose on EM even when useful.\n- Absolute latency depends on hardware + model size; use relative ordering for stack choice.\n"
     },
     {
       "id": "graphrag_bench",
       "title": "GraphRAG-Bench Novel",
       "short": "GraphRAG-Bench",
-      "what": "Questions designed to test when graph structure helps (Novel-4128 Pepys diary corpus).",
-      "how_to_read": "If GraphRAG beats semantic here but not on Hotpot, the win is task-specific \u2014 do not generalize without checking Hotpot.",
+      "era": "arXiv:2506.05690 \u00b7 2025\u201326",
+      "what": "Built to answer: when do graph structures help? Tasks scale from fact retrieval \u2192 complex reasoning \u2192 contextual summarize \u2192 creative generation. Literature: graphs often tie or lose on L1 fact lookup; gains concentrate on harder reasoning/summarize.",
+      "how_to_read": "Do not crown GraphRAG from Hotpot averages alone. Filter by question type here; expect vector methods to compete on factoid items.",
+      "paper": "Xiang et al., When to use Graphs in RAG \u00b7 https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
       "meta": {
         "dataset": "GraphRAG-Bench",
         "paper": "Xiang et al., ICLR 2026",
@@ -3082,6 +3298,40 @@
           "method_label": "Frontier"
         }
       ],
+      "lens": [
+        {
+          "method": "frontier_rag",
+          "generative": 0.2285714285714286,
+          "extractive": 0.07519249458024964,
+          "composite": 0.1518819615758391,
+          "n": 7,
+          "method_label": "Frontier"
+        },
+        {
+          "method": "hybrid_rag",
+          "generative": 0.12142857142857143,
+          "extractive": 0.05535273365995314,
+          "composite": 0.08839065254426229,
+          "n": 7,
+          "method_label": "Hybrid"
+        },
+        {
+          "method": "rerank_semantic",
+          "generative": 0.17142857142857143,
+          "extractive": 0.06701178639954146,
+          "composite": 0.11922017891405642,
+          "n": 7,
+          "method_label": "Rerank"
+        },
+        {
+          "method": "semantic_rag",
+          "generative": 0.21857142857142858,
+          "extractive": 0.07418406677104532,
+          "composite": 0.14637774767123693,
+          "n": 7,
+          "method_label": "Semantic"
+        }
+      ],
       "dual": [
         {
           "scenario": "Complex Reasoning",
@@ -3124,14 +3374,41 @@
           "ranking_flips": false
         }
       ],
-      "clear_wins": []
+      "clear_wins": [],
+      "routing": [
+        {
+          "query_type": "hybrid",
+          "scenario": "multi_hop",
+          "recommended_method": "semantic_rag",
+          "recommended_label": "Semantic (vector)",
+          "quality": 0.1068038467397317,
+          "margin_over_next": 0.0067492668133818,
+          "tie_broke_on_cost": true,
+          "tokens_per_query": 4369.714285714285,
+          "guidance": "Bridge / cross-doc multi-hop \u2192 Semantic (vector) (quality tie \u2192 cheaper tokens). mean\u0394=0.007 but H2H 2W-3L \u2192 prefer head-to-head winner"
+        },
+        {
+          "query_type": "local",
+          "scenario": "local_factoid",
+          "recommended_method": "rerank_semantic",
+          "recommended_label": "Vector + rerank",
+          "quality": 0.247704081632653,
+          "margin_over_next": 0.0,
+          "tie_broke_on_cost": true,
+          "tokens_per_query": 4531.0,
+          "guidance": "Single-entity / comparison factoids \u2192 Vector + rerank (quality tie \u2192 cheaper tokens). quality tie \u2192 cheaper tokens"
+        }
+      ],
+      "briefing": "# Engineering scorecard\n\nDefault interactive path: **Vector + rerank**\n- Reason: No method met latency SLO; picking fastest mean latency\n- Quality: 0.119 | usable: 29%\n- p95 latency: 6.78s | tokens/query: 4531\n\n## Routing (by scenario)\n- **multi_hop** \u2192 Semantic (vector) (q=0.107, 4370 tok/q) \u2014 Bridge / cross-doc multi-hop \u2192 Semantic (vector) (quality tie \u2192 cheaper tokens). mean\u0394=0.007 but H2H 2W-3L \u2192 prefer head-to-head winner\n- **local_factoid** \u2192 Vector + rerank (q=0.248, 4531 tok/q) \u2014 Single-entity / comparison factoids \u2192 Vector + rerank (quality tie \u2192 cheaper tokens). quality tie \u2192 cheaper tokens\n\n## Recommendations\n- Ship a query router, not one RAG stack: local factoids vs multi-hop need different paths.\n- MULTI_HOP: Semantic (vector) (q=0.11, \u0394=0.01, 4370 tok/q) [cost tie-break].\n- LOCAL_FACTOID: Vector + rerank (q=0.25, \u0394=0.00, 4531 tok/q) [cost tie-break].\n- Usable-answer leader (Hybrid (vec+graph local), 43%) differs from composite leader (FrontierRAG (adaptive+CRAG)) \u2014 pick the metric that matches your UX.\n- Highest token cost: FrontierRAG (adaptive+CRAG) (6902 tok/q) \u2014 gate behind hard-query classifier.\n- Misses p95\u22645.0s SLO: Semantic (vector), Vector + rerank, Hybrid (vec+graph local), FrontierRAG (adaptive+CRAG). Keep interactive path on vector; run graph/hybrid async or on stronger GPUs.\n- Rebuild GraphRAG indexes only on corpus change; amortize index_seconds over expected volume.\n\n## Caveats\n- Eval set size n=7 \u2014 treat rankings as directional, not production SLAs.\n- Overlapping quality CIs are common at this n; trust large gaps (latency/tokens/local EM) over 0.01 composite deltas.\n- Composite mixes EM/F1/judge; generative graph answers often lose on EM even when useful.\n- Absolute latency depends on hardware + model size; use relative ordering for stack choice.\n"
     },
     {
       "id": "multihop",
       "title": "MultiHop-RAG",
       "short": "MultiHop",
-      "what": "News multi-document reasoning; answers often need several articles.",
-      "how_to_read": "Compare bridge-style multi-doc questions vs single-hop filters.",
+      "era": "2024 news multi-doc",
+      "what": "Multi-document news reasoning. Useful stress test for bridge questions, but GraphRAG-Bench authors argue many \u2018multi-hop\u2019 sets still under-test deep synthesis.",
+      "how_to_read": "Watch generative \u226b extractive (news answers rarely match gold spans).",
+      "paper": "Tang & Yang, 2024 \u00b7 MultiHop-RAG",
       "meta": {
         "dataset": "MultiHop-RAG",
         "paper": "Tang & Yang, COLM 2024",
@@ -3740,6 +4017,40 @@
           "method_label": "Frontier"
         }
       ],
+      "lens": [
+        {
+          "method": "frontier_rag",
+          "generative": 0.4444444444444444,
+          "extractive": 0.0038314176245210665,
+          "composite": 0.22413793103448276,
+          "n": 9,
+          "method_label": "Frontier"
+        },
+        {
+          "method": "hybrid_rag",
+          "generative": 0.5333333333333333,
+          "extractive": 0.0076650943396226225,
+          "composite": 0.27049921383647796,
+          "n": 9,
+          "method_label": "Hybrid"
+        },
+        {
+          "method": "rerank_semantic",
+          "generative": 0.5,
+          "extractive": 0.0038314176245210665,
+          "composite": 0.25191570881226055,
+          "n": 9,
+          "method_label": "Rerank"
+        },
+        {
+          "method": "semantic_rag",
+          "generative": 0.48888888888888893,
+          "extractive": 0.005374255374255367,
+          "composite": 0.24713157213157214,
+          "n": 9,
+          "method_label": "Semantic"
+        }
+      ],
       "dual": [
         {
           "scenario": "comparison_query",
@@ -3772,7 +4083,32 @@
           "ranking_flips": false
         }
       ],
-      "clear_wins": []
+      "clear_wins": [],
+      "routing": [
+        {
+          "query_type": "hybrid",
+          "scenario": "multi_hop",
+          "recommended_method": "semantic_rag",
+          "recommended_label": "Semantic (vector)",
+          "quality": 0.2873640248640248,
+          "margin_over_next": 0.034490461645634,
+          "tie_broke_on_cost": false,
+          "tokens_per_query": 5316.555555555556,
+          "guidance": "Bridge / cross-doc multi-hop \u2192 Semantic (vector)."
+        },
+        {
+          "query_type": "local",
+          "scenario": "local_factoid",
+          "recommended_method": "hybrid_rag",
+          "recommended_label": "Hybrid (vec+graph local)",
+          "quality": 0.3166666666666666,
+          "margin_over_next": 0.0666666666666666,
+          "tie_broke_on_cost": false,
+          "tokens_per_query": 5893.0,
+          "guidance": "Single-entity / comparison factoids \u2192 Hybrid (vec+graph local)."
+        }
+      ],
+      "briefing": "# Engineering scorecard\n\nDefault interactive path: **Vector + rerank**\n- Reason: No method met latency SLO; picking fastest mean latency\n- Quality: 0.252 | usable: 89%\n- p95 latency: 13.10s | tokens/query: 5310\n\n## Routing (by scenario)\n- **multi_hop** \u2192 Semantic (vector) (q=0.287, 5317 tok/q) \u2014 Bridge / cross-doc multi-hop \u2192 Semantic (vector).\n- **local_factoid** \u2192 Hybrid (vec+graph local) (q=0.317, 5893 tok/q) \u2014 Single-entity / comparison factoids \u2192 Hybrid (vec+graph local).\n\n## Recommendations\n- Ship a query router, not one RAG stack: local factoids vs multi-hop need different paths.\n- MULTI_HOP: Semantic (vector) (q=0.29, \u0394=0.03, 5317 tok/q).\n- LOCAL_FACTOID: Hybrid (vec+graph local) (q=0.32, \u0394=0.07, 5893 tok/q).\n- Usable-answer leader (Vector + rerank, 89%) differs from composite leader (Hybrid (vec+graph local)) \u2014 pick the metric that matches your UX.\n- Highest token cost: FrontierRAG (adaptive+CRAG) (7675 tok/q) \u2014 gate behind hard-query classifier.\n- Misses p95\u22645.0s SLO: Semantic (vector), Vector + rerank, Hybrid (vec+graph local), FrontierRAG (adaptive+CRAG). Keep interactive path on vector; run graph/hybrid async or on stronger GPUs.\n- Rebuild GraphRAG indexes only on corpus change; amortize index_seconds over expected volume.\n\n## Caveats\n- Eval set size n=9 \u2014 treat rankings as directional, not production SLAs.\n- Overlapping quality CIs are common at this n; trust large gaps (latency/tokens/local EM) over 0.01 composite deltas.\n- Composite mixes EM/F1/judge; generative graph answers often lose on EM even when useful.\n- Absolute latency depends on hardware + model size; use relative ordering for stack choice.\n"
     }
   ]
 }

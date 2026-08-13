@@ -1,41 +1,27 @@
-# Recent RAG benchmarks (≈2024–2026)
+# Recent RAG research this dashboard encodes (2024–2026)
 
-| Benchmark | Year | Scale in this repo | Status |
-|-----------|------|--------------------|--------|
-| **HotpotQA** distractor | 2018 | **Full validation: 7,405 Q / ~66k docs** | `python scripts/run_hotpot_benchmark.py all` (vector default) |
-| **CodeRAG-Bench** | 2024–25 | **Basic + open-domain: ~2,103 Q / ~35k docs** | HE+MBPP+DS-1000+ODEX · `notebooks/code_rag_bench.ipynb` |
-| **MultiHop-RAG** | 2024 | 150 Q (expandable to 2,556) | `notebooks/multihop_rag_bench.ipynb` |
-| **GraphRAG-Bench** | 2025–26 | Novel-4128 all 72 Q | `notebooks/rag_benchmark.ipynb` |
+| Finding | Source | Dashboard surface |
+|---------|--------|-------------------|
+| Separate retrieval vs generation metrics | RAGAS / DeepEval / 2026 guides | **Research Lens → metric map** (faithfulness & context P/R marked as gaps) |
+| Graphs help by *task difficulty*, not by default | Xiang et al. GraphRAG-Bench (arXiv:2506.05690) | Bench cards + Decision Lab router framing |
+| Hybrid / router beats single paradigm | Systematic RAG vs GraphRAG evals (2025–26) | Routing table + engineering briefing |
+| EM/F1 underestimates generative QA | Qi 2025; LLM-as-judge QA reassessments | Generative vs extractive scatter + dual scoreboard |
+| Code RAG often bottlenecked by retrieval; leave-gold-out required | Wang et al., CodeRAG-Bench, Findings NAACL 2025 | CodeRAG provenance + code-aware metrics note |
+| Quality alone ≠ ship decision | Ops practice (tokens, latency SLOs) | Quality–cost Pareto |
 
-## CodeRAG-Bench (large)
+## Scale in this repo
 
-| Slice | Questions | Corpus |
-|-------|----------:|--------|
-| HumanEval | 164 | programming-solutions (leave-gold-out) |
-| MBPP | 500 | programming-solutions |
-| DS-1000 | 1,000 | library-documentation (~34k) |
-| ODEX | 439 | library-documentation |
-| **Total** | **~2,103** | **~35k docs** |
+| Bench | Indexed | Notes |
+|-------|--------:|-------|
+| HotpotQA distractor | 7,405 Q / ~66k docs | Full val materialised; scored slice may still be partial |
+| CodeRAG-Bench | ~2.1k Q / ~35k docs target | HE+MBPP+DS-1000+ODEX |
+| GraphRAG-Bench Novel | 72 Q | Task-difficulty lens |
+| MultiHop-RAG | 150 Q | News multi-doc |
 
-Optional: `--stackoverflow` adds up to 20k SO posts.
-
-```bash
-python scripts/run_code_rag_benchmark.py
-python scripts/run_code_rag_benchmark.py semantic_rag,rerank_semantic --stackoverflow
-```
-
-## Hotpot full scale
+## Commands
 
 ```bash
-# Full 7405 Q — vector methods (default)
+python scripts/build_dashboard.py
 python scripts/run_hotpot_benchmark.py all
-
-# GraphRAG on full corpus is days/weeks on local 3B — opt-in only:
-python scripts/run_hotpot_benchmark.py all semantic_rag,lazygraph_rag
-```
-
-## Dashboard
-
-```bash
-python scripts/build_dashboard.py   # → results/dashboard.html
+python scripts/run_code_rag_benchmark.py
 ```

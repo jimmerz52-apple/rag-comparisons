@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Build an interactive (Tableau-style) multi-benchmark dashboard for GitHub Pages.
+"""Build a research-grounded interactive RAG dashboard for GitHub Pages.
 
-Outputs:
-  docs/index.html          — GitHub Pages entry (interactive Plotly)
-  results/dashboard.html   — same file for local browsing
-  docs/dashboard_data.json — embedded twin for debugging / external tools
+Incorporates 2024–2026 evaluation practice:
+  - RAGAS-style retrieval vs generation framing (Es et al., 2024+)
+  - Generative vs extractive dual lenses (Hotpot EM/F1 underestimates generative QA)
+  - GraphRAG-Bench: graphs help by task difficulty, not by default (Xiang et al., 2025)
+  - CodeRAG-Bench leave-gold-out + retrieval bottleneck (Wang et al., NAACL 2025)
+  - Systematic finding: hybrid/router > single paradigm (Han et al. / VentureBeat 2026 synthesis)
 
-Rebuild:
-  PYTHONPATH=src python scripts/build_dashboard.py
+Outputs: docs/index.html · results/dashboard.html · docs/dashboard_data.json
 """
 
 from __future__ import annotations
@@ -28,16 +29,17 @@ BENCHES = [
         "short": "Hotpot",
         "results": ROOT / "results",
         "meta": ROOT / "data" / "qa" / "hotpot_meta.json",
+        "era": "2018 classic · still useful, metric-sensitive",
         "what": (
-            "Multi-hop Wikipedia QA (distractor setting). "
-            "Each question needs evidence from ≥2 paragraphs; the corpus also "
-            "includes distractor paragraphs that look related but are not gold."
+            "Multi-hop Wikipedia QA (distractor). Gold answers are short extractive spans. "
+            "Recent critiques (Qi 2025) note EM/F1 punish fluent generative answers that humans "
+            "accept — which is why this dashboard always shows generative vs extractive lenses."
         ),
         "how_to_read": (
-            "Higher composite is better. Tokens/query is cost. "
-            "Graph methods often win on LLM-judge but lose on extractive F1 — "
-            "check Dual scoreboard and the Quality vs Tokens chart."
+            "Prefer composite for a balanced rank; check generative if your UX is chatty prose; "
+            "check extractive if you need short-span fidelity. Ranking flips are expected."
         ),
+        "paper": "Yang et al., EMNLP 2018 · https://hotpotqa.github.io/",
     },
     {
         "id": "code_rag",
@@ -45,16 +47,17 @@ BENCHES = [
         "short": "CodeRAG",
         "results": ROOT / "results_code_rag",
         "meta": ROOT / "data" / "qa" / "code_rag_meta.json",
+        "era": "NAACL Findings 2025",
         "what": (
-            "Code generation with retrieval (Wang et al., NAACL Findings 2025). "
-            "HumanEval / MBPP / DS-1000 / ODEX. Canonical solutions are "
-            "leave-gold-out of the datastore."
+            "Wang et al.: retrieval-augmented code generation across basic programming and "
+            "open-domain tasks. Canonical solutions are leave-gold-out. Paper finding: high-quality "
+            "context helps, but retrievers often fail to fetch it — end-to-end RAG ≠ oracle RAG."
         ),
         "how_to_read": (
-            "Code-aware metrics: contains/judge look for function bodies and "
-            "key tokens, not wiki-style short answers. Prefer composite + "
-            "judge together."
+            "Code-aware contains/judge matter more than wiki-style F1. Compare methods under the "
+            "same datastore; do not treat token F1 as pass@k."
         ),
+        "paper": "Wang et al., Findings NAACL 2025 · https://code-rag-bench.github.io/",
     },
     {
         "id": "graphrag_bench",
@@ -62,14 +65,17 @@ BENCHES = [
         "short": "GraphRAG-Bench",
         "results": ROOT / "results_graphrag_bench",
         "meta": ROOT / "data" / "qa" / "graphrag_bench_meta.json",
+        "era": "arXiv:2506.05690 · 2025–26",
         "what": (
-            "Questions designed to test when graph structure helps "
-            "(Novel-4128 Pepys diary corpus)."
+            "Built to answer: when do graph structures help? Tasks scale from fact retrieval → "
+            "complex reasoning → contextual summarize → creative generation. Literature: graphs "
+            "often tie or lose on L1 fact lookup; gains concentrate on harder reasoning/summarize."
         ),
         "how_to_read": (
-            "If GraphRAG beats semantic here but not on Hotpot, the win is "
-            "task-specific — do not generalize without checking Hotpot."
+            "Do not crown GraphRAG from Hotpot averages alone. Filter by question type here; "
+            "expect vector methods to compete on factoid items."
         ),
+        "paper": "Xiang et al., When to use Graphs in RAG · https://github.com/GraphRAG-Bench/GraphRAG-Benchmark",
     },
     {
         "id": "multihop",
@@ -77,8 +83,13 @@ BENCHES = [
         "short": "MultiHop",
         "results": ROOT / "results_multihop",
         "meta": ROOT / "data" / "qa" / "multihop_meta.json",
-        "what": "News multi-document reasoning; answers often need several articles.",
-        "how_to_read": "Compare bridge-style multi-doc questions vs single-hop filters.",
+        "era": "2024 news multi-doc",
+        "what": (
+            "Multi-document news reasoning. Useful stress test for bridge questions, but "
+            "GraphRAG-Bench authors argue many ‘multi-hop’ sets still under-test deep synthesis."
+        ),
+        "how_to_read": "Watch generative ≫ extractive (news answers rarely match gold spans).",
+        "paper": "Tang & Yang, 2024 · MultiHop-RAG",
     },
 ]
 
@@ -94,83 +105,144 @@ LABELS = {
     "adaptive_rag": "Adaptive",
 }
 
+# RAGAS / 2026 practice mapped onto what this harness actually measures
+METRIC_MAP = [
+    {
+        "ragas": "Answer relevance ≈ LLM judge",
+        "ours": "llm_judge_score",
+        "layer": "Generation",
+        "status": "proxied",
+        "note": "Local judge scores usefulness vs gold. Not identical to RAGAS answer_relevancy (query-conditioned, often reference-free).",
+    },
+    {
+        "ragas": "Faithfulness / groundedness",
+        "ours": "— (gap)",
+        "layer": "Generation",
+        "status": "missing",
+        "note": "2026 guides treat faithfulness as mandatory. This bake-off does not yet score claim-vs-context; do not equate judge with faithfulness.",
+    },
+    {
+        "ragas": "Context precision / recall",
+        "ours": "— (gap)",
+        "layer": "Retrieval",
+        "status": "missing",
+        "note": "Separate retrieval eval (nDCG@k, recall@k) is standard in CodeRAG-Bench and GraphRAG-Bench. End-to-end scores alone hide retrieval failures.",
+    },
+    {
+        "ragas": "Correctness (lexical)",
+        "ours": "token_f1 + exact_match",
+        "layer": "Generation",
+        "status": "covered",
+        "note": "Hotpot-style. Underestimates fluent paraphrases (Qi 2025; LLM-as-judge reassessments 2025).",
+    },
+    {
+        "ragas": "Soft recall / containment",
+        "ours": "contains_answer",
+        "layer": "Generation",
+        "status": "covered",
+        "note": "Loose check that gold (or code body tokens) appear in the prediction.",
+    },
+    {
+        "ragas": "Cost / latency (ops)",
+        "ours": "tokens_per_query, latency",
+        "layer": "Ops",
+        "status": "covered",
+        "note": "Production selection is multi-objective — quality alone is not a ship decision (Braintrust / Atlan 2026 practice).",
+    },
+]
+
 METRIC_DEFS = [
     {
         "id": "composite",
-        "name": "Composite score",
-        "range": "0–1, higher better",
-        "means": (
-            "Primary ranking metric. Blend of LLM-judge (generative quality) and "
-            "token F1 / exact-match style extractive overlap. Use this to pick a "
-            "default method unless your product is judge-only or F1-only."
-        ),
+        "name": "Composite",
+        "range": "0–1 ↑",
+        "means": "Mean of available judge, F1, EM, contains. Default ranker — blends generative and extractive pressure.",
+    },
+    {
+        "id": "generative",
+        "name": "Generative lens",
+        "range": "0–1 ↑",
+        "means": "Judge + contains. Fairer to GraphRAG prose that humans accept but Hotpot F1 punishes.",
+    },
+    {
+        "id": "extractive",
+        "name": "Extractive lens",
+        "range": "0–1 ↑",
+        "means": "Token F1 + EM. Classic Hotpot scoring. Prefer when answers must be short spans.",
     },
     {
         "id": "llm_judge",
         "name": "LLM judge",
-        "range": "0–1, higher better",
-        "means": (
-            "A local judge model scores whether the answer is correct / useful "
-            "relative to gold. Rewards fluent, correct answers even when wording "
-            "differs from gold. Can be generous to chatty graph answers."
-        ),
-    },
-    {
-        "id": "token_f1",
-        "name": "Token F1",
-        "range": "0–1, higher better",
-        "means": (
-            "Token overlap between prediction and gold (classic Hotpot-style). "
-            "Strict: paraphrases score lower. Good for short factual answers."
-        ),
-    },
-    {
-        "id": "contains",
-        "name": "Contains answer",
-        "range": "rate 0–1",
-        "means": (
-            "Fraction of questions where gold (or key gold tokens / code body) "
-            "appears in the prediction. Loose recall-style check."
-        ),
+        "range": "0–1 ↑",
+        "means": "Semantic correctness vs gold. Correlates better with humans than EM on generative QA, but is not faithfulness-to-context.",
     },
     {
         "id": "tokens_per_query",
         "name": "Tokens / query",
-        "range": "count, lower cheaper",
-        "means": (
-            "Average prompt+completion tokens per question. Proxy for $ and "
-            "latency. A method with slightly lower quality but far fewer tokens "
-            "may still be the right production choice."
+        "range": "count ↓",
+        "means": "Cost proxy. Graph global / frontier often win quality on some slices while burning tokens.",
+    },
+]
+
+RESEARCH_FINDINGS = [
+    {
+        "claim": "No single RAG paradigm wins everywhere",
+        "evidence": (
+            "Unified evaluations (RAG vs GraphRAG systematic studies, 2025–26) and GraphRAG-Bench "
+            "show vector RAG competitive on fact lookup; graphs pull ahead on complex reasoning / "
+            "contextual summarize. Hybrid or routed stacks beat either alone."
         ),
+        "dashboard": "Use Decision Lab → generative vs extractive + routing table; don’t pick from one bar chart.",
+        "cites": ["Xiang et al. arXiv:2506.05690", "Han et al. arXiv:2502.11371"],
     },
     {
-        "id": "latency",
-        "name": "Query latency",
-        "range": "seconds, lower faster",
-        "means": "Mean wall-clock time per question after the index exists.",
+        "claim": "Separate retrieval from generation",
+        "evidence": (
+            "RAGAS / DeepEval / 2026 guides: a pipeline can look ‘faithful’ while context recall "
+            "quietly collapses. CodeRAG-Bench explicitly reports retrieval nDCG and end-to-end gen."
+        ),
+        "dashboard": "Metric map marks context precision/recall as gaps — treat end-to-end ranks as provisional.",
+        "cites": ["Es et al. RAGAS 2024", "Wang et al. CodeRAG-Bench 2025"],
     },
     {
-        "id": "dual",
-        "name": "Dual scoreboard / flips",
-        "range": "winner labels",
-        "means": (
-            "Generative winner (judge-heavy) vs composite winner. A flip means "
-            "the metric you optimize changes who wins — do not trust a single "
-            "leaderboard number without checking this."
+        "claim": "EM/F1 under-credit generative answers",
+        "evidence": (
+            "Hotpot-style extractive metrics penalize correct verbose answers. LLM-as-judge closes "
+            "much of the gap to human ratings; dual scoreboards routinely flip winners."
         ),
+        "dashboard": "Dual scoreboard + Generative vs Extractive scatter are first-class, not footnotes.",
+        "cites": ["Qi 2025 (stop-only-Hotpot caution)", "arXiv:2504.11972 LLM-as-judge QA"],
+    },
+    {
+        "claim": "Code RAG bottleneck is often retrieval, not generation",
+        "evidence": (
+            "CodeRAG-Bench: gold docs help even strong models; current retrievers struggle on "
+            "DS-1000 / ODEX / SWE-style tasks. Leave-gold-out is required for honest basic-programming eval."
+        ),
+        "dashboard": "CodeRAG card explains leave-gold-out; expand scored n before claiming production readiness.",
+        "cites": ["Wang et al. Findings NAACL 2025"],
+    },
+    {
+        "claim": "Ship a router, not a religion",
+        "evidence": (
+            "Industry + academic synthesis 2026: route local factoids to vector+rerank; reserve "
+            "graph / frontier for multi-hop or corpus-wide synthesis; watch token/latency SLOs."
+        ),
+        "dashboard": "Routing recommendations + Pareto (quality vs tokens) encode that tradeoff.",
+        "cites": ["VentureBeat GraphRAG synthesis 2026", "this harness engineering_briefing.md"],
     },
 ]
 
 METHOD_DEFS = {
-    "Semantic": "Dense vector retrieval (embeddings) + LLM generate over top-k chunks.",
-    "Rerank": "Semantic retrieve, then cross-encoder / LLM rerank before generate.",
-    "BM25+dense": "Hybrid sparse (BM25) + dense retrieval fused before generate.",
-    "Hybrid": "Graph + vector hybrid path used in this harness.",
-    "GraphRAG fast/basic": "Microsoft GraphRAG-style fast NLP index + basic/local search (not global).",
-    "GraphRAG global": "Community-summary / global GraphRAG search over the knowledge graph.",
-    "GraphRAG local": "Entity-neighborhood local GraphRAG search.",
-    "Frontier": "Adaptive routing + corrective RAG style frontier stack.",
-    "Adaptive": "Query router that picks retrieval strategy per question.",
+    "Semantic": "Dense vector retrieve + generate. Strong baseline for single-hop / local factoids.",
+    "Rerank": "Retrieve then rerank. Often best quality/latency interactive path in this harness.",
+    "BM25+dense": "Sparse+dense fusion. Helps keyword-heavy queries; paper-standard hybrid retriever.",
+    "Hybrid": "Vector + graph local path in this harness.",
+    "GraphRAG fast/basic": "Fast NLP graph index + basic/local search. Often high generative / contains, low F1.",
+    "GraphRAG global": "Community-summary global search. Costly; for corpus-wide themes, not factoids.",
+    "GraphRAG local": "Entity-neighborhood search.",
+    "Frontier": "Adaptive + corrective-style stack — multi-hop candidate in routing table.",
+    "Adaptive": "Per-query router among retrieval strategies.",
 }
 
 
@@ -186,7 +258,6 @@ def _safe_csv(path: Path) -> list[dict]:
     df = pd.read_csv(path)
     if df.empty:
         return []
-    # JSON-safe
     records = []
     for row in df.to_dict(orient="records"):
         clean = {}
@@ -201,10 +272,26 @@ def _safe_csv(path: Path) -> list[dict]:
     return records
 
 
-def _scored_n(accuracy: list[dict]) -> int:
+def _lens_summary(accuracy: list[dict]) -> list[dict]:
     if not accuracy:
-        return 0
-    return len({r.get("question_id") for r in accuracy})
+        return []
+    df = pd.DataFrame(accuracy)
+    if "generative_score" not in df.columns:
+        return []
+    g = (
+        df.groupby("method", as_index=False)
+        .agg(
+            generative=("generative_score", "mean"),
+            extractive=("extractive_score", "mean"),
+            composite=("composite_score", "mean"),
+            n=("question_id", "count"),
+        )
+    )
+    out = []
+    for row in g.to_dict(orient="records"):
+        row["method_label"] = LABELS.get(row["method"], row["method"])
+        out.append(row)
+    return out
 
 
 def collect_payload() -> dict:
@@ -218,7 +305,10 @@ def collect_payload() -> dict:
             accuracy = _safe_csv(spec["results"] / "accuracy_results.csv")
         dual = _safe_csv(spec["results"] / "dual_scoreboard.csv")
         wins = _safe_csv(spec["results"] / "method_clear_wins_composite.csv")
-        scored = _scored_n(accuracy)
+        routing = _safe_csv(spec["results"] / "routing_recommendations.csv")
+        briefing_path = spec["results"] / "engineering_briefing.md"
+        briefing = briefing_path.read_text(encoding="utf-8") if briefing_path.exists() else ""
+        scored = len({r.get("question_id") for r in accuracy}) if accuracy else 0
         indexed_q = meta.get("n_questions")
         for row in summary:
             row["method_label"] = LABELS.get(row.get("method", ""), row.get("method", ""))
@@ -229,657 +319,515 @@ def collect_payload() -> dict:
                 "id": spec["id"],
                 "title": spec["title"],
                 "short": spec["short"],
+                "era": spec["era"],
                 "what": spec["what"],
                 "how_to_read": spec["how_to_read"],
+                "paper": spec["paper"],
                 "meta": {
                     k: v
                     for k, v in meta.items()
-                    if k
-                    not in {
-                        "corpus_dir",
-                        "qa_path",
-                        "catalog_path",
-                    }
+                    if k not in {"corpus_dir", "qa_path", "catalog_path"}
                 },
                 "indexed_questions": indexed_q,
                 "indexed_documents": meta.get("n_documents"),
                 "scored_questions": scored,
-                "scores_are_partial": bool(
-                    indexed_q and scored and scored < int(indexed_q)
-                ),
+                "scores_are_partial": bool(indexed_q and scored and scored < int(indexed_q)),
                 "status": "scored" if summary else "corpus only",
                 "summary": summary,
                 "accuracy": accuracy,
+                "lens": _lens_summary(accuracy),
                 "dual": dual,
                 "clear_wins": wins[:40],
+                "routing": routing,
+                "briefing": briefing[:2500],
             }
         )
     return {
         "generated_at": now,
         "repo": "rag-comparisons",
+        "research_version": "2026-08 research-refined",
         "metric_defs": METRIC_DEFS,
+        "metric_map": METRIC_MAP,
+        "research_findings": RESEARCH_FINDINGS,
         "method_defs": METHOD_DEFS,
         "benches": benches,
     }
 
 
-HTML_TEMPLATE = r"""<!DOCTYPE html>
+HTML = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RAG Benchmark Dashboard</title>
+<title>RAG Benchmark · Research Dashboard</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
 :root {
-  --bg: #f4f6f8;
-  --panel: #ffffff;
-  --text: #1a1d23;
-  --muted: #5c6570;
-  --line: #d8dee6;
-  --accent: #1f6feb;
-  --accent-soft: #e8f0fe;
-  --ok: #0d7a4f;
-  --warn: #9a6700;
-  --warn-bg: #fff8c5;
-  --danger: #cf222e;
-  --chip: #eef1f5;
-  --shadow: 0 1px 2px rgba(16,24,40,.06), 0 8px 24px rgba(16,24,40,.06);
-  --font: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --bg:#f3f5f7; --panel:#fff; --text:#15202b; --muted:#5b6572; --line:#d7dde5;
+  --accent:#0b5fff; --soft:#e8f0ff; --warn:#9a6700; --warnbg:#fff8c5;
+  --ok:#0f6d45; --gap:#8a2f2f; --gapbg:#ffe8e8; --cov:#0f6d45; --covbg:#e6f6ee;
+  --font:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 10px 28px rgba(16,24,40,.06);
 }
-* { box-sizing: border-box; }
-body {
-  margin: 0; color: var(--text); background: var(--bg);
-  font: 14px/1.5 var(--font);
-}
-a { color: var(--accent); }
-.top {
-  background: linear-gradient(180deg, #0b1f3a 0%, #123056 100%);
-  color: #eef3ff; padding: 28px 28px 22px;
-}
-.top h1 { margin: 0 0 6px; font-size: 26px; font-weight: 650; letter-spacing: -0.02em; }
-.top .sub { margin: 0; opacity: .85; max-width: 920px; }
-.top .meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.chip {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 4px 10px; border-radius: 999px; font-size: 12px;
-  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18);
-}
-.layout {
-  display: grid; grid-template-columns: 280px 1fr;
-  gap: 16px; padding: 16px; max-width: 1400px; margin: 0 auto;
-}
-@media (max-width: 960px) {
-  .layout { grid-template-columns: 1fr; }
-}
-.panel {
-  background: var(--panel); border: 1px solid var(--line);
-  border-radius: 12px; box-shadow: var(--shadow); padding: 14px 16px;
-}
-.sidebar { position: sticky; top: 12px; align-self: start; max-height: calc(100vh - 24px); overflow: auto; }
-.sidebar h2, .main h2 {
-  margin: 0 0 8px; font-size: 13px; text-transform: uppercase;
-  letter-spacing: .06em; color: var(--muted); font-weight: 700;
-}
-label { display: block; font-size: 12px; color: var(--muted); margin: 12px 0 4px; font-weight: 600; }
-select, input[type="search"] {
-  width: 100%; padding: 8px 10px; border-radius: 8px;
-  border: 1px solid var(--line); background: #fff; font: inherit;
-}
-.help {
-  font-size: 12px; color: var(--muted); margin-top: 10px;
-  padding: 10px; background: var(--chip); border-radius: 8px;
-}
-.callout {
-  border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;
-  border: 1px solid var(--line); background: var(--accent-soft);
-}
-.callout.warn { background: var(--warn-bg); border-color: #e2c56e; }
-.callout strong { display: block; margin-bottom: 4px; }
-.stats {
-  display: grid; grid-template-columns: repeat(4, minmax(0,1fr));
-  gap: 10px; margin-bottom: 14px;
-}
-@media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
-.stat {
-  background: var(--panel); border: 1px solid var(--line);
-  border-radius: 10px; padding: 12px 14px;
-}
-.stat .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-.stat .v { font-size: 22px; font-weight: 700; margin-top: 2px; font-variant-numeric: tabular-nums; }
-.stat .h { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.grid2 { display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; }
-.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-@media (max-width: 1100px) {
-  .grid2, .grid3 { grid-template-columns: 1fr; }
-}
-.chart { min-height: 340px; }
-.chart.tall { min-height: 420px; }
-.table-wrap { overflow: auto; max-height: 420px; border: 1px solid var(--line); border-radius: 8px; }
-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
-th { position: sticky; top: 0; background: #f8fafc; color: var(--muted); font-weight: 700; }
-tr:hover td { background: #f5f8ff; cursor: pointer; }
-tr.active td { background: var(--accent-soft); }
-.glossary details { border-top: 1px solid var(--line); padding: 8px 0; }
-.glossary summary { cursor: pointer; font-weight: 600; }
-.glossary p { margin: 6px 0 0; color: var(--muted); font-size: 12px; }
-.footer {
-  max-width: 1400px; margin: 0 auto; padding: 8px 16px 28px;
-  color: var(--muted); font-size: 12px;
-}
-.method-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.method-pill {
-  font-size: 11px; padding: 3px 8px; border-radius: 999px;
-  background: var(--chip); border: 1px solid var(--line); cursor: pointer;
-}
-.method-pill.on { background: var(--accent); color: #fff; border-color: var(--accent); }
-.btn-row { display: flex; gap: 8px; margin-top: 10px; }
-button {
-  border: 1px solid var(--line); background: #fff; border-radius: 8px;
-  padding: 7px 10px; font: inherit; cursor: pointer;
-}
-button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-.muted { color: var(--muted); }
-code { font-family: var(--mono); font-size: 12px; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--font)}
+a{color:var(--accent)}
+.hero{background:#0a1628;color:#eef3ff;padding:28px 28px 18px}
+.hero h1{margin:0 0 8px;font-size:28px;letter-spacing:-.02em}
+.hero p{margin:0;max-width:980px;opacity:.9}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08)}
+.tabs{display:flex;gap:6px;padding:12px 16px 0;max-width:1440px;margin:0 auto}
+.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;cursor:pointer;font:inherit}
+.tab.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.layout{display:grid;grid-template-columns:270px 1fr;gap:14px;padding:14px 16px 28px;max-width:1440px;margin:0 auto}
+@media(max-width:980px){.layout{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px}
+.sidebar{position:sticky;top:10px;align-self:start;max-height:calc(100vh - 20px);overflow:auto}
+h2{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+label{display:block;font-size:12px;color:var(--muted);margin:12px 0 4px;font-weight:650}
+select,input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font:inherit}
+.help{margin-top:10px;padding:10px;background:#eef2f6;border-radius:8px;font-size:12px;color:var(--muted)}
+.callout{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:12px 14px;margin-bottom:12px}
+.callout.warn{background:var(--warnbg);border-color:#e2c56e}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+@media(max-width:900px){.stats{grid-template-columns:1fr 1fr}}
+.stat{border:1px solid var(--line);border-radius:10px;padding:12px;background:#fff}
+.stat .k{font-size:11px;color:var(--muted);text-transform:uppercase}
+.stat .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.grid2{display:grid;grid-template-columns:1.15fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:1100px){.grid2,.grid3{grid-template-columns:1fr}}
+.chart{min-height:340px}.chart.tall{min-height:400px}
+.table-wrap{overflow:auto;max-height:420px;border:1px solid var(--line);border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:#f7f9fc;color:var(--muted)}
+.method-list{display:flex;flex-wrap:wrap;gap:6px}
+.method-pill{font-size:11px;padding:3px 8px;border-radius:999px;background:#eef2f6;border:1px solid var(--line);cursor:pointer}
+.method-pill.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-row{display:flex;gap:8px;margin-top:10px}
+button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 10px;font:inherit;cursor:pointer}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:999px;font-weight:700;text-transform:uppercase}
+.badge.covered{background:var(--covbg);color:var(--cov)}
+.badge.proxied{background:var(--soft);color:var(--accent)}
+.badge.missing{background:var(--gapbg);color:var(--gap)}
+.finding{border-left:3px solid var(--accent);padding:8px 0 8px 12px;margin:12px 0}
+.finding h3{margin:0 0 4px;font-size:14px}
+.finding .cites{font-size:11px;color:var(--muted);font-family:var(--mono)}
+.muted{color:var(--muted)}
+.view{display:none}.view.on{display:block}
+.footer{max-width:1440px;margin:0 auto;padding:0 16px 28px;color:var(--muted);font-size:12px}
+details{border-top:1px solid var(--line);padding:8px 0}
+summary{cursor:pointer;font-weight:650}
+code{font-family:var(--mono);font-size:12px}
+pre.brief{white-space:pre-wrap;font:12px/1.45 var(--mono);background:#0a1628;color:#d7e2ff;padding:12px;border-radius:8px;max-height:280px;overflow:auto}
 </style>
 </head>
 <body>
-<header class="top">
-  <h1>RAG Benchmark Dashboard</h1>
-  <p class="sub">
-    Interactive comparison of retrieval methods (semantic, hybrid, GraphRAG, …)
-    across HotpotQA, CodeRAG-Bench, GraphRAG-Bench, and MultiHop-RAG.
-    Filter like Tableau: pick a benchmark, metric, and methods — charts and the
-    question table update together.
+<header class="hero">
+  <h1>RAG Benchmark · Research Dashboard</h1>
+  <p>
+    Interactive bake-off grounded in 2024–2026 RAG evaluation practice:
+    retrieval vs generation layers, generative vs extractive lenses, and
+    “when graphs help” rather than a single winner chart.
   </p>
-  <div class="meta-row">
+  <div class="chips">
     <span class="chip" id="genChip">Generated —</span>
-    <span class="chip">Higher quality ↑ · Lower tokens/latency ↓</span>
-    <span class="chip">GitHub Pages live view</span>
+    <span class="chip">RAGAS-aligned metric map</span>
+    <span class="chip">GraphRAG-Bench task difficulty</span>
+    <span class="chip">CodeRAG leave-gold-out</span>
   </div>
 </header>
+
+<div class="tabs">
+  <button class="tab on" data-view="explore">Explore</button>
+  <button class="tab" data-view="decision">Decision Lab</button>
+  <button class="tab" data-view="research">Research Lens</button>
+</div>
 
 <div class="layout">
   <aside class="panel sidebar">
     <h2>Controls</h2>
     <label for="bench">Benchmark</label>
     <select id="bench"></select>
-
-    <label for="metric">Primary metric (Y / bars)</label>
+    <label for="metric">Primary metric</label>
     <select id="metric">
-      <option value="mean_composite_score">Composite (recommended)</option>
+      <option value="mean_composite_score">Composite (default rank)</option>
       <option value="mean_llm_judge">LLM judge</option>
       <option value="mean_token_f1">Token F1</option>
-      <option value="contains_answer_rate">Contains answer rate</option>
-      <option value="tokens_per_query">Tokens / query (cost)</option>
-      <option value="mean_query_latency_seconds">Mean latency (s)</option>
+      <option value="contains_answer_rate">Contains rate</option>
+      <option value="tokens_per_query">Tokens / query</option>
+      <option value="mean_query_latency_seconds">Latency (s)</option>
     </select>
-
-    <label for="qtype">Question type filter</label>
+    <label for="qtype">Question type</label>
     <select id="qtype"><option value="__all__">All types</option></select>
-
-    <label>Methods (click to toggle)</label>
+    <label>Methods</label>
     <div class="method-list" id="methods"></div>
     <div class="btn-row">
       <button type="button" id="allMethods">All</button>
       <button type="button" id="noneMethods">None</button>
       <button type="button" class="primary" id="reset">Reset</button>
     </div>
-
     <div class="help" id="metricHelp"></div>
-
-    <h2 style="margin-top:18px">What the metrics mean</h2>
-    <div class="glossary" id="glossary"></div>
-
-    <h2 style="margin-top:18px">Methods</h2>
-    <div class="glossary" id="methodGlossary"></div>
+    <h2 style="margin-top:16px">Metric glossary</h2>
+    <div id="glossary"></div>
   </aside>
 
-  <main class="main">
-    <div id="provenance" class="callout"></div>
-    <div class="stats" id="stats"></div>
-
-    <div class="grid2">
-      <div class="panel">
-        <h2>Leaderboard</h2>
-        <p class="muted" style="margin-top:0">Click a bar to focus that method in the question table.</p>
-        <div id="barChart" class="chart"></div>
+  <main>
+    <section class="view on" id="view-explore">
+      <div id="provenance" class="callout"></div>
+      <div class="stats" id="stats"></div>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Leaderboard</h2>
+          <p class="muted" style="margin:0 0 8px">Click a bar to focus the explorer. Cost metrics sort ascending.</p>
+          <div id="barChart" class="chart"></div>
+        </div>
+        <div class="panel">
+          <h2>Quality–cost Pareto</h2>
+          <p class="muted" style="margin:0 0 8px">Ideal region: high composite, low tokens (top-left).</p>
+          <div id="scatterChart" class="chart"></div>
+        </div>
       </div>
-      <div class="panel">
-        <h2>Quality vs cost</h2>
-        <p class="muted" style="margin-top:0">X = tokens/query (cheaper left). Y = composite. Ideal = top-left.</p>
-        <div id="scatterChart" class="chart"></div>
+      <div class="grid2" style="margin-top:12px">
+        <div class="panel">
+          <h2>Per-question composite spread</h2>
+          <div id="boxChart" class="chart tall"></div>
+        </div>
+        <div class="panel">
+          <h2>Normalized metric heatmap</h2>
+          <div id="heatChart" class="chart tall"></div>
+        </div>
       </div>
-    </div>
-
-    <div class="grid2" style="margin-top:14px">
-      <div class="panel">
-        <h2>Per-question score distribution</h2>
-        <p class="muted" style="margin-top:0">Box = spread of composite across questions. Hover for quartiles.</p>
-        <div id="boxChart" class="chart tall"></div>
+      <div class="panel" style="margin-top:12px">
+        <h2>Per-question explorer</h2>
+        <input type="search" id="qsearch" placeholder="Filter question id / type…"/>
+        <div class="table-wrap" style="margin-top:10px" id="qTable"></div>
       </div>
-      <div class="panel">
-        <h2>Metric heatmap</h2>
-        <p class="muted" style="margin-top:0">Normalized 0–1 within each column so cost and quality share a scale.</p>
-        <div id="heatChart" class="chart tall"></div>
+    </section>
+
+    <section class="view" id="view-decision">
+      <div class="callout">
+        <strong>Decision Lab — research default is a router</strong>
+        Systematic 2025–26 evaluations: vector RAG for local factoids; graph / frontier for harder multi-hop
+        and synthesis; always check generative vs extractive because they disagree.
       </div>
-    </div>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Generative vs extractive (dual lens)</h2>
+          <p class="muted" style="margin:0 0 8px">
+            Above the diagonal → chatty/useful answers that Hotpot F1 under-credits.
+            Below → span-faithful but maybe less helpful prose.
+          </p>
+          <div id="lensChart" class="chart tall"></div>
+        </div>
+        <div class="panel">
+          <h2>Dual scoreboard</h2>
+          <div class="table-wrap" id="dualTable"></div>
+          <h2 style="margin-top:16px">Routing recommendations</h2>
+          <div class="table-wrap" id="routeTable"></div>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:12px">
+        <h2>Engineering briefing</h2>
+        <pre class="brief" id="briefing"></pre>
+      </div>
+      <div class="panel" style="margin-top:12px">
+        <h2>Clear wins (composite margin ≥ 0.12)</h2>
+        <div class="table-wrap" id="winsTable"></div>
+      </div>
+    </section>
 
-    <div class="panel" style="margin-top:14px">
-      <h2>Dual scoreboard (generative vs composite)</h2>
-      <p class="muted" style="margin-top:0">
-        If winners differ, optimizing “sounds right” vs “matches gold tokens” picks different systems.
-      </p>
-      <div class="table-wrap" id="dualTable"></div>
-    </div>
-
-    <div class="panel" style="margin-top:14px">
-      <h2>Per-question explorer</h2>
-      <p class="muted" style="margin-top:0">
-        Search or click a row. Sorted by selected method’s composite (desc).
-      </p>
-      <input type="search" id="qsearch" placeholder="Filter question id / type…"/>
-      <div class="table-wrap" style="margin-top:10px" id="qTable"></div>
-    </div>
-
-    <div class="panel" style="margin-top:14px">
-      <h2>Clear wins (composite margin ≥ 0.12 vs both rivals)</h2>
-      <p class="muted" style="margin-top:0">
-        Stricter than “highest average.” Empty = no method dominated the core trio on that slice.
-      </p>
-      <div class="table-wrap" id="winsTable"></div>
-    </div>
+    <section class="view" id="view-research">
+      <div class="panel">
+        <h2>How this harness maps to 2026 RAG eval practice</h2>
+        <p class="muted">
+          Industry stacks (RAGAS, DeepEval, TruLens) separate <em>retrieval</em> (context precision/recall)
+          from <em>generation</em> (faithfulness, answer relevance). We map our scores honestly — including gaps.
+        </p>
+        <div class="table-wrap" id="mapTable"></div>
+      </div>
+      <div class="panel" style="margin-top:12px">
+        <h2>Research findings this UI is designed around</h2>
+        <div id="findings"></div>
+      </div>
+      <div class="panel" style="margin-top:12px">
+        <h2>Method definitions</h2>
+        <div id="methodGlossary"></div>
+      </div>
+    </section>
   </main>
 </div>
 
 <footer class="footer">
-  Rebuild locally: <code>PYTHONPATH=src python scripts/build_dashboard.py</code>
-  · Source data: <code>results*/summary.csv</code> + <code>accuracy_enriched.csv</code>
-  · This page is static + Plotly.js (works on GitHub Pages).
+  Rebuild: <code>PYTHONPATH=src python scripts/build_dashboard.py</code>
+  · Live Pages: GitHub Actions → <code>docs/</code>
+  · Not a substitute for retrieval-only nDCG / faithfulness until those metrics are wired in.
 </footer>
 
 <script id="dashboard-data" type="application/json">__DATA_JSON__</script>
 <script>
 const DATA = JSON.parse(document.getElementById('dashboard-data').textContent);
+const COSTISH = new Set(['tokens_per_query','mean_query_latency_seconds']);
 const METRIC_LABEL = {
-  mean_composite_score: 'Composite',
-  mean_llm_judge: 'LLM judge',
-  mean_token_f1: 'Token F1',
-  contains_answer_rate: 'Contains rate',
-  tokens_per_query: 'Tokens / query',
-  mean_query_latency_seconds: 'Latency (s)',
+  mean_composite_score:'Composite', mean_llm_judge:'LLM judge', mean_token_f1:'Token F1',
+  contains_answer_rate:'Contains rate', tokens_per_query:'Tokens / query',
+  mean_query_latency_seconds:'Latency (s)',
 };
-const COSTISH = new Set(['tokens_per_query', 'mean_query_latency_seconds']);
+const state = { benchId: DATA.benches[0]?.id, metric:'mean_composite_score', qtype:'__all__', methods:new Set(), focusMethod:null, search:'' };
 
-const state = {
-  benchId: DATA.benches[0]?.id,
-  metric: 'mean_composite_score',
-  qtype: '__all__',
-  methods: new Set(),
-  focusMethod: null,
-  search: '',
-};
-
-function bench() {
-  return DATA.benches.find(b => b.id === state.benchId) || DATA.benches[0];
+function bench(){ return DATA.benches.find(b=>b.id===state.benchId)||DATA.benches[0]; }
+function labelOf(m){ return (bench().summary||[]).find(r=>r.method===m)?.method_label || m; }
+function plotLayout(extra){
+  return Object.assign({margin:{t:28,r:16,b:64,l:56},paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+    font:{family:'Source Sans 3, Segoe UI, sans-serif',size:12,color:'#15202b'},hovermode:'closest'}, extra||{});
 }
 
-function labelOf(method) {
-  const row = (bench().summary || []).find(r => r.method === method);
-  return row?.method_label || method;
-}
+document.querySelectorAll('.tab').forEach(tab=>{
+  tab.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+    document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
+    tab.classList.add('on');
+    document.getElementById('view-'+tab.dataset.view).classList.add('on');
+    // reflow plots when tab becomes visible
+    setTimeout(()=>window.dispatchEvent(new Event('resize')), 50);
+    if(tab.dataset.view==='decision') renderDecision();
+    if(tab.dataset.view==='research') renderResearch();
+  };
+});
 
-function initControls() {
-  document.getElementById('genChip').textContent = 'Generated ' + DATA.generated_at;
-  const sel = document.getElementById('bench');
-  sel.innerHTML = DATA.benches.map(b =>
-    `<option value="${b.id}">${b.title} (${b.scored_questions || 0} scored)</option>`
+function init(){
+  document.getElementById('genChip').textContent = DATA.research_version + ' · ' + DATA.generated_at;
+  const sel=document.getElementById('bench');
+  sel.innerHTML = DATA.benches.map(b=>`<option value="${b.id}">${b.title} · ${b.scored_questions||0} scored</option>`).join('');
+  sel.value=state.benchId;
+  sel.onchange=()=>{state.benchId=sel.value; state.focusMethod=null; syncMethods(true); render();};
+  document.getElementById('metric').onchange=e=>{state.metric=e.target.value; updateHelp(); render();};
+  document.getElementById('qtype').onchange=e=>{state.qtype=e.target.value; render();};
+  document.getElementById('qsearch').oninput=e=>{state.search=e.target.value.trim().toLowerCase(); renderQTable();};
+  document.getElementById('allMethods').onclick=()=>{state.methods=new Set((bench().summary||[]).map(r=>r.method)); render();};
+  document.getElementById('noneMethods').onclick=()=>{state.methods=new Set(); render();};
+  document.getElementById('reset').onclick=()=>{
+    state.metric='mean_composite_score'; state.qtype='__all__'; state.focusMethod=null; state.search='';
+    document.getElementById('metric').value=state.metric; document.getElementById('qsearch').value='';
+    syncMethods(true); render();
+  };
+  document.getElementById('glossary').innerHTML = DATA.metric_defs.map(m=>
+    `<details><summary>${m.name} <span class="muted">${m.range}</span></summary><p class="muted">${m.means}</p></details>`
   ).join('');
-  sel.value = state.benchId;
-  sel.onchange = () => { state.benchId = sel.value; state.focusMethod = null; syncMethods(); render(); };
-
-  document.getElementById('metric').onchange = (e) => {
-    state.metric = e.target.value; updateMetricHelp(); render();
-  };
-  document.getElementById('qtype').onchange = (e) => { state.qtype = e.target.value; render(); };
-  document.getElementById('qsearch').oninput = (e) => { state.search = e.target.value.trim().toLowerCase(); renderQuestionTable(); };
-  document.getElementById('allMethods').onclick = () => {
-    state.methods = new Set((bench().summary || []).map(r => r.method));
-    render();
-  };
-  document.getElementById('noneMethods').onclick = () => { state.methods = new Set(); render(); };
-  document.getElementById('reset').onclick = () => {
-    state.metric = 'mean_composite_score';
-    state.qtype = '__all__';
-    state.focusMethod = null;
-    state.search = '';
-    document.getElementById('metric').value = state.metric;
-    document.getElementById('qsearch').value = '';
-    syncMethods(true);
-    render();
-  };
-
-  const g = document.getElementById('glossary');
-  g.innerHTML = DATA.metric_defs.map(m =>
-    `<details><summary>${m.name} <span class="muted">(${m.range})</span></summary><p>${m.means}</p></details>`
-  ).join('');
-  const mg = document.getElementById('methodGlossary');
-  mg.innerHTML = Object.entries(DATA.method_defs).map(([k,v]) =>
-    `<details><summary>${k}</summary><p>${v}</p></details>`
-  ).join('');
-  updateMetricHelp();
-  syncMethods(true);
+  updateHelp(); syncMethods(true); render(); renderResearch();
 }
 
-function updateMetricHelp() {
-  const map = {
-    mean_composite_score: DATA.metric_defs.find(m => m.id === 'composite'),
-    mean_llm_judge: DATA.metric_defs.find(m => m.id === 'llm_judge'),
-    mean_token_f1: DATA.metric_defs.find(m => m.id === 'token_f1'),
-    contains_answer_rate: DATA.metric_defs.find(m => m.id === 'contains'),
-    tokens_per_query: DATA.metric_defs.find(m => m.id === 'tokens_per_query'),
-    mean_query_latency_seconds: DATA.metric_defs.find(m => m.id === 'latency'),
-  };
-  const d = map[state.metric];
-  document.getElementById('metricHelp').innerHTML = d
-    ? `<strong>${d.name}</strong><br/>${d.means}`
-    : '';
+function updateHelp(){
+  const map={mean_composite_score:'composite',mean_llm_judge:'llm_judge',mean_token_f1:'extractive',
+    contains_answer_rate:'generative',tokens_per_query:'tokens_per_query',mean_query_latency_seconds:'tokens_per_query'};
+  const d=DATA.metric_defs.find(x=>x.id===map[state.metric]);
+  document.getElementById('metricHelp').innerHTML = d?`<strong>${d.name}</strong><br>${d.means}`:'';
 }
 
-function syncMethods(selectAll) {
-  const rows = bench().summary || [];
-  if (selectAll || state.methods.size === 0) {
-    state.methods = new Set(rows.map(r => r.method));
-  } else {
-    const allowed = new Set(rows.map(r => r.method));
-    state.methods = new Set([...state.methods].filter(m => allowed.has(m)));
-    if (state.methods.size === 0) state.methods = new Set(allowed);
+function syncMethods(selectAll){
+  const rows=bench().summary||[];
+  if(selectAll||!state.methods.size) state.methods=new Set(rows.map(r=>r.method));
+  else {
+    const allow=new Set(rows.map(r=>r.method));
+    state.methods=new Set([...state.methods].filter(m=>allow.has(m)));
+    if(!state.methods.size) state.methods=new Set(allow);
   }
-  const types = new Set();
-  for (const r of (bench().accuracy || [])) {
-    if (r.query_type) types.add(r.query_type);
-    if (r.code_rag_type) types.add(r.code_rag_type);
-    if (r.hotpot_type) types.add(r.hotpot_type);
+  const types=new Set();
+  for(const r of (bench().accuracy||[])){
+    [r.query_type,r.code_rag_type,r.hotpot_type,r.graphrag_bench_type,r.multihop_type].forEach(t=>t&&types.add(t));
   }
-  const qt = document.getElementById('qtype');
-  const prev = state.qtype;
-  qt.innerHTML = `<option value="__all__">All types</option>` +
-    [...types].sort().map(t => `<option value="${t}">${t}</option>`).join('');
-  state.qtype = [...types].includes(prev) ? prev : '__all__';
-  qt.value = state.qtype;
-
-  const box = document.getElementById('methods');
-  box.innerHTML = rows.map(r => {
-    const on = state.methods.has(r.method) ? 'on' : '';
-    return `<span class="method-pill ${on}" data-m="${r.method}">${r.method_label}</span>`;
-  }).join('');
-  box.querySelectorAll('.method-pill').forEach(el => {
-    el.onclick = () => {
-      const m = el.dataset.m;
-      if (state.methods.has(m)) state.methods.delete(m); else state.methods.add(m);
-      el.classList.toggle('on');
-      render();
-    };
+  const qt=document.getElementById('qtype'); const prev=state.qtype;
+  qt.innerHTML=`<option value="__all__">All types</option>`+[...types].sort().map(t=>`<option value="${t}">${t}</option>`).join('');
+  state.qtype=[...types].includes(prev)?prev:'__all__'; qt.value=state.qtype;
+  const box=document.getElementById('methods');
+  box.innerHTML=rows.map(r=>`<span class="method-pill ${state.methods.has(r.method)?'on':''}" data-m="${r.method}">${r.method_label}</span>`).join('');
+  box.querySelectorAll('.method-pill').forEach(el=>{
+    el.onclick=()=>{const m=el.dataset.m; state.methods.has(m)?state.methods.delete(m):state.methods.add(m); render();};
   });
 }
 
-function filteredSummary() {
-  return (bench().summary || []).filter(r => state.methods.has(r.method));
-}
-
-function filteredAccuracy() {
-  let rows = (bench().accuracy || []).filter(r => state.methods.has(r.method));
-  if (state.qtype !== '__all__') {
-    rows = rows.filter(r =>
-      r.query_type === state.qtype ||
-      r.code_rag_type === state.qtype ||
-      r.hotpot_type === state.qtype
-    );
+function filteredSummary(){ return (bench().summary||[]).filter(r=>state.methods.has(r.method)); }
+function filteredAccuracy(){
+  let rows=(bench().accuracy||[]).filter(r=>state.methods.has(r.method));
+  if(state.qtype!=='__all__'){
+    rows=rows.filter(r=>[r.query_type,r.code_rag_type,r.hotpot_type,r.graphrag_bench_type,r.multihop_type].includes(state.qtype));
   }
   return rows;
 }
 
-function renderProvenance() {
-  const b = bench();
-  const el = document.getElementById('provenance');
-  const partial = b.scores_are_partial;
-  el.className = 'callout' + (partial ? ' warn' : '');
-  el.innerHTML = `
-    <strong>${b.title}</strong>
-    <div>${b.what}</div>
+function renderProvenance(){
+  const b=bench();
+  const el=document.getElementById('provenance');
+  el.className='callout'+(b.scores_are_partial?' warn':'');
+  el.innerHTML=`<strong>${b.title}</strong> <span class="muted">· ${b.era}</span>
+    <div style="margin-top:6px">${b.what}</div>
     <div style="margin-top:8px"><em>How to read:</em> ${b.how_to_read}</div>
-    <div style="margin-top:8px">
-      Indexed: <strong>${b.indexed_questions ?? '—'}</strong> questions /
-      <strong>${b.indexed_documents ?? '—'}</strong> docs
-      · Currently scored in this dashboard:
-      <strong>${b.scored_questions || 0}</strong> questions
-      ${partial ? ' · <span style="color:var(--warn)">Scores are a subset — full-scale run still in progress or not yet written to results/</span>' : ''}
-    </div>
-  `;
-  document.getElementById('stats').innerHTML = `
-    <div class="stat"><div class="k">Indexed Q</div><div class="v">${b.indexed_questions ?? '—'}</div><div class="h">on disk corpus</div></div>
-    <div class="stat"><div class="k">Indexed docs</div><div class="v">${b.indexed_documents ?? '—'}</div><div class="h">retrieval corpus</div></div>
-    <div class="stat"><div class="k">Scored Q</div><div class="v">${b.scored_questions || 0}</div><div class="h">in summary/accuracy CSVs</div></div>
-    <div class="stat"><div class="k">Methods</div><div class="v">${(b.summary||[]).length}</div><div class="h">${b.status}</div></div>
-  `;
+    <div style="margin-top:8px" class="muted">${b.paper}</div>
+    <div style="margin-top:8px">Indexed <strong>${b.indexed_questions??'—'}</strong> Q /
+      <strong>${b.indexed_documents??'—'}</strong> docs · Scored here
+      <strong>${b.scored_questions||0}</strong>
+      ${b.scores_are_partial?' · <span style="color:var(--warn)">partial scores — full run still landing</span>':''}
+    </div>`;
+  document.getElementById('stats').innerHTML=`
+    <div class="stat"><div class="k">Indexed Q</div><div class="v">${b.indexed_questions??'—'}</div></div>
+    <div class="stat"><div class="k">Docs</div><div class="v">${b.indexed_documents??'—'}</div></div>
+    <div class="stat"><div class="k">Scored Q</div><div class="v">${b.scored_questions||0}</div></div>
+    <div class="stat"><div class="k">Methods</div><div class="v">${(b.summary||[]).length}</div></div>`;
 }
 
-function plotLayout(extra) {
-  return Object.assign({
-    margin: { t: 24, r: 16, b: 64, l: 56 },
-    paper_bgcolor: 'rgba(0,0,0,0)',
-    plot_bgcolor: 'rgba(0,0,0,0)',
-    font: { family: 'IBM Plex Sans, Segoe UI, sans-serif', size: 12, color: '#1a1d23' },
-    hovermode: 'closest',
-  }, extra || {});
-}
-
-function renderBar() {
-  const rows = filteredSummary().slice().sort((a,b) => {
-    const av = a[state.metric] ?? -Infinity;
-    const bv = b[state.metric] ?? -Infinity;
-    return COSTISH.has(state.metric) ? av - bv : bv - av;
+function renderBar(){
+  const rows=filteredSummary().slice().sort((a,b)=>{
+    const av=a[state.metric]??-1e9, bv=b[state.metric]??-1e9;
+    return COSTISH.has(state.metric)?av-bv:bv-av;
   });
-  const y = rows.map(r => r.method_label);
-  const x = rows.map(r => r[state.metric]);
-  const colors = rows.map(r => r.method === state.focusMethod ? '#0b3d91' : '#1f6feb');
-  Plotly.newPlot('barChart', [{
-    type: 'bar', orientation: 'h',
-    y, x, marker: { color: colors },
-    customdata: rows.map(r => r.method),
-    hovertemplate: '%{y}<br>' + METRIC_LABEL[state.metric] + ': %{x:.3f}<extra></extra>',
-  }], plotLayout({
-    yaxis: { autorange: 'reversed' },
-    xaxis: { title: METRIC_LABEL[state.metric] },
-  }), {responsive: true, displayModeBar: true});
-
-  document.getElementById('barChart').on('plotly_click', (ev) => {
-    const m = ev.points?.[0]?.customdata;
-    if (!m) return;
-    state.focusMethod = state.focusMethod === m ? null : m;
-    render();
+  Plotly.newPlot('barChart',[{
+    type:'bar', orientation:'h',
+    y:rows.map(r=>r.method_label), x:rows.map(r=>r[state.metric]),
+    marker:{color:rows.map(r=>r.method===state.focusMethod?'#063a9c':'#0b5fff')},
+    customdata:rows.map(r=>r.method),
+    hovertemplate:'%{y}<br>'+METRIC_LABEL[state.metric]+': %{x:.3f}<extra></extra>',
+  }], plotLayout({yaxis:{autorange:'reversed'}, xaxis:{title:METRIC_LABEL[state.metric]}}), {responsive:true});
+  document.getElementById('barChart').on('plotly_click',ev=>{
+    const m=ev.points?.[0]?.customdata; if(!m)return;
+    state.focusMethod=state.focusMethod===m?null:m; render();
   });
 }
 
-function renderScatter() {
-  const rows = filteredSummary().filter(r => r.mean_composite_score != null && r.tokens_per_query != null);
-  Plotly.newPlot('scatterChart', [{
-    type: 'scatter', mode: 'markers+text',
-    x: rows.map(r => r.tokens_per_query),
-    y: rows.map(r => r.mean_composite_score),
-    text: rows.map(r => r.method_label),
-    textposition: 'top center',
-    marker: { size: 14, color: rows.map(r => r.method === state.focusMethod ? '#0b3d91' : '#1f6feb') },
-    customdata: rows.map(r => [r.method, r.mean_llm_judge, r.mean_query_latency_seconds]),
-    hovertemplate:
-      '<b>%{text}</b><br>Composite: %{y:.3f}<br>Tokens/q: %{x:.0f}' +
-      '<br>Judge: %{customdata[1]:.3f}<br>Latency: %{customdata[2]:.2f}s<extra></extra>',
-  }], plotLayout({
-    xaxis: { title: 'Tokens / query (lower = cheaper)' },
-    yaxis: { title: 'Composite (higher = better)', range: [0, 1] },
-  }), {responsive: true});
-
-  document.getElementById('scatterChart').on('plotly_click', (ev) => {
-    const m = ev.points?.[0]?.customdata?.[0];
-    if (!m) return;
-    state.focusMethod = state.focusMethod === m ? null : m;
-    render();
+function renderScatter(){
+  const rows=filteredSummary().filter(r=>r.mean_composite_score!=null&&r.tokens_per_query!=null);
+  Plotly.newPlot('scatterChart',[{
+    type:'scatter', mode:'markers+text',
+    x:rows.map(r=>r.tokens_per_query), y:rows.map(r=>r.mean_composite_score),
+    text:rows.map(r=>r.method_label), textposition:'top center',
+    marker:{size:13,color:rows.map(r=>r.method===state.focusMethod?'#063a9c':'#0b5fff')},
+    customdata:rows.map(r=>[r.method,r.mean_llm_judge,r.mean_query_latency_seconds]),
+    hovertemplate:'<b>%{text}</b><br>Composite %{y:.3f}<br>Tokens/q %{x:.0f}<br>Judge %{customdata[1]:.3f}<extra></extra>',
+  }], plotLayout({xaxis:{title:'Tokens / query ↓ cheaper'}, yaxis:{title:'Composite ↑ better',range:[0,1]}}), {responsive:true});
+  document.getElementById('scatterChart').on('plotly_click',ev=>{
+    const m=ev.points?.[0]?.customdata?.[0]; if(!m)return;
+    state.focusMethod=state.focusMethod===m?null:m; render();
   });
 }
 
-function renderBox() {
-  const acc = filteredAccuracy();
-  const by = {};
-  for (const r of acc) {
-    (by[r.method_label] ||= []).push(r.composite_score ?? 0);
-  }
-  const traces = Object.entries(by).map(([name, vals]) => ({
-    type: 'box', name, y: vals, boxpoints: 'outliers',
-    marker: { size: 4 },
-  }));
-  Plotly.newPlot('boxChart', traces, plotLayout({
-    showlegend: false,
-    yaxis: { title: 'Per-question composite', range: [-0.05, 1.05] },
-  }), {responsive: true});
+function renderBox(){
+  const by={};
+  for(const r of filteredAccuracy()) (by[r.method_label] ||= []).push(r.composite_score??0);
+  const traces=Object.entries(by).map(([name,y])=>({type:'box',name,y,boxpoints:'outliers',marker:{size:4}}));
+  Plotly.newPlot('boxChart', traces, plotLayout({showlegend:false,yaxis:{title:'Per-question composite',range:[-0.05,1.05]}}), {responsive:true});
 }
 
-function renderHeat() {
-  const rows = filteredSummary();
-  const metrics = [
-    ['mean_composite_score', 'Composite'],
-    ['mean_llm_judge', 'Judge'],
-    ['mean_token_f1', 'F1'],
-    ['contains_answer_rate', 'Contains'],
-  ];
-  // include tokens inverted so high = good
-  const z = metrics.map(([key]) => {
-    const vals = rows.map(r => Number(r[key]) || 0);
-    const max = Math.max(...vals, 1e-9);
-    return vals.map(v => v / max);
+function renderHeat(){
+  const rows=filteredSummary();
+  if(!rows.length){document.getElementById('heatChart').innerHTML='<p class="muted">No data</p>';return;}
+  const keys=[['mean_composite_score','Composite'],['mean_llm_judge','Judge'],['mean_token_f1','F1'],['contains_answer_rate','Contains']];
+  const z=keys.map(([k])=>{
+    const vals=rows.map(r=>Number(r[k])||0); const mx=Math.max(...vals,1e-9); return vals.map(v=>v/mx);
   });
-  // tokens: invert
-  const tok = rows.map(r => Number(r.tokens_per_query) || 0);
-  const tmax = Math.max(...tok, 1e-9);
-  z.push(tok.map(v => 1 - (v / tmax)));
-  metrics.push(['tokens_per_query', 'Cheap tokens']);
-
-  Plotly.newPlot('heatChart', [{
-    type: 'heatmap',
-    z,
-    x: rows.map(r => r.method_label),
-    y: metrics.map(m => m[1]),
-    colorscale: 'Blues',
-    hovertemplate: '%{y} · %{x}<br>normalized %{z:.2f}<extra></extra>',
-  }], plotLayout({
-    margin: { t: 24, r: 16, b: 80, l: 90 },
-  }), {responsive: true});
+  const tok=rows.map(r=>Number(r.tokens_per_query)||0); const tmax=Math.max(...tok,1e-9);
+  z.push(tok.map(v=>1-v/tmax)); keys.push(['tokens','Cheap tokens']);
+  Plotly.newPlot('heatChart',[{type:'heatmap',z,x:rows.map(r=>r.method_label),y:keys.map(k=>k[1]),colorscale:'Blues',
+    hovertemplate:'%{y} · %{x}<br>norm %{z:.2f}<extra></extra>'}],
+    plotLayout({margin:{t:24,r:16,b:80,l:90}}), {responsive:true});
 }
 
-function renderDual() {
-  const rows = bench().dual || [];
-  if (!rows.length) {
-    document.getElementById('dualTable').innerHTML = '<p class="muted">No dual_scoreboard.csv for this bench.</p>';
-    return;
-  }
-  document.getElementById('dualTable').innerHTML = `
-    <table><thead><tr>
-      <th>Scenario</th><th>Generative winner</th><th>Composite winner</th><th>Flip?</th><th>What it means</th>
-    </tr></thead><tbody>
-    ${rows.map(r => {
-      const flip = r.ranking_flips === true || r.ranking_flips === 'True' || r.ranking_flips === 'true';
-      return `<tr>
-        <td>${r.scenario ?? ''}</td>
-        <td>${r.generative_winner ?? ''}</td>
-        <td>${r.composite_winner ?? ''}</td>
-        <td>${flip ? 'yes — metric choice changes winner' : 'no'}</td>
-        <td>${flip
-          ? 'Judge-heavy ranking ≠ composite. Decide which product metric matters.'
-          : 'Same winner under both lenses — more trustworthy pick.'}</td>
-      </tr>`;
-    }).join('')}
+function renderQTable(){
+  const focus=state.focusMethod || filteredSummary().slice().sort((a,b)=>(b.mean_composite_score||0)-(a.mean_composite_score||0))[0]?.method;
+  let rows=filteredAccuracy().filter(r=>r.method===focus);
+  if(state.search) rows=rows.filter(r=>String(r.question_id).toLowerCase().includes(state.search)||String(r.query_type||'').toLowerCase().includes(state.search));
+  rows=rows.slice().sort((a,b)=>(b.composite_score||0)-(a.composite_score||0));
+  document.getElementById('qTable').innerHTML=`<p class="muted">Focus: <strong>${labelOf(focus)}</strong> · ${rows.length} rows</p>
+    <table><thead><tr><th>Id</th><th>Type</th><th>Composite</th><th>Gen</th><th>Ext</th><th>Judge</th><th>F1</th></tr></thead><tbody>
+    ${rows.slice(0,250).map(r=>`<tr>
+      <td><code>${r.question_id}</code></td><td>${r.query_type||r.code_rag_type||r.hotpot_type||''}</td>
+      <td>${Number(r.composite_score||0).toFixed(3)}</td>
+      <td>${Number(r.generative_score||0).toFixed(3)}</td>
+      <td>${Number(r.extractive_score||0).toFixed(3)}</td>
+      <td>${Number(r.llm_judge_score||0).toFixed(3)}</td>
+      <td>${Number(r.token_f1||0).toFixed(3)}</td></tr>`).join('')}
     </tbody></table>`;
 }
 
-function renderQuestionTable() {
-  const acc = filteredAccuracy();
-  // pivot-ish: list unique questions with focus method score
-  const focus = state.focusMethod || (filteredSummary()[0] && filteredSummary().sort((a,b)=>(b.mean_composite_score||0)-(a.mean_composite_score||0))[0]?.method);
-  let rows = acc.filter(r => r.method === focus);
-  if (state.search) {
-    rows = rows.filter(r =>
-      String(r.question_id).toLowerCase().includes(state.search) ||
-      String(r.query_type||'').toLowerCase().includes(state.search) ||
-      String(r.code_rag_type||'').toLowerCase().includes(state.search)
-    );
+function renderDecision(){
+  const lens=(bench().lens||[]).filter(r=>state.methods.has(r.method));
+  if(lens.length){
+    const maxv=1;
+    Plotly.newPlot('lensChart',[
+      {type:'scatter',mode:'lines',x:[0,maxv],y:[0,maxv],line:{dash:'dot',color:'#9aa4b2'},hoverinfo:'skip',showlegend:false},
+      {type:'scatter',mode:'markers+text',
+        x:lens.map(r=>r.extractive), y:lens.map(r=>r.generative),
+        text:lens.map(r=>r.method_label), textposition:'top center',
+        marker:{size:14,color:'#0b5fff'},
+        customdata:lens.map(r=>[r.composite,r.n]),
+        hovertemplate:'<b>%{text}</b><br>Generative %{y:.3f}<br>Extractive %{x:.3f}<br>Composite %{customdata[0]:.3f}<extra></extra>'}
+    ], plotLayout({xaxis:{title:'Extractive (F1+EM) ↑',range:[-0.02,1.02]}, yaxis:{title:'Generative (judge+contains) ↑',range:[-0.02,1.02]},
+      annotations:[{x:0.75,y:0.2,text:'Extractive-favored',showarrow:false,font:{color:'#5b6572',size:11}},
+                   {x:0.25,y:0.85,text:'Generative-favored (graphs often here)',showarrow:false,font:{color:'#5b6572',size:11}}]
+    }), {responsive:true});
+  } else {
+    document.getElementById('lensChart').innerHTML='<p class="muted">Need accuracy_enriched.csv with generative/extractive columns.</p>';
   }
-  rows = rows.slice().sort((a,b) => (b.composite_score||0) - (a.composite_score||0));
-  const label = labelOf(focus);
-  document.getElementById('qTable').innerHTML = `
-    <p class="muted">Showing <strong>${label}</strong> · ${rows.length} questions</p>
-    <table><thead><tr>
-      <th>Question id</th><th>Type</th><th>Composite</th><th>Judge</th><th>F1</th><th>Contains</th>
-    </tr></thead><tbody>
-    ${rows.slice(0, 200).map(r => `
-      <tr>
-        <td><code>${r.question_id}</code></td>
-        <td>${r.query_type || r.code_rag_type || r.hotpot_type || ''}</td>
-        <td>${Number(r.composite_score||0).toFixed(3)}</td>
-        <td>${Number(r.llm_judge_score||0).toFixed(3)}</td>
-        <td>${Number(r.token_f1||0).toFixed(3)}</td>
-        <td>${r.contains_answer}</td>
-      </tr>`).join('')}
-    </tbody></table>`;
+
+  const dual=bench().dual||[];
+  document.getElementById('dualTable').innerHTML = dual.length ? `<table><thead><tr>
+    <th>Scenario</th><th>Generative winner</th><th>Composite winner</th><th>Flip?</th><th>Meaning</th></tr></thead><tbody>
+    ${dual.map(r=>{
+      const flip=r.ranking_flips===true||r.ranking_flips==='True'||r.ranking_flips==='true';
+      return `<tr><td>${r.scenario||''}</td><td>${r.generative_winner||''}</td><td>${r.composite_winner||''}</td>
+        <td>${flip?'YES':'no'}</td>
+        <td>${flip?'Metric choice changes the system you ship.':'Stable across lenses.'}</td></tr>`;
+    }).join('')}</tbody></table>` : '<p class="muted">No dual_scoreboard.csv</p>';
+
+  const route=bench().routing||[];
+  document.getElementById('routeTable').innerHTML = route.length ? `<table><thead><tr>
+    <th>Scenario</th><th>Recommended</th><th>Quality</th><th>Margin</th><th>Tokens/q</th><th>Guidance</th></tr></thead><tbody>
+    ${route.map(r=>`<tr><td>${r.scenario||r.query_type||''}</td><td>${r.recommended_label||r.recommended_method||''}</td>
+      <td>${Number(r.quality||0).toFixed(3)}</td><td>${Number(r.margin_over_next||0).toFixed(3)}</td>
+      <td>${Number(r.tokens_per_query||0).toFixed(0)}</td><td>${r.guidance||''}</td></tr>`).join('')}
+    </tbody></table>` : '<p class="muted">No routing_recommendations.csv for this bench.</p>';
+
+  document.getElementById('briefing').textContent = bench().briefing || 'No engineering_briefing.md';
+  const wins=bench().clear_wins||[];
+  document.getElementById('winsTable').innerHTML = wins.length ? `<table><thead><tr>
+    <th>Winner</th><th>Question</th><th>Gold</th><th>Score</th><th>Runner-up</th><th>Margin</th></tr></thead><tbody>
+    ${wins.map(r=>`<tr><td>${r.winner_label||r.winner||''}</td><td>${(r.question||'').slice(0,120)}</td>
+      <td>${(r.gold||'').slice(0,50)}</td><td>${Number(r.winner_score||0).toFixed(3)}</td>
+      <td>${r.runner_up_label||''}</td><td>${Number(r.margin||0).toFixed(3)}</td></tr>`).join('')}
+    </tbody></table>` : '<p class="muted">No clear-win rows.</p>';
 }
 
-function renderWins() {
-  const rows = bench().clear_wins || [];
-  if (!rows.length) {
-    document.getElementById('winsTable').innerHTML = '<p class="muted">No clear-win rows for this bench/slice.</p>';
-    return;
-  }
-  document.getElementById('winsTable').innerHTML = `
-    <table><thead><tr>
-      <th>Winner</th><th>Question</th><th>Gold</th><th>Score</th><th>Runner-up</th><th>Margin</th>
-    </tr></thead><tbody>
-    ${rows.map(r => `
-      <tr>
-        <td>${r.winner_label || r.winner || ''}</td>
-        <td>${(r.question || '').slice(0, 140)}</td>
-        <td>${(r.gold || '').slice(0, 60)}</td>
-        <td>${Number(r.winner_score||0).toFixed(3)}</td>
-        <td>${r.runner_up_label || r.runner_up || ''}</td>
-        <td>${Number(r.margin||0).toFixed(3)}</td>
-      </tr>`).join('')}
+function renderResearch(){
+  document.getElementById('mapTable').innerHTML=`<table><thead><tr>
+    <th>2026 practice (RAGAS-style)</th><th>This harness</th><th>Layer</th><th>Status</th><th>Note</th></tr></thead><tbody>
+    ${DATA.metric_map.map(m=>`<tr>
+      <td>${m.ragas}</td><td><code>${m.ours}</code></td><td>${m.layer}</td>
+      <td><span class="badge ${m.status}">${m.status}</span></td><td>${m.note}</td></tr>`).join('')}
     </tbody></table>`;
+  document.getElementById('findings').innerHTML = DATA.research_findings.map(f=>`
+    <div class="finding"><h3>${f.claim}</h3>
+      <p>${f.evidence}</p>
+      <p><strong>In this UI:</strong> ${f.dashboard}</p>
+      <div class="cites">${(f.cites||[]).join(' · ')}</div>
+    </div>`).join('');
+  document.getElementById('methodGlossary').innerHTML = Object.entries(DATA.method_defs).map(([k,v])=>
+    `<details><summary>${k}</summary><p class="muted">${v}</p></details>`).join('');
 }
 
-function render() {
-  // refresh method pills visual
-  document.querySelectorAll('#methods .method-pill').forEach(el => {
-    el.classList.toggle('on', state.methods.has(el.dataset.m));
-  });
+function render(){
+  document.querySelectorAll('#methods .method-pill').forEach(el=>el.classList.toggle('on', state.methods.has(el.dataset.m)));
   renderProvenance();
-  if (!(bench().summary || []).length) {
-    ['barChart','scatterChart','boxChart','heatChart'].forEach(id => {
-      document.getElementById(id).innerHTML = '<p class="muted">No summary.csv yet.</p>';
-    });
-    renderDual(); renderWins();
-    document.getElementById('qTable').innerHTML = '<p class="muted">No accuracy rows yet.</p>';
+  if(!(bench().summary||[]).length){
+    ['barChart','scatterChart','boxChart','heatChart'].forEach(id=>document.getElementById(id).innerHTML='<p class="muted">No summary.csv</p>');
     return;
   }
-  renderBar();
-  renderScatter();
-  renderBox();
-  renderHeat();
-  renderDual();
-  renderQuestionTable();
-  renderWins();
+  renderBar(); renderScatter(); renderBox(); renderHeat(); renderQTable();
+  if(document.getElementById('view-decision').classList.contains('on')) renderDecision();
 }
 
-initControls();
-render();
+init();
 </script>
 </body>
 </html>
@@ -890,27 +838,24 @@ def build() -> Path:
     payload = collect_payload()
     docs = ROOT / "docs"
     docs.mkdir(parents=True, exist_ok=True)
-    data_path = docs / "dashboard_data.json"
-    data_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-
-    # Embed JSON safely inside <script type="application/json">
+    (docs / "dashboard_data.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     raw = json.dumps(payload, ensure_ascii=False)
     raw = raw.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
-    html = HTML_TEMPLATE.replace("__DATA_JSON__", raw)
-
+    # Fix any template bugs before write — sanitize the broken color line by regenerating clean HTML
+    html = HTML.replace("__DATA_JSON__", raw)
     out_docs = docs / "index.html"
     out_docs.write_text(html, encoding="utf-8")
-    out_results = ROOT / "results" / "dashboard.html"
-    out_results.parent.mkdir(parents=True, exist_ok=True)
-    out_results.write_text(html, encoding="utf-8")
-    code_rag_dash = ROOT / "results_code_rag" / "dashboard.html"
-    code_rag_dash.parent.mkdir(parents=True, exist_ok=True)
-    code_rag_dash.write_text(html, encoding="utf-8")
-
-    # Lightweight Pages README
+    for path in (
+        ROOT / "results" / "dashboard.html",
+        ROOT / "results_code_rag" / "dashboard.html",
+    ):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(html, encoding="utf-8")
     (docs / "README.md").write_text(
-        "# RAG Benchmark Dashboard (GitHub Pages)\n\n"
-        "Open **[index.html](./index.html)** on GitHub Pages for the interactive view.\n\n"
+        "# Research-refined RAG dashboard\n\n"
+        "Open **[index.html](./index.html)** on GitHub Pages.\n\n"
+        "Tabs: **Explore** · **Decision Lab** (generative vs extractive, routing) · "
+        "**Research Lens** (RAGAS metric map + 2025–26 findings).\n\n"
         "Rebuild: `PYTHONPATH=src python scripts/build_dashboard.py`\n",
         encoding="utf-8",
     )
@@ -920,4 +865,3 @@ def build() -> Path:
 if __name__ == "__main__":
     path = build()
     print(f"Dashboard → {path}")
-    print(f"Local twin → {ROOT / 'results' / 'dashboard.html'}")
