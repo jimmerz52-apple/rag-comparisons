@@ -1,0 +1,4 @@
+# python.library.py_compile#py_compile.PycInvalidationMode.CHECKED_HASH
+
+CHECKED_HASH  
+The .pyc file includes a hash of the source file content, which Python will compare against the source at runtime to determine if the .pyc file needs to be regenerated.

@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.hermite.hermite.roots
+
+numpy.polynomial.hermite.Hermite.roots method   polynomial.hermite.Hermite.roots()[source]
+ 
+Return the roots of the series polynomial. Compute the roots for the series. Note that the accuracy of the roots decrease the further outside the domain they lie.  Returns 
+ 
+rootsndarray
+
+
+Array containing the roots of the series.

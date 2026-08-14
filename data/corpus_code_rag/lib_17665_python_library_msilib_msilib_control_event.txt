@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Control.event
+
+event(event, argument, condition=1, ordering=None)  
+Make an entry into the ControlEvent table for this control.

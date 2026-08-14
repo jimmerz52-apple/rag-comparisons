@@ -1,0 +1,4 @@
+# python.library.sys#sys.getprofile
+
+sys.getprofile()  
+Get the profiler function as set by setprofile().

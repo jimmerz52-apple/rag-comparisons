@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.sprites
+
+sprites() 
+ returns a ordered list of sprites (first back, last top). sprites() -> sprites

@@ -1,0 +1,4 @@
+# python.library.locale#locale.atoi
+
+locale.atoi(string)  
+Converts a string to an integer, following the LC_NUMERIC conventions.

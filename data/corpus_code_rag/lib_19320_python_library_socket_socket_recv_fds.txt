@@ -1,0 +1,4 @@
+# python.library.socket#socket.recv_fds
+
+socket.recv_fds(sock, bufsize, maxfds[, flags])  
+Receive up to maxfds file descriptors from an AF_UNIX socket sock. Return (msg, list(fds), flags, addr). Consult recvmsg() for the documentation of these parameters. Availability: Unix supporting recvmsg() and SCM_RIGHTS mechanism.  New in version 3.9.   Note Any truncated integers at the end of the list of file descriptors.

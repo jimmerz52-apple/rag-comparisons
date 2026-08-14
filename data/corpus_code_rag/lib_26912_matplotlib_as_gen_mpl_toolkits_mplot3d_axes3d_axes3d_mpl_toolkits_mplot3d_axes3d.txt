@@ -1,0 +1,29 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.bar
+
+bar(left, height, zs=0, zdir='z', *args, data=None, **kwargs)[source]
+ 
+Add 2D bar(s).  Parameters 
+ 
+left1D array-like
+
+
+The x coordinates of the left sides of the bars.  
+height1D array-like
+
+
+The height of the bars.  
+zsfloat or 1D array-like
+
+
+Z coordinate of bars; if a single value is specified, it will be used for all bars.  
+zdir{'x', 'y', 'z'}, default: 'z'
+
+
+When plotting 2D data, the direction to use as z ('x', 'y' or 'z').  
+dataindexable object, optional
+
+
+If given, all parameters also accept a string s, which is interpreted as data[s] (unless this raises an exception).  **kwargs
+
+Other arguments are forwarded to matplotlib.axes.Axes.bar.    Returns 
+ mpl_toolkits.mplot3d.art3d.Patch3DCollection

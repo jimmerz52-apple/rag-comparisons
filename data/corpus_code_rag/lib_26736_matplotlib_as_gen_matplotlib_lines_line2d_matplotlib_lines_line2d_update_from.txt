@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.update_from
+
+update_from(other)[source]
+ 
+Copy properties from other to self.

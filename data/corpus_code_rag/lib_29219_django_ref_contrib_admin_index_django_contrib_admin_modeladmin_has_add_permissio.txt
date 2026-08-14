@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.has_add_permission
+
+ModelAdmin.has_add_permission(request)  
+Should return True if adding an object is permitted, False otherwise.

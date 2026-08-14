@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.have_units
+
+have_units()[source]
+ 
+Return whether units are set on any axis.

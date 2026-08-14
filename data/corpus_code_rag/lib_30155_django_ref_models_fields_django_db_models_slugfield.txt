@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.SlugField
+
+class SlugField(max_length=50, **options)

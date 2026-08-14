@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.multinomial.Multinomial.total_count
+
+total_count: int = None

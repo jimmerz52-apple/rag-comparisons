@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.CallbackRegistry.process
+
+process(s, *args, **kwargs)[source]
+ 
+Process signal s. All of the functions registered to receive callbacks on s will be called with *args and **kwargs.

@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.reverse_ordering
+
+reverse_ordering()  
+Returns self with any modifications required to reverse the sort order within an order_by call. As an example, an expression implementing NULLS LAST would change its value to be NULLS FIRST. Modifications are only required for expressions that implement sort order like OrderBy. This method is called when reverse() is called on a queryset.

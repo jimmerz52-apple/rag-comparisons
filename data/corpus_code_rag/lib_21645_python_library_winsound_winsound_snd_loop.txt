@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.SND_LOOP
+
+winsound.SND_LOOP  
+Play the sound repeatedly. The SND_ASYNC flag must also be used to avoid blocking. Cannot be used with SND_MEMORY.

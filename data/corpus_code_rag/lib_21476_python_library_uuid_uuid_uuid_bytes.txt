@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.bytes
+
+UUID.bytes  
+The UUID as a 16-byte string (containing the six integer fields in big-endian byte order).

@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.getmtime
+
+os.path.getmtime(path)  
+Return the time of last modification of path. The return value is a floating point number giving the number of seconds since the epoch (see the time module). Raise OSError if the file does not exist or is inaccessible.  Changed in version 3.6: Accepts a path-like object.

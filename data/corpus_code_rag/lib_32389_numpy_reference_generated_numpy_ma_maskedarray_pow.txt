@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__pow__
+
+numpy.ma.MaskedArray.__pow__ method   ma.MaskedArray.__pow__(other)[source]
+ 
+Raise self to the power other, masking the potential NaNs/Infs

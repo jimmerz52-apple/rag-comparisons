@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.any
+
+numpy.record.any method   record.any()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.any.

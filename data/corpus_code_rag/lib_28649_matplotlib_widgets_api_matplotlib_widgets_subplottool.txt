@@ -1,0 +1,14 @@
+# matplotlib.widgets_api#matplotlib.widgets.SubplotTool
+
+classmatplotlib.widgets.SubplotTool(targetfig, toolfig)[source]
+ 
+Bases: matplotlib.widgets.Widget A tool to adjust the subplot params of a matplotlib.figure.Figure.  Parameters 
+ 
+targetfigFigure
+
+
+The figure instance to adjust.  
+toolfigFigure
+
+
+The figure instance to embed the subplot tool into.

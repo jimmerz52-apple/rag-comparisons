@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.dateparse.parse_time
+
+parse_time(value)  
+Parses a string and returns a datetime.time. UTC offsets aren’t supported; if value describes one, the result is None.

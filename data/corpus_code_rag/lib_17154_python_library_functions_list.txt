@@ -1,0 +1,4 @@
+# python.library.functions#list
+
+class list([iterable])  
+Rather than being a function, list is actually a mutable sequence type, as documented in Lists and Sequence Types — list, tuple, range.

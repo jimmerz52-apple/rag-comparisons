@@ -1,0 +1,8 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.pathpatch_2d_to_3d
+
+mpl_toolkits.mplot3d.art3d.pathpatch_2d_to_3d   mpl_toolkits.mplot3d.art3d.pathpatch_2d_to_3d(pathpatch, z=0, zdir='z')[source]
+ 
+Convert a PathPatch to a PathPatch3D object. 
+  Examples using mpl_toolkits.mplot3d.art3d.pathpatch_2d_to_3d
+ 
+   Draw flat objects in 3D plot

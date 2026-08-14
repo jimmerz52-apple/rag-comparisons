@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.get_stderr
+
+get_stderr()  
+Return an output stream object suitable for use as the wsgi.errors of the request currently being processed.

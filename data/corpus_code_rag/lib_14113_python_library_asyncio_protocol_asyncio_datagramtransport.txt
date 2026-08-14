@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.DatagramTransport
+
+class asyncio.DatagramTransport(BaseTransport)  
+A transport for datagram (UDP) connections. Instances of the DatagramTransport class are returned from the loop.create_datagram_endpoint() event loop method.

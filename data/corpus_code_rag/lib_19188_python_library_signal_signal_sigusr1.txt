@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGUSR1
+
+signal.SIGUSR1  
+User-defined signal 1. Availability: Unix.

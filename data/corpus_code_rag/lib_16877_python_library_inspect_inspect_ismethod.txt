@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.ismethod
+
+inspect.ismethod(object)  
+Return True if the object is a bound method written in Python.

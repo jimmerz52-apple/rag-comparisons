@@ -1,0 +1,6 @@
+# matplotlib.transformations#matplotlib.transforms.CompositeAffine2D.__init__
+
+__init__(a, b, **kwargs)[source]
+ 
+Create a new composite transform that is the result of applying Affine2DBase a then Affine2DBase b. You will generally not call this constructor directly but write a +
+b instead, which will automatically choose the best kind of composite transform instance to create.

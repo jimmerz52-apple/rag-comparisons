@@ -1,0 +1,3 @@
+# matplotlib.ticker_api#matplotlib.ticker.EngFormatter.set_useMathText
+
+set_useMathText(val)[source]

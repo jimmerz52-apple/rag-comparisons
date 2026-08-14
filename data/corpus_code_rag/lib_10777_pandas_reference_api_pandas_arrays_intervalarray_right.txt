@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.arrays.intervalarray.right
+
+pandas.arrays.IntervalArray.right   propertyIntervalArray.right
+ 
+Return the right endpoints of each Interval in the IntervalArray as an Index.

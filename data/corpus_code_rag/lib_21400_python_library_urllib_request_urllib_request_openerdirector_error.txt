@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.OpenerDirector.error
+
+OpenerDirector.error(proto, *args)  
+Handle an error of the given protocol. This will call the registered error handlers for the given protocol with the given arguments (which are protocol specific). The HTTP protocol is a special case which uses the HTTP response code to determine the specific error handler; refer to the http_error_<type>() methods of the handler classes. Return values and exceptions raised are the same as those of urlopen().

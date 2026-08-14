@@ -1,0 +1,8 @@
+# werkzeug.exceptions.index#werkzeug.exceptions.HTTPException.__call__
+
+__call__(environ, start_response)  
+Call the exception as WSGI application.  Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environment. 
+start_response (StartResponse) – the response callable provided by the WSGI server.   Return type 
+Iterable[bytes]

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.lineardiscriminantanalysis#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform
+
+transform(X) [source]
+ 
+Project data to maximize class separation.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input data.    Returns 
+ 
+X_newndarray of shape (n_samples, n_components) 
+
+Transformed data.

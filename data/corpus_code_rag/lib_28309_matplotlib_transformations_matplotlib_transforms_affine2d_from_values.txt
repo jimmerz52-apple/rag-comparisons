@@ -1,0 +1,8 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.from_values
+
+staticfrom_values(a, b, c, d, e, f)[source]
+ 
+Create a new Affine2D instance from the given values: a c e
+b d f
+0 0 1
+ .

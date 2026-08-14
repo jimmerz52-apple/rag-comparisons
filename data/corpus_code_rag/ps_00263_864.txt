@@ -1,0 +1,7 @@
+# 864
+Task: 864
+
+# Write a function to find palindromes in a given list of strings using lambda function.
+def palindrome_lambda(texts):
+  result = list(filter(lambda x: (x == "".join(reversed(x))), texts))
+  return result

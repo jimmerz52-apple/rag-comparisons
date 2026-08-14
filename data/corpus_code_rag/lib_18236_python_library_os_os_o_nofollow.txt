@@ -1,0 +1,12 @@
+# python.library.os#os.O_NOFOLLOW
+
+os.O_ASYNC  
+os.O_DIRECT  
+os.O_DIRECTORY  
+os.O_NOFOLLOW  
+os.O_NOATIME  
+os.O_PATH  
+os.O_TMPFILE  
+os.O_SHLOCK  
+os.O_EXLOCK  
+The above constants are extensions and not present if they are not defined by the C library.  Changed in version 3.4: Add O_PATH on systems that support it. Add O_TMPFILE, only available on Linux Kernel 3.11 or newer.

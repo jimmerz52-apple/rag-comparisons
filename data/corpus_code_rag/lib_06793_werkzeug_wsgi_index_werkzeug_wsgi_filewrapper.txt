@@ -1,0 +1,8 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.FileWrapper
+
+class werkzeug.wsgi.FileWrapper(file, buffer_size=8192)  
+This class can be used to convert a file-like object into an iterable. It yields buffer_size blocks until the file is fully read. You should not use this class directly but rather use the wrap_file() function that uses the WSGI server’s file wrapper support if it’s available.  Changelog New in version 0.5.  If you’re using this object together with a Response you have to use the direct_passthrough mode.  Parameters 
+ 
+file (BinaryIO) – a file-like object with a read() method. 
+buffer_size (int) – number of bytes for one iteration.   Return type 
+None

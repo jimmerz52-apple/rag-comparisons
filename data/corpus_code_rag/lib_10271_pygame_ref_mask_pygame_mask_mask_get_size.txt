@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.get_size
+
+get_size() 
+ Returns the size of the mask get_size() -> (width, height)      
+Returns:
+the size of the mask, (width, height)  
+Return type:
+tuple(int, int)

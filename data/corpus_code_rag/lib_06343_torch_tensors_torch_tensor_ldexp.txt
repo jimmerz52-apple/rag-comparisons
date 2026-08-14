@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ldexp_
+
+ldexp_(other) → Tensor  
+In-place version of ldexp()

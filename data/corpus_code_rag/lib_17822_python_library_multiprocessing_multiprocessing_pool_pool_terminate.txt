@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.Pool.terminate
+
+terminate()  
+Stops the worker processes immediately without completing outstanding work. When the pool object is garbage collected terminate() will be called immediately.

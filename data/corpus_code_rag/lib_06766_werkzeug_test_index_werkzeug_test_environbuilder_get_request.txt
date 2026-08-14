@@ -1,0 +1,6 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.get_request
+
+get_request(cls=None)  
+Returns a request with the data. If the request class is not specified request_class is used.  Parameters 
+cls (Optional[Type[werkzeug.wrappers.request.Request]]) – The request wrapper to use.  Return type 
+werkzeug.wrappers.request.Request

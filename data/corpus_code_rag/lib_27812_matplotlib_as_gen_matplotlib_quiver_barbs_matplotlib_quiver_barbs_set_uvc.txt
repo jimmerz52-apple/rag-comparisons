@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.quiver.barbs#matplotlib.quiver.Barbs.set_UVC
+
+set_UVC(U, V, C=None)[source]

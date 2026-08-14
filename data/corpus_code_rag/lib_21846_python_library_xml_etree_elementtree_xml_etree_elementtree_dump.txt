@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.dump
+
+xml.etree.ElementTree.dump(elem)  
+Writes an element tree or element structure to sys.stdout. This function should be used for debugging only. The exact output format is implementation dependent. In this version, it’s written as an ordinary XML file. elem is an element tree or an individual element.  Changed in version 3.8: The dump() function now preserves the attribute order specified by the user.

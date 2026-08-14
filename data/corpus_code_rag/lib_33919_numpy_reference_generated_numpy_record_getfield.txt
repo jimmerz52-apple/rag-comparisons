@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.getfield
+
+numpy.record.getfield method   record.getfield()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.getfield.

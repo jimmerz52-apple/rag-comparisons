@@ -1,0 +1,44 @@
+# python.library.profile#profile.Profile
+
+class profile.Profile(timer=None, timeunit=0.0, subcalls=True, builtins=True)  
+This class is normally only used if more precise control over profiling is needed than what the cProfile.run() function provides. A custom timer can be supplied for measuring how long code takes to run via the timer argument. This must be a function that returns a single number representing the current time. If the number is an integer, the timeunit specifies a multiplier that specifies the duration of each unit of time. For example, if the timer returns times measured in thousands of seconds, the time unit would be .001. Directly using the Profile class allows formatting profile results without writing the profile data to a file: import cProfile, pstats, io
+from pstats import SortKey
+pr = cProfile.Profile()
+pr.enable()
+# ... do something ...
+pr.disable()
+s = io.StringIO()
+sortby = SortKey.CUMULATIVE
+ps = pstats.Stats(pr, stream=s).sort_stats(sortby)
+ps.print_stats()
+print(s.getvalue())
+ The Profile class can also be used as a context manager (supported only in cProfile module. see Context Manager Types): import cProfile
+
+with cProfile.Profile() as pr:
+    # ... do something ...
+
+pr.print_stats()
+  Changed in version 3.8: Added context manager support.   
+enable()  
+Start collecting profiling data. Only in cProfile. 
+  
+disable()  
+Stop collecting profiling data. Only in cProfile. 
+  
+create_stats()  
+Stop collecting profiling data and record the results internally as the current profile. 
+  
+print_stats(sort=-1)  
+Create a Stats object based on the current profile and print the results to stdout. 
+  
+dump_stats(filename)  
+Write the results of the current profile to filename. 
+  
+run(cmd)  
+Profile the cmd via exec(). 
+  
+runctx(cmd, globals, locals)  
+Profile the cmd via exec() with the specified global and local environment. 
+  
+runcall(func, /, *args, **kwargs)  
+Profile func(*args, **kwargs)

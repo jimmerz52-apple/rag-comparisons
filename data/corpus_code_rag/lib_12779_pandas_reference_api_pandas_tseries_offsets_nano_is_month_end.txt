@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.nano.is_month_end
+
+pandas.tseries.offsets.Nano.is_month_end   Nano.is_month_end()

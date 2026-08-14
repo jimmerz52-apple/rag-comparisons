@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.data
+
+property data  
+Alias for field number 0

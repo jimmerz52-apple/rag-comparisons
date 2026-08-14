@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.FigureCanvasPgf.print_pdf
+
+print_pdf(fname_or_fh, *, metadata=None, **kwargs)[source]
+ 
+Use LaTeX to compile a pgf generated figure to pdf.

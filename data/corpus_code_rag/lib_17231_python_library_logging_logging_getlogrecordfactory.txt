@@ -1,0 +1,4 @@
+# python.library.logging#logging.getLogRecordFactory
+
+logging.getLogRecordFactory()  
+Return a callable which is used to create a LogRecord.  New in version 3.2: This function has been provided, along with setLogRecordFactory(), to allow developers more control over how the LogRecord representing a logging event is constructed.  See setLogRecordFactory() for more information about the how the factory is called.

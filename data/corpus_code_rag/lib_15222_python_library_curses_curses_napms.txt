@@ -1,0 +1,4 @@
+# python.library.curses#curses.napms
+
+curses.napms(ms)  
+Sleep for ms milliseconds.

@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_VARARGS
+
+inspect.CO_VARARGS  
+The code object has a variable positional parameter (*args-like).

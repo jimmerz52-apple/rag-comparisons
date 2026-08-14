@@ -1,0 +1,12 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LineProfile.output
+
+output() [source]
+ 
+Return the drawn line and the resulting scan.  Returns 
+ 
+line_image(M, N) uint8 array, same shape as image 
+
+An array of 0s with the scanned line set to 255. If the linewidth of the line tool is greater than 1, sets the values within the profiled polygon to 128.  
+scan(P,) or (P, 3) array of int or float 
+
+The line scan values across the image.

@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.setbufsize
+
+numpy.setbufsize   numpy.setbufsize(size)[source]
+ 
+Set the size of the buffer used in ufuncs.  Parameters 
+ 
+sizeint
+
+
+Size of buffer.

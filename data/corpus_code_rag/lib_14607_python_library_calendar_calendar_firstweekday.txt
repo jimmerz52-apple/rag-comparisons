@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.firstweekday
+
+calendar.firstweekday()  
+Returns the current setting for the weekday to start each week.

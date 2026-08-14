@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Binary
+
+class msilib.Binary(filename)  
+Represents entries in the Binary table; inserting such an object using add_data() reads the file named filename into the table.

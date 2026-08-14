@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.intro
+
+Cmd.intro  
+A string to issue as an intro or banner. May be overridden by giving the cmdloop() method an argument.

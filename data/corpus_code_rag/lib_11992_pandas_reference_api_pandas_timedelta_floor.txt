@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.timedelta.floor
+
+pandas.Timedelta.floor   Timedelta.floor(freq)
+ 
+Return a new Timedelta floored to this resolution.  Parameters 
+ 
+freq:str
+
+
+Frequency string indicating the flooring resolution.

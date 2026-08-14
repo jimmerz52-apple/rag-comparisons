@@ -1,0 +1,4 @@
+# python.library.reprlib#reprlib.repr
+
+reprlib.repr(obj)  
+This is the repr() method of aRepr. It returns a string similar to that returned by the built-in function of the same name, but with limits on most sizes.

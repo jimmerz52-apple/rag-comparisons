@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.sin
+
+tf.experimental.numpy.sin TensorFlow variant of NumPy's sin. 
+tf.experimental.numpy.sin(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.sin.

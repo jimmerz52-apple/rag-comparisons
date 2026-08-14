@@ -1,0 +1,35 @@
+# skimage.api.skimage.measure#skimage.measure.moments_central
+
+skimage.measure.moments_central(image, center=None, order=3, **kwargs) [source]
+ 
+Calculate all central image moments up to a certain order. The center coordinates (cr, cc) can be calculated from the raw moments as: {M[1, 0] / M[0, 0], M[0, 1] / M[0, 0]}. Note that central moments are translation invariant but not scale and rotation invariant.  Parameters 
+ 
+imagenD double or uint8 array 
+
+Rasterized shape as image.  
+centertuple of float, optional 
+
+Coordinates of the image centroid. This will be computed if it is not provided.  
+orderint, optional 
+
+The maximum order of moments computed.    Returns 
+ 
+mu(order + 1, order + 1) array 
+
+Central image moments.     References  
+1  
+Wilhelm Burger, Mark Burge. Principles of Digital Image Processing: Core Algorithms. Springer-Verlag, London, 2009.  
+2  
+B. Jähne. Digital Image Processing. Springer-Verlag, Berlin-Heidelberg, 6. edition, 2005.  
+3  
+T. H. Reiss. Recognizing Planar Objects Using Invariant Image Features, from Lecture notes in computer science, p. 676. Springer, Berlin, 1993.  
+4  
+https://en.wikipedia.org/wiki/Image_moment   Examples >>> image = np.zeros((20, 20), dtype=np.double)
+>>> image[13:17, 13:17] = 1
+>>> M = moments(image)
+>>> centroid = (M[1, 0] / M[0, 0], M[0, 1] / M[0, 0])
+>>> moments_central(image, centroid)
+array([[16.,  0., 20.,  0.],
+       [ 0.,  0.,  0.,  0.],
+       [20.,  0., 25.,  0.],
+       [ 0.,  0.,  0.,  0.]])

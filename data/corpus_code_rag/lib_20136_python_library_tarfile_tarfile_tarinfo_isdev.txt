@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.isdev
+
+TarInfo.isdev()  
+Return True if it is one of character device, block device or FIFO.

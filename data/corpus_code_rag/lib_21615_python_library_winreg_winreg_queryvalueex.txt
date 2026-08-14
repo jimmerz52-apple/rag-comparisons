@@ -1,0 +1,7 @@
+# python.library.winreg#winreg.QueryValueEx
+
+winreg.QueryValueEx(key, value_name)  
+Retrieves the type and data for a specified value name associated with an open registry key. key is an already open key, or one of the predefined HKEY_* constants. value_name is a string indicating the value to query. The result is a tuple of 2 items:   
+Index Meaning   
+0 The value of the registry item.  
+1 An integer giving the registry type for this value (see table in docs for SetValueEx())   Raises an auditing event winreg.QueryValue with arguments key, sub_key, value_name.

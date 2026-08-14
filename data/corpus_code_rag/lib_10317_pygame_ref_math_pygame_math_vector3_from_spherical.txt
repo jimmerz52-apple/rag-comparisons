@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.from_spherical
+
+from_spherical() 
+ Sets x, y and z from a spherical coordinates 3-tuple. from_spherical((r, theta, phi)) -> None  Sets x, y and z from a tuple (r, theta, phi) where r is the radial distance, theta is the inclination angle and phi is the azimuthal angle.

@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Error
+
+exception mailbox.Error  
+The based class for all other module-specific exceptions.

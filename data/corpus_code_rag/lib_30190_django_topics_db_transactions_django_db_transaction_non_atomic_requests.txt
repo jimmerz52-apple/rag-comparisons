@@ -1,0 +1,13 @@
+# django.topics.db.transactions#django.db.transaction.non_atomic_requests
+
+non_atomic_requests(using=None)  
+This decorator will negate the effect of ATOMIC_REQUESTS for a given view: from django.db import transaction
+
+@transaction.non_atomic_requests
+def my_view(request):
+    do_stuff()
+
+@transaction.non_atomic_requests(using='other')
+def my_other_view(request):
+    do_stuff_on_the_other_database()
+ It only works if it’s applied to the view itself.

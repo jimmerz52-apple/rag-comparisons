@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Address.packed
+
+packed  
+The binary representation of this address - a bytes object of the appropriate length (most significant octet first). This is 4 bytes for IPv4 and 16 bytes for IPv6.

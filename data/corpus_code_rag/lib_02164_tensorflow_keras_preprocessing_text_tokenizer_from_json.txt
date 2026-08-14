@@ -1,0 +1,17 @@
+# tensorflow.keras.preprocessing.text.tokenizer_from_json
+
+tf.keras.preprocessing.text.tokenizer_from_json Parses a JSON tokenizer configuration file and returns a  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.preprocessing.text.tokenizer_from_json  
+tf.keras.preprocessing.text.tokenizer_from_json(
+    json_string
+)
+ tokenizer instance.
+ 
+
+
+ Arguments
+  json_string   JSON string encoding a tokenizer configuration.   
+ 
+
+
+ Returns   A Keras Tokenizer instance

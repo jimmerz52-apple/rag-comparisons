@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__copy__
+
+numpy.ma.MaskedArray.__copy__ method   ma.MaskedArray.__copy__()
+ 
+Used if copy.copy is called on an array. Returns a copy of the array. Equivalent to a.copy(order='K').

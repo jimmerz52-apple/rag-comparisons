@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.diagflat
+
+diagflat(offset=0) → Tensor  
+See torch.diagflat()

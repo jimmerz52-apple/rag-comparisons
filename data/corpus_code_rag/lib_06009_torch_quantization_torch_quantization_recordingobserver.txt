@@ -1,0 +1,9 @@
+# torch.quantization#torch.quantization.RecordingObserver
+
+class torch.quantization.RecordingObserver(**kwargs) [source]
+ 
+The module is mainly for debug and records the tensor values during runtime.  Parameters 
+ 
+dtype – Quantized data type 
+qscheme – Quantization scheme to be used 
+reduce_range – Reduces the range of the quantized data type by 1 bit

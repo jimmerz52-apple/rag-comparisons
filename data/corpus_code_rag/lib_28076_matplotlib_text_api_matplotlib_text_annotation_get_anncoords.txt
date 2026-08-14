@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Annotation.get_anncoords
+
+get_anncoords()[source]
+ 
+Return the coordinate system to use for Annotation.xyann. See also xycoords in Annotation.

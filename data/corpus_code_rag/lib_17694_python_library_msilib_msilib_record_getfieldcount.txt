@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Record.GetFieldCount
+
+Record.GetFieldCount()  
+Return the number of fields of the record, through MsiRecordGetFieldCount().

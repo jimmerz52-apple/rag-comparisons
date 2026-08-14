@@ -1,0 +1,4 @@
+# python.library.collections#collections.ChainMap.new_child
+
+new_child(m=None)  
+Returns a new ChainMap containing a new map followed by all of the maps in the current instance. If m is specified, it becomes the new map at the front of the list of mappings; if not specified, an empty dict is used, so that a call to d.new_child() is equivalent to: ChainMap({}, *d.maps). This method is used for creating subcontexts that can be updated without altering values in any of the parent mappings.  Changed in version 3.4: The optional m parameter was added.

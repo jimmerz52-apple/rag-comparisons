@@ -1,0 +1,10 @@
+# torch.quantization#torch.quantization.add_observer_
+
+torch.quantization.add_observer_(module, qconfig_propagation_list=None, non_leaf_module_list=None, device=None, custom_module_class_mapping=None) [source]
+ 
+Add observer for the leaf child of the module. This function insert observer module to all leaf child module that has a valid qconfig attribute.  Parameters 
+ 
+module – input module with qconfig attributes for all the leaf modules that we want to quantize 
+device – parent device, if any 
+non_leaf_module_list – list of non-leaf modules we want to add observer   Returns 
+None, module is modified inplace with added observer modules and forward_hooks

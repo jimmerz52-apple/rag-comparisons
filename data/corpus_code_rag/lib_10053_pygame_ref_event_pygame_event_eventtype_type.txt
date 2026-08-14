@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.EventType.type
+
+type 
+ event type identifier. type -> int  Read-only. The event type identifier. For user created event objects, this is the type argument passed to pygame.event.Event(). For example, some predefined event identifiers are QUIT and MOUSEMOTION.

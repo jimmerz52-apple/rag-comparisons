@@ -1,0 +1,4 @@
+# python.library.platform#platform.system_alias
+
+platform.system_alias(system, release, version)  
+Returns (system, release, version) aliased to common marketing names used for some systems. It also does some reordering of the information in some cases where it would otherwise cause confusion.

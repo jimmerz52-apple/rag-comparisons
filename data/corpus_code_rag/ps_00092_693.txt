@@ -1,0 +1,7 @@
+# 693
+Task: 693
+
+# Write a function to remove multiple spaces in a string by using regex.
+import re
+def remove_multiple_spaces(text1):
+  return (re.sub(' +',' ',text1))

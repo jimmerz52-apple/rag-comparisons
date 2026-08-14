@@ -1,0 +1,122 @@
+# matplotlib._as_gen.matplotlib.patches.polygon
+
+matplotlib.patches.Polygon   classmatplotlib.patches.Polygon(xy, closed=True, **kwargs)[source]
+ 
+Bases: matplotlib.patches.Patch A general polygon patch. xy is a numpy array with shape Nx2. If closed is True, the polygon will be closed so the starting and ending points are the same. Valid keyword arguments are:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float     get_closed()[source]
+ 
+Return whether the polygon is closed. 
+   get_path()[source]
+ 
+Get the Path of the polygon. 
+   get_xy()[source]
+ 
+Get the vertices of the path.  Returns 
+ (N, 2) numpy array
+
+The coordinates of the vertices.     
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, capstyle=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, closed=<UNSET>, color=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, xy=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+closed bool  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+xy (N, 2) array-like  
+zorder float   
+   set_closed(closed)[source]
+ 
+Set whether the polygon is closed.  Parameters 
+ 
+closedbool
+
+
+True if the polygon is closed     
+   set_xy(xy)[source]
+ 
+Set the vertices of the polygon.  Parameters 
+ 
+xy(N, 2) array-like
+
+
+The coordinates of the vertices.     Notes Unlike Path, we do not ignore the last input vertex. If the polygon is meant to be closed, and the last point of the polygon is not equal to the first, we assume that the user has not explicitly passed a CLOSEPOLY vertex, and add it ourselves. 
+   propertyxy
+ 
+The vertices of the path as (N, 2) numpy array. 
+ 
+  Examples using matplotlib.patches.Polygon
+ 
+   Controlling view limits using margins and sticky_edges   
+
+   Boxplots   
+
+   Arrow guide   
+
+   Hatch demo   
+
+   Circles, Wedges and Polygons   
+
+   mpl_toolkits.axisartist.floating_axes features   
+
+   Integral as the area under a curve   
+
+   Poly Editor   
+
+   Trifinder Event Demo   
+
+   Annotations

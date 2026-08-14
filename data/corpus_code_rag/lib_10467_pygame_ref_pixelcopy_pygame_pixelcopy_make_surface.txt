@@ -1,0 +1,4 @@
+# pygame.ref.pixelcopy#pygame.pixelcopy.make_surface
+
+pygame.pixelcopy.make_surface() 
+ Copy an array to a new surface pygame.pixelcopy.make_surface(array) -> Surface  Create a new Surface that best resembles the data and format of the array. The array can be 2D or 3D with any sized integer values.

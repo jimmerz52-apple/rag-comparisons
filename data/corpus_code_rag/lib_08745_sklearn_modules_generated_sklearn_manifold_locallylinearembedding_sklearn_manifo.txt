@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.manifold.locallylinearembedding#sklearn.manifold.LocallyLinearEmbedding.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Compute the embedding vectors for data X and transform X.  Parameters 
+ 
+Xarray-like of shape [n_samples, n_features] 
+
+training set.  
+yIgnored 
+  Returns 
+ 
+X_newarray-like, shape (n_samples, n_components)

@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.writeframesraw
+
+aifc.writeframesraw(data)  
+Like writeframes(), except that the header of the audio file is not updated.  Changed in version 3.4: Any bytes-like object is now accepted.

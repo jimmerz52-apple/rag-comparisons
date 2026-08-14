@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.cluster.spectralcoclustering#sklearn.cluster.SpectralCoclustering.get_shape
+
+get_shape(i) [source]
+ 
+Shape of the i’th bicluster.  Parameters 
+ 
+iint 
+
+The index of the cluster.    Returns 
+ 
+n_rowsint 
+
+Number of rows in the bicluster.  
+n_colsint 
+
+Number of columns in the bicluster.

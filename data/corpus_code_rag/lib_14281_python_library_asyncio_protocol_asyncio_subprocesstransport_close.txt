@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport.close
+
+SubprocessTransport.close()  
+Kill the subprocess by calling the kill() method. If the subprocess hasn’t returned yet, and close transports of stdin, stdout, and stderr pipes.

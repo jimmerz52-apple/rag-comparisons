@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.properties
+
+matplotlib.artist.Artist.properties   Artist.properties()[source]
+ 
+Return a dictionary of all the properties of the artist.

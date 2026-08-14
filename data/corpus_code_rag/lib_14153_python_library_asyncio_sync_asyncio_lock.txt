@@ -1,0 +1,25 @@
+# python.library.asyncio-sync#asyncio.Lock
+
+class asyncio.Lock(*, loop=None)  
+Implements a mutex lock for asyncio tasks. Not thread-safe. An asyncio lock can be used to guarantee exclusive access to a shared resource. The preferred way to use a Lock is an async with statement: lock = asyncio.Lock()
+
+# ... later
+async with lock:
+    # access shared state
+ which is equivalent to: lock = asyncio.Lock()
+
+# ... later
+await lock.acquire()
+try:
+    # access shared state
+finally:
+    lock.release()
+  Deprecated since version 3.8, will be removed in version 3.10: The loop parameter.   
+coroutine acquire()  
+Acquire the lock. This method waits until the lock is unlocked, sets it to locked and returns True. When more than one coroutine is blocked in acquire() waiting for the lock to be unlocked, only one coroutine eventually proceeds. Acquiring a lock is fair: the coroutine that proceeds will be the first coroutine that started waiting on the lock. 
+  
+release()  
+Release the lock. When the lock is locked, reset it to unlocked and return. If the lock is unlocked, a RuntimeError is raised. 
+  
+locked()  
+Return True if the lock is locked.

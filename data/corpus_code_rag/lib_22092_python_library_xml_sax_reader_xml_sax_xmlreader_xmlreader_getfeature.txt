@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.getFeature
+
+XMLReader.getFeature(featurename)  
+Return the current setting for feature featurename. If the feature is not recognized, SAXNotRecognizedException is raised. The well-known featurenames are listed in the module xml.sax.handler.

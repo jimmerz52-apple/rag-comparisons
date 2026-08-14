@@ -1,0 +1,9 @@
+# python.library.ast#ast.BinOp
+
+class ast.BinOp(left, op, right)  
+A binary operation (like addition or division). op is the operator, and left and right are any expression nodes. >>> print(ast.dump(ast.parse('x + y', mode='eval'), indent=4))
+Expression(
+    body=BinOp(
+        left=Name(id='x', ctx=Load()),
+        op=Add(),
+        right=Name(id='y', ctx=Load())))

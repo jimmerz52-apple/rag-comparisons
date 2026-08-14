@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.ShareableList.index
+
+index(value)  
+Returns first index position of value. Raises ValueError if value is not present.

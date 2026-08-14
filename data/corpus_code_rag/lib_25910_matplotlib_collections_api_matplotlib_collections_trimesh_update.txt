@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.TriMesh.update
+
+update(props)[source]
+ 
+Update this artist's properties from the dict props.  Parameters 
+ 
+propsdict

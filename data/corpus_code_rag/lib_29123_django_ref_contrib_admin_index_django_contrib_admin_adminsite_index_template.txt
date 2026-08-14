@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.index_template
+
+AdminSite.index_template  
+Path to a custom template that will be used by the admin site main index view.

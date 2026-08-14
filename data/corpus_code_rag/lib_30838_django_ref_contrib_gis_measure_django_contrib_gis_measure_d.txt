@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.measure#django.contrib.gis.measure.D
+
+class D  
+Alias for Distance class.

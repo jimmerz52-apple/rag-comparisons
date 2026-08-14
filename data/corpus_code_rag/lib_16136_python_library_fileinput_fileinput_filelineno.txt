@@ -1,0 +1,4 @@
+# python.library.fileinput#fileinput.filelineno
+
+fileinput.filelineno()  
+Return the line number in the current file. Before the first line has been read, returns 0. After the last line of the last file has been read, returns the line number of that line within the file.

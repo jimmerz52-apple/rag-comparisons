@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.autoscale_None
+
+autoscale_None()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array, changing only limits that are None

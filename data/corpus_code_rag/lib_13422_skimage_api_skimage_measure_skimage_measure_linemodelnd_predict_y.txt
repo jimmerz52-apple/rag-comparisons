@@ -1,0 +1,17 @@
+# skimage.api.skimage.measure#skimage.measure.LineModelND.predict_y
+
+predict_y(x, params=None) [source]
+ 
+Predict y-coordinates for 2D lines using the estimated model. Alias for: predict(x, axis=0)[:, 1]
+  Parameters 
+ 
+xarray 
+
+x-coordinates.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+yarray 
+
+Predicted y-coordinates.

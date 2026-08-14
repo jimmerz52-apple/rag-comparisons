@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.undobufferentries
+
+turtle.undobufferentries()  
+Return number of entries in the undobuffer. >>> while undobufferentries():
+...     undo()

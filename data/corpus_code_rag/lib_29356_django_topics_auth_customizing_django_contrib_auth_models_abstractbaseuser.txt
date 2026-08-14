@@ -1,0 +1,36 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser
+
+class models.AbstractBaseUser  
+ 
+get_username()  
+Returns the value of the field nominated by USERNAME_FIELD. 
+  
+clean()  
+Normalizes the username by calling normalize_username(). If you override this method, be sure to call super() to retain the normalization. 
+  
+classmethod get_email_field_name()  
+Returns the name of the email field specified by the EMAIL_FIELD attribute. Defaults to 'email' if EMAIL_FIELD isn’t specified. 
+  
+classmethod normalize_username(username)  
+Applies NFKC Unicode normalization to usernames so that visually identical characters with different Unicode code points are considered identical. 
+  
+is_authenticated  
+Read-only attribute which is always True (as opposed to AnonymousUser.is_authenticated which is always False). This is a way to tell if the user has been authenticated. This does not imply any permissions and doesn’t check if the user is active or has a valid session. Even though normally you will check this attribute on request.user to find out whether it has been populated by the AuthenticationMiddleware (representing the currently logged-in user), you should know this attribute is True for any User instance. 
+  
+is_anonymous  
+Read-only attribute which is always False. This is a way of differentiating User and AnonymousUser objects. Generally, you should prefer using is_authenticated to this attribute. 
+  
+set_password(raw_password)  
+Sets the user’s password to the given raw string, taking care of the password hashing. Doesn’t save the AbstractBaseUser object. When the raw_password is None, the password will be set to an unusable password, as if set_unusable_password() were used. 
+  
+check_password(raw_password)  
+Returns True if the given raw string is the correct password for the user. (This takes care of the password hashing in making the comparison.) 
+  
+set_unusable_password()  
+Marks the user as having no password set. This isn’t the same as having a blank string for a password. check_password() for this user will never return True. Doesn’t save the AbstractBaseUser object. You may need this if authentication for your application takes place against an existing external source such as an LDAP directory. 
+  
+has_usable_password()  
+Returns False if set_unusable_password() has been called for this user. 
+  
+get_session_auth_hash()  
+Returns an HMAC of the password field. Used for Session invalidation on password change.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.semimonthend.is_anchored
+
+pandas.tseries.offsets.SemiMonthEnd.is_anchored   SemiMonthEnd.is_anchored()

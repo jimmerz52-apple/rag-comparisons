@@ -1,0 +1,21 @@
+# skimage.api.skimage.morphology#skimage.morphology.convex_hull_image
+
+skimage.morphology.convex_hull_image(image, offset_coordinates=True, tolerance=1e-10) [source]
+ 
+Compute the convex hull image of a binary image. The convex hull is the set of pixels included in the smallest convex polygon that surround all white pixels in the input image.  Parameters 
+ 
+imagearray 
+
+Binary input image. This array is cast to bool before processing.  
+offset_coordinatesbool, optional 
+
+If True, a pixel at coordinate, e.g., (4, 7) will be represented by coordinates (3.5, 7), (4.5, 7), (4, 6.5), and (4, 7.5). This adds some “extent” to a pixel when computing the hull.  
+tolerancefloat, optional 
+
+Tolerance when determining whether a point is inside the hull. Due to numerical floating point errors, a tolerance of 0 can result in some points erroneously being classified as being outside the hull.    Returns 
+ 
+hull(M, N) array of bool 
+
+Binary image with pixels in convex hull set to True.     References  
+1  
+https://blogs.mathworks.com/steve/2011/10/04/binary-image-convex-hull-algorithm-notes/

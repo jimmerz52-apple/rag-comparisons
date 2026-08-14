@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.headers
+
+HttpResponse.headers  
+ New in Django 3.2.  A case insensitive, dict-like object that provides an interface to all HTTP headers on the response. See Setting header fields.

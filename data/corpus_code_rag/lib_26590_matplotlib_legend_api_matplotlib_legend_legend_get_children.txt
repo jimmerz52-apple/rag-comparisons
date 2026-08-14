@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_children
+
+get_children()[source]
+ 
+Return a list of the child Artists of this Artist.

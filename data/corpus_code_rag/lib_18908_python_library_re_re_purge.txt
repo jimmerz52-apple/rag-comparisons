@@ -1,0 +1,4 @@
+# python.library.re#re.purge
+
+re.purge()  
+Clear the regular expression cache.

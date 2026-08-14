@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_height
+
+get_height() 
+ get the height of the Surface get_height() -> height  Return the height of the Surface in pixels.

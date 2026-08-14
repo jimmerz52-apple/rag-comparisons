@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTPTemporaryError
+
+exception nntplib.NNTPTemporaryError  
+Exception raised when a response code in the range 400–499 is received.

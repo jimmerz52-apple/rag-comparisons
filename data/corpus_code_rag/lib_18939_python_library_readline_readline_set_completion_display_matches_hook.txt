@@ -1,0 +1,4 @@
+# python.library.readline#readline.set_completion_display_matches_hook
+
+readline.set_completion_display_matches_hook([function])  
+Set or remove the completion display function. If function is specified, it will be used as the new completion display function; if omitted or None, any completion display function already installed is removed. This sets or clears the rl_completion_display_matches_hook callback in the underlying library. The completion display function is called as function(substitution, [matches], longest_match_length) once each time matches need to be displayed.

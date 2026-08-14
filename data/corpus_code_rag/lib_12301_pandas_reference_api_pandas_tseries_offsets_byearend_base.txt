@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.byearend.base
+
+pandas.tseries.offsets.BYearEnd.base   BYearEnd.base
+ 
+Returns a copy of the calling offset object with n=1 and all other attributes equal.

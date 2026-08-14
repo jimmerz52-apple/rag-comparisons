@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.path3dcollection#mpl_toolkits.mplot3d.art3d.Path3DCollection.set_sort_zpos
+
+set_sort_zpos(val)[source]
+ 
+Set the position to use for z-sorting.

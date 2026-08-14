@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.seek
+
+seek(pos, whence=0)  
+Set the chunk’s current position. The whence argument is optional and defaults to 0 (absolute file positioning); other values are 1 (seek relative to the current position) and 2 (seek relative to the file’s end). There is no return value. If the underlying file does not allow seek, only forward seeks are allowed.

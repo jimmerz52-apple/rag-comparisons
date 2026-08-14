@@ -1,0 +1,7 @@
+# 557
+Task: 557
+
+# Write a function to toggle characters case in a string.
+def toggle_string(string):
+ string1 = string.swapcase()
+ return string1

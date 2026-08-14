@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.SigmoidTransform
+
+class torch.distributions.transforms.SigmoidTransform(cache_size=0) [source]
+ 
+Transform via the mapping y=11+exp⁡(−x)y = \frac{1}{1 + \exp(-x)}  and x=logit(y)x = \text{logit}(y) .

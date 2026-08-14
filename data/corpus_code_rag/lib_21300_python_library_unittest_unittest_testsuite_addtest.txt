@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestSuite.addTest
+
+addTest(test)  
+Add a TestCase or TestSuite to the suite.

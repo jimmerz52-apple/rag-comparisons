@@ -1,0 +1,9 @@
+# flask.api.index#flask.request_tearing_down
+
+flask.request_tearing_down  
+This signal is sent when the request is tearing down. This is always called, even if an exception is caused. Currently functions listening to this signal are called after the regular teardown handlers, but this is not something you can rely on. Example subscriber: def close_db_connection(sender, **extra):
+    session.close()
+
+from flask import request_tearing_down
+request_tearing_down.connect(close_db_connection, app)
+ As of Flask 0.9, this will also be passed an exc keyword argument that has a reference to the exception that caused the teardown if there was one.

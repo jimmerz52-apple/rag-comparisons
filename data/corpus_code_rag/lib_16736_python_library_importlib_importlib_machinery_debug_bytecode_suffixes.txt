@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.DEBUG_BYTECODE_SUFFIXES
+
+importlib.machinery.DEBUG_BYTECODE_SUFFIXES  
+A list of strings representing the file suffixes for non-optimized bytecode modules.  New in version 3.3.   Deprecated since version 3.5: Use BYTECODE_SUFFIXES instead.

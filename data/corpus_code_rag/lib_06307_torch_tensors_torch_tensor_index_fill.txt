@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.index_fill
+
+index_fill(tensor1, dim, index, value) → Tensor  
+Out-of-place version of torch.Tensor.index_fill_(). tensor1 corresponds to self in torch.Tensor.index_fill_().

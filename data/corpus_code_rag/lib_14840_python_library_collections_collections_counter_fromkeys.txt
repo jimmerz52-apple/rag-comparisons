@@ -1,0 +1,4 @@
+# python.library.collections#collections.Counter.fromkeys
+
+fromkeys(iterable)  
+This class method is not implemented for Counter objects.

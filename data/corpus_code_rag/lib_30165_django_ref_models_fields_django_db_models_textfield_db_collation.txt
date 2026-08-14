@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.TextField.db_collation
+
+TextField.db_collation  
+ New in Django 3.2.  The database collation name of the field.  Note Collation names are not standardized. As such, this will not be portable across multiple database backends.   Oracle Oracle does not support collations for a TextField.

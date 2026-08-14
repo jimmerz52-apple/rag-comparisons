@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.clear
+
+pygame.event.clear() 
+ remove all events from the queue clear(eventtype=None) -> None clear(eventtype=None, pump=True) -> None  Removes all events from the queue. If eventtype is given, removes the given event or sequence of events. This has the same effect as pygame.event.get() except None is returned. It can be slightly more efficient when clearing a full event queue. If pump is True (the default), then pygame.event.pump() will be called.  Changed in pygame 1.9.5: Added pump argument

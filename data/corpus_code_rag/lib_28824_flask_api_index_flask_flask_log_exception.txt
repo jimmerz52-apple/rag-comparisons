@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.log_exception
+
+log_exception(exc_info)  
+Logs an exception. This is called by handle_exception() if debugging is disabled and right before the handler is called. The default implementation logs the exception as error on the logger.  Changelog New in version 0.8.   Parameters 
+exc_info (Union[Tuple[type, BaseException, types.TracebackType], Tuple[None, None, None]]) –   Return type 
+None

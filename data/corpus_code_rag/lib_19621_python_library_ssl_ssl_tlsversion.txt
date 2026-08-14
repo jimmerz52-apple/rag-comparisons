@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.TLSVersion
+
+class ssl.TLSVersion  
+enum.IntEnum collection of SSL and TLS versions for SSLContext.maximum_version and SSLContext.minimum_version.  New in version 3.7.

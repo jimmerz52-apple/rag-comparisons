@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTestParser.get_doctest
+
+get_doctest(string, globs, name, filename, lineno)  
+Extract all doctest examples from the given string, and collect them into a DocTest object. globs, name, filename, and lineno are attributes for the new DocTest object. See the documentation for DocTest for more information.

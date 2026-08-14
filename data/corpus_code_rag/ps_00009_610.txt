@@ -1,0 +1,6 @@
+# 610
+Task: 610
+
+# Write a python function to remove the k'th element from a given list.
+def remove_kth_element(list1, L):
+    return  list1[:L-1] + list1[L:]

@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_frame_on
+
+get_frame_on()[source]
+ 
+Get whether the legend box patch is drawn.

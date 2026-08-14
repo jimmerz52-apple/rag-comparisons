@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.le_
+
+le_(other) → Tensor  
+In-place version of le().

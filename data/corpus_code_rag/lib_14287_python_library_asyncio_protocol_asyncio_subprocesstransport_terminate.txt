@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport.terminate
+
+SubprocessTransport.terminate()  
+Stop the subprocess. On POSIX systems, this method sends SIGTERM to the subprocess. On Windows, the Windows API function TerminateProcess() is called to stop the subprocess. See also subprocess.Popen.terminate().

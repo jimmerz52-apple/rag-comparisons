@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Compat32.header_store_parse
+
+header_store_parse(name, value)  
+The name and value are returned unmodified.

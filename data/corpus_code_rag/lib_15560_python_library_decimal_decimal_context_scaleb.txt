@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.scaleb
+
+scaleb(x, y)  
+Returns the first operand after adding the second value its exp.

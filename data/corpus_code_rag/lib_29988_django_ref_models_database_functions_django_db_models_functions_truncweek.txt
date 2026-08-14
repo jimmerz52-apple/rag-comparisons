@@ -1,0 +1,5 @@
+# django.ref.models.database-functions#django.db.models.functions.TruncWeek
+
+class TruncWeek(expression, output_field=None, tzinfo=None, is_dst=None, **extra)  
+Truncates to midnight on the Monday of the week.  
+kind = 'week'

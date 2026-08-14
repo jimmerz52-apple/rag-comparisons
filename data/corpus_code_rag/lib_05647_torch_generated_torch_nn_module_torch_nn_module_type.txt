@@ -1,0 +1,8 @@
+# torch.generated.torch.nn.module#torch.nn.Module.type
+
+type(dst_type) [source]
+ 
+Casts all parameters and buffers to dst_type.  Parameters 
+dst_type (type or string) – the desired type  Returns 
+self  Return type 
+Module

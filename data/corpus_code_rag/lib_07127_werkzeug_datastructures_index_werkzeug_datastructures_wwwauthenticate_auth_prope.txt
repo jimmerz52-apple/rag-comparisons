@@ -1,0 +1,6 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.WWWAuthenticate.auth_property
+
+static auth_property(name, doc=None)  
+A static helper function for Authentication subclasses to add extra authentication system properties onto a class: class FooAuthenticate(WWWAuthenticate):
+    special_realm = auth_property('special_realm')
+ For more information have a look at the sourcecode to see how the regular properties (realm etc.) are implemented.

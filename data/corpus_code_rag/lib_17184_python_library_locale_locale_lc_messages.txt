@@ -1,0 +1,4 @@
+# python.library.locale#locale.LC_MESSAGES
+
+locale.LC_MESSAGES  
+Locale category for message display. Python currently does not support application specific locale-aware messages. Messages displayed by the operating system, like those returned by os.strerror() might be affected by this category.

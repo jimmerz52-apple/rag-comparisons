@@ -1,0 +1,22 @@
+# sklearn.modules.generated.sklearn.model_selection.leaveonegroupout#sklearn.model_selection.LeaveOneGroupOut.split
+
+split(X, y=None, groups=None) [source]
+ 
+Generate indices to split data into training and test set.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,), default=None 
+
+The target variable for supervised learning problems.  
+groupsarray-like of shape (n_samples,) 
+
+Group labels for the samples used while splitting the dataset into train/test set.    Yields 
+ 
+trainndarray 
+
+The training set indices for that split.  
+testndarray 
+
+The testing set indices for that split.

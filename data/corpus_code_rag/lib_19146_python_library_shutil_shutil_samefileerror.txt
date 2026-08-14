@@ -1,0 +1,4 @@
+# python.library.shutil#shutil.SameFileError
+
+exception shutil.SameFileError  
+This exception is raised if source and destination in copyfile() are the same file.  New in version 3.4.

@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Response.request
+
+request  
+The request data that stimulated the response.

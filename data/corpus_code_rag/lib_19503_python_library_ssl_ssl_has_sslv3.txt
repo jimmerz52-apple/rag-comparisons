@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_SSLv3
+
+ssl.HAS_SSLv3  
+Whether the OpenSSL library has built-in support for the SSL 3.0 protocol.  New in version 3.7.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cluster.meanshift#sklearn.cluster.MeanShift.predict
+
+predict(X) [source]
+ 
+Predict the closest cluster each sample in X belongs to.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+New data to predict.    Returns 
+ 
+labelsndarray of shape (n_samples,) 
+
+Index of the cluster each sample belongs to.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rmul__
+
+numpy.ma.MaskedArray.__rmul__ method   ma.MaskedArray.__rmul__(other)[source]
+ 
+Multiply other by self, and return a new masked array.

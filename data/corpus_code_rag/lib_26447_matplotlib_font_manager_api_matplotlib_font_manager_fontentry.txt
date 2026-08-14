@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontEntry
+
+classmatplotlib.font_manager.FontEntry(fname:str='', name:str='', style:str='normal', variant:str='normal', weight:str='normal', stretch:str='normal', size:str='medium')
+ 
+A class for storing Font properties. It is used when populating the font lookup dictionary.

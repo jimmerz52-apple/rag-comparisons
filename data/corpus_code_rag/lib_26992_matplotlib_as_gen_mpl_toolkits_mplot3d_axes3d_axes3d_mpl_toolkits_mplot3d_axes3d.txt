@@ -1,0 +1,20 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_zticks
+
+set_zticks(ticks, labels=None, *, minor=False, **kwargs)[source]
+ 
+Set the zaxis' tick locations and optionally labels. If necessary, the view limits of the Axis are expanded so that all given ticks are visible.  Parameters 
+ 
+tickslist of floats
+
+
+List of tick locations.  
+labelslist of str, optional
+
+
+List of tick labels. If not set, the labels show the data value.  
+minorbool, default: False
+
+
+If False, set the major ticks; if True, the minor ticks.  **kwargs
+
+Text properties for the labels. These take effect only if you pass labels. In other cases, please use tick_params.     Notes The mandatory expansion of the view limits is an intentional design choice to prevent the surprise of a non-visible tick. If you need other limits, you should set the limits explicitly after setting the ticks.

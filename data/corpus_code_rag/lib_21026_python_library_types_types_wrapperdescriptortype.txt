@@ -1,0 +1,4 @@
+# python.library.types#types.WrapperDescriptorType
+
+types.WrapperDescriptorType  
+The type of methods of some built-in data types and base classes such as object.__init__() or object.__lt__().  New in version 3.7.

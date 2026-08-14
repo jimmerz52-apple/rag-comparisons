@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.debug
+
+ZipFile.debug  
+The level of debug output to use. This may be set from 0 (the default, no output) to 3 (the most output). Debugging information is written to sys.stdout.

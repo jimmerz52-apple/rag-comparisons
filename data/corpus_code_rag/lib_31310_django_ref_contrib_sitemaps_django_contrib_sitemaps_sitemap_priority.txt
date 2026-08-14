@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.priority
+
+priority  
+Optional. Either a method or attribute. If it’s a method, it should take one argument – an object as returned by items() – and return that object’s priority as either a string or float. If it’s an attribute, its value should be either a string or float representing the priority of every object returned by items(). Example values for priority: 0.4, 1.0. The default priority of a page is 0.5. See the sitemaps.org documentation for more.

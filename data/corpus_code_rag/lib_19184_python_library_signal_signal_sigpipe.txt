@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGPIPE
+
+signal.SIGPIPE  
+Broken pipe: write to pipe with no readers. Default action is to ignore the signal. Availability: Unix.

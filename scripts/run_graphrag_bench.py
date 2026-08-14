@@ -33,7 +33,7 @@ METHODS = [
 
 
 def main() -> None:
-    n_per = int(sys.argv[2]) if len(sys.argv) > 2 else 2
+    n_per = int(sys.argv[2]) if len(sys.argv) > 2 else 0  # 0 = all questions in the novel
     source = sys.argv[3] if len(sys.argv) > 3 else "Novel-4128"
     print(
         f"Building GraphRAG-Bench Novel subset; n_per_type={n_per}; "

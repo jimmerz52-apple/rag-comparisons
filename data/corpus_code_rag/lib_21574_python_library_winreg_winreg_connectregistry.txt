@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.ConnectRegistry
+
+winreg.ConnectRegistry(computer_name, key)  
+Establishes a connection to a predefined registry handle on another computer, and returns a handle object. computer_name is the name of the remote computer, of the form r"\\computername". If None, the local computer is used. key is the predefined handle to connect to. The return value is the handle of the opened key. If the function fails, an OSError exception is raised. Raises an auditing event winreg.ConnectRegistry with arguments computer_name, key.  Changed in version 3.3: See above.

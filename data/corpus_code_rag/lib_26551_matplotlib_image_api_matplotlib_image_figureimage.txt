@@ -1,0 +1,60 @@
+# matplotlib.image_api#matplotlib.image.FigureImage
+
+classmatplotlib.image.FigureImage(fig, cmap=None, norm=None, offsetx=0, offsety=0, origin=None, **kwargs)[source]
+ 
+Bases: matplotlib.image._ImageBase An image attached to a figure. cmap is a colors.Colormap instance norm is a colors.Normalize instance to map luminance to 0-1 kwargs are an optional list of Artist keyword args   get_extent()[source]
+ 
+Return the image extent as tuple (left, right, bottom, top). 
+   make_image(renderer, magnification=1.0, unsampled=False)[source]
+ 
+Normalize, rescale, and colormap this image's data for rendering using renderer, with the given magnification. If unsampled is True, the image will not be scaled, but an appropriate affine transformation will be returned instead.  Returns 
+ 
+image(M, N, 4) uint8 array
+
+
+The RGBA image, resampled unless unsampled is True.  
+x, yfloat
+
+
+The upper left corner where the image should be drawn, in pixel space.  
+transAffine2D
+
+
+The affine transformation from image to pixel space.     
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, array=<UNSET>, clim=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, cmap=<UNSET>, data=<UNSET>, filternorm=<UNSET>, filterrad=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, interpolation=<UNSET>, interpolation_stage=<UNSET>, label=<UNSET>, norm=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, resample=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha float or 2D array-like or None  
+animated bool  
+array array-like  
+clim (vmin: float, vmax: float)  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+cmap Colormap or str or None  
+data unknown  
+figure Figure  
+filternorm bool  
+filterrad positive float  
+gid str  
+in_layout bool  
+interpolation {'antialiased', 'nearest', 'bilinear', 'bicubic', 'spline16', 'spline36', 'hanning', 'hamming', 'hermite', 'kaiser', 'quadric', 'catrom', 'gaussian', 'bessel', 'mitchell', 'sinc', 'lanczos', 'none'} or None  
+interpolation_stage {'data', 'rgba'} or None  
+label object  
+norm Normalize or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+resample bool or None  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   
+   set_data(A)[source]
+ 
+Set the image array. 
+   zorder=0

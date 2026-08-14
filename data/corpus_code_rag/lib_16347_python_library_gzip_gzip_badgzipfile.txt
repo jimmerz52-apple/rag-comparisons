@@ -1,0 +1,4 @@
+# python.library.gzip#gzip.BadGzipFile
+
+exception gzip.BadGzipFile  
+An exception raised for invalid gzip files. It inherits OSError. EOFError and zlib.error can also be raised for invalid gzip files.  New in version 3.8.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.ticks#mpl_toolkits.axisartist.axis_artist.Ticks.get_color
+
+get_color()[source]
+ 
+Return the line color. See also set_color.

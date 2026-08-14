@@ -1,0 +1,11 @@
+# torch.fx#torch.fx.Graph.inserting_before
+
+inserting_before(n=None) [source]
+ 
+Set the point at which create_node and companion methods will insert into the graph. When used within a ‘with’ statement, this will temporary set the insert point and then restore it when the with statement exits: with g.inserting_before(n):
+    ... # inserting before node n
+... # insert point restored to what it was previously
+g.inserting_before(n) #  set the insert point permanently
+  Parameters 
+n (Optional[Node]) – The node before which to insert. If None this will insert before the beginning of the entire graph.  Returns 
+A resource manager that will restore the insert point on __exit__.

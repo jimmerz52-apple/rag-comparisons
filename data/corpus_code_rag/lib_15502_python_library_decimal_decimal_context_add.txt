@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.add
+
+add(x, y)  
+Return the sum of x and y.

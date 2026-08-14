@@ -1,0 +1,7 @@
+# django.ref.models.relations#django.db.models.fields.related.RelatedManager.remove
+
+remove(*objs, bulk=True)  
+Removes the specified model objects from the related object set: >>> b = Blog.objects.get(id=1)
+>>> e = Entry.objects.get(id=234)
+>>> b.entry_set.remove(e) # Disassociates Entry e from Blog b.
+ Similar to add(), e.save() is called in the example above to perform the update. Using remove() with a many-to-many relationship, however, will delete the relationships using QuerySet.delete() which means no model save() methods are called; listen to the m2m_changed signal if you wish to execute custom code when a relationship is deleted. For many-to-many relationships remove() accepts either model instances or field values, normally primary keys, as the *objs argument. For ForeignKey objects, this method only exists if null=True. If the related field can’t be set to None (NULL), then an object can’t be removed from a relation without being added to another. In the above example, removing e from b.entry_set() is equivalent to doing e.blog = None, and because the blog ForeignKey doesn’t have null=True, this is invalid. For ForeignKey objects, this method accepts a bulk argument to control how to perform the operation. If True (the default), QuerySet.update() is used. If bulk=False, the save() method of each individual model instance is called instead. This triggers the pre_save and post_save signals and comes at the expense of performance. For many-to-many relationships, the bulk keyword argument doesn’t exist.

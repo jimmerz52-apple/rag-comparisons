@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolBase.destroy
+
+destroy()[source]
+ 
+Destroy the tool. This method is called by ToolManager.remove_tool.

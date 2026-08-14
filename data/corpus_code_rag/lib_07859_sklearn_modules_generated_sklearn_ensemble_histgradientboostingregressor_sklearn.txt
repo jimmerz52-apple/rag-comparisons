@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.histgradientboostingregressor#sklearn.ensemble.HistGradientBoostingRegressor.staged_predict
+
+staged_predict(X) [source]
+ 
+Predict regression target for each iteration This method allows monitoring (i.e. determine error on testing set) after each stage.  New in version 0.24.   Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input samples.    Yields 
+ 
+ygenerator of ndarray of shape (n_samples,) 
+
+The predicted values of the input samples, for each iteration.

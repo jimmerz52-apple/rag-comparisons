@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.colorspace
+
+pygame.camera.colorspace() 
+ Surface colorspace conversion colorspace(Surface, format, DestSurface = None) -> Surface  Allows for conversion from "RGB" to a destination colorspace of "HSV" or "YUV". The source and destination surfaces must be the same size and pixel depth. This is useful for computer vision on devices with limited processing power. Capture as small of an image as possible, transform.scale() it even smaller, and then convert the colorspace to YUV or HSV before doing any processing on it.

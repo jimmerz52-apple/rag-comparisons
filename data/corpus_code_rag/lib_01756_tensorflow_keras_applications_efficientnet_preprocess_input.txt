@@ -1,0 +1,7 @@
+# tensorflow.keras.applications.efficientnet.preprocess_input
+
+tf.keras.applications.efficientnet.preprocess_input  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.applications.efficientnet.preprocess_input  
+tf.keras.applications.efficientnet.preprocess_input(
+    x, data_format=None
+)

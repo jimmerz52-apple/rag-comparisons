@@ -1,0 +1,44 @@
+# skimage.api.skimage.feature#skimage.feature.corner_subpix
+
+skimage.feature.corner_subpix(image, corners, window_size=11, alpha=0.99) [source]
+ 
+Determine subpixel position of corners. A statistical test decides whether the corner is defined as the intersection of two edges or a single peak. Depending on the classification result, the subpixel corner location is determined based on the local covariance of the grey-values. If the significance level for either statistical test is not sufficient, the corner cannot be classified, and the output subpixel position is set to NaN.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+corners(N, 2) ndarray 
+
+Corner coordinates (row, col).  
+window_sizeint, optional 
+
+Search window size for subpixel estimation.  
+alphafloat, optional 
+
+Significance level for corner classification.    Returns 
+ 
+positions(N, 2) ndarray 
+
+Subpixel corner positions. NaN for “not classified” corners.     References  
+1  
+Förstner, W., & Gülch, E. (1987, June). A fast operator for detection and precise location of distinct points, corners and centres of circular features. In Proc. ISPRS intercommission conference on fast processing of photogrammetric data (pp. 281-305). https://cseweb.ucsd.edu/classes/sp02/cse252/foerstner/foerstner.pdf  
+2  
+https://en.wikipedia.org/wiki/Corner_detection   Examples >>> from skimage.feature import corner_harris, corner_peaks, corner_subpix
+>>> img = np.zeros((10, 10))
+>>> img[:5, :5] = 1
+>>> img[5:, 5:] = 1
+>>> img.astype(int)
+array([[1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+       [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+       [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+       [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+       [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]])
+>>> coords = corner_peaks(corner_harris(img), min_distance=2)
+>>> coords_subpix = corner_subpix(img, coords, window_size=7)
+>>> coords_subpix
+array([[4.5, 4.5]])

@@ -1,0 +1,73 @@
+# sklearn.modules.generated.sklearn.metrics.roccurvedisplay
+
+sklearn.metrics.RocCurveDisplay  
+class sklearn.metrics.RocCurveDisplay(*, fpr, tpr, roc_auc=None, estimator_name=None, pos_label=None) [source]
+ 
+ROC Curve visualization. It is recommend to use plot_roc_curve to create a visualizer. All parameters are stored as attributes. Read more in the User Guide.  Parameters 
+ 
+fprndarray 
+
+False positive rate.  
+tprndarray 
+
+True positive rate.  
+roc_aucfloat, default=None 
+
+Area under ROC curve. If None, the roc_auc score is not shown.  
+estimator_namestr, default=None 
+
+Name of estimator. If None, the estimator name is not shown.  
+pos_labelstr or int, default=None 
+
+The class considered as the positive class when computing the roc auc metrics. By default, estimators.classes_[1] is considered as the positive class.  New in version 0.24.     Attributes 
+ 
+line_matplotlib Artist 
+
+ROC Curve.  
+ax_matplotlib Axes 
+
+Axes with ROC Curve.  
+figure_matplotlib Figure 
+
+Figure containing the curve.      See also  
+roc_curve
+
+
+Compute Receiver operating characteristic (ROC) curve.  
+plot_roc_curve
+
+
+Plot Receiver operating characteristic (ROC) curve.  
+roc_auc_score
+
+
+Compute the area under the ROC curve.    Examples >>> import matplotlib.pyplot as plt  
+>>> import numpy as np
+>>> from sklearn import metrics
+>>> y = np.array([0, 0, 1, 1])
+>>> pred = np.array([0.1, 0.4, 0.35, 0.8])
+>>> fpr, tpr, thresholds = metrics.roc_curve(y, pred)
+>>> roc_auc = metrics.auc(fpr, tpr)
+>>> display = metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc,                                          estimator_name='example estimator')
+>>> display.plot()  
+>>> plt.show()      
+ Methods  
+plot([ax, name]) Plot visualization    
+plot(ax=None, *, name=None, **kwargs) [source]
+ 
+Plot visualization Extra keyword arguments will be passed to matplotlib’s plot.  Parameters 
+ 
+axmatplotlib axes, default=None 
+
+Axes object to plot on. If None, a new figure and axes is created.  
+namestr, default=None 
+
+Name of ROC Curve for labeling. If None, use the name of the estimator.    Returns 
+ 
+displayRocCurveDisplay 
+
+Object that stores computed values.     
+ 
+ Examples using sklearn.metrics.RocCurveDisplay
+ 
+  Visualizations with Display Objects

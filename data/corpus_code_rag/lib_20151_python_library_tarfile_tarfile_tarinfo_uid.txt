@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.uid
+
+TarInfo.uid  
+User ID of the user who originally stored this member.

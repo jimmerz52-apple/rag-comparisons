@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.FigureCanvas
+
+matplotlib.backends.backend_webagg.FigureCanvas[source]
+ 
+alias of matplotlib.backends.backend_webagg.FigureCanvasWebAgg

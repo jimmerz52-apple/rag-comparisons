@@ -1,0 +1,41 @@
+# torch.distributions#torch.distributions.one_hot_categorical.OneHotCategorical
+
+class torch.distributions.one_hot_categorical.OneHotCategorical(probs=None, logits=None, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Creates a one-hot categorical distribution parameterized by probs or logits. Samples are one-hot coded vectors of size probs.size(-1).  Note The probs argument must be non-negative, finite and have a non-zero sum, and it will be normalized to sum to 1 along the last dimension. attr:probs will return this normalized value. The logits argument will be interpreted as unnormalized log probabilities and can therefore be any real number. It will likewise be normalized so that the resulting probabilities sum to 1 along the last dimension. attr:logits will return this normalized value.  See also: torch.distributions.Categorical() for specifications of probs and logits. Example: >>> m = OneHotCategorical(torch.tensor([ 0.25, 0.25, 0.25, 0.25 ]))
+>>> m.sample()  # equal probability of 0, 1, 2, 3
+tensor([ 0.,  0.,  0.,  1.])
+  Parameters 
+ 
+probs (Tensor) – event probabilities 
+logits (Tensor) – event log probabilities (unnormalized)     
+arg_constraints = {'logits': IndependentConstraint(Real(), 1), 'probs': Simplex()} 
+  
+entropy() [source]
+
+  
+enumerate_support(expand=True) [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_enumerate_support = True 
+  
+log_prob(value) [source]
+
+  
+property logits 
+  
+property mean 
+  
+property param_shape 
+  
+property probs 
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+support = OneHot() 
+  
+property variance

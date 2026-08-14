@@ -1,0 +1,13 @@
+# python.library.typing#typing.TypeVar
+
+class typing.TypeVar  
+Type variable. Usage: T = TypeVar('T')  # Can be anything
+A = TypeVar('A', str, bytes)  # Must be str or bytes
+ Type variables exist primarily for the benefit of static type checkers. They serve as the parameters for generic types as well as for generic function definitions. See Generic for more information on generic types. Generic functions work as follows: def repeat(x: T, n: int) -> Sequence[T]:
+    """Return a list containing n references to x."""
+    return [x]*n
+
+def longest(x: A, y: A) -> A:
+    """Return the longest of two strings."""
+    return x if len(x) >= len(y) else y
+ The latter example’s signature is essentially the overloading of (str, str) -> str and (bytes, bytes) -> bytes. Also note that if the arguments are instances of some subclass of str, the return type is still plain str. At runtime, isinstance(x, T) will raise TypeError. In general, isinstance() and issubclass() should not be used with types. Type variables may be marked covariant or contravariant by passing covariant=True or contravariant=True. See PEP 484 for more details. By default type variables are invariant. Alternatively, a type variable may specify an upper bound using bound=<type>. This means that an actual type substituted (explicitly or implicitly) for the type variable must be a subclass of the boundary type, see PEP 484.

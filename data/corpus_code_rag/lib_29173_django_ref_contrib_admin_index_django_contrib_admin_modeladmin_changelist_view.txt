@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.changelist_view
+
+ModelAdmin.changelist_view(request, extra_context=None)  
+Django view for the model instances change list/actions page. See note below.

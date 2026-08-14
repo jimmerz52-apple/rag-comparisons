@@ -1,0 +1,4 @@
+# python.library.test#test.support.unlink
+
+test.support.unlink(filename)  
+Call os.unlink() on filename. On Windows platforms, this is wrapped with a wait loop that checks for the existence fo the file.

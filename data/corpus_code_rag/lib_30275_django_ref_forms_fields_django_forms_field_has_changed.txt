@@ -1,0 +1,3 @@
+# django.ref.forms.fields#django.forms.Field.has_changed
+
+Field.has_changed()

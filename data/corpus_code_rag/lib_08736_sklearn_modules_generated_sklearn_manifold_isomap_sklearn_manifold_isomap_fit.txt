@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.manifold.isomap#sklearn.manifold.Isomap.fit
+
+fit(X, y=None) [source]
+ 
+Compute the embedding vectors for data X  Parameters 
+ 
+X{array-like, sparse graph, BallTree, KDTree, NearestNeighbors} 
+
+Sample data, shape = (n_samples, n_features), in the form of a numpy array, sparse graph, precomputed tree, or NearestNeighbors object.  
+yIgnored 
+  Returns 
+ 
+selfreturns an instance of self.

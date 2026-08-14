@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.guess_extension
+
+mimetypes.guess_extension(type, strict=True)  
+Guess the extension for a file based on its MIME type, given by type. The return value is a string giving a filename extension, including the leading dot ('.'). The extension is not guaranteed to have been associated with any particular data stream, but would be mapped to the MIME type type by guess_type(). If no extension can be guessed for type, None is returned. The optional strict argument has the same meaning as with the guess_type() function.

@@ -1,0 +1,4 @@
+# python.library.os#os.lchown
+
+os.lchown(path, uid, gid)  
+Change the owner and group id of path to the numeric uid and gid. This function will not follow symbolic links. As of Python 3.3, this is equivalent to os.chown(path, uid, gid, follow_symlinks=False). Raises an auditing event os.chown with arguments path, uid, gid, dir_fd. Availability: Unix.  Changed in version 3.6: Accepts a path-like object.

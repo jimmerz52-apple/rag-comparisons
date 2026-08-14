@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.set_inheritable
+
+socket.set_inheritable(inheritable)  
+Set the inheritable flag of the socket’s file descriptor or socket’s handle.  New in version 3.4.

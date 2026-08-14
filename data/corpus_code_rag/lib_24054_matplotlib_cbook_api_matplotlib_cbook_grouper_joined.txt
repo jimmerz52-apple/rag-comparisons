@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Grouper.joined
+
+joined(a, b)[source]
+ 
+Return whether a and b are members of the same set.

@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.register
+
+AdminSite.register(model_or_iterable, admin_class=None, **options)  
+Registers the given model class (or iterable of classes) with the given admin_class. admin_class defaults to ModelAdmin (the default admin options). If keyword arguments are given – e.g. list_display – they’ll be applied as options to the admin class. Raises ImproperlyConfigured if a model is abstract. and django.contrib.admin.sites.AlreadyRegistered if a model is already registered.

@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea.set_text
+
+set_text(s)[source]
+ 
+Set the text of this area as a string.

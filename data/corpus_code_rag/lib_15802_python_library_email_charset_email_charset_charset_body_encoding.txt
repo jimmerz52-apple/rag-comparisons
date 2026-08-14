@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.body_encoding
+
+body_encoding  
+Same as header_encoding, but describes the encoding for the mail message’s body, which indeed may be different than the header encoding. Charset.SHORTEST is not allowed for body_encoding.

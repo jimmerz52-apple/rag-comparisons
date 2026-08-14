@@ -1,0 +1,4 @@
+# python.library.locale#locale.LC_COLLATE
+
+locale.LC_COLLATE  
+Locale category for sorting strings. The functions strcoll() and strxfrm() of the locale module are affected.

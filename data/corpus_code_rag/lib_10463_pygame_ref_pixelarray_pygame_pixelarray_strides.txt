@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.strides
+
+strides 
+ Returns byte offsets for each array dimension. strides -> tuple of int's  A tuple or length ndim byte counts. When a stride is multiplied by the corresponding index it gives the offset of that index from the start of the array. A stride is negative for an array that has is inverted (has a negative step).  New in pygame 1.9.2.

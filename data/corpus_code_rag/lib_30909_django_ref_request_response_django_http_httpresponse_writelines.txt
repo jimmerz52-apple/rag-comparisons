@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.writelines
+
+HttpResponse.writelines(lines)  
+Writes a list of lines to the response. Line separators are not added. This method makes an HttpResponse instance a stream-like object.

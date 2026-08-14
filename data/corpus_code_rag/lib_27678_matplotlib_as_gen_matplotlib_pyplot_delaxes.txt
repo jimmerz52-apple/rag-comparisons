@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.delaxes
+
+matplotlib.pyplot.delaxes   matplotlib.pyplot.delaxes(ax=None)[source]
+ 
+Remove an Axes (defaulting to the current axes) from its figure.

@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.enable_swizzling
+
+pygame.math.enable_swizzling() 
+ globally enables swizzling for vectors. enable_swizzling() -> None  DEPRECATED: Not needed anymore. Will be removed in a later version. Enables swizzling for all vectors until disable_swizzling() is called. By default swizzling is disabled. Lets you get or set multiple coordinates as one attribute, eg vec.xyz = 1, 2, 3.

@@ -1,0 +1,23 @@
+# sklearn.modules.generated.sklearn.linear_model.sgdregressor#sklearn.linear_model.SGDRegressor.fit
+
+fit(X, y, coef_init=None, intercept_init=None, sample_weight=None) [source]
+ 
+Fit linear model with Stochastic Gradient Descent.  Parameters 
+ 
+X{array-like, sparse matrix}, shape (n_samples, n_features) 
+
+Training data  
+yndarray of shape (n_samples,) 
+
+Target values  
+coef_initndarray of shape (n_features,), default=None 
+
+The initial coefficients to warm-start the optimization.  
+intercept_initndarray of shape (1,), default=None 
+
+The initial intercept to warm-start the optimization.  
+sample_weightarray-like, shape (n_samples,), default=None 
+
+Weights applied to individual samples (1. for unweighted).    Returns 
+ 
+selfreturns an instance of self.

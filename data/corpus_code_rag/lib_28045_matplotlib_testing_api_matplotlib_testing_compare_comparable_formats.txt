@@ -1,0 +1,8 @@
+# matplotlib.testing_api#matplotlib.testing.compare.comparable_formats
+
+matplotlib.testing.compare.comparable_formats()[source]
+ 
+Return the list of file formats that compare_images can compare on this system.  Returns 
+ list of str
+
+E.g. ['png', 'pdf', 'svg', 'eps'].

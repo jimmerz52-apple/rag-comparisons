@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.hyperparameter#sklearn.gaussian_process.kernels.Hyperparameter.index
+
+index(value, start=0, stop=sys.maxsize, /)  
+Return first index of value. Raises ValueError if the value is not present.

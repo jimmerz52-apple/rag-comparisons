@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.set_family
+
+set_family(family)[source]
+ 
+Change the font family. May be either an alias (generic name is CSS parlance), such as: 'serif', 'sans-serif', 'cursive', 'fantasy', or 'monospace', a real font name or a list of real font names. Real font names are not supported when rcParams["text.usetex"] (default: False) is True.

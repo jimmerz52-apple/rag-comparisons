@@ -1,0 +1,28 @@
+# skimage.api.skimage.filters#skimage.filters.threshold_yen
+
+skimage.filters.threshold_yen(image=None, nbins=256, *, hist=None) [source]
+ 
+Return threshold value based on Yen’s method. Either image or hist must be provided. In case hist is given, the actual histogram of the image is ignored.  Parameters 
+ 
+image(N, M) ndarray, optional 
+
+Input image.  
+nbinsint, optional 
+
+Number of bins used to calculate histogram. This value is ignored for integer arrays.  
+histarray, or 2-tuple of arrays, optional 
+
+Histogram from which to determine the threshold, and optionally a corresponding array of bin center intensities. An alternative use of this function is to pass it only hist.    Returns 
+ 
+thresholdfloat 
+
+Upper threshold value. All pixels with an intensity higher than this value are assumed to be foreground.     References  
+1  
+Yen J.C., Chang F.J., and Chang S. (1995) “A New Criterion for Automatic Multilevel Thresholding” IEEE Trans. on Image Processing, 4(3): 370-378. DOI:10.1109/83.366472  
+2  
+Sezgin M. and Sankur B. (2004) “Survey over Image Thresholding Techniques and Quantitative Performance Evaluation” Journal of Electronic Imaging, 13(1): 146-165, DOI:10.1117/1.1631315 http://www.busim.ee.boun.edu.tr/~sankur/SankurFolder/Threshold_survey.pdf  
+3  
+ImageJ AutoThresholder code, http://fiji.sc/wiki/index.php/Auto_Threshold   Examples >>> from skimage.data import camera
+>>> image = camera()
+>>> thresh = threshold_yen(image)
+>>> binary = image <= thresh

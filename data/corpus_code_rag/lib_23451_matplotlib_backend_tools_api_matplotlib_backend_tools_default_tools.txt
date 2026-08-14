@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.default_tools
+
+matplotlib.backend_tools.default_tools={'back': <class 'matplotlib.backend_tools.ToolBack'>, 'copy': 'ToolCopyToClipboard', 'cursor': 'ToolSetCursor', 'forward': <class 'matplotlib.backend_tools.ToolForward'>, 'fullscreen': <class 'matplotlib.backend_tools.ToolFullScreen'>, 'grid': <class 'matplotlib.backend_tools.ToolGrid'>, 'grid_minor': <class 'matplotlib.backend_tools.ToolMinorGrid'>, 'help': 'ToolHelp', 'home': <class 'matplotlib.backend_tools.ToolHome'>, 'pan': <class 'matplotlib.backend_tools.ToolPan'>, 'position': <class 'matplotlib.backend_tools.ToolCursorPosition'>, 'quit': <class 'matplotlib.backend_tools.ToolQuit'>, 'quit_all': <class 'matplotlib.backend_tools.ToolQuitAll'>, 'rubberband': 'ToolRubberband', 'save': 'ToolSaveFigure', 'subplots': 'ToolConfigureSubplots', 'viewpos': <class 'matplotlib.backend_tools.ToolViewsPositions'>, 'xscale': <class 'matplotlib.backend_tools.ToolXScale'>, 'yscale': <class 'matplotlib.backend_tools.ToolYScale'>, 'zoom': <class 'matplotlib.backend_tools.ToolZoom'>}
+ 
+Default tools

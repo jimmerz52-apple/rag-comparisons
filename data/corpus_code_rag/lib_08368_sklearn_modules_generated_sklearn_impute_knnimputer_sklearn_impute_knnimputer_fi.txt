@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.impute.knnimputer#sklearn.impute.KNNImputer.fit
+
+fit(X, y=None) [source]
+ 
+Fit the imputer on X.  Parameters 
+ 
+Xarray-like shape of (n_samples, n_features) 
+
+Input data, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+selfobject

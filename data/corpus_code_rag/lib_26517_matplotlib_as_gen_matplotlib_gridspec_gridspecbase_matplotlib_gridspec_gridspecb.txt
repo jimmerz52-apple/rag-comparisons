@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.get_height_ratios
+
+get_height_ratios()[source]
+ 
+Return the height ratios. This is None if no height ratios have been set explicitly.

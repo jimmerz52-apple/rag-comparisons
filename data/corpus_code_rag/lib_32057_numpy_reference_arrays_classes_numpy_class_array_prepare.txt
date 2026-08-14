@@ -1,0 +1,5 @@
+# numpy.reference.arrays.classes#numpy.class.__array_prepare__
+
+class.__array_prepare__(array, context=None)
+ 
+At the beginning of every ufunc, this method is called on the input object with the highest array priority, or the output object if one was specified. The output array is passed in and whatever is returned is passed to the ufunc. Subclasses inherit a default implementation of this method which simply returns the output array unmodified. Subclasses may opt to use this method to transform the output array into an instance of the subclass and update metadata before returning the array to the ufunc for computation.  Note For ufuncs, it is hoped to eventually deprecate this method in favour of __array_ufunc__.

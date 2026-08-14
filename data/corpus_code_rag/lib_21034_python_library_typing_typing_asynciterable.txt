@@ -1,0 +1,4 @@
+# python.library.typing#typing.AsyncIterable
+
+class typing.AsyncIterable(Generic[T_co])  
+A generic version of collections.abc.AsyncIterable.  New in version 3.5.2.   Deprecated since version 3.9: collections.abc.AsyncIterable now supports []. See PEP 585 and Generic Alias Type.

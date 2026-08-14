@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.weekheader
+
+calendar.weekheader(n)  
+Return a header containing abbreviated weekday names. n specifies the width in characters for one weekday.

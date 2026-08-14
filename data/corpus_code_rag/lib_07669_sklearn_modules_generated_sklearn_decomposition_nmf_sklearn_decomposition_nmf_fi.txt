@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.decomposition.nmf#sklearn.decomposition.NMF.fit
+
+fit(X, y=None, **params) [source]
+ 
+Learn a NMF model for the data X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Data matrix to be decomposed  
+yIgnored 
+  Returns 
+ self

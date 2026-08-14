@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Event
+
+Event()  
+Create a shared threading.Event object and return a proxy for it.

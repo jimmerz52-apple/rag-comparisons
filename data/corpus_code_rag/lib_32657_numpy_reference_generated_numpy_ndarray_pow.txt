@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__pow__
+
+numpy.ndarray.__pow__ method   ndarray.__pow__(value, mod=None, /)
+ 
+Return pow(self, value, mod).

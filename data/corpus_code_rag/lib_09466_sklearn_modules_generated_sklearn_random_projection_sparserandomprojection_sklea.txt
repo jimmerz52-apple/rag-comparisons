@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.random_projection.sparserandomprojection#sklearn.random_projection.SparseRandomProjection.transform
+
+transform(X) [source]
+ 
+Project the data by using matrix product with the random matrix  Parameters 
+ 
+X{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+The input data to project into a smaller dimensional space.    Returns 
+ 
+X_new{ndarray, sparse matrix} of shape (n_samples, n_components) 
+
+Projected array.

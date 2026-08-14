@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_FINISHED
+
+xml.parsers.expat.errors.XML_ERROR_FINISHED  
+The requested operation was made on a parser which was finished parsing input, but isn’t allowed. This includes attempts to provide additional input or to stop the parser.

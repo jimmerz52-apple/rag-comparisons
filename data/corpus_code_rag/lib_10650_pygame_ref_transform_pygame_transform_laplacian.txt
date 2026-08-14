@@ -1,0 +1,4 @@
+# pygame.ref.transform#pygame.transform.laplacian
+
+pygame.transform.laplacian() 
+ find edges in a surface laplacian(Surface, DestSurface = None) -> Surface  Finds the edges in a surface using the laplacian algorithm.  New in pygame 1.8.

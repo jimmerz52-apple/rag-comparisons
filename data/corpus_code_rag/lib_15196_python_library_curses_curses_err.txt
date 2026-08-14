@@ -1,0 +1,4 @@
+# python.library.curses#curses.ERR
+
+curses.ERR  
+Some curses routines that return an integer, such as getch(), return ERR upon failure.

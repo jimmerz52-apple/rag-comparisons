@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.get
+
+get(key, default=None)  
+Gets the element attribute named key. Returns the attribute value, or default if the attribute was not found.

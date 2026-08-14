@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.get_text_widths
+
+matplotlib.axis.YAxis.get_text_widths   YAxis.get_text_widths(renderer)[source]

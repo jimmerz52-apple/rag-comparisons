@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.split
+
+tf.experimental.numpy.split TensorFlow variant of NumPy's split. 
+tf.experimental.numpy.split(
+    ary, indices_or_sections, axis=0
+)
+ See the NumPy documentation for numpy.split.

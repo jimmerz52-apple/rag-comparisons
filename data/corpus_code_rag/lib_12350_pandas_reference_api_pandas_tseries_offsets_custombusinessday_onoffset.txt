@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.onoffset
+
+pandas.tseries.offsets.CustomBusinessDay.onOffset   CustomBusinessDay.onOffset()

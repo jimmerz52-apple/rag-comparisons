@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.cumsum
+
+numpy.recarray.cumsum method   recarray.cumsum(axis=None, dtype=None, out=None)
+ 
+Return the cumulative sum of the elements along the given axis. Refer to numpy.cumsum for full documentation.  See also  numpy.cumsum
+
+equivalent function

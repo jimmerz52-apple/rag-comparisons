@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.sqrt
+
+cmath.sqrt(x)  
+Return the square root of x. This has the same branch cut as log().

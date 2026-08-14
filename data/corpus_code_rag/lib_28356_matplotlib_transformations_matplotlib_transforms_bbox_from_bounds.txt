@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.from_bounds
+
+staticfrom_bounds(x0, y0, width, height)[source]
+ 
+Create a new Bbox from x0, y0, width and height. width and height may be negative.

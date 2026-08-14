@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.yearend.is_year_start
+
+pandas.tseries.offsets.YearEnd.is_year_start   YearEnd.is_year_start()

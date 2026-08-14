@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.prev
+
+prev(item)  
+Returns the identifier of item’s previous sibling, or ‘’ if item is the first child of its parent.

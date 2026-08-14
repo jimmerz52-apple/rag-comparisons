@@ -1,0 +1,9 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectTemplateResponseMixin
+
+class django.views.generic.list.MultipleObjectTemplateResponseMixin  
+A mixin class that performs template-based response rendering for views that operate upon a list of object instances. Requires that the view it is mixed with provides self.object_list, the list of object instances that the view is operating on. self.object_list may be, but is not required to be, a QuerySet. Extends  TemplateResponseMixin  Methods and Attributes  
+template_name_suffix  
+The suffix to append to the auto-generated candidate template name. Default suffix is _list. 
+  
+get_template_names()  
+Returns a list of candidate template names. Returns the following list:  the value of template_name on the view (if provided) <app_label>/<model_name><template_name_suffix>.html

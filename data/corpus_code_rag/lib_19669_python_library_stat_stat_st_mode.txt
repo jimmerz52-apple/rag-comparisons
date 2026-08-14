@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_MODE
+
+stat.ST_MODE  
+Inode protection mode.

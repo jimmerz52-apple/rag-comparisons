@@ -1,0 +1,4 @@
+# python.library.gc#gc.unfreeze
+
+gc.unfreeze()  
+Unfreeze the objects in the permanent generation, put them back into the oldest generation.  New in version 3.7.

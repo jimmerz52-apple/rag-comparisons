@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.ErrorList.error_class
+
+error_class  
+The CSS classes to be used when rendering the error list. Any provided classes are added to the default errorlist class.

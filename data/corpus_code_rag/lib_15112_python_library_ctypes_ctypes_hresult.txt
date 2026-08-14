@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.HRESULT
+
+class ctypes.HRESULT  
+Windows only: Represents a HRESULT value, which contains success or error information for a function or method call.

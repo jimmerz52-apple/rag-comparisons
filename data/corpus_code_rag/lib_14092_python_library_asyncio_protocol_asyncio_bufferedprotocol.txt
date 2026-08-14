@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BufferedProtocol
+
+class asyncio.BufferedProtocol(BaseProtocol)  
+A base class for implementing streaming protocols with manual control of the receive buffer.

@@ -1,0 +1,6 @@
+# flask.api.index#flask.ctx.AppContext.pop
+
+pop(exc=<object object>)  
+Pops the app context.  Parameters 
+exc (Optional[BaseException]) –   Return type 
+None

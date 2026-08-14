@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MHMessage.get_sequences
+
+get_sequences()  
+Return a list of the names of sequences that include this message.

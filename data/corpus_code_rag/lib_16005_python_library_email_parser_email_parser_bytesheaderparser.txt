@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.BytesHeaderParser
+
+class email.parser.BytesHeaderParser(_class=None, *, policy=policy.compat32)  
+Exactly like BytesParser, except that headersonly defaults to True.  New in version 3.3.

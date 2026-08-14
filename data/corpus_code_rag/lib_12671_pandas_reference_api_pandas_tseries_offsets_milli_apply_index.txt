@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.milli.apply_index
+
+pandas.tseries.offsets.Milli.apply_index   Milli.apply_index(other)

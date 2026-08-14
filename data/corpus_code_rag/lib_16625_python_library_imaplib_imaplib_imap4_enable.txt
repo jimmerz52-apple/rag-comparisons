@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.enable
+
+IMAP4.enable(capability)  
+Enable capability (see RFC 5161). Most capabilities do not need to be enabled. Currently only the UTF8=ACCEPT capability is supported (see RFC 6855).  New in version 3.5: The enable() method itself, and RFC 6855 support.

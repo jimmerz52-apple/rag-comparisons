@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.chi2.Chi2.expand
+
+expand(batch_shape, _instance=None) [source]

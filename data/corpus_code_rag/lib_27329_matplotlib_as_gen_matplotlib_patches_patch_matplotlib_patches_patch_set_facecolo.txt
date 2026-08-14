@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_facecolor
+
+set_facecolor(color)[source]
+ 
+Set the patch face color.  Parameters 
+ 
+colorcolor or None

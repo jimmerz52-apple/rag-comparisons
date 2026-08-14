@@ -1,0 +1,91 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea
+
+classmatplotlib.offsetbox.TextArea(s, textprops=None, multilinebaseline=False, minimumdescent=<deprecated parameter>)[source]
+ 
+Bases: matplotlib.offsetbox.OffsetBox The TextArea is a container artist for a single Text instance. The text is placed at (0, 0) with baseline+left alignment, by default. The width and height of the TextArea instance is the width and height of its child text.  Parameters 
+ 
+sstr
+
+
+The text to be displayed.  
+textpropsdict, default: {}
+
+
+Dictionary of keyword parameters to be passed to the Text instance in the TextArea.  
+multilinebaselinebool, default: False
+
+
+Whether the baseline for multiline text is adjusted so that it is (approximately) center-aligned with single-line text.  
+minimumdescentbool, default: True
+
+
+If True, the box has a minimum descent of "p". This is now effectively always True.       draw(renderer)[source]
+ 
+Update the location of children if necessary and draw them to the given renderer. 
+   get_extent(renderer)[source]
+ 
+Return a tuple width, height, xdescent, ydescent of the box. 
+   get_minimumdescent()[source]
+ 
+[Deprecated] Get minimumdescent. Notes  Deprecated since version 3.4.  
+   get_multilinebaseline()[source]
+ 
+Get multilinebaseline. 
+   get_offset()[source]
+ 
+Return offset of the container. 
+   get_text()[source]
+ 
+Return the string representation of this area's text. 
+   get_window_extent(renderer)[source]
+ 
+Get the artist's bounding box in display space. The bounding box' width and height are nonnegative. Subclasses should override for inclusion in the bounding box "tight" calculation. Default is to return an empty bounding box at 0, 0. Be careful when using this function, the results will not update if the artist window extent of the artist changes. The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure). This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, minimumdescent=<UNSET>, multilinebaseline=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, text=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+minimumdescent unknown  
+multilinebaseline unknown  
+offset (float, float)  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+text unknown  
+transform unknown  
+url str  
+visible bool  
+width float  
+zorder float   
+   set_minimumdescent(t)[source]
+ 
+[Deprecated] Set minimumdescent. If True, extent of the single line text is adjusted so that its descent is at least the one of the glyph "p". Notes  Deprecated since version 3.4.  
+   set_multilinebaseline(t)[source]
+ 
+Set multilinebaseline. If True, the baseline for multiline text is adjusted so that it is (approximately) center-aligned with single-line text. This is used e.g. by the legend implementation so that single-line labels are baseline-aligned, but multiline labels are "center"-aligned with them. 
+   set_offset(xy)[source]
+ 
+Set the offset of the container.  Parameters 
+ 
+xy(float, float)
+
+
+The (x, y) coordinates of the offset in display units.     
+   set_text(s)[source]
+ 
+Set the text of this area as a string. 
+   set_transform(t)[source]
+ 
+set_transform is ignored.

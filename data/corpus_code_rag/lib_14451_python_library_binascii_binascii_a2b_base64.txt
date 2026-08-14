@@ -1,0 +1,4 @@
+# python.library.binascii#binascii.a2b_base64
+
+binascii.a2b_base64(string)  
+Convert a block of base64 data back to binary and return the binary data. More than one line may be passed at a time.

@@ -1,0 +1,10 @@
+# torch.generated.torch.numel#torch.numel
+
+torch.numel(input) → int  
+Returns the total number of elements in the input tensor.  Parameters 
+input (Tensor) – the input tensor.   Example: >>> a = torch.randn(1, 2, 3, 4, 5)
+>>> torch.numel(a)
+120
+>>> a = torch.zeros(4,4)
+>>> torch.numel(a)
+16

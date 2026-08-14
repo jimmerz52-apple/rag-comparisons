@@ -1,0 +1,12 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentType
+
+class ContentType  
+Each instance of ContentType has two fields which, taken together, uniquely describe an installed model:  
+app_label  
+The name of the application the model is part of. This is taken from the app_label attribute of the model, and includes only the last part of the application’s Python import path; django.contrib.contenttypes, for example, becomes an app_label of contenttypes. 
+  
+model  
+The name of the model class. 
+ Additionally, the following property is available:  
+name  
+The human-readable name of the content type. This is taken from the verbose_name attribute of the model.

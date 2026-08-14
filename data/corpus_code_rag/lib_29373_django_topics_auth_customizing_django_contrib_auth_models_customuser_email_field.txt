@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUser.EMAIL_FIELD
+
+EMAIL_FIELD  
+A string describing the name of the email field on the User model. This value is returned by get_email_field_name().

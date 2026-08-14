@@ -1,0 +1,17 @@
+# skimage.api.skimage.morphology#skimage.morphology.diamond
+
+skimage.morphology.diamond(radius, dtype=<class 'numpy.uint8'>) [source]
+ 
+Generates a flat, diamond-shaped structuring element. A pixel is part of the neighborhood (i.e. labeled 1) if the city block/Manhattan distance between it and the center of the neighborhood is no greater than radius.  Parameters 
+ 
+radiusint 
+
+The radius of the diamond-shaped structuring element.    Returns 
+ 
+selemndarray 
+
+The structuring element where elements of the neighborhood are 1 and 0 otherwise.    Other Parameters 
+ 
+dtypedata-type 
+
+The data type of the structuring element.

@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTPError.response
+
+response  
+The response of the server if available, as a str object.

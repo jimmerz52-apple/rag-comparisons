@@ -1,0 +1,4 @@
+# python.library.webbrowser#webbrowser.Error
+
+exception webbrowser.Error  
+Exception raised when a browser control error occurs.

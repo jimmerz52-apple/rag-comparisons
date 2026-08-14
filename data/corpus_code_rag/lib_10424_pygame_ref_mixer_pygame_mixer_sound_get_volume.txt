@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Sound.get_volume
+
+get_volume() 
+ get the playback volume get_volume() -> value  Return a value from 0.0 to 1.0 representing the volume for this Sound.

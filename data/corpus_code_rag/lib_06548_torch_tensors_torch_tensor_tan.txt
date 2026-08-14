@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.tan
+
+tan() → Tensor  
+See torch.tan()

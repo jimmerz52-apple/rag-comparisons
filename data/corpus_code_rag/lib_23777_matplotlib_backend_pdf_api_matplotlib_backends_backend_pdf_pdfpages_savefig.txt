@@ -1,0 +1,10 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfPages.savefig
+
+savefig(figure=None, **kwargs)[source]
+ 
+Save a Figure to this file as a new page. Any other keyword arguments are passed to savefig.  Parameters 
+ 
+figureFigure or int, default: the active figure
+
+
+The figure, or index of the figure, that is saved to the file.

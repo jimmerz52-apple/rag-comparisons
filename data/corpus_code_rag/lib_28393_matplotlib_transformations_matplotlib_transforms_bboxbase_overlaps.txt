@@ -1,0 +1,7 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.overlaps
+
+overlaps(other)[source]
+ 
+Return whether this bounding box overlaps with the other bounding box.  Parameters 
+ 
+otherBboxBase

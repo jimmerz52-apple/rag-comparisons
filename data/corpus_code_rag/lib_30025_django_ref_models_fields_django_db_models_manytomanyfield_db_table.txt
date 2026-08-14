@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ManyToManyField.db_table
+
+ManyToManyField.db_table  
+The name of the table to create for storing the many-to-many data. If this is not provided, Django will assume a default name based upon the names of: the table for the model defining the relationship and the name of the field itself.

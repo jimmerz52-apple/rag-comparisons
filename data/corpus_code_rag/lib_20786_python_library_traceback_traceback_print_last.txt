@@ -1,0 +1,5 @@
+# python.library.traceback#traceback.print_last
+
+traceback.print_last(limit=None, file=None, chain=True)  
+This is a shorthand for print_exception(sys.last_type, sys.last_value,
+sys.last_traceback, limit, file, chain). In general it will work only after an exception has reached an interactive prompt (see sys.last_type).

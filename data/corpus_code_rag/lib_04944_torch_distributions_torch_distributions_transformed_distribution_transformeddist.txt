@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transformed_distribution.TransformedDistribution.sample
+
+sample(sample_shape=torch.Size([])) [source]
+ 
+Generates a sample_shape shaped sample or sample_shape shaped batch of samples if the distribution parameters are batched. Samples first from base distribution and applies transform() for every transform in the list.

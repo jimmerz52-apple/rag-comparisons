@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.resolve_template
+
+SimpleTemplateResponse.resolve_template(template)  
+Resolves the template instance to use for rendering. Accepts a backend-dependent template object (such as those returned by get_template()), the name of a template, or a list of template names. Returns the backend-dependent template object instance to be rendered. Override this method in order to customize template loading.

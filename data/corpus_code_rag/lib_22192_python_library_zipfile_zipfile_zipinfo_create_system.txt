@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.create_system
+
+ZipInfo.create_system  
+System which created ZIP archive.

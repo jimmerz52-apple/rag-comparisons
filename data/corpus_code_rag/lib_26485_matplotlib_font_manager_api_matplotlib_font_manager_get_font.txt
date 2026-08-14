@@ -1,0 +1,3 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.get_font
+
+matplotlib.font_manager.get_font(filename, hinting_factor=None)[source]

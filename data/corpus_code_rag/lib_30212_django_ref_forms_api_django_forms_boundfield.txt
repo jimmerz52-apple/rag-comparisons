@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.BoundField
+
+class BoundField  
+Used to display HTML or access attributes for a single field of a Form instance. The __str__() method of this object displays the HTML for this field.

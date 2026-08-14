@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.replace
+
+numpy.chararray.replace method   chararray.replace(old, new, count=None)[source]
+ 
+For each element in self, return a copy of the string with all occurrences of substring old replaced by new.  See also  char.replace

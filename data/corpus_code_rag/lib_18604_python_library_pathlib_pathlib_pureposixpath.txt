@@ -1,0 +1,6 @@
+# python.library.pathlib#pathlib.PurePosixPath
+
+class pathlib.PurePosixPath(*pathsegments)  
+A subclass of PurePath, this path flavour represents non-Windows filesystem paths: >>> PurePosixPath('/etc')
+PurePosixPath('/etc')
+ pathsegments is specified similarly to PurePath.

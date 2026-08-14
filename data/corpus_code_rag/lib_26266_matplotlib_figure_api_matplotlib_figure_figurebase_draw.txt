@@ -1,0 +1,9 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.draw
+
+draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses.

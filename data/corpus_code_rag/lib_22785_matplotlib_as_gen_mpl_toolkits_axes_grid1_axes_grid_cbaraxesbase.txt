@@ -1,0 +1,9 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.cbaraxesbase
+
+mpl_toolkits.axes_grid1.axes_grid.CbarAxesBase   classmpl_toolkits.axes_grid1.axes_grid.CbarAxesBase(*args, orientation, **kwargs)[source]
+ 
+Bases: object   cla()[source]
+
+   colorbar(mappable, *, ticks=None, **kwargs)[source]
+
+   toggle_label(b)[source]

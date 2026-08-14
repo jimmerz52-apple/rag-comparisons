@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.num_geom
+
+GEOSGeometry.num_geom  
+Returns the number of geometries in this geometry. In other words, will return 1 on anything but geometry collections.

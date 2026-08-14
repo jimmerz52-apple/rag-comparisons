@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.testzip
+
+ZipFile.testzip()  
+Read all the files in the archive and check their CRC’s and file headers. Return the name of the first bad file, or else return None.  Changed in version 3.6: Calling testzip() on a closed ZipFile will raise a ValueError. Previously, a RuntimeError was raised.

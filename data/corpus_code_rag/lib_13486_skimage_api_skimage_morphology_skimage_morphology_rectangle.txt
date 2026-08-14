@@ -1,0 +1,20 @@
+# skimage.api.skimage.morphology#skimage.morphology.rectangle
+
+skimage.morphology.rectangle(nrows, ncols, dtype=<class 'numpy.uint8'>) [source]
+ 
+Generates a flat, rectangular-shaped structuring element. Every pixel in the rectangle generated for a given width and given height belongs to the neighborhood.  Parameters 
+ 
+nrowsint 
+
+The number of rows of the rectangle.  
+ncolsint 
+
+The number of columns of the rectangle.    Returns 
+ 
+selemndarray 
+
+A structuring element consisting only of ones, i.e. every pixel belongs to the neighborhood.    Other Parameters 
+ 
+dtypedata-type 
+
+The data type of the structuring element.     Notes  The use of width and height has been deprecated in version 0.18.0. Use nrows and ncols instead.

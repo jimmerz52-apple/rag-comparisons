@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourSet.changed
+
+changed()[source]
+ 
+Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal.

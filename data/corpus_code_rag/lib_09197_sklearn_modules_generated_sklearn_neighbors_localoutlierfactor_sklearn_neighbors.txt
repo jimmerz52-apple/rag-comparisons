@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.neighbors.localoutlierfactor#sklearn.neighbors.LocalOutlierFactor.predict
+
+property predict  
+Predict the labels (1 inlier, -1 outlier) of X according to LOF. Only available for novelty detection (when novelty is set to True). This method allows to generalize prediction to new observations (not in the training set).  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The query sample or samples to compute the Local Outlier Factor w.r.t. to the training samples.    Returns 
+ 
+is_inlierndarray of shape (n_samples,) 
+
+Returns -1 for anomalies/outliers and +1 for inliers.

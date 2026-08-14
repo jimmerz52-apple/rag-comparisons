@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.index.identical
+
+pandas.Index.identical   finalIndex.identical(other)[source]
+ 
+Similar to equals, but checks that object attributes and types are also equal.  Returns 
+ bool
+
+If two Index objects have equal elements and same type True, otherwise False.

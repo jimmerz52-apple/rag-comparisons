@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.FileLoader.get_filename
+
+abstractmethod get_filename(fullname)  
+Returns path.

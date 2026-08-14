@@ -1,0 +1,14 @@
+# pandas.reference.api.pandas.hdfstore.keys
+
+pandas.HDFStore.keys   HDFStore.keys(include='pandas')[source]
+ 
+Return a list of keys corresponding to objects stored in HDFStore.  Parameters 
+ 
+include:str, default ‘pandas’
+
+
+When kind equals ‘pandas’ return pandas objects. When kind equals ‘native’ return native HDF5 Table objects.  New in version 1.1.0.     Returns 
+ list
+
+List of ABSOLUTE path-names (e.g. have the leading ‘/’).    Raises 
+ raises ValueError if kind has an illegal value

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neighbors.radiusneighborsclassifier#sklearn.neighbors.RadiusNeighborsClassifier.predict
+
+predict(X) [source]
+ 
+Predict the class labels for the provided data.  Parameters 
+ 
+Xarray-like of shape (n_queries, n_features), or (n_queries, n_indexed) if metric == ‘precomputed’ 
+
+Test samples.    Returns 
+ 
+yndarray of shape (n_queries,) or (n_queries, n_outputs) 
+
+Class labels for each data sample.

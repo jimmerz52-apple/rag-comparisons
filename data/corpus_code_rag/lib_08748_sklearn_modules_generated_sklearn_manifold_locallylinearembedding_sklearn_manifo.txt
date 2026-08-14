@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.manifold.locallylinearembedding#sklearn.manifold.LocallyLinearEmbedding.transform
+
+transform(X) [source]
+ 
+Transform new points into embedding space.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+X_newarray, shape = [n_samples, n_components] 
+   Notes Because of scaling performed by this method, it is discouraged to use it together with methods that are not scale-invariant (like SVMs)

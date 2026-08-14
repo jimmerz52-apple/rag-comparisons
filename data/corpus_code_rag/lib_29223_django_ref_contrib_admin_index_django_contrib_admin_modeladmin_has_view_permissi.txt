@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.has_view_permission
+
+ModelAdmin.has_view_permission(request, obj=None)  
+Should return True if viewing obj is permitted, False otherwise. If obj is None, should return True or False to indicate whether viewing of objects of this type is permitted in general (e.g., False will be interpreted as meaning that the current user is not permitted to view any object of this type). The default implementation returns True if the user has either the “change” or “view” permission.

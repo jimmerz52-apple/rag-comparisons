@@ -1,0 +1,6 @@
+# torch.futures#torch.futures.Future.wait
+
+wait() [source]
+ 
+Block until the value of this Future is ready.  Returns 
+The value held by this Future. If the function (callback or RPC) creating the value has thrown an error, this wait method will also throw an error.

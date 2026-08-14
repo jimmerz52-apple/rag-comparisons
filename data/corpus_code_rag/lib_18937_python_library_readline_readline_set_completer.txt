@@ -1,0 +1,4 @@
+# python.library.readline#readline.set_completer
+
+readline.set_completer([function])  
+Set or remove the completer function. If function is specified, it will be used as the new completer function; if omitted or None, any completer function already installed is removed. The completer function is called as function(text, state), for state in 0, 1, 2, …, until it returns a non-string value. It should return the next possible completion starting with text. The installed completer function is invoked by the entry_func callback passed to rl_completion_matches() in the underlying library. The text string comes from the first parameter to the rl_attempted_completion_function callback of the underlying library.

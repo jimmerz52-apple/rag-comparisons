@@ -1,0 +1,3 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_paths
+
+get_paths()[source]

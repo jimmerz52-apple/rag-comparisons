@@ -1,0 +1,15 @@
+# django.ref.models.fields#django.db.models.SET
+
+SET()  
+Set the ForeignKey to the value passed to SET(), or if a callable is passed in, the result of calling it. In most cases, passing a callable will be necessary to avoid executing queries at the time your models.py is imported: from django.conf import settings
+from django.contrib.auth import get_user_model
+from django.db import models
+
+def get_sentinel_user():
+    return get_user_model().objects.get_or_create(username='deleted')[0]
+
+class MyModel(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET(get_sentinel_user),
+    )

@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.wsgi_run_once
+
+wsgi_run_once  
+The value to be used for the wsgi.run_once environment variable. It defaults to false in BaseHandler, but CGIHandler sets it to true by default.

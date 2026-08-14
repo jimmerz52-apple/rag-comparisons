@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.get_clip_on
+
+get_clip_on()[source]
+ 
+Return whether the artist uses clipping.

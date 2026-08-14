@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.difference
+
+difference(*others)  
+set - other - ...  
+Return a new set with elements in the set that are not in the others.

@@ -1,0 +1,294 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes
+
+classmatplotlib.projections.geo.GeoAxes(fig, rect, *, facecolor=None, frameon=True, sharex=None, sharey=None, label='', xscale=None, yscale=None, box_aspect=None, **kwargs)[source]
+ 
+Bases: matplotlib.axes._axes.Axes An abstract base class for geographic projections. Build an Axes in a figure.  Parameters 
+ 
+figFigure
+
+
+The Axes is built in the Figure fig.  
+rect[left, bottom, width, height]
+
+
+The Axes is built in the rectangle rect. rect is in Figure coordinates.  
+sharex, shareyAxes, optional
+
+
+The x or y axis is shared with the x or y axis in the input Axes.  
+frameonbool, default: True
+
+
+Whether the Axes frame is visible.  
+box_aspectfloat, optional
+
+
+Set a fixed aspect for the Axes box, i.e. the ratio of height to width. See set_box_aspect for details.  **kwargs
+
+Other optional keyword arguments:   
+Property Description   
+adjustable {'box', 'datalim'}  
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+anchor (float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}  
+animated bool  
+aspect {'auto', 'equal'} or float  
+autoscale_on bool  
+autoscalex_on bool  
+autoscaley_on bool  
+axes_locator Callable[[Axes, Renderer], Bbox]  
+axisbelow bool or 'line'  
+box_aspect float or None  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+facecolor or fc color  
+figure Figure  
+frame_on bool  
+gid str  
+in_layout bool  
+label object  
+navigate bool  
+navigate_mode unknown  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+position [left, bottom, width, height] or Bbox  
+prop_cycle unknown  
+rasterization_zorder float or None  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+title str  
+transform Transform  
+url str  
+visible bool  
+xbound unknown  
+xlabel str  
+xlim (bottom: float, top: float)  
+xmargin float greater than -0.5  
+xscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+xticklabels unknown  
+xticks unknown  
+ybound unknown  
+ylabel str  
+ylim (bottom: float, top: float)  
+ymargin float greater than -0.5  
+yscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+yticklabels unknown  
+yticks unknown  
+zorder float      Returns 
+ Axes
+
+The new Axes object.       RESOLUTION=75
+
+   classThetaFormatter(round_to=1.0)[source]
+ 
+Bases: matplotlib.ticker.Formatter Used to format the theta tick labels. Converts the native unit of radians into degrees and adds a degree symbol. 
+   can_pan()[source]
+ 
+Return whether this axes supports the pan/zoom button functionality. This axes object does not support interactive pan/zoom. 
+   can_zoom()[source]
+ 
+Return whether this axes supports the zoom box button functionality. This axes object does not support interactive zoom box. 
+   cla()[source]
+ 
+Clear the Axes. 
+   drag_pan(button, key, x, y)[source]
+ 
+Called when the mouse moves during a pan operation.  Parameters 
+ 
+buttonMouseButton
+
+
+The pressed mouse button.  
+keystr or None
+
+
+The pressed key, if any.  
+x, yfloat
+
+
+The mouse coordinates in display coords.     Notes This is intended to be overridden by new projection types. 
+   end_pan()[source]
+ 
+Called when a pan operation completes (when the mouse button is up.) Notes This is intended to be overridden by new projection types. 
+   format_coord(lon, lat)[source]
+ 
+Return a format string formatting the coordinate. 
+   get_data_ratio()[source]
+ 
+Return the aspect ratio of the data itself. 
+   get_xaxis_text1_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing x-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in data coordinates and the y-direction is in axis coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_xaxis_text2_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing secondary x-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in data coordinates and the y-direction is in axis coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_xaxis_transform(which='grid')[source]
+ 
+Get the transformation used for drawing x-axis labels, ticks and gridlines. The x-direction is in data coordinates and the y-direction is in axis coordinates.  Note This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.  
+   get_yaxis_text1_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing y-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in axis coordinates and the y-direction is in data coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_yaxis_text2_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing secondart y-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in axis coordinates and the y-direction is in data coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_yaxis_transform(which='grid')[source]
+ 
+Get the transformation used for drawing y-axis labels, ticks and gridlines. The x-direction is in axis coordinates and the y-direction is in data coordinates.  Note This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.  
+   set(*, adjustable=<UNSET>, agg_filter=<UNSET>, alpha=<UNSET>, anchor=<UNSET>, animated=<UNSET>, aspect=<UNSET>, autoscale_on=<UNSET>, autoscalex_on=<UNSET>, autoscaley_on=<UNSET>, axes_locator=<UNSET>, axisbelow=<UNSET>, box_aspect=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, facecolor=<UNSET>, frame_on=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, label=<UNSET>, latitude_grid=<UNSET>, longitude_grid=<UNSET>, longitude_grid_ends=<UNSET>, navigate=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, position=<UNSET>, prop_cycle=<UNSET>, rasterization_zorder=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, title=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, xbound=<UNSET>, xlabel=<UNSET>, xlim=<UNSET>, xmargin=<UNSET>, xscale=<UNSET>, xticklabels=<UNSET>, xticks=<UNSET>, ybound=<UNSET>, ylabel=<UNSET>, ylim=<UNSET>, ymargin=<UNSET>, yscale=<UNSET>, yticklabels=<UNSET>, yticks=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+adjustable {'box', 'datalim'}  
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+anchor (float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}  
+animated bool  
+aspect {'auto', 'equal'} or float  
+autoscale_on bool  
+autoscalex_on bool  
+autoscaley_on bool  
+axes_locator Callable[[Axes, Renderer], Bbox]  
+axisbelow bool or 'line'  
+box_aspect float or None  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+facecolor or fc color  
+figure Figure  
+frame_on bool  
+gid str  
+in_layout bool  
+label object  
+latitude_grid unknown  
+longitude_grid unknown  
+longitude_grid_ends unknown  
+navigate bool  
+navigate_mode unknown  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+position [left, bottom, width, height] or Bbox  
+prop_cycle unknown  
+rasterization_zorder float or None  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+title str  
+transform Transform  
+url str  
+visible bool  
+xbound unknown  
+xlabel str  
+xlim unknown  
+xmargin float greater than -0.5  
+xscale unknown  
+xticklabels unknown  
+xticks unknown  
+ybound unknown  
+ylabel str  
+ylim unknown  
+ymargin float greater than -0.5  
+yscale unknown  
+yticklabels unknown  
+yticks unknown  
+zorder float   
+   set_latitude_grid(degrees)[source]
+ 
+Set the number of degrees between each latitude grid. 
+   set_longitude_grid(degrees)[source]
+ 
+Set the number of degrees between each longitude grid. 
+   set_longitude_grid_ends(degrees)[source]
+ 
+Set the latitude(s) at which to stop drawing the longitude grids. 
+   set_xlim(*args, **kwargs)[source]
+ 
+Not supported. Please consider using Cartopy. 
+   set_xscale(*args, **kwargs)[source]
+ 
+Set the x-axis scale.  Parameters 
+ 
+value{"linear", "log", "symlog", "logit", ...} or ScaleBase
+
+
+The axis scale type to apply.  **kwargs
+
+Different keyword arguments are accepted, depending on the scale. See the respective class keyword arguments:  matplotlib.scale.LinearScale matplotlib.scale.LogScale matplotlib.scale.SymmetricalLogScale matplotlib.scale.LogitScale matplotlib.scale.FuncScale      Notes By default, Matplotlib supports the above mentioned scales. Additionally, custom scales may be registered using matplotlib.scale.register_scale. These scales can then also be used here. 
+   set_ylim(*args, **kwargs)[source]
+ 
+Not supported. Please consider using Cartopy. 
+   set_yscale(*args, **kwargs)[source]
+ 
+Set the y-axis scale.  Parameters 
+ 
+value{"linear", "log", "symlog", "logit", ...} or ScaleBase
+
+
+The axis scale type to apply.  **kwargs
+
+Different keyword arguments are accepted, depending on the scale. See the respective class keyword arguments:  matplotlib.scale.LinearScale matplotlib.scale.LogScale matplotlib.scale.SymmetricalLogScale matplotlib.scale.LogitScale matplotlib.scale.FuncScale      Notes By default, Matplotlib supports the above mentioned scales. Additionally, custom scales may be registered using matplotlib.scale.register_scale. These scales can then also be used here. 
+   start_pan(x, y, button)[source]
+ 
+Called when a pan operation has started.  Parameters 
+ 
+x, yfloat
+
+
+The mouse coordinates in display coords.  
+buttonMouseButton
+
+
+The pressed mouse button.     Notes This is intended to be overridden by new projection types.

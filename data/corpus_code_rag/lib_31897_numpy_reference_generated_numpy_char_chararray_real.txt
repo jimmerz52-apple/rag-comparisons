@@ -1,0 +1,11 @@
+# numpy.reference.generated.numpy.char.chararray.real
+
+numpy.char.chararray.real attribute   char.chararray.real
+ 
+The real part of the array.  See also  numpy.real
+
+equivalent function    Examples >>> x = np.sqrt([1+0j, 0+1j])
+>>> x.real
+array([ 1.        ,  0.70710678])
+>>> x.real.dtype
+dtype('float64')

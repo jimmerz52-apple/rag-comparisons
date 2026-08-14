@@ -1,0 +1,32 @@
+# matplotlib.tri_api#matplotlib.tri.LinearTriInterpolator
+
+classmatplotlib.tri.LinearTriInterpolator(triangulation, z, trifinder=None)[source]
+ 
+Bases: matplotlib.tri.triinterpolate.TriInterpolator Linear interpolator on a triangular grid. Each triangle is represented by a plane so that an interpolated value at point (x, y) lies on the plane of the triangle containing (x, y). Interpolated values are therefore continuous across the triangulation, but their first derivatives are discontinuous at edges between triangles.  Parameters 
+ 
+triangulationTriangulation
+
+
+The triangulation to interpolate over.  
+z(npoints,) array-like
+
+
+Array of values, defined at grid points, to interpolate between.  
+trifinderTriFinder, optional
+
+
+If this is not specified, the Triangulation's default TriFinder will be used by calling Triangulation.get_trifinder.     Methods  
+`__call__` (x, y) (Returns interpolated values at (x, y) points.)  
+`gradient` (x, y) (Returns interpolated derivatives at (x, y) points.)     gradient(x, y)[source]
+ 
+Returns a list of 2 masked arrays containing interpolated derivatives at the specified (x, y) points.  Parameters 
+ 
+x, yarray-like
+
+
+x and y coordinates of the same shape and any number of dimensions.    Returns 
+ 
+dzdx, dzdynp.ma.array
+
+
+2 masked arrays of the same shape as x and y; values corresponding to (x, y) points outside of the triangulation are masked out. The first returned array contains the values of \(\frac{\partial z}{\partial x}\) and the second those of \(\frac{\partial z}{\partial y}\).

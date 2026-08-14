@@ -1,0 +1,4 @@
+# python.library.os#os.PathLike.__fspath__
+
+abstractmethod __fspath__()  
+Return the file system path representation of the object. The method should only return a str or bytes object, with the preference being for str.

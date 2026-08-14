@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.tostring
+
+numpy.ma.MaskedArray.tostring method   ma.MaskedArray.tostring(fill_value=None, order='C')[source]
+ 
+A compatibility alias for tobytes, with exactly the same behavior. Despite its name, it returns bytes not strs.  Deprecated since version 1.19.0.

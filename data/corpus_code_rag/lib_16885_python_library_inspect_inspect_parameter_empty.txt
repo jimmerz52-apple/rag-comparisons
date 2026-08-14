@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.Parameter.empty
+
+empty  
+A special class-level marker to specify absence of default values and annotations.

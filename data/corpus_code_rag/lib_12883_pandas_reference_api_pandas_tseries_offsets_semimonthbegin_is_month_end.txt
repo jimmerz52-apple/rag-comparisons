@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.semimonthbegin.is_month_end
+
+pandas.tseries.offsets.SemiMonthBegin.is_month_end   SemiMonthBegin.is_month_end()

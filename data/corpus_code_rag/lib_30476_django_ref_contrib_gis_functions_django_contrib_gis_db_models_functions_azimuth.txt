@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.Azimuth
+
+class Azimuth(point_a, point_b, **extra)

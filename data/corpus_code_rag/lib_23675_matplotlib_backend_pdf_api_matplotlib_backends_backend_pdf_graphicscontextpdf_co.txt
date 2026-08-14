@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.GraphicsContextPdf.copy_properties
+
+copy_properties(other)[source]
+ 
+Copy properties of other into self.

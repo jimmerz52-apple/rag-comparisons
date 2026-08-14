@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.LoadFileDialog.ok_command
+
+ok_command()  
+Test that a file is provided and that the selection indicates an already existing file.

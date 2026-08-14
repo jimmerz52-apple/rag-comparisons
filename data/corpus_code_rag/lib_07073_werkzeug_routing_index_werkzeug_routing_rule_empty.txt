@@ -1,0 +1,5 @@
+# werkzeug.routing.index#werkzeug.routing.Rule.empty
+
+empty()  
+Return an unbound copy of this rule. This can be useful if want to reuse an already bound URL for another map. See get_empty_kwargs to override what keyword arguments are provided to the new copy.  Return type 
+werkzeug.routing.Rule

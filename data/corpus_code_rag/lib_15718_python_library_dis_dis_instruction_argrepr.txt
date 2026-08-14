@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.argrepr
+
+argrepr  
+human readable description of operation argument

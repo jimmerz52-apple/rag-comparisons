@@ -1,0 +1,17 @@
+# python.library.typing#typing.Generator
+
+class typing.Generator(Iterator[T_co], Generic[T_co, T_contra, V_co])  
+A generator can be annotated by the generic type Generator[YieldType, SendType, ReturnType]. For example: def echo_round() -> Generator[int, float, str]:
+    sent = yield 0
+    while sent >= 0:
+        sent = yield round(sent)
+    return 'Done'
+ Note that unlike many other generics in the typing module, the SendType of Generator behaves contravariantly, not covariantly or invariantly. If your generator will only yield values, set the SendType and ReturnType to None: def infinite_stream(start: int) -> Generator[int, None, None]:
+    while True:
+        yield start
+        start += 1
+ Alternatively, annotate your generator as having a return type of either Iterable[YieldType] or Iterator[YieldType]: def infinite_stream(start: int) -> Iterator[int]:
+    while True:
+        yield start
+        start += 1
+  Deprecated since version 3.9: collections.abc.Generator now supports []. See PEP 585 and Generic Alias Type.

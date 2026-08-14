@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.mse_loss
+
+torch.nn.functional.mse_loss(input, target, size_average=None, reduce=None, reduction='mean') → Tensor [source]
+ 
+Measures the element-wise mean squared error. See MSELoss for details.

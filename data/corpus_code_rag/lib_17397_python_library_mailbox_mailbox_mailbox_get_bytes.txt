@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.get_bytes
+
+get_bytes(key)  
+Return a byte representation of the message corresponding to key, or raise a KeyError exception if no such message exists.  New in version 3.2.

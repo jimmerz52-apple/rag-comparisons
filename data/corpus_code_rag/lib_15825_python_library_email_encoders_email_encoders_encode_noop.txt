@@ -1,0 +1,4 @@
+# python.library.email.encoders#email.encoders.encode_noop
+
+email.encoders.encode_noop(msg)  
+This does nothing; it doesn’t even set the Content-Transfer-Encoding header.

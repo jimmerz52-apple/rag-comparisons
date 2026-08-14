@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.network_address
+
+network_address  
+The network address for the network. The network address and the prefix length together uniquely define a network.

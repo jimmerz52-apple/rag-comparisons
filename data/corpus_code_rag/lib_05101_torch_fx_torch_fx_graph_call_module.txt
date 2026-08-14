@@ -1,0 +1,11 @@
+# torch.fx#torch.fx.Graph.call_module
+
+call_module(module_name, args=None, kwargs=None, type_expr=None) [source]
+ 
+Insert a call_module Node into the Graph. A call_module node represents a call to the forward() function of a Module in the Module hierarchy.  Parameters 
+ 
+module_name (str) – The qualified name of the Module in the Module hierarchy to be called. For example, if the traced Module has a submodule named foo, which has a submodule named bar, the qualified name foo.bar should be passed as module_name to call that module. 
+args (Optional[Tuple[Argument, ..]]) – The positional arguments to be passed to the called method. Note that this should not include a self argument. 
+kwargs (Optional[Dict[str, Argument]]) – The keyword arguments to be passed to the called method 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have.   Returns 
+The newly-created and inserted call_module node.    Note The same insertion point and type expression rules apply for this method as Graph.create_node().

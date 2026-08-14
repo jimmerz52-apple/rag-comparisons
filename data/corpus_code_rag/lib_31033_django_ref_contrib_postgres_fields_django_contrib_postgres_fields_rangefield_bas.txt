@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.RangeField.base_field
+
+base_field  
+The model field class to use.

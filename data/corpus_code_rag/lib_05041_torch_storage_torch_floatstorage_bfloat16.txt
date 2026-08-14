@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.bfloat16
+
+bfloat16()  
+Casts this storage to bfloat16 type

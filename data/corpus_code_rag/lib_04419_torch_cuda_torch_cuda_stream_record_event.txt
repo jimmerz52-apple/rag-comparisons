@@ -1,0 +1,7 @@
+# torch.cuda#torch.cuda.Stream.record_event
+
+record_event(event=None) [source]
+ 
+Records an event.  Parameters 
+event (Event, optional) – event to record. If not given, a new one will be allocated.  Returns 
+Recorded event.

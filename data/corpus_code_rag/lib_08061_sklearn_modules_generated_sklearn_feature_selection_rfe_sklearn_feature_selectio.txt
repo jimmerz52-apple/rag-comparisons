@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.feature_selection.rfe#sklearn.feature_selection.RFE.predict
+
+predict(X) [source]
+ 
+ Reduce X to the selected features and then predict using the
+
+underlying estimator.    Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+yarray of shape [n_samples] 
+
+The predicted target values.

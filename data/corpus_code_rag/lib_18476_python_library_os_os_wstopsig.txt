@@ -1,0 +1,4 @@
+# python.library.os#os.WSTOPSIG
+
+os.WSTOPSIG(status)  
+Return the signal which caused the process to stop. This function should be employed only if WIFSTOPPED() is true. Availability: Unix.

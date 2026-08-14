@@ -1,0 +1,9 @@
+# skimage.api.skimage.io#skimage.io.plugin_order
+
+skimage.io.plugin_order() [source]
+ 
+Return the currently preferred plugin order.  Returns 
+ 
+pdict 
+
+Dictionary of preferred plugin order, with function name as key and plugins (in order of preference) as value.

@@ -1,0 +1,7 @@
+# django.ref.forms.fields#django.forms.TypedMultipleChoiceField
+
+class TypedMultipleChoiceField(**kwargs)  
+Just like a MultipleChoiceField, except TypedMultipleChoiceField takes two extra arguments, coerce and empty_value.  Default widget: SelectMultiple
+ Empty value: Whatever you’ve given as empty_value
+ Normalizes to: A list of values of the type provided by the coerce argument. Validates that the given values exists in the list of choices and can be coerced. Error message keys: required, invalid_choice
+  The invalid_choice error message may contain %(value)s, which will be replaced with the selected choice. Takes two extra arguments, coerce and empty_value, as for TypedChoiceField.

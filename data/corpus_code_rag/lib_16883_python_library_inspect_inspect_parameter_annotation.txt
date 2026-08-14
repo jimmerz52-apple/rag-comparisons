@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.Parameter.annotation
+
+annotation  
+The annotation for the parameter. If the parameter has no annotation, this attribute is set to Parameter.empty.

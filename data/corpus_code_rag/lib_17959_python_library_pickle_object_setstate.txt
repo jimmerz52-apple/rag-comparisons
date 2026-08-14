@@ -1,0 +1,4 @@
+# python.library.pickle#object.__setstate__
+
+object.__setstate__(state)  
+Upon unpickling, if the class defines __setstate__(), it is called with the unpickled state. In that case, there is no requirement for the state object to be a dictionary. Otherwise, the pickled state must be a dictionary and its items are assigned to the new instance’s dictionary.  Note If __getstate__() returns a false value, the __setstate__() method will not be called upon unpickling.

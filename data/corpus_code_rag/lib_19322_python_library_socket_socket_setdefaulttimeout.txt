@@ -1,0 +1,4 @@
+# python.library.socket#socket.setdefaulttimeout
+
+socket.setdefaulttimeout(timeout)  
+Set the default timeout in seconds (float) for new socket objects. When the socket module is first imported, the default is None. See settimeout() for possible values and their respective meanings.

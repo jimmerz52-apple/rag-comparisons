@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarTransform.transform_path_non_affine
+
+transform_path_non_affine(path)[source]
+ 
+Apply the non-affine part of this transform to Path path, returning a new Path. transform_path(path) is equivalent to transform_path_affine(transform_path_non_affine(values)).

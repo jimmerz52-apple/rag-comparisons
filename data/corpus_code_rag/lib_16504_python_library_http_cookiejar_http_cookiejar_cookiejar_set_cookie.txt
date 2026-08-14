@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar.set_cookie
+
+CookieJar.set_cookie(cookie)  
+Set a Cookie, without checking with policy to see whether or not it should be set.

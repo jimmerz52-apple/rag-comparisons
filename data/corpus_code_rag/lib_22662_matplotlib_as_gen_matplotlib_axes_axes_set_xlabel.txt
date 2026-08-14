@@ -1,0 +1,190 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_xlabel
+
+matplotlib.axes.Axes.set_xlabel   Axes.set_xlabel(xlabel, fontdict=None, labelpad=None, *, loc=None, **kwargs)[source]
+ 
+Set the label for the x-axis.  Parameters 
+ 
+xlabelstr
+
+
+The label text.  
+labelpadfloat, default: rcParams["axes.labelpad"] (default: 4.0)
+
+
+Spacing in points from the Axes bounding box including ticks and tick labels. If None, the previous value is left as is.  
+loc{'left', 'center', 'right'}, default: rcParams["xaxis.labellocation"] (default: 'center')
+
+
+The label position. This is a high-level alternative for passing parameters x and horizontalalignment.    Other Parameters 
+ 
+**kwargsText properties
+
+
+Text properties control the appearance of the label.      See also  text
+
+Documents the properties supported by Text.    
+  Examples using matplotlib.axes.Axes.set_xlabel
+ 
+   Bar Label Demo   
+
+   Horizontal bar chart   
+
+   Broken Barh   
+
+   CSD Demo   
+
+   Fill Between and Alpha   
+
+   Filling the area between lines   
+
+   Fill Betweenx Demo   
+
+   Hatch-filled histograms   
+
+   Hat graph   
+
+   Psd Demo   
+
+   Scatter Demo2   
+
+   Stackplots and streamgraphs   
+
+   hlines and vlines   
+
+   Contourf Demo   
+
+   Tricontour Demo   
+
+   Tripcolor Demo   
+
+   Triplot Demo   
+
+   Aligning Labels   
+
+   Axes Demo   
+
+   Axis Label Position   
+
+   Resizing axes with constrained layout   
+
+   Resizing axes with tight layout   
+
+   Figure labels: suptitle, supxlabel, supylabel   
+
+   Invert Axes   
+
+   Secondary Axis   
+
+   Figure subfigures   
+
+   Multiple subplots   
+
+   Plots with different scales   
+
+   Box plots with custom fill colors   
+
+   Boxplots   
+
+   Box plot vs. violin plot comparison   
+
+   Violin plot customization   
+
+   Using histograms to plot a cumulative distribution   
+
+   Some features of the histogram (hist) function   
+
+   Producing multiple histograms side by side   
+
+   Using accented text in matplotlib   
+
+   Labeling ticks using engineering notation   
+
+   Using a ttf font file in Matplotlib   
+
+   Legend Demo   
+
+   Mathtext   
+
+   Multiline   
+
+   Rendering math equations using TeX   
+
+   Title positioning   
+
+   Simple axes labels   
+
+   Text Commands   
+
+   Color Demo   
+
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Ellipse Collection   
+
+   Dark background style sheet   
+
+   Make Room For Ylabel Using Axesgrid   
+
+   Parasite Simple   
+
+   Parasite Axes demo   
+
+   Parasite axis demo   
+
+   Ticklabel alignment   
+
+   Simple Axis Direction03   
+
+   Simple Axisline   
+
+   Anatomy of a figure   
+
+   XKCD   
+
+   Keypress event   
+
+   Pythonic Matplotlib   
+
+   Plot 2D data on 3D plot   
+
+   Create 2D bar graphs in different planes   
+
+   3D errorbars   
+
+   Lorenz Attractor   
+
+   Automatic Text Offsetting   
+
+   3D scatterplot   
+
+   3D surface with polar coordinates   
+
+   Text annotations in 3D   
+
+   Log Bar   
+
+   MRI With EEG   
+
+   Multiple Yaxis With Spines   
+
+   Centering labels between ticks   
+
+   Pgf Fonts   
+
+   Pgf Texsystem   
+
+   Slider   
+
+   Basic Usage   
+
+   Artist tutorial   
+
+   Constrained Layout Guide   
+
+   Tight Layout guide   
+
+   Arranging multiple Axes in a Figure   
+
+   Choosing Colormaps in Matplotlib   
+
+   Text in Matplotlib Plots

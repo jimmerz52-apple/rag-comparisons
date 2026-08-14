@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.short
+
+class numpy.short[source]
+ 
+Signed integer type, compatible with C short.  Character code 
+'h'  Alias on this platform (Linux x86_64) 
+numpy.int16: 16-bit signed integer (-32_768 to 32_767).

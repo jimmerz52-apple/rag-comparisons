@@ -1,0 +1,15 @@
+# matplotlib.cbook_api#matplotlib.cbook.simple_linear_interpolation
+
+matplotlib.cbook.simple_linear_interpolation(a, steps)[source]
+ 
+Resample an array with steps - 1 points between original point pairs. Along each column of a, (steps - 1) points are introduced between each original values; the values are linearly interpolated.  Parameters 
+ 
+aarray, shape (n, ...)
+
+
+stepsint
+
+  Returns 
+ array
+
+shape ((n - 1) * steps + 1, ...)

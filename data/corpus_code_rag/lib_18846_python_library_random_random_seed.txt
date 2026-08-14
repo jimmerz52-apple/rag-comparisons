@@ -1,0 +1,4 @@
+# python.library.random#random.seed
+
+random.seed(a=None, version=2)  
+Initialize the random number generator. If a is omitted or None, the current system time is used. If randomness sources are provided by the operating system, they are used instead of the system time (see the os.urandom() function for details on availability). If a is an int, it is used directly. With version 2 (the default), a str, bytes, or bytearray object gets converted to an int and all of its bits are used. With version 1 (provided for reproducing random sequences from older versions of Python), the algorithm for str and bytes generates a narrower range of seeds.  Changed in version 3.2: Moved to the version 2 scheme which uses all of the bits in a string seed.   Deprecated since version 3.9: In the future, the seed must be one of the following types: NoneType, int, float, str, bytes, or bytearray.

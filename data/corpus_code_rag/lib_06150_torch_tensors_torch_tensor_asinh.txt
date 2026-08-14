@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.asinh_
+
+asinh_() → Tensor  
+In-place version of asinh()

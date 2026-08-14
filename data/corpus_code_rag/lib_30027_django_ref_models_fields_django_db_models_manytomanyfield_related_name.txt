@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ManyToManyField.related_name
+
+ManyToManyField.related_name  
+Same as ForeignKey.related_name.

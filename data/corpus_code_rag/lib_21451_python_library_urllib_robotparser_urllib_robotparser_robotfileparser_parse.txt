@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.parse
+
+parse(lines)  
+Parses the lines argument.

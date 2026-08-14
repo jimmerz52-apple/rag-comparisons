@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.BaseHandler.add_parent
+
+BaseHandler.add_parent(director)  
+Add a director as parent.

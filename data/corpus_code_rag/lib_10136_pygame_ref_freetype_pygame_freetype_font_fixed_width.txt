@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.fixed_width
+
+fixed_width 
+ Gets whether the font is fixed-width fixed_width -> bool  Read only. Returns True if the font contains fixed-width characters (for example Courier, Bitstream Vera Sans Mono, Andale Mono).

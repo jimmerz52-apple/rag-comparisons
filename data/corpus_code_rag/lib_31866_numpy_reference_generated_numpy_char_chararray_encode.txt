@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.encode
+
+numpy.char.chararray.encode method   char.chararray.encode(encoding=None, errors=None)[source]
+ 
+Calls str.encode element-wise.  See also  char.encode

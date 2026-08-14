@@ -1,0 +1,4 @@
+# django.ref.contrib.messages#django.contrib.messages.storage.fallback.FallbackStorage
+
+class storage.fallback.FallbackStorage  
+This class first uses CookieStorage, and falls back to using SessionStorage for the messages that could not fit in a single cookie. It also requires Django’s contrib.sessions application. This behavior avoids writing to the session whenever possible. It should provide the best performance in the general case.

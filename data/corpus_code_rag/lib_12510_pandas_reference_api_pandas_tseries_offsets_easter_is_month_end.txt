@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.easter.is_month_end
+
+pandas.tseries.offsets.Easter.is_month_end   Easter.is_month_end()

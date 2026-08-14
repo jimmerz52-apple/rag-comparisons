@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.BigAutoField
+
+class BigAutoField(**options)

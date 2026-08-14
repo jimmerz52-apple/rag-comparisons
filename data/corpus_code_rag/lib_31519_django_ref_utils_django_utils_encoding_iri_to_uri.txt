@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.encoding.iri_to_uri
+
+iri_to_uri(iri) [source]
+ 
+Convert an Internationalized Resource Identifier (IRI) portion to a URI portion that is suitable for inclusion in a URL. This is the algorithm from section 3.1 of RFC 3987#section-3.1, slightly simplified since the input is assumed to be a string rather than an arbitrary byte stream. Takes an IRI (string or UTF-8 bytes) and returns a string containing the encoded result.

@@ -1,0 +1,4 @@
+# python.library.xml.sax.utils#xml.sax.saxutils.unescape
+
+xml.sax.saxutils.unescape(data, entities={})  
+Unescape '&amp;', '&lt;', and '&gt;' in a string of data. You can unescape other strings of data by passing a dictionary as the optional entities parameter. The keys and values must all be strings; each key will be replaced with its corresponding value. '&amp', '&lt;', and '&gt;' are always unescaped, even if entities is provided.

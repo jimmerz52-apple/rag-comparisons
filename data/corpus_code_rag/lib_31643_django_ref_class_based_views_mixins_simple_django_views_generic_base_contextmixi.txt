@@ -1,0 +1,5 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.ContextMixin.extra_context
+
+extra_context  
+A dictionary to include in the context. This is a convenient way of specifying some context in as_view(). Example usage: from django.views.generic import TemplateView
+TemplateView.as_view(extra_context={'title': 'Custom Title'})

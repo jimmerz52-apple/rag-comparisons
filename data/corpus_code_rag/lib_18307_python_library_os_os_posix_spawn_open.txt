@@ -1,0 +1,4 @@
+# python.library.os#os.POSIX_SPAWN_OPEN
+
+os.POSIX_SPAWN_OPEN  
+(os.POSIX_SPAWN_OPEN, fd, path, flags, mode) Performs os.dup2(os.open(path, flags, mode), fd).

@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.init
+
+pygame.joystick.init() 
+ Initialize the joystick module. init() -> None  This function is called automatically by pygame.init(). It initializes the joystick module. The module must be initialized before any other functions will work. It is safe to call this function more than once.

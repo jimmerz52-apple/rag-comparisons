@@ -1,0 +1,15 @@
+# matplotlib.tri_api#matplotlib.tri.LinearTriInterpolator.gradient
+
+gradient(x, y)[source]
+ 
+Returns a list of 2 masked arrays containing interpolated derivatives at the specified (x, y) points.  Parameters 
+ 
+x, yarray-like
+
+
+x and y coordinates of the same shape and any number of dimensions.    Returns 
+ 
+dzdx, dzdynp.ma.array
+
+
+2 masked arrays of the same shape as x and y; values corresponding to (x, y) points outside of the triangulation are masked out. The first returned array contains the values of \(\frac{\partial z}{\partial x}\) and the second those of \(\frac{\partial z}{\partial y}\).

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.date.resolution
+
+date.resolution  
+The smallest possible difference between non-equal date objects, timedelta(days=1).

@@ -1,0 +1,8 @@
+# python.library.stdtypes#bytearray.istitle
+
+bytes.istitle()  
+bytearray.istitle()  
+Return True if the sequence is ASCII titlecase and the sequence is not empty, False otherwise. See bytes.title() for more details on the definition of “titlecase”. For example: >>> b'Hello World'.istitle()
+True
+>>> b'Hello world'.istitle()
+False

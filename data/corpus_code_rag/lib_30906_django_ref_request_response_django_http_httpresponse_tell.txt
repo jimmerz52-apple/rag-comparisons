@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.tell
+
+HttpResponse.tell()  
+This method makes an HttpResponse instance a file-like object.

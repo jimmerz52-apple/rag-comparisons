@@ -1,0 +1,5 @@
+# python.library.operator#operator.lshift
+
+operator.lshift(a, b)  
+operator.__lshift__(a, b)  
+Return a shifted left by b.

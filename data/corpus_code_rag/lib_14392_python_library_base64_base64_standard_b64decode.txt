@@ -1,0 +1,4 @@
+# python.library.base64#base64.standard_b64decode
+
+base64.standard_b64decode(s)  
+Decode bytes-like object or ASCII string s using the standard Base64 alphabet and return the decoded bytes.

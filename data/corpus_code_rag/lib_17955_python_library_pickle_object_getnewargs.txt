@@ -1,0 +1,4 @@
+# python.library.pickle#object.__getnewargs__
+
+object.__getnewargs__()  
+This method serves a similar purpose as __getnewargs_ex__(), but supports only positional arguments. It must return a tuple of arguments args which will be passed to the __new__() method upon unpickling. __getnewargs__() will not be called if __getnewargs_ex__() is defined.  Changed in version 3.6: Before Python 3.6, __getnewargs__() was called instead of __getnewargs_ex__() in protocols 2 and 3.

@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.ProcessError
+
+exception multiprocessing.ProcessError  
+The base class of all multiprocessing exceptions.

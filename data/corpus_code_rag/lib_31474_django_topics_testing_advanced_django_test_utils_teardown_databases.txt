@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.utils.teardown_databases
+
+teardown_databases(old_config, parallel=0, keepdb=False)  
+Destroys the test databases, restoring pre-test conditions. old_config is a data structure defining the changes in the database configuration that need to be reversed. It’s the return value of the setup_databases() method.

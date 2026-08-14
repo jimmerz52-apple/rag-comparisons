@@ -1,0 +1,9 @@
+# python.library.os.path#os.path.commonprefix
+
+os.path.commonprefix(list)  
+Return the longest path prefix (taken character-by-character) that is a prefix of all paths in list. If list is empty, return the empty string ('').  Note This function may return invalid paths because it works a character at a time. To obtain a valid path, see commonpath(). >>> os.path.commonprefix(['/usr/lib', '/usr/local/lib'])
+'/usr/l'
+
+>>> os.path.commonpath(['/usr/lib', '/usr/local/lib'])
+'/usr'
+   Changed in version 3.6: Accepts a path-like object.

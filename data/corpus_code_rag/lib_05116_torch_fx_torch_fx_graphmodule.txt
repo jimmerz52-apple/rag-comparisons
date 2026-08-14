@@ -1,0 +1,29 @@
+# torch.fx#torch.fx.GraphModule
+
+class torch.fx.GraphModule(root, graph, class_name='GraphModule') [source]
+ 
+GraphModule is an nn.Module generated from an fx.Graph. Graphmodule has a graph attribute, as well as code and forward attributes generated from that graph.  Warning When graph is reassigned, code and forward will be automatically regenerated. However, if you edit the contents of the graph without reassigning the graph attribute itself, you must call recompile() to update the generated code.   
+__init__(root, graph, class_name='GraphModule') [source]
+ 
+Construct a GraphModule.  Parameters 
+ 
+root (Union[torch.nn.Module, Dict[str, Any]) – root can either be an nn.Module instance or a Dict mapping strings to any attribute type. In the case that root is a Module, any references to Module-based objects (via qualified name) in the Graph’s Nodes’ target field will be copied over from the respective place within root’s Module hierarchy into the GraphModule’s module hierarchy. In the case that root is a dict, the qualified name found in a Node’s target will be looked up directly in the dict’s keys. The object mapped to by the Dict will be copied over into the appropriate place within the GraphModule’s module hierarchy. 
+graph (Graph) – graph contains the nodes this GraphModule should use for code generation 
+name (str) – name denotes the name of this GraphModule for debugging purposes. If it’s unset, all error messages will report as originating from GraphModule. It may be helpful to set this to root’s original name or a name that makes sense within the context of your transform.    
+  
+property code  
+Return the Python code generated from the Graph underlying this GraphModule. 
+  
+property graph  
+Return the Graph underlying this GraphModule 
+  
+recompile() [source]
+ 
+Recompile this GraphModule from its graph attribute. This should be called after editing the contained graph, otherwise the generated code of this GraphModule will be out of date. 
+  
+to_folder(folder, module_name='FxModule') [source]
+ 
+Dumps out module to folder with module_name so that it can be imported with from <folder> import <module_name>  Parameters 
+ 
+folder (Union[str, os.PathLike]) – The folder to write the code out to 
+module_name (str) – Top-level name to use for the Module while writing out the code

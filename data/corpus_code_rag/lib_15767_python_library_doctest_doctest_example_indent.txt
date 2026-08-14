@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.Example.indent
+
+indent  
+The example’s indentation in the containing string, i.e., the number of space characters that precede the example’s first prompt.

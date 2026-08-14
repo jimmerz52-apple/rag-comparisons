@@ -1,0 +1,4 @@
+# python.library.math#math.tan
+
+math.tan(x)  
+Return the tangent of x radians.

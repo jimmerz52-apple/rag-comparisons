@@ -1,0 +1,7 @@
+# torch.futures#torch.futures.wait_all
+
+torch.futures.wait_all(futures) [source]
+ 
+Waits for all provided futures to be complete, and returns the list of completed values.  Parameters 
+futures (list) – a list of Future object.  Returns 
+A list of the completed Future results. This method will throw an error if wait on any Future throws.

@@ -1,0 +1,4 @@
+# python.library.pyclbr#pyclbr.Class.parent
+
+Class.parent  
+For top-level classes, None. For nested classes, the parent.  New in version 3.7.

@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.ensemble.gradientboostingclassifier#sklearn.ensemble.GradientBoostingClassifier.predict_proba
+
+predict_proba(X) [source]
+ 
+Predict class probabilities for X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+pndarray of shape (n_samples, n_classes) 
+
+The class probabilities of the input samples. The order of the classes corresponds to that in the attribute classes_.    Raises 
+ AttributeError
+
+If the loss does not support probabilities.

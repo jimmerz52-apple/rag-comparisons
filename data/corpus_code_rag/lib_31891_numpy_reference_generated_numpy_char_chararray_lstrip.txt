@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.lstrip
+
+numpy.char.chararray.lstrip method   char.chararray.lstrip(chars=None)[source]
+ 
+For each element in self, return a copy with the leading characters removed.  See also  char.lstrip

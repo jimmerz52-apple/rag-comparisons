@@ -1,0 +1,7 @@
+# python.library.selectors#selectors.DevpollSelector
+
+class selectors.DevpollSelector  
+select.devpoll()-based selector.  
+fileno()  
+This returns the file descriptor used by the underlying select.devpoll() object. 
+  New in version 3.5.

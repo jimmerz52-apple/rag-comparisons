@@ -1,0 +1,5 @@
+# matplotlib.textpath_api#matplotlib.textpath.TextPath.set_size
+
+set_size(size)[source]
+ 
+Set the text size.

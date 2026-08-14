@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.viewers#skimage.viewer.viewers.ImageViewer.open_file
+
+open_file(filename=None) [source]
+ 
+Open image file and display in viewer.

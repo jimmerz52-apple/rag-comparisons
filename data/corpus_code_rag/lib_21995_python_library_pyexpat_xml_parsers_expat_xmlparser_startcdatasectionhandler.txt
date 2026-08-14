@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.StartCdataSectionHandler
+
+xmlparser.StartCdataSectionHandler()  
+Called at the start of a CDATA section. This and EndCdataSectionHandler are needed to be able to identify the syntactical start and end for CDATA sections.

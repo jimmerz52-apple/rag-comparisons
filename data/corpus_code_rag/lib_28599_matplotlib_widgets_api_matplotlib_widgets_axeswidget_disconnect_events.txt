@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.AxesWidget.disconnect_events
+
+disconnect_events()[source]
+ 
+Disconnect all events created by this widget.

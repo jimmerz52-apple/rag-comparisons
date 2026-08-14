@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractChildWatcher.is_active
+
+is_active()  
+Return True if the watcher is ready to use. Spawning a subprocess with inactive current child watcher raises RuntimeError.  New in version 3.8.

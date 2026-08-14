@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.with_hostmask
+
+with_hostmask  
+A string representation of the network, with the mask in host mask notation.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.core.groupby.groupby.indices
+
+pandas.core.groupby.GroupBy.indices   propertyGroupBy.indices
+ 
+Dict {group name -> group indices}.

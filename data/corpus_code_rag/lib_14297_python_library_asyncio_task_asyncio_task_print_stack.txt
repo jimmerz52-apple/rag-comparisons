@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.Task.print_stack
+
+print_stack(*, limit=None, file=None)  
+Print the stack or traceback for this Task. This produces output similar to that of the traceback module for the frames retrieved by get_stack(). The limit argument is passed to get_stack() directly. The file argument is an I/O stream to which the output is written; by default output is written to sys.stderr.

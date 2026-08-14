@@ -1,0 +1,4 @@
+# python.library.exceptions#OSError.strerror
+
+strerror  
+The corresponding error message, as provided by the operating system. It is formatted by the C functions perror() under POSIX, and FormatMessage() under Windows.

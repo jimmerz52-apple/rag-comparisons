@@ -1,0 +1,3 @@
+# tensorflow.mlir.experimental
+
+Module: tf.mlir.experimental Public API for tf.mlir.experimental namespace. Functions convert_function(...): Import a ConcreteFunction and convert it to a textual MLIR module. convert_graph_def(...): Import a GraphDef and convert it to a textual MLIR module.

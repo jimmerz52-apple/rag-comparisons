@@ -1,0 +1,4 @@
+# python.library.test#test.support.FS_NONASCII
+
+test.support.FS_NONASCII  
+A non-ASCII character encodable by os.fsencode().

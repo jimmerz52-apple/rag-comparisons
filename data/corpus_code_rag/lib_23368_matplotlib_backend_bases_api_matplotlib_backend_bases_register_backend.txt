@@ -1,0 +1,18 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.register_backend
+
+matplotlib.backend_bases.register_backend(format, backend, description=None)[source]
+ 
+Register a backend for saving to a given file format.  Parameters 
+ 
+formatstr
+
+
+File extension  
+backendmodule string or canvas class
+
+
+Backend for handling file output  
+descriptionstr, default: ""
+
+
+Description of the file type.

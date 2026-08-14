@@ -1,0 +1,14 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.path3dcollection#mpl_toolkits.mplot3d.art3d.Path3DCollection.set_sizes
+
+set_sizes(sizes, dpi=72.0)[source]
+ 
+Set the sizes of each member of the collection.  Parameters 
+ 
+sizesndarray or None
+
+
+The size to set for each element of the collection. The value is the 'area' of the element.  
+dpifloat, default: 72
+
+
+The dpi of the canvas.

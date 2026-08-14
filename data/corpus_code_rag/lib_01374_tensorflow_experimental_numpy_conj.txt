@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.conj
+
+tf.experimental.numpy.conj TensorFlow variant of NumPy's conj. 
+tf.experimental.numpy.conj(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.conj.

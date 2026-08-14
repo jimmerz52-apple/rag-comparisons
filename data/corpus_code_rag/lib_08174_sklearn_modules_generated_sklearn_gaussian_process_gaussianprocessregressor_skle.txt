@@ -1,0 +1,25 @@
+# sklearn.modules.generated.sklearn.gaussian_process.gaussianprocessregressor#sklearn.gaussian_process.GaussianProcessRegressor.predict
+
+predict(X, return_std=False, return_cov=False) [source]
+ 
+Predict using the Gaussian process regression model We can also predict based on an unfitted model by using the GP prior. In addition to the mean of the predictive distribution, also its standard deviation (return_std=True) or covariance (return_cov=True). Note that at most one of the two can be requested.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) or list of object 
+
+Query points where the GP is evaluated.  
+return_stdbool, default=False 
+
+If True, the standard-deviation of the predictive distribution at the query points is returned along with the mean.  
+return_covbool, default=False 
+
+If True, the covariance of the joint predictive distribution at the query points is returned along with the mean.    Returns 
+ 
+y_meanndarray of shape (n_samples, [n_output_dims]) 
+
+Mean of predictive distribution a query points.  
+y_stdndarray of shape (n_samples,), optional 
+
+Standard deviation of predictive distribution at query points. Only returned when return_std is True.  
+y_covndarray of shape (n_samples, n_samples), optional 
+
+Covariance of joint predictive distribution a query points. Only returned when return_cov is True.

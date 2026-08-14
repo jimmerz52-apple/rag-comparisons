@@ -1,0 +1,4 @@
+# python.library.webbrowser#webbrowser.open_new_tab
+
+webbrowser.open_new_tab(url)  
+Open url in a new page (“tab”) of the default browser, if possible, otherwise equivalent to open_new().

@@ -1,0 +1,44 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.supylabel
+
+supylabel(t, **kwargs)[source]
+ 
+Add a centered supylabel to the figure.  Parameters 
+ 
+tstr
+
+
+The supylabel text.  
+xfloat, default: 0.02
+
+
+The x location of the text in figure coordinates.  
+yfloat, default: 0.5
+
+
+The y location of the text in figure coordinates.  
+horizontalalignment, ha{'center', 'left', 'right'}, default: left
+
+
+The horizontal alignment of the text relative to (x, y).  
+verticalalignment, va{'top', 'center', 'bottom', 'baseline'}, default: center
+
+
+The vertical alignment of the text relative to (x, y).  
+fontsize, sizedefault: rcParams["figure.titlesize"] (default: 'large')
+
+
+The font size of the text. See Text.set_size for possible values.  
+fontweight, weightdefault: rcParams["figure.titleweight"] (default: 'normal')
+
+
+The font weight of the text. See Text.set_weight for possible values.    Returns 
+ text
+
+The Text instance of the supylabel.    Other Parameters 
+ 
+fontpropertiesNone or dict, optional
+
+
+A dict of font properties. If fontproperties is given the default values for font size and weight are taken from the FontProperties defaults. rcParams["figure.titlesize"] (default: 'large') and rcParams["figure.titleweight"] (default: 'normal') are ignored in this case.  **kwargs
+
+Additional kwargs are matplotlib.text.Text properties.

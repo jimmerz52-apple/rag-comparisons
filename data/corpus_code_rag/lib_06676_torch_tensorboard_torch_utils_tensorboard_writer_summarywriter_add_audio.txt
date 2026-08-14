@@ -1,0 +1,13 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_audio
+
+add_audio(tag, snd_tensor, global_step=None, sample_rate=44100, walltime=None) [source]
+ 
+Add audio data to summary.  Parameters 
+ 
+tag (string) – Data identifier 
+snd_tensor (torch.Tensor) – Sound data 
+global_step (int) – Global step value to record 
+sample_rate (int) – sample rate in Hz 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event     Shape:
+
+snd_tensor: (1,L)(1, L) . The values should lie between [-1, 1].

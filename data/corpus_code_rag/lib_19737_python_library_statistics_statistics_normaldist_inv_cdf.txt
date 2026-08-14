@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.inv_cdf
+
+inv_cdf(p)  
+Compute the inverse cumulative distribution function, also known as the quantile function or the percent-point function. Mathematically, it is written x : P(X <= x) = p. Finds the value x of the random variable X such that the probability of the variable being less than or equal to that value equals the given probability p.

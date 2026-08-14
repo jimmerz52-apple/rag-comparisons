@@ -1,0 +1,10 @@
+# torch.fx#torch.fx.Node.prepend
+
+prepend(x) [source]
+ 
+Insert x before this node in the list of nodes in the graph. Example: Before: p -> self
+        bx -> x -> ax
+After:  p -> x -> self
+        bx -> ax
+  Parameters 
+x (Node) – The node to put before this node. Must be a member of the same graph.

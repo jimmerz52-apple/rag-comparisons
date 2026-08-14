@@ -1,0 +1,8 @@
+# python.library.exceptions#BaseException.with_traceback
+
+with_traceback(tb)  
+This method sets tb as the new traceback for the exception and returns the exception object. It is usually used in exception handling code like this: try:
+    ...
+except SomeException:
+    tb = sys.exc_info()[2]
+    raise OtherException(...).with_traceback(tb)

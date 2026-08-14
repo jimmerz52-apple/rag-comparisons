@@ -1,0 +1,4 @@
+# python.library.test#test.support.wait_process
+
+test.support.wait_process(pid, *, exitcode, timeout=None)  
+Wait until process pid completes and check that the process exit code is exitcode. Raise an AssertionError if the process exit code is not equal to exitcode. If the process runs longer than timeout seconds (SHORT_TIMEOUT by default), kill the process and raise an AssertionError. The timeout feature is not available on Windows.  New in version 3.9.

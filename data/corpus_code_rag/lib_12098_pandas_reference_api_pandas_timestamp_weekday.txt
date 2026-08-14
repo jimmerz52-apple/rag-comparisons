@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.weekday
+
+pandas.Timestamp.weekday   Timestamp.weekday()
+ 
+Return the day of the week represented by the date. Monday == 0 … Sunday == 6.

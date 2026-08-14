@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder.end
+
+end(tag)  
+Closes the current element. tag is the element name. Returns the closed element.

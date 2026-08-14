@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.SessionInterface.get_cookie_httponly
+
+get_cookie_httponly(app)  
+Returns True if the session cookie should be httponly. This currently just returns the value of the SESSION_COOKIE_HTTPONLY config var.  Parameters 
+app (Flask) –   Return type 
+bool

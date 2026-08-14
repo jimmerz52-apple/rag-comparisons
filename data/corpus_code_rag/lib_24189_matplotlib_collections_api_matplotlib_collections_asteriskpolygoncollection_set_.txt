@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.AsteriskPolygonCollection.set_antialiaseds
+
+set_antialiaseds(aa)[source]
+ 
+Alias for set_antialiased.

@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.get_queue
+
+get_queue() 
+ return any Sound that is queued get_queue() -> Sound  If a Sound is already queued on this channel it will be returned. Once the queued sound begins playback it will no longer be on the queue.

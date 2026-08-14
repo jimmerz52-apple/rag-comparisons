@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.set_transform
+
+set_transform(t)[source]
+ 
+Set the artist transform.  Parameters 
+ 
+tTransform

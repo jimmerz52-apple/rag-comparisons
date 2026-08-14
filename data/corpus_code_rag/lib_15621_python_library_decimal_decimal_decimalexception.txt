@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.DecimalException
+
+class decimal.DecimalException  
+Base class for other signals and a subclass of ArithmeticError.

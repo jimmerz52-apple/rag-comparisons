@@ -1,0 +1,8 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_rmax
+
+get_rmax()[source]
+ 
+ Returns 
+ float
+
+Outer radial limit.

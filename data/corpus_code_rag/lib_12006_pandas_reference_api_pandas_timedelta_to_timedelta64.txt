@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedelta.to_timedelta64
+
+pandas.Timedelta.to_timedelta64   Timedelta.to_timedelta64()
+ 
+Return a numpy.timedelta64 object with ‘ns’ precision.

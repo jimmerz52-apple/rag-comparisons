@@ -1,0 +1,4 @@
+# python.library.csv#csv.excel
+
+class csv.excel  
+The excel class defines the usual properties of an Excel-generated CSV file. It is registered with the dialect name 'excel'.

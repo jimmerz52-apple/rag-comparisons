@@ -1,0 +1,4 @@
+# python.library.typing#typing.MutableMapping
+
+class typing.MutableMapping(Mapping[KT, VT])  
+A generic version of collections.abc.MutableMapping.  Deprecated since version 3.9: collections.abc.MutableMapping now supports []. See PEP 585 and Generic Alias Type.

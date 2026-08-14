@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.steppatch#matplotlib.patches.StepPatch.get_data
+
+get_data()[source]
+ 
+Get StepPatch values, edges and baseline as namedtuple.

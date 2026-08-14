@@ -1,0 +1,8 @@
+# flask.api.index#flask.Flask.add_template_global
+
+add_template_global(f, name=None)  
+Register a custom template global function. Works exactly like the template_global() decorator.  Changelog New in version 0.10.   Parameters 
+ 
+name (Optional[str]) – the optional name of the global function, otherwise the function name will be used. 
+f (Callable[[], Any]) –    Return type 
+None

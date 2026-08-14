@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Node.next
+
+property next  
+Returns the next Node in the linked list of Nodes.  Returns 
+The next Node in the linked list of Nodes.

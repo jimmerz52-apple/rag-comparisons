@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.locatorh
+
+mpl_toolkits.axisartist.angle_helper.LocatorH   classmpl_toolkits.axisartist.angle_helper.LocatorH(nbins, include_last=True)[source]
+ 
+Bases: mpl_toolkits.axisartist.angle_helper.LocatorBase   __call__(v1, v2)[source]
+ 
+Call self as a function.

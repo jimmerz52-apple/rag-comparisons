@@ -1,0 +1,7 @@
+# 623
+Task: 623
+
+# Write a function to find the n-th power of individual elements in a list using lambda function.
+def nth_nums(nums,n):
+ nth_nums = list(map(lambda x: x ** n, nums))
+ return nth_nums

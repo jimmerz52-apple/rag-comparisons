@@ -1,0 +1,4 @@
+# python.library.quopri#quopri.decodestring
+
+quopri.decodestring(s, header=False)  
+Like decode(), except that it accepts a source bytes and returns the corresponding decoded bytes.

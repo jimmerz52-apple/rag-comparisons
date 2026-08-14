@@ -1,0 +1,5 @@
+# flask.api.index#flask.has_app_context
+
+flask.has_app_context()  
+Works like has_request_context() but for the application context. You can also just do a boolean check on the current_app object instead.  Changelog New in version 0.9.   Return type 
+bool

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessmonthend.offset
+
+pandas.tseries.offsets.CustomBusinessMonthEnd.offset   CustomBusinessMonthEnd.offset
+ 
+Alias for self._offset.

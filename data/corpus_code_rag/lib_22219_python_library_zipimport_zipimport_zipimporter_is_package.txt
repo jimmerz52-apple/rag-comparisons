@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.is_package
+
+is_package(fullname)  
+Return True if the module specified by fullname is a package. Raise ZipImportError if the module couldn’t be found.

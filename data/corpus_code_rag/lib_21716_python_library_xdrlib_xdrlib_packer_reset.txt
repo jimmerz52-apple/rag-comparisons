@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.reset
+
+Packer.reset()  
+Resets the pack buffer to the empty string.

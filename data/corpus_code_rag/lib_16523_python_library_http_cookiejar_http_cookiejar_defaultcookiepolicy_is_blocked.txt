@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.is_blocked
+
+DefaultCookiePolicy.is_blocked(domain)  
+Return whether domain is on the blacklist for setting or receiving cookies.

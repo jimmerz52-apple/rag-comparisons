@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.max
+
+max(x, y)  
+Compares two values numerically and returns the maximum.

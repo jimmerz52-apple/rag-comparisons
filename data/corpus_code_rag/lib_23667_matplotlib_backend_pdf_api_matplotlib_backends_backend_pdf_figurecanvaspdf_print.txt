@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.FigureCanvasPdf.print_pdf
+
+print_pdf(filename, *, dpi=<deprecated parameter>, bbox_inches_restore=None, metadata=None)[source]

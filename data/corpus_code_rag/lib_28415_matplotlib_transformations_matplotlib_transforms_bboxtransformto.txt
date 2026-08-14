@@ -1,0 +1,18 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransformTo
+
+classmatplotlib.transforms.BboxTransformTo(boxout, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase BboxTransformTo is a transformation that linearly transforms points from the unit bounding box to a given Bbox. Create a new BboxTransformTo that linearly transforms points from the unit bounding box to boxout.   __init__(boxout, **kwargs)[source]
+ 
+Create a new BboxTransformTo that linearly transforms points from the unit bounding box to boxout. 
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform. 
+   is_separable=True
+ 
+True if this transform is separable in the x- and y- dimensions.

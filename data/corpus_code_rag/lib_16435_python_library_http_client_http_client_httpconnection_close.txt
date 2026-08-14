@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPConnection.close
+
+HTTPConnection.close()  
+Close the connection to the server.

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.buffer
+
+GEOSGeometry.buffer(width, quadsegs=8)  
+Returns a GEOSGeometry that represents all points whose distance from this geometry is less than or equal to the given width. The optional quadsegs keyword sets the number of segments used to approximate a quarter circle (defaults is 8).

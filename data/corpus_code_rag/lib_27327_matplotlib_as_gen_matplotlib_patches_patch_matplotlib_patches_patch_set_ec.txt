@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_ec
+
+set_ec(color)[source]
+ 
+Alias for set_edgecolor.

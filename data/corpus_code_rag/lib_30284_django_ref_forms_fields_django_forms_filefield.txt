@@ -1,0 +1,7 @@
+# django.ref.forms.fields#django.forms.FileField
+
+class FileField(**kwargs)  
+ Default widget: ClearableFileInput
+ Empty value: None
+ Normalizes to: An UploadedFile object that wraps the file content and file name into a single object. Can validate that non-empty file data has been bound to the form. Error message keys: required, invalid, missing, empty, max_length
+  Has two optional arguments for validation, max_length and allow_empty_file. If provided, these ensure that the file name is at most the given length, and that validation will succeed even if the file content is empty. To learn more about the UploadedFile object, see the file uploads documentation. When you use a FileField in a form, you must also remember to bind the file data to the form. The max_length error refers to the length of the filename. In the error message for that key, %(max)d will be replaced with the maximum filename length and %(length)d will be replaced with the current filename length.

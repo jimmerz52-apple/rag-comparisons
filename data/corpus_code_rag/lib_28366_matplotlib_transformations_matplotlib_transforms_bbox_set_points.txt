@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.set_points
+
+set_points(points)[source]
+ 
+Set the points of the bounding box directly from a numpy array of the form: [[x0, y0], [x1, y1]]. No error checking is performed, as this method is mainly for internal use.

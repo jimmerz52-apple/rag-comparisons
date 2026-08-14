@@ -1,0 +1,6 @@
+# django.ref.forms.fields#django.forms.DurationField
+
+class DurationField(**kwargs)  
+ Default widget: TextInput
+ Empty value: None
+ Normalizes to: A Python timedelta. Validates that the given value is a string which can be converted into a timedelta. The value must be between datetime.timedelta.min and datetime.timedelta.max. Error message keys: required, invalid, overflow.  Accepts any format understood by parse_duration().

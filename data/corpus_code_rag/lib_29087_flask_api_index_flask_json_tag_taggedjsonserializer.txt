@@ -1,0 +1,36 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer
+
+class flask.json.tag.TaggedJSONSerializer  
+Serializer that uses a tag system to compactly represent objects that are not JSON types. Passed as the intermediate serializer to itsdangerous.Serializer. The following extra types are supported:  dict tuple bytes Markup UUID datetime   Return type 
+None    
+default_tags = [<class 'flask.json.tag.TagDict'>, <class 'flask.json.tag.PassDict'>, <class 'flask.json.tag.TagTuple'>, <class 'flask.json.tag.PassList'>, <class 'flask.json.tag.TagBytes'>, <class 'flask.json.tag.TagMarkup'>, <class 'flask.json.tag.TagUUID'>, <class 'flask.json.tag.TagDateTime'>]  
+Tag classes to bind when creating the serializer. Other tags can be added later using register(). 
+  
+dumps(value)  
+Tag the value and dump it to a compact JSON string.  Parameters 
+value (Any) –   Return type 
+str   
+  
+loads(value)  
+Load data from a JSON string and deserialized any tagged objects.  Parameters 
+value (str) –   Return type 
+Any   
+  
+register(tag_class, force=False, index=None)  
+Register a new tag with this serializer.  Parameters 
+ 
+tag_class (Type[flask.json.tag.JSONTag]) – tag class to register. Will be instantiated with this serializer instance. 
+force (bool) – overwrite an existing tag. If false (default), a KeyError is raised. 
+index (Optional[int]) – index to insert the new tag in the tag order. Useful when the new tag is a special case of an existing tag. If None (default), the tag is appended to the end of the order.   Raises 
+KeyError – if the tag key is already registered and force is not true.  Return type 
+None   
+  
+tag(value)  
+Convert a value to a tagged representation if necessary.  Parameters 
+value (Any) –   Return type 
+Dict[str, Any]   
+  
+untag(value)  
+Convert a tagged representation back to the original type.  Parameters 
+value (Dict[str, Any]) –   Return type 
+Any

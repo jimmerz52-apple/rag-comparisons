@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.NoSuchMailboxError
+
+exception mailbox.NoSuchMailboxError  
+Raised when a mailbox is expected but is not found, such as when instantiating a Mailbox subclass with a path that does not exist (and with the create parameter set to False), or when opening a folder that does not exist.

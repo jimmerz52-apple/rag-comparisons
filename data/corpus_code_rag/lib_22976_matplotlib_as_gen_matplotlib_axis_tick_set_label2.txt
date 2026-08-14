@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axis.tick.set_label2
+
+matplotlib.axis.Tick.set_label2   Tick.set_label2(s)[source]
+ 
+Set the label2 text.  Parameters 
+ 
+sstr

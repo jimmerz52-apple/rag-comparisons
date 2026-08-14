@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Spinbox.set
+
+set(value)  
+Sets the value of the spinbox to value.

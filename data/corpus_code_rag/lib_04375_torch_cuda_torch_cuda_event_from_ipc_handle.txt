@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Event.from_ipc_handle
+
+classmethod from_ipc_handle(device, handle) [source]
+ 
+Reconstruct an event from an IPC handle on the given device.

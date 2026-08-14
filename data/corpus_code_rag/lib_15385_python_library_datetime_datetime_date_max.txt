@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.date.max
+
+date.max  
+The latest representable date, date(MAXYEAR, 12, 31).

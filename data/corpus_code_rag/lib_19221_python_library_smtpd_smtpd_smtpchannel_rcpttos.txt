@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.rcpttos
+
+rcpttos  
+Holds a list of strings containing the addresses identified in the “RCPT TO:” lines from the client.

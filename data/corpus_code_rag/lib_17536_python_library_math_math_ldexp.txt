@@ -1,0 +1,4 @@
+# python.library.math#math.ldexp
+
+math.ldexp(x, i)  
+Return x * (2**i). This is essentially the inverse of function frexp().

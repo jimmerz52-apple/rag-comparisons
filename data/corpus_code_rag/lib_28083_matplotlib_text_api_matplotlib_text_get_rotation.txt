@@ -1,0 +1,11 @@
+# matplotlib.text_api#matplotlib.text.get_rotation
+
+matplotlib.text.get_rotation(rotation)[source]
+ 
+Return rotation normalized to an angle between 0 and 360 degrees.  Parameters 
+ 
+rotationfloat or {None, 'horizontal', 'vertical'}
+
+
+Rotation angle in degrees. None and 'horizontal' equal 0, 'vertical' equals 90.    Returns 
+ float

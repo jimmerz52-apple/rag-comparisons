@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.eject
+
+eject() 
+ eject or open the cdrom drive eject() -> None  This will open the cdrom drive and eject the cdrom. If the drive is playing or paused it will be stopped.

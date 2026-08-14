@@ -1,0 +1,6 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.pop
+
+pop(key=None, default=no value)  
+Removes and returns a key or index.  Parameters 
+key – The key to be popped. If this is an integer the item at that position is removed, if it’s a string the value for that key is. If the key is omitted or None the last item is removed.  Returns 
+an item.

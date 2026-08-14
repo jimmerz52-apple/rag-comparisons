@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.multiply
+
+multiply(x, y)  
+Return the product of x and y.

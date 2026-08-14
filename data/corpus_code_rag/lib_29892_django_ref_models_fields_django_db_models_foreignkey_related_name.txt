@@ -1,0 +1,8 @@
+# django.ref.models.fields#django.db.models.ForeignKey.related_name
+
+ForeignKey.related_name  
+The name to use for the relation from the related object back to this one. It’s also the default value for related_query_name (the name to use for the reverse filter name from the target model). See the related objects documentation for a full explanation and example. Note that you must set this value when defining relations on abstract models; and when you do so some special syntax is available. If you’d prefer Django not to create a backwards relation, set related_name to '+' or end it with '+'. For example, this will ensure that the User model won’t have a backwards relation to this model: user = models.ForeignKey(
+    User,
+    on_delete=models.CASCADE,
+    related_name='+',
+)

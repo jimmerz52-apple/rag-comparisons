@@ -1,0 +1,4 @@
+# python.library.pprint#pprint.pp
+
+pprint.pp(object, *args, sort_dicts=False, **kwargs)  
+Prints the formatted representation of object followed by a newline. If sort_dicts is false (the default), dictionaries will be displayed with their keys in insertion order, otherwise the dict keys will be sorted. args and kwargs will be passed to pprint() as formatting parameters.  New in version 3.8.

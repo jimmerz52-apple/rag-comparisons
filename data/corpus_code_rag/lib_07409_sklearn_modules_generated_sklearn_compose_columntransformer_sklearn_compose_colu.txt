@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.compose.columntransformer#sklearn.compose.ColumnTransformer.fit
+
+fit(X, y=None) [source]
+ 
+Fit all transformers using X.  Parameters 
+ 
+X{array-like, dataframe} of shape (n_samples, n_features) 
+
+Input data, of which specified subsets are used to fit the transformers.  
+yarray-like of shape (n_samples,…), default=None 
+
+Targets for supervised learning.    Returns 
+ 
+selfColumnTransformer 
+
+This estimator

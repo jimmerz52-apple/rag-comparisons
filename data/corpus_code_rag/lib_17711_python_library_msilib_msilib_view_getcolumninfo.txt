@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.View.GetColumnInfo
+
+View.GetColumnInfo(kind)  
+Return a record describing the columns of the view, through calling MsiViewGetColumnInfo(). kind can be either MSICOLINFO_NAMES or MSICOLINFO_TYPES.

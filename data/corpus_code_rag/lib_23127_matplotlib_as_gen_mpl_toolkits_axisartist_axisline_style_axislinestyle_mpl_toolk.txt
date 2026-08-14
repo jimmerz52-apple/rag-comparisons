@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axisline_style.axislinestyle#mpl_toolkits.axisartist.axisline_style.AxislineStyle.SimpleArrow.new_line
+
+new_line(axis_artist, transform)[source]

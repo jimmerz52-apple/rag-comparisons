@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.random_projection.gaussianrandomprojection#sklearn.random_projection.GaussianRandomProjection.fit
+
+fit(X, y=None) [source]
+ 
+Generate a sparse random projection matrix.  Parameters 
+ 
+X{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Training set: only the shape is used to find optimal random matrix dimensions based on the theory referenced in the afore mentioned papers.  y
+
+Ignored    Returns 
+ self

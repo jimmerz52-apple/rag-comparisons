@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.__cause__
+
+__cause__  
+A TracebackException of the original __cause__.

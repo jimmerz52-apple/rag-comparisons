@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_markersize
+
+get_markersize()[source]
+ 
+Return the marker size in points. See also set_markersize.

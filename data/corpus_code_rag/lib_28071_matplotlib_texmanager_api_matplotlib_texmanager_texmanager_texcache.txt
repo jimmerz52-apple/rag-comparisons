@@ -1,0 +1,3 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.texcache
+
+texcache='/home/elliott/.cache/matplotlib/tex.cache'

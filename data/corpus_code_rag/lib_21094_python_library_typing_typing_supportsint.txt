@@ -1,0 +1,4 @@
+# python.library.typing#typing.SupportsInt
+
+class typing.SupportsInt  
+An ABC with one abstract method __int__.

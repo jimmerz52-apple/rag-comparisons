@@ -1,0 +1,5 @@
+# python.library.socket#socket.socket.ioctl
+
+socket.ioctl(control, option)  
+ Platform 
+Windows   The ioctl() method is a limited interface to the WSAIoctl system interface. Please refer to the Win32 documentation for more information. On other platforms, the generic fcntl.fcntl() and fcntl.ioctl() functions may be used; they accept a socket object as their first argument. Currently only the following control codes are supported: SIO_RCVALL, SIO_KEEPALIVE_VALS, and SIO_LOOPBACK_FAST_PATH.  Changed in version 3.6: SIO_LOOPBACK_FAST_PATH was added.

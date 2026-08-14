@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.igamma
+
+igamma(other) → Tensor  
+See torch.igamma()

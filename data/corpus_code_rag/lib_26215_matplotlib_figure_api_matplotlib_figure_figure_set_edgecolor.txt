@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_edgecolor
+
+set_edgecolor(color)[source]
+ 
+Set the edge color of the Figure rectangle.  Parameters 
+ 
+colorcolor

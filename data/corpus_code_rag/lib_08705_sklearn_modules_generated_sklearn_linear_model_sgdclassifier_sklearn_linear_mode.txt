@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.linear_model.sgdclassifier#sklearn.linear_model.SGDClassifier.predict_log_proba
+
+property predict_log_proba  
+Log of probability estimates. This method is only available for log loss and modified Huber loss. When loss=”modified_huber”, probability estimates may be hard zeros and ones, so taking the logarithm is not possible. See predict_proba for details.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Input data for prediction.    Returns 
+ 
+Tarray-like, shape (n_samples, n_classes) 
+
+Returns the log-probability of the sample for each class in the model, where classes are ordered as they are in self.classes_.

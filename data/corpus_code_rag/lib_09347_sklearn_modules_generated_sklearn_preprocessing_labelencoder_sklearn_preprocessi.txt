@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.preprocessing.labelencoder#sklearn.preprocessing.LabelEncoder.fit
+
+fit(y) [source]
+ 
+Fit label encoder.  Parameters 
+ 
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+selfreturns an instance of self.

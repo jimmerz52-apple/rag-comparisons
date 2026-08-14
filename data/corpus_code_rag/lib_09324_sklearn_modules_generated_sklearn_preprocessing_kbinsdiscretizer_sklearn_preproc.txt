@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.kbinsdiscretizer#sklearn.preprocessing.KBinsDiscretizer.fit
+
+fit(X, y=None) [source]
+ 
+Fit the estimator.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Data to be discretized.  
+yNone 
+
+Ignored. This parameter exists only for compatibility with Pipeline.    Returns 
+ self

@@ -1,0 +1,4 @@
+# python.library.constants#False
+
+False  
+The false value of the bool type. Assignments to False are illegal and raise a SyntaxError.

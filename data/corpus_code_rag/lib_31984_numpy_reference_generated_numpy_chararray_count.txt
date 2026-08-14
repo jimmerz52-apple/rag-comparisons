@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.count
+
+numpy.chararray.count method   chararray.count(sub, start=0, end=None)[source]
+ 
+Returns an array with the number of non-overlapping occurrences of substring sub in the range [start, end].  See also  char.count

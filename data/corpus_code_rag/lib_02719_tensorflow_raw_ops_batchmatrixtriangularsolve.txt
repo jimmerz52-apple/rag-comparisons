@@ -1,0 +1,21 @@
+# tensorflow.raw_ops.batchmatrixtriangularsolve
+
+tf.raw_ops.BatchMatrixTriangularSolve  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.BatchMatrixTriangularSolve  
+tf.raw_ops.BatchMatrixTriangularSolve(
+    matrix, rhs, lower=True, adjoint=False, name=None
+)
+
+ 
+
+
+ Args
+  matrix   A Tensor. Must be one of the following types: float64, float32.  
+  rhs   A Tensor. Must have the same type as matrix.  
+  lower   An optional bool. Defaults to True.  
+  adjoint   An optional bool. Defaults to False.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor. Has the same type as matrix.

@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.hostmask
+
+hostmask  
+The host mask, as an IPv4Address object.

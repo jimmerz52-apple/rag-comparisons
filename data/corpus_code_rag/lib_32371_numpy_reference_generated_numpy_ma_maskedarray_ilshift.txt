@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ilshift__
+
+numpy.ma.MaskedArray.__ilshift__ method   ma.MaskedArray.__ilshift__(value, /)
+ 
+Return self<<=value.

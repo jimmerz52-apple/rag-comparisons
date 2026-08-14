@@ -1,0 +1,38 @@
+# flask.api.index#flask.views.View
+
+class flask.views.View  
+Alternative way to use view functions. A subclass has to implement dispatch_request() which is called with the view arguments from the URL routing system. If methods is provided the methods do not have to be passed to the add_url_rule() method explicitly: class MyView(View):
+    methods = ['GET']
+
+    def dispatch_request(self, name):
+        return f"Hello {name}!"
+
+app.add_url_rule('/hello/<name>', view_func=MyView.as_view('myview'))
+ When you want to decorate a pluggable view you will have to either do that when the view function is created (by wrapping the return value of as_view()) or you can use the decorators attribute: class SecretView(View):
+    methods = ['GET']
+    decorators = [superuser_required]
+
+    def dispatch_request(self):
+        ...
+ The decorators stored in the decorators list are applied one after another when the view function is created. Note that you can not use the class based decorators since those would decorate the view class and not the generated view function!  
+classmethod as_view(name, *class_args, **class_kwargs)  
+Converts the class into an actual view function that can be used with the routing system. Internally this generates a function on the fly which will instantiate the View on each request and call the dispatch_request() method on it. The arguments passed to as_view() are forwarded to the constructor of the class.  Parameters 
+ 
+name (str) –  
+class_args (Any) –  
+class_kwargs (Any) –    Return type 
+Callable   
+  
+decorators: List[Callable] = []  
+The canonical way to decorate class-based views is to decorate the return value of as_view(). However since this moves parts of the logic from the class declaration to the place where it’s hooked into the routing system. You can place one or more decorators in this list and whenever the view function is created the result is automatically decorated.  Changelog New in version 0.8.  
+
+  
+dispatch_request()  
+Subclasses have to override this method to implement the actual view function code. This method is called with all the arguments from the URL rule.  Return type 
+Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], WSGIApplication]   
+  
+methods: Optional[List[str]] = None  
+A list of methods this view can handle. 
+  
+provide_automatic_options: Optional[bool] = None  
+Setting this disables or force-enables the automatic options handling.

@@ -1,0 +1,9 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.identify_region
+
+identify_region(x, y)  
+Returns one of:   
+region meaning   
+heading Tree heading area.  
+separator Space between two columns headings.  
+tree The tree area.  
+cell A data cell.   Availability: Tk 8.6.

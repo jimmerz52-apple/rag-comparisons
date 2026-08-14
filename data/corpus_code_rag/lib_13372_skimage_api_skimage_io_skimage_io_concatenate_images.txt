@@ -1,0 +1,18 @@
+# skimage.api.skimage.io#skimage.io.concatenate_images
+
+skimage.io.concatenate_images(ic) [source]
+ 
+Concatenate all images in the image collection into an array.  Parameters 
+ 
+ican iterable of images 
+
+The images to be concatenated.    Returns 
+ 
+array_catndarray 
+
+An array having one more dimension than the images in ic.    Raises 
+ ValueError
+
+If images in ic don’t have identical shapes.      See also  
+ImageCollection.concatenate, MultiImage.concatenate 
+  Notes concatenate_images receives any iterable object containing images, including ImageCollection and MultiImage, and returns a NumPy array.

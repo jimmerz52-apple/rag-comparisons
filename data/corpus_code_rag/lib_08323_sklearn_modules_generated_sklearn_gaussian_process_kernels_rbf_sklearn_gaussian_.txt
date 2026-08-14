@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.rbf#sklearn.gaussian_process.kernels.RBF.diag
+
+diag(X) [source]
+ 
+Returns the diagonal of the kernel k(X, X). The result of this method is identical to np.diag(self(X)); however, it can be evaluated more efficiently since only the diagonal is evaluated.  Parameters 
+ 
+Xndarray of shape (n_samples_X, n_features) 
+
+Left argument of the returned kernel k(X, Y)    Returns 
+ 
+K_diagndarray of shape (n_samples_X,) 
+
+Diagonal of kernel k(X, X)

@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.current_app
+
+HttpRequest.current_app  
+The url template tag will use its value as the current_app argument to reverse().

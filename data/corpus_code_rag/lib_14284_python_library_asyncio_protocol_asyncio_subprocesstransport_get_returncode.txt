@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport.get_returncode
+
+SubprocessTransport.get_returncode()  
+Return the subprocess return code as an integer or None if it hasn’t returned, which is similar to the subprocess.Popen.returncode attribute.

@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.get_osfhandle
+
+msvcrt.get_osfhandle(fd)  
+Return the file handle for the file descriptor fd. Raises OSError if fd is not recognized. Raises an auditing event msvcrt.get_osfhandle with argument fd.

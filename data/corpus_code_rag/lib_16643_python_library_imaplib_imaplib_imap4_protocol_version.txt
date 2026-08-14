@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.PROTOCOL_VERSION
+
+IMAP4.PROTOCOL_VERSION  
+The most recent supported protocol in the CAPABILITY response from the server.

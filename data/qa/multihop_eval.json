@@ -48,7 +48,759 @@
     ]
   },
   {
-    "id": "mh-com-003-no",
+    "id": "mh-inf-003-meta",
+    "question": "Which company, recently reported by TechCrunch, is not only facing scrutiny for potential non-compliance with GDPR due to its advertising subscription model but is also attempting to shift the oversight of teen social media usage to third parties, and has been accused of having a moderation bias that particularly affects Palestinian users?",
+    "expected_answer": "Meta",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "European consumer groups band together to fight Meta\u2019s self-serving ad-free sub \u2014 branding it \u2018unfair\u2019 and \u2018illegal\u2019",
+      "Meta seeks legislation that would require parents to approve teens\u2019 app downloads",
+      "Meta has a moderation bias problem, not just a \u2018bug,\u2019 that\u2019s suppressing Palestinian voices"
+    ]
+  },
+  {
+    "id": "mh-inf-004-gaza",
+    "question": "Which country, according to a Peace Studies scholar, faces a starvation risk in a region under its blockade, has previously reached understandings to cease hostilities and return life to normal, and is considered to have experienced a massive intelligence failure due to a surprise attack, as reported by sources including 'Fortune', 'Globes English | Israel Business Arena', and 'Business Today | Latest Stock Market And Economy News India'?",
+    "expected_answer": "Gaza",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Israel's blockade of Gaza means that a region the size of Philadelphia faces a real risk of starvation, says Peace Studies scholar",
+      "Israel's defense undone by reliance on technology",
+      "&#039;Massive intel failure by Mossad&#039;: Hamas&#039; surprise attack on Israel shocks internet"
+    ]
+  },
+  {
+    "id": "mh-inf-005-apple",
+    "question": "Which company, according to articles from TechCrunch and The Verge, not only learns from the missteps of its competitors to deliver superior products but also enforces uniform terms on developers through its store and payment system while simultaneously justifying its choice of a default search engine on its devices due to the lack of a valid alternative?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "8 predictions for AI in 2024",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-006-apple",
+    "question": "What company is expected to focus on new Macs and chipsets at an event according to Engadget, is known for refining and polishing its products as suggested by TechCrunch, and enforces uniform terms on developers, OEMs, and carriers through its store and payment system as reported by The Verge?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "What we expect at Apple's Scary Fast event: M3-powered MacBook Pros and new iMacs",
+      "8 predictions for AI in 2024",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-007-apple",
+    "question": "Which company, recently reviewed by TechCrunch for its responsive approach to consumer feedback through its product design, also justifies its choice of Google for user privacy reasons according to The Verge, and is mentioned by the same source for enforcing uniform terms on developers, OEMs, and carriers through its store and payment system?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "Apple 16-inch M3 Max MacBook Pro review: A desktop among laptops",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-008-apple",
+    "question": "Which company, covered by TechCrunch for not allowing users to select their browser during iPhone setup, is also the focus of Engadget's rumors about concentrating on Macs and new chipsets at an upcoming event, and has been reported by The Verge to enforce uniform terms on developers, OEMs, and carriers through its store and payment system?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "What we expect at Apple's Scary Fast event: M3-powered MacBook Pros and new iMacs",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-009-valve",
+    "question": "What company, covered by both Engadget and Polygon, is responsible for making 300 hardware updates since the original launch and is now releasing an improved product on November 16th, emphasizing that developers won't need to target multiple performance benchmarks?",
+    "expected_answer": "Valve",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "The Steam Deck OLED arrives November 16 with an improved screen and longer battery life",
+      "The Steam Deck OLED improves much more than its screen",
+      "Steam Deck OLED review: It's just better"
+    ]
+  },
+  {
+    "id": "mh-inf-010-india",
+    "question": "Which team, with a chance to win their third ODI World Cup according to Zee Business, faced a 162-run defeat in their first World Cup encounter against Australia and also played against them in the second semi-final of the 2015 World Cup?",
+    "expected_answer": "India",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "IND vs AUS Head-to-Head Record in ODI World Cup: Check India vs Australia match stats in World Cup Finals and ODI series",
+      "IND vs AUS Head-to-Head Record in ODI World Cup: Check India vs Australia match stats in World Cup Finals and ODI series",
+      "ICC World Cup 2023: India at Cricket World Cup semi-finals so far"
+    ]
+  },
+  {
+    "id": "mh-inf-011-apple",
+    "question": "Which company, known for not allowing users to select their preferred browser during iPhone setup as mentioned by TechCrunch, is also involved in an 18-month appeal process over a patent dispute reported by The Verge and is identified by The Verge as enforcing uniform terms on developers, OEMs, and carriers through its store and payment system?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Why the\u00a0Apple Watch\u00a0is being banned \u2014 and how Apple can avoid it",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-012-valve",
+    "question": "Which company, covered by both Engadget and Polygon, is set to release an upgraded version of its product with an improved screen, enhanced battery life, and several minor physical upgrades, with availability starting on November 16th?",
+    "expected_answer": "Valve",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "The Steam Deck OLED arrives November 16 with an improved screen and longer battery life",
+      "The Steam Deck OLED improves much more than its screen",
+      "Steam Deck OLED review: It's just better"
+    ]
+  },
+  {
+    "id": "mh-inf-013-apple",
+    "question": "Which company, defended in court for being the only viable option for search engine services according to Eddy Cue, also held an annual hardware event showcasing new developments and is accused of harming news publishers' revenue through anticompetitive practices, as reported by The Verge and TechCrunch?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-014-apple",
+    "question": "What company, known for its upcoming 'Scary Fast event' focusing on Macs and new chipsets as reported by Engadget, is also involved in an 18-month appeal process against a patent dispute decision by the ITC and enforces uniform terms on developers, OEMs, and carriers through its store and payment system as covered by The Verge?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "What we expect at Apple's Scary Fast event: M3-powered MacBook Pros and new iMacs",
+      "Why the\u00a0Apple Watch\u00a0is being banned \u2014 and how Apple can avoid it",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-015-valve",
+    "question": "Which company, covered by The Verge for exclusively focusing on games for their store, by Polygon for making around 300 updates to a specific hardware since its launch, and by Engadget for announcing the immediate availability of a new OLED product starting November 16th at 1pm ET, is responsible for these developments?",
+    "expected_answer": "Valve",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Tim Sweeney on Epic\u2019s victory royale over Google",
+      "The Steam Deck OLED improves much more than its screen",
+      "Steam Deck OLED review: It's just better"
+    ]
+  },
+  {
+    "id": "mh-inf-016-apple",
+    "question": "Which company, recently noted by TechCrunch for its increased responsiveness to consumer feedback and for not allowing users to choose their browser during iPhone setup, is also mentioned by The Verge for enforcing uniform terms on developers, OEMs, and carriers through its store and payment system?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Apple 16-inch M3 Max MacBook Pro review: A desktop among laptops",
+      "5 things we learned so far about the Google antitrust case",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-017-apple",
+    "question": "Which company, covered by both The Verge and Engadget, is known for its privacy stance in a legal context, plans to focus on Macs and new chipsets at an upcoming event, and enforces uniform terms through its store and payment system?",
+    "expected_answer": "Apple",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "What we expect at Apple's Scary Fast event: M3-powered MacBook Pros and new iMacs",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-inf-018-google",
+    "question": "Which company, as reported by both TechCrunch and The Verge, has spent billions to maintain its default search engine status on various platforms and is also accused of harming news publishers\u2019 revenue through its business practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-019-google",
+    "question": "Which company, according to articles from TechCrunch and The Verge, not only spent billions to maintain its default search engine status across various devices and platforms but was also considered by a major tech competitor as the only valid option for such services at the time of their deal, and is simultaneously facing a class action lawsuit for allegedly harming news publishers' revenues through its business practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-020-google",
+    "question": "Which company, according to articles from TechCrunch and The Age, not only invested billions to secure its position as the default search engine but is also accused of manipulating search results for ad revenue maximization and harming news publishers' revenues through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-021-google",
+    "question": "Which company, according to articles from TechCrunch and The Age, has not only invested billions to remain the default search engine on various devices but is also accused of manipulating search results for ad revenue and harming news publishers' revenues through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-022-google",
+    "question": "Which company, often covered by The Verge and TechCrunch, has been reported to make deals with major tech companies to maintain its default search engine status, influences local search rankings with specific criteria, and faces a class action antitrust suit for its impact on news publishers' content and revenue?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "The restaurant nearest Google",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-023-google",
+    "question": "What company, featured in articles from both The Verge and TechCrunch, is responsible for ranking local search results, recently showcased new hardware developments at an annual event, and has been accused in a class action antitrust suit of harming news publishers' bottom lines?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "The restaurant nearest Google",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-024-google",
+    "question": "Which company, reported by The Verge and TechCrunch, was described as having no valid alternatives for search engine services at the time of a certain negotiation and has also been associated with spending billions to maintain its default status across platforms and with practices that harm news publishers' revenues?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "5 things we learned so far about the Google antitrust case",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-025-google",
+    "question": "Which company is at the center of legal scrutiny for potentially anticompetitive practices in phone app markets according to The Verge, is involved with the release of a \"lite\" version of an AI model as reported by TechCrunch, and is accused by news publishers of harming their business by diverting content, readers, and advertising revenue as per another TechCrunch article?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Epic v. Google, explained",
+      "Google fakes an AI demo, Grand Theft Auto VI goes viral and Spotify cuts jobs",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-026-google",
+    "question": "Which company, covered by both TechCrunch and The Verge, is not only claimed to have developed an AI model with superior architecture that rivals GPT-4 but also has been accused of altering the internet's appearance and harming news publishers' bottom lines through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "The people who ruined the internet",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-027-google",
+    "question": "Which company is at the center of concerns from a news publisher according to TechCrunch for anticompetitive practices that affect their bottom line, is capable of addressing Android app distribution and in-app payment issues as mentioned by The Verge, and is also suspected of foul play by individuals as suggested by The Age?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Tim Sweeney on Epic\u2019s victory royale over Google",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-028-openai",
+    "question": "What is the name of the organization behind ChatGPT, which is not only the generative AI entity that TechCrunch describes as a poster child but is also the platform where TechCrunch reports GPT-4 with vision will be launched, and is considered the top priority for further developments?",
+    "expected_answer": "OpenAI",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "One year later, ChatGPT is still alive and kicking",
+      "How the OpenAI fiasco could bolster Meta and the \u2018open AI\u2019 movement",
+      "ChatGPT: Everything you need to know about the AI-powered chatbot"
+    ]
+  },
+  {
+    "id": "mh-inf-029-google",
+    "question": "Which company, recently compared for its product's performance with OpenAI's GPT-3.5 by TechCrunch, is also accused by The Age of manipulating its primary service to maximize ad revenue and is the subject of a class-action antitrust suit reported by TechCrunch for harming news publishers' bottom lines through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-030-israel",
+    "question": "Which country, often featured in headlines from sources like 'Fortune', 'Globes English | Israel Business Arena', and 'Business Today | Latest Stock Market And Economy News India', has a history of controlling vital supplies into a blockaded region, reaching ceasefires with militant organizations, and requires intelligence support to prevent major attacks?",
+    "expected_answer": "Israel",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Israel's blockade of Gaza means that a region the size of Philadelphia faces a real risk of starvation, says Peace Studies scholar",
+      "Israel's defense undone by reliance on technology",
+      "&#039;Massive intel failure by Mossad&#039;: Hamas&#039; surprise attack on Israel shocks internet"
+    ]
+  },
+  {
+    "id": "mh-inf-031-google",
+    "question": "Which company is depicted as an antagonist in a trial covered by The Verge, is capable of addressing Android app distribution and payment system issues according to another article from The Verge, and is accused by news publishers in a class action antitrust suit reported by TechCrunch of harming their business through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "The Epic v. Google trial may come down to simple v. complicated",
+      "Tim Sweeney on Epic\u2019s victory royale over Google",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-032-google",
+    "question": "Which company, reported by both TechCrunch and The Verge, has influenced the internet's appearance, engaged in practices leading to an antitrust case, and invested billions to be the default search engine on various platforms?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "The people who ruined the internet",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-033-openai",
+    "question": "Which company, despite facing financial stability issues according to a TechCrunch article, is expected to promote an \"app store for AI\" as a primary platform for AI tools and toys and is also planning to launch GPT-4 with vision alongside a Turbo API, as reported by TechCrunch?",
+    "expected_answer": "OpenAI",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "8 predictions for AI in 2024",
+      "WTF is going on at OpenAI? We have theories",
+      "ChatGPT: Everything you need to know about the AI-powered chatbot"
+    ]
+  },
+  {
+    "id": "mh-inf-034-google",
+    "question": "Which company is at the center of concerns from 'The Age' for manipulating search results to maximize ad revenue, from 'TechCrunch' for not planning additional measures on its video platform within six months, and is accused in another 'TechCrunch' article of anticompetitively affecting news publishers' content, readers, and advertising income?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Is Google Search better than the rest? And is that fair?",
+      "Deepfake election risks trigger EU call for more generative AI safeguards",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-035-google",
+    "question": "Which company invested $26.3 billion to maintain its default search engine status across various devices and platforms, and is also accused by news publishers of adversely affecting their business through anticompetitive practices, while using relevance, distance, and prominence to rank local search results?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "The restaurant nearest Google",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-036-google",
+    "question": "Which company was depicted as an antagonist by Epic Games in a legal case reported by The Verge, is considered by Apple as the only viable option for search engine services according to a court defense also covered by The Verge, and is accused in a class action antitrust suit reported by TechCrunch of harming news publishers' revenues and readership through its business practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "The Epic v. Google trial may come down to simple v. complicated",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-037-google",
+    "question": "Which company, according to TechCrunch, has invested $26.3 billion to become the default search engine on various platforms, claims its Gemini project surpasses other generative AI models like GPT-4 in architecture and performance, and is accused of using anticompetitive means to harm news publishers' revenues and readership?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-038-amazon",
+    "question": "What company, known for its significant presence in the e-reader space through its Kindle lineup as mentioned by The Verge, also offers life-changing selling opportunities according to Cnbc | World Business News Leader, and was the focus of a Cyber Monday sale with deals reported by Mashable?",
+    "expected_answer": "Amazon",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "200+ of the best deals from Amazon's Cyber Monday sale",
+      "Here are the best Kindle deals right now",
+      "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case"
+    ]
+  },
+  {
+    "id": "mh-inf-039-google",
+    "question": "Which company, recently covered by both TechCrunch for its annual hardware event and for a class action antitrust suit, as well as by The Age for potential unfair competitive practices, is known for its developments in hardware and is also accused of harming news publishers' bottom lines and being involved in foul play?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-040-google",
+    "question": "What company, which TechCrunch reports spent $26.3 billion in 2021 to ensure its search engine's default status on multiple platforms, is also the target of a class action antitrust suit for allegedly harming news publishers' bottom lines and has its Gemini Pro's performance compared to OpenAI's GPT-3.5?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-041-google",
+    "question": "Which company, featured in articles from both The Verge and TechCrunch, is likely to win a court case if all phones and app stores are considered the relevant market, yet is criticized for not planning additional measures on its video platform and for harming news publishers' revenue through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Epic v. Google, explained",
+      "Deepfake election risks trigger EU call for more generative AI safeguards",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-042-google",
+    "question": "Which company, discussed in articles from The Verge and TechCrunch, has not only altered the internet\u2019s appearance with its efforts but is also facing criticism for its new product's performance comparison to GPT-3.5 and for harming news publishers' revenues through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "The people who ruined the internet",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-043-google",
+    "question": "Which company, according to different reports by TechCrunch and The Verge, both released a restricted version of an AI model and was considered the only valid option for search engine services during a negotiation, while also being accused of harming news publishers' revenue and content through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Google fakes an AI demo, Grand Theft Auto VI goes viral and Spotify cuts jobs",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-044-google",
+    "question": "What company, as reported by TechCrunch, spent $26.3 billion in 2021 to maintain its default search engine status on multiple devices and is also accused of harming news publishers' revenue and content through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "5 things we learned so far about the Google antitrust case",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-045-openai",
+    "question": "Which organization, founded in late 2015 and reported by both TechCrunch and The Age, is set to promote an \"app store for AI\" as a primary platform for AI tools and will also introduce GPT-4 with vision alongside a new Turbo API?",
+    "expected_answer": "OpenAI",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "8 predictions for AI in 2024",
+      "How ego and fear fuelled the rise of artificial intelligence",
+      "ChatGPT: Everything you need to know about the AI-powered chatbot"
+    ]
+  },
+  {
+    "id": "mh-inf-046-google",
+    "question": "Which company, reported by TechCrunch, is involved in an antitrust battle where it provided court evidence against claims of hiding discovery items, spent billions to maintain its default search engine status, and is accused of harming news publishers\u2019 revenue through anticompetitive practices?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "5 things we learned so far about the Google antitrust case",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-047-google",
+    "question": "Which company, recently compared by TechCrunch for its Gemini Pro's performance to OpenAI's GPT-3.5, also uses relevance, distance, and prominence to rank local search results according to The Verge, and is accused in another TechCrunch article of anticompetitively siphoning off news publishers' content, readers, and ad revenue?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "The restaurant nearest Google",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-048-google",
+    "question": "Which company is suggested to have altered the internet's appearance, is implicated in potential foul play by users according to a source called 'The Age', and is accused of harming news publishers' bottom lines as reported by 'TechCrunch'?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Is Google Search better than the rest? And is that fair?",
+      "The people who ruined the internet",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-inf-049-google",
+    "question": "Which company, recently covered by TechCrunch, is involved in an antitrust lawsuit over its alleged anticompetitive practices affecting news publishers' revenues, is also battling Fortnite maker Epic Games in court over document disclosure, and has showcased its latest hardware developments at an annual event?",
+    "expected_answer": "Google",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (inference_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "inference_query",
+    "hotpot_type": "inference_query",
+    "evidence_titles": [
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-050-no",
     "question": "Does 'The Independent - Life and Style' article suggest that Taylor Swift is secretive about her relationship with Travis Kelce, while the 'FOX News - Lifestyle' article indicates that she engaged with a viral TikTok video, and does the other 'The Independent - Life and Style' article claim that she has a firm commitment to her Eras Tour schedule?",
     "expected_answer": "no",
     "query_type": "local",
@@ -64,7 +816,7 @@
     ]
   },
   {
-    "id": "mh-com-004-no",
+    "id": "mh-com-051-no",
     "question": "Did the TechCrunch article indicate that Google's release of the Gemini Pro model was comprehensive and on par with the full Gemini Ultra model, while the other TechCrunch article and the article from The Age both imply misconduct on Google's part, with the former accusing Google of anticompetitive behavior towards news publishers and the latter suggesting a general acceptance of foul play allegations against Google?",
     "expected_answer": "no",
     "query_type": "local",
@@ -80,7 +832,7 @@
     ]
   },
   {
-    "id": "mh-com-005-no",
+    "id": "mh-com-052-no",
     "question": "Does 'The Verge' article suggest that Sam Bankman-Fried set withdrawal permissions based on his favorite ice cream flavor, while 'Fortune' and 'TechCrunch' articles focus on his personal actions and influence, such as persuading Adam Yedidia to join his companies and committing fraud for personal gain, without mentioning specific operational policies at FTX?",
     "expected_answer": "no",
     "query_type": "local",
@@ -96,7 +848,759 @@
     ]
   },
   {
-    "id": "mh-tem-006-no",
+    "id": "mh-com-053-no",
+    "question": "Does the Sporting News article rank Tyreek Hill as the top wide receiver for Week 14, aligning with his leading receiver status mentioned in the same source, while the CBSSports.com article focuses on his challenge to average a certain number of yards per game to fail to reach a seasonal goal, and the second Sporting News piece discusses the difficulty of achieving a specific receiving yards milestone due to upcoming opponents' defenses?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Fantasy Football WR PPR Rankings Week 14: Who to start, best sleepers at wide receiver",
+      "Fantasy Football Week 16 Wide Receiver Preview: Waiver adds, DFS plays, and more",
+      "NFL awards odds: Six longshots bettors should consider for MVP, OPOY, DPOY and more"
+    ]
+  },
+  {
+    "id": "mh-com-054-no",
+    "question": "Do the articles from Sporting News on 'Line Shopping in Sports Betting' and 'Moneyline Betting' both state that Sportsbooks do not adjust odds, or does the 'NBA Rookie of the Year Odds' article from the same source also confirm that Sportsbooks do not modify betting lines based on gathered information?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Line Shopping in Sports Betting - How to Find the Best Odds",
+      "Moneyline Betting - What is the Moneyline and How Does it Work?",
+      "NBA Rookie of the Year Odds - Wembanyama the early favorite"
+    ]
+  },
+  {
+    "id": "mh-com-055-no",
+    "question": "Does the TechCrunch article discussing the SBF trial claim that Caroline Ellison took $14 billion from customers without Sam Bankman-Fried's knowledge, while another TechCrunch article alleges Sam Bankman-Fried is facing a criminal trial on seven counts of fraud and conspiracy, and a third TechCrunch piece suggests that he committed fraud for personal gain, indicating a consensus on the misuse of customer funds and fraudulent intentions among the articles?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "SBF Trial: The latest updates from the FTX collapse\u2019s courtroom drama",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-056-no",
+    "question": "Does the article from The Age confirm the same aspect of Google's market behavior as the TechCrunch articles, with one discussing the acceptance of foul play allegations and the other focusing on anticompetitive behavior towards news publishers?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Google Search better than the rest? And is that fair?",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-057-no",
+    "question": "Does the 'Fortune' article agree completely with the 'TechCrunch' article on Sam Bankman-Fried's actions, with both 'Fortune' and 'TechCrunch' focusing solely on the jury's determination of truthfulness?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "The jury finally hears from Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-058-no",
+    "question": "Did 'The Guardian' describe Shai Hope's role in the West Indies v England fifth T20 international as a reckless role, while also characterizing his performance as exemplary, and does the same source depict his struggle against legspin bowling in the first T20 international?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "West Indies v England: fifth and deciding men\u2019s T20 cricket international \u2013 live",
+      "West Indies v England: fifth and deciding men\u2019s T20 cricket international \u2013 live",
+      "West Indies v England: first T20 international \u2013 live"
+    ]
+  },
+  {
+    "id": "mh-com-059-no",
+    "question": "Does the 'Fortune' article claim that Sam Bankman-Fried used Caroline Ellison as a front for secret access to customer funds at Alameda Research, while the 'TechCrunch' articles focus on allegations of Sam Bankman-Fried committing fraud for personal gain and facing a criminal trial for fraud and conspiracy, and also detail Caroline Ellison's involvement?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-060-no",
+    "question": "Did the TechCrunch article suggest that Sam Bankman-Fried's use of wealth was primarily for selfish purposes, while The Verge article implies that he was informed about financial discrepancies, and another TechCrunch article alleges that he committed fraud for personal gain, indicating differing perspectives on his intentions and awareness?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "Sam Bankman-Fried didn\u2019t ask where the $8 billion went",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-061-no",
+    "question": "Does the 'Fortune' article claim that Sam Bankman-Fried used Caroline Ellison as a front for properly managing customer funds at Alameda Research align with the 'TechCrunch' article's allegation that he committed fraud for personal gain, and do both of these claims contrast with 'The Verge' article's portrayal of Sam Bankman-Fried as a trustworthy figure in the cryptocurrency industry?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "The FTX trial is bigger than Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-062-no",
+    "question": "Does the 'Fortune' article claim that Sam Bankman-Fried used Caroline Ellison as a front for secret access to customer funds at Alameda Research align with the 'The Verge' article's claim that he used $1 billion of FTX customer funds to buy out Binance, and does the 'TechCrunch' article also support the notion that Sam Bankman-Fried knowingly committed fraud, or do these articles present the same allegations regarding his actions?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Bankman-Fried was a terrible boyfriend",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-063-no",
+    "question": "Does the article from Fortune claim that Sam Bankman-Fried's lack of persuasive abilities led to Adam Yedidia joining Alameda and FTX, while the TechCrunch articles focus on different aspects of Sam Bankman-Fried's reputation and alleged actions, without mentioning his persuasive influence on specific individuals?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-064-no",
+    "question": "Does the article from The Age confirm the same public perception of Google's behavior as the TechCrunch articles' portrayal of Google's actions and their impact on the market and news publishers?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Google Search better than the rest? And is that fair?",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-065-no",
+    "question": "Does the article from The Verge claiming that Caroline Ellison confessed to the theft of customer funds differ from the Fortune article's claim that Caroline Ellison adequately protected her hedge fund from risks, or do they both suggest a form of mismanagement by Caroline Ellison during her tenure at Alameda Research?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "How is it still getting worse for Sam Bankman-Fried?",
+      "In the end, the FTX trial was about the friends screwed along the way",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand"
+    ]
+  },
+  {
+    "id": "mh-com-066-no",
+    "question": "Does the article from The Verge suggest that Google's influence on the internet's appearance is the same aspect of its impact as the financial influence on platforms described in the TechCrunch article about Google's spending, and is the anticompetitive behavior towards news publishers mentioned in another TechCrunch article a separate issue from these influences?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "The people who ruined the internet",
+      "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-067-no",
+    "question": "Does the article from The Verge claim that Google lacks the ability to resolve issues with Android app distribution and in-app payment systems, while the TechCrunch articles, one discussing Google's Gemini and the other an antitrust suit, both portray Google's actions or products in a positive light?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Tim Sweeney on Epic\u2019s victory royale over Google",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-068-no",
+    "question": "Does the TechCrunch article claim that Google's payments to secure default search engine status are unrelated to its anticompetitive behavior, while The Verge article focuses on the lack of a valid alternative to Google's search engine services, and another TechCrunch article alleges that Google's anticompetitive actions extend to harming news publishers' bottom lines?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-069-no",
+    "question": "Does the article from The Verge claim that Sam Bankman-Fried did not use FTX customer funds for a specific transaction, while the TechCrunch articles focus on his plea to charges and the prosecution's allegations without mentioning the use of customer funds?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Sam Bankman-Fried was a terrible boyfriend",
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-070-no",
+    "question": "Do the articles from The Roar | Sports Writers Blog discussing The All Blacks' actions in the Rugby World Cup final and their previous encounters with Argentina both present The All Blacks as having effortlessly dominated in their gameplay, or do they portray different situations regarding The All Blacks' performance?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "THE GREATEST! Boks beat All Blacks in instant classic to claim record FOURTH RWC in controversial, dramatic final",
+      "THE GREATEST! Boks beat All Blacks in instant classic to claim record FOURTH RWC in controversial, dramatic final",
+      "\u2018It happens\u2019: All Blacks defend star centre after spray as Cheika heaps pressure on \u2018favourites\u2019 New Zealand"
+    ]
+  },
+  {
+    "id": "mh-com-071-no",
+    "question": "Does the article from The Verge claim that Sam Bankman-Fried did not use FTX customer funds for a specific transaction, while the TechCrunch articles focus on the broader allegations of fraud and conspiracy against Sam Bankman-Fried without specifying the use of customer funds?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Sam Bankman-Fried was a terrible boyfriend",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-072-no",
+    "question": "Does 'The Age' article suggest that Taylor Swift's interaction with Travis Kelce during her NFL takeover involves the same type of exchange as the one mentioned in 'The Independent - Life and Style' articles, with both discussing a friendship bracelet and neither mentioning an invitation to a game or openness about a personal relationship?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "When pop culture and sport collide: A timeline of Taylor Swift\u2019s NFL takeover",
+      "Travis Kelce says he tried to delete his \u2018nonsense\u2019 tweets before they went viral",
+      "Taylor Swift is Time\u2019s Person of the Year"
+    ]
+  },
+  {
+    "id": "mh-com-073-no",
+    "question": "Did the TechCrunch article imply that Sam Bankman-Fried's use of wealth was primarily for personal gain, while The Verge article focuses on his challenges in managing FTX and Alameda Research, and the second TechCrunch article alleges that his actions were driven by a desire for personal gain?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "The jury finally hears from Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-074-no",
+    "question": "Does the TechCrunch article suggest that Apple encourages diversity in browser selection on iPhones, while The Verge articles indicate that Apple is facing legal challenges both for its Apple Watch and for enforcing uniform terms through its store and payment system?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Why the\u00a0Apple Watch\u00a0is being banned \u2014 and how Apple can avoid it",
+      "Tim Sweeney on Epic\u2019s victory royale over Google"
+    ]
+  },
+  {
+    "id": "mh-com-075-no",
+    "question": "Does the article from The Verge suggest that Sam Bankman-Fried was unaware of the financial discrepancies at FTX, while the TechCrunch article alleges that he unknowingly committed fraud, and do both articles imply a lack of awareness and intent by Sam Bankman-Fried regarding the financial issues at FTX?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Sam Bankman-Fried didn\u2019t ask where the $8 billion went",
+      "The jury finally hears from Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-076-no",
+    "question": "Does the Fortune article suggest that the jury will not play a role in determining the truth about Sam Bankman-Fried's actions, while the TechCrunch articles focus on past characterizations of Sam Bankman-Fried and allegations of his motives, without mentioning the jury's role in the matter?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-077-no",
+    "question": "Did the CBSSports.com article suggest that the Minnesota Vikings' passing play percentage in Week 4 was higher than in previous weeks, while the Sporting News articles, both regarding the Minnesota Vikings, indicate a strong defensive performance and consistent offensive results under Josh Dobbs' leadership compared to Kirk Cousins'?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "NFL Fantasy Football Week 5 Lineup Decisions: Starts, Sits, Sleepers, Busts to know for every game",
+      "Bears vs. Vikings live score, updates, highlights from NFL 'Monday Night Football' game",
+      "NFL power rankings: Lions, 49ers level up; Texans jump Bengals, Bills; Jets, Patriots sink to bottom for Week 11"
+    ]
+  },
+  {
+    "id": "mh-com-078-no",
+    "question": "Does the article from The Verge suggest that Apple's choice of Google as a search engine provider was due to an abundance of alternatives, while the TechCrunch articles allege that Google's practices in app distribution, payment processing, and news publishing are not anticompetitive, implying that there are no alternatives being suppressed by Google's behavior?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-079-no",
+    "question": "Does the TechCrunch article on Meta's GDPR compliance concerns suggest the same legal issue as the TechCrunch article on Meta's responsibility for teen social media monitoring, and does it also differ from the TechCrunch article on Meta's moderation bias affecting Palestinian voices?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "European consumer groups band together to fight Meta\u2019s self-serving ad-free sub \u2014 branding it \u2018unfair\u2019 and \u2018illegal\u2019",
+      "Meta seeks legislation that would require parents to approve teens\u2019 app downloads",
+      "Meta has a moderation bias problem, not just a \u2018bug,\u2019 that\u2019s suppressing Palestinian voices"
+    ]
+  },
+  {
+    "id": "mh-com-080-no",
+    "question": "Does the TechCrunch article suggest that Sam Bankman-Fried's use of wealth was primarily for personal gain, while The Verge article focuses on the ethicality of his financial practices, and does the second TechCrunch article imply that his actions were driven by fraudulent intentions?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "In the end, the FTX trial was about the friends screwed along the way",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-081-no",
+    "question": "Did 'The Verge' article suggest that Sam Bankman-Fried set withdrawal permissions based on FTX's customer satisfaction scores, while 'Fortune' and 'TechCrunch' articles focus on the jury's determination of his truthfulness and allegations of committing fraud for personal gain, respectively, without mentioning specific operational practices like withdrawal permissions?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "In the end, the FTX trial was about the friends screwed along the way",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-082-no",
+    "question": "Does 'The Age' article suggest that the Sydney Swans' recent loss has them challenging for a top-eight spot in the AFLW, while another 'The Age' article indicates that the same victory allowed them to retake the eighth spot in the standings, and does 'The Guardian' article focus on the Sydney Swans' efforts in enhancing the game day experience rather than their standings in the league?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Comeback kings Richmond take the AFLW points in Cairns",
+      "Ground-breaking Gold Coast: Suns make AFLW finals for a second time",
+      "Craft beer and cheese boxes: Swans tap into something \u2018uniquely Sydney\u2019 to draw AFLW crowds | Jack Snape"
+    ]
+  },
+  {
+    "id": "mh-com-083-no",
+    "question": "Do the articles from CBSSports.com and both articles from Sporting News agree on the amount of the welcome bonus offered by Caesars Sportsbook to new sign-ups, with all mentioning up to $2000, or do they report different amounts?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "2023 Kentucky online sports betting sites: Best legal sportsbooks, promos, bonuses, mobile apps, how to bet",
+      "NBA Rookie of the Year Odds - Wembanyama the early favorite",
+      "Vermont Sportsbook Promos and Sports Betting Launch News"
+    ]
+  },
+  {
+    "id": "mh-com-084-no",
+    "question": "Does 'The Roar | Sports Writers Blog' suggest that 'The All Blacks' motivation for playing is the same as the Springboks' as per the first article, while also indicating that 'The All Blacks' handling was compromised by external factors in the second article, and does it confirm 'The All Blacks' losses to Argentina as stated in the third article?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Legacy vs ego: The Springboks are playing for South Africa, the All Blacks are playing for themselves",
+      "THE GREATEST! Boks beat All Blacks in instant classic to claim record FOURTH RWC in controversial, dramatic final",
+      "\u2018It happens\u2019: All Blacks defend star centre after spray as Cheika heaps pressure on \u2018favourites\u2019 New Zealand"
+    ]
+  },
+  {
+    "id": "mh-com-085-no",
+    "question": "Did the article from The Verge suggest that Sam Bankman-Fried set withdrawal permissions based on his favorite color, while the Cnbc | World Business News Leader article discusses his intentions for FTX's board composition, and the TechCrunch article alleges that Sam Bankman-Fried committed fraud for personal gain, indicating different aspects of his professional conduct?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "In the end, the FTX trial was about the friends screwed along the way",
+      "Sex, Signal messages, and sabotaging FTX's code: SBF execs and Bahamas roommates tell all in court",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-086-no",
+    "question": "Does the TechCrunch article on OpenAI's dev day fail to mention the announcement of a new GPT-4 Turbo model, while the TechCrunch article on OpenAI's safety measures does not discuss any new model announcements, and does the TechCrunch article on ChatGPT confirm the availability of GPT-4 with vision alongside GPT-4 Turbo API?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "OpenAI hosts a dev day, TechCrunch reviews the M3 iMac and MacBook Pro, and Bumble gets a new CEO",
+      "OpenAI buffs safety team and gives board veto power on risky AI",
+      "ChatGPT: Everything you need to know about the AI-powered chatbot"
+    ]
+  },
+  {
+    "id": "mh-com-087-no",
+    "question": "Does 'The Verge' article suggest that Google's deals with companies like Apple are unnecessary due to a plethora of alternatives, while 'The Age' and 'TechCrunch' articles imply Google's actions are primarily driven by profit maximization and anticompetitive behavior, respectively?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-088-no",
+    "question": "Does the 'Fortune' article suggest the same perspective on Sam Bankman-Fried's legal situation as the 'TechCrunch' articles, with 'Fortune' focusing on the jury's determination of truthfulness and 'TechCrunch' alleging fraudulent intentions for personal gain?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-089-no",
+    "question": "Did the article from The Verge suggest that Sam Bankman-Fried did not use FTX customer funds for a specific transaction, while the TechCrunch articles imply that his overall wealth and alleged fraudulent activities were not directed towards different goals, such as influencing politics and achieving personal gain?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Sam Bankman-Fried was a terrible boyfriend",
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-090-no",
+    "question": "Does the TechCrunch article claim that Google's anticompetitive behavior benefits the app distribution and payment processing markets for Android, while The Verge article focuses on the market definition in an antitrust case involving Google, and another TechCrunch article alleges Google's anticompetitive actions impact news publishers' content, readers, and ad revenue?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Epic v. Google, explained",
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-091-no",
+    "question": "Did 'The Verge' article suggest that Sam Bankman-Fried's effective management of FTX and Alameda Research was due to company growth, while 'Fortune' and 'TechCrunch' articles imply that Sam Bankman-Fried's management issues were related to deliberate misuse of customer funds and fraud for personal gain, respectively?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "The jury finally hears from Sam Bankman-Fried",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-092-no",
+    "question": "Did 'The Verge' article imply that Sam Bankman-Fried's effective management of FTX and Alameda Research was due to the companies' growth, while 'Fortune' focuses on his successful persuasion of Adam Yedidia to join his ventures, and 'TechCrunch' alleges that Sam Bankman-Fried committed fraud for personal gain, indicating different aspects of his leadership and actions?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "The jury finally hears from Sam Bankman-Fried",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-093-no",
+    "question": "Does the Mashable article suggest that Amazon's Cyber Monday includes only old deals, while The Sydney Morning Herald article focuses on the impact of an antitrust lawsuit on Amazon's stock price, and the Cnbc | World Business News Leader article discusses the opportunity of selling on Amazon, without mentioning any legal or promotional events?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "200+ of the best deals from Amazon's Cyber Monday sale",
+      "ASX set to drop as Wall Street\u2019s September slump deepens",
+      "Amazon sellers sound off on the FTC's 'long-overdue' antitrust case"
+    ]
+  },
+  {
+    "id": "mh-com-094-no",
+    "question": "Did the 'Sporting News' article stating Lionel Messi returned to play for Barcelona after an injury align with the 'Sporting News' claim that he is likely to be back for Inter Miami's match, and does the same source suggest a youth movement in Argentina's forward line involving Messi, Alvarez, and Garnacho?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Inter Miami vs FC Cincinnati live score, result, updates, highlights with Lionel Messi's MLS playoffs on line",
+      "Inter Miami vs FC Cincinnati live score, result, updates, highlights with Lionel Messi's MLS playoffs on line",
+      "Watch Argentina vs Paraguay live stream, TV channel, lineups, betting odds for World Cup qualifying match"
+    ]
+  },
+  {
+    "id": "mh-com-095-no",
+    "question": "Does the TechCrunch article suggest that Google is engaging in fair competition with news publishers, while the article from The Verge implies that Google has the capability to resolve issues, and another TechCrunch article claims that Google has no plans to implement additional measures on YouTube, indicating differing levels of responsibility or initiative attributed to Google by each source?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Deepfake election risks trigger EU call for more generative AI safeguards",
+      "Tim Sweeney on Epic\u2019s victory royale over Google",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-com-096-no",
+    "question": "Did the 'Fortune' article suggest that Sam Bankman-Fried openly conducted all business dealings without using Caroline Ellison as a front for illicit activities involving customer funds at Alameda Research, while the 'TechCrunch' articles focus on his alleged intentions to use wealth for altruistic purposes and accusations of committing fraud for personal gain, without mentioning the use of a front person?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-097-no",
+    "question": "Does the 'Fortune' article suggest that the foundation of FTX's success is different from the 'TechCrunch' articles' implication that Sam Bankman-Fried's actions were based on fraudulent intentions?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-098-no",
+    "question": "Did the 'Fortune' article imply that Sam Bankman-Fried's handling of FTX and customer funds at Alameda Research was entirely transparent and proper, unlike the allegations of fraud for personal gain mentioned in the 'TechCrunch' article?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-com-099-no",
+    "question": "Did the article from The Verge suggest that Sam Bankman-Fried was perceived consistently in terms of trustworthiness within the cryptocurrency industry compared to the allegations of fraud and conspiracy presented in the TechCrunch articles?",
+    "expected_answer": "no",
+    "query_type": "local",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (comparison_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "comparison_query",
+    "hotpot_type": "comparison_query",
+    "evidence_titles": [
+      "The FTX trial is bigger than Sam Bankman-Fried",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-100-no",
     "question": "Was there no change in the portrayal of Google's influence on the digital ecosystem between the report from The Verge on Google's impact on the internet's appearance published on November 1, 2023, and the report from TechCrunch on a class action antitrust suit against Google published later?",
     "expected_answer": "no",
     "query_type": "hybrid",
@@ -112,7 +1616,7 @@
     ]
   },
   {
-    "id": "mh-tem-007-no",
+    "id": "mh-tem-101-no",
     "question": "Has the advice provided by Sporting News to bettors regarding the evaluation of betting opportunities and offers involved reading requirements, going with the favored Eagles, and focusing on hype between the reports published on September 28, 2023, and December 18, 2023?",
     "expected_answer": "no",
     "query_type": "hybrid",
@@ -128,7 +1632,7 @@
     ]
   },
   {
-    "id": "mh-tem-008-no",
+    "id": "mh-tem-102-no",
     "question": "Was there inconsistency in Jada Pinkett Smith's statements regarding what she learned from her children after The Independent - Life and Style's report on her views on self-acceptance published at 13:41:30, and before The Independent - Life and Style's subsequent report on the same topic published at 15:48:10 on the same day?",
     "expected_answer": "no",
     "query_type": "hybrid",
@@ -141,6 +1645,758 @@
       "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
       "Jada Pinkett Smith reveals why she and Will Smith never signed a prenup",
       "Jada Pinkett Smith and Will Smith have been separated since 2016 - when should couples just get divorced?"
+    ]
+  },
+  {
+    "id": "mh-tem-103-no",
+    "question": "Was the news about Taylor Swift's relationship with Travis Kelce inconsistent with the later report from The Independent - Life and Style on December 6, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Travis Kelce says he tried to delete his \u2018nonsense\u2019 tweets before they went viral",
+      "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+      "Taylor Swift is Time\u2019s Person of the Year"
+    ]
+  },
+  {
+    "id": "mh-tem-104-no",
+    "question": "Has the portrayal of Google's market practices in reports by The Age before October 22, 2023, remained consistent with the depiction in The Verge's coverage of the Epic v. Google case, and with TechCrunch's report on the class action antitrust suit filed against Google?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Epic v. Google, explained",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-105-no",
+    "question": "After TechCrunch reported on October 31, 2023, about Google's financial strategies to maintain its search engine dominance, and again on December 15, 2023, about a class action antitrust suit filed against Google, was there inconsistency in the portrayal of Google's competitive practices according to TechCrunch?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Google fakes an AI demo, Grand Theft Auto VI goes viral and Spotify cuts jobs",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-106-no",
+    "question": "Did the 'Fortune' report on Donald Trump's real estate valuations published on September 26, 2023, disagree with 'The Age' report regarding the allegation that Donald Trump increased the value of his penthouse apartment in the matter of inflating property values?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+      "Donald Trump defrauded banks with 'fantasy' to build his real estate empire, judge rules in a major repudiation against the former president",
+      "The $777 million surprise: Donald Trump is getting richer"
+    ]
+  },
+  {
+    "id": "mh-tem-107-no",
+    "question": "Between the report by The Verge on Apple's defense of its Google Search deal published on September 26, 2023, and the report by TechCrunch on the class action antitrust suit against Google published on December 15, 2023, was there no change in the portrayal of Google's business practices with other companies?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-108-no",
+    "question": "Was there inconsistency in the promotional offers reported by Sporting News on September 26, 2023, regarding the Caesars Sportsbook promo for new sign-ups in Vermont, and by CBSSports.com on October 13, 2023, about the Caesars Sportsbook offer for new customers?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "2023 Kentucky online sports betting sites: Best legal sportsbooks, promos, bonuses, mobile apps, how to bet",
+      "NBA Rookie of the Year Odds - Wembanyama the early favorite",
+      "Vermont Sportsbook Promos and Sports Betting Launch News"
+    ]
+  },
+  {
+    "id": "mh-tem-109-no",
+    "question": "Between the TechCrunch article published on October 31, 2023, regarding Google's financial strategies to maintain its default search engine status, and the TechCrunch article on November 13, 2023, covering similar aspects of Google's expenditures for default search engine positioning, was there a discrepancy in the reported amount Google spent in 2021?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "More from the US v Google trial: vertical search, pre-installs and the case of Firefox/Yahoo",
+      "5 things we learned so far about the Google antitrust case",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-110-no",
+    "question": "Was there no change in OpenAI's strategic focus as reported by TechCrunch between the report on the launch of GPT-4 with vision on September 28, 2023, and the report on the push for an \"app store for AI\" as the primary platform for AI tools on December 19, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "8 predictions for AI in 2024",
+      "How ego and fear fuelled the rise of artificial intelligence",
+      "ChatGPT: Everything you need to know about the AI-powered chatbot"
+    ]
+  },
+  {
+    "id": "mh-tem-111-no",
+    "question": "Was there no change in the portrayal of Google's impact on the industry between the TechCrunch article on Google's Gemini and its performance claims, and the TechCrunch report on the class action antitrust suit against Google?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "The Epic v. Google trial may come down to simple v. complicated",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-112-no",
+    "question": "Was there no change in the portrayal of Sam Altman's professional conduct between the TechCrunch report on Sam Altman's involvement with a teen's AI startup published on October 7, 2023, and the TechCrunch report suggesting Sam Altman was being fully truthful with the board published on November 18, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+      "A timeline of Sam Altman\u2019s firing from OpenAI \u2014 and the fallout",
+      "WTF is going on at OpenAI? We have theories"
+    ]
+  },
+  {
+    "id": "mh-tem-113-no",
+    "question": "Was there inconsistency in the portrayal of the accusations against Sam Bankman-Fried between the TechCrunch report on Sam Bankman-Fried's trial published on October 1, 2023, and the TechCrunch report on the allegations against Sam Bankman-Fried published on October 7, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "In the end, the FTX trial was about the friends screwed along the way",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-114-no",
+    "question": "Between the TechCrunch report on Epic Games' antitrust battle with Google published on November 6, 2023, and the TechCrunch report on a news publisher filing a class action antitrust suit against Google published on December 15, 2023, was there inconsistency in the portrayal of Google's anticompetitive allegations?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "Early impressions of Google\u2019s Gemini aren\u2019t great",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-115-no",
+    "question": "Between the Sporting News report on Kenneth Walker III's injury impact for fantasy football published on November 21, 2023, and the Sporting News report on the fantasy implications if Kenneth Walker III remains out with his oblique injury published on December 7, 2023, was there inconsistency in how the potential absence of Kenneth Walker III was addressed in terms of fantasy football strategy?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Fantasy Football RB PPR Rankings Week 14: Who to start, best sleepers at running back",
+      "Fantasy Football RB Rankings Week 12: Who to start, best sleepers at running back",
+      "2023 NFL Week 11 injury roundup: Rams WR Cooper Kupp, Seahawks RB Kenneth Walker III among stars to exit"
+    ]
+  },
+  {
+    "id": "mh-tem-116-no",
+    "question": "Between the report by Business Today | Latest Stock Market And Economy News India on an event involving Israel published on October 7, 2023, and the reports by Fortune on the situation in Gaza involving Israel published on October 13, 2023, was there no change in the status of Israel's actions regarding Gaza?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Israel's blockade of Gaza means that a region the size of Philadelphia faces a real risk of starvation, says Peace Studies scholar",
+      "Israel's blockade of Gaza means that a region the size of Philadelphia faces a real risk of starvation, says Peace Studies scholar",
+      "&#039;Massive intel failure by Mossad&#039;: Hamas&#039; surprise attack on Israel shocks internet"
+    ]
+  },
+  {
+    "id": "mh-tem-117-no",
+    "question": "Has the narrative around the All Blacks' team focus and performance in The Roar | Sports Writers Blog articles remained consistent from the report defending a star centre after a loss to Argentina to the analysis of their playing for individual accolades, and finally to their actions in the dramatic final against the Springboks?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "THE GREATEST! Boks beat All Blacks in instant classic to claim record FOURTH RWC in controversial, dramatic final",
+      "Legacy vs ego: The Springboks are playing for South Africa, the All Blacks are playing for themselves",
+      "\u2018It happens\u2019: All Blacks defend star centre after spray as Cheika heaps pressure on \u2018favourites\u2019 New Zealand"
+    ]
+  },
+  {
+    "id": "mh-tem-118-no",
+    "question": "Was there no change in the assessment of Brock Purdy's performance after the CBSSports.com report published on October 4, 2023, and the subsequent CBSSports.com analysis of his play under pressure published on October 18, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "NFL Fantasy Football Week 5 Lineup Decisions: Starts, Sits, Sleepers, Busts to know for every game",
+      "Cowboys vs. 49ers live score, updates, highlights from NFL 'Sunday Night Football' game",
+      "NFL Fantasy Football Week 6 Lineup Decisions: Starts, Sits, Sleepers, Busts to know for every game"
+    ]
+  },
+  {
+    "id": "mh-tem-119-no",
+    "question": "Was the reporting of Taylor Swift and Travis Kelce's relationship status consistent between the report from CBSSports.com published on October 12, 2023, and the report from The Independent - Life and Style published on December 6, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+      "Travis Kelce says he tried to delete his \u2018nonsense\u2019 tweets before they went viral",
+      "Taylor Swift is Time\u2019s Person of the Year"
+    ]
+  },
+  {
+    "id": "mh-tem-120-no",
+    "question": "Before the TechCrunch report on Sam Altman backing a teen's AI startup published on October 7, 2023, compared to the TechCrunch report suggesting Sam Altman was not being fully truthful with the board published on November 18, 2023, was there a change in the portrayal of Sam Altman's professional conduct?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier",
+      "WTF is going on at OpenAI? We have theories"
+    ]
+  },
+  {
+    "id": "mh-tem-121-no",
+    "question": "Between the report from The Age on the Sydney Swans' position in the AFLW standings published on October 20, 2023, and the subsequent report from The Age on the Sydney Swans' standings published on November 3, 2023, was there no change in the Sydney Swans' ranking in the AFLW?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Comeback kings Richmond take the AFLW points in Cairns",
+      "Ground-breaking Gold Coast: Suns make AFLW finals for a second time",
+      "Craft beer and cheese boxes: Swans tap into something \u2018uniquely Sydney\u2019 to draw AFLW crowds | Jack Snape"
+    ]
+  },
+  {
+    "id": "mh-tem-122-no",
+    "question": "Between the report from Fortune on Sam Bankman-Fried's use of Caroline Ellison as a front at Alameda Research published on October 4, 2023, and the TechCrunch report alleging Sam Bankman-Fried's instructions to Caroline Ellison to take customer funds published on October 6, 2023, was there inconsistency in the portrayal of Sam Bankman-Fried's involvement in the misuse of customer funds?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "SBF Trial: The latest updates from the FTX collapse\u2019s courtroom drama",
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-123-no",
+    "question": "Between the Sporting News report on Inter Miami's season ticket prices following Lionel Messi's arrival published on October 4, 2023, and the Sporting News report on Inter Miami's inclusion in the MLS playoffs published on October 7, 2023, was there a change in the team's postseason prospects as reported by the news source?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Inter Miami friendly matches for 2024 preseason: Lionel Messi to play Newell's Old Boys, China tour cancelled",
+      "Inter Miami vs FC Cincinnati live score, result, updates, highlights with Lionel Messi's MLS playoffs on line",
+      "Inter Miami season tickets: Lionel Messi demand causes 2024 prices soar to most expensive in world"
+    ]
+  },
+  {
+    "id": "mh-tem-124-no",
+    "question": "Between the report from The Verge on the Epic v. Google case and the subsequent report from TechCrunch on the same case, was there disagreement on the nature of Epic Games' arguments against Google?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Epic v. Google, explained",
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-125-no",
+    "question": "Between the TechCrunch report on Sam Bankman-Fried's legal situation published after October 2, 2023, and The Verge's coverage of Sam Bankman-Fried's testimony, was there a change in the narrative regarding his ability to manage FTX and Alameda Research?",
+    "expected_answer": "No",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "SBF, riding high on FTX, reportedly offered $5B to Trump to cancel President re-run",
+      "The jury finally hears from Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-126-no",
+    "question": "Between the TechCrunch report on EU's call for AI safeguards related to deepfake election risks and the subsequent TechCrunch report on a news publisher filing an antitrust suit against Google, citing AI's harm to their bottom line, was there a change in the portrayal of Google's involvement with AI-related issues?",
+    "expected_answer": "No",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Deepfake election risks trigger EU call for more generative AI safeguards",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-127-no",
+    "question": "Between the report from The Verge on Apple's defense of its Google Search deal published on September 26, 2023, and the TechCrunch article detailing the Google antitrust case published on October 31, 2023, was there disagreement on the financial impact of Google's deals to maintain its default search engine status on various platforms?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-128-no",
+    "question": "Between the TechCrunch report on OpenAI's launch of GPT-3 without vision and the TechCrunch report on OpenAI's push for an \"app store for AI\" as the primary platform for obtaining AI tools, was there a change in OpenAI's strategic focus as reported by TechCrunch?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "How the OpenAI fiasco could bolster Meta and the \u2018open AI\u2019 movement",
+      "8 predictions for AI in 2024",
+      "ChatGPT: Everything you need to know about the AI-powered chatbot"
+    ]
+  },
+  {
+    "id": "mh-tem-129-no",
+    "question": "Was there inconsistency in the portrayal of Google's competitive practices after the TechCrunch report on Google's antitrust case published on October 31, 2023, or the TechCrunch report on the class action antitrust suit against Google published on December 15, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "5 things we learned so far about the Google antitrust case",
+      "Epic v. Google, explained",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-130-no",
+    "question": "Was the information about the improvements in the new iteration of the Steam Deck inconsistent after the Polygon report on the Steam Deck OLED published at 18:00:00 on November 9, 2023, and the Engadget review of the Steam Deck OLED published at 18:00:38 on the same day?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "The Steam Deck OLED arrives November 16 with an improved screen and longer battery life",
+      "The Steam Deck OLED improves much more than its screen",
+      "Steam Deck OLED review: It's just better"
+    ]
+  },
+  {
+    "id": "mh-tem-131-no",
+    "question": "Did TechCrunch fail to maintain consistency in reporting on Google's competitive practices in their November 6, 2023, article about Epic Games' antitrust battle with Google or in the December 15, 2023, article about a news publisher's antitrust suit against Google?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-132-no",
+    "question": "Was there inconsistency in the TechCrunch reports on Google's engagement in anticompetitive behavior between the report on Epic Games' antitrust battle with Google published on November 6, 2023, and the report on the news publisher's antitrust suit against Google published on December 15, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "The Epic v. Google trial may come down to simple v. complicated",
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-133-no",
+    "question": "Between the report by The Verge on Apple's defense of its Google Search deal published on September 26, 2023, and the report by TechCrunch on the antitrust suit filed against Google citing AI's impact on news publishers' revenue published on December 15, 2023, was there a change in the portrayal of Google's business practices as anticompetitive?",
+    "expected_answer": "No",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-134-no",
+    "question": "Did the TechCrunch report on Sam Bankman-Fried after the start of his trial and the subsequent TechCrunch report mentioning the prosecution's allegations against Sam Bankman-Fried portray his actions inconsistently?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-135-no",
+    "question": "Between the report from 'The Age' on September 26, 2023, regarding Taylor Swift's interaction with Travis Kelce and the report from 'The Independent - Life and Style' on December 6, 2023, was there no change in the reporting of their relationship status?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Travis Kelce faces backlash after comments about \u2018finding a breeder\u2019 resurface amid Taylor Swift romance",
+      "When pop culture and sport collide: A timeline of Taylor Swift\u2019s NFL takeover",
+      "Taylor Swift is Time\u2019s Person of the Year"
+    ]
+  },
+  {
+    "id": "mh-tem-136-no",
+    "question": "Between the report from The Verge on Sam Bankman-Fried's role in the cryptocurrency industry and the Fortune article discussing Sam Bankman-Fried's influence on Adam Yedidia's career decisions, was there agreement in the portrayal of Sam Bankman-Fried's trustworthiness and influence?\n\nBetween the report from TechCrunch on Sam Bankman-Fried's alleged fraudulent activities and the earlier report from The Verge on his representation in the cryptocurrency industry, has the narrative around Sam Bankman-Fried's public image remained consistent?",
+    "expected_answer": "No",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "The FTX trial is bigger than Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-137-no",
+    "question": "Was there inconsistency in the portrayal of Sam Bankman-Fried's actions related to the FTX exchange between the TechCrunch report published on October 1, 2023, and the Fortune report on the opening statements in the same trial published on October 4, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Is Sam Bankman-Fried a bad \u2018man\u2019 or a good \u2018boy\u2019? Lawyers swap opening statements before first witnesses take the stand",
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-138-no",
+    "question": "Between the report from The Age on October 22, 2022, regarding Google's manipulation of search results to maximize ad revenue, and the TechCrunch report on December 15, 2023, about a class action antitrust suit filed against Google citing AI's harms to news publishers' bottom lines, is the portrayal of Google's business practices inconsistent?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "Is Google Search better than the rest? And is that fair?",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-139-no",
+    "question": "Did TechCrunch report on Google's antitrust battle with Epic Games on November 6, 2024, and then report on a class action antitrust suit against Google on December 15, 2023, resulting in an inconsistent portrayal of Google's legal challenges related to anticompetitive practices?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "What to know about Fortnite maker Epic Games\u2019 antitrust battle with Google, starting today",
+      "Epic v. Google, explained",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-140-no",
+    "question": "Was there inconsistency in the portrayal of Sam Bankman-Fried's involvement in the FTX collapse between the TechCrunch report published on October 6, 2023, and the TechCrunch report published on October 7, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Sam Bankman-Fried didn\u2019t ask where the $8 billion went",
+      "SBF Trial: The latest updates from the FTX collapse\u2019s courtroom drama",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-141-no",
+    "question": "Was the reporting of the status of Taylor Swift and Travis Kelce's relationship consistent between the report from CBSSports.com published on October 12, 2023, and the report from The Independent - Life and Style published on December 6, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Taylor Swift-Travis Kelce timeline: Everything to know about rumored romance between pop star, Chiefs TE",
+      "Travis Kelce faces backlash after comments about \u2018finding a breeder\u2019 resurface amid Taylor Swift romance",
+      "Taylor Swift is Time\u2019s Person of the Year"
+    ]
+  },
+  {
+    "id": "mh-tem-142-no",
+    "question": "Between the Sporting News report on NBA Rookie of the Year odds published on October 4, 2023, and the Sporting News report on line shopping in sports betting published on November 6, 2023, was there a change in how Sportsbooks adjust and tighten betting lines based on gathered information?",
+    "expected_answer": "No",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "MLB Betting Sites & Apps - The Best Baseball Sportsbooks 2023",
+      "Line Shopping in Sports Betting - How to Find the Best Odds",
+      "NBA Rookie of the Year Odds - Wembanyama the early favorite"
+    ]
+  },
+  {
+    "id": "mh-tem-143-no",
+    "question": "Between the TechCrunch report on Sam Bankman-Fried's trial and the subsequent TechCrunch report on the allegations against him, was there no change in the portrayal of his actions related to the FTX situation?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "SBF\u2019s trial starts soon, but how did he \u2014 and FTX \u2014 get here?",
+      "The jury finally hears from Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-144-no",
+    "question": "Between the report from The Verge on Apple's defense of its Google Search deal published on September 26, 2023, and the class action antitrust suit against Google reported by TechCrunch, was there no change in the portrayal of Google's business practices related to competition and market dominance?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Apple defends Google Search deal in court: \u2018There wasn\u2019t a valid alternative\u2019",
+      "Tim Sweeney on Epic\u2019s victory royale over Google",
+      "News publisher files class action antitrust suit against Google, citing AI\u2019s harms to their bottom line"
+    ]
+  },
+  {
+    "id": "mh-tem-145-no",
+    "question": "Was the Zee Business report on the India national cricket team's performance in the ICC World Cup semi-finals published on November 18, 2023, and the Zee Business report on the India national cricket team's head-to-head record with Australia in ODI World Cup matches published on November 11, 2023, inconsistent in their reporting on India's past encounters with Australia in the World Cup?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "IND vs AUS Head-to-Head Record in ODI World Cup: Check India vs Australia match stats in World Cup Finals and ODI series",
+      "IND vs AUS Head-to-Head Record in ODI World Cup: Check India vs Australia match stats in World Cup Finals and ODI series",
+      "ICC World Cup 2023: India at Cricket World Cup semi-finals so far"
+    ]
+  },
+  {
+    "id": "mh-tem-146-no",
+    "question": "Did 'The Independent - Life and Style' change their reporting on the nature of Taylor Swift and Travis Kelce's relationship in their later article published on October 30, 2023, even though 'The Age' reported on September 26, 2023, about Taylor Swift and Travis Kelce leaving the stadium together, and 'The Independent - Life and Style' on the same date noted Taylor Swift cheering on Travis Kelce at Arrowhead Stadium?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "Travis Kelce faces backlash after comments about \u2018finding a breeder\u2019 resurface amid Taylor Swift romance",
+      "When pop culture and sport collide: A timeline of Taylor Swift\u2019s NFL takeover",
+      "Fans spot Travis Kelce wearing Taylor Swift-themed friendship bracelet before she attended his game"
+    ]
+  },
+  {
+    "id": "mh-tem-147-no",
+    "question": "Between the Sporting News report on NBA betting sites and apps published on October 2, 2023, and the Sporting News report on point spread betting published on November 1, 2023, was the reporting on how sportsbooks adjust their betting lines inconsistent?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "The Best NBA Betting Sites and Apps for the 2023-24 Season",
+      "Point Spread Betting - What is a Point Spread Bet?",
+      "NBA Rookie of the Year Odds - Wembanyama the early favorite"
+    ]
+  },
+  {
+    "id": "mh-tem-148-no",
+    "question": "Was there inconsistency in the portrayal of Sam Bankman-Fried's actions related to the FTX collapse between the TechCrunch report published on October 6, 2023, and the TechCrunch report on Sam Bankman-Fried published on October 7, 2023?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "SBF Trial: The latest updates from the FTX collapse\u2019s courtroom drama",
+      "The jury finally hears from Sam Bankman-Fried",
+      "Sam Altman backs teens\u2019 startup, Google unveils the Pixel 8 and TikTok tests an ad-free tier"
+    ]
+  },
+  {
+    "id": "mh-tem-149-no",
+    "question": "Was there disagreement between the two news sources on the portrayal of Sam Altman's standing in Silicon Valley after the TechCrunch report on Sam Altman's situation at OpenAI published on a date other than November 18, 2023, and the subsequent Fortune report on the same day regarding the board's actions?",
+    "expected_answer": "no",
+    "query_type": "hybrid",
+    "best_method": "hybrid_rag",
+    "source_doc": null,
+    "rationale": "MultiHop-RAG (temporal_query) \u2014 Tang & Yang, COLM 2024",
+    "multihop_type": "temporal_query",
+    "hotpot_type": "temporal_query",
+    "evidence_titles": [
+      "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+      "OpenAI's ex-chairman accuses board of going rogue in firing Altman: 'Sam and I are shocked and saddened by what the board did'",
+      "WTF is going on at OpenAI? We have theories"
     ]
   }
 ]

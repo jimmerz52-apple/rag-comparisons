@@ -1,0 +1,4 @@
+# python.library.os#os.WIFSIGNALED
+
+os.WIFSIGNALED(status)  
+Return True if the process was terminated by a signal, otherwise return False. Availability: Unix.

@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.lineno
+
+lineno  
+For syntax errors - the line number where the error occurred.

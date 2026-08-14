@@ -1,0 +1,271 @@
+# flask.api.index#flask.Response
+
+class flask.Response(response=None, status=None, headers=None, mimetype=None, content_type=None, direct_passthrough=False)  
+The response object that is used by default in Flask. Works like the response object from Werkzeug but is set to have an HTML mimetype by default. Quite often you don’t have to create this object yourself because make_response() will take care of that for you. If you want to replace the response object used you can subclass this and set response_class to your subclass.  Changelog Changed in version 1.0: JSON support is added to the response, like the request. This is useful when testing to get the test client response data as JSON.   Changed in version 1.0: Added max_cookie_size.   Parameters 
+ 
+response (Union[Iterable[str], Iterable[bytes]]) –  
+status (Optional[Union[int, str, http.HTTPStatus]]) –  
+headers (werkzeug.datastructures.Headers) –  
+mimetype (Optional[str]) –  
+content_type (Optional[str]) –  
+direct_passthrough (bool) –    Return type 
+None    
+accept_ranges  
+The Accept-Ranges header. Even though the name would indicate that multiple values are supported, it must be one string token only. The values 'bytes' and 'none' are common.  Changelog New in version 0.7.  
+
+  
+property access_control_allow_credentials: bool  
+Whether credentials can be shared by the browser to JavaScript code. As part of the preflight request it indicates whether credentials can be used on the cross origin request. 
+  
+access_control_allow_headers  
+Which headers can be sent with the cross origin request. 
+  
+access_control_allow_methods  
+Which methods can be used for the cross origin request. 
+  
+access_control_allow_origin  
+The origin or ‘*’ for any origin that may make cross origin requests. 
+  
+access_control_expose_headers  
+Which headers can be shared by the browser to JavaScript code. 
+  
+access_control_max_age  
+The maximum age in seconds the access control settings can be cached for. 
+  
+add_etag(overwrite=False, weak=False)  
+Add an etag for the current response if there is none yet.  Changed in version 2.0: SHA-1 is used to generate the value. MD5 may not be available in some environments.   Parameters 
+ 
+overwrite (bool) –  
+weak (bool) –    Return type 
+None   
+  
+age  
+The Age response-header field conveys the sender’s estimate of the amount of time since the response (or its revalidation) was generated at the origin server. Age values are non-negative decimal integers, representing time in seconds. 
+  
+property allow: werkzeug.datastructures.HeaderSet  
+The Allow entity-header field lists the set of methods supported by the resource identified by the Request-URI. The purpose of this field is strictly to inform the recipient of valid methods associated with the resource. An Allow header field MUST be present in a 405 (Method Not Allowed) response. 
+  
+property cache_control: werkzeug.datastructures.ResponseCacheControl  
+The Cache-Control general-header field is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain. 
+  
+calculate_content_length()  
+Returns the content length if available or None otherwise.  Return type 
+Optional[int]   
+  
+call_on_close(func)  
+Adds a function to the internal list of functions that should be called as part of closing down the response. Since 0.7 this function also returns the function that was passed so that this can be used as a decorator.  Changelog New in version 0.6.   Parameters 
+func (Callable[[], Any]) –   Return type 
+Callable[[], Any]   
+  
+close()  
+Close the wrapped response if possible. You can also use the object in a with statement which will automatically close it.  Changelog New in version 0.9: Can now be used in a with statement.   Return type 
+None   
+  
+content_encoding  
+The Content-Encoding entity-header field is used as a modifier to the media-type. When present, its value indicates what additional content codings have been applied to the entity-body, and thus what decoding mechanisms must be applied in order to obtain the media-type referenced by the Content-Type header field. 
+  
+property content_language: werkzeug.datastructures.HeaderSet  
+The Content-Language entity-header field describes the natural language(s) of the intended audience for the enclosed entity. Note that this might not be equivalent to all the languages used within the entity-body. 
+  
+content_length  
+The Content-Length entity-header field indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent had the request been a GET. 
+  
+content_location  
+The Content-Location entity-header field MAY be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource’s URI. 
+  
+content_md5  
+The Content-MD5 entity-header field, as defined in RFC 1864, is an MD5 digest of the entity-body for the purpose of providing an end-to-end message integrity check (MIC) of the entity-body. (Note: a MIC is good for detecting accidental modification of the entity-body in transit, but is not proof against malicious attacks.) 
+  
+property content_range: werkzeug.datastructures.ContentRange  
+The Content-Range header as a ContentRange object. Available even if the header is not set.  Changelog New in version 0.7.  
+
+  
+content_security_policy  
+The Content-Security-Policy header adds an additional layer of security to help detect and mitigate certain types of attacks. 
+  
+content_security_policy_report_only  
+The Content-Security-Policy-Report-Only header adds a csp policy that is not enforced but is reported thereby helping detect certain types of attacks. 
+  
+content_type  
+The Content-Type entity-header field indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET. 
+  
+cross_origin_embedder_policy  
+Prevents a document from loading any cross-origin resources that do not explicitly grant the document permission. Values must be a member of the werkzeug.http.COEP enum. 
+  
+cross_origin_opener_policy  
+Allows control over sharing of browsing context group with cross-origin documents. Values must be a member of the werkzeug.http.COOP enum. 
+  
+property data: Union[bytes, str]  
+A descriptor that calls get_data() and set_data(). 
+  
+date  
+The Date general-header field represents the date and time at which the message was originated, having the same semantics as orig-date in RFC 822.  Changed in version 2.0: The datetime object is timezone-aware.  
+  
+delete_cookie(key, path='/', domain=None, secure=False, httponly=False, samesite=None)  
+Delete a cookie. Fails silently if key doesn’t exist.  Parameters 
+ 
+key (str) – the key (name) of the cookie to be deleted. 
+path (str) – if the cookie that should be deleted was limited to a path, the path has to be defined here. 
+domain (Optional[str]) – if the cookie that should be deleted was limited to a domain, that domain has to be defined here. 
+secure (bool) – If True, the cookie will only be available via HTTPS. 
+httponly (bool) – Disallow JavaScript access to the cookie. 
+samesite (Optional[str]) – Limit the scope of the cookie to only be attached to requests that are “same-site”.   Return type 
+None   
+  
+direct_passthrough  
+Pass the response body directly through as the WSGI iterable. This can be used when the body is a binary file or other iterator of bytes, to skip some unnecessary checks. Use send_file() instead of setting this manually. 
+  
+expires  
+The Expires entity-header field gives the date/time after which the response is considered stale. A stale cache entry may not normally be returned by a cache.  Changed in version 2.0: The datetime object is timezone-aware.  
+  
+classmethod force_type(response, environ=None)  
+Enforce that the WSGI response is a response object of the current type. Werkzeug will use the Response internally in many situations like the exceptions. If you call get_response() on an exception you will get back a regular Response object, even if you are using a custom subclass. This method can enforce a given response type, and it will also convert arbitrary WSGI callables into response objects if an environ is provided: # convert a Werkzeug response object into an instance of the
+# MyResponseClass subclass.
+response = MyResponseClass.force_type(response)
+
+# convert any WSGI application into a response object
+response = MyResponseClass.force_type(response, environ)
+ This is especially useful if you want to post-process responses in the main dispatcher and use functionality provided by your subclass. Keep in mind that this will modify response objects in place if possible!  Parameters 
+ 
+response (Response) – a response object or wsgi application. 
+environ (Optional[WSGIEnvironment]) – a WSGI environment object.   Returns 
+a response object.  Return type 
+Response   
+  
+freeze(no_etag=None)  
+Make the response object ready to be pickled. Does the following:  Buffer the response into a list, ignoring implicity_sequence_conversion and direct_passthrough. Set the Content-Length header. Generate an ETag header if one is not already set.   Changed in version 2.0: An ETag header is added, the no_etag parameter is deprecated and will be removed in Werkzeug 2.1.   Changelog Changed in version 0.6: The Content-Length header is set.   Parameters 
+no_etag (None) –   Return type 
+None   
+  
+classmethod from_app(app, environ, buffered=False)  
+Create a new response object from an application output. This works best if you pass it an application that returns a generator all the time. Sometimes applications may use the write() callable returned by the start_response function. This tries to resolve such edge cases automatically. But if you don’t get the expected output you should set buffered to True which enforces buffering.  Parameters 
+ 
+app (WSGIApplication) – the WSGI application to execute. 
+environ (WSGIEnvironment) – the WSGI environment to execute against. 
+buffered (bool) – set to True to enforce buffering.   Returns 
+a response object.  Return type 
+Response   
+  
+get_app_iter(environ)  
+Returns the application iterator for the given environ. Depending on the request method and the current status code the return value might be an empty response rather than the one from the response. If the request method is HEAD or the status code is in a range where the HTTP specification requires an empty response, an empty iterable is returned.  Changelog New in version 0.6.   Parameters 
+environ (WSGIEnvironment) – the WSGI environment of the request.  Returns 
+a response iterable.  Return type 
+Iterable[bytes]   
+  
+get_data(as_text=False)  
+The string representation of the response body. Whenever you call this property the response iterable is encoded and flattened. This can lead to unwanted behavior if you stream big data. This behavior can be disabled by setting implicit_sequence_conversion to False. If as_text is set to True the return value will be a decoded string.  Changelog New in version 0.9.   Parameters 
+as_text (bool) –   Return type 
+Union[bytes, str]   
+  
+get_etag()  
+Return a tuple in the form (etag, is_weak). If there is no ETag the return value is (None, None).  Return type 
+Union[Tuple[str, bool], Tuple[None, None]]   
+  
+get_json(force=False, silent=False)  
+Parse data as JSON. Useful during testing. If the mimetype does not indicate JSON (application/json, see is_json()), this returns None. Unlike Request.get_json(), the result is not cached.  Parameters 
+ 
+force (bool) – Ignore the mimetype and always try to parse JSON. 
+silent (bool) – Silence parsing errors and return None instead.   Return type 
+Optional[Any]   
+  
+get_wsgi_headers(environ)  
+This is automatically called right before the response is started and returns headers modified for the given environment. It returns a copy of the headers from the response with some modifications applied if necessary. For example the location header (if present) is joined with the root URL of the environment. Also the content length is automatically set to zero here for certain status codes.  Changelog Changed in version 0.6: Previously that function was called fix_headers and modified the response object in place. Also since 0.6, IRIs in location and content-location headers are handled properly. Also starting with 0.6, Werkzeug will attempt to set the content length if it is able to figure it out on its own. This is the case if all the strings in the response iterable are already encoded and the iterable is buffered.   Parameters 
+environ (WSGIEnvironment) – the WSGI environment of the request.  Returns 
+returns a new Headers object.  Return type 
+werkzeug.datastructures.Headers   
+  
+get_wsgi_response(environ)  
+Returns the final WSGI response as tuple. The first item in the tuple is the application iterator, the second the status and the third the list of headers. The response returned is created specially for the given environment. For example if the request method in the WSGI environment is 'HEAD' the response will be empty and only the headers and status code will be present.  Changelog New in version 0.6.   Parameters 
+environ (WSGIEnvironment) – the WSGI environment of the request.  Returns 
+an (app_iter, status, headers) tuple.  Return type 
+Tuple[Iterable[bytes], str, List[Tuple[str, str]]]   
+  
+property is_json: bool  
+Check if the mimetype indicates JSON data, either application/json or application/*+json. 
+  
+property is_sequence: bool  
+If the iterator is buffered, this property will be True. A response object will consider an iterator to be buffered if the response attribute is a list or tuple.  Changelog New in version 0.6.  
+
+  
+property is_streamed: bool  
+If the response is streamed (the response is not an iterable with a length information) this property is True. In this case streamed means that there is no information about the number of iterations. This is usually True if a generator is passed to the response object. This is useful for checking before applying some sort of post filtering that should not take place for streamed responses. 
+  
+iter_encoded()  
+Iter the response encoded with the encoding of the response. If the response object is invoked as WSGI application the return value of this method is used as application iterator unless direct_passthrough was activated.  Return type 
+Iterator[bytes]   
+  
+property json: Optional[Any]  
+The parsed JSON data if mimetype indicates JSON (application/json, see is_json()). Calls get_json() with default arguments. 
+  
+last_modified  
+The Last-Modified entity-header field indicates the date and time at which the origin server believes the variant was last modified.  Changed in version 2.0: The datetime object is timezone-aware.  
+  
+location  
+The Location response-header field is used to redirect the recipient to a location other than the Request-URI for completion of the request or identification of a new resource. 
+  
+make_conditional(request_or_environ, accept_ranges=False, complete_length=None)  
+Make the response conditional to the request. This method works best if an etag was defined for the response already. The add_etag method can be used to do that. If called without etag just the date header is set. This does nothing if the request method in the request or environ is anything but GET or HEAD. For optimal performance when handling range requests, it’s recommended that your response data object implements seekable, seek and tell methods as described by io.IOBase. Objects returned by wrap_file() automatically implement those methods. It does not remove the body of the response because that’s something the __call__() function does for us automatically. Returns self so that you can do return resp.make_conditional(req) but modifies the object in-place.  Parameters 
+ 
+request_or_environ (WSGIEnvironment) – a request object or WSGI environment to be used to make the response conditional against. 
+accept_ranges (Union[bool, str]) – This parameter dictates the value of Accept-Ranges header. If False (default), the header is not set. If True, it will be set to "bytes". If None, it will be set to "none". If it’s a string, it will use this value. 
+complete_length (Optional[int]) – Will be used only in valid Range Requests. It will set Content-Range complete length value and compute Content-Length real value. This parameter is mandatory for successful Range Requests completion.   Raises 
+RequestedRangeNotSatisfiable if Range header could not be parsed or satisfied.  Return type 
+Response    Changed in version 2.0: Range processing is skipped if length is 0 instead of raising a 416 Range Not Satisfiable error.  
+  
+make_sequence()  
+Converts the response iterator in a list. By default this happens automatically if required. If implicit_sequence_conversion is disabled, this method is not automatically called and some properties might raise exceptions. This also encodes all the items.  Changelog New in version 0.6.   Return type 
+None   
+  
+property max_cookie_size: int  
+Read-only view of the MAX_COOKIE_SIZE config key. See max_cookie_size in Werkzeug’s docs. 
+  
+property mimetype: Optional[str]  
+The mimetype (content type without charset etc.) 
+  
+property mimetype_params: Dict[str, str]  
+The mimetype parameters as dict. For example if the content type is text/html; charset=utf-8 the params would be {'charset': 'utf-8'}.  Changelog New in version 0.5.  
+
+  
+property retry_after: Optional[datetime.datetime]  
+The Retry-After response-header field can be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client. Time in seconds until expiration or date.  Changed in version 2.0: The datetime object is timezone-aware.  
+  
+set_cookie(key, value='', max_age=None, expires=None, path='/', domain=None, secure=False, httponly=False, samesite=None)  
+Sets a cookie. A warning is raised if the size of the cookie header exceeds max_cookie_size, but the header will still be set.  Parameters 
+ 
+key (str) – the key (name) of the cookie to be set. 
+value (str) – the value of the cookie. 
+max_age (Optional[Union[datetime.timedelta, int]]) – should be a number of seconds, or None (default) if the cookie should last only as long as the client’s browser session. 
+expires (Optional[Union[str, datetime.datetime, int, float]]) – should be a datetime object or UNIX timestamp. 
+path (Optional[str]) – limits the cookie to a given path, per default it will span the whole domain. 
+domain (Optional[str]) – if you want to set a cross-domain cookie. For example, domain=".example.com" will set a cookie that is readable by the domain www.example.com, foo.example.com etc. Otherwise, a cookie will only be readable by the domain that set it. 
+secure (bool) – If True, the cookie will only be available via HTTPS. 
+httponly (bool) – Disallow JavaScript access to the cookie. 
+samesite (Optional[str]) – Limit the scope of the cookie to only be attached to requests that are “same-site”.   Return type 
+None   
+  
+set_data(value)  
+Sets a new string as response. The value must be a string or bytes. If a string is set it’s encoded to the charset of the response (utf-8 by default).  Changelog New in version 0.9.   Parameters 
+value (Union[bytes, str]) –   Return type 
+None   
+  
+set_etag(etag, weak=False)  
+Set the etag, and override the old one if there was one.  Parameters 
+ 
+etag (str) –  
+weak (bool) –    Return type 
+None   
+  
+property status: str  
+The HTTP status code as a string. 
+  
+property status_code: int  
+The HTTP status code as a number. 
+  
+property stream: werkzeug.wrappers.response.ResponseStream  
+The response iterable as write-only stream. 
+  
+property vary: werkzeug.datastructures.HeaderSet  
+The Vary field value indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache is permitted to use the response to reply to a subsequent request without revalidation. 
+  
+property www_authenticate: werkzeug.datastructures.WWWAuthenticate  
+The WWW-Authenticate header in a parsed form.

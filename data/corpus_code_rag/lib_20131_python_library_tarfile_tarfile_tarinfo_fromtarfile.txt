@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.fromtarfile
+
+classmethod TarInfo.fromtarfile(tarfile)  
+Read the next member from the TarFile object tarfile and return it as a TarInfo object.

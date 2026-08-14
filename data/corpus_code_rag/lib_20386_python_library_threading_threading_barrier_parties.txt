@@ -1,0 +1,4 @@
+# python.library.threading#threading.Barrier.parties
+
+parties  
+The number of threads required to pass the barrier.

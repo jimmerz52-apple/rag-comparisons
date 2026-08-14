@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.update
+
+update(iterable)  
+Add all the headers from the iterable to the set.  Parameters 
+iterable – updates the set with the items from the iterable.

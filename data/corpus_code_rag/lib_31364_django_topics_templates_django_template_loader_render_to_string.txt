@@ -1,0 +1,9 @@
+# django.topics.templates#django.template.loader.render_to_string
+
+render_to_string(template_name, context=None, request=None, using=None)  
+render_to_string() loads a template like get_template() and calls its render() method immediately. It takes the following arguments.  
+template_name  The name of the template to load and render. If it’s a list of template names, Django uses select_template() instead of get_template() to find the template. 
+context  A dict to be used as the template’s context for rendering. 
+request  An optional HttpRequest that will be available during the template’s rendering process. 
+using  An optional template engine NAME. The search for the template will be restricted to that engine.  Usage example: from django.template.loader import render_to_string
+rendered = render_to_string('my_template.html', {'foo': 'bar'})

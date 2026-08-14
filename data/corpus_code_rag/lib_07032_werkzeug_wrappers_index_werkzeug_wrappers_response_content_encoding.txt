@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.content_encoding
+
+content_encoding  
+The Content-Encoding entity-header field is used as a modifier to the media-type. When present, its value indicates what additional content codings have been applied to the entity-body, and thus what decoding mechanisms must be applied in order to obtain the media-type referenced by the Content-Type header field.

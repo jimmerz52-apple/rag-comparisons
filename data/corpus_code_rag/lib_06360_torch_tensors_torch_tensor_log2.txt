@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.log2_
+
+log2_() → Tensor  
+In-place version of log2()

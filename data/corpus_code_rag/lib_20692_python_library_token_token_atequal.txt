@@ -1,0 +1,4 @@
+# python.library.token#token.ATEQUAL
+
+token.ATEQUAL  
+Token value for "@=".

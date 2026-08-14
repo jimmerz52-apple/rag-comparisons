@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.ascii
+
+curses.ascii.ascii(c)  
+Return the ASCII value corresponding to the low 7 bits of c.

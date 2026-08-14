@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.format_stack_entry
+
+format_stack_entry(frame_lineno, lprefix=': ')  
+Return a string with information about a stack entry, identified by a (frame, lineno) tuple:  The canonical form of the filename which contains the frame. The function name, or "<lambda>". The input arguments. The return value. The line of code (if it exists).

@@ -1,0 +1,5 @@
+# python.library.readline#readline.get_endidx
+
+readline.get_begidx()  
+readline.get_endidx()  
+Get the beginning or ending index of the completion scope. These indexes are the start and end arguments passed to the rl_attempted_completion_function callback of the underlying library.

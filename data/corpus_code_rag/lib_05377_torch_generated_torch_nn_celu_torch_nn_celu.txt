@@ -1,0 +1,14 @@
+# torch.generated.torch.nn.celu#torch.nn.CELU
+
+class torch.nn.CELU(alpha=1.0, inplace=False) [source]
+ 
+Applies the element-wise function:  CELU(x)=max⁡(0,x)+min⁡(0,α∗(exp⁡(x/α)−1))\text{CELU}(x) = \max(0,x) + \min(0, \alpha * (\exp(x/\alpha) - 1))  
+More details can be found in the paper Continuously Differentiable Exponential Linear Units .  Parameters 
+ 
+alpha – the α\alpha  value for the CELU formulation. Default: 1.0 
+inplace – can optionally do the operation in-place. Default: False
+     Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.CELU()
+>>> input = torch.randn(2)
+>>> output = m(input)

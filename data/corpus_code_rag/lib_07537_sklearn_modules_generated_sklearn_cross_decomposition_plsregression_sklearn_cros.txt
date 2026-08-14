@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.cross_decomposition.plsregression#sklearn.cross_decomposition.PLSRegression.predict
+
+predict(X, copy=True) [source]
+ 
+Predict targets of given samples.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Samples.  
+copybool, default=True 
+
+Whether to copy X and Y, or perform in-place normalization.     Notes This call requires the estimation of a matrix of shape (n_features, n_targets), which may be an issue in high dimensional space.

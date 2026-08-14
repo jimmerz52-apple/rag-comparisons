@@ -1,0 +1,41 @@
+# flask.api.index#flask.Markup
+
+class flask.Markup(base='', encoding=None, errors='strict')  
+A string that is ready to be safely inserted into an HTML or XML document, either because it was escaped or because it was marked safe. Passing an object to the constructor converts it to text and wraps it to mark it safe without escaping. To escape the text, use the escape() class method instead. >>> Markup("Hello, <em>World</em>!")
+Markup('Hello, <em>World</em>!')
+>>> Markup(42)
+Markup('42')
+>>> Markup.escape("Hello, <em>World</em>!")
+Markup('Hello &lt;em&gt;World&lt;/em&gt;!')
+ This implements the __html__() interface that some frameworks use. Passing an object that implements __html__() will wrap the output of that method, marking it safe. >>> class Foo:
+...     def __html__(self):
+...         return '<a href="/foo">foo</a>'
+...
+>>> Markup(Foo())
+Markup('<a href="/foo">foo</a>')
+ This is a subclass of str. It has the same methods, but escapes their arguments and returns a Markup instance. >>> Markup("<em>%s</em>") % ("foo & bar",)
+Markup('<em>foo &amp; bar</em>')
+>>> Markup("<em>Hello</em> ") + "<foo>"
+Markup('<em>Hello</em> &lt;foo&gt;')
+  Parameters 
+ 
+base (Any) –  
+encoding (Optional[str]) –  
+errors (str) –    Return type 
+Markup    
+classmethod escape(s)  
+Escape a string. Calls escape() and ensures that for subclasses the correct type is returned.  Parameters 
+s (Any) –   Return type 
+markupsafe.Markup   
+  
+striptags()  
+unescape() the markup, remove tags, and normalize whitespace to single spaces. >>> Markup("Main &raquo;        <em>About</em>").striptags()
+'Main » About'
+  Return type 
+str   
+  
+unescape()  
+Convert escaped markup back into a text string. This replaces HTML entities with the characters they represent. >>> Markup("Main &raquo; <em>About</em>").unescape()
+'Main » <em>About</em>'
+  Return type 
+str

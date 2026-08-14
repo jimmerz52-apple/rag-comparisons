@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.clip_path.clip_line_to_rect
+
+mpl_toolkits.axisartist.clip_path.clip_line_to_rect   mpl_toolkits.axisartist.clip_path.clip_line_to_rect(xline, yline, bbox)[source]

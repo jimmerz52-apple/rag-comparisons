@@ -1,0 +1,6 @@
+# python.library.socket#socket.PF_PACKET
+
+socket.AF_PACKET  
+socket.PF_PACKET  
+PACKET_*  
+Many constants of these forms, documented in the Linux documentation, are also defined in the socket module. Availability: Linux >= 2.2.

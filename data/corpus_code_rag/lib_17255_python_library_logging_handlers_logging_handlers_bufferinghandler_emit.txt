@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.BufferingHandler.emit
+
+emit(record)  
+Append the record to the buffer. If shouldFlush() returns true, call flush() to process the buffer.

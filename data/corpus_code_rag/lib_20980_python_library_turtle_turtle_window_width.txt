@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.window_width
+
+turtle.window_width()  
+Return the width of the turtle window. >>> screen.window_width()
+640

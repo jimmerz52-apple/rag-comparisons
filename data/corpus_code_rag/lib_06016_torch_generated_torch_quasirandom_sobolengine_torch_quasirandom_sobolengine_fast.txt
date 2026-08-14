@@ -1,0 +1,6 @@
+# torch.generated.torch.quasirandom.sobolengine#torch.quasirandom.SobolEngine.fast_forward
+
+fast_forward(n) [source]
+ 
+Function to fast-forward the state of the SobolEngine by n steps. This is equivalent to drawing n samples without using the samples.  Parameters 
+n (Int) – The number of steps to fast-forward by.

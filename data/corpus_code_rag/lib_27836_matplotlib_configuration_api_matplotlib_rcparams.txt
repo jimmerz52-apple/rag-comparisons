@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.rcParams
+
+matplotlib.rcParams[source]
+ 
+An instance of RcParams for handling default Matplotlib values.

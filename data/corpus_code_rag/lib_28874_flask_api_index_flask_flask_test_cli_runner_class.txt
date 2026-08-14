@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.test_cli_runner_class
+
+test_cli_runner_class: Optional[Type[FlaskCliRunner]] = None  
+The CliRunner subclass, by default FlaskCliRunner that is used by test_cli_runner(). Its __init__ method should take a Flask app object as the first argument.  Changelog New in version 1.0.

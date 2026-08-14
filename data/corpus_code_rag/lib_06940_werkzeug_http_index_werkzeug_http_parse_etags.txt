@@ -1,0 +1,7 @@
+# werkzeug.http.index#werkzeug.http.parse_etags
+
+werkzeug.http.parse_etags(value)  
+Parse an etag header.  Parameters 
+value (Optional[str]) – the tag header to parse  Returns 
+an ETags object.  Return type 
+werkzeug.datastructures.ETags

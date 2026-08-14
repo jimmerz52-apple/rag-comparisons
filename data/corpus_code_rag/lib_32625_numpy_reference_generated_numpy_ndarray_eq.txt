@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__eq__
+
+numpy.ndarray.__eq__ method   ndarray.__eq__(value, /)
+ 
+Return self==value.

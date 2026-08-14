@@ -1,0 +1,6 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUserManager.create_user
+
+create_user(username_field, password=None, **other_fields)  
+The prototype of create_user() should accept the username field, plus all required fields as arguments. For example, if your user model uses email as the username field, and has date_of_birth as a required field, then create_user should be defined as: def create_user(self, email, date_of_birth, password=None):
+    # create user here
+    ...

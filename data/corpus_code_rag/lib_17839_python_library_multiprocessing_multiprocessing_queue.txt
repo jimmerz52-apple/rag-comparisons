@@ -1,0 +1,34 @@
+# python.library.multiprocessing#multiprocessing.Queue
+
+class multiprocessing.Queue([maxsize])  
+Returns a process shared queue implemented using a pipe and a few locks/semaphores. When a process first puts an item on the queue a feeder thread is started which transfers objects from a buffer into the pipe. The usual queue.Empty and queue.Full exceptions from the standard library’s queue module are raised to signal timeouts. Queue implements all the methods of queue.Queue except for task_done() and join().  
+qsize()  
+Return the approximate size of the queue. Because of multithreading/multiprocessing semantics, this number is not reliable. Note that this may raise NotImplementedError on Unix platforms like Mac OS X where sem_getvalue() is not implemented. 
+  
+empty()  
+Return True if the queue is empty, False otherwise. Because of multithreading/multiprocessing semantics, this is not reliable. 
+  
+full()  
+Return True if the queue is full, False otherwise. Because of multithreading/multiprocessing semantics, this is not reliable. 
+  
+put(obj[, block[, timeout]])  
+Put obj into the queue. If the optional argument block is True (the default) and timeout is None (the default), block if necessary until a free slot is available. If timeout is a positive number, it blocks at most timeout seconds and raises the queue.Full exception if no free slot was available within that time. Otherwise (block is False), put an item on the queue if a free slot is immediately available, else raise the queue.Full exception (timeout is ignored in that case).  Changed in version 3.8: If the queue is closed, ValueError is raised instead of AssertionError.  
+  
+put_nowait(obj)  
+Equivalent to put(obj, False). 
+  
+get([block[, timeout]])  
+Remove and return an item from the queue. If optional args block is True (the default) and timeout is None (the default), block if necessary until an item is available. If timeout is a positive number, it blocks at most timeout seconds and raises the queue.Empty exception if no item was available within that time. Otherwise (block is False), return an item if one is immediately available, else raise the queue.Empty exception (timeout is ignored in that case).  Changed in version 3.8: If the queue is closed, ValueError is raised instead of OSError.  
+  
+get_nowait()  
+Equivalent to get(False). 
+ multiprocessing.Queue has a few additional methods not found in queue.Queue. These methods are usually unnecessary for most code:  
+close()  
+Indicate that no more data will be put on this queue by the current process. The background thread will quit once it has flushed all buffered data to the pipe. This is called automatically when the queue is garbage collected. 
+  
+join_thread()  
+Join the background thread. This can only be used after close() has been called. It blocks until the background thread exits, ensuring that all data in the buffer has been flushed to the pipe. By default if a process is not the creator of the queue then on exit it will attempt to join the queue’s background thread. The process can call cancel_join_thread() to make join_thread() do nothing. 
+  
+cancel_join_thread()  
+Prevent join_thread() from blocking. In particular, this prevents the background thread from being joined automatically when the process exits – see join_thread(). A better name for this method might be allow_exit_without_flush(). It is likely to cause enqueued data to lost, and you almost certainly will not need to use it. It is really only there if you need the current process to exit immediately without waiting to flush enqueued data to the underlying pipe, and you don’t care about lost data. 
+  Note This class’s functionality requires a functioning shared semaphore implementation on the host operating system. Without one, the functionality in this class will be disabled, and attempts to instantiate a Queue will result in an ImportError. See bpo-3770 for additional information. The same holds true for any of the specialized queue types listed below.

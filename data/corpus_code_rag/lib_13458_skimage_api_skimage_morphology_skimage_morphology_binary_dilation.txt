@@ -1,0 +1,19 @@
+# skimage.api.skimage.morphology#skimage.morphology.binary_dilation
+
+skimage.morphology.binary_dilation(image, selem=None, out=None) [source]
+ 
+Return fast binary morphological dilation of an image. This function returns the same result as greyscale dilation but performs faster for binary images. Morphological dilation sets a pixel at (i,j) to the maximum over all pixels in the neighborhood centered at (i,j). Dilation enlarges bright regions and shrinks dark regions.  Parameters 
+ 
+imagendarray 
+
+Binary input image.  
+selemndarray, optional 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s. If None, use a cross-shaped structuring element (connectivity=1).  
+outndarray of bool, optional 
+
+The array to store the result of the morphology. If None is passed, a new array will be allocated.    Returns 
+ 
+dilatedndarray of bool or uint 
+
+The result of the morphological dilation with values in [False, True].

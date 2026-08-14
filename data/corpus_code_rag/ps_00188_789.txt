@@ -1,0 +1,8 @@
+# 789
+Task: 789
+
+# Write a function to calculate the perimeter of a regular polygon.
+from math import tan, pi
+def perimeter_polygon(s,l):
+  perimeter = s*l
+  return perimeter

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.quadraticdiscriminantanalysis#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.get_params
+
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.

@@ -1,0 +1,39 @@
+# django.ref.forms.api#django.forms.ErrorList
+
+class ErrorList(initlist=None, error_class=None, renderer=None)  
+By default, forms use django.forms.utils.ErrorList to format validation errors. ErrorList is a list like object where initlist is the list of errors. In addition this class has the following attributes and methods.  
+error_class  
+The CSS classes to be used when rendering the error list. Any provided classes are added to the default errorlist class. 
+  
+renderer  
+ New in Django 4.0.  Specifies the renderer to use for ErrorList. Defaults to None which means to use the default renderer specified by the FORM_RENDERER setting. 
+  
+template_name  
+ New in Django 4.0.  The name of the template used when calling __str__ or render(). By default this is 'django/forms/errors/list/default.html' which is a proxy for the 'ul.html' template. 
+  
+template_name_text  
+ New in Django 4.0.  The name of the template used when calling as_text(). By default this is 'django/forms/errors/list/text.html'. This template renders the errors as a list of bullet points. 
+  
+template_name_ul  
+ New in Django 4.0.  The name of the template used when calling as_ul(). By default this is 'django/forms/errors/list/ul.html'. This template renders the errors in <li> tags with a wrapping <ul> with the CSS classes as defined by error_class. 
+  
+get_context()  
+ New in Django 4.0.  Return context for rendering of errors in a template. The available context is:  
+errors : A list of the errors. 
+error_class : A string of CSS classes.  
+  
+render(template_name=None, context=None, renderer=None)  
+ New in Django 4.0.  The render method is called by __str__ as well as by the as_ul() method. All arguments are optional and will default to:  
+template_name: Value returned by template_name
+ 
+context: Value returned by get_context()
+ 
+renderer: Value returned by renderer
+  
+  
+as_text()  
+Renders the error list using the template defined by template_name_text. 
+  
+as_ul()  
+Renders the error list using the template defined by template_name_ul. 
+ If you’d like to customize the rendering of errors this can be achieved by overriding the template_name attribute or more generally by overriding the default template, see also Overriding built-in form templates.

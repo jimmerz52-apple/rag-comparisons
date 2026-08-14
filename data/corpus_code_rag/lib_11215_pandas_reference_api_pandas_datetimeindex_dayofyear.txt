@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.datetimeindex.dayofyear
+
+pandas.DatetimeIndex.dayofyear   propertyDatetimeIndex.dayofyear
+ 
+The ordinal day of the year.

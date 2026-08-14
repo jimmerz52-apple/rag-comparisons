@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_NOFREE
+
+inspect.CO_NOFREE  
+The flag is set if there are no free or cell variables.

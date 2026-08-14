@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.naive_bayes.bernoullinb#sklearn.naive_bayes.BernoulliNB.predict
+
+predict(X) [source]
+ 
+Perform classification on an array of test vectors X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Cndarray of shape (n_samples,) 
+
+Predicted target values for X

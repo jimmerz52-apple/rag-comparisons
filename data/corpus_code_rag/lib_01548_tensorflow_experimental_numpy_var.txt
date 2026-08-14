@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.var
+
+tf.experimental.numpy.var TensorFlow variant of NumPy's var. 
+tf.experimental.numpy.var(
+    a, axis=None, dtype=None, out=None, ddof=0, keepdims=None
+)
+ See the NumPy documentation for numpy.var.

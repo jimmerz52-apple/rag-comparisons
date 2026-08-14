@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.tree.extratreeclassifier#sklearn.tree.ExtraTreeClassifier.feature_importances_
+
+property feature_importances_  
+Return the feature importances. The importance of a feature is computed as the (normalized) total reduction of the criterion brought by that feature. It is also known as the Gini importance. Warning: impurity-based feature importances can be misleading for high cardinality features (many unique values). See sklearn.inspection.permutation_importance as an alternative.  Returns 
+ 
+feature_importances_ndarray of shape (n_features,) 
+
+Normalized total reduction of criteria by feature (Gini importance).

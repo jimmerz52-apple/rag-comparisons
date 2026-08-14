@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.fqdn
+
+fqdn  
+Holds the fully-qualified domain name of the server as returned by socket.getfqdn().

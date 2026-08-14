@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_NPTS
+
+resource.RLIMIT_NPTS  
+The maximum number of pseudo-terminals created by this user id. Availability: FreeBSD 9 or later.  New in version 3.4.

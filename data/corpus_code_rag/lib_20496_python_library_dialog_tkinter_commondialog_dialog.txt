@@ -1,0 +1,6 @@
+# python.library.dialog#tkinter.commondialog.Dialog
+
+class tkinter.commondialog.Dialog(master=None, **options)  
+ 
+show(color=None, **options)  
+Render the Dialog window.

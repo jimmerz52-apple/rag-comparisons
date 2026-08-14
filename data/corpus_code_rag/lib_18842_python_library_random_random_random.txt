@@ -1,0 +1,4 @@
+# python.library.random#random.Random
+
+class random.Random([seed])  
+Class that implements the default pseudo-random number generator used by the random module.  Deprecated since version 3.9: In the future, the seed must be one of the following types: NoneType, int, float, str, bytes, or bytearray.

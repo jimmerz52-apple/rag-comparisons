@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_transform_rotates_text
+
+set_transform_rotates_text(t)[source]
+ 
+Whether rotations of the transform affect the text direction.  Parameters 
+ 
+tbool

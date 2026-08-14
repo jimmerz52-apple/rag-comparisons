@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__bool__
+
+numpy.ndarray.__bool__ method   ndarray.__bool__(/)
+ 
+self != 0

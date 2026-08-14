@@ -1,0 +1,11 @@
+# pandas.reference.api.pandas.core.groupby.dataframegroupby.cummin
+
+pandas.core.groupby.DataFrameGroupBy.cummin   DataFrameGroupBy.cummin(axis=0, **kwargs)[source]
+ 
+Cumulative min for each group.  Returns 
+ Series or DataFrame
+    See also  Series.groupby
+
+Apply a function groupby to a Series.  DataFrame.groupby
+
+Apply a function groupby to each row or column of a DataFrame.

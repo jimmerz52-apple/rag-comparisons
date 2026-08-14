@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__getitem__
+
+numpy.ndarray.__getitem__ method   ndarray.__getitem__(key, /)
+ 
+Return self[key].

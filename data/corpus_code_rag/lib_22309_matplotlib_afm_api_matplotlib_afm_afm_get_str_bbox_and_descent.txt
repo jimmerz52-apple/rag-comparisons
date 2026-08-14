@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_str_bbox_and_descent
+
+get_str_bbox_and_descent(s)[source]
+ 
+Return the string bounding box and the maximal descent.

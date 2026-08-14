@@ -1,0 +1,17 @@
+# skimage.api.skimage.morphology#skimage.morphology.cube
+
+skimage.morphology.cube(width, dtype=<class 'numpy.uint8'>) [source]
+ 
+Generates a cube-shaped structuring element. This is the 3D equivalent of a square. Every pixel along the perimeter has a chessboard distance no greater than radius (radius=floor(width/2)) pixels.  Parameters 
+ 
+widthint 
+
+The width, height and depth of the cube.    Returns 
+ 
+selemndarray 
+
+A structuring element consisting only of ones, i.e. every pixel belongs to the neighborhood.    Other Parameters 
+ 
+dtypedata-type 
+
+The data type of the structuring element.

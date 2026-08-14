@@ -1,0 +1,4 @@
+# python.library.numbers#numbers.Complex.imag
+
+imag  
+Abstract. Retrieves the imaginary component of this number.

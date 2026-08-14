@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.seekable
+
+HttpResponse.seekable()  
+Always False. This method makes an HttpResponse instance a stream-like object.

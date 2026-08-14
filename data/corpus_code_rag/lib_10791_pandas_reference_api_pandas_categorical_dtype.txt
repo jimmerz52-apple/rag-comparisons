@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.categorical.dtype
+
+pandas.Categorical.dtype   propertyCategorical.dtype
+ 
+The CategoricalDtype for this instance.

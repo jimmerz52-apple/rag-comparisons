@@ -1,0 +1,2 @@
+method_a,label_a,method_b,label_b,wins_a,wins_b,ties,n,win_rate_a,mean_delta_a_minus_b
+rerank_semantic,Vector + rerank,semantic_rag,Semantic (vector),11,6,3,20,0.55,0.0321619281654654

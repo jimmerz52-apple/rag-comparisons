@@ -1,0 +1,14 @@
+# torch.benchmark_utils#torch.utils.benchmark.Timer.blocked_autorange
+
+blocked_autorange(callback=None, min_run_time=0.2) [source]
+ 
+Measure many replicates while keeping timer overhead to a minimum. At a high level, blocked_autorange executes the following pseudo-code: `setup`
+
+total_time = 0
+while total_time < min_run_time
+    start = timer()
+    for _ in range(block_size):
+        `stmt`
+    total_time += (timer() - start)
+ Note the variable block_size in the inner loop. The choice of block size is important to measurement quality, and must balance two competing objectives:  A small block size results in more replicates and generally better statistics. A large block size better amortizes the cost of timer invocation, and results in a less biased measurement. This is important because CUDA syncronization time is non-trivial (order single to low double digit microseconds) and would otherwise bias the measurement.  blocked_autorange sets block_size by running a warmup period, increasing block size until timer overhead is less than 0.1% of the overall computation. This value is then used for the main measurement loop.  Returns 
+A Measurement object that contains measured runtimes and repetition counts, and can be used to compute statistics. (mean, median, etc.)

@@ -1,0 +1,6 @@
+# python.library.fractions#fractions.Fraction.__floor__
+
+__floor__()  
+Returns the greatest int <= self. This method can also be accessed through the math.floor() function: >>> from math import floor
+>>> floor(Fraction(355, 113))
+3

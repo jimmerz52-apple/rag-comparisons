@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.nodedef.experimentaldebuginfo
+
+tf.compat.v1.NodeDef.ExperimentalDebugInfo A ProtocolMessage
+ 
+
+
+ Attributes
+  original_func_names   repeated string original_func_names  
+  original_node_names   repeated string original_node_names

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.paginator_class
+
+paginator_class  
+The paginator class to be used for pagination. By default, django.core.paginator.Paginator is used. If the custom paginator class doesn’t have the same constructor interface as django.core.paginator.Paginator, you will also need to provide an implementation for get_paginator().

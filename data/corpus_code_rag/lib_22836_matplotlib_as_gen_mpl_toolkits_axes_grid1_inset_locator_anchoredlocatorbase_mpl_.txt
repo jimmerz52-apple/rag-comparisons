@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator.anchoredlocatorbase#mpl_toolkits.axes_grid1.inset_locator.AnchoredLocatorBase.draw
+
+draw(renderer)[source]
+ 
+Update the location of children if necessary and draw them to the given renderer.

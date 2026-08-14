@@ -1,0 +1,4 @@
+# python.library.queue#queue.SimpleQueue.qsize
+
+SimpleQueue.qsize()  
+Return the approximate size of the queue. Note, qsize() > 0 doesn’t guarantee that a subsequent get() will not block.

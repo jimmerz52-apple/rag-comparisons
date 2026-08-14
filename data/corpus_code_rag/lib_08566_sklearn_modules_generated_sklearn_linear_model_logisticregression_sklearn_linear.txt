@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.linear_model.logisticregression#sklearn.linear_model.LogisticRegression.sparsify
+
+sparsify() [source]
+ 
+Convert coefficient matrix to sparse format. Converts the coef_ member to a scipy.sparse matrix, which for L1-regularized models can be much more memory- and storage-efficient than the usual numpy.ndarray representation. The intercept_ member is not converted.  Returns 
+ self
+
+Fitted estimator.     Notes For non-sparse models, i.e. when there are not many zeros in coef_, this may actually increase memory usage, so use this method with care. A rule of thumb is that the number of zero elements, which can be computed with (coef_ == 0).sum(), must be more than 50% for this to provide significant benefits. After calling this method, further fitting with the partial_fit method (if any) will not work until you call densify.

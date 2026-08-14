@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.enable_nav_sidebar
+
+AdminSite.enable_nav_sidebar  
+A boolean value that determines whether to show the navigation sidebar on larger screens. By default, it is set to True.

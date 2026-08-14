@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.UnknownHandler.unknown_open
+
+UnknownHandler.unknown_open()  
+Raise a URLError exception.

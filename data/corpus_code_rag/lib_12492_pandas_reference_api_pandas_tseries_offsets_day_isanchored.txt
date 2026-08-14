@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.day.isanchored
+
+pandas.tseries.offsets.Day.isAnchored   Day.isAnchored()

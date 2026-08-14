@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IEXEC
+
+stat.S_IEXEC  
+Unix V7 synonym for S_IXUSR.

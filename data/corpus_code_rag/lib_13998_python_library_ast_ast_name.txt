@@ -1,0 +1,4 @@
+# python.library.ast#ast.Name
+
+class ast.Name(id, ctx)  
+A variable name. id holds the name as a string, and ctx is one of the following types.

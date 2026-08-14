@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelMultipleChoiceField.iterator
+
+iterator  
+Same as ModelChoiceField.iterator.

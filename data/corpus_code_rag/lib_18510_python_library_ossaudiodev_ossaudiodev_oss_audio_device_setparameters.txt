@@ -1,0 +1,7 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.setparameters
+
+oss_audio_device.setparameters(format, nchannels, samplerate[, strict=False])  
+Set the key audio sampling parameters—sample format, number of channels, and sampling rate—in one method call. format, nchannels, and samplerate should be as specified in the setfmt(), channels(), and speed() methods. If strict is true, setparameters() checks to see if each parameter was actually set to the requested value, and raises OSSAudioError if not. Returns a tuple (format, nchannels, samplerate) indicating the parameter values that were actually set by the device driver (i.e., the same as the return values of setfmt(), channels(), and speed()). For example, (fmt, channels, rate) = dsp.setparameters(fmt, channels, rate)
+ is equivalent to fmt = dsp.setfmt(fmt)
+channels = dsp.channels(channels)
+rate = dsp.rate(rate)

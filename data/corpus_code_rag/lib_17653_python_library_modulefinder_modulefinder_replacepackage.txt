@@ -1,0 +1,4 @@
+# python.library.modulefinder#modulefinder.ReplacePackage
+
+modulefinder.ReplacePackage(oldname, newname)  
+Allows specifying that the module named oldname is in fact the package named newname.

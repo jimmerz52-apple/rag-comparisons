@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axisartisthelperrectlinear#mpl_toolkits.axisartist.axislines.AxisArtistHelperRectlinear.Floating.get_tick_iterators
+
+get_tick_iterators(axes)[source]
+ 
+tick_loc, tick_angle, tick_label

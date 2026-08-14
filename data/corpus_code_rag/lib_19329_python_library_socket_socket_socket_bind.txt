@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.bind
+
+socket.bind(address)  
+Bind the socket to address. The socket must not already be bound. (The format of address depends on the address family — see above.) Raises an auditing event socket.bind with arguments self, address.

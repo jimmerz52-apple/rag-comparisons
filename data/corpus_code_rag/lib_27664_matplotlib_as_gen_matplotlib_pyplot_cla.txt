@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.cla
+
+matplotlib.pyplot.cla   matplotlib.pyplot.cla()[source]
+ 
+Clear the current axes.

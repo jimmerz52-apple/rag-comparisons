@@ -1,0 +1,4 @@
+# python.library.asyncio-stream#asyncio.StreamWriter.wait_closed
+
+coroutine wait_closed()  
+Wait until the stream is closed. Should be called after close() to wait until the underlying connection is closed.  New in version 3.7.

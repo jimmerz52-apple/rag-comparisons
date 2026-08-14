@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.sound.main
+
+sound.main() 
+ load and play a sound sound.main(file_path=None) -> None  Extremely basic testing of the mixer module. Load a sound and play it. All from the command shell, no graphics. If provided, use the audio file 'file_path', otherwise use a default file. sound.py optional command line argument: an audio file

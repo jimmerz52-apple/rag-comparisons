@@ -1,0 +1,8 @@
+# numpy.reference.arrays.scalars#numpy.uint
+
+class numpy.uint[source]
+ 
+Unsigned integer type, compatible with C unsigned long.  Character code 
+'L'  Alias on this platform (Linux x86_64) 
+numpy.uint64: 64-bit unsigned integer (0 to 18_446_744_073_709_551_615).  Alias on this platform (Linux x86_64) 
+numpy.uintp: Unsigned integer large enough to fit pointer, compatible with C uintptr_t.

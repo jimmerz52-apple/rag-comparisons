@@ -1,0 +1,12 @@
+# werkzeug.http.index#werkzeug.http.dump_header
+
+werkzeug.http.dump_header(iterable, allow_token=True)  
+Dump an HTTP header again. This is the reversal of parse_list_header(), parse_set_header() and parse_dict_header(). This also quotes strings that include an equals sign unless you pass it as dict of key, value pairs. >>> dump_header({'foo': 'bar baz'})
+'foo="bar baz"'
+>>> dump_header(('foo', 'bar baz'))
+'foo, "bar baz"'
+  Parameters 
+ 
+iterable (Union[Dict[str, Union[str, int]], Iterable[str]]) – the iterable or dict of values to quote. 
+allow_token (bool) – if set to False tokens as values are disallowed. See quote_header_value() for more details.   Return type 
+str

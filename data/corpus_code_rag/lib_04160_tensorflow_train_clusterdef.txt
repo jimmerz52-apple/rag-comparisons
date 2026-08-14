@@ -1,0 +1,9 @@
+# tensorflow.train.clusterdef
+
+tf.train.ClusterDef     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.ClusterDef 
+ 
+
+
+ Attributes
+  job   repeated JobDef job

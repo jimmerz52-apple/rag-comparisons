@@ -1,0 +1,4 @@
+# tensorflow.keras.applications.resnet_v2
+
+Module: tf.keras.applications.resnet_v2 ResNet v2 models for Keras. Reference:  
+Identity Mappings in Deep Residual Networks (CVPR 2016)  Functions ResNet101V2(...): Instantiates the ResNet101V2 architecture. ResNet152V2(...): Instantiates the ResNet152V2 architecture. ResNet50V2(...): Instantiates the ResNet50V2 architecture. decode_predictions(...): Decodes the prediction of an ImageNet model. preprocess_input(...): Preprocesses a tensor or Numpy array encoding a batch of images.

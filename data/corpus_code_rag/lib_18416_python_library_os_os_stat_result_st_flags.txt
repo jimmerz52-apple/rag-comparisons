@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_flags
+
+st_flags  
+User defined flags for file.

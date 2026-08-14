@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.SourceLoader.exec_module
+
+exec_module(module)  
+Concrete implementation of Loader.exec_module().  New in version 3.4.

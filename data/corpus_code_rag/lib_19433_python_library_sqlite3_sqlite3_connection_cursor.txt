@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Connection.cursor
+
+cursor(factory=Cursor)  
+The cursor method accepts a single optional parameter factory. If supplied, this must be a callable returning an instance of Cursor or its subclasses.

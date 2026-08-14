@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.transform
+
+GEOSGeometry.transform(ct, clone=False)  
+Transforms the geometry according to the given coordinate transformation parameter (ct), which may be an integer SRID, spatial reference WKT string, a PROJ string, a SpatialReference object, or a CoordTransform object. By default, the geometry is transformed in-place and nothing is returned. However if the clone keyword is set, then the geometry is not modified and a transformed clone of the geometry is returned instead.  Note Raises GEOSException if GDAL is not available or if the geometry’s SRID is None or less than 0. It doesn’t impose any constraints on the geometry’s SRID if called with a CoordTransform object.

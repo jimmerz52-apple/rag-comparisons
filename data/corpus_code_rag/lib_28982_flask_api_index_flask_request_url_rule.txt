@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.url_rule
+
+url_rule: Optional[Rule] = None  
+The internal URL rule that matched the request. This can be useful to inspect which methods are allowed for the URL from a before/after handler (request.url_rule.methods) etc. Though if the request’s method was invalid for the URL rule, the valid list is available in routing_exception.valid_methods instead (an attribute of the Werkzeug exception MethodNotAllowed) because the request was never internally bound.  Changelog New in version 0.6.

@@ -1,0 +1,9 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.__call__
+
+__call__(environ, start_response)  
+Process this response as WSGI application.  Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environment. 
+start_response (StartResponse) – the response callable provided by the WSGI server.   Returns 
+an application iterator  Return type 
+Iterable[bytes]

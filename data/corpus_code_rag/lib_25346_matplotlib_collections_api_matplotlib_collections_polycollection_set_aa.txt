@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PolyCollection.set_aa
+
+set_aa(aa)[source]
+ 
+Alias for set_antialiased.

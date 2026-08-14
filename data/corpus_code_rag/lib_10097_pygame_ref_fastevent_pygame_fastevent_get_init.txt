@@ -1,0 +1,4 @@
+# pygame.ref.fastevent#pygame.fastevent.get_init
+
+pygame.fastevent.get_init() 
+ returns True if the fastevent module is currently initialized get_init() -> bool  Returns True if the pygame.fastevent module is currently initialized.

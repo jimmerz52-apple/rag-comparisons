@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.set_patch_line
+
+set_patch_line()[source]
+ 
+Set the spine to be linear.

@@ -1,0 +1,4 @@
+# python.library.array#array.array.byteswap
+
+array.byteswap()  
+“Byteswap” all items of the array. This is only supported for values which are 1, 2, 4, or 8 bytes in size; for other types of values, RuntimeError is raised. It is useful when reading data from a file written on a machine with a different byte order.

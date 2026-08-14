@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.clearok
+
+window.clearok(flag)  
+If flag is True, the next call to refresh() will clear the window completely.

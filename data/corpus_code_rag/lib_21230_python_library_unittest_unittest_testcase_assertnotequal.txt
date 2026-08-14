@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.assertNotEqual
+
+assertNotEqual(first, second, msg=None)  
+Test that first and second are not equal. If the values do compare equal, the test will fail.

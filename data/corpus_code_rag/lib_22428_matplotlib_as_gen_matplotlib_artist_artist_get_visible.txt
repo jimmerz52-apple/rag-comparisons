@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_visible
+
+matplotlib.artist.Artist.get_visible   Artist.get_visible()[source]
+ 
+Return the visibility.

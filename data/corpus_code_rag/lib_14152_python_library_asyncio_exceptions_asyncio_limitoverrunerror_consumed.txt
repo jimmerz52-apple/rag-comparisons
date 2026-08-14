@@ -1,0 +1,4 @@
+# python.library.asyncio-exceptions#asyncio.LimitOverrunError.consumed
+
+consumed  
+The total number of to be consumed bytes.

@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Op.begin_text
+
+begin_text=(b'BT',)[source]

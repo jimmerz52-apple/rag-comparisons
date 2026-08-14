@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.codes
+
+xml.parsers.expat.errors.codes  
+A dictionary mapping string descriptions to their error codes.  New in version 3.2.

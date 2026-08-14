@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.fileno
+
+Telnet.fileno()  
+Return the file descriptor of the socket object used internally.

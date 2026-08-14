@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DayMixin.get_day
+
+get_day()  
+Returns the day for which this view will display data, as a string. Tries the following sources, in order:  The value of the DayMixin.day attribute. The value of the day argument captured in the URL pattern. The value of the day GET query argument.  Raises a 404 if no valid day specification can be found.

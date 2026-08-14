@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.namespace
+
+IMAP4.namespace()  
+Returns IMAP namespaces as defined in RFC 2342.

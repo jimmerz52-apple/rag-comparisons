@@ -1,0 +1,5 @@
+# django.ref.models.database-functions#django.db.models.functions.ExtractMonth
+
+class ExtractMonth(expression, tzinfo=None, **extra)  
+ 
+lookup_name = 'month'

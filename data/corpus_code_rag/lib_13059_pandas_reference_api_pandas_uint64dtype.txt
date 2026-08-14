@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.uint64dtype
+
+pandas.UInt64Dtype   classpandas.UInt64Dtype[source]
+ 
+An ExtensionDtype for uint64 integer data.  Changed in version 1.0.0: Now uses pandas.NA as its missing value, rather than numpy.nan.  Attributes       
+None     Methods       
+None

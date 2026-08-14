@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUser.get_full_name
+
+get_full_name()  
+Optional. A longer formal identifier for the user such as their full name. If implemented, this appears alongside the username in an object’s history in django.contrib.admin.

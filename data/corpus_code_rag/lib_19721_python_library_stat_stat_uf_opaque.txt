@@ -1,0 +1,4 @@
+# python.library.stat#stat.UF_OPAQUE
+
+stat.UF_OPAQUE  
+The directory is opaque when viewed through a union stack.

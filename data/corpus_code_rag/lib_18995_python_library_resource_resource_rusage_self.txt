@@ -1,0 +1,4 @@
+# python.library.resource#resource.RUSAGE_SELF
+
+resource.RUSAGE_SELF  
+Pass to getrusage() to request resources consumed by the calling process, which is the sum of resources used by all threads in the process.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.FileLoader.name
+
+name  
+The name of the module the loader can handle.

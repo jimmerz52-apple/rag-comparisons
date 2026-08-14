@@ -1,0 +1,4 @@
+# python.library.os#os.RWF_DSYNC
+
+os.RWF_DSYNC  
+Provide a per-write equivalent of the O_DSYNC open(2) flag. This flag effect applies only to the data range written by the system call. Availability: Linux 4.7 and newer.  New in version 3.7.

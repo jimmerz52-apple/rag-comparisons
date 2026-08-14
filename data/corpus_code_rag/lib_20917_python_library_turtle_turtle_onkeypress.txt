@@ -1,0 +1,12 @@
+# python.library.turtle#turtle.onkeypress
+
+turtle.onkeypress(fun, key=None)  
+ Parameters 
+ 
+fun – a function with no arguments or None
+ 
+key – a string: key (e.g. “a”) or key-symbol (e.g. “space”)    Bind fun to key-press event of key if key is given, or to any key-press-event if no key is given. Remark: in order to be able to register key-events, TurtleScreen must have focus. (See method listen().) >>> def f():
+...     fd(50)
+...
+>>> screen.onkey(f, "Up")
+>>> screen.listen()

@@ -1,0 +1,33 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.tricontour
+
+tricontour(*args, extend3d=False, stride=5, zdir='z', offset=None, data=None, **kwargs)[source]
+ 
+Create a 3D contour plot.  Note This method currently produces incorrect output due to a longstanding bug in 3D PolyCollection rendering.   Parameters 
+ 
+X, Y, Zarray-like
+
+
+Input data. See tricontour for acceptable data shapes.  
+extend3dbool, default: False
+
+
+Whether to extend contour in 3D.  
+strideint
+
+
+Step size for extending contour.  
+zdir{'x', 'y', 'z'}, default: 'z'
+
+
+The direction to use.  
+offsetfloat, optional
+
+
+If specified, plot a projection of the contour lines at this position in a plane normal to zdir.  
+dataindexable object, optional
+
+
+If given, all parameters also accept a string s, which is interpreted as data[s] (unless this raises an exception).  *args, **kwargs
+
+Other arguments are forwarded to matplotlib.axes.Axes.tricontour.    Returns 
+ matplotlib.tri.tricontour.TriContourSet

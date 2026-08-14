@@ -1,0 +1,11 @@
+# torch.nn.init#torch.nn.init.normal_
+
+torch.nn.init.normal_(tensor, mean=0.0, std=1.0) [source]
+ 
+Fills the input Tensor with values drawn from the normal distribution N(mean,std2)\mathcal{N}(\text{mean}, \text{std}^2) .  Parameters 
+ 
+tensor – an n-dimensional torch.Tensor
+ 
+mean – the mean of the normal distribution 
+std – the standard deviation of the normal distribution    Examples >>> w = torch.empty(3, 5)
+>>> nn.init.normal_(w)

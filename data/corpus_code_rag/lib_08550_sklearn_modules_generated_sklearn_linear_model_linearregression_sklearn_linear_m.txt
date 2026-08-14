@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.linear_model.linearregression#sklearn.linear_model.LinearRegression.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit linear model.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data  
+yarray-like of shape (n_samples,) or (n_samples, n_targets) 
+
+Target values. Will be cast to X’s dtype if necessary  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Individual weights for each sample  New in version 0.17: parameter sample_weight support to LinearRegression.     Returns 
+ 
+selfreturns an instance of self.

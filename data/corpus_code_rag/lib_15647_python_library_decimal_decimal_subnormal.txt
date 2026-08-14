@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Subnormal
+
+class decimal.Subnormal  
+Exponent was lower than Emin prior to rounding. Occurs when an operation result is subnormal (the exponent is too small). If not trapped, returns the result unchanged.

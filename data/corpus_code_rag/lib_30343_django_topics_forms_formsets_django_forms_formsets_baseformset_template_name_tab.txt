@@ -1,0 +1,4 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.template_name_table
+
+BaseFormSet.template_name_table  
+ New in Django 4.0.  The name of the template used when calling as_table(). By default this is 'django/forms/formsets/table.html'. This template renders the formset’s management form and then each form in the formset as per the form’s as_table() method.

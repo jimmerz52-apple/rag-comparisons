@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.DefragResultBytes
+
+class urllib.parse.DefragResultBytes(url, fragment)  
+Concrete class for urldefrag() results containing bytes data. The decode() method returns a DefragResult instance.  New in version 3.2.

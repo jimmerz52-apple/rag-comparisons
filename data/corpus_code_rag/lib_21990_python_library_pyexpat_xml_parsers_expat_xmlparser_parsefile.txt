@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.ParseFile
+
+xmlparser.ParseFile(file)  
+Parse XML data reading from the object file. file only needs to provide the read(nbytes) method, returning the empty string when there’s no more data.

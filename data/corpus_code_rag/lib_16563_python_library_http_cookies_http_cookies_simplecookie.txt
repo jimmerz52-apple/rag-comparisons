@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.SimpleCookie
+
+class http.cookies.SimpleCookie([input])  
+This class derives from BaseCookie and overrides value_decode() and value_encode(). SimpleCookie supports strings as cookie values. When setting the value, SimpleCookie calls the builtin str() to convert the value to a string. Values received from HTTP are kept as strings.

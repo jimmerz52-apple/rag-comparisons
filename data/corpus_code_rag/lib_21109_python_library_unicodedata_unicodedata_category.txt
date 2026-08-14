@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.category
+
+unicodedata.category(chr)  
+Returns the general category assigned to the character chr as string.

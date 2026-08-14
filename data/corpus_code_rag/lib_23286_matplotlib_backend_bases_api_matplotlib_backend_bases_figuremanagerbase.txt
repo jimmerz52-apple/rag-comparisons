@@ -1,0 +1,47 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureManagerBase
+
+classmatplotlib.backend_bases.FigureManagerBase(canvas, num)[source]
+ 
+Bases: object A backend-independent abstraction of a figure container and controller. The figure manager is used by pyplot to interact with the window in a backend-independent way. It's an adapter for the real (GUI) framework that represents the visual figure on screen. GUI backends define from this class to translate common operations such as show or resize to the GUI-specific code. Non-GUI backends do not support these operations an can just use the base class. This following basic operations are accessible: Window operations  show destroy full_screen_toggle resize get_window_title set_window_title  Key and mouse button press handling The figure manager sets up default key and mouse button press handling by hooking up the key_press_handler to the matplotlib event system. This ensures the same shortcuts and mouse actions across backends. Other operations Subclasses will have additional attributes and functions to access additional functionality. This is of course backend-specific. For example, most GUI backends have window and toolbar attributes that give access to the native GUI widgets of the respective framework.  Attributes 
+ 
+canvasFigureCanvasBase
+
+
+The backend-specific canvas instance.  
+numint or str
+
+
+The figure number.  
+key_press_handler_idint
+
+
+The default key handler cid, when using the toolmanager. To disable the default key press handling use: figure.canvas.mpl_disconnect(
+    figure.canvas.manager.key_press_handler_id)
+  
+button_press_handler_idint
+
+
+The default mouse button handler cid, when using the toolmanager. To disable the default button press handling use: figure.canvas.mpl_disconnect(
+    figure.canvas.manager.button_press_handler_id)
+       button_press(event)[source]
+ 
+[Deprecated] The default Matplotlib button actions for extra mouse buttons. Notes  Deprecated since version 3.4.  
+   destroy()[source]
+
+   full_screen_toggle()[source]
+
+   get_window_title()[source]
+ 
+Return the title text of the window containing the figure, or None if there is no window (e.g., a PS backend). 
+   key_press(event)[source]
+ 
+[Deprecated] Implement the default Matplotlib key bindings defined at Navigation keyboard shortcuts. Notes  Deprecated since version 3.4.  
+   resize(w, h)[source]
+ 
+For GUI backends, resize the window (in physical pixels). 
+   set_window_title(title)[source]
+ 
+Set the title text of the window containing the figure. This has no effect for non-GUI (e.g., PS) backends. 
+   show()[source]
+ 
+For GUI backends, show the figure window and redraw. For non-GUI backends, raise an exception, unless running headless (i.e. on Linux with an unset DISPLAY); this exception is converted to a warning in Figure.show.

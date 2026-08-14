@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.scale
+
+scale(sx, sy=None)[source]
+ 
+Add a scale in place. If sy is None, the same scale is applied in both the x- and y-directions. Returns self, so this method can easily be chained with more calls to rotate(), rotate_deg(), translate() and scale().

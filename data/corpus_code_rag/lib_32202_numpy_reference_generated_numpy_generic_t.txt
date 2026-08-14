@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.t
+
+numpy.generic.T attribute   generic.T
+ 
+Scalar attribute identical to the corresponding array attribute. Please see ndarray.T.

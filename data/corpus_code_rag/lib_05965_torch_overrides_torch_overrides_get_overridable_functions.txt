@@ -1,0 +1,7 @@
+# torch.overrides#torch.overrides.get_overridable_functions
+
+torch.overrides.get_overridable_functions() [source]
+ 
+List functions that are overridable via __torch_function__  Returns 
+A dictionary that maps namespaces that contain overridable functions to functions in that namespace that can be overridden.  Return type 
+Dict[Any, List[Callable]]

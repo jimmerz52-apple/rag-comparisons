@@ -1,0 +1,21 @@
+# skimage.api.skimage.transform#skimage.transform.frt2
+
+skimage.transform.frt2(a) [source]
+ 
+Compute the 2-dimensional finite radon transform (FRT) for an n x n integer array.  Parameters 
+ 
+aarray_like 
+
+A 2-D square n x n integer array.    Returns 
+ 
+FRT2-D ndarray 
+
+Finite Radon Transform array of (n+1) x n integer coefficients.      See also  
+ifrt2
+
+
+The two-dimensional inverse FRT.    Notes The FRT has a unique inverse if and only if n is prime. [FRT] The idea for this algorithm is due to Vlad Negnevitski. References  
+FRT  
+A. Kingston and I. Svalbe, “Projective transforms on periodic discrete image arrays,” in P. Hawkes (Ed), Advances in Imaging and Electron Physics, 139 (2006)   Examples Generate a test image: Use a prime number for the array dimensions >>> SIZE = 59
+>>> img = np.tri(SIZE, dtype=np.int32)
+ Apply the Finite Radon Transform: >>> f = frt2(img)

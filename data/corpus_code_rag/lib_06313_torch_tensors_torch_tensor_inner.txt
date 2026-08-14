@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.inner
+
+inner(other) → Tensor  
+See torch.inner().

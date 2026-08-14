@@ -1,0 +1,16 @@
+# matplotlib.widgets_api#matplotlib.widgets.LockDraw
+
+classmatplotlib.widgets.LockDraw[source]
+ 
+Bases: object Some widgets, like the cursor, draw onto the canvas, and this is not desirable under all circumstances, like when the toolbar is in zoom-to-rect mode and drawing a rectangle. To avoid this, a widget can acquire a canvas' lock with canvas.widgetlock(widget) before drawing on the canvas; this will prevent other widgets from doing so at the same time (if they also try to acquire the lock first).   available(o)[source]
+ 
+Return whether drawing is available to o. 
+   isowner(o)[source]
+ 
+Return whether o owns this lock. 
+   locked()[source]
+ 
+Return whether the lock is currently held by an owner. 
+   release(o)[source]
+ 
+Release the lock from o.

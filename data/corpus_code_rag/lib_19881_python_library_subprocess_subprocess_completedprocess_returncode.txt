@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CompletedProcess.returncode
+
+returncode  
+Exit status of the child process. Typically, an exit status of 0 indicates that it ran successfully. A negative value -N indicates that the child was terminated by signal N (POSIX only).

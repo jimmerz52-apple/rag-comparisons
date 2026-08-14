@@ -1,0 +1,20 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.axesdivider#mpl_toolkits.axes_grid1.axes_divider.AxesDivider.new_vertical
+
+new_vertical(size, pad=None, pack_start=False, **kwargs)[source]
+ 
+Add a new axes on the top (or bottom) side of the main axes.  Parameters 
+ 
+sizeaxes_size or float or str
+
+
+The axes height. float or str arguments are interpreted as axes_size.from_any(size, AxesY(<main_axes>)).  
+padaxes_size or float or str
+
+
+Padding between the axes. float or str arguments are interpreted as axes_size.from_any(size, AxesY(<main_axes>)). Defaults to rcParams["figure.subplot.hspace"] (default: 0.2) times the main axes height.  
+pack_startbool
+
+
+If False, the new axes is appended at the end of the list, i.e., it became the right-most axes. If True, it is inserted at the start of the list, and becomes the left-most axes.  **kwargs
+
+All extra keywords arguments are passed to the created axes. If axes_class is given, the new axes will be created as an instance of the given class. Otherwise, the same class of the main axes will be used.

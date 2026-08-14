@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.addFilter
+
+addFilter(filter)  
+Adds the specified filter filter to this handler.

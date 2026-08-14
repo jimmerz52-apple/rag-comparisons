@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.GraphicsContextPdf.linewidth_cmd
+
+linewidth_cmd(width)[source]

@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.stack
+
+torch.distributions.constraints.stack  
+alias of torch.distributions.constraints._Stack

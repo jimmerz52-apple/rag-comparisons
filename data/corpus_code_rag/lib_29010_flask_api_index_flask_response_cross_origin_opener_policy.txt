@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.cross_origin_opener_policy
+
+cross_origin_opener_policy  
+Allows control over sharing of browsing context group with cross-origin documents. Values must be a member of the werkzeug.http.COOP enum.

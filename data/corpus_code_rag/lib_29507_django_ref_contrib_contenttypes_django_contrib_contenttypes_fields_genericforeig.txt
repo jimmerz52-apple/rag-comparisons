@@ -1,0 +1,6 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.fields.GenericForeignKey
+
+class GenericForeignKey  
+There are three parts to setting up a GenericForeignKey:  Give your model a ForeignKey to ContentType. The usual name for this field is “content_type”. Give your model a field that can store primary key values from the models you’ll be relating to. For most models, this means a PositiveIntegerField. The usual name for this field is “object_id”. Give your model a GenericForeignKey, and pass it the names of the two fields described above. If these fields are named “content_type” and “object_id”, you can omit this – those are the default field names GenericForeignKey will look for.   
+for_concrete_model  
+If False, the field will be able to reference proxy models. Default is True. This mirrors the for_concrete_model argument to get_for_model().

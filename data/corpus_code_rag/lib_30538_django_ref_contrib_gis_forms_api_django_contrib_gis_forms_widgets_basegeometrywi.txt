@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.BaseGeometryWidget.template_name
+
+BaseGeometryWidget.template_name  
+The template used to render the map widget.

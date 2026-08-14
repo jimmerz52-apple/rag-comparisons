@@ -1,0 +1,4 @@
+# python.library.select#select.poll.modify
+
+poll.modify(fd, eventmask)  
+Modifies an already registered fd. This has the same effect as register(fd, eventmask). Attempting to modify a file descriptor that was never registered causes an OSError exception with errno ENOENT to be raised.

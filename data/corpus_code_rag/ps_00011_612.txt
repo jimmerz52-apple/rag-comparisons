@@ -1,0 +1,6 @@
+# 612
+Task: 612
+
+# Write a python function to merge the first and last elements separately in a list of lists.
+def merge(lst):  
+    return [list(ele) for ele in list(zip(*lst))]

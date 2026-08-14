@@ -1,0 +1,8 @@
+# flask.api.index#flask.session.modified
+
+modified  
+True if the session object detected a modification. Be advised that modifications on mutable structures are not picked up automatically, in that situation you have to explicitly set the attribute to True yourself. Here an example: # this change is not picked up because a mutable object (here
+# a list) is changed.
+session['objects'].append(42)
+# so mark it as modified yourself
+session.modified = True

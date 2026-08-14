@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Filter.inclusive
+
+inclusive  
+If inclusive is True (include), only match memory blocks allocated in a file with a name matching filename_pattern at line number lineno. If inclusive is False (exclude), ignore memory blocks allocated in a file with a name matching filename_pattern at line number lineno.

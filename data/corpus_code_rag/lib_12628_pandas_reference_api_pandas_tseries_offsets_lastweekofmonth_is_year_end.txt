@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.lastweekofmonth.is_year_end
+
+pandas.tseries.offsets.LastWeekOfMonth.is_year_end   LastWeekOfMonth.is_year_end()

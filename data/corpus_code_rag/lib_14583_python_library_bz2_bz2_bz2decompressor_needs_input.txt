@@ -1,0 +1,4 @@
+# python.library.bz2#bz2.BZ2Decompressor.needs_input
+
+needs_input  
+False if the decompress() method can provide more decompressed data before requiring new uncompressed input.  New in version 3.5.

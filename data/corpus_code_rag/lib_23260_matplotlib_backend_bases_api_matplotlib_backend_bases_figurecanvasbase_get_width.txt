@@ -1,0 +1,15 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.get_width_height
+
+get_width_height(*, physical=False)[source]
+ 
+Return the figure width and height in integral points or pixels. When the figure is used on High DPI screens (and the backend supports it), the truncation to integers occurs after scaling by the device pixel ratio.  Parameters 
+ 
+physicalbool, default: False
+
+
+Whether to return true physical pixels or logical pixels. Physical pixels may be used by backends that support HiDPI, but still configure the canvas using its actual size.    Returns 
+ 
+width, heightint
+
+
+The size of the figure, in points or pixels, depending on the backend.

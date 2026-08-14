@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.send_static_file
+
+send_static_file(filename)  
+The view function used to serve files from static_folder. A route is automatically registered for this view at static_url_path if static_folder is set.  Changelog New in version 0.5.   Parameters 
+filename (str) –   Return type 
+Response

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.PathFinder.find_module
+
+classmethod find_module(fullname, path=None)  
+A legacy wrapper around find_spec().  Deprecated since version 3.4: Use find_spec() instead.

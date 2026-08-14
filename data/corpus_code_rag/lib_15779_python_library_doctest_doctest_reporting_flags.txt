@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.REPORTING_FLAGS
+
+doctest.REPORTING_FLAGS  
+A bitmask or’ing together all the reporting flags above.

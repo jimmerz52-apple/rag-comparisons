@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.get_or_create
+
+get_or_create(defaults=None, **kwargs)

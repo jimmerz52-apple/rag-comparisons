@@ -1,0 +1,7 @@
+# python.library.sqlite3#sqlite3.Cursor.connection
+
+connection  
+This read-only attribute provides the SQLite database Connection used by the Cursor object. A Cursor object created by calling con.cursor() will have a connection attribute that refers to con: >>> con = sqlite3.connect(":memory:")
+>>> cur = con.cursor()
+>>> cur.connection == con
+True

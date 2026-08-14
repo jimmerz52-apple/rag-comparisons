@@ -1,0 +1,4 @@
+# python.library.time#time.monotonic_ns
+
+time.monotonic_ns() → int  
+Similar to monotonic(), but return time as nanoseconds.  New in version 3.7.

@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.profiler
+
+Module: tf.compat.v1.profiler Public API for tf.profiler namespace. Classes class AdviceProto: A ProtocolMessage class GraphNodeProto: A ProtocolMessage class MultiGraphNodeProto: A ProtocolMessage class OpLogProto: A ProtocolMessage class ProfileOptionBuilder: Option Builder for Profiling API. class Profiler: TensorFlow multi-step profiler. Functions advise(...): Auto profile and advise. profile(...): Profile model. write_op_log(...): Log provided 'op_log', and add additional model information below.

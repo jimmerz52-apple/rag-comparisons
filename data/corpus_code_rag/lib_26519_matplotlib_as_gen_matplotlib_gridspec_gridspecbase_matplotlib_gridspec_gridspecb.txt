@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.get_width_ratios
+
+get_width_ratios()[source]
+ 
+Return the width ratios. This is None if no width ratios have been set explicitly.

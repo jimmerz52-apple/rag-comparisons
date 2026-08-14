@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.nonzero
+
+nonzero() → LongTensor  
+See torch.nonzero()

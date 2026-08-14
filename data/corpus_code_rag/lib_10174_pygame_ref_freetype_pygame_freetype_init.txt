@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.init
+
+pygame.freetype.init() 
+ Initialize the underlying FreeType library. init(cache_size=64, resolution=72)  This function initializes the underlying FreeType library and must be called before trying to use any of the functionality of the freetype module. However, pygame.init() will automatically call this function if the freetype module is already imported. It is safe to call this function more than once. Optionally, you may specify a default cache_size for the Glyph cache: the maximum number of glyphs that will be cached at any given time by the module. Exceedingly small values will be automatically tuned for performance. Also a default pixel resolution, in dots per inch, can be given to adjust font scaling.

@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.read_lazy
+
+Telnet.read_lazy()  
+Process and return data already in the queues (lazy). Raise EOFError if connection closed and no data available. Return b'' if no cooked data available otherwise. Do not block unless in the midst of an IAC sequence.

@@ -1,0 +1,4 @@
+# python.library.profile#pstats.Stats.print_callees
+
+print_callees(*restrictions)  
+This method for the Stats class prints a list of all function that were called by the indicated function. Aside from this reversal of direction of calls (re: called vs was called by), the arguments and ordering are identical to the print_callers() method.

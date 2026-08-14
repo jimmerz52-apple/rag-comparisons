@@ -1,0 +1,4 @@
+# python.library.json#json.JSONDecoder.decode
+
+decode(s)  
+Return the Python representation of s (a str instance containing a JSON document). JSONDecodeError will be raised if the given JSON document is not valid.

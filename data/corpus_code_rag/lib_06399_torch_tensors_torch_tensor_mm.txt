@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.mm
+
+mm(mat2) → Tensor  
+See torch.mm()

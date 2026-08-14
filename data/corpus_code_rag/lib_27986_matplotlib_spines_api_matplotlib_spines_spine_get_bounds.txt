@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.get_bounds
+
+get_bounds()[source]
+ 
+Get the bounds of the spine.

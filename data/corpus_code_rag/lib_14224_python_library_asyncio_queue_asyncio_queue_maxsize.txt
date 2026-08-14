@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.Queue.maxsize
+
+maxsize  
+Number of items allowed in the queue.

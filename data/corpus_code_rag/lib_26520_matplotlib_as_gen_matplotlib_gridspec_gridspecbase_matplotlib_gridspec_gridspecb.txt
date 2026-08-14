@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.new_subplotspec
+
+new_subplotspec(loc, rowspan=1, colspan=1)[source]
+ 
+Create and return a SubplotSpec instance.  Parameters 
+ 
+loc(int, int)
+
+
+The position of the subplot in the grid as (row_index, column_index).  
+rowspan, colspanint, default: 1
+
+
+The number of rows and columns the subplot should span in the grid.

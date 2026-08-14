@@ -1,0 +1,38 @@
+# torch.distributions#torch.distributions.exponential.Exponential
+
+class torch.distributions.exponential.Exponential(rate, validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Creates a Exponential distribution parameterized by rate. Example: >>> m = Exponential(torch.tensor([1.0]))
+>>> m.sample()  # Exponential distributed with rate=1
+tensor([ 0.1046])
+  Parameters 
+rate (float or Tensor) – rate = 1 / scale of the distribution    
+arg_constraints = {'rate': GreaterThan(lower_bound=0.0)} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(value) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+property stddev 
+  
+support = GreaterThan(lower_bound=0.0) 
+  
+property variance

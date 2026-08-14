@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.clone
+
+clone(*, memory_format=torch.preserve_format) → Tensor  
+See torch.clone()

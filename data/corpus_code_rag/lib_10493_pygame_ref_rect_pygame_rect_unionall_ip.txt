@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.unionall_ip
+
+unionall_ip() 
+ the union of many rectangles, in place unionall_ip(Rect_sequence) -> None  The same as the Rect.unionall() method, but operates in place.

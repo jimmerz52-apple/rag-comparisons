@@ -1,0 +1,6 @@
+# torch.distributions#torch.distributions.distribution.Distribution.entropy
+
+entropy() [source]
+ 
+Returns entropy of distribution, batched over batch_shape.  Returns 
+Tensor of shape batch_shape.

@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.get_arraytypes
+
+pygame.surfarray.get_arraytypes() 
+ Gets the array system types currently supported. get_arraytypes () -> tuple  DEPRECATED: Checks, which array systems are available and returns them as a tuple of strings. The values of the tuple can be used directly in the pygame.surfarray.use_arraytype() () method. If no supported array system could be found, None will be returned.  New in pygame 1.8.

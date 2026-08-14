@@ -1,0 +1,16 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerLine2DCompound
+
+classmatplotlib.legend_handler.HandlerLine2DCompound(marker_pad=0.3, numpoints=None, **kwargs)[source]
+ 
+Original handler for Line2D instances, that relies on combining a line-only with a marker-only artist. May be deprecated in the future.  Parameters 
+ 
+marker_padfloat
+
+
+Padding between points in legend entry.  
+numpointsint
+
+
+Number of points to show in legend entry.  **kwargs
+
+Keyword arguments forwarded to HandlerNpoints.       create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]

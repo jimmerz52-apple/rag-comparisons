@@ -1,0 +1,4 @@
+# python.library.io#io.FileIO.name
+
+name  
+The file name. This is the file descriptor of the file when no name is given in the constructor.

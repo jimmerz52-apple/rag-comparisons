@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.shrunk
+
+shrunk(mx, my)[source]
+ 
+Return a copy of the Bbox, shrunk by the factor mx in the x direction and the factor my in the y direction. The lower left corner of the box remains unchanged. Normally mx and my will be less than 1, but this is not enforced.

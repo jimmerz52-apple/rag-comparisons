@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.connection.Connection.recv
+
+recv()  
+Return an object sent from the other end of the connection using send(). Blocks until there is something to receive. Raises EOFError if there is nothing left to receive and the other end was closed.

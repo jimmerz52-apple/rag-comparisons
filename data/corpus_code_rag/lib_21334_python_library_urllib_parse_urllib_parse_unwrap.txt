@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.unwrap
+
+urllib.parse.unwrap(url)  
+Extract the url from a wrapped URL (that is, a string formatted as <URL:scheme://host/path>, <scheme://host/path>, URL:scheme://host/path or scheme://host/path). If url is not a wrapped URL, it is returned without changes.

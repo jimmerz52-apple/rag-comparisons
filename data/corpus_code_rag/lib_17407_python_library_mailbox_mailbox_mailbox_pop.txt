@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.pop
+
+pop(key, default=None)  
+Return a representation of the message corresponding to key and delete the message. If no such message exists, return default. The message is represented as an instance of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.

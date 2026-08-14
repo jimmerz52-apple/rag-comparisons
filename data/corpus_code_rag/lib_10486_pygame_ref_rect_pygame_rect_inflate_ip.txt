@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.inflate_ip
+
+inflate_ip() 
+ grow or shrink the rectangle size, in place inflate_ip(x, y) -> None  Same as the Rect.inflate() method, but operates in place.

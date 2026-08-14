@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__ge__
+
+numpy.ndarray.__ge__ method   ndarray.__ge__(value, /)
+ 
+Return self>=value.

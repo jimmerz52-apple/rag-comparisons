@@ -1,0 +1,6 @@
+# python.library.typing#typing.NewType
+
+typing.NewType(name, tp)  
+A helper function to indicate a distinct type to a typechecker, see NewType. At runtime it returns a function that returns its argument. Usage: UserId = NewType('UserId', int)
+first_user = UserId(1)
+  New in version 3.5.2.

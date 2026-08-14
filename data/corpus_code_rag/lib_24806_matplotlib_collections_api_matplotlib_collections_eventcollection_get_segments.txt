@@ -1,0 +1,8 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_segments
+
+get_segments()[source]
+ 
+ Returns 
+ list
+
+List of segments in the LineCollection. Each list item contains an array of vertices.

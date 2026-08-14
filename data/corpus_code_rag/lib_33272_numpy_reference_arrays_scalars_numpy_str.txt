@@ -1,0 +1,12 @@
+# numpy.reference.arrays.scalars#numpy.str_
+
+class numpy.str_[source]
+ 
+A unicode string. When used in arrays, this type strips trailing null codepoints. Unlike the builtin str, this supports the Buffer Protocol, exposing its contents as UCS4: >>> m = memoryview(np.str_("abc"))
+>>> m.format
+'3w'
+>>> m.tobytes()
+b'a\x00\x00\x00b\x00\x00\x00c\x00\x00\x00'
+  Character code 
+'U'  Alias 
+numpy.unicode_

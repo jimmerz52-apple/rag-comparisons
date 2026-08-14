@@ -1,0 +1,6 @@
+# torch.data#torch.utils.data.TensorDataset
+
+class torch.utils.data.TensorDataset(*tensors) [source]
+ 
+Dataset wrapping tensors. Each sample will be retrieved by indexing tensors along the first dimension.  Parameters 
+*tensors (Tensor) – tensors that have the same size of the first dimension.

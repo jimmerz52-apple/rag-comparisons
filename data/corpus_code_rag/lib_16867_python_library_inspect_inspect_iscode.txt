@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.iscode
+
+inspect.iscode(object)  
+Return True if the object is a code.

@@ -1,0 +1,18 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.toolmanager_connect
+
+toolmanager_connect(s, func)[source]
+ 
+Connect event with string s to func.  Parameters 
+ 
+sstr
+
+
+The name of the event. The following events are recognized:  'tool_message_event' 'tool_removed_event' 'tool_added_event'  For every tool added a new event is created  'tool_trigger_TOOLNAME', where TOOLNAME is the id of the tool.   
+funccallable
+
+
+Callback function for the toolmanager event with signature: def func(event: ToolEvent) -> Any
+    Returns 
+ cid
+
+The callback id for the connection. This can be used in toolmanager_disconnect.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.exp
+
+tf.experimental.numpy.exp TensorFlow variant of NumPy's exp. 
+tf.experimental.numpy.exp(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.exp.

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.Enclosure
+
+class Enclosure  
+Represents an RSS enclosure

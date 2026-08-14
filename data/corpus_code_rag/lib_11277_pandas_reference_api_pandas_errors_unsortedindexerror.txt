@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.unsortedindexerror
+
+pandas.errors.UnsortedIndexError   exceptionpandas.errors.UnsortedIndexError[source]
+ 
+Error raised when attempting to get a slice of a MultiIndex, and the index has not been lexsorted. Subclass of KeyError.

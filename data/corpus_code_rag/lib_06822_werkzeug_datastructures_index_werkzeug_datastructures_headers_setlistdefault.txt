@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.setlistdefault
+
+setlistdefault(key, default)  
+Return the list of values for the key if it is in the headers, otherwise set the header to the list of values given by default and return that. Unlike MultiDict.setlistdefault(), modifying the returned list will not affect the headers.  Parameters 
+ 
+key – The header key to get. 
+default – An iterable of values to set for the key if it is not in the headers.     Changelog New in version 1.0.

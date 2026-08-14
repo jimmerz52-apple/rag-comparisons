@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.scalable
+
+scalable 
+ Gets whether the font is scalable scalable -> bool  Read only. Returns True if the font contains outline glyphs. If so, the point size is not limited to available bitmap sizes.

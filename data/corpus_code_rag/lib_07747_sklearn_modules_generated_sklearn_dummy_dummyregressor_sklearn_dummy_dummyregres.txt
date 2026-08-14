@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.dummy.dummyregressor#sklearn.dummy.DummyRegressor.score
+
+score(X, y, sample_weight=None) [source]
+ 
+Returns the coefficient of determination R^2 of the prediction. The coefficient R^2 is defined as (1 - u/v), where u is the residual sum of squares ((y_true - y_pred) ** 2).sum() and v is the total sum of squares ((y_true - y_true.mean()) ** 2).sum(). The best possible score is 1.0 and it can be negative (because the model can be arbitrarily worse). A constant model that always predicts the expected value of y, disregarding the input features, would get a R^2 score of 0.0.  Parameters 
+ 
+XNone or array-like of shape (n_samples, n_features) 
+
+Test samples. Passing None as test samples gives the same result as passing real test samples, since DummyRegressor operates independently of the sampled observations.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True values for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+R^2 of self.predict(X) wrt. y.

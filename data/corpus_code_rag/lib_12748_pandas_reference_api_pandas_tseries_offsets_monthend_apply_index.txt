@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.monthend.apply_index
+
+pandas.tseries.offsets.MonthEnd.apply_index   MonthEnd.apply_index(other)

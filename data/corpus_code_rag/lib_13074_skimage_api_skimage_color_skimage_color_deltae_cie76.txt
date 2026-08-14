@@ -1,0 +1,20 @@
+# skimage.api.skimage.color#skimage.color.deltaE_cie76
+
+skimage.color.deltaE_cie76(lab1, lab2) [source]
+ 
+Euclidean distance between two points in Lab color space  Parameters 
+ 
+lab1array_like 
+
+reference color (Lab colorspace)  
+lab2array_like 
+
+comparison color (Lab colorspace)    Returns 
+ 
+dEarray_like 
+
+distance between colors lab1 and lab2     References  
+1  
+https://en.wikipedia.org/wiki/Color_difference  
+2  
+A. R. Robertson, “The CIE 1976 color-difference formulae,” Color Res. Appl. 2, 7-11 (1977).

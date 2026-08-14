@@ -1,0 +1,4 @@
+# python.library.base64#base64.urlsafe_b64decode
+
+base64.urlsafe_b64decode(s)  
+Decode bytes-like object or ASCII string s using the URL- and filesystem-safe alphabet, which substitutes - instead of + and _ instead of / in the standard Base64 alphabet, and return the decoded bytes.

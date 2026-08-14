@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.MonthMixin.get_month
+
+get_month()  
+Returns the month for which this view will display data, as a string. Tries the following sources, in order:  The value of the MonthMixin.month attribute. The value of the month argument captured in the URL pattern. The value of the month GET query argument.  Raises a 404 if no valid month specification can be found.

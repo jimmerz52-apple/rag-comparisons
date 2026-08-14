@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.ErrorLineNumber
+
+xmlparser.ErrorLineNumber  
+Line number at which an error occurred.

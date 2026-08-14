@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.minmaxscaler#sklearn.preprocessing.MinMaxScaler.transform
+
+transform(X) [source]
+ 
+Scale features of X according to feature_range.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input data that will be transformed.    Returns 
+ 
+Xtndarray of shape (n_samples, n_features) 
+
+Transformed data.

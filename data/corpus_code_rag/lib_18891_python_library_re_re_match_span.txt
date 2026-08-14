@@ -1,0 +1,4 @@
+# python.library.re#re.Match.span
+
+Match.span([group])  
+For a match m, return the 2-tuple (m.start(group), m.end(group)). Note that if group did not contribute to the match, this is (-1, -1). group defaults to zero, the entire match.

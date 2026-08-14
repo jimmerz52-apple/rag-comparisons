@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_mtime
+
+st_mtime  
+Time of most recent content modification expressed in seconds.

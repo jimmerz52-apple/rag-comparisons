@@ -1,0 +1,4 @@
+# django.topics.templates#django.template.loader.get_template
+
+get_template(template_name, using=None)  
+This function loads the template with the given name and returns a Template object. The exact type of the return value depends on the backend that loaded the template. Each backend has its own Template class. get_template() tries each template engine in order until one succeeds. If the template cannot be found, it raises TemplateDoesNotExist. If the template is found but contains invalid syntax, it raises TemplateSyntaxError. How templates are searched and loaded depends on each engine’s backend and configuration. If you want to restrict the search to a particular template engine, pass the engine’s NAME in the using argument.

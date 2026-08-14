@@ -1,0 +1,4 @@
+# python.library.email.encoders#email.encoders.encode_quopri
+
+email.encoders.encode_quopri(msg)  
+Encodes the payload into quoted-printable form and sets the Content-Transfer-Encoding header to quoted-printable 1. This is a good encoding to use when most of your payload is normal printable data, but contains a few unprintable characters.

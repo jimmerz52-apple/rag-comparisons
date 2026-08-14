@@ -1,0 +1,15 @@
+# django.ref.logging#django.utils.log.RequireDebugFalse
+
+class RequireDebugFalse  
+This filter will only pass on records when settings.DEBUG is False. This filter is used as follows in the default LOGGING configuration to ensure that the AdminEmailHandler only sends error emails to admins when DEBUG is False: 'filters': {
+    'require_debug_false': {
+        '()': 'django.utils.log.RequireDebugFalse',
+    },
+},
+'handlers': {
+    'mail_admins': {
+        'level': 'ERROR',
+        'filters': ['require_debug_false'],
+        'class': 'django.utils.log.AdminEmailHandler',
+    },
+},

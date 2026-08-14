@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.setDTDHandler
+
+XMLReader.setDTDHandler(handler)  
+Set the current DTDHandler. If no DTDHandler is set, DTD events will be discarded.

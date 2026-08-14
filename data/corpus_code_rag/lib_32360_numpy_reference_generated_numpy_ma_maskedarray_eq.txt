@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__eq__
+
+numpy.ma.MaskedArray.__eq__ method   ma.MaskedArray.__eq__(other)[source]
+ 
+Check whether other equals self elementwise. When either of the elements is masked, the result is masked as well, but the underlying boolean data are still set, with self and other considered equal if both are masked, and unequal otherwise. For structured arrays, all fields are combined, with masked values ignored. The result is masked if all fields were masked, with self and other considered equal only if both were fully masked.

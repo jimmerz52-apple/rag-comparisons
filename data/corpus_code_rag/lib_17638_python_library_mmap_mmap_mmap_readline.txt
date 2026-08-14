@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.readline
+
+readline()  
+Returns a single line, starting at the current file position and up to the next newline. The file position is updated to point after the bytes that were returned.

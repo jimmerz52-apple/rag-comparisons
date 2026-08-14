@@ -1,0 +1,9 @@
+# django.ref.contrib.redirects#django.contrib.redirects.middleware.RedirectFallbackMiddleware
+
+class middleware.RedirectFallbackMiddleware  
+You can change the HttpResponse classes used by the middleware by creating a subclass of RedirectFallbackMiddleware and overriding response_gone_class and/or response_redirect_class.  
+response_gone_class  
+The HttpResponse class used when a Redirect is not found for the requested path or has a blank new_path value. Defaults to HttpResponseGone. 
+  
+response_redirect_class  
+The HttpResponse class that handles the redirect. Defaults to HttpResponsePermanentRedirect.

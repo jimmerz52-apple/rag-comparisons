@@ -1,0 +1,4 @@
+# python.library.csv#csv.Dialect.delimiter
+
+Dialect.delimiter  
+A one-character string used to separate fields. It defaults to ','.

@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.constantkernel#sklearn.gaussian_process.kernels.ConstantKernel.n_dims
+
+property n_dims  
+Returns the number of non-fixed hyperparameters of the kernel.

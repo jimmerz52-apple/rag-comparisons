@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.error_proto
+
+exception poplib.error_proto  
+Exception raised on any errors from this module (errors from socket module are not caught). The reason for the exception is passed to the constructor as a string.

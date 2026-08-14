@@ -1,0 +1,4 @@
+# python.library.argparse#argparse.ArgumentParser.format_usage
+
+ArgumentParser.format_usage()  
+Return a string containing a brief description of how the ArgumentParser should be invoked on the command line.

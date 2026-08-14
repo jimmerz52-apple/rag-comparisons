@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_snap
+
+set_snap(snap)[source]
+ 
+Set the snap setting which may be:  True: snap vertices to the nearest pixel center False: leave vertices as-is None: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.take
+
+numpy.record.take method   record.take()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.take.

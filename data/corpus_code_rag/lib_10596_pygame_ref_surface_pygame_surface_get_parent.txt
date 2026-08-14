@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_parent
+
+get_parent() 
+ find the parent of a subsurface get_parent() -> Surface  Returns the parent Surface of a subsurface. If this is not a subsurface then None will be returned.

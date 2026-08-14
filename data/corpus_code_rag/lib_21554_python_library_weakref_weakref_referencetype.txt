@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.ReferenceType
+
+weakref.ReferenceType  
+The type object for weak references objects.

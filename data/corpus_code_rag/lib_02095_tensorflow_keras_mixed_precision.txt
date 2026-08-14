@@ -1,0 +1,3 @@
+# tensorflow.keras.mixed_precision
+
+Module: tf.keras.mixed_precision Keras mixed precision API. See the mixed precision guide to learn how to use the API. Modules experimental module: Public API for tf.keras.mixed_precision.experimental namespace. Classes class LossScaleOptimizer: An optimizer that applies loss scaling to prevent numeric underflow. class Policy: A dtype policy for a Keras layer. Functions global_policy(...): Returns the global dtype policy. set_global_policy(...): Sets the global dtype policy.

@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes._CData._objects
+
+_objects  
+This member is either None or a dictionary containing Python objects that need to be kept alive so that the memory block contents is kept valid. This object is only exposed for debugging; never modify the contents of this dictionary.

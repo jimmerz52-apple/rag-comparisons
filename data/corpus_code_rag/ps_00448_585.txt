@@ -1,0 +1,8 @@
+# 585
+Task: 585
+
+# Write a function to find the n - expensive price items from a given dataset using heap queue algorithm.
+import heapq
+def expensive_items(items,n):
+  expensive_items = heapq.nlargest(n, items, key=lambda s: s['price'])
+  return expensive_items

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.EndNamespaceDeclHandler
+
+xmlparser.EndNamespaceDeclHandler(prefix)  
+Called when the closing tag is reached for an element that contained a namespace declaration. This is called once for each namespace declaration on the element in the reverse of the order for which the StartNamespaceDeclHandler was called to indicate the start of each namespace declaration’s scope. Calls to this handler are made after the corresponding EndElementHandler for the end of the element.

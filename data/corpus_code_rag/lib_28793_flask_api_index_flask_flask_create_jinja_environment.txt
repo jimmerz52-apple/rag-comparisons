@@ -1,0 +1,5 @@
+# flask.api.index#flask.Flask.create_jinja_environment
+
+create_jinja_environment()  
+Create the Jinja environment based on jinja_options and the various Jinja-related methods of the app. Changing jinja_options after this will have no effect. Also adds Flask-related globals and filters to the environment.  Changelog Changed in version 0.11: Environment.auto_reload set in accordance with TEMPLATES_AUTO_RELOAD configuration option.   New in version 0.5.   Return type 
+flask.templating.Environment

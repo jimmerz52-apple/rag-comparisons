@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.AsyncResult.successful
+
+successful()  
+Return whether the call completed without raising an exception. Will raise ValueError if the result is not ready.  Changed in version 3.7: If the result is not ready, ValueError is raised instead of AssertionError.

@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.rotate_rad
+
+rotate_rad() 
+ rotates a vector by a given angle in radians. rotate_rad(angle) -> Vector2  Returns a vector which has the same length as self but is rotated counterclockwise by the given angle in radians.  New in pygame 2.0.0.

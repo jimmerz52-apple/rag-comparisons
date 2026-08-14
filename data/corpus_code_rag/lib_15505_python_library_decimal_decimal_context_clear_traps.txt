@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.clear_traps
+
+clear_traps()  
+Resets all of the traps to 0.  New in version 3.3.

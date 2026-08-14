@@ -1,0 +1,4 @@
+# python.library.sysconfig#sysconfig.get_config_h_filename
+
+sysconfig.get_config_h_filename()  
+Return the path of pyconfig.h.

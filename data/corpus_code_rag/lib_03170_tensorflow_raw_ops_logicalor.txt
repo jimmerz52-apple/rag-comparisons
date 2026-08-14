@@ -1,0 +1,21 @@
+# tensorflow.raw_ops.logicalor
+
+tf.raw_ops.LogicalOr Returns the truth value of x OR y element-wise.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.LogicalOr  
+tf.raw_ops.LogicalOr(
+    x, y, name=None
+)
+ 
+Note: math.logical_or supports broadcasting. More about broadcasting here
+
+ 
+
+
+ Args
+  x   A Tensor of type bool.  
+  y   A Tensor of type bool.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type bool.

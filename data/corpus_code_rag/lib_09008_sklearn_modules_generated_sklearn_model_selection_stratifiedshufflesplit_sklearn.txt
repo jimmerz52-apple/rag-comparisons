@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.model_selection.stratifiedshufflesplit#sklearn.model_selection.StratifiedShuffleSplit.get_n_splits
+
+get_n_splits(X=None, y=None, groups=None) [source]
+ 
+Returns the number of splitting iterations in the cross-validator  Parameters 
+ 
+Xobject 
+
+Always ignored, exists for compatibility.  
+yobject 
+
+Always ignored, exists for compatibility.  
+groupsobject 
+
+Always ignored, exists for compatibility.    Returns 
+ 
+n_splitsint 
+
+Returns the number of splitting iterations in the cross-validator.

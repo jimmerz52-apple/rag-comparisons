@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.arccosh_
+
+arccosh_()  
+acosh_() -> Tensor In-place version of arccosh()

@@ -1,0 +1,5 @@
+# python.library.operator#operator.__itruediv__
+
+operator.itruediv(a, b)  
+operator.__itruediv__(a, b)  
+a = itruediv(a, b) is equivalent to a /= b.

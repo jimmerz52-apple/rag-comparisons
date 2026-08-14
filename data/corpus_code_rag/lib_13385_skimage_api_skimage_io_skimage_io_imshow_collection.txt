@@ -1,0 +1,16 @@
+# skimage.api.skimage.io#skimage.io.imshow_collection
+
+skimage.io.imshow_collection(ic, plugin=None, **plugin_args) [source]
+ 
+Display a collection of images.  Parameters 
+ 
+icImageCollection 
+
+Collection to display.  
+pluginstr 
+
+Name of plugin to use. By default, the different plugins are tried until a suitable candidate is found.    Other Parameters 
+ 
+plugin_argskeywords 
+
+Passed to the given plugin.

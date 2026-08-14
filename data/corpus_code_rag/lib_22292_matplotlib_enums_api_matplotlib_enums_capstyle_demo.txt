@@ -1,0 +1,5 @@
+# matplotlib._enums_api#matplotlib._enums.CapStyle.demo
+
+staticdemo()[source]
+ 
+Demonstrate how each CapStyle looks for a thick line segment.

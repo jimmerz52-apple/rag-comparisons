@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.parameterdict#torch.nn.ParameterDict.clear
+
+clear() [source]
+ 
+Remove all items from the ParameterDict.

@@ -1,0 +1,3 @@
+# django.ref.files.uploads#django.core.files.uploadhandler.TemporaryFileUploadHandler
+
+class TemporaryFileUploadHandler

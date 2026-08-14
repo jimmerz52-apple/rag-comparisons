@@ -1,0 +1,4 @@
+# python.library.curses#curses.set_escdelay
+
+curses.set_escdelay(ms)  
+Sets the number of milliseconds to wait after reading an escape character, to distinguish between an individual escape character entered on the keyboard from escape sequences sent by cursor and function keys.  New in version 3.9.

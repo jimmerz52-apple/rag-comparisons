@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Page.previous_page_number
+
+Page.previous_page_number()  
+Returns the previous page number. Raises InvalidPage if previous page doesn’t exist.

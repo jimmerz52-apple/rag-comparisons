@@ -1,0 +1,6 @@
+# torch.distributions#torch.distributions.distribution.Distribution.log_prob
+
+log_prob(value) [source]
+ 
+Returns the log of the probability density/mass function evaluated at value.  Parameters 
+value (Tensor) –

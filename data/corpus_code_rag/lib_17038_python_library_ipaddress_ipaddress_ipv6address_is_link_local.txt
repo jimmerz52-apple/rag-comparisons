@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv6Address.is_link_local
+
+is_link_local  
+ New in version 3.4: is_global

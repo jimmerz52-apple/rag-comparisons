@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.LineTool.hit_test
+
+hit_test(event) [source]

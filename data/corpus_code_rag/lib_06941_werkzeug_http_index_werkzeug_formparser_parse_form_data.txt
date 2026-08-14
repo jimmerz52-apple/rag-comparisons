@@ -1,0 +1,15 @@
+# werkzeug.http.index#werkzeug.formparser.parse_form_data
+
+werkzeug.formparser.parse_form_data(environ, stream_factory=None, charset='utf-8', errors='replace', max_form_memory_size=None, max_content_length=None, cls=None, silent=True)  
+Parse the form data in the environ and return it as tuple in the form (stream, form, files). You should only call this method if the transport method is POST, PUT, or PATCH. If the mimetype of the data transmitted is multipart/form-data the files multidict will be filled with FileStorage objects. If the mimetype is unknown the input stream is wrapped and returned as first argument, else the stream is empty. This is a shortcut for the common usage of FormDataParser. Have a look at Dealing with Request Data for more details.  Changelog New in version 0.5.1: The optional silent flag was added.   New in version 0.5: The max_form_memory_size, max_content_length and cls parameters were added.   Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environment to be used for parsing. 
+stream_factory (Optional[TStreamFactory]) – An optional callable that returns a new read and writeable file descriptor. This callable works the same as Response._get_file_stream(). 
+charset (str) – The character set for URL and url encoded form data. 
+errors (str) – The encoding error behavior. 
+max_form_memory_size (Optional[int]) – the maximum number of bytes to be accepted for in-memory stored form data. If the data exceeds the value specified an RequestEntityTooLarge exception is raised. 
+max_content_length (Optional[int]) – If this is provided and the transmitted data is longer than this value an RequestEntityTooLarge exception is raised. 
+cls (Optional[Type[werkzeug.datastructures.MultiDict]]) – an optional dict class to use. If this is not specified or None the default MultiDict is used. 
+silent (bool) – If set to False parsing errors will not be caught.   Returns 
+A tuple in the form (stream, form, files).  Return type 
+t_parse_result

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.yearend.copy
+
+pandas.tseries.offsets.YearEnd.copy   YearEnd.copy()

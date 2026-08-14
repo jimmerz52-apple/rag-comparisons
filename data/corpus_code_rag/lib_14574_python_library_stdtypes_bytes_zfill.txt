@@ -1,0 +1,9 @@
+# python.library.stdtypes#bytes.zfill
+
+bytes.zfill(width)  
+bytearray.zfill(width)  
+Return a copy of the sequence left filled with ASCII b'0' digits to make a sequence of length width. A leading sign prefix (b'+'/ b'-') is handled by inserting the padding after the sign character rather than before. For bytes objects, the original sequence is returned if width is less than or equal to len(seq). For example: >>> b"42".zfill(5)
+b'00042'
+>>> b"-42".zfill(5)
+b'-0042'
+  Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made.

@@ -1,0 +1,19 @@
+# matplotlib.dates_api#matplotlib.dates.num2date
+
+matplotlib.dates.num2date(x, tz=None)[source]
+ 
+Convert Matplotlib dates to datetime objects.  Parameters 
+ 
+xfloat or sequence of floats
+
+
+Number of days (fraction part represents hours, minutes, seconds) since the epoch. See get_epoch for the epoch, which can be changed by rcParams["date.epoch"] (default: '1970-01-01T00:00:00') or set_epoch.  
+tzstr, default: rcParams["timezone"] (default: 'UTC')
+
+
+Timezone of x.    Returns 
+ 
+datetime or sequence of datetime
+
+
+Dates are returned in timezone tz. If x is a sequence, a sequence of datetime objects will be returned.     Notes The addition of one here is a historical artifact. Also, note that the Gregorian calendar is assumed; this is not universal practice. For details, see the module docstring.

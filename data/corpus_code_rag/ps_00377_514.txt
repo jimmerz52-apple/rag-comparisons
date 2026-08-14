@@ -1,0 +1,7 @@
+# 514
+Task: 514
+
+# Write a function to find the summation of tuple elements in the given tuple list.
+def sum_elements(test_tup):
+  res = sum(list(test_tup))
+  return (res)

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.masktype
+
+numpy.ma.MaskType   numpy.ma.MaskType[source]
+ 
+alias of numpy.bool_

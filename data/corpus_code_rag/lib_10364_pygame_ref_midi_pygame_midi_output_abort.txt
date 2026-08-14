@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.Output.abort
+
+abort() 
+ terminates outgoing messages immediately abort() -> None  The caller should immediately close the output port; this call may result in transmission of a partial midi message. There is no abort for Midi input because the user can simply ignore messages in the buffer and close an input device at any time.

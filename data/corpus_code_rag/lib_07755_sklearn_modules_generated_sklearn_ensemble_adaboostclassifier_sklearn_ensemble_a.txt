@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostclassifier#sklearn.ensemble.AdaBoostClassifier.predict
+
+predict(X) [source]
+ 
+Predict classes for X. The predicted class of an input sample is computed as the weighted mean prediction of the classifiers in the ensemble.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrix can be CSC, CSR, COO, DOK, or LIL. COO, DOK, and LIL are converted to CSR.    Returns 
+ 
+yndarray of shape (n_samples,) 
+
+The predicted classes.

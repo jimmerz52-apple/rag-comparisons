@@ -1,0 +1,4 @@
+# python.library.contextvars#contextvars.Context.items
+
+items()  
+Return a list of 2-tuples containing all variables and their values in the context object.

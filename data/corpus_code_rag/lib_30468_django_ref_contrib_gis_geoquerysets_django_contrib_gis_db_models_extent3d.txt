@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.geoquerysets#django.contrib.gis.db.models.Extent3D
+
+class Extent3D(geo_field)

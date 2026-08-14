@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.user_exception
+
+user_exception(frame, exc_info)  
+This method is called from dispatch_exception() when stop_here() yields True.

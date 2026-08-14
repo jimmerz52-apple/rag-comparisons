@@ -1,0 +1,39 @@
+# skimage.api.skimage.feature#skimage.feature.draw_multiblock_lbp
+
+skimage.feature.draw_multiblock_lbp(image, r, c, width, height, lbp_code=0, color_greater_block=(1, 1, 1), color_less_block=(0, 0.69, 0.96), alpha=0.5) [source]
+ 
+Multi-block local binary pattern visualization. Blocks with higher sums are colored with alpha-blended white rectangles, whereas blocks with lower sums are colored alpha-blended cyan. Colors and the alpha parameter can be changed.  Parameters 
+ 
+imagendarray of float or uint 
+
+Image on which to visualize the pattern.  
+rint 
+
+Row-coordinate of top left corner of a rectangle containing feature.  
+cint 
+
+Column-coordinate of top left corner of a rectangle containing feature.  
+widthint 
+
+Width of one of 9 equal rectangles that will be used to compute a feature.  
+heightint 
+
+Height of one of 9 equal rectangles that will be used to compute a feature.  
+lbp_codeint 
+
+The descriptor of feature to visualize. If not provided, the descriptor with 0 value will be used.  
+color_greater_blocktuple of 3 floats 
+
+Floats specifying the color for the block that has greater intensity value. They should be in the range [0, 1]. Corresponding values define (R, G, B) values. Default value is white (1, 1, 1).  
+color_greater_blocktuple of 3 floats 
+
+Floats specifying the color for the block that has greater intensity value. They should be in the range [0, 1]. Corresponding values define (R, G, B) values. Default value is cyan (0, 0.69, 0.96).  
+alphafloat 
+
+Value in the range [0, 1] that specifies opacity of visualization. 1 - fully transparent, 0 - opaque.    Returns 
+ 
+outputndarray of float 
+
+Image with MB-LBP visualization.     References  
+1  
+Face Detection Based on Multi-Block LBP Representation. Lun Zhang, Rufeng Chu, Shiming Xiang, Shengcai Liao, Stan Z. Li http://www.cbsr.ia.ac.cn/users/scliao/papers/Zhang-ICB07-MBLBP.pdf

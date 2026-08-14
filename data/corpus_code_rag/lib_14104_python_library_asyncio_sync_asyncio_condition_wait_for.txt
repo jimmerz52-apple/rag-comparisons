@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Condition.wait_for
+
+coroutine wait_for(predicate)  
+Wait until a predicate becomes true. The predicate must be a callable which result will be interpreted as a boolean value. The final value is the return value.

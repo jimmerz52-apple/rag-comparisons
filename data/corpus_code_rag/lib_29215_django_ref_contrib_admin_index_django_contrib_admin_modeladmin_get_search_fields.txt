@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_search_fields
+
+ModelAdmin.get_search_fields(request)  
+The get_search_fields method is given the HttpRequest and is expected to return the same kind of sequence type as for the search_fields attribute.

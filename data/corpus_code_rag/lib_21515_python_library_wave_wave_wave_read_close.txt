@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.close
+
+Wave_read.close()  
+Close the stream if it was opened by wave, and make the instance unusable. This is called automatically on object collection.

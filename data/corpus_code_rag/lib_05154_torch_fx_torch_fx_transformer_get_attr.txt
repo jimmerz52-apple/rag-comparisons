@@ -1,0 +1,9 @@
+# torch.fx#torch.fx.Transformer.get_attr
+
+get_attr(target, args, kwargs) [source]
+ 
+Execute a get_attr node. In Transformer, this is overridden to insert a new get_attr node into the output graph.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation

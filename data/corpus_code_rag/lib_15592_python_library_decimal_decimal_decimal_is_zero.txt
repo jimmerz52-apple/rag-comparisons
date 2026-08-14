@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.is_zero
+
+is_zero()  
+Return True if the argument is a (positive or negative) zero and False otherwise.

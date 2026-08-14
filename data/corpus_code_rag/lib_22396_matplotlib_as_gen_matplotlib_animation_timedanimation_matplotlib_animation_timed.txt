@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.timedanimation#matplotlib.animation.TimedAnimation.__init__
+
+__init__(fig, interval=200, repeat_delay=0, repeat=True, event_source=None, *args, **kwargs)[source]

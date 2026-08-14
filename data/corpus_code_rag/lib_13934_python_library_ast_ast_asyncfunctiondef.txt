@@ -1,0 +1,4 @@
+# python.library.ast#ast.AsyncFunctionDef
+
+class ast.AsyncFunctionDef(name, args, body, decorator_list, returns, type_comment)  
+An async def function definition. Has the same fields as FunctionDef.

@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.LatexManager.get_width_height_descent
+
+get_width_height_descent(text, prop)[source]
+ 
+Get the width, total height, and descent (in TeX points) for a text typeset by the current LaTeX environment.

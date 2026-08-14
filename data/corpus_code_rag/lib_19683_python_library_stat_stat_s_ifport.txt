@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IFPORT
+
+stat.S_IFPORT  
+Event port.  New in version 3.4.

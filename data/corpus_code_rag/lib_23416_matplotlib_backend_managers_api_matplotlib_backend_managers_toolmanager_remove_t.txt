@@ -1,0 +1,10 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.remove_tool
+
+remove_tool(name)[source]
+ 
+Remove tool named name.  Parameters 
+ 
+namestr
+
+
+Name of the tool.

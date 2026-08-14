@@ -1,0 +1,11 @@
+# pandas.reference.api.pandas.index.is_monotonic_increasing
+
+pandas.Index.is_monotonic_increasing   propertyIndex.is_monotonic_increasing
+ 
+Return if the index is monotonic increasing (only equal or increasing) values. Examples 
+>>> Index([1, 2, 3]).is_monotonic_increasing
+True
+>>> Index([1, 2, 2]).is_monotonic_increasing
+True
+>>> Index([1, 3, 2]).is_monotonic_increasing
+False

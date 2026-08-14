@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.PROTECT
+
+PROTECT  
+Prevent deletion of the referenced object by raising ProtectedError, a subclass of django.db.IntegrityError.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_figure
+
+matplotlib.artist.Artist.get_figure   Artist.get_figure()[source]
+ 
+Return the Figure instance the artist belongs to.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.fd_count
+
+test.support.fd_count()  
+Count the number of open file descriptors.

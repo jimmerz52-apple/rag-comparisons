@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.DecimalField
+
+class DecimalField(max_digits=None, decimal_places=None, **options)

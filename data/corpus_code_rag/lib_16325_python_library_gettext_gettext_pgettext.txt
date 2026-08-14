@@ -1,0 +1,3 @@
+# python.library.gettext#gettext.pgettext
+
+gettext.pgettext(context, message)

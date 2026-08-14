@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.set_alpha
+
+set_alpha(alpha)[source]
+ 
+Set the alpha value used for blending - not supported on all backends.  Parameters 
+ 
+alphaarray-like or scalar or None
+
+
+All values must be within the 0-1 range, inclusive. Masked values and nans are not supported.

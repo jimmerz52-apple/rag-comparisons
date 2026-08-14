@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.StreamHandler.terminator
+
+terminator  
+String used as the terminator when writing a formatted record to a stream. Default value is '\n'. If you don’t want a newline termination, you can set the handler instance’s terminator attribute to the empty string. In earlier versions, the terminator was hardcoded as '\n'.  New in version 3.2.

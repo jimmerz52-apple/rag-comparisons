@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.month_name
+
+calendar.month_name  
+An array that represents the months of the year in the current locale. This follows normal convention of January being month number 1, so it has a length of 13 and month_name[0] is the empty string.

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.microsecond
+
+datetime.microsecond  
+In range(1000000).

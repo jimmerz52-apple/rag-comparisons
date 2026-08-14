@@ -1,0 +1,28 @@
+# skimage.api.skimage.viewer#skimage.viewer.CollectionViewer
+
+class skimage.viewer.CollectionViewer(image_collection, update_on='move', **kwargs) [source]
+ 
+Bases: skimage.viewer.viewers.core.ImageViewer Viewer for displaying image collections. Select the displayed frame of the image collection using the slider or with the following keyboard shortcuts:  left/right arrows
+
+Previous/next image in collection.  number keys, 0–9
+
+0% to 90% of collection. For example, “5” goes to the image in the middle (i.e. 50%) of the collection.  home/end keys
+
+First/last image in collection.    Parameters 
+ 
+image_collectionlist of images 
+
+List of images to be displayed.  
+update_on{‘move’ | ‘release’} 
+
+Control whether image is updated on slide or release of the image slider. Using ‘on_release’ will give smoother behavior when displaying large images or when writing a plugin/subclass that requires heavy computation.      
+__init__(image_collection, update_on='move', **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+keyPressEvent(event) [source]
+
+  
+update_index(name, index) [source]
+ 
+Select image on display using index into image collection.

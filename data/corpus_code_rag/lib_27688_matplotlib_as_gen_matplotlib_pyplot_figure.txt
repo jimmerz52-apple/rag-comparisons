@@ -1,0 +1,370 @@
+# matplotlib._as_gen.matplotlib.pyplot.figure
+
+matplotlib.pyplot.figure   matplotlib.pyplot.figure(num=None, figsize=None, dpi=None, facecolor=None, edgecolor=None, frameon=True, FigureClass=<class 'matplotlib.figure.Figure'>, clear=False, **kwargs)[source]
+ 
+Create a new figure, or activate an existing figure.  Parameters 
+ 
+numint or str or Figure, optional
+
+
+A unique identifier for the figure. If a figure with that identifier already exists, this figure is made active and returned. An integer refers to the Figure.number attribute, a string refers to the figure label. If there is no figure with the identifier or num is not given, a new figure is created, made active and returned. If num is an int, it will be used for the Figure.number attribute, otherwise, an auto-generated integer value is used (starting at 1 and incremented for each new figure). If num is a string, the figure label and the window title is set to this value.  
+figsize(float, float), default: rcParams["figure.figsize"] (default: [6.4, 4.8])
+
+
+Width, height in inches.  
+dpifloat, default: rcParams["figure.dpi"] (default: 100.0)
+
+
+The resolution of the figure in dots-per-inch.  
+facecolorcolor, default: rcParams["figure.facecolor"] (default: 'white')
+
+
+The background color.  
+edgecolorcolor, default: rcParams["figure.edgecolor"] (default: 'white')
+
+
+The border color.  
+frameonbool, default: True
+
+
+If False, suppress drawing the figure frame.  
+FigureClasssubclass of Figure
+
+
+Optionally use a custom Figure instance.  
+clearbool, default: False
+
+
+If True and the figure already exists, then it is cleared.  
+tight_layoutbool or dict, default: rcParams["figure.autolayout"] (default: False)
+
+
+If False use subplotpars. If True adjust subplot parameters using tight_layout with default padding. When providing a dict containing the keys pad, w_pad, h_pad, and rect, the default tight_layout paddings will be overridden.  
+constrained_layoutbool, default: rcParams["figure.constrained_layout.use"] (default: False)
+
+
+If True use constrained layout to adjust positioning of plot elements. Like tight_layout, but designed to be more flexible. See Constrained Layout Guide for examples. (Note: does not work with add_subplot or subplot2grid.)  **kwargs : optional
+
+See Figure for other possible arguments.    Returns 
+ Figure
+
+The Figure instance returned will also be passed to new_figure_manager in the backends, which allows to hook custom Figure classes into the pyplot interface. Additional kwargs will be passed to the Figure init function.     Notes If you are creating many figures, make sure you explicitly call pyplot.close on the figures you are not using, because this will enable pyplot to properly clean up the memory. rcParams defines the default values, which can be modified in the matplotlibrc file. 
+  Examples using matplotlib.pyplot.figure
+ 
+   Curve with error band   
+
+   Errorbar limit selection   
+
+   EventCollection Demo   
+
+   Filled polygon   
+
+   Linestyles   
+
+   Markevery Demo   
+
+   prop_cycle property markevery in rcParams   
+
+   Psd Demo   
+
+   Scatter plot with histograms   
+
+   Barcode   
+
+   Figimage Demo   
+
+   Layer Images   
+
+   Streamplot   
+
+   Aligning Labels   
+
+   Axes Zoom Effect   
+
+   Custom Figure subclasses   
+
+   Resizing axes with constrained layout   
+
+   Resizing axes with tight layout   
+
+   Geographic Projections   
+
+   Using Gridspec to make multi-column/row subplot layouts   
+
+   Nested Gridspecs   
+
+   Managing multiple figures in pyplot   
+
+   Figure subfigures   
+
+   Creating multiple subplots using plt.subplots   
+
+   Polar Legend   
+
+   Scatter plot on polar axis   
+
+   Arrow Demo   
+
+   Auto-wrapping text   
+
+   Text Rotation Mode   
+
+   The difference between \dfrac and \frac   
+
+   Annotation arrow style reference   
+
+   Convert texts to images   
+
+   Mathtext Examples   
+
+   Rainbow text   
+
+   STIX Fonts   
+
+   Unicode minus   
+
+   Usetex Baseline Test   
+
+   Usetex Fonteffects   
+
+   Annotation Polar   
+
+   Fig Axes Customize Simple   
+
+   Simple axes labels   
+
+   Adding lines to figures   
+
+   Pyplot Two Subplots   
+
+   Text Commands   
+
+   Text Layout   
+
+   Drawing fancy boxes   
+
+   Hatch demo   
+
+   Axes Divider   
+
+   Demo Axes Grid   
+
+   Axes Grid2   
+
+   Showing RGB channels using RGBAxes   
+
+   Per-row or per-column colorbars   
+
+   Axes with a fixed physical size   
+
+   Setting a fixed aspect on ImageGrid cells   
+
+   Inset Locator Demo   
+
+   Make Room For Ylabel Using Axesgrid   
+
+   Parasite Simple2   
+
+   Simple Axes Divider 1   
+
+   Simple Axes Divider 3   
+
+   Simple ImageGrid   
+
+   Simple ImageGrid 2   
+
+   Axis Direction   
+
+   axis_direction demo   
+
+   Axis line styles   
+
+   Curvilinear grid demo   
+
+   Demo CurveLinear Grid2   
+
+   mpl_toolkits.axisartist.floating_axes features   
+
+   floating_axis demo   
+
+   Parasite Axes demo   
+
+   Ticklabel alignment   
+
+   Ticklabel direction   
+
+   Simple Axis Direction01   
+
+   Simple Axis Direction03   
+
+   Simple Axis Pad   
+
+   Custom spines with axisartist   
+
+   Simple Axisline   
+
+   Simple Axisline3   
+
+   Anatomy of a figure   
+
+   Firefox   
+
+   Shaded & power normalized rendering   
+
+   XKCD   
+
+   The double pendulum problem   
+
+   Frame grabbing   
+
+   Rain simulation   
+
+   Animated 3D random walk   
+
+   MATPLOTLIB UNCHAINED   
+
+   Close Event   
+
+   Interactive functions   
+
+   Hyperlinks   
+
+   Matplotlib logo   
+
+   Multipage PDF   
+
+   SVG Filter Line   
+
+   SVG Filter Pie   
+
+   transforms.offset_copy   
+
+   Zorder Demo   
+
+   Plot 2D data on 3D plot   
+
+   Demo of 3D bar charts   
+
+   Create 2D bar graphs in different planes   
+
+   3D box surface plot   
+
+   Demonstrates plotting contour (level) curves in 3D   
+
+   Demonstrates plotting contour (level) curves in 3D using the extend3d option   
+
+   Projecting contour profiles onto a graph   
+
+   Filled contours   
+
+   Projecting filled contour onto a graph   
+
+   3D errorbars   
+
+   Create 3D histogram of 2D data   
+
+   Parametric Curve   
+
+   Lorenz Attractor   
+
+   2D and 3D Axes in same Figure   
+
+   Automatic Text Offsetting   
+
+   Draw flat objects in 3D plot   
+
+   Generate polygons to fill under 3D line graph   
+
+   3D quiver plot   
+
+   Rotating a 3D plot   
+
+   3D scatterplot   
+
+   3D plots as subplots   
+
+   3D surface (solid color)   
+
+   3D surface (checkerboard)   
+
+   3D surface with polar coordinates   
+
+   Text annotations in 3D   
+
+   Triangular 3D contour plot   
+
+   Triangular 3D filled contour plot   
+
+   Triangular 3D surfaces   
+
+   More triangular 3D surfaces   
+
+   3D voxel / volumetric plot   
+
+   3D voxel plot of the numpy logo   
+
+   3D voxel / volumetric plot with rgb colors   
+
+   3D voxel / volumetric plot with cylindrical coordinates   
+
+   3D wireframe plot   
+
+   Rotating 3D wireframe plot   
+
+   MRI With EEG   
+
+   The Sankey class   
+
+   Long chain of connections using Sankey   
+
+   Rankine power cycle   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Spine Placement   
+
+   Ellipse With Units   
+
+   SVG Histogram   
+
+   Tool Manager   
+
+   subplot2grid demo   
+
+   GridSpec demo   
+
+   Nested GridSpecs   
+
+   Simple Legend01   
+
+   Menu   
+
+   Rectangle and ellipse selectors   
+
+   Basic Usage   
+
+   Pyplot tutorial   
+
+   Image tutorial   
+
+   Artist tutorial   
+
+   Constrained Layout Guide   
+
+   Tight Layout guide   
+
+   Arranging multiple Axes in a Figure   
+
+   origin and extent in imshow   
+
+   Path effects guide   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Complex and semantic figure composition   
+
+   Text in Matplotlib Plots   
+
+   Text properties and layout

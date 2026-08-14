@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.StreamHandler.emit
+
+emit(record)  
+If a formatter is specified, it is used to format the record. The record is then written to the stream followed by terminator. If exception information is present, it is formatted using traceback.print_exception() and appended to the stream.

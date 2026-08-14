@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.NetmaskValueError
+
+exception ipaddress.NetmaskValueError(ValueError)  
+Any value error related to the net mask.

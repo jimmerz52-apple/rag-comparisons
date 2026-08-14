@@ -1,0 +1,22 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.add_label_near
+
+add_label_near(x, y, inline=True, inline_spacing=5, transform=None)[source]
+ 
+Add a label near the point (x, y).  Parameters 
+ 
+x, yfloat
+
+
+The approximate location of the label.  
+inlinebool, default: True
+
+
+If True remove the segment of the contour beneath the label.  
+inline_spacingint, default: 5
+
+
+Space in pixels to leave on each side of label when placing inline. This spacing will be exact for labels at locations where the contour is straight, less so for labels on curved contours.  
+transformTransform or False, default: self.axes.transData
+
+
+A transform applied to (x, y) before labeling. The default causes (x, y) to be interpreted as data coordinates. False is a synonym for IdentityTransform; i.e. (x, y) should be interpreted as display coordinates.

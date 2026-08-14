@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Dialog.bitmap
+
+bitmap(name, x, y, width, height, text)  
+Add and return a Bitmap control.

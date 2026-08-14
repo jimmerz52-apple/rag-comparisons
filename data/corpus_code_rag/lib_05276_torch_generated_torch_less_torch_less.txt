@@ -1,0 +1,4 @@
+# torch.generated.torch.less#torch.less
+
+torch.less(input, other, *, out=None) → Tensor  
+Alias for torch.lt().

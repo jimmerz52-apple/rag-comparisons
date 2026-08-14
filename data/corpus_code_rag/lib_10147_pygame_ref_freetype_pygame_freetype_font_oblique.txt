@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.oblique
+
+oblique 
+ The state of the font's oblique style flag oblique -> bool  Gets or sets whether the font will be rendered as oblique. This default style value will be used for all text rendering and size calculations unless overridden specifically in a render or get_rect() call, via the style parameter. The oblique style is only supported for scalable (outline) fonts. An attempt to set this style on a bitmap font will raise an AttributeError. If the font object is inactive, as returned by Font.__new__(), setting this property raises a RuntimeError.

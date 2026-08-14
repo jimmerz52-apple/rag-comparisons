@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.clear_all_file_breaks
+
+clear_all_file_breaks(filename)  
+Delete all breakpoints in filename. If none were set, an error message is returned.

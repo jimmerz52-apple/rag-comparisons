@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.dirichlet.Dirichlet.support
+
+support = Simplex()

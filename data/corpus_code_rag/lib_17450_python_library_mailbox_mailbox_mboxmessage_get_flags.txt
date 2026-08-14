@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.mboxMessage.get_flags
+
+get_flags()  
+Return a string specifying the flags that are currently set. If the message complies with the conventional format, the result is the concatenation in the following order of zero or one occurrence of each of 'R', 'O', 'D', 'F', and 'A'.

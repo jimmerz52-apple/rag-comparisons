@@ -1,0 +1,4 @@
+# python.library.faulthandler#faulthandler.unregister
+
+faulthandler.unregister(signum)  
+Unregister a user signal: uninstall the handler of the signum signal installed by register(). Return True if the signal was registered, False otherwise. Not available on Windows.

@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_EXPAND_SZ
+
+winreg.REG_EXPAND_SZ  
+Null-terminated string containing references to environment variables (%PATH%).

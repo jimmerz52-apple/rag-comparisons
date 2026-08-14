@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.close
+
+oss_mixer_device.close()  
+This method closes the open mixer device file. Any further attempts to use the mixer after this file is closed will raise an OSError.

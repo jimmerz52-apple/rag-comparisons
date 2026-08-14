@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.pause
+
+pygame.mixer.music.pause() 
+ temporarily stop music playback pause() -> None  Temporarily stop playback of the music stream. It can be resumed with the pygame.mixer.music.unpause() function.

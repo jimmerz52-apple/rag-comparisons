@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedeltaindex.nanoseconds
+
+pandas.TimedeltaIndex.nanoseconds   propertyTimedeltaIndex.nanoseconds
+ 
+Number of nanoseconds (>= 0 and less than 1 microsecond) for each element.

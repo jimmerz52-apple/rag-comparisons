@@ -1,0 +1,4 @@
+# python.library.sys#sys.abiflags
+
+sys.abiflags  
+On POSIX systems where Python was built with the standard configure script, this contains the ABI flags as specified by PEP 3149.  Changed in version 3.8: Default flags became an empty string (m flag for pymalloc has been removed).   New in version 3.2.

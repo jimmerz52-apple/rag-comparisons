@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.SourceLoader.set_data
+
+set_data(path, data)  
+Optional abstract method which writes the specified bytes to a file path. Any intermediate directories which do not exist are to be created automatically. When writing to the path fails because the path is read-only (errno.EACCES/PermissionError), do not propagate the exception.  Changed in version 3.4: No longer raises NotImplementedError when called.

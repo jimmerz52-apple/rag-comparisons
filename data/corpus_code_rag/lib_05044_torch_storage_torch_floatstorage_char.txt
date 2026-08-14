@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.char
+
+char()  
+Casts this storage to char type

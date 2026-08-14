@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.fail
+
+fail(msg=None)  
+Signals a test failure unconditionally, with msg or None for the error message.

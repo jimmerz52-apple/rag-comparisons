@@ -1,0 +1,5 @@
+# python.library.pathlib#pathlib.Path.cwd
+
+classmethod Path.cwd()  
+Return a new path object representing the current directory (as returned by os.getcwd()): >>> Path.cwd()
+PosixPath('/home/antoine/pathlib')

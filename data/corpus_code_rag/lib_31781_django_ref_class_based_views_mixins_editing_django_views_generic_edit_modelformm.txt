@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ModelFormMixin.model
+
+model  
+A model class. Can be explicitly provided, otherwise will be determined by examining self.object or queryset.

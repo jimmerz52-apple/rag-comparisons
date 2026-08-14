@@ -1,0 +1,4 @@
+# python.library.email.encoders#email.encoders.encode_7or8bit
+
+email.encoders.encode_7or8bit(msg)  
+This doesn’t actually modify the message’s payload, but it does set the Content-Transfer-Encoding header to either 7bit or 8bit as appropriate, based on the payload data.

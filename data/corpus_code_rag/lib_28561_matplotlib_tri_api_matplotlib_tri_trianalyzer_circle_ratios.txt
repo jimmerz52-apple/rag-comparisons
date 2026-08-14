@@ -1,0 +1,13 @@
+# matplotlib.tri_api#matplotlib.tri.TriAnalyzer.circle_ratios
+
+circle_ratios(rescale=True)[source]
+ 
+Return a measure of the triangulation triangles flatness. The ratio of the incircle radius over the circumcircle radius is a widely used indicator of a triangle flatness. It is always <= 0.5 and == 0.5 only for equilateral triangles. Circle ratios below 0.01 denote very flat triangles. To avoid unduly low values due to a difference of scale between the 2 axis, the triangular mesh can first be rescaled to fit inside a unit square with scale_factors (Only if rescale is True, which is its default value).  Parameters 
+ 
+rescalebool, default: True
+
+
+If True, internally rescale (based on scale_factors), so that the (unmasked) triangles fit exactly inside a unit square mesh.    Returns 
+ masked array
+
+Ratio of the incircle radius over the circumcircle radius, for each 'rescaled' triangle of the encapsulated triangulation. Values corresponding to masked triangles are masked out.

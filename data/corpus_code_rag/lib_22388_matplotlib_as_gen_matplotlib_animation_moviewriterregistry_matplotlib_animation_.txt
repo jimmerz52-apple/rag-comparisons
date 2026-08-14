@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriterregistry#matplotlib.animation.MovieWriterRegistry.register
+
+register(name)[source]
+ 
+Decorator for registering a class under a name. Example use: @registry.register(name)
+class Foo:
+    pass

@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.Polygon
+
+class Polygon(*args, **kwargs)  
+Polygon objects may be instantiated by passing in parameters that represent the rings of the polygon. The parameters must either be LinearRing instances, or a sequence that may be used to construct a LinearRing: >>> ext_coords = ((0, 0), (0, 1), (1, 1), (1, 0), (0, 0))
+>>> int_coords = ((0.4, 0.4), (0.4, 0.6), (0.6, 0.6), (0.6, 0.4), (0.4, 0.4))
+>>> poly = Polygon(ext_coords, int_coords)
+>>> poly = Polygon(LinearRing(ext_coords), LinearRing(int_coords))
+  
+classmethod from_bbox(bbox)  
+Returns a polygon object from the given bounding-box, a 4-tuple comprising (xmin, ymin, xmax, ymax). 
+  
+num_interior_rings  
+Returns the number of interior rings in this geometry.

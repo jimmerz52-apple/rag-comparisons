@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.connection.Connection.fileno
+
+fileno()  
+Return the file descriptor or handle used by the connection.

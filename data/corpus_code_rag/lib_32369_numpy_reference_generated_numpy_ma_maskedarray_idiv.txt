@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__idiv__
+
+numpy.ma.MaskedArray.__idiv__ method   ma.MaskedArray.__idiv__(other)[source]
+ 
+Divide self by other in-place.

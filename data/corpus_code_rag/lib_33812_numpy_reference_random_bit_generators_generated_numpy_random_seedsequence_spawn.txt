@@ -1,0 +1,11 @@
+# numpy.reference.random.bit_generators.generated.numpy.random.seedsequence.spawn
+
+numpy.random.SeedSequence.spawn method   random.SeedSequence.spawn(n_children)
+ 
+Spawn a number of child SeedSequence s by extending the spawn_key.  Parameters 
+ 
+n_childrenint
+
+  Returns 
+ 
+seqslist of SeedSequence s

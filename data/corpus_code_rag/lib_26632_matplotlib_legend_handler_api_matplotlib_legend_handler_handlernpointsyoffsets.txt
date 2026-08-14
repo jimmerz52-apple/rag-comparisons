@@ -1,0 +1,16 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerNpointsYoffsets
+
+classmatplotlib.legend_handler.HandlerNpointsYoffsets(numpoints=None, yoffsets=None, **kwargs)[source]
+ 
+A legend handler that shows numpoints in the legend, and allows them to be individually offset in the y-direction.  Parameters 
+ 
+numpointsint
+
+
+Number of points to show in legend entry.  
+yoffsetsarray of floats
+
+
+Length numpoints list of y offsets for each point in legend entry.  **kwargs
+
+Keyword arguments forwarded to HandlerNpoints.       get_ydata(legend, xdescent, ydescent, width, height, fontsize)[source]

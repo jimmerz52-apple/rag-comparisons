@@ -1,0 +1,3 @@
+# django.ref.urlresolvers#django.urls.reverse
+
+reverse(viewname, urlconf=None, args=None, kwargs=None, current_app=None)

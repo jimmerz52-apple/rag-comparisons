@@ -1,0 +1,4 @@
+# python.library.socket#socket.CAN_RAW_JOIN_FILTERS
+
+socket.CAN_RAW_JOIN_FILTERS  
+Joins the applied CAN filters such that only CAN frames that match all given CAN filters are passed to user space. This constant is documented in the Linux documentation. Availability: Linux >= 4.1.  New in version 3.9.

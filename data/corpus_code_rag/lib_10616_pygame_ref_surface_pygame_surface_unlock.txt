@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.unlock
+
+unlock() 
+ unlock the Surface memory from pixel access unlock() -> None  Unlock the Surface pixel data after it has been locked. The unlocked Surface can once again be drawn and managed by pygame. See the lock() documentation for more details. All pygame functions will automatically lock and unlock the Surface data as needed. If a section of code is going to make calls that will repeatedly lock and unlock the Surface many times, it can be helpful to wrap the block inside a lock and unlock pair. It is safe to nest locking and unlocking calls. The surface will only be unlocked after the final lock is released.

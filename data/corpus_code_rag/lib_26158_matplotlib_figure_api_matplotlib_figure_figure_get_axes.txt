@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_axes
+
+get_axes()[source]
+ 
+List of Axes in the Figure. You can access and modify the Axes in the Figure through this list. Do not modify the list itself. Instead, use add_axes, add_subplot or delaxes to add or remove an Axes. Note: The Figure.axes property and get_axes method are equivalent.

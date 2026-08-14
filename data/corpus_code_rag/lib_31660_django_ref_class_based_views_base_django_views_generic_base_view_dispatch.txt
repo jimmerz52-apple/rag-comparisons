@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.View.dispatch
+
+dispatch(request, *args, **kwargs)  
+The view part of the view – the method that accepts a request argument plus arguments, and returns an HTTP response. The default implementation will inspect the HTTP method and attempt to delegate to a method that matches the HTTP method; a GET will be delegated to get(), a POST to post(), and so on. By default, a HEAD request will be delegated to get(). If you need to handle HEAD requests in a different way than GET, you can override the head() method. See Supporting other HTTP methods for an example.

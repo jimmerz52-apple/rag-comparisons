@@ -1,0 +1,6 @@
+# python.library.stdtypes#bytearray.fromhex
+
+classmethod fromhex(string)  
+This bytearray class method returns bytearray object, decoding the given string object. The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored. >>> bytearray.fromhex('2Ef0 F1f2  ')
+bytearray(b'.\xf0\xf1\xf2')
+  Changed in version 3.7: bytearray.fromhex() now skips all ASCII whitespace in the string, not just spaces.

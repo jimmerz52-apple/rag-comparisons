@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.transform_point
+
+transform_point(point)[source]
+ 
+Return a transformed point. This function is only kept for backcompatibility; the more general transform method is capable of transforming both a list of points and a single point. The point is given as a sequence of length input_dims. The transformed point is returned as a sequence of length output_dims.

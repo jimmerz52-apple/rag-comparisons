@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.InvertedLogTransform.has_inverse
+
+has_inverse=True
+ 
+True if this transform has a corresponding inverse transform.

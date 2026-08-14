@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.SymmetricalLogLocator.set_params
+
+set_params(subs=None, numticks=None)[source]
+ 
+Set parameters within this locator.

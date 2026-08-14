@@ -1,0 +1,4 @@
+# python.library.copy#copy.deepcopy
+
+copy.deepcopy(x[, memo])  
+Return a deep copy of x.

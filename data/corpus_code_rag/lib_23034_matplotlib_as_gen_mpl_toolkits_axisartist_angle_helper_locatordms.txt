@@ -1,0 +1,17 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.locatordms
+
+mpl_toolkits.axisartist.angle_helper.LocatorDMS   classmpl_toolkits.axisartist.angle_helper.LocatorDMS(nbins, include_last=True)[source]
+ 
+Bases: mpl_toolkits.axisartist.angle_helper.LocatorBase   __call__(v1, v2)[source]
+ 
+Call self as a function. 
+ 
+  Examples using mpl_toolkits.axisartist.angle_helper.LocatorDMS
+ 
+   axis_direction demo   
+
+   Curvilinear grid demo   
+
+   floating_axis demo   
+
+   Simple Axis Pad

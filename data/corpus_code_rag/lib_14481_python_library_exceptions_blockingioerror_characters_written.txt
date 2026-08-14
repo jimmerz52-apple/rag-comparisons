@@ -1,0 +1,4 @@
+# python.library.exceptions#BlockingIOError.characters_written
+
+characters_written  
+An integer containing the number of characters written to the stream before it blocked. This attribute is available when using the buffered I/O classes from the io module.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.addSkip
+
+addSkip(test, reason)  
+Called when the test case test is skipped. reason is the reason the test gave for skipping. The default implementation appends a tuple (test, reason) to the instance’s skipped attribute.

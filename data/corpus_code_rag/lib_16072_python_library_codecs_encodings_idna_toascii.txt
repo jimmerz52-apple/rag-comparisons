@@ -1,0 +1,4 @@
+# python.library.codecs#encodings.idna.ToASCII
+
+encodings.idna.ToASCII(label)  
+Convert a label to ASCII, as specified in RFC 3490. UseSTD3ASCIIRules is assumed to be false.

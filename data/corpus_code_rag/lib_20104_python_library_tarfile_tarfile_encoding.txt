@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.ENCODING
+
+tarfile.ENCODING  
+The default character encoding: 'utf-8' on Windows, the value returned by sys.getfilesystemencoding() otherwise.

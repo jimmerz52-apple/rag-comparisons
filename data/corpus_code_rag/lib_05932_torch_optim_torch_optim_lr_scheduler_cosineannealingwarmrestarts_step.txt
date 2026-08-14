@@ -1,0 +1,20 @@
+# torch.optim#torch.optim.lr_scheduler.CosineAnnealingWarmRestarts.step
+
+step(epoch=None) [source]
+ 
+Step could be called after every batch update Example >>> scheduler = CosineAnnealingWarmRestarts(optimizer, T_0, T_mult)
+>>> iters = len(dataloader)
+>>> for epoch in range(20):
+>>>     for i, sample in enumerate(dataloader):
+>>>         inputs, labels = sample['inputs'], sample['labels']
+>>>         optimizer.zero_grad()
+>>>         outputs = net(inputs)
+>>>         loss = criterion(outputs, labels)
+>>>         loss.backward()
+>>>         optimizer.step()
+>>>         scheduler.step(epoch + i / iters)
+ This function can be called in an interleaved way. Example >>> scheduler = CosineAnnealingWarmRestarts(optimizer, T_0, T_mult)
+>>> for epoch in range(20):
+>>>     scheduler.step()
+>>> scheduler.step(26)
+>>> scheduler.step() # scheduler.step(27), instead of scheduler(20)

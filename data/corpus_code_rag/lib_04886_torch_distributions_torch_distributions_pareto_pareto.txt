@@ -1,0 +1,24 @@
+# torch.distributions#torch.distributions.pareto.Pareto
+
+class torch.distributions.pareto.Pareto(scale, alpha, validate_args=None) [source]
+ 
+Bases: torch.distributions.transformed_distribution.TransformedDistribution Samples from a Pareto Type 1 distribution. Example: >>> m = Pareto(torch.tensor([1.0]), torch.tensor([1.0]))
+>>> m.sample()  # sample from a Pareto distribution with scale=1 and alpha=1
+tensor([ 1.5623])
+  Parameters 
+ 
+scale (float or Tensor) – Scale parameter of the distribution 
+alpha (float or Tensor) – Shape parameter of the distribution     
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {'alpha': GreaterThan(lower_bound=0.0), 'scale': GreaterThan(lower_bound=0.0)} 
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+property mean 
+  
+property support 
+  
+property variance

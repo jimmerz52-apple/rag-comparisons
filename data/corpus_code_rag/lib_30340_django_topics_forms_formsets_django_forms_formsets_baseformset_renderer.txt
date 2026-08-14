@@ -1,0 +1,4 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.renderer
+
+BaseFormSet.renderer  
+ New in Django 4.0.  Specifies the renderer to use for the formset. Defaults to the renderer specified by the FORM_RENDERER setting.

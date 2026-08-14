@@ -1,0 +1,4 @@
+# python.library.gc#gc.set_debug
+
+gc.set_debug(flags)  
+Set the garbage collection debugging flags. Debugging information will be written to sys.stderr. See below for a list of debugging flags which can be combined using bit operations to control debugging.

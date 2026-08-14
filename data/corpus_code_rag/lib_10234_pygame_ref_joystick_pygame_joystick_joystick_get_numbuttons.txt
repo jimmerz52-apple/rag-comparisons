@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_numbuttons
+
+get_numbuttons() 
+ get the number of buttons on a Joystick get_numbuttons() -> int  Returns the number of pushable buttons on the joystick. These buttons have a boolean (on or off) state. Buttons generate a pygame.JOYBUTTONDOWN and pygame.JOYBUTTONUP event when they are pressed and released.

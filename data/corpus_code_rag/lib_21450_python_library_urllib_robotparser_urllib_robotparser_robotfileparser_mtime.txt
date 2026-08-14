@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.mtime
+
+mtime()  
+Returns the time the robots.txt file was last fetched. This is useful for long-running web spiders that need to check for new robots.txt files periodically.

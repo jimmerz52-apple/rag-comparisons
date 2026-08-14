@@ -1,0 +1,66 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.PaddedBox
+
+classmatplotlib.offsetbox.PaddedBox(child, pad=None, draw_frame=False, patch_attrs=None)[source]
+ 
+Bases: matplotlib.offsetbox.OffsetBox A container to add a padding around an Artist. The PaddedBox contains a FancyBboxPatch that is used to visualize it when rendering.  Parameters 
+ 
+childArtist
+
+
+The contained Artist.  
+padfloat
+
+
+The padding in points. This will be scaled with the renderer dpi. In contrast width and height are in pixels and thus not scaled.  
+draw_framebool
+
+
+Whether to draw the contained FancyBboxPatch.  
+patch_attrsdict or None
+
+
+Additional parameters passed to the contained FancyBboxPatch.       draw(renderer)[source]
+ 
+Update the location of children if necessary and draw them to the given renderer. 
+   draw_frame(renderer)[source]
+
+   get_extent_offsets(renderer)[source]
+ 
+Update offset of the children and return the extent of the box.  Parameters 
+ 
+rendererRendererBase subclass
+
+  Returns 
+ width
+height
+xdescent
+ydescent
+list of (xoffset, yoffset) pairs
+   
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+offset (float, float) or callable  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+zorder float   
+   update_frame(bbox, fontsize=None)[source]

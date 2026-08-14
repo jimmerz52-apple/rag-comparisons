@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.baggingclassifier#sklearn.ensemble.BaggingClassifier.decision_function
+
+decision_function(X) [source]
+ 
+Average of the decision functions of the base classifiers.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrices are accepted only if they are supported by the base estimator.    Returns 
+ 
+scorendarray of shape (n_samples, k) 
+
+The decision function of the input samples. The columns correspond to the classes in sorted order, as they appear in the attribute classes_. Regression and binary classification are special cases with k == 1, otherwise k==n_classes.

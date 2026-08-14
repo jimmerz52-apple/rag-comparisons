@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.IncrementalEncoder.encode
+
+encode(object[, final])  
+Encodes object (taking the current state of the encoder into account) and returns the resulting encoded object. If this is the last call to encode() final must be true (the default is false).

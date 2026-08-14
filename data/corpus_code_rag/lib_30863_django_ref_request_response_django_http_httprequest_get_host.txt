@@ -1,0 +1,25 @@
+# django.ref.request-response#django.http.HttpRequest.get_host
+
+HttpRequest.get_host()  
+Returns the originating host of the request using information from the HTTP_X_FORWARDED_HOST (if USE_X_FORWARDED_HOST is enabled) and HTTP_HOST headers, in that order. If they don’t provide a value, the method uses a combination of SERVER_NAME and SERVER_PORT as detailed in PEP 3333. Example: "127.0.0.1:8000" Raises django.core.exceptions.DisallowedHost if the host is not in ALLOWED_HOSTS or the domain name is invalid according to RFC 1034/1035.  Note The get_host() method fails when the host is behind multiple proxies. One solution is to use middleware to rewrite the proxy headers, as in the following example: class MultipleProxyMiddleware:
+    FORWARDED_FOR_FIELDS = [
+        'HTTP_X_FORWARDED_FOR',
+        'HTTP_X_FORWARDED_HOST',
+        'HTTP_X_FORWARDED_SERVER',
+    ]
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        """
+        Rewrites the proxy headers so that only the most
+        recent proxy is used.
+        """
+        for field in self.FORWARDED_FOR_FIELDS:
+            if field in request.META:
+                if ',' in request.META[field]:
+                    parts = request.META[field].split(',')
+                    request.META[field] = parts[-1].strip()
+        return self.get_response(request)
+ This middleware should be positioned before any other middleware that relies on the value of get_host() – for instance, CommonMiddleware or CsrfViewMiddleware.

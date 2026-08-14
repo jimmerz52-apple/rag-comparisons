@@ -1,0 +1,3 @@
+# django.ref.templates.api#django.template.Context.update
+
+Context.update(other_dict)

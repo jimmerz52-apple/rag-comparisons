@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.RedirectView.permanent
+
+permanent  
+Whether the redirect should be permanent. The only difference here is the HTTP status code returned. If True, then the redirect will use status code 301. If False, then the redirect will use status code 302. By default, permanent is False.

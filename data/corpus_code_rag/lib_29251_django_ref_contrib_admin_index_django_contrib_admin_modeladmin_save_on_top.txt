@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.save_on_top
+
+ModelAdmin.save_on_top  
+Set save_on_top to add save buttons across the top of your admin change forms. Normally, the save buttons appear only at the bottom of the forms. If you set save_on_top, the buttons will appear both on the top and the bottom. By default, save_on_top is set to False.

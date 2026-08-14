@@ -1,0 +1,40 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.WKTWriter
+
+class WKTWriter(dim=2, trim=False, precision=None)  
+This class allows outputting the WKT representation of a geometry. See the WKBWriter.outdim, trim, and precision attributes for details about the constructor arguments.  
+write(geom) 
+ Returns the WKT of the given geometry. Example: >>> from django.contrib.gis.geos import Point, WKTWriter
+>>> pnt = Point(1, 1)
+>>> wkt_w = WKTWriter()
+>>> wkt_w.write(pnt)
+'POINT (1.0000000000000000 1.0000000000000000)'
+  
+outdim  
+See WKBWriter.outdim. 
+  
+trim 
+ This property is used to enable or disable trimming of unnecessary decimals. >>> from django.contrib.gis.geos import Point, WKTWriter
+>>> pnt = Point(1, 1)
+>>> wkt_w = WKTWriter()
+>>> wkt_w.trim
+False
+>>> wkt_w.write(pnt)
+'POINT (1.0000000000000000 1.0000000000000000)'
+>>> wkt_w.trim = True
+>>> wkt_w.write(pnt)
+'POINT (1 1)'
+  
+precision 
+ This property controls the rounding precision of coordinates; if set to None rounding is disabled. >>> from django.contrib.gis.geos import Point, WKTWriter
+>>> pnt = Point(1.44, 1.66)
+>>> wkt_w = WKTWriter()
+>>> print(wkt_w.precision)
+None
+>>> wkt_w.write(pnt)
+'POINT (1.4399999999999999 1.6599999999999999)'
+>>> wkt_w.precision = 0
+>>> wkt_w.write(pnt)
+'POINT (1 2)'
+>>> wkt_w.precision = 1
+>>> wkt_w.write(pnt)
+'POINT (1.4 1.7)'

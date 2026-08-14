@@ -1,0 +1,6 @@
+# torch.generated.torch.is_storage#torch.is_storage
+
+torch.is_storage(obj) [source]
+ 
+Returns True if obj is a PyTorch storage object.  Parameters 
+obj (Object) – Object to test

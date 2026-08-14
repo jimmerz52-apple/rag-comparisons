@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.decomposition.truncatedsvd#sklearn.decomposition.TruncatedSVD.fit
+
+fit(X, y=None) [source]
+ 
+Fit model on training data X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data.  
+yIgnored 
+  Returns 
+ 
+selfobject 
+
+Returns the transformer object.

@@ -1,0 +1,14 @@
+# django.ref.forms.widgets#django.forms.MultiWidget.decompress
+
+decompress(value)  
+This method takes a single “compressed” value from the field and returns a list of “decompressed” values. The input value can be assumed valid, but not necessarily non-empty. This method must be implemented by the subclass, and since the value may be empty, the implementation must be defensive. The rationale behind “decompression” is that it is necessary to “split” the combined value of the form field into the values for each widget. An example of this is how SplitDateTimeWidget turns a datetime value into a list with date and time split into two separate values: from django.forms import MultiWidget
+
+class SplitDateTimeWidget(MultiWidget):
+
+    # ...
+
+    def decompress(self, value):
+        if value:
+            return [value.date(), value.time()]
+        return [None, None]
+  Tip Note that MultiValueField has a complementary method compress() with the opposite responsibility - to combine cleaned values of all member fields into one.

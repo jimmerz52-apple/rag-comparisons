@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.markerObject
+
+markerObject(path, trans, fill, stroke, lw, joinstyle, capstyle)[source]
+ 
+Return name of a marker XObject representing the given path.

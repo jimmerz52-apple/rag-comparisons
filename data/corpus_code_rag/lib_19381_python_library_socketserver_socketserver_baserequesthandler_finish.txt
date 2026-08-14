@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseRequestHandler.finish
+
+finish()  
+Called after the handle() method to perform any clean-up actions required. The default implementation does nothing. If setup() raises an exception, this function will not be called.

@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.cmdqueue
+
+Cmd.cmdqueue  
+A list of queued input lines. The cmdqueue list is checked in cmdloop() when new input is needed; if it is nonempty, its elements will be processed in order, as if entered at the prompt.

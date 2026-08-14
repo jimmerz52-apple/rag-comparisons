@@ -1,0 +1,18 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.RemoteUserBackend
+
+class RemoteUserBackend  
+Use this backend to take advantage of external-to-Django-handled authentication. It authenticates using usernames passed in request.META['REMOTE_USER']. See the Authenticating against REMOTE_USER documentation. If you need more control, you can create your own authentication backend that inherits from this class and override these attributes or methods:  
+create_unknown_user  
+True or False. Determines whether or not a user object is created if not already in the database Defaults to True. 
+  
+authenticate(request, remote_user)  
+The username passed as remote_user is considered trusted. This method returns the user object with the given username, creating a new user object if create_unknown_user is True. Returns None if create_unknown_user is False and a User object with the given username is not found in the database. request is an HttpRequest and may be None if it wasn’t provided to authenticate() (which passes it on to the backend). 
+  
+clean_username(username)  
+Performs any cleaning on the username (e.g. stripping LDAP DN information) prior to using it to get or create a user object. Returns the cleaned username. 
+  
+configure_user(request, user)  
+Configures a newly created user. This method is called immediately after a new user is created, and can be used to perform custom setup actions, such as setting the user’s groups based on attributes in an LDAP directory. Returns the user object. request is an HttpRequest and may be None if it wasn’t provided to authenticate() (which passes it on to the backend). 
+  
+user_can_authenticate()  
+Returns whether the user is allowed to authenticate. This method returns False for users with is_active=False. Custom user models that don’t have an is_active field are allowed.

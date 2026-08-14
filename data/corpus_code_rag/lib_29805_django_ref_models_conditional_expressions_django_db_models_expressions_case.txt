@@ -1,0 +1,3 @@
+# django.ref.models.conditional-expressions#django.db.models.expressions.Case
+
+class Case(*cases, **extra)

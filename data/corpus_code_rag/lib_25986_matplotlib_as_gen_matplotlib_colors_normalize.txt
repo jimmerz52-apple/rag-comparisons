@@ -1,0 +1,98 @@
+# matplotlib._as_gen.matplotlib.colors.normalize
+
+matplotlib.colors.Normalize   classmatplotlib.colors.Normalize(vmin=None, vmax=None, clip=False)[source]
+ 
+Bases: object A class which, when called, linearly normalizes data into the [0.0, 1.0] interval.  Parameters 
+ 
+vmin, vmaxfloat or None
+
+
+If vmin and/or vmax is not given, they are initialized from the minimum and maximum value, respectively, of the first input processed; i.e., __call__(A) calls autoscale_None(A).  
+clipbool, default: False
+
+
+If True values falling outside the range [vmin, vmax], are mapped to 0 or 1, whichever is closer, and masked values are set to 1. If False masked values remain masked. Clipping silently defeats the purpose of setting the over, under, and masked colors in a colormap, so it is likely to lead to surprises; therefore the default is clip=False.     Notes Returns 0 if vmin == vmax.   __call__(value, clip=None)[source]
+ 
+Normalize value data in the [vmin, vmax] interval into the [0.0, 1.0] interval and return it.  Parameters 
+ value
+
+Data to normalize.  
+clipbool
+
+
+If None, defaults to self.clip (which defaults to False).     Notes If not already initialized, self.vmin and self.vmax are initialized using self.autoscale_None(value). 
+   autoscale(A)[source]
+ 
+Set vmin, vmax to min, max of A. 
+   autoscale_None(A)[source]
+ 
+If vmin or vmax are not set, use the min/max of A to set them. 
+   propertyclip
+
+   inverse(value)[source]
+
+   staticprocess_value(value)[source]
+ 
+Homogenize the input value for easy and efficient normalization. value can be a scalar or sequence.  Returns 
+ 
+resultmasked array
+
+
+Masked array with the same shape as value.  
+is_scalarbool
+
+
+Whether value is a scalar.     Notes Float dtypes are preserved; integer types with two bytes or smaller are converted to np.float32, and larger types are converted to np.float64. Preserving float32 when possible, and using in-place operations, greatly improves speed for large arrays. 
+   scaled()[source]
+ 
+Return whether vmin and vmax are set. 
+   propertyvmax
+
+   propertyvmin
+
+ 
+  Examples using matplotlib.colors.Normalize
+ 
+   Multicolored lines   
+
+   Contour Image   
+
+   Creating annotated heatmaps   
+
+   Image Masked   
+
+   Blend transparency with color in 2D images   
+
+   Multi Image   
+
+   Pcolor Demo   
+
+   pcolormesh   
+
+   Histograms   
+
+   Time Series Histogram   
+
+   Axes Grid2   
+
+   Shaded & power normalized rendering   
+
+   Frontpage contour example   
+
+   Exploring normalizations   
+
+   Hillshading   
+
+   Left ventricle bullseye   
+
+   Colormap Normalizations   
+
+   Colormap Normalizations Symlognorm   
+
+   Basic Usage   
+
+   Constrained Layout Guide   
+
+   Customized Colorbars Tutorial   
+
+   Colormap Normalization

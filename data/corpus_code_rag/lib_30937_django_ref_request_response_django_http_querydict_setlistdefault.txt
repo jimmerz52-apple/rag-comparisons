@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.setlistdefault
+
+QueryDict.setlistdefault(key, default_list=None)  
+Like setdefault(), except it takes a list of values instead of a single value.

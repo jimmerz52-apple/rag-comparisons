@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.set_gid
+
+matplotlib.artist.Artist.set_gid   Artist.set_gid(gid)[source]
+ 
+Set the (group) id for the artist.  Parameters 
+ 
+gidstr

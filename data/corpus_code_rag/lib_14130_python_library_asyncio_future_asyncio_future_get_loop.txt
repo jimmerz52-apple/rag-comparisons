@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.get_loop
+
+get_loop()  
+Return the event loop the Future object is bound to.  New in version 3.7.

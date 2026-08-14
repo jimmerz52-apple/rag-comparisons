@@ -10,6 +10,7 @@ Two layers (keep them separate):
 
 from rag_benchmark.benchmark import BenchmarkRunner, MethodRunResult
 from rag_benchmark.config import BenchmarkConfig
+from rag_benchmark.code_rag_bench import build_code_rag_bench_subset
 from rag_benchmark.graphrag_bench import build_graphrag_bench_subset
 from rag_benchmark.hotpotqa import build_hotpot_subset
 from rag_benchmark.llm_factory import create_tracked_client
@@ -39,6 +40,7 @@ __all__ = [
     "build_hotpot_subset",
     "build_graphrag_bench_subset",
     "build_multihop_rag_subset",
+    "build_code_rag_bench_subset",
     # SDK surface
     "Embedder",
     "TrackedClientEmbedder",

@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires
+
+test.support.requires(resource, msg=None)  
+Raise ResourceDenied if resource is not available. msg is the argument to ResourceDenied if it is raised. Always returns True if called by a function whose __name__ is '__main__'. Used when tests are executed by test.regrtest.

@@ -1,0 +1,8 @@
+# numpy.reference.generated.numpy.ma.maskedarray.tofile
+
+numpy.ma.MaskedArray.tofile method   ma.MaskedArray.tofile(fid, sep='', format='%s')[source]
+ 
+Save a masked array to a file in binary format.  Warning This function is not implemented yet.   Raises 
+ NotImplementedError
+
+When tofile is called.

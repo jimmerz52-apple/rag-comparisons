@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_sketch
+
+matplotlib.rcsetup.validate_sketch(s)[source]

@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.TimedRotatingFileHandler.doRollover
+
+doRollover()  
+Does a rollover, as described above.

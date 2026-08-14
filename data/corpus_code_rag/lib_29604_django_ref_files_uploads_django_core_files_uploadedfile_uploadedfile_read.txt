@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.read
+
+UploadedFile.read()  
+Read the entire uploaded data from the file. Be careful with this method: if the uploaded file is huge it can overwhelm your system if you try to read it into memory. You’ll probably want to use chunks() instead; see below.

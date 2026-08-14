@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.OperationalError
+
+exception sqlite3.OperationalError  
+Exception raised for errors that are related to the database’s operation and not necessarily under the control of the programmer, e.g. an unexpected disconnect occurs, the data source name is not found, a transaction could not be processed, etc. It is a subclass of DatabaseError.

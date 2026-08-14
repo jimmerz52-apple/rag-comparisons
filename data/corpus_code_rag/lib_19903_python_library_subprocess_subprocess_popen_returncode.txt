@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.returncode
+
+Popen.returncode  
+The child return code, set by poll() and wait() (and indirectly by communicate()). A None value indicates that the process hasn’t terminated yet. A negative value -N indicates that the child was terminated by signal N (POSIX only).

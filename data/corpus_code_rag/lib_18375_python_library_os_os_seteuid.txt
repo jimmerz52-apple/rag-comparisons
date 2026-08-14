@@ -1,0 +1,4 @@
+# python.library.os#os.seteuid
+
+os.seteuid(euid)  
+Set the current process’s effective user id. Availability: Unix.

@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.generate_filename
+
+generate_filename(filename)  
+Validates the filename by calling get_valid_name() and returns a filename to be passed to the save() method. The filename argument may include a path as returned by FileField.upload_to. In that case, the path won’t be passed to get_valid_name() but will be prepended back to the resulting name. The default implementation uses os.path operations. Override this method if that’s not appropriate for your storage.

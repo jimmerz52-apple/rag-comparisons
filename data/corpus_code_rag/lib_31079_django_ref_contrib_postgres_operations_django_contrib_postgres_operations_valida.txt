@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.operations#django.contrib.postgres.operations.ValidateConstraint
+
+class ValidateConstraint(model_name, name)  
+Scans through the table and validates the given check constraint on existing rows.

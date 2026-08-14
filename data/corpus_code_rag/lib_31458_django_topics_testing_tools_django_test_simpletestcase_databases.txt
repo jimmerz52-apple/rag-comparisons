@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.databases
+
+SimpleTestCase.databases  
+SimpleTestCase disallows database queries by default. This helps to avoid executing write queries which will affect other tests since each SimpleTestCase test isn’t run in a transaction. If you aren’t concerned about this problem, you can disable this behavior by setting the databases class attribute to '__all__' on your test class.

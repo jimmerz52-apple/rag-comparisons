@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Accept.best_match
+
+best_match(matches, default=None)  
+Returns the best match from a list of possible matches based on the specificity and quality of the client. If two items have the same quality and specificity, the one is returned that comes first.  Parameters 
+ 
+matches – a list of matches to check for 
+default – the value that is returned if none match

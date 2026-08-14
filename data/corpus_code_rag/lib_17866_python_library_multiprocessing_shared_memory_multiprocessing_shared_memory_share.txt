@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.ShareableList.format
+
+format  
+Read-only attribute containing the struct packing format used by all currently stored values.

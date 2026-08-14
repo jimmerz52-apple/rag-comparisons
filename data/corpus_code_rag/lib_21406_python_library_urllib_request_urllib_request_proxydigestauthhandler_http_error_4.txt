@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.ProxyDigestAuthHandler.http_error_407
+
+ProxyDigestAuthHandler.http_error_407(req, fp, code, msg, hdrs)  
+Retry the request with authentication information, if available.

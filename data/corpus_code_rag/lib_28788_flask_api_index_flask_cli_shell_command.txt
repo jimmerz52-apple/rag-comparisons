@@ -1,0 +1,8 @@
+# flask.api.index#flask.cli.shell_command
+
+flask.cli.shell_command = <Command shell>  
+Run an interactive Python shell in the context of a given Flask application. The application will populate the default namespace of this shell according to its configuration. This is useful for executing small snippets of management code without having to manually configure the application.  Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+Any

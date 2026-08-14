@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__repr__
+
+numpy.ma.MaskedArray.__repr__ method   ma.MaskedArray.__repr__()[source]
+ 
+Literal string representation.

@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.search#django.contrib.postgres.search.TrigramWordSimilarity
+
+class TrigramWordSimilarity(string, expression, **extra)

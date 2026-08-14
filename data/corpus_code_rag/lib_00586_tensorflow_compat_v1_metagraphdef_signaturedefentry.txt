@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.metagraphdef.signaturedefentry
+
+tf.compat.v1.MetaGraphDef.SignatureDefEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   SignatureDef value

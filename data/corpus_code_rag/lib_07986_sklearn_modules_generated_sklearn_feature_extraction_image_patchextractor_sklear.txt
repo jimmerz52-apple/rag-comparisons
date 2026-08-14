@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.feature_extraction.image.patchextractor#sklearn.feature_extraction.image.PatchExtractor.fit
+
+fit(X, y=None) [source]
+ 
+Do nothing and return the estimator unchanged. This method is just there to implement the usual API and hence work in pipelines.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.

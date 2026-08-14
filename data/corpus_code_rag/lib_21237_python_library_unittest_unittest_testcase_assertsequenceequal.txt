@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.assertSequenceEqual
+
+assertSequenceEqual(first, second, msg=None, seq_type=None)  
+Tests that two sequences are equal. If a seq_type is supplied, both first and second must be instances of seq_type or a failure will be raised. If the sequences are different an error message is constructed that shows the difference between the two. This method is not called directly by assertEqual(), but it’s used to implement assertListEqual() and assertTupleEqual().  New in version 3.1.

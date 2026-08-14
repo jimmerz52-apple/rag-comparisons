@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.Translate
+
+class Translate(expression, x, y, z=0.0, **extra)

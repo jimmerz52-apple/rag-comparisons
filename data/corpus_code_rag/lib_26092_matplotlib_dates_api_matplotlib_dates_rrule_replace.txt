@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.rrule.replace
+
+replace(**kwargs)
+ 
+Return new rrule with same attributes except for those attributes given new values by whichever keyword arguments are specified.

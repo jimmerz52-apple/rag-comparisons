@@ -1,0 +1,5 @@
+# matplotlib.fontconfig_pattern_api#matplotlib.fontconfig_pattern.value_unescape
+
+matplotlib.fontconfig_pattern.value_unescape(/, repl, string, count=0)
+ 
+Return the string obtained by replacing the leftmost non-overlapping occurrences of pattern in string by the replacement repl.

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.fromisocalendar
+
+classmethod datetime.fromisocalendar(year, week, day)  
+Return a datetime corresponding to the ISO calendar date specified by year, week and day. The non-date components of the datetime are populated with their normal default values. This is the inverse of the function datetime.isocalendar().  New in version 3.8.

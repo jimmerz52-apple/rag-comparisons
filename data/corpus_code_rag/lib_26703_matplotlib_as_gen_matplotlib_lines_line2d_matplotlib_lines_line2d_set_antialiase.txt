@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_antialiased
+
+set_antialiased(b)[source]
+ 
+Set whether to use antialiased rendering.  Parameters 
+ 
+bbool

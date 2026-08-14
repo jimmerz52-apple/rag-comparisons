@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.BaseCookie
+
+class http.cookies.BaseCookie([input])  
+This class is a dictionary-like object whose keys are strings and whose values are Morsel instances. Note that upon setting a key to a value, the value is first converted to a Morsel containing the key and the value. If input is given, it is passed to the load() method.

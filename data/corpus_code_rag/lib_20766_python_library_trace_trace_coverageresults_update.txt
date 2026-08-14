@@ -1,0 +1,4 @@
+# python.library.trace#trace.CoverageResults.update
+
+update(other)  
+Merge in data from another CoverageResults object.

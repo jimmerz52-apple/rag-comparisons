@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.message_user
+
+ModelAdmin.message_user(request, message, level=messages.INFO, extra_tags='', fail_silently=False)  
+Sends a message to the user using the django.contrib.messages backend. See the custom ModelAdmin example. Keyword arguments allow you to change the message level, add extra CSS tags, or fail silently if the contrib.messages framework is not installed. These keyword arguments match those for django.contrib.messages.add_message(), see that function’s documentation for more details. One difference is that the level may be passed as a string label in addition to integer/constant.

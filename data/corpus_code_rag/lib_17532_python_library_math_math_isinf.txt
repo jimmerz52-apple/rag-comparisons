@@ -1,0 +1,4 @@
+# python.library.math#math.isinf
+
+math.isinf(x)  
+Return True if x is a positive or negative infinity, and False otherwise.

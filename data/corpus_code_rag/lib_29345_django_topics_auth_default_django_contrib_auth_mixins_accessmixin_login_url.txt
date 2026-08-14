@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.login_url
+
+login_url  
+Default return value for get_login_url(). Defaults to None in which case get_login_url() falls back to settings.LOGIN_URL.

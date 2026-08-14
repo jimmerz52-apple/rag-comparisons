@@ -1,0 +1,4 @@
+# python.library.curses#curses.textpad.Textbox.gather
+
+gather()  
+Return the window contents as a string; whether blanks in the window are included is affected by the stripspaces member.

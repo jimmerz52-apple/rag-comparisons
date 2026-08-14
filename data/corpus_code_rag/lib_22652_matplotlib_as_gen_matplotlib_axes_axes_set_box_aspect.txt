@@ -1,0 +1,15 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_box_aspect
+
+matplotlib.axes.Axes.set_box_aspect   Axes.set_box_aspect(aspect=None)[source]
+ 
+Set the Axes box aspect, i.e. the ratio of height to width. This defines the aspect of the Axes in figure space and is not to be confused with the data aspect (see set_aspect).  Parameters 
+ 
+aspectfloat or None
+
+
+Changes the physical dimensions of the Axes, such that the ratio of the Axes height to the Axes width in physical units is equal to aspect. Defining a box aspect will change the adjustable property to 'datalim' (see set_adjustable). None will disable a fixed box aspect so that height and width of the Axes are chosen independently.      See also  matplotlib.axes.Axes.set_aspect
+
+for a description of aspect handling.    
+  Examples using matplotlib.axes.Axes.set_box_aspect
+ 
+   Axes box aspect

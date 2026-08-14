@@ -1,0 +1,16 @@
+# werkzeug.http.index#werkzeug.http.parse_dict_header
+
+werkzeug.http.parse_dict_header(value, cls=<class 'dict'>)  
+Parse lists of key, value pairs as described by RFC 2068 Section 2 and convert them into a python dict (or any other mapping object created from the type with a dict like interface provided by the cls argument): >>> d = parse_dict_header('foo="is a fish", bar="as well"')
+>>> type(d) is dict
+True
+>>> sorted(d.items())
+[('bar', 'as well'), ('foo', 'is a fish')]
+ If there is no value for a key it will be None: >>> parse_dict_header('key_without_value')
+{'key_without_value': None}
+ To create a header from the dict again, use the dump_header() function.  Changelog Changed in version 0.9: Added support for cls argument.   Parameters 
+ 
+value (str) – a string with a dict header. 
+cls (Type[dict]) – callable to use for storage of parsed results.   Returns 
+an instance of cls  Return type 
+Dict[str, str]

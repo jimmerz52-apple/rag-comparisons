@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.animation.animation#matplotlib.animation.Animation.to_jshtml
+
+to_jshtml(fps=None, embed_frames=True, default_mode=None)[source]
+ 
+Generate HTML representation of the animation.  Parameters 
+ 
+fpsint, optional
+
+
+Movie frame rate (per second). If not set, the frame rate from the animation's frame interval.  
+embed_framesbool, optional
+
+
+default_modestr, optional
+
+
+What to do when the animation ends. Must be one of {'loop',
+'once', 'reflect'}. Defaults to 'loop' if self.repeat is True, otherwise 'once'.

@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.Font.actual
+
+actual(option=None, displayof=None)  
+Return the attributes of the font.

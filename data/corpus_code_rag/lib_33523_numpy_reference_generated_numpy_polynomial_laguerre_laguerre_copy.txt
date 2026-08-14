@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.laguerre.copy
+
+numpy.polynomial.laguerre.Laguerre.copy method   polynomial.laguerre.Laguerre.copy()[source]
+ 
+Return a copy.  Returns 
+ 
+new_seriesseries
+
+
+Copy of self.

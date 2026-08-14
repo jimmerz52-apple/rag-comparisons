@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.Address.display_name
+
+display_name  
+The display name portion of the address, if any, with all quoting removed. If the address does not have a display name, this attribute will be an empty string.

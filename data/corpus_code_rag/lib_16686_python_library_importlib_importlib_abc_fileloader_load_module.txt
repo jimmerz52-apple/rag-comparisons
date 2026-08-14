@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.FileLoader.load_module
+
+load_module(fullname)  
+Calls super’s load_module().  Deprecated since version 3.4: Use Loader.exec_module() instead.

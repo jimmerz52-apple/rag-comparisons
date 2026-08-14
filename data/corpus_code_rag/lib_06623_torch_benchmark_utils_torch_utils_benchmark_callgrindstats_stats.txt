@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.CallgrindStats.stats
+
+stats(inclusive=False) [source]
+ 
+Returns detailed function counts. Conceptually, the FunctionCounts returned can be thought of as a tuple of (count, path_and_function_name) tuples. inclusive matches the semantics of callgrind. If True, the counts include instructions executed by children. inclusive=True is useful for identifying hot spots in code; inclusive=False is useful for reducing noise when diffing counts from two different runs. (See CallgrindStats.delta(…) for more details)

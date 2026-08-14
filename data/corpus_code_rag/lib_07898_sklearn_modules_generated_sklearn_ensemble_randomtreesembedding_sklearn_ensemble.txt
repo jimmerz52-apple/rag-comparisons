@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.ensemble.randomtreesembedding#sklearn.ensemble.RandomTreesEmbedding.fit_transform
+
+fit_transform(X, y=None, sample_weight=None) [source]
+ 
+Fit estimator and transform dataset.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Input data used to build forests. Use dtype=np.float32 for maximum efficiency.  
+yIgnored 
+
+Not used, present for API consistency by convention.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Splits that would create child nodes with net zero or negative weight are ignored while searching for a split in each node. In the case of classification, splits are also ignored if they would result in any single class carrying a negative weight in either child node.    Returns 
+ 
+X_transformedsparse matrix of shape (n_samples, n_out) 
+
+Transformed dataset.

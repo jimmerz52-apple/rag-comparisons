@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.CERT_REQUIRED
+
+ssl.CERT_REQUIRED  
+Possible value for SSLContext.verify_mode, or the cert_reqs parameter to wrap_socket(). In this mode, certificates are required from the other side of the socket connection; an SSLError will be raised if no certificate is provided, or if its validation fails. This mode is not sufficient to verify a certificate in client mode as it does not match hostnames. check_hostname must be enabled as well to verify the authenticity of a cert. PROTOCOL_TLS_CLIENT uses CERT_REQUIRED and enables check_hostname by default. With server socket, this mode provides mandatory TLS client cert authentication. A client certificate request is sent to the client and the client must provide a valid and trusted certificate. Use of this setting requires a valid set of CA certificates to be passed, either to SSLContext.load_verify_locations() or as a value of the ca_certs parameter to wrap_socket().

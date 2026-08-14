@@ -1,0 +1,4 @@
+# python.library.test#test.support.bytecode_helper.BytecodeTestCase
+
+class test.support.bytecode_helper.BytecodeTestCase(unittest.TestCase)  
+This class has custom assertion methods for inspecting bytecode.

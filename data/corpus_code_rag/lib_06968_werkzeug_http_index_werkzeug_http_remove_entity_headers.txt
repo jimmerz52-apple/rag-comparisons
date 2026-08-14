@@ -1,0 +1,8 @@
+# werkzeug.http.index#werkzeug.http.remove_entity_headers
+
+werkzeug.http.remove_entity_headers(headers, allowed=('expires', 'content-location'))  
+Remove all entity headers from a list or Headers object. This operation works in-place. Expires and Content-Location headers are by default not removed. The reason for this is RFC 2616 section 10.3.5 which specifies some entity headers that should be sent.  Changelog Changed in version 0.5: added allowed parameter.   Parameters 
+ 
+headers (Union[werkzeug.datastructures.Headers, List[Tuple[str, str]]]) – a list or Headers object. 
+allowed (Iterable[str]) – a list of headers that should still be allowed even though they are entity headers.   Return type 
+None

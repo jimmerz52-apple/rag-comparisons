@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.ErrorList.template_name_ul
+
+template_name_ul  
+ New in Django 4.0.  The name of the template used when calling as_ul(). By default this is 'django/forms/errors/list/ul.html'. This template renders the errors in <li> tags with a wrapping <ul> with the CSS classes as defined by error_class.

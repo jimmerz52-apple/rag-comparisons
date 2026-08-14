@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.SpanSelector.connect_default_events
+
+connect_default_events()[source]
+ 
+Connect the major canvas events to methods.

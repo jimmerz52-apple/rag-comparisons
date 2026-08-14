@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_hatch
+
+set_hatch(hatch)[source]
+ 
+Set the hatch style (for fills).

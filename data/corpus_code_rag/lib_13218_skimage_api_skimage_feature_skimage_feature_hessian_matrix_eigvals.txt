@@ -1,0 +1,22 @@
+# skimage.api.skimage.feature#skimage.feature.hessian_matrix_eigvals
+
+skimage.feature.hessian_matrix_eigvals(H_elems) [source]
+ 
+Compute eigenvalues of Hessian matrix.  Parameters 
+ 
+H_elemslist of ndarray 
+
+The upper-diagonal elements of the Hessian matrix, as returned by hessian_matrix.    Returns 
+ 
+eigsndarray 
+
+The eigenvalues of the Hessian matrix, in decreasing order. The eigenvalues are the leading dimension. That is, eigs[i, j, k] contains the ith-largest eigenvalue at position (j, k).     Examples >>> from skimage.feature import hessian_matrix, hessian_matrix_eigvals
+>>> square = np.zeros((5, 5))
+>>> square[2, 2] = 4
+>>> H_elems = hessian_matrix(square, sigma=0.1, order='rc')
+>>> hessian_matrix_eigvals(H_elems)[0]
+array([[ 0.,  0.,  2.,  0.,  0.],
+       [ 0.,  1.,  0.,  1.,  0.],
+       [ 2.,  0., -2.,  0.,  2.],
+       [ 0.,  1.,  0.,  1.,  0.],
+       [ 0.,  0.,  2.,  0.,  0.]])

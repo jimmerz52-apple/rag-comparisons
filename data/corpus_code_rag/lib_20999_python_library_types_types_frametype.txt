@@ -1,0 +1,4 @@
+# python.library.types#types.FrameType
+
+types.FrameType  
+The type of frame objects such as found in tb.tb_frame if tb is a traceback object. See the language reference for details of the available attributes and operations.

@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.BaseHeader.max_count
+
+max_count  
+The maximum number of headers of this type that can have the same name. A value of None means unlimited. The BaseHeader value for this attribute is None; it is expected that specialized header classes will override this value as needed.

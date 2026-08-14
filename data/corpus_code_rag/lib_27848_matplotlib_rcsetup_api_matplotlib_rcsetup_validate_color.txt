@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_color
+
+matplotlib.rcsetup.validate_color(s)[source]
+ 
+Return a valid color arg.

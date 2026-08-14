@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.is_anchored
+
+pandas.tseries.offsets.CustomBusinessDay.is_anchored   CustomBusinessDay.is_anchored()

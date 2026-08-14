@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.removeHandler
+
+removeHandler(hdlr)  
+Removes the specified handler hdlr from this logger.

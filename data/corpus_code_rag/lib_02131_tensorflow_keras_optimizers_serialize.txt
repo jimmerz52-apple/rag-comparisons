@@ -1,0 +1,7 @@
+# tensorflow.keras.optimizers.serialize
+
+tf.keras.optimizers.serialize     View source on GitHub     View aliases  Main aliases 
+tf.optimizers.serialize Compat aliases for migration See Migration guide for more details. tf.compat.v1.keras.optimizers.serialize  
+tf.keras.optimizers.serialize(
+    optimizer
+)

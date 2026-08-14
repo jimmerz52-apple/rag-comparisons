@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.delete_cookie
+
+HttpResponse.delete_cookie(key, path='/', domain=None, samesite=None)  
+Deletes the cookie with the given key. Fails silently if the key doesn’t exist. Due to the way cookies work, path and domain should be the same values you used in set_cookie() – otherwise the cookie may not be deleted.

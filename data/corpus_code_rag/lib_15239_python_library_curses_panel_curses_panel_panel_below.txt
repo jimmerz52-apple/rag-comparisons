@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.below
+
+Panel.below()  
+Returns the panel below the current panel.

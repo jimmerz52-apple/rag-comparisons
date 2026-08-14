@@ -1,0 +1,16 @@
+# skimage.api.skimage.color#skimage.color.gray2rgba
+
+skimage.color.gray2rgba(image, alpha=None) [source]
+ 
+Create a RGBA representation of a gray-level image.  Parameters 
+ 
+imagearray_like 
+
+Input image.  
+alphaarray_like, optional 
+
+Alpha channel of the output image. It may be a scalar or an array that can be broadcast to image. If not specified it is set to the maximum limit corresponding to the image dtype.    Returns 
+ 
+rgbandarray 
+
+RGBA image. A new dimension of length 4 is added to input image shape.

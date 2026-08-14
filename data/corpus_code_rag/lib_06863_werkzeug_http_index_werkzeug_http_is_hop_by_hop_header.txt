@@ -1,0 +1,7 @@
+# werkzeug.http.index#werkzeug.http.is_hop_by_hop_header
+
+werkzeug.http.is_hop_by_hop_header(header)  
+Check if a header is an HTTP/1.1 “Hop-by-Hop” header.  Changelog New in version 0.5.   Parameters 
+header (str) – the header to test.  Returns 
+True if it’s an HTTP/1.1 “Hop-by-Hop” header, False otherwise.  Return type 
+bool

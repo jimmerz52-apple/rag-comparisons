@@ -1,0 +1,4 @@
+# python.library.xml.sax#xml.sax.SAXParseException
+
+exception xml.sax.SAXParseException(msg, exception, locator)  
+Subclass of SAXException raised on parse errors. Instances of this class are passed to the methods of the SAX ErrorHandler interface to provide information about the parse error. This class supports the SAX Locator interface as well as the SAXException interface.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.vstack
+
+tf.experimental.numpy.vstack TensorFlow variant of NumPy's vstack. 
+tf.experimental.numpy.vstack(
+    tup
+)
+ See the NumPy documentation for numpy.vstack.

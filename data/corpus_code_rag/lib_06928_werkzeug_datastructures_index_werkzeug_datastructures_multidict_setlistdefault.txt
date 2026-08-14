@@ -1,0 +1,12 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.setlistdefault
+
+setlistdefault(key, default_list=None)  
+Like setdefault but sets multiple values. The list returned is not a copy, but the list that is actually used internally. This means that you can put new values into the dict by appending items to the list: >>> d = MultiDict({"foo": 1})
+>>> d.setlistdefault("foo").extend([2, 3])
+>>> d.getlist("foo")
+[1, 2, 3]
+  Parameters 
+ 
+key – The key to be looked up. 
+default_list – An iterable of default values. It is either copied (in case it was a list) or converted into a list before returned.   Returns 
+a list

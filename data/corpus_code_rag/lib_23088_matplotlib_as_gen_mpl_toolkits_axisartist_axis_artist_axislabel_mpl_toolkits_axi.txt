@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axislabel#mpl_toolkits.axisartist.axis_artist.AxisLabel.set_pad
+
+set_pad(pad)[source]
+ 
+Set the internal pad in points. The actual pad will be the sum of the internal pad and the external pad (the latter is set automatically by the AxisArtist).

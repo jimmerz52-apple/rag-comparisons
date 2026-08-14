@@ -1,0 +1,4 @@
+# python.library.gc#gc.get_freeze_count
+
+gc.get_freeze_count()  
+Return the number of objects in the permanent generation.  New in version 3.7.

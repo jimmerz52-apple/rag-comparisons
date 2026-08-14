@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.multioutput.regressorchain#sklearn.multioutput.RegressorChain.predict
+
+predict(X) [source]
+ 
+Predict on the data matrix X using the ClassifierChain model.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input data.    Returns 
+ 
+Y_predarray-like of shape (n_samples, n_classes) 
+
+The predicted values.

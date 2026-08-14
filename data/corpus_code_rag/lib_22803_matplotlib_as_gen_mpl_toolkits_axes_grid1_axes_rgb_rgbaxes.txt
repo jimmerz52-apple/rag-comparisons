@@ -1,0 +1,65 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_rgb.rgbaxes
+
+mpl_toolkits.axes_grid1.axes_rgb.RGBAxes   classmpl_toolkits.axes_grid1.axes_rgb.RGBAxes(*args, pad=0, **kwargs)[source]
+ 
+Bases: object 4-panel imshow (RGB, R, G, B). Layout:  
+RGB R  
+G  
+B   Subclasses can override the _defaultAxesClass attribute.  Attributes 
+ 
+RGB_defaultAxesClass
+
+
+The axes object for the three-channel imshow.  
+R_defaultAxesClass
+
+
+The axes object for the red channel imshow.  
+G_defaultAxesClass
+
+
+The axes object for the green channel imshow.  
+B_defaultAxesClass
+
+
+The axes object for the blue channel imshow.      Parameters 
+ 
+padfloat, default: 0
+
+
+fraction of the axes height to put as padding.  
+axes_classmatplotlib.axes.Axes
+
+*args
+
+Unpacked into axes_class() init for RGB  **kwargs
+
+Unpacked into axes_class() init for RGB, R, G, B axes       imshow_rgb(r, g, b, **kwargs)[source]
+ 
+Create the four images {rgb, r, g, b}.  Parameters 
+ 
+r, g, barray-like
+
+
+The red, green, and blue arrays.  
+kwargsimshow kwargs
+
+
+kwargs get unpacked into the imshow calls for the four images.    Returns 
+ 
+rgbmatplotlib.image.AxesImage
+
+
+rmatplotlib.image.AxesImage
+
+
+gmatplotlib.image.AxesImage
+
+
+bmatplotlib.image.AxesImage
+
+   
+ 
+  Examples using mpl_toolkits.axes_grid1.axes_rgb.RGBAxes
+ 
+   Showing RGB channels using RGBAxes

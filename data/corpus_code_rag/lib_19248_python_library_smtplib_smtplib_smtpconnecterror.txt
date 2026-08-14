@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPConnectError
+
+exception smtplib.SMTPConnectError  
+Error occurred during establishment of a connection with the server.

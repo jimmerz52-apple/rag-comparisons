@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Func.function
+
+function  
+A class attribute describing the function that will be generated. Specifically, the function will be interpolated as the function placeholder within template. Defaults to None.

@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser.check_password
+
+check_password(raw_password)  
+Returns True if the given raw string is the correct password for the user. (This takes care of the password hashing in making the comparison.)

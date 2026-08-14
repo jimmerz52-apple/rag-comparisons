@@ -1,0 +1,10 @@
+# torch.nn.init#torch.nn.init.orthogonal_
+
+torch.nn.init.orthogonal_(tensor, gain=1) [source]
+ 
+Fills the input Tensor with a (semi) orthogonal matrix, as described in Exact solutions to the nonlinear dynamics of learning in deep linear neural networks - Saxe, A. et al. (2013). The input tensor must have at least 2 dimensions, and for tensors with more than 2 dimensions the trailing dimensions are flattened.  Parameters 
+ 
+tensor – an n-dimensional torch.Tensor, where n≥2n \geq 2 
+ 
+gain – optional scaling factor    Examples >>> w = torch.empty(3, 5)
+>>> nn.init.orthogonal_(w)

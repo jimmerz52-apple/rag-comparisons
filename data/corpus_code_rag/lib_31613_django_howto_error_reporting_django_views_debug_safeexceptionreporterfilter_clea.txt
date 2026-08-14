@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.SafeExceptionReporterFilter.cleansed_substitute
+
+cleansed_substitute  
+The string value to replace sensitive value with. By default it replaces the values of sensitive variables with stars (**********).

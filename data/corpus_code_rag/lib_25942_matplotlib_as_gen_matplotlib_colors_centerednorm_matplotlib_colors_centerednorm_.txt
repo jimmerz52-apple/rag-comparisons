@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.centerednorm#matplotlib.colors.CenteredNorm.autoscale
+
+autoscale(A)[source]
+ 
+Set halfrange to max(abs(A-vcenter)), then set vmin and vmax.

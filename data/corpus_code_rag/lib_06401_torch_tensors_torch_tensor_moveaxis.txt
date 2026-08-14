@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.moveaxis
+
+moveaxis(source, destination) → Tensor  
+See torch.moveaxis()

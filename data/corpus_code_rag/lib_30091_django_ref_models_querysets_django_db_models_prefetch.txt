@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.Prefetch
+
+class Prefetch(lookup, queryset=None, to_attr=None)

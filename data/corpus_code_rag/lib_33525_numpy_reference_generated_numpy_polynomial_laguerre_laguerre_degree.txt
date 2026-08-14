@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.laguerre.degree
+
+numpy.polynomial.laguerre.Laguerre.degree method   polynomial.laguerre.Laguerre.degree()[source]
+ 
+The degree of the series.  New in version 1.5.0.   Returns 
+ 
+degreeint
+
+
+Degree of the series, one less than the number of coefficients.

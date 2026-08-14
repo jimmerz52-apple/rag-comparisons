@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cumprod_
+
+cumprod_(dim, dtype=None) → Tensor  
+In-place version of cumprod()

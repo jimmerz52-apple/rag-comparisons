@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ldexp
+
+ldexp(other) → Tensor  
+See torch.ldexp()

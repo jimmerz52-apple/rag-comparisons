@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.second.__call__
+
+pandas.tseries.offsets.Second.__call__   Second.__call__(*args, **kwargs)
+ 
+Call self as a function.

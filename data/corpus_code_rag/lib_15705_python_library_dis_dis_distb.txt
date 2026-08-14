@@ -1,0 +1,4 @@
+# python.library.dis#dis.distb
+
+dis.distb(tb=None, *, file=None)  
+Disassemble the top-of-stack function of a traceback, using the last traceback if none was passed. The instruction causing the exception is indicated. The disassembly is written as text to the supplied file argument if provided and to sys.stdout otherwise.  Changed in version 3.4: Added file parameter.

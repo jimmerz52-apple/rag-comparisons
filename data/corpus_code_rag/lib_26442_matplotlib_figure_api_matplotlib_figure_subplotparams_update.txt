@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.SubplotParams.update
+
+update(left=None, bottom=None, right=None, top=None, wspace=None, hspace=None)[source]
+ 
+Update the dimensions of the passed parameters. None means unchanged.

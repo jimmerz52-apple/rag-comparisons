@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.hermite.hermweight
+
+numpy.polynomial.hermite.hermweight   polynomial.hermite.hermweight(x)[source]
+ 
+Weight function of the Hermite polynomials. The weight function is \(\exp(-x^2)\) and the interval of integration is \([-\inf, \inf]\). the Hermite polynomials are orthogonal, but not normalized, with respect to this weight function.  Parameters 
+ 
+xarray_like
+
+
+Values at which the weight function will be computed.    Returns 
+ 
+wndarray
+
+
+The weight function at x.     Notes  New in version 1.7.0.

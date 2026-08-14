@@ -1,0 +1,15 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Point
+
+class Point  
+ 
+x 
+ Returns the X coordinate of this point: >>> OGRGeometry('POINT (1 2)').x
+1.0
+  
+y 
+ Returns the Y coordinate of this point: >>> OGRGeometry('POINT (1 2)').y
+2.0
+  
+z 
+ Returns the Z coordinate of this point, or None if the point does not have a Z coordinate: >>> OGRGeometry('POINT (1 2 3)').z
+3.0

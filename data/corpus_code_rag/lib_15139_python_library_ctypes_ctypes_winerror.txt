@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.WinError
+
+ctypes.WinError(code=None, descr=None)  
+Windows only: this function is probably the worst-named thing in ctypes. It creates an instance of OSError. If code is not specified, GetLastError is called to determine the error code. If descr is not specified, FormatError() is called to get a textual description of the error.  Changed in version 3.3: An instance of WindowsError used to be created.

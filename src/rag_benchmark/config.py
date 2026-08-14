@@ -55,6 +55,7 @@ class BenchmarkConfig:
     pricing: dict[str, dict[str, float]] = field(default_factory=dict)
     random_seed: int = 42
     reuse_indexes: bool = False
+    max_answer_tokens: int = 96
 
     @classmethod
     def from_yaml(cls, project_root: Path, config_path: Path | None = None) -> "BenchmarkConfig":
@@ -148,6 +149,7 @@ class BenchmarkConfig:
             pricing=pricing,
             random_seed=benchmark.get("random_seed", 42),
             reuse_indexes=benchmark.get("reuse_indexes", False),
+            max_answer_tokens=int(llm.get("max_answer_tokens", 96)),
         )
 
     def results_dir(self) -> Path:

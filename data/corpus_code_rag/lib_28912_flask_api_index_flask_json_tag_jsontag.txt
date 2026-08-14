@@ -1,0 +1,28 @@
+# flask.api.index#flask.json.tag.JSONTag
+
+class flask.json.tag.JSONTag(serializer)  
+Base class for defining type tags for TaggedJSONSerializer.  Parameters 
+serializer (TaggedJSONSerializer) –   Return type 
+None    
+check(value)  
+Check if the given value should be tagged by this tag.  Parameters 
+value (Any) –   Return type 
+bool   
+  
+key: Optional[str] = None  
+The tag to mark the serialized object with. If None, this tag is only used as an intermediate step during tagging. 
+  
+tag(value)  
+Convert the value to a valid JSON type and add the tag structure around it.  Parameters 
+value (Any) –   Return type 
+Any   
+  
+to_json(value)  
+Convert the Python object to an object that is a valid JSON type. The tag will be added later.  Parameters 
+value (Any) –   Return type 
+Any   
+  
+to_python(value)  
+Convert the JSON representation back to the correct type. The tag will already be removed.  Parameters 
+value (Any) –   Return type 
+Any

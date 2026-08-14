@@ -1,0 +1,12 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.host_axes
+
+mpl_toolkits.axes_grid1.parasite_axes.host_axes   mpl_toolkits.axes_grid1.parasite_axes.host_axes(*args, axes_class=<class 'mpl_toolkits.axes_grid1.mpl_axes.Axes'>, figure=None, **kwargs)[source]
+ 
+Create axes that can act as a hosts to parasitic axes.  Parameters 
+ 
+figurematplotlib.figure.Figure
+
+
+Figure to which the axes will be added. Defaults to the current figure pyplot.gcf().  *args, **kwargs
+
+Will be passed on to the underlying Axes object creation.

@@ -1,0 +1,4 @@
+# python.library.re#re.Match.lastgroup
+
+Match.lastgroup  
+The name of the last matched capturing group, or None if the group didn’t have a name, or if no group was matched at all.

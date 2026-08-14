@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.diag
+
+diag(diagonal=0) → Tensor  
+See torch.diag()

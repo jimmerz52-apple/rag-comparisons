@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.axis.tick.get_pad_pixels
+
+matplotlib.axis.Tick.get_pad_pixels   Tick.get_pad_pixels()[source]

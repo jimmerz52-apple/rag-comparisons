@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.micro.__call__
+
+pandas.tseries.offsets.Micro.__call__   Micro.__call__(*args, **kwargs)
+ 
+Call self as a function.

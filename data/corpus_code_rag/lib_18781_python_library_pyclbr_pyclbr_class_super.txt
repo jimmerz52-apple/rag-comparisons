@@ -1,0 +1,4 @@
+# python.library.pyclbr#pyclbr.Class.super
+
+Class.super  
+A list of Class objects which describe the immediate base classes of the class being described. Classes which are named as superclasses but which are not discoverable by readmodule_ex() are listed as a string with the class name instead of as Class objects.

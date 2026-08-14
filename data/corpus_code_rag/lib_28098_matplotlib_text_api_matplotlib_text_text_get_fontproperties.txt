@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_fontproperties
+
+get_fontproperties()[source]
+ 
+Return the font_manager.FontProperties.

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.crosses
+
+GEOSGeometry.crosses(other)  
+Returns True if the DE-9IM intersection matrix for the two Geometries is T*T****** (for a point and a curve,a point and an area or a line and an area) 0******** (for two curves).

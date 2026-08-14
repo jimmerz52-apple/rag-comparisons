@@ -1,0 +1,4 @@
+# python.library.resource#resource.getpagesize
+
+resource.getpagesize()  
+Returns the number of bytes in a system page. (This need not be the same as the hardware page size.)

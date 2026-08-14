@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_lzma
+
+@test.support.requires_lzma  
+Decorator for skipping tests if lzma doesn’t exist.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ModelFormMixin.get_form_class
+
+get_form_class()  
+Retrieve the form class to instantiate. If form_class is provided, that class will be used. Otherwise, a ModelForm will be instantiated using the model associated with the queryset, or with the model, depending on which attribute is provided.

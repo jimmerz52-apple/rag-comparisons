@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_ITERABLE_COROUTINE
+
+inspect.CO_ITERABLE_COROUTINE  
+The flag is used to transform generators into generator-based coroutines. Generator objects with this flag can be used in await expression, and can yield from coroutine objects. See PEP 492 for more details.  New in version 3.5.

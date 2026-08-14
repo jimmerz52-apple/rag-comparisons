@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ufunc.__call__
+
+numpy.ufunc.__call__ method   ufunc.__call__(*args, **kwargs)
+ 
+Call self as a function.

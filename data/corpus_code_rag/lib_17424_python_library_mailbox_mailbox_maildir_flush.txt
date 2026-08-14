@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Maildir.flush
+
+flush()  
+All changes to Maildir mailboxes are immediately applied, so this method does nothing.

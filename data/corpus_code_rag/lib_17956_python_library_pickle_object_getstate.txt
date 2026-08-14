@@ -1,0 +1,4 @@
+# python.library.pickle#object.__getstate__
+
+object.__getstate__()  
+Classes can further influence how their instances are pickled; if the class defines the method __getstate__(), it is called and the returned object is pickled as the contents for the instance, instead of the contents of the instance’s dictionary. If the __getstate__() method is absent, the instance’s __dict__ is pickled as usual.

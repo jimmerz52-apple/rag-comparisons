@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.Signature.bind_partial
+
+bind_partial(*args, **kwargs)  
+Works the same way as Signature.bind(), but allows the omission of some required arguments (mimics functools.partial() behavior.) Returns BoundArguments, or raises a TypeError if the passed arguments do not match the signature.

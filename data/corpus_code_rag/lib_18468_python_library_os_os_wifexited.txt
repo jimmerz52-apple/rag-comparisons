@@ -1,0 +1,4 @@
+# python.library.os#os.WIFEXITED
+
+os.WIFEXITED(status)  
+Return True if the process exited terminated normally, that is, by calling exit() or _exit(), or by returning from main(); otherwise return False. Availability: Unix.

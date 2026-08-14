@@ -1,0 +1,11 @@
+# pandas.reference.api.pandas.core.groupby.groupby.cumsum
+
+pandas.core.groupby.GroupBy.cumsum   finalGroupBy.cumsum(axis=0, *args, **kwargs)[source]
+ 
+Cumulative sum for each group.  Returns 
+ Series or DataFrame
+    See also  Series.groupby
+
+Apply a function groupby to a Series.  DataFrame.groupby
+
+Apply a function groupby to each row or column of a DataFrame.

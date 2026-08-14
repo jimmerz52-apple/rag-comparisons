@@ -1,0 +1,7 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.toolmanager_disconnect
+
+toolmanager_disconnect(cid)[source]
+ 
+Disconnect callback id cid. Example usage: cid = toolmanager.toolmanager_connect('tool_trigger_zoom', onpress)
+#...later
+toolmanager.toolmanager_disconnect(cid)

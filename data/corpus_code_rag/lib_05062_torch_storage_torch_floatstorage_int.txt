@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.int
+
+int()  
+Casts this storage to int type

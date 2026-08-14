@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer.dumps
+
+dumps(value)  
+Tag the value and dump it to a compact JSON string.  Parameters 
+value (Any) –   Return type 
+str

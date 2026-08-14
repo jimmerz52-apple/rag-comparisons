@@ -1,0 +1,4 @@
+# python.library.csv#csv.Dialect
+
+class csv.Dialect  
+The Dialect class is a container class relied on primarily for its attributes, which are used to define the parameters for a specific reader or writer instance.

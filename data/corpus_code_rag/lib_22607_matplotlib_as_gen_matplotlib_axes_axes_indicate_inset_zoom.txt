@@ -1,0 +1,24 @@
+# matplotlib._as_gen.matplotlib.axes.axes.indicate_inset_zoom
+
+matplotlib.axes.Axes.indicate_inset_zoom   Axes.indicate_inset_zoom(inset_ax, **kwargs)[source]
+ 
+Add an inset indicator rectangle to the Axes based on the axis limits for an inset_ax and draw connectors between inset_ax and the rectangle.  Parameters 
+ 
+inset_axAxes
+
+
+Inset Axes to draw connecting lines to. Two lines are drawn connecting the indicator box to the inset Axes on corners chosen so as to not overlap with the indicator box.  **kwargs
+
+Other keyword arguments are passed on to Axes.indicate_inset    Returns 
+ 
+rectangle_patchpatches.Rectangle
+
+
+Rectangle artist.  
+connector_lines4-tuple of patches.ConnectionPatch
+
+
+Each of four connector lines coming from the rectangle drawn on this axis, in the order lower left, upper left, lower right, upper right. Two are set with visibility to False, but the user can set the visibility to True if the automatic choice is not deemed correct.      Warning This method is experimental as of 3.0, and the API may change.  
+  Examples using matplotlib.axes.Axes.indicate_inset_zoom
+ 
+   Zoom region inset axes

@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.search_help_text
+
+ModelAdmin.search_help_text  
+ New in Django 4.0.  Set search_help_text to specify a descriptive text for the search box which will be displayed below it.

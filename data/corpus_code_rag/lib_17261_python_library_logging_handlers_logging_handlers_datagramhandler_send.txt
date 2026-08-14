@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.DatagramHandler.send
+
+send(s)  
+Send a pickled byte-string to a socket. The format of the sent byte-string is as described in the documentation for SocketHandler.makePickle().

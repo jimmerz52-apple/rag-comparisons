@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.kml
+
+GEOSGeometry.kml  
+Returns a KML (Keyhole Markup Language) representation of the geometry. This should only be used for geometries with an SRID of 4326 (WGS84), but this restriction is not enforced.

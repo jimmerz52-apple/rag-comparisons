@@ -1,0 +1,10 @@
+# django.ref.forms.widgets#django.forms.Widget.get_context
+
+get_context(name, value, attrs)  
+Returns a dictionary of values to use when rendering the widget template. By default, the dictionary contains a single key, 'widget', which is a dictionary representation of the widget containing the following keys:  
+'name': The name of the field from the name argument. 
+'is_hidden': A boolean indicating whether or not this widget is hidden. 
+'required': A boolean indicating whether or not the field for this widget is required. 
+'value': The value as returned by format_value(). 
+'attrs': HTML attributes to be set on the rendered widget. The combination of the attrs attribute and the attrs argument. 
+'template_name': The value of self.template_name.  Widget subclasses can provide custom context values by overriding this method.

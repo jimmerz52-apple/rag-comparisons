@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.rsqrt_
+
+rsqrt_() → Tensor  
+In-place version of rsqrt()

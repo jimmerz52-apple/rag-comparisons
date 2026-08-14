@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.user
+
+LogEntry.user  
+The user (an AUTH_USER_MODEL instance) who performed the action.

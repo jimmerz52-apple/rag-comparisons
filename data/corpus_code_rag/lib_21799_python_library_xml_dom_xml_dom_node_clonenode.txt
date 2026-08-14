@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.cloneNode
+
+Node.cloneNode(deep)  
+Clone this node. Setting deep means to clone all child nodes as well. This returns the clone.

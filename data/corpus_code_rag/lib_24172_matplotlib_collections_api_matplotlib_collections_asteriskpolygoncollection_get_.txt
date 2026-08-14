@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.AsteriskPolygonCollection.get_visible
+
+get_visible()[source]
+ 
+Return the visibility.

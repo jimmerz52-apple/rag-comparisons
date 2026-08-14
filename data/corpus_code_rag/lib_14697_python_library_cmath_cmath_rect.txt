@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.rect
+
+cmath.rect(r, phi)  
+Return the complex number x with polar coordinates r and phi. Equivalent to r * (math.cos(phi) + math.sin(phi)*1j).

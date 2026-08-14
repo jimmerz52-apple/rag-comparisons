@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.contains
+
+contains(mouseevent)[source]
+ 
+Test whether mouseevent occurred on the line. An event is deemed to have occurred "on" the line if it is less than self.pickradius (default: 5 points) away from it. Use get_pickradius or set_pickradius to get or set the pick radius.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+A dictionary {'ind': pointlist}, where pointlist is a list of points of the line that are within the pickradius around the event position. TODO: sort returned indices by distance

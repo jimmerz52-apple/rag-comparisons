@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.write
+
+write(outfile, encoding)  
+Outputs the feed in the given encoding to outfile, which is a file-like object. Subclasses should override this.

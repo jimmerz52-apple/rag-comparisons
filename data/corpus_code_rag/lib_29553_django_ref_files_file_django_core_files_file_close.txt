@@ -1,0 +1,5 @@
+# django.ref.files.file#django.core.files.File.close
+
+close() [source]
+ 
+Close the file.

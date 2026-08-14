@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.intersection
+
+staticintersection(bbox1, bbox2)[source]
+ 
+Return the intersection of bbox1 and bbox2 if they intersect, or None if they don't.

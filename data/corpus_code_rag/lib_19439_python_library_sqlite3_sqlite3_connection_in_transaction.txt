@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Connection.in_transaction
+
+in_transaction  
+True if a transaction is active (there are uncommitted changes), False otherwise. Read-only attribute.  New in version 3.2.

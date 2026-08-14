@@ -1,0 +1,43 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Field
+
+class Field  
+ 
+name 
+ Returns the name of this field: >>> city['Name'].name
+'Name'
+  
+type 
+ Returns the OGR type of this field, as an integer. The FIELD_CLASSES dictionary maps these values onto subclasses of Field: >>> city['Density'].type
+2
+  
+type_name 
+ Returns a string with the name of the data type of this field: >>> city['Name'].type_name
+'String'
+  
+value 
+ Returns the value of this field. The Field class itself returns the value as a string, but each subclass returns the value in the most appropriate form: >>> city['Population'].value
+102121
+  
+width 
+ Returns the width of this field: >>> city['Name'].width
+80
+  
+precision 
+ Returns the numeric precision of this field. This is meaningless (and set to zero) for non-numeric fields: >>> city['Density'].precision
+15
+  
+as_double() 
+ Returns the value of the field as a double (float): >>> city['Density'].as_double()
+874.7
+  
+as_int() 
+ Returns the value of the field as an integer: >>> city['Population'].as_int()
+102121
+  
+as_string() 
+ Returns the value of the field as a string: >>> city['Name'].as_string()
+'Pueblo'
+  
+as_datetime() 
+ Returns the value of the field as a tuple of date and time components: >>> city['Created'].as_datetime()
+(c_long(1999), c_long(5), c_long(23), c_long(0), c_long(0), c_long(0), c_long(0))

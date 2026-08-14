@@ -1,0 +1,16 @@
+# python.library.pathlib#pathlib.PurePath.is_absolute
+
+PurePath.is_absolute()  
+Return whether the path is absolute or not. A path is considered absolute if it has both a root and (if the flavour allows) a drive: >>> PurePosixPath('/a/b').is_absolute()
+True
+>>> PurePosixPath('a/b').is_absolute()
+False
+
+>>> PureWindowsPath('c:/a/b').is_absolute()
+True
+>>> PureWindowsPath('/a/b').is_absolute()
+False
+>>> PureWindowsPath('c:').is_absolute()
+False
+>>> PureWindowsPath('//some/share').is_absolute()
+True

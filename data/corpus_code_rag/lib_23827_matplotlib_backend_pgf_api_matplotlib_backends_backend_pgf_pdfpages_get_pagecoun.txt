@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.PdfPages.get_pagecount
+
+get_pagecount()[source]
+ 
+Return the current number of pages in the multipage pdf file.

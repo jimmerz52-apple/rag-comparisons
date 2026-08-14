@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessProtocol.process_exited
+
+SubprocessProtocol.process_exited()  
+Called when the child process has exited.

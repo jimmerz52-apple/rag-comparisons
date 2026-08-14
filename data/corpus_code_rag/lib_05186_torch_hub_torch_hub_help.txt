@@ -1,0 +1,9 @@
+# torch.hub#torch.hub.help
+
+torch.hub.help(github, model, force_reload=False) [source]
+ 
+Show the docstring of entrypoint model.  Parameters 
+ 
+github (string) – a string with format <repo_owner/repo_name[:tag_name]> with an optional tag/branch. The default branch is master if not specified. Example: ‘pytorch/vision[:hub]’ 
+model (string) – a string of entrypoint name defined in repo’s hubconf.py 
+force_reload (bool, optional) – whether to discard the existing cache and force a fresh download. Default is False.    Example >>> print(torch.hub.help('pytorch/vision', 'resnet18', force_reload=True))

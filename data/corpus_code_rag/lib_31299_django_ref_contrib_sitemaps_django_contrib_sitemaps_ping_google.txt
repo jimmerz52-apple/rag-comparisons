@@ -1,0 +1,7 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.ping_google
+
+ping_google(sitemap_url=None, ping_url=PING_URL, sitemap_uses_https=True)  
+ping_google takes these optional arguments:  
+sitemap_url - The absolute path to your site’s sitemap (e.g., '/sitemap.xml'). If this argument isn’t provided, ping_google will perform a reverse lookup in your URLconf, for URLs named 'django.contrib.sitemaps.views.index' and then 'django.contrib.sitemaps.views.sitemap' (without further arguments) to automatically determine the sitemap URL.  
+ping_url - Defaults to Google’s Ping Tool: https://www.google.com/webmasters/tools/ping.  
+sitemap_uses_https - Set to False if your site uses http rather than https.   ping_google() raises the exception django.contrib.sitemaps.SitemapNotFound if it cannot determine your sitemap URL.

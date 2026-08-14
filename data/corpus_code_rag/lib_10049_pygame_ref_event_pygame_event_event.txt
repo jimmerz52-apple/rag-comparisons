@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.Event
+
+pygame.event.Event() 
+ create a new event object Event(type, dict) -> EventType instance Event(type, **attributes) -> EventType instance  Creates a new event with the given type and attributes. The attributes can come from a dictionary argument with string keys or from keyword arguments.

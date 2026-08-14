@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.islnk
+
+TarInfo.islnk()  
+Return True if it is a hard link.

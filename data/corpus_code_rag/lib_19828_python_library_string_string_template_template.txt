@@ -1,0 +1,4 @@
+# python.library.string#string.Template.template
+
+template  
+This is the object passed to the constructor’s template argument. In general, you shouldn’t change it, but read-only access is not enforced.

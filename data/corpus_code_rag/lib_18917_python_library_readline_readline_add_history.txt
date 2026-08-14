@@ -1,0 +1,4 @@
+# python.library.readline#readline.add_history
+
+readline.add_history(line)  
+Append line to the history buffer, as if it was the last line typed. This calls add_history() in the underlying library.

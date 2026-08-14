@@ -1,0 +1,13 @@
+# matplotlib.dates_api#matplotlib.dates.DateConverter
+
+classmatplotlib.dates.DateConverter(*, interval_multiples=True)[source]
+ 
+Bases: matplotlib.units.ConversionInterface Converter for datetime.date and datetime.datetime data, or for date/time data represented as it would be converted by date2num. The 'unit' tag for such data is None or a tzinfo instance.   axisinfo(unit, axis)[source]
+ 
+Return the AxisInfo for unit. unit is a tzinfo instance or None. The axis argument is required but not used. 
+   staticconvert(value, unit, axis)[source]
+ 
+If value is not already a number or sequence of numbers, convert it with date2num. The unit and axis arguments are not used. 
+   staticdefault_units(x, axis)[source]
+ 
+Return the tzinfo instance of x or of its first element, or None

@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.tried
+
+tried  
+ New in Django 3.2.  The list of URL patterns tried before the URL either matched one or exhausted available patterns.

@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.set_step
+
+set_step()  
+Stop after one line of code.

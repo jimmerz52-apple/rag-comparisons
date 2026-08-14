@@ -1,0 +1,4 @@
+# python.library.urllib.error#urllib.error.HTTPError.code
+
+code  
+An HTTP status code as defined in RFC 2616. This numeric value corresponds to a value found in the dictionary of codes as found in http.server.BaseHTTPRequestHandler.responses.

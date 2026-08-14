@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.nano.__call__
+
+pandas.tseries.offsets.Nano.__call__   Nano.__call__(*args, **kwargs)
+ 
+Call self as a function.

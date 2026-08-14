@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_stretch
+
+get_stretch()[source]
+ 
+Return the font stretch as a string or a number.  See also  font_manager.FontProperties.get_stretch

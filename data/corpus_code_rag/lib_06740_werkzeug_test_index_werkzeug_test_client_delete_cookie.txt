@@ -1,0 +1,13 @@
+# werkzeug.test.index#werkzeug.test.Client.delete_cookie
+
+delete_cookie(server_name, key, path='/', domain=None, secure=False, httponly=False, samesite=None)  
+Deletes a cookie in the test client.  Parameters 
+ 
+server_name (str) –  
+key (str) –  
+path (str) –  
+domain (Optional[str]) –  
+secure (bool) –  
+httponly (bool) –  
+samesite (Optional[str]) –    Return type 
+None

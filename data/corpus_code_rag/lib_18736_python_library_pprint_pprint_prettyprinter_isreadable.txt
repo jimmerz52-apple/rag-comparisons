@@ -1,0 +1,4 @@
+# python.library.pprint#pprint.PrettyPrinter.isreadable
+
+PrettyPrinter.isreadable(object)  
+Determine if the formatted representation of the object is “readable,” or can be used to reconstruct the value using eval(). Note that this returns False for recursive objects. If the depth parameter of the PrettyPrinter is set and the object is deeper than allowed, this returns False.

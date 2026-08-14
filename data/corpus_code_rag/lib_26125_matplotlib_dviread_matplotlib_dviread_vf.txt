@@ -1,0 +1,12 @@
+# matplotlib.dviread#matplotlib.dviread.Vf
+
+classmatplotlib.dviread.Vf(filename)[source]
+ 
+Bases: matplotlib.dviread.Dvi A virtual font (*.vf file) containing subroutines for dvi files.  Parameters 
+ 
+filenamestr or path-like
+
+   Notes The virtual font format is a derivative of dvi: http://mirrors.ctan.org/info/knuth/virtual-fonts This class reuses some of the machinery of Dvi but replaces the _read loop and dispatch mechanism. Examples vf = Vf(filename)
+glyph = vf[code]
+glyph.text, glyph.boxes, glyph.width
+ Read the data from the file named filename and convert TeX's internal units to units of dpi per inch. dpi only sets the units and does not limit the resolution. Use None to return TeX's internal units.

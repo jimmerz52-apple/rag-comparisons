@@ -1,0 +1,15 @@
+# django.topics.signing#django.core.signing.TimestampSigner
+
+class TimestampSigner(key=None, sep=':', salt=None, algorithm='sha256')  
+ 
+sign(value)  
+Sign value and append current timestamp to it. 
+  
+unsign(value, max_age=None)  
+Checks if value was signed less than max_age seconds ago, otherwise raises SignatureExpired. The max_age parameter can accept an integer or a datetime.timedelta object. 
+  
+sign_object(obj, serializer=JSONSerializer, compress=False)  
+ New in Django 3.2.  Encode, optionally compress, append current timestamp, and sign complex data structure (e.g. list, tuple, or dictionary). 
+  
+unsign_object(signed_obj, serializer=JSONSerializer, max_age=None)  
+ New in Django 3.2.  Checks if signed_obj was signed less than max_age seconds ago, otherwise raises SignatureExpired. The max_age parameter can accept an integer or a datetime.timedelta object.

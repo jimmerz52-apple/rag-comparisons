@@ -1,0 +1,14 @@
+# torch.distributed#torch.distributed.FileStore
+
+class torch.distributed.FileStore  
+A store implementation that uses a file to store the underlying key-value pairs.  Parameters 
+ 
+file_name (str) – path of the file in which to store the key-value pairs 
+world_size (int) – The total number of processes using the store     Example::
+
+>>> import torch.distributed as dist
+>>> store1 = dist.FileStore("/tmp/filestore", 2)
+>>> store2 = dist.FileStore("/tmp/filestore", 2)
+>>> # Use any of the store methods from either the client or server after initialization
+>>> store1.set("first_key", "first_value")
+>>> store2.get("first_key")

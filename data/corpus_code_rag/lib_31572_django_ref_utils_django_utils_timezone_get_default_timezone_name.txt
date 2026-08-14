@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.get_default_timezone_name
+
+get_default_timezone_name()  
+Returns the name of the default time zone.

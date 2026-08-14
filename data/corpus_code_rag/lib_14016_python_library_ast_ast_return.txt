@@ -1,0 +1,9 @@
+# python.library.ast#ast.Return
+
+class ast.Return(value)  
+A return statement. >>> print(ast.dump(ast.parse('return 4'), indent=4))
+Module(
+    body=[
+        Return(
+            value=Constant(value=4))],
+    type_ignores=[])

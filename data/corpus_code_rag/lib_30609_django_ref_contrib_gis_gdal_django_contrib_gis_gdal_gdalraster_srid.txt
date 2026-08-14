@@ -1,0 +1,11 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.srid
+
+srid  
+The Spatial Reference System Identifier (SRID) of the raster. This property is a shortcut to getting or setting the SRID through the srs attribute. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.srid
+4326
+>>> rst.srid = 3086
+>>> rst.srid
+3086
+>>> rst.srs.srid  # This is equivalent
+3086

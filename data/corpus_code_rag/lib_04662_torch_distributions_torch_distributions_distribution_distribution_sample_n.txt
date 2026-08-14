@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.distribution.Distribution.sample_n
+
+sample_n(n) [source]
+ 
+Generates n samples or n batches of samples if the distribution parameters are batched.

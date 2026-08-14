@@ -1,0 +1,4 @@
+# python.library.pickletools#pickletools.genops
+
+pickletools.genops(pickle)  
+Provides an iterator over all of the opcodes in a pickle, returning a sequence of (opcode, arg, pos) triples. opcode is an instance of an OpcodeInfo class; arg is the decoded value, as a Python object, of the opcode’s argument; pos is the position at which this opcode is located. pickle can be a string or a file-like object.

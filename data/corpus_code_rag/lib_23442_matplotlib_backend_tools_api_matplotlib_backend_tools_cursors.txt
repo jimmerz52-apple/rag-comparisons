@@ -1,0 +1,17 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.Cursors
+
+classmatplotlib.backend_tools.Cursors(value)[source]
+ 
+Bases: enum.IntEnum Backend-independent cursor types.   HAND=2[source]
+
+   MOVE=4[source]
+
+   POINTER=1[source]
+
+   RESIZE_HORIZONTAL=6[source]
+
+   RESIZE_VERTICAL=7[source]
+
+   SELECT_REGION=3[source]
+
+   WAIT=5[source]

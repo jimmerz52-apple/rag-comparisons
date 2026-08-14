@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.renorm
+
+renorm(p, dim, maxnorm) → Tensor  
+See torch.renorm()

@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentType.name
+
+name  
+The human-readable name of the content type. This is taken from the verbose_name attribute of the model.

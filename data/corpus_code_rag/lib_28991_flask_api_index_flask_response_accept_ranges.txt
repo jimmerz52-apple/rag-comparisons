@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.accept_ranges
+
+accept_ranges  
+The Accept-Ranges header. Even though the name would indicate that multiple values are supported, it must be one string token only. The values 'bytes' and 'none' are common.  Changelog New in version 0.7.

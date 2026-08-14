@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.path
+
+Cookie.path  
+Cookie path (a string, eg. '/acme/rocket_launchers').

@@ -1,0 +1,25 @@
+# matplotlib._as_gen.matplotlib.colors.to_rgba
+
+matplotlib.colors.to_rgba   matplotlib.colors.to_rgba(c, alpha=None)[source]
+ 
+Convert c to an RGBA color.  Parameters 
+ 
+cMatplotlib color or np.ma.masked
+
+
+alphafloat, optional
+
+
+If alpha is given, force the alpha value of the returned RGBA tuple to alpha. If None, the alpha value from c is used. If c does not have an alpha channel, then alpha defaults to 1. alpha is ignored for the color value "none" (case-insensitive), which always maps to (0, 0, 0, 0).    Returns 
+ tuple
+
+Tuple of floats (r, g, b, a), where each channel (red, green, blue, alpha) can assume values between 0 and 1.     
+  Examples using matplotlib.colors.to_rgba
+ 
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Line Collection   
+
+   Lasso Demo   
+
+   Ribbon Box

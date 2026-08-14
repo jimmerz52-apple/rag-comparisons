@@ -1,0 +1,13 @@
+# python.library.ast#ast.alias
+
+class ast.alias(name, asname)  
+Both parameters are raw strings of the names. asname can be None if the regular name is to be used. >>> print(ast.dump(ast.parse('from ..foo.bar import a as b, c'), indent=4))
+Module(
+    body=[
+        ImportFrom(
+            module='foo.bar',
+            names=[
+                alias(name='a', asname='b'),
+                alias(name='c')],
+            level=2)],
+    type_ignores=[])

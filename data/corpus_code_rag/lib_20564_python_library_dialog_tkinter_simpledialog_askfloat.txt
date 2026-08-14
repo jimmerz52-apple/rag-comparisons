@@ -1,0 +1,6 @@
+# python.library.dialog#tkinter.simpledialog.askfloat
+
+tkinter.simpledialog.askfloat(title, prompt, **kw)  
+tkinter.simpledialog.askinteger(title, prompt, **kw)  
+tkinter.simpledialog.askstring(title, prompt, **kw)  
+The above three functions provide dialogs that prompt the user to enter a value of the desired type.

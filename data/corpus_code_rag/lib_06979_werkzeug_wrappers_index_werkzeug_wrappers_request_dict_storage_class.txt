@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.dict_storage_class
+
+dict_storage_class  
+alias of werkzeug.datastructures.ImmutableMultiDict

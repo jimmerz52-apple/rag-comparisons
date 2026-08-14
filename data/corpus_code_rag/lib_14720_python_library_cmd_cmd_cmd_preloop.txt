@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.preloop
+
+Cmd.preloop()  
+Hook method executed once when cmdloop() is called. This method is a stub in Cmd; it exists to be overridden by subclasses.

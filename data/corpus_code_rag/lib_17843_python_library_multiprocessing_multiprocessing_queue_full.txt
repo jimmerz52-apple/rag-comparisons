@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Queue.full
+
+full()  
+Return True if the queue is full, False otherwise. Because of multithreading/multiprocessing semantics, this is not reliable.

@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.http.http_date
+
+http_date(epoch_seconds=None) [source]
+ 
+Formats the time to match the RFC 1123#section-5.2.14 date format as specified by HTTP RFC 7231#section-7.1.1.1. Accepts a floating point number expressed in seconds since the epoch in UTC–such as that outputted by time.time(). If set to None, defaults to the current time. Outputs a string in the format Wdy, DD Mon YYYY HH:MM:SS GMT.

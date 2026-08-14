@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.prod
+
+prod(dim=None, keepdim=False, dtype=None) → Tensor  
+See torch.prod()

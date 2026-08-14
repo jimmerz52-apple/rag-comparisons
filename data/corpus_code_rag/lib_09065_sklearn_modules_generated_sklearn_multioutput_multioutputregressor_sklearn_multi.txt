@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.multioutput.multioutputregressor#sklearn.multioutput.MultiOutputRegressor.partial_fit
+
+partial_fit(X, y, sample_weight=None) [source]
+ 
+Incrementally fit the model to data. Fit a separate model for each output variable.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Data.  
+y{array-like, sparse matrix} of shape (n_samples, n_outputs) 
+
+Multi-output targets.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Only supported if the underlying regressor supports sample weights.    Returns 
+ 
+selfobject

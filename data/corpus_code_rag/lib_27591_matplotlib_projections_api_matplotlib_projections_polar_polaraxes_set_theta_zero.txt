@@ -1,0 +1,14 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_theta_zero_location
+
+set_theta_zero_location(loc, offset=0.0)[source]
+ 
+Set the location of theta's zero. This simply calls set_theta_offset with the correct value in radians.  Parameters 
+ 
+locstr
+
+
+May be one of "N", "NW", "W", "SW", "S", "SE", "E", or "NE".  
+offsetfloat, default: 0
+
+
+An offset in degrees to apply from the specified loc. Note: this offset is always applied counter-clockwise regardless of the direction setting.

@@ -1,0 +1,17 @@
+# tensorflow.raw_ops.optionalnone
+
+tf.raw_ops.OptionalNone Creates an Optional variant with no value.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.OptionalNone  
+tf.raw_ops.OptionalNone(
+    name=None
+)
+
+ 
+
+
+ Args
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type variant.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.removeResult
+
+unittest.removeResult(result)  
+Remove a registered result. Once a result has been removed then stop() will no longer be called on that result object in response to a control-c.

@@ -1,0 +1,4 @@
+# python.library.typing#typing.SupportsIndex
+
+class typing.SupportsIndex  
+An ABC with one abstract method __index__.  New in version 3.8.

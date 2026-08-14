@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.RequestHandlerClass
+
+RequestHandlerClass  
+The user-provided request handler class; an instance of this class is created for each request.

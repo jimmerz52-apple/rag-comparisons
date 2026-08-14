@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.render_raw
+
+render_raw() 
+ Return rendered text as a string of bytes render_raw(text, style=STYLE_DEFAULT, rotation=0, size=0, invert=False) -> (bytes, (int, int))  Like render() but with the pixels returned as a byte string of 8-bit gray-scale values. The foreground color is 255, the background 0, useful as an alpha mask for a foreground pattern.

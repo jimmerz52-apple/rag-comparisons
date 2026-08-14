@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.distance_squared_to
+
+distance_squared_to() 
+ calculates the squared Euclidean distance to a given vector. distance_squared_to(Vector2) -> float

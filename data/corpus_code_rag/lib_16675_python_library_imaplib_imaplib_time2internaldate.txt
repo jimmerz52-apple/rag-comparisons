@@ -1,0 +1,5 @@
+# python.library.imaplib#imaplib.Time2Internaldate
+
+imaplib.Time2Internaldate(date_time)  
+Convert date_time to an IMAP4 INTERNALDATE representation. The return value is a string in the form: "DD-Mmm-YYYY HH:MM:SS
++HHMM" (including double-quotes). The date_time argument can be a number (int or float) representing seconds since epoch (as returned by time.time()), a 9-tuple representing local time an instance of time.struct_time (as returned by time.localtime()), an aware instance of datetime.datetime, or a double-quoted string. In the last case, it is assumed to already be in the correct format.

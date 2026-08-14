@@ -1,0 +1,9 @@
+# 840
+Task: 840
+
+# Write a python function to check whether the roots of a quadratic equation are numerically equal but opposite in sign or not.
+def Check_Solution(a,b,c):  
+    if b == 0:  
+        return ("Yes")  
+    else: 
+        return ("No")

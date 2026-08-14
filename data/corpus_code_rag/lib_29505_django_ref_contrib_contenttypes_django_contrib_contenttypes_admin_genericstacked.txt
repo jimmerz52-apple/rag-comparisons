@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.admin.GenericStackedInline
+
+class GenericStackedInline  
+Subclasses of GenericInlineModelAdmin with stacked and tabular layouts, respectively.

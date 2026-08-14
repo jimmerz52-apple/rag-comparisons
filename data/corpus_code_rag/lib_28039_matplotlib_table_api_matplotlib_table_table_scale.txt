@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Table.scale
+
+scale(xscale, yscale)[source]
+ 
+Scale column widths by xscale and row heights by yscale.

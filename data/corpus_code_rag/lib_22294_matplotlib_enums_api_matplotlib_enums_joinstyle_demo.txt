@@ -1,0 +1,5 @@
+# matplotlib._enums_api#matplotlib._enums.JoinStyle.demo
+
+staticdemo()[source]
+ 
+Demonstrate how each JoinStyle looks for various join angles.

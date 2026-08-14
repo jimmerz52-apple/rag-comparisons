@@ -1,0 +1,13 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.AxisScaleBase
+
+classmatplotlib.backend_tools.AxisScaleBase(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.ToolToggleBase Base Tool to toggle between linear and logarithmic.   disable(event)[source]
+ 
+Disable the toggle tool. trigger call this method when toggled is True. This can happen in different circumstances.  Click on the toolbar tool button. Call to matplotlib.backend_managers.ToolManager.trigger_tool. Another ToolToggleBase derived tool is triggered (from the same ToolManager).  
+   enable(event)[source]
+ 
+Enable the toggle tool. trigger calls this method when toggled is False. 
+   trigger(sender, event, data=None)[source]
+ 
+Calls enable or disable based on toggled value.

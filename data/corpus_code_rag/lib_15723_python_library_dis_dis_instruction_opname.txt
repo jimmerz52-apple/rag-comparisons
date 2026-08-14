@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.opname
+
+opname  
+human readable name for operation

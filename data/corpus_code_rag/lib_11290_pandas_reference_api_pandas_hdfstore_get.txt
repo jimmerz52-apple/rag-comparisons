@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.hdfstore.get
+
+pandas.HDFStore.get   HDFStore.get(key)[source]
+ 
+Retrieve pandas object stored in file.  Parameters 
+ 
+key:str
+
+  Returns 
+ object
+
+Same type as object stored in file.

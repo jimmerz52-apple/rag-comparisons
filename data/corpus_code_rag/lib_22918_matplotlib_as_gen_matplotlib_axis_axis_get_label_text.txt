@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_label_text
+
+matplotlib.axis.Axis.get_label_text   Axis.get_label_text()[source]
+ 
+Get the text of the label.

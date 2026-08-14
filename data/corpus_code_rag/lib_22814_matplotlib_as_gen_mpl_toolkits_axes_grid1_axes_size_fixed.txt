@@ -1,0 +1,16 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.fixed
+
+mpl_toolkits.axes_grid1.axes_size.Fixed   classmpl_toolkits.axes_grid1.axes_size.Fixed(fixed_size)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base Simple fixed size with absolute part = fixed_size and relative part = 0.   get_size(renderer)[source]
+
+ 
+  Examples using mpl_toolkits.axes_grid1.axes_size.Fixed
+ 
+   HBoxDivider demo   
+
+   Axes with a fixed physical size   
+
+   Simple Axes Divider 1   
+
+   Simple Axes Divider 3

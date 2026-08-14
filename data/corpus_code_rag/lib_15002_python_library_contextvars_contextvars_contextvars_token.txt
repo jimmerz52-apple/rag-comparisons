@@ -1,0 +1,12 @@
+# python.library.contextvars#contextvars.contextvars.Token
+
+class contextvars.Token  
+Token objects are returned by the ContextVar.set() method. They can be passed to the ContextVar.reset() method to revert the value of the variable to what it was before the corresponding set.  
+Token.var  
+A read-only property. Points to the ContextVar object that created the token. 
+  
+Token.old_value  
+A read-only property. Set to the value the variable had before the ContextVar.set() method call that created the token. It points to Token.MISSING is the variable was not set before the call. 
+  
+Token.MISSING  
+A marker object used by Token.old_value.

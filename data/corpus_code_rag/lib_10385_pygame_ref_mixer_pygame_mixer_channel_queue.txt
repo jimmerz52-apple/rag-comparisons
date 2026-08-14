@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.queue
+
+queue() 
+ queue a Sound object to follow the current queue(Sound) -> None  When a Sound is queued on a Channel, it will begin playing immediately after the current Sound is finished. Each channel can only have a single Sound queued at a time. The queued Sound will only play if the current playback finished automatically. It is cleared on any other call to Channel.stop() or Channel.play(). If there is no sound actively playing on the Channel then the Sound will begin playing immediately.

@@ -1,0 +1,19 @@
+# matplotlib._as_gen.matplotlib.axes.axes.invert_yaxis
+
+matplotlib.axes.Axes.invert_yaxis   Axes.invert_yaxis()[source]
+ 
+Invert the y-axis.  See also  yaxis_inverted
+
+get_ylim, set_ylim
+
+
+get_ybound, set_ybound
+
+  
+  Examples using matplotlib.axes.Axes.invert_yaxis
+ 
+   Bar Label Demo   
+
+   Horizontal bar chart   
+
+   Marker reference

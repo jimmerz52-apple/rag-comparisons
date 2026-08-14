@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.sign
+
+tf.experimental.numpy.sign TensorFlow variant of NumPy's sign. 
+tf.experimental.numpy.sign(
+    x, out=None, where=None, **kwargs
+)
+ See the NumPy documentation for numpy.sign.

@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.max_lines
+
+max_lines  
+(default: None) If not None, then the output will contain at most max_lines lines, with placeholder appearing at the end of the output.  New in version 3.4.

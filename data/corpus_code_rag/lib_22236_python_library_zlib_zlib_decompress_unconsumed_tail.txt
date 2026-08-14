@@ -1,0 +1,4 @@
+# python.library.zlib#zlib.Decompress.unconsumed_tail
+
+Decompress.unconsumed_tail  
+A bytes object that contains any data that was not consumed by the last decompress() call because it exceeded the limit for the uncompressed data buffer. This data has not yet been seen by the zlib machinery, so you must feed it (possibly with further data concatenated to it) back to a subsequent decompress() method call in order to get correct output.

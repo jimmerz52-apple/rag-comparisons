@@ -1,0 +1,4 @@
+# python.library.select#select.kqueue.fromfd
+
+kqueue.fromfd(fd)  
+Create a kqueue object from a given file descriptor.

@@ -1,0 +1,38 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.ncut
+
+skimage.future.graph.ncut(labels, rag, thresh=0.001, num_cuts=10, in_place=True, max_edge=1.0, *, random_state=None) [source]
+ 
+Perform Normalized Graph cut on the Region Adjacency Graph. Given an image’s labels and its similarity RAG, recursively perform a 2-way normalized cut on it. All nodes belonging to a subgraph that cannot be cut further are assigned a unique label in the output.  Parameters 
+ 
+labelsndarray 
+
+The array of labels.  
+ragRAG 
+
+The region adjacency graph.  
+threshfloat 
+
+The threshold. A subgraph won’t be further subdivided if the value of the N-cut exceeds thresh.  
+num_cutsint 
+
+The number or N-cuts to perform before determining the optimal one.  
+in_placebool 
+
+If set, modifies rag in place. For each node n the function will set a new attribute rag.nodes[n]['ncut label'].  
+max_edgefloat, optional 
+
+The maximum possible value of an edge in the RAG. This corresponds to an edge between identical regions. This is used to put self edges in the RAG.  
+random_stateint, RandomState instance or None, optional 
+
+If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random. The random state is used for the starting point of scipy.sparse.linalg.eigsh.    Returns 
+ 
+outndarray 
+
+The new labeled array.     References  
+1  
+Shi, J.; Malik, J., “Normalized cuts and image segmentation”, Pattern Analysis and Machine Intelligence, IEEE Transactions on, vol. 22, no. 8, pp. 888-905, August 2000.   Examples >>> from skimage import data, segmentation
+>>> from skimage.future import graph
+>>> img = data.astronaut()
+>>> labels = segmentation.slic(img)
+>>> rag = graph.rag_mean_color(img, labels, mode='similarity')
+>>> new_labels = graph.cut_normalized(labels, rag)

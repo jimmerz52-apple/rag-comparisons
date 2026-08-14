@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.MB_OK
+
+winsound.MB_OK  
+Play the SystemDefault sound.

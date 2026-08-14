@@ -1,0 +1,5 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.start_filter
+
+start_filter()[source]
+ 
+Start filtering. It simply create a new canvas (the old one is saved).

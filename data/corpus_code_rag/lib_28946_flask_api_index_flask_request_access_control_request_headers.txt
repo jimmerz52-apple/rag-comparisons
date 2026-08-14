@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.access_control_request_headers
+
+access_control_request_headers  
+Sent with a preflight request to indicate which headers will be sent with the cross origin request. Set access_control_allow_headers on the response to indicate which headers are allowed.

@@ -1,0 +1,4 @@
+# python.library.threading#threading.BrokenBarrierError
+
+exception threading.BrokenBarrierError  
+This exception, a subclass of RuntimeError, is raised when the Barrier object is reset or broken.

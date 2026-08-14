@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.dictvectorizer#sklearn.feature_extraction.DictVectorizer.transform
+
+transform(X) [source]
+ 
+Transform feature->value dicts to array or sparse matrix. Named features not encountered during fit or fit_transform will be silently ignored.  Parameters 
+ 
+XMapping or iterable over Mappings of shape (n_samples,) 
+
+Dict(s) or Mapping(s) from feature names (arbitrary Python objects) to feature values (strings or convertible to dtype).    Returns 
+ 
+Xa{array, sparse matrix} 
+
+Feature vectors; always 2-d.

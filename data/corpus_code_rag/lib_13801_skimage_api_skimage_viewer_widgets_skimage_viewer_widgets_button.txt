@@ -1,0 +1,15 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.Button
+
+class skimage.viewer.widgets.Button(name, callback) [source]
+ 
+Bases: skimage.viewer.widgets.core.BaseWidget Button which calls callback upon click.  Parameters 
+ 
+namestr 
+
+Name of button.  
+callbackcallable f() 
+
+Function to call when button is clicked.      
+__init__(name, callback) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

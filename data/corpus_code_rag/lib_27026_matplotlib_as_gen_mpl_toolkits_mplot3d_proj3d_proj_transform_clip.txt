@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.proj3d.proj_transform_clip
+
+mpl_toolkits.mplot3d.proj3d.proj_transform_clip   mpl_toolkits.mplot3d.proj3d.proj_transform_clip(xs, ys, zs, M)[source]
+ 
+Transform the points by the projection matrix and return the clipping result returns txs, tys, tzs, tis

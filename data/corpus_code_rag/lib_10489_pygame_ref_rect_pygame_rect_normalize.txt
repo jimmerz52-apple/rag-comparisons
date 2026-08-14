@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.normalize
+
+normalize() 
+ correct negative sizes normalize() -> None  This will flip the width or height of a rectangle if it has a negative size. The rectangle will remain in the same place, with only the sides swapped.

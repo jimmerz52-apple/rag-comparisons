@@ -1,0 +1,30 @@
+# tensorflow.raw_ops.equal
+
+tf.raw_ops.Equal Returns the truth value of (x == y) element-wise.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.Equal  
+tf.raw_ops.Equal(
+    x, y, incompatible_shape_error=True, name=None
+)
+ 
+Note: Equal supports broadcasting. More about broadcasting here
+
+x = tf.constant([2, 4])
+y = tf.constant(2)
+tf.math.equal(x, y) ==> array([True, False])
+
+x = tf.constant([2, 4])
+y = tf.constant([2, 4])
+tf.math.equal(x, y) ==> array([True,  True])
+
+ 
+
+
+ Args
+  x   A Tensor.  
+  y   A Tensor. Must have the same type as x.  
+  incompatible_shape_error   An optional bool. Defaults to True.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type bool.

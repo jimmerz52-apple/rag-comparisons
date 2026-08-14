@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.OverlayPlugin.closeEvent
+
+closeEvent(event) [source]
+ 
+On close disconnect all artists and events from ImageViewer. Note that artists must be appended to self.artists.

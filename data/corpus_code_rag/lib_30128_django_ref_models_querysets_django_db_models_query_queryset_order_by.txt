@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.order_by
+
+order_by(*fields)

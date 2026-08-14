@@ -1,0 +1,12 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.ccompiler_cxx_compiler
+
+numpy.distutils.ccompiler.CCompiler_cxx_compiler   distutils.ccompiler.CCompiler_cxx_compiler(self)[source]
+ 
+Return the C++ compiler.  Parameters 
+ None
+  Returns 
+ 
+cxxclass instance
+
+
+The C++ compiler, as a CCompiler instance.

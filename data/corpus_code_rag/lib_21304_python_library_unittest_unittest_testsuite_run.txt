@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestSuite.run
+
+run(result)  
+Run the tests associated with this suite, collecting the result into the test result object passed as result. Note that unlike TestCase.run(), TestSuite.run() requires the result object to be passed in.

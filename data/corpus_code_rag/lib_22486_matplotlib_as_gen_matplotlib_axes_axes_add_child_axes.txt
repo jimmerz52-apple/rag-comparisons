@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_child_axes
+
+matplotlib.axes.Axes.add_child_axes   Axes.add_child_axes(ax)[source]
+ 
+Add an AxesBase to the Axes' children; return the child Axes. This is the lowlevel version. See axes.Axes.inset_axes.

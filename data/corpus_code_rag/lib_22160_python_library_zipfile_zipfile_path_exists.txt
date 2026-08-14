@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.exists
+
+Path.exists()  
+Return True if the current context references a file or directory in the zip file.

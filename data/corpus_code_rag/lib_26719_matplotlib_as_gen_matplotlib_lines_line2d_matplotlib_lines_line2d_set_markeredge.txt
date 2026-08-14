@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_markeredgewidth
+
+set_markeredgewidth(ew)[source]
+ 
+Set the marker edge width in points.  Parameters 
+ 
+ewfloat
+
+
+Marker edge width, in points.

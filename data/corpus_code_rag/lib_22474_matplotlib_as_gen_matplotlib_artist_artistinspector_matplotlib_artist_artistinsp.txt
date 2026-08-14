@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.pprint_setters
+
+pprint_setters(prop=None, leadingspace=2)[source]
+ 
+If prop is None, return a list of strings of all settable properties and their valid values. If prop is not None, it is a valid property name and that property will be returned as a string of property : valid values.

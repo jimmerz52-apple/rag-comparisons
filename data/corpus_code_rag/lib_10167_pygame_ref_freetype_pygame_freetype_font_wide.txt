@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.wide
+
+wide 
+ The state of the font's wide style flag wide -> bool  Gets or sets whether the font will be stretched horizontally when drawing text. It produces a result similar to pygame.font.Font's bold. This style not available for rotated text.

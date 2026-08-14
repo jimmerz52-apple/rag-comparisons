@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.__deepcopy__
+
+__deepcopy__(memo)[source]

@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPHeloError
+
+exception smtplib.SMTPHeloError  
+The server refused our HELO message.

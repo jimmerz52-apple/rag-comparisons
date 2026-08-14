@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.timedeltaindex.components
+
+pandas.TimedeltaIndex.components   propertyTimedeltaIndex.components
+ 
+Return a dataframe of the components (days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds) of the Timedeltas.  Returns 
+ DataFrame

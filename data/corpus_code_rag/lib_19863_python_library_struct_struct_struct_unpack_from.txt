@@ -1,0 +1,4 @@
+# python.library.struct#struct.Struct.unpack_from
+
+unpack_from(buffer, offset=0)  
+Identical to the unpack_from() function, using the compiled format. The buffer’s size in bytes, starting at position offset, must be at least size.

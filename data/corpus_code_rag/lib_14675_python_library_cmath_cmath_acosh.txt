@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.acosh
+
+cmath.acosh(x)  
+Return the inverse hyperbolic cosine of x. There is one branch cut, extending left from 1 along the real axis to -∞, continuous from above.

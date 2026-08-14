@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.strength
+
+strength 
+ The strength associated with the strong or wide font styles strength -> float  The amount by which a font glyph's size is enlarged for the strong or wide transformations, as a fraction of the untransformed size. For the wide style only the horizontal dimension is increased. For strong text both the horizontal and vertical dimensions are enlarged. A wide style of strength 0.08333 ( 1/12 ) is equivalent to the pygame.font.Font bold style. The default is 0.02778 ( 1/36 ). The strength style is only supported for scalable (outline) fonts. An attempt to set this property on a bitmap font will raise an AttributeError. If the font object is inactive, as returned by Font.__new__(), assignment to this property raises a RuntimeError.

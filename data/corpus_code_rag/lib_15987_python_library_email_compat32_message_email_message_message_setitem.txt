@@ -1,0 +1,5 @@
+# python.library.email.compat32-message#email.message.Message.__setitem__
+
+__setitem__(name, val)  
+Add a header to the message with field name name and value val. The field is appended to the end of the message’s existing fields. Note that this does not overwrite or delete any existing header with the same name. If you want to ensure that the new header is the only one present in the message with field name name, delete the field first, e.g.: del msg['subject']
+msg['subject'] = 'Python roolz!'

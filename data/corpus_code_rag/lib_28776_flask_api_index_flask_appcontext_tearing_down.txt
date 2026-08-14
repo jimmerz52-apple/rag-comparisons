@@ -1,0 +1,9 @@
+# flask.api.index#flask.appcontext_tearing_down
+
+flask.appcontext_tearing_down  
+This signal is sent when the app context is tearing down. This is always called, even if an exception is caused. Currently functions listening to this signal are called after the regular teardown handlers, but this is not something you can rely on. Example subscriber: def close_db_connection(sender, **extra):
+    session.close()
+
+from flask import appcontext_tearing_down
+appcontext_tearing_down.connect(close_db_connection, app)
+ This will also be passed an exc keyword argument that has a reference to the exception that caused the teardown if there was one.

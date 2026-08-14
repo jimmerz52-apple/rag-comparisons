@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.childNodes
+
+Node.childNodes  
+A list of nodes contained within this node. This is a read-only attribute.

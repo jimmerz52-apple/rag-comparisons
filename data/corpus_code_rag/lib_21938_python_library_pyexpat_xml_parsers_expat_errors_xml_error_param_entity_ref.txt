@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_PARAM_ENTITY_REF
+
+xml.parsers.expat.errors.XML_ERROR_PARAM_ENTITY_REF  
+A parameter entity reference was found where it was not allowed.

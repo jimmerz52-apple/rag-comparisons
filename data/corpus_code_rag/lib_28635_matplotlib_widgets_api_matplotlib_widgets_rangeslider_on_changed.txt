@@ -1,0 +1,13 @@
+# matplotlib.widgets_api#matplotlib.widgets.RangeSlider.on_changed
+
+on_changed(func)[source]
+ 
+Connect func as callback function to changes of the slider value.  Parameters 
+ 
+funccallable
+
+
+Function to call when slider is changed. The function must accept a numpy array with shape (2,) as its argument.    Returns 
+ int
+
+Connection id (which can be used to disconnect func).

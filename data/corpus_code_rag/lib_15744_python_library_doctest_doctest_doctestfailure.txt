@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTestFailure
+
+exception doctest.DocTestFailure(test, example, got)  
+An exception raised by DocTestRunner to signal that a doctest example’s actual output did not match its expected output. The constructor arguments are used to initialize the attributes of the same names.

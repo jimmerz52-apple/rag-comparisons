@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.Etiny
+
+Etiny()  
+Returns a value equal to Emin - prec + 1 which is the minimum exponent value for subnormal results. When underflow occurs, the exponent is set to Etiny.

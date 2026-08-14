@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.zscore
+
+zscore(x)  
+Compute the Standard Score describing x in terms of the number of standard deviations above or below the mean of the normal distribution: (x - mean) / stdev.  New in version 3.9.

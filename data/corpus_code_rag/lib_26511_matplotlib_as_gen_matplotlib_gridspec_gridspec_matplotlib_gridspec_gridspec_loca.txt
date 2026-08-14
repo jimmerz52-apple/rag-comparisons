@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspec#matplotlib.gridspec.GridSpec.locally_modified_subplot_params
+
+locally_modified_subplot_params()[source]
+ 
+Return a list of the names of the subplot parameters explicitly set in the GridSpec. This is a subset of the attributes of SubplotParams.

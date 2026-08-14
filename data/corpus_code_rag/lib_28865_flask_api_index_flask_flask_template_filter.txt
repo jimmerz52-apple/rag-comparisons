@@ -1,0 +1,9 @@
+# flask.api.index#flask.Flask.template_filter
+
+template_filter(name=None)  
+A decorator that is used to register custom template filter. You can specify a name for the filter, otherwise the function name will be used. Example: @app.template_filter()
+def reverse(s):
+    return s[::-1]
+  Parameters 
+name (Optional[str]) – the optional name of the filter, otherwise the function name will be used.  Return type 
+Callable

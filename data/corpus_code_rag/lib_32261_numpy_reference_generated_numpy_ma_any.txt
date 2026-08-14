@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.ma.any
+
+numpy.ma.any   ma.any(self, axis=None, out=None, keepdims=<no value>) = <numpy.ma.core._frommethod object>
+ 
+Returns True if any of the elements of a evaluate to True. Masked values are considered as False during computation. Refer to numpy.any for full documentation.  See also  numpy.ndarray.any
+
+corresponding function for ndarrays  numpy.any
+
+equivalent function

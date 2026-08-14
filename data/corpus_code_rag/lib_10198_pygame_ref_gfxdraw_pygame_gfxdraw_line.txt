@@ -1,0 +1,20 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.line
+
+pygame.gfxdraw.line() 
+ draw a line line(surface, x1, y1, x2, y2, color) -> None  Draws a straight line ((x1, y1) to (x2, y2)) on the given surface. There are no endcaps.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+x1 (int) -- x coordinate of one end of the line 
+y1 (int) -- y coordinate of one end of the line 
+x2 (int) -- x coordinate of the other end of the line 
+y2 (int) -- y coordinate of the other end of the line 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType

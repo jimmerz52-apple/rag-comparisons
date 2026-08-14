@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.quarter
+
+pandas.Timestamp.quarter   Timestamp.quarter
+ 
+Return the quarter of the year. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.quarter
+1

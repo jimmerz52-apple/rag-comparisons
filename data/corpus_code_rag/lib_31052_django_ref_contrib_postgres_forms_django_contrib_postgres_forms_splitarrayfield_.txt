@@ -1,0 +1,30 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.SplitArrayField.remove_trailing_nulls
+
+remove_trailing_nulls  
+By default, this is set to False. When False, each value from the repeated fields is stored. When set to True, any trailing values which are blank will be stripped from the result. If the underlying field has required=True, but remove_trailing_nulls is True, then null values are only allowed at the end, and will be stripped. Some examples: SplitArrayField(IntegerField(required=True), size=3, remove_trailing_nulls=False)
+
+['1', '2', '3']  # -> [1, 2, 3]
+['1', '2', '']  # -> ValidationError - third entry required.
+['1', '', '3']  # -> ValidationError - second entry required.
+['', '2', '']  # -> ValidationError - first and third entries required.
+
+SplitArrayField(IntegerField(required=False), size=3, remove_trailing_nulls=False)
+
+['1', '2', '3']  # -> [1, 2, 3]
+['1', '2', '']  # -> [1, 2, None]
+['1', '', '3']  # -> [1, None, 3]
+['', '2', '']  # -> [None, 2, None]
+
+SplitArrayField(IntegerField(required=True), size=3, remove_trailing_nulls=True)
+
+['1', '2', '3']  # -> [1, 2, 3]
+['1', '2', '']  # -> [1, 2]
+['1', '', '3']  # -> ValidationError - second entry required.
+['', '2', '']  # -> ValidationError - first entry required.
+
+SplitArrayField(IntegerField(required=False), size=3, remove_trailing_nulls=True)
+
+['1', '2', '3']  # -> [1, 2, 3]
+['1', '2', '']  # -> [1, 2]
+['1', '', '3']  # -> [1, None, 3]
+['', '2', '']  # -> [None, 2]

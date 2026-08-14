@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.xlogy
+
+xlogy(other) → Tensor  
+See torch.xlogy()

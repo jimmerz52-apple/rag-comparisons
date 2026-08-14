@@ -1,0 +1,59 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AuxTransformBox
+
+classmatplotlib.offsetbox.AuxTransformBox(aux_transform)[source]
+ 
+Bases: matplotlib.offsetbox.OffsetBox Offset Box with the aux_transform. Its children will be transformed with the aux_transform first then will be offsetted. The absolute coordinate of the aux_transform is meaning as it will be automatically adjust so that the left-lower corner of the bounding box of children will be set to (0, 0) before the offset transform. It is similar to drawing area, except that the extent of the box is not predetermined but calculated from the window extent of its children. Furthermore, the extent of the children will be calculated in the transformed coordinate.   add_artist(a)[source]
+ 
+Add an Artist to the container box. 
+   draw(renderer)[source]
+ 
+Update the location of children if necessary and draw them to the given renderer. 
+   get_extent(renderer)[source]
+ 
+Return a tuple width, height, xdescent, ydescent of the box. 
+   get_offset()[source]
+ 
+Return offset of the container. 
+   get_transform()[source]
+ 
+Return the Transform applied to the children 
+   get_window_extent(renderer)[source]
+ 
+Get the artist's bounding box in display space. The bounding box' width and height are nonnegative. Subclasses should override for inclusion in the bounding box "tight" calculation. Default is to return an empty bounding box at 0, 0. Be careful when using this function, the results will not update if the artist window extent of the artist changes. The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure). This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+offset (float, float)  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform unknown  
+url str  
+visible bool  
+width float  
+zorder float   
+   set_offset(xy)[source]
+ 
+Set the offset of the container.  Parameters 
+ 
+xy(float, float)
+
+
+The (x, y) coordinates of the offset in display units.     
+   set_transform(t)[source]
+ 
+set_transform is ignored.

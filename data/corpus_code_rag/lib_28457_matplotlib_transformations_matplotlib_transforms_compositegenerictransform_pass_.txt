@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.CompositeGenericTransform.pass_through
+
+pass_through=True
+ 
+If pass_through is True, all ancestors will always be invalidated, even if 'self' is already invalid.

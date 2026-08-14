@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_label_coords
+
+matplotlib.axis.Axis.set_label_coords   Axis.set_label_coords(x, y, transform=None)[source]
+ 
+Set the coordinates of the label. By default, the x coordinate of the y label and the y coordinate of the x label are determined by the tick label bounding boxes, but this can lead to poor alignment of multiple labels if there are multiple axes. You can also specify the coordinate system of the label with the transform. If None, the default coordinate system will be the axes coordinate system: (0, 0) is bottom left, (0.5, 0.5) is center, etc.

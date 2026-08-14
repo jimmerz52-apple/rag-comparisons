@@ -1,0 +1,10 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.data
+
+data(text)[source]
+ 
+Add character data to the output stream.  Parameters 
+ 
+textstr
+
+
+Character data.

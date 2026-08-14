@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.label_outer
+
+label_outer()[source]
+ 
+Only show "outer" labels and tick labels. x-labels are only kept for subplots on the last row (or first row, if labels are on the top side); y-labels only for subplots on the first column (or last column, if labels are on the right side).

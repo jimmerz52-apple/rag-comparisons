@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.FileCookieJar.delayload
+
+FileCookieJar.delayload  
+If true, load cookies lazily from disk. This attribute should not be assigned to. This is only a hint, since this only affects performance, not behaviour (unless the cookies on disk are changing). A CookieJar object may ignore it. None of the FileCookieJar classes included in the standard library lazily loads cookies.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.method
+
+method  
+The method the request was made with, such as GET.

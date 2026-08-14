@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.size
+
+size() 
+ determine the amount of space needed to render text size(text) -> (width, height)  Returns the dimensions needed to render the text. This can be used to help determine the positioning needed for text before it is rendered. It can also be used for wordwrapping and other layout effects. Be aware that most fonts use kerning which adjusts the widths for specific letter pairs. For example, the width for "ae" will not always match the width for "a" + "e".

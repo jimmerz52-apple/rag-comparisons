@@ -1,0 +1,5 @@
+# django.ref.files.file#django.core.files.File.__iter__
+
+__iter__() [source]
+ 
+Iterate over the file yielding one line at a time.

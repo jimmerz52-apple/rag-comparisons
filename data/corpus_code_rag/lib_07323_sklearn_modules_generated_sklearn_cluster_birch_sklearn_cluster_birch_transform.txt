@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cluster.birch#sklearn.cluster.Birch.transform
+
+transform(X) [source]
+ 
+Transform X into subcluster centroids dimension. Each dimension represents the distance from the sample point to each cluster centroid.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Input data.    Returns 
+ 
+X_trans{array-like, sparse matrix} of shape (n_samples, n_clusters) 
+
+Transformed data.

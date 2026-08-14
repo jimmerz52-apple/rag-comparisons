@@ -1,0 +1,9 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.BaseCreateView
+
+class django.views.generic.edit.BaseCreateView  
+A base view for creating a new object instance. It is not intended to be used directly, but rather as a parent class of the django.views.generic.edit.CreateView. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.edit.ModelFormMixin django.views.generic.edit.ProcessFormView  Methods  
+get(request, *args, **kwargs)  
+Sets the current object instance (self.object) to None. 
+  
+post(request, *args, **kwargs)  
+Sets the current object instance (self.object) to None.

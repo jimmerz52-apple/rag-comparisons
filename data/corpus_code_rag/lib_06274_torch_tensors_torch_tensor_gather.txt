@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.gather
+
+gather(dim, index) → Tensor  
+See torch.gather()

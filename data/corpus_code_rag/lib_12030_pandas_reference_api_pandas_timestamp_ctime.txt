@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.ctime
+
+pandas.Timestamp.ctime   Timestamp.ctime()
+ 
+Return ctime() style string.

@@ -1,0 +1,4 @@
+# python.library.dis#dis.Bytecode.dis
+
+dis()  
+Return a formatted view of the bytecode operations (the same as printed by dis.dis(), but returned as a multi-line string).

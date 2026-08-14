@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.mpl_axes.simpleaxisartist#mpl_toolkits.axes_grid1.mpl_axes.SimpleAxisArtist.toggle
+
+toggle(all=None, ticks=None, ticklabels=None, label=None)[source]

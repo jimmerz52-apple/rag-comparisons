@@ -1,0 +1,10 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.application
+
+classmethod application(f)  
+Decorate a function as responder that accepts the request as the last argument. This works like the responder() decorator but the function is passed the request object as the last argument and the request object will be closed automatically: @Request.application
+def my_wsgi_app(request):
+    return Response('Hello World!')
+ As of Werkzeug 0.14 HTTP exceptions are automatically caught and converted to responses instead of failing.  Parameters 
+f (Callable[[Request], WSGIApplication]) – the WSGI callable to decorate  Returns 
+a new WSGI callable  Return type 
+WSGIApplication

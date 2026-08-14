@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingInput.on_event
+
+on_event(event)[source]
+ 
+Event handler; will be passed to the current figure to retrieve events.

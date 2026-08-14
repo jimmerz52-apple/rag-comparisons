@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.close
+
+Wave_write.close()  
+Make sure nframes is correct, and close the file if it was opened by wave. This method is called upon object collection. It will raise an exception if the output stream is not seekable and nframes does not match the number of frames actually written.

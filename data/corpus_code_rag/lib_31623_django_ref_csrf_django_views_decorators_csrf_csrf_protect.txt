@@ -1,0 +1,12 @@
+# django.ref.csrf#django.views.decorators.csrf.csrf_protect
+
+csrf_protect(view)  
+Decorator that provides the protection of CsrfViewMiddleware to a view. Usage: from django.shortcuts import render
+from django.views.decorators.csrf import csrf_protect
+
+@csrf_protect
+def my_view(request):
+    c = {}
+    # ...
+    return render(request, "a_template.html", c)
+ If you are using class-based views, you can refer to Decorating class-based views.

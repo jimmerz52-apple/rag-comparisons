@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_name_char
+
+get_name_char(c, isord=False)[source]
+ 
+Get the name of the character, i.e., ';' is 'semicolon'.

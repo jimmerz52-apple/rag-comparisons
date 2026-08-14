@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.COMPARISON_FLAGS
+
+doctest.COMPARISON_FLAGS  
+A bitmask or’ing together all the comparison flags above.

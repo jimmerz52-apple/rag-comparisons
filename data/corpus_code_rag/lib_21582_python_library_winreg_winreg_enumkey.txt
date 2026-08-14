@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.EnumKey
+
+winreg.EnumKey(key, index)  
+Enumerates subkeys of an open registry key, returning a string. key is an already open key, or one of the predefined HKEY_* constants. index is an integer that identifies the index of the key to retrieve. The function retrieves the name of one subkey each time it is called. It is typically called repeatedly until an OSError exception is raised, indicating, no more values are available. Raises an auditing event winreg.EnumKey with arguments key, index.  Changed in version 3.3: See above.

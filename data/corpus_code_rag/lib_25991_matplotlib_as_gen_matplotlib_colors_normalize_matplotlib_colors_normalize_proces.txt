@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.colors.normalize#matplotlib.colors.Normalize.process_value
+
+staticprocess_value(value)[source]
+ 
+Homogenize the input value for easy and efficient normalization. value can be a scalar or sequence.  Returns 
+ 
+resultmasked array
+
+
+Masked array with the same shape as value.  
+is_scalarbool
+
+
+Whether value is a scalar.     Notes Float dtypes are preserved; integer types with two bytes or smaller are converted to np.float32, and larger types are converted to np.float64. Preserving float32 when possible, and using in-place operations, greatly improves speed for large arrays.

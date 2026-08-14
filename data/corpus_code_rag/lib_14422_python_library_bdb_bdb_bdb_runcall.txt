@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.runcall
+
+runcall(func, /, *args, **kwds)  
+Debug a single function call, and return its result.

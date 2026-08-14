@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_backend
+
+matplotlib.rcsetup.validate_backend(s)[source]

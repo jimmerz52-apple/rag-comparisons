@@ -1,0 +1,14 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.scaled
+
+mpl_toolkits.axes_grid1.axes_size.Scaled   classmpl_toolkits.axes_grid1.axes_size.Scaled(scalable_size)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base Simple scaled(?) size with absolute part = 0 and relative part = scalable_size.   get_size(renderer)[source]
+
+ 
+  Examples using mpl_toolkits.axes_grid1.axes_size.Scaled
+ 
+   HBoxDivider demo   
+
+   Axes with a fixed physical size   
+
+   Simple Axes Divider 1

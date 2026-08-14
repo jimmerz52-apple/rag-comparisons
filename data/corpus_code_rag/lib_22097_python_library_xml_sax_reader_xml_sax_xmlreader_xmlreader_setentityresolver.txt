@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.setEntityResolver
+
+XMLReader.setEntityResolver(handler)  
+Set the current EntityResolver. If no EntityResolver is set, attempts to resolve an external entity will result in opening the system identifier for the entity, and fail if it is not available.

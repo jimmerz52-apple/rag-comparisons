@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.VERIFY_X509_STRICT
+
+ssl.VERIFY_X509_STRICT  
+Possible value for SSLContext.verify_flags to disable workarounds for broken X.509 certificates.  New in version 3.4.

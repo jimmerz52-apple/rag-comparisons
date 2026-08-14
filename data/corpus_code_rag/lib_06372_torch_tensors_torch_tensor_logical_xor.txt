@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logical_xor_
+
+logical_xor_() → Tensor  
+In-place version of logical_xor()

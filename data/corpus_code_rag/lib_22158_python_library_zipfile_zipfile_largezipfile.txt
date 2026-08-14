@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.LargeZipFile
+
+exception zipfile.LargeZipFile  
+The error raised when a ZIP file would require ZIP64 functionality but that has not been enabled.

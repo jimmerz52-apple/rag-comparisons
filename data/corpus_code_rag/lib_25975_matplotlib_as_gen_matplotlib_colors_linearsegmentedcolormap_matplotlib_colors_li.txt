@@ -1,0 +1,13 @@
+# matplotlib._as_gen.matplotlib.colors.linearsegmentedcolormap#matplotlib.colors.LinearSegmentedColormap.reversed
+
+reversed(name=None)[source]
+ 
+Return a reversed instance of the Colormap.  Parameters 
+ 
+namestr, optional
+
+
+The name for the reversed colormap. If it's None the name will be the name of the parent colormap + "_r".    Returns 
+ LinearSegmentedColormap
+
+The reversed colormap.

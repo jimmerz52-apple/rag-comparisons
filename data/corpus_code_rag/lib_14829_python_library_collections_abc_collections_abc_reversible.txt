@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Reversible
+
+class collections.abc.Reversible  
+ABC for iterable classes that also provide the __reversed__() method.  New in version 3.6.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axisartist#mpl_toolkits.axisartist.axis_artist.AxisArtist.get_axisline_style
+
+get_axisline_style()[source]
+ 
+Return the current axisline style.

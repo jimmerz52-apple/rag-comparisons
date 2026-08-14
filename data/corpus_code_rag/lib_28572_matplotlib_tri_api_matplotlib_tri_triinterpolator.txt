@@ -1,0 +1,7 @@
+# matplotlib.tri_api#matplotlib.tri.TriInterpolator
+
+classmatplotlib.tri.TriInterpolator(triangulation, z, trifinder=None)[source]
+ 
+Abstract base class for classes used to interpolate on a triangular grid. Derived classes implement the following methods:  
+__call__(x, y), where x, y are array-like point coordinates of the same shape, and that returns a masked array of the same shape containing the interpolated z-values. 
+gradient(x, y), where x, y are array-like point coordinates of the same shape, and that returns a list of 2 masked arrays of the same shape containing the 2 derivatives of the interpolator (derivatives of interpolated z values with respect to x and y).

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.compress
+
+tf.experimental.numpy.compress TensorFlow variant of NumPy's compress. 
+tf.experimental.numpy.compress(
+    condition, a, axis=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.compress.

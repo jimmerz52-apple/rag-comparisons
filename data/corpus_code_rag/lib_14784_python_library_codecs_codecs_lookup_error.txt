@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.lookup_error
+
+codecs.lookup_error(name)  
+Return the error handler previously registered under the name name. Raises a LookupError in case the handler cannot be found.

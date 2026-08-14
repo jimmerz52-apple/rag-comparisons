@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.prefetch_related_objects
+
+prefetch_related_objects(model_instances, *related_lookups)

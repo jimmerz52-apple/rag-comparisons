@@ -1,0 +1,4 @@
+# python.library.email.header#email.header.Header.__eq__
+
+__eq__(other)  
+This method allows you to compare two Header instances for equality.

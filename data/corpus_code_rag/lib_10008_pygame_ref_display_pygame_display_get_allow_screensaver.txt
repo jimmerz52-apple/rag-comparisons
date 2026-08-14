@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.get_allow_screensaver
+
+pygame.display.get_allow_screensaver() 
+ Return whether the screensaver is allowed to run. get_allow_screensaver() -> bool  Return whether screensaver is allowed to run whilst the app is running. Default is False. By default pygame does not allow the screensaver during game play.  Note Some platforms do not have a screensaver or support disabling the screensaver. Please see pygame.display.set_allow_screensaver() for caveats with screensaver support.   New in pygame 2.0.0.

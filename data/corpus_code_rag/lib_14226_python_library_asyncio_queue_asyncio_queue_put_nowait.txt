@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.Queue.put_nowait
+
+put_nowait(item)  
+Put an item into the queue without blocking. If no free slot is immediately available, raise QueueFull.

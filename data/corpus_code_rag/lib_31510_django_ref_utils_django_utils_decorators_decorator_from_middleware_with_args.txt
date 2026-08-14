@@ -1,0 +1,9 @@
+# django.ref.utils#django.utils.decorators.decorator_from_middleware_with_args
+
+decorator_from_middleware_with_args(middleware_class) [source]
+ 
+Like decorator_from_middleware, but returns a function that accepts the arguments to be passed to the middleware_class. For example, the cache_page() decorator is created from the CacheMiddleware like this: cache_page = decorator_from_middleware_with_args(CacheMiddleware)
+
+@cache_page(3600)
+def my_view(request):
+    pass

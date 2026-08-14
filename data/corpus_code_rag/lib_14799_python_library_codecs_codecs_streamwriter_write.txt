@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.StreamWriter.write
+
+write(object)  
+Writes the object’s contents encoded to the stream.

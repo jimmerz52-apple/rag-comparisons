@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.flush_headers
+
+flush_headers()  
+Finally send the headers to the output stream and flush the internal headers buffer.  New in version 3.3.

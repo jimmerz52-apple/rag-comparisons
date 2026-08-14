@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.imagemagickbase#matplotlib.animation.ImageMagickBase.isAvailable
+
+classmethodisAvailable()[source]

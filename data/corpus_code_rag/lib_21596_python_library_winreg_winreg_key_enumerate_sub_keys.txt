@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_ENUMERATE_SUB_KEYS
+
+winreg.KEY_ENUMERATE_SUB_KEYS  
+Required to enumerate the subkeys of a registry key.

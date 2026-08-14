@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PolyCollection.get_clip_box
+
+get_clip_box()[source]
+ 
+Return the clipbox.

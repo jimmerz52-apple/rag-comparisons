@@ -1,0 +1,4 @@
+# python.library.gc#gc.DEBUG_COLLECTABLE
+
+gc.DEBUG_COLLECTABLE  
+Print information on collectable objects found.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.unbind
+
+unbind(dim=0) → seq  
+See torch.unbind()

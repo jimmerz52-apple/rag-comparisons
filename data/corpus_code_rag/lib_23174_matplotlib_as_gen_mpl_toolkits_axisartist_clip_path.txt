@@ -1,0 +1,6 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.clip_path
+
+mpl_toolkits.axisartist.clip_path  Functions  
+atan2(dy, dx)   
+clip(xlines, ylines, x0[, clip, xdir, ydir])   
+clip_line_to_rect(xline, yline, bbox)

@@ -1,0 +1,4 @@
+# torch.distributed#torch.distributed.reduce_op
+
+class torch.distributed.reduce_op  
+Deprecated enum-like class for reduction operations: SUM, PRODUCT, MIN, and MAX. ReduceOp is recommended to use instead.

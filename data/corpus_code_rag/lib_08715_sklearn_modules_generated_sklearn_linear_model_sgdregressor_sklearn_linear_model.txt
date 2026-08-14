@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.linear_model.sgdregressor#sklearn.linear_model.SGDRegressor.partial_fit
+
+partial_fit(X, y, sample_weight=None) [source]
+ 
+Perform one epoch of stochastic gradient descent on given samples. Internally, this method uses max_iter = 1. Therefore, it is not guaranteed that a minimum of the cost function is reached after calling it once. Matters such as objective convergence and early stopping should be handled by the user.  Parameters 
+ 
+X{array-like, sparse matrix}, shape (n_samples, n_features) 
+
+Subset of training data  
+ynumpy array of shape (n_samples,) 
+
+Subset of target values  
+sample_weightarray-like, shape (n_samples,), default=None 
+
+Weights applied to individual samples. If not provided, uniform weights are assumed.    Returns 
+ 
+selfreturns an instance of self.

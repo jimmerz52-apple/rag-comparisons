@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.list_gpu_processes
+
+torch.cuda.list_gpu_processes(device=None) [source]
+ 
+Returns a human-readable printout of the running processes and their GPU memory use for a given device. This can be useful to display periodically during training, or when handling out-of-memory exceptions.  Parameters 
+device (torch.device or int, optional) – selected device. Returns printout for the current device, given by current_device(), if device is None (default).

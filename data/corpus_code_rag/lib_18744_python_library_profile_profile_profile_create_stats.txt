@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.create_stats
+
+create_stats()  
+Stop collecting profiling data and record the results internally as the current profile.

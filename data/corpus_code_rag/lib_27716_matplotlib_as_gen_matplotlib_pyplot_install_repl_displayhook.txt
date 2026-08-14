@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.install_repl_displayhook
+
+matplotlib.pyplot.install_repl_displayhook   matplotlib.pyplot.install_repl_displayhook()[source]
+ 
+Install a repl display hook so that any stale figure are automatically redrawn when control is returned to the repl. This works both with IPython and with vanilla python shells.

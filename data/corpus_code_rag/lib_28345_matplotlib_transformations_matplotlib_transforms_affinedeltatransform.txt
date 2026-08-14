@@ -1,0 +1,27 @@
+# matplotlib.transformations#matplotlib.transforms.AffineDeltaTransform
+
+classmatplotlib.transforms.AffineDeltaTransform(transform, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase A transform wrapper for transforming displacements between pairs of points. This class is intended to be used to transform displacements ("position deltas") between pairs of points (e.g., as the offset_transform of Collections): given a transform t such that t =
+AffineDeltaTransform(t) + offset, AffineDeltaTransform satisfies AffineDeltaTransform(a - b) == AffineDeltaTransform(a) -
+AffineDeltaTransform(b). This is implemented by forcing the offset components of the transform matrix to zero. This class is experimental as of 3.3, and the API may change.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       __init__(transform, **kwargs)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.     
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform.

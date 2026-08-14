@@ -1,0 +1,3 @@
+# django.topics.i18n.translation#django.conf.urls.i18n.i18n_patterns
+
+i18n_patterns(*urls, prefix_default_language=True)

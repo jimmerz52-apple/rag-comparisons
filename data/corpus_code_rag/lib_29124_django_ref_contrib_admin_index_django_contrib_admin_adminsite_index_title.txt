@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.index_title
+
+AdminSite.index_title  
+The text to put at the top of the admin index page (a string). By default, this is “Site administration”.

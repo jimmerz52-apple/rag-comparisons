@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.update_from_first_child
+
+matplotlib.legend_handler.update_from_first_child(tgt, src)[source]

@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.argval
+
+argval  
+resolved arg value (if known), otherwise same as arg

@@ -1,0 +1,16 @@
+# django.ref.forms.fields#django.forms.CharField
+
+class CharField(**kwargs)  
+ Default widget: TextInput
+ Empty value: Whatever you’ve given as empty_value. Normalizes to: A string. Uses MaxLengthValidator and MinLengthValidator if max_length and min_length are provided. Otherwise, all inputs are valid. Error message keys: required, max_length, min_length
+  Has four optional arguments for validation:  
+max_length 
+  
+min_length  
+If provided, these arguments ensure that the string is at most or at least the given length. 
+  
+strip  
+If True (default), the value will be stripped of leading and trailing whitespace. 
+  
+empty_value  
+The value to use to represent “empty”. Defaults to an empty string.

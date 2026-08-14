@@ -1,0 +1,47 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfPages
+
+classmatplotlib.backends.backend_pdf.PdfPages(filename, keep_empty=True, metadata=None)[source]
+ 
+Bases: object A multi-page PDF file. Notes In reality PdfPages is a thin wrapper around PdfFile, in order to avoid confusion when using savefig and forgetting the format argument. Examples >>> import matplotlib.pyplot as plt
+>>> # Initialize:
+>>> with PdfPages('foo.pdf') as pdf:
+...     # As many times as you like, create a figure fig and save it:
+...     fig = plt.figure()
+...     pdf.savefig(fig)
+...     # When no figure is specified the current figure is saved
+...     pdf.savefig()
+ Create a new PdfPages object.  Parameters 
+ 
+filenamestr or path-like or file-like
+
+
+Plots using PdfPages.savefig will be written to a file at this location. The file is opened at once and any older file with the same name is overwritten.  
+keep_emptybool, optional
+
+
+If set to False, then empty pdf files will be deleted automatically when closed.  
+metadatadict, optional
+
+
+Information dictionary object (see PDF reference section 10.2.1 'Document Information Dictionary'), e.g.: {'Creator': 'My software', 'Author': 'Me', 'Title': 'Awesome'}. The standard keys are 'Title', 'Author', 'Subject', 'Keywords', 'Creator', 'Producer', 'CreationDate', 'ModDate', and 'Trapped'. Values have been predefined for 'Creator', 'Producer' and 'CreationDate'. They can be removed by setting them to None.       attach_note(text, positionRect=[- 100, - 100, 0, 0])[source]
+ 
+Add a new text note to the page to be saved next. The optional positionRect specifies the position of the new note on the page. It is outside the page per default to make sure it is invisible on printouts. 
+   close()[source]
+ 
+Finalize this object, making the underlying file a complete PDF file. 
+   get_pagecount()[source]
+ 
+Return the current number of pages in the multipage pdf file. 
+   infodict()[source]
+ 
+Return a modifiable information dictionary object (see PDF reference section 10.2.1 'Document Information Dictionary'). 
+   keep_empty
+
+   savefig(figure=None, **kwargs)[source]
+ 
+Save a Figure to this file as a new page. Any other keyword arguments are passed to savefig.  Parameters 
+ 
+figureFigure or int, default: the active figure
+
+
+The figure, or index of the figure, that is saved to the file.

@@ -1,0 +1,7 @@
+# tensorflow.compat.v1.flags.doc_to_help
+
+tf.compat.v1.flags.doc_to_help Takes a doc string and reformats it as help.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.doc_to_help  
+tf.compat.v1.flags.doc_to_help(
+    doc
+)

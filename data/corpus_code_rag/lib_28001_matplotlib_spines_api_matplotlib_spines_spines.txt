@@ -1,0 +1,9 @@
+# matplotlib.spines_api#matplotlib.spines.Spines
+
+classmatplotlib.spines.Spines(**kwargs)[source]
+ 
+Bases: collections.abc.MutableMapping The container of all Spines in an Axes. The interface is dict-like mapping names (e.g. 'left') to Spine objects. Additionally it implements some pandas.Series-like features like accessing elements by attribute: spines['top'].set_visible(False)
+spines.top.set_visible(False)
+ Multiple spines can be addressed simultaneously by passing a list: spines[['top', 'right']].set_visible(False)
+ Use an open slice to address all spines: spines[:].set_visible(False)
+ The latter two indexing methods will return a SpinesProxy that broadcasts all set_* calls to its members, but cannot be used for any other operation.   classmethodfrom_dict(d)[source]

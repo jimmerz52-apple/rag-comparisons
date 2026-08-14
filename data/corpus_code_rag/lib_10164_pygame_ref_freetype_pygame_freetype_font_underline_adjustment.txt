@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.underline_adjustment
+
+underline_adjustment 
+ Adjustment factor for the underline position underline_adjustment -> float  Gets or sets a factor which, when positive, is multiplied with the font's underline offset to adjust the underline position. A negative value turns an underline into a strike-through or overline. It is multiplied with the ascender. Accepted values range between -2.0 and 2.0 inclusive. A value of 0.5 closely matches Tango underlining. A value of 1.0 mimics pygame.font.Font underlining.

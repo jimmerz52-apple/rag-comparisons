@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.zero_
+
+zero_() → Tensor  
+Fills self tensor with zeros.

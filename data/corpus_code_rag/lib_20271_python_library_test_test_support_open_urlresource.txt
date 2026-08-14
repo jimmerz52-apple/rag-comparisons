@@ -1,0 +1,4 @@
+# python.library.test#test.support.open_urlresource
+
+test.support.open_urlresource(url, *args, **kw)  
+Open url. If open fails, raises TestFailed.

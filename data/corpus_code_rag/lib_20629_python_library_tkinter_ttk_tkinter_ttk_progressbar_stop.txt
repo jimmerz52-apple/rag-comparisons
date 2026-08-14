@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Progressbar.stop
+
+stop()  
+Stop autoincrement mode: cancels any recurring timer event initiated by Progressbar.start() for this progress bar.

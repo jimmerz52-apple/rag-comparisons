@@ -1,0 +1,5 @@
+# django.ref.models.options#django.db.models.Options.verbose_name
+
+Options.verbose_name  
+A human-readable name for the object, singular: verbose_name = "pizza"
+ If this isn’t given, Django will use a munged version of the class name: CamelCase becomes camel case.

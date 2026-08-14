@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformWrapper.set
+
+set(child)[source]
+ 
+Replace the current child of this transform with another one. The new child must have the same number of input and output dimensions as the current child.

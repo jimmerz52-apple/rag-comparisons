@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.Collection.get_lw
+
+get_lw()[source]
+ 
+Alias for get_linewidth.

@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.UserManager.create_superuser
+
+create_superuser(username, email=None, password=None, **extra_fields)  
+Same as create_user(), but sets is_staff and is_superuser to True.

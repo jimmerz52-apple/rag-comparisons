@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.ticks#mpl_toolkits.axisartist.axis_artist.Ticks.set_ticksize
+
+set_ticksize(ticksize)[source]
+ 
+Set length of the ticks in points.

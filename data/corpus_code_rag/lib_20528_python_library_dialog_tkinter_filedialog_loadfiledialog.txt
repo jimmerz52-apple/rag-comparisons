@@ -1,0 +1,6 @@
+# python.library.dialog#tkinter.filedialog.LoadFileDialog
+
+class tkinter.filedialog.LoadFileDialog(master, title=None)  
+A subclass of FileDialog that creates a dialog window for selecting an existing file.  
+ok_command()  
+Test that a file is provided and that the selection indicates an already existing file.

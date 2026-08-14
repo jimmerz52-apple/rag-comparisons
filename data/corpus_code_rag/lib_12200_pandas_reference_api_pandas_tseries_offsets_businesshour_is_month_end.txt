@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.is_month_end
+
+pandas.tseries.offsets.BusinessHour.is_month_end   BusinessHour.is_month_end()

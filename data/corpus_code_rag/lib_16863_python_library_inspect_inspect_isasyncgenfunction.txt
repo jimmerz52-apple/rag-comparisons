@@ -1,0 +1,9 @@
+# python.library.inspect#inspect.isasyncgenfunction
+
+inspect.isasyncgenfunction(object)  
+Return True if the object is an asynchronous generator function, for example: >>> async def agen():
+...     yield 1
+...
+>>> inspect.isasyncgenfunction(agen)
+True
+  New in version 3.6.   Changed in version 3.8: Functions wrapped in functools.partial() now return True if the wrapped function is a asynchronous generator function.

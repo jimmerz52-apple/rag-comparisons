@@ -1,0 +1,4 @@
+# python.library.logging#logging.Formatter.formatException
+
+formatException(exc_info)  
+Formats the specified exception information (a standard exception tuple as returned by sys.exc_info()) as a string. This default implementation just uses traceback.print_exception(). The resulting string is returned.

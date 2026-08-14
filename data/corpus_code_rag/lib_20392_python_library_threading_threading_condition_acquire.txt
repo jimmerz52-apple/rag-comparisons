@@ -1,0 +1,4 @@
+# python.library.threading#threading.Condition.acquire
+
+acquire(*args)  
+Acquire the underlying lock. This method calls the corresponding method on the underlying lock; the return value is whatever that method returns.

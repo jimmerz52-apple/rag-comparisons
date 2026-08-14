@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.get
+
+QueryDict.get(key, default=None)  
+Uses the same logic as __getitem__(), with a hook for returning a default value if the key doesn’t exist.

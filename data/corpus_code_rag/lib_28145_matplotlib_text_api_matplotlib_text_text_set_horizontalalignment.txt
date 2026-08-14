@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_horizontalalignment
+
+set_horizontalalignment(align)[source]
+ 
+Set the horizontal alignment to one of  Parameters 
+ 
+align{'center', 'right', 'left'}

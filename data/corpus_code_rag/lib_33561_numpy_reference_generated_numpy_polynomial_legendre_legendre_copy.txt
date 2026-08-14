@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.legendre.legendre.copy
+
+numpy.polynomial.legendre.Legendre.copy method   polynomial.legendre.Legendre.copy()[source]
+ 
+Return a copy.  Returns 
+ 
+new_seriesseries
+
+
+Copy of self.

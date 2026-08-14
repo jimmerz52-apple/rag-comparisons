@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.resolver_match
+
+HttpRequest.resolver_match  
+An instance of ResolverMatch representing the resolved URL. This attribute is only set after URL resolving took place, which means it’s available in all views but not in middleware which are executed before URL resolving takes place (you can use it in process_view() though).

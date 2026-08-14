@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.add_alias
+
+email.charset.add_alias(alias, canonical)  
+Add a character set alias. alias is the alias name, e.g. latin-1. canonical is the character set’s canonical name, e.g. iso-8859-1. The global charset alias registry is kept in the module global dictionary ALIASES.

@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_mathlibs
+
+numpy.distutils.misc_util.get_mathlibs(path=None)[source]
+ 
+Return the MATHLIB line from numpyconfig.h

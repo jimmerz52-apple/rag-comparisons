@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.AsyncExitStack.aclose
+
+aclose()  
+Similar to close() but properly handles awaitables.

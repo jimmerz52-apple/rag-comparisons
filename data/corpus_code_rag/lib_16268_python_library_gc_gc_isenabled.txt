@@ -1,0 +1,4 @@
+# python.library.gc#gc.isenabled
+
+gc.isenabled()  
+Return True if automatic collection is enabled.

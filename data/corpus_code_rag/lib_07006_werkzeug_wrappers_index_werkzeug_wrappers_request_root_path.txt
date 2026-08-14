@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.root_path
+
+root_path  
+The prefix that the application is mounted under, without a trailing slash. path comes after this.

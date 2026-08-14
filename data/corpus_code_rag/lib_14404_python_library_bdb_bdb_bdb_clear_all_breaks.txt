@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.clear_all_breaks
+
+clear_all_breaks()  
+Delete all existing breakpoints.

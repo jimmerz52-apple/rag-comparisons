@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.Future.done
+
+done()  
+Return True if the call was successfully cancelled or finished running.

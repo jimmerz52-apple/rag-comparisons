@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.process_request
+
+process_request(request, client_address)  
+Calls finish_request() to create an instance of the RequestHandlerClass. If desired, this function can create a new process or thread to handle the request; the ForkingMixIn and ThreadingMixIn classes do this.

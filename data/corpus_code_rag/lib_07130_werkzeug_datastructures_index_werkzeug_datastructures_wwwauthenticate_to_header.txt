@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.WWWAuthenticate.to_header
+
+to_header()  
+Convert the stored values into a WWW-Authenticate header.

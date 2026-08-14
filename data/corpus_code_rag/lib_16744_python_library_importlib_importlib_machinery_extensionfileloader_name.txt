@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.name
+
+name  
+Name of the module the loader supports.

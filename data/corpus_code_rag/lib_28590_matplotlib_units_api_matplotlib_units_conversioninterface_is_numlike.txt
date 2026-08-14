@@ -1,0 +1,5 @@
+# matplotlib.units_api#matplotlib.units.ConversionInterface.is_numlike
+
+staticis_numlike(x)[source]
+ 
+[Deprecated] The Matplotlib datalim, autoscaling, locators etc work with scalars which are the units converted to floats given the current unit. The converter may be passed these floats, or arrays of them, even when units are set. Notes  Deprecated since version 3.5.

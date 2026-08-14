@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.LineTool.on_mouse_press
+
+on_mouse_press(event) [source]

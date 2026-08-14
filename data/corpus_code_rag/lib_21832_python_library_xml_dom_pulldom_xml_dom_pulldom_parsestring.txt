@@ -1,0 +1,4 @@
+# python.library.xml.dom.pulldom#xml.dom.pulldom.parseString
+
+xml.dom.pulldom.parseString(string, parser=None)  
+Return a DOMEventStream that represents the (Unicode) string.

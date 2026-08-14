@@ -1,0 +1,4 @@
+# python.library.signal#signal.CTRL_C_EVENT
+
+signal.CTRL_C_EVENT  
+The signal corresponding to the Ctrl+C keystroke event. This signal can only be used with os.kill(). Availability: Windows.  New in version 3.2.

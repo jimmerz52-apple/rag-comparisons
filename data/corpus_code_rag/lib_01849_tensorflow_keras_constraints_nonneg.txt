@@ -1,0 +1,10 @@
+# tensorflow.keras.constraints.nonneg
+
+tf.keras.constraints.NonNeg     View source on GitHub    Constrains the weights to be non-negative. Inherits From: Constraint  View aliases  Main aliases 
+tf.keras.constraints.non_neg Compat aliases for migration See Migration guide for more details. tf.compat.v1.keras.constraints.NonNeg, tf.compat.v1.keras.constraints.non_neg  Also available via the shortcut function tf.keras.constraints.non_neg. Methods get_config View source 
+get_config()
+ __call__ View source 
+__call__(
+    w
+)
+ Call self as a function.

@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.sysconfig
+
+Module: tf.compat.v1.sysconfig System configuration library. Functions get_build_info(...): Get a dictionary describing TensorFlow's build environment. get_compile_flags(...): Get the compilation flags for custom operators. get_include(...): Get the directory containing the TensorFlow C++ header files. get_lib(...): Get the directory containing the TensorFlow framework library. get_link_flags(...): Get the link flags for custom operators.
+ 
+
+
+ Other Members
+  CXX11_ABI_FLAG   0  
+  MONOLITHIC_BUILD   0

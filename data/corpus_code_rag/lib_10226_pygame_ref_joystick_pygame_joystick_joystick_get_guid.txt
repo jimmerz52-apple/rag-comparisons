@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_guid
+
+get_guid() → str 
+ get the joystick GUID get_guid() -> str  Get the GUID string. This identifies the exact hardware of the joystick device.  New in pygame 2.0.0dev11.

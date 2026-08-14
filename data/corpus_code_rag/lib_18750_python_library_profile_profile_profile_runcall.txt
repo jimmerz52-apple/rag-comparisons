@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.runcall
+
+runcall(func, /, *args, **kwargs)  
+Profile func(*args, **kwargs)

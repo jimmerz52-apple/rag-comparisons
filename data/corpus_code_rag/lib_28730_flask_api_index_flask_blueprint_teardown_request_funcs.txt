@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.teardown_request_funcs
+
+teardown_request_funcs: t.Dict[AppOrBlueprintKey, t.List[TeardownCallable]]  
+A data structure of functions to call at the end of each request even if an exception is raised, in the format {scope: [functions]}. The scope key is the name of a blueprint the functions are active for, or None for all requests. To register a function, use the teardown_request() decorator. This data structure is internal. It should not be modified directly and its format may change at any time.

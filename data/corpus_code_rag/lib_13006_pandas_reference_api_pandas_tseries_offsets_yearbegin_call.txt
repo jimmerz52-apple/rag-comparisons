@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.yearbegin.__call__
+
+pandas.tseries.offsets.YearBegin.__call__   YearBegin.__call__(*args, **kwargs)
+ 
+Call self as a function.

@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPException
+
+exception smtplib.SMTPException  
+Subclass of OSError that is the base exception class for all the other exceptions provided by this module.  Changed in version 3.4: SMTPException became subclass of OSError

@@ -1,0 +1,3 @@
+# django.ref.urls#django.urls.register_converter
+
+register_converter(converter, type_name)

@@ -1,0 +1,4 @@
+# python.library.ast#ast.PyCF_TYPE_COMMENTS
+
+ast.PyCF_TYPE_COMMENTS  
+Enables support for PEP 484 and PEP 526 style type comments (# type: <type>, # type: ignore <stuff>).  New in version 3.8.

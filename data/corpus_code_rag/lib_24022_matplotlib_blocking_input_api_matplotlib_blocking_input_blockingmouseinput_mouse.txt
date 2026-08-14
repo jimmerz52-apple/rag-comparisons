@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.mouse_event_stop
+
+mouse_event_stop(event)[source]
+ 
+Process an button-2 event (end blocking input).  Parameters 
+ 
+eventMouseEvent

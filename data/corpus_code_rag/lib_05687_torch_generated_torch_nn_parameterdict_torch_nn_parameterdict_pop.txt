@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.parameterdict#torch.nn.ParameterDict.pop
+
+pop(key) [source]
+ 
+Remove key from the ParameterDict and return its parameter.  Parameters 
+key (string) – key to pop from the ParameterDict

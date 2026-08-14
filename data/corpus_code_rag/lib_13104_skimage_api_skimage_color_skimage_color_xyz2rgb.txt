@@ -1,0 +1,22 @@
+# skimage.api.skimage.color#skimage.color.xyz2rgb
+
+skimage.color.xyz2rgb(xyz) [source]
+ 
+XYZ to RGB color space conversion.  Parameters 
+ 
+xyz(…, 3) array_like 
+
+The image in XYZ format. Final dimension denotes channels.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in RGB format. Same dimensions as input.    Raises 
+ ValueError
+
+If xyz is not at least 2-D with shape (…, 3).     Notes The CIE XYZ color space is derived from the CIE RGB color space. Note however that this function converts to sRGB. References  
+1  
+https://en.wikipedia.org/wiki/CIE_1931_color_space   Examples >>> from skimage import data
+>>> from skimage.color import rgb2xyz, xyz2rgb
+>>> img = data.astronaut()
+>>> img_xyz = rgb2xyz(img)
+>>> img_rgb = xyz2rgb(img_xyz)

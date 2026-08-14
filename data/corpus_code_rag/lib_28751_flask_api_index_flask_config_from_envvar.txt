@@ -1,0 +1,10 @@
+# flask.api.index#flask.Config.from_envvar
+
+from_envvar(variable_name, silent=False)  
+Loads a configuration from an environment variable pointing to a configuration file. This is basically just a shortcut with nicer error messages for this line of code: app.config.from_pyfile(os.environ['YOURAPPLICATION_SETTINGS'])
+  Parameters 
+ 
+variable_name (str) – name of the environment variable 
+silent (bool) – set to True if you want silent failure for missing files.   Returns 
+bool. True if able to load config, False otherwise.  Return type 
+bool

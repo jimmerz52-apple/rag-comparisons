@@ -1,0 +1,16 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.assert_awaited
+
+assert_awaited()  
+Assert that the mock was awaited at least once. Note that this is separate from the object having been called, the await keyword must be used: >>> mock = AsyncMock()
+>>> async def main(coroutine_mock):
+...     await coroutine_mock
+...
+>>> coroutine_mock = mock()
+>>> mock.called
+True
+>>> mock.assert_awaited()
+Traceback (most recent call last):
+...
+AssertionError: Expected mock to have been awaited.
+>>> asyncio.run(main(coroutine_mock))
+>>> mock.assert_awaited()

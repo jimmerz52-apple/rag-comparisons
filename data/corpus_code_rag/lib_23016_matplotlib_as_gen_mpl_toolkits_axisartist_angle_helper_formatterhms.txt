@@ -1,0 +1,31 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.formatterhms
+
+mpl_toolkits.axisartist.angle_helper.FormatterHMS   classmpl_toolkits.axisartist.angle_helper.FormatterHMS[source]
+ 
+Bases: mpl_toolkits.axisartist.angle_helper.FormatterDMS   __call__(direction, factor, values)[source]
+ 
+Call self as a function. 
+   deg_mark='^\\mathrm{h}'
+
+   fmt_d='$%d^\\mathrm{h}$'
+
+   fmt_d_m='$%s%d^\\mathrm{h}\\,%02d^\\mathrm{m}$'
+
+   fmt_d_m_partial='$%s%d^\\mathrm{h}\\,%02d^\\mathrm{m}\\,'
+
+   fmt_d_ms='$%s%d^\\mathrm{h}\\,%02d.%s^\\mathrm{m}$'
+
+   fmt_ds='$%d.%s^\\mathrm{h}$'
+
+   fmt_s_partial='%02d^\\mathrm{s}$'
+
+   fmt_ss_partial='%02d.%s^\\mathrm{s}$'
+
+   min_mark='^\\mathrm{m}'
+
+   sec_mark='^\\mathrm{s}'
+
+ 
+  Examples using mpl_toolkits.axisartist.angle_helper.FormatterHMS
+ 
+   mpl_toolkits.axisartist.floating_axes features

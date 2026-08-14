@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.get_preamble
+
+matplotlib.backends.backend_pgf.get_preamble()[source]
+ 
+Get LaTeX preamble from rc.

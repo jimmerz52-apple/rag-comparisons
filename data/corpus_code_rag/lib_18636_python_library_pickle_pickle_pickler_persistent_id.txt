@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.Pickler.persistent_id
+
+persistent_id(obj)  
+Do nothing by default. This exists so a subclass can override it. If persistent_id() returns None, obj is pickled as usual. Any other value causes Pickler to emit the returned value as a persistent ID for obj. The meaning of this persistent ID should be defined by Unpickler.persistent_load(). Note that the value returned by persistent_id() cannot itself have a persistent ID. See Persistence of External Objects for details and examples of uses.

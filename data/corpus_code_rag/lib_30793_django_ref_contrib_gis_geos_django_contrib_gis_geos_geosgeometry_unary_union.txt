@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.unary_union
+
+GEOSGeometry.unary_union  
+Computes the union of all the elements of this geometry. The result obeys the following contract:  Unioning a set of LineStrings has the effect of fully noding and dissolving the linework. Unioning a set of Polygons will always return a Polygon or MultiPolygon geometry (unlike GEOSGeometry.union(), which may return geometries of lower dimension if a topology collapse occurs).

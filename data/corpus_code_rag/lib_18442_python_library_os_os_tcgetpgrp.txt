@@ -1,0 +1,4 @@
+# python.library.os#os.tcgetpgrp
+
+os.tcgetpgrp(fd)  
+Return the process group associated with the terminal given by fd (an open file descriptor as returned by os.open()). Availability: Unix.

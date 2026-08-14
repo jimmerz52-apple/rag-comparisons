@@ -1,0 +1,29 @@
+# django.topics.auth.customizing#django.contrib.auth.get_user_model
+
+get_user_model()  
+Instead of referring to User directly, you should reference the user model using django.contrib.auth.get_user_model(). This method will return the currently active user model – the custom user model if one is specified, or User otherwise. When you define a foreign key or many-to-many relations to the user model, you should specify the custom model using the AUTH_USER_MODEL setting. For example: from django.conf import settings
+from django.db import models
+
+class Article(models.Model):
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+    )
+ When connecting to signals sent by the user model, you should specify the custom model using the AUTH_USER_MODEL setting. For example: from django.conf import settings
+from django.db.models.signals import post_save
+
+def post_save_receiver(sender, instance, created, **kwargs):
+    pass
+
+post_save.connect(post_save_receiver, sender=settings.AUTH_USER_MODEL)
+ Generally speaking, it’s easiest to refer to the user model with the AUTH_USER_MODEL setting in code that’s executed at import time, however, it’s also possible to call get_user_model() while Django is importing models, so you could use models.ForeignKey(get_user_model(), ...). If your app is tested with multiple user models, using @override_settings(AUTH_USER_MODEL=...) for example, and you cache the result of get_user_model() in a module-level variable, you may need to listen to the setting_changed signal to clear the cache. For example: from django.apps import apps
+from django.contrib.auth import get_user_model
+from django.core.signals import setting_changed
+from django.dispatch import receiver
+
+@receiver(setting_changed)
+def user_model_swapped(**kwargs):
+    if kwargs['setting'] == 'AUTH_USER_MODEL':
+        apps.clear_cache()
+        from myapp import some_module
+        some_module.UserModel = get_user_model()

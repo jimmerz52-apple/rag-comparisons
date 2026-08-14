@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.intersects_bbox
+
+intersects_bbox(bbox, filled=True)[source]
+ 
+Return whether this path intersects a given Bbox. If filled is True, then this also returns True if the path completely encloses the Bbox (i.e., the path is treated as filled). The bounding box is always considered filled.

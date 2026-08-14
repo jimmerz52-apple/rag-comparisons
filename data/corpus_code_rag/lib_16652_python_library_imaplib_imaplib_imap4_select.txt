@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.select
+
+IMAP4.select(mailbox='INBOX', readonly=False)  
+Select a mailbox. Returned data is the count of messages in mailbox (EXISTS response). The default mailbox is 'INBOX'. If the readonly flag is set, modifications to the mailbox are not allowed.

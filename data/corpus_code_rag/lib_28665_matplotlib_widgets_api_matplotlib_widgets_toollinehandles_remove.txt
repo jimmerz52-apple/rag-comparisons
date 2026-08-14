@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolLineHandles.remove
+
+remove()[source]
+ 
+Remove the handles artist from the figure.

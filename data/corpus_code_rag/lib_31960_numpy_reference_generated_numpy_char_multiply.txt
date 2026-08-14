@@ -1,0 +1,17 @@
+# numpy.reference.generated.numpy.char.multiply
+
+numpy.char.multiply   char.multiply(a, i)[source]
+ 
+Return (a * i), that is string multiple concatenation, element-wise. Values in i of less than 0 are treated as 0 (which yields an empty string).  Parameters 
+ 
+aarray_like of str or unicode
+
+
+iarray_like of ints
+
+  Returns 
+ 
+outndarray
+
+
+Output array of str or unicode, depending on input types

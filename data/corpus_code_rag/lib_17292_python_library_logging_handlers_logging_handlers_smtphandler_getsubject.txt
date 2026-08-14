@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.SMTPHandler.getSubject
+
+getSubject(record)  
+If you want to specify a subject line which is record-dependent, override this method.

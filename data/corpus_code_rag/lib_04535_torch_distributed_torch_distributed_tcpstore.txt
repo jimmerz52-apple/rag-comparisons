@@ -1,0 +1,20 @@
+# torch.distributed#torch.distributed.TCPStore
+
+class torch.distributed.TCPStore  
+A TCP-based distributed key-value store implementation. The server store holds the data, while the client stores can connect to the server store over TCP and perform actions such as set() to insert a key-value pair, get() to retrieve a key-value pair, etc.  Parameters 
+ 
+host_name (str) – The hostname or IP Address the server store should run on. 
+port (int) – The port on which the server store should listen for incoming requests. 
+world_size (int) – The total number of store users (number of clients + 1 for the server). 
+is_master (bool) – True when initializing the server store, False for client stores. 
+timeout (timedelta) – Timeout used by the store during initialization and for methods such as get() and wait().     Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> # Run on process 1 (server)
+>>> server_store = dist.TCPStore("127.0.0.1", 1234, 2, True, timedelta(seconds=30))
+>>> # Run on process 2 (client)
+>>> client_store = dist.TCPStore("127.0.0.1", 1234, 2, False)
+>>> # Use any of the store methods from either the client or server after initialization
+>>> server_store.set("first_key", "first_value")
+>>> client_store.get("first_key")

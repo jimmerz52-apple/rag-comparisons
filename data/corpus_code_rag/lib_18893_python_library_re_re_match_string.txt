@@ -1,0 +1,4 @@
+# python.library.re#re.Match.string
+
+Match.string  
+The string passed to match() or search().

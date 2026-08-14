@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.filemoviewriter#matplotlib.animation.FileMovieWriter.finish
+
+finish()[source]
+ 
+Finish any processing for writing the movie.

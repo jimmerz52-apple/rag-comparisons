@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.polynomial.polynomial.truncate
+
+numpy.polynomial.polynomial.Polynomial.truncate method   polynomial.polynomial.Polynomial.truncate(size)[source]
+ 
+Truncate series to length size. Reduce the series to length size by discarding the high degree terms. The value of size must be a positive integer. This can be useful in least squares where the coefficients of the high degree terms may be very small.  Parameters 
+ 
+sizepositive int
+
+
+The series is reduced to length size by discarding the high degree terms. The value of size must be a positive integer.    Returns 
+ 
+new_seriesseries
+
+
+New instance of series with truncated coefficients.

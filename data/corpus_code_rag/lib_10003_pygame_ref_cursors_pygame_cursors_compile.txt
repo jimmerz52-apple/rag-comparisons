@@ -1,0 +1,28 @@
+# pygame.ref.cursors#pygame.cursors.compile
+
+pygame.cursors.compile() 
+ create binary cursor data from simple strings compile(strings, black='X', white='.', xor='o') -> data, mask  A sequence of strings can be used to create binary cursor data for the system cursor. This returns the binary data in the form of two tuples. Those can be passed as the third and fourth arguments respectively of the pygame.mouse.set_cursor() function. If you are creating your own cursor strings, you can use any value represent the black and white pixels. Some system allow you to set a special toggle color for the system color, this is also called the xor color. If the system does not support xor cursors, that color will simply be black. The height must be divisible by 8. The width of the strings must all be equal and be divisible by 8. If these two conditions are not met, ValueError is raised. An example set of cursor strings looks like this thickarrow_strings = (               #sized 24x24
+  "XX                      ",
+  "XXX                     ",
+  "XXXX                    ",
+  "XX.XX                   ",
+  "XX..XX                  ",
+  "XX...XX                 ",
+  "XX....XX                ",
+  "XX.....XX               ",
+  "XX......XX              ",
+  "XX.......XX             ",
+  "XX........XX            ",
+  "XX........XXX           ",
+  "XX......XXXXX           ",
+  "XX.XXX..XX              ",
+  "XXXX XX..XX             ",
+  "XX   XX..XX             ",
+  "     XX..XX             ",
+  "      XX..XX            ",
+  "      XX..XX            ",
+  "       XXXX             ",
+  "       XX               ",
+  "                        ",
+  "                        ",
+  "                        ")

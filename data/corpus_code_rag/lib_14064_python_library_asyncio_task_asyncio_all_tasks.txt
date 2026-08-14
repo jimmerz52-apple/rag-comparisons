@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.all_tasks
+
+asyncio.all_tasks(loop=None)  
+Return a set of not yet finished Task objects run by the loop. If loop is None, get_running_loop() is used for getting current loop.  New in version 3.7.

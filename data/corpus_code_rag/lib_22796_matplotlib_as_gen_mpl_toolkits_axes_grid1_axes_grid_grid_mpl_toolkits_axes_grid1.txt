@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.grid#mpl_toolkits.axes_grid1.axes_grid.Grid.set_aspect
+
+set_aspect(aspect)[source]
+ 
+Set the aspect of the SubplotDivider.

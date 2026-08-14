@@ -1,0 +1,13 @@
+# torch.quantization#torch.quantization.MinMaxObserver
+
+class torch.quantization.MinMaxObserver(dtype=torch.quint8, qscheme=torch.per_tensor_affine, reduce_range=False, quant_min=None, quant_max=None) [source]
+ 
+Observer module for computing the quantization parameters based on the running min and max values. This observer uses the tensor min/max statistics to compute the quantization parameters. The module records the running minimum and maximum of incoming tensors, and uses this statistic to compute the quantization parameters.  Parameters 
+ 
+dtype – Quantized data type 
+qscheme – Quantization scheme to be used 
+reduce_range – Reduces the range of the quantized data type by 1 bit 
+quant_min – Minimum quantization value. If unspecified, it will follow the 8-bit setup. 
+quant_max – Maximum quantization value. If unspecified, it will follow the 8-bit setup.    Given running min/max as xminx_\text{min}  and xmaxx_\text{max} , scale ss  and zero point zz  are computed as: The running minimum/maximum xmin/maxx_\text{min/max}  is computed as:  xmin={min⁡(X)if xmin=Nonemin⁡(xmin,min⁡(X))otherwisexmax={max⁡(X)if xmax=Nonemax⁡(xmax,max⁡(X))otherwise\begin{array}{ll} x_\text{min} &= \begin{cases} \min(X) & \text{if~}x_\text{min} = \text{None} \\ \min\left(x_\text{min}, \min(X)\right) & \text{otherwise} \end{cases}\\ x_\text{max} &= \begin{cases} \max(X) & \text{if~}x_\text{max} = \text{None} \\ \max\left(x_\text{max}, \max(X)\right) & \text{otherwise} \end{cases}\\ \end{array} 
+where XX  is the observed tensor. The scale ss  and zero point zz  are then computed as:  if Symmetric:s=2max⁡(∣xmin∣,xmax)/(Qmax−Qmin)z={0if dtype is qint8128otherwiseOtherwise:s=(xmax−xmin)/(Qmax−Qmin)z=Qmin−round(xmin/s)\begin{aligned} \text{if Symmetric:}&\\ &s = 2 \max(|x_\text{min}|, x_\text{max}) / \left( Q_\text{max} - Q_\text{min} \right) \\ &z = \begin{cases} 0 & \text{if dtype is qint8} \\ 128 & \text{otherwise} \end{cases}\\ \text{Otherwise:}&\\ &s = \left( x_\text{max} - x_\text{min} \right ) / \left( Q_\text{max} - Q_\text{min} \right ) \\ &z = Q_\text{min} - \text{round}(x_\text{min} / s) \end{aligned} 
+where QminQ_\text{min}  and QmaxQ_\text{max}  are the minimum and maximum of the quantized data type.  Warning Only works with torch.per_tensor_symmetric quantization scheme   Warning dtype can only take torch.qint8 or torch.quint8.   Note If the running minimum equals to the running maximum, the scale and zero_point are set to 1.0 and 0.

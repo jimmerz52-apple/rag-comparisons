@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.defects
+
+defects  
+The defects attribute contains a list of all the problems found when parsing this message. See email.errors for a detailed description of the possible parsing defects.

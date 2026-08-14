@@ -1,0 +1,7 @@
+# 647
+Task: 647
+
+# Write a function to split a string at uppercase letters.
+import re
+def split_upperstring(text):
+ return (re.findall('[A-Z][^A-Z]*', text))

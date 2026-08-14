@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseTransport.close
+
+BaseTransport.close()  
+Close the transport. If the transport has a buffer for outgoing data, buffered data will be flushed asynchronously. No more data will be received. After all buffered data is flushed, the protocol’s protocol.connection_lost() method will be called with None as its argument.

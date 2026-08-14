@@ -1,0 +1,4 @@
+# python.library.socket#socket.timeout
+
+exception socket.timeout  
+A subclass of OSError, this exception is raised when a timeout occurs on a socket which has had timeouts enabled via a prior call to settimeout() (or implicitly through setdefaulttimeout()). The accompanying value is a string whose value is currently always “timed out”.  Changed in version 3.3: This class was made a subclass of OSError.

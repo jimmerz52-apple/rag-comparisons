@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.matrix.data
+
+numpy.matrix.data attribute   matrix.data
+ 
+Python buffer object pointing to the start of the array’s data.

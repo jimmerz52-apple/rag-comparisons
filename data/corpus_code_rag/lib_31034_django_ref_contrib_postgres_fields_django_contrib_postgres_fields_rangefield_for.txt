@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.RangeField.form_field
+
+form_field  
+The form field class to use. Should be a subclass of django.contrib.postgres.forms.BaseRangeField.

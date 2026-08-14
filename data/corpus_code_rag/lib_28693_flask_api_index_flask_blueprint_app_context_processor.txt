@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.app_context_processor
+
+app_context_processor(f)  
+Like Flask.context_processor() but for a blueprint. Such a function is executed each request, even if outside of the blueprint.  Parameters 
+f (Callable[[], Dict[str, Any]]) –   Return type 
+Callable[[], Dict[str, Any]]

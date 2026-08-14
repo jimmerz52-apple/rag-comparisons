@@ -1,0 +1,14 @@
+# werkzeug.urls.index#werkzeug.urls.iri_to_uri
+
+werkzeug.urls.iri_to_uri(iri, charset='utf-8', errors='strict', safe_conversion=False)  
+Convert an IRI to a URI. All non-ASCII and unsafe characters are quoted. If the URL has a domain, it is encoded to Punycode. >>> iri_to_uri('http://\u2603.net/p\xe5th?q=\xe8ry%DF')
+'http://xn--n3h.net/p%C3%A5th?q=%C3%A8ry%DF'
+  Parameters 
+ 
+iri (Union[str, Tuple[str, str, str, str, str]]) – The IRI to convert. 
+charset (str) – The encoding of the IRI. 
+errors (str) – Error handler to use during bytes.encode. 
+safe_conversion (bool) – Return the URL unchanged if it only contains ASCII characters and no whitespace. See the explanation below.   Return type 
+str   There is a general problem with IRI conversion with some protocols that are in violation of the URI specification. Consider the following two IRIs: magnet:?xt=uri:whatever
+itms-services://?action=download-manifest
+ After parsing, we don’t know if the scheme requires the //, which is dropped if empty, but conveys different meanings in the final URL if it’s present or not. In this case, you can use safe_conversion, which will return the URL unchanged if it only contains ASCII characters and no whitespace. This can result in a URI with unquoted characters if it was not already quoted correctly, but preserves the URL’s semantics. Werkzeug uses this for the Location header for redirects.  Changelog Changed in version 0.15: All reserved characters remain unquoted. Previously, only some reserved characters were left unquoted.   Changed in version 0.9.6: The safe_conversion parameter was added.   New in version 0.6.

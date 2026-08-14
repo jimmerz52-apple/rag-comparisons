@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.Stream.wait_stream
+
+wait_stream(stream) [source]
+ 
+Synchronizes with another stream. All future work submitted to this stream will wait until all kernels submitted to a given stream at the time of call complete.  Parameters 
+stream (Stream) – a stream to synchronize.    Note This function returns without waiting for currently enqueued kernels in stream: only future operations are affected.

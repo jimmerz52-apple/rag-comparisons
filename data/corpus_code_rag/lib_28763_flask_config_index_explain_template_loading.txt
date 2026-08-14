@@ -1,0 +1,4 @@
+# flask.config.index#EXPLAIN_TEMPLATE_LOADING
+
+EXPLAIN_TEMPLATE_LOADING  
+Log debugging information tracing how a template file was loaded. This can be useful to figure out why a template was not loaded or the wrong file appears to be loaded. Default: False

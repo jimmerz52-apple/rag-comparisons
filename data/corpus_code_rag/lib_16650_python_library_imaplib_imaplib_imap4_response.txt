@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.response
+
+IMAP4.response(code)  
+Return data for response code if received, or None. Returns the given code, instead of the usual type.

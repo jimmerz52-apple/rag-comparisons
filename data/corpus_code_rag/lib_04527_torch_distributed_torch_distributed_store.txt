@@ -1,0 +1,4 @@
+# torch.distributed#torch.distributed.Store
+
+class torch.distributed.Store  
+Base class for all store implementations, such as the 3 provided by PyTorch distributed: (TCPStore, FileStore, and HashStore).

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.flip
+
+flip(dims) → Tensor  
+See torch.flip()

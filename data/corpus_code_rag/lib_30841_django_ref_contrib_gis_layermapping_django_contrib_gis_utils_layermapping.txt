@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.layermapping#django.contrib.gis.utils.LayerMapping
+
+class LayerMapping(model, data_source, mapping, layer=0, source_srs=None, encoding=None, transaction_mode='commit_on_success', transform=True, unique=True, using='default')

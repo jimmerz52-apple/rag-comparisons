@@ -1,0 +1,3 @@
+# matplotlib.collections_api#matplotlib.collections.RegularPolyCollection.get_transforms
+
+get_transforms()[source]

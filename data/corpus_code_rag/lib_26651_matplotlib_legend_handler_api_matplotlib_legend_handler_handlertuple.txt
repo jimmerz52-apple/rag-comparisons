@@ -1,0 +1,16 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerTuple
+
+classmatplotlib.legend_handler.HandlerTuple(ndivide=1, pad=None, **kwargs)[source]
+ 
+Handler for Tuple.  Parameters 
+ 
+ndivideint, default: 1
+
+
+The number of sections to divide the legend area into. If None, use the length of the input tuple.  
+padfloat, default: rcParams["legend.borderpad"] (default: 0.4)
+
+
+Padding in units of fraction of font size.  **kwargs
+
+Keyword arguments forwarded to HandlerBase.       create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]

@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.setup_test_environment
+
+DiscoverRunner.setup_test_environment(**kwargs)  
+Sets up the test environment by calling setup_test_environment() and setting DEBUG to self.debug_mode (defaults to False).

@@ -1,0 +1,9 @@
+# python.library.timeit#timeit.Timer.print_exc
+
+print_exc(file=None)  
+Helper to print a traceback from the timed code. Typical use: t = Timer(...)       # outside the try/except
+try:
+    t.timeit(...)    # or t.repeat(...)
+except Exception:
+    t.print_exc()
+ The advantage over the standard traceback is that source lines in the compiled template will be displayed. The optional file argument directs where the traceback is sent; it defaults to sys.stderr.

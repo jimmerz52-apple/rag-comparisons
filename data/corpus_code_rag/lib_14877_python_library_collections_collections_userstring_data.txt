@@ -1,0 +1,4 @@
+# python.library.collections#collections.UserString.data
+
+data  
+A real str object used to store the contents of the UserString class.

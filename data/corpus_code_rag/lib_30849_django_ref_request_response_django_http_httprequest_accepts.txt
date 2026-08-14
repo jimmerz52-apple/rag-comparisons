@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.HttpRequest.accepts
+
+HttpRequest.accepts(mime_type)  
+Returns True if the request Accept header matches the mime_type argument: >>> request.accepts('text/html')
+True
+ Most browsers send Accept: */* by default, so this would return True for all content types. Setting an explicit Accept header in API requests can be useful for returning a different content type for those consumers only. See Content negotiation example of using accepts() to return different content to API consumers. If a response varies depending on the content of the Accept header and you are using some form of caching like Django’s cache middleware, you should decorate the view with vary_on_headers('Accept') so that the responses are properly cached.

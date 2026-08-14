@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.compress_size
+
+ZipInfo.compress_size  
+Size of the compressed data.

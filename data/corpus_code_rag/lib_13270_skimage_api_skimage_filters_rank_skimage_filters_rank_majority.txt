@@ -1,0 +1,32 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.majority
+
+skimage.filters.rank.majority(image, selem, *, out=None, mask=None, shift_x=False, shift_y=False, shift_z=False) [source]
+ 
+Majority filter assign to each pixel the most occuring value within its neighborhood.  Parameters 
+ 
+imagendarray 
+
+Image array (uint8, uint16 array).  
+selem2-D array (integer or float) 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s.  
+outndarray (integer or float), optional 
+
+If None, a new array will be allocated.  
+maskndarray (integer or float), optional 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_yint, optional 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).    Returns 
+ 
+out2-D array (same dtype as input image) 
+
+Output image.     Examples >>> from skimage import data
+>>> from skimage.filters.rank import majority
+>>> from skimage.morphology import disk, ball
+>>> import numpy as np
+>>> img = data.camera()
+>>> volume = np.random.randint(0, 255, size=(10,10,10), dtype=np.uint8)
+>>> maj_img = majority(img, disk(5))
+>>> maj_img_vol = majority(volume, ball(5))

@@ -1,0 +1,33 @@
+# matplotlib._as_gen.matplotlib.axes.axes.inset_axes
+
+matplotlib.axes.Axes.inset_axes   Axes.inset_axes(bounds, *, transform=None, zorder=5, **kwargs)[source]
+ 
+Add a child inset Axes to this existing Axes.  Parameters 
+ 
+bounds[x0, y0, width, height]
+
+
+Lower-left corner of inset Axes, and its width and height.  
+transformTransform
+
+
+Defaults to ax.transAxes, i.e. the units of rect are in Axes-relative coordinates.  
+zordernumber
+
+
+Defaults to 5 (same as Axes.legend). Adjust higher or lower to change whether it is above or below data plotted on the parent Axes.  **kwargs
+
+Other keyword arguments are passed on to the child Axes.    Returns 
+ ax
+
+The created Axes instance.      Warning This method is experimental as of 3.0, and the API may change.  Examples This example makes two inset Axes, the first is in Axes-relative coordinates, and the second in data-coordinates: fig, ax = plt.subplots()
+ax.plot(range(10))
+axin1 = ax.inset_axes([0.8, 0.1, 0.15, 0.15])
+axin2 = ax.inset_axes(
+        [5, 7, 2.3, 2.3], transform=ax.transData)
+ 
+  Examples using matplotlib.axes.Axes.inset_axes
+ 
+   Placing Colorbars   
+
+   Zoom region inset axes

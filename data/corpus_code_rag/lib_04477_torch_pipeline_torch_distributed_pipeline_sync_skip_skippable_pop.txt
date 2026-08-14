@@ -1,0 +1,10 @@
+# torch.pipeline#torch.distributed.pipeline.sync.skip.skippable.pop
+
+class torch.distributed.pipeline.sync.skip.skippable.pop(name) [source]
+ 
+The command to pop a skip tensor. def forward(self, input):
+    skip = yield pop('name')
+    return f(input) + skip
+  Parameters 
+name (str) – name of skip tensor  Returns 
+the skip tensor previously stashed by another layer under the same name

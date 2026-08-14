@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse#matplotlib.patches.Ellipse.set_angle
+
+set_angle(angle)[source]
+ 
+Set the angle of the ellipse.  Parameters 
+ 
+anglefloat

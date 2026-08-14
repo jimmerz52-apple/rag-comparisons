@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.is_writable_file_like
+
+matplotlib.cbook.is_writable_file_like(obj)[source]
+ 
+Return whether obj looks like a file object with a write method.

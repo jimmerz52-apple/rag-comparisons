@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.get_spine_transform
+
+get_spine_transform()[source]
+ 
+Return the spine transform.

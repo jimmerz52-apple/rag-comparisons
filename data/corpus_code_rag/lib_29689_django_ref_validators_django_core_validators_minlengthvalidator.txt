@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.MinLengthValidator
+
+class MinLengthValidator(limit_value, message=None)  
+Raises a ValidationError with a code of 'min_length' if the length of value is less than limit_value, which may be a callable.

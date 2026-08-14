@@ -1,0 +1,5 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.RendererPS.get_image_magnification
+
+get_image_magnification()[source]
+ 
+Get the factor by which to magnify images passed to draw_image. Allows a backend to have images at a different resolution to other artists.

@@ -1,0 +1,31 @@
+# skimage.api.skimage.measure#skimage.measure.moments
+
+skimage.measure.moments(image, order=3) [source]
+ 
+Calculate all raw image moments up to a certain order.  The following properties can be calculated from raw image moments:
+
+ Area as: M[0, 0]. Centroid as: {M[1, 0] / M[0, 0], M[0, 1] / M[0, 0]}.    Note that raw moments are neither translation, scale nor rotation invariant.  Parameters 
+ 
+imagenD double or uint8 array 
+
+Rasterized shape as image.  
+orderint, optional 
+
+Maximum order of moments. Default is 3.    Returns 
+ 
+m(order + 1, order + 1) array 
+
+Raw image moments.     References  
+1  
+Wilhelm Burger, Mark Burge. Principles of Digital Image Processing: Core Algorithms. Springer-Verlag, London, 2009.  
+2  
+B. Jähne. Digital Image Processing. Springer-Verlag, Berlin-Heidelberg, 6. edition, 2005.  
+3  
+T. H. Reiss. Recognizing Planar Objects Using Invariant Image Features, from Lecture notes in computer science, p. 676. Springer, Berlin, 1993.  
+4  
+https://en.wikipedia.org/wiki/Image_moment   Examples >>> image = np.zeros((20, 20), dtype=np.double)
+>>> image[13:17, 13:17] = 1
+>>> M = moments(image)
+>>> centroid = (M[1, 0] / M[0, 0], M[0, 1] / M[0, 0])
+>>> centroid
+(14.5, 14.5)

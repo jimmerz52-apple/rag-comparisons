@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.LZMADecompressor.check
+
+check  
+The ID of the integrity check used by the input stream. This may be CHECK_UNKNOWN until enough of the input has been decoded to determine what integrity check it uses.

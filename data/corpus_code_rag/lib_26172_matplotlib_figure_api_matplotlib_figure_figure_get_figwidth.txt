@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_figwidth
+
+get_figwidth()[source]
+ 
+Return the figure width in inches.

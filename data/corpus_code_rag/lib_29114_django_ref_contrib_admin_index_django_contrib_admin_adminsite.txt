@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite
+
+class AdminSite(name='admin')  
+A Django administrative site is represented by an instance of django.contrib.admin.sites.AdminSite; by default, an instance of this class is created as django.contrib.admin.site and you can register your models and ModelAdmin instances with it. If you want to customize the default admin site, you can override it. When constructing an instance of an AdminSite, you can provide a unique instance name using the name argument to the constructor. This instance name is used to identify the instance, especially when reversing admin URLs. If no instance name is provided, a default instance name of admin will be used. See Customizing the AdminSite class for an example of customizing the AdminSite class.

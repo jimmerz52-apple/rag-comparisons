@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.charset
+
+charset()  
+Return the encoding of the message catalog file.

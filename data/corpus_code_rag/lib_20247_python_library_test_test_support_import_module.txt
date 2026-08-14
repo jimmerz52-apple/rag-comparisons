@@ -1,0 +1,4 @@
+# python.library.test#test.support.import_module
+
+test.support.import_module(name, deprecated=False, *, required_on())  
+This function imports and returns the named module. Unlike a normal import, this function raises unittest.SkipTest if the module cannot be imported. Module and package deprecation messages are suppressed during this import if deprecated is True. If a module is required on a platform but optional for others, set required_on to an iterable of platform prefixes which will be compared against sys.platform.  New in version 3.1.

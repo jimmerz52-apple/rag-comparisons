@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.set_masks
+
+set_masks() 
+ set the bitmasks needed to convert between a color and a mapped integer set_masks((r,g,b,a)) -> None  This is not needed for normal pygame usage.  Note In SDL2, the masks are read-only and accordingly this method will raise an AttributeError if called.   New in pygame 1.8.1.

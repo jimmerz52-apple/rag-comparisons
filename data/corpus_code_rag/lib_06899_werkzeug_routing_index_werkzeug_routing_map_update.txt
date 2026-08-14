@@ -1,0 +1,5 @@
+# werkzeug.routing.index#werkzeug.routing.Map.update
+
+update()  
+Called before matching and building to keep the compiled rules in the correct order after things changed.  Return type 
+None

@@ -1,0 +1,4 @@
+# python.library.sysconfig#sysconfig.get_path_names
+
+sysconfig.get_path_names()  
+Return a tuple containing all path names currently supported in sysconfig.

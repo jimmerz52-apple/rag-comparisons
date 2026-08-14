@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.queryset
+
+queryset  
+A QuerySet that represents the objects. If provided, the value of queryset supersedes the value provided for model.  Warning queryset is a class attribute with a mutable value so care must be taken when using it directly. Before using it, either call its all() method or retrieve it with get_queryset() which takes care of the cloning behind the scenes.

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.project_normalized
+
+GEOSGeometry.project_normalized(point)  
+Returns the distance (float) from the origin of the geometry (LineString or MultiLineString) to the point projected on the geometry (that is to a point of the line the closest to the given point). The normalized version returns the distance as a float between 0 (origin) and 1 (endpoint). Reverse of GEOSGeometry.interpolate().

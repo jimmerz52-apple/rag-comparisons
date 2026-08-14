@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.remote_addr
+
+remote_addr  
+The address of the client sending the request.

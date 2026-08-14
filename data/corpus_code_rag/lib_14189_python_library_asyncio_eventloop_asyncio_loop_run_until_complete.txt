@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.run_until_complete
+
+loop.run_until_complete(future)  
+Run until the future (an instance of Future) has completed. If the argument is a coroutine object it is implicitly scheduled to run as a asyncio.Task. Return the Future’s result or raise its exception.

@@ -1,0 +1,5 @@
+# torch.random#torch.random.get_rng_state
+
+torch.random.get_rng_state() [source]
+ 
+Returns the random number generator state as a torch.ByteTensor.

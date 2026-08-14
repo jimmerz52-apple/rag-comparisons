@@ -1,0 +1,8 @@
+# flask.api.index#flask.Blueprint.add_app_template_test
+
+add_app_template_test(f, name=None)  
+Register a custom template test, available application wide. Like Flask.add_template_test() but for a blueprint. Works exactly like the app_template_test() decorator.  Changelog New in version 0.10.   Parameters 
+ 
+name (Optional[str]) – the optional name of the test, otherwise the function name will be used. 
+f (Callable[[Any], bool]) –    Return type 
+None

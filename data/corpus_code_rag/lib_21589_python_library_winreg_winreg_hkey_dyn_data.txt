@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.HKEY_DYN_DATA
+
+winreg.HKEY_DYN_DATA  
+This key is not used in versions of Windows after 98.

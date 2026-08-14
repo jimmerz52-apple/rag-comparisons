@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Sound.stop
+
+stop() 
+ stop sound playback stop() -> None  This will stop the playback of this Sound on any active Channels.

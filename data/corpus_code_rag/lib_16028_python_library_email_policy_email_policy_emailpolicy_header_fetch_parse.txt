@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.header_fetch_parse
+
+header_fetch_parse(name, value)  
+If the value has a name attribute, it is returned to unmodified. Otherwise the name, and the value with any CR or LF characters removed, are passed to the header_factory, and the resulting header object is returned. Any surrogateescaped bytes get turned into the unicode unknown-character glyph.

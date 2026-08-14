@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.manip
+
+Module: tf.compat.v1.manip Operators for manipulating tensors. Functions batch_to_space_nd(...): BatchToSpace for N-D tensors of type T. gather_nd(...): Gather slices from params into a Tensor with shape specified by indices. reshape(...): Reshapes a tensor. reverse(...): Reverses specific dimensions of a tensor. roll(...): Rolls the elements of a tensor along an axis. scatter_nd(...): Scatter updates into a new tensor according to indices. space_to_batch_nd(...): SpaceToBatch for N-D tensors of type T. tile(...): Constructs a tensor by tiling a given tensor.

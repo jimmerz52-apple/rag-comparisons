@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.getcoroutinelocals
+
+inspect.getcoroutinelocals(coroutine)  
+This function is analogous to getgeneratorlocals(), but works for coroutine objects created by async def functions.  New in version 3.5.

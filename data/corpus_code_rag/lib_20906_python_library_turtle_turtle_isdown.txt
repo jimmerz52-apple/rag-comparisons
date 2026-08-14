@@ -1,0 +1,9 @@
+# python.library.turtle#turtle.isdown
+
+turtle.isdown()  
+Return True if pen is down, False if it’s up. >>> turtle.penup()
+>>> turtle.isdown()
+False
+>>> turtle.pendown()
+>>> turtle.isdown()
+True

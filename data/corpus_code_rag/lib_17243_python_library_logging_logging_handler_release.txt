@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.release
+
+release()  
+Releases the thread lock acquired with acquire().

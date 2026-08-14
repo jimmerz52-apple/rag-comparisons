@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.path
+
+HttpRequest.path  
+A string representing the full path to the requested page, not including the scheme, domain, or query string. Example: "/music/bands/the_beatles/"

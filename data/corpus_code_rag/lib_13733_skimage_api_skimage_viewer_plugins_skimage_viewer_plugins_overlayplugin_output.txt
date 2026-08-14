@@ -1,0 +1,10 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.OverlayPlugin.output
+
+output() [source]
+ 
+Return the overlaid image.  Returns 
+ 
+overlayarray, same shape as image 
+
+The overlay currently displayed.  
+dataNone

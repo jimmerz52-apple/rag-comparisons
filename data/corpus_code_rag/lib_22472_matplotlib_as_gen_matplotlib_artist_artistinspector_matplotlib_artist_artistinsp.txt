@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.is_alias
+
+is_alias(o)[source]
+ 
+Return whether method object o is an alias for another method.

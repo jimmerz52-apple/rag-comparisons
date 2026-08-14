@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_va
+
+get_va()[source]
+ 
+Alias for get_verticalalignment.

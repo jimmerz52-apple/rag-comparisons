@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.nanj
+
+cmath.nanj  
+Complex number with zero real part and NaN imaginary part. Equivalent to complex(0.0, float('nan')).  New in version 3.6.

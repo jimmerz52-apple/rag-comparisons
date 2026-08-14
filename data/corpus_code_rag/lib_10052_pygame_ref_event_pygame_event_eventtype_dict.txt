@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.EventType.__dict__
+
+__dict__ 
+ event attribute dictionary __dict__ -> dict  Read-only. The event type specific attributes of an event. The dict attribute is a synonym for backward compatibility. For example, the attributes of a KEYDOWN event would be unicode, key, and mod

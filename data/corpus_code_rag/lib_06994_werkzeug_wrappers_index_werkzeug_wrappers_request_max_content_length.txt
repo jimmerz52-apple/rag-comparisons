@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.max_content_length
+
+max_content_length: Optional[int] = None  
+the maximum content length. This is forwarded to the form data parsing function (parse_form_data()). When set and the form or files attribute is accessed and the parsing fails because more than the specified value is transmitted a RequestEntityTooLarge exception is raised. Have a look at Dealing with Request Data for more details.  Changelog New in version 0.5.

@@ -1,0 +1,9 @@
+# django.ref.request-response#django.http.QueryDict.update
+
+QueryDict.update(other_dict)  
+Takes either a QueryDict or a dictionary. Like dict.update(), except it appends to the current dictionary items rather than replacing them. For example: >>> q = QueryDict('a=1', mutable=True)
+>>> q.update({'a': '2'})
+>>> q.getlist('a')
+['1', '2']
+>>> q['a'] # returns the last
+'2'

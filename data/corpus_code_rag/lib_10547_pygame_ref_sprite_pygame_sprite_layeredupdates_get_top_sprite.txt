@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.get_top_sprite
+
+get_top_sprite() 
+ returns the topmost sprite get_top_sprite() -> Sprite

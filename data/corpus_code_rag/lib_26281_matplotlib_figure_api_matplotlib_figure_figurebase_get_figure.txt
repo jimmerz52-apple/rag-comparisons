@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.get_figure
+
+get_figure()[source]
+ 
+Return the Figure instance the artist belongs to.

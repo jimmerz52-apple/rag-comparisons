@@ -1,0 +1,4 @@
+# python.library.parser#parser.ST.compile
+
+ST.compile(filename='<syntax-tree>')  
+Same as compilest(st, filename).

@@ -1,0 +1,3 @@
+# django.topics.db.transactions#django.db.transaction.get_autocommit
+
+get_autocommit(using=None)

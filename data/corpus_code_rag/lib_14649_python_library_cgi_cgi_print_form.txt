@@ -1,0 +1,4 @@
+# python.library.cgi#cgi.print_form
+
+cgi.print_form(form)  
+Format a form in HTML.

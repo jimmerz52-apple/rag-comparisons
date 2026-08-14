@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LogitScale.set_default_locators_and_formatters
+
+set_default_locators_and_formatters(axis)[source]
+ 
+Set the locators and formatters of axis to instances suitable for this scale.

@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertURLEqual
+
+SimpleTestCase.assertURLEqual(url1, url2, msg_prefix='')  
+Asserts that two URLs are the same, ignoring the order of query string parameters except for parameters with the same name. For example, /path/?x=1&y=2 is equal to /path/?y=2&x=1, but /path/?a=1&a=2 isn’t equal to /path/?a=2&a=1.

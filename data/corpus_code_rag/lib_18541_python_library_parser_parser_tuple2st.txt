@@ -1,0 +1,4 @@
+# python.library.parser#parser.tuple2st
+
+parser.tuple2st(sequence)  
+This is the same function as sequence2st(). This entry point is maintained for backward compatibility.

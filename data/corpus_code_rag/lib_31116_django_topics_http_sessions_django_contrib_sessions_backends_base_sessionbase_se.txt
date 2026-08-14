@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.set_expiry
+
+set_expiry(value)  
+Sets the expiration time for the session. You can pass a number of different values:  If value is an integer, the session will expire after that many seconds of inactivity. For example, calling request.session.set_expiry(300) would make the session expire in 5 minutes. If value is a datetime or timedelta object, the session will expire at that specific date/time. Note that datetime and timedelta values are only serializable if you are using the PickleSerializer. If value is 0, the user’s session cookie will expire when the user’s web browser is closed. If value is None, the session reverts to using the global session expiry policy.  Reading a session is not considered activity for expiration purposes. Session expiration is computed from the last time the session was modified.

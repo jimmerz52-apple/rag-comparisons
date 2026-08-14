@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.AffineBase.__array__
+
+__array__(*args, **kwargs)[source]
+ 
+Array interface to get at this Transform's affine matrix.

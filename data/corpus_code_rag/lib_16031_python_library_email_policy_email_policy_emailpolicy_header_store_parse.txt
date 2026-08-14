@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.header_store_parse
+
+header_store_parse(name, value)  
+The name is returned unchanged. If the input value has a name attribute and it matches name ignoring case, the value is returned unchanged. Otherwise the name and value are passed to header_factory, and the resulting header object is returned as the value. In this case a ValueError is raised if the input value contains CR or LF characters.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__irshift__
+
+numpy.ndarray.__irshift__ method   ndarray.__irshift__(value, /)
+ 
+Return self>>=value.

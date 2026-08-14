@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriter#matplotlib.animation.MovieWriter.supported_formats
+
+supported_formats=['rgba']

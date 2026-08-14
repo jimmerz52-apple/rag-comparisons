@@ -1,0 +1,5 @@
+# matplotlib.units_api#matplotlib.units.ConversionInterface.default_units
+
+staticdefault_units(x, axis)[source]
+ 
+Return the default unit for x or None for the given axis.

@@ -1,0 +1,19 @@
+# skimage.api.skimage.util#skimage.util.compare_images
+
+skimage.util.compare_images(image1, image2, method='diff', *, n_tiles=(8, 8)) [source]
+ 
+Return an image showing the differences between two images.  New in version 0.16.   Parameters 
+ 
+image1, image22-D array 
+
+Images to process, must be of the same shape.  
+methodstring, optional 
+
+Method used for the comparison. Valid values are {‘diff’, ‘blend’, ‘checkerboard’}. Details are provided in the note section.  
+n_tilestuple, optional 
+
+Used only for the checkerboard method. Specifies the number of tiles (row, column) to divide the image.    Returns 
+ 
+comparison2-D array 
+
+Image showing the differences.     Notes 'diff' computes the absolute difference between the two images. 'blend' computes the mean value. 'checkerboard' makes tiles of dimension n_tiles that display alternatively the first and the second image.

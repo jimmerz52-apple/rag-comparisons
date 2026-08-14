@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isgenerator
+
+inspect.isgenerator(object)  
+Return True if the object is a generator.

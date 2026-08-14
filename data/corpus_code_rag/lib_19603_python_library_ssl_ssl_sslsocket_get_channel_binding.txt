@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.get_channel_binding
+
+SSLSocket.get_channel_binding(cb_type="tls-unique")  
+Get channel binding data for current connection, as a bytes object. Returns None if not connected or the handshake has not been completed. The cb_type parameter allow selection of the desired channel binding type. Valid channel binding types are listed in the CHANNEL_BINDING_TYPES list. Currently only the ‘tls-unique’ channel binding, defined by RFC 5929, is supported. ValueError will be raised if an unsupported channel binding type is requested.  New in version 3.3.

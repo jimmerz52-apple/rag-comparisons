@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.PollSelector
+
+class selectors.PollSelector  
+select.poll()-based selector.

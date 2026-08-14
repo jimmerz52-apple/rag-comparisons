@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.json_load
+
+matplotlib.font_manager.json_load(filename)[source]
+ 
+Load a FontManager from the JSON file named filename.  See also  json_dump

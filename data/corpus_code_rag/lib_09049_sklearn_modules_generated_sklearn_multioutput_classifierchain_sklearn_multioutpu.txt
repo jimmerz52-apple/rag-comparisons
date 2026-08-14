@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.multioutput.classifierchain#sklearn.multioutput.ClassifierChain.predict_proba
+
+predict_proba(X) [source]
+ 
+Predict probability estimates.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+  Returns 
+ 
+Y_probarray-like of shape (n_samples, n_classes)

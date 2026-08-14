@@ -1,0 +1,7 @@
+# matplotlib.image_api#matplotlib.image.NonUniformImage.set_cmap
+
+set_cmap(cmap)[source]
+ 
+Set the colormap for luminance data.  Parameters 
+ 
+cmapColormap or str or None

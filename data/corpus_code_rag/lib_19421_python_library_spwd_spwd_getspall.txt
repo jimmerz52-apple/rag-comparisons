@@ -1,0 +1,4 @@
+# python.library.spwd#spwd.getspall
+
+spwd.getspall()  
+Return a list of all available shadow password database entries, in arbitrary order.

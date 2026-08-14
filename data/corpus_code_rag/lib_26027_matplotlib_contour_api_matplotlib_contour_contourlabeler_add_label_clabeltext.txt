@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.add_label_clabeltext
+
+add_label_clabeltext(x, y, rotation, lev, cvalue)[source]
+ 
+Add contour label using ClabelText class.

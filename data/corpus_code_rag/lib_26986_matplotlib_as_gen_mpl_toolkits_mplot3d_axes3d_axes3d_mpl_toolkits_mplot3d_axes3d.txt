@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_zlabel
+
+set_zlabel(zlabel, fontdict=None, labelpad=None, **kwargs)[source]
+ 
+Set zlabel. See doc for set_ylabel for description.

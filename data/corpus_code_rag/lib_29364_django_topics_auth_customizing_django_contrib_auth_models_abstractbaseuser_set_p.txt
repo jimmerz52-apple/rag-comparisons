@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser.set_password
+
+set_password(raw_password)  
+Sets the user’s password to the given raw string, taking care of the password hashing. Doesn’t save the AbstractBaseUser object. When the raw_password is None, the password will be set to an unusable password, as if set_unusable_password() were used.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.gt_
+
+gt_(other) → Tensor  
+In-place version of gt().

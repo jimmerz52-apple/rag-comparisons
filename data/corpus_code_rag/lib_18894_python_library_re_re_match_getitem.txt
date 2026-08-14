@@ -1,0 +1,11 @@
+# python.library.re#re.Match.__getitem__
+
+Match.__getitem__(g)  
+This is identical to m.group(g). This allows easier access to an individual group from a match: >>> m = re.match(r"(\w+) (\w+)", "Isaac Newton, physicist")
+>>> m[0]       # The entire match
+'Isaac Newton'
+>>> m[1]       # The first parenthesized subgroup.
+'Isaac'
+>>> m[2]       # The second parenthesized subgroup.
+'Newton'
+  New in version 3.6.

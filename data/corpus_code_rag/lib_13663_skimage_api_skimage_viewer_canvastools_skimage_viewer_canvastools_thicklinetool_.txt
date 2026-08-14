@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.ThickLineTool.__init__
+
+__init__(manager, on_move=None, on_enter=None, on_release=None, on_change=None, maxdist=10, line_props=None, handle_props=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.managers.SharedMemoryManager.ShareableList
+
+ShareableList(sequence)  
+Create and return a new ShareableList object, initialized by the values from the input sequence.

@@ -1,0 +1,3 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.views.index
+
+views.index(request, sitemaps, template_name='sitemap_index.xml', content_type='application/xml', sitemap_url_name='django.contrib.sitemaps.views.sitemap')

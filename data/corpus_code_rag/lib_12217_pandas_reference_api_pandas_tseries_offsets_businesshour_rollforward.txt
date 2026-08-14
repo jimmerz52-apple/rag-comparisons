@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.rollforward
+
+pandas.tseries.offsets.BusinessHour.rollforward   BusinessHour.rollforward(other)
+ 
+Roll provided date forward to next offset only if not on offset.

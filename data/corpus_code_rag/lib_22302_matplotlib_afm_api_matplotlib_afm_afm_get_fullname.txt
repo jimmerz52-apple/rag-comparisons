@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_fullname
+
+get_fullname()[source]
+ 
+Return the font full name, e.g., 'Times-Roman'.

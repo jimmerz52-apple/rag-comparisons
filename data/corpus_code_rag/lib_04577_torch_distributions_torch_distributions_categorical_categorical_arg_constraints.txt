@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.categorical.Categorical.arg_constraints
+
+arg_constraints = {'logits': IndependentConstraint(Real(), 1), 'probs': Simplex()}

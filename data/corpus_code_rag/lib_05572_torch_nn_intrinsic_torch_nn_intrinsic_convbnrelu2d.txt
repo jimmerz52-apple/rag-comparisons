@@ -1,0 +1,5 @@
+# torch.nn.intrinsic#torch.nn.intrinsic.ConvBnReLU2d
+
+class torch.nn.intrinsic.ConvBnReLU2d(conv, bn, relu) [source]
+ 
+This is a sequential container which calls the Conv 2d, Batch Norm 2d, and ReLU modules. During quantization this will be replaced with the corresponding fused module.

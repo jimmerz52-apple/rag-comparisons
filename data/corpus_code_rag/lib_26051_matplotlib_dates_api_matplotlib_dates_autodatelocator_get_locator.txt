@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.AutoDateLocator.get_locator
+
+get_locator(dmin, dmax)[source]
+ 
+Pick the best locator based on a distance.

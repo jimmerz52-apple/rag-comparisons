@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.module#torch.nn.Module.float
+
+float() [source]
+ 
+Casts all floating point parameters and buffers to float datatype.  Returns 
+self  Return type 
+Module

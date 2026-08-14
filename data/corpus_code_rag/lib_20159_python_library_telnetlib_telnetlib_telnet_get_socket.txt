@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.get_socket
+
+Telnet.get_socket()  
+Return the socket object used internally.

@@ -1,0 +1,7 @@
+# torch.distributions#torch.distributions.transforms.TanhTransform
+
+class torch.distributions.transforms.TanhTransform(cache_size=0) [source]
+ 
+Transform via the mapping y=tanh⁡(x)y = \tanh(x) . It is equivalent to `
+ComposeTransform([AffineTransform(0., 2.), SigmoidTransform(), AffineTransform(-1., 2.)])
+` However this might not be numerically stable, thus it is recommended to use TanhTransform instead. Note that one should use cache_size=1 when it comes to NaN/Inf values.

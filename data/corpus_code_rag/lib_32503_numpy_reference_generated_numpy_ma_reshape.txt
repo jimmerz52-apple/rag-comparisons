@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.reshape
+
+numpy.ma.reshape   ma.reshape(a, new_shape, order='C')[source]
+ 
+Returns an array containing the same data with a new shape. Refer to MaskedArray.reshape for full documentation.  See also  MaskedArray.reshape
+
+equivalent function

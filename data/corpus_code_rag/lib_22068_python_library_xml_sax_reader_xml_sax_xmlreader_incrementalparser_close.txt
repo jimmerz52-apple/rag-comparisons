@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.IncrementalParser.close
+
+IncrementalParser.close()  
+Assume the end of the document. That will check well-formedness conditions that can be checked only at the end, invoke handlers, and may clean up resources allocated during parsing.

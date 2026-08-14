@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.is_unique
+
+pandas.Index.is_unique   Index.is_unique
+ 
+Return if the index has unique values.

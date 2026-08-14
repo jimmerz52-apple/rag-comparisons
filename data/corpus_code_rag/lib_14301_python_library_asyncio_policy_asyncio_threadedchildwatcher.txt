@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.ThreadedChildWatcher
+
+class asyncio.ThreadedChildWatcher  
+This implementation starts a new waiting thread for every subprocess spawn. It works reliably even when the asyncio event loop is run in a non-main OS thread. There is no noticeable overhead when handling a big number of children (O(1) each time a child terminates), but starting a thread per process requires extra memory. This watcher is used by default.  New in version 3.8.

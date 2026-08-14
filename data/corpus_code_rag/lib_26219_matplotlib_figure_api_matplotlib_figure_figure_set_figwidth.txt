@@ -1,0 +1,14 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_figwidth
+
+set_figwidth(val, forward=True)[source]
+ 
+Set the width of the figure in inches.  Parameters 
+ 
+valfloat
+
+
+forwardbool
+
+
+See set_size_inches.      See also  matplotlib.figure.Figure.set_figheight
+matplotlib.figure.Figure.set_size_inches

@@ -1,0 +1,56 @@
+# sklearn.modules.generated.sklearn.datasets.fetch_california_housing
+
+sklearn.datasets.fetch_california_housing  
+sklearn.datasets.fetch_california_housing(*, data_home=None, download_if_missing=True, return_X_y=False, as_frame=False) [source]
+ 
+Load the California housing dataset (regression).  
+Samples total 20640  
+Dimensionality 8  
+Features real  
+Target real 0.15 - 5.   Read more in the User Guide.  Parameters 
+ 
+data_homestr, default=None 
+
+Specify another download and cache folder for the datasets. By default all scikit-learn data is stored in ‘~/scikit_learn_data’ subfolders.  
+download_if_missingbool, default=True 
+
+If False, raise a IOError if the data is not locally available instead of trying to download the data from the source site.  
+return_X_ybool, default=False. 
+
+If True, returns (data.data, data.target) instead of a Bunch object.  New in version 0.20.   
+as_framebool, default=False 
+
+If True, the data is a pandas DataFrame including columns with appropriate dtypes (numeric, string or categorical). The target is a pandas DataFrame or Series depending on the number of target_columns.  New in version 0.23.     Returns 
+ 
+datasetBunch 
+
+Dictionary-like object, with the following attributes.  
+datandarray, shape (20640, 8) 
+
+Each row corresponding to the 8 feature values in order. If as_frame is True, data is a pandas object.  
+targetnumpy array of shape (20640,) 
+
+Each value corresponds to the average house value in units of 100,000. If as_frame is True, target is a pandas object.  
+feature_nameslist of length 8 
+
+Array of ordered feature names used in the dataset.  
+DESCRstring 
+
+Description of the California housing dataset.  
+framepandas DataFrame 
+
+Only present when as_frame=True. DataFrame with data and target.  New in version 0.23.     
+(data, target)tuple if return_X_y is True 
+
+ New in version 0.20.      Notes This dataset consists of 20,640 samples and 9 features. 
+ Examples using sklearn.datasets.fetch_california_housing
+ 
+  Release Highlights for scikit-learn 0.24  
+
+  Partial Dependence and Individual Conditional Expectation Plots  
+
+  Imputing missing values with variants of IterativeImputer  
+
+  Imputing missing values before building an estimator  
+
+  Compare the effect of different scalers on data with outliers

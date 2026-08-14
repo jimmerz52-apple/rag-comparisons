@@ -1,0 +1,7 @@
+# django.topics.testing.tools#django.test.Response.context
+
+context  
+The template Context instance that was used to render the template that produced the response content. If the rendered page used multiple templates, then context will be a list of Context objects, in the order in which they were rendered. Regardless of the number of templates used during rendering, you can retrieve context values using the [] operator. For example, the context variable name could be retrieved using: >>> response = client.get('/foo/')
+>>> response.context['name']
+'Arthur'
+  Not using Django templates? This attribute is only populated when using the DjangoTemplates backend. If you’re using another template engine, context_data may be a suitable alternative on responses with that attribute.

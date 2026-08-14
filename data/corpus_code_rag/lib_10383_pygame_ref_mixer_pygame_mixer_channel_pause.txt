@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.pause
+
+pause() 
+ temporarily stop playback of a channel pause() -> None  Temporarily stop the playback of sound on a channel. It can be resumed at a later time with Channel.unpause()

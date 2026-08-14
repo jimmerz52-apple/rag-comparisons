@@ -1,0 +1,4 @@
+# python.library.binascii#binascii.rlecode_hqx
+
+binascii.rlecode_hqx(data)  
+Perform binhex4 style RLE-compression on data and return the result.  Deprecated since version 3.9.

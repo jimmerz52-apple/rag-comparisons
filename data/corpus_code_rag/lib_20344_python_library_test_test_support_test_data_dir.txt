@@ -1,0 +1,4 @@
+# python.library.test#test.support.TEST_DATA_DIR
+
+test.support.TEST_DATA_DIR  
+Set to the data directory within the test package.

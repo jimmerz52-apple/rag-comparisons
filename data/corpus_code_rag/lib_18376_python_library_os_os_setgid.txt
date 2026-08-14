@@ -1,0 +1,4 @@
+# python.library.os#os.setgid
+
+os.setgid(gid)  
+Set the current process’ group id. Availability: Unix.

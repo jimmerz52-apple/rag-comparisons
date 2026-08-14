@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.get_config_cmd
+
+get_config_cmd()[source]
+ 
+Returns the numpy.distutils config command instance.

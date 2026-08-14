@@ -1,0 +1,5 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.make_form_data_parser
+
+make_form_data_parser()  
+Creates the form data parser. Instantiates the form_data_parser_class with some parameters.  Changelog New in version 0.8.   Return type 
+werkzeug.formparser.FormDataParser

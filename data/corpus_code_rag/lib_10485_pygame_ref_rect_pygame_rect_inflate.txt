@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.inflate
+
+inflate() 
+ grow or shrink the rectangle size inflate(x, y) -> Rect  Returns a new rectangle with the size changed by the given offset. The rectangle remains centered around its current center. Negative values will shrink the rectangle. Note, uses integers, if the offset given is too small(< 2 > -2), center will be off.

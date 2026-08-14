@@ -1,0 +1,11 @@
+# pygame.ref.scrap#pygame.scrap.get_types
+
+pygame.scrap.get_types() 
+ Gets a list of the available clipboard types. get_types() -> list  Gets a list of data type string identifiers for the data currently available on the clipboard. Each identifier can be used in the pygame.scrap.get() method to get the clipboard content of the specific type.     
+Returns:
+list of strings of the available clipboard data types, if there is no data in the clipboard an empty list is returned  
+Return type:
+list    for t in pygame.scrap.get_types():
+    if "text" in t:
+        # There is some content with the word "text" in its type string.
+        print(pygame.scrap.get(t))

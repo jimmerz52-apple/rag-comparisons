@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.Locator.set_params
+
+set_params(**kwargs)[source]
+ 
+Do nothing, and raise a warning. Any locator class not supporting the set_params() function will call this.

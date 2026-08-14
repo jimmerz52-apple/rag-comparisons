@@ -1,0 +1,42 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin
+
+class django.views.generic.edit.FormMixin  
+A mixin class that provides facilities for creating and displaying forms. Mixins  django.views.generic.base.ContextMixin  Methods and Attributes  
+initial  
+A dictionary containing initial data for the form. 
+  
+form_class  
+The form class to instantiate. 
+  
+success_url  
+The URL to redirect to when the form is successfully processed. 
+  
+prefix  
+The prefix for the generated form. 
+  
+get_initial()  
+Retrieve initial data for the form. By default, returns a copy of initial. 
+  
+get_form_class()  
+Retrieve the form class to instantiate. By default form_class. 
+  
+get_form(form_class=None)  
+Instantiate an instance of form_class using get_form_kwargs(). If form_class isn’t provided get_form_class() will be used. 
+  
+get_form_kwargs()  
+Build the keyword arguments required to instantiate the form. The initial argument is set to get_initial(). If the request is a POST or PUT, the request data (request.POST and request.FILES) will also be provided. 
+  
+get_prefix()  
+Determine the prefix for the generated form. Returns prefix by default. 
+  
+get_success_url()  
+Determine the URL to redirect to when the form is successfully validated. Returns success_url by default. 
+  
+form_valid(form)  
+Redirects to get_success_url(). 
+  
+form_invalid(form)  
+Renders a response, providing the invalid form as context. 
+  
+get_context_data(**kwargs)  
+Calls get_form() and adds the result to the context data with the name ‘form’.

@@ -1,0 +1,6 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.pchanged
+
+pchanged()[source]
+ 
+Call all of the registered callbacks. This function is triggered internally when a property is changed.  See also  add_callback
+remove_callback

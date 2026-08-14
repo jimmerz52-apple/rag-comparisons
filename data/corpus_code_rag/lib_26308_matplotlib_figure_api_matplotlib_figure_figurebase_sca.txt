@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.sca
+
+sca(a)[source]
+ 
+Set the current Axes to be a and return a.

@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.hasHandlers
+
+hasHandlers()  
+Checks to see if this logger has any handlers configured. This is done by looking for handlers in this logger and its parents in the logger hierarchy. Returns True if a handler was found, else False. The method stops searching up the hierarchy whenever a logger with the ‘propagate’ attribute set to false is found - that will be the last logger which is checked for the existence of handlers.  New in version 3.2.

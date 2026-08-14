@@ -1,0 +1,6 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_rgb
+
+mpl_toolkits.axes_grid1.axes_rgb  Classes  
+RGBAxes(*args[, pad]) 4-panel imshow (RGB, R, G, B).     Functions  
+make_rgb_axes(ax[, pad, axes_class]) 
+ Parameters

@@ -1,0 +1,18 @@
+# python.library.codecs#codecs.CodecInfo
+
+class codecs.CodecInfo(encode, decode, streamreader=None, streamwriter=None, incrementalencoder=None, incrementaldecoder=None, name=None)  
+Codec details when looking up the codec registry. The constructor arguments are stored in attributes of the same name:  
+name  
+The name of the encoding. 
+  
+encode  
+decode  
+The stateless encoding and decoding functions. These must be functions or methods which have the same interface as the encode() and decode() methods of Codec instances (see Codec Interface). The functions or methods are expected to work in a stateless mode. 
+  
+incrementalencoder  
+incrementaldecoder  
+Incremental encoder and decoder classes or factory functions. These have to provide the interface defined by the base classes IncrementalEncoder and IncrementalDecoder, respectively. Incremental codecs can maintain state. 
+  
+streamwriter  
+streamreader  
+Stream writer and reader classes or factory functions. These have to provide the interface defined by the base classes StreamWriter and StreamReader, respectively. Stream codecs can maintain state.

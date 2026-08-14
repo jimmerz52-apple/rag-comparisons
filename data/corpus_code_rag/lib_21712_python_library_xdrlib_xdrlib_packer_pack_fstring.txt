@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_fstring
+
+Packer.pack_fstring(n, s)  
+Packs a fixed length string, s. n is the length of the string but it is not packed into the data buffer. The string is padded with null bytes if necessary to guaranteed 4 byte alignment.

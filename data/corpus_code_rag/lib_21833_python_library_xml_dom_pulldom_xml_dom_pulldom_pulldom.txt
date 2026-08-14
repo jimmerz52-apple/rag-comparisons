@@ -1,0 +1,4 @@
+# python.library.xml.dom.pulldom#xml.dom.pulldom.PullDom
+
+class xml.dom.pulldom.PullDom(documentFactory=None)  
+Subclass of xml.sax.handler.ContentHandler.

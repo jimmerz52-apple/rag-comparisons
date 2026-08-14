@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.set_exception
+
+set_exception(exception)  
+Mark the Future as done and set an exception. Raises a InvalidStateError error if the Future is already done.

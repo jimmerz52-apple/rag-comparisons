@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.gridhelperrectlinear#mpl_toolkits.axisartist.axislines.GridHelperRectlinear.get_gridlines
+
+get_gridlines(which='major', axis='both')[source]
+ 
+Return list of gridline coordinates in data coordinates. which : "major" or "minor" axis : "both", "x" or "y"

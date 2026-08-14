@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.bitwise_not
+
+bitwise_not() → Tensor  
+See torch.bitwise_not()

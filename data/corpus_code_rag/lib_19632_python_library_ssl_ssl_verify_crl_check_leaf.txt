@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.VERIFY_CRL_CHECK_LEAF
+
+ssl.VERIFY_CRL_CHECK_LEAF  
+Possible value for SSLContext.verify_flags. In this mode, only the peer cert is checked but none of the intermediate CA certificates. The mode requires a valid CRL that is signed by the peer cert’s issuer (its direct ancestor CA). If no proper CRL has been loaded with SSLContext.load_verify_locations, validation will fail.  New in version 3.4.

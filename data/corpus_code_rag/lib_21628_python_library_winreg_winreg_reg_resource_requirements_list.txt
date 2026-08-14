@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_RESOURCE_REQUIREMENTS_LIST
+
+winreg.REG_RESOURCE_REQUIREMENTS_LIST  
+A hardware resource list.

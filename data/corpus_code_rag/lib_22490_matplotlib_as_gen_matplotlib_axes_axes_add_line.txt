@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_line
+
+matplotlib.axes.Axes.add_line   Axes.add_line(line)[source]
+ 
+Add a Line2D to the Axes; return the line. 
+  Examples using matplotlib.axes.Axes.add_line
+ 
+   Artist within an artist   
+
+   Reference for Matplotlib artists   
+
+   Artist tests   
+
+   Artist tutorial

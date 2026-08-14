@@ -1,0 +1,3 @@
+# django.topics.checks#django.core.checks.register
+
+register(*tags)(function)

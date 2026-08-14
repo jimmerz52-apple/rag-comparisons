@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.is_last_col
+
+is_last_col()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

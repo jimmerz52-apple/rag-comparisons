@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTPPermanentError
+
+exception nntplib.NNTPPermanentError  
+Exception raised when a response code in the range 500–599 is received.

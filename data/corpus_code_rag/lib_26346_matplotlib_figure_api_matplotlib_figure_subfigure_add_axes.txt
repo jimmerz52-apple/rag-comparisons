@@ -1,0 +1,103 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.add_axes
+
+add_axes(*args, **kwargs)[source]
+ 
+Add an Axes to the figure. Call signatures: add_axes(rect, projection=None, polar=False, **kwargs)
+add_axes(ax)
+  Parameters 
+ 
+rectsequence of float
+
+
+The dimensions [left, bottom, width, height] of the new Axes. All quantities are in fractions of figure width and height.  
+projection{None, 'aitoff', 'hammer', 'lambert', 'mollweide', 'polar', 'rectilinear', str}, optional
+
+
+The projection type of the Axes. str is the name of a custom projection, see projections. The default None results in a 'rectilinear' projection.  
+polarbool, default: False
+
+
+If True, equivalent to projection='polar'.  
+axes_classsubclass type of Axes, optional
+
+
+The axes.Axes subclass that is instantiated. This parameter is incompatible with projection and polar. See axisartist for examples.  
+sharex, shareyAxes, optional
+
+
+Share the x or y axis with sharex and/or sharey. The axis will have the same limits, ticks, and scale as the axis of the shared axes.  
+labelstr
+
+
+A label for the returned Axes.    Returns 
+ 
+Axes, or a subclass of Axes
+
+
+The returned axes class depends on the projection used. It is Axes if rectilinear projection is used and projections.polar.PolarAxes if polar projection is used.    Other Parameters 
+ **kwargs
+
+This method also takes the keyword arguments for the returned Axes class. The keyword arguments for the rectilinear Axes class Axes can be found in the following table but there might also be other keyword arguments if another projection is used, see the actual Axes class.   
+Property Description   
+adjustable {'box', 'datalim'}  
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+anchor (float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}  
+animated bool  
+aspect {'auto', 'equal'} or float  
+autoscale_on bool  
+autoscalex_on bool  
+autoscaley_on bool  
+axes_locator Callable[[Axes, Renderer], Bbox]  
+axisbelow bool or 'line'  
+box_aspect float or None  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+facecolor or fc color  
+figure Figure  
+frame_on bool  
+gid str  
+in_layout bool  
+label object  
+navigate bool  
+navigate_mode unknown  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+position [left, bottom, width, height] or Bbox  
+prop_cycle unknown  
+rasterization_zorder float or None  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+title str  
+transform Transform  
+url str  
+visible bool  
+xbound unknown  
+xlabel str  
+xlim (bottom: float, top: float)  
+xmargin float greater than -0.5  
+xscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+xticklabels unknown  
+xticks unknown  
+ybound unknown  
+ylabel str  
+ylim (bottom: float, top: float)  
+ymargin float greater than -0.5  
+yscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+yticklabels unknown  
+yticks unknown  
+zorder float        See also  Figure.add_subplot
+pyplot.subplot
+pyplot.axes
+Figure.subplots
+pyplot.subplots
+  Notes In rare circumstances, add_axes may be called with a single argument, an Axes instance already created in the present figure but not in the figure's list of Axes. Examples Some simple examples: rect = l, b, w, h
+fig = plt.figure()
+fig.add_axes(rect)
+fig.add_axes(rect, frameon=False, facecolor='g')
+fig.add_axes(rect, polar=True)
+ax = fig.add_axes(rect, projection='polar')
+fig.delaxes(ax)
+fig.add_axes(ax)

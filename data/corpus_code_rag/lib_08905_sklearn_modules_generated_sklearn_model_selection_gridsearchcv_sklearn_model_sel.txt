@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.model_selection.gridsearchcv#sklearn.model_selection.GridSearchCV.inverse_transform
+
+inverse_transform(Xt) [source]
+ 
+Call inverse_transform on the estimator with the best found params. Only available if the underlying estimator implements inverse_transform and refit=True.  Parameters 
+ 
+Xtindexable, length n_samples 
+
+Must fulfill the input assumptions of the underlying estimator.

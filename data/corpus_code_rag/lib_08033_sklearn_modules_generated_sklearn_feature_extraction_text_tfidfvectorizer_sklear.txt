@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidfvectorizer#sklearn.feature_extraction.text.TfidfVectorizer.get_feature_names
+
+get_feature_names() [source]
+ 
+Array mapping from feature integer indices to feature name.  Returns 
+ 
+feature_nameslist 
+
+A list of feature names.

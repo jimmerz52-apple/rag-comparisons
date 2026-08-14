@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__mod__
+
+numpy.ndarray.__mod__ method   ndarray.__mod__(value, /)
+ 
+Return self%value.

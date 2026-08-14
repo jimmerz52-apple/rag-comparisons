@@ -1,0 +1,9 @@
+# torch.generated.torch.quasirandom.sobolengine#torch.quasirandom.SobolEngine.draw_base2
+
+draw_base2(m, out=None, dtype=torch.float32) [source]
+ 
+Function to draw a sequence of 2**m points from a Sobol sequence. Note that the samples are dependent on the previous samples. The size of the result is (2∗∗m,dimension)(2**m, dimension) .  Parameters 
+ 
+m (Int) – The (base2) exponent of the number of points to draw. 
+out (Tensor, optional) – The output tensor 
+dtype (torch.dtype, optional) – the desired data type of the returned tensor. Default: torch.float32

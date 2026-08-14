@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.popup_response_template
+
+ModelAdmin.popup_response_template  
+Path to a custom template, used by response_add(), response_change(), and response_delete().

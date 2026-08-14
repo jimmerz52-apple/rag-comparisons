@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessProtocol
+
+class asyncio.SubprocessProtocol(BaseProtocol)  
+The base class for implementing protocols communicating with child processes (unidirectional pipes).

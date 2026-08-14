@@ -1,0 +1,17 @@
+# python.library.typing#typing.AsyncGenerator
+
+class typing.AsyncGenerator(AsyncIterator[T_co], Generic[T_co, T_contra])  
+An async generator can be annotated by the generic type AsyncGenerator[YieldType, SendType]. For example: async def echo_round() -> AsyncGenerator[int, float]:
+    sent = yield 0
+    while sent >= 0.0:
+        rounded = await round(sent)
+        sent = yield rounded
+ Unlike normal generators, async generators cannot return a value, so there is no ReturnType type parameter. As with Generator, the SendType behaves contravariantly. If your generator will only yield values, set the SendType to None: async def infinite_stream(start: int) -> AsyncGenerator[int, None]:
+    while True:
+        yield start
+        start = await increment(start)
+ Alternatively, annotate your generator as having a return type of either AsyncIterable[YieldType] or AsyncIterator[YieldType]: async def infinite_stream(start: int) -> AsyncIterator[int]:
+    while True:
+        yield start
+        start = await increment(start)
+  New in version 3.6.1.   Deprecated since version 3.9: collections.abc.AsyncGenerator now supports []. See PEP 585 and Generic Alias Type.

@@ -1,0 +1,5 @@
+# matplotlib.units_api#matplotlib.units.ConversionInterface.axisinfo
+
+staticaxisinfo(unit, axis)[source]
+ 
+Return an AxisInfo for the axis with the specified units.

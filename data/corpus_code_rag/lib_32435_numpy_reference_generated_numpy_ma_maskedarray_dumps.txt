@@ -1,0 +1,6 @@
+# numpy.reference.generated.numpy.ma.maskedarray.dumps
+
+numpy.ma.MaskedArray.dumps method   ma.MaskedArray.dumps()
+ 
+Returns the pickle of the array as a string. pickle.loads will convert the string back to an array.  Parameters 
+ None

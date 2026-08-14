@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.svm.linearsvc#sklearn.svm.LinearSVC.densify
+
+densify() [source]
+ 
+Convert coefficient matrix to dense array format. Converts the coef_ member (back) to a numpy.ndarray. This is the default format of coef_ and is required for fitting, so calling this method is only required on models that have previously been sparsified; otherwise, it is a no-op.  Returns 
+ self
+
+Fitted estimator.

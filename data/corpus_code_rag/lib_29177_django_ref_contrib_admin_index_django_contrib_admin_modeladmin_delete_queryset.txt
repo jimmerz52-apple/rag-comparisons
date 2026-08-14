@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.delete_queryset
+
+ModelAdmin.delete_queryset(request, queryset)  
+The delete_queryset() method is given the HttpRequest and a QuerySet of objects to be deleted. Override this method to customize the deletion process for the “delete selected objects” action.

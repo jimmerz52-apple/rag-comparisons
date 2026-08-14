@@ -1,0 +1,31 @@
+# torch.distributions#torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli
+
+class torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli(temperature, probs=None, logits=None, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Creates a LogitRelaxedBernoulli distribution parameterized by probs or logits (but not both), which is the logit of a RelaxedBernoulli distribution. Samples are logits of values in (0, 1). See [1] for more details.  Parameters 
+ 
+temperature (Tensor) – relaxation temperature 
+probs (Number, Tensor) – the probability of sampling 1
+ 
+logits (Number, Tensor) – the log-odds of sampling 1
+    [1] The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables (Maddison et al, 2017) [2] Categorical Reparametrization with Gumbel-Softmax (Jang et al, 2017)  
+arg_constraints = {'logits': Real(), 'probs': Interval(lower_bound=0.0, upper_bound=1.0)} 
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+log_prob(value) [source]
+
+  
+logits [source]
+
+  
+property param_shape 
+  
+probs [source]
+
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+support = Real()

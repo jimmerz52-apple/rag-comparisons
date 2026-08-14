@@ -1,0 +1,14 @@
+# matplotlib.axis_api#matplotlib.axis.XAxis
+
+classmatplotlib.axis.XAxis(*args, **kwargs)[source]
+ 
+ Parameters 
+ 
+axesmatplotlib.axes.Axes
+
+
+The Axes to which the created Axis belongs.  
+pickradiusfloat
+
+
+The acceptance radius for containment tests. See also Axis.contains.

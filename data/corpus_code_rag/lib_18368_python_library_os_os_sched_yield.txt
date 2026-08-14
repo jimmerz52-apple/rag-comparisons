@@ -1,0 +1,4 @@
+# python.library.os#os.sched_yield
+
+os.sched_yield()  
+Voluntarily relinquish the CPU.

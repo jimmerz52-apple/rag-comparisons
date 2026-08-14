@@ -1,0 +1,6 @@
+# django.ref.forms.widgets#django.forms.MultiWidget.get_context
+
+get_context(name, value, attrs)  
+In addition to the 'widget' key described in Widget.get_context(), MultiWidget adds a widget['subwidgets'] key. These can be looped over in the widget template: {% for subwidget in widget.subwidgets %}
+    {% include subwidget.template_name with widget=subwidget %}
+{% endfor %}

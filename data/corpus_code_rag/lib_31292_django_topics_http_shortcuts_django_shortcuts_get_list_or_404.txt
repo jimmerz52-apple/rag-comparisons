@@ -1,0 +1,4 @@
+# django.topics.http.shortcuts#django.shortcuts.get_list_or_404
+
+get_list_or_404(klass, *args, **kwargs)  
+Returns the result of filter() on a given model manager cast to a list, raising Http404 if the resulting list is empty.

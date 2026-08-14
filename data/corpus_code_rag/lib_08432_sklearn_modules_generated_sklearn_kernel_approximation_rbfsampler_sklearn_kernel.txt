@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.kernel_approximation.rbfsampler#sklearn.kernel_approximation.RBFSampler.transform
+
+transform(X) [source]
+ 
+Apply the approximate feature map to X.  Parameters 
+ 
+X{array-like, sparse matrix}, shape (n_samples, n_features) 
+
+New data, where n_samples in the number of samples and n_features is the number of features.    Returns 
+ 
+X_newarray-like, shape (n_samples, n_components)

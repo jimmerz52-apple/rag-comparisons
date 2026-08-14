@@ -1,0 +1,32 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.ToolContainerBase.add_toolitem
+
+add_toolitem(name, group, position, image, description, toggle)[source]
+ 
+Add a toolitem to the container. This method must be implemented per backend. The callback associated with the button click event, must be exactly self.trigger_tool(name).  Parameters 
+ 
+namestr
+
+
+Name of the tool to add, this gets used as the tool's ID and as the default label of the buttons.  
+groupstr
+
+
+Name of the group that this tool belongs to.  
+positionint
+
+
+Position of the tool within its group, if -1 it goes at the end.  
+imagestr
+
+
+Filename of the image for the button or None.  
+descriptionstr
+
+
+Description of the tool, used for the tooltips.  
+togglebool
+
+
+ 
+True : The button is a toggle (change the pressed/unpressed state between consecutive clicks). 
+False : The button is a normal button (returns to unpressed state after release).

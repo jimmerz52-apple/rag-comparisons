@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.STARTUPINFO.wShowWindow
+
+wShowWindow  
+If dwFlags specifies STARTF_USESHOWWINDOW, this attribute can be any of the values that can be specified in the nCmdShow parameter for the ShowWindow function, except for SW_SHOWDEFAULT. Otherwise, this attribute is ignored. SW_HIDE is provided for this attribute. It is used when Popen is called with shell=True.

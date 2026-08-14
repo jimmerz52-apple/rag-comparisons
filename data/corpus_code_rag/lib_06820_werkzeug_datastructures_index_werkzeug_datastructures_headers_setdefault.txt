@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.setdefault
+
+setdefault(key, default)  
+Return the first value for the key if it is in the headers, otherwise set the header to the value given by default and return that.  Parameters 
+ 
+key – The header key to get. 
+default – The value to set for the key if it is not in the headers.

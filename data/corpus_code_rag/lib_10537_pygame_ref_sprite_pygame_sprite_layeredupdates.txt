@@ -1,0 +1,35 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates
+
+pygame.sprite.LayeredUpdates 
+ LayeredUpdates is a sprite group that handles layers and draws like OrderedUpdates. LayeredUpdates(*spites, **kwargs) -> LayeredUpdates  This group is fully compatible with pygame.sprite.Sprite. You can set the default layer through kwargs using 'default_layer' and an integer for the layer. The default layer is 0. If the sprite you add has an attribute _layer then that layer will be used. If the **kwarg contains 'layer' then the sprites passed will be added to that layer (overriding the sprite.layer attribute). If neither sprite has attribute layer nor **kwarg then the default layer is used to add the sprites.  New in pygame 1.8.    add() 
+ add a sprite or sequence of sprites to a group add(*sprites, **kwargs) -> None  If the sprite(s) have an attribute layer then that is used for the layer. If **kwargs contains 'layer' then the sprite(s) will be added to that argument (overriding the sprite layer attribute). If neither is passed then the sprite(s) will be added to the default layer. 
+   sprites() 
+ returns a ordered list of sprites (first back, last top). sprites() -> sprites  
+   draw() 
+ draw all sprites in the right order onto the passed surface. draw(surface) -> Rect_list  
+   get_sprites_at() 
+ returns a list with all sprites at that position. get_sprites_at(pos) -> colliding_sprites  Bottom sprites first, top last. 
+   get_sprite() 
+ returns the sprite at the index idx from the groups sprites get_sprite(idx) -> sprite  Raises IndexOutOfBounds if the idx is not within range. 
+   remove_sprites_of_layer() 
+ removes all sprites from a layer and returns them as a list. remove_sprites_of_layer(layer_nr) -> sprites  
+   layers() 
+ returns a list of layers defined (unique), sorted from bottom up. layers() -> layers  
+   change_layer() 
+ changes the layer of the sprite change_layer(sprite, new_layer) -> None  sprite must have been added to the renderer. It is not checked. 
+   get_layer_of_sprite() 
+ returns the layer that sprite is currently in. get_layer_of_sprite(sprite) -> layer  If the sprite is not found then it will return the default layer. 
+   get_top_layer() 
+ returns the top layer get_top_layer() -> layer  
+   get_bottom_layer() 
+ returns the bottom layer get_bottom_layer() -> layer  
+   move_to_front() 
+ brings the sprite to front layer move_to_front(sprite) -> None  Brings the sprite to front, changing sprite layer to topmost layer (added at the end of that layer). 
+   move_to_back() 
+ moves the sprite to the bottom layer move_to_back(sprite) -> None  Moves the sprite to the bottom layer, moving it behind all other layers and adding one additional layer. 
+   get_top_sprite() 
+ returns the topmost sprite get_top_sprite() -> Sprite  
+   get_sprites_from_layer() 
+ returns all sprites from a layer, ordered by how they where added get_sprites_from_layer(layer) -> sprites  Returns all sprites from a layer, ordered by how they where added. It uses linear search and the sprites are not removed from layer. 
+   switch_layer() 
+ switches the sprites from layer1 to layer2 switch_layer(layer1_nr, layer2_nr) -> None  The layers number must exist, it is not checked.

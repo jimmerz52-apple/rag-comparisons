@@ -1,0 +1,5 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.decode_netloc
+
+decode_netloc()  
+Decodes the netloc part into a string.  Return type 
+str

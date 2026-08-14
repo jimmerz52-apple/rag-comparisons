@@ -1,0 +1,10 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request._get_file_stream
+
+_get_file_stream(total_content_length, content_type, filename=None, content_length=None)  
+Called to get a stream for the file upload. This must provide a file-like class with read(), readline() and seek() methods that is both writeable and readable. The default implementation returns a temporary file if the total content length is higher than 500KB. Because many browsers do not provide a content length for the files only the total content length matters.  Parameters 
+ 
+total_content_length (Optional[int]) – the total content length of all the data in the request combined. This value is guaranteed to be there. 
+content_type (Optional[str]) – the mimetype of the uploaded file. 
+filename (Optional[str]) – the filename of the uploaded file. May be None. 
+content_length (Optional[int]) – the length of this file. This value is usually not provided because webbrowsers do not provide this value.   Return type 
+BinaryIO

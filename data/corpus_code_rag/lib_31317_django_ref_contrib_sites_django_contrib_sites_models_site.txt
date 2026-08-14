@@ -1,0 +1,9 @@
+# django.ref.contrib.sites#django.contrib.sites.models.Site
+
+class models.Site  
+A model for storing the domain and name attributes of a website.  
+domain  
+The fully qualified domain name associated with the website. For example, www.example.com. 
+  
+name  
+A human-readable “verbose” name for the website.

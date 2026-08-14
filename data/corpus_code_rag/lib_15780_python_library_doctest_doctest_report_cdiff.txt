@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.REPORT_CDIFF
+
+doctest.REPORT_CDIFF  
+When specified, failures that involve multi-line expected and actual outputs will be displayed using a context diff.

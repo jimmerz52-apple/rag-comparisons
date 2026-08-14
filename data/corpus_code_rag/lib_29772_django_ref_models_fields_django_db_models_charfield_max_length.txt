@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.CharField.max_length
+
+CharField.max_length  
+Required. The maximum length (in characters) of the field. The max_length is enforced at the database level and in Django’s validation using MaxLengthValidator.  Note If you are writing an application that must be portable to multiple database backends, you should be aware that there are restrictions on max_length for some backends. Refer to the database backend notes for details.

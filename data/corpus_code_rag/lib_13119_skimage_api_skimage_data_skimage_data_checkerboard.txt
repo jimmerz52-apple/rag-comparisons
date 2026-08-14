@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.checkerboard
+
+skimage.data.checkerboard() [source]
+ 
+Checkerboard image. Checkerboards are often used in image calibration, since the corner-points are easy to locate. Because of the many parallel edges, they also visualise distortions particularly well.  Returns 
+ 
+checkerboard(200, 200) uint8 ndarray 
+
+Checkerboard image.

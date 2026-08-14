@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.HttpRequest.__iter__
+
+HttpRequest.__iter__()  
+Methods implementing a file-like interface for reading from an HttpRequest instance. This makes it possible to consume an incoming request in a streaming fashion. A common use-case would be to process a big XML payload with an iterative parser without constructing a whole XML tree in memory. Given this standard interface, an HttpRequest instance can be passed directly to an XML parser such as ElementTree: import xml.etree.ElementTree as ET
+for element in ET.iterparse(request):
+    process(element)

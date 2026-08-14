@@ -1,0 +1,42 @@
+# python.library.dialog#tkinter.filedialog.FileDialog
+
+class tkinter.filedialog.FileDialog(master, title=None)  
+Create a basic file selection dialog.  
+cancel_command(event=None)  
+Trigger the termination of the dialog window. 
+  
+dirs_double_event(event)  
+Event handler for double-click event on directory. 
+  
+dirs_select_event(event)  
+Event handler for click event on directory. 
+  
+files_double_event(event)  
+Event handler for double-click event on file. 
+  
+files_select_event(event)  
+Event handler for single-click event on file. 
+  
+filter_command(event=None)  
+Filter the files by directory. 
+  
+get_filter()  
+Retrieve the file filter currently in use. 
+  
+get_selection()  
+Retrieve the currently selected item. 
+  
+go(dir_or_file=os.curdir, pattern="*", default="", key=None)  
+Render dialog and start event loop. 
+  
+ok_event(event)  
+Exit dialog returning current selection. 
+  
+quit(how=None)  
+Exit dialog returning filename, if any. 
+  
+set_filter(dir, pat)  
+Set the file filter. 
+  
+set_selection(file)  
+Update the current file selection to file.

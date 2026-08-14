@@ -1,0 +1,4 @@
+# django.topics.http.shortcuts#django.shortcuts.get_object_or_404
+
+get_object_or_404(klass, *args, **kwargs)  
+Calls get() on a given model manager, but it raises Http404 instead of the model’s DoesNotExist exception.

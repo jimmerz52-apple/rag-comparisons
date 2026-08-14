@@ -1,0 +1,4 @@
+# python.library.site#site.USER_BASE
+
+site.USER_BASE  
+Path to the base directory for the user site-packages. Can be None if getuserbase() hasn’t been called yet. Default value is ~/.local for UNIX and Mac OS X non-framework builds, ~/Library/Python/X.Y for Mac framework builds, and %APPDATA%\Python for Windows. This value is used by Distutils to compute the installation directories for scripts, data files, Python modules, etc. for the user installation scheme. See also PYTHONUSERBASE.

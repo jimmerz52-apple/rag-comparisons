@@ -1,0 +1,4 @@
+# python.library.test#test.support.PIPE_MAX_SIZE
+
+test.support.PIPE_MAX_SIZE  
+A constant that is likely larger than the underlying OS pipe buffer size, to make writes blocking.

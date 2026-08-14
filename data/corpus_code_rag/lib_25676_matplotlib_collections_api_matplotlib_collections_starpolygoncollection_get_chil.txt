@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.get_children
+
+get_children()[source]
+ 
+Return a list of the child Artists of this Artist.

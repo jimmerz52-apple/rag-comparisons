@@ -1,0 +1,11 @@
+# werkzeug.routing.index#werkzeug.routing.PathConverter
+
+class werkzeug.routing.PathConverter(map, *args, **kwargs)  
+Like the default UnicodeConverter, but it also matches slashes. This is useful for wikis and similar applications: Rule('/<path:wikipage>')
+Rule('/<path:wikipage>/edit')
+  Parameters 
+ 
+map (Map) – the Map. 
+args (Any) –  
+kwargs (Any) –    Return type 
+None

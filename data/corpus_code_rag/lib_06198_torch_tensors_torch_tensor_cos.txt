@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cos
+
+cos() → Tensor  
+See torch.cos()

@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.get_transform
+
+get_transform(transform_name)  
+Must return the lookup named transform_name. For instance, by returning self.output_field.get_transform(transform_name).

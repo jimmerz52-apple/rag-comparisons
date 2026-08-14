@@ -1,0 +1,13 @@
+# skimage.api.skimage.io#skimage.io.plugin_info
+
+skimage.io.plugin_info(plugin) [source]
+ 
+Return plugin meta-data.  Parameters 
+ 
+pluginstr 
+
+Name of plugin.    Returns 
+ 
+mdict 
+
+Meta data as specified in plugin .ini.

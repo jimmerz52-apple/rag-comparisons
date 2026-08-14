@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.fields.files.FieldFile.delete
+
+FieldFile.delete(save=True)

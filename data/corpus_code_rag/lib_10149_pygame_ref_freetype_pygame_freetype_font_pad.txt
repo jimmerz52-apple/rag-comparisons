@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.pad
+
+pad 
+ padded boundary mode pad -> bool  If set True, then the text boundary rectangle will be inflated to match that of font.Font. Otherwise, the boundary rectangle is just large enough for the text.

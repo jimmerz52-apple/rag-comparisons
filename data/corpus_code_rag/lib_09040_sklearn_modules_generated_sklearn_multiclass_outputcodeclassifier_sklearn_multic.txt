@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.multiclass.outputcodeclassifier#sklearn.multiclass.OutputCodeClassifier.predict
+
+predict(X) [source]
+ 
+Predict multi-class targets using underlying estimators.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.    Returns 
+ 
+ynumpy array of shape [n_samples] 
+
+Predicted multi-class targets.

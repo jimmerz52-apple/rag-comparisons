@@ -1,0 +1,5 @@
+# tensorflow.config.experimental.disable_mlir_graph_optimization
+
+tf.config.experimental.disable_mlir_graph_optimization Disables experimental MLIR-Based TensorFlow Compiler Optimizations.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.config.experimental.disable_mlir_graph_optimization  
+tf.config.experimental.disable_mlir_graph_optimization()

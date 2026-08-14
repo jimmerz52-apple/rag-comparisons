@@ -1,0 +1,14 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.update_keymap
+
+update_keymap(name, key)[source]
+ 
+Set the keymap to associate with the specified tool.  Parameters 
+ 
+namestr
+
+
+Name of the Tool.  
+keystr or list of str
+
+
+Keys to associate with the tool.

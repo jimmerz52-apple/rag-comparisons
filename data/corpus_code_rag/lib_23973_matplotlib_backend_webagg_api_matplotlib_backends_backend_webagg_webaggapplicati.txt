@@ -1,0 +1,18 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.WebAggApplication.WebSocket
+
+classWebSocket(application:tornado.web.Application, request:tornado.httputil.HTTPServerRequest, **kwargs:Any)[source]
+ 
+Bases: tornado.websocket.WebSocketHandler   on_close()[source]
+ 
+Invoked when the WebSocket is closed. If the connection was closed cleanly and a status code or reason phrase was supplied, these values will be available as the attributes self.close_code and self.close_reason.  Changed in version 4.0: Added close_code and close_reason attributes.  
+   on_message(message)[source]
+ 
+Handle incoming messages on the WebSocket This method must be overridden.  Changed in version 4.5: on_message can be a coroutine.  
+   open(fignum)[source]
+ 
+Invoked when a new WebSocket is opened. The arguments to open are extracted from the tornado.web.URLSpec regular expression, just like the arguments to tornado.web.RequestHandler.get. open may be a coroutine. on_message will not be called until open has returned.  Changed in version 5.1: open may be a coroutine.  
+   send_binary(blob)[source]
+
+   send_json(content)[source]
+
+   supports_binary=True

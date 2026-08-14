@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.erfc
+
+erfc() → Tensor  
+See torch.erfc()

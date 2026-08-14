@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_c6
+
+stringprep.in_table_c6(code)  
+Determine whether code is in tableC.6 (Inappropriate for plain text).

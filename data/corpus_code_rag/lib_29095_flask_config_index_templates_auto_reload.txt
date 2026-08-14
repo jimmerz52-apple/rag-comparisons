@@ -1,0 +1,4 @@
+# flask.config.index#TEMPLATES_AUTO_RELOAD
+
+TEMPLATES_AUTO_RELOAD  
+Reload templates when they are changed. If not set, it will be enabled in debug mode. Default: None

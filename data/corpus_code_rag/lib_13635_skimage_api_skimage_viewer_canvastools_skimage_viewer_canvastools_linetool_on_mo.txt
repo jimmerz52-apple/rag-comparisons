@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.LineTool.on_move
+
+on_move(event) [source]

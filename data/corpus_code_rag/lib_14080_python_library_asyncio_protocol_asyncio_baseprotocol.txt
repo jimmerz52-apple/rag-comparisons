@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseProtocol
+
+class asyncio.BaseProtocol  
+Base protocol with methods that all protocols share.

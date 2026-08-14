@@ -1,0 +1,16 @@
+# matplotlib.cm_api#matplotlib.cm.ColormapRegistry.register
+
+register(cmap, *, name=None, force=False)[source]
+ 
+Register a new colormap. The colormap name can then be used as a string argument to any cmap parameter in Matplotlib. It is also available in pyplot.get_cmap. The colormap registry stores a copy of the given colormap, so that future changes to the original colormap instance do not affect the registered colormap. Think of this as the registry taking a snapshot of the colormap at registration.  Parameters 
+ 
+cmapmatplotlib.colors.Colormap
+
+
+The colormap to register.  
+namestr, optional
+
+
+The name for the colormap. If not given, cmap.name is used.  force: bool, default: False
+
+If False, a ValueError is raised if trying to overwrite an already registered name. True supports overwriting registered colormaps other than the builtin colormaps.

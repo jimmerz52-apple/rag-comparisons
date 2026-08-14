@@ -1,0 +1,7 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetBox.set_height
+
+set_height(height)[source]
+ 
+Set the height of the box.  Parameters 
+ 
+heightfloat

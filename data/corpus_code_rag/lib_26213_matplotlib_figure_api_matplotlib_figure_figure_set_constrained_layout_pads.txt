@@ -1,0 +1,22 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_constrained_layout_pads
+
+set_constrained_layout_pads(*, w_pad=None, h_pad=None, wspace=None, hspace=None)[source]
+ 
+Set padding for constrained_layout. Tip: The parameters can be passed from a dictionary by using fig.set_constrained_layout(**pad_dict). See Constrained Layout Guide.  Parameters 
+ 
+w_padfloat, default: rcParams["figure.constrained_layout.w_pad"] (default: 0.04167)
+
+
+Width padding in inches. This is the pad around Axes and is meant to make sure there is enough room for fonts to look good. Defaults to 3 pts = 0.04167 inches  
+h_padfloat, default: rcParams["figure.constrained_layout.h_pad"] (default: 0.04167)
+
+
+Height padding in inches. Defaults to 3 pts.  
+wspacefloat, default: rcParams["figure.constrained_layout.wspace"] (default: 0.02)
+
+
+Width padding between subplots, expressed as a fraction of the subplot width. The total padding ends up being w_pad + wspace.  
+hspacefloat, default: rcParams["figure.constrained_layout.hspace"] (default: 0.02)
+
+
+Height padding between subplots, expressed as a fraction of the subplot width. The total padding ends up being h_pad + hspace.

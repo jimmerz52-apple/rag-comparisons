@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getcompname
+
+Wave_read.getcompname()  
+Human-readable version of getcomptype(). Usually 'not compressed' parallels 'NONE'.

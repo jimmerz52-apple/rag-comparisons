@@ -1,0 +1,33 @@
+# skimage.api.skimage.filters#skimage.filters.prewitt
+
+skimage.filters.prewitt(image, mask=None, *, axis=None, mode='reflect', cval=0.0) [source]
+ 
+Find the edge magnitude using the Prewitt transform.  Parameters 
+ 
+imagearray 
+
+The input image.  
+maskarray of bool, optional 
+
+Clip the output image to this mask. (Values where mask=0 will be set to 0.)  
+axisint or sequence of int, optional 
+
+Compute the edge filter along this axis. If not provided, the edge magnitude is computed. This is defined as: prw_mag = np.sqrt(sum([prewitt(image, axis=i)**2
+                       for i in range(image.ndim)]) / image.ndim)
+ The magnitude is also computed if axis is a sequence.  
+modestr or sequence of str, optional 
+
+The boundary mode for the convolution. See scipy.ndimage.convolve for a description of the modes. This can be either a single boundary mode or one boundary mode per axis.  
+cvalfloat, optional 
+
+When mode is 'constant', this is the constant used in values outside the boundary of the image data.    Returns 
+ 
+outputarray of float 
+
+The Prewitt edge map.      See also  
+sobel, scharr
+
+  Notes The edge magnitude depends slightly on edge directions, since the approximation of the gradient operator by the Prewitt operator is not completely rotation invariant. For a better rotation invariance, the Scharr operator should be used. The Sobel operator has a better rotation invariance than the Prewitt operator, but a worse rotation invariance than the Scharr operator. Examples >>> from skimage import data
+>>> from skimage import filters
+>>> camera = data.camera()
+>>> edges = filters.prewitt(camera)

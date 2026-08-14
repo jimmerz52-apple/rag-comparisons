@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_NESTED
+
+inspect.CO_NESTED  
+The flag is set when the code object is a nested function.

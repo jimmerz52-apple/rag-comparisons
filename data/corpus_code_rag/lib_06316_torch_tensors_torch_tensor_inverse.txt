@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.inverse
+
+inverse() → Tensor  
+See torch.inverse()

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_facecolor
+
+get_facecolor()[source]
+ 
+Return the face color.

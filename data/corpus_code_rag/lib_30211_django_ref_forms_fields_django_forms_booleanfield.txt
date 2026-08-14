@@ -1,0 +1,7 @@
+# django.ref.forms.fields#django.forms.BooleanField
+
+class BooleanField(**kwargs)  
+ Default widget: CheckboxInput
+ Empty value: False
+ Normalizes to: A Python True or False value. Validates that the value is True (e.g. the check box is checked) if the field has required=True. Error message keys: required
+   Note Since all Field subclasses have required=True by default, the validation condition here is important. If you want to include a boolean in your form that can be either True or False (e.g. a checked or unchecked checkbox), you must remember to pass in required=False when creating the BooleanField.

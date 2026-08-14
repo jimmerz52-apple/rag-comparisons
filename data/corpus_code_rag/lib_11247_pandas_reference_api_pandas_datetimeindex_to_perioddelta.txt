@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.datetimeindex.to_perioddelta
+
+pandas.DatetimeIndex.to_perioddelta   DatetimeIndex.to_perioddelta(freq)[source]
+ 
+Calculate TimedeltaArray of difference between index values and index converted to PeriodArray at specified freq. Used for vectorized offsets.  Parameters 
+ 
+freq:Period frequency
+
+  Returns 
+ TimedeltaArray/Index

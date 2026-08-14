@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Collection
+
+class collections.abc.Collection  
+ABC for sized iterable container classes.  New in version 3.6.

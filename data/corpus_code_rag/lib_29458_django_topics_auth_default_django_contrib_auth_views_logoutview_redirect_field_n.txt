@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LogoutView.redirect_field_name
+
+redirect_field_name  
+The name of a GET field containing the URL to redirect to after log out. Defaults to 'next'. Overrides the next_page URL if the given GET parameter is passed.

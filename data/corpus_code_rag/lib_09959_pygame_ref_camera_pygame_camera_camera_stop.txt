@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.stop
+
+stop() 
+ stops, uninitializes, and closes the camera stop() -> None  Stops recording, uninitializes the camera, and closes it. Once a camera is stopped, the below functions cannot be used until it is started again.

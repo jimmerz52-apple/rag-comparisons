@@ -1,0 +1,5 @@
+# python.library.math#math.dist
+
+math.dist(p, q)  
+Return the Euclidean distance between two points p and q, each given as a sequence (or iterable) of coordinates. The two points must have the same dimension. Roughly equivalent to: sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q)))
+  New in version 3.8.

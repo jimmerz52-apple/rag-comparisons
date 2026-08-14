@@ -1,0 +1,7 @@
+# 814
+Task: 814
+
+# Write a function to find the area of a rombus.
+def rombus_area(p,q):
+  area=(p*q)/2
+  return area

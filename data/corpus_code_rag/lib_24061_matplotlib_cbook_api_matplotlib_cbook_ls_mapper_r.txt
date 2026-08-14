@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.ls_mapper_r
+
+matplotlib.cbook.ls_mapper_r={'dashdot': '-.', 'dashed': '--', 'dotted': ':', 'solid': '-'}
+ 
+Maps full names for line styles used by backends to their short codes.

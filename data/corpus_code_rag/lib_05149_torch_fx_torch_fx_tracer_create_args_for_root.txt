@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Tracer.create_args_for_root
+
+create_args_for_root(root_fn, is_module, concrete_args=None) [source]
+ 
+Create placeholder nodes corresponding to the signature of the root Module. This method introspects root’s signature and emits those nodes accordingly, also supporting *args and **kwargs.

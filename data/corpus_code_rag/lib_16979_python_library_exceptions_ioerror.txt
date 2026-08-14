@@ -1,0 +1,3 @@
+# python.library.exceptions#IOError
+
+exception IOError

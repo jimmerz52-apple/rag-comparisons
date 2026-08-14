@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.ScriptInfo.create_app
+
+create_app  
+Optionally a function that is passed the script info to create the instance of the application.

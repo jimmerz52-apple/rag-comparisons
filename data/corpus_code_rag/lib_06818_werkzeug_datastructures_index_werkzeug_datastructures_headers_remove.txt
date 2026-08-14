@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.remove
+
+remove(key)  
+Remove a key.  Parameters 
+key – The key to be removed.

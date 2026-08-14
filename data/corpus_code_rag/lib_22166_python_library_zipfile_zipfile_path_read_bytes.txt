@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.read_bytes
+
+Path.read_bytes()  
+Read the current file as bytes.

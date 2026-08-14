@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.tell
+
+aifc.tell()  
+Return the current frame number.

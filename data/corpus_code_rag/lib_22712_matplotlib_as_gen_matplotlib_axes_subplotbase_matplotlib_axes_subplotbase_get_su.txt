@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.get_subplotspec
+
+get_subplotspec()[source]
+ 
+Return the SubplotSpec instance associated with the subplot.

@@ -1,0 +1,20 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_xlim
+
+matplotlib.axes.Axes.get_xlim   Axes.get_xlim()[source]
+ 
+Return the x-axis view limits.  Returns 
+ 
+left, right(float, float)
+
+
+The current x-axis limits in data coordinates.      See also  set_xlim
+
+set_xbound, get_xbound
+
+
+invert_xaxis, xaxis_inverted
+
+  Notes The x-axis may be inverted, in which case the left value will be greater than the right value. 
+  Examples using matplotlib.axes.Axes.get_xlim
+ 
+   Decay

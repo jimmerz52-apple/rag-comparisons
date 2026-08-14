@@ -1,0 +1,19 @@
+# numpy.reference.generated.numpy.char.add
+
+numpy.char.add   char.add(x1, x2)[source]
+ 
+Return element-wise string concatenation for two arrays of str or unicode. Arrays x1 and x2 must have the same shape.  Parameters 
+ 
+x1array_like of str or unicode
+
+
+Input array.  
+x2array_like of str or unicode
+
+
+Input array.    Returns 
+ 
+addndarray
+
+
+Output array of string_ or unicode_, depending on input types of the same shape as x1 and x2.

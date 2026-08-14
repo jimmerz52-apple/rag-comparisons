@@ -1,0 +1,6 @@
+# pygame.ref.sprite#pygame.sprite.spritecollideany
+
+pygame.sprite.spritecollideany() 
+ Simple test if a sprite intersects anything in a group. 
+spritecollideany(sprite, group, collided = None) -> Sprite Collision with the returned sprite. 
+spritecollideany(sprite, group, collided = None) -> None No collision  If the sprite collides with any single sprite in the group, a single sprite from the group is returned. On no collision None is returned. If you don't need all the features of the pygame.sprite.spritecollide() function, this function will be a bit quicker. The collided argument is a callback function used to calculate if two sprites are colliding. It should take two sprites as values and return a bool value indicating if they are colliding. If collided is not passed, then all sprites must have a "rect" value, which is a rectangle of the sprite area, which will be used to calculate the collision.

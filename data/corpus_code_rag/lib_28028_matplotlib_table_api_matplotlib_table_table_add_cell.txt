@@ -1,0 +1,19 @@
+# matplotlib.table_api#matplotlib.table.Table.add_cell
+
+add_cell(row, col, *args, **kwargs)[source]
+ 
+Create a cell and add it to the table.  Parameters 
+ 
+rowint
+
+
+Row index.  
+colint
+
+
+Column index.  *args, **kwargs
+
+All other parameters are passed on to Cell.    Returns 
+ Cell
+
+The created cell.

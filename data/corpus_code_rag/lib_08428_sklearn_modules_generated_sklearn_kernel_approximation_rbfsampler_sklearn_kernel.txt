@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.kernel_approximation.rbfsampler#sklearn.kernel_approximation.RBFSampler.fit
+
+fit(X, y=None) [source]
+ 
+Fit the model with X. Samples random projection according to n_features.  Parameters 
+ 
+X{array-like, sparse matrix}, shape (n_samples, n_features) 
+
+Training data, where n_samples in the number of samples and n_features is the number of features.    Returns 
+ 
+selfobject 
+
+Returns the transformer.

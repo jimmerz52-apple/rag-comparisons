@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.test_suite
+
+DiscoverRunner.test_suite  
+The class used to build the test suite. By default it is set to unittest.TestSuite. This can be overridden if you wish to implement different logic for collecting tests.

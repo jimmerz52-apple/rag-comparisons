@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.QueryDict.values
+
+QueryDict.values()  
+Like dict.values(), except this uses the same last-value logic as __getitem__() and returns an iterator instead of a view object. For example: >>> q = QueryDict('a=1&a=2&a=3')
+>>> list(q.values())
+['3']

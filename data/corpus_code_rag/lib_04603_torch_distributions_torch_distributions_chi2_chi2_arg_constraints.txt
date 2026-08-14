@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.chi2.Chi2.arg_constraints
+
+arg_constraints = {'df': GreaterThan(lower_bound=0.0)}

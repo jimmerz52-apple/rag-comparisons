@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.Process.kill
+
+kill()  
+Kill the child process. On POSIX systems this method sends SIGKILL to the child process. On Windows this method is an alias for terminate().

@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.get_raw
+
+get_raw() 
+ returns an unmodified image as a string get_raw() -> string  Gets an image from a camera as a string in the native pixelformat of the camera. Useful for integration with other libraries.

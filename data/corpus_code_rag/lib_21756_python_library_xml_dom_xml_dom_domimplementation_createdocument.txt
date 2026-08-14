@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.DOMImplementation.createDocument
+
+DOMImplementation.createDocument(namespaceUri, qualifiedName, doctype)  
+Return a new Document object (the root of the DOM), with a child Element object having the given namespaceUri and qualifiedName. The doctype must be a DocumentType object created by createDocumentType(), or None. In the Python DOM API, the first two arguments can also be None in order to indicate that no Element child is to be created.

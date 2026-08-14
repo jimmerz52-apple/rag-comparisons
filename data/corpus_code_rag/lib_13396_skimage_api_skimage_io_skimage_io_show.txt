@@ -1,0 +1,8 @@
+# skimage.api.skimage.io#skimage.io.show
+
+skimage.io.show() [source]
+ 
+Display pending images. Launch the event loop of the current gui plugin, and display all pending images, queued via imshow. This is required when using imshow from non-interactive scripts. A call to show will block execution of code until all windows have been closed. Examples >>> import skimage.io as io
+ >>> for i in range(4):
+...     ax_im = io.imshow(np.random.rand(50, 50))
+>>> io.show()

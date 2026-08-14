@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.set_next
+
+set_next(frame)  
+Stop on the next line in or below the given frame.

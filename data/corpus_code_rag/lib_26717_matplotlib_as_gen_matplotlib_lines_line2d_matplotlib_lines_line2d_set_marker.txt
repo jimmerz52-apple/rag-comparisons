@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_marker
+
+set_marker(marker)[source]
+ 
+Set the line marker.  Parameters 
+ 
+markermarker style string, Path or MarkerStyle
+
+
+See markers for full description of possible arguments.

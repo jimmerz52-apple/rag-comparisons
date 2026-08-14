@@ -1,0 +1,4 @@
+# python.library.test#test.support.get_attribute
+
+test.support.get_attribute(obj, name)  
+Get an attribute, raising unittest.SkipTest if AttributeError is raised.

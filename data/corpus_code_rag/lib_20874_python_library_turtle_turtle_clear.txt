@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.clear
+
+turtle.clear()  
+turtle.clearscreen()  
+Delete all drawings and all turtles from the TurtleScreen. Reset the now empty TurtleScreen to its initial state: white background, no background image, no event bindings and tracing on.  Note This TurtleScreen method is available as a global function only under the name clearscreen. The global function clear is a different one derived from the Turtle method clear.

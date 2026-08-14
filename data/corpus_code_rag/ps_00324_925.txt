@@ -1,0 +1,10 @@
+# 925
+Task: 925
+
+# Write a python function to calculate the product of all the numbers of a given tuple.
+def mutiple_tuple(nums):
+    temp = list(nums)
+    product = 1 
+    for x in temp:
+        product *= x
+    return product

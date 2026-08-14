@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.set_unixfrom
+
+set_unixfrom(unixfrom)  
+Set the message’s envelope header to unixfrom, which should be a string.

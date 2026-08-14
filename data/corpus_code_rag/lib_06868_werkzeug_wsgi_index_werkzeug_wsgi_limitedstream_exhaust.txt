@@ -1,0 +1,6 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.exhaust
+
+exhaust(chunk_size=65536)  
+Exhaust the stream. This consumes all the data left until the limit is reached.  Parameters 
+chunk_size (int) – the size for a chunk. It will read the chunk until the stream is exhausted and throw away the results.  Return type 
+None

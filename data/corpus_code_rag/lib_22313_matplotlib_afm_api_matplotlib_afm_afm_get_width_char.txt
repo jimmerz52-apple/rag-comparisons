@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_width_char
+
+get_width_char(c, isord=False)[source]
+ 
+Get the width of the character from the character metric WX field.

@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.ResponseNotReady
+
+exception http.client.ResponseNotReady  
+A subclass of ImproperConnectionState.

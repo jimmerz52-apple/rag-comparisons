@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.__reduce__
+
+numpy.dtype.__reduce__ method   dtype.__reduce__()
+ 
+Helper for pickle.

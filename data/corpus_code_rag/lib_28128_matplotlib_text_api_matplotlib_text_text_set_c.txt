@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_c
+
+set_c(color)[source]
+ 
+Alias for set_color.

@@ -124,10 +124,10 @@ METRIC_MAP = [
     },
     {
         "ragas": "Context precision / recall",
-        "ours": "— (gap)",
+        "ours": "retrieval_recall @ gold titles (non-LLM)",
         "layer": "Retrieval",
-        "status": "missing",
-        "note": "Separate retrieval eval (nDCG@k, recall@k) is standard in CodeRAG-Bench and GraphRAG-Bench. End-to-end scores alone hide retrieval failures.",
+        "status": "proxied",
+        "note": "Title-overlap recall vs Hotpot supporting facts / MultiHop evidence (RAGAS NonLLM context recall). Not nDCG@10. Faithfulness still missing — gold-in-context vs contains flags evidence-override.",
     },
     {
         "ragas": "Correctness (lexical)",
@@ -145,10 +145,10 @@ METRIC_MAP = [
     },
     {
         "ragas": "Cost / latency (ops)",
-        "ours": "tokens_per_query, latency",
+        "ours": "tokens_per_query, prompt/completion split, phase breakdown, latency",
         "layer": "Ops",
         "status": "covered",
-        "note": "Production selection is multi-objective — quality alone is not a ship decision (Braintrust / Atlan 2026 practice).",
+        "note": "Production selection is multi-objective — quality alone is not a ship decision (Braintrust / Atlan 2026 practice). Prompt vs completion and query vs judge-eval are first-class here.",
     },
 ]
 
@@ -189,6 +189,18 @@ METRIC_DEFS = [
         "range": "seconds ↓",
         "means": "One-time (or rebuild) cost. GraphRAG global is dominated by this. Amortize over expected query volume.",
     },
+    {
+        "id": "tokens",
+        "name": "Tokens / query (prompt + completion)",
+        "range": "tokens ↓",
+        "means": "LLM tokens billed per scored question, including the judge. Split prompt vs completion and query vs evaluation on the Latency / tokens tab. Local Ollama still counts tokens even when USD cost is $0.",
+    },
+    {
+        "id": "retrieval",
+        "name": "Retrieval recall (gold titles)",
+        "range": "0–1 ↑",
+        "means": "Non-LLM context recall vs gold Wikipedia/news titles (RAGAS-style layer split). Independent of the generator. High recall + low contains = evidence override.",
+    },
 ]
 
 RESEARCH_FINDINGS = [
@@ -208,8 +220,8 @@ RESEARCH_FINDINGS = [
             "RAGAS / DeepEval / 2026 guides: a pipeline can look ‘faithful’ while context recall "
             "quietly collapses. CodeRAG-Bench explicitly reports retrieval nDCG and end-to-end gen."
         ),
-        "dashboard": "Metric map marks context precision/recall as gaps — treat end-to-end ranks as provisional.",
-        "cites": ["Es et al. RAGAS 2024", "Wang et al. CodeRAG-Bench 2025"],
+        "dashboard": "Retrieval recall (gold-title overlap) is on the Latency/Explore tables when scored. End-to-end ranks without it are still provisional.",
+        "cites": ["Es et al. RAGAS 2024", "Wang et al. CodeRAG-Bench 2025", "FutureAGI RAG eval guide 2026"],
     },
     {
         "claim": "EM/F1 under-credit generative answers",
@@ -228,6 +240,52 @@ RESEARCH_FINDINGS = [
         ),
         "dashboard": "CodeRAG card explains leave-gold-out; expand scored n before claiming production readiness.",
         "cites": ["Wang et al. Findings NAACL 2025"],
+    },
+    {
+        "claim": "Hallucination is often evidence override, not retrieval miss",
+        "evidence": (
+            "2026 facet-tracing on Hotpot: generation ignores retrieved gold more often than "
+            "the retriever fails (override ≫ evidence absence). High faithfulness to the wrong "
+            "fragment looks like a good answer."
+        ),
+        "dashboard": "High retrieval_recall + gold_in_context with low contains = override. Filter the explorer by type; do not average it away.",
+        "cites": ["arXiv:2604.09174 facet-level RAG tracing 2026", "RAGAS Es et al. 2024"],
+    },
+    {
+        "claim": "Keep a 3B generator; do not shrink it to ‘go faster’",
+        "evidence": (
+            "SETN 2026 (Papafragkakis et al.): in the 1B–8B band, parameter count is a weak RAG "
+            "predictor. Llama 3.2 3B approaches 8B accuracy when retrieval is strong; 1B–3B "
+            "generators are retrieval-bound, not generation-bound. Tiny-Critic (2026) supports a "
+            "small model as judge/router — not as the answer generator — if you need cheaper eval."
+        ),
+        "dashboard": "This harness scores with llama3.2:3b. Speed-ups are skip-EM-judge, num_predict=96, and resume — not a 1B generator swap mid-run.",
+        "cites": [
+            "Papafragkakis et al. SETN 2026 Compact LLMs for RAG",
+            "Tiny-Critic RAG arXiv:2603.00846",
+        ],
+    },
+    {
+        "claim": "Graphs help on hard tasks; they lose on fact lookup",
+        "evidence": (
+            "GraphRAG-Bench (Xiang et al., ICLR 2026, arXiv:2506.05690): vanilla RAG matches or "
+            "beats graphs on Fact Retrieval; graphs pull ahead on Complex Reasoning / Contextual "
+            "Summarize / Creative Generation. Takeaways: maximize key facts and cut redundancy; "
+            "build dense graphs not large sparse ones; actively bound context growth (global "
+            "GraphRAG prompts balloon from ~8k to ~40k tokens)."
+        ),
+        "dashboard": "Slice GraphRAG-Bench by question type. Never crown GraphRAG from a Hotpot average. Hide leftover n<50 toy slices by default.",
+        "cites": ["Xiang et al. ICLR 2026 / arXiv:2506.05690", "Han et al. 2025 GraphRAG underperforms NQ"],
+    },
+    {
+        "claim": "Mixture-of-knowledge RAG is not a free lunch",
+        "evidence": (
+            "RAG in the Wild (ACL 2026 Findings): dumping heterogeneous datastores (wiki + code + "
+            "web) often fails to help, and can hurt, unless retrieval actually surfaces the right "
+            "source. Same lesson as CodeRAG-Bench: end-to-end RAG ≠ oracle RAG."
+        ),
+        "dashboard": "CodeRAG leave-gold-out + type split (HumanEval/MBPP vs DS-1000/ODEX) is the honest read.",
+        "cites": ["ACL 2026 Findings · RAG in the Wild", "Wang et al. CodeRAG-Bench NAACL 2025"],
     },
     {
         "claim": "Ship a router, not a religion",
@@ -336,9 +394,6 @@ def _howto_html() -> str:
     if in_ul:
         out.append("</ul>")
     return '<div class="howto">' + "".join(out) + "</div>"
-    if path.exists():
-        return json.loads(path.read_text(encoding="utf-8"))
-    return {}
 
 
 def _meta(path: Path) -> dict:
@@ -367,6 +422,39 @@ def _safe_csv(path: Path) -> list[dict]:
     return records
 
 
+def _df_records(df: pd.DataFrame) -> list[dict]:
+    if df is None or df.empty:
+        return []
+    drop = {
+        "question",
+        "gold",
+        "expected_answer",
+        "rationale",
+        "retrieved_chunks",
+        "answer",
+    }
+    keep = [c for c in df.columns if c not in drop]
+    return _safe_records(df[keep])
+
+
+def _safe_records(df: pd.DataFrame) -> list[dict]:
+    records = []
+    for row in df.to_dict(orient="records"):
+        clean = {}
+        for k, v in row.items():
+            if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+                clean[k] = None
+            elif hasattr(v, "item"):
+                try:
+                    clean[k] = v.item()
+                except Exception:
+                    clean[k] = v
+            else:
+                clean[k] = v
+        records.append(clean)
+    return records
+
+
 def _lens_summary(accuracy: list[dict]) -> list[dict]:
     if not accuracy:
         return []
@@ -389,12 +477,40 @@ def _lens_summary(accuracy: list[dict]) -> list[dict]:
     return out
 
 
-def _ops_stats(results_dir: Path) -> tuple[list[dict], list[dict], dict]:
-    """Latency / token / index stats from CSVs. Sample latencies for boxplots."""
+def _series_num(frame: pd.DataFrame, col: str) -> pd.Series:
+    if col not in frame.columns:
+        return pd.Series(dtype=float)
+    return pd.to_numeric(frame[col], errors="coerce")
+
+
+def _ops_stats(
+    results_dir: Path,
+) -> tuple[list[dict], list[dict], dict, list[dict], list[dict]]:
+    """Latency / token / index stats. Sample latencies and per-query tokens for boxplots."""
     lat_path = results_dir / "latency_results.csv"
     tok_path = results_dir / "token_results.csv"
+    acc_path = results_dir / "accuracy_results.csv"
+    sum_path = results_dir / "summary.csv"
     ops: dict[str, dict] = {}
     samples: list[dict] = []
+    token_phases: list[dict] = []
+    token_samples: list[dict] = []
+
+    if sum_path.exists() and sum_path.stat().st_size > 3:
+        sm = pd.read_csv(sum_path)
+        if "method" in sm.columns:
+            for _, r in sm.iterrows():
+                method = r.get("method")
+                ops.setdefault(method, {})
+                n_scored = r.get("n_scored")
+                if pd.notna(n_scored) and int(n_scored) > 0:
+                    ops[method]["n_scored"] = int(n_scored)
+                tot = r.get("total_tokens")
+                tq = r.get("tokens_per_query")
+                if pd.notna(tot) and pd.notna(tq) and float(tq) > 0:
+                    inferred = int(round(float(tot) / float(tq)))
+                    if inferred > 0:
+                        ops[method]["n_from_summary"] = inferred
 
     if lat_path.exists() and lat_path.stat().st_size > 3:
         lat = pd.read_csv(lat_path)
@@ -434,21 +550,154 @@ def _ops_stats(results_dir: Path) -> tuple[list[dict], list[dict], dict]:
                     pd.to_numeric(g["query_latency_seconds"], errors="coerce").dropna().sum()
                 )
 
+    if acc_path.exists() and acc_path.stat().st_size > 3:
+        acc = pd.read_csv(acc_path)
+        if "method" in acc.columns:
+            for method, g in acc.groupby("method"):
+                n = max(int(g["question_id"].nunique()) if "question_id" in g.columns else len(g), 1)
+                ops.setdefault(method, {})
+                ops[method]["n_scored"] = n
+                tot = _series_num(g, "total_tokens").fillna(0)
+                if float(tot.sum()) <= 0:
+                    continue
+                prompt = _series_num(g, "prompt_tokens").fillna(0)
+                completion = _series_num(g, "completion_tokens").fillna(0)
+                q_prompt = _series_num(g, "query_prompt_tokens").fillna(0)
+                q_comp = _series_num(g, "query_completion_tokens").fillna(0)
+                e_prompt = _series_num(g, "eval_prompt_tokens").fillna(0)
+                e_comp = _series_num(g, "eval_completion_tokens").fillna(0)
+                ops[method].update(
+                    {
+                        "n_token_queries": n,
+                        "total_tokens": float(tot.sum()),
+                        "prompt_tokens": float(prompt.sum()),
+                        "completion_tokens": float(completion.sum()),
+                        "tokens_per_query": float(tot.mean()),
+                        "prompt_tokens_per_query": float(prompt.mean()),
+                        "completion_tokens_per_query": float(completion.mean()),
+                        "p50_tokens_per_query": float(tot[tot > 0].quantile(0.50))
+                        if (tot > 0).any()
+                        else 0.0,
+                        "p95_tokens_per_query": float(tot[tot > 0].quantile(0.95))
+                        if (tot > 0).any()
+                        else 0.0,
+                    }
+                )
+                if float(q_prompt.sum() + q_comp.sum()) > 0:
+                    ops[method]["query_tokens"] = float(q_prompt.sum() + q_comp.sum())
+                    ops[method]["query_tokens_per_query"] = ops[method]["query_tokens"] / n
+                if float(e_prompt.sum() + e_comp.sum()) > 0:
+                    ops[method]["eval_tokens"] = float(e_prompt.sum() + e_comp.sum())
+                    ops[method]["eval_tokens_per_query"] = ops[method]["eval_tokens"] / n
+                take = tot[tot > 0]
+                if len(take) > 200:
+                    take = take.sample(n=200, random_state=0)
+                for v in take.tolist():
+                    token_samples.append(
+                        {
+                            "method": method,
+                            "method_label": LABELS.get(method, method),
+                            "total_tokens": float(v),
+                        }
+                    )
+
     if tok_path.exists() and tok_path.stat().st_size > 3:
         tok = pd.read_csv(tok_path)
         if "phase" in tok.columns:
-            totals = tok[tok["phase"].astype(str).eq("__total__")]
-            for _, r in totals.iterrows():
+            eval_n: dict[str, int] = {}
+            buckets: dict[str, dict[str, float]] = {}
+            for _, r in tok.iterrows():
                 method = r.get("method")
-                ops.setdefault(method, {})
-                n_lat = ops[method].get("n_latency") or 1
+                phase = str(r.get("phase") or "")
+                prompt = float(r.get("prompt_tokens") or 0)
+                completion = float(r.get("completion_tokens") or 0)
                 total_tok = float(r.get("total_tokens") or 0)
-                ops[method]["total_tokens"] = total_tok
-                ops[method]["tokens_per_query"] = total_tok / max(n_lat, 1)
-                ops[method]["prompt_tokens"] = float(r.get("prompt_tokens") or 0)
-                ops[method]["completion_tokens"] = float(r.get("completion_tokens") or 0)
-                elapsed = float(r.get("elapsed_seconds") or 0)
-                ops[method]["wall_seconds"] = elapsed
+                calls = int(r.get("calls") or 0)
+                ops.setdefault(method, {})
+                b = buckets.setdefault(
+                    method,
+                    {
+                        "query": 0.0,
+                        "eval": 0.0,
+                        "index": 0.0,
+                        "query_prompt": 0.0,
+                        "query_completion": 0.0,
+                        "eval_prompt": 0.0,
+                        "eval_completion": 0.0,
+                        "ledger_total": 0.0,
+                        "ledger_prompt": 0.0,
+                        "ledger_completion": 0.0,
+                    },
+                )
+                if ("evaluat" in phase.lower() or phase in {"evaluation", "eval"}) and calls:
+                    eval_n[method] = calls
+                if phase == "__total__":
+                    b["ledger_total"] = total_tok
+                    b["ledger_prompt"] = prompt
+                    b["ledger_completion"] = completion
+                    elapsed = float(r.get("elapsed_seconds") or 0)
+                    if elapsed:
+                        ops[method]["wall_seconds"] = elapsed
+                    continue
+                token_phases.append(
+                    {
+                        "method": method,
+                        "method_label": LABELS.get(method, method),
+                        "phase": phase,
+                        "prompt_tokens": prompt,
+                        "completion_tokens": completion,
+                        "total_tokens": total_tok,
+                        "calls": calls,
+                    }
+                )
+                is_eval = phase in {"evaluation", "eval"} or "evaluat" in phase.lower()
+                is_index = "index" in phase.lower()
+                if is_eval:
+                    b["eval"] += total_tok
+                    b["eval_prompt"] += prompt
+                    b["eval_completion"] += completion
+                elif is_index:
+                    b["index"] += total_tok
+                else:
+                    b["query"] += total_tok
+                    b["query_prompt"] += prompt
+                    b["query_completion"] += completion
+
+            for method, b in buckets.items():
+                already = ops.get(method, {}).get("tokens_per_query") not in (None, 0, 0.0)
+                n_scored = ops.get(method, {}).get("n_scored") or ops.get(method, {}).get(
+                    "n_latency"
+                )
+                file_n = eval_n.get(method)
+                inferred = ops.get(method, {}).get("n_from_summary")
+                if inferred:
+                    n_q = inferred
+                elif n_scored and file_n and (
+                    n_scored > file_n * 1.5 or file_n > n_scored * 1.3
+                ):
+                    n_q = file_n
+                else:
+                    n_q = n_scored or file_n or 1
+                ops.setdefault(method, {})
+                if b["index"]:
+                    ops[method]["index_tokens"] = b["index"]
+                if already:
+                    continue
+                serving = b["query"] + b["eval"]
+                serving_prompt = b["query_prompt"] + b["eval_prompt"]
+                serving_completion = b["query_completion"] + b["eval_completion"]
+                ops[method]["query_tokens"] = b["query"]
+                ops[method]["eval_tokens"] = b["eval"]
+                ops[method]["n_token_queries"] = n_q
+                if serving:
+                    ops[method]["tokens_per_query"] = serving / max(n_q, 1)
+                    ops[method]["prompt_tokens_per_query"] = serving_prompt / max(n_q, 1)
+                    ops[method]["completion_tokens_per_query"] = serving_completion / max(n_q, 1)
+                    ops[method]["query_tokens_per_query"] = b["query"] / max(n_q, 1)
+                    ops[method]["eval_tokens_per_query"] = b["eval"] / max(n_q, 1)
+                ops[method]["prompt_tokens"] = serving_prompt or b["ledger_prompt"]
+                ops[method]["completion_tokens"] = serving_completion or b["ledger_completion"]
+                ops[method]["total_tokens"] = serving or b["ledger_total"]
 
     rows = []
     for method, stats in ops.items():
@@ -456,7 +705,7 @@ def _ops_stats(results_dir: Path) -> tuple[list[dict], list[dict], dict]:
         stats["method"] = method
         stats["method_label"] = LABELS.get(method, method)
         rows.append(stats)
-    return rows, samples, ops
+    return rows, samples, ops, token_phases, token_samples
 
 
 def collect_payload() -> dict:
@@ -471,19 +720,76 @@ def collect_payload() -> dict:
         dual = _safe_csv(spec["results"] / "dual_scoreboard.csv")
         wins = _safe_csv(spec["results"] / "method_clear_wins_composite.csv")
         routing = _safe_csv(spec["results"] / "routing_recommendations.csv")
-        ops_rows, lat_samples, ops_by_method = _ops_stats(spec["results"])
+        ops_rows, lat_samples, ops_by_method, token_phases, token_samples = _ops_stats(
+            spec["results"]
+        )
+        type_rows: list[dict] = []
+        type_catalog: list[dict] = []
+        packed = None
+        try:
+            from rag_benchmark.token_breakdown import load_bench_frame
+
+            packed = load_bench_frame(ROOT, spec["id"])
+            type_rows = _df_records(packed["by_type"]) if packed["by_type"] is not None and len(packed["by_type"]) else []
+            type_catalog = _df_records(packed["type_catalog"]) if packed["type_catalog"] is not None and len(packed["type_catalog"]) else []
+            frame = packed.get("frame")
+            if (
+                frame is not None
+                and not frame.empty
+                and "method" in frame.columns
+                and frame["method"].notna().any()
+            ):
+                accuracy = _df_records(frame)
+        except Exception as exc:
+            print(f"type breakdown skipped for {spec['id']}: {exc!r}", flush=True)
+            type_rows, type_catalog = [], []
         briefing_path = spec["results"] / "engineering_briefing.md"
         briefing = briefing_path.read_text(encoding="utf-8") if briefing_path.exists() else ""
-        scored = len({r.get("question_id") for r in accuracy}) if accuracy else 0
+        n_by_method: dict[str, int] = {}
+        qids_by_method: dict[str, set] = {}
+        for row in accuracy:
+            m = str(row.get("method") or "")
+            qids_by_method.setdefault(m, set()).add(row.get("question_id"))
+        n_by_method = {m: len(s) for m, s in qids_by_method.items()}
+        scored = max(n_by_method.values()) if n_by_method else 0
         indexed_q = meta.get("n_questions")
+        indexed_n = int(indexed_q) if indexed_q else 0
         for row in summary:
             row["method_label"] = LABELS.get(row.get("method", ""), row.get("method", ""))
             extra = ops_by_method.get(row.get("method"), {})
+            token_keys = {
+                "tokens_per_query",
+                "prompt_tokens_per_query",
+                "completion_tokens_per_query",
+                "query_tokens",
+                "eval_tokens",
+                "query_tokens_per_query",
+                "eval_tokens_per_query",
+                "index_tokens",
+                "n_token_queries",
+            }
             for k, v in extra.items():
-                if row.get(k) in (None, 0, 0.0, ""):
+                if k in token_keys and v not in (None, 0, 0.0, ""):
                     row[k] = v
+                elif row.get(k) in (None, 0, 0.0, ""):
+                    row[k] = v
+            n_scored = n_by_method.get(row.get("method"), int(row.get("n_scored") or 0))
+            row["n_scored"] = n_scored
+            row["coverage"] = (n_scored / indexed_n) if indexed_n else None
+            row["is_toy_slice"] = bool(
+                indexed_n and n_scored < 50 and n_scored < 0.5 * indexed_n
+            )
+        if accuracy:
+            acc_df = pd.DataFrame(accuracy)
+            if "retrieval_recall" in acc_df.columns:
+                rec_means = acc_df.groupby("method")["retrieval_recall"].mean()
+                for row in summary:
+                    val = rec_means.get(row.get("method"))
+                    if val is not None and pd.notna(val):
+                        row["mean_retrieval_recall"] = float(val)
         for row in accuracy:
             row["method_label"] = LABELS.get(row.get("method", ""), row.get("method", ""))
+        toy_n = sum(1 for r in summary if r.get("is_toy_slice"))
         benches.append(
             {
                 "id": spec["id"],
@@ -504,6 +810,8 @@ def collect_payload() -> dict:
                 "scores_are_partial": bool(
                     indexed_q and scored and scored < int(indexed_q)
                 ),
+                "toy_method_count": toy_n,
+                "full_set_target": indexed_q,
                 "live_partial": (spec["results"] / "live_partial_meta.json").exists(),
                 "status": (
                     "scoring live"
@@ -515,6 +823,10 @@ def collect_payload() -> dict:
                 "lens": _lens_summary(accuracy),
                 "ops": ops_rows,
                 "latency_samples": lat_samples,
+                "token_phases": token_phases,
+                "token_samples": token_samples,
+                "token_by_type": type_rows,
+                "type_catalog": type_catalog,
                 "dual": dual,
                 "clear_wins": wins[:40],
                 "routing": routing,
@@ -524,7 +836,7 @@ def collect_payload() -> dict:
     return {
         "generated_at": now,
         "repo": "rag-comparisons",
-        "research_version": "2026-08 research-refined",
+        "research_version": "2026-08 full-set",
         "metric_defs": METRIC_DEFS,
         "metric_map": METRIC_MAP,
         "research_findings": RESEARCH_FINDINGS,
@@ -576,6 +888,7 @@ select,input[type=search]{width:100%;padding:8px 10px;border:1px solid var(--lin
 .stat{border:1px solid var(--line);border-radius:10px;padding:12px;background:#fff}
 .stat .k{font-size:11px;color:var(--muted);text-transform:uppercase}
 .stat .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.stat .h{font-size:12px;color:var(--muted);margin-top:2px}
 .grid2{display:grid;grid-template-columns:1.15fr 1fr;gap:12px}
 .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
 @media(max-width:1100px){.grid2,.grid3{grid-template-columns:1fr}}
@@ -614,12 +927,14 @@ code{font-family:var(--mono);font-size:12px}
 <header class="hero">
   <h1>RAG Benchmark · Research Dashboard</h1>
   <p>
-    Interactive bake-off grounded in 2024–2026 RAG evaluation practice:
-    retrieval vs generation layers, generative vs extractive lenses, and
-    “when graphs help” rather than a single winner chart.
+    Interactive bake-off on the <strong>full indexed sets</strong> (Hotpot 7,405 · CodeRAG 2,103 ·
+    GraphRAG-Bench Novel 72 · MultiHop 150) — not a 24-question toy. Grounded in 2025–26
+    RAG evaluation practice: retrieval vs generation layers, generative vs extractive lenses,
+    and “when graphs help” rather than a single winner chart.
   </p>
   <div class="chips">
     <span class="chip" id="genChip">Generated —</span>
+    <span class="chip">Full-set scoring (not 24-Q)</span>
     <span class="chip">RAGAS-aligned metric map</span>
     <span class="chip">GraphRAG-Bench task difficulty</span>
     <span class="chip">CodeRAG leave-gold-out</span>
@@ -628,7 +943,7 @@ code{font-family:var(--mono);font-size:12px}
 
 <div class="tabs">
   <button class="tab on" data-view="explore">Explore</button>
-  <button class="tab" data-view="latency">Latency / cost</button>
+  <button class="tab" data-view="latency">Latency / tokens</button>
   <button class="tab" data-view="decision">Decision Lab</button>
   <button class="tab" data-view="research">Research Lens</button>
   <button class="tab" data-view="howto">How to run</button>
@@ -645,7 +960,10 @@ code{font-family:var(--mono);font-size:12px}
       <option value="mean_llm_judge">LLM judge</option>
       <option value="mean_token_f1">Token F1</option>
       <option value="contains_answer_rate">Contains rate</option>
+      <option value="mean_retrieval_recall">Retrieval recall (gold titles)</option>
       <option value="tokens_per_query">Tokens / query</option>
+      <option value="prompt_tokens_per_query">Prompt tokens / query</option>
+      <option value="completion_tokens_per_query">Completion tokens / query</option>
       <option value="mean_query_latency_seconds">Mean latency (s)</option>
       <option value="p95_query_latency_seconds">p95 latency (s)</option>
       <option value="index_seconds">Index time (s)</option>
@@ -659,6 +977,7 @@ code{font-family:var(--mono);font-size:12px}
       <button type="button" id="noneMethods">None</button>
       <button type="button" class="primary" id="reset">Reset</button>
     </div>
+    <label style="margin-top:12px"><input type="checkbox" id="hideToys" checked/> Hide leftover toy slices (n&lt;50)</label>
     <div class="help" id="metricHelp"></div>
     <h2 style="margin-top:16px">Metric glossary</h2>
     <div id="glossary"></div>
@@ -699,13 +1018,14 @@ code{font-family:var(--mono);font-size:12px}
 
     <section class="view" id="view-latency">
       <div class="callout">
-        <strong>Latency, tokens, index cost</strong>
-        Quality without p95 and tokens/query is not a ship decision. Index time is a one-shot
-        (or rebuild) bill — GraphRAG global is usually dominated by it. Query latency here is
-        retrieve + generate on this hardware (local llama3.2:3b unless you changed
-        <code>config/benchmark.yaml</code>).
+        <strong>Latency and token counts</strong>
+        Quality without p95, tokens/query, and a prompt vs completion split is not a ship
+        decision. Index time is a one-shot (or rebuild) bill — GraphRAG global is usually
+        dominated by it. Token totals include the LLM judge unless a row is labeled query-only.
+        Local Ollama still counts tokens even when USD is $0.
       </div>
       <div class="stats" id="latStats"></div>
+      <div class="stats" id="tokStats"></div>
       <div class="grid2">
         <div class="panel">
           <h2>Per-query latency distribution</h2>
@@ -718,9 +1038,35 @@ code{font-family:var(--mono);font-size:12px}
           <div id="latScatter" class="chart tall"></div>
         </div>
       </div>
+      <div class="grid2" style="margin-top:12px">
+        <div class="panel">
+          <h2>Prompt vs completion / query</h2>
+          <p class="muted" style="margin:0 0 8px">Stacked. Prompt-heavy methods are stuffing context; completion-heavy methods are verbose.</p>
+          <div id="tokStack" class="chart tall"></div>
+        </div>
+        <div class="panel">
+          <h2>Tokens by phase</h2>
+          <p class="muted" style="margin:0 0 8px">Query / retrieve / generate vs evaluation (judge). Judge tokens are eval overhead, not serving cost.</p>
+          <div id="tokPhase" class="chart tall"></div>
+        </div>
+      </div>
+      <div class="grid2" style="margin-top:12px">
+        <div class="panel">
+          <h2>Quality vs tokens / query</h2>
+          <p class="muted" style="margin:0 0 8px">Ideal: top-left (high composite, low tokens).</p>
+          <div id="tokScatter" class="chart tall"></div>
+        </div>
+        <div class="panel">
+          <h2>Per-query token distribution</h2>
+          <p class="muted" style="margin:0 0 8px">Needs per-question token columns in accuracy_results.csv (live scoring writes these).</p>
+          <div id="tokBox" class="chart tall"></div>
+        </div>
+      </div>
       <div class="panel" style="margin-top:12px">
-        <h2>Ops table (this bench · selected methods)</h2>
-        <div class="table-wrap" id="opsTable"></div>
+        <h2>Tokens / size by question type</h2>
+        <p class="muted" style="margin:0 0 8px">Method × type on the <strong>scored set</strong> (full catalog sizes are in the table). Notebooks: notebooks/hotpot_tokens.ipynb, code_rag_tokens.ipynb, graphrag_bench_tokens.ipynb, multihop_tokens.ipynb.</p>
+        <div id="tokByType" class="chart tall"></div>
+        <div class="table-wrap" id="typeTokTable"></div>
       </div>
     </section>
 
@@ -783,21 +1129,25 @@ code{font-family:var(--mono);font-size:12px}
 <footer class="footer">
   Rebuild: <code>PYTHONPATH=src python scripts/build_dashboard.py</code>
   · Live Pages: GitHub Actions → <code>docs/</code>
-  · Not a substitute for retrieval-only nDCG / faithfulness until those metrics are wired in.
+  · Full-set analysis: notebooks/hotpot_tokens.ipynb · code_rag_tokens.ipynb · graphrag_bench_tokens.ipynb · multihop_tokens.ipynb
+  · Retrieval recall is gold-title overlap (non-LLM). Faithfulness-to-context is still a gap.
 </footer>
 
 <script id="dashboard-data" type="application/json">__DATA_JSON__</script>
 <script>
 const DATA = JSON.parse(document.getElementById('dashboard-data').textContent);
-const COSTISH = new Set(['tokens_per_query','mean_query_latency_seconds','p95_query_latency_seconds','index_seconds']);
+const COSTISH = new Set(['tokens_per_query','prompt_tokens_per_query','completion_tokens_per_query','mean_query_latency_seconds','p95_query_latency_seconds','index_seconds']);
 const METRIC_LABEL = {
   mean_composite_score:'Composite', mean_llm_judge:'LLM judge', mean_token_f1:'Token F1',
   contains_answer_rate:'Contains rate', tokens_per_query:'Tokens / query',
+  prompt_tokens_per_query:'Prompt tokens / query',
+  completion_tokens_per_query:'Completion tokens / query',
   mean_query_latency_seconds:'Mean latency (s)',
   p95_query_latency_seconds:'p95 latency (s)',
   index_seconds:'Index time (s)',
+  mean_retrieval_recall:'Retrieval recall',
 };
-const state = { benchId: DATA.benches[0]?.id, metric:'mean_composite_score', qtype:'__all__', methods:new Set(), focusMethod:null, search:'' };
+const state = { benchId: DATA.benches[0]?.id, metric:'mean_composite_score', qtype:'__all__', methods:new Set(), focusMethod:null, search:'', hideToys:true };
 
 function bench(){ return DATA.benches.find(b=>b.id===state.benchId)||DATA.benches[0]; }
 function labelOf(m){ return (bench().summary||[]).find(r=>r.method===m)?.method_label || m; }
@@ -830,6 +1180,8 @@ function init(){
   document.getElementById('metric').onchange=e=>{state.metric=e.target.value; updateHelp(); render();};
   document.getElementById('qtype').onchange=e=>{state.qtype=e.target.value; render();};
   document.getElementById('qsearch').oninput=e=>{state.search=e.target.value.trim().toLowerCase(); renderQTable();};
+  const hideEl=document.getElementById('hideToys');
+  if(hideEl) hideEl.onchange=e=>{state.hideToys=!!e.target.checked; render();};
   document.getElementById('allMethods').onclick=()=>{state.methods=new Set((bench().summary||[]).map(r=>r.method)); render();};
   document.getElementById('noneMethods').onclick=()=>{state.methods=new Set(); render();};
   document.getElementById('reset').onclick=()=>{
@@ -845,8 +1197,10 @@ function init(){
 
 function updateHelp(){
   const map={mean_composite_score:'composite',mean_llm_judge:'llm_judge',mean_token_f1:'extractive',
-    contains_answer_rate:'generative',tokens_per_query:'tokens_per_query',
-    mean_query_latency_seconds:'latency',p95_query_latency_seconds:'latency',index_seconds:'index'};
+    contains_answer_rate:'generative',tokens_per_query:'tokens',
+    prompt_tokens_per_query:'tokens',completion_tokens_per_query:'tokens',
+    mean_query_latency_seconds:'latency',p95_query_latency_seconds:'latency',index_seconds:'index',
+    mean_retrieval_recall:'retrieval'};
   const d=DATA.metric_defs.find(x=>x.id===map[state.metric]);
   document.getElementById('metricHelp').innerHTML = d?`<strong>${d.name}</strong><br>${d.means}`:'';
 }
@@ -861,7 +1215,7 @@ function syncMethods(selectAll){
   }
   const types=new Set();
   for(const r of (bench().accuracy||[])){
-    [r.query_type,r.code_rag_type,r.hotpot_type,r.graphrag_bench_type,r.multihop_type].forEach(t=>t&&types.add(t));
+    [r.question_type,r.query_type,r.code_rag_type,r.hotpot_type,r.graphrag_bench_type,r.multihop_type].forEach(t=>t&&types.add(t));
   }
   const qt=document.getElementById('qtype'); const prev=state.qtype;
   qt.innerHTML=`<option value="__all__">All types</option>`+[...types].sort().map(t=>`<option value="${t}">${t}</option>`).join('');
@@ -873,11 +1227,23 @@ function syncMethods(selectAll){
   });
 }
 
-function filteredSummary(){ return (bench().summary||[]).filter(r=>state.methods.has(r.method)); }
+function isToyMethod(r){
+  return r && r.is_toy_slice === true;
+}
+function allSummaryToy(){
+  const rows=bench().summary||[];
+  return rows.length>0 && rows.every(isToyMethod);
+}
+function filteredSummary(){
+  let rows=(bench().summary||[]).filter(r=>state.methods.has(r.method));
+  if(state.hideToys && !allSummaryToy()) rows=rows.filter(r=>!isToyMethod(r));
+  return rows;
+}
 function filteredAccuracy(){
-  let rows=(bench().accuracy||[]).filter(r=>state.methods.has(r.method));
+  const allow=new Set(filteredSummary().map(r=>r.method));
+  let rows=(bench().accuracy||[]).filter(r=>allow.has(r.method) && state.methods.has(r.method));
   if(state.qtype!=='__all__'){
-    rows=rows.filter(r=>[r.query_type,r.code_rag_type,r.hotpot_type,r.graphrag_bench_type,r.multihop_type].includes(state.qtype));
+    rows=rows.filter(r=>[r.question_type,r.query_type,r.code_rag_type,r.hotpot_type,r.graphrag_bench_type,r.multihop_type].includes(state.qtype));
   }
   return rows;
 }
@@ -886,6 +1252,9 @@ function renderProvenance(){
   const b=bench();
   const el=document.getElementById('provenance');
   el.className='callout'+(b.scores_are_partial?' warn':'');
+  const toyNote = (b.toy_method_count && !allSummaryToy() && state.hideToys)
+    ? ` · hiding ${b.toy_method_count} leftover n&lt;50 method(s)`
+    : (allSummaryToy() ? ' · <span style="color:var(--warn)">only leftover toy slices so far — full-set scores still landing</span>' : '');
   el.innerHTML=`<strong>${b.title}</strong> <span class="muted">· ${b.era}</span>
     <div style="margin-top:6px">${b.what}</div>
     <div style="margin-top:8px"><em>How to read:</em> ${b.how_to_read}</div>
@@ -894,6 +1263,7 @@ function renderProvenance(){
       <strong>${b.indexed_documents??'—'}</strong> docs · Scored here
       <strong>${b.scored_questions||0}</strong>
       ${b.scores_are_partial?' · <span style="color:var(--warn)">partial scores — full run still landing</span>':''}
+      ${toyNote}
     </div>`;
   document.getElementById('stats').innerHTML=`
     <div class="stat"><div class="k">Indexed Q</div><div class="v">${b.indexed_questions??'—'}</div></div>
@@ -911,11 +1281,11 @@ function renderBar(){
     type:'bar', orientation:'h',
     y:rows.map(r=>r.method_label), x:rows.map(r=>r[state.metric]),
     marker:{color:rows.map(r=>r.method===state.focusMethod?'#063a9c':'#0b5fff')},
-    customdata:rows.map(r=>r.method),
-    hovertemplate:'%{y}<br>'+METRIC_LABEL[state.metric]+': %{x:.3f}<extra></extra>',
+    hovertemplate:'%{y}<br>'+METRIC_LABEL[state.metric]+': %{x:.3f}<br>n=%{customdata[1]}<extra></extra>',
+    customdata:rows.map(r=>[r.method, r.n_scored]),
   }], plotLayout({yaxis:{autorange:'reversed'}, xaxis:{title:METRIC_LABEL[state.metric]}}), {responsive:true});
   document.getElementById('barChart').on('plotly_click',ev=>{
-    const m=ev.points?.[0]?.customdata; if(!m)return;
+    const m=ev.points?.[0]?.customdata?.[0]; if(!m)return;
     state.focusMethod=state.focusMethod===m?null:m; render();
   });
 }
@@ -935,7 +1305,7 @@ function renderScatter(){
     xaxis:{title: useTok ? 'Tokens / query ↓ cheaper' : 'Mean latency (s) ↓ faster (tokens not in this slice)'},
     yaxis:{title:'Composite ↑ better',range:[0,1]}
   }), {responsive:true});
-
+}
 
 function renderBox(){
   const by={};
@@ -948,6 +1318,7 @@ function renderHeat(){
   const rows=filteredSummary();
   if(!rows.length){document.getElementById('heatChart').innerHTML='<p class="muted">No data</p>';return;}
   const keys=[['mean_composite_score','Composite'],['mean_llm_judge','Judge'],['mean_token_f1','F1'],['contains_answer_rate','Contains']];
+  if(rows.some(r=>r.mean_retrieval_recall!=null)) keys.push(['mean_retrieval_recall','Retr. recall']);
   const z=keys.map(([k])=>{
     const vals=rows.map(r=>Number(r[k])||0); const mx=Math.max(...vals,1e-9); return vals.map(v=>v/mx);
   });
@@ -981,6 +1352,18 @@ function renderLatency(){
     <div class="stat"><div class="k">Cheapest tokens/q</div><div class="v">${cheapest?fmtNum(cheapest.tokens_per_query,0):'—'}</div><div class="h">${cheapest?cheapest.method_label:''}</div></div>
     <div class="stat"><div class="k">Fastest index</div><div class="v">${idxCheap?fmtNum(idxCheap.index_seconds,1)+'s':'—'}</div><div class="h">${idxCheap?idxCheap.method_label:''}</div></div>`;
 
+  const promptCheap = [...sum].filter(r=>r.prompt_tokens_per_query>0).sort((a,b)=>a.prompt_tokens_per_query-b.prompt_tokens_per_query)[0];
+  const heaviest = [...sum].filter(r=>r.tokens_per_query>0).sort((a,b)=>b.tokens_per_query-a.tokens_per_query)[0];
+  const totTok = ops.reduce((s,r)=>s+(Number(r.total_tokens)||0),0);
+  const queryShare = ops.reduce((s,r)=>s+(Number(r.query_tokens)||0),0);
+  const evalShare = ops.reduce((s,r)=>s+(Number(r.eval_tokens)||0),0);
+  const qe = queryShare+evalShare;
+  document.getElementById('tokStats').innerHTML = `
+    <div class="stat"><div class="k">Prompt / query</div><div class="v">${promptCheap?fmtNum(promptCheap.prompt_tokens_per_query,0):'—'}</div><div class="h">${promptCheap?'lowest · '+promptCheap.method_label:''}</div></div>
+    <div class="stat"><div class="k">Heaviest tok/q</div><div class="v">${heaviest?fmtNum(heaviest.tokens_per_query,0):'—'}</div><div class="h">${heaviest?heaviest.method_label:''}</div></div>
+    <div class="stat"><div class="k">Query vs judge</div><div class="v">${qe?Math.round(100*queryShare/qe)+'% / '+Math.round(100*evalShare/qe)+'%':'—'}</div><div class="h">serving / eval tokens</div></div>
+    <div class="stat"><div class="k">Total tokens</div><div class="v">${totTok?fmtNum(totTok,0):'—'}</div><div class="h">selected methods</div></div>`;
+
   const samples=(bench().latency_samples||[]).filter(r=>state.methods.has(r.method));
   const by={};
   for(const r of samples) (by[r.method_label] ||= []).push(r.query_latency_seconds);
@@ -1002,26 +1385,115 @@ function renderLatency(){
     hovertemplate:'<b>%{text}</b><br>Composite %{y:.3f}<br>Mean %{x:.2f}s<br>p95 %{customdata[1]:.2f}s<br>Tok/q %{customdata[2]:.0f}<br>Index %{customdata[3]:.1f}s<extra></extra>',
   }], plotLayout({xaxis:{title:'Mean query latency (s) ↓ faster'}, yaxis:{title:'Composite ↑ better',range:[0,1]}}), {responsive:true});
 
+  const tokRows = (ops.length?ops:sum).filter(r=>state.methods.has(r.method) && (Number(r.prompt_tokens_per_query)||Number(r.completion_tokens_per_query)||Number(r.tokens_per_query)));
+  if(tokRows.length){
+    Plotly.newPlot('tokStack',[
+      {type:'bar', name:'Prompt / query', x:tokRows.map(r=>r.method_label), y:tokRows.map(r=>Number(r.prompt_tokens_per_query)||0), marker:{color:'#0b5fff'}},
+      {type:'bar', name:'Completion / query', x:tokRows.map(r=>r.method_label), y:tokRows.map(r=>Number(r.completion_tokens_per_query)||0), marker:{color:'#7c3aed'}}
+    ], plotLayout({barmode:'stack', yaxis:{title:'Tokens / query ↓'}, legend:{orientation:'h'}}), {responsive:true});
+  } else {
+    document.getElementById('tokStack').innerHTML='<p class="muted">No token_results.csv (or zeros) for the selected methods.</p>';
+  }
+
+  const phases=(bench().token_phases||[]).filter(r=>state.methods.has(r.method));
+  if(phases.length){
+    const phaseNames=[...new Set(phases.map(r=>r.phase))];
+    const methods=[...new Set(phases.map(r=>r.method_label))];
+    const palette=['#0b5fff','#7c3aed','#0f6d45','#c2410c','#0369a1','#a21caf','#4d7c0f','#b45309'];
+    const phaseTraces=phaseNames.map((ph,i)=>({
+      type:'bar', name:ph, x:methods,
+      y:methods.map(lab=>{
+        const hit=phases.find(r=>r.method_label===lab && r.phase===ph);
+        return hit?Number(hit.total_tokens)||0:0;
+      }),
+      marker:{color:palette[i%palette.length]}
+    }));
+    Plotly.newPlot('tokPhase', phaseTraces, plotLayout({barmode:'stack', yaxis:{title:'Total tokens'}, legend:{orientation:'h'}}), {responsive:true});
+  } else {
+    document.getElementById('tokPhase').innerHTML='<p class="muted">No phase breakdown yet. Completed runs write query / evaluation / method-specific phases.</p>';
+  }
+
+  const qtok=sum.filter(r=>r.mean_composite_score!=null && Number(r.tokens_per_query)>0);
+  if(qtok.length){
+    Plotly.newPlot('tokScatter',[{
+      type:'scatter', mode:'markers+text',
+      x:qtok.map(r=>r.tokens_per_query),
+      y:qtok.map(r=>r.mean_composite_score),
+      text:qtok.map(r=>r.method_label), textposition:'top center',
+      marker:{size:13,color:qtok.map(r=>r.method===state.focusMethod?'#063a9c':'#0b5fff')},
+      customdata:qtok.map(r=>[r.prompt_tokens_per_query,r.completion_tokens_per_query,r.query_tokens_per_query,r.eval_tokens_per_query]),
+      hovertemplate:'<b>%{text}</b><br>Composite %{y:.3f}<br>Tok/q %{x:.0f}<br>Prompt %{customdata[0]:.0f} · completion %{customdata[1]:.0f}<br>Query %{customdata[2]:.0f} · judge %{customdata[3]:.0f}<extra></extra>',
+    }], plotLayout({xaxis:{title:'Tokens / query ↓ cheaper'}, yaxis:{title:'Composite ↑ better',range:[0,1]}}), {responsive:true});
+  } else {
+    document.getElementById('tokScatter').innerHTML='<p class="muted">No tokens/query yet for this slice.</p>';
+  }
+
+  const tokSamp=(bench().token_samples||[]).filter(r=>state.methods.has(r.method));
+  const tby={};
+  for(const r of tokSamp) (tby[r.method_label] ||= []).push(r.total_tokens);
+  const ttraces=Object.entries(tby).map(([name,y])=>({type:'box',name,y,boxpoints:'outliers',marker:{size:4}}));
+  if(ttraces.length){
+    Plotly.newPlot('tokBox', ttraces, plotLayout({showlegend:false,yaxis:{title:'Tokens / question ↓'}}), {responsive:true});
+  } else {
+    document.getElementById('tokBox').innerHTML='<p class="muted">Per-question token columns are not in this accuracy file yet. Phase totals still show above. Restart the scorer after the token-stats patch to fill this box.</p>';
+  }
+
   const tableSrc = ops.length ? ops : sum;
   document.getElementById('opsTable').innerHTML = `<table><thead><tr>
-    <th>Method</th><th>n</th><th>Mean lat (s)</th><th>p50</th><th>p95</th><th>Min</th><th>Max</th>
-    <th>Index (s)</th><th>Tokens/q</th><th>Prompt tok</th><th>Completion tok</th><th>Wall (s)</th>
+    <th>Method</th><th>n lat</th><th>n tok</th><th>Mean lat (s)</th><th>p50</th><th>p95</th>
+    <th>Index (s)</th><th>Tok/q</th><th>Prompt/q</th><th>Compl/q</th>
+    <th>Query tok</th><th>Judge tok</th><th>Index tok</th><th>Prompt tot</th><th>Completion tot</th><th>Wall (s)</th>
   </tr></thead><tbody>
   ${tableSrc.map(r=>`<tr>
     <td>${r.method_label||labelOf(r.method)}</td>
     <td>${r.n_latency||r.n_scored||'—'}</td>
+    <td>${r.n_token_queries||'—'}</td>
     <td>${fmtNum(r.mean_query_latency_seconds,3)}</td>
     <td>${fmtNum(r.p50_query_latency_seconds,3)}</td>
     <td>${fmtNum(r.p95_query_latency_seconds,3)}</td>
-    <td>${fmtNum(r.min_query_latency_seconds,3)}</td>
-    <td>${fmtNum(r.max_query_latency_seconds,3)}</td>
     <td>${fmtNum(r.index_seconds,1)}</td>
     <td>${fmtNum(r.tokens_per_query,0)}</td>
+    <td>${fmtNum(r.prompt_tokens_per_query,0)}</td>
+    <td>${fmtNum(r.completion_tokens_per_query,0)}</td>
+    <td>${fmtNum(r.query_tokens,0)}</td>
+    <td>${fmtNum(r.eval_tokens,0)}</td>
+    <td>${fmtNum(r.index_tokens,0)}</td>
     <td>${fmtNum(r.prompt_tokens,0)}</td>
     <td>${fmtNum(r.completion_tokens,0)}</td>
     <td>${fmtNum(r.wall_seconds,1)}</td>
   </tr>`).join('')}
   </tbody></table>`;
+
+  const toyIds=new Set((bench().summary||[]).filter(r=>r.is_toy_slice).map(r=>r.method));
+  let byType=(bench().token_by_type||[]).filter(r=>state.methods.has(r.method));
+  if(state.hideToys && !allSummaryToy()) byType=byType.filter(r=>!toyIds.has(r.method));
+  const metricKey = byType.some(r=>Number(r.tokens_per_query)>0) ? 'tokens_per_query' : 'mean_question_tokens';
+  const types=[...new Set(byType.map(r=>r.question_type))];
+  const methods=[...new Set(byType.map(r=>r.method_label))];
+  if(byType.length && types.length && methods.length){
+    const z=methods.map(m=>types.map(t=>{
+      const hit=byType.find(r=>r.method_label===m && r.question_type===t);
+      return hit?Number(hit[metricKey])||0:0;
+    }));
+    Plotly.newPlot('tokByType',[{type:'heatmap',z,x:types,y:methods,colorscale:'Blues',
+      hovertemplate:'%{y} · %{x}<br>'+(metricKey==='tokens_per_query'?'LLM tok/q':'question tokens')+' %{z:.0f}<extra></extra>'}],
+      plotLayout({margin:{t:24,r:16,b:80,l:120}}), {responsive:true});
+  } else {
+    document.getElementById('tokByType').innerHTML='<p class="muted">No type breakdown yet. Notebooks: notebooks/*_tokens.ipynb</p>';
+  }
+  const typeTbl = byType.length ? byType : (bench().type_catalog||[]);
+  document.getElementById('typeTokTable').innerHTML = typeTbl.length ? `<table><thead><tr>
+    <th>Method</th><th>Type</th><th>n</th><th>Q tokens</th><th>Tok/q</th><th>Latency</th><th>Composite</th><th>Retr. recall</th>
+  </tr></thead><tbody>
+  ${typeTbl.map(r=>`<tr>
+    <td>${r.method_label||''}</td><td>${r.question_type||''}</td>
+    <td>${r.n||r.n_indexed||'—'}</td>
+    <td>${fmtNum(r.mean_question_tokens,0)}</td>
+    <td>${fmtNum(r.tokens_per_query,0)}</td>
+    <td>${fmtNum(r.mean_latency_s,2)}</td>
+    <td>${fmtNum(r.mean_composite,3)}</td>
+    <td>${fmtNum(r.mean_retrieval_recall,3)}</td>
+  </tr>`).join('')}</tbody></table>` : '';
 }
 
 function renderHowto(){
@@ -1031,17 +1503,25 @@ function renderHowto(){
 function renderQTable(){
   const focus=state.focusMethod || filteredSummary().slice().sort((a,b)=>(b.mean_composite_score||0)-(a.mean_composite_score||0))[0]?.method;
   let rows=filteredAccuracy().filter(r=>r.method===focus);
-  if(state.search) rows=rows.filter(r=>String(r.question_id).toLowerCase().includes(state.search)||String(r.query_type||'').toLowerCase().includes(state.search));
+  if(state.search) rows=rows.filter(r=>{
+    const blob=[r.question_id,r.question_type,r.query_type,r.hotpot_type,r.code_rag_type,r.graphrag_bench_type,r.multihop_type].join(' ').toLowerCase();
+    return blob.includes(state.search);
+  });
   rows=rows.slice().sort((a,b)=>(b.composite_score||0)-(a.composite_score||0));
-  document.getElementById('qTable').innerHTML=`<p class="muted">Focus: <strong>${labelOf(focus)}</strong> · ${rows.length} rows</p>
-    <table><thead><tr><th>Id</th><th>Type</th><th>Composite</th><th>Gen</th><th>Ext</th><th>Judge</th><th>F1</th></tr></thead><tbody>
-    ${rows.slice(0,250).map(r=>`<tr>
-      <td><code>${r.question_id}</code></td><td>${r.query_type||r.code_rag_type||r.hotpot_type||''}</td>
+  const hasRet=rows.some(r=>r.retrieval_recall!=null);
+  const shown=state.search?rows:rows.slice(0,1000);
+  document.getElementById('qTable').innerHTML=`<p class="muted">Focus: <strong>${labelOf(focus)}</strong> · showing ${shown.length} of ${rows.length} (search to filter the full set)</p>
+    <table><thead><tr><th>Id</th><th>Type</th><th>Composite</th><th>Gen</th><th>Ext</th><th>Judge</th><th>F1</th>${hasRet?'<th>Retr. recall</th><th>Gold in ctx</th><th>Override</th>':''}</tr></thead><tbody>
+    ${shown.map(r=>`<tr>
+      <td><code>${r.question_id}</code></td><td>${r.question_type||r.hotpot_type||r.code_rag_type||r.graphrag_bench_type||r.multihop_type||r.query_type||''}</td>
       <td>${Number(r.composite_score||0).toFixed(3)}</td>
       <td>${Number(r.generative_score||0).toFixed(3)}</td>
       <td>${Number(r.extractive_score||0).toFixed(3)}</td>
       <td>${Number(r.llm_judge_score||0).toFixed(3)}</td>
-      <td>${Number(r.token_f1||0).toFixed(3)}</td></tr>`).join('')}
+      <td>${Number(r.token_f1||0).toFixed(3)}</td>
+      ${hasRet?`<td>${r.retrieval_recall==null?'—':Number(r.retrieval_recall).toFixed(2)}</td>
+        <td>${r.gold_in_context==null?'—':(r.gold_in_context?'yes':'no')}</td>
+        <td>${r.evidence_override==null?'—':(r.evidence_override?'yes':'')}</td>`:''}</tr>`).join('')}
     </tbody></table>`;
 }
 
@@ -1149,7 +1629,7 @@ def build() -> Path:
     (docs / "README.md").write_text(
         "# Research-refined RAG dashboard\n\n"
         "Open **[index.html](./index.html)** on GitHub Pages.\n\n"
-        "Tabs: **Explore** · **Latency / cost** · **Decision Lab** · "
+        "Tabs: **Explore** · **Latency / tokens** · **Decision Lab** · "
         "**Research Lens** · **[How to run](./how-to-run.md)**.\n\n"
         "Rebuild: `PYTHONPATH=src python scripts/build_dashboard.py`\n",
         encoding="utf-8",

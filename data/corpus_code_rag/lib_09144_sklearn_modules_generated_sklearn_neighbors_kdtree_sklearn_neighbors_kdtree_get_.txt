@@ -1,0 +1,7 @@
+# sklearn.modules.generated.sklearn.neighbors.kdtree#sklearn.neighbors.KDTree.get_arrays
+
+get_arrays(self)  
+Get data and node arrays.  Returns 
+ arrays: tuple of array
+
+Arrays for storing tree data, index, node data and node bounds.

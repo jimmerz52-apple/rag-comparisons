@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.RAND_bytes
+
+ssl.RAND_bytes(num)  
+Return num cryptographically strong pseudo-random bytes. Raises an SSLError if the PRNG has not been seeded with enough data or if the operation is not supported by the current RAND method. RAND_status() can be used to check the status of the PRNG and RAND_add() can be used to seed the PRNG. For almost all applications os.urandom() is preferable. Read the Wikipedia article, Cryptographically secure pseudorandom number generator (CSPRNG), to get the requirements of a cryptographically strong generator.  New in version 3.3.

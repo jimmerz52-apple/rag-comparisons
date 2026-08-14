@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.MIMEPart
+
+class email.message.MIMEPart(policy=default)  
+This class represents a subpart of a MIME message. It is identical to EmailMessage, except that no MIME-Version headers are added when set_content() is called, since sub-parts do not need their own MIME-Version headers.

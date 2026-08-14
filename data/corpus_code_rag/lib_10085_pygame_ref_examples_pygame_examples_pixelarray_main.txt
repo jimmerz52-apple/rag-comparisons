@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.pixelarray.main
+
+pixelarray.main() 
+ display various pixelarray generated effects pixelarray.main() -> None  Display various pixelarray generated effects.

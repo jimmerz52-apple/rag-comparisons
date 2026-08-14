@@ -1,0 +1,5 @@
+# python.library.operator#operator.ior
+
+operator.ior(a, b)  
+operator.__ior__(a, b)  
+a = ior(a, b) is equivalent to a |= b.

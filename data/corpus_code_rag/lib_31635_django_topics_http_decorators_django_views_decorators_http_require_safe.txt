@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.http.require_safe
+
+require_safe()  
+Decorator to require that a view only accepts the GET and HEAD methods. These methods are commonly considered “safe” because they should not have the significance of taking an action other than retrieving the requested resource.  Note Web servers should automatically strip the content of responses to HEAD requests while leaving the headers unchanged, so you may handle HEAD requests exactly like GET requests in your views. Since some software, such as link checkers, rely on HEAD requests, you might prefer using require_safe instead of require_GET.

@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Statistic.count
+
+count  
+Number of memory blocks (int).

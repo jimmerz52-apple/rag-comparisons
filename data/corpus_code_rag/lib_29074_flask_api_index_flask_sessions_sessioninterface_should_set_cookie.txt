@@ -1,0 +1,8 @@
+# flask.api.index#flask.sessions.SessionInterface.should_set_cookie
+
+should_set_cookie(app, session)  
+Used by session backends to determine if a Set-Cookie header should be set for this session cookie for this response. If the session has been modified, the cookie is set. If the session is permanent and the SESSION_REFRESH_EACH_REQUEST config is true, the cookie is always set. This check is usually skipped if the session was deleted.  Changelog New in version 0.11.   Parameters 
+ 
+app (Flask) –  
+session (flask.sessions.SessionMixin) –    Return type 
+bool

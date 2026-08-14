@@ -1,0 +1,18 @@
+# python.library.asyncio-policy#asyncio.AbstractChildWatcher
+
+class asyncio.AbstractChildWatcher  
+ 
+add_child_handler(pid, callback, *args)  
+Register a new child handler. Arrange for callback(pid, returncode, *args) to be called when a process with PID equal to pid terminates. Specifying another callback for the same process replaces the previous handler. The callback callable must be thread-safe. 
+  
+remove_child_handler(pid)  
+Removes the handler for process with PID equal to pid. The function returns True if the handler was successfully removed, False if there was nothing to remove. 
+  
+attach_loop(loop)  
+Attach the watcher to an event loop. If the watcher was previously attached to an event loop, then it is first detached before attaching to the new loop. Note: loop may be None. 
+  
+is_active()  
+Return True if the watcher is ready to use. Spawning a subprocess with inactive current child watcher raises RuntimeError.  New in version 3.8.  
+  
+close()  
+Close the watcher. This method has to be called to ensure that underlying resources are cleaned-up.

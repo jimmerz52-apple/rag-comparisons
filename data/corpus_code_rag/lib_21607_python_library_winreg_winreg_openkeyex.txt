@@ -1,0 +1,5 @@
+# python.library.winreg#winreg.OpenKeyEx
+
+winreg.OpenKey(key, sub_key, reserved=0, access=KEY_READ)  
+winreg.OpenKeyEx(key, sub_key, reserved=0, access=KEY_READ)  
+Opens the specified key, returning a handle object. key is an already open key, or one of the predefined HKEY_* constants. sub_key is a string that identifies the sub_key to open. reserved is a reserved integer, and must be zero. The default is zero. access is an integer that specifies an access mask that describes the desired security access for the key. Default is KEY_READ. See Access Rights for other allowed values. The result is a new handle to the specified key. If the function fails, OSError is raised. Raises an auditing event winreg.OpenKey with arguments key, sub_key, access. Raises an auditing event winreg.OpenKey/result with argument key.  Changed in version 3.2: Allow the use of named arguments.   Changed in version 3.3: See above.

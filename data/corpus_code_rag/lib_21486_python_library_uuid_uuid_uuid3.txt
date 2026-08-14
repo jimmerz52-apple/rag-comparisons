@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.uuid3
+
+uuid.uuid3(namespace, name)  
+Generate a UUID based on the MD5 hash of a namespace identifier (which is a UUID) and a name (which is a string).

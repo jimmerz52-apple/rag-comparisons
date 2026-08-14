@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.Rss201rev2Feed
+
+class Rss201rev2Feed(RssFeed)  
+Spec: https://cyber.harvard.edu/rss/rss.html

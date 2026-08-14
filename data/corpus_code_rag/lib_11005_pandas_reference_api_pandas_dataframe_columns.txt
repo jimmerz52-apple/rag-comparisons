@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.dataframe.columns
+
+pandas.DataFrame.columns   DataFrame.columns
+ 
+The column labels of the DataFrame.

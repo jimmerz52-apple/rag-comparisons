@@ -1,0 +1,13 @@
+# matplotlib.afm_api#matplotlib.afm.CharMetrics
+
+classmatplotlib.afm.CharMetrics(width, name, bbox)[source]
+ 
+Bases: tuple Represents the character metrics of a single character. Notes The fields do currently only describe a subset of character metrics information defined in the AFM standard. Create new instance of CharMetrics(width, name, bbox)   bbox
+ 
+The bbox of the character (B) as a tuple (llx, lly, urx, ury). 
+   name
+ 
+The character name (N). 
+   width
+ 
+The character width (WX).

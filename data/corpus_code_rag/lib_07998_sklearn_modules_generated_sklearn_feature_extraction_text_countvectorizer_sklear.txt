@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.countvectorizer#sklearn.feature_extraction.text.CountVectorizer.fit_transform
+
+fit_transform(raw_documents, y=None) [source]
+ 
+Learn the vocabulary dictionary and return document-term matrix. This is equivalent to fit followed by transform, but more efficiently implemented.  Parameters 
+ 
+raw_documentsiterable 
+
+An iterable which yields either str, unicode or file objects.    Returns 
+ 
+Xarray of shape (n_samples, n_features) 
+
+Document-term matrix.

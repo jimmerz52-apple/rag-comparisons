@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseProxy._getvalue
+
+_getvalue()  
+Return a copy of the referent. If the referent is unpicklable then this will raise an exception.

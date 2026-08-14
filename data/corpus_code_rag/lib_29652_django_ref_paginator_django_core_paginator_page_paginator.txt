@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Page.paginator
+
+Page.paginator  
+The associated Paginator object.

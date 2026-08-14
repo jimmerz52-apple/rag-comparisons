@@ -1,0 +1,5 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_changeform_initial_data
+
+ModelAdmin.get_changeform_initial_data(request)  
+A hook for the initial data on admin change forms. By default, fields are given initial values from GET parameters. For instance, ?name=initial_value will set the name field’s initial value to be initial_value. This method should return a dictionary in the form {'fieldname': 'fieldval'}: def get_changeform_initial_data(self, request):
+    return {'name': 'custom_initial_value'}

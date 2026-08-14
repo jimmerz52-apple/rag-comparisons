@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_parse_math
+
+set_parse_math(parse_math)[source]
+ 
+Override switch to disable any mathtext parsing for this Text.  Parameters 
+ 
+parse_mathbool
+
+
+If False, this Text will never use mathtext. If True, mathtext will be used if there is an even number of unescaped dollar signs.

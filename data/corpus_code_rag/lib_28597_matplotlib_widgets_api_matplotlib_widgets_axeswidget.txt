@@ -1,0 +1,25 @@
+# matplotlib.widgets_api#matplotlib.widgets.AxesWidget
+
+classmatplotlib.widgets.AxesWidget(ax)[source]
+ 
+Bases: matplotlib.widgets.Widget Widget connected to a single Axes. To guarantee that the widget remains responsive and not garbage-collected, a reference to the object should be maintained by the user. This is necessary because the callback registry maintains only weak-refs to the functions, which are member functions of the widget. If there are no references to the widget object it may be garbage collected which will disconnect the callbacks.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+canvasFigureCanvasBase
+
+
+The parent figure canvas for the widget.  
+activebool
+
+
+Is the widget active?       propertycids[source]
+
+   connect_event(event, callback)[source]
+ 
+Connect a callback function with an event. This should be used in lieu of figure.canvas.mpl_connect since this function stores callback ids for later clean up. 
+   disconnect_events()[source]
+ 
+Disconnect all events created by this widget.

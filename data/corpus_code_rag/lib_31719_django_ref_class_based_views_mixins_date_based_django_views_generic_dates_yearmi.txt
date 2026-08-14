@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.YearMixin.year
+
+year  
+Optional The value for the year, as a string. By default, set to None, which means the year will be determined using other means.

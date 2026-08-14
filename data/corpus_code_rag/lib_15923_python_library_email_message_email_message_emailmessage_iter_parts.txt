@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.iter_parts
+
+iter_parts()  
+Return an iterator over all of the immediate sub-parts of the message, which will be empty for a non-multipart. (See also walk().)

@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.set_label_props
+
+set_label_props(label, text, color)[source]
+ 
+Set the label properties - color, fontsize, text.

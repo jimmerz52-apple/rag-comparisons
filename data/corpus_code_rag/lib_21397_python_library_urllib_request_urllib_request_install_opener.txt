@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.install_opener
+
+urllib.request.install_opener(opener)  
+Install an OpenerDirector instance as the default global opener. Installing an opener is only necessary if you want urlopen to use that opener; otherwise, simply call OpenerDirector.open() instead of urlopen(). The code does not check for a real OpenerDirector, and any class with the appropriate interface will work.

@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.set_allowed_domains
+
+DefaultCookiePolicy.set_allowed_domains(allowed_domains)  
+Set the sequence of allowed domains, or None.

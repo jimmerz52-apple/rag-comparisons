@@ -1,0 +1,4 @@
+# django.topics.templates#django.template.loader.select_template
+
+select_template(template_name_list, using=None)  
+select_template() is just like get_template(), except it takes a list of template names. It tries each name in order and returns the first template that exists.

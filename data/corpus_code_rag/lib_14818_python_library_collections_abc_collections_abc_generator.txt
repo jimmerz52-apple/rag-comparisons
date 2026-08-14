@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Generator
+
+class collections.abc.Generator  
+ABC for generator classes that implement the protocol defined in PEP 342 that extends iterators with the send(), throw() and close() methods. See also the definition of generator.  New in version 3.5.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.paginate_orphans
+
+paginate_orphans  
+An integer specifying the number of “overflow” objects the last page can contain. This extends the paginate_by limit on the last page by up to paginate_orphans, in order to keep the last page from having a very small number of objects.

@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISDOOR
+
+stat.S_ISDOOR(mode)  
+Return non-zero if the mode is from a door.  New in version 3.4.

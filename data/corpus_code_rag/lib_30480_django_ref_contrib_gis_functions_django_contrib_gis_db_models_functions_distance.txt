@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.Distance
+
+class Distance(expr1, expr2, spheroid=None, **extra)

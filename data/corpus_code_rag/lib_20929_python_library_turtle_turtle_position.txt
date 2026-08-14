@@ -1,0 +1,6 @@
+# python.library.turtle#turtle.position
+
+turtle.position()  
+turtle.pos()  
+Return the turtle’s current location (x,y) (as a Vec2D vector). >>> turtle.pos()
+(440.00,-0.00)

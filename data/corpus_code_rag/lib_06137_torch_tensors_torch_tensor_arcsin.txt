@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.arcsin
+
+arcsin() → Tensor  
+See torch.arcsin()

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logical_xor
+
+logical_xor() → Tensor  
+See torch.logical_xor()

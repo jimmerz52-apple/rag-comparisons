@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.collide_rect_ratio
+
+pygame.sprite.collide_rect_ratio() 
+ Collision detection between two sprites, using rects scaled to a ratio. collide_rect_ratio(ratio) -> collided_callable  A callable class that checks for collisions between two sprites, using a scaled version of the sprites rects. Is created with a ratio, the instance is then intended to be passed as a collided callback function to the *collide functions. A ratio is a floating point number - 1.0 is the same size, 2.0 is twice as big, and 0.5 is half the size.  New in pygame 1.8.1.

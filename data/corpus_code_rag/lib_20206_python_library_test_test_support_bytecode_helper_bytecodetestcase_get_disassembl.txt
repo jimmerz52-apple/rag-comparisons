@@ -1,0 +1,4 @@
+# python.library.test#test.support.bytecode_helper.BytecodeTestCase.get_disassembly_as_string
+
+BytecodeTestCase.get_disassembly_as_string(co)  
+Return the disassembly of co as string.

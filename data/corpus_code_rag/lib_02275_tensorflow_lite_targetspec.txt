@@ -1,0 +1,14 @@
+# tensorflow.lite.targetspec
+
+tf.lite.TargetSpec     View source on GitHub    Specification of target device.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.lite.TargetSpec  
+tf.lite.TargetSpec(
+    supported_ops=None, supported_types=None
+)
+ Details about target device. Converter optimizes the generated model for specific device.
+ 
+
+
+ Attributes
+  supported_ops   Experimental flag, subject to change. Set of OpsSet options supported by the device. (default set([OpsSet.TFLITE_BUILTINS]))  
+  supported_types   List of types for constant values on the target device. Frequently, an optimization choice is driven by the most compact (i.e. smallest) type in this list (default [tf.float32])

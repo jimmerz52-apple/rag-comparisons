@@ -1,0 +1,12 @@
+# torch.distributed#torch.distributed.reduce
+
+torch.distributed.reduce(tensor, dst, op=<ReduceOp.SUM: 0>, group=None, async_op=False) [source]
+ 
+Reduces the tensor data across all machines. Only the process with rank dst is going to receive the final result.  Parameters 
+ 
+tensor (Tensor) – Input and output of the collective. The function operates in-place. 
+dst (int) – Destination rank 
+op (optional) – One of the values from torch.distributed.ReduceOp enum. Specifies an operation used for element-wise reductions. 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+async_op (bool, optional) – Whether this op should be an async op   Returns 
+Async work handle, if async_op is set to True. None, if not async_op or if not part of the group

@@ -1,0 +1,81 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties
+
+classmatplotlib.font_manager.FontProperties(family=None, style=None, variant=None, weight=None, stretch=None, size=None, fname=None, math_fontfamily=None)[source]
+ 
+Bases: object A class for storing and manipulating font properties. The font properties are the six properties described in the W3C Cascading Style Sheet, Level 1 font specification and math_fontfamily for math fonts:  family: A list of font names in decreasing order of priority. The items may include a generic font family name, either 'sans-serif' (default), 'serif', 'cursive', 'fantasy', or 'monospace'. In that case, the actual font to be used will be looked up from the associated rcParam. style: Either 'normal' (default), 'italic' or 'oblique'. variant: Either 'normal' (default) or 'small-caps'. stretch: A numeric value in the range 0-1000 or one of 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal' (default), 'semi-expanded', 'expanded', 'extra-expanded' or 'ultra-expanded'. weight: A numeric value in the range 0-1000 or one of 'ultralight', 'light', 'normal' (default), 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'. size: Either an relative value of 'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large' or an absolute font size, e.g., 10 (default). math_fontfamily: The family of fonts used to render math text; overrides rcParams["mathtext.fontset"] (default: 'dejavusans'). Supported values are the same as the ones supported by rcParams["mathtext.fontset"] (default: 'dejavusans'): 'dejavusans', 'dejavuserif', 'cm', 'stix', 'stixsans' and 'custom'.  Alternatively, a font may be specified using the absolute path to a font file, by using the fname kwarg. However, in this case, it is typically simpler to just pass the path (as a pathlib.Path, not a str) to the font kwarg of the Text object. The preferred usage of font sizes is to use the relative values, e.g., 'large', instead of absolute font sizes, e.g., 12. This approach allows all text sizes to be made larger or smaller based on the font manager's default font size. This class will also accept a fontconfig pattern, if it is the only argument provided. This support does not depend on fontconfig; we are merely borrowing its pattern syntax for use here. Note that Matplotlib's internal font manager and fontconfig use a different algorithm to lookup fonts, so the results of the same pattern may be different in Matplotlib than in other applications that use fontconfig.   copy()[source]
+ 
+Return a copy of self. 
+   get_family()[source]
+ 
+Return a list of font names that comprise the font family. 
+   get_file()[source]
+ 
+Return the filename of the associated font. 
+   get_fontconfig_pattern()[source]
+ 
+Get a fontconfig pattern suitable for looking up the font as specified with fontconfig's fc-match utility. This support does not depend on fontconfig; we are merely borrowing its pattern syntax for use here. 
+   get_math_fontfamily()[source]
+ 
+Return the name of the font family used for math text. The default font is rcParams["mathtext.fontset"] (default: 'dejavusans'). 
+   get_name()[source]
+ 
+Return the name of the font that best matches the font properties. 
+   get_size()[source]
+ 
+Return the font size. 
+   get_size_in_points()[source]
+
+   get_slant()[source]
+ 
+Return the font style. Values are: 'normal', 'italic' or 'oblique'. 
+   get_stretch()[source]
+ 
+Return the font stretch or width. Options are: 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded', 'ultra-expanded'. 
+   get_style()[source]
+ 
+Return the font style. Values are: 'normal', 'italic' or 'oblique'. 
+   get_variant()[source]
+ 
+Return the font variant. Values are: 'normal' or 'small-caps'. 
+   get_weight()[source]
+ 
+Set the font weight. Options are: A numeric value in the range 0-1000 or one of 'light', 'normal', 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black' 
+   set_family(family)[source]
+ 
+Change the font family. May be either an alias (generic name is CSS parlance), such as: 'serif', 'sans-serif', 'cursive', 'fantasy', or 'monospace', a real font name or a list of real font names. Real font names are not supported when rcParams["text.usetex"] (default: False) is True. 
+   set_file(file)[source]
+ 
+Set the filename of the fontfile to use. In this case, all other properties will be ignored. 
+   set_fontconfig_pattern(pattern)[source]
+ 
+Set the properties by parsing a fontconfig pattern. This support does not depend on fontconfig; we are merely borrowing its pattern syntax for use here. 
+   set_math_fontfamily(fontfamily)[source]
+ 
+Set the font family for text in math mode. If not set explicitly, rcParams["mathtext.fontset"] (default: 'dejavusans') will be used.  Parameters 
+ 
+fontfamilystr
+
+
+The name of the font family. Available font families are defined in the matplotlibrc.template file here      See also  text.Text.get_math_fontfamily
+  
+   set_name(family)[source]
+ 
+Change the font family. May be either an alias (generic name is CSS parlance), such as: 'serif', 'sans-serif', 'cursive', 'fantasy', or 'monospace', a real font name or a list of real font names. Real font names are not supported when rcParams["text.usetex"] (default: False) is True. 
+   set_size(size)[source]
+ 
+Set the font size. Either an relative value of 'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large' or an absolute font size, e.g., 12. 
+   set_slant(style)[source]
+ 
+Set the font style. Values are: 'normal', 'italic' or 'oblique'. 
+   set_stretch(stretch)[source]
+ 
+Set the font stretch or width. Options are: 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded' or 'ultra-expanded', or a numeric value in the range 0-1000. 
+   set_style(style)[source]
+ 
+Set the font style. Values are: 'normal', 'italic' or 'oblique'. 
+   set_variant(variant)[source]
+ 
+Set the font variant. Values are: 'normal' or 'small-caps'. 
+   set_weight(weight)[source]
+ 
+Set the font weight. May be either a numeric value in the range 0-1000 or one of 'ultralight', 'light', 'normal', 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'

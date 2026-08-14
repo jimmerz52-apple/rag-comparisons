@@ -1,0 +1,4 @@
+# python.library.site#site.PREFIXES
+
+site.PREFIXES  
+A list of prefixes for site-packages directories.

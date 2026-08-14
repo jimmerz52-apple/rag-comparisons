@@ -1,0 +1,10 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.__init__
+
+__init__(points, **kwargs)[source]
+ 
+ Parameters 
+ 
+pointsndarray
+
+
+A 2x2 numpy array of the form [[x0, y0], [x1, y1]].

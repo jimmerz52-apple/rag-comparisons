@@ -1,0 +1,7 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUser.USERNAME_FIELD
+
+USERNAME_FIELD  
+A string describing the name of the field on the user model that is used as the unique identifier. This will usually be a username of some kind, but it can also be an email address, or any other unique identifier. The field must be unique (i.e., have unique=True set in its definition), unless you use a custom authentication backend that can support non-unique usernames. In the following example, the field identifier is used as the identifying field: class MyUser(AbstractBaseUser):
+    identifier = models.CharField(max_length=40, unique=True)
+    ...
+    USERNAME_FIELD = 'identifier'

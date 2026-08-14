@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.unflatten#torch.nn.Unflatten.add_module
+
+add_module(name, module)  
+Adds a child module to the current module. The module can be accessed as an attribute using the given name.  Parameters 
+ 
+name (string) – name of the child module. The child module can be accessed from this module using the given name 
+module (Module) – child module to be added to the module.

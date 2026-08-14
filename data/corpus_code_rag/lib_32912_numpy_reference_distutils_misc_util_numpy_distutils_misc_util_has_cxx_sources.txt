@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.has_cxx_sources
+
+numpy.distutils.misc_util.has_cxx_sources(sources)[source]
+ 
+Return True if sources contains C++ files

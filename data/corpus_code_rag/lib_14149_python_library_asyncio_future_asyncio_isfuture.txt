@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.isfuture
+
+asyncio.isfuture(obj)  
+Return True if obj is either of:  an instance of asyncio.Future, an instance of asyncio.Task, a Future-like object with a _asyncio_future_blocking attribute.   New in version 3.5.

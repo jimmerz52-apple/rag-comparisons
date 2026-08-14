@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_double
+
+Packer.pack_double(value)  
+Packs the double-precision floating point number value.

@@ -19,6 +19,7 @@ class EvalQuestion:
     source_doc: str | None = None
     best_method: str | None = None
     rationale: str | None = None
+    supporting_titles: list[str] | None = None
 
 
 @dataclass
@@ -31,6 +32,10 @@ class AccuracyResult:
     exact_match: bool | None = None
     contains_answer: bool | None = None
     judge_rationale: str | None = None
+    retrieval_recall: float | None = None
+    retrieval_precision: float | None = None
+    gold_in_context: bool | None = None
+    evidence_override: bool | None = None
 
     def composite_score(self) -> float:
         parts: list[float] = []
@@ -75,6 +80,9 @@ def load_eval_questions(path: Any) -> list[EvalQuestion]:
             source_doc=item.get("source_doc"),
             best_method=item.get("best_method"),
             rationale=item.get("rationale"),
+            supporting_titles=item.get("supporting_titles")
+            or item.get("gold_titles")
+            or item.get("evidence_titles"),
         )
         for item in payload
     ]
@@ -92,9 +100,19 @@ def _normalize_answer(text: str) -> str:
     return " ".join(text.split())
 
 
-def token_f1(prediction: str, reference: str) -> float:
-    pred_tokens = set(_normalize_tokens(prediction))
-    ref_tokens = set(_normalize_tokens(reference))
+def _normalize_code(text: str) -> str:
+    """Whitespace-insensitive code normalization for contains/EM on programs."""
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    # Strip markdown fences if the model wrapped the answer
+    text = re.sub(r"^```(?:python)?\s*", "", text.strip(), flags=re.IGNORECASE)
+    text = re.sub(r"\s*```$", "", text.strip())
+    lines = [re.sub(r"\s+", " ", ln).strip() for ln in text.splitlines()]
+    return "\n".join(ln for ln in lines if ln)
+
+
+def token_f1(prediction: str, reference: str, *, code: bool = False) -> float:
+    pred_tokens = set(_normalize_tokens(prediction, code=code))
+    ref_tokens = set(_normalize_tokens(reference, code=code))
     if not pred_tokens or not ref_tokens:
         return 0.0
     overlap = pred_tokens & ref_tokens
@@ -105,12 +123,25 @@ def token_f1(prediction: str, reference: str) -> float:
     return 2 * precision * recall / (precision + recall)
 
 
-def contains_answer(prediction: str, reference: str, threshold: int = 80) -> bool:
+def contains_answer(prediction: str, reference: str, threshold: int = 80, *, code: bool = False) -> bool:
+    if code:
+        pred = _normalize_code(prediction)
+        ref = _normalize_code(reference)
+        if not ref:
+            return False
+        # Exact normalized match or high partial ratio on code body
+        if ref in pred or pred in ref:
+            return True
+        return fuzz.partial_ratio(ref, pred) >= max(70, threshold - 10)
     return fuzz.partial_ratio(reference.lower(), prediction.lower()) >= threshold
 
 
-def _normalize_tokens(text: str) -> list[str]:
-    return [token for token in re.findall(r"[a-z0-9]+", text.lower()) if len(token) > 2]
+def _normalize_tokens(text: str, *, code: bool = False) -> list[str]:
+    tokens = re.findall(r"[a-z0-9_]+", text.lower())
+    if code:
+        # Keep short keywords (def/if/for) — they matter for programs
+        return [t for t in tokens if t]
+    return [token for token in tokens if len(token) > 2]
 
 
 def _first_line_answer(text: str) -> str:
@@ -120,6 +151,14 @@ def _first_line_answer(text: str) -> str:
         if cleaned:
             return cleaned
     return text.strip()
+
+
+def _looks_like_code(question: EvalQuestion) -> bool:
+    qid = str(question.id)
+    if qid.startswith(("HumanEval", "MBPP", "HumanEval-", "MBPP-", "DS1000-", "ODEX-")):
+        return True
+    expected = question.expected_answer or ""
+    return "def " in expected or "return " in expected or expected.lstrip().startswith("from ")
 
 
 class AccuracyEvaluator:
@@ -135,29 +174,65 @@ class AccuracyEvaluator:
         prediction: str,
         use_llm_judge: bool = True,
     ) -> AccuracyResult:
-        pred = _first_line_answer(prediction)
+        code = _looks_like_code(question)
+        # Code: score the full program, not the first line (signatures alone inflate F1 noise).
+        pred_for_lexical = prediction if code else _first_line_answer(prediction)
         result = AccuracyResult(
             question_id=question.id,
             method=method,
             query_type=question.query_type,
-            token_f1=token_f1(pred, question.expected_answer),
-            exact_match=exact_match(pred, question.expected_answer),
-            contains_answer=contains_answer(prediction, question.expected_answer),
+            token_f1=token_f1(pred_for_lexical, question.expected_answer, code=code),
+            exact_match=(
+                _normalize_code(prediction) == _normalize_code(question.expected_answer)
+                if code
+                else exact_match(pred_for_lexical, question.expected_answer)
+            ),
+            contains_answer=contains_answer(
+                prediction, question.expected_answer, code=code
+            ),
         )
 
         if use_llm_judge:
-            score, rationale = self._llm_judge(
-                question=question.question,
-                expected=question.expected_answer,
-                prediction=prediction,
-            )
-            result.llm_judge_score = score
-            result.judge_rationale = rationale
+            if result.exact_match:
+                result.llm_judge_score = 1.0
+                result.judge_rationale = "skipped: exact match"
+            else:
+                score, rationale = self._llm_judge(
+                    question=question.question,
+                    expected=question.expected_answer,
+                    prediction=prediction,
+                    code=code,
+                )
+                result.llm_judge_score = score
+                result.judge_rationale = rationale
 
         return result
 
-    def _llm_judge(self, *, question: str, expected: str, prediction: str) -> tuple[float, str]:
-        prompt = f"""You are grading a RAG answer.
+    def _llm_judge(
+        self,
+        *,
+        question: str,
+        expected: str,
+        prediction: str,
+        code: bool = False,
+    ) -> tuple[float, str]:
+        if code:
+            prompt = f"""You are grading a code-generation answer for a RAG coding benchmark.
+
+Problem:
+{question}
+
+Reference solution:
+{expected}
+
+Model solution:
+{prediction}
+
+Score 0.0–1.0 for functional correctness / algorithmic equivalence (not string identity).
+Ignore minor naming/whitespace differences. Penalize wrong logic or missing edge cases.
+Return JSON only: {{"score": <float>, "rationale": "<short reason>"}}"""
+        else:
+            prompt = f"""You are grading a RAG answer.
 
 Question: {question}
 Reference answer: {expected}

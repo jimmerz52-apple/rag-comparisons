@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.forward
+
+forward()[source]
+ 
+Move the position forward and return the current element.

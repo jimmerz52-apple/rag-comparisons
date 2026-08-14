@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.CAB.commit
+
+commit(database)  
+Generate a CAB file, add it as a stream to the MSI file, put it into the Media table, and remove the generated file from the disk.

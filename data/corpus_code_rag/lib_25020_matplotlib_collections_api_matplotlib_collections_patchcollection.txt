@@ -1,0 +1,677 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection
+
+classmatplotlib.collections.PatchCollection(patches, match_original=False, **kwargs)[source]
+ 
+Bases: matplotlib.collections.Collection A generic collection of patches. This makes it easier to assign a colormap to a heterogeneous collection of patches. This also may improve plotting speed, since PatchCollection will draw faster than a large number of patches.  patches
+
+a sequence of Patch objects. This list may include a heterogeneous assortment of different patch types.  match_original
+
+If True, use the colors and linewidths of the original patches. If False, new colors may be assigned by providing the standard collection arguments, facecolor, edgecolor, linewidths, norm or cmap.   If any of edgecolors, facecolors, linewidths, antialiaseds are None, they default to their rcParams patch setting, in sequence form. The use of ScalarMappable functionality is optional. If the ScalarMappable matrix _A has been set (via a call to set_array), at draw time a call to scalar mappable will be made to set the face colors.   add_callback(func)[source]
+ 
+Add a callback function that will be called whenever one of the Artist's properties changes.  Parameters 
+ 
+funccallable
+
+
+The callback function. It must have the signature: def func(artist: Artist) -> Any
+ where artist is the calling Artist. Return values may exist but are ignored.    Returns 
+ int
+
+The observer id associated with the callback. This id can be used for removing the callback with remove_callback later.      See also  remove_callback
+  
+   autoscale()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array 
+   autoscale_None()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array, changing only limits that are None 
+   propertyaxes
+ 
+The Axes instance the artist resides in, or None. 
+   propertycallbacksSM[source]
+
+   changed()[source]
+ 
+Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal. 
+   colorbar
+ 
+The last colorbar associated with this ScalarMappable. May be None. 
+   contains(mouseevent)[source]
+ 
+Test whether the mouse event occurred in the collection. Returns bool, dict(ind=itemlist), where every item in itemlist contains the event. 
+   convert_xunits(x)[source]
+ 
+Convert x using the unit type of the xaxis. If the artist is not in contained in an Axes or if the xaxis does not have units, x itself is returned. 
+   convert_yunits(y)[source]
+ 
+Convert y using the unit type of the yaxis. If the artist is not in contained in an Axes or if the yaxis does not have units, y itself is returned. 
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   findobj(match=None, include_self=True)[source]
+ 
+Find artist objects. Recursively find all Artist instances contained in the artist.  Parameters 
+ match
+
+A filter criterion for the matches. This can be  
+None: Return all objects contained in artist. A function with signature def match(artist: Artist) -> bool. The result will only contain artists for which the function returns True. A class instance: e.g., Line2D. The result will only contain artists of this class or its subclasses (isinstance check).   
+include_selfbool
+
+
+Include self in the list to be checked for a match.    Returns 
+ list of Artist
+
+   
+   format_cursor_data(data)[source]
+ 
+Return a string representation of data.  Note This method is intended to be overridden by artist subclasses. As an end-user of Matplotlib you will most likely not call this method yourself.  The default implementation converts ints and floats and arrays of ints and floats into a comma-separated string enclosed in square brackets, unless the artist has an associated colorbar, in which case scalar values are formatted using the colorbar's formatter.  See also  get_cursor_data
+  
+   get_agg_filter()[source]
+ 
+Return filter function to be used for agg filter. 
+   get_alpha()[source]
+ 
+Return the alpha value used for blending - not supported on all backends. 
+   get_animated()[source]
+ 
+Return whether the artist is animated. 
+   get_array()[source]
+ 
+Return the array of values, that are mapped to colors. The base class ScalarMappable does not make any assumptions on the dimensionality and shape of the array. 
+   get_capstyle()[source]
+
+   get_children()[source]
+ 
+Return a list of the child Artists of this Artist. 
+   get_clim()[source]
+ 
+Return the values (min, max) that are mapped to the colormap limits. 
+   get_clip_box()[source]
+ 
+Return the clipbox. 
+   get_clip_on()[source]
+ 
+Return whether the artist uses clipping. 
+   get_clip_path()[source]
+ 
+Return the clip path. 
+   get_cmap()[source]
+ 
+Return the Colormap instance. 
+   get_cursor_data(event)[source]
+ 
+Return the cursor data for a given event.  Note This method is intended to be overridden by artist subclasses. As an end-user of Matplotlib you will most likely not call this method yourself.  Cursor data can be used by Artists to provide additional context information for a given event. The default implementation just returns None. Subclasses can override the method and return arbitrary data. However, when doing so, they must ensure that format_cursor_data can convert the data to a string representation. The only current use case is displaying the z-value of an AxesImage in the status bar of a plot window, while moving the mouse.  Parameters 
+ 
+eventmatplotlib.backend_bases.MouseEvent
+
+    See also  format_cursor_data
+  
+   get_dashes()[source]
+ 
+Alias for get_linestyle. 
+   get_datalim(transData)[source]
+
+   get_ec()[source]
+ 
+Alias for get_edgecolor. 
+   get_edgecolor()[source]
+
+   get_edgecolors()[source]
+ 
+Alias for get_edgecolor. 
+   get_facecolor()[source]
+
+   get_facecolors()[source]
+ 
+Alias for get_facecolor. 
+   get_fc()[source]
+ 
+Alias for get_facecolor. 
+   get_figure()[source]
+ 
+Return the Figure instance the artist belongs to. 
+   get_fill()[source]
+ 
+Return whether face is colored. 
+   get_gid()[source]
+ 
+Return the group id. 
+   get_hatch()[source]
+ 
+Return the current hatching pattern. 
+   get_in_layout()[source]
+ 
+Return boolean flag, True if artist is included in layout calculations. E.g. Constrained Layout Guide, Figure.tight_layout(), and fig.savefig(fname, bbox_inches='tight'). 
+   get_joinstyle()[source]
+
+   get_label()[source]
+ 
+Return the label used for this artist in the legend. 
+   get_linestyle()[source]
+
+   get_linestyles()[source]
+ 
+Alias for get_linestyle. 
+   get_linewidth()[source]
+
+   get_linewidths()[source]
+ 
+Alias for get_linewidth. 
+   get_ls()[source]
+ 
+Alias for get_linestyle. 
+   get_lw()[source]
+ 
+Alias for get_linewidth. 
+   get_offset_transform()[source]
+ 
+Return the Transform instance used by this artist offset. 
+   get_offsets()[source]
+ 
+Return the offsets for the collection. 
+   get_path_effects()[source]
+
+   get_paths()[source]
+
+   get_picker()[source]
+ 
+Return the picking behavior of the artist. The possible values are described in set_picker.  See also  
+set_picker, pickable, pick
+
+  
+   get_pickradius()[source]
+
+   get_rasterized()[source]
+ 
+Return whether the artist is to be rasterized. 
+   get_sketch_params()[source]
+ 
+Return the sketch parameters for the artist.  Returns 
+ tuple or None
+
+A 3-tuple with the following elements:  
+scale: The amplitude of the wiggle perpendicular to the source line. 
+length: The length of the wiggle along the line. 
+randomness: The scale factor by which the length is shrunken or expanded.  Returns None if no sketch parameters were set.     
+   get_snap()[source]
+ 
+Return the snap setting. See set_snap for details. 
+   get_tightbbox(renderer)[source]
+ 
+Like Artist.get_window_extent, but includes any clipping.  Parameters 
+ 
+rendererRendererBase subclass
+
+
+renderer that will be used to draw the figures (i.e. fig.canvas.get_renderer())    Returns 
+ Bbox
+
+The enclosing bounding box (in figure pixel coordinates).     
+   get_transform()[source]
+ 
+Return the Transform instance used by this artist. 
+   get_transformed_clip_path_and_affine()[source]
+ 
+Return the clip path with the non-affine part of its transformation applied, and the remaining affine part of its transformation. 
+   get_transforms()[source]
+
+   get_url()[source]
+ 
+Return the url. 
+   get_urls()[source]
+ 
+Return a list of URLs, one for each element of the collection. The list contains None for elements without a URL. See Hyperlinks for an example. 
+   get_visible()[source]
+ 
+Return the visibility. 
+   get_window_extent(renderer)[source]
+ 
+Get the artist's bounding box in display space. The bounding box' width and height are nonnegative. Subclasses should override for inclusion in the bounding box "tight" calculation. Default is to return an empty bounding box at 0, 0. Be careful when using this function, the results will not update if the artist window extent of the artist changes. The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure). This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly. 
+   get_zorder()[source]
+ 
+Return the artist's zorder. 
+   have_units()[source]
+ 
+Return whether units are set on any axis. 
+   is_transform_set()[source]
+ 
+Return whether the Artist has an explicitly set transform. This is True after set_transform has been called. 
+   propertymouseover
+ 
+If this property is set to True, the artist will be queried for custom context information when the mouse cursor moves over it. See also get_cursor_data(), ToolCursorPosition and NavigationToolbar2. 
+   propertynorm
+
+   pchanged()[source]
+ 
+Call all of the registered callbacks. This function is triggered internally when a property is changed.  See also  add_callback
+remove_callback
+  
+   pick(mouseevent)[source]
+ 
+Process a pick event. Each child artist will fire a pick event if mouseevent is over the artist and the artist has picker set.  See also  
+set_picker, get_picker, pickable
+
+  
+   pickable()[source]
+ 
+Return whether the artist is pickable.  See also  
+set_picker, get_picker, pick
+
+  
+   properties()[source]
+ 
+Return a dictionary of all the properties of the artist. 
+   remove()[source]
+ 
+Remove the artist from the figure if possible. The effect will not be visible until the figure is redrawn, e.g., with FigureCanvasBase.draw_idle. Call relim to update the axes limits if desired. Note: relim will not see collections even if the collection was added to the axes with autolim = True. Note: there is no support for removing the artist's legend entry. 
+   remove_callback(oid)[source]
+ 
+Remove a callback based on its observer id.  See also  add_callback
+  
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, array=<UNSET>, capstyle=<UNSET>, clim=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, cmap=<UNSET>, color=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, gid=<UNSET>, hatch=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, norm=<UNSET>, offset_transform=<UNSET>, offsets=<UNSET>, path_effects=<UNSET>, paths=<UNSET>, picker=<UNSET>, pickradius=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, urls=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha array-like or scalar or None  
+animated bool  
+antialiased or aa or antialiaseds bool or list of bools  
+array array-like or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clim (vmin: float, vmax: float)  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+cmap Colormap or str or None  
+color color or list of rgba tuples  
+edgecolor or ec or edgecolors color or list of colors or 'face'  
+facecolor or facecolors or fc color or list of colors  
+figure Figure  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or dashes or linestyles or ls str or tuple or list thereof  
+linewidth or linewidths or lw float or list of floats  
+norm Normalize or None  
+offset_transform Transform  
+offsets (N, 2) or (2,) array-like  
+path_effects AbstractPathEffect  
+paths unknown  
+picker None or bool or float or callable  
+pickradius float  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+urls list of str or None  
+visible bool  
+zorder float   
+   set_aa(aa)[source]
+ 
+Alias for set_antialiased. 
+   set_agg_filter(filter_func)[source]
+ 
+Set the agg filter.  Parameters 
+ 
+filter_funccallable
+
+
+A filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array.     
+   set_alpha(alpha)[source]
+ 
+Set the alpha value used for blending - not supported on all backends.  Parameters 
+ 
+alphaarray-like or scalar or None
+
+
+All values must be within the 0-1 range, inclusive. Masked values and nans are not supported.     
+   set_animated(b)[source]
+ 
+Set whether the artist is intended to be used in an animation. If True, the artist is excluded from regular drawing of the figure. You have to call Figure.draw_artist / Axes.draw_artist explicitly on the artist. This appoach is used to speed up animations using blitting. See also matplotlib.animation and Faster rendering by using blitting.  Parameters 
+ 
+bbool
+
+   
+   set_antialiased(aa)[source]
+ 
+Set the antialiasing state for rendering.  Parameters 
+ 
+aabool or list of bools
+
+   
+   set_antialiaseds(aa)[source]
+ 
+Alias for set_antialiased. 
+   set_array(A)[source]
+ 
+Set the value array from array-like A.  Parameters 
+ 
+Aarray-like or None
+
+
+The values that are mapped to colors. The base class ScalarMappable does not make any assumptions on the dimensionality and shape of the value array A.     
+   set_capstyle(cs)[source]
+ 
+Set the CapStyle for the collection (for all its elements).  Parameters 
+ 
+csCapStyle or {'butt', 'projecting', 'round'}
+
+   
+   set_clim(vmin=None, vmax=None)[source]
+ 
+Set the norm limits for image scaling.  Parameters 
+ 
+vmin, vmaxfloat
+
+
+The limits. The limits may also be passed as a tuple (vmin, vmax) as a single positional argument.     
+   set_clip_box(clipbox)[source]
+ 
+Set the artist's clip Bbox.  Parameters 
+ 
+clipboxBbox
+
+   
+   set_clip_on(b)[source]
+ 
+Set whether the artist uses clipping. When False artists will be visible outside of the axes which can lead to unexpected results.  Parameters 
+ 
+bbool
+
+   
+   set_clip_path(path, transform=None)[source]
+ 
+Set the artist's clip path.  Parameters 
+ 
+pathPatch or Path or TransformedPath or None
+
+
+The clip path. If given a Path, transform must be provided as well. If None, a previously set clip path is removed.  
+transformTransform, optional
+
+
+Only used if path is a Path, in which case the given Path is converted to a TransformedPath using transform.     Notes For efficiency, if path is a Rectangle this method will set the clipping box to the corresponding rectangle and set the clipping path to None. For technical reasons (support of set), a tuple (path, transform) is also accepted as a single positional parameter. 
+   set_cmap(cmap)[source]
+ 
+Set the colormap for luminance data.  Parameters 
+ 
+cmapColormap or str or None
+
+   
+   set_color(c)[source]
+ 
+Set both the edgecolor and the facecolor.  Parameters 
+ 
+ccolor or list of rgba tuples
+
+    See also  
+Collection.set_facecolor, Collection.set_edgecolor
+
+
+For setting the edge or face color individually.    
+   set_dashes(ls)[source]
+ 
+Alias for set_linestyle. 
+   set_ec(c)[source]
+ 
+Alias for set_edgecolor. 
+   set_edgecolor(c)[source]
+ 
+Set the edgecolor(s) of the collection.  Parameters 
+ 
+ccolor or list of colors or 'face'
+
+
+The collection edgecolor(s). If a sequence, the patches cycle through it. If 'face', match the facecolor.     
+   set_edgecolors(c)[source]
+ 
+Alias for set_edgecolor. 
+   set_facecolor(c)[source]
+ 
+Set the facecolor(s) of the collection. c can be a color (all patches have same color), or a sequence of colors; if it is a sequence the patches will cycle through the sequence. If c is 'none', the patch will not be filled.  Parameters 
+ 
+ccolor or list of colors
+
+   
+   set_facecolors(c)[source]
+ 
+Alias for set_facecolor. 
+   set_fc(c)[source]
+ 
+Alias for set_facecolor. 
+   set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure
+
+   
+   set_gid(gid)[source]
+ 
+Set the (group) id for the artist.  Parameters 
+ 
+gidstr
+
+   
+   set_hatch(hatch)[source]
+ 
+Set the hatching pattern hatch can be one of: /   - diagonal hatching
+\   - back diagonal
+|   - vertical
+-   - horizontal
++   - crossed
+x   - crossed diagonal
+o   - small circle
+O   - large circle
+.   - dots
+*   - stars
+ Letters can be combined, in which case all the specified hatchings are done. If same letter repeats, it increases the density of hatching of that pattern. Hatching is supported in the PostScript, PDF, SVG and Agg backends only. Unlike other properties such as linewidth and colors, hatching can only be specified for the collection as a whole, not separately for each member.  Parameters 
+ 
+hatch{'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}
+
+   
+   set_in_layout(in_layout)[source]
+ 
+Set if artist is to be included in layout calculations, E.g. Constrained Layout Guide, Figure.tight_layout(), and fig.savefig(fname, bbox_inches='tight').  Parameters 
+ 
+in_layoutbool
+
+   
+   set_joinstyle(js)[source]
+ 
+Set the JoinStyle for the collection (for all its elements).  Parameters 
+ 
+jsJoinStyle or {'miter', 'round', 'bevel'}
+
+   
+   set_label(s)[source]
+ 
+Set a label that will be displayed in the legend.  Parameters 
+ 
+sobject
+
+
+s will be converted to a string by calling str.     
+   set_linestyle(ls)[source]
+ 
+Set the linestyle(s) for the collection.   
+linestyle description   
+'-' or 'solid' solid line  
+'--' or 'dashed' dashed line  
+'-.' or 'dashdot' dash-dotted line  
+':' or 'dotted' dotted line   Alternatively a dash tuple of the following form can be provided: (offset, onoffseq),
+ where onoffseq is an even length tuple of on and off ink in points.  Parameters 
+ 
+lsstr or tuple or list thereof
+
+
+Valid values for individual linestyles include {'-', '--', '-.', ':', '', (offset, on-off-seq)}. See Line2D.set_linestyle for a complete description.     
+   set_linestyles(ls)[source]
+ 
+Alias for set_linestyle. 
+   set_linewidth(lw)[source]
+ 
+Set the linewidth(s) for the collection. lw can be a scalar or a sequence; if it is a sequence the patches will cycle through the sequence  Parameters 
+ 
+lwfloat or list of floats
+
+   
+   set_linewidths(lw)[source]
+ 
+Alias for set_linewidth. 
+   set_ls(ls)[source]
+ 
+Alias for set_linestyle. 
+   set_lw(lw)[source]
+ 
+Alias for set_linewidth. 
+   set_norm(norm)[source]
+ 
+Set the normalization instance.  Parameters 
+ 
+normNormalize or None
+
+   Notes If there are any colorbars using the mappable for this norm, setting the norm of the mappable will reset the norm, locator, and formatters on the colorbar to default. 
+   set_offset_transform(transOffset)[source]
+ 
+Set the artist offset transform.  Parameters 
+ 
+transOffsetTransform
+
+   
+   set_offsets(offsets)[source]
+ 
+Set the offsets for the collection.  Parameters 
+ 
+offsets(N, 2) or (2,) array-like
+
+   
+   set_path_effects(path_effects)[source]
+ 
+Set the path effects.  Parameters 
+ 
+path_effectsAbstractPathEffect
+
+   
+   set_paths(patches)[source]
+
+   set_picker(picker)[source]
+ 
+Define the picking behavior of the artist.  Parameters 
+ 
+pickerNone or bool or float or callable
+
+
+This can be one of the following:  
+None: Picking is disabled for this artist (default). A boolean: If True then picking will be enabled and the artist will fire a pick event if the mouse event is over the artist. A float: If picker is a number it is interpreted as an epsilon tolerance in points and the artist will fire off an event if its data is within epsilon of the mouse event. For some artists like lines and patch collections, the artist may provide additional data to the pick event that is generated, e.g., the indices of the data within epsilon of the pick event 
+A function: If picker is callable, it is a user supplied function which determines whether the artist is hit by the mouse event: hit, props = picker(artist, mouseevent)
+ to determine the hit test. if the mouse event is over the artist, return hit=True and props is a dictionary of properties you want added to the PickEvent attributes.       
+   set_pickradius(pr)[source]
+ 
+Set the pick radius used for containment tests.  Parameters 
+ 
+prfloat
+
+
+Pick radius, in points.     
+   set_rasterized(rasterized)[source]
+ 
+Force rasterized (bitmap) drawing for vector graphics output. Rasterized drawing is not supported by all artists. If you try to enable this on an artist that does not support it, the command has no effect and a warning will be issued. This setting is ignored for pixel-based output. See also Rasterization for vector graphics.  Parameters 
+ 
+rasterizedbool
+
+   
+   set_sketch_params(scale=None, length=None, randomness=None)[source]
+ 
+Set the sketch parameters.  Parameters 
+ 
+scalefloat, optional
+
+
+The amplitude of the wiggle perpendicular to the source line, in pixels. If scale is None, or not provided, no sketch filter will be provided.  
+lengthfloat, optional
+
+
+The length of the wiggle along the line, in pixels (default 128.0)  
+randomnessfloat, optional
+
+
+The scale factor by which the length is shrunken or expanded (default 16.0) The PGF backend uses this argument as an RNG seed and not as described above. Using the same seed yields the same random shape.     
+   set_snap(snap)[source]
+ 
+Set the snapping behavior. Snapping aligns positions with the pixel grid, which results in clearer images. For example, if a black line of 1px width was defined at a position in between two pixels, the resulting image would contain the interpolated value of that line in the pixel grid, which would be a grey value on both adjacent pixel positions. In contrast, snapping will move the line to the nearest integer pixel value, so that the resulting image will really contain a 1px wide black line. Snapping is currently only supported by the Agg and MacOSX backends.  Parameters 
+ 
+snapbool or None
+
+
+Possible values:  
+True: Snap vertices to the nearest pixel center. 
+False: Do not modify vertex positions. 
+None: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center.      
+   set_transform(t)[source]
+ 
+Set the artist transform.  Parameters 
+ 
+tTransform
+
+   
+   set_url(url)[source]
+ 
+Set the url for the artist.  Parameters 
+ 
+urlstr
+
+   
+   set_urls(urls)[source]
+ 
+ Parameters 
+ 
+urlslist of str or None
+
+   Notes URLs are currently only implemented by the SVG backend. They are ignored by all other backends. 
+   set_visible(b)[source]
+ 
+Set the artist's visibility.  Parameters 
+ 
+bbool
+
+   
+   set_zorder(level)[source]
+ 
+Set the zorder for the artist. Artists with lower zorder values are drawn first.  Parameters 
+ 
+levelfloat
+
+   
+   propertystale
+ 
+Whether the artist is 'stale' and needs to be re-drawn for the output to match the internal state of the artist. 
+   propertysticky_edges
+ 
+x and y sticky edge lists for autoscaling. When performing autoscaling, if a data limit coincides with a value in the corresponding sticky_edges list, then no margin will be added--the view limit "sticks" to the edge. A typical use case is histograms, where one usually expects no margin on the bottom edge (0) of the histogram. Moreover, margin expansion "bumps" against sticky edges and cannot cross them. For example, if the upper data limit is 1.0, the upper view limit computed by simple margin application is 1.2, but there is a sticky edge at 1.1, then the actual upper view limit will be 1.1. This attribute cannot be assigned to; however, the x and y lists can be modified in place as needed. Examples >>> artist.sticky_edges.x[:] = (xmin, xmax)
+>>> artist.sticky_edges.y[:] = (ymin, ymax)
+ 
+   to_rgba(x, alpha=None, bytes=False, norm=True)[source]
+ 
+Return a normalized rgba array corresponding to x. In the normal case, x is a 1D or 2D sequence of scalars, and the corresponding ndarray of rgba values will be returned, based on the norm and colormap set for this ScalarMappable. There is one special case, for handling images that are already rgb or rgba, such as might have been read from an image file. If x is an ndarray with 3 dimensions, and the last dimension is either 3 or 4, then it will be treated as an rgb or rgba array, and no mapping will be done. The array can be uint8, or it can be floating point with values in the 0-1 range; otherwise a ValueError will be raised. If it is a masked array, the mask will be ignored. If the last dimension is 3, the alpha kwarg (defaulting to 1) will be used to fill in the transparency. If the last dimension is 4, the alpha kwarg is ignored; it does not replace the pre-existing alpha. A ValueError will be raised if the third dimension is other than 3 or 4. In either case, if bytes is False (default), the rgba array will be floats in the 0-1 range; if it is True, the returned rgba array will be uint8 in the 0 to 255 range. If norm is False, no normalization of the input data is performed, and it is assumed to be in the range (0-1). 
+   update(props)[source]
+ 
+Update this artist's properties from the dict props.  Parameters 
+ 
+propsdict
+
+   
+   update_from(other)[source]
+ 
+Copy properties from other to self. 
+   update_scalarmappable()[source]
+ 
+Update colors from the scalar mappable array, if any. Assign colors to edges and faces based on the array and/or colors that were directly set, as appropriate. 
+   zorder=0

@@ -1,0 +1,7 @@
+# 882
+Task: 882
+
+# Write a function to caluclate perimeter of a parallelogram.
+def parallelogram_perimeter(b,h):
+  perimeter=2*(b*h)
+  return perimeter

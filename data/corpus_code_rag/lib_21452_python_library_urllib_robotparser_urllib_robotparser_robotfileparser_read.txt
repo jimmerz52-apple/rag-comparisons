@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.read
+
+read()  
+Reads the robots.txt URL and feeds it to the parser.

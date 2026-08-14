@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.CertificateError
+
+exception ssl.CertificateError  
+An alias for SSLCertVerificationError.  Changed in version 3.7: The exception is now an alias for SSLCertVerificationError.

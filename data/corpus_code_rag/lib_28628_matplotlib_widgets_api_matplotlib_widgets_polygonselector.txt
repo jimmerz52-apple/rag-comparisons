@@ -1,0 +1,39 @@
+# matplotlib.widgets_api#matplotlib.widgets.PolygonSelector
+
+classmatplotlib.widgets.PolygonSelector(ax, onselect, useblit=False, props=None, handle_props=None, grab_range=10)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Select a polygon region of an axes. Place vertices with each mouse click, and make the selection by completing the polygon (clicking on the first vertex). Once drawn individual vertices can be moved by clicking and dragging with the left mouse button, or removed by clicking the right mouse button. In addition, the following modifier keys can be used:  Hold ctrl and click and drag a vertex to reposition it before the polygon has been completed. Hold the shift key and click and drag anywhere in the axes to move all vertices. Press the esc key to start a new polygon.  For the selector to remain responsive you must keep a reference to it.  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+onselectfunction
+
+
+When a polygon is completed or modified after completion, the onselect function is called and passed a list of the vertices as (xdata, ydata) tuples.  
+useblitbool, default: False
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  
+propsdict, optional
+
+
+Properties with which the line is drawn, see matplotlib.lines.Line2D for valid properties. Default: dict(color='k', linestyle='-', linewidth=2, alpha=0.5)  
+handle_propsdict, optional
+
+
+Artist properties for the markers drawn at the vertices of the polygon. See the marker arguments in matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams except for the default value of markeredgecolor which will be the same as the color property in props.  
+grab_rangefloat, default: 10
+
+
+A vertex is selected (to complete the polygon or to move a vertex) if the mouse click is within grab_range pixels of the vertex.     Notes If only one point remains after removing points, the selector reverts to an incomplete state and you can start drawing a new polygon from the existing point. Examples Polygon Selector   propertyline[source]
+
+   onmove(event)[source]
+ 
+Cursor move event handler and validator. 
+   propertyvertex_select_radius[source]
+
+   propertyverts
+ 
+The polygon vertices, as a list of (x, y) pairs.

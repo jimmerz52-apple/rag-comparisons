@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.get_internal_type
+
+get_internal_type()  
+Returns a string naming this field for backend specific purposes. By default, it returns the class name. See Emulating built-in field types for usage in custom fields.

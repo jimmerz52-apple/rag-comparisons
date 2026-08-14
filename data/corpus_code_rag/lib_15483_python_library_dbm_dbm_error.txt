@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.error
+
+exception dbm.error  
+A tuple containing the exceptions that can be raised by each of the supported modules, with a unique exception also named dbm.error as the first item — the latter is used when dbm.error is raised.

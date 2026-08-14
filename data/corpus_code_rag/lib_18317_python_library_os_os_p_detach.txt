@@ -1,0 +1,5 @@
+# python.library.os#os.P_DETACH
+
+os.P_DETACH  
+os.P_OVERLAY  
+Possible values for the mode parameter to the spawn* family of functions. These are less portable than those listed above. P_DETACH is similar to P_NOWAIT, but the new process is detached from the console of the calling process. If P_OVERLAY is used, the current process will be replaced; the spawn* function will not return. Availability: Windows.

@@ -1,0 +1,13 @@
+# pygame.ref.midi#pygame.midi.get_device_info
+
+pygame.midi.get_device_info() 
+ returns information about a midi device get_device_info(an_id) -> (interf, name, input, output, opened) get_device_info(an_id) -> None  Gets the device info for a given id.     
+Parameters:
+
+an_id (int) -- id of the midi device being queried  
+Returns:
+if the id is out of range None is returned, otherwise a tuple of (interf, name, input, output, opened) is returned. 
+ interf: string describing the device interface (e.g. 'ALSA') name: string name of the device (e.g. 'Midi Through Port-0') input: 1 if the device is an input device, otherwise 0 output: 1 if the device is an output device, otherwise 0 opened: 1 if the device is opened, otherwise 0  
+   
+Return type:
+tuple or None

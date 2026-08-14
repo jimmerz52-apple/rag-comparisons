@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axisartisthelper#mpl_toolkits.axisartist.axislines.AxisArtistHelper.Floating
+
+classFloating(nth_coord, value)[source]
+ 
+Bases: mpl_toolkits.axisartist.axislines.AxisArtistHelper._Base   get_line(axes)[source]
+
+   get_nth_coord()[source]

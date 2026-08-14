@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.dateparse.parse_date
+
+parse_date(value)  
+Parses a string and returns a datetime.date.

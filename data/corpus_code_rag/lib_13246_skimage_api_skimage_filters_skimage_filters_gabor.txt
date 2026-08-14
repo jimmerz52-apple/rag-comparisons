@@ -1,0 +1,54 @@
+# skimage.api.skimage.filters#skimage.filters.gabor
+
+skimage.filters.gabor(image, frequency, theta=0, bandwidth=1, sigma_x=None, sigma_y=None, n_stds=3, offset=0, mode='reflect', cval=0) [source]
+ 
+Return real and imaginary responses to Gabor filter. The real and imaginary parts of the Gabor filter kernel are applied to the image and the response is returned as a pair of arrays. Gabor filter is a linear filter with a Gaussian kernel which is modulated by a sinusoidal plane wave. Frequency and orientation representations of the Gabor filter are similar to those of the human visual system. Gabor filter banks are commonly used in computer vision and image processing. They are especially suitable for edge detection and texture classification.  Parameters 
+ 
+image2-D array 
+
+Input image.  
+frequencyfloat 
+
+Spatial frequency of the harmonic function. Specified in pixels.  
+thetafloat, optional 
+
+Orientation in radians. If 0, the harmonic is in the x-direction.  
+bandwidthfloat, optional 
+
+The bandwidth captured by the filter. For fixed bandwidth, sigma_x and sigma_y will decrease with increasing frequency. This value is ignored if sigma_x and sigma_y are set by the user.  
+sigma_x, sigma_yfloat, optional 
+
+Standard deviation in x- and y-directions. These directions apply to the kernel before rotation. If theta = pi/2, then the kernel is rotated 90 degrees so that sigma_x controls the vertical direction.  
+n_stdsscalar, optional 
+
+The linear size of the kernel is n_stds (3 by default) standard deviations.  
+offsetfloat, optional 
+
+Phase offset of harmonic function in radians.  
+mode{‘constant’, ‘nearest’, ‘reflect’, ‘mirror’, ‘wrap’}, optional 
+
+Mode used to convolve image with a kernel, passed to ndi.convolve  
+cvalscalar, optional 
+
+Value to fill past edges of input if mode of convolution is ‘constant’. The parameter is passed to ndi.convolve.    Returns 
+ 
+real, imagarrays 
+
+Filtered images using the real and imaginary parts of the Gabor filter kernel. Images are of the same dimensions as the input one.     References  
+1  
+https://en.wikipedia.org/wiki/Gabor_filter  
+2  
+https://web.archive.org/web/20180127125930/http://mplab.ucsd.edu/tutorials/gabor.pdf   Examples >>> from skimage.filters import gabor
+>>> from skimage import data, io
+>>> from matplotlib import pyplot as plt  
+ >>> image = data.coins()
+>>> # detecting edges in a coin image
+>>> filt_real, filt_imag = gabor(image, frequency=0.6)
+>>> plt.figure()            
+>>> io.imshow(filt_real)    
+>>> io.show()               
+ >>> # less sensitivity to finer details with the lower frequency kernel
+>>> filt_real, filt_imag = gabor(image, frequency=0.1)
+>>> plt.figure()            
+>>> io.imshow(filt_real)    
+>>> io.show()

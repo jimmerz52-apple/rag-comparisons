@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.lt
+
+lt(other) → Tensor  
+See torch.lt().

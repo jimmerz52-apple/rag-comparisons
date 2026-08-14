@@ -1,0 +1,7 @@
+# torch.tensors#torch.Tensor.select
+
+select(dim, index) → Tensor  
+Slices the self tensor along the selected dimension at the given index. This function returns a view of the original tensor with the given dimension removed.  Parameters 
+ 
+dim (int) – the dimension to slice 
+index (int) – the index to select with     Note select() is equivalent to slicing. For example, tensor.select(0, index) is equivalent to tensor[index] and tensor.select(2, index) is equivalent to tensor[:,:,index].

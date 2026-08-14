@@ -1,0 +1,24 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_ticklabels
+
+matplotlib.axis.Axis.get_ticklabels   Axis.get_ticklabels(minor=False, which=None)[source]
+ 
+Get this Axis' tick labels.  Parameters 
+ 
+minorbool
+
+
+Whether to return the minor or the major ticklabels.  
+whichNone, ('minor', 'major', 'both')
+
+
+Overrides minor. Selects which ticklabels to return    Returns 
+ list of Text
+
+   Notes The tick label strings are not populated until a draw method has been called. See also: draw and draw. 
+  Examples using matplotlib.axis.Axis.get_ticklabels
+ 
+   Image Masked   
+
+   Fig Axes Customize Simple   
+
+   Artist tutorial

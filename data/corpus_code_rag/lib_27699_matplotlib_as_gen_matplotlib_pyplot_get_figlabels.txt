@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.get_figlabels
+
+matplotlib.pyplot.get_figlabels   matplotlib.pyplot.get_figlabels()[source]
+ 
+Return a list of existing figure labels.

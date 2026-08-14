@@ -1,0 +1,8 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.flatten_descr
+
+numpy.lib.recfunctions.flatten_descr(ndtype)[source]
+ 
+Flatten a structured data-type description. Examples >>> from numpy.lib import recfunctions as rfn
+>>> ndtype = np.dtype([('a', '<i4'), ('b', [('ba', '<f8'), ('bb', '<i4')])])
+>>> rfn.flatten_descr(ndtype)
+(('a', dtype('int32')), ('ba', dtype('float64')), ('bb', dtype('int32')))

@@ -1,0 +1,3 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.FigureCanvasPgf.get_renderer
+
+get_renderer()[source]

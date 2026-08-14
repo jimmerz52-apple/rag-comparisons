@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.connectionstyle#matplotlib.patches.ConnectionStyle.Arc3
+
+classArc3(rad=0.0)[source]
+ 
+Bases: matplotlib.patches.ConnectionStyle._Base Creates a simple quadratic Bezier curve between two points. The curve is created so that the middle control point (C1) is located at the same distance from the start (C0) and end points(C2) and the distance of the C1 to the line connecting C0-C2 is rad times the distance of C0-C2.  rad
+
+curvature of the curve.     connect(posA, posB)[source]

@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.Length
+
+class Length(expression, spheroid=True, **extra)

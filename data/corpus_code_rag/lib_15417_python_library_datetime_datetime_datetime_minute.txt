@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.minute
+
+datetime.minute  
+In range(60).

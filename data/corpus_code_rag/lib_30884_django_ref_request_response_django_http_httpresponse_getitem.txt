@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.__getitem__
+
+HttpResponse.__getitem__(header)  
+Returns the value for the given header name. Case-insensitive.

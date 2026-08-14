@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.get_content_charset
+
+get_content_charset(failobj=None)  
+Return the charset parameter of the Content-Type header, coerced to lower case. If there is no Content-Type header, or if that header has no charset parameter, failobj is returned.

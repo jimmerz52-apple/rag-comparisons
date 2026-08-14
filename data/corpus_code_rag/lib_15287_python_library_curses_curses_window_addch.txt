@@ -1,0 +1,5 @@
+# python.library.curses#curses.window.addch
+
+window.addch(ch[, attr])  
+window.addch(y, x, ch[, attr])  
+Paint character ch at (y, x) with attributes attr, overwriting any character previously painted at that location. By default, the character position and attributes are the current settings for the window object.  Note Writing outside the window, subwindow, or pad raises a curses.error. Attempting to write to the lower right corner of a window, subwindow, or pad will cause an exception to be raised after the character is printed.

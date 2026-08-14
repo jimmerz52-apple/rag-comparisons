@@ -1,0 +1,4 @@
+# python.library.readline#readline.get_line_buffer
+
+readline.get_line_buffer()  
+Return the current contents of the line buffer (rl_line_buffer in the underlying library).

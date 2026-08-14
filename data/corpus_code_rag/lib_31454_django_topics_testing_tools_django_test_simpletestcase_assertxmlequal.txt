@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertXMLEqual
+
+SimpleTestCase.assertXMLEqual(xml1, xml2, msg=None)  
+Asserts that the strings xml1 and xml2 are equal. The comparison is based on XML semantics. Similarly to assertHTMLEqual(), the comparison is made on parsed content, hence only semantic differences are considered, not syntax differences. When invalid XML is passed in any parameter, an AssertionError is always raised, even if both strings are identical. XML declaration, document type, processing instructions, and comments are ignored. Only the root element and its children are compared. Output in case of error can be customized with the msg argument.

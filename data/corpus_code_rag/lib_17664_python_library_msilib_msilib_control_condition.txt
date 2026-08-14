@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Control.condition
+
+condition(action, condition)  
+Make an entry into the ControlCondition table for this control.

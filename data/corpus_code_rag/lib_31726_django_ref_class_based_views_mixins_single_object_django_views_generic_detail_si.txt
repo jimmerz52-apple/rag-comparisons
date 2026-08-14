@@ -1,0 +1,6 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.get_context_data
+
+get_context_data(**kwargs)  
+Returns context data for displaying the object. The base implementation of this method requires that the self.object attribute be set by the view (even if None). Be sure to do this if you are using this mixin without one of the built-in views that does so. It returns a dictionary with these contents:  
+object: The object that this view is displaying (self.object). 
+context_object_name: self.object will also be stored under the name returned by get_context_object_name(), which defaults to the lowercased version of the model name.   Context variables override values from template context processors Any variables from get_context_data() take precedence over context variables from context processors. For example, if your view sets the model attribute to User, the default context object name of user would override the user variable from the django.contrib.auth.context_processors.auth() context processor. Use get_context_object_name() to avoid a clash.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.HAVE_DOCSTRINGS
+
+test.support.HAVE_DOCSTRINGS  
+Check for presence of docstrings.

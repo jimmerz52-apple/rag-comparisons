@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPHandler
+
+class urllib.request.HTTPHandler  
+A class to handle opening of HTTP URLs.

@@ -1,0 +1,4 @@
+# python.library.exceptions#SystemExit.code
+
+code  
+The exit status or error message that is passed to the constructor. (Defaults to None.)

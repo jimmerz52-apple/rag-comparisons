@@ -1,0 +1,7 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Operator
+
+classmatplotlib.backends.backend_pdf.Operator(op)[source]
+ 
+Bases: object PDF operator object.   op
+
+   pdfRepr()[source]

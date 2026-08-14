@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.patch3d#mpl_toolkits.mplot3d.art3d.Patch3D.get_path
+
+get_path()[source]
+ 
+Return the path of this patch.

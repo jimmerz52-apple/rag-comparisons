@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.set_height_ratios
+
+set_height_ratios(height_ratios)[source]
+ 
+Set the relative heights of the rows. height_ratios must be of length nrows. Each row gets a relative height of height_ratios[i] / sum(height_ratios).

@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Event.elapsed_time
+
+elapsed_time(end_event) [source]
+ 
+Returns the time elapsed in milliseconds after the event was recorded and before the end_event was recorded.

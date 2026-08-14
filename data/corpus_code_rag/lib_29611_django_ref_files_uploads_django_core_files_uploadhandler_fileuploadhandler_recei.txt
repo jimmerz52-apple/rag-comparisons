@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadhandler.FileUploadHandler.receive_data_chunk
+
+FileUploadHandler.receive_data_chunk(raw_data, start)  
+Receives a “chunk” of data from the file upload. raw_data is a bytestring containing the uploaded data. start is the position in the file where this raw_data chunk begins. The data you return will get fed into the subsequent upload handlers’ receive_data_chunk methods. In this way, one handler can be a “filter” for other handlers. Return None from receive_data_chunk to short-circuit remaining upload handlers from getting this chunk. This is useful if you’re storing the uploaded data yourself and don’t want future handlers to store a copy of the data. If you raise a StopUpload or a SkipFile exception, the upload will abort or the file will be completely skipped.

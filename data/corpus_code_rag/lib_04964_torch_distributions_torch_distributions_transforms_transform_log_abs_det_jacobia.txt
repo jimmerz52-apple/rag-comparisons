@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.Transform.log_abs_det_jacobian
+
+log_abs_det_jacobian(x, y) [source]
+ 
+Computes the log det jacobian log |dy/dx| given input and output.

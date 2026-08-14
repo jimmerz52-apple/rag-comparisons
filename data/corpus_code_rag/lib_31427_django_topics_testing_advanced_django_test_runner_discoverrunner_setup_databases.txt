@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.setup_databases
+
+DiscoverRunner.setup_databases(**kwargs)  
+Creates the test databases by calling setup_databases().

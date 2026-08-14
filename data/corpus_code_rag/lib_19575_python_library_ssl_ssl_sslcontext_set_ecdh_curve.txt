@@ -1,0 +1,6 @@
+# python.library.ssl#ssl.SSLContext.set_ecdh_curve
+
+SSLContext.set_ecdh_curve(curve_name)  
+Set the curve name for Elliptic Curve-based Diffie-Hellman (ECDH) key exchange. ECDH is significantly faster than regular DH while arguably as secure. The curve_name parameter should be a string describing a well-known elliptic curve, for example prime256v1 for a widely supported curve. This setting doesn’t apply to client sockets. You can also use the OP_SINGLE_ECDH_USE option to further improve security. This method is not available if HAS_ECDH is False.  New in version 3.3.   See also  SSL/TLS & Perfect Forward Secrecy
+
+Vincent Bernat.

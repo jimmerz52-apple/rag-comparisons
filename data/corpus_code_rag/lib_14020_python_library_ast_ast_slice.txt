@@ -1,0 +1,11 @@
+# python.library.ast#ast.Slice
+
+class ast.Slice(lower, upper, step)  
+Regular slicing (on the form lower:upper or lower:upper:step). Can occur only inside the slice field of Subscript, either directly or as an element of Tuple. >>> print(ast.dump(ast.parse('l[1:2]', mode='eval'), indent=4))
+Expression(
+    body=Subscript(
+        value=Name(id='l', ctx=Load()),
+        slice=Slice(
+            lower=Constant(value=1),
+            upper=Constant(value=2)),
+        ctx=Load()))

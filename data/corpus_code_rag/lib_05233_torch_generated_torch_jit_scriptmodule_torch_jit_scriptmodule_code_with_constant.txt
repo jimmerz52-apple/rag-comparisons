@@ -1,0 +1,4 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.code_with_constants
+
+property code_with_constants  
+Returns a tuple of: [0] a pretty-printed representation (as valid Python syntax) of the internal graph for the forward method. See code. [1] a ConstMap following the CONSTANT.cN format of the output in [0]. The indices in the [0] output are keys to the underlying constant’s values. See Inspecting Code for details.

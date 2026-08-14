@@ -1,0 +1,4 @@
+# python.library.unittest.mock#unittest.mock.Mock.__dir__
+
+__dir__()  
+Mock objects limit the results of dir(some_mock) to useful results. For mocks with a spec this includes all the permitted attributes for the mock. See FILTER_DIR for what this filtering does, and how to switch it off.

@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.get_descent
+
+get_descent() 
+ get the descent of the font get_descent() -> int  Return the height in pixels for the font descent. The descent is the number of pixels from the font baseline to the bottom of the font.

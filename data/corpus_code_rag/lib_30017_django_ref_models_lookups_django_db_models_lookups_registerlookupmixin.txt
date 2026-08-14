@@ -1,0 +1,15 @@
+# django.ref.models.lookups#django.db.models.lookups.RegisterLookupMixin
+
+class lookups.RegisterLookupMixin  
+A mixin that implements the lookup API on a class.  
+classmethod register_lookup(lookup, lookup_name=None)  
+Registers a new lookup in the class. For example DateField.register_lookup(YearExact) will register YearExact lookup on DateField. It overrides a lookup that already exists with the same name. lookup_name will be used for this lookup if provided, otherwise lookup.lookup_name will be used. 
+  
+get_lookup(lookup_name)  
+Returns the Lookup named lookup_name registered in the class. The default implementation looks recursively on all parent classes and checks if any has a registered lookup named lookup_name, returning the first match. 
+  
+get_lookups()  
+Returns a dictionary of each lookup name registered in the class mapped to the Lookup class. 
+  
+get_transform(transform_name)  
+Returns a Transform named transform_name. The default implementation looks recursively on all parent classes to check if any has the registered transform named transform_name, returning the first match.

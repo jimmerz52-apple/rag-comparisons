@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.is_char_device
+
+Path.is_char_device()  
+Return True if the path points to a character device (or a symbolic link pointing to a character device), False if it points to another kind of file. False is also returned if the path doesn’t exist or is a broken symlink; other errors (such as permission errors) are propagated.

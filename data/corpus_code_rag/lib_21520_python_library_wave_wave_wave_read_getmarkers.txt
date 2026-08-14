@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getmarkers
+
+Wave_read.getmarkers()  
+Returns None.

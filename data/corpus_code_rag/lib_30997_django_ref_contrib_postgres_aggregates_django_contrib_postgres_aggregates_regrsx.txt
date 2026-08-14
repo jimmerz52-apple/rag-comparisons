@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.RegrSXX
+
+class RegrSXX(y, x, filter=None, default=None)  
+Returns sum(x^2) - sum(x)^2/N (“sum of squares” of the independent variable) as a float, or default if there aren’t any matching rows.

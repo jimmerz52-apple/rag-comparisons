@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.hasnans
+
+pandas.Series.hasnans   propertySeries.hasnans
+ 
+Return True if there are any NaNs. Enables various performance speedups.

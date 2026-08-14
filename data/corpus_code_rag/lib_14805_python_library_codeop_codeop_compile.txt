@@ -1,0 +1,4 @@
+# python.library.codeop#codeop.Compile
+
+class codeop.Compile  
+Instances of this class have __call__() methods identical in signature to the built-in function compile(), but with the difference that if the instance compiles program text containing a __future__ statement, the instance ‘remembers’ and compiles all subsequent program texts with the statement in force.

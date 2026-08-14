@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_empty
+
+get_empty() 
+ False if a cdrom is in the drive get_empty() -> bool  Return False if there is a cdrom currently in the drive. If the drive is empty this will return True.

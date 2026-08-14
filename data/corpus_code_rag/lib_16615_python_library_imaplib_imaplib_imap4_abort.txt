@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.abort
+
+exception IMAP4.abort  
+IMAP4 server errors cause this exception to be raised. This is a sub-class of IMAP4.error. Note that closing the instance and instantiating a new one will usually allow recovery from this exception.

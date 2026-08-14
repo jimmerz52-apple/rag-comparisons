@@ -1,0 +1,4 @@
+# python.library.types#types.resolve_bases
+
+types.resolve_bases(bases)  
+Resolve MRO entries dynamically as specified by PEP 560. This function looks for items in bases that are not instances of type, and returns a tuple where each such object that has an __mro_entries__ method is replaced with an unpacked result of calling this method. If a bases item is an instance of type, or it doesn’t have an __mro_entries__ method, then it is included in the return tuple unchanged.  New in version 3.7.

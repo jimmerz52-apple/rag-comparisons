@@ -1,0 +1,3 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.FigureCanvasAgg.print_rgba
+
+print_rgba(filename_or_obj, *args)[source]

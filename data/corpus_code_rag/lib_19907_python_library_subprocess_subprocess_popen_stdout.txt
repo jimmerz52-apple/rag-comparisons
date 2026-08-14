@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.stdout
+
+Popen.stdout  
+If the stdout argument was PIPE, this attribute is a readable stream object as returned by open(). Reading from the stream provides output from the child process. If the encoding or errors arguments were specified or the universal_newlines argument was True, the stream is a text stream, otherwise it is a byte stream. If the stdout argument was not PIPE, this attribute is None.

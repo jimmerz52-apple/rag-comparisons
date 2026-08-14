@@ -1,0 +1,4 @@
+# python.library.io#io.UnsupportedOperation
+
+exception io.UnsupportedOperation  
+An exception inheriting OSError and ValueError that is raised when an unsupported operation is called on a stream.

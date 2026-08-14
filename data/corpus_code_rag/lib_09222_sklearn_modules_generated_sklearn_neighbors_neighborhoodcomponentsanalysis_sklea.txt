@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.neighbors.neighborhoodcomponentsanalysis#sklearn.neighbors.NeighborhoodComponentsAnalysis.transform
+
+transform(X) [source]
+ 
+Applies the learned transformation to the given data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Data samples.    Returns 
+ X_embedded: ndarray of shape (n_samples, n_components)
+
+The data samples transformed.    Raises 
+ NotFittedError
+
+If fit has not been called before.

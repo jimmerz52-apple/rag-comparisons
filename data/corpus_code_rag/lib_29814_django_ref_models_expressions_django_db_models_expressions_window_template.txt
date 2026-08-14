@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.expressions.Window.template
+
+template  
+Defaults to %(expression)s OVER (%(window)s)'. If only the expression argument is provided, the window clause will be blank.

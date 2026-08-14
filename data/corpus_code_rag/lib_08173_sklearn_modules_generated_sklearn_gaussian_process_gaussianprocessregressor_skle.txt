@@ -1,0 +1,22 @@
+# sklearn.modules.generated.sklearn.gaussian_process.gaussianprocessregressor#sklearn.gaussian_process.GaussianProcessRegressor.log_marginal_likelihood
+
+log_marginal_likelihood(theta=None, eval_gradient=False, clone_kernel=True) [source]
+ 
+Returns log-marginal likelihood of theta for training data.  Parameters 
+ 
+thetaarray-like of shape (n_kernel_params,) default=None 
+
+Kernel hyperparameters for which the log-marginal likelihood is evaluated. If None, the precomputed log_marginal_likelihood of self.kernel_.theta is returned.  
+eval_gradientbool, default=False 
+
+If True, the gradient of the log-marginal likelihood with respect to the kernel hyperparameters at position theta is returned additionally. If True, theta must not be None.  
+clone_kernelbool, default=True 
+
+If True, the kernel attribute is copied. If False, the kernel attribute is modified, but may result in a performance improvement.    Returns 
+ 
+log_likelihoodfloat 
+
+Log-marginal likelihood of theta for training data.  
+log_likelihood_gradientndarray of shape (n_kernel_params,), optional 
+
+Gradient of the log-marginal likelihood with respect to the kernel hyperparameters at position theta. Only returned when eval_gradient is True.

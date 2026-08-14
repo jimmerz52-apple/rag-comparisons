@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.TimerHandle.when
+
+when()  
+Return a scheduled callback time as float seconds. The time is an absolute timestamp, using the same time reference as loop.time().  New in version 3.7.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.checksizeof
+
+test.support.checksizeof(test, o, size)  
+For testcase test, assert that the sys.getsizeof for o plus the GC header size equals size.

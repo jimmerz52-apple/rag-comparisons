@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_transform_rotates_text
+
+get_transform_rotates_text()[source]
+ 
+Return whether rotations of the transform affect the text direction.

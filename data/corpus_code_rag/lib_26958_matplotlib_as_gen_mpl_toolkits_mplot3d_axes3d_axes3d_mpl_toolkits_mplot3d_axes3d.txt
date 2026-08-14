@@ -1,0 +1,24 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.plot3D
+
+plot3D(xs, ys, *args, zdir='z', **kwargs)[source]
+ 
+Plot 2D or 3D data.  Parameters 
+ 
+xs1D array-like
+
+
+x coordinates of vertices.  
+ys1D array-like
+
+
+y coordinates of vertices.  
+zsfloat or 1D array-like
+
+
+z coordinates of vertices; either one for all points or one for each point.  
+zdir{'x', 'y', 'z'}, default: 'z'
+
+
+When plotting 2D data, the direction to use as z ('x', 'y' or 'z').  **kwargs
+
+Other arguments are forwarded to matplotlib.axes.Axes.plot.

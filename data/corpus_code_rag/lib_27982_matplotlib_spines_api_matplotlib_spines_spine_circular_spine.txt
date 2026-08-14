@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.circular_spine
+
+classmethodcircular_spine(axes, center, radius, **kwargs)[source]
+ 
+Create and return a circular Spine.

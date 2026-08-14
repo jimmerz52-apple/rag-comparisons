@@ -1,0 +1,32 @@
+# matplotlib.testing_api#matplotlib.testing.compare.compare_images
+
+matplotlib.testing.compare.compare_images(expected, actual, tol, in_decorator=False)[source]
+ 
+Compare two "image" files checking differences within a tolerance. The two given filenames may point to files which are convertible to PNG via the converter dictionary. The underlying RMS is calculated with the calculate_rms function.  Parameters 
+ 
+expectedstr
+
+
+The filename of the expected image.  
+actualstr
+
+
+The filename of the actual image.  
+tolfloat
+
+
+The tolerance (a color value difference, where 255 is the maximal difference). The test fails if the average pixel difference is greater than this value.  
+in_decoratorbool
+
+
+Determines the output format. If called from image_comparison decorator, this should be True. (default=False)    Returns 
+ None or dict or str
+
+Return None if the images are equal within the given tolerance. If the images differ, the return value depends on in_decorator. If in_decorator is true, a dict with the following entries is returned:  
+rms: The RMS of the image difference. 
+expected: The filename of the expected image. 
+actual: The filename of the actual image. 
+diff_image: The filename of the difference image. 
+tol: The comparison tolerance.  Otherwise, a human-readable multi-line string representation of this information is returned.     Examples img1 = "./baseline/plot.png"
+img2 = "./output/plot.png"
+compare_images(img1, img2, 0.001)

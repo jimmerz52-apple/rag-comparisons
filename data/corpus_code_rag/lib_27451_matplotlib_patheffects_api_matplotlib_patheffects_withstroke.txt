@@ -1,0 +1,10 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.withStroke
+
+classmatplotlib.patheffects.withStroke(offset=(0, 0), **kwargs)[source]
+ 
+Bases: matplotlib.patheffects.Stroke A shortcut PathEffect for applying Stroke and then drawing the original Artist. With this class you can use artist.set_path_effects([path_effects.withStroke()])
+ as a shortcut for artist.set_path_effects([path_effects.Stroke(),
+                         path_effects.Normal()])
+ The path will be stroked with its gc updated with the given keyword arguments, i.e., the keyword arguments should be valid gc parameter values.   draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Draw the path with updated gc.

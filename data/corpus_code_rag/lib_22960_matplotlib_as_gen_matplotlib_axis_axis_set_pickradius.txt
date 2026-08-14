@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_pickradius
+
+matplotlib.axis.Axis.set_pickradius   Axis.set_pickradius(pickradius)[source]
+ 
+Set the depth of the axis used by the picker.  Parameters 
+ 
+pickradiusfloat

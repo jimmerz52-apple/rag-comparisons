@@ -1,0 +1,5 @@
+# sklearn.modules.generated.sklearn.show_versions#sklearn.show_versions
+
+sklearn.show_versions() [source]
+ 
+Print useful debugging information”  New in version 0.20.

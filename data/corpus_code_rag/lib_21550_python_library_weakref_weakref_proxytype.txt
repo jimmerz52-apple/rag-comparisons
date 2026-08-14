@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.ProxyType
+
+weakref.ProxyType  
+The type object for proxies of objects which are not callable.

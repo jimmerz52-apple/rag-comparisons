@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourceFileLoader.path_stats
+
+path_stats(path)  
+Concrete implementation of importlib.abc.SourceLoader.path_stats().

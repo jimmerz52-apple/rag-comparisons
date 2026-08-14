@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.DefaultHandlerExpand
+
+xmlparser.DefaultHandlerExpand(data)  
+This is the same as the DefaultHandler(), but doesn’t inhibit expansion of internal entities. The entity reference will not be passed to the default handler.

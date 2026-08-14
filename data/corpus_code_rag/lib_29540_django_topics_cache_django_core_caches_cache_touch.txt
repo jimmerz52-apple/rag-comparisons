@@ -1,0 +1,3 @@
+# django.topics.cache#django.core.caches.cache.touch
+
+cache.touch(key, timeout=DEFAULT_TIMEOUT, version=None)

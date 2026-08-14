@@ -1,0 +1,9 @@
+# torch.distributions#torch.distributions.distribution.Distribution.expand
+
+expand(batch_shape, _instance=None) [source]
+ 
+Returns a new distribution instance (or populates an existing instance provided by a derived class) with batch dimensions expanded to batch_shape. This method calls expand on the distribution’s parameters. As such, this does not allocate new memory for the expanded distribution instance. Additionally, this does not repeat any args checking or parameter broadcasting in __init__.py, when an instance is first created.  Parameters 
+ 
+batch_shape (torch.Size) – the desired expanded size. 
+_instance – new instance provided by subclasses that need to override .expand.   Returns 
+New distribution instance with batch dimensions expanded to batch_size.

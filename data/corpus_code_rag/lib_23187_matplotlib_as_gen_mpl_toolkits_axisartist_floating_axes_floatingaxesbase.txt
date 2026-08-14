@@ -1,0 +1,12 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.floating_axes.floatingaxesbase
+
+mpl_toolkits.axisartist.floating_axes.FloatingAxesBase   classmpl_toolkits.axisartist.floating_axes.FloatingAxesBase(*args, **kwargs)[source]
+ 
+Bases: object   adjust_axes_lim()[source]
+
+   cla()[source]
+
+ 
+  Examples using mpl_toolkits.axisartist.floating_axes.FloatingAxesBase
+ 
+   mpl_toolkits.axisartist.floating_axes features

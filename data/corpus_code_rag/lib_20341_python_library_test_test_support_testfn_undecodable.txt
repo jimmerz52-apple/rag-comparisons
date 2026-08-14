@@ -1,0 +1,4 @@
+# python.library.test#test.support.TESTFN_UNDECODABLE
+
+test.support.TESTFN_UNDECODABLE  
+Set to a filename (bytes type) that should not be able to be decoded by file system encoding in strict mode. It may be None if it’s not possible to generate such a filename.

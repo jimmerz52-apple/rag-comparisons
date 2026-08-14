@@ -1,0 +1,4 @@
+# python.library.os#os.WEXITSTATUS
+
+os.WEXITSTATUS(status)  
+Return the process exit status. This function should be employed only if WIFEXITED() is true. Availability: Unix.

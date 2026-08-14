@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.read
+
+read([n])  
+Return a bytes containing up to n bytes starting from the current file position. If the argument is omitted, None or negative, return all bytes from the current file position to the end of the mapping. The file position is updated to point after the bytes that were returned.  Changed in version 3.3: Argument can be omitted or None.

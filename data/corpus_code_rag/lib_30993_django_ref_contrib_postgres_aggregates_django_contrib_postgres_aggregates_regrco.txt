@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.RegrCount
+
+class RegrCount(y, x, filter=None)  
+Returns an int of the number of input rows in which both expressions are not null.  Note The default argument is not supported.

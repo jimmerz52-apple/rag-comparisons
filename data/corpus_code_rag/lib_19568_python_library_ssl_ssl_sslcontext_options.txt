@@ -1,0 +1,5 @@
+# python.library.ssl#ssl.SSLContext.options
+
+SSLContext.options  
+An integer representing the set of SSL options enabled on this context. The default value is OP_ALL, but you can specify other options such as OP_NO_SSLv2 by ORing them together.  Note With versions of OpenSSL older than 0.9.8m, it is only possible to set options, not to clear them. Attempting to clear an option (by resetting the corresponding bits) will raise a ValueError.   Changed in version 3.6: SSLContext.options returns Options flags: >>> ssl.create_default_context().options  
+<Options.OP_ALL|OP_NO_SSLv3|OP_NO_SSLv2|OP_NO_COMPRESSION: 2197947391>

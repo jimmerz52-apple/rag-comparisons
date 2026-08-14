@@ -1,0 +1,4 @@
+# python.library.test#test.support.modules_setup
+
+test.support.modules_setup()  
+Return a copy of sys.modules.

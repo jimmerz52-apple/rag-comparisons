@@ -1,0 +1,9 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontvariant
+
+set_fontvariant(variant)[source]
+ 
+Set the font variant.  Parameters 
+ 
+variant{'normal', 'small-caps'}
+
+    See also  font_manager.FontProperties.set_variant

@@ -1,0 +1,4 @@
+# torch.sparse#torch.Tensor.dense_dim
+
+dense_dim() → int  
+Return the number of dense dimensions in a sparse tensor self.  Warning Throws an error if self is not a sparse tensor.  See also Tensor.sparse_dim() and hybrid tensors.

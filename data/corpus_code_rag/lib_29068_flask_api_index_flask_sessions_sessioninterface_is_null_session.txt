@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.SessionInterface.is_null_session
+
+is_null_session(obj)  
+Checks if a given object is a null session. Null sessions are not asked to be saved. This checks if the object is an instance of null_session_class by default.  Parameters 
+obj (object) –   Return type 
+bool

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLError.reason
+
+reason  
+A string mnemonic designating the reason this error occurred, for example CERTIFICATE_VERIFY_FAILED. The range of possible values depends on the OpenSSL version.  New in version 3.3.

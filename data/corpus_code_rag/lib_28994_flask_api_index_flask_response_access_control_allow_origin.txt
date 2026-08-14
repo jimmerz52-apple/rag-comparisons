@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.access_control_allow_origin
+
+access_control_allow_origin  
+The origin or ‘*’ for any origin that may make cross origin requests.

@@ -1,0 +1,4 @@
+# torch.generated.torch.less_equal#torch.less_equal
+
+torch.less_equal(input, other, *, out=None) → Tensor  
+Alias for torch.le().

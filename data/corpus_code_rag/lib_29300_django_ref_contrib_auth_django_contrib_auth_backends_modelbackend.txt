@@ -1,0 +1,27 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.ModelBackend
+
+class ModelBackend  
+This is the default authentication backend used by Django. It authenticates using credentials consisting of a user identifier and password. For Django’s default user model, the user identifier is the username, for custom user models it is the field specified by USERNAME_FIELD (see Customizing Users and authentication). It also handles the default permissions model as defined for User and PermissionsMixin. has_perm(), get_all_permissions(), get_user_permissions(), and get_group_permissions() allow an object to be passed as a parameter for object-specific permissions, but this backend does not implement them other than returning an empty set of permissions if obj is not None. with_perm() also allows an object to be passed as a parameter, but unlike others methods it returns an empty queryset if obj is not None.  
+authenticate(request, username=None, password=None, **kwargs)  
+Tries to authenticate username with password by calling User.check_password. If no username is provided, it tries to fetch a username from kwargs using the key CustomUser.USERNAME_FIELD. Returns an authenticated user or None. request is an HttpRequest and may be None if it wasn’t provided to authenticate() (which passes it on to the backend). 
+  
+get_user_permissions(user_obj, obj=None)  
+Returns the set of permission strings the user_obj has from their own user permissions. Returns an empty set if is_anonymous or is_active is False. 
+  
+get_group_permissions(user_obj, obj=None)  
+Returns the set of permission strings the user_obj has from the permissions of the groups they belong. Returns an empty set if is_anonymous or is_active is False. 
+  
+get_all_permissions(user_obj, obj=None)  
+Returns the set of permission strings the user_obj has, including both user permissions and group permissions. Returns an empty set if is_anonymous or is_active is False. 
+  
+has_perm(user_obj, perm, obj=None)  
+Uses get_all_permissions() to check if user_obj has the permission string perm. Returns False if the user is not is_active. 
+  
+has_module_perms(user_obj, app_label)  
+Returns whether the user_obj has any permissions on the app app_label. 
+  
+user_can_authenticate()  
+Returns whether the user is allowed to authenticate. To match the behavior of AuthenticationForm which prohibits inactive users from logging in, this method returns False for users with is_active=False. Custom user models that don’t have an is_active field are allowed. 
+  
+with_perm(perm, is_active=True, include_superusers=True, obj=None)  
+Returns all active users who have the permission perm either in the form of "<app label>.<permission codename>" or a Permission instance. Returns an empty queryset if no users who have the perm found. If is_active is True (default), returns only active users, or if False, returns only inactive users. Use None to return all users irrespective of active state. If include_superusers is True (default), the result will include superusers.

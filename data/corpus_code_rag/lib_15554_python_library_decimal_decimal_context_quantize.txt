@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.quantize
+
+quantize(x, y)  
+Returns a value equal to x (rounded), having the exponent of y.

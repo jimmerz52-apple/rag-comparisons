@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.PlotPlugin.redraw
+
+redraw() [source]
+ 
+Redraw plot.

@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_longlong
+
+class ctypes.c_longlong  
+Represents the C signed long long datatype. The constructor accepts an optional integer initializer; no overflow checking is done.

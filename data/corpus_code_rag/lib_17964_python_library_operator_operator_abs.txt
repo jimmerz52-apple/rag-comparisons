@@ -1,0 +1,5 @@
+# python.library.operator#operator.abs
+
+operator.abs(obj)  
+operator.__abs__(obj)  
+Return the absolute value of obj.

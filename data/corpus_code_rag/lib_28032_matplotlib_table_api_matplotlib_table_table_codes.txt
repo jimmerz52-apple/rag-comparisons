@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Table.codes
+
+codes={'best': 0, 'bottom': 17, 'bottom left': 12, 'bottom right': 13, 'center': 9, 'center left': 5, 'center right': 6, 'left': 15, 'lower center': 7, 'lower left': 3, 'lower right': 4, 'right': 14, 'top': 16, 'top left': 11, 'top right': 10, 'upper center': 8, 'upper left': 2, 'upper right': 1}
+ 
+Possible values where to place the table relative to the Axes.

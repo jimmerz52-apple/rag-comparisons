@@ -1,0 +1,11 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolXScale
+
+classmatplotlib.backend_tools.ToolXScale(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.AxisScaleBase Tool to toggle between linear and logarithmic scales on the X axis.   default_keymap=['k', 'L']
+ 
+Keymap to associate with this tool. list[str]: List of keys that will trigger this tool when a keypress event is emitted on self.figure.canvas. 
+   description='Toggle scale X axis'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   set_scale(ax, scale)[source]

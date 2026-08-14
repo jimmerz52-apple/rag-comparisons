@@ -1,0 +1,13 @@
+# torch.distributed#torch.distributed.Store.set_timeout
+
+torch.distributed.Store.set_timeout(self: torch._C._distributed_c10d.Store, arg0: datetime.timedelta) → None  
+Sets the store’s default timeout. This timeout is used during initialization and in wait() and get().  Parameters 
+timeout (timedelta) – timeout to be set in the store.    Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> # Using TCPStore as an example, other store types can also be used
+>>> store = dist.TCPStore("127.0.0.1", 0, 1, True, timedelta(seconds=30))
+>>> store.set_timeout(timedelta(seconds=10))
+>>> # This will throw an exception after 10 seconds
+>>> store.wait(["bad_key"])

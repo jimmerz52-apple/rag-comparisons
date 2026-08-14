@@ -1,0 +1,6 @@
+# django.ref.templates.api#django.template.Template
+
+class Template  
+This class lives at django.template.Template. The constructor takes one argument — the raw template code: from django.template import Template
+
+template = Template("My name is {{ my_name }}.")

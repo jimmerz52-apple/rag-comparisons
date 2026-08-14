@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.wstring_at
+
+ctypes.wstring_at(address, size=-1)  
+This function returns the wide character string starting at memory address address as a string. If size is specified, it is used as the number of characters of the string, otherwise the string is assumed to be zero-terminated. Raises an auditing event ctypes.wstring_at with arguments address, size.

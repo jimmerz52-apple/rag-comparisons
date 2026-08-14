@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.handle_endtag
+
+HTMLParser.handle_endtag(tag)  
+This method is called to handle the end tag of an element (e.g. </div>). The tag argument is the name of the tag converted to lower case.

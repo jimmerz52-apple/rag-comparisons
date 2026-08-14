@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.as_file
+
+importlib.resources.as_file(traversable)  
+Given a importlib.resources.abc.Traversable object representing a file, typically from importlib.resources.files(), return a context manager for use in a with statement. The context manager provides a pathlib.Path object. Exiting the context manager cleans up any temporary file created when the resource was extracted from e.g. a zip file. Use as_file when the Traversable methods (read_text, etc) are insufficient and an actual file on the file system is required.  New in version 3.9.

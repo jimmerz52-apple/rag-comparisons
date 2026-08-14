@@ -1,0 +1,6 @@
+# python.library.collections#collections.UserDict
+
+class collections.UserDict([initialdata])  
+Class that simulates a dictionary. The instance’s contents are kept in a regular dictionary, which is accessible via the data attribute of UserDict instances. If initialdata is provided, data is initialized with its contents; note that a reference to initialdata will not be kept, allowing it be used for other purposes. In addition to supporting the methods and operations of mappings, UserDict instances provide the following attribute:  
+data  
+A real dictionary used to store the contents of the UserDict class.

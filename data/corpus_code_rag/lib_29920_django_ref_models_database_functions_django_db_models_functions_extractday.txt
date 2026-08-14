@@ -1,0 +1,5 @@
+# django.ref.models.database-functions#django.db.models.functions.ExtractDay
+
+class ExtractDay(expression, tzinfo=None, **extra)  
+ 
+lookup_name = 'day'

@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.midi_to_ansi_note
+
+pygame.midi.midi_to_ansi_note() 
+ Returns the Ansi Note name for a midi number. midi_to_ansi_note(midi_note) -> ansi_note  example: midi_to_ansi_note(21) == 'A0'  New in pygame 1.9.5.

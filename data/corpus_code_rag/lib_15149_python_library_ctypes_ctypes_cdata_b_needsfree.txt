@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes._CData._b_needsfree_
+
+_b_needsfree_  
+This read-only variable is true when the ctypes data instance has allocated the memory block itself, false otherwise.

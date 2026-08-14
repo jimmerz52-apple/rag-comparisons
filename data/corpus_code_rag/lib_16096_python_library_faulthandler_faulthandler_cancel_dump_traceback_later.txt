@@ -1,0 +1,4 @@
+# python.library.faulthandler#faulthandler.cancel_dump_traceback_later
+
+faulthandler.cancel_dump_traceback_later()  
+Cancel the last call to dump_traceback_later().

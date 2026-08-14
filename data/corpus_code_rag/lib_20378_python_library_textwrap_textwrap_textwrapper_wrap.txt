@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.wrap
+
+wrap(text)  
+Wraps the single paragraph in text (a string) so every line is at most width characters long. All wrapping options are taken from instance attributes of the TextWrapper instance. Returns a list of output lines, without final newlines. If the wrapped output has no content, the returned list is empty.

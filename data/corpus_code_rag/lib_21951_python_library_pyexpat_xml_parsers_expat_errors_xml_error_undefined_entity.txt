@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_UNDEFINED_ENTITY
+
+xml.parsers.expat.errors.XML_ERROR_UNDEFINED_ENTITY  
+A reference was made to an entity which was not defined.

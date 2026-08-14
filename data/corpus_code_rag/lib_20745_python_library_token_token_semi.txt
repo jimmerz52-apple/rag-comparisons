@@ -1,0 +1,4 @@
+# python.library.token#token.SEMI
+
+token.SEMI  
+Token value for ";".

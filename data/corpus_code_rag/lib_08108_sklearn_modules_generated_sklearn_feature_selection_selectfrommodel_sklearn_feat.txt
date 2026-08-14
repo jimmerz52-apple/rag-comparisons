@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_selection.selectfrommodel#sklearn.feature_selection.SelectFromModel.transform
+
+transform(X) [source]
+ 
+Reduce X to the selected features.  Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+X_rarray of shape [n_samples, n_selected_features] 
+
+The input samples with only the selected features.

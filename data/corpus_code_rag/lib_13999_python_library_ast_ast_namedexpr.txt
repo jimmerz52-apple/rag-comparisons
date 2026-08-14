@@ -1,0 +1,7 @@
+# python.library.ast#ast.NamedExpr
+
+class ast.NamedExpr(target, value)   A named expression. This AST node is produced by the assignment expressions operator (also known as the walrus operator). As opposed to the Assign node in which the first argument can be multiple nodes, in this case both target and value must be single nodes. >>> print(ast.dump(ast.parse('(x := 4)', mode='eval'), indent=4))
+Expression(
+    body=NamedExpr(
+        target=Name(id='x', ctx=Store()),
+        value=Constant(value=4)))

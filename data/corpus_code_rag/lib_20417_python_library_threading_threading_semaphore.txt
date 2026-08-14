@@ -1,0 +1,9 @@
+# python.library.threading#threading.Semaphore
+
+class threading.Semaphore(value=1)  
+This class implements semaphore objects. A semaphore manages an atomic counter representing the number of release() calls minus the number of acquire() calls, plus an initial value. The acquire() method blocks if necessary until it can return without making the counter negative. If not given, value defaults to 1. The optional argument gives the initial value for the internal counter; it defaults to 1. If the value given is less than 0, ValueError is raised.  Changed in version 3.3: changed from a factory function to a class.   
+acquire(blocking=True, timeout=None)  
+Acquire a semaphore. When invoked without arguments:  If the internal counter is larger than zero on entry, decrement it by one and return True immediately. If the internal counter is zero on entry, block until awoken by a call to release(). Once awoken (and the counter is greater than 0), decrement the counter by 1 and return True. Exactly one thread will be awoken by each call to release(). The order in which threads are awoken should not be relied on.  When invoked with blocking set to false, do not block. If a call without an argument would block, return False immediately; otherwise, do the same thing as when called without arguments, and return True. When invoked with a timeout other than None, it will block for at most timeout seconds. If acquire does not complete successfully in that interval, return False. Return True otherwise.  Changed in version 3.2: The timeout parameter is new.  
+  
+release(n=1)  
+Release a semaphore, incrementing the internal counter by n. When it was zero on entry and other threads are waiting for it to become larger than zero again, wake up n of those threads.  Changed in version 3.9: Added the n parameter to release multiple waiting threads at once.

@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.smtp_server
+
+smtp_server  
+Holds the SMTPServer that spawned this channel.

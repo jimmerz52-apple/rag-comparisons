@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredDirty.draw
+
+draw() 
+ draw all sprites in the right order onto the passed surface. draw(surface, bgd=None) -> Rect_list  You can pass the background too. If a background is already set, then the bgd argument has no effect.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.have_units
+
+matplotlib.artist.Artist.have_units   Artist.have_units()[source]
+ 
+Return whether units are set on any axis.

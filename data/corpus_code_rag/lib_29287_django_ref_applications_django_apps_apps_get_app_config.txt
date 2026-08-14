@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.apps.get_app_config
+
+apps.get_app_config(app_label)  
+Returns an AppConfig for the application with the given app_label. Raises LookupError if no such application exists.

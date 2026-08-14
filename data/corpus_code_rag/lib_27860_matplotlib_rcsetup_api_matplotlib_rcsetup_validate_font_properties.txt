@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_font_properties
+
+matplotlib.rcsetup.validate_font_properties(s)[source]

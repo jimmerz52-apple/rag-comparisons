@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.smtp_state
+
+smtp_state  
+Holds the current state of the channel. This will be either COMMAND initially and then DATA after the client sends a “DATA” line.

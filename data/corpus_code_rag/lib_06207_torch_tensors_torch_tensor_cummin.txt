@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cummin
+
+cummin(dim) -> (Tensor, Tensor)  
+See torch.cummin()

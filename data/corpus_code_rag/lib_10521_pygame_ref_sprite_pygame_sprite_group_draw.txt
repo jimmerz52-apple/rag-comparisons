@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Group.draw
+
+draw() 
+ blit the Sprite images draw(Surface) -> None  Draws the contained Sprites to the Surface argument. This uses the Sprite.image attribute for the source surface, and Sprite.rect for the position. The Group does not keep sprites in any order, so the draw order is arbitrary.

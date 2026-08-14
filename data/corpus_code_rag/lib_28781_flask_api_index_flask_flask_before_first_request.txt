@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.before_first_request
+
+before_first_request(f)  
+Registers a function to be run before the first request to this instance of the application. The function will be called without any arguments and its return value is ignored.  Changelog New in version 0.8.   Parameters 
+f (Callable[[], None]) –   Return type 
+Callable[[], None]

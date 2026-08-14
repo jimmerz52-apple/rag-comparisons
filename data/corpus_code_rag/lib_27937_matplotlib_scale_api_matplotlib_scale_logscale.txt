@@ -1,0 +1,34 @@
+# matplotlib.scale_api#matplotlib.scale.LogScale
+
+classmatplotlib.scale.LogScale(axis, *, base=10, subs=None, nonpositive='clip')[source]
+ 
+Bases: matplotlib.scale.ScaleBase A standard logarithmic scale. Care is taken to only plot positive values.  Parameters 
+ 
+axisAxis
+
+
+The axis for the scale.  
+basefloat, default: 10
+
+
+The base of the logarithm.  
+nonpositive{'clip', 'mask'}, default: 'clip'
+
+
+Determines the behavior for non-positive values. They can either be masked as invalid, or clipped to a very small positive number.  
+subssequence of int, default: None
+
+
+Where to place the subticks between each major tick. For example, in a log10 scale, [2, 3, 4, 5, 6, 7, 8, 9] will place 8 logarithmically spaced minor ticks between each major tick.       propertybase
+
+   get_transform()[source]
+ 
+Return the LogTransform associated with this scale. 
+   limit_range_for_scale(vmin, vmax, minpos)[source]
+ 
+Limit the domain to positive values. 
+   name='log'
+
+   set_default_locators_and_formatters(axis)[source]
+ 
+Set the locators and formatters of axis to instances suitable for this scale.

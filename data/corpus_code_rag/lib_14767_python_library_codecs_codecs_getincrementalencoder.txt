@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.getincrementalencoder
+
+codecs.getincrementalencoder(encoding)  
+Look up the codec for the given encoding and return its incremental encoder class or factory function. Raises a LookupError in case the encoding cannot be found or the codec doesn’t support an incremental encoder.

@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsrestclassifier#sklearn.multiclass.OneVsRestClassifier.partial_fit
+
+partial_fit(X, y, classes=None) [source]
+ 
+Partially fit underlying estimators Should be used when memory is inefficient to train all data. Chunks of data can be passed in several iteration.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.  
+y(sparse) array-like of shape (n_samples,) or (n_samples, n_classes) 
+
+Multi-class targets. An indicator matrix turns on multilabel classification.  
+classesarray, shape (n_classes, ) 
+
+Classes across all calls to partial_fit. Can be obtained via np.unique(y_all), where y_all is the target vector of the entire dataset. This argument is only required in the first call of partial_fit and can be omitted in the subsequent calls.    Returns 
+ self

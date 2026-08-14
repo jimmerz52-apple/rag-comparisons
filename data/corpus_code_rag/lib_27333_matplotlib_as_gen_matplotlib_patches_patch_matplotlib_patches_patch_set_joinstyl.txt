@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_joinstyle
+
+set_joinstyle(s)[source]
+ 
+Set the JoinStyle.  Parameters 
+ 
+sJoinStyle or {'miter', 'round', 'bevel'}

@@ -1,0 +1,34 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.fieldsets
+
+ModelAdmin.fieldsets  
+Set fieldsets to control the layout of admin “add” and “change” pages. fieldsets is a list of two-tuples, in which each two-tuple represents a <fieldset> on the admin form page. (A <fieldset> is a “section” of the form.) The two-tuples are in the format (name, field_options), where name is a string representing the title of the fieldset and field_options is a dictionary of information about the fieldset, including a list of fields to be displayed in it. A full example, taken from the django.contrib.flatpages.models.FlatPage model: from django.contrib import admin
+
+class FlatPageAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (None, {
+            'fields': ('url', 'title', 'content', 'sites')
+        }),
+        ('Advanced options', {
+            'classes': ('collapse',),
+            'fields': ('registration_required', 'template_name'),
+        }),
+    )
+ This results in an admin page that looks like:  If neither fieldsets nor fields options are present, Django will default to displaying each field that isn’t an AutoField and has editable=True, in a single fieldset, in the same order as the fields are defined in the model. The field_options dictionary can have the following keys:  
+ 
+fields  
+A tuple of field names to display in this fieldset. This key is required. Example: {
+'fields': ('first_name', 'last_name', 'address', 'city', 'state'),
+}
+ As with the fields option, to display multiple fields on the same line, wrap those fields in their own tuple. In this example, the first_name and last_name fields will display on the same line: {
+'fields': (('first_name', 'last_name'), 'address', 'city', 'state'),
+}
+ fields can contain values defined in readonly_fields to be displayed as read-only. If you add the name of a callable to fields, the same rule applies as with the fields option: the callable must be listed in readonly_fields.    
+ 
+classes  
+A list or tuple containing extra CSS classes to apply to the fieldset. Example: {
+'classes': ('wide', 'extrapretty'),
+}
+ Two useful classes defined by the default admin site stylesheet are collapse and wide. Fieldsets with the collapse style will be initially collapsed in the admin and replaced with a small “click to expand” link. Fieldsets with the wide style will be given extra horizontal space.    
+ 
+description  
+A string of optional extra text to be displayed at the top of each fieldset, under the heading of the fieldset. This string is not rendered for TabularInline due to its layout. Note that this value is not HTML-escaped when it’s displayed in the admin interface. This lets you include HTML if you so desire. Alternatively you can use plain text and django.utils.html.escape() to escape any HTML special characters.

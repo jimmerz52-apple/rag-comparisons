@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.BoundField.html_name
+
+BoundField.html_name  
+The name that will be used in the widget’s HTML name attribute. It takes the form prefix into account.

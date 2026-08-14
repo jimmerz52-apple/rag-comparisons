@@ -1,0 +1,4 @@
+# python.library.test#test.support.SHORT_TIMEOUT
+
+test.support.SHORT_TIMEOUT  
+Timeout in seconds to mark a test as failed if the test takes “too long”. The timeout value depends on the regrtest --timeout command line option. If a test using SHORT_TIMEOUT starts to fail randomly on slow buildbots, use LONG_TIMEOUT instead. Its default value is 30 seconds.

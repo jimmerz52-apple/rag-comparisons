@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__array_wrap__
+
+numpy.ma.MaskedArray.__array_wrap__ method   ma.MaskedArray.__array_wrap__(obj, context=None)[source]
+ 
+Special hook for ufuncs. Wraps the numpy array and sets the mask according to context.

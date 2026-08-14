@@ -1,0 +1,10 @@
+# tensorflow.config.get_soft_device_placement
+
+tf.config.get_soft_device_placement     View source on GitHub    Get if soft device placement is enabled.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.config.get_soft_device_placement  
+tf.config.get_soft_device_placement()
+ If enabled, an op will be placed on CPU if any of the following are true  there's no GPU implementation for the OP no GPU devices are known or registered need to co-locate with reftype input(s) which are from CPU 
+ 
+
+
+ Returns   If soft placement is enabled.

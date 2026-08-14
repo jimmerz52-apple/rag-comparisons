@@ -1,0 +1,45 @@
+# torch.distributions#torch.distributions.bernoulli.Bernoulli
+
+class torch.distributions.bernoulli.Bernoulli(probs=None, logits=None, validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Creates a Bernoulli distribution parameterized by probs or logits (but not both). Samples are binary (0 or 1). They take the value 1 with probability p and 0 with probability 1 - p. Example: >>> m = Bernoulli(torch.tensor([0.3]))
+>>> m.sample()  # 30% chance 1; 70% chance 0
+tensor([ 0.])
+  Parameters 
+ 
+probs (Number, Tensor) – the probability of sampling 1
+ 
+logits (Number, Tensor) – the log-odds of sampling 1
+     
+arg_constraints = {'logits': Real(), 'probs': Interval(lower_bound=0.0, upper_bound=1.0)} 
+  
+entropy() [source]
+
+  
+enumerate_support(expand=True) [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_enumerate_support = True 
+  
+log_prob(value) [source]
+
+  
+logits [source]
+
+  
+property mean 
+  
+property param_shape 
+  
+probs [source]
+
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+support = Boolean() 
+  
+property variance

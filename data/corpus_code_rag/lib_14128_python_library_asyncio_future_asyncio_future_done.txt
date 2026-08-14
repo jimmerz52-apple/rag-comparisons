@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.done
+
+done()  
+Return True if the Future is done. A Future is done if it was cancelled or if it has a result or an exception set with set_result() or set_exception() calls.

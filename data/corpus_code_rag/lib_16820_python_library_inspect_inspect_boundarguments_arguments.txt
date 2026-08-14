@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.BoundArguments.arguments
+
+arguments  
+A mutable mapping of parameters’ names to arguments’ values. Contains only explicitly bound arguments. Changes in arguments will reflect in args and kwargs. Should be used in conjunction with Signature.parameters for any argument processing purposes.  Note Arguments for which Signature.bind() or Signature.bind_partial() relied on a default value are skipped. However, if needed, use BoundArguments.apply_defaults() to add them.   Changed in version 3.9: arguments is now of type dict. Formerly, it was of type collections.OrderedDict.

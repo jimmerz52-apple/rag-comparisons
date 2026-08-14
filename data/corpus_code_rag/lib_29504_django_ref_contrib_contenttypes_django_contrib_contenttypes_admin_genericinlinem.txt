@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.admin.GenericInlineModelAdmin.ct_fk_field
+
+ct_fk_field  
+The name of the integer field that represents the ID of the related object. Defaults to object_id.

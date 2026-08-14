@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.dotproduct#sklearn.gaussian_process.kernels.DotProduct.n_dims
+
+property n_dims  
+Returns the number of non-fixed hyperparameters of the kernel.

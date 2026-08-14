@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.max_mag
+
+max_mag(x, y)  
+Compares the values numerically with their sign ignored.

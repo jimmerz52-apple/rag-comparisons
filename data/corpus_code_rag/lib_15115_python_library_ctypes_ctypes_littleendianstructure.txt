@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.LittleEndianStructure
+
+class ctypes.LittleEndianStructure(*args, **kw)  
+Abstract base class for structures in little endian byte order.

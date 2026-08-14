@@ -1,0 +1,8 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.end
+
+end(tag=None, indent=True)[source]
+ 
+Close the current element (opened by the most recent call to start()).  Parameters 
+ tag
+
+Element tag. If given, the tag must match the start tag. If omitted, the current element is closed.

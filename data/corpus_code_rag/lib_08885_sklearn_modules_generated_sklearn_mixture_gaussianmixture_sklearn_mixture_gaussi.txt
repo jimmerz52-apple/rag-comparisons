@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.mixture.gaussianmixture#sklearn.mixture.GaussianMixture.aic
+
+aic(X) [source]
+ 
+Akaike information criterion for the current model on the input X.  Parameters 
+ 
+Xarray of shape (n_samples, n_dimensions) 
+  Returns 
+ 
+aicfloat 
+
+The lower the better.

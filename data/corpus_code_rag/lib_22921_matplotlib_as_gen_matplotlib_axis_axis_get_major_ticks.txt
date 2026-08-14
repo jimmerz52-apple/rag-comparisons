@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_major_ticks
+
+matplotlib.axis.Axis.get_major_ticks   Axis.get_major_ticks(numticks=None)[source]
+ 
+Return the list of major Ticks.

@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerErrorbar.get_err_size
+
+get_err_size(legend, xdescent, ydescent, width, height, fontsize)[source]

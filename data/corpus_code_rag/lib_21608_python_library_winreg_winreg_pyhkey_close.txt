@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.PyHKEY.Close
+
+PyHKEY.Close()  
+Closes the underlying Windows handle. If the handle is already closed, no error is raised.

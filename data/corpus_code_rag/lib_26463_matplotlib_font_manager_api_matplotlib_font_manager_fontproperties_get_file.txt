@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.get_file
+
+get_file()[source]
+ 
+Return the filename of the associated font.

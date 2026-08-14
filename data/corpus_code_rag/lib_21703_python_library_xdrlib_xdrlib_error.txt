@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Error
+
+exception xdrlib.Error  
+The base exception class. Error has a single public attribute msg containing the description of the error.

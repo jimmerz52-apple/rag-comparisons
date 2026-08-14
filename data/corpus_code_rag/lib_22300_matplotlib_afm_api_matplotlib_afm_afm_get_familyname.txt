@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_familyname
+
+get_familyname()[source]
+ 
+Return the font family name, e.g., 'Times'.

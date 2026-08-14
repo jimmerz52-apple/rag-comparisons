@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebyshev.trim
+
+numpy.polynomial.chebyshev.Chebyshev.trim method   polynomial.chebyshev.Chebyshev.trim(tol=0)[source]
+ 
+Remove trailing coefficients Remove trailing coefficients until a coefficient is reached whose absolute value greater than tol or the beginning of the series is reached. If all the coefficients would be removed the series is set to [0]. A new series instance is returned with the new coefficients. The current instance remains unchanged.  Parameters 
+ 
+tolnon-negative number.
+
+
+All trailing coefficients less than tol will be removed.    Returns 
+ 
+new_seriesseries
+
+
+New instance of series with trimmed coefficients.

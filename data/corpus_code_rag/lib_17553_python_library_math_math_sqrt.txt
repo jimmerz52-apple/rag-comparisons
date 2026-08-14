@@ -1,0 +1,4 @@
+# python.library.math#math.sqrt
+
+math.sqrt(x)  
+Return the square root of x.

@@ -1,0 +1,4 @@
+# python.library.urllib.request#nnn
+
+BaseHandler.http_error_<nnn>(req, fp, code, msg, hdrs)  
+nnn should be a three-digit HTTP error code. This method is also not defined in BaseHandler, but will be called, if it exists, on an instance of a subclass, when an HTTP error with code nnn occurs. Subclasses should override this method to handle specific HTTP errors. Arguments, return values and exceptions raised should be the same as for http_error_default().

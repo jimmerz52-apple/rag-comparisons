@@ -1,0 +1,6 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ImmutableMultiDict
+
+class werkzeug.datastructures.ImmutableMultiDict(mapping=None)  
+An immutable MultiDict.  Changelog New in version 0.5.   
+copy()  
+Return a shallow mutable copy of this object. Keep in mind that the standard library’s copy() function is a no-op for this class like for any other python immutable type (eg: tuple).

@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get_content_charset
+
+get_content_charset(failobj=None)  
+Return the charset parameter of the Content-Type header, coerced to lower case. If there is no Content-Type header, or if that header has no charset parameter, failobj is returned. Note that this method differs from get_charset() which returns the Charset instance for the default encoding of the message body.

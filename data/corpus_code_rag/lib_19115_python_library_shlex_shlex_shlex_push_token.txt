@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.push_token
+
+shlex.push_token(str)  
+Push the argument onto the token stack.

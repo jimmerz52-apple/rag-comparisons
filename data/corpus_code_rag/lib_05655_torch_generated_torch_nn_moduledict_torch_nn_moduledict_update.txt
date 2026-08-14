@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.moduledict#torch.nn.ModuleDict.update
+
+update(modules) [source]
+ 
+Update the ModuleDict with the key-value pairs from a mapping or an iterable, overwriting existing keys.  Note If modules is an OrderedDict, a ModuleDict, or an iterable of key-value pairs, the order of new elements in it is preserved.   Parameters 
+modules (iterable) – a mapping (dictionary) from string to Module, or an iterable of key-value pairs of type (string, Module)

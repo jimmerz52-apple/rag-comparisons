@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.funcanimation#matplotlib.animation.FuncAnimation.__init__
+
+__init__(fig, func, frames=None, init_func=None, fargs=None, save_count=None, *, cache_frame_data=True, **kwargs)[source]

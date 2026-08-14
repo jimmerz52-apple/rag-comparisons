@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.WeekMixin.get_week
+
+get_week()  
+Returns the week for which this view will display data, as a string. Tries the following sources, in order:  The value of the WeekMixin.week attribute. The value of the week argument captured in the URL pattern The value of the week GET query argument.  Raises a 404 if no valid week specification can be found.

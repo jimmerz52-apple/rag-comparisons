@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.Permission.codename
+
+codename  
+Required. 100 characters or fewer. Example: 'can_vote'.

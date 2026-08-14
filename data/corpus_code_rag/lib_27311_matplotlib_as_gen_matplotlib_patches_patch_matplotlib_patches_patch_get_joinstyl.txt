@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_joinstyle
+
+get_joinstyle()[source]
+ 
+Return the joinstyle.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.clip
+
+numpy.record.clip method   record.clip()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.clip.

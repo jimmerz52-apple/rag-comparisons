@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.module#torch.nn.Module.half
+
+half() [source]
+ 
+Casts all floating point parameters and buffers to half datatype.  Returns 
+self  Return type 
+Module

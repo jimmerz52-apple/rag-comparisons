@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sgn
+
+sgn() → Tensor  
+See torch.sgn()

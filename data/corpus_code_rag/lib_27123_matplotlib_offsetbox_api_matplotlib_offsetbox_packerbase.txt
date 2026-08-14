@@ -1,0 +1,55 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.PackerBase
+
+classmatplotlib.offsetbox.PackerBase(pad=None, sep=None, width=None, height=None, align='baseline', mode='fixed', children=None)[source]
+ 
+Bases: matplotlib.offsetbox.OffsetBox  Parameters 
+ 
+padfloat, optional
+
+
+The boundary padding in points.  
+sepfloat, optional
+
+
+The spacing between items in points.  
+width, heightfloat, optional
+
+
+Width and height of the container box in pixels, calculated if None.  
+align{'top', 'bottom', 'left', 'right', 'center', 'baseline'}, default: 'baseline'
+
+
+Alignment of boxes.  
+mode{'fixed', 'expand', 'equal'}, default: 'fixed'
+
+
+The packing mode.  'fixed' packs the given Artists tight with sep spacing. 'expand' uses the maximal available space to distribute the artists with equal spacing in between. 'equal': Each artist an equal fraction of the available space and is left-aligned (or top-aligned) therein.   
+childrenlist of Artist
+
+
+The artists to pack.     Notes pad and sep are in points and will be scaled with the renderer dpi, while width and height are in pixels.   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+offset (float, float) or callable  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+zorder float

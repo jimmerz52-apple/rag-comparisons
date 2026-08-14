@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_stretch
+
+set_stretch(stretch)[source]
+ 
+Alias for set_fontstretch.

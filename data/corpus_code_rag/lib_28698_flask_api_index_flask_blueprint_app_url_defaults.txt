@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.app_url_defaults
+
+app_url_defaults(f)  
+Same as url_defaults() but application wide.  Parameters 
+f (Callable[[str, dict], None]) –   Return type 
+Callable[[str, dict], None]

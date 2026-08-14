@@ -1,0 +1,8 @@
+# python.library.ipaddress#ipaddress.IPv4Network.supernet_of
+
+supernet_of(other)  
+Return True if this network is a supernet of other. >>> a = ip_network('192.168.1.0/24')
+>>> b = ip_network('192.168.1.128/30')
+>>> a.supernet_of(b)
+True
+  New in version 3.7.

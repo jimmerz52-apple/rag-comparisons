@@ -1,0 +1,10 @@
+# django.ref.forms.fields#django.forms.DateField
+
+class DateField(**kwargs)  
+ Default widget: DateInput
+ Empty value: None
+ Normalizes to: A Python datetime.date object. Validates that the given value is either a datetime.date, datetime.datetime or string formatted in a particular date format. Error message keys: required, invalid
+  Takes one optional argument:  
+input_formats  
+A list of formats used to attempt to convert a string to a valid datetime.date object. 
+ If no input_formats argument is provided, the default input formats are taken from DATE_INPUT_FORMATS if USE_L10N is False, or from the active locale format DATE_INPUT_FORMATS key if localization is enabled. See also format localization.

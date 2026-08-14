@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.getheaders
+
+HTTPResponse.getheaders()  
+Return a list of (header, value) tuples.

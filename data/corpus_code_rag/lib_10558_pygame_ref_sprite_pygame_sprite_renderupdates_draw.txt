@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.RenderUpdates.draw
+
+draw() 
+ blit the Sprite images and track changed areas draw(surface) -> Rect_list  Draws all the Sprites to the surface, the same as Group.draw(). This method also returns a list of Rectangular areas on the screen that have been changed. The returned changes include areas of the screen that have been affected by previous Group.clear() calls. The returned Rect list should be passed to pygame.display.update(). This will help performance on software driven display modes. This type of updating is usually only helpful on destinations with non-animating backgrounds.

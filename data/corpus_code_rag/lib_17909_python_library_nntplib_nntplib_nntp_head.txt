@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.head
+
+NNTP.head(message_spec=None, *, file=None)  
+Same as article(), but sends a HEAD command. The lines returned (or written to file) will only contain the message headers, not the body.

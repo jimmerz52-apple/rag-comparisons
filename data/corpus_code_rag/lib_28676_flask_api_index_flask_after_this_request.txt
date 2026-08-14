@@ -1,0 +1,13 @@
+# flask.api.index#flask.after_this_request
+
+flask.after_this_request(f)  
+Executes a function after this request. This is useful to modify response objects. The function is passed the response object and has to return the same or a new one. Example: @app.route('/')
+def index():
+    @after_this_request
+    def add_header(response):
+        response.headers['X-Foo'] = 'Parachute'
+        return response
+    return 'Hello World!'
+ This is more useful if a function other than the view function wants to modify a response. For instance think of a decorator that wants to add some headers without converting the return value into a response object.  Changelog New in version 0.9.   Parameters 
+f (Callable[[Response], Response]) –   Return type 
+Callable[[Response], Response]

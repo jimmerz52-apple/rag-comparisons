@@ -1,0 +1,5 @@
+# skimage.api.skimage.feature#skimage.feature.BRIEF.__init__
+
+__init__(descriptor_size=256, patch_size=49, mode='normal', sigma=1, sample_seed=1) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

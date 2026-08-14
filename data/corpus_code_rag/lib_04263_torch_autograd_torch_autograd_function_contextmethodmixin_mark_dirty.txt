@@ -1,0 +1,5 @@
+# torch.autograd#torch.autograd.function._ContextMethodMixin.mark_dirty
+
+mark_dirty(*args) [source]
+ 
+Marks given tensors as modified in an in-place operation. This should be called at most once, only from inside the forward() method, and all arguments should be inputs. Every tensor that’s been modified in-place in a call to forward() should be given to this function, to ensure correctness of our checks. It doesn’t matter whether the function is called before or after modification.

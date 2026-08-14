@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.InputSource.getCharacterStream
+
+InputSource.getCharacterStream()  
+Get the character stream for this input source.

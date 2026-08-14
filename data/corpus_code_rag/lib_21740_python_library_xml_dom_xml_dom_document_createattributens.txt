@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Document.createAttributeNS
+
+Document.createAttributeNS(namespaceURI, qualifiedName)  
+Create and return an attribute node with a namespace. The tagName may have a prefix. This method does not associate the attribute node with any particular element. You must use setAttributeNode() on the appropriate Element object to use the newly created attribute instance.

@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.decomposition.minibatchdictionarylearning#sklearn.decomposition.MiniBatchDictionaryLearning.partial_fit
+
+partial_fit(X, y=None, iter_offset=None) [source]
+ 
+Updates the model using the data in X as a mini-batch.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vector, where n_samples in the number of samples and n_features is the number of features.  
+yIgnored 
+
+iter_offsetint, default=None 
+
+The number of iteration on data batches that has been performed before this call to partial_fit. This is optional: if no number is passed, the memory of the object is used.    Returns 
+ 
+selfobject 
+
+Returns the instance itself.

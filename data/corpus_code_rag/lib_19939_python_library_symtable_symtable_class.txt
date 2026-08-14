@@ -1,0 +1,6 @@
+# python.library.symtable#symtable.Class
+
+class symtable.Class  
+A namespace of a class. This class inherits SymbolTable.  
+get_methods()  
+Return a tuple containing the names of methods declared in the class.

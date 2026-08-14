@@ -1,0 +1,10 @@
+# torch.tensors#torch.Tensor.bernoulli_
+
+bernoulli_()  
+ 
+bernoulli_(p=0.5, *, generator=None) → Tensor  
+Fills each location of self with an independent sample from Bernoulli(p)\text{Bernoulli}(\texttt{p}) . self can have integral dtype. 
+  
+bernoulli_(p_tensor, *, generator=None) → Tensor  
+p_tensor should be a tensor containing probabilities to be used for drawing the binary random number. The ith\text{i}^{th}  element of self tensor will be set to a value sampled from Bernoulli(p_tensor[i])\text{Bernoulli}(\texttt{p\_tensor[i]}) . self can have integral dtype, but p_tensor must have floating point dtype. 
+ See also bernoulli() and torch.bernoulli()

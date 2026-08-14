@@ -1,0 +1,19 @@
+# numpy.reference.generated.numpy.matrix.any
+
+numpy.matrix.any method   matrix.any(axis=None, out=None)[source]
+ 
+Test whether any array element along a given axis evaluates to True. Refer to numpy.any for full documentation.  Parameters 
+ 
+axisint, optional
+
+
+Axis along which logical OR is performed  
+outndarray, optional
+
+
+Output to existing array instead of creating new one, must have same shape as expected output    Returns 
+ 
+anybool, ndarray
+
+
+Returns a single bool if axis is None; otherwise, returns ndarray

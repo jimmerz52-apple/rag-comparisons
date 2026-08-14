@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.format_xdata
+
+matplotlib.axes.Axes.format_xdata   Axes.format_xdata(x)[source]
+ 
+Return x formatted as an x-value. This function will use the fmt_xdata attribute if it is not None, else will fall back on the xaxis major formatter.

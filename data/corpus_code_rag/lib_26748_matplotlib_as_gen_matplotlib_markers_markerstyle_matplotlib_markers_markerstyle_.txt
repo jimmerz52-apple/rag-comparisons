@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.markers.markerstyle#matplotlib.markers.MarkerStyle.get_alt_path
+
+get_alt_path()[source]
+ 
+Return a Path for the alternate part of the marker. For unfilled markers, this is None; for filled markers, this is the area to be drawn with markerfacecoloralt.

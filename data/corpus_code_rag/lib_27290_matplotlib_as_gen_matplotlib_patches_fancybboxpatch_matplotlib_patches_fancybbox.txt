@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_mutation_aspect
+
+set_mutation_aspect(aspect)[source]
+ 
+Set the aspect ratio of the bbox mutation.  Parameters 
+ 
+aspectfloat

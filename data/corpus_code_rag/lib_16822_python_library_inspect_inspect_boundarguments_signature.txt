@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.BoundArguments.signature
+
+signature  
+A reference to the parent Signature object.

@@ -1,0 +1,23 @@
+# tensorflow.io.gfile.exists
+
+tf.io.gfile.exists     View source on GitHub    Determines whether a path exists or not.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.io.gfile.exists  
+tf.io.gfile.exists(
+    path
+)
+
+ 
+
+
+ Args
+  path   string, a path   
+ 
+
+
+ Returns   True if the path exists, whether it's a file or a directory. False if the path does not exist and there are no filesystem errors.  
+
+ 
+
+
+ Raises
+  errors.OpError   Propagates any errors reported by the FileSystem API.

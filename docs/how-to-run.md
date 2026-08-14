@@ -98,7 +98,7 @@ PYTHONPATH=src python scripts/run_hotpot_benchmark.py 100 semantic_rag,lazygraph
 ```
 
 Index files: `.chroma/sdk_lineage/hotpot_semantic_full__all_minilm_l6_v2/`  
-Scores: `results/accuracy_results.csv`, `results/summary.csv`, `results/latency_results.csv`  
+Scores: `results/accuracy_results.csv`, `results/summary.csv`, `results/latency_results.csv`, `results/token_results.csv` (prompt / completion / phase totals; live scoring also writes per-question token columns).  
 Progress: every 25 Q → `results/_checkpoint_semantic_rag_accuracy.csv`  
 Log (detached overnight): `/tmp/hotpot_thousands.log`
 
@@ -137,14 +137,33 @@ Results → `results_code_rag/`.
 
 ---
 
-## 4. GraphRAG-Bench Novel + MultiHop-RAG
+## 4. GraphRAG-Bench Novel (all 72) + MultiHop-RAG (all 150)
+
+Defaults are the **full indexed sets**, not the old 2–3 questions per type.
 
 ```bash
 PYTHONPATH=src python scripts/run_graphrag_bench.py
+# n_per_type=0 → every Novel question that passed the coherence filter (~72)
 PYTHONPATH=src python scripts/run_multihop_benchmark.py
-# more MultiHop questions:
-PYTHONPATH=src python scripts/run_multihop_benchmark.py semantic_rag,rerank_semantic 50
+# 50 per type × 3 = 150
 ```
+
+After the detached Hotpot→CodeRAG job (`scripts/run_thousands_detached.sh`) finishes, a follow-on scores these two so they do not steal Ollama from the 7,405-Q run:
+
+```bash
+# already started if you used the agent follow-on; otherwise:
+caffeinate -dims ./scripts/run_full_set_followon.sh
+# log: /tmp/full_set_followon.log
+```
+
+Token / type notebooks (full catalog, not a 24-Q slice):
+
+- `notebooks/hotpot_tokens.ipynb`
+- `notebooks/code_rag_tokens.ipynb`
+- `notebooks/graphrag_bench_tokens.ipynb`
+- `notebooks/multihop_tokens.ipynb`
+
+Generator stays `llama3.2:3b` (SETN 2026: 3B ≈ 8B when retrieval is strong; 1B–3B are retrieval-bound). Speed-ups are resume, skip-EM judge, and `num_predict=96` — not swapping the generator mid-run.
 
 ---
 

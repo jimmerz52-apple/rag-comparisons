@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.set_patch_arc
+
+set_patch_arc(center, radius, theta1, theta2)[source]
+ 
+Set the spine to be arc-like.

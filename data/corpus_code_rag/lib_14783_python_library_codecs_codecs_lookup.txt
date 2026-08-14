@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.lookup
+
+codecs.lookup(encoding)  
+Looks up the codec info in the Python codec registry and returns a CodecInfo object as defined below. Encodings are first looked up in the registry’s cache. If not found, the list of registered search functions is scanned. If no CodecInfo object is found, a LookupError is raised. Otherwise, the CodecInfo object is stored in the cache and returned to the caller.

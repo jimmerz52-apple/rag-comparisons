@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_NO_TICKET
+
+ssl.OP_NO_TICKET  
+Prevent client side from requesting a session ticket.  New in version 3.6.

@@ -1,0 +1,11 @@
+# tensorflow.compat.v1.saved_model.tag_constants
+
+Module: tf.compat.v1.saved_model.tag_constants Common tags used for graphs in SavedModel.
+ 
+
+
+ Other Members
+  GPU   'gpu'  
+  SERVING   'serve'  
+  TPU   'tpu'  
+  TRAINING   'train'

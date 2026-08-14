@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.run_suite
+
+DiscoverRunner.run_suite(suite, **kwargs)  
+Runs the test suite. Returns the result produced by the running the test suite.

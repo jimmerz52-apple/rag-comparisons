@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.FunctionCounts.denoise
+
+denoise() [source]
+ 
+Remove known noisy instructions. Several instructions in the CPython interpreter are rather noisy. These instructions involve unicode to dictionary lookups which Python uses to map variable names. FunctionCounts is generally a content agnostic container, however this is sufficiently important for obtaining reliable results to warrant an exception.

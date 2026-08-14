@@ -1,0 +1,8 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.dims
+
+GEOSGeometry.dims  
+Returns the dimension of the geometry:  
+0 for Points and MultiPoints 
+1 for LineStrings and MultiLineStrings 
+2 for Polygons and MultiPolygons 
+-1 for empty GeometryCollections the maximum dimension of its elements for non-empty GeometryCollections

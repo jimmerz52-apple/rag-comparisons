@@ -1,0 +1,4 @@
+# django.topics.cache#django.core.caches.cache.set
+
+cache.set(key, value, timeout=DEFAULT_TIMEOUT, version=None)  
+>>> cache.set('my_key', 'hello, world!', 30)

@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.zaxis_date
+
+zaxis_date(tz=None)[source]
+ 
+Set up axis ticks and labels to treat data along the zaxis as dates.  Parameters 
+ 
+tzstr or datetime.tzinfo, default: rcParams["timezone"] (default: 'UTC')
+
+
+The timezone used to create date labels.     Notes This function is merely provided for completeness, but 3D axes do not support dates for ticks, and so this may not work as expected.

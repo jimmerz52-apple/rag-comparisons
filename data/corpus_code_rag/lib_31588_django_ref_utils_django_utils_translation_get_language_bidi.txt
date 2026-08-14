@@ -1,0 +1,6 @@
+# django.ref.utils#django.utils.translation.get_language_bidi
+
+get_language_bidi()  
+Returns selected language’s BiDi layout:  
+False = left-to-right layout 
+True = right-to-left layout

@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.tolist
+
+tolist()  
+Returns a list containing the elements of this storage

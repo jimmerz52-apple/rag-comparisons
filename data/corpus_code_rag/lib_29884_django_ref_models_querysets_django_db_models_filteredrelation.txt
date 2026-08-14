@@ -1,0 +1,9 @@
+# django.ref.models.querysets#django.db.models.FilteredRelation
+
+class FilteredRelation(relation_name, *, condition=Q())  
+ 
+relation_name  
+The name of the field on which you’d like to filter the relation. 
+  
+condition  
+A Q object to control the filtering.

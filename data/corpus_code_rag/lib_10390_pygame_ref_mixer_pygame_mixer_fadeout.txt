@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.fadeout
+
+pygame.mixer.fadeout() 
+ fade out the volume on all sounds before stopping fadeout(time) -> None  This will fade out the volume on all active channels over the time argument in milliseconds. After the sound is muted the playback will stop.

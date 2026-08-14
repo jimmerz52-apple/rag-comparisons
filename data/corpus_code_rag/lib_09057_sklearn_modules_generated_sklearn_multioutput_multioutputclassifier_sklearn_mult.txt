@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.multioutput.multioutputclassifier#sklearn.multioutput.MultiOutputClassifier.predict
+
+predict(X) [source]
+ 
+ Predict multi-output variable using a model
+
+trained for each target variable.    Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Data.    Returns 
+ 
+y{array-like, sparse matrix} of shape (n_samples, n_outputs) 
+
+Multi-output targets predicted across multiple predictors. Note: Separate models are generated for each predictor.

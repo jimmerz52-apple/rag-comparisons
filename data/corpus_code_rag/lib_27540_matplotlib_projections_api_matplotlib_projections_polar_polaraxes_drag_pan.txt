@@ -1,0 +1,18 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.drag_pan
+
+drag_pan(button, key, x, y)[source]
+ 
+Called when the mouse moves during a pan operation.  Parameters 
+ 
+buttonMouseButton
+
+
+The pressed mouse button.  
+keystr or None
+
+
+The pressed key, if any.  
+x, yfloat
+
+
+The mouse coordinates in display coords.     Notes This is intended to be overridden by new projection types.

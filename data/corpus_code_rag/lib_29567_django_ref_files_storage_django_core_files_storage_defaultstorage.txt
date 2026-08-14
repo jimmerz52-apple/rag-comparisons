@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.DefaultStorage
+
+class DefaultStorage  
+DefaultStorage provides lazy access to the current default storage system as defined by DEFAULT_FILE_STORAGE. DefaultStorage uses get_storage_class() internally.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.get_object
+
+get_object(queryset=None)  
+Returns the single object that this view will display. If queryset is provided, that queryset will be used as the source of objects; otherwise, get_queryset() will be used. get_object() looks for a pk_url_kwarg argument in the arguments to the view; if this argument is found, this method performs a primary-key based lookup using that value. If this argument is not found, it looks for a slug_url_kwarg argument, and performs a slug lookup using the slug_field. When query_pk_and_slug is True, get_object() will perform its lookup using both the primary key and the slug.

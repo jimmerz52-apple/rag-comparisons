@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_rdev
+
+st_rdev  
+Type of device if an inode device.

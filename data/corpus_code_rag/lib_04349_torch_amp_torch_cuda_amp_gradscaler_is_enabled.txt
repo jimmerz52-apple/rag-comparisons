@@ -1,0 +1,5 @@
+# torch.amp#torch.cuda.amp.GradScaler.is_enabled
+
+is_enabled() [source]
+ 
+Returns a bool indicating whether this instance is enabled.

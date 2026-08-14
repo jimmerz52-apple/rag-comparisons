@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolLineHandles.set_visible
+
+set_visible(value)[source]
+ 
+Set the visibility state of the handles artist.

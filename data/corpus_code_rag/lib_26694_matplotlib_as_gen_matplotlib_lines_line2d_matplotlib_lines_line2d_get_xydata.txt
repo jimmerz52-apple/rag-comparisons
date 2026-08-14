@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_xydata
+
+get_xydata()[source]
+ 
+Return the xy data as a Nx2 numpy array.

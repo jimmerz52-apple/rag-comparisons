@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Lock.release
+
+release()  
+Release a lock. This can be called from any process or thread, not only the process or thread which originally acquired the lock. Behavior is the same as in threading.Lock.release() except that when invoked on an unlocked lock, a ValueError is raised.

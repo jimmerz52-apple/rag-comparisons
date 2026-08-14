@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolCursorPosition.send_message
+
+send_message(event)[source]
+ 
+Call matplotlib.backend_managers.ToolManager.message_event.

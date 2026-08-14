@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.add_contour_set
+
+add_contour_set(cset, extend3d=False, stride=5, zdir='z', offset=None)[source]

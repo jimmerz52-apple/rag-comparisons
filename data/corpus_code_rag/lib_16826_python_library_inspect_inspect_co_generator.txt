@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_GENERATOR
+
+inspect.CO_GENERATOR  
+The flag is set when the code object is a generator function, i.e. a generator object is returned when the code object is executed.

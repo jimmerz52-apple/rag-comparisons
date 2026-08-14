@@ -1,0 +1,12 @@
+# python.library.decimal#decimal.Context.create_decimal_from_float
+
+create_decimal_from_float(f)  
+Creates a new Decimal instance from a float f but rounding using self as the context. Unlike the Decimal.from_float() class method, the context precision, rounding method, flags, and traps are applied to the conversion. >>> context = Context(prec=5, rounding=ROUND_DOWN)
+>>> context.create_decimal_from_float(math.pi)
+Decimal('3.1415')
+>>> context = Context(prec=5, traps=[Inexact])
+>>> context.create_decimal_from_float(math.pi)
+Traceback (most recent call last):
+    ...
+decimal.Inexact: None
+  New in version 3.1.

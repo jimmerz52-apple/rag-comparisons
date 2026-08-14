@@ -1,0 +1,13 @@
+# matplotlib.afm_api#matplotlib.afm.CompositePart
+
+classmatplotlib.afm.CompositePart(name, dx, dy)[source]
+ 
+Bases: tuple Represents the information on a composite element of a composite char. Create new instance of CompositePart(name, dx, dy)   dx
+ 
+x-displacement of the part from the origin. 
+   dy
+ 
+y-displacement of the part from the origin. 
+   name
+ 
+Name of the part, e.g. 'acute'.

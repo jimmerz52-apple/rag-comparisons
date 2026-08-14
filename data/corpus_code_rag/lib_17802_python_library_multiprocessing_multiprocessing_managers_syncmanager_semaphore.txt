@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Semaphore
+
+Semaphore([value])  
+Create a shared threading.Semaphore object and return a proxy for it.

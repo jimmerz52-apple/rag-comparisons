@@ -1,0 +1,10 @@
+# python.library.concurrent.futures#concurrent.futures.Executor.shutdown
+
+shutdown(wait=True, *, cancel_futures=False)  
+Signal the executor that it should free any resources that it is using when the currently pending futures are done executing. Calls to Executor.submit() and Executor.map() made after shutdown will raise RuntimeError. If wait is True then this method will not return until all the pending futures are done executing and the resources associated with the executor have been freed. If wait is False then this method will return immediately and the resources associated with the executor will be freed when all pending futures are done executing. Regardless of the value of wait, the entire Python program will not exit until all pending futures are done executing. If cancel_futures is True, this method will cancel all pending futures that the executor has not started running. Any futures that are completed or running won’t be cancelled, regardless of the value of cancel_futures. If both cancel_futures and wait are True, all futures that the executor has started running will be completed prior to this method returning. The remaining futures are cancelled. You can avoid having to call this method explicitly if you use the with statement, which will shutdown the Executor (waiting as if Executor.shutdown() were called with wait set to True): import shutil
+with ThreadPoolExecutor(max_workers=4) as e:
+    e.submit(shutil.copy, 'src1.txt', 'dest1.txt')
+    e.submit(shutil.copy, 'src2.txt', 'dest2.txt')
+    e.submit(shutil.copy, 'src3.txt', 'dest3.txt')
+    e.submit(shutil.copy, 'src4.txt', 'dest4.txt')
+  Changed in version 3.9: Added cancel_futures.

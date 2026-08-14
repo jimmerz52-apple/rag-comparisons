@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.wait
+
+Popen.wait(timeout=None)  
+Wait for child process to terminate. Set and return returncode attribute. If the process does not terminate after timeout seconds, raise a TimeoutExpired exception. It is safe to catch this exception and retry the wait.  Note This will deadlock when using stdout=PIPE or stderr=PIPE and the child process generates enough output to a pipe such that it blocks waiting for the OS pipe buffer to accept more data. Use Popen.communicate() when using pipes to avoid that.   Note The function is implemented using a busy loop (non-blocking call and short sleeps). Use the asyncio module for an asynchronous wait: see asyncio.create_subprocess_exec.   Changed in version 3.3: timeout was added.

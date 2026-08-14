@@ -1,0 +1,17 @@
+# django.ref.forms.api#django.forms.BoundField.errors
+
+BoundField.errors  
+A list-like object that is displayed as an HTML <ul class="errorlist"> when printed: >>> data = {'subject': 'hi', 'message': '', 'sender': '', 'cc_myself': ''}
+>>> f = ContactForm(data, auto_id=False)
+>>> print(f['message'])
+<input type="text" name="message" required>
+>>> f['message'].errors
+['This field is required.']
+>>> print(f['message'].errors)
+<ul class="errorlist"><li>This field is required.</li></ul>
+>>> f['subject'].errors
+[]
+>>> print(f['subject'].errors)
+
+>>> str(f['subject'].errors)
+''

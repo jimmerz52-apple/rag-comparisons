@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.pprint_getters
+
+pprint_getters()[source]
+ 
+Return the getters and actual values as list of strings.

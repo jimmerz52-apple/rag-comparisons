@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_thetamax
+
+get_thetamax()[source]
+ 
+Return the maximum theta limit in degrees.

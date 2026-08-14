@@ -1,0 +1,20 @@
+# matplotlib._as_gen.matplotlib.patches.connectionstyle#matplotlib.patches.ConnectionStyle.Arc
+
+classArc(angleA=0, angleB=0, armA=None, armB=None, rad=0.0)[source]
+ 
+Bases: matplotlib.patches.ConnectionStyle._Base Creates a piecewise continuous quadratic Bezier path between two points. The path can have two passing-through points, a point placed at the distance of armA and angle of angleA from point A, another point with respect to point B. The edges are rounded with rad.  
+angleA :
+
+starting angle of the path  
+angleB :
+
+ending angle of the path  
+armA :
+
+length of the starting arm  
+armB :
+
+length of the ending arm  
+rad :
+
+rounding radius of the edges     connect(posA, posB)[source]

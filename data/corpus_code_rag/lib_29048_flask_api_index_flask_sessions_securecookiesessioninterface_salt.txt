@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.salt
+
+salt = 'cookie-session'  
+the salt that should be applied on top of the secret key for the signing of cookie based sessions.

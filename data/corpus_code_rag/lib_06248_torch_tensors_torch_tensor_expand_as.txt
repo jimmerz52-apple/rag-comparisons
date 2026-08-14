@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.expand_as
+
+expand_as(other) → Tensor  
+Expand this tensor to the same size as other. self.expand_as(other) is equivalent to self.expand(other.size()). Please see expand() for more information about expand.  Parameters 
+other (torch.Tensor) – The result tensor has the same size as other.

@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.SimpleXMLRPCServer.register_multicall_functions
+
+SimpleXMLRPCServer.register_multicall_functions()  
+Registers the XML-RPC multicall function system.multicall.

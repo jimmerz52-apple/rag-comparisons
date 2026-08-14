@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.request_context
+
+request_context(environ)  
+Create a RequestContext representing a WSGI environment. Use a with block to push the context, which will make request point at this request. See The Request Context. Typically you should not call this from your own code. A request context is automatically pushed by the wsgi_app() when handling a request. Use test_request_context() to create an environment and context instead of this method.  Parameters 
+environ (dict) – a WSGI environment  Return type 
+flask.ctx.RequestContext

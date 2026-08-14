@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.ischr
+
+TarInfo.ischr()  
+Return True if it is a character device.

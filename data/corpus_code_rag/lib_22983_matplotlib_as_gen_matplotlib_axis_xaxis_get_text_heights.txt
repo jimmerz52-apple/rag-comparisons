@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.xaxis.get_text_heights
+
+matplotlib.axis.XAxis.get_text_heights   XAxis.get_text_heights(renderer)[source]
+ 
+Return how much space should be reserved for text above and below the axes, as a pair of floats.

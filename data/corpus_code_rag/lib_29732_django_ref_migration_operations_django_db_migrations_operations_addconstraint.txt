@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AddConstraint
+
+class AddConstraint(model_name, constraint)

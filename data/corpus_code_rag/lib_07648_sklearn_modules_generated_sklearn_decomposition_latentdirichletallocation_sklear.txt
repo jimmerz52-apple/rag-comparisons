@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.decomposition.latentdirichletallocation#sklearn.decomposition.LatentDirichletAllocation.perplexity
+
+perplexity(X, sub_sampling=False) [source]
+ 
+Calculate approximate perplexity for data X. Perplexity is defined as exp(-1. * log-likelihood per word)  Changed in version 0.19: doc_topic_distr argument has been deprecated and is ignored because user no longer has access to unnormalized distribution   Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+sub_samplingbool 
+
+Do sub-sampling or not.    Returns 
+ 
+scorefloat 
+
+Perplexity score.

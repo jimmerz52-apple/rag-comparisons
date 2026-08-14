@@ -1,0 +1,13 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.margins
+
+margins(*margins, x=None, y=None, z=None, tight=True)[source]
+ 
+Convenience method to set or retrieve autoscaling margins. Call signatures: margins()
+ returns xmargin, ymargin, zmargin margins(margin)
+
+margins(xmargin, ymargin, zmargin)
+
+margins(x=xmargin, y=ymargin, z=zmargin)
+
+margins(..., tight=False)
+ All forms above set the xmargin, ymargin and zmargin parameters. All keyword parameters are optional. A single positional argument specifies xmargin, ymargin and zmargin. Passing both positional and keyword arguments for xmargin, ymargin, and/or zmargin is invalid. The tight parameter is passed to autoscale_view(), which is executed after a margin is changed; the default here is True, on the assumption that when margins are specified, no additional padding to match tick marks is usually desired. Setting tight to None will preserve the previous setting. Specifying any margin changes only the autoscaling; for example, if xmargin is not None, then xmargin times the X data interval will be added to each end of that interval before it is used in autoscaling.

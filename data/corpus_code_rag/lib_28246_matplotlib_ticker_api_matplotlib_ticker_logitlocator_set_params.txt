@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogitLocator.set_params
+
+set_params(minor=None, **kwargs)[source]
+ 
+Set parameters within this locator.

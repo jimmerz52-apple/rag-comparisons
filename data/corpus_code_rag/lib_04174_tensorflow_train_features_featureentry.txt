@@ -1,0 +1,10 @@
+# tensorflow.train.features.featureentry
+
+tf.train.Features.FeatureEntry     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.Features.FeatureEntry 
+ 
+
+
+ Attributes
+  key   string key  
+  value   Feature value

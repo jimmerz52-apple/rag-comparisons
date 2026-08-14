@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_ticklocs
+
+matplotlib.axis.Axis.get_ticklocs   Axis.get_ticklocs(*, minor=False)[source]
+ 
+Return this Axis' tick locations in data coordinates. 
+  Examples using matplotlib.axis.Axis.get_ticklocs
+ 
+   Artist tutorial

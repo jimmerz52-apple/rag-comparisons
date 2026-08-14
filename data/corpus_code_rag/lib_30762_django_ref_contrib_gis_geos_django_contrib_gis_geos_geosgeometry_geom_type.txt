@@ -1,0 +1,6 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.geom_type
+
+GEOSGeometry.geom_type  
+Returns a string corresponding to the type of geometry. For example: >>> pnt = GEOSGeometry('POINT(5 23)')
+>>> pnt.geom_type
+'Point'

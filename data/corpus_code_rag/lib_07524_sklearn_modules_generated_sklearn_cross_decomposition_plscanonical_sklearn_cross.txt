@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cross_decomposition.plscanonical#sklearn.cross_decomposition.PLSCanonical.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Learn and apply the dimension reduction on the train data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of predictors.  
+yarray-like of shape (n_samples, n_targets), default=None 
+
+Target vectors, where n_samples is the number of samples and n_targets is the number of response variables.    Returns 
+ x_scores if Y is not given, (x_scores, y_scores) otherwise.

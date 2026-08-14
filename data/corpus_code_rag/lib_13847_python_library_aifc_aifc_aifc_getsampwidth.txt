@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getsampwidth
+
+aifc.getsampwidth()  
+Return the size in bytes of individual samples.

@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPRedirectHandler
+
+class urllib.request.HTTPRedirectHandler  
+A class to handle redirections.

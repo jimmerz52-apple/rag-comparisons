@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessmonthbegin.copy
+
+pandas.tseries.offsets.BusinessMonthBegin.copy   BusinessMonthBegin.copy()

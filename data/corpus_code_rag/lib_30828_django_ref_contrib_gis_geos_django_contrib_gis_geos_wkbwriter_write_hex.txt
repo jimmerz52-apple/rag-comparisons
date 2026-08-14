@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.WKBWriter.write_hex
+
+write_hex(geom)

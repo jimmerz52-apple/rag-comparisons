@@ -1,0 +1,178 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_xlim
+
+matplotlib.axes.Axes.set_xlim   Axes.set_xlim(left=None, right=None, emit=True, auto=False, *, xmin=None, xmax=None)[source]
+ 
+Set the x-axis view limits.  Parameters 
+ 
+leftfloat, optional
+
+
+The left xlim in data coordinates. Passing None leaves the limit unchanged. The left and right xlims may also be passed as the tuple (left, right) as the first positional argument (or as the left keyword argument).  
+rightfloat, optional
+
+
+The right xlim in data coordinates. Passing None leaves the limit unchanged.  
+emitbool, default: True
+
+
+Whether to notify observers of limit change.  
+autobool or None, default: False
+
+
+Whether to turn on autoscaling of the x-axis. True turns on, False turns off, None leaves unchanged.  
+xmin, xmaxfloat, optional
+
+
+They are equivalent to left and right respectively, and it is an error to pass both xmin and left or xmax and right.    Returns 
+ 
+left, right(float, float)
+
+
+The new x-axis limits in data coordinates.      See also  get_xlim
+
+set_xbound, get_xbound
+
+
+invert_xaxis, xaxis_inverted
+
+  Notes The left value may be greater than the right value, in which case the x-axis values will decrease from left to right. Examples >>> set_xlim(left, right)
+>>> set_xlim((left, right))
+>>> left, right = set_xlim(left, right)
+ One limit may be left unchanged. >>> set_xlim(right=right_lim)
+ Limits may be passed in reverse order to flip the direction of the x-axis. For example, suppose x represents the number of years before present. The x-axis limits might be set like the following so 5000 years ago is on the left of the plot and the present is on the right. >>> set_xlim(5000, 0)
+ 
+  Examples using matplotlib.axes.Axes.set_xlim
+ 
+   Bar Label Demo   
+
+   Broken Barh   
+
+   CSD Demo   
+
+   EventCollection Demo   
+
+   Markevery Demo   
+
+   Contouring the solution space of optimizations   
+
+   Image Nonuniform   
+
+   pcolormesh grids and shading   
+
+   Axes box aspect   
+
+   Axes Demo   
+
+   Figure labels: suptitle, supxlabel, supylabel   
+
+   Invert Axes   
+
+   Zoom region inset axes   
+
+   Boxplots   
+
+   Violin plot customization   
+
+   Including upper and lower limits in error bars   
+
+   Bar of pie   
+
+   AnnotationBbox demo   
+
+   Using a text as a Path   
+
+   Text Rotation Relative To Line   
+
+   Annotate Transform   
+
+   Mmh Donuts!!!   
+
+   Ellipse Demo   
+
+   Line Collection   
+
+   Inset Locator Demo2   
+
+   Parasite Simple2   
+
+   axis_direction demo   
+
+   Parasite Axes demo   
+
+   Parasite axis demo   
+
+   Simple Axis Pad   
+
+   Anatomy of a figure   
+
+   Bachelor's degrees by gender   
+
+   XKCD   
+
+   Decay   
+
+   Rain simulation   
+
+   Path Editor   
+
+   Poly Editor   
+
+   Resampling Data   
+
+   Zoom Window   
+
+   Frontpage contour example   
+
+   Frontpage plot example   
+
+   Custom projection   
+
+   Building histograms using Rectangles and PolyCollections   
+
+   SVG Filter Line   
+
+   TickedStroke patheffect   
+
+   Plot 2D data on 3D plot   
+
+   Draw flat objects in 3D plot   
+
+   Text annotations in 3D   
+
+   Loglog Aspect   
+
+   Scales   
+
+   MRI With EEG   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Multiple Yaxis With Spines   
+
+   Custom spine bounds   
+
+   Formatting date ticks using ConciseDateFormatter   
+
+   Date Demo Convert   
+
+   Annotation with units   
+
+   Artist tests   
+
+   Annotate Text Arrow   
+
+   Connect Simple01   
+
+   Annotated Cursor   
+
+   Cursor   
+
+   Span Selector   
+
+   Path Tutorial   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Choosing Colormaps in Matplotlib

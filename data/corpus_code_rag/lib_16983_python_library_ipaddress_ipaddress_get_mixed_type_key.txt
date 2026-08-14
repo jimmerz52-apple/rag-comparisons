@@ -1,0 +1,5 @@
+# python.library.ipaddress#ipaddress.get_mixed_type_key
+
+ipaddress.get_mixed_type_key(obj)  
+Return a key suitable for sorting between networks and addresses. Address and Network objects are not sortable by default; they’re fundamentally different, so the expression: IPv4Address('192.0.2.0') <= IPv4Network('192.0.2.0/24')
+ doesn’t make sense. There are some times however, where you may wish to have ipaddress sort these anyway. If you need to do this, you can use this function as the key argument to sorted(). obj is either a network or address object.

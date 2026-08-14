@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.xmlcharrefreplace_errors
+
+codecs.xmlcharrefreplace_errors(exception)  
+Implements the 'xmlcharrefreplace' error handling (for encoding with text encodings only): the unencodable character is replaced by an appropriate XML character reference.

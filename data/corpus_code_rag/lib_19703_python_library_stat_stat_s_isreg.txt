@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISREG
+
+stat.S_ISREG(mode)  
+Return non-zero if the mode is from a regular file.

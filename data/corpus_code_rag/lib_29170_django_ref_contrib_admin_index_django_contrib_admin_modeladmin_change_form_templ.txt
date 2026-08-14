@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.change_form_template
+
+ModelAdmin.change_form_template  
+Path to a custom template, used by change_view().

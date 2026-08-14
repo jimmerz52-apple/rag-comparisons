@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.gname
+
+TarInfo.gname  
+Group name.

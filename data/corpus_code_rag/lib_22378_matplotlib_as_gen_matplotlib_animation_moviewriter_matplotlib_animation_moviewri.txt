@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriter#matplotlib.animation.MovieWriter.cleanup
+
+cleanup()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

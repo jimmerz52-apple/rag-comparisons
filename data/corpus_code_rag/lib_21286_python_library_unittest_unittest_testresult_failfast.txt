@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.failfast
+
+failfast  
+If set to true stop() will be called on the first failure or error, halting the test run.  New in version 3.2.

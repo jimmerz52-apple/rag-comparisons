@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.sqrt
+
+sqrt(context=None)  
+Return the square root of the argument to full precision.

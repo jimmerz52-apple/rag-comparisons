@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.change_message
+
+LogEntry.change_message  
+The detailed description of the modification. In the case of an edit, for example, the message contains a list of the edited fields. The Django admin site formats this content as a JSON structure, so that get_change_message() can recompose a message translated in the current user language. Custom code might set this as a plain string though. You are advised to use the get_change_message() method to retrieve this value instead of accessing it directly.

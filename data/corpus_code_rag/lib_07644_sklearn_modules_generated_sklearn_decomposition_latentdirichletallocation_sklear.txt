@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.decomposition.latentdirichletallocation#sklearn.decomposition.LatentDirichletAllocation.fit
+
+fit(X, y=None) [source]
+ 
+Learn model for the data X with variational Bayes method. When learning_method is ‘online’, use mini-batch update. Otherwise, use batch update.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+yIgnored 
+  Returns 
+ self

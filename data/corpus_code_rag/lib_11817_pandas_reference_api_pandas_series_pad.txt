@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.series.pad
+
+pandas.Series.pad   Series.pad(axis=None, inplace=False, limit=None, downcast=None)[source]
+ 
+Synonym for DataFrame.fillna() with method='ffill'.  Returns 
+ Series/DataFrame or None
+
+Object with missing values filled or None if inplace=True.

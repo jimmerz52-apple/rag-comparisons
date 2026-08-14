@@ -1,0 +1,32 @@
+# django.ref.forms.fields#django.forms.MultiValueField.require_all_fields
+
+require_all_fields  
+Defaults to True, in which case a required validation error will be raised if no value is supplied for any field. When set to False, the Field.required attribute can be set to False for individual fields to make them optional. If no value is supplied for a required field, an incomplete validation error will be raised. A default incomplete error message can be defined on the MultiValueField subclass, or different messages can be defined on each individual field. For example: from django.core.validators import RegexValidator
+
+class PhoneField(MultiValueField):
+    def __init__(self, **kwargs):
+        # Define one message for all fields.
+        error_messages = {
+            'incomplete': 'Enter a country calling code and a phone number.',
+        }
+        # Or define a different message for each field.
+        fields = (
+            CharField(
+                error_messages={'incomplete': 'Enter a country calling code.'},
+                validators=[
+                    RegexValidator(r'^[0-9]+$', 'Enter a valid country calling code.'),
+                ],
+            ),
+            CharField(
+                error_messages={'incomplete': 'Enter a phone number.'},
+                validators=[RegexValidator(r'^[0-9]+$', 'Enter a valid phone number.')],
+            ),
+            CharField(
+                validators=[RegexValidator(r'^[0-9]+$', 'Enter a valid extension.')],
+                required=False,
+            ),
+        )
+        super().__init__(
+            error_messages=error_messages, fields=fields,
+            require_all_fields=False, **kwargs
+        )

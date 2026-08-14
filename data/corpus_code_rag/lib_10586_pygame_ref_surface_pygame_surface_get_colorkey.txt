@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_colorkey
+
+get_colorkey() 
+ Get the current transparent colorkey get_colorkey() -> RGB or None  Return the current colorkey value for the Surface. If the colorkey is not set then None is returned.

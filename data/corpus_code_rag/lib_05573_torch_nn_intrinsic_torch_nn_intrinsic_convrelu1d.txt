@@ -1,0 +1,5 @@
+# torch.nn.intrinsic#torch.nn.intrinsic.ConvReLU1d
+
+class torch.nn.intrinsic.ConvReLU1d(conv, relu) [source]
+ 
+This is a sequential container which calls the Conv1d and ReLU modules. During quantization this will be replaced with the corresponding fused module.

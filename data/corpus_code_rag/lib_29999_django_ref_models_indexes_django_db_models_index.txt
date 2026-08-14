@@ -1,0 +1,4 @@
+# django.ref.models.indexes#django.db.models.Index
+
+class Index(*expressions, fields=(), name=None, db_tablespace=None, opclasses=(), condition=None, include=None)  
+Creates an index (B-Tree) in the database.

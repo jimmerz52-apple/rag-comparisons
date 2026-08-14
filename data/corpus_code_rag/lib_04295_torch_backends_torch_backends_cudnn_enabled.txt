@@ -1,0 +1,4 @@
+# torch.backends#torch.backends.cudnn.enabled
+
+torch.backends.cudnn.enabled  
+A bool that controls whether cuDNN is enabled.

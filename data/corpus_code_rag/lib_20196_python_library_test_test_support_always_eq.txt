@@ -1,0 +1,4 @@
+# python.library.test#test.support.ALWAYS_EQ
+
+test.support.ALWAYS_EQ  
+Object that is equal to anything. Used to test mixed type comparison.

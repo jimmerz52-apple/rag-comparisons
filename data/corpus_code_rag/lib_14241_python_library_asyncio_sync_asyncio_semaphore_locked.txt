@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Semaphore.locked
+
+locked()  
+Returns True if semaphore can not be acquired immediately.

@@ -1,0 +1,15 @@
+# torch.distributions#torch.distributions.constraint_registry.ConstraintRegistry
+
+class torch.distributions.constraint_registry.ConstraintRegistry [source]
+ 
+Registry to link constraints to transforms.  
+register(constraint, factory=None) [source]
+ 
+Registers a Constraint subclass in this registry. Usage: @my_registry.register(MyConstraintClass)
+def construct_transform(constraint):
+    assert isinstance(constraint, MyConstraint)
+    return MyTransform(constraint.arg_constraints)
+  Parameters 
+ 
+constraint (subclass of Constraint) – A subclass of Constraint, or a singleton object of the desired class. 
+factory (callable) – A callable that inputs a constraint object and returns a Transform object.

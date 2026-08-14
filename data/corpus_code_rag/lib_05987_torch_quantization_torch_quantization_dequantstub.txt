@@ -1,0 +1,5 @@
+# torch.quantization#torch.quantization.DeQuantStub
+
+class torch.quantization.DeQuantStub [source]
+ 
+Dequantize stub module, before calibration, this is same as identity, this will be swapped as nnq.DeQuantize in convert.

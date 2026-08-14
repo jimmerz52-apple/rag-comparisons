@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.path
+
+path(name)  
+The local filesystem path where the file can be opened using Python’s standard open(). For storage systems that aren’t accessible from the local filesystem, this will raise NotImplementedError instead.

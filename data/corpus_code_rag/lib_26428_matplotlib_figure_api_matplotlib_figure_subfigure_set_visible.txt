@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.set_visible
+
+set_visible(b)[source]
+ 
+Set the artist's visibility.  Parameters 
+ 
+bbool

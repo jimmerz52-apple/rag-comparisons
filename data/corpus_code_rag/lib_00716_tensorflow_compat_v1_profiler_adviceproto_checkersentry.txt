@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.profiler.adviceproto.checkersentry
+
+tf.compat.v1.profiler.AdviceProto.CheckersEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   Checker value

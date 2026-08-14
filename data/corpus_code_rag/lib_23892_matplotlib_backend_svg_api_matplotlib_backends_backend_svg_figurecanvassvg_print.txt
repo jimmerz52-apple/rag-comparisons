@@ -1,0 +1,18 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.FigureCanvasSVG.print_svg
+
+print_svg(filename, *args, dpi=<deprecated parameter>, bbox_inches_restore=None, metadata=None)[source]
+ 
+ Parameters 
+ 
+filenamestr or path-like or file-like
+
+
+Output target; if a string, a file will be opened for writing.  
+metadatadict[str, Any], optional
+
+
+Metadata in the SVG file defined as key-value pairs of strings, datetimes, or lists of strings, e.g., {'Creator': 'My software',
+'Contributor': ['Me', 'My Friend'], 'Title': 'Awesome'}. The standard keys and their value types are:  
+str: 'Coverage', 'Description', 'Format', 'Identifier', 'Language', 'Relation', 'Source', 'Title', and 'Type'. 
+str or list of str: 'Contributor', 'Creator', 'Keywords', 'Publisher', and 'Rights'. 
+str, date, datetime, or tuple of same: 'Date'. If a non-str, then it will be formatted as ISO 8601.  Values have been predefined for 'Creator', 'Date', 'Format', and 'Type'. They can be removed by setting them to None. Information is encoded as Dublin Core Metadata.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.system_must_validate_cert
+
+test.support.system_must_validate_cert(f)  
+Raise unittest.SkipTest on TLS certification validation failures.

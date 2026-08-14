@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.USTAR_FORMAT
+
+tarfile.USTAR_FORMAT  
+POSIX.1-1988 (ustar) format.

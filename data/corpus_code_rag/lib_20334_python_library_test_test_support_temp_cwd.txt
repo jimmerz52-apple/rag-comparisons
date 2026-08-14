@@ -1,0 +1,4 @@
+# python.library.test#test.support.temp_cwd
+
+test.support.temp_cwd(name='tempcwd', quiet=False)  
+A context manager that temporarily creates a new directory and changes the current working directory (CWD). The context manager creates a temporary directory in the current directory with name name before temporarily changing the current working directory. If name is None, the temporary directory is created using tempfile.mkdtemp(). If quiet is False and it is not possible to create or change the CWD, an error is raised. Otherwise, only a warning is raised and the original CWD is used.

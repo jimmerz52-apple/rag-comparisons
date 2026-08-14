@@ -1,0 +1,13 @@
+# python.library.ssl#ssl.SSLSession
+
+class ssl.SSLSession  
+Session object used by session.  
+id 
+  
+time 
+  
+timeout 
+  
+ticket_lifetime_hint 
+  
+has_ticket

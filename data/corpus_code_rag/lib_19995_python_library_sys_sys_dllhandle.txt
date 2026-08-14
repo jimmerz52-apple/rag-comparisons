@@ -1,0 +1,4 @@
+# python.library.sys#sys.dllhandle
+
+sys.dllhandle  
+Integer specifying the handle of the Python DLL. Availability: Windows.

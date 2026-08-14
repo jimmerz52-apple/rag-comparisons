@@ -1,0 +1,7 @@
+# 596
+Task: 596
+
+# Write a function to find the size of the given tuple.
+import sys 
+def tuple_size(tuple_list):
+  return (sys.getsizeof(tuple_list))

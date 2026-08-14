@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.abstract
+
+Options.abstract  
+If abstract = True, this model will be an abstract base class.

@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.playmus.main
+
+playmus.main() 
+ play an audio file playmus.main(file_path) -> None  A simple music player with window and keyboard playback control. Playback can be paused and rewound to the beginning.

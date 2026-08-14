@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.subplotdivider#mpl_toolkits.axes_grid1.axes_divider.SubplotDivider.update_params
+
+update_params()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

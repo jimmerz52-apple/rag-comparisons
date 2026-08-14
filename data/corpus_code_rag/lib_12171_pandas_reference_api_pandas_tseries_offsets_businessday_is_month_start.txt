@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessday.is_month_start
+
+pandas.tseries.offsets.BusinessDay.is_month_start   BusinessDay.is_month_start()

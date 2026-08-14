@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_axis_on
+
+matplotlib.axes.Axes.set_axis_on   Axes.set_axis_on()[source]
+ 
+Turn the x- and y-axis on. This affects the axis lines, ticks, ticklabels, grid and axis labels.

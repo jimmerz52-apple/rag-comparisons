@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.connect_ex
+
+socket.connect_ex(address)  
+Like connect(address), but return an error indicator instead of raising an exception for errors returned by the C-level connect() call (other problems, such as “host not found,” can still raise exceptions). The error indicator is 0 if the operation succeeded, otherwise the value of the errno variable. This is useful to support, for example, asynchronous connects. Raises an auditing event socket.connect with arguments self, address.

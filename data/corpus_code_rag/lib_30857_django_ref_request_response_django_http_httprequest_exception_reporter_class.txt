@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.exception_reporter_class
+
+HttpRequest.exception_reporter_class  
+This will be used instead of DEFAULT_EXCEPTION_REPORTER for the current request. See Custom error reports for details.

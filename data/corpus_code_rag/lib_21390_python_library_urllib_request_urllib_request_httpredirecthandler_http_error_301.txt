@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPRedirectHandler.http_error_301
+
+HTTPRedirectHandler.http_error_301(req, fp, code, msg, hdrs)  
+Redirect to the Location: or URI: URL. This method is called by the parent OpenerDirector when getting an HTTP ‘moved permanently’ response.

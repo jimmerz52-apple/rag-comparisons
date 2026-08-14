@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_verts
+
+get_verts()[source]
+ 
+Return a copy of the vertices used in this patch. If the patch contains Bezier curves, the curves will be interpolated by line segments. To access the curves as curves, use get_path.

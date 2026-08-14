@@ -1,0 +1,7 @@
+# python.library.difflib#difflib.SequenceMatcher.ratio
+
+ratio()  
+Return a measure of the sequences’ similarity as a float in the range [0, 1]. Where T is the total number of elements in both sequences, and M is the number of matches, this is 2.0*M / T. Note that this is 1.0 if the sequences are identical, and 0.0 if they have nothing in common. This is expensive to compute if get_matching_blocks() or get_opcodes() hasn’t already been called, in which case you may want to try quick_ratio() or real_quick_ratio() first to get an upper bound.  Note Caution: The result of a ratio() call may depend on the order of the arguments. For instance: >>> SequenceMatcher(None, 'tide', 'diet').ratio()
+0.25
+>>> SequenceMatcher(None, 'diet', 'tide').ratio()
+0.5

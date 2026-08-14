@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.minimum
+
+minimum(other) → Tensor  
+See torch.minimum()

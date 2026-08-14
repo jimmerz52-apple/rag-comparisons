@@ -1,0 +1,16 @@
+# python.library.dataclasses#dataclasses.make_dataclass
+
+dataclasses.make_dataclass(cls_name, fields, *, bases=(), namespace=None, init=True, repr=True, eq=True, order=False, unsafe_hash=False, frozen=False)  
+Creates a new dataclass with name cls_name, fields as defined in fields, base classes as given in bases, and initialized with a namespace as given in namespace. fields is an iterable whose elements are each either name, (name, type), or (name, type, Field). If just name is supplied, typing.Any is used for type. The values of init, repr, eq, order, unsafe_hash, and frozen have the same meaning as they do in dataclass(). This function is not strictly required, because any Python mechanism for creating a new class with __annotations__ can then apply the dataclass() function to convert that class to a dataclass. This function is provided as a convenience. For example: C = make_dataclass('C',
+                   [('x', int),
+                     'y',
+                    ('z', int, field(default=5))],
+                   namespace={'add_one': lambda self: self.x + 1})
+ Is equivalent to: @dataclass
+class C:
+    x: int
+    y: 'typing.Any'
+    z: int = 5
+
+    def add_one(self):
+        return self.x + 1

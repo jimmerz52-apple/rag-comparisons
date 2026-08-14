@@ -1,0 +1,6 @@
+# werkzeug.http.index#werkzeug.http.generate_etag
+
+werkzeug.http.generate_etag(data)  
+Generate an etag for some data.  Changed in version 2.0: Use SHA-1. MD5 may not be available in some environments.   Parameters 
+data (bytes) –   Return type 
+str

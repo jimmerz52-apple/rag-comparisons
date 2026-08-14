@@ -1,0 +1,4 @@
+# python.library.os#os.SCHED_BATCH
+
+os.SCHED_BATCH  
+Scheduling policy for CPU-intensive processes that tries to preserve interactivity on the rest of the computer.

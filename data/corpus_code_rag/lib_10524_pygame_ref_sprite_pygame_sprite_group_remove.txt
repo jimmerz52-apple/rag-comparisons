@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Group.remove
+
+remove() 
+ remove Sprites from the Group remove(*sprites) -> None  Remove any number of Sprites from the Group. This will only remove Sprites that are already members of the Group. Each sprite argument can also be a iterator containing Sprites.

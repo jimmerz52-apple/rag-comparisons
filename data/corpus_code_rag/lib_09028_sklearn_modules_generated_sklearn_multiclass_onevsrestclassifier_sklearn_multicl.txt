@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsrestclassifier#sklearn.multiclass.OneVsRestClassifier.fit
+
+fit(X, y) [source]
+ 
+Fit underlying estimators.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.  
+y(sparse) array-like of shape (n_samples,) or (n_samples, n_classes) 
+
+Multi-class targets. An indicator matrix turns on multilabel classification.    Returns 
+ self

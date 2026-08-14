@@ -1,0 +1,39 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.formatterdms
+
+mpl_toolkits.axisartist.angle_helper.FormatterDMS   classmpl_toolkits.axisartist.angle_helper.FormatterDMS[source]
+ 
+Bases: object   __call__(direction, factor, values)[source]
+ 
+Call self as a function. 
+   deg_mark='^{\\circ}'
+
+   fmt_d='$%d^{\\circ}$'
+
+   fmt_d_m='$%s%d^{\\circ}\\,%02d^{\\prime}$'
+
+   fmt_d_m_partial='$%s%d^{\\circ}\\,%02d^{\\prime}\\,'
+
+   fmt_d_ms='$%s%d^{\\circ}\\,%02d.%s^{\\prime}$'
+
+   fmt_ds='$%d.%s^{\\circ}$'
+
+   fmt_s_partial='%02d^{\\prime\\prime}$'
+
+   fmt_ss_partial='%02d.%s^{\\prime\\prime}$'
+
+   min_mark='^{\\prime}'
+
+   sec_mark='^{\\prime\\prime}'
+
+ 
+  Examples using mpl_toolkits.axisartist.angle_helper.FormatterDMS
+ 
+   axis_direction demo   
+
+   Curvilinear grid demo   
+
+   mpl_toolkits.axisartist.floating_axes features   
+
+   floating_axis demo   
+
+   Simple Axis Pad

@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.HStoreField
+
+class HStoreField  
+A field which accepts JSON encoded data for an HStoreField. It casts all values (except nulls) to strings. It is represented by an HTML <textarea>.  User friendly forms HStoreField is not particularly user friendly in most cases, however it is a useful way to format data from a client-side widget for submission to the server.   Note On occasions it may be useful to require or restrict the keys which are valid for a given field. This can be done using the KeysValidator.

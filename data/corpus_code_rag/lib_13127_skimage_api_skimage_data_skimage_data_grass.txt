@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.grass
+
+skimage.data.grass() [source]
+ 
+Grass.  Returns 
+ 
+grass(512, 512) uint8 image 
+
+Some grass.     Notes The original image was downloaded from DeviantArt and licensed underthe Creative Commons CC0 License. The downloaded image was cropped to include a region of (512, 512) pixels around the top left corner, converted to grayscale, then to uint8 prior to saving the result in PNG format.

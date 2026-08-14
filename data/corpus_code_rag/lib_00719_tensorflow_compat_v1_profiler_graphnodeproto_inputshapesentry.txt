@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.profiler.graphnodeproto.inputshapesentry
+
+tf.compat.v1.profiler.GraphNodeProto.InputShapesEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   int32 key  
+  value   TensorShapeProto value

@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.get_bottom_layer
+
+get_bottom_layer() 
+ returns the bottom layer get_bottom_layer() -> layer

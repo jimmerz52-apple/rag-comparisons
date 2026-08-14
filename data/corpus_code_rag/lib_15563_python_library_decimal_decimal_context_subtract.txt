@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.subtract
+
+subtract(x, y)  
+Return the difference between x and y.

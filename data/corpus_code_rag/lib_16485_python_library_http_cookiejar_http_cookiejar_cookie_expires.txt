@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.expires
+
+Cookie.expires  
+Integer expiry date in seconds since epoch, or None. See also the is_expired() method.

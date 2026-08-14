@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.abstractmethoderror
+
+pandas.errors.AbstractMethodError   exceptionpandas.errors.AbstractMethodError(class_instance, methodtype='method')[source]
+ 
+Raise this error instead of NotImplementedError for abstract methods while keeping compatibility with Python 2 and Python 3.

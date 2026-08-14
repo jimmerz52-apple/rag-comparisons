@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLContext.sslobject_class
+
+SSLContext.sslobject_class  
+The return type of SSLContext.wrap_bio(), defaults to SSLObject. The attribute can be overridden on instance of class in order to return a custom subclass of SSLObject.  New in version 3.7.

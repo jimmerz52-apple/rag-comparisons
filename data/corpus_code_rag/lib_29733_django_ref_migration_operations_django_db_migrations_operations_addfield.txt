@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AddField
+
+class AddField(model_name, name, field, preserve_default=True)

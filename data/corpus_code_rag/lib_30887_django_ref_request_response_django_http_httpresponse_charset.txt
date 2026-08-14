@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.charset
+
+HttpResponse.charset  
+A string denoting the charset in which the response will be encoded. If not given at HttpResponse instantiation time, it will be extracted from content_type and if that is unsuccessful, the DEFAULT_CHARSET setting will be used.

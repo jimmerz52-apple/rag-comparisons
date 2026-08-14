@@ -1,0 +1,5 @@
+# numpy.reference.constants#numpy.NaN
+
+numpy.NaN
+ 
+IEEE 754 floating point representation of Not a Number (NaN). NaN and NAN are equivalent definitions of nan. Please use nan instead of NaN. See Also nan

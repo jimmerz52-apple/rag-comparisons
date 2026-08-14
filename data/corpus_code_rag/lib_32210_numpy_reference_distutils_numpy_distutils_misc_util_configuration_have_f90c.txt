@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.have_f90c
+
+have_f90c()[source]
+ 
+Check for availability of Fortran 90 compiler. Use it inside source generating function to ensure that setup distribution instance has been initialized. Notes True if a Fortran 90 compiler is available (because a simple Fortran 90 code was able to be compiled successfully)

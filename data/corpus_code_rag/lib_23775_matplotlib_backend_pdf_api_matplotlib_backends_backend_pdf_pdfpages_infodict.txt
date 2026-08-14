@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfPages.infodict
+
+infodict()[source]
+ 
+Return a modifiable information dictionary object (see PDF reference section 10.2.1 'Document Information Dictionary').

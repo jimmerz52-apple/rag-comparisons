@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertTemplateNotUsed
+
+SimpleTestCase.assertTemplateNotUsed(response, template_name, msg_prefix='')  
+Asserts that the template with the given name was not used in rendering the response. You can use this as a context manager in the same way as assertTemplateUsed().

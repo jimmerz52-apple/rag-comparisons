@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.db.connection.creation.destroy_test_db
+
+destroy_test_db(old_database_name, verbosity=1, keepdb=False)  
+Destroys the database whose name is the value of NAME in DATABASES, and sets NAME to the value of old_database_name. The verbosity argument has the same behavior as for DiscoverRunner. If the keepdb argument is True, then the connection to the database will be closed, but the database will not be destroyed.

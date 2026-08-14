@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.iscoroutinefunction
+
+asyncio.iscoroutinefunction(func)  
+Return True if func is a coroutine function. This method is different from inspect.iscoroutinefunction() because it returns True for generator-based coroutine functions decorated with @coroutine.

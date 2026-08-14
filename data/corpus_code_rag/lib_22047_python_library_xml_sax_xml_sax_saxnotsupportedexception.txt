@@ -1,0 +1,4 @@
+# python.library.xml.sax#xml.sax.SAXNotSupportedException
+
+exception xml.sax.SAXNotSupportedException(msg, exception=None)  
+Subclass of SAXException raised when a SAX XMLReader is asked to enable a feature that is not supported, or to set a property to a value that the implementation does not support. SAX applications and extensions may use this class for similar purposes.

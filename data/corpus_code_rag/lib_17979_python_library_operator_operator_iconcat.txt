@@ -1,0 +1,5 @@
+# python.library.operator#operator.iconcat
+
+operator.iconcat(a, b)  
+operator.__iconcat__(a, b)  
+a = iconcat(a, b) is equivalent to a += b for a and b sequences.

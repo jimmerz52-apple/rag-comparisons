@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.remainder_
+
+remainder_(divisor) → Tensor  
+In-place version of remainder()

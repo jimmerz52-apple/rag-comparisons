@@ -1,0 +1,73 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler
+
+class wsgiref.handlers.BaseHandler  
+This is an abstract base class for running WSGI applications. Each instance will handle a single HTTP request, although in principle you could create a subclass that was reusable for multiple requests. BaseHandler instances have only one method intended for external use:  
+run(app)  
+Run the specified WSGI application, app. 
+ All of the other BaseHandler methods are invoked by this method in the process of running the application, and thus exist primarily to allow customizing the process. The following methods MUST be overridden in a subclass:  
+_write(data)  
+Buffer the bytes data for transmission to the client. It’s okay if this method actually transmits the data; BaseHandler just separates write and flush operations for greater efficiency when the underlying system actually has such a distinction. 
+  
+_flush()  
+Force buffered data to be transmitted to the client. It’s okay if this method is a no-op (i.e., if _write() actually sends the data). 
+  
+get_stdin()  
+Return an input stream object suitable for use as the wsgi.input of the request currently being processed. 
+  
+get_stderr()  
+Return an output stream object suitable for use as the wsgi.errors of the request currently being processed. 
+  
+add_cgi_vars()  
+Insert CGI variables for the current request into the environ attribute. 
+ Here are some other methods and attributes you may wish to override. This list is only a summary, however, and does not include every method that can be overridden. You should consult the docstrings and source code for additional information before attempting to create a customized BaseHandler subclass. Attributes and methods for customizing the WSGI environment:  
+wsgi_multithread  
+The value to be used for the wsgi.multithread environment variable. It defaults to true in BaseHandler, but may have a different default (or be set by the constructor) in the other subclasses. 
+  
+wsgi_multiprocess  
+The value to be used for the wsgi.multiprocess environment variable. It defaults to true in BaseHandler, but may have a different default (or be set by the constructor) in the other subclasses. 
+  
+wsgi_run_once  
+The value to be used for the wsgi.run_once environment variable. It defaults to false in BaseHandler, but CGIHandler sets it to true by default. 
+  
+os_environ  
+The default environment variables to be included in every request’s WSGI environment. By default, this is a copy of os.environ at the time that wsgiref.handlers was imported, but subclasses can either create their own at the class or instance level. Note that the dictionary should be considered read-only, since the default value is shared between multiple classes and instances. 
+  
+server_software  
+If the origin_server attribute is set, this attribute’s value is used to set the default SERVER_SOFTWARE WSGI environment variable, and also to set a default Server: header in HTTP responses. It is ignored for handlers (such as BaseCGIHandler and CGIHandler) that are not HTTP origin servers.  Changed in version 3.3: The term “Python” is replaced with implementation specific term like “CPython”, “Jython” etc.  
+  
+get_scheme()  
+Return the URL scheme being used for the current request. The default implementation uses the guess_scheme() function from wsgiref.util to guess whether the scheme should be “http” or “https”, based on the current request’s environ variables. 
+  
+setup_environ()  
+Set the environ attribute to a fully-populated WSGI environment. The default implementation uses all of the above methods and attributes, plus the get_stdin(), get_stderr(), and add_cgi_vars() methods and the wsgi_file_wrapper attribute. It also inserts a SERVER_SOFTWARE key if not present, as long as the origin_server attribute is a true value and the server_software attribute is set. 
+ Methods and attributes for customizing exception handling:  
+log_exception(exc_info)  
+Log the exc_info tuple in the server log. exc_info is a (type, value,
+traceback) tuple. The default implementation simply writes the traceback to the request’s wsgi.errors stream and flushes it. Subclasses can override this method to change the format or retarget the output, mail the traceback to an administrator, or whatever other action may be deemed suitable. 
+  
+traceback_limit  
+The maximum number of frames to include in tracebacks output by the default log_exception() method. If None, all frames are included. 
+  
+error_output(environ, start_response)  
+This method is a WSGI application to generate an error page for the user. It is only invoked if an error occurs before headers are sent to the client. This method can access the current error information using sys.exc_info(), and should pass that information to start_response when calling it (as described in the “Error Handling” section of PEP 3333). The default implementation just uses the error_status, error_headers, and error_body attributes to generate an output page. Subclasses can override this to produce more dynamic error output. Note, however, that it’s not recommended from a security perspective to spit out diagnostics to any old user; ideally, you should have to do something special to enable diagnostic output, which is why the default implementation doesn’t include any. 
+  
+error_status  
+The HTTP status used for error responses. This should be a status string as defined in PEP 3333; it defaults to a 500 code and message. 
+  
+error_headers  
+The HTTP headers used for error responses. This should be a list of WSGI response headers ((name, value) tuples), as described in PEP 3333. The default list just sets the content type to text/plain. 
+  
+error_body  
+The error response body. This should be an HTTP response body bytestring. It defaults to the plain text, “A server error occurred. Please contact the administrator.” 
+ Methods and attributes for PEP 3333’s “Optional Platform-Specific File Handling” feature:  
+wsgi_file_wrapper  
+A wsgi.file_wrapper factory, or None. The default value of this attribute is the wsgiref.util.FileWrapper class. 
+  
+sendfile()  
+Override to implement platform-specific file transmission. This method is called only if the application’s return value is an instance of the class specified by the wsgi_file_wrapper attribute. It should return a true value if it was able to successfully transmit the file, so that the default transmission code will not be executed. The default implementation of this method just returns a false value. 
+ Miscellaneous methods and attributes:  
+origin_server  
+This attribute should be set to a true value if the handler’s _write() and _flush() are being used to communicate directly to the client, rather than via a CGI-like gateway protocol that wants the HTTP status in a special Status: header. This attribute’s default value is true in BaseHandler, but false in BaseCGIHandler and CGIHandler. 
+  
+http_version  
+If origin_server is true, this string attribute is used to set the HTTP version of the response set to the client. It defaults to "1.0".

@@ -1,0 +1,16 @@
+# django.topics.auth.default#django.contrib.auth.decorators.user_passes_test
+
+user_passes_test(test_func, login_url=None, redirect_field_name='next')  
+As a shortcut, you can use the convenient user_passes_test decorator which performs a redirect when the callable returns False: from django.contrib.auth.decorators import user_passes_test
+
+def email_check(user):
+    return user.email.endswith('@example.com')
+
+@user_passes_test(email_check)
+def my_view(request):
+    ...
+ user_passes_test() takes a required argument: a callable that takes a User object and returns True if the user is allowed to view the page. Note that user_passes_test() does not automatically check that the User is not anonymous. user_passes_test() takes two optional arguments:  
+login_url  Lets you specify the URL that users who don’t pass the test will be redirected to. It may be a login page and defaults to settings.LOGIN_URL if you don’t specify one. 
+redirect_field_name  Same as for login_required(). Setting it to None removes it from the URL, which you may want to do if you are redirecting users that don’t pass the test to a non-login page where there’s no “next page”.  For example: @user_passes_test(email_check, login_url='/login/')
+def my_view(request):
+    ...

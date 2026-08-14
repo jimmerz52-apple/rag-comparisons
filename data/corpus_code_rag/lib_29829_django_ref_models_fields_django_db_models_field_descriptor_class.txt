@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.descriptor_class
+
+descriptor_class  
+A class implementing the descriptor protocol that is instantiated and assigned to the model instance attribute. The constructor must accept a single argument, the Field instance. Overriding this class attribute allows for customizing the get and set behavior.

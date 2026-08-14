@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.set_nonstandard_attr
+
+Cookie.set_nonstandard_attr(name, value)  
+Set the value of the named cookie-attribute.

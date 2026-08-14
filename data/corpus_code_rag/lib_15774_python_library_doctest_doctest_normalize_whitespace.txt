@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.NORMALIZE_WHITESPACE
+
+doctest.NORMALIZE_WHITESPACE  
+When specified, all sequences of whitespace (blanks and newlines) are treated as equal. Any sequence of whitespace within the expected output will match any sequence of whitespace within the actual output. By default, whitespace must match exactly. NORMALIZE_WHITESPACE is especially useful when a line of expected output is very long, and you want to wrap it across multiple lines in your source.

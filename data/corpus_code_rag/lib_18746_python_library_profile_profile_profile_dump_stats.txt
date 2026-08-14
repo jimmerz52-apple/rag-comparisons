@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.dump_stats
+
+dump_stats(filename)  
+Write the results of the current profile to filename.

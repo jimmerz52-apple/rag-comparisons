@@ -1,0 +1,31 @@
+# matplotlib._as_gen.matplotlib.axis.xaxis.set_ticks_position
+
+matplotlib.axis.XAxis.set_ticks_position   XAxis.set_ticks_position(position)[source]
+ 
+Set the ticks position.  Parameters 
+ 
+position{'top', 'bottom', 'both', 'default', 'none'}
+
+
+'both' sets the ticks to appear on both positions, but does not change the tick labels. 'default' resets the tick positions to the default: ticks on both positions, labels at bottom. 'none' can be used if you don't want any ticks. 'none' and 'both' affect only the ticks, not the labels.     
+  Examples using matplotlib.axis.XAxis.set_ticks_position
+ 
+   Violin plot customization   
+
+   Colorbar with AxesDivider   
+
+   Controlling the position and size of colorbars with Inset Axes   
+
+   Integral as the area under a curve   
+
+   XKCD   
+
+   Spine Placement   
+
+   Spines   
+
+   Custom spine bounds   
+
+   Dropped spines   
+
+   Choosing Colormaps in Matplotlib

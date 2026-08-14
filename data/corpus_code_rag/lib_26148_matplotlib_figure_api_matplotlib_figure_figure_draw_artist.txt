@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.draw_artist
+
+draw_artist(a)[source]
+ 
+Draw Artist a only. This method can only be used after an initial draw of the figure, because that creates and caches the renderer needed here.

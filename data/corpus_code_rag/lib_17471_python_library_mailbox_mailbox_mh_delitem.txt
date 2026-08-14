@@ -1,0 +1,6 @@
+# python.library.mailbox#mailbox.MH.__delitem__
+
+remove(key)  
+__delitem__(key)  
+discard(key)  
+These methods immediately delete the message. The MH convention of marking a message for deletion by prepending a comma to its name is not used.

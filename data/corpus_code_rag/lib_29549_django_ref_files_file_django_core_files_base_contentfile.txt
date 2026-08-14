@@ -1,0 +1,8 @@
+# django.ref.files.file#django.core.files.base.ContentFile
+
+class ContentFile(content, name=None) [source]
+ 
+The ContentFile class inherits from File, but unlike File it operates on string content (bytes also supported), rather than an actual file. For example: from django.core.files.base import ContentFile
+
+f1 = ContentFile("esta frase está en español")
+f2 = ContentFile(b"these are bytes")

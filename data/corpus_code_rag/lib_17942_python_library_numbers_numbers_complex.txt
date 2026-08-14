@@ -1,0 +1,13 @@
+# python.library.numbers#numbers.Complex
+
+class numbers.Complex  
+Subclasses of this type describe complex numbers and include the operations that work on the built-in complex type. These are: conversions to complex and bool, real, imag, +, -, *, /, abs(), conjugate(), ==, and !=. All except - and != are abstract.  
+real  
+Abstract. Retrieves the real component of this number. 
+  
+imag  
+Abstract. Retrieves the imaginary component of this number. 
+  
+abstractmethod conjugate()  
+Abstract. Returns the complex conjugate. For example, (1+3j).conjugate()
+== (1-3j).

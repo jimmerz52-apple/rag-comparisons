@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.moduledict#torch.nn.ModuleDict.clear
+
+clear() [source]
+ 
+Remove all items from the ModuleDict.

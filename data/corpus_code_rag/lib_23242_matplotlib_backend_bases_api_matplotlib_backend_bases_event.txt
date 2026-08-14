@@ -1,0 +1,16 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.Event
+
+classmatplotlib.backend_bases.Event(name, canvas, guiEvent=None)[source]
+ 
+Bases: object A Matplotlib event. The following attributes are defined and shown with their default values. Subclasses may define additional attributes.  Attributes 
+ 
+namestr
+
+
+The event name.  
+canvasFigureCanvasBase
+
+
+The backend-specific canvas instance generating the event.  guiEvent
+
+The GUI event that triggered the Matplotlib event.

@@ -1,0 +1,13 @@
+# django.ref.forms.fields#django.forms.JSONField
+
+class JSONField(encoder=None, decoder=None, **kwargs)  
+A field which accepts JSON encoded data for a JSONField.  Default widget: Textarea
+ Empty value: None
+ Normalizes to: A Python representation of the JSON value (usually as a dict, list, or None), depending on JSONField.decoder. Validates that the given value is a valid JSON. Error message keys: required, invalid
+  Takes two optional arguments:  
+encoder  
+A json.JSONEncoder subclass to serialize data types not supported by the standard JSON serializer (e.g. datetime.datetime or UUID). For example, you can use the DjangoJSONEncoder class. Defaults to json.JSONEncoder. 
+  
+decoder  
+A json.JSONDecoder subclass to deserialize the input. Your deserialization may need to account for the fact that you can’t be certain of the input type. For example, you run the risk of returning a datetime that was actually a string that just happened to be in the same format chosen for datetimes. The decoder can be used to validate the input. If json.JSONDecodeError is raised during the deserialization, a ValidationError will be raised. Defaults to json.JSONDecoder. 
+  Note If you use a ModelForm, the encoder and decoder from JSONField will be used.   User friendly forms JSONField is not particularly user friendly in most cases. However, it is a useful way to format data from a client-side widget for submission to the server.

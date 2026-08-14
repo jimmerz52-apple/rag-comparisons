@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.get_version
+
+BaseCommand.get_version()  
+Returns the Django version, which should be correct for all built-in Django commands. User-supplied commands can override this method to return their own version.

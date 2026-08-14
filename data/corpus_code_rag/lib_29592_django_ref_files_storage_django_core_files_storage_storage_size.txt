@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.size
+
+size(name)  
+Returns the total size, in bytes, of the file referenced by name. For storage systems that aren’t able to return the file size this will raise NotImplementedError instead.

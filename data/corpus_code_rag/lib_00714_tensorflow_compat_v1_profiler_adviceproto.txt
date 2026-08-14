@@ -1,0 +1,8 @@
+# tensorflow.compat.v1.profiler.adviceproto
+
+tf.compat.v1.profiler.AdviceProto A ProtocolMessage
+ 
+
+
+ Attributes
+  checkers   repeated CheckersEntry checkers    Child Classes class Checker class CheckersEntry

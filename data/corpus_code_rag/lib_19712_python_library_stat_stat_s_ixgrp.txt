@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IXGRP
+
+stat.S_IXGRP  
+Group has execute permission.

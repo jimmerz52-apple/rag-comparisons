@@ -1,0 +1,17 @@
+# matplotlib.transformations#matplotlib.transforms.interval_contains
+
+matplotlib.transforms.interval_contains(interval, val)[source]
+ 
+Check, inclusively, whether an interval includes a given value.  Parameters 
+ 
+interval(float, float)
+
+
+The endpoints of the interval.  
+valfloat
+
+
+Value to check is within interval.    Returns 
+ bool
+
+Whether val is within the interval.

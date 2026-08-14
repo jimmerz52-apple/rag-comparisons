@@ -1,0 +1,14 @@
+# django.ref.validators#django.core.validators.ProhibitNullCharactersValidator
+
+class ProhibitNullCharactersValidator(message=None, code=None)  
+Raises a ValidationError if str(value) contains one or more nulls characters ('\x00').    
+Parameters:
+
+ 
+message – If not None, overrides message. 
+code – If not None, overrides code.      
+message  
+The error message used by ValidationError if validation fails. Defaults to "Null characters are not allowed.". 
+  
+code  
+The error code used by ValidationError if validation fails. Defaults to "null_characters_not_allowed".

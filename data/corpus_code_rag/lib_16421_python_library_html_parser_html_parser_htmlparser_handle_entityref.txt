@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.handle_entityref
+
+HTMLParser.handle_entityref(name)  
+This method is called to process a named character reference of the form &name; (e.g. &gt;), where name is a general entity reference (e.g. 'gt'). This method is never called if convert_charrefs is True.

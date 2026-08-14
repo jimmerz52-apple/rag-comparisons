@@ -1,0 +1,20 @@
+# matplotlib.transformations#matplotlib.transforms.CompositeAffine2D
+
+classmatplotlib.transforms.CompositeAffine2D(a, b, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase A composite transform formed by applying transform a then transform b. This version is an optimization that handles the case where both a and b are 2D affines. Create a new composite transform that is the result of applying Affine2DBase a then Affine2DBase b. You will generally not call this constructor directly but write a +
+b instead, which will automatically choose the best kind of composite transform instance to create.   __init__(a, b, **kwargs)[source]
+ 
+Create a new composite transform that is the result of applying Affine2DBase a then Affine2DBase b. You will generally not call this constructor directly but write a +
+b instead, which will automatically choose the best kind of composite transform instance to create. 
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   propertydepth
+ 
+Return the number of transforms which have been chained together to form this Transform instance.  Note For the special case of a Composite transform, the maximum depth of the two is returned.  
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform.

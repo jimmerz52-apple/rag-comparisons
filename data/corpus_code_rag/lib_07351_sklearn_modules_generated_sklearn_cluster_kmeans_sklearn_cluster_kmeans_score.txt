@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.cluster.kmeans#sklearn.cluster.KMeans.score
+
+score(X, y=None, sample_weight=None) [source]
+ 
+Opposite of the value of X on the K-means objective.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+New data.  
+yIgnored 
+
+Not used, present here for API consistency by convention.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+The weights for each observation in X. If None, all observations are assigned equal weight.    Returns 
+ 
+scorefloat 
+
+Opposite of the value of X on the K-means objective.

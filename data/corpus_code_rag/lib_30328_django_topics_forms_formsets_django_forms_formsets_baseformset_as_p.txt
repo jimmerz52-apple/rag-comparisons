@@ -1,0 +1,4 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.as_p
+
+BaseFormSet.as_p()  
+Renders the formset with the template_name_p template.

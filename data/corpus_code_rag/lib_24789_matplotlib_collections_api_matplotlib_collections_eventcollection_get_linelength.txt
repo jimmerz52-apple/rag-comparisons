@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_linelength
+
+get_linelength()[source]
+ 
+Return the length of the lines used to mark each event.

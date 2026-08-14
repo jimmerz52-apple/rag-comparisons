@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.permission_denied_message
+
+permission_denied_message  
+Default return value for get_permission_denied_message(). Defaults to an empty string.

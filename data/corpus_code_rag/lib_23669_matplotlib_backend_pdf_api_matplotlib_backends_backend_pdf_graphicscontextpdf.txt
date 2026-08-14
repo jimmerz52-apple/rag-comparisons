@@ -1,0 +1,51 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.GraphicsContextPdf
+
+classmatplotlib.backends.backend_pdf.GraphicsContextPdf(file)[source]
+ 
+Bases: matplotlib.backend_bases.GraphicsContextBase   alpha_cmd(alpha, forced, effective_alphas)[source]
+
+   capstyle_cmd(style)[source]
+
+   capstyles={'butt': 0, 'projecting': 2, 'round': 1}
+
+   clip_cmd(cliprect, clippath)[source]
+ 
+Set clip rectangle. Calls pop() and push(). 
+   commands=((('_cliprect', '_clippath'), <function GraphicsContextPdf.clip_cmd>), (('_alpha', '_forced_alpha', '_effective_alphas'), <function GraphicsContextPdf.alpha_cmd>), (('_capstyle',), <function GraphicsContextPdf.capstyle_cmd>), (('_fillcolor',), <function GraphicsContextPdf.fillcolor_cmd>), (('_joinstyle',), <function GraphicsContextPdf.joinstyle_cmd>), (('_linewidth',), <function GraphicsContextPdf.linewidth_cmd>), (('_dashes',), <function GraphicsContextPdf.dash_cmd>), (('_rgb',), <function GraphicsContextPdf.rgb_cmd>), (('_hatch', '_hatch_color'), <function GraphicsContextPdf.hatch_cmd>))
+
+   copy_properties(other)[source]
+ 
+Copy properties of other into self. 
+   dash_cmd(dashes)[source]
+
+   delta(other)[source]
+ 
+Copy properties of other into self and return PDF commands needed to transform self into other. 
+   fill(*args)[source]
+ 
+Predicate: does the path need to be filled? An optional argument can be used to specify an alternative _fillcolor, as needed by RendererPdf.draw_markers. 
+   fillcolor_cmd(rgb)[source]
+
+   finalize()[source]
+ 
+Make sure every pushed graphics state is popped. 
+   hatch_cmd(hatch, hatch_color)[source]
+
+   joinstyle_cmd(style)[source]
+
+   joinstyles={'bevel': 2, 'miter': 0, 'round': 1}
+
+   linewidth_cmd(width)[source]
+
+   paint()[source]
+ 
+Return the appropriate pdf operator to cause the path to be stroked, filled, or both. 
+   pop()[source]
+
+   push()[source]
+
+   rgb_cmd(rgb)[source]
+
+   stroke()[source]
+ 
+Predicate: does the path need to be stroked (its outline drawn)? This tests for the various conditions that disable stroking the path, in which case it would presumably be filled.

@@ -1,0 +1,11 @@
+# matplotlib.toolkits.axes_grid1
+
+mpl_toolkits.axes_grid1 mpl_toolkits.axes_grid1 provides a framework of helper classes to adjust the positioning of multiple fixed-aspect Axes (e.g., displaying images). It can be contrasted with the aspect property of Matplotlib Axes, which adjusts the position of a single Axes. See Overview of mpl_toolkits.axes_grid1 for a guide on the usage of axes_grid1.    The submodules of the axes_grid1 API are:  
+axes_grid1.anchored_artists   
+axes_grid1.axes_divider Helper classes to adjust the positions of multiple axes at drawing time.  
+axes_grid1.axes_grid   
+axes_grid1.axes_rgb   
+axes_grid1.axes_size Provides classes of simple units that will be used with AxesDivider class (or others) to determine the size of each axes.  
+axes_grid1.inset_locator A collection of functions and objects for creating or placing inset axes.  
+axes_grid1.mpl_axes   
+axes_grid1.parasite_axes

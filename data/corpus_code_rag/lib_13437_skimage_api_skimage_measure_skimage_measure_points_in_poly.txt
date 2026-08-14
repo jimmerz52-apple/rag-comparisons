@@ -1,0 +1,17 @@
+# skimage.api.skimage.measure#skimage.measure.points_in_poly
+
+skimage.measure.points_in_poly(points, verts) [source]
+ 
+Test whether points lie inside a polygon.  Parameters 
+ 
+points(N, 2) array 
+
+Input points, (x, y).  
+verts(M, 2) array 
+
+Vertices of the polygon, sorted either clockwise or anti-clockwise. The first point may (but does not need to be) duplicated.    Returns 
+ 
+mask(N,) array of bool 
+
+True if corresponding point is inside the polygon.      See also  
+grid_points_in_poly

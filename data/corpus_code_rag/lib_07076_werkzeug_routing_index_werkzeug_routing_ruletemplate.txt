@@ -1,0 +1,14 @@
+# werkzeug.routing.index#werkzeug.routing.RuleTemplate
+
+class werkzeug.routing.RuleTemplate(rules)  
+Returns copies of the rules wrapped and expands string templates in the endpoint, rule, defaults or subdomain sections. Here a small example for such a rule template: from werkzeug.routing import Map, Rule, RuleTemplate
+
+resource = RuleTemplate([
+    Rule('/$name/', endpoint='$name.list'),
+    Rule('/$name/<int:id>', endpoint='$name.show')
+])
+
+url_map = Map([resource(name='user'), resource(name='page')])
+ When a rule template is called the keyword arguments are used to replace the placeholders in all the string parameters.  Parameters 
+rules (Iterable[Rule]) –   Return type 
+None

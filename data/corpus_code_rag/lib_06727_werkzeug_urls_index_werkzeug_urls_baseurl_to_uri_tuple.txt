@@ -1,0 +1,5 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.to_uri_tuple
+
+to_uri_tuple()  
+Returns a BytesURL tuple that holds a URI. This will encode all the information in the URL properly to ASCII using the rules a web browser would follow. It’s usually more interesting to directly call iri_to_uri() which will return a string.  Return type 
+werkzeug.urls.BaseURL

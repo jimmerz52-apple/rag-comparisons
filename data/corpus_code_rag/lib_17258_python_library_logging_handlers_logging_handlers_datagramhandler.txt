@@ -1,0 +1,12 @@
+# python.library.logging.handlers#logging.handlers.DatagramHandler
+
+class logging.handlers.DatagramHandler(host, port)  
+Returns a new instance of the DatagramHandler class intended to communicate with a remote machine whose address is given by host and port.  Changed in version 3.4: If port is specified as None, a Unix domain socket is created using the value in host - otherwise, a UDP socket is created.   
+emit()  
+Pickles the record’s attribute dictionary and writes it to the socket in binary format. If there is an error with the socket, silently drops the packet. To unpickle the record at the receiving end into a LogRecord, use the makeLogRecord() function. 
+  
+makeSocket()  
+The factory method of SocketHandler is here overridden to create a UDP socket (socket.SOCK_DGRAM). 
+  
+send(s)  
+Send a pickled byte-string to a socket. The format of the sent byte-string is as described in the documentation for SocketHandler.makePickle().

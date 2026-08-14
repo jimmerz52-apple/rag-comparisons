@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.end_pan
+
+end_pan()[source]
+ 
+Called when a pan operation completes (when the mouse button is up.) Notes This is intended to be overridden by new projection types.

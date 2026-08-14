@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_clip_box
+
+get_clip_box()[source]
+ 
+Return the clipbox.

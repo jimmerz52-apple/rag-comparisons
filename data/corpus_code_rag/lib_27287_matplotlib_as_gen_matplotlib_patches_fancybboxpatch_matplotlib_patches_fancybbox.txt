@@ -1,0 +1,16 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_bounds
+
+set_bounds(*args)[source]
+ 
+Set the bounds of the rectangle. Call signatures: set_bounds(left, bottom, width, height)
+set_bounds((left, bottom, width, height))
+  Parameters 
+ 
+left, bottomfloat
+
+
+The coordinates of the bottom left corner of the rectangle.  
+width, heightfloat
+
+
+The width/height of the rectangle.

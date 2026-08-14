@@ -1,0 +1,6 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.contains
+
+contains(mouseevent)[source]
+ 
+Test whether the mouse event occurred on the figure.  Returns 
+ bool, {}

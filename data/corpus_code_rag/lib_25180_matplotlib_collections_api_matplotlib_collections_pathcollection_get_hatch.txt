@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PathCollection.get_hatch
+
+get_hatch()[source]
+ 
+Return the current hatching pattern.

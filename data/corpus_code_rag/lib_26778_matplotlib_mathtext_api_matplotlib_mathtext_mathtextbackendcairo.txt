@@ -1,0 +1,13 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackendCairo
+
+classmatplotlib.mathtext.MathtextBackendCairo[source]
+ 
+Bases: matplotlib.mathtext.MathtextBackend [Deprecated] Store information to write a mathtext rendering to the Cairo backend. Notes  Deprecated since version 3.4.    get_results(box, used_characters)[source]
+ 
+Return a backend-specific tuple to return to the backend after all processing is done. 
+   render_glyph(ox, oy, info)[source]
+ 
+Draw a glyph described by info to the reference point (ox, oy). 
+   render_rect_filled(x1, y1, x2, y2)[source]
+ 
+Draw a filled black rectangle from (x1, y1) to (x2, y2).

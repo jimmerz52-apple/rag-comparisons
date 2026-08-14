@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_antialiased
+
+get_antialiased()[source]
+ 
+Return whether antialiased rendering is used.

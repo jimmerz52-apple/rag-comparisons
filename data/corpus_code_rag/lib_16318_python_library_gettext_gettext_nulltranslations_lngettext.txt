@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.lngettext
+
+lngettext(singular, plural, n)  
+Equivalent to gettext() and ngettext(), but the translation is returned as a byte string encoded in the preferred system encoding if no encoding was explicitly set with set_output_charset(). Overridden in derived classes.  Warning These methods should be avoided in Python 3. See the warning for the lgettext() function.   Deprecated since version 3.8, will be removed in version 3.10.

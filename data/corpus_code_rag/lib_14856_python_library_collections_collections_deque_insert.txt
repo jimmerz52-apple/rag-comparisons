@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.insert
+
+insert(i, x)  
+Insert x into the deque at position i. If the insertion would cause a bounded deque to grow beyond maxlen, an IndexError is raised.  New in version 3.5.

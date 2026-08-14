@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.win32InstalledFonts
+
+matplotlib.font_manager.win32InstalledFonts(directory=None, fontext='ttf')[source]
+ 
+[Deprecated] Search for fonts in the specified font directory, or use the system directories if none given. Additionally, it is searched for user fonts installed. A list of TrueType font filenames are returned by default, or AFM fonts if fontext == 'afm'. Notes  Deprecated since version 3.5.

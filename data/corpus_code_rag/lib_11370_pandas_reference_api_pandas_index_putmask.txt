@@ -1,0 +1,9 @@
+# pandas.reference.api.pandas.index.putmask
+
+pandas.Index.putmask   finalIndex.putmask(mask, value)[source]
+ 
+Return a new Index of the values set with the mask.  Returns 
+ Index
+    See also  numpy.ndarray.putmask
+
+Changes elements of an array based on conditional and input values.

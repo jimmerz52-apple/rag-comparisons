@@ -1,0 +1,5 @@
+# django.topics.auth.default#django.contrib.auth.views.logout_then_login
+
+logout_then_login(request, login_url=None)  
+Logs a user out, then redirects to the login page. URL name: No default URL provided Optional arguments:  
+login_url: The URL of the login page to redirect to. Defaults to settings.LOGIN_URL if not supplied.

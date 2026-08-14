@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.NullFormatter
+
+classmatplotlib.ticker.NullFormatter[source]
+ 
+Bases: matplotlib.ticker.Formatter Always return the empty string.

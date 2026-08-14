@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get_default_type
+
+get_default_type()  
+Return the default content type. Most messages have a default content type of text/plain, except for messages that are subparts of multipart/digest containers. Such subparts have a default content type of message/rfc822.

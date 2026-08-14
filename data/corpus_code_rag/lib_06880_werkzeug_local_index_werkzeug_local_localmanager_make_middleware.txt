@@ -1,0 +1,6 @@
+# werkzeug.local.index#werkzeug.local.LocalManager.make_middleware
+
+make_middleware(app)  
+Wrap a WSGI application so that cleaning up happens after request end.  Parameters 
+app (WSGIApplication) –   Return type 
+WSGIApplication

@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_MEMLOCK
+
+resource.RLIMIT_MEMLOCK  
+The maximum address space which may be locked in memory.

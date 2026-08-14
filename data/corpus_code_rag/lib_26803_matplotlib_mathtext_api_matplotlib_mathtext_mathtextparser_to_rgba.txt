@@ -1,0 +1,31 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathTextParser.to_rgba
+
+to_rgba(texstr, color='black', dpi=120, fontsize=14)[source]
+ 
+[Deprecated] Convert a mathtext string to an RGBA array and depth.  Parameters 
+ 
+texstrstr
+
+
+A valid mathtext string, e.g., r'IQ: $sigma_i=15$'.  
+colorcolor
+
+
+The text color.  
+dpifloat
+
+
+The dots-per-inch setting used to render the text.  
+fontsizeint
+
+
+The font size in points.    Returns 
+ 
+array(M, N, 4) array
+
+
+RGBA color values of rasterized tex, colorized with color.  
+depthint
+
+
+Offset of the baseline from the bottom of the image, in pixels.     Notes  Deprecated since version 3.4.

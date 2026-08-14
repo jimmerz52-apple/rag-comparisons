@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.kthvalue
+
+kthvalue(k, dim=None, keepdim=False) -> (Tensor, LongTensor)  
+See torch.kthvalue()

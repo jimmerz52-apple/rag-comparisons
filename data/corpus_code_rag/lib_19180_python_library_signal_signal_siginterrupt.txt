@@ -1,0 +1,4 @@
+# python.library.signal#signal.siginterrupt
+
+signal.siginterrupt(signalnum, flag)  
+Change system call restart behaviour: if flag is False, system calls will be restarted when interrupted by signal signalnum, otherwise system calls will be interrupted. Returns nothing. Availability: Unix. See the man page siginterrupt(3) for further information. Note that installing a signal handler with signal() will reset the restart behaviour to interruptible by implicitly calling siginterrupt() with a true flag value for the given signal.

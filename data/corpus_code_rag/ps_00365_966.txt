@@ -1,0 +1,7 @@
+# 966
+Task: 966
+
+# Write a function to remove an empty tuple from a list of tuples.
+def remove_empty(tuple1): #L = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
+   tuple1 = [t for t in tuple1 if t]
+   return tuple1

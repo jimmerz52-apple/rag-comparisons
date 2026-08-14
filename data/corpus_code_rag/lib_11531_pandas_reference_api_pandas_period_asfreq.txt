@@ -1,0 +1,16 @@
+# pandas.reference.api.pandas.period.asfreq
+
+pandas.Period.asfreq   Period.asfreq()
+ 
+Convert Period to desired frequency, at the start or end of the interval.  Parameters 
+ 
+freq:str
+
+
+The desired frequency.  
+how:{‘E’, ‘S’, ‘end’, ‘start’}, default ‘end’
+
+
+Start or end of the timespan.    Returns 
+ 
+resampled:Period

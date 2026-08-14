@@ -1,0 +1,46 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream
+
+class werkzeug.wsgi.LimitedStream(stream, limit)  
+Wraps a stream so that it doesn’t read more than n bytes. If the stream is exhausted and the caller tries to get more bytes from it on_exhausted() is called which by default returns an empty string. The return value of that function is forwarded to the reader function. So if it returns an empty string read() will return an empty string as well. The limit however must never be higher than what the stream can output. Otherwise readlines() will try to read past the limit.  Note on WSGI compliance calls to readline() and readlines() are not WSGI compliant because it passes a size argument to the readline methods. Unfortunately the WSGI PEP is not safely implementable without a size argument to readline() because there is no EOF marker in the stream. As a result of that the use of readline() is discouraged. For the same reason iterating over the LimitedStream is not portable. It internally calls readline(). We strongly suggest using read() only or using the make_line_iter() which safely iterates line-based over a WSGI input stream.   Parameters 
+ 
+stream (BinaryIO) – the stream to wrap. 
+limit (int) – the limit for the stream, must not be longer than what the string can provide if the stream does not end with EOF (like wsgi.input)   Return type 
+None    
+exhaust(chunk_size=65536)  
+Exhaust the stream. This consumes all the data left until the limit is reached.  Parameters 
+chunk_size (int) – the size for a chunk. It will read the chunk until the stream is exhausted and throw away the results.  Return type 
+None   
+  
+property is_exhausted: bool  
+If the stream is exhausted this attribute is True. 
+  
+on_disconnect()  
+What should happen if a disconnect is detected? The return value of this function is returned from read functions in case the client went away. By default a ClientDisconnected exception is raised.  Return type 
+bytes   
+  
+on_exhausted()  
+This is called when the stream tries to read past the limit. The return value of this function is returned from the reading function.  Return type 
+bytes   
+  
+read(size=None)  
+Read size bytes or if size is not provided everything is read.  Parameters 
+size (Optional[int]) – the number of bytes read.  Return type 
+bytes   
+  
+readable()  
+Return whether object was opened for reading. If False, read() will raise OSError.  Return type 
+bool   
+  
+readline(size=None)  
+Reads one line from the stream.  Parameters 
+size (Optional[int]) –   Return type 
+bytes   
+  
+readlines(size=None)  
+Reads a file into a list of strings. It calls readline() until the file is read to the end. It does support the optional size argument if the underlying stream supports it for readline.  Parameters 
+size (Optional[int]) –   Return type 
+List[bytes]   
+  
+tell()  
+Returns the position of the stream.  Changelog New in version 0.9.   Return type 
+int

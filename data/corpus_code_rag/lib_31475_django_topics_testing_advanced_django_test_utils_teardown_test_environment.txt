@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.utils.teardown_test_environment
+
+teardown_test_environment()  
+Performs global post-test teardown, such as removing instrumentation from the template system and restoring normal email services.

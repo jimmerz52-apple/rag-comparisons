@@ -1,0 +1,5 @@
+# skimage.api.skimage.transform#skimage.transform.PolynomialTransform.__init__
+
+__init__(params=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

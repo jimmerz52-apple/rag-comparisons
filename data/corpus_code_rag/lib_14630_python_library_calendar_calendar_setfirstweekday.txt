@@ -1,0 +1,5 @@
+# python.library.calendar#calendar.setfirstweekday
+
+calendar.setfirstweekday(weekday)  
+Sets the weekday (0 is Monday, 6 is Sunday) to start each week. The values MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, and SUNDAY are provided for convenience. For example, to set the first weekday to Sunday: import calendar
+calendar.setfirstweekday(calendar.SUNDAY)

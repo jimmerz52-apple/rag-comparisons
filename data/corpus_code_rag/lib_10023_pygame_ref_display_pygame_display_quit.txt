@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.quit
+
+pygame.display.quit() 
+ Uninitialize the display module quit() -> None  This will shut down the entire display module. This means any active displays will be closed. This will also be handled automatically when the program exits. It is harmless to call this more than once, repeated calls have no effect.

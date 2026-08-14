@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.timestamp.resolution
+
+pandas.Timestamp.resolution   Timestamp.resolution=Timedelta('0 days 00:00:00.000000001')

@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.home
+
+home()[source]
+ 
+Push the first element onto the top of the stack. The first element is returned.

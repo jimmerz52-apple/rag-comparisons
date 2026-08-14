@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.copy
+
+pandas.tseries.offsets.Tick.copy   Tick.copy()

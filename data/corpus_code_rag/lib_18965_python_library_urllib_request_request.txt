@@ -1,0 +1,4 @@
+# python.library.urllib.request#request
+
+BaseHandler.<protocol>_request(req)  
+This method is not defined in BaseHandler, but subclasses should define it if they want to pre-process requests of the given protocol. This method, if defined, will be called by the parent OpenerDirector. req will be a Request object. The return value should be a Request object.

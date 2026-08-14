@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.read_some
+
+Telnet.read_some()  
+Read at least one byte of cooked data unless EOF is hit. Return b'' if EOF is hit. Block if no data is immediately available.

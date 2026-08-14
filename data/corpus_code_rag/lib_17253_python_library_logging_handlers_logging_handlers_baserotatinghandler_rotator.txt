@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.BaseRotatingHandler.rotator
+
+rotator  
+If this attribute is set to a callable, the rotate() method delegates to this callable. The parameters passed to the callable are those passed to rotate().  New in version 3.3.

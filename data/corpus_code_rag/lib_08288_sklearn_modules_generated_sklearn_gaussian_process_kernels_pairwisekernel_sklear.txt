@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.pairwisekernel#sklearn.gaussian_process.kernels.PairwiseKernel.n_dims
+
+property n_dims  
+Returns the number of non-fixed hyperparameters of the kernel.

@@ -1,0 +1,21 @@
+# matplotlib.cm_api#matplotlib.cm.ColormapRegistry
+
+classmatplotlib.cm.ColormapRegistry(cmaps)[source]
+ 
+Bases: collections.abc.Mapping Container for colormaps that are known to Matplotlib by name.  Experimental While we expect the API to be final, we formally mark it as experimental for 3.5 because we want to keep the option to still adapt the API for 3.6 should the need arise.  The universal registry instance is matplotlib.colormaps. There should be no need for users to instantiate ColormapRegistry themselves. Read access uses a dict-like interface mapping names to Colormaps: import matplotlib as mpl
+cmap = mpl.colormaps['viridis']
+ Returned Colormaps are copies, so that their modification does not change the global definition of the colormap. Additional colormaps can be added via ColormapRegistry.register: mpl.colormaps.register(my_colormap)
+   register(cmap, *, name=None, force=False)[source]
+ 
+Register a new colormap. The colormap name can then be used as a string argument to any cmap parameter in Matplotlib. It is also available in pyplot.get_cmap. The colormap registry stores a copy of the given colormap, so that future changes to the original colormap instance do not affect the registered colormap. Think of this as the registry taking a snapshot of the colormap at registration.  Parameters 
+ 
+cmapmatplotlib.colors.Colormap
+
+
+The colormap to register.  
+namestr, optional
+
+
+The name for the colormap. If not given, cmap.name is used.  force: bool, default: False
+
+If False, a ValueError is raised if trying to overwrite an already registered name. True supports overwriting registered colormaps other than the builtin colormaps.

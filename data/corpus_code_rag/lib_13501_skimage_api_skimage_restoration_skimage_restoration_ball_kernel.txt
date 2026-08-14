@@ -1,0 +1,17 @@
+# skimage.api.skimage.restoration#skimage.restoration.ball_kernel
+
+skimage.restoration.ball_kernel(radius, ndim) [source]
+ 
+Create a ball kernel for restoration.rolling_ball.  Parameters 
+ 
+radiusint 
+
+Radius of the ball.  
+ndimint 
+
+Number of dimensions of the ball. ndim should match the dimensionality of the image the kernel will be applied to.    Returns 
+ 
+kernelndarray 
+
+The kernel containing the surface intensity of the top half of the ellipsoid.      See also  
+rolling_ball

@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.IncrementalDecoder.reset
+
+reset()  
+Reset the decoder to the initial state.

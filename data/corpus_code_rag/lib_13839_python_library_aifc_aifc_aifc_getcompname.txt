@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getcompname
+
+aifc.getcompname()  
+Return a bytes array convertible to a human-readable description of the type of compression used in the audio file. For AIFF files, the returned value is b'not compressed'.

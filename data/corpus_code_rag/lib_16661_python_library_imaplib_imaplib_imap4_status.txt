@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.status
+
+IMAP4.status(mailbox, names)  
+Request named status conditions for mailbox.

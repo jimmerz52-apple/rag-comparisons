@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.startswith
+
+numpy.chararray.startswith method   chararray.startswith(prefix, start=0, end=None)[source]
+ 
+Returns a boolean array which is True where the string element in self starts with prefix, otherwise False.  See also  char.startswith

@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.OrderedUpdates
+
+pygame.sprite.OrderedUpdates() 
+ RenderUpdates sub-class that draws Sprites in order of addition. OrderedUpdates(*spites) -> OrderedUpdates  This class derives from pygame.sprite.RenderUpdates(). It maintains the order in which the Sprites were added to the Group for rendering. This makes adding and removing Sprites from the Group a little slower than regular Groups.

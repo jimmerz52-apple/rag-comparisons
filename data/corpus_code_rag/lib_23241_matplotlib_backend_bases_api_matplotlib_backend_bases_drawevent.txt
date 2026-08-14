@@ -1,0 +1,10 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.DrawEvent
+
+classmatplotlib.backend_bases.DrawEvent(name, canvas, renderer)[source]
+ 
+Bases: matplotlib.backend_bases.Event An event triggered by a draw operation on the canvas. In most backends, callbacks subscribed to this event will be fired after the rendering is complete but before the screen is updated. Any extra artists drawn to the canvas's renderer will be reflected without an explicit call to blit.  Warning Calling canvas.draw and canvas.blit in these callbacks may not be safe with all backends and may cause infinite recursion.  A DrawEvent has a number of special attributes in addition to those defined by the parent Event class.  Attributes 
+ 
+rendererRendererBase
+
+
+The renderer for the draw event.

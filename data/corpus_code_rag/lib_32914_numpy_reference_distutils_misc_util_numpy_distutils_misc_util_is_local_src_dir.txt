@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.is_local_src_dir
+
+numpy.distutils.misc_util.is_local_src_dir(directory)[source]
+ 
+Return true if directory is local directory.

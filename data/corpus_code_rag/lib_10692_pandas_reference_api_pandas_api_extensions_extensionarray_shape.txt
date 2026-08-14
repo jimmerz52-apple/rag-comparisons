@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.shape
+
+pandas.api.extensions.ExtensionArray.shape   propertyExtensionArray.shape
+ 
+Return a tuple of the array dimensions.

@@ -1,0 +1,4 @@
+# python.library.select#select.devpoll.closed
+
+devpoll.closed  
+True if the polling object is closed.  New in version 3.4.

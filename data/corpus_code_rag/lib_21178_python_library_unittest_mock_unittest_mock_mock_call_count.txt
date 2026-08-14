@@ -1,0 +1,10 @@
+# python.library.unittest.mock#unittest.mock.Mock.call_count
+
+call_count  
+An integer telling you how many times the mock object has been called: >>> mock = Mock(return_value=None)
+>>> mock.call_count
+0
+>>> mock()
+>>> mock()
+>>> mock.call_count
+2

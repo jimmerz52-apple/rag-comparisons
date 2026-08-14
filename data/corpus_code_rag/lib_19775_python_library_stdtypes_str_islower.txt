@@ -1,0 +1,4 @@
+# python.library.stdtypes#str.islower
+
+str.islower()  
+Return True if all cased characters 4 in the string are lowercase and there is at least one cased character, False otherwise.

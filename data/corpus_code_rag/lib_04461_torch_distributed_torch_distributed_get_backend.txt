@@ -1,0 +1,7 @@
+# torch.distributed#torch.distributed.get_backend
+
+torch.distributed.get_backend(group=None) [source]
+ 
+Returns the backend of the given process group.  Parameters 
+group (ProcessGroup, optional) – The process group to work on. The default is the general main process group. If another specific group is specified, the calling process must be part of group.  Returns 
+The backend of the given process group as a lower case string.

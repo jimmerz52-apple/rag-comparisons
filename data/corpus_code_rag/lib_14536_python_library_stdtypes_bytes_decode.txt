@@ -1,0 +1,5 @@
+# python.library.stdtypes#bytes.decode
+
+bytes.decode(encoding="utf-8", errors="strict")  
+bytearray.decode(encoding="utf-8", errors="strict")  
+Return a string decoded from the given bytes. Default encoding is 'utf-8'. errors may be given to set a different error handling scheme. The default for errors is 'strict', meaning that encoding errors raise a UnicodeError. Other possible values are 'ignore', 'replace' and any other name registered via codecs.register_error(), see section Error Handlers. For a list of possible encodings, see section Standard Encodings. By default, the errors argument is not checked for best performances, but only used at the first decoding error. Enable the Python Development Mode, or use a debug build to check errors.  Note Passing the encoding argument to str allows decoding any bytes-like object directly, without needing to make a temporary bytes or bytearray object.   Changed in version 3.1: Added support for keyword arguments.   Changed in version 3.9: The errors is now checked in development mode and in debug mode.

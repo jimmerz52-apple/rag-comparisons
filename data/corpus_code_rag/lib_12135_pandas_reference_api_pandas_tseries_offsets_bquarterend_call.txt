@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.bquarterend.__call__
+
+pandas.tseries.offsets.BQuarterEnd.__call__   BQuarterEnd.__call__(*args, **kwargs)
+ 
+Call self as a function.

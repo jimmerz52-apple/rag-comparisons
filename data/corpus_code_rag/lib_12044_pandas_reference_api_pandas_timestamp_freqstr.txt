@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.freqstr
+
+pandas.Timestamp.freqstr   propertyTimestamp.freqstr
+ 
+Return the total number of days in the month.

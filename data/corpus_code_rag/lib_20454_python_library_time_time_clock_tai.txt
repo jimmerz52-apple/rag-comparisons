@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_TAI
+
+time.CLOCK_TAI  
+International Atomic Time The system must have a current leap second table in order for this to give the correct answer. PTP or NTP software can maintain a leap second table. Availability: Linux.  New in version 3.9.

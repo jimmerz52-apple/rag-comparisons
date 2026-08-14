@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.GetBase
+
+xmlparser.GetBase()  
+Returns a string containing the base set by a previous call to SetBase(), or None if SetBase() hasn’t been called.

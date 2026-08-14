@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.linear_model.ardregression#sklearn.linear_model.ARDRegression.fit
+
+fit(X, y) [source]
+ 
+Fit the ARDRegression model according to the given training data and parameters. Iterative procedure to maximize the evidence  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vector, where n_samples in the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,) 
+
+Target values (integers). Will be cast to X’s dtype if necessary    Returns 
+ 
+selfreturns an instance of self.

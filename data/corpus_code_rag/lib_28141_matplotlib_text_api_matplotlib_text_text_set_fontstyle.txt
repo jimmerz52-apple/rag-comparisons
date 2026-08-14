@@ -1,0 +1,9 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontstyle
+
+set_fontstyle(fontstyle)[source]
+ 
+Set the font style.  Parameters 
+ 
+fontstyle{'normal', 'italic', 'oblique'}
+
+    See also  font_manager.FontProperties.set_style

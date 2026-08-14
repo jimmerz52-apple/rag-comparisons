@@ -1,0 +1,4 @@
+# python.library.turtle#turtle.Screen
+
+class turtle.Screen  
+Subclass of TurtleScreen, with four methods added.

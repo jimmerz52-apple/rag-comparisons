@@ -1,0 +1,18 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.gridhelperbase
+
+mpl_toolkits.axisartist.axislines.GridHelperBase   classmpl_toolkits.axisartist.axislines.GridHelperBase[source]
+ 
+Bases: object   get_gridlines(which, axis)[source]
+ 
+Return list of grid lines as a list of paths (list of points). which : "major" or "minor" axis : "both", "x" or "y" 
+   invalidate()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:   
+   new_gridlines(ax)[source]
+ 
+Create and return a new GridlineCollection instance. which : "major" or "minor" axis : "both", "x" or "y" 
+   update_lim(axes)[source]
+
+   valid()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.fonty.main
+
+fonty.main() 
+ run a font rendering example fonty.main() -> None  Super quick, super simple application demonstrating the different ways to render fonts with the font module

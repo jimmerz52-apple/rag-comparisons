@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Address.is_unspecified
+
+is_unspecified  
+True if the address is unspecified. See RFC 5735 (for IPv4) or RFC 2373 (for IPv6).

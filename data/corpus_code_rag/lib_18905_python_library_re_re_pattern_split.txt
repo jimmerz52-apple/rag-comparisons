@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.split
+
+Pattern.split(string, maxsplit=0)  
+Identical to the split() function, using the compiled pattern.

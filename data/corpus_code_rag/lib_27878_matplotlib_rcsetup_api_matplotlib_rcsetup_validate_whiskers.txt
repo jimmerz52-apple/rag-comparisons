@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_whiskers
+
+matplotlib.rcsetup.validate_whiskers(s)[source]

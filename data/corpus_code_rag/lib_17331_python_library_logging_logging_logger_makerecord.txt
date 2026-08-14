@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.makeRecord
+
+makeRecord(name, level, fn, lno, msg, args, exc_info, func=None, extra=None, sinfo=None)  
+This is a factory method which can be overridden in subclasses to create specialized LogRecord instances.

@@ -1,0 +1,3 @@
+# tensorflow.saved_model.experimental
+
+Module: tf.saved_model.experimental Public API for tf.saved_model.experimental namespace. Classes class VariablePolicy: Enum defining options for variable handling when saving.

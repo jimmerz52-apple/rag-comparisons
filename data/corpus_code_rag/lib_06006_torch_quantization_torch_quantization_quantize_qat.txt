@@ -1,0 +1,11 @@
+# torch.quantization#torch.quantization.quantize_qat
+
+torch.quantization.quantize_qat(model, run_fn, run_args, inplace=False) [source]
+ 
+Do quantization aware training and output a quantized model  Parameters 
+ 
+model – input model 
+run_fn – a function for evaluating the prepared model, can be a function that simply runs the prepared model or a training loop 
+run_args – positional arguments for run_fn
+   Returns 
+Quantized model.

@@ -1,0 +1,5 @@
+# python.library.stdtypes#genericalias.__origin__
+
+genericalias.__origin__  
+This attribute points at the non-parameterized generic class: >>> list[int].__origin__
+<class 'list'>

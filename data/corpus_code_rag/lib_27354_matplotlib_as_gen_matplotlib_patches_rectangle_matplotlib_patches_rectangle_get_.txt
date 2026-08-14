@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.get_angle
+
+get_angle()[source]
+ 
+Get the rotation angle in degrees.

@@ -1,0 +1,5 @@
+# numpy.reference.arrays.classes#numpy.class.__array__
+
+class.__array__([dtype])
+ 
+If a class (ndarray subclass or not) having the __array__ method is used as the output object of an ufunc, results will not be written to the object returned by __array__. This practice will return TypeError.

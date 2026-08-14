@@ -1,0 +1,4 @@
+# python.library.os#os.EX_CANTCREAT
+
+os.EX_CANTCREAT  
+Exit code that means a user specified output file could not be created. Availability: Unix.

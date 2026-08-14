@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.protocol
+
+protocol  
+Optional. This attribute defines the protocol ('http' or 'https') of the URLs in the sitemap. If it isn’t set, the protocol with which the sitemap was requested is used. If the sitemap is built outside the context of a request, the default is 'http'.  Deprecated since version 4.0: The default protocol for sitemaps built outside the context of a request will change from 'http' to 'https' in Django 5.0.

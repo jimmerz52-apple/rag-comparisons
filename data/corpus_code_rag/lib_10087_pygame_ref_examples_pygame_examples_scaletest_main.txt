@@ -1,0 +1,8 @@
+# pygame.ref.examples#pygame.examples.scaletest.main
+
+scaletest.main() 
+ interactively scale an image using smoothscale scaletest.main(imagefile, convert_alpha=False, run_speed_test=True) -> None  arguments: imagefile - file name of source image (required)
+convert_alpha - use convert_alpha() on the surf (default False)
+run_speed_test - (default False) A smoothscale example that resized an image on the screen. Vertical and horizontal arrow keys are used to change the width and height of the displayed image. If the convert_alpha option is True then the source image is forced to have source alpha, whether or not the original images does. If run_speed_test is True then a background timing test is performed instead of the interactive scaler. If scaletest.py is run as a program then the command line options are: ImageFile [-t] [-convert_alpha]
+[-t] = Run Speed Test
+[-convert_alpha] = Use convert_alpha() on the surf.

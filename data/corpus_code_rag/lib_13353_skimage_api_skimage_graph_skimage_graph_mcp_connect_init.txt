@@ -1,0 +1,4 @@
+# skimage.api.skimage.graph#skimage.graph.MCP_Connect.__init__
+
+__init__(*args, **kwargs)  
+Initialize self. See help(type(self)) for accurate signature.

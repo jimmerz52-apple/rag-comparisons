@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.format_cursor_data
+
+matplotlib.axes.Axes.format_cursor_data   Axes.format_cursor_data(data)[source]
+ 
+Return a string representation of data.  Note This method is intended to be overridden by artist subclasses. As an end-user of Matplotlib you will most likely not call this method yourself.  The default implementation converts ints and floats and arrays of ints and floats into a comma-separated string enclosed in square brackets, unless the artist has an associated colorbar, in which case scalar values are formatted using the colorbar's formatter.  See also  get_cursor_data

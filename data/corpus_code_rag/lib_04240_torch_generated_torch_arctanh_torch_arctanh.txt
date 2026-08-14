@@ -1,0 +1,4 @@
+# torch.generated.torch.arctanh#torch.arctanh
+
+torch.arctanh(input, *, out=None) → Tensor  
+Alias for torch.atanh().

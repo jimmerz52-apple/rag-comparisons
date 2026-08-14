@@ -1,0 +1,5 @@
+# python.library.typing#typing.Pattern
+
+class typing.Pattern  
+class typing.Match  
+These type aliases correspond to the return types from re.compile() and re.match(). These types (and the corresponding functions) are generic in AnyStr and can be made specific by writing Pattern[str], Pattern[bytes], Match[str], or Match[bytes]. These types are also in the typing.re namespace.  Deprecated since version 3.9: Classes Pattern and Match from re now support []. See PEP 585 and Generic Alias Type.

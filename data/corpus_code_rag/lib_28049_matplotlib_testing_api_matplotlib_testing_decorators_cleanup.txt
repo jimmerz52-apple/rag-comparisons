@@ -1,0 +1,11 @@
+# matplotlib.testing_api#matplotlib.testing.decorators.cleanup
+
+matplotlib.testing.decorators.cleanup(style=None)[source]
+ 
+A decorator to ensure that any global state is reset before running a test.  Parameters 
+ 
+stylestr, dict, or list, optional
+
+
+The style(s) to apply. Defaults to ["classic",
+"_classic_test_patch"].

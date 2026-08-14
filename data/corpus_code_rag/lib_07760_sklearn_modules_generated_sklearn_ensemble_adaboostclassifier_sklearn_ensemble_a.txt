@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostclassifier#sklearn.ensemble.AdaBoostClassifier.staged_decision_function
+
+staged_decision_function(X) [source]
+ 
+Compute decision function of X for each boosting iteration. This method allows monitoring (i.e. determine error on testing set) after each boosting iteration.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrix can be CSC, CSR, COO, DOK, or LIL. COO, DOK, and LIL are converted to CSR.    Yields 
+ 
+scoregenerator of ndarray of shape (n_samples, k) 
+
+The decision function of the input samples. The order of outputs is the same of that of the classes_ attribute. Binary classification is a special cases with k == 1, otherwise k==n_classes. For binary classification, values closer to -1 or 1 mean more like the first or second class in classes_, respectively.

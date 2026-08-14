@@ -1,0 +1,10 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.RequiredAttr
+
+class skimage.viewer.utils.RequiredAttr(init_val=None) [source]
+ 
+Bases: object A class attribute that must be set before use.  
+__init__(init_val=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+instances = {(<skimage.viewer.utils.core.RequiredAttr object>, None): 'Widget is not attached to a Plugin.', (<skimage.viewer.utils.core.RequiredAttr object>, None): 'Plugin is not attached to ImageViewer'}

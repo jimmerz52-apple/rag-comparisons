@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_url
+
+set_url(url)[source]
+ 
+Set the url for the artist.  Parameters 
+ 
+urlstr

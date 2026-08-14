@@ -1,0 +1,4 @@
+# python.library.email.contentmanager#email.contentmanager.ContentManager.add_get_handler
+
+add_get_handler(key, handler)  
+Record the function handler as the handler for key. For the possible values of key, see get_content().

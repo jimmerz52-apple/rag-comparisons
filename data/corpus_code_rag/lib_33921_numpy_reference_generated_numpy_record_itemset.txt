@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.itemset
+
+numpy.record.itemset method   record.itemset()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.itemset.

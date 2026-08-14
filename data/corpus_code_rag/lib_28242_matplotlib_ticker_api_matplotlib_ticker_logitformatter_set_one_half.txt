@@ -1,0 +1,8 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogitFormatter.set_one_half
+
+set_one_half(one_half)[source]
+ 
+Set the way one half is displayed.  one_halfstr, default: r"frac{1}{2}"
+
+
+The string used to represent 1/2.

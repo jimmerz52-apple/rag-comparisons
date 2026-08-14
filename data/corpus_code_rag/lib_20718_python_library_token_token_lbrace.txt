@@ -1,0 +1,4 @@
+# python.library.token#token.LBRACE
+
+token.LBRACE  
+Token value for "{".

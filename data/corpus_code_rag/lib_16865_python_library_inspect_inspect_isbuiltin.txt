@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isbuiltin
+
+inspect.isbuiltin(object)  
+Return True if the object is a built-in function or a bound built-in method.

@@ -1,0 +1,5 @@
+# torch.amp#torch.cuda.amp.GradScaler.get_growth_interval
+
+get_growth_interval() [source]
+ 
+Returns a Python int containing the growth interval.

@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.WriteTransport
+
+class asyncio.WriteTransport(BaseTransport)  
+A base transport for write-only connections. Instances of the WriteTransport class are returned from the loop.connect_write_pipe() event loop method and are also used by subprocess-related methods like loop.subprocess_exec().

@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.PAD
+
+PAD=0.1
+ 
+Padding between text and rectangle.

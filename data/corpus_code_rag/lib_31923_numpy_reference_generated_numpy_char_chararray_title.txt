@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.title
+
+numpy.char.chararray.title method   char.chararray.title()[source]
+ 
+For each element in self, return a titlecased version of the string: words start with uppercase characters, all remaining cased characters are lowercase.  See also  char.title

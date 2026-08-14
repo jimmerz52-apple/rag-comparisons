@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.intersection
+
+intersection(*others)  
+set & other & ...  
+Return a new set with elements common to the set and all others.

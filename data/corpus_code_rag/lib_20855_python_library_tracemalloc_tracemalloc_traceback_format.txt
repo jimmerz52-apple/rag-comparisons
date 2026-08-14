@@ -1,0 +1,11 @@
+# python.library.tracemalloc#tracemalloc.Traceback.format
+
+format(limit=None, most_recent_first=False)  
+Format the traceback as a list of lines with newlines. Use the linecache module to retrieve lines from the source code. If limit is set, format the limit most recent frames if limit is positive. Otherwise, format the abs(limit) oldest frames. If most_recent_first is True, the order of the formatted frames is reversed, returning the most recent frame first instead of last. Similar to the traceback.format_tb() function, except that format() does not include newlines. Example: print("Traceback (most recent call first):")
+for line in traceback:
+    print(line)
+ Output: Traceback (most recent call first):
+  File "test.py", line 9
+    obj = Object()
+  File "test.py", line 12
+    tb = tracemalloc.get_object_traceback(f())

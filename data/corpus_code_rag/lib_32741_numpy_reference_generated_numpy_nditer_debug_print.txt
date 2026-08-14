@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.debug_print
+
+numpy.nditer.debug_print method   nditer.debug_print()
+ 
+Print the current state of the nditer instance and debug info to stdout.

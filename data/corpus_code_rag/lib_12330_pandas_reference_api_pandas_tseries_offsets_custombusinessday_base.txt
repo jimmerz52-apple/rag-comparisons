@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.base
+
+pandas.tseries.offsets.CustomBusinessDay.base   CustomBusinessDay.base
+ 
+Returns a copy of the calling offset object with n=1 and all other attributes equal.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__reduce__
+
+numpy.ndarray.__reduce__ method   ndarray.__reduce__()
+ 
+For pickling.

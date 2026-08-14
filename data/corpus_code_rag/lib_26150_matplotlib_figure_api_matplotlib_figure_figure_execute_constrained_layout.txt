@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.execute_constrained_layout
+
+execute_constrained_layout(renderer=None)[source]
+ 
+Use layoutgrid to determine pos positions within Axes. See also set_constrained_layout_pads.  Returns 
+ 
+layoutgridprivate debugging object

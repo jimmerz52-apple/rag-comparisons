@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.make_wedged_bezier2
+
+matplotlib.bezier.make_wedged_bezier2(bezier2, width, w1=1.0, wm=0.5, w2=0.0)[source]
+ 
+Being similar to get_parallels, returns control points of two quadratic Bezier lines having a width roughly parallel to given one separated by width.

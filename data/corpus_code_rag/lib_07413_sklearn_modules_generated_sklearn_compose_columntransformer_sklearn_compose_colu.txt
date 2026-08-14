@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.compose.columntransformer#sklearn.compose.ColumnTransformer.named_transformers_
+
+property named_transformers_  
+Access the fitted transformer by name. Read-only attribute to access any transformer by given name. Keys are transformer names and values are the fitted transformer objects.

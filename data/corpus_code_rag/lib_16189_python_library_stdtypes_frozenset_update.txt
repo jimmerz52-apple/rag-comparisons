@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.update
+
+update(*others)  
+set |= other | ...  
+Update the set, adding elements from all others.

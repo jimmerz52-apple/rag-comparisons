@@ -1,0 +1,5 @@
+# python.library.curses#curses.window.vline
+
+window.vline(ch, n)  
+window.vline(y, x, ch, n)  
+Display a vertical line starting at (y, x) with length n consisting of the character ch.

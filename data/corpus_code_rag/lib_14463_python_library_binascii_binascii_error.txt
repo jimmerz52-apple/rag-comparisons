@@ -1,0 +1,4 @@
+# python.library.binascii#binascii.Error
+
+exception binascii.Error  
+Exception raised on errors. These are usually programming errors.

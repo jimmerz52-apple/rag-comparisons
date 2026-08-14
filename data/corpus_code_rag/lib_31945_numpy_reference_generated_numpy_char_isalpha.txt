@@ -1,0 +1,14 @@
+# numpy.reference.generated.numpy.char.isalpha
+
+numpy.char.isalpha   char.isalpha(a)[source]
+ 
+Returns true for each element if all characters in the string are alphabetic and there is at least one character, false otherwise. Calls str.isalpha element-wise. For 8-bit strings, this method is locale-dependent.  Parameters 
+ 
+aarray_like of str or unicode
+
+  Returns 
+ 
+outndarray
+
+
+Output array of bools      See also  str.isalpha

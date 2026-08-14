@@ -1,0 +1,18 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles
+
+draw_gouraud_triangles(gc, triangles_array, colors_array, transform)[source]
+ 
+Draw a series of Gouraud triangles.  Parameters 
+ 
+points(N, 3, 2) array-like
+
+
+Array of N (x, y) points for the triangles.  
+colors(N, 3, 4) array-like
+
+
+Array of N RGBA colors for each point of the triangles.  
+transformmatplotlib.transforms.Transform
+
+
+An affine transform to apply to the points.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.find
+
+numpy.chararray.find method   chararray.find(sub, start=0, end=None)[source]
+ 
+For each element, return the lowest index in the string where substring sub is found.  See also  char.find

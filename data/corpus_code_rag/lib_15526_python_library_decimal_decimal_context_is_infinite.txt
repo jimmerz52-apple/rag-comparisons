@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_infinite
+
+is_infinite(x)  
+Returns True if x is infinite; otherwise returns False.

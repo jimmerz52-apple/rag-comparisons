@@ -1,0 +1,4 @@
+# python.library.tempfile#tempfile.gettempprefixb
+
+tempfile.gettempprefixb()  
+Same as gettempprefix() but the return value is in bytes.  New in version 3.5.

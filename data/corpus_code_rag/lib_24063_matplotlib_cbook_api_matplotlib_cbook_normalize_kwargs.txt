@@ -1,0 +1,17 @@
+# matplotlib.cbook_api#matplotlib.cbook.normalize_kwargs
+
+matplotlib.cbook.normalize_kwargs(kw, alias_mapping=None)[source]
+ 
+Helper function to normalize kwarg inputs.  Parameters 
+ 
+kwdict or None
+
+
+A dict of keyword arguments. None is explicitly supported and treated as an empty dict, to support functions with an optional parameter of the form props=None.  
+alias_mappingdict or Artist subclass or Artist instance, optional
+
+
+A mapping between a canonical name to a list of aliases, in order of precedence from lowest to highest. If the canonical value is not in the list it is assumed to have the highest priority. If an Artist subclass or instance is passed, use its properties alias mapping.    Raises 
+ TypeError
+
+To match what Python raises if invalid arguments/keyword arguments are passed to a callable.

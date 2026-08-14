@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.template
+
+InlineModelAdmin.template  
+The template used to render the inline on the page.

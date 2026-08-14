@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.removeFilter
+
+removeFilter(filter)  
+Removes the specified filter filter from this logger.

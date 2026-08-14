@@ -1,0 +1,4 @@
+# python.library.wave#wave.Error
+
+exception wave.Error  
+An error raised when something is impossible because it violates the WAV specification or hits an implementation deficiency.

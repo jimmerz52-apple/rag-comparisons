@@ -1,0 +1,5 @@
+# matplotlib.backend_template_api#matplotlib.backends.backend_template.draw_if_interactive
+
+matplotlib.backends.backend_template.draw_if_interactive()[source]
+ 
+For image backends - is not required. For GUI backends - this should be overridden if drawing should be done in interactive python mode.

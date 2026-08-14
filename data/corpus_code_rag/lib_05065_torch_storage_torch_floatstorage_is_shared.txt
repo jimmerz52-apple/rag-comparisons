@@ -1,0 +1,3 @@
+# torch.storage#torch.FloatStorage.is_shared
+
+is_shared()

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.instance_path
+
+instance_path  
+Holds the path to the instance folder.  Changelog New in version 0.8.

@@ -1,0 +1,16 @@
+# skimage.api.skimage.io#skimage.io.imshow
+
+skimage.io.imshow(arr, plugin=None, **plugin_args) [source]
+ 
+Display an image.  Parameters 
+ 
+arrndarray or str 
+
+Image data or name of image file.  
+pluginstr 
+
+Name of plugin to use. By default, the different plugins are tried (starting with imageio) until a suitable candidate is found.    Other Parameters 
+ 
+plugin_argskeywords 
+
+Passed to the given plugin.

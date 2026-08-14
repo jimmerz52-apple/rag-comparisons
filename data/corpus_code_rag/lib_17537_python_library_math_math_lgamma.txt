@@ -1,0 +1,4 @@
+# python.library.math#math.lgamma
+
+math.lgamma(x)  
+Return the natural logarithm of the absolute value of the Gamma function at x.  New in version 3.2.

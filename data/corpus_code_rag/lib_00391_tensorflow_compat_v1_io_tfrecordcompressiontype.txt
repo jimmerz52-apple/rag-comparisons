@@ -1,0 +1,11 @@
+# tensorflow.compat.v1.io.tfrecordcompressiontype
+
+tf.compat.v1.io.TFRecordCompressionType The type of compression for the record.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.python_io.TFRecordCompressionType 
+ 
+
+
+ Class Variables
+  GZIP   2  
+  NONE   0  
+  ZLIB   1

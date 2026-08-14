@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.logo
+
+skimage.data.logo() [source]
+ 
+Scikit-image logo, a RGBA image.  Returns 
+ 
+logo(500, 500, 4) uint8 ndarray 
+
+Logo image.

@@ -1,0 +1,6 @@
+# django.ref.forms.widgets#django.forms.SplitHiddenDateTimeWidget
+
+class SplitHiddenDateTimeWidget  
+ 
+template_name: 'django/forms/widgets/splithiddendatetime.html'
+  Similar to SplitDateTimeWidget, but uses HiddenInput for both date and time.

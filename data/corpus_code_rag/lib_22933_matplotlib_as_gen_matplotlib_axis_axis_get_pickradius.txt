@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_pickradius
+
+matplotlib.axis.Axis.get_pickradius   Axis.get_pickradius()[source]
+ 
+Return the depth of the axis used by the picker.

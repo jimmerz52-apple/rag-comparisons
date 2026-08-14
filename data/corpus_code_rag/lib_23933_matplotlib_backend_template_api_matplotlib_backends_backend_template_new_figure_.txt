@@ -1,0 +1,5 @@
+# matplotlib.backend_template_api#matplotlib.backends.backend_template.new_figure_manager
+
+matplotlib.backends.backend_template.new_figure_manager(num, *args, FigureClass=<class 'matplotlib.figure.Figure'>, **kwargs)[source]
+ 
+Create a new figure manager instance.

@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadhandler.FileUploadHandler.file_complete
+
+FileUploadHandler.file_complete(file_size)  
+Called when a file has finished uploading. The handler should return an UploadedFile object that will be stored in request.FILES. Handlers may also return None to indicate that the UploadedFile object should come from subsequent upload handlers.

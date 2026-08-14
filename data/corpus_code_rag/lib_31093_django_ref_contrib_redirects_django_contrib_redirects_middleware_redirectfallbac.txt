@@ -1,0 +1,4 @@
+# django.ref.contrib.redirects#django.contrib.redirects.middleware.RedirectFallbackMiddleware.response_gone_class
+
+response_gone_class  
+The HttpResponse class used when a Redirect is not found for the requested path or has a blank new_path value. Defaults to HttpResponseGone.

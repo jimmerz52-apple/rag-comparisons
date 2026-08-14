@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.datetimeindex.snap
+
+pandas.DatetimeIndex.snap   DatetimeIndex.snap(freq='S')[source]
+ 
+Snap time stamps to nearest occurring frequency.  Returns 
+ DatetimeIndex

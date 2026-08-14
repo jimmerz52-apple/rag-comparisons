@@ -1,0 +1,3 @@
+# python.library.gettext#gettext.NullTranslations.lgettext
+
+lgettext(message)

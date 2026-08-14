@@ -1,0 +1,7 @@
+# python.library.os#os.F_ULOCK
+
+os.F_LOCK  
+os.F_TLOCK  
+os.F_ULOCK  
+os.F_TEST  
+Flags that specify what action lockf() will take. Availability: Unix.  New in version 3.3.

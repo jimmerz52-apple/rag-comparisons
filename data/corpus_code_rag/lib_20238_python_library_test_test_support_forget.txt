@@ -1,0 +1,4 @@
+# python.library.test#test.support.forget
+
+test.support.forget(module_name)  
+Remove the module named module_name from sys.modules and delete any byte-compiled files of the module.

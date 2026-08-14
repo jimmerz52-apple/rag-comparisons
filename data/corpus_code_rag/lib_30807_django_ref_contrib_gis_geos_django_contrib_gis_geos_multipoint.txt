@@ -1,0 +1,5 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.MultiPoint
+
+class MultiPoint(*args, **kwargs)  
+MultiPoint objects may be instantiated by passing in Point objects as arguments, or a single sequence of Point objects: >>> mp = MultiPoint(Point(0, 0), Point(1, 1))
+>>> mp = MultiPoint( (Point(0, 0), Point(1, 1)) )

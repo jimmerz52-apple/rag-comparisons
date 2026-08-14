@@ -1,0 +1,13 @@
+# python.library.configparser#configparser.ConfigParser.BOOLEAN_STATES
+
+ConfigParser.BOOLEAN_STATES  
+By default when using getboolean(), config parsers consider the following values True: '1', 'yes', 'true', 'on' and the following values False: '0', 'no', 'false', 'off'. You can override this by specifying a custom dictionary of strings and their Boolean outcomes. For example: >>> custom = configparser.ConfigParser()
+>>> custom['section1'] = {'funky': 'nope'}
+>>> custom['section1'].getboolean('funky')
+Traceback (most recent call last):
+...
+ValueError: Not a boolean: nope
+>>> custom.BOOLEAN_STATES = {'sure': True, 'nope': False}
+>>> custom['section1'].getboolean('funky')
+False
+ Other typical Boolean pairs include accept/reject or enabled/disabled.

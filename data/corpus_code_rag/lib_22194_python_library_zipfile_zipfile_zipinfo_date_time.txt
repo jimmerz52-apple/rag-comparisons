@@ -1,0 +1,11 @@
+# python.library.zipfile#zipfile.ZipInfo.date_time
+
+ZipInfo.date_time  
+The time and date of the last modification to the archive member. This is a tuple of six values:   
+Index Value   
+0 Year (>= 1980)  
+1 Month (one-based)  
+2 Day of month (one-based)  
+3 Hours (zero-based)  
+4 Minutes (zero-based)  
+5 Seconds (zero-based)    Note The ZIP file format does not support timestamps before 1980.

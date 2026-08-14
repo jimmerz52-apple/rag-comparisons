@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.set_scientific
+
+set_scientific(b)[source]
+ 
+Turn scientific notation on or off.  See also  ScalarFormatter.set_powerlimits

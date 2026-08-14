@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.lookup
+
+unicodedata.lookup(name)  
+Look up character by name. If a character with the given name is found, return the corresponding character. If not found, KeyError is raised.  Changed in version 3.3: Support for name aliases 1 and named sequences 2 has been added.

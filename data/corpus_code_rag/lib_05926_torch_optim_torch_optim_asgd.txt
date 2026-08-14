@@ -1,0 +1,16 @@
+# torch.optim#torch.optim.ASGD
+
+class torch.optim.ASGD(params, lr=0.01, lambd=0.0001, alpha=0.75, t0=1000000.0, weight_decay=0) [source]
+ 
+Implements Averaged Stochastic Gradient Descent. It has been proposed in Acceleration of stochastic approximation by averaging.  Parameters 
+ 
+params (iterable) – iterable of parameters to optimize or dicts defining parameter groups 
+lr (float, optional) – learning rate (default: 1e-2) 
+lambd (float, optional) – decay term (default: 1e-4) 
+alpha (float, optional) – power for eta update (default: 0.75) 
+t0 (float, optional) – point at which to start averaging (default: 1e6) 
+weight_decay (float, optional) – weight decay (L2 penalty) (default: 0)     
+step(closure=None) [source]
+ 
+Performs a single optimization step.  Parameters 
+closure (callable, optional) – A closure that reevaluates the model and returns the loss.

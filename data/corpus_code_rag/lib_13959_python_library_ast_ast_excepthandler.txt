@@ -1,0 +1,26 @@
+# python.library.ast#ast.ExceptHandler
+
+class ast.ExceptHandler(type, name, body)  
+A single except clause. type is the exception type it will match, typically a Name node (or None for a catch-all except: clause). name is a raw string for the name to hold the exception, or None if the clause doesn’t have as foo. body is a list of nodes. >>> print(ast.dump(ast.parse("""\
+... try:
+...     a + 1
+... except TypeError:
+...     pass
+... """), indent=4))
+Module(
+    body=[
+        Try(
+            body=[
+                Expr(
+                    value=BinOp(
+                        left=Name(id='a', ctx=Load()),
+                        op=Add(),
+                        right=Constant(value=1)))],
+            handlers=[
+                ExceptHandler(
+                    type=Name(id='TypeError', ctx=Load()),
+                    body=[
+                        Pass()])],
+            orelse=[],
+            finalbody=[])],
+    type_ignores=[])

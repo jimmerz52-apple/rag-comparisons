@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.neighbors.balltree#sklearn.neighbors.BallTree.two_point_correlation
+
+two_point_correlation(X, r, dualtree=False)  
+Compute the two-point correlation function  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+An array of points to query. Last dimension should match dimension of training data.  
+rarray-like 
+
+A one-dimensional array of distances  
+dualtreebool, default=False 
+
+If True, use a dualtree algorithm. Otherwise, use a single-tree algorithm. Dual tree algorithms can have better scaling for large N.    Returns 
+ 
+countsndarray 
+
+counts[i] contains the number of pairs of points with distance less than or equal to r[i]

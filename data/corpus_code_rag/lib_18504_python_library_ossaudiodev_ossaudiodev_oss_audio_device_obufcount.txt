@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.obufcount
+
+oss_audio_device.obufcount()  
+Returns the number of samples that are in the hardware buffer yet to be played.

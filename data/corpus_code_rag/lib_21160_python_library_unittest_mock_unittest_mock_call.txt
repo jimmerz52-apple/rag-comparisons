@@ -1,0 +1,8 @@
+# python.library.unittest.mock#unittest.mock.call
+
+unittest.mock.call(*args, **kwargs)  
+call() is a helper object for making simpler assertions, for comparing with call_args, call_args_list, mock_calls and method_calls. call() can also be used with assert_has_calls(). >>> m = MagicMock(return_value=None)
+>>> m(1, 2, a='foo', b='bar')
+>>> m()
+>>> m.call_args_list == [call(1, 2, a='foo', b='bar'), call()]
+True

@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGFPE
+
+signal.SIGFPE  
+Floating-point exception. For example, division by zero.  See also ZeroDivisionError is raised when the second argument of a division or modulo operation is zero.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.endswith
+
+numpy.chararray.endswith method   chararray.endswith(suffix, start=0, end=None)[source]
+ 
+Returns a boolean array which is True where the string element in self ends with suffix, otherwise False.  See also  char.endswith

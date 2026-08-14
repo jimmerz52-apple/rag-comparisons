@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.extract_version
+
+ZipInfo.extract_version  
+PKZIP version needed to extract archive.

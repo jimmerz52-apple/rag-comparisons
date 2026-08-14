@@ -1,0 +1,20 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_scalars
+
+add_scalars(main_tag, tag_scalar_dict, global_step=None, walltime=None) [source]
+ 
+Adds many scalar data to summary.  Parameters 
+ 
+main_tag (string) – The parent name for the tags 
+tag_scalar_dict (dict) – Key-value pair storing the tag and corresponding values 
+global_step (int) – Global step value to record 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event    Examples: from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter()
+r = 5
+for i in range(100):
+    writer.add_scalars('run_14h', {'xsinx':i*np.sin(i/r),
+                                    'xcosx':i*np.cos(i/r),
+                                    'tanx': np.tan(i/r)}, i)
+writer.close()
+# This call adds three values to the same scalar plot with the tag
+# 'run_14h' in TensorBoard's scalar section.
+ Expected result:

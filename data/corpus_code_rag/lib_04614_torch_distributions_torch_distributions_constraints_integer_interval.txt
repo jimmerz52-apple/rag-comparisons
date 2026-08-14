@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.integer_interval
+
+torch.distributions.constraints.integer_interval  
+alias of torch.distributions.constraints._IntegerInterval

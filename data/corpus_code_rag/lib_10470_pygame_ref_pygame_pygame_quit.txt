@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.quit
+
+pygame.quit() 
+ uninitialize all pygame modules quit() -> None  Uninitialize all pygame modules that have previously been initialized. When the Python interpreter shuts down, this method is called regardless, so your program should not need it, except when it wants to terminate its pygame resources and continue. It is safe to call this function more than once as repeated calls have no effect.  Note Calling pygame.quit() will not exit your program. Consider letting your program end in the same way a normal Python program will end.

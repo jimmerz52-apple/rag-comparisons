@@ -1,0 +1,47 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.WeekArchiveView
+
+class WeekArchiveView  
+A weekly archive page showing all objects in a given week. Objects with a date in the future are not displayed unless you set allow_future to True. Ancestors (MRO)  django.views.generic.list.MultipleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.dates.BaseWeekArchiveView django.views.generic.dates.YearMixin django.views.generic.dates.WeekMixin django.views.generic.dates.BaseDateListView django.views.generic.list.MultipleObjectMixin django.views.generic.dates.DateMixin django.views.generic.base.View  Context In addition to the context provided by MultipleObjectMixin (via BaseDateListView), the template’s context will be:  
+week: A date object representing the first day of the given week. 
+next_week: A date object representing the first day of the next week, according to allow_empty and allow_future. 
+previous_week: A date object representing the first day of the previous week, according to allow_empty and allow_future.  Notes  Uses a default template_name_suffix of _archive_week.  
+The week_format attribute is a strptime() format string used to parse the week number. The following values are supported:  
+'%U': Based on the United States week system where the week begins on Sunday. This is the default value.  
+'%W': Similar to '%U', except it assumes that the week begins on Monday. This is not the same as the ISO 8601 week number.  
+'%V': ISO 8601 week number where the week begins on Monday.  New in Django 3.2: Support for the '%V' week format was added.      Example myapp/views.py: from django.views.generic.dates import WeekArchiveView
+
+from myapp.models import Article
+
+class ArticleWeekArchiveView(WeekArchiveView):
+    queryset = Article.objects.all()
+    date_field = "pub_date"
+    week_format = "%W"
+    allow_future = True
+ Example myapp/urls.py: from django.urls import path
+
+from myapp.views import ArticleWeekArchiveView
+
+urlpatterns = [
+    # Example: /2012/week/23/
+    path('<int:year>/week/<int:week>/',
+         ArticleWeekArchiveView.as_view(),
+         name="archive_week"),
+]
+ Example myapp/article_archive_week.html: <h1>Week {{ week|date:'W' }}</h1>
+
+<ul>
+    {% for article in object_list %}
+        <li>{{ article.pub_date|date:"F j, Y" }}: {{ article.title }}</li>
+    {% endfor %}
+</ul>
+
+<p>
+    {% if previous_week %}
+        Previous Week: {{ previous_week|date:"W" }} of year {{ previous_week|date:"Y" }}
+    {% endif %}
+    {% if previous_week and next_week %}--{% endif %}
+    {% if next_week %}
+        Next week: {{ next_week|date:"W" }} of year {{ next_week|date:"Y" }}
+    {% endif %}
+</p>
+ In this example, you are outputting the week number. Keep in mind that week numbers computed by the date template filter with the 'W' format character are not always the same as those computed by strftime() and strptime() with the '%W' format string. For year 2015, for example, week numbers output by date are higher by one compared to those output by strftime(). There isn’t an equivalent for the '%U' strftime() format string in date. Therefore, you should avoid using date to generate URLs for WeekArchiveView.

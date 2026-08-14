@@ -1,0 +1,19 @@
+# matplotlib.ticker_api#matplotlib.ticker.TickHelper
+
+classmatplotlib.ticker.TickHelper[source]
+ 
+Bases: object   axis=None
+
+   create_dummy_axis(**kwargs)[source]
+
+   set_axis(axis)[source]
+
+   set_bounds(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   set_data_interval(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   set_view_interval(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

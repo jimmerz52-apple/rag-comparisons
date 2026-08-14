@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.getnameinfo
+
+coroutine loop.getnameinfo(sockaddr, flags=0)  
+Asynchronous version of socket.getnameinfo().

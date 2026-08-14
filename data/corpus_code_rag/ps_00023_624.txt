@@ -1,0 +1,6 @@
+# 624
+Task: 624
+
+# Write a python function to convert the given string to upper case.
+def is_upper(string):
+  return (string.upper())

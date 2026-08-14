@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.Address.__str__
+
+__str__()  
+The str value of the object is the address quoted according to RFC 5322 rules, but with no Content Transfer Encoding of any non-ASCII characters.

@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.BaseUserManager.get_by_natural_key
+
+get_by_natural_key(username)  
+Retrieves a user instance using the contents of the field nominated by USERNAME_FIELD.

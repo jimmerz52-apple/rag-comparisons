@@ -1,0 +1,7 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_capstyle
+
+set_capstyle(cs)[source]
+ 
+Set how to draw endpoints of lines.  Parameters 
+ 
+csCapStyle or {'butt', 'projecting', 'round'}

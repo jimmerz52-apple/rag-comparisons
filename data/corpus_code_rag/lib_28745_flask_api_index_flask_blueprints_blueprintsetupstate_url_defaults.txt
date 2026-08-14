@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.url_defaults
+
+url_defaults  
+A dictionary with URL defaults that is added to each and every URL that was defined with the blueprint.

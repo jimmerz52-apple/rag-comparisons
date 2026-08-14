@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.logical_invert
+
+logical_invert(x)  
+Invert all the digits in x.

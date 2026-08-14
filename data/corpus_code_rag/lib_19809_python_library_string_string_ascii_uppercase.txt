@@ -1,0 +1,4 @@
+# python.library.string#string.ascii_uppercase
+
+string.ascii_uppercase  
+The uppercase letters 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'. This value is not locale-dependent and will not change.

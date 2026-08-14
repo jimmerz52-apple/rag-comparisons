@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.greater
+
+greater(other) → Tensor  
+See torch.greater().

@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv6Address.teredo
+
+teredo  
+For addresses that appear to be Teredo addresses (starting with 2001::/32) as defined by RFC 4380, this property will report the embedded (server, client) IP address pair. For any other address, this property will be None.

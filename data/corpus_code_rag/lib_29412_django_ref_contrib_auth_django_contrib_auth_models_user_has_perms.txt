@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.has_perms
+
+has_perms(perm_list, obj=None)  
+Returns True if the user has each of the specified permissions, where each perm is in the format "<app label>.<permission codename>". If the user is inactive, this method will always return False. For an active superuser, this method will always return True. If obj is passed in, this method won’t check for permissions for the model, but for the specific object.

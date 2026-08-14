@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.set_x
+
+set_x(x)[source]
+ 
+Set the left coordinate of the rectangle.

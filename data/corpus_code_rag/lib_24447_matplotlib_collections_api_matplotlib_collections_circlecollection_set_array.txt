@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.set_array
+
+set_array(A)[source]
+ 
+Set the value array from array-like A.  Parameters 
+ 
+Aarray-like or None
+
+
+The values that are mapped to colors. The base class ScalarMappable does not make any assumptions on the dimensionality and shape of the value array A.

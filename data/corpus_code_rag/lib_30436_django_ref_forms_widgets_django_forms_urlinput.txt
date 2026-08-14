@@ -1,0 +1,8 @@
+# django.ref.forms.widgets#django.forms.URLInput
+
+class URLInput  
+ 
+input_type: 'url'
+ 
+template_name: 'django/forms/widgets/url.html'
+ Renders as: <input type="url" ...>

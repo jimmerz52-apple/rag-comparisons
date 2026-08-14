@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.AutoLocator
+
+classmatplotlib.ticker.AutoLocator[source]
+ 
+Bases: matplotlib.ticker.MaxNLocator Dynamically find major tick positions. This is actually a subclass of MaxNLocator, with parameters nbins = 'auto' and steps = [1, 2, 2.5, 5, 10]. To know the values of the non-public parameters, please have a look to the defaults of MaxNLocator.

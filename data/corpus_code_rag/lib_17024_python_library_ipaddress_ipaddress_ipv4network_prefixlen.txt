@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.prefixlen
+
+prefixlen  
+Length of the network prefix, in bits.

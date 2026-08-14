@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.split_path_inout
+
+matplotlib.bezier.split_path_inout(path, inside, tolerance=0.01, reorder_inout=False)[source]
+ 
+Divide a path into two segments at the point where inside(x, y) becomes False.

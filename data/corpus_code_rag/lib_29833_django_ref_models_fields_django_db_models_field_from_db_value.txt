@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.from_db_value
+
+from_db_value(value, expression, connection)  
+Converts a value as returned by the database to a Python object. It is the reverse of get_prep_value(). This method is not used for most built-in fields as the database backend already returns the correct Python type, or the backend itself does the conversion. expression is the same as self. See Converting values to Python objects for usage.  Note For performance reasons, from_db_value is not implemented as a no-op on fields which do not require it (all Django fields). Consequently you may not call super in your definition.

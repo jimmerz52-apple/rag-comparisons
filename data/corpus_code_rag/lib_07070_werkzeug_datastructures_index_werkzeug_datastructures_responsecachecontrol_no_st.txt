@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ResponseCacheControl.no_store
+
+no_store  
+accessor for ‘no-store’

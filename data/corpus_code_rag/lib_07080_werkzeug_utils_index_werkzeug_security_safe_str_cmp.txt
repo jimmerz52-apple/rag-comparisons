@@ -1,0 +1,8 @@
+# werkzeug.utils.index#werkzeug.security.safe_str_cmp
+
+werkzeug.security.safe_str_cmp(a, b)  
+This function compares strings in somewhat constant time. This requires that the length of at least one string is known in advance. Returns True if the two strings are equal, or False if they are not.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use hmac.compare_digest() instead.   Changelog New in version 0.7.   Parameters 
+ 
+a (str) –  
+b (str) –    Return type 
+bool

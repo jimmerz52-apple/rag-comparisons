@@ -1,0 +1,7 @@
+# 513
+Task: 513
+
+# Write a function to convert tuple into list by adding the given string after every element.
+def add_str(test_tup, K):
+  res = [ele for sub in test_tup for ele in (sub, K)]
+  return (res)

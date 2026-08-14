@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_buffer
+
+get_buffer() 
+ acquires a buffer object for the pixels of the Surface. get_buffer() -> BufferProxy  Return a buffer object for the pixels of the Surface. The buffer can be used for direct pixel access and manipulation. Surface pixel data is represented as an unstructured block of memory, with a start address and length in bytes. The data need not be contiguous. Any gaps are included in the length, but otherwise ignored. This method implicitly locks the Surface. The lock will be released when the returned pygame.BufferProxy object is garbage collected.  New in pygame 1.8.

@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get_boundary
+
+get_boundary(failobj=None)  
+Return the value of the boundary parameter of the Content-Type header of the message, or failobj if either the header is missing, or has no boundary parameter. The returned string will always be unquoted as per email.utils.unquote().

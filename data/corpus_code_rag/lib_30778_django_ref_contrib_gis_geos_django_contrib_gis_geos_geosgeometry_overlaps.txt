@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.overlaps
+
+GEOSGeometry.overlaps(other)  
+Returns true if the DE-9IM intersection matrix for the two geometries is T*T***T** (for two points or two surfaces) 1*T***T** (for two curves).

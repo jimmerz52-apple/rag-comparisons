@@ -1,0 +1,5 @@
+# sklearn.modules.generated.sklearn.feature_extraction.dictvectorizer#sklearn.feature_extraction.DictVectorizer.get_feature_names
+
+get_feature_names() [source]
+ 
+Returns a list of feature names, ordered by their indices. If one-of-K coding is applied to categorical features, this will include the constructed feature names but not the original ones.

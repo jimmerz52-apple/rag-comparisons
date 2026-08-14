@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.has_children
+
+has_children()  
+Return True if the block has nested namespaces within it. These can be obtained with get_children().

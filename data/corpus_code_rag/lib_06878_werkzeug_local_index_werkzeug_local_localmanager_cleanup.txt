@@ -1,0 +1,5 @@
+# werkzeug.local.index#werkzeug.local.LocalManager.cleanup
+
+cleanup()  
+Manually clean up the data in the locals for this context. Call this at the end of the request or use make_middleware().  Return type 
+None

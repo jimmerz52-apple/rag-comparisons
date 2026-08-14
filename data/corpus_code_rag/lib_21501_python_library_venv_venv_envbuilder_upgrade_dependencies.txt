@@ -1,0 +1,4 @@
+# python.library.venv#venv.EnvBuilder.upgrade_dependencies
+
+upgrade_dependencies(context)  
+Upgrades the core venv dependency packages (currently pip and setuptools) in the environment. This is done by shelling out to the pip executable in the environment.  New in version 3.9.

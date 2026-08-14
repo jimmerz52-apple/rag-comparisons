@@ -1,0 +1,4 @@
+# python.library.os#os.umask
+
+os.umask(mask)  
+Set the current numeric umask and return the previous umask.

@@ -1,0 +1,7 @@
+# django.ref.models.options#django.db.models.Options.index_together
+
+Options.index_together  
+ Use the indexes option instead. The newer indexes option provides more functionality than index_together. index_together may be deprecated in the future.  Sets of field names that, taken together, are indexed: index_together = [
+    ["pub_date", "deadline"],
+]
+ This list of fields will be indexed together (i.e. the appropriate CREATE INDEX statement will be issued.) For convenience, index_together can be a single list when dealing with a single set of fields: index_together = ["pub_date", "deadline"]

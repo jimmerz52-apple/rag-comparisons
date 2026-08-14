@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.teardown_test_environment
+
+DiscoverRunner.teardown_test_environment(**kwargs)  
+Restores the pre-test environment.

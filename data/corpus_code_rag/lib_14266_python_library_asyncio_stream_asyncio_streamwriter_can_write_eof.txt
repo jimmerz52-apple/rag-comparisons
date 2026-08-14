@@ -1,0 +1,4 @@
+# python.library.asyncio-stream#asyncio.StreamWriter.can_write_eof
+
+can_write_eof()  
+Return True if the underlying transport supports the write_eof() method, False otherwise.

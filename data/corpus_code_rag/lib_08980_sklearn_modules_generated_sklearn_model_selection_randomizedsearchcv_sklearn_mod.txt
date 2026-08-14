@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.model_selection.randomizedsearchcv#sklearn.model_selection.RandomizedSearchCV.fit
+
+fit(X, y=None, *, groups=None, **fit_params) [source]
+ 
+Run fit with all sets of parameters.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vector, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples, n_output) or (n_samples,), default=None 
+
+Target relative to X for classification or regression; None for unsupervised learning.  
+groupsarray-like of shape (n_samples,), default=None 
+
+Group labels for the samples used while splitting the dataset into train/test set. Only used in conjunction with a “Group” cv instance (e.g., GroupKFold).  
+**fit_paramsdict of str -> object 
+
+Parameters passed to the fit method of the estimator

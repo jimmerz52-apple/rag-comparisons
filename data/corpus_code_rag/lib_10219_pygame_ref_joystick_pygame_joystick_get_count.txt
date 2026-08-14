@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.get_count
+
+pygame.joystick.get_count() 
+ Returns the number of joysticks. get_count() -> count  Return the number of joystick devices on the system. The count will be 0 if there are no joysticks on the system. When you create Joystick objects using Joystick(id), you pass an integer that must be lower than this count.

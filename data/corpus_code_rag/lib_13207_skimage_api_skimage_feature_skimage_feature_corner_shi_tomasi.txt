@@ -1,0 +1,39 @@
+# skimage.api.skimage.feature#skimage.feature.corner_shi_tomasi
+
+skimage.feature.corner_shi_tomasi(image, sigma=1) [source]
+ 
+Compute Shi-Tomasi (Kanade-Tomasi) corner measure response image. This corner detector uses information from the auto-correlation matrix A: A = [(imx**2)   (imx*imy)] = [Axx Axy]
+    [(imx*imy)   (imy**2)]   [Axy Ayy]
+ Where imx and imy are first derivatives, averaged with a gaussian filter. The corner measure is then defined as the smaller eigenvalue of A: ((Axx + Ayy) - sqrt((Axx - Ayy)**2 + 4 * Axy**2)) / 2
+  Parameters 
+ 
+imagendarray 
+
+Input image.  
+sigmafloat, optional 
+
+Standard deviation used for the Gaussian kernel, which is used as weighting function for the auto-correlation matrix.    Returns 
+ 
+responsendarray 
+
+Shi-Tomasi response image.     References  
+1  
+https://en.wikipedia.org/wiki/Corner_detection   Examples >>> from skimage.feature import corner_shi_tomasi, corner_peaks
+>>> square = np.zeros([10, 10])
+>>> square[2:8, 2:8] = 1
+>>> square.astype(int)
+array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+>>> corner_peaks(corner_shi_tomasi(square), min_distance=1)
+array([[2, 2],
+       [2, 7],
+       [7, 2],
+       [7, 7]])

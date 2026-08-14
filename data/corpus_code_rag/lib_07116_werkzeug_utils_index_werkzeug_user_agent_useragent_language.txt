@@ -1,0 +1,4 @@
+# werkzeug.utils.index#werkzeug.user_agent.UserAgent.language
+
+language: Optional[str] = None  
+The browser language, if it could be parsed from the string.

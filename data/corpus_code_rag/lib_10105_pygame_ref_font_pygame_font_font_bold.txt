@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.bold
+
+bold 
+ Gets or sets whether the font should be rendered in (faked) bold. bold -> bool  Whether the font should be rendered in bold. When set to True, this enables the bold rendering of text. This is a fake stretching of the font that doesn't look good on many font types. If possible load the font from a real bold font file. While bold, the font will have a different width than when normal. This can be mixed with the italic and underline modes.  New in pygame 2.0.0.

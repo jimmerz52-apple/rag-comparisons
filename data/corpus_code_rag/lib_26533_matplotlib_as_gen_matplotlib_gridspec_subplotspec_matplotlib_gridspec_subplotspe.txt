@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.gridspec.subplotspec#matplotlib.gridspec.SubplotSpec.is_first_row
+
+is_first_row()[source]

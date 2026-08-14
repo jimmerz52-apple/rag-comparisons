@@ -1,0 +1,9 @@
+# flask.api.index#flask.json.load
+
+flask.json.load(fp, app=None, **kwargs)  
+Deserialize an object from JSON read from a file object. Takes the same arguments as the built-in json.load(), with some defaults from application configuration.  Parameters 
+ 
+fp (IO[str]) – File object to read JSON from. 
+app (Optional[Flask]) – Use this app’s config instead of the active app context or defaults. 
+kwargs (Any) – Extra arguments passed to json.load().   Return type 
+Any    Changed in version 2.0: encoding is deprecated and will be removed in Flask 2.1. The file must be text mode, or binary mode with UTF-8 bytes.

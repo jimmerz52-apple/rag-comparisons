@@ -1,0 +1,4 @@
+# python.library.test#test.support.rmtree
+
+test.support.rmtree(path)  
+Call shutil.rmtree() on path or call os.lstat() and os.rmdir() to remove a path and its contents. On Windows platforms, this is wrapped with a wait loop that checks for the existence of the files.

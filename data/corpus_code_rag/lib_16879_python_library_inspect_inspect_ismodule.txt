@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.ismodule
+
+inspect.ismodule(object)  
+Return True if the object is a module.

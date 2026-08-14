@@ -1,0 +1,30 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnchoredText.set
+
+set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, bbox_to_anchor=<UNSET>, child=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+bbox_to_anchor unknown  
+child unknown  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+offset (float, float) or callable  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+zorder float

@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.create_parser
+
+BaseCommand.create_parser(prog_name, subcommand, **kwargs)  
+Returns a CommandParser instance, which is an ArgumentParser subclass with a few customizations for Django. You can customize the instance by overriding this method and calling super() with kwargs of ArgumentParser parameters.

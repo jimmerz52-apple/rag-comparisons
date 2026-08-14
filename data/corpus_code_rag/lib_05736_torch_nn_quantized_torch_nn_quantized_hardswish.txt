@@ -1,0 +1,8 @@
+# torch.nn.quantized#torch.nn.quantized.Hardswish
+
+class torch.nn.quantized.Hardswish(scale, zero_point) [source]
+ 
+This is the quantized version of Hardswish.  Parameters 
+ 
+scale – quantization scale of the output tensor 
+zero_point – quantization zero point of the output tensor

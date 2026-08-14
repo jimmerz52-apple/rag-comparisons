@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.mixture.gaussianmixture#sklearn.mixture.GaussianMixture.bic
+
+bic(X) [source]
+ 
+Bayesian information criterion for the current model on the input X.  Parameters 
+ 
+Xarray of shape (n_samples, n_dimensions) 
+  Returns 
+ 
+bicfloat 
+
+The lower the better.

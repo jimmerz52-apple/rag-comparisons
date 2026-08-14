@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Value
+
+Value(typecode, value)  
+Create an object with a writable value attribute and return a proxy for it.

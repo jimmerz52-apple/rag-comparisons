@@ -1,0 +1,22 @@
+# skimage.api.skimage.color#skimage.color.deltaE_cmc
+
+skimage.color.deltaE_cmc(lab1, lab2, kL=1, kC=1) [source]
+ 
+Color difference from the CMC l:c standard. This color difference was developed by the Colour Measurement Committee (CMC) of the Society of Dyers and Colourists (United Kingdom). It is intended for use in the textile industry. The scale factors kL, kC set the weight given to differences in lightness and chroma relative to differences in hue. The usual values are kL=2, kC=1 for “acceptability” and kL=1, kC=1 for “imperceptibility”. Colors with dE > 1 are “different” for the given scale factors.  Parameters 
+ 
+lab1array_like 
+
+reference color (Lab colorspace)  
+lab2array_like 
+
+comparison color (Lab colorspace)    Returns 
+ 
+dEarray_like 
+
+distance between colors lab1 and lab2     Notes deltaE_cmc the defines the scales for the lightness, hue, and chroma in terms of the first color. Consequently deltaE_cmc(lab1, lab2) != deltaE_cmc(lab2, lab1) References  
+1  
+https://en.wikipedia.org/wiki/Color_difference  
+2  
+http://www.brucelindbloom.com/index.html?Eqn_DeltaE_CIE94.html  
+3  
+F. J. J. Clarke, R. McDonald, and B. Rigg, “Modification to the JPC79 colour-difference formula,” J. Soc. Dyers Colour. 100, 128-132 (1984).

@@ -1,0 +1,42 @@
+# skimage.api.skimage.restoration#skimage.restoration.denoise_bilateral
+
+skimage.restoration.denoise_bilateral(image, win_size=None, sigma_color=None, sigma_spatial=1, bins=10000, mode='constant', cval=0, multichannel=False) [source]
+ 
+Denoise image using bilateral filter.  Parameters 
+ 
+imagendarray, shape (M, N[, 3]) 
+
+Input image, 2D grayscale or RGB.  
+win_sizeint 
+
+Window size for filtering. If win_size is not specified, it is calculated as max(5, 2 * ceil(3 * sigma_spatial) + 1).  
+sigma_colorfloat 
+
+Standard deviation for grayvalue/color distance (radiometric similarity). A larger value results in averaging of pixels with larger radiometric differences. Note, that the image will be converted using the img_as_float function and thus the standard deviation is in respect to the range [0, 1]. If the value is None the standard deviation of the image will be used.  
+sigma_spatialfloat 
+
+Standard deviation for range distance. A larger value results in averaging of pixels with larger spatial differences.  
+binsint 
+
+Number of discrete values for Gaussian weights of color filtering. A larger value results in improved accuracy.  
+mode{‘constant’, ‘edge’, ‘symmetric’, ‘reflect’, ‘wrap’} 
+
+How to handle values outside the image borders. See numpy.pad for detail.  
+cvalstring 
+
+Used in conjunction with mode ‘constant’, the value outside the image boundaries.  
+multichannelbool 
+
+Whether the last axis of the image is to be interpreted as multiple channels or another spatial dimension.    Returns 
+ 
+denoisedndarray 
+
+Denoised image.     Notes This is an edge-preserving, denoising filter. It averages pixels based on their spatial closeness and radiometric similarity [1]. Spatial closeness is measured by the Gaussian function of the Euclidean distance between two pixels and a certain standard deviation (sigma_spatial). Radiometric similarity is measured by the Gaussian function of the Euclidean distance between two color values and a certain standard deviation (sigma_color). References  
+1  
+C. Tomasi and R. Manduchi. “Bilateral Filtering for Gray and Color Images.” IEEE International Conference on Computer Vision (1998) 839-846. DOI:10.1109/ICCV.1998.710815   Examples >>> from skimage import data, img_as_float
+>>> astro = img_as_float(data.astronaut())
+>>> astro = astro[220:300, 220:320]
+>>> noisy = astro + 0.6 * astro.std() * np.random.random(astro.shape)
+>>> noisy = np.clip(noisy, 0, 1)
+>>> denoised = denoise_bilateral(noisy, sigma_color=0.05, sigma_spatial=15,
+...                              multichannel=True)

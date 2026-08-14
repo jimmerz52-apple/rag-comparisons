@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MHMessage.add_sequence
+
+add_sequence(sequence)  
+Add sequence to the list of sequences that include this message.

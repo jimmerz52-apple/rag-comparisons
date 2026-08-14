@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.rationalquadratic#sklearn.gaussian_process.kernels.RationalQuadratic.hyperparameters
+
+property hyperparameters  
+Returns a list of all hyperparameter specifications.

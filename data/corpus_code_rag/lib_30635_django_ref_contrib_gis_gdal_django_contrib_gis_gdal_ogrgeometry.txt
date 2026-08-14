@@ -1,0 +1,126 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.OGRGeometry
+
+class OGRGeometry(geom_input, srs=None)  
+This object is a wrapper for the OGR Geometry class. These objects are instantiated directly from the given geom_input parameter, which may be a string containing WKT, HEX, GeoJSON, a buffer containing WKB data, or an OGRGeomType object. These objects are also returned from the Feature.geom attribute, when reading vector data from Layer (which is in turn a part of a DataSource).  
+classmethod from_gml(gml_string) 
+ Constructs an OGRGeometry from the given GML string.  
+classmethod from_bbox(bbox) 
+ Constructs a Polygon from the given bounding-box (a 4-tuple).  
+__len__() 
+ Returns the number of points in a LineString, the number of rings in a Polygon, or the number of geometries in a GeometryCollection. Not applicable to other geometry types.  
+__iter__() 
+ Iterates over the points in a LineString, the rings in a Polygon, or the geometries in a GeometryCollection. Not applicable to other geometry types.  
+__getitem__() 
+ Returns the point at the specified index for a LineString, the interior ring at the specified index for a Polygon, or the geometry at the specified index in a GeometryCollection. Not applicable to other geometry types.  
+dimension 
+ Returns the number of coordinated dimensions of the geometry, i.e. 0 for points, 1 for lines, and so forth: >> polygon.dimension
+2
+  
+coord_dim 
+ Returns or sets the coordinate dimension of this geometry. For example, the value would be 2 for two-dimensional geometries.  
+geom_count 
+ Returns the number of elements in this geometry: >>> polygon.geom_count
+1
+  
+point_count 
+ Returns the number of points used to describe this geometry: >>> polygon.point_count
+4
+  
+num_points 
+ Alias for point_count.  
+num_coords 
+ Alias for point_count.  
+geom_type 
+ Returns the type of this geometry, as an OGRGeomType object.  
+geom_name 
+ Returns the name of the type of this geometry: >>> polygon.geom_name
+'POLYGON'
+  
+area 
+ Returns the area of this geometry, or 0 for geometries that do not contain an area: >>> polygon.area
+25.0
+  
+envelope 
+ Returns the envelope of this geometry, as an Envelope object.  
+extent 
+ Returns the envelope of this geometry as a 4-tuple, instead of as an Envelope object: >>> point.extent
+(0.0, 0.0, 5.0, 5.0)
+  
+srs 
+ This property controls the spatial reference for this geometry, or None if no spatial reference system has been assigned to it. If assigned, accessing this property returns a SpatialReference object. It may be set with another SpatialReference object, or any input that SpatialReference accepts. Example: >>> city.geom.srs.name
+'GCS_WGS_1984'
+  
+srid 
+ Returns or sets the spatial reference identifier corresponding to SpatialReference of this geometry. Returns None if there is no spatial reference information associated with this geometry, or if an SRID cannot be determined.  
+geos 
+ Returns a GEOSGeometry object corresponding to this geometry.  
+gml 
+ Returns a string representation of this geometry in GML format: >>> OGRGeometry('POINT(1 2)').gml
+'<gml:Point><gml:coordinates>1,2</gml:coordinates></gml:Point>'
+  
+hex 
+ Returns a string representation of this geometry in HEX WKB format: >>> OGRGeometry('POINT(1 2)').hex
+'0101000000000000000000F03F0000000000000040'
+  
+json 
+ Returns a string representation of this geometry in JSON format: >>> OGRGeometry('POINT(1 2)').json
+'{ "type": "Point", "coordinates": [ 1.000000, 2.000000 ] }'
+  
+kml 
+ Returns a string representation of this geometry in KML format.  
+wkb_size 
+ Returns the size of the WKB buffer needed to hold a WKB representation of this geometry: >>> OGRGeometry('POINT(1 2)').wkb_size
+21
+  
+wkb 
+ Returns a buffer containing a WKB representation of this geometry.  
+wkt 
+ Returns a string representation of this geometry in WKT format.  
+ewkt 
+ Returns the EWKT representation of this geometry.  
+clone() 
+ Returns a new OGRGeometry clone of this geometry object.  
+close_rings() 
+ If there are any rings within this geometry that have not been closed, this routine will do so by adding the starting point to the end: >>> triangle = OGRGeometry('LINEARRING (0 0,0 1,1 0)')
+>>> triangle.close_rings()
+>>> triangle.wkt
+'LINEARRING (0 0,0 1,1 0,0 0)'
+  
+transform(coord_trans, clone=False) 
+ Transforms this geometry to a different spatial reference system. May take a CoordTransform object, a SpatialReference object, or any other input accepted by SpatialReference (including spatial reference WKT and PROJ strings, or an integer SRID). By default nothing is returned and the geometry is transformed in-place. However, if the clone keyword is set to True then a transformed clone of this geometry is returned instead.  
+intersects(other) 
+ Returns True if this geometry intersects the other, otherwise returns False.  
+equals(other) 
+ Returns True if this geometry is equivalent to the other, otherwise returns False.  
+disjoint(other) 
+ Returns True if this geometry is spatially disjoint to (i.e. does not intersect) the other, otherwise returns False.  
+touches(other) 
+ Returns True if this geometry touches the other, otherwise returns False.  
+crosses(other) 
+ Returns True if this geometry crosses the other, otherwise returns False.  
+within(other) 
+ Returns True if this geometry is contained within the other, otherwise returns False.  
+contains(other) 
+ Returns True if this geometry contains the other, otherwise returns False.  
+overlaps(other) 
+ Returns True if this geometry overlaps the other, otherwise returns False.  
+boundary() 
+ The boundary of this geometry, as a new OGRGeometry object.  
+convex_hull 
+ The smallest convex polygon that contains this geometry, as a new OGRGeometry object.  
+difference() 
+ Returns the region consisting of the difference of this geometry and the other, as a new OGRGeometry object.  
+intersection() 
+ Returns the region consisting of the intersection of this geometry and the other, as a new OGRGeometry object.  
+sym_difference() 
+ Returns the region consisting of the symmetric difference of this geometry and the other, as a new OGRGeometry object.  
+union() 
+ Returns the region consisting of the union of this geometry and the other, as a new OGRGeometry object.  
+tuple 
+ Returns the coordinates of a point geometry as a tuple, the coordinates of a line geometry as a tuple of tuples, and so forth: >>> OGRGeometry('POINT (1 2)').tuple
+(1.0, 2.0)
+>>> OGRGeometry('LINESTRING (1 2,3 4)').tuple
+((1.0, 2.0), (3.0, 4.0))
+  
+coords 
+ An alias for tuple.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.BYTECODE_SUFFIXES
+
+importlib.machinery.BYTECODE_SUFFIXES  
+A list of strings representing the recognized file suffixes for bytecode modules (including the leading dot).  New in version 3.3.   Changed in version 3.5: The value is no longer dependent on __debug__.

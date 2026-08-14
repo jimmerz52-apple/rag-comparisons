@@ -1,0 +1,6 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.to_dict
+
+to_dict(flat=True)  
+Return the contents as regular dict. If flat is True the returned dict will only have the first item present, if flat is False all values will be returned as lists.  Parameters 
+flat – If set to False the dict returned will have lists with all the values in it. Otherwise it will only contain the first value for each key.  Returns 
+a dict

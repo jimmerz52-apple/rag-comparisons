@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_gid
+
+matplotlib.artist.Artist.get_gid   Artist.get_gid()[source]
+ 
+Return the group id.

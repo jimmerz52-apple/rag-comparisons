@@ -1,0 +1,9 @@
+# torch.autograd#torch.autograd.profiler.profile.table
+
+table(sort_by=None, row_limit=100, max_src_column_width=75, header=None, top_level_events_only=False) [source]
+ 
+Prints an EventList as a nicely formatted table.  Parameters 
+ 
+sort_by (str, optional) – Attribute used to sort entries. By default they are printed in the same order as they were registered. Valid keys include: cpu_time, cuda_time, cpu_time_total, cuda_time_total, cpu_memory_usage, cuda_memory_usage, self_cpu_memory_usage, self_cuda_memory_usage, count. 
+top_level_events_only (bool, optional) – Boolean flag to determine the selection of events to display. If true, the profiler will only display events at top level like top-level invocation of python lstm, python add or other functions, nested events like low-level cpu/cuda ops events are omitted for profiler result readability.   Returns 
+A string containing the table.

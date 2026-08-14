@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.split
+
+shlex.split(s, comments=False, posix=True)  
+Split the string s using shell-like syntax. If comments is False (the default), the parsing of comments in the given string will be disabled (setting the commenters attribute of the shlex instance to the empty string). This function operates in POSIX mode by default, but uses non-POSIX mode if the posix argument is false.  Note Since the split() function instantiates a shlex instance, passing None for s will read the string to split from standard input.   Deprecated since version 3.9: Passing None for s will raise an exception in future Python versions.

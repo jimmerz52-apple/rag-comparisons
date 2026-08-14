@@ -1,0 +1,4 @@
+# python.library.email.generator#email.generator.BytesGenerator.write
+
+write(s)  
+Encode s using the ASCII codec and the surrogateescape error handler, and pass it to the write method of the outfp passed to the BytesGenerator’s constructor.

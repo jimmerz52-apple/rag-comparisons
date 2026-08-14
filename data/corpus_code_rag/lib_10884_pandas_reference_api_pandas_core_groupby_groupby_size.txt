@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.core.groupby.groupby.size
+
+pandas.core.groupby.GroupBy.size   finalGroupBy.size()[source]
+ 
+Compute group sizes.  Returns 
+ DataFrame or Series
+
+Number of rows in each group as a Series if as_index is True or a DataFrame if as_index is False.      See also  Series.groupby
+
+Apply a function groupby to a Series.  DataFrame.groupby
+
+Apply a function groupby to each row or column of a DataFrame.

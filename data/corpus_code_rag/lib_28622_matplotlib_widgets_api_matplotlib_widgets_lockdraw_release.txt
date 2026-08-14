@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.LockDraw.release
+
+release(o)[source]
+ 
+Release the lock from o.

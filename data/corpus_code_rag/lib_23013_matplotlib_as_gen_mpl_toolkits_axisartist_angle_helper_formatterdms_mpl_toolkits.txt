@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.formatterdms#mpl_toolkits.axisartist.angle_helper.FormatterDMS.fmt_ss_partial
+
+fmt_ss_partial='%02d.%s^{\\prime\\prime}$'

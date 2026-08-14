@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.testing.suppress_warnings.__call__
+
+numpy.testing.suppress_warnings.__call__ method   testing.suppress_warnings.__call__(func)[source]
+ 
+Function decorator to apply certain suppressions to a whole function.

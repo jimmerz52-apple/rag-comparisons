@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.unique
+
+unique(sorted=True, return_inverse=False, return_counts=False, dim=None) [source]
+ 
+Returns the unique elements of the input tensor. See torch.unique()

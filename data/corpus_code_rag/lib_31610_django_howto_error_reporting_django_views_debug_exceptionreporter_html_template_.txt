@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.ExceptionReporter.html_template_path
+
+html_template_path  
+ New in Django 3.2.  Property that returns a pathlib.Path representing the absolute filesystem path to a template for rendering the HTML representation of the exception. Defaults to the Django provided template.

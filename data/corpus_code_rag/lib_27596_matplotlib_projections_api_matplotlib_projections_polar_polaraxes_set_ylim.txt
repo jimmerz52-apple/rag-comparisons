@@ -1,0 +1,31 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_ylim
+
+set_ylim(bottom=None, top=None, emit=True, auto=False, *, ymin=None, ymax=None)[source]
+ 
+Set the data limits for the radial axis.  Parameters 
+ 
+bottomfloat, optional
+
+
+The bottom limit (default: None, which leaves the bottom limit unchanged). The bottom and top ylims may be passed as the tuple (bottom, top) as the first positional argument (or as the bottom keyword argument).  
+topfloat, optional
+
+
+The top limit (default: None, which leaves the top limit unchanged).  
+emitbool, default: True
+
+
+Whether to notify observers of limit change.  
+autobool or None, default: False
+
+
+Whether to turn on autoscaling of the y-axis. True turns on, False turns off, None leaves unchanged.  
+ymin, ymaxfloat, optional
+
+
+These arguments are deprecated and will be removed in a future version. They are equivalent to bottom and top respectively, and it is an error to pass both ymin and bottom or ymax and top.    Returns 
+ 
+bottom, top(float, float)
+
+
+The new y-axis limits in data coordinates.

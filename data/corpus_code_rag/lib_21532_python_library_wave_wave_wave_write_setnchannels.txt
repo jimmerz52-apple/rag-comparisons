@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.setnchannels
+
+Wave_write.setnchannels(n)  
+Set the number of channels.

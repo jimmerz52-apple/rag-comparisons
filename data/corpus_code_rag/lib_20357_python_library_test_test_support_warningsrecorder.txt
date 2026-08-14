@@ -1,0 +1,4 @@
+# python.library.test#test.support.WarningsRecorder
+
+class test.support.WarningsRecorder  
+Class used to record warnings for unit tests. See documentation of check_warnings() above for more details.

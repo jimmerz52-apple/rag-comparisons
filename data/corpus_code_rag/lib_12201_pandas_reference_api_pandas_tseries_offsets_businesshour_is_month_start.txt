@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.is_month_start
+
+pandas.tseries.offsets.BusinessHour.is_month_start   BusinessHour.is_month_start()

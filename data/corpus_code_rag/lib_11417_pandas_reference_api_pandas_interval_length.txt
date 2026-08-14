@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.interval.length
+
+pandas.Interval.length   Interval.length
+ 
+Return the length of the Interval.

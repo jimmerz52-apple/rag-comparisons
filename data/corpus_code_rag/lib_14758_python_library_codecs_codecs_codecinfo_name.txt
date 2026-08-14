@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.CodecInfo.name
+
+name  
+The name of the encoding.

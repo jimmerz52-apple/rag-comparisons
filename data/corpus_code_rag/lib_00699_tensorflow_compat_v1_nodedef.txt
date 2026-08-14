@@ -1,0 +1,13 @@
+# tensorflow.compat.v1.nodedef
+
+tf.compat.v1.NodeDef A ProtocolMessage
+ 
+
+
+ Attributes
+  attr   repeated AttrEntry attr  
+  device   string device  
+  experimental_debug_info   ExperimentalDebugInfo experimental_debug_info  
+  input   repeated string input  
+  name   string name  
+  op   string op    Child Classes class AttrEntry class ExperimentalDebugInfo

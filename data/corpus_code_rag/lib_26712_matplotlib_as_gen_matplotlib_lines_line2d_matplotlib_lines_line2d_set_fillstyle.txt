@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_fillstyle
+
+set_fillstyle(fs)[source]
+ 
+Set the marker fill style.  Parameters 
+ 
+fs{'full', 'left', 'right', 'bottom', 'top', 'none'}
+
+
+Possible values:  'full': Fill the whole marker with the markerfacecolor. 'left', 'right', 'bottom', 'top': Fill the marker half at the given side with the markerfacecolor. The other half of the marker is filled with markerfacecoloralt. 'none': No filling.  For examples see Marker fill styles.

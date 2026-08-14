@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.Queue.empty
+
+empty()  
+Return True if the queue is empty, False otherwise.

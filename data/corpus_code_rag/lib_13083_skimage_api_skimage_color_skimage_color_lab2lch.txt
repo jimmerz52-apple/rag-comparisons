@@ -1,0 +1,20 @@
+# skimage.api.skimage.color#skimage.color.lab2lch
+
+skimage.color.lab2lch(lab) [source]
+ 
+CIE-LAB to CIE-LCH color space conversion. LCH is the cylindrical representation of the LAB (Cartesian) colorspace  Parameters 
+ 
+lab(…, 3) array_like 
+
+The N-D image in CIE-LAB format. The last (N+1-th) dimension must have at least 3 elements, corresponding to the L, a, and b color channels. Subsequent elements are copied.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in LCH format, in a N-D array with same shape as input lab.    Raises 
+ ValueError
+
+If lch does not have at least 3 color channels (i.e. l, a, b).     Notes The Hue is expressed as an angle between (0, 2*pi) Examples >>> from skimage import data
+>>> from skimage.color import rgb2lab, lab2lch
+>>> img = data.astronaut()
+>>> img_lab = rgb2lab(img)
+>>> img_lch = lab2lch(img_lab)

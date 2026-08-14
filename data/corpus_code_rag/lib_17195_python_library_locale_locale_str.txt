@@ -1,0 +1,4 @@
+# python.library.locale#locale.str
+
+locale.str(float)  
+Formats a floating point number using the same format as the built-in function str(float), but takes the decimal point into account.

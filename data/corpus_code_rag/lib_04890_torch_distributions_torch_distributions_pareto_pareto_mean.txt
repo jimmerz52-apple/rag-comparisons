@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.pareto.Pareto.mean
+
+property mean

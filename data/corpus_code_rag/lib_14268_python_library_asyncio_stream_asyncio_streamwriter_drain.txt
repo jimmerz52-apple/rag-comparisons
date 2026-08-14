@@ -1,0 +1,6 @@
+# python.library.asyncio-stream#asyncio.StreamWriter.drain
+
+coroutine drain()  
+Wait until it is appropriate to resume writing to the stream. Example: writer.write(data)
+await writer.drain()
+ This is a flow control method that interacts with the underlying IO write buffer. When the size of the buffer reaches the high watermark, drain() blocks until the size of the buffer is drained down to the low watermark and writing can be resumed. When there is nothing to wait for, the drain() returns immediately.

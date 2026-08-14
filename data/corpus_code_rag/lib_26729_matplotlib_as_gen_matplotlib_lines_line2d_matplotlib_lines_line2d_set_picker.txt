@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_picker
+
+set_picker(p)[source]
+ 
+Set the event picker details for the line.  Parameters 
+ 
+pfloat or callable[[Artist, Event], tuple[bool, dict]]
+
+
+If a float, it is used as the pick radius in points.

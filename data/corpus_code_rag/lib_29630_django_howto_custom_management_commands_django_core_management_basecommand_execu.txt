@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.execute
+
+BaseCommand.execute(*args, **options)  
+Tries to execute this command, performing system checks if needed (as controlled by the requires_system_checks attribute). If the command raises a CommandError, it’s intercepted and printed to stderr.

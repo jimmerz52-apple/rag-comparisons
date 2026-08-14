@@ -1,0 +1,43 @@
+# torch.distributions#torch.distributions.multivariate_normal.MultivariateNormal
+
+class torch.distributions.multivariate_normal.MultivariateNormal(loc, covariance_matrix=None, precision_matrix=None, scale_tril=None, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Creates a multivariate normal (also called Gaussian) distribution parameterized by a mean vector and a covariance matrix. The multivariate normal distribution can be parameterized either in terms of a positive definite covariance matrix Σ\mathbf{\Sigma}  or a positive definite precision matrix Σ−1\mathbf{\Sigma}^{-1}  or a lower-triangular matrix L\mathbf{L}  with positive-valued diagonal entries, such that Σ=LL⊤\mathbf{\Sigma} = \mathbf{L}\mathbf{L}^\top . This triangular matrix can be obtained via e.g. Cholesky decomposition of the covariance. Example >>> m = MultivariateNormal(torch.zeros(2), torch.eye(2))
+>>> m.sample()  # normally distributed with mean=`[0,0]` and covariance_matrix=`I`
+tensor([-0.2102, -0.5429])
+  Parameters 
+ 
+loc (Tensor) – mean of the distribution 
+covariance_matrix (Tensor) – positive-definite covariance matrix 
+precision_matrix (Tensor) – positive-definite precision matrix 
+scale_tril (Tensor) – lower-triangular factor of covariance, with positive-valued diagonal     Note Only one of covariance_matrix or precision_matrix or scale_tril can be specified. Using scale_tril will be more efficient: all computations internally are based on scale_tril. If covariance_matrix or precision_matrix is passed instead, it is only used to compute the corresponding lower triangular matrices using a Cholesky decomposition.   
+arg_constraints = {'covariance_matrix': PositiveDefinite(), 'loc': IndependentConstraint(Real(), 1), 'precision_matrix': PositiveDefinite(), 'scale_tril': LowerCholesky()} 
+  
+covariance_matrix [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+precision_matrix [source]
+
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+scale_tril [source]
+
+  
+support = IndependentConstraint(Real(), 1) 
+  
+property variance

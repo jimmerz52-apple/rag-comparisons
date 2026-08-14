@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.BabylMessage.remove_label
+
+remove_label(label)  
+Remove label from the list of labels on the message.

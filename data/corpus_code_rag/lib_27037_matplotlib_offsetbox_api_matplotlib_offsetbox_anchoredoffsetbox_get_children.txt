@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnchoredOffsetbox.get_children
+
+get_children()[source]
+ 
+Return the list of children.

@@ -1,0 +1,5 @@
+# python.library.operator#operator.__ilshift__
+
+operator.ilshift(a, b)  
+operator.__ilshift__(a, b)  
+a = ilshift(a, b) is equivalent to a <<= b.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.mixture.gaussianmixture#sklearn.mixture.GaussianMixture.predict_proba
+
+predict_proba(X) [source]
+ 
+Predict posterior probability of each component given the data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+List of n_features-dimensional data points. Each row corresponds to a single data point.    Returns 
+ 
+resparray, shape (n_samples, n_components) 
+
+Returns the probability each Gaussian (state) in the model given each sample.

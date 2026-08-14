@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.PEM_cert_to_DER_cert
+
+ssl.PEM_cert_to_DER_cert(PEM_cert_string)  
+Given a certificate as an ASCII PEM string, returns a DER-encoded sequence of bytes for that same certificate.

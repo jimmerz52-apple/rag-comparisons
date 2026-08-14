@@ -1,0 +1,5 @@
+# matplotlib.cm_api#matplotlib.cm.ScalarMappable.get_clim
+
+get_clim()[source]
+ 
+Return the values (min, max) that are mapped to the colormap limits.

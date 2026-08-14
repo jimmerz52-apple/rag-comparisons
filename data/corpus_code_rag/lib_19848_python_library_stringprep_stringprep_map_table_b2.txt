@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.map_table_b2
+
+stringprep.map_table_b2(code)  
+Return the mapped value for code according to tableB.2 (Mapping for case-folding used with NFKC).

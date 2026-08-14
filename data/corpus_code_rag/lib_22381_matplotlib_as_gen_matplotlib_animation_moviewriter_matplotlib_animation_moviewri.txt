@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriter#matplotlib.animation.MovieWriter.isAvailable
+
+classmethodisAvailable()[source]
+ 
+Return whether a MovieWriter subclass is actually available.

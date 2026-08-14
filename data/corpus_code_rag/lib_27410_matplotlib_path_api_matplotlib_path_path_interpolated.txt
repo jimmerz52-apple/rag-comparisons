@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.interpolated
+
+interpolated(steps)[source]
+ 
+Return a new path resampled to length N x steps. Codes other than LINETO are not handled correctly.

@@ -1,0 +1,14 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.new_timer
+
+new_timer(interval=None, callbacks=None)[source]
+ 
+Create a new backend-specific subclass of Timer. This is useful for getting periodic events through the backend's native event loop. Implemented only for backends with GUIs.  Parameters 
+ 
+intervalint
+
+
+Timer interval in milliseconds.  
+callbackslist[tuple[callable, tuple, dict]]
+
+
+Sequence of (func, args, kwargs) where func(*args, **kwargs) will be executed by the timer every interval. Callbacks which return False or 0 will be removed from the timer.     Examples >>> timer = fig.canvas.new_timer(callbacks=[(f1, (1,), {'a': 3})])

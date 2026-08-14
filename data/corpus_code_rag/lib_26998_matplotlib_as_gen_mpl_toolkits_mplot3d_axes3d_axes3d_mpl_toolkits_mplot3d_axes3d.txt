@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.tick_params
+
+tick_params(axis='both', **kwargs)[source]
+ 
+Convenience method for changing the appearance of ticks and tick labels. See matplotlib.axes.Axes.tick_params() for more complete documentation. The only difference is that setting axis to 'both' will mean that the settings are applied to all three axes. Also, the axis parameter also accepts a value of 'z', which would mean to apply to only the z-axis. Also, because of how Axes3D objects are drawn very differently from regular 2D axes, some of these settings may have ambiguous meaning. For simplicity, the 'z' axis will accept settings as if it was like the 'y' axis.  Note Axes3D currently ignores some of these settings.

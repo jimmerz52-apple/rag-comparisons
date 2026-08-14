@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.streaming
+
+HttpResponse.streaming  
+This is always False. This attribute exists so middleware can treat streaming responses differently from regular responses.

@@ -1,0 +1,4 @@
+# python.library.threading#threading.Barrier.reset
+
+reset()  
+Return the barrier to the default, empty state. Any threads waiting on it will receive the BrokenBarrierError exception. Note that using this function may require some external synchronization if there are other threads whose state is unknown. If a barrier is broken it may be better to just leave it and create a new one.

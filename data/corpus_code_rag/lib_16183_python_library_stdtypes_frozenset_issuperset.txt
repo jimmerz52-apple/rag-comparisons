@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.issuperset
+
+issuperset(other)  
+set >= other  
+Test whether every element in other is in the set.

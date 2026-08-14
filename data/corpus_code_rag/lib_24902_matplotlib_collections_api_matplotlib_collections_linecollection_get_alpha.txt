@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.LineCollection.get_alpha
+
+get_alpha()[source]
+ 
+Return the alpha value used for blending - not supported on all backends.

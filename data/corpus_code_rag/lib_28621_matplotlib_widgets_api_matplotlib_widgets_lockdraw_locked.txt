@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.LockDraw.locked
+
+locked()[source]
+ 
+Return whether the lock is currently held by an owner.

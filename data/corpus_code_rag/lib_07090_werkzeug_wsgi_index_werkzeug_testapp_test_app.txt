@@ -1,0 +1,12 @@
+# werkzeug.wsgi.index#werkzeug.testapp.test_app
+
+werkzeug.testapp.test_app(environ, start_response)  
+Simple test application that dumps the environment. You can use it to check if Werkzeug is working properly: >>> from werkzeug.serving import run_simple
+>>> from werkzeug.testapp import test_app
+>>> run_simple('localhost', 3000, test_app)
+ * Running on http://localhost:3000/
+ The application displays important information from the WSGI environment, the Python interpreter and the installed libraries.  Parameters 
+ 
+environ (WSGIEnvironment) –  
+start_response (StartResponse) –    Return type 
+Iterable[bytes]

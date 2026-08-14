@@ -1,0 +1,7 @@
+# 972
+Task: 972
+
+# Write a function to concatenate the given two tuples to a nested tuple.
+def concatenate_nested(test_tup1, test_tup2):
+  res = test_tup1 + test_tup2
+  return (res)

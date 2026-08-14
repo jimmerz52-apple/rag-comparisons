@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.ordering
+
+ModelAdmin.ordering  
+Set ordering to specify how lists of objects should be ordered in the Django admin views. This should be a list or tuple in the same format as a model’s ordering parameter. If this isn’t provided, the Django admin will use the model’s default ordering. If you need to specify a dynamic order (for example depending on user or language) you can implement a get_ordering() method.  Performance considerations with ordering and sorting To ensure a deterministic ordering of results, the changelist adds pk to the ordering if it can’t find a single or unique together set of fields that provide total ordering. For example, if the default ordering is by a non-unique name field, then the changelist is sorted by name and pk. This could perform poorly if you have a lot of rows and don’t have an index on name and pk.

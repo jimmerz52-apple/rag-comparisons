@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_ticklines
+
+matplotlib.axis.Axis.get_ticklines   Axis.get_ticklines(minor=False)[source]
+ 
+Return this Axis' tick lines as a list of Line2Ds. 
+  Examples using matplotlib.axis.Axis.get_ticklines
+ 
+   Fig Axes Customize Simple   
+
+   Artist tutorial

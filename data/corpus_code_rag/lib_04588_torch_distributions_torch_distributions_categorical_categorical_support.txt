@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.categorical.Categorical.support
+
+property support

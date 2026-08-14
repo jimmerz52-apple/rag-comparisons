@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.Int2AP
+
+imaplib.Int2AP(num)  
+Converts an integer into a bytes representation using characters from the set [A .. P].

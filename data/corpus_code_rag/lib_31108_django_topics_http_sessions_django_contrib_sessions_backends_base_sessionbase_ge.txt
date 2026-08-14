@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.get
+
+get(key, default=None)  
+Example: fav_color = request.session.get('fav_color', 'red')

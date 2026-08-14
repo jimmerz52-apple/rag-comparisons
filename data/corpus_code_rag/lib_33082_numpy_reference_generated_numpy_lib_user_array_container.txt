@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.lib.user_array.container
+
+numpy.lib.user_array.container   class numpy.lib.user_array.container(data, dtype=None, copy=True)[source]
+ 
+Standard container-class for easy multiple-inheritance. Methods  
+copy   
+tostring   
+byteswap   
+astype

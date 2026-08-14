@@ -1,0 +1,3 @@
+# django.ref.middleware#django.middleware.cache.FetchFromCacheMiddleware
+
+class FetchFromCacheMiddleware

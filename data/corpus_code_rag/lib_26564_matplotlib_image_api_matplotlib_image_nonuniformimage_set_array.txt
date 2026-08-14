@@ -1,0 +1,7 @@
+# matplotlib.image_api#matplotlib.image.NonUniformImage.set_array
+
+set_array(*args)[source]
+ 
+Retained for backwards compatibility - use set_data instead.  Parameters 
+ 
+Aarray-like

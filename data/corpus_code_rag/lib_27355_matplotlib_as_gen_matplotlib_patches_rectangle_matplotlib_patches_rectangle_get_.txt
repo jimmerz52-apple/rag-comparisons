@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.get_bbox
+
+get_bbox()[source]
+ 
+Return the Bbox.

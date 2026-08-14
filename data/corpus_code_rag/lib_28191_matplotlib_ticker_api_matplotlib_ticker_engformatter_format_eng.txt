@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.EngFormatter.format_eng
+
+format_eng(num)[source]
+ 
+Format a number in engineering notation, appending a letter representing the power of 1000 of the original number. Some examples: >>> format_eng(0)       # for self.places = 0
+'0'
+ >>> format_eng(1000000) # for self.places = 1
+'1.0 M'
+ >>> format_eng("-1e-6") # for self.places = 2
+'-1.00 µ'

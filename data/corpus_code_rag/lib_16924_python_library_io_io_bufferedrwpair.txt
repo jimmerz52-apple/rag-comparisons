@@ -1,0 +1,4 @@
+# python.library.io#io.BufferedRWPair
+
+class io.BufferedRWPair(reader, writer, buffer_size=DEFAULT_BUFFER_SIZE)  
+A buffered binary stream providing higher-level access to two non seekable RawIOBase raw binary streams—one readable, the other writeable. It inherits BufferedIOBase. reader and writer are RawIOBase objects that are readable and writeable respectively. If the buffer_size is omitted it defaults to DEFAULT_BUFFER_SIZE. BufferedRWPair implements all of BufferedIOBase’s methods except for detach(), which raises UnsupportedOperation.  Warning BufferedRWPair does not attempt to synchronize accesses to its underlying raw streams. You should not pass it the same object as reader and writer; use BufferedRandom instead.

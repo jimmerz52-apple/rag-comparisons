@@ -1,0 +1,5 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.connection_info
+
+matplotlib.backends.backend_nbagg.connection_info()[source]
+ 
+Return a string showing the figure and connection status for the backend. This is intended as a diagnostic tool, and not for general use.

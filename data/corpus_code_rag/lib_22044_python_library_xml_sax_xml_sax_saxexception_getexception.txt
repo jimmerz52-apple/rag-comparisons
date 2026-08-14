@@ -1,0 +1,4 @@
+# python.library.xml.sax#xml.sax.SAXException.getException
+
+SAXException.getException()  
+Return an encapsulated exception object, or None.

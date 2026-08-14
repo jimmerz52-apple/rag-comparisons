@@ -1,0 +1,5 @@
+# skimage.api.skimage.feature#skimage.feature.register_translation
+
+skimage.feature.register_translation(src_image, target_image, upsample_factor=1, space='real', return_error=True) [source]
+ 
+Deprecated function. Use skimage.registration.phase_cross_correlation instead.

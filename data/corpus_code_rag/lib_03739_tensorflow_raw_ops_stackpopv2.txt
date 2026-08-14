@@ -1,0 +1,19 @@
+# tensorflow.raw_ops.stackpopv2
+
+tf.raw_ops.StackPopV2 Pop the element at the top of the stack.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.StackPopV2  
+tf.raw_ops.StackPopV2(
+    handle, elem_type, name=None
+)
+
+ 
+
+
+ Args
+  handle   A Tensor of type resource. The handle to a stack.  
+  elem_type   A tf.DType. The type of the elem that is popped.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type elem_type.

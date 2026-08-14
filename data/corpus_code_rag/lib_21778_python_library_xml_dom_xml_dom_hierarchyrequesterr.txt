@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.HierarchyRequestErr
+
+exception xml.dom.HierarchyRequestErr  
+Raised when an attempt is made to insert a node where the node type is not allowed.

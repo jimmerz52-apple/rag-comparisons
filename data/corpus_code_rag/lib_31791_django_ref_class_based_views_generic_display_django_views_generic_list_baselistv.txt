@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-display#django.views.generic.list.BaseListView.get
+
+get(request, *args, **kwargs)  
+Adds object_list to the context. If allow_empty is True then display an empty list. If allow_empty is False then raise a 404 error.

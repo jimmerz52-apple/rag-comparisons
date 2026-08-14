@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection.set_antialiased
+
+set_antialiased(aa)[source]
+ 
+Set the antialiasing state for rendering.  Parameters 
+ 
+aabool or list of bools

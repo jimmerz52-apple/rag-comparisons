@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.getwch
+
+msvcrt.getwch()  
+Wide char variant of getch(), returning a Unicode value.

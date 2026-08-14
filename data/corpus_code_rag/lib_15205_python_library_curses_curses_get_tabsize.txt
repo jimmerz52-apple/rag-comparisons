@@ -1,0 +1,4 @@
+# python.library.curses#curses.get_tabsize
+
+curses.get_tabsize()  
+Retrieves the value set by set_tabsize().  New in version 3.9.

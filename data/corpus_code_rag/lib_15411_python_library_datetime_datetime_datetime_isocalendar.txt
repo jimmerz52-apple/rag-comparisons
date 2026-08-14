@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.isocalendar
+
+datetime.isocalendar()  
+Return a named tuple with three components: year, week and weekday. The same as self.date().isocalendar().

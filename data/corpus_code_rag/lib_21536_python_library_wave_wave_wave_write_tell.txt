@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.tell
+
+Wave_write.tell()  
+Return current position in the file, with the same disclaimer for the Wave_read.tell() and Wave_read.setpos() methods.

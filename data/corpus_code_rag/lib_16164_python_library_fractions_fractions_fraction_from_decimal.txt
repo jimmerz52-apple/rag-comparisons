@@ -1,0 +1,4 @@
+# python.library.fractions#fractions.Fraction.from_decimal
+
+from_decimal(dec)  
+This class method constructs a Fraction representing the exact value of dec, which must be a decimal.Decimal instance.  Note From Python 3.2 onwards, you can also construct a Fraction instance directly from a decimal.Decimal instance.

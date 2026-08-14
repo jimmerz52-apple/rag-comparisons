@@ -1,0 +1,10 @@
+# torch.fx#torch.fx.symbolic_trace
+
+torch.fx.symbolic_trace(root, concrete_args=None) [source]
+ 
+Symbolic tracing API Given an nn.Module or function instance root, this function will return a GraphModule constructed by recording operations seen while tracing through root.  Parameters 
+ 
+root (Union[torch.nn.Module, Callable]) – Module or function to be traced and converted into a Graph representation. 
+concrete_args (Optional[Dict[str, any]]) – Concrete arguments that should not be treated as Proxies.   Returns 
+a Module created from the recorded operations from root.  Return type 
+GraphModule

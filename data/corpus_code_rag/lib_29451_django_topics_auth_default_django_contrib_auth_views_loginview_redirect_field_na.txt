@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LoginView.redirect_field_name
+
+redirect_field_name  
+The name of a GET field containing the URL to redirect to after login. Defaults to next. Overrides the get_default_redirect_url() URL if the given GET parameter is passed.

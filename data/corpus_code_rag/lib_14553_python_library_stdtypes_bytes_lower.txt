@@ -1,0 +1,7 @@
+# python.library.stdtypes#bytes.lower
+
+bytes.lower()  
+bytearray.lower()  
+Return a copy of the sequence with all the uppercase ASCII characters converted to their corresponding lowercase counterpart. For example: >>> b'Hello World'.lower()
+b'hello world'
+ Lowercase ASCII characters are those byte values in the sequence b'abcdefghijklmnopqrstuvwxyz'. Uppercase ASCII characters are those byte values in the sequence b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.  Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made.

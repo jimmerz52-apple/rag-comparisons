@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_data_ratio
+
+get_data_ratio()[source]
+ 
+Return the aspect ratio of the data itself. For a polar plot, this should always be 1.0

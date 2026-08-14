@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.starttls
+
+NNTP.starttls(context=None)  
+Send a STARTTLS command. This will enable encryption on the NNTP connection. The context argument is optional and should be a ssl.SSLContext object. Please read Security considerations for best practices. Note that this may not be done after authentication information has been transmitted, and authentication occurs by default if possible during a NNTP object initialization. See NNTP.login() for information on suppressing this behavior.  New in version 3.2.   Changed in version 3.4: The method now supports hostname check with ssl.SSLContext.check_hostname and Server Name Indication (see ssl.HAS_SNI).

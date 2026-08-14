@@ -1,0 +1,21 @@
+# skimage.api.skimage.feature#skimage.feature.hessian_matrix_det
+
+skimage.feature.hessian_matrix_det(image, sigma=1, approximate=True) [source]
+ 
+Compute the approximate Hessian Determinant over an image. The 2D approximate method uses box filters over integral images to compute the approximate Hessian Determinant, as described in [1].  Parameters 
+ 
+imagearray 
+
+The image over which to compute Hessian Determinant.  
+sigmafloat, optional 
+
+Standard deviation used for the Gaussian kernel, used for the Hessian matrix.  
+approximatebool, optional 
+
+If True and the image is 2D, use a much faster approximate computation. This argument has no effect on 3D and higher images.    Returns 
+ 
+outarray 
+
+The array of the Determinant of Hessians.     Notes For 2D images when approximate=True, the running time of this method only depends on size of the image. It is independent of sigma as one would expect. The downside is that the result for sigma less than 3 is not accurate, i.e., not similar to the result obtained if someone computed the Hessian and took its determinant. References  
+1  
+Herbert Bay, Andreas Ess, Tinne Tuytelaars, Luc Van Gool, “SURF: Speeded Up Robust Features” ftp://ftp.vision.ee.ethz.ch/publications/articles/eth_biwi_00517.pdf

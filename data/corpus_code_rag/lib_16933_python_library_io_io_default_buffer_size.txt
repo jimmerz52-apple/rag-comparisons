@@ -1,0 +1,4 @@
+# python.library.io#io.DEFAULT_BUFFER_SIZE
+
+io.DEFAULT_BUFFER_SIZE  
+An int containing the default buffer size used by the module’s buffered I/O classes. open() uses the file’s blksize (as obtained by os.stat()) if possible.

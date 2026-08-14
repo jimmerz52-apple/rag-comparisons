@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.get_formset
+
+InlineModelAdmin.get_formset(request, obj=None, **kwargs)  
+Returns a BaseInlineFormSet class for use in admin add/change views. obj is the parent object being edited or None when adding a new parent. See the example for ModelAdmin.get_formsets_with_inlines.

@@ -1,0 +1,15 @@
+# python.library.logging.handlers#logging.handlers.MemoryHandler
+
+class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None, flushOnClose=True)  
+Returns a new instance of the MemoryHandler class. The instance is initialized with a buffer size of capacity (number of records buffered). If flushLevel is not specified, ERROR is used. If no target is specified, the target will need to be set using setTarget() before this handler does anything useful. If flushOnClose is specified as False, then the buffer is not flushed when the handler is closed. If not specified or specified as True, the previous behaviour of flushing the buffer will occur when the handler is closed.  Changed in version 3.6: The flushOnClose parameter was added.   
+close()  
+Calls flush(), sets the target to None and clears the buffer. 
+  
+flush()  
+For a MemoryHandler, flushing means just sending the buffered records to the target, if there is one. The buffer is also cleared when this happens. Override if you want different behavior. 
+  
+setTarget(target)  
+Sets the target handler for this handler. 
+  
+shouldFlush(record)  
+Checks for buffer full or a record at the flushLevel or higher.

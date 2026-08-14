@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.get_text
+
+get_text(lev, fmt)[source]
+ 
+Get the text of the label.

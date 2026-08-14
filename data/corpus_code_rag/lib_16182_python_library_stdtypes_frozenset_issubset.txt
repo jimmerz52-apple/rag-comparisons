@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.issubset
+
+issubset(other)  
+set <= other  
+Test whether every element in the set is in other.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.last_modified
+
+last_modified  
+The Last-Modified entity-header field indicates the date and time at which the origin server believes the variant was last modified.  Changed in version 2.0: The datetime object is timezone-aware.

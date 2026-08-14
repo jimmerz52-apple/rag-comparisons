@@ -1,0 +1,17 @@
+# skimage.api.skimage.restoration#skimage.restoration.ellipsoid_kernel
+
+skimage.restoration.ellipsoid_kernel(shape, intensity) [source]
+ 
+Create an ellipoid kernel for restoration.rolling_ball.  Parameters 
+ 
+shapearraylike 
+
+Length of the principal axis of the ellipsoid (excluding the intensity axis). The kernel needs to have the same dimensionality as the image it will be applied to.  
+intensityint 
+
+Length of the intensity axis of the ellipsoid.    Returns 
+ 
+kernelndarray 
+
+The kernel containing the surface intensity of the top half of the ellipsoid.      See also  
+rolling_ball

@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.dispatcher.handle_expt
+
+handle_expt()  
+Called when there is out of band (OOB) data for a socket connection. This will almost never happen, as OOB is tenuously supported and rarely used.

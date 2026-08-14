@@ -1,0 +1,6 @@
+# python.library.os#os.SEEK_END
+
+os.SEEK_SET  
+os.SEEK_CUR  
+os.SEEK_END  
+Parameters to the lseek() function. Their values are 0, 1, and 2, respectively.  New in version 3.3: Some operating systems could support additional values, like os.SEEK_HOLE or os.SEEK_DATA.

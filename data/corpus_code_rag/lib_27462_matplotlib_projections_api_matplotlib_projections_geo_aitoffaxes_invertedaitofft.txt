@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.AitoffAxes.InvertedAitoffTransform.has_inverse
+
+has_inverse=True
+ 
+True if this transform has a corresponding inverse transform.

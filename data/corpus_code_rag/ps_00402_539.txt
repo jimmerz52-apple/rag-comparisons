@@ -1,0 +1,7 @@
+# 539
+Task: 539
+
+# Write a function to create a list containing the power of said number in bases raised to the corresponding number in the index using map function.
+def basesnum_coresspondingnum(bases_num,index):
+  result = list(map(pow, bases_num, index))
+  return result

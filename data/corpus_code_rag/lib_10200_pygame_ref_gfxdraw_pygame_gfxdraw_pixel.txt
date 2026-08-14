@@ -1,0 +1,18 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.pixel
+
+pygame.gfxdraw.pixel() 
+ draw a pixel pixel(surface, x, y, color) -> None  Draws a single pixel, at position (x ,y), on the given surface.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+x (int) -- x coordinate of the pixel 
+y (int) -- y coordinate of the pixel 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType

@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.RRef.local_value
+
+local_value(self: torch._C._distributed_rpc.PyRRef) → object  
+If the current node is the owner, returns a reference to the local value. Otherwise, throws an exception.

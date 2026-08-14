@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.ensemble.votingclassifier#sklearn.ensemble.VotingClassifier.predict_proba
+
+property predict_proba  
+Compute probabilities of possible outcomes for samples in X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples.    Returns 
+ 
+avgarray-like of shape (n_samples, n_classes) 
+
+Weighted average probability for each class per sample.

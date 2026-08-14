@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.CreateModel
+
+class CreateModel(name, fields, options=None, bases=None, managers=None)

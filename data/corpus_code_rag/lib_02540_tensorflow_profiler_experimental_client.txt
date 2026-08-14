@@ -1,0 +1,3 @@
+# tensorflow.profiler.experimental.client
+
+Module: tf.profiler.experimental.client Public API for tf.profiler.experimental.client namespace. Functions monitor(...): Sends grpc requests to profiler server to perform on-demand monitoring. trace(...): Sends gRPC requests to one or more profiler servers to perform on-demand profiling.

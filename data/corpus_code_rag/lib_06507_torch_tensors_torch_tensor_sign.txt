@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sign_
+
+sign_() → Tensor  
+In-place version of sign()

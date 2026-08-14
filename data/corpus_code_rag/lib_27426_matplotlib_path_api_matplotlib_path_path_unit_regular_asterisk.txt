@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.unit_regular_asterisk
+
+classmethodunit_regular_asterisk(numVertices)[source]
+ 
+Return a Path for a unit regular asterisk with the given numVertices and radius of 1.0, centered at (0, 0).

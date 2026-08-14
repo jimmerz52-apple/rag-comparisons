@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.beta.Beta.rsample
+
+rsample(sample_shape=()) [source]

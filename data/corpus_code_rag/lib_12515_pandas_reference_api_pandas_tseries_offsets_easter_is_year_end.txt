@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.easter.is_year_end
+
+pandas.tseries.offsets.Easter.is_year_end   Easter.is_year_end()

@@ -1,0 +1,4 @@
+# python.library.tkinter.messagebox#tkinter.messagebox.showerror
+
+tkinter.messagebox.showwarning(title=None, message=None, **options)  
+tkinter.messagebox.showerror(title=None, message=None, **options)

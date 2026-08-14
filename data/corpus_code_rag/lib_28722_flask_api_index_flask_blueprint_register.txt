@@ -1,0 +1,9 @@
+# flask.api.index#flask.Blueprint.register
+
+register(app, options)  
+Called by Flask.register_blueprint() to register all views and callbacks registered on the blueprint with the application. Creates a BlueprintSetupState and calls each record() callbackwith it.  Parameters 
+ 
+app (Flask) – The application this blueprint is being registered with. 
+options (dict) – Keyword arguments forwarded from register_blueprint(). 
+first_registration – Whether this is the first time this blueprint has been registered on the application.   Return type 
+None

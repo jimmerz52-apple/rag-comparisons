@@ -1,0 +1,12 @@
+# skimage.api.skimage.feature#skimage.feature.BRIEF.extract
+
+extract(image, keypoints) [source]
+ 
+Extract BRIEF binary descriptors for given keypoints in image.  Parameters 
+ 
+image2D array 
+
+Input image.  
+keypoints(N, 2) array 
+
+Keypoint coordinates as (row, col).

@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.Array._length_
+
+_length_  
+A positive integer specifying the number of elements in the array. Out-of-range subscripts result in an IndexError. Will be returned by len().

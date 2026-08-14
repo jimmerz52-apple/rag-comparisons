@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.neural_network.mlpclassifier#sklearn.neural_network.MLPClassifier.partial_fit
+
+property partial_fit  
+Update the model with a single iteration over the given data.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input data.  
+yarray-like of shape (n_samples,) 
+
+The target values.  
+classesarray of shape (n_classes,), default=None 
+
+Classes across all calls to partial_fit. Can be obtained via np.unique(y_all), where y_all is the target vector of the entire dataset. This argument is required for the first call to partial_fit and can be omitted in the subsequent calls. Note that y doesn’t need to contain all labels in classes.    Returns 
+ 
+selfreturns a trained MLP model.

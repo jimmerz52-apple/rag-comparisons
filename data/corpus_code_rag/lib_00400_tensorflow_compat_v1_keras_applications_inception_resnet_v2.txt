@@ -1,0 +1,4 @@
+# tensorflow.compat.v1.keras.applications.inception_resnet_v2
+
+Module: tf.compat.v1.keras.applications.inception_resnet_v2 Inception-ResNet V2 model for Keras. Reference:  
+Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning (AAAI 2017)  Functions InceptionResNetV2(...): Instantiates the Inception-ResNet v2 architecture. decode_predictions(...): Decodes the prediction of an ImageNet model. preprocess_input(...): Preprocesses a tensor or Numpy array encoding a batch of images.

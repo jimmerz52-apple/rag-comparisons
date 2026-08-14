@@ -1,0 +1,22 @@
+# skimage.api.skimage.filters#skimage.filters.inverse
+
+skimage.filters.inverse(data, impulse_response=None, filter_params={}, max_gain=2, predefined_filter=None) [source]
+ 
+Apply the filter in reverse to the given data.  Parameters 
+ 
+data(M,N) ndarray 
+
+Input data.  
+impulse_responsecallable f(r, c, **filter_params) 
+
+Impulse response of the filter. See LPIFilter2D.__init__.  
+filter_paramsdict 
+
+Additional keyword parameters to the impulse_response function.  
+max_gainfloat 
+
+Limit the filter gain. Often, the filter contains zeros, which would cause the inverse filter to have infinite gain. High gain causes amplification of artefacts, so a conservative limit is recommended.    Other Parameters 
+ 
+predefined_filterLPIFilter2D 
+
+If you need to apply the same filter multiple times over different images, construct the LPIFilter2D and specify it here.

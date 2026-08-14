@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.subsequent_indent
+
+subsequent_indent  
+(default: '') String that will be prepended to all lines of wrapped output except the first. Counts towards the length of each line except the first.

@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.delch
+
+window.delch([y, x])  
+Delete any character at (y, x).

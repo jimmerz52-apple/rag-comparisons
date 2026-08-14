@@ -1,0 +1,8 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.feature_is_exist
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.feature_is_exist method   distutils.ccompiler_opt.CCompilerOpt.feature_is_exist(name)[source]
+ 
+Returns True if a certain feature is exist and covered within _Config.conf_features.  Parameters 
+ ‘name’: str
+
+feature name in uppercase.

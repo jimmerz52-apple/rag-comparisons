@@ -1,0 +1,7 @@
+# torch.tensors#torch.Tensor.element_size
+
+element_size() → int  
+Returns the size in bytes of an individual element. Example: >>> torch.tensor([]).element_size()
+4
+>>> torch.tensor([], dtype=torch.uint8).element_size()
+1

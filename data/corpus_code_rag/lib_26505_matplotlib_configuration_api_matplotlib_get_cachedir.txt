@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.get_cachedir
+
+matplotlib.get_cachedir()[source]
+ 
+Return the string path of the cache directory. The procedure used to find the directory is the same as for _get_config_dir, except using $XDG_CACHE_HOME/$HOME/.cache instead.

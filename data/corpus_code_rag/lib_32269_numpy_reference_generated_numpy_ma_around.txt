@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.around
+
+numpy.ma.around   ma.around = <numpy.ma.core._MaskedUnaryOperation object>
+ 
+Round an array to the given number of decimals.  See also  around
+
+equivalent function; see for details.

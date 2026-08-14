@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.easter.is_on_offset
+
+pandas.tseries.offsets.Easter.is_on_offset   Easter.is_on_offset()

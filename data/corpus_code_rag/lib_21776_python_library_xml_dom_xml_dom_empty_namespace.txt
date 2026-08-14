@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.EMPTY_NAMESPACE
+
+xml.dom.EMPTY_NAMESPACE  
+The value used to indicate that no namespace is associated with a node in the DOM. This is typically found as the namespaceURI of a node, or used as the namespaceURI parameter to a namespaces-specific method.

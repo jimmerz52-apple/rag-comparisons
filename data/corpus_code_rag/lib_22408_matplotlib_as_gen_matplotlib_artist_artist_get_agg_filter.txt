@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_agg_filter
+
+matplotlib.artist.Artist.get_agg_filter   Artist.get_agg_filter()[source]
+ 
+Return filter function to be used for agg filter.

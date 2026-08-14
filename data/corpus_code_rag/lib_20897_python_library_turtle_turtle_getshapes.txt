@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.getshapes
+
+turtle.getshapes()  
+Return a list of names of all currently available turtle shapes. >>> screen.getshapes()
+['arrow', 'blank', 'circle', ..., 'turtle']

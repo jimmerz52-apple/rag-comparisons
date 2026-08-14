@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_dash_capstyle
+
+set_dash_capstyle(s)[source]
+ 
+How to draw the end caps if the line is is_dashed.  Parameters 
+ 
+sCapStyle or {'butt', 'projecting', 'round'}

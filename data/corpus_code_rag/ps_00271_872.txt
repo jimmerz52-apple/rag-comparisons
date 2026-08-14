@@ -1,0 +1,6 @@
+# 872
+Task: 872
+
+# Write a function to check if a nested list is a subset of another nested list.
+def check_subset(list1,list2): 
+    return all(map(list1.__contains__,list2))

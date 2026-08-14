@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.CacheFTPHandler.setMaxConns
+
+CacheFTPHandler.setMaxConns(m)  
+Set maximum number of cached connections to m.

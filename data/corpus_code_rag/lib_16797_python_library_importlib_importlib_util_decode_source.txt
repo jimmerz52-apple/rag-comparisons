@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.util.decode_source
+
+importlib.util.decode_source(source_bytes)  
+Decode the given bytes representing source code and return it as a string with universal newlines (as required by importlib.abc.InspectLoader.get_source()).  New in version 3.4.

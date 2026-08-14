@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.append
+
+append(subelement)  
+Adds the element subelement to the end of this element’s internal list of subelements. Raises TypeError if subelement is not an Element.

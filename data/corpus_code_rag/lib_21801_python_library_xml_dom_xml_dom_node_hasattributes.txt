@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.hasAttributes
+
+Node.hasAttributes()  
+Return True if the node has any attributes.

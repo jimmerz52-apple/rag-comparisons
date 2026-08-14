@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.get_x
+
+get_x()[source]
+ 
+Return the left coord of the rectangle.

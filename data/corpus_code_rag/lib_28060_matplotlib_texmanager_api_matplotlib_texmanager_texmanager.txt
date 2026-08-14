@@ -1,0 +1,45 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager
+
+classmatplotlib.texmanager.TexManager[source]
+ 
+Bases: object Convert strings to dvi files using TeX, caching the results to a directory. Repeated calls to this constructor always return the same instance.   propertyfont_families[source]
+
+   propertyfont_family[source]
+
+   propertyfont_info[source]
+
+   get_basefile(tex, fontsize, dpi=None)[source]
+ 
+Return a filename based on a hash of the string, fontsize, and dpi. 
+   get_custom_preamble()[source]
+ 
+Return a string containing user additions to the tex preamble. 
+   get_font_config()[source]
+
+   get_font_preamble()[source]
+ 
+Return a string containing font configuration for the tex preamble. 
+   get_grey(tex, fontsize=None, dpi=None)[source]
+ 
+Return the alpha channel. 
+   get_rgba(tex, fontsize=None, dpi=None, rgb=(0, 0, 0))[source]
+ 
+Return latex's rendering of the tex string as an rgba array. Examples >>> texmanager = TexManager()
+>>> s = r"\TeX\ is $\displaystyle\sum_n\frac{-e^{i\pi}}{2^n}$!"
+>>> Z = texmanager.get_rgba(s, fontsize=12, dpi=80, rgb=(1, 0, 0))
+ 
+   get_text_width_height_descent(tex, fontsize, renderer=None)[source]
+ 
+Return width, height and descent of the text. 
+   propertygrey_arrayd[source]
+
+   make_dvi(tex, fontsize)[source]
+ 
+Generate a dvi file containing latex's layout of tex string. Return the file name. 
+   make_png(tex, fontsize, dpi)[source]
+ 
+Generate a png file containing latex's rendering of tex string. Return the file name. 
+   make_tex(tex, fontsize)[source]
+ 
+Generate a tex file to render the tex string at a specific font size. Return the file name. 
+   texcache='/home/elliott/.cache/matplotlib/tex.cache'

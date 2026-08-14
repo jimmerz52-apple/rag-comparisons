@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__int__
+
+numpy.ma.MaskedArray.__int__ method   ma.MaskedArray.__int__()[source]
+ 
+Convert to int.

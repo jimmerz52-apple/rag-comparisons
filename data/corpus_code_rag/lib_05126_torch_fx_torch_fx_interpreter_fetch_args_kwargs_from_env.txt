@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.Interpreter.fetch_args_kwargs_from_env
+
+fetch_args_kwargs_from_env(n) [source]
+ 
+Fetch the concrete values of args and kwargs of node n from the current execution environment.  Parameters 
+n (Node) – The node for which args and kwargs should be fetched.  Returns 
+args and kwargs with concrete values for n.  Return type 
+Tuple[Tuple, Dict]

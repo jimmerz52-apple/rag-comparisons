@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CREATE_NO_WINDOW
+
+subprocess.CREATE_NO_WINDOW  
+A Popen creationflags parameter to specify that a new process will not create a window.  New in version 3.7.

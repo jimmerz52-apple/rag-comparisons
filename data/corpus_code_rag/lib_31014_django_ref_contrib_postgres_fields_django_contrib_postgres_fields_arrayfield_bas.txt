@@ -1,0 +1,15 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.ArrayField.base_field
+
+base_field  
+This is a required argument. Specifies the underlying data type and behavior for the array. It should be an instance of a subclass of Field. For example, it could be an IntegerField or a CharField. Most field types are permitted, with the exception of those handling relational data (ForeignKey, OneToOneField and ManyToManyField). It is possible to nest array fields - you can specify an instance of ArrayField as the base_field. For example: from django.contrib.postgres.fields import ArrayField
+from django.db import models
+
+class ChessBoard(models.Model):
+    board = ArrayField(
+        ArrayField(
+            models.CharField(max_length=10, blank=True),
+            size=8,
+        ),
+        size=8,
+    )
+ Transformation of values between the database and the model, validation of data and configuration, and serialization are all delegated to the underlying base field.

@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.decimal
+
+unicodedata.decimal(chr[, default])  
+Returns the decimal value assigned to the character chr as integer. If no such value is defined, default is returned, or, if not given, ValueError is raised.

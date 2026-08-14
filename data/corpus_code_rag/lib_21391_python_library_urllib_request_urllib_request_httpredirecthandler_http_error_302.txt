@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPRedirectHandler.http_error_302
+
+HTTPRedirectHandler.http_error_302(req, fp, code, msg, hdrs)  
+The same as http_error_301(), but called for the ‘found’ response.

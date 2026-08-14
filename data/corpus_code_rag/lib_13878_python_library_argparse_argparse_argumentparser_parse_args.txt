@@ -1,0 +1,6 @@
+# python.library.argparse#argparse.ArgumentParser.parse_args
+
+ArgumentParser.parse_args(args=None, namespace=None)  
+Convert argument strings to objects and assign them as attributes of the namespace. Return the populated namespace. Previous calls to add_argument() determine exactly what objects are created and how they are assigned. See the documentation for add_argument() for details.  
+args - List of strings to parse. The default is taken from sys.argv. 
+namespace - An object to take the attributes. The default is a new empty Namespace object.

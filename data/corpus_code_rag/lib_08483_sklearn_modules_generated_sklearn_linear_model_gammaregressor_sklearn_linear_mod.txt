@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.linear_model.gammaregressor#sklearn.linear_model.GammaRegressor.predict
+
+predict(X) [source]
+ 
+Predict using GLM with feature matrix X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Samples.    Returns 
+ 
+y_predarray of shape (n_samples,) 
+
+Returns predicted values.

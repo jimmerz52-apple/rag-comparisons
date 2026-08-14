@@ -1,0 +1,6 @@
+# torch.random#torch.random.set_rng_state
+
+torch.random.set_rng_state(new_state) [source]
+ 
+Sets the random number generator state.  Parameters 
+new_state (torch.ByteTensor) – The desired state

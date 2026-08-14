@@ -1,0 +1,4 @@
+# python.library.shutil#shutil.chown
+
+shutil.chown(path, user=None, group=None)  
+Change owner user and/or group of the given path. user can be a system user name or a uid; the same applies to group. At least one argument is required. See also os.chown(), the underlying function. Raises an auditing event shutil.chown with arguments path, user, group. Availability: Unix.  New in version 3.3.

@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.get_selection
+
+get_selection()  
+Retrieve the currently selected item.

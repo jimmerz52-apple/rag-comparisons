@@ -1,0 +1,9 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.admin.GenericInlineModelAdmin
+
+class GenericInlineModelAdmin  
+The GenericInlineModelAdmin class inherits all properties from an InlineModelAdmin class. However, it adds a couple of its own for working with the generic relation:  
+ct_field  
+The name of the ContentType foreign key field on the model. Defaults to content_type. 
+  
+ct_fk_field  
+The name of the integer field that represents the ID of the related object. Defaults to object_id.

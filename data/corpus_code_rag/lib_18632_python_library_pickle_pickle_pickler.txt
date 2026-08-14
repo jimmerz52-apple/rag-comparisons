@@ -1,0 +1,18 @@
+# python.library.pickle#pickle.Pickler
+
+class pickle.Pickler(file, protocol=None, *, fix_imports=True, buffer_callback=None)  
+This takes a binary file for writing a pickle data stream. The optional protocol argument, an integer, tells the pickler to use the given protocol; supported protocols are 0 to HIGHEST_PROTOCOL. If not specified, the default is DEFAULT_PROTOCOL. If a negative number is specified, HIGHEST_PROTOCOL is selected. The file argument must have a write() method that accepts a single bytes argument. It can thus be an on-disk file opened for binary writing, an io.BytesIO instance, or any other custom object that meets this interface. If fix_imports is true and protocol is less than 3, pickle will try to map the new Python 3 names to the old module names used in Python 2, so that the pickle data stream is readable with Python 2. If buffer_callback is None (the default), buffer views are serialized into file as part of the pickle stream. If buffer_callback is not None, then it can be called any number of times with a buffer view. If the callback returns a false value (such as None), the given buffer is out-of-band; otherwise the buffer is serialized in-band, i.e. inside the pickle stream. It is an error if buffer_callback is not None and protocol is None or smaller than 5.  Changed in version 3.8: The buffer_callback argument was added.   
+dump(obj)  
+Write the pickled representation of obj to the open file object given in the constructor. 
+  
+persistent_id(obj)  
+Do nothing by default. This exists so a subclass can override it. If persistent_id() returns None, obj is pickled as usual. Any other value causes Pickler to emit the returned value as a persistent ID for obj. The meaning of this persistent ID should be defined by Unpickler.persistent_load(). Note that the value returned by persistent_id() cannot itself have a persistent ID. See Persistence of External Objects for details and examples of uses. 
+  
+dispatch_table  
+A pickler object’s dispatch table is a registry of reduction functions of the kind which can be declared using copyreg.pickle(). It is a mapping whose keys are classes and whose values are reduction functions. A reduction function takes a single argument of the associated class and should conform to the same interface as a __reduce__() method. By default, a pickler object will not have a dispatch_table attribute, and it will instead use the global dispatch table managed by the copyreg module. However, to customize the pickling for a specific pickler object one can set the dispatch_table attribute to a dict-like object. Alternatively, if a subclass of Pickler has a dispatch_table attribute then this will be used as the default dispatch table for instances of that class. See Dispatch Tables for usage examples.  New in version 3.3.  
+  
+reducer_override(self, obj)  
+Special reducer that can be defined in Pickler subclasses. This method has priority over any reducer in the dispatch_table. It should conform to the same interface as a __reduce__() method, and can optionally return NotImplemented to fallback on dispatch_table-registered reducers to pickle obj. For a detailed example, see Custom Reduction for Types, Functions, and Other Objects.  New in version 3.8.  
+  
+fast  
+Deprecated. Enable fast mode if set to a true value. The fast mode disables the usage of memo, therefore speeding the pickling process by not generating superfluous PUT opcodes. It should not be used with self-referential objects, doing otherwise will cause Pickler to recurse infinitely. Use pickletools.optimize() if you need more compact pickles.

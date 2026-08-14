@@ -1,0 +1,4 @@
+# python.library.ast#ast.Await
+
+class ast.Await(value)  
+An await expression. value is what it waits for. Only valid in the body of an AsyncFunctionDef.

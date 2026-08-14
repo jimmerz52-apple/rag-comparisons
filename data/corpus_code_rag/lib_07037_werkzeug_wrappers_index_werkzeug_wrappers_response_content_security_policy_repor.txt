@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.content_security_policy_report_only
+
+content_security_policy_report_only  
+The Content-Security-Policy-Report-Only header adds a csp policy that is not enforced but is reported thereby helping detect certain types of attacks.

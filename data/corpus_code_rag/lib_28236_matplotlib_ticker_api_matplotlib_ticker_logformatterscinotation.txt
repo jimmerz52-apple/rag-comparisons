@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogFormatterSciNotation
+
+classmatplotlib.ticker.LogFormatterSciNotation(base=10.0, labelOnlyBase=False, minor_thresholds=None, linthresh=None)[source]
+ 
+Bases: matplotlib.ticker.LogFormatterMathtext Format values following scientific notation in a logarithmic axis.

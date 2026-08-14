@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.singlecomplex
+
+numpy.singlecomplex[source]
+ 
+alias of numpy.csingle

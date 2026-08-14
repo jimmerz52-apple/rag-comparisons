@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_navigate_mode
+
+matplotlib.axes.Axes.get_navigate_mode   Axes.get_navigate_mode()[source]
+ 
+Get the navigation toolbar button status: 'PAN', 'ZOOM', or None.

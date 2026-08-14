@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.reset
+
+Unpacker.reset(data)  
+Resets the string buffer with the given data.

@@ -1,0 +1,4 @@
+# pygame.ref.fastevent#pygame.fastevent.post
+
+pygame.fastevent.post() 
+ place an event on the queue post(Event) -> None  This will post your own event objects onto the event queue. You can post any event type you want, but some care must be taken. For example, if you post a MOUSEBUTTONDOWN event to the queue, it is likely any code receiving the event will expect the standard MOUSEBUTTONDOWN attributes to be available, like 'pos' and 'button'. Because pygame.fastevent.post() may have to wait for the queue to empty, you can get into a dead lock if you try to append an event on to a full queue from the thread that processes events. For that reason I do not recommend using this function in the main thread of an SDL program.

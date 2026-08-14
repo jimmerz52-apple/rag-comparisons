@@ -1,0 +1,19 @@
+# matplotlib.category_api#matplotlib.category.UnitData
+
+classmatplotlib.category.UnitData(data=None)[source]
+ 
+Bases: object Create mapping between unique categorical values and integer ids.  Parameters 
+ 
+dataiterable
+
+
+sequence of string values       update(data)[source]
+ 
+Map new values to integer identifiers.  Parameters 
+ 
+dataiterable of str or bytes
+
+  Raises 
+ TypeError
+
+If elements in data are neither str nor bytes.

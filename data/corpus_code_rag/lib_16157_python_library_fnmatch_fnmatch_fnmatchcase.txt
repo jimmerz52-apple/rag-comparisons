@@ -1,0 +1,4 @@
+# python.library.fnmatch#fnmatch.fnmatchcase
+
+fnmatch.fnmatchcase(filename, pattern)  
+Test whether filename matches pattern, returning True or False; the comparison is case-sensitive and does not apply os.path.normcase().

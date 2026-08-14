@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.log1p
+
+tf.experimental.numpy.log1p TensorFlow variant of NumPy's log1p. 
+tf.experimental.numpy.log1p(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.log1p.

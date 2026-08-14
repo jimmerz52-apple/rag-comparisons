@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.argmin
+
+tf.experimental.numpy.argmin TensorFlow variant of NumPy's argmin. 
+tf.experimental.numpy.argmin(
+    a, axis=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.argmin.

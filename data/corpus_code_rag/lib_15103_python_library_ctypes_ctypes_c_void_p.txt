@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_void_p
+
+class ctypes.c_void_p  
+Represents the C void * type. The value is represented as integer. The constructor accepts an optional integer initializer.

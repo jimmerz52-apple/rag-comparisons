@@ -1,0 +1,30 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_info
+
+numpy.distutils.misc_util.get_info(pkgname, dirs=None)[source]
+ 
+Return an info dict for a given C library. The info dict contains the necessary options to use the C library.  Parameters 
+ 
+pkgnamestr
+
+
+Name of the package (should match the name of the .ini file, without the extension, e.g. foo for the file foo.ini).  
+dirssequence, optional
+
+
+If given, should be a sequence of additional directories where to look for npy-pkg-config files. Those directories are searched prior to the NumPy directory.    Returns 
+ 
+infodict
+
+
+The dictionary with build information.    Raises 
+ PkgNotFound
+
+If the package is not found.      See also  
+Configuration.add_npy_pkg_config, Configuration.add_installed_library
+
+get_pkg_info
+  Examples To get the necessary information for the npymath library from NumPy: >>> npymath_info = np.distutils.misc_util.get_info('npymath')
+>>> npymath_info                                    
+{'define_macros': [], 'libraries': ['npymath'], 'library_dirs':
+['.../numpy/core/lib'], 'include_dirs': ['.../numpy/core/include']}
+ This info dict can then be used as input to a Configuration instance: config.add_extension('foo', sources=['foo.c'], extra_info=npymath_info)

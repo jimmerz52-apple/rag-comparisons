@@ -1,0 +1,5 @@
+# matplotlib.textpath_api#matplotlib.textpath.TextToPath.get_glyphs_tex
+
+get_glyphs_tex(prop, s, glyph_map=None, return_new_glyphs_only=False)[source]
+ 
+Convert the string s to vertices and codes using usetex mode.

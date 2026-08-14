@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.MINYEAR
+
+datetime.MINYEAR  
+The smallest year number allowed in a date or datetime object. MINYEAR is 1.

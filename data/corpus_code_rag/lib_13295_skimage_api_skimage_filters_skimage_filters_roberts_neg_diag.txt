@@ -1,0 +1,17 @@
+# skimage.api.skimage.filters#skimage.filters.roberts_neg_diag
+
+skimage.filters.roberts_neg_diag(image, mask=None) [source]
+ 
+Find the cross edges of an image using the Roberts’ Cross operator. The kernel is applied to the input image to produce separate measurements of the gradient component one orientation.  Parameters 
+ 
+image2-D array 
+
+Image to process.  
+mask2-D array, optional 
+
+An optional mask to limit the application to a certain area. Note that pixels surrounding masked regions are also masked to prevent masked regions from affecting the result.    Returns 
+ 
+output2-D array 
+
+The Robert’s edge map.     Notes We use the following kernel:  0   1
+-1   0

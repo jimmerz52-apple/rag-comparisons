@@ -1,0 +1,4 @@
+# python.library.os#os.EX_NOUSER
+
+os.EX_NOUSER  
+Exit code that means a specified user did not exist. Availability: Unix.

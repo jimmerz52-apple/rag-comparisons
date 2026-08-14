@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_family
+
+get_family()[source]
+ 
+Alias for get_fontfamily.

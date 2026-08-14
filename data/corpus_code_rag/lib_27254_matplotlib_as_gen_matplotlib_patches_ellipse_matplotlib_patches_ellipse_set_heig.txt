@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse#matplotlib.patches.Ellipse.set_height
+
+set_height(height)[source]
+ 
+Set the height of the ellipse.  Parameters 
+ 
+heightfloat

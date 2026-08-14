@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.gumbel.Gumbel.stddev
+
+property stddev

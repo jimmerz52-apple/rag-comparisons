@@ -1,0 +1,9 @@
+# python.library.typing#typing.TYPE_CHECKING
+
+typing.TYPE_CHECKING  
+A special constant that is assumed to be True by 3rd party static type checkers. It is False at runtime. Usage: if TYPE_CHECKING:
+    import expensive_mod
+
+def fun(arg: 'expensive_mod.SomeType') -> None:
+    local_var: expensive_mod.AnotherType = other_fun()
+ The first type annotation must be enclosed in quotes, making it a “forward reference”, to hide the expensive_mod reference from the interpreter runtime. Type annotations for local variables are not evaluated, so the second annotation does not need to be enclosed in quotes.  Note If from __future__ import annotations is used in Python 3.7 or later, annotations are not evaluated at function definition time. Instead, they are stored as strings in __annotations__, This makes it unnecessary to use quotes around the annotation. (see PEP 563).   New in version 3.5.2.

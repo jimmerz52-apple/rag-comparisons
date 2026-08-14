@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.decomposition.minibatchdictionarylearning#sklearn.decomposition.MiniBatchDictionaryLearning.fit
+
+fit(X, y=None) [source]
+ 
+Fit the model from data in X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vector, where n_samples in the number of samples and n_features is the number of features.  
+yIgnored 
+  Returns 
+ 
+selfobject 
+
+Returns the instance itself.

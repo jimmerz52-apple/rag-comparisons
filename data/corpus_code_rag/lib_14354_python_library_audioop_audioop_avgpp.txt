@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.avgpp
+
+audioop.avgpp(fragment, width)  
+Return the average peak-peak value over all samples in the fragment. No filtering is done, so the usefulness of this routine is questionable.

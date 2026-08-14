@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.swapcase
+
+numpy.chararray.swapcase method   chararray.swapcase()[source]
+ 
+For each element in self, return a copy of the string with uppercase characters converted to lowercase and vice versa.  See also  char.swapcase

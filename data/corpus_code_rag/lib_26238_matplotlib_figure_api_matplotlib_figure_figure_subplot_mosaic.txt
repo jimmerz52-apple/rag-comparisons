@@ -1,0 +1,36 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.subplot_mosaic
+
+subplot_mosaic(mosaic, *, sharex=False, sharey=False, subplot_kw=None, gridspec_kw=None, empty_sentinel='.')[source]
+ 
+Build a layout of Axes based on ASCII art or nested lists. This is a helper function to build complex GridSpec layouts visually.  Note This API is provisional and may be revised in the future based on early user feedback.   Parameters 
+ 
+mosaiclist of list of {hashable or nested} or str
+
+
+A visual layout of how you want your Axes to be arranged labeled as strings. For example x = [['A panel', 'A panel', 'edge'],
+     ['C panel', '.',       'edge']]
+ produces 4 Axes:  'A panel' which is 1 row high and spans the first two columns 'edge' which is 2 rows high and is on the right edge 'C panel' which in 1 row and 1 column wide in the bottom left a blank space 1 row and 1 column wide in the bottom center  Any of the entries in the layout can be a list of lists of the same form to create nested layouts. If input is a str, then it can either be a multi-line string of the form '''
+AAE
+C.E
+'''
+ where each character is a column and each line is a row. Or it can be a single-line string where rows are separated by ;: 'AB;CC'
+ The string notation allows only single character Axes labels and does not support nesting but is very terse.  
+sharex, shareybool, default: False
+
+
+If True, the x-axis (sharex) or y-axis (sharey) will be shared among all subplots. In that case, tick label visibility and axis units behave as for subplots. If False, each subplot's x- or y-axis will be independent.  
+subplot_kwdict, optional
+
+
+Dictionary with keywords passed to the Figure.add_subplot call used to create each subplot.  
+gridspec_kwdict, optional
+
+
+Dictionary with keywords passed to the GridSpec constructor used to create the grid the subplots are placed on.  
+empty_sentinelobject, optional
+
+
+Entry in the layout to mean "leave this space empty". Defaults to '.'. Note, if layout is a string, it is processed via inspect.cleandoc to remove leading white space, which may interfere with using white-space as the empty sentinel.    Returns 
+ dict[label, Axes]
+
+A dictionary mapping the labels to the Axes objects. The order of the axes is left-to-right and top-to-bottom of their position in the total layout.

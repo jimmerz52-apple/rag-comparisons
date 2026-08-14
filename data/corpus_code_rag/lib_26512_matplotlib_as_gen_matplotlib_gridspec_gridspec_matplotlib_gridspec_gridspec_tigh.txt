@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspec#matplotlib.gridspec.GridSpec.tight_layout
+
+tight_layout(figure, renderer=None, pad=1.08, h_pad=None, w_pad=None, rect=None)[source]
+ 
+Adjust subplot parameters to give specified padding.  Parameters 
+ 
+padfloat
+
+
+Padding between the figure edge and the edges of subplots, as a fraction of the font-size.  
+h_pad, w_padfloat, optional
+
+
+Padding (height/width) between edges of adjacent subplots. Defaults to pad.  
+recttuple of 4 floats, default: (0, 0, 1, 1), i.e. the whole figure
+
+
+(left, bottom, right, top) rectangle in normalized figure coordinates that the whole subplots area (including labels) will fit into.

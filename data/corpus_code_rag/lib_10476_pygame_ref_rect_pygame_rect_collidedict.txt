@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.collidedict
+
+collidedict() 
+ test if one rectangle in a dictionary intersects collidedict(dict) -> (key, value) collidedict(dict) -> None collidedict(dict, use_values=0) -> (key, value) collidedict(dict, use_values=0) -> None  Returns the first key and value pair that intersects with the calling Rect object. If no collisions are found, None is returned. If use_values is 0 (default) then the dict's keys will be used in the collision detection, otherwise the dict's values will be used.  Note Rect objects cannot be used as keys in a dictionary (they are not hashable), so they must be converted to a tuple/list. e.g. rect.collidedict({tuple(key_rect) : value})

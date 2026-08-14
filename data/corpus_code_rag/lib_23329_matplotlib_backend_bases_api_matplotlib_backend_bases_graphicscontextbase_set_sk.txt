@@ -1,0 +1,18 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_sketch_params
+
+set_sketch_params(scale=None, length=None, randomness=None)[source]
+ 
+Set the sketch parameters.  Parameters 
+ 
+scalefloat, optional
+
+
+The amplitude of the wiggle perpendicular to the source line, in pixels. If scale is None, or not provided, no sketch filter will be provided.  
+lengthfloat, default: 128
+
+
+The length of the wiggle along the line, in pixels.  
+randomnessfloat, default: 16
+
+
+The scale factor by which the length is shrunken or expanded.

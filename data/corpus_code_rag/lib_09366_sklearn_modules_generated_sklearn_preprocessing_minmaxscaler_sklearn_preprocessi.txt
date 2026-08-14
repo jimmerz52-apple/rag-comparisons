@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.minmaxscaler#sklearn.preprocessing.MinMaxScaler.fit
+
+fit(X, y=None) [source]
+ 
+Compute the minimum and maximum to be used for later scaling.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data used to compute the per-feature minimum and maximum used for later scaling along the features axis.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted scaler.

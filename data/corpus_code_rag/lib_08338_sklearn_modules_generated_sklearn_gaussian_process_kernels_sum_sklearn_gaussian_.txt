@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.sum#sklearn.gaussian_process.kernels.Sum.hyperparameters
+
+property hyperparameters  
+Returns a list of all hyperparameter.

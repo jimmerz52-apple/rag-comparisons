@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.get_test_runner_kwargs
+
+DiscoverRunner.get_test_runner_kwargs()  
+Returns the keyword arguments to instantiate the DiscoverRunner.test_runner with.

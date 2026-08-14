@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.mpl_axes.simplechainedobjects#mpl_toolkits.axes_grid1.mpl_axes.SimpleChainedObjects.__call__
+
+__call__(*args, **kwargs)[source]
+ 
+Call self as a function.

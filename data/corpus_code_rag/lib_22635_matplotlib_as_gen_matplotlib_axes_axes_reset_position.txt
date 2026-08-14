@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.reset_position
+
+matplotlib.axes.Axes.reset_position   Axes.reset_position()[source]
+ 
+Reset the active position to the original position. This resets the a possible position change due to aspect constraints. For an explanation of the positions see set_position.

@@ -1,0 +1,4 @@
+# python.library.readline#readline.get_completer
+
+readline.get_completer()  
+Get the completer function, or None if no completer function has been set.

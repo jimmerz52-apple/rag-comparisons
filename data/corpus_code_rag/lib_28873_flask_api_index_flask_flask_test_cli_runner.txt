@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.test_cli_runner
+
+test_cli_runner(**kwargs)  
+Create a CLI runner for testing CLI commands. See Testing CLI Commands. Returns an instance of test_cli_runner_class, by default FlaskCliRunner. The Flask app object is passed as the first argument.  Changelog New in version 1.0.   Parameters 
+kwargs (Any) –   Return type 
+FlaskCliRunner

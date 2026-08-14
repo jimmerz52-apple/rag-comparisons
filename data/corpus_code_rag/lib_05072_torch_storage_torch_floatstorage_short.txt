@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.short
+
+short()  
+Casts this storage to short type

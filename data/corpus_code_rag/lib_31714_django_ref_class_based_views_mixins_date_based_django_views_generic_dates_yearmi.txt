@@ -1,0 +1,21 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.YearMixin
+
+class YearMixin  
+A mixin that can be used to retrieve and provide parsing information for a year component of a date. Methods and Attributes  
+year_format  
+The strftime() format to use when parsing the year. By default, this is '%Y'. 
+  
+year  
+Optional The value for the year, as a string. By default, set to None, which means the year will be determined using other means. 
+  
+get_year_format()  
+Returns the strftime() format to use when parsing the year. Returns year_format by default. 
+  
+get_year()  
+Returns the year for which this view will display data, as a string. Tries the following sources, in order:  The value of the YearMixin.year attribute. The value of the year argument captured in the URL pattern. The value of the year GET query argument.  Raises a 404 if no valid year specification can be found. 
+  
+get_next_year(date)  
+Returns a date object containing the first day of the year after the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future. 
+  
+get_previous_year(date)  
+Returns a date object containing the first day of the year before the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

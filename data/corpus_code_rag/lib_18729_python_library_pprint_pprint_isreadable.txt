@@ -1,0 +1,5 @@
+# python.library.pprint#pprint.isreadable
+
+pprint.isreadable(object)  
+Determine if the formatted representation of object is “readable”, or can be used to reconstruct the value using eval(). This always returns False for recursive objects. >>> pprint.isreadable(stuff)
+False

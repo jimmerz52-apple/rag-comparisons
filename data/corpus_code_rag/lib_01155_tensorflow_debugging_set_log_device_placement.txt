@@ -1,0 +1,13 @@
+# tensorflow.debugging.set_log_device_placement
+
+tf.debugging.set_log_device_placement     View source on GitHub    Set if device placements should be logged.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.debugging.set_log_device_placement  
+tf.debugging.set_log_device_placement(
+    enabled
+)
+
+ 
+
+
+ Args
+  enabled   Whether to enabled device placement logging.

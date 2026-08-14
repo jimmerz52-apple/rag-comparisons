@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_verticalalignment
+
+get_verticalalignment()[source]
+ 
+Return the vertical alignment as a string. Will be one of 'top', 'center', 'bottom', 'baseline' or 'center_baseline'.

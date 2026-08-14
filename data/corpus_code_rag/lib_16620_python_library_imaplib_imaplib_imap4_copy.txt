@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.copy
+
+IMAP4.copy(message_set, new_mailbox)  
+Copy message_set messages onto end of new_mailbox.

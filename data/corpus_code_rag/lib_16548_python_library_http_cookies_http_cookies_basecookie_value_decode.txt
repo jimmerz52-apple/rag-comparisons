@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.BaseCookie.value_decode
+
+BaseCookie.value_decode(val)  
+Return a tuple (real_value, coded_value) from a string representation. real_value can be any type. This method does no decoding in BaseCookie — it exists so it can be overridden.

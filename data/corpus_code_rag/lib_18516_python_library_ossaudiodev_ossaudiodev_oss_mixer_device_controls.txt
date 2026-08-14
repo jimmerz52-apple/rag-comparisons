@@ -1,0 +1,8 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.controls
+
+oss_mixer_device.controls()  
+This method returns a bitmask specifying the available mixer controls (“Control” being a specific mixable “channel”, such as SOUND_MIXER_PCM or SOUND_MIXER_SYNTH). This bitmask indicates a subset of all available mixer controls—the SOUND_MIXER_* constants defined at module level. To determine if, for example, the current mixer object supports a PCM mixer, use the following Python code: mixer=ossaudiodev.openmixer()
+if mixer.controls() & (1 << ossaudiodev.SOUND_MIXER_PCM):
+    # PCM is supported
+    ... code ...
+ For most purposes, the SOUND_MIXER_VOLUME (master volume) and SOUND_MIXER_PCM controls should suffice—but code that uses the mixer should be flexible when it comes to choosing mixer controls. On the Gravis Ultrasound, for example, SOUND_MIXER_VOLUME does not exist.

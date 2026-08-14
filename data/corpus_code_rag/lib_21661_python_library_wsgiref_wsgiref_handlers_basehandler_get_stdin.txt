@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.get_stdin
+
+get_stdin()  
+Return an input stream object suitable for use as the wsgi.input of the request currently being processed.

@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIteratorValue.__str__
+
+__str__()  
+Return value as a string to be rendered in HTML.

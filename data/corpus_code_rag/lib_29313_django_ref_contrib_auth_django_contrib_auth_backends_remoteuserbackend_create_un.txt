@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.RemoteUserBackend.create_unknown_user
+
+create_unknown_user  
+True or False. Determines whether or not a user object is created if not already in the database Defaults to True.

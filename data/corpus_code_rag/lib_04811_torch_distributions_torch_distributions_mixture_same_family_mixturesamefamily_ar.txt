@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.mixture_same_family.MixtureSameFamily.arg_constraints
+
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {}

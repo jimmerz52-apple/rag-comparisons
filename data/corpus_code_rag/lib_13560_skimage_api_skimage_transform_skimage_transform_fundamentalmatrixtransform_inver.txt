@@ -1,0 +1,13 @@
+# skimage.api.skimage.transform#skimage.transform.FundamentalMatrixTransform.inverse
+
+inverse(coords) [source]
+ 
+Apply inverse transformation.  Parameters 
+ 
+coords(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+coords(N, 3) array 
+
+Epipolar lines in the source image.

@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.radix
+
+radix()  
+Just returns 10, as this is Decimal, :)

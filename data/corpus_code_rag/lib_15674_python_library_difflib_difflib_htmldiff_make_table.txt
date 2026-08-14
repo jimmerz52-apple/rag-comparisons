@@ -1,0 +1,4 @@
+# python.library.difflib#difflib.HtmlDiff.make_table
+
+make_table(fromlines, tolines, fromdesc='', todesc='', context=False, numlines=5)  
+Compares fromlines and tolines (lists of strings) and returns a string which is a complete HTML table showing line by line differences with inter-line and intra-line changes highlighted. The arguments for this method are the same as those for the make_file() method.

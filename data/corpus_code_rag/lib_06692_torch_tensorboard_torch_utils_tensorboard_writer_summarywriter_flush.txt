@@ -1,0 +1,5 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.flush
+
+flush() [source]
+ 
+Flushes the event file to disk. Call this method to make sure that all pending events have been written to disk.

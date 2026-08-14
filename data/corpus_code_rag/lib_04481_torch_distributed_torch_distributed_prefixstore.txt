@@ -1,0 +1,7 @@
+# torch.distributed#torch.distributed.PrefixStore
+
+class torch.distributed.PrefixStore  
+A wrapper around any of the 3 key-value stores (TCPStore, FileStore, and HashStore) that adds a prefix to each key inserted to the store.  Parameters 
+ 
+prefix (str) – The prefix string that is prepended to each key before being inserted into the store. 
+store (torch.distributed.store) – A store object that forms the underlying key-value store.

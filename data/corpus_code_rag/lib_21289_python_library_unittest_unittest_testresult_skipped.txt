@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.skipped
+
+skipped  
+A list containing 2-tuples of TestCase instances and strings holding the reason for skipping the test.  New in version 3.1.

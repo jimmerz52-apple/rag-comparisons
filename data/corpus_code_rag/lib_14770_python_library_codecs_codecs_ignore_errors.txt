@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.ignore_errors
+
+codecs.ignore_errors(exception)  
+Implements the 'ignore' error handling: malformed data is ignored and encoding or decoding is continued without further notice.

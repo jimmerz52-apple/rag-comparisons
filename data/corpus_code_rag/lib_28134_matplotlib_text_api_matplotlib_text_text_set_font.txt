@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_font
+
+set_font(fp)[source]
+ 
+Alias for set_fontproperties.

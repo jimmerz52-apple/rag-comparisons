@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logical_and_
+
+logical_and_() → Tensor  
+In-place version of logical_and()

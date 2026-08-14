@@ -1,0 +1,4 @@
+# python.library.grp#grp.getgrall
+
+grp.getgrall()  
+Return a list of all available group entries, in arbitrary order.

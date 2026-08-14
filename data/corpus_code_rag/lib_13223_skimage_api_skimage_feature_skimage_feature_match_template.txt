@@ -1,0 +1,58 @@
+# skimage.api.skimage.feature#skimage.feature.match_template
+
+skimage.feature.match_template(image, template, pad_input=False, mode='constant', constant_values=0) [source]
+ 
+Match a template to a 2-D or 3-D image using normalized correlation. The output is an array with values between -1.0 and 1.0. The value at a given position corresponds to the correlation coefficient between the image and the template. For pad_input=True matches correspond to the center and otherwise to the top-left corner of the template. To find the best match you must search for peaks in the response (output) image.  Parameters 
+ 
+image(M, N[, D]) array 
+
+2-D or 3-D input image.  
+template(m, n[, d]) array 
+
+Template to locate. It must be (m <= M, n <= N[, d <= D]).  
+pad_inputbool 
+
+If True, pad image so that output is the same size as the image, and output values correspond to the template center. Otherwise, the output is an array with shape (M - m + 1, N - n + 1) for an (M, N) image and an (m, n) template, and matches correspond to origin (top-left corner) of the template.  
+modesee numpy.pad, optional 
+
+Padding mode.  
+constant_valuessee numpy.pad, optional 
+
+Constant values used in conjunction with mode='constant'.    Returns 
+ 
+outputarray 
+
+Response image with correlation coefficients.     Notes Details on the cross-correlation are presented in [1]. This implementation uses FFT convolutions of the image and the template. Reference [2] presents similar derivations but the approximation presented in this reference is not used in our implementation. References  
+1  
+J. P. Lewis, “Fast Normalized Cross-Correlation”, Industrial Light and Magic.  
+2  
+Briechle and Hanebeck, “Template Matching using Fast Normalized Cross Correlation”, Proceedings of the SPIE (2001). DOI:10.1117/12.421129   Examples >>> template = np.zeros((3, 3))
+>>> template[1, 1] = 1
+>>> template
+array([[0., 0., 0.],
+       [0., 1., 0.],
+       [0., 0., 0.]])
+>>> image = np.zeros((6, 6))
+>>> image[1, 1] = 1
+>>> image[4, 4] = -1
+>>> image
+array([[ 0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  1.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0., -1.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.]])
+>>> result = match_template(image, template)
+>>> np.round(result, 3)
+array([[ 1.   , -0.125,  0.   ,  0.   ],
+       [-0.125, -0.125,  0.   ,  0.   ],
+       [ 0.   ,  0.   ,  0.125,  0.125],
+       [ 0.   ,  0.   ,  0.125, -1.   ]])
+>>> result = match_template(image, template, pad_input=True)
+>>> np.round(result, 3)
+array([[-0.125, -0.125, -0.125,  0.   ,  0.   ,  0.   ],
+       [-0.125,  1.   , -0.125,  0.   ,  0.   ,  0.   ],
+       [-0.125, -0.125, -0.125,  0.   ,  0.   ,  0.   ],
+       [ 0.   ,  0.   ,  0.   ,  0.125,  0.125,  0.125],
+       [ 0.   ,  0.   ,  0.   ,  0.125, -1.   ,  0.125],
+       [ 0.   ,  0.   ,  0.   ,  0.125,  0.125,  0.125]])

@@ -1,0 +1,13 @@
+# matplotlib.projections_api#matplotlib.projections.ProjectionRegistry
+
+classmatplotlib.projections.ProjectionRegistry[source]
+ 
+Bases: object A mapping of registered projection names to projection classes.   get_projection_class(name)[source]
+ 
+Get a projection class from its name. 
+   get_projection_names()[source]
+ 
+Return the names of all projections currently registered. 
+   register(*projections)[source]
+ 
+Register a new set of projections.

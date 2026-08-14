@@ -1,0 +1,82 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_patch
+
+matplotlib.axes.Axes.add_patch   Axes.add_patch(p)[source]
+ 
+Add a Patch to the Axes; return the patch. 
+  Examples using matplotlib.axes.Axes.add_patch
+ 
+   Curve with error band   
+
+   Image Demo   
+
+   Axes box aspect   
+
+   Controlling view limits using margins and sticky_edges   
+
+   Boxplots   
+
+   Plot a confidence ellipse of a two-dimensional dataset   
+
+   Annotating Plots   
+
+   Precise text layout   
+
+   Compound path   
+
+   Dolphins   
+
+   Mmh Donuts!!!   
+
+   Drawing fancy boxes   
+
+   Hatch style reference   
+
+   PathPatch object   
+
+   Bezier Curve   
+
+   ggplot style sheet   
+
+   Inset Locator Demo   
+
+   Firefox   
+
+   Integral as the area under a curve   
+
+   Looking Glass   
+
+   Path Editor   
+
+   Poly Editor   
+
+   Trifinder Event Demo   
+
+   Viewlims   
+
+   Changing colors of lines intersecting a box   
+
+   Building histograms using Rectangles and PolyCollections   
+
+   Packed-bubble chart   
+
+   SVG Filter Pie   
+
+   TickedStroke patheffect   
+
+   Draw flat objects in 3D plot   
+
+   Artist tests   
+
+   Ellipse With Units   
+
+   Artist tutorial   
+
+   Legend guide   
+
+   Path Tutorial   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Text properties and layout

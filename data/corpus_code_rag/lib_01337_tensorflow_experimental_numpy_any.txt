@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.any
+
+tf.experimental.numpy.any TensorFlow variant of NumPy's any. 
+tf.experimental.numpy.any(
+    a, axis=None, keepdims=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.any.

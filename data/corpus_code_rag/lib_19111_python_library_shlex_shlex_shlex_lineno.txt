@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.lineno
+
+shlex.lineno  
+Source line number (count of newlines seen so far plus one).

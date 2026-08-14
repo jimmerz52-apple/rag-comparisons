@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.bbox_artist
+
+matplotlib.patches.bbox_artist   matplotlib.patches.bbox_artist(artist, renderer, props=None, fill=True)[source]
+ 
+A debug function to draw a rectangle around the bounding box returned by an artist's Artist.get_window_extent to test whether the artist is returning the correct bbox. props is a dict of rectangle props with the additional property 'pad' that sets the padding around the bbox in points.

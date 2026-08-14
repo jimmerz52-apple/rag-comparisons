@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.set_clip_on
+
+matplotlib.artist.Artist.set_clip_on   Artist.set_clip_on(b)[source]
+ 
+Set whether the artist uses clipping. When False artists will be visible outside of the axes which can lead to unexpected results.  Parameters 
+ 
+bbool

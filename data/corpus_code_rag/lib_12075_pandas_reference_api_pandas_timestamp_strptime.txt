@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.strptime
+
+pandas.Timestamp.strptime   classmethodTimestamp.strptime(string, format)
+ 
+Function is not implemented. Use pd.to_datetime().

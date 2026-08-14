@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.TriMesh.get_ls
+
+get_ls()[source]
+ 
+Alias for get_linestyle.

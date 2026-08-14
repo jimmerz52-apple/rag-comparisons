@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Barrier
+
+Barrier(parties[, action[, timeout]])  
+Create a shared threading.Barrier object and return a proxy for it.  New in version 3.3.

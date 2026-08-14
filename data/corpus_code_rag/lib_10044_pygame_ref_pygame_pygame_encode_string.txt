@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.encode_string
+
+pygame.encode_string() 
+ Encode a Unicode or bytes object encode_string([obj [, encoding [, errors [, etype]]]]) -> bytes or None  obj: If Unicode, encode; if bytes, return unaltered; if anything else, return None; if not given, raise SyntaxError. encoding (string): If present, encoding to use. The default is 'unicode_escape'. errors (string): If given, how to handle unencodable characters. The default is 'backslashreplace'. etype (exception type): If given, the exception type to raise for an encoding error. The default is UnicodeEncodeError, as returned by PyUnicode_AsEncodedString(). For the default encoding and errors values there should be no encoding errors. This function is used in encoding file paths. Keyword arguments are supported.  New in pygame 1.9.2: (primarily for use in unit tests)

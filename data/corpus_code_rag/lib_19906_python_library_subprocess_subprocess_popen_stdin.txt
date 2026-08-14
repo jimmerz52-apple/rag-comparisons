@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.stdin
+
+Popen.stdin  
+If the stdin argument was PIPE, this attribute is a writeable stream object as returned by open(). If the encoding or errors arguments were specified or the universal_newlines argument was True, the stream is a text stream, otherwise it is a byte stream. If the stdin argument was not PIPE, this attribute is None.

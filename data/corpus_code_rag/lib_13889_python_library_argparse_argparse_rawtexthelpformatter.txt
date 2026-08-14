@@ -1,0 +1,6 @@
+# python.library.argparse#argparse.RawTextHelpFormatter
+
+class argparse.RawDescriptionHelpFormatter  
+class argparse.RawTextHelpFormatter  
+class argparse.ArgumentDefaultsHelpFormatter  
+class argparse.MetavarTypeHelpFormatter

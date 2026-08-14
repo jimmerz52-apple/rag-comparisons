@@ -1,0 +1,5 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.get_font_preamble
+
+get_font_preamble()[source]
+ 
+Return a string containing font configuration for the tex preamble.

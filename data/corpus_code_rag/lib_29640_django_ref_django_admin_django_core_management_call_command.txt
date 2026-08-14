@@ -1,0 +1,3 @@
+# django.ref.django-admin#django.core.management.call_command
+
+django.core.management.call_command(name, *args, **options)

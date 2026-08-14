@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.update
+
+update() 
+ Sets the coordinates of the vector. update() -> None update(int) -> None update(float) -> None update(Vector2) -> None update(x, y) -> None update((x, y)) -> None  Sets coordinates x and y in place.  New in pygame 1.9.5.

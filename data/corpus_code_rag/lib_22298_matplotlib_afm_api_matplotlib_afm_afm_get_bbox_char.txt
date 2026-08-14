@@ -1,0 +1,3 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_bbox_char
+
+get_bbox_char(c, isord=False)[source]

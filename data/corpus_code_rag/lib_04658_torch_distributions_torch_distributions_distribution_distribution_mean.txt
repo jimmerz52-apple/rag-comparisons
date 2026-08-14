@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.mean
+
+property mean  
+Returns the mean of the distribution.

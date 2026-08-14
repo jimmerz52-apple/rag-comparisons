@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.svd
+
+svd(some=True, compute_uv=True) -> (Tensor, Tensor, Tensor)  
+See torch.svd()

@@ -1,0 +1,9 @@
+# python.library.logging.handlers#logging.handlers.WatchedFileHandler
+
+class logging.handlers.WatchedFileHandler(filename, mode='a', encoding=None, delay=False, errors=None)  
+Returns a new instance of the WatchedFileHandler class. The specified file is opened and used as the stream for logging. If mode is not specified, 'a' is used. If encoding is not None, it is used to open the file with that encoding. If delay is true, then file opening is deferred until the first call to emit(). By default, the file grows indefinitely. If errors is provided, it determines how encoding errors are handled.  Changed in version 3.6: As well as string values, Path objects are also accepted for the filename argument.   Changed in version 3.9: The errors parameter was added.   
+reopenIfNeeded()  
+Checks to see if the file has changed. If it has, the existing stream is flushed and closed and the file opened again, typically as a precursor to outputting the record to the file.  New in version 3.6.  
+  
+emit(record)  
+Outputs the record to the file, but first calls reopenIfNeeded() to reopen the file if it has changed.

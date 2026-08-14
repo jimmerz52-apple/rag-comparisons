@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_language
+
+numpy.distutils.misc_util.get_language(sources)[source]
+ 
+Determine language value (c,f77,f90) from sources

@@ -1,0 +1,19 @@
+# skimage.api.skimage.filters#skimage.filters.laplace
+
+skimage.filters.laplace(image, ksize=3, mask=None) [source]
+ 
+Find the edges of an image using the Laplace operator.  Parameters 
+ 
+imagendarray 
+
+Image to process.  
+ksizeint, optional 
+
+Define the size of the discrete Laplacian operator such that it will have a size of (ksize,) * image.ndim.  
+maskndarray, optional 
+
+An optional mask to limit the application to a certain area. Note that pixels surrounding masked regions are also masked to prevent masked regions from affecting the result.    Returns 
+ 
+outputndarray 
+
+The Laplace edge map.     Notes The Laplacian operator is generated using the function skimage.restoration.uft.laplacian().

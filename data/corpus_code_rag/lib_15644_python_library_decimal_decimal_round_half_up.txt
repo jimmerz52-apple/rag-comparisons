@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.ROUND_HALF_UP
+
+decimal.ROUND_HALF_UP  
+Round to nearest with ties going away from zero.

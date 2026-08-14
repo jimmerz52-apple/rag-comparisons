@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.RedirectView.url
+
+url  
+The URL to redirect to, as a string. Or None to raise a 410 (Gone) HTTP error.

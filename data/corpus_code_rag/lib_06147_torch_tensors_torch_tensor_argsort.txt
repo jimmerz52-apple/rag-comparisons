@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.argsort
+
+argsort(dim=-1, descending=False) → LongTensor  
+See torch.argsort()

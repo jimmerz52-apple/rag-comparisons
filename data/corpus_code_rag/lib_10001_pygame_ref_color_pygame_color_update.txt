@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.update
+
+update() 
+ Sets the elements of the color update(r, g, b) -> None update(r, g, b, a=255) -> None update(color_value) -> None  Sets the elements of the color. See parameters for pygame.Color() for the parameters of this function. If the alpha value was not set it will not change.  New in pygame 2.0.1.

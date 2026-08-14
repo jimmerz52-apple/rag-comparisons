@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.fit_predict
+
+fit_predict(X, y=None, **fit_params) [source]
+ 
+Applies fit_predict of last step in pipeline after transforms. Applies fit_transforms of a pipeline to the data, followed by the fit_predict method of the final estimator in the pipeline. Valid only if the final estimator implements fit_predict.  Parameters 
+ 
+Xiterable 
+
+Training data. Must fulfill input requirements of first step of the pipeline.  
+yiterable, default=None 
+
+Training targets. Must fulfill label requirements for all steps of the pipeline.  
+**fit_paramsdict of string -> object 
+
+Parameters passed to the fit method of each step, where each parameter name is prefixed such that parameter p for step s has key s__p.    Returns 
+ 
+y_predarray-like

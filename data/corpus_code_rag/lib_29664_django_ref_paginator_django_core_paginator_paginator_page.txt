@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.page
+
+Paginator.page(number)  
+Returns a Page object with the given 1-based index. Raises PageNotAnInteger if the number cannot be converted to an integer by calling int(). Raises EmptyPage if the given page number doesn’t exist.

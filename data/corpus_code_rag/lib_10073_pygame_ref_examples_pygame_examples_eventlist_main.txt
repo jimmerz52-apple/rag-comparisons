@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.eventlist.main
+
+eventlist.main() 
+ display pygame events eventlist.main() -> None  Eventlist is a sloppy style of pygame, but is a handy tool for learning about pygame events and input. At the top of the screen are the state of several device values, and a scrolling list of events are displayed on the bottom. This is not quality 'ui' code at all, but you can see how to implement very non-interactive status displays, or even a crude text output control.

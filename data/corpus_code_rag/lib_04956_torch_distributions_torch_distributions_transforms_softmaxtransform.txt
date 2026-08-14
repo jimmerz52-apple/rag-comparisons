@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.SoftmaxTransform
+
+class torch.distributions.transforms.SoftmaxTransform(cache_size=0) [source]
+ 
+Transform from unconstrained space to the simplex via y=exp⁡(x)y = \exp(x)  then normalizing. This is not bijective and cannot be used for HMC. However this acts mostly coordinate-wise (except for the final normalization), and thus is appropriate for coordinate-wise optimization algorithms.

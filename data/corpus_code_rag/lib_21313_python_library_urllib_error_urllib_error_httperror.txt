@@ -1,0 +1,12 @@
+# python.library.urllib.error#urllib.error.HTTPError
+
+exception urllib.error.HTTPError  
+Though being an exception (a subclass of URLError), an HTTPError can also function as a non-exceptional file-like return value (the same thing that urlopen() returns). This is useful when handling exotic HTTP errors, such as requests for authentication.  
+code  
+An HTTP status code as defined in RFC 2616. This numeric value corresponds to a value found in the dictionary of codes as found in http.server.BaseHTTPRequestHandler.responses. 
+  
+reason  
+This is usually a string explaining the reason for this error. 
+  
+headers  
+The HTTP response headers for the HTTP request that caused the HTTPError.  New in version 3.4.

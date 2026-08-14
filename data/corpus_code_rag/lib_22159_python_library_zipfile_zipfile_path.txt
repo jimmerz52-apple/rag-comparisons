@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path
+
+class zipfile.Path(root, at='')  
+Construct a Path object from a root zipfile (which may be a ZipFile instance or file suitable for passing to the ZipFile constructor). at specifies the location of this Path within the zipfile, e.g. ‘dir/file.txt’, ‘dir/’, or ‘’. Defaults to the empty string, indicating the root.

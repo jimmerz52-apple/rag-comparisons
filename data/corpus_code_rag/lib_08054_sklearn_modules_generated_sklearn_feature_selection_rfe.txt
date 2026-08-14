@@ -1,0 +1,230 @@
+# sklearn.modules.generated.sklearn.feature_selection.rfe
+
+sklearn.feature_selection.RFE  
+class sklearn.feature_selection.RFE(estimator, *, n_features_to_select=None, step=1, verbose=0, importance_getter='auto') [source]
+ 
+Feature ranking with recursive feature elimination. Given an external estimator that assigns weights to features (e.g., the coefficients of a linear model), the goal of recursive feature elimination (RFE) is to select features by recursively considering smaller and smaller sets of features. First, the estimator is trained on the initial set of features and the importance of each feature is obtained either through any specific attribute or callable. Then, the least important features are pruned from current set of features. That procedure is recursively repeated on the pruned set until the desired number of features to select is eventually reached. Read more in the User Guide.  Parameters 
+ 
+estimatorEstimator instance 
+
+A supervised learning estimator with a fit method that provides information about feature importance (e.g. coef_, feature_importances_).  
+n_features_to_selectint or float, default=None 
+
+The number of features to select. If None, half of the features are selected. If integer, the parameter is the absolute number of features to select. If float between 0 and 1, it is the fraction of features to select.  Changed in version 0.24: Added float values for fractions.   
+stepint or float, default=1 
+
+If greater than or equal to 1, then step corresponds to the (integer) number of features to remove at each iteration. If within (0.0, 1.0), then step corresponds to the percentage (rounded down) of features to remove at each iteration.  
+verboseint, default=0 
+
+Controls verbosity of output.  
+importance_getterstr or callable, default=’auto’ 
+
+If ‘auto’, uses the feature importance either through a coef_ or feature_importances_ attributes of estimator. Also accepts a string that specifies an attribute name/path for extracting feature importance (implemented with attrgetter). For example, give regressor_.coef_ in case of TransformedTargetRegressor or named_steps.clf.feature_importances_ in case of class:~sklearn.pipeline.Pipeline with its last step named clf. If callable, overrides the default feature importance getter. The callable is passed with the fitted estimator and it should return importance for each feature.  New in version 0.24.     Attributes 
+ 
+estimator_Estimator instance 
+
+The fitted estimator used to select features.  
+n_features_int 
+
+The number of selected features.  
+ranking_ndarray of shape (n_features,) 
+
+The feature ranking, such that ranking_[i] corresponds to the ranking position of the i-th feature. Selected (i.e., estimated best) features are assigned rank 1.  
+support_ndarray of shape (n_features,) 
+
+The mask of selected features.      See also  
+RFECV
+
+
+Recursive feature elimination with built-in cross-validated selection of the best number of features.  
+SelectFromModel
+
+
+Feature selection based on thresholds of importance weights.  
+SequentialFeatureSelector
+
+
+Sequential cross-validation based feature selection. Does not rely on importance weights.    Notes Allows NaN/Inf in the input if the underlying estimator does as well. References  
+1  
+Guyon, I., Weston, J., Barnhill, S., & Vapnik, V., “Gene selection for cancer classification using support vector machines”, Mach. Learn., 46(1-3), 389–422, 2002.   Examples The following example shows how to retrieve the 5 most informative features in the Friedman #1 dataset. >>> from sklearn.datasets import make_friedman1
+>>> from sklearn.feature_selection import RFE
+>>> from sklearn.svm import SVR
+>>> X, y = make_friedman1(n_samples=50, n_features=10, random_state=0)
+>>> estimator = SVR(kernel="linear")
+>>> selector = RFE(estimator, n_features_to_select=5, step=1)
+>>> selector = selector.fit(X, y)
+>>> selector.support_
+array([ True,  True,  True,  True,  True, False, False, False, False,
+       False])
+>>> selector.ranking_
+array([1, 1, 1, 1, 1, 6, 4, 3, 2, 5])
+ Methods  
+decision_function(X) Compute the decision function of X.  
+fit(X, y) Fit the RFE model and then the underlying estimator on the selected  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_params([deep]) Get parameters for this estimator.  
+get_support([indices]) Get a mask, or integer index, of the features selected  
+inverse_transform(X) Reverse the transformation operation  
+predict(X) Reduce X to the selected features and then predict using the  
+predict_log_proba(X) Predict class log-probabilities for X.  
+predict_proba(X) Predict class probabilities for X.  
+score(X, y) Reduce X to the selected features and then return the score of the  
+set_params(**params) Set the parameters of this estimator.  
+transform(X) Reduce X to the selected features.    
+decision_function(X) [source]
+ 
+Compute the decision function of X.  Parameters 
+ 
+X{array-like or sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+scorearray, shape = [n_samples, n_classes] or [n_samples] 
+
+The decision function of the input samples. The order of the classes corresponds to that in the attribute classes_. Regression and binary classification produce an array of shape [n_samples].     
+  
+fit(X, y) [source]
+ 
+ Fit the RFE model and then the underlying estimator on the selected
+
+features.    Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples.  
+yarray-like of shape (n_samples,) 
+
+The target values.     
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+get_support(indices=False) [source]
+ 
+Get a mask, or integer index, of the features selected  Parameters 
+ 
+indicesbool, default=False 
+
+If True, the return value will be an array of integers, rather than a boolean mask.    Returns 
+ 
+supportarray 
+
+An index that selects the retained features from a feature vector. If indices is False, this is a boolean array of shape [# input features], in which an element is True iff its corresponding feature is selected for retention. If indices is True, this is an integer array of shape [# output features] whose values are indices into the input feature vector.     
+  
+inverse_transform(X) [source]
+ 
+Reverse the transformation operation  Parameters 
+ 
+Xarray of shape [n_samples, n_selected_features] 
+
+The input samples.    Returns 
+ 
+X_rarray of shape [n_samples, n_original_features] 
+
+X with columns of zeros inserted where features would have been removed by transform.     
+  
+predict(X) [source]
+ 
+ Reduce X to the selected features and then predict using the
+
+underlying estimator.    Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+yarray of shape [n_samples] 
+
+The predicted target values.     
+  
+predict_log_proba(X) [source]
+ 
+Predict class log-probabilities for X.  Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+parray of shape (n_samples, n_classes) 
+
+The class log-probabilities of the input samples. The order of the classes corresponds to that in the attribute classes_.     
+  
+predict_proba(X) [source]
+ 
+Predict class probabilities for X.  Parameters 
+ 
+X{array-like or sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+parray of shape (n_samples, n_classes) 
+
+The class probabilities of the input samples. The order of the classes corresponds to that in the attribute classes_.     
+  
+score(X, y) [source]
+ 
+ Reduce X to the selected features and then return the score of the
+
+underlying estimator.    Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.  
+yarray of shape [n_samples] 
+
+The target values.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+  
+transform(X) [source]
+ 
+Reduce X to the selected features.  Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+X_rarray of shape [n_samples, n_selected_features] 
+
+The input samples with only the selected features.     
+ 
+ Examples using sklearn.feature_selection.RFE
+ 
+  Recursive feature elimination

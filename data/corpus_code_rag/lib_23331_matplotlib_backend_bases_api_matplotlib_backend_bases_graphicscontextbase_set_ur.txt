@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_url
+
+set_url(url)[source]
+ 
+Set the url for links in compatible backends.

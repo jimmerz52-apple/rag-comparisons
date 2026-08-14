@@ -1,0 +1,8 @@
+# flask.api.index#flask.Flask.post
+
+post(rule, **options)  
+Shortcut for route() with methods=["POST"].  New in version 2.0.   Parameters 
+ 
+rule (str) –  
+options (Any) –    Return type 
+Callable

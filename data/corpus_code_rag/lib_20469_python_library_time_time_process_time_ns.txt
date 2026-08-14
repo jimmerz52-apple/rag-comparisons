@@ -1,0 +1,4 @@
+# python.library.time#time.process_time_ns
+
+time.process_time_ns() → int  
+Similar to process_time() but return time as nanoseconds.  New in version 3.7.

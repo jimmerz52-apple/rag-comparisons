@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.PdfPages.close
+
+close()[source]
+ 
+Finalize this object, running LaTeX in a temporary directory and moving the final pdf file to filename.

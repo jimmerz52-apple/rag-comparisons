@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Group.update
+
+update() 
+ call the update method on contained Sprites update(*args, **kwargs) -> None  Calls the update() method on all Sprites in the Group. The base Sprite class has an update method that takes any number of arguments and does nothing. The arguments passed to Group.update() will be passed to each Sprite. There is no way to get the return value from the Sprite.update() methods.

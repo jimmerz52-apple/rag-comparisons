@@ -1,0 +1,22 @@
+# matplotlib.units_api#matplotlib.units.AxisInfo
+
+classmatplotlib.units.AxisInfo(majloc=None, minloc=None, majfmt=None, minfmt=None, label=None, default_limits=None)[source]
+ 
+Bases: object Information to support default axis labeling, tick labeling, and limits. An instance of this class must be returned by ConversionInterface.axisinfo.  Parameters 
+ 
+majloc, minlocLocator, optional
+
+
+Tick locators for the major and minor ticks.  
+majfmt, minfmtFormatter, optional
+
+
+Tick formatters for the major and minor ticks.  
+labelstr, optional
+
+
+The default axis label.  
+default_limitsoptional
+
+
+The default min and max limits of the axis if no data has been plotted.     Notes If any of the above are None, the axis will simply use the default value.

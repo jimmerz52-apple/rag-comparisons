@@ -1,0 +1,5 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.kernel#sklearn.gaussian_process.kernels.Kernel.__call__
+
+abstract __call__(X, Y=None, eval_gradient=False) [source]
+ 
+Evaluate the kernel.

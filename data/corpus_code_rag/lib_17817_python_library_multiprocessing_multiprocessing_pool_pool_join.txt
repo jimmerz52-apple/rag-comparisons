@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.Pool.join
+
+join()  
+Wait for the worker processes to exit. One must call close() or terminate() before using join().

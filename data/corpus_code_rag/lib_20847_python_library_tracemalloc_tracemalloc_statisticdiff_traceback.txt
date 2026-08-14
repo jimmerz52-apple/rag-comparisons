@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.StatisticDiff.traceback
+
+traceback  
+Traceback where the memory blocks were allocated, Traceback instance.

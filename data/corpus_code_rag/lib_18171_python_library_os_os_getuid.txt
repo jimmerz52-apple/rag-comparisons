@@ -1,0 +1,4 @@
+# python.library.os#os.getuid
+
+os.getuid()  
+Return the current process’s real user id. Availability: Unix.

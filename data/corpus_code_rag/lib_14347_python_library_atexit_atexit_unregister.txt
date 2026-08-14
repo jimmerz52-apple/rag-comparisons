@@ -1,0 +1,4 @@
+# python.library.atexit#atexit.unregister
+
+atexit.unregister(func)  
+Remove func from the list of functions to be run at interpreter shutdown. After calling unregister(), func is guaranteed not to be called when the interpreter shuts down, even if it was registered more than once. unregister() silently does nothing if func was not previously registered.

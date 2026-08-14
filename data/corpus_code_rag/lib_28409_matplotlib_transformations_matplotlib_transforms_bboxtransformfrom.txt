@@ -1,0 +1,28 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransformFrom
+
+classmatplotlib.transforms.BboxTransformFrom(boxin, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase BboxTransformFrom linearly transforms points from a given Bbox to the unit bounding box.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       __init__(boxin, **kwargs)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.     
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform. 
+   is_separable=True
+ 
+True if this transform is separable in the x- and y- dimensions.

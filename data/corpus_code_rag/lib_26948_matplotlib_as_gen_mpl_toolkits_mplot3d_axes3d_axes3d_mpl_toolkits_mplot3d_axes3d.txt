@@ -1,0 +1,17 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.get_zticklabels
+
+get_zticklabels(minor=False, which=None)[source]
+ 
+Get the zaxis' tick labels.  Parameters 
+ 
+minorbool
+
+
+Whether to return the minor or the major ticklabels.  
+whichNone, ('minor', 'major', 'both')
+
+
+Overrides minor. Selects which ticklabels to return    Returns 
+ list of Text
+
+   Notes The tick label strings are not populated until a draw method has been called. See also: draw and draw.

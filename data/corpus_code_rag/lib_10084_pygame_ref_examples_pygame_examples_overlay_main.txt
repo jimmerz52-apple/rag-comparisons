@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.overlay.main
+
+overlay.main() 
+ play a .pgm video using overlays overlay.main(fname) -> None  Play the .pgm video file given by a path fname. If run as a program overlay.py takes the file name as a command line argument.

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.now
+
+now()  
+Returns a datetime that represents the current point in time. Exactly what’s returned depends on the value of USE_TZ:  If USE_TZ is False, this will be a naive datetime (i.e. a datetime without an associated timezone) that represents the current time in the system’s local timezone. If USE_TZ is True, this will be an aware datetime representing the current time in UTC. Note that now() will always return times in UTC regardless of the value of TIME_ZONE; you can use localtime() to get the time in the current time zone.

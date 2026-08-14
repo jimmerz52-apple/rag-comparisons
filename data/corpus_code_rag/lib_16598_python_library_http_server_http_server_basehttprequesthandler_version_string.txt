@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.version_string
+
+version_string()  
+Returns the server software’s version string. This is a combination of the server_version and sys_version attributes.

@@ -1,0 +1,13 @@
+# skimage.api.skimage.transform#skimage.transform.PolynomialTransform.inverse
+
+inverse(coords) [source]
+ 
+Apply inverse transformation.  Parameters 
+ 
+coords(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+coords(N, 2) array 
+
+Source coordinates.

@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.gaussian_process.gaussianprocessregressor#sklearn.gaussian_process.GaussianProcessRegressor.fit
+
+fit(X, y) [source]
+ 
+Fit Gaussian process regression model.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) or list of object 
+
+Feature vectors or other representations of training data.  
+yarray-like of shape (n_samples,) or (n_samples, n_targets) 
+
+Target values    Returns 
+ 
+selfreturns an instance of self.

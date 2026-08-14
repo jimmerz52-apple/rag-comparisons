@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.RegularPolyCollection.set_clip_on
+
+set_clip_on(b)[source]
+ 
+Set whether the artist uses clipping. When False artists will be visible outside of the axes which can lead to unexpected results.  Parameters 
+ 
+bbool

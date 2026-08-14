@@ -1,0 +1,12 @@
+# python.library.datetime#datetime.datetime
+
+class datetime.datetime(year, month, day, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)  
+The year, month and day arguments are required. tzinfo may be None, or an instance of a tzinfo subclass. The remaining arguments must be integers in the following ranges:  
+MINYEAR <= year <= MAXYEAR, 
+1 <= month <= 12, 
+1 <= day <= number of days in the given month and year, 
+0 <= hour < 24, 
+0 <= minute < 60, 
+0 <= second < 60, 
+0 <= microsecond < 1000000, 
+fold in [0, 1].  If an argument outside those ranges is given, ValueError is raised.  New in version 3.6: Added the fold argument.

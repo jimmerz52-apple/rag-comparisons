@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALBand.metadata
+
+metadata  
+The metadata of this band. The functionality is identical to GDALRaster.metadata.

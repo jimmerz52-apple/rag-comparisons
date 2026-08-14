@@ -1,0 +1,12 @@
+# django.ref.forms.widgets#django.forms.TimeInput
+
+class TimeInput  
+ 
+input_type: 'text'
+ 
+template_name: 'django/forms/widgets/time.html'
+ Renders as: <input type="text" ...>
+  Takes same arguments as TextInput, with one more optional argument:  
+format  
+The format in which this field’s initial value will be displayed. 
+ If no format argument is provided, the default format is the first format found in TIME_INPUT_FORMATS and respects Format localization. For the treatment of microseconds, see DateTimeInput.

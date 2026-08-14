@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.rotate
+
+rotate(x, y)  
+Returns a rotated copy of x, y times.

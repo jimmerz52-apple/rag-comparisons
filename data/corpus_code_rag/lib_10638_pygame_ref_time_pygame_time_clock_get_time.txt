@@ -1,0 +1,4 @@
+# pygame.ref.time#pygame.time.Clock.get_time
+
+get_time() 
+ time used in the previous tick get_time() -> milliseconds  The number of milliseconds that passed between the previous two calls to Clock.tick().

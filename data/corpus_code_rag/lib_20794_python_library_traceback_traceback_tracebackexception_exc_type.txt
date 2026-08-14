@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.exc_type
+
+exc_type  
+The class of the original traceback.

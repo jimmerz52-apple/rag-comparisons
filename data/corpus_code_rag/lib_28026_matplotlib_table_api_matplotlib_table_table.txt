@@ -1,0 +1,130 @@
+# matplotlib.table_api#matplotlib.table.Table
+
+classmatplotlib.table.Table(ax, loc=None, bbox=None, **kwargs)[source]
+ 
+Bases: matplotlib.artist.Artist A table of cells. The table consists of a grid of cells, which are indexed by (row, column). For a simple table, you'll have a full grid of cells with indices from (0, 0) to (num_rows-1, num_cols-1), in which the cell (0, 0) is positioned at the top left. However, you can also add cells with negative indices. You don't have to add a cell to every grid position, so you can create tables that have holes. Note: You'll usually not create an empty table from scratch. Instead use table to create a table from data.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+The Axes to plot the table into.  
+locstr
+
+
+The position of the cell with respect to ax. This must be one of the codes.  
+bboxBbox or None
+
+
+A bounding box to draw the table into. If this is not None, this overrides loc.    Other Parameters 
+ **kwargs
+
+Artist properties.       AXESPAD=0.02
+ 
+The border between the Axes and the table edge in Axes units. 
+   FONTSIZE=10
+
+   add_cell(row, col, *args, **kwargs)[source]
+ 
+Create a cell and add it to the table.  Parameters 
+ 
+rowint
+
+
+Row index.  
+colint
+
+
+Column index.  *args, **kwargs
+
+All other parameters are passed on to Cell.    Returns 
+ Cell
+
+The created cell.     
+   auto_set_column_width(col)[source]
+ 
+Automatically set the widths of given columns to optimal sizes.  Parameters 
+ 
+colint or sequence of ints
+
+
+The indices of the columns to auto-scale.     
+   auto_set_font_size(value=True)[source]
+ 
+Automatically set font size. 
+   codes={'best': 0, 'bottom': 17, 'bottom left': 12, 'bottom right': 13, 'center': 9, 'center left': 5, 'center right': 6, 'left': 15, 'lower center': 7, 'lower left': 3, 'lower right': 4, 'right': 14, 'top': 16, 'top left': 11, 'top right': 10, 'upper center': 8, 'upper left': 2, 'upper right': 1}
+ 
+Possible values where to place the table relative to the Axes. 
+   contains(mouseevent)[source]
+ 
+Test whether the artist contains the mouse event.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details.     
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   propertyedges
+ 
+The default value of visible_edges for newly added cells using add_cell. Notes This setting does currently only affect newly created cells using add_cell. To change existing cells, you have to set their edges explicitly: for c in tab.get_celld().values():
+    c.visible_edges = 'horizontal'
+ 
+   get_celld()[source]
+ 
+Return a dict of cells in the table mapping (row, column) to Cells. Notes You can also directly index into the Table object to access individual cells: cell = table[row, col]
+ 
+   get_children()[source]
+ 
+Return the Artists contained by the table. 
+   get_window_extent(renderer)[source]
+ 
+Get the artist's bounding box in display space. The bounding box' width and height are nonnegative. Subclasses should override for inclusion in the bounding box "tight" calculation. Default is to return an empty bounding box at 0, 0. Be careful when using this function, the results will not update if the artist window extent of the artist changes. The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure). This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly. 
+   scale(xscale, yscale)[source]
+ 
+Scale column widths by xscale and row heights by yscale. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, fontsize=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, label=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+fontsize float  
+gid str  
+in_layout bool  
+label object  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   
+   set_fontsize(size)[source]
+ 
+Set the font size, in points, of the cell text.  Parameters 
+ 
+sizefloat
+
+   Notes As long as auto font size has not been disabled, the value will be clipped such that the text fits horizontally into the cell. You can disable this behavior using auto_set_font_size. >>> the_table.auto_set_font_size(False)
+>>> the_table.set_fontsize(20)
+ However, there is no automatic scaling of the row height so that the text may exceed the cell boundary.

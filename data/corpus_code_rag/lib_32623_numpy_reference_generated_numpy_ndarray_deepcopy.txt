@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__deepcopy__
+
+numpy.ndarray.__deepcopy__ method   ndarray.__deepcopy__(memo, /) → Deep copy of array.
+ 
+Used if copy.deepcopy is called on an array.

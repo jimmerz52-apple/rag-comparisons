@@ -1,0 +1,17 @@
+# pygame.ref.scrap#pygame.scrap.put
+
+pygame.scrap.put() 
+ Places data into the clipboard. put(type, data) -> None  Places data for a given clipboard type into the clipboard. The data must be a string buffer. The type is a string identifying the type of data to be placed into the clipboard. This can be one of the predefined pygame.SCRAP_PBM, pygame.SCRAP_PPM, pygame.SCRAP_BMP or pygame.SCRAP_TEXT values or a user defined string identifier.     
+Parameters:
+
+ 
+type (string) -- type identifier of the data to be placed into the clipboard 
+data (bytes or str) -- data to be place into the clipboard (in python 3 data is a byte string and in python 2 data is a str)    
+Raises:
+
+pygame.error -- if unable to put the data into the clipboard     with open("example.bmp", "rb") as fp:
+    pygame.scrap.put(pygame.SCRAP_BMP, fp.read())
+# The image data is now on the clipboard for other applications to access
+# it.
+pygame.scrap.put(pygame.SCRAP_TEXT, b"A text to copy")
+pygame.scrap.put("Plain text", b"Data for user defined type 'Plain text'")

@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGHUP
+
+signal.SIGHUP  
+Hangup detected on controlling terminal or death of controlling process. Availability: Unix.

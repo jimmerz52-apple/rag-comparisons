@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.set_stretch
+
+set_stretch(stretch)[source]
+ 
+Set the font stretch or width. Options are: 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded' or 'ultra-expanded', or a numeric value in the range 0-1000.

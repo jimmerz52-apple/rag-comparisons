@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.tell
+
+tell()  
+Returns the current position of the file pointer.

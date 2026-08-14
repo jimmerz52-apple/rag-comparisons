@@ -1,0 +1,4 @@
+# python.library.xml.sax.handler#xml.sax.handler.ContentHandler.endPrefixMapping
+
+ContentHandler.endPrefixMapping(prefix)  
+End the scope of a prefix-URI mapping. See startPrefixMapping() for details. This event will always occur after the corresponding endElement() event, but the order of endPrefixMapping() events is not otherwise guaranteed.

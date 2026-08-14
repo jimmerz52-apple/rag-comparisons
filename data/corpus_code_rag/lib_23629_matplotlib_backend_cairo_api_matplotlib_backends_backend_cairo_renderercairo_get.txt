@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.RendererCairo.get_canvas_width_height
+
+get_canvas_width_height()[source]
+ 
+Return the canvas width and height in display coords.

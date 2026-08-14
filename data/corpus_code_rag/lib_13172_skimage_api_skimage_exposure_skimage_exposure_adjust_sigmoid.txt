@@ -1,0 +1,27 @@
+# skimage.api.skimage.exposure#skimage.exposure.adjust_sigmoid
+
+skimage.exposure.adjust_sigmoid(image, cutoff=0.5, gain=10, inv=False) [source]
+ 
+Performs Sigmoid Correction on the input image. Also known as Contrast Adjustment. This function transforms the input image pixelwise according to the equation O = 1/(1 + exp*(gain*(cutoff - I))) after scaling each pixel to the range 0 to 1.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+cutofffloat, optional 
+
+Cutoff of the sigmoid function that shifts the characteristic curve in horizontal direction. Default value is 0.5.  
+gainfloat, optional 
+
+The constant multiplier in exponential’s power of sigmoid function. Default value is 10.  
+invbool, optional 
+
+If True, returns the negative sigmoid correction. Defaults to False.    Returns 
+ 
+outndarray 
+
+Sigmoid corrected output image.      See also  
+adjust_gamma
+
+  References  
+1  
+Gustav J. Braun, “Image Lightness Rescaling Using Sigmoidal Contrast Enhancement Functions”, http://www.cis.rit.edu/fairchild/PDFs/PAP07.pdf

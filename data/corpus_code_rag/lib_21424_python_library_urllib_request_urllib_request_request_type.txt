@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.type
+
+Request.type  
+The URI scheme.

@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.feed
+
+HTMLParser.feed(data)  
+Feed some text to the parser. It is processed insofar as it consists of complete elements; incomplete data is buffered until more data is fed or close() is called. data must be str.

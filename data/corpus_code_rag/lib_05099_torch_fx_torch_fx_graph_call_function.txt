@@ -1,0 +1,10 @@
+# torch.fx#torch.fx.Graph.call_function
+
+call_function(the_function, args=None, kwargs=None, type_expr=None) [source]
+ 
+Insert a call_function Node into the Graph. A call_function node represents a call to a Python callable, specified by the_function. the_function can be  Parameters 
+ 
+the_function (Callable[.., Any]) – The function to be called. Can be any PyTorch operator, Python function, or member of the builtins or operator namespaces. 
+args (Optional[Tuple[Argument, ..]]) – The positional arguments to be passed to the called function. 
+kwargs (Optional[Dict[str, Argument]]) – The keyword arguments to be passed to the called function 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have.    Returns The newly created and inserted call_function node.  Note The same insertion point and type expression rules apply for this method as Graph.create_node().

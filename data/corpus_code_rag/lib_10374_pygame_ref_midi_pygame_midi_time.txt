@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.time
+
+pygame.midi.time() 
+ returns the current time in ms of the PortMidi timer time() -> time  The time is reset to 0 when the pygame.midi module is initialized.

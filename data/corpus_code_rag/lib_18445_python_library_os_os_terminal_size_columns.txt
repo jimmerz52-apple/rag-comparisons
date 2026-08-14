@@ -1,0 +1,4 @@
+# python.library.os#os.terminal_size.columns
+
+columns  
+Width of the terminal window in characters.

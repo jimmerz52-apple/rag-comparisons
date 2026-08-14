@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Process.kill
+
+kill()  
+Same as terminate() but using the SIGKILL signal on Unix.  New in version 3.7.

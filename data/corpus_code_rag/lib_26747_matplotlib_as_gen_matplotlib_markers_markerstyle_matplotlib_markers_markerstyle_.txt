@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.markers.markerstyle#matplotlib.markers.MarkerStyle.fillstyles
+
+fillstyles=('full', 'left', 'right', 'bottom', 'top', 'none')

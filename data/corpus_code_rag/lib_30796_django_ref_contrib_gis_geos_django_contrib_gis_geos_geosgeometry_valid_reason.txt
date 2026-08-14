@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.valid_reason
+
+GEOSGeometry.valid_reason  
+Returns a string describing the reason why a geometry is invalid.

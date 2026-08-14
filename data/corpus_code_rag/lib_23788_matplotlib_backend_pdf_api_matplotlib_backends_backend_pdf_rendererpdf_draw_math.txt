@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.RendererPdf.draw_mathtext
+
+draw_mathtext(gc, x, y, s, prop, angle)[source]

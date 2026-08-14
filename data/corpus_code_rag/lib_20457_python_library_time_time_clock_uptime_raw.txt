@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_UPTIME_RAW
+
+time.CLOCK_UPTIME_RAW  
+Clock that increments monotonically, tracking the time since an arbitrary point, unaffected by frequency or time adjustments and not incremented while the system is asleep. Availability: macOS 10.12 and newer.  New in version 3.8.

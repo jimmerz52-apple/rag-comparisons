@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_bounding_rect
+
+get_bounding_rect() 
+ find the smallest rect containing data get_bounding_rect(min_alpha = 1) -> Rect  Returns the smallest rectangular region that contains all the pixels in the surface that have an alpha value greater than or equal to the minimum alpha value. This function will temporarily lock and unlock the Surface as needed.  New in pygame 1.8.

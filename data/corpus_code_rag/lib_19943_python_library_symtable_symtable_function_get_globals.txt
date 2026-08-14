@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Function.get_globals
+
+get_globals()  
+Return a tuple containing names of globals in this function.

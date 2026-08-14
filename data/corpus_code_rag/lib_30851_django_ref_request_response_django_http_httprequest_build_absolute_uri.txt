@@ -1,0 +1,10 @@
+# django.ref.request-response#django.http.HttpRequest.build_absolute_uri
+
+HttpRequest.build_absolute_uri(location=None)  
+Returns the absolute URI form of location. If no location is provided, the location will be set to request.get_full_path(). If the location is already an absolute URI, it will not be altered. Otherwise the absolute URI is built using the server variables available in this request. For example: >>> request.build_absolute_uri()
+'https://example.com/music/bands/the_beatles/?print=true'
+>>> request.build_absolute_uri('/bands/')
+'https://example.com/bands/'
+>>> request.build_absolute_uri('https://example2.com/bands/')
+'https://example2.com/bands/'
+  Note Mixing HTTP and HTTPS on the same site is discouraged, therefore build_absolute_uri() will always generate an absolute URI with the same scheme the current request has. If you need to redirect users to HTTPS, it’s best to let your web server redirect all HTTP traffic to HTTPS.

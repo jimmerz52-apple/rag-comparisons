@@ -1,0 +1,4 @@
+# flask.config.index#JSON_SORT_KEYS
+
+JSON_SORT_KEYS  
+Sort the keys of JSON objects alphabetically. This is useful for caching because it ensures the data is serialized the same way no matter what Python’s hash seed is. While not recommended, you can disable this for a possible performance improvement at the cost of caching. Default: True

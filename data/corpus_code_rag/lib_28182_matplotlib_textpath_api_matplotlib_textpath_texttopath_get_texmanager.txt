@@ -1,0 +1,5 @@
+# matplotlib.textpath_api#matplotlib.textpath.TextToPath.get_texmanager
+
+get_texmanager()[source]
+ 
+Return the cached TexManager instance.

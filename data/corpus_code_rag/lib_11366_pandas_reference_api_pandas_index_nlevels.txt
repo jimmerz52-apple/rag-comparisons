@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.nlevels
+
+pandas.Index.nlevels   propertyIndex.nlevels
+ 
+Number of levels.

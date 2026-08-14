@@ -1,0 +1,4 @@
+# python.library.exceptions#NotADirectoryError
+
+exception NotADirectoryError  
+Raised when a directory operation (such as os.listdir()) is requested on something which is not a directory. Corresponds to errno ENOTDIR.

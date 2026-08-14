@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.is_separable
+
+is_separable=False
+ 
+True if this transform is separable in the x- and y- dimensions.

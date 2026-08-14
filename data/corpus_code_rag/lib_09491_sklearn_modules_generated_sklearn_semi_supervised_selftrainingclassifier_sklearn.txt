@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.semi_supervised.selftrainingclassifier#sklearn.semi_supervised.SelfTrainingClassifier.score
+
+score(X, y) [source]
+ 
+Calls score on the base_estimator.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Array representing the data.  
+yarray-like of shape (n_samples,) 
+
+Array representing the labels.    Returns 
+ 
+scorefloat 
+
+Result of calling score on the base_estimator.

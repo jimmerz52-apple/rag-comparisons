@@ -1,0 +1,7 @@
+# pygame.ref.examples#pygame.examples.headless_no_windows_needed.main
+
+headless_no_windows_needed.main() 
+ write an image file that is smoothscaled copy of an input file headless_no_windows_needed.main(fin, fout, w, h) -> None  arguments: fin - name of an input image file
+fout - name of the output file to create/overwrite
+w, h - size of the rescaled image, as integer width and height How to use pygame with no windowing system, like on headless servers. Thumbnail generation with scaling is an example of what you can do with pygame. NOTE: the pygame scale function uses MMX/SSE if available, and can be run in multiple threads. If headless_no_windows_needed.py is run as a program it takes the following command line arguments: -scale inputimage outputimage new_width new_height
+eg. -scale in.png outpng 50 50

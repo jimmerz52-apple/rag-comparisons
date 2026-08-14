@@ -1,0 +1,11 @@
+# werkzeug.utils.index#werkzeug.security.pbkdf2_bin
+
+werkzeug.security.pbkdf2_bin(data, salt, iterations=260000, keylen=None, hashfunc=None)  
+Returns a binary digest for the PBKDF2 hash algorithm of data with the given salt. It iterates iterations times and produces a key of keylen bytes. By default, SHA-256 is used as hash function; a different hashlib hashfunc can be provided.  Parameters 
+ 
+data (Union[str, bytes]) – the data to derive. 
+salt (Union[str, bytes]) – the salt for the derivation. 
+iterations (int) – the number of iterations. 
+keylen (Optional[int]) – the length of the resulting key. If not provided the digest size will be used. 
+hashfunc (Optional[Union[str, Callable]]) – the hash function to use. This can either be the string name of a known hash function or a function from the hashlib module. Defaults to sha256.   Return type 
+bytes    Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use hashlib.pbkdf2_hmac() instead.   Changelog New in version 0.9.

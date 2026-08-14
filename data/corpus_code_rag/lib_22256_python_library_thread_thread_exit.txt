@@ -1,0 +1,4 @@
+# python.library._thread#_thread.exit
+
+_thread.exit()  
+Raise the SystemExit exception. When not caught, this will cause the thread to exit silently.

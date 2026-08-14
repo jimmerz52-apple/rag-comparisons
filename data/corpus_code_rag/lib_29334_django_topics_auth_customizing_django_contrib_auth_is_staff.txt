@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.is_staff
+
+is_staff  
+Returns True if the user is allowed to have access to the admin site.

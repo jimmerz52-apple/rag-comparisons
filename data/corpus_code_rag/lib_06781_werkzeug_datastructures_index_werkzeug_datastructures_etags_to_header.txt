@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ETags.to_header
+
+to_header()  
+Convert the etags set into a HTTP header string.

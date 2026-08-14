@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.calibration.calibratedclassifiercv#sklearn.calibration.CalibratedClassifierCV.predict
+
+predict(X) [source]
+ 
+Predict the target of new samples. The predicted class is the class that has the highest probability, and can thus be different from the prediction of the uncalibrated classifier.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The samples.    Returns 
+ 
+Cndarray of shape (n_samples,) 
+
+The predicted class.

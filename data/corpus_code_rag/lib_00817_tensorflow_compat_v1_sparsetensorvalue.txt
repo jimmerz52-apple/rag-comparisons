@@ -1,0 +1,16 @@
+# tensorflow.compat.v1.sparsetensorvalue
+
+tf.compat.v1.SparseTensorValue SparseTensorValue(indices, values, dense_shape) 
+tf.compat.v1.SparseTensorValue(
+    indices, values, dense_shape
+)
+
+ 
+
+
+ Attributes
+  indices  
+ 
+  values  
+ 
+  dense_shape

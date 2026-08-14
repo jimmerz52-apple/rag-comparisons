@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.read_text
+
+importlib.resources.read_text(package, resource, encoding='utf-8', errors='strict')  
+Read and return the contents of resource within package as a str. By default, the contents are read as strict UTF-8. package is either a name or a module object which conforms to the Package requirements. resource is the name of the resource to open within package; it may not contain path separators and it may not have sub-resources (i.e. it cannot be a directory). encoding and errors have the same meaning as with built-in open(). This function returns the contents of the resource as str.

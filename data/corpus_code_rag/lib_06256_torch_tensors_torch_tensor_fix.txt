@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.fix_
+
+fix_() → Tensor  
+In-place version of fix()

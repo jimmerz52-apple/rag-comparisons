@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_ylim3d
+
+set_ylim3d(bottom=None, top=None, emit=True, auto=False, *, ymin=None, ymax=None)[source]
+ 
+Set 3D y limits. See matplotlib.axes.Axes.set_ylim() for full documentation.

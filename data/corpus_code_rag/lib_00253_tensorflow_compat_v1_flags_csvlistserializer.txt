@@ -1,0 +1,12 @@
+# tensorflow.compat.v1.flags.csvlistserializer
+
+tf.compat.v1.flags.CsvListSerializer Base class for generating string representations of a flag value. Inherits From: ArgumentSerializer  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.CsvListSerializer  
+tf.compat.v1.flags.CsvListSerializer(
+    list_sep
+)
+ Methods serialize 
+serialize(
+    value
+)
+ Serializes a list as a CSV string or unicode.

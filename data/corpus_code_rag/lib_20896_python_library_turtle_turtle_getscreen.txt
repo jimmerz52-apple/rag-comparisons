@@ -1,0 +1,7 @@
+# python.library.turtle#turtle.getscreen
+
+turtle.getscreen()  
+Return the TurtleScreen object the turtle is drawing on. TurtleScreen methods can then be called for that object. >>> ts = turtle.getscreen()
+>>> ts
+<turtle._Screen object at 0x...>
+>>> ts.bgcolor("pink")

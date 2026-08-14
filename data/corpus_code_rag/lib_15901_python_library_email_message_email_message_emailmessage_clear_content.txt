@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.clear_content
+
+clear_content()  
+Remove the payload and all of the Content- headers, leaving all other headers intact and in their original order.

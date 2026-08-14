@@ -1,0 +1,3 @@
+# django.ref.models.database-functions#django.db.models.functions.NthValue
+
+class NthValue(expression, nth=1, **extra)

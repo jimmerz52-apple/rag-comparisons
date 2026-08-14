@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.is_not_allowed
+
+DefaultCookiePolicy.is_not_allowed(domain)  
+Return whether domain is not on the whitelist for setting or receiving cookies.

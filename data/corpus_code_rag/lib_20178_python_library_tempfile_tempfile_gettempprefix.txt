@@ -1,0 +1,4 @@
+# python.library.tempfile#tempfile.gettempprefix
+
+tempfile.gettempprefix()  
+Return the filename prefix used to create temporary files. This does not contain the directory component.

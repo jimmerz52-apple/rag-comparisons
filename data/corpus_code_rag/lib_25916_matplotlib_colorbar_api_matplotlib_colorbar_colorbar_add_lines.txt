@@ -1,0 +1,22 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.add_lines
+
+add_lines(*args, **kwargs)[source]
+ 
+Draw lines on the colorbar. The lines are appended to the list lines.  Parameters 
+ 
+levelsarray-like
+
+
+The positions of the lines.  
+colorscolor or list of colors
+
+
+Either a single color applying to all lines or one color value for each line.  
+linewidthsfloat or array-like
+
+
+Either a single linewidth applying to all lines or one linewidth for each line.  
+erasebool, default: True
+
+
+Whether to remove any previously added lines.     Notes Alternatively, this method can also be called with the signature colorbar.add_lines(contour_set, erase=True), in which case levels, colors, and linewidths are taken from contour_set.

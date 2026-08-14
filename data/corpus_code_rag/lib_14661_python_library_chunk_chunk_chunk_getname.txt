@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.getname
+
+getname()  
+Returns the name (ID) of the chunk. This is the first 4 bytes of the chunk.

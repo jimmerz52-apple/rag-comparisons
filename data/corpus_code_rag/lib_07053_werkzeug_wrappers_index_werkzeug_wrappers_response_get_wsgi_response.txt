@@ -1,0 +1,7 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.get_wsgi_response
+
+get_wsgi_response(environ)  
+Returns the final WSGI response as tuple. The first item in the tuple is the application iterator, the second the status and the third the list of headers. The response returned is created specially for the given environment. For example if the request method in the WSGI environment is 'HEAD' the response will be empty and only the headers and status code will be present.  Changelog New in version 0.6.   Parameters 
+environ (WSGIEnvironment) – the WSGI environment of the request.  Returns 
+an (app_iter, status, headers) tuple.  Return type 
+Tuple[Iterable[bytes], str, List[Tuple[str, str]]]

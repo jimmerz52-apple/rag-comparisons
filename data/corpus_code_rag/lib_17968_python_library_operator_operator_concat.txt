@@ -1,0 +1,5 @@
+# python.library.operator#operator.concat
+
+operator.concat(a, b)  
+operator.__concat__(a, b)  
+Return a + b for a and b sequences.

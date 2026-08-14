@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.addr
+
+addr  
+Holds the address of the client, the second value returned by socket.accept

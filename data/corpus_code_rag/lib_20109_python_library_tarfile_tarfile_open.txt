@@ -1,0 +1,29 @@
+# python.library.tarfile#tarfile.open
+
+tarfile.open(name=None, mode='r', fileobj=None, bufsize=10240, **kwargs)  
+Return a TarFile object for the pathname name. For detailed information on TarFile objects and the keyword arguments that are allowed, see TarFile Objects. mode has to be a string of the form 'filemode[:compression]', it defaults to 'r'. Here is a full list of mode combinations:   
+mode action   
+'r' or 'r:*' Open for reading with transparent compression (recommended).  
+'r:' Open for reading exclusively without compression.  
+'r:gz' Open for reading with gzip compression.  
+'r:bz2' Open for reading with bzip2 compression.  
+'r:xz' Open for reading with lzma compression.  
+'x' or 'x:' Create a tarfile exclusively without compression. Raise an FileExistsError exception if it already exists.  
+'x:gz' Create a tarfile with gzip compression. Raise an FileExistsError exception if it already exists.  
+'x:bz2' Create a tarfile with bzip2 compression. Raise an FileExistsError exception if it already exists.  
+'x:xz' Create a tarfile with lzma compression. Raise an FileExistsError exception if it already exists.  
+'a' or 'a:' Open for appending with no compression. The file is created if it does not exist.  
+'w' or 'w:' Open for uncompressed writing.  
+'w:gz' Open for gzip compressed writing.  
+'w:bz2' Open for bzip2 compressed writing.  
+'w:xz' Open for lzma compressed writing.   Note that 'a:gz', 'a:bz2' or 'a:xz' is not possible. If mode is not suitable to open a certain (compressed) file for reading, ReadError is raised. Use mode 'r' to avoid this. If a compression method is not supported, CompressionError is raised. If fileobj is specified, it is used as an alternative to a file object opened in binary mode for name. It is supposed to be at position 0. For modes 'w:gz', 'r:gz', 'w:bz2', 'r:bz2', 'x:gz', 'x:bz2', tarfile.open() accepts the keyword argument compresslevel (default 9) to specify the compression level of the file. For special purposes, there is a second format for mode: 'filemode|[compression]'. tarfile.open() will return a TarFile object that processes its data as a stream of blocks. No random seeking will be done on the file. If given, fileobj may be any object that has a read() or write() method (depending on the mode). bufsize specifies the blocksize and defaults to 20 * 512 bytes. Use this variant in combination with e.g. sys.stdin, a socket file object or a tape device. However, such a TarFile object is limited in that it does not allow random access, see Examples. The currently possible modes:   
+Mode Action   
+'r|*' Open a stream of tar blocks for reading with transparent compression.  
+'r|' Open a stream of uncompressed tar blocks for reading.  
+'r|gz' Open a gzip compressed stream for reading.  
+'r|bz2' Open a bzip2 compressed stream for reading.  
+'r|xz' Open an lzma compressed stream for reading.  
+'w|' Open an uncompressed stream for writing.  
+'w|gz' Open a gzip compressed stream for writing.  
+'w|bz2' Open a bzip2 compressed stream for writing.  
+'w|xz' Open an lzma compressed stream for writing.    Changed in version 3.5: The 'x' (exclusive creation) mode was added.   Changed in version 3.6: The name parameter accepts a path-like object.

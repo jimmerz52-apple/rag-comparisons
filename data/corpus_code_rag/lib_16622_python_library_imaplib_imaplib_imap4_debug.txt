@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.debug
+
+IMAP4.debug  
+Integer value to control debugging output. The initialize value is taken from the module variable Debug. Values greater than three trace each command.

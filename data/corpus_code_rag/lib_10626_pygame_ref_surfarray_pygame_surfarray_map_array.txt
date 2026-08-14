@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.map_array
+
+pygame.surfarray.map_array() 
+ Map a 3d array into a 2d array map_array(Surface, array3d) -> array2d  Convert a 3D array into a 2D array. This will use the given Surface format to control the conversion. Palette surface formats are supported for NumPy arrays.

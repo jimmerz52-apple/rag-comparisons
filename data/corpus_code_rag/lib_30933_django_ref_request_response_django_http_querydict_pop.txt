@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.QueryDict.pop
+
+QueryDict.pop(key)  
+Returns a list of values for the given key and removes them from the dictionary. Raises KeyError if the key does not exist. For example: >>> q = QueryDict('a=1&a=2&a=3', mutable=True)
+>>> q.pop('a')
+['1', '2', '3']

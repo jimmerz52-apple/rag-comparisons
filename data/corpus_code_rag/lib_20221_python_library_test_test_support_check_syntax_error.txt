@@ -1,0 +1,4 @@
+# python.library.test#test.support.check_syntax_error
+
+test.support.check_syntax_error(testcase, statement, errtext='', *, lineno=None, offset=None)  
+Test for syntax errors in statement by attempting to compile statement. testcase is the unittest instance for the test. errtext is the regular expression which should match the string representation of the raised SyntaxError. If lineno is not None, compares to the line of the exception. If offset is not None, compares to the offset of the exception.

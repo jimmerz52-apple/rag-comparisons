@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.reshape
+
+numpy.record.reshape method   record.reshape()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.reshape.

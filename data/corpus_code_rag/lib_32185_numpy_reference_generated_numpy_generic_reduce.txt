@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.__reduce__
+
+numpy.generic.__reduce__ method   generic.__reduce__()
+ 
+Helper for pickle.

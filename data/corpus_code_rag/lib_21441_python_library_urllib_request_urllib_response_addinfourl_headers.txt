@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.response.addinfourl.headers
+
+headers  
+Returns the headers of the response in the form of an EmailMessage instance.

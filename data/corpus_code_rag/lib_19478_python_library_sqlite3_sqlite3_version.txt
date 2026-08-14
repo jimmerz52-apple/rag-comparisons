@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.version
+
+sqlite3.version  
+The version number of this module, as a string. This is not the version of the SQLite library.

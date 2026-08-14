@@ -1,0 +1,12 @@
+# django.ref.forms.widgets#django.forms.DateTimeInput
+
+class DateTimeInput  
+ 
+input_type: 'text'
+ 
+template_name: 'django/forms/widgets/datetime.html'
+ Renders as: <input type="text" ...>
+  Takes same arguments as TextInput, with one more optional argument:  
+format  
+The format in which this field’s initial value will be displayed. 
+ If no format argument is provided, the default format is the first format found in DATETIME_INPUT_FORMATS and respects Format localization. By default, the microseconds part of the time value is always set to 0. If microseconds are required, use a subclass with the supports_microseconds attribute set to True.

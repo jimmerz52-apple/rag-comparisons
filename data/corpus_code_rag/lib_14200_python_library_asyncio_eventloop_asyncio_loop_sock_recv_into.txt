@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.sock_recv_into
+
+coroutine loop.sock_recv_into(sock, buf)  
+Receive data from sock into the buf buffer. Modeled after the blocking socket.recv_into() method. Return the number of bytes written to the buffer. sock must be a non-blocking socket.  New in version 3.7.

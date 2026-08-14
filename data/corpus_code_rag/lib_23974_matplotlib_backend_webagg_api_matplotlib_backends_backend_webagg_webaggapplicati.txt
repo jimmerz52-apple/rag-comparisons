@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.WebAggApplication.WebSocket.on_close
+
+on_close()[source]
+ 
+Invoked when the WebSocket is closed. If the connection was closed cleanly and a status code or reason phrase was supplied, these values will be available as the attributes self.close_code and self.close_reason.  Changed in version 4.0: Added close_code and close_reason attributes.

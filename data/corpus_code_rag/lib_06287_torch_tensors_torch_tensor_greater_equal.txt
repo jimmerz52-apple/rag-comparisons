@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.greater_equal_
+
+greater_equal_(other) → Tensor  
+In-place version of greater_equal().

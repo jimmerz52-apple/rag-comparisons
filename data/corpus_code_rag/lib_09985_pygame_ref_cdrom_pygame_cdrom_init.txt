@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.init
+
+pygame.cdrom.init() 
+ initialize the cdrom module init() -> None  Initialize the cdrom module. This will scan the system for all CD devices. The module must be initialized before any other functions will work. This automatically happens when you call pygame.init(). It is safe to call this function more than once.

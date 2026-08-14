@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.hot
+
+matplotlib.pyplot.hot   matplotlib.pyplot.hot()[source]
+ 
+Set the colormap to 'hot'. This changes the default colormap as well as the colormap of the current image if there is one. See help(colormaps) for more information.

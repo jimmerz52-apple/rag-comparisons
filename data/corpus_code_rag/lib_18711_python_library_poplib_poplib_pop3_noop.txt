@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.noop
+
+POP3.noop()  
+Do nothing. Might be used as a keep-alive.

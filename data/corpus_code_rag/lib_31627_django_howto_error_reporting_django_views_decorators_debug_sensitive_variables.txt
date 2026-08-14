@@ -1,0 +1,19 @@
+# django.howto.error-reporting#django.views.decorators.debug.sensitive_variables
+
+sensitive_variables(*variables)  
+If a function (either a view or any regular callback) in your code uses local variables susceptible to contain sensitive information, you may prevent the values of those variables from being included in error reports using the sensitive_variables decorator: from django.views.decorators.debug import sensitive_variables
+
+@sensitive_variables('user', 'pw', 'cc')
+def process_info(user):
+    pw = user.pass_word
+    cc = user.credit_card_number
+    name = user.name
+    ...
+ In the above example, the values for the user, pw and cc variables will be hidden and replaced with stars (**********) in the error reports, whereas the value of the name variable will be disclosed. To systematically hide all local variables of a function from error logs, do not provide any argument to the sensitive_variables decorator: @sensitive_variables()
+def my_function():
+    ...
+  When using multiple decorators If the variable you want to hide is also a function argument (e.g. ‘user’ in the following example), and if the decorated function has multiple decorators, then make sure to place @sensitive_variables at the top of the decorator chain. This way it will also hide the function argument as it gets passed through the other decorators: @sensitive_variables('user', 'pw', 'cc')
+@some_decorator
+@another_decorator
+def process_info(user):
+    ...

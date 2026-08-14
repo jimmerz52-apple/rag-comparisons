@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.View.options
+
+options(request, *args, **kwargs)  
+Handles responding to requests for the OPTIONS HTTP verb. Returns a response with the Allow header containing a list of the view’s allowed HTTP method names.

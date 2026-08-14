@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.InputOnly
+
+class tkinter.tix.InputOnly  
+The InputOnly widgets are to accept inputs from the user, which can be done with the bind command (Unix only).

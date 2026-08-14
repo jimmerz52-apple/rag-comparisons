@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.get_short_name
+
+get_short_name()  
+Returns the first_name.

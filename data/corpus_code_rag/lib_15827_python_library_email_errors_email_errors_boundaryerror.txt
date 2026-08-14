@@ -1,0 +1,4 @@
+# python.library.email.errors#email.errors.BoundaryError
+
+exception email.errors.BoundaryError  
+Deprecated and no longer used.

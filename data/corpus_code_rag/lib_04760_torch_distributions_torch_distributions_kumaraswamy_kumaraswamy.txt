@@ -1,0 +1,26 @@
+# torch.distributions#torch.distributions.kumaraswamy.Kumaraswamy
+
+class torch.distributions.kumaraswamy.Kumaraswamy(concentration1, concentration0, validate_args=None) [source]
+ 
+Bases: torch.distributions.transformed_distribution.TransformedDistribution Samples from a Kumaraswamy distribution. Example: >>> m = Kumaraswamy(torch.Tensor([1.0]), torch.Tensor([1.0]))
+>>> m.sample()  # sample from a Kumaraswamy distribution with concentration alpha=1 and beta=1
+tensor([ 0.1729])
+  Parameters 
+ 
+concentration1 (float or Tensor) – 1st concentration parameter of the distribution (often referred to as alpha) 
+concentration0 (float or Tensor) – 2nd concentration parameter of the distribution (often referred to as beta)     
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {'concentration0': GreaterThan(lower_bound=0.0), 'concentration1': GreaterThan(lower_bound=0.0)} 
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+property mean 
+  
+support = Interval(lower_bound=0.0, upper_bound=1.0) 
+  
+property variance

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.__init__
+
+__init__(title, link, description, language=None, author_email=None, author_name=None, author_link=None, subtitle=None, categories=None, feed_url=None, feed_copyright=None, feed_guid=None, ttl=None, **kwargs)  
+Initialize the feed with the given dictionary of metadata, which applies to the entire feed. Any extra keyword arguments you pass to __init__ will be stored in self.feed. All parameters should be strings, except categories, which should be a sequence of strings.

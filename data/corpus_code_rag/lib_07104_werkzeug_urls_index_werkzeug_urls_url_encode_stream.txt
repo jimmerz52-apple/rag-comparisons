@@ -1,0 +1,13 @@
+# werkzeug.urls.index#werkzeug.urls.url_encode_stream
+
+werkzeug.urls.url_encode_stream(obj, stream=None, charset='utf-8', encode_keys=None, sort=False, key=None, separator='&')  
+Like url_encode() but writes the results to a stream object. If the stream is None a generator over all encoded pairs is returned.  Parameters 
+ 
+obj (Union[Mapping[str, str], Iterable[Tuple[str, str]]]) – the object to encode into a query string. 
+stream (Optional[TextIO]) – a stream to write the encoded object into or None if an iterator over the encoded pairs should be returned. In that case the separator argument is ignored. 
+charset (str) – the charset of the query string. 
+sort (bool) – set to True if you want parameters to be sorted by key. 
+separator (str) – the separator to be used for the pairs. 
+key (Optional[Callable[[Tuple[str, str]], Any]]) – an optional function to be used for sorting. For more details check out the sorted() documentation. 
+encode_keys (None) –    Return type 
+None    Changed in version 2.0: The encode_keys parameter is deprecated and will be removed in Werkzeug 2.1.   Changelog New in version 0.8.

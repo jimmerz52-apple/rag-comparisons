@@ -1,0 +1,82 @@
+# matplotlib._as_gen.matplotlib.pyplot.axhline
+
+matplotlib.pyplot.axhline   matplotlib.pyplot.axhline(y=0, xmin=0, xmax=1, **kwargs)[source]
+ 
+Add a horizontal line across the axis.  Parameters 
+ 
+yfloat, default: 0
+
+
+y position in data coordinates of the horizontal line.  
+xminfloat, default: 0
+
+
+Should be between 0 and 1, 0 being the far left of the plot, 1 the far right of the plot.  
+xmaxfloat, default: 1
+
+
+Should be between 0 and 1, 0 being the far left of the plot, 1 the far right of the plot.    Returns 
+ Line2D
+  Other Parameters 
+ **kwargs
+
+Valid keyword arguments are Line2D properties, with the exception of 'transform':   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color or c color  
+dash_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+dash_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+dashes sequence of floats (on/off ink in points) or (None, None)  
+data (2, N) array or two 1D arrays  
+drawstyle or ds {'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'  
+figure Figure  
+fillstyle {'full', 'left', 'right', 'bottom', 'top', 'none'}  
+gid str  
+in_layout bool  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float  
+marker marker style string, Path or MarkerStyle  
+markeredgecolor or mec color  
+markeredgewidth or mew float  
+markerfacecolor or mfc color  
+markerfacecoloralt or mfcalt color  
+markersize or ms float  
+markevery None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]  
+path_effects AbstractPathEffect  
+picker float or callable[[Artist, Event], tuple[bool, dict]]  
+pickradius float  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+solid_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+solid_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+transform unknown  
+url str  
+visible bool  
+xdata 1D array  
+ydata 1D array  
+zorder float        See also  hlines
+
+Add horizontal lines in data coordinates.  axhspan
+
+Add a horizontal span (rectangle) across the axis.  axline
+
+Add a line with an arbitrary slope.    Examples  
+draw a thick red hline at 'y' = 0 that spans the xrange: >>> axhline(linewidth=4, color='r')
+  
+draw a default hline at 'y' = 1 that spans the xrange: >>> axhline(y=1)
+  
+draw a default hline at 'y' = .5 that spans the middle half of the xrange: >>> axhline(y=.5, xmin=0.25, xmax=0.75)
+   
+  Examples using matplotlib.pyplot.axhline
+ 
+   Infinite lines   
+
+   Zorder Demo

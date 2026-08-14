@@ -1,0 +1,4 @@
+# python.library.test#test.support.match_test
+
+test.support.match_test(test)  
+Match test to patterns set in set_match_tests().

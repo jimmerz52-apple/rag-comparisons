@@ -1,0 +1,3 @@
+# django.ref.checks#django.core.checks.Info
+
+class Info(msg, hint=None, obj=None, id=None)

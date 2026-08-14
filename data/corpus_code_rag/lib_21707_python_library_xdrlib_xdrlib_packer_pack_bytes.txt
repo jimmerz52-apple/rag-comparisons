@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_bytes
+
+Packer.pack_bytes(bytes)  
+Packs a variable length byte stream, similarly to pack_string().

@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.Task.remove_done_callback
+
+remove_done_callback(callback)  
+Remove callback from the callbacks list. This method should only be used in low-level callback-based code. See the documentation of Future.remove_done_callback() for more details.

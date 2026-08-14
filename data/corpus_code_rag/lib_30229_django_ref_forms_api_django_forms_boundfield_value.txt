@@ -1,0 +1,10 @@
+# django.ref.forms.api#django.forms.BoundField.value
+
+BoundField.value()  
+Use this method to render the raw value of this field as it would be rendered by a Widget: >>> initial = {'subject': 'welcome'}
+>>> unbound_form = ContactForm(initial=initial)
+>>> bound_form = ContactForm(data={'subject': 'hi'}, initial=initial)
+>>> print(unbound_form['subject'].value())
+welcome
+>>> print(bound_form['subject'].value())
+hi

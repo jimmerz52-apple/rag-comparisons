@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.locate_label
+
+locate_label(linecontour, labelwidth)[source]
+ 
+Find good place to draw a label (relatively flat part of the contour).

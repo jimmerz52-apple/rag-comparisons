@@ -1,0 +1,4 @@
+# python.library.pickle#object.__reduce_ex__
+
+object.__reduce_ex__(protocol)  
+Alternatively, a __reduce_ex__() method may be defined. The only difference is this method should take a single integer argument, the protocol version. When defined, pickle will prefer it over the __reduce__() method. In addition, __reduce__() automatically becomes a synonym for the extended version. The main use for this method is to provide backwards-compatible reduce values for older Python releases.

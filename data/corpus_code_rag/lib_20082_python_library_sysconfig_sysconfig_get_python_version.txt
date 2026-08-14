@@ -1,0 +1,4 @@
+# python.library.sysconfig#sysconfig.get_python_version
+
+sysconfig.get_python_version()  
+Return the MAJOR.MINOR Python version number as a string. Similar to '%d.%d' % sys.version_info[:2].

@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.ffmpegfilewriter#matplotlib.animation.FFMpegFileWriter.supported_formats
+
+supported_formats=['png', 'jpeg', 'tiff', 'raw', 'rgba']

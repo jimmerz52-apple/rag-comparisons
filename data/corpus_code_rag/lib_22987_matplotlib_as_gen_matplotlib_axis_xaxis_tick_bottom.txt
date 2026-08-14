@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axis.xaxis.tick_bottom
+
+matplotlib.axis.XAxis.tick_bottom   XAxis.tick_bottom()[source]
+ 
+Move ticks and ticklabels (if present) to the bottom of the axes. 
+  Examples using matplotlib.axis.XAxis.tick_bottom
+ 
+   Broken Axis   
+
+   Bachelor's degrees by gender

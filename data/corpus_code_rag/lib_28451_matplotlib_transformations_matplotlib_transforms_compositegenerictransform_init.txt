@@ -1,0 +1,6 @@
+# matplotlib.transformations#matplotlib.transforms.CompositeGenericTransform.__init__
+
+__init__(a, b, **kwargs)[source]
+ 
+Create a new composite transform that is the result of applying transform a then transform b. You will generally not call this constructor directly but write a +
+b instead, which will automatically choose the best kind of composite transform instance to create.

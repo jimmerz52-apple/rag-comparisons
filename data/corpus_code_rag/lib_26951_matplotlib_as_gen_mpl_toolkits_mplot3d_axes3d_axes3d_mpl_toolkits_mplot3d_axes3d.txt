@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.grid
+
+grid(visible=True, **kwargs)[source]
+ 
+Set / unset 3D grid.  Note Currently, this function does not behave the same as matplotlib.axes.Axes.grid(), but it is intended to eventually support that behavior.

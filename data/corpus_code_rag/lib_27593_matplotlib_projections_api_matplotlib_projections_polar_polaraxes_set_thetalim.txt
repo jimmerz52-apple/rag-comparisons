@@ -1,0 +1,7 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_thetalim
+
+set_thetalim(*args, **kwargs)[source]
+ 
+Set the minimum and maximum theta values. Can take the following signatures:  
+set_thetalim(minval, maxval): Set the limits in radians. 
+set_thetalim(thetamin=minval, thetamax=maxval): Set the limits in degrees.  where minval and maxval are the minimum and maximum limits. Values are wrapped in to the range \([0, 2\pi]\) (in radians), so for example it is possible to do set_thetalim(-np.pi / 2, np.pi / 2) to have an axes symmetric around 0. A ValueError is raised if the absolute angle difference is larger than a full circle.

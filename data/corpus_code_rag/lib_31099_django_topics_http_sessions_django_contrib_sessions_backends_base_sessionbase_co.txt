@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.__contains__
+
+__contains__(key)  
+Example: 'fav_color' in request.session

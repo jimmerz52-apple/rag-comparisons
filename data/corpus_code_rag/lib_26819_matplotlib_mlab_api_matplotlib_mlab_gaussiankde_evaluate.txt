@@ -1,0 +1,18 @@
+# matplotlib.mlab_api#matplotlib.mlab.GaussianKDE.evaluate
+
+evaluate(points)[source]
+ 
+Evaluate the estimated pdf on a set of points.  Parameters 
+ 
+points(# of dimensions, # of points)-array
+
+
+Alternatively, a (# of dimensions,) vector can be passed in and treated as a single point.    Returns 
+ (# of points,)-array
+
+The values at each point.    Raises 
+ 
+ValueErrorif the dimensionality of the input points is different
+
+
+than the dimensionality of the KDE.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.daysinmonth
+
+pandas.PeriodIndex.daysinmonth   propertyPeriodIndex.daysinmonth
+ 
+The number of days in the month.

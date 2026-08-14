@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.STD_OUTPUT_HANDLE
+
+subprocess.STD_OUTPUT_HANDLE  
+The standard output device. Initially, this is the active console screen buffer, CONOUT$.

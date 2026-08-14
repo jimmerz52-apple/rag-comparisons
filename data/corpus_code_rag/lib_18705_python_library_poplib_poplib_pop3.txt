@@ -1,0 +1,5 @@
+# python.library.poplib#poplib.POP3
+
+class poplib.POP3(host, port=POP3_PORT[, timeout])  
+This class implements the actual POP3 protocol. The connection is created when the instance is initialized. If port is omitted, the standard POP3 port (110) is used. The optional timeout parameter specifies a timeout in seconds for the connection attempt (if not specified, the global default timeout setting will be used). Raises an auditing event poplib.connect with arguments self, host, port.
+All commands will raise an auditing event poplib.putline with arguments self and line, where line is the bytes about to be sent to the remote host.  Changed in version 3.9: If the timeout parameter is set to be zero, it will raise a ValueError to prevent the creation of a non-blocking socket.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.after_request_funcs
+
+after_request_funcs: t.Dict[AppOrBlueprintKey, t.List[AfterRequestCallable]]  
+A data structure of functions to call at the end of each request, in the format {scope: [functions]}. The scope key is the name of a blueprint the functions are active for, or None for all requests. To register a function, use the after_request() decorator. This data structure is internal. It should not be modified directly and its format may change at any time.

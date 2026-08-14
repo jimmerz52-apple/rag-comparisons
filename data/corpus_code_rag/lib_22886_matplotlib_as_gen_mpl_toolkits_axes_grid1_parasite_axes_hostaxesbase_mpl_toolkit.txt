@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.hostaxesbase#mpl_toolkits.axes_grid1.parasite_axes.HostAxesBase.twinx
+
+twinx(axes_class=None)[source]
+ 
+Create a twin of Axes with a shared x-axis but independent y-axis. The y-axis of self will have ticks on the left and the returned axes will have ticks on the right.

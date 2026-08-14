@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.timedelta.resolution
+
+timedelta.resolution  
+The smallest possible difference between non-equal timedelta objects, timedelta(microseconds=1).

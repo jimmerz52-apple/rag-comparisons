@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.ElementTree.getroot
+
+getroot()  
+Returns the root element for this tree.

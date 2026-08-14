@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.day.copy
+
+pandas.tseries.offsets.Day.copy   Day.copy()

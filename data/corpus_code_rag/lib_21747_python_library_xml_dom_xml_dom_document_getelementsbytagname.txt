@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Document.getElementsByTagName
+
+Document.getElementsByTagName(tagName)  
+Search for all descendants (direct children, children’s children, etc.) with a particular element type name.

@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.release_mouse
+
+release_mouse(ax)[source]
+ 
+Release the mouse grab held by the Axes ax. Usually called by the widgets. It is ok to call this even if ax doesn't have the mouse grab currently.

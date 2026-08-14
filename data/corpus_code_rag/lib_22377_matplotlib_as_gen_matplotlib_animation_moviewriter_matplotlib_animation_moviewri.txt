@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriter#matplotlib.animation.MovieWriter.bin_path
+
+classmethodbin_path()[source]
+ 
+Return the binary path to the commandline tool used by a specific subclass. This is a class method so that the tool can be looked for before making a particular MovieWriter subclass available.

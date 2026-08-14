@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.flush
+
+flush()  
+Write any pending changes to the filesystem. For some Mailbox subclasses, changes are always written immediately and flush() does nothing, but you should still make a habit of calling this method.

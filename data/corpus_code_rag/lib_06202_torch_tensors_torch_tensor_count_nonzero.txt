@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.count_nonzero
+
+count_nonzero(dim=None) → Tensor  
+See torch.count_nonzero()

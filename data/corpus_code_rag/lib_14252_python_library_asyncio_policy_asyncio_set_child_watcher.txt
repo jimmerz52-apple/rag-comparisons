@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.set_child_watcher
+
+asyncio.set_child_watcher(watcher)  
+Set the current child watcher to watcher for the current policy. watcher must implement methods defined in the AbstractChildWatcher base class.

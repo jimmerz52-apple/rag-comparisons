@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsrestclassifier#sklearn.multiclass.OneVsRestClassifier.decision_function
+
+decision_function(X) [source]
+ 
+Returns the distance of each sample from the decision boundary for each class. This can only be used with estimators which implement the decision_function method.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Tarray-like of shape (n_samples, n_classes) or (n_samples,) for binary classification. 
+
+ Changed in version 0.19: output shape changed to (n_samples,) to conform to scikit-learn conventions for binary classification.

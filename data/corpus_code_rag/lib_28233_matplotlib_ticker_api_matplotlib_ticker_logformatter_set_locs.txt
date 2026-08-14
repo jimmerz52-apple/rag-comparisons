@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogFormatter.set_locs
+
+set_locs(locs=None)[source]
+ 
+Use axis view limits to control which ticks are labeled. The locs parameter is ignored in the present algorithm.

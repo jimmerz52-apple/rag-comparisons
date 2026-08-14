@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator.anchoredlocatorbase#mpl_toolkits.axes_grid1.inset_locator.AnchoredLocatorBase.__call__
+
+__call__(ax, renderer)[source]
+ 
+Call self as a function.

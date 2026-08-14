@@ -1,0 +1,17 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.add_artist
+
+add_artist(artist, clip=False)[source]
+ 
+Add an Artist to the figure. Usually artists are added to Axes objects using Axes.add_artist; this method can be used in the rare cases where one needs to add artists directly to the figure instead.  Parameters 
+ 
+artistArtist
+
+
+The artist to add to the figure. If the added artist has no transform previously set, its transform will be set to figure.transSubfigure.  
+clipbool, default: False
+
+
+Whether the added artist should be clipped by the figure patch.    Returns 
+ Artist
+
+The added artist.

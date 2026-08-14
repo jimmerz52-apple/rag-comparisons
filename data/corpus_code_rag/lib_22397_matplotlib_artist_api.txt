@@ -1,0 +1,78 @@
+# matplotlib.artist_api
+
+matplotlib.artist  Inheritance Diagrams                                                                                 
+Artist class   classmatplotlib.artist.Artist[source]
+ 
+Abstract base class for objects that render into a FigureCanvas. Typically, all visible elements in a figure are subclasses of Artist. 
+  Interactive  
+Artist.add_callback Add a callback function that will be called whenever one of the Artist's properties changes.  
+Artist.remove_callback Remove a callback based on its observer id.  
+Artist.pchanged Call all of the registered callbacks.  
+Artist.get_cursor_data Return the cursor data for a given event.  
+Artist.format_cursor_data Return a string representation of data.  
+Artist.mouseover If this property is set to True, the artist will be queried for custom context information when the mouse cursor moves over it.  
+Artist.contains Test whether the artist contains the mouse event.  
+Artist.pick Process a pick event.  
+Artist.pickable Return whether the artist is pickable.  
+Artist.set_picker Define the picking behavior of the artist.  
+Artist.get_picker Return the picking behavior of the artist.     Clipping  
+Artist.set_clip_on Set whether the artist uses clipping.  
+Artist.get_clip_on Return whether the artist uses clipping.  
+Artist.set_clip_box Set the artist's clip Bbox.  
+Artist.get_clip_box Return the clipbox.  
+Artist.set_clip_path Set the artist's clip path.  
+Artist.get_clip_path Return the clip path.     Bulk Properties  
+Artist.update Update this artist's properties from the dict props.  
+Artist.update_from Copy properties from other to self.  
+Artist.properties Return a dictionary of all the properties of the artist.  
+Artist.set Set multiple properties at once.     Drawing  
+Artist.draw Draw the Artist (and its children) using the given renderer.  
+Artist.set_animated Set whether the artist is intended to be used in an animation.  
+Artist.get_animated Return whether the artist is animated.  
+Artist.set_alpha Set the alpha value used for blending - not supported on all backends.  
+Artist.get_alpha Return the alpha value used for blending - not supported on all backends.  
+Artist.set_snap Set the snapping behavior.  
+Artist.get_snap Return the snap setting.  
+Artist.set_visible Set the artist's visibility.  
+Artist.get_visible Return the visibility.  
+Artist.zorder   
+Artist.set_zorder Set the zorder for the artist.  
+Artist.get_zorder Return the artist's zorder.  
+Artist.set_agg_filter Set the agg filter.  
+Artist.set_sketch_params Set the sketch parameters.  
+Artist.get_sketch_params Return the sketch parameters for the artist.  
+Artist.set_rasterized Force rasterized (bitmap) drawing for vector graphics output.  
+Artist.get_rasterized Return whether the artist is to be rasterized.  
+Artist.set_path_effects Set the path effects.  
+Artist.get_path_effects   
+Artist.get_agg_filter Return filter function to be used for agg filter.  
+Artist.get_window_extent Get the artist's bounding box in display space.  
+Artist.get_transformed_clip_path_and_affine Return the clip path with the non-affine part of its transformation applied, and the remaining affine part of its transformation.     Figure and Axes  
+Artist.remove Remove the artist from the figure if possible.  
+Artist.axes The Axes instance the artist resides in, or None.  
+Artist.set_figure Set the Figure instance the artist belongs to.  
+Artist.get_figure Return the Figure instance the artist belongs to.     Children  
+Artist.get_children Return a list of the child Artists of this Artist.  
+Artist.findobj Find artist objects.     Transform  
+Artist.set_transform Set the artist transform.  
+Artist.get_transform Return the Transform instance used by this artist.  
+Artist.is_transform_set Return whether the Artist has an explicitly set transform.     Units  
+Artist.convert_xunits Convert x using the unit type of the xaxis.  
+Artist.convert_yunits Convert y using the unit type of the yaxis.  
+Artist.have_units Return whether units are set on any axis.     Metadata  
+Artist.set_gid Set the (group) id for the artist.  
+Artist.get_gid Return the group id.  
+Artist.set_label Set a label that will be displayed in the legend.  
+Artist.get_label Return the label used for this artist in the legend.  
+Artist.set_url Set the url for the artist.  
+Artist.get_url Return the url.     Miscellaneous  
+Artist.sticky_edges x and y sticky edge lists for autoscaling.  
+Artist.set_in_layout Set if artist is to be included in layout calculations, E.g.  
+Artist.get_in_layout Return boolean flag, True if artist is included in layout calculations.  
+Artist.stale Whether the artist is 'stale' and needs to be re-drawn for the output to match the internal state of the artist.      Functions  
+allow_rasterization Decorator for Artist.draw method.  
+get Return the value of an Artist's property, or print all of them.  
+getp Return the value of an Artist's property, or print all of them.  
+setp Set one or more properties on an Artist, or list allowed values.  
+kwdoc Inspect an Artist class (using ArtistInspector) and return information about its settable properties and their current values.  
+ArtistInspector A helper class to inspect an Artist and return information about its settable properties and their current values.

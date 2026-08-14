@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.update_scalarmappable
+
+update_scalarmappable()[source]
+ 
+Update colors from the scalar mappable array, if any. Assign colors to edges and faces based on the array and/or colors that were directly set, as appropriate.

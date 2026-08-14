@@ -1,0 +1,4 @@
+# python.library.shutil#shutil.unregister_archive_format
+
+shutil.unregister_archive_format(name)  
+Remove the archive format name from the list of supported formats.

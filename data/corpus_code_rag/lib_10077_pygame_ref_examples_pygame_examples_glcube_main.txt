@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.glcube.main
+
+glcube.main() 
+ display an animated 3D cube using OpenGL glcube.main() -> None  Using PyOpenGL and pygame, this creates a spinning 3D multicolored cube.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.copy
+
+tf.experimental.numpy.copy TensorFlow variant of NumPy's copy. 
+tf.experimental.numpy.copy(
+    a
+)
+ Unsupported arguments: order, subok. See the NumPy documentation for numpy.copy.

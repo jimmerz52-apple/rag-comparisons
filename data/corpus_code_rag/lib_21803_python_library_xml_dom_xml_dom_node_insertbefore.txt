@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.insertBefore
+
+Node.insertBefore(newChild, refChild)  
+Insert a new child node before an existing child. It must be the case that refChild is a child of this node; if not, ValueError is raised. newChild is returned. If refChild is None, it inserts newChild at the end of the children’s list.

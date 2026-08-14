@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Accept.values
+
+values()  
+Iterate over all values.

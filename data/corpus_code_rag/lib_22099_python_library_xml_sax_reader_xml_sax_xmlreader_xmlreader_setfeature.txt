@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.setFeature
+
+XMLReader.setFeature(featurename, value)  
+Set the featurename to value. If the feature is not recognized, SAXNotRecognizedException is raised. If the feature or its setting is not supported by the parser, SAXNotSupportedException is raised.

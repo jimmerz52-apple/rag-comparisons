@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.cross
+
+audioop.cross(fragment, width)  
+Return the number of zero crossings in the fragment passed as an argument.

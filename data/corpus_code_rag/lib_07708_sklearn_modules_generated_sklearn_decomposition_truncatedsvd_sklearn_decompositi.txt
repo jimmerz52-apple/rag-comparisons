@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.truncatedsvd#sklearn.decomposition.TruncatedSVD.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Transform X back to its original space. Returns an array X_original whose transform would be X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_components) 
+
+New data.    Returns 
+ 
+X_originalndarray of shape (n_samples, n_features) 
+
+Note that this is always a dense array.

@@ -1,0 +1,22 @@
+# python.library.ssl#ssl.SSLSocket.getpeercert
+
+SSLSocket.getpeercert(binary_form=False)  
+If there is no certificate for the peer on the other end of the connection, return None. If the SSL handshake hasn’t been done yet, raise ValueError. If the binary_form parameter is False, and a certificate was received from the peer, this method returns a dict instance. If the certificate was not validated, the dict is empty. If the certificate was validated, it returns a dict with several keys, amongst them subject (the principal for which the certificate was issued) and issuer (the principal issuing the certificate). If a certificate contains an instance of the Subject Alternative Name extension (see RFC 3280), there will also be a subjectAltName key in the dictionary. The subject and issuer fields are tuples containing the sequence of relative distinguished names (RDNs) given in the certificate’s data structure for the respective fields, and each RDN is a sequence of name-value pairs. Here is a real-world example: {'issuer': ((('countryName', 'IL'),),
+            (('organizationName', 'StartCom Ltd.'),),
+            (('organizationalUnitName',
+              'Secure Digital Certificate Signing'),),
+            (('commonName',
+              'StartCom Class 2 Primary Intermediate Server CA'),)),
+ 'notAfter': 'Nov 22 08:15:19 2013 GMT',
+ 'notBefore': 'Nov 21 03:09:52 2011 GMT',
+ 'serialNumber': '95F0',
+ 'subject': ((('description', '571208-SLe257oHY9fVQ07Z'),),
+             (('countryName', 'US'),),
+             (('stateOrProvinceName', 'California'),),
+             (('localityName', 'San Francisco'),),
+             (('organizationName', 'Electronic Frontier Foundation, Inc.'),),
+             (('commonName', '*.eff.org'),),
+             (('emailAddress', 'hostmaster@eff.org'),)),
+ 'subjectAltName': (('DNS', '*.eff.org'), ('DNS', 'eff.org')),
+ 'version': 3}
+  Note To validate a certificate for a particular service, you can use the match_hostname() function.  If the binary_form parameter is True, and a certificate was provided, this method returns the DER-encoded form of the entire certificate as a sequence of bytes, or None if the peer did not provide a certificate. Whether the peer provides a certificate depends on the SSL socket’s role:  for a client SSL socket, the server will always provide a certificate, regardless of whether validation was required; for a server SSL socket, the client will only provide a certificate when requested by the server; therefore getpeercert() will return None if you used CERT_NONE (rather than CERT_OPTIONAL or CERT_REQUIRED).   Changed in version 3.2: The returned dictionary includes additional items such as issuer and notBefore.   Changed in version 3.4: ValueError is raised when the handshake isn’t done. The returned dictionary includes additional X509v3 extension items such as crlDistributionPoints, caIssuers and OCSP URIs.   Changed in version 3.9: IPv6 address strings no longer have a trailing new line.

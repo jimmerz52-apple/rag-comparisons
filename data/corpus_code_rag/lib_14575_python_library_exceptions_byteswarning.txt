@@ -1,0 +1,4 @@
+# python.library.exceptions#BytesWarning
+
+exception BytesWarning  
+Base class for warnings related to bytes and bytearray.

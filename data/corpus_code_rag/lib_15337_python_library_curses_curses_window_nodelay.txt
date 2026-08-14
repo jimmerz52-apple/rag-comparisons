@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.nodelay
+
+window.nodelay(flag)  
+If flag is True, getch() will be non-blocking.

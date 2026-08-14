@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.encoding.escape_uri_path
+
+escape_uri_path(path) [source]
+ 
+Escapes the unsafe characters from the path portion of a Uniform Resource Identifier (URI).

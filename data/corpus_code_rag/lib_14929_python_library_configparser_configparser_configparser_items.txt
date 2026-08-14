@@ -1,0 +1,5 @@
+# python.library.configparser#configparser.ConfigParser.items
+
+items(raw=False, vars=None)  
+items(section, raw=False, vars=None)  
+When section is not given, return a list of section_name, section_proxy pairs, including DEFAULTSECT. Otherwise, return a list of name, value pairs for the options in the given section. Optional arguments have the same meaning as for the get() method.  Changed in version 3.8: Items present in vars no longer appear in the result. The previous behaviour mixed actual parser options with variables provided for interpolation.

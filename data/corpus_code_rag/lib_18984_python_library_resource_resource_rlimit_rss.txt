@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_RSS
+
+resource.RLIMIT_RSS  
+The maximum resident set size that should be made available to the process.

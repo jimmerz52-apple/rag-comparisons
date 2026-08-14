@@ -1,0 +1,3 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.FigureCanvasPS.print_eps
+
+print_eps(outfile, *args, **kwargs)[source]

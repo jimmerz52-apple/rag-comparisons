@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.linear_model.poissonregressor#sklearn.linear_model.PoissonRegressor.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit a Generalized Linear Model.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+selfreturns an instance of self.

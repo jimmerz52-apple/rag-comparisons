@@ -1,0 +1,14 @@
+# pandas.reference.api.pandas.index.insert
+
+pandas.Index.insert   Index.insert(loc, item)[source]
+ 
+Make new Index inserting new item at location. Follows Python numpy.insert semantics for negative values.  Parameters 
+ 
+loc:int
+
+
+item:object
+
+  Returns 
+ 
+new_index:Index

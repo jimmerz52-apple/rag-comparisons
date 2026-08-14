@@ -1,0 +1,4 @@
+# python.library.locale#locale.THOUSEP
+
+locale.THOUSEP  
+Get the separator character for thousands (groups of three digits).

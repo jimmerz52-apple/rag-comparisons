@@ -1,0 +1,4 @@
+# python.library.functions#frozenset
+
+class frozenset([iterable])  
+Return a new frozenset object, optionally with elements taken from iterable. frozenset is a built-in class. See frozenset and Set Types — set, frozenset for documentation about this class. For other containers see the built-in set, list, tuple, and dict classes, as well as the collections module.

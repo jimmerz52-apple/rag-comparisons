@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOBase.newlines
+
+newlines  
+A string, a tuple of strings, or None, indicating the newlines translated so far. Depending on the implementation and the initial constructor flags, this may not be available.

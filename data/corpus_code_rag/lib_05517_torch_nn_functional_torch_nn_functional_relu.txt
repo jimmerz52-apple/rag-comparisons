@@ -1,0 +1,4 @@
+# torch.nn.functional#torch.nn.functional.relu_
+
+torch.nn.functional.relu_(input) → Tensor  
+In-place version of relu().

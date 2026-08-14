@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.polynomial.legendre.legendre.__call__
+
+numpy.polynomial.legendre.Legendre.__call__ method   polynomial.legendre.Legendre.__call__(arg)[source]
+ 
+Call self as a function.

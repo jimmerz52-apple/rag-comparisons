@@ -1,0 +1,4 @@
+# python.library.gc#gc.DEBUG_STATS
+
+gc.DEBUG_STATS  
+Print statistics during collection. This information can be useful when tuning the collection frequency.

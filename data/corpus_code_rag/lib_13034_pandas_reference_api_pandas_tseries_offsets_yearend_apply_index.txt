@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.yearend.apply_index
+
+pandas.tseries.offsets.YearEnd.apply_index   YearEnd.apply_index(other)

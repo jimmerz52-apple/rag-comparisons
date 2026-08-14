@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ETags.as_set
+
+as_set(include_weak=False)  
+Convert the ETags object into a python set. Per default all the weak etags are not part of this set.

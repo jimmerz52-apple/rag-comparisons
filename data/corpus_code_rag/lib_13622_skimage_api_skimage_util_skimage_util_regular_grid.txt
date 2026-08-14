@@ -1,0 +1,37 @@
+# skimage.api.skimage.util#skimage.util.regular_grid
+
+skimage.util.regular_grid(ar_shape, n_points) [source]
+ 
+Find n_points regularly spaced along ar_shape. The returned points (as slices) should be as close to cubically-spaced as possible. Essentially, the points are spaced by the Nth root of the input array size, where N is the number of dimensions. However, if an array dimension cannot fit a full step size, it is “discarded”, and the computation is done for only the remaining dimensions.  Parameters 
+ 
+ar_shapearray-like of ints 
+
+The shape of the space embedding the grid. len(ar_shape) is the number of dimensions.  
+n_pointsint 
+
+The (approximate) number of points to embed in the space.    Returns 
+ 
+slicestuple of slice objects 
+
+A slice along each dimension of ar_shape, such that the intersection of all the slices give the coordinates of regularly spaced points.  Changed in version 0.14.1: In scikit-image 0.14.1 and 0.15, the return type was changed from a list to a tuple to ensure compatibility with Numpy 1.15 and higher. If your code requires the returned result to be a list, you may convert the output of this function to a list with: >>> result = list(regular_grid(ar_shape=(3, 20, 40), n_points=8))
+      Examples >>> ar = np.zeros((20, 40))
+>>> g = regular_grid(ar.shape, 8)
+>>> g
+(slice(5, None, 10), slice(5, None, 10))
+>>> ar[g] = 1
+>>> ar.sum()
+8.0
+>>> ar = np.zeros((20, 40))
+>>> g = regular_grid(ar.shape, 32)
+>>> g
+(slice(2, None, 5), slice(2, None, 5))
+>>> ar[g] = 1
+>>> ar.sum()
+32.0
+>>> ar = np.zeros((3, 20, 40))
+>>> g = regular_grid(ar.shape, 8)
+>>> g
+(slice(1, None, 3), slice(5, None, 10), slice(5, None, 10))
+>>> ar[g] = 1
+>>> ar.sum()
+8.0

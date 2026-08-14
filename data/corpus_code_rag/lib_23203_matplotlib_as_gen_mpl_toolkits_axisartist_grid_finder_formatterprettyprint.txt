@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_finder.formatterprettyprint
+
+mpl_toolkits.axisartist.grid_finder.FormatterPrettyPrint   classmpl_toolkits.axisartist.grid_finder.FormatterPrettyPrint(useMathText=True)[source]
+ 
+Bases: object   __call__(direction, factor, values)[source]
+ 
+Call self as a function.

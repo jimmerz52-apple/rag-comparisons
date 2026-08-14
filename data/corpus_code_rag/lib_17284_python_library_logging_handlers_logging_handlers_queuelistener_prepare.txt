@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueListener.prepare
+
+prepare(record)  
+Prepare a record for handling. This implementation just returns the passed-in record. You may want to override this method if you need to do any custom marshalling or manipulation of the record before passing it to the handlers.

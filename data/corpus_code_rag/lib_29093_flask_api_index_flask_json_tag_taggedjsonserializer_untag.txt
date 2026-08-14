@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer.untag
+
+untag(value)  
+Convert a tagged representation back to the original type.  Parameters 
+value (Dict[str, Any]) –   Return type 
+Any

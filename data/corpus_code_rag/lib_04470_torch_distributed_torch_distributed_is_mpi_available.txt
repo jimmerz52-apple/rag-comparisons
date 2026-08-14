@@ -1,0 +1,5 @@
+# torch.distributed#torch.distributed.is_mpi_available
+
+torch.distributed.is_mpi_available() [source]
+ 
+Checks if the MPI backend is available.

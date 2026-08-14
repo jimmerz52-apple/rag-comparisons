@@ -1,0 +1,3 @@
+# django.ref.models.expressions#django.db.models.Value
+
+class Value(value, output_field=None)

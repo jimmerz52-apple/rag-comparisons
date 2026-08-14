@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.milli.is_year_end
+
+pandas.tseries.offsets.Milli.is_year_end   Milli.is_year_end()

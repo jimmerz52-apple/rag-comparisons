@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.fill_
+
+fill_(value) → Tensor  
+Fills self tensor with the specified value.

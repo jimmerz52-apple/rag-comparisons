@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.neighbors.distancemetric#sklearn.neighbors.DistanceMetric.get_metric
+
+get_metric()  
+Get the given distance metric from the string identifier. See the docstring of DistanceMetric for a list of available metrics.  Parameters 
+ 
+metricstring or class name 
+
+The distance metric to use  **kwargs
+
+additional arguments will be passed to the requested metric

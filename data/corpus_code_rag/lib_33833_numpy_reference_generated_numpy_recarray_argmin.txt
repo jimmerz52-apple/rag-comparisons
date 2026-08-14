@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.argmin
+
+numpy.recarray.argmin method   recarray.argmin(axis=None, out=None)
+ 
+Return indices of the minimum values along the given axis. Refer to numpy.argmin for detailed documentation.  See also  numpy.argmin
+
+equivalent function

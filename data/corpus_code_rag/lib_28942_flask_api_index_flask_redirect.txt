@@ -1,0 +1,9 @@
+# flask.api.index#flask.redirect
+
+flask.redirect(location, code=302, Response=None)  
+Returns a response object (a WSGI application) that, if called, redirects the client to the target location. Supported codes are 301, 302, 303, 305, 307, and 308. 300 is not supported because it’s not a real redirect and 304 because it’s the answer for a request with a request with defined If-Modified-Since headers.  Changelog New in version 0.10: The class used for the Response object can now be passed in.   New in version 0.6: The location can now be a unicode string that is encoded using the iri_to_uri() function.   Parameters 
+ 
+location (str) – the location the response should redirect to. 
+code (int) – the redirect status code. defaults to 302. 
+Response (class) – a Response class to use when instantiating a response. The default is werkzeug.wrappers.Response if unspecified.   Return type 
+Response

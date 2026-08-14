@@ -1,0 +1,10 @@
+# matplotlib.dates_api#matplotlib.dates.get_epoch
+
+matplotlib.dates.get_epoch()[source]
+ 
+Get the epoch used by dates.  Returns 
+ 
+epochstr
+
+
+String for the epoch (parsable by numpy.datetime64).

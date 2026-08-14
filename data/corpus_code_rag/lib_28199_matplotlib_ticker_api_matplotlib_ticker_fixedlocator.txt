@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.FixedLocator
+
+classmatplotlib.ticker.FixedLocator(locs, nbins=None)[source]
+ 
+Bases: matplotlib.ticker.Locator Tick locations are fixed. If nbins is not None, the array of possible positions will be subsampled to keep the number of ticks <= nbins +1. The subsampling will be done so as to include the smallest absolute value; for example, if zero is included in the array of possibilities, then it is guaranteed to be one of the chosen ticks.   set_params(nbins=None)[source]
+ 
+Set parameters within this locator. 
+   tick_values(vmin, vmax)[source]
+ 
+Return the locations of the ticks.  Note Because the values are fixed, vmin and vmax are not used in this method.

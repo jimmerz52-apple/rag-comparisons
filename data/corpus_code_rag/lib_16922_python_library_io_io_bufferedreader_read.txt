@@ -1,0 +1,4 @@
+# python.library.io#io.BufferedReader.read
+
+read([size])  
+Read and return size bytes, or if size is not given or negative, until EOF or if the read call would block in non-blocking mode.

@@ -1,0 +1,6 @@
+# python.library.email.headerregistry#email.headerregistry.ContentDispositionHeader
+
+class email.headerregistry.ContentDispositionHeader  
+A ParameterizedMIMEHeader class that handles the Content-Disposition header.  
+content_disposition  
+inline and attachment are the only valid values in common use.

@@ -1,0 +1,10 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.fromfile
+
+fromfile(file_h)  
+   
+Parameters:
+
+file_h (a Python file object or a string path to the file) – input file that contains spatial data  
+Return type:
+a GEOSGeometry corresponding to the spatial data in the file   Example: >>> from django.contrib.gis.geos import fromfile
+>>> g = fromfile('/home/bob/geom.wkt')

@@ -1,0 +1,5 @@
+# python.library.operator#operator.and_
+
+operator.and_(a, b)  
+operator.__and__(a, b)  
+Return the bitwise and of a and b.

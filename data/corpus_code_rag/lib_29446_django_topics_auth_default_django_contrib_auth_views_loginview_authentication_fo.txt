@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LoginView.authentication_form
+
+authentication_form  
+A callable (typically a form class) to use for authentication. Defaults to AuthenticationForm.

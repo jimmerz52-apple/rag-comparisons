@@ -1,0 +1,62 @@
+# torch.autograd#torch.autograd.profiler.profile
+
+class torch.autograd.profiler.profile(enabled=True, *, use_cuda=False, record_shapes=False, with_flops=False, profile_memory=False, with_stack=False, use_kineto=False, use_cpu=True) [source]
+ 
+Context manager that manages autograd profiler state and holds a summary of results. Under the hood it just records events of functions being executed in C++ and exposes those events to Python. You can wrap any code into it and it will only report runtime of PyTorch functions. Note: profiler is thread local and is automatically propagated into the async tasks  Parameters 
+ 
+enabled (bool, optional) – Setting this to False makes this context manager a no-op. 
+use_cuda (bool, optional) – Enables timing of CUDA events as well using the cudaEvent API. Adds approximately 4us of overhead to each tensor operation. 
+record_shapes (bool, optional) – If shapes recording is set, information about input dimensions will be collected. This allows one to see which dimensions have been used under the hood and further group by them using prof.key_averages(group_by_input_shape=True). Please note that shape recording might skew your profiling data. It is recommended to use separate runs with and without shape recording to validate the timing. Most likely the skew will be negligible for bottom most events (in a case of nested function calls). But for higher level functions the total self cpu time might be artificially increased because of the shape collection. 
+with_flops (bool, optional) – If with_flops is set, the profiler will estimate the FLOPS (floating pointer operations per second) value using the operator’s input shape and total time. This allows one to estimate the hardware performance. Currently, this option only works for the matrix multiplication and 2D convolution operators. 
+profile_memory (bool, optional) – track tensor memory allocation/deallocation. 
+with_stack (bool, optional) – record source information (file and line number) for the ops. 
+use_kineto (bool, optional) – experimental, enable profiling with Kineto profiler. 
+use_cpu (bool, optional) – profile CPU events; setting to False requires use_kineto=True and can be used to lower the overhead for GPU-only profiling.    Example >>> x = torch.randn((1, 1), requires_grad=True)
+>>> with torch.autograd.profiler.profile() as prof:
+>>>     for _ in range(100):  # any normal python code, really!
+>>>         y = x ** 2
+>>          y.backward()
+>>> # NOTE: some columns were removed for brevity
+>>> print(prof.key_averages().table(sort_by="self_cpu_time_total"))
+-----------------------------------  ---------------  ---------------  ---------------
+Name                                 Self CPU total   CPU time avg     Number of Calls
+-----------------------------------  ---------------  ---------------  ---------------
+mul                                  32.048ms         32.048ms         200
+pow                                  27.041ms         27.041ms         200
+PowBackward0                         9.727ms          55.483ms         100
+torch::autograd::AccumulateGrad      9.148ms          9.148ms          100
+torch::autograd::GraphRoot           691.816us        691.816us        100
+-----------------------------------  ---------------  ---------------  ---------------
+  
+export_chrome_trace(path) [source]
+ 
+Exports an EventList as a Chrome tracing tools file. The checkpoint can be later loaded and inspected under chrome://tracing URL.  Parameters 
+path (str) – Path where the trace will be written.   
+  
+key_averages(group_by_input_shape=False, group_by_stack_n=0) [source]
+ 
+Averages all function events over their keys.  Parameters 
+ 
+group_by_input_shapes – group entries by 
+name, input shapes) rather than just event name. ((event) –  
+is useful to see which input shapes contribute to the runtime (This) –  
+most and may help with size-specific optimizations or (the) –  
+the best candidates for quantization (choosing) –  
+group_by_stack_n – group by top n stack trace entries   Returns 
+An EventList containing FunctionEventAvg objects.   
+  
+property self_cpu_time_total  
+Returns total time spent on CPU obtained as a sum of all self times across all the events. 
+  
+table(sort_by=None, row_limit=100, max_src_column_width=75, header=None, top_level_events_only=False) [source]
+ 
+Prints an EventList as a nicely formatted table.  Parameters 
+ 
+sort_by (str, optional) – Attribute used to sort entries. By default they are printed in the same order as they were registered. Valid keys include: cpu_time, cuda_time, cpu_time_total, cuda_time_total, cpu_memory_usage, cuda_memory_usage, self_cpu_memory_usage, self_cuda_memory_usage, count. 
+top_level_events_only (bool, optional) – Boolean flag to determine the selection of events to display. If true, the profiler will only display events at top level like top-level invocation of python lstm, python add or other functions, nested events like low-level cpu/cuda ops events are omitted for profiler result readability.   Returns 
+A string containing the table.   
+  
+total_average() [source]
+ 
+Averages all events.  Returns 
+A FunctionEventAvg object.

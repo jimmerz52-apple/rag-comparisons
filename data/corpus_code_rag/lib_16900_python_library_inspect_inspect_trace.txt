@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.trace
+
+inspect.trace(context=1)  
+Return a list of frame records for the stack between the current frame and the frame in which an exception currently being handled was raised in. The first entry in the list represents the caller; the last entry represents where the exception was raised.  Changed in version 3.5: A list of named tuples FrameInfo(frame, filename, lineno, function, code_context, index) is returned.

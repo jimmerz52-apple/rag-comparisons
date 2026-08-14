@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.norm
+
+norm(p='fro', dim=None, keepdim=False, dtype=None) [source]
+ 
+See torch.norm()

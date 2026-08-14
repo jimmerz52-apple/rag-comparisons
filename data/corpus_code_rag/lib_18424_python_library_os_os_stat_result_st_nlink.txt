@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_nlink
+
+st_nlink  
+Number of hard links.

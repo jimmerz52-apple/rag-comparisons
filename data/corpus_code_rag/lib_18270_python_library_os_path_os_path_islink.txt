@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.islink
+
+os.path.islink(path)  
+Return True if path refers to an existing directory entry that is a symbolic link. Always False if symbolic links are not supported by the Python runtime.  Changed in version 3.6: Accepts a path-like object.

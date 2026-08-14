@@ -1,0 +1,3 @@
+# torch.onnx#torch.onnx.register_custom_op_symbolic
+
+torch.onnx.register_custom_op_symbolic(symbolic_name, symbolic_fn, opset_version) [source]

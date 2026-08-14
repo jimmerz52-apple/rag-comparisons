@@ -1,0 +1,38 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.join_by
+
+numpy.lib.recfunctions.join_by(key, r1, r2, jointype='inner', r1postfix='1', r2postfix='2', defaults=None, usemask=True, asrecarray=False)[source]
+ 
+Join arrays r1 and r2 on key key. The key should be either a string or a sequence of string corresponding to the fields used to join the array. An exception is raised if the key field cannot be found in the two input arrays. Neither r1 nor r2 should have any duplicates along key: the presence of duplicates will make the output quite unreliable. Note that duplicates are not looked for by the algorithm.  Parameters 
+ 
+key{string, sequence}
+
+
+A string or a sequence of strings corresponding to the fields used for comparison.  
+r1, r2arrays
+
+
+Structured arrays.  
+jointype{‘inner’, ‘outer’, ‘leftouter’}, optional
+
+
+If ‘inner’, returns the elements common to both r1 and r2. If ‘outer’, returns the common elements as well as the elements of r1 not in r2 and the elements of not in r2. If ‘leftouter’, returns the common elements and the elements of r1 not in r2.  
+r1postfixstring, optional
+
+
+String appended to the names of the fields of r1 that are present in r2 but absent of the key.  
+r2postfixstring, optional
+
+
+String appended to the names of the fields of r2 that are present in r1 but absent of the key.  
+defaults{dictionary}, optional
+
+
+Dictionary mapping field names to the corresponding default values.  
+usemask{True, False}, optional
+
+
+Whether to return a MaskedArray (or MaskedRecords is asrecarray==True) or a ndarray.  
+asrecarray{False, True}, optional
+
+
+Whether to return a recarray (or MaskedRecords if usemask==True) or just a flexible-type ndarray.     Notes  The output is sorted along the key. A temporary array is formed by dropping the fields not in the key for the two arrays and concatenating the result. This array is then sorted, and the common entries selected. The output is constructed by filling the fields with the selected entries. Matching is not preserved if there are some duplicates…

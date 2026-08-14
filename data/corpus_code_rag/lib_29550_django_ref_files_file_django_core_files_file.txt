@@ -1,0 +1,37 @@
+# django.ref.files.file#django.core.files.File
+
+class File(file_object, name=None) [source]
+ 
+The File class is a thin wrapper around a Python file object with some Django-specific additions. Internally, Django uses this class when it needs to represent a file. File objects have the following attributes and methods:  
+name  
+The name of the file including the relative path from MEDIA_ROOT. 
+  
+size  
+The size of the file in bytes. 
+  
+file  
+The underlying file object that this class wraps.  Be careful with this attribute in subclasses. Some subclasses of File, including ContentFile and FieldFile, may replace this attribute with an object other than a Python file object. In these cases, this attribute may itself be a File subclass (and not necessarily the same subclass). Whenever possible, use the attributes and methods of the subclass itself rather than the those of the subclass’s file attribute.  
+  
+mode  
+The read/write mode for the file. 
+  
+open(mode=None) [source]
+ 
+Open or reopen the file (which also does File.seek(0)). The mode argument allows the same values as Python’s built-in open(). When reopening a file, mode will override whatever mode the file was originally opened with; None means to reopen with the original mode. It can be used as a context manager, e.g. with file.open() as f:. 
+  
+__iter__() [source]
+ 
+Iterate over the file yielding one line at a time. 
+  
+chunks(chunk_size=None) [source]
+ 
+Iterate over the file yielding “chunks” of a given size. chunk_size defaults to 64 KB. This is especially useful with very large files since it allows them to be streamed off disk and avoids storing the whole file in memory. 
+  
+multiple_chunks(chunk_size=None) [source]
+ 
+Returns True if the file is large enough to require multiple chunks to access all of its content give some chunk_size. 
+  
+close() [source]
+ 
+Close the file. 
+ In addition to the listed methods, File exposes the following attributes and methods of its file object: encoding, fileno, flush, isatty, newlines, read, readinto, readline, readlines, seek, tell, truncate, write, writelines, readable(), writable(), and seekable().

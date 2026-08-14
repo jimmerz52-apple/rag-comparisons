@@ -1,0 +1,16 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.add_tool
+
+add_tool(name, tool, *args, **kwargs)[source]
+ 
+Add tool to ToolManager. If successful, adds a new event tool_trigger_{name} where {name} is the name of the tool; the event is fired every time the tool is triggered.  Parameters 
+ 
+namestr
+
+
+Name of the tool, treated as the ID, has to be unique.  
+toolclass_like, i.e. str or type
+
+
+Reference to find the class of the Tool to added.      See also  matplotlib.backend_tools.ToolBase
+
+The base class for tools.    Notes args and kwargs get passed directly to the tools constructor.

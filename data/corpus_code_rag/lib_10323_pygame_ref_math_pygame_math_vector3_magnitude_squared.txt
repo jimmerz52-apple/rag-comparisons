@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.magnitude_squared
+
+magnitude_squared() 
+ returns the squared Euclidean magnitude of the vector. magnitude_squared() -> float  calculates the magnitude of the vector which follows from the theorem: vec.magnitude_squared() == vec.x**2 + vec.y**2 + vec.z**2. This is faster than vec.magnitude() because it avoids the square root.

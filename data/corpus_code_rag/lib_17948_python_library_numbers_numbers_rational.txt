@@ -1,0 +1,9 @@
+# python.library.numbers#numbers.Rational
+
+class numbers.Rational  
+Subtypes Real and adds numerator and denominator properties, which should be in lowest terms. With these, it provides a default for float().  
+numerator  
+Abstract. 
+  
+denominator  
+Abstract.

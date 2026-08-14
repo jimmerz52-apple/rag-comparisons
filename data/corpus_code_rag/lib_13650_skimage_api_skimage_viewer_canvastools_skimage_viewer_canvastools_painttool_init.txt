@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.PaintTool.__init__
+
+__init__(manager, overlay_shape, radius=5, alpha=0.3, on_move=None, on_release=None, on_enter=None, rect_props=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

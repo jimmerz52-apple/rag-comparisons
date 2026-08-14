@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.longcomplex
+
+numpy.longcomplex[source]
+ 
+alias of numpy.clongdouble

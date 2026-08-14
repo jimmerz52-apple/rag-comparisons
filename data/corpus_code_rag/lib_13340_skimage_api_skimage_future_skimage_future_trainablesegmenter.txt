@@ -1,0 +1,42 @@
+# skimage.api.skimage.future#skimage.future.TrainableSegmenter
+
+class skimage.future.TrainableSegmenter(clf=None, features_func=None) [source]
+ 
+Bases: object Estimator for classifying pixels.  Parameters 
+ 
+clfclassifier object, optional 
+
+classifier object, exposing a fit and a predict method as in scikit-learn’s API, for example an instance of RandomForestClassifier or LogisticRegression classifier.  
+features_funcfunction, optional 
+
+function computing features on all pixels of the image, to be passed to the classifier. The output should be of shape (m_features, *labels.shape). If None, skimage.segmentation.multiscale_basic_features() is used.     Methods  
+fit(image, labels) Train classifier using partially labeled (annotated) image.  
+predict(image) Segment new image using trained internal classifier.    
+compute_features     
+__init__(clf=None, features_func=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+compute_features(image) [source]
+
+  
+fit(image, labels) [source]
+ 
+Train classifier using partially labeled (annotated) image.  Parameters 
+ 
+imagendarray 
+
+Input image, which can be grayscale or multichannel, and must have a number of dimensions compatible with self.features_func.  
+labelsndarray of ints 
+
+Labeled array of shape compatible with image (same shape for a single-channel image). Labels >= 1 correspond to the training set and label 0 to unlabeled pixels to be segmented.     
+  
+predict(image) [source]
+ 
+Segment new image using trained internal classifier.  Parameters 
+ 
+imagendarray 
+
+Input image, which can be grayscale or multichannel, and must have a number of dimensions compatible with self.features_func.    Raises 
+ 
+NotFittedError if self.clf has not been fitted yet (use self.fit).

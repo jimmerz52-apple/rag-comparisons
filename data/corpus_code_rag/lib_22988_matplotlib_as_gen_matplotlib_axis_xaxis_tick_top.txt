@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axis.xaxis.tick_top
+
+matplotlib.axis.XAxis.tick_top   XAxis.tick_top()[source]
+ 
+Move ticks and ticklabels (if present) to the top of the axes. 
+  Examples using matplotlib.axis.XAxis.tick_top
+ 
+   Broken Axis   
+
+   Title positioning

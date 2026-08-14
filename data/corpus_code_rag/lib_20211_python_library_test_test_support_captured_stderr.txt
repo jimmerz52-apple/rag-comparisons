@@ -1,0 +1,16 @@
+# python.library.test#test.support.captured_stderr
+
+test.support.captured_stdin()  
+test.support.captured_stdout()  
+test.support.captured_stderr()  
+A context managers that temporarily replaces the named stream with io.StringIO object. Example use with output streams: with captured_stdout() as stdout, captured_stderr() as stderr:
+    print("hello")
+    print("error", file=sys.stderr)
+assert stdout.getvalue() == "hello\n"
+assert stderr.getvalue() == "error\n"
+ Example use with input stream: with captured_stdin() as stdin:
+    stdin.write('hello\n')
+    stdin.seek(0)
+    # call test code that consumes from sys.stdin
+    captured = input()
+self.assertEqual(captured, "hello")

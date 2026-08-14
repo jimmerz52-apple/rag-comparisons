@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectTemplateResponseMixin.template_name_suffix
+
+template_name_suffix  
+The suffix to append to the auto-generated candidate template name. Default suffix is _detail.

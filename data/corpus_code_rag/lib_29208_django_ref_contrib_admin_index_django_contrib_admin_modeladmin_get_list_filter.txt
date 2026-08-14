@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_list_filter
+
+ModelAdmin.get_list_filter(request)  
+The get_list_filter method is given the HttpRequest and is expected to return the same kind of sequence type as for the list_filter attribute.

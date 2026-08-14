@@ -1,0 +1,4 @@
+# python.library.os#os.EX_NOPERM
+
+os.EX_NOPERM  
+Exit code that means that there were insufficient permissions to perform the operation (but not intended for file system problems). Availability: Unix.

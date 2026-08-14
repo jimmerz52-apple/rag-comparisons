@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.score
+
+score(X, y=None, sample_weight=None) [source]
+ 
+Apply transforms, and score with the final estimator  Parameters 
+ 
+Xiterable 
+
+Data to predict on. Must fulfill input requirements of first step of the pipeline.  
+yiterable, default=None 
+
+Targets used for scoring. Must fulfill label requirements for all steps of the pipeline.  
+sample_weightarray-like, default=None 
+
+If not None, this argument is passed as sample_weight keyword argument to the score method of the final estimator.    Returns 
+ 
+scorefloat

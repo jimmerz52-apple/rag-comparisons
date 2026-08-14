@@ -1,0 +1,10 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea.set_offset
+
+set_offset(xy)[source]
+ 
+Set the offset of the container.  Parameters 
+ 
+xy(float, float)
+
+
+The (x, y) coordinates of the offset in display units.

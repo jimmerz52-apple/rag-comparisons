@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.attributecopier#mpl_toolkits.axisartist.axis_artist.AttributeCopier.get_attribute_from_ref_artist
+
+get_attribute_from_ref_artist(attr_name)[source]

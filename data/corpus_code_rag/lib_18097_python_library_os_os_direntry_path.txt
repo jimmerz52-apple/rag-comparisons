@@ -1,0 +1,5 @@
+# python.library.os#os.DirEntry.path
+
+path  
+The entry’s full path name: equivalent to os.path.join(scandir_path,
+entry.name) where scandir_path is the scandir() path argument. The path is only absolute if the scandir() path argument was absolute. If the scandir() path argument was a file descriptor, the path attribute is the same as the name attribute. The path attribute will be bytes if the scandir() path argument is of type bytes and str otherwise. Use fsdecode() to decode byte filenames.

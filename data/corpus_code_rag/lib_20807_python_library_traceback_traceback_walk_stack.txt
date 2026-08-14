@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.walk_stack
+
+traceback.walk_stack(f)  
+Walk a stack following f.f_back from the given frame, yielding the frame and line number for each frame. If f is None, the current stack is used. This helper is used with StackSummary.extract().  New in version 3.5.

@@ -1,0 +1,5 @@
+# python.library.dialog#tkinter.filedialog.askopenfilename
+
+tkinter.filedialog.askopenfilename(**options)  
+tkinter.filedialog.askopenfilenames(**options)  
+The above two functions create an Open dialog and return the selected filename(s) that correspond to existing file(s).

@@ -1,0 +1,12 @@
+# numpy.reference.generated.numpy.ufunc.nargs
+
+numpy.ufunc.nargs attribute   ufunc.nargs
+ 
+The number of arguments. Data attribute containing the number of arguments the ufunc takes, including optional ones. Notes Typically this value will be one more than what you might expect because all ufuncs take the optional “out” argument. Examples >>> np.add.nargs
+3
+>>> np.multiply.nargs
+3
+>>> np.power.nargs
+3
+>>> np.exp.nargs
+2

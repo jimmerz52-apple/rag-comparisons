@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.RegexField.strip
+
+strip  
+Defaults to False. If enabled, stripping will be applied before the regex validation.

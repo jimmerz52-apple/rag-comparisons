@@ -1,0 +1,11 @@
+# 941
+Task: 941
+
+# Write a function to count the elements in a list until an element is a tuple.
+def count_elim(num):
+  count_elim = 0
+  for n in num:
+    if isinstance(n, tuple):
+        break
+    count_elim += 1
+  return count_elim

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_dash_joinstyle
+
+get_dash_joinstyle()[source]
+ 
+Return the JoinStyle for dashed lines. See also set_dash_joinstyle.

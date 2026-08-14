@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.exists
+
+os.path.exists(path)  
+Return True if path refers to an existing path or an open file descriptor. Returns False for broken symbolic links. On some platforms, this function may return False if permission is not granted to execute os.stat() on the requested file, even if the path physically exists.  Changed in version 3.3: path can now be an integer: True is returned if it is an open file descriptor, False otherwise.   Changed in version 3.6: Accepts a path-like object.

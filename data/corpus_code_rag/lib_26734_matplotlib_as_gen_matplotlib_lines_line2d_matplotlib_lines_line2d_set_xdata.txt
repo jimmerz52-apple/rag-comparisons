@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_xdata
+
+set_xdata(x)[source]
+ 
+Set the data array for x.  Parameters 
+ 
+x1D array

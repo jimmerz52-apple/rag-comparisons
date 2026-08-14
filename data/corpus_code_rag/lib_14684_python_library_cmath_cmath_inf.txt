@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.inf
+
+cmath.inf  
+Floating-point positive infinity. Equivalent to float('inf').  New in version 3.6.

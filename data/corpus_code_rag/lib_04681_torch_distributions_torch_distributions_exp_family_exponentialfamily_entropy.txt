@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.exp_family.ExponentialFamily.entropy
+
+entropy() [source]
+ 
+Method to compute the entropy using Bregman divergence of the log normalizer.

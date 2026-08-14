@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.CERT_OPTIONAL
+
+ssl.CERT_OPTIONAL  
+Possible value for SSLContext.verify_mode, or the cert_reqs parameter to wrap_socket(). In client mode, CERT_OPTIONAL has the same meaning as CERT_REQUIRED. It is recommended to use CERT_REQUIRED for client-side sockets instead. In server mode, a client certificate request is sent to the client. The client may either ignore the request or send a certificate in order perform TLS client cert authentication. If the client chooses to send a certificate, it is verified. Any verification error immediately aborts the TLS handshake. Use of this setting requires a valid set of CA certificates to be passed, either to SSLContext.load_verify_locations() or as a value of the ca_certs parameter to wrap_socket().

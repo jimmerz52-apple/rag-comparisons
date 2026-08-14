@@ -1,0 +1,4 @@
+# python.library.stdtypes#frozenset.add
+
+add(elem)  
+Add element elem to the set.

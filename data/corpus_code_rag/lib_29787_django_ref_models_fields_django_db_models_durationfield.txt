@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.DurationField
+
+class DurationField(**options)

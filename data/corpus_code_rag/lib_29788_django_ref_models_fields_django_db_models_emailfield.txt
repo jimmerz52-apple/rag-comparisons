@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.EmailField
+
+class EmailField(max_length=254, **options)

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.FileFinder.find_spec
+
+find_spec(fullname, target=None)  
+Attempt to find the spec to handle fullname within path.  New in version 3.4.

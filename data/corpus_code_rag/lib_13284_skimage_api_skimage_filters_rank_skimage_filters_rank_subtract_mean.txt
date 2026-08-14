@@ -1,0 +1,32 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.subtract_mean
+
+skimage.filters.rank.subtract_mean(image, selem, out=None, mask=None, shift_x=False, shift_y=False, shift_z=False) [source]
+ 
+Return image subtracted from its local mean.  Parameters 
+ 
+image([P,] M, N) ndarray (uint8, uint16) 
+
+Input image.  
+selemndarray 
+
+The neighborhood expressed as an ndarray of 1’s and 0’s.  
+out([P,] M, N) array (same dtype as input) 
+
+If None, a new array is allocated.  
+maskndarray (integer or float), optional 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_y, shift_zint 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).    Returns 
+ 
+out([P,] M, N) ndarray (same dtype as input image) 
+
+Output image.     Notes Subtracting the mean value may introduce underflow. To compensate this potential underflow, the obtained difference is downscaled by a factor of 2 and shifted by n_bins / 2 - 1, the median value of the local histogram (n_bins = max(3, image.max()) +1 for 16-bits images and 256 otherwise). Examples >>> from skimage import data
+>>> from skimage.morphology import disk, ball
+>>> from skimage.filters.rank import subtract_mean
+>>> import numpy as np
+>>> img = data.camera()
+>>> volume = np.random.randint(0, 255, size=(10,10,10), dtype=np.uint8)
+>>> out = subtract_mean(img, disk(5))
+>>> out_vol = subtract_mean(volume, ball(5))

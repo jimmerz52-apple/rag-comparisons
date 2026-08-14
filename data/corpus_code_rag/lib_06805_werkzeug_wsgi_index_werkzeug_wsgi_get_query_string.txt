@@ -1,0 +1,6 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.get_query_string
+
+werkzeug.wsgi.get_query_string(environ)  
+Returns the QUERY_STRING from the WSGI environment. This also takes care of the WSGI decoding dance. The string returned will be restricted to ASCII characters.  Parameters 
+environ (WSGIEnvironment) – WSGI environment to get the query string from.  Return type 
+str    Changelog New in version 0.9.

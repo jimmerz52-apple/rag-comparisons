@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.get_user
+
+get_user(request)  
+Returns the user model instance associated with the given request’s session. It checks if the authentication backend stored in the session is present in AUTHENTICATION_BACKENDS. If so, it uses the backend’s get_user() method to retrieve the user model instance and then verifies the session by calling the user model’s get_session_auth_hash() method. Returns an instance of AnonymousUser if the authentication backend stored in the session is no longer in AUTHENTICATION_BACKENDS, if a user isn’t returned by the backend’s get_user() method, or if the session auth hash doesn’t validate.

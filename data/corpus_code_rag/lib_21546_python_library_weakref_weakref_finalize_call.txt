@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.finalize.__call__
+
+__call__()  
+If self is alive then mark it as dead and return the result of calling func(*args, **kwargs). If self is dead then return None.

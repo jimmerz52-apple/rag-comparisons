@@ -1,0 +1,4 @@
+# python.library.socket#socket.getservbyport
+
+socket.getservbyport(port[, protocolname])  
+Translate an Internet port number and protocol name to a service name for that service. The optional protocol name, if given, should be 'tcp' or 'udp', otherwise any protocol will match. Raises an auditing event socket.getservbyport with arguments port, protocolname.

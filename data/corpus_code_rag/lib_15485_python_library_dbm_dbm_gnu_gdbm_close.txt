@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.gnu.gdbm.close
+
+gdbm.close()  
+Close the gdbm database.

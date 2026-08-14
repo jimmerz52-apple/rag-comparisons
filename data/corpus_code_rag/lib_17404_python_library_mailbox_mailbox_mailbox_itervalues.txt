@@ -1,0 +1,6 @@
+# python.library.mailbox#mailbox.Mailbox.itervalues
+
+itervalues()  
+__iter__()  
+values()  
+Return an iterator over representations of all messages if called as itervalues() or __iter__() or return a list of such representations if called as values(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.  Note The behavior of __iter__() is unlike that of dictionaries, which iterate over keys.

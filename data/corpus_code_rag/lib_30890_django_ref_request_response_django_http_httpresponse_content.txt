@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.content
+
+HttpResponse.content  
+A bytestring representing the content, encoded from a string if necessary.

@@ -1,0 +1,7 @@
+# 948
+Task: 948
+
+# Write a function to get an item of a tuple.
+def get_item(tup1,index):
+  item = tup1[index]
+  return item

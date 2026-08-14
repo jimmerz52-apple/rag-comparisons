@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Array
+
+Array(typecode, sequence)  
+Create an array and return a proxy for it.

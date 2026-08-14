@@ -1,0 +1,3 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.labels
+
+labels(inline, inline_spacing)[source]

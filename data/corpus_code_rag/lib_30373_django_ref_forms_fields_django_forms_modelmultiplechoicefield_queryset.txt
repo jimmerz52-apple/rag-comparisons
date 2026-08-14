@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelMultipleChoiceField.queryset
+
+queryset  
+Same as ModelChoiceField.queryset.

@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.items
+
+items(multi=False)  
+Return an iterator of (key, value) pairs.  Parameters 
+multi – If set to True the iterator returned will have a pair for each value of each key. Otherwise it will only contain pairs for the first value of each key.

@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.top
+
+Panel.top()  
+Push panel to the top of the stack.

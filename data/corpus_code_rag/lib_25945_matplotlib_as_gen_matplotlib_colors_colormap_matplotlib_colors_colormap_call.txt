@@ -1,0 +1,20 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.__call__
+
+__call__(X, alpha=None, bytes=False)[source]
+ 
+ Parameters 
+ 
+Xfloat or int, ndarray or scalar
+
+
+The data value(s) to convert to RGBA. For floats, X should be in the interval [0.0, 1.0] to return the RGBA values X*100 percent along the Colormap line. For integers, X should be in the interval [0, Colormap.N) to return RGBA values indexed from the Colormap with index X.  
+alphafloat or array-like or None
+
+
+Alpha must be a scalar between 0 and 1, a sequence of such floats with shape matching X, or None.  
+bytesbool
+
+
+If False (default), the returned RGBA values will be floats in the interval [0, 1] otherwise they will be uint8s in the interval [0, 255].    Returns 
+ Tuple of RGBA values if X is scalar, otherwise an array of
+RGBA values with a shape of X.shape + (4, ).

@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.gettext
+
+gettext(message)  
+If a fallback has been set, forward gettext() to the fallback. Otherwise, return message. Overridden in derived classes.

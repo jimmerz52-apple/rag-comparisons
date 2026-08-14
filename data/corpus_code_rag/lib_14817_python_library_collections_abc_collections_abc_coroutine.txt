@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Coroutine
+
+class collections.abc.Coroutine  
+ABC for coroutine compatible classes. These implement the following methods, defined in Coroutine Objects: send(), throw(), and close(). Custom implementations must also implement __await__(). All Coroutine instances are also instances of Awaitable. See also the definition of coroutine.  Note In CPython, generator-based coroutines (generators decorated with types.coroutine() or asyncio.coroutine()) are awaitables, even though they do not have an __await__() method. Using isinstance(gencoro, Coroutine) for them will return False. Use inspect.isawaitable() to detect them.   New in version 3.5.

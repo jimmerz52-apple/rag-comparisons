@@ -1,0 +1,3 @@
+# django.topics.email#django.core.mail.mail_managers
+
+mail_managers(subject, message, fail_silently=False, connection=None, html_message=None)

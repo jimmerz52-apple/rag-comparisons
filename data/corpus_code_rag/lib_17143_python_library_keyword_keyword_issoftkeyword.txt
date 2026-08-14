@@ -1,0 +1,4 @@
+# python.library.keyword#keyword.issoftkeyword
+
+keyword.issoftkeyword(s)  
+Return True if s is a Python soft keyword.  New in version 3.9.

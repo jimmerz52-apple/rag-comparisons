@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AlterField
+
+class AlterField(model_name, name, field, preserve_default=True)

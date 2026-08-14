@@ -1,0 +1,4 @@
+# python.library.zoneinfo#zoneinfo.InvalidTZPathWarning
+
+exception zoneinfo.InvalidTZPathWarning  
+Raised when PYTHONTZPATH contains an invalid component that will be filtered out, such as a relative path.

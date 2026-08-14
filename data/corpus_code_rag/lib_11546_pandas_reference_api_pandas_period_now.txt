@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.period.now
+
+pandas.Period.now   Period.now()
+ 
+Return the period of now’s date.

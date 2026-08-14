@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.lines.vertexselector#matplotlib.lines.VertexSelector.process_selected
+
+process_selected(ind, xs, ys)[source]
+ 
+Default "do nothing" implementation of the process_selected method.  Parameters 
+ 
+indlist of int
+
+
+The indices of the selected vertices.  
+xs, ysarray-like
+
+
+The coordinates of the selected vertices.

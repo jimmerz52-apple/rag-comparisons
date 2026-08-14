@@ -1,0 +1,4 @@
+# python.library.array#array.array.tounicode
+
+array.tounicode()  
+Convert the array to a unicode string. The array must be a type 'u' array; otherwise a ValueError is raised. Use array.tobytes().decode(enc) to obtain a unicode string from an array of some other type.

@@ -1,0 +1,3 @@
+# django.topics.db.instrumentation#django.db.backends.base.DatabaseWrapper.execute_wrapper
+
+execute_wrapper(wrapper)

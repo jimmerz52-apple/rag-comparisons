@@ -1,0 +1,9 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.get_script_name
+
+werkzeug.wsgi.get_script_name(environ, charset='utf-8', errors='replace')  
+Return the SCRIPT_NAME from the WSGI environment and decode it unless charset is set to None.  Parameters 
+ 
+environ (WSGIEnvironment) – WSGI environment to get the path from. 
+charset (str) – The charset for the path, or None if no decoding should be performed. 
+errors (str) – The decoding error handling.   Return type 
+str    Changelog New in version 0.9.

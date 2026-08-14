@@ -1,0 +1,5 @@
+# torch.backends#torch.backends.cudnn.version
+
+torch.backends.cudnn.version() [source]
+ 
+Returns the version of cuDNN

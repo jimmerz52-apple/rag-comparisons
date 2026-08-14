@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.OffsetFrom.get_unit
+
+get_unit()[source]
+ 
+Return the unit for input to the transform used by __call__.

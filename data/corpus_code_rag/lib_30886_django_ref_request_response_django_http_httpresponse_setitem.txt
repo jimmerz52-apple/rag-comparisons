@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.__setitem__
+
+HttpResponse.__setitem__(header, value)  
+Sets the given header name to the given value. Both header and value should be strings.

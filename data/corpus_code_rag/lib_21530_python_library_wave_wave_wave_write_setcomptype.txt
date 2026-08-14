@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.setcomptype
+
+Wave_write.setcomptype(type, name)  
+Set the compression type and description. At the moment, only compression type NONE is supported, meaning no compression.

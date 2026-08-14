@@ -1,0 +1,17 @@
+# skimage.api.skimage.io#skimage.io.use_plugin
+
+skimage.io.use_plugin(name, kind=None) [source]
+ 
+Set the default plugin for a specified operation. The plugin will be loaded if it hasn’t been already.  Parameters 
+ 
+namestr 
+
+Name of plugin.  
+kind{‘imsave’, ‘imread’, ‘imshow’, ‘imread_collection’, ‘imshow_collection’}, optional 
+
+Set the plugin for this function. By default, the plugin is set for all functions.      See also  
+available_plugins 
+
+List of available plugins    Examples To use Matplotlib as the default image reader, you would write: >>> from skimage import io
+>>> io.use_plugin('matplotlib', 'imread')
+ To see a list of available plugins run io.available_plugins. Note that this lists plugins that are defined, but the full list may not be usable if your system does not have the required libraries installed.

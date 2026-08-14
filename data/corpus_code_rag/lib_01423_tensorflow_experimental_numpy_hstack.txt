@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.hstack
+
+tf.experimental.numpy.hstack TensorFlow variant of NumPy's hstack. 
+tf.experimental.numpy.hstack(
+    tup
+)
+ See the NumPy documentation for numpy.hstack.

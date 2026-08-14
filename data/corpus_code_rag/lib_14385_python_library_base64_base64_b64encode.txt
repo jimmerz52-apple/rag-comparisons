@@ -1,0 +1,4 @@
+# python.library.base64#base64.b64encode
+
+base64.b64encode(s, altchars=None)  
+Encode the bytes-like object s using Base64 and return the encoded bytes. Optional altchars must be a bytes-like object of at least length 2 (additional characters are ignored) which specifies an alternative alphabet for the + and / characters. This allows an application to e.g. generate URL or filesystem safe Base64 strings. The default is None, for which the standard Base64 alphabet is used.

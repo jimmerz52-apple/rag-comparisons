@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_axes_locator
+
+matplotlib.axes.Axes.set_axes_locator   Axes.set_axes_locator(locator)[source]
+ 
+Set the Axes locator.  Parameters 
+ 
+locatorCallable[[Axes, Renderer], Bbox]
+
+   
+  Examples using matplotlib.axes.Axes.set_axes_locator
+ 
+   HBoxDivider demo

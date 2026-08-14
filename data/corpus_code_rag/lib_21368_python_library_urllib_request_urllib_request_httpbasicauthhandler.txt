@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPBasicAuthHandler
+
+class urllib.request.HTTPBasicAuthHandler(password_mgr=None)  
+Handle authentication with the remote host. password_mgr, if given, should be something that is compatible with HTTPPasswordMgr; refer to section HTTPPasswordMgr Objects for information on the interface that must be supported. HTTPBasicAuthHandler will raise a ValueError when presented with a wrong Authentication scheme.

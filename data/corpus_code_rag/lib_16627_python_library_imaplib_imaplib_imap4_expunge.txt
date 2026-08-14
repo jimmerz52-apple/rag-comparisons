@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.expunge
+
+IMAP4.expunge()  
+Permanently remove deleted items from selected mailbox. Generates an EXPUNGE response for each deleted message. Returned data contains a list of EXPUNGE message numbers in order received.

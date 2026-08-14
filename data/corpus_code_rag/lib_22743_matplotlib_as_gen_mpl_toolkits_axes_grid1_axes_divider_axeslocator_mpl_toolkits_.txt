@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.axeslocator#mpl_toolkits.axes_grid1.axes_divider.AxesLocator.__call__
+
+__call__(axes, renderer)[source]
+ 
+Call self as a function.

@@ -1,0 +1,4 @@
+# python.library.socket#socket.AF_QIPCRTR
+
+socket.AF_QIPCRTR  
+Constant for Qualcomm’s IPC router protocol, used to communicate with service providing remote processors. Availability: Linux >= 4.7.

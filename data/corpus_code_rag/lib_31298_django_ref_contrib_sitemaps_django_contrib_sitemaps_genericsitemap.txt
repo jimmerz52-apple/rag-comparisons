@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.GenericSitemap
+
+class GenericSitemap(info_dict, priority=None, changefreq=None, protocol=None)  
+The django.contrib.sitemaps.GenericSitemap class allows you to create a sitemap by passing it a dictionary which has to contain at least a queryset entry. This queryset will be used to generate the items of the sitemap. It may also have a date_field entry that specifies a date field for objects retrieved from the queryset. This will be used for the lastmod attribute in the generated sitemap. The priority, changefreq, and protocol keyword arguments allow specifying these attributes for all URLs.

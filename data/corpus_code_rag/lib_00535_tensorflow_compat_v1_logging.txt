@@ -1,0 +1,12 @@
+# tensorflow.compat.v1.logging
+
+Module: tf.compat.v1.logging Logging and Summary Operations. Functions TaskLevelStatusMessage(...) debug(...) error(...) fatal(...) flush(...) get_verbosity(...): Return how much logging output will be produced. info(...) log(...) log_every_n(...): Log 'msg % args' at level 'level' once per 'n' times. log_first_n(...): Log 'msg % args' at level 'level' only first 'n' times. log_if(...): Log 'msg % args' at level 'level' only if condition is fulfilled. set_verbosity(...): Sets the threshold for what messages will be logged. vlog(...) warn(...) warning(...)
+ 
+
+
+ Other Members
+  DEBUG   10  
+  ERROR   40  
+  FATAL   50  
+  INFO   20  
+  WARN   30

@@ -1,0 +1,6 @@
+# python.library.pathlib#pathlib.WindowsPath
+
+class pathlib.WindowsPath(*pathsegments)  
+A subclass of Path and PureWindowsPath, this class represents concrete Windows filesystem paths: >>> WindowsPath('c:/Program Files/')
+WindowsPath('c:/Program Files')
+ pathsegments is specified similarly to PurePath.

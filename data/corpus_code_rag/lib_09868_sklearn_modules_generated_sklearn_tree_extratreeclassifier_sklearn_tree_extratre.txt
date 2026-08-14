@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.tree.extratreeclassifier#sklearn.tree.ExtraTreeClassifier.predict
+
+predict(X, check_input=True) [source]
+ 
+Predict class or regression value for X. For a classification model, the predicted class for each sample in X is returned. For a regression model, the predicted value based on X is returned.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.  
+check_inputbool, default=True 
+
+Allow to bypass several input checking. Don’t use this parameter unless you know what you do.    Returns 
+ 
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+The predicted classes, or the predict values.

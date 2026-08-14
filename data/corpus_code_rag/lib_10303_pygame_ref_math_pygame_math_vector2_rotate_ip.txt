@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.rotate_ip
+
+rotate_ip() 
+ rotates the vector by a given angle in degrees in place. rotate_ip(angle) -> None  Rotates the vector counterclockwise by the given angle in degrees. The length of the vector is not changed.

@@ -1,0 +1,4 @@
+# python.library.difflib#difflib.IS_CHARACTER_JUNK
+
+difflib.IS_CHARACTER_JUNK(ch)  
+Return True for ignorable characters. The character ch is ignorable if ch is a space or tab, otherwise it is not ignorable. Used as a default for parameter charjunk in ndiff().

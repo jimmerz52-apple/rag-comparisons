@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.onehotencoder#sklearn.preprocessing.OneHotEncoder.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Fit OneHotEncoder to X, then transform X. Equivalent to fit(X).transform(X) but more convenient.  Parameters 
+ 
+Xarray-like, shape [n_samples, n_features] 
+
+The data to encode.  
+yNone 
+
+Ignored. This parameter exists only for compatibility with Pipeline.    Returns 
+ 
+X_outsparse matrix if sparse=True else a 2-d array 
+
+Transformed input.

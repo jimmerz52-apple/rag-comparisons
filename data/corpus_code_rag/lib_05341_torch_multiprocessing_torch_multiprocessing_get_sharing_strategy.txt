@@ -1,0 +1,5 @@
+# torch.multiprocessing#torch.multiprocessing.get_sharing_strategy
+
+torch.multiprocessing.get_sharing_strategy() [source]
+ 
+Returns the current strategy for sharing CPU tensors.

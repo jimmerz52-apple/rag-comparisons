@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.pax_headers
+
+TarFile.pax_headers  
+A dictionary containing key-value pairs of pax global headers.

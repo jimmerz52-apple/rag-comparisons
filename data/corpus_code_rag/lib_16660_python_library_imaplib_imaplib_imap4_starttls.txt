@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.starttls
+
+IMAP4.starttls(ssl_context=None)  
+Send a STARTTLS command. The ssl_context argument is optional and should be a ssl.SSLContext object. This will enable encryption on the IMAP connection. Please read Security considerations for best practices.  New in version 3.2.   Changed in version 3.4: The method now supports hostname check with ssl.SSLContext.check_hostname and Server Name Indication (see ssl.HAS_SNI).

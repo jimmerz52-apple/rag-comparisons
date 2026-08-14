@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.hex
+
+UUID.hex  
+The UUID as a 32-character hexadecimal string.

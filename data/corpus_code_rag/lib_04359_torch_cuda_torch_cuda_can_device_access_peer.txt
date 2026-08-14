@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.can_device_access_peer
+
+torch.cuda.can_device_access_peer(device, peer_device) [source]
+ 
+Checks if peer access between two devices is possible.

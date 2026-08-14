@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.resolution
+
+resolution 
+ Pixel resolution in dots per inch resolution -> int  Read only. Gets pixel size used in scaling font glyphs for this Font instance.

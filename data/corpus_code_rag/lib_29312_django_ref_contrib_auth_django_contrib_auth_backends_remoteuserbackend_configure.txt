@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.RemoteUserBackend.configure_user
+
+configure_user(request, user)  
+Configures a newly created user. This method is called immediately after a new user is created, and can be used to perform custom setup actions, such as setting the user’s groups based on attributes in an LDAP directory. Returns the user object. request is an HttpRequest and may be None if it wasn’t provided to authenticate() (which passes it on to the backend).

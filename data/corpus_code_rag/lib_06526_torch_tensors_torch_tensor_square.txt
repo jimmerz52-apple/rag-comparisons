@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.square_
+
+square_() → Tensor  
+In-place version of square()

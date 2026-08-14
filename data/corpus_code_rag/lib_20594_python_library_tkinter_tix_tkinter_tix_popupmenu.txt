@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.PopupMenu
+
+class tkinter.tix.PopupMenu  
+The PopupMenu widget can be used as a replacement of the tk_popup command. The advantage of the Tix PopupMenu widget is it requires less application code to manipulate.

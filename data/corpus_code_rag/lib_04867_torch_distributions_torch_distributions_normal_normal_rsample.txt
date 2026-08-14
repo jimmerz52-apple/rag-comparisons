@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.normal.Normal.rsample
+
+rsample(sample_shape=torch.Size([])) [source]

@@ -1,0 +1,6 @@
+# torch.optim#torch.optim.Optimizer.load_state_dict
+
+load_state_dict(state_dict) [source]
+ 
+Loads the optimizer state.  Parameters 
+state_dict (dict) – optimizer state. Should be an object returned from a call to state_dict().

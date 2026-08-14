@@ -1,0 +1,4 @@
+# python.library.pyclbr#pyclbr.Function.children
+
+Function.children  
+A dictionary mapping names to descriptors for nested functions and classes.  New in version 3.7.

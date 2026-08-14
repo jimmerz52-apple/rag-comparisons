@@ -1,0 +1,14 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.get_unicode_index
+
+matplotlib.mathtext.get_unicode_index(symbol, math=True)[source]
+ 
+Return the integer index (from the Unicode table) of symbol.  Parameters 
+ 
+symbolstr
+
+
+A single unicode character, a TeX command (e.g. r'pi') or a Type1 symbol name (e.g. 'phi').  
+mathbool, default: True
+
+
+If False, always treat as a single unicode character.

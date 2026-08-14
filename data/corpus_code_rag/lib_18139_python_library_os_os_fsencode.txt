@@ -1,0 +1,4 @@
+# python.library.os#os.fsencode
+
+os.fsencode(filename)  
+Encode path-like filename to the filesystem encoding with 'surrogateescape' error handler, or 'strict' on Windows; return bytes unchanged. fsdecode() is the reverse function.  New in version 3.2.   Changed in version 3.6: Support added to accept objects implementing the os.PathLike interface.

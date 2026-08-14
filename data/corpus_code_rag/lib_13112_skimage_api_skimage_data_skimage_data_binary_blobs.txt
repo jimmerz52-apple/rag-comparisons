@@ -1,0 +1,36 @@
+# skimage.api.skimage.data#skimage.data.binary_blobs
+
+skimage.data.binary_blobs(length=512, blob_size_fraction=0.1, n_dim=2, volume_fraction=0.5, seed=None) [source]
+ 
+Generate synthetic binary image with several rounded blob-like objects.  Parameters 
+ 
+lengthint, optional 
+
+Linear size of output image.  
+blob_size_fractionfloat, optional 
+
+Typical linear size of blob, as a fraction of length, should be smaller than 1.  
+n_dimint, optional 
+
+Number of dimensions of output image.  
+volume_fractionfloat, default 0.5 
+
+Fraction of image pixels covered by the blobs (where the output is 1). Should be in [0, 1].  
+seedint, optional 
+
+Seed to initialize the random number generator. If None, a random seed from the operating system is used.    Returns 
+ 
+blobsndarray of bools 
+
+Output binary image     Examples >>> from skimage import data
+>>> data.binary_blobs(length=5, blob_size_fraction=0.2, seed=1)
+array([[ True, False,  True,  True,  True],
+       [ True,  True,  True, False,  True],
+       [False,  True, False,  True,  True],
+       [ True, False, False,  True,  True],
+       [ True, False, False, False,  True]])
+>>> blobs = data.binary_blobs(length=256, blob_size_fraction=0.1)
+>>> # Finer structures
+>>> blobs = data.binary_blobs(length=256, blob_size_fraction=0.05)
+>>> # Blobs cover a smaller volume fraction of the image
+>>> blobs = data.binary_blobs(length=256, volume_fraction=0.3)

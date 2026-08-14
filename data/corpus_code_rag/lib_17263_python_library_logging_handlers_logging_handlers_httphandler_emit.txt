@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.HTTPHandler.emit
+
+emit(record)  
+Sends the record to the Web server as a URL-encoded dictionary. The mapLogRecord() method is used to convert the record to the dictionary to be sent.

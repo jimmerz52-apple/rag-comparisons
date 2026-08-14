@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.to_integral_exact
+
+to_integral_exact(rounding=None, context=None)  
+Round to the nearest integer, signaling Inexact or Rounded as appropriate if rounding occurs. The rounding mode is determined by the rounding parameter if given, else by the given context. If neither parameter is given then the rounding mode of the current context is used.

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.popitemlist
+
+popitemlist()  
+Pop a (key, list) tuple from the dict.

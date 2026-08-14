@@ -1,0 +1,9 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.getlist
+
+getlist(key, type=None, as_bytes=False)  
+Return the list of items for a given key. If that key is not in the Headers, the return value will be an empty list. Just like get(), getlist() accepts a type parameter. All items will be converted with the callable defined there.  Changelog New in version 0.9: Added support for as_bytes.   Parameters 
+ 
+key – The key to be looked up. 
+type – A callable that is used to cast the value in the Headers. If a ValueError is raised by this callable the value will be removed from the list. 
+as_bytes – return bytes instead of strings.   Returns 
+a list of all the values for the key.

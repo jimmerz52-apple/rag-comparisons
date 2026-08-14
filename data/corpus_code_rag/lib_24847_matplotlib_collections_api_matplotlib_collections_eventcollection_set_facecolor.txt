@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.set_facecolor
+
+set_facecolor(c)[source]
+ 
+Set the facecolor(s) of the collection. c can be a color (all patches have same color), or a sequence of colors; if it is a sequence the patches will cycle through the sequence. If c is 'none', the patch will not be filled.  Parameters 
+ 
+ccolor or list of colors

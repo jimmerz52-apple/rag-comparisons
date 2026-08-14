@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.BaseDateListView.get_date_list
+
+get_date_list(queryset, date_type=None, ordering='ASC')  
+Returns the list of dates of type date_type for which queryset contains entries. For example, get_date_list(qs, 'year') will return the list of years for which qs has entries. If date_type isn’t provided, the result of get_date_list_period() is used. date_type and ordering are passed to QuerySet.dates().

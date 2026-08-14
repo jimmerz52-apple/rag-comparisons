@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.get_path
+
+get_path()[source]
+ 
+Return the path of the arrow in the data coordinates.

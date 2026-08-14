@@ -1,0 +1,8 @@
+# python.library.pathlib#pathlib.Path.stat
+
+Path.stat()  
+Return a os.stat_result object containing information about this path, like os.stat(). The result is looked up at each call to this method. >>> p = Path('setup.py')
+>>> p.stat().st_size
+956
+>>> p.stat().st_mtime
+1327883547.852554

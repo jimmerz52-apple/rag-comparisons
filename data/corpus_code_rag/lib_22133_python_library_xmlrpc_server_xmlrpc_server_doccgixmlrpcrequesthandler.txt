@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.DocCGIXMLRPCRequestHandler
+
+class xmlrpc.server.DocCGIXMLRPCRequestHandler  
+Create a new instance to handle XML-RPC requests in a CGI environment.

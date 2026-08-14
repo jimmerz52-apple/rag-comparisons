@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.matern#sklearn.gaussian_process.kernels.Matern.hyperparameters
+
+property hyperparameters  
+Returns a list of all hyperparameter specifications.

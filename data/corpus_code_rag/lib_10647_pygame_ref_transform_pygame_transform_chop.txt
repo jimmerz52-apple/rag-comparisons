@@ -1,0 +1,4 @@
+# pygame.ref.transform#pygame.transform.chop
+
+pygame.transform.chop() 
+ gets a copy of an image with an interior area removed chop(Surface, rect) -> Surface  Extracts a portion of an image. All vertical and horizontal pixels surrounding the given rectangle area are removed. The corner areas (diagonal to the rect) are then brought together. (The original image is not altered by this operation.) NOTE: If you want a "crop" that returns the part of an image within a rect, you can blit with a rect to a new surface or copy a subsurface.

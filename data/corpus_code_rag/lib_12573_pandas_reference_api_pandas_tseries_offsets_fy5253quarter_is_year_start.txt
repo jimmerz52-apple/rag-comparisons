@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.fy5253quarter.is_year_start
+
+pandas.tseries.offsets.FY5253Quarter.is_year_start   FY5253Quarter.is_year_start()

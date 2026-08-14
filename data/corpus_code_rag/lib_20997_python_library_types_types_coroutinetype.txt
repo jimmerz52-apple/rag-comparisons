@@ -1,0 +1,4 @@
+# python.library.types#types.CoroutineType
+
+types.CoroutineType  
+The type of coroutine objects, created by async def functions.  New in version 3.5.

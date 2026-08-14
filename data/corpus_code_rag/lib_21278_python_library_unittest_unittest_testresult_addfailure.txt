@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.addFailure
+
+addFailure(test, err)  
+Called when the test case test signals a failure. err is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation appends a tuple (test, formatted_err) to the instance’s failures attribute, where formatted_err is a formatted traceback derived from err.

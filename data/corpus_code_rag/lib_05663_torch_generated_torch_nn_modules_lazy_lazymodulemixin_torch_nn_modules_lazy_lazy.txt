@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.modules.lazy.lazymodulemixin#torch.nn.modules.lazy.LazyModuleMixin.initialize_parameters
+
+initialize_parameters(*args, **kwargs) [source]
+ 
+Initialize parameters according to the input batch properties. This adds an interface to isolate parameter initialization from the forward pass when doing parameter shape inference.

@@ -1,0 +1,4 @@
+# python.library.types#types.ModuleType.__name__
+
+__name__  
+The name of the module. Expected to match importlib.machinery.ModuleSpec.name.

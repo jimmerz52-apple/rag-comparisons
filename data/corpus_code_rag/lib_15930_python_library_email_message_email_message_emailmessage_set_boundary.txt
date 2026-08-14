@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.set_boundary
+
+set_boundary(boundary)  
+Set the boundary parameter of the Content-Type header to boundary. set_boundary() will always quote boundary if necessary. A HeaderParseError is raised if the message object has no Content-Type header. Note that using this method is subtly different from deleting the old Content-Type header and adding a new one with the new boundary via add_header(), because set_boundary() preserves the order of the Content-Type header in the list of headers.

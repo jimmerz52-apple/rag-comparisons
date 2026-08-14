@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.core.groupby.dataframegroupby.plot
+
+pandas.core.groupby.DataFrameGroupBy.plot   propertyDataFrameGroupBy.plot
+ 
+Class implementing the .plot attribute for groupby objects.

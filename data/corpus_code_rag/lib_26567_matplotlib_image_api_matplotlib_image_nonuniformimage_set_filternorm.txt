@@ -1,0 +1,7 @@
+# matplotlib.image_api#matplotlib.image.NonUniformImage.set_filternorm
+
+set_filternorm(s)[source]
+ 
+Set whether the resize filter normalizes the weights. See help for imshow.  Parameters 
+ 
+filternormbool

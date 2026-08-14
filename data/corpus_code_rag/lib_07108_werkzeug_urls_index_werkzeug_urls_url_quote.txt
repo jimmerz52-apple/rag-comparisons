@@ -1,0 +1,12 @@
+# werkzeug.urls.index#werkzeug.urls.url_quote
+
+werkzeug.urls.url_quote(string, charset='utf-8', errors='strict', safe='/:', unsafe='')  
+URL encode a single string with a given encoding.  Parameters 
+ 
+s – the string to quote. 
+charset (str) – the charset to be used. 
+safe (Union[str, bytes]) – an optional sequence of safe characters. 
+unsafe (Union[str, bytes]) – an optional sequence of unsafe characters. 
+string (Union[str, bytes]) –  
+errors (str) –    Return type 
+str    Changelog New in version 0.9.2: The unsafe parameter was added.

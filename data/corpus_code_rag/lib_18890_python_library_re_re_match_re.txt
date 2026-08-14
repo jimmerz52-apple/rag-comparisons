@@ -1,0 +1,4 @@
+# python.library.re#re.Match.re
+
+Match.re  
+The regular expression object whose match() or search() method produced this match instance.

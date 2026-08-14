@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_dashlist
+
+matplotlib.rcsetup.validate_dashlist(s)[source]
+ 
+return a list of floats

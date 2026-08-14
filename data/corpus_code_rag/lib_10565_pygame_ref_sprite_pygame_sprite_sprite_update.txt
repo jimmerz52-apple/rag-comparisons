@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Sprite.update
+
+update() 
+ method to control sprite behavior update(*args, **kwargs) -> None  The default implementation of this method does nothing; it's just a convenient "hook" that you can override. This method is called by Group.update() with whatever arguments you give it. There is no need to use this method if not using the convenience method by the same name in the Group class.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin.get_context_data
+
+get_context_data(**kwargs)  
+Calls get_form() and adds the result to the context data with the name ‘form’.

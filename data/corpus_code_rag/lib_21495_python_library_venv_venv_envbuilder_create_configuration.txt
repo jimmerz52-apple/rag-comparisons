@@ -1,0 +1,4 @@
+# python.library.venv#venv.EnvBuilder.create_configuration
+
+create_configuration(context)  
+Creates the pyvenv.cfg configuration file in the environment.

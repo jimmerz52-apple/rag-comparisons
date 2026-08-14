@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.isanchored
+
+pandas.tseries.offsets.Tick.isAnchored   Tick.isAnchored()

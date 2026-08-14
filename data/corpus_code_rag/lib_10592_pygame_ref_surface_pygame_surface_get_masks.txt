@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_masks
+
+get_masks() 
+ the bitmasks needed to convert between a color and a mapped integer get_masks() -> (R, G, B, A)  Returns the bitmasks used to isolate each color in a mapped integer. This value is not needed for normal pygame usage.

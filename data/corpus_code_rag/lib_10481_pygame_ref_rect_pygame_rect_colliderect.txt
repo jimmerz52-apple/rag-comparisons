@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.colliderect
+
+colliderect() 
+ test if two rectangles overlap colliderect(Rect) -> bool  Returns true if any portion of either rectangle overlap (except the top+bottom or left+right edges).  Note For collision detection between a rect and a line the clipline() method can be used.

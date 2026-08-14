@@ -1,0 +1,9 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_inline_instances
+
+ModelAdmin.get_inline_instances(request, obj=None)  
+The get_inline_instances method is given the HttpRequest and the obj being edited (or None on an add form) and is expected to return a list or tuple of InlineModelAdmin objects, as described below in the InlineModelAdmin section. For example, the following would return inlines without the default filtering based on add, change, delete, and view permissions: class MyModelAdmin(admin.ModelAdmin):
+    inlines = (MyInline,)
+
+    def get_inline_instances(self, request, obj=None):
+        return [inline(self.model, self.admin_site) for inline in self.inlines]
+ If you override this method, make sure that the returned inlines are instances of the classes defined in inlines or you might encounter a “Bad Request” error when adding related objects.

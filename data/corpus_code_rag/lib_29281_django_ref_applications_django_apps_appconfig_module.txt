@@ -1,0 +1,5 @@
+# django.ref.applications#django.apps.AppConfig.module
+
+AppConfig.module  
+Root module for the application, e.g. <module 'django.contrib.admin' from
+'django/contrib/admin/__init__.py'>.

@@ -1,0 +1,4 @@
+# python.library.csv#csv.get_dialect
+
+csv.get_dialect(name)  
+Return the dialect associated with name. An Error is raised if name is not a registered dialect name. This function returns an immutable Dialect.

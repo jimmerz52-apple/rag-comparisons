@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.sharedctypes.synchronized
+
+multiprocessing.sharedctypes.synchronized(obj[, lock])  
+Return a process-safe wrapper object for a ctypes object which uses lock to synchronize access. If lock is None (the default) then a multiprocessing.RLock object is created automatically. A synchronized wrapper will have two methods in addition to those of the object it wraps: get_obj() returns the wrapped object and get_lock() returns the lock object used for synchronization. Note that accessing the ctypes object through the wrapper can be a lot slower than accessing the raw ctypes object.  Changed in version 3.5: Synchronized objects support the context manager protocol.

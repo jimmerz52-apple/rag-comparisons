@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Class.get_methods
+
+get_methods()  
+Return a tuple containing the names of methods declared in the class.

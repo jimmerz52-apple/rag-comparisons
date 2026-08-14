@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.print_label
+
+print_label(linecontour, labelwidth)[source]
+ 
+Return whether a contour is long enough to hold a label.

@@ -1,0 +1,4 @@
+# python.library.csv#csv.unix_dialect
+
+class csv.unix_dialect  
+The unix_dialect class defines the usual properties of a CSV file generated on UNIX systems, i.e. using '\n' as line terminator and quoting all fields. It is registered with the dialect name 'unix'.  New in version 3.2.

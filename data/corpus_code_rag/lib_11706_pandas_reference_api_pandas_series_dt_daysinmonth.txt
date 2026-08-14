@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.dt.daysinmonth
+
+pandas.Series.dt.daysinmonth   Series.dt.daysinmonth
+ 
+The number of days in the month.

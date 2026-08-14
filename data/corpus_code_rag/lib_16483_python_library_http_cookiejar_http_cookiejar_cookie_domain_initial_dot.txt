@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.domain_initial_dot
+
+Cookie.domain_initial_dot  
+True if the domain explicitly specified by the server began with a dot ('.').

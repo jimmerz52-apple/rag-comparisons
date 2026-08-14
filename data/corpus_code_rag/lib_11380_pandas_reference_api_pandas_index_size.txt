@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.size
+
+pandas.Index.size   propertyIndex.size
+ 
+Return the number of elements in the underlying data.

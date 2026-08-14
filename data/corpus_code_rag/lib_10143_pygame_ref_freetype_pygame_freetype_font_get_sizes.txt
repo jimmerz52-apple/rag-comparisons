@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.get_sizes
+
+get_sizes() 
+ return the available sizes of embedded bitmaps get_sizes() -> [(int, int, int, float, float), ...] get_sizes() -> []  Returns a list of tuple records, one for each point size supported. Each tuple containing the point size, the height in pixels, width in pixels, horizontal ppem (nominal width) in fractional pixels, and vertical ppem (nominal height) in fractional pixels.

@@ -1,0 +1,4 @@
+# python.library.queue#queue.SimpleQueue
+
+class queue.SimpleQueue  
+Constructor for an unbounded FIFO queue. Simple queues lack advanced functionality such as task tracking.  New in version 3.7.

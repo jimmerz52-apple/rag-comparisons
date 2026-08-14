@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.util.source_hash
+
+importlib.util.source_hash(source_bytes)  
+Return the hash of source_bytes as bytes. A hash-based .pyc file embeds the source_hash() of the corresponding source file’s contents in its header.  New in version 3.7.

@@ -1,0 +1,17 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.get_ylim3d
+
+get_ylim3d()[source]
+ 
+Return the y-axis view limits.  Returns 
+ 
+bottom, top(float, float)
+
+
+The current y-axis limits in data coordinates.      See also  set_ylim
+
+set_ybound, get_ybound
+
+
+invert_yaxis, yaxis_inverted
+
+  Notes The y-axis may be inverted, in which case the bottom value will be greater than the top value.

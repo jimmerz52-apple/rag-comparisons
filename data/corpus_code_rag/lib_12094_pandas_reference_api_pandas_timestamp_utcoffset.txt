@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.utcoffset
+
+pandas.Timestamp.utcoffset   Timestamp.utcoffset()
+ 
+Return self.tzinfo.utcoffset(self).

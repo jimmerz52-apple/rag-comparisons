@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.list_fonts
+
+matplotlib.font_manager.list_fonts(directory, extensions)[source]
+ 
+Return a list of all fonts matching any of the extensions, found recursively under the directory.

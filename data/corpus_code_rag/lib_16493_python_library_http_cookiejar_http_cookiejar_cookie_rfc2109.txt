@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.rfc2109
+
+Cookie.rfc2109  
+True if this cookie was received as an RFC 2109 cookie (ie. the cookie arrived in a Set-Cookie header, and the value of the Version cookie-attribute in that header was 1). This attribute is provided because http.cookiejar may ‘downgrade’ RFC 2109 cookies to Netscape cookies, in which case version is 0.

@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LogoutView.template_name
+
+template_name  
+The full name of a template to display after logging the user out. Defaults to registration/logged_out.html.

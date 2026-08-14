@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.__str__
+
+__str__()  
+Equivalent to as_string(policy=self.policy.clone(utf8=True)). Allows str(msg) to produce a string containing the serialized message in a readable format.  Changed in version 3.4: the method was changed to use utf8=True, thus producing an RFC 6531-like message representation, instead of being a direct alias for as_string().

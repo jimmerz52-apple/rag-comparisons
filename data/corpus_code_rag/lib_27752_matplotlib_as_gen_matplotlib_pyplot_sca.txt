@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.sca
+
+matplotlib.pyplot.sca   matplotlib.pyplot.sca(ax)[source]
+ 
+Set the current Axes to ax and the current Figure to the parent of ax.

@@ -1,0 +1,15 @@
+# python.library.importlib#importlib.abc.PathEntryFinder
+
+class importlib.abc.PathEntryFinder  
+An abstract base class representing a path entry finder. Though it bears some similarities to MetaPathFinder, PathEntryFinder is meant for use only within the path-based import subsystem provided by PathFinder. This ABC is a subclass of Finder for compatibility reasons only.  New in version 3.3.   
+find_spec(fullname, target=None)  
+An abstract method for finding a spec for the specified module. The finder will search for the module only within the path entry to which it is assigned. If a spec cannot be found, None is returned. When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return. importlib.util.spec_from_loader() may be useful for implementing concrete PathEntryFinders.  New in version 3.4.  
+  
+find_loader(fullname)  
+A legacy method for finding a loader for the specified module. Returns a 2-tuple of (loader, portion) where portion is a sequence of file system locations contributing to part of a namespace package. The loader may be None while specifying portion to signify the contribution of the file system locations to a namespace package. An empty list can be used for portion to signify the loader is not part of a namespace package. If loader is None and portion is the empty list then no loader or location for a namespace package were found (i.e. failure to find anything for the module). If find_spec() is defined then backwards-compatible functionality is provided.  Changed in version 3.4: Returns (None, []) instead of raising NotImplementedError. Uses find_spec() when available to provide functionality.   Deprecated since version 3.4: Use find_spec() instead.  
+  
+find_module(fullname)  
+A concrete implementation of Finder.find_module() which is equivalent to self.find_loader(fullname)[0].  Deprecated since version 3.4: Use find_spec() instead.  
+  
+invalidate_caches()  
+An optional method which, when called, should invalidate any internal cache used by the finder. Used by PathFinder.invalidate_caches() when invalidating the caches of all cached finders.

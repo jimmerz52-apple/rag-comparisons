@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.sizeof
+
+ctypes.sizeof(obj_or_type)  
+Returns the size in bytes of a ctypes type or instance memory buffer. Does the same as the C sizeof operator.

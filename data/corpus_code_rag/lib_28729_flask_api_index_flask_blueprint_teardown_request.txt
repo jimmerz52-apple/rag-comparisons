@@ -1,0 +1,10 @@
+# flask.api.index#flask.Blueprint.teardown_request
+
+teardown_request(f)  
+Register a function to be run at the end of each request, regardless of whether there was an exception or not. These functions are executed when the request context is popped, even if not an actual request was performed. Example: ctx = app.test_request_context()
+ctx.push()
+...
+ctx.pop()
+ When ctx.pop() is executed in the above example, the teardown functions are called just before the request context moves from the stack of active contexts. This becomes relevant if you are using such constructs in tests. Teardown functions must avoid raising exceptions, since they . If they execute code that might fail they will have to surround the execution of these code by try/except statements and log occurring errors. When a teardown function was called because of an exception it will be passed an error object. The return values of teardown functions are ignored.  Debug Note In debug mode Flask will not tear down a request on an exception immediately. Instead it will keep it alive so that the interactive debugger can still access it. This behavior can be controlled by the PRESERVE_CONTEXT_ON_EXCEPTION configuration variable.   Parameters 
+f (Callable[[Optional[BaseException]], Response]) –   Return type 
+Callable[[Optional[BaseException]], Response]

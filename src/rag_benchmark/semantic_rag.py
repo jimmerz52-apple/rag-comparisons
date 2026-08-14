@@ -74,16 +74,7 @@ class SemanticRAG:
             )
             self._store.sync_documents(documents, drop_missing=True, phase="semantic_index")
 
-        # Materialize chunks for BM25 hybrid subclass
-        from rag_benchmark.corpus import chunk_documents
-
-        print(f"  Materializing chunks for BM25/hybrid...", flush=True)
-        self._chunks = chunk_documents(
-            documents,
-            chunk_size=self.config.chunk_size,
-            chunk_overlap=self.config.chunk_overlap,
-        )
-        print(f"  Index ready: store={self._store.count()} chunks={len(self._chunks)}", flush=True)
+        print(f"  Index ready: store={self._store.count()}", flush=True)
 
     def retrieve(self, question: str) -> list[str]:
         """Return top-k chunk texts (for hybrid fusion / method bake-off)."""
@@ -114,6 +105,7 @@ class SemanticRAG:
             model=self.config.chat_model,
             phase="semantic_query",
             temperature=0.0,
+            num_predict=getattr(self.config, "max_answer_tokens", 96),
         )
         return QueryResult(answer=answer, retrieved_chunks=retrieved)
 

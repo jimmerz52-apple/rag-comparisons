@@ -1,0 +1,9 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.BaseUpdateView
+
+class django.views.generic.edit.BaseUpdateView  
+A base view for updating an existing object instance. It is not intended to be used directly, but rather as a parent class of the django.views.generic.edit.UpdateView. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.edit.ModelFormMixin django.views.generic.edit.ProcessFormView  Methods  
+get(request, *args, **kwargs)  
+Sets the current object instance (self.object). 
+  
+post(request, *args, **kwargs)  
+Sets the current object instance (self.object).

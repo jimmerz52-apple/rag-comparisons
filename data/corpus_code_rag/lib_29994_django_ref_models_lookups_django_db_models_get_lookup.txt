@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.get_lookup
+
+get_lookup(lookup_name)  
+Must return the lookup named lookup_name. For instance, by returning self.output_field.get_lookup(lookup_name).

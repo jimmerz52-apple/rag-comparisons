@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_AS
+
+resource.RLIMIT_AS  
+The maximum area (in bytes) of address space which may be taken by the process.

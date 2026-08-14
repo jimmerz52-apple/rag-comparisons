@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.abspath
+
+os.path.abspath(path)  
+Return a normalized absolutized version of the pathname path. On most platforms, this is equivalent to calling the function normpath() as follows: normpath(join(os.getcwd(), path)).  Changed in version 3.6: Accepts a path-like object.

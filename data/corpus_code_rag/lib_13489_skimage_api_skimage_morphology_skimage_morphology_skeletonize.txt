@@ -1,0 +1,45 @@
+# skimage.api.skimage.morphology#skimage.morphology.skeletonize
+
+skimage.morphology.skeletonize(image, *, method=None) [source]
+ 
+Compute the skeleton of a binary image. Thinning is used to reduce each connected component in a binary image to a single-pixel wide skeleton.  Parameters 
+ 
+imagendarray, 2D or 3D 
+
+A binary image containing the objects to be skeletonized. Zeros represent background, nonzero values are foreground.  
+method{‘zhang’, ‘lee’}, optional 
+
+Which algorithm to use. Zhang’s algorithm [Zha84] only works for 2D images, and is the default for 2D. Lee’s algorithm [Lee94] works for 2D or 3D images and is the default for 3D.    Returns 
+ 
+skeletonndarray 
+
+The thinned image.      See also  
+medial_axis
+
+  References  
+Lee94  
+T.-C. Lee, R.L. Kashyap and C.-N. Chu, Building skeleton models via 3-D medial surface/axis thinning algorithms. Computer Vision, Graphics, and Image Processing, 56(6):462-478, 1994.  
+Zha84  
+A fast parallel algorithm for thinning digital patterns, T. Y. Zhang and C. Y. Suen, Communications of the ACM, March 1984, Volume 27, Number 3.   Examples >>> X, Y = np.ogrid[0:9, 0:9]
+>>> ellipse = (1./3 * (X - 4)**2 + (Y - 4)**2 < 3**2).astype(np.uint8)
+>>> ellipse
+array([[0, 0, 0, 1, 1, 1, 0, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 0, 1, 1, 1, 0, 0, 0]], dtype=uint8)
+>>> skel = skeletonize(ellipse)
+>>> skel.astype(np.uint8)
+array([[0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0]], dtype=uint8)

@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.thread.BrokenThreadPool
+
+exception concurrent.futures.thread.BrokenThreadPool  
+Derived from BrokenExecutor, this exception class is raised when one of the workers of a ThreadPoolExecutor has failed initializing.  New in version 3.7.

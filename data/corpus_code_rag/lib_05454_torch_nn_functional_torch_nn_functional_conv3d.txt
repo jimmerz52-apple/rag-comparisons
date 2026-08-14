@@ -1,0 +1,16 @@
+# torch.nn.functional#torch.nn.functional.conv3d
+
+torch.nn.functional.conv3d(input, weight, bias=None, stride=1, padding=0, dilation=1, groups=1) → Tensor  
+Applies a 3D convolution over an input image composed of several input planes. This operator supports TensorFloat32. See Conv3d for details and output shape.  Note In some circumstances when given tensors on a CUDA device and using CuDNN, this operator may select a nondeterministic algorithm to increase performance. If this is undesirable, you can try to make the operation deterministic (potentially at a performance cost) by setting torch.backends.cudnn.deterministic = True. See Reproducibility for more information.   Parameters 
+ 
+input – input tensor of shape (minibatch,in_channels,iT,iH,iW)(\text{minibatch} , \text{in\_channels} , iT , iH , iW) 
+ 
+weight – filters of shape (out_channels,in_channelsgroups,kT,kH,kW)(\text{out\_channels} , \frac{\text{in\_channels}}{\text{groups}} , kT , kH , kW) 
+ 
+bias – optional bias tensor of shape (out_channels)(\text{out\_channels}) . Default: None 
+stride – the stride of the convolving kernel. Can be a single number or a tuple (sT, sH, sW). Default: 1 
+padding – implicit paddings on both sides of the input. Can be a single number or a tuple (padT, padH, padW). Default: 0 
+dilation – the spacing between kernel elements. Can be a single number or a tuple (dT, dH, dW). Default: 1 
+groups – split input into groups, in_channels\text{in\_channels}  should be divisible by the number of groups. Default: 1    Examples: >>> filters = torch.randn(33, 16, 3, 3, 3)
+>>> inputs = torch.randn(20, 16, 50, 10, 20)
+>>> F.conv3d(inputs, filters)

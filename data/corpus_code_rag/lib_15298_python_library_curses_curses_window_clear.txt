@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.clear
+
+window.clear()  
+Like erase(), but also cause the whole window to be repainted upon next call to refresh().

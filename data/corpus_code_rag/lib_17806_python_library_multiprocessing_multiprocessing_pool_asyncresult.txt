@@ -1,0 +1,15 @@
+# python.library.multiprocessing#multiprocessing.pool.AsyncResult
+
+class multiprocessing.pool.AsyncResult  
+The class of the result returned by Pool.apply_async() and Pool.map_async().  
+get([timeout])  
+Return the result when it arrives. If timeout is not None and the result does not arrive within timeout seconds then multiprocessing.TimeoutError is raised. If the remote call raised an exception then that exception will be reraised by get(). 
+  
+wait([timeout])  
+Wait until the result is available or until timeout seconds pass. 
+  
+ready()  
+Return whether the call has completed. 
+  
+successful()  
+Return whether the call completed without raising an exception. Will raise ValueError if the result is not ready.  Changed in version 3.7: If the result is not ready, ValueError is raised instead of AssertionError.

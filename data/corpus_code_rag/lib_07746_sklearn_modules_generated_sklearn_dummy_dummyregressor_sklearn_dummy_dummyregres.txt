@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.dummy.dummyregressor#sklearn.dummy.DummyRegressor.predict
+
+predict(X, return_std=False) [source]
+ 
+Perform classification on test vectors X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test data.  
+return_stdbool, default=False 
+
+Whether to return the standard deviation of posterior prediction. All zeros in this case.  New in version 0.20.     Returns 
+ 
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+Predicted target values for X.  
+y_stdarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+Standard deviation of predictive distribution of query points.

@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Handle.cancelled
+
+cancelled()  
+Return True if the callback was cancelled.  New in version 3.7.

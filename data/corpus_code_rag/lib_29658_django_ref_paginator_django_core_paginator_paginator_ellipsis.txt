@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.ELLIPSIS
+
+Paginator.ELLIPSIS  
+ New in Django 3.2.  A translatable string used as a substitute for elided page numbers in the page range returned by get_elided_page_range(). Default is '…'.

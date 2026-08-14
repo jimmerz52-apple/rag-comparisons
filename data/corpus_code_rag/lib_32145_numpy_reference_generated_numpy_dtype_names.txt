@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.dtype.names
+
+numpy.dtype.names attribute   dtype.names
+ 
+Ordered list of field names, or None if there are no fields. The names are ordered according to increasing byte offset. This can be used, for example, to walk through all of the named fields in offset order. Examples >>> dt = np.dtype([('name', np.str_, 16), ('grades', np.float64, (2,))])
+>>> dt.names
+('name', 'grades')

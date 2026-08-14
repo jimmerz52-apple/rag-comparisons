@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.record_once
+
+record_once(func)  
+Works like record() but wraps the function in another function that will ensure the function is only called once. If the blueprint is registered a second time on the application, the function passed is not called.  Parameters 
+func (Callable) –   Return type 
+None

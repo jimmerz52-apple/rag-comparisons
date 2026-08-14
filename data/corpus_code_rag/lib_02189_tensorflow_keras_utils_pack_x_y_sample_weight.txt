@@ -1,0 +1,28 @@
+# tensorflow.keras.utils.pack_x_y_sample_weight
+
+tf.keras.utils.pack_x_y_sample_weight Packs user-provided data into a tuple. 
+tf.keras.utils.pack_x_y_sample_weight(
+    x, y=None, sample_weight=None
+)
+ This is a convenience utility for packing data into the tuple formats that Model.fit uses. Standalone usage: 
+x = tf.ones((10, 1))
+data = tf.keras.utils.pack_x_y_sample_weight(x)
+isinstance(data, tf.Tensor)
+True
+y = tf.ones((10, 1))
+data = tf.keras.utils.pack_x_y_sample_weight(x, y)
+isinstance(data, tuple)
+True
+x, y = data
+
+ 
+
+
+ Arguments
+  x   Features to pass to Model.  
+  y   Ground-truth targets to pass to Model.  
+  sample_weight   Sample weight for each element.   
+ 
+
+
+ Returns   Tuple in the format used in Model.fit.

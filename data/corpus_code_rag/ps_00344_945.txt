@@ -1,0 +1,7 @@
+# 945
+Task: 945
+
+# Write a function to convert the given tuples into set.
+def tuple_to_set(t):
+  s = set(t)
+  return (s)

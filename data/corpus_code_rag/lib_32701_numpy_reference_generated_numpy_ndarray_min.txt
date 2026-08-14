@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.min
+
+numpy.ndarray.min method   ndarray.min(axis=None, out=None, keepdims=False, initial=<no value>, where=True)
+ 
+Return the minimum along a given axis. Refer to numpy.amin for full documentation.  See also  numpy.amin
+
+equivalent function

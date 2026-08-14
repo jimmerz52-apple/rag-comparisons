@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.einsum
+
+tf.experimental.numpy.einsum TensorFlow variant of NumPy's einsum. 
+tf.experimental.numpy.einsum(
+    subscripts, *operands, **kwargs
+)
+ See the NumPy documentation for numpy.einsum.

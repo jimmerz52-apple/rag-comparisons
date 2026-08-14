@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.dirs_double_event
+
+dirs_double_event(event)  
+Event handler for double-click event on directory.

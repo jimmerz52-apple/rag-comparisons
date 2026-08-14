@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.FigureCanvas
+
+matplotlib.backends.backend_pgf.FigureCanvas[source]
+ 
+alias of matplotlib.backends.backend_pgf.FigureCanvasPgf

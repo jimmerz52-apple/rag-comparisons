@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.DEFAULT_IGNORES
+
+filecmp.DEFAULT_IGNORES  
+ New in version 3.4.  List of directories ignored by dircmp by default.

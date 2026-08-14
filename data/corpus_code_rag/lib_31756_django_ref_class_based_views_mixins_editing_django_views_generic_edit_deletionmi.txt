@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.DeletionMixin.delete
+
+delete(request, *args, **kwargs)  
+Retrieves the target object and calls its delete() method, then redirects to the success URL.

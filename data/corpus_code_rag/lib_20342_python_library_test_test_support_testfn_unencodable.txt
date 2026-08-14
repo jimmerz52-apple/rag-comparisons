@@ -1,0 +1,4 @@
+# python.library.test#test.support.TESTFN_UNENCODABLE
+
+test.support.TESTFN_UNENCODABLE  
+Set to a filename (str type) that should not be able to be encoded by file system encoding in strict mode. It may be None if it’s not possible to generate such a filename.

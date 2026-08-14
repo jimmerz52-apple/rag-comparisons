@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sin_
+
+sin_() → Tensor  
+In-place version of sin()

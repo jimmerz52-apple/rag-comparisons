@@ -1,0 +1,6 @@
+# werkzeug.http.index#werkzeug.http.parse_if_range_header
+
+werkzeug.http.parse_if_range_header(value)  
+Parses an if-range header which can be an etag or a date. Returns a IfRange object.  Changed in version 2.0: If the value represents a datetime, it is timezone-aware.   Changelog New in version 0.7.   Parameters 
+value (Optional[str]) –   Return type 
+werkzeug.datastructures.IfRange

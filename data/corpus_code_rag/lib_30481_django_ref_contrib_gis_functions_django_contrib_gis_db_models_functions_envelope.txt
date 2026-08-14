@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.Envelope
+
+class Envelope(expression, **extra)

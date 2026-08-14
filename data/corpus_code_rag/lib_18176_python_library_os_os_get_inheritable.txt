@@ -1,0 +1,4 @@
+# python.library.os#os.get_inheritable
+
+os.get_inheritable(fd)  
+Get the “inheritable” flag of the specified file descriptor (a boolean).

@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.viewers#skimage.viewer.viewers.CollectionViewer.__init__
+
+__init__(image_collection, update_on='move', **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

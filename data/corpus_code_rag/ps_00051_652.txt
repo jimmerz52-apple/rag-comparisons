@@ -1,0 +1,8 @@
+# 652
+Task: 652
+
+# Write a function to flatten the given tuple matrix into the tuple list with each tuple representing each column.
+def matrix_to_list(test_list):
+  temp = [ele for sub in test_list for ele in sub]
+  res = list(zip(*temp))
+  return (str(res))

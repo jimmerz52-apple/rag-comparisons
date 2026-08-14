@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.AsteriskPolygonCollection.contains
+
+contains(mouseevent)[source]
+ 
+Test whether the mouse event occurred in the collection. Returns bool, dict(ind=itemlist), where every item in itemlist contains the event.

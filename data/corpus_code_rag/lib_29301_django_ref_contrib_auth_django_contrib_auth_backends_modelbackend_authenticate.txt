@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.ModelBackend.authenticate
+
+authenticate(request, username=None, password=None, **kwargs)  
+Tries to authenticate username with password by calling User.check_password. If no username is provided, it tries to fetch a username from kwargs using the key CustomUser.USERNAME_FIELD. Returns an authenticated user or None. request is an HttpRequest and may be None if it wasn’t provided to authenticate() (which passes it on to the backend).

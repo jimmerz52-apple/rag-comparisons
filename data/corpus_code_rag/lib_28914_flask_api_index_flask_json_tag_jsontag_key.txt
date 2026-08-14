@@ -1,0 +1,4 @@
+# flask.api.index#flask.json.tag.JSONTag.key
+
+key: Optional[str] = None  
+The tag to mark the serialized object with. If None, this tag is only used as an intermediate step during tagging.

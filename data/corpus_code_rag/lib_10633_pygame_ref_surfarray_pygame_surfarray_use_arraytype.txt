@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.use_arraytype
+
+pygame.surfarray.use_arraytype() 
+ Sets the array system to be used for surface arrays use_arraytype (arraytype) -> None  DEPRECATED: Uses the requested array type for the module functions. The only supported arraytype is 'numpy'. Other values will raise ValueError.

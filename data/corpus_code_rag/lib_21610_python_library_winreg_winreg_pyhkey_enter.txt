@@ -1,0 +1,7 @@
+# python.library.winreg#winreg.PyHKEY.__enter__
+
+PyHKEY.__enter__()  
+PyHKEY.__exit__(*exc_info)  
+The HKEY object implements __enter__() and __exit__() and thus supports the context protocol for the with statement: with OpenKey(HKEY_LOCAL_MACHINE, "foo") as key:
+    ...  # work with key
+ will automatically close key when control leaves the with block.

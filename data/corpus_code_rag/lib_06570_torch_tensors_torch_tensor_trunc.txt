@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.trunc
+
+trunc() → Tensor  
+See torch.trunc()

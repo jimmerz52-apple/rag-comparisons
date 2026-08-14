@@ -1,0 +1,4 @@
+# python.library.os#os.get_handle_inheritable
+
+os.get_handle_inheritable(handle)  
+Get the “inheritable” flag of the specified handle (a boolean). Availability: Windows.

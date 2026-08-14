@@ -1,0 +1,4 @@
+# python.library.test#test.support.reap_threads
+
+@test.support.reap_threads(func)  
+Decorator to ensure the threads are cleaned up even if the test fails.

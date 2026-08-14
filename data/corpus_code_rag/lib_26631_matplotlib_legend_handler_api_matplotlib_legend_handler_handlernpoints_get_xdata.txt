@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerNpoints.get_xdata
+
+get_xdata(legend, xdescent, ydescent, width, height, fontsize)[source]

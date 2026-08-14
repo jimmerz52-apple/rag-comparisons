@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.broadcast_to
+
+broadcast_to(shape) → Tensor  
+See torch.broadcast_to().

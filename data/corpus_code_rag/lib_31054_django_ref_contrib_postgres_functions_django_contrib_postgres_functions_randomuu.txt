@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.functions#django.contrib.postgres.functions.RandomUUID
+
+class RandomUUID

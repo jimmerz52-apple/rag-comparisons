@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.HTMLCalendar.cssclasses_weekday_head
+
+cssclasses_weekday_head  
+A list of CSS classes used for weekday names in the header row. The default is the same as cssclasses.  New in version 3.7.

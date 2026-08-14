@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.covariance.ellipticenvelope#sklearn.covariance.EllipticEnvelope.predict
+
+predict(X) [source]
+ 
+Predict the labels (1 inlier, -1 outlier) of X according to the fitted model.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+is_inlierndarray of shape (n_samples,) 
+
+Returns -1 for anomalies/outliers and +1 for inliers.

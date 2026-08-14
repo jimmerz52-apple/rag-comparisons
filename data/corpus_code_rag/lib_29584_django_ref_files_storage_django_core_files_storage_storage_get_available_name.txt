@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.get_available_name
+
+get_available_name(name, max_length=None)  
+Returns a filename based on the name parameter that’s free and available for new content to be written to on the target storage system. The length of the filename will not exceed max_length, if provided. If a free unique filename cannot be found, a SuspiciousFileOperation exception will be raised. If a file with name already exists, get_alternative_name() is called to obtain an alternative name.

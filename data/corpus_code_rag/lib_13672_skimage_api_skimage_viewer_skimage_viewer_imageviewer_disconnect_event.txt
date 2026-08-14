@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer#skimage.viewer.ImageViewer.disconnect_event
+
+disconnect_event(callback_id) [source]
+ 
+Disconnect callback by its id (returned by connect_event).

@@ -1,0 +1,4 @@
+# python.library.getpass#getpass.GetPassWarning
+
+exception getpass.GetPassWarning  
+A UserWarning subclass issued when password input may be echoed.

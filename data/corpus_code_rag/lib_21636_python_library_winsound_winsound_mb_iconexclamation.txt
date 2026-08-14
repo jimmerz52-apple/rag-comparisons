@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.MB_ICONEXCLAMATION
+
+winsound.MB_ICONEXCLAMATION  
+Play the SystemExclamation sound.

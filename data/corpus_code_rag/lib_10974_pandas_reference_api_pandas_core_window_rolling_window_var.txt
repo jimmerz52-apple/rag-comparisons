@@ -1,0 +1,19 @@
+# pandas.reference.api.pandas.core.window.rolling.window.var
+
+pandas.core.window.rolling.Window.var   Window.var(ddof=1, *args, **kwargs)[source]
+ 
+Calculate the rolling weighted window variance.  New in version 1.0.0.   Parameters 
+ **kwargs
+
+Keyword arguments to configure the SciPy weighted window type.    Returns 
+ Series or DataFrame
+
+Return type is the same as the original object with np.float64 dtype.      See also  pandas.Series.rolling
+
+Calling rolling with Series data.  pandas.DataFrame.rolling
+
+Calling rolling with DataFrames.  pandas.Series.var
+
+Aggregating var for Series.  pandas.DataFrame.var
+
+Aggregating var for DataFrame.

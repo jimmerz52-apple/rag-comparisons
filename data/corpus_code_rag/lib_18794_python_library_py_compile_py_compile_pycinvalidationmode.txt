@@ -1,0 +1,12 @@
+# python.library.py_compile#py_compile.PycInvalidationMode
+
+class py_compile.PycInvalidationMode  
+A enumeration of possible methods the interpreter can use to determine whether a bytecode file is up to date with a source file. The .pyc file indicates the desired invalidation mode in its header. See Cached bytecode invalidation for more information on how Python invalidates .pyc files at runtime.  New in version 3.7.   
+TIMESTAMP  
+The .pyc file includes the timestamp and size of the source file, which Python will compare against the metadata of the source file at runtime to determine if the .pyc file needs to be regenerated. 
+  
+CHECKED_HASH  
+The .pyc file includes a hash of the source file content, which Python will compare against the source at runtime to determine if the .pyc file needs to be regenerated. 
+  
+UNCHECKED_HASH  
+Like CHECKED_HASH, the .pyc file includes a hash of the source file content. However, Python will at runtime assume the .pyc file is up to date and not validate the .pyc against the source file at all. This option is useful when the .pycs are kept up to date by some system external to Python like a build system.

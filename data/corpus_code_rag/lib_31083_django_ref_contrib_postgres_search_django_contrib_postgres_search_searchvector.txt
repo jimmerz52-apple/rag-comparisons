@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.search#django.contrib.postgres.search.SearchVector
+
+class SearchVector(*expressions, config=None, weight=None)

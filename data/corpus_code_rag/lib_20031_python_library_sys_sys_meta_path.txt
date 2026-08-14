@@ -1,0 +1,12 @@
+# python.library.sys#sys.meta_path
+
+sys.meta_path  
+A list of meta path finder objects that have their find_spec() methods called to see if one of the objects can find the module to be imported. The find_spec() method is called with at least the absolute name of the module being imported. If the module to be imported is contained in a package, then the parent package’s __path__ attribute is passed in as a second argument. The method returns a module spec, or None if the module cannot be found.  See also  
+importlib.abc.MetaPathFinder
+
+
+The abstract base class defining the interface of finder objects on meta_path.  
+importlib.machinery.ModuleSpec
+
+
+The concrete class which find_spec() should return instances of.     Changed in version 3.4: Module specs were introduced in Python 3.4, by PEP 451. Earlier versions of Python looked for a method called find_module(). This is still called as a fallback if a meta_path entry doesn’t have a find_spec() method.

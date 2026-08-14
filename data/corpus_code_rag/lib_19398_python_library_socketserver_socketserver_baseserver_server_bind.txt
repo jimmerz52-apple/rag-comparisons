@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.server_bind
+
+server_bind()  
+Called by the server’s constructor to bind the socket to the desired address. May be overridden.

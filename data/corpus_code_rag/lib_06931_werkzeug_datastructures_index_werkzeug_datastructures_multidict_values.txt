@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.values
+
+values()  
+Returns an iterator of the first value on every key’s value list.

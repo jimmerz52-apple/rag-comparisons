@@ -1,0 +1,3 @@
+# torch.onnx#torch.onnx.operators.shape_as_tensor
+
+torch.onnx.operators.shape_as_tensor(x) [source]

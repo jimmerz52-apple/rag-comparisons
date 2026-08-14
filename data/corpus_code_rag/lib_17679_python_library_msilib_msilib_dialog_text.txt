@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Dialog.text
+
+text(name, x, y, width, height, attributes, text)  
+Add and return a Text control.

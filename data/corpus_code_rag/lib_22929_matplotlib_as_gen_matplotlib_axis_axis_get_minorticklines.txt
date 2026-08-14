@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_minorticklines
+
+matplotlib.axis.Axis.get_minorticklines   Axis.get_minorticklines()[source]
+ 
+Return this Axis' minor tick lines as a list of Line2Ds.

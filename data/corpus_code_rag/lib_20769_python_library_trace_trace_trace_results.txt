@@ -1,0 +1,4 @@
+# python.library.trace#trace.Trace.results
+
+results()  
+Return a CoverageResults object that contains the cumulative results of all previous calls to run, runctx and runfunc for the given Trace instance. Does not reset the accumulated trace results.

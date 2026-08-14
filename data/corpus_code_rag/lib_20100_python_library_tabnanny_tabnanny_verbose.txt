@@ -1,0 +1,4 @@
+# python.library.tabnanny#tabnanny.verbose
+
+tabnanny.verbose  
+Flag indicating whether to print verbose messages. This is incremented by the -v option if called as a script.

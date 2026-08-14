@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.HeaderRegistry.__getitem__
+
+__getitem__(name)  
+Construct and return a class to handle creating a name header.

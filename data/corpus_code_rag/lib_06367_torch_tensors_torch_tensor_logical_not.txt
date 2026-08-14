@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logical_not
+
+logical_not() → Tensor  
+See torch.logical_not()

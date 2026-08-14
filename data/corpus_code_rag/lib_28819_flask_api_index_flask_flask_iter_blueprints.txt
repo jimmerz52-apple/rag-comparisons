@@ -1,0 +1,5 @@
+# flask.api.index#flask.Flask.iter_blueprints
+
+iter_blueprints()  
+Iterates over all blueprints by the order they were registered.  Changelog New in version 0.11.   Return type 
+ValuesView[Blueprint]

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.week.is_month_start
+
+pandas.tseries.offsets.Week.is_month_start   Week.is_month_start()

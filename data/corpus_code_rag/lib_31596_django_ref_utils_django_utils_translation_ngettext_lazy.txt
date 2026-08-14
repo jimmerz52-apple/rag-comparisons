@@ -1,0 +1,3 @@
+# django.ref.utils#django.utils.translation.ngettext_lazy
+
+ngettext_lazy(singular, plural, number)

@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.get_busy
+
+pygame.mixer.music.get_busy() 
+ check if the music stream is playing get_busy() -> bool  Returns True when the music stream is actively playing. When the music is idle this returns False. In pygame 2.0.1 and above this function returns False when the music is paused. In pygame 1 it returns True when the music is paused.  Changed in pygame 2.0.1: Returns False when music paused.

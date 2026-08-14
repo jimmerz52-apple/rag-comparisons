@@ -1,0 +1,9 @@
+# werkzeug.exceptions.index#werkzeug.exceptions.HTTPException.get_response
+
+get_response(environ=None, scope=None)  
+Get a response object. If one was passed to the exception it’s returned directly.  Parameters 
+ 
+environ (Optional[WSGIEnvironment]) – the optional environ for the request. This can be used to modify the response depending on how the request looked like. 
+scope (Optional[dict]) –    Returns 
+a Response object or a subclass thereof.  Return type 
+Response

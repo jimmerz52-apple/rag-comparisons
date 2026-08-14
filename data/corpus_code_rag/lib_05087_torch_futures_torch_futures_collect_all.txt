@@ -1,0 +1,24 @@
+# torch.futures#torch.futures.collect_all
+
+torch.futures.collect_all(futures) [source]
+ 
+Collects the provided Future objects into a single combined Future that is completed when all of the sub-futures are completed.  Parameters 
+futures (list) – a list of Future objects.  Returns 
+Returns a Future object to a list of the passed in Futures.    Example::
+
+>>> import torch
+>>>
+>>> fut0 = torch.futures.Future()
+>>> fut1 = torch.futures.Future()
+>>>
+>>> fut = torch.futures.collect_all([fut0, fut1])
+>>>
+>>> fut0.set_result(0)
+>>> fut1.set_result(1)
+>>>
+>>> fut_list = fut.wait()
+>>> print(f"fut0 result = {fut_list[0].wait()}")
+>>> print(f"fut1 result = {fut_list[1].wait()}")
+>>> # outputs:
+>>> # fut0 result = 0
+>>> # fut1 result = 1

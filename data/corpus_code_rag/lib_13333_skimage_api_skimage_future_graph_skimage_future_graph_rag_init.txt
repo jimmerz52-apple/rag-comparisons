@@ -1,0 +1,20 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG.__init__
+
+__init__(label_image=None, connectivity=1, data=None, **attr) [source]
+ 
+Initialize a graph with edges, name, or graph attributes.  Parameters 
+ 
+incoming_graph_datainput graph (optional, default: None) 
+
+Data to initialize graph. If None (default) an empty graph is created. The data can be an edge list, or any NetworkX graph object. If the corresponding optional Python packages are installed the data can also be a NumPy matrix or 2d ndarray, a SciPy sparse matrix, or a PyGraphviz graph.  
+attrkeyword arguments, optional (default= no attributes) 
+
+Attributes to add to graph as key=value pairs.      See also  
+convert 
+  Examples >>> G = nx.Graph()  # or DiGraph, MultiGraph, MultiDiGraph, etc
+>>> G = nx.Graph(name="my graph")
+>>> e = [(1, 2), (2, 3), (3, 4)]  # list of edges
+>>> G = nx.Graph(e)
+ Arbitrary graph attribute pairs (key=value) may be assigned >>> G = nx.Graph(e, day="Friday")
+>>> G.graph
+{'day': 'Friday'}

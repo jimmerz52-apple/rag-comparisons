@@ -1,0 +1,16 @@
+# pandas.reference.api.pandas.series.str.center
+
+pandas.Series.str.center   Series.str.center(width, fillchar=' ')[source]
+ 
+Pad left and right side of strings in the Series/Index. Equivalent to str.center().  Parameters 
+ 
+width:int
+
+
+Minimum width of resulting string; additional characters will be filled with fillchar.  
+fillchar:str
+
+
+Additional character for filling, default is whitespace.    Returns 
+ 
+filled:Series/Index of objects.

@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BufferedProtocol.buffer_updated
+
+BufferedProtocol.buffer_updated(nbytes)  
+Called when the buffer was updated with the received data. nbytes is the total number of bytes that were written to the buffer.

@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISFIFO
+
+stat.S_ISFIFO(mode)  
+Return non-zero if the mode is from a FIFO (named pipe).

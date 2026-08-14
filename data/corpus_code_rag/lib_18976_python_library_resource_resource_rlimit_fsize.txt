@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_FSIZE
+
+resource.RLIMIT_FSIZE  
+The maximum size of a file which the process may create.

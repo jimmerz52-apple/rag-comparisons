@@ -1,0 +1,3 @@
+# torch.tensor_attributes#torch.torch.memory_format
+
+class torch.memory_format

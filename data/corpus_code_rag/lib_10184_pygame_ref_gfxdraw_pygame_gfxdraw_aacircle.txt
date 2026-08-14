@@ -1,0 +1,19 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.aacircle
+
+pygame.gfxdraw.aacircle() 
+ draw an antialiased circle aacircle(surface, x, y, r, color) -> None  Draws an unfilled antialiased circle on the given surface.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+x (int) -- x coordinate of the center of the circle 
+y (int) -- y coordinate of the center of the circle 
+r (int) -- radius of the circle 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType

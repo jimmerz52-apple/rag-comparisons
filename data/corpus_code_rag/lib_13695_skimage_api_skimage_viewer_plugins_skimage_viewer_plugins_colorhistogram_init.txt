@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.ColorHistogram.__init__
+
+__init__(max_pct=0.99, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.find_control_points
+
+matplotlib.bezier.find_control_points(c1x, c1y, mmx, mmy, c2x, c2y)[source]
+ 
+Find control points of the Bezier curve passing through (c1x, c1y), (mmx, mmy), and (c2x, c2y), at parametric values 0, 0.5, and 1.

@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.isReservedKey
+
+Morsel.isReservedKey(K)  
+Whether K is a member of the set of keys of a Morsel.

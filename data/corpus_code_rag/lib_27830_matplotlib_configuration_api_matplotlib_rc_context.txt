@@ -1,0 +1,21 @@
+# matplotlib_configuration_api#matplotlib.rc_context
+
+matplotlib.rc_context(rc=None, fname=None)
+ 
+Return a context manager for temporarily changing rcParams.  Parameters 
+ 
+rcdict
+
+
+The rcParams to temporarily set.  
+fnamestr or path-like
+
+
+A file with Matplotlib rc settings. If both fname and rc are given, settings from rc take precedence.      See also  The matplotlibrc file
+  Examples Passing explicit values via a dict: with mpl.rc_context({'interactive': False}):
+    fig, ax = plt.subplots()
+    ax.plot(range(3), range(3))
+    fig.savefig('example.png')
+    plt.close(fig)
+ Loading settings from a file: with mpl.rc_context(fname='print.rc'):
+    plt.plot(x, y)  # uses 'print.rc'

@@ -1,0 +1,4 @@
+# python.library.asynchat#asynchat.async_chat.get_terminator
+
+async_chat.get_terminator()  
+Returns the current terminator for the channel.

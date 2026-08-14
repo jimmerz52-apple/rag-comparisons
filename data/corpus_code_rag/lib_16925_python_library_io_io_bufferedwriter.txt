@@ -1,0 +1,9 @@
+# python.library.io#io.BufferedWriter
+
+class io.BufferedWriter(raw, buffer_size=DEFAULT_BUFFER_SIZE)  
+A buffered binary stream providing higher-level access to a writeable, non seekable RawIOBase raw binary stream. It inherits BufferedIOBase. When writing to this object, data is normally placed into an internal buffer. The buffer will be written out to the underlying RawIOBase object under various conditions, including:  when the buffer gets too small for all pending data; when flush() is called; when a seek() is requested (for BufferedRandom objects); when the BufferedWriter object is closed or destroyed.  The constructor creates a BufferedWriter for the given writeable raw stream. If the buffer_size is not given, it defaults to DEFAULT_BUFFER_SIZE. BufferedWriter provides or overrides these methods in addition to those from BufferedIOBase and IOBase:  
+flush()  
+Force bytes held in the buffer into the raw stream. A BlockingIOError should be raised if the raw stream blocks. 
+  
+write(b)  
+Write the bytes-like object, b, and return the number of bytes written. When in non-blocking mode, a BlockingIOError is raised if the buffer needs to be written out but the raw stream blocks.

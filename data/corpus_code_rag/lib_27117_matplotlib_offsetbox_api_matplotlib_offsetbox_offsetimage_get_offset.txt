@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetImage.get_offset
+
+get_offset()[source]
+ 
+Return offset of the container.

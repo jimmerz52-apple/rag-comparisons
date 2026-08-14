@@ -1,0 +1,11 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.TmpDirCleaner
+
+classmatplotlib.backends.backend_pgf.TmpDirCleaner(*args, **kwargs)[source]
+ 
+Bases: object [Deprecated] Notes  Deprecated since version 3.4:     staticadd(tmpdir)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:   
+   staticcleanup_remaining_tmpdirs()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:   
+   remaining_tmpdirs={}

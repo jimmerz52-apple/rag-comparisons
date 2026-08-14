@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.Field.srid
+
+Field.srid  
+This is the SRID code that the field value should be transformed to. For example, if the map widget SRID is different from the SRID more generally used by your application or database, the field will automatically convert input values into that SRID.

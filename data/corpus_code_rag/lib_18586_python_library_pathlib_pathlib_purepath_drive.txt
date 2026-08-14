@@ -1,0 +1,11 @@
+# python.library.pathlib#pathlib.PurePath.drive
+
+PurePath.drive  
+A string representing the drive letter or name, if any: >>> PureWindowsPath('c:/Program Files/').drive
+'c:'
+>>> PureWindowsPath('/Program Files/').drive
+''
+>>> PurePosixPath('/etc').drive
+''
+ UNC shares are also considered drives: >>> PureWindowsPath('//host/share/foo.txt').drive
+'\\\\host\\share'

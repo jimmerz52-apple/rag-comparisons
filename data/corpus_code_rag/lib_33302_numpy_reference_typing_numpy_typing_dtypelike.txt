@@ -1,0 +1,12 @@
+# numpy.reference.typing#numpy.typing.DTypeLike
+
+numpy.typing.DTypeLike = typing.Union[...]
+ 
+A Union representing objects that can be coerced into a dtype. Among others this includes the likes of:  
+type objects. Character codes or the names of type objects. Objects with the .dtype attribute.   New in version 1.20.   See Also  Specifying and constructing data types
+
+A comprehensive overview of all objects that can be coerced into data types.    Examples >>> import numpy as np
+>>> import numpy.typing as npt
+
+>>> def as_dtype(d: npt.DTypeLike) -> np.dtype:
+...     return np.dtype(d)

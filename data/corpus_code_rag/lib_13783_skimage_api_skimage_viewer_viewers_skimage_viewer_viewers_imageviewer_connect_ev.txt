@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.viewers#skimage.viewer.viewers.ImageViewer.connect_event
+
+connect_event(event, callback) [source]
+ 
+Connect callback function to matplotlib event and return id.

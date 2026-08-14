@@ -1,0 +1,25 @@
+# python.library.mmap#mmap.MADV_PROTECT
+
+mmap.MADV_NORMAL  
+mmap.MADV_RANDOM  
+mmap.MADV_SEQUENTIAL  
+mmap.MADV_WILLNEED  
+mmap.MADV_DONTNEED  
+mmap.MADV_REMOVE  
+mmap.MADV_DONTFORK  
+mmap.MADV_DOFORK  
+mmap.MADV_HWPOISON  
+mmap.MADV_MERGEABLE  
+mmap.MADV_UNMERGEABLE  
+mmap.MADV_SOFT_OFFLINE  
+mmap.MADV_HUGEPAGE  
+mmap.MADV_NOHUGEPAGE  
+mmap.MADV_DONTDUMP  
+mmap.MADV_DODUMP  
+mmap.MADV_FREE  
+mmap.MADV_NOSYNC  
+mmap.MADV_AUTOSYNC  
+mmap.MADV_NOCORE  
+mmap.MADV_CORE  
+mmap.MADV_PROTECT  
+These options can be passed to mmap.madvise(). Not every option will be present on every system. Availability: Systems with the madvise() system call.  New in version 3.8.

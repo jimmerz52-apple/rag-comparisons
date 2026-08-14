@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.numel
+
+numel() → int  
+See torch.numel()

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.copy
+
+pandas.tseries.offsets.BusinessHour.copy   BusinessHour.copy()

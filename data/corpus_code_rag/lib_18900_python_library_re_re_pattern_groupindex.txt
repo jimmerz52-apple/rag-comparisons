@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.groupindex
+
+Pattern.groupindex  
+A dictionary mapping any symbolic group names defined by (?P<id>) to group numbers. The dictionary is empty if no symbolic groups were used in the pattern.

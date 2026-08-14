@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.mvlgamma_
+
+mvlgamma_(p) → Tensor  
+In-place version of mvlgamma()

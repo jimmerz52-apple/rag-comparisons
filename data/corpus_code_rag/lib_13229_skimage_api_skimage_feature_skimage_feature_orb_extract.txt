@@ -1,0 +1,18 @@
+# skimage.api.skimage.feature#skimage.feature.ORB.extract
+
+extract(image, keypoints, scales, orientations) [source]
+ 
+Extract rBRIEF binary descriptors for given keypoints in image. Note that the keypoints must be extracted using the same downscale and n_scales parameters. Additionally, if you want to extract both keypoints and descriptors you should use the faster detect_and_extract.  Parameters 
+ 
+image2D array 
+
+Input image.  
+keypoints(N, 2) array 
+
+Keypoint coordinates as (row, col).  
+scales(N, ) array 
+
+Corresponding scales.  
+orientations(N, ) array 
+
+Corresponding orientations in radians.

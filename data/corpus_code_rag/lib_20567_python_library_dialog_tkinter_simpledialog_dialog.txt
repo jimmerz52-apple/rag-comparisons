@@ -1,0 +1,9 @@
+# python.library.dialog#tkinter.simpledialog.Dialog
+
+class tkinter.simpledialog.Dialog(parent, title=None)  
+The base class for custom dialogs.  
+body(master)  
+Override to construct the dialog’s interface and return the widget that should have initial focus. 
+  
+buttonbox()  
+Default behaviour adds OK and Cancel buttons. Override for custom button layouts.

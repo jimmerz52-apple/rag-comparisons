@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.exec_command.find_executable
+
+numpy.distutils.exec_command.find_executable   distutils.exec_command.find_executable(exe, path=None, _cache={})[source]
+ 
+Return full path of a executable or None. Symbolic links are not followed.

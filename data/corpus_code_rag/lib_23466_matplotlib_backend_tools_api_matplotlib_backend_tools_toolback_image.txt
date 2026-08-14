@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolBack.image
+
+image='back'
+ 
+Filename of the image. str: Filename of the image to use in a Toolbar. If None, the name is used as a label in the toolbar button.

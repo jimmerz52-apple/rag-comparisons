@@ -1,0 +1,3 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_lib_source_files
+
+numpy.distutils.misc_util.get_lib_source_files(lib)[source]

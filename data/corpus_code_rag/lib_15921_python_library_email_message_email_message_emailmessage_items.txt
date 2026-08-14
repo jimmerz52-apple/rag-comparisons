@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.items
+
+items()  
+Return a list of 2-tuples containing all the message’s field headers and values.

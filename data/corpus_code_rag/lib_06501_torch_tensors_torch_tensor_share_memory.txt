@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.share_memory_
+
+share_memory_() [source]
+ 
+Moves the underlying storage to shared memory. This is a no-op if the underlying storage is already in shared memory and for CUDA tensors. Tensors in shared memory cannot be resized.

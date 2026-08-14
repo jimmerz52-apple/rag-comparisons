@@ -1,0 +1,46 @@
+# skimage.api.skimage.restoration#skimage.restoration.denoise_wavelet
+
+skimage.restoration.denoise_wavelet(image, sigma=None, wavelet='db1', mode='soft', wavelet_levels=None, multichannel=False, convert2ycbcr=False, method='BayesShrink', rescale_sigma=True) [source]
+ 
+Perform wavelet denoising on an image.  Parameters 
+ 
+imagendarray ([M[, N[, …P]][, C]) of ints, uints or floats 
+
+Input data to be denoised. image can be of any numeric type, but it is cast into an ndarray of floats for the computation of the denoised image.  
+sigmafloat or list, optional 
+
+The noise standard deviation used when computing the wavelet detail coefficient threshold(s). When None (default), the noise standard deviation is estimated via the method in [2].  
+waveletstring, optional 
+
+The type of wavelet to perform and can be any of the options pywt.wavelist outputs. The default is ‘db1’. For example, wavelet can be any of {'db2', 'haar', 'sym9'} and many more.  
+mode{‘soft’, ‘hard’}, optional 
+
+An optional argument to choose the type of denoising performed. It noted that choosing soft thresholding given additive noise finds the best approximation of the original image.  
+wavelet_levelsint or None, optional 
+
+The number of wavelet decomposition levels to use. The default is three less than the maximum number of possible decomposition levels.  
+multichannelbool, optional 
+
+Apply wavelet denoising separately for each channel (where channels correspond to the final axis of the array).  
+convert2ycbcrbool, optional 
+
+If True and multichannel True, do the wavelet denoising in the YCbCr colorspace instead of the RGB color space. This typically results in better performance for RGB images.  
+method{‘BayesShrink’, ‘VisuShrink’}, optional 
+
+Thresholding method to be used. The currently supported methods are “BayesShrink” [1] and “VisuShrink” [2]. Defaults to “BayesShrink”.  
+rescale_sigmabool, optional 
+
+If False, no rescaling of the user-provided sigma will be performed. The default of True rescales sigma appropriately if the image is rescaled internally.  New in version 0.16: rescale_sigma was introduced in 0.16     Returns 
+ 
+outndarray 
+
+Denoised image.     Notes The wavelet domain is a sparse representation of the image, and can be thought of similarly to the frequency domain of the Fourier transform. Sparse representations have most values zero or near-zero and truly random noise is (usually) represented by many small values in the wavelet domain. Setting all values below some threshold to 0 reduces the noise in the image, but larger thresholds also decrease the detail present in the image. If the input is 3D, this function performs wavelet denoising on each color plane separately.  Changed in version 0.16: For floating point inputs, the original input range is maintained and there is no clipping applied to the output. Other input types will be converted to a floating point value in the range [-1, 1] or [0, 1] depending on the input image range. Unless rescale_sigma = False, any internal rescaling applied to the image will also be applied to sigma to maintain the same relative amplitude.  Many wavelet coefficient thresholding approaches have been proposed. By default, denoise_wavelet applies BayesShrink, which is an adaptive thresholding method that computes separate thresholds for each wavelet sub-band as described in [1]. If method == "VisuShrink", a single “universal threshold” is applied to all wavelet detail coefficients as described in [2]. This threshold is designed to remove all Gaussian noise at a given sigma with high probability, but tends to produce images that appear overly smooth. Although any of the wavelets from PyWavelets can be selected, the thresholding methods assume an orthogonal wavelet transform and may not choose the threshold appropriately for biorthogonal wavelets. Orthogonal wavelets are desirable because white noise in the input remains white noise in the subbands. Biorthogonal wavelets lead to colored noise in the subbands. Additionally, the orthogonal wavelets in PyWavelets are orthonormal so that noise variance in the subbands remains identical to the noise variance of the input. Example orthogonal wavelets are the Daubechies (e.g. ‘db2’) or symmlet (e.g. ‘sym2’) families. References  
+1(1,2)  
+Chang, S. Grace, Bin Yu, and Martin Vetterli. “Adaptive wavelet thresholding for image denoising and compression.” Image Processing, IEEE Transactions on 9.9 (2000): 1532-1546. DOI:10.1109/83.862633  
+2(1,2,3)  
+D. L. Donoho and I. M. Johnstone. “Ideal spatial adaptation by wavelet shrinkage.” Biometrika 81.3 (1994): 425-455. DOI:10.1093/biomet/81.3.425   Examples >>> from skimage import color, data
+>>> img = img_as_float(data.astronaut())
+>>> img = color.rgb2gray(img)
+>>> img += 0.1 * np.random.randn(*img.shape)
+>>> img = np.clip(img, 0, 1)
+>>> denoised_img = denoise_wavelet(img, sigma=0.1, rescale_sigma=True)

@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.AsyncResult.ready
+
+ready()  
+Return whether the call has completed.

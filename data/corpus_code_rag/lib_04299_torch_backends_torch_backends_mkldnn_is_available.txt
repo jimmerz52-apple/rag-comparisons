@@ -1,0 +1,5 @@
+# torch.backends#torch.backends.mkldnn.is_available
+
+torch.backends.mkldnn.is_available() [source]
+ 
+Returns whether PyTorch is built with MKL-DNN support.

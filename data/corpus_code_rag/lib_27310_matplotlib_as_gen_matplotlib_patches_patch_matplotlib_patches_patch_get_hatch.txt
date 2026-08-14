@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_hatch
+
+get_hatch()[source]
+ 
+Return the hatching pattern.

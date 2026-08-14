@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.von_mises.VonMises.mean
+
+property mean  
+The provided mean is the circular one.

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PolyCollection.set_edgecolors
+
+set_edgecolors(c)[source]
+ 
+Alias for set_edgecolor.

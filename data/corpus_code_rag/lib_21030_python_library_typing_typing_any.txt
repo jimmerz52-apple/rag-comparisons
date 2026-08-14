@@ -1,0 +1,5 @@
+# python.library.typing#typing.Any
+
+typing.Any  
+Special type indicating an unconstrained type.  Every type is compatible with Any. 
+Any is compatible with every type.

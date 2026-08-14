@@ -1,0 +1,15 @@
+# python.library.nntplib#nntplib.NNTP.over
+
+NNTP.over(message_spec, *, file=None)  
+Send an OVER command, or an XOVER command on legacy servers. message_spec can be either a string representing a message id, or a (first, last) tuple of numbers indicating a range of articles in the current group, or a (first, None) tuple indicating a range of articles starting from first to the last article in the current group, or None to select the current article in the current group. Return a pair (response, overviews). overviews is a list of (article_number, overview) tuples, one for each article selected by message_spec. Each overview is a dictionary with the same number of items, but this number depends on the server. These items are either message headers (the key is then the lower-cased header name) or metadata items (the key is then the metadata name prepended with ":"). The following items are guaranteed to be present by the NNTP specification:  the subject, from, date, message-id and references headers the :bytes metadata: the number of bytes in the entire raw article (including headers and body) the :lines metadata: the number of lines in the article body  The value of each item is either a string, or None if not present. It is advisable to use the decode_header() function on header values when they may contain non-ASCII characters: >>> _, _, first, last, _ = s.group('gmane.comp.python.devel')
+>>> resp, overviews = s.over((last, last))
+>>> art_num, over = overviews[0]
+>>> art_num
+117216
+>>> list(over.keys())
+['xref', 'from', ':lines', ':bytes', 'references', 'date', 'message-id', 'subject']
+>>> over['from']
+'=?UTF-8?B?Ik1hcnRpbiB2LiBMw7Z3aXMi?= <martin@v.loewis.de>'
+>>> nntplib.decode_header(over['from'])
+'"Martin v. Löwis" <martin@v.loewis.de>'
+  New in version 3.2.

@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.unmap_rgb
+
+unmap_rgb() 
+ convert a mapped integer color value into a Color unmap_rgb(mapped_int) -> Color  Convert an mapped integer color into the RGB color components for this Surface. Mapped color values are not often used inside pygame, but can be passed to most functions that require a Surface and a color. See the Surface object documentation for more information about colors and pixel formats.

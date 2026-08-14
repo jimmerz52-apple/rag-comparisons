@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.FileHandler.close
+
+close()  
+Closes the file.

@@ -1,0 +1,4 @@
+# python.library.py_compile#py_compile.PycInvalidationMode.UNCHECKED_HASH
+
+UNCHECKED_HASH  
+Like CHECKED_HASH, the .pyc file includes a hash of the source file content. However, Python will at runtime assume the .pyc file is up to date and not validate the .pyc against the source file at all. This option is useful when the .pycs are kept up to date by some system external to Python like a build system.

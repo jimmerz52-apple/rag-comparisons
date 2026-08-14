@@ -1,0 +1,4 @@
+# python.library.platform#platform.platform
+
+platform.platform(aliased=0, terse=0)  
+Returns a single string identifying the underlying platform with as much useful information as possible. The output is intended to be human readable rather than machine parseable. It may look different on different platforms and this is intended. If aliased is true, the function will use aliases for various platforms that report system names which differ from their common names, for example SunOS will be reported as Solaris. The system_alias() function is used to implement this. Setting terse to true causes the function to return only the absolute minimum information needed to identify the platform.  Changed in version 3.8: On macOS, the function now uses mac_ver(), if it returns a non-empty release string, to get the macOS version rather than the darwin version.

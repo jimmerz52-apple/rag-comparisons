@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.CurrentByteIndex
+
+xmlparser.CurrentByteIndex  
+Current byte index in the parser input.

@@ -1,0 +1,4 @@
+# python.library.os#os.getsid
+
+os.getsid(pid)  
+Call the system call getsid(). See the Unix manual for the semantics. Availability: Unix.

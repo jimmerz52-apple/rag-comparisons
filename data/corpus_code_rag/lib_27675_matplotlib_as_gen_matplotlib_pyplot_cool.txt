@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.cool
+
+matplotlib.pyplot.cool   matplotlib.pyplot.cool()[source]
+ 
+Set the colormap to 'cool'. This changes the default colormap as well as the colormap of the current image if there is one. See help(colormaps) for more information.

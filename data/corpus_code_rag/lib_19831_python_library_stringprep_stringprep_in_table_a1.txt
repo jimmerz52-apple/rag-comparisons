@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_a1
+
+stringprep.in_table_a1(code)  
+Determine whether code is in tableA.1 (Unassigned code points in Unicode 3.2).

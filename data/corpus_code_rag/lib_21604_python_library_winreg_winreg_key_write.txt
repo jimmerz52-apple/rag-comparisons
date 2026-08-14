@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_WRITE
+
+winreg.KEY_WRITE  
+Combines the STANDARD_RIGHTS_WRITE, KEY_SET_VALUE, and KEY_CREATE_SUB_KEY access rights.

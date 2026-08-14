@@ -1,0 +1,10 @@
+# python.library.turtle#turtle.register_shape
+
+turtle.register_shape(name, shape=None)  
+turtle.addshape(name, shape=None)  
+There are three different ways to call this function:  
+name is the name of a gif-file and shape is None: Install the corresponding image shape. >>> screen.register_shape("turtle.gif")
+  Note Image shapes do not rotate when turning the turtle, so they do not display the heading of the turtle!   
+name is an arbitrary string and shape is a tuple of pairs of coordinates: Install the corresponding polygon shape. >>> screen.register_shape("triangle", ((5,-3), (0,5), (-5,-3)))
+  
+name is an arbitrary string and shape is a (compound) Shape object: Install the corresponding compound shape.  Add a turtle shape to TurtleScreen’s shapelist. Only thusly registered shapes can be used by issuing the command shape(shapename).

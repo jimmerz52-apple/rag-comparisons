@@ -1,0 +1,5 @@
+# torch.cpp_extension#torch.utils.cpp_extension.verify_ninja_availability
+
+torch.utils.cpp_extension.verify_ninja_availability() [source]
+ 
+Raises RuntimeError if ninja build system is not available on the system, does nothing otherwise.

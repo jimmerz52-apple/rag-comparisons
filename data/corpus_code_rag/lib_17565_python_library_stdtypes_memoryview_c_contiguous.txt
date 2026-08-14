@@ -1,0 +1,4 @@
+# python.library.stdtypes#memoryview.c_contiguous
+
+c_contiguous  
+A bool indicating whether the memory is C-contiguous.  New in version 3.3.

@@ -1,0 +1,7 @@
+# 870
+Task: 870
+
+# Write a function to calculate the sum of the positive numbers of a given list of numbers using lambda function.
+def sum_positivenum(nums):
+  sum_positivenum = list(filter(lambda nums:nums>0,nums))
+  return sum(sum_positivenum)

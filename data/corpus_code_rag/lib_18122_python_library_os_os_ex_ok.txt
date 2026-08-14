@@ -1,0 +1,4 @@
+# python.library.os#os.EX_OK
+
+os.EX_OK  
+Exit code that means no error occurred. Availability: Unix.

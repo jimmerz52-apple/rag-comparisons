@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.is_transform_set
+
+matplotlib.artist.Artist.is_transform_set   Artist.is_transform_set()[source]
+ 
+Return whether the Artist has an explicitly set transform. This is True after set_transform has been called.

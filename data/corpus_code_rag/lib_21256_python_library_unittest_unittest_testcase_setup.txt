@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.setUp
+
+setUp()  
+Method called to prepare the test fixture. This is called immediately before calling the test method; other than AssertionError or SkipTest, any exception raised by this method will be considered an error rather than a test failure. The default implementation does nothing.

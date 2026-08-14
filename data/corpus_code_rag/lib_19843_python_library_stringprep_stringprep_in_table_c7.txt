@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_c7
+
+stringprep.in_table_c7(code)  
+Determine whether code is in tableC.7 (Inappropriate for canonical representation).

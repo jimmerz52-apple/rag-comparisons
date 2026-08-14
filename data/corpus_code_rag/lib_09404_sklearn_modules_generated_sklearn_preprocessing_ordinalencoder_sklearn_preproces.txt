@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.ordinalencoder#sklearn.preprocessing.OrdinalEncoder.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Convert the data back to the original representation.  Parameters 
+ 
+Xarray-like or sparse matrix, shape [n_samples, n_encoded_features] 
+
+The transformed data.    Returns 
+ 
+X_trarray-like, shape [n_samples, n_features] 
+
+Inverse transformed array.

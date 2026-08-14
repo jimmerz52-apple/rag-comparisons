@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.poly3dcollection#mpl_toolkits.mplot3d.art3d.Poly3DCollection.set_zsort
+
+set_zsort(zsort)[source]
+ 
+Set the calculation method for the z-order.  Parameters 
+ 
+zsort{'average', 'min', 'max'}
+
+
+The function applied on the z-coordinates of the vertices in the viewer's coordinate system, to determine the z-order.

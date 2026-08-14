@@ -1,0 +1,4 @@
+# python.library.queue#queue.SimpleQueue.empty
+
+SimpleQueue.empty()  
+Return True if the queue is empty, False otherwise. If empty() returns False it doesn’t guarantee that a subsequent call to get() will not block.

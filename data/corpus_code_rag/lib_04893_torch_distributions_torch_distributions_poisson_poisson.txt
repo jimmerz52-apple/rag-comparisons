@@ -1,0 +1,26 @@
+# torch.distributions#torch.distributions.poisson.Poisson
+
+class torch.distributions.poisson.Poisson(rate, validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Creates a Poisson distribution parameterized by rate, the rate parameter. Samples are nonnegative integers, with a pmf given by  rateke−ratek!\mathrm{rate}^k \frac{e^{-\mathrm{rate}}}{k!}  
+Example: >>> m = Poisson(torch.tensor([4]))
+>>> m.sample()
+tensor([ 3.])
+  Parameters 
+rate (Number, Tensor) – the rate parameter    
+arg_constraints = {'rate': GreaterThan(lower_bound=0.0)} 
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+support = IntegerGreaterThan(lower_bound=0) 
+  
+property variance

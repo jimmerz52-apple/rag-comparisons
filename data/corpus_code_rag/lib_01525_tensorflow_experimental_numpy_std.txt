@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.std
+
+tf.experimental.numpy.std TensorFlow variant of NumPy's std. 
+tf.experimental.numpy.std(
+    a, axis=None, keepdims=None
+)
+ Unsupported arguments: dtype, out, ddof. See the NumPy documentation for numpy.std.

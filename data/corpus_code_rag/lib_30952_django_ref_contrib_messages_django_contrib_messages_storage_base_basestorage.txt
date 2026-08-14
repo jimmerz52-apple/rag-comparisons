@@ -1,0 +1,3 @@
+# django.ref.contrib.messages#django.contrib.messages.storage.base.BaseStorage
+
+class storage.base.BaseStorage

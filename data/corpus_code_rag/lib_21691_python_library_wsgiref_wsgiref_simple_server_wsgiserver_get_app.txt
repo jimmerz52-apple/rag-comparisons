@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.simple_server.WSGIServer.get_app
+
+get_app()  
+Returns the currently-set application callable.

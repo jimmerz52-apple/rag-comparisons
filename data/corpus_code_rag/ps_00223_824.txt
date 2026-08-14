@@ -1,0 +1,9 @@
+# 824
+Task: 824
+
+# Write a python function to remove even numbers from a given list.
+def remove_even(l):
+    for i in l:
+        if i % 2 == 0:
+            l.remove(i)
+    return l

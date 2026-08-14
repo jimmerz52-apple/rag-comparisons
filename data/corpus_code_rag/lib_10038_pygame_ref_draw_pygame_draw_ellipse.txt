@@ -1,0 +1,20 @@
+# pygame.ref.draw#pygame.draw.ellipse
+
+pygame.draw.ellipse() 
+ draw an ellipse ellipse(surface, color, rect) -> Rect ellipse(surface, color, rect, width=0) -> Rect  Draws an ellipse on the given surface.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+color (Color or int or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+ 
+rect (Rect) -- rectangle to indicate the position and dimensions of the ellipse, the ellipse will be centered inside the rectangle and bounded by it 
+width (int) -- (optional) used for line thickness or to indicate that the ellipse is to be filled (not to be confused with the width value of the rect parameter)  
+ if width == 0, (default) fill the ellipse if width > 0, used for line thickness if width < 0, nothing will be drawn    Note When using width values > 1, the edge lines will only grow inward from the original boundary of the rect parameter.  
+     
+Returns:
+
+a rect bounding the changed pixels, if nothing is drawn the bounding rect's position will be the position of the given rect parameter and its width and height will be 0   
+Return type:
+
+Rect      Changed in pygame 2.0.0: Added support for keyword arguments.

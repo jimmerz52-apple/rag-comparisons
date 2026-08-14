@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.composite_transform_factory
+
+matplotlib.transforms.composite_transform_factory(a, b)[source]
+ 
+Create a new composite transform that is the result of applying transform a then transform b. Shortcut versions of the blended transform are provided for the case where both child transforms are affine, or one or the other is the identity transform. Composite transforms may also be created using the '+' operator, e.g.: c = a + b

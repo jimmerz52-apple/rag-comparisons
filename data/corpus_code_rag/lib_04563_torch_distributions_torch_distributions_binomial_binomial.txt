@@ -1,0 +1,46 @@
+# torch.distributions#torch.distributions.binomial.Binomial
+
+class torch.distributions.binomial.Binomial(total_count=1, probs=None, logits=None, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Creates a Binomial distribution parameterized by total_count and either probs or logits (but not both). total_count must be broadcastable with probs/logits. Example: >>> m = Binomial(100, torch.tensor([0 , .2, .8, 1]))
+>>> x = m.sample()
+tensor([   0.,   22.,   71.,  100.])
+
+>>> m = Binomial(torch.tensor([[5.], [10.]]), torch.tensor([0.5, 0.8]))
+>>> x = m.sample()
+tensor([[ 4.,  5.],
+        [ 7.,  6.]])
+  Parameters 
+ 
+total_count (int or Tensor) – number of Bernoulli trials 
+probs (Tensor) – Event probabilities 
+logits (Tensor) – Event log-odds     
+arg_constraints = {'logits': Real(), 'probs': Interval(lower_bound=0.0, upper_bound=1.0), 'total_count': IntegerGreaterThan(lower_bound=0)} 
+  
+enumerate_support(expand=True) [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_enumerate_support = True 
+  
+log_prob(value) [source]
+
+  
+logits [source]
+
+  
+property mean 
+  
+property param_shape 
+  
+probs [source]
+
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+property support 
+  
+property variance

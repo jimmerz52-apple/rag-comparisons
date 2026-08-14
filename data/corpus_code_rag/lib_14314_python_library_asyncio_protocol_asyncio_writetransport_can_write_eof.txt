@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.WriteTransport.can_write_eof
+
+WriteTransport.can_write_eof()  
+Return True if the transport supports write_eof(), False if not.

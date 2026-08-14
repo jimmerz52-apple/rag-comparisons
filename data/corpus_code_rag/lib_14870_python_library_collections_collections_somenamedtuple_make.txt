@@ -1,0 +1,6 @@
+# python.library.collections#collections.somenamedtuple._make
+
+classmethod somenamedtuple._make(iterable)  
+Class method that makes a new instance from an existing sequence or iterable. >>> t = [11, 22]
+>>> Point._make(t)
+Point(x=11, y=22)

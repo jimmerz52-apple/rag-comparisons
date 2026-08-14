@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.BoundedSemaphore
+
+class multiprocessing.BoundedSemaphore([value])  
+A bounded semaphore object: a close analog of threading.BoundedSemaphore. A solitary difference from its close analog exists: its acquire method’s first argument is named block, as is consistent with Lock.acquire().  Note On Mac OS X, this is indistinguishable from Semaphore because sem_getvalue() is not implemented on that platform.

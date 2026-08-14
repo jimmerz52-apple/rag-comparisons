@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.sigmoid
+
+torch.nn.functional.sigmoid(input) → Tensor [source]
+ 
+Applies the element-wise function Sigmoid(x)=11+exp⁡(−x)\text{Sigmoid}(x) = \frac{1}{1 + \exp(-x)}  See Sigmoid for more details.

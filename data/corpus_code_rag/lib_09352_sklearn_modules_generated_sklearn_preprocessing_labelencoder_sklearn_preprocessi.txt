@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.preprocessing.labelencoder#sklearn.preprocessing.LabelEncoder.transform
+
+transform(y) [source]
+ 
+Transform labels to normalized encoding.  Parameters 
+ 
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+yarray-like of shape (n_samples,)

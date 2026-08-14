@@ -1,0 +1,24 @@
+# matplotlib.mlab_api#matplotlib.mlab.detrend
+
+matplotlib.mlab.detrend(x, key=None, axis=None)[source]
+ 
+Return x with its trend removed.  Parameters 
+ 
+xarray or sequence
+
+
+Array or sequence containing the data.  
+key{'default', 'constant', 'mean', 'linear', 'none'} or function
+
+
+The detrending algorithm to use. 'default', 'mean', and 'constant' are the same as detrend_mean. 'linear' is the same as detrend_linear. 'none' is the same as detrend_none. The default is 'mean'. See the corresponding functions for more details regarding the algorithms. Can also be a function that carries out the detrend operation.  
+axisint
+
+
+The axis along which to do the detrending.      See also  detrend_mean
+
+Implementation of the 'mean' algorithm.  detrend_linear
+
+Implementation of the 'linear' algorithm.  detrend_none
+
+Implementation of the 'none' algorithm.

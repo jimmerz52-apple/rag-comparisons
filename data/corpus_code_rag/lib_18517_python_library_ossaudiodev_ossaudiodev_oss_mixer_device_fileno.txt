@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.fileno
+
+oss_mixer_device.fileno()  
+Returns the file handle number of the open mixer device file.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.set_offset_position
+
+matplotlib.axis.YAxis.set_offset_position   YAxis.set_offset_position(position)[source]
+ 
+ Parameters 
+ 
+position{'left', 'right'}

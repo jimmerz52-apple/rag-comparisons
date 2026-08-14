@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.move_to_front
+
+move_to_front() 
+ brings the sprite to front layer move_to_front(sprite) -> None  Brings the sprite to front, changing sprite layer to topmost layer (added at the end of that layer).

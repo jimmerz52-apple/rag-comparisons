@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.round_
+
+round_() → Tensor  
+In-place version of round()

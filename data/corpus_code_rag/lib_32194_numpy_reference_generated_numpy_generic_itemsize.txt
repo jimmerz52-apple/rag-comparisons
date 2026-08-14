@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.itemsize
+
+numpy.generic.itemsize attribute   generic.itemsize
+ 
+The length of one element in bytes.

@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.JSONTag.check
+
+check(value)  
+Check if the given value should be tagged by this tag.  Parameters 
+value (Any) –   Return type 
+bool

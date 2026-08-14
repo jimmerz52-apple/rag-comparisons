@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.period.freqstr
+
+pandas.Period.freqstr   Period.freqstr
+ 
+Return a string representation of the frequency.

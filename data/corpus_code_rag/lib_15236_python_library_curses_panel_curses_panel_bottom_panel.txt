@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.bottom_panel
+
+curses.panel.bottom_panel()  
+Returns the bottom panel in the panel stack.

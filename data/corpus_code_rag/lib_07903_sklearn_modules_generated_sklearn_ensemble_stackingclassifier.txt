@@ -1,0 +1,203 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingclassifier
+
+sklearn.ensemble.StackingClassifier  
+class sklearn.ensemble.StackingClassifier(estimators, final_estimator=None, *, cv=None, stack_method='auto', n_jobs=None, passthrough=False, verbose=0) [source]
+ 
+Stack of estimators with a final classifier. Stacked generalization consists in stacking the output of individual estimator and use a classifier to compute the final prediction. Stacking allows to use the strength of each individual estimator by using their output as input of a final estimator. Note that estimators_ are fitted on the full X while final_estimator_ is trained using cross-validated predictions of the base estimators using cross_val_predict. Read more in the User Guide.  New in version 0.22.   Parameters 
+ 
+estimatorslist of (str, estimator) 
+
+Base estimators which will be stacked together. Each element of the list is defined as a tuple of string (i.e. name) and an estimator instance. An estimator can be set to ‘drop’ using set_params.  
+final_estimatorestimator, default=None 
+
+A classifier which will be used to combine the base estimators. The default classifier is a LogisticRegression.  
+cvint, cross-validation generator or an iterable, default=None 
+
+Determines the cross-validation splitting strategy used in cross_val_predict to train final_estimator. Possible inputs for cv are:  None, to use the default 5-fold cross validation, integer, to specify the number of folds in a (Stratified) KFold, An object to be used as a cross-validation generator, An iterable yielding train, test splits.  For integer/None inputs, if the estimator is a classifier and y is either binary or multiclass, StratifiedKFold is used. In all other cases, KFold is used. Refer User Guide for the various cross-validation strategies that can be used here.  Note A larger number of split will provide no benefits if the number of training samples is large enough. Indeed, the training time will increase. cv is not used for model evaluation but for prediction.   
+stack_method{‘auto’, ‘predict_proba’, ‘decision_function’, ‘predict’}, default=’auto’ 
+
+Methods called for each base estimator. It can be:  if ‘auto’, it will try to invoke, for each estimator, 'predict_proba', 'decision_function' or 'predict' in that order. otherwise, one of 'predict_proba', 'decision_function' or 'predict'. If the method is not implemented by the estimator, it will raise an error.   
+n_jobsint, default=None 
+
+The number of jobs to run in parallel all estimators fit. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.  
+passthroughbool, default=False 
+
+When False, only the predictions of estimators will be used as training data for final_estimator. When True, the final_estimator is trained on the predictions as well as the original training data.  
+verboseint, default=0 
+
+Verbosity level.    Attributes 
+ 
+classes_ndarray of shape (n_classes,) 
+
+Class labels.  
+estimators_list of estimators 
+
+The elements of the estimators parameter, having been fitted on the training data. If an estimator has been set to 'drop', it will not appear in estimators_.  
+named_estimators_Bunch 
+
+Attribute to access any fitted sub-estimators by name.  
+final_estimator_estimator 
+
+The classifier which predicts given the output of estimators_.  
+stack_method_list of str 
+
+The method used by each base estimator.     Notes When predict_proba is used by each estimator (i.e. most of the time for stack_method='auto' or specifically for stack_method='predict_proba'), The first column predicted by each estimator will be dropped in the case of a binary classification problem. Indeed, both feature will be perfectly collinear. References  
+1  
+Wolpert, David H. “Stacked generalization.” Neural networks 5.2 (1992): 241-259.   Examples >>> from sklearn.datasets import load_iris
+>>> from sklearn.ensemble import RandomForestClassifier
+>>> from sklearn.svm import LinearSVC
+>>> from sklearn.linear_model import LogisticRegression
+>>> from sklearn.preprocessing import StandardScaler
+>>> from sklearn.pipeline import make_pipeline
+>>> from sklearn.ensemble import StackingClassifier
+>>> X, y = load_iris(return_X_y=True)
+>>> estimators = [
+...     ('rf', RandomForestClassifier(n_estimators=10, random_state=42)),
+...     ('svr', make_pipeline(StandardScaler(),
+...                           LinearSVC(random_state=42)))
+... ]
+>>> clf = StackingClassifier(
+...     estimators=estimators, final_estimator=LogisticRegression()
+... )
+>>> from sklearn.model_selection import train_test_split
+>>> X_train, X_test, y_train, y_test = train_test_split(
+...     X, y, stratify=y, random_state=42
+... )
+>>> clf.fit(X_train, y_train).score(X_test, y_test)
+0.9...
+ Methods  
+decision_function(X) Predict decision function for samples in X using final_estimator_.decision_function.  
+fit(X, y[, sample_weight]) Fit the estimators.  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_params([deep]) Get the parameters of an estimator from the ensemble.  
+predict(X, **predict_params) Predict target for X.  
+predict_proba(X) Predict class probabilities for X using final_estimator_.predict_proba.  
+score(X, y[, sample_weight]) Return the mean accuracy on the given test data and labels.  
+set_params(**params) Set the parameters of an estimator from the ensemble.  
+transform(X) Return class labels or probabilities for X for each estimator.    
+decision_function(X) [source]
+ 
+Predict decision function for samples in X using final_estimator_.decision_function.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+decisionsndarray of shape (n_samples,), (n_samples, n_classes), or (n_samples, n_classes * (n_classes-1) / 2) 
+
+The decision function computed the final estimator.     
+  
+fit(X, y, sample_weight=None) [source]
+ 
+Fit the estimators.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Note that this is supported only if all underlying estimators support sample weights.    Returns 
+ 
+selfobject 
+   
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_params(deep=True) [source]
+ 
+Get the parameters of an estimator from the ensemble. Returns the parameters given in the constructor as well as the estimators contained within the estimators parameter.  Parameters 
+ 
+deepbool, default=True 
+
+Setting it to True gets the various estimators and the parameters of the estimators as well.     
+  
+property n_features_in_  
+Number of features seen during fit. 
+  
+predict(X, **predict_params) [source]
+ 
+Predict target for X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.  
+**predict_paramsdict of str -> obj 
+
+Parameters to the predict called by the final_estimator. Note that this may be used to return uncertainties from some estimators with return_std or return_cov. Be aware that it will only accounts for uncertainty in the final estimator.    Returns 
+ 
+y_predndarray of shape (n_samples,) or (n_samples, n_output) 
+
+Predicted targets.     
+  
+predict_proba(X) [source]
+ 
+Predict class probabilities for X using final_estimator_.predict_proba.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+probabilitiesndarray of shape (n_samples, n_classes) or list of ndarray of shape (n_output,) 
+
+The class probabilities of the input samples.     
+  
+score(X, y, sample_weight=None) [source]
+ 
+Return the mean accuracy on the given test data and labels. In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True labels for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+Mean accuracy of self.predict(X) wrt. y.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of an estimator from the ensemble. Valid parameter keys can be listed with get_params(). Note that you can directly set the parameters of the estimators contained in estimators.  Parameters 
+ 
+**paramskeyword arguments 
+
+Specific parameters using e.g. set_params(parameter_name=new_value). In addition, to setting the parameters of the estimator, the individual estimator of the estimators can also be set, or can be removed by setting them to ‘drop’.     
+  
+transform(X) [source]
+ 
+Return class labels or probabilities for X for each estimator.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+y_predsndarray of shape (n_samples, n_estimators) or (n_samples, n_classes * n_estimators) 
+
+Prediction outputs for each estimator.     
+ 
+ Examples using sklearn.ensemble.StackingClassifier
+ 
+  Release Highlights for scikit-learn 0.22

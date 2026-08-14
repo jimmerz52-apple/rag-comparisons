@@ -1,0 +1,4 @@
+# python.library.code#code.InteractiveInterpreter.runsource
+
+InteractiveInterpreter.runsource(source, filename="<input>", symbol="single")  
+Compile and run some source in the interpreter. Arguments are the same as for compile_command(); the default for filename is '<input>', and for symbol is 'single'. One of several things can happen:  The input is incorrect; compile_command() raised an exception (SyntaxError or OverflowError). A syntax traceback will be printed by calling the showsyntaxerror() method. runsource() returns False. The input is incomplete, and more input is required; compile_command() returned None. runsource() returns True. The input is complete; compile_command() returned a code object. The code is executed by calling the runcode() (which also handles run-time exceptions, except for SystemExit). runsource() returns False.  The return value can be used to decide whether to use sys.ps1 or sys.ps2 to prompt the next line.

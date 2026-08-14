@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.WorkerInfo.id
+
+property id  
+Globally unique id to identify the worker.

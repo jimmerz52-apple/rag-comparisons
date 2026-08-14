@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.event_shape
+
+property event_shape  
+Returns the shape of a single sample (without batching).

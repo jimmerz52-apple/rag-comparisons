@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.polynomial.polynomial.copy
+
+numpy.polynomial.polynomial.Polynomial.copy method   polynomial.polynomial.Polynomial.copy()[source]
+ 
+Return a copy.  Returns 
+ 
+new_seriesseries
+
+
+Copy of self.

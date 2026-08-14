@@ -1,0 +1,188 @@
+# skimage.api.skimage.measure#skimage.measure.regionprops
+
+skimage.measure.regionprops(label_image, intensity_image=None, cache=True, coordinates=None, *, extra_properties=None) [source]
+ 
+Measure properties of labeled image regions.  Parameters 
+ 
+label_image(M, N[, P]) ndarray 
+
+Labeled input image. Labels with value 0 are ignored.  Changed in version 0.14.1: Previously, label_image was processed by numpy.squeeze and so any number of singleton dimensions was allowed. This resulted in inconsistent handling of images with singleton dimensions. To recover the old behaviour, use regionprops(np.squeeze(label_image), ...).   
+intensity_image(M, N[, P][, C]) ndarray, optional 
+
+Intensity (i.e., input) image with same size as labeled image, plus optionally an extra dimension for multichannel data. Default is None.  Changed in version 0.18.0: The ability to provide an extra dimension for channels was added.   
+cachebool, optional 
+
+Determine whether to cache calculated properties. The computation is much faster for cached properties, whereas the memory consumption increases.  
+coordinatesDEPRECATED 
+
+This argument is deprecated and will be removed in a future version of scikit-image. See Coordinate conventions for more details.  Deprecated since version 0.16.0: Use “rc” coordinates everywhere. It may be sufficient to call numpy.transpose on your label image to get the same values as 0.15 and earlier. However, for some properties, the transformation will be less trivial. For example, the new orientation is \(\frac{\pi}{2}\) plus the old orientation.   
+extra_propertiesIterable of callables 
+
+Add extra property computation functions that are not included with skimage. The name of the property is derived from the function name, the dtype is inferred by calling the function on a small sample. If the name of an extra property clashes with the name of an existing property the extra property wil not be visible and a UserWarning is issued. A property computation function must take a region mask as its first argument. If the property requires an intensity image, it must accept the intensity image as the second argument.    Returns 
+ 
+propertieslist of RegionProperties 
+
+Each item describes one labeled region, and can be accessed using the attributes listed below.      See also  
+label
+
+  Notes The following properties can be accessed as attributes or keys:  
+areaint 
+
+Number of pixels of the region.  
+bboxtuple 
+
+Bounding box (min_row, min_col, max_row, max_col). Pixels belonging to the bounding box are in the half-open interval [min_row; max_row) and [min_col; max_col).  
+bbox_areaint 
+
+Number of pixels of bounding box.  
+centroidarray 
+
+Centroid coordinate tuple (row, col).  
+convex_areaint 
+
+Number of pixels of convex hull image, which is the smallest convex polygon that encloses the region.  
+convex_image(H, J) ndarray 
+
+Binary convex hull image which has the same size as bounding box.  
+coords(N, 2) ndarray 
+
+Coordinate list (row, col) of the region.  
+eccentricityfloat 
+
+Eccentricity of the ellipse that has the same second-moments as the region. The eccentricity is the ratio of the focal distance (distance between focal points) over the major axis length. The value is in the interval [0, 1). When it is 0, the ellipse becomes a circle.  
+equivalent_diameterfloat 
+
+The diameter of a circle with the same area as the region.  
+euler_numberint 
+
+Euler characteristic of the set of non-zero pixels. Computed as number of connected components subtracted by number of holes (input.ndim connectivity). In 3D, number of connected components plus number of holes subtracted by number of tunnels.  
+extentfloat 
+
+Ratio of pixels in the region to pixels in the total bounding box. Computed as area / (rows * cols)  
+feret_diameter_maxfloat 
+
+Maximum Feret’s diameter computed as the longest distance between points around a region’s convex hull contour as determined by find_contours. [5]  
+filled_areaint 
+
+Number of pixels of the region will all the holes filled in. Describes the area of the filled_image.  
+filled_image(H, J) ndarray 
+
+Binary region image with filled holes which has the same size as bounding box.  
+image(H, J) ndarray 
+
+Sliced binary region image which has the same size as bounding box.  
+inertia_tensorndarray 
+
+Inertia tensor of the region for the rotation around its mass.  
+inertia_tensor_eigvalstuple 
+
+The eigenvalues of the inertia tensor in decreasing order.  
+intensity_imagendarray 
+
+Image inside region bounding box.  
+labelint 
+
+The label in the labeled input image.  
+local_centroidarray 
+
+Centroid coordinate tuple (row, col), relative to region bounding box.  
+major_axis_lengthfloat 
+
+The length of the major axis of the ellipse that has the same normalized second central moments as the region.  
+max_intensityfloat 
+
+Value with the greatest intensity in the region.  
+mean_intensityfloat 
+
+Value with the mean intensity in the region.  
+min_intensityfloat 
+
+Value with the least intensity in the region.  
+minor_axis_lengthfloat 
+
+The length of the minor axis of the ellipse that has the same normalized second central moments as the region.  
+moments(3, 3) ndarray 
+
+Spatial moments up to 3rd order: m_ij = sum{ array(row, col) * row^i * col^j }
+ where the sum is over the row, col coordinates of the region.  
+moments_central(3, 3) ndarray 
+
+Central moments (translation invariant) up to 3rd order: mu_ij = sum{ array(row, col) * (row - row_c)^i * (col - col_c)^j }
+ where the sum is over the row, col coordinates of the region, and row_c and col_c are the coordinates of the region’s centroid.  
+moments_hutuple 
+
+Hu moments (translation, scale and rotation invariant).  
+moments_normalized(3, 3) ndarray 
+
+Normalized moments (translation and scale invariant) up to 3rd order: nu_ij = mu_ij / m_00^[(i+j)/2 + 1]
+ where m_00 is the zeroth spatial moment.  
+orientationfloat 
+
+Angle between the 0th axis (rows) and the major axis of the ellipse that has the same second moments as the region, ranging from -pi/2 to pi/2 counter-clockwise.  
+perimeterfloat 
+
+Perimeter of object which approximates the contour as a line through the centers of border pixels using a 4-connectivity.  
+perimeter_croftonfloat 
+
+Perimeter of object approximated by the Crofton formula in 4 directions.  
+slicetuple of slices 
+
+A slice to extract the object from the source image.  
+solidityfloat 
+
+Ratio of pixels in the region to pixels of the convex hull image.  
+weighted_centroidarray 
+
+Centroid coordinate tuple (row, col) weighted with intensity image.  
+weighted_local_centroidarray 
+
+Centroid coordinate tuple (row, col), relative to region bounding box, weighted with intensity image.  
+weighted_moments(3, 3) ndarray 
+
+Spatial moments of intensity image up to 3rd order: wm_ij = sum{ array(row, col) * row^i * col^j }
+ where the sum is over the row, col coordinates of the region.  
+weighted_moments_central(3, 3) ndarray 
+
+Central moments (translation invariant) of intensity image up to 3rd order: wmu_ij = sum{ array(row, col) * (row - row_c)^i * (col - col_c)^j }
+ where the sum is over the row, col coordinates of the region, and row_c and col_c are the coordinates of the region’s weighted centroid.  
+weighted_moments_hutuple 
+
+Hu moments (translation, scale and rotation invariant) of intensity image.  
+weighted_moments_normalized(3, 3) ndarray 
+
+Normalized moments (translation and scale invariant) of intensity image up to 3rd order: wnu_ij = wmu_ij / wm_00^[(i+j)/2 + 1]
+ where wm_00 is the zeroth spatial moment (intensity-weighted area).   Each region also supports iteration, so that you can do: for prop in region:
+    print(prop, region[prop])
+ References  
+1  
+Wilhelm Burger, Mark Burge. Principles of Digital Image Processing: Core Algorithms. Springer-Verlag, London, 2009.  
+2  
+B. Jähne. Digital Image Processing. Springer-Verlag, Berlin-Heidelberg, 6. edition, 2005.  
+3  
+T. H. Reiss. Recognizing Planar Objects Using Invariant Image Features, from Lecture notes in computer science, p. 676. Springer, Berlin, 1993.  
+4  
+https://en.wikipedia.org/wiki/Image_moment  
+5  
+W. Pabst, E. Gregorová. Characterization of particles and particle systems, pp. 27-28. ICT Prague, 2007. https://old.vscht.cz/sil/keramika/Characterization_of_particles/CPPS%20_English%20version_.pdf   Examples >>> from skimage import data, util
+>>> from skimage.measure import label, regionprops
+>>> img = util.img_as_ubyte(data.coins()) > 110
+>>> label_img = label(img, connectivity=img.ndim)
+>>> props = regionprops(label_img)
+>>> # centroid of first labeled object
+>>> props[0].centroid
+(22.72987986048314, 81.91228523446583)
+>>> # centroid of first labeled object
+>>> props[0]['centroid']
+(22.72987986048314, 81.91228523446583)
+ Add custom measurements by passing functions as extra_properties >>> from skimage import data, util
+>>> from skimage.measure import label, regionprops
+>>> import numpy as np
+>>> img = util.img_as_ubyte(data.coins()) > 110
+>>> label_img = label(img, connectivity=img.ndim)
+>>> def pixelcount(regionmask):
+...     return np.sum(regionmask)
+>>> props = regionprops(label_img, extra_properties=(pixelcount,))
+>>> props[0].pixelcount
+7741
+>>> props[1]['pixelcount']
+42

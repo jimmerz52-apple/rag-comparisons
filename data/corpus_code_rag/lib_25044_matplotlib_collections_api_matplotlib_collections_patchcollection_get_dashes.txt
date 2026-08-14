@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection.get_dashes
+
+get_dashes()[source]
+ 
+Alias for get_linestyle.

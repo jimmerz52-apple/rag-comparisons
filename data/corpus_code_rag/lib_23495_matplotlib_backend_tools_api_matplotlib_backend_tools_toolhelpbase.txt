@@ -1,0 +1,16 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolHelpBase
+
+classmatplotlib.backend_tools.ToolHelpBase(toolmanager, name)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase   default_keymap=['f1']
+ 
+Keymap to associate with this tool. list[str]: List of keys that will trigger this tool when a keypress event is emitted on self.figure.canvas. 
+   description='Print tool list, shortcuts and description'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   staticformat_shortcut(key_sequence)[source]
+ 
+Convert a shortcut string from the notation used in rc config to the standard notation for displaying shortcuts, e.g. 'ctrl+a' -> 'Ctrl+A'. 
+   image='help'
+ 
+Filename of the image. str: Filename of the image to use in a Toolbar. If None, the name is used as a label in the toolbar button.

@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MHMessage.set_sequences
+
+set_sequences(sequences)  
+Set the list of sequences that include this message.

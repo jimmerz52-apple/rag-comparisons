@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_constrained_layout
+
+set_constrained_layout(constrained)[source]
+ 
+Set whether constrained_layout is used upon drawing. If None, rcParams["figure.constrained_layout.use"] (default: False) value will be used. When providing a dict containing the keys w_pad, h_pad the default constrained_layout paddings will be overridden. These pads are in inches and default to 3.0/72.0. w_pad is the width padding and h_pad is the height padding. See Constrained Layout Guide.  Parameters 
+ 
+constrainedbool or dict or None

@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.remove_sprites_of_layer
+
+remove_sprites_of_layer() 
+ removes all sprites from a layer and returns them as a list. remove_sprites_of_layer(layer_nr) -> sprites

@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolCopyToClipboard
+
+matplotlib.backend_tools.ToolCopyToClipboard[source]
+ 
+alias of matplotlib.backend_tools.ToolCopyToClipboardBase

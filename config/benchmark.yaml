@@ -9,6 +9,7 @@ llm:
   chat_model: llama3.2:3b
   embedding_model: all-MiniLM-L6-v2
   judge_model: llama3.2:3b
+  max_answer_tokens: 96
   graphrag_chat_model: llama3.2:3b
   graphrag_embedding_model: nomic-embed-text
 

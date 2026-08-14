@@ -1,0 +1,7 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Reference
+
+classmatplotlib.backends.backend_pdf.Reference(id)[source]
+ 
+Bases: object PDF reference object. Use PdfFile.reserveObject() to create References.   pdfRepr()[source]
+
+   write(contents, file)[source]

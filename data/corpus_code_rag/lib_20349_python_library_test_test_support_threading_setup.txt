@@ -1,0 +1,4 @@
+# python.library.test#test.support.threading_setup
+
+test.support.threading_setup()  
+Return current thread count and copy of dangling threads.

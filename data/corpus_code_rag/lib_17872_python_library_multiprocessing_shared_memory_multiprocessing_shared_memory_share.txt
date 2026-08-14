@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.SharedMemory.name
+
+name  
+Read-only access to the unique name of the shared memory block.

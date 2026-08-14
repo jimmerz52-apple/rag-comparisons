@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.wsgi_multiprocess
+
+wsgi_multiprocess  
+The value to be used for the wsgi.multiprocess environment variable. It defaults to true in BaseHandler, but may have a different default (or be set by the constructor) in the other subclasses.

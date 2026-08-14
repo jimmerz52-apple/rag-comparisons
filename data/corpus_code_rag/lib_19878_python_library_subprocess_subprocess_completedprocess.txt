@@ -1,0 +1,19 @@
+# python.library.subprocess#subprocess.CompletedProcess
+
+class subprocess.CompletedProcess  
+The return value from run(), representing a process that has finished.  
+args  
+The arguments used to launch the process. This may be a list or a string. 
+  
+returncode  
+Exit status of the child process. Typically, an exit status of 0 indicates that it ran successfully. A negative value -N indicates that the child was terminated by signal N (POSIX only). 
+  
+stdout  
+Captured stdout from the child process. A bytes sequence, or a string if run() was called with an encoding, errors, or text=True. None if stdout was not captured. If you ran the process with stderr=subprocess.STDOUT, stdout and stderr will be combined in this attribute, and stderr will be None. 
+  
+stderr  
+Captured stderr from the child process. A bytes sequence, or a string if run() was called with an encoding, errors, or text=True. None if stderr was not captured. 
+  
+check_returncode()  
+If returncode is non-zero, raise a CalledProcessError. 
+  New in version 3.5.

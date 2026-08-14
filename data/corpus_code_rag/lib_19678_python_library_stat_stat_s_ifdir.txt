@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IFDIR
+
+stat.S_IFDIR  
+Directory.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.apply_index
+
+pandas.tseries.offsets.Tick.apply_index   Tick.apply_index(other)

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.sharey
+
+matplotlib.axes.Axes.sharey   Axes.sharey(other)[source]
+ 
+Share the y-axis with other. This is equivalent to passing sharey=other when constructing the axes, and cannot be used if the y-axis is already being shared with another Axes.

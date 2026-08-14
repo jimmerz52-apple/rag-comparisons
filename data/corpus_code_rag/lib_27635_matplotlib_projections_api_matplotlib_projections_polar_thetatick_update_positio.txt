@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.ThetaTick.update_position
+
+update_position(loc)[source]
+ 
+Set the location of tick in data coords with scalar loc.

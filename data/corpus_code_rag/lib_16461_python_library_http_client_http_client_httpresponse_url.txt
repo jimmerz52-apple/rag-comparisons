@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.url
+
+HTTPResponse.url  
+URL of the resource retrieved, commonly used to determine if a redirect was followed.

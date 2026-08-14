@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ModelFormMixin.form_invalid
+
+form_invalid(form)  
+Renders a response, providing the invalid form as context.

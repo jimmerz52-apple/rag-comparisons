@@ -1,0 +1,6 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.list_select_related
+
+ModelAdmin.list_select_related  
+Set list_select_related to tell Django to use select_related() in retrieving the list of objects on the admin change list page. This can save you a bunch of database queries. The value should be either a boolean, a list or a tuple. Default is False. When value is True, select_related() will always be called. When value is set to False, Django will look at list_display and call select_related() if any ForeignKey is present. If you need more fine-grained control, use a tuple (or list) as value for list_select_related. Empty tuple will prevent Django from calling select_related at all. Any other tuple will be passed directly to select_related as parameters. For example: class ArticleAdmin(admin.ModelAdmin):
+    list_select_related = ('author', 'category')
+ will call select_related('author', 'category'). If you need to specify a dynamic value based on the request, you can implement a get_list_select_related() method.  Note ModelAdmin ignores this attribute when select_related() was already called on the changelist’s QuerySet.

@@ -1,0 +1,24 @@
+# django.topics.auth.customizing#django.contrib.auth.models.PermissionsMixin
+
+class models.PermissionsMixin  
+ 
+is_superuser  
+Boolean. Designates that this user has all permissions without explicitly assigning them. 
+  
+get_user_permissions(obj=None)  
+Returns a set of permission strings that the user has directly. If obj is passed in, only returns the user permissions for this specific object. 
+  
+get_group_permissions(obj=None)  
+Returns a set of permission strings that the user has, through their groups. If obj is passed in, only returns the group permissions for this specific object. 
+  
+get_all_permissions(obj=None)  
+Returns a set of permission strings that the user has, both through group and user permissions. If obj is passed in, only returns the permissions for this specific object. 
+  
+has_perm(perm, obj=None)  
+Returns True if the user has the specified permission, where perm is in the format "<app label>.<permission codename>" (see permissions). If User.is_active and is_superuser are both True, this method always returns True. If obj is passed in, this method won’t check for a permission for the model, but for this specific object. 
+  
+has_perms(perm_list, obj=None)  
+Returns True if the user has each of the specified permissions, where each perm is in the format "<app label>.<permission codename>". If User.is_active and is_superuser are both True, this method always returns True. If obj is passed in, this method won’t check for permissions for the model, but for the specific object. 
+  
+has_module_perms(package_name)  
+Returns True if the user has any permissions in the given package (the Django app label). If User.is_active and is_superuser are both True, this method always returns True.

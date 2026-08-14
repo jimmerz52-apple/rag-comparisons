@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.independent.Independent.has_enumerate_support
+
+property has_enumerate_support

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.time.min
+
+time.min  
+The earliest representable time, time(0, 0, 0, 0).

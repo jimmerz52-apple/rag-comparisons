@@ -1,0 +1,4 @@
+# python.library.select#select.devpoll.unregister
+
+devpoll.unregister(fd)  
+Remove a file descriptor being tracked by a polling object. Just like the register() method, fd can be an integer or an object with a fileno() method that returns an integer. Attempting to remove a file descriptor that was never registered is safely ignored.

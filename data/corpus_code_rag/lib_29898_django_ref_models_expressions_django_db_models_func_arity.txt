@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Func.arity
+
+arity  
+A class attribute that denotes the number of arguments the function accepts. If this attribute is set and the function is called with a different number of expressions, TypeError will be raised. Defaults to None.

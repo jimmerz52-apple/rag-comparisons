@@ -1,0 +1,4 @@
+# python.library.exceptions#FloatingPointError
+
+exception FloatingPointError  
+Not currently used.

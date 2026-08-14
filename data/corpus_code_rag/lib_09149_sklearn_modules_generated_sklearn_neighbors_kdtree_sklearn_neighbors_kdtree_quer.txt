@@ -1,0 +1,36 @@
+# sklearn.modules.generated.sklearn.neighbors.kdtree#sklearn.neighbors.KDTree.query_radius
+
+query_radius(X, r, return_distance=False, count_only=False, sort_results=False)  
+query the tree for neighbors within a radius r  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+An array of points to query  
+rdistance within which neighbors are returned 
+
+r can be a single value, or an array of values of shape x.shape[:-1] if different radii are desired for each point.  
+return_distancebool, default=False 
+
+if True, return distances to neighbors of each point if False, return only neighbors Note that unlike the query() method, setting return_distance=True here adds to the computation time. Not all distances need to be calculated explicitly for return_distance=False. Results are not sorted by default: see sort_results keyword.  
+count_onlybool, default=False 
+
+if True, return only the count of points within distance r if False, return the indices of all points within distance r If return_distance==True, setting count_only=True will result in an error.  
+sort_resultsbool, default=False 
+
+if True, the distances and indices will be sorted before being returned. If False, the results will not be sorted. If return_distance == False, setting sort_results = True will result in an error.    Returns 
+ 
+countif count_only == True 
+
+indif count_only == False and return_distance == False 
+
+(ind, dist)if count_only == False and return_distance == True 
+
+countndarray of shape X.shape[:-1], dtype=int 
+
+Each entry gives the number of neighbors within a distance r of the corresponding point.  
+indndarray of shape X.shape[:-1], dtype=object 
+
+Each element is a numpy integer array listing the indices of neighbors of the corresponding point. Note that unlike the results of a k-neighbors query, the returned neighbors are not sorted by distance by default.  
+distndarray of shape X.shape[:-1], dtype=object 
+
+Each element is a numpy double array listing the distances corresponding to indices in i.

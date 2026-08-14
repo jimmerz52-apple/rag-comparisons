@@ -1,0 +1,7 @@
+# python.library.plistlib#plistlib.load
+
+plistlib.load(fp, *, fmt=None, dict_type=dict)  
+Read a plist file. fp should be a readable and binary file object. Return the unpacked root object (which usually is a dictionary). The fmt is the format of the file and the following values are valid:  
+None: Autodetect the file format 
+FMT_XML: XML file format 
+FMT_BINARY: Binary plist format  The dict_type is the type used for dictionaries that are read from the plist file. XML data for the FMT_XML format is parsed using the Expat parser from xml.parsers.expat – see its documentation for possible exceptions on ill-formed XML. Unknown elements will simply be ignored by the plist parser. The parser for the binary format raises InvalidFileException when the file cannot be parsed.  New in version 3.4.

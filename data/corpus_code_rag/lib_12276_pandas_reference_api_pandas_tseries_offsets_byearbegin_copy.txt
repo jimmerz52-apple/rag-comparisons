@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearbegin.copy
+
+pandas.tseries.offsets.BYearBegin.copy   BYearBegin.copy()

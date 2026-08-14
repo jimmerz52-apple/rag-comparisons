@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.MidiException
+
+exception pygame.midi.MidiException 
+ exception that pygame.midi functions and classes can raise MidiException(errno) -> None

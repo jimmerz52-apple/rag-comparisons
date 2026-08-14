@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.tz
+
+pandas.Timestamp.tz   propertyTimestamp.tz
+ 
+Alias for tzinfo. Examples 
+>>> ts = pd.Timestamp(1584226800, unit='s', tz='Europe/Stockholm')
+>>> ts.tz
+<DstTzInfo 'Europe/Stockholm' CET+1:00:00 STD>

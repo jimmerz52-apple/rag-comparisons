@@ -1,0 +1,4 @@
+# python.library.typing#typing.Iterator
+
+class typing.Iterator(Iterable[T_co])  
+A generic version of collections.abc.Iterator.  Deprecated since version 3.9: collections.abc.Iterator now supports []. See PEP 585 and Generic Alias Type.

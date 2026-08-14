@@ -1,0 +1,17 @@
+# matplotlib.bezier_api#matplotlib.bezier.check_if_parallel
+
+matplotlib.bezier.check_if_parallel(dx1, dy1, dx2, dy2, tolerance=1e-05)[source]
+ 
+Check if two lines are parallel.  Parameters 
+ 
+dx1, dy1, dx2, dy2float
+
+
+The gradients dy/dx of the two lines.  
+tolerancefloat
+
+
+The angular tolerance in radians up to which the lines are considered parallel.    Returns 
+ is_parallel
+
+ 1 if two lines are parallel in same direction. -1 if two lines are parallel in opposite direction. False otherwise.

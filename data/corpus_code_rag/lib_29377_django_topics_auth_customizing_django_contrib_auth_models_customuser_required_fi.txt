@@ -1,0 +1,10 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUser.REQUIRED_FIELDS
+
+REQUIRED_FIELDS  
+A list of the field names that will be prompted for when creating a user via the createsuperuser management command. The user will be prompted to supply a value for each of these fields. It must include any field for which blank is False or undefined and may include additional fields you want prompted for when a user is created interactively. REQUIRED_FIELDS has no effect in other parts of Django, like creating a user in the admin. For example, here is the partial definition for a user model that defines two required fields - a date of birth and height: class MyUser(AbstractBaseUser):
+    ...
+    date_of_birth = models.DateField()
+    height = models.FloatField()
+    ...
+    REQUIRED_FIELDS = ['date_of_birth', 'height']
+  Note REQUIRED_FIELDS must contain all required fields on your user model, but should not contain the USERNAME_FIELD or password as these fields will always be prompted for.

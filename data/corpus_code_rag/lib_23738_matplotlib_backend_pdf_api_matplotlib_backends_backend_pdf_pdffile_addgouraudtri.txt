@@ -1,0 +1,15 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.addGouraudTriangles
+
+addGouraudTriangles(points, colors)[source]
+ 
+Add a Gouraud triangle shading.  Parameters 
+ 
+pointsnp.ndarray
+
+
+Triangle vertices, shape (n, 3, 2) where n = number of triangles, 3 = vertices, 2 = x, y.  
+colorsnp.ndarray
+
+
+Vertex colors, shape (n, 3, 1) or (n, 3, 4) as with points, but last dimension is either (gray,) or (r, g, b, alpha).    Returns 
+ Name, Reference

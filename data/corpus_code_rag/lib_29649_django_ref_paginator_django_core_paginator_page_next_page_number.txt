@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Page.next_page_number
+
+Page.next_page_number()  
+Returns the next page number. Raises InvalidPage if next page doesn’t exist.

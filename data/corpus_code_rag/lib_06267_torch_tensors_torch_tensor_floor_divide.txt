@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.floor_divide_
+
+floor_divide_(value) → Tensor  
+In-place version of floor_divide()

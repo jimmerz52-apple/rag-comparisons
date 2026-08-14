@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.Calendar.itermonthdays4
+
+itermonthdays4(year, month)  
+Return an iterator for the month month in the year year similar to itermonthdates(), but not restricted by the datetime.date range. Days returned will be tuples consisting of a year, a month, a day of the month, and a day of the week numbers.  New in version 3.7.

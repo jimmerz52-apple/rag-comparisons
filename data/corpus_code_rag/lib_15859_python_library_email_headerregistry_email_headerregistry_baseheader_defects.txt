@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.BaseHeader.defects
+
+defects  
+A tuple of HeaderDefect instances reporting any RFC compliance problems found during parsing. The email package tries to be complete about detecting compliance issues. See the errors module for a discussion of the types of defects that may be reported.

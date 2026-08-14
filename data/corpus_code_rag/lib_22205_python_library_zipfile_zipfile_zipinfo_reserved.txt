@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.reserved
+
+ZipInfo.reserved  
+Must be zero.

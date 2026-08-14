@@ -1,0 +1,5 @@
+# python.library.gettext#gettext.install
+
+gettext.install(domain, localedir=None, codeset=None, names=None)  
+This installs the function _() in Python’s builtins namespace, based on domain, localedir, and codeset which are passed to the function translation(). For the names parameter, please see the description of the translation object’s install() method. As seen below, you usually mark the strings in your application that are candidates for translation, by wrapping them in a call to the _() function, like this: print(_('This string will be translated.'))
+ For convenience, you want the _() function to be installed in Python’s builtins namespace, so it is easily accessible in all modules of your application.  Deprecated since version 3.8, will be removed in version 3.10: The codeset parameter.

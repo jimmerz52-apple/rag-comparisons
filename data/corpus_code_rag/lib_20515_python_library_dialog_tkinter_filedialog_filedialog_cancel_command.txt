@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.cancel_command
+
+cancel_command(event=None)  
+Trigger the termination of the dialog window.

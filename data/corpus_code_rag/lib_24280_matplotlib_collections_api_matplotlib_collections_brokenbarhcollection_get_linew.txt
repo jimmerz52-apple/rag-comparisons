@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.get_linewidths
+
+get_linewidths()[source]
+ 
+Alias for get_linewidth.

@@ -1,0 +1,30 @@
+# matplotlib.dviread#matplotlib.dviread.Tfm
+
+classmatplotlib.dviread.Tfm(filename)[source]
+ 
+Bases: object A TeX Font Metric file. This implementation covers only the bare minimum needed by the Dvi class.  Parameters 
+ 
+filenamestr or path-like
+
+  Attributes 
+ 
+checksumint
+
+
+Used for verifying against the dvi file.  
+design_sizeint
+
+
+Design size of the font (unknown units)  
+width, height, depthdict
+
+
+Dimensions of each character, need to be scaled by the factor specified in the dvi file. These are dicts because indexing may not start from 0.       checksum
+
+   depth
+
+   design_size
+
+   height
+
+   width

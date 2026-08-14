@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.kron
+
+tf.experimental.numpy.kron TensorFlow variant of NumPy's kron. 
+tf.experimental.numpy.kron(
+    a, b
+)
+ See the NumPy documentation for numpy.kron.

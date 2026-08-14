@@ -1,0 +1,4 @@
+# python.library.exceptions#TimeoutError
+
+exception TimeoutError  
+Raised when a system function timed out at the system level. Corresponds to errno ETIMEDOUT.

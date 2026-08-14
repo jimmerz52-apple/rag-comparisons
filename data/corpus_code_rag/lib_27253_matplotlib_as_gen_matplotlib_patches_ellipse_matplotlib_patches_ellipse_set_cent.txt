@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse#matplotlib.patches.Ellipse.set_center
+
+set_center(xy)[source]
+ 
+Set the center of the ellipse.  Parameters 
+ 
+xy(float, float)

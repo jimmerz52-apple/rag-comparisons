@@ -1,0 +1,5 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.get_content_extents
+
+get_content_extents()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

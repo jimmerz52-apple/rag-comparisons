@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.IncompleteRead
+
+exception http.client.IncompleteRead  
+A subclass of HTTPException.

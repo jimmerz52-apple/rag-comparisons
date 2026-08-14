@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.one_to_many
+
+Field.one_to_many  
+Boolean flag that is True if the field has a one-to-many relation, such as a GenericRelation or the reverse of a ForeignKey; False otherwise.

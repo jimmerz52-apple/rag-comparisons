@@ -1,0 +1,24 @@
+# python.library.urllib.request#urllib.response.addinfourl
+
+class urllib.response.addinfourl  
+ 
+url  
+URL of the resource retrieved, commonly used to determine if a redirect was followed. 
+  
+headers  
+Returns the headers of the response in the form of an EmailMessage instance. 
+  
+status  
+ New in version 3.9.  Status code returned by server. 
+  
+geturl()  
+ Deprecated since version 3.9: Deprecated in favor of url.  
+  
+info()  
+ Deprecated since version 3.9: Deprecated in favor of headers.  
+  
+code  
+ Deprecated since version 3.9: Deprecated in favor of status.  
+  
+getstatus()  
+ Deprecated since version 3.9: Deprecated in favor of status.

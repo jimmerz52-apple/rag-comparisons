@@ -1,0 +1,16 @@
+# python.library.winsound#winsound.SND_ALIAS
+
+winsound.SND_ALIAS  
+The sound parameter is a sound association name from the registry. If the registry contains no such name, play the system default sound unless SND_NODEFAULT is also specified. If no default sound is registered, raise RuntimeError. Do not use with SND_FILENAME. All Win32 systems support at least the following; most systems support many more:   
+PlaySound() name Corresponding Control Panel Sound name   
+'SystemAsterisk' Asterisk  
+'SystemExclamation' Exclamation  
+'SystemExit' Exit Windows  
+'SystemHand' Critical Stop  
+'SystemQuestion' Question   For example: import winsound
+# Play Windows exit sound.
+winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+
+# Probably play Windows default sound, if any is registered (because
+# "*" probably isn't the registered name of any sound).
+winsound.PlaySound("*", winsound.SND_ALIAS)

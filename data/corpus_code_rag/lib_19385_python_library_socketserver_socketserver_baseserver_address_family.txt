@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.address_family
+
+address_family  
+The family of protocols to which the server’s socket belongs. Common examples are socket.AF_INET and socket.AF_UNIX.

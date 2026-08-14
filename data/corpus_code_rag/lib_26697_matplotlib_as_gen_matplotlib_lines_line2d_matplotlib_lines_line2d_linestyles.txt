@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.lineStyles
+
+lineStyles={'': '_draw_nothing', ' ': '_draw_nothing', '-': '_draw_solid', '--': '_draw_dashed', '-.': '_draw_dash_dot', ':': '_draw_dotted', 'None': '_draw_nothing'}

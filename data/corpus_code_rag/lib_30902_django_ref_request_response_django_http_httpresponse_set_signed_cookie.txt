@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.set_signed_cookie
+
+HttpResponse.set_signed_cookie(key, value, salt='', max_age=None, expires=None, path='/', domain=None, secure=False, httponly=False, samesite=None)  
+Like set_cookie(), but cryptographic signing the cookie before setting it. Use in conjunction with HttpRequest.get_signed_cookie(). You can use the optional salt argument for added key strength, but you will need to remember to pass it to the corresponding HttpRequest.get_signed_cookie() call.

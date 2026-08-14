@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.ExceptionReporter.get_traceback_text
+
+get_traceback_text()  
+Return plain text version of exception report. Used for plain text version of debug 500 HTTP error page and email reports.

@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.teardown_app_request
+
+teardown_app_request(f)  
+Like Flask.teardown_request() but for a blueprint. Such a function is executed when tearing down each request, even if outside of the blueprint.  Parameters 
+f (Callable[[Optional[BaseException]], Response]) –   Return type 
+Callable[[Optional[BaseException]], Response]

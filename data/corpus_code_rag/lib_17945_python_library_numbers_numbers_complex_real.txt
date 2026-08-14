@@ -1,0 +1,4 @@
+# python.library.numbers#numbers.Complex.real
+
+real  
+Abstract. Retrieves the real component of this number.

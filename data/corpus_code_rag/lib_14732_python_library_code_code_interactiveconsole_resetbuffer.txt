@@ -1,0 +1,4 @@
+# python.library.code#code.InteractiveConsole.resetbuffer
+
+InteractiveConsole.resetbuffer()  
+Remove any unhandled source text from the input buffer.

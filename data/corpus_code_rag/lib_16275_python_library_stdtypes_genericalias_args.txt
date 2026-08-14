@@ -1,0 +1,5 @@
+# python.library.stdtypes#genericalias.__args__
+
+genericalias.__args__  
+This attribute is a tuple (possibly of length 1) of generic types passed to the original __class_getitem__() of the generic container: >>> dict[str, list[int]].__args__
+(<class 'str'>, list[int])

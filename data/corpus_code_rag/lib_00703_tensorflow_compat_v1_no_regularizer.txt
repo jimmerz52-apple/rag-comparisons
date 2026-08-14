@@ -1,0 +1,6 @@
+# tensorflow.compat.v1.no_regularizer
+
+tf.compat.v1.no_regularizer Use this function to prevent regularization of variables. 
+tf.compat.v1.no_regularizer(
+    _
+)

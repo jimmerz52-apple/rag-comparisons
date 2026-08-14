@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.iscoroutine
+
+inspect.iscoroutine(object)  
+Return True if the object is a coroutine created by an async def function.  New in version 3.5.

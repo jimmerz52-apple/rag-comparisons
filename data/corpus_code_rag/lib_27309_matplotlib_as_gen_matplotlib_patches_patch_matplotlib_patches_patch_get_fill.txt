@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_fill
+
+get_fill()[source]
+ 
+Return whether the patch is filled.

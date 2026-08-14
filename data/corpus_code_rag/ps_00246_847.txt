@@ -1,0 +1,6 @@
+# 847
+Task: 847
+
+# Write a python function to copy a list from a singleton tuple.
+def lcopy(xs):
+  return xs[:]

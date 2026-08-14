@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.mixture.bayesiangaussianmixture#sklearn.mixture.BayesianGaussianMixture.score
+
+score(X, y=None) [source]
+ 
+Compute the per-sample average log-likelihood of the given data X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_dimensions) 
+
+List of n_features-dimensional data points. Each row corresponds to a single data point.    Returns 
+ 
+log_likelihoodfloat 
+
+Log likelihood of the Gaussian mixture given X.

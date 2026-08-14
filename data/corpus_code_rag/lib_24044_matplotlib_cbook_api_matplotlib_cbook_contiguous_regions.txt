@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.contiguous_regions
+
+matplotlib.cbook.contiguous_regions(mask)[source]
+ 
+Return a list of (ind0, ind1) such that mask[ind0:ind1].all() is True and we cover all such regions.

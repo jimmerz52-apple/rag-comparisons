@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.HTMLCalendar.cssclass_month_head
+
+cssclass_month_head  
+The month’s head CSS class (used by formatmonthname()). The default value is "month".  New in version 3.7.

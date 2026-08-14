@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.obuffree
+
+oss_audio_device.obuffree()  
+Returns the number of samples that could be queued into the hardware buffer to be played without blocking.

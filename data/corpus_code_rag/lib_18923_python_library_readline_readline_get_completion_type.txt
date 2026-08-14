@@ -1,0 +1,4 @@
+# python.library.readline#readline.get_completion_type
+
+readline.get_completion_type()  
+Get the type of completion being attempted. This returns the rl_completion_type variable in the underlying library as an integer.

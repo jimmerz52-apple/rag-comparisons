@@ -1,0 +1,6 @@
+# 893
+Task: 893
+
+# Write a python function to get the last element of each sublist.
+def Extract(lst): 
+    return [item[-1] for item in lst]

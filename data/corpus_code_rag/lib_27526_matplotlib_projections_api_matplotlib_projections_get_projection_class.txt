@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.get_projection_class
+
+matplotlib.projections.get_projection_class(projection=None)[source]
+ 
+Get a projection class from its name. If projection is None, a standard rectilinear projection is returned.

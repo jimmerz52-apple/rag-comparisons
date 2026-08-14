@@ -1,0 +1,4 @@
+# pygame.ref.image#pygame.image.fromstring
+
+pygame.image.fromstring() 
+ create new Surface from a string buffer fromstring(string, size, format, flipped=False) -> Surface  This function takes arguments similar to pygame.image.tostring(). The size argument is a pair of numbers representing the width and height. Once the new Surface is created you can destroy the string buffer. The size and format image must compute the exact same size as the passed string buffer. Otherwise an exception will be raised. See the pygame.image.frombuffer() method for a potentially faster way to transfer images into pygame.

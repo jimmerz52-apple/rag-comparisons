@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface._pixels_address
+
+_pixels_address 
+ pixel buffer address _pixels_address -> int  The starting address of the surface's raw pixel bytes.  New in pygame 1.9.2.

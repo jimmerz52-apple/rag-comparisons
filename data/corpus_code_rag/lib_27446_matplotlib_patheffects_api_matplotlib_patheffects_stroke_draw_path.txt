@@ -1,0 +1,5 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.Stroke.draw_path
+
+draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Draw the path with updated gc.

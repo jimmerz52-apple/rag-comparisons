@@ -1,0 +1,4 @@
+# werkzeug.utils.index#werkzeug.user_agent.UserAgent.version
+
+version: Optional[str] = None  
+The browser version, if it could be parsed from the string.

@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.measure#django.contrib.gis.measure.Area
+
+class Area(**kwargs) [source]
+ 
+To initialize an area object, pass in a keyword corresponding to the desired unit attribute name set with desired value. For example, the following creates an area object representing 5 square miles: >>> a = Area(sq_mi=5)
+  
+__getattr__(unit_att) 
+ Returns the area value in units corresponding to the given unit attribute. For example: >>> print(a.sq_km)
+12.949940551680001
+  
+classmethod unit_attname(unit_name) 
+ Returns the area unit attribute name for the given full unit name. For example: >>> Area.unit_attname('Kilometer')
+'sq_km'

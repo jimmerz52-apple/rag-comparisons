@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.round_
+
+numpy.round_   numpy.round_(a, decimals=0, out=None)[source]
+ 
+Round an array to the given number of decimals.  See also  around
+
+equivalent function; see for details.

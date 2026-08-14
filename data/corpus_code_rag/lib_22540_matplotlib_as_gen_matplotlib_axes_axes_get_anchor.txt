@@ -1,0 +1,9 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_anchor
+
+matplotlib.axes.Axes.get_anchor   Axes.get_anchor()[source]
+ 
+Get the anchor location.  See also  matplotlib.axes.Axes.set_anchor
+
+for a description of the anchor.  matplotlib.axes.Axes.set_aspect
+
+for a description of aspect handling.

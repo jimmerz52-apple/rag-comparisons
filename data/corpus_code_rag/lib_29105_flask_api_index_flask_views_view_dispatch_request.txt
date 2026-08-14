@@ -1,0 +1,5 @@
+# flask.api.index#flask.views.View.dispatch_request
+
+dispatch_request()  
+Subclasses have to override this method to implement the actual view function code. This method is called with all the arguments from the URL rule.  Return type 
+Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], WSGIApplication]

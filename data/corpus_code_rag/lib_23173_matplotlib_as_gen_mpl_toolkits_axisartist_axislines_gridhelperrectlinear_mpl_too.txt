@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.gridhelperrectlinear#mpl_toolkits.axisartist.axislines.GridHelperRectlinear.new_floating_axis
+
+new_floating_axis(nth_coord, value, axis_direction='bottom', axes=None)[source]

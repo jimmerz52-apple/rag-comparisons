@@ -1,0 +1,6 @@
+# django.ref.forms.api#django.forms.ErrorList.get_context
+
+get_context()  
+ New in Django 4.0.  Return context for rendering of errors in a template. The available context is:  
+errors : A list of the errors. 
+error_class : A string of CSS classes.

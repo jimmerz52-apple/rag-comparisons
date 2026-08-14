@@ -1,0 +1,6 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.get_setters
+
+get_setters()[source]
+ 
+Get the attribute strings with setters for object. For example, for a line, return ['markerfacecolor', 'linewidth',
+....].

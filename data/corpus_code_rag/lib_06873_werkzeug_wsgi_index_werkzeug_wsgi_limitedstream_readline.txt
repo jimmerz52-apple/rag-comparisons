@@ -1,0 +1,6 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.readline
+
+readline(size=None)  
+Reads one line from the stream.  Parameters 
+size (Optional[int]) –   Return type 
+bytes

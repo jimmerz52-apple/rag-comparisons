@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_alpha
+
+set_alpha(alpha)[source]
+ 
+Set the alpha value used for blending - not supported on all backends. If alpha=None (the default), the alpha components of the foreground and fill colors will be used to set their respective transparencies (where applicable); otherwise, alpha will override them.

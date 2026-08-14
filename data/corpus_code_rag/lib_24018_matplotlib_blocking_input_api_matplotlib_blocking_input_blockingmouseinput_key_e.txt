@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.key_event
+
+key_event()[source]
+ 
+Process a key press event, mapping keys to appropriate mouse clicks.

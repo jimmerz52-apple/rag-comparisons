@@ -1,0 +1,10 @@
+# matplotlib.dates_api#matplotlib.dates.set_epoch
+
+matplotlib.dates.set_epoch(epoch)[source]
+ 
+Set the epoch (origin for dates) for datetime calculations. The default epoch is rcParams["dates.epoch"] (by default 1970-01-01T00:00). If microsecond accuracy is desired, the date being plotted needs to be within approximately 70 years of the epoch. Matplotlib internally represents dates as days since the epoch, so floating point dynamic range needs to be within a factor of 2^52. set_epoch must be called before any dates are converted (i.e. near the import section) or a RuntimeError will be raised. See also Date Precision and Epochs.  Parameters 
+ 
+epochstr
+
+
+valid UTC date parsable by numpy.datetime64 (do not include timezone).

@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.get_driver
+
+pygame.display.get_driver() 
+ Get the name of the pygame display backend get_driver() -> name  Pygame chooses one of many available display backends when it is initialized. This returns the internal name used for the display backend. This can be used to provide limited information about what display capabilities might be accelerated. See the SDL_VIDEODRIVER flags in pygame.display.set_mode() to see some of the common options.

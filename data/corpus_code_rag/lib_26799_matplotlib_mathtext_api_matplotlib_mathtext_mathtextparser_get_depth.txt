@@ -1,0 +1,17 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathTextParser.get_depth
+
+get_depth(texstr, dpi=120, fontsize=14)[source]
+ 
+[Deprecated] Get the depth of a mathtext string.  Parameters 
+ 
+texstrstr
+
+
+A valid mathtext string, e.g., r'IQ: $sigma_i=15$'.  
+dpifloat
+
+
+The dots-per-inch setting used to render the text.    Returns 
+ int
+
+Offset of the baseline from the bottom of the image, in pixels.     Notes  Deprecated since version 3.4.

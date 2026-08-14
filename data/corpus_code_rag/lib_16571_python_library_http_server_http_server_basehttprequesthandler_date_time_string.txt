@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.date_time_string
+
+date_time_string(timestamp=None)  
+Returns the date and time given by timestamp (which must be None or in the format returned by time.time()), formatted for a message header. If timestamp is omitted, it uses the current date and time. The result looks like 'Sun, 06 Nov 1994 08:49:37 GMT'.

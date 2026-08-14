@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.remove
+
+remove(value)  
+Remove the first occurrence of value. If not found, raises a ValueError.

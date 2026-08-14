@@ -1,0 +1,4 @@
+# python.library.test#test.support.TESTFN_ENCODING
+
+test.support.TESTFN_ENCODING  
+Set to sys.getfilesystemencoding().

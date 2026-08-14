@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.prompt
+
+Cmd.prompt  
+The prompt issued to solicit input.

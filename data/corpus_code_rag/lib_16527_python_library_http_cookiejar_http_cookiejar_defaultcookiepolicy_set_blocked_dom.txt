@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.set_blocked_domains
+
+DefaultCookiePolicy.set_blocked_domains(blocked_domains)  
+Set the sequence of blocked domains.

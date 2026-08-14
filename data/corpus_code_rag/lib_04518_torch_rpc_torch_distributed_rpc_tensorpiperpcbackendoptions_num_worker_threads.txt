@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.TensorPipeRpcBackendOptions.num_worker_threads
+
+property num_worker_threads  
+The number of threads in the thread-pool used by TensorPipeAgent to execute requests.

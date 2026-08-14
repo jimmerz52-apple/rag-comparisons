@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.compare
+
+compare(x, y)  
+Compares x and y numerically.

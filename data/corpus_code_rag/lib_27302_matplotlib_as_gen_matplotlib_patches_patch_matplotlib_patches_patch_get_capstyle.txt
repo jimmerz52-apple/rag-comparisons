@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_capstyle
+
+get_capstyle()[source]
+ 
+Return the capstyle.

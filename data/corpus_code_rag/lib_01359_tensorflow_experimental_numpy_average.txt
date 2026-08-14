@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.average
+
+tf.experimental.numpy.average TensorFlow variant of NumPy's average. 
+tf.experimental.numpy.average(
+    a, axis=None, weights=None, returned=False
+)
+ See the NumPy documentation for numpy.average.

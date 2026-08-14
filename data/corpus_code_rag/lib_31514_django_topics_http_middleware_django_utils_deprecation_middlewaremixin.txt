@@ -1,0 +1,3 @@
+# django.topics.http.middleware#django.utils.deprecation.MiddlewareMixin
+
+class django.utils.deprecation.MiddlewareMixin

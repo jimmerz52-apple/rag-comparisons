@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.nmf#sklearn.decomposition.NMF.transform
+
+transform(X) [source]
+ 
+Transform the data X according to the fitted NMF model.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Data matrix to be transformed by the model.    Returns 
+ 
+Wndarray of shape (n_samples, n_components) 
+
+Transformed data.

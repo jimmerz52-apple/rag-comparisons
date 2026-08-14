@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_fill
+
+set_fill(b)[source]
+ 
+Set whether to fill the patch.  Parameters 
+ 
+bbool

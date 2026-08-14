@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.copy
+
+pandas.tseries.offsets.CustomBusinessDay.copy   CustomBusinessDay.copy()

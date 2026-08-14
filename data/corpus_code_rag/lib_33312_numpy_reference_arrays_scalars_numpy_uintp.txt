@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.uintp
+
+numpy.uintp[source]
+ 
+Alias for the unsigned integer type (one of numpy.ubyte, numpy.ushort, numpy.uintc, numpy.uint and np.ulonglong) that is the same size as a pointer. Compatible with the C uintptr_t.  Character code 
+'P'

@@ -1,0 +1,74 @@
+# matplotlib.transformations#matplotlib.transforms.AffineBase
+
+classmatplotlib.transforms.AffineBase(*args, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Transform The base class of all affine transformations of any number of dimensions.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       __array__(*args, **kwargs)[source]
+ 
+Array interface to get at this Transform's affine matrix. 
+   __eq__(other)[source]
+ 
+Return self==value. 
+   __hash__=None
+
+   __init__(*args, **kwargs)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.     
+   __module__='matplotlib.transforms'
+
+   get_affine()[source]
+ 
+Get the affine part of this transform. 
+   is_affine=True
+
+   transform(values)[source]
+ 
+Apply this transformation on the given array of values.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+   transform_affine(values)[source]
+ 
+Apply only the affine part of this transformation on the given array of values. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally a no-op. In affine transformations, this is equivalent to transform(values).  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+   transform_non_affine(points)[source]
+ 
+Apply only the non-affine part of this transformation. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally equivalent to transform(values). In affine transformations, this is always a no-op.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+   transform_path(path)[source]
+ 
+Apply the transform to Path path, returning a new Path. In some cases, this transform may insert curves into the path that began as line segments. 
+   transform_path_affine(path)[source]
+ 
+Apply the affine part of this transform to Path path, returning a new Path. transform_path(path) is equivalent to transform_path_affine(transform_path_non_affine(values)). 
+   transform_path_non_affine(path)[source]
+ 
+Apply the non-affine part of this transform to Path path, returning a new Path. transform_path(path) is equivalent to transform_path_affine(transform_path_non_affine(values)).

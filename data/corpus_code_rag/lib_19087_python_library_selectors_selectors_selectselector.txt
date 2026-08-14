@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.SelectSelector
+
+class selectors.SelectSelector  
+select.select()-based selector.

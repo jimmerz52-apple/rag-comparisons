@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolFullScreen.description
+
+description='Toggle fullscreen mode'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar.

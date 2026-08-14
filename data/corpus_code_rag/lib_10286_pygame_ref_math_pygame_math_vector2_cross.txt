@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.cross
+
+cross() 
+ calculates the cross- or vector-product cross(Vector2) -> Vector2  calculates the third component of the cross-product.

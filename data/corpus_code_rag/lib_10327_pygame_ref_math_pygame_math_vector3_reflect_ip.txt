@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.reflect_ip
+
+reflect_ip() 
+ reflect the vector of a given normal in place. reflect_ip(Vector3) -> None  Changes the direction of self as if it would have been reflected of a surface with the given surface normal.

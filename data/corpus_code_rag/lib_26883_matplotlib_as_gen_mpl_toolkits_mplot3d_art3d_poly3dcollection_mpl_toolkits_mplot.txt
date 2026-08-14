@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.poly3dcollection#mpl_toolkits.mplot3d.art3d.Poly3DCollection.get_vector
+
+get_vector(segments3d)[source]
+ 
+Optimize points for projection.

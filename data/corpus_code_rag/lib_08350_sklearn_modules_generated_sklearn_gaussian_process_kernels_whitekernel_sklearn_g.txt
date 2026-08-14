@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.whitekernel#sklearn.gaussian_process.kernels.WhiteKernel.get_params
+
+get_params(deep=True) [source]
+ 
+Get parameters of this kernel.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.

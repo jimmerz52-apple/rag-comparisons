@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_ticklabel_extents
+
+matplotlib.axis.Axis.get_ticklabel_extents   Axis.get_ticklabel_extents(renderer)[source]
+ 
+Get the extents of the tick labels on either side of the axes.

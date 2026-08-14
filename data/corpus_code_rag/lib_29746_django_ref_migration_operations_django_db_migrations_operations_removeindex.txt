@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.RemoveIndex
+
+class RemoveIndex(model_name, name)

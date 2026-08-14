@@ -1,0 +1,5 @@
+# python.library.unittest#unittest.TestCase.assertIsNone
+
+assertIsNone(expr, msg=None)  
+assertIsNotNone(expr, msg=None)  
+Test that expr is (or is not) None.  New in version 3.1.

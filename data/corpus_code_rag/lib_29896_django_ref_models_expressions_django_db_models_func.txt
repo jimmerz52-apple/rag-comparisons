@@ -1,0 +1,30 @@
+# django.ref.models.expressions#django.db.models.Func
+
+class Func(*expressions, **extra)  
+ 
+function  
+A class attribute describing the function that will be generated. Specifically, the function will be interpolated as the function placeholder within template. Defaults to None. 
+  
+template  
+A class attribute, as a format string, that describes the SQL that is generated for this function. Defaults to '%(function)s(%(expressions)s)'. If you’re constructing SQL like strftime('%W', 'date') and need a literal % character in the query, quadruple it (%%%%) in the template attribute because the string is interpolated twice: once during the template interpolation in as_sql() and once in the SQL interpolation with the query parameters in the database cursor. 
+  
+arg_joiner  
+A class attribute that denotes the character used to join the list of expressions together. Defaults to ', '. 
+  
+arity  
+A class attribute that denotes the number of arguments the function accepts. If this attribute is set and the function is called with a different number of expressions, TypeError will be raised. Defaults to None. 
+  
+as_sql(compiler, connection, function=None, template=None, arg_joiner=None, **extra_context)  
+Generates the SQL fragment for the database function. Returns a tuple (sql, params), where sql is the SQL string, and params is the list or tuple of query parameters. The as_vendor() methods should use the function, template, arg_joiner, and any other **extra_context parameters to customize the SQL as needed. For example:  django/db/models/functions.py class ConcatPair(Func):
+    ...
+    function = 'CONCAT'
+    ...
+
+    def as_mysql(self, compiler, connection, **extra_context):
+        return super().as_sql(
+            compiler, connection,
+            function='CONCAT_WS',
+            template="%(function)s('', %(expressions)s)",
+            **extra_context
+        )
+  To avoid an SQL injection vulnerability, extra_context must not contain untrusted user input as these values are interpolated into the SQL string rather than passed as query parameters, where the database driver would escape them.

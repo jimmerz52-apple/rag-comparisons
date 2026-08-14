@@ -1,0 +1,4 @@
+# python.library.socket#socket.getprotobyname
+
+socket.getprotobyname(protocolname)  
+Translate an Internet protocol name (for example, 'icmp') to a constant suitable for passing as the (optional) third argument to the socket() function. This is usually only needed for sockets opened in “raw” mode (SOCK_RAW); for the normal socket modes, the correct protocol is chosen automatically if the protocol is omitted or zero.

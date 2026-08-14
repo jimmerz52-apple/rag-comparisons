@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.render
+
+SimpleTemplateResponse.render()  
+Sets response.content to the result obtained by SimpleTemplateResponse.rendered_content, runs all post-rendering callbacks, and returns the resulting response object. render() will only have an effect the first time it is called. On subsequent calls, it will return the result obtained from the first call.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.dateoffset.__call__
+
+pandas.tseries.offsets.DateOffset.__call__   DateOffset.__call__(*args, **kwargs)
+ 
+Call self as a function.

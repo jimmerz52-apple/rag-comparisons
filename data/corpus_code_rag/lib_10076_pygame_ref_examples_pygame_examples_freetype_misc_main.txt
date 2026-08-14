@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.freetype_misc.main
+
+freetype_misc.main() 
+ run a FreeType rendering example freetype_misc.main() -> None  A showcase of rendering features the pygame.freetype.Font class provides in addition to those available with pygame.font.Font. It is a demonstration of direct to surface rendering, with vertical text and rotated text, opaque text and semi transparent text, horizontally stretched text and vertically stretched text.

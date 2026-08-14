@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.MAX_INTERPOLATION_DEPTH
+
+configparser.MAX_INTERPOLATION_DEPTH  
+The maximum depth for recursive interpolation for get() when the raw parameter is false. This is relevant only when the default interpolation is used.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.rangeindex.stop
+
+pandas.RangeIndex.stop   propertyRangeIndex.stop
+ 
+The value of the stop parameter.

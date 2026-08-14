@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.pack
+
+pack()  
+Rename messages in the mailbox as necessary to eliminate gaps in numbering. Entries in the sequences list are updated correspondingly.  Note Already-issued keys are invalidated by this operation and should not be subsequently used.

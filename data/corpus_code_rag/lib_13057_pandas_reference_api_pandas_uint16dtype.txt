@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.uint16dtype
+
+pandas.UInt16Dtype   classpandas.UInt16Dtype[source]
+ 
+An ExtensionDtype for uint16 integer data.  Changed in version 1.0.0: Now uses pandas.NA as its missing value, rather than numpy.nan.  Attributes       
+None     Methods       
+None

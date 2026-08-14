@@ -1,0 +1,9 @@
+# python.library.pathlib#pathlib.PurePath.is_relative_to
+
+PurePath.is_relative_to(*other)  
+Return whether or not this path is relative to the other path. >>> p = PurePath('/etc/passwd')
+>>> p.is_relative_to('/etc')
+True
+>>> p.is_relative_to('/usr')
+False
+  New in version 3.9.

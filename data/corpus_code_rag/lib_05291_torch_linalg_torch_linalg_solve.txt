@@ -1,0 +1,24 @@
+# torch.linalg#torch.linalg.solve
+
+torch.linalg.solve(input, other, *, out=None) → Tensor  
+Computes the solution x to the matrix equation matmul(input, x) = other with a square matrix, or batches of such matrices, input and one or more right-hand side vectors other. If input is batched and other is not, then other is broadcast to have the same batch dimensions as input. The resulting tensor has the same shape as the (possibly broadcast) other. Supports input of float, double, cfloat and cdouble dtypes.  Note If input is a non-square or non-invertible matrix, or a batch containing non-square matrices or one or more non-invertible matrices, then a RuntimeError will be thrown.   Note When given inputs on a CUDA device, this function synchronizes that device with the CPU.   Parameters 
+ 
+input (Tensor) – the square n×nn \times n  matrix or the batch of such matrices of size (∗,n,n)(*, n, n)  where * is one or more batch dimensions. 
+other (Tensor) – right-hand side tensor of shape (∗,n)(*, n)  or (∗,n,k)(*, n, k) , where kk  is the number of right-hand side vectors.   Keyword Arguments 
+out (Tensor, optional) – The output tensor. Ignored if None. Default: None   Examples: >>> A = torch.eye(3)
+>>> b = torch.randn(3)
+>>> x = torch.linalg.solve(A, b)
+>>> torch.allclose(A @ x, b)
+True
+ Batched input: >>> A = torch.randn(2, 3, 3)
+>>> b = torch.randn(3, 1)
+>>> x = torch.linalg.solve(A, b)
+>>> torch.allclose(A @ x, b)
+True
+>>> b = torch.rand(3) # b is broadcast internally to (*A.shape[:-2], 3)
+>>> x = torch.linalg.solve(A, b)
+>>> x.shape
+torch.Size([2, 3])
+>>> Ax = A @ x.unsqueeze(-1)
+>>> torch.allclose(Ax, b.unsqueeze(-1).expand_as(Ax))
+True

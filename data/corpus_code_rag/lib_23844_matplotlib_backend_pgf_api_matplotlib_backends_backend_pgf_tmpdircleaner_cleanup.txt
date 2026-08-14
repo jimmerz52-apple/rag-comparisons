@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.TmpDirCleaner.cleanup_remaining_tmpdirs
+
+staticcleanup_remaining_tmpdirs()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

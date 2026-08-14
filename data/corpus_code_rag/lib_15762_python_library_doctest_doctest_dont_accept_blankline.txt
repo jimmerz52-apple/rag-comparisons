@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DONT_ACCEPT_BLANKLINE
+
+doctest.DONT_ACCEPT_BLANKLINE  
+By default, if an expected output block contains a line containing only the string <BLANKLINE>, then that line will match a blank line in the actual output. Because a genuinely blank line delimits the expected output, this is the only way to communicate that a blank line is expected. When DONT_ACCEPT_BLANKLINE is specified, this substitution is not allowed.

@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.set_trace
+
+set_trace([frame])  
+Start debugging from frame. If frame is not specified, debugging starts from caller’s frame.

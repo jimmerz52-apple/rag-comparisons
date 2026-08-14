@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.vdot
+
+vdot(other) → Tensor  
+See torch.vdot()

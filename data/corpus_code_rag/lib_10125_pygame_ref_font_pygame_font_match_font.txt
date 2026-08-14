@@ -1,0 +1,6 @@
+# pygame.ref.font#pygame.font.match_font
+
+pygame.font.match_font() 
+ find a specific font on the system match_font(name, bold=False, italic=False) -> path  Returns the full path to a font file on the system. If bold or italic are set to true, this will attempt to find the correct family of font. The font name can also be an iterable of font names, a string of comma-separated font names, or a bytes of comma-separated font names, in which case the set of names will be searched in order. If none of the given names are found, None is returned.  New in pygame 2.0.1: Accept an iterable of font names.  Example: print pygame.font.match_font('bitstreamverasans')
+# output is: /usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf
+# (but only if you have Vera on your system)

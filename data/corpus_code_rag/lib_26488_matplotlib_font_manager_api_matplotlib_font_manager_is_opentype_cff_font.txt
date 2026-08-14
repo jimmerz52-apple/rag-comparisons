@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.is_opentype_cff_font
+
+matplotlib.font_manager.is_opentype_cff_font(filename)[source]
+ 
+Return whether the given font is a Postscript Compact Font Format Font embedded in an OpenType wrapper. Used by the PostScript and PDF backends that can not subset these fonts.

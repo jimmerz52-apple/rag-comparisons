@@ -1,0 +1,4 @@
+# python.library.os#os.RWF_HIPRI
+
+os.RWF_HIPRI  
+High priority read/write. Allows block-based filesystems to use polling of the device, which provides lower latency, but may use additional resources. Currently, on Linux, this feature is usable only on a file descriptor opened using the O_DIRECT flag. Availability: Linux 4.6 and newer.  New in version 3.7.

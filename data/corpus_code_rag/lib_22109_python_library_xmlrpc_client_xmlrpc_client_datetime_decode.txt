@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.DateTime.decode
+
+decode(string)  
+Accept a string as the instance’s new time value.

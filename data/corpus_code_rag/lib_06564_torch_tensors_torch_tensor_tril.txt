@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.tril
+
+tril(k=0) → Tensor  
+See torch.tril()

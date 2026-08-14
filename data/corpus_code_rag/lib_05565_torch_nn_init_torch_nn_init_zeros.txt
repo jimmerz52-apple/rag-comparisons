@@ -1,0 +1,7 @@
+# torch.nn.init#torch.nn.init.zeros_
+
+torch.nn.init.zeros_(tensor) [source]
+ 
+Fills the input Tensor with the scalar value 0.  Parameters 
+tensor – an n-dimensional torch.Tensor   Examples >>> w = torch.empty(3, 5)
+>>> nn.init.zeros_(w)

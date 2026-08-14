@@ -1,0 +1,6 @@
+# numpy.reference.generated.numpy.matrix.dumps
+
+numpy.matrix.dumps method   matrix.dumps()
+ 
+Returns the pickle of the array as a string. pickle.loads will convert the string back to an array.  Parameters 
+ None

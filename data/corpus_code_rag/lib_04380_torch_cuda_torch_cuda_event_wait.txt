@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Event.wait
+
+wait(stream=None) [source]
+ 
+Makes all future work submitted to the given stream wait for this event. Use torch.cuda.current_stream() if no stream is specified.

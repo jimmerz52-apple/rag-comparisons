@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.strict_rfc2965_unverifiable
+
+DefaultCookiePolicy.strict_rfc2965_unverifiable  
+Follow RFC 2965 rules on unverifiable transactions (usually, an unverifiable transaction is one resulting from a redirect or a request for an image hosted on another site). If this is false, cookies are never blocked on the basis of verifiability

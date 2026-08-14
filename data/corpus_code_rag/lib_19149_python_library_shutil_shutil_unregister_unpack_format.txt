@@ -1,0 +1,4 @@
+# python.library.shutil#shutil.unregister_unpack_format
+
+shutil.unregister_unpack_format(name)  
+Unregister an unpack format. name is the name of the format.

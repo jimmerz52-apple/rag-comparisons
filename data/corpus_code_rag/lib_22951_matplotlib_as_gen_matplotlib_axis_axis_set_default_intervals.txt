@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_default_intervals
+
+matplotlib.axis.Axis.set_default_intervals   Axis.set_default_intervals()[source]
+ 
+Set the default limits for the axis data and view interval if they have not been not mutated yet.

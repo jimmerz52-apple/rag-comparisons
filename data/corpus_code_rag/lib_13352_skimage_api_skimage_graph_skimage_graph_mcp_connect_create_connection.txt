@@ -1,0 +1,23 @@
+# skimage.api.skimage.graph#skimage.graph.MCP_Connect.create_connection
+
+create_connection()  
+create_connection id1, id2, pos1, pos2, cost1, cost2) Overload this method to keep track of the connections that are found during MCP processing. Note that a connection with the same ids can be found multiple times (but with different positions and costs). At the time that this method is called, both points are “frozen” and will not be visited again by the MCP algorithm.  Parameters 
+ 
+id1int 
+
+The seed point id where the first neighbor originated from.  
+id2int 
+
+The seed point id where the second neighbor originated from.  
+pos1tuple 
+
+The index of of the first neighbour in the connection.  
+pos2tuple 
+
+The index of of the second neighbour in the connection.  
+cost1float 
+
+The cumulative cost at pos1.  
+cost2float 
+
+The cumulative costs at pos2.

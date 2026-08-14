@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.next_bday
+
+pandas.tseries.offsets.BusinessHour.next_bday   BusinessHour.next_bday
+ 
+Used for moving to next business day.

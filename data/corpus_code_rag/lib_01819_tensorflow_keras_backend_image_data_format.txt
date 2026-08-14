@@ -1,0 +1,13 @@
+# tensorflow.keras.backend.image_data_format
+
+tf.keras.backend.image_data_format     View source on GitHub    Returns the default image data format convention.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.backend.image_data_format  
+tf.keras.backend.image_data_format()
+
+ 
+
+
+ Returns   A string, either 'channels_first' or 'channels_last'  
+ Example: 
+tf.keras.backend.image_data_format()
+'channels_last'

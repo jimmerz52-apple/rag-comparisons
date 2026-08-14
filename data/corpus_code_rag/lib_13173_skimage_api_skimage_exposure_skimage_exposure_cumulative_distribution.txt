@@ -1,0 +1,29 @@
+# skimage.api.skimage.exposure#skimage.exposure.cumulative_distribution
+
+skimage.exposure.cumulative_distribution(image, nbins=256) [source]
+ 
+Return cumulative distribution function (cdf) for the given image.  Parameters 
+ 
+imagearray 
+
+Image array.  
+nbinsint, optional 
+
+Number of bins for image histogram.    Returns 
+ 
+img_cdfarray 
+
+Values of cumulative distribution function.  
+bin_centersarray 
+
+Centers of bins.      See also  
+histogram
+
+  References  
+1  
+https://en.wikipedia.org/wiki/Cumulative_distribution_function   Examples >>> from skimage import data, exposure, img_as_float
+>>> image = img_as_float(data.camera())
+>>> hi = exposure.histogram(image)
+>>> cdf = exposure.cumulative_distribution(image)
+>>> np.alltrue(cdf[0] == np.cumsum(hi[0])/float(image.size))
+True

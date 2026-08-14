@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.YearArchiveView.get_make_object_list
+
+get_make_object_list()  
+Determine if an object list will be returned as part of the context. Returns make_object_list by default.

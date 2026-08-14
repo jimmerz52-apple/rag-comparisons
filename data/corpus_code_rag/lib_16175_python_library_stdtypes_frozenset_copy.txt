@@ -1,0 +1,4 @@
+# python.library.stdtypes#frozenset.copy
+
+copy()  
+Return a shallow copy of the set.

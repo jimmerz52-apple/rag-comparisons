@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.is_nonlocal
+
+is_nonlocal()  
+Return True if the symbol is nonlocal.

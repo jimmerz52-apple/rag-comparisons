@@ -1,0 +1,4 @@
+# python.library.termios#termios.tcdrain
+
+termios.tcdrain(fd)  
+Wait until all output written to file descriptor fd has been transmitted.

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Attr.localName
+
+Attr.localName  
+The part of the name following the colon if there is one, else the entire name. This is a read-only attribute.

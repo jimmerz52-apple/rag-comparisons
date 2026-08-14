@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.default
+
+email.policy.default  
+An instance of EmailPolicy with all defaults unchanged. This policy uses the standard Python \n line endings rather than the RFC-correct \r\n.

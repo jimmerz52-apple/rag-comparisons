@@ -1,0 +1,21 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.PreparedGeometry
+
+class PreparedGeometry  
+All methods on PreparedGeometry take an other argument, which must be a GEOSGeometry instance.  
+contains(other) 
+  
+contains_properly(other) 
+  
+covers(other) 
+  
+crosses(other) 
+  
+disjoint(other) 
+  
+intersects(other) 
+  
+overlaps(other) 
+  
+touches(other) 
+  
+within(other)

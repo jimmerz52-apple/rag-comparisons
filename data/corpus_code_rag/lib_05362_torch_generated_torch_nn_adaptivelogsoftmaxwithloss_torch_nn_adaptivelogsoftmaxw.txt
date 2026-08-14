@@ -1,0 +1,10 @@
+# torch.generated.torch.nn.adaptivelogsoftmaxwithloss#torch.nn.AdaptiveLogSoftmaxWithLoss.log_prob
+
+log_prob(input) [source]
+ 
+Computes log probabilities for all n_classes\texttt{n\_classes}   Parameters 
+input (Tensor) – a minibatch of examples  Returns 
+log-probabilities of for each class cc  in range 0<=c<=n_classes0 <= c <= \texttt{n\_classes} , where n_classes\texttt{n\_classes}  is a parameter passed to AdaptiveLogSoftmaxWithLoss constructor.    Shape:
+
+ Input: (N,in_features)(N, \texttt{in\_features}) 
+ Output: (N,n_classes)(N, \texttt{n\_classes})

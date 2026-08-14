@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.verbose_name
+
+InlineModelAdmin.verbose_name  
+An override to the verbose_name from the model’s inner Meta class.

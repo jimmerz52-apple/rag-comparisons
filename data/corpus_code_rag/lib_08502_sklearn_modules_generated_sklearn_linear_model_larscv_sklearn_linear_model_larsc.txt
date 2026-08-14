@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.linear_model.larscv#sklearn.linear_model.LarsCV.fit
+
+fit(X, y) [source]
+ 
+Fit the model using X, y as training data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.  
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+selfobject 
+
+returns an instance of self.

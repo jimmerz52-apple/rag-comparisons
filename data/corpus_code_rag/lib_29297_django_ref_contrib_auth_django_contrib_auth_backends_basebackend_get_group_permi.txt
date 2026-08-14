@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.BaseBackend.get_group_permissions
+
+get_group_permissions(user_obj, obj=None)  
+Returns an empty set.

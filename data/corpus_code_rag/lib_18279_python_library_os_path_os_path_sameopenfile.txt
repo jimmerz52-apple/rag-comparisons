@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.sameopenfile
+
+os.path.sameopenfile(fp1, fp2)  
+Return True if the file descriptors fp1 and fp2 refer to the same file. Availability: Unix, Windows.  Changed in version 3.2: Added Windows support.   Changed in version 3.6: Accepts a path-like object.

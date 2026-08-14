@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.date.year
+
+date.year  
+Between MINYEAR and MAXYEAR inclusive.

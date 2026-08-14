@@ -1,0 +1,13 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.setlist
+
+setlist(key, new_list)  
+Remove the old values for a key and add new ones. Note that the list you pass the values in will be shallow-copied before it is inserted in the dictionary. >>> d = MultiDict()
+>>> d.setlist('foo', ['1', '2'])
+>>> d['foo']
+'1'
+>>> d.getlist('foo')
+['1', '2']
+  Parameters 
+ 
+key – The key for which the values are set. 
+new_list – An iterable with the new values for the key. Old values are removed first.

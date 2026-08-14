@@ -1,0 +1,24 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.ComboBox
+
+class skimage.viewer.widgets.ComboBox(name, items, ptype='kwarg', callback=None) [source]
+ 
+Bases: skimage.viewer.widgets.core.BaseWidget ComboBox widget for selecting among a list of choices.  Parameters 
+ 
+namestr 
+
+Name of ComboBox parameter. If this parameter is passed as a keyword argument, it must match the name of that keyword argument (spaces are replaced with underscores). In addition, this name is displayed as the name of the ComboBox.  items: list of str
+
+Allowed parameter values.  
+ptype{‘arg’ | ‘kwarg’ | ‘plugin’}, optional 
+
+Parameter type.  
+callbackcallable f(widget_name, value), optional 
+
+Callback function called in response to combobox changes. Note: This function is typically set (overridden) when the widget is added to a plugin.      
+__init__(name, items, ptype='kwarg', callback=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+property index 
+  
+property val

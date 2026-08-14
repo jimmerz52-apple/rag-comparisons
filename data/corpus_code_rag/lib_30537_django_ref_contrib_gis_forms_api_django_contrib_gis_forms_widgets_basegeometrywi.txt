@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.BaseGeometryWidget.supports_3d
+
+BaseGeometryWidget.supports_3d  
+Indicates if the widget supports edition of 3D data (default is False).

@@ -1,0 +1,4 @@
+# python.library.signal#signal.alarm
+
+signal.alarm(time)  
+If time is non-zero, this function requests that a SIGALRM signal be sent to the process in time seconds. Any previously scheduled alarm is canceled (only one alarm can be scheduled at any time). The returned value is then the number of seconds before any previously set alarm was to have been delivered. If time is zero, no alarm is scheduled, and any scheduled alarm is canceled. If the return value is zero, no alarm is currently scheduled. Availability: Unix. See the man page alarm(2) for further information.

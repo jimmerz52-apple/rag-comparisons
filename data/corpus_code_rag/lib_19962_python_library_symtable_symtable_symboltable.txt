@@ -1,0 +1,36 @@
+# python.library.symtable#symtable.SymbolTable
+
+class symtable.SymbolTable  
+A namespace table for a block. The constructor is not public.  
+get_type()  
+Return the type of the symbol table. Possible values are 'class', 'module', and 'function'. 
+  
+get_id()  
+Return the table’s identifier. 
+  
+get_name()  
+Return the table’s name. This is the name of the class if the table is for a class, the name of the function if the table is for a function, or 'top' if the table is global (get_type() returns 'module'). 
+  
+get_lineno()  
+Return the number of the first line in the block this table represents. 
+  
+is_optimized()  
+Return True if the locals in this table can be optimized. 
+  
+is_nested()  
+Return True if the block is a nested class or function. 
+  
+has_children()  
+Return True if the block has nested namespaces within it. These can be obtained with get_children(). 
+  
+get_identifiers()  
+Return a list of names of symbols in this table. 
+  
+lookup(name)  
+Lookup name in the table and return a Symbol instance. 
+  
+get_symbols()  
+Return a list of Symbol instances for names in the table. 
+  
+get_children()  
+Return a list of the nested symbol tables.

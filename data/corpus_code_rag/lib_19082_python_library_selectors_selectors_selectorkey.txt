@@ -1,0 +1,15 @@
+# python.library.selectors#selectors.SelectorKey
+
+class selectors.SelectorKey  
+A SelectorKey is a namedtuple used to associate a file object to its underlying file descriptor, selected event mask and attached data. It is returned by several BaseSelector methods.  
+fileobj  
+File object registered. 
+  
+fd  
+Underlying file descriptor. 
+  
+events  
+Events that must be waited for on this file object. 
+  
+data  
+Optional opaque data associated to this file object: for example, this could be used to store a per-client session ID.

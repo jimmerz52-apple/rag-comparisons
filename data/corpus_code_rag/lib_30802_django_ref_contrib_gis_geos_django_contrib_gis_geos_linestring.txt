@@ -1,0 +1,12 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.LineString
+
+class LineString(*args, **kwargs)  
+LineString objects are instantiated using arguments that are either a sequence of coordinates or Point objects. For example, the following are equivalent: >>> ls = LineString((0, 0), (1, 1))
+>>> ls = LineString(Point(0, 0), Point(1, 1))
+ In addition, LineString objects may also be created by passing in a single sequence of coordinate or Point objects: >>> ls = LineString( ((0, 0), (1, 1)) )
+>>> ls = LineString( [Point(0, 0), Point(1, 1)] )
+ Empty LineString objects may be instantiated by passing no arguments or an empty sequence. The following are equivalent: >>> ls = LineString()
+>>> ls = LineString([])
+  
+closed  
+Returns whether or not this LineString is closed.

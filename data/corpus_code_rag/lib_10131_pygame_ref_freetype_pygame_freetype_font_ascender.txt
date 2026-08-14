@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.ascender
+
+ascender 
+ The unscaled ascent of the font in font units ascender -> int  Read only. Return the number of units from the font's baseline to the top of the bounding box.

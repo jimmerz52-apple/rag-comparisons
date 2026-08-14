@@ -1,0 +1,4 @@
+# python.library.test#test.support.set_memlimit
+
+test.support.set_memlimit(limit)  
+Set the values for max_memuse and real_max_memuse for big memory tests.

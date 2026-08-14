@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.ismeta
+
+curses.ascii.ismeta(c)  
+Checks for a non-ASCII character (ordinal values 0x80 and above).

@@ -1,0 +1,16 @@
+# python.library.gc#gc.is_tracked
+
+gc.is_tracked(obj)  
+Returns True if the object is currently tracked by the garbage collector, False otherwise. As a general rule, instances of atomic types aren’t tracked and instances of non-atomic types (containers, user-defined objects…) are. However, some type-specific optimizations can be present in order to suppress the garbage collector footprint of simple instances (e.g. dicts containing only atomic keys and values): >>> gc.is_tracked(0)
+False
+>>> gc.is_tracked("a")
+False
+>>> gc.is_tracked([])
+True
+>>> gc.is_tracked({})
+False
+>>> gc.is_tracked({"a": 1})
+False
+>>> gc.is_tracked({"a": []})
+True
+  New in version 3.1.

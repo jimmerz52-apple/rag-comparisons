@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.weekofmonth.__call__
+
+pandas.tseries.offsets.WeekOfMonth.__call__   WeekOfMonth.__call__(*args, **kwargs)
+ 
+Call self as a function.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.generate_dispatch_header
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.generate_dispatch_header method   distutils.ccompiler_opt.CCompilerOpt.generate_dispatch_header(header_path)[source]
+ 
+Generate the dispatch header which contains the #definitions and headers for platform-specific instruction-sets for the enabled CPU baseline and dispatch-able features. Its highly recommended to take a look at the generated header also the generated source files via try_dispatch() in order to get the full picture.

@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.eagle
+
+skimage.data.eagle() [source]
+ 
+A golden eagle. Suitable for examples on segmentation, Hough transforms, and corner detection.  Returns 
+ 
+eagle(2019, 1826) uint8 ndarray 
+
+Eagle image.     Notes No copyright restrictions. CC0 by the photographer (Dayane Machado).

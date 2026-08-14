@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.add
+
+add(key, value)  
+Adds a new value for the key.  Changelog New in version 0.6.   Parameters 
+ 
+key – the key for the value. 
+value – the value to add.

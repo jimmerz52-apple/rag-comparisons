@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.remove_axis
+
+numpy.nditer.remove_axis method   nditer.remove_axis(i, /)
+ 
+Removes axis i from the iterator. Requires that the flag “multi_index” be enabled.

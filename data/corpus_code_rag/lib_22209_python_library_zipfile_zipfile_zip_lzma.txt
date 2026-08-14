@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZIP_LZMA
+
+zipfile.ZIP_LZMA  
+The numeric constant for the LZMA compression method. This requires the lzma module.  New in version 3.3.   Note The ZIP file format specification has included support for bzip2 compression since 2001, and for LZMA compression since 2006. However, some tools (including older Python releases) do not support these compression methods, and may either refuse to process the ZIP file altogether, or fail to extract individual files.

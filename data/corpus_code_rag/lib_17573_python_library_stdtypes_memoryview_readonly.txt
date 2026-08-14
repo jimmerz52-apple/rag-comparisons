@@ -1,0 +1,4 @@
+# python.library.stdtypes#memoryview.readonly
+
+readonly  
+A bool indicating whether the memory is read only.

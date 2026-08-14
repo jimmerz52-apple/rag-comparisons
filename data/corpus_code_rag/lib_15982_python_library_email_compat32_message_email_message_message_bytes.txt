@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.__bytes__
+
+__bytes__()  
+Equivalent to as_bytes(). Allows bytes(msg) to produce a bytes object containing the formatted message.  New in version 3.4.

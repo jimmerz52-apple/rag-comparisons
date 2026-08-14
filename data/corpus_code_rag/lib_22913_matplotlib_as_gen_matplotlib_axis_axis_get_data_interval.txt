@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_data_interval
+
+matplotlib.axis.Axis.get_data_interval   Axis.get_data_interval()[source]
+ 
+Return the (min, max) data limits of this axis.

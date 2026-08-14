@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.bquarterend.onoffset
+
+pandas.tseries.offsets.BQuarterEnd.onOffset   BQuarterEnd.onOffset()

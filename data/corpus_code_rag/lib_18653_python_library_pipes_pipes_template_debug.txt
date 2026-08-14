@@ -1,0 +1,4 @@
+# python.library.pipes#pipes.Template.debug
+
+Template.debug(flag)  
+If flag is true, turn debugging on. Otherwise, turn debugging off. When debugging is on, commands to be executed are printed, and the shell is given set -x command to be more verbose.

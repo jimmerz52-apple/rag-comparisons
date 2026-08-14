@@ -1,0 +1,4 @@
+# python.library.stdtypes#range.start
+
+start  
+The value of the start parameter (or 0 if the parameter was not supplied)

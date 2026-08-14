@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertInHTML
+
+SimpleTestCase.assertInHTML(needle, haystack, count=None, msg_prefix='')  
+Asserts that the HTML fragment needle is contained in the haystack one. If the count integer argument is specified, then additionally the number of needle occurrences will be strictly verified. Whitespace in most cases is ignored, and attribute ordering is not significant. See assertHTMLEqual() for more details.

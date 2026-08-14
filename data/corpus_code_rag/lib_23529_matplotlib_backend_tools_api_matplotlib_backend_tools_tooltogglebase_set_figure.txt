@@ -1,0 +1,3 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolToggleBase.set_figure
+
+set_figure(figure)[source]

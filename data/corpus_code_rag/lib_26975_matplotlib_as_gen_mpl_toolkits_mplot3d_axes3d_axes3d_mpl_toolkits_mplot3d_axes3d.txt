@@ -1,0 +1,39 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_title
+
+set_title(label, fontdict=None, loc='center', **kwargs)[source]
+ 
+Set a title for the Axes. Set one of the three available Axes titles. The available titles are positioned above the Axes in the center, flush with the left edge, and flush with the right edge.  Parameters 
+ 
+labelstr
+
+
+Text to use for the title  
+fontdictdict
+
+
+A dictionary controlling the appearance of the title text, the default fontdict is: {'fontsize': rcParams['axes.titlesize'],
+ 'fontweight': rcParams['axes.titleweight'],
+ 'color': rcParams['axes.titlecolor'],
+ 'verticalalignment': 'baseline',
+ 'horizontalalignment': loc}
+  
+loc{'center', 'left', 'right'}, default: rcParams["axes.titlelocation"] (default: 'center')
+
+
+Which title to set.  
+yfloat, default: rcParams["axes.titley"] (default: None)
+
+
+Vertical Axes loation for the title (1.0 is the top). If None (the default), y is determined automatically to avoid decorators on the Axes.  
+padfloat, default: rcParams["axes.titlepad"] (default: 6.0)
+
+
+The offset of the title from the top of the Axes, in points.    Returns 
+ Text
+
+The matplotlib text instance representing the title    Other Parameters 
+ 
+**kwargsText properties
+
+
+Other keyword arguments are text properties, see Text for a list of valid text properties.

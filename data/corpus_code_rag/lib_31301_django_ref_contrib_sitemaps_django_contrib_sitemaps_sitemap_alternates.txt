@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.alternates
+
+alternates  
+ New in Django 3.2.  Optional. A boolean attribute. When used in conjunction with i18n generated URLs will each have a list of alternate links pointing to other language versions using the hreflang attribute. The default is False.

@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.unregister
+
+AdminSite.unregister(model_or_iterable)  
+Unregisters the given model class (or iterable of classes). Raises django.contrib.admin.sites.NotRegistered if a model isn’t already registered.

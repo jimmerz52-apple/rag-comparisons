@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.paginator
+
+ModelAdmin.paginator  
+The paginator class to be used for pagination. By default, django.core.paginator.Paginator is used. If the custom paginator class doesn’t have the same constructor interface as django.core.paginator.Paginator, you will also need to provide an implementation for ModelAdmin.get_paginator().

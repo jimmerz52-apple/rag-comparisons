@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.update_from
+
+update_from(other)[source]
+ 
+Copy properties from other to self.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessmonthend.cbday_roll
+
+pandas.tseries.offsets.CustomBusinessMonthEnd.cbday_roll   CustomBusinessMonthEnd.cbday_roll
+ 
+Define default roll function to be called in apply method.

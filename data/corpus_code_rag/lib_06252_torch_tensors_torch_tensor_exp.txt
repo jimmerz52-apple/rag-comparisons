@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.exp_
+
+exp_() → Tensor  
+In-place version of exp()

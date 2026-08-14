@@ -1,0 +1,4 @@
+# python.library.os#os.EX_NOTFOUND
+
+os.EX_NOTFOUND  
+Exit code that means something like “an entry was not found”. Availability: Unix.

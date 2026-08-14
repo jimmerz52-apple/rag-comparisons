@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Event.wait
+
+coroutine wait()  
+Wait until the event is set. If the event is set, return True immediately. Otherwise block until another task calls set().

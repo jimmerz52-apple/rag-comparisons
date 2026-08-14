@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ZoomPanBase.trigger
+
+trigger(sender, event, data=None)[source]
+ 
+Calls enable or disable based on toggled value.

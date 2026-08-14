@@ -1,0 +1,4 @@
+# python.library.test#test.support.run_in_subinterp
+
+test.support.run_in_subinterp(code)  
+Run code in subinterpreter. Raise unittest.SkipTest if tracemalloc is enabled.

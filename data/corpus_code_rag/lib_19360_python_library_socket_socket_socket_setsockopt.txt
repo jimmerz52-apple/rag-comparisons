@@ -1,0 +1,3 @@
+# python.library.socket#socket.socket.setsockopt
+
+socket.setsockopt(level, optname, value: int)

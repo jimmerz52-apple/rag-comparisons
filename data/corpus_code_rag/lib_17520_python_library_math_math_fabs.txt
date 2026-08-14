@@ -1,0 +1,4 @@
+# python.library.math#math.fabs
+
+math.fabs(x)  
+Return the absolute value of x.

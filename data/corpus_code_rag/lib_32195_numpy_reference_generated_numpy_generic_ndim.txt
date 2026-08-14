@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.ndim
+
+numpy.generic.ndim attribute   generic.ndim
+ 
+The number of array dimensions.

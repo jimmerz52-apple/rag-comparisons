@@ -1,0 +1,9 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_theta_direction
+
+get_theta_direction()[source]
+ 
+Get the direction in which theta increases.  -1:
+
+Theta increases in the clockwise direction  1:
+
+Theta increases in the counterclockwise direction

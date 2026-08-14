@@ -1,0 +1,4 @@
+# pygame.ref.pixelcopy#pygame.pixelcopy.map_array
+
+pygame.pixelcopy.map_array() 
+ copy an array to another array, using surface format map_array(<array>, <array>, <surface>) -> None  Map an array of color element values - (w, h, ..., 3) - to an array of pixels - (w, h) according to the format of <surface>.

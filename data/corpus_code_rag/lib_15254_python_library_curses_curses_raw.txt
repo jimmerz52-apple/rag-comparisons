@@ -1,0 +1,4 @@
+# python.library.curses#curses.raw
+
+curses.raw()  
+Enter raw mode. In raw mode, normal line buffering and processing of interrupt, quit, suspend, and flow control keys are turned off; characters are presented to curses input functions one by one.

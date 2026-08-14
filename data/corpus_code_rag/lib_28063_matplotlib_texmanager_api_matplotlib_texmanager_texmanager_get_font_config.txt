@@ -1,0 +1,3 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.get_font_config
+
+get_font_config()[source]

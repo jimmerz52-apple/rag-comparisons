@@ -1,0 +1,4 @@
+# python.library.cgi#cgi.parse
+
+cgi.parse(fp=None, environ=os.environ, keep_blank_values=False, strict_parsing=False, separator="&")  
+Parse a query in the environment or from a file (the file defaults to sys.stdin). The keep_blank_values, strict_parsing and separator parameters are passed to urllib.parse.parse_qs() unchanged.

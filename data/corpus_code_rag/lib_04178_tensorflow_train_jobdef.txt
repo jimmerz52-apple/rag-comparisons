@@ -1,0 +1,10 @@
+# tensorflow.train.jobdef
+
+tf.train.JobDef     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.JobDef 
+ 
+
+
+ Attributes
+  name   string name  
+  tasks   repeated TasksEntry tasks    Child Classes class TasksEntry

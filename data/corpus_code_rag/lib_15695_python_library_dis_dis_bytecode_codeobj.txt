@@ -1,0 +1,4 @@
+# python.library.dis#dis.Bytecode.codeobj
+
+codeobj  
+The compiled code object.

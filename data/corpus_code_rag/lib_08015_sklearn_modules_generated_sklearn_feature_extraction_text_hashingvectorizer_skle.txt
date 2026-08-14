@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.hashingvectorizer#sklearn.feature_extraction.text.HashingVectorizer.partial_fit
+
+partial_fit(X, y=None) [source]
+ 
+Does nothing: this transformer is stateless. This method is just there to mark the fact that this transformer can work in a streaming setup.  Parameters 
+ 
+Xndarray of shape [n_samples, n_features] 
+
+Training data.

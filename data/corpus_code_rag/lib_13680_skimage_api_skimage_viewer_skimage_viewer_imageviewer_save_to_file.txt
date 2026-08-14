@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer#skimage.viewer.ImageViewer.save_to_file
+
+save_to_file(filename=None) [source]
+ 
+Save current image to file. The current behavior is not ideal: It saves the image displayed on screen, so all images will be converted to RGB, and the image size is not preserved (resizing the viewer window will alter the size of the saved image).

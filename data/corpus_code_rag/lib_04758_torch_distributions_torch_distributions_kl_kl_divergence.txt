@@ -1,0 +1,12 @@
+# torch.distributions#torch.distributions.kl.kl_divergence
+
+torch.distributions.kl.kl_divergence(p, q) [source]
+ 
+Compute Kullback-Leibler divergence KL(p∥q)KL(p \| q)  between two distributions.  KL(p∥q)=∫p(x)log⁡p(x)q(x)dxKL(p \| q) = \int p(x) \log\frac {p(x)} {q(x)} \,dx 
+ Parameters 
+ 
+p (Distribution) – A Distribution object. 
+q (Distribution) – A Distribution object.   Returns 
+A batch of KL divergences of shape batch_shape.  Return type 
+Tensor  Raises 
+NotImplementedError – If the distribution types have not been registered via register_kl().

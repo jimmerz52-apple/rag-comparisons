@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.dtypes
+
+pandas.Series.dtypes   propertySeries.dtypes
+ 
+Return the dtype object of the underlying data.

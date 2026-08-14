@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.quit
+
+quit() 
+ uninitialize a cdrom drive for use quit() -> None  Uninitialize a drive for use. Call this when your program will not be accessing the drive for awhile.

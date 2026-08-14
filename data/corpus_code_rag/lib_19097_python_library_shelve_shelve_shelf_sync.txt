@@ -1,0 +1,4 @@
+# python.library.shelve#shelve.Shelf.sync
+
+Shelf.sync()  
+Write back all entries in the cache if the shelf was opened with writeback set to True. Also empty the cache and synchronize the persistent dictionary on disk, if feasible. This is called automatically when the shelf is closed with close().

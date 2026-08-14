@@ -1,0 +1,4 @@
+# python.library.email.generator#email.generator.Generator.write
+
+write(s)  
+Write s to the write method of the outfp passed to the Generator’s constructor. This provides just enough file-like API for Generator instances to be used in the print() function.

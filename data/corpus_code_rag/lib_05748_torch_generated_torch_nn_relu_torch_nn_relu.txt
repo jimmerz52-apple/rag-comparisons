@@ -1,0 +1,17 @@
+# torch.generated.torch.nn.relu#torch.nn.ReLU
+
+class torch.nn.ReLU(inplace=False) [source]
+ 
+Applies the rectified linear unit function element-wise: ReLU(x)=(x)+=max⁡(0,x)\text{ReLU}(x) = (x)^+ = \max(0, x)   Parameters 
+inplace – can optionally do the operation in-place. Default: False    Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples:   >>> m = nn.ReLU()
+  >>> input = torch.randn(2)
+  >>> output = m(input)
+
+
+An implementation of CReLU - https://arxiv.org/abs/1603.05201
+
+  >>> m = nn.ReLU()
+  >>> input = torch.randn(2).unsqueeze(0)
+  >>> output = torch.cat((m(input),m(-input)))

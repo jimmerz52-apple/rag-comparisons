@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.bottom
+
+Panel.bottom()  
+Push the panel to the bottom of the stack.

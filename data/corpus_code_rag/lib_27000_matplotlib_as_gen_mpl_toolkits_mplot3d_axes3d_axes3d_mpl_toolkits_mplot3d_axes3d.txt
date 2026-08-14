@@ -1,0 +1,25 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.tricontourf
+
+tricontourf(*args, zdir='z', offset=None, data=None, **kwargs)[source]
+ 
+Create a 3D filled contour plot.  Note This method currently produces incorrect output due to a longstanding bug in 3D PolyCollection rendering.   Parameters 
+ 
+X, Y, Zarray-like
+
+
+Input data. See tricontourf for acceptable data shapes.  
+zdir{'x', 'y', 'z'}, default: 'z'
+
+
+The direction to use.  
+offsetfloat, optional
+
+
+If specified, plot a projection of the contour lines at this position in a plane normal to zdir.  
+dataindexable object, optional
+
+
+If given, all parameters also accept a string s, which is interpreted as data[s] (unless this raises an exception).  *args, **kwargs
+
+Other arguments are forwarded to matplotlib.axes.Axes.tricontourf.    Returns 
+ matplotlib.tri.tricontour.TriContourSet

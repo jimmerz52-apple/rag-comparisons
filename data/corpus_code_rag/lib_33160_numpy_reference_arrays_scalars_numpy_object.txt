@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.object_
+
+class numpy.object_[source]
+ 
+Any Python object.  Character code 
+'O'

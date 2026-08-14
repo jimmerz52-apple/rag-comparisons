@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__setmask__
+
+numpy.ma.MaskedArray.__setmask__ method   ma.MaskedArray.__setmask__(mask, copy=False)[source]
+ 
+Set the mask.

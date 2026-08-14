@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractEventLoopPolicy.new_event_loop
+
+new_event_loop()  
+Create and return a new event loop object. This method should never return None.

@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.ProtocolError.url
+
+url  
+The URI or URL that triggered the error.

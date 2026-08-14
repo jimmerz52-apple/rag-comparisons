@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.FigureCanvas
+
+matplotlib.backends.backend_cairo.FigureCanvas[source]
+ 
+alias of matplotlib.backends.backend_cairo.FigureCanvasCairo

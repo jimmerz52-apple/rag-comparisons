@@ -1,0 +1,9 @@
+# torch.fx#torch.fx.Graph.get_attr
+
+get_attr(qualified_name, type_expr=None) [source]
+ 
+Insert a get_attr node into the Graph. A get_attr Node represents the fetch of an attribute from the Module hierarchy.  Parameters 
+ 
+qualified_name (str) – the fully-qualified name of the attribute to be retrieved. For example, if the traced Module has a submodule named foo, which has a submodule named bar, which has an attribute named baz, the qualified name foo.bar.baz should be passed as qualified_name. 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have.   Returns 
+The newly-created and inserted get_attr node.    Note The same insertion point and type expression rules apply for this method as Graph.create_node.

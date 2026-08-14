@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.hasz
+
+GEOSGeometry.hasz  
+Returns a boolean indicating whether the geometry is three-dimensional.

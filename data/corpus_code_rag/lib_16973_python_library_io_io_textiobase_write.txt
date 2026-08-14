@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOBase.write
+
+write(s)  
+Write the string s to the stream and return the number of characters written.

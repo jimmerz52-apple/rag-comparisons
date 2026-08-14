@@ -1,0 +1,7 @@
+# torch.nn.init#torch.nn.init.ones_
+
+torch.nn.init.ones_(tensor) [source]
+ 
+Fills the input Tensor with the scalar value 1.  Parameters 
+tensor – an n-dimensional torch.Tensor   Examples >>> w = torch.empty(3, 5)
+>>> nn.init.ones_(w)

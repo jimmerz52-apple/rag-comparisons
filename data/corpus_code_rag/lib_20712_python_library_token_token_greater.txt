@@ -1,0 +1,4 @@
+# python.library.token#token.GREATER
+
+token.GREATER  
+Token value for ">".

@@ -1,0 +1,20 @@
+# sklearn.modules.generated.sklearn.linear_model.passiveaggressiveclassifier#sklearn.linear_model.PassiveAggressiveClassifier.fit
+
+fit(X, y, coef_init=None, intercept_init=None) [source]
+ 
+Fit linear model with Passive Aggressive algorithm.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data  
+ynumpy array of shape [n_samples] 
+
+Target values  
+coef_initarray, shape = [n_classes,n_features] 
+
+The initial coefficients to warm-start the optimization.  
+intercept_initarray, shape = [n_classes] 
+
+The initial intercept to warm-start the optimization.    Returns 
+ 
+selfreturns an instance of self.

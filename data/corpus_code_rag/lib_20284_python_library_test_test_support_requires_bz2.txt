@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_bz2
+
+@test.support.requires_bz2  
+Decorator for skipping tests if bz2 doesn’t exist.

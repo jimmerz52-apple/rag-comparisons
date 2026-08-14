@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.decomposition.factoranalysis#sklearn.decomposition.FactorAnalysis.score
+
+score(X, y=None) [source]
+ 
+Compute the average log-likelihood of the samples  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+The data  
+yIgnored 
+  Returns 
+ 
+llfloat 
+
+Average log-likelihood of the samples under the current model

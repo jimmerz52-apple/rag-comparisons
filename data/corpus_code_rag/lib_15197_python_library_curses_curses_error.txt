@@ -1,0 +1,4 @@
+# python.library.curses#curses.error
+
+exception curses.error  
+Exception raised when a curses library function returns an error.

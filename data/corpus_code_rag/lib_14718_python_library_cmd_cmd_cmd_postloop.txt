@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.postloop
+
+Cmd.postloop()  
+Hook method executed once when cmdloop() is about to return. This method is a stub in Cmd; it exists to be overridden by subclasses.

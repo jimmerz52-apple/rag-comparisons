@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.__ne__
+
+__ne__(other)  
+This method allows you to compare two Charset instances for inequality.

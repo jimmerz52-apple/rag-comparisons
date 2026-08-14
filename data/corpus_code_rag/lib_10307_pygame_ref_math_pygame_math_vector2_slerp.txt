@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.slerp
+
+slerp() 
+ returns a spherical interpolation to the given vector. slerp(Vector2, float) -> Vector2  Calculates the spherical interpolation from self to the given Vector. The second argument - often called t - must be in the range [-1, 1]. It parametrizes where - in between the two vectors - the result should be. If a negative value is given the interpolation will not take the complement of the shortest path.

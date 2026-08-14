@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.context_processor
+
+context_processor(f)  
+Registers a template context processor function.  Parameters 
+f (Callable[[], Dict[str, Any]]) –   Return type 
+Callable[[], Dict[str, Any]]

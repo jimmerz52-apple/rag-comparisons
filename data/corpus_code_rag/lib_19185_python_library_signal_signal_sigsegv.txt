@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGSEGV
+
+signal.SIGSEGV  
+Segmentation fault: invalid memory reference.

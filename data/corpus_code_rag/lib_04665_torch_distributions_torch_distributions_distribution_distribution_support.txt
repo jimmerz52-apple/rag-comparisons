@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.support
+
+property support  
+Returns a Constraint object representing this distribution’s support.

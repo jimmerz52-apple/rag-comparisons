@@ -1,0 +1,4 @@
+# python.library.os#os.WIFSTOPPED
+
+os.WIFSTOPPED(status)  
+Return True if the process was stopped by delivery of a signal, otherwise return False. WIFSTOPPED() only returns True if the waitpid() call was done using WUNTRACED option or when the process is being traced (see ptrace(2)). Availability: Unix.

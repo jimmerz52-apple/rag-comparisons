@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.StatisticDiff.count
+
+count  
+Number of memory blocks in the new snapshot (int): 0 if the memory blocks have been released in the new snapshot.

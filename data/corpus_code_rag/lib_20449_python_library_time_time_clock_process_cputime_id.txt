@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_PROCESS_CPUTIME_ID
+
+time.CLOCK_PROCESS_CPUTIME_ID  
+High-resolution per-process timer from the CPU. Availability: Unix.  New in version 3.3.

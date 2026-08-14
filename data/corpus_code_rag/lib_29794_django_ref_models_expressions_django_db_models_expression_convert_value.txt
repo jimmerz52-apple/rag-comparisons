@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.convert_value
+
+convert_value(value, expression, connection)  
+A hook allowing the expression to coerce value into a more appropriate type. expression is the same as self.

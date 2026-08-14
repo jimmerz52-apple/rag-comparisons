@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.distutils.system_info.get_info
+
+numpy.distutils.system_info.get_info   distutils.system_info.get_info(name, notfound_action=0)[source]
+ 
+ notfound_action:
+
+0 - do nothing 1 - display warning message 2 - raise error

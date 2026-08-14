@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.has_change_permission
+
+ModelAdmin.has_change_permission(request, obj=None)  
+Should return True if editing obj is permitted, False otherwise. If obj is None, should return True or False to indicate whether editing of objects of this type is permitted in general (e.g., False will be interpreted as meaning that the current user is not permitted to edit any object of this type).

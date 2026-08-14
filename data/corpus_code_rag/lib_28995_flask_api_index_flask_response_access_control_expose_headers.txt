@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.access_control_expose_headers
+
+access_control_expose_headers  
+Which headers can be shared by the browser to JavaScript code.

@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_linespacing
+
+set_linespacing(spacing)[source]
+ 
+Set the line spacing as a multiple of the font size. The default line spacing is 1.2.  Parameters 
+ 
+spacingfloat (multiple of font size)

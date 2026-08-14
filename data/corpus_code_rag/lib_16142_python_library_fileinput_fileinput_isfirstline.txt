@@ -1,0 +1,4 @@
+# python.library.fileinput#fileinput.isfirstline
+
+fileinput.isfirstline()  
+Return True if the line just read is the first line of its file, otherwise return False.

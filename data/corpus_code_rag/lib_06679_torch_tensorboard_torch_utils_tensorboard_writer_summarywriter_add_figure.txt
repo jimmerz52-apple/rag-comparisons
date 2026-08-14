@@ -1,0 +1,11 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_figure
+
+add_figure(tag, figure, global_step=None, close=True, walltime=None) [source]
+ 
+Render matplotlib figure into an image and add it to summary. Note that this requires the matplotlib package.  Parameters 
+ 
+tag (string) – Data identifier 
+figure (matplotlib.pyplot.figure) – Figure or a list of figures 
+global_step (int) – Global step value to record 
+close (bool) – Flag to automatically close the figure 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event

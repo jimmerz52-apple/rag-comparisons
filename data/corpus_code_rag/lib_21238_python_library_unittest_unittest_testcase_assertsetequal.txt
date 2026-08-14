@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.assertSetEqual
+
+assertSetEqual(first, second, msg=None)  
+Tests that two sets are equal. If not, an error message is constructed that lists the differences between the sets. This method is used by default when comparing sets or frozensets with assertEqual(). Fails if either of first or second does not have a set.difference() method.  New in version 3.1.

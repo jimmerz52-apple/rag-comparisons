@@ -1,0 +1,13 @@
+# pandas.reference.api.pandas.api.types.is_hashable
+
+pandas.api.types.is_hashable   pandas.api.types.is_hashable(obj)[source]
+ 
+Return True if hash(obj) will succeed, False otherwise. Some types will pass a test against collections.abc.Hashable but fail when they are actually hashed with hash(). Distinguish between these and other types by trying the call to hash() and seeing if they raise TypeError.  Returns 
+ bool
+   Examples 
+>>> import collections
+>>> a = ([],)
+>>> isinstance(a, collections.abc.Hashable)
+True
+>>> is_hashable(a)
+False

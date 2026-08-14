@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__iadd__
+
+numpy.ndarray.__iadd__ method   ndarray.__iadd__(value, /)
+ 
+Return self+=value.

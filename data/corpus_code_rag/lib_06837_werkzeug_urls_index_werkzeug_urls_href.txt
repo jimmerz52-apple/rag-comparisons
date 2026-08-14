@@ -1,0 +1,23 @@
+# werkzeug.urls.index#werkzeug.urls.Href
+
+class werkzeug.urls.Href(base='./', charset='utf-8', sort=False, key=None)  
+Implements a callable that constructs URLs with the given base. The function can be called with any number of positional and keyword arguments which than are used to assemble the URL. Works with URLs and posix paths. Positional arguments are appended as individual segments to the path of the URL: >>> href = Href('/foo')
+>>> href('bar', 23)
+'/foo/bar/23'
+>>> href('foo', bar=23)
+'/foo/foo?bar=23'
+ If any of the arguments (positional or keyword) evaluates to None it will be skipped. If no keyword arguments are given the last argument can be a dict or MultiDict (or any other dict subclass), otherwise the keyword arguments are used for the query parameters, cutting off the first trailing underscore of the parameter name: >>> href(is_=42)
+'/foo?is=42'
+>>> href({'foo': 'bar'})
+'/foo?foo=bar'
+ Combining of both methods is not allowed: >>> href({'foo': 'bar'}, bar=42)
+Traceback (most recent call last):
+  ...
+TypeError: keyword arguments and query-dicts can't be combined
+ Accessing attributes on the href object creates a new href object with the attribute name as prefix: >>> bar_href = href.bar
+>>> bar_href("blub")
+'/foo/bar/blub'
+ If sort is set to True the items are sorted by key or the default sorting algorithm: >>> href = Href("/", sort=True)
+>>> href(a=1, b=2, c=3)
+'/?a=1&b=2&c=3'
+  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use werkzeug.routing instead.   Changelog New in version 0.5: sort and key were added.

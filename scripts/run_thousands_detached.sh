@@ -23,8 +23,18 @@ echo "[Hotpot] finished exit=$?"
 .venv/bin/python scripts/build_dashboard.py || true
 
 echo "[CodeRAG] scoring 2103 Q"
-.venv/bin/python scripts/run_code_rag_benchmark.py semantic_rag,rerank_semantic
+.venv/bin/python scripts/run_code_rag_benchmark.py semantic_rag,rerank_semantic,hybrid_dense_sparse
 echo "[CodeRAG] finished exit=$?"
+
+.venv/bin/python scripts/build_dashboard.py || true
+
+echo "[GraphRAG-Bench] all Novel questions"
+.venv/bin/python scripts/run_graphrag_bench.py semantic_rag,rerank_semantic,hybrid_rag,frontier_rag,lazygraph_rag 0
+echo "[GraphRAG-Bench] finished exit=$?"
+
+echo "[MultiHop] all 150"
+.venv/bin/python scripts/run_multihop_benchmark.py semantic_rag,rerank_semantic,hybrid_rag,frontier_rag,lazygraph_rag 50
+echo "[MultiHop] finished exit=$?"
 
 .venv/bin/python scripts/build_dashboard.py || true
 echo "==== $(date) ALL DONE ===="

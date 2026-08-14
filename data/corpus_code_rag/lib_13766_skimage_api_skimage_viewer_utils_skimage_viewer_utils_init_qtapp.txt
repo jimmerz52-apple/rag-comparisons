@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.init_qtapp
+
+skimage.viewer.utils.init_qtapp() [source]
+ 
+Initialize QAppliction. The QApplication needs to be initialized before creating any QWidgets

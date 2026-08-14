@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.setdefault
+
+QueryDict.setdefault(key, default=None)  
+Like dict.setdefault(), except it uses __setitem__() internally.

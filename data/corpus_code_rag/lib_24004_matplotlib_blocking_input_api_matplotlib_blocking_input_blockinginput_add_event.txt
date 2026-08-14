@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingInput.add_event
+
+add_event(event)[source]
+ 
+For base class, this just appends an event to events.

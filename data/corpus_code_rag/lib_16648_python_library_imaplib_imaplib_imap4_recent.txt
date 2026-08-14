@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.recent
+
+IMAP4.recent()  
+Prompt server for an update. Returned data is None if no new messages, else value of RECENT response.

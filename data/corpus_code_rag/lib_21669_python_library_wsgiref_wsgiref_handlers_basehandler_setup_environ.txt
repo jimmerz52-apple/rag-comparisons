@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.setup_environ
+
+setup_environ()  
+Set the environ attribute to a fully-populated WSGI environment. The default implementation uses all of the above methods and attributes, plus the get_stdin(), get_stderr(), and add_cgi_vars() methods and the wsgi_file_wrapper attribute. It also inserts a SERVER_SOFTWARE key if not present, as long as the origin_server attribute is a true value and the server_software attribute is set.

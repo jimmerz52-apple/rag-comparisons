@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.is_leap_year
+
+pandas.Timestamp.is_leap_year   Timestamp.is_leap_year
+ 
+Return True if year is a leap year. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.is_leap_year
+True

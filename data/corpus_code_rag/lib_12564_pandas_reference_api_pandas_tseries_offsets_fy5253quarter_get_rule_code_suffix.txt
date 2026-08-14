@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.fy5253quarter.get_rule_code_suffix
+
+pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix   FY5253Quarter.get_rule_code_suffix()

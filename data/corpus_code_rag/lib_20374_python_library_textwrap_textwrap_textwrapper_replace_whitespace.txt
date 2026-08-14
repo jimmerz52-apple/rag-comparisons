@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.replace_whitespace
+
+replace_whitespace  
+(default: True) If true, after tab expansion but before wrapping, the wrap() method will replace each whitespace character with a single space. The whitespace characters replaced are as follows: tab, newline, vertical tab, formfeed, and carriage return ('\t\n\v\f\r').  Note If expand_tabs is false and replace_whitespace is true, each tab character will be replaced by a single space, which is not the same as tab expansion.   Note If replace_whitespace is false, newlines may appear in the middle of a line and cause strange output. For this reason, text should be split into paragraphs (using str.splitlines() or similar) which are wrapped separately.

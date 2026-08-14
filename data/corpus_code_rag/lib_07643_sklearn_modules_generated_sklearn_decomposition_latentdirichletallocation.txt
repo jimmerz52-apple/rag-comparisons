@@ -1,0 +1,224 @@
+# sklearn.modules.generated.sklearn.decomposition.latentdirichletallocation
+
+sklearn.decomposition.LatentDirichletAllocation  
+class sklearn.decomposition.LatentDirichletAllocation(n_components=10, *, doc_topic_prior=None, topic_word_prior=None, learning_method='batch', learning_decay=0.7, learning_offset=10.0, max_iter=10, batch_size=128, evaluate_every=- 1, total_samples=1000000.0, perp_tol=0.1, mean_change_tol=0.001, max_doc_update_iter=100, n_jobs=None, verbose=0, random_state=None) [source]
+ 
+Latent Dirichlet Allocation with online variational Bayes algorithm  New in version 0.17.  Read more in the User Guide.  Parameters 
+ 
+n_componentsint, default=10 
+
+Number of topics.  Changed in version 0.19: n_topics was renamed to n_components   
+doc_topic_priorfloat, default=None 
+
+Prior of document topic distribution theta. If the value is None, defaults to 1 / n_components. In [1], this is called alpha.  
+topic_word_priorfloat, default=None 
+
+Prior of topic word distribution beta. If the value is None, defaults to 1 / n_components. In [1], this is called eta.  
+learning_method{‘batch’, ‘online’}, default=’batch’ 
+
+Method used to update _component. Only used in fit method. In general, if the data size is large, the online update will be much faster than the batch update. Valid options: 'batch': Batch variational Bayes method. Use all training data in
+    each EM update.
+    Old `components_` will be overwritten in each iteration.
+'online': Online variational Bayes method. In each EM update, use
+    mini-batch of training data to update the ``components_``
+    variable incrementally. The learning rate is controlled by the
+    ``learning_decay`` and the ``learning_offset`` parameters.
+  Changed in version 0.20: The default learning method is now "batch".   
+learning_decayfloat, default=0.7 
+
+It is a parameter that control learning rate in the online learning method. The value should be set between (0.5, 1.0] to guarantee asymptotic convergence. When the value is 0.0 and batch_size is n_samples, the update method is same as batch learning. In the literature, this is called kappa.  
+learning_offsetfloat, default=10. 
+
+A (positive) parameter that downweights early iterations in online learning. It should be greater than 1.0. In the literature, this is called tau_0.  
+max_iterint, default=10 
+
+The maximum number of iterations.  
+batch_sizeint, default=128 
+
+Number of documents to use in each EM iteration. Only used in online learning.  
+evaluate_everyint, default=-1 
+
+How often to evaluate perplexity. Only used in fit method. set it to 0 or negative number to not evaluate perplexity in training at all. Evaluating perplexity can help you check convergence in training process, but it will also increase total training time. Evaluating perplexity in every iteration might increase training time up to two-fold.  
+total_samplesint, default=1e6 
+
+Total number of documents. Only used in the partial_fit method.  
+perp_tolfloat, default=1e-1 
+
+Perplexity tolerance in batch learning. Only used when evaluate_every is greater than 0.  
+mean_change_tolfloat, default=1e-3 
+
+Stopping tolerance for updating document topic distribution in E-step.  
+max_doc_update_iterint, default=100 
+
+Max number of iterations for updating document topic distribution in the E-step.  
+n_jobsint, default=None 
+
+The number of jobs to use in the E-step. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.  
+verboseint, default=0 
+
+Verbosity level.  
+random_stateint, RandomState instance or None, default=None 
+
+Pass an int for reproducible results across multiple function calls. See Glossary.    Attributes 
+ 
+components_ndarray of shape (n_components, n_features) 
+
+Variational parameters for topic word distribution. Since the complete conditional for topic word distribution is a Dirichlet, components_[i, j] can be viewed as pseudocount that represents the number of times word j was assigned to topic i. It can also be viewed as distribution over the words for each topic after normalization: model.components_ / model.components_.sum(axis=1)[:, np.newaxis].  
+exp_dirichlet_component_ndarray of shape (n_components, n_features) 
+
+Exponential value of expectation of log topic word distribution. In the literature, this is exp(E[log(beta)]).  
+n_batch_iter_int 
+
+Number of iterations of the EM step.  
+n_iter_int 
+
+Number of passes over the dataset.  
+bound_float 
+
+Final perplexity score on training set.  
+doc_topic_prior_float 
+
+Prior of document topic distribution theta. If the value is None, it is 1 / n_components.  
+random_state_RandomState instance 
+
+RandomState instance that is generated either from a seed, the random number generator or by np.random.  
+topic_word_prior_float 
+
+Prior of topic word distribution beta. If the value is None, it is 1 / n_components.     References  
+1(1,2)  
+“Online Learning for Latent Dirichlet Allocation”, Matthew D. Hoffman, David M. Blei, Francis Bach, 2010    [2] “Stochastic Variational Inference”, Matthew D. Hoffman, David M. Blei,
+
+Chong Wang, John Paisley, 2013  [3] Matthew D. Hoffman’s onlineldavb code. Link:
+
+https://github.com/blei-lab/onlineldavb   Examples >>> from sklearn.decomposition import LatentDirichletAllocation
+>>> from sklearn.datasets import make_multilabel_classification
+>>> # This produces a feature matrix of token counts, similar to what
+>>> # CountVectorizer would produce on text.
+>>> X, _ = make_multilabel_classification(random_state=0)
+>>> lda = LatentDirichletAllocation(n_components=5,
+...     random_state=0)
+>>> lda.fit(X)
+LatentDirichletAllocation(...)
+>>> # get topics for some given samples:
+>>> lda.transform(X[-2:])
+array([[0.00360392, 0.25499205, 0.0036211 , 0.64236448, 0.09541846],
+       [0.15297572, 0.00362644, 0.44412786, 0.39568399, 0.003586  ]])
+ Methods  
+fit(X[, y]) Learn model for the data X with variational Bayes method.  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_params([deep]) Get parameters for this estimator.  
+partial_fit(X[, y]) Online VB with Mini-Batch update.  
+perplexity(X[, sub_sampling]) Calculate approximate perplexity for data X.  
+score(X[, y]) Calculate approximate log-likelihood as score.  
+set_params(**params) Set the parameters of this estimator.  
+transform(X) Transform data X according to the fitted model.    
+fit(X, y=None) [source]
+ 
+Learn model for the data X with variational Bayes method. When learning_method is ‘online’, use mini-batch update. Otherwise, use batch update.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+yIgnored 
+  Returns 
+ self
+   
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+partial_fit(X, y=None) [source]
+ 
+Online VB with Mini-Batch update.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+yIgnored 
+  Returns 
+ self
+   
+  
+perplexity(X, sub_sampling=False) [source]
+ 
+Calculate approximate perplexity for data X. Perplexity is defined as exp(-1. * log-likelihood per word)  Changed in version 0.19: doc_topic_distr argument has been deprecated and is ignored because user no longer has access to unnormalized distribution   Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+sub_samplingbool 
+
+Do sub-sampling or not.    Returns 
+ 
+scorefloat 
+
+Perplexity score.     
+  
+score(X, y=None) [source]
+ 
+Calculate approximate log-likelihood as score.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+yIgnored 
+  Returns 
+ 
+scorefloat 
+
+Use approximate bound as score.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+  
+transform(X) [source]
+ 
+Transform data X according to the fitted model.  Changed in version 0.18: doc_topic_distr is now normalized   Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.    Returns 
+ 
+doc_topic_distrndarray of shape (n_samples, n_components) 
+
+Document topic distribution for X.     
+ 
+ Examples using sklearn.decomposition.LatentDirichletAllocation
+ 
+  Topic extraction with Non-negative Matrix Factorization and Latent Dirichlet Allocation

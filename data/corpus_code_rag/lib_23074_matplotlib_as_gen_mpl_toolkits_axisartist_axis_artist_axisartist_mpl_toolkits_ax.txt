@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axisartist#mpl_toolkits.axisartist.axis_artist.AxisArtist.toggle
+
+toggle(all=None, ticks=None, ticklabels=None, label=None)[source]
+ 
+Toggle visibility of ticks, ticklabels, and (axis) label. To turn all off, axis.toggle(all=False)
+ To turn all off but ticks on axis.toggle(all=False, ticks=True)
+ To turn all on but (axis) label off axis.toggle(all=True, label=False))

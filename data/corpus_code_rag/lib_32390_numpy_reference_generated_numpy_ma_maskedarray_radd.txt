@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__radd__
+
+numpy.ma.MaskedArray.__radd__ method   ma.MaskedArray.__radd__(other)[source]
+ 
+Add other to self, and return a new masked array.

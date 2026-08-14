@@ -1,0 +1,5 @@
+# python.library.ast#ast.AsyncFor
+
+class ast.AsyncFor(target, iter, body, orelse, type_comment)  
+class ast.AsyncWith(items, body, type_comment)  
+async for loops and async with context managers. They have the same fields as For and With, respectively. Only valid in the body of an AsyncFunctionDef.

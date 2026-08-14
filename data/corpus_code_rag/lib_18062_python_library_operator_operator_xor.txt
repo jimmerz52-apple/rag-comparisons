@@ -1,0 +1,5 @@
+# python.library.operator#operator.__xor__
+
+operator.xor(a, b)  
+operator.__xor__(a, b)  
+Return the bitwise exclusive or of a and b.

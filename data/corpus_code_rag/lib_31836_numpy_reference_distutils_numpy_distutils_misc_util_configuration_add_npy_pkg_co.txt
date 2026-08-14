@@ -1,0 +1,58 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.add_npy_pkg_config
+
+add_npy_pkg_config(template, install_dir, subst_dict=None)[source]
+ 
+Generate and install a npy-pkg config file from a template. The config file generated from template is installed in the given install directory, using subst_dict for variable substitution.  Parameters 
+ 
+templatestr
+
+
+The path of the template, relatively to the current package path.  
+install_dirstr
+
+
+Where to install the npy-pkg config file, relatively to the current package path.  
+subst_dictdict, optional
+
+
+If given, any string of the form @key@ will be replaced by subst_dict[key] in the template file when installed. The install prefix is always available through the variable @prefix@, since the install prefix is not easy to get reliably from setup.py.      See also  
+add_installed_library, get_info
+
+  Notes This works for both standard installs and in-place builds, i.e. the @prefix@ refer to the source directory for in-place builds. Examples config.add_npy_pkg_config('foo.ini.in', 'lib', {'foo': bar})
+ Assuming the foo.ini.in file has the following content: [meta]
+Name=@foo@
+Version=1.0
+Description=dummy description
+
+[default]
+Cflags=-I@prefix@/include
+Libs=
+ The generated file will have the following content: [meta]
+Name=bar
+Version=1.0
+Description=dummy description
+
+[default]
+Cflags=-Iprefix_dir/include
+Libs=
+ and will be installed as foo.ini in the ‘lib’ subpath. When cross-compiling with numpy distutils, it might be necessary to use modified npy-pkg-config files. Using the default/generated files will link with the host libraries (i.e. libnpymath.a). For cross-compilation you of-course need to link with target libraries, while using the host Python installation. You can copy out the numpy/core/lib/npy-pkg-config directory, add a pkgdir value to the .ini files and set NPY_PKG_CONFIG_PATH environment variable to point to the directory with the modified npy-pkg-config files. Example npymath.ini modified for cross-compilation: [meta]
+Name=npymath
+Description=Portable, core math library implementing C99 standard
+Version=0.1
+
+[variables]
+pkgname=numpy.core
+pkgdir=/build/arm-linux-gnueabi/sysroot/usr/lib/python3.7/site-packages/numpy/core
+prefix=${pkgdir}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+[default]
+Libs=-L${libdir} -lnpymath
+Cflags=-I${includedir}
+Requires=mlib
+
+[msvc]
+Libs=/LIBPATH:${libdir} npymath.lib
+Cflags=/INCLUDE:${includedir}
+Requires=mlib

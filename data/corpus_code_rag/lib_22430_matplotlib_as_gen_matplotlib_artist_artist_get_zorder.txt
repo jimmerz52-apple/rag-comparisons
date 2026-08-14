@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_zorder
+
+matplotlib.artist.Artist.get_zorder   Artist.get_zorder()[source]
+ 
+Return the artist's zorder.

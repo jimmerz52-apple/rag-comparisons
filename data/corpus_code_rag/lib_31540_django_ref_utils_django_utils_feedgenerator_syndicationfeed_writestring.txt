@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.writeString
+
+writeString(encoding)  
+Returns the feed in the given encoding as a string.

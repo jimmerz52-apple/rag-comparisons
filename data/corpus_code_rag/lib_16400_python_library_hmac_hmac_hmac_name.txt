@@ -1,0 +1,4 @@
+# python.library.hmac#hmac.HMAC.name
+
+HMAC.name  
+The canonical name of this HMAC, always lowercase, e.g. hmac-md5.  New in version 3.4.

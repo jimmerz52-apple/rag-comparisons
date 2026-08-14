@@ -1,0 +1,4 @@
+# python.library.sys#sys.getswitchinterval
+
+sys.getswitchinterval()  
+Return the interpreter’s “thread switch interval”; see setswitchinterval().  New in version 3.2.

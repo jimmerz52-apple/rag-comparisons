@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.send_file_max_age_default
+
+send_file_max_age_default  
+A timedelta or number of seconds which is used as the default max_age for send_file(). The default is None, which tells the browser to use conditional requests instead of a timed cache. Configured with the SEND_FILE_MAX_AGE_DEFAULT configuration key.  Changed in version 2.0: Defaults to None instead of 12 hours.

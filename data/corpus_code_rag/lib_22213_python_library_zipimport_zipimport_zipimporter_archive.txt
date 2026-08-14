@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.archive
+
+archive  
+The file name of the importer’s associated ZIP file, without a possible subpath.

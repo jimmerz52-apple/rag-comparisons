@@ -1,0 +1,5 @@
+# python.library.aifc#aifc.aifc.getparams
+
+aifc.getparams()  
+Returns a namedtuple() (nchannels, sampwidth,
+framerate, nframes, comptype, compname), equivalent to output of the get*() methods.

@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.rc_params
+
+matplotlib.rc_params(fail_on_error=False)[source]
+ 
+Construct a RcParams instance from the default Matplotlib rc file.

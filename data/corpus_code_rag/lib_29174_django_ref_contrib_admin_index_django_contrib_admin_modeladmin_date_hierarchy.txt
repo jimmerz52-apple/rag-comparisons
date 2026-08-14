@@ -1,0 +1,6 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.date_hierarchy
+
+ModelAdmin.date_hierarchy  
+Set date_hierarchy to the name of a DateField or DateTimeField in your model, and the change list page will include a date-based drilldown navigation by that field. Example: date_hierarchy = 'pub_date'
+ You can also specify a field on a related model using the __ lookup, for example: date_hierarchy = 'author__pub_date'
+ This will intelligently populate itself based on available data, e.g. if all the dates are in one month, it’ll show the day-level drill-down only.  Note date_hierarchy uses QuerySet.datetimes() internally. Please refer to its documentation for some caveats when time zone support is enabled (USE_TZ = True).

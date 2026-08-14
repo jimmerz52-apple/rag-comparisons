@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.get_full_path_info
+
+HttpRequest.get_full_path_info()  
+Like get_full_path(), but uses path_info instead of path. Example: "/minfo/music/bands/the_beatles/?print=true"

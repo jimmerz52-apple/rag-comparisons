@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.period.quarter
+
+pandas.Period.quarter   Period.quarter
+ 
+Return the quarter this Period falls on.

@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_wchar
+
+class ctypes.c_wchar  
+Represents the C wchar_t datatype, and interprets the value as a single character unicode string. The constructor accepts an optional string initializer, the length of the string must be exactly one character.

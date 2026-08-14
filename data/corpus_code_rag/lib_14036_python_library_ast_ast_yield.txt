@@ -1,0 +1,19 @@
+# python.library.ast#ast.Yield
+
+class ast.Yield(value)  
+class ast.YieldFrom(value)  
+A yield or yield from expression. Because these are expressions, they must be wrapped in a Expr node if the value sent back is not used. >>> print(ast.dump(ast.parse('yield x'), indent=4))
+Module(
+    body=[
+        Expr(
+            value=Yield(
+                value=Name(id='x', ctx=Load())))],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('yield from x'), indent=4))
+Module(
+    body=[
+        Expr(
+            value=YieldFrom(
+                value=Name(id='x', ctx=Load())))],
+    type_ignores=[])

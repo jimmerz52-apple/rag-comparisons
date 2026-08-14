@@ -1,0 +1,5 @@
+# python.library.nntplib#nntplib.NNTP.xhdr
+
+NNTP.xhdr(hdr, str, *, file=None)  
+Send an XHDR command. The hdr argument is a header keyword, e.g. 'subject'. The str argument should have the form 'first-last' where first and last are the first and last article numbers to search. Return a pair (response, list), where list is a list of pairs (id,
+text), where id is an article number (as a string) and text is the text of the requested header for that article. If the file parameter is supplied, then the output of the XHDR command is stored in a file. If file is a string, then the method will open a file with that name, write to it then close it. If file is a file object, then it will start calling write() on it to store the lines of the command output. If file is supplied, then the returned list is an empty list.

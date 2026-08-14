@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.ParameterizedMIMEHeader.params
+
+params  
+A dictionary mapping parameter names to parameter values.

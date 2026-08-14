@@ -1,0 +1,4 @@
+# python.library.reprlib#reprlib.Repr.repr1
+
+Repr.repr1(obj, level)  
+Recursive implementation used by repr(). This uses the type of obj to determine which formatting method to call, passing it obj and level. The type-specific methods should call repr1() to perform recursive formatting, with level - 1 for the value of level in the recursive call.

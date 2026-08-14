@@ -1,0 +1,4 @@
+# python.library.types#types.CellType
+
+types.CellType  
+The type for cell objects: such objects are used as containers for a function’s free variables.  New in version 3.8.

@@ -1,0 +1,8 @@
+# python.library.ast#ast.arguments
+
+class ast.arguments(posonlyargs, args, vararg, kwonlyargs, kw_defaults, kwarg, defaults)  
+The arguments for a function.  
+posonlyargs, args and kwonlyargs are lists of arg nodes. 
+vararg and kwarg are single arg nodes, referring to the *args, **kwargs parameters. 
+kw_defaults is a list of default values for keyword-only arguments. If one is None, the corresponding argument is required. 
+defaults is a list of default values for arguments that can be passed positionally. If there are fewer defaults, they correspond to the last n arguments.

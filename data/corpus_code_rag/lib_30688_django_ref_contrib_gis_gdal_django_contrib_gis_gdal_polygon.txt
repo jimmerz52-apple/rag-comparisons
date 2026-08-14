@@ -1,0 +1,10 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Polygon
+
+class Polygon  
+ 
+shell 
+ Returns the shell or exterior ring of this polygon, as a LinearRing geometry.  
+exterior_ring 
+ An alias for shell.  
+centroid 
+ Returns a Point representing the centroid of this polygon.

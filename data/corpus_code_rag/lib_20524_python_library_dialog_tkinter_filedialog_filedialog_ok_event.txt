@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.ok_event
+
+ok_event(event)  
+Exit dialog returning current selection.

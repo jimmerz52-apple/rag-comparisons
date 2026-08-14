@@ -1,0 +1,4 @@
+# python.library.array#array.array.index
+
+array.index(x)  
+Return the smallest i such that i is the index of the first occurrence of x in the array.

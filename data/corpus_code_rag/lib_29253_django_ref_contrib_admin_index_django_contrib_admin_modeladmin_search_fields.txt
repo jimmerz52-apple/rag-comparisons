@@ -1,0 +1,14 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.search_fields
+
+ModelAdmin.search_fields  
+Set search_fields to enable a search box on the admin change list page. This should be set to a list of field names that will be searched whenever somebody submits a search query in that text box. These fields should be some kind of text field, such as CharField or TextField. You can also perform a related lookup on a ForeignKey or ManyToManyField with the lookup API “follow” notation: search_fields = ['foreign_key__related_fieldname']
+ For example, if you have a blog entry with an author, the following definition would enable searching blog entries by the email address of the author: search_fields = ['user__email']
+ When somebody does a search in the admin search box, Django splits the search query into words and returns all objects that contain each of the words, case-insensitive (using the icontains lookup), where each word must be in at least one of search_fields. For example, if search_fields is set to ['first_name', 'last_name'] and a user searches for john lennon, Django will do the equivalent of this SQL WHERE clause: WHERE (first_name ILIKE '%john%' OR last_name ILIKE '%john%')
+AND (first_name ILIKE '%lennon%' OR last_name ILIKE '%lennon%')
+ The search query can contain quoted phrases with spaces. For example, if a user searches for "john winston" or 'john winston', Django will do the equivalent of this SQL WHERE clause: WHERE (first_name ILIKE '%john winston%' OR last_name ILIKE '%john winston%')
+ If you don’t want to use icontains as the lookup, you can use any lookup by appending it the field. For example, you could use exact by setting search_fields to ['first_name__exact']. Some (older) shortcuts for specifying a field lookup are also available. You can prefix a field in search_fields with the following characters and it’s equivalent to adding __<lookup> to the field:   
+Prefix Lookup   
+^ startswith  
+= iexact  
+@ search  
+None icontains   If you need to customize search you can use ModelAdmin.get_search_results() to provide additional or alternate search behavior.  Changed in Django 3.2: Support for searching against quoted phrases with spaces was added.

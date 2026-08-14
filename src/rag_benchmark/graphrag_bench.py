@@ -179,6 +179,26 @@ def build_graphrag_bench_subset(
     source: str | None = None,
 ) -> dict:
     """Materialize a Novel-split GraphRAG-Bench demo corpus + QA JSON."""
+    corpus_dir = project_root / "data" / "corpus_graphrag_bench"
+    qa_path = project_root / "data" / "qa" / "graphrag_bench_eval.json"
+    meta_path = project_root / "data" / "qa" / "graphrag_bench_meta.json"
+    if qa_path.exists() and meta_path.exists() and corpus_dir.exists():
+        existing = json.loads(meta_path.read_text(encoding="utf-8"))
+        n_exist = int(existing.get("n_questions") or 0)
+        n_docs = len(list(corpus_dir.glob("*.txt")))
+        want_all = n_per_type <= 0
+        if n_docs > 0 and (
+            (want_all and n_exist >= 20)
+            or (not want_all and n_exist >= n_per_type * len(QUESTION_TYPES))
+        ):
+            print(
+                f"GraphRAG-Bench already on disk: {n_exist} Q / {n_docs} docs — skip rebuild",
+                flush=True,
+            )
+            existing["corpus_dir"] = str(corpus_dir)
+            existing["qa_path"] = str(qa_path)
+            return {"corpus_dir": corpus_dir, "qa_path": qa_path, "meta": existing}
+
     cache_dir = project_root / "data" / "graphrag_bench_cache"
     corpus_rows, questions = _load_novel_assets(cache_dir)
 
@@ -202,10 +222,9 @@ def build_graphrag_bench_subset(
             pool_qt,
             key=lambda r: abs(len(str(r.get("answer", ""))) - 80),
         )
-        selected.extend(ranked[:n_per_type])
+        take = ranked if n_per_type <= 0 else ranked[:n_per_type]
+        selected.extend(take)
 
-    corpus_dir = project_root / "data" / "corpus_graphrag_bench"
-    qa_path = project_root / "data" / "qa" / "graphrag_bench_eval.json"
     catalog_path = project_root / "results" / "graphrag_bench_question_catalog.csv"
     corpus_dir.mkdir(parents=True, exist_ok=True)
     qa_path.parent.mkdir(parents=True, exist_ok=True)

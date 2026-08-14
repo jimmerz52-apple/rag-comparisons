@@ -1,0 +1,4 @@
+# python.library.signal#signal.ITIMER_REAL
+
+signal.ITIMER_REAL  
+Decrements interval timer in real time, and delivers SIGALRM upon expiration.

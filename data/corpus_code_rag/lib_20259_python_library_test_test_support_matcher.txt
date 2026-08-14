@@ -1,0 +1,9 @@
+# python.library.test#test.support.Matcher
+
+class test.support.Matcher  
+ 
+matches(self, d, **kwargs)  
+Try to match a single dict with the supplied arguments. 
+  
+match_value(self, k, dv, v)  
+Try to match a single stored value (dv) with a supplied value (v).

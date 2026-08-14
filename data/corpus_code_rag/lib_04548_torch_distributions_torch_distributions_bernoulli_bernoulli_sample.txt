@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.bernoulli.Bernoulli.sample
+
+sample(sample_shape=torch.Size([])) [source]

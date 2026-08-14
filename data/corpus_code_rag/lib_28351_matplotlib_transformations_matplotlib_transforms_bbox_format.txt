@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.__format__
+
+__format__(fmt)[source]
+ 
+Default object formatter.

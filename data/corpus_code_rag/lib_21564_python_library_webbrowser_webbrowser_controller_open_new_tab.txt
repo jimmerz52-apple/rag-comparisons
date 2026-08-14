@@ -1,0 +1,4 @@
+# python.library.webbrowser#webbrowser.controller.open_new_tab
+
+controller.open_new_tab(url)  
+Open url in a new page (“tab”) of the browser handled by this controller, if possible, otherwise equivalent to open_new().

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.add_item_elements
+
+add_item_elements(handler, item)  
+Add elements on each item (i.e. item/entry) element.

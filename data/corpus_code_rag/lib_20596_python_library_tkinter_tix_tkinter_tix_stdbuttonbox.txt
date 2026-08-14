@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.StdButtonBox
+
+class tkinter.tix.StdButtonBox  
+The StdButtonBox widget is a group of standard buttons for Motif-like dialog boxes.

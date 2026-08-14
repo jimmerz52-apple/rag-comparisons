@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.set_source_expressions
+
+set_source_expressions(expressions)  
+Takes a list of expressions and stores them such that get_source_expressions() can return them.

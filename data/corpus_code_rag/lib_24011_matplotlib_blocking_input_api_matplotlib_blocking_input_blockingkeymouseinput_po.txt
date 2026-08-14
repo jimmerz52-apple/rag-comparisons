@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingKeyMouseInput.post_event
+
+post_event()[source]
+ 
+Determine if it is a key event.

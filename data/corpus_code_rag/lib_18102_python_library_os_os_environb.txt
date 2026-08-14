@@ -1,0 +1,4 @@
+# python.library.os#os.environb
+
+os.environb  
+Bytes version of environ: a mapping object representing the environment as byte strings. environ and environb are synchronized (modify environb updates environ, and vice versa). environb is only available if supports_bytes_environ is True.  New in version 3.2.   Changed in version 3.9: Updated to support PEP 584’s merge (|) and update (|=) operators.

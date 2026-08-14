@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_rotation
+
+set_rotation(s)[source]
+ 
+Set the rotation of the text.  Parameters 
+ 
+sfloat or {'vertical', 'horizontal'}
+
+
+The rotation angle in degrees in mathematically positive direction (counterclockwise). 'horizontal' equals 0, 'vertical' equals 90.

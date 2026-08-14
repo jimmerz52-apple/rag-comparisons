@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_title
+
+get_title()[source]
+ 
+Return the Text instance for the legend title.

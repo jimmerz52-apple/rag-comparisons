@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.text3d#mpl_toolkits.mplot3d.art3d.Text3D.get_position_3d
+
+get_position_3d()[source]
+ 
+Return the (x, y, z) position of the text.

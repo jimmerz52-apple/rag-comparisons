@@ -1,0 +1,4 @@
+# python.library.keyword#keyword.iskeyword
+
+keyword.iskeyword(s)  
+Return True if s is a Python keyword.

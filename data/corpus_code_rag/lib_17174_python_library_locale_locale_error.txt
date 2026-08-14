@@ -1,0 +1,4 @@
+# python.library.locale#locale.Error
+
+exception locale.Error  
+Exception raised when the locale passed to setlocale() is not recognized.

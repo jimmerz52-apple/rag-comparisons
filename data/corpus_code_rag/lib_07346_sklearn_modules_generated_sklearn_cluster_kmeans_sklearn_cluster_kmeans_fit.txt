@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.cluster.kmeans#sklearn.cluster.KMeans.fit
+
+fit(X, y=None, sample_weight=None) [source]
+ 
+Compute k-means clustering.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training instances to cluster. It must be noted that the data will be converted to C ordering, which will cause a memory copy if the given data is not C-contiguous. If a sparse matrix is passed, a copy will be made if it’s not in CSR format.  
+yIgnored 
+
+Not used, present here for API consistency by convention.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+The weights for each observation in X. If None, all observations are assigned equal weight.  New in version 0.20.     Returns 
+ self
+
+Fitted estimator.

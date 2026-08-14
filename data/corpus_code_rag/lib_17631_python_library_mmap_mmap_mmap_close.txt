@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.close
+
+close()  
+Closes the mmap. Subsequent calls to other methods of the object will result in a ValueError exception being raised. This will not close the open file.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.argmax
+
+numpy.record.argmax method   record.argmax()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.argmax.

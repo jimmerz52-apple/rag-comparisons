@@ -1,0 +1,9 @@
+# django.ref.models.querysets#django.db.models.Count
+
+class Count(expression, distinct=False, filter=None, **extra)  
+Returns the number of objects that are related through the provided expression.  Default alias: <field>__count
+ Return type: int
+  Has one optional argument:  
+distinct  
+If distinct=True, the count will only include unique instances. This is the SQL equivalent of COUNT(DISTINCT <field>). The default value is False. 
+  Note The default argument is not supported.

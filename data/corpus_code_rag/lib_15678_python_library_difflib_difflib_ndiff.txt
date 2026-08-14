@@ -1,0 +1,15 @@
+# python.library.difflib#difflib.ndiff
+
+difflib.ndiff(a, b, linejunk=None, charjunk=IS_CHARACTER_JUNK)  
+Compare a and b (lists of strings); return a Differ-style delta (a generator generating the delta lines). Optional keyword parameters linejunk and charjunk are filtering functions (or None): linejunk: A function that accepts a single string argument, and returns true if the string is junk, or false if not. The default is None. There is also a module-level function IS_LINE_JUNK(), which filters out lines without visible characters, except for at most one pound character ('#') – however the underlying SequenceMatcher class does a dynamic analysis of which lines are so frequent as to constitute noise, and this usually works better than using this function. charjunk: A function that accepts a character (a string of length 1), and returns if the character is junk, or false if not. The default is module-level function IS_CHARACTER_JUNK(), which filters out whitespace characters (a blank or tab; it’s a bad idea to include newline in this!). Tools/scripts/ndiff.py is a command-line front-end to this function. >>> diff = ndiff('one\ntwo\nthree\n'.splitlines(keepends=True),
+...              'ore\ntree\nemu\n'.splitlines(keepends=True))
+>>> print(''.join(diff), end="")
+- one
+?  ^
++ ore
+?  ^
+- two
+- three
+?  -
++ tree
++ emu

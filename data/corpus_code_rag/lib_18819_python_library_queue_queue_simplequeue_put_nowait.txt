@@ -1,0 +1,4 @@
+# python.library.queue#queue.SimpleQueue.put_nowait
+
+SimpleQueue.put_nowait(item)  
+Equivalent to put(item), provided for compatibility with Queue.put_nowait().

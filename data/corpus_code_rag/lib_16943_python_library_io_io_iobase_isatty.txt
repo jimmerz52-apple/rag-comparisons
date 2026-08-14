@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.isatty
+
+isatty()  
+Return True if the stream is interactive (i.e., connected to a terminal/tty device).

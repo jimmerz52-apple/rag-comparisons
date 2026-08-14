@@ -1,0 +1,5 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.readable
+
+readable()  
+Return whether object was opened for reading. If False, read() will raise OSError.  Return type 
+bool

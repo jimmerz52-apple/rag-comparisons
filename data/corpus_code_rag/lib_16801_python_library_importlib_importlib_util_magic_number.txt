@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.util.MAGIC_NUMBER
+
+importlib.util.MAGIC_NUMBER  
+The bytes which represent the bytecode version number. If you need help with loading/writing bytecode then consider importlib.abc.SourceLoader.  New in version 3.4.

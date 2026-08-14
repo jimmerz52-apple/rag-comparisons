@@ -1,0 +1,4 @@
+# python.library.turtle#turtle.begin_fill
+
+turtle.begin_fill()  
+To be called just before drawing a shape to be filled.

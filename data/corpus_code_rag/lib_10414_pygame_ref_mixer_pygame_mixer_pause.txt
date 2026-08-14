@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.pause
+
+pygame.mixer.pause() 
+ temporarily stop playback of all sound channels pause() -> None  This will temporarily stop all playback on the active mixer channels. The playback can later be resumed with pygame.mixer.unpause()

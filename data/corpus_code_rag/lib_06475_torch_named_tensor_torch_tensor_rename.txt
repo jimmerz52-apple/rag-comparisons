@@ -1,0 +1,5 @@
+# torch.named_tensor#torch.Tensor.rename_
+
+rename_(*names, **rename_map) [source]
+ 
+In-place version of rename().

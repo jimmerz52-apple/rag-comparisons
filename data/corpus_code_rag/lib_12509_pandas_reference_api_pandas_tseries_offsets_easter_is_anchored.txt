@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.easter.is_anchored
+
+pandas.tseries.offsets.Easter.is_anchored   Easter.is_anchored()

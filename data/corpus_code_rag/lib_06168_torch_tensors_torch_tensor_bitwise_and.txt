@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.bitwise_and_
+
+bitwise_and_() → Tensor  
+In-place version of bitwise_and()

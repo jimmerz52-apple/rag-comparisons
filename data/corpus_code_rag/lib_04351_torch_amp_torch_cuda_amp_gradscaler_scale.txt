@@ -1,0 +1,6 @@
+# torch.amp#torch.cuda.amp.GradScaler.scale
+
+scale(outputs) [source]
+ 
+Multiplies (‘scales’) a tensor or list of tensors by the scale factor. Returns scaled outputs. If this instance of GradScaler is not enabled, outputs are returned unmodified.  Parameters 
+outputs (Tensor or iterable of Tensors) – Outputs to scale.

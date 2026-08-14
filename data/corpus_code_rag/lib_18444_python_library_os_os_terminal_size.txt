@@ -1,0 +1,9 @@
+# python.library.os#os.terminal_size
+
+class os.terminal_size  
+A subclass of tuple, holding (columns, lines) of the terminal window size.  
+columns  
+Width of the terminal window in characters. 
+  
+lines  
+Height of the terminal window in characters.

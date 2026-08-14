@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.serializers.PickleSerializer
+
+class serializers.PickleSerializer  
+Supports arbitrary Python objects, but, as described above, can lead to a remote code execution vulnerability if SECRET_KEY becomes known by an attacker.

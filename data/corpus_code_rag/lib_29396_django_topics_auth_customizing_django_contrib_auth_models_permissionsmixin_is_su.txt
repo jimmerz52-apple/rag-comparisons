@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.PermissionsMixin.is_superuser
+
+is_superuser  
+Boolean. Designates that this user has all permissions without explicitly assigning them.

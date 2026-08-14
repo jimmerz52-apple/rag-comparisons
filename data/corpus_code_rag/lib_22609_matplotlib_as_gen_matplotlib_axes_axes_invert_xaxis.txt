@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axes.axes.invert_xaxis
+
+matplotlib.axes.Axes.invert_xaxis   Axes.invert_xaxis()[source]
+ 
+Invert the x-axis.  See also  xaxis_inverted
+
+get_xlim, set_xlim
+
+
+get_xbound, set_xbound

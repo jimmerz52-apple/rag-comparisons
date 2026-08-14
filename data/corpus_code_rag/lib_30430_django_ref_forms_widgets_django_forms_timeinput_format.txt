@@ -1,0 +1,4 @@
+# django.ref.forms.widgets#django.forms.TimeInput.format
+
+format  
+The format in which this field’s initial value will be displayed.

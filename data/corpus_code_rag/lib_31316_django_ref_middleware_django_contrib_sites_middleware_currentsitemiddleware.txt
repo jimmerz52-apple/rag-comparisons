@@ -1,0 +1,3 @@
+# django.ref.middleware#django.contrib.sites.middleware.CurrentSiteMiddleware
+
+class CurrentSiteMiddleware

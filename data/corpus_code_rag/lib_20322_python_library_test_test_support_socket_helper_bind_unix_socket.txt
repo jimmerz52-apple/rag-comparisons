@@ -1,0 +1,4 @@
+# python.library.test#test.support.socket_helper.bind_unix_socket
+
+test.support.socket_helper.bind_unix_socket(sock, addr)  
+Bind a unix socket, raising unittest.SkipTest if PermissionError is raised.

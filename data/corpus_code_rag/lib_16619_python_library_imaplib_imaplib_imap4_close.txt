@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.close
+
+IMAP4.close()  
+Close currently selected mailbox. Deleted messages are removed from writable mailbox. This is the recommended command before LOGOUT.

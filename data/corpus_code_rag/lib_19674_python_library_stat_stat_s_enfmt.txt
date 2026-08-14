@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ENFMT
+
+stat.S_ENFMT  
+System V file locking enforcement. This flag is shared with S_ISGID: file/record locking is enforced on files that do not have the group execution bit (S_IXGRP) set.

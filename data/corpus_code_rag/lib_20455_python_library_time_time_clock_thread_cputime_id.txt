@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_THREAD_CPUTIME_ID
+
+time.CLOCK_THREAD_CPUTIME_ID  
+Thread-specific CPU-time clock. Availability: Unix.  New in version 3.3.

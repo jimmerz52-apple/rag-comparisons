@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.is_first_row
+
+is_first_row()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

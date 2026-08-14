@@ -1,0 +1,6 @@
+# python.library.dataclasses#dataclasses.astuple
+
+dataclasses.astuple(instance, *, tuple_factory=tuple)  
+Converts the dataclass instance to a tuple (by using the factory function tuple_factory). Each dataclass is converted to a tuple of its field values. dataclasses, dicts, lists, and tuples are recursed into. Continuing from the previous example: assert astuple(p) == (10, 20)
+assert astuple(c) == ([(0, 0), (10, 4)],)
+ Raises TypeError if instance is not a dataclass instance.

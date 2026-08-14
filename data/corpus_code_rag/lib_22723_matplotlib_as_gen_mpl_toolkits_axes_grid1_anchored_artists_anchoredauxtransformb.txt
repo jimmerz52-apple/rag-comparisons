@@ -1,0 +1,72 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.anchored_artists.anchoredauxtransformbox
+
+mpl_toolkits.axes_grid1.anchored_artists.AnchoredAuxTransformBox   classmpl_toolkits.axes_grid1.anchored_artists.AnchoredAuxTransformBox(transform, loc, pad=0.4, borderpad=0.5, prop=None, frameon=True, **kwargs)[source]
+ 
+Bases: matplotlib.offsetbox.AnchoredOffsetbox An anchored container with transformed coordinates. Artists added to the drawing_area are scaled according to the coordinates of the transformation used. The dimensions of this artist will scale to contain the artists added.  Parameters 
+ 
+transformmatplotlib.transforms.Transform
+
+
+The transformation object for the coordinate system in use, i.e., matplotlib.axes.Axes.transData.  
+locstr
+
+
+Location of this artist. Valid locations are 'upper left', 'upper center', 'upper right', 'center left', 'center', 'center right', 'lower left', 'lower center, 'lower right'. For backward compatibility, numeric values are accepted as well. See the parameter loc of Legend for details.  
+padfloat, default: 0.4
+
+
+Padding around the child objects, in fraction of the font size.  
+borderpadfloat, default: 0.5
+
+
+Border padding, in fraction of the font size.  
+propmatplotlib.font_manager.FontProperties, optional
+
+
+Font property used as a reference for paddings.  
+frameonbool, default: True
+
+
+If True, draw a box around this artists.  **kwargs
+
+Keyword arguments forwarded to AnchoredOffsetbox.     Examples To display an ellipse in the upper left, with a width of 0.1 and height of 0.4 in data coordinates: >>> box = AnchoredAuxTransformBox(ax.transData, loc='upper left')
+>>> el = Ellipse((0, 0), width=0.1, height=0.4, angle=30)
+>>> box.drawing_area.add_artist(el)
+>>> ax.add_artist(box)
+  Attributes 
+ 
+drawing_areamatplotlib.offsetbox.AuxTransformBox
+
+
+A container for artists to display.       set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, bbox_to_anchor=<UNSET>, child=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+bbox_to_anchor unknown  
+child unknown  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+offset (float, float) or callable  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+zorder float   
+ 
+  Examples using mpl_toolkits.axes_grid1.anchored_artists.AnchoredAuxTransformBox
+ 
+   Annotations

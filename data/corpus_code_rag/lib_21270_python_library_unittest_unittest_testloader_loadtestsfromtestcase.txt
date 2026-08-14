@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestLoader.loadTestsFromTestCase
+
+loadTestsFromTestCase(testCaseClass)  
+Return a suite of all test cases contained in the TestCase-derived testCaseClass. A test case instance is created for each method named by getTestCaseNames(). By default these are the method names beginning with test. If getTestCaseNames() returns no methods, but the runTest() method is implemented, a single test case is created for that method instead.

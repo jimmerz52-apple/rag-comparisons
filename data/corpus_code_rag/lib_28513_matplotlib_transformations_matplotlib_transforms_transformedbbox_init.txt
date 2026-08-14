@@ -1,0 +1,10 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedBbox.__init__
+
+__init__(bbox, transform, **kwargs)[source]
+ 
+ Parameters 
+ 
+bboxBbox
+
+
+transformTransform

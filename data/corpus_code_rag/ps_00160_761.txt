@@ -1,0 +1,10 @@
+# 761
+Task: 761
+
+# Write a function to caluclate arc length of an angle.
+def arc_length(d,a):
+    pi=22/7
+    if a >= 360:
+        return None
+    arclength = (pi*d) * (a/360)
+    return arclength

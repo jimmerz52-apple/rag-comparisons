@@ -1,0 +1,5 @@
+# python.library.socket#socket.CAN_BCM
+
+socket.CAN_BCM  
+CAN_BCM_*  
+CAN_BCM, in the CAN protocol family, is the broadcast manager (BCM) protocol. Broadcast manager constants, documented in the Linux documentation, are also defined in the socket module. Availability: Linux >= 2.6.25.  Note The CAN_BCM_CAN_FD_FRAME flag is only available on Linux >= 4.8.   New in version 3.4.

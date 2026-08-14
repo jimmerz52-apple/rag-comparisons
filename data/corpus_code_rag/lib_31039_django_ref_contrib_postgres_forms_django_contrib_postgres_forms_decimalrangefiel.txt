@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.DecimalRangeField
+
+class DecimalRangeField  
+Based on DecimalField and translates its input into NumericRange. Default for DecimalRangeField.

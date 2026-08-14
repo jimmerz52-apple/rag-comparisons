@@ -1,0 +1,4 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.as_table
+
+BaseFormSet.as_table()  
+Renders the formset with the template_name_table template.

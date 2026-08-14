@@ -1,0 +1,4 @@
+# python.library.stdtypes#frozenset.pop
+
+pop()  
+Remove and return an arbitrary element from the set. Raises KeyError if the set is empty.

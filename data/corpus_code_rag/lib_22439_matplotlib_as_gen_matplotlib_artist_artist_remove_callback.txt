@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.remove_callback
+
+matplotlib.artist.Artist.remove_callback   Artist.remove_callback(oid)[source]
+ 
+Remove a callback based on its observer id.  See also  add_callback

@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.api.extensions.extensiondtype.is_dtype
+
+pandas.api.extensions.ExtensionDtype.is_dtype   classmethodExtensionDtype.is_dtype(dtype)[source]
+ 
+Check if we match ‘dtype’.  Parameters 
+ 
+dtype:object
+
+
+The object to check.    Returns 
+ bool
+   Notes The default implementation is True if  cls.construct_from_string(dtype) is an instance of cls. dtype is an object and is an instance of cls dtype has a dtype attribute, and any of the above conditions is true for dtype.dtype.

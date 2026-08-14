@@ -1,0 +1,19 @@
+# matplotlib._as_gen.matplotlib.pyplot.clabel
+
+matplotlib.pyplot.clabel   matplotlib.pyplot.clabel(CS, levels=None, **kwargs)[source]
+ 
+Label a contour plot. Adds labels to line contours in given ContourSet.  Parameters 
+ 
+CSContourSet instance
+
+
+Line contours to label.  
+levelsarray-like, optional
+
+
+A list of level values, that should be labeled. The list must be a subset of CS.levels. If not given, all levels are labeled.  **kwargs
+
+All other parameters are documented in clabel.     
+  Examples using matplotlib.pyplot.clabel
+ 
+   Interactive functions

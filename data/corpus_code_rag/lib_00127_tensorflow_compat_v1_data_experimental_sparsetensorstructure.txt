@@ -1,0 +1,7 @@
+# tensorflow.compat.v1.data.experimental.sparsetensorstructure
+
+tf.compat.v1.data.experimental.SparseTensorStructure DEPRECATED FUNCTION 
+tf.compat.v1.data.experimental.SparseTensorStructure(
+    dtype, shape
+)
+ Warning: THIS FUNCTION IS DEPRECATED. It will be removed in a future version. Instructions for updating: Use tf.SparseTensorSpec instead.

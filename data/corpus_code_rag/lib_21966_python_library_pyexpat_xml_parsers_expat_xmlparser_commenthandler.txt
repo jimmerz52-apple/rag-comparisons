@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.CommentHandler
+
+xmlparser.CommentHandler(data)  
+Called for comments. data is the text of the comment, excluding the leading '<!--' and trailing '-->'.

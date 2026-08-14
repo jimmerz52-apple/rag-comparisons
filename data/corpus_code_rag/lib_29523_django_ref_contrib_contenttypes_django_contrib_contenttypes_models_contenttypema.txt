@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentTypeManager.get_for_model
+
+get_for_model(model, for_concrete_model=True)  
+Takes either a model class or an instance of a model, and returns the ContentType instance representing that model. for_concrete_model=False allows fetching the ContentType of a proxy model.

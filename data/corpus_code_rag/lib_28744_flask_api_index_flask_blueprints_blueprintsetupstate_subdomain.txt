@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.subdomain
+
+subdomain  
+The subdomain that the blueprint should be active for, None otherwise.

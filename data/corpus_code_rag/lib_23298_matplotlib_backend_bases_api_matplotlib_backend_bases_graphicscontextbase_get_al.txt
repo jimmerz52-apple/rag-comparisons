@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.get_alpha
+
+get_alpha()[source]
+ 
+Return the alpha value used for blending - not supported on all backends.

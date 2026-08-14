@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLContext.load_dh_params
+
+SSLContext.load_dh_params(dhfile)  
+Load the key generation parameters for Diffie-Hellman (DH) key exchange. Using DH key exchange improves forward secrecy at the expense of computational resources (both on the server and on the client). The dhfile parameter should be the path to a file containing DH parameters in PEM format. This setting doesn’t apply to client sockets. You can also use the OP_SINGLE_DH_USE option to further improve security.  New in version 3.3.

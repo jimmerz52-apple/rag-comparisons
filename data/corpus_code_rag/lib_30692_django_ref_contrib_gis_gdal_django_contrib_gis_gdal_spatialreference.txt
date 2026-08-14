@@ -1,0 +1,101 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.SpatialReference
+
+class SpatialReference(srs_input)  
+Spatial reference objects are initialized on the given srs_input, which may be one of the following:  OGC Well Known Text (WKT) (a string) EPSG code (integer or string) PROJ string A shorthand string for well-known standards ('WGS84', 'WGS72', 'NAD27', 'NAD83')  Example: >>> wgs84 = SpatialReference('WGS84') # shorthand string
+>>> wgs84 = SpatialReference(4326) # EPSG code
+>>> wgs84 = SpatialReference('EPSG:4326') # EPSG string
+>>> proj = '+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs '
+>>> wgs84 = SpatialReference(proj) # PROJ string
+>>> wgs84 = SpatialReference("""GEOGCS["WGS 84",
+DATUM["WGS_1984",
+     SPHEROID["WGS 84",6378137,298.257223563,
+         AUTHORITY["EPSG","7030"]],
+     AUTHORITY["EPSG","6326"]],
+ PRIMEM["Greenwich",0,
+     AUTHORITY["EPSG","8901"]],
+ UNIT["degree",0.01745329251994328,
+     AUTHORITY["EPSG","9122"]],
+ AUTHORITY["EPSG","4326"]]""") # OGC WKT
+  
+__getitem__(target) 
+ Returns the value of the given string attribute node, None if the node doesn’t exist. Can also take a tuple as a parameter, (target, child), where child is the index of the attribute in the WKT. For example: >>> wkt = 'GEOGCS["WGS 84", DATUM["WGS_1984, ... AUTHORITY["EPSG","4326"]]')
+>>> srs = SpatialReference(wkt) # could also use 'WGS84', or 4326
+>>> print(srs['GEOGCS'])
+WGS 84
+>>> print(srs['DATUM'])
+WGS_1984
+>>> print(srs['AUTHORITY'])
+EPSG
+>>> print(srs['AUTHORITY', 1]) # The authority value
+4326
+>>> print(srs['TOWGS84', 4]) # the fourth value in this wkt
+0
+>>> print(srs['UNIT|AUTHORITY']) # For the units authority, have to use the pipe symbol.
+EPSG
+>>> print(srs['UNIT|AUTHORITY', 1]) # The authority value for the units
+9122
+  
+attr_value(target, index=0) 
+ The attribute value for the given target node (e.g. 'PROJCS'). The index keyword specifies an index of the child node to return.  
+auth_name(target) 
+ Returns the authority name for the given string target node.  
+auth_code(target) 
+ Returns the authority code for the given string target node.  
+clone() 
+ Returns a clone of this spatial reference object.  
+identify_epsg() 
+ This method inspects the WKT of this SpatialReference and will add EPSG authority nodes where an EPSG identifier is applicable.  
+from_esri() 
+ Morphs this SpatialReference from ESRI’s format to EPSG  
+to_esri() 
+ Morphs this SpatialReference to ESRI’s format.  
+validate() 
+ Checks to see if the given spatial reference is valid, if not an exception will be raised.  
+import_epsg(epsg) 
+ Import spatial reference from EPSG code.  
+import_proj(proj) 
+ Import spatial reference from PROJ string.  
+import_user_input(user_input) 
+  
+import_wkt(wkt) 
+ Import spatial reference from WKT.  
+import_xml(xml) 
+ Import spatial reference from XML.  
+name 
+ Returns the name of this Spatial Reference.  
+srid 
+ Returns the SRID of top-level authority, or None if undefined.  
+linear_name 
+ Returns the name of the linear units.  
+linear_units 
+ Returns the value of the linear units.  
+angular_name 
+ Returns the name of the angular units.”  
+angular_units 
+ Returns the value of the angular units.  
+units 
+ Returns a 2-tuple of the units value and the units name and will automatically determines whether to return the linear or angular units.  
+ellipsoid 
+ Returns a tuple of the ellipsoid parameters for this spatial reference: (semimajor axis, semiminor axis, and inverse flattening).  
+semi_major 
+ Returns the semi major axis of the ellipsoid for this spatial reference.  
+semi_minor 
+ Returns the semi minor axis of the ellipsoid for this spatial reference.  
+inverse_flattening 
+ Returns the inverse flattening of the ellipsoid for this spatial reference.  
+geographic 
+ Returns True if this spatial reference is geographic (root node is GEOGCS).  
+local 
+ Returns True if this spatial reference is local (root node is LOCAL_CS).  
+projected 
+ Returns True if this spatial reference is a projected coordinate system (root node is PROJCS).  
+wkt 
+ Returns the WKT representation of this spatial reference.  
+pretty_wkt 
+ Returns the ‘pretty’ representation of the WKT.  
+proj 
+ Returns the PROJ representation for this spatial reference.  
+proj4 
+ Alias for SpatialReference.proj.  
+xml 
+ Returns the XML representation of this spatial reference.

@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.with_netmask
+
+with_netmask  
+A string representation of the network, with the mask in net mask notation.

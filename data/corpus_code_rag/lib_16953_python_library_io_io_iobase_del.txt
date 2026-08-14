@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.__del__
+
+__del__()  
+Prepare for object destruction. IOBase provides a default implementation of this method that calls the instance’s close() method.

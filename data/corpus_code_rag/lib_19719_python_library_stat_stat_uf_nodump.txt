@@ -1,0 +1,4 @@
+# python.library.stat#stat.UF_NODUMP
+
+stat.UF_NODUMP  
+Do not dump the file.

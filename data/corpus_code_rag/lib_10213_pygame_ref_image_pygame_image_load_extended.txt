@@ -1,0 +1,4 @@
+# pygame.ref.image#pygame.image.load_extended
+
+pygame.image.load_extended() 
+ load an image from a file (or file-like object) load_extended(filename) -> Surface load_extended(fileobj, namehint="") -> Surface  This function is similar to pygame.image.load(), except that this function can only be used if pygame was built with extended image format support. From version 2.0.1, this function is always available, but raises an error if extended image formats are not supported. Previously, this function may or may not be available, depending on the state of extended image format support.  Changed in pygame 2.0.1.

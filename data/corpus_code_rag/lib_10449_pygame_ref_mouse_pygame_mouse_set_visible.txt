@@ -1,0 +1,4 @@
+# pygame.ref.mouse#pygame.mouse.set_visible
+
+pygame.mouse.set_visible() 
+ hide or show the mouse cursor set_visible(bool) -> bool  If the bool argument is true, the mouse cursor will be visible. This will return the previous visible state of the cursor.

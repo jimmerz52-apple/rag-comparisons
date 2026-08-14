@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.convex_hull
+
+GEOSGeometry.convex_hull  
+Returns the smallest Polygon that contains all the points in the geometry.

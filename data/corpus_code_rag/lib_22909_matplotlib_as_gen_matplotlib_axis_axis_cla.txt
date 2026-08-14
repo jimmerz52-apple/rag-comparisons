@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.cla
+
+matplotlib.axis.Axis.cla   Axis.cla()[source]
+ 
+[Deprecated] Clear this axis. Notes  Deprecated since version 3.4.

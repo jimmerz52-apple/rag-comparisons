@@ -1,0 +1,5 @@
+# python.library.operator#operator.__setitem__
+
+operator.setitem(a, b, c)  
+operator.__setitem__(a, b, c)  
+Set the value of a at index b to c.

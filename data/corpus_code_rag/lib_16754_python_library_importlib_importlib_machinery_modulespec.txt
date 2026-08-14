@@ -1,0 +1,20 @@
+# python.library.importlib#importlib.machinery.ModuleSpec
+
+class importlib.machinery.ModuleSpec(name, loader, *, origin=None, loader_state=None, is_package=None)  
+A specification for a module’s import-system-related state. This is typically exposed as the module’s __spec__ attribute. In the descriptions below, the names in parentheses give the corresponding attribute available directly on the module object. E.g. module.__spec__.origin == module.__file__. Note however that while the values are usually equivalent, they can differ since there is no synchronization between the two objects. Thus it is possible to update the module’s __path__ at runtime, and this will not be automatically reflected in __spec__.submodule_search_locations.  New in version 3.4.   
+name 
+ (__name__) A string for the fully-qualified name of the module.  
+loader 
+ (__loader__) The Loader that should be used when loading the module. Finders should always set this.  
+origin 
+ (__file__) Name of the place from which the module is loaded, e.g. “builtin” for built-in modules and the filename for modules loaded from source. Normally “origin” should be set, but it may be None (the default) which indicates it is unspecified (e.g. for namespace packages).  
+submodule_search_locations 
+ (__path__) List of strings for where to find submodules, if a package (None otherwise).  
+loader_state 
+ Container of extra module-specific data for use during loading (or None).  
+cached 
+ (__cached__) String for where the compiled module should be stored (or None).  
+parent 
+ (__package__) (Read-only) The fully-qualified name of the package under which the module should be loaded as a submodule (or the empty string for top-level modules). For packages, it is the same as __name__.  
+has_location 
+ Boolean indicating whether or not the module’s “origin” attribute refers to a loadable location.

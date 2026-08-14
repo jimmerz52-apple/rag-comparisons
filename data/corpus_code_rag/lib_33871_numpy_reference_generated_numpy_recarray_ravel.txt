@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.recarray.ravel
+
+numpy.recarray.ravel method   recarray.ravel([order])
+ 
+Return a flattened array. Refer to numpy.ravel for full documentation.  See also  numpy.ravel
+
+equivalent function  ndarray.flat
+
+a flat iterator on the array.

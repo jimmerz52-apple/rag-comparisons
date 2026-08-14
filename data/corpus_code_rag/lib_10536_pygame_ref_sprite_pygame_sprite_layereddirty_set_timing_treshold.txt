@@ -1,0 +1,7 @@
+# pygame.ref.sprite#pygame.sprite.LayeredDirty.set_timing_treshold
+
+set_timing_treshold() 
+ sets the threshold in milliseconds set_timing_treshold(time_ms) -> None  Default is 1000./80 where 80 is the fps I want to switch to full screen mode. This method's name is a typo and should be fixed.     
+Raises:
+
+TypeError -- if time_ms is not int or float

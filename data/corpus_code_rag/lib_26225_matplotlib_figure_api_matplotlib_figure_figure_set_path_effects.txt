@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_path_effects
+
+set_path_effects(path_effects)[source]
+ 
+Set the path effects.  Parameters 
+ 
+path_effectsAbstractPathEffect

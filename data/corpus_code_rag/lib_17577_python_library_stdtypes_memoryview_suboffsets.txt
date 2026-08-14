@@ -1,0 +1,4 @@
+# python.library.stdtypes#memoryview.suboffsets
+
+suboffsets  
+Used internally for PIL-style arrays. The value is informational only.

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.toordinal
+
+datetime.toordinal()  
+Return the proleptic Gregorian ordinal of the date. The same as self.date().toordinal().

@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.CancelledError
+
+exception concurrent.futures.CancelledError  
+Raised when a future is cancelled.

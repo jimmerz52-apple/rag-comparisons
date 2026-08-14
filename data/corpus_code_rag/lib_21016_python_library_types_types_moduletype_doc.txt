@@ -1,0 +1,4 @@
+# python.library.types#types.ModuleType.__doc__
+
+__doc__  
+The docstring of the module. Defaults to None.

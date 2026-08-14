@@ -1,0 +1,11 @@
+# skimage.api.skimage.data#skimage.data.camera
+
+skimage.data.camera() [source]
+ 
+Gray-level “camera” image. Can be used for segmentation and denoising examples.  Returns 
+ 
+camera(512, 512) uint8 ndarray 
+
+Camera image.     Notes No copyright restrictions. CC0 by the photographer (Lav Varshney).  Changed in version 0.18: This image was replaced due to copyright restrictions. For more information, please see [1].  References  
+1  
+https://github.com/scikit-image/scikit-image/issues/3927

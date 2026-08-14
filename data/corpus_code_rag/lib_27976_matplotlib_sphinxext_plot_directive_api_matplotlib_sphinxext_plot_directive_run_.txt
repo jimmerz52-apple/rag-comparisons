@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.run_code
+
+matplotlib.sphinxext.plot_directive.run_code(code, code_path, ns=None, function_name=None)[source]
+ 
+[Deprecated] Import a Python module from a path, and run the function given by name, if function_name is not None. Notes  Deprecated since version 3.5.

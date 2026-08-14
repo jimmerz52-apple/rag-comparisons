@@ -1,0 +1,9 @@
+# python.library.asyncio-exceptions#asyncio.IncompleteReadError
+
+exception asyncio.IncompleteReadError  
+The requested read operation did not complete fully. Raised by the asyncio stream APIs. This exception is a subclass of EOFError.  
+expected  
+The total number (int) of expected bytes. 
+  
+partial  
+A string of bytes read before the end of stream was reached.

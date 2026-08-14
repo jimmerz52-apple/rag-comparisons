@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.focus
+
+focus(item=None)  
+If item is specified, sets the focus item to item. Otherwise, returns the current focus item, or ‘’ if there is none.

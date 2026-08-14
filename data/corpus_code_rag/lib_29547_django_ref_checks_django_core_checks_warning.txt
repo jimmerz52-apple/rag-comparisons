@@ -1,0 +1,3 @@
+# django.ref.checks#django.core.checks.Warning
+
+class Warning(msg, hint=None obj=None, id=None)

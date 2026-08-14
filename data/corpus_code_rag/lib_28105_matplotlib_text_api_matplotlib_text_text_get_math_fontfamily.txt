@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_math_fontfamily
+
+get_math_fontfamily()[source]
+ 
+Return the font family name for math text rendered by Matplotlib. The default value is rcParams["mathtext.fontset"] (default: 'dejavusans').  See also  set_math_fontfamily

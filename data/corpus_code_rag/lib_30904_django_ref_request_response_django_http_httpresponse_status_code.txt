@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.status_code
+
+HttpResponse.status_code  
+The HTTP status code for the response. Unless reason_phrase is explicitly set, modifying the value of status_code outside the constructor will also modify the value of reason_phrase.

@@ -1,0 +1,4 @@
+# python.library.types#types.CodeType.replace
+
+replace(**kwargs)  
+Return a copy of the code object with new values for the specified fields.  New in version 3.8.

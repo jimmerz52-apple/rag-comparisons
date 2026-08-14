@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.dataframe.attrs
+
+pandas.DataFrame.attrs   propertyDataFrame.attrs
+ 
+Dictionary of global attributes of this dataset.  Warning attrs is experimental and may change without warning.   See also  DataFrame.flags
+
+Global flags applying to this object.

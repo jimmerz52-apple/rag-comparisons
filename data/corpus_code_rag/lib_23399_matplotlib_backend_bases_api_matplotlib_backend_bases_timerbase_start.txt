@@ -1,0 +1,10 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.TimerBase.start
+
+start(interval=None)[source]
+ 
+Start the timer object.  Parameters 
+ 
+intervalint, optional
+
+
+Timer interval in milliseconds; overrides a previously set interval if provided.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.InspectLoader.source_to_code
+
+static source_to_code(data, path='<string>')  
+Create a code object from Python source. The data argument can be whatever the compile() function supports (i.e. string or bytes). The path argument should be the “path” to where the source code originated from, which can be an abstract concept (e.g. location in a zip file). With the subsequent code object one can execute it in a module by running exec(code, module.__dict__).  New in version 3.4.   Changed in version 3.5: Made the method static.

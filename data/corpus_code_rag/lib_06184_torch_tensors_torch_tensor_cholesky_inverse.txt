@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cholesky_inverse
+
+cholesky_inverse(upper=False) → Tensor  
+See torch.cholesky_inverse()

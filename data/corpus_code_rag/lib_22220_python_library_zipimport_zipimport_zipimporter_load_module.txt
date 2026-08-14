@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.load_module
+
+load_module(fullname)  
+Load the module specified by fullname. fullname must be the fully qualified (dotted) module name. It returns the imported module, or raises ZipImportError if it wasn’t found.

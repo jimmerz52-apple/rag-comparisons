@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.alphaState
+
+alphaState(alpha)[source]
+ 
+Return name of an ExtGState that sets alpha to the given value.

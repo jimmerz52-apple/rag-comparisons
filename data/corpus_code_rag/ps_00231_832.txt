@@ -1,0 +1,9 @@
+# 832
+Task: 832
+
+# Write a function to extract the maximum numeric value from a string by using regex.
+import re 
+def extract_max(input): 
+	numbers = re.findall('\d+',input) 
+	numbers = map(int,numbers) 
+	return max(numbers)

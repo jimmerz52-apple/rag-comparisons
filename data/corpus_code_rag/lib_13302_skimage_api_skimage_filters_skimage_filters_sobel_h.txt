@@ -1,0 +1,18 @@
+# skimage.api.skimage.filters#skimage.filters.sobel_h
+
+skimage.filters.sobel_h(image, mask=None) [source]
+ 
+Find the horizontal edges of an image using the Sobel transform.  Parameters 
+ 
+image2-D array 
+
+Image to process.  
+mask2-D array, optional 
+
+An optional mask to limit the application to a certain area. Note that pixels surrounding masked regions are also masked to prevent masked regions from affecting the result.    Returns 
+ 
+output2-D array 
+
+The Sobel edge map.     Notes We use the following kernel:  1   2   1
+ 0   0   0
+-1  -2  -1

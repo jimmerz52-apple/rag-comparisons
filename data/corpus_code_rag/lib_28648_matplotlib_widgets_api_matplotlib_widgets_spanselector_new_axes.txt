@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.SpanSelector.new_axes
+
+new_axes(ax)[source]
+ 
+Set SpanSelector to operate on a new Axes.

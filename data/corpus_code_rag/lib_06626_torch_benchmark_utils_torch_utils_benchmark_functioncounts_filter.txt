@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.FunctionCounts.filter
+
+filter(filter_fn) [source]
+ 
+Keep only the elements where filter_fn applied to function name returns True.

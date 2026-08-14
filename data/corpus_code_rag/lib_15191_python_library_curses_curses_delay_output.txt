@@ -1,0 +1,4 @@
+# python.library.curses#curses.delay_output
+
+curses.delay_output(ms)  
+Insert an ms millisecond pause in output.

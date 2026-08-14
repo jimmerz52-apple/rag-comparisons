@@ -1,0 +1,3 @@
+# django.ref.models.expressions#django.db.models.expressions.RawSQL
+
+class RawSQL(sql, params, output_field=None)

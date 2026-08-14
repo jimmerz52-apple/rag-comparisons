@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.PointOnSurface
+
+class PointOnSurface(expression, **extra)

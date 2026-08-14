@@ -1,0 +1,14 @@
+# matplotlib.image_api#matplotlib.image.PcolorImage.set_data
+
+set_data(x, y, A)[source]
+ 
+Set the grid for the rectangle boundaries, and the data values.  Parameters 
+ 
+x, y1D array-like, optional
+
+
+Monotonic arrays of length N+1 and M+1, respectively, specifying rectangle boundaries. If not given, will default to range(N + 1) and range(M + 1), respectively.  
+Aarray-like
+
+
+The data to be color-coded. The interpretation depends on the shape:  (M, N) ndarray or masked array: values to be colormapped (M, N, 3): RGB array (M, N, 4): RGBA array

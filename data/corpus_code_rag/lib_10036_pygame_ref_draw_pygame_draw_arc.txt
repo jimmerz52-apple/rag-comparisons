@@ -1,0 +1,26 @@
+# pygame.ref.draw#pygame.draw.arc
+
+pygame.draw.arc() 
+ draw an elliptical arc arc(surface, color, rect, start_angle, stop_angle) -> Rect arc(surface, color, rect, start_angle, stop_angle, width=1) -> Rect  Draws an elliptical arc on the given surface. The two angle arguments are given in radians and indicate the start and stop positions of the arc. The arc is drawn in a counterclockwise direction from the start_angle to the stop_angle.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+color (Color or int or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+ 
+rect (Rect) -- rectangle to indicate the position and dimensions of the ellipse which the arc will be based on, the ellipse will be centered inside the rectangle 
+start_angle (float) -- start angle of the arc in radians 
+stop_angle (float) -- stop angle of the arc in radians  
+ if start_angle < stop_angle, the arc is drawn in a counterclockwise direction from the start_angle to the stop_angle
+ if start_angle > stop_angle, tau (tau == 2 * pi) will be added to the stop_angle, if the resulting stop angle value is greater than the start_angle the above start_angle < stop_angle case applies, otherwise nothing will be drawn if start_angle == stop_angle, nothing will be drawn   
+  
+width (int) -- (optional) used for line thickness (not to be confused with the width value of the rect parameter)  
+ if width == 0, nothing will be drawn if width > 0, (default is 1) used for line thickness if width < 0, same as width == 0
+   Note When using width values > 1, the edge lines will only grow inward from the original boundary of the rect parameter.  
+     
+Returns:
+
+a rect bounding the changed pixels, if nothing is drawn the bounding rect's position will be the position of the given rect parameter and its width and height will be 0   
+Return type:
+
+Rect      Changed in pygame 2.0.0: Added support for keyword arguments.

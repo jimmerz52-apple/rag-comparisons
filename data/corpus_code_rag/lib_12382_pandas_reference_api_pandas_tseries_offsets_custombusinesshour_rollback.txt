@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinesshour.rollback
+
+pandas.tseries.offsets.CustomBusinessHour.rollback   CustomBusinessHour.rollback(other)
+ 
+Roll provided date backward to next offset only if not on offset.

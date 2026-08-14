@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.arrays.intervalarray.length
+
+pandas.arrays.IntervalArray.length   propertyIntervalArray.length
+ 
+Return an Index with entries denoting the length of each Interval in the IntervalArray.

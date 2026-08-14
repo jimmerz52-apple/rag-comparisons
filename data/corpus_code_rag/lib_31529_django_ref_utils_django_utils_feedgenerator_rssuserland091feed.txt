@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.RssUserland091Feed
+
+class RssUserland091Feed(RssFeed)  
+Spec: http://backend.userland.com/rss091

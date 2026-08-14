@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.recarray.data
+
+numpy.recarray.data attribute   recarray.data
+ 
+Python buffer object pointing to the start of the array’s data.

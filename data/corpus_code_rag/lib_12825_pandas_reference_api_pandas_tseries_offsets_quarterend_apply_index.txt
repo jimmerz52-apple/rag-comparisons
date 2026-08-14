@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.quarterend.apply_index
+
+pandas.tseries.offsets.QuarterEnd.apply_index   QuarterEnd.apply_index(other)

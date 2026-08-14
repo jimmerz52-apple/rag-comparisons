@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.quarter
+
+pandas.PeriodIndex.quarter   propertyPeriodIndex.quarter
+ 
+The quarter of the date.

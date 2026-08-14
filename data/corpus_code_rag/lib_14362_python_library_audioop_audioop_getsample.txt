@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.getsample
+
+audioop.getsample(fragment, width, index)  
+Return the value of sample index from the fragment.

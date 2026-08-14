@@ -1,0 +1,16 @@
+# pygame.ref.mask#pygame.mask.Mask.draw
+
+draw() 
+ Draws a mask onto another draw(othermask, offset) -> None  Performs a bitwise OR, drawing othermask onto this mask.     
+Parameters:
+
+ 
+othermask (Mask) -- the mask to draw onto this mask 
+offset (tuple(int, int) or list[int, int]) -- the offset of othermask from this mask, for more details refer to the Mask offset notes
+    
+Returns:
+
+None   
+Return type:
+
+NoneType

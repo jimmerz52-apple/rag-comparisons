@@ -1,0 +1,11 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.__init__
+
+SimpleTemplateResponse.__init__(template, context=None, content_type=None, status=None, charset=None, using=None, headers=None)  
+Instantiates a SimpleTemplateResponse object with the given template, context, content type, HTTP status, and charset.  
+template  A backend-dependent template object (such as those returned by get_template()), the name of a template, or a list of template names. 
+context  A dict of values to add to the template context. By default, this is an empty dictionary. 
+content_type  The value included in the HTTP Content-Type header, including the MIME type specification and the character set encoding. If content_type is specified, then its value is used. Otherwise, 'text/html' is used. 
+status  The HTTP status code for the response. 
+charset  The charset in which the response will be encoded. If not given it will be extracted from content_type, and if that is unsuccessful, the DEFAULT_CHARSET setting will be used. 
+using  The NAME of a template engine to use for loading the template. 
+headers  A dict of HTTP headers to add to the response.   Changed in Django 3.2: The headers parameter was added.

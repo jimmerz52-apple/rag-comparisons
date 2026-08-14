@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.AxesWidget.connect_event
+
+connect_event(event, callback)[source]
+ 
+Connect a callback function with an event. This should be used in lieu of figure.canvas.mpl_connect since this function stores callback ids for later clean up.

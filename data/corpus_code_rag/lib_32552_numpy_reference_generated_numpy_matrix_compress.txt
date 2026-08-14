@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.matrix.compress
+
+numpy.matrix.compress method   matrix.compress(condition, axis=None, out=None)
+ 
+Return selected slices of this array along given axis. Refer to numpy.compress for full documentation.  See also  numpy.compress
+
+equivalent function

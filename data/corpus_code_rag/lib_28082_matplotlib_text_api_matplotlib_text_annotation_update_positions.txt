@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Annotation.update_positions
+
+update_positions(renderer)[source]
+ 
+Update the pixel positions of the annotation text and the arrow patch.

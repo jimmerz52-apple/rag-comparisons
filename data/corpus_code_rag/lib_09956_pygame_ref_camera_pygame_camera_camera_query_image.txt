@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.query_image
+
+query_image() 
+ checks if a frame is ready query_image() -> bool  If an image is ready to get, it returns true. Otherwise it returns false. Note that some webcams will always return False and will only queue a frame when called with a blocking function like get_image(). This is useful to separate the framerate of the game from that of the camera without having to use threading.

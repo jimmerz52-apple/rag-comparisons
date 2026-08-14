@@ -1,0 +1,3 @@
+# django.ref.urlresolvers#django.urls.resolve
+
+resolve(path, urlconf=None)

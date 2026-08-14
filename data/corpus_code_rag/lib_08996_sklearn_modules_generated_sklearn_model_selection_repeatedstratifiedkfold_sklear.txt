@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.model_selection.repeatedstratifiedkfold#sklearn.model_selection.RepeatedStratifiedKFold.get_n_splits
+
+get_n_splits(X=None, y=None, groups=None) [source]
+ 
+Returns the number of splitting iterations in the cross-validator  Parameters 
+ 
+Xobject 
+
+Always ignored, exists for compatibility. np.zeros(n_samples) may be used as a placeholder.  
+yobject 
+
+Always ignored, exists for compatibility. np.zeros(n_samples) may be used as a placeholder.  
+groupsarray-like of shape (n_samples,), default=None 
+
+Group labels for the samples used while splitting the dataset into train/test set.    Returns 
+ 
+n_splitsint 
+
+Returns the number of splitting iterations in the cross-validator.

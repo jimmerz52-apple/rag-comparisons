@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.RendererPgf.flipy
+
+flipy()[source]
+ 
+Return whether y values increase from top to bottom. Note that this only affects drawing of texts and images.

@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.preprocessing.functiontransformer#sklearn.preprocessing.FunctionTransformer.fit
+
+fit(X, y=None) [source]
+ 
+Fit transformer by checking X. If validate is True, X will be checked.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+Input array.    Returns 
+ self

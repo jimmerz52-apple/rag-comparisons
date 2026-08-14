@@ -1,0 +1,9 @@
+# python.library.turtle#turtle.sety
+
+turtle.sety(y)  
+ Parameters 
+y – a number (integer or float)   Set the turtle’s second coordinate to y, leave first coordinate unchanged. >>> turtle.position()
+(0.00,40.00)
+>>> turtle.sety(-10)
+>>> turtle.position()
+(0.00,-10.00)

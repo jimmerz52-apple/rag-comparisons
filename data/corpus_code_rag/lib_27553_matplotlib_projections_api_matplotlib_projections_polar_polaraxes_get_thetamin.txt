@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_thetamin
+
+get_thetamin()[source]
+ 
+Get the minimum theta limit in degrees.

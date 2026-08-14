@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.modulelist#torch.nn.ModuleList.extend
+
+extend(modules) [source]
+ 
+Appends modules from a Python iterable to the end of the list.  Parameters 
+modules (iterable) – iterable of modules to append

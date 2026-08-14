@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.update
+
+update(*args, **kwargs)  
+Replace headers in this object with items from another headers object and keyword arguments. To extend existing keys instead of replacing, use extend() instead. If provided, the first argument can be another Headers object, a MultiDict, dict, or iterable of pairs.  Changelog New in version 1.0.

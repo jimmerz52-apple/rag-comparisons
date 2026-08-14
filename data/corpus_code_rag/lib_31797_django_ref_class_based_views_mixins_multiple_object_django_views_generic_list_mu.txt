@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.get_context_data
+
+get_context_data(**kwargs)  
+Returns context data for displaying the list of objects.

@@ -1,0 +1,4 @@
+# python.library.typing#typing.Awaitable
+
+class typing.Awaitable(Generic[T_co])  
+A generic version of collections.abc.Awaitable.  New in version 3.5.2.   Deprecated since version 3.9: collections.abc.Awaitable now supports []. See PEP 585 and Generic Alias Type.

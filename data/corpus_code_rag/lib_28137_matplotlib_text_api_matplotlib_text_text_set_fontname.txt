@@ -1,0 +1,9 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontname
+
+set_fontname(fontname)[source]
+ 
+Alias for set_family. One-way alias only: the getter differs.  Parameters 
+ 
+fontname{FONTNAME, 'serif', 'sans-serif', 'cursive', 'fantasy', 'monospace'}
+
+    See also  font_manager.FontProperties.set_family

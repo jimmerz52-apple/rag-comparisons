@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.read_text
+
+Path.read_text(*, **)  
+Read the current file as unicode text. Positional and keyword arguments are passed through to io.TextIOWrapper (except buffer, which is implied by the context).

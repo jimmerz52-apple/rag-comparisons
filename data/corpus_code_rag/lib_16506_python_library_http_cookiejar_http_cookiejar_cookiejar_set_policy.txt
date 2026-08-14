@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar.set_policy
+
+CookieJar.set_policy(policy)  
+Set the CookiePolicy instance to be used.

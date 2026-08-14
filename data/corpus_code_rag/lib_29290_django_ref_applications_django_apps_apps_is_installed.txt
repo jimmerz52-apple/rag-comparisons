@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.apps.is_installed
+
+apps.is_installed(app_name)  
+Checks whether an application with the given name exists in the registry. app_name is the full name of the app, e.g. 'django.contrib.admin'.

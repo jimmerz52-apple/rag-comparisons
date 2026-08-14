@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LogoutView.next_page
+
+next_page  
+The URL to redirect to after logout. Defaults to LOGOUT_REDIRECT_URL.

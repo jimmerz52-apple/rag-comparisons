@@ -1,0 +1,4 @@
+# python.library.profile#pstats.Stats.get_stats_profile
+
+get_stats_profile()  
+This method returns an instance of StatsProfile, which contains a mapping of function names to instances of FunctionProfile. Each FunctionProfile instance holds information related to the function’s profile such as how long the function took to run, how many times it was called, etc…  New in version 3.9: Added the following dataclasses: StatsProfile, FunctionProfile. Added the following function: get_stats_profile.

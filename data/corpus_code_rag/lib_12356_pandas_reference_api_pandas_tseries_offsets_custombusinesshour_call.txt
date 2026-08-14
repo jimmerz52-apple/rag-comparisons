@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinesshour.__call__
+
+pandas.tseries.offsets.CustomBusinessHour.__call__   CustomBusinessHour.__call__(*args, **kwargs)
+ 
+Call self as a function.

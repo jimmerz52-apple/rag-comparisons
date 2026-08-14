@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.BoundField.auto_id
+
+BoundField.auto_id  
+The HTML ID attribute for this BoundField. Returns an empty string if Form.auto_id is False.

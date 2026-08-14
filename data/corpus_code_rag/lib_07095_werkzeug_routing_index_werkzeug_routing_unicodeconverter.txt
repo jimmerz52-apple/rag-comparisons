@@ -1,0 +1,12 @@
+# werkzeug.routing.index#werkzeug.routing.UnicodeConverter
+
+class werkzeug.routing.UnicodeConverter(map, minlength=1, maxlength=None, length=None)  
+This converter is the default converter and accepts any string but only one path segment. Thus the string can not include a slash. This is the default validator. Example: Rule('/pages/<page>'),
+Rule('/<string(length=2):lang_code>')
+  Parameters 
+ 
+map (Map) – the Map. 
+minlength (int) – the minimum length of the string. Must be greater or equal 1. 
+maxlength (Optional[int]) – the maximum length of the string. 
+length (Optional[int]) – the exact length of the string.   Return type 
+None

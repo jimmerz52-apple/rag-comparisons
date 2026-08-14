@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.name
+
+Path.name  
+The final path component.

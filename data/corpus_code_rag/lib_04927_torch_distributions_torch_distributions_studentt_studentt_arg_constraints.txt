@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.studentT.StudentT.arg_constraints
+
+arg_constraints = {'df': GreaterThan(lower_bound=0.0), 'loc': Real(), 'scale': GreaterThan(lower_bound=0.0)}

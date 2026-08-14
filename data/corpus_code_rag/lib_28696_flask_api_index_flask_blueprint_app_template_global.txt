@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.app_template_global
+
+app_template_global(name=None)  
+Register a custom template global, available application wide. Like Flask.template_global() but for a blueprint.  Changelog New in version 0.10.   Parameters 
+name (Optional[str]) – the optional name of the global, otherwise the function name will be used.  Return type 
+Callable

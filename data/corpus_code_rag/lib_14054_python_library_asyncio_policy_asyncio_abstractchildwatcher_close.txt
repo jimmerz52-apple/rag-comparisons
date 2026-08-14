@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractChildWatcher.close
+
+close()  
+Close the watcher. This method has to be called to ensure that underlying resources are cleaned-up.

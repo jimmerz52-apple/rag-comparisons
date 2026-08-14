@@ -1,0 +1,7 @@
+# 697
+Task: 697
+
+# Write a function to find number of even elements in the given list using lambda function.
+def count_even(array_nums):
+   count_even = len(list(filter(lambda x: (x%2 == 0) , array_nums)))
+   return count_even

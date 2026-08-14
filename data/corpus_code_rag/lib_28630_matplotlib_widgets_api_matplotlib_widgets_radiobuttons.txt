@@ -1,0 +1,55 @@
+# matplotlib.widgets_api#matplotlib.widgets.RadioButtons
+
+classmatplotlib.widgets.RadioButtons(ax, labels, active=0, activecolor='blue')[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral radio button. For the buttons to remain responsive you must keep a reference to this object. Connect to the RadioButtons with the on_clicked method.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+activecolorcolor
+
+
+The color of the selected button.  
+labelslist of Text
+
+
+The button labels.  
+circleslist of Circle
+
+
+The buttons.  
+value_selectedstr
+
+
+The label text of the currently selected button.     Add radio buttons to an Axes.  Parameters 
+ 
+axAxes
+
+
+The axes to add the buttons to.  
+labelslist of str
+
+
+The button labels.  
+activeint
+
+
+The index of the initially selected button.  
+activecolorcolor
+
+
+The color of the selected button.       propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid. 
+   propertyobservers[source]
+
+   on_clicked(func)[source]
+ 
+Connect the callback function func to button click events. Returns a connection id, which can be used to disconnect the callback. 
+   set_active(index)[source]
+ 
+Select button with number index. Callbacks will be triggered if eventson is True.

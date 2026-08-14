@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.isfinite
+
+isfinite() → Tensor  
+See torch.isfinite()

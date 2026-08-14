@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Babyl.get_labels
+
+get_labels()  
+Return a list of the names of all user-defined labels used in the mailbox.  Note The actual messages are inspected to determine which labels exist in the mailbox rather than consulting the list of labels in the Babyl options section, but the Babyl section is updated whenever the mailbox is modified.

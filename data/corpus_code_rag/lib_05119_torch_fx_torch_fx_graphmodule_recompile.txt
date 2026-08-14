@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.GraphModule.recompile
+
+recompile() [source]
+ 
+Recompile this GraphModule from its graph attribute. This should be called after editing the contained graph, otherwise the generated code of this GraphModule will be out of date.

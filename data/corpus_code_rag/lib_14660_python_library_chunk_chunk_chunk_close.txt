@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.close
+
+close()  
+Close and skip to the end of the chunk. This does not close the underlying file.

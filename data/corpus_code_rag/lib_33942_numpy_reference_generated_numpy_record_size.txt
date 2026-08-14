@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.size
+
+numpy.record.size attribute   record.size
+ 
+The number of elements in the gentype.

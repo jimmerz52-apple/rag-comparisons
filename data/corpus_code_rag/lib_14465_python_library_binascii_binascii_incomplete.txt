@@ -1,0 +1,4 @@
+# python.library.binascii#binascii.Incomplete
+
+exception binascii.Incomplete  
+Exception raised on incomplete data. These are usually not programming errors, but may be handled by reading a little more data and trying again.

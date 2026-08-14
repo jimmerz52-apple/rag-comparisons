@@ -1,0 +1,4 @@
+# python.library.random#random.paretovariate
+
+random.paretovariate(alpha)  
+Pareto distribution. alpha is the shape parameter.

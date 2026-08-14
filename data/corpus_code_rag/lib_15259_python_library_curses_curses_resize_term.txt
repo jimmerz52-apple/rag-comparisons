@@ -1,0 +1,4 @@
+# python.library.curses#curses.resize_term
+
+curses.resize_term(nlines, ncols)  
+Backend function used by resizeterm(), performing most of the work; when resizing the windows, resize_term() blank-fills the areas that are extended. The calling application should fill in these areas with appropriate data. The resize_term() function attempts to resize all windows. However, due to the calling convention of pads, it is not possible to resize these without additional interaction with the application.

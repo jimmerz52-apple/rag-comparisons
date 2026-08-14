@@ -1,0 +1,4 @@
+# python.library.asyncio-exceptions#asyncio.IncompleteReadError.expected
+
+expected  
+The total number (int) of expected bytes.

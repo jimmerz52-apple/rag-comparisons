@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.formatterdms#mpl_toolkits.axisartist.angle_helper.FormatterDMS.deg_mark
+
+deg_mark='^{\\circ}'

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.line3dcollection#mpl_toolkits.mplot3d.art3d.Line3DCollection.set_segments
+
+set_segments(segments)[source]
+ 
+Set 3D segments.

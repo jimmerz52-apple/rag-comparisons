@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.app_template_filter
+
+app_template_filter(name=None)  
+Register a custom template filter, available application wide. Like Flask.template_filter() but for a blueprint.  Parameters 
+name (Optional[str]) – the optional name of the filter, otherwise the function name will be used.  Return type 
+Callable

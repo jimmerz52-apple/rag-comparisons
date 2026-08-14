@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.path
+
+path  
+The path part of the URL after root_path. This is the path used for routing within the application.

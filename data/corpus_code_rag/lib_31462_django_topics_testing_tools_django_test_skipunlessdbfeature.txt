@@ -1,0 +1,3 @@
+# django.topics.testing.tools#django.test.skipUnlessDBFeature
+
+skipUnlessDBFeature(*feature_name_strings)

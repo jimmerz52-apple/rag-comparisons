@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_COOKIE_NAME
+
+SESSION_COOKIE_NAME  
+The name of the session cookie. Can be changed in case you already have a cookie with the same name. Default: 'session'

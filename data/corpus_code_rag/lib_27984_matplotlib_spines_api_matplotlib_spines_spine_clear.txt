@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.clear
+
+clear()[source]
+ 
+Clear the current spine.

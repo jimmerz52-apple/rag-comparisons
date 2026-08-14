@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.rot90
+
+tf.experimental.numpy.rot90 TensorFlow variant of NumPy's rot90. 
+tf.experimental.numpy.rot90(
+    m, k=1, axes=(0, 1)
+)
+ See the NumPy documentation for numpy.rot90.

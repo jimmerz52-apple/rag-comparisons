@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.tick_right
+
+matplotlib.axis.YAxis.tick_right   YAxis.tick_right()[source]
+ 
+Move ticks and ticklabels (if present) to the right of the axes.

@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isascii
+
+curses.ascii.isascii(c)  
+Checks for a character value that fits in the 7-bit ASCII set.

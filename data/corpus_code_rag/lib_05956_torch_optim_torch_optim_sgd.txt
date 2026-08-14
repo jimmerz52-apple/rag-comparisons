@@ -1,0 +1,22 @@
+# torch.optim#torch.optim.SGD
+
+class torch.optim.SGD(params, lr=<required parameter>, momentum=0, dampening=0, weight_decay=0, nesterov=False) [source]
+ 
+Implements stochastic gradient descent (optionally with momentum). Nesterov momentum is based on the formula from On the importance of initialization and momentum in deep learning.  Parameters 
+ 
+params (iterable) – iterable of parameters to optimize or dicts defining parameter groups 
+lr (float) – learning rate 
+momentum (float, optional) – momentum factor (default: 0) 
+weight_decay (float, optional) – weight decay (L2 penalty) (default: 0) 
+dampening (float, optional) – dampening for momentum (default: 0) 
+nesterov (bool, optional) – enables Nesterov momentum (default: False)    Example >>> optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
+>>> optimizer.zero_grad()
+>>> loss_fn(model(input), target).backward()
+>>> optimizer.step()
+  Note The implementation of SGD with Momentum/Nesterov subtly differs from Sutskever et. al. and implementations in some other frameworks. Considering the specific case of Momentum, the update can be written as  vt+1=μ∗vt+gt+1,pt+1=pt−lr∗vt+1,\begin{aligned} v_{t+1} & = \mu * v_{t} + g_{t+1}, \\ p_{t+1} & = p_{t} - \text{lr} * v_{t+1}, \end{aligned}  
+where pp , gg , vv  and μ\mu  denote the parameters, gradient, velocity, and momentum respectively. This is in contrast to Sutskever et. al. and other frameworks which employ an update of the form  vt+1=μ∗vt+lr∗gt+1,pt+1=pt−vt+1.\begin{aligned} v_{t+1} & = \mu * v_{t} + \text{lr} * g_{t+1}, \\ p_{t+1} & = p_{t} - v_{t+1}. \end{aligned}  
+The Nesterov version is analogously modified.   
+step(closure=None) [source]
+ 
+Performs a single optimization step.  Parameters 
+closure (callable, optional) – A closure that reevaluates the model and returns the loss.

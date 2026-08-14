@@ -1,0 +1,32 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed
+
+class SyndicationFeed  
+Base class for all syndication feeds. Subclasses should provide write().  
+__init__(title, link, description, language=None, author_email=None, author_name=None, author_link=None, subtitle=None, categories=None, feed_url=None, feed_copyright=None, feed_guid=None, ttl=None, **kwargs)  
+Initialize the feed with the given dictionary of metadata, which applies to the entire feed. Any extra keyword arguments you pass to __init__ will be stored in self.feed. All parameters should be strings, except categories, which should be a sequence of strings. 
+  
+add_item(title, link, description, author_email=None, author_name=None, author_link=None, pubdate=None, comments=None, unique_id=None, categories=(), item_copyright=None, ttl=None, updateddate=None, enclosures=None, **kwargs)  
+Adds an item to the feed. All args are expected to be strings except pubdate and updateddate, which are datetime.datetime objects, and enclosures, which is a list of Enclosure instances. 
+  
+num_items() 
+  
+root_attributes()  
+Return extra attributes to place on the root (i.e. feed/channel) element. Called from write(). 
+  
+add_root_elements(handler)  
+Add elements in the root (i.e. feed/channel) element. Called from write(). 
+  
+item_attributes(item)  
+Return extra attributes to place on each item (i.e. item/entry) element. 
+  
+add_item_elements(handler, item)  
+Add elements on each item (i.e. item/entry) element. 
+  
+write(outfile, encoding)  
+Outputs the feed in the given encoding to outfile, which is a file-like object. Subclasses should override this. 
+  
+writeString(encoding)  
+Returns the feed in the given encoding as a string. 
+  
+latest_post_date()  
+Returns the latest pubdate or updateddate for all items in the feed. If no items have either of these attributes this returns the current UTC date/time.

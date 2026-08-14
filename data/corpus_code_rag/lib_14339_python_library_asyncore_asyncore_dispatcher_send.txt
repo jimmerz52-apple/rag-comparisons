@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.dispatcher.send
+
+send(data)  
+Send data to the remote end-point of the socket.

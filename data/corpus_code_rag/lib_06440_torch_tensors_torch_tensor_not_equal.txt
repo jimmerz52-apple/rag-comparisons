@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.not_equal_
+
+not_equal_(other) → Tensor  
+In-place version of not_equal().

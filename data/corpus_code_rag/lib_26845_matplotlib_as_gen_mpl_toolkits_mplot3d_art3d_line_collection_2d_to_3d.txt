@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.line_collection_2d_to_3d
+
+mpl_toolkits.mplot3d.art3d.line_collection_2d_to_3d   mpl_toolkits.mplot3d.art3d.line_collection_2d_to_3d(col, zs=0, zdir='z')[source]
+ 
+Convert a LineCollection to a Line3DCollection object.

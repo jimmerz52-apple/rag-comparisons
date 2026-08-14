@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.copy_negate
+
+copy_negate(x)  
+Returns a copy of x with the sign inverted.

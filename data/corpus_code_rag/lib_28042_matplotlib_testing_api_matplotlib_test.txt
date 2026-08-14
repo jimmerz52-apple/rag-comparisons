@@ -1,0 +1,5 @@
+# matplotlib.testing_api#matplotlib.test
+
+matplotlib.test(verbosity=None, coverage=False, **kwargs)[source]
+ 
+[Deprecated] Run the matplotlib test suite. Notes  Deprecated since version 3.5.

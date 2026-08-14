@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.StackSummary.from_list
+
+classmethod from_list(a_list)  
+Construct a StackSummary object from a supplied list of FrameSummary objects or old-style list of tuples. Each tuple should be a 4-tuple with filename, lineno, name, line as the elements.

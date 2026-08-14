@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.encoding.smart_bytes
+
+smart_bytes(s, encoding='utf-8', strings_only=False, errors='strict') [source]
+ 
+Returns a bytestring version of arbitrary object s, encoded as specified in encoding. If strings_only is True, don’t convert (some) non-string-like objects.

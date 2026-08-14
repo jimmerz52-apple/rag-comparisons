@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.getnames
+
+TarFile.getnames()  
+Return the members as a list of their names. It has the same order as the list returned by getmembers().

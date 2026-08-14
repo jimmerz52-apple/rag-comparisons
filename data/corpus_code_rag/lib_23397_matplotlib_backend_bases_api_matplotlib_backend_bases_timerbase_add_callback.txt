@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.TimerBase.add_callback
+
+add_callback(func, *args, **kwargs)[source]
+ 
+Register func to be called by timer when the event fires. Any additional arguments provided will be passed to func. This function returns func, which makes it possible to use it as a decorator.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.ScriptInfo.data
+
+data  
+A dictionary with arbitrary data that can be associated with this script info.

@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Client.put
+
+put(path, data='', content_type='application/octet-stream', follow=False, secure=False, **extra)  
+Makes a PUT request on the provided path and returns a Response object. Useful for testing RESTful interfaces. When data is provided, it is used as the request body, and a Content-Type header is set to content_type. The follow, secure and extra arguments act the same as for Client.get().

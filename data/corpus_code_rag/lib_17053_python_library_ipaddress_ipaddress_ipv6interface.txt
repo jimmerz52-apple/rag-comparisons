@@ -1,0 +1,14 @@
+# python.library.ipaddress#ipaddress.IPv6Interface
+
+class ipaddress.IPv6Interface(address)  
+Construct an IPv6 interface. The meaning of address is as in the constructor of IPv6Network, except that arbitrary host addresses are always accepted. IPv6Interface is a subclass of IPv6Address, so it inherits all the attributes from that class. In addition, the following attributes are available:  
+ip 
+  
+network 
+  
+with_prefixlen 
+  
+with_netmask 
+  
+with_hostmask  
+Refer to the corresponding attribute documentation in IPv4Interface.

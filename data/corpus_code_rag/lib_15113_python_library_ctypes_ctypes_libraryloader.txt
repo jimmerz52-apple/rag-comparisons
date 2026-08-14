@@ -1,0 +1,6 @@
+# python.library.ctypes#ctypes.LibraryLoader
+
+class ctypes.LibraryLoader(dlltype)  
+Class which loads shared libraries. dlltype should be one of the CDLL, PyDLL, WinDLL, or OleDLL types. __getattr__() has special behavior: It allows loading a shared library by accessing it as attribute of a library loader instance. The result is cached, so repeated attribute accesses return the same library each time.  
+LoadLibrary(name)  
+Load a shared library into the process and return it. This method always returns a new instance of the library.

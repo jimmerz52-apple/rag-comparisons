@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IROTH
+
+stat.S_IROTH  
+Others have read permission.

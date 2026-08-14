@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.closed
+
+HttpResponse.closed  
+True if the response has been closed.

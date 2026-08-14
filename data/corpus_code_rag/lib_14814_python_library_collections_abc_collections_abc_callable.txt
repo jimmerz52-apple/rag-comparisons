@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Callable
+
+class collections.abc.Callable  
+ABC for classes that provide the __call__() method.

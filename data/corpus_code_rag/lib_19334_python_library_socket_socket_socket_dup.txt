@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.dup
+
+socket.dup()  
+Duplicate the socket. The newly created socket is non-inheritable.  Changed in version 3.4: The socket is now non-inheritable.

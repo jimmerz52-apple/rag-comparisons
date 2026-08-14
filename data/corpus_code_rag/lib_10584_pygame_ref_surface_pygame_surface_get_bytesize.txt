@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_bytesize
+
+get_bytesize() 
+ get the bytes used per Surface pixel get_bytesize() -> int  Return the number of bytes used per pixel.

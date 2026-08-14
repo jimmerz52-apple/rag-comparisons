@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.list_modes
+
+pygame.display.list_modes() 
+ Get list of available fullscreen modes list_modes(depth=0, flags=pygame.FULLSCREEN, display=0) -> list  This function returns a list of possible sizes for a specified color depth. The return value will be an empty list if no display modes are available with the given arguments. A return value of -1 means that any requested size should work (this is likely the case for windowed modes). Mode sizes are sorted from biggest to smallest. If depth is 0, the current/best color depth for the display is used. The flags defaults to pygame.FULLSCREEN, but you may need to add additional flags for specific fullscreen modes. The display index 0 means the default display is used.  Changed in pygame 1.9.5: display argument added

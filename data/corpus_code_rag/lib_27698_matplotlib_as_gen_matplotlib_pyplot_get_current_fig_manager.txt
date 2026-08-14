@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.pyplot.get_current_fig_manager
+
+matplotlib.pyplot.get_current_fig_manager   matplotlib.pyplot.get_current_fig_manager()[source]
+ 
+Return the figure manager of the current figure. The figure manager is a container for the actual backend-depended window that displays the figure on screen. If no current figure exists, a new one is created, and its figure manager is returned.  Returns 
+ 
+FigureManagerBase or backend-dependent subclass thereof

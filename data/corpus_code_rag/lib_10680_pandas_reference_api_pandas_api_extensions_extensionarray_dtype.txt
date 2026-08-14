@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.dtype
+
+pandas.api.extensions.ExtensionArray.dtype   propertyExtensionArray.dtype
+ 
+An instance of ‘ExtensionDtype’.

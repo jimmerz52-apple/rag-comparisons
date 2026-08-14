@@ -1,0 +1,4 @@
+# python.library.os#os.SCHED_SPORADIC
+
+os.SCHED_SPORADIC  
+Scheduling policy for sporadic server programs.

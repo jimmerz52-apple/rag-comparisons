@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.many_to_one
+
+Field.many_to_one  
+Boolean flag that is True if the field has a many-to-one relation, such as a ForeignKey; False otherwise.

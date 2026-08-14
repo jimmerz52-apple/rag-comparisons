@@ -1,0 +1,5 @@
+# flask.api.index#flask.Response.iter_encoded
+
+iter_encoded()  
+Iter the response encoded with the encoding of the response. If the response object is invoked as WSGI application the return value of this method is used as application iterator unless direct_passthrough was activated.  Return type 
+Iterator[bytes]

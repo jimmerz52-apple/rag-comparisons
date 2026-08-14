@@ -1,0 +1,6 @@
+# python.library.mailbox#mailbox.Maildir.add
+
+add(message)  
+__setitem__(key, message)  
+update(arg)  
+ Warning These methods generate unique file names based upon the current process ID. When using multiple threads, undetected name clashes may occur and cause corruption of the mailbox unless threads are coordinated to avoid using these methods to manipulate the same mailbox simultaneously.

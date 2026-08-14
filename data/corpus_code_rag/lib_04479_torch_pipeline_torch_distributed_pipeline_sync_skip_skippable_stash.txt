@@ -1,0 +1,11 @@
+# torch.pipeline#torch.distributed.pipeline.sync.skip.skippable.stash
+
+class torch.distributed.pipeline.sync.skip.skippable.stash(name, tensor) [source]
+ 
+The command to stash a skip tensor. def forward(self, input):
+    yield stash('name', input)
+    return f(input)
+  Parameters 
+ 
+name (str) – name of skip tensor 
+input (torch.Tensor or None) – tensor to pass to the skip connection

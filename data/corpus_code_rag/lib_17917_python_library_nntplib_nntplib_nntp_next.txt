@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.next
+
+NNTP.next()  
+Send a NEXT command. Return as for stat().

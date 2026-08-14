@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.wkb
+
+GEOSGeometry.wkb  
+Returns the WKB (Well-Known Binary) representation of this Geometry as a Python buffer. SRID value is not included, use the GEOSGeometry.ewkb property instead.

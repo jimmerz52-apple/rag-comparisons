@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.conjugate
+
+numpy.recarray.conjugate method   recarray.conjugate()
+ 
+Return the complex conjugate, element-wise. Refer to numpy.conjugate for full documentation.  See also  numpy.conjugate
+
+equivalent function

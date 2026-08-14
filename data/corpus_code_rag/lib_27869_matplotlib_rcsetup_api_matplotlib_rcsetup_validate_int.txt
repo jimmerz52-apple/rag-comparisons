@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_int
+
+matplotlib.rcsetup.validate_int(s)[source]

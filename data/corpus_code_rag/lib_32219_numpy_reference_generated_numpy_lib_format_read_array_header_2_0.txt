@@ -1,0 +1,26 @@
+# numpy.reference.generated.numpy.lib.format.read_array_header_2_0
+
+numpy.lib.format.read_array_header_2_0   lib.format.read_array_header_2_0(fp)[source]
+ 
+Read an array header from a filelike object using the 2.0 file format version. This will leave the file object located just after the header.  New in version 1.9.0.   Parameters 
+ 
+fpfilelike object
+
+
+A file object or something with a read() method like a file.    Returns 
+ 
+shapetuple of int
+
+
+The shape of the array.  
+fortran_orderbool
+
+
+The array data will be written out directly if it is either C-contiguous or Fortran-contiguous. Otherwise, it will be made contiguous before writing it out.  
+dtypedtype
+
+
+The dtype of the file’s data.    Raises 
+ ValueError
+
+If the data is invalid.

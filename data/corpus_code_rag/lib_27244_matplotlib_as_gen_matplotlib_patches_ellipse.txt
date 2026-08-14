@@ -1,0 +1,204 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse
+
+matplotlib.patches.Ellipse   classmatplotlib.patches.Ellipse(xy, width, height, angle=0, **kwargs)[source]
+ 
+Bases: matplotlib.patches.Patch A scale-free ellipse.  Parameters 
+ 
+xy(float, float)
+
+
+xy coordinates of ellipse centre.  
+widthfloat
+
+
+Total length (diameter) of horizontal axis.  
+heightfloat
+
+
+Total length (diameter) of vertical axis.  
+anglefloat, default: 0
+
+
+Rotation in degrees anti-clockwise.     Notes Valid keyword arguments are:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float     propertyangle
+ 
+Return the angle of the ellipse. 
+   propertycenter
+ 
+Return the center of the ellipse. 
+   get_angle()[source]
+ 
+Return the angle of the ellipse. 
+   get_center()[source]
+ 
+Return the center of the ellipse. 
+   get_height()[source]
+ 
+Return the height of the ellipse. 
+   get_patch_transform()[source]
+ 
+Return the Transform instance mapping patch coordinates to data coordinates. For example, one may define a patch of a circle which represents a radius of 5 by providing coordinates for a unit circle, and a transform which scales the coordinates (the patch coordinate) by 5. 
+   get_path()[source]
+ 
+Return the path of the ellipse. 
+   get_width()[source]
+ 
+Return the width of the ellipse. 
+   propertyheight
+ 
+Return the height of the ellipse. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, angle=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, capstyle=<UNSET>, center=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, height=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+angle float  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+center (float, float)  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+height float  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+zorder float   
+   set_angle(angle)[source]
+ 
+Set the angle of the ellipse.  Parameters 
+ 
+anglefloat
+
+   
+   set_center(xy)[source]
+ 
+Set the center of the ellipse.  Parameters 
+ 
+xy(float, float)
+
+   
+   set_height(height)[source]
+ 
+Set the height of the ellipse.  Parameters 
+ 
+heightfloat
+
+   
+   set_width(width)[source]
+ 
+Set the width of the ellipse.  Parameters 
+ 
+widthfloat
+
+   
+   propertywidth
+ 
+Return the width of the ellipse. 
+ 
+  Examples using matplotlib.patches.Ellipse
+ 
+   Clipping images with patches   
+
+   Axes box aspect   
+
+   Plot a confidence ellipse of a two-dimensional dataset   
+
+   Scale invariant angle label   
+
+   Annotating Plots   
+
+   AnnotationBbox demo   
+
+   Reference for Matplotlib artists   
+
+   Dolphins   
+
+   Ellipse Demo   
+
+   Hatch demo   
+
+   Circles, Wedges and Polygons   
+
+   ggplot style sheet   
+
+   Grayscale style sheet   
+
+   Style sheets reference   
+
+   Anatomy of a figure   
+
+   Looking Glass   
+
+   Anchored Artists   
+
+   Custom projection   
+
+   Packed-bubble chart   
+
+   Draw flat objects in 3D plot   
+
+   Radar chart (aka spider or star chart)   
+
+   Ellipse With Units   
+
+   Anchored Box04   
+
+   Annotate Explain   
+
+   Simple Annotate01   
+
+   Legend guide   
+
+   Transformations Tutorial   
+
+   Annotations

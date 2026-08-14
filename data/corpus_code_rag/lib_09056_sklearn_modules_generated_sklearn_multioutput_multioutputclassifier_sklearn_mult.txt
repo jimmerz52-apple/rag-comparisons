@@ -1,0 +1,20 @@
+# sklearn.modules.generated.sklearn.multioutput.multioutputclassifier#sklearn.multioutput.MultiOutputClassifier.partial_fit
+
+partial_fit(X, y, classes=None, sample_weight=None) [source]
+ 
+Incrementally fit the model to data. Fit a separate model for each output variable.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Data.  
+y{array-like, sparse matrix} of shape (n_samples, n_outputs) 
+
+Multi-output targets.  
+classeslist of ndarray of shape (n_outputs,) 
+
+Each array is unique classes for one output in str/int Can be obtained by via [np.unique(y[:, i]) for i in range(y.shape[1])], where y is the target matrix of the entire dataset. This argument is required for the first call to partial_fit and can be omitted in the subsequent calls. Note that y doesn’t need to contain all labels in classes.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Only supported if the underlying regressor supports sample weights.    Returns 
+ 
+selfobject

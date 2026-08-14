@@ -1,0 +1,10 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_num_build_jobs
+
+numpy.distutils.misc_util.get_num_build_jobs()[source]
+ 
+Get number of parallel build jobs set by the –parallel command line argument of setup.py If the command did not receive a setting the environment variable NPY_NUM_BUILD_JOBS is checked. If that is unset, return the number of processors on the system, with a maximum of 8 (to prevent overloading the system if there a lot of CPUs).  Returns 
+ 
+outint
+
+
+number of parallel jobs that can be run

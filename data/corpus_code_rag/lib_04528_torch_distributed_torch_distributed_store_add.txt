@@ -1,0 +1,16 @@
+# torch.distributed#torch.distributed.Store.add
+
+torch.distributed.Store.add(self: torch._C._distributed_c10d.Store, arg0: str, arg1: int) → int  
+The first call to add for a given key creates a counter associated with key in the store, initialized to amount. Subsequent calls to add with the same key increment the counter by the specified amount. Calling add() with a key that has already been set in the store by set() will result in an exception.  Parameters 
+ 
+key (str) – The key in the store whose counter will be incremented. 
+amount (int) – The quantity by which the counter will be incremented.     Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> # Using TCPStore as an example, other store types can also be used
+>>> store = dist.TCPStore("127.0.0.1", 0, 1, True, timedelta(seconds=30))
+>>> store.add("first_key", 1)
+>>> store.add("first_key", 6)
+>>> # Should return 7
+>>> store.get("first_key")

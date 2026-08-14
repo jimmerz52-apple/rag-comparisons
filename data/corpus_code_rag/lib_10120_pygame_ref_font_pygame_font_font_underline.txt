@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.underline
+
+underline 
+ Gets or sets whether the font should be rendered with an underline. underline -> bool  Whether the font should be rendered in underline. When set to True, all rendered fonts will include an underline. The underline is always one pixel thick, regardless of font size. This can be mixed with the bold and italic modes.  New in pygame 2.0.0.

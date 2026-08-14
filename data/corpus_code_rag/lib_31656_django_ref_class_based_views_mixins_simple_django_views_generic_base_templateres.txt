@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.TemplateResponseMixin.template_engine
+
+template_engine  
+The NAME of a template engine to use for loading the template. template_engine is passed as the using keyword argument to response_class. Default is None, which tells Django to search for the template in all configured engines.

@@ -1,0 +1,3 @@
+# tensorflow.keras.models
+
+Module: tf.keras.models Code for model cloning, plus model-related API entries. Classes class Model: Model groups layers into an object with training and inference features. class Sequential: Sequential groups a linear stack of layers into a tf.keras.Model. Functions clone_model(...): Clone any Model instance. load_model(...): Loads a model saved via model.save(). model_from_config(...): Instantiates a Keras model from its config. model_from_json(...): Parses a JSON model configuration string and returns a model instance. model_from_yaml(...): Parses a yaml model configuration file and returns a model instance. save_model(...): Saves a model as a TensorFlow SavedModel or HDF5 file.

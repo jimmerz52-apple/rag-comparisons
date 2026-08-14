@@ -1,0 +1,5 @@
+# torch.amp#torch.cuda.amp.GradScaler.get_scale
+
+get_scale() [source]
+ 
+Returns a Python float containing the current scale, or 1.0 if scaling is disabled.  Warning get_scale() incurs a CPU-GPU sync.

@@ -1,0 +1,6 @@
+# torch.data#torch.utils.data.SequentialSampler
+
+class torch.utils.data.SequentialSampler(data_source) [source]
+ 
+Samples elements sequentially, always in the same order.  Parameters 
+data_source (Dataset) – dataset to sample from

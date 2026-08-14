@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.registerDOMImplementation
+
+xml.dom.registerDOMImplementation(name, factory)  
+Register the factory function with the name name. The factory function should return an object which implements the DOMImplementation interface. The factory function can return the same object every time, or a new one for each call, as appropriate for the specific implementation (e.g. if that implementation supports some customization).

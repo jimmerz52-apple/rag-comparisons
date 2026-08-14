@@ -1,0 +1,8 @@
+# django.topics.auth.default#django.contrib.auth.mixins.LoginRequiredMixin
+
+class LoginRequiredMixin  
+If a view is using this mixin, all requests by non-authenticated users will be redirected to the login page or shown an HTTP 403 Forbidden error, depending on the raise_exception parameter. You can set any of the parameters of AccessMixin to customize the handling of unauthorized users: from django.contrib.auth.mixins import LoginRequiredMixin
+
+class MyView(LoginRequiredMixin, View):
+    login_url = '/login/'
+    redirect_field_name = 'redirect_to'

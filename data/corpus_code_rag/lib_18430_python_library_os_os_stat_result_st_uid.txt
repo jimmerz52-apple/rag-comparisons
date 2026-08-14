@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_uid
+
+st_uid  
+User identifier of the file owner.

@@ -1,0 +1,10 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.set_math_fontfamily
+
+set_math_fontfamily(fontfamily)[source]
+ 
+Set the font family for text in math mode. If not set explicitly, rcParams["mathtext.fontset"] (default: 'dejavusans') will be used.  Parameters 
+ 
+fontfamilystr
+
+
+The name of the font family. Available font families are defined in the matplotlibrc.template file here      See also  text.Text.get_math_fontfamily

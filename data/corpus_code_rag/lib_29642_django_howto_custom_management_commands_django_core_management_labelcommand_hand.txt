@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.LabelCommand.handle_label
+
+LabelCommand.handle_label(label, **options)  
+Perform the command’s actions for label, which will be the string as given on the command line.

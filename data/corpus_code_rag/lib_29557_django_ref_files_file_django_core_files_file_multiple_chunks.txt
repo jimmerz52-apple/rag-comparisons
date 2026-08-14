@@ -1,0 +1,5 @@
+# django.ref.files.file#django.core.files.File.multiple_chunks
+
+multiple_chunks(chunk_size=None) [source]
+ 
+Returns True if the file is large enough to require multiple chunks to access all of its content give some chunk_size.

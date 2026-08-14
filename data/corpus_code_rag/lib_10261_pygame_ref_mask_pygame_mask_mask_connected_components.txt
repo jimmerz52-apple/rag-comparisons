@@ -1,0 +1,11 @@
+# pygame.ref.mask#pygame.mask.Mask.connected_components
+
+connected_components() 
+ Returns a list of masks of connected components connected_components() -> [Mask, ...] connected_components(min=0) -> [Mask, ...]  Provides a list containing a Mask object for each connected component.     
+Parameters:
+
+min (int) -- (optional) indicates the minimum number of bits (to filter out noise) per connected component (default is 0, which equates to no minimum and is equivalent to setting it to 1, as a connected component must have at least 1 bit set)  
+Returns:
+a list containing a Mask object for each connected component, an empty list is returned if the mask has no bits set  
+Return type:
+list[Mask]     Note See connected_component() for details on how a connected component is calculated.

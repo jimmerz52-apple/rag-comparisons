@@ -1,0 +1,30 @@
+# python.library.stdtypes#memoryview.__eq__
+
+__eq__(exporter)  
+A memoryview and a PEP 3118 exporter are equal if their shapes are equivalent and if all corresponding values are equal when the operands’ respective format codes are interpreted using struct syntax. For the subset of struct format strings currently supported by tolist(), v and w are equal if v.tolist() == w.tolist(): >>> import array
+>>> a = array.array('I', [1, 2, 3, 4, 5])
+>>> b = array.array('d', [1.0, 2.0, 3.0, 4.0, 5.0])
+>>> c = array.array('b', [5, 3, 1])
+>>> x = memoryview(a)
+>>> y = memoryview(b)
+>>> x == a == y == b
+True
+>>> x.tolist() == a.tolist() == y.tolist() == b.tolist()
+True
+>>> z = y[::-2]
+>>> z == c
+True
+>>> z.tolist() == c.tolist()
+True
+ If either format string is not supported by the struct module, then the objects will always compare as unequal (even if the format strings and buffer contents are identical): >>> from ctypes import BigEndianStructure, c_long
+>>> class BEPoint(BigEndianStructure):
+...     _fields_ = [("x", c_long), ("y", c_long)]
+...
+>>> point = BEPoint(100, 200)
+>>> a = memoryview(point)
+>>> b = memoryview(point)
+>>> a == point
+False
+>>> a == b
+False
+ Note that, as with floating point numbers, v is w does not imply v == w for memoryview objects.  Changed in version 3.3: Previous versions compared the raw memory disregarding the item format and the logical array structure.

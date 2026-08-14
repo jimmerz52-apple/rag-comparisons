@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IWGRP
+
+stat.S_IWGRP  
+Group has write permission.

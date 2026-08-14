@@ -1,0 +1,20 @@
+# tensorflow.raw_ops.writerawprotosummary
+
+tf.raw_ops.WriteRawProtoSummary Writes a serialized proto summary.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.WriteRawProtoSummary  
+tf.raw_ops.WriteRawProtoSummary(
+    writer, step, tensor, name=None
+)
+ Writes tensor, a serialized proto at step using summary writer.
+ 
+
+
+ Args
+  writer   A Tensor of type resource.  
+  step   A Tensor of type int64.  
+  tensor   A Tensor of type string.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   The created Operation.

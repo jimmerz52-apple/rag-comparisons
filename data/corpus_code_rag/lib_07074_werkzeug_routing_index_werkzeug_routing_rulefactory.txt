@@ -1,0 +1,8 @@
+# werkzeug.routing.index#werkzeug.routing.RuleFactory
+
+class werkzeug.routing.RuleFactory  
+As soon as you have more complex URL setups it’s a good idea to use rule factories to avoid repetitive tasks. Some of them are builtin, others can be added by subclassing RuleFactory and overriding get_rules.  
+get_rules(map)  
+Subclasses of RuleFactory have to override this method and return an iterable of rules.  Parameters 
+map (werkzeug.routing.Map) –   Return type 
+Iterable[werkzeug.routing.Rule]

@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.handle_no_permission
+
+handle_no_permission()  
+Depending on the value of raise_exception, the method either raises a PermissionDenied exception or redirects the user to the login_url, optionally including the redirect_field_name if it is set.

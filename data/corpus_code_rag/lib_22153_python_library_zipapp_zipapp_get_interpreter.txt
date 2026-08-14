@@ -1,0 +1,4 @@
+# python.library.zipapp#zipapp.get_interpreter
+
+zipapp.get_interpreter(archive)  
+Return the interpreter specified in the #! line at the start of the archive. If there is no #! line, return None. The archive argument can be a filename or a file-like object open for reading in bytes mode. It is assumed to be at the start of the archive.

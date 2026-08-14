@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EllipseCollection.get_transformed_clip_path_and_affine
+
+get_transformed_clip_path_and_affine()[source]
+ 
+Return the clip path with the non-affine part of its transformation applied, and the remaining affine part of its transformation.

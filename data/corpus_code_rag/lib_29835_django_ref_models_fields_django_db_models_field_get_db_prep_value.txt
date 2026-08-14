@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.get_db_prep_value
+
+get_db_prep_value(value, connection, prepared=False)  
+Converts value to a backend-specific value. By default it returns value if prepared=True and get_prep_value() if is False. See Converting query values to database values for usage.

@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.text3d#mpl_toolkits.mplot3d.art3d.Text3D.set_3d_properties
+
+set_3d_properties(z=0, zdir='z')[source]

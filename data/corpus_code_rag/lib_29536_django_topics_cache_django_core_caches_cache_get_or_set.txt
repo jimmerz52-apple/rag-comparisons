@@ -1,0 +1,3 @@
+# django.topics.cache#django.core.caches.cache.get_or_set
+
+cache.get_or_set(key, default, timeout=DEFAULT_TIMEOUT, version=None)

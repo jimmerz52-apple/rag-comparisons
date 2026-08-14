@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.register_axis
+
+register_axis(axis)[source]
+ 
+Register an axis. An axis should be registered with its corresponding spine from the Axes instance. This allows the spine to clear any axis properties when needed.

@@ -1,0 +1,3 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolHandles.set_animated
+
+set_animated(val)[source]

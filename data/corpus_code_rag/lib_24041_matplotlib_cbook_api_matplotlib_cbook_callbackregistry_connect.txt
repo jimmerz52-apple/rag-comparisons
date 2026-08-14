@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.CallbackRegistry.connect
+
+connect(signal, func)[source]
+ 
+Register func to be called when signal signal is generated.

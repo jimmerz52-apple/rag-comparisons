@@ -1,0 +1,7 @@
+# 753
+Task: 753
+
+# Write a function to find minimum k records from tuple list.
+def min_k(test_list, K):
+  res = sorted(test_list, key = lambda x: x[1])[:K]
+  return (res)

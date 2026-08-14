@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.display_filtered_image
+
+display_filtered_image(image) [source]
+ 
+Display the filtered image on image viewer. If you don’t want to simply replace the displayed image with the filtered image (e.g., you want to display a transparent overlay), you can override this method.

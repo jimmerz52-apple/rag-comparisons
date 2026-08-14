@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_HIGHRES
+
+time.CLOCK_HIGHRES  
+The Solaris OS has a CLOCK_HIGHRES timer that attempts to use an optimal hardware source, and may give close to nanosecond resolution. CLOCK_HIGHRES is the nonadjustable, high-resolution clock. Availability: Solaris.  New in version 3.3.

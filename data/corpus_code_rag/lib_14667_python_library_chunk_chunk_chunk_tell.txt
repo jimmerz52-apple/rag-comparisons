@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.tell
+
+tell()  
+Return the current position into the chunk.

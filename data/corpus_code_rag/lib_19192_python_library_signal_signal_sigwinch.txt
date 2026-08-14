@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGWINCH
+
+signal.SIGWINCH  
+Window resize signal. Availability: Unix.

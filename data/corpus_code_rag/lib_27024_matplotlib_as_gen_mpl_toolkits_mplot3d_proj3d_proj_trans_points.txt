@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.proj3d.proj_trans_points
+
+mpl_toolkits.mplot3d.proj3d.proj_trans_points   mpl_toolkits.mplot3d.proj3d.proj_trans_points(points, M)[source]

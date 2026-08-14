@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.text
+
+msilib.text  
+This module contains definitions for the UIText and ActionText tables, for the standard installer actions.

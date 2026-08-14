@@ -1,0 +1,9 @@
+# python.library.pickle#pickle.PickleBuffer
+
+class pickle.PickleBuffer(buffer)  
+A wrapper for a buffer representing picklable data. buffer must be a buffer-providing object, such as a bytes-like object or a N-dimensional array. PickleBuffer is itself a buffer provider, therefore it is possible to pass it to other APIs expecting a buffer-providing object, such as memoryview. PickleBuffer objects can only be serialized using pickle protocol 5 or higher. They are eligible for out-of-band serialization.  New in version 3.8.   
+raw()  
+Return a memoryview of the memory area underlying this buffer. The returned object is a one-dimensional, C-contiguous memoryview with format B (unsigned bytes). BufferError is raised if the buffer is neither C- nor Fortran-contiguous. 
+  
+release()  
+Release the underlying buffer exposed by the PickleBuffer object.

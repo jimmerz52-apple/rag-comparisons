@@ -1,0 +1,8 @@
+# torch.multiprocessing#torch.multiprocessing.SpawnContext
+
+class torch.multiprocessing.SpawnContext [source]
+ 
+Returned by spawn() when called with join=False.  
+join(timeout=None)  
+Tries to join one or more processes in this spawn context. If one of them exited with a non-zero exit status, this function kills the remaining processes and raises an exception with the cause of the first process exiting. Returns True if all processes have been joined successfully, False if there are more processes that need to be joined.  Parameters 
+timeout (float) – Wait this long before giving up on waiting.

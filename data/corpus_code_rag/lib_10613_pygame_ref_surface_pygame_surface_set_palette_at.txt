@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.set_palette_at
+
+set_palette_at() 
+ set the color for a single index in an 8-bit Surface palette set_palette_at(index, RGB) -> None  Set the palette value for a single entry in a Surface palette. The index should be a value from 0 to 255. This function has no effect on a Surface with more than 8-bits per pixel.

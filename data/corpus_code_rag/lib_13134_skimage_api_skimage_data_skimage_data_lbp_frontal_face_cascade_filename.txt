@@ -1,0 +1,7 @@
+# skimage.api.skimage.data#skimage.data.lbp_frontal_face_cascade_filename
+
+skimage.data.lbp_frontal_face_cascade_filename() [source]
+ 
+Return the path to the XML file containing the weak classifier cascade. These classifiers were trained using LBP features. The file is part of the OpenCV repository [1]. References  
+1  
+OpenCV lbpcascade trained files https://github.com/opencv/opencv/tree/master/data/lbpcascades

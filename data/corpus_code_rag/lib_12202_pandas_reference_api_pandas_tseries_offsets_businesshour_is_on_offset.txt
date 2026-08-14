@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.is_on_offset
+
+pandas.tseries.offsets.BusinessHour.is_on_offset   BusinessHour.is_on_offset()

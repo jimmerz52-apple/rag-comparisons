@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.__call__
+
+pandas.tseries.offsets.Tick.__call__   Tick.__call__(*args, **kwargs)
+ 
+Call self as a function.

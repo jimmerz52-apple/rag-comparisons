@@ -1,0 +1,4 @@
+# python.library.shutil#shutil.rmtree.avoids_symlink_attacks
+
+rmtree.avoids_symlink_attacks  
+Indicates whether the current platform and implementation provides a symlink attack resistant version of rmtree(). Currently this is only true for platforms supporting fd-based directory access functions.  New in version 3.3.

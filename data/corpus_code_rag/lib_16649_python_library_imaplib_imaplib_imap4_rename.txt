@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.rename
+
+IMAP4.rename(oldmailbox, newmailbox)  
+Rename mailbox named oldmailbox to newmailbox.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.routing_exception
+
+routing_exception: Optional[Exception] = None  
+If matching the URL failed, this is the exception that will be raised / was raised as part of the request handling. This is usually a NotFound exception or something similar.

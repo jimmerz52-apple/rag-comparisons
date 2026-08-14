@@ -1,0 +1,4 @@
+# python.library.xml.sax.handler#xml.sax.handler.ErrorHandler.error
+
+ErrorHandler.error(exception)  
+Called when the parser encounters a recoverable error. If this method does not raise an exception, parsing may continue, but further document information should not be expected by the application. Allowing the parser to continue may allow additional errors to be discovered in the input document.

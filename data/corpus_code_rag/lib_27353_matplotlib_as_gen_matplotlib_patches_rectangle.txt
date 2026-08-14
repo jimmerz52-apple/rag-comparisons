@@ -1,0 +1,206 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle
+
+matplotlib.patches.Rectangle   classmatplotlib.patches.Rectangle(xy, width, height, angle=0.0, **kwargs)[source]
+ 
+Bases: matplotlib.patches.Patch A rectangle defined via an anchor point xy and its width and height. The rectangle extends from xy[0] to xy[0] + width in x-direction and from xy[1] to xy[1] + height in y-direction. :                +------------------+
+:                |                  |
+:              height               |
+:                |                  |
+:               (xy)---- width -----+
+ One may picture xy as the bottom left corner, but which corner xy is actually depends on the direction of the axis and the sign of width and height; e.g. xy would be the bottom right corner if the x-axis was inverted or if width was negative.  Parameters 
+ 
+xy(float, float)
+
+
+The anchor point.  
+widthfloat
+
+
+Rectangle width.  
+heightfloat
+
+
+Rectangle height.  
+anglefloat, default: 0
+
+
+Rotation in degrees anti-clockwise about xy.    Other Parameters 
+ 
+**kwargsPatch properties
+
+
+  
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float         get_angle()[source]
+ 
+Get the rotation angle in degrees. 
+   get_bbox()[source]
+ 
+Return the Bbox. 
+   get_height()[source]
+ 
+Return the height of the rectangle. 
+   get_patch_transform()[source]
+ 
+Return the Transform instance mapping patch coordinates to data coordinates. For example, one may define a patch of a circle which represents a radius of 5 by providing coordinates for a unit circle, and a transform which scales the coordinates (the patch coordinate) by 5. 
+   get_path()[source]
+ 
+Return the vertices of the rectangle. 
+   get_width()[source]
+ 
+Return the width of the rectangle. 
+   get_x()[source]
+ 
+Return the left coordinate of the rectangle. 
+   get_xy()[source]
+ 
+Return the left and bottom coords of the rectangle as a tuple. 
+   get_y()[source]
+ 
+Return the bottom coordinate of the rectangle. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, angle=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, bounds=<UNSET>, capstyle=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, height=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, x=<UNSET>, xy=<UNSET>, y=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+angle unknown  
+animated bool  
+antialiased or aa bool or None  
+bounds (left, bottom, width, height)  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+height unknown  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width unknown  
+x unknown  
+xy (float, float)  
+y unknown  
+zorder float   
+   set_angle(angle)[source]
+ 
+Set the rotation angle in degrees. The rotation is performed anti-clockwise around xy. 
+   set_bounds(*args)[source]
+ 
+Set the bounds of the rectangle as left, bottom, width, height. The values may be passed as separate parameters or as a tuple: set_bounds(left, bottom, width, height)
+set_bounds((left, bottom, width, height))
+ 
+   set_height(h)[source]
+ 
+Set the height of the rectangle. 
+   set_width(w)[source]
+ 
+Set the width of the rectangle. 
+   set_x(x)[source]
+ 
+Set the left coordinate of the rectangle. 
+   set_xy(xy)[source]
+ 
+Set the left and bottom coordinates of the rectangle.  Parameters 
+ 
+xy(float, float)
+
+   
+   set_y(y)[source]
+ 
+Set the bottom coordinate of the rectangle. 
+   propertyxy
+ 
+Return the left and bottom coords of the rectangle as a tuple. 
+ 
+  Examples using matplotlib.patches.Rectangle
+ 
+   Creating boxes from error bars using PatchCollection   
+
+   Histograms   
+
+   Text Rotation Mode   
+
+   Precise text layout   
+
+   Fig Axes Customize Simple   
+
+   Text Layout   
+
+   List of named colors   
+
+   Reference for Matplotlib artists   
+
+   Hatch style reference   
+
+   Inset Locator Demo   
+
+   Anatomy of a figure   
+
+   Pick Event Demo   
+
+   Viewlims   
+
+   Changing colors of lines intersecting a box   
+
+   Matplotlib logo   
+
+   Hinton diagrams   
+
+   Artist tests   
+
+   Menu   
+
+   Artist tutorial   
+
+   Legend guide   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Text properties and layout

@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.commenters
+
+shlex.commenters  
+The string of characters that are recognized as comment beginners. All characters from the comment beginner to end of line are ignored. Includes just '#' by default.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.clip_
+
+clip_(min, max) → Tensor  
+Alias for clamp_().

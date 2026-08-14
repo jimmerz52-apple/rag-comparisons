@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.get_rng_state
+
+torch.cuda.get_rng_state(device='cuda') [source]
+ 
+Returns the random number generator state of the specified GPU as a ByteTensor.  Parameters 
+device (torch.device or int, optional) – The device to return the RNG state of. Default: 'cuda' (i.e., torch.device('cuda'), the current CUDA device).    Warning This function eagerly initializes CUDA.

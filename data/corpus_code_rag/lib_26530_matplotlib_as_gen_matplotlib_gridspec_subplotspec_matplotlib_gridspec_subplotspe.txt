@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.subplotspec#matplotlib.gridspec.SubplotSpec.get_position
+
+get_position(figure, return_all=<deprecated parameter>)[source]
+ 
+Update the subplot position from figure.subplotpars.

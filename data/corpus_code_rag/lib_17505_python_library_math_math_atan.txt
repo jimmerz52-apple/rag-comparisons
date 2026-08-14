@@ -1,0 +1,4 @@
+# python.library.math#math.atan
+
+math.atan(x)  
+Return the arc tangent of x, in radians. The result is between -pi/2 and pi/2.

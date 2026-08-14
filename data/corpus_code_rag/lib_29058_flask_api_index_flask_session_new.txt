@@ -1,0 +1,4 @@
+# flask.api.index#flask.session.new
+
+new  
+True if the session is new, False otherwise.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin.get_initial
+
+get_initial()  
+Retrieve initial data for the form. By default, returns a copy of initial.

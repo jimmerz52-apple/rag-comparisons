@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.cluster.kmeans#sklearn.cluster.KMeans.predict
+
+predict(X, sample_weight=None) [source]
+ 
+Predict the closest cluster each sample in X belongs to. In the vector quantization literature, cluster_centers_ is called the code book and each value returned by predict is the index of the closest code in the code book.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+New data to predict.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+The weights for each observation in X. If None, all observations are assigned equal weight.    Returns 
+ 
+labelsndarray of shape (n_samples,) 
+
+Index of the cluster each sample belongs to.

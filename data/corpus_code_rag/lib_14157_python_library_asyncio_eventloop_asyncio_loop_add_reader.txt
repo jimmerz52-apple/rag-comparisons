@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.add_reader
+
+loop.add_reader(fd, callback, *args)  
+Start monitoring the fd file descriptor for read availability and invoke callback with the specified arguments once fd is available for reading.

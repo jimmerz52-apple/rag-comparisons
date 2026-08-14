@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.quit
+
+pygame.cdrom.quit() 
+ uninitialize the cdrom module quit() -> None  Uninitialize the cdrom module. After you call this any existing CD objects will no longer work. It is safe to call this function more than once.

@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.week
+
+pandas.Timestamp.week   Timestamp.week
+ 
+Return the week number of the year. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.week
+11

@@ -1,0 +1,4 @@
+# python.library.ast#ast.AST._fields
+
+_fields  
+Each concrete class has an attribute _fields which gives the names of all child nodes. Each instance of a concrete class has one attribute for each child node, of the type as defined in the grammar. For example, ast.BinOp instances have an attribute left of type ast.expr. If these attributes are marked as optional in the grammar (using a question mark), the value might be None. If the attributes can have zero-or-more values (marked with an asterisk), the values are represented as Python lists. All possible attributes must be present and have valid values when compiling an AST with compile().

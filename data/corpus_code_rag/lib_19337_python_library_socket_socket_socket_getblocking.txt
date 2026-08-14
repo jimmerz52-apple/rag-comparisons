@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.getblocking
+
+socket.getblocking()  
+Return True if socket is in blocking mode, False if in non-blocking. This is equivalent to checking socket.gettimeout() == 0.  New in version 3.7.

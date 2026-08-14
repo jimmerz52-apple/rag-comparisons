@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Stream.synchronize
+
+synchronize() [source]
+ 
+Wait for all the kernels in this stream to complete.  Note This is a wrapper around cudaStreamSynchronize(): see CUDA Stream documentation for more info.

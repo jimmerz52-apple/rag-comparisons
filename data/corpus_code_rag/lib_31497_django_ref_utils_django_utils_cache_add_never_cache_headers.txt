@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.cache.add_never_cache_headers
+
+add_never_cache_headers(response)  
+Adds a Cache-Control: max-age=0, no-cache, no-store, must-revalidate,
+private header to a response to indicate that a page should never be cached.

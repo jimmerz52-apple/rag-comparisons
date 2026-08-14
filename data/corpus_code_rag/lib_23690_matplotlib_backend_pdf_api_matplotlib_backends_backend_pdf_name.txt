@@ -1,0 +1,9 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Name
+
+classmatplotlib.backends.backend_pdf.Name(name)[source]
+ 
+Bases: object PDF name object.   statichexify(match)[source]
+
+   name
+
+   pdfRepr()[source]

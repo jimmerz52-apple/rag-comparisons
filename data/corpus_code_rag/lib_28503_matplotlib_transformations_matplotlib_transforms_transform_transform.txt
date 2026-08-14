@@ -1,0 +1,13 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.transform
+
+transform(values)[source]
+ 
+Apply this transformation on the given array of values.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.

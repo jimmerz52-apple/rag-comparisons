@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.JSONBAgg.distinct
+
+distinct  
+ New in Django 3.2.  An optional boolean argument that determines if array values will be distinct. Defaults to False.

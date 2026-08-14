@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.site_header
+
+AdminSite.site_header  
+The text to put at the top of each admin page, as an <h1> (a string). By default, this is “Django administration”.

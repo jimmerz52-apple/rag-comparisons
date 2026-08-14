@@ -1,0 +1,4 @@
+# python.library.platform#platform.release
+
+platform.release()  
+Returns the system’s release, e.g. '2.2.0' or 'NT' An empty string is returned if the value cannot be determined.

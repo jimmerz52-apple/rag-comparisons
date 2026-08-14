@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.Queue.get
+
+coroutine get()  
+Remove and return an item from the queue. If queue is empty, wait until an item is available.

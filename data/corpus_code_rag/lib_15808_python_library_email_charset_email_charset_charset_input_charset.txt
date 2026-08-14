@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.input_charset
+
+input_charset  
+The initial character set specified. Common aliases are converted to their official email names (e.g. latin_1 is converted to iso-8859-1). Defaults to 7-bit us-ascii.

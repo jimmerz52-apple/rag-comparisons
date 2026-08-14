@@ -41,6 +41,23 @@ def build_multihop_rag_subset(
     n_distractors: int = 8,
 ) -> dict:
     """Closed-world MultiHop-RAG mini corpus: gold evidence docs + distractors."""
+    corpus_dir = project_root / "data" / "corpus_multihop"
+    qa_path = project_root / "data" / "qa" / "multihop_eval.json"
+    meta_path = project_root / "data" / "qa" / "multihop_meta.json"
+    target = n_per_type * len(QUESTION_TYPES)
+    if qa_path.exists() and meta_path.exists() and corpus_dir.exists():
+        existing = json.loads(meta_path.read_text(encoding="utf-8"))
+        n_exist = int(existing.get("n_questions") or 0)
+        n_docs = len(list(corpus_dir.glob("*.txt")))
+        if n_exist >= target and n_docs > 10:
+            print(
+                f"MultiHop already on disk: {n_exist} Q / {n_docs} docs — skip rebuild",
+                flush=True,
+            )
+            existing["corpus_dir"] = str(corpus_dir)
+            existing["qa_path"] = str(qa_path)
+            return {"corpus_dir": corpus_dir, "qa_path": qa_path, "meta": existing}
+
     from datasets import load_dataset
 
     questions = load_dataset("yixuantt/MultiHopRAG", "MultiHopRAG", split="train")
@@ -73,8 +90,6 @@ def build_multihop_rag_subset(
     distractors = [row for row in corpus if row["title"] not in gold_titles][:n_distractors]
     docs = [by_title[t] for t in sorted(gold_titles)] + distractors
 
-    corpus_dir = project_root / "data" / "corpus_multihop"
-    qa_path = project_root / "data" / "qa" / "multihop_eval.json"
     catalog_path = project_root / "results" / "multihop_question_catalog.csv"
     corpus_dir.mkdir(parents=True, exist_ok=True)
     qa_path.parent.mkdir(parents=True, exist_ok=True)

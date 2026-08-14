@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.fill
+
+fill(text)  
+Wraps the single paragraph in text, and returns a single string containing the wrapped paragraph.

@@ -1,0 +1,5 @@
+# matplotlib.tri_api#matplotlib.tri.Triangulation.get_cpp_triangulation
+
+get_cpp_triangulation()[source]
+ 
+Return the underlying C++ Triangulation object, creating it if necessary.

@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseRequestHandler.setup
+
+setup()  
+Called before the handle() method to perform any initialization actions required. The default implementation does nothing.

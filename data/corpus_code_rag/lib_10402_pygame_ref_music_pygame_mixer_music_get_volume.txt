@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.get_volume
+
+pygame.mixer.music.get_volume() 
+ get the music volume get_volume() -> value  Returns the current volume for the mixer. The value will be between 0.0 and 1.0.

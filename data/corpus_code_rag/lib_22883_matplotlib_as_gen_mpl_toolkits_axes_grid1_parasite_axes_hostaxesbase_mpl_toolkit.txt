@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.hostaxesbase#mpl_toolkits.axes_grid1.parasite_axes.HostAxesBase.get_tightbbox
+
+get_tightbbox(renderer, call_axes_locator=True, bbox_extra_artists=None)[source]

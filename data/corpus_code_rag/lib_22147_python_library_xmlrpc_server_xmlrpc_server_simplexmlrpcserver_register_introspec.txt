@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.SimpleXMLRPCServer.register_introspection_functions
+
+SimpleXMLRPCServer.register_introspection_functions()  
+Registers the XML-RPC introspection functions system.listMethods, system.methodHelp and system.methodSignature.

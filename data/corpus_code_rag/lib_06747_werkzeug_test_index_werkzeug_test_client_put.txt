@@ -1,0 +1,8 @@
+# werkzeug.test.index#werkzeug.test.Client.put
+
+put(*args, **kw)  
+Call open() with method set to PUT.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse

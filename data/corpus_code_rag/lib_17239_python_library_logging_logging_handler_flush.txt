@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.flush
+
+flush()  
+Ensure all logging output has been flushed. This version does nothing and is intended to be implemented by subclasses.

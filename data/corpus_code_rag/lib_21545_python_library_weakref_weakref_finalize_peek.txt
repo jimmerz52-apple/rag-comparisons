@@ -1,0 +1,5 @@
+# python.library.weakref#weakref.finalize.peek
+
+peek()  
+If self is alive then return the tuple (obj, func, args,
+kwargs). If self is dead then return None.

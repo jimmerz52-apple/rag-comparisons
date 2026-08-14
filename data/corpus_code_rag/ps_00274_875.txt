@@ -1,0 +1,8 @@
+# 875
+Task: 875
+
+# Write a function to find the minimum difference in the tuple pairs of given tuples.
+def min_difference(test_list):
+  temp = [abs(b - a) for a, b in test_list]
+  res = min(temp)
+  return (res)

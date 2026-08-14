@@ -1,0 +1,8 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_rmin
+
+get_rmin()[source]
+ 
+ Returns 
+ float
+
+The inner radial limit.

@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.write_byte
+
+write_byte(byte)  
+Write the integer byte into memory at the current position of the file pointer; the file position is advanced by 1. If the mmap was created with ACCESS_READ, then writing to it will raise a TypeError exception.

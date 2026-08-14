@@ -1,0 +1,16 @@
+# numpy.reference.random.generated.numpy.random.generator.bytes
+
+numpy.random.Generator.bytes method   random.Generator.bytes(length)
+ 
+Return random bytes.  Parameters 
+ 
+lengthint
+
+
+Number of random bytes.    Returns 
+ 
+outbytes
+
+
+String of length length.     Examples >>> np.random.default_rng().bytes(10)
+b'\xfeC\x9b\x86\x17\xf2\xa1\xafcp' # random

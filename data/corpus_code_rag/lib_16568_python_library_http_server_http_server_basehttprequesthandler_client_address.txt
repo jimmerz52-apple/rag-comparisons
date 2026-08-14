@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.client_address
+
+client_address  
+Contains a tuple of the form (host, port) referring to the client’s address.

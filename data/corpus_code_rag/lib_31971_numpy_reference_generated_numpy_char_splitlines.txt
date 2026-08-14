@@ -1,0 +1,18 @@
+# numpy.reference.generated.numpy.char.splitlines
+
+numpy.char.splitlines   char.splitlines(a, keepends=None)[source]
+ 
+For each element in a, return a list of the lines in the element, breaking at line boundaries. Calls str.splitlines element-wise.  Parameters 
+ 
+aarray_like of str or unicode
+
+
+keependsbool, optional
+
+
+Line breaks are not included in the resulting list unless keepends is given and true.    Returns 
+ 
+outndarray
+
+
+Array of list objects      See also  str.splitlines

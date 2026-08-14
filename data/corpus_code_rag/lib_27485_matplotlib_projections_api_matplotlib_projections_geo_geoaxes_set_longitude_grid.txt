@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.set_longitude_grid_ends
+
+set_longitude_grid_ends(degrees)[source]
+ 
+Set the latitude(s) at which to stop drawing the longitude grids.

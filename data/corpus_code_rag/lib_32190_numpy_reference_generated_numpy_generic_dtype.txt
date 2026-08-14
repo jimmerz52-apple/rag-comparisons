@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.dtype
+
+numpy.generic.dtype attribute   generic.dtype
+ 
+Get array data-descriptor.

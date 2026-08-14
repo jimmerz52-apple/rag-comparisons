@@ -1,0 +1,4 @@
+# python.library.turtle#turtle.update
+
+turtle.update()  
+Perform a TurtleScreen update. To be used when tracer is turned off.

@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AlterModelManagers
+
+class AlterModelManagers(name, managers)

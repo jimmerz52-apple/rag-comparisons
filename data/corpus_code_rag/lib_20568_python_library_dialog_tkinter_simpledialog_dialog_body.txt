@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.simpledialog.Dialog.body
+
+body(master)  
+Override to construct the dialog’s interface and return the widget that should have initial focus.

@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.last_login
+
+last_login  
+A datetime of the user’s last login.

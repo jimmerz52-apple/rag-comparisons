@@ -1,0 +1,3 @@
+# tensorflow.train.experimental
+
+Module: tf.train.experimental Public API for tf.train.experimental namespace. Classes class DynamicLossScale: Loss scale that dynamically adjusts itself. class FixedLossScale: Loss scale with a fixed value. class LossScale: Base class for all TF1 loss scales. class PythonState: A mixin for putting Python state in an object-based checkpoint. Functions disable_mixed_precision_graph_rewrite(...): Disables the mixed precision graph rewrite. (deprecated) enable_mixed_precision_graph_rewrite(...): Enable mixed precision via a graph rewrite. (deprecated)

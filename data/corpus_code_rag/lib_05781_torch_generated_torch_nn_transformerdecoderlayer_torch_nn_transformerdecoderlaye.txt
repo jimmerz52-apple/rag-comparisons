@@ -1,0 +1,14 @@
+# torch.generated.torch.nn.transformerdecoderlayer#torch.nn.TransformerDecoderLayer.forward
+
+forward(tgt, memory, tgt_mask=None, memory_mask=None, tgt_key_padding_mask=None, memory_key_padding_mask=None) [source]
+ 
+Pass the inputs (and mask) through the decoder layer.  Parameters 
+ 
+tgt – the sequence to the decoder layer (required). 
+memory – the sequence from the last layer of the encoder (required). 
+tgt_mask – the mask for the tgt sequence (optional). 
+memory_mask – the mask for the memory sequence (optional). 
+tgt_key_padding_mask – the mask for the tgt keys per batch (optional). 
+memory_key_padding_mask – the mask for the memory keys per batch (optional).     Shape:
+
+see the docs in Transformer class.

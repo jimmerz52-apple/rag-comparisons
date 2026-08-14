@@ -1,0 +1,6 @@
+# flask.api.index#flask.signals.Namespace
+
+class signals.Namespace  
+An alias for blinker.base.Namespace if blinker is available, otherwise a dummy class that creates fake signals. This class is available for Flask extensions that want to provide the same fallback system as Flask itself.  
+signal(name, doc=None)  
+Creates a new signal for this namespace if blinker is available, otherwise returns a fake signal that has a send method that will do nothing but will fail with a RuntimeError for all other operations, including connecting.

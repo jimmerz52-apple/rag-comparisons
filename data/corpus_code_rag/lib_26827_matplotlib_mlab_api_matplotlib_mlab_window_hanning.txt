@@ -1,0 +1,7 @@
+# matplotlib.mlab_api#matplotlib.mlab.window_hanning
+
+matplotlib.mlab.window_hanning(x)[source]
+ 
+Return x times the hanning window of len(x).  See also  window_none
+
+Another window algorithm.

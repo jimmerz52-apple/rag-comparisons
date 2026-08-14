@@ -1,0 +1,4 @@
+# pygame.ref.image#pygame.image.get_sdl_image_version
+
+pygame.image.get_sdl_image_version() 
+ get version number of the SDL_Image library being used get_sdl_image_version() -> None get_sdl_image_version() -> (major, minor, patch)  If pygame is built with extended image formats, then this function will return the SDL_Image library's version number as a tuple of 3 integers (major, minor, patch). If not, then it will return None.  New in pygame 2.0.0.dev11.

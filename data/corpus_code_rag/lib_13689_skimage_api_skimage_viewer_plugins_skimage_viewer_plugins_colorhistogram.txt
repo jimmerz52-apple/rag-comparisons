@@ -1,0 +1,32 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.ColorHistogram
+
+class skimage.viewer.plugins.ColorHistogram(max_pct=0.99, **kwargs) [source]
+ 
+Bases: skimage.viewer.plugins.plotplugin.PlotPlugin  
+__init__(max_pct=0.99, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+ab_selected(extents) [source]
+
+  
+attach(image_viewer) [source]
+ 
+Attach the plugin to an ImageViewer. Note that the ImageViewer will automatically call this method when the plugin is added to the ImageViewer. For example: viewer += Plugin(...)
+ Also note that attach automatically calls the filter function so that the image matches the filtered value specified by attached widgets. 
+  
+help() [source]
+
+  
+name = 'Color Histogram' 
+  
+output() [source]
+ 
+Return the image mask and the histogram data.  Returns 
+ 
+maskarray of bool, same shape as image 
+
+The selected pixels.  
+datadict 
+
+The data describing the histogram and the selected region. The dictionary contains:  ‘bins’ : array of float The bin boundaries for both a and b channels. ‘hist’ : 2D array of float The normalized histogram. ‘edges’ : tuple of array of float The bin edges along each dimension ‘extents’ : tuple of float The left and right and top and bottom of the selected region.

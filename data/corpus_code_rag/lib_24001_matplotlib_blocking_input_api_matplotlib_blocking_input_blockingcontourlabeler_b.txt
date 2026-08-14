@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingContourLabeler.button3
+
+button3(event)[source]
+ 
+Process an button-3 event (remove a label if not in inline mode). Unfortunately, if one is doing inline labels, then there is currently no way to fix the broken contour - once humpty-dumpty is broken, he can't be put back together. In inline mode, this does nothing.  Parameters 
+ 
+eventMouseEvent

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neighbors.kneighborstransformer#sklearn.neighbors.KNeighborsTransformer.fit
+
+fit(X, y=None) [source]
+ 
+Fit the k-nearest neighbors transformer from the training dataset.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) or (n_samples, n_samples) if metric=’precomputed’ 
+
+Training data.    Returns 
+ 
+selfKNeighborsTransformer 
+
+The fitted k-nearest neighbors transformer.

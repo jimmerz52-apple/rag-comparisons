@@ -1,0 +1,7 @@
+# torch.distributed#torch.distributed.get_rank
+
+torch.distributed.get_rank(group=None) [source]
+ 
+Returns the rank of current process group Rank is a unique identifier assigned to each process within a distributed process group. They are always consecutive integers ranging from 0 to world_size.  Parameters 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used.  Returns 
+The rank of the process group -1, if not part of the group

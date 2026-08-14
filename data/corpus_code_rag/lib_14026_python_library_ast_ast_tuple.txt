@@ -1,0 +1,20 @@
+# python.library.ast#ast.Tuple
+
+class ast.List(elts, ctx)  
+class ast.Tuple(elts, ctx)  
+A list or tuple. elts holds a list of nodes representing the elements. ctx is Store if the container is an assignment target (i.e. (x,y)=something), and Load otherwise. >>> print(ast.dump(ast.parse('[1, 2, 3]', mode='eval'), indent=4))
+Expression(
+    body=List(
+        elts=[
+            Constant(value=1),
+            Constant(value=2),
+            Constant(value=3)],
+        ctx=Load()))
+>>> print(ast.dump(ast.parse('(1, 2, 3)', mode='eval'), indent=4))
+Expression(
+    body=Tuple(
+        elts=[
+            Constant(value=1),
+            Constant(value=2),
+            Constant(value=3)],
+        ctx=Load()))

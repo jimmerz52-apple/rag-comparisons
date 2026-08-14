@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.extra
+
+InlineModelAdmin.extra  
+This controls the number of extra forms the formset will display in addition to the initial forms. Defaults to 3. See the formsets documentation for more information. For users with JavaScript-enabled browsers, an “Add another” link is provided to enable any number of additional inlines to be added in addition to those provided as a result of the extra argument. The dynamic link will not appear if the number of currently displayed forms exceeds max_num, or if the user does not have JavaScript enabled. InlineModelAdmin.get_extra() also allows you to customize the number of extra forms.

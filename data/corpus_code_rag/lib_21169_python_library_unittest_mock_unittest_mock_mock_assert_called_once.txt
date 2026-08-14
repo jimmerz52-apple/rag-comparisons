@@ -1,0 +1,14 @@
+# python.library.unittest.mock#unittest.mock.Mock.assert_called_once
+
+assert_called_once()  
+Assert that the mock was called exactly once. >>> mock = Mock()
+>>> mock.method()
+<Mock name='mock.method()' id='...'>
+>>> mock.method.assert_called_once()
+>>> mock.method()
+<Mock name='mock.method()' id='...'>
+>>> mock.method.assert_called_once()
+Traceback (most recent call last):
+...
+AssertionError: Expected 'method' to have been called once. Called 2 times.
+  New in version 3.6.

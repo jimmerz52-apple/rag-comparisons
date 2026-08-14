@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.sum
+
+tf.experimental.numpy.sum TensorFlow variant of NumPy's sum. 
+tf.experimental.numpy.sum(
+    a, axis=None, dtype=None, keepdims=None
+)
+ Unsupported arguments: out, initial, where. See the NumPy documentation for numpy.sum.

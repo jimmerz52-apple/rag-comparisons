@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.hatch
+
+statichatch(hatchpattern, density=6)[source]
+ 
+Given a hatch specifier, hatchpattern, generates a Path that can be used in a repeated hatching pattern. density is the number of lines per unit square.

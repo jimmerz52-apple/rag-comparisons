@@ -1,0 +1,32 @@
+# skimage.api.skimage.draw#skimage.draw.set_color
+
+skimage.draw.set_color(image, coords, color, alpha=1) [source]
+ 
+Set pixel color in the image at the given coordinates. Note that this function modifies the color of the image in-place. Coordinates that exceed the shape of the image will be ignored.  Parameters 
+ 
+image(M, N, D) ndarray 
+
+Image  
+coordstuple of ((P,) ndarray, (P,) ndarray) 
+
+Row and column coordinates of pixels to be colored.  
+color(D,) ndarray 
+
+Color to be assigned to coordinates in the image.  
+alphascalar or (N,) ndarray 
+
+Alpha values used to blend color with image. 0 is transparent, 1 is opaque.     Examples >>> from skimage.draw import line, set_color
+>>> img = np.zeros((10, 10), dtype=np.uint8)
+>>> rr, cc = line(1, 1, 20, 20)
+>>> set_color(img, (rr, cc), 1)
+>>> img
+array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]], dtype=uint8)

@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.name
+
+pygame.key.name() 
+ get the name of a key identifier name(key) -> string  Get the descriptive name of the button from a keyboard button id constant.

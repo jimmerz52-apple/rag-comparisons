@@ -1,0 +1,4 @@
+# python.library.test#test.support.ResourceDenied
+
+exception test.support.ResourceDenied  
+Subclass of unittest.SkipTest. Raised when a resource (such as a network connection) is not available. Raised by the requires() function.

@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.compoundkernel#sklearn.gaussian_process.kernels.CompoundKernel.bounds
+
+property bounds  
+Returns the log-transformed bounds on the theta.  Returns 
+ 
+boundsarray of shape (n_dims, 2) 
+
+The log-transformed bounds on the kernel’s hyperparameters theta

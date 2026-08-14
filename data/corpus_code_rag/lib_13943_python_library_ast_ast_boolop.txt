@@ -1,0 +1,10 @@
+# python.library.ast#ast.BoolOp
+
+class ast.BoolOp(op, values)  
+A boolean operation, ‘or’ or ‘and’. op is Or or And. values are the values involved. Consecutive operations with the same operator, such as a or b or c, are collapsed into one node with several values. This doesn’t include not, which is a UnaryOp. >>> print(ast.dump(ast.parse('x or y', mode='eval'), indent=4))
+Expression(
+    body=BoolOp(
+        op=Or(),
+        values=[
+            Name(id='x', ctx=Load()),
+            Name(id='y', ctx=Load())]))

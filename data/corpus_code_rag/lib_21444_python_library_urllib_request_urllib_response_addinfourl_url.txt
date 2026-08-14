@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.response.addinfourl.url
+
+url  
+URL of the resource retrieved, commonly used to determine if a redirect was followed.

@@ -1,0 +1,4 @@
+# python.library.csv#csv.QUOTE_NONE
+
+csv.QUOTE_NONE  
+Instructs writer objects to never quote fields. When the current delimiter occurs in output data it is preceded by the current escapechar character. If escapechar is not set, the writer will raise Error if any characters that require escaping are encountered. Instructs reader to perform no special processing of quote characters.

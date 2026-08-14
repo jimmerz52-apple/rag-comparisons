@@ -1,0 +1,9 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.skew
+
+skew  
+Skew coefficients used to georeference the raster, as a point object with x and y members. In case of north up images, these coefficients are both 0. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.skew
+[0.0, 0.0]
+>>> rst.skew.x = 3
+>>> rst.skew
+[3.0, 0.0]

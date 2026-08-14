@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.is_year_start
+
+pandas.tseries.offsets.Tick.is_year_start   Tick.is_year_start()

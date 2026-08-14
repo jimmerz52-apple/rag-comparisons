@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.fetch
+
+IMAP4.fetch(message_set, message_parts)  
+Fetch (parts of) messages. message_parts should be a string of message part names enclosed within parentheses, eg: "(UID BODY[TEXT])". Returned data are tuples of message part envelope and data.

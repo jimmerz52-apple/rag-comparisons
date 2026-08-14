@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.config
+
+config  
+The configuration dictionary as Config. This behaves exactly like a regular dictionary but supports additional methods to load a config from files.

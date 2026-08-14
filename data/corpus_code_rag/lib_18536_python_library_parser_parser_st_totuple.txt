@@ -1,0 +1,4 @@
+# python.library.parser#parser.ST.totuple
+
+ST.totuple(line_info=False, col_info=False)  
+Same as st2tuple(st, line_info, col_info).

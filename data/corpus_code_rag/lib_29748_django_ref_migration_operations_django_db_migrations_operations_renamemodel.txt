@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.RenameModel
+
+class RenameModel(old_name, new_name)

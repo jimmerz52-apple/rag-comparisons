@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.FlaskGroup.get_command
+
+get_command(ctx, name)  
+Given a context and a command name, this returns a Command object if it exists or returns None.

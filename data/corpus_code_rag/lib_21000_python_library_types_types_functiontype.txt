@@ -1,0 +1,5 @@
+# python.library.types#types.FunctionType
+
+types.FunctionType  
+types.LambdaType  
+The type of user-defined functions and functions created by lambda expressions. Raises an auditing event function.__new__ with argument code. The audit event only occurs for direct instantiation of function objects, and is not raised for normal compilation.

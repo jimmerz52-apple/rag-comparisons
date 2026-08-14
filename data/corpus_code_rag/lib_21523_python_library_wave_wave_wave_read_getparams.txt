@@ -1,0 +1,5 @@
+# python.library.wave#wave.Wave_read.getparams
+
+Wave_read.getparams()  
+Returns a namedtuple() (nchannels, sampwidth,
+framerate, nframes, comptype, compname), equivalent to output of the get*() methods.

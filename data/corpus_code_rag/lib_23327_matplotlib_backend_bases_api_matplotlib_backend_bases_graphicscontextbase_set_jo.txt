@@ -1,0 +1,7 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_joinstyle
+
+set_joinstyle(js)[source]
+ 
+Set how to draw connections between line segments.  Parameters 
+ 
+jsJoinStyle or {'miter', 'round', 'bevel'}

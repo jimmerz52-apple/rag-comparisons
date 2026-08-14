@@ -1,0 +1,4 @@
+# python.library.string#string.printable
+
+string.printable  
+String of ASCII characters which are considered printable. This is a combination of digits, ascii_letters, punctuation, and whitespace.

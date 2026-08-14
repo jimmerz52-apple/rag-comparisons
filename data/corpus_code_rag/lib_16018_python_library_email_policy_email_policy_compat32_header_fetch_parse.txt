@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Compat32.header_fetch_parse
+
+header_fetch_parse(name, value)  
+If the value contains binary data, it is converted into a Header object using the unknown-8bit charset. Otherwise it is returned unmodified.

@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.naive_bayes.categoricalnb#sklearn.naive_bayes.CategoricalNB.predict_proba
+
+predict_proba(X) [source]
+ 
+Return probability estimates for the test vector X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Carray-like of shape (n_samples, n_classes) 
+
+Returns the probability of the samples for each class in the model. The columns correspond to the classes in sorted order, as they appear in the attribute classes_.

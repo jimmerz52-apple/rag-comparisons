@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.scatter
+
+scatter(dim, index, src) → Tensor  
+Out-of-place version of torch.Tensor.scatter_()

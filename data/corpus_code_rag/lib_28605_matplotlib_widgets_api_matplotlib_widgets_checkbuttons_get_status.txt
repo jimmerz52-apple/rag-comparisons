@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.CheckButtons.get_status
+
+get_status()[source]
+ 
+Return a tuple of the status (True/False) of all of the check buttons.

@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.hermite_e.hermitee.has_samecoef
+
+numpy.polynomial.hermite_e.HermiteE.has_samecoef method   polynomial.hermite_e.HermiteE.has_samecoef(other)[source]
+ 
+Check if coefficients match.  New in version 1.6.0.   Parameters 
+ 
+otherclass instance
+
+
+The other class must have the coef attribute.    Returns 
+ 
+boolboolean
+
+
+True if the coefficients are the same, False otherwise.

@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.OneToOneField
+
+class OneToOneField(to, on_delete, parent_link=False, **options)

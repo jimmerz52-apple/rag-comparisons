@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.handle_one_request
+
+handle_one_request()  
+This method will parse and dispatch the request to the appropriate do_*() method. You should never need to override it.

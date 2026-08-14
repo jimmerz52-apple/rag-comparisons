@@ -1,0 +1,8 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.grid#mpl_toolkits.axes_grid1.axes_grid.Grid.get_axes_pad
+
+get_axes_pad()[source]
+ 
+Return the axes padding.  Returns 
+ hpad, vpad
+
+Padding (horizontal pad, vertical pad) in inches.

@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.load
+
+pygame.mixer.music.load() 
+ Load a music file for playback load(filename) -> None load(object) -> None  This will load a music filename/file object and prepare it for playback. If a music stream is already playing it will be stopped. This does not start the music playing.

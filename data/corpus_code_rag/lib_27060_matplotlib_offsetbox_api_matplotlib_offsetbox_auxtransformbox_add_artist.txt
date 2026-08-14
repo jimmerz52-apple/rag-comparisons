@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AuxTransformBox.add_artist
+
+add_artist(a)[source]
+ 
+Add an Artist to the container box.

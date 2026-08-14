@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLCertVerificationError.verify_message
+
+verify_message  
+A human readable string of the verification error.

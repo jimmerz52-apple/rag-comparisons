@@ -1,0 +1,3 @@
+# matplotlib.cbook_api#matplotlib.cbook.safe_masked_invalid
+
+matplotlib.cbook.safe_masked_invalid(x, copy=False)[source]

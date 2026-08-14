@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Aggregate.window_compatible
+
+window_compatible  
+Defaults to True since most aggregate functions can be used as the source expression in Window.

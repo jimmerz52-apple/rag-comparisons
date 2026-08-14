@@ -1,0 +1,4 @@
+# django.ref.files.file#django.core.files.File.delete
+
+File.delete(save=True)  
+Removes the file from the model instance and deletes the underlying file. If save is True, the model’s save() method will be called once the file is deleted.

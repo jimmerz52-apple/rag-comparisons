@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.linear_model.orthogonalmatchingpursuitcv#sklearn.linear_model.OrthogonalMatchingPursuitCV.fit
+
+fit(X, y) [source]
+ 
+Fit the model using X, y as training data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.  
+yarray-like of shape (n_samples,) 
+
+Target values. Will be cast to X’s dtype if necessary.    Returns 
+ 
+selfobject 
+
+returns an instance of self.

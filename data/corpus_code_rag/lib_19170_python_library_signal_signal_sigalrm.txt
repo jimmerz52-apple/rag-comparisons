@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGALRM
+
+signal.SIGALRM  
+Timer signal from alarm(2). Availability: Unix.

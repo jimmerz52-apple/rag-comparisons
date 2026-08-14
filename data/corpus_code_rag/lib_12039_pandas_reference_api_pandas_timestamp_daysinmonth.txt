@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.daysinmonth
+
+pandas.Timestamp.daysinmonth   Timestamp.daysinmonth
+ 
+Return the number of days in the month. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.days_in_month
+31

@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.MaxLengthValidator
+
+class MaxLengthValidator(limit_value, message=None)  
+Raises a ValidationError with a code of 'max_length' if the length of value is greater than limit_value, which may be a callable.

@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.create_unix_connection
+
+coroutine loop.create_unix_connection(protocol_factory, path=None, *, ssl=None, sock=None, server_hostname=None, ssl_handshake_timeout=None)  
+Create a Unix connection. The socket family will be AF_UNIX; socket type will be SOCK_STREAM. A tuple of (transport, protocol) is returned on success. path is the name of a Unix domain socket and is required, unless a sock parameter is specified. Abstract Unix sockets, str, bytes, and Path paths are supported. See the documentation of the loop.create_connection() method for information about arguments to this method. Availability: Unix.  New in version 3.7: The ssl_handshake_timeout parameter.   Changed in version 3.7: The path parameter can now be a path-like object.

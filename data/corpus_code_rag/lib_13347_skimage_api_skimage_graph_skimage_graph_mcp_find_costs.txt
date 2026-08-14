@@ -1,0 +1,21 @@
+# skimage.api.skimage.graph#skimage.graph.MCP.find_costs
+
+find_costs()  
+Find the minimum-cost path from the given starting points. This method finds the minimum-cost path to the specified ending indices from any one of the specified starting indices. If no end positions are given, then the minimum-cost path to every position in the costs array will be found.  Parameters 
+ 
+startsiterable 
+
+A list of n-d starting indices (where n is the dimension of the costs array). The minimum cost path to the closest/cheapest starting point will be found.  
+endsiterable, optional 
+
+A list of n-d ending indices.  
+find_all_endsbool, optional 
+
+If ‘True’ (default), the minimum-cost-path to every specified end-position will be found; otherwise the algorithm will stop when a a path is found to any end-position. (If no ends were specified, then this parameter has no effect.)    Returns 
+ 
+cumulative_costsndarray 
+
+Same shape as the costs array; this array records the minimum cost path from the nearest/cheapest starting index to each index considered. (If ends were specified, not all elements in the array will necessarily be considered: positions not evaluated will have a cumulative cost of inf. If find_all_ends is ‘False’, only one of the specified end-positions will have a finite cumulative cost.)  
+tracebackndarray 
+
+Same shape as the costs array; this array contains the offset to any given index from its predecessor index. The offset indices index into the offsets attribute, which is a array of n-d offsets. In the 2-d case, if offsets[traceback[x, y]] is (-1, -1), that means that the predecessor of [x, y] in the minimum cost path to some start position is [x+1, y+1]. Note that if the offset_index is -1, then the given index was not considered.

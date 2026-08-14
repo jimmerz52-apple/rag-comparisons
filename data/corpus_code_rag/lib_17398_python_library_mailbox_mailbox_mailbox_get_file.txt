@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.get_file
+
+get_file(key)  
+Return a file-like representation of the message corresponding to key, or raise a KeyError exception if no such message exists. The file-like object behaves as if open in binary mode. This file should be closed once it is no longer needed.  Changed in version 3.2: The file object really is a binary file; previously it was incorrectly returned in text mode. Also, the file-like object now supports the context management protocol: you can use a with statement to automatically close it.   Note Unlike other representations of messages, file-like representations are not necessarily independent of the Mailbox instance that created them or of the underlying mailbox. More specific documentation is provided by each subclass.

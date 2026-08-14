@@ -1,0 +1,24 @@
+# python.library.ast#ast.For
+
+class ast.For(target, iter, body, orelse, type_comment)  
+A for loop. target holds the variable(s) the loop assigns to, as a single Name, Tuple or List node. iter holds the item to be looped over, again as a single node. body and orelse contain lists of nodes to execute. Those in orelse are executed if the loop finishes normally, rather than via a break statement.  
+type_comment  
+type_comment is an optional string with the type annotation as a comment. 
+ >>> print(ast.dump(ast.parse("""
+... for x in y:
+...     ...
+... else:
+...     ...
+... """), indent=4))
+Module(
+    body=[
+        For(
+            target=Name(id='x', ctx=Store()),
+            iter=Name(id='y', ctx=Load()),
+            body=[
+                Expr(
+                    value=Constant(value=Ellipsis))],
+            orelse=[
+                Expr(
+                    value=Constant(value=Ellipsis))])],
+    type_ignores=[])

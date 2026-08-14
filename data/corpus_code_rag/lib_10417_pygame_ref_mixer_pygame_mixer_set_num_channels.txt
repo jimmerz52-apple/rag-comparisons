@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.set_num_channels
+
+pygame.mixer.set_num_channels() 
+ set the total number of playback channels set_num_channels(count) -> None  Sets the number of available channels for the mixer. The default value is 8. The value can be increased or decreased. If the value is decreased, sounds playing on the truncated channels are stopped.

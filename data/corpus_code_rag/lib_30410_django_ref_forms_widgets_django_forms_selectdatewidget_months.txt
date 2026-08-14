@@ -1,0 +1,8 @@
+# django.ref.forms.widgets#django.forms.SelectDateWidget.months
+
+months  
+An optional dict of months to use in the “months” select box. The keys of the dict correspond to the month number (1-indexed) and the values are the displayed months: MONTHS = {
+    1:_('jan'), 2:_('feb'), 3:_('mar'), 4:_('apr'),
+    5:_('may'), 6:_('jun'), 7:_('jul'), 8:_('aug'),
+    9:_('sep'), 10:_('oct'), 11:_('nov'), 12:_('dec')
+}

@@ -1,0 +1,3 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.TmpDirCleaner.remaining_tmpdirs
+
+remaining_tmpdirs={}

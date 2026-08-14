@@ -1,0 +1,37 @@
+# skimage.api.skimage.restoration#skimage.restoration.denoise_tv_bregman
+
+skimage.restoration.denoise_tv_bregman(image, weight, max_iter=100, eps=0.001, isotropic=True, *, multichannel=False) [source]
+ 
+Perform total-variation denoising using split-Bregman optimization. Total-variation denoising (also know as total-variation regularization) tries to find an image with less total-variation under the constraint of being similar to the input image, which is controlled by the regularization parameter ([1], [2], [3], [4]).  Parameters 
+ 
+imagendarray 
+
+Input data to be denoised (converted using img_as_float`).  
+weightfloat 
+
+Denoising weight. The smaller the weight, the more denoising (at the expense of less similarity to the input). The regularization parameter lambda is chosen as 2 * weight.  
+epsfloat, optional 
+
+Relative difference of the value of the cost function that determines the stop criterion. The algorithm stops when: SUM((u(n) - u(n-1))**2) < eps
+  
+max_iterint, optional 
+
+Maximal number of iterations used for the optimization.  
+isotropicboolean, optional 
+
+Switch between isotropic and anisotropic TV denoising.  
+multichannelbool, optional 
+
+Apply total-variation denoising separately for each channel. This option should be true for color images, otherwise the denoising is also applied in the channels dimension.    Returns 
+ 
+undarray 
+
+Denoised image.     References  
+1  
+https://en.wikipedia.org/wiki/Total_variation_denoising  
+2  
+Tom Goldstein and Stanley Osher, “The Split Bregman Method For L1 Regularized Problems”, ftp://ftp.math.ucla.edu/pub/camreport/cam08-29.pdf  
+3  
+Pascal Getreuer, “Rudin–Osher–Fatemi Total Variation Denoising using Split Bregman” in Image Processing On Line on 2012–05–19, https://www.ipol.im/pub/art/2012/g-tvd/article_lr.pdf  
+4  
+https://web.math.ucsb.edu/~cgarcia/UGProjects/BregmanAlgorithms_JacquelineBush.pdf

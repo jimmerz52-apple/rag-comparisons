@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.pyplot.get
+
+matplotlib.pyplot.get   matplotlib.pyplot.get(obj, *args, **kwargs)[source]
+ 
+Return the value of an Artist's property, or print all of them.  Parameters 
+ 
+objArtist
+
+
+The queried artist; e.g., a Line2D, a Text, or an Axes.  
+propertystr or None, default: None
+
+
+If property is 'somename', this function returns obj.get_somename(). If it's None (or unset), it prints all gettable properties from obj. Many properties have aliases for shorter typing, e.g. 'lw' is an alias for 'linewidth'. In the output, aliases and full property names will be listed as: property or alias = value e.g.: linewidth or lw = 2      See also  setp

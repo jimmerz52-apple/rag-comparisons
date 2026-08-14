@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.get_port
+
+HttpRequest.get_port()  
+Returns the originating port of the request using information from the HTTP_X_FORWARDED_PORT (if USE_X_FORWARDED_PORT is enabled) and SERVER_PORT META variables, in that order.

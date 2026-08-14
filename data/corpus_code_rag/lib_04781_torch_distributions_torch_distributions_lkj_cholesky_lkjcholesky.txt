@@ -1,0 +1,25 @@
+# torch.distributions#torch.distributions.lkj_cholesky.LKJCholesky
+
+class torch.distributions.lkj_cholesky.LKJCholesky(dim, concentration=1.0, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution LKJ distribution for lower Cholesky factor of correlation matrices. The distribution is controlled by concentration parameter η\eta  to make the probability of the correlation matrix MM  generated from a Cholesky factor propotional to det⁡(M)η−1\det(M)^{\eta - 1} . Because of that, when concentration == 1, we have a uniform distribution over Cholesky factors of correlation matrices. Note that this distribution samples the Cholesky factor of correlation matrices and not the correlation matrices themselves and thereby differs slightly from the derivations in [1] for the LKJCorr distribution. For sampling, this uses the Onion method from [1] Section 3. L ~ LKJCholesky(dim, concentration) X = L @ L’ ~ LKJCorr(dim, concentration) Example: >>> l = LKJCholesky(3, 0.5)
+>>> l.sample()  # l @ l.T is a sample of a correlation 3x3 matrix
+tensor([[ 1.0000,  0.0000,  0.0000],
+        [ 0.3516,  0.9361,  0.0000],
+        [-0.1899,  0.4748,  0.8593]])
+  Parameters 
+ 
+dimension (dim) – dimension of the matrices 
+concentration (float or Tensor) – concentration/shape parameter of the distribution (often referred to as eta)    References [1] Generating random correlation matrices based on vines and extended onion method, Daniel Lewandowski, Dorota Kurowicka, Harry Joe.  
+arg_constraints = {'concentration': GreaterThan(lower_bound=0.0)} 
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+log_prob(value) [source]
+
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+support = CorrCholesky()

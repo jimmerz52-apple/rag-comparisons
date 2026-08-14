@@ -1,0 +1,6 @@
+# torch.autograd#torch.autograd.profiler.profile.export_chrome_trace
+
+export_chrome_trace(path) [source]
+ 
+Exports an EventList as a Chrome tracing tools file. The checkpoint can be later loaded and inspected under chrome://tracing URL.  Parameters 
+path (str) – Path where the trace will be written.

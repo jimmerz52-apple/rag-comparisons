@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.AbsTransform
+
+class torch.distributions.transforms.AbsTransform(cache_size=0) [source]
+ 
+Transform via the mapping y=∣x∣y = |x| .

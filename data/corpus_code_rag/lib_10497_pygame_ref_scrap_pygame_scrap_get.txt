@@ -1,0 +1,15 @@
+# pygame.ref.scrap#pygame.scrap.get
+
+pygame.scrap.get() 
+ Gets the data for the specified type from the clipboard. get(type) -> bytes or str or None  Retrieves the data for the specified type from the clipboard. In python 3 the data is returned as a byte string and might need further processing (such as decoding to Unicode).     
+Parameters:
+
+type (string) -- data type to retrieve from the clipboard  
+Returns:
+data (byte string in python 3 or str in python 2) for the given type identifier or None if no data for the given type is available  
+Return type:
+bytes or str or None    text = pygame.scrap.get(pygame.SCRAP_TEXT)
+if text:
+    print("There is text in the clipboard.")
+else:
+    print("There does not seem to be text in the clipboard.")

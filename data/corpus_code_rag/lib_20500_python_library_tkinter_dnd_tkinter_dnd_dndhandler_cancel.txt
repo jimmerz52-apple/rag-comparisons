@@ -1,0 +1,4 @@
+# python.library.tkinter.dnd#tkinter.dnd.DndHandler.cancel
+
+cancel(event=None)  
+Cancel the drag-and-drop process.

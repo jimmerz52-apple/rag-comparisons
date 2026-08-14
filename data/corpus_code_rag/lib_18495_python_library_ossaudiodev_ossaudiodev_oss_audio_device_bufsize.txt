@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.bufsize
+
+oss_audio_device.bufsize()  
+Returns the size of the hardware buffer, in samples.

@@ -1,0 +1,4 @@
+# python.library.email.utils#email.utils.unquote
+
+email.utils.unquote(str)  
+Return a new string which is an unquoted version of str. If str ends and begins with double quotes, they are stripped off. Likewise if str ends and begins with angle brackets, they are stripped off.

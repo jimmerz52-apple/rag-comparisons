@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedeltaindex.days
+
+pandas.TimedeltaIndex.days   propertyTimedeltaIndex.days
+ 
+Number of days for each element.

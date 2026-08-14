@@ -1,0 +1,5 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.PathEffectRenderer.draw_path
+
+draw_path(gc, tpath, affine, rgbFace=None)[source]
+ 
+Draw a Path instance using the given affine transform.

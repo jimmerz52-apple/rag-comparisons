@@ -1,0 +1,5 @@
+# django.ref.models.querysets#django.db.models.Min
+
+class Min(expression, output_field=None, filter=None, default=None, **extra)  
+Returns the minimum value of the given expression.  Default alias: <field>__min
+ Return type: same as input field, or output_field if supplied

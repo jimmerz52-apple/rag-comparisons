@@ -1,0 +1,11 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.get_extra
+
+InlineModelAdmin.get_extra(request, obj=None, **kwargs)  
+Returns the number of extra inline forms to use. By default, returns the InlineModelAdmin.extra attribute. Override this method to programmatically determine the number of extra inline forms. For example, this may be based on the model instance (passed as the keyword argument obj): class BinaryTreeAdmin(admin.TabularInline):
+    model = BinaryTree
+
+    def get_extra(self, request, obj=None, **kwargs):
+        extra = 2
+        if obj:
+            return extra - obj.binarytree_set.count()
+        return extra

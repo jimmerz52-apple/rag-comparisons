@@ -1,0 +1,9 @@
+# python.library.datetime#datetime.time
+
+class datetime.time(hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0)  
+All arguments are optional. tzinfo may be None, or an instance of a tzinfo subclass. The remaining arguments must be integers in the following ranges:  
+0 <= hour < 24, 
+0 <= minute < 60, 
+0 <= second < 60, 
+0 <= microsecond < 1000000, 
+fold in [0, 1].  If an argument outside those ranges is given, ValueError is raised. All default to 0 except tzinfo, which defaults to None.

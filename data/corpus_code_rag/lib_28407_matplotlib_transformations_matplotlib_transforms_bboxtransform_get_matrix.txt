@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransform.get_matrix
+
+get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform.

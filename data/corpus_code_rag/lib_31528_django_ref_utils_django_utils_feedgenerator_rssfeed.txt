@@ -1,0 +1,3 @@
+# django.ref.utils#django.utils.feedgenerator.RssFeed
+
+class RssFeed(SyndicationFeed)

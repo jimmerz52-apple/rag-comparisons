@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.intersection
+
+GEOSGeometry.intersection(other)  
+Returns a GEOSGeometry representing the points shared by this geometry and other.

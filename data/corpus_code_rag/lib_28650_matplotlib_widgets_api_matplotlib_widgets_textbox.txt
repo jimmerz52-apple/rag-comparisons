@@ -1,0 +1,75 @@
+# matplotlib.widgets_api#matplotlib.widgets.TextBox
+
+classmatplotlib.widgets.TextBox(ax, label, initial='', color='.95', hovercolor='1', label_pad=0.01, textalignment='left')[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral text input box. For the text box to remain responsive you must keep a reference to it. Call on_text_change to be updated whenever the text changes. Call on_submit to be updated whenever the user hits enter or leaves the text entry field.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+labelText
+
+
+colorcolor
+
+
+The color of the text box when not hovering.  
+hovercolorcolor
+
+
+The color of the text box when hovering.      Parameters 
+ 
+axAxes
+
+
+The Axes instance the button will be placed into.  
+labelstr
+
+
+Label for this text box.  
+initialstr
+
+
+Initial value in the text box.  
+colorcolor
+
+
+The color of the box.  
+hovercolorcolor
+
+
+The color of the box when the mouse is over it.  
+label_padfloat
+
+
+The distance between the label and the right side of the textbox.  
+textalignment{'left', 'center', 'right'}
+
+
+The horizontal location of the text.       propertyDIST_FROM_LEFT[source]
+
+   begin_typing(x)[source]
+
+   propertychange_observers[source]
+
+   propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid. 
+   on_submit(func)[source]
+ 
+When the user hits enter or leaves the submission box, call this func with event. A connection id is returned which can be used to disconnect. 
+   on_text_change(func)[source]
+ 
+When the text changes, call this func with event. A connection id is returned which can be used to disconnect. 
+   position_cursor(x)[source]
+
+   set_val(val)[source]
+
+   stop_typing()[source]
+
+   propertysubmit_observers[source]
+
+   propertytext

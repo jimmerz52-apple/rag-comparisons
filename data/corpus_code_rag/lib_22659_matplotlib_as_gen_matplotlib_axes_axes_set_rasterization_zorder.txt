@@ -1,0 +1,13 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_rasterization_zorder
+
+matplotlib.axes.Axes.set_rasterization_zorder   Axes.set_rasterization_zorder(z)[source]
+ 
+Set the zorder threshold for rasterization for vector graphics output. All artists with a zorder below the given value will be rasterized if they support rasterization. This setting is ignored for pixel-based output. See also Rasterization for vector graphics.  Parameters 
+ 
+zfloat or None
+
+
+The zorder below which artists are rasterized. If None rasterization based on zorder is deactivated.     
+  Examples using matplotlib.axes.Axes.set_rasterization_zorder
+ 
+   Rasterization for vector graphics

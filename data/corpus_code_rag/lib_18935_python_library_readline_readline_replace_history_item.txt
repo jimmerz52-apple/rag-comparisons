@@ -1,0 +1,4 @@
+# python.library.readline#readline.replace_history_item
+
+readline.replace_history_item(pos, line)  
+Replace history item specified by its position with line. The position is zero-based. This calls replace_history_entry() in the underlying library.

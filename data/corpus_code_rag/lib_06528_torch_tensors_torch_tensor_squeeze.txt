@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.squeeze_
+
+squeeze_(dim=None) → Tensor  
+In-place version of squeeze()

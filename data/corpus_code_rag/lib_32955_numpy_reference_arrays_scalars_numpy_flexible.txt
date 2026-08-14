@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.flexible
+
+class numpy.flexible[source]
+ 
+Abstract base class of all scalar types without predefined length. The actual size of these types depends on the specific np.dtype instantiation.

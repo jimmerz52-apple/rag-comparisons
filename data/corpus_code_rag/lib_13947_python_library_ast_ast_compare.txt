@@ -1,0 +1,13 @@
+# python.library.ast#ast.Compare
+
+class ast.Compare(left, ops, comparators)  
+A comparison of two or more values. left is the first value in the comparison, ops the list of operators, and comparators the list of values after the first element in the comparison. >>> print(ast.dump(ast.parse('1 <= a < 10', mode='eval'), indent=4))
+Expression(
+    body=Compare(
+        left=Constant(value=1),
+        ops=[
+            LtE(),
+            Lt()],
+        comparators=[
+            Name(id='a', ctx=Load()),
+            Constant(value=10)]))

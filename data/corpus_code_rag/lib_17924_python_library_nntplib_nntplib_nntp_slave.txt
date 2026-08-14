@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.slave
+
+NNTP.slave()  
+Send a SLAVE command. Return the server’s response.

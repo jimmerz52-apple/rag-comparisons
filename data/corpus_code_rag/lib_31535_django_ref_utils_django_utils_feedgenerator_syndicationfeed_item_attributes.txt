@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.item_attributes
+
+item_attributes(item)  
+Return extra attributes to place on each item (i.e. item/entry) element.

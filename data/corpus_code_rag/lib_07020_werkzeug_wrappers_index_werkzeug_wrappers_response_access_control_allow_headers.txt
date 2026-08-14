@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.access_control_allow_headers
+
+access_control_allow_headers  
+Which headers can be sent with the cross origin request.

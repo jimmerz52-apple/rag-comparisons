@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_label
+
+matplotlib.axis.Axis.get_label   Axis.get_label()[source]
+ 
+Return the axis label as a Text instance. 
+  Examples using matplotlib.axis.Axis.get_label
+ 
+   Parasite Simple

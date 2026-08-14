@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.activate
+
+activate(timezone)  
+Sets the current time zone. The timezone argument must be an instance of a tzinfo subclass or a time zone name.

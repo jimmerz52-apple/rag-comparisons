@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.feature_get_til
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.feature_get_til method   distutils.ccompiler_opt.CCompilerOpt.feature_get_til(names, keyisfalse)[source]
+ 
+same as feature_implies_c() but stop collecting implied features when feature’s option that provided through parameter ‘keyisfalse’ is False, also sorting the returned features.

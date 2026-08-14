@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.keras.estimator
+
+Module: tf.compat.v1.keras.estimator Keras estimator API. Functions model_to_estimator(...): Constructs an Estimator instance from given keras model.

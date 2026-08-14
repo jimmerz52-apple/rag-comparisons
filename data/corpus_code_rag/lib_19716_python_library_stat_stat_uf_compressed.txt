@@ -1,0 +1,4 @@
+# python.library.stat#stat.UF_COMPRESSED
+
+stat.UF_COMPRESSED  
+The file is stored compressed (Mac OS X 10.6+).

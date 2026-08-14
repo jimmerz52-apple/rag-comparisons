@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LineProfile.__init__
+
+__init__(maxdist=10, epsilon='deprecated', limits='image', **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

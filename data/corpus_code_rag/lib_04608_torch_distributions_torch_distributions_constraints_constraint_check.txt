@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.constraints.Constraint.check
+
+check(value) [source]
+ 
+Returns a byte tensor of sample_shape + batch_shape indicating whether each event in value satisfies this constraint.

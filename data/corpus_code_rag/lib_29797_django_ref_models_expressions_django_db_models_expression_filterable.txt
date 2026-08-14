@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.filterable
+
+filterable  
+Tells Django that this expression can be referenced in QuerySet.filter(). Defaults to True.

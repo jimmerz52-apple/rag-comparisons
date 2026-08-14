@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_losses
+
+get_losses() 
+ the significant bits used to convert between a color and a mapped integer get_losses() -> (R, G, B, A)  Return the least significant number of bits stripped from each color in a mapped integer. This value is not needed for normal pygame usage.

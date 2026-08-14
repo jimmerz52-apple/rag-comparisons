@@ -1,0 +1,5 @@
+# flask.api.index#flask.Response.make_sequence
+
+make_sequence()  
+Converts the response iterator in a list. By default this happens automatically if required. If implicit_sequence_conversion is disabled, this method is not automatically called and some properties might raise exceptions. This also encodes all the items.  Changelog New in version 0.6.   Return type 
+None

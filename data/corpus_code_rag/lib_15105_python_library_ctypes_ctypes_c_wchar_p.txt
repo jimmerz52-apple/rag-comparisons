@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_wchar_p
+
+class ctypes.c_wchar_p  
+Represents the C wchar_t * datatype, which must be a pointer to a zero-terminated wide character string. The constructor accepts an integer address, or a string.

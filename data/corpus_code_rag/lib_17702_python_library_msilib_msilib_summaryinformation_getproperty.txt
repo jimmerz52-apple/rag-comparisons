@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.SummaryInformation.GetProperty
+
+SummaryInformation.GetProperty(field)  
+Return a property of the summary, through MsiSummaryInfoGetProperty(). field is the name of the property, and can be one of the constants PID_CODEPAGE, PID_TITLE, PID_SUBJECT, PID_AUTHOR, PID_KEYWORDS, PID_COMMENTS, PID_TEMPLATE, PID_LASTAUTHOR, PID_REVNUMBER, PID_LASTPRINTED, PID_CREATE_DTM, PID_LASTSAVE_DTM, PID_PAGECOUNT, PID_WORDCOUNT, PID_CHARCOUNT, PID_APPNAME, or PID_SECURITY.

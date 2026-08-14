@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.get_metrics
+
+get_metrics() 
+ Return the glyph metrics for the given text get_metrics(text, size=0) -> [(...), ...]  Returns the glyph metrics for each character in text. The glyph metrics are returned as a list of tuples. Each tuple gives metrics of a single character glyph. The glyph metrics are: (min_x, max_x, min_y, max_y, horizontal_advance_x, horizontal_advance_y) The bounding box min_x, max_x, min_y, and max_y values are returned as grid-fitted pixel coordinates of type int. The advance values are float values. The calculations are done using the font's default size in points. Optionally you may specify another point size with the size argument. The metrics are adjusted for the current rotation, strong, and oblique settings. If text is a char (byte) string, then its encoding is assumed to be LATIN1.

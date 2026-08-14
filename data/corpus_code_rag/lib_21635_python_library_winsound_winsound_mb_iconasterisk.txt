@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.MB_ICONASTERISK
+
+winsound.MB_ICONASTERISK  
+Play the SystemDefault sound.

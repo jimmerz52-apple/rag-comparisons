@@ -1,0 +1,3 @@
+# tensorflow.graph_util
+
+Module: tf.graph_util Helpers to manipulate a tensor graph in python. Functions import_graph_def(...): Imports the graph from graph_def into the current default Graph. (deprecated arguments)

@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.QueueFull
+
+exception asyncio.QueueFull  
+Exception raised when the put_nowait() method is called on a queue that has reached its maxsize.

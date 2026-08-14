@@ -1,0 +1,10 @@
+# flask.api.index#flask.Blueprint.add_url_rule
+
+add_url_rule(rule, endpoint=None, view_func=None, **options)  
+Like Flask.add_url_rule() but for a blueprint. The endpoint for the url_for() function is prefixed with the name of the blueprint.  Parameters 
+ 
+rule (str) –  
+endpoint (Optional[str]) –  
+view_func (Optional[Callable]) –  
+options (Any) –    Return type 
+None

@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.i18n
+
+i18n  
+Optional. A boolean attribute that defines if the URLs of this sitemap should be generated using all of your LANGUAGES. The default is False.

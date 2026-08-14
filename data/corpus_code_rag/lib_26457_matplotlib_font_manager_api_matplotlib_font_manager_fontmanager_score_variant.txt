@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontManager.score_variant
+
+score_variant(variant1, variant2)[source]
+ 
+Return a match score between variant1 and variant2. An exact match returns 0.0, otherwise 1.0.

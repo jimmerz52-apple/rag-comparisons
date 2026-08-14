@@ -1,0 +1,8 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.get_input_stream
+
+werkzeug.wsgi.get_input_stream(environ, safe_fallback=True)  
+Returns the input stream from the WSGI environment and wraps it in the most sensible way possible. The stream returned is not the raw WSGI stream in most cases but one that is safe to read from without taking into account the content length. If content length is not set, the stream will be empty for safety reasons. If the WSGI server supports chunked or infinite streams, it should set the wsgi.input_terminated value in the WSGI environ to indicate that.  Changelog New in version 0.9.   Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environ to fetch the stream from. 
+safe_fallback (bool) – use an empty stream as a safe fallback when the content length is not set. Disabling this allows infinite streams, which can be a denial-of-service risk.   Return type 
+BinaryIO

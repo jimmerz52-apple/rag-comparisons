@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.set_semiminor
+
+set_semiminor(b)[source]
+ 
+Set the semi-minor axis b of the annulus.  Parameters 
+ 
+bfloat

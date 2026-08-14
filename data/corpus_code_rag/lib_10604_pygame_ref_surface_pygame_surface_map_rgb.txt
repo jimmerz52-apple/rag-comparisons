@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.map_rgb
+
+map_rgb() 
+ convert a color into a mapped color value map_rgb(Color) -> mapped_int  Convert an RGBA color into the mapped integer value for this Surface. The returned integer will contain no more bits than the bit depth of the Surface. Mapped color values are not often used inside pygame, but can be passed to most functions that require a Surface and a color. See the Surface object documentation for more information about colors and pixel formats.

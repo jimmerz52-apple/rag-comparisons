@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.page_range
+
+Paginator.page_range  
+A 1-based range iterator of page numbers, e.g. yielding [1, 2, 3, 4].

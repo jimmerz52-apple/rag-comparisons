@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.whitekernel#sklearn.gaussian_process.kernels.WhiteKernel.requires_vector_input
+
+property requires_vector_input  
+Whether the kernel works only on fixed-length feature vectors.

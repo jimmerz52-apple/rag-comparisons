@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.View.Close
+
+View.Close()  
+Close the view, through MsiViewClose().

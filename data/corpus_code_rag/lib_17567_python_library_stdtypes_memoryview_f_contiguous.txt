@@ -1,0 +1,4 @@
+# python.library.stdtypes#memoryview.f_contiguous
+
+f_contiguous  
+A bool indicating whether the memory is Fortran contiguous.  New in version 3.3.

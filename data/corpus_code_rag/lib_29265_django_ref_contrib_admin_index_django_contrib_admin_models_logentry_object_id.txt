@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.object_id
+
+LogEntry.object_id  
+The textual representation of the modified object’s primary key.

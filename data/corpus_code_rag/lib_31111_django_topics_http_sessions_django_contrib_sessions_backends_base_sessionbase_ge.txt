@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.get_expiry_date
+
+get_expiry_date()  
+Returns the date this session will expire. For sessions with no custom expiration (or those set to expire at browser close), this will equal the date SESSION_COOKIE_AGE seconds from now. This function accepts the same keyword arguments as get_expiry_age().

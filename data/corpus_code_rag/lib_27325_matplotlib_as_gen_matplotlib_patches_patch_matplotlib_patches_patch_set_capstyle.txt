@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_capstyle
+
+set_capstyle(s)[source]
+ 
+Set the CapStyle.  Parameters 
+ 
+sCapStyle or {'butt', 'projecting', 'round'}

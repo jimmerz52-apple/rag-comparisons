@@ -1,0 +1,65 @@
+# skimage.api.skimage.draw#skimage.draw.rectangle
+
+skimage.draw.rectangle(start, end=None, extent=None, shape=None) [source]
+ 
+Generate coordinates of pixels within a rectangle.  Parameters 
+ 
+starttuple 
+
+Origin point of the rectangle, e.g., ([plane,] row, column).  
+endtuple 
+
+End point of the rectangle ([plane,] row, column). For a 2D matrix, the slice defined by the rectangle is [start:(end+1)]. Either end or extent must be specified.  
+extenttuple 
+
+The extent (size) of the drawn rectangle. E.g., ([num_planes,] num_rows, num_cols). Either end or extent must be specified. A negative extent is valid, and will result in a rectangle going along the opposite direction. If extent is negative, the start point is not included.  
+shapetuple, optional 
+
+Image shape used to determine the maximum bounds of the output coordinates. This is useful for clipping rectangles that exceed the image size. By default, no clipping is done.    Returns 
+ 
+coordsarray of int, shape (Ndim, Npoints) 
+
+The coordinates of all pixels in the rectangle.     Notes This function can be applied to N-dimensional images, by passing start and end or extent as tuples of length N. Examples >>> import numpy as np
+>>> from skimage.draw import rectangle
+>>> img = np.zeros((5, 5), dtype=np.uint8)
+>>> start = (1, 1)
+>>> extent = (3, 3)
+>>> rr, cc = rectangle(start, extent=extent, shape=img.shape)
+>>> img[rr, cc] = 1
+>>> img
+array([[0, 0, 0, 0, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 0, 0, 0]], dtype=uint8)
+ >>> img = np.zeros((5, 5), dtype=np.uint8)
+>>> start = (0, 1)
+>>> end = (3, 3)
+>>> rr, cc = rectangle(start, end=end, shape=img.shape)
+>>> img[rr, cc] = 1
+>>> img
+array([[0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 0, 0, 0]], dtype=uint8)
+ >>> import numpy as np
+>>> from skimage.draw import rectangle
+>>> img = np.zeros((6, 6), dtype=np.uint8)
+>>> start = (3, 3)
+>>>
+>>> rr, cc = rectangle(start, extent=(2, 2))
+>>> img[rr, cc] = 1
+>>> rr, cc = rectangle(start, extent=(-2, 2))
+>>> img[rr, cc] = 2
+>>> rr, cc = rectangle(start, extent=(-2, -2))
+>>> img[rr, cc] = 3
+>>> rr, cc = rectangle(start, extent=(2, -2))
+>>> img[rr, cc] = 4
+>>> print(img)
+[[0 0 0 0 0 0]
+ [0 3 3 2 2 0]
+ [0 3 3 2 2 0]
+ [0 4 4 1 1 0]
+ [0 4 4 1 1 0]
+ [0 0 0 0 0 0]]

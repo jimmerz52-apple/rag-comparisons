@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.user_ops
+
+Module: tf.compat.v1.user_ops Public API for tf.user_ops namespace. Functions my_fact(...): Example of overriding the generated code for an Op.

@@ -1,0 +1,4 @@
+# python.library.xml.dom.minidom#xml.dom.minidom.parseString
+
+xml.dom.minidom.parseString(string, parser=None)  
+Return a Document that represents the string. This method creates an io.StringIO object for the string and passes that on to parse().

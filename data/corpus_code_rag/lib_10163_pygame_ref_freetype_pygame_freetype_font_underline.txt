@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.underline
+
+underline 
+ The state of the font's underline style flag underline -> bool  Gets or sets whether the font will be underlined when drawing text. This default style value will be used for all text rendering and size calculations unless overridden specifically in a render or get_rect() call, via the 'style' parameter.

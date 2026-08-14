@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.axesgrid
+
+mpl_toolkits.axes_grid1.axes_grid.AxesGrid   mpl_toolkits.axes_grid1.axes_grid.AxesGrid[source]
+ 
+alias of mpl_toolkits.axes_grid1.axes_grid.ImageGrid

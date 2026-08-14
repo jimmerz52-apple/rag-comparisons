@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.to_locale
+
+to_locale(language)  
+Turns a language name (en-us) into a locale name (en_US).

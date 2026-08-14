@@ -1,0 +1,16 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.__sub__
+
+__sub__(other)[source]
+ 
+Compose self with the inverse of other, cancelling identical terms if any: # In general:
+A - B == A + B.inverted()
+# (but see note regarding frozen transforms below).
+
+# If A "ends with" B (i.e. A == A' + B for some A') we can cancel
+# out B:
+(A' + B) - B == A'
+
+# Likewise, if B "starts with" A (B = A + B'), we can cancel out A:
+A - (A + B') == B'.inverted() == B'^-1
+ Cancellation (rather than naively returning A + B.inverted()) is important for multiple reasons:  It avoids floating-point inaccuracies when computing the inverse of B: B - B is guaranteed to cancel out exactly (resulting in the identity transform), whereas B + B.inverted() may differ by a small epsilon. 
+B.inverted() always returns a frozen transform: if one computes A + B + B.inverted() and later mutates B, then B.inverted() won't be updated and the last two terms won't cancel out anymore; on the other hand, A + B - B will always be equal to A even if B is mutated.

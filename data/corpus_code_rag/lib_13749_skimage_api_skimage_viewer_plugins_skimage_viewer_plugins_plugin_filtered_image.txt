@@ -1,0 +1,4 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.filtered_image
+
+property filtered_image  
+Return filtered image.

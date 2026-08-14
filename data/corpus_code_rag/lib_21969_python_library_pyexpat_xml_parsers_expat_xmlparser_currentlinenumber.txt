@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.CurrentLineNumber
+
+xmlparser.CurrentLineNumber  
+Current line number in the parser input.

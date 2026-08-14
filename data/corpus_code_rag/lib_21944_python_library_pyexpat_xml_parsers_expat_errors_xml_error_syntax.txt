@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_SYNTAX
+
+xml.parsers.expat.errors.XML_ERROR_SYNTAX  
+Some unspecified syntax error was encountered.

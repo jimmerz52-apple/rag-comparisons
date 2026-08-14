@@ -1,0 +1,14 @@
+# matplotlib.collections_api#matplotlib.collections.PathCollection.add_callback
+
+add_callback(func)[source]
+ 
+Add a callback function that will be called whenever one of the Artist's properties changes.  Parameters 
+ 
+funccallable
+
+
+The callback function. It must have the signature: def func(artist: Artist) -> Any
+ where artist is the calling Artist. Return values may exist but are ignored.    Returns 
+ int
+
+The observer id associated with the callback. This id can be used for removing the callback with remove_callback later.      See also  remove_callback

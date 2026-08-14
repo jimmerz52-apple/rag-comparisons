@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.nditer.iternext
+
+numpy.nditer.iternext method   nditer.iternext()
+ 
+Check whether iterations are left, and perform a single internal iteration without returning the result. Used in the C-style pattern do-while pattern. For an example, see nditer.  Returns 
+ 
+iternextbool
+
+
+Whether or not there are iterations left.

@@ -1,0 +1,149 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.list_display
+
+ModelAdmin.list_display  
+Set list_display to control which fields are displayed on the change list page of the admin. Example: list_display = ('first_name', 'last_name')
+ If you don’t set list_display, the admin site will display a single column that displays the __str__() representation of each object. There are four types of values that can be used in list_display. All but the simplest may use the display() decorator is used to customize how the field is presented:  
+The name of a model field. For example: class PersonAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'last_name')
+  
+A callable that accepts one argument, the model instance. For example: @admin.display(description='Name')
+def upper_case_name(obj):
+    return ("%s %s" % (obj.first_name, obj.last_name)).upper()
+
+class PersonAdmin(admin.ModelAdmin):
+    list_display = (upper_case_name,)
+  
+A string representing a ModelAdmin method that accepts one argument, the model instance. For example: class PersonAdmin(admin.ModelAdmin):
+    list_display = ('upper_case_name',)
+
+    @admin.display(description='Name')
+    def upper_case_name(self, obj):
+        return ("%s %s" % (obj.first_name, obj.last_name)).upper()
+  
+A string representing a model attribute or method (without any required arguments). For example: from django.contrib import admin
+from django.db import models
+
+class Person(models.Model):
+    name = models.CharField(max_length=50)
+    birthday = models.DateField()
+
+    @admin.display(description='Birth decade')
+    def decade_born_in(self):
+        return '%d’s' % (self.birthday.year // 10 * 10)
+
+class PersonAdmin(admin.ModelAdmin):
+    list_display = ('name', 'decade_born_in')
+   A few special cases to note about list_display:  If the field is a ForeignKey, Django will display the __str__() of the related object.  
+ManyToManyField fields aren’t supported, because that would entail executing a separate SQL statement for each row in the table. If you want to do this nonetheless, give your model a custom method, and add that method’s name to list_display. (See below for more on custom methods in list_display.)  If the field is a BooleanField, Django will display a pretty “yes”, “no”, or “unknown” icon instead of True, False, or None.  
+If the string given is a method of the model, ModelAdmin or a callable, Django will HTML-escape the output by default. To escape user input and allow your own unescaped tags, use format_html(). Here’s a full example model: from django.contrib import admin
+from django.db import models
+from django.utils.html import format_html
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    color_code = models.CharField(max_length=6)
+
+    @admin.display
+    def colored_name(self):
+        return format_html(
+            '<span style="color: #{};">{} {}</span>',
+            self.color_code,
+            self.first_name,
+            self.last_name,
+        )
+
+class PersonAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'last_name', 'colored_name')
+  
+As some examples have already demonstrated, when using a callable, a model method, or a ModelAdmin method, you can customize the column’s title by wrapping the callable with the display() decorator and passing the description argument.  Changed in Django 3.2: The description argument to the display() decorator is equivalent to setting the short_description attribute on the display function directly in previous versions. Setting the attribute directly is still supported for backward compatibility.   
+If the value of a field is None, an empty string, or an iterable without elements, Django will display - (a dash). You can override this with AdminSite.empty_value_display: from django.contrib import admin
+
+admin.site.empty_value_display = '(None)'
+ You can also use ModelAdmin.empty_value_display: class PersonAdmin(admin.ModelAdmin):
+    empty_value_display = 'unknown'
+ Or on a field level: class PersonAdmin(admin.ModelAdmin):
+    list_display = ('name', 'birth_date_view')
+
+    @admin.display(empty_value='unknown')
+    def birth_date_view(self, obj):
+         return obj.birth_date
+  Changed in Django 3.2: The empty_value argument to the display() decorator is equivalent to setting the empty_value_display attribute on the display function directly in previous versions. Setting the attribute directly is still supported for backward compatibility.   
+If the string given is a method of the model, ModelAdmin or a callable that returns True, False, or None, Django will display a pretty “yes”, “no”, or “unknown” icon if you wrap the method with the display() decorator passing the boolean argument with the value set to True: from django.contrib import admin
+from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    birthday = models.DateField()
+
+    @admin.display(boolean=True)
+    def born_in_fifties(self):
+        return 1950 <= self.birthday.year < 1960
+
+class PersonAdmin(admin.ModelAdmin):
+    list_display = ('name', 'born_in_fifties')
+  Changed in Django 3.2: The boolean argument to the display() decorator is equivalent to setting the boolean attribute on the display function directly in previous versions. Setting the attribute directly is still supported for backward compatibility.   
+The __str__() method is just as valid in list_display as any other model method, so it’s perfectly OK to do this: list_display = ('__str__', 'some_other_field')
+  
+Usually, elements of list_display that aren’t actual database fields can’t be used in sorting (because Django does all the sorting at the database level). However, if an element of list_display represents a certain database field, you can indicate this fact by using the display() decorator on the method, passing the ordering argument: from django.contrib import admin
+from django.db import models
+from django.utils.html import format_html
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    color_code = models.CharField(max_length=6)
+
+    @admin.display(ordering='first_name')
+    def colored_first_name(self):
+        return format_html(
+            '<span style="color: #{};">{}</span>',
+            self.color_code,
+            self.first_name,
+        )
+
+class PersonAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'colored_first_name')
+ The above will tell Django to order by the first_name field when trying to sort by colored_first_name in the admin. To indicate descending order with the ordering argument you can use a hyphen prefix on the field name. Using the above example, this would look like: @admin.display(ordering='-first_name')
+ The ordering argument supports query lookups to sort by values on related models. This example includes an “author first name” column in the list display and allows sorting it by first name: class Blog(models.Model):
+    title = models.CharField(max_length=255)
+    author = models.ForeignKey(Person, on_delete=models.CASCADE)
+
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author', 'author_first_name')
+
+    @admin.display(ordering='author__first_name')
+    def author_first_name(self, obj):
+        return obj.author.first_name
+ Query expressions may be used with the ordering argument: from django.db.models import Value
+from django.db.models.functions import Concat
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
+    @admin.display(ordering=Concat('first_name', Value(' '), 'last_name'))
+    def full_name(self):
+        return self.first_name + ' ' + self.last_name
+  Changed in Django 3.2: The ordering argument to the display() decorator is equivalent to setting the admin_order_field attribute on the display function directly in previous versions. Setting the attribute directly is still supported for backward compatibility.   
+Elements of list_display can also be properties: class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+
+    @property
+    @admin.display(
+        ordering='last_name',
+        description='Full name of the person',
+    )
+    def full_name(self):
+        return self.first_name + ' ' + self.last_name
+
+class PersonAdmin(admin.ModelAdmin):
+    list_display = ('full_name',)
+ Note that @property must be above @display. If you’re using the old way – setting the display-related attributes directly rather than using the display() decorator – be aware that the property() function and not the @property decorator must be used: def my_property(self):
+    return self.first_name + ' ' + self.last_name
+my_property.short_description = "Full name of the person"
+my_property.admin_order_field = 'last_name'
+
+full_name = property(my_property)
+  The field names in list_display will also appear as CSS classes in the HTML output, in the form of column-<field_name> on each <th> element. This can be used to set column widths in a CSS file for example.  
+Django will try to interpret every element of list_display in this order:  A field of the model. A callable. A string representing a ModelAdmin attribute. A string representing a model attribute.  For example if you have first_name as a model field and as a ModelAdmin attribute, the model field will be used.

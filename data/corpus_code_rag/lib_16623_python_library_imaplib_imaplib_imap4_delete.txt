@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.delete
+
+IMAP4.delete(mailbox)  
+Delete old mailbox named mailbox.

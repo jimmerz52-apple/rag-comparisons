@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.login
+
+IMAP4.login(user, password)  
+Identify the client using a plaintext password. The password will be quoted.

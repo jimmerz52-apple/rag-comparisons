@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.info
+
+info()  
+Return the “protected” _info variable, a dictionary containing the metadata found in the message catalog file.

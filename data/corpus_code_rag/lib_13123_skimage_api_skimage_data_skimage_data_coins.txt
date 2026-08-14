@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.coins
+
+skimage.data.coins() [source]
+ 
+Greek coins from Pompeii. This image shows several coins outlined against a gray background. It is especially useful in, e.g. segmentation tests, where individual objects need to be identified against a background. The background shares enough grey levels with the coins that a simple segmentation is not sufficient.  Returns 
+ 
+coins(303, 384) uint8 ndarray 
+
+Coins image.     Notes This image was downloaded from the Brooklyn Museum Collection. No known copyright restrictions.

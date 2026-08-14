@@ -1,0 +1,4 @@
+# python.library.os#os.device_encoding
+
+os.device_encoding(fd)  
+Return a string describing the encoding of the device associated with fd if it is connected to a terminal; else return None.

@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.WebAggApplication.SingleFigurePage
+
+classSingleFigurePage(application, request, *, url_prefix='', **kwargs)[source]
+ 
+Bases: tornado.web.RequestHandler   get(fignum)[source]

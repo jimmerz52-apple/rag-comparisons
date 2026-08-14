@@ -1,0 +1,9 @@
+# werkzeug.urls.index#werkzeug.urls.url_unquote_plus
+
+werkzeug.urls.url_unquote_plus(s, charset='utf-8', errors='replace')  
+URL decode a single string with the given charset and decode “+” to whitespace. Per default encoding errors are ignored. If you want a different behavior you can set errors to 'replace' or 'strict'.  Parameters 
+ 
+s (Union[str, bytes]) – The string to unquote. 
+charset (str) – the charset of the query string. If set to None no decoding will take place. 
+errors (str) – The error handling for the charset decoding.   Return type 
+str

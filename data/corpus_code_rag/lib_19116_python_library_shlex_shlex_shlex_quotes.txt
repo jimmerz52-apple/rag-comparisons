@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.quotes
+
+shlex.quotes  
+Characters that will be considered string quotes. The token accumulates until the same quote is encountered again (thus, different quote types protect each other as in the shell.) By default, includes ASCII single and double quotes.

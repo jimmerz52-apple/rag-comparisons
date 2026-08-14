@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.clone
+
+clone()  
+Returns a copy of this storage

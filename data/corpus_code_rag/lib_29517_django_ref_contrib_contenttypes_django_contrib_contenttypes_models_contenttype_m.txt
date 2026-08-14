@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentType.model_class
+
+ContentType.model_class()  
+Returns the model class represented by this ContentType instance.

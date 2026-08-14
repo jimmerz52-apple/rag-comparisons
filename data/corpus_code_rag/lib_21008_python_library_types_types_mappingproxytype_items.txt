@@ -1,0 +1,4 @@
+# python.library.types#types.MappingProxyType.items
+
+items()  
+Return a new view of the underlying mapping’s items ((key, value) pairs).

@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.lib.format.write_array_header_2_0
+
+numpy.lib.format.write_array_header_2_0   lib.format.write_array_header_2_0(fp, d)[source]
+ 
+ Write the header for an array using the 2.0 format.
+
+The 2.0 format allows storing very large structured arrays.    New in version 1.9.0.   Parameters 
+ 
+fpfilelike object
+
+
+ddict
+
+
+This has the appropriate entries for writing its string representation to the header of the file.

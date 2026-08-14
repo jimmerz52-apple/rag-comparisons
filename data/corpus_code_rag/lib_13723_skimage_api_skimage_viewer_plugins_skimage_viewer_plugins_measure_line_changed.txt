@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Measure.line_changed
+
+line_changed(end_points) [source]

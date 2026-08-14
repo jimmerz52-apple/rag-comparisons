@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.batch_shape
+
+property batch_shape  
+Returns the shape over which parameters are batched.

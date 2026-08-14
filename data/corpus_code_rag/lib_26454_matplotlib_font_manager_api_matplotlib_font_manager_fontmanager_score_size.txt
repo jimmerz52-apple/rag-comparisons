@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontManager.score_size
+
+score_size(size1, size2)[source]
+ 
+Return a match score between size1 and size2. If size2 (the size specified in the font file) is 'scalable', this function always returns 0.0, since any font size can be generated. Otherwise, the result is the absolute distance between size1 and size2, normalized so that the usual range of font sizes (6pt - 72pt) will lie between 0.0 and 1.0.

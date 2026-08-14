@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.RequestCacheControl.max_age
+
+max_age  
+accessor for ‘max-age’

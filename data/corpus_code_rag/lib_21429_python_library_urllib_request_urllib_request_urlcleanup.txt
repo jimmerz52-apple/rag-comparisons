@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.urlcleanup
+
+urllib.request.urlcleanup()  
+Cleans up temporary files that may have been left behind by previous calls to urlretrieve().

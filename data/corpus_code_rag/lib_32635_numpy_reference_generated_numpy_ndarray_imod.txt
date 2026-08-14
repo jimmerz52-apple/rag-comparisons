@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__imod__
+
+numpy.ndarray.__imod__ method   ndarray.__imod__(value, /)
+ 
+Return self%=value.

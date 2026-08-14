@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.SafeUUID.unknown
+
+unknown  
+The platform does not provide information on whether the UUID was generated safely or not.

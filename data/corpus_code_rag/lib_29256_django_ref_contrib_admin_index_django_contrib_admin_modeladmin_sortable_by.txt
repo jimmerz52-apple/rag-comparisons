@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.sortable_by
+
+ModelAdmin.sortable_by  
+By default, the change list page allows sorting by all model fields (and callables that use the ordering argument to the display() decorator or have the admin_order_field attribute) specified in list_display. If you want to disable sorting for some columns, set sortable_by to a collection (e.g. list, tuple, or set) of the subset of list_display that you want to be sortable. An empty collection disables sorting for all columns. If you need to specify this list dynamically, implement a get_sortable_by() method instead.

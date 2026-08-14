@@ -1,0 +1,19 @@
+# matplotlib.category_api#matplotlib.category.StrCategoryConverter.convert
+
+staticconvert(value, unit, axis)[source]
+ 
+Convert strings in value to floats using mapping information stored in the unit object.  Parameters 
+ 
+valuestr or iterable
+
+
+Value or list of values to be converted.  
+unitUnitData
+
+
+An object mapping strings to integers.  
+axisAxis
+
+
+The axis on which the converted value is plotted.  Note axis is unused.     Returns 
+ float or ndarray[float]

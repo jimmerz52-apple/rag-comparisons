@@ -1,0 +1,6 @@
+# python.library.os#os.PRIO_USER
+
+os.PRIO_PROCESS  
+os.PRIO_PGRP  
+os.PRIO_USER  
+Parameters for the getpriority() and setpriority() functions. Availability: Unix.  New in version 3.3.

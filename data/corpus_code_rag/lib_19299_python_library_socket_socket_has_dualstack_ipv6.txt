@@ -1,0 +1,4 @@
+# python.library.socket#socket.has_dualstack_ipv6
+
+socket.has_dualstack_ipv6()  
+Return True if the platform supports creating a TCP socket which can handle both IPv4 and IPv6 connections.  New in version 3.8.

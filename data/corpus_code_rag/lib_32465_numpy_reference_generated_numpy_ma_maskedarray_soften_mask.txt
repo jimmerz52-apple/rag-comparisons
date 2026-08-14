@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.soften_mask
+
+numpy.ma.MaskedArray.soften_mask method   ma.MaskedArray.soften_mask()[source]
+ 
+Force the mask to soft. Whether the mask of a masked array is hard or soft is determined by its hardmask property. soften_mask sets hardmask to False.  See also  ma.MaskedArray.hardmask

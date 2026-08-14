@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.format_data
+
+format_data(value)[source]
+ 
+Return the full string representation of the value with the position unspecified.

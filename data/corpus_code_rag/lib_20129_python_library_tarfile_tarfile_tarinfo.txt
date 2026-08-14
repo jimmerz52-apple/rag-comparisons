@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo
+
+class tarfile.TarInfo(name="")  
+Create a TarInfo object.

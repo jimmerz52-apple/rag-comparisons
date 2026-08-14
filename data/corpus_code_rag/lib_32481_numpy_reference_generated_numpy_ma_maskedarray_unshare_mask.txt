@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.unshare_mask
+
+numpy.ma.MaskedArray.unshare_mask method   ma.MaskedArray.unshare_mask()[source]
+ 
+Copy the mask and set the sharedmask flag to False. Whether the mask is shared between masked arrays can be seen from the sharedmask property. unshare_mask ensures the mask is not shared. A copy of the mask is only made if it was shared.  See also  sharedmask

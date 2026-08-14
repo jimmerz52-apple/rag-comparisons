@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ger
+
+ger(vec2) → Tensor  
+See torch.ger()

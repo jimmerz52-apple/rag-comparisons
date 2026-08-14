@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.InvalidURL
+
+exception http.client.InvalidURL  
+A subclass of HTTPException, raised if a port is given and is either non-numeric or empty.

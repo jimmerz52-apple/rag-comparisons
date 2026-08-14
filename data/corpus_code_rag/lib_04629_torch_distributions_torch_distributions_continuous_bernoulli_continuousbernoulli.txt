@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.continuous_bernoulli.ContinuousBernoulli.log_prob
+
+log_prob(value) [source]

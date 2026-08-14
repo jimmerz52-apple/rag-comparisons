@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.t
+
+t() → Tensor  
+See torch.t()

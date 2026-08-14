@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.intc
+
+class numpy.intc[source]
+ 
+Signed integer type, compatible with C int.  Character code 
+'i'  Alias on this platform (Linux x86_64) 
+numpy.int32: 32-bit signed integer (-2_147_483_648 to 2_147_483_647).

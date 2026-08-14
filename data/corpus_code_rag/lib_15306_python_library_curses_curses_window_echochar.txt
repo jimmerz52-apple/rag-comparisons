@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.echochar
+
+window.echochar(ch[, attr])  
+Add character ch with attribute attr, and immediately call refresh() on the window.

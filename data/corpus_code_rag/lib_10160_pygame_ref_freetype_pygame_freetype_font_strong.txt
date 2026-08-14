@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.strong
+
+strong 
+ The state of the font's strong style flag strong -> bool  Gets or sets whether the font will be bold when drawing text. This default style value will be used for all text rendering and size calculations unless overridden specifically in a render or get_rect() call, via the 'style' parameter.

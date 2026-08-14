@@ -1,0 +1,43 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.DayArchiveView
+
+class DayArchiveView  
+A day archive page showing all objects in a given day. Days in the future throw a 404 error, regardless of whether any objects exist for future days, unless you set allow_future to True. Ancestors (MRO)  django.views.generic.list.MultipleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.dates.BaseDayArchiveView django.views.generic.dates.YearMixin django.views.generic.dates.MonthMixin django.views.generic.dates.DayMixin django.views.generic.dates.BaseDateListView django.views.generic.list.MultipleObjectMixin django.views.generic.dates.DateMixin django.views.generic.base.View  Context In addition to the context provided by MultipleObjectMixin (via BaseDateListView), the template’s context will be:  
+day: A date object representing the given day. 
+next_day: A date object representing the next day, according to allow_empty and allow_future. 
+previous_day: A date object representing the previous day, according to allow_empty and allow_future. 
+next_month: A date object representing the first day of the next month, according to allow_empty and allow_future. 
+previous_month: A date object representing the first day of the previous month, according to allow_empty and allow_future.  Notes  Uses a default template_name_suffix of _archive_day.  Example myapp/views.py: from django.views.generic.dates import DayArchiveView
+
+from myapp.models import Article
+
+class ArticleDayArchiveView(DayArchiveView):
+    queryset = Article.objects.all()
+    date_field = "pub_date"
+    allow_future = True
+ Example myapp/urls.py: from django.urls import path
+
+from myapp.views import ArticleDayArchiveView
+
+urlpatterns = [
+    # Example: /2012/nov/10/
+    path('<int:year>/<str:month>/<int:day>/',
+         ArticleDayArchiveView.as_view(),
+         name="archive_day"),
+]
+ Example myapp/article_archive_day.html: <h1>{{ day }}</h1>
+
+<ul>
+    {% for article in object_list %}
+        <li>{{ article.pub_date|date:"F j, Y" }}: {{ article.title }}</li>
+    {% endfor %}
+</ul>
+
+<p>
+    {% if previous_day %}
+        Previous Day: {{ previous_day }}
+    {% endif %}
+    {% if previous_day and next_day %}--{% endif %}
+    {% if next_day %}
+        Next Day: {{ next_day }}
+    {% endif %}
+</p>

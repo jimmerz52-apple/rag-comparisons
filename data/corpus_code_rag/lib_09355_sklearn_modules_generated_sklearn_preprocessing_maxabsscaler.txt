@@ -1,0 +1,141 @@
+# sklearn.modules.generated.sklearn.preprocessing.maxabsscaler
+
+sklearn.preprocessing.MaxAbsScaler  
+class sklearn.preprocessing.MaxAbsScaler(*, copy=True) [source]
+ 
+Scale each feature by its maximum absolute value. This estimator scales and translates each feature individually such that the maximal absolute value of each feature in the training set will be 1.0. It does not shift/center the data, and thus does not destroy any sparsity. This scaler can also be applied to sparse CSR or CSC matrices.  New in version 0.17.   Parameters 
+ 
+copybool, default=True 
+
+Set to False to perform inplace scaling and avoid a copy (if the input is already a numpy array).    Attributes 
+ 
+scale_ndarray of shape (n_features,) 
+
+Per feature relative scaling of the data.  New in version 0.17: scale_ attribute.   
+max_abs_ndarray of shape (n_features,) 
+
+Per feature maximum absolute value.  
+n_samples_seen_int 
+
+The number of samples processed by the estimator. Will be reset on new calls to fit, but increments across partial_fit calls.      See also  
+maxabs_scale
+
+
+Equivalent function without the estimator API.    Notes NaNs are treated as missing values: disregarded in fit, and maintained in transform. For a comparison of the different scalers, transformers, and normalizers, see examples/preprocessing/plot_all_scaling.py. Examples >>> from sklearn.preprocessing import MaxAbsScaler
+>>> X = [[ 1., -1.,  2.],
+...      [ 2.,  0.,  0.],
+...      [ 0.,  1., -1.]]
+>>> transformer = MaxAbsScaler().fit(X)
+>>> transformer
+MaxAbsScaler()
+>>> transformer.transform(X)
+array([[ 0.5, -1. ,  1. ],
+       [ 1. ,  0. ,  0. ],
+       [ 0. ,  1. , -0.5]])
+ Methods  
+fit(X[, y]) Compute the maximum absolute value to be used for later scaling.  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_params([deep]) Get parameters for this estimator.  
+inverse_transform(X) Scale back the data to the original representation  
+partial_fit(X[, y]) Online computation of max absolute value of X for later scaling.  
+set_params(**params) Set the parameters of this estimator.  
+transform(X) Scale the data    
+fit(X, y=None) [source]
+ 
+Compute the maximum absolute value to be used for later scaling.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data used to compute the per-feature minimum and maximum used for later scaling along the features axis.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted scaler.     
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+inverse_transform(X) [source]
+ 
+Scale back the data to the original representation  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data that should be transformed back.    Returns 
+ 
+X_tr{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Transformed array.     
+  
+partial_fit(X, y=None) [source]
+ 
+Online computation of max absolute value of X for later scaling. All of X is processed as a single batch. This is intended for cases when fit is not feasible due to very large number of n_samples or because X is read from a continuous stream.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data used to compute the mean and standard deviation used for later scaling along the features axis.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted scaler.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+  
+transform(X) [source]
+ 
+Scale the data  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data that should be scaled.    Returns 
+ 
+X_tr{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Transformed array.     
+ 
+ Examples using sklearn.preprocessing.MaxAbsScaler
+ 
+  Compare the effect of different scalers on data with outliers

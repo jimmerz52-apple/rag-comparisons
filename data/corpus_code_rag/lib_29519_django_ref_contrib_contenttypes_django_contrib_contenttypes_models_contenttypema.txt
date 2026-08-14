@@ -1,0 +1,18 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentTypeManager
+
+class ContentTypeManager  
+ContentType also has a custom manager, ContentTypeManager, which adds the following methods:  
+clear_cache()  
+Clears an internal cache used by ContentType to keep track of models for which it has created ContentType instances. You probably won’t ever need to call this method yourself; Django will call it automatically when it’s needed. 
+  
+get_for_id(id)  
+Lookup a ContentType by ID. Since this method uses the same shared cache as get_for_model(), it’s preferred to use this method over the usual ContentType.objects.get(pk=id) 
+  
+get_for_model(model, for_concrete_model=True)  
+Takes either a model class or an instance of a model, and returns the ContentType instance representing that model. for_concrete_model=False allows fetching the ContentType of a proxy model. 
+  
+get_for_models(*models, for_concrete_models=True)  
+Takes a variadic number of model classes, and returns a dictionary mapping the model classes to the ContentType instances representing them. for_concrete_models=False allows fetching the ContentType of proxy models. 
+  
+get_by_natural_key(app_label, model)  
+Returns the ContentType instance uniquely identified by the given application label and model name. The primary purpose of this method is to allow ContentType objects to be referenced via a natural key during deserialization.

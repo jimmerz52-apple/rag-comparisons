@@ -1,0 +1,5 @@
+# skimage.api.skimage.transform#skimage.transform.PiecewiseAffineTransform.__init__
+
+__init__() [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

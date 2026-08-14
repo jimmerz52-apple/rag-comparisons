@@ -1,0 +1,24 @@
+# django.ref.templates.api#django.template.Engine
+
+class Engine(dirs=None, app_dirs=False, context_processors=None, debug=False, loaders=None, string_if_invalid='', file_charset='utf-8', libraries=None, builtins=None, autoescape=True)  
+When instantiating an Engine all arguments must be passed as keyword arguments:  
+dirs is a list of directories where the engine should look for template source files. It is used to configure filesystem.Loader. It defaults to an empty list.  
+app_dirs only affects the default value of loaders. See below. It defaults to False.  
+autoescape controls whether HTML autoescaping is enabled. It defaults to True.  Warning Only set it to False if you’re rendering non-HTML templates!   
+context_processors is a list of dotted Python paths to callables that are used to populate the context when a template is rendered with a request. These callables take a request object as their argument and return a dict of items to be merged into the context. It defaults to an empty list. See RequestContext for more information.  
+debug is a boolean that turns on/off template debug mode. If it is True, the template engine will store additional debug information which can be used to display a detailed report for any exception raised during template rendering. It defaults to False.  
+loaders is a list of template loader classes, specified as strings. Each Loader class knows how to import templates from a particular source. Optionally, a tuple can be used instead of a string. The first item in the tuple should be the Loader class name, subsequent items are passed to the Loader during initialization. It defaults to a list containing:  'django.template.loaders.filesystem.Loader' 
+'django.template.loaders.app_directories.Loader' if and only if app_dirs is True.  If debug is False, these loaders are wrapped in django.template.loaders.cached.Loader. See Loader types for details.  
+string_if_invalid is the output, as a string, that the template system should use for invalid (e.g. misspelled) variables. It defaults to the empty string. See How invalid variables are handled for details.  
+file_charset is the charset used to read template files on disk. It defaults to 'utf-8'.  
+'libraries': A dictionary of labels and dotted Python paths of template tag modules to register with the template engine. This is used to add new libraries or provide alternate labels for existing ones. For example: Engine(
+    libraries={
+        'myapp_tags': 'path.to.myapp.tags',
+        'admin.urls': 'django.contrib.admin.templatetags.admin_urls',
+    },
+)
+ Libraries can be loaded by passing the corresponding dictionary key to the {% load %} tag.  
+'builtins': A list of dotted Python paths of template tag modules to add to built-ins. For example: Engine(
+    builtins=['myapp.builtins'],
+)
+ Tags and filters from built-in libraries can be used without first calling the {% load %} tag.

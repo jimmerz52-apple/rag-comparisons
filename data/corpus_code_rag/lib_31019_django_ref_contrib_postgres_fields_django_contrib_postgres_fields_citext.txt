@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.CIText
+
+class CIText(**options)  
+A mixin to create case-insensitive text fields backed by the citext type. Read about the performance considerations prior to using it. To use citext, use the CITextExtension operation to set up the citext extension in PostgreSQL before the first CreateModel migration operation. If you’re using an ArrayField of CIText fields, you must add 'django.contrib.postgres' in your INSTALLED_APPS, otherwise field values will appear as strings like '{thoughts,django}'. Several fields that use the mixin are provided:

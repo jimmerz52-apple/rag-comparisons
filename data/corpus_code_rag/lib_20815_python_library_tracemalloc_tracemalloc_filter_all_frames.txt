@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Filter.all_frames
+
+all_frames  
+If all_frames is True, all frames of the traceback are checked. If all_frames is False, only the most recent frame is checked. This attribute has no effect if the traceback limit is 1. See the get_traceback_limit() function and Snapshot.traceback_limit attribute.

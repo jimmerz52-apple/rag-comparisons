@@ -1,0 +1,4 @@
+# flask.api.index#flask.current_app
+
+flask.current_app  
+A proxy to the application handling the current request. This is useful to access the application without needing to import it, or if it can’t be imported, such as when using the application factory pattern or in blueprints and extensions. This is only available when an application context is pushed. This happens automatically during requests and CLI commands. It can be controlled manually with app_context(). This is a proxy. See Notes On Proxies for more information.

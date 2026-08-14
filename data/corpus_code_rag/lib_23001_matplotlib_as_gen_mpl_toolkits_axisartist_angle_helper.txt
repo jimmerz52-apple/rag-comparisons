@@ -1,0 +1,19 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper
+
+mpl_toolkits.axisartist.angle_helper  Classes  
+ExtremeFinderCycle(nx, ny[, lon_cycle, ...]) This subclass handles the case where one or both coordinates should be taken modulo 360, or be restricted to not exceed a specific range.  
+FormatterDMS()   
+FormatterHMS()   
+LocatorBase(nbins[, include_last])   
+LocatorD(nbins[, include_last])   
+LocatorDM(nbins[, include_last])   
+LocatorDMS(nbins[, include_last])   
+LocatorH(nbins[, include_last])   
+LocatorHM(nbins[, include_last])   
+LocatorHMS(nbins[, include_last])      Functions  
+select_step(v1, v2, nv[, hour, ...])   
+select_step24(v1, v2, nv[, include_last, ...])   
+select_step360(v1, v2, nv[, include_last, ...])   
+select_step_degree(dv)   
+select_step_hour(dv)   
+select_step_sub(dv)

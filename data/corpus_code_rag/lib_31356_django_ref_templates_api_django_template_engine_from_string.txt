@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.Engine.from_string
+
+Engine.from_string(template_code)  
+Compiles the given template code and returns a Template object.

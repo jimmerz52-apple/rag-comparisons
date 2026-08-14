@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.SharedMemory.size
+
+size  
+Read-only access to size in bytes of the shared memory block.

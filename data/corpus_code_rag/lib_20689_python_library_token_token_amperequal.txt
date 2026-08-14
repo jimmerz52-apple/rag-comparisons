@@ -1,0 +1,4 @@
+# python.library.token#token.AMPEREQUAL
+
+token.AMPEREQUAL  
+Token value for "&=".

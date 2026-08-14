@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.hour.apply_index
+
+pandas.tseries.offsets.Hour.apply_index   Hour.apply_index(other)

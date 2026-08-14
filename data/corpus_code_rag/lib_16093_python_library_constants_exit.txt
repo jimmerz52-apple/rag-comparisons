@@ -1,0 +1,5 @@
+# python.library.constants#exit
+
+quit(code=None)  
+exit(code=None)  
+Objects that when printed, print a message like “Use quit() or Ctrl-D (i.e. EOF) to exit”, and when called, raise SystemExit with the specified exit code.

@@ -1,0 +1,44 @@
+# python.library.urllib.parse#urllib.parse.urlparse
+
+urllib.parse.urlparse(urlstring, scheme='', allow_fragments=True)  
+Parse a URL into six components, returning a 6-item named tuple. This corresponds to the general structure of a URL: scheme://netloc/path;parameters?query#fragment. Each tuple item is a string, possibly empty. The components are not broken up into smaller parts (for example, the network location is a single string), and % escapes are not expanded. The delimiters as shown above are not part of the result, except for a leading slash in the path component, which is retained if present. For example: >>> from urllib.parse import urlparse
+>>> o = urlparse('http://www.cwi.nl:80/%7Eguido/Python.html')
+>>> o   
+ParseResult(scheme='http', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
+            params='', query='', fragment='')
+>>> o.scheme
+'http'
+>>> o.port
+80
+>>> o.geturl()
+'http://www.cwi.nl:80/%7Eguido/Python.html'
+ Following the syntax specifications in RFC 1808, urlparse recognizes a netloc only if it is properly introduced by ‘//’. Otherwise the input is presumed to be a relative URL and thus to start with a path component. >>> from urllib.parse import urlparse
+>>> urlparse('//www.cwi.nl:80/%7Eguido/Python.html')
+ParseResult(scheme='', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
+            params='', query='', fragment='')
+>>> urlparse('www.cwi.nl/%7Eguido/Python.html')
+ParseResult(scheme='', netloc='', path='www.cwi.nl/%7Eguido/Python.html',
+            params='', query='', fragment='')
+>>> urlparse('help/Python.html')
+ParseResult(scheme='', netloc='', path='help/Python.html', params='',
+            query='', fragment='')
+ The scheme argument gives the default addressing scheme, to be used only if the URL does not specify one. It should be the same type (text or bytes) as urlstring, except that the default value '' is always allowed, and is automatically converted to b'' if appropriate. If the allow_fragments argument is false, fragment identifiers are not recognized. Instead, they are parsed as part of the path, parameters or query component, and fragment is set to the empty string in the return value. The return value is a named tuple, which means that its items can be accessed by index or as named attributes, which are:   
+Attribute Index Value Value if not present   
+scheme 0 URL scheme specifier scheme parameter  
+netloc 1 Network location part empty string  
+path 2 Hierarchical path empty string  
+params 3 Parameters for last path element empty string  
+query 4 Query component empty string  
+fragment 5 Fragment identifier empty string  
+username  User name None  
+password  Password None  
+hostname  Host name (lower case) None  
+port  Port number as integer, if present None   Reading the port attribute will raise a ValueError if an invalid port is specified in the URL. See section Structured Parse Results for more information on the result object. Unmatched square brackets in the netloc attribute will raise a ValueError. Characters in the netloc attribute that decompose under NFKC normalization (as used by the IDNA encoding) into any of /, ?, #, @, or : will raise a ValueError. If the URL is decomposed before parsing, no error will be raised. As is the case with all named tuples, the subclass has a few additional methods and attributes that are particularly useful. One such method is _replace(). The _replace() method will return a new ParseResult object replacing specified fields with new values. >>> from urllib.parse import urlparse
+>>> u = urlparse('//www.cwi.nl:80/%7Eguido/Python.html')
+>>> u
+ParseResult(scheme='', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
+            params='', query='', fragment='')
+>>> u._replace(scheme='http')
+ParseResult(scheme='http', netloc='www.cwi.nl:80', path='/%7Eguido/Python.html',
+            params='', query='', fragment='')
+  Changed in version 3.2: Added IPv6 URL parsing capabilities.   Changed in version 3.3: The fragment is now parsed for all URL schemes (unless allow_fragment is false), in accordance with RFC 3986. Previously, a whitelist of schemes that support fragments existed.   Changed in version 3.6: Out-of-range port numbers now raise ValueError, instead of returning None.   Changed in version 3.8: Characters that affect netloc parsing under NFKC normalization will now raise ValueError.

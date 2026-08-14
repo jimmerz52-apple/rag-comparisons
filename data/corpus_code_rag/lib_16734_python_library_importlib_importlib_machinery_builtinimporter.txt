@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.BuiltinImporter
+
+class importlib.machinery.BuiltinImporter  
+An importer for built-in modules. All known built-in modules are listed in sys.builtin_module_names. This class implements the importlib.abc.MetaPathFinder and importlib.abc.InspectLoader ABCs. Only class methods are defined by this class to alleviate the need for instantiation.  Changed in version 3.5: As part of PEP 489, the builtin importer now implements Loader.create_module() and Loader.exec_module()

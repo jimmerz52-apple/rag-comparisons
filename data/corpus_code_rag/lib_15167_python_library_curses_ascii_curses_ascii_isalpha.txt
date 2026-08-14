@@ -1,0 +1,5 @@
+# python.library.curses.ascii#curses.ascii.isalpha
+
+curses.ascii.isalpha(c)  
+Checks for an ASCII alphabetic character; it is equivalent to isupper(c) or
+islower(c).

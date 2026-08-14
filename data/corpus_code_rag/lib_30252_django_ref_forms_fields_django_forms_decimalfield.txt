@@ -1,0 +1,16 @@
+# django.ref.forms.fields#django.forms.DecimalField
+
+class DecimalField(**kwargs)  
+ Default widget: NumberInput when Field.localize is False, else TextInput. Empty value: None
+ Normalizes to: A Python decimal. Validates that the given value is a decimal. Uses MaxValueValidator and MinValueValidator if max_value and min_value are provided. Leading and trailing whitespace is ignored. Error message keys: required, invalid, max_value, min_value, max_digits, max_decimal_places, max_whole_digits
+  The max_value and min_value error messages may contain %(limit_value)s, which will be substituted by the appropriate limit. Similarly, the max_digits, max_decimal_places and max_whole_digits error messages may contain %(max)s. Takes four optional arguments:  
+max_value 
+  
+min_value  
+These control the range of values permitted in the field, and should be given as decimal.Decimal values. 
+  
+max_digits  
+The maximum number of digits (those before the decimal point plus those after the decimal point, with leading zeros stripped) permitted in the value. 
+  
+decimal_places  
+The maximum number of decimal places permitted.

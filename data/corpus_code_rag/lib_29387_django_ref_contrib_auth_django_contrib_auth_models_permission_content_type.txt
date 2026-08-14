@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.Permission.content_type
+
+content_type  
+Required. A reference to the django_content_type database table, which contains a record for each installed model.

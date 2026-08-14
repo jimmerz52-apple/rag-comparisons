@@ -1,0 +1,3 @@
+# django.ref.models.expressions#django.db.models.Subquery
+
+class Subquery(queryset, output_field=None)

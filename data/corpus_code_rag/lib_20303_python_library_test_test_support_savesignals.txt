@@ -1,0 +1,4 @@
+# python.library.test#test.support.SaveSignals
+
+class test.support.SaveSignals  
+Class to save and restore signal handlers registered by the Python signal handler.

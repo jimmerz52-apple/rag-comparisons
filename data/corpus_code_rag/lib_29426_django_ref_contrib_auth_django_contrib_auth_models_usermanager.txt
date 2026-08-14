@@ -1,0 +1,12 @@
+# django.ref.contrib.auth#django.contrib.auth.models.UserManager
+
+class models.UserManager  
+The User model has a custom manager that has the following helper methods (in addition to the methods provided by BaseUserManager):  
+create_user(username, email=None, password=None, **extra_fields)  
+Creates, saves and returns a User. The username and password are set as given. The domain portion of email is automatically converted to lowercase, and the returned User object will have is_active set to True. If no password is provided, set_unusable_password() will be called. The extra_fields keyword arguments are passed through to the User’s __init__ method to allow setting arbitrary fields on a custom user model. See Creating users for example usage. 
+  
+create_superuser(username, email=None, password=None, **extra_fields)  
+Same as create_user(), but sets is_staff and is_superuser to True. 
+  
+with_perm(perm, is_active=True, include_superusers=True, backend=None, obj=None)  
+Returns users that have the given permission perm either in the "<app label>.<permission codename>" format or as a Permission instance. Returns an empty queryset if no users who have the perm found. If is_active is True (default), returns only active users, or if False, returns only inactive users. Use None to return all users irrespective of active state. If include_superusers is True (default), the result will include superusers. If backend is passed in and it’s defined in AUTHENTICATION_BACKENDS, then this method will use it. Otherwise, it will use the backend in AUTHENTICATION_BACKENDS, if there is only one, or raise an exception.

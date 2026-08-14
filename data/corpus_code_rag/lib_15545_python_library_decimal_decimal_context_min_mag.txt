@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.min_mag
+
+min_mag(x, y)  
+Compares the values numerically with their sign ignored.

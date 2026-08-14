@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLContext.wrap_bio
+
+SSLContext.wrap_bio(incoming, outgoing, server_side=False, server_hostname=None, session=None)  
+Wrap the BIO objects incoming and outgoing and return an instance of SSLContext.sslobject_class (default SSLObject). The SSL routines will read input data from the incoming BIO and write data to the outgoing BIO. The server_side, server_hostname and session parameters have the same meaning as in SSLContext.wrap_socket().  Changed in version 3.6: session argument was added.   Changed in version 3.7: The method returns on instance of SSLContext.sslobject_class instead of hard-coded SSLObject.

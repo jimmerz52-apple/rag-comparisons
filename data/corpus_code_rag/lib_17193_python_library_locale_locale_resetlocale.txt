@@ -1,0 +1,4 @@
+# python.library.locale#locale.resetlocale
+
+locale.resetlocale(category=LC_ALL)  
+Sets the locale for category to the default setting. The default setting is determined by calling getdefaultlocale(). category defaults to LC_ALL.

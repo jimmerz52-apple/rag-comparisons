@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.push
+
+push(o)[source]
+ 
+Push o to the stack at current position. Discard all later elements. o is returned.

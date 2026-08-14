@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axes#mpl_toolkits.axisartist.axislines.Axes.new_gridlines
+
+new_gridlines(grid_helper=None)[source]
+ 
+Create and return a new GridlineCollection instance. which : "major" or "minor" axis : "both", "x" or "y"

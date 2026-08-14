@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.half
+
+half()  
+Casts this storage to half type

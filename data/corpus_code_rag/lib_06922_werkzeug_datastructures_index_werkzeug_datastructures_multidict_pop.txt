@@ -1,0 +1,12 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.pop
+
+pop(key, default=no value)  
+Pop the first item for a list on the dict. Afterwards the key is removed from the dict, so additional values are discarded: >>> d = MultiDict({"foo": [1, 2, 3]})
+>>> d.pop("foo")
+1
+>>> "foo" in d
+False
+  Parameters 
+ 
+key – the key to pop. 
+default – if provided the value to return if the key was not in the dictionary.

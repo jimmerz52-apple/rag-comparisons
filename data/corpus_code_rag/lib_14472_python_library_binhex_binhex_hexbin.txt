@@ -1,0 +1,4 @@
+# python.library.binhex#binhex.hexbin
+
+binhex.hexbin(input, output)  
+Decode a binhex file input. input may be a filename or a file-like object supporting read() and close() methods. The resulting file is written to a file named output, unless the argument is None in which case the output filename is read from the binhex file.

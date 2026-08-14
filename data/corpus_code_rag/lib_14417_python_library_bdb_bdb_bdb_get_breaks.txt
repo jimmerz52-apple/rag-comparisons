@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.get_breaks
+
+get_breaks(filename, lineno)  
+Return all breakpoints for lineno in filename, or an empty list if none are set.

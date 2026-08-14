@@ -1,0 +1,17 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.assert_has_awaits
+
+assert_has_awaits(calls, any_order=False)  
+Assert the mock has been awaited with the specified calls. The await_args_list list is checked for the awaits. If any_order is false then the awaits must be sequential. There can be extra calls before or after the specified awaits. If any_order is true then the awaits can be in any order, but they must all appear in await_args_list. >>> mock = AsyncMock()
+>>> async def main(*args, **kwargs):
+...     await mock(*args, **kwargs)
+...
+>>> calls = [call("foo"), call("bar")]
+>>> mock.assert_has_awaits(calls)
+Traceback (most recent call last):
+...
+AssertionError: Awaits not found.
+Expected: [call('foo'), call('bar')]
+Actual: []
+>>> asyncio.run(main('foo'))
+>>> asyncio.run(main('bar'))
+>>> mock.assert_has_awaits(calls)

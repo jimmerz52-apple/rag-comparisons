@@ -1,0 +1,10 @@
+# flask.api.index#flask.Blueprint.before_request
+
+before_request(f)  
+Register a function to run before each request. For example, this can be used to open a database connection, or to load the logged in user from the session. @app.before_request
+def load_user():
+    if "user_id" in session:
+        g.user = db.session.get(session["user_id"])
+ The function will be called without any arguments. If it returns a non-None value, the value is handled as if it was the return value from the view, and further request handling is stopped.  Parameters 
+f (Callable[[], None]) –   Return type 
+Callable[[], None]

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.get_plot_commands
+
+matplotlib.pyplot.get_plot_commands   matplotlib.pyplot.get_plot_commands()[source]
+ 
+Get a sorted list of all of the plotting commands.

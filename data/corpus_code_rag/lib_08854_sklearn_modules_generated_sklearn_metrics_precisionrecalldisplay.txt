@@ -1,0 +1,77 @@
+# sklearn.modules.generated.sklearn.metrics.precisionrecalldisplay
+
+sklearn.metrics.PrecisionRecallDisplay  
+class sklearn.metrics.PrecisionRecallDisplay(precision, recall, *, average_precision=None, estimator_name=None, pos_label=None) [source]
+ 
+Precision Recall visualization. It is recommend to use plot_precision_recall_curve to create a visualizer. All parameters are stored as attributes. Read more in the User Guide.  Parameters 
+ 
+precisionndarray 
+
+Precision values.  
+recallndarray 
+
+Recall values.  
+average_precisionfloat, default=None 
+
+Average precision. If None, the average precision is not shown.  
+estimator_namestr, default=None 
+
+Name of estimator. If None, then the estimator name is not shown.  
+pos_labelstr or int, default=None 
+
+The class considered as the positive class. If None, the class will not be shown in the legend.  New in version 0.24.     Attributes 
+ 
+line_matplotlib Artist 
+
+Precision recall curve.  
+ax_matplotlib Axes 
+
+Axes with precision recall curve.  
+figure_matplotlib Figure 
+
+Figure containing the curve.      See also  
+precision_recall_curve
+
+
+Compute precision-recall pairs for different probability thresholds.  
+plot_precision_recall_curve
+
+
+Plot Precision Recall Curve for binary classifiers.    Examples >>> from sklearn.datasets import make_classification
+>>> from sklearn.metrics import (precision_recall_curve,
+...                              PrecisionRecallDisplay)
+>>> from sklearn.model_selection import train_test_split
+>>> from sklearn.svm import SVC
+>>> X, y = make_classification(random_state=0)
+>>> X_train, X_test, y_train, y_test = train_test_split(X, y,
+...                                                     random_state=0)
+>>> clf = SVC(random_state=0)
+>>> clf.fit(X_train, y_train)
+SVC(random_state=0)
+>>> predictions = clf.predict(X_test)
+>>> precision, recall, _ = precision_recall_curve(y_test, predictions)
+>>> disp = PrecisionRecallDisplay(precision=precision, recall=recall)
+>>> disp.plot() 
+ Methods  
+plot([ax, name]) Plot visualization.    
+plot(ax=None, *, name=None, **kwargs) [source]
+ 
+Plot visualization. Extra keyword arguments will be passed to matplotlib’s plot.  Parameters 
+ 
+axMatplotlib Axes, default=None 
+
+Axes object to plot on. If None, a new figure and axes is created.  
+namestr, default=None 
+
+Name of precision recall curve for labeling. If None, use the name of the estimator.  
+**kwargsdict 
+
+Keyword arguments to be passed to matplotlib’s plot.    Returns 
+ 
+displayPrecisionRecallDisplay 
+
+Object that stores computed values.     
+ 
+ Examples using sklearn.metrics.PrecisionRecallDisplay
+ 
+  Visualizations with Display Objects

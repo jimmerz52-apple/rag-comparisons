@@ -1,0 +1,12 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ProcessFormView
+
+class django.views.generic.edit.ProcessFormView  
+A mixin that provides basic HTTP GET and POST workflow.  Note This is named ‘ProcessFormView’ and inherits directly from django.views.generic.base.View, but breaks if used independently, so it is more of a mixin.  Extends  django.views.generic.base.View  Methods and Attributes  
+get(request, *args, **kwargs)  
+Renders a response using a context created with get_context_data(). 
+  
+post(request, *args, **kwargs)  
+Constructs a form, checks the form for validity, and handles it accordingly. 
+  
+put(*args, **kwargs)  
+The PUT action is also handled and passes all parameters through to post().

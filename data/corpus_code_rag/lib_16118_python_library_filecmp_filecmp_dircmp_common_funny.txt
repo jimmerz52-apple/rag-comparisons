@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.common_funny
+
+common_funny  
+Names in both a and b, such that the type differs between the directories, or names for which os.stat() reports an error.

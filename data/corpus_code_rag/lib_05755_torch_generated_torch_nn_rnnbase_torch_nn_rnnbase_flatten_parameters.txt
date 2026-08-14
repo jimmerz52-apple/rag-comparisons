@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.rnnbase#torch.nn.RNNBase.flatten_parameters
+
+flatten_parameters() [source]
+ 
+Resets parameter data pointer so that they can use faster code paths. Right now, this works only if the module is on the GPU and cuDNN is enabled. Otherwise, it’s a no-op.

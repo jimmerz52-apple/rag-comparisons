@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.DEFAULT_FORMAT
+
+tarfile.DEFAULT_FORMAT  
+The default format for creating archives. This is currently PAX_FORMAT.  Changed in version 3.8: The default format for new archives was changed to PAX_FORMAT from GNU_FORMAT.

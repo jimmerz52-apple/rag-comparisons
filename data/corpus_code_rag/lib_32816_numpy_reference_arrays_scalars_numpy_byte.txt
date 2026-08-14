@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.byte
+
+class numpy.byte[source]
+ 
+Signed integer type, compatible with C char.  Character code 
+'b'  Alias on this platform (Linux x86_64) 
+numpy.int8: 8-bit signed integer (-128 to 127).

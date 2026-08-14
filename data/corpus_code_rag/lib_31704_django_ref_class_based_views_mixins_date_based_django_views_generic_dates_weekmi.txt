@@ -1,0 +1,21 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.WeekMixin
+
+class WeekMixin  
+A mixin that can be used to retrieve and provide parsing information for a week component of a date. Methods and Attributes  
+week_format  
+The strftime() format to use when parsing the week. By default, this is '%U', which means the week starts on Sunday. Set it to '%W' or '%V' (ISO 8601 week) if your week starts on Monday.  New in Django 3.2: Support for the '%V' week format was added.  
+  
+week  
+Optional The value for the week, as a string. By default, set to None, which means the week will be determined using other means. 
+  
+get_week_format()  
+Returns the strftime() format to use when parsing the week. Returns week_format by default. 
+  
+get_week()  
+Returns the week for which this view will display data, as a string. Tries the following sources, in order:  The value of the WeekMixin.week attribute. The value of the week argument captured in the URL pattern The value of the week GET query argument.  Raises a 404 if no valid week specification can be found. 
+  
+get_next_week(date)  
+Returns a date object containing the first day of the week after the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future. 
+  
+get_prev_week(date)  
+Returns a date object containing the first day of the week before the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

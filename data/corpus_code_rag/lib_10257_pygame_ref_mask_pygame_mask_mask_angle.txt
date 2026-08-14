@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.angle
+
+angle() 
+ Returns the orientation of the set bits angle() -> theta  Finds the approximate orientation (from -90 to 90 degrees) of the set bits in the mask. This works best if performed on a mask with only one connected component.     
+Returns:
+the orientation of the set bits in the mask, it will return 0.0 if the mask has no bits set  
+Return type:
+float     Note See connected_component() for details on how a connected component is calculated.

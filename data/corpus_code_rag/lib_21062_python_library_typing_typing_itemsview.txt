@@ -1,0 +1,4 @@
+# python.library.typing#typing.ItemsView
+
+class typing.ItemsView(MappingView, Generic[KT_co, VT_co])  
+A generic version of collections.abc.ItemsView.  Deprecated since version 3.9: collections.abc.ItemsView now supports []. See PEP 585 and Generic Alias Type.

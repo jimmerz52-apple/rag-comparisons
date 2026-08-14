@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__len__
+
+numpy.ndarray.__len__ method   ndarray.__len__(/)
+ 
+Return len(self).

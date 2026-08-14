@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.ElementDeclHandler
+
+xmlparser.ElementDeclHandler(name, model)  
+Called once for each element type declaration. name is the name of the element type, and model is a representation of the content model.

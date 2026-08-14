@@ -1,0 +1,4 @@
+# python.library.csv#csv.Dialect.doublequote
+
+Dialect.doublequote  
+Controls how instances of quotechar appearing inside a field should themselves be quoted. When True, the character is doubled. When False, the escapechar is used as a prefix to the quotechar. It defaults to True. On output, if doublequote is False and no escapechar is set, Error is raised if a quotechar is found in a field.

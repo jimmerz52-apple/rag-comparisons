@@ -1,0 +1,16 @@
+# skimage.api.skimage#skimage.img_as_ubyte
+
+skimage.img_as_ubyte(image, force_copy=False) [source]
+ 
+Convert an image to 8-bit unsigned integer format.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+force_copybool, optional 
+
+Force a copy of the data, irrespective of its current dtype.    Returns 
+ 
+outndarray of ubyte (uint8) 
+
+Output image.     Notes Negative input values will be clipped. Positive values are scaled between 0 and 255.

@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.mtime
+
+TarInfo.mtime  
+Time of last modification.

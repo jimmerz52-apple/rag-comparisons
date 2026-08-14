@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.log10
+
+log10() → Tensor  
+See torch.log10()

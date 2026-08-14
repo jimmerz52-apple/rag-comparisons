@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.override
+
+override(language, deactivate=False)  
+A Python context manager that uses django.utils.translation.activate() to fetch the translation object for a given language, activates it as the translation object for the current thread and reactivates the previous active language on exit. Optionally, it can deactivate the temporary translation on exit with django.utils.translation.deactivate() if the deactivate argument is True. If you pass None as the language argument, a NullTranslations() instance is activated within the context. override is also usable as a function decorator.

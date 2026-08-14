@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_shared_x_axes
+
+matplotlib.axes.Axes.get_shared_x_axes   Axes.get_shared_x_axes()[source]
+ 
+Return a reference to the shared axes Grouper object for x axes.

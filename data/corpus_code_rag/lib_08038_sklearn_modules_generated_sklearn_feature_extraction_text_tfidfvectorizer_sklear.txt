@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidfvectorizer#sklearn.feature_extraction.text.TfidfVectorizer.transform
+
+transform(raw_documents) [source]
+ 
+Transform documents to document-term matrix. Uses the vocabulary and document frequencies (df) learned by fit (or fit_transform).  Parameters 
+ 
+raw_documentsiterable 
+
+An iterable which yields either str, unicode or file objects.    Returns 
+ 
+Xsparse matrix of (n_samples, n_features) 
+
+Tf-idf-weighted document-term matrix.

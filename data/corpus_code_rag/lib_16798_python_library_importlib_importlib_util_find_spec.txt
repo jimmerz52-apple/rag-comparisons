@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.util.find_spec
+
+importlib.util.find_spec(name, package=None)  
+Find the spec for a module, optionally relative to the specified package name. If the module is in sys.modules, then sys.modules[name].__spec__ is returned (unless the spec would be None or is not set, in which case ValueError is raised). Otherwise a search using sys.meta_path is done. None is returned if no spec is found. If name is for a submodule (contains a dot), the parent module is automatically imported. name and package work the same as for import_module().  New in version 3.4.   Changed in version 3.7: Raises ModuleNotFoundError instead of AttributeError if package is in fact not a package (i.e. lacks a __path__ attribute).

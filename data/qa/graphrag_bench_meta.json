@@ -4,12 +4,12 @@
   "citation": "https://arxiv.org/abs/2506.05690",
   "subset": "novel",
   "source": "Novel-4128",
-  "n_questions": 7,
+  "n_questions": 72,
   "n_documents": 27,
   "type_counts": {
-    "Fact Retrieval": 2,
-    "Complex Reasoning": 2,
-    "Contextual Summarize": 2,
+    "Fact Retrieval": 40,
+    "Complex Reasoning": 15,
+    "Contextual Summarize": 16,
     "Creative Generation": 1
   },
   "corpus_dir": "/Users/jimmyscray/Code/rag-benchmark/data/corpus_graphrag_bench",

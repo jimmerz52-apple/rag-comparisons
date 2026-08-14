@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.linear_model.multitaskelasticnetcv#sklearn.linear_model.MultiTaskElasticNetCV.predict
+
+predict(X) [source]
+ 
+Predict using the linear model.  Parameters 
+ 
+Xarray-like or sparse matrix, shape (n_samples, n_features) 
+
+Samples.    Returns 
+ 
+Carray, shape (n_samples,) 
+
+Returns predicted values.

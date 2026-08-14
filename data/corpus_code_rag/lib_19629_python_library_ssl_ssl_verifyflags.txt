@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.VerifyFlags
+
+class ssl.VerifyFlags  
+enum.IntFlag collection of VERIFY_* constants.  New in version 3.6.

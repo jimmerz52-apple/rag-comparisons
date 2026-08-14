@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.AddressHeader.groups
+
+groups  
+A tuple of Group objects encoding the addresses and groups found in the header value. Addresses that are not part of a group are represented in this list as single-address Groups whose display_name is None.

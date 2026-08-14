@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.session
+
+HttpRequest.session  
+From the SessionMiddleware: A readable and writable, dictionary-like object that represents the current session.

@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.WebAggApplication.WebSocket.on_message
+
+on_message(message)[source]
+ 
+Handle incoming messages on the WebSocket This method must be overridden.  Changed in version 4.5: on_message can be a coroutine.

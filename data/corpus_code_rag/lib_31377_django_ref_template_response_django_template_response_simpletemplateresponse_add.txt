@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.add_post_render_callback
+
+SimpleTemplateResponse.add_post_render_callback()  
+Add a callback that will be invoked after rendering has taken place. This hook can be used to defer certain processing operations (such as caching) until after rendering has occurred. If the SimpleTemplateResponse has already been rendered, the callback will be invoked immediately. When called, callbacks will be passed a single argument – the rendered SimpleTemplateResponse instance. If the callback returns a value that is not None, this will be used as the response instead of the original response object (and will be passed to the next post rendering callback etc.)

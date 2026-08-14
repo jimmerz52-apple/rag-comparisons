@@ -1,0 +1,4 @@
+# python.library.test#test.support.reap_children
+
+test.support.reap_children()  
+Use this at the end of test_main whenever sub-processes are started. This will help ensure that no extra children (zombies) stick around to hog resources and create problems when looking for refleaks.

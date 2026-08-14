@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentTypeManager.get_by_natural_key
+
+get_by_natural_key(app_label, model)  
+Returns the ContentType instance uniquely identified by the given application label and model name. The primary purpose of this method is to allow ContentType objects to be referenced via a natural key during deserialization.

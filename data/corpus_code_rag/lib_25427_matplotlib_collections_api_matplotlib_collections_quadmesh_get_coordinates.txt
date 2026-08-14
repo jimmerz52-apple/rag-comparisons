@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.get_coordinates
+
+get_coordinates()[source]
+ 
+Return the vertices of the mesh as an (M+1, N+1, 2) array. M, N are the number of quadrilaterals in the rows / columns of the mesh, corresponding to (M+1, N+1) vertices. The last dimension specifies the components (x, y).

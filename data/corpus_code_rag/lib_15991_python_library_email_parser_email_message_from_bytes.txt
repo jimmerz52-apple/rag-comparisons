@@ -1,0 +1,4 @@
+# python.library.email.parser#email.message_from_bytes
+
+email.message_from_bytes(s, _class=None, *, policy=policy.compat32)  
+Return a message object structure from a bytes-like object. This is equivalent to BytesParser().parsebytes(s). Optional _class and policy are interpreted as with the BytesParser class constructor.  New in version 3.2.   Changed in version 3.3: Removed the strict argument. Added the policy keyword.

@@ -1,0 +1,7 @@
+# python.library.io#io.TextIOBase.seek
+
+seek(offset, whence=SEEK_SET)  
+Change the stream position to the given offset. Behaviour depends on the whence parameter. The default value for whence is SEEK_SET.  
+SEEK_SET or 0: seek from the start of the stream (the default); offset must either be a number returned by TextIOBase.tell(), or zero. Any other offset value produces undefined behaviour. 
+SEEK_CUR or 1: “seek” to the current position; offset must be zero, which is a no-operation (all other values are unsupported). 
+SEEK_END or 2: seek to the end of the stream; offset must be zero (all other values are unsupported).  Return the new absolute position as an opaque number.  New in version 3.1: The SEEK_* constants.

@@ -1,0 +1,13 @@
+# 650
+Task: 650
+
+# Write a python function to check whether the given two arrays are equal or not.
+def are_Equal(arr1,arr2,n,m):
+    if (n != m):
+        return False
+    arr1.sort()
+    arr2.sort()
+    for i in range(0,n - 1):
+        if (arr1[i] != arr2[i]):
+            return False
+    return True

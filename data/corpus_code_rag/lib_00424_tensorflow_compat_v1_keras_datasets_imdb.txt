@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.keras.datasets.imdb
+
+Module: tf.compat.v1.keras.datasets.imdb IMDB sentiment classification dataset. Functions get_word_index(...): Retrieves a dict mapping words to their index in the IMDB dataset. load_data(...): Loads the IMDB dataset.

@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.Calendar.yeardayscalendar
+
+yeardayscalendar(year, width=3)  
+Return the data for the specified year ready for formatting (similar to yeardatescalendar()). Entries in the week lists are day numbers. Day numbers outside this month are zero.

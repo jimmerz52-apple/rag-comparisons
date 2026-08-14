@@ -1,0 +1,6 @@
+# django.ref.class-based-views.generic-display#django.views.generic.detail.BaseDetailView
+
+class django.views.generic.detail.BaseDetailView  
+A base view for displaying a single object. It is not intended to be used directly, but rather as a parent class of the django.views.generic.detail.DetailView or other views representing details of a single object. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.detail.SingleObjectMixin django.views.generic.base.View  Methods  
+get(request, *args, **kwargs)  
+Adds object to the context.

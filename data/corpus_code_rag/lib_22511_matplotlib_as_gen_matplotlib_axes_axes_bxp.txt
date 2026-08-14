@@ -1,0 +1,62 @@
+# matplotlib._as_gen.matplotlib.axes.axes.bxp
+
+matplotlib.axes.Axes.bxp   Axes.bxp(bxpstats, positions=None, widths=None, vert=True, patch_artist=False, shownotches=False, showmeans=False, showcaps=True, showbox=True, showfliers=True, boxprops=None, whiskerprops=None, flierprops=None, medianprops=None, capprops=None, meanprops=None, meanline=False, manage_ticks=True, zorder=None)[source]
+ 
+Drawing function for box and whisker plots. Make a box and whisker plot for each column of x or each vector in sequence x. The box extends from the lower to upper quartile values of the data, with a line at the median. The whiskers extend from the box to show the range of the data. Flier points are those past the end of the whiskers.  Parameters 
+ 
+bxpstatslist of dicts
+
+
+A list of dictionaries containing stats for each boxplot. Required keys are:  
+med: Median (scalar). 
+q1, q3: First & third quartiles (scalars). 
+whislo, whishi: Lower & upper whisker positions (scalars).  Optional keys are:  
+mean: Mean (scalar). Needed if showmeans=True. 
+fliers: Data beyond the whiskers (array-like). Needed if showfliers=True. 
+cilo, cihi: Lower & upper confidence intervals about the median. Needed if shownotches=True. 
+label: Name of the dataset (str). If available, this will be used a tick label for the boxplot   
+positionsarray-like, default: [1, 2, ..., n]
+
+
+The positions of the boxes. The ticks and limits are automatically set to match the positions.  
+widthsfloat or array-like, default: None
+
+
+The widths of the boxes. The default is clip(0.15*(distance between extreme positions), 0.15, 0.5).  
+vertbool, default: True
+
+
+If True (default), makes the boxes vertical. If False, makes horizontal boxes.  
+patch_artistbool, default: False
+
+
+If False produces boxes with the Line2D artist. If True produces boxes with the Patch artist.  
+shownotches, showmeans, showcaps, showbox, showfliersbool
+
+
+Whether to draw the CI notches, the mean value (both default to False), the caps, the box, and the fliers (all three default to True).  
+boxprops, whiskerprops, capprops, flierprops, medianprops, meanpropsdict, optional
+
+
+Artist properties for the boxes, whiskers, caps, fliers, medians, and means.  
+meanlinebool, default: False
+
+
+If True (and showmeans is True), will try to render the mean as a line spanning the full width of the box according to meanprops. Not recommended if shownotches is also True. Otherwise, means will be shown as points.  
+manage_ticksbool, default: True
+
+
+If True, the tick locations and labels will be adjusted to match the boxplot positions.  
+zorderfloat, default: Line2D.zorder = 2
+
+
+The zorder of the resulting boxplot.    Returns 
+ dict
+
+A dictionary mapping each component of the boxplot to a list of the Line2D instances created. That dictionary has the following keys (assuming vertical boxplots):  
+boxes: main bodies of the boxplot showing the quartiles, and the median's confidence intervals if enabled. 
+medians: horizontal lines at the median of each box. 
+whiskers: vertical lines up to the last non-outlier data. 
+caps: horizontal lines at the ends of the whiskers. 
+fliers: points representing data beyond the whiskers (fliers). 
+means: points or lines representing the means.      Examples (Source code, png, pdf)    (png, pdf)

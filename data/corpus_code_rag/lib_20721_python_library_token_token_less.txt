@@ -1,0 +1,4 @@
+# python.library.token#token.LESS
+
+token.LESS  
+Token value for "<".

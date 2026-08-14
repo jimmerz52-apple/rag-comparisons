@@ -1,0 +1,4 @@
+# python.library.difflib#difflib.SequenceMatcher.quick_ratio
+
+quick_ratio()  
+Return an upper bound on ratio() relatively quickly.

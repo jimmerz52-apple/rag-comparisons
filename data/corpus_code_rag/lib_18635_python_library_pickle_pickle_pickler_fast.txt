@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.Pickler.fast
+
+fast  
+Deprecated. Enable fast mode if set to a true value. The fast mode disables the usage of memo, therefore speeding the pickling process by not generating superfluous PUT opcodes. It should not be used with self-referential objects, doing otherwise will cause Pickler to recurse infinitely. Use pickletools.optimize() if you need more compact pickles.

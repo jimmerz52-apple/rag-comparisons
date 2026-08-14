@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.SourceLoader.load_module
+
+load_module(fullname)  
+Concrete implementation of Loader.load_module().  Deprecated since version 3.4: Use exec_module() instead.

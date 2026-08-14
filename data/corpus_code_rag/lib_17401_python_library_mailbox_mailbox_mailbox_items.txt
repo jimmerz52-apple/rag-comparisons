@@ -1,0 +1,5 @@
+# python.library.mailbox#mailbox.Mailbox.items
+
+iteritems()  
+items()  
+Return an iterator over (key, message) pairs, where key is a key and message is a message representation, if called as iteritems() or return a list of such pairs if called as items(). The messages are represented as instances of the appropriate format-specific Message subclass unless a custom message factory was specified when the Mailbox instance was initialized.

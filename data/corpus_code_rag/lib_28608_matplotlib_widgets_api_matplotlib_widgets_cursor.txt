@@ -1,0 +1,30 @@
+# matplotlib.widgets_api#matplotlib.widgets.Cursor
+
+classmatplotlib.widgets.Cursor(ax, horizOn=True, vertOn=True, useblit=False, **lineprops)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A crosshair cursor that spans the axes and moves with mouse cursor. For the cursor to remain responsive you must keep a reference to it.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+The Axes to attach the cursor to.  
+horizOnbool, default: True
+
+
+Whether to draw the horizontal line.  
+vertOnbool, default: True
+
+
+Whether to draw the vertical line.  
+useblitbool, default: False
+
+
+Use blitting for faster drawing if supported by the backend.    Other Parameters 
+ **lineprops
+
+Line2D properties that control the appearance of the lines. See also axhline.     Examples See Cursor.   clear(event)[source]
+ 
+Internal event handler to clear the cursor. 
+   onmove(event)[source]
+ 
+Internal event handler to draw the cursor when the mouse moves.

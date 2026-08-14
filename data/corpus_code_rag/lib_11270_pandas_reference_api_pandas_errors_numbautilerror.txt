@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.numbautilerror
+
+pandas.errors.NumbaUtilError   exceptionpandas.errors.NumbaUtilError[source]
+ 
+Error raised for unsupported Numba engine routines.

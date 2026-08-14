@@ -1,0 +1,6 @@
+# 805
+Task: 805
+
+# Write a function to find the list in a list of lists whose sum of elements is the highest.
+def max_sum_list(lists):
+ return max(lists, key=sum)

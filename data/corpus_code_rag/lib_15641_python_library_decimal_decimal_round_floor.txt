@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.ROUND_FLOOR
+
+decimal.ROUND_FLOOR  
+Round towards -Infinity.

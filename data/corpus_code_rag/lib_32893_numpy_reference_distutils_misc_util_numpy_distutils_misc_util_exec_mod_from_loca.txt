@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.exec_mod_from_location
+
+numpy.distutils.misc_util.exec_mod_from_location(modname, modfile)[source]
+ 
+Use importlib machinery to import a module modname from the file modfile. Depending on the spec.loader, the module may not be registered in sys.modules.

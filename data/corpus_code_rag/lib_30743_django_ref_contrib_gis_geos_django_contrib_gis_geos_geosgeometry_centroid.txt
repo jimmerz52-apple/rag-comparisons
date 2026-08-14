@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.centroid
+
+GEOSGeometry.centroid  
+Returns a Point object representing the geometric center of the geometry. The point is not guaranteed to be on the interior of the geometry.

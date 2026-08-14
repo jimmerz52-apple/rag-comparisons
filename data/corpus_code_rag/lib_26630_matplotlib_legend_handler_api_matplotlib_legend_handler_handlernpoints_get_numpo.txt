@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerNpoints.get_numpoints
+
+get_numpoints(legend)[source]

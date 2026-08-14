@@ -1,0 +1,11 @@
+# torch.generated.torch.nn.module#torch.nn.Module.named_parameters
+
+named_parameters(prefix='', recurse=True) [source]
+ 
+Returns an iterator over module parameters, yielding both the name of the parameter as well as the parameter itself.  Parameters 
+ 
+prefix (str) – prefix to prepend to all parameter names. 
+recurse (bool) – if True, then yields parameters of this module and all submodules. Otherwise, yields only parameters that are direct members of this module.   Yields 
+(string, Parameter) – Tuple containing the name and parameter   Example: >>> for name, param in self.named_parameters():
+>>>    if name in ['bias']:
+>>>        print(param.size())

@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.Event.query
+
+query() [source]
+ 
+Checks if all work currently captured by event has completed.  Returns 
+A boolean indicating if all work currently captured by event has completed.

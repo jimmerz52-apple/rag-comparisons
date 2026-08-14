@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.one_hot_categorical.OneHotCategorical.has_enumerate_support
+
+has_enumerate_support = True

@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.BdbQuit
+
+exception bdb.BdbQuit  
+Exception raised by the Bdb class for quitting the debugger.

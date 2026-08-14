@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.initial_seed
+
+torch.cuda.initial_seed() [source]
+ 
+Returns the current random seed of the current GPU.  Warning This function eagerly initializes CUDA.

@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Grouper.get_siblings
+
+get_siblings(a)[source]
+ 
+Return all of the items joined with a, including itself.

@@ -1,0 +1,7 @@
+# matplotlib.mlab_api#matplotlib.mlab.window_none
+
+matplotlib.mlab.window_none(x)[source]
+ 
+No window function; simply return x.  See also  window_hanning
+
+Another window algorithm.

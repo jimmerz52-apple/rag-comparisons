@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.ThetaFormatter
+
+classThetaFormatter(round_to=1.0)[source]
+ 
+Bases: matplotlib.ticker.Formatter Used to format the theta tick labels. Converts the native unit of radians into degrees and adds a degree symbol.

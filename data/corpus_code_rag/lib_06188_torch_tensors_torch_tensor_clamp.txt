@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.clamp_
+
+clamp_(min, max) → Tensor  
+In-place version of clamp()

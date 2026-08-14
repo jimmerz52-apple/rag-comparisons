@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.InspectLoader.get_source
+
+abstractmethod get_source(fullname)  
+An abstract method to return the source of a module. It is returned as a text string using universal newlines, translating all recognized line separators into '\n' characters. Returns None if no source is available (e.g. a built-in module). Raises ImportError if the loader cannot find the module specified.  Changed in version 3.4: Raises ImportError instead of NotImplementedError.

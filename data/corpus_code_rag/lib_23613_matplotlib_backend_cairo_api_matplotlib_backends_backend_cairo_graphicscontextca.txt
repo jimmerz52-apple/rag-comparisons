@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.get_rgb
+
+get_rgb()[source]
+ 
+Return a tuple of three or four floats from 0-1.

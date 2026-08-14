@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_clip_rectangle
+
+set_clip_rectangle(rectangle)[source]
+ 
+Set the clip rectangle to a Bbox or None.

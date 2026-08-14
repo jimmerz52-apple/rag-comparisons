@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__imul__
+
+numpy.ma.MaskedArray.__imul__ method   ma.MaskedArray.__imul__(other)[source]
+ 
+Multiply self by other in-place.

@@ -1,0 +1,9 @@
+# torch.distributions#torch.distributions.exp_family.ExponentialFamily
+
+class torch.distributions.exp_family.ExponentialFamily(batch_shape=torch.Size([]), event_shape=torch.Size([]), validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution ExponentialFamily is the abstract base class for probability distributions belonging to an exponential family, whose probability mass/density function has the form is defined below  pF(x;θ)=exp⁡(⟨t(x),θ⟩−F(θ)+k(x))p_{F}(x; \theta) = \exp(\langle t(x), \theta\rangle - F(\theta) + k(x)) 
+where θ\theta  denotes the natural parameters, t(x)t(x)  denotes the sufficient statistic, F(θ)F(\theta)  is the log normalizer function for a given family and k(x)k(x)  is the carrier measure.  Note This class is an intermediary between the Distribution class and distributions which belong to an exponential family mainly to check the correctness of the .entropy() and analytic KL divergence methods. We use this class to compute the entropy and KL divergence using the AD framework and Bregman divergences (courtesy of: Frank Nielsen and Richard Nock, Entropies and Cross-entropies of Exponential Families).   
+entropy() [source]
+ 
+Method to compute the entropy using Bregman divergence of the log normalizer.

@@ -1,0 +1,15 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.CannyPlugin
+
+class skimage.viewer.plugins.CannyPlugin(*args, **kwargs) [source]
+ 
+Bases: skimage.viewer.plugins.overlayplugin.OverlayPlugin Canny filter plugin to show edges of an image.  
+__init__(*args, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+attach(image_viewer) [source]
+ 
+Attach the plugin to an ImageViewer. Note that the ImageViewer will automatically call this method when the plugin is added to the ImageViewer. For example: viewer += Plugin(...)
+ Also note that attach automatically calls the filter function so that the image matches the filtered value specified by attached widgets. 
+  
+name = 'Canny Filter'

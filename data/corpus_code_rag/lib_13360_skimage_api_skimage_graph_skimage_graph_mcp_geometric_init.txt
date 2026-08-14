@@ -1,0 +1,4 @@
+# skimage.api.skimage.graph#skimage.graph.MCP_Geometric.__init__
+
+__init__(costs, offsets=None, fully_connected=True, sampling=None)  
+See class documentation.

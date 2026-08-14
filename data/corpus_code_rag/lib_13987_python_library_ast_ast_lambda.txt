@@ -1,0 +1,18 @@
+# python.library.ast#ast.Lambda
+
+class ast.Lambda(args, body)  
+lambda is a minimal function definition that can be used inside an expression. Unlike FunctionDef, body holds a single node. >>> print(ast.dump(ast.parse('lambda x,y: ...'), indent=4))
+Module(
+    body=[
+        Expr(
+            value=Lambda(
+                args=arguments(
+                    posonlyargs=[],
+                    args=[
+                        arg(arg='x'),
+                        arg(arg='y')],
+                    kwonlyargs=[],
+                    kw_defaults=[],
+                    defaults=[]),
+                body=Constant(value=Ellipsis)))],
+    type_ignores=[])

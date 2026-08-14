@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.finalize.alive
+
+alive  
+Property which is true if the finalizer is alive, false otherwise.

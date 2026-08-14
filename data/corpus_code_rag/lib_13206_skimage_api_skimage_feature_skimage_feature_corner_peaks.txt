@@ -1,0 +1,40 @@
+# skimage.api.skimage.feature#skimage.feature.corner_peaks
+
+skimage.feature.corner_peaks(image, min_distance=1, threshold_abs=None, threshold_rel=None, exclude_border=True, indices=True, num_peaks=inf, footprint=None, labels=None, *, num_peaks_per_label=inf, p_norm=inf) [source]
+ 
+Find peaks in corner measure response image. This differs from skimage.feature.peak_local_max in that it suppresses multiple connected peaks with the same accumulator value.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+min_distanceint, optional 
+
+The minimal allowed distance separating peaks.  
+** 
+
+See skimage.feature.peak_local_max().  
+p_normfloat 
+
+Which Minkowski p-norm to use. Should be in the range [1, inf]. A finite large p may cause a ValueError if overflow can occur. inf corresponds to the Chebyshev distance and 2 to the Euclidean distance.    Returns 
+ 
+outputndarray or ndarray of bools 
+
+ If indices = True : (row, column, …) coordinates of peaks. If indices = False : Boolean array shaped like image, with peaks represented by True values.       See also  
+skimage.feature.peak_local_max
+
+  Notes  Changed in version 0.18: The default value of threshold_rel has changed to None, which corresponds to letting skimage.feature.peak_local_max decide on the default. This is equivalent to threshold_rel=0.  The num_peaks limit is applied before suppression of connected peaks. To limit the number of peaks after suppression, set num_peaks=np.inf and post-process the output of this function. Examples >>> from skimage.feature import peak_local_max
+>>> response = np.zeros((5, 5))
+>>> response[2:4, 2:4] = 1
+>>> response
+array([[0., 0., 0., 0., 0.],
+       [0., 0., 0., 0., 0.],
+       [0., 0., 1., 1., 0.],
+       [0., 0., 1., 1., 0.],
+       [0., 0., 0., 0., 0.]])
+>>> peak_local_max(response)
+array([[2, 2],
+       [2, 3],
+       [3, 2],
+       [3, 3]])
+>>> corner_peaks(response)
+array([[2, 2]])

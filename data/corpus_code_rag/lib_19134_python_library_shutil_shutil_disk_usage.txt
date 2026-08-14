@@ -1,0 +1,4 @@
+# python.library.shutil#shutil.disk_usage
+
+shutil.disk_usage(path)  
+Return disk usage statistics about the given path as a named tuple with the attributes total, used and free, which are the amount of total, used and free space, in bytes. path may be a file or a directory.  New in version 3.3.   Changed in version 3.8: On Windows, path can now be a file or directory.  Availability: Unix, Windows.

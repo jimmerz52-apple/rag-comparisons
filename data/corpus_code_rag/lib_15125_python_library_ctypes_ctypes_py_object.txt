@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.py_object
+
+class ctypes.py_object  
+Represents the C PyObject * datatype. Calling this without an argument creates a NULL PyObject * pointer.

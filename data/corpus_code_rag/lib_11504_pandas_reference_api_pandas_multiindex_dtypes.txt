@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.multiindex.dtypes
+
+pandas.MultiIndex.dtypes   MultiIndex.dtypes
+ 
+Return the dtypes as a Series for the underlying MultiIndex.

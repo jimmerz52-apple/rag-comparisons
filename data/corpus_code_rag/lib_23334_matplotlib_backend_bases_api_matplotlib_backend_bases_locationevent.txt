@@ -1,0 +1,18 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.LocationEvent
+
+classmatplotlib.backend_bases.LocationEvent(name, canvas, x, y, guiEvent=None)[source]
+ 
+Bases: matplotlib.backend_bases.Event An event that has a screen location. A LocationEvent has a number of special attributes in addition to those defined by the parent Event class.  Attributes 
+ 
+x, yint or None
+
+
+Event location in pixels from bottom left of canvas.  
+inaxesAxes or None
+
+
+The Axes instance over which the mouse is, if any.  
+xdata, ydatafloat or None
+
+
+Data coordinates of the mouse within inaxes, or None if the mouse is not over an Axes.       lastevent=None

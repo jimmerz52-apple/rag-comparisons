@@ -1,0 +1,10 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer.register
+
+register(tag_class, force=False, index=None)  
+Register a new tag with this serializer.  Parameters 
+ 
+tag_class (Type[flask.json.tag.JSONTag]) – tag class to register. Will be instantiated with this serializer instance. 
+force (bool) – overwrite an existing tag. If false (default), a KeyError is raised. 
+index (Optional[int]) – index to insert the new tag in the tag order. Useful when the new tag is a special case of an existing tag. If None (default), the tag is appended to the end of the order.   Raises 
+KeyError – if the tag key is already registered and force is not true.  Return type 
+None

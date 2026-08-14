@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.datetimeindex.freqstr
+
+pandas.DatetimeIndex.freqstr   propertyDatetimeIndex.freqstr
+ 
+Return the frequency object as a string if its set, otherwise None.

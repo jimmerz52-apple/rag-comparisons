@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.ModelBackend.has_module_perms
+
+has_module_perms(user_obj, app_label)  
+Returns whether the user_obj has any permissions on the app app_label.

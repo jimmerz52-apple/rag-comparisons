@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Client.head
+
+head(path, data=None, follow=False, secure=False, **extra)  
+Makes a HEAD request on the provided path and returns a Response object. This method works just like Client.get(), including the follow, secure and extra arguments, except it does not return a message body.

@@ -1,0 +1,4 @@
+# pygame.ref.time#pygame.time.wait
+
+pygame.time.wait() 
+ pause the program for an amount of time wait(milliseconds) -> time  Will pause for a given number of milliseconds. This function sleeps the process to share the processor with other programs. A program that waits for even a few milliseconds will consume very little processor time. It is slightly less accurate than the pygame.time.delay() function. This returns the actual number of milliseconds used.

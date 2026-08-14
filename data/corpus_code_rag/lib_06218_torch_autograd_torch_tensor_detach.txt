@@ -1,0 +1,4 @@
+# torch.autograd#torch.Tensor.detach_
+
+detach_()  
+Detaches the Tensor from the graph that created it, making it a leaf. Views cannot be detached in-place.

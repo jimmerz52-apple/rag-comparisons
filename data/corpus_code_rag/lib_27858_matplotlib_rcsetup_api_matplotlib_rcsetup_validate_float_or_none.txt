@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_float_or_None
+
+matplotlib.rcsetup.validate_float_or_None(s)[source]

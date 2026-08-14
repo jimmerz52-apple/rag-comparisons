@@ -1,0 +1,18 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetBox.contains
+
+contains(mouseevent)[source]
+ 
+Delegate the mouse event contains-check to the children. As a container, the OffsetBox does not respond itself to mouseevents.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details.      See also  Artist.contains

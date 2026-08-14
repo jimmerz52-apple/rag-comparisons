@@ -1,0 +1,5 @@
+# numpy.reference.routines.ctypeslib#numpy.ctypeslib.as_ctypes
+
+numpy.ctypeslib.as_ctypes(obj)[source]
+ 
+Create and return a ctypes object from a numpy array. Actually anything that exposes the __array_interface__ is accepted.

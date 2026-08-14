@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.admin.GenericInlineModelAdmin.ct_field
+
+ct_field  
+The name of the ContentType foreign key field on the model. Defaults to content_type.

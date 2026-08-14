@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Style.element_options
+
+element_options(elementname)  
+Returns the list of elementname’s options.

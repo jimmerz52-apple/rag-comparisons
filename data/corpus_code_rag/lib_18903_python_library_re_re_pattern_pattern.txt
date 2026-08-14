@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.pattern
+
+Pattern.pattern  
+The pattern string from which the pattern object was compiled.

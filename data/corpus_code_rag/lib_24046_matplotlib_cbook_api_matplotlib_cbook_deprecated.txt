@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.deprecated
+
+matplotlib.cbook.deprecated(*args, **kwargs)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

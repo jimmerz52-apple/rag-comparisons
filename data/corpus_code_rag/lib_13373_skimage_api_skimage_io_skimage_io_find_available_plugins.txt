@@ -1,0 +1,13 @@
+# skimage.api.skimage.io#skimage.io.find_available_plugins
+
+skimage.io.find_available_plugins(loaded=False) [source]
+ 
+List available plugins.  Parameters 
+ 
+loadedbool 
+
+If True, show only those plugins currently loaded. By default, all plugins are shown.    Returns 
+ 
+pdict 
+
+Dictionary with plugin names as keys and exposed functions as values.

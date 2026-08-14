@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.has_header
+
+Request.has_header(header)  
+Return whether the instance has the named header (checks both regular and unredirected).

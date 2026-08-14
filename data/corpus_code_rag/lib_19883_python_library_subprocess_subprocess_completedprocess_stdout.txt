@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CompletedProcess.stdout
+
+stdout  
+Captured stdout from the child process. A bytes sequence, or a string if run() was called with an encoding, errors, or text=True. None if stdout was not captured. If you ran the process with stderr=subprocess.STDOUT, stdout and stderr will be combined in this attribute, and stderr will be None.

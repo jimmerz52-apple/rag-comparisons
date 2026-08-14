@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.get_slug_field
+
+get_slug_field()  
+Returns the name of a slug field to be used to look up by slug. By default this returns the value of slug_field.

@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.charset
+
+UploadedFile.charset  
+For text/* content-types, the character set (i.e. utf8) supplied by the browser. Again, “trust but verify” is the best policy here.

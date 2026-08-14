@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.is_cuda
+
+is_cuda  
+Is True if the Tensor is stored on the GPU, False otherwise.

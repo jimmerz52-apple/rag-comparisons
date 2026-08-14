@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.ProtocolError.errcode
+
+errcode  
+The error code.

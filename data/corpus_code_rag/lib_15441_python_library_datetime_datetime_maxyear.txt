@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.MAXYEAR
+
+datetime.MAXYEAR  
+The largest year number allowed in a date or datetime object. MAXYEAR is 9999.

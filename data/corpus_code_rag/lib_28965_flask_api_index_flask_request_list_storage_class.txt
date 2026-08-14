@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.list_storage_class
+
+list_storage_class  
+alias of werkzeug.datastructures.ImmutableList

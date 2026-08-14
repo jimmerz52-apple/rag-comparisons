@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.removeAttributeNode
+
+Element.removeAttributeNode(oldAttr)  
+Remove and return oldAttr from the attribute list, if present. If oldAttr is not present, NotFoundErr is raised.

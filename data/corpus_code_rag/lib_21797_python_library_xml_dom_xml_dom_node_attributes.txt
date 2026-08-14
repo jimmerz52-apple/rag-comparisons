@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.attributes
+
+Node.attributes  
+A NamedNodeMap of attribute objects. Only elements have actual values for this; others provide None for this attribute. This is a read-only attribute.

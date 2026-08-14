@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.GenericIPAddressField.protocol
+
+GenericIPAddressField.protocol  
+Limits valid inputs to the specified protocol. Accepted values are 'both' (default), 'IPv4' or 'IPv6'. Matching is case insensitive.

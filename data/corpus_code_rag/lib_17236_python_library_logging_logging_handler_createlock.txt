@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.createLock
+
+createLock()  
+Initializes a thread lock which can be used to serialize access to underlying I/O functionality which may not be threadsafe.

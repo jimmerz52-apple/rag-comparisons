@@ -1,0 +1,5 @@
+# matplotlib.tri_api#matplotlib.tri.TrapezoidMapTriFinder
+
+classmatplotlib.tri.TrapezoidMapTriFinder(triangulation)[source]
+ 
+Bases: matplotlib.tri.trifinder.TriFinder TriFinder class implemented using the trapezoid map algorithm from the book "Computational Geometry, Algorithms and Applications", second edition, by M. de Berg, M. van Kreveld, M. Overmars and O. Schwarzkopf. The triangulation must be valid, i.e. it must not have duplicate points, triangles formed from colinear points, or overlapping triangles. The algorithm has some tolerance to triangles formed from colinear points, but this should not be relied upon.

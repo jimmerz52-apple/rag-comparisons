@@ -1,0 +1,14 @@
+# pygame.ref.midi#pygame.midi.Output.write_sys_ex
+
+write_sys_ex() 
+ writes a timestamped system-exclusive midi message. write_sys_ex(when, msg) -> None  Writes a timestamped system-exclusive midi message.     
+Parameters:
+
+ 
+msg (list[int] or str) -- midi message 
+when -- timestamp in milliseconds      Example: midi_output.write_sys_ex(0, '\xF0\x7D\x10\x11\x12\x13\xF7')
+
+# is equivalent to
+
+midi_output.write_sys_ex(pygame.midi.time(),
+                         [0xF0, 0x7D, 0x10, 0x11, 0x12, 0x13, 0xF7])

@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.UnexpectedException.test
+
+UnexpectedException.test  
+The DocTest object that was being run when the example failed.

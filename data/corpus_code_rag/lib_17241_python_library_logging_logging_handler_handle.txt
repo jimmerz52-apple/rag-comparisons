@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.handle
+
+handle(record)  
+Conditionally emits the specified logging record, depending on filters which may have been added to the handler. Wraps the actual emission of the record with acquisition/release of the I/O thread lock.

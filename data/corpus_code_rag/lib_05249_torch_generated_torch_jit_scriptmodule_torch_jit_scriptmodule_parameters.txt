@@ -1,0 +1,9 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.parameters
+
+parameters(recurse=True)  
+Returns an iterator over module parameters. This is typically passed to an optimizer.  Parameters 
+recurse (bool) – if True, then yields parameters of this module and all submodules. Otherwise, yields only parameters that are direct members of this module.  Yields 
+Parameter – module parameter   Example: >>> for param in model.parameters():
+>>>     print(type(param), param.size())
+<class 'torch.Tensor'> (20L,)
+<class 'torch.Tensor'> (20L, 1L, 5L, 5L)

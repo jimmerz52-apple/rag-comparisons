@@ -1,0 +1,14 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_dashes
+
+set_dashes(offset, dashes)[source]
+ 
+Set the dash style for the gc.  Parameters 
+ 
+dash_offsetfloat
+
+
+The offset (usually 0).  
+dash_listarray-like or None
+
+
+The on-off sequence as points. None specifies a solid line.     Notes See p. 107 of to PostScript blue book for more info.

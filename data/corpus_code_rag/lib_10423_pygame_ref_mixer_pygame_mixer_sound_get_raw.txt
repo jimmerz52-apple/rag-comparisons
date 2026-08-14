@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Sound.get_raw
+
+get_raw() 
+ return a bytestring copy of the Sound samples. get_raw() -> bytes  Return a copy of the Sound object buffer as a bytes (for Python 3.x) or str (for Python 2.x) object.  New in pygame 1.9.2.

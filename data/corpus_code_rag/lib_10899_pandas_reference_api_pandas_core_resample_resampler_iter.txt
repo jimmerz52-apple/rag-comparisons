@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.core.resample.resampler.__iter__
+
+pandas.core.resample.Resampler.__iter__   Resampler.__iter__()[source]
+ 
+Groupby iterator.  Returns 
+ Generator yielding sequence of (name, subsetted object)
+for each group

@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.options
+
+options(section)  
+Return a list of options available in the specified section.

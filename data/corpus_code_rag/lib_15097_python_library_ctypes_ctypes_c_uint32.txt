@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_uint32
+
+class ctypes.c_uint32  
+Represents the C 32-bit unsigned int datatype. Usually an alias for c_uint.

@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Breakpoint.bpprint
+
+bpprint(out=None)  
+Print the output of bpformat() to the file out, or if it is None, to standard output.

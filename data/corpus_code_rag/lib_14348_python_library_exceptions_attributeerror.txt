@@ -1,0 +1,4 @@
+# python.library.exceptions#AttributeError
+
+exception AttributeError  
+Raised when an attribute reference (see Attribute references) or assignment fails. (When an object does not support attribute references or attribute assignments at all, TypeError is raised.)

@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseManager.address
+
+address  
+The address used by the manager.

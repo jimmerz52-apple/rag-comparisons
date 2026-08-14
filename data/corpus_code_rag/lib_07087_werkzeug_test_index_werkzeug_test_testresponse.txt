@@ -1,0 +1,17 @@
+# werkzeug.test.index#werkzeug.test.TestResponse
+
+class werkzeug.test.TestResponse(response, status, headers, request, history=(), **kwargs)  
+Response subclass that provides extra information about requests made with the test Client. Test client requests will always return an instance of this class. If a custom response class is passed to the client, it is subclassed along with this to support test information. If the test request included large files, or if the application is serving a file, call close() to close any open files and prevent Python showing a ResourceWarning.  Parameters 
+ 
+response (Union[Iterable[str], Iterable[bytes]]) –  
+status (str) –  
+headers (werkzeug.datastructures.Headers) –  
+request (werkzeug.wrappers.request.Request) –  
+history (Tuple[werkzeug.test.TestResponse, ...]) –  
+kwargs (Any) –    Return type 
+None    
+request: werkzeug.wrappers.request.Request  
+A request object with the environ used to make the request that resulted in this response. 
+  
+history: Tuple[werkzeug.test.TestResponse, ...]  
+A list of intermediate responses. Populated when the test request is made with follow_redirects enabled.

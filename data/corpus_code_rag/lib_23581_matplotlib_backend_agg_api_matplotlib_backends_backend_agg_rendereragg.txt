@@ -1,0 +1,99 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg
+
+classmatplotlib.backends.backend_agg.RendererAgg(width, height, dpi)[source]
+ 
+Bases: matplotlib.backend_bases.RendererBase The renderer handles all the drawing primitives using a graphics context instance that controls the colors/styles   buffer_rgba()[source]
+
+   clear()[source]
+
+   draw_mathtext(gc, x, y, s, prop, angle)[source]
+ 
+Draw mathtext using matplotlib.mathtext. 
+   draw_path(gc, path, transform, rgbFace=None)[source]
+ 
+Draw a Path instance using the given affine transform. 
+   draw_tex(gc, x, y, s, prop, angle, *, mtext=None)[source]
+
+   draw_text(gc, x, y, s, prop, angle, ismath=False, mtext=None)[source]
+ 
+Draw the text instance.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+xfloat
+
+
+The x location of the text in display coords.  
+yfloat
+
+
+The y location of the text baseline in display coords.  
+sstr
+
+
+The text string.  
+propmatplotlib.font_manager.FontProperties
+
+
+The font properties.  
+anglefloat
+
+
+The rotation angle in degrees anti-clockwise.  
+mtextmatplotlib.text.Text
+
+
+The original text object to be rendered.     Notes Note for backend implementers: When you are trying to determine if you have gotten your bounding box right (which is what enables the text layout/alignment to work properly), it helps to change the line in text.py: if 0: bbox_artist(self, renderer)
+ to if 1, and then the actual bounding box will be plotted along with your text. 
+   get_canvas_width_height()[source]
+ 
+Return the canvas width and height in display coords. 
+   get_content_extents()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:   
+   get_text_width_height_descent(s, prop, ismath)[source]
+ 
+Get the width, height, and descent (offset from the bottom to the baseline), in display coords, of the string s with FontProperties prop. 
+   lock=<unlocked _thread.RLock object owner=0 count=0>
+
+   option_image_nocomposite()[source]
+ 
+Return whether image composition by Matplotlib should be skipped. Raster backends should usually return False (letting the C-level rasterizer take care of image composition); vector backends should usually return not rcParams["image.composite_image"]. 
+   option_scale_image()[source]
+ 
+Return whether arbitrary affine transformations in draw_image() are supported (True for most vector backends). 
+   points_to_pixels(points)[source]
+ 
+Convert points to display units. You need to override this function (unless your backend doesn't have a dpi, e.g., postscript or svg). Some imaging systems assume some value for pixels per inch: points to pixels = points * pixels_per_inch/72 * dpi/72
+  Parameters 
+ 
+pointsfloat or array-like
+
+
+a float or a numpy array of float    Returns 
+ Points converted to pixels
+   
+   restore_region(region, bbox=None, xy=None)[source]
+ 
+Restore the saved region. If bbox (instance of BboxBase, or its extents) is given, only the region specified by the bbox will be restored. xy (a pair of floats) optionally specifies the new position (the LLC of the original region, not the LLC of the bbox) where the region will be restored. >>> region = renderer.copy_from_bbox()
+>>> x1, y1, x2, y2 = region.get_extents()
+>>> renderer.restore_region(region, bbox=(x1+dx, y1, x2, y2),
+...                         xy=(x1-dx, y1))
+ 
+   start_filter()[source]
+ 
+Start filtering. It simply create a new canvas (the old one is saved). 
+   stop_filter(post_processing)[source]
+ 
+Save the plot in the current canvas as a image and apply the post_processing function.  def post_processing(image, dpi):
+
+# ny, nx, depth = image.shape # image (numpy array) has RGBA channels and has a depth of 4. ... # create a new_image (numpy array of 4 channels, size can be # different). The resulting image may have offsets from # lower-left corner of the original image return new_image, offset_x, offset_y   The saved renderer is restored and the returned image from post_processing is plotted (using draw_image) on it. 
+   tostring_argb()[source]
+
+   tostring_rgb()[source]
+
+   tostring_rgba_minimized()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

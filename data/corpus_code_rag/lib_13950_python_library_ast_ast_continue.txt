@@ -1,0 +1,31 @@
+# python.library.ast#ast.Continue
+
+class ast.Break  
+class ast.Continue  
+The break and continue statements. >>> print(ast.dump(ast.parse("""\
+... for a in b:
+...     if a > 5:
+...         break
+...     else:
+...         continue
+...
+... """), indent=4))
+Module(
+    body=[
+        For(
+            target=Name(id='a', ctx=Store()),
+            iter=Name(id='b', ctx=Load()),
+            body=[
+                If(
+                    test=Compare(
+                        left=Name(id='a', ctx=Load()),
+                        ops=[
+                            Gt()],
+                        comparators=[
+                            Constant(value=5)]),
+                    body=[
+                        Break()],
+                    orelse=[
+                        Continue()])],
+            orelse=[])],
+    type_ignores=[])

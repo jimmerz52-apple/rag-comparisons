@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.islower
+
+numpy.char.chararray.islower method   char.chararray.islower()[source]
+ 
+Returns true for each element if all cased characters in the string are lowercase and there is at least one cased character, false otherwise.  See also  char.islower

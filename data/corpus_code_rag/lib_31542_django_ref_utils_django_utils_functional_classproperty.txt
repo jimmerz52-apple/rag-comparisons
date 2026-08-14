@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.functional.classproperty
+
+class classproperty(method=None) [source]
+ 
+Similar to @classmethod, the @classproperty decorator converts the result of a method with a single cls argument into a property that can be accessed directly from the class.

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.pgettext_lazy
+
+pgettext_lazy(context, message)  
+Same as the non-lazy versions above, but using lazy execution. See lazy translations documentation.

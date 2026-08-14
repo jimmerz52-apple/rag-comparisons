@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.get_bold
+
+get_bold() 
+ check if text will be rendered bold get_bold() -> bool  Return True when the font bold rendering mode is enabled.  Note This is the same as the bold attribute.

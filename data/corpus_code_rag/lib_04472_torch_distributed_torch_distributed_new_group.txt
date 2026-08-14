@@ -1,0 +1,10 @@
+# torch.distributed#torch.distributed.new_group
+
+torch.distributed.new_group(ranks=None, timeout=datetime.timedelta(seconds=1800), backend=None) [source]
+ 
+Creates a new distributed group. This function requires that all processes in the main group (i.e. all processes that are part of the distributed job) enter this function, even if they are not going to be members of the group. Additionally, groups should be created in the same order in all processes.  Warning Using multiple process groups with the NCCL backend concurrently is not safe and the user should perform explicit synchronization in their application to ensure only one process group is used at a time. This means collectives from one process group should have completed execution on the device (not just enqueued since CUDA execution is async) before collectives from another process group are enqueued. See Using multiple NCCL communicators concurrently for more details.   Parameters 
+ 
+ranks (list[int]) – List of ranks of group members. If None, will be set to all ranks. Default is None. 
+timeout (timedelta, optional) – Timeout for operations executed against the process group. Default value equals 30 minutes. This is only applicable for the gloo backend. 
+backend (str or Backend, optional) – The backend to use. Depending on build-time configurations, valid values are gloo and nccl. By default uses the same backend as the global group. This field should be given as a lowercase string (e.g., "gloo"), which can also be accessed via Backend attributes (e.g., Backend.GLOO).   Returns 
+A handle of distributed group that can be given to collective calls.

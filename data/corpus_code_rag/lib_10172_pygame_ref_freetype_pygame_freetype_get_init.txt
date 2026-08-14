@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.get_init
+
+pygame.freetype.get_init() 
+ Returns True if the FreeType module is currently initialized. get_init() -> bool  Returns True if the pygame.freetype module is currently initialized.  New in pygame 1.9.5.

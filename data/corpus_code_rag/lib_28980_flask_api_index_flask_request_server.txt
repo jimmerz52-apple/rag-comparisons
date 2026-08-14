@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.server
+
+server  
+The address of the server. (host, port), (path, None) for unix sockets, or None if not known.

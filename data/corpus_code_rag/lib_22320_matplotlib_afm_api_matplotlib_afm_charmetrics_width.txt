@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.CharMetrics.width
+
+width
+ 
+The character width (WX).

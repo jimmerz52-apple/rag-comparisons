@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.ensemble.votingclassifier#sklearn.ensemble.VotingClassifier.fit_transform
+
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Return class labels or probabilities for each estimator. Return predictions for X for each estimator.  Parameters 
+ 
+X{array-like, sparse matrix, dataframe} of shape (n_samples, n_features) 
+
+Input samples  
+yndarray of shape (n_samples,), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.

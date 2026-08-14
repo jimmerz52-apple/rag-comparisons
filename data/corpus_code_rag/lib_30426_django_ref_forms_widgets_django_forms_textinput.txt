@@ -1,0 +1,8 @@
+# django.ref.forms.widgets#django.forms.TextInput
+
+class TextInput  
+ 
+input_type: 'text'
+ 
+template_name: 'django/forms/widgets/text.html'
+ Renders as: <input type="text" ...>

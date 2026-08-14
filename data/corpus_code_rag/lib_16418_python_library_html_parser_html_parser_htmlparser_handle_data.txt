@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.handle_data
+
+HTMLParser.handle_data(data)  
+This method is called to process arbitrary data (e.g. text nodes and the content of <script>...</script> and <style>...</style>).

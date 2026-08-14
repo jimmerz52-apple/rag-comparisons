@@ -1,0 +1,11 @@
+# skimage.api.skimage.feature#skimage.feature.Cascade.__init__
+
+__init__()  
+Initialize cascade classifier.  Parameters 
+ 
+xml_filefile’s path or file’s object 
+
+A file in a OpenCv format from which all the cascade classifier’s parameters are loaded.  
+epscnp.float32_t 
+
+Accuracy parameter. Increasing it, makes the classifier detect less false positives but at the same time the false negative score increases.

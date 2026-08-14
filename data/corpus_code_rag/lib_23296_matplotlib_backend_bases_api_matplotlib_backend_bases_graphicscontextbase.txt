@@ -1,0 +1,154 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase
+
+classmatplotlib.backend_bases.GraphicsContextBase[source]
+ 
+Bases: object An abstract base class that provides color, line styles, etc.   copy_properties(gc)[source]
+ 
+Copy properties from gc to self. 
+   get_alpha()[source]
+ 
+Return the alpha value used for blending - not supported on all backends. 
+   get_antialiased()[source]
+ 
+Return whether the object should try to do antialiased rendering. 
+   get_capstyle()[source]
+ 
+Return the CapStyle. 
+   get_clip_path()[source]
+ 
+Return the clip path in the form (path, transform), where path is a Path instance, and transform is an affine transform to apply to the path before clipping. 
+   get_clip_rectangle()[source]
+ 
+Return the clip rectangle as a Bbox instance. 
+   get_dashes()[source]
+ 
+Return the dash style as an (offset, dash-list) pair. The dash list is a even-length list that gives the ink on, ink off in points. See p. 107 of to PostScript blue book for more info. Default value is (None, None). 
+   get_forced_alpha()[source]
+ 
+Return whether the value given by get_alpha() should be used to override any other alpha-channel values. 
+   get_gid()[source]
+ 
+Return the object identifier if one is set, None otherwise. 
+   get_hatch()[source]
+ 
+Get the current hatch style. 
+   get_hatch_color()[source]
+ 
+Get the hatch color. 
+   get_hatch_linewidth()[source]
+ 
+Get the hatch linewidth. 
+   get_hatch_path(density=6.0)[source]
+ 
+Return a Path for the current hatch. 
+   get_joinstyle()[source]
+ 
+Return the JoinStyle. 
+   get_linewidth()[source]
+ 
+Return the line width in points. 
+   get_rgb()[source]
+ 
+Return a tuple of three or four floats from 0-1. 
+   get_sketch_params()[source]
+ 
+Return the sketch parameters for the artist.  Returns 
+ tuple or None
+
+
+A 3-tuple with the following elements:  
+scale: The amplitude of the wiggle perpendicular to the source line. 
+length: The length of the wiggle along the line. 
+randomness: The scale factor by which the length is shrunken or expanded.  May return None if no sketch parameters were set.     
+   get_snap()[source]
+ 
+Return the snap setting, which can be:  True: snap vertices to the nearest pixel center False: leave vertices as-is None: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center  
+   get_url()[source]
+ 
+Return a url if one is set, None otherwise. 
+   restore()[source]
+ 
+Restore the graphics context from the stack - needed only for backends that save graphics contexts on a stack. 
+   set_alpha(alpha)[source]
+ 
+Set the alpha value used for blending - not supported on all backends. If alpha=None (the default), the alpha components of the foreground and fill colors will be used to set their respective transparencies (where applicable); otherwise, alpha will override them. 
+   set_antialiased(b)[source]
+ 
+Set whether object should be drawn with antialiased rendering. 
+   set_capstyle(cs)[source]
+ 
+Set how to draw endpoints of lines.  Parameters 
+ 
+csCapStyle or {'butt', 'projecting', 'round'}
+
+   
+   set_clip_path(path)[source]
+ 
+Set the clip path to a TransformedPath or None. 
+   set_clip_rectangle(rectangle)[source]
+ 
+Set the clip rectangle to a Bbox or None. 
+   set_dashes(dash_offset, dash_list)[source]
+ 
+Set the dash style for the gc.  Parameters 
+ 
+dash_offsetfloat
+
+
+The offset (usually 0).  
+dash_listarray-like or None
+
+
+The on-off sequence as points. None specifies a solid line.     Notes See p. 107 of to PostScript blue book for more info. 
+   set_foreground(fg, isRGBA=False)[source]
+ 
+Set the foreground color.  Parameters 
+ 
+fgcolor
+
+
+isRGBAbool
+
+
+If fg is known to be an (r, g, b, a) tuple, isRGBA can be set to True to improve performance.     
+   set_gid(id)[source]
+ 
+Set the id. 
+   set_hatch(hatch)[source]
+ 
+Set the hatch style (for fills). 
+   set_hatch_color(hatch_color)[source]
+ 
+Set the hatch color. 
+   set_joinstyle(js)[source]
+ 
+Set how to draw connections between line segments.  Parameters 
+ 
+jsJoinStyle or {'miter', 'round', 'bevel'}
+
+   
+   set_linewidth(w)[source]
+ 
+Set the linewidth in points. 
+   set_sketch_params(scale=None, length=None, randomness=None)[source]
+ 
+Set the sketch parameters.  Parameters 
+ 
+scalefloat, optional
+
+
+The amplitude of the wiggle perpendicular to the source line, in pixels. If scale is None, or not provided, no sketch filter will be provided.  
+lengthfloat, default: 128
+
+
+The length of the wiggle along the line, in pixels.  
+randomnessfloat, default: 16
+
+
+The scale factor by which the length is shrunken or expanded.     
+   set_snap(snap)[source]
+ 
+Set the snap setting which may be:  True: snap vertices to the nearest pixel center False: leave vertices as-is None: (auto) If the path contains only rectilinear line segments, round to the nearest pixel center  
+   set_url(url)[source]
+ 
+Set the url for links in compatible backends.

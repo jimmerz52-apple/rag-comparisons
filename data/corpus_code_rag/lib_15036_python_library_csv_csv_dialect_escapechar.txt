@@ -1,0 +1,4 @@
+# python.library.csv#csv.Dialect.escapechar
+
+Dialect.escapechar  
+A one-character string used by the writer to escape the delimiter if quoting is set to QUOTE_NONE and the quotechar if doublequote is False. On reading, the escapechar removes any special meaning from the following character. It defaults to None, which disables escaping.

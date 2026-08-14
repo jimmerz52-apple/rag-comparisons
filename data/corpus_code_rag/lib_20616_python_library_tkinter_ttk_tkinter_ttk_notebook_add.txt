@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Notebook.add
+
+add(child, **kw)  
+Adds a new tab to the notebook. If window is currently managed by the notebook but hidden, it is restored to its previous position. See Tab Options for the list of available options.

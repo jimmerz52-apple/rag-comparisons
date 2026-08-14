@@ -1,0 +1,3 @@
+# django.ref.schema-editor#django.db.backends.base.schema.BaseDatabaseSchemaEditor.remove_index
+
+BaseDatabaseSchemaEditor.remove_index(model, index)

@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_resource
+
+@test.support.requires_resource(resource)  
+Decorator for skipping tests if resource is not available.

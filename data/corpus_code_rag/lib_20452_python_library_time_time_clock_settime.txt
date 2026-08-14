@@ -1,0 +1,4 @@
+# python.library.time#time.clock_settime
+
+time.clock_settime(clk_id, time: float)  
+Set the time of the specified clock clk_id. Currently, CLOCK_REALTIME is the only accepted value for clk_id. Availability: Unix.  New in version 3.3.

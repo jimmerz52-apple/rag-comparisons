@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseTransport
+
+class asyncio.BaseTransport  
+Base class for all transports. Contains methods that all asyncio transports share.

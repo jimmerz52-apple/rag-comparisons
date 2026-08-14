@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.CustomCell
+
+matplotlib.table.CustomCell[source]
+ 
+alias of matplotlib.table.Cell

@@ -1,0 +1,4 @@
+# python.library.constants#True
+
+True  
+The true value of the bool type. Assignments to True are illegal and raise a SyntaxError.

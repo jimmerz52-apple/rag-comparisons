@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Condition.notify_all
+
+notify_all()  
+Wake up all tasks waiting on this condition. This method acts like notify(), but wakes up all waiting tasks. The lock must be acquired before this method is called and released shortly after. If called with an unlocked lock a RuntimeError error is raised.

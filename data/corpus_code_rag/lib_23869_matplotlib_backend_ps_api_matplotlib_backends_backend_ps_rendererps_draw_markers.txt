@@ -1,0 +1,18 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.RendererPS.draw_markers
+
+draw_markers(gc, marker_path, marker_trans, path, trans, rgbFace=None)[source]
+ 
+Draw a marker at each of path's vertices (excluding control points). This provides a fallback implementation of draw_markers that makes multiple calls to draw_path(). Some backends may want to override this method in order to draw the marker only once and reuse it multiple times.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+marker_transmatplotlib.transforms.Transform
+
+
+An affine transform applied to the marker.  
+transmatplotlib.transforms.Transform
+
+
+An affine transform applied to the path.

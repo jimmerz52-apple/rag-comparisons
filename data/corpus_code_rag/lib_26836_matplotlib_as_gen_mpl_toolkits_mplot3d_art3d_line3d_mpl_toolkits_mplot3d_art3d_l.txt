@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.line3d#mpl_toolkits.mplot3d.art3d.Line3D.set_3d_properties
+
+set_3d_properties(zs=0, zdir='z')[source]

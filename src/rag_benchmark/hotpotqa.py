@@ -95,6 +95,7 @@ def build_hotpot_subset(
                 )
                 existing_meta["corpus_dir"] = str(corpus_dir)
                 existing_meta["qa_path"] = str(qa_path)
+                enrich_hotpot_supporting_titles(qa_path)
                 return {
                     "corpus_dir": corpus_dir,
                     "qa_path": qa_path,
@@ -152,6 +153,7 @@ def build_hotpot_subset(
                 "rationale": f"HotpotQA distractor ({level}/{qtype}) — Yang et al. EMNLP 2018",
                 "hotpot_type": qtype,
                 "hotpot_level": level,
+                "supporting_titles": list(dict.fromkeys(row.get("supporting_facts", {}).get("title") or [])),
             }
         )
 
@@ -182,3 +184,27 @@ def build_hotpot_subset(
     }
     meta_path.write_text(json.dumps(meta, indent=2), encoding="utf-8")
     return {"corpus_dir": corpus_dir, "qa_path": qa_path, "meta": meta}
+
+
+def enrich_hotpot_supporting_titles(qa_path: Path) -> int:
+    """Patch existing eval JSON with gold Wikipedia titles (no corpus rewrite)."""
+    qa_path = Path(qa_path)
+    items = json.loads(qa_path.read_text(encoding="utf-8"))
+    if items and items[0].get("supporting_titles"):
+        return 0
+    from datasets import load_dataset
+
+    ds = load_dataset("hotpotqa/hotpot_qa", "distractor", split="validation")
+    by_id = {}
+    for row in ds:
+        titles = list(dict.fromkeys(row.get("supporting_facts", {}).get("title") or []))
+        by_id[row["id"]] = titles
+    n = 0
+    for item in items:
+        titles = by_id.get(item["id"])
+        if titles:
+            item["supporting_titles"] = titles
+            n += 1
+    qa_path.write_text(json.dumps(items, indent=2), encoding="utf-8")
+    print(f"Enriched {n}/{len(items)} Hotpot questions with supporting_titles", flush=True)
+    return n

@@ -1,0 +1,4 @@
+# python.library.venv#venv.create
+
+venv.create(env_dir, system_site_packages=False, clear=False, symlinks=False, with_pip=False, prompt=None)  
+Create an EnvBuilder with the given keyword arguments, and call its create() method with the env_dir argument.  New in version 3.3.   Changed in version 3.4: Added the with_pip parameter   Changed in version 3.6: Added the prompt parameter

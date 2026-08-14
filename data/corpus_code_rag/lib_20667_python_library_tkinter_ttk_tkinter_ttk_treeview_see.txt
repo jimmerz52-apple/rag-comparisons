@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.see
+
+see(item)  
+Ensure that item is visible. Sets all of item’s ancestors open option to True, and scrolls the widget if necessary so that item is within the visible portion of the tree.

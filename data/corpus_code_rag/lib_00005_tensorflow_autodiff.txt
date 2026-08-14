@@ -1,0 +1,3 @@
+# tensorflow.autodiff
+
+Module: tf.autodiff Public API for tf.autodiff namespace. Classes class ForwardAccumulator: Computes Jacobian-vector products ("JVP"s) using forward-mode autodiff. class GradientTape: Record operations for automatic differentiation.

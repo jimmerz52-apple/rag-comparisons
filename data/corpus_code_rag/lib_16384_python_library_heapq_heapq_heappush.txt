@@ -1,0 +1,4 @@
+# python.library.heapq#heapq.heappush
+
+heapq.heappush(heap, item)  
+Push the value item onto the heap, maintaining the heap invariant.

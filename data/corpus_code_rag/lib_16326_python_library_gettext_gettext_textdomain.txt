@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.textdomain
+
+gettext.textdomain(domain=None)  
+Change or query the current global domain. If domain is None, then the current global domain is returned, otherwise the global domain is set to domain, which is returned.

@@ -1,0 +1,10 @@
+# tensorflow.debugging.get_log_device_placement
+
+tf.debugging.get_log_device_placement     View source on GitHub    Get if device placements are logged.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.debugging.get_log_device_placement  
+tf.debugging.get_log_device_placement()
+
+ 
+
+
+ Returns   If device placements are logged.

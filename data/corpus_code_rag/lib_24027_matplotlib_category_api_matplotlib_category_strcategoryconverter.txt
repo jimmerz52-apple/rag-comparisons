@@ -1,0 +1,51 @@
+# matplotlib.category_api#matplotlib.category.StrCategoryConverter
+
+classmatplotlib.category.StrCategoryConverter[source]
+ 
+Bases: matplotlib.units.ConversionInterface   staticaxisinfo(unit, axis)[source]
+ 
+Set the default axis ticks and labels.  Parameters 
+ 
+unitUnitData
+
+
+object string unit information for value  
+axisAxis
+
+
+axis for which information is being set  Note axis is not used     Returns 
+ AxisInfo
+
+Information to support default tick labeling     
+   staticconvert(value, unit, axis)[source]
+ 
+Convert strings in value to floats using mapping information stored in the unit object.  Parameters 
+ 
+valuestr or iterable
+
+
+Value or list of values to be converted.  
+unitUnitData
+
+
+An object mapping strings to integers.  
+axisAxis
+
+
+The axis on which the converted value is plotted.  Note axis is unused.     Returns 
+ float or ndarray[float]
+   
+   staticdefault_units(data, axis)[source]
+ 
+Set and update the Axis units.  Parameters 
+ 
+datastr or iterable of str
+
+
+axisAxis
+
+
+axis on which the data is plotted    Returns 
+ UnitData
+
+object storing string to integer mapping

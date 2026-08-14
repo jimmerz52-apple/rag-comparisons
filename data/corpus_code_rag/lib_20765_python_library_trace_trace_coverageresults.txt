@@ -1,0 +1,9 @@
+# python.library.trace#trace.CoverageResults
+
+class trace.CoverageResults  
+A container for coverage results, created by Trace.results(). Should not be created directly by the user.  
+update(other)  
+Merge in data from another CoverageResults object. 
+  
+write_results(show_missing=True, summary=False, coverdir=None)  
+Write coverage results. Set show_missing to show lines that had no hits. Set summary to include in the output the coverage summary per module. coverdir specifies the directory into which the coverage result files will be output. If None, the results for each source file are placed in its directory.

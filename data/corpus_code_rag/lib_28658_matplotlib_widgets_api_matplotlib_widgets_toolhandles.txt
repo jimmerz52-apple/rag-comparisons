@@ -1,0 +1,40 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolHandles
+
+classmatplotlib.widgets.ToolHandles(ax, x, y, marker='o', marker_props=None, useblit=True)[source]
+ 
+Bases: object Control handles for canvas tools.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+Matplotlib axes where tool handles are displayed.  
+x, y1D arrays
+
+
+Coordinates of control handles.  
+markerstr, default: 'o'
+
+
+Shape of marker used to display handle. See matplotlib.pyplot.plot.  
+marker_propsdict, optional
+
+
+Additional marker properties. See matplotlib.lines.Line2D.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).       propertyartists
+
+   closest(x, y)[source]
+ 
+Return index and pixel distance to closest index. 
+   set_animated(val)[source]
+
+   set_data(pts, y=None)[source]
+ 
+Set x and y positions of handles. 
+   set_visible(val)[source]
+
+   propertyx
+
+   propertyy

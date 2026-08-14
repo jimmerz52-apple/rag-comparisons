@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.ffmpegbase#matplotlib.animation.FFMpegBase.__init__
+
+__init__(*args, **kwargs)

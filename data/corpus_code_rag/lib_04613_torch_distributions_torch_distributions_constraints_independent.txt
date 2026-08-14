@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.independent
+
+torch.distributions.constraints.independent  
+alias of torch.distributions.constraints._IndependentConstraint

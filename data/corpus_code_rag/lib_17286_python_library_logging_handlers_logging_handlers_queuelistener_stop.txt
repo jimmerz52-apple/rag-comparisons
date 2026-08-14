@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueListener.stop
+
+stop()  
+Stops the listener. This asks the thread to terminate, and then waits for it to do so. Note that if you don’t call this before your application exits, there may be some records still left on the queue, which won’t be processed.

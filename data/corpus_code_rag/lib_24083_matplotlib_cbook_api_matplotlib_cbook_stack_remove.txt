@@ -1,0 +1,8 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.remove
+
+remove(o)[source]
+ 
+Remove o from the stack.  Raises 
+ ValueError
+
+If o is not in the stack.

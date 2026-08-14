@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.sound_array_demos.main
+
+sound_array_demos.main() 
+ play various sndarray effects sound_array_demos.main(arraytype=None) -> None  Uses sndarray and NumPy to create offset faded copies of the original sound. Currently it just uses hardcoded values for the number of echoes and the delay. Easy for you to recreate as needed. The arraytype parameter is deprecated; passing any value besides 'numpy' will raise ValueError.

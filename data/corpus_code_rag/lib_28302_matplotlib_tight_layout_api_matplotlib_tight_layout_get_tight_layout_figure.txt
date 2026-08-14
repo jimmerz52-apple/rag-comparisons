@@ -1,0 +1,34 @@
+# matplotlib.tight_layout_api#matplotlib.tight_layout.get_tight_layout_figure
+
+matplotlib.tight_layout.get_tight_layout_figure(fig, axes_list, subplotspec_list, renderer, pad=1.08, h_pad=None, w_pad=None, rect=None)[source]
+ 
+Return subplot parameters for tight-layouted-figure with specified padding.  Parameters 
+ 
+figFigure
+
+
+axes_listlist of Axes
+
+
+subplotspec_listlist of SubplotSpec
+
+
+The subplotspecs of each axes.  
+rendererrenderer
+
+
+padfloat
+
+
+Padding between the figure edge and the edges of subplots, as a fraction of the font size.  
+h_pad, w_padfloat
+
+
+Padding (height/width) between edges of adjacent subplots. Defaults to pad.  
+recttuple[float, float, float, float], optional
+
+
+(left, bottom, right, top) rectangle in normalized figure coordinates that the whole subplots area (including labels) will fit into. Defaults to using the entire figure.    Returns 
+ subplotspec or None
+
+subplotspec kwargs to be passed to Figure.subplots_adjust or None if tight_layout could not be accomplished.

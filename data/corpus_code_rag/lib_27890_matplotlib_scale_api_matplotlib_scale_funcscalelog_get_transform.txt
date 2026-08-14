@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.FuncScaleLog.get_transform
+
+get_transform()[source]
+ 
+Return the Transform associated with this scale.

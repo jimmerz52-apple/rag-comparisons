@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.hasobject
+
+numpy.dtype.hasobject attribute   dtype.hasobject
+ 
+Boolean indicating whether this dtype contains any reference-counted objects in any fields or sub-dtypes. Recall that what is actually in the ndarray memory representing the Python object is the memory address of that object (a pointer). Special handling may be required, and this attribute is useful for distinguishing data types that may contain arbitrary Python objects and data-types that won’t.

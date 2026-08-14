@@ -1,0 +1,5 @@
+# python.library.gc#gc.get_threshold
+
+gc.get_threshold()  
+Return the current collection thresholds as a tuple of (threshold0,
+threshold1, threshold2).

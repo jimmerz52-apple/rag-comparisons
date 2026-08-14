@@ -1,0 +1,4 @@
+# python.library.math#math.ceil
+
+math.ceil(x)  
+Return the ceiling of x, the smallest integer greater than or equal to x. If x is not a float, delegates to x.__ceil__(), which should return an Integral value.

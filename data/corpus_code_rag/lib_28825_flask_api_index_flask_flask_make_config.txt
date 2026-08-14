@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.make_config
+
+make_config(instance_relative=False)  
+Used to create the config attribute by the Flask constructor. The instance_relative parameter is passed in from the constructor of Flask (there named instance_relative_config) and indicates if the config should be relative to the instance path or the root path of the application.  Changelog New in version 0.8.   Parameters 
+instance_relative (bool) –   Return type 
+flask.config.Config

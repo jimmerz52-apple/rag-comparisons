@@ -1,0 +1,4 @@
+# python.library.sched#sched.scheduler.cancel
+
+scheduler.cancel(event)  
+Remove the event from the queue. If event is not an event currently in the queue, this method will raise a ValueError.

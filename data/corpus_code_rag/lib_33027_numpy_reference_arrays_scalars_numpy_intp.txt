@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.intp
+
+numpy.intp[source]
+ 
+Alias for the signed integer type (one of numpy.byte, numpy.short, numpy.intc, numpy.int_ and np.longlong) that is the same size as a pointer. Compatible with the C intptr_t.  Character code 
+'p'

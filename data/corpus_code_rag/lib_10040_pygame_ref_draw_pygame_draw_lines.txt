@@ -1,0 +1,25 @@
+# pygame.ref.draw#pygame.draw.lines
+
+pygame.draw.lines() 
+ draw multiple contiguous straight line segments lines(surface, color, closed, points) -> Rect lines(surface, color, closed, points, width=1) -> Rect  Draws a sequence of contiguous straight lines on the given surface. There are no endcaps or miter joints. For thick lines the ends are squared off. Drawing thick lines with sharp corners can have undesired looking results.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+color (Color or int or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+ 
+closed (bool) -- if True an additional line segment is drawn between the first and last points in the points sequence 
+points (tuple(coordinate) or list(coordinate)) -- a sequence of 2 or more (x, y) coordinates, where each coordinate in the sequence must be a tuple/list/pygame.math.Vector2 of 2 ints/floats and adjacent coordinates will be connected by a line segment, e.g. for the points [(x1, y1), (x2, y2), (x3, y3)] a line segment will be drawn from (x1, y1) to (x2, y2) and from (x2, y2) to (x3, y3), additionally if the closed parameter is True another line segment will be drawn from (x3, y3) to (x1, y1)
+ 
+width (int) -- (optional) used for line thickness  if width >= 1, used for line thickness (default is 1) if width < 1, nothing will be drawn    Note When using width values > 1 refer to the width notes of line() for details on how thick lines grow.      
+Returns:
+
+a rect bounding the changed pixels, if nothing is drawn the bounding rect's position will be the position of the first point in the points parameter (float values will be truncated) and its width and height will be 0   
+Return type:
+
+Rect   
+Raises:
+
+ 
+ValueError -- if len(points) < 2 (must have at least 2 points) 
+TypeError -- if points is not a sequence or points does not contain number pairs       Changed in pygame 2.0.0: Added support for keyword arguments.

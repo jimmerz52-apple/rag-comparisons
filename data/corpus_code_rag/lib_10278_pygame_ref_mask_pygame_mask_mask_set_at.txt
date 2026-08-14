@@ -1,0 +1,18 @@
+# pygame.ref.mask#pygame.mask.Mask.set_at
+
+set_at() 
+ Sets the bit at the given position set_at((x, y)) -> None set_at((x, y), value=1) -> None      
+Parameters:
+
+ 
+pos (tuple(int, int) or list[int, int]) -- the position of the bit to set 
+value (int) -- any nonzero int will set the bit to 1, 0 will set the bit to 0 (default is 1)    
+Returns:
+
+None   
+Return type:
+
+NoneType   
+Raises:
+
+IndexError -- if the position is outside of the mask's bounds

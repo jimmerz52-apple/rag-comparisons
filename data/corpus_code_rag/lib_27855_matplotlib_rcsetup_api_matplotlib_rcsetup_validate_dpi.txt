@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_dpi
+
+matplotlib.rcsetup.validate_dpi(s)[source]
+ 
+Confirm s is string 'figure' or convert s to float or raise.

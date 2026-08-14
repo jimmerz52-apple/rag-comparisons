@@ -1,0 +1,12 @@
+# django.topics.i18n.translation#django.views.i18n.JSONCatalog
+
+class JSONCatalog  
+In order to use another client-side library to handle translations, you may want to take advantage of the JSONCatalog view. It’s similar to JavaScriptCatalog but returns a JSON response. See the documentation for JavaScriptCatalog to learn about possible values and use of the domain and packages attributes. The response format is as follows: {
+    "catalog": {
+        # Translations catalog
+    },
+    "formats": {
+        # Language formats for date, time, etc.
+    },
+    "plural": "..."  # Expression for plural forms, or null.
+}

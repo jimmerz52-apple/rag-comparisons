@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.decorators.decorator_from_middleware
+
+decorator_from_middleware(middleware_class) [source]
+ 
+Given a middleware class, returns a view decorator. This lets you use middleware functionality on a per-view basis. The middleware is created with no params passed. It assumes middleware that’s compatible with the old style of Django 1.9 and earlier (having methods like process_request(), process_exception(), and process_response()).

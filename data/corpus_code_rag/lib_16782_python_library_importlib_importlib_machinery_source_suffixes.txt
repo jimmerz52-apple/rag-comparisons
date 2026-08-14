@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SOURCE_SUFFIXES
+
+importlib.machinery.SOURCE_SUFFIXES  
+A list of strings representing the recognized file suffixes for source modules.  New in version 3.3.

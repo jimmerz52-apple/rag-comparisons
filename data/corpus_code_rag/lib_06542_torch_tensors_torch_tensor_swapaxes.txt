@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.swapaxes
+
+swapaxes(axis0, axis1) → Tensor  
+See torch.swapaxes()

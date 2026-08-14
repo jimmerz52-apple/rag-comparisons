@@ -1,0 +1,26 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolQuit
+
+classmatplotlib.backend_tools.ToolQuit(toolmanager, name)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Tool to call the figure manager destroy method.   default_keymap=['ctrl+w', 'cmd+w', 'q']
+ 
+Keymap to associate with this tool. list[str]: List of keys that will trigger this tool when a keypress event is emitted on self.figure.canvas. 
+   description='Quit the figure'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   trigger(sender, event, data=None)[source]
+ 
+Called when this tool gets used. This method is called by ToolManager.trigger_tool.  Parameters 
+ 
+eventEvent
+
+
+The canvas event that caused this tool to be called.  
+senderobject
+
+
+Object that requested the tool to be triggered.  
+dataobject
+
+
+Extra data.

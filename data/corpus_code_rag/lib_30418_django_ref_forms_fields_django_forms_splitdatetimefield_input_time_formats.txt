@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.SplitDateTimeField.input_time_formats
+
+input_time_formats  
+A list of formats used to attempt to convert a string to a valid datetime.time object.

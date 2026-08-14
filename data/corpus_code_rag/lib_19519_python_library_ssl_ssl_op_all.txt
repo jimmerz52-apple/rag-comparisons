@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_ALL
+
+ssl.OP_ALL  
+Enables workarounds for various bugs present in other SSL implementations. This option is set by default. It does not necessarily set the same flags as OpenSSL’s SSL_OP_ALL constant.  New in version 3.2.

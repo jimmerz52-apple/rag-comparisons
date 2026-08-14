@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.domain_specified
+
+Cookie.domain_specified  
+True if a domain was explicitly specified by the server.

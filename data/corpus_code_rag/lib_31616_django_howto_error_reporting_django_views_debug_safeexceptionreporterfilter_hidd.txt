@@ -1,0 +1,6 @@
+# django.howto.error-reporting#django.views.debug.SafeExceptionReporterFilter.hidden_settings
+
+hidden_settings  
+A compiled regular expression object used to match settings and request.META values considered as sensitive. By default equivalent to: import re
+
+re.compile(r'API|TOKEN|KEY|SECRET|PASS|SIGNATURE', flags=re.IGNORECASE)

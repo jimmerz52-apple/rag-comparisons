@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry
+
+class models.LogEntry  
+The LogEntry class tracks additions, changes, and deletions of objects done through the admin interface.

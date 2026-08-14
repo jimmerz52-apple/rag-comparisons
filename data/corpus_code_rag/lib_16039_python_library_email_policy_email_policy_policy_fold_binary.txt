@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Policy.fold_binary
+
+fold_binary(name, value)  
+The same as fold(), except that the returned value should be a bytes object rather than a string. value may contain surrogateescaped binary data. These could be converted back into binary data in the returned bytes object.

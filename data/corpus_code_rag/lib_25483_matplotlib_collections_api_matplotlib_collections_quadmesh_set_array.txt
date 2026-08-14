@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.set_array
+
+set_array(A)[source]
+ 
+Set the data values.  Parameters 
+ 
+A(M, N) array-like or M*N array-like
+
+
+If the values are provided as a 2D grid, the shape must match the coordinates grid. If the values are 1D, they are reshaped to 2D. M, N follow from the coordinates grid, where the coordinates grid shape is (M, N) for 'gouraud' shading and (M+1, N+1) for 'flat' shading.

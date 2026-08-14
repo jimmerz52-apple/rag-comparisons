@@ -1,0 +1,4 @@
+# python.library.locale#locale.LC_TIME
+
+locale.LC_TIME  
+Locale category for the formatting of time. The function time.strftime() follows these conventions.

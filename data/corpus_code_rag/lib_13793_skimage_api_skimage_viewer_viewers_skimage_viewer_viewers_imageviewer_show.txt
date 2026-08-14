@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.viewers#skimage.viewer.viewers.ImageViewer.show
+
+show(main_window=True) [source]
+ 
+Show ImageViewer and attached plugins. This behaves much like matplotlib.pyplot.show and QWidget.show.

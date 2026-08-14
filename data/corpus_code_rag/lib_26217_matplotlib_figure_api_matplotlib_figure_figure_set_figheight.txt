@@ -1,0 +1,14 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_figheight
+
+set_figheight(val, forward=True)[source]
+ 
+Set the height of the figure in inches.  Parameters 
+ 
+valfloat
+
+
+forwardbool
+
+
+See set_size_inches.      See also  matplotlib.figure.Figure.set_figwidth
+matplotlib.figure.Figure.set_size_inches

@@ -1,0 +1,4 @@
+# python.library.ast#ast.walk
+
+ast.walk(node)  
+Recursively yield all descendant nodes in the tree starting at node (including node itself), in no specified order. This is useful if you only want to modify nodes in place and don’t care about the context.

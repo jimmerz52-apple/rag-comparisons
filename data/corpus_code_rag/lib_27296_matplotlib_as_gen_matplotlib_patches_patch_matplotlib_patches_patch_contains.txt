@@ -1,0 +1,6 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.contains
+
+contains(mouseevent, radius=None)[source]
+ 
+Test whether the mouse event occurred in the patch.  Returns 
+ (bool, empty dict)

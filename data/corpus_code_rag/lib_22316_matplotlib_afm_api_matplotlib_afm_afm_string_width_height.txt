@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.string_width_height
+
+string_width_height(s)[source]
+ 
+Return the string width (including kerning) and string height as a (w, h) tuple.

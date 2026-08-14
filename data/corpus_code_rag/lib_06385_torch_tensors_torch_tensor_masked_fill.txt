@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.masked_fill
+
+masked_fill(mask, value) → Tensor  
+Out-of-place version of torch.Tensor.masked_fill_()

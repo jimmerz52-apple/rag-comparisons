@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.utils.safe_mask
+
+sklearn.utils.safe_mask  
+sklearn.utils.safe_mask(X, mask) [source]
+ 
+Return a mask which is safe to use on X.  Parameters 
+ 
+X{array-like, sparse matrix} 
+
+Data on which to apply mask.  
+maskndarray 
+
+Mask to be used on X.    Returns 
+ mask

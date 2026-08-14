@@ -1,0 +1,4 @@
+# python.library.test#test.support.socket_helper.IPV6_ENABLED
+
+test.support.socket_helper.IPV6_ENABLED  
+Set to True if IPv6 is enabled on this host, False otherwise.

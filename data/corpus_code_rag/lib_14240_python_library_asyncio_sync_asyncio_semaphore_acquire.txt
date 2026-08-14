@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Semaphore.acquire
+
+coroutine acquire()  
+Acquire a semaphore. If the internal counter is greater than zero, decrement it by one and return True immediately. If it is zero, wait until a release() is called and return True.

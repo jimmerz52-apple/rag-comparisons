@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_identifiers
+
+get_identifiers()  
+Return a list of names of symbols in this table.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.mean
+
+numpy.record.mean method   record.mean()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.mean.

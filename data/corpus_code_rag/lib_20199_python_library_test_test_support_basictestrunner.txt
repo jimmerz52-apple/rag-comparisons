@@ -1,0 +1,6 @@
+# python.library.test#test.support.BasicTestRunner
+
+class test.support.BasicTestRunner  
+ 
+run(test)  
+Run test and return the result.

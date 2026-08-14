@@ -1,0 +1,4 @@
+# django.ref.migration-operations#django.db.migrations.operations.RunSQL.noop
+
+RunSQL.noop  
+Pass the RunSQL.noop attribute to sql or reverse_sql when you want the operation not to do anything in the given direction. This is especially useful in making the operation reversible.

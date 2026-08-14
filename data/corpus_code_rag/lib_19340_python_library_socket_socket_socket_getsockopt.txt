@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.getsockopt
+
+socket.getsockopt(level, optname[, buflen])  
+Return the value of the given socket option (see the Unix man page getsockopt(2)). The needed symbolic constants (SO_* etc.) are defined in this module. If buflen is absent, an integer option is assumed and its integer value is returned by the function. If buflen is present, it specifies the maximum length of the buffer used to receive the option in, and this buffer is returned as a bytes object. It is up to the caller to decode the contents of the buffer (see the optional built-in module struct for a way to decode C structures encoded as byte strings).

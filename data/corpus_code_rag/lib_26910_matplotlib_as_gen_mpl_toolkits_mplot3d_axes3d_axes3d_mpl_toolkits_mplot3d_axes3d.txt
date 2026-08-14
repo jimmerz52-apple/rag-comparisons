@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.autoscale
+
+autoscale(enable=True, axis='both', tight=None)[source]
+ 
+Convenience method for simple axis view autoscaling. See matplotlib.axes.Axes.autoscale() for full explanation. Note that this function behaves the same, but for all three axes. Therefore, 'z' can be passed for axis, and 'both' applies to all three axes.

@@ -1,0 +1,6 @@
+# python.library.asyncore#asyncore.dispatcher.handle_write
+
+handle_write()  
+Called when the asynchronous loop detects that a writable socket can be written. Often this method will implement the necessary buffering for performance. For example: def handle_write(self):
+    sent = self.send(self.buffer)
+    self.buffer = self.buffer[sent:]

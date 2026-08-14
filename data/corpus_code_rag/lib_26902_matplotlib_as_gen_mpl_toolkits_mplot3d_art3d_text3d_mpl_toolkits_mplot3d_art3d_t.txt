@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.text3d#mpl_toolkits.mplot3d.art3d.Text3D.set_z
+
+set_z(z)[source]
+ 
+Set the z position of the text.  Parameters 
+ 
+zfloat

@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.split_de_casteljau
+
+matplotlib.bezier.split_de_casteljau(beta, t)[source]
+ 
+Split a Bezier segment defined by its control points beta into two separate segments divided at t and return their control points.

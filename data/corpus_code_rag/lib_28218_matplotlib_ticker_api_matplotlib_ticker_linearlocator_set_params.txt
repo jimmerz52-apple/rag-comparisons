@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LinearLocator.set_params
+
+set_params(numticks=None, presets=None)[source]
+ 
+Set parameters within this locator.

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.maskedarray.squeeze
+
+numpy.ma.MaskedArray.squeeze method   ma.MaskedArray.squeeze(axis=None)[source]
+ 
+Remove axes of length one from a. Refer to numpy.squeeze for full documentation.  See also  numpy.squeeze
+
+equivalent function

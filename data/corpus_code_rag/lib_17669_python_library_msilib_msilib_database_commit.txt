@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Database.Commit
+
+Database.Commit()  
+Commit the changes pending in the current transaction, by calling MSIDatabaseCommit().

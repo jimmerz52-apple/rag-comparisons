@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BlendedGenericTransform.contains_branch
+
+contains_branch(other)[source]
+ 
+Return whether the given transform is a sub-tree of this transform. This routine uses transform equality to identify sub-trees, therefore in many situations it is object id which will be used. For the case where the given transform represents the whole of this transform, returns True.

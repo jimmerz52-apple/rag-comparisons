@@ -1,0 +1,3 @@
+# skimage.api.skimage.io#skimage.io.imread_collection_wrapper
+
+skimage.io.imread_collection_wrapper(imread) [source]

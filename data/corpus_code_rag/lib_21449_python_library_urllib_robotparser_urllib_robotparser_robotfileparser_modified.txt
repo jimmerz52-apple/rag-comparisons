@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.modified
+
+modified()  
+Sets the time the robots.txt file was last fetched to the current time.

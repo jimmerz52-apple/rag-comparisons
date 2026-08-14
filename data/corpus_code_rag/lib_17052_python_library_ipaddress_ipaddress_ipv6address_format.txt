@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv6Address.__format__
+
+IPv6Address.__format__(fmt)  
+Refer to the corresponding method documentation in IPv4Address.  New in version 3.9.

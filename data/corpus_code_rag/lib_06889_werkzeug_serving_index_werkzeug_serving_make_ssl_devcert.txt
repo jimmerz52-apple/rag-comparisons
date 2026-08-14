@@ -1,0 +1,9 @@
+# werkzeug.serving.index#werkzeug.serving.make_ssl_devcert
+
+werkzeug.serving.make_ssl_devcert(base_path, host=None, cn=None)  
+Creates an SSL key for development. This should be used instead of the 'adhoc' key which generates a new cert on each server start. It accepts a path for where it should store the key and cert and either a host or CN. If a host is given it will use the CN *.host/CN=host. For more information see run_simple().  Changelog New in version 0.9.   Parameters 
+ 
+base_path (str) – the path to the certificate and key. The extension .crt is added for the certificate, .key is added for the key. 
+host (Optional[str]) – the name of the host. This can be used as an alternative for the cn. 
+cn (Optional[str]) – the CN to use.   Return type 
+Tuple[str, str]

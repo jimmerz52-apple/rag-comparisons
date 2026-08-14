@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.stls
+
+POP3.stls(context=None)  
+Start a TLS session on the active connection as specified in RFC 2595. This is only allowed before user authentication context parameter is a ssl.SSLContext object which allows bundling SSL configuration options, certificates and private keys into a single (potentially long-lived) structure. Please read Security considerations for best practices. This method supports hostname checking via ssl.SSLContext.check_hostname and Server Name Indication (see ssl.HAS_SNI).  New in version 3.4.

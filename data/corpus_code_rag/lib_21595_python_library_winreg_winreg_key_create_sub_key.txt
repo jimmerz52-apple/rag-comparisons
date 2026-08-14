@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_CREATE_SUB_KEY
+
+winreg.KEY_CREATE_SUB_KEY  
+Required to create a subkey of a registry key.

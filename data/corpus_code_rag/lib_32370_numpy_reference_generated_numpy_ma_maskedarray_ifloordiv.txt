@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ifloordiv__
+
+numpy.ma.MaskedArray.__ifloordiv__ method   ma.MaskedArray.__ifloordiv__(other)[source]
+ 
+Floor divide self by other in-place.

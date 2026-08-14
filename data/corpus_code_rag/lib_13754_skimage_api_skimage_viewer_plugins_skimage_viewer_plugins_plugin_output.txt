@@ -1,0 +1,12 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.output
+
+output() [source]
+ 
+Return the plugin’s representation and data.  Returns 
+ 
+imagearray, same shape as self.image_viewer.image, or None 
+
+The filtered image.  
+dataNone 
+
+Any data associated with the plugin.     Notes Derived classes should override this method to return a tuple containing an overlay of the same shape of the image, and a data object. Either of these is optional: return None if you don’t want to return a value.

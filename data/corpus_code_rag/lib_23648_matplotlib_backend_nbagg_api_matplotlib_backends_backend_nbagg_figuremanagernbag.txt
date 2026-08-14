@@ -1,0 +1,26 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.FigureManagerNbAgg
+
+classmatplotlib.backends.backend_nbagg.FigureManagerNbAgg(canvas, num)[source]
+ 
+Bases: matplotlib.backends.backend_webagg_core.FigureManagerWebAgg   ToolbarCls[source]
+ 
+alias of matplotlib.backends.backend_nbagg.NavigationIPy 
+   clearup_closed()[source]
+ 
+Clear up any closed Comms. 
+   propertyconnected
+
+   destroy()[source]
+
+   display_js()[source]
+
+   classmethodget_javascript(stream=None)[source]
+
+   remove_comm(comm_id)[source]
+
+   reshow()[source]
+ 
+A special method to re-show the figure in the notebook. 
+   show()[source]
+ 
+For GUI backends, show the figure window and redraw. For non-GUI backends, raise an exception, unless running headless (i.e. on Linux with an unset DISPLAY); this exception is converted to a warning in Figure.show.

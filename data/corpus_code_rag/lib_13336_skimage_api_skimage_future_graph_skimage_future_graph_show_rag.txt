@@ -1,0 +1,45 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.show_rag
+
+skimage.future.graph.show_rag(labels, rag, image, border_color='black', edge_width=1.5, edge_cmap='magma', img_cmap='bone', in_place=True, ax=None) [source]
+ 
+Show a Region Adjacency Graph on an image. Given a labelled image and its corresponding RAG, show the nodes and edges of the RAG on the image with the specified colors. Edges are displayed between the centroid of the 2 adjacent regions in the image.  Parameters 
+ 
+labelsndarray, shape (M, N) 
+
+The labelled image.  
+ragRAG 
+
+The Region Adjacency Graph.  
+imagendarray, shape (M, N[, 3]) 
+
+Input image. If colormap is None, the image should be in RGB format.  
+border_colorcolor spec, optional 
+
+Color with which the borders between regions are drawn.  
+edge_widthfloat, optional 
+
+The thickness with which the RAG edges are drawn.  
+edge_cmapmatplotlib.colors.Colormap, optional 
+
+Any matplotlib colormap with which the edges are drawn.  
+img_cmapmatplotlib.colors.Colormap, optional 
+
+Any matplotlib colormap with which the image is draw. If set to None the image is drawn as it is.  
+in_placebool, optional 
+
+If set, the RAG is modified in place. For each node n the function will set a new attribute rag.nodes[n]['centroid'].  
+axmatplotlib.axes.Axes, optional 
+
+The axes to draw on. If not specified, new axes are created and drawn on.    Returns 
+ 
+lcmatplotlib.collections.LineCollection 
+
+A colection of lines that represent the edges of the graph. It can be passed to the matplotlib.figure.Figure.colorbar() function.     Examples >>> from skimage import data, segmentation
+>>> from skimage.future import graph
+>>> import matplotlib.pyplot as plt
+>>>
+>>> img = data.coffee()
+>>> labels = segmentation.slic(img)
+>>> g =  graph.rag_mean_color(img, labels)
+>>> lc = graph.show_rag(labels, g, img)
+>>> cbar = plt.colorbar(lc)

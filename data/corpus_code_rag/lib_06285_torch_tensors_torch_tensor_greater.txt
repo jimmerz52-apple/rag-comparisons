@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.greater_
+
+greater_(other) → Tensor  
+In-place version of greater().

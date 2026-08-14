@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.close
+
+oss_audio_device.close()  
+Explicitly close the audio device. When you are done writing to or reading from an audio device, you should explicitly close it. A closed device cannot be used again.

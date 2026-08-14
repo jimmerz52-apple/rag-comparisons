@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isblank
+
+curses.ascii.isblank(c)  
+Checks for an ASCII whitespace character; space or horizontal tab.

@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.attach
+
+attach(payload)  
+Add the given payload to the current payload, which must be None or a list of Message objects before the call. After the call, the payload will always be a list of Message objects. If you want to set the payload to a scalar object (e.g. a string), use set_payload() instead. This is a legacy method. On the EmailMessage class its functionality is replaced by set_content() and the related make and add methods.

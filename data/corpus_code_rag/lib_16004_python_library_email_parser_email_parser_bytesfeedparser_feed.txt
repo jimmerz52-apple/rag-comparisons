@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.BytesFeedParser.feed
+
+feed(data)  
+Feed the parser some more data. data should be a bytes-like object containing one or more lines. The lines can be partial and the parser will stitch such partial lines together properly. The lines can have any of the three common line endings: carriage return, newline, or carriage return and newline (they can even be mixed).

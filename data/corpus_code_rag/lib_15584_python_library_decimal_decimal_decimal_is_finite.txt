@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.is_finite
+
+is_finite()  
+Return True if the argument is a finite number, and False if the argument is an infinity or a NaN.

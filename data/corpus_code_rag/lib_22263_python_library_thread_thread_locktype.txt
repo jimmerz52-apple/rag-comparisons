@@ -1,0 +1,4 @@
+# python.library._thread#_thread.LockType
+
+_thread.LockType  
+This is the type of lock objects.

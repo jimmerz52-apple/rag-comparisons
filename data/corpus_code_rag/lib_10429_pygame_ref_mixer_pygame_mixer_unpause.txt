@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.unpause
+
+pygame.mixer.unpause() 
+ resume paused playback of sound channels unpause() -> None  This will resume all active sound channels after they have been paused.

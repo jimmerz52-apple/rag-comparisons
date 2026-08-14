@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.erf_
+
+erf_() → Tensor  
+In-place version of erf()

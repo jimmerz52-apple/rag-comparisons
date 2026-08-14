@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.POINTER
+
+ctypes.POINTER(type)  
+This factory function creates and returns a new ctypes pointer type. Pointer types are cached and reused internally, so calling this function repeatedly is cheap. type must be a ctypes type.

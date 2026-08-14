@@ -1,0 +1,7 @@
+# werkzeug.routing.index#werkzeug.routing.Map.iter_rules
+
+iter_rules(endpoint=None)  
+Iterate over all rules or the rules of an endpoint.  Parameters 
+endpoint (Optional[str]) – if provided only the rules for that endpoint are returned.  Returns 
+an iterator  Return type 
+Iterator[werkzeug.routing.Rule]

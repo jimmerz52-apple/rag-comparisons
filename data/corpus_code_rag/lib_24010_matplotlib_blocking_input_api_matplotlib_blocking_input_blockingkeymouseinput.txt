@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingKeyMouseInput
+
+classmatplotlib.blocking_input.BlockingKeyMouseInput(fig)[source]
+ 
+Bases: matplotlib.blocking_input.BlockingInput Callable for retrieving mouse clicks and key presses in a blocking way.   post_event()[source]
+ 
+Determine if it is a key event.

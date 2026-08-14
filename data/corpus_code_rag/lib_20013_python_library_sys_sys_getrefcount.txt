@@ -1,0 +1,4 @@
+# python.library.sys#sys.getrefcount
+
+sys.getrefcount(object)  
+Return the reference count of the object. The count returned is generally one higher than you might expect, because it includes the (temporary) reference as an argument to getrefcount().

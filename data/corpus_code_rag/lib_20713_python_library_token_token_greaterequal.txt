@@ -1,0 +1,4 @@
+# python.library.token#token.GREATEREQUAL
+
+token.GREATEREQUAL  
+Token value for ">=".

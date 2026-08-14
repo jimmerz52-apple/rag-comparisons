@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.mlpclassifier#sklearn.neural_network.MLPClassifier.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Return the log of probability estimates.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+The input data.    Returns 
+ 
+log_y_probndarray of shape (n_samples, n_classes) 
+
+The predicted log-probability of the sample for each class in the model, where classes are ordered as they are in self.classes_. Equivalent to log(predict_proba(X))

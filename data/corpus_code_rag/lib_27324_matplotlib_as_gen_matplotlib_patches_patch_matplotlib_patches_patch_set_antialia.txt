@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_antialiased
+
+set_antialiased(aa)[source]
+ 
+Set whether to use antialiased rendering.  Parameters 
+ 
+aabool or None

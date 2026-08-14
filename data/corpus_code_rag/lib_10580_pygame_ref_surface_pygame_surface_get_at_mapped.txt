@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_at_mapped
+
+get_at_mapped() 
+ get the mapped color value at a single pixel get_at_mapped((x, y)) -> Color  Return the integer value of the given pixel. If the pixel position is outside the area of the Surface an IndexError exception will be raised. This method is intended for pygame unit testing. It unlikely has any use in an application. This function will temporarily lock and unlock the Surface as needed.  New in pygame 1.9.2.

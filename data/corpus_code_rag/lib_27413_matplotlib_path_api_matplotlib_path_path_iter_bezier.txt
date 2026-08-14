@@ -1,0 +1,17 @@
+# matplotlib.path_api#matplotlib.path.Path.iter_bezier
+
+iter_bezier(**kwargs)[source]
+ 
+Iterate over each bezier curve (lines included) in a Path.  Parameters 
+ **kwargs
+
+Forwarded to iter_segments.    Yields 
+ 
+Bmatplotlib.bezier.BezierSegment
+
+
+The bezier curves that make up the current path. Note in particular that freestanding points are bezier curves of order 0, and lines are bezier curves of order 1 (with two control points).  
+codePath.code_type
+
+
+The code describing what kind of curve is being returned. Path.MOVETO, Path.LINETO, Path.CURVE3, Path.CURVE4 correspond to bezier curves with 1, 2, 3, and 4 control points (respectively). Path.CLOSEPOLY is a Path.LINETO with the control points correctly chosen based on the start/end points of the current stroke.

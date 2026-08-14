@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Connection.close
+
+close()  
+This closes the database connection. Note that this does not automatically call commit(). If you just close your database connection without calling commit() first, your changes will be lost!

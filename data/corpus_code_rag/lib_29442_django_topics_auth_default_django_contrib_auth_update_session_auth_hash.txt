@@ -1,0 +1,13 @@
+# django.topics.auth.default#django.contrib.auth.update_session_auth_hash
+
+update_session_auth_hash(request, user)  
+This function takes the current request and the updated user object from which the new session hash will be derived and updates the session hash appropriately. It also rotates the session key so that a stolen session cookie will be invalidated. Example usage: from django.contrib.auth import update_session_auth_hash
+
+def password_change(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(user=request.user, data=request.POST)
+        if form.is_valid():
+            form.save()
+            update_session_auth_hash(request, form.user)
+    else:
+        ...

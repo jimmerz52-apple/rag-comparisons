@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__mul__
+
+numpy.ma.MaskedArray.__mul__ method   ma.MaskedArray.__mul__(other)[source]
+ 
+Multiply self by other, and return a new masked array.

@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_clip
+
+get_clip() 
+ get the current clipping area of the Surface get_clip() -> Rect  Return a rectangle of the current clipping area. The Surface will always return a valid rectangle that will never be outside the bounds of the image. If the Surface has had None set for the clipping area, the Surface will return a rectangle with the full area of the Surface.

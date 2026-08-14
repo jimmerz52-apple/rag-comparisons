@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingContourLabeler.button1
+
+button1(event)[source]
+ 
+Process an button-1 event (add a label to a contour).  Parameters 
+ 
+eventMouseEvent

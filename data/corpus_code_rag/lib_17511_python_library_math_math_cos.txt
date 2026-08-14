@@ -1,0 +1,4 @@
+# python.library.math#math.cos
+
+math.cos(x)  
+Return the cosine of x radians.

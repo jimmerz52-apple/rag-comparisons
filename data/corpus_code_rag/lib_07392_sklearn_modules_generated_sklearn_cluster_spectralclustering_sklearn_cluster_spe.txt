@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cluster.spectralclustering#sklearn.cluster.SpectralClustering.fit
+
+fit(X, y=None) [source]
+ 
+Perform spectral clustering from features, or affinity matrix.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features), or array-like of shape (n_samples, n_samples) 
+
+Training instances to cluster, or similarities / affinities between instances if affinity='precomputed'. If a sparse matrix is provided in a format other than csr_matrix, csc_matrix, or coo_matrix, it will be converted into a sparse csr_matrix.  
+yIgnored 
+
+Not used, present here for API consistency by convention.    Returns 
+ self

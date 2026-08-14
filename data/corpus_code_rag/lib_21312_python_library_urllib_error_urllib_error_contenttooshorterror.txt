@@ -1,0 +1,4 @@
+# python.library.urllib.error#urllib.error.ContentTooShortError
+
+exception urllib.error.ContentTooShortError(msg, content)  
+This exception is raised when the urlretrieve() function detects that the amount of the downloaded data is less than the expected amount (given by the Content-Length header). The content attribute stores the downloaded (and supposedly truncated) data.

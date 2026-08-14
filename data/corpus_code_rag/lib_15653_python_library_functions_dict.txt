@@ -1,0 +1,6 @@
+# python.library.functions#dict
+
+class dict(**kwarg)  
+class dict(mapping, **kwarg)  
+class dict(iterable, **kwarg)  
+Create a new dictionary. The dict object is the dictionary class. See dict and Mapping Types — dict for documentation about this class. For other containers see the built-in list, set, and tuple classes, as well as the collections module.

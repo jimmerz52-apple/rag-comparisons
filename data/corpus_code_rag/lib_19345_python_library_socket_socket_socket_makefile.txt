@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.makefile
+
+socket.makefile(mode='r', buffering=None, *, encoding=None, errors=None, newline=None)  
+Return a file object associated with the socket. The exact returned type depends on the arguments given to makefile(). These arguments are interpreted the same way as by the built-in open() function, except the only supported mode values are 'r' (default), 'w' and 'b'. The socket must be in blocking mode; it can have a timeout, but the file object’s internal buffer may end up in an inconsistent state if a timeout occurs. Closing the file object returned by makefile() won’t close the original socket unless all other file objects have been closed and socket.close() has been called on the socket object.  Note On Windows, the file-like object created by makefile() cannot be used where a file object with a file descriptor is expected, such as the stream arguments of subprocess.Popen().

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_UNCLOSED_CDATA_SECTION
+
+xml.parsers.expat.errors.XML_ERROR_UNCLOSED_CDATA_SECTION  
+A CDATA marked section was not closed.

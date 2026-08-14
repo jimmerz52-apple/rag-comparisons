@@ -1,0 +1,4 @@
+# python.library.webbrowser#webbrowser.get
+
+webbrowser.get(using=None)  
+Return a controller object for the browser type using. If using is None, return a controller for a default browser appropriate to the caller’s environment.

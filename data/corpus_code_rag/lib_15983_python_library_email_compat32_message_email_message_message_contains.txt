@@ -1,0 +1,5 @@
+# python.library.email.compat32-message#email.message.Message.__contains__
+
+__contains__(name)  
+Return True if the message object has a field named name. Matching is done case-insensitively and name should not include the trailing colon. Used for the in operator, e.g.: if 'message-id' in myMessage:
+   print('Message-ID:', myMessage['message-id'])

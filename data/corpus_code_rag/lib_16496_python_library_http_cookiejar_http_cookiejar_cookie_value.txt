@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.value
+
+Cookie.value  
+Cookie value (a string), or None.

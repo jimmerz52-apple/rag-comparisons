@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.factoranalysis#sklearn.decomposition.FactorAnalysis.transform
+
+transform(X) [source]
+ 
+Apply dimensionality reduction to X using the model. Compute the expected mean of the latent variables. See Barber, 21.2.33 (or Bishop, 12.66).  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.    Returns 
+ 
+X_newndarray of shape (n_samples, n_components) 
+
+The latent variables of X.

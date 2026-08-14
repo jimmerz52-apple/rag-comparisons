@@ -1,0 +1,4 @@
+# python.library.curses#curses.qiflush
+
+curses.qiflush([flag])  
+If flag is False, the effect is the same as calling noqiflush(). If flag is True, or no argument is provided, the queues will be flushed when these control characters are read.

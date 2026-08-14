@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_numaxes
+
+get_numaxes() 
+ get the number of axes on a Joystick get_numaxes() -> int  Returns the number of input axes are on a Joystick. There will usually be two for the position. Controls like rudders and throttles are treated as additional axes. The pygame.JOYAXISMOTION events will be in the range from -1.0 to 1.0. A value of 0.0 means the axis is centered. Gamepad devices will usually be -1, 0, or 1 with no values in between. Older analog joystick axes will not always use the full -1 to 1 range, and the centered value will be some area around 0. Analog joysticks usually have a bit of noise in their axis, which will generate a lot of rapid small motion events.

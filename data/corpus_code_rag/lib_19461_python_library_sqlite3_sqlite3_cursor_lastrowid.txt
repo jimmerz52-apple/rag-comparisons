@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Cursor.lastrowid
+
+lastrowid  
+This read-only attribute provides the rowid of the last modified row. It is only set if you issued an INSERT or a REPLACE statement using the execute() method. For operations other than INSERT or REPLACE or when executemany() is called, lastrowid is set to None. If the INSERT or REPLACE statement failed to insert the previous successful rowid is returned.  Changed in version 3.6: Added support for the REPLACE statement.

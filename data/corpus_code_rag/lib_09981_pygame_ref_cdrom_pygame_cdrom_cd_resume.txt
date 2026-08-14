@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.resume
+
+resume() 
+ unpause audio playback resume() -> None  Unpause a paused CD. If the CD is not paused or already playing, this method does nothing.

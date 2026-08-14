@@ -1,0 +1,4 @@
+# python.library.stat#stat.UF_APPEND
+
+stat.UF_APPEND  
+The file may only be appended to.

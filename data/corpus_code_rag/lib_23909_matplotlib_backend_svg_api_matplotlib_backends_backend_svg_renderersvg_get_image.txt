@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.RendererSVG.get_image_magnification
+
+get_image_magnification()[source]
+ 
+Get the factor by which to magnify images passed to draw_image(). Allows a backend to have images at a different resolution to other artists.

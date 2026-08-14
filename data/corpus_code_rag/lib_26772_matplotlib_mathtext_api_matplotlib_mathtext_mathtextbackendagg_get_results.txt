@@ -1,0 +1,5 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackendAgg.get_results
+
+get_results(box, used_characters)[source]
+ 
+Return a backend-specific tuple to return to the backend after all processing is done.

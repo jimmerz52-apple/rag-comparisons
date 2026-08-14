@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.day.is_quarter_start
+
+pandas.tseries.offsets.Day.is_quarter_start   Day.is_quarter_start()

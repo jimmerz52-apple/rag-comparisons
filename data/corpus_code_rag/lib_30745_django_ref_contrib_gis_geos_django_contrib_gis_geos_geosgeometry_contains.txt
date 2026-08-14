@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.contains
+
+GEOSGeometry.contains(other)  
+Returns True if other.within(this) returns True.

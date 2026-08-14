@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.radix
+
+radix()  
+Return Decimal(10), the radix (base) in which the Decimal class does all its arithmetic. Included for compatibility with the specification.

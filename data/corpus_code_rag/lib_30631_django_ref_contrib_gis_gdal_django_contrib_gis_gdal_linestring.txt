@@ -1,0 +1,15 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.LineString
+
+class LineString  
+ 
+x 
+ Returns a list of X coordinates in this line: >>> OGRGeometry('LINESTRING (1 2,3 4)').x
+[1.0, 3.0]
+  
+y 
+ Returns a list of Y coordinates in this line: >>> OGRGeometry('LINESTRING (1 2,3 4)').y
+[2.0, 4.0]
+  
+z 
+ Returns a list of Z coordinates in this line, or None if the line does not have Z coordinates: >>> OGRGeometry('LINESTRING (1 2 3,4 5 6)').z
+[3.0, 6.0]

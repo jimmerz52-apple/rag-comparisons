@@ -1,0 +1,4 @@
+# python.library.time#time.clock_settime_ns
+
+time.clock_settime_ns(clk_id, time: int)  
+Similar to clock_settime() but set time with nanoseconds. Availability: Unix.  New in version 3.7.

@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.recv_into
+
+socket.recv_into(buffer[, nbytes[, flags]])  
+Receive up to nbytes bytes from the socket, storing the data into a buffer rather than creating a new bytestring. If nbytes is not specified (or 0), receive up to the size available in the given buffer. Returns the number of bytes received. See the Unix manual page recv(2) for the meaning of the optional argument flags; it defaults to zero.

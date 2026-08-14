@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.index
+
+index(item)  
+Returns the integer index of item within its parent’s list of children.

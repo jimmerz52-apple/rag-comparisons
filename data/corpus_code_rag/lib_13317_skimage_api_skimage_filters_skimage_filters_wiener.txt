@@ -1,0 +1,22 @@
+# skimage.api.skimage.filters#skimage.filters.wiener
+
+skimage.filters.wiener(data, impulse_response=None, filter_params={}, K=0.25, predefined_filter=None) [source]
+ 
+Minimum Mean Square Error (Wiener) inverse filter.  Parameters 
+ 
+data(M,N) ndarray 
+
+Input data.  
+Kfloat or (M,N) ndarray 
+
+Ratio between power spectrum of noise and undegraded image.  
+impulse_responsecallable f(r, c, **filter_params) 
+
+Impulse response of the filter. See LPIFilter2D.__init__.  
+filter_paramsdict 
+
+Additional keyword parameters to the impulse_response function.    Other Parameters 
+ 
+predefined_filterLPIFilter2D 
+
+If you need to apply the same filter multiple times over different images, construct the LPIFilter2D and specify it here.

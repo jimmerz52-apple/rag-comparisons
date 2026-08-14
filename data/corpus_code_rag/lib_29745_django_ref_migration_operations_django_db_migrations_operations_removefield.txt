@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.RemoveField
+
+class RemoveField(model_name, name)

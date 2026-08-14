@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.SlugField.allow_unicode
+
+SlugField.allow_unicode  
+If True, the field accepts Unicode letters in addition to ASCII letters. Defaults to False.

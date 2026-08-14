@@ -1,0 +1,6 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.model
+
+model  
+The model that this view will display data for. Specifying model
+= Foo is effectively the same as specifying queryset =
+Foo.objects.all(), where objects stands for Foo’s default manager.

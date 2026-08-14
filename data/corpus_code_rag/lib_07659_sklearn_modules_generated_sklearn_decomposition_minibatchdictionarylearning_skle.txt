@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.minibatchdictionarylearning#sklearn.decomposition.MiniBatchDictionaryLearning.transform
+
+transform(X) [source]
+ 
+Encode the data as a sparse combination of the dictionary atoms. Coding method is determined by the object parameter transform_algorithm.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Test data to be transformed, must have the same number of features as the data used to train the model.    Returns 
+ 
+X_newndarray of shape (n_samples, n_components) 
+
+Transformed data.

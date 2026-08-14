@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.dt.seconds
+
+pandas.Series.dt.seconds   Series.dt.seconds
+ 
+Number of seconds (>= 0 and less than 1 day) for each element.

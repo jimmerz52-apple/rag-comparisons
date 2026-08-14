@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.half_cauchy.HalfCauchy.has_rsample
+
+has_rsample = True

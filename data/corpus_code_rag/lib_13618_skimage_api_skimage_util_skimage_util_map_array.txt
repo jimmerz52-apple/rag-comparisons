@@ -1,0 +1,21 @@
+# skimage.api.skimage.util#skimage.util.map_array
+
+skimage.util.map_array(input_arr, input_vals, output_vals, out=None) [source]
+ 
+Map values from input array from input_vals to output_vals.  Parameters 
+ 
+input_arrarray of int, shape (M[, N][, P][, …]) 
+
+The input label image.  
+input_valsarray of int, shape (N,) 
+
+The values to map from.  
+output_valsarray, shape (N,) 
+
+The values to map to.  out: array, same shape as `input_arr`
+
+The output array. Will be created if not provided. It should have the same dtype as output_vals.    Returns 
+ 
+outarray, same shape as input_arr 
+
+The array of mapped values.

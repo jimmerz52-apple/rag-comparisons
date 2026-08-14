@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_ylabel
+
+matplotlib.axes.Axes.get_ylabel   Axes.get_ylabel()[source]
+ 
+Get the ylabel text string.

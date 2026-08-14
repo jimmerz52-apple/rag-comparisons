@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__setstate__
+
+numpy.ma.MaskedArray.__setstate__ method   ma.MaskedArray.__setstate__(state)[source]
+ 
+Restore the internal state of the masked array, for pickling purposes. state is typically the output of the __getstate__ output, and is a 5-tuple:  class name a tuple giving the shape of the data a typecode for the data a binary string for the data a binary string for the mask.

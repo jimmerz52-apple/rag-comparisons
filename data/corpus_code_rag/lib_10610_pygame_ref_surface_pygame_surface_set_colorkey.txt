@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.set_colorkey
+
+set_colorkey() 
+ Set the transparent colorkey set_colorkey(Color, flags=0) -> None set_colorkey(None) -> None  Set the current color key for the Surface. When blitting this Surface onto a destination, any pixels that have the same color as the colorkey will be transparent. The color can be an RGB color or a mapped color integer. If None is passed, the colorkey will be unset. The colorkey will be ignored if the Surface is formatted to use per pixel alpha values. The colorkey can be mixed with the full Surface alpha value. The optional flags argument can be set to pygame.RLEACCEL to provide better performance on non accelerated displays. An RLEACCEL Surface will be slower to modify, but quicker to blit as a source.

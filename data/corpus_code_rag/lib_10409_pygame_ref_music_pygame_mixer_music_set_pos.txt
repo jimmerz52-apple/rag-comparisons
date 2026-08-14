@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.set_pos
+
+pygame.mixer.music.set_pos() 
+ set position to play from set_pos(pos) -> None  This sets the position in the music file where playback will start. The meaning of "pos", a float (or a number that can be converted to a float), depends on the music format. For MOD files, pos is the integer pattern number in the module. For OGG it is the absolute position, in seconds, from the beginning of the sound. For MP3 files, it is the relative position, in seconds, from the current position. For absolute positioning in an MP3 file, first call rewind(). Other file formats are unsupported. Newer versions of SDL_mixer have better positioning support than earlier ones. An SDLError is raised if a particular format does not support positioning. Function set_pos() calls underlining SDL_mixer function Mix_SetMusicPosition.  New in pygame 1.9.2.

@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.ProjectionRegistry.get_projection_class
+
+get_projection_class(name)[source]
+ 
+Get a projection class from its name.

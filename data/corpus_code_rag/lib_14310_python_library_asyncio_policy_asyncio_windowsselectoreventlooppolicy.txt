@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.WindowsSelectorEventLoopPolicy
+
+class asyncio.WindowsSelectorEventLoopPolicy  
+An alternative event loop policy that uses the SelectorEventLoop event loop implementation. Availability: Windows.

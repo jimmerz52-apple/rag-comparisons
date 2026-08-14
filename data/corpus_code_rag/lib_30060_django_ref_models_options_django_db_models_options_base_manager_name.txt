@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.base_manager_name
+
+Options.base_manager_name  
+The attribute name of the manager, for example, 'objects', to use for the model’s _base_manager.

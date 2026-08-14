@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.base_session.AbstractBaseSession.session_data
+
+session_data  
+A string containing an encoded and serialized session dictionary.

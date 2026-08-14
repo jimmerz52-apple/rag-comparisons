@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogLocator.set_params
+
+set_params(base=None, subs=None, numdecs=None, numticks=None)[source]
+ 
+Set parameters within this locator.

@@ -1,0 +1,441 @@
+# skimage.api.skimage.data
+
+Module: data Standard test images. For more images, see  http://sipi.usc.edu/database/database.php   
+skimage.data.astronaut() Color image of the astronaut Eileen Collins.  
+skimage.data.binary_blobs([length, …]) Generate synthetic binary image with several rounded blob-like objects.  
+skimage.data.brain() Subset of data from the University of North Carolina Volume Rendering Test Data Set.  
+skimage.data.brick() Brick wall.  
+skimage.data.camera() Gray-level “camera” image.  
+skimage.data.cat() Chelsea the cat.  
+skimage.data.cell() Cell floating in saline.  
+skimage.data.cells3d() 3D fluorescence microscopy image of cells.  
+skimage.data.checkerboard() Checkerboard image.  
+skimage.data.chelsea() Chelsea the cat.  
+skimage.data.clock() Motion blurred clock.  
+skimage.data.coffee() Coffee cup.  
+skimage.data.coins() Greek coins from Pompeii.  
+skimage.data.colorwheel() Color Wheel.  
+skimage.data.download_all([directory]) Download all datasets for use with scikit-image offline.  
+skimage.data.eagle() A golden eagle.  
+skimage.data.grass() Grass.  
+skimage.data.gravel() Gravel  
+skimage.data.horse() Black and white silhouette of a horse.  
+skimage.data.hubble_deep_field() Hubble eXtreme Deep Field.  
+skimage.data.human_mitosis() Image of human cells undergoing mitosis.  
+skimage.data.immunohistochemistry() Immunohistochemical (IHC) staining with hematoxylin counterstaining.  
+skimage.data.kidney() Mouse kidney tissue.  
+skimage.data.lbp_frontal_face_cascade_filename() Return the path to the XML file containing the weak classifier cascade.  
+skimage.data.lfw_subset() Subset of data from the LFW dataset.  
+skimage.data.lily() Lily of the valley plant stem.  
+skimage.data.logo() Scikit-image logo, a RGBA image.  
+skimage.data.microaneurysms() Gray-level “microaneurysms” image.  
+skimage.data.moon() Surface of the moon.  
+skimage.data.page() Scanned page.  
+skimage.data.retina() Human retina.  
+skimage.data.rocket() Launch photo of DSCOVR on Falcon 9 by SpaceX.  
+skimage.data.shepp_logan_phantom() Shepp Logan Phantom.  
+skimage.data.skin() Microscopy image of dermis and epidermis (skin layers).  
+skimage.data.stereo_motorcycle() Rectified stereo image pair with ground-truth disparities.  
+skimage.data.text() Gray-level “text” image used for corner detection.   astronaut  
+skimage.data.astronaut() [source]
+ 
+Color image of the astronaut Eileen Collins. Photograph of Eileen Collins, an American astronaut. She was selected as an astronaut in 1992 and first piloted the space shuttle STS-63 in 1995. She retired in 2006 after spending a total of 38 days, 8 hours and 10 minutes in outer space. This image was downloaded from the NASA Great Images database <https://flic.kr/p/r9qvLn>`__. No known copyright restrictions, released into the public domain.  Returns 
+ 
+astronaut(512, 512, 3) uint8 ndarray 
+
+Astronaut image.     
+ Examples using skimage.data.astronaut
+ 
+  Flood Fill   binary_blobs  
+skimage.data.binary_blobs(length=512, blob_size_fraction=0.1, n_dim=2, volume_fraction=0.5, seed=None) [source]
+ 
+Generate synthetic binary image with several rounded blob-like objects.  Parameters 
+ 
+lengthint, optional 
+
+Linear size of output image.  
+blob_size_fractionfloat, optional 
+
+Typical linear size of blob, as a fraction of length, should be smaller than 1.  
+n_dimint, optional 
+
+Number of dimensions of output image.  
+volume_fractionfloat, default 0.5 
+
+Fraction of image pixels covered by the blobs (where the output is 1). Should be in [0, 1].  
+seedint, optional 
+
+Seed to initialize the random number generator. If None, a random seed from the operating system is used.    Returns 
+ 
+blobsndarray of bools 
+
+Output binary image     Examples >>> from skimage import data
+>>> data.binary_blobs(length=5, blob_size_fraction=0.2, seed=1)
+array([[ True, False,  True,  True,  True],
+       [ True,  True,  True, False,  True],
+       [False,  True, False,  True,  True],
+       [ True, False, False,  True,  True],
+       [ True, False, False, False,  True]])
+>>> blobs = data.binary_blobs(length=256, blob_size_fraction=0.1)
+>>> # Finer structures
+>>> blobs = data.binary_blobs(length=256, blob_size_fraction=0.05)
+>>> # Blobs cover a smaller volume fraction of the image
+>>> blobs = data.binary_blobs(length=256, volume_fraction=0.3)
+ 
+ brain  
+skimage.data.brain() [source]
+ 
+Subset of data from the University of North Carolina Volume Rendering Test Data Set. The full dataset is available at [1].  Returns 
+ 
+image(10, 256, 256) uint16 ndarray 
+   Notes The 3D volume consists of 10 layers from the larger volume. References  
+1  
+https://graphics.stanford.edu/data/voldata/   
+ Examples using skimage.data.brain
+ 
+  Local Histogram Equalization  
+
+  Rank filters   brick  
+skimage.data.brick() [source]
+ 
+Brick wall.  Returns 
+ 
+brick(512, 512) uint8 image 
+
+A small section of a brick wall.     Notes The original image was downloaded from CC0Textures and licensed under the Creative Commons CC0 License. A perspective transform was then applied to the image, prior to rotating it by 90 degrees, cropping and scaling it to obtain the final image. 
+ camera  
+skimage.data.camera() [source]
+ 
+Gray-level “camera” image. Can be used for segmentation and denoising examples.  Returns 
+ 
+camera(512, 512) uint8 ndarray 
+
+Camera image.     Notes No copyright restrictions. CC0 by the photographer (Lav Varshney).  Changed in version 0.18: This image was replaced due to copyright restrictions. For more information, please see [1].  References  
+1  
+https://github.com/scikit-image/scikit-image/issues/3927   
+ Examples using skimage.data.camera
+ 
+  Tinting gray-scale images  
+
+  Masked Normalized Cross-Correlation  
+
+  Entropy  
+
+  GLCM Texture Features  
+
+  Multi-Otsu Thresholding  
+
+  Flood Fill  
+
+  Rank filters   cat  
+skimage.data.cat() [source]
+ 
+Chelsea the cat. An example with texture, prominent edges in horizontal and diagonal directions, as well as features of differing scales.  Returns 
+ 
+chelsea(300, 451, 3) uint8 ndarray 
+
+Chelsea image.     Notes No copyright restrictions. CC0 by the photographer (Stefan van der Walt). 
+ cell  
+skimage.data.cell() [source]
+ 
+Cell floating in saline. This is a quantitative phase image retrieved from a digital hologram using the Python library qpformat. The image shows a cell with high phase value, above the background phase. Because of a banding pattern artifact in the background, this image is a good test of thresholding algorithms. The pixel spacing is 0.107 µm. These data were part of a comparison between several refractive index retrieval techniques for spherical objects as part of [1]. This image is CC0, dedicated to the public domain. You may copy, modify, or distribute it without asking permission.  Returns 
+ 
+cell(660, 550) uint8 array 
+
+Image of a cell.     References  
+1  
+Paul Müller, Mirjam Schürmann, Salvatore Girardo, Gheorghe Cojoc, and Jochen Guck. “Accurate evaluation of size and refractive index for spherical objects in quantitative phase imaging.” Optics Express 26(8): 10729-10743 (2018). DOI:10.1364/OE.26.010729   
+ cells3d  
+skimage.data.cells3d() [source]
+ 
+3D fluorescence microscopy image of cells. The returned data is a 3D multichannel array with dimensions provided in (z, c, y, x) order. Each voxel has a size of (0.29 0.26 0.26) micrometer. Channel 0 contains cell membranes, channel 1 contains nuclei.  Returns 
+ cells3d: (60, 2, 256, 256) uint16 ndarray
+
+The volumetric images of cells taken with an optical microscope.     Notes The data for this was provided by the Allen Institute for Cell Science. It has been downsampled by a factor of 4 in the row and column dimensions to reduce computational time. The microscope reports the following voxel spacing in microns:  Original voxel size is (0.290, 0.065, 0.065). Scaling factor is (1, 4, 4) in each dimension. After rescaling the voxel size is (0.29 0.26 0.26).  
+ Examples using skimage.data.cells3d
+ 
+  3D adaptive histogram equalization  
+
+  Use rolling-ball algorithm for estimating background intensity  
+
+  Explore 3D images (of cells)   checkerboard  
+skimage.data.checkerboard() [source]
+ 
+Checkerboard image. Checkerboards are often used in image calibration, since the corner-points are easy to locate. Because of the many parallel edges, they also visualise distortions particularly well.  Returns 
+ 
+checkerboard(200, 200) uint8 ndarray 
+
+Checkerboard image.     
+ Examples using skimage.data.checkerboard
+ 
+  Flood Fill   chelsea  
+skimage.data.chelsea() [source]
+ 
+Chelsea the cat. An example with texture, prominent edges in horizontal and diagonal directions, as well as features of differing scales.  Returns 
+ 
+chelsea(300, 451, 3) uint8 ndarray 
+
+Chelsea image.     Notes No copyright restrictions. CC0 by the photographer (Stefan van der Walt). 
+ Examples using skimage.data.chelsea
+ 
+  Phase Unwrapping  
+
+  Flood Fill   clock  
+skimage.data.clock() [source]
+ 
+Motion blurred clock. This photograph of a wall clock was taken while moving the camera in an aproximately horizontal direction. It may be used to illustrate inverse filters and deconvolution. Released into the public domain by the photographer (Stefan van der Walt).  Returns 
+ 
+clock(300, 400) uint8 ndarray 
+
+Clock image.     
+ coffee  
+skimage.data.coffee() [source]
+ 
+Coffee cup. This photograph is courtesy of Pikolo Espresso Bar. It contains several elliptical shapes as well as varying texture (smooth porcelain to course wood grain).  Returns 
+ 
+coffee(400, 600, 3) uint8 ndarray 
+
+Coffee image.     Notes No copyright restrictions. CC0 by the photographer (Rachel Michetti). 
+ coins  
+skimage.data.coins() [source]
+ 
+Greek coins from Pompeii. This image shows several coins outlined against a gray background. It is especially useful in, e.g. segmentation tests, where individual objects need to be identified against a background. The background shares enough grey levels with the coins that a simple segmentation is not sufficient.  Returns 
+ 
+coins(303, 384) uint8 ndarray 
+
+Coins image.     Notes This image was downloaded from the Brooklyn Museum Collection. No known copyright restrictions. 
+ Examples using skimage.data.coins
+ 
+  Finding local maxima  
+
+  Measure region properties  
+
+  Use rolling-ball algorithm for estimating background intensity   colorwheel  
+skimage.data.colorwheel() [source]
+ 
+Color Wheel.  Returns 
+ 
+colorwheel(370, 371, 3) uint8 image 
+
+A colorwheel.     
+ download_all  
+skimage.data.download_all(directory=None) [source]
+ 
+Download all datasets for use with scikit-image offline. Scikit-image datasets are no longer shipped with the library by default. This allows us to use higher quality datasets, while keeping the library download size small. This function requires the installation of an optional dependency, pooch, to download the full dataset. Follow installation instruction found at https://scikit-image.org/docs/stable/install.html Call this function to download all sample images making them available offline on your machine.  Parameters 
+ directory: path-like, optional
+
+The directory where the dataset should be stored.    Raises 
+ ModuleNotFoundError:
+
+If pooch is not install, this error will be raised.     Notes scikit-image will only search for images stored in the default directory. Only specify the directory if you wish to download the images to your own folder for a particular reason. You can access the location of the default data directory by inspecting the variable skimage.data.data_dir. 
+ eagle  
+skimage.data.eagle() [source]
+ 
+A golden eagle. Suitable for examples on segmentation, Hough transforms, and corner detection.  Returns 
+ 
+eagle(2019, 1826) uint8 ndarray 
+
+Eagle image.     Notes No copyright restrictions. CC0 by the photographer (Dayane Machado). 
+ Examples using skimage.data.eagle
+ 
+  Markers for watershed transform   grass  
+skimage.data.grass() [source]
+ 
+Grass.  Returns 
+ 
+grass(512, 512) uint8 image 
+
+Some grass.     Notes The original image was downloaded from DeviantArt and licensed underthe Creative Commons CC0 License. The downloaded image was cropped to include a region of (512, 512) pixels around the top left corner, converted to grayscale, then to uint8 prior to saving the result in PNG format. 
+ gravel  
+skimage.data.gravel() [source]
+ 
+Gravel  Returns 
+ 
+gravel(512, 512) uint8 image 
+
+Grayscale gravel sample.     Notes The original image was downloaded from CC0Textures and licensed under the Creative Commons CC0 License. The downloaded image was then rescaled to (1024, 1024), then the top left (512, 512) pixel region was cropped prior to converting the image to grayscale and uint8 data type. The result was saved using the PNG format. 
+ horse  
+skimage.data.horse() [source]
+ 
+Black and white silhouette of a horse. This image was downloaded from openclipart No copyright restrictions. CC0 given by owner (Andreas Preuss (marauder)).  Returns 
+ 
+horse(328, 400) bool ndarray 
+
+Horse image.     
+ hubble_deep_field  
+skimage.data.hubble_deep_field() [source]
+ 
+Hubble eXtreme Deep Field. This photograph contains the Hubble Telescope’s farthest ever view of the universe. It can be useful as an example for multi-scale detection.  Returns 
+ 
+hubble_deep_field(872, 1000, 3) uint8 ndarray 
+
+Hubble deep field image.     Notes This image was downloaded from HubbleSite. The image was captured by NASA and may be freely used in the public domain. 
+ human_mitosis  
+skimage.data.human_mitosis() [source]
+ 
+Image of human cells undergoing mitosis.  Returns 
+ human_mitosis: (512, 512) uint8 ndimage
+
+Data of human cells undergoing mitosis taken during the preperation of the manuscript in [1].     Notes Copyright David Root. Licensed under CC-0 [2]. References  
+1  
+Moffat J, Grueneberg DA, Yang X, Kim SY, Kloepfer AM, Hinkle G, Piqani B, Eisenhaure TM, Luo B, Grenier JK, Carpenter AE, Foo SY, Stewart SA, Stockwell BR, Hacohen N, Hahn WC, Lander ES, Sabatini DM, Root DE (2006) A lentiviral RNAi library for human and mouse genes applied to an arrayed viral high-content screen. Cell, 124(6):1283-98 / :DOI: 10.1016/j.cell.2006.01.040 PMID 16564017  
+2  
+GitHub licensing discussion https://github.com/CellProfiler/examples/issues/41   
+ Examples using skimage.data.human_mitosis
+ 
+  Segment human cells (in mitosis)   immunohistochemistry  
+skimage.data.immunohistochemistry() [source]
+ 
+Immunohistochemical (IHC) staining with hematoxylin counterstaining. This picture shows colonic glands where the IHC expression of FHL2 protein is revealed with DAB. Hematoxylin counterstaining is applied to enhance the negative parts of the tissue. This image was acquired at the Center for Microscopy And Molecular Imaging (CMMI). No known copyright restrictions.  Returns 
+ 
+immunohistochemistry(512, 512, 3) uint8 ndarray 
+
+Immunohistochemistry image.     
+ kidney  
+skimage.data.kidney() [source]
+ 
+Mouse kidney tissue. This biological tissue on a pre-prepared slide was imaged with confocal fluorescence microscopy (Nikon C1 inverted microscope). Image shape is (16, 512, 512, 3). That is 512x512 pixels in X-Y, 16 image slices in Z, and 3 color channels (emission wavelengths 450nm, 515nm, and 605nm, respectively). Real-space voxel size is 1.24 microns in X-Y, and 1.25 microns in Z. Data type is unsigned 16-bit integers.  Returns 
+ 
+kidney(16, 512, 512, 3) uint16 ndarray 
+
+Kidney 3D multichannel image.     Notes This image was acquired by Genevieve Buckley at Monasoh Micro Imaging in 2018. License: CC0 
+ lbp_frontal_face_cascade_filename  
+skimage.data.lbp_frontal_face_cascade_filename() [source]
+ 
+Return the path to the XML file containing the weak classifier cascade. These classifiers were trained using LBP features. The file is part of the OpenCV repository [1]. References  
+1  
+OpenCV lbpcascade trained files https://github.com/opencv/opencv/tree/master/data/lbpcascades   
+ lfw_subset  
+skimage.data.lfw_subset() [source]
+ 
+Subset of data from the LFW dataset. This database is a subset of the LFW database containing:  100 faces 100 non-faces  The full dataset is available at [2].  Returns 
+ 
+images(200, 25, 25) uint8 ndarray 
+
+100 first images are faces and subsequent 100 are non-faces.     Notes The faces were randomly selected from the LFW dataset and the non-faces were extracted from the background of the same dataset. The cropped ROIs have been resized to a 25 x 25 pixels. References  
+1  
+Huang, G., Mattar, M., Lee, H., & Learned-Miller, E. G. (2012). Learning to align from scratch. In Advances in Neural Information Processing Systems (pp. 764-772).  
+2  
+http://vis-www.cs.umass.edu/lfw/   
+ Examples using skimage.data.lfw_subset
+ 
+  Specific images   lily  
+skimage.data.lily() [source]
+ 
+Lily of the valley plant stem. This plant stem on a pre-prepared slide was imaged with confocal fluorescence microscopy (Nikon C1 inverted microscope). Image shape is (922, 922, 4). That is 922x922 pixels in X-Y, with 4 color channels. Real-space voxel size is 1.24 microns in X-Y. Data type is unsigned 16-bit integers.  Returns 
+ 
+lily(922, 922, 4) uint16 ndarray 
+
+Lily 2D multichannel image.     Notes This image was acquired by Genevieve Buckley at Monasoh Micro Imaging in 2018. License: CC0 
+ logo  
+skimage.data.logo() [source]
+ 
+Scikit-image logo, a RGBA image.  Returns 
+ 
+logo(500, 500, 4) uint8 ndarray 
+
+Logo image.     
+ microaneurysms  
+skimage.data.microaneurysms() [source]
+ 
+Gray-level “microaneurysms” image. Detail from an image of the retina (green channel). The image is a crop of image 07_dr.JPG from the High-Resolution Fundus (HRF) Image Database: https://www5.cs.fau.de/research/data/fundus-images/  Returns 
+ 
+microaneurysms(102, 102) uint8 ndarray 
+
+Retina image with lesions.     Notes No copyright restrictions. CC0 given by owner (Andreas Maier). References  
+1  
+Budai, A., Bock, R, Maier, A., Hornegger, J., Michelson, G. (2013). Robust Vessel Segmentation in Fundus Images. International Journal of Biomedical Imaging, vol. 2013, 2013. DOI:10.1155/2013/154860   
+ moon  
+skimage.data.moon() [source]
+ 
+Surface of the moon. This low-contrast image of the surface of the moon is useful for illustrating histogram equalization and contrast stretching.  Returns 
+ 
+moon(512, 512) uint8 ndarray 
+
+Moon image.     
+ Examples using skimage.data.moon
+ 
+  Local Histogram Equalization   page  
+skimage.data.page() [source]
+ 
+Scanned page. This image of printed text is useful for demonstrations requiring uneven background illumination.  Returns 
+ 
+page(191, 384) uint8 ndarray 
+
+Page image.     
+ Examples using skimage.data.page
+ 
+  Use rolling-ball algorithm for estimating background intensity  
+
+  Rank filters   retina  
+skimage.data.retina() [source]
+ 
+Human retina. This image of a retina is useful for demonstrations requiring circular images.  Returns 
+ 
+retina(1411, 1411, 3) uint8 ndarray 
+
+Retina image in RGB.     Notes This image was downloaded from wikimedia. This file is made available under the Creative Commons CC0 1.0 Universal Public Domain Dedication. References  
+1  
+Häggström, Mikael (2014). “Medical gallery of Mikael Häggström 2014”. WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.008. ISSN 2002-4436. Public Domain   
+ rocket  
+skimage.data.rocket() [source]
+ 
+Launch photo of DSCOVR on Falcon 9 by SpaceX. This is the launch photo of Falcon 9 carrying DSCOVR lifted off from SpaceX’s Launch Complex 40 at Cape Canaveral Air Force Station, FL.  Returns 
+ 
+rocket(427, 640, 3) uint8 ndarray 
+
+Rocket image.     Notes This image was downloaded from SpaceX Photos. The image was captured by SpaceX and released in the public domain. 
+ shepp_logan_phantom  
+skimage.data.shepp_logan_phantom() [source]
+ 
+Shepp Logan Phantom.  Returns 
+ 
+phantom(400, 400) float64 image 
+
+Image of the Shepp-Logan phantom in grayscale.     References  
+1  
+L. A. Shepp and B. F. Logan, “The Fourier reconstruction of a head section,” in IEEE Transactions on Nuclear Science, vol. 21, no. 3, pp. 21-43, June 1974. DOI:10.1109/TNS.1974.6499235   
+ skin  
+skimage.data.skin() [source]
+ 
+Microscopy image of dermis and epidermis (skin layers). Hematoxylin and eosin stained slide at 10x of normal epidermis and dermis with a benign intradermal nevus.  Returns 
+ 
+skin(960, 1280, 3) RGB image of uint8 
+   Notes This image requires an Internet connection the first time it is called, and to have the pooch package installed, in order to fetch the image file from the scikit-image datasets repository. The source of this image is https://en.wikipedia.org/wiki/File:Normal_Epidermis_and_Dermis_with_Intradermal_Nevus_10x.JPG The image was released in the public domain by its author Kilbad. 
+ Examples using skimage.data.skin
+ 
+  Trainable segmentation using local features and random forests   stereo_motorcycle  
+skimage.data.stereo_motorcycle() [source]
+ 
+Rectified stereo image pair with ground-truth disparities. The two images are rectified such that every pixel in the left image has its corresponding pixel on the same scanline in the right image. That means that both images are warped such that they have the same orientation but a horizontal spatial offset (baseline). The ground-truth pixel offset in column direction is specified by the included disparity map. The two images are part of the Middlebury 2014 stereo benchmark. The dataset was created by Nera Nesic, Porter Westling, Xi Wang, York Kitajima, Greg Krathwohl, and Daniel Scharstein at Middlebury College. A detailed description of the acquisition process can be found in [1]. The images included here are down-sampled versions of the default exposure images in the benchmark. The images are down-sampled by a factor of 4 using the function skimage.transform.downscale_local_mean. The calibration data in the following and the included ground-truth disparity map are valid for the down-sampled images: Focal length:           994.978px
+Principal point x:      311.193px
+Principal point y:      254.877px
+Principal point dx:      31.086px
+Baseline:               193.001mm
+  Returns 
+ 
+img_left(500, 741, 3) uint8 ndarray 
+
+Left stereo image.  
+img_right(500, 741, 3) uint8 ndarray 
+
+Right stereo image.  
+disp(500, 741, 3) float ndarray 
+
+Ground-truth disparity map, where each value describes the offset in column direction between corresponding pixels in the left and the right stereo images. E.g. the corresponding pixel of img_left[10, 10 + disp[10, 10]] is img_right[10, 10]. NaNs denote pixels in the left image that do not have ground-truth.     Notes The original resolution images, images with different exposure and lighting, and ground-truth depth maps can be found at the Middlebury website [2]. References  
+1  
+D. Scharstein, H. Hirschmueller, Y. Kitajima, G. Krathwohl, N. Nesic, X. Wang, and P. Westling. High-resolution stereo datasets with subpixel-accurate ground truth. In German Conference on Pattern Recognition (GCPR 2014), Muenster, Germany, September 2014.  
+2  
+http://vision.middlebury.edu/stereo/data/scenes2014/   
+ Examples using skimage.data.stereo_motorcycle
+ 
+  Specific images  
+
+  Registration using optical flow   text  
+skimage.data.text() [source]
+ 
+Gray-level “text” image used for corner detection.  Returns 
+ 
+text(172, 448) uint8 ndarray 
+
+Text image.     Notes This image was downloaded from Wikipedia <https://en.wikipedia.org/wiki/File:Corner.png>`__. No known copyright restrictions, released into the public domain.

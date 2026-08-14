@@ -1,0 +1,18 @@
+# numpy.reference.generated.numpy.testing.suppress_warnings.filter
+
+numpy.testing.suppress_warnings.filter method   testing.suppress_warnings.filter(category=<class 'Warning'>, message='', module=None)[source]
+ 
+Add a new suppressing filter or apply it if the state is entered.  Parameters 
+ 
+categoryclass, optional
+
+
+Warning class to filter  
+messagestring, optional
+
+
+Regular expression matching the warning message.  
+modulemodule, optional
+
+
+Module to filter for. Note that the module (and its file) must match exactly and cannot be a submodule. This may make it unreliable for external modules.     Notes When added within a context, filters are only added inside the context and will be forgotten when the context is exited.

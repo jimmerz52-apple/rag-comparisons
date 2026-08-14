@@ -1,0 +1,6 @@
+# flask.api.index#flask.Response.set_data
+
+set_data(value)  
+Sets a new string as response. The value must be a string or bytes. If a string is set it’s encoded to the charset of the response (utf-8 by default).  Changelog New in version 0.9.   Parameters 
+value (Union[bytes, str]) –   Return type 
+None

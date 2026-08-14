@@ -1,0 +1,5 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.assert_not_awaited
+
+assert_not_awaited()  
+Assert that the mock was never awaited. >>> mock = AsyncMock()
+>>> mock.assert_not_awaited()

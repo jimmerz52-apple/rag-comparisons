@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.update_panels
+
+curses.panel.update_panels()  
+Updates the virtual screen after changes in the panel stack. This does not call curses.doupdate(), so you’ll have to do this yourself.

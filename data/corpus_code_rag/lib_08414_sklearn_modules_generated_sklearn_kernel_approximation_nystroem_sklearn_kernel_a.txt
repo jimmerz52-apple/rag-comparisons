@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.kernel_approximation.nystroem#sklearn.kernel_approximation.Nystroem.fit
+
+fit(X, y=None) [source]
+ 
+Fit estimator to data. Samples a subset of training points, computes kernel on these and computes normalization matrix.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.

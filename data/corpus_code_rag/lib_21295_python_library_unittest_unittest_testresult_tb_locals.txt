@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.tb_locals
+
+tb_locals  
+If set to true then local variables will be shown in tracebacks.  New in version 3.5.

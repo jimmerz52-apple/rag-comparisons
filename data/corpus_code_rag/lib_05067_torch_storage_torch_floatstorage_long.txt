@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.long
+
+long()  
+Casts this storage to long type

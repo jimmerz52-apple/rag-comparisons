@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__pos__
+
+numpy.ndarray.__pos__ method   ndarray.__pos__(/)
+ 
++self

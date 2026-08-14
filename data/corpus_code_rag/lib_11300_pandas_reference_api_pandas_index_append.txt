@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.index.append
+
+pandas.Index.append   Index.append(other)[source]
+ 
+Append a collection of Index options together.  Parameters 
+ 
+other:Index or list/tuple of indices
+
+  Returns 
+ Index

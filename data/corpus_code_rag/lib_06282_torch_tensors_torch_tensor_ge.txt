@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ge_
+
+ge_(other) → Tensor  
+In-place version of ge().

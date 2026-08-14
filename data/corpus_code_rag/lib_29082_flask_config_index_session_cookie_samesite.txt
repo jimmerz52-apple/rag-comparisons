@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_COOKIE_SAMESITE
+
+SESSION_COOKIE_SAMESITE  
+Restrict how cookies are sent with requests from external sites. Can be set to 'Lax' (recommended) or 'Strict'. See Set-Cookie options. Default: None  Changelog New in version 1.0.

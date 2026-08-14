@@ -1,0 +1,10 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ConfigureSubplotsBase
+
+classmatplotlib.backend_tools.ConfigureSubplotsBase(toolmanager, name)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Base tool for the configuration of subplots.   description='Configure subplots'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   image='subplots'
+ 
+Filename of the image. str: Filename of the image to use in a Toolbar. If None, the name is used as a label in the toolbar button.

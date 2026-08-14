@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getframerate
+
+Wave_read.getframerate()  
+Returns sampling frequency.

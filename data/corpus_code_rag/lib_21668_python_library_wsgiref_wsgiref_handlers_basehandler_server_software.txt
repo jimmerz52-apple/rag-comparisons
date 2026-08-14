@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.server_software
+
+server_software  
+If the origin_server attribute is set, this attribute’s value is used to set the default SERVER_SOFTWARE WSGI environment variable, and also to set a default Server: header in HTTP responses. It is ignored for handlers (such as BaseCGIHandler and CGIHandler) that are not HTTP origin servers.  Changed in version 3.3: The term “Python” is replaced with implementation specific term like “CPython”, “Jython” etc.

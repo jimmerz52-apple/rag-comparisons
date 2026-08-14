@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.time.tzname
+
+time.tzname()  
+If tzinfo is None, returns None, else returns self.tzinfo.tzname(None), or raises an exception if the latter doesn’t return None or a string object.

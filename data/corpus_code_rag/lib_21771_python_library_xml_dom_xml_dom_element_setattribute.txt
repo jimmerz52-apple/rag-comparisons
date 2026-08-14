@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.setAttribute
+
+Element.setAttribute(name, value)  
+Set an attribute value from a string.

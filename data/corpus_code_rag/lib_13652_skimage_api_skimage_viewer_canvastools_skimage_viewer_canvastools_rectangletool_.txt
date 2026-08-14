@@ -1,0 +1,4 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.RectangleTool.corners
+
+property corners  
+Corners of rectangle from lower left, moving clockwise.

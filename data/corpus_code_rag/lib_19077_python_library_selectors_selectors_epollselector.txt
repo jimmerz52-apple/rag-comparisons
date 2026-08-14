@@ -1,0 +1,6 @@
+# python.library.selectors#selectors.EpollSelector
+
+class selectors.EpollSelector  
+select.epoll()-based selector.  
+fileno()  
+This returns the file descriptor used by the underlying select.epoll() object.

@@ -1,0 +1,3 @@
+# django.ref.contrib.staticfiles#django.contrib.staticfiles.views.serve
+
+views.serve(request, path)

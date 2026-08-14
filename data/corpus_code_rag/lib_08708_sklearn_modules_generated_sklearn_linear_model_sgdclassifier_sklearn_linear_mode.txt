@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.linear_model.sgdclassifier#sklearn.linear_model.SGDClassifier.set_params
+
+set_params(**kwargs) [source]
+ 
+Set and validate the parameters of estimator.  Parameters 
+ 
+**kwargsdict 
+
+Estimator parameters.    Returns 
+ 
+selfobject 
+
+Estimator instance.

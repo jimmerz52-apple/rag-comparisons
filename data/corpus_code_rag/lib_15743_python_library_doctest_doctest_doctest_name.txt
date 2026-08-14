@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTest.name
+
+name  
+A string name identifying the DocTest. Typically, this is the name of the object or file that the test was extracted from.

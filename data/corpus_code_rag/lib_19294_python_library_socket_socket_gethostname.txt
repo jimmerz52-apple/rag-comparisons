@@ -1,0 +1,4 @@
+# python.library.socket#socket.gethostname
+
+socket.gethostname()  
+Return a string containing the hostname of the machine where the Python interpreter is currently executing. Raises an auditing event socket.gethostname with no arguments. Note: gethostname() doesn’t always return the fully qualified domain name; use getfqdn() for that.

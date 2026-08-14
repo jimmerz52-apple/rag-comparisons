@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.vectorize.__call__
+
+numpy.vectorize.__call__ method   vectorize.__call__(*args, **kwargs)[source]
+ 
+Return arrays with the results of pyfunc broadcast (vectorized) over args and kwargs not in excluded.

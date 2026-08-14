@@ -1,0 +1,4 @@
+# tensorflow.summary.should_record_summaries
+
+tf.summary.should_record_summaries Returns boolean Tensor which is true if summaries should be recorded. 
+tf.summary.should_record_summaries()

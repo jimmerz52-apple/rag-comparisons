@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.time
+
+loop.time()  
+Return the current time, as a float value, according to the event loop’s internal monotonic clock.

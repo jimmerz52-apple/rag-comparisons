@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessmonthbegin.is_month_end
+
+pandas.tseries.offsets.CustomBusinessMonthBegin.is_month_end   CustomBusinessMonthBegin.is_month_end()

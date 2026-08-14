@@ -1,0 +1,4 @@
+# django.ref.forms.widgets#django.forms.SplitDateTimeWidget.time_attrs
+
+time_attrs  
+Similar to Widget.attrs. A dictionary containing HTML attributes to be set on the rendered DateInput and TimeInput widgets, respectively. If these attributes aren’t set, Widget.attrs is used instead.

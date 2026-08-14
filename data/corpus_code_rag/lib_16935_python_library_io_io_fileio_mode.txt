@@ -1,0 +1,4 @@
+# python.library.io#io.FileIO.mode
+
+mode  
+The mode as given in the constructor.

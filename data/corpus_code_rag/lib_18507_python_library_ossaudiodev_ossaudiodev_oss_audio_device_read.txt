@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.read
+
+oss_audio_device.read(size)  
+Read size bytes from the audio input and return them as a Python string. Unlike most Unix device drivers, OSS audio devices in blocking mode (the default) will block read() until the entire requested amount of data is available.

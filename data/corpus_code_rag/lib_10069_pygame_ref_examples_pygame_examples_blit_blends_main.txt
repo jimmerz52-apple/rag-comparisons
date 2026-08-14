@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.blit_blends.main
+
+blit_blends.main() 
+ uses alternative additive fill to that of surface.fill blit_blends.main() -> None  Fake additive blending. Using NumPy. it doesn't clamp. Press r,g,b Somewhat like blend_fill.

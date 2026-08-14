@@ -1,0 +1,4 @@
+# python.library.platform#platform.python_revision
+
+platform.python_revision()  
+Returns a string identifying the Python implementation SCM revision.

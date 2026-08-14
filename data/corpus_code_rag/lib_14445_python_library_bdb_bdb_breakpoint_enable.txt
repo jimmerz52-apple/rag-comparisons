@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Breakpoint.enable
+
+enable()  
+Mark the breakpoint as enabled.

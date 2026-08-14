@@ -1,0 +1,11 @@
+# numpy.reference.arrays.scalars#numpy.void
+
+class numpy.void[source]
+ 
+Either an opaque sequence of bytes, or a structure. >>> np.void(b'abcd')
+void(b'\x61\x62\x63\x64')
+ Structured void scalars can only be constructed via extraction from Structured arrays: >>> arr = np.array((1, 2), dtype=[('x', np.int8), ('y', np.int8)])
+>>> arr[()]
+(1, 2)  # looks like a tuple, but is `np.void`
+  Character code 
+'V'

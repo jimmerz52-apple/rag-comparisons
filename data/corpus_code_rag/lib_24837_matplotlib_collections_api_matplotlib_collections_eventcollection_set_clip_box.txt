@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.set_clip_box
+
+set_clip_box(clipbox)[source]
+ 
+Set the artist's clip Bbox.  Parameters 
+ 
+clipboxBbox

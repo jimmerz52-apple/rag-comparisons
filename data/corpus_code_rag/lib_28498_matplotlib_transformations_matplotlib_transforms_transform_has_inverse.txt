@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.has_inverse
+
+has_inverse=False
+ 
+True if this transform has a corresponding inverse transform.

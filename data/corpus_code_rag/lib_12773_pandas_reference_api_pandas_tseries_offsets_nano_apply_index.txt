@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.nano.apply_index
+
+pandas.tseries.offsets.Nano.apply_index   Nano.apply_index(other)

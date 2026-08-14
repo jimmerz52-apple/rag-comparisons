@@ -1,0 +1,23 @@
+# skimage.api.skimage.io#skimage.io.imread
+
+skimage.io.imread(fname, as_gray=False, plugin=None, **plugin_args) [source]
+ 
+Load an image from file.  Parameters 
+ 
+fnamestring 
+
+Image file name, e.g. test.jpg or URL.  
+as_graybool, optional 
+
+If True, convert color images to gray-scale (64-bit floats). Images that are already in gray-scale format are not converted.  
+pluginstr, optional 
+
+Name of plugin to use. By default, the different plugins are tried (starting with imageio) until a suitable candidate is found. If not given and fname is a tiff file, the tifffile plugin will be used.    Returns 
+ 
+img_arrayndarray 
+
+The different color bands/channels are stored in the third dimension, such that a gray-image is MxN, an RGB-image MxNx3 and an RGBA-image MxNx4.    Other Parameters 
+ 
+plugin_argskeywords 
+
+Passed to the given plugin.

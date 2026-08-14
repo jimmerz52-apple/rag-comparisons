@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_remove_overlapping_locs
+
+matplotlib.axis.Axis.get_remove_overlapping_locs   Axis.get_remove_overlapping_locs()[source]

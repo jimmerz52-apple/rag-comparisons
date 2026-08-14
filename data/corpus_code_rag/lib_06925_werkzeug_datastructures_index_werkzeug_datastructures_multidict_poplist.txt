@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.poplist
+
+poplist(key)  
+Pop the list for a key from the dict. If the key is not in the dict an empty list is returned.  Changelog Changed in version 0.5: If the key does no longer exist a list is returned instead of raising an error.

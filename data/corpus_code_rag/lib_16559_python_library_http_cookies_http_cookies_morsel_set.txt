@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.set
+
+Morsel.set(key, value, coded_value)  
+Set the key, value and coded_value attributes.

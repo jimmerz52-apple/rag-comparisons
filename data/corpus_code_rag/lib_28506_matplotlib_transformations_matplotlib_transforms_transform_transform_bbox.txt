@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.transform_bbox
+
+transform_bbox(bbox)[source]
+ 
+Transform the given bounding box. For smarter transforms including caching (a common requirement in Matplotlib), see TransformedBbox.

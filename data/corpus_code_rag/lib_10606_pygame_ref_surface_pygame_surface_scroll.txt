@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.scroll
+
+scroll() 
+ Shift the surface image in place scroll(dx=0, dy=0) -> None  Move the image by dx pixels right and dy pixels down. dx and dy may be negative for left and up scrolls respectively. Areas of the surface that are not overwritten retain their original pixel values. Scrolling is contained by the Surface clip area. It is safe to have dx and dy values that exceed the surface size.  New in pygame 1.9.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.threading_cleanup
+
+test.support.threading_cleanup(*original_values)  
+Cleanup up threads not specified in original_values. Designed to emit a warning if a test leaves running threads in the background.

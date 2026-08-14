@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.unquote_to_bytes
+
+urllib.parse.unquote_to_bytes(string)  
+Replace %xx escapes with their single-octet equivalent, and return a bytes object. string may be either a str or a bytes object. If it is a str, unescaped non-ASCII characters in string are encoded into UTF-8 bytes. Example: unquote_to_bytes('a%26%EF') yields b'a&\xef'.

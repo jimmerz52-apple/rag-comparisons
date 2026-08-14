@@ -1,0 +1,7 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.Stroke
+
+classmatplotlib.patheffects.Stroke(offset=(0, 0), **kwargs)[source]
+ 
+Bases: matplotlib.patheffects.AbstractPathEffect A line based PathEffect which re-draws a stroke. The path will be stroked with its gc updated with the given keyword arguments, i.e., the keyword arguments should be valid gc parameter values.   draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Draw the path with updated gc.

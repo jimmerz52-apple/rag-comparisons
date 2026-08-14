@@ -1,0 +1,4 @@
+# python.library.zlib#zlib.ZLIB_VERSION
+
+zlib.ZLIB_VERSION  
+The version string of the zlib library that was used for building the module. This may be different from the zlib library actually used at runtime, which is available as ZLIB_RUNTIME_VERSION.

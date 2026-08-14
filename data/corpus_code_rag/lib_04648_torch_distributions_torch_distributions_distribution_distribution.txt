@@ -1,0 +1,81 @@
+# torch.distributions#torch.distributions.distribution.Distribution
+
+class torch.distributions.distribution.Distribution(batch_shape=torch.Size([]), event_shape=torch.Size([]), validate_args=None) [source]
+ 
+Bases: object Distribution is the abstract base class for probability distributions.  
+property arg_constraints  
+Returns a dictionary from argument names to Constraint objects that should be satisfied by each argument of this distribution. Args that are not tensors need not appear in this dict. 
+  
+property batch_shape  
+Returns the shape over which parameters are batched. 
+  
+cdf(value) [source]
+ 
+Returns the cumulative density/mass function evaluated at value.  Parameters 
+value (Tensor) –    
+  
+entropy() [source]
+ 
+Returns entropy of distribution, batched over batch_shape.  Returns 
+Tensor of shape batch_shape.   
+  
+enumerate_support(expand=True) [source]
+ 
+Returns tensor containing all values supported by a discrete distribution. The result will enumerate over dimension 0, so the shape of the result will be (cardinality,) + batch_shape + event_shape (where event_shape = () for univariate distributions). Note that this enumerates over all batched tensors in lock-step [[0, 0], [1, 1], …]. With expand=False, enumeration happens along dim 0, but with the remaining batch dimensions being singleton dimensions, [[0], [1], ... To iterate over the full Cartesian product use itertools.product(m.enumerate_support()).  Parameters 
+expand (bool) – whether to expand the support over the batch dims to match the distribution’s batch_shape.  Returns 
+Tensor iterating over dimension 0.   
+  
+property event_shape  
+Returns the shape of a single sample (without batching). 
+  
+expand(batch_shape, _instance=None) [source]
+ 
+Returns a new distribution instance (or populates an existing instance provided by a derived class) with batch dimensions expanded to batch_shape. This method calls expand on the distribution’s parameters. As such, this does not allocate new memory for the expanded distribution instance. Additionally, this does not repeat any args checking or parameter broadcasting in __init__.py, when an instance is first created.  Parameters 
+ 
+batch_shape (torch.Size) – the desired expanded size. 
+_instance – new instance provided by subclasses that need to override .expand.   Returns 
+New distribution instance with batch dimensions expanded to batch_size.   
+  
+icdf(value) [source]
+ 
+Returns the inverse cumulative density/mass function evaluated at value.  Parameters 
+value (Tensor) –    
+  
+log_prob(value) [source]
+ 
+Returns the log of the probability density/mass function evaluated at value.  Parameters 
+value (Tensor) –    
+  
+property mean  
+Returns the mean of the distribution. 
+  
+perplexity() [source]
+ 
+Returns perplexity of distribution, batched over batch_shape.  Returns 
+Tensor of shape batch_shape.   
+  
+rsample(sample_shape=torch.Size([])) [source]
+ 
+Generates a sample_shape shaped reparameterized sample or sample_shape shaped batch of reparameterized samples if the distribution parameters are batched. 
+  
+sample(sample_shape=torch.Size([])) [source]
+ 
+Generates a sample_shape shaped sample or sample_shape shaped batch of samples if the distribution parameters are batched. 
+  
+sample_n(n) [source]
+ 
+Generates n samples or n batches of samples if the distribution parameters are batched. 
+  
+static set_default_validate_args(value) [source]
+ 
+Sets whether validation is enabled or disabled. The default behavior mimics Python’s assert statement: validation is on by default, but is disabled if Python is run in optimized mode (via python -O). Validation may be expensive, so you may want to disable it once a model is working.  Parameters 
+value (bool) – Whether to enable validation.   
+  
+property stddev  
+Returns the standard deviation of the distribution. 
+  
+property support  
+Returns a Constraint object representing this distribution’s support. 
+  
+property variance  
+Returns the variance of the distribution.

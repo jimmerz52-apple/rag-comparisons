@@ -1,0 +1,4 @@
+# python.library.base64#base64.standard_b64encode
+
+base64.standard_b64encode(s)  
+Encode bytes-like object s using the standard Base64 alphabet and return the encoded bytes.

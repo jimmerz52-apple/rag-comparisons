@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.api.types.is_complex
+
+pandas.api.types.is_complex   pandas.api.types.is_complex()
+ 
+Return True if given object is complex.  Returns 
+ bool

@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.STDOUT
+
+asyncio.subprocess.STDOUT  
+Special value that can be used as the stderr argument and indicates that standard error should be redirected into standard output.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.minute.is_year_end
+
+pandas.tseries.offsets.Minute.is_year_end   Minute.is_year_end()

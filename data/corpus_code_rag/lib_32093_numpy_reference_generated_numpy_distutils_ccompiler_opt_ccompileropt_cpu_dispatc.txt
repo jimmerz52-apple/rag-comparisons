@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.cpu_dispatch_names
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.cpu_dispatch_names method   distutils.ccompiler_opt.CCompilerOpt.cpu_dispatch_names()[source]
+ 
+return a list of final CPU dispatch feature names

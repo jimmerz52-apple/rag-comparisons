@@ -1,0 +1,4 @@
+# python.library.pprint#pprint.PrettyPrinter.pprint
+
+PrettyPrinter.pprint(object)  
+Print the formatted representation of object on the configured stream, followed by a newline.

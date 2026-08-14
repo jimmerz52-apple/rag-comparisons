@@ -1,0 +1,3 @@
+# python.library.exceptions#EnvironmentError
+
+exception EnvironmentError

@@ -1,0 +1,13 @@
+# matplotlib._enums_api#matplotlib._enums.CapStyle
+
+classmatplotlib._enums.CapStyle(value)[source]
+ 
+Define how the two endpoints (caps) of an unclosed line are drawn. How to draw the start and end points of lines that represent a closed curve (i.e. that end in a CLOSEPOLY) is controlled by the line's JoinStyle. For all other lines, how the start and end points are drawn is controlled by the CapStyle. For a visual impression of each CapStyle, view these docs online or run CapStyle.demo. Supported values:  'butt'
+
+the line is squared off at its endpoint.  'projecting'
+
+the line is squared off as in butt, but the filled in area extends beyond the endpoint a distance of linewidth/2.  'round'
+
+like butt, but a semicircular cap is added to the end of the line, of radius linewidth/2.   (Source code, png, pdf)      staticdemo()[source]
+ 
+Demonstrate how each CapStyle looks for a thick line segment.

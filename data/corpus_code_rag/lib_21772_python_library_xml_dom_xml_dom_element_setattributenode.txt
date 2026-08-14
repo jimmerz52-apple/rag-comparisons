@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.setAttributeNode
+
+Element.setAttributeNode(newAttr)  
+Add a new attribute node to the element, replacing an existing attribute if necessary if the name attribute matches. If a replacement occurs, the old attribute node will be returned. If newAttr is already in use, InuseAttributeErr will be raised.

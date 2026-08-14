@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.insert
+
+insert(index, subelement)  
+Inserts subelement at the given position in this element. Raises TypeError if subelement is not an Element.

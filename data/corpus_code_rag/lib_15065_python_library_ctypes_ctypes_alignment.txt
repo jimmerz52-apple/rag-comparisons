@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.alignment
+
+ctypes.alignment(obj_or_type)  
+Returns the alignment requirements of a ctypes type. obj_or_type must be a ctypes type or instance.

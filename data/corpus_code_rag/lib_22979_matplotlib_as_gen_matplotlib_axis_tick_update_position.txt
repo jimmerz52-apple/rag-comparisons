@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.tick.update_position
+
+matplotlib.axis.Tick.update_position   Tick.update_position(loc)[source]
+ 
+Set the location of tick in data coords with scalar loc.

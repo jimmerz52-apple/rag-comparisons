@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.form_data_parser_class
+
+form_data_parser_class  
+alias of werkzeug.formparser.FormDataParser

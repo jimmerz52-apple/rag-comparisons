@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Aggregate.allow_distinct
+
+allow_distinct  
+A class attribute determining whether or not this aggregate function allows passing a distinct keyword argument. If set to False (default), TypeError is raised if distinct=True is passed.

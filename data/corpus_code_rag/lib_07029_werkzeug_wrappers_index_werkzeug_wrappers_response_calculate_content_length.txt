@@ -1,0 +1,5 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.calculate_content_length
+
+calculate_content_length()  
+Returns the content length if available or None otherwise.  Return type 
+Optional[int]

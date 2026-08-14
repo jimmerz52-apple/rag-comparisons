@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.content_type
+
+UploadedFile.content_type  
+The content-type header uploaded with the file (e.g. text/plain or application/pdf). Like any data supplied by the user, you shouldn’t trust that the uploaded file is actually this type. You’ll still need to validate that the file contains the content that the content-type header claims – “trust but verify.”

@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.StrMethodFormatter
+
+classmatplotlib.ticker.StrMethodFormatter(fmt)[source]
+ 
+Bases: matplotlib.ticker.Formatter Use a new-style format string (as used by str.format) to format the tick. The field used for the tick value must be labeled x and the field used for the tick position must be labeled pos.

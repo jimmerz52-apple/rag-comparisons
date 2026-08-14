@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.unpack_string
+
+Unpacker.unpack_string()  
+Unpacks and returns a variable length string. The length of the string is first unpacked as an unsigned integer, then the string data is unpacked with unpack_fstring().

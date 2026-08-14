@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_DUPLICATE_ATTRIBUTE
+
+xml.parsers.expat.errors.XML_ERROR_DUPLICATE_ATTRIBUTE  
+An attribute was used more than once in a start tag.

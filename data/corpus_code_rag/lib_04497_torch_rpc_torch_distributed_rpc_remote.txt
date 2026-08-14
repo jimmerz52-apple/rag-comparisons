@@ -1,0 +1,41 @@
+# torch.rpc#torch.distributed.rpc.remote
+
+torch.distributed.rpc.remote(to, func, args=None, kwargs=None, timeout=-1.0) [source]
+ 
+Make a remote call to run func on worker to and return an RRef to the result value immediately. Worker to will be the owner of the returned RRef, and the worker calling remote is a user. The owner manages the global reference count of its RRef, and the owner RRef is only destructed when globally there are no living references to it.  Parameters 
+ 
+to (str or WorkerInfo or int) – name/rank/WorkerInfo of the destination worker. 
+func (callable) – a callable function, such as Python callables, builtin operators (e.g. add()) and annotated TorchScript functions. 
+args (tuple) – the argument tuple for the func invocation. 
+kwargs (dict) – is a dictionary of keyword arguments for the func invocation. 
+timeout (float, optional) – timeout in seconds for this remote call. If the creation of this RRef on worker to is not successfully processed on this worker within this timeout, then the next time there is an attempt to use the RRef (such as to_here()), a timeout will be raised indicating this failure. A value of 0 indicates an infinite timeout, i.e. a timeout error will never be raised. If not provided, the default value set during initialization or with _set_rpc_timeout is used.   Returns 
+A user RRef instance to the result value. Use the blocking API torch.distributed.rpc.RRef.to_here() to retrieve the result value locally.    Warning Using GPU tensors as arguments or return values of func is not supported since we don’t support sending GPU tensors over the wire. You need to explicitly copy GPU tensors to CPU before using them as arguments or return values of func.   Warning The remote API does not copy storages of argument tensors until sending them over the wire, which could be done by a different thread depending on the RPC backend type. The caller should make sure that the contents of those tensors stay intact until the returned RRef is confirmed by the owner, which can be checked using the torch.distributed.rpc.RRef.confirmed_by_owner() API.   Warning Errors such as timeouts for the remote API are handled on a best-effort basis. This means that when remote calls initiated by remote fail, such as with a timeout error, we take a best-effort approach to error handling. This means that errors are handled and set on the resulting RRef on an asynchronous basis. If the RRef has not been used by the application before this handling (such as to_here or fork call), then future uses of the RRef will appropriately raise errors. However, it is possible that the user application will use the RRef before the errors are handled. In this case, errors may not be raised as they have not yet been handled.   Example::
+
+Make sure that MASTER_ADDR and MASTER_PORT are set properly on both workers. Refer to init_process_group() API for more details. For example, >>> export MASTER_ADDR=localhost
+>>> export MASTER_PORT=5678
+ Then run the following code in two different processes: >>> # On worker 0:
+>>> import torch
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker0", rank=0, world_size=2)
+>>> rref1 = rpc.remote("worker1", torch.add, args=(torch.ones(2), 3))
+>>> rref2 = rpc.remote("worker1", torch.add, args=(torch.ones(2), 1))
+>>> x = rref1.to_here() + rref2.to_here()
+>>> rpc.shutdown()
+ >>> # On worker 1:
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker1", rank=1, world_size=2)
+>>> rpc.shutdown()
+ Below is an example of running a TorchScript function using RPC. >>> # On both workers:
+>>> @torch.jit.script
+>>> def my_script_add(t1, t2):
+>>>    return torch.add(t1, t2)
+ >>> # On worker 0:
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker0", rank=0, world_size=2)
+>>> rref = rpc.remote("worker1", my_script_add, args=(torch.ones(2), 3))
+>>> rref.to_here()
+>>> rpc.shutdown()
+ >>> # On worker 1:
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker1", rank=1, world_size=2)
+>>> rpc.shutdown()

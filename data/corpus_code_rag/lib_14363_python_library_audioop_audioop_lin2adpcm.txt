@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.lin2adpcm
+
+audioop.lin2adpcm(fragment, width, state)  
+Convert samples to 4 bit Intel/DVI ADPCM encoding. ADPCM coding is an adaptive coding scheme, whereby each 4 bit number is the difference between one sample and the next, divided by a (varying) step. The Intel/DVI ADPCM algorithm has been selected for use by the IMA, so it may well become a standard. state is a tuple containing the state of the coder. The coder returns a tuple (adpcmfrag, newstate), and the newstate should be passed to the next call of lin2adpcm(). In the initial call, None can be passed as the state. adpcmfrag is the ADPCM coded fragment packed 2 4-bit values per byte.

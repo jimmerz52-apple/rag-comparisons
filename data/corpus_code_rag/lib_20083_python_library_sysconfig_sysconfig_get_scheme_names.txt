@@ -1,0 +1,4 @@
+# python.library.sysconfig#sysconfig.get_scheme_names
+
+sysconfig.get_scheme_names()  
+Return a tuple containing all schemes currently supported in sysconfig.

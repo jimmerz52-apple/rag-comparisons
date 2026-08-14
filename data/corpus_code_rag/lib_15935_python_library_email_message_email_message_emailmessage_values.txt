@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.values
+
+values()  
+Return a list of all the message’s field values.

@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Address.version
+
+version  
+The appropriate version number: 4 for IPv4, 6 for IPv6.

@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.iter_attachments
+
+iter_attachments()  
+Return an iterator over all of the immediate sub-parts of the message that are not candidate “body” parts. That is, skip the first occurrence of each of text/plain, text/html, multipart/related, or multipart/alternative (unless they are explicitly marked as attachments via Content-Disposition: attachment), and return all remaining parts. When applied directly to a multipart/related, return an iterator over the all the related parts except the root part (ie: the part pointed to by the start parameter, or the first part if there is no start parameter or the start parameter doesn’t match the Content-ID of any of the parts). When applied directly to a multipart/alternative or a non-multipart, return an empty iterator.

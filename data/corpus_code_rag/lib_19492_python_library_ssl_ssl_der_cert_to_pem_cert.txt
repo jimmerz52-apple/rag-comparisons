@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.DER_cert_to_PEM_cert
+
+ssl.DER_cert_to_PEM_cert(DER_cert_bytes)  
+Given a certificate as a DER-encoded blob of bytes, returns a PEM-encoded string version of the same certificate.

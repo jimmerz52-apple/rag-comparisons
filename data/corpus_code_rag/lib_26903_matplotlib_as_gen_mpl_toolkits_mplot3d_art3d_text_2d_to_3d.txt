@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.text_2d_to_3d
+
+mpl_toolkits.mplot3d.art3d.text_2d_to_3d   mpl_toolkits.mplot3d.art3d.text_2d_to_3d(obj, z=0, zdir='z')[source]
+ 
+Convert a Text to a Text3D object.

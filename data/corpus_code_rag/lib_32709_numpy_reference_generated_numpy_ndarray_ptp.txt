@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.ptp
+
+numpy.ndarray.ptp method   ndarray.ptp(axis=None, out=None, keepdims=False)
+ 
+Peak to peak (maximum - minimum) value along a given axis. Refer to numpy.ptp for full documentation.  See also  numpy.ptp
+
+equivalent function

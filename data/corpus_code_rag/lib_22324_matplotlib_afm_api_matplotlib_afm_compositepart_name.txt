@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.CompositePart.name
+
+name
+ 
+Name of the part, e.g. 'acute'.

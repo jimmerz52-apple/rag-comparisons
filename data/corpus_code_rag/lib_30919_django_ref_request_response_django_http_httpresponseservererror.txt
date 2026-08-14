@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseServerError
+
+class HttpResponseServerError  
+Acts just like HttpResponse but uses a 500 status code.

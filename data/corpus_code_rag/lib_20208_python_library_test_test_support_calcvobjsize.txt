@@ -1,0 +1,4 @@
+# python.library.test#test.support.calcvobjsize
+
+test.support.calcvobjsize(fmt)  
+Return struct.calcsize() for nPn{fmt}0n or, if gettotalrefcount exists, 2PnPn{fmt}0P.

@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_d1
+
+stringprep.in_table_d1(code)  
+Determine whether code is in tableD.1 (Characters with bidirectional property “R” or “AL”).

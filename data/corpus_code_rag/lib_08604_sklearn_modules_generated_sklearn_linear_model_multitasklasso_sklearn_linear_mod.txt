@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.linear_model.multitasklasso#sklearn.linear_model.MultiTaskLasso.sparse_coef_
+
+property sparse_coef_  
+Sparse representation of the fitted coef_.

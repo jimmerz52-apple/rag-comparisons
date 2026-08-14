@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.URLopener.version
+
+version  
+Variable that specifies the user agent of the opener object. To get urllib to tell servers that it is a particular user agent, set this in a subclass as a class variable or in the constructor before calling the base constructor.

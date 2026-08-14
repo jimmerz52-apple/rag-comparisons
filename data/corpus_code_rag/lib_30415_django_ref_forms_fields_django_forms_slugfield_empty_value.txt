@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.SlugField.empty_value
+
+empty_value  
+The value to use to represent “empty”. Defaults to an empty string.

@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IFREG
+
+stat.S_IFREG  
+Regular file.

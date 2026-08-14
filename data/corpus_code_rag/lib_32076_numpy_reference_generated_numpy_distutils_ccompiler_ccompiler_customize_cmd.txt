@@ -1,0 +1,16 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.ccompiler_customize_cmd
+
+numpy.distutils.ccompiler.CCompiler_customize_cmd   distutils.ccompiler.CCompiler_customize_cmd(self, cmd, ignore=())[source]
+ 
+Customize compiler using distutils command.  Parameters 
+ 
+cmdclass instance
+
+
+An instance inheriting from distutils.cmd.Command.  
+ignoresequence of str, optional
+
+
+List of CCompiler commands (without 'set_') that should not be altered. Strings that are checked for are: ('include_dirs', 'define', 'undef', 'libraries', 'library_dirs',
+'rpath', 'link_objects').    Returns 
+ None

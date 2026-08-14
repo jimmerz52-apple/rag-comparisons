@@ -1,0 +1,10 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_formset_kwargs
+
+ModelAdmin.get_formset_kwargs(request, obj, inline, prefix)  
+ New in Django 4.0.  A hook for customizing the keyword arguments passed to the constructor of a formset. For example, to pass request to formset forms: class MyModelAdmin(admin.ModelAdmin):
+    def get_formset_kwargs(self, request, obj, inline, prefix):
+        return {
+            **super().get_formset_kwargs(request, obj, inline, prefix),
+            'form_kwargs': {'request': request},
+        }
+ You can also used it to set initial for formset forms.

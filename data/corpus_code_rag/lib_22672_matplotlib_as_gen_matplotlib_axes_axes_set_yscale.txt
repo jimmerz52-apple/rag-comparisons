@@ -1,0 +1,31 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_yscale
+
+matplotlib.axes.Axes.set_yscale   Axes.set_yscale(value, **kwargs)[source]
+ 
+Set the y-axis scale.  Parameters 
+ 
+value{"linear", "log", "symlog", "logit", ...} or ScaleBase
+
+
+The axis scale type to apply.  **kwargs
+
+Different keyword arguments are accepted, depending on the scale. See the respective class keyword arguments:  matplotlib.scale.LinearScale matplotlib.scale.LogScale matplotlib.scale.SymmetricalLogScale matplotlib.scale.LogitScale matplotlib.scale.FuncScale      Notes By default, Matplotlib supports the above mentioned scales. Additionally, custom scales may be registered using matplotlib.scale.register_scale. These scales can then also be used here. 
+  Examples using matplotlib.axes.Axes.set_yscale
+ 
+   Markevery Demo   
+
+   Artist customization in box plots   
+
+   Boxplot drawer function   
+
+   Different ways of specifying error bars   
+
+   Loglog Aspect   
+
+   Log Bar   
+
+   Log Demo   
+
+   Scales   
+
+   Symlog Demo

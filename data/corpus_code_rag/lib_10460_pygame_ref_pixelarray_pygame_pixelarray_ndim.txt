@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.ndim
+
+ndim 
+ Returns the number of dimensions. ndim -> int  A pixel array can be 1 or 2 dimensional.  New in pygame 1.9.2.

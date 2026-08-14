@@ -1,0 +1,6 @@
+# matplotlib._api_api#matplotlib._api.deprecation.rename_parameter
+
+matplotlib._api.deprecation.rename_parameter(since, old, new, func=None)[source]
+ 
+Decorator indicating that parameter old of func is renamed to new. The actual implementation of func should use new, not old. If old is passed to func, a DeprecationWarning is emitted, and its value is used, even if new is also passed by keyword (this is to simplify pyplot wrapper functions, which always pass new explicitly to the Axes method). If new is also passed but positionally, a TypeError will be raised by the underlying function during argument binding. Examples @_api.rename_parameter("3.1", "bad_name", "good_name")
+def func(good_name): ...

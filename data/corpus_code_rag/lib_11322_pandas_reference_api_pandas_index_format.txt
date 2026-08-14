@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.format
+
+pandas.Index.format   Index.format(name=False, formatter=None, na_rep='NaN')[source]
+ 
+Render a string representation of the Index.

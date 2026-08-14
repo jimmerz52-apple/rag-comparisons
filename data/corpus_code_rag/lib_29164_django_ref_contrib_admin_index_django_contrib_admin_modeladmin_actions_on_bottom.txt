@@ -1,0 +1,5 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.actions_on_bottom
+
+ModelAdmin.actions_on_bottom  
+Controls where on the page the actions bar appears. By default, the admin changelist displays actions at the top of the page (actions_on_top = True;
+actions_on_bottom = False).

@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Snapshot.filter_traces
+
+filter_traces(filters)  
+Create a new Snapshot instance with a filtered traces sequence, filters is a list of DomainFilter and Filter instances. If filters is an empty list, return a new Snapshot instance with a copy of the traces. All inclusive filters are applied at once, a trace is ignored if no inclusive filters match it. A trace is ignored if at least one exclusive filter matches it.  Changed in version 3.6: DomainFilter instances are now also accepted in filters.

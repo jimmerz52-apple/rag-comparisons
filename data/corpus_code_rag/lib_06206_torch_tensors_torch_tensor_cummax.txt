@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cummax
+
+cummax(dim) -> (Tensor, Tensor)  
+See torch.cummax()

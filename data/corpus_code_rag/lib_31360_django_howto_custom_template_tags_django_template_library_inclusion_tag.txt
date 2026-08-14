@@ -1,0 +1,3 @@
+# django.howto.custom-template-tags#django.template.Library.inclusion_tag
+
+django.template.Library.inclusion_tag()

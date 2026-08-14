@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.surface
+
+surface 
+ Gets the Surface the PixelArray uses. surface -> Surface  The Surface the PixelArray was created for.

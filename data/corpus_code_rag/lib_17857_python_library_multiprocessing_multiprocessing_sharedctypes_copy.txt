@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.sharedctypes.copy
+
+multiprocessing.sharedctypes.copy(obj)  
+Return a ctypes object allocated from shared memory which is a copy of the ctypes object obj.

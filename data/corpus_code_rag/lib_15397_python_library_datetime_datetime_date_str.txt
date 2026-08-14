@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.date.__str__
+
+date.__str__()  
+For a date d, str(d) is equivalent to d.isoformat().

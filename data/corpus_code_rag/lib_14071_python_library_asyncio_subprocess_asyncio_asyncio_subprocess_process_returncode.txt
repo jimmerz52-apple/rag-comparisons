@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.Process.returncode
+
+returncode  
+Return code of the process when it exits. A None value indicates that the process has not terminated yet. A negative value -N indicates that the child was terminated by signal N (POSIX only).

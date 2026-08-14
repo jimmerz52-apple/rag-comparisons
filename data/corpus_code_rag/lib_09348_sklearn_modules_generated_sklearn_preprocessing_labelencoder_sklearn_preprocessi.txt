@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.preprocessing.labelencoder#sklearn.preprocessing.LabelEncoder.fit_transform
+
+fit_transform(y) [source]
+ 
+Fit label encoder and return encoded labels.  Parameters 
+ 
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+yarray-like of shape (n_samples,)

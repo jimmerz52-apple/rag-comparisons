@@ -1,0 +1,6 @@
+# torch.optim#torch.optim.LBFGS.step
+
+step(closure) [source]
+ 
+Performs a single optimization step.  Parameters 
+closure (callable) – A closure that reevaluates the model and returns the loss.

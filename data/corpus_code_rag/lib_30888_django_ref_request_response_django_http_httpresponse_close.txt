@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.close
+
+HttpResponse.close()  
+This method is called at the end of the request directly by the WSGI server.

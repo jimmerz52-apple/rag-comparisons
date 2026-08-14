@@ -1,0 +1,4 @@
+# python.library.curses#curses.noecho
+
+curses.noecho()  
+Leave echo mode. Echoing of input characters is turned off.

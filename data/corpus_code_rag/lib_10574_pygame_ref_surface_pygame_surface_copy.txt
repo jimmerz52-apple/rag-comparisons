@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.copy
+
+copy() 
+ create a new copy of a Surface copy() -> Surface  Makes a duplicate copy of a Surface. The new surface will have the same pixel formats, color palettes, transparency settings, and class as the original. If a Surface subclass also needs to copy any instance specific attributes then it should override copy().

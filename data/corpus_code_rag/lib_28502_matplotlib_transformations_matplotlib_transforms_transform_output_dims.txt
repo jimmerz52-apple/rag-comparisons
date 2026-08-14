@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.output_dims
+
+output_dims=None
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass.

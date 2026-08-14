@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.html.strip_tags
+
+strip_tags(value)  
+Tries to remove anything that looks like an HTML tag from the string, that is anything contained within <>. Absolutely NO guarantee is provided about the resulting string being HTML safe. So NEVER mark safe the result of a strip_tag call without escaping it first, for example with escape(). For example: strip_tags(value)
+ If value is "<b>Joel</b> <button>is</button> a <span>slug</span>" the return value will be "Joel is a slug". If you are looking for a more robust solution, take a look at the bleach Python library.

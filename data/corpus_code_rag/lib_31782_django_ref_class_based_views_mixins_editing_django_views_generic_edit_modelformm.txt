@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ModelFormMixin.success_url
+
+success_url  
+The URL to redirect to when the form is successfully processed. success_url may contain dictionary string formatting, which will be interpolated against the object’s field attributes. For example, you could use success_url="/polls/{slug}/" to redirect to a URL composed out of the slug field on a model.

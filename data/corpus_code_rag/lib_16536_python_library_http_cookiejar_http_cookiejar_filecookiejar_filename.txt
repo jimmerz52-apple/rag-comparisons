@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.FileCookieJar.filename
+
+FileCookieJar.filename  
+Filename of default file in which to keep cookies. This attribute may be assigned to.

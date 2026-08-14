@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.Parse
+
+xmlparser.Parse(data[, isfinal])  
+Parses the contents of the string data, calling the appropriate handler functions to process the parsed data. isfinal must be true on the final call to this method; it allows the parsing of a single file in fragments, not the submission of multiple files. data can be the empty string at any time.

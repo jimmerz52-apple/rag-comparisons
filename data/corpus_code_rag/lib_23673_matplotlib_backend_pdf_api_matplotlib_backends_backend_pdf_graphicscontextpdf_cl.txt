@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.GraphicsContextPdf.clip_cmd
+
+clip_cmd(cliprect, clippath)[source]
+ 
+Set clip rectangle. Calls pop() and push().

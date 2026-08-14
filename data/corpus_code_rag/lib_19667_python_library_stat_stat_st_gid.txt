@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_GID
+
+stat.ST_GID  
+Group id of the owner.

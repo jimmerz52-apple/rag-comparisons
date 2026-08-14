@@ -1,0 +1,4 @@
+# python.library.quopri#quopri.encodestring
+
+quopri.encodestring(s, quotetabs=False, header=False)  
+Like encode(), except that it accepts a source bytes and returns the corresponding encoded bytes. By default, it sends a False value to quotetabs parameter of the encode() function.

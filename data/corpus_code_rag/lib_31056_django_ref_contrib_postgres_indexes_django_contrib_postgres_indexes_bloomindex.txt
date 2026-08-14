@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.indexes#django.contrib.postgres.indexes.BloomIndex
+
+class BloomIndex(*expressions, length=None, columns=(), **options)  
+Creates a bloom index. To use this index access you need to activate the bloom extension on PostgreSQL. You can install it using the BloomExtension migration operation. Provide an integer number of bits from 1 to 4096 to the length parameter to specify the length of each index entry. PostgreSQL’s default is 80. The columns argument takes a tuple or list of up to 32 values that are integer number of bits from 1 to 4095.  Changed in Django 3.2: Positional argument *expressions was added in order to support functional indexes.

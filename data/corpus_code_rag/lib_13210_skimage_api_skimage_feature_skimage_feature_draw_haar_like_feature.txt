@@ -1,0 +1,56 @@
+# skimage.api.skimage.feature#skimage.feature.draw_haar_like_feature
+
+skimage.feature.draw_haar_like_feature(image, r, c, width, height, feature_coord, color_positive_block=(1.0, 0.0, 0.0), color_negative_block=(0.0, 1.0, 0.0), alpha=0.5, max_n_features=None, random_state=None) [source]
+ 
+Visualization of Haar-like features.  Parameters 
+ 
+image(M, N) ndarray 
+
+The region of an integral image for which the features need to be computed.  
+rint 
+
+Row-coordinate of top left corner of the detection window.  
+cint 
+
+Column-coordinate of top left corner of the detection window.  
+widthint 
+
+Width of the detection window.  
+heightint 
+
+Height of the detection window.  
+feature_coordndarray of list of tuples or None, optional 
+
+The array of coordinates to be extracted. This is useful when you want to recompute only a subset of features. In this case feature_type needs to be an array containing the type of each feature, as returned by haar_like_feature_coord(). By default, all coordinates are computed.  
+color_positive_rectangletuple of 3 floats 
+
+Floats specifying the color for the positive block. Corresponding values define (R, G, B) values. Default value is red (1, 0, 0).  
+color_negative_blocktuple of 3 floats 
+
+Floats specifying the color for the negative block Corresponding values define (R, G, B) values. Default value is blue (0, 1, 0).  
+alphafloat 
+
+Value in the range [0, 1] that specifies opacity of visualization. 1 - fully transparent, 0 - opaque.  
+max_n_featuresint, default=None 
+
+The maximum number of features to be returned. By default, all features are returned.  
+random_stateint, RandomState instance or None, optional 
+
+If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random. The random state is used when generating a set of features smaller than the total number of available features.    Returns 
+ 
+features(M, N), ndarray 
+
+An image in which the different features will be added.     Examples >>> import numpy as np
+>>> from skimage.feature import haar_like_feature_coord
+>>> from skimage.feature import draw_haar_like_feature
+>>> feature_coord, _ = haar_like_feature_coord(2, 2, 'type-4')
+>>> image = draw_haar_like_feature(np.zeros((2, 2)),
+...                                0, 0, 2, 2,
+...                                feature_coord,
+...                                max_n_features=1)
+>>> image
+array([[[0. , 0.5, 0. ],
+        [0.5, 0. , 0. ]],
+
+       [[0.5, 0. , 0. ],
+        [0. , 0.5, 0. ]]])

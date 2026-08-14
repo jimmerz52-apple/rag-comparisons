@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser.get_session_auth_hash
+
+get_session_auth_hash()  
+Returns an HMAC of the password field. Used for Session invalidation on password change.

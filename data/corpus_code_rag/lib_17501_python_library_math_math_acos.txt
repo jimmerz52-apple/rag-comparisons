@@ -1,0 +1,4 @@
+# python.library.math#math.acos
+
+math.acos(x)  
+Return the arc cosine of x, in radians. The result is between 0 and pi.

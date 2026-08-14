@@ -1,0 +1,4 @@
+# python.library.stdtypes#dict.clear
+
+clear()  
+Remove all items from the dictionary.

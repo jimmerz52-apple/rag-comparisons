@@ -1,0 +1,5 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.on_disconnect
+
+on_disconnect()  
+What should happen if a disconnect is detected? The return value of this function is returned from read functions in case the client went away. By default a ClientDisconnected exception is raised.  Return type 
+bytes

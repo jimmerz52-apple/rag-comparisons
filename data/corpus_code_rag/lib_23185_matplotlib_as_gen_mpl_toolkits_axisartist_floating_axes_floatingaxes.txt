@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.floating_axes.floatingaxes
+
+mpl_toolkits.axisartist.floating_axes.FloatingAxes   mpl_toolkits.axisartist.floating_axes.FloatingAxes[source]
+ 
+alias of mpl_toolkits.axisartist.floating_axes.FloatingAxesHostAxes

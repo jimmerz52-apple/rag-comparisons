@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.fields.GenericRelation.related_query_name
+
+related_query_name  
+The relation on the related object back to this object doesn’t exist by default. Setting related_query_name creates a relation from the related object back to this one. This allows querying and filtering from the related object.

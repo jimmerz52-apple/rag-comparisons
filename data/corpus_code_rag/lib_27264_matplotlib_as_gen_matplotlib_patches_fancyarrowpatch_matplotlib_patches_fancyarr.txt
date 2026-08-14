@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.get_mutation_aspect
+
+get_mutation_aspect()[source]
+ 
+Return the aspect ratio of the bbox mutation.

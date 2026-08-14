@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sin
+
+sin() → Tensor  
+See torch.sin()

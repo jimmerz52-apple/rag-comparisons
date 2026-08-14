@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.import_name
+
+import_name  
+The name of the package or module that this object belongs to. Do not change this once it is set by the constructor.

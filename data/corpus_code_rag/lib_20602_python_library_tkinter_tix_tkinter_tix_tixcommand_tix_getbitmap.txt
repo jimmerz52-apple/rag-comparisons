@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.tixCommand.tix_getbitmap
+
+tixCommand.tix_getbitmap(name)  
+Locates a bitmap file of the name name.xpm or name in one of the bitmap directories (see the tix_addbitmapdir() method). By using tix_getbitmap(), you can avoid hard coding the pathnames of the bitmap files in your application. When successful, it returns the complete pathname of the bitmap file, prefixed with the character @. The returned value can be used to configure the bitmap option of the Tk and Tix widgets.

@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.scheme
+
+HttpRequest.scheme  
+A string representing the scheme of the request (http or https usually).

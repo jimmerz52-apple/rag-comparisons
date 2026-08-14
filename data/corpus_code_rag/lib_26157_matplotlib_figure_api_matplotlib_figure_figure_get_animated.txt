@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_animated
+
+get_animated()[source]
+ 
+Return whether the artist is animated.

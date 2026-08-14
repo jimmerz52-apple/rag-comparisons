@@ -1,0 +1,4 @@
+# pygame.ref.overlay#pygame.Overlay.display
+
+display() 
+ set the overlay pixel data display((y, u, v)) -> None display() -> None  Display the YUV data in SDL's overlay planes. The y, u, and v arguments are strings of binary data. The data must be in the correct format used to create the Overlay. If no argument is passed in, the Overlay will simply be redrawn with the current data. This can be useful when the Overlay is not really hardware accelerated. The strings are not validated, and improperly sized strings could crash the program.

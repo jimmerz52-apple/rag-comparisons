@@ -1,0 +1,18 @@
+# numpy.reference.generated.numpy.polynomial.polynomial.polymulx
+
+numpy.polynomial.polynomial.polymulx   polynomial.polynomial.polymulx(c)[source]
+ 
+Multiply a polynomial by x. Multiply the polynomial c by x, where x is the independent variable.  Parameters 
+ 
+carray_like
+
+
+1-D array of polynomial coefficients ordered from low to high.    Returns 
+ 
+outndarray
+
+
+Array representing the result of the multiplication.      See also  
+polyadd, polysub, polymul, polydiv, polypow
+
+  Notes  New in version 1.5.0.

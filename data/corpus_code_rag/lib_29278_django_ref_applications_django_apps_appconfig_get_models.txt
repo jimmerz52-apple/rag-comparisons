@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.AppConfig.get_models
+
+AppConfig.get_models()  
+Returns an iterable of Model classes for this application. Requires the app registry to be fully populated.

@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.get_message
+
+get_message(key)  
+Return a representation of the message corresponding to key as an instance of the appropriate format-specific Message subclass, or raise a KeyError exception if no such message exists.

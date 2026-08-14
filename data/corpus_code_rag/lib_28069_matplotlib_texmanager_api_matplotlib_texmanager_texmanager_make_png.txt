@@ -1,0 +1,5 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.make_png
+
+make_png(tex, fontsize, dpi)[source]
+ 
+Generate a png file containing latex's rendering of tex string. Return the file name.

@@ -1,0 +1,5 @@
+# torch.autograd#torch.autograd.Function.backward
+
+static backward(ctx, *grad_outputs) [source]
+ 
+Defines a formula for differentiating the operation. This function is to be overridden by all subclasses. It must accept a context ctx as the first argument, followed by as many outputs did forward() return, and it should return as many tensors, as there were inputs to forward(). Each argument is the gradient w.r.t the given output, and each returned value should be the gradient w.r.t. the corresponding input. The context can be used to retrieve tensors saved during the forward pass. It also has an attribute ctx.needs_input_grad as a tuple of booleans representing whether each input needs gradient. E.g., backward() will have ctx.needs_input_grad[0] = True if the first input to forward() needs gradient computated w.r.t. the output.

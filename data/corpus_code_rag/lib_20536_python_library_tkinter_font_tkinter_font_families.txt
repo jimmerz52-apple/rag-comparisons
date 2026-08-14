@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.families
+
+tkinter.font.families(root=None, displayof=None)  
+Return the different font families.

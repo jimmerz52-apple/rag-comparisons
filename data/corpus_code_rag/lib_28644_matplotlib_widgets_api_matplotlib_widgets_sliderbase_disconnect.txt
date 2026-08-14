@@ -1,0 +1,10 @@
+# matplotlib.widgets_api#matplotlib.widgets.SliderBase.disconnect
+
+disconnect(cid)[source]
+ 
+Remove the observer with connection id cid.  Parameters 
+ 
+cidint
+
+
+Connection id of the observer to be removed.

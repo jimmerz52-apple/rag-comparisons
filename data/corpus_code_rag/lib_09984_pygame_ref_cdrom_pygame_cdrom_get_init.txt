@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.get_init
+
+pygame.cdrom.get_init() 
+ true if the cdrom module is initialized get_init() -> bool  Test if the cdrom module is initialized or not. This is different than the CD.init() since each drive must also be initialized individually.

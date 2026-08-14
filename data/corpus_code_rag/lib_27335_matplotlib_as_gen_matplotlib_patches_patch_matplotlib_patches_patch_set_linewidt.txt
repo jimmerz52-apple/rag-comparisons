@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_linewidth
+
+set_linewidth(w)[source]
+ 
+Set the patch linewidth in points.  Parameters 
+ 
+wfloat or None

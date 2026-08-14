@@ -1,0 +1,4 @@
+# python.library.modulefinder#modulefinder.ModuleFinder.run_script
+
+run_script(pathname)  
+Analyze the contents of the pathname file, which must contain Python code.

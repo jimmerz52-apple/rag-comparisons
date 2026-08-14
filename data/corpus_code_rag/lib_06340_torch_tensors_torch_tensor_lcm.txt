@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.lcm
+
+lcm(other) → Tensor  
+See torch.lcm()

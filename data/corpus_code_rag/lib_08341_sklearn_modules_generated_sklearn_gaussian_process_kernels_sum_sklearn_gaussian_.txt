@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.sum#sklearn.gaussian_process.kernels.Sum.requires_vector_input
+
+property requires_vector_input  
+Returns whether the kernel is stationary.

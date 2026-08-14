@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader
+
+class xml.sax.xmlreader.XMLReader  
+Base class which can be inherited by SAX parsers.

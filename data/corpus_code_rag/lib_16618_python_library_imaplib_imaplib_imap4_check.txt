@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.check
+
+IMAP4.check()  
+Checkpoint mailbox on server.

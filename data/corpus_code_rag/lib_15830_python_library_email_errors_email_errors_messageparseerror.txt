@@ -1,0 +1,4 @@
+# python.library.email.errors#email.errors.MessageParseError
+
+exception email.errors.MessageParseError  
+This is the base class for exceptions raised by the Parser class. It is derived from MessageError. This class is also used internally by the parser used by headerregistry.

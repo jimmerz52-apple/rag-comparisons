@@ -1,0 +1,14 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.PaddedBox.get_extent_offsets
+
+get_extent_offsets(renderer)[source]
+ 
+Update offset of the children and return the extent of the box.  Parameters 
+ 
+rendererRendererBase subclass
+
+  Returns 
+ width
+height
+xdescent
+ydescent
+list of (xoffset, yoffset) pairs

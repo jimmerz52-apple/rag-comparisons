@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.origin_server
+
+origin_server  
+This attribute should be set to a true value if the handler’s _write() and _flush() are being used to communicate directly to the client, rather than via a CGI-like gateway protocol that wants the HTTP status in a special Status: header. This attribute’s default value is true in BaseHandler, but false in BaseCGIHandler and CGIHandler.

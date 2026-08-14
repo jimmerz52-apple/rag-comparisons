@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.isoweekday
+
+datetime.isoweekday()  
+Return the day of the week as an integer, where Monday is 1 and Sunday is 7. The same as self.date().isoweekday(). See also weekday(), isocalendar().

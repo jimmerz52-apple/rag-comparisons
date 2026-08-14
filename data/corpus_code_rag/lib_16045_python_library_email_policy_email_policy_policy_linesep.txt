@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Policy.linesep
+
+linesep  
+The string to be used to terminate lines in serialized output. The default is \n because that’s the internal end-of-line discipline used by Python, though \r\n is required by the RFCs.

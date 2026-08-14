@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.hour.__call__
+
+pandas.tseries.offsets.Hour.__call__   Hour.__call__(*args, **kwargs)
+ 
+Call self as a function.

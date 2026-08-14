@@ -1,0 +1,28 @@
+# skimage.api.skimage.color#skimage.color.convert_colorspace
+
+skimage.color.convert_colorspace(arr, fromspace, tospace) [source]
+ 
+Convert an image array to a new color space.  Valid color spaces are:
+
+‘RGB’, ‘HSV’, ‘RGB CIE’, ‘XYZ’, ‘YUV’, ‘YIQ’, ‘YPbPr’, ‘YCbCr’, ‘YDbDr’    Parameters 
+ 
+arr(…, 3) array_like 
+
+The image to convert. Final dimension denotes channels.  
+fromspacestr 
+
+The color space to convert from. Can be specified in lower case.  
+tospacestr 
+
+The color space to convert to. Can be specified in lower case.    Returns 
+ 
+out(…, 3) ndarray 
+
+The converted image. Same dimensions as input.    Raises 
+ ValueError
+
+If fromspace is not a valid color space  ValueError
+
+If tospace is not a valid color space     Notes Conversion is performed through the “central” RGB color space, i.e. conversion from XYZ to HSV is implemented as XYZ -> RGB -> HSV instead of directly. Examples >>> from skimage import data
+>>> img = data.astronaut()
+>>> img_hsv = convert_colorspace(img, 'RGB', 'HSV')

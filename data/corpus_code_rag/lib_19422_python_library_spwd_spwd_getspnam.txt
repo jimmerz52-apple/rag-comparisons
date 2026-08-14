@@ -1,0 +1,4 @@
+# python.library.spwd#spwd.getspnam
+
+spwd.getspnam(name)  
+Return the shadow password database entry for the given user name.  Changed in version 3.6: Raises a PermissionError instead of KeyError if the user doesn’t have privileges.

@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.expanded
+
+expanded(sw, sh)[source]
+ 
+Construct a Bbox by expanding this one around its center by the factors sw and sh.

@@ -1,0 +1,4 @@
+# python.library.time#time.perf_counter_ns
+
+time.perf_counter_ns() → int  
+Similar to perf_counter(), but return time as nanoseconds.  New in version 3.7.

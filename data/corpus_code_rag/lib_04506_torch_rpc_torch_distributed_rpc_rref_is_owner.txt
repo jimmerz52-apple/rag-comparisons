@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.RRef.is_owner
+
+is_owner(self: torch._C._distributed_rpc.PyRRef) → bool  
+Returns whether or not the current node is the owner of this RRef.

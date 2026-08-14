@@ -1,0 +1,18 @@
+# django.topics.http.sessions#django.contrib.sessions.base_session.AbstractBaseSession
+
+class base_session.AbstractBaseSession  
+The abstract base session model.  
+session_key  
+Primary key. The field itself may contain up to 40 characters. The current implementation generates a 32-character string (a random sequence of digits and lowercase ASCII letters). 
+  
+session_data  
+A string containing an encoded and serialized session dictionary. 
+  
+expire_date  
+A datetime designating when the session expires. Expired sessions are not available to a user, however, they may still be stored in the database until the clearsessions management command is run. 
+  
+classmethod get_session_store_class()  
+Returns a session store class to be used with this session model. 
+  
+get_decoded()  
+Returns decoded session data. Decoding is performed by the session store class.

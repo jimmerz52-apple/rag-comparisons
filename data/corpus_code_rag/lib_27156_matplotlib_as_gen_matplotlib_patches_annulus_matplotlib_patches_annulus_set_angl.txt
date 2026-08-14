@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.set_angle
+
+set_angle(angle)[source]
+ 
+Set the tilt angle of the annulus.  Parameters 
+ 
+anglefloat

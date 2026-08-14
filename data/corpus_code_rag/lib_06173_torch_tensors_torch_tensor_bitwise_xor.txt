@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.bitwise_xor
+
+bitwise_xor() → Tensor  
+See torch.bitwise_xor()

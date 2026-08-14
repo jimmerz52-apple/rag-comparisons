@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.get_bounding_rects
+
+get_bounding_rects() 
+ Returns a list of bounding rects of connected components get_bounding_rects() -> [Rect, ...]  Provides a list containing a bounding rect for each connected component.     
+Returns:
+a list containing a bounding rect for each connected component, an empty list is returned if the mask has no bits set  
+Return type:
+list[Rect]     Note See connected_component() for details on how a connected component is calculated.

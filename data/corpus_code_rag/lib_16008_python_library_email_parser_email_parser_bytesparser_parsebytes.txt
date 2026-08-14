@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.BytesParser.parsebytes
+
+parsebytes(bytes, headersonly=False)  
+Similar to the parse() method, except it takes a bytes-like object instead of a file-like object. Calling this method on a bytes-like object is equivalent to wrapping bytes in a BytesIO instance first and calling parse(). Optional headersonly is as with the parse() method.

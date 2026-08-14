@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.cluster.birch#sklearn.cluster.Birch.fit_predict
+
+fit_predict(X, y=None) [source]
+ 
+Perform clustering on X and returns cluster labels.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input data.  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+labelsndarray of shape (n_samples,), dtype=np.int64 
+
+Cluster labels.

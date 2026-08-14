@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.inferno
+
+matplotlib.pyplot.inferno   matplotlib.pyplot.inferno()[source]
+ 
+Set the colormap to 'inferno'. This changes the default colormap as well as the colormap of the current image if there is one. See help(colormaps) for more information.

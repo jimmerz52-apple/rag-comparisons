@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_xaxis_transform
+
+matplotlib.axes.Axes.get_xaxis_transform   Axes.get_xaxis_transform(which='grid')[source]
+ 
+Get the transformation used for drawing x-axis labels, ticks and gridlines. The x-direction is in data coordinates and the y-direction is in axis coordinates.  Note This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.  
+  Examples using matplotlib.axes.Axes.get_xaxis_transform
+ 
+   Filling the area between lines   
+
+   hlines and vlines   
+
+   Boxplots   
+
+   Scale invariant angle label   
+
+   Centered spines with arrows   
+
+   Transformations Tutorial

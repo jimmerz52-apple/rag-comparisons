@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.read_very_lazy
+
+Telnet.read_very_lazy()  
+Return any data available in the cooked queue (very lazy). Raise EOFError if connection closed and no data available. Return b'' if no cooked data available otherwise. This method never blocks.

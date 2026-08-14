@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.dispatch_exception
+
+dispatch_exception(frame, arg)  
+If the debugger should stop at this exception, invokes the user_exception() method (which should be overridden in subclasses). Raise a BdbQuit exception if the Bdb.quitting flag is set (which can be set from user_exception()). Return a reference to the trace_dispatch() method for further tracing in that scope.

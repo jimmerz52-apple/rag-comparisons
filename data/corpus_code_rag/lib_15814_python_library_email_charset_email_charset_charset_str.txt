@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.__str__
+
+__str__()  
+Returns input_charset as a string coerced to lower case. __repr__() is an alias for __str__().

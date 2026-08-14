@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.ma.maskedarray.round
+
+numpy.ma.MaskedArray.round method   ma.MaskedArray.round(decimals=0, out=None)[source]
+ 
+Return each element rounded to the given number of decimals. Refer to numpy.around for full documentation.  See also  numpy.ndarray.round
+
+corresponding function for ndarrays  numpy.around
+
+equivalent function

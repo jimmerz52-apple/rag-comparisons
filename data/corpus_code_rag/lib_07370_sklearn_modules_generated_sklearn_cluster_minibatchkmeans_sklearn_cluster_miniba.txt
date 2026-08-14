@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.cluster.minibatchkmeans#sklearn.cluster.MiniBatchKMeans.partial_fit
+
+partial_fit(X, y=None, sample_weight=None) [source]
+ 
+Update k means estimate on a single mini-batch X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Coordinates of the data points to cluster. It must be noted that X will be copied if it is not C-contiguous.  
+yIgnored 
+
+Not used, present here for API consistency by convention.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+The weights for each observation in X. If None, all observations are assigned equal weight (default: None).    Returns 
+ self

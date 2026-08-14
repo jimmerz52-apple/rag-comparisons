@@ -1,0 +1,4 @@
+# python.library.fractions#fractions.Fraction.denominator
+
+denominator  
+Denominator of the Fraction in lowest term.

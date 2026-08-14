@@ -1,0 +1,6 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ImmutableOrderedMultiDict
+
+class werkzeug.datastructures.ImmutableOrderedMultiDict(mapping=None)  
+An immutable OrderedMultiDict.  Changelog New in version 0.6.   
+copy()  
+Return a shallow mutable copy of this object. Keep in mind that the standard library’s copy() function is a no-op for this class like for any other python immutable type (eg: tuple).

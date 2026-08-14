@@ -1,0 +1,25 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.PickEvent
+
+classmatplotlib.backend_bases.PickEvent(name, canvas, mouseevent, artist, guiEvent=None, **kwargs)[source]
+ 
+Bases: matplotlib.backend_bases.Event A pick event. This event is fired when the user picks a location on the canvas sufficiently close to an artist that has been made pickable with Artist.set_picker. A PickEvent has a number of special attributes in addition to those defined by the parent Event class. Examples Bind a function on_pick() to pick events, that prints the coordinates of the picked data point: ax.plot(np.rand(100), 'o', picker=5)  # 5 points tolerance
+
+def on_pick(event):
+    line = event.artist
+    xdata, ydata = line.get_data()
+    ind = event.ind
+    print('on pick line:', np.array([xdata[ind], ydata[ind]]).T)
+
+cid = fig.canvas.mpl_connect('pick_event', on_pick)
+  Attributes 
+ 
+mouseeventMouseEvent
+
+
+The mouse event that generated the pick.  
+artistmatplotlib.artist.Artist
+
+
+The picked artist. Note that artists are not pickable by default (see Artist.set_picker).  other
+
+Additional attributes may be present depending on the type of the picked object; e.g., a Line2D pick may define different extra attributes than a PatchCollection pick.

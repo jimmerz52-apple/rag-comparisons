@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.get_clip_path
+
+get_clip_path()[source]
+ 
+Return the clip path in the form (path, transform), where path is a Path instance, and transform is an affine transform to apply to the path before clipping.

@@ -1,0 +1,68 @@
+# matplotlib.transformations#matplotlib.transforms.CompositeGenericTransform
+
+classmatplotlib.transforms.CompositeGenericTransform(a, b, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Transform A composite transform formed by applying transform a then transform b. This "generic" version can handle any two arbitrary transformations. Create a new composite transform that is the result of applying transform a then transform b. You will generally not call this constructor directly but write a +
+b instead, which will automatically choose the best kind of composite transform instance to create.   __eq__(other)[source]
+ 
+Return self==value. 
+   __hash__=None
+
+   __init__(a, b, **kwargs)[source]
+ 
+Create a new composite transform that is the result of applying transform a then transform b. You will generally not call this constructor directly but write a +
+b instead, which will automatically choose the best kind of composite transform instance to create. 
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   propertydepth
+ 
+Return the number of transforms which have been chained together to form this Transform instance.  Note For the special case of a Composite transform, the maximum depth of the two is returned.  
+   frozen()[source]
+ 
+Return a frozen copy of this transform node. The frozen copy will not be updated when its children change. Useful for storing a previously known state of a transform where copy.deepcopy() might normally be used. 
+   get_affine()[source]
+ 
+Get the affine part of this transform. 
+   propertyhas_inverse
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy. 
+   propertyis_affine
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   propertyis_separable
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   pass_through=True
+ 
+If pass_through is True, all ancestors will always be invalidated, even if 'self' is already invalid. 
+   transform_affine(points)[source]
+ 
+Apply only the affine part of this transformation on the given array of values. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally a no-op. In affine transformations, this is equivalent to transform(values).  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+   transform_non_affine(points)[source]
+ 
+Apply only the non-affine part of this transformation. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally equivalent to transform(values). In affine transformations, this is always a no-op.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+   transform_path_non_affine(path)[source]
+ 
+Apply the non-affine part of this transform to Path path, returning a new Path. transform_path(path) is equivalent to transform_path_affine(transform_path_non_affine(values)).

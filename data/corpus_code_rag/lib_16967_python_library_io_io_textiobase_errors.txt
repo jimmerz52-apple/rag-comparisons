@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOBase.errors
+
+errors  
+The error setting of the decoder or encoder.

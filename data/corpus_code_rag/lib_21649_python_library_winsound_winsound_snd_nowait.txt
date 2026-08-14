@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.SND_NOWAIT
+
+winsound.SND_NOWAIT  
+Return immediately if the sound driver is busy.  Note This flag is not supported on modern Windows platforms.

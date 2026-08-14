@@ -1,0 +1,5 @@
+# matplotlib._api_api#matplotlib._api.check_shape
+
+matplotlib._api.check_shape(_shape, **kwargs)[source]
+ 
+For each key, value pair in kwargs, check that value has the shape _shape, if not, raise an appropriate ValueError. None in the shape is treated as a "free" size that can have any length. e.g. (None, 2) -> (N, 2) The values checked must be numpy arrays. Examples To check for (N, 2) shaped arrays >>> _api.check_shape((None, 2), arg=arg, other_arg=other_arg)

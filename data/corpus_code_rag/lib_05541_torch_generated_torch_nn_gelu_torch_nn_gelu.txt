@@ -1,0 +1,10 @@
+# torch.generated.torch.nn.gelu#torch.nn.GELU
+
+class torch.nn.GELU [source]
+ 
+Applies the Gaussian Error Linear Units function:  GELU(x)=x∗Φ(x)\text{GELU}(x) = x * \Phi(x)  
+where Φ(x)\Phi(x)  is the Cumulative Distribution Function for Gaussian Distribution.  Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.GELU()
+>>> input = torch.randn(2)
+>>> output = m(input)

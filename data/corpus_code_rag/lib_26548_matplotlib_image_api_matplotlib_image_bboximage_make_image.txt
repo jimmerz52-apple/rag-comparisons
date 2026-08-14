@@ -1,0 +1,18 @@
+# matplotlib.image_api#matplotlib.image.BboxImage.make_image
+
+make_image(renderer, magnification=1.0, unsampled=False)[source]
+ 
+Normalize, rescale, and colormap this image's data for rendering using renderer, with the given magnification. If unsampled is True, the image will not be scaled, but an appropriate affine transformation will be returned instead.  Returns 
+ 
+image(M, N, 4) uint8 array
+
+
+The RGBA image, resampled unless unsampled is True.  
+x, yfloat
+
+
+The upper left corner where the image should be drawn, in pixel space.  
+transAffine2D
+
+
+The affine transformation from image to pixel space.

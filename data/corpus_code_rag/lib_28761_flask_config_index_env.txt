@@ -1,0 +1,4 @@
+# flask.config.index#ENV
+
+ENV  
+What environment the app is running in. Flask and extensions may enable behaviors based on the environment, such as enabling debug mode. The env attribute maps to this config key. This is set by the FLASK_ENV environment variable and may not behave as expected if set in code. Do not enable development when deploying in production. Default: 'production'  Changelog New in version 1.0.

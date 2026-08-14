@@ -1,0 +1,41 @@
+# python.library.itertools#itertools.accumulate
+
+itertools.accumulate(iterable[, func, *, initial=None])  
+Make an iterator that returns accumulated sums, or accumulated results of other binary functions (specified via the optional func argument). If func is supplied, it should be a function of two arguments. Elements of the input iterable may be any type that can be accepted as arguments to func. (For example, with the default operation of addition, elements may be any addable type including Decimal or Fraction.) Usually, the number of elements output matches the input iterable. However, if the keyword argument initial is provided, the accumulation leads off with the initial value so that the output has one more element than the input iterable. Roughly equivalent to: def accumulate(iterable, func=operator.add, *, initial=None):
+    'Return running totals'
+    # accumulate([1,2,3,4,5]) --> 1 3 6 10 15
+    # accumulate([1,2,3,4,5], initial=100) --> 100 101 103 106 110 115
+    # accumulate([1,2,3,4,5], operator.mul) --> 1 2 6 24 120
+    it = iter(iterable)
+    total = initial
+    if initial is None:
+        try:
+            total = next(it)
+        except StopIteration:
+            return
+    yield total
+    for element in it:
+        total = func(total, element)
+        yield total
+ There are a number of uses for the func argument. It can be set to min() for a running minimum, max() for a running maximum, or operator.mul() for a running product. Amortization tables can be built by accumulating interest and applying payments. First-order recurrence relations can be modeled by supplying the initial value in the iterable and using only the accumulated total in func argument: >>> data = [3, 4, 6, 2, 1, 9, 0, 7, 5, 8]
+>>> list(accumulate(data, operator.mul))     # running product
+[3, 12, 72, 144, 144, 1296, 0, 0, 0, 0]
+>>> list(accumulate(data, max))              # running maximum
+[3, 4, 6, 6, 6, 9, 9, 9, 9, 9]
+
+# Amortize a 5% loan of 1000 with 4 annual payments of 90
+>>> cashflows = [1000, -90, -90, -90, -90]
+>>> list(accumulate(cashflows, lambda bal, pmt: bal*1.05 + pmt))
+[1000, 960.0, 918.0, 873.9000000000001, 827.5950000000001]
+
+# Chaotic recurrence relation https://en.wikipedia.org/wiki/Logistic_map
+>>> logistic_map = lambda x, _:  r * x * (1 - x)
+>>> r = 3.8
+>>> x0 = 0.4
+>>> inputs = repeat(x0, 36)     # only the initial value is used
+>>> [format(x, '.2f') for x in accumulate(inputs, logistic_map)]
+['0.40', '0.91', '0.30', '0.81', '0.60', '0.92', '0.29', '0.79', '0.63',
+ '0.88', '0.39', '0.90', '0.33', '0.84', '0.52', '0.95', '0.18', '0.57',
+ '0.93', '0.25', '0.71', '0.79', '0.63', '0.88', '0.39', '0.91', '0.32',
+ '0.83', '0.54', '0.95', '0.20', '0.60', '0.91', '0.30', '0.80', '0.60']
+ See functools.reduce() for a similar function that returns only the final accumulated value.  New in version 3.2.   Changed in version 3.3: Added the optional func parameter.   Changed in version 3.8: Added the optional initial parameter.

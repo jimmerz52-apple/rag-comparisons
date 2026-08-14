@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Function.get_frees
+
+get_frees()  
+Return a tuple containing names of free variables in this function.

@@ -1,0 +1,6 @@
+# python.library.xdrlib#xdrlib.Packer.pack_list
+
+Packer.pack_list(list, pack_item)  
+Packs a list of homogeneous items. This method is useful for lists with an indeterminate size; i.e. the size is not available until the entire list has been walked. For each item in the list, an unsigned integer 1 is packed first, followed by the data value from the list. pack_item is the function that is called to pack the individual item. At the end of the list, an unsigned integer 0 is packed. For example, to pack a list of integers, the code might appear like this: import xdrlib
+p = xdrlib.Packer()
+p.pack_list([1, 2, 3], p.pack_int)

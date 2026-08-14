@@ -1,0 +1,8 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.open_session
+
+open_session(app, request)  
+This method has to be implemented and must either return None in case the loading failed because of a configuration error or an instance of a session object which implements a dictionary like interface + the methods and attributes on SessionMixin.  Parameters 
+ 
+app (Flask) –  
+request (Request) –    Return type 
+Optional[flask.sessions.SecureCookieSession]

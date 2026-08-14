@@ -1,0 +1,4 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.request_class
+
+request_class  
+alias of werkzeug.wrappers.request.Request

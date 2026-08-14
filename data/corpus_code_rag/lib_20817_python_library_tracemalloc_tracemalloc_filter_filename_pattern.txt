@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Filter.filename_pattern
+
+filename_pattern  
+Filename pattern of the filter (str). Read-only property.

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.Field.geom_type
+
+Field.geom_type  
+You generally shouldn’t have to set or change that attribute which should be set up depending on the field class. It matches the OpenGIS standard geometry name.

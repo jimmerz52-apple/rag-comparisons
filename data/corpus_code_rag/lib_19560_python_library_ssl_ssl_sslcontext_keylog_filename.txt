@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLContext.keylog_filename
+
+SSLContext.keylog_filename  
+Write TLS keys to a keylog file, whenever key material is generated or received. The keylog file is designed for debugging purposes only. The file format is specified by NSS and used by many traffic analyzers such as Wireshark. The log file is opened in append-only mode. Writes are synchronized between threads, but not between processes.  New in version 3.8.   Note This features requires OpenSSL 1.1.1 or newer.

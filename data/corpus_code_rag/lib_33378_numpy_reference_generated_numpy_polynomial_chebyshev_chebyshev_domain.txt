@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebyshev.domain
+
+numpy.polynomial.chebyshev.Chebyshev.domain attribute   polynomial.chebyshev.Chebyshev.domain = array([-1, 1])

@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.setdefault
+
+setdefault(key, default=None)  
+Returns the value for the key if it is in the dict, otherwise it returns default and sets that value for key.  Parameters 
+ 
+key – The key to be looked up. 
+default – The default value to be returned if the key is not in the dict. If not further specified it’s None.

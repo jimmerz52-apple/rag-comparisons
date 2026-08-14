@@ -1,0 +1,9 @@
+# python.library.asyncio-eventloop#asyncio.Handle
+
+class asyncio.Handle  
+A callback wrapper object returned by loop.call_soon(), loop.call_soon_threadsafe().  
+cancel()  
+Cancel the callback. If the callback has already been canceled or executed, this method has no effect. 
+  
+cancelled()  
+Return True if the callback was cancelled.  New in version 3.7.

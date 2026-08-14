@@ -1,0 +1,6 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response._ensure_sequence
+
+_ensure_sequence(mutable=False)  
+This method can be called by methods that need a sequence. If mutable is true, it will also ensure that the response sequence is a standard Python list.  Changelog New in version 0.6.   Parameters 
+mutable (bool) –   Return type 
+None

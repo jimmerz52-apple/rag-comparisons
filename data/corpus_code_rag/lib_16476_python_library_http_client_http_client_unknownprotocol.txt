@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.UnknownProtocol
+
+exception http.client.UnknownProtocol  
+A subclass of HTTPException.

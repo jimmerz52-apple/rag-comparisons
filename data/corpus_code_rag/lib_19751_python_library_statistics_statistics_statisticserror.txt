@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.StatisticsError
+
+exception statistics.StatisticsError  
+Subclass of ValueError for statistics-related exceptions.

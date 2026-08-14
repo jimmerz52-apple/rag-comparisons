@@ -1,0 +1,15 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.FigureCanvasAgg.print_jpg
+
+print_jpg(filename_or_obj, *args, pil_kwargs=None, **kwargs)[source]
+ 
+Write the figure to a JPEG file.  Parameters 
+ 
+filename_or_objstr or path-like or file-like
+
+
+The file to write to.    Other Parameters 
+ 
+pil_kwargsdict, optional
+
+
+Additional keyword arguments that are passed to PIL.Image.Image.save when saving the figure.

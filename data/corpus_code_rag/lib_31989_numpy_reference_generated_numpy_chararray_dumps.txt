@@ -1,0 +1,6 @@
+# numpy.reference.generated.numpy.chararray.dumps
+
+numpy.chararray.dumps method   chararray.dumps()
+ 
+Returns the pickle of the array as a string. pickle.loads will convert the string back to an array.  Parameters 
+ None

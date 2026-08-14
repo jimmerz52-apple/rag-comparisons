@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.setflags
+
+numpy.record.setflags method   record.setflags()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.setflags.

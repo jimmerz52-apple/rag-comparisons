@@ -1,0 +1,4 @@
+# python.library.reprlib#reprlib.aRepr
+
+reprlib.aRepr  
+This is an instance of Repr which is used to provide the repr() function described below. Changing the attributes of this object will affect the size limits used by repr() and the Python debugger.

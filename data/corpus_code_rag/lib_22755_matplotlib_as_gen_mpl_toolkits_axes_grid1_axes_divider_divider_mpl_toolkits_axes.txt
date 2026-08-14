@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.divider#mpl_toolkits.axes_grid1.axes_divider.Divider.get_vertical
+
+get_vertical()[source]
+ 
+Return vertical sizes.

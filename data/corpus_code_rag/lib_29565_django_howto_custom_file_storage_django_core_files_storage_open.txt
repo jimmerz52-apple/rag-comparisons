@@ -1,0 +1,3 @@
+# django.howto.custom-file-storage#django.core.files.storage._open
+
+_open(name, mode='rb')

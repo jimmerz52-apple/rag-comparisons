@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.decompress
+
+lzma.decompress(data, format=FORMAT_AUTO, memlimit=None, filters=None)  
+Decompress data (a bytes object), returning the uncompressed data as a bytes object. If data is the concatenation of multiple distinct compressed streams, decompress all of these streams, and return the concatenation of the results. See LZMADecompressor above for a description of the format, memlimit and filters arguments.

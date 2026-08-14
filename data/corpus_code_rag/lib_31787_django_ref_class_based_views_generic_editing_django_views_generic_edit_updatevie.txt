@@ -1,0 +1,20 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.UpdateView
+
+class django.views.generic.edit.UpdateView  
+A view that displays a form for editing an existing object, redisplaying the form with validation errors (if there are any) and saving changes to the object. This uses a form automatically generated from the object’s model class (unless a form class is manually specified). Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.detail.SingleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.edit.BaseUpdateView django.views.generic.edit.ModelFormMixin django.views.generic.edit.FormMixin django.views.generic.detail.SingleObjectMixin django.views.generic.edit.ProcessFormView django.views.generic.base.View  Attributes  
+template_name_suffix  
+The UpdateView page displayed to a GET request uses a template_name_suffix of '_form'. For example, changing this attribute to '_update_form' for a view updating objects for the example Author model would cause the default template_name to be 'myapp/author_update_form.html'. 
+  
+object  
+When using UpdateView you have access to self.object, which is the object being updated. 
+ Example myapp/views.py: from django.views.generic.edit import UpdateView
+from myapp.models import Author
+
+class AuthorUpdateView(UpdateView):
+    model = Author
+    fields = ['name']
+    template_name_suffix = '_update_form'
+ Example myapp/author_update_form.html: <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Update">
+</form>

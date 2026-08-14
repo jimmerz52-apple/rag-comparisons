@@ -1,0 +1,4 @@
+# python.library.test#test.support.sortdict
+
+test.support.sortdict(dict)  
+Return a repr of dict with keys sorted.

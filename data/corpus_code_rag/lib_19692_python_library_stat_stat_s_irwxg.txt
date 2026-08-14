@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IRWXG
+
+stat.S_IRWXG  
+Mask for group permissions.

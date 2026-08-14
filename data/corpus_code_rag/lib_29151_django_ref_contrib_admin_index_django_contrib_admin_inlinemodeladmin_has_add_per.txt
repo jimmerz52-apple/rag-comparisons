@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.has_add_permission
+
+InlineModelAdmin.has_add_permission(request, obj)  
+Should return True if adding an inline object is permitted, False otherwise. obj is the parent object being edited or None when adding a new parent.

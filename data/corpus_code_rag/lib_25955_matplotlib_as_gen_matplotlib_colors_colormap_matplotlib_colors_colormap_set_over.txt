@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.set_over
+
+set_over(color='k', alpha=None)[source]
+ 
+Set the color for high out-of-range values.

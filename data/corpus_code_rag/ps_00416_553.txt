@@ -1,0 +1,7 @@
+# 553
+Task: 553
+
+# Write a function to convert the given tuple to a floating-point number.
+def tuple_to_float(test_tup):
+  res = float('.'.join(str(ele) for ele in test_tup))
+  return (res)

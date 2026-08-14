@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALBand.std
+
+std  
+The standard deviation of all pixel values of the band (excluding the “no data” value).

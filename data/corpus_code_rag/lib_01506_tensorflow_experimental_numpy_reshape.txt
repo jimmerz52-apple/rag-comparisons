@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.reshape
+
+tf.experimental.numpy.reshape TensorFlow variant of NumPy's reshape. 
+tf.experimental.numpy.reshape(
+    a, newshape, order='C'
+)
+ order argument can only b 'C' or 'F'. See the NumPy documentation for numpy.reshape.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectTemplateResponseMixin.get_template_names
+
+get_template_names()  
+Returns a list of candidate template names. Returns the following list:  the value of template_name on the view (if provided) <app_label>/<model_name><template_name_suffix>.html

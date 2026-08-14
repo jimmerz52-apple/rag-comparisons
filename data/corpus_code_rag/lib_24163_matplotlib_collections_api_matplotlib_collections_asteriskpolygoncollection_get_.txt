@@ -1,0 +1,8 @@
+# matplotlib.collections_api#matplotlib.collections.AsteriskPolygonCollection.get_sizes
+
+get_sizes()[source]
+ 
+Return the sizes ('areas') of the elements in the collection.  Returns 
+ array
+
+The 'area' of each element.

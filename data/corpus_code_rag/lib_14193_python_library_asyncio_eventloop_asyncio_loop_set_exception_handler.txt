@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.set_exception_handler
+
+loop.set_exception_handler(handler)  
+Set handler as the new event loop exception handler. If handler is None, the default exception handler will be set. Otherwise, handler must be a callable with the signature matching (loop, context), where loop is a reference to the active event loop, and context is a dict object containing the details of the exception (see call_exception_handler() documentation for details about context).

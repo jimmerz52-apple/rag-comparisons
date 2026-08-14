@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ge__
+
+numpy.ma.MaskedArray.__ge__ method   ma.MaskedArray.__ge__(value, /)
+ 
+Return self>=value.

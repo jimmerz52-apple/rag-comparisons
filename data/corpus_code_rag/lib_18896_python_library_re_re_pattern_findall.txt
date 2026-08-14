@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.findall
+
+Pattern.findall(string[, pos[, endpos]])  
+Similar to the findall() function, using the compiled pattern, but also accepts optional pos and endpos parameters that limit the search region like for search().

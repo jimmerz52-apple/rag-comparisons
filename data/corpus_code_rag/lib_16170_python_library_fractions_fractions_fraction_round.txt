@@ -1,0 +1,5 @@
+# python.library.fractions#fractions.Fraction.__round__
+
+__round__()  
+__round__(ndigits)  
+The first version returns the nearest int to self, rounding half to even. The second version rounds self to the nearest multiple of Fraction(1, 10**ndigits) (logically, if ndigits is negative), again rounding half toward even. This method can also be accessed through the round() function.

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.clone
+
+GEOSGeometry.clone()  
+This method returns a GEOSGeometry that is a clone of the original.

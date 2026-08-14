@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.as_polar
+
+as_polar() 
+ returns a tuple with radial distance and azimuthal angle. as_polar() -> (r, phi)  Returns a tuple (r, phi) where r is the radial distance, and phi is the azimuthal angle.

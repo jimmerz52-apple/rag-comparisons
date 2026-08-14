@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourcelessFileLoader.is_package
+
+is_package(fullname)  
+Determines if the module is a package based on path.

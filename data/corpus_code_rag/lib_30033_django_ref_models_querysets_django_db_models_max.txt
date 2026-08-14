@@ -1,0 +1,5 @@
+# django.ref.models.querysets#django.db.models.Max
+
+class Max(expression, output_field=None, filter=None, default=None, **extra)  
+Returns the maximum value of the given expression.  Default alias: <field>__max
+ Return type: same as input field, or output_field if supplied

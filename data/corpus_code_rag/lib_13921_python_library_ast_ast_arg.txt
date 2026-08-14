@@ -1,0 +1,42 @@
+# python.library.ast#ast.arg
+
+class ast.arg(arg, annotation, type_comment)  
+A single argument in a list. arg is a raw string of the argument name, annotation is its annotation, such as a Str or Name node.  
+type_comment  
+type_comment is an optional string with the type annotation as a comment 
+ >>> print(ast.dump(ast.parse("""\
+... @decorator1
+... @decorator2
+... def f(a: 'annotation', b=1, c=2, *d, e, f=3, **g) -> 'return annotation':
+...     pass
+... """), indent=4))
+Module(
+    body=[
+        FunctionDef(
+            name='f',
+            args=arguments(
+                posonlyargs=[],
+                args=[
+                    arg(
+                        arg='a',
+                        annotation=Constant(value='annotation')),
+                    arg(arg='b'),
+                    arg(arg='c')],
+                vararg=arg(arg='d'),
+                kwonlyargs=[
+                    arg(arg='e'),
+                    arg(arg='f')],
+                kw_defaults=[
+                    None,
+                    Constant(value=3)],
+                kwarg=arg(arg='g'),
+                defaults=[
+                    Constant(value=1),
+                    Constant(value=2)]),
+            body=[
+                Pass()],
+            decorator_list=[
+                Name(id='decorator1', ctx=Load()),
+                Name(id='decorator2', ctx=Load())],
+            returns=Constant(value='return annotation'))],
+    type_ignores=[])

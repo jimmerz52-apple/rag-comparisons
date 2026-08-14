@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.module#torch.nn.Module.register_backward_hook
+
+register_backward_hook(hook) [source]
+ 
+Registers a backward hook on the module. This function is deprecated in favor of nn.Module.register_full_backward_hook() and the behavior of this function will change in future versions.  Returns 
+a handle that can be used to remove the added hook by calling handle.remove()  Return type 
+torch.utils.hooks.RemovableHandle

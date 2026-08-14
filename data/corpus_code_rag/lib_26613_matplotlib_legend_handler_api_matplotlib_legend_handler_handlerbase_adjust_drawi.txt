@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerBase.adjust_drawing_area
+
+adjust_drawing_area(legend, orig_handle, xdescent, ydescent, width, height, fontsize)[source]

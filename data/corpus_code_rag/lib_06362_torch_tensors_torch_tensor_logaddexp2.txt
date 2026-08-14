@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logaddexp2
+
+logaddexp2(other) → Tensor  
+See torch.logaddexp2()

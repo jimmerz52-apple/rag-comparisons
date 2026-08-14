@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.FunctionCounts.transform
+
+transform(map_fn) [source]
+ 
+Apply map_fn to all of the function names. This can be used to regularize function names (e.g. stripping irrelevant parts of the file path), coalesce entries by mapping multiple functions to the same name (in which case the counts are added together), etc.

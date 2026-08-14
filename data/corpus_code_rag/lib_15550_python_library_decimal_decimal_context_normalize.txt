@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.normalize
+
+normalize(x)  
+Reduces x to its simplest form.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_docstrings
+
+@test.support.requires_docstrings  
+Decorator for only running the test if HAVE_DOCSTRINGS.

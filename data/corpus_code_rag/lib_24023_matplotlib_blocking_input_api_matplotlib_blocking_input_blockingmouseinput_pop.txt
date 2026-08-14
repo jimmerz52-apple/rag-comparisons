@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.pop
+
+pop(event, index=- 1)[source]
+ 
+Remove a click and the associated event from the list of clicks. Defaults to the last click.

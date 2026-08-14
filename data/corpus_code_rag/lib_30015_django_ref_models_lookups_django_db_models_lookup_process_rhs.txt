@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Lookup.process_rhs
+
+process_rhs(compiler, connection)  
+Behaves the same way as process_lhs(), for the right-hand side.

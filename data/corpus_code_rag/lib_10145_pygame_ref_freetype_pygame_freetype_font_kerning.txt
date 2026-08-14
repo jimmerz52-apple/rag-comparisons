@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.kerning
+
+kerning 
+ Character kerning mode kerning -> bool  Gets or sets the font's kerning mode. This defaults to False on all fonts, which will be rendered without kerning. Set to True to add kerning between character pairs, if supported by the font, when positioning glyphs.

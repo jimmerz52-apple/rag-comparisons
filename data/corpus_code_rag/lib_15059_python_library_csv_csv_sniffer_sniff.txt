@@ -1,0 +1,4 @@
+# python.library.csv#csv.Sniffer.sniff
+
+sniff(sample, delimiters=None)  
+Analyze the given sample and return a Dialect subclass reflecting the parameters found. If the optional delimiters parameter is given, it is interpreted as a string containing possible valid delimiter characters.

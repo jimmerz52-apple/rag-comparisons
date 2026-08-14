@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes._CData.in_dll
+
+in_dll(library, name)  
+This method returns a ctypes type instance exported by a shared library. name is the name of the symbol that exports the data, library is the loaded shared library.

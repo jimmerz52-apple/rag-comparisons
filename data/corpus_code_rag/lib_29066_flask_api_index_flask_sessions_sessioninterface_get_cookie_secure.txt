@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.SessionInterface.get_cookie_secure
+
+get_cookie_secure(app)  
+Returns True if the cookie should be secure. This currently just returns the value of the SESSION_COOKIE_SECURE setting.  Parameters 
+app (Flask) –   Return type 
+bool

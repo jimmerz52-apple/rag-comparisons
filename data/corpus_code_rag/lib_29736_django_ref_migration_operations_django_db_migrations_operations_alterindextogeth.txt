@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AlterIndexTogether
+
+class AlterIndexTogether(name, index_together)

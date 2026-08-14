@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.FileFinder.find_loader
+
+find_loader(fullname)  
+Attempt to find the loader to handle fullname within path.

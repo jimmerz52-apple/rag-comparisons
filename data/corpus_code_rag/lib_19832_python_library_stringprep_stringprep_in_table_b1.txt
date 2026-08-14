@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_b1
+
+stringprep.in_table_b1(code)  
+Determine whether code is in tableB.1 (Commonly mapped to nothing).

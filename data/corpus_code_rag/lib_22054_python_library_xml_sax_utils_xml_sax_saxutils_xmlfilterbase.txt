@@ -1,0 +1,4 @@
+# python.library.xml.sax.utils#xml.sax.saxutils.XMLFilterBase
+
+class xml.sax.saxutils.XMLFilterBase(base)  
+This class is designed to sit between an XMLReader and the client application’s event handlers. By default, it does nothing but pass requests up to the reader and events on to the handlers unmodified, but subclasses can override specific methods to modify the event stream or the configuration requests as they pass through.

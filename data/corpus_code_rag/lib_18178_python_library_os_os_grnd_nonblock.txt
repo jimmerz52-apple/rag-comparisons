@@ -1,0 +1,4 @@
+# python.library.os#os.GRND_NONBLOCK
+
+os.GRND_NONBLOCK  
+By default, when reading from /dev/random, getrandom() blocks if no random bytes are available, and when reading from /dev/urandom, it blocks if the entropy pool has not yet been initialized. If the GRND_NONBLOCK flag is set, then getrandom() does not block in these cases, but instead immediately raises BlockingIOError.  New in version 3.6.

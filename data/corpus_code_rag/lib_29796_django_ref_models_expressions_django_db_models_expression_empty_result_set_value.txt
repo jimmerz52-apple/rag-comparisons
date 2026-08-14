@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.empty_result_set_value
+
+empty_result_set_value  
+ New in Django 4.0.  Tells Django which value should be returned when the expression is used to apply a function over an empty result set. Defaults to NotImplemented which forces the expression to be computed on the database.

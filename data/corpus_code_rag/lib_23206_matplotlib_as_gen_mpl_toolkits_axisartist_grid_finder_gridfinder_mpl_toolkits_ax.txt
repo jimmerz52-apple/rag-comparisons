@@ -1,0 +1,8 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_finder.gridfinder#mpl_toolkits.axisartist.grid_finder.GridFinder.get_grid_info
+
+get_grid_info(x1, y1, x2, y2)[source]
+ 
+ lon_values, lat_valueslist of grid values. if integer is given,
+
+
+rough number of grids in each direction.

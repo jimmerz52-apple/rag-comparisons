@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_xminorticklabels
+
+matplotlib.axes.Axes.get_xminorticklabels   Axes.get_xminorticklabels()[source]
+ 
+Return the xaxis' minor tick labels, as a list of Text.

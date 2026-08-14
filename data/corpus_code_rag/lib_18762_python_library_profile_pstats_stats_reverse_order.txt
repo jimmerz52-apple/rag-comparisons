@@ -1,0 +1,4 @@
+# python.library.profile#pstats.Stats.reverse_order
+
+reverse_order()  
+This method for the Stats class reverses the ordering of the basic list within the object. Note that by default ascending vs descending order is properly selected based on the sort key of choice.

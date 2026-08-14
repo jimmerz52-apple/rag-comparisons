@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseTransport.is_closing
+
+BaseTransport.is_closing()  
+Return True if the transport is closing or is closed.

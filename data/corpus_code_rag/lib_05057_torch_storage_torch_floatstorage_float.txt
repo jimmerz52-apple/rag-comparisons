@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.float
+
+float()  
+Casts this storage to float type

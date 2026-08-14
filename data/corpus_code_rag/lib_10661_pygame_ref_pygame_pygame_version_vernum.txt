@@ -1,0 +1,8 @@
+# pygame.ref.pygame#pygame.version.vernum
+
+pygame.version.vernum 
+ tupled integers of the version vernum = (1, 5, 3)  This version information can easily be compared with other version numbers of the same format. An example of checking pygame version numbers would look like this: if pygame.version.vernum < (1, 5):
+    print('Warning, older version of pygame (%s)' %  pygame.version.ver)
+    disable_advanced_features = True  New in pygame 1.9.6: Attributes major, minor, and patch.  vernum.major == vernum[0]
+vernum.minor == vernum[1]
+vernum.patch == vernum[2]  Changed in pygame 1.9.6: str(pygame.version.vernum) returns a string like "2.0.0" instead of "(2, 0, 0)".   Changed in pygame 1.9.6: repr(pygame.version.vernum) returns a string like "PygameVersion(major=2, minor=0, patch=0)" instead of "(2, 0, 0)".

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_markerfacecoloralt
+
+set_markerfacecoloralt(fc)[source]
+ 
+Set the alternate marker face color.  Parameters 
+ 
+fccolor

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.mlpregressor#sklearn.neural_network.MLPRegressor.predict
+
+predict(X) [source]
+ 
+Predict using the multi-layer perceptron model.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input data.    Returns 
+ 
+yndarray of shape (n_samples, n_outputs) 
+
+The predicted values.

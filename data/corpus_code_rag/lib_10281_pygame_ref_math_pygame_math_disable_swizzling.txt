@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.disable_swizzling
+
+pygame.math.disable_swizzling() 
+ globally disables swizzling for vectors. disable_swizzling() -> None  DEPRECATED: Not needed anymore. Will be removed in a later version. Disables swizzling for all vectors until enable_swizzling() is called. By default swizzling is disabled.

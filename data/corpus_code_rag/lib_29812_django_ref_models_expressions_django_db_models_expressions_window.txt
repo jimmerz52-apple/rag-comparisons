@@ -1,0 +1,9 @@
+# django.ref.models.expressions#django.db.models.expressions.Window
+
+class Window(expression, partition_by=None, order_by=None, frame=None, output_field=None)  
+ 
+filterable  
+Defaults to False. The SQL standard disallows referencing window functions in the WHERE clause and Django raises an exception when constructing a QuerySet that would do that. 
+  
+template  
+Defaults to %(expression)s OVER (%(window)s)'. If only the expression argument is provided, the window clause will be blank.

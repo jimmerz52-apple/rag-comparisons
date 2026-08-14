@@ -1,0 +1,8 @@
+# 723
+Task: 723
+
+# Write a function to count the same pair in two given lists using map function.
+from operator import eq
+def count_same_pair(nums1, nums2):
+    result = sum(map(eq, nums1, nums2))
+    return result

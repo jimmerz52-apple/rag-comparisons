@@ -1,0 +1,4 @@
+# python.library.stdtypes#frozenset.clear
+
+clear()  
+Remove all elements from the set.

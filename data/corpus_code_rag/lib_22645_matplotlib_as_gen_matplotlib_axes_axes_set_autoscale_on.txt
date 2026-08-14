@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_autoscale_on
+
+matplotlib.axes.Axes.set_autoscale_on   Axes.set_autoscale_on(b)[source]
+ 
+Set whether autoscaling is applied to each axis on the next draw or call to Axes.autoscale_view.  Parameters 
+ 
+bbool
+
+   
+  Examples using matplotlib.axes.Axes.set_autoscale_on
+ 
+   Resampling Data

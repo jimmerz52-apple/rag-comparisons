@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.MicrosecondLocator.set_data_interval
+
+set_data_interval(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

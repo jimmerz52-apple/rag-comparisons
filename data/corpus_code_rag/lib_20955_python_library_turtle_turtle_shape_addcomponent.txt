@@ -1,0 +1,12 @@
+# python.library.turtle#turtle.Shape.addcomponent
+
+addcomponent(poly, fill, outline=None)  
+ Parameters 
+ 
+poly – a polygon, i.e. a tuple of pairs of numbers 
+fill – a color the poly will be filled with 
+outline – a color for the poly’s outline (if given)    Example: >>> poly = ((0,0),(10,-5),(0,10),(-10,-5))
+>>> s = Shape("compound")
+>>> s.addcomponent(poly, "red", "blue")
+>>> # ... add more components and then use register_shape()
+ See Compound shapes.

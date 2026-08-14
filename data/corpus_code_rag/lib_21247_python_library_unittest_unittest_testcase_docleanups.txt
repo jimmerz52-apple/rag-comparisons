@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.doCleanups
+
+doCleanups()  
+This method is called unconditionally after tearDown(), or after setUp() if setUp() raises an exception. It is responsible for calling all the cleanup functions added by addCleanup(). If you need cleanup functions to be called prior to tearDown() then you can call doCleanups() yourself. doCleanups() pops methods off the stack of cleanup functions one at a time, so it can be called at any time.  New in version 3.1.

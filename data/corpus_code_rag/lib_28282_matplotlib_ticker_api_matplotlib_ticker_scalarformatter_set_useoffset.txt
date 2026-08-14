@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.set_useOffset
+
+set_useOffset(val)[source]
+ 
+Set whether to use offset notation. When formatting a set numbers whose value is large compared to their range, the formatter can separate an additive constant. This can shorten the formatted numbers so that they are less likely to overlap when drawn on an axis.  Parameters 
+ 
+valbool or float
+
+
+ If False, do not use offset notation. If True (=automatic mode), use offset notation if it can make the residual numbers significantly shorter. The exact behavior is controlled by rcParams["axes.formatter.offset_threshold"] (default: 4). If a number, force an offset of the given value.      Examples With active offset notation, the values 100_000, 100_002, 100_004, 100_006, 100_008 will be formatted as 0, 2, 4, 6, 8 plus an offset +1e5, which is written to the edge of the axis.

@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.get_sdl_version
+
+pygame.get_sdl_version() 
+ get the version number of SDL get_sdl_version() -> major, minor, patch  Returns the three version numbers of the SDL library. This version is built at compile time. It can be used to detect which features may or may not be available through pygame.  New in pygame 1.7.0.

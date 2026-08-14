@@ -1,0 +1,3 @@
+# matplotlib.scale_api#matplotlib.scale.LogitScale.name
+
+name='logit'

@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Policy.raise_on_defect
+
+raise_on_defect  
+If True, any defects encountered will be raised as errors. If False (the default), defects will be passed to the register_defect() method.

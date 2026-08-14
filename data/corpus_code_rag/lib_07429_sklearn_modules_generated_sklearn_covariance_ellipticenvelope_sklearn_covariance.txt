@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.covariance.ellipticenvelope#sklearn.covariance.EllipticEnvelope.decision_function
+
+decision_function(X) [source]
+ 
+Compute the decision function of the given observations.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+decisionndarray of shape (n_samples,) 
+
+Decision function of the samples. It is equal to the shifted Mahalanobis distances. The threshold for being an outlier is 0, which ensures a compatibility with other outlier detection algorithms.

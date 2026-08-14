@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.SyntaxErr
+
+exception xml.dom.SyntaxErr  
+Raised when an invalid or illegal string is specified.

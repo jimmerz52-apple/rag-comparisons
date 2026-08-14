@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.ExtractError
+
+exception tarfile.ExtractError  
+Is raised for non-fatal errors when using TarFile.extract(), but only if TarFile.errorlevel== 2.

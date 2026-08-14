@@ -1,0 +1,4 @@
+# python.library.struct#struct.Struct.format
+
+format  
+The format string used to construct this Struct object.  Changed in version 3.7: The format string type is now str instead of bytes.

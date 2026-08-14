@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.aliased_name
+
+aliased_name(s)[source]
+ 
+Return 'PROPNAME or alias' if s has an alias, else return 'PROPNAME'. e.g., for the line markerfacecolor property, which has an alias, return 'markerfacecolor or mfc' and for the transform property, which does not, return 'transform'.

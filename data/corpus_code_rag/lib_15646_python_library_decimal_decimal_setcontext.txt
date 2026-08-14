@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.setcontext
+
+decimal.setcontext(c)  
+Set the current context for the active thread to c.

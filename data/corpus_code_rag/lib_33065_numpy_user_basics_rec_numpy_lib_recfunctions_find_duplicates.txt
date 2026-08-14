@@ -1,0 +1,30 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.find_duplicates
+
+numpy.lib.recfunctions.find_duplicates(a, key=None, ignoremask=True, return_index=False)[source]
+ 
+Find the duplicates in a structured array along a given key  Parameters 
+ 
+aarray-like
+
+
+Input array  
+key{string, None}, optional
+
+
+Name of the fields along which to check the duplicates. If None, the search is performed by records  
+ignoremask{True, False}, optional
+
+
+Whether masked data should be discarded or considered as duplicates.  
+return_index{False, True}, optional
+
+
+Whether to return the indices of the duplicated values.     Examples >>> from numpy.lib import recfunctions as rfn
+>>> ndtype = [('a', int)]
+>>> a = np.ma.array([1, 1, 1, 2, 2, 3, 3],
+...         mask=[0, 0, 1, 0, 0, 0, 1]).view(ndtype)
+>>> rfn.find_duplicates(a, ignoremask=True, return_index=True)
+(masked_array(data=[(1,), (1,), (2,), (2,)],
+             mask=[(False,), (False,), (False,), (False,)],
+       fill_value=(999999,),
+            dtype=[('a', '<i8')]), array([0, 1, 3, 4]))

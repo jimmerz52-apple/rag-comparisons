@@ -1,0 +1,24 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.get_fieldstructure
+
+numpy.lib.recfunctions.get_fieldstructure(adtype, lastname=None, parents=None)[source]
+ 
+Returns a dictionary with fields indexing lists of their parent fields. This function is used to simplify access to fields nested in other fields.  Parameters 
+ 
+adtypenp.dtype
+
+
+Input datatype  
+lastnameoptional
+
+
+Last processed field name (used internally during recursion).  
+parentsdictionary
+
+
+Dictionary of parent fields (used interbally during recursion).     Examples >>> from numpy.lib import recfunctions as rfn
+>>> ndtype =  np.dtype([('A', int),
+...                     ('B', [('BA', int),
+...                            ('BB', [('BBA', int), ('BBB', int)])])])
+>>> rfn.get_fieldstructure(ndtype)
+... # XXX: possible regression, order of BBA and BBB is swapped
+{'A': [], 'B': [], 'BA': ['B'], 'BB': ['B'], 'BBA': ['B', 'BB'], 'BBB': ['B', 'BB']}

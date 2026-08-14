@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Lookup.process_lhs
+
+process_lhs(compiler, connection, lhs=None)  
+Returns a tuple (lhs_string, lhs_params), as returned by compiler.compile(lhs). This method can be overridden to tune how the lhs is processed. compiler is an SQLCompiler object, to be used like compiler.compile(lhs) for compiling lhs. The connection can be used for compiling vendor specific SQL. If lhs is not None, use it as the processed lhs instead of self.lhs.

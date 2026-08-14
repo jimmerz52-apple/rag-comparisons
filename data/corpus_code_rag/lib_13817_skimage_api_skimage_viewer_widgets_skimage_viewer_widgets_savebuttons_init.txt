@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.SaveButtons.__init__
+
+__init__(name='Save to:', default_format='png') [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

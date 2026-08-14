@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.Parser.parsestr
+
+parsestr(text, headersonly=False)  
+Similar to the parse() method, except it takes a string object instead of a file-like object. Calling this method on a string is equivalent to wrapping text in a StringIO instance first and calling parse(). Optional headersonly is as with the parse() method.

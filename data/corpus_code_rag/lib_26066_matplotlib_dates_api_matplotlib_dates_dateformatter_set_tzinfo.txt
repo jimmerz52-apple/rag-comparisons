@@ -1,0 +1,3 @@
+# matplotlib.dates_api#matplotlib.dates.DateFormatter.set_tzinfo
+
+set_tzinfo(tz)[source]

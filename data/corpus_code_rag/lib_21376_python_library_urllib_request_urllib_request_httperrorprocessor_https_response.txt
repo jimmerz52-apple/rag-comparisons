@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPErrorProcessor.https_response
+
+HTTPErrorProcessor.https_response(request, response)  
+Process HTTPS error responses. The behavior is same as http_response().

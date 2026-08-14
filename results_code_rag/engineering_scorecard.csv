@@ -1,0 +1,3 @@
+label,method,mean_composite_score,usable_answer_rate,tokens_per_query,quality_per_1k_tokens,mean_query_latency_seconds,p95_query_latency_seconds,meets_latency_slo,meets_quality_bar,index_seconds
+Semantic (vector),semantic_rag,0.2702391170964139,0.85,6904.55,0.03913928019876949,2.474348618948716,5.0346823666594025,False,False,3.535680291999597
+Vector + rerank,rerank_semantic,0.30240104526187933,0.85,6817.55,0.04435626365217407,5.746949918702012,15.878483022932778,False,False,3.1692507920088246

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.bmm
+
+bmm(batch2) → Tensor  
+See torch.bmm()

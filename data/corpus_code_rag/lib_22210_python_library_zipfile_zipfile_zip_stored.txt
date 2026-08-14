@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZIP_STORED
+
+zipfile.ZIP_STORED  
+The numeric constant for an uncompressed archive member.

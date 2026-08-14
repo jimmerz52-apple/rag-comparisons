@@ -1,0 +1,4 @@
+# python.library._thread#_thread.error
+
+exception _thread.error  
+Raised on thread-specific errors.  Changed in version 3.3: This is now a synonym of the built-in RuntimeError.

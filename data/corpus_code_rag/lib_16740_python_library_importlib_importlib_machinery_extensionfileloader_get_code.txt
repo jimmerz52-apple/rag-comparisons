@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.get_code
+
+get_code(fullname)  
+Returns None as extension modules lack a code object.

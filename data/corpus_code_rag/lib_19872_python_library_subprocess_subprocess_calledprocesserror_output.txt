@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CalledProcessError.output
+
+output  
+Output of the child process if it was captured by run() or check_output(). Otherwise, None.

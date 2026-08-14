@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.GET
+
+HttpRequest.GET  
+A dictionary-like object containing all given HTTP GET parameters. See the QueryDict documentation below.

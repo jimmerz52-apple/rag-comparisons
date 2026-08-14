@@ -1,0 +1,3 @@
+# python.library.gettext#gettext.npgettext
+
+gettext.npgettext(context, singular, plural, n)

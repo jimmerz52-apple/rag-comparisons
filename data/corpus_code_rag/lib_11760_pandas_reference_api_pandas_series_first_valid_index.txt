@@ -1,0 +1,9 @@
+# pandas.reference.api.pandas.series.first_valid_index
+
+pandas.Series.first_valid_index   Series.first_valid_index()[source]
+ 
+Return index for first non-NA value or None, if no NA value is found.  Returns 
+ 
+scalar:type of index
+
+   Notes If all elements are non-NA/null, returns None. Also returns None for empty Series/DataFrame.

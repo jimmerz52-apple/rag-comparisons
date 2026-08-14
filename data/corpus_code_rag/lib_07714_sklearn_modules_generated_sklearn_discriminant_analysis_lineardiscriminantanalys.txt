@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.lineardiscriminantanalysis#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.fit
+
+fit(X, y) [source]
+ 
+ Fit LinearDiscriminantAnalysis model according to the given
+
+training data and parameters.  Changed in version 0.19: store_covariance has been moved to main constructor.   Changed in version 0.19: tol has been moved to main constructor.     Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.  
+yarray-like of shape (n_samples,) 
+
+Target values.

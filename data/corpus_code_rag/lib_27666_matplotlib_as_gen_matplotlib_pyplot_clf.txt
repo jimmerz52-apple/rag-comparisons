@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.clf
+
+matplotlib.pyplot.clf   matplotlib.pyplot.clf()[source]
+ 
+Clear the current figure.

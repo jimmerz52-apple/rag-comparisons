@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.log1p_
+
+log1p_() → Tensor  
+In-place version of log1p()

@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.user
+
+POP3.user(username)  
+Send user command, response should indicate that a password is required.

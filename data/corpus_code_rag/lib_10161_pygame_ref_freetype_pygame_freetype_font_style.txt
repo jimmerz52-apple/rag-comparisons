@@ -1,0 +1,9 @@
+# pygame.ref.freetype#pygame.freetype.Font.style
+
+style 
+ The font's style flags style -> int  Gets or sets the default style of the Font. This default style will be used for all text rendering and size calculations unless overridden specifically a render or get_rect() call. The style value may be a bit-wise OR of one or more of the following constants: STYLE_NORMAL
+STYLE_UNDERLINE
+STYLE_OBLIQUE
+STYLE_STRONG
+STYLE_WIDE
+STYLE_DEFAULT These constants may be found on the FreeType constants module. Optionally, the default style can be modified or obtained accessing the individual style attributes (underline, oblique, strong). The STYLE_OBLIQUE and STYLE_STRONG styles are for scalable fonts only. An attempt to set either for a bitmap font raises an AttributeError. An attempt to set either for an inactive font, as returned by Font.__new__(), raises a RuntimeError. Assigning STYLE_DEFAULT to the style property leaves the property unchanged, as this property defines the default. The style property will never return STYLE_DEFAULT.

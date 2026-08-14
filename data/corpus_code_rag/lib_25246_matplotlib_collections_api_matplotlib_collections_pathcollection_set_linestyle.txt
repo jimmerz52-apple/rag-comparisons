@@ -1,0 +1,16 @@
+# matplotlib.collections_api#matplotlib.collections.PathCollection.set_linestyle
+
+set_linestyle(ls)[source]
+ 
+Set the linestyle(s) for the collection.   
+linestyle description   
+'-' or 'solid' solid line  
+'--' or 'dashed' dashed line  
+'-.' or 'dashdot' dash-dotted line  
+':' or 'dotted' dotted line   Alternatively a dash tuple of the following form can be provided: (offset, onoffseq),
+ where onoffseq is an even length tuple of on and off ink in points.  Parameters 
+ 
+lsstr or tuple or list thereof
+
+
+Valid values for individual linestyles include {'-', '--', '-.', ':', '', (offset, on-off-seq)}. See Line2D.set_linestyle for a complete description.

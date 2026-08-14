@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.have_units
+
+matplotlib.axes.Axes.have_units   Axes.have_units()[source]
+ 
+Return whether units are set on any axis.

@@ -1,0 +1,7 @@
+# torch.generated.torch.generator#torch.Generator.get_state
+
+get_state() → Tensor  
+Returns the Generator state as a torch.ByteTensor.  Returns 
+A torch.ByteTensor which contains all the necessary bits to restore a Generator to a specific point in time.  Return type 
+Tensor   Example: >>> g_cpu = torch.Generator()
+>>> g_cpu.get_state()

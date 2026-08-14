@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.distribution.Distribution.rsample
+
+rsample(sample_shape=torch.Size([])) [source]
+ 
+Generates a sample_shape shaped reparameterized sample or sample_shape shaped batch of reparameterized samples if the distribution parameters are batched.

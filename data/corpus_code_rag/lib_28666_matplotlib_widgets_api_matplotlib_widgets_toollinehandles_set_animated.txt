@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolLineHandles.set_animated
+
+set_animated(value)[source]
+ 
+Set the animated state of the handles artist.

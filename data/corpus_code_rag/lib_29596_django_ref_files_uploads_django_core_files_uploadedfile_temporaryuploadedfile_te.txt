@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.TemporaryUploadedFile.temporary_file_path
+
+TemporaryUploadedFile.temporary_file_path()  
+Returns the full path to the temporary uploaded file.

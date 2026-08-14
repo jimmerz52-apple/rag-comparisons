@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Style.element_names
+
+element_names()  
+Returns the list of elements defined in the current theme.

@@ -1,0 +1,7 @@
+# flask.api.index#flask.Flask.process_response
+
+process_response(response)  
+Can be overridden in order to modify the response object before it’s sent to the WSGI server. By default this will call all the after_request() decorated functions.  Changelog Changed in version 0.5: As of Flask 0.5 the functions registered for after request execution are called in reverse order of registration.   Parameters 
+response (flask.wrappers.Response) – a response_class object.  Returns 
+a new response object or the same, has to be an instance of response_class.  Return type 
+flask.wrappers.Response

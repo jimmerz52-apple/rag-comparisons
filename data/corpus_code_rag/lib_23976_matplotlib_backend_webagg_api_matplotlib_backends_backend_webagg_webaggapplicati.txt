@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.WebAggApplication.WebSocket.open
+
+open(fignum)[source]
+ 
+Invoked when a new WebSocket is opened. The arguments to open are extracted from the tornado.web.URLSpec regular expression, just like the arguments to tornado.web.RequestHandler.get. open may be a coroutine. on_message will not be called until open has returned.  Changed in version 5.1: open may be a coroutine.

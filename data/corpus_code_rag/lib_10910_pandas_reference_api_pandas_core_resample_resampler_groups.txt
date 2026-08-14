@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.core.resample.resampler.groups
+
+pandas.core.resample.Resampler.groups   propertyResampler.groups
+ 
+Dict {group name -> group labels}.

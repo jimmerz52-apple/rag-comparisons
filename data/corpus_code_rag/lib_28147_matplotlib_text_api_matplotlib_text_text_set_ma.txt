@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_ma
+
+set_ma(align)[source]
+ 
+Alias for set_multialignment.

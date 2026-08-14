@@ -1,0 +1,5 @@
+# torch.distributed#torch.distributed.Backend
+
+class torch.distributed.Backend [source]
+ 
+An enum-like class of available backends: GLOO, NCCL, MPI, and other registered backends. The values of this class are lowercase strings, e.g., "gloo". They can be accessed as attributes, e.g., Backend.NCCL. This class can be directly called to parse the string, e.g., Backend(backend_str) will check if backend_str is valid, and return the parsed lowercase string if so. It also accepts uppercase strings, e.g., Backend("GLOO") returns "gloo".  Note The entry Backend.UNDEFINED is present but only used as initial value of some fields. Users should neither use it directly nor assume its existence.

@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.ParseFlags
+
+imaplib.ParseFlags(flagstr)  
+Converts an IMAP4 FLAGS response to a tuple of individual flags.

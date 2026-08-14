@@ -1,0 +1,4 @@
+# python.library.copy#copy.copy
+
+copy.copy(x)  
+Return a shallow copy of x.

@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.covariance.ellipticenvelope#sklearn.covariance.EllipticEnvelope.fit_predict
+
+fit_predict(X, y=None) [source]
+ 
+Perform fit on X and returns labels for X. Returns -1 for outliers and 1 for inliers.  Parameters 
+ 
+X{array-like, sparse matrix, dataframe} of shape (n_samples, n_features) 
+
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+yndarray of shape (n_samples,) 
+
+1 for inliers, -1 for outliers.

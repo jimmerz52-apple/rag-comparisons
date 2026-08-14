@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.Process.terminate
+
+terminate()  
+Stop the child process. On POSIX systems this method sends signal.SIGTERM to the child process. On Windows the Win32 API function TerminateProcess() is called to stop the child process.

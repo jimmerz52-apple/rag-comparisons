@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.patches.polygon#matplotlib.patches.Polygon.get_xy
+
+get_xy()[source]
+ 
+Get the vertices of the path.  Returns 
+ (N, 2) numpy array
+
+The coordinates of the vertices.

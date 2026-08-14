@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.locatorhm#mpl_toolkits.axisartist.angle_helper.LocatorHM.__call__
+
+__call__(v1, v2)[source]
+ 
+Call self as a function.

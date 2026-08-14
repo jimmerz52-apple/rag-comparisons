@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.defaults
+
+defaults()  
+Return a dictionary containing the instance-wide defaults.

@@ -1,0 +1,5 @@
+# matplotlib.backend_mixed_api#matplotlib.backends.backend_mixed.MixedModeRenderer.stop_rasterizing
+
+stop_rasterizing()[source]
+ 
+Exit "raster" mode. All of the drawing that was done since the last start_rasterizing call will be copied to the vector backend by calling draw_image.

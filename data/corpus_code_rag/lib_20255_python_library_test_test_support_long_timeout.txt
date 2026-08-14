@@ -1,0 +1,4 @@
+# python.library.test#test.support.LONG_TIMEOUT
+
+test.support.LONG_TIMEOUT  
+Timeout in seconds to detect when a test hangs. It is long enough to reduce the risk of test failure on the slowest Python buildbots. It should not be used to mark a test as failed if the test takes “too long”. The timeout value depends on the regrtest --timeout command line option. Its default value is 5 minutes. See also LOOPBACK_TIMEOUT, INTERNET_TIMEOUT and SHORT_TIMEOUT.

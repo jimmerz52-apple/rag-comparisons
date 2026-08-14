@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.preprocessing.polynomialfeatures#sklearn.preprocessing.PolynomialFeatures.get_feature_names
+
+get_feature_names(input_features=None) [source]
+ 
+Return feature names for output features  Parameters 
+ 
+input_featureslist of str of shape (n_features,), default=None 
+
+String names for input features if available. By default, “x0”, “x1”, … “xn_features” is used.    Returns 
+ 
+output_feature_nameslist of str of shape (n_output_features,)

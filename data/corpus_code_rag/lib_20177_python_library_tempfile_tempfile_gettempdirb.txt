@@ -1,0 +1,4 @@
+# python.library.tempfile#tempfile.gettempdirb
+
+tempfile.gettempdirb()  
+Same as gettempdir() but the return value is in bytes.  New in version 3.5.

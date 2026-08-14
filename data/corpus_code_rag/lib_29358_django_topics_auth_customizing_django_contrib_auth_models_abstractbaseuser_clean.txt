@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser.clean
+
+clean()  
+Normalizes the username by calling normalize_username(). If you override this method, be sure to call super() to retain the normalization.

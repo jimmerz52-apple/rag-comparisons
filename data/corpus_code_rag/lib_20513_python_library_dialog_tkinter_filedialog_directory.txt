@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.Directory
+
+class tkinter.filedialog.Directory(master=None, **options)  
+Create a dialog prompting the user to select a directory.

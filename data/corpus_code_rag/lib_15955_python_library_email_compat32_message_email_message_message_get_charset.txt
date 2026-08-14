@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get_charset
+
+get_charset()  
+Return the Charset instance associated with the message’s payload. This is a legacy method. On the EmailMessage class it always returns None.

@@ -1,0 +1,24 @@
+# skimage.api.skimage.color#skimage.color.rgba2rgb
+
+skimage.color.rgba2rgb(rgba, background=(1, 1, 1)) [source]
+ 
+RGBA to RGB conversion using alpha blending [1].  Parameters 
+ 
+rgba(…, 4) array_like 
+
+The image in RGBA format. Final dimension denotes channels.  
+backgroundarray_like 
+
+The color of the background to blend the image with (3 floats between 0 to 1 - the RGB value of the background).    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in RGB format. Same dimensions as input.    Raises 
+ ValueError
+
+If rgba is not at least 2-D with shape (…, 4).     References  
+1(1,2)  
+https://en.wikipedia.org/wiki/Alpha_compositing#Alpha_blending   Examples >>> from skimage import color
+>>> from skimage import data
+>>> img_rgba = data.logo()
+>>> img_rgb = color.rgba2rgb(img_rgba)

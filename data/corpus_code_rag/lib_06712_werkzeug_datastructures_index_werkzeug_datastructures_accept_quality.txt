@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Accept.quality
+
+quality(key)  
+Returns the quality of the key.  Changelog New in version 0.6: In previous versions you had to use the item-lookup syntax (eg: obj[key] instead of obj.quality(key))

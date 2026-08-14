@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.apps.AdminConfig
+
+class apps.AdminConfig  
+This is the default AppConfig class for the admin. It calls autodiscover() when Django starts.

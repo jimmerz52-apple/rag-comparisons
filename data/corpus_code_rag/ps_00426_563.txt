@@ -1,0 +1,7 @@
+# 563
+Task: 563
+
+# Write a function to extract values between quotation marks of a string.
+import re
+def extract_values(text):
+ return (re.findall(r'"(.*?)"', text))

@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_UID
+
+stat.ST_UID  
+User id of the owner.

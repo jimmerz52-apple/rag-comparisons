@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.pyplot.sci
+
+matplotlib.pyplot.sci   matplotlib.pyplot.sci(im)[source]
+ 
+Set the current image. This image will be the target of colormap functions like viridis, and other functions such as clim. The current image is an attribute of the current Axes. 
+  Examples using matplotlib.pyplot.sci
+ 
+   Line Collection

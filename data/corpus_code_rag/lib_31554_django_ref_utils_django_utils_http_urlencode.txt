@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.http.urlencode
+
+urlencode(query, doseq=False) [source]
+ 
+A version of Python’s urllib.parse.urlencode() function that can operate on MultiValueDict and non-string values.

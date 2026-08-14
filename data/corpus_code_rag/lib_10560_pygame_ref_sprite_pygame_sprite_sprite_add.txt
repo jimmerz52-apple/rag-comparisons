@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Sprite.add
+
+add() 
+ add the sprite to groups add(*groups) -> None  Any number of Group instances can be passed as arguments. The Sprite will be added to the Groups it is not already a member of.

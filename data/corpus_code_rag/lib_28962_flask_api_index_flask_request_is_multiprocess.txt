@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.is_multiprocess
+
+is_multiprocess  
+boolean that is True if the application is served by a WSGI server that spawns multiple processes.

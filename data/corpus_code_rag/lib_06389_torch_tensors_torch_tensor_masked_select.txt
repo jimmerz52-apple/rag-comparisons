@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.masked_select
+
+masked_select(mask) → Tensor  
+See torch.masked_select()

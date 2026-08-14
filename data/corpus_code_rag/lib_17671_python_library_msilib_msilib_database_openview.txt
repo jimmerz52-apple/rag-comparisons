@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Database.OpenView
+
+Database.OpenView(sql)  
+Return a view object, by calling MSIDatabaseOpenView(). sql is the SQL statement to execute.

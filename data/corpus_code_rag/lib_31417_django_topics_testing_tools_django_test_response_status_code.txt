@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Response.status_code
+
+status_code  
+The HTTP status of the response, as an integer. For a full list of defined codes, see the IANA status code registry.

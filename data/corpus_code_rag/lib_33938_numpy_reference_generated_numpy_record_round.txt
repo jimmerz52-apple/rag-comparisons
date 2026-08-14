@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.round
+
+numpy.record.round method   record.round()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.round.

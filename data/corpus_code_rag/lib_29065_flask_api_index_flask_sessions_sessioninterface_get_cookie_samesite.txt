@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.SessionInterface.get_cookie_samesite
+
+get_cookie_samesite(app)  
+Return 'Strict' or 'Lax' if the cookie should use the SameSite attribute. This currently just returns the value of the SESSION_COOKIE_SAMESITE setting.  Parameters 
+app (Flask) –   Return type 
+str

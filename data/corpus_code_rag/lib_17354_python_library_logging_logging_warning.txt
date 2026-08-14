@@ -1,0 +1,4 @@
+# python.library.logging#logging.warning
+
+logging.warning(msg, *args, **kwargs)  
+Logs a message with level WARNING on the root logger. The arguments are interpreted as for debug().  Note There is an obsolete function warn which is functionally identical to warning. As warn is deprecated, please do not use it - use warning instead.

@@ -1,0 +1,22 @@
+# skimage.api.skimage.color#skimage.color.rgb2gray
+
+skimage.color.rgb2gray(rgb) [source]
+ 
+Compute luminance of an RGB image.  Parameters 
+ 
+rgb(…, 3) array_like 
+
+The image in RGB format. Final dimension denotes channels.    Returns 
+ 
+outndarray 
+
+The luminance image - an array which is the same size as the input array, but with the channel dimension removed.    Raises 
+ ValueError
+
+If rgb is not at least 2-D with shape (…, 3).     Notes The weights used in this conversion are calibrated for contemporary CRT phosphors: Y = 0.2125 R + 0.7154 G + 0.0721 B
+ If there is an alpha channel present, it is ignored. References  
+1  
+http://poynton.ca/PDFs/ColorFAQ.pdf   Examples >>> from skimage.color import rgb2gray
+>>> from skimage import data
+>>> img = data.astronaut()
+>>> img_gray = rgb2gray(img)

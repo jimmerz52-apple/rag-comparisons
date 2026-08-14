@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Transformer.transform
+
+transform() [source]
+ 
+Transform self.module and return the transformed GraphModule.

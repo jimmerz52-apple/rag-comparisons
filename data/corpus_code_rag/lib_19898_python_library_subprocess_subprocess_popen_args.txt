@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.args
+
+Popen.args  
+The args argument as it was passed to Popen – a sequence of program arguments or else a single string.  New in version 3.3.

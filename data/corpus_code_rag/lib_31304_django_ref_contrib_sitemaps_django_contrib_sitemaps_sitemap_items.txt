@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.items
+
+items  
+Required. A method that returns a sequence or QuerySet of objects. The framework doesn’t care what type of objects they are; all that matters is that these objects get passed to the location(), lastmod(), changefreq() and priority() methods.

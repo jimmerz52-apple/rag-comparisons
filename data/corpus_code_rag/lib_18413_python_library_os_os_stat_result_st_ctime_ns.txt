@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_ctime_ns
+
+st_ctime_ns  
+Platform dependent:  the time of most recent metadata change on Unix, the time of creation on Windows, expressed in nanoseconds as an integer.

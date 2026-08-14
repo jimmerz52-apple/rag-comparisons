@@ -1,0 +1,5 @@
+# python.library.unittest#unittest.TestCase.assertIs
+
+assertIs(first, second, msg=None)  
+assertIsNot(first, second, msg=None)  
+Test that first and second are (or are not) the same object.  New in version 3.1.

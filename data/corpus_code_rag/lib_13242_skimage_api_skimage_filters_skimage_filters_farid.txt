@@ -1,0 +1,25 @@
+# skimage.api.skimage.filters#skimage.filters.farid
+
+skimage.filters.farid(image, *, mask=None) [source]
+ 
+Find the edge magnitude using the Farid transform.  Parameters 
+ 
+image2-D array 
+
+Image to process.  
+mask2-D array, optional 
+
+An optional mask to limit the application to a certain area. Note that pixels surrounding masked regions are also masked to prevent masked regions from affecting the result.    Returns 
+ 
+output2-D array 
+
+The Farid edge map.      See also  
+sobel, prewitt, canny 
+  Notes Take the square root of the sum of the squares of the horizontal and vertical derivatives to get a magnitude that is somewhat insensitive to direction. Similar to the Scharr operator, this operator is designed with a rotation invariance constraint. References  
+1  
+Farid, H. and Simoncelli, E. P., “Differentiation of discrete multidimensional signals”, IEEE Transactions on Image Processing 13(4): 496-508, 2004. DOI:10.1109/TIP.2004.823819  
+2  
+Wikipedia, “Farid and Simoncelli Derivatives.” Available at: <https://en.wikipedia.org/wiki/Image_derivatives#Farid_and_Simoncelli_Derivatives>   Examples >>> from skimage import data
+>>> camera = data.camera()
+>>> from skimage import filters
+>>> edges = filters.farid(camera)

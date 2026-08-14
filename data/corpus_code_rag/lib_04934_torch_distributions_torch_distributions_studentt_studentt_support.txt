@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.studentT.StudentT.support
+
+support = Real()

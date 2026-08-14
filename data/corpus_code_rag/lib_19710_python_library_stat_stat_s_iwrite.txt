@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IWRITE
+
+stat.S_IWRITE  
+Unix V7 synonym for S_IWUSR.

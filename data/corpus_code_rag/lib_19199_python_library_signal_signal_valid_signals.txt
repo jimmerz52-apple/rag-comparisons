@@ -1,0 +1,4 @@
+# python.library.signal#signal.valid_signals
+
+signal.valid_signals()  
+Return the set of valid signal numbers on this platform. This can be less than range(1, NSIG) if some signals are reserved by the system for internal use.  New in version 3.8.

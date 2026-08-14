@@ -1,0 +1,4 @@
+# python.library.gzip#gzip.decompress
+
+gzip.decompress(data)  
+Decompress the data, returning a bytes object containing the uncompressed data.  New in version 3.2.

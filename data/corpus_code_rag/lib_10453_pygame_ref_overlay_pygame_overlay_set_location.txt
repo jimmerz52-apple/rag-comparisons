@@ -1,0 +1,4 @@
+# pygame.ref.overlay#pygame.Overlay.set_location
+
+set_location() 
+ control where the overlay is displayed set_location(rect) -> None  Set the location for the overlay. The overlay will always be shown relative to the main display Surface. This does not actually redraw the overlay, it will be updated on the next call to Overlay.display().

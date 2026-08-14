@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.rotation
+
+rotation 
+ text rotation in degrees counterclockwise rotation -> int  Gets or sets the baseline angle of the rendered text. The angle is represented as integer degrees. The default angle is 0, with horizontal text rendered along the X-axis, and vertical text along the Y-axis. A positive value rotates these axes counterclockwise that many degrees. A negative angle corresponds to a clockwise rotation. The rotation value is normalized to a value within the range 0 to 359 inclusive (eg. 390 -> 390 - 360 -> 30, -45 -> 360 + -45 -> 315, 720 -> 720 - (2 * 360) -> 0). Only scalable (outline) fonts can be rotated. An attempt to change the rotation of a bitmap font raises an AttributeError. An attempt to change the rotation of an inactive font instance, as returned by Font.__new__(), raises a RuntimeError.

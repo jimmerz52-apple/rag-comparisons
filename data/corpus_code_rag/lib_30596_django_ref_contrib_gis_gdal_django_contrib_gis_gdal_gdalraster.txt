@@ -1,0 +1,187 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster
+
+class GDALRaster(ds_input, write=False)  
+The constructor for GDALRaster accepts two parameters. The first parameter defines the raster source, and the second parameter defines if a raster should be opened in write mode. For newly-created rasters, the second parameter is ignored and the new raster is always created in write mode. The first parameter can take three forms: a string representing a file path (filesystem or GDAL virtual filesystem), a dictionary with values defining a new raster, or a bytes object representing a raster file. If the input is a file path, the raster is opened from there. If the input is raw data in a dictionary, the parameters width, height, and srid are required. If the input is a bytes object, it will be opened using a GDAL virtual filesystem. For a detailed description of how to create rasters using dictionary input, see Creating rasters from data. For a detailed description of how to create rasters in the virtual filesystem, see Using GDAL’s Virtual Filesystem. The following example shows how rasters can be created from different input sources (using the sample data from the GeoDjango tests; see also the Sample Data section). >>> from django.contrib.gis.gdal import GDALRaster
+>>> rst = GDALRaster('/path/to/your/raster.tif', write=False)
+>>> rst.name
+'/path/to/your/raster.tif'
+>>> rst.width, rst.height  # This file has 163 x 174 pixels
+(163, 174)
+>>> rst = GDALRaster({  # Creates an in-memory raster
+...     'srid': 4326,
+...     'width': 4,
+...     'height': 4,
+...     'datatype': 1,
+...     'bands': [{
+...         'data': (2, 3),
+...         'offset': (1, 1),
+...         'size': (2, 2),
+...         'shape': (2, 1),
+...         'nodata_value': 5,
+...     }]
+... })
+>>> rst.srs.srid
+4326
+>>> rst.width, rst.height
+(4, 4)
+>>> rst.bands[0].data()
+array([[5, 5, 5, 5],
+       [5, 2, 3, 5],
+       [5, 2, 3, 5],
+       [5, 5, 5, 5]], dtype=uint8)
+>>> rst_file = open('/path/to/your/raster.tif', 'rb')
+>>> rst_bytes = rst_file.read()
+>>> rst = GDALRaster(rst_bytes)
+>>> rst.is_vsi_based
+True
+>>> rst.name  # Stored in a random path in the vsimem filesystem.
+'/vsimem/da300bdb-129d-49a8-b336-e410a9428dad'
+  Changed in Django 4.0: Creating rasters in any GDAL virtual filesystem was allowed.   
+name  
+The name of the source which is equivalent to the input file path or the name provided upon instantiation. >>> GDALRaster({'width': 10, 'height': 10, 'name': 'myraster', 'srid': 4326}).name
+'myraster'
+ 
+  
+driver  
+The name of the GDAL driver used to handle the input file. For GDALRasters created from a file, the driver type is detected automatically. The creation of rasters from scratch is an in-memory raster by default ('MEM'), but can be altered as needed. For instance, use GTiff for a GeoTiff file. For a list of file types, see also the GDAL Raster Formats list. An in-memory raster is created through the following example: >>> GDALRaster({'width': 10, 'height': 10, 'srid': 4326}).driver.name
+'MEM'
+ A file based GeoTiff raster is created through the following example: >>> import tempfile
+>>> rstfile = tempfile.NamedTemporaryFile(suffix='.tif')
+>>> rst = GDALRaster({'driver': 'GTiff', 'name': rstfile.name, 'srid': 4326,
+...                   'width': 255, 'height': 255, 'nr_of_bands': 1})
+>>> rst.name
+'/tmp/tmp7x9H4J.tif'           # The exact filename will be different on your computer
+>>> rst.driver.name
+'GTiff'
+ 
+  
+width  
+The width of the source in pixels (X-axis). >>> GDALRaster({'width': 10, 'height': 20, 'srid': 4326}).width
+10
+ 
+  
+height  
+The height of the source in pixels (Y-axis). >>> GDALRaster({'width': 10, 'height': 20, 'srid': 4326}).height
+20
+ 
+  
+srs  
+The spatial reference system of the raster, as a SpatialReference instance. The SRS can be changed by setting it to an other SpatialReference or providing any input that is accepted by the SpatialReference constructor. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.srs.srid
+4326
+>>> rst.srs = 3086
+>>> rst.srs.srid
+3086
+ 
+  
+srid  
+The Spatial Reference System Identifier (SRID) of the raster. This property is a shortcut to getting or setting the SRID through the srs attribute. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.srid
+4326
+>>> rst.srid = 3086
+>>> rst.srid
+3086
+>>> rst.srs.srid  # This is equivalent
+3086
+ 
+  
+geotransform  
+The affine transformation matrix used to georeference the source, as a tuple of six coefficients which map pixel/line coordinates into georeferenced space using the following relationship: Xgeo = GT(0) + Xpixel*GT(1) + Yline*GT(2)
+Ygeo = GT(3) + Xpixel*GT(4) + Yline*GT(5)
+ The same values can be retrieved by accessing the origin (indices 0 and 3), scale (indices 1 and 5) and skew (indices 2 and 4) properties. The default is [0.0, 1.0, 0.0, 0.0, 0.0, -1.0]. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.geotransform
+[0.0, 1.0, 0.0, 0.0, 0.0, -1.0]
+ 
+  
+origin  
+Coordinates of the top left origin of the raster in the spatial reference system of the source, as a point object with x and y members. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.origin
+[0.0, 0.0]
+>>> rst.origin.x = 1
+>>> rst.origin
+[1.0, 0.0]
+ 
+  
+scale  
+Pixel width and height used for georeferencing the raster, as a point object with x and y members. See geotransform for more information. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.scale
+[1.0, -1.0]
+>>> rst.scale.x = 2
+>>> rst.scale
+[2.0, -1.0]
+ 
+  
+skew  
+Skew coefficients used to georeference the raster, as a point object with x and y members. In case of north up images, these coefficients are both 0. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.skew
+[0.0, 0.0]
+>>> rst.skew.x = 3
+>>> rst.skew
+[3.0, 0.0]
+ 
+  
+extent  
+Extent (boundary values) of the raster source, as a 4-tuple (xmin, ymin, xmax, ymax) in the spatial reference system of the source. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.extent
+(0.0, -20.0, 10.0, 0.0)
+>>> rst.origin.x = 100
+>>> rst.extent
+(100.0, -20.0, 110.0, 0.0)
+ 
+  
+bands  
+List of all bands of the source, as GDALBand instances. >>> rst = GDALRaster({"width": 1, "height": 2, 'srid': 4326,
+...                   "bands": [{"data": [0, 1]}, {"data": [2, 3]}]})
+>>> len(rst.bands)
+2
+>>> rst.bands[1].data()
+array([[ 2.,  3.]], dtype=float32)
+ 
+  
+warp(ds_input, resampling='NearestNeighbour', max_error=0.0)  
+Returns a warped version of this raster. The warping parameters can be specified through the ds_input argument. The use of ds_input is analogous to the corresponding argument of the class constructor. It is a dictionary with the characteristics of the target raster. Allowed dictionary key values are width, height, SRID, origin, scale, skew, datatype, driver, and name (filename). By default, the warp functions keeps most parameters equal to the values of the original source raster, so only parameters that should be changed need to be specified. Note that this includes the driver, so for file-based rasters the warp function will create a new raster on disk. The only parameter that is set differently from the source raster is the name. The default value of the raster name is the name of the source raster appended with '_copy' + source_driver_name. For file-based rasters it is recommended to provide the file path of the target raster. The resampling algorithm used for warping can be specified with the resampling argument. The default is NearestNeighbor, and the other allowed values are Bilinear, Cubic, CubicSpline, Lanczos, Average, and Mode. The max_error argument can be used to specify the maximum error measured in input pixels that is allowed in approximating the transformation. The default is 0.0 for exact calculations. For users familiar with GDAL, this function has a similar functionality to the gdalwarp command-line utility. For example, the warp function can be used for aggregating a raster to the double of its original pixel scale: >>> rst = GDALRaster({
+...     "width": 6, "height": 6, "srid": 3086,
+...     "origin": [500000, 400000],
+...     "scale": [100, -100],
+...     "bands": [{"data": range(36), "nodata_value": 99}]
+... })
+>>> target = rst.warp({"scale": [200, -200], "width": 3, "height": 3})
+>>> target.bands[0].data()
+array([[  7.,   9.,  11.],
+       [ 19.,  21.,  23.],
+       [ 31.,  33.,  35.]], dtype=float32)
+ 
+  
+transform(srs, driver=None, name=None, resampling='NearestNeighbour', max_error=0.0)  
+Transforms this raster to a different spatial reference system (srs), which may be a SpatialReference object, or any other input accepted by SpatialReference (including spatial reference WKT and PROJ strings, or an integer SRID). It calculates the bounds and scale of the current raster in the new spatial reference system and warps the raster using the warp function. By default, the driver of the source raster is used and the name of the raster is the original name appended with '_copy' + source_driver_name. A different driver or name can be specified with the driver and name arguments. The default resampling algorithm is NearestNeighbour but can be changed using the resampling argument. The default maximum allowed error for resampling is 0.0 and can be changed using the max_error argument. Consult the warp documentation for detail on those arguments. >>> rst = GDALRaster({
+...     "width": 6, "height": 6, "srid": 3086,
+...     "origin": [500000, 400000],
+...     "scale": [100, -100],
+...     "bands": [{"data": range(36), "nodata_value": 99}]
+... })
+>>> target_srs = SpatialReference(4326)
+>>> target = rst.transform(target_srs)
+>>> target.origin
+[-82.98492744885776, 27.601924753080144]
+  Changed in Django 3.2: Support for SpatialReference srs was added  
+  
+info  
+Returns a string with a summary of the raster. This is equivalent to the gdalinfo command line utility. 
+  
+metadata  
+The metadata of this raster, represented as a nested dictionary. The first-level key is the metadata domain. The second-level contains the metadata item names and values from each domain. To set or update a metadata item, pass the corresponding metadata item to the method using the nested structure described above. Only keys that are in the specified dictionary are updated; the rest of the metadata remains unchanged. To remove a metadata item, use None as the metadata value. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.metadata
+{}
+>>> rst.metadata = {'DEFAULT': {'OWNER': 'Django', 'VERSION': '1.0'}}
+>>> rst.metadata
+{'DEFAULT': {'OWNER': 'Django', 'VERSION': '1.0'}}
+>>> rst.metadata = {'DEFAULT': {'OWNER': None, 'VERSION': '2.0'}}
+>>> rst.metadata
+{'DEFAULT': {'VERSION': '2.0'}}
+ 
+  
+vsi_buffer  
+A bytes representation of this raster. Returns None for rasters that are not stored in GDAL’s virtual filesystem. 
+  
+is_vsi_based  
+A boolean indicating if this raster is stored in GDAL’s virtual filesystem.

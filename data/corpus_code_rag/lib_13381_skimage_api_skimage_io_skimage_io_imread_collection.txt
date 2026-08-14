@@ -1,0 +1,20 @@
+# skimage.api.skimage.io#skimage.io.imread_collection
+
+skimage.io.imread_collection(load_pattern, conserve_memory=True, plugin=None, **plugin_args) [source]
+ 
+Load a collection of images.  Parameters 
+ 
+load_patternstr or list 
+
+List of objects to load. These are usually filenames, but may vary depending on the currently active plugin. See the docstring for ImageCollection for the default behaviour of this parameter.  
+conserve_memorybool, optional 
+
+If True, never keep more than one in memory at a specific time. Otherwise, images will be cached once they are loaded.    Returns 
+ 
+icImageCollection 
+
+Collection of images.    Other Parameters 
+ 
+plugin_argskeywords 
+
+Passed to the given plugin.

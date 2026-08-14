@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertNotContains
+
+SimpleTestCase.assertNotContains(response, text, status_code=200, msg_prefix='', html=False)  
+Asserts that a response produced the given status_code and that text does not appear in its content. Set html to True to handle text as HTML. The comparison with the response content will be based on HTML semantics instead of character-by-character equality. Whitespace is ignored in most cases, attribute ordering is not significant. See assertHTMLEqual() for more details.

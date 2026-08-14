@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.Attributes.getNames
+
+Attributes.getNames()  
+Return the names of the attributes.

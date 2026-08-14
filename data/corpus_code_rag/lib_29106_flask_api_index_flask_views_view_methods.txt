@@ -1,0 +1,4 @@
+# flask.api.index#flask.views.View.methods
+
+methods: Optional[List[str]] = None  
+A list of methods this view can handle.

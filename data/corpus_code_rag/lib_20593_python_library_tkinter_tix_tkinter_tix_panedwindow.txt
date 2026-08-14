@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.PanedWindow
+
+class tkinter.tix.PanedWindow  
+The PanedWindow widget allows the user to interactively manipulate the sizes of several panes. The panes can be arranged either vertically or horizontally. The user changes the sizes of the panes by dragging the resize handle between two panes.

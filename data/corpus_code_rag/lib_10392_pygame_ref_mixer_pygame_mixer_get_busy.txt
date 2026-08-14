@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.get_busy
+
+pygame.mixer.get_busy() 
+ test if any sound is being mixed get_busy() -> bool  Returns True if the mixer is busy mixing any channels. If the mixer is idle then this return False.

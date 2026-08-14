@@ -1,0 +1,5 @@
+# torch.autograd#torch.autograd.Function.forward
+
+static forward(ctx, *args, **kwargs) [source]
+ 
+Performs the operation. This function is to be overridden by all subclasses. It must accept a context ctx as the first argument, followed by any number of arguments (tensors or other types). The context can be used to store tensors that can be then retrieved during the backward pass.

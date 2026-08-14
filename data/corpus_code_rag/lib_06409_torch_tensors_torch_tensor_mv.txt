@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.mv
+
+mv(vec) → Tensor  
+See torch.mv()

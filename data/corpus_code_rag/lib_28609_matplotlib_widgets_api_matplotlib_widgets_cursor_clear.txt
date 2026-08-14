@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.Cursor.clear
+
+clear(event)[source]
+ 
+Internal event handler to clear the cursor.

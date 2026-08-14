@@ -1,0 +1,7 @@
+# tensorflow.keras.initializers.serialize
+
+tf.keras.initializers.serialize     View source on GitHub     View aliases  Main aliases 
+tf.initializers.serialize Compat aliases for migration See Migration guide for more details. tf.compat.v1.keras.initializers.serialize  
+tf.keras.initializers.serialize(
+    initializer
+)

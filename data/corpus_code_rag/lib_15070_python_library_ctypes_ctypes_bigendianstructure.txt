@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.BigEndianStructure
+
+class ctypes.BigEndianStructure(*args, **kw)  
+Abstract base class for structures in big endian byte order.

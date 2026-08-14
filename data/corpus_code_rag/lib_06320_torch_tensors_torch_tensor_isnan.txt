@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.isnan
+
+isnan() → Tensor  
+See torch.isnan()

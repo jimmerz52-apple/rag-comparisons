@@ -1,0 +1,14 @@
+# flask.api.index#flask.Flask.url_map
+
+url_map  
+The Map for this instance. You can use this to change the routing converters after the class was created but before any routes are connected. Example: from werkzeug.routing import BaseConverter
+
+class ListConverter(BaseConverter):
+    def to_python(self, value):
+        return value.split(',')
+    def to_url(self, values):
+        return ','.join(super(ListConverter, self).to_url(value)
+                        for value in values)
+
+app = Flask(__name__)
+app.url_map.converters['list'] = ListConverter

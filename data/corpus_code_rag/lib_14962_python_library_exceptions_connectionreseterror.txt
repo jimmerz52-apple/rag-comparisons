@@ -1,0 +1,4 @@
+# python.library.exceptions#ConnectionResetError
+
+exception ConnectionResetError  
+A subclass of ConnectionError, raised when a connection is reset by the peer. Corresponds to errno ECONNRESET.

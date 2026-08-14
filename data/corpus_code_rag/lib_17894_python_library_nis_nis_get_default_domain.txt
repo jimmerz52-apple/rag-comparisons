@@ -1,0 +1,4 @@
+# python.library.nis#nis.get_default_domain
+
+nis.get_default_domain()  
+Return the system default NIS domain.

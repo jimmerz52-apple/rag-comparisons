@@ -1,0 +1,6 @@
+# python.library.asyncio-task#asyncio.as_completed
+
+asyncio.as_completed(aws, *, loop=None, timeout=None)  
+Run awaitable objects in the aws iterable concurrently. Return an iterator of coroutines. Each coroutine returned can be awaited to get the earliest next result from the iterable of the remaining awaitables. Raises asyncio.TimeoutError if the timeout occurs before all Futures are done.  Deprecated since version 3.8, will be removed in version 3.10: The loop parameter.  Example: for coro in as_completed(aws):
+    earliest_result = await coro
+    # ...

@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.AddressValueError
+
+exception ipaddress.AddressValueError(ValueError)  
+Any value error related to the address.

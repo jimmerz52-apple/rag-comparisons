@@ -1,0 +1,5 @@
+# python.library.curses#curses.window.insch
+
+window.insch(ch[, attr])  
+window.insch(y, x, ch[, attr])  
+Paint character ch at (y, x) with attributes attr, moving the line from position x right by one character.

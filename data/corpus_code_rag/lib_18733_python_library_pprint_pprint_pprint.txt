@@ -1,0 +1,13 @@
+# python.library.pprint#pprint.pprint
+
+pprint.pprint(object, stream=None, indent=1, width=80, depth=None, *, compact=False, sort_dicts=True)  
+Prints the formatted representation of object on stream, followed by a newline. If stream is None, sys.stdout is used. This may be used in the interactive interpreter instead of the print() function for inspecting values (you can even reassign print = pprint.pprint for use within a scope). indent, width, depth, compact and sort_dicts will be passed to the PrettyPrinter constructor as formatting parameters.  Changed in version 3.4: Added the compact parameter.   Changed in version 3.8: Added the sort_dicts parameter. >>> import pprint
+>>> stuff = ['spam', 'eggs', 'lumberjack', 'knights', 'ni']
+>>> stuff.insert(0, stuff)
+>>> pprint.pprint(stuff)
+[<Recursion on list with id=...>,
+ 'spam',
+ 'eggs',
+ 'lumberjack',
+ 'knights',
+ 'ni']

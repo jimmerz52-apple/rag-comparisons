@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Process.pid
+
+pid  
+Return the process ID. Before the process is spawned, this will be None.

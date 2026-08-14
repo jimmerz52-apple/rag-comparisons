@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.headers
+
+HTTPResponse.headers  
+Headers of the response in the form of an email.message.EmailMessage instance.

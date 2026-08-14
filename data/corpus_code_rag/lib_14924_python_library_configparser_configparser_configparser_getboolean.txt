@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.getboolean
+
+getboolean(section, option, *, raw=False, vars=None[, fallback])  
+A convenience method which coerces the option in the specified section to a Boolean value. Note that the accepted values for the option are '1', 'yes', 'true', and 'on', which cause this method to return True, and '0', 'no', 'false', and 'off', which cause it to return False. These string values are checked in a case-insensitive manner. Any other value will cause it to raise ValueError. See get() for explanation of raw, vars and fallback.

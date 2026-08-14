@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.rotate
+
+rotate() 
+ rotates a vector by a given angle in degrees. rotate(angle) -> Vector2  Returns a vector which has the same length as self but is rotated counterclockwise by the given angle in degrees.

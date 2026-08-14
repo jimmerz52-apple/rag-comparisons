@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.copy_properties
+
+copy_properties(gc)[source]
+ 
+Copy properties from gc to self.

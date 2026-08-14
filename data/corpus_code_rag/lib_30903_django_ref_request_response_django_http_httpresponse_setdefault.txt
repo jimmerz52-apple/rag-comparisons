@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.setdefault
+
+HttpResponse.setdefault(header, value)  
+Sets a header unless it has already been set.

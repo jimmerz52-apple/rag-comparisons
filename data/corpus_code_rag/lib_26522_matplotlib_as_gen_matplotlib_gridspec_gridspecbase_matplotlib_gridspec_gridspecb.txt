@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.set_width_ratios
+
+set_width_ratios(width_ratios)[source]
+ 
+Set the relative widths of the columns. width_ratios must be of length ncols. Each column gets a relative width of width_ratios[i] / sum(width_ratios).

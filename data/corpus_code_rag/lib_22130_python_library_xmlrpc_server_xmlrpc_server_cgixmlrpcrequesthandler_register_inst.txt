@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.CGIXMLRPCRequestHandler.register_instance
+
+CGIXMLRPCRequestHandler.register_instance(instance)  
+Register an object which is used to expose method names which have not been registered using register_function(). If instance contains a _dispatch() method, it is called with the requested method name and the parameters from the request; the return value is returned to the client as the result. If instance does not have a _dispatch() method, it is searched for an attribute matching the name of the requested method; if the requested method name contains periods, each component of the method name is searched for individually, with the effect that a simple hierarchical search is performed. The value found from this search is then called with the parameters from the request, and the return value is passed back to the client.

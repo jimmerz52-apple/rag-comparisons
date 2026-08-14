@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.dependent_property
+
+torch.distributions.constraints.dependent_property  
+alias of torch.distributions.constraints._DependentProperty

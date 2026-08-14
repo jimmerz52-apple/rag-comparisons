@@ -1,0 +1,12 @@
+# pygame.ref.image#pygame.image.tostring
+
+pygame.image.tostring() 
+ transfer image to string buffer tostring(Surface, format, flipped=False) -> string  Creates a string that can be transferred with the 'fromstring' method in other Python imaging packages. Some Python image packages prefer their images in bottom-to-top format (PyOpenGL for example). If you pass True for the flipped argument, the string buffer will be vertically flipped. The format argument is a string of one of the following values. Note that only 8-bit Surfaces can use the "P" format. The other formats will work for any Surface. Also note that other Python image packages support more formats than pygame.  
+ 
+P, 8-bit palettized Surfaces 
+RGB, 24-bit image 
+RGBX, 32-bit image with unused space 
+RGBA, 32-bit image with an alpha channel 
+ARGB, 32-bit image with alpha channel first 
+RGBA_PREMULT, 32-bit image with colors scaled by alpha channel 
+ARGB_PREMULT, 32-bit image with colors scaled by alpha channel, alpha channel first

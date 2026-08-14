@@ -1,0 +1,13 @@
+# django.ref.contrib.auth#django.contrib.auth.models.AnonymousUser
+
+class models.AnonymousUser  
+django.contrib.auth.models.AnonymousUser is a class that implements the django.contrib.auth.models.User interface, with these differences:  
+id is always None. 
+username is always the empty string. 
+get_username() always returns the empty string. 
+is_anonymous is True instead of False. 
+is_authenticated is False instead of True. 
+is_staff and is_superuser are always False. 
+is_active is always False. 
+groups and user_permissions are always empty. 
+set_password(), check_password(), save() and delete() raise NotImplementedError.

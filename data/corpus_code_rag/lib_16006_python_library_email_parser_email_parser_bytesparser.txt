@@ -1,0 +1,10 @@
+# python.library.email.parser#email.parser.BytesParser
+
+class email.parser.BytesParser(_class=None, *, policy=policy.compat32)  
+Create a BytesParser instance. The _class and policy arguments have the same meaning and semantics as the _factory and policy arguments of BytesFeedParser. Note: The policy keyword should always be specified; The default will change to email.policy.default in a future version of Python.  Changed in version 3.3: Removed the strict argument that was deprecated in 2.4. Added the policy keyword.   Changed in version 3.6: _class defaults to the policy message_factory.   
+parse(fp, headersonly=False)  
+Read all the data from the binary file-like object fp, parse the resulting bytes, and return the message object. fp must support both the readline() and the read() methods. The bytes contained in fp must be formatted as a block of RFC 5322 (or, if utf8 is True, RFC 6532) style headers and header continuation lines, optionally preceded by an envelope header. The header block is terminated either by the end of the data or by a blank line. Following the header block is the body of the message (which may contain MIME-encoded subparts, including subparts with a Content-Transfer-Encoding of 8bit). Optional headersonly is a flag specifying whether to stop parsing after reading the headers or not. The default is False, meaning it parses the entire contents of the file. 
+  
+parsebytes(bytes, headersonly=False)  
+Similar to the parse() method, except it takes a bytes-like object instead of a file-like object. Calling this method on a bytes-like object is equivalent to wrapping bytes in a BytesIO instance first and calling parse(). Optional headersonly is as with the parse() method. 
+  New in version 3.2.

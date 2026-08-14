@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.config_class
+
+config_class  
+alias of flask.config.Config

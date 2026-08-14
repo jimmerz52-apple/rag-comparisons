@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.fill
+
+numpy.record.fill method   record.fill()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.fill.

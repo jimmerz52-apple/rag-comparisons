@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LoginView.next_page
+
+next_page  
+ New in Django 4.0.  The URL to redirect to after login. Defaults to LOGIN_REDIRECT_URL.

@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.context_data
+
+SimpleTemplateResponse.context_data  
+The context data to be used when rendering the template. It must be a dict. Example: {'foo': 123}

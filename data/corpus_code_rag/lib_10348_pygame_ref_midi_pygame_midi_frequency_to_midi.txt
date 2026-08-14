@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.frequency_to_midi
+
+pygame.midi.frequency_to_midi() 
+ Converts a frequency into a MIDI note. Rounds to the closest midi note. frequency_to_midi(midi_note) -> midi_note  example: frequency_to_midi(27.5) == 21  New in pygame 1.9.5.

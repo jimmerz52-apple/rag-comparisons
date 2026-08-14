@@ -1,0 +1,8 @@
+# werkzeug.http.index#werkzeug.http.parse_range_header
+
+werkzeug.http.parse_range_header(value, make_inclusive=True)  
+Parses a range header into a Range object. If the header is missing or malformed None is returned. ranges is a list of (start, stop) tuples where the ranges are non-inclusive.  Changelog New in version 0.7.   Parameters 
+ 
+value (Optional[str]) –  
+make_inclusive (bool) –    Return type 
+Optional[werkzeug.datastructures.Range]

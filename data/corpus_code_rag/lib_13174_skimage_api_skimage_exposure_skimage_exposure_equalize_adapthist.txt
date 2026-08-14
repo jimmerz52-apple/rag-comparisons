@@ -1,0 +1,31 @@
+# skimage.api.skimage.exposure#skimage.exposure.equalize_adapthist
+
+skimage.exposure.equalize_adapthist(image, kernel_size=None, clip_limit=0.01, nbins=256) [source]
+ 
+Contrast Limited Adaptive Histogram Equalization (CLAHE). An algorithm for local contrast enhancement, that uses histograms computed over different tile regions of the image. Local details can therefore be enhanced even in regions that are darker or lighter than most of the image.  Parameters 
+ 
+image(N1, …,NN[, C]) ndarray 
+
+Input image.  kernel_size: int or array_like, optional
+
+Defines the shape of contextual regions used in the algorithm. If iterable is passed, it must have the same number of elements as image.ndim (without color channel). If integer, it is broadcasted to each image dimension. By default, kernel_size is 1/8 of image height by 1/8 of its width.  
+clip_limitfloat, optional 
+
+Clipping limit, normalized between 0 and 1 (higher values give more contrast).  
+nbinsint, optional 
+
+Number of gray bins for histogram (“data range”).    Returns 
+ 
+out(N1, …,NN[, C]) ndarray 
+
+Equalized image with float64 dtype.      See also  
+equalize_hist, rescale_intensity
+
+  Notes  
+ For color images, the following steps are performed:
+
+ The image is converted to HSV color space The CLAHE algorithm is run on the V (Value) channel The image is converted back to RGB space and returned     For RGBA images, the original alpha channel is removed.   Changed in version 0.17: The values returned by this function are slightly shifted upwards because of an internal change in rounding behavior.  References  
+1  
+http://tog.acm.org/resources/GraphicsGems/  
+2  
+https://en.wikipedia.org/wiki/CLAHE#CLAHE

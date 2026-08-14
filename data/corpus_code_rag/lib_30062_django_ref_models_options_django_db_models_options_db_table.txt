@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.db_table
+
+Options.db_table  
+The name of the database table to use for the model: db_table = 'music_album'

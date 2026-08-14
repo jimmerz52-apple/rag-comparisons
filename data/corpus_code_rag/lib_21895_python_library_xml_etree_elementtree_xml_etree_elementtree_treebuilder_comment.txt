@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder.comment
+
+comment(text)  
+Creates a comment with the given text. If insert_comments is true, this will also add it to the tree.  New in version 3.8.

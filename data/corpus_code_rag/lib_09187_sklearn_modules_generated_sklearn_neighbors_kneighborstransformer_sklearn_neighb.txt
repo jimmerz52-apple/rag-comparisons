@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neighbors.kneighborstransformer#sklearn.neighbors.KNeighborsTransformer.transform
+
+transform(X) [source]
+ 
+Computes the (weighted) graph of Neighbors for points in X  Parameters 
+ 
+Xarray-like of shape (n_samples_transform, n_features) 
+
+Sample data.    Returns 
+ 
+Xtsparse matrix of shape (n_samples_transform, n_samples_fit) 
+
+Xt[i, j] is assigned the weight of edge that connects i to j. Only the neighbors have an explicit value. The diagonal is always explicit. The matrix is of CSR format.

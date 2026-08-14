@@ -1,0 +1,4 @@
+# python.library.test#test.support.skip_unless_xattr
+
+@test.support.skip_unless_xattr  
+A decorator for running tests that require support for xattr.

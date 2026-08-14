@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_alpha
+
+get_alpha() 
+ get the current Surface transparency value get_alpha() -> int_value  Return the current alpha value for the Surface.

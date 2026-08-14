@@ -1,0 +1,3 @@
+# tensorflow.experimental.tensorrt
+
+Module: tf.experimental.tensorrt Public API for tf.experimental.tensorrt namespace. Classes class ConversionParams: Parameters that are used for TF-TRT conversion. class Converter: An offline converter for TF-TRT transformation for TF 2.0 SavedModels.

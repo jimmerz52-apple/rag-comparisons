@@ -1,0 +1,69 @@
+# werkzeug.routing.index#werkzeug.routing.Map
+
+class werkzeug.routing.Map(rules=None, default_subdomain='', charset='utf-8', strict_slashes=True, merge_slashes=True, redirect_defaults=True, converters=None, sort_parameters=False, sort_key=None, encoding_errors='replace', host_matching=False)  
+The map class stores all the URL rules and some configuration parameters. Some of the configuration values are only stored on the Map instance since those affect all rules, others are just defaults and can be overridden for each rule. Note that you have to specify all arguments besides the rules as keyword arguments!  Parameters 
+ 
+rules (Optional[Iterable[werkzeug.routing.RuleFactory]]) – sequence of url rules for this map. 
+default_subdomain (str) – The default subdomain for rules without a subdomain defined. 
+charset (str) – charset of the url. defaults to "utf-8"
+ 
+strict_slashes (bool) – If a rule ends with a slash but the matched URL does not, redirect to the URL with a trailing slash. 
+merge_slashes (bool) – Merge consecutive slashes when matching or building URLs. Matches will redirect to the normalized URL. Slashes in variable parts are not merged. 
+redirect_defaults (bool) – This will redirect to the default rule if it wasn’t visited that way. This helps creating unique URLs. 
+converters (Optional[Mapping[str, Type[werkzeug.routing.BaseConverter]]]) – A dict of converters that adds additional converters to the list of converters. If you redefine one converter this will override the original one. 
+sort_parameters (bool) – If set to True the url parameters are sorted. See url_encode for more details. 
+sort_key (Optional[Callable[[Any], Any]]) – The sort key function for url_encode. 
+encoding_errors (str) – the error method to use for decoding 
+host_matching (bool) – if set to True it enables the host matching feature and disables the subdomain one. If enabled the host parameter to rules is used instead of the subdomain one.   Return type 
+None    Changelog Changed in version 1.0: If url_scheme is ws or wss, only WebSocket rules will match.   Changed in version 1.0: Added merge_slashes.   Changed in version 0.7: Added encoding_errors and host_matching.   Changed in version 0.5: Added sort_parameters and sort_key.   
+converters  
+The dictionary of converters. This can be modified after the class was created, but will only affect rules added after the modification. If the rules are defined with the list passed to the class, the converters parameter to the constructor has to be used instead. 
+  
+add(rulefactory)  
+Add a new rule or factory to the map and bind it. Requires that the rule is not bound to another map.  Parameters 
+rulefactory (werkzeug.routing.RuleFactory) – a Rule or RuleFactory  Return type 
+None   
+  
+bind(server_name, script_name=None, subdomain=None, url_scheme='http', default_method='GET', path_info=None, query_args=None)  
+Return a new MapAdapter with the details specified to the call. Note that script_name will default to '/' if not further specified or None. The server_name at least is a requirement because the HTTP RFC requires absolute URLs for redirects and so all redirect exceptions raised by Werkzeug will contain the full canonical URL. If no path_info is passed to match() it will use the default path info passed to bind. While this doesn’t really make sense for manual bind calls, it’s useful if you bind a map to a WSGI environment which already contains the path info. subdomain will default to the default_subdomain for this map if no defined. If there is no default_subdomain you cannot use the subdomain feature.  Changelog Changed in version 1.0: If url_scheme is ws or wss, only WebSocket rules will match.   Changed in version 0.15: path_info defaults to '/' if None.   Changed in version 0.8: query_args can be a string.   Changed in version 0.7: Added query_args.   Parameters 
+ 
+server_name (str) –  
+script_name (Optional[str]) –  
+subdomain (Optional[str]) –  
+url_scheme (str) –  
+default_method (str) –  
+path_info (Optional[str]) –  
+query_args (Optional[Union[Mapping[str, Any], str]]) –    Return type 
+werkzeug.routing.MapAdapter   
+  
+bind_to_environ(environ, server_name=None, subdomain=None)  
+Like bind() but you can pass it an WSGI environment and it will fetch the information from that dictionary. Note that because of limitations in the protocol there is no way to get the current subdomain and real server_name from the environment. If you don’t provide it, Werkzeug will use SERVER_NAME and SERVER_PORT (or HTTP_HOST if provided) as used server_name with disabled subdomain feature. If subdomain is None but an environment and a server name is provided it will calculate the current subdomain automatically. Example: server_name is 'example.com' and the SERVER_NAME in the wsgi environ is 'staging.dev.example.com' the calculated subdomain will be 'staging.dev'. If the object passed as environ has an environ attribute, the value of this attribute is used instead. This allows you to pass request objects. Additionally PATH_INFO added as a default of the MapAdapter so that you don’t have to pass the path info to the match method.  Changelog Changed in version 1.0.0: If the passed server name specifies port 443, it will match if the incoming scheme is https without a port.   Changed in version 1.0.0: A warning is shown when the passed server name does not match the incoming WSGI server name.   Changed in version 0.8: This will no longer raise a ValueError when an unexpected server name was passed.   Changed in version 0.5: previously this method accepted a bogus calculate_subdomain parameter that did not have any effect. It was removed because of that.   Parameters 
+ 
+environ (WSGIEnvironment) – a WSGI environment. 
+server_name (Optional[str]) – an optional server name hint (see above). 
+subdomain (Optional[str]) – optionally the current subdomain (see above).   Return type 
+MapAdapter   
+  
+default_converters = {'any': <class 'werkzeug.routing.AnyConverter'>, 'default': <class 'werkzeug.routing.UnicodeConverter'>, 'float': <class 'werkzeug.routing.FloatConverter'>, 'int': <class 'werkzeug.routing.IntegerConverter'>, 'path': <class 'werkzeug.routing.PathConverter'>, 'string': <class 'werkzeug.routing.UnicodeConverter'>, 'uuid': <class 'werkzeug.routing.UUIDConverter'>}  
+A dict of default converters to be used. 
+  
+is_endpoint_expecting(endpoint, *arguments)  
+Iterate over all rules and check if the endpoint expects the arguments provided. This is for example useful if you have some URLs that expect a language code and others that do not and you want to wrap the builder a bit so that the current language code is automatically added if not provided but endpoints expect it.  Parameters 
+ 
+endpoint (str) – the endpoint to check. 
+arguments (str) – this function accepts one or more arguments as positional arguments. Each one of them is checked.   Return type 
+bool   
+  
+iter_rules(endpoint=None)  
+Iterate over all rules or the rules of an endpoint.  Parameters 
+endpoint (Optional[str]) – if provided only the rules for that endpoint are returned.  Returns 
+an iterator  Return type 
+Iterator[werkzeug.routing.Rule]   
+  
+lock_class()  
+The type of lock to use when updating.  Changelog New in version 1.0.  
+
+  
+update()  
+Called before matching and building to keep the compiled rules in the correct order after things changed.  Return type 
+None

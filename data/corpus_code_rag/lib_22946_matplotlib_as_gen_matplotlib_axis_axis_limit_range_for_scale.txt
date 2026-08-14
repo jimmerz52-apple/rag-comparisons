@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.axis.axis.limit_range_for_scale
+
+matplotlib.axis.Axis.limit_range_for_scale   Axis.limit_range_for_scale(vmin, vmax)[source]

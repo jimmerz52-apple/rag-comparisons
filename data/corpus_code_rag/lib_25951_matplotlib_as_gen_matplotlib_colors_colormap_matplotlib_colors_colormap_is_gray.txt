@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.is_gray
+
+is_gray()[source]
+ 
+Return whether the colormap is grayscale.

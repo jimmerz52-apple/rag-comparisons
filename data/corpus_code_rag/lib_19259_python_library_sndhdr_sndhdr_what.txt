@@ -1,0 +1,4 @@
+# python.library.sndhdr#sndhdr.what
+
+sndhdr.what(filename)  
+Determines the type of sound data stored in the file filename using whathdr(). If it succeeds, returns a namedtuple as described above, otherwise None is returned.  Changed in version 3.5: Result changed from a tuple to a namedtuple.

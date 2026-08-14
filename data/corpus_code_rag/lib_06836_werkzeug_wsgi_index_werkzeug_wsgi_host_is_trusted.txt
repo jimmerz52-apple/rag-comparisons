@@ -1,0 +1,8 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.host_is_trusted
+
+werkzeug.wsgi.host_is_trusted(hostname, trusted_list)  
+Check if a host matches a list of trusted names.  Parameters 
+ 
+hostname (str) – The name to check. 
+trusted_list (Iterable[str]) – A list of valid names to match. If a name starts with a dot it will match all subdomains.   Return type 
+bool    Changelog New in version 0.9.

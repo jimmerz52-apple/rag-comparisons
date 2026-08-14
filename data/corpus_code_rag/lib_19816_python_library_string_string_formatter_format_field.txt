@@ -1,0 +1,4 @@
+# python.library.string#string.Formatter.format_field
+
+format_field(value, format_spec)  
+format_field() simply calls the global format() built-in. The method is provided so that subclasses can override it.

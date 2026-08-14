@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.ThetaAxis.axis_name
+
+axis_name='theta'
+ 
+Read-only name identifying the axis.

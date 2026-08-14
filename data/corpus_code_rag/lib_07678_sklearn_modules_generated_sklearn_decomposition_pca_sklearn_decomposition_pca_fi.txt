@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.decomposition.pca#sklearn.decomposition.PCA.fit
+
+fit(X, y=None) [source]
+ 
+Fit the model with X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data, where n_samples is the number of samples and n_features is the number of features.  
+yIgnored 
+  Returns 
+ 
+selfobject 
+
+Returns the instance itself.

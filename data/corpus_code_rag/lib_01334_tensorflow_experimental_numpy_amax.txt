@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.amax
+
+tf.experimental.numpy.amax TensorFlow variant of NumPy's amax. 
+tf.experimental.numpy.amax(
+    a, axis=None, keepdims=None
+)
+ Unsupported arguments: out, initial, where. See the NumPy documentation for numpy.amax.

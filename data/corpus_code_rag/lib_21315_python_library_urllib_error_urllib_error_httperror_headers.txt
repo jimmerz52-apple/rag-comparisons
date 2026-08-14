@@ -1,0 +1,4 @@
+# python.library.urllib.error#urllib.error.HTTPError.headers
+
+headers  
+The HTTP response headers for the HTTP request that caused the HTTPError.  New in version 3.4.

@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Traceback.total_nframe
+
+total_nframe  
+Total number of frames that composed the traceback before truncation. This attribute can be set to None if the information is not available.

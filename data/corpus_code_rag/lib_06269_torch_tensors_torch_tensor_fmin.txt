@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.fmin
+
+fmin(other) → Tensor  
+See torch.fmin()

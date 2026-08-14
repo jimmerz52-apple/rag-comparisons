@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.name
+
+TarInfo.name  
+Name of the archive member.

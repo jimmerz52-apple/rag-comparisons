@@ -1,0 +1,51 @@
+# matplotlib.ticker_api#matplotlib.ticker.EngFormatter
+
+classmatplotlib.ticker.EngFormatter(unit='', places=None, sep=' ', *, usetex=None, useMathText=None)[source]
+ 
+Bases: matplotlib.ticker.Formatter Format axis values using engineering prefixes to represent powers of 1000, plus a specified unit, e.g., 10 MHz instead of 1e7.  Parameters 
+ 
+unitstr, default: ""
+
+
+Unit symbol to use, suitable for use with single-letter representations of powers of 1000. For example, 'Hz' or 'm'.  
+placesint, default: None
+
+
+Precision with which to display the number, specified in digits after the decimal point (there will be between one and three digits before the decimal point). If it is None, the formatting falls back to the floating point format '%g', which displays up to 6 significant digits, i.e. the equivalent value for places varies between 0 and 5 (inclusive).  
+sepstr, default: " "
+
+
+Separator used between the value and the prefix/unit. For example, one get '3.14 mV' if sep is " " (default) and '3.14mV' if sep is "". Besides the default behavior, some other useful options may be:  
+sep="" to append directly the prefix/unit to the value; 
+sep="\N{THIN SPACE}" (U+2009); 
+sep="\N{NARROW NO-BREAK SPACE}" (U+202F); 
+sep="\N{NO-BREAK SPACE}" (U+00A0).   
+usetexbool, default: rcParams["text.usetex"] (default: False)
+
+
+To enable/disable the use of TeX's math mode for rendering the numbers in the formatter.  
+useMathTextbool, default: rcParams["axes.formatter.use_mathtext"] (default: False)
+
+
+To enable/disable the use mathtext for rendering the numbers in the formatter.       ENG_PREFIXES={-24: 'y', -21: 'z', -18: 'a', -15: 'f', -12: 'p', -9: 'n', -6: 'µ', -3: 'm', 0: '', 3: 'k', 6: 'M', 9: 'G', 12: 'T', 15: 'P', 18: 'E', 21: 'Z', 24: 'Y'}
+
+   format_eng(num)[source]
+ 
+Format a number in engineering notation, appending a letter representing the power of 1000 of the original number. Some examples: >>> format_eng(0)       # for self.places = 0
+'0'
+ >>> format_eng(1000000) # for self.places = 1
+'1.0 M'
+ >>> format_eng("-1e-6") # for self.places = 2
+'-1.00 µ'
+ 
+   get_useMathText()[source]
+
+   get_usetex()[source]
+
+   set_useMathText(val)[source]
+
+   set_usetex(val)[source]
+
+   propertyuseMathText
+
+   propertyusetex

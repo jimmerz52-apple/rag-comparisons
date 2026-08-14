@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.ParseError.code
+
+code  
+A numeric error code from the expat parser. See the documentation of xml.parsers.expat for the list of error codes and their meanings.

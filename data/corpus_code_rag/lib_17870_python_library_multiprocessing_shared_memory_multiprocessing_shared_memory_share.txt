@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.SharedMemory.buf
+
+buf  
+A memoryview of contents of the shared memory block.

@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.rotate_z_ip_rad
+
+rotate_z_ip_rad() 
+ rotates the vector around the z-axis by the angle in radians in place. rotate_z_ip_rad(angle) -> None  Rotates the vector counterclockwise around the z-axis by the given angle in radians. The length of the vector is not changed.

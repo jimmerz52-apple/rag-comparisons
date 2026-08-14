@@ -1,0 +1,5 @@
+# matplotlib._api_api#matplotlib._api.deprecation.MatplotlibDeprecationWarning
+
+exceptionmatplotlib._api.deprecation.MatplotlibDeprecationWarning[source]
+ 
+Bases: DeprecationWarning A class for issuing deprecation warnings for Matplotlib users.

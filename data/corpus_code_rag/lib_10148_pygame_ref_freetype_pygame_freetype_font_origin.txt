@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.origin
+
+origin 
+ Font render to text origin mode origin -> bool  If set True, render_to() and render_raw_to() will take the dest position to be that of the text origin, as opposed to the top-left corner of the bounding box. See get_rect() for details.

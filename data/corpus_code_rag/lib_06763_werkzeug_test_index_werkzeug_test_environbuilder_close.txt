@@ -1,0 +1,5 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.close
+
+close()  
+Closes all files. If you put real file objects into the files dict you can call this method to automatically close them all in one go.  Return type 
+None

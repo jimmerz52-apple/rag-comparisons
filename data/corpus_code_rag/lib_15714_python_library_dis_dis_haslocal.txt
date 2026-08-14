@@ -1,0 +1,4 @@
+# python.library.dis#dis.haslocal
+
+dis.haslocal  
+Sequence of bytecodes that access a local variable.

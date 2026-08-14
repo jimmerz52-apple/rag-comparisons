@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourceFileLoader.path
+
+path  
+The path to the source file.

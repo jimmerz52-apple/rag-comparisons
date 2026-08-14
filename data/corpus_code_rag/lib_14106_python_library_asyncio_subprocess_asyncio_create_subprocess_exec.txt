@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.create_subprocess_exec
+
+coroutine asyncio.create_subprocess_exec(program, *args, stdin=None, stdout=None, stderr=None, loop=None, limit=None, **kwds)  
+Create a subprocess. The limit argument sets the buffer limit for StreamReader wrappers for Process.stdout and Process.stderr (if subprocess.PIPE is passed to stdout and stderr arguments). Return a Process instance. See the documentation of loop.subprocess_exec() for other parameters.  Deprecated since version 3.8, will be removed in version 3.10: The loop parameter.

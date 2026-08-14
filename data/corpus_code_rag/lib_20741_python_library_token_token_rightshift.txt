@@ -1,0 +1,4 @@
+# python.library.token#token.RIGHTSHIFT
+
+token.RIGHTSHIFT  
+Token value for ">>".

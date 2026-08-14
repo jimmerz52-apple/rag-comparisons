@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.height
+
+height 
+ The unscaled height of the font in font units height -> int  Read only. Gets the height of the font. This is the average value of all glyphs in the font.

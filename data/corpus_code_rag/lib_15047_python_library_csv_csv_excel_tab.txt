@@ -1,0 +1,4 @@
+# python.library.csv#csv.excel_tab
+
+class csv.excel_tab  
+The excel_tab class defines the usual properties of an Excel-generated TAB-delimited file. It is registered with the dialect name 'excel-tab'.

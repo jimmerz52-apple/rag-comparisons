@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse
+
+class http.client.HTTPResponse(sock, debuglevel=0, method=None, url=None)  
+Class whose instances are returned upon successful connection. Not instantiated directly by user.  Changed in version 3.4: The strict parameter was removed. HTTP 0.9 style “Simple Responses” are no longer supported.

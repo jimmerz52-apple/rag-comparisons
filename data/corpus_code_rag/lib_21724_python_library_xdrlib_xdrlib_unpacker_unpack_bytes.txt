@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.unpack_bytes
+
+Unpacker.unpack_bytes()  
+Unpacks and returns a variable length byte stream, similarly to unpack_string().

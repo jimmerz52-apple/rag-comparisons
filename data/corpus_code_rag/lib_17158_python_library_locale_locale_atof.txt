@@ -1,0 +1,4 @@
+# python.library.locale#locale.atof
+
+locale.atof(string)  
+Converts a string to a floating point number, following the LC_NUMERIC settings.

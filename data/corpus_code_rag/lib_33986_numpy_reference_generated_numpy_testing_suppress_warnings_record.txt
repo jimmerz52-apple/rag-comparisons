@@ -1,0 +1,23 @@
+# numpy.reference.generated.numpy.testing.suppress_warnings.record
+
+numpy.testing.suppress_warnings.record method   testing.suppress_warnings.record(category=<class 'Warning'>, message='', module=None)[source]
+ 
+Append a new recording filter or apply it if the state is entered. All warnings matching will be appended to the log attribute.  Parameters 
+ 
+categoryclass, optional
+
+
+Warning class to filter  
+messagestring, optional
+
+
+Regular expression matching the warning message.  
+modulemodule, optional
+
+
+Module to filter for. Note that the module (and its file) must match exactly and cannot be a submodule. This may make it unreliable for external modules.    Returns 
+ 
+loglist
+
+
+A list which will be filled with all matched warnings.     Notes When added within a context, filters are only added inside the context and will be forgotten when the context is exited.

@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.alt
+
+curses.ascii.alt(c)  
+Return the 8-bit character corresponding to the given ASCII character (the character bit value is bitwise-ored with 0x80).

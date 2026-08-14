@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.StreamHandler.flush
+
+flush()  
+Flushes the stream by calling its flush() method. Note that the close() method is inherited from Handler and so does no output, so an explicit flush() call may be needed at times.

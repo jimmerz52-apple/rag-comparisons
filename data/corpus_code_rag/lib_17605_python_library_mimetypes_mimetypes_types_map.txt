@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.types_map
+
+mimetypes.types_map  
+Dictionary mapping filename extensions to MIME types.

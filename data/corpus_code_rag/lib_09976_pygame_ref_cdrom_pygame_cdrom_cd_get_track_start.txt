@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_track_start
+
+get_track_start() 
+ start time of a cdrom track get_track_start(track) -> seconds  Return the absolute time in seconds where at start of the cdrom track. Note, track 0 is the first track on the CD. Track numbers start at zero.

@@ -1,0 +1,25 @@
+# matplotlib.transformations#matplotlib.transforms.ScaledTranslation
+
+classmatplotlib.transforms.ScaledTranslation(xt, yt, scale_trans, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase A transformation that translates by xt and yt, after xt and yt have been transformed by scale_trans.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       __init__(xt, yt, scale_trans, **kwargs)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.     
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform.

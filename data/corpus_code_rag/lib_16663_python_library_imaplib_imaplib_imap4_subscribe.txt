@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.subscribe
+
+IMAP4.subscribe(mailbox)  
+Subscribe to new mailbox.

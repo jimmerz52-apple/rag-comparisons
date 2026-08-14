@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.arrays.intervalarray.left
+
+pandas.arrays.IntervalArray.left   propertyIntervalArray.left
+ 
+Return the left endpoints of each Interval in the IntervalArray as an Index.

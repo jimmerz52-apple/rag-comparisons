@@ -1,0 +1,21 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DayMixin
+
+class DayMixin  
+A mixin that can be used to retrieve and provide parsing information for a day component of a date. Methods and Attributes  
+day_format  
+The strftime() format to use when parsing the day. By default, this is '%d'. 
+  
+day  
+Optional The value for the day, as a string. By default, set to None, which means the day will be determined using other means. 
+  
+get_day_format()  
+Returns the strftime() format to use when parsing the day. Returns day_format by default. 
+  
+get_day()  
+Returns the day for which this view will display data, as a string. Tries the following sources, in order:  The value of the DayMixin.day attribute. The value of the day argument captured in the URL pattern. The value of the day GET query argument.  Raises a 404 if no valid day specification can be found. 
+  
+get_next_day(date)  
+Returns a date object containing the next valid day after the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future. 
+  
+get_previous_day(date)  
+Returns a date object containing the previous valid day. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

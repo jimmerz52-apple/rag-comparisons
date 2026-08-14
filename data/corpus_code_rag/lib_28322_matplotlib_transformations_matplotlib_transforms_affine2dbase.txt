@@ -1,0 +1,46 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2DBase
+
+classmatplotlib.transforms.Affine2DBase(*args, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.AffineBase The base class of all 2D affine transformations. 2D affine transformations are performed using a 3x3 numpy array: a c e
+b d f
+0 0 1
+ This class provides the read-only interface. For a mutable 2D affine transformation, use Affine2D. Subclasses of this class will generally only need to override a constructor and get_matrix() that generates a custom 3x3 matrix.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       __module__='matplotlib.transforms'
+
+   frozen()[source]
+ 
+Return a frozen copy of this transform node. The frozen copy will not be updated when its children change. Useful for storing a previously known state of a transform where copy.deepcopy() might normally be used. 
+   has_inverse=True
+ 
+True if this transform has a corresponding inverse transform. 
+   input_dims=2
+ 
+The number of input dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy. 
+   propertyis_separable
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   output_dims=2
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   to_values()[source]
+ 
+Return the values of the matrix as an (a, b, c, d, e, f) tuple. 
+   transform_affine(points)[source]
+ 
+Apply only the affine part of this transformation on the given array of values. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally a no-op. In affine transformations, this is equivalent to transform(values).  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.

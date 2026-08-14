@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.index.view
+
+pandas.Index.view   Index.view(cls=None)[source]

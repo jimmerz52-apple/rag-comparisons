@@ -1,0 +1,4 @@
+# tensorflow.compat.v1.flags.error
+
+tf.compat.v1.flags.Error The base class for all flags errors.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.Error

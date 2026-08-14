@@ -1,0 +1,18 @@
+# werkzeug.http.index#werkzeug.http.dump_cookie
+
+werkzeug.http.dump_cookie(key, value='', max_age=None, expires=None, path='/', domain=None, secure=False, httponly=False, charset='utf-8', sync_expires=True, max_size=4093, samesite=None)  
+Create a Set-Cookie header without the Set-Cookie prefix. The return value is usually restricted to ascii as the vast majority of values are properly escaped, but that is no guarantee. It’s tunneled through latin1 as required by PEP 3333. The return value is not ASCII safe if the key contains unicode characters. This is technically against the specification but happens in the wild. It’s strongly recommended to not use non-ASCII values for the keys.  Parameters 
+ 
+max_age (Optional[Union[datetime.timedelta, int]]) – should be a number of seconds, or None (default) if the cookie should last only as long as the client’s browser session. Additionally timedelta objects are accepted, too. 
+expires (Optional[Union[str, datetime.datetime, int, float]]) – should be a datetime object or unix timestamp. 
+path (Optional[str]) – limits the cookie to a given path, per default it will span the whole domain. 
+domain (Optional[str]) – Use this if you want to set a cross-domain cookie. For example, domain=".example.com" will set a cookie that is readable by the domain www.example.com, foo.example.com etc. Otherwise, a cookie will only be readable by the domain that set it. 
+secure (bool) – The cookie will only be available via HTTPS 
+httponly (bool) – disallow JavaScript to access the cookie. This is an extension to the cookie standard and probably not supported by all browsers. 
+charset (str) – the encoding for string values. 
+sync_expires (bool) – automatically set expires if max_age is defined but expires not. 
+max_size (int) – Warn if the final header value exceeds this size. The default, 4093, should be safely supported by most browsers. Set to 0 to disable this check. 
+samesite (Optional[str]) – Limits the scope of the cookie such that it will only be attached to requests if those requests are same-site. 
+key (str) –  
+value (Union[bytes, str]) –    Return type 
+str    Changelog Changed in version 1.0.0: The string 'None' is accepted for samesite.

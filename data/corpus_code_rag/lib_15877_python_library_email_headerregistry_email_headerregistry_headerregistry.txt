@@ -1,0 +1,32 @@
+# python.library.email.headerregistry#email.headerregistry.HeaderRegistry
+
+class email.headerregistry.HeaderRegistry(base_class=BaseHeader, default_class=UnstructuredHeader, use_default_map=True)  
+This is the factory used by EmailPolicy by default. HeaderRegistry builds the class used to create a header instance dynamically, using base_class and a specialized class retrieved from a registry that it holds. When a given header name does not appear in the registry, the class specified by default_class is used as the specialized class. When use_default_map is True (the default), the standard mapping of header names to classes is copied in to the registry during initialization. base_class is always the last class in the generated class’s __bases__ list. The default mappings are:  subject 
+UniqueUnstructuredHeader  date 
+UniqueDateHeader  resent-date 
+DateHeader  orig-date 
+UniqueDateHeader  sender 
+UniqueSingleAddressHeader  resent-sender 
+SingleAddressHeader  to 
+UniqueAddressHeader  resent-to 
+AddressHeader  cc 
+UniqueAddressHeader  resent-cc 
+AddressHeader  bcc 
+UniqueAddressHeader  resent-bcc 
+AddressHeader  from 
+UniqueAddressHeader  resent-from 
+AddressHeader  reply-to 
+UniqueAddressHeader  mime-version 
+MIMEVersionHeader  content-type 
+ContentTypeHeader  content-disposition 
+ContentDispositionHeader  content-transfer-encoding 
+ContentTransferEncodingHeader  message-id 
+MessageIDHeader   HeaderRegistry has the following methods:  
+map_to_type(self, name, cls)  
+name is the name of the header to be mapped. It will be converted to lower case in the registry. cls is the specialized class to be used, along with base_class, to create the class used to instantiate headers that match name. 
+  
+__getitem__(name)  
+Construct and return a class to handle creating a name header. 
+  
+__call__(name, value)  
+Retrieves the specialized header associated with name from the registry (using default_class if name does not appear in the registry) and composes it with base_class to produce a class, calls the constructed class’s constructor, passing it the same argument list, and finally returns the class instance created thereby.

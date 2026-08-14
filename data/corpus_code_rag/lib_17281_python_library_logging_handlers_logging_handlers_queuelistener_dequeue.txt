@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueListener.dequeue
+
+dequeue(block)  
+Dequeues a record and return it, optionally blocking. The base implementation uses get(). You may want to override this method if you want to use timeouts or work with custom queue implementations.

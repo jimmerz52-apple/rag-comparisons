@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.init
+
+pygame.midi.init() 
+ initialize the midi module init() -> None  Initializes the pygame.midi module. Must be called before using the pygame.midi module. It is safe to call this more than once.

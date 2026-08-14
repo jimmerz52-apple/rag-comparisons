@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.test_loader
+
+DiscoverRunner.test_loader  
+This is the class that loads tests, whether from TestCases or modules or otherwise and bundles them into test suites for the runner to execute. By default it is set to unittest.defaultTestLoader. You can override this attribute if your tests are going to be loaded in unusual ways.

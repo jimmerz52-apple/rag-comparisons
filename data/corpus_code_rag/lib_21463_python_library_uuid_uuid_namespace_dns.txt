@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.NAMESPACE_DNS
+
+uuid.NAMESPACE_DNS  
+When this namespace is specified, the name string is a fully-qualified domain name.

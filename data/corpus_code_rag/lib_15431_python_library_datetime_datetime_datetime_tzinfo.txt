@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.tzinfo
+
+datetime.tzinfo  
+The object passed as the tzinfo argument to the datetime constructor, or None if none was passed.

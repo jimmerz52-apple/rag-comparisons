@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.is_run_once
+
+is_run_once  
+boolean that is True if the application will be executed only once in a process lifetime. This is the case for CGI for example, but it’s not guaranteed that the execution only happens one time.

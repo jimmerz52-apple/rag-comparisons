@@ -1,0 +1,17 @@
+# numpy.reference.generated.numpy.char.chararray.t
+
+numpy.char.chararray.T attribute   char.chararray.T
+ 
+The transposed array. Same as self.transpose().  See also  transpose
+  Examples >>> x = np.array([[1.,2.],[3.,4.]])
+>>> x
+array([[ 1.,  2.],
+       [ 3.,  4.]])
+>>> x.T
+array([[ 1.,  3.],
+       [ 2.,  4.]])
+>>> x = np.array([1.,2.,3.,4.])
+>>> x
+array([ 1.,  2.,  3.,  4.])
+>>> x.T
+array([ 1.,  2.,  3.,  4.])

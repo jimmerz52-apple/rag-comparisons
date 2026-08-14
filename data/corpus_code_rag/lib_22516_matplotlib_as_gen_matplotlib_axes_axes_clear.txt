@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.clear
+
+matplotlib.axes.Axes.clear   Axes.clear()[source]
+ 
+Clear the Axes.

@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_minor_formatter
+
+matplotlib.axis.Axis.set_minor_formatter   Axis.set_minor_formatter(formatter)[source]
+ 
+Set the formatter of the minor ticker. In addition to a Formatter instance, this also accepts a str or function. See Axis.set_major_formatter for more information.  Parameters 
+ 
+formatterFormatter, str, or function
+
+   
+  Examples using matplotlib.axis.Axis.set_minor_formatter
+ 
+   Anatomy of a figure   
+
+   Scales   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Centering labels between ticks

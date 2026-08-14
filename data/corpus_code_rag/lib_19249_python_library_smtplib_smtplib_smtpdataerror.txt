@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPDataError
+
+exception smtplib.SMTPDataError  
+The SMTP server refused to accept the message data.

@@ -1,0 +1,4 @@
+# python.library._thread#_thread.lock.locked
+
+lock.locked()  
+Return the status of the lock: True if it has been acquired by some thread, False if not.

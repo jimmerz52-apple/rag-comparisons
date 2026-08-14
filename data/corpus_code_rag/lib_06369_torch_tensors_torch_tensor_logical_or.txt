@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logical_or
+
+logical_or() → Tensor  
+See torch.logical_or()

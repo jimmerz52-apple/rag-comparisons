@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_CREATE_LINK
+
+winreg.KEY_CREATE_LINK  
+Reserved for system use.

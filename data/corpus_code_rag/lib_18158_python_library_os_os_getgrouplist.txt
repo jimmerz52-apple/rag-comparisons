@@ -1,0 +1,4 @@
+# python.library.os#os.getgrouplist
+
+os.getgrouplist(user, group)  
+Return list of group ids that user belongs to. If group is not in the list, it is included; typically, group is specified as the group ID field from the password record for user. Availability: Unix.  New in version 3.3.

@@ -1,0 +1,37 @@
+# django.ref.class-based-views.base#django.views.generic.base.View
+
+class django.views.generic.base.View  
+The master class-based base view. All other class-based views inherit from this base class. It isn’t strictly a generic view and thus can also be imported from django.views. Method Flowchart  setup() dispatch() http_method_not_allowed() options()  Example views.py: from django.http import HttpResponse
+from django.views import View
+
+class MyView(View):
+
+    def get(self, request, *args, **kwargs):
+        return HttpResponse('Hello, World!')
+ Example urls.py: from django.urls import path
+
+from myapp.views import MyView
+
+urlpatterns = [
+    path('mine/', MyView.as_view(), name='my-view'),
+]
+ Attributes  
+http_method_names  
+The list of HTTP method names that this view will accept. Default: ['get', 'post', 'put', 'patch', 'delete', 'head', 'options', 'trace']
+ 
+ Methods  
+classmethod as_view(**initkwargs)  
+Returns a callable view that takes a request and returns a response: response = MyView.as_view()(request)
+ The returned view has view_class and view_initkwargs attributes. When the view is called during the request/response cycle, the setup() method assigns the HttpRequest to the view’s request attribute, and any positional and/or keyword arguments captured from the URL pattern to the args and kwargs attributes, respectively. Then dispatch() is called. 
+  
+setup(request, *args, **kwargs)  
+Performs key view initialization prior to dispatch(). If overriding this method, you must call super(). 
+  
+dispatch(request, *args, **kwargs)  
+The view part of the view – the method that accepts a request argument plus arguments, and returns an HTTP response. The default implementation will inspect the HTTP method and attempt to delegate to a method that matches the HTTP method; a GET will be delegated to get(), a POST to post(), and so on. By default, a HEAD request will be delegated to get(). If you need to handle HEAD requests in a different way than GET, you can override the head() method. See Supporting other HTTP methods for an example. 
+  
+http_method_not_allowed(request, *args, **kwargs)  
+If the view was called with an HTTP method it doesn’t support, this method is called instead. The default implementation returns HttpResponseNotAllowed with a list of allowed methods in plain text. 
+  
+options(request, *args, **kwargs)  
+Handles responding to requests for the OPTIONS HTTP verb. Returns a response with the Allow header containing a list of the view’s allowed HTTP method names.

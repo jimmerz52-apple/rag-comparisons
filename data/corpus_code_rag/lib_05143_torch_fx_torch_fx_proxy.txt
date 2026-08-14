@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Proxy
+
+class torch.fx.Proxy(node, tracer=None) [source]
+ 
+Proxy objects are Node wrappers that flow through the program during symbolic tracing and record all the operations (torch function calls, method calls, operators) that they touch into the growing FX Graph. If you’re doing graph transforms, you can wrap your own Proxy method around a raw Node so that you can use the overloaded operators to add additional things to a Graph.

@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.mlir
+
+Module: tf.compat.v1.mlir Public API for tf.mlir namespace. Modules experimental module: Public API for tf.mlir.experimental namespace.

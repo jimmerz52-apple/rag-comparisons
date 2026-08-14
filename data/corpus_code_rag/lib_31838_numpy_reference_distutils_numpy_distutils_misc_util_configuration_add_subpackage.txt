@@ -1,0 +1,15 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.add_subpackage
+
+add_subpackage(subpackage_name, subpackage_path=None, standalone=False)[source]
+ 
+Add a sub-package to the current Configuration instance. This is useful in a setup.py script for adding sub-packages to a package.  Parameters 
+ 
+subpackage_namestr
+
+
+name of the subpackage  
+subpackage_pathstr
+
+
+if given, the subpackage path such as the subpackage is in subpackage_path / subpackage_name. If None,the subpackage is assumed to be located in the local path / subpackage_name.  
+standalonebool

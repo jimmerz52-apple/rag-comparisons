@@ -1,0 +1,4 @@
+# python.library.string#string.octdigits
+
+string.octdigits  
+The string '01234567'.

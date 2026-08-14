@@ -1,0 +1,12 @@
+# django.ref.templates.api#django.template.loaders.base.Loader
+
+class Loader  
+Loads templates from a given source, such as the filesystem or a database.  
+get_template_sources(template_name)  
+A method that takes a template_name and yields Origin instances for each possible source. For example, the filesystem loader may receive 'index.html' as a template_name argument. This method would yield origins for the full path of index.html as it appears in each template directory the loader looks at. The method doesn’t need to verify that the template exists at a given path, but it should ensure the path is valid. For instance, the filesystem loader makes sure the path lies under a valid template directory. 
+  
+get_contents(origin)  
+Returns the contents for a template given a Origin instance. This is where a filesystem loader would read contents from the filesystem, or a database loader would read from the database. If a matching template doesn’t exist, this should raise a TemplateDoesNotExist error. 
+  
+get_template(template_name, skip=None)  
+Returns a Template object for a given template_name by looping through results from get_template_sources() and calling get_contents(). This returns the first matching template. If no template is found, TemplateDoesNotExist is raised. The optional skip argument is a list of origins to ignore when extending templates. This allow templates to extend other templates of the same name. It also used to avoid recursion errors. In general, it is enough to define get_template_sources() and get_contents() for custom template loaders. get_template() will usually not need to be overridden.

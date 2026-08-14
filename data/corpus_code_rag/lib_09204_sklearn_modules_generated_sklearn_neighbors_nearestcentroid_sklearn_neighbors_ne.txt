@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.neighbors.nearestcentroid#sklearn.neighbors.NearestCentroid.predict
+
+predict(X) [source]
+ 
+Perform classification on an array of test vectors X. The predicted class C for each sample in X is returned.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Cndarray of shape (n_samples,) 
+   Notes If the metric constructor parameter is “precomputed”, X is assumed to be the distance matrix between the data to be predicted and self.centroids_.

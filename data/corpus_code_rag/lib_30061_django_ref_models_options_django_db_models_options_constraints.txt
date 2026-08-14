@@ -1,0 +1,12 @@
+# django.ref.models.options#django.db.models.Options.constraints
+
+Options.constraints  
+A list of constraints that you want to define on the model: from django.db import models
+
+class Customer(models.Model):
+    age = models.IntegerField()
+
+    class Meta:
+        constraints = [
+            models.CheckConstraint(check=models.Q(age__gte=18), name='age_gte_18'),
+        ]

@@ -1,0 +1,15 @@
+# python.library.urllib.parse#urllib.parse.urlsplit
+
+urllib.parse.urlsplit(urlstring, scheme='', allow_fragments=True)  
+This is similar to urlparse(), but does not split the params from the URL. This should generally be used instead of urlparse() if the more recent URL syntax allowing parameters to be applied to each segment of the path portion of the URL (see RFC 2396) is wanted. A separate function is needed to separate the path segments and parameters. This function returns a 5-item named tuple: (addressing scheme, network location, path, query, fragment identifier).
+ The return value is a named tuple, its items can be accessed by index or as named attributes:   
+Attribute Index Value Value if not present   
+scheme 0 URL scheme specifier scheme parameter  
+netloc 1 Network location part empty string  
+path 2 Hierarchical path empty string  
+query 3 Query component empty string  
+fragment 4 Fragment identifier empty string  
+username  User name None  
+password  Password None  
+hostname  Host name (lower case) None  
+port  Port number as integer, if present None   Reading the port attribute will raise a ValueError if an invalid port is specified in the URL. See section Structured Parse Results for more information on the result object. Unmatched square brackets in the netloc attribute will raise a ValueError. Characters in the netloc attribute that decompose under NFKC normalization (as used by the IDNA encoding) into any of /, ?, #, @, or : will raise a ValueError. If the URL is decomposed before parsing, no error will be raised.  Changed in version 3.6: Out-of-range port numbers now raise ValueError, instead of returning None.   Changed in version 3.8: Characters that affect netloc parsing under NFKC normalization will now raise ValueError.

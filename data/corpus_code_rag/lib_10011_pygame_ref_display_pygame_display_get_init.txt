@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.get_init
+
+pygame.display.get_init() 
+ Returns True if the display module has been initialized get_init() -> bool  Returns True if the pygame.display module is currently initialized.

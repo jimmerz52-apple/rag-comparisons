@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.XML_NAMESPACE
+
+xml.dom.XML_NAMESPACE  
+The namespace URI associated with the reserved prefix xml, as defined by Namespaces in XML (section 4).

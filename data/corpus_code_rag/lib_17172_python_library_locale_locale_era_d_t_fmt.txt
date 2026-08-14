@@ -1,0 +1,4 @@
+# python.library.locale#locale.ERA_D_T_FMT
+
+locale.ERA_D_T_FMT  
+Get a format string for time.strftime() to represent date and time in a locale-specific era-based way.

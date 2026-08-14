@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.Engine.get_template
+
+Engine.get_template(template_name)  
+Loads a template with the given name, compiles it and returns a Template object.

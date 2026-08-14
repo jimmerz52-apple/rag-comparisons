@@ -1,0 +1,22 @@
+# matplotlib.dates_api#matplotlib.dates.DateLocator
+
+classmatplotlib.dates.DateLocator(tz=None)[source]
+ 
+Bases: matplotlib.ticker.Locator Determines the tick locations when plotting dates. This class is subclassed by other Locators and is not meant to be used on its own.  Parameters 
+ 
+tzdatetime.tzinfo
+
+     datalim_to_dt()[source]
+ 
+Convert axis data interval to datetime objects. 
+   hms0d={'byhour': 0, 'byminute': 0, 'bysecond': 0}
+
+   nonsingular(vmin, vmax)[source]
+ 
+Given the proposed upper and lower extent, adjust the range if it is too close to being singular (i.e. a range of ~0). 
+   set_tzinfo(tz)[source]
+ 
+Set time zone info. 
+   viewlim_to_dt()[source]
+ 
+Convert the view interval to datetime objects.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.temp_umask
+
+test.support.temp_umask(umask)  
+A context manager that temporarily sets the process umask.

@@ -1,0 +1,4 @@
+# python.library.tkinter.scrolledtext#tkinter.scrolledtext.ScrolledText.frame
+
+frame  
+The frame which surrounds the text and scroll bar widgets.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.semimonthbegin.copy
+
+pandas.tseries.offsets.SemiMonthBegin.copy   SemiMonthBegin.copy()

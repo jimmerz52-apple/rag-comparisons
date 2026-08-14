@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.fill
+
+fill() 
+ Sets all bits to 1 fill() -> None  Sets all bits in the mask to 1.     
+Returns:
+None  
+Return type:
+NoneType

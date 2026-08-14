@@ -1,0 +1,5 @@
+# python.library.ast#ast.Or
+
+class ast.And  
+class ast.Or  
+Boolean operator tokens.

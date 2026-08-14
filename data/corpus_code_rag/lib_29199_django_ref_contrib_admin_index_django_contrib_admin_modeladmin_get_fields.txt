@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_fields
+
+ModelAdmin.get_fields(request, obj=None)  
+The get_fields method is given the HttpRequest and the obj being edited (or None on an add form) and is expected to return a list of fields, as described above in the ModelAdmin.fields section.

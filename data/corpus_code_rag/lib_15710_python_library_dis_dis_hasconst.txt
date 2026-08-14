@@ -1,0 +1,4 @@
+# python.library.dis#dis.hasconst
+
+dis.hasconst  
+Sequence of bytecodes that access a constant.

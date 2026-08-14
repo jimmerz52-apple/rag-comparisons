@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.BaseBackend.get_all_permissions
+
+get_all_permissions(user_obj, obj=None)  
+Uses get_user_permissions() and get_group_permissions() to get the set of permission strings the user_obj has.

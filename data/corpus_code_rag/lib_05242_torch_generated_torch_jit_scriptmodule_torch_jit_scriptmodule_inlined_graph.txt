@@ -1,0 +1,4 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.inlined_graph
+
+property inlined_graph  
+Returns a string representation of the internal graph for the forward method. This graph will be preprocessed to inline all function and method calls. See Interpreting Graphs for details.

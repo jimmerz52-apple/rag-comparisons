@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.BaseSelector.modify
+
+modify(fileobj, events, data=None)  
+Change a registered file object’s monitored events or attached data. This is equivalent to BaseSelector.unregister(fileobj)() followed by BaseSelector.register(fileobj, events, data)(), except that it can be implemented more efficiently. This returns a new SelectorKey instance, or raises a ValueError in case of invalid event mask or file descriptor, or KeyError if the file object is not registered.

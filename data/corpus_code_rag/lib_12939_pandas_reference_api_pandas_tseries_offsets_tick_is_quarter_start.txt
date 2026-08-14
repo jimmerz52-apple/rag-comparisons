@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.is_quarter_start
+
+pandas.tseries.offsets.Tick.is_quarter_start   Tick.is_quarter_start()

@@ -1,0 +1,4 @@
+# pygame.ref.mouse#pygame.mouse.get_visible
+
+pygame.mouse.get_visible() 
+ get the current visibility state of the mouse cursor get_visible() -> bool  Get the current visibility state of the mouse cursor. True if the mouse is visible, False otherwise.  New in pygame 2.0.0.

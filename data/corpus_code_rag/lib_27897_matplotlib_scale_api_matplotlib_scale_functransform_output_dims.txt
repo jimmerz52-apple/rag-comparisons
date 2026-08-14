@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.FuncTransform.output_dims
+
+output_dims=1
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass.

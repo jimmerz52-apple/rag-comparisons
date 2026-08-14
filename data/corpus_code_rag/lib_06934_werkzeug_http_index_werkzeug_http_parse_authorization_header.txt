@@ -1,0 +1,7 @@
+# werkzeug.http.index#werkzeug.http.parse_authorization_header
+
+werkzeug.http.parse_authorization_header(value)  
+Parse an HTTP basic/digest authorization header transmitted by the web browser. The return value is either None if the header was invalid or not given, otherwise an Authorization object.  Parameters 
+value (Optional[str]) – the authorization header to parse.  Returns 
+a Authorization object or None.  Return type 
+Optional[werkzeug.datastructures.Authorization]

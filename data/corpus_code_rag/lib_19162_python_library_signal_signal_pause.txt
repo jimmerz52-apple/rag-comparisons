@@ -1,0 +1,4 @@
+# python.library.signal#signal.pause
+
+signal.pause()  
+Cause the process to sleep until a signal is received; the appropriate handler will then be called. Returns nothing. Availability: Unix. See the man page signal(2) for further information. See also sigwait(), sigwaitinfo(), sigtimedwait() and sigpending().

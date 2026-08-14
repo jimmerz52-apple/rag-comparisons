@@ -1,0 +1,18 @@
+# matplotlib.legend_api#matplotlib.legend.DraggableLegend
+
+classmatplotlib.legend.DraggableLegend(legend, use_blit=False, update='loc')[source]
+ 
+Bases: matplotlib.offsetbox.DraggableOffsetBox Wrapper around a Legend to support mouse dragging.  Parameters 
+ 
+legendLegend
+
+
+The Legend instance to wrap.  
+use_blitbool, optional
+
+
+Use blitting for faster image composition. For details see FuncAnimation.  
+update{'loc', 'bbox'}, optional
+
+
+If "loc", update the loc parameter of the legend upon finalizing. If "bbox", update the bbox_to_anchor parameter.       finalize_offset()[source]

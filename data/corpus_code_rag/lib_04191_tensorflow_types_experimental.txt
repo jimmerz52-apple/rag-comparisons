@@ -1,0 +1,3 @@
+# tensorflow.types.experimental
+
+Module: tf.types.experimental Public API for tf.types.experimental namespace. Type Aliases TensorLike: Union of all types that can be converted to a tf.Tensor by tf.convert_to_tensor.

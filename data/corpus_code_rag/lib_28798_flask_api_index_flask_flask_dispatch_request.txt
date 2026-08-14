@@ -1,0 +1,5 @@
+# flask.api.index#flask.Flask.dispatch_request
+
+dispatch_request()  
+Does the request dispatching. Matches the URL and returns the return value of the view or error handler. This does not have to be a response object. In order to convert the return value to a proper response object, call make_response().  Changelog Changed in version 0.7: This no longer does the exception handling, this code was moved to the new full_dispatch_request().   Return type 
+Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], WSGIApplication]

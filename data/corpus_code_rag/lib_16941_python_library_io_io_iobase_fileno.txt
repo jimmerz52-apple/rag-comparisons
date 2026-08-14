@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.fileno
+
+fileno()  
+Return the underlying file descriptor (an integer) of the stream if it exists. An OSError is raised if the IO object does not use a file descriptor.

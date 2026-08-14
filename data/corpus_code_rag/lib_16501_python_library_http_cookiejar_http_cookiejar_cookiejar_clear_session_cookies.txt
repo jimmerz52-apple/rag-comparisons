@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar.clear_session_cookies
+
+CookieJar.clear_session_cookies()  
+Discard all session cookies. Discards all contained cookies that have a true discard attribute (usually because they had either no max-age or expires cookie-attribute, or an explicit discard cookie-attribute). For interactive browsers, the end of a session usually corresponds to closing the browser window. Note that the save() method won’t save session cookies anyway, unless you ask otherwise by passing a true ignore_discard argument.

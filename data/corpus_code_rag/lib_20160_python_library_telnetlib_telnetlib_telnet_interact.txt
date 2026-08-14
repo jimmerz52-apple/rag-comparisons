@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.interact
+
+Telnet.interact()  
+Interaction function, emulates a very dumb Telnet client.

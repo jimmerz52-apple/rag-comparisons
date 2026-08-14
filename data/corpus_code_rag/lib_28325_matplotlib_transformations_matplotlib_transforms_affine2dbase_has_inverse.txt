@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2DBase.has_inverse
+
+has_inverse=True
+ 
+True if this transform has a corresponding inverse transform.

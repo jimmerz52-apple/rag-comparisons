@@ -1,0 +1,5 @@
+# python.library.mailbox#mailbox.mbox.lock
+
+lock()  
+unlock()  
+Three locking mechanisms are used—dot locking and, if available, the flock() and lockf() system calls.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.get_center
+
+get_center()[source]
+ 
+Return the center of the annulus.

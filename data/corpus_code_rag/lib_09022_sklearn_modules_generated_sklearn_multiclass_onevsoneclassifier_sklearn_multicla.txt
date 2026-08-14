@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsoneclassifier#sklearn.multiclass.OneVsOneClassifier.predict
+
+predict(X) [source]
+ 
+Estimate the best class label for each sample in X. This is implemented as argmax(decision_function(X), axis=1) which will return the label of the class with most votes by estimators predicting the outcome of a decision for each possible class pair.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.    Returns 
+ 
+ynumpy array of shape [n_samples] 
+
+Predicted multi-class targets.

@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.rel_db_type
+
+rel_db_type(connection)  
+Returns the database column data type for fields such as ForeignKey and OneToOneField that point to the Field, taking into account the connection. See Custom database types for usage in custom fields.

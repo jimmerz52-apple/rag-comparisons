@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.maxabsscaler#sklearn.preprocessing.MaxAbsScaler.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Scale back the data to the original representation  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data that should be transformed back.    Returns 
+ 
+X_tr{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Transformed array.

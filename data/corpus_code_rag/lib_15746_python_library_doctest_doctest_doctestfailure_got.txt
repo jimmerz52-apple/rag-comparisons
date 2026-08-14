@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTestFailure.got
+
+DocTestFailure.got  
+The example’s actual output.

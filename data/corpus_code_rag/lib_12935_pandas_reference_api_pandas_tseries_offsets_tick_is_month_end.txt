@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.is_month_end
+
+pandas.tseries.offsets.Tick.is_month_end   Tick.is_month_end()

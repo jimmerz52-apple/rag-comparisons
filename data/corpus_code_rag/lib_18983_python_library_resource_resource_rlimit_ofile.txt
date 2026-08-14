@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_OFILE
+
+resource.RLIMIT_OFILE  
+The BSD name for RLIMIT_NOFILE.

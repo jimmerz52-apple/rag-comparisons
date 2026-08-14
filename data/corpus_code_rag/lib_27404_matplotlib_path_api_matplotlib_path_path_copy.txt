@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.copy
+
+copy()[source]
+ 
+Return a shallow copy of the Path, which will share the vertices and codes with the source Path.

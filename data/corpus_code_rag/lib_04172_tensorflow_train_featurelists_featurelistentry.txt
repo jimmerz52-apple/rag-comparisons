@@ -1,0 +1,10 @@
+# tensorflow.train.featurelists.featurelistentry
+
+tf.train.FeatureLists.FeatureListEntry     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.FeatureLists.FeatureListEntry 
+ 
+
+
+ Attributes
+  key   string key  
+  value   FeatureList value

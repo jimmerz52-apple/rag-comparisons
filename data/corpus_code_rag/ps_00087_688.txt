@@ -1,0 +1,9 @@
+# 688
+Task: 688
+
+# Write a function to get the length of a complex number.
+import cmath
+def len_complex(a,b):
+  cn=complex(a,b)
+  length=abs(cn)
+  return length

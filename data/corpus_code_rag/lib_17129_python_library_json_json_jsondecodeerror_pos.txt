@@ -1,0 +1,4 @@
+# python.library.json#json.JSONDecodeError.pos
+
+pos  
+The start index of doc where parsing failed.

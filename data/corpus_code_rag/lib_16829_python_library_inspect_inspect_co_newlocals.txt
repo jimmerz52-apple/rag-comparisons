@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_NEWLOCALS
+
+inspect.CO_NEWLOCALS  
+If set, a new dict will be created for the frame’s f_locals when the code object is executed.

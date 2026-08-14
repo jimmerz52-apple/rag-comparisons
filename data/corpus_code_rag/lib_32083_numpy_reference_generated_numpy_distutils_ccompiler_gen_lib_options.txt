@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.gen_lib_options
+
+numpy.distutils.ccompiler.gen_lib_options   distutils.ccompiler.gen_lib_options(compiler, library_dirs, runtime_library_dirs, libraries)[source]

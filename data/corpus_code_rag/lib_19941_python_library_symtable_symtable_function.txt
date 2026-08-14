@@ -1,0 +1,18 @@
+# python.library.symtable#symtable.Function
+
+class symtable.Function  
+A namespace for a function or method. This class inherits SymbolTable.  
+get_parameters()  
+Return a tuple containing names of parameters to this function. 
+  
+get_locals()  
+Return a tuple containing names of locals in this function. 
+  
+get_globals()  
+Return a tuple containing names of globals in this function. 
+  
+get_nonlocals()  
+Return a tuple containing names of nonlocals in this function. 
+  
+get_frees()  
+Return a tuple containing names of free variables in this function.

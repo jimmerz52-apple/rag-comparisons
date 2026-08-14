@@ -1,0 +1,9 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.managers.SharedMemoryManager
+
+class multiprocessing.managers.SharedMemoryManager([address[, authkey]])  
+A subclass of BaseManager which can be used for the management of shared memory blocks across processes. A call to start() on a SharedMemoryManager instance causes a new process to be started. This new process’s sole purpose is to manage the life cycle of all shared memory blocks created through it. To trigger the release of all shared memory blocks managed by that process, call shutdown() on the instance. This triggers a SharedMemory.unlink() call on all of the SharedMemory objects managed by that process and then stops the process itself. By creating SharedMemory instances through a SharedMemoryManager, we avoid the need to manually track and trigger the freeing of shared memory resources. This class provides methods for creating and returning SharedMemory instances and for creating a list-like object (ShareableList) backed by shared memory. Refer to multiprocessing.managers.BaseManager for a description of the inherited address and authkey optional input arguments and how they may be used to connect to an existing SharedMemoryManager service from other processes.  
+SharedMemory(size)  
+Create and return a new SharedMemory object with the specified size in bytes. 
+  
+ShareableList(sequence)  
+Create and return a new ShareableList object, initialized by the values from the input sequence.

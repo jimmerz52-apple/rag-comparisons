@@ -1,0 +1,3 @@
+# tensorflow.linalg.experimental
+
+Module: tf.linalg.experimental Public API for tf.linalg.experimental namespace. Functions conjugate_gradient(...): Conjugate gradient solver.

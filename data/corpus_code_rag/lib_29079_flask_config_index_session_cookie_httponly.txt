@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_COOKIE_HTTPONLY
+
+SESSION_COOKIE_HTTPONLY  
+Browsers will not allow JavaScript access to cookies marked as “HTTP only” for security. Default: True

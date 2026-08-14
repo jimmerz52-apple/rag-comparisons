@@ -1,0 +1,17 @@
+# pygame.ref.mask#pygame.mask.Mask.overlap_area
+
+overlap_area() 
+ Returns the number of overlapping set bits overlap_area(othermask, offset) -> numbits  Returns the number of overlapping set bits between between this mask and othermask. This can be useful for collision detection. An approximate collision normal can be found by calculating the gradient of the overlapping area through the finite difference. dx = mask.overlap_area(othermask, (x + 1, y)) - mask.overlap_area(othermask, (x - 1, y))
+dy = mask.overlap_area(othermask, (x, y + 1)) - mask.overlap_area(othermask, (x, y - 1))     
+Parameters:
+
+ 
+othermask (Mask) -- the other mask to overlap with this mask 
+offset (tuple(int, int) or list[int, int]) -- the offset of othermask from this mask, for more details refer to the Mask offset notes
+    
+Returns:
+
+the number of overlapping set bits   
+Return type:
+
+int

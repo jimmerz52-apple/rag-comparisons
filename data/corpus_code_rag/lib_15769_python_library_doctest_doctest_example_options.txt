@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.Example.options
+
+options  
+A dictionary mapping from option flags to True or False, which is used to override default options for this example. Any option flags not contained in this dictionary are left at their default value (as specified by the DocTestRunner’s optionflags). By default, no options are set.

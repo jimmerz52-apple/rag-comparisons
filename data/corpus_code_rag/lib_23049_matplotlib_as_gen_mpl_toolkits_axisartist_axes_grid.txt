@@ -1,0 +1,9 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axes_grid
+
+mpl_toolkits.axisartist.axes_grid  Classes  
+AxesGrid alias of mpl_toolkits.axisartist.axes_grid.ImageGrid  
+CbarAxes(*args, orientation, **kwargs) [Deprecated]  
+Grid(fig, rect, nrows_ncols[, ngrids, ...]) 
+ Parameters    
+ImageGrid(fig, rect, nrows_ncols[, ngrids, ...]) 
+ Parameters

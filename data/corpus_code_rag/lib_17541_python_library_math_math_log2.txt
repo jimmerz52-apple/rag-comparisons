@@ -1,0 +1,4 @@
+# python.library.math#math.log2
+
+math.log2(x)  
+Return the base-2 logarithm of x. This is usually more accurate than log(x, 2).  New in version 3.3.   See also int.bit_length() returns the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros.

@@ -1,0 +1,4 @@
+# python.library.locale#locale.RADIXCHAR
+
+locale.RADIXCHAR  
+Get the radix character (decimal dot, decimal comma, etc.).

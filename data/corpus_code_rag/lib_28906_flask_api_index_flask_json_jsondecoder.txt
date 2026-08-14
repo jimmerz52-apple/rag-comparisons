@@ -1,0 +1,4 @@
+# flask.api.index#flask.json.JSONDecoder
+
+class flask.json.JSONDecoder(*, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, strict=True, object_pairs_hook=None)  
+The default JSON decoder. This does not change any behavior from the built-in json.JSONDecoder. Assign a subclass of this to flask.Flask.json_decoder or flask.Blueprint.json_decoder to override the default.

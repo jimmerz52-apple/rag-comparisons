@@ -1,0 +1,7 @@
+# matplotlib.path_api#matplotlib.path.Path.cleaned
+
+cleaned(transform=None, remove_nans=False, clip=None, *, simplify=False, curves=False, stroke_width=1.0, snap=False, sketch=None)[source]
+ 
+Return a new Path with vertices and codes cleaned according to the parameters.  See also  Path.iter_segments
+
+for details of the keyword arguments.

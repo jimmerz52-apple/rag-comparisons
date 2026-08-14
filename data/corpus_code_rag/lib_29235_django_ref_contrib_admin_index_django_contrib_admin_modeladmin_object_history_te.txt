@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.object_history_template
+
+ModelAdmin.object_history_template  
+Path to a custom template, used by history_view().

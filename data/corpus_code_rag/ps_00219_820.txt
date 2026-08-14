@@ -1,0 +1,9 @@
+# 820
+Task: 820
+
+# Write a function to check whether the given month number contains 28 days or not.
+def check_monthnum_number(monthnum1):
+  if monthnum1 == 2:
+    return True
+  else:
+    return False

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.shape
+
+pandas.Index.shape   propertyIndex.shape
+ 
+Return a tuple of the shape of the underlying data.

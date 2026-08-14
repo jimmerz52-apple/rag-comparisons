@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLErrorNumber
+
+class ssl.SSLErrorNumber  
+enum.IntEnum collection of SSL_ERROR_* constants.  New in version 3.6.

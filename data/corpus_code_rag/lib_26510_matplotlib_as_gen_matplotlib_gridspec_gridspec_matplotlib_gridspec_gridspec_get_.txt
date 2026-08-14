@@ -1,0 +1,6 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspec#matplotlib.gridspec.GridSpec.get_subplot_params
+
+get_subplot_params(figure=None)[source]
+ 
+Return the SubplotParams for the GridSpec. In order of precedence the values are taken from  non-None attributes of the GridSpec the provided figure
+ rcParams["figure.subplot.*"]

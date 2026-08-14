@@ -1,0 +1,3 @@
+# django.ref.contrib.messages#django.contrib.messages.add_message
+
+add_message(request, level, message, extra_tags='', fail_silently=False)

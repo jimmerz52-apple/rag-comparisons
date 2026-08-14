@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.defaultTestResult
+
+defaultTestResult()  
+Return an instance of the test result class that should be used for this test case class (if no other result instance is provided to the run() method). For TestCase instances, this will always be an instance of TestResult; subclasses of TestCase should override this as necessary.

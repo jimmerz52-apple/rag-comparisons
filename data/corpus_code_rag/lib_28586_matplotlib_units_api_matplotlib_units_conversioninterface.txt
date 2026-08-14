@@ -1,0 +1,16 @@
+# matplotlib.units_api#matplotlib.units.ConversionInterface
+
+classmatplotlib.units.ConversionInterface[source]
+ 
+Bases: object The minimal interface for a converter to take custom data types (or sequences) and convert them to values Matplotlib can use.   staticaxisinfo(unit, axis)[source]
+ 
+Return an AxisInfo for the axis with the specified units. 
+   staticconvert(obj, unit, axis)[source]
+ 
+Convert obj using unit for the specified axis. If obj is a sequence, return the converted sequence. The output must be a sequence of scalars that can be used by the numpy array layer. 
+   staticdefault_units(x, axis)[source]
+ 
+Return the default unit for x or None for the given axis. 
+   staticis_numlike(x)[source]
+ 
+[Deprecated] The Matplotlib datalim, autoscaling, locators etc work with scalars which are the units converted to floats given the current unit. The converter may be passed these floats, or arrays of them, even when units are set. Notes  Deprecated since version 3.5.

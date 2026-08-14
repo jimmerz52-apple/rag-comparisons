@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.squeeze
+
+numpy.generic.squeeze method   generic.squeeze()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.squeeze.

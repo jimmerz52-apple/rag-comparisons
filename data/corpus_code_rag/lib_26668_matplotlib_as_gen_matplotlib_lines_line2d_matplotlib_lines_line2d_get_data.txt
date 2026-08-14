@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_data
+
+get_data(orig=True)[source]
+ 
+Return the line data as an (xdata, ydata) pair. If orig is True, return the original data.

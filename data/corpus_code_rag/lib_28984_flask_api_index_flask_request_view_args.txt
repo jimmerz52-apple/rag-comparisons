@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.view_args
+
+view_args: Optional[Dict[str, Any]] = None  
+A dict of view arguments that matched the request. If an exception happened when matching, this will be None.

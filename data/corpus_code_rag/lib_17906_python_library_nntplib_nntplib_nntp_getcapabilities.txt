@@ -1,0 +1,7 @@
+# python.library.nntplib#nntplib.NNTP.getcapabilities
+
+NNTP.getcapabilities()  
+Return the RFC 3977 capabilities advertised by the server, as a dict instance mapping capability names to (possibly empty) lists of values. On legacy servers which don’t understand the CAPABILITIES command, an empty dictionary is returned instead. >>> s = NNTP('news.gmane.io')
+>>> 'POST' in s.getcapabilities()
+True
+  New in version 3.2.

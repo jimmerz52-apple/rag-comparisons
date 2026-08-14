@@ -1,0 +1,6 @@
+# torch.generated.torch.generator#torch.Generator.device
+
+device  
+Generator.device -> device Gets the current device of the generator. Example: >>> g_cpu = torch.Generator()
+>>> g_cpu.device
+device(type='cpu')

@@ -1,0 +1,3 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.get_deletion_widget
+
+BaseFormSet.get_deletion_widget()

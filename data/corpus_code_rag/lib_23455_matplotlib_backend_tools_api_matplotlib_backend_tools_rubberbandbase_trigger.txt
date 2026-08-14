@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.RubberbandBase.trigger
+
+trigger(sender, event, data)[source]
+ 
+Call draw_rubberband or remove_rubberband based on data.

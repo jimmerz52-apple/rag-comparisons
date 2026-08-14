@@ -1,0 +1,5 @@
+# torch.amp#torch.cuda.amp.GradScaler.get_backoff_factor
+
+get_backoff_factor() [source]
+ 
+Returns a Python float containing the scale backoff factor.

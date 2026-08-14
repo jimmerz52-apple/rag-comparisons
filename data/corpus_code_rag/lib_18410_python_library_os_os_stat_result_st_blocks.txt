@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_blocks
+
+st_blocks  
+Number of 512-byte blocks allocated for file. This may be smaller than st_size/512 when the file has holes.

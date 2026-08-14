@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.padded
+
+padded(p)[source]
+ 
+Construct a Bbox by padding this one on all four sides by p.

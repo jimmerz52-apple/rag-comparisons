@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.reset
+
+reset()  
+Set the botframe, stopframe, returnframe and quitting attributes with values ready to start debugging.

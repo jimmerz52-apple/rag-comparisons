@@ -1,0 +1,6 @@
+# python.library.os#os.WNOWAIT
+
+os.WEXITED  
+os.WSTOPPED  
+os.WNOWAIT  
+Flags that can be used in options in waitid() that specify what child signal to wait for. Availability: Unix.  New in version 3.3.

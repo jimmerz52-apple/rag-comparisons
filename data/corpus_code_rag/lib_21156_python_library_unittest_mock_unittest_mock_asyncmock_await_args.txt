@@ -1,0 +1,14 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.await_args
+
+await_args  
+This is either None (if the mock hasn’t been awaited), or the arguments that the mock was last awaited with. Functions the same as Mock.call_args. >>> mock = AsyncMock()
+>>> async def main(*args):
+...     await mock(*args)
+...
+>>> mock.await_args
+>>> asyncio.run(main('foo'))
+>>> mock.await_args
+call('foo')
+>>> asyncio.run(main('bar'))
+>>> mock.await_args
+call('bar')

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.tofile
+
+numpy.record.tofile method   record.tofile()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.tofile.

@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.makeelement
+
+makeelement(tag, attrib)  
+Creates a new element object of the same type as this element. Do not call this method, use the SubElement() factory function instead.

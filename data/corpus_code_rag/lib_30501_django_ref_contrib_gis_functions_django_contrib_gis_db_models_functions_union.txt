@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.Union
+
+class Union(expr1, expr2, **extra)

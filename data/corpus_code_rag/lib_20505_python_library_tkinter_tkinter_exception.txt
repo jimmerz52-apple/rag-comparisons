@@ -1,0 +1,6 @@
+# python.library.tkinter#tkinter.EXCEPTION
+
+tkinter.READABLE  
+tkinter.WRITABLE  
+tkinter.EXCEPTION  
+Constants used in the mask arguments.

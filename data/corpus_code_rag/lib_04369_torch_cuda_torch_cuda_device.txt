@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.device
+
+class torch.cuda.device(device) [source]
+ 
+Context-manager that changes the selected device.  Parameters 
+device (torch.device or int) – device index to select. It’s a no-op if this argument is a negative integer or None.

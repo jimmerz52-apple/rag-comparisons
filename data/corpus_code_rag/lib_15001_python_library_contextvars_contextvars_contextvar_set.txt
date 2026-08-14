@@ -1,0 +1,4 @@
+# python.library.contextvars#contextvars.ContextVar.set
+
+set(value)  
+Call to set a new value for the context variable in the current context. The required value argument is the new value for the context variable. Returns a Token object that can be used to restore the variable to its previous value via the ContextVar.reset() method.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.to_datetime64
+
+pandas.Timestamp.to_datetime64   Timestamp.to_datetime64()
+ 
+Return a numpy.datetime64 object with ‘ns’ precision.

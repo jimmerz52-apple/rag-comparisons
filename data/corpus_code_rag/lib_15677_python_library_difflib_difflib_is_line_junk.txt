@@ -1,0 +1,4 @@
+# python.library.difflib#difflib.IS_LINE_JUNK
+
+difflib.IS_LINE_JUNK(line)  
+Return True for ignorable lines. The line line is ignorable if line is blank or contains a single '#', otherwise it is not ignorable. Used as a default for parameter linejunk in ndiff() in older versions.

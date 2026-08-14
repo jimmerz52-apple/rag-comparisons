@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_paused
+
+get_paused() 
+ true if the drive is paused get_paused() -> bool  Returns True if the drive is currently paused.

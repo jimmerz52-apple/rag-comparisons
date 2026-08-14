@@ -1,0 +1,8 @@
+# flask.api.index#flask.Blueprint.put
+
+put(rule, **options)  
+Shortcut for route() with methods=["PUT"].  New in version 2.0.   Parameters 
+ 
+rule (str) –  
+options (Any) –    Return type 
+Callable

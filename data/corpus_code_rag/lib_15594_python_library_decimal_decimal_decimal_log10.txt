@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.log10
+
+log10(context=None)  
+Return the base ten logarithm of the operand. The result is correctly rounded using the ROUND_HALF_EVEN rounding mode.

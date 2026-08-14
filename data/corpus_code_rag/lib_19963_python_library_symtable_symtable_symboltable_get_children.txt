@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_children
+
+get_children()  
+Return a list of the nested symbol tables.

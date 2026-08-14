@@ -1,0 +1,7 @@
+# 799
+Task: 799
+
+# Write a python function to left rotate the bits of a given number.
+INT_BITS = 32
+def left_Rotate(n,d):   
+    return (n << d)|(n >> (INT_BITS - d))

@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.inside_circle
+
+matplotlib.bezier.inside_circle(cx, cy, r)[source]
+ 
+Return a function that checks whether a point is in a circle with center (cx, cy) and radius r. The returned function has the signature: f(xy: tuple[float, float]) -> bool

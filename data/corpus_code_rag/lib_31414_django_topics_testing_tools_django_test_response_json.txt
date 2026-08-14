@@ -1,0 +1,7 @@
+# django.topics.testing.tools#django.test.Response.json
+
+json(**kwargs)  
+The body of the response, parsed as JSON. Extra keyword arguments are passed to json.loads(). For example: >>> response = client.get('/foo/')
+>>> response.json()['name']
+'Arthur'
+ If the Content-Type header is not "application/json", then a ValueError will be raised when trying to parse the response.

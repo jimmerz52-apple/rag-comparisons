@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.NullHandler.createLock
+
+createLock()  
+This method returns None for the lock, since there is no underlying I/O to which access needs to be serialized.

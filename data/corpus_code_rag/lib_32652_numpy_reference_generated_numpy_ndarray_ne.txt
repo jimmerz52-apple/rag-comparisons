@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__ne__
+
+numpy.ndarray.__ne__ method   ndarray.__ne__(value, /)
+ 
+Return self!=value.

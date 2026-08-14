@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.clear_traces
+
+tracemalloc.clear_traces()  
+Clear traces of memory blocks allocated by Python. See also stop().

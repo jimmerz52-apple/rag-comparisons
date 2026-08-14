@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.request_version
+
+request_version  
+Contains the version string from the request. For example, 'HTTP/1.0'.

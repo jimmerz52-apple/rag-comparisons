@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.predict_proba
+
+predict_proba(X) [source]
+ 
+Apply transforms, and predict_proba of the final estimator  Parameters 
+ 
+Xiterable 
+
+Data to predict on. Must fulfill input requirements of first step of the pipeline.    Returns 
+ 
+y_probaarray-like of shape (n_samples, n_classes)

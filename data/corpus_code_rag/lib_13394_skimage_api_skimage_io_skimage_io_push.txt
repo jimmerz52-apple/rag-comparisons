@@ -1,0 +1,9 @@
+# skimage.api.skimage.io#skimage.io.push
+
+skimage.io.push(img) [source]
+ 
+Push an image onto the shared image stack.  Parameters 
+ 
+imgndarray 
+
+Image to push.

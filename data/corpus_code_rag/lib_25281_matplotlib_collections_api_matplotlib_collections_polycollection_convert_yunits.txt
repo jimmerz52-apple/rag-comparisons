@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PolyCollection.convert_yunits
+
+convert_yunits(y)[source]
+ 
+Convert y using the unit type of the yaxis. If the artist is not in contained in an Axes or if the yaxis does not have units, y itself is returned.

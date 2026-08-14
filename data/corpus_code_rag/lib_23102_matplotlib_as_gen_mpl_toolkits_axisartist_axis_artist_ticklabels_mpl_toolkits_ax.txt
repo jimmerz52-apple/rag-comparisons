@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.ticklabels#mpl_toolkits.axisartist.axis_artist.TickLabels.get_texts_widths_heights_descents
+
+get_texts_widths_heights_descents(renderer)[source]
+ 
+Return a list of (width, height, descent) tuples for ticklabels. Empty labels are left out.

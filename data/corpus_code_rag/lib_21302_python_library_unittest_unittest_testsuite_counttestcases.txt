@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestSuite.countTestCases
+
+countTestCases()  
+Return the number of tests represented by this test object, including all individual tests and sub-suites.

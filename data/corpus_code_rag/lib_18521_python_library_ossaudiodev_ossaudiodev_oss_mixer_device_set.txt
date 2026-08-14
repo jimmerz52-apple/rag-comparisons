@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.set
+
+oss_mixer_device.set(control, (left, right))  
+Sets the volume for a given mixer control to (left,right). left and right must be ints and between 0 (silent) and 100 (full volume). On success, the new volume is returned as a 2-tuple. Note that this may not be exactly the same as the volume specified, because of the limited resolution of some soundcard’s mixers. Raises OSSAudioError if an invalid mixer control was specified, or if the specified volumes were out-of-range.

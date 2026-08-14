@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.get_yaxis_transform
+
+get_yaxis_transform(which='grid')[source]
+ 
+Get the transformation used for drawing y-axis labels, ticks and gridlines. The x-direction is in axis coordinates and the y-direction is in data coordinates.  Note This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.

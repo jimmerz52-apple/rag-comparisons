@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.LineCollection.set_figure
+
+set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure

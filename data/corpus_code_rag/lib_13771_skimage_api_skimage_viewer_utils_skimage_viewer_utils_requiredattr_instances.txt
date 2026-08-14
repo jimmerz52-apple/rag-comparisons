@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.RequiredAttr.instances
+
+instances = {(<skimage.viewer.utils.core.RequiredAttr object>, None): 'Widget is not attached to a Plugin.', (<skimage.viewer.utils.core.RequiredAttr object>, None): 'Plugin is not attached to ImageViewer'}

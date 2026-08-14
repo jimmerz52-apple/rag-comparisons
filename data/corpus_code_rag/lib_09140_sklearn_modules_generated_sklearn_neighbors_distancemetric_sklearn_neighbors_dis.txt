@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.neighbors.distancemetric#sklearn.neighbors.DistanceMetric.pairwise
+
+pairwise()  
+Compute the pairwise distances between X and Y This is a convenience routine for the sake of testing. For many metrics, the utilities in scipy.spatial.distance.cdist and scipy.spatial.distance.pdist will be faster.  Parameters 
+ 
+Xarray-like 
+
+Array of shape (Nx, D), representing Nx points in D dimensions.  
+Yarray-like (optional) 
+
+Array of shape (Ny, D), representing Ny points in D dimensions. If not specified, then Y=X.  Returns
+——-
+
+distndarray 
+
+The shape (Nx, Ny) array of pairwise distances between points in X and Y.

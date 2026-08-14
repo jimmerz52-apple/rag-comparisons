@@ -1,0 +1,10 @@
+# python.library.asyncio-task#asyncio.coroutine
+
+@asyncio.coroutine  
+Decorator to mark generator-based coroutines. This decorator enables legacy generator-based coroutines to be compatible with async/await code: @asyncio.coroutine
+def old_style_coroutine():
+    yield from asyncio.sleep(1)
+
+async def main():
+    await old_style_coroutine()
+ This decorator should not be used for async def coroutines.  Deprecated since version 3.8, will be removed in version 3.10: Use async def instead.

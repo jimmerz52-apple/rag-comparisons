@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.CIEmailField
+
+class CIEmailField(**options)

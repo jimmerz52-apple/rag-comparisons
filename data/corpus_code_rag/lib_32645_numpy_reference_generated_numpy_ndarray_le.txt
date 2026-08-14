@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__le__
+
+numpy.ndarray.__le__ method   ndarray.__le__(value, /)
+ 
+Return self<=value.

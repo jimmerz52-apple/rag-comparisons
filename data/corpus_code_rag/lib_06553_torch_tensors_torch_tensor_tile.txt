@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.tile
+
+tile(*reps) → Tensor  
+See torch.tile()

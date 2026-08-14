@@ -1,0 +1,4 @@
+# python.library.locale#locale.NOEXPR
+
+locale.NOEXPR  
+Get a regular expression that can be used with the regex(3) function to recognize a negative response to a yes/no question.

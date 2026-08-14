@@ -1,0 +1,4 @@
+# python.library.test#test.support.NEVER_EQ
+
+test.support.NEVER_EQ  
+Object that is not equal to anything (even to ALWAYS_EQ). Used to test mixed type comparison.

@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.django.contrib.postgres.forms.BaseRangeField.base_field
+
+base_field  
+The form field to use.

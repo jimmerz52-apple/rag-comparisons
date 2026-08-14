@@ -1,0 +1,7 @@
+# torch.generated.torch.orgqr#torch.orgqr
+
+torch.orgqr(input, input2) → Tensor  
+Computes the orthogonal matrix Q of a QR factorization, from the (input, input2) tuple returned by torch.geqrf(). This directly calls the underlying LAPACK function ?orgqr. See LAPACK documentation for orgqr for further details.  Parameters 
+ 
+input (Tensor) – the a from torch.geqrf(). 
+input2 (Tensor) – the tau from torch.geqrf().

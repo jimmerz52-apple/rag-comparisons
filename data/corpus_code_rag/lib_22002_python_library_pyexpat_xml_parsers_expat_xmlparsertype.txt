@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.XMLParserType
+
+xml.parsers.expat.XMLParserType  
+The type of the return values from the ParserCreate() function.

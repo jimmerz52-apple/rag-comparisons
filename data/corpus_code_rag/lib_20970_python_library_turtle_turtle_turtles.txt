@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.turtles
+
+turtle.turtles()  
+Return the list of turtles on the screen. >>> for turtle in screen.turtles():
+...     turtle.color("red")

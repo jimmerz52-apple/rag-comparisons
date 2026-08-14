@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.iscoroutinefunction
+
+inspect.iscoroutinefunction(object)  
+Return True if the object is a coroutine function (a function defined with an async def syntax).  New in version 3.5.   Changed in version 3.8: Functions wrapped in functools.partial() now return True if the wrapped function is a coroutine function.

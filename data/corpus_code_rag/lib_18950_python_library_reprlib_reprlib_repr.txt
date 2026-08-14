@@ -1,0 +1,4 @@
+# python.library.reprlib#reprlib.Repr
+
+class reprlib.Repr  
+Class which provides formatting services useful in implementing functions similar to the built-in repr(); size limits for different object types are added to avoid the generation of representations which are excessively long.

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.ErrorColumnNumber
+
+xmlparser.ErrorColumnNumber  
+Column number at which an error occurred.

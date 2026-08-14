@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.conjugate
+
+numpy.ndarray.conjugate method   ndarray.conjugate()
+ 
+Return the complex conjugate, element-wise. Refer to numpy.conjugate for full documentation.  See also  numpy.conjugate
+
+equivalent function

@@ -1,0 +1,3 @@
+# tensorflow.keras.preprocessing
+
+Module: tf.keras.preprocessing Keras data preprocessing utils. Modules image module: Set of tools for real-time data augmentation on image data. sequence module: Utilities for preprocessing sequence data. text module: Utilities for text input preprocessing. Functions image_dataset_from_directory(...): Generates a tf.data.Dataset from image files in a directory. text_dataset_from_directory(...): Generates a tf.data.Dataset from text files in a directory. timeseries_dataset_from_array(...): Creates a dataset of sliding windows over a timeseries provided as array.

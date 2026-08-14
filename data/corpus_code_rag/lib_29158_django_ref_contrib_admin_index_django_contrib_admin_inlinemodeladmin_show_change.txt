@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.show_change_link
+
+InlineModelAdmin.show_change_link  
+Specifies whether or not inline objects that can be changed in the admin have a link to the change form. Defaults to False.

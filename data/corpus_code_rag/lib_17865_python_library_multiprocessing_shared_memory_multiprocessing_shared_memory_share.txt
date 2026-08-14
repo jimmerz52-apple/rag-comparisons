@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.ShareableList.count
+
+count(value)  
+Returns the number of occurrences of value.

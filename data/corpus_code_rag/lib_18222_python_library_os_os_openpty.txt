@@ -1,0 +1,4 @@
+# python.library.os#os.openpty
+
+os.openpty()  
+Open a new pseudo-terminal pair. Return a pair of file descriptors (master, slave) for the pty and the tty, respectively. The new file descriptors are non-inheritable. For a (slightly) more portable approach, use the pty module. Availability: some flavors of Unix.  Changed in version 3.4: The new file descriptors are now non-inheritable.

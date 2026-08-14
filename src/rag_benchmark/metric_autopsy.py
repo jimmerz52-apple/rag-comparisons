@@ -273,6 +273,19 @@ def write_autopsy_artifacts(
     results_dir = Path(results_dir)
     acc = pd.read_csv(results_dir / "accuracy_results.csv")
     acc = enrich_accuracy(acc)
+
+    # Attach dataset-specific type columns from QA when missing on accuracy rows
+    # (e.g. code_rag_type, graphrag_bench_type — BenchmarkRunner only stores query_type).
+    qa = json.loads(Path(qa_path).read_text(encoding="utf-8"))
+    by_id = {str(q["id"]): q for q in qa}
+    for col in (type_key, scenario_col, "code_rag_type", "graphrag_bench_type", "multihop_type"):
+        if col == "query_type":
+            continue
+        if col not in acc.columns or acc[col].isna().all():
+            acc[col] = acc["question_id"].map(
+                lambda qid, c=col: by_id.get(str(qid), {}).get(c)
+            )
+
     # Persist enriched accuracy for notebooks / GitHub
     acc.to_csv(results_dir / "accuracy_enriched.csv", index=False)
 
@@ -283,7 +296,8 @@ def write_autopsy_artifacts(
     catalog_path = results_dir / "question_catalog.csv"
     catalog.to_csv(catalog_path, index=False)
 
-    dual = scenario_dual_leaderboard(acc, scenario_col=scenario_col)
+    dual_col = scenario_col if scenario_col in acc.columns and acc[scenario_col].notna().any() else "query_type"
+    dual = scenario_dual_leaderboard(acc, scenario_col=dual_col)
     dual.to_csv(results_dir / "dual_scoreboard.csv", index=False)
 
     stats = disagreement_stats(acc)

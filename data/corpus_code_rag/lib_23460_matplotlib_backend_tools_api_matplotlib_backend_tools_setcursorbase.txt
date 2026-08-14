@@ -1,0 +1,8 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.SetCursorBase
+
+classmatplotlib.backend_tools.SetCursorBase(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Change to the current cursor while inaxes. This tool, keeps track of all ToolToggleBase derived tools, and calls set_cursor when a tool gets triggered.   set_cursor(cursor)[source]
+ 
+[Deprecated] Set the cursor. Notes  Deprecated since version 3.5.  
+   set_figure(figure)[source]

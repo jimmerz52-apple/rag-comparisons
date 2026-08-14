@@ -1,0 +1,4 @@
+# python.library.os#os.getlogin
+
+os.getlogin()  
+Return the name of the user logged in on the controlling terminal of the process. For most purposes, it is more useful to use getpass.getuser() since the latter checks the environment variables LOGNAME or USERNAME to find out who the user is, and falls back to pwd.getpwuid(os.getuid())[0] to get the login name of the current real user id. Availability: Unix, Windows.

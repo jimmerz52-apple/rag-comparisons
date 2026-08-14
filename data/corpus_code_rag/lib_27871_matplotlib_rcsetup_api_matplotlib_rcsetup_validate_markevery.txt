@@ -1,0 +1,10 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_markevery
+
+matplotlib.rcsetup.validate_markevery(s)[source]
+ 
+Validate the markevery property of a Line2D object.  Parameters 
+ 
+sNone, int, (int, int), slice, float, (float, float), or list[int]
+
+  Returns 
+ None, int, (int, int), slice, float, (float, float), or list[int]

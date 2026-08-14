@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.TraversableReader
+
+class importlib.abc.TraversableReader  
+An abstract base class for resource readers capable of serving the files interface. Subclasses ResourceReader and provides concrete implementations of the ResourceReader’s abstract methods. Therefore, any loader supplying TraversableReader also supplies ResourceReader.  New in version 3.9.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.rot90
+
+rot90(k, dims) → Tensor  
+See torch.rot90()

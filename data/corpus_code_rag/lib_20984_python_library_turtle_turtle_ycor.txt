@@ -1,0 +1,10 @@
+# python.library.turtle#turtle.ycor
+
+turtle.ycor()  
+Return the turtle’s y coordinate. >>> turtle.home()
+>>> turtle.left(60)
+>>> turtle.forward(100)
+>>> print(turtle.pos())
+(50.00,86.60)
+>>> print(round(turtle.ycor(), 5))
+86.60254

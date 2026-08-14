@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.validate_email
+
+validate_email  
+An EmailValidator instance without any customizations.

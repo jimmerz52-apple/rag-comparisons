@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.ErrorList.renderer
+
+renderer  
+ New in Django 4.0.  Specifies the renderer to use for ErrorList. Defaults to None which means to use the default renderer specified by the FORM_RENDERER setting.

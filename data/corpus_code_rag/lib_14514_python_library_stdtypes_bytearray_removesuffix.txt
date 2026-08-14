@@ -1,0 +1,9 @@
+# python.library.stdtypes#bytearray.removesuffix
+
+bytes.removesuffix(suffix, /)  
+bytearray.removesuffix(suffix, /)  
+If the binary data ends with the suffix string and that suffix is not empty, return bytes[:-len(suffix)]. Otherwise, return a copy of the original binary data: >>> b'MiscTests'.removesuffix(b'Tests')
+b'Misc'
+>>> b'TmpDirMixin'.removesuffix(b'Tests')
+b'TmpDirMixin'
+ The suffix may be any bytes-like object.  Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made.   New in version 3.9.

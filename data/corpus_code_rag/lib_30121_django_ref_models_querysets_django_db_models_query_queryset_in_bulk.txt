@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.in_bulk
+
+in_bulk(id_list=None, *, field_name='pk')

@@ -1,0 +1,6 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.on_json_loading_failed
+
+on_json_loading_failed(e)  
+Called if get_json() parsing fails and isn’t silenced. If this method returns a value, it is used as the return value for get_json(). The default implementation raises BadRequest.  Parameters 
+e (ValueError) –   Return type 
+Any

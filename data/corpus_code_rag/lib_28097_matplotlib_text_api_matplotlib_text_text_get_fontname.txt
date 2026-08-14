@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_fontname
+
+get_fontname()[source]
+ 
+Return the font name as a string.  See also  font_manager.FontProperties.get_name

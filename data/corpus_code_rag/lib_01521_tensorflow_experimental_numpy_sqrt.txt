@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.sqrt
+
+tf.experimental.numpy.sqrt TensorFlow variant of NumPy's sqrt. 
+tf.experimental.numpy.sqrt(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.sqrt.

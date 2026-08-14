@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.clip
+
+clip() 
+ crops a rectangle inside another clip(Rect) -> Rect  Returns a new rectangle that is cropped to be completely inside the argument Rect. If the two rectangles do not overlap to begin with, a Rect with 0 size is returned.

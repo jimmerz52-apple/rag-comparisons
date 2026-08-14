@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.countvectorizer#sklearn.feature_extraction.text.CountVectorizer.get_stop_words
+
+get_stop_words() [source]
+ 
+Build or fetch the effective stop words list.  Returns 
+ stop_words: list or None
+
+A list of stop words.

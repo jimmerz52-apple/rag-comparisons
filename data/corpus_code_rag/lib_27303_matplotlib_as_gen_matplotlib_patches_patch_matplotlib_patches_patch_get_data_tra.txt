@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_data_transform
+
+get_data_transform()[source]
+ 
+Return the Transform mapping data coordinates to physical coordinates.

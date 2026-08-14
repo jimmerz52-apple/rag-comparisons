@@ -1,0 +1,7 @@
+# 586
+Task: 586
+
+# Write a python function to split the array and add the first part to the end.
+def split_Arr(a,n,k):  
+   b = a[:k] 
+   return (a[k::]+b[::])

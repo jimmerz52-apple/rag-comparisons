@@ -1,0 +1,8 @@
+# flask.api.index#flask.ctx._AppCtxGlobals.pop
+
+pop(name, default=<object object>)  
+Get and remove an attribute by name. Like dict.pop().  Parameters 
+ 
+name (str) – Name of attribute to pop. 
+default (Any) – Value to return if the attribute is not present, instead of raising a KeyError.   Return type 
+Any    Changelog New in version 0.11.

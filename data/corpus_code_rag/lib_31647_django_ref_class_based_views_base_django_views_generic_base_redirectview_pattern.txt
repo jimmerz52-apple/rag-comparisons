@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.RedirectView.pattern_name
+
+pattern_name  
+The name of the URL pattern to redirect to. Reversing will be done using the same args and kwargs as are passed in for this view.

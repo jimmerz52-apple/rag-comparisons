@@ -1,0 +1,6 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.get_rorigin
+
+get_rorigin()[source]
+ 
+ Returns 
+ float

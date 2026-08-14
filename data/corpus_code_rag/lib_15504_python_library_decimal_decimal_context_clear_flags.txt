@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.clear_flags
+
+clear_flags()  
+Resets all of the flags to 0.

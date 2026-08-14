@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.minute
+
+pandas.PeriodIndex.minute   propertyPeriodIndex.minute
+ 
+The minute of the period.

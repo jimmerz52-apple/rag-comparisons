@@ -1,0 +1,24 @@
+# tensorflow.raw_ops.fixedlengthrecorddatasetv2
+
+tf.raw_ops.FixedLengthRecordDatasetV2  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.FixedLengthRecordDatasetV2  
+tf.raw_ops.FixedLengthRecordDatasetV2(
+    filenames, header_bytes, record_bytes, footer_bytes, buffer_size,
+    compression_type, name=None
+)
+
+ 
+
+
+ Args
+  filenames   A Tensor of type string.  
+  header_bytes   A Tensor of type int64.  
+  record_bytes   A Tensor of type int64.  
+  footer_bytes   A Tensor of type int64.  
+  buffer_size   A Tensor of type int64.  
+  compression_type   A Tensor of type string.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type variant.

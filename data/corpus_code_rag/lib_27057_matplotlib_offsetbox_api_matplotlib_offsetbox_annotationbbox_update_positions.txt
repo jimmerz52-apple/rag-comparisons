@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnnotationBbox.update_positions
+
+update_positions(renderer)[source]
+ 
+Update the pixel positions of the annotated point and the text.

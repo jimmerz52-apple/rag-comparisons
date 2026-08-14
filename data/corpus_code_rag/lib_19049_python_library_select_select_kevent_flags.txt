@@ -1,0 +1,15 @@
+# python.library.select#select.kevent.flags
+
+kevent.flags  
+Filter action.   
+Constant Meaning   
+KQ_EV_ADD Adds or modifies an event  
+KQ_EV_DELETE Removes an event from the queue  
+KQ_EV_ENABLE Permitscontrol() to returns the event  
+KQ_EV_DISABLE Disablesevent  
+KQ_EV_ONESHOT Removes event after first occurrence  
+KQ_EV_CLEAR Reset the state after an event is retrieved  
+KQ_EV_SYSFLAGS internal event  
+KQ_EV_FLAG1 internal event  
+KQ_EV_EOF Filter specific EOF condition  
+KQ_EV_ERROR See return values

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.fmax
+
+fmax(other) → Tensor  
+See torch.fmax()

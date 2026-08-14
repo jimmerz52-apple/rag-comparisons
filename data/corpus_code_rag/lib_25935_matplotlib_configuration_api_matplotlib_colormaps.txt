@@ -1,0 +1,7 @@
+# matplotlib_configuration_api#matplotlib.colormaps
+
+matplotlib.colormaps[source]
+ 
+Container for colormaps that are known to Matplotlib by name.  Experimental While we expect the API to be final, we formally mark it as experimental for 3.5 because we want to keep the option to still adapt the API for 3.6 should the need arise.  The universal registry instance is matplotlib.colormaps. There should be no need for users to instantiate ColormapRegistry themselves. Read access uses a dict-like interface mapping names to Colormaps: import matplotlib as mpl
+cmap = mpl.colormaps['viridis']
+ Returned Colormaps are copies, so that their modification does not change the global definition of the colormap. Additional colormaps can be added via ColormapRegistry.register: mpl.colormaps.register(my_colormap)

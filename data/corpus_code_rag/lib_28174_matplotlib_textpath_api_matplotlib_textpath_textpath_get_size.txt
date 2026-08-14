@@ -1,0 +1,5 @@
+# matplotlib.textpath_api#matplotlib.textpath.TextPath.get_size
+
+get_size()[source]
+ 
+Get the text size.

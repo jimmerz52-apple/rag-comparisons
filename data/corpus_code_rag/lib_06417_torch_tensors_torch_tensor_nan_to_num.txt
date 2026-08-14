@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.nan_to_num_
+
+nan_to_num_(nan=0.0, posinf=None, neginf=None) → Tensor  
+In-place version of nan_to_num().

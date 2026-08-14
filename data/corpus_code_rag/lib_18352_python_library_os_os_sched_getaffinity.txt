@@ -1,0 +1,4 @@
+# python.library.os#os.sched_getaffinity
+
+os.sched_getaffinity(pid)  
+Return the set of CPUs the process with PID pid (or the current process if zero) is restricted to.

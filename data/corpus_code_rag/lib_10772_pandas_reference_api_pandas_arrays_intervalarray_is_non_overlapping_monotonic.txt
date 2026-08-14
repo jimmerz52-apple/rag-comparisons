@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.arrays.intervalarray.is_non_overlapping_monotonic
+
+pandas.arrays.IntervalArray.is_non_overlapping_monotonic   propertyIntervalArray.is_non_overlapping_monotonic
+ 
+Return True if the IntervalArray is non-overlapping (no Intervals share points) and is either monotonic increasing or monotonic decreasing, else False.

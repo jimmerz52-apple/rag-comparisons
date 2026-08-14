@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.add_cgi_vars
+
+add_cgi_vars()  
+Insert CGI variables for the current request into the environ attribute.

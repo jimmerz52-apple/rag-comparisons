@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.putwch
+
+msvcrt.putwch(unicode_char)  
+Wide char variant of putch(), accepting a Unicode value.

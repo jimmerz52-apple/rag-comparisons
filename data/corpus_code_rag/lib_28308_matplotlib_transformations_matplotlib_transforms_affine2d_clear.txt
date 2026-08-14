@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.clear
+
+clear()[source]
+ 
+Reset the underlying matrix to the identity transform.

@@ -1,0 +1,4 @@
+# python.library.email.header#email.header.Header.__str__
+
+__str__()  
+Returns an approximation of the Header as a string, using an unlimited line length. All pieces are converted to unicode using the specified encoding and joined together appropriately. Any pieces with a charset of 'unknown-8bit' are decoded as ASCII using the 'replace' error handler.  Changed in version 3.2: Added handling for the 'unknown-8bit' charset.

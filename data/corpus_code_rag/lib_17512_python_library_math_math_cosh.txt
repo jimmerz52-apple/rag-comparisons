@@ -1,0 +1,4 @@
+# python.library.math#math.cosh
+
+math.cosh(x)  
+Return the hyperbolic cosine of x.

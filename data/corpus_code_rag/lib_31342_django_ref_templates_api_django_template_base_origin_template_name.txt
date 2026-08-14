@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.base.Origin.template_name
+
+template_name  
+The relative path to the template as passed into the template loader. If the template is instantiated directly rather than through a template loader, this is None.

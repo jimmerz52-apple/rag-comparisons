@@ -1,0 +1,10 @@
+# numpy.reference.random.bit_generators.generated.numpy.random.pcg64.state
+
+numpy.random.PCG64.state attribute   random.PCG64.state
+ 
+Get or set the PRNG state  Returns 
+ 
+statedict
+
+
+Dictionary containing the information required to describe the state of the PRNG

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.set_fc
+
+set_fc(c)[source]
+ 
+Alias for set_facecolor.

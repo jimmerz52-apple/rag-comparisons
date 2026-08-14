@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea.get_minimumdescent
+
+get_minimumdescent()[source]
+ 
+[Deprecated] Get minimumdescent. Notes  Deprecated since version 3.4.

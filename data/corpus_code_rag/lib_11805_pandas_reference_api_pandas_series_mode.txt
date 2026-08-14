@@ -1,0 +1,13 @@
+# pandas.reference.api.pandas.series.mode
+
+pandas.Series.mode   Series.mode(dropna=True)[source]
+ 
+Return the mode(s) of the Series. The mode is the value that appears most often. There can be multiple modes. Always returns Series even if only one value is returned.  Parameters 
+ 
+dropna:bool, default True
+
+
+Don’t consider counts of NaN/NaT.    Returns 
+ Series
+
+Modes of the Series in sorted order.

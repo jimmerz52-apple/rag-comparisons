@@ -1,0 +1,8 @@
+# flask.api.index#flask.ctx._AppCtxGlobals.setdefault
+
+setdefault(name, default=None)  
+Get the value of an attribute if it is present, otherwise set and return a default value. Like dict.setdefault().  Parameters 
+ 
+name (str) – Name of attribute to get. 
+default (Optional[Any]) – Value to set and return if the attribute is not present.   Return type 
+Any    Changelog New in version 0.11.

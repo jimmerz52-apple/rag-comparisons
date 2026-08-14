@@ -1,0 +1,83 @@
+# sklearn.modules.generated.sklearn.linear_model.elasticnetcv#sklearn.linear_model.ElasticNetCV.path
+
+static path(*args, **kwargs) [source]
+ 
+Compute elastic net path with coordinate descent. The elastic net optimization function varies for mono and multi-outputs. For mono-output tasks it is: 1 / (2 * n_samples) * ||y - Xw||^2_2
++ alpha * l1_ratio * ||w||_1
++ 0.5 * alpha * (1 - l1_ratio) * ||w||^2_2
+ For multi-output tasks it is: (1 / (2 * n_samples)) * ||Y - XW||^Fro_2
++ alpha * l1_ratio * ||W||_21
++ 0.5 * alpha * (1 - l1_ratio) * ||W||_Fro^2
+ Where: ||W||_21 = \sum_i \sqrt{\sum_j w_{ij}^2}
+ i.e. the sum of norm of each row. Read more in the User Guide.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data. Pass directly as Fortran-contiguous data to avoid unnecessary memory duplication. If y is mono-output then X can be sparse.  
+y{array-like, sparse matrix} of shape (n_samples,) or (n_samples, n_outputs) 
+
+Target values.  
+l1_ratiofloat, default=0.5 
+
+Number between 0 and 1 passed to elastic net (scaling between l1 and l2 penalties). l1_ratio=1 corresponds to the Lasso.  
+epsfloat, default=1e-3 
+
+Length of the path. eps=1e-3 means that alpha_min / alpha_max = 1e-3.  
+n_alphasint, default=100 
+
+Number of alphas along the regularization path.  
+alphasndarray, default=None 
+
+List of alphas where to compute the models. If None alphas are set automatically.  
+precompute‘auto’, bool or array-like of shape (n_features, n_features), default=’auto’ 
+
+Whether to use a precomputed Gram matrix to speed up calculations. If set to 'auto' let us decide. The Gram matrix can also be passed as argument.  
+Xyarray-like of shape (n_features,) or (n_features, n_outputs), default=None 
+
+Xy = np.dot(X.T, y) that can be precomputed. It is useful only when the Gram matrix is precomputed.  
+copy_Xbool, default=True 
+
+If True, X will be copied; else, it may be overwritten.  
+coef_initndarray of shape (n_features, ), default=None 
+
+The initial values of the coefficients.  
+verbosebool or int, default=False 
+
+Amount of verbosity.  
+return_n_iterbool, default=False 
+
+Whether to return the number of iterations or not.  
+positivebool, default=False 
+
+If set to True, forces coefficients to be positive. (Only allowed when y.ndim == 1).  
+check_inputbool, default=True 
+
+If set to False, the input validation checks are skipped (including the Gram matrix when provided). It is assumed that they are handled by the caller.  
+**paramskwargs 
+
+Keyword arguments passed to the coordinate descent solver.    Returns 
+ 
+alphasndarray of shape (n_alphas,) 
+
+The alphas along the path where models are computed.  
+coefsndarray of shape (n_features, n_alphas) or (n_outputs, n_features, n_alphas) 
+
+Coefficients along the path.  
+dual_gapsndarray of shape (n_alphas,) 
+
+The dual gaps at the end of the optimization for each alpha.  
+n_iterslist of int 
+
+The number of iterations taken by the coordinate descent optimizer to reach the specified tolerance for each alpha. (Is returned when return_n_iter is set to True).      See also  
+MultiTaskElasticNet
+
+
+MultiTaskElasticNetCV
+
+
+ElasticNet
+
+
+ElasticNetCV
+
+  Notes For an example, see examples/linear_model/plot_lasso_coordinate_descent_path.py.

@@ -1,0 +1,5 @@
+# python.library.datetime#datetime.datetime.today
+
+classmethod datetime.today()  
+Return the current local datetime, with tzinfo None. Equivalent to: datetime.fromtimestamp(time.time())
+ See also now(), fromtimestamp(). This method is functionally equivalent to now(), but without a tz parameter.

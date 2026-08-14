@@ -1,0 +1,7 @@
+# werkzeug.http.index#werkzeug.http.is_entity_header
+
+werkzeug.http.is_entity_header(header)  
+Check if a header is an entity header.  Changelog New in version 0.5.   Parameters 
+header (str) – the header to test.  Returns 
+True if it’s an entity header, False otherwise.  Return type 
+bool

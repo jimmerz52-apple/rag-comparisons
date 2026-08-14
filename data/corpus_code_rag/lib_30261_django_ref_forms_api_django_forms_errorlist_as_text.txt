@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.ErrorList.as_text
+
+as_text()  
+Renders the error list using the template defined by template_name_text.

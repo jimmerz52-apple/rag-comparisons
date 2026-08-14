@@ -1,0 +1,3 @@
+# django.ref.request-response#django.http.HttpResponse
+
+class HttpResponse

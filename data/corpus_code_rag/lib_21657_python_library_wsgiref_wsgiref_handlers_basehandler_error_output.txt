@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.error_output
+
+error_output(environ, start_response)  
+This method is a WSGI application to generate an error page for the user. It is only invoked if an error occurs before headers are sent to the client. This method can access the current error information using sys.exc_info(), and should pass that information to start_response when calling it (as described in the “Error Handling” section of PEP 3333). The default implementation just uses the error_status, error_headers, and error_body attributes to generate an output page. Subclasses can override this to produce more dynamic error output. Note, however, that it’s not recommended from a security perspective to spit out diagnostics to any old user; ideally, you should have to do something special to enable diagnostic output, which is why the default implementation doesn’t include any.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.add_
+
+add_(other, *, alpha=1) → Tensor  
+In-place version of add()

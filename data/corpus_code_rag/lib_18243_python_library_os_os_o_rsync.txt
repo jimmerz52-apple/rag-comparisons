@@ -1,0 +1,10 @@
+# python.library.os#os.O_RSYNC
+
+os.O_DSYNC  
+os.O_RSYNC  
+os.O_SYNC  
+os.O_NDELAY  
+os.O_NONBLOCK  
+os.O_NOCTTY  
+os.O_CLOEXEC  
+The above constants are only available on Unix.  Changed in version 3.3: Add O_CLOEXEC constant.

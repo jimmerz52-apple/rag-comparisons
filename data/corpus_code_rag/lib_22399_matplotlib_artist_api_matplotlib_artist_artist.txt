@@ -1,0 +1,5 @@
+# matplotlib.artist_api#matplotlib.artist.Artist
+
+classmatplotlib.artist.Artist[source]
+ 
+Abstract base class for objects that render into a FigureCanvas. Typically, all visible elements in a figure are subclasses of Artist.

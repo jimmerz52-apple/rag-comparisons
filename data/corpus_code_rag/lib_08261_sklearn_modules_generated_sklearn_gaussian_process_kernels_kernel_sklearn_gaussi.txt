@@ -1,0 +1,5 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.kernel#sklearn.gaussian_process.kernels.Kernel.is_stationary
+
+abstract is_stationary() [source]
+ 
+Returns whether the kernel is stationary.

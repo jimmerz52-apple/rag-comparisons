@@ -1,0 +1,7 @@
+# sklearn.modules.generated.sklearn.neighbors.balltree#sklearn.neighbors.BallTree.get_tree_stats
+
+get_tree_stats(self)  
+Get tree status.  Returns 
+ tree_stats: tuple of int
+
+(number of trims, number of leaves, number of splits)

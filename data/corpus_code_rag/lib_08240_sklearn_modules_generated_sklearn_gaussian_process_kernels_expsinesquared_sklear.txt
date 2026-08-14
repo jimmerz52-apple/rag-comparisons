@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.expsinesquared#sklearn.gaussian_process.kernels.ExpSineSquared.requires_vector_input
+
+property requires_vector_input  
+Returns whether the kernel is defined on fixed-length feature vectors or generic objects. Defaults to True for backward compatibility.

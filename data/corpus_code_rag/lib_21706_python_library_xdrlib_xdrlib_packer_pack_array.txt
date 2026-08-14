@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_array
+
+Packer.pack_array(list, pack_item)  
+Packs a variable length list of homogeneous items. First, the length of the list is packed as an unsigned integer, then each element is packed as in pack_farray() above.

@@ -1,0 +1,5 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackendAgg.set_canvas_size
+
+set_canvas_size(w, h, d)[source]
+ 
+Set the dimension of the drawing canvas.

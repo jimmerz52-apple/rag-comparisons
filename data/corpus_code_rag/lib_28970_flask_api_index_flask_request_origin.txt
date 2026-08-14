@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.origin
+
+origin  
+The host that the request originated from. Set access_control_allow_origin on the response to indicate which origins are allowed.

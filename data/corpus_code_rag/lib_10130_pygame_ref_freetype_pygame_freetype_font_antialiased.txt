@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.antialiased
+
+antialiased 
+ Font anti-aliasing mode antialiased -> bool  Gets or sets the font's anti-aliasing mode. This defaults to True on all fonts, which are rendered with full 8 bit blending. Set to False to do monochrome rendering. This should provide a small speed gain and reduce cache memory size.

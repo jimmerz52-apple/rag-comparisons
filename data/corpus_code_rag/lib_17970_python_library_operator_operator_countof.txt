@@ -1,0 +1,4 @@
+# python.library.operator#operator.countOf
+
+operator.countOf(a, b)  
+Return the number of occurrences of b in a.

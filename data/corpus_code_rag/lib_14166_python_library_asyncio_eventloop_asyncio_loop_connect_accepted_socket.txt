@@ -1,0 +1,8 @@
+# python.library.asyncio-eventloop#asyncio.loop.connect_accepted_socket
+
+coroutine loop.connect_accepted_socket(protocol_factory, sock, *, ssl=None, ssl_handshake_timeout=None)  
+Wrap an already accepted connection into a transport/protocol pair. This method can be used by servers that accept connections outside of asyncio but that use asyncio to handle them. Parameters:  
+protocol_factory must be a callable returning a protocol implementation. 
+sock is a preexisting socket object returned from socket.accept. 
+ssl can be set to an SSLContext to enable SSL over the accepted connections. 
+ssl_handshake_timeout is (for an SSL connection) the time in seconds to wait for the SSL handshake to complete before aborting the connection. 60.0 seconds if None (default).  Returns a (transport, protocol) pair.  New in version 3.7: The ssl_handshake_timeout parameter.   New in version 3.5.3.

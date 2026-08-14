@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.set_fontsize
+
+set_fontsize(size)[source]
+ 
+Set the text fontsize.

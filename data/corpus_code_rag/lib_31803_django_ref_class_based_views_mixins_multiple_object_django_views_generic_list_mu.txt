@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.get_queryset
+
+get_queryset()  
+Get the list of items for this view. This must be an iterable and may be a queryset (in which queryset-specific behavior will be enabled).

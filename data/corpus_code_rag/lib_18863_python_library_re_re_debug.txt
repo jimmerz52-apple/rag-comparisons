@@ -1,0 +1,4 @@
+# python.library.re#re.DEBUG
+
+re.DEBUG  
+Display debug information about compiled expression. No corresponding inline flag.

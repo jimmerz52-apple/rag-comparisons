@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.ndbm.ndbm.close
+
+ndbm.close()  
+Close the ndbm database.

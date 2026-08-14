@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.unionall
+
+unionall() 
+ the union of many rectangles unionall(Rect_sequence) -> Rect  Returns the union of one rectangle with a sequence of many rectangles.

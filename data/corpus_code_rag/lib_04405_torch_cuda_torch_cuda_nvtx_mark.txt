@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.nvtx.mark
+
+torch.cuda.nvtx.mark(msg) [source]
+ 
+Describe an instantaneous event that occurred at some point.  Parameters 
+msg (string) – ASCII message to associate with the event.

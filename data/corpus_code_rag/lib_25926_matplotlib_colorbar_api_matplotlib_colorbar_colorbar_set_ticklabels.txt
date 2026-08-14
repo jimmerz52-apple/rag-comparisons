@@ -1,0 +1,18 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.set_ticklabels
+
+set_ticklabels(ticklabels, update_ticks=<deprecated parameter>, *, minor=False, **kwargs)[source]
+ 
+Set tick labels.  Discouraged The use of this method is discouraged, because of the dependency on tick positions. In most cases, you'll want to use set_ticks(positions, labels=labels) instead. If you are using this method, you should always fix the tick positions before, e.g. by using Colorbar.set_ticks or by explicitly setting a FixedLocator on the long axis of the colorbar. Otherwise, ticks are free to move and the labels may end up in unexpected positions.   Parameters 
+ 
+ticklabelssequence of str or of Text
+
+
+Texts for labeling each tick location in the sequence set by Colorbar.set_ticks; the number of labels must match the number of locations.  
+update_ticksbool, default: True
+
+ This keyword argument is ignored and will be be removed. Deprecated  minorbool
+
+
+If True, set minor ticks instead of major ticks.    **kwargs
+
+Text properties for the labels.

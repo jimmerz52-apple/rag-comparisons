@@ -1,0 +1,13 @@
+# python.library.select#select.kevent.filter
+
+kevent.filter  
+Name of the kernel filter.   
+Constant Meaning   
+KQ_FILTER_READ Takes a descriptor and returns whenever there is data available to read  
+KQ_FILTER_WRITE Takes a descriptor and returns whenever there is data available to write  
+KQ_FILTER_AIO AIO requests  
+KQ_FILTER_VNODE Returns when one or more of the requested events watched in fflag occurs  
+KQ_FILTER_PROC Watch for events on a process id  
+KQ_FILTER_NETDEV Watch for events on a network device [not available on Mac OS X]  
+KQ_FILTER_SIGNAL Returns whenever the watched signal is delivered to the process  
+KQ_FILTER_TIMER Establishes an arbitrary timer

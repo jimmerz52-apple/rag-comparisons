@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.FTPHandler
+
+class urllib.request.FTPHandler  
+Open FTP URLs.

@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.MessageBeep
+
+winsound.MessageBeep(type=MB_OK)  
+Call the underlying MessageBeep() function from the Platform API. This plays a sound as specified in the registry. The type argument specifies which sound to play; possible values are -1, MB_ICONASTERISK, MB_ICONEXCLAMATION, MB_ICONHAND, MB_ICONQUESTION, and MB_OK, all described below. The value -1 produces a “simple beep”; this is the final fallback if a sound cannot be played otherwise. If the system indicates an error, RuntimeError is raised.

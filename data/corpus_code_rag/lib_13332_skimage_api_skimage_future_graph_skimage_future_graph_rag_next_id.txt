@@ -1,0 +1,9 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG.next_id
+
+next_id() [source]
+ 
+Returns the id for the new node to be inserted. The current implementation returns one more than the maximum id.  Returns 
+ 
+idint 
+
+The id of the new node to be inserted.

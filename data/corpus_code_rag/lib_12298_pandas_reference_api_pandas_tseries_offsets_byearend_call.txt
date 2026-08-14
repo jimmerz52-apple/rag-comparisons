@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.byearend.__call__
+
+pandas.tseries.offsets.BYearEnd.__call__   BYearEnd.__call__(*args, **kwargs)
+ 
+Call self as a function.

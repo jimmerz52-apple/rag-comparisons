@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_major_formatter
+
+matplotlib.axis.Axis.get_major_formatter   Axis.get_major_formatter()[source]
+ 
+Get the formatter of the major ticker.

@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.EmailValidator.code
+
+code  
+The error code used by ValidationError if validation fails. Defaults to "invalid".

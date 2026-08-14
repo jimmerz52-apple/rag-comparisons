@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.UpdateView.object
+
+object  
+When using UpdateView you have access to self.object, which is the object being updated.

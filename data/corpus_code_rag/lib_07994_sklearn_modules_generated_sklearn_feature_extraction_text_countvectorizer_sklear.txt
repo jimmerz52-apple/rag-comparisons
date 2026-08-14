@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.countvectorizer#sklearn.feature_extraction.text.CountVectorizer.build_preprocessor
+
+build_preprocessor() [source]
+ 
+Return a function to preprocess the text before tokenization.  Returns 
+ preprocessor: callable
+
+A function to preprocess the text before tokenization.

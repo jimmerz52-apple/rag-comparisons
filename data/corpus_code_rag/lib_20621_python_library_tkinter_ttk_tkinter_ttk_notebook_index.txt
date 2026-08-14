@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Notebook.index
+
+index(tab_id)  
+Returns the numeric index of the tab specified by tab_id, or the total number of tabs if tab_id is the string “end”.

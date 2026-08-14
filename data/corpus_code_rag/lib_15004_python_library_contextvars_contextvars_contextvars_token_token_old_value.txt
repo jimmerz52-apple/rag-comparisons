@@ -1,0 +1,4 @@
+# python.library.contextvars#contextvars.contextvars.Token.Token.old_value
+
+Token.old_value  
+A read-only property. Set to the value the variable had before the ContextVar.set() method call that created the token. It points to Token.MISSING is the variable was not set before the call.

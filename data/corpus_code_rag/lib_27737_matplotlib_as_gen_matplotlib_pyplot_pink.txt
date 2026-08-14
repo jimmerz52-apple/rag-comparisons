@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.pink
+
+matplotlib.pyplot.pink   matplotlib.pyplot.pink()[source]
+ 
+Set the colormap to 'pink'. This changes the default colormap as well as the colormap of the current image if there is one. See help(colormaps) for more information.

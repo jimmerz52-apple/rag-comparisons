@@ -1,0 +1,37 @@
+# skimage.api.skimage.feature#skimage.feature.multiscale_basic_features
+
+skimage.feature.multiscale_basic_features(image, multichannel=False, intensity=True, edges=True, texture=True, sigma_min=0.5, sigma_max=16, num_sigma=None, num_workers=None) [source]
+ 
+Local features for a single- or multi-channel nd image. Intensity, gradient intensity and local structure are computed at different scales thanks to Gaussian blurring.  Parameters 
+ 
+imagendarray 
+
+Input image, which can be grayscale or multichannel.  
+multichannelbool, default False 
+
+True if the last dimension corresponds to color channels.  
+intensitybool, default True 
+
+If True, pixel intensities averaged over the different scales are added to the feature set.  
+edgesbool, default True 
+
+If True, intensities of local gradients averaged over the different scales are added to the feature set.  
+texturebool, default True 
+
+If True, eigenvalues of the Hessian matrix after Gaussian blurring at different scales are added to the feature set.  
+sigma_minfloat, optional 
+
+Smallest value of the Gaussian kernel used to average local neighbourhoods before extracting features.  
+sigma_maxfloat, optional 
+
+Largest value of the Gaussian kernel used to average local neighbourhoods before extracting features.  
+num_sigmaint, optional 
+
+Number of values of the Gaussian kernel between sigma_min and sigma_max. If None, sigma_min multiplied by powers of 2 are used.  
+num_workersint or None, optional 
+
+The number of parallel threads to use. If set to None, the full set of available cores are used.    Returns 
+ 
+featuresnp.ndarray 
+
+Array of shape image.shape + (n_features,)

@@ -1,0 +1,3 @@
+# django.ref.models.expressions#django.db.models.Exists
+
+class Exists(queryset)

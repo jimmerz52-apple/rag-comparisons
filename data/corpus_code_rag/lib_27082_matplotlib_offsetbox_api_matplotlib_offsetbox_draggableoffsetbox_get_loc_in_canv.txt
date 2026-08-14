@@ -1,0 +1,3 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DraggableOffsetBox.get_loc_in_canvas
+
+get_loc_in_canvas()[source]

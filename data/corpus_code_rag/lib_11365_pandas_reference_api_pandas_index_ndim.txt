@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.ndim
+
+pandas.Index.ndim   propertyIndex.ndim
+ 
+Number of dimensions of the underlying data, by definition 1.

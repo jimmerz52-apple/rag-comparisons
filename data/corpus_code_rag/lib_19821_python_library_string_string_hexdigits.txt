@@ -1,0 +1,4 @@
+# python.library.string#string.hexdigits
+
+string.hexdigits  
+The string '0123456789abcdefABCDEF'.

@@ -1,0 +1,25 @@
+# skimage.api.skimage.draw#skimage.draw.ellipsoid
+
+skimage.draw.ellipsoid(a, b, c, spacing=(1.0, 1.0, 1.0), levelset=False) [source]
+ 
+Generates ellipsoid with semimajor axes aligned with grid dimensions on grid with specified spacing.  Parameters 
+ 
+afloat 
+
+Length of semimajor axis aligned with x-axis.  
+bfloat 
+
+Length of semimajor axis aligned with y-axis.  
+cfloat 
+
+Length of semimajor axis aligned with z-axis.  
+spacingtuple of floats, length 3 
+
+Spacing in (x, y, z) spatial dimensions.  
+levelsetbool 
+
+If True, returns the level set for this ellipsoid (signed level set about zero, with positive denoting interior) as np.float64. False returns a binarized version of said level set.    Returns 
+ 
+ellip(N, M, P) array 
+
+Ellipsoid centered in a correctly sized array for given spacing. Boolean dtype unless levelset=True, in which case a float array is returned with the level set above 0.0 representing the ellipsoid.

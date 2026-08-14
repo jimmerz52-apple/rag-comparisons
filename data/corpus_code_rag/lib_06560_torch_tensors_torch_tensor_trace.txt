@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.trace
+
+trace() → Tensor  
+See torch.trace()

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cluster.birch#sklearn.cluster.Birch.predict
+
+predict(X) [source]
+ 
+Predict data using the centroids_ of subclusters. Avoid computation of the row norms of X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Input data.    Returns 
+ 
+labelsndarray of shape(n_samples,) 
+
+Labelled data.

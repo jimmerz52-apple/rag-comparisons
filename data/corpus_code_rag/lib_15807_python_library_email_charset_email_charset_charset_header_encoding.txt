@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.header_encoding
+
+header_encoding  
+If the character set must be encoded before it can be used in an email header, this attribute will be set to Charset.QP (for quoted-printable), Charset.BASE64 (for base64 encoding), or Charset.SHORTEST for the shortest of QP or BASE64 encoding. Otherwise, it will be None.

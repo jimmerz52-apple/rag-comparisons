@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.WWWAuthenticate.set_basic
+
+set_basic(realm='authentication required')  
+Clear the auth info and enable basic auth.

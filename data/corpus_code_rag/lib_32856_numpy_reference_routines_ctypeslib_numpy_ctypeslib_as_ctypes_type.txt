@@ -1,0 +1,16 @@
+# numpy.reference.routines.ctypeslib#numpy.ctypeslib.as_ctypes_type
+
+numpy.ctypeslib.as_ctypes_type(dtype)[source]
+ 
+Convert a dtype into a ctypes type.  Parameters 
+ 
+dtypedtype
+
+
+The dtype to convert    Returns 
+ ctype
+
+A ctype scalar, union, array, or struct    Raises 
+ NotImplementedError
+
+If the conversion is not possible     Notes This function does not losslessly round-trip in either direction. np.dtype(as_ctypes_type(dt)) will:  insert padding fields reorder fields to be sorted by offset discard field titles  as_ctypes_type(np.dtype(ctype)) will:  discard the class names of ctypes.Structures and ctypes.Unions convert single-element ctypes.Unions into single-element ctypes.Structures insert padding fields

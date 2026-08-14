@@ -1,0 +1,35 @@
+# torch.distributions#torch.distributions.von_mises.VonMises
+
+class torch.distributions.von_mises.VonMises(loc, concentration, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution A circular von Mises distribution. This implementation uses polar coordinates. The loc and value args can be any real number (to facilitate unconstrained optimization), but are interpreted as angles modulo 2 pi.  Example::
+
+>>> m = dist.VonMises(torch.tensor([1.0]), torch.tensor([1.0]))
+>>> m.sample() # von Mises distributed with loc=1 and concentration=1
+tensor([1.9777])
+    Parameters 
+ 
+loc (torch.Tensor) – an angle in radians. 
+concentration (torch.Tensor) – concentration parameter     
+arg_constraints = {'concentration': GreaterThan(lower_bound=0.0), 'loc': Real()} 
+  
+expand(batch_shape) [source]
+
+  
+has_rsample = False 
+  
+log_prob(value) [source]
+
+  
+property mean  
+The provided mean is the circular one. 
+  
+sample(sample_shape=torch.Size([])) [source]
+ 
+The sampling algorithm for the von Mises distribution is based on the following paper: Best, D. J., and Nicholas I. Fisher. “Efficient simulation of the von Mises distribution.” Applied Statistics (1979): 152-157. 
+  
+support = Real() 
+  
+variance [source]
+ 
+The provided variance is the circular one.

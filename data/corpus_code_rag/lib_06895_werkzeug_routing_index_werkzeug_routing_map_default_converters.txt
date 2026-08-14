@@ -1,0 +1,4 @@
+# werkzeug.routing.index#werkzeug.routing.Map.default_converters
+
+default_converters = {'any': <class 'werkzeug.routing.AnyConverter'>, 'default': <class 'werkzeug.routing.UnicodeConverter'>, 'float': <class 'werkzeug.routing.FloatConverter'>, 'int': <class 'werkzeug.routing.IntegerConverter'>, 'path': <class 'werkzeug.routing.PathConverter'>, 'string': <class 'werkzeug.routing.UnicodeConverter'>, 'uuid': <class 'werkzeug.routing.UUIDConverter'>}  
+A dict of default converters to be used.

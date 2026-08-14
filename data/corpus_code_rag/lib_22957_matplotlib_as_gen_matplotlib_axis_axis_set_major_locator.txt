@@ -1,0 +1,44 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_major_locator
+
+matplotlib.axis.Axis.set_major_locator   Axis.set_major_locator(locator)[source]
+ 
+Set the locator of the major ticker.  Parameters 
+ 
+locatorLocator
+
+   
+  Examples using matplotlib.axis.Axis.set_major_locator
+ 
+   Hatch-filled histograms   
+
+   Creating a timeline with lines, dates, and text   
+
+   Date tick labels   
+
+   Anatomy of a figure   
+
+   3D surface (colormap)   
+
+   3D surface (checkerboard)   
+
+   Scales   
+
+   MRI With EEG   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Centering labels between ticks   
+
+   Formatting date ticks using ConciseDateFormatter   
+
+   Date Demo Convert   
+
+   Placing date ticks using recurrence rules   
+
+   Major and minor ticks   
+
+   Setting tick labels from a list of values   
+
+   Choosing Colormaps in Matplotlib   
+
+   Text in Matplotlib Plots

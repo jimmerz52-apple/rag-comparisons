@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.proj3d.inv_transform
+
+mpl_toolkits.mplot3d.proj3d.inv_transform   mpl_toolkits.mplot3d.proj3d.inv_transform(xs, ys, zs, M)[source]

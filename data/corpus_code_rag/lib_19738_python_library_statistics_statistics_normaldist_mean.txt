@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.mean
+
+mean  
+A read-only property for the arithmetic mean of a normal distribution.

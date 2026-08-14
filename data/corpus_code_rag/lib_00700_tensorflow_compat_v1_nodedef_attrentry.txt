@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.nodedef.attrentry
+
+tf.compat.v1.NodeDef.AttrEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   AttrValue value

@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.linear_model.poissonregressor#sklearn.linear_model.PoissonRegressor.score
+
+score(X, y, sample_weight=None) [source]
+ 
+Compute D^2, the percentage of deviance explained. D^2 is a generalization of the coefficient of determination R^2. R^2 uses squared error and D^2 deviance. Note that those two are equal for family='normal'. D^2 is defined as \(D^2 = 1-\frac{D(y_{true},y_{pred})}{D_{null}}\), \(D_{null}\) is the null deviance, i.e. the deviance of a model with intercept alone, which corresponds to \(y_{pred} = \bar{y}\). The mean \(\bar{y}\) is averaged by sample_weight. Best possible score is 1.0 and it can be negative (because the model can be arbitrarily worse).  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Test samples.  
+yarray-like of shape (n_samples,) 
+
+True values of target.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+D^2 of self.predict(X) w.r.t. y.

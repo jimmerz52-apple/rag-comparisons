@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.shape
+
+numpy.generic.shape attribute   generic.shape
+ 
+Tuple of array dimensions.

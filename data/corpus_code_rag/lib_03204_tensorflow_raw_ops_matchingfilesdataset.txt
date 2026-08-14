@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.matchingfilesdataset
+
+tf.raw_ops.MatchingFilesDataset  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.MatchingFilesDataset  
+tf.raw_ops.MatchingFilesDataset(
+    patterns, name=None
+)
+
+ 
+
+
+ Args
+  patterns   A Tensor of type string.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type variant.

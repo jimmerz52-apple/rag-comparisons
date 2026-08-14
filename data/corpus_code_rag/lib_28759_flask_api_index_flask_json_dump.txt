@@ -1,0 +1,10 @@
+# flask.api.index#flask.json.dump
+
+flask.json.dump(obj, fp, app=None, **kwargs)  
+Serialize an object to JSON written to a file object. Takes the same arguments as the built-in json.dump(), with some defaults from application configuration.  Parameters 
+ 
+obj (Any) – Object to serialize to JSON. 
+fp (IO[str]) – File object to write JSON to. 
+app (Optional[Flask]) – Use this app’s config instead of the active app context or defaults. 
+kwargs (Any) – Extra arguments passed to json.dump().   Return type 
+None    Changed in version 2.0: Writing to a binary file, and the encoding argument, is deprecated and will be removed in Flask 2.1.

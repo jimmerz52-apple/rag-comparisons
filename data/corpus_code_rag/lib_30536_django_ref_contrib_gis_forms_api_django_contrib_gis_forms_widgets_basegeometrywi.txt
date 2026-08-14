@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.BaseGeometryWidget.map_width
+
+BaseGeometryWidget.map_width  
+Height and width of the widget map (default is 400x600).

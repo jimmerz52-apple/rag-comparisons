@@ -1,0 +1,12 @@
+# python.library.typing#typing.Union
+
+typing.Union  
+Union type; Union[X, Y] means either X or Y. To define a union, use e.g. Union[int, str]. Details:  The arguments must be types and there must be at least one. 
+Unions of unions are flattened, e.g.: Union[Union[int, str], float] == Union[int, str, float]
+  
+Unions of a single argument vanish, e.g.: Union[int] == int  # The constructor actually returns int
+  
+Redundant arguments are skipped, e.g.: Union[int, str, int] == Union[int, str]
+  
+When comparing unions, the argument order is ignored, e.g.: Union[int, str] == Union[str, int]
+  You cannot subclass or instantiate a union. You cannot write Union[X][Y]. You can use Optional[X] as a shorthand for Union[X, None].   Changed in version 3.7: Don’t remove explicit subclasses from unions at runtime.

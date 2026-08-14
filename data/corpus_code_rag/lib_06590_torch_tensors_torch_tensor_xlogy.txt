@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.xlogy_
+
+xlogy_(other) → Tensor  
+In-place version of xlogy()

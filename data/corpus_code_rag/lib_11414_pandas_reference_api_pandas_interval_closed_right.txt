@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.interval.closed_right
+
+pandas.Interval.closed_right   Interval.closed_right
+ 
+Check if the interval is closed on the right side. For the meaning of closed and open see Interval.  Returns 
+ bool
+
+True if the Interval is closed on the left-side.

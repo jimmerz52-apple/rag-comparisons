@@ -1,0 +1,27 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin
+
+class AccessMixin  
+ 
+login_url  
+Default return value for get_login_url(). Defaults to None in which case get_login_url() falls back to settings.LOGIN_URL. 
+  
+permission_denied_message  
+Default return value for get_permission_denied_message(). Defaults to an empty string. 
+  
+redirect_field_name  
+Default return value for get_redirect_field_name(). Defaults to "next". 
+  
+raise_exception  
+If this attribute is set to True, a PermissionDenied exception is raised when the conditions are not met. When False (the default), anonymous users are redirected to the login page. 
+  
+get_login_url()  
+Returns the URL that users who don’t pass the test will be redirected to. Returns login_url if set, or settings.LOGIN_URL otherwise. 
+  
+get_permission_denied_message()  
+When raise_exception is True, this method can be used to control the error message passed to the error handler for display to the user. Returns the permission_denied_message attribute by default. 
+  
+get_redirect_field_name()  
+Returns the name of the query parameter that will contain the URL the user should be redirected to after a successful login. If you set this to None, a query parameter won’t be added. Returns the redirect_field_name attribute by default. 
+  
+handle_no_permission()  
+Depending on the value of raise_exception, the method either raises a PermissionDenied exception or redirects the user to the login_url, optionally including the redirect_field_name if it is set.

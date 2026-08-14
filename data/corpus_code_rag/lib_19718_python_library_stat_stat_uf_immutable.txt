@@ -1,0 +1,4 @@
+# python.library.stat#stat.UF_IMMUTABLE
+
+stat.UF_IMMUTABLE  
+The file may not be changed.

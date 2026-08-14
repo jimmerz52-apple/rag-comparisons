@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.add_stream
+
+msilib.add_stream(database, name, path)  
+Add the file path into the _Stream table of database, with the stream name name.

@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.BadStatusLine
+
+exception http.client.BadStatusLine  
+A subclass of HTTPException. Raised if a server responds with a HTTP status code that we don’t understand.

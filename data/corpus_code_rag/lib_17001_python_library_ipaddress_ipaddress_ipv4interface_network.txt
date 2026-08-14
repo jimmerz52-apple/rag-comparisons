@@ -1,0 +1,6 @@
+# python.library.ipaddress#ipaddress.IPv4Interface.network
+
+network  
+The network (IPv4Network) this interface belongs to. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.network
+IPv4Network('192.0.2.0/24')

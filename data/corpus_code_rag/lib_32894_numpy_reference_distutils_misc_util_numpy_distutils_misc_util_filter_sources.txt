@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.filter_sources
+
+numpy.distutils.misc_util.filter_sources(sources)[source]
+ 
+Return four lists of filenames containing C, C++, Fortran, and Fortran 90 module sources, respectively.

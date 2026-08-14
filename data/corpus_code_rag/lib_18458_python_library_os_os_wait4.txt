@@ -1,0 +1,4 @@
+# python.library.os#os.wait4
+
+os.wait4(pid, options)  
+Similar to waitpid(), except a 3-element tuple, containing the child’s process id, exit status indication, and resource usage information is returned. Refer to resource.getrusage() for details on resource usage information. The arguments to wait4() are the same as those provided to waitpid(). waitstatus_to_exitcode() can be used to convert the exit status into an exitcode. Availability: Unix.

@@ -1,0 +1,40 @@
+# skimage.api.skimage.measure#skimage.measure.euler_number
+
+skimage.measure.euler_number(image, connectivity=None) [source]
+ 
+Calculate the Euler characteristic in binary image. For 2D objects, the Euler number is the number of objects minus the number of holes. For 3D objects, the Euler number is obtained as the number of objects plus the number of holes, minus the number of tunnels, or loops.  Parameters 
+ image: (N, M) ndarray or (N, M, D) ndarray.
+
+2D or 3D images. If image is not binary, all values strictly greater than zero are considered as the object.  
+connectivityint, optional 
+
+Maximum number of orthogonal hops to consider a pixel/voxel as a neighbor. Accepted values are ranging from 1 to input.ndim. If None, a full connectivity of input.ndim is used. 4 or 8 neighborhoods are defined for 2D images (connectivity 1 and 2, respectively). 6 or 26 neighborhoods are defined for 3D images, (connectivity 1 and 3, respectively). Connectivity 2 is not defined.    Returns 
+ 
+euler_numberint 
+
+Euler characteristic of the set of all objects in the image.     Notes The Euler characteristic is an integer number that describes the topology of the set of all objects in the input image. If object is 4-connected, then background is 8-connected, and conversely. The computation of the Euler characteristic is based on an integral geometry formula in discretized space. In practice, a neighbourhood configuration is constructed, and a LUT is applied for each configuration. The coefficients used are the ones of Ohser et al. It can be useful to compute the Euler characteristic for several connectivities. A large relative difference between results for different connectivities suggests that the image resolution (with respect to the size of objects and holes) is too low. References  
+1  
+S. Rivollier. Analyse d’image geometrique et morphometrique par diagrammes de forme et voisinages adaptatifs generaux. PhD thesis, 2010. Ecole Nationale Superieure des Mines de Saint-Etienne. https://tel.archives-ouvertes.fr/tel-00560838  
+2  
+Ohser J., Nagel W., Schladitz K. (2002) The Euler Number of Discretized Sets - On the Choice of Adjacency in Homogeneous Lattices. In: Mecke K., Stoyan D. (eds) Morphology of Condensed Matter. Lecture Notes in Physics, vol 600. Springer, Berlin, Heidelberg.   Examples >>> import numpy as np
+>>> SAMPLE = np.zeros((100,100,100));
+>>> SAMPLE[40:60, 40:60, 40:60]=1
+>>> euler_number(SAMPLE) 
+1...
+>>> SAMPLE[45:55,45:55,45:55] = 0;
+>>> euler_number(SAMPLE) 
+2...
+>>> SAMPLE = np.array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0],
+...                    [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+...                    [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+...                    [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+...                    [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+...                    [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+...                    [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+...                    [1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0],
+...                    [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1],
+...                    [0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]])
+>>> euler_number(SAMPLE)  # doctest:
+0
+>>> euler_number(SAMPLE, connectivity=1)  # doctest:
+2

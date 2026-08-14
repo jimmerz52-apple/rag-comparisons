@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.number_class
+
+number_class(x)  
+Returns an indication of the class of x.

@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.rset
+
+POP3.rset()  
+Remove any deletion marks for the mailbox.

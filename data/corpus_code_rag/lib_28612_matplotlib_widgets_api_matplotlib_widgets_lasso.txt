@@ -1,0 +1,24 @@
+# matplotlib.widgets_api#matplotlib.widgets.Lasso
+
+classmatplotlib.widgets.Lasso(ax, xy, callback=None, useblit=True)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget Selection curve of an arbitrary shape. The selected path can be used in conjunction with contains_point to select data points from an image. Unlike LassoSelector, this must be initialized with a starting point xy, and the Lasso events are destroyed upon release.  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+xy(float, float)
+
+
+Coordinates of the start of the lasso.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  
+callbackcallable
+
+
+Whenever the lasso is released, the callback function is called and passed the vertices of the selected path.       onmove(event)[source]
+
+   onrelease(event)[source]

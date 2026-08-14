@@ -1,0 +1,10 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.cleanup
+
+cleanup(event=None)[source]
+ 
+ Parameters 
+ 
+eventMouseEvent, optional
+
+
+Not used

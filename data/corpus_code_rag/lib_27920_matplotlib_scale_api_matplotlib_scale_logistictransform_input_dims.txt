@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LogisticTransform.input_dims
+
+input_dims=1
+ 
+The number of input dimensions of this transform. Must be overridden (with integers) in the subclass.

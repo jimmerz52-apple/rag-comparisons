@@ -1,0 +1,19 @@
+# tensorflow.raw_ops.tensorslicedataset
+
+tf.raw_ops.TensorSliceDataset Creates a dataset that emits each dim-0 slice of components once.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.TensorSliceDataset  
+tf.raw_ops.TensorSliceDataset(
+    components, output_shapes, name=None
+)
+
+ 
+
+
+ Args
+  components   A list of Tensor objects.  
+  output_shapes   A list of shapes (each a tf.TensorShape or list of ints) that has length >= 1.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type variant.

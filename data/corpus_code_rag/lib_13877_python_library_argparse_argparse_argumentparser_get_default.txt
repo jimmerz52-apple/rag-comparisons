@@ -1,0 +1,7 @@
+# python.library.argparse#argparse.ArgumentParser.get_default
+
+ArgumentParser.get_default(dest)  
+Get the default value for a namespace attribute, as set by either add_argument() or by set_defaults(): >>> parser = argparse.ArgumentParser()
+>>> parser.add_argument('--foo', default='badger')
+>>> parser.get_default('foo')
+'badger'

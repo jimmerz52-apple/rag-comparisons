@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.time
+
+pandas.Timestamp.time   Timestamp.time()
+ 
+Return time object with same time but with tzinfo=None.

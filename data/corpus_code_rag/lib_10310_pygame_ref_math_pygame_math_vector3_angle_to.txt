@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.angle_to
+
+angle_to() 
+ calculates the angle to a given vector in degrees. angle_to(Vector3) -> float  Returns the angle between self and the given vector.

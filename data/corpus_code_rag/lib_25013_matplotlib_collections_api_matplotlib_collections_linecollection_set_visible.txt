@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.LineCollection.set_visible
+
+set_visible(b)[source]
+ 
+Set the artist's visibility.  Parameters 
+ 
+bbool

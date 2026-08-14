@@ -1,0 +1,3 @@
+# python.library.locale#locale.dcgettext
+
+locale.dcgettext(domain, msg, category)

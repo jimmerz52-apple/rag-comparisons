@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.create_subprocess_shell
+
+coroutine asyncio.create_subprocess_shell(cmd, stdin=None, stdout=None, stderr=None, loop=None, limit=None, **kwds)  
+Run the cmd shell command. The limit argument sets the buffer limit for StreamReader wrappers for Process.stdout and Process.stderr (if subprocess.PIPE is passed to stdout and stderr arguments). Return a Process instance. See the documentation of loop.subprocess_shell() for other parameters.  Important It is the application’s responsibility to ensure that all whitespace and special characters are quoted appropriately to avoid shell injection vulnerabilities. The shlex.quote() function can be used to properly escape whitespace and special shell characters in strings that are going to be used to construct shell commands.   Deprecated since version 3.8, will be removed in version 3.10: The loop parameter.

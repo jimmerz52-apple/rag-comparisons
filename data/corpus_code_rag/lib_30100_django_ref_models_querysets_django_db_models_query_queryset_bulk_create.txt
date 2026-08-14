@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.bulk_create
+
+bulk_create(objs, batch_size=None, ignore_conflicts=False)

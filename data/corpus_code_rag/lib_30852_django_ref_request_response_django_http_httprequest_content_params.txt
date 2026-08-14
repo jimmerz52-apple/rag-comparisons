@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.content_params
+
+HttpRequest.content_params  
+A dictionary of key/value parameters included in the CONTENT_TYPE header.

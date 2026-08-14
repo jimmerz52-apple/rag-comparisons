@@ -1,0 +1,9 @@
+# skimage.api.skimage.feature#skimage.feature.ORB.detect
+
+detect(image) [source]
+ 
+Detect oriented FAST keypoints along with the corresponding scale.  Parameters 
+ 
+image2D array 
+
+Input image.

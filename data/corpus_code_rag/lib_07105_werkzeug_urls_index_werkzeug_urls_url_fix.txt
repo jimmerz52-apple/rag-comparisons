@@ -1,0 +1,10 @@
+# werkzeug.urls.index#werkzeug.urls.url_fix
+
+werkzeug.urls.url_fix(s, charset='utf-8')  
+Sometimes you get an URL by a user that just isn’t a real URL because it contains unsafe characters like ‘ ‘ and so on. This function can fix some of the problems in a similar way browsers handle data entered by the user: >>> url_fix('http://de.wikipedia.org/wiki/Elf (Begriffskl\xe4rung)')
+'http://de.wikipedia.org/wiki/Elf%20(Begriffskl%C3%A4rung)'
+  Parameters 
+ 
+s (str) – the string with the URL to fix. 
+charset (str) – The target charset for the URL if the url was given as a string.   Return type 
+str

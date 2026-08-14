@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.current_blas_handle
+
+torch.cuda.current_blas_handle() [source]
+ 
+Returns cublasHandle_t pointer to current cuBLAS handle

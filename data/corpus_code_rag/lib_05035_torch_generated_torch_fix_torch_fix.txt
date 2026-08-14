@@ -1,0 +1,4 @@
+# torch.generated.torch.fix#torch.fix
+
+torch.fix(input, *, out=None) → Tensor  
+Alias for torch.trunc()

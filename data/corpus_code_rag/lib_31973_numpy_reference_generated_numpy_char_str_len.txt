@@ -1,0 +1,14 @@
+# numpy.reference.generated.numpy.char.str_len
+
+numpy.char.str_len   char.str_len(a)[source]
+ 
+Return len(a) element-wise.  Parameters 
+ 
+aarray_like of str or unicode
+
+  Returns 
+ 
+outndarray
+
+
+Output array of integers      See also  builtins.len

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.negative
+
+negative() → Tensor  
+See torch.negative()

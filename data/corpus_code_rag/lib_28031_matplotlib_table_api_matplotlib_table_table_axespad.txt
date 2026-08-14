@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Table.AXESPAD
+
+AXESPAD=0.02
+ 
+The border between the Axes and the table edge in Axes units.

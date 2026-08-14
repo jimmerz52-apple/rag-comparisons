@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.RunPython
+
+class RunPython(code, reverse_code=None, atomic=None, hints=None, elidable=False)

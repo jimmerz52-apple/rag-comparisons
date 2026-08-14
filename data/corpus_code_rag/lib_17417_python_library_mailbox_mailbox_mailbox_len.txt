@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.__len__
+
+__len__()  
+Return a count of messages in the mailbox.

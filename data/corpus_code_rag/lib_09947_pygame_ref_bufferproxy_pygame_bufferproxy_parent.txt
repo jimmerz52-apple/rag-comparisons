@@ -1,0 +1,4 @@
+# pygame.ref.bufferproxy#pygame.BufferProxy.parent
+
+parent 
+ Return wrapped exporting object. parent -> Surface parent -> <parent>  The Surface which returned the BufferProxy object or the object passed to a BufferProxy call.

@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.independent.Independent.enumerate_support
+
+enumerate_support(expand=True) [source]

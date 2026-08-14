@@ -1,0 +1,4 @@
+# pygame.ref.time#pygame.time.get_ticks
+
+pygame.time.get_ticks() 
+ get the time in milliseconds get_ticks() -> milliseconds  Return the number of milliseconds since pygame.init() was called. Before pygame is initialized this will always be 0.

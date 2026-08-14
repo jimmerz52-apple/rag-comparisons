@@ -1,0 +1,12 @@
+# python.library.ast#ast.Import
+
+class ast.Import(names)  
+An import statement. names is a list of alias nodes. >>> print(ast.dump(ast.parse('import x,y,z'), indent=4))
+Module(
+    body=[
+        Import(
+            names=[
+                alias(name='x'),
+                alias(name='y'),
+                alias(name='z')])],
+    type_ignores=[])

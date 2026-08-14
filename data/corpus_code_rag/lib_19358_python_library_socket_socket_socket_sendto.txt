@@ -1,0 +1,5 @@
+# python.library.socket#socket.socket.sendto
+
+socket.sendto(bytes, address)  
+socket.sendto(bytes, flags, address)  
+Send data to the socket. The socket should not be connected to a remote socket, since the destination socket is specified by address. The optional flags argument has the same meaning as for recv() above. Return the number of bytes sent. (The format of address depends on the address family — see above.) Raises an auditing event socket.sendto with arguments self, address.  Changed in version 3.5: If the system call is interrupted and the signal handler does not raise an exception, the method now retries the system call instead of raising an InterruptedError exception (see PEP 475 for the rationale).

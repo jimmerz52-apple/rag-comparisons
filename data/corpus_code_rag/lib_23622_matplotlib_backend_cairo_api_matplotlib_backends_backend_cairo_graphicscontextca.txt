@@ -1,0 +1,7 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_joinstyle
+
+set_joinstyle(js)[source]
+ 
+Set how to draw connections between line segments.  Parameters 
+ 
+jsJoinStyle or {'miter', 'round', 'bevel'}

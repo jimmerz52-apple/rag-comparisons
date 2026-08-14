@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.copy_sign
+
+copy_sign(x, y)  
+Copies the sign from y to x.

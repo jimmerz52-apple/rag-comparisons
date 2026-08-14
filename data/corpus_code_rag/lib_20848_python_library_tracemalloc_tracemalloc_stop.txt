@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.stop
+
+tracemalloc.stop()  
+Stop tracing Python memory allocations: uninstall hooks on Python memory allocators. Also clears all previously collected traces of memory blocks allocated by Python. Call take_snapshot() function to take a snapshot of traces before clearing them. See also start(), is_tracing() and clear_traces() functions.

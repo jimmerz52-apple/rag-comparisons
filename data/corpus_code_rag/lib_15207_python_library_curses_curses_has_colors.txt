@@ -1,0 +1,4 @@
+# python.library.curses#curses.has_colors
+
+curses.has_colors()  
+Return True if the terminal can display colors; otherwise, return False.

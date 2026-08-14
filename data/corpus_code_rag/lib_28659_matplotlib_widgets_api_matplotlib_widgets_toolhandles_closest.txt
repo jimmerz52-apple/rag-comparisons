@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolHandles.closest
+
+closest(x, y)[source]
+ 
+Return index and pixel distance to closest index.

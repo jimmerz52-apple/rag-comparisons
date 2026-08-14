@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.BaseFormView
+
+class django.views.generic.edit.BaseFormView  
+A base view for displaying a form. It is not intended to be used directly, but rather as a parent class of the django.views.generic.edit.FormView or other views displaying a form. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.edit.FormMixin django.views.generic.edit.ProcessFormView

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessday.is_quarter_end
+
+pandas.tseries.offsets.BusinessDay.is_quarter_end   BusinessDay.is_quarter_end()

@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.sin
+
+cmath.sin(x)  
+Return the sine of x.

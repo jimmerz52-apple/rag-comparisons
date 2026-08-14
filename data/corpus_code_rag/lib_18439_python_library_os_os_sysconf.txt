@@ -1,0 +1,4 @@
+# python.library.os#os.sysconf
+
+os.sysconf(name)  
+Return integer-valued system configuration values. If the configuration value specified by name isn’t defined, -1 is returned. The comments regarding the name parameter for confstr() apply here as well; the dictionary that provides information on the known names is given by sysconf_names. Availability: Unix.

@@ -1,0 +1,6 @@
+# django.ref.forms.fields#django.forms.URLField
+
+class URLField(**kwargs)  
+ Default widget: URLInput
+ Empty value: Whatever you’ve given as empty_value. Normalizes to: A string. Uses URLValidator to validate that the given value is a valid URL. Error message keys: required, invalid
+  Has three optional arguments max_length, min_length, and empty_value which work just as they do for CharField.

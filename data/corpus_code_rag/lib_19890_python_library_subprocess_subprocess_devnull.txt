@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.DEVNULL
+
+subprocess.DEVNULL  
+Special value that can be used as the stdin, stdout or stderr argument to Popen and indicates that the special file os.devnull will be used.  New in version 3.3.

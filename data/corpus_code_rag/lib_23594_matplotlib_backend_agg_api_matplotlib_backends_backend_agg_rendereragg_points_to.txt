@@ -1,0 +1,12 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.points_to_pixels
+
+points_to_pixels(points)[source]
+ 
+Convert points to display units. You need to override this function (unless your backend doesn't have a dpi, e.g., postscript or svg). Some imaging systems assume some value for pixels per inch: points to pixels = points * pixels_per_inch/72 * dpi/72
+  Parameters 
+ 
+pointsfloat or array-like
+
+
+a float or a numpy array of float    Returns 
+ Points converted to pixels

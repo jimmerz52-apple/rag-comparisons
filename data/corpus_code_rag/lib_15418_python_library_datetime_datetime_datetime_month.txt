@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.month
+
+datetime.month  
+Between 1 and 12 inclusive.

@@ -1,0 +1,4 @@
+# python.library.email.utils#email.utils.decode_rfc2231
+
+email.utils.decode_rfc2231(s)  
+Decode the string s according to RFC 2231.

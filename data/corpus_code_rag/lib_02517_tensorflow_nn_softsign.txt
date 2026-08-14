@@ -1,0 +1,18 @@
+# tensorflow.nn.softsign
+
+tf.nn.softsign Computes softsign: features / (abs(features) + 1).  View aliases  Main aliases 
+tf.math.softsign Compat aliases for migration See Migration guide for more details. tf.compat.v1.math.softsign, tf.compat.v1.nn.softsign  
+tf.nn.softsign(
+    features, name=None
+)
+
+ 
+
+
+ Args
+  features   A Tensor. Must be one of the following types: half, bfloat16, float32, float64.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor. Has the same type as features.

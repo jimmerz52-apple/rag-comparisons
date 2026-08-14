@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.hermite.hermite.deriv
+
+numpy.polynomial.hermite.Hermite.deriv method   polynomial.hermite.Hermite.deriv(m=1)[source]
+ 
+Differentiate. Return a series instance of that is the derivative of the current series.  Parameters 
+ 
+mnon-negative int
+
+
+Find the derivative of order m.    Returns 
+ 
+new_seriesseries
+
+
+A new series representing the derivative. The domain is the same as the domain of the differentiated series.

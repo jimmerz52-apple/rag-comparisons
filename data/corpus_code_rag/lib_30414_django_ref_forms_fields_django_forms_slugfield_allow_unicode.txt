@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.SlugField.allow_unicode
+
+allow_unicode  
+A boolean instructing the field to accept Unicode letters in addition to ASCII letters. Defaults to False.

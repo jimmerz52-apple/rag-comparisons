@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.addfile
+
+TarFile.addfile(tarinfo, fileobj=None)  
+Add the TarInfo object tarinfo to the archive. If fileobj is given, it should be a binary file, and tarinfo.size bytes are read from it and added to the archive. You can create TarInfo objects directly, or by using gettarinfo().

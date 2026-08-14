@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.FileStorage.save
+
+save(dst, buffer_size=16384)  
+Save the file to a destination path or file object. If the destination is a file object you have to close it yourself after the call. The buffer size is the number of bytes held in memory during the copy process. It defaults to 16KB. For secure file saving also have a look at secure_filename().  Parameters 
+ 
+dst – a filename, os.PathLike, or open file object to write to. 
+buffer_size – Passed as the length parameter of shutil.copyfileobj().     Changelog Changed in version 1.0: Supports pathlib.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__lshift__
+
+numpy.ndarray.__lshift__ method   ndarray.__lshift__(value, /)
+ 
+Return self<<value.

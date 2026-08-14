@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.Output.note_off
+
+note_off() 
+ turns a midi note off (note must be on) note_off(note, velocity=None, channel=0) -> None  Turn a note off in the output stream. The note must already be on for this to work correctly.

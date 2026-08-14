@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.write
+
+Telnet.write(buffer)  
+Write a byte string to the socket, doubling any IAC characters. This can block if the connection is blocked. May raise OSError if the connection is closed. Raises an auditing event telnetlib.Telnet.write with arguments self, buffer.  Changed in version 3.3: This method used to raise socket.error, which is now an alias of OSError.

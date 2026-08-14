@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.redirect_field_name
+
+redirect_field_name  
+Default return value for get_redirect_field_name(). Defaults to "next".

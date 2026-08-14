@@ -1,0 +1,41 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.bar3d
+
+bar3d(x, y, z, dx, dy, dz, color=None, zsort='average', shade=True, lightsource=None, *args, data=None, **kwargs)[source]
+ 
+Generate a 3D barplot. This method creates three dimensional barplot where the width, depth, height, and color of the bars can all be uniquely set.  Parameters 
+ 
+x, y, zarray-like
+
+
+The coordinates of the anchor point of the bars.  
+dx, dy, dzfloat or array-like
+
+
+The width, depth, and height of the bars, respectively.  
+colorsequence of colors, optional
+
+
+The color of the bars can be specified globally or individually. This parameter can be:  A single color, to color all bars the same color. An array of colors of length N bars, to color each bar independently. An array of colors of length 6, to color the faces of the bars similarly. An array of colors of length 6 * N bars, to color each face independently.  When coloring the faces of the boxes specifically, this is the order of the coloring:  -Z (bottom of box) +Z (top of box) -Y +Y -X +X   
+zsortstr, optional
+
+
+The z-axis sorting scheme passed onto Poly3DCollection  
+shadebool, default: True
+
+
+When true, this shades the dark sides of the bars (relative to the plot's source of light).  
+lightsourceLightSource
+
+
+The lightsource to use when shade is True.  
+dataindexable object, optional
+
+
+If given, all parameters also accept a string s, which is interpreted as data[s] (unless this raises an exception).  **kwargs
+
+Any additional keyword arguments are passed onto Poly3DCollection.    Returns 
+ 
+collectionPoly3DCollection
+
+
+A collection of three dimensional polygons representing the bars.

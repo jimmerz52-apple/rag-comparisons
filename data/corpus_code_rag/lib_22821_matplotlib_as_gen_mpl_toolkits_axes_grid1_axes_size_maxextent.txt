@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.maxextent
+
+mpl_toolkits.axes_grid1.axes_size.MaxExtent   classmpl_toolkits.axes_grid1.axes_size.MaxExtent(artist_list, w_or_h)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base Size whose absolute part is either the largest width or the largest height of the given artist_list.   add_artist(a)[source]
+
+   get_size(renderer)[source]

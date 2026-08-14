@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.rocket
+
+skimage.data.rocket() [source]
+ 
+Launch photo of DSCOVR on Falcon 9 by SpaceX. This is the launch photo of Falcon 9 carrying DSCOVR lifted off from SpaceX’s Launch Complex 40 at Cape Canaveral Air Force Station, FL.  Returns 
+ 
+rocket(427, 640, 3) uint8 ndarray 
+
+Rocket image.     Notes This image was downloaded from SpaceX Photos. The image was captured by SpaceX and released in the public domain.

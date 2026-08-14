@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.SecondLocator
+
+classmatplotlib.dates.SecondLocator(bysecond=None, interval=1, tz=None)[source]
+ 
+Bases: matplotlib.dates.RRuleLocator Make ticks on occurrences of each second. Mark every second in bysecond; bysecond can be an int or sequence. Default is to tick every second: bysecond = range(60) interval is the interval between each iteration. For example, if interval=2, mark every second occurrence.

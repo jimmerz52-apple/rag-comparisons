@@ -1,0 +1,4 @@
+# python.library.curses#curses.set_tabsize
+
+curses.set_tabsize(size)  
+Sets the number of columns used by the curses library when converting a tab character to spaces as it adds the tab to a window.  New in version 3.9.

@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.BoundArguments.kwargs
+
+kwargs  
+A dict of keyword arguments values. Dynamically computed from the arguments attribute.

@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseProtocol.connection_lost
+
+BaseProtocol.connection_lost(exc)  
+Called when the connection is lost or closed. The argument is either an exception object or None. The latter means a regular EOF is received, or the connection was aborted or closed by this side of the connection.

@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.UnknownTransferEncoding
+
+exception http.client.UnknownTransferEncoding  
+A subclass of HTTPException.

@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.urn
+
+UUID.urn  
+The UUID as a URN as specified in RFC 4122.

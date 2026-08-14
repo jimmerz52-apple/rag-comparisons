@@ -1,0 +1,29 @@
+# matplotlib._as_gen.matplotlib.colors.lightsource#matplotlib.colors.LightSource.hillshade
+
+hillshade(elevation, vert_exag=1, dx=1, dy=1, fraction=1.0)[source]
+ 
+Calculate the illumination intensity for a surface using the defined azimuth and elevation for the light source. This computes the normal vectors for the surface, and then passes them on to shade_normals  Parameters 
+ 
+elevation2D array-like
+
+
+The height values used to generate an illumination map  
+vert_exagnumber, optional
+
+
+The amount to exaggerate the elevation values by when calculating illumination. This can be used either to correct for differences in units between the x-y coordinate system and the elevation coordinate system (e.g. decimal degrees vs. meters) or to exaggerate or de-emphasize topographic effects.  
+dxnumber, optional
+
+
+The x-spacing (columns) of the input elevation grid.  
+dynumber, optional
+
+
+The y-spacing (rows) of the input elevation grid.  
+fractionnumber, optional
+
+
+Increases or decreases the contrast of the hillshade. Values greater than one will cause intermediate values to move closer to full illumination or shadow (and clipping any values that move beyond 0 or 1). Note that this is not visually or mathematically the same as vertical exaggeration.    Returns 
+ ndarray
+
+A 2D array of illumination values between 0-1, where 0 is completely in shadow and 1 is completely illuminated.

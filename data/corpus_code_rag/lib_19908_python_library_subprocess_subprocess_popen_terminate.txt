@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.terminate
+
+Popen.terminate()  
+Stop the child. On POSIX OSs the method sends SIGTERM to the child. On Windows the Win32 API function TerminateProcess() is called to stop the child.

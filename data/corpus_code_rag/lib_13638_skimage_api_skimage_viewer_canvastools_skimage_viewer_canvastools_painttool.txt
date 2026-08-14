@@ -1,0 +1,80 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.PaintTool
+
+class skimage.viewer.canvastools.PaintTool(manager, overlay_shape, radius=5, alpha=0.3, on_move=None, on_release=None, on_enter=None, rect_props=None) [source]
+ 
+Bases: skimage.viewer.canvastools.base.CanvasToolBase Widget for painting on top of a plot.  Parameters 
+ 
+managerViewer or PlotPlugin. 
+
+Skimage viewer or plot plugin object.  
+overlay_shapeshape tuple 
+
+2D shape tuple used to initialize overlay image.  
+radiusint 
+
+The size of the paint cursor.  
+alphafloat (between [0, 1]) 
+
+Opacity of overlay.  
+on_movefunction 
+
+Function called whenever a control handle is moved. This function must accept the end points of line as the only argument.  
+on_releasefunction 
+
+Function called whenever the control handle is released.  
+on_enterfunction 
+
+Function called whenever the “enter” key is pressed.  
+rect_propsdict 
+
+Properties for matplotlib.patches.Rectangle. This class redefines defaults in matplotlib.widgets.RectangleSelector.     Examples >>> from skimage.data import camera
+>>> import matplotlib.pyplot as plt
+>>> from skimage.viewer.canvastools import PaintTool
+>>> import numpy as np
+ >>> img = camera() 
+ >>> ax = plt.subplot(111) 
+>>> plt.imshow(img, cmap=plt.cm.gray) 
+>>> p = PaintTool(ax,np.shape(img[:-1]),10,0.2) 
+>>> plt.show() 
+ >>> mask = p.overlay 
+>>> plt.imshow(mask,cmap=plt.cm.gray) 
+>>> plt.show() 
+  Attributes 
+ 
+overlayarray 
+
+Overlay of painted labels displayed on top of image.  
+labelint 
+
+Current paint color.      
+__init__(manager, overlay_shape, radius=5, alpha=0.3, on_move=None, on_release=None, on_enter=None, rect_props=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+property geometry  
+Geometry information that gets passed to callback functions. 
+  
+property label 
+  
+on_key_press(event) [source]
+
+  
+on_mouse_press(event) [source]
+
+  
+on_mouse_release(event) [source]
+
+  
+on_move(event) [source]
+
+  
+property overlay 
+  
+property radius 
+  
+property shape 
+  
+update_cursor(x, y) [source]
+
+  
+update_overlay(x, y) [source]

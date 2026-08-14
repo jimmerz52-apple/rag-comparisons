@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Event.is_set
+
+is_set()  
+Return True if the event is set.

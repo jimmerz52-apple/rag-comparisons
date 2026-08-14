@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.yearend.isanchored
+
+pandas.tseries.offsets.YearEnd.isAnchored   YearEnd.isAnchored()

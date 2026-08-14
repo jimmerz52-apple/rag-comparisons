@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__lt__
+
+numpy.ma.MaskedArray.__lt__ method   ma.MaskedArray.__lt__(value, /)
+ 
+Return self<value.

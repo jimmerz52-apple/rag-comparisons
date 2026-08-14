@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Notebook.tabs
+
+tabs()  
+Returns a list of windows managed by the notebook.

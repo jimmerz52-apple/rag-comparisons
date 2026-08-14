@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__irshift__
+
+numpy.ma.MaskedArray.__irshift__ method   ma.MaskedArray.__irshift__(value, /)
+ 
+Return self>>=value.

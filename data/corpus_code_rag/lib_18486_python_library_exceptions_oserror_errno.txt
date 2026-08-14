@@ -1,0 +1,4 @@
+# python.library.exceptions#OSError.errno
+
+errno  
+A numeric error code from the C variable errno.

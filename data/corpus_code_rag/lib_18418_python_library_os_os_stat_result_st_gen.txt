@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_gen
+
+st_gen  
+File generation number.

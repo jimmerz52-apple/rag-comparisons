@@ -1,0 +1,4 @@
+# flask.api.index#flask.session.permanent
+
+permanent  
+If set to True the session lives for permanent_session_lifetime seconds. The default is 31 days. If set to False (which is the default) the session will be deleted when the user closes the browser.

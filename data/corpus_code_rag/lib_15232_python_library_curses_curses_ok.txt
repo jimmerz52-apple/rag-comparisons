@@ -1,0 +1,4 @@
+# python.library.curses#curses.OK
+
+curses.OK  
+Some curses routines that return an integer, such as napms(), return OK upon success.

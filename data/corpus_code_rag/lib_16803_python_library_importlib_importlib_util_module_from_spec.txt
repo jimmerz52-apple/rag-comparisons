@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.util.module_from_spec
+
+importlib.util.module_from_spec(spec)  
+Create a new module based on spec and spec.loader.create_module. If spec.loader.create_module does not return None, then any pre-existing attributes will not be reset. Also, no AttributeError will be raised if triggered while accessing spec or setting an attribute on the module. This function is preferred over using types.ModuleType to create a new module as spec is used to set as many import-controlled attributes on the module as possible.  New in version 3.5.

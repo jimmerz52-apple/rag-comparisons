@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.data
+
+numpy.ndarray.data attribute   ndarray.data
+ 
+Python buffer object pointing to the start of the array’s data.

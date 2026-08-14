@@ -1,0 +1,4 @@
+# python.library.bz2#bz2.BZ2File.peek
+
+peek([n])  
+Return buffered data without advancing the file position. At least one byte of data will be returned (unless at EOF). The exact number of bytes returned is unspecified.  Note While calling peek() does not change the file position of the BZ2File, it may change the position of the underlying file object (e.g. if the BZ2File was constructed by passing a file object for filename).   New in version 3.3.

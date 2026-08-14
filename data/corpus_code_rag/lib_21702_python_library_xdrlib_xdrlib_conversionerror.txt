@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.ConversionError
+
+exception xdrlib.ConversionError  
+Class derived from Error. Contains no additional instance variables.

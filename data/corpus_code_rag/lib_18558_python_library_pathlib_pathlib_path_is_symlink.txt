@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.is_symlink
+
+Path.is_symlink()  
+Return True if the path points to a symbolic link, False otherwise. False is also returned if the path doesn’t exist; other errors (such as permission errors) are propagated.

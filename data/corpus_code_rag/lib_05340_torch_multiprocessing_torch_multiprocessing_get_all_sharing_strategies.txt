@@ -1,0 +1,5 @@
+# torch.multiprocessing#torch.multiprocessing.get_all_sharing_strategies
+
+torch.multiprocessing.get_all_sharing_strategies() [source]
+ 
+Returns a set of sharing strategies supported on a current system.

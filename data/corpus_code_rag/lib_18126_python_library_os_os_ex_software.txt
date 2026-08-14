@@ -1,0 +1,4 @@
+# python.library.os#os.EX_SOFTWARE
+
+os.EX_SOFTWARE  
+Exit code that means an internal software error was detected. Availability: Unix.

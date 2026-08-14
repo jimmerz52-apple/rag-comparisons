@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.FunctionTestCase
+
+class unittest.FunctionTestCase(testFunc, setUp=None, tearDown=None, description=None)  
+This class implements the portion of the TestCase interface which allows the test runner to drive the test, but does not provide the methods which test code can use to check and report errors. This is used to create test cases using legacy test code, allowing it to be integrated into a unittest-based test framework.

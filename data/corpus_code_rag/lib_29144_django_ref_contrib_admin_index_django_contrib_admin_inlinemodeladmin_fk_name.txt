@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.fk_name
+
+InlineModelAdmin.fk_name  
+The name of the foreign key on the model. In most cases this will be dealt with automatically, but fk_name must be specified explicitly if there are more than one foreign key to the same parent model.

@@ -1,0 +1,8 @@
+# django.ref.models.database-functions#django.db.models.functions.TruncTime
+
+class TruncTime(expression, tzinfo=None, **extra)  
+ 
+lookup_name = 'time' 
+  
+output_field = TimeField() 
+  Changed in Django 3.2: The tzinfo parameter was added.

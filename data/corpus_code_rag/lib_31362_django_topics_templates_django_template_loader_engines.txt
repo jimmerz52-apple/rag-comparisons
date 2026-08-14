@@ -1,0 +1,8 @@
+# django.topics.templates#django.template.loader.engines
+
+engines  
+Template engines are available in django.template.engines: from django.template import engines
+
+django_engine = engines['django']
+template = django_engine.from_string("Hello {{ name }}!")
+ The lookup key — 'django' in this example — is the engine’s NAME.

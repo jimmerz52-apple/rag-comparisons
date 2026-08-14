@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.quadraticdiscriminantanalysis#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.predict
+
+predict(X) [source]
+ 
+Perform classification on an array of test vectors X. The predicted class C for each sample in X is returned.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Cndarray of shape (n_samples,)

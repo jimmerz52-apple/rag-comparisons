@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.ELLIPSIS
+
+doctest.ELLIPSIS  
+When specified, an ellipsis marker (...) in the expected output can match any substring in the actual output. This includes substrings that span line boundaries, and empty substrings, so it’s best to keep usage of this simple. Complicated uses can lead to the same kinds of “oops, it matched too much!” surprises that .* is prone to in regular expressions.

@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.core.groupby.dataframegroupby.count
+
+pandas.core.groupby.DataFrameGroupBy.count   DataFrameGroupBy.count()[source]
+ 
+Compute count of group, excluding missing values.  Returns 
+ Series or DataFrame
+
+Count of values within each group.      See also  Series.groupby
+
+Apply a function groupby to a Series.  DataFrame.groupby
+
+Apply a function groupby to each row or column of a DataFrame.

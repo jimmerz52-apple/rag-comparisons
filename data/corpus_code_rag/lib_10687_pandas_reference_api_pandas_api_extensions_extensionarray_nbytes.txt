@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.nbytes
+
+pandas.api.extensions.ExtensionArray.nbytes   propertyExtensionArray.nbytes
+ 
+The number of bytes needed to store this object in memory.

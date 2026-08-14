@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.get_layer_of_sprite
+
+get_layer_of_sprite() 
+ returns the layer that sprite is currently in. get_layer_of_sprite(sprite) -> layer  If the sprite is not found then it will return the default layer.

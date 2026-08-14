@@ -1,0 +1,3 @@
+# django.ref.views#django.views.static.serve
+
+static.serve(request, path, document_root, show_indexes=False)

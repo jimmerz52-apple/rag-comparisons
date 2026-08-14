@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.values_list
+
+values_list(*fields, flat=False, named=False)

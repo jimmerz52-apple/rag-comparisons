@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.changed
+
+changed()[source]
+ 
+Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal.

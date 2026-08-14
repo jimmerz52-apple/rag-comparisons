@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.bitwise_xor_
+
+bitwise_xor_() → Tensor  
+In-place version of bitwise_xor()

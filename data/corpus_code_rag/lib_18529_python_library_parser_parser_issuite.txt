@@ -1,0 +1,4 @@
+# python.library.parser#parser.issuite
+
+parser.issuite(st)  
+This function mirrors isexpr() in that it reports whether an ST object represents an 'exec' form, commonly known as a “suite.” It is not safe to assume that this function is equivalent to not isexpr(st), as additional syntactic fragments may be supported in the future.

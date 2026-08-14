@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_NO_TLSv1_1
+
+ssl.OP_NO_TLSv1_1  
+Prevents a TLSv1.1 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing TLSv1.1 as the protocol version. Available only with openssl version 1.0.1+.  New in version 3.4.   Deprecated since version 3.7: The option is deprecated since OpenSSL 1.1.0.

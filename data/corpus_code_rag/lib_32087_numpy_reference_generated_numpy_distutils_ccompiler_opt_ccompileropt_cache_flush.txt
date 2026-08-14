@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.cache_flush
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.cache_flush method   distutils.ccompiler_opt.CCompilerOpt.cache_flush()[source]
+ 
+Force update the cache.

@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Server.get_loop
+
+get_loop()  
+Return the event loop associated with the server object.  New in version 3.7.

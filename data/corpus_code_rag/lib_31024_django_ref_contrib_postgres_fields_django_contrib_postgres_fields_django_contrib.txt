@@ -1,0 +1,9 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.django.contrib.postgres.forms.BaseRangeField
+
+class django.contrib.postgres.forms.BaseRangeField  
+Base class for form range fields.  
+base_field  
+The form field to use. 
+  
+range_type  
+The psycopg2 range type to use.

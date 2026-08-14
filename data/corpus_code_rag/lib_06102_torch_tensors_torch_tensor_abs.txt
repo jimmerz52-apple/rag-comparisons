@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.abs
+
+abs() → Tensor  
+See torch.abs()

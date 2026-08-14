@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.reset
+
+numpy.nditer.reset method   nditer.reset()
+ 
+Reset the iterator to its initial state.

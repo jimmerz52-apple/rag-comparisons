@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DrawingArea.set_transform
+
+set_transform(t)[source]
+ 
+set_transform is ignored.

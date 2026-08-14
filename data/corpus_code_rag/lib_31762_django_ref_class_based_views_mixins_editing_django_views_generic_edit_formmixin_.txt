@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin.form_valid
+
+form_valid(form)  
+Redirects to get_success_url().

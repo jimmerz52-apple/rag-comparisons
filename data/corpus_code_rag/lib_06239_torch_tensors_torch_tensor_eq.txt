@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.eq_
+
+eq_(other) → Tensor  
+In-place version of eq()

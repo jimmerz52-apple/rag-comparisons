@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.app_url_value_preprocessor
+
+app_url_value_preprocessor(f)  
+Same as url_value_preprocessor() but application wide.  Parameters 
+f (Callable[[Optional[str], Optional[dict]], None]) –   Return type 
+Callable[[Optional[str], Optional[dict]], None]

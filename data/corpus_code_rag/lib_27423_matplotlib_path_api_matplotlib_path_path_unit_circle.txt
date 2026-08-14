@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.unit_circle
+
+classmethodunit_circle()[source]
+ 
+Return the readonly Path of the unit circle. For most cases, Path.circle() will be what you want.

@@ -1,0 +1,6 @@
+# pygame.ref.sprite#pygame.sprite.Group.clear
+
+clear() 
+ draw a background over the Sprites clear(Surface_dest, background) -> None  Erases the Sprites used in the last Group.draw() call. The destination Surface is cleared by filling the drawn Sprite positions with the background. The background is usually a Surface image the same dimensions as the destination Surface. However, it can also be a callback function that takes two arguments; the destination Surface and an area to clear. The background callback function will be called several times each clear. Here is an example callback that will clear the Sprites with solid red: def clear_callback(surf, rect):
+    color = 255, 0, 0
+    surf.fill(color, rect)

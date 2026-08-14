@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.model_selection.halvinggridsearchcv#sklearn.model_selection.HalvingGridSearchCV.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Call predict_log_proba on the estimator with the best found parameters. Only available if refit=True and the underlying estimator supports predict_log_proba.  Parameters 
+ 
+Xindexable, length n_samples 
+
+Must fulfill the input assumptions of the underlying estimator.

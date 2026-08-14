@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.offset
+
+pandas.tseries.offsets.BusinessHour.offset   BusinessHour.offset
+ 
+Alias for self._offset.

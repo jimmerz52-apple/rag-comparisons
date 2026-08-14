@@ -1,0 +1,10 @@
+# flask.api.index#flask.message_flashed
+
+flask.message_flashed  
+This signal is sent when the application is flashing a message. The messages is sent as message keyword argument and the category as category. Example subscriber: recorded = []
+def record(sender, message, category, **extra):
+    recorded.append((message, category))
+
+from flask import message_flashed
+message_flashed.connect(record, app)
+  Changelog New in version 0.10.

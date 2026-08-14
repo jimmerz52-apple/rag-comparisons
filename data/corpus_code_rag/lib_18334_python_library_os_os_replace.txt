@@ -1,0 +1,4 @@
+# python.library.os#os.replace
+
+os.replace(src, dst, *, src_dir_fd=None, dst_dir_fd=None)  
+Rename the file or directory src to dst. If dst is a directory, OSError will be raised. If dst exists and is a file, it will be replaced silently if the user has permission. The operation may fail if src and dst are on different filesystems. If successful, the renaming will be an atomic operation (this is a POSIX requirement). This function can support specifying src_dir_fd and/or dst_dir_fd to supply paths relative to directory descriptors. Raises an auditing event os.rename with arguments src, dst, src_dir_fd, dst_dir_fd.  New in version 3.3.   Changed in version 3.6: Accepts a path-like object for src and dst.

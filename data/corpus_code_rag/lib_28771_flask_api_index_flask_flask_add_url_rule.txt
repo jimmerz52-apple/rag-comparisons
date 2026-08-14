@@ -1,0 +1,23 @@
+# flask.api.index#flask.Flask.add_url_rule
+
+add_url_rule(rule, endpoint=None, view_func=None, provide_automatic_options=None, **options)  
+Register a rule for routing incoming requests and building URLs. The route() decorator is a shortcut to call this with the view_func argument. These are equivalent: @app.route("/")
+def index():
+    ...
+ def index():
+    ...
+
+app.add_url_rule("/", view_func=index)
+ See URL Route Registrations. The endpoint name for the route defaults to the name of the view function if the endpoint parameter isn’t passed. An error will be raised if a function has already been registered for the endpoint. The methods parameter defaults to ["GET"]. HEAD is always added automatically, and OPTIONS is added automatically by default. view_func does not necessarily need to be passed, but if the rule should participate in routing an endpoint name must be associated with a view function at some point with the endpoint() decorator. app.add_url_rule("/", endpoint="index")
+
+@app.endpoint("index")
+def index():
+    ...
+ If view_func has a required_methods attribute, those methods are added to the passed and automatic methods. If it has a provide_automatic_methods attribute, it is used as the default if the parameter is not passed.  Parameters 
+ 
+rule (str) – The URL rule string. 
+endpoint (Optional[str]) – The endpoint name to associate with the rule and view function. Used when routing and building URLs. Defaults to view_func.__name__. 
+view_func (Optional[Callable]) – The view function to associate with the endpoint name. 
+provide_automatic_options (Optional[bool]) – Add the OPTIONS method and respond to OPTIONS requests automatically. 
+options (Any) – Extra options passed to the Rule object.   Return type 
+None

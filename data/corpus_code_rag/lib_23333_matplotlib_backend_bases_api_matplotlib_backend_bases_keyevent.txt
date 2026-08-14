@@ -1,0 +1,14 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.KeyEvent
+
+classmatplotlib.backend_bases.KeyEvent(name, canvas, key, x=0, y=0, guiEvent=None)[source]
+ 
+Bases: matplotlib.backend_bases.LocationEvent A key event (key press, key release). A KeyEvent has a number of special attributes in addition to those defined by the parent Event and LocationEvent classes. Notes Modifier keys will be prefixed to the pressed key and will be in the order "ctrl", "alt", "super". The exception to this rule is when the pressed key is itself a modifier key, therefore "ctrl+alt" and "alt+control" can both be valid key values. Examples def on_key(event):
+    print('you pressed', event.key, event.xdata, event.ydata)
+
+cid = fig.canvas.mpl_connect('key_press_event', on_key)
+  Attributes 
+ 
+keyNone or str
+
+
+The key(s) pressed. Could be None, a single case sensitive Unicode character ("g", "G", "#", etc.), a special key ("control", "shift", "f1", "up", etc.) or a combination of the above (e.g., "ctrl+alt+g", "ctrl+alt+G").

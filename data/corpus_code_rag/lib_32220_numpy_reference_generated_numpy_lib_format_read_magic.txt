@@ -1,0 +1,14 @@
+# numpy.reference.generated.numpy.lib.format.read_magic
+
+numpy.lib.format.read_magic   lib.format.read_magic(fp)[source]
+ 
+Read the magic string to get the version of the file format.  Parameters 
+ 
+fpfilelike object
+
+  Returns 
+ 
+majorint
+
+
+minorint

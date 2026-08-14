@@ -1,0 +1,30 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingContourLabeler
+
+classmatplotlib.blocking_input.BlockingContourLabeler(cs)[source]
+ 
+Bases: matplotlib.blocking_input.BlockingMouseInput Callable for retrieving mouse clicks and key presses in a blocking way. Used to place contour labels.   add_click(event)[source]
+ 
+Add the coordinates of an event to the list of clicks.  Parameters 
+ 
+eventMouseEvent
+
+   
+   button1(event)[source]
+ 
+Process an button-1 event (add a label to a contour).  Parameters 
+ 
+eventMouseEvent
+
+   
+   button3(event)[source]
+ 
+Process an button-3 event (remove a label if not in inline mode). Unfortunately, if one is doing inline labels, then there is currently no way to fix the broken contour - once humpty-dumpty is broken, he can't be put back together. In inline mode, this does nothing.  Parameters 
+ 
+eventMouseEvent
+
+   
+   pop_click(event, index=- 1)[source]
+ 
+Remove a click (by default, the last) from the list of clicks.  Parameters 
+ 
+eventMouseEvent

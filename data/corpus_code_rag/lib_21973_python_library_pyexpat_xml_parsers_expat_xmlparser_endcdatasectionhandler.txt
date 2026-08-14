@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.EndCdataSectionHandler
+
+xmlparser.EndCdataSectionHandler()  
+Called at the end of a CDATA section.

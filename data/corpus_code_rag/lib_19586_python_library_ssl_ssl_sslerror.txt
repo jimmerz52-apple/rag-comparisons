@@ -1,0 +1,9 @@
+# python.library.ssl#ssl.SSLError
+
+exception ssl.SSLError  
+Raised to signal an error from the underlying SSL implementation (currently provided by the OpenSSL library). This signifies some problem in the higher-level encryption and authentication layer that’s superimposed on the underlying network connection. This error is a subtype of OSError. The error code and message of SSLError instances are provided by the OpenSSL library.  Changed in version 3.3: SSLError used to be a subtype of socket.error.   
+library  
+A string mnemonic designating the OpenSSL submodule in which the error occurred, such as SSL, PEM or X509. The range of possible values depends on the OpenSSL version.  New in version 3.3.  
+  
+reason  
+A string mnemonic designating the reason this error occurred, for example CERTIFICATE_VERIFY_FAILED. The range of possible values depends on the OpenSSL version.  New in version 3.3.

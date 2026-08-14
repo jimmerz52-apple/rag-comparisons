@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourcelessFileLoader.get_code
+
+get_code(fullname)  
+Returns the code object for name created from path.

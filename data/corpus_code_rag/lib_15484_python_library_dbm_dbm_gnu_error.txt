@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.gnu.error
+
+exception dbm.gnu.error  
+Raised on dbm.gnu-specific errors, such as I/O errors. KeyError is raised for general mapping errors like specifying an incorrect key.

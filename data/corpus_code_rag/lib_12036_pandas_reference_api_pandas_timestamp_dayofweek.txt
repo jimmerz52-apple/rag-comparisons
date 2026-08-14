@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.dayofweek
+
+pandas.Timestamp.dayofweek   Timestamp.dayofweek
+ 
+Return day of the week. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.day_of_week
+5

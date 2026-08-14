@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.transforms.Transform.inv
+
+property inv  
+Returns the inverse Transform of this transform. This should satisfy t.inv.inv is t.

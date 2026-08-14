@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.std
+
+numpy.record.std method   record.std()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.std.

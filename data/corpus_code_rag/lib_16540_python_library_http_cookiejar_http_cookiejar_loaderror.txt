@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.LoadError
+
+exception http.cookiejar.LoadError  
+Instances of FileCookieJar raise this exception on failure to load cookies from a file. LoadError is a subclass of OSError.  Changed in version 3.3: LoadError was made a subclass of OSError instead of IOError.

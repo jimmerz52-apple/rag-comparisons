@@ -1,0 +1,22 @@
+# django.topics.auth.default#django.contrib.auth.decorators.login_required
+
+login_required(redirect_field_name='next', login_url=None)  
+As a shortcut, you can use the convenient login_required() decorator: from django.contrib.auth.decorators import login_required
+
+@login_required
+def my_view(request):
+    ...
+ login_required() does the following:  If the user isn’t logged in, redirect to settings.LOGIN_URL, passing the current absolute path in the query string. Example: /accounts/login/?next=/polls/3/. If the user is logged in, execute the view normally. The view code is free to assume the user is logged in.  By default, the path that the user should be redirected to upon successful authentication is stored in a query string parameter called "next". If you would prefer to use a different name for this parameter, login_required() takes an optional redirect_field_name parameter: from django.contrib.auth.decorators import login_required
+
+@login_required(redirect_field_name='my_redirect_field')
+def my_view(request):
+    ...
+ Note that if you provide a value to redirect_field_name, you will most likely need to customize your login template as well, since the template context variable which stores the redirect path will use the value of redirect_field_name as its key rather than "next" (the default). login_required() also takes an optional login_url parameter. Example: from django.contrib.auth.decorators import login_required
+
+@login_required(login_url='/accounts/login/')
+def my_view(request):
+    ...
+ Note that if you don’t specify the login_url parameter, you’ll need to ensure that the settings.LOGIN_URL and your login view are properly associated. For example, using the defaults, add the following lines to your URLconf: from django.contrib.auth import views as auth_views
+
+path('accounts/login/', auth_views.LoginView.as_view()),
+ The settings.LOGIN_URL also accepts view function names and named URL patterns. This allows you to freely remap your login view within your URLconf without having to update the setting.

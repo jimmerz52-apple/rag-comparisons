@@ -1,0 +1,24 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.__init__
+
+__init__(log_dir=None, comment='', purge_step=None, max_queue=10, flush_secs=120, filename_suffix='') [source]
+ 
+Creates a SummaryWriter that will write out events and summaries to the event file.  Parameters 
+ 
+log_dir (string) – Save directory location. Default is runs/CURRENT_DATETIME_HOSTNAME, which changes after each run. Use hierarchical folder structure to compare between runs easily. e.g. pass in ‘runs/exp1’, ‘runs/exp2’, etc. for each new experiment to compare across them. 
+comment (string) – Comment log_dir suffix appended to the default log_dir. If log_dir is assigned, this argument has no effect. 
+purge_step (int) – When logging crashes at step T+XT+X  and restarts at step TT , any events whose global_step larger or equal to TT  will be purged and hidden from TensorBoard. Note that crashed and resumed experiments should have the same log_dir. 
+max_queue (int) – Size of the queue for pending events and summaries before one of the ‘add’ calls forces a flush to disk. Default is ten items. 
+flush_secs (int) – How often, in seconds, to flush the pending events and summaries to disk. Default is every two minutes. 
+filename_suffix (string) – Suffix added to all event filenames in the log_dir directory. More details on filename construction in tensorboard.summary.writer.event_file_writer.EventFileWriter.    Examples: from torch.utils.tensorboard import SummaryWriter
+
+# create a summary writer with automatically generated folder name.
+writer = SummaryWriter()
+# folder location: runs/May04_22-14-54_s-MacBook-Pro.local/
+
+# create a summary writer using the specified folder name.
+writer = SummaryWriter("my_experiment")
+# folder location: my_experiment
+
+# create a summary writer with comment appended.
+writer = SummaryWriter(comment="LR_0.1_BATCH_16")
+# folder location: runs/May04_22-14-54_s-MacBook-Pro.localLR_0.1_BATCH_16/

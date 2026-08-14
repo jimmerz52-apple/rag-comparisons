@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.DataHandler
+
+class urllib.request.DataHandler  
+Open data URLs.  New in version 3.4.

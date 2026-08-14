@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.email
+
+email  
+Optional (blank=True). Email address.

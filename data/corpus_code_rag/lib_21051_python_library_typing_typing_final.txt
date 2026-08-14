@@ -1,0 +1,12 @@
+# python.library.typing#typing.Final
+
+typing.Final  
+A special typing construct to indicate to type checkers that a name cannot be re-assigned or overridden in a subclass. For example: MAX_SIZE: Final = 9000
+MAX_SIZE += 1  # Error reported by type checker
+
+class Connection:
+    TIMEOUT: Final[int] = 10
+
+class FastConnector(Connection):
+    TIMEOUT = 1  # Error reported by type checker
+ There is no runtime checking of these properties. See PEP 591 for more details.  New in version 3.8.

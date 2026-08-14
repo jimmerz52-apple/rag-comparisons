@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.histgradientboostingclassifier#sklearn.ensemble.HistGradientBoostingClassifier.staged_decision_function
+
+staged_decision_function(X) [source]
+ 
+Compute decision function of X for each iteration. This method allows monitoring (i.e. determine error on testing set) after each stage.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input samples.    Yields 
+ 
+decisiongenerator of ndarray of shape (n_samples,) or (n_samples, n_trees_per_iteration) 
+
+The decision function of the input samples, which corresponds to the raw values predicted from the trees of the ensemble . The classes corresponds to that in the attribute classes_.

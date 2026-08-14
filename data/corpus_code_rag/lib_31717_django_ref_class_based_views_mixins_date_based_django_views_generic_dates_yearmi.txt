@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.YearMixin.get_year
+
+get_year()  
+Returns the year for which this view will display data, as a string. Tries the following sources, in order:  The value of the YearMixin.year attribute. The value of the year argument captured in the URL pattern. The value of the year GET query argument.  Raises a 404 if no valid year specification can be found.

@@ -1,0 +1,5 @@
+# torch.nn.intrinsic.quantized#torch.nn.intrinsic.quantized.ConvReLU3d
+
+class torch.nn.intrinsic.quantized.ConvReLU3d(in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True, padding_mode='zeros') [source]
+ 
+A ConvReLU3d module is a fused module of Conv3d and ReLU We adopt the same interface as torch.nn.quantized.Conv3d. Attributes: Same as torch.nn.quantized.Conv3d

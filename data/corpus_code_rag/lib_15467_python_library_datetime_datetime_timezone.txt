@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.timezone
+
+class datetime.timezone(offset, name=None)  
+The offset argument must be specified as a timedelta object representing the difference between the local time and UTC. It must be strictly between -timedelta(hours=24) and timedelta(hours=24), otherwise ValueError is raised. The name argument is optional. If specified it must be a string that will be used as the value returned by the datetime.tzname() method.  New in version 3.2.   Changed in version 3.7: The UTC offset is not restricted to a whole number of minutes.

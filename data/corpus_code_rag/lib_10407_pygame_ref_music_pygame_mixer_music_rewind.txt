@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.rewind
+
+pygame.mixer.music.rewind() 
+ restart music rewind() -> None  Resets playback of the current music to the beginning.

@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.moduledict#torch.nn.ModuleDict.pop
+
+pop(key) [source]
+ 
+Remove key from the ModuleDict and return its module.  Parameters 
+key (string) – key to pop from the ModuleDict

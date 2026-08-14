@@ -1,0 +1,14 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertHTMLEqual
+
+SimpleTestCase.assertHTMLEqual(html1, html2, msg=None)  
+Asserts that the strings html1 and html2 are equal. The comparison is based on HTML semantics. The comparison takes following things into account:  Whitespace before and after HTML tags is ignored. All types of whitespace are considered equivalent. All open tags are closed implicitly, e.g. when a surrounding tag is closed or the HTML document ends. Empty tags are equivalent to their self-closing version. The ordering of attributes of an HTML element is not significant. Boolean attributes (like checked) without an argument are equal to attributes that equal in name and value (see the examples). Text, character references, and entity references that refer to the same character are equivalent.  The following examples are valid tests and don’t raise any AssertionError: self.assertHTMLEqual(
+    '<p>Hello <b>&#x27;world&#x27;!</p>',
+    '''<p>
+        Hello   <b>&#39;world&#39;! </b>
+    </p>'''
+)
+self.assertHTMLEqual(
+    '<input type="checkbox" checked="checked" id="id_accept_terms" />',
+    '<input id="id_accept_terms" type="checkbox" checked>'
+)
+ html1 and html2 must contain HTML. An AssertionError will be raised if one of them cannot be parsed. Output in case of error can be customized with the msg argument.  Changed in Django 4.0: In older versions, any attribute (not only boolean attributes) without a value was considered equal to an attribute with the same name and value.

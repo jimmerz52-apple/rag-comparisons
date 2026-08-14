@@ -1,0 +1,4 @@
+# flask.api.index#flask.views.View.provide_automatic_options
+
+provide_automatic_options: Optional[bool] = None  
+Setting this disables or force-enables the automatic options handling.

@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Cursor.fetchone
+
+fetchone()  
+Fetches the next row of a query result set, returning a single sequence, or None when no more data is available.

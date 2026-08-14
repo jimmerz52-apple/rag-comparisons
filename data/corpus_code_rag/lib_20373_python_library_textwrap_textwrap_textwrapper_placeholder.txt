@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.placeholder
+
+placeholder  
+(default: ' [...]') String that will appear at the end of the output text if it has been truncated.  New in version 3.4.

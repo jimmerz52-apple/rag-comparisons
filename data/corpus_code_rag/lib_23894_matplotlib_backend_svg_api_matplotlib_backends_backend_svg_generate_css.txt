@@ -1,0 +1,3 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.generate_css
+
+matplotlib.backends.backend_svg.generate_css(attrib={})[source]

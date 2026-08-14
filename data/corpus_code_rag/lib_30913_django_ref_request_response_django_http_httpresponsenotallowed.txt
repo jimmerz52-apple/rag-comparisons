@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseNotAllowed
+
+class HttpResponseNotAllowed  
+Like HttpResponse, but uses a 405 status code. The first argument to the constructor is required: a list of permitted methods (e.g. ['GET', 'POST']).

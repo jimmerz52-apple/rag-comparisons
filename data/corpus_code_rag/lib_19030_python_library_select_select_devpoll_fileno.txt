@@ -1,0 +1,4 @@
+# python.library.select#select.devpoll.fileno
+
+devpoll.fileno()  
+Return the file descriptor number of the polling object.  New in version 3.4.

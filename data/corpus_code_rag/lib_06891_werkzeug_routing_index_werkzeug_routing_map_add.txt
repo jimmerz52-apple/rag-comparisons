@@ -1,0 +1,6 @@
+# werkzeug.routing.index#werkzeug.routing.Map.add
+
+add(rulefactory)  
+Add a new rule or factory to the map and bind it. Requires that the rule is not bound to another map.  Parameters 
+rulefactory (werkzeug.routing.RuleFactory) – a Rule or RuleFactory  Return type 
+None

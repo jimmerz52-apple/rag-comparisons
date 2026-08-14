@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.DocumentType.publicId
+
+DocumentType.publicId  
+The public identifier for the external subset of the document type definition. This will be a string or None.

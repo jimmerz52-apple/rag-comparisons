@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.dict_storage_class
+
+dict_storage_class  
+alias of werkzeug.datastructures.ImmutableMultiDict

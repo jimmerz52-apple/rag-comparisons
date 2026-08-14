@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.BezierSegment.point_at_t
+
+point_at_t(t)[source]
+ 
+Evaluate the curve at a single point, returning a tuple of d floats.

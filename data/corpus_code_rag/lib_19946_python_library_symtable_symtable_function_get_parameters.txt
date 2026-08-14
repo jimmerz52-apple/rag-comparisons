@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Function.get_parameters
+
+get_parameters()  
+Return a tuple containing names of parameters to this function.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.Resource
+
+importlib.resources.Resource  
+This type describes the resource names passed into the various functions in this package. This is defined as Union[str, os.PathLike].

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__matmul__
+
+numpy.ndarray.__matmul__ method   ndarray.__matmul__(value, /)
+ 
+Return self@value.

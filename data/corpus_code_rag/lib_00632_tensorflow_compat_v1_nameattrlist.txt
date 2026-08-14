@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.nameattrlist
+
+tf.compat.v1.NameAttrList A ProtocolMessage
+ 
+
+
+ Attributes
+  attr   repeated AttrEntry attr  
+  name   string name    Child Classes class AttrEntry

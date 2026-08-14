@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.set_endevent
+
+pygame.mixer.music.set_endevent() 
+ have the music send an event when playback stops set_endevent() -> None set_endevent(type) -> None  This causes pygame to signal (by means of the event queue) when the music is done playing. The argument determines the type of event that will be queued. The event will be queued every time the music finishes, not just the first time. To stop the event from being queued, call this method with no argument.

@@ -1,0 +1,13 @@
+# python.library.itertools#itertools.repeat
+
+itertools.repeat(object[, times])  
+Make an iterator that returns object over and over again. Runs indefinitely unless the times argument is specified. Used as argument to map() for invariant parameters to the called function. Also used with zip() to create an invariant part of a tuple record. Roughly equivalent to: def repeat(object, times=None):
+    # repeat(10, 3) --> 10 10 10
+    if times is None:
+        while True:
+            yield object
+    else:
+        for i in range(times):
+            yield object
+ A common use for repeat is to supply a stream of constant values to map or zip: >>> list(map(pow, range(10), repeat(2)))
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.wkt
+
+GEOSGeometry.wkt  
+Returns the Well-Known Text of the geometry (an OGC standard).

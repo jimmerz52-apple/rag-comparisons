@@ -1,0 +1,11 @@
+# torch.generated.torch.nn.adaptivelogsoftmaxwithloss#torch.nn.AdaptiveLogSoftmaxWithLoss.predict
+
+predict(input) [source]
+ 
+This is equivalent to self.log_pob(input).argmax(dim=1), but is more efficient in some cases.  Parameters 
+input (Tensor) – a minibatch of examples  Returns 
+a class with the highest probability for each example  Return type 
+output (Tensor)    Shape:
+
+ Input: (N,in_features)(N, \texttt{in\_features}) 
+ Output: (N)(N)

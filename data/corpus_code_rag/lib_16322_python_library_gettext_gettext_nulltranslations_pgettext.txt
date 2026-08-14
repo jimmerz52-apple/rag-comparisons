@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.pgettext
+
+pgettext(context, message)  
+If a fallback has been set, forward pgettext() to the fallback. Otherwise, return the translated message. Overridden in derived classes.  New in version 3.8.

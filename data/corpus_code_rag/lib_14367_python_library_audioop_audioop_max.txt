@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.max
+
+audioop.max(fragment, width)  
+Return the maximum of the absolute value of all samples in a fragment.

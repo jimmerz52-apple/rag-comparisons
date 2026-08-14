@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.name
+
+UploadedFile.name  
+The name of the uploaded file (e.g. my_file.txt).

@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.js_output
+
+Morsel.js_output(attrs=None)  
+Return an embeddable JavaScript snippet, which, if run on a browser which supports JavaScript, will act the same as if the HTTP header was sent. The meaning for attrs is the same as in output().

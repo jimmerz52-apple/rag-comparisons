@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.image_changed
+
+image_changed = None

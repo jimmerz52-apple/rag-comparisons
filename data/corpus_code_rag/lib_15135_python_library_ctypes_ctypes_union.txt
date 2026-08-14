@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.Union
+
+class ctypes.Union(*args, **kw)  
+Abstract base class for unions in native byte order.

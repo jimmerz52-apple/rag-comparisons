@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.root_path
+
+root_path  
+Absolute path to the package on the filesystem. Used to look up resources contained in the package.

@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.OSSAudioError
+
+exception ossaudiodev.OSSAudioError  
+This exception is raised on certain errors. The argument is a string describing what went wrong. (If ossaudiodev receives an error from a system call such as open(), write(), or ioctl(), it raises OSError. Errors detected directly by ossaudiodev result in OSSAudioError.) (For backwards compatibility, the exception class is also available as ossaudiodev.error.)

@@ -1,0 +1,63 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolLineHandles
+
+classmatplotlib.widgets.ToolLineHandles(ax, positions, direction, line_props=None, useblit=True)[source]
+ 
+Bases: object Control handles for canvas tools.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+Matplotlib axes where tool handles are displayed.  
+positions1D array
+
+
+Positions of handles in data coordinates.  
+direction{"horizontal", "vertical"}
+
+
+Direction of handles, either 'vertical' or 'horizontal'  
+line_propsdict, optional
+
+
+Additional line properties. See matplotlib.lines.Line2D.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).       propertyartists
+
+   closest(x, y)[source]
+ 
+Return index and pixel distance to closest handle.  Parameters 
+ 
+x, yfloat
+
+
+x, y position from which the distance will be calculated to determinate the closest handle    Returns 
+ 
+index, distanceindex of the handle and its distance from
+
+
+position x, y     
+   propertydirection
+ 
+Direction of the handle: 'vertical' or 'horizontal'. 
+   propertypositions
+ 
+Positions of the handle in data coordinates. 
+   remove()[source]
+ 
+Remove the handles artist from the figure. 
+   set_animated(value)[source]
+ 
+Set the animated state of the handles artist. 
+   set_data(positions)[source]
+ 
+Set x or y positions of handles, depending if the lines are vertical of horizontal.  Parameters 
+ 
+positionstuple of length 2
+
+
+Set the positions of the handle in data coordinates     
+   set_visible(value)[source]
+ 
+Set the visibility state of the handles artist.

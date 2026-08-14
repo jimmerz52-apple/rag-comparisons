@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.colors.centerednorm#matplotlib.colors.CenteredNorm.__call__
+
+__call__(value, clip=None)[source]
+ 
+Normalize value data in the [vmin, vmax] interval into the [0.0, 1.0] interval and return it.  Parameters 
+ value
+
+Data to normalize.  
+clipbool
+
+
+If None, defaults to self.clip (which defaults to False).     Notes If not already initialized, self.vmin and self.vmax are initialized using self.autoscale_None(value).

@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.parameterlist#torch.nn.ParameterList.extend
+
+extend(parameters) [source]
+ 
+Appends parameters from a Python iterable to the end of the list.  Parameters 
+parameters (iterable) – iterable of parameters to append

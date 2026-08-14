@@ -1,0 +1,21 @@
+# skimage.api.skimage.util#skimage.util.unique_rows
+
+skimage.util.unique_rows(ar) [source]
+ 
+Remove repeated rows from a 2D array. In particular, if given an array of coordinates of shape (Npoints, Ndim), it will remove repeated points.  Parameters 
+ 
+ar2-D ndarray 
+
+The input array.    Returns 
+ 
+ar_out2-D ndarray 
+
+A copy of the input array with repeated rows removed.    Raises 
+ 
+ValueErrorif ar is not two-dimensional. 
+   Notes The function will generate a copy of ar if it is not C-contiguous, which will negatively affect performance for large input arrays. Examples >>> ar = np.array([[1, 0, 1],
+...                [0, 1, 0],
+...                [1, 0, 1]], np.uint8)
+>>> unique_rows(ar)
+array([[0, 1, 0],
+       [1, 0, 1]], dtype=uint8)

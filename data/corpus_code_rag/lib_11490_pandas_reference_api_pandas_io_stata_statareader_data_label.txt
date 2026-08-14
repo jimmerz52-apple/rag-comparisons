@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.io.stata.statareader.data_label
+
+pandas.io.stata.StataReader.data_label   propertyStataReader.data_label
+ 
+Return data label of Stata file.

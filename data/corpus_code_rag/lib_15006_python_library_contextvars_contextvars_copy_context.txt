@@ -1,0 +1,6 @@
+# python.library.contextvars#contextvars.copy_context
+
+contextvars.copy_context()  
+Returns a copy of the current Context object. The following snippet gets a copy of the current context and prints all variables and their values that are set in it: ctx: Context = copy_context()
+print(list(ctx.items()))
+ The function has an O(1) complexity, i.e. works equally fast for contexts with a few context variables and for contexts that have a lot of them.

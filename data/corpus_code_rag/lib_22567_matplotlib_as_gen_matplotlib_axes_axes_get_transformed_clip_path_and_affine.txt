@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_transformed_clip_path_and_affine
+
+matplotlib.axes.Axes.get_transformed_clip_path_and_affine   Axes.get_transformed_clip_path_and_affine()[source]
+ 
+Return the clip path with the non-affine part of its transformation applied, and the remaining affine part of its transformation.

@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.header_max_count
+
+header_max_count(name)  
+Returns the value of the max_count attribute of the specialized class used to represent the header with the given name.

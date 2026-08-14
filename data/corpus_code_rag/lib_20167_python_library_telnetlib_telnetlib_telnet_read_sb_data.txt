@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.read_sb_data
+
+Telnet.read_sb_data()  
+Return the data collected between a SB/SE pair (suboption begin/end). The callback should access these data when it was invoked with a SE command. This method never blocks.

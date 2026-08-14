@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.OpenerDirector
+
+class urllib.request.OpenerDirector  
+The OpenerDirector class opens URLs via BaseHandlers chained together. It manages the chaining of handlers, and recovery from errors.

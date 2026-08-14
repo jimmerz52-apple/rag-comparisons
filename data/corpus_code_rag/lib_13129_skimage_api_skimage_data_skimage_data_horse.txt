@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.horse
+
+skimage.data.horse() [source]
+ 
+Black and white silhouette of a horse. This image was downloaded from openclipart No copyright restrictions. CC0 given by owner (Andreas Preuss (marauder)).  Returns 
+ 
+horse(328, 400) bool ndarray 
+
+Horse image.

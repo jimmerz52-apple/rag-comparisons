@@ -1,0 +1,4 @@
+# python.library.ast#ast.NodeVisitor.visit
+
+visit(node)  
+Visit a node. The default implementation calls the method called self.visit_classname where classname is the name of the node class, or generic_visit() if that method doesn’t exist.

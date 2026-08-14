@@ -1,0 +1,6 @@
+# python.library.ipaddress#ipaddress.IPv4Interface.ip
+
+ip  
+The address (IPv4Address) without network information. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.ip
+IPv4Address('192.0.2.5')

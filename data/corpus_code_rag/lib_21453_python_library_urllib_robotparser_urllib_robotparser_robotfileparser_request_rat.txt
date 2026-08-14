@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.request_rate
+
+request_rate(useragent)  
+Returns the contents of the Request-rate parameter from robots.txt as a named tuple RequestRate(requests, seconds). If there is no such parameter or it doesn’t apply to the useragent specified or the robots.txt entry for this parameter has invalid syntax, return None.  New in version 3.6.

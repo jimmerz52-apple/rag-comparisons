@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.aiff
+
+aifc.aiff()  
+Create an AIFF file. The default is that an AIFF-C file is created, unless the name of the file ends in '.aiff' in which case the default is an AIFF file.

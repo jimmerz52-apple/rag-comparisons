@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.__le__
+
+numpy.dtype.__le__ method   dtype.__le__(value, /)
+ 
+Return self<=value.

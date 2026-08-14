@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.centroid
+
+centroid() 
+ Returns the centroid of the set bits centroid() -> (x, y)  Finds the centroid (the center mass of the set bits) for this mask.     
+Returns:
+a coordinate tuple indicating the centroid of the mask, it will return (0, 0) if the mask has no bits set  
+Return type:
+tuple(int, int)

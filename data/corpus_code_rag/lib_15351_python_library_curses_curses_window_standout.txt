@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.standout
+
+window.standout()  
+Turn on attribute A_STANDOUT.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.linear_model.ridgeclassifiercv#sklearn.linear_model.RidgeClassifierCV.predict
+
+predict(X) [source]
+ 
+Predict class labels for samples in X.  Parameters 
+ 
+Xarray-like or sparse matrix, shape (n_samples, n_features) 
+
+Samples.    Returns 
+ 
+Carray, shape [n_samples] 
+
+Predicted class label per sample.

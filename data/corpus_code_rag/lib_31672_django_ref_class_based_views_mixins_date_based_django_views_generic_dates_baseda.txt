@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.BaseDateListView.get_date_list_period
+
+get_date_list_period()  
+Returns the aggregation period for date_list. Returns date_list_period by default.

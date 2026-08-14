@@ -1,0 +1,4 @@
+# python.library.sys#sys.version
+
+sys.version  
+A string containing the version number of the Python interpreter plus additional information on the build number and compiler used. This string is displayed when the interactive interpreter is started. Do not extract version information out of it, rather, use version_info and the functions provided by the platform module.

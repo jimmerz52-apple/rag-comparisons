@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.drawStyles
+
+drawStyles={'default': '_draw_lines', 'steps': '_draw_steps_pre', 'steps-mid': '_draw_steps_mid', 'steps-post': '_draw_steps_post', 'steps-pre': '_draw_steps_pre'}

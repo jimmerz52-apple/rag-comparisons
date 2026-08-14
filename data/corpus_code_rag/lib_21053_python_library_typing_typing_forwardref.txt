@@ -1,0 +1,4 @@
+# python.library.typing#typing.ForwardRef
+
+class typing.ForwardRef  
+A class used for internal typing representation of string forward references. For example, List["SomeClass"] is implicitly transformed into List[ForwardRef("SomeClass")]. This class should not be instantiated by a user, but may be used by introspection tools.  Note PEP 585 generic types such as list["SomeClass"] will not be implicitly transformed into list[ForwardRef("SomeClass")] and thus will not automatically resolve to list[SomeClass].   New in version 3.7.4.

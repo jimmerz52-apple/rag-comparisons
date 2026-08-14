@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.is_normalized
+
+is_normalized() 
+ tests if the vector is normalized i.e. has length == 1. is_normalized() -> Bool  Returns True if the vector has length equal to 1. Otherwise it returns False.

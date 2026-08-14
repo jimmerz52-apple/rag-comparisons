@@ -1,0 +1,10 @@
+# django.topics.auth.default#django.contrib.auth.authenticate
+
+authenticate(request=None, **credentials)  
+Use authenticate() to verify a set of credentials. It takes credentials as keyword arguments, username and password for the default case, checks them against each authentication backend, and returns a User object if the credentials are valid for a backend. If the credentials aren’t valid for any backend or if a backend raises PermissionDenied, it returns None. For example: from django.contrib.auth import authenticate
+user = authenticate(username='john', password='secret')
+if user is not None:
+    # A backend authenticated the credentials
+else:
+    # No backend authenticated the credentials
+ request is an optional HttpRequest which is passed on the authenticate() method of the authentication backends.  Note This is a low level way to authenticate a set of credentials; for example, it’s used by the RemoteUserMiddleware. Unless you are writing your own authentication system, you probably won’t use this. Rather if you’re looking for a way to login a user, use the LoginView.

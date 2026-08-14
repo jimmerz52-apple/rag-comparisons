@@ -1,0 +1,9 @@
+# python.library.ast#ast.IfExp
+
+class ast.IfExp(test, body, orelse)  
+An expression such as a if b else c. Each field holds a single node, so in the following example, all three are Name nodes. >>> print(ast.dump(ast.parse('a if b else c', mode='eval'), indent=4))
+Expression(
+    body=IfExp(
+        test=Name(id='b', ctx=Load()),
+        body=Name(id='a', ctx=Load()),
+        orelse=Name(id='c', ctx=Load())))

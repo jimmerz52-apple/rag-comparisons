@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_LINK
+
+winreg.REG_LINK  
+A Unicode symbolic link.

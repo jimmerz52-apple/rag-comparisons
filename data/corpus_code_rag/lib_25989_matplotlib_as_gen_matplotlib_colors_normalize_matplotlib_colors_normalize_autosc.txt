@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.normalize#matplotlib.colors.Normalize.autoscale_None
+
+autoscale_None(A)[source]
+ 
+If vmin or vmax are not set, use the min/max of A to set them.

@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.itemsize
+
+itemsize 
+ Returns the byte size of a pixel array item itemsize -> int  This is the same as Surface.get_bytesize() for the pixel array's surface.  New in pygame 1.9.2.

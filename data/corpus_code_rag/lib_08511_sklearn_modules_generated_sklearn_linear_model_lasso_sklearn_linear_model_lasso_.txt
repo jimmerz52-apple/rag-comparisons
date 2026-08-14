@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.linear_model.lasso#sklearn.linear_model.Lasso.fit
+
+fit(X, y, sample_weight=None, check_input=True) [source]
+ 
+Fit model with coordinate descent.  Parameters 
+ 
+X{ndarray, sparse matrix} of (n_samples, n_features) 
+
+Data.  
+y{ndarray, sparse matrix} of shape (n_samples,) or (n_samples, n_targets) 
+
+Target. Will be cast to X’s dtype if necessary.  
+sample_weightfloat or array-like of shape (n_samples,), default=None 
+
+Sample weight.  New in version 0.23.   
+check_inputbool, default=True 
+
+Allow to bypass several input checking. Don’t use this parameter unless you know what you do.     Notes Coordinate descent is an algorithm that considers each column of data at a time hence it will automatically convert the X input as a Fortran-contiguous numpy array if necessary. To avoid memory re-allocation it is advised to allocate the initial data in memory directly using that format.

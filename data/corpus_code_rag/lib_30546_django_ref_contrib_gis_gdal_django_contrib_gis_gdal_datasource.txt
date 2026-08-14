@@ -1,0 +1,14 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.DataSource
+
+class DataSource(ds_input, encoding='utf-8')  
+The constructor for DataSource only requires one parameter: the path of the file you want to read. However, OGR also supports a variety of more complex data sources, including databases, that may be accessed by passing a special name string instead of a path. For more information, see the OGR Vector Formats documentation. The name property of a DataSource instance gives the OGR name of the underlying data source that it is using. The optional encoding parameter allows you to specify a non-standard encoding of the strings in the source. This is typically useful when you obtain DjangoUnicodeDecodeError exceptions while reading field values. Once you’ve created your DataSource, you can find out how many layers of data it contains by accessing the layer_count property, or (equivalently) by using the len() function. For information on accessing the layers of data themselves, see the next section: >>> from django.contrib.gis.gdal import DataSource
+>>> ds = DataSource('/path/to/your/cities.shp')
+>>> ds.name
+'/path/to/your/cities.shp'
+>>> ds.layer_count                  # This file only contains one layer
+1
+  
+layer_count 
+ Returns the number of layers in the data source.  
+name 
+ Returns the name of the data source.  Changed in Django 3.2: Support for pathlib.Path ds_input was added.

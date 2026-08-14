@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.close
+
+aifc.close()  
+Close the AIFF file. After calling this method, the object can no longer be used.

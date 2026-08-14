@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGINT
+
+signal.SIGINT  
+Interrupt from keyboard (CTRL + C). Default action is to raise KeyboardInterrupt.

@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.Font.config
+
+config(**options)  
+Modify attributes of the font.

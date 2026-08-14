@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.del_param
+
+del_param(param, header='content-type', requote=True)  
+Remove the given parameter completely from the Content-Type header. The header will be re-written in place without the parameter or its value. Optional header specifies an alternative to Content-Type. Use of the requote parameter with EmailMessage objects is deprecated.

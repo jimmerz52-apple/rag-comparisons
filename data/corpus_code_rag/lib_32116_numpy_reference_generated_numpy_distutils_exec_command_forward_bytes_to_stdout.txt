@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.exec_command.forward_bytes_to_stdout
+
+numpy.distutils.exec_command.forward_bytes_to_stdout   distutils.exec_command.forward_bytes_to_stdout(val)[source]
+ 
+Forward bytes from a subprocess call to the console, without attempting to decode them. The assumption is that the subprocess call already returned bytes in a suitable encoding.

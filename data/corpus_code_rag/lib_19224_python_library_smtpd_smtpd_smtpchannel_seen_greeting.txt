@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.seen_greeting
+
+seen_greeting  
+Holds a string containing the greeting sent by the client in its “HELO”.

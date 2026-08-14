@@ -1,0 +1,10 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.make_line_iter
+
+werkzeug.wsgi.make_line_iter(stream, limit=None, buffer_size=10240, cap_at_buffer=False)  
+Safely iterates line-based over an input stream. If the input stream is not a LimitedStream the limit parameter is mandatory. This uses the stream’s read() method internally as opposite to the readline() method that is unsafe and can only be used in violation of the WSGI specification. The same problem applies to the __iter__ function of the input stream which calls readline() without arguments. If you need line-by-line processing it’s strongly recommended to iterate over the input stream using this helper function.  Changelog New in version 0.11.10: added support for the cap_at_buffer parameter.   New in version 0.9: added support for iterators as input stream.   Changed in version 0.8: This function now ensures that the limit was reached.   Parameters 
+ 
+stream (Union[Iterable[bytes], BinaryIO]) – the stream or iterate to iterate over. 
+limit (Optional[int]) – the limit in bytes for the stream. (Usually content length. Not necessary if the stream is a LimitedStream. 
+buffer_size (int) – The optional buffer size. 
+cap_at_buffer (bool) – if this is set chunks are split if they are longer than the buffer size. Internally this is implemented that the buffer size might be exhausted by a factor of two however.   Return type 
+Iterator[bytes]

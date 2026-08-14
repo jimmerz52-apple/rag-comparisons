@@ -1,0 +1,15 @@
+# flask.api.index#flask.cli.ScriptInfo
+
+class flask.cli.ScriptInfo(app_import_path=None, create_app=None, set_debug_flag=True)  
+Helper object to deal with Flask applications. This is usually not necessary to interface with as it’s used internally in the dispatching to click. In future versions of Flask this object will most likely play a bigger role. Typically it’s created automatically by the FlaskGroup but you can also manually create it and pass it onwards as click object.  
+app_import_path  
+Optionally the import path for the Flask application. 
+  
+create_app  
+Optionally a function that is passed the script info to create the instance of the application. 
+  
+data  
+A dictionary with arbitrary data that can be associated with this script info. 
+  
+load_app()  
+Loads the Flask app (if not yet loaded) and returns it. Calling this multiple times will just result in the already loaded app to be returned.

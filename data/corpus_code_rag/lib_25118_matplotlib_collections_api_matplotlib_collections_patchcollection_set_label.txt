@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection.set_label
+
+set_label(s)[source]
+ 
+Set a label that will be displayed in the legend.  Parameters 
+ 
+sobject
+
+
+s will be converted to a string by calling str.

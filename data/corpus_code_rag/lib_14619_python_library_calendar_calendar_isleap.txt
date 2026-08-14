@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.isleap
+
+calendar.isleap(year)  
+Returns True if year is a leap year, otherwise False.

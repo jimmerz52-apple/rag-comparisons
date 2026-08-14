@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.template_name
+
+SimpleTemplateResponse.template_name  
+The name of the template to be rendered. Accepts a backend-dependent template object (such as those returned by get_template()), the name of a template, or a list of template names. Example: ['foo.html', 'path/to/bar.html']

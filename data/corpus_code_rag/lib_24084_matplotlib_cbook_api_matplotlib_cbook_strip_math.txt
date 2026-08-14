@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.strip_math
+
+matplotlib.cbook.strip_math(s)[source]
+ 
+Remove latex formatting from mathtext. Only handles fully math and fully non-math strings.

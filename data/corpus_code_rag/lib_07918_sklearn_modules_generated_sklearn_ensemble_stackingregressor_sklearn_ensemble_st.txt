@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingregressor#sklearn.ensemble.StackingRegressor.get_params
+
+get_params(deep=True) [source]
+ 
+Get the parameters of an estimator from the ensemble. Returns the parameters given in the constructor as well as the estimators contained within the estimators parameter.  Parameters 
+ 
+deepbool, default=True 
+
+Setting it to True gets the various estimators and the parameters of the estimators as well.

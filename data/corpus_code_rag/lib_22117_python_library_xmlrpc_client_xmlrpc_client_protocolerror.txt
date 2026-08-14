@@ -1,0 +1,15 @@
+# python.library.xmlrpc.client#xmlrpc.client.ProtocolError
+
+class xmlrpc.client.ProtocolError  
+A ProtocolError object describes a protocol error in the underlying transport layer (such as a 404 ‘not found’ error if the server named by the URI does not exist). It has the following attributes:  
+url  
+The URI or URL that triggered the error. 
+  
+errcode  
+The error code. 
+  
+errmsg  
+The error message or diagnostic string. 
+  
+headers  
+A dict containing the headers of the HTTP/HTTPS request that triggered the error.

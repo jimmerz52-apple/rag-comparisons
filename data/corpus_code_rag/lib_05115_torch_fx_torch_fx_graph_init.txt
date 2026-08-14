@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Graph.__init__
+
+__init__() [source]
+ 
+Construct an empty Graph.

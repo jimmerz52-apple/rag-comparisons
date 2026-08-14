@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_EXECUTE
+
+winreg.KEY_EXECUTE  
+Equivalent to KEY_READ.

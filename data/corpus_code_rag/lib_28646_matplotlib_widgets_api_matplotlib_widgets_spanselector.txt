@@ -1,0 +1,93 @@
+# matplotlib.widgets_api#matplotlib.widgets.SpanSelector
+
+classmatplotlib.widgets.SpanSelector(ax, onselect, direction, minspan=0, useblit=False, props=None, onmove_callback=None, interactive=False, button=None, handle_props=None, grab_range=10, drag_from_anywhere=False, ignore_event_outside=False)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Visually select a min/max range on a single axis and call a function with those values. To guarantee that the selector remains responsive, keep a reference to it. In order to turn off the SpanSelector, set span_selector.active to False. To turn it back on, set it to True. Press and release events triggered at the same coordinates outside the selection will clear the selector, except when ignore_event_outside=True.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+onselectcallable
+
+
+A callback function that is called after a release event and the selection is created, changed or removed. It must have the signature: def on_select(min: float, max: float) -> Any
+  
+direction{"horizontal", "vertical"}
+
+
+The direction along which to draw the span selector.  
+minspanfloat, default: 0
+
+
+If selection is less than or equal to minspan, the selection is removed (when already existing) or cancelled.  
+useblitbool, default: False
+
+
+If True, use the backend-dependent blitting features for faster canvas updates.  
+propsdict, optional
+
+
+Dictionary of matplotlib.patches.Patch properties. Default: dict(facecolor='red', alpha=0.5)  
+onmove_callbackfunc(min, max), min/max are floats, default: None
+
+
+Called on mouse move while the span is being selected.  
+span_staysbool, default: False
+
+
+If True, the span stays visible after the mouse is released. Deprecated, use interactive instead.  
+interactivebool, default: False
+
+
+Whether to draw a set of handles that allow interaction with the widget after it is drawn.  
+buttonMouseButton or list of MouseButton, default: all buttons
+
+
+The mouse buttons which activate the span selector.  
+handle_propsdict, default: None
+
+
+Properties of the handle lines at the edges of the span. Only used when interactive is True. See matplotlib.lines.Line2D for valid properties.  
+grab_rangefloat, default: 10
+
+
+Distance in pixels within which the interactive tool handles can be activated.  
+drag_from_anywherebool, default: False
+
+
+If True, the widget can be moved by clicking anywhere within its bounds.  
+ignore_event_outsidebool, default: False
+
+
+If True, the event triggered outside the span selector will be ignored.     Examples >>> import matplotlib.pyplot as plt
+>>> import matplotlib.widgets as mwidgets
+>>> fig, ax = plt.subplots()
+>>> ax.plot([1, 2, 3], [10, 50, 100])
+>>> def onselect(vmin, vmax):
+...     print(vmin, vmax)
+>>> span = mwidgets.SpanSelector(ax, onselect, 'horizontal',
+...                              props=dict(facecolor='blue', alpha=0.5))
+>>> fig.show()
+ See also: Span Selector   propertyactive_handle[source]
+
+   connect_default_events()[source]
+ 
+Connect the major canvas events to methods. 
+   propertydirection
+ 
+Direction of the span selector: 'vertical' or 'horizontal'. 
+   propertyextents
+ 
+Return extents of the span selector. 
+   new_axes(ax)[source]
+ 
+Set SpanSelector to operate on a new Axes. 
+   propertypressv[source]
+
+   propertyprev[source]
+
+   propertyrect[source]
+
+   propertyrectprops[source]
+
+   propertyspan_stays[source]

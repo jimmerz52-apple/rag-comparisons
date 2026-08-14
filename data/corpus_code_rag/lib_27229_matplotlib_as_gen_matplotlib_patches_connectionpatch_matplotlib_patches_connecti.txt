@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.connectionpatch#matplotlib.patches.ConnectionPatch.get_annotation_clip
+
+get_annotation_clip()[source]
+ 
+Return the clipping behavior. See set_annotation_clip for the meaning of the return value.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.abstractmoviewriter#matplotlib.animation.AbstractMovieWriter.saving
+
+saving(fig, outfile, dpi, *args, **kwargs)
+ 
+Context manager to facilitate writing the movie file. *args, **kw are any parameters that should be passed to setup.

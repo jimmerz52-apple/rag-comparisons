@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axisartisthelper#mpl_toolkits.axisartist.axislines.AxisArtistHelper.Fixed.get_line_transform
+
+get_line_transform(axes)[source]

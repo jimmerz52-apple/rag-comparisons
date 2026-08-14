@@ -1,0 +1,13 @@
+# python.library.wsgiref#wsgiref.simple_server.make_server
+
+wsgiref.simple_server.make_server(host, port, app, server_class=WSGIServer, handler_class=WSGIRequestHandler)  
+Create a new WSGI server listening on host and port, accepting connections for app. The return value is an instance of the supplied server_class, and will process requests using the specified handler_class. app must be a WSGI application object, as defined by PEP 3333. Example usage: from wsgiref.simple_server import make_server, demo_app
+
+with make_server('', 8000, demo_app) as httpd:
+    print("Serving HTTP on port 8000...")
+
+    # Respond to requests until process is killed
+    httpd.serve_forever()
+
+    # Alternative: serve one request, then exit
+    httpd.handle_request()

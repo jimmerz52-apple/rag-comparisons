@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.neighbors.localoutlierfactor#sklearn.neighbors.LocalOutlierFactor.fit_predict
+
+property fit_predict  
+Fits the model to the training set X and returns the labels. Not available for novelty detection (when novelty is set to True). Label is 1 for an inlier and -1 for an outlier according to the LOF score and the contamination parameter.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features), default=None 
+
+The query sample or samples to compute the Local Outlier Factor w.r.t. to the training samples.  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+is_inlierndarray of shape (n_samples,) 
+
+Returns -1 for anomalies/outliers and 1 for inliers.

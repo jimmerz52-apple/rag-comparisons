@@ -1,0 +1,4 @@
+# python.library.crypt#crypt.METHOD_MD5
+
+crypt.METHOD_MD5  
+Another Modular Crypt Format method with 8 character salt and 22 character hash based on the MD5 hash function.

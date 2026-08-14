@@ -1,0 +1,17 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axes_rgb.rgbaxes
+
+mpl_toolkits.axisartist.axes_rgb.RGBAxes   classmpl_toolkits.axisartist.axes_rgb.RGBAxes(*args, pad=0, **kwargs)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_rgb.RGBAxes  Parameters 
+ 
+padfloat, default: 0
+
+
+fraction of the axes height to put as padding.  
+axes_classmatplotlib.axes.Axes
+
+*args
+
+Unpacked into axes_class() init for RGB  **kwargs
+
+Unpacked into axes_class() init for RGB, R, G, B axes

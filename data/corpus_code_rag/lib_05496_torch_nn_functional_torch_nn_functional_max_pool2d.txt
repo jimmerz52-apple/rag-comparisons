@@ -1,0 +1,4 @@
+# torch.nn.functional#torch.nn.functional.max_pool2d
+
+torch.nn.functional.max_pool2d(*args, **kwargs)  
+Applies a 2D max pooling over an input signal composed of several input planes. See MaxPool2d for details.

@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.ln
+
+ln(context=None)  
+Return the natural (base e) logarithm of the operand. The result is correctly rounded using the ROUND_HALF_EVEN rounding mode.

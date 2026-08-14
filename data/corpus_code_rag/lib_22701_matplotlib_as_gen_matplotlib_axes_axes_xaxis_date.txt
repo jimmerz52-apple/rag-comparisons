@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axes.axes.xaxis_date
+
+matplotlib.axes.Axes.xaxis_date   Axes.xaxis_date(tz=None)[source]
+ 
+Set up axis ticks and labels to treat data along the xaxis as dates.  Parameters 
+ 
+tzstr or datetime.tzinfo, default: rcParams["timezone"] (default: 'UTC')
+
+
+The timezone used to create date labels.

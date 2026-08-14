@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.get_content
+
+get_content(*args, content_manager=None, **kw)  
+Call the get_content() method of the content_manager, passing self as the message object, and passing along any other arguments or keywords as additional arguments. If content_manager is not specified, use the content_manager specified by the current policy.

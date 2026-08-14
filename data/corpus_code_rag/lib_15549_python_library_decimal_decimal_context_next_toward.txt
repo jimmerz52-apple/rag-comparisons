@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.next_toward
+
+next_toward(x, y)  
+Returns the number closest to x, in direction towards y.

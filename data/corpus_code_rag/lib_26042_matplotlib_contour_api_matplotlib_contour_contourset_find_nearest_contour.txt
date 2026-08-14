@@ -1,0 +1,39 @@
+# matplotlib.contour_api#matplotlib.contour.ContourSet.find_nearest_contour
+
+find_nearest_contour(x, y, indices=None, pixel=True)[source]
+ 
+Find the point in the contour plot that is closest to (x, y).  Parameters 
+ 
+x, yfloat
+
+
+The reference point.  
+indiceslist of int or None, default: None
+
+
+Indices of contour levels to consider. If None (the default), all levels are considered.  
+pixelbool, default: True
+
+
+If True, measure distance in pixel (screen) space, which is useful for manual contour labeling; else, measure distance in axes space.    Returns 
+ 
+contourCollection
+
+
+The contour that is closest to (x, y).  
+segmentint
+
+
+The index of the Path in contour that is closest to (x, y).  
+indexint
+
+
+The index of the path segment in segment that is closest to (x, y).  
+xmin, yminfloat
+
+
+The point in the contour plot that is closest to (x, y).  
+d2float
+
+
+The squared distance from (xmin, ymin) to (x, y).

@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.make_pdf_to_png_converter
+
+matplotlib.backends.backend_pgf.make_pdf_to_png_converter()[source]
+ 
+Return a function that converts a pdf file to a png file.

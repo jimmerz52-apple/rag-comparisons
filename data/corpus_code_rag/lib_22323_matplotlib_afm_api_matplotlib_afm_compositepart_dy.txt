@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.CompositePart.dy
+
+dy
+ 
+y-displacement of the part from the origin.

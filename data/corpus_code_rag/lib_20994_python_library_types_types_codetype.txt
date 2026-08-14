@@ -1,0 +1,6 @@
+# python.library.types#types.CodeType
+
+class types.CodeType(**kwargs)  
+The type for code objects such as returned by compile(). Raises an auditing event code.__new__ with arguments code, filename, name, argcount, posonlyargcount, kwonlyargcount, nlocals, stacksize, flags. Note that the audited arguments may not match the names or positions required by the initializer. The audit event only occurs for direct instantiation of code objects, and is not raised for normal compilation.  
+replace(**kwargs)  
+Return a copy of the code object with new values for the specified fields.  New in version 3.8.

@@ -1,0 +1,3 @@
+# django.topics.serialization#django.core.serializers.get_serializer
+
+django.core.serializers.get_serializer(format)

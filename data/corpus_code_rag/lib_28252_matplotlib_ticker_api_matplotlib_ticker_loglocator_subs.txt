@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogLocator.subs
+
+subs(subs)[source]
+ 
+Set the minor ticks for the log scaling every base**i*subs[j].

@@ -1,0 +1,4 @@
+# python.library.time#time.localtime
+
+time.localtime([secs])  
+Like gmtime() but converts to local time. If secs is not provided or None, the current time as returned by time() is used. The dst flag is set to 1 when DST applies to the given time.

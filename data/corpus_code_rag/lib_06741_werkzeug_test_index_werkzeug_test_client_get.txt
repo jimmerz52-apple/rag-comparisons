@@ -1,0 +1,8 @@
+# werkzeug.test.index#werkzeug.test.Client.get
+
+get(*args, **kw)  
+Call open() with method set to GET.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse

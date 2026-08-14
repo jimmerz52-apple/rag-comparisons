@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.datetimes
+
+datetimes(field_name, kind, order='ASC', tzinfo=None, is_dst=None)

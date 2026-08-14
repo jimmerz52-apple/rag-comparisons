@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_color
+
+set_color(color)[source]
+ 
+Set the color of the line.  Parameters 
+ 
+colorcolor

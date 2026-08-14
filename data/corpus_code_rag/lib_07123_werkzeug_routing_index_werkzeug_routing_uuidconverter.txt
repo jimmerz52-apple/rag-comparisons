@@ -1,0 +1,10 @@
+# werkzeug.routing.index#werkzeug.routing.UUIDConverter
+
+class werkzeug.routing.UUIDConverter(map, *args, **kwargs)  
+This converter only accepts UUID strings: Rule('/object/<uuid:identifier>')
+  Changelog New in version 0.10.   Parameters 
+ 
+map (Map) – the Map. 
+args (Any) –  
+kwargs (Any) –    Return type 
+None

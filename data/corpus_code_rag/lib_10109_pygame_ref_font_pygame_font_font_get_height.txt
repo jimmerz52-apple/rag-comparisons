@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.get_height
+
+get_height() 
+ get the height of the font get_height() -> int  Return the height in pixels of the actual rendered text. This is the average size for each glyph in the font.

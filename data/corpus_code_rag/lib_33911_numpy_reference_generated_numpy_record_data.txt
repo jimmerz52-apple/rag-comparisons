@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.data
+
+numpy.record.data attribute   record.data
+ 
+Pointer to start of data.

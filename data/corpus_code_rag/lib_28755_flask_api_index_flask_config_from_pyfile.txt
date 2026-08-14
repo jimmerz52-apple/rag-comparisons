@@ -1,0 +1,8 @@
+# flask.api.index#flask.Config.from_pyfile
+
+from_pyfile(filename, silent=False)  
+Updates the values in the config from a Python file. This function behaves as if the file was imported as module with the from_object() function.  Parameters 
+ 
+filename (str) – the filename of the config. This can either be an absolute filename or a filename relative to the root path. 
+silent (bool) – set to True if you want silent failure for missing files.   Return type 
+bool    Changelog New in version 0.7: silent parameter.

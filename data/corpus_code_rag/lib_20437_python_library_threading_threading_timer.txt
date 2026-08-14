@@ -1,0 +1,6 @@
+# python.library.threading#threading.Timer
+
+class threading.Timer(interval, function, args=None, kwargs=None)  
+Create a timer that will run function with arguments args and keyword arguments kwargs, after interval seconds have passed. If args is None (the default) then an empty list will be used. If kwargs is None (the default) then an empty dict will be used.  Changed in version 3.3: changed from a factory function to a class.   
+cancel()  
+Stop the timer, and cancel the execution of the timer’s action. This will only work if the timer is still in its waiting stage.

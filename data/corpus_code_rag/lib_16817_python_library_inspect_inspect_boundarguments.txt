@@ -1,0 +1,29 @@
+# python.library.inspect#inspect.BoundArguments
+
+class inspect.BoundArguments  
+Result of a Signature.bind() or Signature.bind_partial() call. Holds the mapping of arguments to the function’s parameters.  
+arguments  
+A mutable mapping of parameters’ names to arguments’ values. Contains only explicitly bound arguments. Changes in arguments will reflect in args and kwargs. Should be used in conjunction with Signature.parameters for any argument processing purposes.  Note Arguments for which Signature.bind() or Signature.bind_partial() relied on a default value are skipped. However, if needed, use BoundArguments.apply_defaults() to add them.   Changed in version 3.9: arguments is now of type dict. Formerly, it was of type collections.OrderedDict.  
+  
+args  
+A tuple of positional arguments values. Dynamically computed from the arguments attribute. 
+  
+kwargs  
+A dict of keyword arguments values. Dynamically computed from the arguments attribute. 
+  
+signature  
+A reference to the parent Signature object. 
+  
+apply_defaults()  
+Set default values for missing arguments. For variable-positional arguments (*args) the default is an empty tuple. For variable-keyword arguments (**kwargs) the default is an empty dict. >>> def foo(a, b='ham', *args): pass
+>>> ba = inspect.signature(foo).bind('spam')
+>>> ba.apply_defaults()
+>>> ba.arguments
+{'a': 'spam', 'b': 'ham', 'args': ()}
+  New in version 3.5.  
+ The args and kwargs properties can be used to invoke functions: def test(a, *, b):
+    ...
+
+sig = signature(test)
+ba = sig.bind(10, b=20)
+test(*ba.args, **ba.kwargs)

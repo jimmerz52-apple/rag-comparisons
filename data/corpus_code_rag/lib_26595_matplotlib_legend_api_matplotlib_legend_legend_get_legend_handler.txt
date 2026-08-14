@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_legend_handler
+
+staticget_legend_handler(legend_handler_map, orig_handle)[source]
+ 
+Return a legend handler from legend_handler_map that corresponds to orig_handler. legend_handler_map should be a dictionary object (that is returned by the get_legend_handler_map method). It first checks if the orig_handle itself is a key in the legend_handler_map and return the associated value. Otherwise, it checks for each of the classes in its method-resolution-order. If no matching key is found, it returns None.

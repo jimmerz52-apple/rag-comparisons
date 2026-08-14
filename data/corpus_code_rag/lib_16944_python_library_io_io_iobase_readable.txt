@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.readable
+
+readable()  
+Return True if the stream can be read from. If False, read() will raise OSError.

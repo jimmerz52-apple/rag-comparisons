@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.size
+
+size()  
+Return the length of the file, which can be larger than the size of the memory-mapped area.

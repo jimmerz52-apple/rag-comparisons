@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.get_object_traceback
+
+tracemalloc.get_object_traceback(obj)  
+Get the traceback where the Python object obj was allocated. Return a Traceback instance, or None if the tracemalloc module is not tracing memory allocations or did not trace the allocation of the object. See also gc.get_referrers() and sys.getsizeof() functions.

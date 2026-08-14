@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.set_joinstyle
+
+set_joinstyle(js)[source]
+ 
+Set the JoinStyle for the collection (for all its elements).  Parameters 
+ 
+jsJoinStyle or {'miter', 'round', 'bevel'}

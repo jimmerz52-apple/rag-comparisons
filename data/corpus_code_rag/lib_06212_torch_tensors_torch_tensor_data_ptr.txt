@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.data_ptr
+
+data_ptr() → int  
+Returns the address of the first element of self tensor.

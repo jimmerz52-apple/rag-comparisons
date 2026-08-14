@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.cancel
+
+cancel(msg=None)  
+Cancel the Future and schedule callbacks. If the Future is already done or cancelled, return False. Otherwise, change the Future’s state to cancelled, schedule the callbacks, and return True.  Changed in version 3.9: Added the msg parameter.

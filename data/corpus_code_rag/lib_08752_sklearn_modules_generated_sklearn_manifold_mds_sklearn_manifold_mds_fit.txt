@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.manifold.mds#sklearn.manifold.MDS.fit
+
+fit(X, y=None, init=None) [source]
+ 
+Computes the position of the points in the embedding space.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) or (n_samples, n_samples) 
+
+Input data. If dissimilarity=='precomputed', the input should be the dissimilarity matrix.  
+yIgnored 
+
+initndarray of shape (n_samples,), default=None 
+
+Starting configuration of the embedding to initialize the SMACOF algorithm. By default, the algorithm is initialized with a randomly chosen array.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.businessday.__call__
+
+pandas.tseries.offsets.BusinessDay.__call__   BusinessDay.__call__(*args, **kwargs)
+ 
+Call self as a function.

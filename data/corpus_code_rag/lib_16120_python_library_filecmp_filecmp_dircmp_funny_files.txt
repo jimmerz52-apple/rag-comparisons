@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.funny_files
+
+funny_files  
+Files which are in both a and b, but could not be compared.

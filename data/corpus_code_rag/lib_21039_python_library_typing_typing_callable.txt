@@ -1,0 +1,4 @@
+# python.library.typing#typing.Callable
+
+typing.Callable  
+Callable type; Callable[[int], str] is a function of (int) -> str. The subscription syntax must always be used with exactly two values: the argument list and the return type. The argument list must be a list of types or an ellipsis; the return type must be a single type. There is no syntax to indicate optional or keyword arguments; such function types are rarely used as callback types. Callable[..., ReturnType] (literal ellipsis) can be used to type hint a callable taking any number of arguments and returning ReturnType. A plain Callable is equivalent to Callable[..., Any], and in turn to collections.abc.Callable.  Deprecated since version 3.9: collections.abc.Callable now supports []. See PEP 585 and Generic Alias Type.

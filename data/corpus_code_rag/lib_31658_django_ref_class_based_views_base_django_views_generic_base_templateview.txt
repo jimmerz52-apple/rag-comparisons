@@ -1,0 +1,23 @@
+# django.ref.class-based-views.base#django.views.generic.base.TemplateView
+
+class django.views.generic.base.TemplateView  
+Renders a given template, with the context containing parameters captured in the URL. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.base.TemplateResponseMixin django.views.generic.base.ContextMixin django.views.generic.base.View  Method Flowchart  setup() dispatch() http_method_not_allowed() get_context_data()  Example views.py: from django.views.generic.base import TemplateView
+
+from articles.models import Article
+
+class HomePageView(TemplateView):
+
+    template_name = "home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['latest_articles'] = Article.objects.all()[:5]
+        return context
+ Example urls.py: from django.urls import path
+
+from myapp.views import HomePageView
+
+urlpatterns = [
+    path('', HomePageView.as_view(), name='home'),
+]
+ Context  Populated (through ContextMixin) with the keyword arguments captured from the URL pattern that served the view. You can also add context using the extra_context keyword argument for as_view().

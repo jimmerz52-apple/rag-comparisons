@@ -1,0 +1,6 @@
+# tensorflow.experimental.numpy.ndim
+
+tf.experimental.numpy.ndim TensorFlow variant of NumPy's ndim. 
+tf.experimental.numpy.ndim(
+    a
+)

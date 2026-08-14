@@ -1,0 +1,51 @@
+# matplotlib.markers_api
+
+matplotlib.markers Functions to handle markers; used by the marker functionality of plot, scatter, and errorbar. All possible markers are defined here:   
+marker symbol description   
+"."  point  
+","  pixel  
+"o"  circle  
+"v"  triangle_down  
+"^"  triangle_up  
+"<"  triangle_left  
+">"  triangle_right  
+"1"  tri_down  
+"2"  tri_up  
+"3"  tri_left  
+"4"  tri_right  
+"8"  octagon  
+"s"  square  
+"p"  pentagon  
+"P"  plus (filled)  
+"*"  star  
+"h"  hexagon1  
+"H"  hexagon2  
+"+"  plus  
+"x"  x  
+"X"  x (filled)  
+"D"  diamond  
+"d"  thin_diamond  
+"|"  vline  
+"_"  hline  
+0 (TICKLEFT)  tickleft  
+1 (TICKRIGHT)  tickright  
+2 (TICKUP)  tickup  
+3 (TICKDOWN)  tickdown  
+4 (CARETLEFT)  caretleft  
+5 (CARETRIGHT)  caretright  
+6 (CARETUP)  caretup  
+7 (CARETDOWN)  caretdown  
+8 (CARETLEFTBASE)  caretleft (centered at base)  
+9 (CARETRIGHTBASE)  caretright (centered at base)  
+10 (CARETUPBASE)  caretup (centered at base)  
+11 (CARETDOWNBASE)  caretdown (centered at base)  
+"None", " " or ""  nothing  
+'$...$'  Render the string using mathtext. E.g "$f$" for marker showing the letter f.  
+verts  A list of (x, y) pairs used for Path vertices. The center of the marker is located at (0, 0) and the size is normalized, such that the created path is encapsulated inside the unit cell.  
+path  A Path instance.  
+(numsides, 0, angle)  A regular polygon with numsides sides, rotated by angle.  
+(numsides, 1, angle)  A star-like symbol with numsides sides, rotated by angle.  
+(numsides, 2, angle)  An asterisk with numsides sides, rotated by angle.   None is the default which means 'nothing', however this table is referred to from other docs for the valid inputs from marker inputs and in those cases None still means 'default'. Note that special symbols can be defined via the STIX math font, e.g. "$\u266B$". For an overview over the STIX font symbols refer to the STIX font table. Also see the STIX Fonts. Integer numbers from 0 to 11 create lines and triangles. Those are equally accessible via capitalized variables, like CARETDOWNBASE. Hence the following are equivalent: plt.plot([1, 2, 3], marker=11)
+plt.plot([1, 2, 3], marker=matplotlib.markers.CARETDOWNBASE)
+ Examples showing the use of markers:  Marker reference Marker examples   Classes  
+MarkerStyle([marker, fillstyle]) A class representing marker types.

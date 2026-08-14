@@ -1,0 +1,4 @@
+# python.library.exceptions#BrokenPipeError
+
+exception BrokenPipeError  
+A subclass of ConnectionError, raised when trying to write on a pipe while the other end has been closed, or trying to write on a socket which has been shutdown for writing. Corresponds to errno EPIPE and ESHUTDOWN.

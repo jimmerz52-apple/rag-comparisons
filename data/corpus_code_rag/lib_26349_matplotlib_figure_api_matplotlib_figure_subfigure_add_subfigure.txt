@@ -1,0 +1,15 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.add_subfigure
+
+add_subfigure(subplotspec, **kwargs)[source]
+ 
+Add a SubFigure to the figure as part of a subplot arrangement.  Parameters 
+ 
+subplotspecgridspec.SubplotSpec
+
+
+Defines the region in a parent gridspec where the subfigure will be placed.    Returns 
+ figure.SubFigure
+  Other Parameters 
+ **kwargs
+
+Are passed to the SubFigure object.      See also  Figure.subfigures

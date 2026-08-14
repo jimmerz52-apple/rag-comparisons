@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.sanitize_sequence
+
+matplotlib.cbook.sanitize_sequence(data)[source]
+ 
+Convert dictview objects to list. Other inputs are returned unchanged.

@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.set_fontconfig_pattern
+
+set_fontconfig_pattern(pattern)[source]
+ 
+Set the properties by parsing a fontconfig pattern. This support does not depend on fontconfig; we are merely borrowing its pattern syntax for use here.

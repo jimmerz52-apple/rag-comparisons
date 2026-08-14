@@ -1,0 +1,4 @@
+# torch.generated.torch.clip#torch.clip
+
+torch.clip(input, min, max, *, out=None) → Tensor  
+Alias for torch.clamp().

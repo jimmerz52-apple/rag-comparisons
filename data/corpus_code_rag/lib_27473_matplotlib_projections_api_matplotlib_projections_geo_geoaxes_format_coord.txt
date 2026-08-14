@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.format_coord
+
+format_coord(lon, lat)[source]
+ 
+Return a format string formatting the coordinate.

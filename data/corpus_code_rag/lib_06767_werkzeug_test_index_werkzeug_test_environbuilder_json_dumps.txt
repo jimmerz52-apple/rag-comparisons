@@ -1,0 +1,4 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.json_dumps
+
+static json_dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, **kw)  
+The serialization function used when json is passed.

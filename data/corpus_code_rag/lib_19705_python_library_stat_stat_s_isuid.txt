@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISUID
+
+stat.S_ISUID  
+Set UID bit.

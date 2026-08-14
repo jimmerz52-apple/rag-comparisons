@@ -1,0 +1,4 @@
+# python.library.random#random.weibullvariate
+
+random.weibullvariate(alpha, beta)  
+Weibull distribution. alpha is the scale parameter and beta is the shape parameter.

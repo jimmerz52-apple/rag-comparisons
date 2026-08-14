@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.clear_frames
+
+traceback.clear_frames(tb)  
+Clears the local variables of all the stack frames in a traceback tb by calling the clear() method of each frame object.  New in version 3.4.

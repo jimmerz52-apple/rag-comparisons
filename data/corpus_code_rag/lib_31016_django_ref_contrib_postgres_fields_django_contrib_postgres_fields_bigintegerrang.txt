@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.BigIntegerRangeField
+
+class BigIntegerRangeField(**options)  
+Stores a range of large integers. Based on a BigIntegerField. Represented by an int8range in the database and a NumericRange in Python. Regardless of the bounds specified when saving the data, PostgreSQL always returns a range in a canonical form that includes the lower bound and excludes the upper bound, that is [).

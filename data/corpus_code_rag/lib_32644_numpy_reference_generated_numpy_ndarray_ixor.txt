@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__ixor__
+
+numpy.ndarray.__ixor__ method   ndarray.__ixor__(value, /)
+ 
+Return self^=value.

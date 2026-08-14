@@ -1,0 +1,10 @@
+# matplotlib.scale_api#matplotlib.scale.register_scale
+
+matplotlib.scale.register_scale(scale_class)[source]
+ 
+Register a new kind of scale.  Parameters 
+ 
+scale_classsubclass of ScaleBase
+
+
+The scale to register.

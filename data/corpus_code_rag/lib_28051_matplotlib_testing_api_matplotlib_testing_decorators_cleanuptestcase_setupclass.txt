@@ -1,0 +1,5 @@
+# matplotlib.testing_api#matplotlib.testing.decorators.CleanupTestCase.setUpClass
+
+classmethodsetUpClass()[source]
+ 
+Hook method for setting up class fixture before running tests in the class.

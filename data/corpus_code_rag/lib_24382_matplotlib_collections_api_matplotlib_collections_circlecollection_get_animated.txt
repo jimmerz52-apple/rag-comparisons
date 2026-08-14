@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.get_animated
+
+get_animated()[source]
+ 
+Return whether the artist is animated.

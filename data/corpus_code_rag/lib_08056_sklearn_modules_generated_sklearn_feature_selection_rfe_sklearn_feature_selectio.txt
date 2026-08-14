@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.feature_selection.rfe#sklearn.feature_selection.RFE.fit
+
+fit(X, y) [source]
+ 
+ Fit the RFE model and then the underlying estimator on the selected
+
+features.    Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples.  
+yarray-like of shape (n_samples,) 
+
+The target values.

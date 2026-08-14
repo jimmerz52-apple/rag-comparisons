@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.RegularPolyCollection.get_clip_path
+
+get_clip_path()[source]
+ 
+Return the clip path.

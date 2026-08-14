@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.get_zbound
+
+get_zbound()[source]
+ 
+Return the lower and upper z-axis bounds, in increasing order.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.float_power_
+
+float_power_(exponent) → Tensor  
+In-place version of float_power()

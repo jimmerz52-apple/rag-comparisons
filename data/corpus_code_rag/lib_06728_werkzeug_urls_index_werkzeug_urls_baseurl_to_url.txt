@@ -1,0 +1,5 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.to_url
+
+to_url()  
+Returns a URL string or bytes depending on the type of the information stored. This is just a convenience function for calling url_unparse() for this URL.  Return type 
+str

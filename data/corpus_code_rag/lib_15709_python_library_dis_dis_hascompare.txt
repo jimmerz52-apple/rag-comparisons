@@ -1,0 +1,4 @@
+# python.library.dis#dis.hascompare
+
+dis.hascompare  
+Sequence of bytecodes of Boolean operations.

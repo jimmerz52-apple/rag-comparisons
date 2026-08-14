@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.NotEmptyError
+
+exception mailbox.NotEmptyError  
+Raised when a mailbox is not empty but is expected to be, such as when deleting a folder that contains messages.

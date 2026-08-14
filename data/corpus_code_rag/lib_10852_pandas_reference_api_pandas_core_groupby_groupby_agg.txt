@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.core.groupby.groupby.agg
+
+pandas.core.groupby.GroupBy.agg   GroupBy.agg(func, *args, **kwargs)[source]

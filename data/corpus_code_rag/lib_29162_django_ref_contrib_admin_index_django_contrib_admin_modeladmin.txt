@@ -1,0 +1,13 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin
+
+class ModelAdmin  
+The ModelAdmin class is the representation of a model in the admin interface. Usually, these are stored in a file named admin.py in your application. Let’s take a look at an example of the ModelAdmin: from django.contrib import admin
+from myapp.models import Author
+
+class AuthorAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Author, AuthorAdmin)
+  Do you need a ModelAdmin object at all? In the preceding example, the ModelAdmin class doesn’t define any custom values (yet). As a result, the default admin interface will be provided. If you are happy with the default admin interface, you don’t need to define a ModelAdmin object at all – you can register the model class without providing a ModelAdmin description. The preceding example could be simplified to: from django.contrib import admin
+from myapp.models import Author
+
+admin.site.register(Author)

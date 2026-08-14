@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ipow__
+
+numpy.ma.MaskedArray.__ipow__ method   ma.MaskedArray.__ipow__(other)[source]
+ 
+Raise self to the power other, in place.

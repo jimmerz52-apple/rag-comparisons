@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.get_context
+
+multiprocessing.get_context(method=None)  
+Return a context object which has the same attributes as the multiprocessing module. If method is None then the default context is returned. Otherwise method should be 'fork', 'spawn', 'forkserver'. ValueError is raised if the specified start method is not available.  New in version 3.4.

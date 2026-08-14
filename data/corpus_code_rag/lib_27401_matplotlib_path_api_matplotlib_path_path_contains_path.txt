@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.contains_path
+
+contains_path(path, transform=None)[source]
+ 
+Return whether this (closed) path completely contains the given path. If transform is not None, the path will be transformed before checking for containment.

@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.get
+
+pygame.event.get() 
+ get events from the queue get(eventtype=None) -> Eventlist get(eventtype=None, pump=True) -> Eventlist  This will get all the messages and remove them from the queue. If a type or sequence of types is given only those messages will be removed from the queue. If you are only taking specific events from the queue, be aware that the queue could eventually fill up with the events you are not interested. If pump is True (the default), then pygame.event.pump() will be called.  Changed in pygame 1.9.5: Added pump argument

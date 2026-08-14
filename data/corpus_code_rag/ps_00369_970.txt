@@ -1,0 +1,8 @@
+# 970
+Task: 970
+
+# Write a function to find minimum of two numbers.
+def min_of_two( x, y ):
+    if x < y:
+        return x
+    return y

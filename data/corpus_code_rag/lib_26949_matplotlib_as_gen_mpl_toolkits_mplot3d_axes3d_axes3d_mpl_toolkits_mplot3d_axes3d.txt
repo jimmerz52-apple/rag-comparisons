@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.get_zticklines
+
+get_zticklines(minor=False)[source]
+ 
+Return the zaxis' tick lines as a list of Line2Ds.

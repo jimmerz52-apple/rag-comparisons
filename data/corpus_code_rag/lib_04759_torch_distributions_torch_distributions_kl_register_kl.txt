@@ -1,0 +1,16 @@
+# torch.distributions#torch.distributions.kl.register_kl
+
+torch.distributions.kl.register_kl(type_p, type_q) [source]
+ 
+Decorator to register a pairwise function with kl_divergence(). Usage: @register_kl(Normal, Normal)
+def kl_normal_normal(p, q):
+    # insert implementation here
+ Lookup returns the most specific (type,type) match ordered by subclass. If the match is ambiguous, a RuntimeWarning is raised. For example to resolve the ambiguous situation: @register_kl(BaseP, DerivedQ)
+def kl_version1(p, q): ...
+@register_kl(DerivedP, BaseQ)
+def kl_version2(p, q): ...
+ you should register a third most-specific implementation, e.g.: register_kl(DerivedP, DerivedQ)(kl_version1)  # Break the tie.
+  Parameters 
+ 
+type_p (type) – A subclass of Distribution. 
+type_q (type) – A subclass of Distribution.

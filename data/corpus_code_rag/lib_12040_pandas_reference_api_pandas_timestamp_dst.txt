@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.dst
+
+pandas.Timestamp.dst   Timestamp.dst()
+ 
+Return self.tzinfo.dst(self).

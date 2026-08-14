@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.point_on_surface
+
+GEOSGeometry.point_on_surface  
+Computes and returns a Point guaranteed to be on the interior of this geometry.

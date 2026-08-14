@@ -1,0 +1,11 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.FileMultiDict
+
+class werkzeug.datastructures.FileMultiDict(mapping=None)  
+A special MultiDict that has convenience methods to add files to it. This is used for EnvironBuilder and generally useful for unittesting.  Changelog New in version 0.5.   
+add_file(name, file, filename=None, content_type=None)  
+Adds a new file to the dict. file can be a file name or a file-like or a FileStorage object.  Parameters 
+ 
+name – the name of the field. 
+file – a filename or file-like object 
+filename – an optional filename 
+content_type – an optional content type

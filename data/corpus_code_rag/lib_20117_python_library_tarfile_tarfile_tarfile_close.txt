@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.close
+
+TarFile.close()  
+Close the TarFile. In write mode, two finishing zero blocks are appended to the archive.

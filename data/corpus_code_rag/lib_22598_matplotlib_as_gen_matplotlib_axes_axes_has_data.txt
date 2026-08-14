@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.has_data
+
+matplotlib.axes.Axes.has_data   Axes.has_data()[source]
+ 
+Return whether any artists have been added to the Axes. This should not be used to determine whether the dataLim need to be updated, and may not actually be useful for anything.

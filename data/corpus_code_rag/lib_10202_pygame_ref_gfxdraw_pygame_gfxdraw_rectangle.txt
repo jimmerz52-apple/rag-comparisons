@@ -1,0 +1,17 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.rectangle
+
+pygame.gfxdraw.rectangle() 
+ draw a rectangle rectangle(surface, rect, color) -> None  Draws an unfilled rectangle on the given surface. For a filled rectangle use box().     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+rect (Rect) -- rectangle to draw, position and dimensions 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType      Note The rect.bottom and rect.right attributes of a pygame.Rect always lie one pixel outside of its actual border. Therefore, these values will not be included as part of the drawing.

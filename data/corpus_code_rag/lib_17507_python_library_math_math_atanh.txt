@@ -1,0 +1,4 @@
+# python.library.math#math.atanh
+
+math.atanh(x)  
+Return the inverse hyperbolic tangent of x.

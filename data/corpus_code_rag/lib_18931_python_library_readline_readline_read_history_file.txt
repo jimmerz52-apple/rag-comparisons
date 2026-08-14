@@ -1,0 +1,4 @@
+# python.library.readline#readline.read_history_file
+
+readline.read_history_file([filename])  
+Load a readline history file, and append it to the history list. The default filename is ~/.history. This calls read_history() in the underlying library.

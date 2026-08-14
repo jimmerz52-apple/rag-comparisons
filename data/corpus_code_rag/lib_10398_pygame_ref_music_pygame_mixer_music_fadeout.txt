@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.fadeout
+
+pygame.mixer.music.fadeout() 
+ stop music playback after fading out fadeout(time) -> None  Fade out and stop the currently playing music. The time argument denotes the integer milliseconds for which the fading effect is generated. Note, that this function blocks until the music has faded out. Calls to fadeout() and set_volume() will have no effect during this time. If an event was set using set_endevent() it will be called after the music has faded.

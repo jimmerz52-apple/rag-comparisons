@@ -1,0 +1,4 @@
+# python.library.test#test.support.MISSING_C_DOCSTRINGS
+
+test.support.MISSING_C_DOCSTRINGS  
+Return True if running on CPython, not on Windows, and configuration not set with WITH_DOC_STRINGS.

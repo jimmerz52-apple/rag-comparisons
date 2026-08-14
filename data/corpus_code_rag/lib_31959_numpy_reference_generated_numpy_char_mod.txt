@@ -1,0 +1,18 @@
+# numpy.reference.generated.numpy.char.mod
+
+numpy.char.mod   char.mod(a, values)[source]
+ 
+Return (a % i), that is pre-Python 2.6 string formatting (interpolation), element-wise for a pair of array_likes of str or unicode.  Parameters 
+ 
+aarray_like of str or unicode
+
+
+valuesarray_like of values
+
+
+These values will be element-wise interpolated into the string.    Returns 
+ 
+outndarray
+
+
+Output array of str or unicode, depending on input types      See also  str.__mod__

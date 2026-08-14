@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_axis
+
+get_axis() 
+ get the current position of an axis get_axis(axis_number) -> float  Returns the current position of a joystick axis. The value will range from -1 to 1 with a value of 0 being centered. You may want to take into account some tolerance to handle jitter, and joystick drift may keep the joystick from centering at 0 or using the full range of position values. The axis number must be an integer from 0 to get_numaxes() - 1. When using gamepads both the control sticks and the analog triggers are usually reported as axes.

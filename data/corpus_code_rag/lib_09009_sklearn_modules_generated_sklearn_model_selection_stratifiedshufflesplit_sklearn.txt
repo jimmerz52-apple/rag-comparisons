@@ -1,0 +1,22 @@
+# sklearn.modules.generated.sklearn.model_selection.stratifiedshufflesplit#sklearn.model_selection.StratifiedShuffleSplit.split
+
+split(X, y, groups=None) [source]
+ 
+Generate indices to split data into training and test set.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data, where n_samples is the number of samples and n_features is the number of features. Note that providing y is sufficient to generate the splits and hence np.zeros(n_samples) may be used as a placeholder for X instead of actual training data.  
+yarray-like of shape (n_samples,) or (n_samples, n_labels) 
+
+The target variable for supervised learning problems. Stratification is done based on the y labels.  
+groupsobject 
+
+Always ignored, exists for compatibility.    Yields 
+ 
+trainndarray 
+
+The training set indices for that split.  
+testndarray 
+
+The testing set indices for that split.     Notes Randomized CV splitters may return different results for each call of split. You can make the results identical by setting random_state to an integer.

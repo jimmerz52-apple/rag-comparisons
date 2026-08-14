@@ -1,0 +1,18 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerLineCollection
+
+classmatplotlib.legend_handler.HandlerLineCollection(marker_pad=0.3, numpoints=None, **kw)[source]
+ 
+Handler for LineCollection instances.  Parameters 
+ 
+marker_padfloat
+
+
+Padding between points in legend entry.  
+numpointsint
+
+
+Number of points to show in legend entry.  **kwargs
+
+Keyword arguments forwarded to HandlerNpoints.       create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]
+
+   get_numpoints(legend)[source]

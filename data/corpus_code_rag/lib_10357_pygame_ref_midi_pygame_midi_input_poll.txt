@@ -1,0 +1,12 @@
+# pygame.ref.midi#pygame.midi.Input.poll
+
+poll() 
+ returns True if there's data, or False if not. poll() -> bool  Used to indicate if any data exists.     
+Returns:
+
+True if there is data, False otherwise  
+Return type:
+bool  
+Raises:
+
+MidiException -- on error

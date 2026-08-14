@@ -1,0 +1,11 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_text
+
+add_text(tag, text_string, global_step=None, walltime=None) [source]
+ 
+Add text data to summary.  Parameters 
+ 
+tag (string) – Data identifier 
+text_string (string) – String to save 
+global_step (int) – Global step value to record 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event    Examples: writer.add_text('lstm', 'This is an lstm', 0)
+writer.add_text('rnn', 'This is an rnn', 10)

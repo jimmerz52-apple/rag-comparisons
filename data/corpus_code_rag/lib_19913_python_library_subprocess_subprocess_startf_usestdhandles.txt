@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.STARTF_USESTDHANDLES
+
+subprocess.STARTF_USESTDHANDLES  
+Specifies that the STARTUPINFO.hStdInput, STARTUPINFO.hStdOutput, and STARTUPINFO.hStdError attributes contain additional information.

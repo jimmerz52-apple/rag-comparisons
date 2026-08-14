@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.ensemble.baggingregressor#sklearn.ensemble.BaggingRegressor.estimators_samples_
+
+property estimators_samples_  
+The subset of drawn samples for each base estimator. Returns a dynamically generated list of indices identifying the samples used for fitting each member of the ensemble, i.e., the in-bag samples. Note: the list is re-created at each call to the property in order to reduce the object memory footprint by not storing the sampling data. Thus fetching the property may be slower than expected.

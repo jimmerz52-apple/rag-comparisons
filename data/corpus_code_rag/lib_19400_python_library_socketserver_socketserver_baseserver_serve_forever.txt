@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.serve_forever
+
+serve_forever(poll_interval=0.5)  
+Handle requests until an explicit shutdown() request. Poll for shutdown every poll_interval seconds. Ignores the timeout attribute. It also calls service_actions(), which may be used by a subclass or mixin to provide actions specific to a given service. For example, the ForkingMixIn class uses service_actions() to clean up zombie child processes.  Changed in version 3.3: Added service_actions call to the serve_forever method.

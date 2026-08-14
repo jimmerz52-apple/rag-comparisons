@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_all
+
+get_all() 
+ get all track information get_all() -> [(audio, start, end, length), ...]  Return a list with information for every track on the cdrom. The information consists of a tuple with four values. The audio value is True if the track contains audio data. The start, end, and length values are floating point numbers in seconds. Start and end represent absolute times on the entire disc.

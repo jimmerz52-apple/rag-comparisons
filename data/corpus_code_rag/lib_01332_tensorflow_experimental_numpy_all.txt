@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.all
+
+tf.experimental.numpy.all TensorFlow variant of NumPy's all. 
+tf.experimental.numpy.all(
+    a, axis=None, keepdims=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.all.

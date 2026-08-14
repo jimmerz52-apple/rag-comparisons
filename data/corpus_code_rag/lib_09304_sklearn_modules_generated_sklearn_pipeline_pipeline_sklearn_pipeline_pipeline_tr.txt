@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.transform
+
+property transform  
+Apply transforms, and transform with the final estimator This also works where final estimator is None: all prior transformations are applied.  Parameters 
+ 
+Xiterable 
+
+Data to transform. Must fulfill input requirements of first step of the pipeline.    Returns 
+ 
+Xtarray-like of shape (n_samples, n_transformed_features)

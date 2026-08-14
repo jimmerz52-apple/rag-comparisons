@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.t
+
+pandas.Series.T   propertySeries.T
+ 
+Return the transpose, which is by definition self.

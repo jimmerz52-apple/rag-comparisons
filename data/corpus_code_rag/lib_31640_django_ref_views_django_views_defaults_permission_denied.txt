@@ -1,0 +1,3 @@
+# django.ref.views#django.views.defaults.permission_denied
+
+defaults.permission_denied(request, exception, template_name='403.html')

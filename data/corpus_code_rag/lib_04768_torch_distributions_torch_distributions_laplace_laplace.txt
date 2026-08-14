@@ -1,0 +1,40 @@
+# torch.distributions#torch.distributions.laplace.Laplace
+
+class torch.distributions.laplace.Laplace(loc, scale, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Creates a Laplace distribution parameterized by loc and scale. Example: >>> m = Laplace(torch.tensor([0.0]), torch.tensor([1.0]))
+>>> m.sample()  # Laplace distributed with loc=0, scale=1
+tensor([ 0.1046])
+  Parameters 
+ 
+loc (float or Tensor) – mean of the distribution 
+scale (float or Tensor) – scale of the distribution     
+arg_constraints = {'loc': Real(), 'scale': GreaterThan(lower_bound=0.0)} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(value) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+property stddev 
+  
+support = Real() 
+  
+property variance

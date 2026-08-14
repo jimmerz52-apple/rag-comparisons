@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.gradientboostingclassifier#sklearn.ensemble.GradientBoostingClassifier.staged_predict
+
+staged_predict(X) [source]
+ 
+Predict class at each stage for X. This method allows monitoring (i.e. determine error on testing set) after each stage.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+ygenerator of ndarray of shape (n_samples,) 
+
+The predicted value of the input samples.

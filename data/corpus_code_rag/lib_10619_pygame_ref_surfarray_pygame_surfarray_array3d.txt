@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.array3d
+
+pygame.surfarray.array3d() 
+ Copy pixels into a 3d array array3d(Surface) -> array  Copy the pixels from a Surface into a 3D array. The bit depth of the surface will control the size of the integer values, and will work for any type of pixel format. This function will temporarily lock the Surface as pixels are copied (see the pygame.Surface.lock() - lock the Surface memory for pixel access method).

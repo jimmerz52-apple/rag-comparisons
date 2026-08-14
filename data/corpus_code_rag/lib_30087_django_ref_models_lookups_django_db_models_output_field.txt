@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.output_field
+
+output_field  
+Defines the type of class returned by the get_lookup() method. It must be a Field instance.

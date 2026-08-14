@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axis3d.axis#mpl_toolkits.mplot3d.axis3d.Axis.draw_pane
+
+draw_pane(renderer)[source]

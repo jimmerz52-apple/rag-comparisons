@@ -1,0 +1,3 @@
+# tensorflow.keras.datasets.reuters
+
+Module: tf.keras.datasets.reuters Reuters topic classification dataset. Functions get_word_index(...): Retrieves a dict mapping words to their index in the Reuters dataset. load_data(...): Loads the Reuters newswire classification dataset.

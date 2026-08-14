@@ -1,0 +1,5 @@
+# python.library.operator#operator.or_
+
+operator.or_(a, b)  
+operator.__or__(a, b)  
+Return the bitwise or of a and b.

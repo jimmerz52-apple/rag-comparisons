@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.longMessage
+
+longMessage  
+This class attribute determines what happens when a custom failure message is passed as the msg argument to an assertXYY call that fails. True is the default value. In this case, the custom message is appended to the end of the standard failure message. When set to False, the custom message replaces the standard message. The class setting can be overridden in individual test methods by assigning an instance attribute, self.longMessage, to True or False before calling the assert methods. The class setting gets reset before each test call.  New in version 3.1.

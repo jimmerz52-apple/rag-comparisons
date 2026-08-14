@@ -1,0 +1,4 @@
+# python.library.pprint#pprint.pformat
+
+pprint.pformat(object, indent=1, width=80, depth=None, *, compact=False, sort_dicts=True)  
+Return the formatted representation of object as a string. indent, width, depth, compact and sort_dicts will be passed to the PrettyPrinter constructor as formatting parameters.  Changed in version 3.4: Added the compact parameter.   Changed in version 3.8: Added the sort_dicts parameter.

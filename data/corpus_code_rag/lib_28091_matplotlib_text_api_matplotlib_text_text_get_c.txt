@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_c
+
+get_c()[source]
+ 
+Alias for get_color.

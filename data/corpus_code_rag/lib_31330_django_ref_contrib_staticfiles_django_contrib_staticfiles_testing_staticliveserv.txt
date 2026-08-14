@@ -1,0 +1,3 @@
+# django.ref.contrib.staticfiles#django.contrib.staticfiles.testing.StaticLiveServerTestCase
+
+class testing.StaticLiveServerTestCase

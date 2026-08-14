@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.linkname
+
+TarInfo.linkname  
+Name of the target file name, which is only present in TarInfo objects of type LNKTYPE and SYMTYPE.

@@ -1,0 +1,18 @@
+# tensorflow.io.read_file
+
+tf.io.read_file Reads and outputs the entire contents of the input filename.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.io.read_file, tf.compat.v1.read_file  
+tf.io.read_file(
+    filename, name=None
+)
+
+ 
+
+
+ Args
+  filename   A Tensor of type string.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type string.

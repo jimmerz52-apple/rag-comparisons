@@ -1,0 +1,38 @@
+# skimage.api.skimage.restoration#skimage.restoration.wiener
+
+skimage.restoration.wiener(image, psf, balance, reg=None, is_real=True, clip=True) [source]
+ 
+Wiener-Hunt deconvolution Return the deconvolution with a Wiener-Hunt approach (i.e. with Fourier diagonalisation).  Parameters 
+ 
+image(M, N) ndarray 
+
+Input degraded image  
+psfndarray 
+
+Point Spread Function. This is assumed to be the impulse response (input image space) if the data-type is real, or the transfer function (Fourier space) if the data-type is complex. There is no constraints on the shape of the impulse response. The transfer function must be of shape (M, N) if is_real is True, (M, N // 2 + 1) otherwise (see np.fft.rfftn).  
+balancefloat 
+
+The regularisation parameter value that tunes the balance between the data adequacy that improve frequency restoration and the prior adequacy that reduce frequency restoration (to avoid noise artifacts).  
+regndarray, optional 
+
+The regularisation operator. The Laplacian by default. It can be an impulse response or a transfer function, as for the psf. Shape constraint is the same as for the psf parameter.  
+is_realboolean, optional 
+
+True by default. Specify if psf and reg are provided with hermitian hypothesis, that is only half of the frequency plane is provided (due to the redundancy of Fourier transform of real signal). It’s apply only if psf and/or reg are provided as transfer function. For the hermitian property see uft module or np.fft.rfftn.  
+clipboolean, optional 
+
+True by default. If True, pixel values of the result above 1 or under -1 are thresholded for skimage pipeline compatibility.    Returns 
+ 
+im_deconv(M, N) ndarray 
+
+The deconvolved image.     Notes This function applies the Wiener filter to a noisy and degraded image by an impulse response (or PSF). If the data model is  \[y = Hx + n\] where \(n\) is noise, \(H\) the PSF and \(x\) the unknown original image, the Wiener filter is  \[\hat x = F^\dagger (|\Lambda_H|^2 + \lambda |\Lambda_D|^2) \Lambda_H^\dagger F y\] where \(F\) and \(F^\dagger\) are the Fourier and inverse Fourier transforms respectively, \(\Lambda_H\) the transfer function (or the Fourier transform of the PSF, see [Hunt] below) and \(\Lambda_D\) the filter to penalize the restored image frequencies (Laplacian by default, that is penalization of high frequency). The parameter \(\lambda\) tunes the balance between the data (that tends to increase high frequency, even those coming from noise), and the regularization. These methods are then specific to a prior model. Consequently, the application or the true image nature must corresponds to the prior model. By default, the prior model (Laplacian) introduce image smoothness or pixel correlation. It can also be interpreted as high-frequency penalization to compensate the instability of the solution with respect to the data (sometimes called noise amplification or “explosive” solution). Finally, the use of Fourier space implies a circulant property of \(H\), see [Hunt]. References  
+1  
+François Orieux, Jean-François Giovannelli, and Thomas Rodet, “Bayesian estimation of regularization and point spread function parameters for Wiener-Hunt deconvolution”, J. Opt. Soc. Am. A 27, 1593-1607 (2010) https://www.osapublishing.org/josaa/abstract.cfm?URI=josaa-27-7-1593 http://research.orieux.fr/files/papers/OGR-JOSA10.pdf  
+2  
+B. R. Hunt “A matrix theory proof of the discrete convolution theorem”, IEEE Trans. on Audio and Electroacoustics, vol. au-19, no. 4, pp. 285-288, dec. 1971   Examples >>> from skimage import color, data, restoration
+>>> img = color.rgb2gray(data.astronaut())
+>>> from scipy.signal import convolve2d
+>>> psf = np.ones((5, 5)) / 25
+>>> img = convolve2d(img, psf, 'same')
+>>> img += 0.1 * img.std() * np.random.standard_normal(img.shape)
+>>> deconvolved_img = restoration.wiener(img, psf, 1100)

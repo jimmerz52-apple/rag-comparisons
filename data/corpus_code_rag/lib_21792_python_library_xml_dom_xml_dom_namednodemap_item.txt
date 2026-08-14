@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.NamedNodeMap.item
+
+NamedNodeMap.item(index)  
+Return an attribute with a particular index. The order you get the attributes in is arbitrary but will be consistent for the life of a DOM. Each item is an attribute node. Get its value with the value attribute.

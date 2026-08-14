@@ -1,0 +1,5 @@
+# django.ref.models.fields#django.db.models.DateField.auto_now_add
+
+DateField.auto_now_add  
+Automatically set the field to now when the object is first created. Useful for creation of timestamps. Note that the current date is always used; it’s not just a default value that you can override. So even if you set a value for this field when creating the object, it will be ignored. If you want to be able to modify this field, set the following instead of auto_now_add=True:  For DateField: default=date.today - from datetime.date.today()
+ For DateTimeField: default=timezone.now - from django.utils.timezone.now()

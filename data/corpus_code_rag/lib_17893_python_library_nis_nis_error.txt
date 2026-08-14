@@ -1,0 +1,4 @@
+# python.library.nis#nis.error
+
+exception nis.error  
+An error raised when a NIS function returns an error code.

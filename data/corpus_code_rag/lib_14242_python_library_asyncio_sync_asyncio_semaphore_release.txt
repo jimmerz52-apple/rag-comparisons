@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Semaphore.release
+
+release()  
+Release a semaphore, incrementing the internal counter by one. Can wake up a task waiting to acquire the semaphore. Unlike BoundedSemaphore, Semaphore allows making more release() calls than acquire() calls.

@@ -1,0 +1,4 @@
+# python.library.exceptions#OSError.winerror
+
+winerror  
+Under Windows, this gives you the native Windows error code. The errno attribute is then an approximate translation, in POSIX terms, of that native error code. Under Windows, if the winerror constructor argument is an integer, the errno attribute is determined from the Windows error code, and the errno argument is ignored. On other platforms, the winerror argument is ignored, and the winerror attribute does not exist.

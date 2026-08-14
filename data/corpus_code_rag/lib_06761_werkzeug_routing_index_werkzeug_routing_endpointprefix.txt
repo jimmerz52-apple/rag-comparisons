@@ -1,0 +1,15 @@
+# werkzeug.routing.index#werkzeug.routing.EndpointPrefix
+
+class werkzeug.routing.EndpointPrefix(prefix, rules)  
+Prefixes all endpoints (which must be strings for this factory) with another string. This can be useful for sub applications: url_map = Map([
+    Rule('/', endpoint='index'),
+    EndpointPrefix('blog/', [Submount('/blog', [
+        Rule('/', endpoint='index'),
+        Rule('/entry/<entry_slug>', endpoint='show')
+    ])])
+])
+  Parameters 
+ 
+prefix (str) –  
+rules (Iterable[Rule]) –    Return type 
+None

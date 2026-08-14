@@ -1,0 +1,15 @@
+# matplotlib.path_api#matplotlib.path.Path.get_extents
+
+get_extents(transform=None, **kwargs)[source]
+ 
+Get Bbox of the path.  Parameters 
+ 
+transformmatplotlib.transforms.Transform, optional
+
+
+Transform to apply to path before computing extents, if any.  **kwargs
+
+Forwarded to iter_bezier.    Returns 
+ matplotlib.transforms.Bbox
+
+The extents of the path Bbox([[xmin, ymin], [xmax, ymax]])

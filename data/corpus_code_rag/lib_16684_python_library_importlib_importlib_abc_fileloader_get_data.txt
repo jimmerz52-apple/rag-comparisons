@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.FileLoader.get_data
+
+abstractmethod get_data(path)  
+Reads path as a binary file and returns the bytes from it.

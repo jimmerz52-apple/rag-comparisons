@@ -1,0 +1,4 @@
+# python.library.email.utils#email.utils.quote
+
+email.utils.quote(str)  
+Return a new string with backslashes in str replaced by two backslashes, and double quotes replaced by backslash-double quote.

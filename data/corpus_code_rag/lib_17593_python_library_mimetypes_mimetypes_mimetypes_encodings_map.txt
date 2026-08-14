@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.MimeTypes.encodings_map
+
+encodings_map  
+Dictionary mapping filename extensions to encoding types. This is initially a copy of the global encodings_map defined in the module.

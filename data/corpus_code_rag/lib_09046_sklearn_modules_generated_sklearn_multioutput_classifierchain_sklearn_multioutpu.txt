@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.multioutput.classifierchain#sklearn.multioutput.ClassifierChain.fit
+
+fit(X, Y) [source]
+ 
+Fit the model to data matrix X and targets Y.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input data.  
+Yarray-like of shape (n_samples, n_classes) 
+
+The target values.    Returns 
+ 
+selfobject

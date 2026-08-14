@@ -1,0 +1,4 @@
+# python.library.os#os.P_PIDFD
+
+os.P_PIDFD  
+This is a Linux-specific idtype that indicates that id is a file descriptor that refers to a process. Availability: Linux 5.4+  New in version 3.9.

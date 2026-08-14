@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sign
+
+sign() → Tensor  
+See torch.sign()

@@ -1,0 +1,6 @@
+# python.library.pathlib#pathlib.PureWindowsPath
+
+class pathlib.PureWindowsPath(*pathsegments)  
+A subclass of PurePath, this path flavour represents Windows filesystem paths: >>> PureWindowsPath('c:/Program Files/')
+PureWindowsPath('c:/Program Files')
+ pathsegments is specified similarly to PurePath.

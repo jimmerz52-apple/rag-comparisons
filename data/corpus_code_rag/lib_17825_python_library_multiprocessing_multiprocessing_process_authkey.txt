@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Process.authkey
+
+authkey  
+The process’s authentication key (a byte string). When multiprocessing is initialized the main process is assigned a random string using os.urandom(). When a Process object is created, it will inherit the authentication key of its parent process, although this may be changed by setting authkey to another byte string. See Authentication keys.

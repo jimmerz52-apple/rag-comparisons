@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AlterModelTable
+
+class AlterModelTable(name, table)

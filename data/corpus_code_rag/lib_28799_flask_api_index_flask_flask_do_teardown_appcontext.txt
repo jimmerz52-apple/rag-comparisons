@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.do_teardown_appcontext
+
+do_teardown_appcontext(exc=<object object>)  
+Called right before the application context is popped. When handling a request, the application context is popped after the request context. See do_teardown_request(). This calls all functions decorated with teardown_appcontext(). Then the appcontext_tearing_down signal is sent. This is called by AppContext.pop().  Changelog New in version 0.9.   Parameters 
+exc (Optional[BaseException]) –   Return type 
+None

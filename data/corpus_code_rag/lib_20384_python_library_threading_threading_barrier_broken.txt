@@ -1,0 +1,4 @@
+# python.library.threading#threading.Barrier.broken
+
+broken  
+A boolean that is True if the barrier is in the broken state.

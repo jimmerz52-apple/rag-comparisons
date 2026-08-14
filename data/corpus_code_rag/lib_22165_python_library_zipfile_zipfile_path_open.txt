@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.open
+
+Path.open(mode='r', *, pwd, **)  
+Invoke ZipFile.open() on the current path. Allows opening for read or write, text or binary through supported modes: ‘r’, ‘w’, ‘rb’, ‘wb’. Positional and keyword arguments are passed through to io.TextIOWrapper when opened as text and ignored otherwise. pwd is the pwd parameter to ZipFile.open().  Changed in version 3.9: Added support for text and binary modes for open. Default mode is now text.

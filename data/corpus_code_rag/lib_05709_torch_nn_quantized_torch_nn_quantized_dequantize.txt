@@ -1,0 +1,15 @@
+# torch.nn.quantized#torch.nn.quantized.DeQuantize
+
+class torch.nn.quantized.DeQuantize [source]
+ 
+Dequantizes an incoming tensor  Examples::
+
+>>> input = torch.tensor([[1., -1.], [1., -1.]])
+>>> scale, zero_point, dtype = 1.0, 2, torch.qint8
+>>> qm = Quantize(scale, zero_point, dtype)
+>>> quantized_input = qm(input)
+>>> dqm = DeQuantize()
+>>> dequantized = dqm(quantized_input)
+>>> print(dequantized)
+tensor([[ 1., -1.],
+        [ 1., -1.]], dtype=torch.float32)

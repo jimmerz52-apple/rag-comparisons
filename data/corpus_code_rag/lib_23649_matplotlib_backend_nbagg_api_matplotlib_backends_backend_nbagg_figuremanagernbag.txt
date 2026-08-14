@@ -1,0 +1,5 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.FigureManagerNbAgg.clearup_closed
+
+clearup_closed()[source]
+ 
+Clear up any closed Comms.

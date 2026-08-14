@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.subplotspec#matplotlib.gridspec.SubplotSpec.get_geometry
+
+get_geometry()[source]
+ 
+Return the subplot geometry as tuple (n_rows, n_cols, start, stop). The indices start and stop define the range of the subplot within the GridSpec. stop is inclusive (i.e. for a single cell start == stop).

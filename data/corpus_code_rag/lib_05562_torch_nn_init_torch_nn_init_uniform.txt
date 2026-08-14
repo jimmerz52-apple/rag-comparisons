@@ -1,0 +1,11 @@
+# torch.nn.init#torch.nn.init.uniform_
+
+torch.nn.init.uniform_(tensor, a=0.0, b=1.0) [source]
+ 
+Fills the input Tensor with values drawn from the uniform distribution U(a,b)\mathcal{U}(a, b) .  Parameters 
+ 
+tensor – an n-dimensional torch.Tensor
+ 
+a – the lower bound of the uniform distribution 
+b – the upper bound of the uniform distribution    Examples >>> w = torch.empty(3, 5)
+>>> nn.init.uniform_(w)

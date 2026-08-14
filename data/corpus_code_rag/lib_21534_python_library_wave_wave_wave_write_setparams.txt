@@ -1,0 +1,5 @@
+# python.library.wave#wave.Wave_write.setparams
+
+Wave_write.setparams(tuple)  
+The tuple should be (nchannels, sampwidth, framerate, nframes, comptype,
+compname), with values valid for the set*() methods. Sets all parameters.

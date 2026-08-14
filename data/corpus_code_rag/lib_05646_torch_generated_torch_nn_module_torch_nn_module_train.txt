@@ -1,0 +1,8 @@
+# torch.generated.torch.nn.module#torch.nn.Module.train
+
+train(mode=True) [source]
+ 
+Sets the module in training mode. This has any effect only on certain modules. See documentations of particular modules for details of their behaviors in training/evaluation mode, if they are affected, e.g. Dropout, BatchNorm, etc.  Parameters 
+mode (bool) – whether to set training mode (True) or evaluation mode (False). Default: True.  Returns 
+self  Return type 
+Module

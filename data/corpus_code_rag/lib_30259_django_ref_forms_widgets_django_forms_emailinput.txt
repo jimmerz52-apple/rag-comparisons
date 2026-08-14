@@ -1,0 +1,8 @@
+# django.ref.forms.widgets#django.forms.EmailInput
+
+class EmailInput  
+ 
+input_type: 'email'
+ 
+template_name: 'django/forms/widgets/email.html'
+ Renders as: <input type="email" ...>

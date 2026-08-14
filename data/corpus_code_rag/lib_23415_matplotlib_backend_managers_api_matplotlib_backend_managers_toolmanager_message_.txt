@@ -1,0 +1,5 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.message_event
+
+message_event(message, sender=None)[source]
+ 
+Emit a ToolManagerMessageEvent.

@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.get_text
+
+get_text()[source]
+ 
+Return the cell Text instance.

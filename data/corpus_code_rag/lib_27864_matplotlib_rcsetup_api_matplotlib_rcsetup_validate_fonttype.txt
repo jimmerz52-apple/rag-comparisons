@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_fonttype
+
+matplotlib.rcsetup.validate_fonttype(s)[source]
+ 
+Confirm that this is a Postscript or PDF font type that we know how to convert to.

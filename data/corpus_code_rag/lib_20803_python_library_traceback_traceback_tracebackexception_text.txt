@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.text
+
+text  
+For syntax errors - the text where the error occurred.

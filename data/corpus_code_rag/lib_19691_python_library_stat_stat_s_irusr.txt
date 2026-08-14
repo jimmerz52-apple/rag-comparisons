@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IRUSR
+
+stat.S_IRUSR  
+Owner has read permission.

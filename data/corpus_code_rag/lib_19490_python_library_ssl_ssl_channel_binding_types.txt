@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.CHANNEL_BINDING_TYPES
+
+ssl.CHANNEL_BINDING_TYPES  
+List of supported TLS channel binding types. Strings in this list can be used as arguments to SSLSocket.get_channel_binding().  New in version 3.3.

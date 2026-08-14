@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.absolute
+
+absolute() → Tensor  
+Alias for abs()

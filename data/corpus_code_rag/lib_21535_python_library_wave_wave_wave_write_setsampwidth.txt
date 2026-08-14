@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.setsampwidth
+
+Wave_write.setsampwidth(n)  
+Set the sample width to n bytes.

@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.get_redirect_field_name
+
+get_redirect_field_name()  
+Returns the name of the query parameter that will contain the URL the user should be redirected to after a successful login. If you set this to None, a query parameter won’t be added. Returns the redirect_field_name attribute by default.

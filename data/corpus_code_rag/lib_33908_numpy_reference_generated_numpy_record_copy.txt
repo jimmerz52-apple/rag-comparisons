@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.copy
+
+numpy.record.copy method   record.copy()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.copy.

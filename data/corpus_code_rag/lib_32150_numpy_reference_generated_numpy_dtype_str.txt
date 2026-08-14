@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.str
+
+numpy.dtype.str attribute   dtype.str
+ 
+The array-protocol typestring of this data-type object.

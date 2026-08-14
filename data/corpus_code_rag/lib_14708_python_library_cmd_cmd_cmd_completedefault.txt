@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.completedefault
+
+Cmd.completedefault(text, line, begidx, endidx)  
+Method called to complete an input line when no command-specific complete_*() method is available. By default, it returns an empty list.

@@ -1,0 +1,4 @@
+# django.ref.contrib.messages#django.contrib.messages.views.SuccessMessageMixin.get_success_message
+
+get_success_message(cleaned_data)  
+cleaned_data is the cleaned data from the form which is used for string formatting

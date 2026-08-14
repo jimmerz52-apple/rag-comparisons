@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_bbox_patch
+
+get_bbox_patch()[source]
+ 
+Return the bbox Patch, or None if the patches.FancyBboxPatch is not made.

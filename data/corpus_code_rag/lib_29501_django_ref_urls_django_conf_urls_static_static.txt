@@ -1,0 +1,3 @@
+# django.ref.urls#django.conf.urls.static.static
+
+static.static(prefix, view=django.views.static.serve, **kwargs)

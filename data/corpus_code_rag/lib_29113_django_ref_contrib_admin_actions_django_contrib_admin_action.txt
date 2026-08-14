@@ -1,0 +1,17 @@
+# django.ref.contrib.admin.actions#django.contrib.admin.action
+
+action(*, permissions=None, description=None)  
+ New in Django 3.2.  This decorator can be used for setting specific attributes on custom action functions that can be used with actions: @admin.action(
+    permissions=['publish'],
+    description='Mark selected stories as published',
+)
+def make_published(self, request, queryset):
+    queryset.update(status='p')
+ This is equivalent to setting some attributes (with the original, longer names) on the function directly: def make_published(self, request, queryset):
+    queryset.update(status='p')
+make_published.allowed_permissions = ['publish']
+make_published.short_description = 'Mark selected stories as published'
+ Use of this decorator is not compulsory to make an action function, but it can be useful to use it without arguments as a marker in your source to identify the purpose of the function: @admin.action
+def make_inactive(self, request, queryset):
+    queryset.update(is_active=False)
+ In this case it will add no attributes to the function.

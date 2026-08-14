@@ -1,0 +1,4 @@
+# python.library.base64#base64.decodebytes
+
+base64.decodebytes(s)  
+Decode the bytes-like object s, which must contain one or more lines of base64 encoded data, and return the decoded bytes.  New in version 3.1.

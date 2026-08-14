@@ -1,0 +1,9 @@
+# flask.api.index#flask.Blueprint.make_setup_state
+
+make_setup_state(app, options, first_registration=False)  
+Creates an instance of BlueprintSetupState() object that is later passed to the register callback functions. Subclasses can override this to return a subclass of the setup state.  Parameters 
+ 
+app (Flask) –  
+options (dict) –  
+first_registration (bool) –    Return type 
+flask.blueprints.BlueprintSetupState

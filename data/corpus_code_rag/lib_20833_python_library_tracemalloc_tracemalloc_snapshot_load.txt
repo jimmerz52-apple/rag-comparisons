@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Snapshot.load
+
+classmethod load(filename)  
+Load a snapshot from a file. See also dump().

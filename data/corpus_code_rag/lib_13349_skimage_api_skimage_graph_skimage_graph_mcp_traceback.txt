@@ -1,0 +1,12 @@
+# skimage.api.skimage.graph#skimage.graph.MCP.traceback
+
+traceback(end)  
+Trace a minimum cost path through the pre-calculated traceback array. This convenience function reconstructs the the minimum cost path to a given end position from one of the starting indices provided to find_costs(), which must have been called previously. This function can be called as many times as desired after find_costs() has been run.  Parameters 
+ 
+enditerable 
+
+An n-d index into the costs array.    Returns 
+ 
+tracebacklist of n-d tuples 
+
+A list of indices into the costs array, starting with one of the start positions passed to find_costs(), and ending with the given end index. These indices specify the minimum-cost path from any given start index to the end index. (The total cost of that path can be read out from the cumulative_costs array returned by find_costs().)

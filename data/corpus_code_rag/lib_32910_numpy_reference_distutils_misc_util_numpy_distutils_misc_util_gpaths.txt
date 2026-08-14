@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.gpaths
+
+numpy.distutils.misc_util.gpaths(paths, local_path='', include_non_existing=True)[source]
+ 
+Apply glob to paths and prepend local_path if needed.

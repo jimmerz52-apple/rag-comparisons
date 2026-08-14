@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getnframes
+
+aifc.getnframes()  
+Return the number of audio frames in the file.

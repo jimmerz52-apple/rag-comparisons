@@ -1,0 +1,8 @@
+# flask.api.index#flask.Flask.add_template_filter
+
+add_template_filter(f, name=None)  
+Register a custom template filter. Works exactly like the template_filter() decorator.  Parameters 
+ 
+name (Optional[str]) – the optional name of the filter, otherwise the function name will be used. 
+f (Callable[[Any], str]) –    Return type 
+None

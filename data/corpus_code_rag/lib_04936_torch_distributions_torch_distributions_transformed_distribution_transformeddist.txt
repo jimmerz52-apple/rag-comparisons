@@ -1,0 +1,43 @@
+# torch.distributions#torch.distributions.transformed_distribution.TransformedDistribution
+
+class torch.distributions.transformed_distribution.TransformedDistribution(base_distribution, transforms, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Extension of the Distribution class, which applies a sequence of Transforms to a base distribution. Let f be the composition of transforms applied: X ~ BaseDistribution
+Y = f(X) ~ TransformedDistribution(BaseDistribution, f)
+log p(Y) = log p(X) + log |det (dX/dY)|
+ Note that the .event_shape of a TransformedDistribution is the maximum shape of its base distribution and its transforms, since transforms can introduce correlations among events. An example for the usage of TransformedDistribution would be: # Building a Logistic Distribution
+# X ~ Uniform(0, 1)
+# f = a + b * logit(X)
+# Y ~ f(X) ~ Logistic(a, b)
+base_distribution = Uniform(0, 1)
+transforms = [SigmoidTransform().inv, AffineTransform(loc=a, scale=b)]
+logistic = TransformedDistribution(base_distribution, transforms)
+ For more examples, please look at the implementations of Gumbel, HalfCauchy, HalfNormal, LogNormal, Pareto, Weibull, RelaxedBernoulli and RelaxedOneHotCategorical  
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {} 
+  
+cdf(value) [source]
+ 
+Computes the cumulative distribution function by inverting the transform(s) and computing the score of the base distribution. 
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+property has_rsample 
+  
+icdf(value) [source]
+ 
+Computes the inverse cumulative distribution function using transform(s) and computing the score of the base distribution. 
+  
+log_prob(value) [source]
+ 
+Scores the sample by inverting the transform(s) and computing the score using the score of the base distribution and the log abs det jacobian. 
+  
+rsample(sample_shape=torch.Size([])) [source]
+ 
+Generates a sample_shape shaped reparameterized sample or sample_shape shaped batch of reparameterized samples if the distribution parameters are batched. Samples first from base distribution and applies transform() for every transform in the list. 
+  
+sample(sample_shape=torch.Size([])) [source]
+ 
+Generates a sample_shape shaped sample or sample_shape shaped batch of samples if the distribution parameters are batched. Samples first from base distribution and applies transform() for every transform in the list. 
+  
+property support

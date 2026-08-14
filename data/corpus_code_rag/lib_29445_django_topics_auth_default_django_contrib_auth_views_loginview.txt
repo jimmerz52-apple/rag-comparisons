@@ -1,0 +1,71 @@
+# django.topics.auth.default#django.contrib.auth.views.LoginView
+
+class LoginView  
+URL name: login See the URL documentation for details on using named URL patterns. Methods and Attributes  
+template_name  
+The name of a template to display for the view used to log the user in. Defaults to registration/login.html. 
+  
+next_page  
+ New in Django 4.0.  The URL to redirect to after login. Defaults to LOGIN_REDIRECT_URL. 
+  
+redirect_field_name  
+The name of a GET field containing the URL to redirect to after login. Defaults to next. Overrides the get_default_redirect_url() URL if the given GET parameter is passed. 
+  
+authentication_form  
+A callable (typically a form class) to use for authentication. Defaults to AuthenticationForm. 
+  
+extra_context  
+A dictionary of context data that will be added to the default context data passed to the template. 
+  
+redirect_authenticated_user  
+A boolean that controls whether or not authenticated users accessing the login page will be redirected as if they had just successfully logged in. Defaults to False.  Warning If you enable redirect_authenticated_user, other websites will be able to determine if their visitors are authenticated on your site by requesting redirect URLs to image files on your website. To avoid this “social media fingerprinting” information leakage, host all images and your favicon on a separate domain. Enabling redirect_authenticated_user can also result in a redirect loop when using the permission_required() decorator unless the raise_exception parameter is used.  
+  
+success_url_allowed_hosts  
+A set of hosts, in addition to request.get_host(), that are safe for redirecting after login. Defaults to an empty set. 
+  
+get_default_redirect_url()  
+ New in Django 4.0.  Returns the URL to redirect to after login. The default implementation resolves and returns next_page if set, or LOGIN_REDIRECT_URL otherwise. 
+ Here’s what LoginView does:  If called via GET, it displays a login form that POSTs to the same URL. More on this in a bit. If called via POST with user submitted credentials, it tries to log the user in. If login is successful, the view redirects to the URL specified in next. If next isn’t provided, it redirects to settings.LOGIN_REDIRECT_URL (which defaults to /accounts/profile/). If login isn’t successful, it redisplays the login form.  It’s your responsibility to provide the html for the login template , called registration/login.html by default. This template gets passed four template context variables:  
+form: A Form object representing the AuthenticationForm. 
+next: The URL to redirect to after successful login. This may contain a query string, too. 
+site: The current Site, according to the SITE_ID setting. If you don’t have the site framework installed, this will be set to an instance of RequestSite, which derives the site name and domain from the current HttpRequest. 
+site_name: An alias for site.name. If you don’t have the site framework installed, this will be set to the value of request.META['SERVER_NAME']. For more on sites, see The “sites” framework.  If you’d prefer not to call the template registration/login.html, you can pass the template_name parameter via the extra arguments to the as_view method in your URLconf. For example, this URLconf line would use myapp/login.html instead: path('accounts/login/', auth_views.LoginView.as_view(template_name='myapp/login.html')),
+ You can also specify the name of the GET field which contains the URL to redirect to after login using redirect_field_name. By default, the field is called next. Here’s a sample registration/login.html template you can use as a starting point. It assumes you have a base.html template that defines a content block: {% extends "base.html" %}
+
+{% block content %}
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+    <p>Your account doesn't have access to this page. To proceed,
+    please login with an account that has access.</p>
+    {% else %}
+    <p>Please login to see this page.</p>
+    {% endif %}
+{% endif %}
+
+<form method="post" action="{% url 'login' %}">
+{% csrf_token %}
+<table>
+<tr>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+</table>
+
+<input type="submit" value="login">
+<input type="hidden" name="next" value="{{ next }}">
+</form>
+
+{# Assumes you set up the password_reset view in your URLconf #}
+<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+
+{% endblock %}
+ If you have customized authentication (see Customizing Authentication) you can use a custom authentication form by setting the authentication_form attribute. This form must accept a request keyword argument in its __init__() method and provide a get_user() method which returns the authenticated user object (this method is only ever called after successful form validation).

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.srs
+
+GEOSGeometry.srs  
+Returns a SpatialReference object corresponding to the SRID of the geometry or None.

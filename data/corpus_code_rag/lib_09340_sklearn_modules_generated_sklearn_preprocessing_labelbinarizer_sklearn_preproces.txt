@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.labelbinarizer#sklearn.preprocessing.LabelBinarizer.fit_transform
+
+fit_transform(y) [source]
+ 
+Fit label binarizer and transform multi-class labels to binary labels. The output of transform is sometimes referred to as the 1-of-K coding scheme.  Parameters 
+ 
+y{ndarray, sparse matrix} of shape (n_samples,) or (n_samples, n_classes) 
+
+Target values. The 2-d matrix should only contain 0 and 1, represents multilabel classification. Sparse matrix can be CSR, CSC, COO, DOK, or LIL.    Returns 
+ 
+Y{ndarray, sparse matrix} of shape (n_samples, n_classes) 
+
+Shape will be (n_samples, 1) for binary problems. Sparse matrix will be of CSR format.

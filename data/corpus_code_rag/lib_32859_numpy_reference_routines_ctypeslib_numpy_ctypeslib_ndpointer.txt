@@ -1,0 +1,35 @@
+# numpy.reference.routines.ctypeslib#numpy.ctypeslib.ndpointer
+
+numpy.ctypeslib.ndpointer(dtype=None, ndim=None, shape=None, flags=None)[source]
+ 
+Array-checking restype/argtypes. An ndpointer instance is used to describe an ndarray in restypes and argtypes specifications. This approach is more flexible than using, for example, POINTER(c_double), since several restrictions can be specified, which are verified upon calling the ctypes function. These include data type, number of dimensions, shape and flags. If a given array does not satisfy the specified restrictions, a TypeError is raised.  Parameters 
+ 
+dtypedata-type, optional
+
+
+Array data-type.  
+ndimint, optional
+
+
+Number of array dimensions.  
+shapetuple of ints, optional
+
+
+Array shape.  
+flagsstr or tuple of str
+
+
+Array flags; may be one or more of:  C_CONTIGUOUS / C / CONTIGUOUS F_CONTIGUOUS / F / FORTRAN OWNDATA / O WRITEABLE / W ALIGNED / A WRITEBACKIFCOPY / X UPDATEIFCOPY / U     Returns 
+ 
+klassndpointer type object
+
+
+A type object, which is an _ndtpr instance containing dtype, ndim, shape and flags information.    Raises 
+ TypeError
+
+If a given array does not satisfy the specified restrictions.     Examples >>> clib.somefunc.argtypes = [np.ctypeslib.ndpointer(dtype=np.float64,
+...                                                  ndim=1,
+...                                                  flags='C_CONTIGUOUS')]
+... 
+>>> clib.somefunc(np.array([1, 2, 3], dtype=np.float64))
+...

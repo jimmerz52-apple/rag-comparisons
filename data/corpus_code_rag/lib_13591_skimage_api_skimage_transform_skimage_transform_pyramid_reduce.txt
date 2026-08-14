@@ -1,0 +1,36 @@
+# skimage.api.skimage.transform#skimage.transform.pyramid_reduce
+
+skimage.transform.pyramid_reduce(image, downscale=2, sigma=None, order=1, mode='reflect', cval=0, multichannel=False, preserve_range=False) [source]
+ 
+Smooth and then downsample image.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+downscalefloat, optional 
+
+Downscale factor.  
+sigmafloat, optional 
+
+Sigma for Gaussian filter. Default is 2 * downscale / 6.0 which corresponds to a filter mask twice the size of the scale factor that covers more than 99% of the Gaussian distribution.  
+orderint, optional 
+
+Order of splines used in interpolation of downsampling. See skimage.transform.warp for detail.  
+mode{‘reflect’, ‘constant’, ‘edge’, ‘symmetric’, ‘wrap’}, optional 
+
+The mode parameter determines how the array borders are handled, where cval is the value when mode is equal to ‘constant’.  
+cvalfloat, optional 
+
+Value to fill past edges of input if mode is ‘constant’.  
+multichannelbool, optional 
+
+Whether the last axis of the image is to be interpreted as multiple channels or another spatial dimension.  
+preserve_rangebool, optional 
+
+Whether to keep the original range of values. Otherwise, the input image is converted according to the conventions of img_as_float. Also see https://scikit-image.org/docs/dev/user_guide/data_types.html    Returns 
+ 
+outarray 
+
+Smoothed and downsampled float image.     References  
+1  
+http://persci.mit.edu/pub_pdfs/pyramid83.pdf

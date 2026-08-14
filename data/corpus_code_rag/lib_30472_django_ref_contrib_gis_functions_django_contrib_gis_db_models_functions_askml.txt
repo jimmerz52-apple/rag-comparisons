@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.AsKML
+
+class AsKML(expression, precision=8, **extra)

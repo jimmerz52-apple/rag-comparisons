@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.LineCollection.set_offset_transform
+
+set_offset_transform(transOffset)[source]
+ 
+Set the artist offset transform.  Parameters 
+ 
+transOffsetTransform

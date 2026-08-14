@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.clear
+
+clear(keep_observers=False)[source]
+ 
+Clear the figure -- synonym for clf.

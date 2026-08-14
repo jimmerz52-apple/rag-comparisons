@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.delete_masked_points
+
+matplotlib.cbook.delete_masked_points(*args)[source]
+ 
+Find all masked and/or non-finite points in a set of arguments, and return the arguments with only the unmasked points remaining. Arguments can be in any of 5 categories:  1-D masked arrays 1-D ndarrays ndarrays with more than one dimension other non-string iterables anything else  The first argument must be in one of the first four categories; any argument with a length differing from that of the first argument (and hence anything in category 5) then will be passed through unchanged. Masks are obtained from all arguments of the correct length in categories 1, 2, and 4; a point is bad if masked in a masked array or if it is a nan or inf. No attempt is made to extract a mask from categories 2, 3, and 4 if numpy.isfinite does not yield a Boolean array. All input arguments that are not passed unchanged are returned as ndarrays after removing the points or rows corresponding to masks in any of the arguments. A vastly simpler version of this function was originally written as a helper for Axes.scatter().

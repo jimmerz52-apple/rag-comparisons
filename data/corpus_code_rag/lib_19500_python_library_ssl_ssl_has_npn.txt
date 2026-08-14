@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_NPN
+
+ssl.HAS_NPN  
+Whether the OpenSSL library has built-in support for the Next Protocol Negotiation as described in the Application Layer Protocol Negotiation. When true, you can use the SSLContext.set_npn_protocols() method to advertise which protocols you want to support.  New in version 3.3.

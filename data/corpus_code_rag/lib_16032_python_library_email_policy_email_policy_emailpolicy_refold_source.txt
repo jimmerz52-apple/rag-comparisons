@@ -1,0 +1,7 @@
+# python.library.email.policy#email.policy.EmailPolicy.refold_source
+
+refold_source  
+If the value for a header in the Message object originated from a parser (as opposed to being set by a program), this attribute indicates whether or not a generator should refold that value when transforming the message back into serialized form. The possible values are:  
+none all source values use original folding  
+long source values that have any line that is longer than max_line_length will be refolded  
+all all values are refolded.   The default is long.

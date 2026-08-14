@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.register_quit
+
+pygame.register_quit() 
+ register a function to be called when pygame quits register_quit(callable) -> None  When pygame.quit() is called, all registered quit functions are called. Pygame modules do this automatically when they are initializing, so this function will rarely be needed.

@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.normalizer#sklearn.preprocessing.Normalizer.fit
+
+fit(X, y=None) [source]
+ 
+Do nothing and return the estimator unchanged This method is just there to implement the usual API and hence work in pipelines.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data to estimate the normalization parameters.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted transformer.

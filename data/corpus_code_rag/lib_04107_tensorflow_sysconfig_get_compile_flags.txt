@@ -1,0 +1,10 @@
+# tensorflow.sysconfig.get_compile_flags
+
+tf.sysconfig.get_compile_flags     View source on GitHub    Get the compilation flags for custom operators.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.sysconfig.get_compile_flags  
+tf.sysconfig.get_compile_flags()
+
+ 
+
+
+ Returns   The compilation flags.

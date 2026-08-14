@@ -1,0 +1,7 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_rmax
+
+set_rmax(rmax)[source]
+ 
+Set the outer radial limit.  Parameters 
+ 
+rmaxfloat

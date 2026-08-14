@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.FastChildWatcher
+
+class asyncio.FastChildWatcher  
+This implementation reaps every terminated processes by calling os.waitpid(-1) directly, possibly breaking other code spawning processes and waiting for their termination. There is no noticeable overhead when handling a big number of children (O(1) each time a child terminates). This solution requires a running event loop in the main thread to work, as SafeChildWatcher.

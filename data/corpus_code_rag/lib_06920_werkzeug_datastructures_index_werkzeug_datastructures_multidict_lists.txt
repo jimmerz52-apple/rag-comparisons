@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.lists
+
+lists()  
+Return a iterator of (key, values) pairs, where values is the list of all values associated with the key.

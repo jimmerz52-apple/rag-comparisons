@@ -1,0 +1,9 @@
+method,phase,prompt_tokens,completion_tokens,total_tokens,calls,estimated_cost_usd,elapsed_seconds
+semantic_rag,semantic_index,109835,0,109835,1108,,
+semantic_rag,semantic_query,20152,1279,21431,60,,
+semantic_rag,evaluation,5781,1044,6825,40,,
+semantic_rag,__total__,135768,2323,138091,1208,0.0,80.89711212500697
+rerank_semantic,semantic_index,109835,0,109835,1108,,
+rerank_semantic,semantic_query,18008,1417,19425,60,,
+rerank_semantic,evaluation,5918,1173,7091,40,,
+rerank_semantic,__total__,133761,2590,136351,1208,0.0,188.89471529098228

@@ -1,0 +1,16 @@
+# matplotlib._as_gen.matplotlib.colors.rgb_to_hsv
+
+matplotlib.colors.rgb_to_hsv   matplotlib.colors.rgb_to_hsv(arr)[source]
+ 
+Convert float rgb values (in the range [0, 1]), in a numpy array to hsv values.  Parameters 
+ 
+arr(..., 3) array-like
+
+
+All values must be in the range [0, 1]    Returns 
+ (..., 3) ndarray
+
+Colors converted to hsv values in range [0, 1]     
+  Examples using matplotlib.colors.rgb_to_hsv
+ 
+   List of named colors

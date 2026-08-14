@@ -1,0 +1,12 @@
+# torch.fx#torch.fx.Graph.create_node
+
+create_node(op, target, args=None, kwargs=None, name=None, type_expr=None) [source]
+ 
+Create a Node and add it to the Graph at the current insert-point. Note that the current insert-point can be set via Graph.inserting_before() and Graph.inserting_after().  Parameters 
+ 
+op (str) – the opcode for this Node. One of ‘call_function’, ‘call_method’, ‘get_attr’, ‘call_module’, ‘placeholder’, or ‘output’. The semantics of these opcodes are described in the Graph docstring. 
+args (Optional[Tuple[Argument, ..]]) – is a tuple of arguments to this node. 
+kwargs (Optional[Dict[str, Argument]]) – the kwargs of this Node 
+name (Optional[str]) – an optional string name for the Node. This will influence the name of the value assigned to in the Python generated code. 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have.   Returns 
+The newly-created and inserted node.

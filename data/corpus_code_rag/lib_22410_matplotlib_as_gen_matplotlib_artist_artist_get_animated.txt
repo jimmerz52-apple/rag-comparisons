@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_animated
+
+matplotlib.artist.Artist.get_animated   Artist.get_animated()[source]
+ 
+Return whether the artist is animated.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.query_pk_and_slug
+
+query_pk_and_slug  
+If True, causes get_object() to perform its lookup using both the primary key and the slug. Defaults to False. This attribute can help mitigate insecure direct object reference attacks. When applications allow access to individual objects by a sequential primary key, an attacker could brute-force guess all URLs; thereby obtaining a list of all objects in the application. If users with access to individual objects should be prevented from obtaining this list, setting query_pk_and_slug to True will help prevent the guessing of URLs as each URL will require two correct, non-sequential arguments. Using a unique slug may serve the same purpose, but this scheme allows you to have non-unique slugs.

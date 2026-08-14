@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.move
+
+window.move(new_y, new_x)  
+Move cursor to (new_y, new_x).

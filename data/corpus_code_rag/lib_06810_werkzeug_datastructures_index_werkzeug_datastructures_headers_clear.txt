@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.clear
+
+clear()  
+Clears all headers.

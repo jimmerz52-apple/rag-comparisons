@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.coded_value
+
+Morsel.coded_value  
+The encoded value of the cookie — this is what should be sent.

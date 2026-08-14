@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.jinja_options
+
+jinja_options: dict = {}  
+Options that are passed to the Jinja environment in create_jinja_environment(). Changing these options after the environment is created (accessing jinja_env) will have no effect.  Changelog Changed in version 1.1.0: This is a dict instead of an ImmutableDict to allow easier configuration.

@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.ProcessGroupRpcBackendOptions.init_method
+
+property init_method  
+URL specifying how to initialize the process group. Default is env://

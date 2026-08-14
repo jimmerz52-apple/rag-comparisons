@@ -1,0 +1,19 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.rename_fields
+
+numpy.lib.recfunctions.rename_fields(base, namemapper)[source]
+ 
+Rename the fields from a flexible-datatype ndarray or recarray. Nested fields are supported.  Parameters 
+ 
+basendarray
+
+
+Input array whose fields must be modified.  
+namemapperdictionary
+
+
+Dictionary mapping old field names to their new version.     Examples >>> from numpy.lib import recfunctions as rfn
+>>> a = np.array([(1, (2, [3.0, 30.])), (4, (5, [6.0, 60.]))],
+...   dtype=[('a', int),('b', [('ba', float), ('bb', (float, 2))])])
+>>> rfn.rename_fields(a, {'a':'A', 'bb':'BB'})
+array([(1, (2., [ 3., 30.])), (4, (5., [ 6., 60.]))],
+      dtype=[('A', '<i8'), ('b', [('ba', '<f8'), ('BB', '<f8', (2,))])])

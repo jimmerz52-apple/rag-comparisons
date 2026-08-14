@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.isneginf
+
+isneginf() → Tensor  
+See torch.isneginf()

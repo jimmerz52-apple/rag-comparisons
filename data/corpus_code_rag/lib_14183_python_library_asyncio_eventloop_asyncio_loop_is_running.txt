@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.is_running
+
+loop.is_running()  
+Return True if the event loop is currently running.

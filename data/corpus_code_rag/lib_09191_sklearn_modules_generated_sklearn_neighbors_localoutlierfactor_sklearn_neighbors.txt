@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.neighbors.localoutlierfactor#sklearn.neighbors.LocalOutlierFactor.decision_function
+
+property decision_function  
+Shifted opposite of the Local Outlier Factor of X. Bigger is better, i.e. large values correspond to inliers. Only available for novelty detection (when novelty is set to True). The shift offset allows a zero threshold for being an outlier. The argument X is supposed to contain new data: if X contains a point from training, it considers the later in its own neighborhood. Also, the samples in X are not considered in the neighborhood of any point.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The query sample or samples to compute the Local Outlier Factor w.r.t. the training samples.    Returns 
+ 
+shifted_opposite_lof_scoresndarray of shape (n_samples,) 
+
+The shifted opposite of the Local Outlier Factor of each input samples. The lower, the more abnormal. Negative scores represent outliers, positive scores represent inliers.

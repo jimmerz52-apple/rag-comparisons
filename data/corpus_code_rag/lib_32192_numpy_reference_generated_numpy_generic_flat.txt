@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.flat
+
+numpy.generic.flat attribute   generic.flat
+ 
+A 1-D view of the scalar.

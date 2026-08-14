@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Page.object_list
+
+Page.object_list  
+The list of objects on this page.

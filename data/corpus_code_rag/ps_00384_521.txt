@@ -1,0 +1,9 @@
+# 521
+Task: 521
+
+# Write a function to print check if the triangle is scalene or not.
+def check_isosceles(x,y,z):
+  if x!=y & y!=z & z!=x:
+	   return True
+  else:
+     return False

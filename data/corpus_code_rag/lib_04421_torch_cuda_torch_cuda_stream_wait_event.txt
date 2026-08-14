@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.Stream.wait_event
+
+wait_event(event) [source]
+ 
+Makes all future work submitted to the stream wait for an event.  Parameters 
+event (Event) – an event to wait for.    Note This is a wrapper around cudaStreamWaitEvent(): see CUDA Stream documentation for more info. This function returns without waiting for event: only future operations are affected.

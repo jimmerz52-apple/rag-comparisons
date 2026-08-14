@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.SplitArrayField.base_field
+
+base_field  
+This is a required argument. It specifies the form field to be repeated.

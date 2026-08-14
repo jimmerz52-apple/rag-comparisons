@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.divide
+
+divide(x, y)  
+Return x divided by y.

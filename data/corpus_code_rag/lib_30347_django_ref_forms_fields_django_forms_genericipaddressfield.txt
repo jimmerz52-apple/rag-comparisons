@@ -1,0 +1,11 @@
+# django.ref.forms.fields#django.forms.GenericIPAddressField
+
+class GenericIPAddressField(**kwargs)  
+A field containing either an IPv4 or an IPv6 address.  Default widget: TextInput
+ Empty value: '' (an empty string) Normalizes to: A string. IPv6 addresses are normalized as described below. Validates that the given value is a valid IP address. Error message keys: required, invalid
+  The IPv6 address normalization follows RFC 4291#section-2.2 section 2.2, including using the IPv4 format suggested in paragraph 3 of that section, like ::ffff:192.0.2.0. For example, 2001:0::0:01 would be normalized to 2001::1, and ::ffff:0a0a:0a0a to ::ffff:10.10.10.10. All characters are converted to lowercase. Takes two optional arguments:  
+protocol  
+Limits valid inputs to the specified protocol. Accepted values are both (default), IPv4 or IPv6. Matching is case insensitive. 
+  
+unpack_ipv4  
+Unpacks IPv4 mapped addresses like ::ffff:192.0.2.1. If this option is enabled that address would be unpacked to 192.0.2.1. Default is disabled. Can only be used when protocol is set to 'both'.

@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.rotate_ip_rad
+
+rotate_ip_rad() 
+ rotates the vector by a given angle in radians in place. rotate_ip_rad(angle) -> None  Rotates the vector counterclockwise by the given angle in radians. The length of the vector is not changed.  New in pygame 2.0.0.

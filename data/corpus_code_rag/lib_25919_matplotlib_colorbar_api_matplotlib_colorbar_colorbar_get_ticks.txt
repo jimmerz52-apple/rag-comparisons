@@ -1,0 +1,10 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.get_ticks
+
+get_ticks(minor=False)[source]
+ 
+Return the ticks as a list of locations.  Parameters 
+ 
+minorboolean, default: False
+
+
+if True return the minor ticks.

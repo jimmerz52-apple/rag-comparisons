@@ -1,0 +1,8 @@
+# python.library.imaplib#imaplib.IMAP4.search
+
+IMAP4.search(charset, criterion[, ...])  
+Search mailbox for matching messages. charset may be None, in which case no CHARSET will be specified in the request to the server. The IMAP protocol requires that at least one criterion be specified; an exception will be raised when the server returns an error. charset must be None if the UTF8=ACCEPT capability was enabled using the enable() command. Example: # M is a connected IMAP4 instance...
+typ, msgnums = M.search(None, 'FROM', '"LDJ"')
+
+# or:
+typ, msgnums = M.search(None, '(FROM "LDJ")')

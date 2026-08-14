@@ -1,0 +1,4 @@
+# flask.api.index#flask.g
+
+flask.g  
+A namespace object that can store data during an application context. This is an instance of Flask.app_ctx_globals_class, which defaults to ctx._AppCtxGlobals. This is a good place to store resources during a request. During testing, you can use the Faking Resources and Context pattern to pre-configure such resources. This is a proxy. See Notes On Proxies for more information.  Changelog Changed in version 0.10: Bound to the application context instead of the request context.

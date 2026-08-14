@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.mask.main
+
+mask.main() 
+ display multiple images bounce off each other using collision detection mask.main(*args) -> None  Positional arguments: one or more image file names. This pygame.masks demo will display multiple moving sprites bouncing off each other. More than one sprite image can be provided. If run as a program then mask.py takes one or more image files as command line arguments.

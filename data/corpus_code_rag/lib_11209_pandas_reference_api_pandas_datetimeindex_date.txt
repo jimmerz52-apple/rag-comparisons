@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.datetimeindex.date
+
+pandas.DatetimeIndex.date   propertyDatetimeIndex.date
+ 
+Returns numpy array of python datetime.date objects. Namely, the date part of Timestamps without time and timezone information.

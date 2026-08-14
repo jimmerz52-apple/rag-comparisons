@@ -1,0 +1,4 @@
+# python.library.os#os.getenvb
+
+os.getenvb(key, default=None)  
+Return the value of the environment variable key if it exists, or default if it doesn’t. key, default and the result are bytes. getenvb() is only available if supports_bytes_environ is True. Availability: most flavors of Unix.  New in version 3.2.

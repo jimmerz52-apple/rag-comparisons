@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.user_permissions
+
+user_permissions  
+Many-to-many relationship to Permission

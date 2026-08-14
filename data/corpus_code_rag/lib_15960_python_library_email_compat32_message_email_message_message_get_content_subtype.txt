@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get_content_subtype
+
+get_content_subtype()  
+Return the message’s sub-content type. This is the subtype part of the string returned by get_content_type().

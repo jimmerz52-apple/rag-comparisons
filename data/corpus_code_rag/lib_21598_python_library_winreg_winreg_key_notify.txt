@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_NOTIFY
+
+winreg.KEY_NOTIFY  
+Required to request change notifications for a registry key or for subkeys of a registry key.

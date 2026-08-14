@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedPath.get_affine
+
+get_affine()[source]

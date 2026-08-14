@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.open_binary
+
+importlib.resources.open_binary(package, resource)  
+Open for binary reading the resource within package. package is either a name or a module object which conforms to the Package requirements. resource is the name of the resource to open within package; it may not contain path separators and it may not have sub-resources (i.e. it cannot be a directory). This function returns a typing.BinaryIO instance, a binary I/O stream open for reading.

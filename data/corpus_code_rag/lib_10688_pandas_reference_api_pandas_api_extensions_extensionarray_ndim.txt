@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.ndim
+
+pandas.api.extensions.ExtensionArray.ndim   propertyExtensionArray.ndim
+ 
+Extension Arrays are only allowed to be 1-dimensional.

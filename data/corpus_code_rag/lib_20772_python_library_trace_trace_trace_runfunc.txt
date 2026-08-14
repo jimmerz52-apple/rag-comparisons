@@ -1,0 +1,4 @@
+# python.library.trace#trace.Trace.runfunc
+
+runfunc(func, /, *args, **kwds)  
+Call func with the given arguments under control of the Trace object with the current tracing parameters.

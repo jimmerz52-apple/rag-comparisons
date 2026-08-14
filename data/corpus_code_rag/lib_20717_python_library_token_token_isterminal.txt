@@ -1,0 +1,4 @@
+# python.library.token#token.ISTERMINAL
+
+token.ISTERMINAL(x)  
+Return True for terminal token values.

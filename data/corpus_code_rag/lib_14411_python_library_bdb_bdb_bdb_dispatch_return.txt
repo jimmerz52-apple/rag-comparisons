@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.dispatch_return
+
+dispatch_return(frame, arg)  
+If the debugger should stop on this function return, invoke the user_return() method (which should be overridden in subclasses). Raise a BdbQuit exception if the Bdb.quitting flag is set (which can be set from user_return()). Return a reference to the trace_dispatch() method for further tracing in that scope.

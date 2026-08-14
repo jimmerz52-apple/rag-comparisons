@@ -1,0 +1,6 @@
+# python.library.ssl#ssl.SSLContext.cert_store_stats
+
+SSLContext.cert_store_stats()  
+Get statistics about quantities of loaded X.509 certificates, count of X.509 certificates flagged as CA certificates and certificate revocation lists as dictionary. Example for a context with one CA cert and one other cert: >>> context.cert_store_stats()
+{'crl': 0, 'x509_ca': 1, 'x509': 2}
+  New in version 3.4.

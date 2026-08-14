@@ -1,0 +1,8 @@
+# python.library.nntplib#nntplib.NNTP.descriptions
+
+NNTP.descriptions(grouppattern)  
+Send a LIST NEWSGROUPS command, where grouppattern is a wildmat string as specified in RFC 3977 (it’s essentially the same as DOS or UNIX shell wildcard strings). Return a pair (response, descriptions), where descriptions is a dictionary mapping group names to textual descriptions. >>> resp, descs = s.descriptions('gmane.comp.python.*')
+>>> len(descs) 
+295
+>>> descs.popitem() 
+('gmane.comp.python.bio.general', 'BioPython discussion list (Moderated)')

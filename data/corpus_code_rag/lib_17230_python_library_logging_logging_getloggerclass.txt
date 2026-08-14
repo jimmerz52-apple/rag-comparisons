@@ -1,0 +1,5 @@
+# python.library.logging#logging.getLoggerClass
+
+logging.getLoggerClass()  
+Return either the standard Logger class, or the last class passed to setLoggerClass(). This function may be called from within a new class definition, to ensure that installing a customized Logger class will not undo customizations already applied by other code. For example: class MyLogger(logging.getLoggerClass()):
+    # ... override behaviour here

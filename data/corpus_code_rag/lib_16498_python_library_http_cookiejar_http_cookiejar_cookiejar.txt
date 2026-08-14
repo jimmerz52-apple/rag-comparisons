@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar
+
+class http.cookiejar.CookieJar(policy=None)  
+policy is an object implementing the CookiePolicy interface. The CookieJar class stores HTTP cookies. It extracts cookies from HTTP requests, and returns them in HTTP responses. CookieJar instances automatically expire contained cookies when necessary. Subclasses are also responsible for storing and retrieving cookies from a file or database.

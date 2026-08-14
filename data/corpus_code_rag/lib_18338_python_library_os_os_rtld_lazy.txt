@@ -1,0 +1,10 @@
+# python.library.os#os.RTLD_LAZY
+
+os.RTLD_LAZY  
+os.RTLD_NOW  
+os.RTLD_GLOBAL  
+os.RTLD_LOCAL  
+os.RTLD_NODELETE  
+os.RTLD_NOLOAD  
+os.RTLD_DEEPBIND  
+Flags for use with the setdlopenflags() and getdlopenflags() functions. See the Unix manual page dlopen(3) for what the different flags mean.  New in version 3.3.

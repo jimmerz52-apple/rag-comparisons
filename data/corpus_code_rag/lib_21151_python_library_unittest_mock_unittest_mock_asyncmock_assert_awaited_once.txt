@@ -1,0 +1,14 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.assert_awaited_once
+
+assert_awaited_once()  
+Assert that the mock was awaited exactly once. >>> mock = AsyncMock()
+>>> async def main():
+...     await mock()
+...
+>>> asyncio.run(main())
+>>> mock.assert_awaited_once()
+>>> asyncio.run(main())
+>>> mock.method.assert_awaited_once()
+Traceback (most recent call last):
+...
+AssertionError: Expected mock to have been awaited once. Awaited 2 times.

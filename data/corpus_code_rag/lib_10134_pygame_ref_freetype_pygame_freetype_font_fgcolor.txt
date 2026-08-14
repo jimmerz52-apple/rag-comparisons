@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.fgcolor
+
+fgcolor 
+ default foreground color fgcolor -> Color  Gets or sets the default glyph rendering color. It is initially opaque black ― (0, 0, 0, 255). Applies to render() and render_to().

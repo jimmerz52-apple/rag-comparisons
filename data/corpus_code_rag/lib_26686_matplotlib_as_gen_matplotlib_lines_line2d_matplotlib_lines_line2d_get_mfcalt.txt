@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_mfcalt
+
+get_mfcalt()[source]
+ 
+Alias for get_markerfacecoloralt.

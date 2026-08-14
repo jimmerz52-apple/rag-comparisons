@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.ElementTree.iterfind
+
+iterfind(match, namespaces=None)  
+Same as Element.iterfind(), starting at the root of the tree.  New in version 3.2.

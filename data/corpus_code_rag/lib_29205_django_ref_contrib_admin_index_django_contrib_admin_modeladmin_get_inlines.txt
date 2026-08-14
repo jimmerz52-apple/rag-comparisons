@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_inlines
+
+ModelAdmin.get_inlines(request, obj)  
+The get_inlines method is given the HttpRequest and the obj being edited (or None on an add form) and is expected to return an iterable of inlines. You can override this method to dynamically add inlines based on the request or model instance instead of specifying them in ModelAdmin.inlines.

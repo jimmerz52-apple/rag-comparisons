@@ -1,0 +1,13 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.ttfFontProperty
+
+matplotlib.font_manager.ttfFontProperty(font)[source]
+ 
+Extract information from a TrueType font file.  Parameters 
+ 
+fontFT2Font
+
+
+The TrueType font file from which information will be extracted.    Returns 
+ FontEntry
+
+The extracted font properties.

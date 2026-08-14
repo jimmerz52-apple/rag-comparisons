@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.get_wch
+
+window.get_wch([y, x])  
+Get a wide character. Return a character for most keys, or an integer for function keys, keypad keys, and other special keys. In no-delay mode, raise an exception if there is no input.  New in version 3.3.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.week.is_quarter_end
+
+pandas.tseries.offsets.Week.is_quarter_end   Week.is_quarter_end()

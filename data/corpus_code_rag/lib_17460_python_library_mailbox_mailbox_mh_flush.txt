@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.flush
+
+flush()  
+All changes to MH mailboxes are immediately applied, so this method does nothing.

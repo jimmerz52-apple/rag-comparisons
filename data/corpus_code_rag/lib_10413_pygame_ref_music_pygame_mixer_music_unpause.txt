@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.unpause
+
+pygame.mixer.music.unpause() 
+ resume paused music unpause() -> None  This will resume the playback of a music stream after it has been paused.

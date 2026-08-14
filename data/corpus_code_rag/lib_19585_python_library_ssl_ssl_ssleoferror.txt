@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLEOFError
+
+exception ssl.SSLEOFError  
+A subclass of SSLError raised when the SSL connection has been terminated abruptly. Generally, you shouldn’t try to reuse the underlying transport when this error is encountered.  New in version 3.3.

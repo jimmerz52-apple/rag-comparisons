@@ -1,0 +1,7 @@
+# matplotlib.image_api#matplotlib.image.NonUniformImage.set_filterrad
+
+set_filterrad(s)[source]
+ 
+Set the resize filter radius only applicable to some interpolation schemes -- see help for imshow  Parameters 
+ 
+filterradpositive float

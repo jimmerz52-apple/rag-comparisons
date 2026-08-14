@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.pipeline.featureunion#sklearn.pipeline.FeatureUnion.get_feature_names
+
+get_feature_names() [source]
+ 
+Get feature names from all transformers.  Returns 
+ 
+feature_nameslist of strings 
+
+Names of the features produced by transform.

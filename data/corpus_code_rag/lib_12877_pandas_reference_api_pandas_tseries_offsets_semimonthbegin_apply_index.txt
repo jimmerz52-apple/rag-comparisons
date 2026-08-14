@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.semimonthbegin.apply_index
+
+pandas.tseries.offsets.SemiMonthBegin.apply_index   SemiMonthBegin.apply_index(other)

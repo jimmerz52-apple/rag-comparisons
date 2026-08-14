@@ -1,0 +1,4 @@
+# pygame.ref.fastevent#pygame.fastevent.init
+
+pygame.fastevent.init() 
+ initialize pygame.fastevent init() -> None  Initialize the pygame.fastevent module.

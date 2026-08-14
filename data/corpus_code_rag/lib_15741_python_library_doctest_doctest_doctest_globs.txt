@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTest.globs
+
+globs  
+The namespace (aka globals) that the examples should be run in. This is a dictionary mapping names to values. Any changes to the namespace made by the examples (such as binding new variables) will be reflected in globs after the test is run.

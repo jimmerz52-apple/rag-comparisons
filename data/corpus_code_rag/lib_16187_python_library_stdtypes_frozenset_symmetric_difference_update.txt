@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.symmetric_difference_update
+
+symmetric_difference_update(other)  
+set ^= other  
+Update the set, keeping only elements found in either set, but not in both.

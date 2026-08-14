@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertFormError
+
+SimpleTestCase.assertFormError(response, form, field, errors, msg_prefix='')  
+Asserts that a field on a form raises the provided list of errors when rendered on the form. response must be a response instance returned by the test client. form is the name the Form instance was given in the template context of the response. field is the name of the field on the form to check. If field has a value of None, non-field errors (errors you can access via form.non_field_errors()) will be checked. errors is an error string, or a list of error strings, that are expected as a result of form validation.

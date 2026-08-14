@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.AuthenticationError
+
+exception multiprocessing.AuthenticationError  
+Raised when there is an authentication error.

@@ -1,0 +1,39 @@
+# skimage.api.skimage.transform#skimage.transform.EssentialMatrixTransform
+
+class skimage.transform.EssentialMatrixTransform(rotation=None, translation=None, matrix=None) [source]
+ 
+Bases: skimage.transform._geometric.FundamentalMatrixTransform Essential matrix transformation. The essential matrix relates corresponding points between a pair of calibrated images. The matrix transforms normalized, homogeneous image points in one image to epipolar lines in the other image. The essential matrix is only defined for a pair of moving images capturing a non-planar scene. In the case of pure rotation or planar scenes, the homography describes the geometric relation between two images (ProjectiveTransform). If the intrinsic calibration of the images is unknown, the fundamental matrix describes the projective relation between the two images (FundamentalMatrixTransform).  Parameters 
+ 
+rotation(3, 3) array, optional 
+
+Rotation matrix of the relative camera motion.  
+translation(3, 1) array, optional 
+
+Translation vector of the relative camera motion. The vector must have unit length.  
+matrix(3, 3) array, optional 
+
+Essential matrix.     References  
+1  
+Hartley, Richard, and Andrew Zisserman. Multiple view geometry in computer vision. Cambridge university press, 2003.    Attributes 
+ 
+params(3, 3) array 
+
+Essential matrix.      
+__init__(rotation=None, translation=None, matrix=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+estimate(src, dst) [source]
+ 
+Estimate essential matrix using 8-point algorithm. The 8-point algorithm requires at least 8 corresponding point pairs for a well-conditioned solution, otherwise the over-determined solution is estimated.  Parameters 
+ 
+src(N, 2) array 
+
+Source coordinates.  
+dst(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.

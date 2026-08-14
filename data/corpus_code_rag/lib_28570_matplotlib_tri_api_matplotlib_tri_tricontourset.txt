@@ -1,0 +1,22 @@
+# matplotlib.tri_api#matplotlib.tri.TriContourSet
+
+classmatplotlib.tri.TriContourSet(ax, *args, **kwargs)[source]
+ 
+Bases: matplotlib.contour.ContourSet Create and store a set of contour lines or filled regions for a triangular grid. This class is typically not instantiated directly by the user but by tricontour and tricontourf.  Attributes 
+ 
+axAxes
+
+
+The Axes object in which the contours are drawn.  
+collectionssilent_list of PathCollections
+
+
+The Artists representing the contour. This is a list of PathCollections for both line and filled contours.  
+levelsarray
+
+
+The values of the contour levels.  
+layersarray
+
+
+Same as levels for line contours; half-way between levels for filled contours. See ContourSet._process_colors.     Draw triangular grid contour lines or filled regions, depending on whether keyword arg 'filled' is False (default) or True. The first argument of the initializer must be an axes object. The remaining arguments and keyword arguments are described in the docstring of tricontour.

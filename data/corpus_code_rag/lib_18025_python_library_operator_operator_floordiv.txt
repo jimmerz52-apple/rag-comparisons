@@ -1,0 +1,5 @@
+# python.library.operator#operator.__floordiv__
+
+operator.floordiv(a, b)  
+operator.__floordiv__(a, b)  
+Return a // b.

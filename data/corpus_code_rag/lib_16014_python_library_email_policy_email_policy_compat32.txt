@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.compat32
+
+email.policy.compat32  
+An instance of Compat32, providing backward compatibility with the behavior of the email package in Python 3.2.

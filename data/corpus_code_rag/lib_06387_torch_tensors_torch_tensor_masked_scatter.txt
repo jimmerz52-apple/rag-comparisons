@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.masked_scatter
+
+masked_scatter(mask, tensor) → Tensor  
+Out-of-place version of torch.Tensor.masked_scatter_()

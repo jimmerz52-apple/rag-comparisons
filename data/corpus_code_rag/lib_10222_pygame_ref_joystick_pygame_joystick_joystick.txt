@@ -1,0 +1,35 @@
+# pygame.ref.joystick#pygame.joystick.Joystick
+
+pygame.joystick.Joystick 
+ Create a new Joystick object. Joystick(id) -> Joystick  Create a new joystick to access a physical device. The id argument must be a value from 0 to pygame.joystick.get_count() - 1. Joysticks are initialised on creation and are shut down when deallocated. Once the device is initialized the pygame event queue will start receiving events about its input.  Changed in pygame 2.0.0: Joystick objects are now opened immediately on creation.    init() 
+ initialize the Joystick init() -> None  Initialize the joystick, if it has been closed. It is safe to call this even if the joystick is already initialized.  Deprecated since pygame 2.0.0: In future it will not be possible to reinitialise a closed Joystick object. Will be removed in Pygame 2.1.  
+   quit() 
+ uninitialize the Joystick quit() -> None  Close a Joystick object. After this the pygame event queue will no longer receive events from the device. It is safe to call this more than once. 
+   get_init() 
+ check if the Joystick is initialized get_init() -> bool  Return True if the Joystick object is currently initialised. 
+   get_id() 
+ get the device index (deprecated) get_id() -> int  Returns the original device index for this device. This is the same value that was passed to the Joystick() constructor. This method can safely be called while the Joystick is not initialized.  Deprecated since pygame 2.0.0: The original device index is not useful in pygame 2. Use get_instance_id() instead. Will be removed in Pygame 2.1.  
+   get_instance_id() → int 
+ get the joystick instance id get_instance_id() -> int  Get the joystick instance ID. This matches the instance_id field that is given in joystick events.  New in pygame 2.0.0dev11.  
+   get_guid() → str 
+ get the joystick GUID get_guid() -> str  Get the GUID string. This identifies the exact hardware of the joystick device.  New in pygame 2.0.0dev11.  
+   get_power_level() → str 
+ get the approximate power status of the device get_power_level() -> str  Get a string giving the power status of the device. One of: empty, low, medium, full, wired, max, or unknown.  New in pygame 2.0.0dev11.  
+   get_name() 
+ get the Joystick system name get_name() -> string  Returns the system name for this joystick device. It is unknown what name the system will give to the Joystick, but it should be a unique name that identifies the device. This method can safely be called while the Joystick is not initialized. 
+   get_numaxes() 
+ get the number of axes on a Joystick get_numaxes() -> int  Returns the number of input axes are on a Joystick. There will usually be two for the position. Controls like rudders and throttles are treated as additional axes. The pygame.JOYAXISMOTION events will be in the range from -1.0 to 1.0. A value of 0.0 means the axis is centered. Gamepad devices will usually be -1, 0, or 1 with no values in between. Older analog joystick axes will not always use the full -1 to 1 range, and the centered value will be some area around 0. Analog joysticks usually have a bit of noise in their axis, which will generate a lot of rapid small motion events. 
+   get_axis() 
+ get the current position of an axis get_axis(axis_number) -> float  Returns the current position of a joystick axis. The value will range from -1 to 1 with a value of 0 being centered. You may want to take into account some tolerance to handle jitter, and joystick drift may keep the joystick from centering at 0 or using the full range of position values. The axis number must be an integer from 0 to get_numaxes() - 1. When using gamepads both the control sticks and the analog triggers are usually reported as axes. 
+   get_numballs() 
+ get the number of trackballs on a Joystick get_numballs() -> int  Returns the number of trackball devices on a Joystick. These devices work similar to a mouse but they have no absolute position; they only have relative amounts of movement. The pygame.JOYBALLMOTION event will be sent when the trackball is rolled. It will report the amount of movement on the trackball. 
+   get_ball() 
+ get the relative position of a trackball get_ball(ball_number) -> x, y  Returns the relative movement of a joystick button. The value is a x, y pair holding the relative movement since the last call to get_ball. The ball number must be an integer from 0 to get_numballs() - 1. 
+   get_numbuttons() 
+ get the number of buttons on a Joystick get_numbuttons() -> int  Returns the number of pushable buttons on the joystick. These buttons have a boolean (on or off) state. Buttons generate a pygame.JOYBUTTONDOWN and pygame.JOYBUTTONUP event when they are pressed and released. 
+   get_button() 
+ get the current button state get_button(button) -> bool  Returns the current state of a joystick button. 
+   get_numhats() 
+ get the number of hat controls on a Joystick get_numhats() -> int  Returns the number of joystick hats on a Joystick. Hat devices are like miniature digital joysticks on a joystick. Each hat has two axes of input. The pygame.JOYHATMOTION event is generated when the hat changes position. The position attribute for the event contains a pair of values that are either -1, 0, or 1. A position of (0, 0) means the hat is centered. 
+   get_hat() 
+ get the position of a joystick hat get_hat(hat_number) -> x, y  Returns the current position of a position hat. The position is given as two values representing the x and y position for the hat. (0, 0) means centered. A value of -1 means left/down and a value of 1 means right/up: so (-1, 0) means left; (1, 0) means right; (0, 1) means up; (1, 1) means upper-right; etc. This value is digital, i.e., each coordinate can be -1, 0 or 1 but never in-between. The hat number must be between 0 and get_numhats() - 1.

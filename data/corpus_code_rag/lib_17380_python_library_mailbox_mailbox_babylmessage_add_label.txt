@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.BabylMessage.add_label
+
+add_label(label)  
+Add label to the list of labels on the message.

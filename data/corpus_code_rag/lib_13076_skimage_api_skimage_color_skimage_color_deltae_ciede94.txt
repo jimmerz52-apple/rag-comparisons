@@ -1,0 +1,39 @@
+# skimage.api.skimage.color#skimage.color.deltaE_ciede94
+
+skimage.color.deltaE_ciede94(lab1, lab2, kH=1, kC=1, kL=1, k1=0.045, k2=0.015) [source]
+ 
+Color difference according to CIEDE 94 standard Accommodates perceptual non-uniformities through the use of application specific scale factors (kH, kC, kL, k1, and k2).  Parameters 
+ 
+lab1array_like 
+
+reference color (Lab colorspace)  
+lab2array_like 
+
+comparison color (Lab colorspace)  
+kHfloat, optional 
+
+Hue scale  
+kCfloat, optional 
+
+Chroma scale  
+kLfloat, optional 
+
+Lightness scale  
+k1float, optional 
+
+first scale parameter  
+k2float, optional 
+
+second scale parameter    Returns 
+ 
+dEarray_like 
+
+color difference between lab1 and lab2     Notes deltaE_ciede94 is not symmetric with respect to lab1 and lab2. CIEDE94 defines the scales for the lightness, hue, and chroma in terms of the first color. Consequently, the first color should be regarded as the “reference” color. kL, k1, k2 depend on the application and default to the values suggested for graphic arts   
+Parameter Graphic Arts Textiles   
+kL 1.000 2.000  
+k1 0.045 0.048  
+k2 0.015 0.014   References  
+1  
+https://en.wikipedia.org/wiki/Color_difference  
+2  
+http://www.brucelindbloom.com/index.html?Eqn_DeltaE_CIE94.html

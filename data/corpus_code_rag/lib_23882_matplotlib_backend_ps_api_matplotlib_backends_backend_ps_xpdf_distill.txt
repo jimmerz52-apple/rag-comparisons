@@ -1,0 +1,5 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.xpdf_distill
+
+matplotlib.backends.backend_ps.xpdf_distill(tmpfile, eps=False, ptype='letter', bbox=None, rotated=False)[source]
+ 
+Use ghostscript's ps2pdf and xpdf's/poppler's pdftops to distill a file. This yields smaller files without illegal encapsulated postscript operators. This distiller is preferred, generating high-level postscript output that treats text as text.

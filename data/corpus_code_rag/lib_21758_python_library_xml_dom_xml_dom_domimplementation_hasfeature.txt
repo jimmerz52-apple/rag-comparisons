@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.DOMImplementation.hasFeature
+
+DOMImplementation.hasFeature(feature, version)  
+Return True if the feature identified by the pair of strings feature and version is implemented.

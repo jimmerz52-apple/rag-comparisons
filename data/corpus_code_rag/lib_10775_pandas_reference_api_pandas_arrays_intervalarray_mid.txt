@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.arrays.intervalarray.mid
+
+pandas.arrays.IntervalArray.mid   propertyIntervalArray.mid
+ 
+Return the midpoint of each Interval in the IntervalArray as an Index.

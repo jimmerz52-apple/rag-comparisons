@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.frozen
+
+frozen()[source]
+ 
+The base class for anything that participates in the transform tree and needs to invalidate its parents or be invalidated. This includes classes that are not really transforms, such as bounding boxes, since some transforms depend on bounding boxes to compute their values.

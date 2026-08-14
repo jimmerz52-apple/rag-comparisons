@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.IfRange.date
+
+date  
+The date in parsed format or None.

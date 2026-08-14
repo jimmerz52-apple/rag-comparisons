@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.tick.get_view_interval
+
+matplotlib.axis.Tick.get_view_interval   Tick.get_view_interval()[source]
+ 
+Return the view limits (min, max) of the axis the tick belongs to.

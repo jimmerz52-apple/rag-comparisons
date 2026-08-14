@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_canonical
+
+is_canonical(x)  
+Returns True if x is canonical; otherwise returns False.

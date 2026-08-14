@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.server_activate
+
+server_activate()  
+Called by the server’s constructor to activate the server. The default behavior for a TCP server just invokes listen() on the server’s socket. May be overridden.

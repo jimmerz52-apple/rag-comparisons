@@ -1,0 +1,6 @@
+# tensorflow.compat.v1.logging.tasklevelstatusmessage
+
+tf.compat.v1.logging.TaskLevelStatusMessage 
+tf.compat.v1.logging.TaskLevelStatusMessage(
+    msg
+)

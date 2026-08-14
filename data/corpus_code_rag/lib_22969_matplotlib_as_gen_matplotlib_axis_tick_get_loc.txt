@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.tick.get_loc
+
+matplotlib.axis.Tick.get_loc   Tick.get_loc()[source]
+ 
+Return the tick location (data coords) as a scalar.

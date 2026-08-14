@@ -1,0 +1,4 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.RectangleTool.extents
+
+property extents  
+Return (xmin, xmax, ymin, ymax).

@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.isEnabledFor
+
+isEnabledFor(level)  
+Indicates if a message of severity level would be processed by this logger. This method checks first the module-level level set by logging.disable(level) and then the logger’s effective level as determined by getEffectiveLevel().

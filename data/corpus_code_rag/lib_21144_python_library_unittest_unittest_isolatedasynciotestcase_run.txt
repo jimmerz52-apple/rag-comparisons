@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.IsolatedAsyncioTestCase.run
+
+run(result=None)  
+Sets up a new event loop to run the test, collecting the result into the TestResult object passed as result. If result is omitted or None, a temporary result object is created (by calling the defaultTestResult() method) and used. The result object is returned to run()’s caller. At the end of the test all the tasks in the event loop are cancelled.

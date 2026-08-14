@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.utils.prune.pruningcontainer#torch.nn.utils.prune.PruningContainer.add_pruning_method
+
+add_pruning_method(method) [source]
+ 
+Adds a child pruning method to the container.  Parameters 
+method (subclass of BasePruningMethod) – child pruning method to be added to the container.

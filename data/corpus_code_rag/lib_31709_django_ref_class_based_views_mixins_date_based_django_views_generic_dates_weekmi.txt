@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.WeekMixin.week
+
+week  
+Optional The value for the week, as a string. By default, set to None, which means the week will be determined using other means.

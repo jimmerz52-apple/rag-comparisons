@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.tell
+
+tell()  
+Return the current stream position.

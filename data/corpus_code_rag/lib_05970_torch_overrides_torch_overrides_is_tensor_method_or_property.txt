@@ -1,0 +1,8 @@
+# torch.overrides#torch.overrides.is_tensor_method_or_property
+
+torch.overrides.is_tensor_method_or_property(func) [source]
+ 
+Returns True if the function passed in is a handler for a method or property belonging to torch.Tensor, as passed into __torch_function__.  Note For properties, their __get__ method must be passed in.  This may be needed, in particular, for the following reasons:  Methods/properties sometimes don’t contain a __module__ slot. They require that the first passed-in argument is an instance of torch.Tensor.  Examples >>> is_tensor_method_or_property(torch.Tensor.add)
+True
+>>> is_tensor_method_or_property(torch.add)
+False

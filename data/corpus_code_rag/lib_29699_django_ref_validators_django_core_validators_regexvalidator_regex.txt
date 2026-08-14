@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.RegexValidator.regex
+
+regex  
+The regular expression pattern to search for within the provided value, using re.search(). This may be a string or a pre-compiled regular expression created with re.compile(). Defaults to the empty string, which will be found in every possible value.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_majorticklabels
+
+matplotlib.axis.Axis.get_majorticklabels   Axis.get_majorticklabels()[source]
+ 
+Return this Axis' major tick labels, as a list of Text.

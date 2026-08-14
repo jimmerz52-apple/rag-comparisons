@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.milli.is_quarter_end
+
+pandas.tseries.offsets.Milli.is_quarter_end   Milli.is_quarter_end()

@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.PathCollection.set_linewidth
+
+set_linewidth(lw)[source]
+ 
+Set the linewidth(s) for the collection. lw can be a scalar or a sequence; if it is a sequence the patches will cycle through the sequence  Parameters 
+ 
+lwfloat or list of floats

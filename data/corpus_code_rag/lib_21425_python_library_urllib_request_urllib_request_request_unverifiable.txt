@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.unverifiable
+
+Request.unverifiable  
+boolean, indicates whether the request is unverifiable as defined by RFC 2965.

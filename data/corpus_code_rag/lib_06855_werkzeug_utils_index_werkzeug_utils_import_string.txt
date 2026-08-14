@@ -1,0 +1,9 @@
+# werkzeug.utils.index#werkzeug.utils.import_string
+
+werkzeug.utils.import_string(import_name, silent=False)  
+Imports an object based on a string. This is useful if you want to use import paths as endpoints or something similar. An import path can be specified either in dotted notation (xml.sax.saxutils.escape) or with a colon as object delimiter (xml.sax.saxutils:escape). If silent is True the return value will be None if the import fails.  Parameters 
+ 
+import_name (str) – the dotted name for the object to import. 
+silent (bool) – if set to True import errors are ignored and None is returned instead.   Returns 
+imported object  Return type 
+Any

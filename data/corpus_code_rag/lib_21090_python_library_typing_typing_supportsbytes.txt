@@ -1,0 +1,4 @@
+# python.library.typing#typing.SupportsBytes
+
+class typing.SupportsBytes  
+An ABC with one abstract method __bytes__.

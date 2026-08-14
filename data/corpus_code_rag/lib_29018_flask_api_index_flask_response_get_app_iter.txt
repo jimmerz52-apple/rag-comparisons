@@ -1,0 +1,7 @@
+# flask.api.index#flask.Response.get_app_iter
+
+get_app_iter(environ)  
+Returns the application iterator for the given environ. Depending on the request method and the current status code the return value might be an empty response rather than the one from the response. If the request method is HEAD or the status code is in a range where the HTTP specification requires an empty response, an empty iterable is returned.  Changelog New in version 0.6.   Parameters 
+environ (WSGIEnvironment) – the WSGI environment of the request.  Returns 
+a response iterable.  Return type 
+Iterable[bytes]

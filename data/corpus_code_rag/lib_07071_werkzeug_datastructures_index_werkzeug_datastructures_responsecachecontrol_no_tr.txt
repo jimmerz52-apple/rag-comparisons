@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ResponseCacheControl.no_transform
+
+no_transform  
+accessor for ‘no-transform’

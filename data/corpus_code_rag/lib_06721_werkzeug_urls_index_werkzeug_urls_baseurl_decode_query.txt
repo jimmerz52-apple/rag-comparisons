@@ -1,0 +1,8 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.decode_query
+
+decode_query(*args, **kwargs)  
+Decodes the query part of the URL. Ths is a shortcut for calling url_decode() on the query argument. The arguments and keyword arguments are forwarded to url_decode() unchanged.  Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+ds.MultiDict[str, str]

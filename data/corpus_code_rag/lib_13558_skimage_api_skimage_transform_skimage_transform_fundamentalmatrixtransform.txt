@@ -1,0 +1,60 @@
+# skimage.api.skimage.transform#skimage.transform.FundamentalMatrixTransform
+
+class skimage.transform.FundamentalMatrixTransform(matrix=None) [source]
+ 
+Bases: skimage.transform._geometric.GeometricTransform Fundamental matrix transformation. The fundamental matrix relates corresponding points between a pair of uncalibrated images. The matrix transforms homogeneous image points in one image to epipolar lines in the other image. The fundamental matrix is only defined for a pair of moving images. In the case of pure rotation or planar scenes, the homography describes the geometric relation between two images (ProjectiveTransform). If the intrinsic calibration of the images is known, the essential matrix describes the metric relation between the two images (EssentialMatrixTransform).  Parameters 
+ 
+matrix(3, 3) array, optional 
+
+Fundamental matrix.     References  
+1  
+Hartley, Richard, and Andrew Zisserman. Multiple view geometry in computer vision. Cambridge university press, 2003.    Attributes 
+ 
+params(3, 3) array 
+
+Fundamental matrix.      
+__init__(matrix=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+estimate(src, dst) [source]
+ 
+Estimate fundamental matrix using 8-point algorithm. The 8-point algorithm requires at least 8 corresponding point pairs for a well-conditioned solution, otherwise the over-determined solution is estimated.  Parameters 
+ 
+src(N, 2) array 
+
+Source coordinates.  
+dst(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.     
+  
+inverse(coords) [source]
+ 
+Apply inverse transformation.  Parameters 
+ 
+coords(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+coords(N, 3) array 
+
+Epipolar lines in the source image.     
+  
+residuals(src, dst) [source]
+ 
+Compute the Sampson distance. The Sampson distance is the first approximation to the geometric error.  Parameters 
+ 
+src(N, 2) array 
+
+Source coordinates.  
+dst(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+residuals(N, ) array 
+
+Sampson distance.

@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.isatty
+
+isatty()  
+Returns False.

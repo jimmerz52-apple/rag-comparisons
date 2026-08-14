@@ -1,0 +1,4 @@
+# python.library.ast#ast.unparse
+
+ast.unparse(ast_obj)  
+Unparse an ast.AST object and generate a string with code that would produce an equivalent ast.AST object if parsed back with ast.parse().  Warning The produced code string will not necessarily be equal to the original code that generated the ast.AST object (without any compiler optimizations, such as constant tuples/frozensets).   Warning Trying to unparse a highly complex expression would result with RecursionError.   New in version 3.9.

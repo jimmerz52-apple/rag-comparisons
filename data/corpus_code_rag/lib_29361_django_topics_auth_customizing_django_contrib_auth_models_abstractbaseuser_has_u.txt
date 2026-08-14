@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser.has_usable_password
+
+has_usable_password()  
+Returns False if set_unusable_password() has been called for this user.

@@ -1,0 +1,9 @@
+# flask.api.index#flask.views.View.as_view
+
+classmethod as_view(name, *class_args, **class_kwargs)  
+Converts the class into an actual view function that can be used with the routing system. Internally this generates a function on the fly which will instantiate the View on each request and call the dispatch_request() method on it. The arguments passed to as_view() are forwarded to the constructor of the class.  Parameters 
+ 
+name (str) –  
+class_args (Any) –  
+class_kwargs (Any) –    Return type 
+Callable

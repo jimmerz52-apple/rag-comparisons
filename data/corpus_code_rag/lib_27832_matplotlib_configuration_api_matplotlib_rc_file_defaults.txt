@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.rc_file_defaults
+
+matplotlib.rc_file_defaults()[source]
+ 
+Restore the rcParams from the original rc file loaded by Matplotlib. Style-blacklisted rcParams (defined in matplotlib.style.core.STYLE_BLACKLIST) are not updated.

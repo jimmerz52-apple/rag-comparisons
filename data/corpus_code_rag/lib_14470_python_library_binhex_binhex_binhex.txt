@@ -1,0 +1,4 @@
+# python.library.binhex#binhex.binhex
+
+binhex.binhex(input, output)  
+Convert a binary file with filename input to binhex file output. The output parameter can either be a filename or a file-like object (any object supporting a write() and close() method).

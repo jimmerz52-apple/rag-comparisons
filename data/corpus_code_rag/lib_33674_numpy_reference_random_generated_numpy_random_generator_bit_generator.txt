@@ -1,0 +1,10 @@
+# numpy.reference.random.generated.numpy.random.generator.bit_generator
+
+numpy.random.Generator.bit_generator attribute   random.Generator.bit_generator
+ 
+Gets the bit generator instance used by the generator  Returns 
+ 
+bit_generatorBitGenerator
+
+
+The bit generator instance used by the generator

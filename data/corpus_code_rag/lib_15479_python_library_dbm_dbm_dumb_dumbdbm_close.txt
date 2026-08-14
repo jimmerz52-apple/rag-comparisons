@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.dumb.dumbdbm.close
+
+dumbdbm.close()  
+Close the dumbdbm database.

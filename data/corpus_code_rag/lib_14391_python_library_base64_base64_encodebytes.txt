@@ -1,0 +1,4 @@
+# python.library.base64#base64.encodebytes
+
+base64.encodebytes(s)  
+Encode the bytes-like object s, which can contain arbitrary binary data, and return bytes containing the base64-encoded data, with newlines (b'\n') inserted after every 76 bytes of output, and ensuring that there is a trailing newline, as per RFC 2045 (MIME).  New in version 3.1.

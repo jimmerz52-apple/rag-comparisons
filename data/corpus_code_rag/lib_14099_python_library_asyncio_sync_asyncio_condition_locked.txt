@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Condition.locked
+
+locked()  
+Return True if the underlying lock is acquired.

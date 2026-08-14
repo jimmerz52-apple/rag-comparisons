@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_READ
+
+winreg.KEY_READ  
+Combines the STANDARD_RIGHTS_READ, KEY_QUERY_VALUE, KEY_ENUMERATE_SUB_KEYS, and KEY_NOTIFY values.

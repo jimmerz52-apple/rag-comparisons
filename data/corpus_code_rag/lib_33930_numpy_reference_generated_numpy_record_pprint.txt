@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.pprint
+
+numpy.record.pprint method   record.pprint()[source]
+ 
+Pretty-print all fields.

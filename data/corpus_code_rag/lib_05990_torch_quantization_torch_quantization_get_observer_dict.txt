@@ -1,0 +1,5 @@
+# torch.quantization#torch.quantization.get_observer_dict
+
+torch.quantization.get_observer_dict(mod, target_dict, prefix='') [source]
+ 
+Traverse the modules and save all observers into dict. This is mainly used for quantization accuracy debug :param mod: the top module we want to save all observers :param prefix: the prefix for the current module :param target_dict: the dictionary used to save all the observers

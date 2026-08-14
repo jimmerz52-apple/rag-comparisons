@@ -1,0 +1,34 @@
+# matplotlib.ticker_api#matplotlib.ticker.PercentFormatter
+
+classmatplotlib.ticker.PercentFormatter(xmax=100, decimals=None, symbol='%', is_latex=False)[source]
+ 
+Bases: matplotlib.ticker.Formatter Format numbers as a percentage.  Parameters 
+ 
+xmaxfloat
+
+
+Determines how the number is converted into a percentage. xmax is the data value that corresponds to 100%. Percentages are computed as x / xmax * 100. So if the data is already scaled to be percentages, xmax will be 100. Another common situation is where xmax is 1.0.  
+decimalsNone or int
+
+
+The number of decimal places to place after the point. If None (the default), the number will be computed automatically.  
+symbolstr or None
+
+
+A string that will be appended to the label. It may be None or empty to indicate that no symbol should be used. LaTeX special characters are escaped in symbol whenever latex mode is enabled, unless is_latex is True.  
+is_latexbool
+
+
+If False, reserved LaTeX characters in symbol will be escaped.       convert_to_pct(x)[source]
+
+   format_pct(x, display_range)[source]
+ 
+Format the number as a percentage number with the correct number of decimals and adds the percent symbol, if any. If self.decimals is None, the number of digits after the decimal point is set based on the display_range of the axis as follows:  
+display_range decimals sample  
+>50 0 x = 34.5 => 35%  
+>5 1 x = 34.5 => 34.5%  
+>0.5 2 x = 34.5 => 34.50%  
+... ... ...   This method will not be very good for tiny axis ranges or extremely large ones. It assumes that the values on the chart are percentages displayed on a reasonable scale. 
+   propertysymbol
+ 
+The configured percent symbol as a string. If LaTeX is enabled via rcParams["text.usetex"] (default: False), the special characters {'#', '$', '%', '&', '~', '_', '^', '\', '{', '}'} are automatically escaped in the string.

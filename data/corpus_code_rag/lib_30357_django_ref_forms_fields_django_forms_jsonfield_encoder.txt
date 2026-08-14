@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.JSONField.encoder
+
+encoder  
+A json.JSONEncoder subclass to serialize data types not supported by the standard JSON serializer (e.g. datetime.datetime or UUID). For example, you can use the DjangoJSONEncoder class. Defaults to json.JSONEncoder.

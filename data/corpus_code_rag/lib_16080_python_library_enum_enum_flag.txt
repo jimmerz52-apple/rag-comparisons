@@ -1,0 +1,4 @@
+# python.library.enum#enum.Flag
+
+class enum.Flag  
+Base class for creating enumerated constants that can be combined using the bitwise operations without losing their Flag membership.

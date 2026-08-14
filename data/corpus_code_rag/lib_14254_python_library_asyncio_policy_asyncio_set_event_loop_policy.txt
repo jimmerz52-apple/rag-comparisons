@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.set_event_loop_policy
+
+asyncio.set_event_loop_policy(policy)  
+Set the current process-wide policy to policy. If policy is set to None, the default policy is restored.

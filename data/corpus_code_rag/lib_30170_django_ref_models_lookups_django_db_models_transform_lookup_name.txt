@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Transform.lookup_name
+
+lookup_name  
+The name of the lookup, used for identifying it on parsing query expressions. It cannot contain the string "__".

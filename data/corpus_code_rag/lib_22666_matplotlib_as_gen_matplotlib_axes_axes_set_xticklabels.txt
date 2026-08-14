@@ -1,0 +1,45 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_xticklabels
+
+matplotlib.axes.Axes.set_xticklabels   Axes.set_xticklabels(labels, *, fontdict=None, minor=False, **kwargs)[source]
+ 
+Set the xaxis' labels with list of string labels.  Warning This method should only be used after fixing the tick positions using Axes.set_xticks. Otherwise, the labels may end up in unexpected positions.   Parameters 
+ 
+labelslist of str
+
+
+The label texts.  
+fontdictdict, optional
+
+
+A dictionary controlling the appearance of the ticklabels. The default fontdict is: {'fontsize': rcParams['axes.titlesize'],
+ 'fontweight': rcParams['axes.titleweight'],
+ 'verticalalignment': 'baseline',
+ 'horizontalalignment': loc}
+  
+minorbool, default: False
+
+
+Whether to set the minor ticklabels rather than the major ones.    Returns 
+ list of Text
+
+
+The labels.    Other Parameters 
+ 
+**kwargsText properties.
+
+   
+  Examples using matplotlib.axes.Axes.set_xticklabels
+ 
+   Managing multiple figures in pyplot   
+
+   Zoom region inset axes   
+
+   Boxplots   
+
+   Rendering math equations using TeX   
+
+   XKCD   
+
+   Colorbar Tick Labelling   
+
+   Constrained Layout Guide

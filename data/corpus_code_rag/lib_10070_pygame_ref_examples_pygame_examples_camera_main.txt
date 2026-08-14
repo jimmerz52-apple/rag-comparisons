@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.camera.main
+
+camera.main() 
+ display video captured live from an attached camera camera.main() -> None  A simple live video player, it uses the first available camera it finds on the system.

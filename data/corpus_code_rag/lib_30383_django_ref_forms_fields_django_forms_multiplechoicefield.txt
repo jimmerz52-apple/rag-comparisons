@@ -1,0 +1,6 @@
+# django.ref.forms.fields#django.forms.MultipleChoiceField
+
+class MultipleChoiceField(**kwargs)  
+ Default widget: SelectMultiple
+ Empty value: [] (an empty list) Normalizes to: A list of strings. Validates that every value in the given list of values exists in the list of choices. Error message keys: required, invalid_choice, invalid_list
+  The invalid_choice error message may contain %(value)s, which will be replaced with the selected choice. Takes one extra required argument, choices, as for ChoiceField.

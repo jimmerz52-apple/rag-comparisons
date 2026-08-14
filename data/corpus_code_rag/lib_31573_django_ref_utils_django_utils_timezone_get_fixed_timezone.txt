@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.get_fixed_timezone
+
+get_fixed_timezone(offset)  
+Returns a tzinfo instance that represents a time zone with a fixed offset from UTC. offset is a datetime.timedelta or an integer number of minutes. Use positive values for time zones east of UTC and negative values for west of UTC.

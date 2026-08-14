@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.format_zdata
+
+format_zdata(z)[source]
+ 
+Return z string formatted. This function will use the fmt_zdata attribute if it is callable, else will fall back on the zaxis major formatter

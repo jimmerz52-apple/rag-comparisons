@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isdatadescriptor
+
+inspect.isdatadescriptor(object)  
+Return True if the object is a data descriptor. Data descriptors have a __set__ or a __delete__ method. Examples are properties (defined in Python), getsets, and members. The latter two are defined in C and there are more specific tests available for those types, which is robust across Python implementations. Typically, data descriptors will also have __name__ and __doc__ attributes (properties, getsets, and members have both of these attributes), but this is not guaranteed.

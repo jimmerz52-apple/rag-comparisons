@@ -1,0 +1,3 @@
+# tensorflow.keras.datasets.mnist
+
+Module: tf.keras.datasets.mnist MNIST handwritten digits dataset. Functions load_data(...): Loads the MNIST dataset.

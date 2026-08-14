@@ -1,0 +1,18 @@
+# django.ref.applications#django.apps.AppConfig.ready
+
+AppConfig.ready()  
+Subclasses can override this method to perform initialization tasks such as registering signals. It is called as soon as the registry is fully populated. Although you can’t import models at the module-level where AppConfig classes are defined, you can import them in ready(), using either an import statement or get_model(). If you’re registering model signals, you can refer to the sender by its string label instead of using the model class itself. Example: from django.apps import AppConfig
+from django.db.models.signals import pre_save
+
+
+class RockNRollConfig(AppConfig):
+    # ...
+
+    def ready(self):
+        # importing model classes
+        from .models import MyModel  # or...
+        MyModel = self.get_model('MyModel')
+
+        # registering signals with the model's string label
+        pre_save.connect(receiver, sender='app_label.MyModel')
+  Warning Although you can access model classes as described above, avoid interacting with the database in your ready() implementation. This includes model methods that execute queries (save(), delete(), manager methods etc.), and also raw SQL queries via django.db.connection. Your ready() method will run during startup of every management command. For example, even though the test database configuration is separate from the production settings, manage.py test would still execute some queries against your production database!   Note In the usual initialization process, the ready method is only called once by Django. But in some corner cases, particularly in tests which are fiddling with installed applications, ready might be called more than once. In that case, either write idempotent methods, or put a flag on your AppConfig classes to prevent re-running code which should be executed exactly one time.

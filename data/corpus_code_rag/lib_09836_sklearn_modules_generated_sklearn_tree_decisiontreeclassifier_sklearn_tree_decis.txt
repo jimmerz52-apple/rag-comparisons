@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.tree.decisiontreeclassifier#sklearn.tree.DecisionTreeClassifier.get_n_leaves
+
+get_n_leaves() [source]
+ 
+Return the number of leaves of the decision tree.  Returns 
+ 
+self.tree_.n_leavesint 
+
+Number of leaves.

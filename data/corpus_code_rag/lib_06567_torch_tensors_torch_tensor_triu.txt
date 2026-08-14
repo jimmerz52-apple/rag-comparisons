@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.triu_
+
+triu_(k=0) → Tensor  
+In-place version of triu()

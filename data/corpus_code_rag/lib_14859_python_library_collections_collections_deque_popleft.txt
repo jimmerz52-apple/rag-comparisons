@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.popleft
+
+popleft()  
+Remove and return an element from the left side of the deque. If no elements are present, raises an IndexError.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__repr__
+
+numpy.ndarray.__repr__ method   ndarray.__repr__(/)
+ 
+Return repr(self).

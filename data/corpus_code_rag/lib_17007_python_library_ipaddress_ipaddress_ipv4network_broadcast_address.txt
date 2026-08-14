@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.broadcast_address
+
+broadcast_address  
+The broadcast address for the network. Packets sent to the broadcast address should be received by every host on the network.

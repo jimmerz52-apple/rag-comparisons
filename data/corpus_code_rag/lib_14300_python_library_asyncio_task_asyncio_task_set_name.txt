@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.Task.set_name
+
+set_name(value)  
+Set the name of the Task. The value argument can be any object, which is then converted to a string. In the default Task implementation, the name will be visible in the repr() output of a task object.  New in version 3.8.

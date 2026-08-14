@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Widget.identify
+
+identify(x, y)  
+Returns the name of the element at position x y, or the empty string if the point does not lie within any element. x and y are pixel coordinates relative to the widget.

@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.InterpolationMissingOptionError
+
+exception configparser.InterpolationMissingOptionError  
+Exception raised when an option referenced from a value does not exist. Subclass of InterpolationError.

@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.CloseKey
+
+winreg.CloseKey(hkey)  
+Closes a previously opened registry key. The hkey argument specifies a previously opened key.  Note If hkey is not closed using this method (or via hkey.Close()), it is closed when the hkey object is destroyed by Python.

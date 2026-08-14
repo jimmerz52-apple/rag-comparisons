@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.nbytes
+
+numpy.record.nbytes attribute   record.nbytes
+ 
+The length of the scalar in bytes.

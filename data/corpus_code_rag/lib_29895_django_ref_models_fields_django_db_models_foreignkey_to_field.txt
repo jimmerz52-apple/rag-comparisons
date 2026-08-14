@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ForeignKey.to_field
+
+ForeignKey.to_field  
+The field on the related object that the relation is to. By default, Django uses the primary key of the related object. If you reference a different field, that field must have unique=True.

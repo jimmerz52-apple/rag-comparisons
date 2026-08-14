@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.AsyncGenerator
+
+class collections.abc.AsyncGenerator  
+ABC for asynchronous generator classes that implement the protocol defined in PEP 525 and PEP 492.  New in version 3.6.

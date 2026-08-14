@@ -1,0 +1,14 @@
+# torch.ddp_comm_hooks#torch.distributed.algorithms.ddp_comm_hooks.powerSGD_hook.powerSGD_hook
+
+torch.distributed.algorithms.ddp_comm_hooks.powerSGD_hook.powerSGD_hook(state, bucket) [source]
+ 
+This DDP communication hook implements PowerSGD gradient compression algorithm described in the paper. Once gradient tensors are aggregated across all workers, this hook applies compression as follows:  Views the input flattened 1D gradient tensor as two groups of per-parameter tensors: high-rank tensors and vector-like rank-1 tensors (for biases). 
+Handles rank-1 tensors by allreducing them without compression: 2.1. Allocate contiguous memory for those rank-1 tensors, and allreduces all the rank-1 tensors as a batch, without compression; 2.2. Copies the individual rank-1 tensors from the contiguous memory back to the input tensor.  
+Handles high-rank tensors by PowerSGD compression: 3.1. For each high-rank tensor M, creates two low-rank tensors P and Q for decomposing M, such that M = PQ^T, where Q is initialized from a standard normal distribution and orthogonalized; 3.2. Computes each P in Ps, which is equal to MQ; 3.3. Allreduces Ps as a batch; 3.4. Orthogonalizes each P in Ps; 3.5. Computes each Q in Qs, which is approximately equal to M^TP; 3.6. Allreduces Qs as a batch; 3.7. Computes each M among all the high-rank tensors, which is approximately equal to PQ^T.   Note that this communication hook enforces vanilla allreduce for the first state.start_powerSGD_iter iterations. This not only gives the user more control over the tradeoff between speedup and accuracy, but also helps abstract away some complexity of the internal optimization of DDP for future communication hook developers.  Parameters 
+ 
+state (PowerSGDState) – State information to configure the compression rate and support error feedback, warm start, etc. To tune the compression configs, mainly need to tune matrix_approximation_rank` and start_powerSGD_iter. 
+bucket (dist._GradBucket) – Bucket that stores a 1D flattened gradient tensor that batches multiple per-variable tensors. Note that since DDP comm hook only supports single process single device mode at this time, only exactly one tensor is stored in this bucket.   Returns 
+Future handler of the communication, which updates the gradients in place.    Example::
+
+>>> state = PowerSGDState(process_group=process_group, matrix_approximation_rank=1, start_powerSGD_iter=10)
+>>> ddp_model.register_comm_hook(state, powerSGD_hook)

@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Database.Close
+
+Database.Close()  
+Close the database object, through MsiCloseHandle().  New in version 3.7.

@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.add
+
+add(_key, _value, **kw)  
+Add a new header tuple to the list. Keyword arguments can specify additional parameters for the header value, with underscores converted to dashes: >>> d = Headers()
+>>> d.add('Content-Type', 'text/plain')
+>>> d.add('Content-Disposition', 'attachment', filename='foo.png')
+ The keyword argument dumping uses dump_options_header() behind the scenes.  Changelog New in version 0.4.1: keyword arguments were added for wsgiref compatibility.

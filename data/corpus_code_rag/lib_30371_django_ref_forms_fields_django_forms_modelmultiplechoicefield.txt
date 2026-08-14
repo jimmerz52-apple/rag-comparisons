@@ -1,0 +1,14 @@
+# django.ref.forms.fields#django.forms.ModelMultipleChoiceField
+
+class ModelMultipleChoiceField(**kwargs)  
+ Default widget: SelectMultiple
+ Empty value: An empty QuerySet (self.queryset.none()) Normalizes to: A QuerySet of model instances. Validates that every id in the given list of values exists in the queryset. Error message keys: required, invalid_list, invalid_choice, invalid_pk_value
+  The invalid_choice message may contain %(value)s and the invalid_pk_value message may contain %(pk)s, which will be substituted by the appropriate values. Allows the selection of one or more model objects, suitable for representing a many-to-many relation. As with ModelChoiceField, you can use label_from_instance to customize the object representations. A single argument is required:  
+queryset  
+Same as ModelChoiceField.queryset. 
+ Takes one optional argument:  
+to_field_name  
+Same as ModelChoiceField.to_field_name. 
+ ModelMultipleChoiceField also has the attribute:  
+iterator  
+Same as ModelChoiceField.iterator.

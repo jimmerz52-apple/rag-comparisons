@@ -1,0 +1,4 @@
+# python.library.test#test.support.SMALLEST
+
+test.support.SMALLEST  
+Object that is less than anything (except itself). Used to test mixed type comparison.

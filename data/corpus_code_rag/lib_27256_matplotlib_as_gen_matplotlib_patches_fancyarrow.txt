@@ -1,0 +1,131 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrow
+
+matplotlib.patches.FancyArrow   classmatplotlib.patches.FancyArrow(x, y, dx, dy, width=0.001, length_includes_head=False, head_width=None, head_length=None, shape='full', overhang=0, head_starts_at_zero=False, **kwargs)[source]
+ 
+Bases: matplotlib.patches.Polygon Like Arrow, but lets you set head width and head height independently.  Parameters 
+ 
+x, yfloat
+
+
+The x and y coordinates of the arrow base.  
+dx, dyfloat
+
+
+The length of the arrow along x and y direction.  
+widthfloat, default: 0.001
+
+
+Width of full arrow tail.  
+length_includes_headbool, default: False
+
+
+True if head is to be counted in calculating the length.  
+head_widthfloat or None, default: 3*width
+
+
+Total width of the full arrow head.  
+head_lengthfloat or None, default: 1.5*head_width
+
+
+Length of arrow head.  
+shape{'full', 'left', 'right'}, default: 'full'
+
+
+Draw the left-half, right-half, or full arrow.  
+overhangfloat, default: 0
+
+
+Fraction that the arrow is swept back (0 overhang means triangular shape). Can be negative or greater than one.  
+head_starts_at_zerobool, default: False
+
+
+If True, the head starts being drawn at coordinate 0 instead of ending at coordinate 0.  **kwargs
+
+Patch properties:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float         set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, capstyle=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, closed=<UNSET>, color=<UNSET>, data=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, xy=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+closed bool  
+color color  
+data unknown  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+xy (N, 2) array-like  
+zorder float   
+   set_data(*, x=None, y=None, dx=None, dy=None, width=None, head_width=None, head_length=None)[source]
+ 
+Set FancyArrow x, y, dx, dy, width, head_with, and head_length. Values left as None will not be updated.  Parameters 
+ 
+x, yfloat or None, default: None
+
+
+The x and y coordinates of the arrow base.  
+dx, dyfloat or None, default: None
+
+
+The length of the arrow along x and y direction.  width: float or None, default: None
+
+Width of full arrow tail.  head_width: float or None, default: None
+
+Total width of the full arrow head.  head_length: float or None, default: None
+
+Length of arrow head.     
+ 
+  Examples using matplotlib.patches.FancyArrow
+ 
+   Arrow guide

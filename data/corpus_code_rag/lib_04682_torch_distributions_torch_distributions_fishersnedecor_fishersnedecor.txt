@@ -1,0 +1,29 @@
+# torch.distributions#torch.distributions.fishersnedecor.FisherSnedecor
+
+class torch.distributions.fishersnedecor.FisherSnedecor(df1, df2, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Creates a Fisher-Snedecor distribution parameterized by df1 and df2. Example: >>> m = FisherSnedecor(torch.tensor([1.0]), torch.tensor([2.0]))
+>>> m.sample()  # Fisher-Snedecor-distributed with df1=1 and df2=2
+tensor([ 0.2453])
+  Parameters 
+ 
+df1 (float or Tensor) – degrees of freedom parameter 1 
+df2 (float or Tensor) – degrees of freedom parameter 2     
+arg_constraints = {'df1': GreaterThan(lower_bound=0.0), 'df2': GreaterThan(lower_bound=0.0)} 
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+support = GreaterThan(lower_bound=0.0) 
+  
+property variance

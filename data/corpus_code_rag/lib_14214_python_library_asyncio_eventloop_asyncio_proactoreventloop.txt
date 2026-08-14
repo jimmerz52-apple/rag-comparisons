@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.ProactorEventLoop
+
+class asyncio.ProactorEventLoop  
+An event loop for Windows that uses “I/O Completion Ports” (IOCP). Availability: Windows.  See also MSDN documentation on I/O Completion Ports.

@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.copy
+
+QueryDict.copy()  
+Returns a copy of the object using copy.deepcopy(). This copy will be mutable even if the original was not.

@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.SafeExceptionReporterFilter.is_active
+
+is_active(request)  
+Returns True to activate the filtering in get_post_parameters() and get_traceback_frame_variables(). By default the filter is active if DEBUG is False. Note that sensitive request.META values are always filtered along with sensitive setting values, as described in the DEBUG documentation.

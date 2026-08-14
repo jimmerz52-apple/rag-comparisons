@@ -1,0 +1,11 @@
+# flask.api.index#flask.Flask.register_blueprint
+
+register_blueprint(blueprint, **options)  
+Register a Blueprint on the application. Keyword arguments passed to this method will override the defaults set on the blueprint. Calls the blueprint’s register() method after recording the blueprint in the application’s blueprints.  Parameters 
+ 
+blueprint (Blueprint) – The blueprint to register. 
+url_prefix – Blueprint routes will be prefixed with this. 
+subdomain – Blueprint routes will match on this subdomain. 
+url_defaults – Blueprint routes will use these default values for view arguments. 
+options (Any) – Additional keyword arguments are passed to BlueprintSetupState. They can be accessed in record() callbacks.   Return type 
+None    Changelog New in version 0.7.

@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.isfinite
+
+cmath.isfinite(x)  
+Return True if both the real and imaginary parts of x are finite, and False otherwise.  New in version 3.2.

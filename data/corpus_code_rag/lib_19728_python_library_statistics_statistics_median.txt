@@ -1,0 +1,8 @@
+# python.library.statistics#statistics.median
+
+statistics.median(data)  
+Return the median (middle value) of numeric data, using the common “mean of middle two” method. If data is empty, StatisticsError is raised. data can be a sequence or iterable. The median is a robust measure of central location and is less affected by the presence of outliers. When the number of data points is odd, the middle data point is returned: >>> median([1, 3, 5])
+3
+ When the number of data points is even, the median is interpolated by taking the average of the two middle values: >>> median([1, 3, 5, 7])
+4.0
+ This is suited for when your data is discrete, and you don’t mind that the median may not be an actual data point. If the data is ordinal (supports order operations) but not numeric (doesn’t support addition), consider using median_low() or median_high() instead.

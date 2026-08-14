@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.BabylMessage.set_visible
+
+set_visible(visible)  
+Set the message’s visible headers to be the same as the headers in message. Parameter visible should be a Message instance, an email.message.Message instance, a string, or a file-like object (which should be open in text mode).

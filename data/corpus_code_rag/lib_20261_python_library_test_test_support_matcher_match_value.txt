@@ -1,0 +1,4 @@
+# python.library.test#test.support.Matcher.match_value
+
+match_value(self, k, dv, v)  
+Try to match a single stored value (dv) with a supplied value (v).

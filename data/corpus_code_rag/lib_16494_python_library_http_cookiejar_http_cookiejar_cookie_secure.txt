@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.secure
+
+Cookie.secure  
+True if cookie should only be returned over a secure connection.

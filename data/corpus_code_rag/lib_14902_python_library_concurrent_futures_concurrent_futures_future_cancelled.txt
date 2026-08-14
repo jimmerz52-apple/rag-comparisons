@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.Future.cancelled
+
+cancelled()  
+Return True if the call was successfully cancelled.

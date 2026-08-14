@@ -1,0 +1,21 @@
+# python.library.importlib#importlib.abc.InspectLoader
+
+class importlib.abc.InspectLoader  
+An abstract base class for a loader which implements the optional PEP 302 protocol for loaders that inspect modules.  
+get_code(fullname)  
+Return the code object for a module, or None if the module does not have a code object (as would be the case, for example, for a built-in module). Raise an ImportError if loader cannot find the requested module.  Note While the method has a default implementation, it is suggested that it be overridden if possible for performance.   Changed in version 3.4: No longer abstract and a concrete implementation is provided.  
+  
+abstractmethod get_source(fullname)  
+An abstract method to return the source of a module. It is returned as a text string using universal newlines, translating all recognized line separators into '\n' characters. Returns None if no source is available (e.g. a built-in module). Raises ImportError if the loader cannot find the module specified.  Changed in version 3.4: Raises ImportError instead of NotImplementedError.  
+  
+is_package(fullname)  
+An abstract method to return a true value if the module is a package, a false value otherwise. ImportError is raised if the loader cannot find the module.  Changed in version 3.4: Raises ImportError instead of NotImplementedError.  
+  
+static source_to_code(data, path='<string>')  
+Create a code object from Python source. The data argument can be whatever the compile() function supports (i.e. string or bytes). The path argument should be the “path” to where the source code originated from, which can be an abstract concept (e.g. location in a zip file). With the subsequent code object one can execute it in a module by running exec(code, module.__dict__).  New in version 3.4.   Changed in version 3.5: Made the method static.  
+  
+exec_module(module)  
+Implementation of Loader.exec_module().  New in version 3.4.  
+  
+load_module(fullname)  
+Implementation of Loader.load_module().  Deprecated since version 3.4: use exec_module() instead.

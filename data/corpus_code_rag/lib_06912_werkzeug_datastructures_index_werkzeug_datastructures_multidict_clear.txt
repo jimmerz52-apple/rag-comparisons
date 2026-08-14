@@ -1,0 +1,3 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.clear
+
+clear() → None. Remove all items from D.

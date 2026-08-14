@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.utctimetuple
+
+pandas.Timestamp.utctimetuple   Timestamp.utctimetuple()
+ 
+Return UTC time tuple, compatible with time.localtime().

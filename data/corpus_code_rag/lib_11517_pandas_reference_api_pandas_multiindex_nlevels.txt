@@ -1,0 +1,11 @@
+# pandas.reference.api.pandas.multiindex.nlevels
+
+pandas.MultiIndex.nlevels   propertyMultiIndex.nlevels
+ 
+Integer number of levels in this MultiIndex. Examples 
+>>> mi = pd.MultiIndex.from_arrays([['a'], ['b'], ['c']])
+>>> mi
+MultiIndex([('a', 'b', 'c')],
+           )
+>>> mi.nlevels
+3

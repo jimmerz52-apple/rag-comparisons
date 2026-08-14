@@ -1,0 +1,4 @@
+# python.library.linecache#linecache.clearcache
+
+linecache.clearcache()  
+Clear the cache. Use this function if you no longer need lines from files previously read using getline().

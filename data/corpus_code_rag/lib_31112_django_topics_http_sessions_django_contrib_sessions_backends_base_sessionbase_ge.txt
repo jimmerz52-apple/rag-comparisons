@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.get_session_cookie_age
+
+get_session_cookie_age()  
+Returns the age of session cookies, in seconds. Defaults to SESSION_COOKIE_AGE.

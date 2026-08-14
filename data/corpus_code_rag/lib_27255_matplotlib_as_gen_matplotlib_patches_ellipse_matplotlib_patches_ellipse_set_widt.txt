@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse#matplotlib.patches.Ellipse.set_width
+
+set_width(width)[source]
+ 
+Set the width of the ellipse.  Parameters 
+ 
+widthfloat

@@ -1,0 +1,4 @@
+# python.library.test#test.support.TESTFN_NONASCII
+
+test.support.TESTFN_NONASCII  
+Set to a filename containing the FS_NONASCII character.

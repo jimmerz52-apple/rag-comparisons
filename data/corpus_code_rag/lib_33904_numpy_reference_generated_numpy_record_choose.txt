@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.choose
+
+numpy.record.choose method   record.choose()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.choose.

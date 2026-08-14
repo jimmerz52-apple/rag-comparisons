@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.HeaderError
+
+exception tarfile.HeaderError  
+Is raised by TarInfo.frombuf() if the buffer it gets is invalid.

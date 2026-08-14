@@ -1,0 +1,4 @@
+# torch.generated.torch.arccosh#torch.arccosh
+
+torch.arccosh(input, *, out=None) → Tensor  
+Alias for torch.acosh().

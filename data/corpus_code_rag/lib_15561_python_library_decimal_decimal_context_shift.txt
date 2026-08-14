@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.shift
+
+shift(x, y)  
+Returns a shifted copy of x, y times.

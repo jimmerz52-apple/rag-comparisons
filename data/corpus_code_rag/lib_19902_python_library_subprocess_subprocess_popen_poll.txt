@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.poll
+
+Popen.poll()  
+Check if child process has terminated. Set and return returncode attribute. Otherwise, returns None.

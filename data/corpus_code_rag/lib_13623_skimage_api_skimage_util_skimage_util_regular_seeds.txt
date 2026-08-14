@@ -1,0 +1,24 @@
+# skimage.api.skimage.util#skimage.util.regular_seeds
+
+skimage.util.regular_seeds(ar_shape, n_points, dtype=<class 'int'>) [source]
+ 
+Return an image with ~`n_points` regularly-spaced nonzero pixels.  Parameters 
+ 
+ar_shapetuple of int 
+
+The shape of the desired output image.  
+n_pointsint 
+
+The desired number of nonzero points.  
+dtypenumpy data type, optional 
+
+The desired data type of the output.    Returns 
+ 
+seed_imgarray of int or bool 
+
+The desired image.     Examples >>> regular_seeds((5, 5), 4)
+array([[0, 0, 0, 0, 0],
+       [0, 1, 0, 2, 0],
+       [0, 0, 0, 0, 0],
+       [0, 3, 0, 4, 0],
+       [0, 0, 0, 0, 0]])

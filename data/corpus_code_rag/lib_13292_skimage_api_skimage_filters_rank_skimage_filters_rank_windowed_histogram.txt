@@ -1,0 +1,34 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.windowed_histogram
+
+skimage.filters.rank.windowed_histogram(image, selem, out=None, mask=None, shift_x=False, shift_y=False, n_bins=None) [source]
+ 
+Normalized sliding window histogram  Parameters 
+ 
+image2-D array (integer or float) 
+
+Input image.  
+selem2-D array (integer or float) 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s.  
+out2-D array (integer or float), optional 
+
+If None, a new array is allocated.  
+maskndarray (integer or float), optional 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_yint, optional 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).  
+n_binsint or None 
+
+The number of histogram bins. Will default to image.max() + 1 if None is passed.    Returns 
+ 
+out3-D array (float) 
+
+Array of dimensions (H,W,N), where (H,W) are the dimensions of the input image and N is n_bins or image.max() + 1 if no value is provided as a parameter. Effectively, each pixel is a N-D feature vector that is the histogram. The sum of the elements in the feature vector will be 1, unless no pixels in the window were covered by both selem and mask, in which case all elements will be 0.     Examples >>> from skimage import data
+>>> from skimage.filters.rank import windowed_histogram
+>>> from skimage.morphology import disk, ball
+>>> import numpy as np
+>>> img = data.camera()
+>>> volume = np.random.randint(0, 255, size=(10,10,10), dtype=np.uint8)
+>>> hist_img = windowed_histogram(img, disk(5))

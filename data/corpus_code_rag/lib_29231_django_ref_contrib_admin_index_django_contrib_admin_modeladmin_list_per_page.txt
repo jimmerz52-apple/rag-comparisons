@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.list_per_page
+
+ModelAdmin.list_per_page  
+Set list_per_page to control how many items appear on each paginated admin change list page. By default, this is set to 100.

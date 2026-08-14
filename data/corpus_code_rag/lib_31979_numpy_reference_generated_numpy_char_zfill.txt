@@ -1,0 +1,19 @@
+# numpy.reference.generated.numpy.char.zfill
+
+numpy.char.zfill   char.zfill(a, width)[source]
+ 
+Return the numeric string left-filled with zeros Calls str.zfill element-wise.  Parameters 
+ 
+aarray_like, {str, unicode}
+
+
+Input array.  
+widthint
+
+
+Width of string to left-fill elements in a.    Returns 
+ 
+outndarray, {str, unicode}
+
+
+Output array of str or unicode, depending on input type      See also  str.zfill

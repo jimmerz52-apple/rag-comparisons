@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnnotationBbox.get_fontsize
+
+get_fontsize()[source]
+ 
+Return the fontsize in points.

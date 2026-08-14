@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.add_unredirected_header
+
+Request.add_unredirected_header(key, header)  
+Add a header that will not be added to a redirected request.

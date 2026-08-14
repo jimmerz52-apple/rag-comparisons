@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.xaxis.get_ticks_position
+
+matplotlib.axis.XAxis.get_ticks_position   XAxis.get_ticks_position()[source]
+ 
+Return the ticks position ("top", "bottom", "default", or "unknown").

@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Filter.lineno
+
+lineno  
+Line number (int) of the filter. If lineno is None, the filter matches any line number.

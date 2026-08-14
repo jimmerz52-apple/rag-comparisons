@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.strict_ns_unverifiable
+
+DefaultCookiePolicy.strict_ns_unverifiable  
+Apply RFC 2965 rules on unverifiable transactions even to Netscape cookies.

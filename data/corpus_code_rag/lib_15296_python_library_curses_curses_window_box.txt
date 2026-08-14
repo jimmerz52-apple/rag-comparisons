@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.box
+
+window.box([vertch, horch])  
+Similar to border(), but both ls and rs are vertch and both ts and bs are horch. The default corner characters are always used by this function.

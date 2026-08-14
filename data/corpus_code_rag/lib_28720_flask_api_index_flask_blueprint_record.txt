@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.record
+
+record(func)  
+Registers a function that is called when the blueprint is registered on the application. This function is called with the state as argument as returned by the make_setup_state() method.  Parameters 
+func (Callable) –   Return type 
+None

@@ -1,0 +1,25 @@
+# sklearn.modules.generated.sklearn.preprocessing.powertransformer#sklearn.preprocessing.PowerTransformer.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Apply the inverse power transformation using the fitted lambdas. The inverse of the Box-Cox transformation is given by: if lambda_ == 0:
+    X = exp(X_trans)
+else:
+    X = (X_trans * lambda_ + 1) ** (1 / lambda_)
+ The inverse of the Yeo-Johnson transformation is given by: if X >= 0 and lambda_ == 0:
+    X = exp(X_trans) - 1
+elif X >= 0 and lambda_ != 0:
+    X = (X_trans * lambda_ + 1) ** (1 / lambda_) - 1
+elif X < 0 and lambda_ != 2:
+    X = 1 - (-(2 - lambda_) * X_trans + 1) ** (1 / (2 - lambda_))
+elif X < 0 and lambda_ == 2:
+    X = 1 - exp(-X_trans)
+  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The transformed data.    Returns 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+The original data.

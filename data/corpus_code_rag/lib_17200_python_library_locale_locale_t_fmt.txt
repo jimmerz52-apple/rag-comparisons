@@ -1,0 +1,4 @@
+# python.library.locale#locale.T_FMT
+
+locale.T_FMT  
+Get a string that can be used as a format string for time.strftime() to represent a time in a locale-specific way.

@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.half
+
+class numpy.half[source]
+ 
+Half-precision floating-point number type.  Character code 
+'e'  Alias on this platform (Linux x86_64) 
+numpy.float16: 16-bit-precision floating-point number type: sign bit, 5 bits exponent, 10 bits mantissa.

@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Hashable
+
+class collections.abc.Hashable  
+ABC for classes that provide the __hash__() method.

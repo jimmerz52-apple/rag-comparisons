@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.get_window_size
+
+pygame.display.get_window_size() 
+ Return the size of the window or screen get_window_size() -> tuple  Returns the size of the window initialized with pygame.display.set_mode(). This may differ from the size of the display surface if SCALED is used.  New in pygame 2.0.0.

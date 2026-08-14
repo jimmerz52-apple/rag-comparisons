@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axis3d.axis#mpl_toolkits.mplot3d.axis3d.Axis.set_rotate_label
+
+set_rotate_label(val)[source]
+ 
+Whether to rotate the axis label: True, False or None. If set to None the label will be rotated if longer than 4 chars.

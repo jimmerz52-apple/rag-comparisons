@@ -1,0 +1,17 @@
+# werkzeug.debug.index#werkzeug.debug.DebuggedApplication
+
+class werkzeug.debug.DebuggedApplication(app, evalex=False, request_key='werkzeug.request', console_path='/console', console_init_func=None, show_hidden_frames=False, pin_security=True, pin_logging=True)  
+Enables debugging support for a given application: from werkzeug.debug import DebuggedApplication
+from myapp import app
+app = DebuggedApplication(app, evalex=True)
+ The evalex keyword argument allows evaluating expressions in a traceback’s frame context.  Parameters 
+ 
+app (WSGIApplication) – the WSGI application to run debugged. 
+evalex (bool) – enable exception evaluation feature (interactive debugging). This requires a non-forking server. 
+request_key (str) – The key that points to the request object in ths environment. This parameter is ignored in current versions. 
+console_path (str) – the URL for a general purpose console. 
+console_init_func (Optional[Callable[[], Dict[str, Any]]]) – the function that is executed before starting the general purpose console. The return value is used as initial namespace. 
+show_hidden_frames (bool) – by default hidden traceback frames are skipped. You can show them by setting this parameter to True. 
+pin_security (bool) – can be used to disable the pin based security system. 
+pin_logging (bool) – enables the logging of the pin system.   Return type 
+None

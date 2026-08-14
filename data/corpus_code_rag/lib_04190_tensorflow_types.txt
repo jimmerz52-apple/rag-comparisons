@@ -1,0 +1,3 @@
+# tensorflow.types
+
+Module: tf.types Public TensorFlow type definitions. For details, see https://github.com/tensorflow/community/blob/master/rfcs/20200211-tf-types.md Modules experimental module: Public API for tf.types.experimental namespace.

@@ -1,0 +1,6 @@
+# python.library.ssl#ssl.OPENSSL_VERSION_INFO
+
+ssl.OPENSSL_VERSION_INFO  
+A tuple of five integers representing version information about the OpenSSL library: >>> ssl.OPENSSL_VERSION_INFO
+(1, 0, 2, 11, 15)
+  New in version 3.2.

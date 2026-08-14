@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_DWORD
+
+winreg.REG_DWORD  
+32-bit number.

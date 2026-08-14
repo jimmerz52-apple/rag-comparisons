@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.get_language
+
+get_language()  
+Returns the currently selected language code. Returns None if translations are temporarily deactivated (by deactivate_all() or when None is passed to override()).

@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_kern_dist
+
+get_kern_dist(c1, c2)[source]
+ 
+Return the kerning pair distance (possibly 0) for chars c1 and c2.

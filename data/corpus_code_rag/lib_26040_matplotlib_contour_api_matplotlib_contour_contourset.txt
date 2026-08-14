@@ -1,0 +1,137 @@
+# matplotlib.contour_api#matplotlib.contour.ContourSet
+
+classmatplotlib.contour.ContourSet(ax, *args, levels=None, filled=False, linewidths=None, linestyles=None, hatches=(None,), alpha=None, origin=None, extent=None, cmap=None, colors=None, norm=None, vmin=None, vmax=None, extend='neither', antialiased=None, nchunk=0, locator=None, transform=None, **kwargs)[source]
+ 
+Bases: matplotlib.cm.ScalarMappable, matplotlib.contour.ContourLabeler Store a set of contour lines or filled regions. User-callable method: clabel  Parameters 
+ 
+axAxes
+
+
+levels[level0, level1, ..., leveln]
+
+
+A list of floating point numbers indicating the contour levels.  
+allsegs[level0segs, level1segs, ...]
+
+
+List of all the polygon segments for all the levels. For contour lines len(allsegs) == len(levels), and for filled contour regions len(allsegs) = len(levels)-1. The lists should look like level0segs = [polygon0, polygon1, ...]
+polygon0 = [[x0, y0], [x1, y1], ...]
+  
+allkindsNone or [level0kinds, level1kinds, ...]
+
+
+Optional list of all the polygon vertex kinds (code types), as described and used in Path. This is used to allow multiply- connected paths such as holes within filled polygons. If not None, len(allkinds) == len(allsegs). The lists should look like level0kinds = [polygon0kinds, ...]
+polygon0kinds = [vertexcode0, vertexcode1, ...]
+ If allkinds is not None, usually all polygons for a particular contour level are grouped together so that level0segs = [polygon0] and level0kinds = [polygon0kinds].  **kwargs
+
+Keyword arguments are as described in the docstring of contour.    Attributes 
+ 
+axAxes
+
+
+The Axes object in which the contours are drawn.  
+collectionssilent_list of PathCollections
+
+
+The Artists representing the contour. This is a list of PathCollections for both line and filled contours.  
+levelsarray
+
+
+The values of the contour levels.  
+layersarray
+
+
+Same as levels for line contours; half-way between levels for filled contours. See ContourSet._process_colors.     Draw contour lines or filled regions, depending on whether keyword arg filled is False (default) or True. Call signature: ContourSet(ax, levels, allsegs, [allkinds], **kwargs)
+  Parameters 
+ 
+axAxes
+
+
+The Axes object to draw on.  
+levels[level0, level1, ..., leveln]
+
+
+A list of floating point numbers indicating the contour levels.  
+allsegs[level0segs, level1segs, ...]
+
+
+List of all the polygon segments for all the levels. For contour lines len(allsegs) == len(levels), and for filled contour regions len(allsegs) = len(levels)-1. The lists should look like level0segs = [polygon0, polygon1, ...]
+polygon0 = [[x0, y0], [x1, y1], ...]
+  
+allkinds[level0kinds, level1kinds, ...], optional
+
+
+Optional list of all the polygon vertex kinds (code types), as described and used in Path. This is used to allow multiply- connected paths such as holes within filled polygons. If not None, len(allkinds) == len(allsegs). The lists should look like level0kinds = [polygon0kinds, ...]
+polygon0kinds = [vertexcode0, vertexcode1, ...]
+ If allkinds is not None, usually all polygons for a particular contour level are grouped together so that level0segs = [polygon0] and level0kinds = [polygon0kinds].  **kwargs
+
+Keyword arguments are as described in the docstring of contour.       changed()[source]
+ 
+Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal. 
+   find_nearest_contour(x, y, indices=None, pixel=True)[source]
+ 
+Find the point in the contour plot that is closest to (x, y).  Parameters 
+ 
+x, yfloat
+
+
+The reference point.  
+indiceslist of int or None, default: None
+
+
+Indices of contour levels to consider. If None (the default), all levels are considered.  
+pixelbool, default: True
+
+
+If True, measure distance in pixel (screen) space, which is useful for manual contour labeling; else, measure distance in axes space.    Returns 
+ 
+contourCollection
+
+
+The contour that is closest to (x, y).  
+segmentint
+
+
+The index of the Path in contour that is closest to (x, y).  
+indexint
+
+
+The index of the path segment in segment that is closest to (x, y).  
+xmin, yminfloat
+
+
+The point in the contour plot that is closest to (x, y).  
+d2float
+
+
+The squared distance from (xmin, ymin) to (x, y).     
+   get_alpha()[source]
+ 
+Return alpha to be applied to all ContourSet artists. 
+   get_transform()[source]
+ 
+Return the Transform instance used by this ContourSet. 
+   legend_elements(variable_name='x', str_format=<class 'str'>)[source]
+ 
+Return a list of artists and labels suitable for passing through to legend which represent this ContourSet. The labels have the form "0 < x <= 1" stating the data ranges which the artists represent.  Parameters 
+ 
+variable_namestr
+
+
+The string used inside the inequality used on the labels.  
+str_formatfunction: float -> str
+
+
+Function used to format the numbers in the labels.    Returns 
+ 
+artistslist[Artist]
+
+
+A list of the artists.  
+labelslist[str]
+
+
+A list of the labels.     
+   set_alpha(alpha)[source]
+ 
+Set the alpha blending value for all ContourSet artists. alpha must be between 0 (transparent) and 1 (opaque).

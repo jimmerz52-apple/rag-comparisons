@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_prop_tup
+
+get_prop_tup(renderer=None)[source]
+ 
+[Deprecated] Return a hashable tuple of properties. Not intended to be human readable, but useful for backends who want to cache derived information about text (e.g., layouts) and need to know if the text has changed. Notes  Deprecated since version 3.5.

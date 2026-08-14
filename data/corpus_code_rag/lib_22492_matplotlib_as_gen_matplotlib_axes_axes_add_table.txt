@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_table
+
+matplotlib.axes.Axes.add_table   Axes.add_table(tab)[source]
+ 
+Add a Table to the Axes; return the table.

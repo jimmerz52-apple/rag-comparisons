@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Grouper.clean
+
+clean()[source]
+ 
+Clean dead weak references from the dictionary.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SessionMixin.modified
+
+modified = True  
+Some implementations can detect changes to the session and set this when that happens. The mixin default is hard coded to True.

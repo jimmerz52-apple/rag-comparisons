@@ -1,0 +1,6 @@
+# django.ref.forms.fields#django.forms.FloatField
+
+class FloatField(**kwargs)  
+ Default widget: NumberInput when Field.localize is False, else TextInput. Empty value: None
+ Normalizes to: A Python float. Validates that the given value is a float. Uses MaxValueValidator and MinValueValidator if max_value and min_value are provided. Leading and trailing whitespace is allowed, as in Python’s float() function. Error message keys: required, invalid, max_value, min_value
+  Takes two optional arguments for validation, max_value and min_value. These control the range of values permitted in the field.

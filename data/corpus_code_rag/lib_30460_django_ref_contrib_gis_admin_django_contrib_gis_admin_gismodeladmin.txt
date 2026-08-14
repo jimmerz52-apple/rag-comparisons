@@ -1,0 +1,9 @@
+# django.ref.contrib.gis.admin#django.contrib.gis.admin.GISModelAdmin
+
+class GISModelAdmin  
+ 
+gis_widget  
+The widget class to be used for GeometryField. Defaults to OSMWidget. 
+  
+gis_widget_kwargs  
+The keyword arguments that would be passed to the gis_widget. Defaults to an empty dictionary.

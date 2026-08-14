@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.feature_selection.rfecv#sklearn.feature_selection.RFECV.score
+
+score(X, y) [source]
+ 
+ Reduce X to the selected features and then return the score of the
+
+underlying estimator.    Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.  
+yarray of shape [n_samples] 
+
+The target values.

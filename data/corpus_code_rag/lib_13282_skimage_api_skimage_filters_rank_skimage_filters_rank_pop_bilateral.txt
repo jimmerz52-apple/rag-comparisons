@@ -1,0 +1,40 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.pop_bilateral
+
+skimage.filters.rank.pop_bilateral(image, selem, out=None, mask=None, shift_x=False, shift_y=False, s0=10, s1=10) [source]
+ 
+Return the local number (population) of pixels. The number of pixels is defined as the number of pixels which are included in the structuring element and the mask. Additionally pixels must have a greylevel inside the interval [g-s0, g+s1] where g is the greyvalue of the center pixel.  Parameters 
+ 
+image2-D array (uint8, uint16) 
+
+Input image.  
+selem2-D array 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s.  
+out2-D array (same dtype as input) 
+
+If None, a new array is allocated.  
+maskndarray 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_yint 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).  
+s0, s1int 
+
+Define the [s0, s1] interval around the greyvalue of the center pixel to be considered for computing the value.    Returns 
+ 
+out2-D array (same dtype as input image) 
+
+Output image.     Examples >>> from skimage.morphology import square
+>>> import skimage.filters.rank as rank
+>>> img = 255 * np.array([[0, 0, 0, 0, 0],
+...                       [0, 1, 1, 1, 0],
+...                       [0, 1, 1, 1, 0],
+...                       [0, 1, 1, 1, 0],
+...                       [0, 0, 0, 0, 0]], dtype=np.uint16)
+>>> rank.pop_bilateral(img, square(3), s0=10, s1=10)
+array([[3, 4, 3, 4, 3],
+       [4, 4, 6, 4, 4],
+       [3, 6, 9, 6, 3],
+       [4, 4, 6, 4, 4],
+       [3, 4, 3, 4, 3]], dtype=uint16)

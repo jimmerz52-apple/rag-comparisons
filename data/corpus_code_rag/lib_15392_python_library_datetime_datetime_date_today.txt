@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.date.today
+
+classmethod date.today()  
+Return the current local date. This is equivalent to date.fromtimestamp(time.time()).

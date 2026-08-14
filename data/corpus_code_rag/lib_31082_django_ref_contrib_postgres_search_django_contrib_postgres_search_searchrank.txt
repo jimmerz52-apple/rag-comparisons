@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.search#django.contrib.postgres.search.SearchRank
+
+class SearchRank(vector, query, weights=None, normalization=None, cover_density=False)

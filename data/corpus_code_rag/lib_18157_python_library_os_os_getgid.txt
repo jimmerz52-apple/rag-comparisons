@@ -1,0 +1,4 @@
+# python.library.os#os.getgid
+
+os.getgid()  
+Return the real group id of the current process. Availability: Unix.

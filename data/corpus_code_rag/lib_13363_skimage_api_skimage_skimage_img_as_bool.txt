@@ -1,0 +1,16 @@
+# skimage.api.skimage#skimage.img_as_bool
+
+skimage.img_as_bool(image, force_copy=False) [source]
+ 
+Convert an image to boolean format.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+force_copybool, optional 
+
+Force a copy of the data, irrespective of its current dtype.    Returns 
+ 
+outndarray of bool (bool_) 
+
+Output image.     Notes The upper half of the input dtype’s positive range is True, and the lower half is False. All negative values (if present) are False.

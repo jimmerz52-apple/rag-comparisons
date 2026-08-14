@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.is_all_dates
+
+pandas.Index.is_all_dates   Index.is_all_dates
+ 
+Whether or not the index values only consist of dates.

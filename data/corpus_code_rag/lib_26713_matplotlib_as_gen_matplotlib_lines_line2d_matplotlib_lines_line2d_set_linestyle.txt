@@ -1,0 +1,19 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_linestyle
+
+set_linestyle(ls)[source]
+ 
+Set the linestyle of the line.  Parameters 
+ 
+ls{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}
+
+
+Possible values:  
+A string:   
+linestyle description   
+'-' or 'solid' solid line  
+'--' or 'dashed' dashed line  
+'-.' or 'dashdot' dash-dotted line  
+':' or 'dotted' dotted line  
+'none', 'None', ' ', or '' draw nothing    
+Alternatively a dash tuple of the following form can be provided: (offset, onoffseq)
+ where onoffseq is an even length tuple of on and off ink in points. See also set_dashes().   For examples see Linestyles.

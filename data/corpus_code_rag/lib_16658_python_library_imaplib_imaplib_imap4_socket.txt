@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.socket
+
+IMAP4.socket()  
+Returns socket instance used to connect to server.

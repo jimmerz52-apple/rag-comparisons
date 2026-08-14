@@ -1,0 +1,4 @@
+# python.library.dis#dis.Bytecode.first_line
+
+first_line  
+The first source line of the code object (if available)

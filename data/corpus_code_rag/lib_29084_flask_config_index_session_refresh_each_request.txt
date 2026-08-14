@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_REFRESH_EACH_REQUEST
+
+SESSION_REFRESH_EACH_REQUEST  
+Control whether the cookie is sent with every response when session.permanent is true. Sending the cookie every time (the default) can more reliably keep the session from expiring, but uses more bandwidth. Non-permanent sessions are not affected. Default: True

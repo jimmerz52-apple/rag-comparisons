@@ -1,0 +1,4 @@
+# python.library.exceptions#ConnectionAbortedError
+
+exception ConnectionAbortedError  
+A subclass of ConnectionError, raised when a connection attempt is aborted by the peer. Corresponds to errno ECONNABORTED.

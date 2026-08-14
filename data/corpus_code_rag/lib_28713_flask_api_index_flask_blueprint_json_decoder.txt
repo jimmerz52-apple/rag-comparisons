@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.json_decoder
+
+json_decoder: Optional[Type[json.decoder.JSONDecoder]] = None  
+Blueprint local JSON decoder class to use. Set to None to use the app’s json_decoder.

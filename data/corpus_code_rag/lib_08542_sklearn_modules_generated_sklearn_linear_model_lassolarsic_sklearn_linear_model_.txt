@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.linear_model.lassolarsic#sklearn.linear_model.LassoLarsIC.fit
+
+fit(X, y, copy_X=None) [source]
+ 
+Fit the model using X, y as training data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+training data.  
+yarray-like of shape (n_samples,) 
+
+target values. Will be cast to X’s dtype if necessary  
+copy_Xbool, default=None 
+
+If provided, this parameter will override the choice of copy_X made at instance creation. If True, X will be copied; else, it may be overwritten.    Returns 
+ 
+selfobject 
+
+returns an instance of self.

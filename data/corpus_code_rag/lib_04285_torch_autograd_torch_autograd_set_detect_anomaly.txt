@@ -1,0 +1,6 @@
+# torch.autograd#torch.autograd.set_detect_anomaly
+
+class torch.autograd.set_detect_anomaly(mode) [source]
+ 
+Context-manager that sets the anomaly detection for the autograd engine on or off. set_detect_anomaly will enable or disable the autograd anomaly detection based on its argument mode. It can be used as a context-manager or as a function. See detect_anomaly above for details of the anomaly detection behaviour.  Parameters 
+mode (bool) – Flag whether to enable anomaly detection (True), or disable (False).

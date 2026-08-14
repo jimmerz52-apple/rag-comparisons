@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.imageObject
+
+imageObject(image)[source]
+ 
+Return name of an image XObject representing the given image.

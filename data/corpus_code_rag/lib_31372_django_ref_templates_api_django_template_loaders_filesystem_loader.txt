@@ -1,0 +1,18 @@
+# django.ref.templates.api#django.template.loaders.filesystem.Loader
+
+class filesystem.Loader  
+Loads templates from the filesystem, according to DIRS. This loader is enabled by default. However it won’t find any templates until you set DIRS to a non-empty list: TEMPLATES = [{
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'DIRS': [BASE_DIR / 'templates'],
+}]
+ You can also override 'DIRS' and specify specific directories for a particular filesystem loader: TEMPLATES = [{
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'OPTIONS': {
+        'loaders': [
+            (
+                'django.template.loaders.filesystem.Loader',
+                [BASE_DIR / 'templates'],
+            ),
+        ],
+    },
+}]

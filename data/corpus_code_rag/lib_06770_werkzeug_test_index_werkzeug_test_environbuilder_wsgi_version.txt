@@ -1,0 +1,4 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.wsgi_version
+
+wsgi_version = (1, 0)  
+the wsgi version to use. defaults to (1, 0)

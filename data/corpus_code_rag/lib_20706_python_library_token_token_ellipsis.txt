@@ -1,0 +1,4 @@
+# python.library.token#token.ELLIPSIS
+
+token.ELLIPSIS  
+Token value for "...".

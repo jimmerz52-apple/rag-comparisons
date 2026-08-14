@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.lazylinear#torch.nn.LazyLinear.cls_to_become
+
+cls_to_become  
+alias of Linear

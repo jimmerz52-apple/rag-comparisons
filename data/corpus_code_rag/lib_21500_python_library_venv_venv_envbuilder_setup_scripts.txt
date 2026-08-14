@@ -1,0 +1,4 @@
+# python.library.venv#venv.EnvBuilder.setup_scripts
+
+setup_scripts(context)  
+Installs activation scripts appropriate to the platform into the virtual environment.

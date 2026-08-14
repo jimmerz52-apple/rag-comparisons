@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.BaseSelector.unregister
+
+abstractmethod unregister(fileobj)  
+Unregister a file object from selection, removing it from monitoring. A file object shall be unregistered prior to being closed. fileobj must be a file object previously registered. This returns the associated SelectorKey instance, or raises a KeyError if fileobj is not registered. It will raise ValueError if fileobj is invalid (e.g. it has no fileno() method or its fileno() method has an invalid return value).

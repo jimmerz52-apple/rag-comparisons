@@ -1,0 +1,6 @@
+# python.library.tkinter.font#tkinter.font.BOLD
+
+tkinter.font.NORMAL  
+tkinter.font.BOLD  
+tkinter.font.ITALIC  
+tkinter.font.ROMAN

@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.MinValueValidator
+
+class MinValueValidator(limit_value, message=None)  
+Raises a ValidationError with a code of 'min_value' if value is less than limit_value, which may be a callable.

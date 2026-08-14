@@ -1,0 +1,4 @@
+# python.library.test#test.support.TESTFN_UNICODE
+
+test.support.TESTFN_UNICODE  
+Set to a non-ASCII name for a temporary file.

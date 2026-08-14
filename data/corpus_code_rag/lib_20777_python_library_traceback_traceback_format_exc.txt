@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.format_exc
+
+traceback.format_exc(limit=None, chain=True)  
+This is like print_exc(limit) but returns a string instead of printing to a file.

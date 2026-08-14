@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.GNUTranslations.pgettext
+
+pgettext(context, message)  
+Look up the context and message id in the catalog and return the corresponding message string, as a Unicode string. If there is no entry in the catalog for the message id and context, and a fallback has been set, the look up is forwarded to the fallback’s pgettext() method. Otherwise, the message id is returned.  New in version 3.8.

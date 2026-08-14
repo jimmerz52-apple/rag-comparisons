@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.MessageClass
+
+MessageClass  
+Specifies an email.message.Message-like class to parse HTTP headers. Typically, this is not overridden, and it defaults to http.client.HTTPMessage.

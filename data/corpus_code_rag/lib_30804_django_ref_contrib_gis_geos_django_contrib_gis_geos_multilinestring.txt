@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.MultiLineString
+
+class MultiLineString(*args, **kwargs)  
+MultiLineString objects may be instantiated by passing in LineString objects as arguments, or a single sequence of LineString objects: >>> ls1 = LineString((0, 0), (1, 1))
+>>> ls2 = LineString((2, 2), (3, 3))
+>>> mls = MultiLineString(ls1, ls2)
+>>> mls = MultiLineString([ls1, ls2])
+  
+merged  
+Returns a LineString representing the line merge of all the components in this MultiLineString. 
+  
+closed  
+Returns True if and only if all elements are closed.

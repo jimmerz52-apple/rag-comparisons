@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.remainder
+
+remainder(x, y)  
+Returns the remainder from integer division. The sign of the result, if non-zero, is the same as that of the original dividend.

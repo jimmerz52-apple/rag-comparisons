@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Func.arg_joiner
+
+arg_joiner  
+A class attribute that denotes the character used to join the list of expressions together. Defaults to ', '.

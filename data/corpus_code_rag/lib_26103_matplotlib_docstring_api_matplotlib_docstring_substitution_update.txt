@@ -1,0 +1,5 @@
+# matplotlib.docstring_api#matplotlib.docstring.Substitution.update
+
+update(*args, **kwargs)[source]
+ 
+Update self.params (which must be a dict) with the supplied args.

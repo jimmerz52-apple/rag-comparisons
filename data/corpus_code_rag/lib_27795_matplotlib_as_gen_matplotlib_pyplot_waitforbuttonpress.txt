@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.pyplot.waitforbuttonpress
+
+matplotlib.pyplot.waitforbuttonpress   matplotlib.pyplot.waitforbuttonpress(timeout=- 1)[source]
+ 
+Blocking call to interact with the figure. Wait for user input and return True if a key was pressed, False if a mouse button was pressed and None if no input was given within timeout seconds. Negative values deactivate timeout. 
+  Examples using matplotlib.pyplot.waitforbuttonpress
+ 
+   Interactive functions

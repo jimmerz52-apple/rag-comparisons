@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.content_location
+
+content_location  
+The Content-Location entity-header field MAY be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource’s URI.

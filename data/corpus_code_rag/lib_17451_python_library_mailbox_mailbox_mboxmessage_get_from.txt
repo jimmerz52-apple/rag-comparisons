@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.mboxMessage.get_from
+
+get_from()  
+Return a string representing the “From ” line that marks the start of the message in an mbox mailbox. The leading “From ” and the trailing newline are excluded.

@@ -1,0 +1,4 @@
+# python.library.typing#typing.Sized
+
+class typing.Sized  
+An alias to collections.abc.Sized

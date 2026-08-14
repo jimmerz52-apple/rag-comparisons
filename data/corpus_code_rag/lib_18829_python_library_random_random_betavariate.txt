@@ -1,0 +1,4 @@
+# python.library.random#random.betavariate
+
+random.betavariate(alpha, beta)  
+Beta distribution. Conditions on the parameters are alpha > 0 and beta > 0. Returned values range between 0 and 1.

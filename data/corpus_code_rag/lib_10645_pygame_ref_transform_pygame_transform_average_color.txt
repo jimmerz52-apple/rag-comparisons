@@ -1,0 +1,4 @@
+# pygame.ref.transform#pygame.transform.average_color
+
+pygame.transform.average_color() 
+ finds the average color of a surface average_color(Surface, Rect = None) -> Color  Finds the average color of a Surface or a region of a surface specified by a Rect, and returns it as a Color.

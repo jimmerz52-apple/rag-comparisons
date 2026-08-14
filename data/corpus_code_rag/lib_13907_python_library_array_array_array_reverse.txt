@@ -1,0 +1,4 @@
+# python.library.array#array.array.reverse
+
+array.reverse()  
+Reverse the order of the items in the array.

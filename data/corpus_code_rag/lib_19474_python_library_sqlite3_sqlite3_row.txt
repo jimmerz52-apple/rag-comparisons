@@ -1,0 +1,7 @@
+# python.library.sqlite3#sqlite3.Row
+
+class sqlite3.Row  
+A Row instance serves as a highly optimized row_factory for Connection objects. It tries to mimic a tuple in most of its features. It supports mapping access by column name and index, iteration, representation, equality testing and len(). If two Row objects have exactly the same columns and their members are equal, they compare equal.  
+keys()  
+This method returns a list of column names. Immediately after a query, it is the first member of each tuple in Cursor.description. 
+  Changed in version 3.5: Added support of slicing.

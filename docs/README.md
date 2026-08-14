@@ -2,6 +2,6 @@
 
 Open **[index.html](./index.html)** on GitHub Pages.
 
-Tabs: **Explore** · **Latency / cost** · **Decision Lab** · **Research Lens** · **[How to run](./how-to-run.md)**.
+Tabs: **Explore** · **Latency / tokens** · **Decision Lab** · **Research Lens** · **[How to run](./how-to-run.md)**.
 
 Rebuild: `PYTHONPATH=src python scripts/build_dashboard.py`

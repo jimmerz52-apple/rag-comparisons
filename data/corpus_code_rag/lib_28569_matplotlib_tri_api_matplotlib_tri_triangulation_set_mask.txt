@@ -1,0 +1,7 @@
+# matplotlib.tri_api#matplotlib.tri.Triangulation.set_mask
+
+set_mask(mask)[source]
+ 
+Set or clear the mask array.  Parameters 
+ 
+maskNone or bool array of length ntri

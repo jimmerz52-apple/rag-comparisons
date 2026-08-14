@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.model
+
+InlineModelAdmin.model  
+The model which the inline is using. This is required.

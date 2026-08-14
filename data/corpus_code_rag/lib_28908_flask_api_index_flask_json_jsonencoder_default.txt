@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.JSONEncoder.default
+
+default(o)  
+Convert o to a JSON serializable type. See json.JSONEncoder.default(). Python does not support overriding how basic types like str or list are serialized, they are handled before this method.  Parameters 
+o (Any) –   Return type 
+Any

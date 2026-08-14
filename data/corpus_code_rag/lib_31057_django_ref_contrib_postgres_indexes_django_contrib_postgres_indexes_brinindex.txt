@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.indexes#django.contrib.postgres.indexes.BrinIndex
+
+class BrinIndex(*expressions, autosummarize=None, pages_per_range=None, **options)  
+Creates a BRIN index. Set the autosummarize parameter to True to enable automatic summarization to be performed by autovacuum. The pages_per_range argument takes a positive integer.  Changed in Django 3.2: Positional argument *expressions was added in order to support functional indexes.

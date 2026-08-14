@@ -1,0 +1,3 @@
+# django.ref.schema-editor#django.db.backends.base.schema.BaseDatabaseSchemaEditor.alter_db_tablespace
+
+BaseDatabaseSchemaEditor.alter_db_tablespace(model, old_db_tablespace, new_db_tablespace)

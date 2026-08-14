@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.environ
+
+environ: WSGIEnvironment  
+The WSGI environment containing HTTP headers and information from the WSGI server.

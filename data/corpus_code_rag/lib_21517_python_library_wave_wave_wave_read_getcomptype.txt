@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getcomptype
+
+Wave_read.getcomptype()  
+Returns compression type ('NONE' is the only supported type).

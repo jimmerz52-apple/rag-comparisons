@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.LineCollection.get_label
+
+get_label()[source]
+ 
+Return the label used for this artist in the legend.

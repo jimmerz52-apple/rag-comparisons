@@ -1,0 +1,6 @@
+# torch.data#torch.utils.data.ChainDataset
+
+class torch.utils.data.ChainDataset(datasets) [source]
+ 
+Dataset for chainning multiple IterableDataset s. This class is useful to assemble different existing dataset streams. The chainning operation is done on-the-fly, so concatenating large-scale datasets with this class will be efficient.  Parameters 
+datasets (iterable of IterableDataset) – datasets to be chained together

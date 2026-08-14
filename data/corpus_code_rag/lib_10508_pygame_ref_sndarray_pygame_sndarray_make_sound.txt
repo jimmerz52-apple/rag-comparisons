@@ -1,0 +1,4 @@
+# pygame.ref.sndarray#pygame.sndarray.make_sound
+
+pygame.sndarray.make_sound() 
+ convert an array into a Sound object make_sound(array) -> Sound  Create a new playable Sound object from an array. The mixer module must be initialized and the array format must be similar to the mixer audio format.

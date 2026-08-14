@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.mouse_event_pop
+
+mouse_event_pop(event)[source]
+ 
+Process an button-3 event (remove the last click).  Parameters 
+ 
+eventMouseEvent

@@ -1,0 +1,5 @@
+# matplotlib.tri_api#matplotlib.tri.Triangulation.get_from_args_and_kwargs
+
+staticget_from_args_and_kwargs(*args, **kwargs)[source]
+ 
+Return a Triangulation object from the args and kwargs, and the remaining args and kwargs with the consumed values removed. There are two alternatives: either the first argument is a Triangulation object, in which case it is returned, or the args and kwargs are sufficient to create a new Triangulation to return. In the latter case, see Triangulation.__init__ for the possible args and kwargs.

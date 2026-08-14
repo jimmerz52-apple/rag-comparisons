@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_xheight
+
+get_xheight()[source]
+ 
+Return the xheight as float.

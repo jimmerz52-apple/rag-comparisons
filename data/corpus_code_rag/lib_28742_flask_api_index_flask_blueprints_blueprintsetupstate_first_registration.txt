@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.first_registration
+
+first_registration  
+as blueprints can be registered multiple times with the application and not everything wants to be registered multiple times on it, this attribute can be used to figure out if the blueprint was registered in the past already.

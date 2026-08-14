@@ -1,0 +1,9 @@
+# flask.api.index#flask.json.dumps
+
+flask.json.dumps(obj, app=None, **kwargs)  
+Serialize an object to a string of JSON. Takes the same arguments as the built-in json.dumps(), with some defaults from application configuration.  Parameters 
+ 
+obj (Any) – Object to serialize to JSON. 
+app (Optional[Flask]) – Use this app’s config instead of the active app context or defaults. 
+kwargs (Any) – Extra arguments passed to json.dumps().   Return type 
+str    Changed in version 2.0: encoding is deprecated and will be removed in Flask 2.1.   Changelog Changed in version 1.0.3: app can be passed directly, rather than requiring an app context for configuration.

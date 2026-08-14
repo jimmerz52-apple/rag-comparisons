@@ -1,0 +1,3 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.FigureCanvasCairo.print_ps
+
+print_ps(fobj, *, orientation='portrait')

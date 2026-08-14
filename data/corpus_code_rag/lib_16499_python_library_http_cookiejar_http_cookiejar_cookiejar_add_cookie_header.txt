@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar.add_cookie_header
+
+CookieJar.add_cookie_header(request)  
+Add correct Cookie header to request. If policy allows (ie. the rfc2965 and hide_cookie2 attributes of the CookieJar’s CookiePolicy instance are true and false respectively), the Cookie2 header is also added when appropriate. The request object (usually a urllib.request.Request instance) must support the methods get_full_url(), get_host(), get_type(), unverifiable(), has_header(), get_header(), header_items(), add_unredirected_header() and origin_req_host attribute as documented by urllib.request.  Changed in version 3.3: request object needs origin_req_host attribute. Dependency on a deprecated method get_origin_req_host() has been removed.

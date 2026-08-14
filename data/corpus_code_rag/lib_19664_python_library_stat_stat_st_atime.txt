@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_ATIME
+
+stat.ST_ATIME  
+Time of last access.

@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.ReadTransport.is_reading
+
+ReadTransport.is_reading()  
+Return True if the transport is receiving new data.  New in version 3.7.

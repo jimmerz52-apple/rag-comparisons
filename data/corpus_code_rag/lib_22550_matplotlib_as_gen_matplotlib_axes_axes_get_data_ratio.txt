@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_data_ratio
+
+matplotlib.axes.Axes.get_data_ratio   Axes.get_data_ratio()[source]
+ 
+Return the aspect ratio of the scaled data. Notes This method is intended to be overridden by new projection types.

@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.ubyte
+
+class numpy.ubyte[source]
+ 
+Unsigned integer type, compatible with C unsigned char.  Character code 
+'B'  Alias on this platform (Linux x86_64) 
+numpy.uint8: 8-bit unsigned integer (0 to 255).

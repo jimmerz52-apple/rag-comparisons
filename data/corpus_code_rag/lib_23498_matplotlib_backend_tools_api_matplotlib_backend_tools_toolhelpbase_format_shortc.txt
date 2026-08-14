@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolHelpBase.format_shortcut
+
+staticformat_shortcut(key_sequence)[source]
+ 
+Convert a shortcut string from the notation used in rc config to the standard notation for displaying shortcuts, e.g. 'ctrl+a' -> 'Ctrl+A'.

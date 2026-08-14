@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.get_configdir
+
+matplotlib.get_configdir()[source]
+ 
+Return the string path of the configuration directory. The directory is chosen as follows:  If the MPLCONFIGDIR environment variable is supplied, choose that. On Linux, follow the XDG specification and look first in $XDG_CONFIG_HOME, if defined, or $HOME/.config. On other platforms, choose $HOME/.matplotlib. If the chosen directory exists and is writable, use that as the configuration directory. Else, create a temporary directory, and use it as the configuration directory.

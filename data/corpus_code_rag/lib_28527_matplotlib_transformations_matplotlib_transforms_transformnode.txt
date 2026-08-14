@@ -1,0 +1,54 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode
+
+classmatplotlib.transforms.TransformNode(shorthand_name=None)[source]
+ 
+Bases: object The base class for anything that participates in the transform tree and needs to invalidate its parents or be invalidated. This includes classes that are not really transforms, such as bounding boxes, since some transforms depend on bounding boxes to compute their values.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       INVALID=3
+
+   INVALID_AFFINE=2
+
+   INVALID_NON_AFFINE=1
+
+   __copy__()[source]
+
+   __deepcopy__(memo)[source]
+
+   __dict__=mappingproxy({'__module__': 'matplotlib.transforms', '__doc__': '\n The base class for anything that participates in the transform tree\n and needs to invalidate its parents or be invalidated. This includes\n classes that are not really transforms, such as bounding boxes, since some\n transforms depend on bounding boxes to compute their values.\n ', 'INVALID_NON_AFFINE': 1, 'INVALID_AFFINE': 2, 'INVALID': 3, 'is_affine': False, 'is_bbox': False, 'pass_through': False, '__init__': <function TransformNode.__init__>, '__getstate__': <function TransformNode.__getstate__>, '__setstate__': <function TransformNode.__setstate__>, '__copy__': <function TransformNode.__copy__>, '__deepcopy__': <function TransformNode.__deepcopy__>, 'invalidate': <function TransformNode.invalidate>, '_invalidate_internal': <function TransformNode._invalidate_internal>, 'set_children': <function TransformNode.set_children>, 'frozen': <function TransformNode.frozen>, '__dict__': <attribute '__dict__' of 'TransformNode' objects>, '__weakref__': <attribute '__weakref__' of 'TransformNode' objects>, '__annotations__': {}})
+
+   __getstate__()[source]
+
+   __init__(shorthand_name=None)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.     
+   __module__='matplotlib.transforms'
+
+   __setstate__(data_dict)[source]
+
+   __weakref__
+ 
+list of weak references to the object (if defined) 
+   frozen()[source]
+ 
+Return a frozen copy of this transform node. The frozen copy will not be updated when its children change. Useful for storing a previously known state of a transform where copy.deepcopy() might normally be used. 
+   invalidate()[source]
+ 
+Invalidate this TransformNode and triggers an invalidation of its ancestors. Should be called any time the transform changes. 
+   is_affine=False
+
+   is_bbox=False
+
+   pass_through=False
+ 
+If pass_through is True, all ancestors will always be invalidated, even if 'self' is already invalid. 
+   set_children(*children)[source]
+ 
+Set the children of the transform, to let the invalidation system know which transforms can invalidate this transform. Should be called from the constructor of any transforms that depend on other transforms.

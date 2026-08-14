@@ -1,0 +1,26 @@
+# matplotlib.image_api#matplotlib.image.composite_images
+
+matplotlib.image.composite_images(images, renderer, magnification=1.0)[source]
+ 
+Composite a number of RGBA images into one. The images are composited in the order in which they appear in the images list.  Parameters 
+ 
+imageslist of Images
+
+
+Each must have a make_image method. For each image, can_composite should return True, though this is not enforced by this function. Each image must have a purely affine transformation with no shear.  
+rendererRendererBase
+
+
+magnificationfloat, default: 1
+
+
+The additional magnification to apply for the renderer in use.    Returns 
+ 
+imageuint8 array (M, N, 4)
+
+
+The composited RGBA image.  
+offset_x, offset_yfloat
+
+
+The (left, bottom) offset where the composited image should be placed in the output figure.

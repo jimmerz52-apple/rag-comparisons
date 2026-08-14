@@ -1,0 +1,31 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.merge_hierarchical
+
+skimage.future.graph.merge_hierarchical(labels, rag, thresh, rag_copy, in_place_merge, merge_func, weight_func) [source]
+ 
+Perform hierarchical merging of a RAG. Greedily merges the most similar pair of nodes until no edges lower than thresh remain.  Parameters 
+ 
+labelsndarray 
+
+The array of labels.  
+ragRAG 
+
+The Region Adjacency Graph.  
+threshfloat 
+
+Regions connected by an edge with weight smaller than thresh are merged.  
+rag_copybool 
+
+If set, the RAG copied before modifying.  
+in_place_mergebool 
+
+If set, the nodes are merged in place. Otherwise, a new node is created for each merge..  
+merge_funccallable 
+
+This function is called before merging two nodes. For the RAG graph while merging src and dst, it is called as follows merge_func(graph, src, dst).  
+weight_funccallable 
+
+The function to compute the new weights of the nodes adjacent to the merged node. This is directly supplied as the argument weight_func to merge_nodes.    Returns 
+ 
+outndarray 
+
+The new labeled array.

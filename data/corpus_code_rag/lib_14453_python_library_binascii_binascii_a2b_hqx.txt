@@ -1,0 +1,4 @@
+# python.library.binascii#binascii.a2b_hqx
+
+binascii.a2b_hqx(string)  
+Convert binhex4 formatted ASCII data to binary, without doing RLE-decompression. The string should contain a complete number of binary bytes, or (in case of the last portion of the binhex4 data) have the remaining bits zero.  Deprecated since version 3.9.

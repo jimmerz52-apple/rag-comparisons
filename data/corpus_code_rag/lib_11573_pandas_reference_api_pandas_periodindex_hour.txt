@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.hour
+
+pandas.PeriodIndex.hour   propertyPeriodIndex.hour
+ 
+The hour of the period.

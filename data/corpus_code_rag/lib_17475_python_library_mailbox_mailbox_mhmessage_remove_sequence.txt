@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MHMessage.remove_sequence
+
+remove_sequence(sequence)  
+Remove sequence from the list of sequences that include this message.

@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_snan
+
+is_snan(x)  
+Returns True if x is a signaling NaN; otherwise returns False.

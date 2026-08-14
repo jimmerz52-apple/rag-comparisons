@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_clip_path
+
+set_clip_path(path)[source]
+ 
+Set the clip path to a TransformedPath or None.

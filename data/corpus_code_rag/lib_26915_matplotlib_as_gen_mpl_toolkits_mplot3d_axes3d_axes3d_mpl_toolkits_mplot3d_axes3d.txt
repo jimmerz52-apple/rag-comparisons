@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.can_zoom
+
+can_zoom()[source]
+ 
+Return whether this axes supports the zoom box button functionality. 3D axes objects do not use the zoom box button.

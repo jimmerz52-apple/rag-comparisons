@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.Measurement.merge
+
+static merge(measurements) [source]
+ 
+Convenience method for merging replicates. Merge will extrapolate times to number_per_run=1 and will not transfer any metadata. (Since it might differ between replicates)

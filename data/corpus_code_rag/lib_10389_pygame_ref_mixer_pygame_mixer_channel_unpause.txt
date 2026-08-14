@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.unpause
+
+unpause() 
+ resume pause playback of a channel unpause() -> None  Resume the playback on a paused channel.

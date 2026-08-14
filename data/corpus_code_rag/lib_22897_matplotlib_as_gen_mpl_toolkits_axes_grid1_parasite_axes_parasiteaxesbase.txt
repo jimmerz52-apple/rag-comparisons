@@ -1,0 +1,24 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.parasiteaxesbase
+
+mpl_toolkits.axes_grid1.parasite_axes.ParasiteAxesBase   classmpl_toolkits.axes_grid1.parasite_axes.ParasiteAxesBase(parent_axes, aux_transform=None, *, viewlim_mode=None, **kwargs)[source]
+ 
+Bases: object   apply_aspect(position=None)[source]
+
+   cla()[source]
+
+   get_images_artists()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   get_viewlim_mode()[source]
+
+   pick(mouseevent)[source]
+
+   set_viewlim_mode(mode)[source]
+
+   update_viewlim()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:   
+ 
+  Examples using mpl_toolkits.axes_grid1.parasite_axes.ParasiteAxesBase
+ 
+   Parasite Axes demo

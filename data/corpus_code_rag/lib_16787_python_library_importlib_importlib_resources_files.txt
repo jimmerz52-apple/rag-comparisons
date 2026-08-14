@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.files
+
+importlib.resources.files(package)  
+Returns an importlib.resources.abc.Traversable object representing the resource container for the package (think directory) and its resources (think files). A Traversable may contain other containers (think subdirectories). package is either a name or a module object which conforms to the Package requirements.  New in version 3.9.

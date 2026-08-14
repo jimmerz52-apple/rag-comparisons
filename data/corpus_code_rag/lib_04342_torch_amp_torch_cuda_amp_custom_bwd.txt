@@ -1,0 +1,5 @@
+# torch.amp#torch.cuda.amp.custom_bwd
+
+torch.cuda.amp.custom_bwd(bwd) [source]
+ 
+Helper decorator for backward methods of custom autograd functions (subclasses of torch.autograd.Function). Ensures that backward executes with the same autocast state as forward. See the example page for more detail.

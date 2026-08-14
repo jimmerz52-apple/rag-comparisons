@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.matmul
+
+matmul(tensor2) → Tensor  
+See torch.matmul()

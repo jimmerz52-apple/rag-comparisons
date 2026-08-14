@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Client.logout
+
+logout()  
+If your site uses Django’s authentication system, the logout() method can be used to simulate the effect of a user logging out of your site. After you call this method, the test client will have all the cookies and session data cleared to defaults. Subsequent requests will appear to come from an AnonymousUser.

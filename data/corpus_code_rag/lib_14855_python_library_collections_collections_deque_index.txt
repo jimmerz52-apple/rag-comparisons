@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.index
+
+index(x[, start[, stop]])  
+Return the position of x in the deque (at or after index start and before index stop). Returns the first match or raises ValueError if not found.  New in version 3.5.

@@ -1,0 +1,5 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.get_environ
+
+get_environ()  
+Return the built environ.  Changelog Changed in version 0.15: The content type and length headers are set based on input stream detection. Previously this only set the WSGI keys.   Return type 
+WSGIEnvironment

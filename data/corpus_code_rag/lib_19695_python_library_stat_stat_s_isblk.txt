@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISBLK
+
+stat.S_ISBLK(mode)  
+Return non-zero if the mode is from a block special device file.

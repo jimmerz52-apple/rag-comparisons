@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.is_normalized
+
+unicodedata.is_normalized(form, unistr)  
+Return whether the Unicode string unistr is in the normal form form. Valid values for form are ‘NFC’, ‘NFKC’, ‘NFD’, and ‘NFKD’.  New in version 3.8.

@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.Widget.set_active
+
+set_active(active)[source]
+ 
+Set whether the widget is active.

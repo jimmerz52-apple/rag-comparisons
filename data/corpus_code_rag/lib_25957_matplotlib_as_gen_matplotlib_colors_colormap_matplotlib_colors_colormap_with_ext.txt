@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.with_extremes
+
+with_extremes(*, bad=None, under=None, over=None)[source]
+ 
+Return a copy of the colormap, for which the colors for masked (bad) values and, when norm.clip = False, low (under) and high (over) out-of-range values, have been set accordingly.

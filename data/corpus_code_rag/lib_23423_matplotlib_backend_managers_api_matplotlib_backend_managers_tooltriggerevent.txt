@@ -1,0 +1,5 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolTriggerEvent
+
+classmatplotlib.backend_managers.ToolTriggerEvent(name, sender, tool, canvasevent=None, data=None)[source]
+ 
+Bases: matplotlib.backend_managers.ToolEvent Event to inform that a tool has been triggered.

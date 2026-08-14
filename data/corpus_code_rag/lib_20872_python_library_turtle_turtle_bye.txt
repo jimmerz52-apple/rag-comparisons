@@ -1,0 +1,4 @@
+# python.library.turtle#turtle.bye
+
+turtle.bye()  
+Shut the turtlegraphics window.

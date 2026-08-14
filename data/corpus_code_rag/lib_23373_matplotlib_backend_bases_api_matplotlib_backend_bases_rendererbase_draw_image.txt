@@ -1,0 +1,26 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.RendererBase.draw_image
+
+draw_image(gc, x, y, im, transform=None)[source]
+ 
+Draw an RGBA image.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+A graphics context with clipping information.  
+xscalar
+
+
+The distance in physical units (i.e., dots or pixels) from the left hand side of the canvas.  
+yscalar
+
+
+The distance in physical units (i.e., dots or pixels) from the bottom side of the canvas.  
+im(N, M, 4) array-like of np.uint8
+
+
+An array of RGBA pixels.  
+transformmatplotlib.transforms.Affine2DBase
+
+
+If and only if the concrete backend is written such that option_scale_image() returns True, an affine transformation (i.e., an Affine2DBase) may be passed to draw_image(). The translation vector of the transformation is given in physical units (i.e., dots or pixels). Note that the transformation does not override x and y, and has to be applied before translating the result by x and y (this can be accomplished by adding x and y to the translation vector defined by transform).

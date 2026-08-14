@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.ColorbarBase
+
+matplotlib.colorbar.ColorbarBase[source]
+ 
+alias of matplotlib.colorbar.Colorbar

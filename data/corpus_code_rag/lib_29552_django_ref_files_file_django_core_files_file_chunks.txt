@@ -1,0 +1,5 @@
+# django.ref.files.file#django.core.files.File.chunks
+
+chunks(chunk_size=None) [source]
+ 
+Iterate over the file yielding “chunks” of a given size. chunk_size defaults to 64 KB. This is especially useful with very large files since it allows them to be streamed off disk and avoids storing the whole file in memory.

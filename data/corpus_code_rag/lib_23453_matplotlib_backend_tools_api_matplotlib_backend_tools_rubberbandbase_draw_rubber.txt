@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.RubberbandBase.draw_rubberband
+
+draw_rubberband(*data)[source]
+ 
+Draw rubberband. This method must get implemented per backend.

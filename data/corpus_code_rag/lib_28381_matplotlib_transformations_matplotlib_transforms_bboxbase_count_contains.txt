@@ -1,0 +1,7 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.count_contains
+
+count_contains(vertices)[source]
+ 
+Count the number of vertices contained in the Bbox. Any vertices with a non-finite x or y value are ignored.  Parameters 
+ 
+verticesNx2 Numpy array.

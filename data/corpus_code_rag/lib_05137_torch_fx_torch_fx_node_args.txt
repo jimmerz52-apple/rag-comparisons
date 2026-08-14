@@ -1,0 +1,4 @@
+# torch.fx#torch.fx.Node.args
+
+property args  
+The tuple of arguments to this Node. The interpretation of arguments depends on the node’s opcode. See the Node docstring for more information. Assignment to this property is allowed. All accounting of uses and users is updated automatically on assignment.

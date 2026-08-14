@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.Process.stdin
+
+stdin  
+Standard input stream (StreamWriter) or None if the process was created with stdin=None.

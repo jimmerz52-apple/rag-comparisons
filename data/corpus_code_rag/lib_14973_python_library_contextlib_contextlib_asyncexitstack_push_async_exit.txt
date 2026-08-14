@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.AsyncExitStack.push_async_exit
+
+push_async_exit(exit)  
+Similar to push() but expects either an asynchronous context manager or a coroutine function.

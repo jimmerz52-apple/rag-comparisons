@@ -1,0 +1,5 @@
+# werkzeug.serving.index#werkzeug.serving.is_running_from_reloader
+
+werkzeug.serving.is_running_from_reloader()  
+Checks if the application is running from within the Werkzeug reloader subprocess.  Changelog New in version 0.10.   Return type 
+bool

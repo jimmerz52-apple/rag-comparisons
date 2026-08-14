@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIG_BLOCK
+
+signal.SIG_BLOCK  
+A possible value for the how parameter to pthread_sigmask() indicating that signals are to be blocked.  New in version 3.3.

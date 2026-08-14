@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.CASCADE
+
+CASCADE  
+Cascade deletes. Django emulates the behavior of the SQL constraint ON DELETE CASCADE and also deletes the object containing the ForeignKey. Model.delete() isn’t called on related models, but the pre_delete and post_delete signals are sent for all deleted objects.

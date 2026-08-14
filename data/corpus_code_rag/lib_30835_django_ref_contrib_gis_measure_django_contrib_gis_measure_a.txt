@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.measure#django.contrib.gis.measure.A
+
+class A  
+Alias for Area class.

@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTPReplyError
+
+exception nntplib.NNTPReplyError  
+Exception raised when an unexpected reply is received from the server.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.offset
+
+pandas.tseries.offsets.CustomBusinessDay.offset   CustomBusinessDay.offset
+ 
+Alias for self._offset.

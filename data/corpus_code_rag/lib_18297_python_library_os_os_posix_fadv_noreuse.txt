@@ -1,0 +1,9 @@
+# python.library.os#os.POSIX_FADV_NOREUSE
+
+os.POSIX_FADV_NORMAL  
+os.POSIX_FADV_SEQUENTIAL  
+os.POSIX_FADV_RANDOM  
+os.POSIX_FADV_NOREUSE  
+os.POSIX_FADV_WILLNEED  
+os.POSIX_FADV_DONTNEED  
+Flags that can be used in advice in posix_fadvise() that specify the access pattern that is likely to be used. Availability: Unix.  New in version 3.3.

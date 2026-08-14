@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.Array._type_
+
+_type_  
+Specifies the type of each element in the array.

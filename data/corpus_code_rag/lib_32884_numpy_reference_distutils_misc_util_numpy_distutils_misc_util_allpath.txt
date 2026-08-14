@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.allpath
+
+numpy.distutils.misc_util.allpath(name)[source]
+ 
+Convert a /-separated pathname to one using the OS’s path separator.

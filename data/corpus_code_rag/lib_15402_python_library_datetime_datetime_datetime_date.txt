@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.date
+
+datetime.date()  
+Return date object with same year, month and day.

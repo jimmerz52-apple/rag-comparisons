@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.get_string
+
+get_string(key)  
+Return a string representation of the message corresponding to key, or raise a KeyError exception if no such message exists. The message is processed through email.message.Message to convert it to a 7bit clean representation.

@@ -1,0 +1,5 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.get_text_width_height_descent
+
+get_text_width_height_descent(tex, fontsize, renderer=None)[source]
+ 
+Return width, height and descent of the text.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestSuite.addTests
+
+addTests(tests)  
+Add all the tests from an iterable of TestCase and TestSuite instances to this test suite. This is equivalent to iterating over tests, calling addTest() for each element.

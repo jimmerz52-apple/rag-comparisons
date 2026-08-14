@@ -1,0 +1,4 @@
+# python.library.test#test.support.EnvironmentVarGuard.unset
+
+EnvironmentVarGuard.unset(envvar)  
+Temporarily unset the environment variable envvar.

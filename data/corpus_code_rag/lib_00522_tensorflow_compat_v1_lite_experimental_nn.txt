@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.lite.experimental.nn
+
+Module: tf.compat.v1.lite.experimental.nn Public API for tf.lite.experimental.nn namespace. Classes class TFLiteLSTMCell: Long short-term memory unit (LSTM) recurrent network cell. class TfLiteRNNCell: The most basic RNN cell. Functions dynamic_rnn(...): Creates a recurrent neural network specified by RNNCell cell.

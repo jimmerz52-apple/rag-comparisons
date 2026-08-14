@@ -1,0 +1,4 @@
+# python.library.os#os.isatty
+
+os.isatty(fd)  
+Return True if the file descriptor fd is open and connected to a tty(-like) device, else False.

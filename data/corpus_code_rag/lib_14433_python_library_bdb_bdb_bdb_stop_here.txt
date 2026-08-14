@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.stop_here
+
+stop_here(frame)  
+This method checks if the frame is somewhere below botframe in the call stack. botframe is the frame in which debugging started.

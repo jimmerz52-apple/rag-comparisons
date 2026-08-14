@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.padded
+
+mpl_toolkits.axes_grid1.axes_size.Padded   classmpl_toolkits.axes_grid1.axes_size.Padded(size, pad)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base Return a instance where the absolute part of size is increase by the amount of pad.   get_size(renderer)[source]

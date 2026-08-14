@@ -1,0 +1,1000 @@
+# matplotlib.widgets_api
+
+matplotlib.widgets                         GUI neutral widgets Widgets that are designed to work for any of the GUI backends. All of these widgets require you to predefine a matplotlib.axes.Axes instance and pass that as the first parameter. Matplotlib doesn't try to be too smart with respect to layout -- you will have to figure out how wide and tall you want your Axes to be to accommodate your widget.   classmatplotlib.widgets.AxesWidget(ax)[source]
+ 
+Bases: matplotlib.widgets.Widget Widget connected to a single Axes. To guarantee that the widget remains responsive and not garbage-collected, a reference to the object should be maintained by the user. This is necessary because the callback registry maintains only weak-refs to the functions, which are member functions of the widget. If there are no references to the widget object it may be garbage collected which will disconnect the callbacks.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+canvasFigureCanvasBase
+
+
+The parent figure canvas for the widget.  
+activebool
+
+
+Is the widget active?       propertycids[source]
+
+   connect_event(event, callback)[source]
+ 
+Connect a callback function with an event. This should be used in lieu of figure.canvas.mpl_connect since this function stores callback ids for later clean up. 
+   disconnect_events()[source]
+ 
+Disconnect all events created by this widget. 
+ 
+   classmatplotlib.widgets.Button(ax, label, image=None, color='0.85', hovercolor='0.95')[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral button. For the button to remain responsive you must keep a reference to it. Call on_clicked to connect to the button.  Attributes 
+ ax
+
+The matplotlib.axes.Axes the button renders into.  label
+
+A matplotlib.text.Text instance.  color
+
+The color of the button when not hovering.  hovercolor
+
+The color of the button when hovering.      Parameters 
+ 
+axAxes
+
+
+The Axes instance the button will be placed into.  
+labelstr
+
+
+The button text.  
+imagearray-like or PIL Image
+
+
+The image to place in the button, if not None. The parameter is directly forwarded to imshow.  
+colorcolor
+
+
+The color of the button when not activated.  
+hovercolorcolor
+
+
+The color of the button when the mouse is over it.       propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the callback function with connection id cid. 
+   propertyobservers[source]
+
+   on_clicked(func)[source]
+ 
+Connect the callback function func to button click events. Returns a connection id, which can be used to disconnect the callback. 
+ 
+   classmatplotlib.widgets.CheckButtons(ax, labels, actives=None)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral set of check buttons. For the check buttons to remain responsive you must keep a reference to this object. Connect to the CheckButtons with the on_clicked method.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+labelslist of Text
+
+
+rectangleslist of Rectangle
+
+
+lineslist of (Line2D, Line2D) pairs
+
+
+List of lines for the x's in the check boxes. These lines exist for each box, but have set_visible(False) when its box is not checked.     Add check buttons to matplotlib.axes.Axes instance ax.  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+labelslist of str
+
+
+The labels of the check buttons.  
+activeslist of bool, optional
+
+
+The initial check states of the buttons. The list must have the same length as labels. If not given, all buttons are unchecked.       propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid. 
+   get_status()[source]
+ 
+Return a tuple of the status (True/False) of all of the check buttons. 
+   propertyobservers[source]
+
+   on_clicked(func)[source]
+ 
+Connect the callback function func to button click events. Returns a connection id, which can be used to disconnect the callback. 
+   set_active(index)[source]
+ 
+Toggle (activate or deactivate) a check button by index. Callbacks will be triggered if eventson is True.  Parameters 
+ 
+indexint
+
+
+Index of the check button to toggle.    Raises 
+ ValueError
+
+If index is invalid.     
+ 
+   classmatplotlib.widgets.Cursor(ax, horizOn=True, vertOn=True, useblit=False, **lineprops)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A crosshair cursor that spans the axes and moves with mouse cursor. For the cursor to remain responsive you must keep a reference to it.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+The Axes to attach the cursor to.  
+horizOnbool, default: True
+
+
+Whether to draw the horizontal line.  
+vertOnbool, default: True
+
+
+Whether to draw the vertical line.  
+useblitbool, default: False
+
+
+Use blitting for faster drawing if supported by the backend.    Other Parameters 
+ **lineprops
+
+Line2D properties that control the appearance of the lines. See also axhline.     Examples See Cursor.   clear(event)[source]
+ 
+Internal event handler to clear the cursor. 
+   onmove(event)[source]
+ 
+Internal event handler to draw the cursor when the mouse moves. 
+ 
+   classmatplotlib.widgets.EllipseSelector(ax, onselect, drawtype=<deprecated parameter>, minspanx=0, minspany=0, useblit=False, lineprops=<deprecated parameter>, props=None, spancoords='data', button=None, grab_range=10, handle_props=None, interactive=False, state_modifier_keys=None, drag_from_anywhere=False, ignore_event_outside=False)[source]
+ 
+Bases: matplotlib.widgets.RectangleSelector Select an elliptical region of an axes. For the cursor to remain responsive you must keep a reference to it. Press and release events triggered at the same coordinates outside the selection will clear the selector, except when ignore_event_outside=True.  Parameters 
+ 
+axAxes
+
+ The parent axes for the widget.  onselectfunction
+
+
+A callback function that is called after a release event and the selection is created, changed or removed. It must have the signature: def onselect(eclick: MouseEvent, erelease: MouseEvent)
+ where eclick and erelease are the mouse click and release MouseEvents that start and complete the selection.  minspanxfloat, default: 0
+
+
+Selections with an x-span less than or equal to minspanx are removed (when already existing) or cancelled.  minspanyfloat, default: 0
+
+
+Selections with an y-span less than or equal to minspanx are removed (when already existing) or cancelled.  useblitbool, default: False
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  propsdict, optional
+
+
+Properties with which the ellipse is drawn. See matplotlib.patches.Patch for valid properties. Default: dict(facecolor='red', edgecolor='black', alpha=0.2, fill=True)  spancoords{"data", "pixels"}, default: "data"
+
+
+Whether to interpret minspanx and minspany in data or in pixel coordinates.  buttonMouseButton, list of MouseButton, default: all buttons
+
+
+Button(s) that trigger rectangle selection.  grab_rangefloat, default: 10
+
+
+Distance in pixels within which the interactive tool handles can be activated.  handle_propsdict, optional
+
+
+Properties with which the interactive handles (marker artists) are drawn. See the marker arguments in matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams except for the default value of markeredgecolor which will be the same as the edgecolor property in props.  interactivebool, default: False
+
+
+Whether to draw a set of handles that allow interaction with the widget after it is drawn.  state_modifier_keysdict, optional
+
+
+Keyboard modifiers which affect the widget's behavior. Values amend the defaults.  "move": Move the existing shape, default: no modifier. "clear": Clear the current shape, default: "escape". "square": Make the shape square, default: "shift". "center": Make the initial point the center of the shape, default: "ctrl".  "square" and "center" can be combined.  drag_from_anywherebool, default: False
+
+
+If True, the widget can be moved by clicking anywhere within its bounds.  ignore_event_outsidebool, default: False
+
+
+If True, the event triggered outside the span selector will be ignored.       Examples Rectangle and ellipse selectors   propertydraw_shape[source]
+
+ 
+   classmatplotlib.widgets.Lasso(ax, xy, callback=None, useblit=True)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget Selection curve of an arbitrary shape. The selected path can be used in conjunction with contains_point to select data points from an image. Unlike LassoSelector, this must be initialized with a starting point xy, and the Lasso events are destroyed upon release.  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+xy(float, float)
+
+
+Coordinates of the start of the lasso.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  
+callbackcallable
+
+
+Whenever the lasso is released, the callback function is called and passed the vertices of the selected path.       onmove(event)[source]
+
+   onrelease(event)[source]
+
+ 
+   classmatplotlib.widgets.LassoSelector(ax, onselect=None, useblit=True, props=None, button=None)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Selection curve of an arbitrary shape. For the selector to remain responsive you must keep a reference to it. The selected path can be used in conjunction with contains_point to select data points from an image. In contrast to Lasso, LassoSelector is written with an interface similar to RectangleSelector and SpanSelector, and will continue to interact with the axes until disconnected. Example usage: ax = plt.subplot()
+ax.plot(x, y)
+
+def onselect(verts):
+    print(verts)
+lasso = LassoSelector(ax, onselect)
+  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+onselectfunction
+
+
+Whenever the lasso is released, the onselect function is called and passed the vertices of the selected path.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  
+propsdict, optional
+
+
+Properties with which the line is drawn, see matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams.  
+buttonMouseButton or list of MouseButton, optional
+
+
+The mouse buttons used for rectangle selection. Default is None, which corresponds to all buttons.       onpress(event)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   onrelease(event)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+ 
+   classmatplotlib.widgets.LockDraw[source]
+ 
+Bases: object Some widgets, like the cursor, draw onto the canvas, and this is not desirable under all circumstances, like when the toolbar is in zoom-to-rect mode and drawing a rectangle. To avoid this, a widget can acquire a canvas' lock with canvas.widgetlock(widget) before drawing on the canvas; this will prevent other widgets from doing so at the same time (if they also try to acquire the lock first).   available(o)[source]
+ 
+Return whether drawing is available to o. 
+   isowner(o)[source]
+ 
+Return whether o owns this lock. 
+   locked()[source]
+ 
+Return whether the lock is currently held by an owner. 
+   release(o)[source]
+ 
+Release the lock from o. 
+ 
+   classmatplotlib.widgets.MultiCursor(canvas, axes, useblit=True, horizOn=False, vertOn=True, **lineprops)[source]
+ 
+Bases: matplotlib.widgets.Widget Provide a vertical (default) and/or horizontal line cursor shared between multiple axes. For the cursor to remain responsive you must keep a reference to it.  Parameters 
+ 
+canvasmatplotlib.backend_bases.FigureCanvasBase
+
+
+The FigureCanvas that contains all the axes.  
+axeslist of matplotlib.axes.Axes
+
+
+The Axes to attach the cursor to.  
+useblitbool, default: True
+
+
+Use blitting for faster drawing if supported by the backend.  
+horizOnbool, default: False
+
+
+Whether to draw the horizontal line.  vertOn: bool, default: True
+
+Whether to draw the vertical line.    Other Parameters 
+ **lineprops
+
+Line2D properties that control the appearance of the lines. See also axhline.     Examples See Multicursor.   clear(event)[source]
+ 
+Clear the cursor. 
+   connect()[source]
+ 
+Connect events. 
+   disconnect()[source]
+ 
+Disconnect events. 
+   onmove(event)[source]
+
+ 
+   classmatplotlib.widgets.PolygonSelector(ax, onselect, useblit=False, props=None, handle_props=None, grab_range=10)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Select a polygon region of an axes. Place vertices with each mouse click, and make the selection by completing the polygon (clicking on the first vertex). Once drawn individual vertices can be moved by clicking and dragging with the left mouse button, or removed by clicking the right mouse button. In addition, the following modifier keys can be used:  Hold ctrl and click and drag a vertex to reposition it before the polygon has been completed. Hold the shift key and click and drag anywhere in the axes to move all vertices. Press the esc key to start a new polygon.  For the selector to remain responsive you must keep a reference to it.  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+onselectfunction
+
+
+When a polygon is completed or modified after completion, the onselect function is called and passed a list of the vertices as (xdata, ydata) tuples.  
+useblitbool, default: False
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  
+propsdict, optional
+
+
+Properties with which the line is drawn, see matplotlib.lines.Line2D for valid properties. Default: dict(color='k', linestyle='-', linewidth=2, alpha=0.5)  
+handle_propsdict, optional
+
+
+Artist properties for the markers drawn at the vertices of the polygon. See the marker arguments in matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams except for the default value of markeredgecolor which will be the same as the color property in props.  
+grab_rangefloat, default: 10
+
+
+A vertex is selected (to complete the polygon or to move a vertex) if the mouse click is within grab_range pixels of the vertex.     Notes If only one point remains after removing points, the selector reverts to an incomplete state and you can start drawing a new polygon from the existing point. Examples Polygon Selector   propertyline[source]
+
+   onmove(event)[source]
+ 
+Cursor move event handler and validator. 
+   propertyvertex_select_radius[source]
+
+   propertyverts
+ 
+The polygon vertices, as a list of (x, y) pairs. 
+ 
+   classmatplotlib.widgets.RadioButtons(ax, labels, active=0, activecolor='blue')[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral radio button. For the buttons to remain responsive you must keep a reference to this object. Connect to the RadioButtons with the on_clicked method.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+activecolorcolor
+
+
+The color of the selected button.  
+labelslist of Text
+
+
+The button labels.  
+circleslist of Circle
+
+
+The buttons.  
+value_selectedstr
+
+
+The label text of the currently selected button.     Add radio buttons to an Axes.  Parameters 
+ 
+axAxes
+
+
+The axes to add the buttons to.  
+labelslist of str
+
+
+The button labels.  
+activeint
+
+
+The index of the initially selected button.  
+activecolorcolor
+
+
+The color of the selected button.       propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid. 
+   propertyobservers[source]
+
+   on_clicked(func)[source]
+ 
+Connect the callback function func to button click events. Returns a connection id, which can be used to disconnect the callback. 
+   set_active(index)[source]
+ 
+Select button with number index. Callbacks will be triggered if eventson is True. 
+ 
+   classmatplotlib.widgets.RangeSlider(ax, label, valmin, valmax, valinit=None, valfmt=None, closedmin=True, closedmax=True, dragging=True, valstep=None, orientation='horizontal', track_color='lightgrey', handle_style=None, **kwargs)[source]
+ 
+Bases: matplotlib.widgets.SliderBase A slider representing a range of floating point values. Defines the min and max of the range via the val attribute as a tuple of (min, max). Create a slider that defines a range contained within [valmin, valmax] in axes ax. For the slider to remain responsive you must maintain a reference to it. Call on_changed() to connect to the slider event.  Attributes 
+ 
+valtuple of float
+
+
+Slider value.      Parameters 
+ 
+axAxes
+
+
+The Axes to put the slider in.  
+labelstr
+
+
+Slider label.  
+valminfloat
+
+
+The minimum value of the slider.  
+valmaxfloat
+
+
+The maximum value of the slider.  
+valinittuple of float or None, default: None
+
+
+The initial positions of the slider. If None the initial positions will be at the 25th and 75th percentiles of the range.  
+valfmtstr, default: None
+
+
+%-format string used to format the slider values. If None, a ScalarFormatter is used instead.  
+closedminbool, default: True
+
+
+Whether the slider interval is closed on the bottom.  
+closedmaxbool, default: True
+
+
+Whether the slider interval is closed on the top.  
+draggingbool, default: True
+
+
+If True the slider can be dragged by the mouse.  
+valstepfloat, default: None
+
+
+If given, the slider will snap to multiples of valstep.  
+orientation{'horizontal', 'vertical'}, default: 'horizontal'
+
+
+The orientation of the slider.  
+track_colorcolor, default: 'lightgrey'
+
+
+The color of the background track. The track is accessible for further styling via the track attribute.  
+handle_styledict
+
+
+Properties of the slider handles. Default values are   
+Key Value Default Description   
+facecolor color 'white' The facecolor of the slider handles.  
+edgecolor color '.75' The edgecolor of the slider handles.  
+size int 10 The size of the slider handles in points.   Other values will be transformed as marker{foo} and passed to the Line2D constructor. e.g. handle_style = {'style'='x'} will result in markerstyle = 'x'.     Notes Additional kwargs are passed on to self.poly which is the Polygon that draws the slider knob. See the Polygon documentation for valid property names (facecolor, edgecolor, alpha, etc.).   on_changed(func)[source]
+ 
+Connect func as callback function to changes of the slider value.  Parameters 
+ 
+funccallable
+
+
+Function to call when slider is changed. The function must accept a numpy array with shape (2,) as its argument.    Returns 
+ int
+
+Connection id (which can be used to disconnect func).     
+   set_max(max)[source]
+ 
+Set the lower value of the slider to max.  Parameters 
+ 
+maxfloat
+
+   
+   set_min(min)[source]
+ 
+Set the lower value of the slider to min.  Parameters 
+ 
+minfloat
+
+   
+   set_val(val)[source]
+ 
+Set slider value to val.  Parameters 
+ 
+valtuple or array-like of float
+
+   
+ 
+   classmatplotlib.widgets.RectangleSelector(ax, onselect, drawtype=<deprecated parameter>, minspanx=0, minspany=0, useblit=False, lineprops=<deprecated parameter>, props=None, spancoords='data', button=None, grab_range=10, handle_props=None, interactive=False, state_modifier_keys=None, drag_from_anywhere=False, ignore_event_outside=False)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Select a rectangular region of an axes. For the cursor to remain responsive you must keep a reference to it. Press and release events triggered at the same coordinates outside the selection will clear the selector, except when ignore_event_outside=True.  Parameters 
+ 
+axAxes
+
+ The parent axes for the widget.  onselectfunction
+
+
+A callback function that is called after a release event and the selection is created, changed or removed. It must have the signature: def onselect(eclick: MouseEvent, erelease: MouseEvent)
+ where eclick and erelease are the mouse click and release MouseEvents that start and complete the selection.  minspanxfloat, default: 0
+
+
+Selections with an x-span less than or equal to minspanx are removed (when already existing) or cancelled.  minspanyfloat, default: 0
+
+
+Selections with an y-span less than or equal to minspanx are removed (when already existing) or cancelled.  useblitbool, default: False
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  propsdict, optional
+
+
+Properties with which the rectangle is drawn. See matplotlib.patches.Patch for valid properties. Default: dict(facecolor='red', edgecolor='black', alpha=0.2, fill=True)  spancoords{"data", "pixels"}, default: "data"
+
+
+Whether to interpret minspanx and minspany in data or in pixel coordinates.  buttonMouseButton, list of MouseButton, default: all buttons
+
+
+Button(s) that trigger rectangle selection.  grab_rangefloat, default: 10
+
+
+Distance in pixels within which the interactive tool handles can be activated.  handle_propsdict, optional
+
+
+Properties with which the interactive handles (marker artists) are drawn. See the marker arguments in matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams except for the default value of markeredgecolor which will be the same as the edgecolor property in props.  interactivebool, default: False
+
+
+Whether to draw a set of handles that allow interaction with the widget after it is drawn.  state_modifier_keysdict, optional
+
+
+Keyboard modifiers which affect the widget's behavior. Values amend the defaults.  "move": Move the existing shape, default: no modifier. "clear": Clear the current shape, default: "escape". "square": Make the shape square, default: "shift". "center": Make the initial point the center of the shape, default: "ctrl".  "square" and "center" can be combined.  drag_from_anywherebool, default: False
+
+
+If True, the widget can be moved by clicking anywhere within its bounds.  ignore_event_outsidebool, default: False
+
+
+If True, the event triggered outside the span selector will be ignored.       Examples >>> import matplotlib.pyplot as plt
+>>> import matplotlib.widgets as mwidgets
+>>> fig, ax = plt.subplots()
+>>> ax.plot([1, 2, 3], [10, 50, 100])
+>>> def onselect(eclick, erelease):
+...     print(eclick.xdata, eclick.ydata)
+...     print(erelease.xdata, erelease.ydata)
+>>> props = dict(facecolor='blue', alpha=0.5)
+>>> rect = mwidgets.RectangleSelector(ax, onselect, interactive=True,
+                                      props=props)
+>>> fig.show()
+ See also: Rectangle and ellipse selectors   propertyactive_handle[source]
+
+   propertycenter
+ 
+Center of rectangle. 
+   propertycorners
+ 
+Corners of rectangle from lower left, moving clockwise. 
+   propertydraw_shape[source]
+
+   propertydrawtype[source]
+
+   propertyedge_centers
+ 
+Midpoint of rectangle edges from left, moving anti-clockwise. 
+   propertyextents
+ 
+Return (xmin, xmax, ymin, ymax). 
+   propertygeometry
+ 
+Return an array of shape (2, 5) containing the x (RectangleSelector.geometry[1, :]) and y (RectangleSelector.geometry[0, :]) coordinates of the four corners of the rectangle starting and ending in the top left corner. 
+   propertyinteractive[source]
+
+   propertymaxdist[source]
+
+   propertyto_draw[source]
+
+ 
+   classmatplotlib.widgets.Slider(ax, label, valmin, valmax, valinit=0.5, valfmt=None, closedmin=True, closedmax=True, slidermin=None, slidermax=None, dragging=True, valstep=None, orientation='horizontal', *, initcolor='r', track_color='lightgrey', handle_style=None, **kwargs)[source]
+ 
+Bases: matplotlib.widgets.SliderBase A slider representing a floating point range. Create a slider from valmin to valmax in axes ax. For the slider to remain responsive you must maintain a reference to it. Call on_changed() to connect to the slider event.  Attributes 
+ 
+valfloat
+
+
+Slider value.      Parameters 
+ 
+axAxes
+
+
+The Axes to put the slider in.  
+labelstr
+
+
+Slider label.  
+valminfloat
+
+
+The minimum value of the slider.  
+valmaxfloat
+
+
+The maximum value of the slider.  
+valinitfloat, default: 0.5
+
+
+The slider initial position.  
+valfmtstr, default: None
+
+
+%-format string used to format the slider value. If None, a ScalarFormatter is used instead.  
+closedminbool, default: True
+
+
+Whether the slider interval is closed on the bottom.  
+closedmaxbool, default: True
+
+
+Whether the slider interval is closed on the top.  
+sliderminSlider, default: None
+
+
+Do not allow the current slider to have a value less than the value of the Slider slidermin.  
+slidermaxSlider, default: None
+
+
+Do not allow the current slider to have a value greater than the value of the Slider slidermax.  
+draggingbool, default: True
+
+
+If True the slider can be dragged by the mouse.  
+valstepfloat or array-like, default: None
+
+
+If a float, the slider will snap to multiples of valstep. If an array the slider will snap to the values in the array.  
+orientation{'horizontal', 'vertical'}, default: 'horizontal'
+
+
+The orientation of the slider.  
+initcolorcolor, default: 'r'
+
+
+The color of the line at the valinit position. Set to 'none' for no line.  
+track_colorcolor, default: 'lightgrey'
+
+
+The color of the background track. The track is accessible for further styling via the track attribute.  
+handle_styledict
+
+
+Properties of the slider handle. Default values are   
+Key Value Default Description   
+facecolor color 'white' The facecolor of the slider handle.  
+edgecolor color '.75' The edgecolor of the slider handle.  
+size int 10 The size of the slider handle in points.   Other values will be transformed as marker{foo} and passed to the Line2D constructor. e.g. handle_style = {'style'='x'} will result in markerstyle = 'x'.     Notes Additional kwargs are passed on to self.poly which is the Polygon that draws the slider knob. See the Polygon documentation for valid property names (facecolor, edgecolor, alpha, etc.).   propertycnt[source]
+
+   propertyobservers[source]
+
+   on_changed(func)[source]
+ 
+Connect func as callback function to changes of the slider value.  Parameters 
+ 
+funccallable
+
+
+Function to call when slider is changed. The function must accept a single float as its arguments.    Returns 
+ int
+
+Connection id (which can be used to disconnect func).     
+   set_val(val)[source]
+ 
+Set slider value to val.  Parameters 
+ 
+valfloat
+
+   
+ 
+   classmatplotlib.widgets.SliderBase(ax, orientation, closedmin, closedmax, valmin, valmax, valfmt, dragging, valstep)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget The base class for constructing Slider widgets. Not intended for direct usage. For the slider to remain responsive you must maintain a reference to it.   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid.  Parameters 
+ 
+cidint
+
+
+Connection id of the observer to be removed.     
+   reset()[source]
+ 
+Reset the slider to the initial value. 
+ 
+   classmatplotlib.widgets.SpanSelector(ax, onselect, direction, minspan=0, useblit=False, props=None, onmove_callback=None, interactive=False, button=None, handle_props=None, grab_range=10, drag_from_anywhere=False, ignore_event_outside=False)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Visually select a min/max range on a single axis and call a function with those values. To guarantee that the selector remains responsive, keep a reference to it. In order to turn off the SpanSelector, set span_selector.active to False. To turn it back on, set it to True. Press and release events triggered at the same coordinates outside the selection will clear the selector, except when ignore_event_outside=True.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+onselectcallable
+
+
+A callback function that is called after a release event and the selection is created, changed or removed. It must have the signature: def on_select(min: float, max: float) -> Any
+  
+direction{"horizontal", "vertical"}
+
+
+The direction along which to draw the span selector.  
+minspanfloat, default: 0
+
+
+If selection is less than or equal to minspan, the selection is removed (when already existing) or cancelled.  
+useblitbool, default: False
+
+
+If True, use the backend-dependent blitting features for faster canvas updates.  
+propsdict, optional
+
+
+Dictionary of matplotlib.patches.Patch properties. Default: dict(facecolor='red', alpha=0.5)  
+onmove_callbackfunc(min, max), min/max are floats, default: None
+
+
+Called on mouse move while the span is being selected.  
+span_staysbool, default: False
+
+
+If True, the span stays visible after the mouse is released. Deprecated, use interactive instead.  
+interactivebool, default: False
+
+
+Whether to draw a set of handles that allow interaction with the widget after it is drawn.  
+buttonMouseButton or list of MouseButton, default: all buttons
+
+
+The mouse buttons which activate the span selector.  
+handle_propsdict, default: None
+
+
+Properties of the handle lines at the edges of the span. Only used when interactive is True. See matplotlib.lines.Line2D for valid properties.  
+grab_rangefloat, default: 10
+
+
+Distance in pixels within which the interactive tool handles can be activated.  
+drag_from_anywherebool, default: False
+
+
+If True, the widget can be moved by clicking anywhere within its bounds.  
+ignore_event_outsidebool, default: False
+
+
+If True, the event triggered outside the span selector will be ignored.     Examples >>> import matplotlib.pyplot as plt
+>>> import matplotlib.widgets as mwidgets
+>>> fig, ax = plt.subplots()
+>>> ax.plot([1, 2, 3], [10, 50, 100])
+>>> def onselect(vmin, vmax):
+...     print(vmin, vmax)
+>>> span = mwidgets.SpanSelector(ax, onselect, 'horizontal',
+...                              props=dict(facecolor='blue', alpha=0.5))
+>>> fig.show()
+ See also: Span Selector   propertyactive_handle[source]
+
+   connect_default_events()[source]
+ 
+Connect the major canvas events to methods. 
+   propertydirection
+ 
+Direction of the span selector: 'vertical' or 'horizontal'. 
+   propertyextents
+ 
+Return extents of the span selector. 
+   new_axes(ax)[source]
+ 
+Set SpanSelector to operate on a new Axes. 
+   propertypressv[source]
+
+   propertyprev[source]
+
+   propertyrect[source]
+
+   propertyrectprops[source]
+
+   propertyspan_stays[source]
+
+ 
+   classmatplotlib.widgets.SubplotTool(targetfig, toolfig)[source]
+ 
+Bases: matplotlib.widgets.Widget A tool to adjust the subplot params of a matplotlib.figure.Figure.  Parameters 
+ 
+targetfigFigure
+
+
+The figure instance to adjust.  
+toolfigFigure
+
+
+The figure instance to embed the subplot tool into.     
+   classmatplotlib.widgets.TextBox(ax, label, initial='', color='.95', hovercolor='1', label_pad=0.01, textalignment='left')[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral text input box. For the text box to remain responsive you must keep a reference to it. Call on_text_change to be updated whenever the text changes. Call on_submit to be updated whenever the user hits enter or leaves the text entry field.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+labelText
+
+
+colorcolor
+
+
+The color of the text box when not hovering.  
+hovercolorcolor
+
+
+The color of the text box when hovering.      Parameters 
+ 
+axAxes
+
+
+The Axes instance the button will be placed into.  
+labelstr
+
+
+Label for this text box.  
+initialstr
+
+
+Initial value in the text box.  
+colorcolor
+
+
+The color of the box.  
+hovercolorcolor
+
+
+The color of the box when the mouse is over it.  
+label_padfloat
+
+
+The distance between the label and the right side of the textbox.  
+textalignment{'left', 'center', 'right'}
+
+
+The horizontal location of the text.       propertyDIST_FROM_LEFT[source]
+
+   begin_typing(x)[source]
+
+   propertychange_observers[source]
+
+   propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid. 
+   on_submit(func)[source]
+ 
+When the user hits enter or leaves the submission box, call this func with event. A connection id is returned which can be used to disconnect. 
+   on_text_change(func)[source]
+ 
+When the text changes, call this func with event. A connection id is returned which can be used to disconnect. 
+   position_cursor(x)[source]
+
+   set_val(val)[source]
+
+   stop_typing()[source]
+
+   propertysubmit_observers[source]
+
+   propertytext
+
+ 
+   classmatplotlib.widgets.ToolHandles(ax, x, y, marker='o', marker_props=None, useblit=True)[source]
+ 
+Bases: object Control handles for canvas tools.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+Matplotlib axes where tool handles are displayed.  
+x, y1D arrays
+
+
+Coordinates of control handles.  
+markerstr, default: 'o'
+
+
+Shape of marker used to display handle. See matplotlib.pyplot.plot.  
+marker_propsdict, optional
+
+
+Additional marker properties. See matplotlib.lines.Line2D.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).       propertyartists
+
+   closest(x, y)[source]
+ 
+Return index and pixel distance to closest index. 
+   set_animated(val)[source]
+
+   set_data(pts, y=None)[source]
+ 
+Set x and y positions of handles. 
+   set_visible(val)[source]
+
+   propertyx
+
+   propertyy
+
+ 
+   classmatplotlib.widgets.ToolLineHandles(ax, positions, direction, line_props=None, useblit=True)[source]
+ 
+Bases: object Control handles for canvas tools.  Parameters 
+ 
+axmatplotlib.axes.Axes
+
+
+Matplotlib axes where tool handles are displayed.  
+positions1D array
+
+
+Positions of handles in data coordinates.  
+direction{"horizontal", "vertical"}
+
+
+Direction of handles, either 'vertical' or 'horizontal'  
+line_propsdict, optional
+
+
+Additional line properties. See matplotlib.lines.Line2D.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).       propertyartists
+
+   closest(x, y)[source]
+ 
+Return index and pixel distance to closest handle.  Parameters 
+ 
+x, yfloat
+
+
+x, y position from which the distance will be calculated to determinate the closest handle    Returns 
+ 
+index, distanceindex of the handle and its distance from
+
+
+position x, y     
+   propertydirection
+ 
+Direction of the handle: 'vertical' or 'horizontal'. 
+   propertypositions
+ 
+Positions of the handle in data coordinates. 
+   remove()[source]
+ 
+Remove the handles artist from the figure. 
+   set_animated(value)[source]
+ 
+Set the animated state of the handles artist. 
+   set_data(positions)[source]
+ 
+Set x or y positions of handles, depending if the lines are vertical of horizontal.  Parameters 
+ 
+positionstuple of length 2
+
+
+Set the positions of the handle in data coordinates     
+   set_visible(value)[source]
+ 
+Set the visibility state of the handles artist. 
+ 
+   classmatplotlib.widgets.Widget[source]
+ 
+Bases: object Abstract base class for GUI neutral widgets.   propertyactive
+ 
+Is the widget active? 
+   drawon=True
+
+   eventson=True
+
+   get_active()[source]
+ 
+Get whether the widget is active. 
+   ignore(event)[source]
+ 
+Return whether event should be ignored. This method should be called at the beginning of any event callback. 
+   set_active(active)[source]
+ 
+Set whether the widget is active.

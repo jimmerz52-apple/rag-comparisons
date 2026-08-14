@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessmonthend.__call__
+
+pandas.tseries.offsets.CustomBusinessMonthEnd.__call__   CustomBusinessMonthEnd.__call__(*args, **kwargs)
+ 
+Call self as a function.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.erfinv_
+
+erfinv_() → Tensor  
+In-place version of erfinv()

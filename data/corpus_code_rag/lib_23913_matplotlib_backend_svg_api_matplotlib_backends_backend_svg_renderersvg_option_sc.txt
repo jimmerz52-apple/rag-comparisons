@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.RendererSVG.option_scale_image
+
+option_scale_image()[source]
+ 
+Return whether arbitrary affine transformations in draw_image() are supported (True for most vector backends).

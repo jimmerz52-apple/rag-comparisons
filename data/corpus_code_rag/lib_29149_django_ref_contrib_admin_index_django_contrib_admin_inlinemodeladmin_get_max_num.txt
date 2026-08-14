@@ -1,0 +1,11 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.get_max_num
+
+InlineModelAdmin.get_max_num(request, obj=None, **kwargs)  
+Returns the maximum number of extra inline forms to use. By default, returns the InlineModelAdmin.max_num attribute. Override this method to programmatically determine the maximum number of inline forms. For example, this may be based on the model instance (passed as the keyword argument obj): class BinaryTreeAdmin(admin.TabularInline):
+    model = BinaryTree
+
+    def get_max_num(self, request, obj=None, **kwargs):
+        max_num = 10
+        if obj and obj.parent:
+            return max_num - 5
+        return max_num

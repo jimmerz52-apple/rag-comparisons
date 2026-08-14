@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.error
+
+exception pygame.error 
+ standard pygame exception raise pygame.error(message)  This exception is raised whenever a pygame or SDL operation fails. You can catch any anticipated problems and deal with the error. The exception is always raised with a descriptive message about the problem. Derived from the RuntimeError exception, which can also be used to catch these raised errors.

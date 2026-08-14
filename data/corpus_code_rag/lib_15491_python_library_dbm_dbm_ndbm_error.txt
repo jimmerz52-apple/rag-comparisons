@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.ndbm.error
+
+exception dbm.ndbm.error  
+Raised on dbm.ndbm-specific errors, such as I/O errors. KeyError is raised for general mapping errors like specifying an incorrect key.

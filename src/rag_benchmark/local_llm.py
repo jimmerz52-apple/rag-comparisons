@@ -45,6 +45,8 @@ class TrackedLocalLLM:
             "stream": False,
             "options": {"temperature": temperature},
         }
+        if kwargs.get("num_predict") is not None:
+            payload["options"]["num_predict"] = int(kwargs["num_predict"])
         if kwargs.get("response_format", {}).get("type") == "json_object":
             payload["format"] = "json"
 

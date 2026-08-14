@@ -1,0 +1,20 @@
+# sklearn.modules.generated.sklearn.multioutput.multioutputregressor#sklearn.multioutput.MultiOutputRegressor.fit
+
+fit(X, y, sample_weight=None, **fit_params) [source]
+ 
+Fit the model to data. Fit a separate model for each output variable.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Data.  
+y{array-like, sparse matrix} of shape (n_samples, n_outputs) 
+
+Multi-output targets. An indicator matrix turns on multilabel estimation.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Only supported if the underlying regressor supports sample weights.  
+**fit_paramsdict of string -> object 
+
+Parameters passed to the estimator.fit method of each step.  New in version 0.23.     Returns 
+ 
+selfobject

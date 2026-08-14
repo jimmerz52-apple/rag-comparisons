@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.itertext
+
+itertext()  
+Creates a text iterator. The iterator loops over this element and all subelements, in document order, and returns all inner text.  New in version 3.2.

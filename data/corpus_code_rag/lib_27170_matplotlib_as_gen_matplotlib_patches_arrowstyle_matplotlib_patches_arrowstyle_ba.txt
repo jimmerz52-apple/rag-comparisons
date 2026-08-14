@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.patches.arrowstyle#matplotlib.patches.ArrowStyle.BarAB
+
+classBarAB(widthA=1.0, angleA=0, widthB=1.0, angleB=0)[source]
+ 
+Bases: matplotlib.patches.ArrowStyle._Curve An arrow with vertical bars | at both ends.  Parameters 
+ 
+widthA, widthBfloat, default: 1.0
+
+
+Width of the bracket.  
+angleA, angleBfloat, default: 0 degrees
+
+
+Orientation of the bracket, as a counterclockwise angle. 0 degrees means perpendicular to the line.       arrow='|-|'

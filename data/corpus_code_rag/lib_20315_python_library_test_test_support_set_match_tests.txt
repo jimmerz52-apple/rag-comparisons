@@ -1,0 +1,4 @@
+# python.library.test#test.support.set_match_tests
+
+test.support.set_match_tests(patterns)  
+Define match test with regular expression patterns.

@@ -1,0 +1,19 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.CreateView
+
+class django.views.generic.edit.CreateView  
+A view that displays a form for creating an object, redisplaying the form with validation errors (if there are any) and saving the object. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.detail.SingleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.edit.BaseCreateView django.views.generic.edit.ModelFormMixin django.views.generic.edit.FormMixin django.views.generic.detail.SingleObjectMixin django.views.generic.edit.ProcessFormView django.views.generic.base.View  Attributes  
+template_name_suffix  
+The CreateView page displayed to a GET request uses a template_name_suffix of '_form'. For example, changing this attribute to '_create_form' for a view creating objects for the example Author model would cause the default template_name to be 'myapp/author_create_form.html'. 
+  
+object  
+When using CreateView you have access to self.object, which is the object being created. If the object hasn’t been created yet, the value will be None. 
+ Example myapp/views.py: from django.views.generic.edit import CreateView
+from myapp.models import Author
+
+class AuthorCreateView(CreateView):
+    model = Author
+    fields = ['name']
+ Example myapp/author_form.html: <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+</form>

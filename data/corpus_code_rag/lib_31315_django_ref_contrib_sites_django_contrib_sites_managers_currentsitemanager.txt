@@ -1,0 +1,3 @@
+# django.ref.contrib.sites#django.contrib.sites.managers.CurrentSiteManager
+
+class managers.CurrentSiteManager

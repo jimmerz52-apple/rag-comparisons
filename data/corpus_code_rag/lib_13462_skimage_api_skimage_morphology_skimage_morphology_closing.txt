@@ -1,0 +1,32 @@
+# skimage.api.skimage.morphology#skimage.morphology.closing
+
+skimage.morphology.closing(image, selem=None, out=None) [source]
+ 
+Return greyscale morphological closing of an image. The morphological closing on an image is defined as a dilation followed by an erosion. Closing can remove small dark spots (i.e. “pepper”) and connect small bright cracks. This tends to “close” up (dark) gaps between (bright) features.  Parameters 
+ 
+imagendarray 
+
+Image array.  
+selemndarray, optional 
+
+The neighborhood expressed as an array of 1’s and 0’s. If None, use cross-shaped structuring element (connectivity=1).  
+outndarray, optional 
+
+The array to store the result of the morphology. If None, is passed, a new array will be allocated.    Returns 
+ 
+closingarray, same shape and type as image 
+
+The result of the morphological closing.     Examples >>> # Close a gap between two bright lines
+>>> import numpy as np
+>>> from skimage.morphology import square
+>>> broken_line = np.array([[0, 0, 0, 0, 0],
+...                         [0, 0, 0, 0, 0],
+...                         [1, 1, 0, 1, 1],
+...                         [0, 0, 0, 0, 0],
+...                         [0, 0, 0, 0, 0]], dtype=np.uint8)
+>>> closing(broken_line, square(3))
+array([[0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0]], dtype=uint8)

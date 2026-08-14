@@ -1,0 +1,19 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolPan
+
+classmatplotlib.backend_tools.ToolPan(*args)[source]
+ 
+Bases: matplotlib.backend_tools.ZoomPanBase Pan axes with left mouse, zoom with right.   cursor=4[source]
+ 
+Cursor to use when the tool is active. 
+   default_keymap=['p']
+ 
+Keymap to associate with this tool. list[str]: List of keys that will trigger this tool when a keypress event is emitted on self.figure.canvas. 
+   description='Pan axes with left mouse, zoom with right'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   image='move'
+ 
+Filename of the image. str: Filename of the image to use in a Toolbar. If None, the name is used as a label in the toolbar button. 
+   radio_group='default'
+ 
+Attribute to group 'radio' like tools (mutually exclusive). str that identifies the group or None if not belonging to a group.

@@ -1,0 +1,6 @@
+# 959
+Task: 959
+
+# Write a python function to find the average of a list.
+def Average(lst): 
+    return sum(lst) / len(lst)

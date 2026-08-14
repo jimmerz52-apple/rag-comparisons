@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.SpinesProxy
+
+classmatplotlib.spines.SpinesProxy(spine_dict)[source]
+ 
+Bases: object A proxy to broadcast set_* method calls to all contained Spines. The proxy cannot be used for any other operations on its members. The supported methods are determined dynamically based on the contained spines. If not all spines support a given method, it's executed only on the subset of spines that support it.

@@ -1,0 +1,11 @@
+# torch.distributed#torch.distributed.reduce_scatter
+
+torch.distributed.reduce_scatter(output, input_list, op=<ReduceOp.SUM: 0>, group=None, async_op=False) [source]
+ 
+Reduces, then scatters a list of tensors to all processes in a group.  Parameters 
+ 
+output (Tensor) – Output tensor. 
+input_list (list[Tensor]) – List of tensors to reduce and scatter. 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+async_op (bool, optional) – Whether this op should be an async op.   Returns 
+Async work handle, if async_op is set to True. None, if not async_op or if not part of the group.

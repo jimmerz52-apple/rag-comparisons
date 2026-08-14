@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTP.has_extn
+
+SMTP.has_extn(name)  
+Return True if name is in the set of SMTP service extensions returned by the server, False otherwise. Case is ignored.

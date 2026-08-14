@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.quadraticdiscriminantanalysis#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Return log of posterior probabilities of classification.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Array of samples/test vectors.    Returns 
+ 
+Cndarray of shape (n_samples, n_classes) 
+
+Posterior log-probabilities of classification per class.

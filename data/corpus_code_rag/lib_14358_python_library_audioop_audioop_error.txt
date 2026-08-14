@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.error
+
+exception audioop.error  
+This exception is raised on all errors, such as unknown number of bytes per sample, etc.

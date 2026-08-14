@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_QWORD_LITTLE_ENDIAN
+
+winreg.REG_QWORD_LITTLE_ENDIAN  
+A 64-bit number in little-endian format. Equivalent to REG_QWORD.  New in version 3.6.

@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.patch3dcollection#mpl_toolkits.mplot3d.art3d.Patch3DCollection.get_facecolor
+
+get_facecolor()[source]

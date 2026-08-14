@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.DecimalRangeField
+
+class DecimalRangeField(**options)  
+Stores a range of floating point values. Based on a DecimalField. Represented by a numrange in the database and a NumericRange in Python.

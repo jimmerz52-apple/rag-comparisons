@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_SET_VALUE
+
+winreg.KEY_SET_VALUE  
+Required to create, delete, or set a registry value.

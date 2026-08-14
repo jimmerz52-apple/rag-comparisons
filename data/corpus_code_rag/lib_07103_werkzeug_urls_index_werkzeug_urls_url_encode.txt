@@ -1,0 +1,12 @@
+# werkzeug.urls.index#werkzeug.urls.url_encode
+
+werkzeug.urls.url_encode(obj, charset='utf-8', encode_keys=None, sort=False, key=None, separator='&')  
+URL encode a dict/MultiDict. If a value is None it will not appear in the result string. Per default only values are encoded into the target charset strings.  Parameters 
+ 
+obj (Union[Mapping[str, str], Iterable[Tuple[str, str]]]) – the object to encode into a query string. 
+charset (str) – the charset of the query string. 
+sort (bool) – set to True if you want parameters to be sorted by key. 
+separator (str) – the separator to be used for the pairs. 
+key (Optional[Callable[[Tuple[str, str]], Any]]) – an optional function to be used for sorting. For more details check out the sorted() documentation. 
+encode_keys (None) –    Return type 
+str    Changed in version 2.0: The encode_keys parameter is deprecated and will be removed in Werkzeug 2.1.   Changelog Changed in version 0.5: Added the sort, key, and separator parameters.

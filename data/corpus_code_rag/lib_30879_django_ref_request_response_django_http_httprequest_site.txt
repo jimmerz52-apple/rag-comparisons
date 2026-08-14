@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.site
+
+HttpRequest.site  
+From the CurrentSiteMiddleware: An instance of Site or RequestSite as returned by get_current_site() representing the current site.

@@ -1,0 +1,20 @@
+# skimage.api.skimage.draw#skimage.draw.polygon2mask
+
+skimage.draw.polygon2mask(image_shape, polygon) [source]
+ 
+Compute a mask from polygon.  Parameters 
+ 
+image_shapetuple of size 2. 
+
+The shape of the mask.  
+polygonarray_like. 
+
+The polygon coordinates of shape (N, 2) where N is the number of points.    Returns 
+ 
+mask2-D ndarray of type ‘bool’. 
+
+The mask that corresponds to the input polygon.     Notes This function does not do any border checking, so that all the vertices need to be within the given shape. Examples >>> image_shape = (128, 128)
+>>> polygon = np.array([[60, 100], [100, 40], [40, 40]])
+>>> mask = polygon2mask(image_shape, polygon)
+>>> mask.shape
+(128, 128)

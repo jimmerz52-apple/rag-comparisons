@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.parasiteaxesbase#mpl_toolkits.axes_grid1.parasite_axes.ParasiteAxesBase.set_viewlim_mode
+
+set_viewlim_mode(mode)[source]

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__itruediv__
+
+numpy.ndarray.__itruediv__ method   ndarray.__itruediv__(value, /)
+ 
+Return self/=value.

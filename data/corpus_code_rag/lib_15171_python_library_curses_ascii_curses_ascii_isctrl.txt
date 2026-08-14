@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isctrl
+
+curses.ascii.isctrl(c)  
+Checks for an ASCII control character (ordinal values 0 to 31).

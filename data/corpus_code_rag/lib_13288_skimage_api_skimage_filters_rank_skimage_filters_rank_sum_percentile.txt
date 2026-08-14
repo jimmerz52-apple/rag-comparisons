@@ -1,0 +1,28 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.sum_percentile
+
+skimage.filters.rank.sum_percentile(image, selem, out=None, mask=None, shift_x=False, shift_y=False, p0=0, p1=1) [source]
+ 
+Return the local sum of pixels. Only greyvalues between percentiles [p0, p1] are considered in the filter. Note that the sum may overflow depending on the data type of the input array.  Parameters 
+ 
+image2-D array (uint8, uint16) 
+
+Input image.  
+selem2-D array 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s.  
+out2-D array (same dtype as input) 
+
+If None, a new array is allocated.  
+maskndarray 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_yint 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).  
+p0, p1float in [0, …, 1] 
+
+Define the [p0, p1] percentile interval to be considered for computing the value.    Returns 
+ 
+out2-D array (same dtype as input image) 
+
+Output image.

@@ -1,0 +1,35 @@
+# matplotlib.transformations#matplotlib.transforms.TransformWrapper
+
+classmatplotlib.transforms.TransformWrapper(child)[source]
+ 
+Bases: matplotlib.transforms.Transform A helper class that holds a single child transform and acts equivalently to it. This is useful if a node of the transform tree must be replaced at run time with a transform of a different type. This class allows that replacement to correctly trigger invalidation. TransformWrapper instances must have the same input and output dimensions during their entire lifetime, so the child transform may only be replaced with another child transform of the same dimensions. child: A Transform instance. This child may later be replaced with set().   __eq__(other)[source]
+ 
+Return self==value. 
+   __hash__=None
+
+   __init__(child)[source]
+ 
+child: A Transform instance. This child may later be replaced with set(). 
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   frozen()[source]
+ 
+Return a frozen copy of this transform node. The frozen copy will not be updated when its children change. Useful for storing a previously known state of a transform where copy.deepcopy() might normally be used. 
+   propertyhas_inverse
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   propertyis_affine
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   propertyis_separable
+ 
+bool(x) -> bool Returns True when the argument x is true, False otherwise. The builtins True and False are the only two instances of the class bool. The class bool is a subclass of the class int, and cannot be subclassed. 
+   pass_through=True
+ 
+If pass_through is True, all ancestors will always be invalidated, even if 'self' is already invalid. 
+   set(child)[source]
+ 
+Replace the current child of this transform with another one. The new child must have the same number of input and output dimensions as the current child.

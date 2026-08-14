@@ -1,0 +1,15 @@
+# django.ref.models.lookups#django.db.models.Transform
+
+class Transform  
+A Transform is a generic class to implement field transformations. A prominent example is __year that transforms a DateField into a IntegerField. The notation to use a Transform in a lookup expression is <expression>__<transformation> (e.g. date__year). This class follows the Query Expression API, which implies that you can use <expression>__<transform1>__<transform2>. It’s a specialized Func() expression that only accepts one argument. It can also be used on the right hand side of a filter or directly as an annotation.  
+bilateral  
+A boolean indicating whether this transformation should apply to both lhs and rhs. Bilateral transformations will be applied to rhs in the same order as they appear in the lookup expression. By default it is set to False. For example usage, see How to write custom lookups. 
+  
+lhs  
+The left-hand side - what is being transformed. It must follow the Query Expression API. 
+  
+lookup_name  
+The name of the lookup, used for identifying it on parsing query expressions. It cannot contain the string "__". 
+  
+output_field  
+Defines the class this transformation outputs. It must be a Field instance. By default is the same as its lhs.output_field.

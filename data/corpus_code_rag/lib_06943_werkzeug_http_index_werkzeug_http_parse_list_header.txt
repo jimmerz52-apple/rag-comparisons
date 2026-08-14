@@ -1,0 +1,9 @@
+# werkzeug.http.index#werkzeug.http.parse_list_header
+
+werkzeug.http.parse_list_header(value)  
+Parse lists as described by RFC 2068 Section 2. In particular, parse comma-separated lists where the elements of the list may include quoted-strings. A quoted-string could contain a comma. A non-quoted string could have quotes in the middle. Quotes are removed automatically after parsing. It basically works like parse_set_header() just that items may appear multiple times and case sensitivity is preserved. The return value is a standard list: >>> parse_list_header('token, "quoted value"')
+['token', 'quoted value']
+ To create a header from the list again, use the dump_header() function.  Parameters 
+value (str) – a string with a list header.  Returns 
+list  Return type 
+List[str]

@@ -1,0 +1,5 @@
+# python.library.codecs#codecs.CodecInfo.streamwriter
+
+streamwriter  
+streamreader  
+Stream writer and reader classes or factory functions. These have to provide the interface defined by the base classes StreamWriter and StreamReader, respectively. Stream codecs can maintain state.

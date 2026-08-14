@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.to_integral_exact
+
+to_integral_exact(x)  
+Rounds to an integer.

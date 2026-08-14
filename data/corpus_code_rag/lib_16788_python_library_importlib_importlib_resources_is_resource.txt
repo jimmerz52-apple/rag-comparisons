@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.is_resource
+
+importlib.resources.is_resource(package, name)  
+Return True if there is a resource named name in the package, otherwise False. Remember that directories are not resources! package is either a name or a module object which conforms to the Package requirements.

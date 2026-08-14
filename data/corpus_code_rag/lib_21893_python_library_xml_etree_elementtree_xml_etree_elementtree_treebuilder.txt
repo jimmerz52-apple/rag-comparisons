@@ -1,0 +1,30 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder
+
+class xml.etree.ElementTree.TreeBuilder(element_factory=None, *, comment_factory=None, pi_factory=None, insert_comments=False, insert_pis=False)  
+Generic element structure builder. This builder converts a sequence of start, data, end, comment and pi method calls to a well-formed element structure. You can use this class to build an element structure using a custom XML parser, or a parser for some other XML-like format. element_factory, when given, must be a callable accepting two positional arguments: a tag and a dict of attributes. It is expected to return a new element instance. The comment_factory and pi_factory functions, when given, should behave like the Comment() and ProcessingInstruction() functions to create comments and processing instructions. When not given, the default factories will be used. When insert_comments and/or insert_pis is true, comments/pis will be inserted into the tree if they appear within the root element (but not outside of it).  
+close()  
+Flushes the builder buffers, and returns the toplevel document element. Returns an Element instance. 
+  
+data(data)  
+Adds text to the current element. data is a string. This should be either a bytestring, or a Unicode string. 
+  
+end(tag)  
+Closes the current element. tag is the element name. Returns the closed element. 
+  
+start(tag, attrs)  
+Opens a new element. tag is the element name. attrs is a dictionary containing element attributes. Returns the opened element. 
+  
+comment(text)  
+Creates a comment with the given text. If insert_comments is true, this will also add it to the tree.  New in version 3.8.  
+  
+pi(target, text)  
+Creates a comment with the given target name and text. If insert_pis is true, this will also add it to the tree.  New in version 3.8.  
+ In addition, a custom TreeBuilder object can provide the following methods:  
+doctype(name, pubid, system)  
+Handles a doctype declaration. name is the doctype name. pubid is the public identifier. system is the system identifier. This method does not exist on the default TreeBuilder class.  New in version 3.2.  
+  
+start_ns(prefix, uri)  
+Is called whenever the parser encounters a new namespace declaration, before the start() callback for the opening element that defines it. prefix is '' for the default namespace and the declared namespace prefix name otherwise. uri is the namespace URI.  New in version 3.8.  
+  
+end_ns(prefix)  
+Is called after the end() callback of an element that declared a namespace prefix mapping, with the name of the prefix that went out of scope.  New in version 3.8.

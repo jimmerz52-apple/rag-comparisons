@@ -1,0 +1,40 @@
+# matplotlib._api_api#matplotlib._api.deprecation.warn_deprecated
+
+matplotlib._api.deprecation.warn_deprecated(since, *, message='', name='', alternative='', pending=False, obj_type='', addendum='', removal='')[source]
+ 
+Display a standardized deprecation.  Parameters 
+ 
+sincestr
+
+
+The release at which this API became deprecated.  
+messagestr, optional
+
+
+Override the default deprecation message. The %(since)s, %(name)s, %(alternative)s, %(obj_type)s, %(addendum)s, and %(removal)s format specifiers will be replaced by the values of the respective arguments passed to this function.  
+namestr, optional
+
+
+The name of the deprecated object.  
+alternativestr, optional
+
+
+An alternative API that the user may use in place of the deprecated API. The deprecation warning will tell the user about this alternative if provided.  
+pendingbool, optional
+
+
+If True, uses a PendingDeprecationWarning instead of a DeprecationWarning. Cannot be used together with removal.  
+obj_typestr, optional
+
+
+The object type being deprecated.  
+addendumstr, optional
+
+
+Additional text appended directly to the final message.  
+removalstr, optional
+
+
+The expected removal version. With the default (an empty string), a removal version is automatically computed from since. Set to other Falsy values to not schedule a removal date. Cannot be used together with pending.     Examples # To warn of the deprecation of "matplotlib.name_of_module"
+warn_deprecated('1.4.0', name='matplotlib.name_of_module',
+                obj_type='module')

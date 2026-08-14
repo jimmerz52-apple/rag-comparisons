@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.DecimalField.max_digits
+
+DecimalField.max_digits  
+The maximum number of digits allowed in the number. Note that this number must be greater than or equal to decimal_places.

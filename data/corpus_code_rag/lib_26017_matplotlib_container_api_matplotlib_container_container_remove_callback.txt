@@ -1,0 +1,5 @@
+# matplotlib.container_api#matplotlib.container.Container.remove_callback
+
+remove_callback(oid)[source]
+ 
+Remove a callback based on its observer id.  See also  add_callback

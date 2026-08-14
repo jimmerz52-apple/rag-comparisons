@@ -1,0 +1,6 @@
+# python.library.datetime#datetime.datetime.timestamp
+
+datetime.timestamp()  
+Return POSIX timestamp corresponding to the datetime instance. The return value is a float similar to that returned by time.time(). Naive datetime instances are assumed to represent local time and this method relies on the platform C mktime() function to perform the conversion. Since datetime supports wider range of values than mktime() on many platforms, this method may raise OverflowError for times far in the past or far in the future. For aware datetime instances, the return value is computed as: (dt - datetime(1970, 1, 1, tzinfo=timezone.utc)).total_seconds()
+  New in version 3.3.   Changed in version 3.6: The timestamp() method uses the fold attribute to disambiguate the times during a repeated interval.   Note There is no method to obtain the POSIX timestamp directly from a naive datetime instance representing UTC time. If your application uses this convention and your system timezone is not set to UTC, you can obtain the POSIX timestamp by supplying tzinfo=timezone.utc: timestamp = dt.replace(tzinfo=timezone.utc).timestamp()
+ or by calculating the timestamp directly: timestamp = (dt - datetime(1970, 1, 1)) / timedelta(seconds=1)

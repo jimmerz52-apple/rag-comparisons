@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOBase.detach
+
+detach()  
+Separate the underlying binary buffer from the TextIOBase and return it. After the underlying buffer has been detached, the TextIOBase is in an unusable state. Some TextIOBase implementations, like StringIO, may not have the concept of an underlying buffer and calling this method will raise UnsupportedOperation.  New in version 3.1.

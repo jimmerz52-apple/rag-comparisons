@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.model_selection.halvinggridsearchcv#sklearn.model_selection.HalvingGridSearchCV.decision_function
+
+decision_function(X) [source]
+ 
+Call decision_function on the estimator with the best found parameters. Only available if refit=True and the underlying estimator supports decision_function.  Parameters 
+ 
+Xindexable, length n_samples 
+
+Must fulfill the input assumptions of the underlying estimator.

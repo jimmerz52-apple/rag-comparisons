@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.NodeList.item
+
+NodeList.item(i)  
+Return the i’th item from the sequence, if there is one, or None. The index i is not allowed to be less than zero or greater than or equal to the length of the sequence.

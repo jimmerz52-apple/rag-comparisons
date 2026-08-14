@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.ProhibitNullCharactersValidator.code
+
+code  
+The error code used by ValidationError if validation fails. Defaults to "null_characters_not_allowed".

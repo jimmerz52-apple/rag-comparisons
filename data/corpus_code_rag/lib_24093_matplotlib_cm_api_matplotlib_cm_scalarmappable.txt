@@ -1,0 +1,77 @@
+# matplotlib.cm_api#matplotlib.cm.ScalarMappable
+
+classmatplotlib.cm.ScalarMappable(norm=None, cmap=None)[source]
+ 
+Bases: object A mixin class to map scalar data to RGBA. The ScalarMappable applies data normalization before returning RGBA colors from the given colormap.  Parameters 
+ 
+normmatplotlib.colors.Normalize (or subclass thereof)
+
+
+The normalizing object which scales data, typically into the interval [0, 1]. If None, norm defaults to a colors.Normalize object which initializes its scaling based on the first data processed.  
+cmapstr or Colormap
+
+
+The colormap used to map normalized data values to RGBA colors.       autoscale()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array 
+   autoscale_None()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array, changing only limits that are None 
+   propertycallbacksSM[source]
+
+   changed()[source]
+ 
+Call this whenever the mappable is changed to notify all the callbackSM listeners to the 'changed' signal. 
+   colorbar
+ 
+The last colorbar associated with this ScalarMappable. May be None. 
+   get_alpha()[source]
+ 
+ Returns 
+ float
+
+Always returns 1.     
+   get_array()[source]
+ 
+Return the array of values, that are mapped to colors. The base class ScalarMappable does not make any assumptions on the dimensionality and shape of the array. 
+   get_clim()[source]
+ 
+Return the values (min, max) that are mapped to the colormap limits. 
+   get_cmap()[source]
+ 
+Return the Colormap instance. 
+   propertynorm
+
+   set_array(A)[source]
+ 
+Set the value array from array-like A.  Parameters 
+ 
+Aarray-like or None
+
+
+The values that are mapped to colors. The base class ScalarMappable does not make any assumptions on the dimensionality and shape of the value array A.     
+   set_clim(vmin=None, vmax=None)[source]
+ 
+Set the norm limits for image scaling.  Parameters 
+ 
+vmin, vmaxfloat
+
+
+The limits. The limits may also be passed as a tuple (vmin, vmax) as a single positional argument.     
+   set_cmap(cmap)[source]
+ 
+Set the colormap for luminance data.  Parameters 
+ 
+cmapColormap or str or None
+
+   
+   set_norm(norm)[source]
+ 
+Set the normalization instance.  Parameters 
+ 
+normNormalize or None
+
+   Notes If there are any colorbars using the mappable for this norm, setting the norm of the mappable will reset the norm, locator, and formatters on the colorbar to default. 
+   to_rgba(x, alpha=None, bytes=False, norm=True)[source]
+ 
+Return a normalized rgba array corresponding to x. In the normal case, x is a 1D or 2D sequence of scalars, and the corresponding ndarray of rgba values will be returned, based on the norm and colormap set for this ScalarMappable. There is one special case, for handling images that are already rgb or rgba, such as might have been read from an image file. If x is an ndarray with 3 dimensions, and the last dimension is either 3 or 4, then it will be treated as an rgb or rgba array, and no mapping will be done. The array can be uint8, or it can be floating point with values in the 0-1 range; otherwise a ValueError will be raised. If it is a masked array, the mask will be ignored. If the last dimension is 3, the alpha kwarg (defaulting to 1) will be used to fill in the transparency. If the last dimension is 4, the alpha kwarg is ignored; it does not replace the pre-existing alpha. A ValueError will be raised if the third dimension is other than 3 or 4. In either case, if bytes is False (default), the rgba array will be floats in the 0-1 range; if it is True, the returned rgba array will be uint8 in the 0 to 255 range. If norm is False, no normalization of the input data is performed, and it is assumed to be in the range (0-1).

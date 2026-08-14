@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.make_compound_path
+
+classmethodmake_compound_path(*args)[source]
+ 
+Make a compound path from a list of Path objects. Blindly removes all Path.STOP control points.

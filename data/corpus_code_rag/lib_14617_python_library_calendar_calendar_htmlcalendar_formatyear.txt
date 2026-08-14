@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.HTMLCalendar.formatyear
+
+formatyear(theyear, width=3)  
+Return a year’s calendar as an HTML table. width (defaulting to 3) specifies the number of months per row.

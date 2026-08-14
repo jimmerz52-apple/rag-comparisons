@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.MemoryHandler.close
+
+close()  
+Calls flush(), sets the target to None and clears the buffer.

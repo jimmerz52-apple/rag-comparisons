@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.RendererBase.new_gc
+
+new_gc()[source]
+ 
+Return an instance of a GraphicsContextBase.

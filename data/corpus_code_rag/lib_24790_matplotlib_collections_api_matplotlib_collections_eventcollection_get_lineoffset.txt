@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_lineoffset
+
+get_lineoffset()[source]
+ 
+Return the offset of the lines used to mark each event.

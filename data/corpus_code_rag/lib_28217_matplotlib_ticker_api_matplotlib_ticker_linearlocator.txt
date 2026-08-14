@@ -1,0 +1,19 @@
+# matplotlib.ticker_api#matplotlib.ticker.LinearLocator
+
+classmatplotlib.ticker.LinearLocator(numticks=None, presets=None)[source]
+ 
+Bases: matplotlib.ticker.Locator Determine the tick locations The first time this function is called it will try to set the number of ticks to make a nice tick partitioning. Thereafter the number of ticks will be fixed so that interactive navigation will be nice Use presets to set locs based on lom. A dict mapping vmin, vmax->locs   propertynumticks
+
+   set_params(numticks=None, presets=None)[source]
+ 
+Set parameters within this locator. 
+   tick_values(vmin, vmax)[source]
+ 
+Return the values of the located ticks given vmin and vmax.  Note To get tick locations with the vmin and vmax values defined automatically for the associated axis simply call the Locator instance: >>> print(type(loc))
+<type 'Locator'>
+>>> print(loc())
+[1, 2, 3, 4]
+  
+   view_limits(vmin, vmax)[source]
+ 
+Try to choose the view limits intelligently.

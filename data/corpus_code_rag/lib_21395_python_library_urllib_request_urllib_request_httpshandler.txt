@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPSHandler
+
+class urllib.request.HTTPSHandler(debuglevel=0, context=None, check_hostname=None)  
+A class to handle opening of HTTPS URLs. context and check_hostname have the same meaning as in http.client.HTTPSConnection.  Changed in version 3.2: context and check_hostname were added.

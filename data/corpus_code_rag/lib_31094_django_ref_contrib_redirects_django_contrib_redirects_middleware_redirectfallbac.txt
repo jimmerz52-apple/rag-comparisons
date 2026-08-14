@@ -1,0 +1,4 @@
+# django.ref.contrib.redirects#django.contrib.redirects.middleware.RedirectFallbackMiddleware.response_redirect_class
+
+response_redirect_class  
+The HttpResponse class that handles the redirect. Defaults to HttpResponsePermanentRedirect.

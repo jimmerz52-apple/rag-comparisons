@@ -1,0 +1,4 @@
+# python.library.termios#termios.tcflush
+
+termios.tcflush(fd, queue)  
+Discard queued data on file descriptor fd. The queue selector specifies which queue: TCIFLUSH for the input queue, TCOFLUSH for the output queue, or TCIOFLUSH for both queues.

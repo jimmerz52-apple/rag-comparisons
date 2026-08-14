@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.setErrorHandler
+
+XMLReader.setErrorHandler(handler)  
+Set the current error handler. If no ErrorHandler is set, errors will be raised as exceptions, and warnings will be printed.

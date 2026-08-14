@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.apps.ready
+
+apps.ready  
+Boolean attribute that is set to True after the registry is fully populated and all AppConfig.ready() methods are called.

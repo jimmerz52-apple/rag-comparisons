@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.parameterdict#torch.nn.ParameterDict.values
+
+values() [source]
+ 
+Return an iterable of the ParameterDict values.

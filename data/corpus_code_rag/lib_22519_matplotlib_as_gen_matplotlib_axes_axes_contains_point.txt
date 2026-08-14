@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.contains_point
+
+matplotlib.axes.Axes.contains_point   Axes.contains_point(point)[source]
+ 
+Return whether point (pair of pixel coordinates) is inside the axes patch.

@@ -1,0 +1,4 @@
+# python.library.time#time.gmtime
+
+time.gmtime([secs])  
+Convert a time expressed in seconds since the epoch to a struct_time in UTC in which the dst flag is always zero. If secs is not provided or None, the current time as returned by time() is used. Fractions of a second are ignored. See above for a description of the struct_time object. See calendar.timegm() for the inverse of this function.

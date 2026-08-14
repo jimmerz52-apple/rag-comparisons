@@ -1,0 +1,14 @@
+# django.ref.templates.api#django.template.loaders.locmem.Loader
+
+class locmem.Loader  
+Loads templates from a Python dictionary. This is useful for testing. This loader takes a dictionary of templates as its first argument: TEMPLATES = [{
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'OPTIONS': {
+        'loaders': [
+            ('django.template.loaders.locmem.Loader', {
+                'index.html': 'content here',
+            }),
+        ],
+    },
+}]
+ This loader is disabled by default.

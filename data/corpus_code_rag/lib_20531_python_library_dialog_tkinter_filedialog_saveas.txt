@@ -1,0 +1,5 @@
+# python.library.dialog#tkinter.filedialog.SaveAs
+
+class tkinter.filedialog.Open(master=None, **options)  
+class tkinter.filedialog.SaveAs(master=None, **options)  
+The above two classes provide native dialog windows for saving and loading files.

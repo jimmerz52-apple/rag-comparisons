@@ -1,0 +1,5 @@
+# matplotlib.textpath_api#matplotlib.textpath.TextToPath.get_glyphs_mathtext
+
+get_glyphs_mathtext(prop, s, glyph_map=None, return_new_glyphs_only=False)[source]
+ 
+Parse mathtext string s and convert it to a (vertices, codes) pair.

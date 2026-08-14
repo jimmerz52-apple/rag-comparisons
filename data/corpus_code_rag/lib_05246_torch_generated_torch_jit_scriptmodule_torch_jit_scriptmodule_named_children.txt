@@ -1,0 +1,7 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.named_children
+
+named_children()  
+Returns an iterator over immediate children modules, yielding both the name of the module as well as the module itself.  Yields 
+(string, Module) – Tuple containing a name and child module   Example: >>> for name, module in model.named_children():
+>>>     if name in ['conv4', 'conv5']:
+>>>         print(module)

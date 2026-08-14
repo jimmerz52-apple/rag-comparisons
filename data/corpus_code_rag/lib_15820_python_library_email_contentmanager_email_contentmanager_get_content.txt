@@ -1,0 +1,4 @@
+# python.library.email.contentmanager#email.contentmanager.get_content
+
+email.contentmanager.get_content(msg, errors='replace')  
+Return the payload of the part as either a string (for text parts), an EmailMessage object (for message/rfc822 parts), or a bytes object (for all other non-multipart types). Raise a KeyError if called on a multipart. If the part is a text part and errors is specified, use it as the error handler when decoding the payload to unicode. The default error handler is replace.

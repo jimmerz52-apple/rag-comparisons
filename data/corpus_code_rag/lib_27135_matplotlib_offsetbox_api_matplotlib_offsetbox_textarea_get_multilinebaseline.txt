@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea.get_multilinebaseline
+
+get_multilinebaseline()[source]
+ 
+Get multilinebaseline.

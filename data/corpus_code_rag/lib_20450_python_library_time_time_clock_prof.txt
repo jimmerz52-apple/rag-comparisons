@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_PROF
+
+time.CLOCK_PROF  
+High-resolution per-process timer from the CPU. Availability: FreeBSD, NetBSD 7 or later, OpenBSD.  New in version 3.7.

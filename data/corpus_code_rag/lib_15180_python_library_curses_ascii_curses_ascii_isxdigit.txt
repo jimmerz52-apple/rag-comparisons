@@ -1,0 +1,5 @@
+# python.library.curses.ascii#curses.ascii.isxdigit
+
+curses.ascii.isxdigit(c)  
+Checks for an ASCII hexadecimal digit. This is equivalent to c in
+string.hexdigits.

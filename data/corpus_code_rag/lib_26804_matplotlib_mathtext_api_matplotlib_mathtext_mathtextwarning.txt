@@ -1,0 +1,5 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathTextWarning
+
+exceptionmatplotlib.mathtext.MathTextWarning[source]
+ 
+Bases: Warning

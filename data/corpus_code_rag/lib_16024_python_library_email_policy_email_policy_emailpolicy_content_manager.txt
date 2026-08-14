@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.content_manager
+
+content_manager  
+An object with at least two methods: get_content and set_content. When the get_content() or set_content() method of an EmailMessage object is called, it calls the corresponding method of this object, passing it the message object as its first argument, and any arguments or keywords that were passed to it as additional arguments. By default content_manager is set to raw_data_manager.  New in version 3.4.

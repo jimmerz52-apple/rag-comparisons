@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.JSONTag.to_json
+
+to_json(value)  
+Convert the Python object to an object that is a valid JSON type. The tag will be added later.  Parameters 
+value (Any) –   Return type 
+Any

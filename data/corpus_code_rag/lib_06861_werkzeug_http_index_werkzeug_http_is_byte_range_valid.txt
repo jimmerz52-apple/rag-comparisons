@@ -1,0 +1,9 @@
+# werkzeug.http.index#werkzeug.http.is_byte_range_valid
+
+werkzeug.http.is_byte_range_valid(start, stop, length)  
+Checks if a given byte content range is valid for the given length.  Changelog New in version 0.7.   Parameters 
+ 
+start (Optional[int]) –  
+stop (Optional[int]) –  
+length (Optional[int]) –    Return type 
+bool

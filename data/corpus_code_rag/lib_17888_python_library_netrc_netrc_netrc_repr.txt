@@ -1,0 +1,4 @@
+# python.library.netrc#netrc.netrc.__repr__
+
+netrc.__repr__()  
+Dump the class data as a string in the format of a netrc file. (This discards comments and may reorder the entries.)

@@ -1,0 +1,56 @@
+# skimage.api.skimage.graph#skimage.graph.MCP
+
+class skimage.graph.MCP(costs, offsets=None, fully_connected=True, sampling=None)  
+Bases: object A class for finding the minimum cost path through a given n-d costs array. Given an n-d costs array, this class can be used to find the minimum-cost path through that array from any set of points to any other set of points. Basic usage is to initialize the class and call find_costs() with a one or more starting indices (and an optional list of end indices). After that, call traceback() one or more times to find the path from any given end-position to the closest starting index. New paths through the same costs array can be found by calling find_costs() repeatedly. The cost of a path is calculated simply as the sum of the values of the costs array at each point on the path. The class MCP_Geometric, on the other hand, accounts for the fact that diagonal vs. axial moves are of different lengths, and weights the path cost accordingly. Array elements with infinite or negative costs will simply be ignored, as will paths whose cumulative cost overflows to infinite.  Parameters 
+ 
+costsndarray 
+
+offsetsiterable, optional 
+
+A list of offset tuples: each offset specifies a valid move from a given n-d position. If not provided, offsets corresponding to a singly- or fully-connected n-d neighborhood will be constructed with make_offsets(), using the fully_connected parameter value.  
+fully_connectedbool, optional 
+
+If no offsets are provided, this determines the connectivity of the generated neighborhood. If true, the path may go along diagonals between elements of the costs array; otherwise only axial moves are permitted.  
+samplingtuple, optional 
+
+For each dimension, specifies the distance between two cells/voxels. If not given or None, the distance is assumed unit.    Attributes 
+ 
+offsetsndarray 
+
+Equivalent to the offsets provided to the constructor, or if none were so provided, the offsets created for the requested n-d neighborhood. These are useful for interpreting the traceback array returned by the find_costs() method.      
+__init__(costs, offsets=None, fully_connected=True, sampling=None)  
+See class documentation. 
+  
+find_costs()  
+Find the minimum-cost path from the given starting points. This method finds the minimum-cost path to the specified ending indices from any one of the specified starting indices. If no end positions are given, then the minimum-cost path to every position in the costs array will be found.  Parameters 
+ 
+startsiterable 
+
+A list of n-d starting indices (where n is the dimension of the costs array). The minimum cost path to the closest/cheapest starting point will be found.  
+endsiterable, optional 
+
+A list of n-d ending indices.  
+find_all_endsbool, optional 
+
+If ‘True’ (default), the minimum-cost-path to every specified end-position will be found; otherwise the algorithm will stop when a a path is found to any end-position. (If no ends were specified, then this parameter has no effect.)    Returns 
+ 
+cumulative_costsndarray 
+
+Same shape as the costs array; this array records the minimum cost path from the nearest/cheapest starting index to each index considered. (If ends were specified, not all elements in the array will necessarily be considered: positions not evaluated will have a cumulative cost of inf. If find_all_ends is ‘False’, only one of the specified end-positions will have a finite cumulative cost.)  
+tracebackndarray 
+
+Same shape as the costs array; this array contains the offset to any given index from its predecessor index. The offset indices index into the offsets attribute, which is a array of n-d offsets. In the 2-d case, if offsets[traceback[x, y]] is (-1, -1), that means that the predecessor of [x, y] in the minimum cost path to some start position is [x+1, y+1]. Note that if the offset_index is -1, then the given index was not considered.     
+  
+goal_reached()  
+int goal_reached(int index, float cumcost) This method is called each iteration after popping an index from the heap, before examining the neighbours. This method can be overloaded to modify the behavior of the MCP algorithm. An example might be to stop the algorithm when a certain cumulative cost is reached, or when the front is a certain distance away from the seed point. This method should return 1 if the algorithm should not check the current point’s neighbours and 2 if the algorithm is now done. 
+  
+traceback(end)  
+Trace a minimum cost path through the pre-calculated traceback array. This convenience function reconstructs the the minimum cost path to a given end position from one of the starting indices provided to find_costs(), which must have been called previously. This function can be called as many times as desired after find_costs() has been run.  Parameters 
+ 
+enditerable 
+
+An n-d index into the costs array.    Returns 
+ 
+tracebacklist of n-d tuples 
+
+A list of indices into the costs array, starting with one of the start positions passed to find_costs(), and ending with the given end index. These indices specify the minimum-cost path from any given start index to the end index. (The total cost of that path can be read out from the cumulative_costs array returned by find_costs().)

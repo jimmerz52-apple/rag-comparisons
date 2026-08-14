@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.is_closed
+
+loop.is_closed()  
+Return True if the event loop was closed.

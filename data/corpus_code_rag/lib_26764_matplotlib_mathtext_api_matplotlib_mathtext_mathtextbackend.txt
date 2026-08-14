@@ -1,0 +1,19 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackend
+
+classmatplotlib.mathtext.MathtextBackend[source]
+ 
+Bases: object The base class for the mathtext backend-specific code. MathtextBackend subclasses interface between mathtext and specific Matplotlib graphics backends. Subclasses need to override the following:  render_glyph() render_rect_filled() get_results()  And optionally, if you need to use a FreeType hinting style:  get_hinting_type()    get_hinting_type()[source]
+ 
+Get the FreeType hinting type to use with this particular backend. 
+   get_results(box)[source]
+ 
+Return a backend-specific tuple to return to the backend after all processing is done. 
+   render_glyph(ox, oy, info)[source]
+ 
+Draw a glyph described by info to the reference point (ox, oy). 
+   render_rect_filled(x1, y1, x2, y2)[source]
+ 
+Draw a filled black rectangle from (x1, y1) to (x2, y2). 
+   set_canvas_size(w, h, d)[source]
+ 
+Set the dimension of the drawing canvas.

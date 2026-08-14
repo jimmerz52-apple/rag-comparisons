@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_XML_DECL
+
+xml.parsers.expat.errors.XML_ERROR_XML_DECL  
+The document contained no document element at all.

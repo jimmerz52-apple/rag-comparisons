@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.elementwise
+
+elementwise() 
+ The next operation will be performed elementwise. elementwise() -> VectorElementwiseProxy  Applies the following operation to each element of the vector.

@@ -1,0 +1,4 @@
+# python.library.operator#operator.is_not
+
+operator.is_not(a, b)  
+Return a is not b. Tests object identity.

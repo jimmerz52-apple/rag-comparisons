@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin.success_url
+
+success_url  
+The URL to redirect to when the form is successfully processed.

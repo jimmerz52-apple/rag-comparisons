@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.quit
+
+POP3.quit()  
+Signoff: commit changes, unlock mailbox, drop connection.

@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ParsingError
+
+exception configparser.ParsingError  
+Exception raised when errors occur attempting to parse a file.  Changed in version 3.2: The filename attribute and __init__() argument were renamed to source for consistency.

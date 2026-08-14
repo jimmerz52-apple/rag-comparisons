@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.fixed_sizes
+
+fixed_sizes 
+ the number of available bitmap sizes for the font fixed_sizes -> int  Read only. Returns the number of point sizes for which the font contains bitmap character images. If zero then the font is not a bitmap font. A scalable font may contain pre-rendered point sizes as strikes.

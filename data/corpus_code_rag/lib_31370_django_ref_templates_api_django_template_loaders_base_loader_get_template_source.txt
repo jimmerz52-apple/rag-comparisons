@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.loaders.base.Loader.get_template_sources
+
+get_template_sources(template_name)  
+A method that takes a template_name and yields Origin instances for each possible source. For example, the filesystem loader may receive 'index.html' as a template_name argument. This method would yield origins for the full path of index.html as it appears in each template directory the loader looks at. The method doesn’t need to verify that the template exists at a given path, but it should ensure the path is valid. For instance, the filesystem loader makes sure the path lies under a valid template directory.

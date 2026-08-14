@@ -1,0 +1,7 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.count_overlaps
+
+count_overlaps(bboxes)[source]
+ 
+Count the number of bounding boxes that overlap this one.  Parameters 
+ 
+bboxessequence of BboxBase

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.PROTOCOL_SSLv23
+
+ssl.PROTOCOL_SSLv23  
+Alias for PROTOCOL_TLS.  Deprecated since version 3.6: Use PROTOCOL_TLS instead.

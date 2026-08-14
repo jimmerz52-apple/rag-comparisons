@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriter#matplotlib.animation.MovieWriter.setup
+
+setup(fig, outfile, dpi=None)[source]
+ 
+Setup for writing the movie file.  Parameters 
+ 
+figFigure
+
+
+The figure object that contains the information for frames.  
+outfilestr
+
+
+The filename of the resulting movie file.  
+dpifloat, default: fig.dpi
+
+
+The DPI (or resolution) for the file. This controls the size in pixels of the resulting movie file.

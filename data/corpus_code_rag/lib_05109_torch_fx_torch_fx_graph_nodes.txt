@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Graph.nodes
+
+property nodes  
+Get the list of Nodes that constitute this Graph. Note that this Node list representation is a doubly-linked list. Mutations during iteration (e.g. delete a Node, add a Node) are safe.  Returns 
+A doubly-linked list of Nodes. Note that reversed can be called on this list to switch iteration order.

@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.as_set
+
+as_set(preserve_casing=False)  
+Return the set as real python set type. When calling this, all the items are converted to lowercase and the ordering is lost.  Parameters 
+preserve_casing – if set to True the items in the set returned will have the original case like in the HeaderSet, otherwise they will be lowercase.

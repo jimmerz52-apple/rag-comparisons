@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.SocketHandler.send
+
+send(packet)  
+Send a pickled byte-string packet to the socket. The format of the sent byte-string is as described in the documentation for makePickle(). This function allows for partial sends, which can happen when the network is busy.

@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.DecimalField.min_value
+
+min_value  
+These control the range of values permitted in the field, and should be given as decimal.Decimal values.

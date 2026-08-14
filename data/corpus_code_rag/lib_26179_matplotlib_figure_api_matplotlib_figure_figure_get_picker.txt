@@ -1,0 +1,6 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_picker
+
+get_picker()[source]
+ 
+Return the picking behavior of the artist. The possible values are described in set_picker.  See also  
+set_picker, pickable, pick

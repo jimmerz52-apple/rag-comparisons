@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.BackendType
+
+class torch.distributed.rpc.BackendType  
+An enum class of available backends. PyTorch ships with two builtin backends: BackendType.TENSORPIPE and BackendType.PROCESS_GROUP. Additional ones can be registered using the register_backend() function.

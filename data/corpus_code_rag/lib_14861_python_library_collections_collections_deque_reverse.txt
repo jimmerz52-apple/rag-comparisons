@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.reverse
+
+reverse()  
+Reverse the elements of the deque in-place and then return None.  New in version 3.2.

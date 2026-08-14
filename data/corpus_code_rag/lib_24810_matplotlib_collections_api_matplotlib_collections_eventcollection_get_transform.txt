@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_transform
+
+get_transform()[source]
+ 
+Return the Transform instance used by this artist.

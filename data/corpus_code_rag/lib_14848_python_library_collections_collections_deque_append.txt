@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.append
+
+append(x)  
+Add x to the right side of the deque.

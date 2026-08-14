@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.null
+
+staticnull()[source]
+ 
+Create a new null Bbox from (inf, inf) to (-inf, -inf).

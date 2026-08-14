@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.set_zorder
+
+matplotlib.artist.Artist.set_zorder   Artist.set_zorder(level)[source]
+ 
+Set the zorder for the artist. Artists with lower zorder values are drawn first.  Parameters 
+ 
+levelfloat

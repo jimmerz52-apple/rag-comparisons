@@ -1,0 +1,22 @@
+# python.library.ast#ast.JoinedStr
+
+class ast.JoinedStr(values)  
+An f-string, comprising a series of FormattedValue and Constant nodes. >>> print(ast.dump(ast.parse('f"sin({a}) is {sin(a):.3}"', mode='eval'), indent=4))
+Expression(
+    body=JoinedStr(
+        values=[
+            Constant(value='sin('),
+            FormattedValue(
+                value=Name(id='a', ctx=Load()),
+                conversion=-1),
+            Constant(value=') is '),
+            FormattedValue(
+                value=Call(
+                    func=Name(id='sin', ctx=Load()),
+                    args=[
+                        Name(id='a', ctx=Load())],
+                    keywords=[]),
+                conversion=-1,
+                format_spec=JoinedStr(
+                    values=[
+                        Constant(value='.3')]))]))

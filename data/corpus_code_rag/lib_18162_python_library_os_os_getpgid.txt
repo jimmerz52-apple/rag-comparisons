@@ -1,0 +1,4 @@
+# python.library.os#os.getpgid
+
+os.getpgid(pid)  
+Return the process group id of the process with process id pid. If pid is 0, the process group id of the current process is returned. Availability: Unix.

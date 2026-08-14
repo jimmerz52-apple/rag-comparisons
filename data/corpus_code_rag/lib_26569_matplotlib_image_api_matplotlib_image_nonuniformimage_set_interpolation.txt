@@ -1,0 +1,10 @@
+# matplotlib.image_api#matplotlib.image.NonUniformImage.set_interpolation
+
+set_interpolation(s)[source]
+ 
+ Parameters 
+ 
+s{'nearest', 'bilinear'} or None
+
+
+If None, use rcParams["image.interpolation"] (default: 'antialiased').

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logsumexp
+
+logsumexp(dim, keepdim=False) → Tensor  
+See torch.logsumexp()

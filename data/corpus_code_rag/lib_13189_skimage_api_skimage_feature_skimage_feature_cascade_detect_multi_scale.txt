@@ -1,0 +1,30 @@
+# skimage.api.skimage.feature#skimage.feature.Cascade.detect_multi_scale
+
+detect_multi_scale()  
+Search for the object on multiple scales of input image. The function takes the input image, the scale factor by which the searching window is multiplied on each step, minimum window size and maximum window size that specify the interval for the search windows that are applied to the input image to detect objects.  Parameters 
+ 
+img2-D or 3-D ndarray 
+
+Ndarray that represents the input image.  
+scale_factorcnp.float32_t 
+
+The scale by which searching window is multiplied on each step.  
+step_ratiocnp.float32_t 
+
+The ratio by which the search step in multiplied on each scale of the image. 1 represents the exaustive search and usually is slow. By setting this parameter to higher values the results will be worse but the computation will be much faster. Usually, values in the interval [1, 1.5] give good results.  
+min_sizetyple (int, int) 
+
+Minimum size of the search window.  
+max_sizetyple (int, int) 
+
+Maximum size of the search window.  
+min_neighbour_numberint 
+
+Minimum amount of intersecting detections in order for detection to be approved by the function.  
+intersection_score_thresholdcnp.float32_t 
+
+The minimum value of value of ratio (intersection area) / (small rectangle ratio) in order to merge two detections into one.    Returns 
+ 
+outputlist of dicts 
+
+Dict have form {‘r’: int, ‘c’: int, ‘width’: int, ‘height’: int}, where ‘r’ represents row position of top left corner of detected window, ‘c’ - col position, ‘width’ - width of detected window, ‘height’ - height of detected window.

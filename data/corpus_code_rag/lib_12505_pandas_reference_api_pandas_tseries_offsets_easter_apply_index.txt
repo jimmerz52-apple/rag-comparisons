@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.easter.apply_index
+
+pandas.tseries.offsets.Easter.apply_index   Easter.apply_index(other)

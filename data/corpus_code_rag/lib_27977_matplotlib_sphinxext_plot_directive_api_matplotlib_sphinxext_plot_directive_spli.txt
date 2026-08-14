@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.split_code_at_show
+
+matplotlib.sphinxext.plot_directive.split_code_at_show(text)[source]
+ 
+[Deprecated] Split code at plt.show(). Notes  Deprecated since version 3.5.

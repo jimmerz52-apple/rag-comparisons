@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.formset
+
+InlineModelAdmin.formset  
+This defaults to BaseInlineFormSet. Using your own formset can give you many possibilities of customization. Inlines are built around model formsets.

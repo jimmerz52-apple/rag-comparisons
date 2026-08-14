@@ -1,0 +1,3 @@
+# matplotlib.widgets_api#matplotlib.widgets.TextBox.stop_typing
+
+stop_typing()[source]

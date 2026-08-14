@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZIP_DEFLATED
+
+zipfile.ZIP_DEFLATED  
+The numeric constant for the usual ZIP compression method. This requires the zlib module.

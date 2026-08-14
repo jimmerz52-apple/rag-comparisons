@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.TimerBase.remove_callback
+
+remove_callback(func, *args, **kwargs)[source]
+ 
+Remove func from list of callbacks. args and kwargs are optional and used to distinguish between copies of the same function registered to be called with different arguments. This behavior is deprecated. In the future, *args, **kwargs won't be considered anymore; to keep a specific callback removable by itself, pass it to add_callback as a functools.partial object.

@@ -1,0 +1,52 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_major_formatter
+
+matplotlib.axis.Axis.set_major_formatter   Axis.set_major_formatter(formatter)[source]
+ 
+Set the formatter of the major ticker. In addition to a Formatter instance, this also accepts a str or function. For a str a StrMethodFormatter is used. The field used for the value must be labeled 'x' and the field used for the position must be labeled 'pos'. See the StrMethodFormatter documentation for more information. For a function, a FuncFormatter is used. The function must take two inputs (a tick value x and a position pos), and return a string containing the corresponding tick label. See the FuncFormatter documentation for more information.  Parameters 
+ 
+formatterFormatter, str, or function
+
+   
+  Examples using matplotlib.axis.Axis.set_major_formatter
+ 
+   Creating a timeline with lines, dates, and text   
+
+   Date tick labels   
+
+   Custom tick formatter for time series   
+
+   Labeling ticks using engineering notation   
+
+   Dollar Ticks   
+
+   Bachelor's degrees by gender   
+
+   3D surface (colormap)   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Centering labels between ticks   
+
+   Custom Ticker1   
+
+   Formatting date ticks using ConciseDateFormatter   
+
+   Date Demo Convert   
+
+   Placing date ticks using recurrence rules   
+
+   Date Index Formatter   
+
+   Major and minor ticks   
+
+   Setting tick labels from a list of values   
+
+   Basic Usage   
+
+   The Lifecycle of a Plot   
+
+   Artist tutorial   
+
+   Choosing Colormaps in Matplotlib   
+
+   Text in Matplotlib Plots

@@ -1,0 +1,11 @@
+# tensorflow.compat.v1.image.resizemethod
+
+tf.compat.v1.image.ResizeMethod See v1.image.resize for details.
+ 
+
+
+ Class Variables
+  AREA   3  
+  BICUBIC   2  
+  BILINEAR   0  
+  NEAREST_NEIGHBOR   1

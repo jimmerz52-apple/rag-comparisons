@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.NotSupportedError
+
+exception sqlite3.NotSupportedError  
+Exception raised in case a method or database API was used which is not supported by the database, e.g. calling the rollback() method on a connection that does not support transaction or has transactions turned off. It is a subclass of DatabaseError.

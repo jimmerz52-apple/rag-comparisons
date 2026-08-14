@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentTypeManager.clear_cache
+
+clear_cache()  
+Clears an internal cache used by ContentType to keep track of models for which it has created ContentType instances. You probably won’t ever need to call this method yourself; Django will call it automatically when it’s needed.

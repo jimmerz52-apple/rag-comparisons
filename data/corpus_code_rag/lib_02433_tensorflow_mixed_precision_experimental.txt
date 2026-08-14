@@ -1,0 +1,3 @@
+# tensorflow.mixed_precision.experimental
+
+Module: tf.mixed_precision.experimental Public API for tf.mixed_precision.experimental namespace. Classes class DynamicLossScale: Loss scale that dynamically adjusts itself. class FixedLossScale: Loss scale with a fixed value. class LossScale: Base class for all TF1 loss scales.

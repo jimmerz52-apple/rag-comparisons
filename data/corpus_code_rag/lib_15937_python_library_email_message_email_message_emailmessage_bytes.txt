@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.__bytes__
+
+__bytes__()  
+Equivalent to as_bytes(). Allows bytes(msg) to produce a bytes object containing the serialized message.

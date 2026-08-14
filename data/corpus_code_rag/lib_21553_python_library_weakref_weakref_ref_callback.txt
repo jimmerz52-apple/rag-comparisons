@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.ref.__callback__
+
+__callback__  
+This read-only attribute returns the callback currently associated to the weakref. If there is no callback or if the referent of the weakref is no longer alive then this attribute will have value None.

@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractChildWatcher.attach_loop
+
+attach_loop(loop)  
+Attach the watcher to an event loop. If the watcher was previously attached to an event loop, then it is first detached before attaching to the new loop. Note: loop may be None.

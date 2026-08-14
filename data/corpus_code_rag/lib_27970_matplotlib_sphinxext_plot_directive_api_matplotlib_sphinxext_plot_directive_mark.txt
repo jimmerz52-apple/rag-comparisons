@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.mark_plot_labels
+
+matplotlib.sphinxext.plot_directive.mark_plot_labels(app, document)[source]
+ 
+To make plots referenceable, we need to move the reference from the "htmlonly" (or "latexonly") node to the actual figure node itself.

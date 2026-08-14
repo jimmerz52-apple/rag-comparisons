@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.rangeindex.start
+
+pandas.RangeIndex.start   propertyRangeIndex.start
+ 
+The value of the start parameter (0 if this was not supplied).

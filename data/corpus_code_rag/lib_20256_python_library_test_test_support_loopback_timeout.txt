@@ -1,0 +1,4 @@
+# python.library.test#test.support.LOOPBACK_TIMEOUT
+
+test.support.LOOPBACK_TIMEOUT  
+Timeout in seconds for tests using a network server listening on the network local loopback interface like 127.0.0.1. The timeout is long enough to prevent test failure: it takes into account that the client and the server can run in different threads or even different processes. The timeout should be long enough for connect(), recv() and send() methods of socket.socket. Its default value is 5 seconds. See also INTERNET_TIMEOUT.

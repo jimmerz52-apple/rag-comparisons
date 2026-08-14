@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.RLock
+
+RLock()  
+Create a shared threading.RLock object and return a proxy for it.

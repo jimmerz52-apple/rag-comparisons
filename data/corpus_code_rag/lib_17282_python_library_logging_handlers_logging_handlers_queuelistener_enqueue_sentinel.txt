@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueListener.enqueue_sentinel
+
+enqueue_sentinel()  
+Writes a sentinel to the queue to tell the listener to quit. This implementation uses put_nowait(). You may want to override this method if you want to use timeouts or work with custom queue implementations.  New in version 3.3.

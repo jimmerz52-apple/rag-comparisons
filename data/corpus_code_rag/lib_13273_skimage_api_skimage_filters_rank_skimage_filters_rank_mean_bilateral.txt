@@ -1,0 +1,34 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.mean_bilateral
+
+skimage.filters.rank.mean_bilateral(image, selem, out=None, mask=None, shift_x=False, shift_y=False, s0=10, s1=10) [source]
+ 
+Apply a flat kernel bilateral filter. This is an edge-preserving and noise reducing denoising filter. It averages pixels based on their spatial closeness and radiometric similarity. Spatial closeness is measured by considering only the local pixel neighborhood given by a structuring element. Radiometric similarity is defined by the greylevel interval [g-s0, g+s1] where g is the current pixel greylevel. Only pixels belonging to the structuring element and having a greylevel inside this interval are averaged.  Parameters 
+ 
+image2-D array (uint8, uint16) 
+
+Input image.  
+selem2-D array 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s.  
+out2-D array (same dtype as input) 
+
+If None, a new array is allocated.  
+maskndarray 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_yint 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).  
+s0, s1int 
+
+Define the [s0, s1] interval around the greyvalue of the center pixel to be considered for computing the value.    Returns 
+ 
+out2-D array (same dtype as input image) 
+
+Output image.      See also  
+denoise_bilateral 
+  Examples >>> from skimage import data
+>>> from skimage.morphology import disk
+>>> from skimage.filters.rank import mean_bilateral
+>>> img = data.camera().astype(np.uint16)
+>>> bilat_img = mean_bilateral(img, disk(20), s0=10,s1=10)

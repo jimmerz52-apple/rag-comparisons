@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.set_start_method
+
+multiprocessing.set_start_method(method)  
+Set the method which should be used to start child processes. method can be 'fork', 'spawn' or 'forkserver'. Note that this should be called at most once, and it should be protected inside the if __name__ == '__main__' clause of the main module.  New in version 3.4.

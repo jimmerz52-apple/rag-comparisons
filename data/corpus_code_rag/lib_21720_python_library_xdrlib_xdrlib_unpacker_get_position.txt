@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.get_position
+
+Unpacker.get_position()  
+Returns the current unpack position in the data buffer.

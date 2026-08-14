@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.FileSelectBox
+
+class tkinter.tix.FileSelectBox  
+The FileSelectBox is similar to the standard Motif(TM) file-selection box. It is generally used for the user to choose a file. FileSelectBox stores the files mostly recently selected into a ComboBox widget so that they can be quickly selected again.

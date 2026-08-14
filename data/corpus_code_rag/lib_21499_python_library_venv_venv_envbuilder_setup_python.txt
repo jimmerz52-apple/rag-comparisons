@@ -1,0 +1,4 @@
+# python.library.venv#venv.EnvBuilder.setup_python
+
+setup_python(context)  
+Creates a copy or symlink to the Python executable in the environment. On POSIX systems, if a specific executable python3.x was used, symlinks to python and python3 will be created pointing to that executable, unless files with those names already exist.

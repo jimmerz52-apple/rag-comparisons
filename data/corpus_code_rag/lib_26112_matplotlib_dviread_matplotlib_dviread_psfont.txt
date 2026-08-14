@@ -1,0 +1,19 @@
+# matplotlib.dviread#matplotlib.dviread.PsFont
+
+classmatplotlib.dviread.PsFont(texname, psname, effects, encoding, filename)[source]
+ 
+Bases: tuple Create new instance of PsFont(texname, psname, effects, encoding, filename)   effects
+ 
+Alias for field number 2 
+   encoding
+ 
+Alias for field number 3 
+   filename
+ 
+Alias for field number 4 
+   psname
+ 
+Alias for field number 1 
+   texname
+ 
+Alias for field number 0

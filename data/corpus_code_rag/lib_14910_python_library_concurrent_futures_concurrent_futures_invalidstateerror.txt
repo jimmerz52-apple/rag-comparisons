@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.InvalidStateError
+
+exception concurrent.futures.InvalidStateError  
+Raised when an operation is performed on a future that is not allowed in the current state.  New in version 3.8.

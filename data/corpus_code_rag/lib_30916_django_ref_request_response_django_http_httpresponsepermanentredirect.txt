@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponsePermanentRedirect
+
+class HttpResponsePermanentRedirect  
+Like HttpResponseRedirect, but it returns a permanent redirect (HTTP status code 301) instead of a “found” redirect (status code 302).

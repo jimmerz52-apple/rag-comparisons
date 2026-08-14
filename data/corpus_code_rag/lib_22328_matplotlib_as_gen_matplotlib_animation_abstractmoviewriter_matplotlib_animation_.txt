@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.abstractmoviewriter#matplotlib.animation.AbstractMovieWriter.finish
+
+abstractfinish()[source]
+ 
+Finish any processing for writing the movie.

@@ -1,0 +1,10 @@
+# matplotlib.testing_api#matplotlib.testing.decorators.CleanupTestCase
+
+classmatplotlib.testing.decorators.CleanupTestCase(methodName='runTest')[source]
+ 
+Bases: unittest.case.TestCase A wrapper for unittest.TestCase that includes cleanup operations. Create an instance of the class that will use the named test method when executed. Raises a ValueError if the instance does not have a method with the specified name.   classmethodsetUpClass()[source]
+ 
+Hook method for setting up class fixture before running tests in the class. 
+   classmethodtearDownClass()[source]
+ 
+Hook method for deconstructing the class fixture after running all tests in the class.

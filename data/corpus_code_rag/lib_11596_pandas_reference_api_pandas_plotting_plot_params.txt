@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.plotting.plot_params
+
+pandas.plotting.plot_params   pandas.plotting.plot_params={'xaxis.compat': False}
+ 
+Stores pandas plotting options. Allows for parameter aliasing so you can just use parameter names that are the same as the plot function parameters, but is stored in a canonical format that makes it easy to breakdown into groups later.

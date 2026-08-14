@@ -1,0 +1,4 @@
+# python.library.re#re.error.colno
+
+colno  
+The column corresponding to pos (may be None).

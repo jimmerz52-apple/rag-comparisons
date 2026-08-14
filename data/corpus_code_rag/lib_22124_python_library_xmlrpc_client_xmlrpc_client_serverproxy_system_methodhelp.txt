@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.ServerProxy.system.methodHelp
+
+ServerProxy.system.methodHelp(name)  
+This method takes one parameter, the name of a method implemented by the XML-RPC server. It returns a documentation string describing the use of that method. If no such string is available, an empty string is returned. The documentation string may contain HTML markup.

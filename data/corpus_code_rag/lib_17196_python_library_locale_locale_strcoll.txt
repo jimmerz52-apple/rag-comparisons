@@ -1,0 +1,4 @@
+# python.library.locale#locale.strcoll
+
+locale.strcoll(string1, string2)  
+Compares two strings according to the current LC_COLLATE setting. As any other compare function, returns a negative, or a positive value, or 0, depending on whether string1 collates before or after string2 or is equal to it.

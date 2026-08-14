@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ixor__
+
+numpy.ma.MaskedArray.__ixor__ method   ma.MaskedArray.__ixor__(value, /)
+ 
+Return self^=value.

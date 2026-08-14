@@ -1,0 +1,5 @@
+# pygame.ref.font#pygame.font.Font.get_underline
+
+get_underline() 
+ check if text will be rendered with an underline get_underline() -> bool  Return True when the font underline is enabled.  
+ Note This is the same as the underline attribute.

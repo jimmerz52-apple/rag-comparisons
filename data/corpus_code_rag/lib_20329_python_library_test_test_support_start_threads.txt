@@ -1,0 +1,4 @@
+# python.library.test#test.support.start_threads
+
+test.support.start_threads(threads, unlock=None)  
+Context manager to start threads. It attempts to join the threads upon exit.

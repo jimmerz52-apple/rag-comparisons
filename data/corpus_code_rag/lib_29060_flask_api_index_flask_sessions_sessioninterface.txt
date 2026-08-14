@@ -1,0 +1,83 @@
+# flask.api.index#flask.sessions.SessionInterface
+
+class flask.sessions.SessionInterface  
+The basic interface you have to implement in order to replace the default session interface which uses werkzeug’s securecookie implementation. The only methods you have to implement are open_session() and save_session(), the others have useful defaults which you don’t need to change. The session object returned by the open_session() method has to provide a dictionary like interface plus the properties and methods from the SessionMixin. We recommend just subclassing a dict and adding that mixin: class Session(dict, SessionMixin):
+    pass
+ If open_session() returns None Flask will call into make_null_session() to create a session that acts as replacement if the session support cannot work because some requirement is not fulfilled. The default NullSession class that is created will complain that the secret key was not set. To replace the session interface on an application all you have to do is to assign flask.Flask.session_interface: app = Flask(__name__)
+app.session_interface = MySessionInterface()
+  Changelog New in version 0.8.   
+get_cookie_domain(app)  
+Returns the domain that should be set for the session cookie. Uses SESSION_COOKIE_DOMAIN if it is configured, otherwise falls back to detecting the domain based on SERVER_NAME. Once detected (or if not set at all), SESSION_COOKIE_DOMAIN is updated to avoid re-running the logic.  Parameters 
+app (Flask) –   Return type 
+Optional[str]   
+  
+get_cookie_httponly(app)  
+Returns True if the session cookie should be httponly. This currently just returns the value of the SESSION_COOKIE_HTTPONLY config var.  Parameters 
+app (Flask) –   Return type 
+bool   
+  
+get_cookie_name(app)  
+Returns the name of the session cookie. Uses app.session_cookie_name which is set to SESSION_COOKIE_NAME  Parameters 
+app (Flask) –   Return type 
+str   
+  
+get_cookie_path(app)  
+Returns the path for which the cookie should be valid. The default implementation uses the value from the SESSION_COOKIE_PATH config var if it’s set, and falls back to APPLICATION_ROOT or uses / if it’s None.  Parameters 
+app (Flask) –   Return type 
+str   
+  
+get_cookie_samesite(app)  
+Return 'Strict' or 'Lax' if the cookie should use the SameSite attribute. This currently just returns the value of the SESSION_COOKIE_SAMESITE setting.  Parameters 
+app (Flask) –   Return type 
+str   
+  
+get_cookie_secure(app)  
+Returns True if the cookie should be secure. This currently just returns the value of the SESSION_COOKIE_SECURE setting.  Parameters 
+app (Flask) –   Return type 
+bool   
+  
+get_expiration_time(app, session)  
+A helper method that returns an expiration date for the session or None if the session is linked to the browser session. The default implementation returns now + the permanent session lifetime configured on the application.  Parameters 
+ 
+app (Flask) –  
+session (flask.sessions.SessionMixin) –    Return type 
+Optional[datetime.datetime]   
+  
+is_null_session(obj)  
+Checks if a given object is a null session. Null sessions are not asked to be saved. This checks if the object is an instance of null_session_class by default.  Parameters 
+obj (object) –   Return type 
+bool   
+  
+make_null_session(app)  
+Creates a null session which acts as a replacement object if the real session support could not be loaded due to a configuration error. This mainly aids the user experience because the job of the null session is to still support lookup without complaining but modifications are answered with a helpful error message of what failed. This creates an instance of null_session_class by default.  Parameters 
+app (Flask) –   Return type 
+flask.sessions.NullSession   
+  
+null_session_class  
+make_null_session() will look here for the class that should be created when a null session is requested. Likewise the is_null_session() method will perform a typecheck against this type. alias of flask.sessions.NullSession 
+  
+open_session(app, request)  
+This method has to be implemented and must either return None in case the loading failed because of a configuration error or an instance of a session object which implements a dictionary like interface + the methods and attributes on SessionMixin.  Parameters 
+ 
+app (Flask) –  
+request (Request) –    Return type 
+Optional[flask.sessions.SessionMixin]   
+  
+pickle_based = False  
+A flag that indicates if the session interface is pickle based. This can be used by Flask extensions to make a decision in regards to how to deal with the session object.  Changelog New in version 0.10.  
+
+  
+save_session(app, session, response)  
+This is called for actual sessions returned by open_session() at the end of the request. This is still called during a request context so if you absolutely need access to the request you can do that.  Parameters 
+ 
+app (Flask) –  
+session (flask.sessions.SessionMixin) –  
+response (Response) –    Return type 
+None   
+  
+should_set_cookie(app, session)  
+Used by session backends to determine if a Set-Cookie header should be set for this session cookie for this response. If the session has been modified, the cookie is set. If the session is permanent and the SESSION_REFRESH_EACH_REQUEST config is true, the cookie is always set. This check is usually skipped if the session was deleted.  Changelog New in version 0.11.   Parameters 
+ 
+app (Flask) –  
+session (flask.sessions.SessionMixin) –    Return type 
+bool

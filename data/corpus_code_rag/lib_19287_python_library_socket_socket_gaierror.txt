@@ -1,0 +1,4 @@
+# python.library.socket#socket.gaierror
+
+exception socket.gaierror  
+A subclass of OSError, this exception is raised for address-related errors by getaddrinfo() and getnameinfo(). The accompanying value is a pair (error, string) representing an error returned by a library call. string represents the description of error, as returned by the gai_strerror() C function. The numeric error value will match one of the EAI_* constants defined in this module.  Changed in version 3.3: This class was made a subclass of OSError.

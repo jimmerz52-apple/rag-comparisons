@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.JSONTag.tag
+
+tag(value)  
+Convert the value to a valid JSON type and add the tag structure around it.  Parameters 
+value (Any) –   Return type 
+Any

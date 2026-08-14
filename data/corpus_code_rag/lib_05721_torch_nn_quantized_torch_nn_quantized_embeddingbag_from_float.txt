@@ -1,0 +1,6 @@
+# torch.nn.quantized#torch.nn.quantized.EmbeddingBag.from_float
+
+classmethod from_float(mod) [source]
+ 
+Create a quantized embedding_bag module from a float module  Parameters 
+mod (Module) – a float module, either produced by torch.quantization utilities or provided by user

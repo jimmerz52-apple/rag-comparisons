@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar.make_cookies
+
+CookieJar.make_cookies(response, request)  
+Return sequence of Cookie objects extracted from response object. See the documentation for extract_cookies() for the interfaces required of the response and request arguments.

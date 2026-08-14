@@ -1,0 +1,8 @@
+# django.ref.templates.api#django.template.loaders.app_directories.Loader
+
+class app_directories.Loader  
+Loads templates from Django apps on the filesystem. For each app in INSTALLED_APPS, the loader looks for a templates subdirectory. If the directory exists, Django looks for templates in there. This means you can store templates with your individual apps. This also helps to distribute Django apps with default templates. For example, for this setting: INSTALLED_APPS = ['myproject.polls', 'myproject.music']
+ …then get_template('foo.html') will look for foo.html in these directories, in this order:  /path/to/myproject/polls/templates/ /path/to/myproject/music/templates/  … and will use the one it finds first. The order of INSTALLED_APPS is significant! For example, if you want to customize the Django admin, you might choose to override the standard admin/base_site.html template, from django.contrib.admin, with your own admin/base_site.html in myproject.polls. You must then make sure that your myproject.polls comes before django.contrib.admin in INSTALLED_APPS, otherwise django.contrib.admin’s will be loaded first and yours will be ignored. Note that the loader performs an optimization when it first runs: it caches a list of which INSTALLED_APPS packages have a templates subdirectory. You can enable this loader by setting APP_DIRS to True: TEMPLATES = [{
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    'APP_DIRS': True,
+}]

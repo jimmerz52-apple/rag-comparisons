@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.get_ascent
+
+get_ascent() 
+ get the ascent of the font get_ascent() -> int  Return the height in pixels for the font ascent. The ascent is the number of pixels from the font baseline to the top of the font.

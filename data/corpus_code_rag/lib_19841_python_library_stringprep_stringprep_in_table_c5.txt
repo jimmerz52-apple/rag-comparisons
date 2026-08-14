@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_c5
+
+stringprep.in_table_c5(code)  
+Determine whether code is in tableC.5 (Surrogate codes).

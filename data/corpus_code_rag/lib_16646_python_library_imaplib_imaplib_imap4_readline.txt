@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.readline
+
+IMAP4.readline()  
+Reads one line from the remote server. You may override this method.

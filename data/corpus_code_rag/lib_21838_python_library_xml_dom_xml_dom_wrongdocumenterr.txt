@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.WrongDocumentErr
+
+exception xml.dom.WrongDocumentErr  
+Raised when a node is inserted in a different document than it currently belongs to, and the implementation does not support migrating the node from one document to the other.

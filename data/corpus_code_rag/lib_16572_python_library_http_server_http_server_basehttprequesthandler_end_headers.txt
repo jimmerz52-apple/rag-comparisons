@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.end_headers
+
+end_headers()  
+Adds a blank line (indicating the end of the HTTP headers in the response) to the headers buffer and calls flush_headers().  Changed in version 3.2: The buffered headers are written to the output stream.

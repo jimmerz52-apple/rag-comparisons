@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.dispatcher.handle_close
+
+handle_close()  
+Called when the socket is closed.

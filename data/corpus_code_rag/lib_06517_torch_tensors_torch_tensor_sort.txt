@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sort
+
+sort(dim=-1, descending=False) -> (Tensor, LongTensor)  
+See torch.sort()

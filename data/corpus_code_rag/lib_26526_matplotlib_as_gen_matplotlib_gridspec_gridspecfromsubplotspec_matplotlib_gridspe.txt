@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecfromsubplotspec#matplotlib.gridspec.GridSpecFromSubplotSpec.get_topmost_subplotspec
+
+get_topmost_subplotspec()[source]
+ 
+Return the topmost SubplotSpec instance associated with the subplot.

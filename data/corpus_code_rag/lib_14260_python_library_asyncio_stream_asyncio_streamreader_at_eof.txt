@@ -1,0 +1,4 @@
+# python.library.asyncio-stream#asyncio.StreamReader.at_eof
+
+at_eof()  
+Return True if the buffer is empty and feed_eof() was called.

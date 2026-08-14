@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.micro.is_on_offset
+
+pandas.tseries.offsets.Micro.is_on_offset   Micro.is_on_offset()

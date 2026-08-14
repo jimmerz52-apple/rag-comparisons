@@ -1,0 +1,11 @@
+# pandas.reference.api.pandas.index.item
+
+pandas.Index.item   Index.item()[source]
+ 
+Return the first element of the underlying data as a Python scalar.  Returns 
+ scalar
+
+The first element of %(klass)s.    Raises 
+ ValueError
+
+If the data is not length-1.

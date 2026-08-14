@@ -1,0 +1,6 @@
+# python.library.pathlib#pathlib.Path.home
+
+classmethod Path.home()  
+Return a new path object representing the user’s home directory (as returned by os.path.expanduser() with ~ construct): >>> Path.home()
+PosixPath('/home/antoine')
+  New in version 3.5.

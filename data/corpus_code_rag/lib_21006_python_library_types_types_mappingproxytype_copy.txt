@@ -1,0 +1,4 @@
+# python.library.types#types.MappingProxyType.copy
+
+copy()  
+Return a shallow copy of the underlying mapping.

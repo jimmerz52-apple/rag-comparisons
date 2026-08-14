@@ -1,0 +1,5 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.list
+
+list()  
+list(sequence)  
+Create a shared list object and return a proxy for it.

@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.make_surface
+
+pygame.surfarray.make_surface() 
+ Copy an array to a new surface make_surface(array) -> Surface  Create a new Surface that best resembles the data and format on the array. The array can be 2D or 3D with any sized integer values. Function make_surface uses the array struct interface to acquire array properties, so is not limited to just NumPy arrays. See pygame.pixelcopy. New in pygame 1.9.2: array struct interface support.

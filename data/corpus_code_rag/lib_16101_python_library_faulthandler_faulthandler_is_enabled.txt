@@ -1,0 +1,4 @@
+# python.library.faulthandler#faulthandler.is_enabled
+
+faulthandler.is_enabled()  
+Check if the fault handler is enabled.

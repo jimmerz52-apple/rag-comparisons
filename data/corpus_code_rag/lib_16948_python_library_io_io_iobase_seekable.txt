@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.seekable
+
+seekable()  
+Return True if the stream supports random access. If False, seek(), tell() and truncate() will raise OSError.

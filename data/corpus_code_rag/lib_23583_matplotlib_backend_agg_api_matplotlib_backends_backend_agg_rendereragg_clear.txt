@@ -1,0 +1,3 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.clear
+
+clear()[source]

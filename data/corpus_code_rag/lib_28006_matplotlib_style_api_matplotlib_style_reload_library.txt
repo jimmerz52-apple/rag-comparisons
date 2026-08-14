@@ -1,0 +1,5 @@
+# matplotlib.style_api#matplotlib.style.reload_library
+
+matplotlib.style.reload_library()[source]
+ 
+Reload the style library.

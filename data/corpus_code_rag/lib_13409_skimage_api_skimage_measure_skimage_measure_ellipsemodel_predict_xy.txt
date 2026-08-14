@@ -1,0 +1,16 @@
+# skimage.api.skimage.measure#skimage.measure.EllipseModel.predict_xy
+
+predict_xy(t, params=None) [source]
+ 
+Predict x- and y-coordinates using the estimated model.  Parameters 
+ 
+tarray 
+
+Angles in circle in radians. Angles start to count from positive x-axis to positive y-axis in a right-handed system.  
+params(5, ) array, optional 
+
+Optional custom parameter set.    Returns 
+ 
+xy(…, 2) array 
+
+Predicted x- and y-coordinates.

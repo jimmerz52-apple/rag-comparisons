@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.SafeChildWatcher
+
+class asyncio.SafeChildWatcher  
+This implementation uses active event loop from the main thread to handle SIGCHLD signal. If the main thread has no running event loop another thread cannot spawn a subprocess (RuntimeError is raised). The watcher avoids disrupting other code spawning processes by polling every process explicitly on a SIGCHLD signal. This solution is as safe as MultiLoopChildWatcher and has the same O(N) complexity but requires a running event loop in the main thread to work.

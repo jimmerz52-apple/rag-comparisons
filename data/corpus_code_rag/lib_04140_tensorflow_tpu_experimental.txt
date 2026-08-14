@@ -1,0 +1,3 @@
+# tensorflow.tpu.experimental
+
+Module: tf.tpu.experimental Public API for tf.tpu.experimental namespace. Modules embedding module: Public API for tf.tpu.experimental.embedding namespace. Classes class DeviceAssignment: Mapping from logical cores in a computation to the physical TPU topology. class TPUSystemMetadata: Describes some metadata about the TPU system. class Topology: Describes a set of TPU devices. Functions initialize_tpu_system(...): Initialize the TPU devices. shutdown_tpu_system(...): Shuts down the TPU devices.

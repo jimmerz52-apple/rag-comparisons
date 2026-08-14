@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.mouse_event_add
+
+mouse_event_add(event)[source]
+ 
+Process an button-1 event (add a click if inside axes).  Parameters 
+ 
+eventMouseEvent

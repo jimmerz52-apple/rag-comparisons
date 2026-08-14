@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.nodeValue
+
+Node.nodeValue  
+This has a different meaning for each node type; see the DOM specification for details. The situation is similar to that with nodeName. The value is a string or None.

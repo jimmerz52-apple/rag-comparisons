@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.pop_label
+
+pop_label(index=- 1)[source]
+ 
+Defaults to removing last label, but any index can be supplied

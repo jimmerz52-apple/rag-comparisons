@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.info
+
+HTTPResponse.info()  
+ Deprecated since version 3.9: Deprecated in favor of headers.

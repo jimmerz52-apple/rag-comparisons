@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.fy5253.__call__
+
+pandas.tseries.offsets.FY5253.__call__   FY5253.__call__(*args, **kwargs)
+ 
+Call self as a function.

@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.TimeoutExpired.timeout
+
+timeout  
+Timeout in seconds.

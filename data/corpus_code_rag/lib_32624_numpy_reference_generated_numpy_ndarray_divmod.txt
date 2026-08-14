@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__divmod__
+
+numpy.ndarray.__divmod__ method   ndarray.__divmod__(value, /)
+ 
+Return divmod(self, value).

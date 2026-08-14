@@ -1,0 +1,3 @@
+# tensorflow.keras.datasets.fashion_mnist
+
+Module: tf.keras.datasets.fashion_mnist Fashion-MNIST dataset. Functions load_data(...): Loads the Fashion-MNIST dataset.

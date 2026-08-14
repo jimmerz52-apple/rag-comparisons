@@ -1,0 +1,4 @@
+# python.library.typing#typing.Hashable
+
+class typing.Hashable  
+An alias to collections.abc.Hashable

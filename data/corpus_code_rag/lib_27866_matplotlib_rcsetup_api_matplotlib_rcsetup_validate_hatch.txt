@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_hatch
+
+matplotlib.rcsetup.validate_hatch(s)[source]
+ 
+Validate a hatch pattern. A hatch pattern string can have any sequence of the following characters: \ / | - + * . x o O.

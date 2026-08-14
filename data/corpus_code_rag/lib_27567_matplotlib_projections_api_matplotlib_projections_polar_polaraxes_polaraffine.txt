@@ -1,0 +1,7 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.PolarAffine
+
+classPolarAffine(scale_transform, limits)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase The affine part of the polar projection. Scales the output so that maximum radius rests on the edge of the axes circle. limits is the view limit of the data. The only part of its bounds that is used is the y limits (for the radius limits). The theta range is handled by the non-affine transform.   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform.

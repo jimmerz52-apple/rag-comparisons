@@ -1,0 +1,5 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG.copy
+
+copy() [source]
+ 
+Copy the graph with its max node id.  See also networkx.Graph.copy().

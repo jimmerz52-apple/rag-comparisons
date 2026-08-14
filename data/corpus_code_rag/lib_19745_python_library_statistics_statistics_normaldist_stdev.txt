@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.stdev
+
+stdev  
+A read-only property for the standard deviation of a normal distribution.

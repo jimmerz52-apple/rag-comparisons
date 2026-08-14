@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.lineardiscriminantanalysis#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Estimate log probability.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input data.    Returns 
+ 
+Cndarray of shape (n_samples, n_classes) 
+
+Estimated log probabilities.

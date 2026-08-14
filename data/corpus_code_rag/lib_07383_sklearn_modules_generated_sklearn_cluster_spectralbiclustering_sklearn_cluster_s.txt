@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.cluster.spectralbiclustering#sklearn.cluster.SpectralBiclustering.biclusters_
+
+property biclusters_  
+Convenient way to get row and column indicators together. Returns the rows_ and columns_ members.

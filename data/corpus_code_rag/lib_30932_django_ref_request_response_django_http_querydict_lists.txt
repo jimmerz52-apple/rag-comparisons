@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.QueryDict.lists
+
+QueryDict.lists()  
+Like items(), except it includes all values, as a list, for each member of the dictionary. For example: >>> q = QueryDict('a=1&a=2&a=3')
+>>> q.lists()
+[('a', ['1', '2', '3'])]

@@ -1,0 +1,5 @@
+# matplotlib.testing_api#matplotlib.testing.decorators.CleanupTestCase.tearDownClass
+
+classmethodtearDownClass()[source]
+ 
+Hook method for deconstructing the class fixture after running all tests in the class.

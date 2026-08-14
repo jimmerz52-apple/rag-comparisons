@@ -1,0 +1,14 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.set_verts
+
+set_verts(verts, closed=True)[source]
+ 
+Set the vertices of the polygons.  Parameters 
+ 
+vertslist of array-like
+
+
+The sequence of polygons [verts0, verts1, ...] where each element verts_i defines the vertices of polygon i as a 2D array-like of shape (M, 2).  
+closedbool, default: True
+
+
+Whether the polygon should be closed by adding a CLOSEPOLY connection at the end.

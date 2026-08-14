@@ -1,0 +1,3 @@
+# django.topics.email#django.core.mail.EmailMessage
+
+class EmailMessage

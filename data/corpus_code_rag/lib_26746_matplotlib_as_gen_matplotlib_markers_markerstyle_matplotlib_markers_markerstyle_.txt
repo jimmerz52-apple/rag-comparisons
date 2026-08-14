@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.markers.markerstyle#matplotlib.markers.MarkerStyle.filled_markers
+
+filled_markers=('o', 'v', '^', '<', '>', '8', 's', 'p', '*', 'h', 'H', 'D', 'd', 'P', 'X')

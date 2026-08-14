@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.markers.markerstyle#matplotlib.markers.MarkerStyle.get_alt_transform
+
+get_alt_transform()[source]
+ 
+Return the transform to be applied to the Path from MarkerStyle.get_alt_path().

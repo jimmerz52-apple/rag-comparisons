@@ -1,0 +1,4 @@
+# python.library.curses#curses.resetty
+
+curses.resetty()  
+Restore the state of the terminal modes to what it was at the last call to savetty().

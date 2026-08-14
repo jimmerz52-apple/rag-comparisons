@@ -1,0 +1,7 @@
+# python.library.pdb#pdb.Pdb.set_trace
+
+run(statement, globals=None, locals=None)  
+runeval(expression, globals=None, locals=None)  
+runcall(function, *args, **kwds)  
+set_trace()  
+See the documentation for the functions explained above.

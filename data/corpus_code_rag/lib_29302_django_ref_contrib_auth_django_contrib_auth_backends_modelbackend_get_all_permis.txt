@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.ModelBackend.get_all_permissions
+
+get_all_permissions(user_obj, obj=None)  
+Returns the set of permission strings the user_obj has, including both user permissions and group permissions. Returns an empty set if is_anonymous or is_active is False.

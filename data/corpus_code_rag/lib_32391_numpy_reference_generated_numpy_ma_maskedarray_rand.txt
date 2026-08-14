@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rand__
+
+numpy.ma.MaskedArray.__rand__ method   ma.MaskedArray.__rand__(value, /)
+ 
+Return value&self.

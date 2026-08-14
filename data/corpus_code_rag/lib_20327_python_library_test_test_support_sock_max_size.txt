@@ -1,0 +1,4 @@
+# python.library.test#test.support.SOCK_MAX_SIZE
+
+test.support.SOCK_MAX_SIZE  
+A constant that is likely larger than the underlying OS socket buffer size, to make writes blocking.

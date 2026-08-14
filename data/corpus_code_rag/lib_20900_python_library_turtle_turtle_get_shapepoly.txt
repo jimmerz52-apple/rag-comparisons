@@ -1,0 +1,7 @@
+# python.library.turtle#turtle.get_shapepoly
+
+turtle.get_shapepoly()  
+Return the current shape polygon as tuple of coordinate pairs. This can be used to define a new shape or components of a compound shape. >>> turtle.shape("square")
+>>> turtle.shapetransform(4, -1, 0, 2)
+>>> turtle.get_shapepoly()
+((50, -20), (30, 20), (-50, 20), (-30, -20))

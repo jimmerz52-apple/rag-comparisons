@@ -1,0 +1,4 @@
+# python.library.collections#collections.defaultdict.default_factory
+
+default_factory  
+This attribute is used by the __missing__() method; it is initialized from the first argument to the constructor, if present, or to None, if absent.

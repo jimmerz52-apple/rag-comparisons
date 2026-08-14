@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.laplace.Laplace.log_prob
+
+log_prob(value) [source]

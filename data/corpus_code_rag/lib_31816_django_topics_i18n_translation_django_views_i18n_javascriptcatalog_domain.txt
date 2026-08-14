@@ -1,0 +1,4 @@
+# django.topics.i18n.translation#django.views.i18n.JavaScriptCatalog.domain
+
+domain  
+Translation domain containing strings to add in the view output. Defaults to 'djangojs'.

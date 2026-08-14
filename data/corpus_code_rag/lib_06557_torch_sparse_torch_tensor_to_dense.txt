@@ -1,0 +1,12 @@
+# torch.sparse#torch.Tensor.to_dense
+
+to_dense() → Tensor  
+Creates a strided copy of self.  Warning Throws an error if self is a strided tensor.  Example: >>> s = torch.sparse_coo_tensor(
+...        torch.tensor([[1, 1],
+...                      [0, 2]]),
+...        torch.tensor([9, 10]),
+...        size=(3, 3))
+>>> s.to_dense()
+tensor([[ 0,  0,  0],
+        [ 9,  0, 10],
+        [ 0,  0,  0]])

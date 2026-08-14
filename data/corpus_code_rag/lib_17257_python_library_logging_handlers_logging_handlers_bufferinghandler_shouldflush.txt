@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.BufferingHandler.shouldFlush
+
+shouldFlush(record)  
+Return True if the buffer is up to capacity. This method can be overridden to implement custom flushing strategies.

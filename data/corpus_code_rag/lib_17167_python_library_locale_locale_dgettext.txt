@@ -1,0 +1,3 @@
+# python.library.locale#locale.dgettext
+
+locale.dgettext(domain, msg)

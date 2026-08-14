@@ -1,0 +1,30 @@
+# flask.api.index#flask.Flask.make_response
+
+make_response(rv)  
+Convert the return value from a view function to an instance of response_class.  Parameters 
+rv (Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, ...]]], List[Tuple[str, Union[str, List[str], Tuple[str, ...]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, ...]]], List[Tuple[str, Union[str, List[str], Tuple[str, ...]]]]]], WSGIApplication]) – 
+the return value from the view function. The view function must return a response. Returning None, or the view ending without returning, is not allowed. The following types are allowed for view_rv:  
+str 
+
+A response object is created with the string encoded to UTF-8 as the body.  
+bytes 
+
+A response object is created with the bytes as the body.  
+dict 
+
+A dictionary that will be jsonify’d before being returned.  
+tuple 
+
+Either (body, status, headers), (body, status), or (body, headers), where body is any of the other types allowed here, status is a string or an integer, and headers is a dictionary or a list of (key, value) tuples. If body is a response_class instance, status overwrites the exiting value and headers are extended.  
+response_class
+
+
+The object is returned unchanged.  
+other Response class 
+
+The object is coerced to response_class.  
+callable()
+
+
+The function is called as a WSGI application. The result is used to create a response object.    Return type 
+flask.wrappers.Response    Changelog Changed in version 0.9: Previously a tuple was interpreted as the arguments for the response object.

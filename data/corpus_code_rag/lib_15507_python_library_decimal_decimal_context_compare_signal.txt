@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.compare_signal
+
+compare_signal(x, y)  
+Compares the values of the two operands numerically.

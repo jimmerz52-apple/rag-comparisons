@@ -1,0 +1,4 @@
+# python.library.stdtypes#memoryview.ndim
+
+ndim  
+An integer indicating how many dimensions of a multi-dimensional array the memory represents.

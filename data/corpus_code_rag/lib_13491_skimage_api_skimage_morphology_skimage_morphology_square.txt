@@ -1,0 +1,17 @@
+# skimage.api.skimage.morphology#skimage.morphology.square
+
+skimage.morphology.square(width, dtype=<class 'numpy.uint8'>) [source]
+ 
+Generates a flat, square-shaped structuring element. Every pixel along the perimeter has a chessboard distance no greater than radius (radius=floor(width/2)) pixels.  Parameters 
+ 
+widthint 
+
+The width and height of the square.    Returns 
+ 
+selemndarray 
+
+A structuring element consisting only of ones, i.e. every pixel belongs to the neighborhood.    Other Parameters 
+ 
+dtypedata-type 
+
+The data type of the structuring element.

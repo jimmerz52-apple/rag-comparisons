@@ -1,0 +1,9 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_graph
+
+add_graph(model, input_to_model=None, verbose=False) [source]
+ 
+Add graph data to summary.  Parameters 
+ 
+model (torch.nn.Module) – Model to draw. 
+input_to_model (torch.Tensor or list of torch.Tensor) – A variable or a tuple of variables to be fed. 
+verbose (bool) – Whether to print graph structure in console.

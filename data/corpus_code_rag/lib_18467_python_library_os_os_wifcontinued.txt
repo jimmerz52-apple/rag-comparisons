@@ -1,0 +1,4 @@
+# python.library.os#os.WIFCONTINUED
+
+os.WIFCONTINUED(status)  
+Return True if a stopped child has been resumed by delivery of SIGCONT (if the process has been continued from a job control stop), otherwise return False. See WCONTINUED option. Availability: Unix.

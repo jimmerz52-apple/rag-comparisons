@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.mailfrom
+
+mailfrom  
+Holds a string containing the address identified in the “MAIL FROM:” line from the client.

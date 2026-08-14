@@ -1,0 +1,9 @@
+# django.topics.cache#django.core.cache.caches
+
+django.core.cache.caches  
+You can access the caches configured in the CACHES setting through a dict-like object: django.core.cache.caches. Repeated requests for the same alias in the same thread will return the same object. >>> from django.core.cache import caches
+>>> cache1 = caches['myalias']
+>>> cache2 = caches['myalias']
+>>> cache1 is cache2
+True
+ If the named key does not exist, InvalidCacheBackendError will be raised. To provide thread-safety, a different instance of the cache backend will be returned for each thread.

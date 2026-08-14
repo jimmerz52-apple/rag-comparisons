@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.dumps
+
+numpy.record.dumps method   record.dumps()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.dumps.

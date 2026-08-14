@@ -1,0 +1,15 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.assert_awaited_with
+
+assert_awaited_with(*args, **kwargs)  
+Assert that the last await was with the specified arguments. >>> mock = AsyncMock()
+>>> async def main(*args, **kwargs):
+...     await mock(*args, **kwargs)
+...
+>>> asyncio.run(main('foo', bar='bar'))
+>>> mock.assert_awaited_with('foo', bar='bar')
+>>> mock.assert_awaited_with('other')
+Traceback (most recent call last):
+...
+AssertionError: expected call not found.
+Expected: mock('other')
+Actual: mock('foo', bar='bar')

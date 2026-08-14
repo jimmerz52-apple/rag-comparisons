@@ -1,0 +1,25 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.PlotPlugin
+
+class skimage.viewer.plugins.PlotPlugin(image_filter=None, height=150, width=400, **kwargs) [source]
+ 
+Bases: skimage.viewer.plugins.base.Plugin Plugin for ImageViewer that contains a plot canvas. Base class for plugins that contain a Matplotlib plot canvas, which can, for example, display an image histogram. See base Plugin class for additional details.  
+__init__(image_filter=None, height=150, width=400, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+add_plot() [source]
+
+  
+add_tool(tool) [source]
+
+  
+attach(image_viewer) [source]
+ 
+Attach the plugin to an ImageViewer. Note that the ImageViewer will automatically call this method when the plugin is added to the ImageViewer. For example: viewer += Plugin(...)
+ Also note that attach automatically calls the filter function so that the image matches the filtered value specified by attached widgets. 
+  
+redraw() [source]
+ 
+Redraw plot. 
+  
+remove_tool(tool) [source]

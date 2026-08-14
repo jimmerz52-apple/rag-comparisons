@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.get_label_coords
+
+get_label_coords(distances, XX, YY, ysize, lw)[source]
+ 
+[Deprecated] Return x, y, and the index of a label location. Labels are plotted at a location with the smallest deviation of the contour from a straight line unless there is another label nearby, in which case the next best place on the contour is picked up. If all such candidates are rejected, the beginning of the contour is chosen. Notes  Deprecated since version 3.4.

@@ -1,0 +1,4 @@
+# python.library.logging#logging.LogRecord.getMessage
+
+getMessage()  
+Returns the message for this LogRecord instance after merging any user-supplied arguments with the message. If the user-supplied message argument to the logging call is not a string, str() is called on it to convert it to a string. This allows use of user-defined classes as messages, whose __str__ method can return the actual format string to be used.

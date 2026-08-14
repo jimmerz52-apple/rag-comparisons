@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.get_full_path
+
+HttpRequest.get_full_path()  
+Returns the path, plus an appended query string, if applicable. Example: "/music/bands/the_beatles/?print=true"

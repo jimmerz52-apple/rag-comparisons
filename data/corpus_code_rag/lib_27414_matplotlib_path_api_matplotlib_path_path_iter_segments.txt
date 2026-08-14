@@ -1,0 +1,38 @@
+# matplotlib.path_api#matplotlib.path.Path.iter_segments
+
+iter_segments(transform=None, remove_nans=True, clip=None, snap=False, stroke_width=1.0, simplify=None, curves=True, sketch=None)[source]
+ 
+Iterate over all curve segments in the path. Each iteration returns a pair (vertices, code), where vertices is a sequence of 1-3 coordinate pairs, and code is a Path code. Additionally, this method can provide a number of standard cleanups and conversions to the path.  Parameters 
+ 
+transformNone or Transform
+
+
+If not None, the given affine transformation will be applied to the path.  
+remove_nansbool, optional
+
+
+Whether to remove all NaNs from the path and skip over them using MOVETO commands.  
+clipNone or (float, float, float, float), optional
+
+
+If not None, must be a four-tuple (x1, y1, x2, y2) defining a rectangle in which to clip the path.  
+snapNone or bool, optional
+
+
+If True, snap all nodes to pixels; if False, don't snap them. If None, snap if the path contains only segments parallel to the x or y axes, and no more than 1024 of them.  
+stroke_widthfloat, optional
+
+
+The width of the stroke being drawn (used for path snapping).  
+simplifyNone or bool, optional
+
+
+Whether to simplify the path by removing vertices that do not affect its appearance. If None, use the should_simplify attribute. See also rcParams["path.simplify"] (default: True) and rcParams["path.simplify_threshold"] (default: 0.111111111111).  
+curvesbool, optional
+
+
+If True, curve segments will be returned as curve segments. If False, all curves will be converted to line segments.  
+sketchNone or sequence, optional
+
+
+If not None, must be a 3-tuple of the form (scale, length, randomness), representing the sketch parameters.

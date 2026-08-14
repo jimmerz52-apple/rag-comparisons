@@ -1,0 +1,4 @@
+# python.library.modulefinder#modulefinder.AddPackagePath
+
+modulefinder.AddPackagePath(pkg_name, path)  
+Record that the package named pkg_name can be found in the specified path.

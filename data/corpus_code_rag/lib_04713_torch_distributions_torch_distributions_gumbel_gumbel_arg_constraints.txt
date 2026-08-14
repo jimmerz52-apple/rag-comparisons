@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.gumbel.Gumbel.arg_constraints
+
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {'loc': Real(), 'scale': GreaterThan(lower_bound=0.0)}

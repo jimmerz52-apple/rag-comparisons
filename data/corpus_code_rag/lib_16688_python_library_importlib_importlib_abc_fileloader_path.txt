@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.FileLoader.path
+
+path  
+Path to the file of the module.

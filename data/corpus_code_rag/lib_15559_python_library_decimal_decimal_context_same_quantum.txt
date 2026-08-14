@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.same_quantum
+
+same_quantum(x, y)  
+Returns True if the two operands have the same exponent.

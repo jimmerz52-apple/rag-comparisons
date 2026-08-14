@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.location
+
+location  
+The Location response-header field is used to redirect the recipient to a location other than the Request-URI for completion of the request or identification of a new resource.

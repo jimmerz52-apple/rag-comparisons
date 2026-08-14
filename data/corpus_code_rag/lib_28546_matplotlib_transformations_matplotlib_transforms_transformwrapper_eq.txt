@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformWrapper.__eq__
+
+__eq__(other)[source]
+ 
+Return self==value.

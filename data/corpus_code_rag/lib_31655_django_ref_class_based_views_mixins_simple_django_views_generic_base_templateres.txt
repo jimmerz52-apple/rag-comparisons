@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.TemplateResponseMixin.response_class
+
+response_class  
+The response class to be returned by render_to_response method. Default is TemplateResponse. The template and context of TemplateResponse instances can be altered later (e.g. in template response middleware). If you need custom template loading or custom context object instantiation, create a TemplateResponse subclass and assign it to response_class.

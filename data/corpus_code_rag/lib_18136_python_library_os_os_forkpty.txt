@@ -1,0 +1,4 @@
+# python.library.os#os.forkpty
+
+os.forkpty()  
+Fork a child process, using a new pseudo-terminal as the child’s controlling terminal. Return a pair of (pid, fd), where pid is 0 in the child, the new child’s process id in the parent, and fd is the file descriptor of the master end of the pseudo-terminal. For a more portable approach, use the pty module. If an error occurs OSError is raised. Raises an auditing event os.forkpty with no arguments.  Changed in version 3.8: Calling forkpty() in a subinterpreter is no longer supported (RuntimeError is raised).  Availability: some flavors of Unix.

@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.read
+
+HTTPResponse.read([amt])  
+Reads and returns the response body, or up to the next amt bytes.

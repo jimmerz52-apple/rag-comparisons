@@ -1,0 +1,18 @@
+# tensorflow.math.ndtri
+
+tf.math.ndtri Compute quantile of Standard Normal.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.math.ndtri  
+tf.math.ndtri(
+    x, name=None
+)
+
+ 
+
+
+ Args
+  x   Tensor with type float or double.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   Inverse error function of x.

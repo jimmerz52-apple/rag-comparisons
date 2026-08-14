@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.URLField
+
+class URLField(max_length=200, **options)

@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.ThickLineTool.on_key_press
+
+on_key_press(event) [source]

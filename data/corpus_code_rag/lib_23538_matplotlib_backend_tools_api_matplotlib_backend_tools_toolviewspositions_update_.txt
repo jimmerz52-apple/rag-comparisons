@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolViewsPositions.update_home_views
+
+update_home_views(figure=None)[source]
+ 
+Make sure that self.home_views has an entry for all axes present in the figure.

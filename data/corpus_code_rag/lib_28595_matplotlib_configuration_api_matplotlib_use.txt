@@ -1,0 +1,15 @@
+# matplotlib_configuration_api#matplotlib.use
+
+matplotlib.use(backend, *, force=True)[source]
+ 
+Select the backend used for rendering and GUI integration.  Parameters 
+ 
+backendstr
+
+
+The backend to switch to. This can either be one of the standard backend names, which are case-insensitive:  interactive backends: GTK3Agg, GTK3Cairo, GTK4Agg, GTK4Cairo, MacOSX, nbAgg, QtAgg, QtCairo, TkAgg, TkCairo, WebAgg, WX, WXAgg, WXCairo, Qt5Agg, Qt5Cairo non-interactive backends: agg, cairo, pdf, pgf, ps, svg, template  or a string of the form: module://my.module.name. Switching to an interactive backend is not possible if an unrelated event loop has already been started (e.g., switching to GTK3Agg if a TkAgg window has already been opened). Switching to a non-interactive backend is always possible.  
+forcebool, default: True
+
+
+If True (the default), raise an ImportError if the backend cannot be set up (either because it fails to import, or because an incompatible GUI interactive framework is already running); if False, silently ignore the failure.      See also  Backends
+matplotlib.get_backend

@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.required_db_vendor
+
+Options.required_db_vendor  
+Name of a supported database vendor that this model is specific to. Current built-in vendor names are: sqlite, postgresql, mysql, oracle. If this attribute is not empty and the current connection vendor doesn’t match it, the model will not be synchronized.

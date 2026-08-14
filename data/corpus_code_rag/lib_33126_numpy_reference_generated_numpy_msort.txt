@@ -1,0 +1,16 @@
+# numpy.reference.generated.numpy.msort
+
+numpy.msort   numpy.msort(a)[source]
+ 
+Return a copy of an array sorted along the first axis.  Parameters 
+ 
+aarray_like
+
+
+Array to be sorted.    Returns 
+ 
+sorted_arrayndarray
+
+
+Array of the same type and shape as a.      See also  sort
+  Notes np.msort(a) is equivalent to np.sort(a, axis=0).

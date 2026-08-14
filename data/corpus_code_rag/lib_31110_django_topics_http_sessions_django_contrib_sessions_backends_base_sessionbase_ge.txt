@@ -1,0 +1,6 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.get_expiry_age
+
+get_expiry_age()  
+Returns the number of seconds until this session expires. For sessions with no custom expiration (or those set to expire at browser close), this will equal SESSION_COOKIE_AGE. This function accepts two optional keyword arguments:  
+modification: last modification of the session, as a datetime object. Defaults to the current time. 
+expiry: expiry information for the session, as a datetime object, an int (in seconds), or None. Defaults to the value stored in the session by set_expiry(), if there is one, or None.

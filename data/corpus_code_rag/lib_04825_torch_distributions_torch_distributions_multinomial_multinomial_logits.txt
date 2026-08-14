@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.multinomial.Multinomial.logits
+
+property logits

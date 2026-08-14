@@ -1,0 +1,7 @@
+# tensorflow.test.testcase.failureexception
+
+tf.test.TestCase.failureException Assertion failed.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.test.TestCase.failureException  
+tf.test.TestCase.failureException(
+    *args, **kwargs
+)

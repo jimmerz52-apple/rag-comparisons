@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.tensorinfo.compositetensor
+
+tf.compat.v1.TensorInfo.CompositeTensor A ProtocolMessage
+ 
+
+
+ Attributes
+  components   repeated TensorInfo components  
+  type_spec   TypeSpecProto type_spec

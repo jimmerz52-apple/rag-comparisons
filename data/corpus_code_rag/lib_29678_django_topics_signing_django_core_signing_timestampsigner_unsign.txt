@@ -1,0 +1,4 @@
+# django.topics.signing#django.core.signing.TimestampSigner.unsign
+
+unsign(value, max_age=None)  
+Checks if value was signed less than max_age seconds ago, otherwise raises SignatureExpired. The max_age parameter can accept an integer or a datetime.timedelta object.

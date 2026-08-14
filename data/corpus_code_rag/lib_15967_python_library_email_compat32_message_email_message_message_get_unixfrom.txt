@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get_unixfrom
+
+get_unixfrom()  
+Return the message’s envelope header. Defaults to None if the envelope header was never set.

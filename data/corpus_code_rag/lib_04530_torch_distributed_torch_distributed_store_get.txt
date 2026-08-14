@@ -1,0 +1,13 @@
+# torch.distributed#torch.distributed.Store.get
+
+torch.distributed.Store.get(self: torch._C._distributed_c10d.Store, arg0: str) → bytes  
+Retrieves the value associated with the given key in the store. If key is not present in the store, the function will wait for timeout, which is defined when initializing the store, before throwing an exception.  Parameters 
+key (str) – The function will return the value associated with this key.  Returns 
+Value associated with key if key is in the store.    Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> store = dist.TCPStore("127.0.0.1", 0, 1, True, timedelta(seconds=30))
+>>> store.set("first_key", "first_value")
+>>> # Should return "first_value"
+>>> store.get("first_key")

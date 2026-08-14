@@ -1,0 +1,4 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.code
+
+property code  
+Returns a pretty-printed representation (as valid Python syntax) of the internal graph for the forward method. See Inspecting Code for details.

@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.ExitStack.push
+
+push(exit)  
+Adds a context manager’s __exit__() method to the callback stack. As __enter__ is not invoked, this method can be used to cover part of an __enter__() implementation with a context manager’s own __exit__() method. If passed an object that is not a context manager, this method assumes it is a callback with the same signature as a context manager’s __exit__() method and adds it directly to the callback stack. By returning true values, these callbacks can suppress exceptions the same way context manager __exit__() methods can. The passed in object is returned from the function, allowing this method to be used as a function decorator.

@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.http.base36_to_int
+
+base36_to_int(s) [source]
+ 
+Converts a base 36 string to an integer.

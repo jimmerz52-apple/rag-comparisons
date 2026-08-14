@@ -1,0 +1,11 @@
+# matplotlib._api_api#matplotlib._api.classproperty
+
+classmatplotlib._api.classproperty(fget, fset=None, fdel=None, doc=None)[source]
+ 
+Bases: object Like property, but also triggers on access via the class, and it is the class that's passed as argument. Examples class C:
+    @classproperty
+    def foo(cls):
+        return cls.__name__
+
+assert C.foo == "C"
+   propertyfget

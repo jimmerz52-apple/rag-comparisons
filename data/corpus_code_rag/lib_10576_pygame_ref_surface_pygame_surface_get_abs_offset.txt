@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_abs_offset
+
+get_abs_offset() 
+ find the absolute position of a child subsurface inside its top level parent get_abs_offset() -> (x, y)  Get the offset position of a child subsurface inside of its top level parent Surface. If the Surface is not a subsurface this will return (0, 0).

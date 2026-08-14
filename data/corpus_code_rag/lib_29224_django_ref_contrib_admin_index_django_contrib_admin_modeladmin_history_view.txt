@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.history_view
+
+ModelAdmin.history_view(request, object_id, extra_context=None)  
+Django view for the page that shows the modification history for a given model instance.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.arccosh
+
+arccosh()  
+acosh() -> Tensor See torch.arccosh()

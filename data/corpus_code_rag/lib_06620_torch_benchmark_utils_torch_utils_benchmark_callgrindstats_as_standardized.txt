@@ -1,0 +1,12 @@
+# torch.benchmark_utils#torch.utils.benchmark.CallgrindStats.as_standardized
+
+as_standardized() [source]
+ 
+Strip library names and some prefixes from function strings. When comparing two different sets of instruction counts, on stumbling block can be path prefixes. Callgrind includes the full filepath when reporting a function (as it should). However, this can cause issues when diffing profiles. If a key component such as Python or PyTorch was built in separate locations in the two profiles, which can result in something resembling: 23234231 /tmp/first_build_dir/thing.c:foo(...)
+ 9823794 /tmp/first_build_dir/thing.c:bar(...)
+  ...
+   53453 .../aten/src/Aten/...:function_that_actually_changed(...)
+  ...
+ -9823794 /tmp/second_build_dir/thing.c:bar(...)
+-23234231 /tmp/second_build_dir/thing.c:foo(...)
+ Stripping prefixes can ameliorate this issue by regularizing the strings and causing better cancellation of equivilent call sites when diffing.

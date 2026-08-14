@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.blocked_domains
+
+DefaultCookiePolicy.blocked_domains()  
+Return the sequence of blocked domains (as a tuple).

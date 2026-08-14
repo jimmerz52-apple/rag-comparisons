@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Cursor.description
+
+description  
+This read-only attribute provides the column names of the last query. To remain compatible with the Python DB API, it returns a 7-tuple for each column where the last six items of each tuple are None. It is set for SELECT statements without any matching rows as well.

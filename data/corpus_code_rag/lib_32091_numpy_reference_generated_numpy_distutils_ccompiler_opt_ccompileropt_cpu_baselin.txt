@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.cpu_baseline_flags
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.cpu_baseline_flags method   distutils.ccompiler_opt.CCompilerOpt.cpu_baseline_flags()[source]
+ 
+Returns a list of final CPU baseline compiler flags

@@ -1,0 +1,6 @@
+# flask.api.index#flask.Response.freeze
+
+freeze(no_etag=None)  
+Make the response object ready to be pickled. Does the following:  Buffer the response into a list, ignoring implicity_sequence_conversion and direct_passthrough. Set the Content-Length header. Generate an ETag header if one is not already set.   Changed in version 2.0: An ETag header is added, the no_etag parameter is deprecated and will be removed in Werkzeug 2.1.   Changelog Changed in version 0.6: The Content-Length header is set.   Parameters 
+no_etag (None) –   Return type 
+None

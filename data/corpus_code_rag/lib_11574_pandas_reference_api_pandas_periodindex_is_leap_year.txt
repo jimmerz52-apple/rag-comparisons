@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.is_leap_year
+
+pandas.PeriodIndex.is_leap_year   propertyPeriodIndex.is_leap_year
+ 
+Logical indicating if the date belongs to a leap year.

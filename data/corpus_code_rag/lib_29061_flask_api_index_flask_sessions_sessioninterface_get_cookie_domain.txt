@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.SessionInterface.get_cookie_domain
+
+get_cookie_domain(app)  
+Returns the domain that should be set for the session cookie. Uses SESSION_COOKIE_DOMAIN if it is configured, otherwise falls back to detecting the domain based on SERVER_NAME. Once detected (or if not set at all), SESSION_COOKIE_DOMAIN is updated to avoid re-running the logic.  Parameters 
+app (Flask) –   Return type 
+Optional[str]

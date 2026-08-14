@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.fit
+
+fit(X, y=None, **fit_params) [source]
+ 
+Fit the model Fit all the transforms one after the other and transform the data, then fit the transformed data using the final estimator.  Parameters 
+ 
+Xiterable 
+
+Training data. Must fulfill input requirements of first step of the pipeline.  
+yiterable, default=None 
+
+Training targets. Must fulfill label requirements for all steps of the pipeline.  
+**fit_paramsdict of string -> object 
+
+Parameters passed to the fit method of each step, where each parameter name is prefixed such that parameter p for step s has key s__p.    Returns 
+ 
+selfPipeline 
+
+This estimator

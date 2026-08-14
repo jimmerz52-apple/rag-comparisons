@@ -1,0 +1,12 @@
+# matplotlib.dates_api#matplotlib.dates.num2timedelta
+
+matplotlib.dates.num2timedelta(x)[source]
+ 
+Convert number of days to a timedelta object. If x is a sequence, a sequence of timedelta objects will be returned.  Parameters 
+ 
+xfloat, sequence of floats
+
+
+Number of days. The fraction part represents hours, minutes, seconds.    Returns 
+ 
+datetime.timedelta or list[datetime.timedelta]

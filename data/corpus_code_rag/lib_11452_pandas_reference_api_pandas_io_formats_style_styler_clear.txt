@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.io.formats.style.styler.clear
+
+pandas.io.formats.style.Styler.clear   Styler.clear()[source]
+ 
+Reset the Styler, removing any previously applied styles. Returns None.

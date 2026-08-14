@@ -1,0 +1,12 @@
+# tensorflow.data.experimental.autoshardpolicy
+
+tf.data.experimental.AutoShardPolicy Represents the type of auto-sharding we enable.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.data.experimental.AutoShardPolicy  Please see the DistributeOptions.auto_shard_policy documentation for more information on each type of autosharding.
+ 
+
+
+ Class Variables
+  AUTO   <AutoShardPolicy.AUTO: 0>  
+  DATA   <AutoShardPolicy.DATA: 2>  
+  FILE   <AutoShardPolicy.FILE: 1>  
+  OFF   <AutoShardPolicy.OFF: -1>

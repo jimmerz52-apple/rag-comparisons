@@ -1,0 +1,4 @@
+# python.library.curses#curses.noraw
+
+curses.noraw()  
+Leave raw mode. Return to normal “cooked” mode with line buffering.

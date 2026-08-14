@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.Locator.getLineNumber
+
+Locator.getLineNumber()  
+Return the line number where the current event begins.

@@ -1,0 +1,12 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.get
+
+get(key, default=None, type=None, as_bytes=False)  
+Return the default value if the requested data doesn’t exist. If type is provided and is a callable it should convert the value, return it or raise a ValueError if that is not possible. In this case the function will return the default as if the value was not found: >>> d = Headers([('Content-Length', '42')])
+>>> d.get('Content-Length', type=int)
+42
+  Changelog New in version 0.9: Added support for as_bytes.   Parameters 
+ 
+key – The key to be looked up. 
+default – The default value to be returned if the key can’t be looked up. If not further specified None is returned. 
+type – A callable that is used to cast the value in the Headers. If a ValueError is raised by this callable the default value is returned. 
+as_bytes – return bytes instead of strings.

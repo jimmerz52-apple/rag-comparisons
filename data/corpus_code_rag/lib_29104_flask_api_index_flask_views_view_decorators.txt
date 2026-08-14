@@ -1,0 +1,4 @@
+# flask.api.index#flask.views.View.decorators
+
+decorators: List[Callable] = []  
+The canonical way to decorate class-based views is to decorate the return value of as_view(). However since this moves parts of the logic from the class declaration to the place where it’s hooked into the routing system. You can place one or more decorators in this list and whenever the view function is created the result is automatically decorated.  Changelog New in version 0.8.

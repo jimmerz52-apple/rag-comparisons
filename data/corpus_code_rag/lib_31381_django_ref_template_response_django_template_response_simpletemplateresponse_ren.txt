@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.rendered_content
+
+SimpleTemplateResponse.rendered_content  
+The current rendered value of the response content, using the current template and context data.

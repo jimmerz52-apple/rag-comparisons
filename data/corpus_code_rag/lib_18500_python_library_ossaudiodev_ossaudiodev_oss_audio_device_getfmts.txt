@@ -1,0 +1,14 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.getfmts
+
+oss_audio_device.getfmts()  
+Return a bitmask of the audio output formats supported by the soundcard. Some of the formats supported by OSS are:   
+Format Description   
+AFMT_MU_LAW a logarithmic encoding (used by Sun .au files and /dev/audio)  
+AFMT_A_LAW a logarithmic encoding  
+AFMT_IMA_ADPCM a 4:1 compressed format defined by the Interactive Multimedia Association  
+AFMT_U8 Unsigned, 8-bit audio  
+AFMT_S16_LE Signed, 16-bit audio, little-endian byte order (as used by Intel processors)  
+AFMT_S16_BE Signed, 16-bit audio, big-endian byte order (as used by 68k, PowerPC, Sparc)  
+AFMT_S8 Signed, 8 bit audio  
+AFMT_U16_LE Unsigned, 16-bit little-endian audio  
+AFMT_U16_BE Unsigned, 16-bit big-endian audio   Consult the OSS documentation for a full list of audio formats, and note that most devices support only a subset of these formats. Some older devices only support AFMT_U8; the most common format used today is AFMT_S16_LE.

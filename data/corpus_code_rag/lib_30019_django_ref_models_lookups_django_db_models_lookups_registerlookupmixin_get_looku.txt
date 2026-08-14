@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.lookups.RegisterLookupMixin.get_lookups
+
+get_lookups()  
+Returns a dictionary of each lookup name registered in the class mapped to the Lookup class.

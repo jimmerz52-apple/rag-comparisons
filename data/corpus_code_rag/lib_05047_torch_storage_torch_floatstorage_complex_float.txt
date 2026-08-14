@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.complex_float
+
+complex_float()  
+Casts this storage to complex float type

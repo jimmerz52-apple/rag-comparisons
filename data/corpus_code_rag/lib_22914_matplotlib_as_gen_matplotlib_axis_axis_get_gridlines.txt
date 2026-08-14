@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_gridlines
+
+matplotlib.axis.Axis.get_gridlines   Axis.get_gridlines()[source]
+ 
+Return this Axis' grid lines as a list of Line2Ds.

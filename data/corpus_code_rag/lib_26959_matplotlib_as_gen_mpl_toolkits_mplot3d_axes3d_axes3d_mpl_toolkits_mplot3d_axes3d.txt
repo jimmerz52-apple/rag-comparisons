@@ -1,0 +1,48 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.plot_surface
+
+plot_surface(X, Y, Z, *args, norm=None, vmin=None, vmax=None, lightsource=None, **kwargs)[source]
+ 
+Create a surface plot. By default it will be colored in shades of a solid color, but it also supports colormapping by supplying the cmap argument.  Note The rcount and ccount kwargs, which both default to 50, determine the maximum number of samples used in each direction. If the input data is larger, it will be downsampled (by slicing) to these numbers of points.   Note To maximize rendering speed consider setting rstride and cstride to divisors of the number of rows minus 1 and columns minus 1 respectively. For example, given 51 rows rstride can be any of the divisors of 50. Similarly, a setting of rstride and cstride equal to 1 (or rcount and ccount equal the number of rows and columns) can use the optimized path.   Parameters 
+ 
+X, Y, Z2D arrays
+
+
+Data values.  
+rcount, ccountint
+
+
+Maximum number of samples used in each direction. If the input data is larger, it will be downsampled (by slicing) to these numbers of points. Defaults to 50.  
+rstride, cstrideint
+
+
+Downsampling stride in each direction. These arguments are mutually exclusive with rcount and ccount. If only one of rstride or cstride is set, the other defaults to 10. 'classic' mode uses a default of rstride = cstride = 10 instead of the new default of rcount = ccount = 50.  
+colorcolor-like
+
+
+Color of the surface patches.  
+cmapColormap
+
+
+Colormap of the surface patches.  
+facecolorsarray-like of colors.
+
+
+Colors of each individual patch.  
+normNormalize
+
+
+Normalization for the colormap.  
+vmin, vmaxfloat
+
+
+Bounds for the normalization.  
+shadebool, default: True
+
+
+Whether to shade the facecolors. Shading is always disabled when cmap is specified.  
+lightsourceLightSource
+
+
+The lightsource to use when shade is True.  **kwargs
+
+Other arguments are forwarded to Poly3DCollection.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.update
+
+matplotlib.artist.Artist.update   Artist.update(props)[source]
+ 
+Update this artist's properties from the dict props.  Parameters 
+ 
+propsdict

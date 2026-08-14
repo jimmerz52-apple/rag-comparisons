@@ -1,0 +1,4 @@
+# python.library.test#test.support.impl_detail
+
+@test.support.impl_detail(msg=None, **guards)  
+Decorator for invoking check_impl_detail() on guards. If that returns False, then uses msg as the reason for skipping the test.

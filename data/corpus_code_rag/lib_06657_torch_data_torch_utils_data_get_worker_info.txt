@@ -1,0 +1,9 @@
+# torch.data#torch.utils.data.get_worker_info
+
+torch.utils.data.get_worker_info() [source]
+ 
+Returns the information about the current DataLoader iterator worker process. When called in a worker, this returns an object guaranteed to have the following attributes:  
+id: the current worker id. 
+num_workers: the total number of workers. 
+seed: the random seed set for the current worker. This value is determined by main process RNG and the worker id. See DataLoader’s documentation for more details. 
+dataset: the copy of the dataset object in this process. Note that this will be a different object in a different process than the one in the main process.  When called in the main process, this returns None.  Note When used in a worker_init_fn passed over to DataLoader, this method can be useful to set up each worker process differently, for instance, using worker_id to configure the dataset object to only read a specific fraction of a sharded dataset, or use seed to seed other libraries used in dataset code (e.g., NumPy).

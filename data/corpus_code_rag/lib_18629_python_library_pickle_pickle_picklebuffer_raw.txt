@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.PickleBuffer.raw
+
+raw()  
+Return a memoryview of the memory area underlying this buffer. The returned object is a one-dimensional, C-contiguous memoryview with format B (unsigned bytes). BufferError is raised if the buffer is neither C- nor Fortran-contiguous.

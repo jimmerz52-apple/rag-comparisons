@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.CannotSendHeader
+
+exception http.client.CannotSendHeader  
+A subclass of ImproperConnectionState.

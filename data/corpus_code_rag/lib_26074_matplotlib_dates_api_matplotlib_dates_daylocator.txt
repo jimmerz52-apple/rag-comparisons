@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.DayLocator
+
+classmatplotlib.dates.DayLocator(bymonthday=None, interval=1, tz=None)[source]
+ 
+Bases: matplotlib.dates.RRuleLocator Make ticks on occurrences of each day of the month. For example, 1, 15, 30. Mark every day in bymonthday; bymonthday can be an int or sequence. Default is to tick every day of the month: bymonthday=range(1, 32).

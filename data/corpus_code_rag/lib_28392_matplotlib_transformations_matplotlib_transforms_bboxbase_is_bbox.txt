@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.is_bbox
+
+is_bbox=True

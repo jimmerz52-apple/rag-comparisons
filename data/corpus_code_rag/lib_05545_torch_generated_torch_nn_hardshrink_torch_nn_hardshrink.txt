@@ -1,0 +1,11 @@
+# torch.generated.torch.nn.hardshrink#torch.nn.Hardshrink
+
+class torch.nn.Hardshrink(lambd=0.5) [source]
+ 
+Applies the hard shrinkage function element-wise:  HardShrink(x)={x, if x>λx, if x<−λ0, otherwise \text{HardShrink}(x) = \begin{cases} x, & \text{ if } x > \lambda \\ x, & \text{ if } x < -\lambda \\ 0, & \text{ otherwise } \end{cases}  
+ Parameters 
+lambd – the λ\lambda  value for the Hardshrink formulation. Default: 0.5    Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.Hardshrink()
+>>> input = torch.randn(2)
+>>> output = m(input)

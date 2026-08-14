@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.linear_model.ransacregressor#sklearn.linear_model.RANSACRegressor.score
+
+score(X, y) [source]
+ 
+Returns the score of the prediction. This is a wrapper for estimator_.score(X, y).  Parameters 
+ 
+Xnumpy array or sparse matrix of shape [n_samples, n_features] 
+
+Training data.  
+yarray, shape = [n_samples] or [n_samples, n_targets] 
+
+Target values.    Returns 
+ 
+zfloat 
+
+Score of the prediction.

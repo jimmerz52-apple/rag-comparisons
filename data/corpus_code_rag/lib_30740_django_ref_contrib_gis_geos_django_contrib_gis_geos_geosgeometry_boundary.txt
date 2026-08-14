@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.boundary
+
+GEOSGeometry.boundary  
+Returns the boundary as a newly allocated Geometry object.

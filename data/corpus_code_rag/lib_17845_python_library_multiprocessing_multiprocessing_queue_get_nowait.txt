@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Queue.get_nowait
+
+get_nowait()  
+Equivalent to get(False).

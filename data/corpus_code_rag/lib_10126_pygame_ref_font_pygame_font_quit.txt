@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.quit
+
+pygame.font.quit() 
+ uninitialize the font module quit() -> None  Manually uninitialize SDL_ttf's font system. This is called automatically by pygame.quit(). It is safe to call this function even if font is currently not initialized.

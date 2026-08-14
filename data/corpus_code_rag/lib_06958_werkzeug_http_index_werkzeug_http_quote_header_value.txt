@@ -1,0 +1,9 @@
+# werkzeug.http.index#werkzeug.http.quote_header_value
+
+werkzeug.http.quote_header_value(value, extra_chars='', allow_token=True)  
+Quote a header value if necessary.  Changelog New in version 0.5.   Parameters 
+ 
+value (Union[str, int]) – the value to quote. 
+extra_chars (str) – a list of extra characters to skip quoting. 
+allow_token (bool) – if this is enabled token values are returned unchanged.   Return type 
+str

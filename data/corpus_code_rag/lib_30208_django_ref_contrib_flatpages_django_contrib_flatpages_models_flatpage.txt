@@ -1,0 +1,4 @@
+# django.ref.contrib.flatpages#django.contrib.flatpages.models.FlatPage
+
+class FlatPage  
+Flatpages are represented by a standard Django model, which lives in django/contrib/flatpages/models.py. You can access flatpage objects via the Django database API.

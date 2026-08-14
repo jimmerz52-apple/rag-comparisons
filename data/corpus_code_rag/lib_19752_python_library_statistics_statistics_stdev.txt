@@ -1,0 +1,5 @@
+# python.library.statistics#statistics.stdev
+
+statistics.stdev(data, xbar=None)  
+Return the sample standard deviation (the square root of the sample variance). See variance() for arguments and other details. >>> stdev([1.5, 2.5, 2.5, 2.75, 3.25, 4.75])
+1.0810874155219827

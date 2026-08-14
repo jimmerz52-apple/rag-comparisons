@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.orgqr
+
+orgqr(input2) → Tensor  
+See torch.orgqr()

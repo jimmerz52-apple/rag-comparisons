@@ -1,0 +1,5 @@
+# torch.data#torch.utils.data.Sampler
+
+class torch.utils.data.Sampler(data_source) [source]
+ 
+Base class for all Samplers. Every Sampler subclass has to provide an __iter__() method, providing a way to iterate over indices of dataset elements, and a __len__() method that returns the length of the returned iterators.  Note The __len__() method isn’t strictly required by DataLoader, but is expected in any calculation involving the length of a DataLoader.

@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.ROUND_HALF_DOWN
+
+decimal.ROUND_HALF_DOWN  
+Round to nearest with ties going towards zero.

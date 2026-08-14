@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.isinf
+
+cmath.isinf(x)  
+Return True if either the real or the imaginary part of x is an infinity, and False otherwise.

@@ -1,0 +1,9 @@
+# werkzeug.http.index#werkzeug.http.parse_accept_header
+
+werkzeug.http.parse_accept_header(value[, class])  
+Parses an HTTP Accept-* header. This does not implement a complete valid algorithm but one that supports at least value and quality extraction. Returns a new Accept object (basically a list of (value, quality) tuples sorted by the quality with some additional accessor methods). The second parameter can be a subclass of Accept that is created with the parsed values and returned.  Parameters 
+ 
+value (Optional[str]) – the accept header string to be parsed. 
+cls (Optional[Type[werkzeug.http._TAnyAccept]]) – the wrapper class for the return value (can be Accept or a subclass thereof)   Returns 
+an instance of cls.  Return type 
+werkzeug.http._TAnyAccept

@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.auto_scale_xyz
+
+auto_scale_xyz(X, Y, Z=None, had_data=None)[source]

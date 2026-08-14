@@ -1,0 +1,27 @@
+# matplotlib.scale_api#matplotlib.scale.LogisticTransform
+
+classmatplotlib.scale.LogisticTransform(nonpositive='mask')[source]
+ 
+Bases: matplotlib.transforms.Transform  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       has_inverse=True
+ 
+True if this transform has a corresponding inverse transform. 
+   input_dims=1
+ 
+The number of input dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy. 
+   is_separable=True
+ 
+True if this transform is separable in the x- and y- dimensions. 
+   output_dims=1
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   transform_non_affine(a)[source]
+ 
+logistic transform (base 10)

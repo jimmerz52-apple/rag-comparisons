@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.extensions
+
+extensions: dict  
+a place where extensions can store application specific state. For example this is where an extension could store database engines and similar things. The key must match the name of the extension module. For example in case of a “Flask-Foo” extension in flask_foo, the key would be 'foo'.  Changelog New in version 0.7.

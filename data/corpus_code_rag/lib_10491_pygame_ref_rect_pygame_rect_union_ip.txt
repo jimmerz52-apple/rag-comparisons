@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.union_ip
+
+union_ip() 
+ joins two rectangles into one, in place union_ip(Rect) -> None  Same as the Rect.union() method, but operates in place.

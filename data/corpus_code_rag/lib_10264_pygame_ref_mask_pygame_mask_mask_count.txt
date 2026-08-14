@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.count
+
+count() 
+ Returns the number of set bits count() -> bits      
+Returns:
+the number of set bits in the mask  
+Return type:
+int

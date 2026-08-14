@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.Font.copy
+
+copy()  
+Return new instance of the current font.

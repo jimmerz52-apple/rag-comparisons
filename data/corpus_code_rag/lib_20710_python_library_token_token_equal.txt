@@ -1,0 +1,4 @@
+# python.library.token#token.EQUAL
+
+token.EQUAL  
+Token value for "=".

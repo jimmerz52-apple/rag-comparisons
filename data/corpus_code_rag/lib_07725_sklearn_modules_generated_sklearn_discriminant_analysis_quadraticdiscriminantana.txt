@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.discriminant_analysis.quadraticdiscriminantanalysis#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.decision_function
+
+decision_function(X) [source]
+ 
+Apply decision function to an array of samples. The decision function is equal (up to a constant factor) to the log-posterior of the model, i.e. log p(y = k | x). In a binary classification setting this instead corresponds to the difference log p(y = 1 | x) - log p(y = 0 | x). See Mathematical formulation of the LDA and QDA classifiers.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Array of samples (test vectors).    Returns 
+ 
+Cndarray of shape (n_samples,) or (n_samples, n_classes) 
+
+Decision function values related to each class, per sample. In the two-class case, the shape is (n_samples,), giving the log likelihood ratio of the positive class.

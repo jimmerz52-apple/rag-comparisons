@@ -1,0 +1,13 @@
+# python.library.test#test.support.catch_unraisable_exception
+
+test.support.catch_unraisable_exception()  
+Context manager catching unraisable exception using sys.unraisablehook(). Storing the exception value (cm.unraisable.exc_value) creates a reference cycle. The reference cycle is broken explicitly when the context manager exits. Storing the object (cm.unraisable.object) can resurrect it if it is set to an object which is being finalized. Exiting the context manager clears the stored object. Usage: with support.catch_unraisable_exception() as cm:
+    # code creating an "unraisable exception"
+    ...
+
+    # check the unraisable exception: use cm.unraisable
+    ...
+
+# cm.unraisable attribute no longer exists at this point
+# (to break a reference cycle)
+  New in version 3.8.

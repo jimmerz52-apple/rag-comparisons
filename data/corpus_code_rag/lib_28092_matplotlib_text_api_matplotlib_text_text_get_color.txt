@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_color
+
+get_color()[source]
+ 
+Return the color of the text.

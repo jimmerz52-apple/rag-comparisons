@@ -1,0 +1,24 @@
+# tensorflow.keras.applications.mobilenet.decode_predictions
+
+tf.keras.applications.mobilenet.decode_predictions     View source on GitHub    Decodes the prediction of an ImageNet model.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.applications.mobilenet.decode_predictions  
+tf.keras.applications.mobilenet.decode_predictions(
+    preds, top=5
+)
+
+ 
+
+
+ Arguments
+  preds   Numpy array encoding a batch of predictions.  
+  top   Integer, how many top-guesses to return. Defaults to 5.   
+ 
+
+
+ Returns   A list of lists of top class prediction tuples (class_name, class_description, score). One list of tuples per sample in batch input.  
+
+ 
+
+
+ Raises
+  ValueError   In case of invalid shape of the pred array (must be 2D).

@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.QueryDict.dict
+
+QueryDict.dict()  
+Returns a dict representation of QueryDict. For every (key, list) pair in QueryDict, dict will have (key, item), where item is one element of the list, using the same logic as QueryDict.__getitem__(): >>> q = QueryDict('a=1&a=3&a=5')
+>>> q.dict()
+{'a': '5'}

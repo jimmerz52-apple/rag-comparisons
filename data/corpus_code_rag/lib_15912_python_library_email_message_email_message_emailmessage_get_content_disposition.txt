@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.get_content_disposition
+
+get_content_disposition()  
+Return the lowercased value (without parameters) of the message’s Content-Disposition header if it has one, or None. The possible values for this method are inline, attachment or None if the message follows RFC 2183.  New in version 3.5.

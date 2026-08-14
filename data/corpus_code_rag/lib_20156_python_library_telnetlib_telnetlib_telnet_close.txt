@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.close
+
+Telnet.close()  
+Close the connection.

@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.peer
+
+peer  
+Holds the name of the client peer as returned by conn.getpeername() where conn is conn.

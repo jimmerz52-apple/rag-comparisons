@@ -1,0 +1,17 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_linestyle
+
+set_linestyle(ls)[source]
+ 
+Set the patch linestyle.   
+linestyle description   
+'-' or 'solid' solid line  
+'--' or 'dashed' dashed line  
+'-.' or 'dashdot' dash-dotted line  
+':' or 'dotted' dotted line  
+'none', 'None', ' ', or '' draw nothing   Alternatively a dash tuple of the following form can be provided: (offset, onoffseq)
+ where onoffseq is an even length tuple of on and off ink in points.  Parameters 
+ 
+ls{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}
+
+
+The line style.

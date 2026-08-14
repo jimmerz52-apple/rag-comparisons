@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.age
+
+age  
+The Age response-header field conveys the sender’s estimate of the amount of time since the response (or its revalidation) was generated at the origin server. Age values are non-negative decimal integers, representing time in seconds.

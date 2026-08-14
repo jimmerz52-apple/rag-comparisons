@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.kernel_approximation.polynomialcountsketch#sklearn.kernel_approximation.PolynomialCountSketch.fit
+
+fit(X, y=None) [source]
+ 
+Fit the model with X. Initializes the internal variables. The method needs no information about the distribution of data, so we only care about n_features in X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data, where n_samples in the number of samples and n_features is the number of features.    Returns 
+ 
+selfobject 
+
+Returns the transformer.

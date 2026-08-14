@@ -1,0 +1,3 @@
+scenario,generative_winner,generative_score,extractive_winner,extractive_score,composite_winner,composite_score,ranking_flips
+humaneval,Vector + rerank,0.535,Vector + rerank,0.149,Vector + rerank,0.342,False
+mbpp,Vector + rerank,0.375,Vector + rerank,0.151,Vector + rerank,0.263,False

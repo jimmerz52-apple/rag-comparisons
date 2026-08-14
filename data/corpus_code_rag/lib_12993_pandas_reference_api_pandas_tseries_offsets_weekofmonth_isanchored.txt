@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.weekofmonth.isanchored
+
+pandas.tseries.offsets.WeekOfMonth.isAnchored   WeekOfMonth.isAnchored()

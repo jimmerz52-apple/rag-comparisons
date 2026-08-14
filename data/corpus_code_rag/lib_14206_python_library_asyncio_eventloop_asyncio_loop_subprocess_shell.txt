@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.subprocess_shell
+
+coroutine loop.subprocess_shell(protocol_factory, cmd, *, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, **kwargs)  
+Create a subprocess from cmd, which can be a str or a bytes string encoded to the filesystem encoding, using the platform’s “shell” syntax. This is similar to the standard library subprocess.Popen class called with shell=True. The protocol_factory must be a callable returning a subclass of the SubprocessProtocol class. See subprocess_exec() for more details about the remaining arguments. Returns a pair of (transport, protocol), where transport conforms to the SubprocessTransport base class and protocol is an object instantiated by the protocol_factory.

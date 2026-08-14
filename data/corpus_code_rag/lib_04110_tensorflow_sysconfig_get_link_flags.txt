@@ -1,0 +1,10 @@
+# tensorflow.sysconfig.get_link_flags
+
+tf.sysconfig.get_link_flags     View source on GitHub    Get the link flags for custom operators.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.sysconfig.get_link_flags  
+tf.sysconfig.get_link_flags()
+
+ 
+
+
+ Returns   The link flags.

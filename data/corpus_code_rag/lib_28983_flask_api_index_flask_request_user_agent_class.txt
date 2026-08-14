@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.user_agent_class
+
+user_agent_class  
+alias of werkzeug.useragents._UserAgent

@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.empty_cache
+
+torch.cuda.empty_cache() [source]
+ 
+Releases all unoccupied cached memory currently held by the caching allocator so that those can be used in other GPU application and visible in nvidia-smi.  Note empty_cache() doesn’t increase the amount of GPU memory available for PyTorch. However, it may help reduce fragmentation of GPU memory in certain cases. See Memory management for more details about GPU memory management.

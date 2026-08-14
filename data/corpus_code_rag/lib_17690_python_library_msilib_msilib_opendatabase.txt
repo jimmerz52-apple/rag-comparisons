@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.OpenDatabase
+
+msilib.OpenDatabase(path, persist)  
+Return a new database object by calling MsiOpenDatabase. path is the file name of the MSI file; persist can be one of the constants MSIDBOPEN_CREATEDIRECT, MSIDBOPEN_CREATE, MSIDBOPEN_DIRECT, MSIDBOPEN_READONLY, or MSIDBOPEN_TRANSACT, and may include the flag MSIDBOPEN_PATCHFILE. See the Microsoft documentation for the meaning of these flags; depending on the flags, an existing database is opened, or a new one created.

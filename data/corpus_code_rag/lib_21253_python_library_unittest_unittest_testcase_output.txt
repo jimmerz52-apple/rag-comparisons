@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.output
+
+output  
+A list of str objects with the formatted output of matching messages.

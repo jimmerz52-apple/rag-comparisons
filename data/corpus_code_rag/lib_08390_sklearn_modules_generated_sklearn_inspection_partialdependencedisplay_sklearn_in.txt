@@ -1,0 +1,30 @@
+# sklearn.modules.generated.sklearn.inspection.partialdependencedisplay#sklearn.inspection.PartialDependenceDisplay.plot
+
+plot(*, ax=None, n_cols=3, line_kw=None, contour_kw=None) [source]
+ 
+Plot partial dependence plots.  Parameters 
+ 
+axMatplotlib axes or array-like of Matplotlib axes, default=None 
+
+ 
+ If a single axis is passed in, it is treated as a bounding axes
+
+and a grid of partial dependence plots will be drawn within these bounds. The n_cols parameter controls the number of columns in the grid.    
+ If an array-like of axes are passed in, the partial dependence
+
+plots will be drawn directly into these axes.    
+ 
+If None, a figure and a bounding axes is created and treated 
+
+as the single axes case.      
+n_colsint, default=3 
+
+The maximum number of columns in the grid plot. Only active when ax is a single axes or None.  
+line_kwdict, default=None 
+
+Dict with keywords passed to the matplotlib.pyplot.plot call. For one-way partial dependence plots.  
+contour_kwdict, default=None 
+
+Dict with keywords passed to the matplotlib.pyplot.contourf call for two-way partial dependence plots.    Returns 
+ 
+displayPartialDependenceDisplay

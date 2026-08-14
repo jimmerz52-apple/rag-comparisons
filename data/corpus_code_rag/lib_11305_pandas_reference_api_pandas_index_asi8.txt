@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.index.asi8
+
+pandas.Index.asi8   propertyIndex.asi8
+ 
+Integer representation of the values.  Returns 
+ ndarray
+
+An ndarray with int64 dtype.

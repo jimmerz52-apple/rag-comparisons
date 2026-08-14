@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.names
+
+tkinter.font.names(root=None)  
+Return the names of defined fonts.

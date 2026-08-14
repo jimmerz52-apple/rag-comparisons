@@ -1,0 +1,5 @@
+# matplotlib.tight_bbox_api#matplotlib.tight_bbox.process_figure_for_rasterizing
+
+matplotlib.tight_bbox.process_figure_for_rasterizing(fig, bbox_inches_restore, fixed_dpi=None)[source]
+ 
+A function that needs to be called when figure dpi changes during the drawing (e.g., rasterizing). It recovers the bbox and re-adjust it with the new dpi.

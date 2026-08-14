@@ -1,0 +1,22 @@
+# pygame.ref.mixer#pygame.mixer.Sound
+
+pygame.mixer.Sound 
+ Create a new Sound object from a file or buffer object Sound(filename) -> Sound Sound(file=filename) -> Sound Sound(buffer) -> Sound Sound(buffer=buffer) -> Sound Sound(object) -> Sound Sound(file=object) -> Sound Sound(array=object) -> Sound  Load a new sound buffer from a filename, a python file object or a readable buffer object. Limited resampling will be performed to help the sample match the initialize arguments for the mixer. A Unicode string can only be a file pathname. A Python 2.x string or a Python 3.x bytes object can be either a pathname or a buffer object. Use the 'file' or 'buffer' keywords to avoid ambiguity; otherwise Sound may guess wrong. If the array keyword is used, the object is expected to export a version 3, C level array interface or, for Python 2.6 or later, a new buffer interface (The object is checked for a buffer interface first.) The Sound object represents actual sound sample data. Methods that change the state of the Sound object will the all instances of the Sound playback. A Sound object also exports an array interface, and, for Python 2.6 or later, a new buffer interface. The Sound can be loaded from an OGG audio file or from an uncompressed WAV. Note: The buffer will be copied internally, no data will be shared between it and the Sound object. For now buffer and array support is consistent with sndarray.make_sound for Numeric arrays, in that sample sign and byte order are ignored. This will change, either by correctly handling sign and byte order, or by raising an exception when different. Also, source samples are truncated to fit the audio sample size. This will not change.  New in pygame 1.8: pygame.mixer.Sound(buffer)   New in pygame 1.9.2: pygame.mixer.Sound keyword arguments and array interface support    play() 
+ begin sound playback play(loops=0, maxtime=0, fade_ms=0) -> Channel  Begin playback of the Sound (i.e., on the computer's speakers) on an available Channel. This will forcibly select a Channel, so playback may cut off a currently playing sound if necessary. The loops argument controls how many times the sample will be repeated after being played the first time. A value of 5 means that the sound will be played once, then repeated five times, and so is played a total of six times. The default value (zero) means the Sound is not repeated, and so is only played once. If loops is set to -1 the Sound will loop indefinitely (though you can still call stop() to stop it). The maxtime argument can be used to stop playback after a given number of milliseconds. The fade_ms argument will make the sound start playing at 0 volume and fade up to full volume over the time given. The sample may end before the fade-in is complete. This returns the Channel object for the channel that was selected. 
+   stop() 
+ stop sound playback stop() -> None  This will stop the playback of this Sound on any active Channels. 
+   fadeout() 
+ stop sound playback after fading out fadeout(time) -> None  This will stop playback of the sound after fading it out over the time argument in milliseconds. The Sound will fade and stop on all actively playing channels. 
+   set_volume() 
+ set the playback volume for this Sound set_volume(value) -> None  This will set the playback volume (loudness) for this Sound. This will immediately affect the Sound if it is playing. It will also affect any future playback of this Sound.     
+Parameters:
+
+value (float) -- volume in the range of 0.0 to 1.0 (inclusive)  If value < 0.0, the volume will not be changed If value > 1.0, the volume will be set to 1.0      
+   get_volume() 
+ get the playback volume get_volume() -> value  Return a value from 0.0 to 1.0 representing the volume for this Sound. 
+   get_num_channels() 
+ count how many times this Sound is playing get_num_channels() -> count  Return the number of active channels this sound is playing on. 
+   get_length() 
+ get the length of the Sound get_length() -> seconds  Return the length of this Sound in seconds. 
+   get_raw() 
+ return a bytestring copy of the Sound samples. get_raw() -> bytes  Return a copy of the Sound object buffer as a bytes (for Python 3.x) or str (for Python 2.x) object.  New in pygame 1.9.2.

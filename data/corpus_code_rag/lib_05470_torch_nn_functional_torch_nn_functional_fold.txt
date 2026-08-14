@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.fold
+
+torch.nn.functional.fold(input, output_size, kernel_size, dilation=1, padding=0, stride=1) [source]
+ 
+Combines an array of sliding local blocks into a large containing tensor.  Warning Currently, only 3-D output tensors (unfolded batched image-like tensors) are supported.  See torch.nn.Fold for details

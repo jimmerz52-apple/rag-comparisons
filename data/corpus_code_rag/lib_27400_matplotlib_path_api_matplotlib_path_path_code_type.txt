@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.code_type
+
+code_type
+ 
+alias of numpy.uint8

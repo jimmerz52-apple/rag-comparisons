@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.cache.patch_response_headers
+
+patch_response_headers(response, cache_timeout=None)  
+Adds some useful headers to the given HttpResponse object:  Expires Cache-Control  Each header is only added if it isn’t already set. cache_timeout is in seconds. The CACHE_MIDDLEWARE_SECONDS setting is used by default.

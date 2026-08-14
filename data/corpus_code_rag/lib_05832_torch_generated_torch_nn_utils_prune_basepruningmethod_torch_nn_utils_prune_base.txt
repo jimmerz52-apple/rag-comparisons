@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.utils.prune.basepruningmethod#torch.nn.utils.prune.BasePruningMethod.remove
+
+remove(module) [source]
+ 
+Removes the pruning reparameterization from a module. The pruned parameter named name remains permanently pruned, and the parameter named name+'_orig' is removed from the parameter list. Similarly, the buffer named name+'_mask' is removed from the buffers.  Note Pruning itself is NOT undone or reversed!

@@ -1,0 +1,154 @@
+# sklearn.modules.generated.sklearn.feature_selection.sequentialfeatureselector#sklearn.feature_selection.SequentialFeatureSelector
+
+class sklearn.feature_selection.SequentialFeatureSelector(estimator, *, n_features_to_select=None, direction='forward', scoring=None, cv=5, n_jobs=None) [source]
+ 
+Transformer that performs Sequential Feature Selection. This Sequential Feature Selector adds (forward selection) or removes (backward selection) features to form a feature subset in a greedy fashion. At each stage, this estimator chooses the best feature to add or remove based on the cross-validation score of an estimator. Read more in the User Guide.  New in version 0.24.   Parameters 
+ 
+estimatorestimator instance 
+
+An unfitted estimator.  
+n_features_to_selectint or float, default=None 
+
+The number of features to select. If None, half of the features are selected. If integer, the parameter is the absolute number of features to select. If float between 0 and 1, it is the fraction of features to select.  direction: {‘forward’, ‘backward’}, default=’forward’
+
+Whether to perform forward selection or backward selection.  
+scoringstr, callable, list/tuple or dict, default=None 
+
+A single str (see The scoring parameter: defining model evaluation rules) or a callable (see Defining your scoring strategy from metric functions) to evaluate the predictions on the test set. NOTE that when using custom scorers, each scorer should return a single value. Metric functions returning a list/array of values can be wrapped into multiple scorers that return one value each. If None, the estimator’s score method is used.  
+cvint, cross-validation generator or an iterable, default=None 
+
+Determines the cross-validation splitting strategy. Possible inputs for cv are:  None, to use the default 5-fold cross validation, integer, to specify the number of folds in a (Stratified)KFold, 
+CV splitter, An iterable yielding (train, test) splits as arrays of indices.  For integer/None inputs, if the estimator is a classifier and y is either binary or multiclass, StratifiedKFold is used. In all other cases, KFold is used. Refer User Guide for the various cross-validation strategies that can be used here.  
+n_jobsint, default=None 
+
+Number of jobs to run in parallel. When evaluating a new feature to add or remove, the cross-validation procedure is parallel over the folds. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.    Attributes 
+ 
+n_features_to_select_int 
+
+The number of features that were selected.  
+support_ndarray of shape (n_features,), dtype=bool 
+
+The mask of selected features.      See also  
+RFE
+
+
+Recursive feature elimination based on importance weights.  
+RFECV
+
+
+Recursive feature elimination based on importance weights, with automatic selection of the number of features.  
+SelectFromModel
+
+
+Feature selection based on thresholds of importance weights.    Examples >>> from sklearn.feature_selection import SequentialFeatureSelector
+>>> from sklearn.neighbors import KNeighborsClassifier
+>>> from sklearn.datasets import load_iris
+>>> X, y = load_iris(return_X_y=True)
+>>> knn = KNeighborsClassifier(n_neighbors=3)
+>>> sfs = SequentialFeatureSelector(knn, n_features_to_select=3)
+>>> sfs.fit(X, y)
+SequentialFeatureSelector(estimator=KNeighborsClassifier(n_neighbors=3),
+                          n_features_to_select=3)
+>>> sfs.get_support()
+array([ True, False,  True,  True])
+>>> sfs.transform(X).shape
+(150, 3)
+ Methods  
+fit(X, y) Learn the features to select.  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_params([deep]) Get parameters for this estimator.  
+get_support([indices]) Get a mask, or integer index, of the features selected  
+inverse_transform(X) Reverse the transformation operation  
+set_params(**params) Set the parameters of this estimator.  
+transform(X) Reduce X to the selected features.    
+fit(X, y) [source]
+ 
+Learn the features to select.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vectors.  
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+selfobject 
+   
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+get_support(indices=False) [source]
+ 
+Get a mask, or integer index, of the features selected  Parameters 
+ 
+indicesbool, default=False 
+
+If True, the return value will be an array of integers, rather than a boolean mask.    Returns 
+ 
+supportarray 
+
+An index that selects the retained features from a feature vector. If indices is False, this is a boolean array of shape [# input features], in which an element is True iff its corresponding feature is selected for retention. If indices is True, this is an integer array of shape [# output features] whose values are indices into the input feature vector.     
+  
+inverse_transform(X) [source]
+ 
+Reverse the transformation operation  Parameters 
+ 
+Xarray of shape [n_samples, n_selected_features] 
+
+The input samples.    Returns 
+ 
+X_rarray of shape [n_samples, n_original_features] 
+
+X with columns of zeros inserted where features would have been removed by transform.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+  
+transform(X) [source]
+ 
+Reduce X to the selected features.  Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+X_rarray of shape [n_samples, n_selected_features] 
+
+The input samples with only the selected features.

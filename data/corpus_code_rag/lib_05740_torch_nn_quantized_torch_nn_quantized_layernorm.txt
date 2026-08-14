@@ -1,0 +1,9 @@
+# torch.nn.quantized#torch.nn.quantized.LayerNorm
+
+class torch.nn.quantized.LayerNorm(normalized_shape, weight, bias, scale, zero_point, eps=1e-05, elementwise_affine=True) [source]
+ 
+This is the quantized version of LayerNorm.  Additional args:
+
+ 
+scale - quantization scale of the output, type: double. 
+zero_point - quantization zero point of the output, type: long.

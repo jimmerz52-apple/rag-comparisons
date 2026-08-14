@@ -1,0 +1,6 @@
+# django.ref.forms.widgets#django.forms.FileInput
+
+class FileInput  
+ 
+template_name: 'django/forms/widgets/file.html'
+ Renders as: <input type="file" ...>

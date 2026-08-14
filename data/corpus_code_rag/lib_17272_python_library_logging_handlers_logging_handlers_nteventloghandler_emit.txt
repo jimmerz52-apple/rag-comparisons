@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.NTEventLogHandler.emit
+
+emit(record)  
+Determines the message ID, event category and event type, and then logs the message in the NT event log.

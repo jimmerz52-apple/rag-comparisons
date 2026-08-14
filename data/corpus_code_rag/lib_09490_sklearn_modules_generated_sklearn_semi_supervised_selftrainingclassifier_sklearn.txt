@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.semi_supervised.selftrainingclassifier#sklearn.semi_supervised.SelfTrainingClassifier.predict_proba
+
+predict_proba(X) [source]
+ 
+Predict probability for each possible outcome.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Array representing the data.    Returns 
+ 
+yndarray of shape (n_samples, n_features) 
+
+Array with prediction probabilities.

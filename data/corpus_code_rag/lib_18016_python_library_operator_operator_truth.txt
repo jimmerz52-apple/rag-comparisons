@@ -1,0 +1,4 @@
+# python.library.operator#operator.truth
+
+operator.truth(obj)  
+Return True if obj is true, and False otherwise. This is equivalent to using the bool constructor.

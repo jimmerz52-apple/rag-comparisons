@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.lazyconvtranspose2d#torch.nn.LazyConvTranspose2d.cls_to_become
+
+cls_to_become  
+alias of ConvTranspose2d

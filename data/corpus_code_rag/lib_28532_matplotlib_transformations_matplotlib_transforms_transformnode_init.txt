@@ -1,0 +1,10 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.__init__
+
+__init__(shorthand_name=None)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.

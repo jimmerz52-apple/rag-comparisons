@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.round
+
+tf.experimental.numpy.round TensorFlow variant of NumPy's round. 
+tf.experimental.numpy.round(
+    a, decimals=0
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.round.

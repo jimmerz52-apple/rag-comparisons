@@ -1,0 +1,5 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.ship
+
+matplotlib.mathtext.ship(ox, oy, box)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

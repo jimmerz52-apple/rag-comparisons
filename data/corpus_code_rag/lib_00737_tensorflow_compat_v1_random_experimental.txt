@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.random.experimental
+
+Module: tf.compat.v1.random.experimental Public API for tf.random.experimental namespace. Classes class Algorithm: An enumeration. class Generator: Random-number generator. Functions create_rng_state(...): Creates a RNG state from an integer or a vector. get_global_generator(...): Retrieves the global generator. set_global_generator(...): Replaces the global generator with another Generator object. stateless_fold_in(...): Folds in data to an RNG seed to form a new RNG seed. stateless_split(...): Splits an RNG seed into num new seeds by adding a leading axis.

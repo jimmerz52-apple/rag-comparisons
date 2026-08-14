@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.DateTimeRangeField
+
+class DateTimeRangeField  
+Based on DateTimeField and translates its input into DateTimeTZRange. Default for DateTimeRangeField.

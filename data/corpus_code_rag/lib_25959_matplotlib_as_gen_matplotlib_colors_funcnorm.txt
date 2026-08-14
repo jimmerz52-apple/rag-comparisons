@@ -1,0 +1,43 @@
+# matplotlib._as_gen.matplotlib.colors.funcnorm
+
+matplotlib.colors.FuncNorm   classmatplotlib.colors.FuncNorm(functions, vmin=None, vmax=None, clip=False)[source]
+ 
+Bases: matplotlib.colors.FuncNorm Arbitrary normalization using functions for the forward and inverse.  Parameters 
+ 
+functions(callable, callable)
+
+
+two-tuple of the forward and inverse functions for the normalization. The forward function must be monotonic. Both functions must have the signature def forward(values: array-like) -> array-like
+  
+vmin, vmaxfloat or None
+
+
+If vmin and/or vmax is not given, they are initialized from the minimum and maximum value, respectively, of the first input processed; i.e., __call__(A) calls autoscale_None(A).  
+clipbool, default: False
+
+
+If True values falling outside the range [vmin, vmax], are mapped to 0 or 1, whichever is closer, and masked values are set to 1. If False masked values remain masked. Clipping silently defeats the purpose of setting the over, under, and masked colors in a colormap, so it is likely to lead to surprises; therefore the default is clip=False.      Parameters 
+ 
+vmin, vmaxfloat or None
+
+
+If vmin and/or vmax is not given, they are initialized from the minimum and maximum value, respectively, of the first input processed; i.e., __call__(A) calls autoscale_None(A).  
+clipbool, default: False
+
+
+If True values falling outside the range [vmin, vmax], are mapped to 0 or 1, whichever is closer, and masked values are set to 1. If False masked values remain masked. Clipping silently defeats the purpose of setting the over, under, and masked colors in a colormap, so it is likely to lead to surprises; therefore the default is clip=False.     Notes Returns 0 if vmin == vmax.   __call__(value, clip=None)[source]
+ 
+Normalize value data in the [vmin, vmax] interval into the [0.0, 1.0] interval and return it.  Parameters 
+ value
+
+Data to normalize.  
+clipbool
+
+
+If None, defaults to self.clip (which defaults to False).     Notes If not already initialized, self.vmin and self.vmax are initialized using self.autoscale_None(value). 
+   inverse(value)[source]
+
+ 
+  Examples using matplotlib.colors.FuncNorm
+ 
+   Colormap Normalization

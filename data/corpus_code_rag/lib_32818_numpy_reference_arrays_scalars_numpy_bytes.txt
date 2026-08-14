@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.bytes_
+
+class numpy.bytes_[source]
+ 
+A byte string. When used in arrays, this type strips trailing null bytes.  Character code 
+'S'  Alias 
+numpy.string_

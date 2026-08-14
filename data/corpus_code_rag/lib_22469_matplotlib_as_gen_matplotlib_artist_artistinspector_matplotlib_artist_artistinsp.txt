@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.get_aliases
+
+get_aliases()[source]
+ 
+Get a dict mapping property fullnames to sets of aliases for each alias in the ArtistInspector. e.g., for lines: {'markerfacecolor': {'mfc'},
+ 'linewidth'      : {'lw'},
+}

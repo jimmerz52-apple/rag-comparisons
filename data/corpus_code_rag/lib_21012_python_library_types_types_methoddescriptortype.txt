@@ -1,0 +1,4 @@
+# python.library.types#types.MethodDescriptorType
+
+types.MethodDescriptorType  
+The type of methods of some built-in data types such as str.join().  New in version 3.7.

@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_thetamin
+
+set_thetamin(thetamin)[source]
+ 
+Set the minimum theta limit in degrees.

@@ -1,0 +1,25 @@
+# torch.named_tensor#torch.Tensor.align_as
+
+align_as(other) → Tensor  
+Permutes the dimensions of the self tensor to match the dimension order in the other tensor, adding size-one dims for any new names. This operation is useful for explicit broadcasting by names (see examples). All of the dims of self must be named in order to use this method. The resulting tensor is a view on the original tensor. All dimension names of self must be present in other.names. other may contain named dimensions that are not in self.names; the output tensor has a size-one dimension for each of those new names. To align a tensor to a specific order, use align_to(). Examples: # Example 1: Applying a mask
+>>> mask = torch.randint(2, [127, 128], dtype=torch.bool).refine_names('W', 'H')
+>>> imgs = torch.randn(32, 128, 127, 3, names=('N', 'H', 'W', 'C'))
+>>> imgs.masked_fill_(mask.align_as(imgs), 0)
+
+
+# Example 2: Applying a per-channel-scale
+>>> def scale_channels(input, scale):
+>>>    scale = scale.refine_names('C')
+>>>    return input * scale.align_as(input)
+
+>>> num_channels = 3
+>>> scale = torch.randn(num_channels, names=('C',))
+>>> imgs = torch.rand(32, 128, 128, num_channels, names=('N', 'H', 'W', 'C'))
+>>> more_imgs = torch.rand(32, num_channels, 128, 128, names=('N', 'C', 'H', 'W'))
+>>> videos = torch.randn(3, num_channels, 128, 128, 128, names=('N', 'C', 'H', 'W', 'D'))
+
+# scale_channels is agnostic to the dimension order of the input
+>>> scale_channels(imgs, scale)
+>>> scale_channels(more_imgs, scale)
+>>> scale_channels(videos, scale)
+  Warning The named tensor API is experimental and subject to change.

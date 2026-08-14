@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_majorticklocs
+
+matplotlib.axis.Axis.get_majorticklocs   Axis.get_majorticklocs()[source]
+ 
+Return this Axis' major tick locations in data coordinates.

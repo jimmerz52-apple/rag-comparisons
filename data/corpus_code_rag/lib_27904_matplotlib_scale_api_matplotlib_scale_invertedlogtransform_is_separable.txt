@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.InvertedLogTransform.is_separable
+
+is_separable=True
+ 
+True if this transform is separable in the x- and y- dimensions.

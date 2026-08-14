@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.patch_2d_to_3d
+
+mpl_toolkits.mplot3d.art3d.patch_2d_to_3d   mpl_toolkits.mplot3d.art3d.patch_2d_to_3d(patch, z=0, zdir='z')[source]
+ 
+Convert a Patch to a Patch3D object.

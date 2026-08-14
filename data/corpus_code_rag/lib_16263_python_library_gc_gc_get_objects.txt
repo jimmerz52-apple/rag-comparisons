@@ -1,0 +1,4 @@
+# python.library.gc#gc.get_objects
+
+gc.get_objects(generation=None)  
+Returns a list of all objects tracked by the collector, excluding the list returned. If generation is not None, return only the objects tracked by the collector that are in that generation.  Changed in version 3.8: New generation parameter.  Raises an auditing event gc.get_objects with argument generation.

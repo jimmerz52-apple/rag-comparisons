@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.read_token
+
+shlex.read_token()  
+Read a raw token. Ignore the pushback stack, and do not interpret source requests. (This is not ordinarily a useful entry point, and is documented here only for the sake of completeness.)

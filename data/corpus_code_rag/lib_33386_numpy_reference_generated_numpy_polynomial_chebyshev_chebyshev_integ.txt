@@ -1,0 +1,23 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebyshev.integ
+
+numpy.polynomial.chebyshev.Chebyshev.integ method   polynomial.chebyshev.Chebyshev.integ(m=1, k=[], lbnd=None)[source]
+ 
+Integrate. Return a series instance that is the definite integral of the current series.  Parameters 
+ 
+mnon-negative int
+
+
+The number of integrations to perform.  
+karray_like
+
+
+Integration constants. The first constant is applied to the first integration, the second to the second, and so on. The list of values must less than or equal to m in length and any missing values are set to zero.  
+lbndScalar
+
+
+The lower bound of the definite integral.    Returns 
+ 
+new_seriesseries
+
+
+A new series representing the integral. The domain is the same as the domain of the integrated series.

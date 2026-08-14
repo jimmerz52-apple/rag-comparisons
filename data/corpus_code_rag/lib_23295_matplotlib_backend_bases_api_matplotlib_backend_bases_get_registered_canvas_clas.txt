@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.get_registered_canvas_class
+
+matplotlib.backend_bases.get_registered_canvas_class(format)[source]
+ 
+Return the registered default canvas for given file format. Handles deferred import of required backend.

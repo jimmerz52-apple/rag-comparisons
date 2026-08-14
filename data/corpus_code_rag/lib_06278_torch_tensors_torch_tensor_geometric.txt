@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.geometric_
+
+geometric_(p, *, generator=None) → Tensor  
+Fills self tensor with elements drawn from the geometric distribution:  f(X=k)=pk−1(1−p)f(X=k) = p^{k - 1} (1 - p)

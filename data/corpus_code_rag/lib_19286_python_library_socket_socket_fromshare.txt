@@ -1,0 +1,4 @@
+# python.library.socket#socket.fromshare
+
+socket.fromshare(data)  
+Instantiate a socket from data obtained from the socket.share() method. The socket is assumed to be in blocking mode. Availability: Windows.  New in version 3.3.

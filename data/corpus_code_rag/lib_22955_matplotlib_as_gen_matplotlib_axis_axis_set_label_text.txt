@@ -1,0 +1,16 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_label_text
+
+matplotlib.axis.Axis.set_label_text   Axis.set_label_text(label, fontdict=None, **kwargs)[source]
+ 
+Set the text value of the axis label.  Parameters 
+ 
+labelstr
+
+
+Text string.  
+fontdictdict
+
+
+Text properties.  **kwargs
+
+Merged into fontdict.

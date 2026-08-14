@@ -1,0 +1,16 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.contains_points
+
+contains_points(points, radius=None)[source]
+ 
+Return whether the given points are inside the patch.  Parameters 
+ 
+points(N, 2) array
+
+
+The points to check, in target coordinates of self.get_transform(). These are display coordinates for patches that are added to a figure or axes. Columns contain x and y values.  
+radiusfloat, optional
+
+
+Add an additional margin on the patch in target coordinates of self.get_transform(). See Path.contains_point for further details.    Returns 
+ length-N bool array
+   Notes The proper use of this method depends on the transform of the patch. See the notes on Patch.contains_point.

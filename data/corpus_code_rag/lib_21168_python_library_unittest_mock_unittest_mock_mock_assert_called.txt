@@ -1,0 +1,8 @@
+# python.library.unittest.mock#unittest.mock.Mock.assert_called
+
+assert_called()  
+Assert that the mock was called at least once. >>> mock = Mock()
+>>> mock.method()
+<Mock name='mock.method()' id='...'>
+>>> mock.method.assert_called()
+  New in version 3.6.

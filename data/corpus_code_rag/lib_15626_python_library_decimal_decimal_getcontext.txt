@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.getcontext
+
+decimal.getcontext()  
+Return the current context for the active thread.

@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.viewers#skimage.viewer.viewers.ImageViewer.add_tool
+
+add_tool(tool) [source]

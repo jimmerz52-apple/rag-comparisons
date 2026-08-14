@@ -1,0 +1,4 @@
+# pygame.ref.fastevent#pygame.fastevent.poll
+
+pygame.fastevent.poll() 
+ get an available event poll() -> Event  Returns next event on queue. If there is no event waiting on the queue, this will return an event with type NOEVENT.

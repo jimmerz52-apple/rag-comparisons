@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.solve
+
+solve(A) → Tensor, Tensor  
+See torch.solve()

@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.ValidateInStrings
+
+classmatplotlib.rcsetup.ValidateInStrings(key, valid, ignorecase=False, *, _deprecated_since=None)[source]
+ 
+Bases: object valid is a list of legal strings.

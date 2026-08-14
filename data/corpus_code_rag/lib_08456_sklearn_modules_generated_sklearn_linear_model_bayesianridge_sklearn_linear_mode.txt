@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.linear_model.bayesianridge#sklearn.linear_model.BayesianRidge.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit the model  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Training data  
+yndarray of shape (n_samples,) 
+
+Target values. Will be cast to X’s dtype if necessary  
+sample_weightndarray of shape (n_samples,), default=None 
+
+Individual weights for each sample  New in version 0.20: parameter sample_weight support to BayesianRidge.     Returns 
+ 
+selfreturns an instance of self.

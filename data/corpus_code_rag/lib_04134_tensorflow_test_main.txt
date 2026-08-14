@@ -1,0 +1,7 @@
+# tensorflow.test.main
+
+tf.test.main     View source on GitHub    Runs all unit tests.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.test.main  
+tf.test.main(
+    argv=None
+)

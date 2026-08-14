@@ -1,0 +1,8 @@
+# flask.api.index#flask.Blueprint.register_blueprint
+
+register_blueprint(blueprint, **options)  
+Register a Blueprint on this blueprint. Keyword arguments passed to this method will override the defaults set on the blueprint.  New in version 2.0.   Parameters 
+ 
+blueprint (flask.blueprints.Blueprint) –  
+options (Any) –    Return type 
+None

@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.uintc
+
+class numpy.uintc[source]
+ 
+Unsigned integer type, compatible with C unsigned int.  Character code 
+'I'  Alias on this platform (Linux x86_64) 
+numpy.uint32: 32-bit unsigned integer (0 to 4_294_967_295).

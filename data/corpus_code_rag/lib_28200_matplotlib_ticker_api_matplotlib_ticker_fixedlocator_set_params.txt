@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.FixedLocator.set_params
+
+set_params(nbins=None)[source]
+ 
+Set parameters within this locator.

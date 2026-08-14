@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.summer
+
+matplotlib.pyplot.summer   matplotlib.pyplot.summer()[source]
+ 
+Set the colormap to 'summer'. This changes the default colormap as well as the colormap of the current image if there is one. See help(colormaps) for more information.

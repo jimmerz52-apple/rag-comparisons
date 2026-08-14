@@ -1,0 +1,10 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.GraphicsContextPS
+
+classmatplotlib.backends.backend_ps.GraphicsContextPS[source]
+ 
+Bases: matplotlib.backend_bases.GraphicsContextBase [Deprecated] Notes  Deprecated since version 3.4:     get_capstyle()[source]
+ 
+Return the CapStyle. 
+   get_joinstyle()[source]
+ 
+Return the JoinStyle.

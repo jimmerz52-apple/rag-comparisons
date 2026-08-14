@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.cache.patch_cache_control
+
+patch_cache_control(response, **kwargs)  
+This function patches the Cache-Control header by adding all keyword arguments to it. The transformation is as follows:  All keyword parameter names are turned to lowercase, and underscores are converted to hyphens. If the value of a parameter is True (exactly True, not just a true value), only the parameter name is added to the header. All other parameters are added with their value, after applying str() to it.

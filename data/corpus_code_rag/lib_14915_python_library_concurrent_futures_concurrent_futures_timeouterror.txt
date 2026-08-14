@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.TimeoutError
+
+exception concurrent.futures.TimeoutError  
+Raised when a future operation exceeds the given timeout.

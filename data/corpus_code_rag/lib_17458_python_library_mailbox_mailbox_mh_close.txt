@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.close
+
+close()  
+MH instances do not keep any open files, so this method is equivalent to unlock().

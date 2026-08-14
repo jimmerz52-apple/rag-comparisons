@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.CreateView.object
+
+object  
+When using CreateView you have access to self.object, which is the object being created. If the object hasn’t been created yet, the value will be None.

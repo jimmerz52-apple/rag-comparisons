@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.hostaxesbase#mpl_toolkits.axes_grid1.parasite_axes.HostAxesBase.twin
+
+twin(aux_trans=None, axes_class=None)[source]
+ 
+Create a twin of Axes with no shared axis. While self will have ticks on the left and bottom axis, the returned axes will have ticks on the top and right axis.

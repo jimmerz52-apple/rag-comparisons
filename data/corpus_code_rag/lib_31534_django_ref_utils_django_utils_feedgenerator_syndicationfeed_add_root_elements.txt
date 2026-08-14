@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.add_root_elements
+
+add_root_elements(handler)  
+Add elements in the root (i.e. feed/channel) element. Called from write().

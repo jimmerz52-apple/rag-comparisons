@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.is_package
+
+is_package(fullname)  
+Returns True if the file path points to a package’s __init__ module based on EXTENSION_SUFFIXES.

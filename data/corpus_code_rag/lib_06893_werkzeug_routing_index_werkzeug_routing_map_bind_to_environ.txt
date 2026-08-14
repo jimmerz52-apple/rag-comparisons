@@ -1,0 +1,9 @@
+# werkzeug.routing.index#werkzeug.routing.Map.bind_to_environ
+
+bind_to_environ(environ, server_name=None, subdomain=None)  
+Like bind() but you can pass it an WSGI environment and it will fetch the information from that dictionary. Note that because of limitations in the protocol there is no way to get the current subdomain and real server_name from the environment. If you don’t provide it, Werkzeug will use SERVER_NAME and SERVER_PORT (or HTTP_HOST if provided) as used server_name with disabled subdomain feature. If subdomain is None but an environment and a server name is provided it will calculate the current subdomain automatically. Example: server_name is 'example.com' and the SERVER_NAME in the wsgi environ is 'staging.dev.example.com' the calculated subdomain will be 'staging.dev'. If the object passed as environ has an environ attribute, the value of this attribute is used instead. This allows you to pass request objects. Additionally PATH_INFO added as a default of the MapAdapter so that you don’t have to pass the path info to the match method.  Changelog Changed in version 1.0.0: If the passed server name specifies port 443, it will match if the incoming scheme is https without a port.   Changed in version 1.0.0: A warning is shown when the passed server name does not match the incoming WSGI server name.   Changed in version 0.8: This will no longer raise a ValueError when an unexpected server name was passed.   Changed in version 0.5: previously this method accepted a bogus calculate_subdomain parameter that did not have any effect. It was removed because of that.   Parameters 
+ 
+environ (WSGIEnvironment) – a WSGI environment. 
+server_name (Optional[str]) – an optional server name hint (see above). 
+subdomain (Optional[str]) – optionally the current subdomain (see above).   Return type 
+MapAdapter

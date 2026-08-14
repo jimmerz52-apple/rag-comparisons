@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.newnews
+
+NNTP.newnews(group, date, *, file=None)  
+Send a NEWNEWS command. Here, group is a group name or '*', and date has the same meaning as for newgroups(). Return a pair (response, articles) where articles is a list of message ids. This command is frequently disabled by NNTP server administrators.

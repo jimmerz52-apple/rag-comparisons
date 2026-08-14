@@ -1,0 +1,8 @@
+# flask.api.index#flask.ctx._AppCtxGlobals.get
+
+get(name, default=None)  
+Get an attribute by name, or a default value. Like dict.get().  Parameters 
+ 
+name (str) – Name of attribute to get. 
+default (Optional[Any]) – Value to return if the attribute is not present.   Return type 
+Any    Changelog New in version 0.10.

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Document.documentElement
+
+Document.documentElement  
+The one and only root element of the document.

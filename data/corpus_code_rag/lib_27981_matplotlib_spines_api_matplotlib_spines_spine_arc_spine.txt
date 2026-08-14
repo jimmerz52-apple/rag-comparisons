@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.arc_spine
+
+classmethodarc_spine(axes, spine_type, center, radius, theta1, theta2, **kwargs)[source]
+ 
+Create and return an arc Spine.

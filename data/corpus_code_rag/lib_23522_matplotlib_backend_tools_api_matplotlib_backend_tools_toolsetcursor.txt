@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolSetCursor
+
+matplotlib.backend_tools.ToolSetCursor[source]
+ 
+alias of matplotlib.backend_tools.SetCursorBase

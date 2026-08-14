@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axisartisthelperrectlinear#mpl_toolkits.axisartist.axislines.AxisArtistHelperRectlinear.Fixed
+
+classFixed(axes, loc, nth_coord=None)[source]
+ 
+Bases: mpl_toolkits.axisartist.axislines.AxisArtistHelper.Fixed nth_coord = along which coordinate value varies in 2D, nth_coord = 0 -> x axis, nth_coord = 1 -> y axis   get_tick_iterators(axes)[source]
+ 
+tick_loc, tick_angle, tick_label

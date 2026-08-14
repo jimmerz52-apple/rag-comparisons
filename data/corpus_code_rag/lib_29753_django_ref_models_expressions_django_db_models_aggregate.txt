@@ -1,0 +1,18 @@
+# django.ref.models.expressions#django.db.models.Aggregate
+
+class Aggregate(*expressions, output_field=None, distinct=False, filter=None, default=None, **extra)  
+ 
+template  
+A class attribute, as a format string, that describes the SQL that is generated for this aggregate. Defaults to '%(function)s(%(distinct)s%(expressions)s)'. 
+  
+function  
+A class attribute describing the aggregate function that will be generated. Specifically, the function will be interpolated as the function placeholder within template. Defaults to None. 
+  
+window_compatible  
+Defaults to True since most aggregate functions can be used as the source expression in Window. 
+  
+allow_distinct  
+A class attribute determining whether or not this aggregate function allows passing a distinct keyword argument. If set to False (default), TypeError is raised if distinct=True is passed. 
+  
+empty_result_set_value  
+ New in Django 4.0.  Override empty_result_set_value to None since most aggregate functions result in NULL when applied to an empty result set.

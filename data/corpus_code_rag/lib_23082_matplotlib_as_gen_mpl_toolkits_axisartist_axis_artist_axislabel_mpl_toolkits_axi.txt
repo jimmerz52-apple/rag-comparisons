@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axislabel#mpl_toolkits.axisartist.axis_artist.AxisLabel.get_text
+
+get_text()[source]
+ 
+Return the text string.

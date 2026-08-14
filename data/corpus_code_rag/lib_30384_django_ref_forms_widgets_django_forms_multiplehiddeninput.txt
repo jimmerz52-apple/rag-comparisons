@@ -1,0 +1,6 @@
+# django.ref.forms.widgets#django.forms.MultipleHiddenInput
+
+class MultipleHiddenInput  
+ 
+template_name: 'django/forms/widgets/multiple_hidden.html'
+ Renders as: multiple <input type="hidden" ...> tags  A widget that handles multiple hidden widgets for fields that have a list of values.

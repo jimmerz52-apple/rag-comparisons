@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.ispunct
+
+curses.ascii.ispunct(c)  
+Checks for any printable ASCII character which is not a space or an alphanumeric character.

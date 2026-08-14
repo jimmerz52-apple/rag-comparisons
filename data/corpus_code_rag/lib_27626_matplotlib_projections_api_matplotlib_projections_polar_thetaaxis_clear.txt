@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.ThetaAxis.clear
+
+clear()[source]
+ 
+Clear the axis. This resets axis properties to their default values:  the label the scale locators, formatters and ticks major and minor grid units registered callbacks

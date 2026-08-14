@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AlterUniqueTogether
+
+class AlterUniqueTogether(name, unique_together)

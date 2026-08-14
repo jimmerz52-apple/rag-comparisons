@@ -1,0 +1,13 @@
+# tensorflow.keras.callbacks.history
+
+tf.keras.callbacks.History     View source on GitHub    Callback that records events into a History object. Inherits From: Callback  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.callbacks.History  
+tf.keras.callbacks.History()
+ This callback is automatically applied to every Keras model. The History object gets returned by the fit method of models. Methods set_model View source 
+set_model(
+    model
+)
+ set_params View source 
+set_params(
+    params
+)

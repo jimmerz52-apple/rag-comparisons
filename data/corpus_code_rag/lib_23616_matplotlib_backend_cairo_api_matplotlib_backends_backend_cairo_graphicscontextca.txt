@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_antialiased
+
+set_antialiased(b)[source]
+ 
+Set whether object should be drawn with antialiased rendering.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.kernel_approximation.nystroem#sklearn.kernel_approximation.Nystroem.transform
+
+transform(X) [source]
+ 
+Apply feature map to X. Computes an approximate feature map using the kernel between some training points and X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Data to transform.    Returns 
+ 
+X_transformedndarray of shape (n_samples, n_components) 
+
+Transformed data.

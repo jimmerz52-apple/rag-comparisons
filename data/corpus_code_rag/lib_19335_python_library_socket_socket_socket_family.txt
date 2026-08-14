@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.family
+
+socket.family  
+The socket family.

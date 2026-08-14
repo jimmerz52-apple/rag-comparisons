@@ -1,0 +1,8 @@
+# 674
+Task: 674
+
+# Write a function to remove duplicate words from a given string using collections module.
+from collections import OrderedDict
+def remove_duplicate(string):
+  result = ' '.join(OrderedDict((w,w) for w in string.split()).keys())
+  return result

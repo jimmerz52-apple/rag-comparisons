@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.LK_UNLCK
+
+msvcrt.LK_UNLCK  
+Unlocks the specified bytes, which must have been previously locked.

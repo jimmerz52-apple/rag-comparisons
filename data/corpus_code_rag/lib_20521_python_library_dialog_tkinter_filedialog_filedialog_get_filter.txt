@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.get_filter
+
+get_filter()  
+Retrieve the file filter currently in use.

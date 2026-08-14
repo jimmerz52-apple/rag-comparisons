@@ -1,0 +1,16 @@
+# python.library.gc#gc.is_finalized
+
+gc.is_finalized(obj)  
+Returns True if the given object has been finalized by the garbage collector, False otherwise. >>> x = None
+>>> class Lazarus:
+...     def __del__(self):
+...         global x
+...         x = self
+...
+>>> lazarus = Lazarus()
+>>> gc.is_finalized(lazarus)
+False
+>>> del lazarus
+>>> gc.is_finalized(x)
+True
+  New in version 3.9.

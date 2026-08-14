@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.oldalien.main
+
+oldalien.main() 
+ play the original aliens example oldalien.main() -> None  This more closely resembles a port of the SDL Aliens demo. The code is a lot simpler, so it makes a better starting point for people looking at code for the first times. These blitting routines are not as optimized as they should/could be, but the code is easier to follow, and it plays quick enough.

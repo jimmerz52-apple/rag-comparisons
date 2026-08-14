@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_markeredgewidth
+
+get_markeredgewidth()[source]
+ 
+Return the marker edge width in points. See also set_markeredgewidth.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axes#mpl_toolkits.axisartist.axislines.Axes.cla
+
+cla()[source]
+ 
+Clear the Axes.

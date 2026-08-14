@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rsub__
+
+numpy.ma.MaskedArray.__rsub__ method   ma.MaskedArray.__rsub__(other)[source]
+ 
+Subtract self from other, and return a new masked array.

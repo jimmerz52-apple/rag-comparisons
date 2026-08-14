@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.app_errorhandler
+
+app_errorhandler(code)  
+Like Flask.errorhandler() but for a blueprint. This handler is used for all requests, even if outside of the blueprint.  Parameters 
+code (Union[Type[Exception], int]) –   Return type 
+Callable

@@ -1,0 +1,6 @@
+# python.library.stat#stat.IO_REPARSE_TAG_MOUNT_POINT
+
+stat.IO_REPARSE_TAG_SYMLINK  
+stat.IO_REPARSE_TAG_MOUNT_POINT  
+stat.IO_REPARSE_TAG_APPEXECLINK  
+ New in version 3.8.

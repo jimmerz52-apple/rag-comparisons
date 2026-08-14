@@ -1,0 +1,9 @@
+# matplotlib.text_api#matplotlib.text.Text.set_wrap
+
+set_wrap(wrap)[source]
+ 
+Set whether the text can be wrapped.  Parameters 
+ 
+wrapbool
+
+   Notes Wrapping does not work together with savefig(..., bbox_inches='tight') (which is also used internally by %matplotlib inline in IPython/Jupyter). The 'tight' setting rescales the canvas to accommodate all content and happens before wrapping.

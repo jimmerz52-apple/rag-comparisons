@@ -1,0 +1,5 @@
+# python.library.asyncio-future#asyncio.ensure_future
+
+asyncio.ensure_future(obj, *, loop=None)  
+Return:  
+obj argument as is, if obj is a Future, a Task, or a Future-like object (isfuture() is used for the test.) a Task object wrapping obj, if obj is a coroutine (iscoroutine() is used for the test); in this case the coroutine will be scheduled by ensure_future(). a Task object that would await on obj, if obj is an awaitable (inspect.isawaitable() is used for the test.)  If obj is neither of the above a TypeError is raised.  Important See also the create_task() function which is the preferred way for creating new Tasks.   Changed in version 3.5.1: The function accepts any awaitable object.

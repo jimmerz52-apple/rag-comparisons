@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.geoip2#django.contrib.gis.geoip2.GeoIP2.country_name
+
+GeoIP2.country_name(query)

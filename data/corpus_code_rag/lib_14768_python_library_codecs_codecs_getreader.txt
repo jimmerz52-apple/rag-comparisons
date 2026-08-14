@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.getreader
+
+codecs.getreader(encoding)  
+Look up the codec for the given encoding and return its StreamReader class or factory function. Raises a LookupError in case the encoding cannot be found.

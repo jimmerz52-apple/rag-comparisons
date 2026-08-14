@@ -1,0 +1,34 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_xticklabels
+
+matplotlib.axes.Axes.get_xticklabels   Axes.get_xticklabels(minor=False, which=None)[source]
+ 
+Get the xaxis' tick labels.  Parameters 
+ 
+minorbool
+
+
+Whether to return the minor or the major ticklabels.  
+whichNone, ('minor', 'major', 'both')
+
+
+Overrides minor. Selects which ticklabels to return    Returns 
+ list of Text
+
+   Notes The tick label strings are not populated until a draw method has been called. See also: draw and draw. 
+  Examples using matplotlib.axes.Axes.get_xticklabels
+ 
+   Creating a timeline with lines, dates, and text   
+
+   Creating annotated heatmaps   
+
+   Aligning Labels   
+
+   Boxplots   
+
+   Date tick labels   
+
+   Formatting date ticks using ConciseDateFormatter   
+
+   Evans test   
+
+   The Lifecycle of a Plot

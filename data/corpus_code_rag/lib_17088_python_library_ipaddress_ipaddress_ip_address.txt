@@ -1,0 +1,7 @@
+# python.library.ipaddress#ipaddress.ip_address
+
+ipaddress.ip_address(address)  
+Return an IPv4Address or IPv6Address object depending on the IP address passed as argument. Either IPv4 or IPv6 addresses may be supplied; integers less than 2**32 will be considered to be IPv4 by default. A ValueError is raised if address does not represent a valid IPv4 or IPv6 address. >>> ipaddress.ip_address('192.168.0.1')
+IPv4Address('192.168.0.1')
+>>> ipaddress.ip_address('2001:db8::')
+IPv6Address('2001:db8::')

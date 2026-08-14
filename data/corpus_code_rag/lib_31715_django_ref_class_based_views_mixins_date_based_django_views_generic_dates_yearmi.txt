@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.YearMixin.get_next_year
+
+get_next_year(date)  
+Returns a date object containing the first day of the year after the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

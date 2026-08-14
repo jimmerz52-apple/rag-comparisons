@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.q_zero_point
+
+q_zero_point() → int  
+Given a Tensor quantized by linear(affine) quantization, returns the zero_point of the underlying quantizer().

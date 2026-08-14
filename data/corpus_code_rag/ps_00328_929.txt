@@ -1,0 +1,7 @@
+# 929
+Task: 929
+
+# Write a function to count repeated items of a tuple.
+def count_tuplex(tuplex,value):  
+  count = tuplex.count(value)
+  return count

@@ -1,0 +1,13 @@
+# werkzeug.urls.index#werkzeug.urls.url_decode
+
+werkzeug.urls.url_decode(s, charset='utf-8', decode_keys=None, include_empty=True, errors='replace', separator='&', cls=None)  
+Parse a query string and return it as a MultiDict.  Parameters 
+ 
+s (AnyStr) – The query string to parse. 
+charset (str) – Decode bytes to string with this charset. If not given, bytes are returned as-is. 
+include_empty (bool) – Include keys with empty values in the dict. 
+errors (str) – Error handling behavior when decoding bytes. 
+separator (str) – Separator character between pairs. 
+cls (Optional[Type[ds.MultiDict]]) – Container to hold result instead of MultiDict. 
+decode_keys (None) –    Return type 
+ds.MultiDict[str, str]    Changed in version 2.0: The decode_keys parameter is deprecated and will be removed in Werkzeug 2.1.   Changelog Changed in version 0.5: In previous versions “;” and “&” could be used for url decoding. Now only “&” is supported. If you want to use “;”, a different separator can be provided.   Changed in version 0.5: The cls parameter was added.

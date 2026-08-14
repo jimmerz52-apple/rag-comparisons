@@ -1,0 +1,10 @@
+# werkzeug.urls.index#werkzeug.urls.url_unquote
+
+werkzeug.urls.url_unquote(s, charset='utf-8', errors='replace', unsafe='')  
+URL decode a single string with a given encoding. If the charset is set to None no decoding is performed and raw bytes are returned.  Parameters 
+ 
+s (Union[str, bytes]) – the string to unquote. 
+charset (str) – the charset of the query string. If set to None no decoding will take place. 
+errors (str) – the error handling for the charset decoding. 
+unsafe (str) –    Return type 
+str

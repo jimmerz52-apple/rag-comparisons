@@ -1,0 +1,32 @@
+# python.library.turtle#turtle.pencolor
+
+turtle.pencolor(*args)  
+Return or set the pencolor. Four input formats are allowed:  
+pencolor() 
+
+Return the current pencolor as color specification string or as a tuple (see example). May be used as input to another color/pencolor/fillcolor call.  
+pencolor(colorstring) 
+
+Set pencolor to colorstring, which is a Tk color specification string, such as "red", "yellow", or "#33cc8c".  
+pencolor((r, g, b)) 
+
+Set pencolor to the RGB color represented by the tuple of r, g, and b. Each of r, g, and b must be in the range 0..colormode, where colormode is either 1.0 or 255 (see colormode()).  
+pencolor(r, g, b) 
+
+Set pencolor to the RGB color represented by r, g, and b. Each of r, g, and b must be in the range 0..colormode.   If turtleshape is a polygon, the outline of that polygon is drawn with the newly set pencolor.  >>> colormode()
+ 1.0
+ >>> turtle.pencolor()
+ 'red'
+ >>> turtle.pencolor("brown")
+ >>> turtle.pencolor()
+ 'brown'
+ >>> tup = (0.2, 0.8, 0.55)
+ >>> turtle.pencolor(tup)
+ >>> turtle.pencolor()
+ (0.2, 0.8, 0.5490196078431373)
+ >>> colormode(255)
+ >>> turtle.pencolor()
+ (51.0, 204.0, 140.0)
+ >>> turtle.pencolor('#32c18f')
+ >>> turtle.pencolor()
+ (50.0, 193.0, 143.0)

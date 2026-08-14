@@ -1,0 +1,10 @@
+# numpy.reference.random.bit_generators.generated.numpy.random.philox.ctypes
+
+numpy.random.Philox.ctypes attribute   random.Philox.ctypes
+ 
+ctypes interface  Returns 
+ 
+interfacenamedtuple
+
+
+Named tuple containing ctypes wrapper  state_address - Memory address of the state struct state - pointer to the state struct next_uint64 - function pointer to produce 64 bit integers next_uint32 - function pointer to produce 32 bit integers next_double - function pointer to produce doubles bitgen - pointer to the bit generator struct

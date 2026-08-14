@@ -1,0 +1,4 @@
+# python.library.exceptions#EOFError
+
+exception EOFError  
+Raised when the input() function hits an end-of-file condition (EOF) without reading any data. (N.B.: the io.IOBase.read() and io.IOBase.readline() methods return an empty string when they hit EOF.)

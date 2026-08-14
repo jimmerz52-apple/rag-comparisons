@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.day_abbr
+
+calendar.day_abbr  
+An array that represents the abbreviated days of the week in the current locale.

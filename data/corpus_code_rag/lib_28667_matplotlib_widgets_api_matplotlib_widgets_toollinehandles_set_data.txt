@@ -1,0 +1,10 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolLineHandles.set_data
+
+set_data(positions)[source]
+ 
+Set x or y positions of handles, depending if the lines are vertical of horizontal.  Parameters 
+ 
+positionstuple of length 2
+
+
+Set the positions of the handle in data coordinates

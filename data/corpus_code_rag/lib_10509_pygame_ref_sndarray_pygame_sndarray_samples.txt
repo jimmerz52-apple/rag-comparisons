@@ -1,0 +1,4 @@
+# pygame.ref.sndarray#pygame.sndarray.samples
+
+pygame.sndarray.samples() 
+ reference Sound samples into an array samples(Sound) -> array  Creates a new array that directly references the samples in a Sound object. Modifying the array will change the Sound. The array will always be in the format returned from pygame.mixer.get_init().

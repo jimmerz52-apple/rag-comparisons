@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.make_related
+
+make_related(boundary=None)  
+Convert a non-multipart message into a multipart/related message, moving any existing Content- headers and payload into a (new) first part of the multipart. If boundary is specified, use it as the boundary string in the multipart, otherwise leave the boundary to be automatically created when it is needed (for example, when the message is serialized).

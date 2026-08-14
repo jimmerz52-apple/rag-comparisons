@@ -1,0 +1,20 @@
+# werkzeug.utils.index#werkzeug.utils.cached_property
+
+class werkzeug.utils.cached_property(fget, name=None, doc=None)  
+A property() that is only evaluated once. Subsequent access returns the cached value. Setting the property sets the cached value. Deleting the property clears the cached value, accessing it again will evaluate it again. class Example:
+    @cached_property
+    def value(self):
+        # calculate something important here
+        return 42
+
+e = Example()
+e.value  # evaluates
+e.value  # uses cache
+e.value = 16  # sets cache
+del e.value  # clears cache
+ The class must have a __dict__ for this to work.  Changed in version 2.0: del obj.name clears the cached value.   Parameters 
+ 
+fget (Callable[[Any], Any]) –  
+name (Optional[str]) –  
+doc (Optional[str]) –    Return type 
+None

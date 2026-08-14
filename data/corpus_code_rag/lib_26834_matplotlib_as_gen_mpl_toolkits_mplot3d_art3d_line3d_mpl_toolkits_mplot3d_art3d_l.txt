@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.line3d#mpl_toolkits.mplot3d.art3d.Line3D.get_data_3d
+
+get_data_3d()[source]
+ 
+Get the current data  Returns 
+ 
+verts3dlength-3 tuple or array-like
+
+
+The current data as a tuple or array-like.

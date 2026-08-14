@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Queue.qsize
+
+qsize()  
+Return the approximate size of the queue. Because of multithreading/multiprocessing semantics, this number is not reliable. Note that this may raise NotImplementedError on Unix platforms like Mac OS X where sem_getvalue() is not implemented.

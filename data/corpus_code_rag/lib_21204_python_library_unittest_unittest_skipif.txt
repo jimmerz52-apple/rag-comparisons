@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.skipIf
+
+@unittest.skipIf(condition, reason)  
+Skip the decorated test if condition is true.

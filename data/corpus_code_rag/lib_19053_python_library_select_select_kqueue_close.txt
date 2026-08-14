@@ -1,0 +1,4 @@
+# python.library.select#select.kqueue.close
+
+kqueue.close()  
+Close the control file descriptor of the kqueue object.

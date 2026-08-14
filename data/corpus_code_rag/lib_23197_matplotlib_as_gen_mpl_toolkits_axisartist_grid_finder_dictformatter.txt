@@ -1,0 +1,11 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_finder.dictformatter
+
+mpl_toolkits.axisartist.grid_finder.DictFormatter   classmpl_toolkits.axisartist.grid_finder.DictFormatter(format_dict, formatter=None)[source]
+ 
+Bases: object format_dict : dictionary for format strings to be used. formatter : fall-back formatter   __call__(direction, factor, values)[source]
+ 
+factor is ignored if value is found in the dictionary 
+ 
+  Examples using mpl_toolkits.axisartist.grid_finder.DictFormatter
+ 
+   mpl_toolkits.axisartist.floating_axes features

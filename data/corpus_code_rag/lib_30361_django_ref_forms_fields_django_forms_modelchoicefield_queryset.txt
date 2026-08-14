@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceField.queryset
+
+queryset  
+A QuerySet of model objects from which the choices for the field are derived and which is used to validate the user’s selection. It’s evaluated when the form is rendered.

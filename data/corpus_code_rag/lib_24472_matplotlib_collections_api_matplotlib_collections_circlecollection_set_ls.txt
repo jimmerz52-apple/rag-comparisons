@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.set_ls
+
+set_ls(ls)[source]
+ 
+Alias for set_linestyle.

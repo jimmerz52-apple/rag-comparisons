@@ -1,0 +1,4 @@
+# python.library.os#os.XATTR_REPLACE
+
+os.XATTR_REPLACE  
+This is a possible value for the flags argument in setxattr(). It indicates the operation must replace an existing attribute.

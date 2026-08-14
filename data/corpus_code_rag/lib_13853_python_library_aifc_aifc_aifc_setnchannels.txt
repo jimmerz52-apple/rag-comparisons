@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setnchannels
+
+aifc.setnchannels(nchannels)  
+Specify the number of channels in the audio file.

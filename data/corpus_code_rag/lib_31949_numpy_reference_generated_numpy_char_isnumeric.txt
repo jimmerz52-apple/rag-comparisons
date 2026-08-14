@@ -1,0 +1,16 @@
+# numpy.reference.generated.numpy.char.isnumeric
+
+numpy.char.isnumeric   char.isnumeric(a)[source]
+ 
+For each element, return True if there are only numeric characters in the element. Calls unicode.isnumeric element-wise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155,
+VULGAR FRACTION ONE FIFTH.  Parameters 
+ 
+aarray_like, unicode
+
+
+Input array.    Returns 
+ 
+outndarray, bool
+
+
+Array of booleans of same shape as a.      See also  unicode.isnumeric

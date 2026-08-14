@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.constraints#django.contrib.postgres.constraints.ExclusionConstraint
+
+class ExclusionConstraint(*, name, expressions, index_type=None, condition=None, deferrable=None, include=None, opclasses=())  
+Creates an exclusion constraint in the database. Internally, PostgreSQL implements exclusion constraints using indexes. The default index type is GiST. To use them, you need to activate the btree_gist extension on PostgreSQL. You can install it using the BtreeGistExtension migration operation. If you attempt to insert a new row that conflicts with an existing row, an IntegrityError is raised. Similarly, when update conflicts with an existing row.

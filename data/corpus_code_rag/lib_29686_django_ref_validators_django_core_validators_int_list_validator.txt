@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.int_list_validator
+
+int_list_validator(sep=', ', message=None, code='invalid', allow_negative=False)  
+Returns a RegexValidator instance that ensures a string consists of integers separated by sep. It allows negative integers when allow_negative is True.

@@ -1,0 +1,23 @@
+# torch.distributed#torch.distributed.Store.wait
+
+torch.distributed.Store.wait(*args, **kwargs)  
+Overloaded function.  wait(self: torch._C._distributed_c10d.Store, arg0: List[str]) -> None  Waits for each key in keys to be added to the store. If not all keys are set before the timeout (set during store initialization), then wait will throw an exception.  Parameters 
+keys (list) – List of keys on which to wait until they are set in the store.    Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> # Using TCPStore as an example, other store types can also be used
+>>> store = dist.TCPStore("127.0.0.1", 0, 1, True, timedelta(seconds=30))
+>>> # This will throw an exception after 30 seconds
+>>> store.wait(["bad_key"])
+    wait(self: torch._C._distributed_c10d.Store, arg0: List[str], arg1: datetime.timedelta) -> None  Waits for each key in keys to be added to the store, and throws an exception if the keys have not been set by the supplied timeout.  Parameters 
+ 
+keys (list) – List of keys on which to wait until they are set in the store. 
+timeout (timedelta) – Time to wait for the keys to be added before throwing an exception.     Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> # Using TCPStore as an example, other store types can also be used
+>>> store = dist.TCPStore("127.0.0.1", 0, 1, True, timedelta(seconds=30))
+>>> # This will throw an exception after 10 seconds
+>>> store.wait(["bad_key"], timedelta(seconds=10))

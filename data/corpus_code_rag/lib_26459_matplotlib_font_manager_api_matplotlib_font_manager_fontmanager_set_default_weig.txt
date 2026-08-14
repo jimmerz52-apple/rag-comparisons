@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontManager.set_default_weight
+
+set_default_weight(weight)[source]
+ 
+Set the default font weight. The initial value is 'normal'.

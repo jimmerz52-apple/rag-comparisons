@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.conn
+
+conn  
+Holds the socket object connecting to the client.

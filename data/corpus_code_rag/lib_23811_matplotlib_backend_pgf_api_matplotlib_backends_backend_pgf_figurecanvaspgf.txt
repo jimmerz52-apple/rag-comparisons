@@ -1,0 +1,23 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.FigureCanvasPgf
+
+classmatplotlib.backends.backend_pgf.FigureCanvasPgf(figure=None)[source]
+ 
+Bases: matplotlib.backend_bases.FigureCanvasBase   draw()[source]
+ 
+Render the Figure. It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk. 
+   filetypes={'pdf': 'LaTeX compiled PGF picture', 'pgf': 'LaTeX PGF picture', 'png': 'Portable Network Graphics'}
+
+   get_default_filetype()[source]
+ 
+Return the default savefig file format as specified in rcParams["savefig.format"] (default: 'png'). The returned string does not include a period. This method is overridden in backends that only support a single file type. 
+   get_renderer()[source]
+
+   print_pdf(fname_or_fh, *, metadata=None, **kwargs)[source]
+ 
+Use LaTeX to compile a pgf generated figure to pdf. 
+   print_pgf(fname_or_fh, **kwargs)[source]
+ 
+Output pgf macros for drawing the figure so it can be included and rendered in latex documents. 
+   print_png(fname_or_fh, **kwargs)[source]
+ 
+Use LaTeX to compile a pgf figure to pdf and convert it to png.

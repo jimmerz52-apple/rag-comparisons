@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.get_required_width
+
+get_required_width(renderer)[source]
+ 
+Return the minimal required width for the cell.

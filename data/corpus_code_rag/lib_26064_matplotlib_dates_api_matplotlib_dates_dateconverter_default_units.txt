@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.DateConverter.default_units
+
+staticdefault_units(x, axis)[source]
+ 
+Return the tzinfo instance of x or of its first element, or None

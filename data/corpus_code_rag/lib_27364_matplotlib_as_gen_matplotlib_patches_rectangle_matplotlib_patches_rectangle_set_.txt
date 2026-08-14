@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.set_angle
+
+set_angle(angle)[source]
+ 
+Set the rotation angle in degrees. The rotation is performed anti-clockwise around xy.

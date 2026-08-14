@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedelta.seconds
+
+pandas.Timedelta.seconds   Timedelta.seconds
+ 
+Number of seconds (>= 0 and less than 1 day).

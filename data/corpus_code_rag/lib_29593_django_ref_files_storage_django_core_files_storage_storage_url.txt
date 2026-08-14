@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.url
+
+url(name)  
+Returns the URL where the contents of the file referenced by name can be accessed. For storage systems that don’t support access by URL this will raise NotImplementedError instead.

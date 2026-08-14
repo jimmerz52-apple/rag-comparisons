@@ -1,0 +1,5 @@
+# python.library.operator#operator.delitem
+
+operator.delitem(a, b)  
+operator.__delitem__(a, b)  
+Remove the value of a at index b.

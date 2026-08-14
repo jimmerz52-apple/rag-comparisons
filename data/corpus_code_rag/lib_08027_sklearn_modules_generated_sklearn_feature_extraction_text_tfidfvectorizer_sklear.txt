@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidfvectorizer#sklearn.feature_extraction.text.TfidfVectorizer.build_analyzer
+
+build_analyzer() [source]
+ 
+Return a callable that handles preprocessing, tokenization and n-grams generation.  Returns 
+ analyzer: callable
+
+A function to handle preprocessing, tokenization and n-grams generation.

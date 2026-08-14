@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.quarterbegin.__call__
+
+pandas.tseries.offsets.QuarterBegin.__call__   QuarterBegin.__call__(*args, **kwargs)
+ 
+Call self as a function.

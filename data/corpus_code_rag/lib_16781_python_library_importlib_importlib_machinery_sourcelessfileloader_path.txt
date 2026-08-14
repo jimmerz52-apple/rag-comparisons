@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourcelessFileLoader.path
+
+path  
+The path to the bytecode file.

@@ -1,0 +1,14 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.add_tools_to_manager
+
+matplotlib.backend_tools.add_tools_to_manager(toolmanager, tools={'back': <class 'matplotlib.backend_tools.ToolBack'>, 'copy': 'ToolCopyToClipboard', 'cursor': 'ToolSetCursor', 'forward': <class 'matplotlib.backend_tools.ToolForward'>, 'fullscreen': <class 'matplotlib.backend_tools.ToolFullScreen'>, 'grid': <class 'matplotlib.backend_tools.ToolGrid'>, 'grid_minor': <class 'matplotlib.backend_tools.ToolMinorGrid'>, 'help': 'ToolHelp', 'home': <class 'matplotlib.backend_tools.ToolHome'>, 'pan': <class 'matplotlib.backend_tools.ToolPan'>, 'position': <class 'matplotlib.backend_tools.ToolCursorPosition'>, 'quit': <class 'matplotlib.backend_tools.ToolQuit'>, 'quit_all': <class 'matplotlib.backend_tools.ToolQuitAll'>, 'rubberband': 'ToolRubberband', 'save': 'ToolSaveFigure', 'subplots': 'ToolConfigureSubplots', 'viewpos': <class 'matplotlib.backend_tools.ToolViewsPositions'>, 'xscale': <class 'matplotlib.backend_tools.ToolXScale'>, 'yscale': <class 'matplotlib.backend_tools.ToolYScale'>, 'zoom': <class 'matplotlib.backend_tools.ToolZoom'>})[source]
+ 
+Add multiple tools to a ToolManager.  Parameters 
+ 
+toolmanagerbackend_managers.ToolManager
+
+
+Manager to which the tools are added.  
+tools{str: class_like}, optional
+
+
+The tools to add in a {name: tool} dict, see add_tool for more info.

@@ -1,0 +1,29 @@
+# matplotlib.image_api#matplotlib.image.thumbnail
+
+matplotlib.image.thumbnail(infile, thumbfile, scale=0.1, interpolation='bilinear', preview=False)[source]
+ 
+Make a thumbnail of image in infile with output filename thumbfile. See Image Thumbnail.  Parameters 
+ 
+infilestr or file-like
+
+
+The image file. Matplotlib relies on Pillow for image reading, and thus supports a wide range of file formats, including PNG, JPG, TIFF and others.  
+thumbfilestr or file-like
+
+
+The thumbnail filename.  
+scalefloat, default: 0.1
+
+
+The scale factor for the thumbnail.  
+interpolationstr, default: 'bilinear'
+
+
+The interpolation scheme used in the resampling. See the interpolation parameter of imshow for possible values.  
+previewbool, default: False
+
+
+If True, the default backend (presumably a user interface backend) will be used which will cause a figure to be raised if show is called. If it is False, the figure is created using FigureCanvasBase and the drawing backend is selected as Figure.savefig would normally do.    Returns 
+ Figure
+
+The figure instance containing the thumbnail.

@@ -1,0 +1,5 @@
+# python.library.ssl#ssl.SSLContext.set_alpn_protocols
+
+SSLContext.set_alpn_protocols(protocols)  
+Specify which protocols the socket should advertise during the SSL/TLS handshake. It should be a list of ASCII strings, like ['http/1.1',
+'spdy/2'], ordered by preference. The selection of a protocol will happen during the handshake, and will play out according to RFC 7301. After a successful handshake, the SSLSocket.selected_alpn_protocol() method will return the agreed-upon protocol. This method will raise NotImplementedError if HAS_ALPN is False. OpenSSL 1.1.0 to 1.1.0e will abort the handshake and raise SSLError when both sides support ALPN but cannot agree on a protocol. 1.1.0f+ behaves like 1.0.2, SSLSocket.selected_alpn_protocol() returns None.  New in version 3.5.

@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.RESERVED_NCS
+
+uuid.RESERVED_NCS  
+Reserved for NCS compatibility.

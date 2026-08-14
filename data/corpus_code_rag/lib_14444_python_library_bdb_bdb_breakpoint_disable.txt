@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Breakpoint.disable
+
+disable()  
+Mark the breakpoint as disabled.

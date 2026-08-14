@@ -1,0 +1,4 @@
+# python.library.test#test.support.disable_faulthandler
+
+test.support.disable_faulthandler()  
+A context manager that replaces sys.stderr with sys.__stderr__.

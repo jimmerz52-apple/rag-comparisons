@@ -1,0 +1,11 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.make_chunk_iter
+
+werkzeug.wsgi.make_chunk_iter(stream, separator, limit=None, buffer_size=10240, cap_at_buffer=False)  
+Works like make_line_iter() but accepts a separator which divides chunks. If you want newline based processing you should use make_line_iter() instead as it supports arbitrary newline markers.  Changelog New in version 0.11.10: added support for the cap_at_buffer parameter.   New in version 0.9: added support for iterators as input stream.   New in version 0.8.   Parameters 
+ 
+stream (Union[Iterable[bytes], BinaryIO]) – the stream or iterate to iterate over. 
+separator (bytes) – the separator that divides chunks. 
+limit (Optional[int]) – the limit in bytes for the stream. (Usually content length. Not necessary if the stream is otherwise already limited). 
+buffer_size (int) – The optional buffer size. 
+cap_at_buffer (bool) – if this is set chunks are split if they are longer than the buffer size. Internally this is implemented that the buffer size might be exhausted by a factor of two however.   Return type 
+Iterator[bytes]

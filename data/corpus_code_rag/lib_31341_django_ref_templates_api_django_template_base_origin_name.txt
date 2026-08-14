@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.base.Origin.name
+
+name  
+The path to the template as returned by the template loader. For loaders that read from the file system, this is the full path to the template. If the template is instantiated directly rather than through a template loader, this is a string value of <unknown_source>.

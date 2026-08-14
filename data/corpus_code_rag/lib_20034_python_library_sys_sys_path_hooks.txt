@@ -1,0 +1,4 @@
+# python.library.sys#sys.path_hooks
+
+sys.path_hooks  
+A list of callables that take a path argument to try to create a finder for the path. If a finder can be created, it is to be returned by the callable, else raise ImportError. Originally specified in PEP 302.

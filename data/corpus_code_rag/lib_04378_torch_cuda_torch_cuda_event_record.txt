@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Event.record
+
+record(stream=None) [source]
+ 
+Records the event in a given stream. Uses torch.cuda.current_stream() if no stream is specified. The stream’s device must match the event’s device.

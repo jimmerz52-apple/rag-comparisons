@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_MONOTONIC
+
+time.CLOCK_MONOTONIC  
+Clock that cannot be set and represents monotonic time since some unspecified starting point. Availability: Unix.  New in version 3.3.

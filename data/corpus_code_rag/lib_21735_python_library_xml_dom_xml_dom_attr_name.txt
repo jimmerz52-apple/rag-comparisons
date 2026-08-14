@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Attr.name
+
+Attr.name  
+The attribute name. In a namespace-using document it may include a colon.

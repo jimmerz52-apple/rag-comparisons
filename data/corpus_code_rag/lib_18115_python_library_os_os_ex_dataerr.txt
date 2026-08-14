@@ -1,0 +1,4 @@
+# python.library.os#os.EX_DATAERR
+
+os.EX_DATAERR  
+Exit code that means the input data was incorrect. Availability: Unix.

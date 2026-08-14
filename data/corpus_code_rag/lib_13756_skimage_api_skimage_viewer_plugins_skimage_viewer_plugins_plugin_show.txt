@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.show
+
+show(main_window=True) [source]
+ 
+Show plugin.

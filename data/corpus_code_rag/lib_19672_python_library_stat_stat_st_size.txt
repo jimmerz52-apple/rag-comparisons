@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_SIZE
+
+stat.ST_SIZE  
+Size in bytes of a plain file; amount of data waiting on some special files.

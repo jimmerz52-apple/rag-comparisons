@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.day.is_on_offset
+
+pandas.tseries.offsets.Day.is_on_offset   Day.is_on_offset()

@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.SocketHandler.handleError
+
+handleError()  
+Handles an error which has occurred during emit(). The most likely cause is a lost connection. Closes the socket so that we can retry on the next event.

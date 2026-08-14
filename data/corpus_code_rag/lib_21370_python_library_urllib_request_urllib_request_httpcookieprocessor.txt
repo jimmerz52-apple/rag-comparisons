@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPCookieProcessor
+
+class urllib.request.HTTPCookieProcessor(cookiejar=None)  
+A class to handle HTTP Cookies.

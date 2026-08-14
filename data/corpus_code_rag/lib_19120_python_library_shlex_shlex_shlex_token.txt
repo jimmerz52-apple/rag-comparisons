@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.token
+
+shlex.token  
+The token buffer. It may be useful to examine this when catching exceptions.

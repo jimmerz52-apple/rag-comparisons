@@ -1,0 +1,7 @@
+# django.ref.models.querysets#django.db.models.Avg
+
+class Avg(expression, output_field=None, distinct=False, filter=None, default=None, **extra)  
+Returns the mean value of the given expression, which must be numeric unless you specify a different output_field.  Default alias: <field>__avg
+ Return type: float if input is int, otherwise same as input field, or output_field if supplied  Has one optional argument:  
+distinct  
+If distinct=True, Avg returns the mean value of unique values. This is the SQL equivalent of AVG(DISTINCT <field>). The default value is False.

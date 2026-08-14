@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.set_window_title
+
+set_window_title(title)[source]
+ 
+[Deprecated] Set the title text of the window containing the figure. Note that this has no effect if there is no window (e.g., a PS backend). Notes  Deprecated since version 3.4.

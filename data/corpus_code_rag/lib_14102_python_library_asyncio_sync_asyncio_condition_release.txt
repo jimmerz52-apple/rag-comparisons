@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Condition.release
+
+release()  
+Release the underlying lock. When invoked on an unlocked lock, a RuntimeError is raised.

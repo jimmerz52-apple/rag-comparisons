@@ -1,0 +1,4 @@
+# django.topics.signing#django.core.signing.TimestampSigner.sign
+
+sign(value)  
+Sign value and append current timestamp to it.

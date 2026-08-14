@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.set_path_effects
+
+matplotlib.artist.Artist.set_path_effects   Artist.set_path_effects(path_effects)[source]
+ 
+Set the path effects.  Parameters 
+ 
+path_effectsAbstractPathEffect

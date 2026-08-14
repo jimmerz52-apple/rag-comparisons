@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransformTo.__init__
+
+__init__(boxout, **kwargs)[source]
+ 
+Create a new BboxTransformTo that linearly transforms points from the unit bounding box to boxout.

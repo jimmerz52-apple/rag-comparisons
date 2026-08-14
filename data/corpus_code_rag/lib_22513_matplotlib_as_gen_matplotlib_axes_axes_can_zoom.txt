@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.can_zoom
+
+matplotlib.axes.Axes.can_zoom   Axes.can_zoom()[source]
+ 
+Return whether this Axes supports the zoom box button functionality.

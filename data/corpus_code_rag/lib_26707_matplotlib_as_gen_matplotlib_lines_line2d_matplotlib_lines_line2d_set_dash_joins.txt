@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_dash_joinstyle
+
+set_dash_joinstyle(s)[source]
+ 
+How to join segments of the line if it is_dashed.  Parameters 
+ 
+sJoinStyle or {'miter', 'round', 'bevel'}

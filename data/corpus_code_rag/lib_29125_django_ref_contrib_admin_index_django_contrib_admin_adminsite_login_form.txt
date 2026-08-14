@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.login_form
+
+AdminSite.login_form  
+Subclass of AuthenticationForm that will be used by the admin site login view.

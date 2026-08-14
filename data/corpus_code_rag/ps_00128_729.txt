@@ -1,0 +1,7 @@
+# 729
+Task: 729
+
+# Write a function to add two lists using map and lambda function.
+def add_list(nums1,nums2):
+  result = map(lambda x, y: x + y, nums1, nums2)
+  return list(result)

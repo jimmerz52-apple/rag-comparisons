@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.MemoryBIO.pending
+
+pending  
+Return the number of bytes currently in the memory buffer.

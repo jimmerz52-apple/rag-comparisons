@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_IEEE_754
+
+@test.support.requires_IEEE_754  
+Decorator for skipping tests on non-IEEE 754 platforms.

@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Maildir.list_folders
+
+list_folders()  
+Return a list of the names of all folders.

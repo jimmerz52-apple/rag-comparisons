@@ -1,0 +1,4 @@
+# python.library.os#os.rmdir
+
+os.rmdir(path, *, dir_fd=None)  
+Remove (delete) the directory path. If the directory does not exist or is not empty, an FileNotFoundError or an OSError is raised respectively. In order to remove whole directory trees, shutil.rmtree() can be used. This function can support paths relative to directory descriptors. Raises an auditing event os.rmdir with arguments path, dir_fd.  New in version 3.3: The dir_fd parameter.   Changed in version 3.6: Accepts a path-like object.

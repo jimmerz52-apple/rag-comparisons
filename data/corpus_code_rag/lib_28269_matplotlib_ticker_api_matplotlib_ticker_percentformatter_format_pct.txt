@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.PercentFormatter.format_pct
+
+format_pct(x, display_range)[source]
+ 
+Format the number as a percentage number with the correct number of decimals and adds the percent symbol, if any. If self.decimals is None, the number of digits after the decimal point is set based on the display_range of the axis as follows:  
+display_range decimals sample  
+>50 0 x = 34.5 => 35%  
+>5 1 x = 34.5 => 34.5%  
+>0.5 2 x = 34.5 => 34.50%  
+... ... ...   This method will not be very good for tiny axis ranges or extremely large ones. It assumes that the values on the chart are percentages displayed on a reasonable scale.

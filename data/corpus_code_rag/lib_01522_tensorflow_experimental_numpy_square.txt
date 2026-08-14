@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.square
+
+tf.experimental.numpy.square TensorFlow variant of NumPy's square. 
+tf.experimental.numpy.square(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.square.

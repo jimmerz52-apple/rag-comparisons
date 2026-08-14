@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_markersize
+
+set_markersize(sz)[source]
+ 
+Set the marker size in points.  Parameters 
+ 
+szfloat
+
+
+Marker size, in points.

@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.site_url
+
+AdminSite.site_url  
+The URL for the “View site” link at the top of each admin page. By default, site_url is /. Set it to None to remove the link. For sites running on a subpath, the each_context() method checks if the current request has request.META['SCRIPT_NAME'] set and uses that value if site_url isn’t set to something other than /.

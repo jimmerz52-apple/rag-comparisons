@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.has_option
+
+has_option(section, option)  
+If the given section exists, and contains the given option, return True; otherwise return False. If the specified section is None or an empty string, DEFAULT is assumed.

@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.SharedMemory.unlink
+
+unlink()  
+Requests that the underlying shared memory block be destroyed. In order to ensure proper cleanup of resources, unlink() should be called once (and only once) across all processes which have need for the shared memory block. After requesting its destruction, a shared memory block may or may not be immediately destroyed and this behavior may differ across platforms. Attempts to access data inside the shared memory block after unlink() has been called may result in memory access errors. Note: the last process relinquishing its hold on a shared memory block may call unlink() and close() in either order.

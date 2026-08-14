@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.is_infinite
+
+is_infinite()  
+Return True if the argument is either positive or negative infinity and False otherwise.

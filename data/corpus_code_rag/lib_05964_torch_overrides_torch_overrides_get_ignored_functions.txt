@@ -1,0 +1,10 @@
+# torch.overrides#torch.overrides.get_ignored_functions
+
+torch.overrides.get_ignored_functions() [source]
+ 
+Return public functions that cannot be overridden by __torch_function__.  Returns 
+A tuple of functions that are publicly available in the torch API but cannot be overridden with __torch_function__. Mostly this is because none of the arguments of these functions are tensors or tensor-likes.  Return type 
+Set[Callable]   Examples >>> torch.Tensor.as_subclass in torch.overrides.get_ignored_functions()
+True
+>>> torch.add in torch.overrides.get_ignored_functions()
+False

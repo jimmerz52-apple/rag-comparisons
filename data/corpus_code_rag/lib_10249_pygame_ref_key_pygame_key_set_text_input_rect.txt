@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.set_text_input_rect
+
+pygame.key.set_text_input_rect() 
+ controls the position of the candidate list set_text_input_rect(Rect) -> None  This sets the rectangle used for typing with an IME. It controls where the candidate list will open, if supported.  New in pygame 2.0.0.

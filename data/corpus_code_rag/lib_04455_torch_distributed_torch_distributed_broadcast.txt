@@ -1,0 +1,11 @@
+# torch.distributed#torch.distributed.broadcast
+
+torch.distributed.broadcast(tensor, src, group=None, async_op=False) [source]
+ 
+Broadcasts the tensor to the whole group. tensor must have the same number of elements in all processes participating in the collective.  Parameters 
+ 
+tensor (Tensor) – Data to be sent if src is the rank of current process, and tensor to be used to save received data otherwise. 
+src (int) – Source rank. 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+async_op (bool, optional) – Whether this op should be an async op   Returns 
+Async work handle, if async_op is set to True. None, if not async_op or if not part of the group

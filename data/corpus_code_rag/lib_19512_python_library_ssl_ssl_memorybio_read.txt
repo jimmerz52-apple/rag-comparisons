@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.MemoryBIO.read
+
+read(n=-1)  
+Read up to n bytes from the memory buffer. If n is not specified or negative, all bytes are returned.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.get_paginate_orphans
+
+get_paginate_orphans()  
+An integer specifying the number of “overflow” objects the last page can contain. By default this returns the value of paginate_orphans.

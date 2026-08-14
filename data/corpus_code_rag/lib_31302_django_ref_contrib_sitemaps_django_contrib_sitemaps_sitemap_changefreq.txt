@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.changefreq
+
+changefreq  
+Optional. Either a method or attribute. If it’s a method, it should take one argument – an object as returned by items() – and return that object’s change frequency as a string. If it’s an attribute, its value should be a string representing the change frequency of every object returned by items(). Possible values for changefreq, whether you use a method or attribute, are:  'always' 'hourly' 'daily' 'weekly' 'monthly' 'yearly' 'never'

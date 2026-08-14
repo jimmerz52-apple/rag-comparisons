@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.NAMESPACE_X500
+
+uuid.NAMESPACE_X500  
+When this namespace is specified, the name string is an X.500 DN in DER or a text output format.

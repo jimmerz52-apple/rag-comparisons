@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.firstChild
+
+Node.firstChild  
+The first child of the node, if there are any, or None. This is a read-only attribute.

@@ -1,0 +1,112 @@
+{
+  "audience": "engineering",
+  "latency_slo_seconds": 5.0,
+  "min_quality_bar": 0.35,
+  "n_eval_queries": 20,
+  "caveats": [
+    "Eval set size n=20 \u2014 treat rankings as directional, not production SLAs.",
+    "Overlapping quality CIs are common at this n; trust large gaps (latency/tokens/local EM) over 0.01 composite deltas.",
+    "Composite mixes EM/F1/judge; generative graph answers often lose on EM even when useful.",
+    "Absolute latency depends on hardware + model size; use relative ordering for stack choice."
+  ],
+  "default_production_method": {
+    "method": "semantic_rag",
+    "label": "Semantic (vector)",
+    "reason": "No method met latency SLO; picking fastest mean latency",
+    "quality": 0.2702391170964139,
+    "usable_answer_rate": 0.85,
+    "p95_latency_s": 5.0346823666594025,
+    "tokens_per_query": 6904.55
+  },
+  "routing_by_query_type": [
+    {
+      "query_type": "local",
+      "scenario": "local_factoid",
+      "recommended_method": "rerank_semantic",
+      "recommended_label": "Vector + rerank",
+      "quality": 0.30240104526187933,
+      "margin_over_next": 0.032161928165465425,
+      "tie_broke_on_cost": false,
+      "tokens_per_query": 6817.55,
+      "guidance": "Single-entity / comparison factoids \u2192 Vector + rerank."
+    }
+  ],
+  "methods": [
+    {
+      "method": "semantic_rag",
+      "mean_composite_score": 0.2702391170964139,
+      "mean_generative_score": 0.4025,
+      "mean_extractive_score": 0.1379782341928278,
+      "mean_llm_judge": 0.505,
+      "mean_token_f1": 0.2759564683856556,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.3,
+      "total_tokens": 138091,
+      "prompt_tokens": 135768,
+      "completion_tokens": 2323,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 3.535680291999597,
+      "mean_query_latency_seconds": 2.474348618948716,
+      "p95_query_latency_seconds": 5.0346823666594025,
+      "total_elapsed_seconds": 80.89711212500697,
+      "tokens_per_query": 6904.55,
+      "label": "Semantic (vector)",
+      "quality_per_1k_tokens": 0.03913928019876949,
+      "meets_latency_slo": false,
+      "meets_quality_bar": false,
+      "usable_answer_rate": 0.85
+    },
+    {
+      "method": "rerank_semantic",
+      "mean_composite_score": 0.30240104526187933,
+      "mean_generative_score": 0.45499999999999996,
+      "mean_extractive_score": 0.1498020905237586,
+      "mean_llm_judge": 0.4600000000000001,
+      "mean_token_f1": 0.2996041810475172,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.45,
+      "total_tokens": 136351,
+      "prompt_tokens": 133761,
+      "completion_tokens": 2590,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 3.1692507920088246,
+      "mean_query_latency_seconds": 5.746949918702012,
+      "p95_query_latency_seconds": 15.878483022932778,
+      "total_elapsed_seconds": 188.89471529098228,
+      "tokens_per_query": 6817.55,
+      "label": "Vector + rerank",
+      "quality_per_1k_tokens": 0.04435626365217407,
+      "meets_latency_slo": false,
+      "meets_quality_bar": false,
+      "usable_answer_rate": 0.85
+    }
+  ],
+  "efficiency_ranking": [
+    {
+      "method": "rerank_semantic",
+      "label": "Vector + rerank",
+      "mean_composite_score": 0.30240104526187933,
+      "usable_answer_rate": 0.85,
+      "tokens_per_query": 6817.55,
+      "quality_per_1k_tokens": 0.04435626365217407,
+      "p95_query_latency_seconds": 15.878483022932778
+    },
+    {
+      "method": "semantic_rag",
+      "label": "Semantic (vector)",
+      "mean_composite_score": 0.2702391170964139,
+      "usable_answer_rate": 0.85,
+      "tokens_per_query": 6904.55,
+      "quality_per_1k_tokens": 0.03913928019876949,
+      "p95_query_latency_seconds": 5.0346823666594025
+    }
+  ],
+  "recommendations": [
+    "Ship a query router, not one RAG stack: local factoids vs multi-hop need different paths.",
+    "LOCAL_FACTOID: Vector + rerank (q=0.30, \u0394=0.03, 6818 tok/q).",
+    "Usable-answer leader (Semantic (vector), 85%) differs from composite leader (Vector + rerank) \u2014 pick the metric that matches your UX.",
+    "Highest token cost: Semantic (vector) (6905 tok/q) \u2014 gate behind hard-query classifier.",
+    "Misses p95\u22645.0s SLO: Semantic (vector), Vector + rerank. Keep interactive path on vector; run graph/hybrid async or on stronger GPUs.",
+    "Rebuild GraphRAG indexes only on corpus change; amortize index_seconds over expected volume."
+  ]
+}

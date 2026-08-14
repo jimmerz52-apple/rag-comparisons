@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.get_info
+
+get_info(*names)[source]
+ 
+Get resources information. Return information (from system_info.get_info) for all of the names in the argument list in a single dictionary.

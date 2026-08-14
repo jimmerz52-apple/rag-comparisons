@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.scalable
+
+mpl_toolkits.axes_grid1.axes_size.Scalable   mpl_toolkits.axes_grid1.axes_size.Scalable[source]
+ 
+alias of mpl_toolkits.axes_grid1.axes_size.Scaled

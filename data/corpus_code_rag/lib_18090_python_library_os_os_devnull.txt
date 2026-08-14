@@ -1,0 +1,4 @@
+# python.library.os#os.devnull
+
+os.devnull  
+The file path of the null device. For example: '/dev/null' for POSIX, 'nul' for Windows. Also available via os.path.

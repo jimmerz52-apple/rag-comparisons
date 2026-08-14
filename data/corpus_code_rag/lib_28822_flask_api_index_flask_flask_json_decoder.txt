@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.json_decoder
+
+json_decoder  
+alias of flask.json.JSONDecoder

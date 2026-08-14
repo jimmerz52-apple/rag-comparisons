@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_id
+
+get_id() 
+ the index of the cdrom drive get_id() -> id  Returns the integer id that was used to create the CD instance. This method can work on an uninitialized CD.

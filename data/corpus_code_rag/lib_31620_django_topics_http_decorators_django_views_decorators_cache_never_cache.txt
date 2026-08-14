@@ -1,0 +1,5 @@
+# django.topics.http.decorators#django.views.decorators.cache.never_cache
+
+never_cache(view_func)  
+This decorator adds a Cache-Control: max-age=0, no-cache, no-store,
+must-revalidate, private header to a response to indicate that a page should never be cached.

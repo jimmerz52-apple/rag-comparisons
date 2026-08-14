@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.get_cache_size
+
+pygame.freetype.get_cache_size() 
+ Return the glyph case size get_cache_size() -> long  See pygame.freetype.init().

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin.get_prefix
+
+get_prefix()  
+Determine the prefix for the generated form. Returns prefix by default.

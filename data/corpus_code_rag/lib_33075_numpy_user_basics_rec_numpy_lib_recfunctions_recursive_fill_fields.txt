@@ -1,0 +1,20 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.recursive_fill_fields
+
+numpy.lib.recfunctions.recursive_fill_fields(input, output)[source]
+ 
+Fills fields from output with fields from input, with support for nested structures.  Parameters 
+ 
+inputndarray
+
+
+Input array.  
+outputndarray
+
+
+Output array.     Notes  
+output should be at least the same size as input
+  Examples >>> from numpy.lib import recfunctions as rfn
+>>> a = np.array([(1, 10.), (2, 20.)], dtype=[('A', np.int64), ('B', np.float64)])
+>>> b = np.zeros((3,), dtype=a.dtype)
+>>> rfn.recursive_fill_fields(a, b)
+array([(1, 10.), (2, 20.), (0,  0.)], dtype=[('A', '<i8'), ('B', '<f8')])

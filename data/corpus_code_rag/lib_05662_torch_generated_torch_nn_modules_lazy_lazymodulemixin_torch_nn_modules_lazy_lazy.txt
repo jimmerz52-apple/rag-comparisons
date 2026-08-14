@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.modules.lazy.lazymodulemixin#torch.nn.modules.lazy.LazyModuleMixin.has_uninitialized_params
+
+has_uninitialized_params() [source]
+ 
+Check if a module has parameters that are not initialized

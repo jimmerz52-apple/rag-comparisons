@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.core.groupby.seriesgroupby.value_counts
+
+pandas.core.groupby.SeriesGroupBy.value_counts   SeriesGroupBy.value_counts(normalize=False, sort=True, ascending=False, bins=None, dropna=True)[source]

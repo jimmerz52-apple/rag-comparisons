@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.wasSuccessful
+
+wasSuccessful()  
+Return True if all tests run so far have passed, otherwise returns False.  Changed in version 3.4: Returns False if there were any unexpectedSuccesses from tests marked with the expectedFailure() decorator.

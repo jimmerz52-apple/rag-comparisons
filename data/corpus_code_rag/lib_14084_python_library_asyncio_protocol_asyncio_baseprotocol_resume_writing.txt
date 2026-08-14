@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseProtocol.resume_writing
+
+BaseProtocol.resume_writing()  
+Called when the transport’s buffer drains below the low watermark.

@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.validators.UnicodeUsernameValidator
+
+class validators.UnicodeUsernameValidator  
+A field validator allowing Unicode characters, in addition to @, ., +, -, and _. The default validator for User.username.

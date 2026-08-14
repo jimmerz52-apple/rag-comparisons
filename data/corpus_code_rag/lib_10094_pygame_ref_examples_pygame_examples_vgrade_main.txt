@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.vgrade.main
+
+vgrade.main() 
+ display a vertical gradient vgrade.main() -> None  Demonstrates creating a vertical gradient with pixelcopy and NumPy python. The app will create a new gradient every half second and report the time needed to create and display the image. If you're not prepared to start working with the NumPy arrays, don't worry about the source for this one :]

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sigmoid_
+
+sigmoid_() → Tensor  
+In-place version of sigmoid()

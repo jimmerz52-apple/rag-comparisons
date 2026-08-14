@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.read
+
+ZipFile.read(name, pwd=None)  
+Return the bytes of the file name in the archive. name is the name of the file in the archive, or a ZipInfo object. The archive must be open for read or append. pwd is the password used for encrypted files and, if specified, it will override the default password set with setpassword(). Calling read() on a ZipFile that uses a compression method other than ZIP_STORED, ZIP_DEFLATED, ZIP_BZIP2 or ZIP_LZMA will raise a NotImplementedError. An error will also be raised if the corresponding compression module is not available.  Changed in version 3.6: Calling read() on a closed ZipFile will raise a ValueError. Previously, a RuntimeError was raised.

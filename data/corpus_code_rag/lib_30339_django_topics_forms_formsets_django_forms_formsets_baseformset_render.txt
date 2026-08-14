@@ -1,0 +1,9 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.render
+
+BaseFormSet.render(template_name=None, context=None, renderer=None)  
+ New in Django 4.0.  The render method is called by __str__ as well as the as_p(), as_ul(), and as_table() methods. All arguments are optional and will default to:  
+template_name: template_name
+ 
+context: Value returned by get_context()
+ 
+renderer: Value returned by renderer

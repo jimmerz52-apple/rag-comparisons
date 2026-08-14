@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_PARTIAL_CHAR
+
+xml.parsers.expat.errors.XML_ERROR_PARTIAL_CHAR  
+An incomplete character was found in the input.

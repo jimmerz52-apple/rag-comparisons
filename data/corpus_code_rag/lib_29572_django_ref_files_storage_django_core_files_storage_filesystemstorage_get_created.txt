@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.FileSystemStorage.get_created_time
+
+get_created_time(name)  
+Returns a datetime of the system’s ctime, i.e. os.path.getctime(). On some systems (like Unix), this is the time of the last metadata change, and on others (like Windows), it’s the creation time of the file.

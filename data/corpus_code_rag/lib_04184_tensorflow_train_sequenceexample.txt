@@ -1,0 +1,10 @@
+# tensorflow.train.sequenceexample
+
+tf.train.SequenceExample     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.SequenceExample 
+ 
+
+
+ Attributes
+  context   Features context  
+  feature_lists   FeatureLists feature_lists

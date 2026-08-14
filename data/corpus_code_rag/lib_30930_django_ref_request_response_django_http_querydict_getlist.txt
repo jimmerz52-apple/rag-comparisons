@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.getlist
+
+QueryDict.getlist(key, default=None)  
+Returns a list of the data with the requested key. Returns an empty list if the key doesn’t exist and default is None. It’s guaranteed to return a list unless the default value provided isn’t a list.

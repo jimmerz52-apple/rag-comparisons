@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.ElementTree.findtext
+
+findtext(match, default=None, namespaces=None)  
+Same as Element.findtext(), starting at the root of the tree.

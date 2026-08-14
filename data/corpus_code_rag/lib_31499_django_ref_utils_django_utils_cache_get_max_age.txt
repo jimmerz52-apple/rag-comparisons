@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.cache.get_max_age
+
+get_max_age(response)  
+Returns the max-age from the response Cache-Control header as an integer (or None if it wasn’t found or wasn’t an integer).

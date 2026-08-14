@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.set_default_type
+
+set_default_type(ctype)  
+Set the default content type. ctype should either be text/plain or message/rfc822, although this is not enforced. The default content type is not stored in the Content-Type header, so it only affects the return value of the get_content_type methods when no Content-Type header is present in the message.

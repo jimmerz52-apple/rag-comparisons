@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.get_size
+
+get_size() 
+ returns the dimensions of the images being recorded get_size() -> (width, height)  Returns the current dimensions of the images being captured by the camera. This will return the actual size, which may be different than the one specified during initialization if the camera did not support that size.

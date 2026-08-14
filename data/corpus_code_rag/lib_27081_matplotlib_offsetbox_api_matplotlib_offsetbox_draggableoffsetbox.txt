@@ -1,0 +1,9 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DraggableOffsetBox
+
+classmatplotlib.offsetbox.DraggableOffsetBox(ref_artist, offsetbox, use_blit=False)[source]
+ 
+Bases: matplotlib.offsetbox.DraggableBase   get_loc_in_canvas()[source]
+
+   save_offset()[source]
+
+   update_offset(dx, dy)[source]

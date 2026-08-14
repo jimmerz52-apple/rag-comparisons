@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.to_integral_value
+
+to_integral_value(rounding=None, context=None)  
+Round to the nearest integer without signaling Inexact or Rounded. If given, applies rounding; otherwise, uses the rounding method in either the supplied context or the current context.

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.set_dashes
+
+set_dashes(ls)[source]
+ 
+Alias for set_linestyle.

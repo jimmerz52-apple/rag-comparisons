@@ -1,0 +1,17 @@
+# skimage.api.skimage.segmentation#skimage.segmentation.checkerboard_level_set
+
+skimage.segmentation.checkerboard_level_set(image_shape, square_size=5) [source]
+ 
+Create a checkerboard level set with binary values.  Parameters 
+ 
+image_shapetuple of positive integers 
+
+Shape of the image.  
+square_sizeint, optional 
+
+Size of the squares of the checkerboard. It defaults to 5.    Returns 
+ 
+outarray with shape image_shape 
+
+Binary level set of the checkerboard.      See also  
+circle_level_set

@@ -1,0 +1,15 @@
+# matplotlib.toolkits.axisartist
+
+mpl_toolkits.axisartist The axisartist namespace provides a derived Axes implementation (mpl_toolkits.axisartist.Axes), designed to support curvilinear grids. The biggest difference is that the artists that are responsible for drawing axis lines, ticks, ticklabels, and axis labels are separated out from Matplotlib's Axis class. You can find a tutorial describing usage of axisartist at the axisartist user guide.    The submodules of the axisartist API are:  
+axisartist.angle_helper   
+axisartist.axes_divider   
+axisartist.axes_grid   
+axisartist.axes_rgb   
+axisartist.axis_artist The axis_artist module implements custom artists to draw axis elements (axis lines and labels, tick lines and labels, grid lines).  
+axisartist.axisline_style   
+axisartist.axislines Axislines includes modified implementation of the Axes class.  
+axisartist.clip_path   
+axisartist.floating_axes An experimental support for curvilinear grid.  
+axisartist.grid_finder   
+axisartist.grid_helper_curvelinear An experimental support for curvilinear grid.  
+axisartist.parasite_axes

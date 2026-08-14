@@ -1,0 +1,8 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.close
+
+close(id)[source]
+ 
+Close open elements, up to (and including) the element identified by the given identifier.  Parameters 
+ id
+
+Element identifier, as returned by the start() method.

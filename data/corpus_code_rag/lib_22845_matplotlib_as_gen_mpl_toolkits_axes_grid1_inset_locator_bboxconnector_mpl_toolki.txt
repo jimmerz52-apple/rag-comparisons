@@ -1,0 +1,31 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator.bboxconnector#mpl_toolkits.axes_grid1.inset_locator.BboxConnector.connect_bbox
+
+staticconnect_bbox(bbox1, bbox2, loc1, loc2=None)[source]
+ 
+Helper function to obtain a Path from one bbox to another.  Parameters 
+ 
+bbox1, bbox2matplotlib.transforms.Bbox
+
+
+Bounding boxes to connect.  
+loc1{1, 2, 3, 4}
+
+
+Corner of bbox1 to use. Valid values are: 'upper right'  : 1,
+'upper left'   : 2,
+'lower left'   : 3,
+'lower right'  : 4
+  
+loc2{1, 2, 3, 4}, optional
+
+
+Corner of bbox2 to use. If None, defaults to loc1. Valid values are: 'upper right'  : 1,
+'upper left'   : 2,
+'lower left'   : 3,
+'lower right'  : 4
+    Returns 
+ 
+pathmatplotlib.path.Path
+
+
+A line segment from the loc1 corner of bbox1 to the loc2 corner of bbox2.

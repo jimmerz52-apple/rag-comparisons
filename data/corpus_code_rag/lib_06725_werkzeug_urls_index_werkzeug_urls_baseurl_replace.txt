@@ -1,0 +1,6 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.replace
+
+replace(**kwargs)  
+Return an URL with the same values, except for those parameters given new values by whichever keyword arguments are specified.  Parameters 
+kwargs (Any) –   Return type 
+werkzeug.urls.BaseURL

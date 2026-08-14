@@ -1,0 +1,4 @@
+# python.library.platform#platform.python_branch
+
+platform.python_branch()  
+Returns a string identifying the Python implementation SCM branch.

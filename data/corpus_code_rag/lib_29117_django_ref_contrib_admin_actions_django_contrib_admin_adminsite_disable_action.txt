@@ -1,0 +1,16 @@
+# django.ref.contrib.admin.actions#django.contrib.admin.AdminSite.disable_action
+
+AdminSite.disable_action(name)  
+If you need to disable a site-wide action you can call AdminSite.disable_action(). For example, you can use this method to remove the built-in “delete selected objects” action: admin.site.disable_action('delete_selected')
+ Once you’ve done the above, that action will no longer be available site-wide. If, however, you need to re-enable a globally-disabled action for one particular model, list it explicitly in your ModelAdmin.actions list: # Globally disable delete selected
+admin.site.disable_action('delete_selected')
+
+# This ModelAdmin will not have delete_selected available
+class SomeModelAdmin(admin.ModelAdmin):
+    actions = ['some_other_action']
+    ...
+
+# This one will
+class AnotherModelAdmin(admin.ModelAdmin):
+    actions = ['delete_selected', 'a_third_action']
+    ...

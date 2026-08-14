@@ -1,0 +1,18 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.SharedMemory
+
+class multiprocessing.shared_memory.SharedMemory(name=None, create=False, size=0)  
+Creates a new shared memory block or attaches to an existing shared memory block. Each shared memory block is assigned a unique name. In this way, one process can create a shared memory block with a particular name and a different process can attach to that same shared memory block using that same name. As a resource for sharing data across processes, shared memory blocks may outlive the original process that created them. When one process no longer needs access to a shared memory block that might still be needed by other processes, the close() method should be called. When a shared memory block is no longer needed by any process, the unlink() method should be called to ensure proper cleanup. name is the unique name for the requested shared memory, specified as a string. When creating a new shared memory block, if None (the default) is supplied for the name, a novel name will be generated. create controls whether a new shared memory block is created (True) or an existing shared memory block is attached (False). size specifies the requested number of bytes when creating a new shared memory block. Because some platforms choose to allocate chunks of memory based upon that platform’s memory page size, the exact size of the shared memory block may be larger or equal to the size requested. When attaching to an existing shared memory block, the size parameter is ignored.  
+close()  
+Closes access to the shared memory from this instance. In order to ensure proper cleanup of resources, all instances should call close() once the instance is no longer needed. Note that calling close() does not cause the shared memory block itself to be destroyed. 
+  
+unlink()  
+Requests that the underlying shared memory block be destroyed. In order to ensure proper cleanup of resources, unlink() should be called once (and only once) across all processes which have need for the shared memory block. After requesting its destruction, a shared memory block may or may not be immediately destroyed and this behavior may differ across platforms. Attempts to access data inside the shared memory block after unlink() has been called may result in memory access errors. Note: the last process relinquishing its hold on a shared memory block may call unlink() and close() in either order. 
+  
+buf  
+A memoryview of contents of the shared memory block. 
+  
+name  
+Read-only access to the unique name of the shared memory block. 
+  
+size  
+Read-only access to size in bytes of the shared memory block.

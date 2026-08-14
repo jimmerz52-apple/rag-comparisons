@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_fontweight
+
+get_fontweight()[source]
+ 
+Return the font weight as a string or a number.  See also  font_manager.FontProperties.get_weight

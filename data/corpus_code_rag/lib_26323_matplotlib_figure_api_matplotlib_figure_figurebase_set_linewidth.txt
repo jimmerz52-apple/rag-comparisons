@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.set_linewidth
+
+set_linewidth(linewidth)[source]
+ 
+Set the line width of the Figure rectangle.  Parameters 
+ 
+linewidthnumber

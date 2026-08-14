@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.pending
+
+SSLSocket.pending()  
+Returns the number of already decrypted bytes available for read, pending on the connection.

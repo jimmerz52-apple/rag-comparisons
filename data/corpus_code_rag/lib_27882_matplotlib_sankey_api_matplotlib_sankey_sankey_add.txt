@@ -1,0 +1,78 @@
+# matplotlib.sankey_api#matplotlib.sankey.Sankey.add
+
+add(patchlabel='', flows=None, orientations=None, labels='', trunklength=1.0, pathlengths=0.25, prior=None, connect=(0, 0), rotation=0, **kwargs)[source]
+ 
+Add a simple Sankey diagram with flows at the same hierarchical level.  Parameters 
+ 
+patchlabelstr
+
+
+Label to be placed at the center of the diagram. Note that label (not patchlabel) can be passed as keyword argument to create an entry in the legend.  
+flowslist of float
+
+
+Array of flow values. By convention, inputs are positive and outputs are negative. Flows are placed along the top of the diagram from the inside out in order of their index within flows. They are placed along the sides of the diagram from the top down and along the bottom from the outside in. If the sum of the inputs and outputs is nonzero, the discrepancy will appear as a cubic Bezier curve along the top and bottom edges of the trunk.  
+orientationslist of {-1, 0, 1}
+
+
+List of orientations of the flows (or a single orientation to be used for all flows). Valid values are 0 (inputs from the left, outputs to the right), 1 (from and to the top) or -1 (from and to the bottom).  
+labelslist of (str or None)
+
+
+List of labels for the flows (or a single label to be used for all flows). Each label may be None (no label), or a labeling string. If an entry is a (possibly empty) string, then the quantity for the corresponding flow will be shown below the string. However, if the unit of the main diagram is None, then quantities are never shown, regardless of the value of this argument.  
+trunklengthfloat
+
+
+Length between the bases of the input and output groups (in data-space units).  
+pathlengthslist of float
+
+
+List of lengths of the vertical arrows before break-in or after break-away. If a single value is given, then it will be applied to the first (inside) paths on the top and bottom, and the length of all other arrows will be justified accordingly. The pathlengths are not applied to the horizontal inputs and outputs.  
+priorint
+
+
+Index of the prior diagram to which this diagram should be connected.  
+connect(int, int)
+
+
+A (prior, this) tuple indexing the flow of the prior diagram and the flow of this diagram which should be connected. If this is the first diagram or prior is None, connect will be ignored.  
+rotationfloat
+
+
+Angle of rotation of the diagram in degrees. The interpretation of the orientations argument will be rotated accordingly (e.g., if rotation == 90, an orientations entry of 1 means to/from the left). rotation is ignored if this diagram is connected to an existing one (using prior and connect).    Returns 
+ Sankey
+
+The current Sankey instance.    Other Parameters 
+ **kwargs
+
+Additional keyword arguments set matplotlib.patches.PathPatch properties, listed below. For example, one may want to use fill=False or label="A legend entry".   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float        See also  Sankey.finish

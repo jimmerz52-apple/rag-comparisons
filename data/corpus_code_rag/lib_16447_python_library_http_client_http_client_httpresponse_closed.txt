@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.closed
+
+HTTPResponse.closed  
+Is True if the stream is closed.

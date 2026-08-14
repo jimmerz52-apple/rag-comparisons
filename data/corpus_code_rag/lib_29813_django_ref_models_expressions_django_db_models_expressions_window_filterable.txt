@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.expressions.Window.filterable
+
+filterable  
+Defaults to False. The SQL standard disallows referencing window functions in the WHERE clause and Django raises an exception when constructing a QuerySet that would do that.

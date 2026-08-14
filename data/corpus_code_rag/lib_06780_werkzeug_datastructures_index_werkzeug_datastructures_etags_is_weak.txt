@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ETags.is_weak
+
+is_weak(etag)  
+Check if an etag is weak.

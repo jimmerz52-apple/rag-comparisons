@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Address.max_prefixlen
+
+max_prefixlen  
+The total number of bits in the address representation for this version: 32 for IPv4, 128 for IPv6. The prefix defines the number of leading bits in an address that are compared to determine whether or not an address is part of a network.

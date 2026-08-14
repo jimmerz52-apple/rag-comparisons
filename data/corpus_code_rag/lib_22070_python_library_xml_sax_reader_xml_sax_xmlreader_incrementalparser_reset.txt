@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.IncrementalParser.reset
+
+IncrementalParser.reset()  
+This method is called after close has been called to reset the parser so that it is ready to parse new documents. The results of calling parse or feed after close without calling reset are undefined.

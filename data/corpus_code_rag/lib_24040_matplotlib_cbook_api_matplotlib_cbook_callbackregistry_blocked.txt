@@ -1,0 +1,10 @@
+# matplotlib.cbook_api#matplotlib.cbook.CallbackRegistry.blocked
+
+blocked(*, signal=None)
+ 
+Block callback signals from being processed. A context manager to temporarily block/disable callback signals from being processed by the registered listeners.  Parameters 
+ 
+signalstr, optional
+
+
+The callback signal to block. The default is to block all signals.

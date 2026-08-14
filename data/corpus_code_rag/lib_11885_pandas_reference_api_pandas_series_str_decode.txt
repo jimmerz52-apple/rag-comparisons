@@ -1,0 +1,13 @@
+# pandas.reference.api.pandas.series.str.decode
+
+pandas.Series.str.decode   Series.str.decode(encoding, errors='strict')[source]
+ 
+Decode character string in the Series/Index using indicated encoding. Equivalent to str.decode() in python2 and bytes.decode() in python3.  Parameters 
+ 
+encoding:str
+
+
+errors:str, optional
+
+  Returns 
+ Series or Index

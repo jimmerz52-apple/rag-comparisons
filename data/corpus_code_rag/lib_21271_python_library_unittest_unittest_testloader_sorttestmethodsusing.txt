@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestLoader.sortTestMethodsUsing
+
+sortTestMethodsUsing  
+Function to be used to compare method names when sorting them in getTestCaseNames() and all the loadTestsFrom*() methods.

@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.GenericIPAddressField
+
+class GenericIPAddressField(protocol='both', unpack_ipv4=False, **options)

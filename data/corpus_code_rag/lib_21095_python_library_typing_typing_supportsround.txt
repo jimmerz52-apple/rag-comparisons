@@ -1,0 +1,4 @@
+# python.library.typing#typing.SupportsRound
+
+class typing.SupportsRound  
+An ABC with one abstract method __round__ that is covariant in its return type.

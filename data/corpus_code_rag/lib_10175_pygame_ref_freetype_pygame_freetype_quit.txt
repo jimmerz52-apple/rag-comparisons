@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.quit
+
+pygame.freetype.quit() 
+ Shut down the underlying FreeType library. quit()  This function closes the freetype module. After calling this function, you should not invoke any class, method or function related to the freetype module as they are likely to fail or might give unpredictable results. It is safe to call this function even if the module hasn't been initialized yet.

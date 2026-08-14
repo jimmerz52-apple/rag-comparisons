@@ -1,0 +1,20 @@
+# tensorflow.raw_ops.anonymousiteratorv2
+
+tf.raw_ops.AnonymousIteratorV2 A container for an iterator resource.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.AnonymousIteratorV2  
+tf.raw_ops.AnonymousIteratorV2(
+    output_types, output_shapes, name=None
+)
+
+ 
+
+
+ Args
+  output_types   A list of tf.DTypes that has length >= 1.  
+  output_shapes   A list of shapes (each a tf.TensorShape or list of ints) that has length >= 1.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A tuple of Tensor objects (handle, deleter).     handle   A Tensor of type resource.  
+  deleter   A Tensor of type variant.

@@ -1,0 +1,5 @@
+# python.library.operator#operator.imatmul
+
+operator.imatmul(a, b)  
+operator.__imatmul__(a, b)  
+a = imatmul(a, b) is equivalent to a @= b.  New in version 3.5.

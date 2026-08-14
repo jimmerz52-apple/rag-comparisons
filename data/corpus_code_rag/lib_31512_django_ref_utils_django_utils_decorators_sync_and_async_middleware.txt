@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.decorators.sync_and_async_middleware
+
+sync_and_async_middleware(middleware) [source]
+ 
+Marks a middleware as sync and async compatible, this allows to avoid converting requests. You must implement detection of the current request type to use this decorator. See asynchronous middleware documentation for details.

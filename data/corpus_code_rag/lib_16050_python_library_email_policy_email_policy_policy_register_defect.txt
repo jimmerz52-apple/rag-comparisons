@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Policy.register_defect
+
+register_defect(obj, defect)  
+Register a defect on obj. In the email package, defect will always be a subclass of Defect. The default implementation calls the append method of the defects attribute of obj. When the email package calls handle_defect, obj will normally have a defects attribute that has an append method. Custom object types used with the email package (for example, custom Message objects) should also provide such an attribute, otherwise defects in parsed messages will raise unexpected errors.

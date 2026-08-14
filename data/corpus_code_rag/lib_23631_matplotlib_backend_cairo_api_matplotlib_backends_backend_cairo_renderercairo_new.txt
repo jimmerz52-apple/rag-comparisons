@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.RendererCairo.new_gc
+
+new_gc()[source]
+ 
+Return an instance of a GraphicsContextBase.

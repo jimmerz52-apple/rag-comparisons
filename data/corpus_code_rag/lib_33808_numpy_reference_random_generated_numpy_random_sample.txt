@@ -1,0 +1,5 @@
+# numpy.reference.random.generated.numpy.random.sample
+
+numpy.random.sample   random.sample()
+ 
+This is an alias of random_sample. See random_sample for the complete documentation.

@@ -1,0 +1,4 @@
+# tensorflow.compat.v1.logging.flush
+
+tf.compat.v1.logging.flush 
+tf.compat.v1.logging.flush()

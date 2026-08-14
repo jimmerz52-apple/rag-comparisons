@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.Future.set_running_or_notify_cancel
+
+set_running_or_notify_cancel()  
+This method should only be called by Executor implementations before executing the work associated with the Future and by unit tests. If the method returns False then the Future was cancelled, i.e. Future.cancel() was called and returned True. Any threads waiting on the Future completing (i.e. through as_completed() or wait()) will be woken up. If the method returns True then the Future was not cancelled and has been put in the running state, i.e. calls to Future.running() will return True. This method can only be called once and cannot be called after Future.set_result() or Future.set_exception() have been called.

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.set_linewidths
+
+set_linewidths(lw)[source]
+ 
+Alias for set_linewidth.

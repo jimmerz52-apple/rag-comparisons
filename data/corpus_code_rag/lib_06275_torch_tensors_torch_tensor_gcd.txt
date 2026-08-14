@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.gcd
+
+gcd(other) → Tensor  
+See torch.gcd()

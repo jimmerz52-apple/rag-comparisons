@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractEventLoopPolicy.get_event_loop
+
+get_event_loop()  
+Get the event loop for the current context. Return an event loop object implementing the AbstractEventLoop interface. This method should never return None.  Changed in version 3.6.

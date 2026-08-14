@@ -1,0 +1,4 @@
+# python.library.token#token.LEFTSHIFT
+
+token.LEFTSHIFT  
+Token value for "<<".

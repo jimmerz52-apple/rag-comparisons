@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.MB_ICONQUESTION
+
+winsound.MB_ICONQUESTION  
+Play the SystemQuestion sound.

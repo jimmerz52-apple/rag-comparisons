@@ -1,0 +1,3 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection.set_paths
+
+set_paths(patches)[source]

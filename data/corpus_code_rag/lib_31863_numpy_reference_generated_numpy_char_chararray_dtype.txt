@@ -1,0 +1,18 @@
+# numpy.reference.generated.numpy.char.chararray.dtype
+
+numpy.char.chararray.dtype attribute   char.chararray.dtype
+ 
+Data-type of the array’s elements.  Parameters 
+ None
+  Returns 
+ 
+dnumpy dtype object
+
+    See also  numpy.dtype
+  Examples >>> x
+array([[0, 1],
+       [2, 3]])
+>>> x.dtype
+dtype('int32')
+>>> type(x.dtype)
+<type 'numpy.dtype'>

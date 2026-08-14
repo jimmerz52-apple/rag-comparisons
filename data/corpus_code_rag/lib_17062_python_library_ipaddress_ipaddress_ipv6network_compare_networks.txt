@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv6Network.compare_networks
+
+compare_networks(other)  
+Refer to the corresponding attribute documentation in IPv4Network.

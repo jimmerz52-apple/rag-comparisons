@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingclassifier#sklearn.ensemble.StackingClassifier.transform
+
+transform(X) [source]
+ 
+Return class labels or probabilities for X for each estimator.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+y_predsndarray of shape (n_samples, n_estimators) or (n_samples, n_classes * n_estimators) 
+
+Prediction outputs for each estimator.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.isoweekday
+
+pandas.Timestamp.isoweekday   Timestamp.isoweekday()
+ 
+Return the day of the week represented by the date. Monday == 1 … Sunday == 7.

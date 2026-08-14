@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.back
+
+back()[source]
+ 
+Move the position back and return the current element.

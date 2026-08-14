@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.root_attributes
+
+root_attributes()  
+Return extra attributes to place on the root (i.e. feed/channel) element. Called from write().

@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.get
+
+oss_mixer_device.get(control)  
+Returns the volume of a given mixer control. The returned volume is a 2-tuple (left_volume,right_volume). Volumes are specified as numbers from 0 (silent) to 100 (full volume). If the control is monophonic, a 2-tuple is still returned, but both volumes are the same. Raises OSSAudioError if an invalid control is specified, or OSError if an unsupported control is specified.

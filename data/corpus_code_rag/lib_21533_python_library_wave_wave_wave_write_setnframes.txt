@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.setnframes
+
+Wave_write.setnframes(n)  
+Set the number of frames to n. This will be changed later if the number of frames actually written is different (this update attempt will raise an error if the output stream is not seekable).

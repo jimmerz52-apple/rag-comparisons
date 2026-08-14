@@ -1,0 +1,27 @@
+# torch.pipeline#torch.distributed.pipeline.sync.Pipe
+
+class torch.distributed.pipeline.sync.Pipe(module, chunks=1, checkpoint='except_last', deferred_batch_norm=False) [source]
+ 
+Wraps an arbitrary nn.Sequential module to train on using synchronous pipeline parallelism. If the module requires lots of memory and doesn’t fit on a single GPU, pipeline parallelism is a useful technique to employ for training. The implementation is based on the torchgpipe paper. Pipe combines pipeline parallelism with checkpointing to reduce peak memory required to train while minimizing device under-utilization. You should place all the modules on the appropriate devices and wrap them into an nn.Sequential module defining the desired order of execution.  Parameters 
+ 
+module (nn.Sequential) – sequential module to be parallelized using pipelining. Each module in the sequence has to have all of its parameters on a single device. Each module in the sequence has to either be an nn.Module or nn.Sequential (to combine multiple sequential modules on a single device) 
+chunks (int) – number of micro-batches (default: 1) 
+checkpoint (str) – when to enable checkpointing, one of 'always', 'except_last', or 'never' (default: 'except_last'). 'never' disables checkpointing completely, 'except_last' enables checkpointing for all micro-batches except the last one and 'always' enables checkpointing for all micro-batches. 
+deferred_batch_norm (bool) – whether to use deferred BatchNorm moving statistics (default: False). If set to True, we track statistics across multiple micro-batches to update the running statistics per mini-batch.   Raises 
+ 
+TypeError – the module is not a nn.Sequential. 
+ValueError – invalid arguments     Example::
+
+Pipeline of two FC layers across GPUs 0 and 1. >>> fc1 = nn.Linear(16, 8).cuda(0)
+>>> fc2 = nn.Linear(8, 4).cuda(1)
+>>> model = nn.Sequential(fc1, fc2)
+>>> model = Pipe(model, chunks=8)
+>>> input = torch.rand(16, 16).cuda(0)
+>>> output_rref = model(input)
+    Note You can wrap a Pipe model with torch.nn.parallel.DistributedDataParallel only when the checkpoint parameter of Pipe is 'never'.   Note Pipe only supports intra-node pipelining currently, but will be expanded to support inter-node pipelining in the future. The forward function returns an RRef to allow for inter-node pipelining in the future, where the output might be on a remote host. For intra-node pipelinining you can use local_value() to retrieve the output locally.   Warning Pipe is experimental and subject to change.   
+forward(input) [source]
+ 
+Processes a single input mini-batch through the pipe and returns an RRef pointing to the output. Pipe is a fairly transparent module wrapper. It doesn’t modify the input and output signature of the underlying module. But there’s type restriction. Input and output have to be a Tensor or a sequence of tensors. This restriction is applied at partition boundaries too. The input tensor is split into multiple micro-batches based on the chunks parameter used to initialize Pipe. The batch size is assumed to be the first dimension of the tensor and if the batch size is less than chunks, the number of micro-batches is equal to the batch size.  Parameters 
+input (torch.Tensor or sequence of Tensor) – input mini-batch  Returns 
+RRef to the output of the mini-batch  Raises 
+TypeError – input is not a tensor or sequence of tensors.

@@ -1,0 +1,4 @@
+# python.library.gc#gc.DEBUG_SAVEALL
+
+gc.DEBUG_SAVEALL  
+When set, all unreachable objects found will be appended to garbage rather than being freed. This can be useful for debugging a leaking program.

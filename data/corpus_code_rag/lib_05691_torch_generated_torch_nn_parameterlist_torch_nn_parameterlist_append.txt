@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.parameterlist#torch.nn.ParameterList.append
+
+append(parameter) [source]
+ 
+Appends a given parameter at the end of the list.  Parameters 
+parameter (nn.Parameter) – parameter to append

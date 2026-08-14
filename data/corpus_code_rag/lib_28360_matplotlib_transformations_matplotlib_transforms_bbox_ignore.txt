@@ -1,0 +1,8 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.ignore
+
+ignore(value)[source]
+ 
+Set whether the existing bounds of the box should be ignored by subsequent calls to update_from_data_xy().  valuebool
+
+
+ When True, subsequent calls to update_from_data_xy() will ignore the existing bounds of the Bbox. When False, subsequent calls to update_from_data_xy() will include the existing bounds of the Bbox.

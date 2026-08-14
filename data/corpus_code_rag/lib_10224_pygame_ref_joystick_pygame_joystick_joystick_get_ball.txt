@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_ball
+
+get_ball() 
+ get the relative position of a trackball get_ball(ball_number) -> x, y  Returns the relative movement of a joystick button. The value is a x, y pair holding the relative movement since the last call to get_ball. The ball number must be an integer from 0 to get_numballs() - 1.

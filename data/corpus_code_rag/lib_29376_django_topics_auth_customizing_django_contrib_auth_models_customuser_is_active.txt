@@ -1,0 +1,5 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUser.is_active
+
+is_active  
+A boolean attribute that indicates whether the user is considered “active”. This attribute is provided as an attribute on AbstractBaseUser defaulting to True. How you choose to implement it will depend on the details of your chosen auth backends. See the documentation of the is_active attribute on the built-in
+user model for details.

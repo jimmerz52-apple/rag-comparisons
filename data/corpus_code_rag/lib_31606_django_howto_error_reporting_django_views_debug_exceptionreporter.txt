@@ -1,0 +1,26 @@
+# django.howto.error-reporting#django.views.debug.ExceptionReporter
+
+class ExceptionReporter  
+ 
+html_template_path  
+ New in Django 3.2.  Property that returns a pathlib.Path representing the absolute filesystem path to a template for rendering the HTML representation of the exception. Defaults to the Django provided template. 
+  
+text_template_path  
+ New in Django 3.2.  Property that returns a pathlib.Path representing the absolute filesystem path to a template for rendering the plain-text representation of the exception. Defaults to the Django provided template. 
+  
+get_traceback_data()  
+Return a dictionary containing traceback information. This is the main extension point for customizing exception reports, for example: from django.views.debug import ExceptionReporter
+
+
+class CustomExceptionReporter(ExceptionReporter):
+    def get_traceback_data(self):
+        data = super().get_traceback_data()
+        # ... remove/add something here ...
+        return data
+ 
+  
+get_traceback_html()  
+Return HTML version of exception report. Used for HTML version of debug 500 HTTP error page. 
+  
+get_traceback_text()  
+Return plain text version of exception report. Used for plain text version of debug 500 HTTP error page and email reports.

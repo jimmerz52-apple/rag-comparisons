@@ -1,0 +1,17 @@
+# werkzeug.test.index#werkzeug.test.Client.set_cookie
+
+set_cookie(server_name, key, value='', max_age=None, expires=None, path='/', domain=None, secure=False, httponly=False, samesite=None, charset='utf-8')  
+Sets a cookie in the client’s cookie jar. The server name is required and has to match the one that is also passed to the open call.  Parameters 
+ 
+server_name (str) –  
+key (str) –  
+value (str) –  
+max_age (Optional[Union[datetime.timedelta, int]]) –  
+expires (Optional[Union[str, datetime.datetime, int, float]]) –  
+path (str) –  
+domain (Optional[str]) –  
+secure (bool) –  
+httponly (bool) –  
+samesite (Optional[str]) –  
+charset (str) –    Return type 
+None

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.mlpclassifier#sklearn.neural_network.MLPClassifier.predict_proba
+
+predict_proba(X) [source]
+ 
+Probability estimates.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input data.    Returns 
+ 
+y_probndarray of shape (n_samples, n_classes) 
+
+The predicted probability of the sample for each class in the model, where classes are ordered as they are in self.classes_.

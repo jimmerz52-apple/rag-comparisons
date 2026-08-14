@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rtruediv__
+
+numpy.ma.MaskedArray.__rtruediv__ method   ma.MaskedArray.__rtruediv__(other)[source]
+ 
+Divide self into other, and return a new masked array.

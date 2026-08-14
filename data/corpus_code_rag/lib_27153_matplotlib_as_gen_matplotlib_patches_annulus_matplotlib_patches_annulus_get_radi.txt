@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.get_radii
+
+get_radii()[source]
+ 
+Return the semi-major and semi-minor radii of the annulus.

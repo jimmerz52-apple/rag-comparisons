@@ -1,0 +1,4 @@
+# python.library.os#os.ctermid
+
+os.ctermid()  
+Return the filename corresponding to the controlling terminal of the process. Availability: Unix.

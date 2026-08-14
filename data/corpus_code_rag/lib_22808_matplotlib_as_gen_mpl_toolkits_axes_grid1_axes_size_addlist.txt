@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.addlist
+
+mpl_toolkits.axes_grid1.axes_size.AddList   classmpl_toolkits.axes_grid1.axes_size.AddList(add_list)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base   get_size(renderer)[source]

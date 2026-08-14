@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.move
+
+Panel.move(y, x)  
+Move the panel to the screen coordinates (y, x).

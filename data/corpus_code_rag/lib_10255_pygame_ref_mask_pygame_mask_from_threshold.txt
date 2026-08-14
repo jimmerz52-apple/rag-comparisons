@@ -1,0 +1,18 @@
+# pygame.ref.mask#pygame.mask.from_threshold
+
+pygame.mask.from_threshold() 
+ Creates a mask by thresholding Surfaces from_threshold(Surface, color) -> Mask from_threshold(Surface, color, threshold=(0, 0, 0, 255), othersurface=None, palette_colors=1) -> Mask  This is a more featureful method of getting a Mask from a surface. If the optional othersurface is not used, all the pixels within the threshold of the color parameter are set in the resulting mask. If the optional othersurface is used, every pixel in the first surface that is within the threshold of the corresponding pixel in othersurface is set in the resulting mask.     
+Parameters:
+
+ 
+surface (Surface) -- the surface to create the mask from 
+color (Color or int or tuple(int, int, int, [int]) or list[int, int, int, [int]]) -- color used to check if the surface's pixels are within the given threshold range, this parameter is ignored if the optional othersurface parameter is supplied 
+threshold (Color or int or tuple(int, int, int, [int]) or list[int, int, int, [int]]) -- (optional) the threshold range used to check the difference between two colors (default is (0, 0, 0, 255)) 
+othersurface (Surface) -- (optional) used to check whether the pixels of the first surface are within the given threshold range of the pixels from this surface (default is None) 
+palette_colors (int) -- (optional) indicates whether to use the palette colors or not, a nonzero value causes the palette colors to be used and a 0 causes them not to be used (default is 1)    
+Returns:
+
+a newly created Mask object from the given surface   
+Return type:
+
+Mask

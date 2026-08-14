@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.set_payload
+
+set_payload(payload, charset=None)  
+Set the entire message object’s payload to payload. It is the client’s responsibility to ensure the payload invariants. Optional charset sets the message’s default character set; see set_charset() for details. This is a legacy method. On the EmailMessage class its functionality is replaced by set_content().

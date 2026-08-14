@@ -1,0 +1,36 @@
+# matplotlib.widgets_api#matplotlib.widgets.MultiCursor
+
+classmatplotlib.widgets.MultiCursor(canvas, axes, useblit=True, horizOn=False, vertOn=True, **lineprops)[source]
+ 
+Bases: matplotlib.widgets.Widget Provide a vertical (default) and/or horizontal line cursor shared between multiple axes. For the cursor to remain responsive you must keep a reference to it.  Parameters 
+ 
+canvasmatplotlib.backend_bases.FigureCanvasBase
+
+
+The FigureCanvas that contains all the axes.  
+axeslist of matplotlib.axes.Axes
+
+
+The Axes to attach the cursor to.  
+useblitbool, default: True
+
+
+Use blitting for faster drawing if supported by the backend.  
+horizOnbool, default: False
+
+
+Whether to draw the horizontal line.  vertOn: bool, default: True
+
+Whether to draw the vertical line.    Other Parameters 
+ **lineprops
+
+Line2D properties that control the appearance of the lines. See also axhline.     Examples See Multicursor.   clear(event)[source]
+ 
+Clear the cursor. 
+   connect()[source]
+ 
+Connect events. 
+   disconnect()[source]
+ 
+Disconnect events. 
+   onmove(event)[source]

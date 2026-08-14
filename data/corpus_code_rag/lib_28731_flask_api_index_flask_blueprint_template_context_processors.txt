@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.template_context_processors
+
+template_context_processors: t.Dict[AppOrBlueprintKey, t.List[TemplateContextProcessorCallable]]  
+A data structure of functions to call to pass extra context values when rendering templates, in the format {scope: [functions]}. The scope key is the name of a blueprint the functions are active for, or None for all requests. To register a function, use the context_processor() decorator. This data structure is internal. It should not be modified directly and its format may change at any time.

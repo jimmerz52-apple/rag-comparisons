@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.comment
+
+ZipFile.comment  
+The comment associated with the ZIP file as a bytes object. If assigning a comment to a ZipFile instance created with mode 'w', 'x' or 'a', it should be no longer than 65535 bytes. Comments longer than this will be truncated.

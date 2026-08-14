@@ -1,0 +1,19 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.rag_boundary
+
+skimage.future.graph.rag_boundary(labels, edge_map, connectivity=2) [source]
+ 
+Comouter RAG based on region boundaries Given an image’s initial segmentation and its edge map this method constructs the corresponding Region Adjacency Graph (RAG). Each node in the RAG represents a set of pixels within the image with the same label in labels. The weight between two adjacent regions is the average value in edge_map along their boundary.  
+labelsndarray 
+
+The labelled image.  
+edge_mapndarray 
+
+This should have the same shape as that of labels. For all pixels along the boundary between 2 adjacent regions, the average value of the corresponding pixels in edge_map is the edge weight between them.  
+connectivityint, optional 
+
+Pixels with a squared distance less than connectivity from each other are considered adjacent. It can range from 1 to labels.ndim. Its behavior is the same as connectivity parameter in scipy.ndimage.filters.generate_binary_structure.   Examples >>> from skimage import data, segmentation, filters, color
+>>> from skimage.future import graph
+>>> img = data.chelsea()
+>>> labels = segmentation.slic(img)
+>>> edge_map = filters.sobel(color.rgb2gray(img))
+>>> rag = graph.rag_boundary(labels, edge_map)

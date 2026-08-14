@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.hardtanh
+
+torch.nn.functional.hardtanh(input, min_val=-1., max_val=1., inplace=False) → Tensor [source]
+ 
+Applies the HardTanh function element-wise. See Hardtanh for more details.

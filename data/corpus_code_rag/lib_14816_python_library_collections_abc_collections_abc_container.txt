@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Container
+
+class collections.abc.Container  
+ABC for classes that provide the __contains__() method.

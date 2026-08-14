@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.NoSectionError
+
+exception configparser.NoSectionError  
+Exception raised when a specified section is not found.

@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.dumb.dumbdbm.sync
+
+dumbdbm.sync()  
+Synchronize the on-disk directory and data files. This method is called by the Shelve.sync() method.

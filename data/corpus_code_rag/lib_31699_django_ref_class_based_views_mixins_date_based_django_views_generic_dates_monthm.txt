@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.MonthMixin.get_previous_month
+
+get_previous_month(date)  
+Returns a date object containing the first day of the month before the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

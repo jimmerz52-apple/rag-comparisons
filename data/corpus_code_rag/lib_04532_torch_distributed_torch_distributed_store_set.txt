@@ -1,0 +1,14 @@
+# torch.distributed#torch.distributed.Store.set
+
+torch.distributed.Store.set(self: torch._C._distributed_c10d.Store, arg0: str, arg1: str) → None  
+Inserts the key-value pair into the store based on the supplied key and value. If key already exists in the store, it will overwrite the old value with the new supplied value.  Parameters 
+ 
+key (str) – The key to be added to the store. 
+value (str) – The value associated with key to be added to the store.     Example::
+
+>>> import torch.distributed as dist
+>>> from datetime import timedelta
+>>> store = dist.TCPStore("127.0.0.1", 0, 1, True, timedelta(seconds=30))
+>>> store.set("first_key", "first_value")
+>>> # Should return "first_value"
+>>> store.get("first_key")

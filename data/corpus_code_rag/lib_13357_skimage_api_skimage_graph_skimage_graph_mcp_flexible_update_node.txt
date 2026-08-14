@@ -1,0 +1,4 @@
+# skimage.api.skimage.graph#skimage.graph.MCP_Flexible.update_node
+
+update_node(index, new_index, offset_length)  
+This method is called when a node is updated, right after new_index is pushed onto the heap and the traceback map is updated. This method can be overloaded to keep track of other arrays that are used by a specific implementation of the algorithm. For instance the MCP_Connect class uses it to update an id map.

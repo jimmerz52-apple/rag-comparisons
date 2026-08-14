@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_major_locator
+
+matplotlib.axis.Axis.get_major_locator   Axis.get_major_locator()[source]
+ 
+Get the locator of the major ticker. 
+  Examples using matplotlib.axis.Axis.get_major_locator
+ 
+   Date tick labels   
+
+   Inset Locator Demo2   
+
+   Basic Usage

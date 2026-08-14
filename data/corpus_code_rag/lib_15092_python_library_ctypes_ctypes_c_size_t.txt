@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_size_t
+
+class ctypes.c_size_t  
+Represents the C size_t datatype.

@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.common.no_append_slash
+
+no_append_slash()  
+This decorator allows individual views to be excluded from APPEND_SLASH URL normalization.

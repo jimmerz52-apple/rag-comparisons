@@ -1,0 +1,26 @@
+# matplotlib._as_gen.matplotlib.axes.axes.secondary_yaxis
+
+matplotlib.axes.Axes.secondary_yaxis   Axes.secondary_yaxis(location, *, functions=None, **kwargs)[source]
+ 
+Add a second y-axis to this Axes. For example if we want to have a second scale for the data plotted on the yaxis.  Parameters 
+ 
+location{'top', 'bottom', 'left', 'right'} or float
+
+
+The position to put the secondary axis. Strings can be 'top' or 'bottom' for orientation='x' and 'right' or 'left' for orientation='y'. A float indicates the relative position on the parent axes to put the new axes, 0.0 being the bottom (or left) and 1.0 being the top (or right).  
+functions2-tuple of func, or Transform with an inverse
+
+
+If a 2-tuple of functions, the user specifies the transform function and its inverse. i.e. functions=(lambda x: 2 / x, lambda x: 2 / x) would be an reciprocal transform with a factor of 2. The user can also directly supply a subclass of transforms.Transform so long as it has an inverse. See Secondary Axis for examples of making these conversions.    Returns 
+ 
+axaxes._secondary_axes.SecondaryAxis
+
+  Other Parameters 
+ 
+**kwargsAxes properties.
+
+
+Other miscellaneous axes parameters.      Warning This method is experimental as of 3.1, and the API may change.  Examples Add a secondary Axes that converts from radians to degrees (Source code, png, pdf)    
+  Examples using matplotlib.axes.Axes.secondary_yaxis
+ 
+   Secondary Axis

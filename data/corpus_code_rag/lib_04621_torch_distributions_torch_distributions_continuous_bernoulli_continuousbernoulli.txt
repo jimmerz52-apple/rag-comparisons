@@ -1,0 +1,51 @@
+# torch.distributions#torch.distributions.continuous_bernoulli.ContinuousBernoulli
+
+class torch.distributions.continuous_bernoulli.ContinuousBernoulli(probs=None, logits=None, lims=(0.499, 0.501), validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Creates a continuous Bernoulli distribution parameterized by probs or logits (but not both). The distribution is supported in [0, 1] and parameterized by ‘probs’ (in (0,1)) or ‘logits’ (real-valued). Note that, unlike the Bernoulli, ‘probs’ does not correspond to a probability and ‘logits’ does not correspond to log-odds, but the same names are used due to the similarity with the Bernoulli. See [1] for more details. Example: >>> m = ContinuousBernoulli(torch.tensor([0.3]))
+>>> m.sample()
+tensor([ 0.2538])
+  Parameters 
+ 
+probs (Number, Tensor) – (0,1) valued parameters 
+logits (Number, Tensor) – real valued parameters whose sigmoid matches ‘probs’    [1] The continuous Bernoulli: fixing a pervasive error in variational autoencoders, Loaiza-Ganem G and Cunningham JP, NeurIPS 2019. https://arxiv.org/abs/1907.06845  
+arg_constraints = {'logits': Real(), 'probs': Interval(lower_bound=0.0, upper_bound=1.0)} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(value) [source]
+
+  
+log_prob(value) [source]
+
+  
+logits [source]
+
+  
+property mean 
+  
+property param_shape 
+  
+probs [source]
+
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+property stddev 
+  
+support = Interval(lower_bound=0.0, upper_bound=1.0) 
+  
+property variance

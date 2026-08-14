@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_capheight
+
+get_capheight()[source]
+ 
+Return the cap height as float.

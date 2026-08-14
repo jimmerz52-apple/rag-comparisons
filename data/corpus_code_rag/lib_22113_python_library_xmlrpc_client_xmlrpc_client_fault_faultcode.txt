@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.Fault.faultCode
+
+faultCode  
+A string indicating the fault type.

@@ -1,0 +1,18 @@
+# tensorflow.io.gfile.rmtree
+
+tf.io.gfile.rmtree     View source on GitHub    Deletes everything under path recursively.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.io.gfile.rmtree  
+tf.io.gfile.rmtree(
+    path
+)
+
+ 
+
+
+ Args
+  path   string, a path   
+ 
+
+
+ Raises
+  errors.OpError   If the operation fails.

@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.can_fetch
+
+can_fetch(useragent, url)  
+Returns True if the useragent is allowed to fetch the url according to the rules contained in the parsed robots.txt file.

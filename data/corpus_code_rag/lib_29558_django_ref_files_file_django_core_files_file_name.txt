@@ -1,0 +1,4 @@
+# django.ref.files.file#django.core.files.File.name
+
+name  
+The name of the file including the relative path from MEDIA_ROOT.

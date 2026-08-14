@@ -1,0 +1,4 @@
+# python.library.math#math.asinh
+
+math.asinh(x)  
+Return the inverse hyperbolic sine of x.

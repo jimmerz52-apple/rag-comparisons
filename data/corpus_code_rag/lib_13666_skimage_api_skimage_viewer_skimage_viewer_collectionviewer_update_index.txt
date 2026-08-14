@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer#skimage.viewer.CollectionViewer.update_index
+
+update_index(name, index) [source]
+ 
+Select image on display using index into image collection.

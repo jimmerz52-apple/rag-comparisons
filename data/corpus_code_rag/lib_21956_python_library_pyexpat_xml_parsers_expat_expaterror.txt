@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.ExpatError
+
+exception xml.parsers.expat.ExpatError  
+The exception raised when Expat reports an error. See section ExpatError Exceptions for more information on interpreting Expat errors.

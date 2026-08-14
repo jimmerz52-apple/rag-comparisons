@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.Future.running
+
+running()  
+Return True if the call is currently being executed and cannot be cancelled.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.identity
+
+tf.experimental.numpy.identity TensorFlow variant of NumPy's identity. 
+tf.experimental.numpy.identity(
+    n, dtype=float
+)
+ See the NumPy documentation for numpy.identity.

@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.LineTooLong
+
+exception http.client.LineTooLong  
+A subclass of HTTPException. Raised if an excessively long line is received in the HTTP protocol from the server.

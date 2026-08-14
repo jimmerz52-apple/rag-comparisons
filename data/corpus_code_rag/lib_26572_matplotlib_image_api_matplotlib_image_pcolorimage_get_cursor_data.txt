@@ -1,0 +1,5 @@
+# matplotlib.image_api#matplotlib.image.PcolorImage.get_cursor_data
+
+get_cursor_data(event)[source]
+ 
+Return the image value at the event position or None if the event is outside the image.  See also  matplotlib.artist.Artist.get_cursor_data

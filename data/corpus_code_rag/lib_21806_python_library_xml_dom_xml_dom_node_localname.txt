@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.localName
+
+Node.localName  
+The part of the tagName following the colon if there is one, else the entire tagName. The value is a string.

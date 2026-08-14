@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.dataframe.keys
+
+pandas.DataFrame.keys   DataFrame.keys()[source]
+ 
+Get the ‘info axis’ (see Indexing for more). This is index for Series, columns for DataFrame.  Returns 
+ Index
+
+Info axis.

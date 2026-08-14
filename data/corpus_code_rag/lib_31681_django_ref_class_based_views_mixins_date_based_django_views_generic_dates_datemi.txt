@@ -1,0 +1,15 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DateMixin
+
+class DateMixin  
+A mixin class providing common behavior for all date-based views. Methods and Attributes  
+date_field  
+The name of the DateField or DateTimeField in the QuerySet’s model that the date-based archive should use to determine the list of objects to display on the page. When time zone support is enabled and date_field is a DateTimeField, dates are assumed to be in the current time zone. Otherwise, the queryset could include objects from the previous or the next day in the end user’s time zone.  Warning In this situation, if you have implemented per-user time zone selection, the same URL may show a different set of objects, depending on the end user’s time zone. To avoid this, you should use a DateField as the date_field attribute.  
+  
+allow_future  
+A boolean specifying whether to include “future” objects on this page, where “future” means objects in which the field specified in date_field is greater than the current date/time. By default, this is False. 
+  
+get_date_field()  
+Returns the name of the field that contains the date data that this view will operate on. Returns date_field by default. 
+  
+get_allow_future()  
+Determine whether to include “future” objects on this page, where “future” means objects in which the field specified in date_field is greater than the current date/time. Returns allow_future by default.

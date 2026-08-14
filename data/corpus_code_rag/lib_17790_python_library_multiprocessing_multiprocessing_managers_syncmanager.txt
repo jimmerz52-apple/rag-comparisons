@@ -1,0 +1,46 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager
+
+class multiprocessing.managers.SyncManager  
+A subclass of BaseManager which can be used for the synchronization of processes. Objects of this type are returned by multiprocessing.Manager(). Its methods create and return Proxy Objects for a number of commonly used data types to be synchronized across processes. This notably includes shared lists and dictionaries.  
+Barrier(parties[, action[, timeout]])  
+Create a shared threading.Barrier object and return a proxy for it.  New in version 3.3.  
+  
+BoundedSemaphore([value])  
+Create a shared threading.BoundedSemaphore object and return a proxy for it. 
+  
+Condition([lock])  
+Create a shared threading.Condition object and return a proxy for it. If lock is supplied then it should be a proxy for a threading.Lock or threading.RLock object.  Changed in version 3.3: The wait_for() method was added.  
+  
+Event()  
+Create a shared threading.Event object and return a proxy for it. 
+  
+Lock()  
+Create a shared threading.Lock object and return a proxy for it. 
+  
+Namespace()  
+Create a shared Namespace object and return a proxy for it. 
+  
+Queue([maxsize])  
+Create a shared queue.Queue object and return a proxy for it. 
+  
+RLock()  
+Create a shared threading.RLock object and return a proxy for it. 
+  
+Semaphore([value])  
+Create a shared threading.Semaphore object and return a proxy for it. 
+  
+Array(typecode, sequence)  
+Create an array and return a proxy for it. 
+  
+Value(typecode, value)  
+Create an object with a writable value attribute and return a proxy for it. 
+  
+dict()  
+dict(mapping)  
+dict(sequence)  
+Create a shared dict object and return a proxy for it. 
+  
+list()  
+list(sequence)  
+Create a shared list object and return a proxy for it. 
+  Changed in version 3.6: Shared objects are capable of being nested. For example, a shared container object such as a shared list can contain other shared objects which will all be managed and synchronized by the SyncManager.

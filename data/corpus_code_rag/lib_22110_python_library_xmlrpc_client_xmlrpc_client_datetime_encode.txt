@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.DateTime.encode
+
+encode(out)  
+Write the XML-RPC encoding of this DateTime item to the out stream object.

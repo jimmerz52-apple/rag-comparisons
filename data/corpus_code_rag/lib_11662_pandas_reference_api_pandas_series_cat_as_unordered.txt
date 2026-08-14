@@ -1,0 +1,13 @@
+# pandas.reference.api.pandas.series.cat.as_unordered
+
+pandas.Series.cat.as_unordered   Series.cat.as_unordered(*args, **kwargs)[source]
+ 
+Set the Categorical to be unordered.  Parameters 
+ 
+inplace:bool, default False
+
+
+Whether or not to set the ordered attribute in-place or return a copy of this categorical with ordered set to False.    Returns 
+ Categorical or None
+
+Unordered Categorical or None if inplace=True.

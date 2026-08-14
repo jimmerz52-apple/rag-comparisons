@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingclassifier#sklearn.ensemble.StackingClassifier.predict_proba
+
+predict_proba(X) [source]
+ 
+Predict class probabilities for X using final_estimator_.predict_proba.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+probabilitiesndarray of shape (n_samples, n_classes) or list of ndarray of shape (n_output,) 
+
+The class probabilities of the input samples.

@@ -1,0 +1,5 @@
+# matplotlib.image_api#matplotlib.image.FigureImage.set_data
+
+set_data(A)[source]
+ 
+Set the image array.

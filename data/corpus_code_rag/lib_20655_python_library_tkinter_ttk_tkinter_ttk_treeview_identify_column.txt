@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.identify_column
+
+identify_column(x)  
+Returns the data column identifier of the cell at position x. The tree column has ID #0.

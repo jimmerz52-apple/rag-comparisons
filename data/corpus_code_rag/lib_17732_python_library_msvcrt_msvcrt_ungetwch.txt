@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.ungetwch
+
+msvcrt.ungetwch(unicode_char)  
+Wide char variant of ungetch(), accepting a Unicode value.

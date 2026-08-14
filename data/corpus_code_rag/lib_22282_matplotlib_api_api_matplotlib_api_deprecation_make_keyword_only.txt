@@ -1,0 +1,5 @@
+# matplotlib._api_api#matplotlib._api.deprecation.make_keyword_only
+
+matplotlib._api.deprecation.make_keyword_only(since, name, func=None)[source]
+ 
+Decorator indicating that passing parameter name (or any of the following ones) positionally to func is being deprecated. When used on a method that has a pyplot wrapper, this should be the outermost decorator, so that boilerplate.py can access the original signature.

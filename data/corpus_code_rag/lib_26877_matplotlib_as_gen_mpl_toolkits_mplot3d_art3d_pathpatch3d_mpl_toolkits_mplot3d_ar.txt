@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.pathpatch3d#mpl_toolkits.mplot3d.art3d.PathPatch3D.set_3d_properties
+
+set_3d_properties(path, zs=0, zdir='z')[source]

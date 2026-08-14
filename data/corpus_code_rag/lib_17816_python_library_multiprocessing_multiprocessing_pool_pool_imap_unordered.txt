@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.Pool.imap_unordered
+
+imap_unordered(func, iterable[, chunksize])  
+The same as imap() except that the ordering of the results from the returned iterator should be considered arbitrary. (Only when there is only one worker process is the order guaranteed to be “correct”.)

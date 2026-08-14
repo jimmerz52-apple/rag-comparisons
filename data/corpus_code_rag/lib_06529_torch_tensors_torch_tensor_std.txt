@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.std
+
+std(dim=None, unbiased=True, keepdim=False) → Tensor  
+See torch.std()

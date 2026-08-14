@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.to_integral
+
+to_integral(rounding=None, context=None)  
+Identical to the to_integral_value() method. The to_integral name has been kept for compatibility with older versions.

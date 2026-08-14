@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.series.is_monotonic
+
+pandas.Series.is_monotonic   propertySeries.is_monotonic
+ 
+Return boolean if values in the object are monotonic_increasing.  Returns 
+ bool

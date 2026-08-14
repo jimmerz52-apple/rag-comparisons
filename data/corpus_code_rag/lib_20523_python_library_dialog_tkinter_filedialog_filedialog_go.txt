@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.go
+
+go(dir_or_file=os.curdir, pattern="*", default="", key=None)  
+Render dialog and start event loop.

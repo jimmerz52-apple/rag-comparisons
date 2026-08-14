@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.http.urlsafe_base64_decode
+
+urlsafe_base64_decode(s) [source]
+ 
+Decodes a base64 encoded string, adding back any trailing equal signs that might have been stripped.

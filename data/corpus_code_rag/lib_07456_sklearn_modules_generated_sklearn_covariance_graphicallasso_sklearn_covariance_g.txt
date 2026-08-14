@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.covariance.graphicallasso#sklearn.covariance.GraphicalLasso.get_precision
+
+get_precision() [source]
+ 
+Getter for the precision matrix.  Returns 
+ 
+precision_array-like of shape (n_features, n_features) 
+
+The precision matrix associated to the current covariance object.

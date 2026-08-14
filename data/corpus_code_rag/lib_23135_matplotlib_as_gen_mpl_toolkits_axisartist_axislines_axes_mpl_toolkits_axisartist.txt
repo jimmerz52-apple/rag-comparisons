@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axes#mpl_toolkits.axisartist.axislines.Axes.invalidate_grid_helper
+
+invalidate_grid_helper()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

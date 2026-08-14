@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.islower
+
+curses.ascii.islower(c)  
+Checks for an ASCII lower-case character.

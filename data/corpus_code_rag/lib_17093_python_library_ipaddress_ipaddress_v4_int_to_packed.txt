@@ -1,0 +1,7 @@
+# python.library.ipaddress#ipaddress.v4_int_to_packed
+
+ipaddress.v4_int_to_packed(address)  
+Represent an address as 4 packed bytes in network (big-endian) order. address is an integer representation of an IPv4 IP address. A ValueError is raised if the integer is negative or too large to be an IPv4 IP address. >>> ipaddress.ip_address(3221225985)
+IPv4Address('192.0.2.1')
+>>> ipaddress.v4_int_to_packed(3221225985)
+b'\xc0\x00\x02\x01'

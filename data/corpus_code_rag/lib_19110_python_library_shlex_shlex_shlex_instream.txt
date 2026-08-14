@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.instream
+
+shlex.instream  
+The input stream from which this shlex instance is reading characters.

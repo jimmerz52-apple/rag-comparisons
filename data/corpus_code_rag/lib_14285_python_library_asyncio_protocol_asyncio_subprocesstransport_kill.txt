@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport.kill
+
+SubprocessTransport.kill()  
+Kill the subprocess. On POSIX systems, the function sends SIGKILL to the subprocess. On Windows, this method is an alias for terminate(). See also subprocess.Popen.kill().

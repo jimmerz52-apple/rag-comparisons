@@ -1,0 +1,4 @@
+# python.library.email.parser#email.message_from_string
+
+email.message_from_string(s, _class=None, *, policy=policy.compat32)  
+Return a message object structure from a string. This is equivalent to Parser().parsestr(s). _class and policy are interpreted as with the Parser class constructor.  Changed in version 3.3: Removed the strict argument. Added the policy keyword.

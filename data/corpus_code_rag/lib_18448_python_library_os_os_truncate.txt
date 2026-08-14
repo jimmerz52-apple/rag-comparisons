@@ -1,0 +1,4 @@
+# python.library.os#os.truncate
+
+os.truncate(path, length)  
+Truncate the file corresponding to path, so that it is at most length bytes in size. This function can support specifying a file descriptor. Raises an auditing event os.truncate with arguments path, length. Availability: Unix, Windows.  New in version 3.3.   Changed in version 3.5: Added support for Windows   Changed in version 3.6: Accepts a path-like object.

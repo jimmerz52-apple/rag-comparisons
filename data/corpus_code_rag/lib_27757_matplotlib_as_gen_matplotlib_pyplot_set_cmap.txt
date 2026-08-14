@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.pyplot.set_cmap
+
+matplotlib.pyplot.set_cmap   matplotlib.pyplot.set_cmap(cmap)[source]
+ 
+Set the default colormap, and applies it to the current image if any.  Parameters 
+ 
+cmapColormap or str
+
+
+A colormap instance or the name of a registered colormap.      See also  colormaps
+matplotlib.cm.register_cmap
+matplotlib.cm.get_cmap

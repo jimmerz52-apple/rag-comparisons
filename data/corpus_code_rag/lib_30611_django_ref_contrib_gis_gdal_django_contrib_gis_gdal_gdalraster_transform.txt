@@ -1,0 +1,14 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.transform
+
+transform(srs, driver=None, name=None, resampling='NearestNeighbour', max_error=0.0)  
+Transforms this raster to a different spatial reference system (srs), which may be a SpatialReference object, or any other input accepted by SpatialReference (including spatial reference WKT and PROJ strings, or an integer SRID). It calculates the bounds and scale of the current raster in the new spatial reference system and warps the raster using the warp function. By default, the driver of the source raster is used and the name of the raster is the original name appended with '_copy' + source_driver_name. A different driver or name can be specified with the driver and name arguments. The default resampling algorithm is NearestNeighbour but can be changed using the resampling argument. The default maximum allowed error for resampling is 0.0 and can be changed using the max_error argument. Consult the warp documentation for detail on those arguments. >>> rst = GDALRaster({
+...     "width": 6, "height": 6, "srid": 3086,
+...     "origin": [500000, 400000],
+...     "scale": [100, -100],
+...     "bands": [{"data": range(36), "nodata_value": 99}]
+... })
+>>> target_srs = SpatialReference(4326)
+>>> target = rst.transform(target_srs)
+>>> target.origin
+[-82.98492744885776, 27.601924753080144]
+  Changed in Django 3.2: Support for SpatialReference srs was added

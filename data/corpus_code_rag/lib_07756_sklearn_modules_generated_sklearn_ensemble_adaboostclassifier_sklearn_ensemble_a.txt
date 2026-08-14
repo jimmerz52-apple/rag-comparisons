@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostclassifier#sklearn.ensemble.AdaBoostClassifier.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Predict class log-probabilities for X. The predicted class log-probabilities of an input sample is computed as the weighted mean predicted class log-probabilities of the classifiers in the ensemble.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrix can be CSC, CSR, COO, DOK, or LIL. COO, DOK, and LIL are converted to CSR.    Returns 
+ 
+pndarray of shape (n_samples, n_classes) 
+
+The class probabilities of the input samples. The order of outputs is the same of that of the classes_ attribute.

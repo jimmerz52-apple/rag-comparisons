@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.char.chararray.ravel
+
+numpy.char.chararray.ravel method   char.chararray.ravel([order])
+ 
+Return a flattened array. Refer to numpy.ravel for full documentation.  See also  numpy.ravel
+
+equivalent function  ndarray.flat
+
+a flat iterator on the array.

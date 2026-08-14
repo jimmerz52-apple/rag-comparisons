@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.change_geometry
+
+change_geometry(numrows, numcols, num)[source]
+ 
+[Deprecated] Change subplot geometry, e.g., from (1, 1, 1) to (2, 2, 3). Notes  Deprecated since version 3.4.

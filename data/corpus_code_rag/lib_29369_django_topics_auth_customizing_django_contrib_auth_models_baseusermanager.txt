@@ -1,0 +1,14 @@
+# django.topics.auth.customizing#django.contrib.auth.models.BaseUserManager
+
+class models.BaseUserManager  
+ 
+classmethod normalize_email(email)  
+Normalizes email addresses by lowercasing the domain portion of the email address. 
+  
+get_by_natural_key(username)  
+Retrieves a user instance using the contents of the field nominated by USERNAME_FIELD. 
+  
+make_random_password(length=10, allowed_chars='abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789')  
+Returns a random password with the given length and given string of allowed characters. Note that the default value of allowed_chars doesn’t contain letters that can cause user confusion, including:  
+i, l, I, and 1 (lowercase letter i, lowercase letter L, uppercase letter i, and the number one) 
+o, O, and 0 (lowercase letter o, uppercase letter o, and zero)

@@ -1,0 +1,4 @@
+# python.library.csv#csv.csvwriter.writerow
+
+csvwriter.writerow(row)  
+Write the row parameter to the writer’s file object, formatted according to the current dialect. Return the return value of the call to the write method of the underlying file object.  Changed in version 3.5: Added support of arbitrary iterables.

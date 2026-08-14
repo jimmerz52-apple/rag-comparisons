@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.slug_field
+
+slug_field  
+The name of the field on the model that contains the slug. By default, slug_field is 'slug'.

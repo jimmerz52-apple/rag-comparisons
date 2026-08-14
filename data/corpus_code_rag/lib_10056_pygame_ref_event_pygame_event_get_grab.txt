@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.get_grab
+
+pygame.event.get_grab() 
+ test if the program is sharing input devices get_grab() -> bool  Returns True when the input events are grabbed for this application.

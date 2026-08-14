@@ -1,0 +1,102 @@
+# matplotlib._as_gen.matplotlib.patches.connectionpatch
+
+matplotlib.patches.ConnectionPatch   classmatplotlib.patches.ConnectionPatch(xyA, xyB, coordsA, coordsB=None, axesA=None, axesB=None, arrowstyle='-', connectionstyle='arc3', patchA=None, patchB=None, shrinkA=0.0, shrinkB=0.0, mutation_scale=10.0, mutation_aspect=None, clip_on=False, dpi_cor=<deprecated parameter>, **kwargs)[source]
+ 
+Bases: matplotlib.patches.FancyArrowPatch A patch that connects two points (possibly in different axes). Connect point xyA in coordsA with point xyB in coordsB. Valid keys are   
+Key Description   
+arrowstyle the arrow style  
+connectionstyle the connection style  
+relpos default is (0.5, 0.5)  
+patchA default is bounding box of the text  
+patchB default is None  
+shrinkA default is 2 points  
+shrinkB default is 2 points  
+mutation_scale default is text size (in points)  
+mutation_aspect default is 1.  
+? any key for matplotlib.patches.PathPatch   coordsA and coordsB are strings that indicate the coordinates of xyA and xyB.   
+Property Description   
+'figure points' points from the lower left corner of the figure  
+'figure pixels' pixels from the lower left corner of the figure  
+'figure fraction' 0, 0 is lower left of figure and 1, 1 is upper right  
+'subfigure points' points from the lower left corner of the subfigure  
+'subfigure pixels' pixels from the lower left corner of the subfigure  
+'subfigure fraction' fraction of the subfigure, 0, 0 is lower left.  
+'axes points' points from lower left corner of axes  
+'axes pixels' pixels from lower left corner of axes  
+'axes fraction' 0, 0 is lower left of axes and 1, 1 is upper right  
+'data' use the coordinate system of the object being annotated (default)  
+'offset points' offset (in points) from the xy value  
+'polar' you can specify theta, r for the annotation, even in cartesian plots. Note that if you are using a polar axes, you do not need to specify polar for the coordinate system since that is the native "data" coordinate system.   Alternatively they can be set to any valid Transform. Note that 'subfigure pixels' and 'figure pixels' are the same for the parent figure, so users who want code that is usable in a subfigure can use 'subfigure pixels'.  Note Using ConnectionPatch across two Axes instances is not directly compatible with constrained layout. Add the artist directly to the Figure instead of adding it to a specific Axes, or exclude it from the layout using con.set_in_layout(False). fig, ax = plt.subplots(1, 2, constrained_layout=True)
+con = ConnectionPatch(..., axesA=ax[0], axesB=ax[1])
+fig.add_artist(con)
+    draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   get_annotation_clip()[source]
+ 
+Return the clipping behavior. See set_annotation_clip for the meaning of the return value. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, annotation_clip=<UNSET>, antialiased=<UNSET>, arrowstyle=<UNSET>, capstyle=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, connectionstyle=<UNSET>, dpi_cor=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, mutation_aspect=<UNSET>, mutation_scale=<UNSET>, patchA=<UNSET>, patchB=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, positions=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+annotation_clip bool or None  
+antialiased or aa bool or None  
+arrowstyle None or ArrowStyle or str, default: None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+connectionstyle str or ConnectionStyle or None, optional  
+dpi_cor unknown  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+mutation_aspect float  
+mutation_scale float  
+patchA patches.Patch  
+patchB patches.Patch  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+positions unknown  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   
+   set_annotation_clip(b)[source]
+ 
+Set the clipping behavior.  Parameters 
+ 
+bbool or None
+
+
+ 
+False: The annotation will always be drawn regardless of its position. 
+True: The annotation will only be drawn if self.xy is inside the axes. 
+None: The annotation will only be drawn if self.xy is inside the axes and self.xycoords == "data".      
+ 
+  Examples using matplotlib.patches.ConnectionPatch
+ 
+   Bar of pie   
+
+   Connect Simple01   
+
+   Constrained Layout Guide

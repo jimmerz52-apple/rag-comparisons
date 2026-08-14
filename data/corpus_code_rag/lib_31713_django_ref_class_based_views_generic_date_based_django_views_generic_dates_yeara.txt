@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.YearArchiveView.make_object_list
+
+make_object_list  
+A boolean specifying whether to retrieve the full list of objects for this year and pass those to the template. If True, the list of objects will be made available to the context. If False, the None queryset will be used as the object list. By default, this is False.

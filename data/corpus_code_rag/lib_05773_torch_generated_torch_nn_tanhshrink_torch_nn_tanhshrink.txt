@@ -1,0 +1,10 @@
+# torch.generated.torch.nn.tanhshrink#torch.nn.Tanhshrink
+
+class torch.nn.Tanhshrink [source]
+ 
+Applies the element-wise function:  Tanhshrink(x)=x−tanh⁡(x)\text{Tanhshrink}(x) = x - \tanh(x)  
+ Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.Tanhshrink()
+>>> input = torch.randn(2)
+>>> output = m(input)

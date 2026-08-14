@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.headers
+
+headers  
+The headers received with the request.

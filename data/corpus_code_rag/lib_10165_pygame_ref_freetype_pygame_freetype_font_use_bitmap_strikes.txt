@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.use_bitmap_strikes
+
+use_bitmap_strikes 
+ allow the use of embedded bitmaps in an outline font file use_bitmap_strikes -> bool  Some scalable fonts include embedded bitmaps for particular point sizes. This property controls whether or not those bitmap strikes are used. Set it False to disable the loading of any bitmap strike. Set it True, the default, to permit bitmap strikes for a non-rotated render with no style other than wide or underline. This property is ignored for bitmap fonts. See also fixed_sizes and get_sizes().

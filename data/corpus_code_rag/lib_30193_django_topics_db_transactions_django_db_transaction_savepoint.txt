@@ -1,0 +1,4 @@
+# django.topics.db.transactions#django.db.transaction.savepoint
+
+savepoint(using=None)  
+Creates a new savepoint. This marks a point in the transaction that is known to be in a “good” state. Returns the savepoint ID (sid).

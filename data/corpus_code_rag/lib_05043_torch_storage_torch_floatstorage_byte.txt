@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.byte
+
+byte()  
+Casts this storage to byte type

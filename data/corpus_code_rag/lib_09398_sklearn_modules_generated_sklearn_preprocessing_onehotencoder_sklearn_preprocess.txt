@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.onehotencoder#sklearn.preprocessing.OneHotEncoder.transform
+
+transform(X) [source]
+ 
+Transform X using one-hot encoding.  Parameters 
+ 
+Xarray-like, shape [n_samples, n_features] 
+
+The data to encode.    Returns 
+ 
+X_outsparse matrix if sparse=True else a 2-d array 
+
+Transformed input.

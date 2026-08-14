@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.validJoin
+
+validJoin=('miter', 'round', 'bevel')

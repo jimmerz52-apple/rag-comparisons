@@ -1,0 +1,4 @@
+# tensorflow.compat.v1.keras.applications.resnet
+
+Module: tf.compat.v1.keras.applications.resnet ResNet models for Keras. Reference:  
+Deep Residual Learning for Image Recognition (CVPR 2015)  Functions ResNet101(...): Instantiates the ResNet101 architecture. ResNet152(...): Instantiates the ResNet152 architecture. ResNet50(...): Instantiates the ResNet50 architecture. decode_predictions(...): Decodes the prediction of an ImageNet model. preprocess_input(...): Preprocesses a tensor or Numpy array encoding a batch of images.

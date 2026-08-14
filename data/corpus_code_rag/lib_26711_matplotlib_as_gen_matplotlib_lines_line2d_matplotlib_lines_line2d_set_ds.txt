@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_ds
+
+set_ds(drawstyle)[source]
+ 
+Alias for set_drawstyle.

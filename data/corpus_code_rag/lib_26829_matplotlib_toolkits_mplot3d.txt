@@ -1,0 +1,34 @@
+# matplotlib.toolkits.mplot3d
+
+mpl_toolkits.mplot3d The mplot3d toolkit adds simple 3D plotting capabilities (scatter, surface, line, mesh, etc.) to Matplotlib by supplying an Axes object that can create a 2D projection of a 3D scene. The resulting graph will have the same look and feel as regular 2D plots. Not the fastest or most feature complete 3D library out there, but it ships with Matplotlib and thus may be a lighter weight solution for some use cases. See the mplot3d tutorial for more information.  The interactive backends also provide the ability to rotate and zoom the 3D scene. One can rotate the 3D scene by simply clicking-and-dragging the scene. Zooming is done by right-clicking the scene and dragging the mouse up and down (unlike 2D plots, the toolbar zoom button is not used).  
+mplot3d FAQ How is mplot3d different from Mayavi? My 3D plot doesn't look right at certain viewing angles I don't like how the 3D plot is laid out, how do I change that?     Note pyplot cannot be used to add content to 3D plots, because its function signatures are strictly 2D and cannot handle the additional information needed for 3D. Instead, use the explicit API by calling the respective methods on the Axes3D object.   axes3d  Note 3D plotting in Matplotlib is still not as mature as the 2D case. Please report any functions that do not behave as expected as a bug. In addition, help and patches would be greatly appreciated!   
+axes3d.Axes3D(fig[, rect, azim, elev, ...]) 3D axes object.     axis3d  Note See mpl_toolkits.mplot3d.axis3d._axinfo for a dictionary containing constants that may be modified for controlling the look and feel of mplot3d axes (e.g., label spacing, font colors and panel colors). Historically, axis3d has suffered from having hard-coded constants that precluded user adjustments, and this dictionary was implemented in version 1.1 as a stop-gap measure.   
+axis3d.Axis(adir, v_intervalx, d_intervalx, ...) An Axis class for the 3D plots.     art3d  
+art3d.Line3D(xs, ys, zs, *args, **kwargs) 3D line object.  
+art3d.Line3DCollection(segments, *args[, zorder]) A collection of 3D lines.  
+art3d.Patch3D(*args[, zs, zdir]) 3D patch object.  
+art3d.Patch3DCollection(*args[, zs, zdir, ...]) A collection of 3D patches.  
+art3d.Path3DCollection(*args[, zs, zdir, ...]) A collection of 3D paths.  
+art3d.PathPatch3D(path, *[, zs, zdir]) 3D PathPatch object.  
+art3d.Poly3DCollection(verts, *args[, zsort]) A collection of 3D polygons.  
+art3d.Text3D([x, y, z, text, zdir]) Text object with 3D position and direction.  
+art3d.get_dir_vector(zdir) Return a direction vector.  
+art3d.juggle_axes(xs, ys, zs, zdir) Reorder coordinates so that 2D xs, ys can be plotted in the plane orthogonal to zdir.  
+art3d.line_2d_to_3d(line[, zs, zdir]) Convert a 2D line to 3D.  
+art3d.line_collection_2d_to_3d(col[, zs, zdir]) Convert a LineCollection to a Line3DCollection object.  
+art3d.patch_2d_to_3d(patch[, z, zdir]) Convert a Patch to a Patch3D object.  
+art3d.patch_collection_2d_to_3d(col[, zs, ...]) Convert a PatchCollection into a Patch3DCollection object (or a PathCollection into a Path3DCollection object).  
+art3d.pathpatch_2d_to_3d(pathpatch[, z, zdir]) Convert a PathPatch to a PathPatch3D object.  
+art3d.poly_collection_2d_to_3d(col[, zs, zdir]) Convert a PolyCollection to a Poly3DCollection object.  
+art3d.rotate_axes(xs, ys, zs, zdir) Reorder coordinates so that the axes are rotated with zdir along the original z axis.  
+art3d.text_2d_to_3d(obj[, z, zdir]) Convert a Text to a Text3D object.     proj3d  
+proj3d.inv_transform(xs, ys, zs, M)   
+proj3d.persp_transformation(zfront, zback)   
+proj3d.proj_points(points, M)   
+proj3d.proj_trans_points(points, M)   
+proj3d.proj_transform(xs, ys, zs, M) Transform the points by the projection matrix  
+proj3d.proj_transform_clip(xs, ys, zs, M) Transform the points by the projection matrix and return the clipping result returns txs, tys, tzs, tis  
+proj3d.rot_x(V, alpha)   
+proj3d.transform(xs, ys, zs, M) Transform the points by the projection matrix  
+proj3d.view_transformation(E, R, V)   
+proj3d.world_transformation(xmin, xmax, ...) Produce a matrix that scales homogeneous coords in the specified ranges to [0, 1], or [0, pb_aspect[i]] if the plotbox aspect ratio is specified.

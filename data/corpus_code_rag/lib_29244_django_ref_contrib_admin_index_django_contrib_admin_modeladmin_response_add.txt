@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.response_add
+
+ModelAdmin.response_add(request, obj, post_url_continue=None)  
+Determines the HttpResponse for the add_view() stage. response_add is called after the admin form is submitted and just after the object and all the related instances have been created and saved. You can override it to change the default behavior after the object has been created.

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.MemoryBIO.eof
+
+eof  
+A boolean indicating whether the memory BIO is current at the end-of-file position.

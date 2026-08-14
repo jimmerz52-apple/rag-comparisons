@@ -1,0 +1,22 @@
+# numpy.reference.generated.numpy.char.center
+
+numpy.char.center   char.center(a, width, fillchar=' ')[source]
+ 
+Return a copy of a with its elements centered in a string of length width. Calls str.center element-wise.  Parameters 
+ 
+aarray_like of str or unicode
+
+
+widthint
+
+
+The length of the resulting strings  
+fillcharstr or unicode, optional
+
+
+The padding character to use (default is space).    Returns 
+ 
+outndarray
+
+
+Output array of str or unicode, depending on input types      See also  str.center

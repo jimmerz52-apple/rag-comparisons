@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.clear
+
+matplotlib.axis.Axis.clear   Axis.clear()[source]
+ 
+Clear the axis. This resets axis properties to their default values:  the label the scale locators, formatters and ticks major and minor grid units registered callbacks

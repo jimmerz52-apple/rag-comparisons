@@ -1,0 +1,15 @@
+# werkzeug.routing.index#werkzeug.routing.Submount
+
+class werkzeug.routing.Submount(path, rules)  
+Like Subdomain but prefixes the URL rule with a given string: url_map = Map([
+    Rule('/', endpoint='index'),
+    Submount('/blog', [
+        Rule('/', endpoint='blog/index'),
+        Rule('/entry/<entry_slug>', endpoint='blog/show')
+    ])
+])
+ Now the rule 'blog/show' matches /blog/entry/<entry_slug>.  Parameters 
+ 
+path (str) –  
+rules (Iterable[Rule]) –    Return type 
+None

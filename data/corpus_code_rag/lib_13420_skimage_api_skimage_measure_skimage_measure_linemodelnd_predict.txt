@@ -1,0 +1,22 @@
+# skimage.api.skimage.measure#skimage.measure.LineModelND.predict
+
+predict(x, axis=0, params=None) [source]
+ 
+Predict intersection of the estimated line model with a hyperplane orthogonal to a given axis.  Parameters 
+ 
+x(n, 1) array 
+
+Coordinates along an axis.  
+axisint 
+
+Axis orthogonal to the hyperplane intersecting the line.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+data(n, m) array 
+
+Predicted coordinates.    Raises 
+ ValueError
+
+If the line is parallel to the given axis.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__and__
+
+numpy.ma.MaskedArray.__and__ method   ma.MaskedArray.__and__(value, /)
+ 
+Return self&value.

@@ -1,0 +1,5 @@
+# torch.autograd#torch.autograd.function._ContextMethodMixin.set_materialize_grads
+
+set_materialize_grads(value) [source]
+ 
+Sets whether to materialize output grad tensors. Default is true. This should be called only from inside the forward() method If true, undefined output grad tensors will be expanded to tensors full of zeros prior to calling the backward() method.

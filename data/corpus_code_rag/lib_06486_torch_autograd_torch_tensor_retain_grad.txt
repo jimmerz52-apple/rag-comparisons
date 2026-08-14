@@ -1,0 +1,5 @@
+# torch.autograd#torch.Tensor.retain_grad
+
+retain_grad() [source]
+ 
+Enables .grad attribute for non-leaf Tensors.

@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.GraphicsContextPdf.fill
+
+fill(*args)[source]
+ 
+Predicate: does the path need to be filled? An optional argument can be used to specify an alternative _fillcolor, as needed by RendererPdf.draw_markers.

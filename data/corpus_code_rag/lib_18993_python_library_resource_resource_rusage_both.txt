@@ -1,0 +1,4 @@
+# python.library.resource#resource.RUSAGE_BOTH
+
+resource.RUSAGE_BOTH  
+Pass to getrusage() to request resources consumed by both the current process and child processes. May not be available on all systems.

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.NotSupportedErr
+
+exception xml.dom.NotSupportedErr  
+Raised when the implementation does not support the requested type of object or operation.

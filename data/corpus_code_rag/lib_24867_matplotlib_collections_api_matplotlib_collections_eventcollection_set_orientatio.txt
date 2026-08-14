@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.set_orientation
+
+set_orientation(orientation)[source]
+ 
+Set the orientation of the event line.  Parameters 
+ 
+orientation{'horizontal', 'vertical'}

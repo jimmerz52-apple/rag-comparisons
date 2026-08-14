@@ -1,0 +1,4 @@
+# flask.config.index#MAX_COOKIE_SIZE
+
+MAX_COOKIE_SIZE  
+Warn if cookie headers are larger than this many bytes. Defaults to 4093. Larger cookies may be silently ignored by browsers. Set to 0 to disable the warning.

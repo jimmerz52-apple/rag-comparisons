@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.quantile
+
+quantile(q, dim=None, keepdim=False) → Tensor  
+See torch.quantile()

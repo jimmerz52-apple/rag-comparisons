@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator.bboxconnector#mpl_toolkits.axes_grid1.inset_locator.BboxConnector.get_path
+
+get_path()[source]
+ 
+Return the path of this patch.

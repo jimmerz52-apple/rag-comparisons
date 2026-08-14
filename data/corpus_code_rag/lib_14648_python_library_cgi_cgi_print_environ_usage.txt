@@ -1,0 +1,4 @@
+# python.library.cgi#cgi.print_environ_usage
+
+cgi.print_environ_usage()  
+Print a list of useful (used by CGI) environment variables in HTML.

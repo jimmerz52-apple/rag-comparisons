@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.normalize
+
+Node.normalize()  
+Join adjacent text nodes so that all stretches of text are stored as single Text instances. This simplifies processing text from a DOM tree for many applications.

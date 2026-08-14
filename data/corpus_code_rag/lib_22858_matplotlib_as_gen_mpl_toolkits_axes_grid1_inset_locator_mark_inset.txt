@@ -1,0 +1,62 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator.mark_inset
+
+mpl_toolkits.axes_grid1.inset_locator.mark_inset   mpl_toolkits.axes_grid1.inset_locator.mark_inset(parent_axes, inset_axes, loc1, loc2, **kwargs)[source]
+ 
+Draw a box to mark the location of an area represented by an inset axes. This function draws a box in parent_axes at the bounding box of inset_axes, and shows a connection with the inset axes by drawing lines at the corners, giving a "zoomed in" effect.  Parameters 
+ 
+parent_axesmatplotlib.axes.Axes
+
+
+Axes which contains the area of the inset axes.  
+inset_axesmatplotlib.axes.Axes
+
+
+The inset axes.  
+loc1, loc2{1, 2, 3, 4}
+
+
+Corners to use for connecting the inset axes and the area in the parent axes.  **kwargs
+
+Patch properties for the lines and box drawn:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float      Returns 
+ 
+ppmatplotlib.patches.Patch
+
+
+The patch drawn to represent the area of the inset axes.  
+p1, p2matplotlib.patches.Patch
+
+
+The patches connecting two corners of the inset axes and its area.     
+  Examples using mpl_toolkits.axes_grid1.inset_locator.mark_inset
+ 
+   Inset Locator Demo2

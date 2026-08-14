@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.all
+
+all(dim=None, keepdim=False) → Tensor  
+See torch.all()

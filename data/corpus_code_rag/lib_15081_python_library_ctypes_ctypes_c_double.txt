@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_double
+
+class ctypes.c_double  
+Represents the C double datatype. The constructor accepts an optional float initializer.

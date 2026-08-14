@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.isdigit
+
+numpy.char.chararray.isdigit method   char.chararray.isdigit()[source]
+ 
+Returns true for each element if all characters in the string are digits and there is at least one character, false otherwise.  See also  char.isdigit

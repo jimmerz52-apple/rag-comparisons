@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.read_all
+
+Telnet.read_all()  
+Read all data until EOF as bytes; block until connection closed.

@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.clear
+
+clear()[source]
+ 
+Empty the stack.

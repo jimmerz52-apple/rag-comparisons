@@ -1,0 +1,7 @@
+# torch.nn.functional#torch.nn.functional.hardsigmoid
+
+torch.nn.functional.hardsigmoid(input) → Tensor [source]
+ 
+Applies the element-wise function  Hardsigmoid(x)={0if x≤−3,1if x≥+3,x/6+1/2otherwise\text{Hardsigmoid}(x) = \begin{cases} 0 & \text{if~} x \le -3, \\ 1 & \text{if~} x \ge +3, \\ x / 6 + 1 / 2 & \text{otherwise} \end{cases}  
+ Parameters 
+inplace – If set to True, will do this operation in-place. Default: False   See Hardsigmoid for more details.

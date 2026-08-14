@@ -1,0 +1,12 @@
+# pygame.ref.mixer#pygame.mixer.get_sdl_mixer_version
+
+pygame.mixer.get_sdl_mixer_version() 
+ get the mixer's SDL version get_sdl_mixer_version() -> (major, minor, patch) get_sdl_mixer_version(linked=True) -> (major, minor, patch)      
+Parameters:
+
+linked (bool) -- if True (default) the linked version number is returned, otherwise the compiled version number is returned  
+Returns:
+the mixer's SDL library version number (linked or compiled depending on the linked parameter) as a tuple of 3 integers (major, minor, patch)
+  
+Return type:
+tuple     Note The linked and compile version numbers should be the same.   New in pygame 2.0.0.

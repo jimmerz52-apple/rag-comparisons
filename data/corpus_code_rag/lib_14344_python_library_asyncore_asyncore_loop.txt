@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.loop
+
+asyncore.loop([timeout[, use_poll[, map[, count]]]])  
+Enter a polling loop that terminates after count passes or all open channels have been closed. All arguments are optional. The count parameter defaults to None, resulting in the loop terminating only when all channels have been closed. The timeout argument sets the timeout parameter for the appropriate select() or poll() call, measured in seconds; the default is 30 seconds. The use_poll parameter, if true, indicates that poll() should be used in preference to select() (the default is False). The map parameter is a dictionary whose items are the channels to watch. As channels are closed they are deleted from their map. If map is omitted, a global map is used. Channels (instances of asyncore.dispatcher, asynchat.async_chat and subclasses thereof) can freely be mixed in the map.

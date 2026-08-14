@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.BoundField.field
+
+BoundField.field  
+The form Field instance from the form class that this BoundField wraps.

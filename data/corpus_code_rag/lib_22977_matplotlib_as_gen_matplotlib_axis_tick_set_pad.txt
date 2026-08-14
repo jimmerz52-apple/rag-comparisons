@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axis.tick.set_pad
+
+matplotlib.axis.Tick.set_pad   Tick.set_pad(val)[source]
+ 
+Set the tick label pad in points  Parameters 
+ 
+valfloat

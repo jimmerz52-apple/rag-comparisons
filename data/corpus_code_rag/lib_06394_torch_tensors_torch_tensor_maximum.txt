@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.maximum
+
+maximum(other) → Tensor  
+See torch.maximum()

@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.timestamp.utcnow
+
+pandas.Timestamp.utcnow   classmethodTimestamp.utcnow()
+ 
+Return a new Timestamp representing UTC day and time. Examples 
+>>> pd.Timestamp.utcnow()   
+Timestamp('2020-11-16 22:50:18.092888+0000', tz='UTC')

@@ -1,0 +1,9 @@
+# flask.api.index#flask.request_finished
+
+flask.request_finished  
+This signal is sent right before the response is sent to the client. It is passed the response to be sent named response. Example subscriber: def log_response(sender, response, **extra):
+    sender.logger.debug('Request context is about to close down.  '
+                        'Response: %s', response)
+
+from flask import request_finished
+request_finished.connect(log_response, app)

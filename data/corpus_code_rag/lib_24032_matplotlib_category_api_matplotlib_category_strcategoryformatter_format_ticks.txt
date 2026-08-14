@@ -1,0 +1,5 @@
+# matplotlib.category_api#matplotlib.category.StrCategoryFormatter.format_ticks
+
+format_ticks(values)[source]
+ 
+Return the tick labels for all the ticks at once.

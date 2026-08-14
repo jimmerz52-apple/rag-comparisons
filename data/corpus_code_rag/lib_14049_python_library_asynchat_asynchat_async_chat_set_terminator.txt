@@ -1,0 +1,8 @@
+# python.library.asynchat#asynchat.async_chat.set_terminator
+
+async_chat.set_terminator(term)  
+Sets the terminating condition to be recognized on the channel. term may be any of three types of value, corresponding to three different ways to handle incoming protocol data.   
+term Description   
+string Will call found_terminator() when the string is found in the input stream  
+integer Will call found_terminator() when the indicated number of characters have been received  
+None The channel continues to collect data forever   Note that any data following the terminator will be available for reading by the channel after found_terminator() is called.

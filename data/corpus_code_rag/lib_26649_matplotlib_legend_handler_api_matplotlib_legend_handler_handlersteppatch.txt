@@ -1,0 +1,5 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerStepPatch
+
+classmatplotlib.legend_handler.HandlerStepPatch(xpad=0.0, ypad=0.0, update_func=None)[source]
+ 
+Handler for StepPatch instances.   create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]

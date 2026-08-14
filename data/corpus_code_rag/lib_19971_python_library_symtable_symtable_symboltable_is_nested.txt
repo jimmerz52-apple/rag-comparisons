@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.is_nested
+
+is_nested()  
+Return True if the block is a nested class or function.

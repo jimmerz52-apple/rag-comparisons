@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.Fault.faultString
+
+faultString  
+A string containing a diagnostic message associated with the fault.

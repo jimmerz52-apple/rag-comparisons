@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.subn
+
+Pattern.subn(repl, string, count=0)  
+Identical to the subn() function, using the compiled pattern.

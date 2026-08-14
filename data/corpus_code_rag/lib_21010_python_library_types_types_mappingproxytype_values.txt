@@ -1,0 +1,4 @@
+# python.library.types#types.MappingProxyType.values
+
+values()  
+Return a new view of the underlying mapping’s values.

@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.LWPCookieJar
+
+class http.cookiejar.LWPCookieJar(filename, delayload=None, policy=None)  
+A FileCookieJar that can load from and save cookies to disk in format compatible with the libwww-perl library’s Set-Cookie3 file format. This is convenient if you want to store cookies in a human-readable file.  Changed in version 3.8: The filename parameter supports a path-like object.

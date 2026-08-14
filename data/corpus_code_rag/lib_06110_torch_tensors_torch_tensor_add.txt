@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.add
+
+add(other, *, alpha=1) → Tensor  
+Add a scalar or tensor to self tensor. If both alpha and other are specified, each element of other is scaled by alpha before being used. When other is a tensor, the shape of other must be broadcastable with the shape of the underlying tensor See torch.add()

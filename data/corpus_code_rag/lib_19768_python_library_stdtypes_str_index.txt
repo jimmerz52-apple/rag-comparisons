@@ -1,0 +1,4 @@
+# python.library.stdtypes#str.index
+
+str.index(sub[, start[, end]])  
+Like find(), but raise ValueError when the substring is not found.

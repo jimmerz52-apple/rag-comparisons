@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.deleteacl
+
+IMAP4.deleteacl(mailbox, who)  
+Delete the ACLs (remove any rights) set for who on mailbox.

@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.print_stats
+
+print_stats(sort=-1)  
+Create a Stats object based on the current profile and print the results to stdout.

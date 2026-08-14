@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.set_ec
+
+set_ec(c)[source]
+ 
+Alias for set_edgecolor.

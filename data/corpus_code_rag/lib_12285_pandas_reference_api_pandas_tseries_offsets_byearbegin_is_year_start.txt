@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearbegin.is_year_start
+
+pandas.tseries.offsets.BYearBegin.is_year_start   BYearBegin.is_year_start()

@@ -1,0 +1,4 @@
+# python.library.test#test.support.check_free_after_iterating
+
+test.support.check_free_after_iterating(test, iter, cls, args=())  
+Assert that iter is deallocated after iterating.

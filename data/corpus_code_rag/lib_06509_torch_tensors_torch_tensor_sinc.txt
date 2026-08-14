@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sinc
+
+sinc() → Tensor  
+See torch.sinc()

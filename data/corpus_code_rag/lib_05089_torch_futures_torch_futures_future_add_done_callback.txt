@@ -1,0 +1,3 @@
+# torch.futures#torch.futures.Future.add_done_callback
+
+add_done_callback(self: torch._C.Future, arg0: function) → None

@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.netmask
+
+netmask  
+The net mask, as an IPv4Address object.

@@ -1,0 +1,4 @@
+# torch.sparse#torch.Tensor.is_coalesced
+
+is_coalesced() → bool  
+Returns True if self is a sparse COO tensor that is coalesced, False otherwise.  Warning Throws an error if self is not a sparse COO tensor.  See coalesce() and uncoalesced tensors.

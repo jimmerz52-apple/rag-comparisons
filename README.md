@@ -13,7 +13,7 @@ Research-refined (2024–2026 eval practice), Tableau-style:
 | Tab | What you get |
 |-----|----------------|
 | **Explore** | Filters, leaderboard, quality–cost Pareto, per-question explorer |
-| **Latency / cost** | p50/p95 latency, index time, tokens/query, quality vs latency |
+| **Latency / tokens** | p50/p95 latency, index time, tokens/query (prompt vs completion, query vs judge), quality vs tokens |
 | **Decision Lab** | Generative vs extractive scatter, dual scoreboard, routing, engineering briefing |
 | **Research Lens** | RAGAS-style metric map (incl. honest gaps), GraphRAG-Bench / CodeRAG findings |
 | **How to run** | Concrete commands from HuggingFace / your `.txt` files → scores |

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.NoModificationAllowedErr
+
+exception xml.dom.NoModificationAllowedErr  
+Raised on attempts to modify an object where modifications are not allowed (such as for read-only nodes).

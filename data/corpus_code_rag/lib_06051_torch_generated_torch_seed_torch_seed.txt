@@ -1,0 +1,5 @@
+# torch.generated.torch.seed#torch.seed
+
+torch.seed() [source]
+ 
+Sets the seed for generating random numbers to a non-deterministic random number. Returns a 64 bit number used to seed the RNG.

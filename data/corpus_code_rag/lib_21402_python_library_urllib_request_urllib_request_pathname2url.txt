@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.pathname2url
+
+urllib.request.pathname2url(path)  
+Convert the pathname path from the local syntax for a path to the form used in the path component of a URL. This does not produce a complete URL. The return value will already be quoted using the quote() function.

@@ -1,0 +1,42 @@
+# torch.linalg#torch.linalg.cholesky
+
+torch.linalg.cholesky(input, *, out=None) → Tensor  
+Computes the Cholesky decomposition of a Hermitian (or symmetric for real-valued matrices) positive-definite matrix or the Cholesky decompositions for a batch of such matrices. Each decomposition has the form:  input=LLH\text{input} = LL^H 
+where LL  is a lower-triangular matrix and LHL^H  is the conjugate transpose of LL , which is just a transpose for the case of real-valued input matrices. In code it translates to input = L @ L.t() if input is real-valued and input = L @ L.conj().t() if input is complex-valued. The batch of LL  matrices is returned. Supports real-valued and complex-valued inputs.  Note When given inputs on a CUDA device, this function synchronizes that device with the CPU.   Note LAPACK’s potrf is used for CPU inputs, and MAGMA’s potrf is used for CUDA inputs.   Note If input is not a Hermitian positive-definite matrix, or if it’s a batch of matrices and one or more of them is not a Hermitian positive-definite matrix, then a RuntimeError will be thrown. If input is a batch of matrices, then the error message will include the batch index of the first matrix that is not Hermitian positive-definite.   Parameters 
+input (Tensor) – the input tensor of size (∗,n,n)(*, n, n)  consisting of Hermitian positive-definite n×nn \times n  matrices, where ∗*  is zero or more batch dimensions.  Keyword Arguments 
+out (Tensor, optional) – The output tensor. Ignored if None. Default: None   Examples: >>> a = torch.randn(2, 2, dtype=torch.complex128)
+>>> a = torch.mm(a, a.t().conj())  # creates a Hermitian positive-definite matrix
+>>> l = torch.linalg.cholesky(a)
+>>> a
+tensor([[2.5266+0.0000j, 1.9586-2.0626j],
+        [1.9586+2.0626j, 9.4160+0.0000j]], dtype=torch.complex128)
+>>> l
+tensor([[1.5895+0.0000j, 0.0000+0.0000j],
+        [1.2322+1.2976j, 2.4928+0.0000j]], dtype=torch.complex128)
+>>> torch.mm(l, l.t().conj())
+tensor([[2.5266+0.0000j, 1.9586-2.0626j],
+        [1.9586+2.0626j, 9.4160+0.0000j]], dtype=torch.complex128)
+
+>>> a = torch.randn(3, 2, 2, dtype=torch.float64)
+>>> a = torch.matmul(a, a.transpose(-2, -1))  # creates a symmetric positive-definite matrix
+>>> l = torch.linalg.cholesky(a)
+>>> a
+tensor([[[ 1.1629,  2.0237],
+        [ 2.0237,  6.6593]],
+
+        [[ 0.4187,  0.1830],
+        [ 0.1830,  0.1018]],
+
+        [[ 1.9348, -2.5744],
+        [-2.5744,  4.6386]]], dtype=torch.float64)
+>>> l
+tensor([[[ 1.0784,  0.0000],
+        [ 1.8766,  1.7713]],
+
+        [[ 0.6471,  0.0000],
+        [ 0.2829,  0.1477]],
+
+        [[ 1.3910,  0.0000],
+        [-1.8509,  1.1014]]], dtype=torch.float64)
+>>> torch.allclose(torch.matmul(l, l.transpose(-2, -1)), a)
+True

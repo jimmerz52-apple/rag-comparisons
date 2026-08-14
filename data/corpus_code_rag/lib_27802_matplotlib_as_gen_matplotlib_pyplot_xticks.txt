@@ -1,0 +1,34 @@
+# matplotlib._as_gen.matplotlib.pyplot.xticks
+
+matplotlib.pyplot.xticks   matplotlib.pyplot.xticks(ticks=None, labels=None, **kwargs)[source]
+ 
+Get or set the current tick locations and labels of the x-axis. Pass no arguments to return the current values without modifying them.  Parameters 
+ 
+ticksarray-like, optional
+
+
+The list of xtick locations. Passing an empty list removes all xticks.  
+labelsarray-like, optional
+
+
+The labels to place at the given ticks locations. This argument can only be passed if ticks is passed as well.  **kwargs
+
+Text properties can be used to control the appearance of the labels.    Returns 
+ locs
+
+The list of xtick locations.  labels
+
+The list of xlabel Text objects.     Notes Calling this function with no arguments (e.g. xticks()) is the pyplot equivalent of calling get_xticks and get_xticklabels on the current axes. Calling this function with arguments is the pyplot equivalent of calling set_xticks and set_xticklabels on the current axes. Examples >>> locs, labels = xticks()  # Get the current locations and labels.
+>>> xticks(np.arange(0, 1, step=0.2))  # Set label locations.
+>>> xticks(np.arange(3), ['Tom', 'Dick', 'Sue'])  # Set text labels.
+>>> xticks([0, 1, 2], ['January', 'February', 'March'],
+...        rotation=20)  # Set text labels and properties.
+>>> xticks([])  # Disable xticks.
+ 
+  Examples using matplotlib.pyplot.xticks
+ 
+   Secondary Axis   
+
+   Table Demo   
+
+   Rotating custom tick labels

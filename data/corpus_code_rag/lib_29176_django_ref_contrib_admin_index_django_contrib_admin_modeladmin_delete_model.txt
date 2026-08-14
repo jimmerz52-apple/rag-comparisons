@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.delete_model
+
+ModelAdmin.delete_model(request, obj)  
+The delete_model method is given the HttpRequest and a model instance. Overriding this method allows doing pre- or post-delete operations. Call super().delete_model() to delete the object using Model.delete().

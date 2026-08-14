@@ -1,0 +1,23 @@
+# python.library.ast#ast.Global
+
+class ast.Global(names)  
+class ast.Nonlocal(names)  
+global and nonlocal statements. names is a list of raw strings. >>> print(ast.dump(ast.parse('global x,y,z'), indent=4))
+Module(
+    body=[
+        Global(
+            names=[
+                'x',
+                'y',
+                'z'])],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('nonlocal x,y,z'), indent=4))
+Module(
+    body=[
+        Nonlocal(
+            names=[
+                'x',
+                'y',
+                'z'])],
+    type_ignores=[])

@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_bbox_to_anchor
+
+get_bbox_to_anchor()[source]
+ 
+Return the bbox that the legend will be anchored to.

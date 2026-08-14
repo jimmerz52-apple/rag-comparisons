@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.__ge__
+
+numpy.dtype.__ge__ method   dtype.__ge__(value, /)
+ 
+Return self>=value.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.holds_integer
+
+pandas.Index.holds_integer   finalIndex.holds_integer()[source]
+ 
+Whether the type is an integer type.

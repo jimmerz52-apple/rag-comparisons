@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.window
+
+Panel.window()  
+Returns the window object associated with the panel.

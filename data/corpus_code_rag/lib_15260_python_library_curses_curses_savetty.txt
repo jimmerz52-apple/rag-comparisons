@@ -1,0 +1,4 @@
+# python.library.curses#curses.savetty
+
+curses.savetty()  
+Save the current state of the terminal modes in a buffer, usable by resetty().

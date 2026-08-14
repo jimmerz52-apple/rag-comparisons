@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.logb
+
+logb(x)  
+Returns the exponent of the magnitude of the operand’s MSD.

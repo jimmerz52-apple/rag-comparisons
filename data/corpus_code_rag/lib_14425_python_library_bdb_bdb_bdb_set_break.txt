@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.set_break
+
+set_break(filename, lineno, temporary=0, cond, funcname)  
+Set a new breakpoint. If the lineno line doesn’t exist for the filename passed as argument, return an error message. The filename should be in canonical form, as described in the canonic() method.

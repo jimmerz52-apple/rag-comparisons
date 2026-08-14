@@ -1,0 +1,15 @@
+# torch.jit_language_reference#torch.jit.is_scripting
+
+torch.jit.is_scripting() [source]
+ 
+Function that returns True when in compilation and False otherwise. This is useful especially with the @unused decorator to leave code in your model that is not yet TorchScript compatible. .. testcode: import torch
+
+@torch.jit.unused
+def unsupported_linear_op(x):
+    return x
+
+def linear(x):
+   if not torch.jit.is_scripting():
+      return torch.linear(x)
+   else:
+      return unsupported_linear_op(x)

@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.IntegerRangeField
+
+class IntegerRangeField  
+Based on IntegerField and translates its input into NumericRange. Default for IntegerRangeField and BigIntegerRangeField.

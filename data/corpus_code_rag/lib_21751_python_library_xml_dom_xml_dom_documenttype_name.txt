@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.DocumentType.name
+
+DocumentType.name  
+The name of the root element as given in the DOCTYPE declaration, if present.

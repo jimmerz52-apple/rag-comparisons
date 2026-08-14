@@ -1,0 +1,7 @@
+# torch.fx#torch.fx.Node.replace_all_uses_with
+
+replace_all_uses_with(replace_with) [source]
+ 
+Replace all uses of self in the Graph with the Node replace_with.  Parameters 
+replace_with (Node) – The node to replace all uses of self with.  Returns 
+The list of Nodes on which this change was made.

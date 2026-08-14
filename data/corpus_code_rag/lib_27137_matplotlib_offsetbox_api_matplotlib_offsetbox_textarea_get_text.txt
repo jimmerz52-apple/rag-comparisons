@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea.get_text
+
+get_text()[source]
+ 
+Return the string representation of this area's text.

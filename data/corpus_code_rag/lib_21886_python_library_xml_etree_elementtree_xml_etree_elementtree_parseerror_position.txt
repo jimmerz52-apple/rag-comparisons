@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.ParseError.position
+
+position  
+A tuple of line, column numbers, specifying where the error occurred.

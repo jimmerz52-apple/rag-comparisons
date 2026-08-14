@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.decorators.async_only_middleware
+
+async_only_middleware(middleware) [source]
+ 
+Marks a middleware as asynchronous-only. Django will wrap it in an asynchronous event loop when it is called from the WSGI request path.

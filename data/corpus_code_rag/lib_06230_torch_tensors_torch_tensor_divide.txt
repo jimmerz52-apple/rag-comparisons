@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.divide
+
+divide(value, *, rounding_mode=None) → Tensor  
+See torch.divide()

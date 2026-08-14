@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.autoscale
+
+autoscale()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array

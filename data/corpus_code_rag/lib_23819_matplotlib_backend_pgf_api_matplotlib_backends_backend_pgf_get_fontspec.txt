@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.get_fontspec
+
+matplotlib.backends.backend_pgf.get_fontspec()[source]
+ 
+Build fontspec preamble from rc.

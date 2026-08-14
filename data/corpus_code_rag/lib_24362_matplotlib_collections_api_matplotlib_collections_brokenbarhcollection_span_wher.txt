@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.span_where
+
+classmethodspan_where(x, ymin, ymax, where, **kwargs)[source]
+ 
+Return a BrokenBarHCollection that plots horizontal bars from over the regions in x where where is True. The bars range on the y-axis from ymin to ymax kwargs are passed on to the collection.

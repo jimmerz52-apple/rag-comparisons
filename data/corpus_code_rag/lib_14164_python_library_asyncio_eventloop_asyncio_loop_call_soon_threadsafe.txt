@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.call_soon_threadsafe
+
+loop.call_soon_threadsafe(callback, *args, context=None)  
+A thread-safe variant of call_soon(). Must be used to schedule callbacks from another thread. See the concurrency and multithreading section of the documentation.

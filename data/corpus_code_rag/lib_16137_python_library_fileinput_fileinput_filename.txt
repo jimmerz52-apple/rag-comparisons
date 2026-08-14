@@ -1,0 +1,4 @@
+# python.library.fileinput#fileinput.filename
+
+fileinput.filename()  
+Return the name of the file currently being read. Before the first line has been read, returns None.

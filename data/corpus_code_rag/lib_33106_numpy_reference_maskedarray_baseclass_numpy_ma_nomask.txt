@@ -1,0 +1,5 @@
+# numpy.reference.maskedarray.baseclass#numpy.ma.nomask
+
+numpy.ma.nomask
+ 
+Value indicating that a masked array has no invalid entry. nomask is used internally to speed up computations when the mask is not needed. It is represented internally as np.False_.

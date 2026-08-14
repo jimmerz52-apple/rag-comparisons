@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.keras.mixed_precision
+
+Module: tf.compat.v1.keras.mixed_precision Keras mixed precision API. See the mixed precision guide to learn how to use the API. Modules experimental module: Public API for tf.keras.mixed_precision.experimental namespace. Classes class LossScaleOptimizer: An optimizer that applies loss scaling to prevent numeric underflow.

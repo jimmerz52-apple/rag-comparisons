@@ -1,0 +1,26 @@
+# skimage.api.skimage.restoration#skimage.restoration.estimate_sigma
+
+skimage.restoration.estimate_sigma(image, average_sigmas=False, multichannel=False) [source]
+ 
+Robust wavelet-based estimator of the (Gaussian) noise standard deviation.  Parameters 
+ 
+imagendarray 
+
+Image for which to estimate the noise standard deviation.  
+average_sigmasbool, optional 
+
+If true, average the channel estimates of sigma. Otherwise return a list of sigmas corresponding to each channel.  
+multichannelbool 
+
+Estimate sigma separately for each channel.    Returns 
+ 
+sigmafloat or list 
+
+Estimated noise standard deviation(s). If multichannel is True and average_sigmas is False, a separate noise estimate for each channel is returned. Otherwise, the average of the individual channel estimates is returned.     Notes This function assumes the noise follows a Gaussian distribution. The estimation algorithm is based on the median absolute deviation of the wavelet detail coefficients as described in section 4.2 of [1]. References  
+1  
+D. L. Donoho and I. M. Johnstone. “Ideal spatial adaptation by wavelet shrinkage.” Biometrika 81.3 (1994): 425-455. DOI:10.1093/biomet/81.3.425   Examples >>> import skimage.data
+>>> from skimage import img_as_float
+>>> img = img_as_float(skimage.data.camera())
+>>> sigma = 0.1
+>>> img = img + sigma * np.random.standard_normal(img.shape)
+>>> sigma_hat = estimate_sigma(img, multichannel=False)

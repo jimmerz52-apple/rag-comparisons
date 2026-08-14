@@ -1,0 +1,12 @@
+# pygame.ref.midi#pygame.midi.Input.read
+
+read() 
+ reads num_events midi events from the buffer. read(num_events) -> midi_event_list  Reads from the input buffer and gives back midi events.     
+Parameters:
+
+num_events (int) -- number of input events to read  
+Returns:
+the format for midi_event_list is [[[status, data1, data2, data3], timestamp], ...]
+  
+Return type:
+list

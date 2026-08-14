@@ -1,0 +1,25 @@
+# matplotlib.sphinxext_mathmpl_api
+
+matplotlib.sphinxext.mathmpl  A role and directive to display mathtext in Sphinx  Warning In most cases, you will likely want to use one of Sphinx's builtin Math extensions instead of this one.  Mathtext may be included in two ways:  
+Inline, using the role: This text uses inline math: :mathmpl:`\alpha > \beta`.
+ which produces: This text uses inline math: .  
+Standalone, using the directive: Here is some standalone math:
+
+.. mathmpl::
+
+    \alpha > \beta
+ which produces: Here is some standalone math:     Options The mathmpl role and directive both support the following options:  fontsetstr, default: 'cm'
+
+
+The font set to use when displaying math. See rcParams["mathtext.fontset"] (default: 'dejavusans').  fontsizefloat
+
+
+The font size, in points. Defaults to the value from the extension configuration option defined below.     Configuration options The mathtext extension has the following configuration options:  mathmpl_fontsizefloat, default: 10.0
+
+
+Default font size, in points.  mathmpl_srcsetlist of str, default: []
+
+
+Additional image sizes to generate when embedding in HTML, to support responsive resolution images. The list should contain additional x-descriptors ('1.5x', '2x', etc.) to generate (1x is the default and always included.)     classmatplotlib.sphinxext.mathmpl.MathDirective(name, arguments, options, content, lineno, content_offset, block_text, state, state_machine)[source]
+ 
+The .. mathmpl:: directive, as documented in the module's docstring.

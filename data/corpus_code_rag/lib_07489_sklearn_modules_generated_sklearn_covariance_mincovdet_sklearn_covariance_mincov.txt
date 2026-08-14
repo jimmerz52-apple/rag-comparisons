@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.covariance.mincovdet#sklearn.covariance.MinCovDet.score
+
+score(X_test, y=None) [source]
+ 
+Computes the log-likelihood of a Gaussian data set with self.covariance_ as an estimator of its covariance matrix.  Parameters 
+ 
+X_testarray-like of shape (n_samples, n_features) 
+
+Test data of which we compute the likelihood, where n_samples is the number of samples and n_features is the number of features. X_test is assumed to be drawn from the same distribution than the data used in fit (including centering).  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+resfloat 
+
+The likelihood of the data set with self.covariance_ as an estimator of its covariance matrix.

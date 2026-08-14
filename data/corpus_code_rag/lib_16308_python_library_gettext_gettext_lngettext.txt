@@ -1,0 +1,3 @@
+# python.library.gettext#gettext.lngettext
+
+gettext.lngettext(singular, plural, n)

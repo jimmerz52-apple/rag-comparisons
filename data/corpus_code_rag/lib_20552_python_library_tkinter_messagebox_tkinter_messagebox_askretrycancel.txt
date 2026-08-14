@@ -1,0 +1,7 @@
+# python.library.tkinter.messagebox#tkinter.messagebox.askretrycancel
+
+tkinter.messagebox.askquestion(title=None, message=None, **options)  
+tkinter.messagebox.askokcancel(title=None, message=None, **options)  
+tkinter.messagebox.askretrycancel(title=None, message=None, **options)  
+tkinter.messagebox.askyesno(title=None, message=None, **options)  
+tkinter.messagebox.askyesnocancel(title=None, message=None, **options)

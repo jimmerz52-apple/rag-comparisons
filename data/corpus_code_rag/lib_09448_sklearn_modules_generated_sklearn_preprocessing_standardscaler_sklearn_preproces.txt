@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.standardscaler#sklearn.preprocessing.StandardScaler.inverse_transform
+
+inverse_transform(X, copy=None) [source]
+ 
+Scale back the data to the original representation  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data used to scale along the features axis.  
+copybool, default=None 
+
+Copy the input X or not.    Returns 
+ 
+X_tr{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Transformed array.

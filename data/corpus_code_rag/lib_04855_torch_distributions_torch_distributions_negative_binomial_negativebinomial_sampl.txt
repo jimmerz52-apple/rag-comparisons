@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.negative_binomial.NegativeBinomial.sample
+
+sample(sample_shape=torch.Size([])) [source]

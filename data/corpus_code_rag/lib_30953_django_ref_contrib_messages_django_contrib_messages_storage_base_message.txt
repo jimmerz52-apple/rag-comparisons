@@ -1,0 +1,9 @@
+# django.ref.contrib.messages#django.contrib.messages.storage.base.Message
+
+class storage.base.Message  
+When you loop over the list of messages in a template, what you get are instances of the Message class. They have only a few attributes:  
+message: The actual text of the message. 
+level: An integer describing the type of the message (see the message levels section above). 
+tags: A string combining all the message’s tags (extra_tags and level_tag) separated by spaces. 
+extra_tags: A string containing custom tags for this message, separated by spaces. It’s empty by default. 
+level_tag: The string representation of the level. By default, it’s the lowercase version of the name of the associated constant, but this can be changed if you need by using the MESSAGE_TAGS setting.

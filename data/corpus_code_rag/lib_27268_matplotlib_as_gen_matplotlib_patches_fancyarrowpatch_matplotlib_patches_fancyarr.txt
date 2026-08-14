@@ -1,0 +1,11 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.set_arrowstyle
+
+set_arrowstyle(arrowstyle=None, **kw)[source]
+ 
+Set the arrow style. Old attributes are forgotten. Without arguments (or with arrowstyle=None) returns available box styles as a list of strings.  Parameters 
+ 
+arrowstyleNone or ArrowStyle or str, default: None
+
+
+Can be a string with arrowstyle name with optional comma-separated attributes, e.g.: set_arrowstyle("Fancy,head_length=0.2")
+ Alternatively attributes can be provided as keywords, e.g.: set_arrowstyle("fancy", head_length=0.2)

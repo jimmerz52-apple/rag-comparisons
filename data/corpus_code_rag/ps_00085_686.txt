@@ -1,0 +1,10 @@
+# 686
+Task: 686
+
+# Write a function to find the frequency of each element in the given list.
+from collections import defaultdict 
+def freq_element(test_tup):
+  res = defaultdict(int)
+  for ele in test_tup:
+    res[ele] += 1
+  return (str(dict(res)))

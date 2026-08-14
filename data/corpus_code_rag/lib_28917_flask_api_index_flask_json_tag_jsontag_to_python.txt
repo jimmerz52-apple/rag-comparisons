@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.JSONTag.to_python
+
+to_python(value)  
+Convert the JSON representation back to the correct type. The tag will already be removed.  Parameters 
+value (Any) –   Return type 
+Any

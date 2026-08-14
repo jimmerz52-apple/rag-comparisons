@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.RFC_4122
+
+uuid.RFC_4122  
+Specifies the UUID layout given in RFC 4122.

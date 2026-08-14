@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPException
+
+exception http.client.HTTPException  
+The base class of the other exceptions in this module. It is a subclass of Exception.

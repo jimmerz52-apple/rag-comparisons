@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_rotation_mode
+
+get_rotation_mode()[source]
+ 
+Return the text rotation mode.

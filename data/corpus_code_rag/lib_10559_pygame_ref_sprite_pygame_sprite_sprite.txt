@@ -1,0 +1,32 @@
+# pygame.ref.sprite#pygame.sprite.Sprite
+
+pygame.sprite.Sprite 
+ Simple base class for visible game objects. Sprite(*groups) -> Sprite  The base class for visible game objects. Derived classes will want to override the Sprite.update() and assign a Sprite.image and Sprite.rect attributes. The initializer can accept any number of Group instances to be added to. When subclassing the Sprite, be sure to call the base initializer before adding the Sprite to Groups. For example: 
+class Block(pygame.sprite.Sprite):
+
+    # Constructor. Pass in the color of the block,
+    # and its x and y position
+    def __init__(self, color, width, height):
+       # Call the parent class (Sprite) constructor
+       pygame.sprite.Sprite.__init__(self)
+
+       # Create an image of the block, and fill it with a color.
+       # This could also be an image loaded from the disk.
+       self.image = pygame.Surface([width, height])
+       self.image.fill(color)
+
+       # Fetch the rectangle object that has the dimensions of the image
+       # Update the position of this object by setting the values of rect.x and rect.y
+       self.rect = self.image.get_rect()
+    update() 
+ method to control sprite behavior update(*args, **kwargs) -> None  The default implementation of this method does nothing; it's just a convenient "hook" that you can override. This method is called by Group.update() with whatever arguments you give it. There is no need to use this method if not using the convenience method by the same name in the Group class. 
+   add() 
+ add the sprite to groups add(*groups) -> None  Any number of Group instances can be passed as arguments. The Sprite will be added to the Groups it is not already a member of. 
+   remove() 
+ remove the sprite from groups remove(*groups) -> None  Any number of Group instances can be passed as arguments. The Sprite will be removed from the Groups it is currently a member of. 
+   kill() 
+ remove the Sprite from all Groups kill() -> None  The Sprite is removed from all the Groups that contain it. This won't change anything about the state of the Sprite. It is possible to continue to use the Sprite after this method has been called, including adding it to Groups. 
+   alive() 
+ does the sprite belong to any groups alive() -> bool  Returns True when the Sprite belongs to one or more Groups. 
+   groups() 
+ list of Groups that contain this Sprite groups() -> group_list  Return a list of all the Groups that contain this Sprite.

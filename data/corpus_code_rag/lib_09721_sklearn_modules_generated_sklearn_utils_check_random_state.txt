@@ -1,0 +1,23 @@
+# sklearn.modules.generated.sklearn.utils.check_random_state
+
+sklearn.utils.check_random_state  
+sklearn.utils.check_random_state(seed) [source]
+ 
+Turn seed into a np.random.RandomState instance  Parameters 
+ 
+seedNone, int or instance of RandomState 
+
+If seed is None, return the RandomState singleton used by np.random. If seed is an int, return a new RandomState instance seeded with seed. If seed is already a RandomState instance, return it. Otherwise raise ValueError.     
+ Examples using sklearn.utils.check_random_state
+ 
+  Empirical evaluation of the impact of k-means initialization  
+
+  MNIST classification using multinomial logistic + L1  
+
+  Manifold Learning methods on a severed sphere  
+
+  Isotonic Regression  
+
+  Face completion with a multi-output estimators  
+
+  Scaling the regularization parameter for SVCs

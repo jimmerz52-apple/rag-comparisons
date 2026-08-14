@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.categoricaldtype.categories
+
+pandas.CategoricalDtype.categories   propertyCategoricalDtype.categories
+ 
+An Index containing the unique categories allowed.

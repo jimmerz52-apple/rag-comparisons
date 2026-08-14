@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.tan_
+
+tan_() → Tensor  
+In-place version of tan()

@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.Transform.inverse_shape
+
+inverse_shape(shape) [source]
+ 
+Infers the shapes of the inverse computation, given the output shape. Defaults to preserving shape.

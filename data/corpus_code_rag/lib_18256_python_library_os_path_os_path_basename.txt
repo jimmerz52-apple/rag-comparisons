@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.basename
+
+os.path.basename(path)  
+Return the base name of pathname path. This is the second element of the pair returned by passing path to the function split(). Note that the result of this function is different from the Unix basename program; where basename for '/foo/bar/' returns 'bar', the basename() function returns an empty string ('').  Changed in version 3.6: Accepts a path-like object.

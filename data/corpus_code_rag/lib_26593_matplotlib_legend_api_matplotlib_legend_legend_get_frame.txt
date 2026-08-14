@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_frame
+
+get_frame()[source]
+ 
+Return the Rectangle used to frame the legend.

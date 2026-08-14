@@ -1,0 +1,9 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.save_session
+
+save_session(app, session, response)  
+This is called for actual sessions returned by open_session() at the end of the request. This is still called during a request context so if you absolutely need access to the request you can do that.  Parameters 
+ 
+app (Flask) –  
+session (flask.sessions.SessionMixin) –  
+response (Response) –    Return type 
+None

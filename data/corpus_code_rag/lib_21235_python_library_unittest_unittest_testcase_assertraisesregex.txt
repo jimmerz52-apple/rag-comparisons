@@ -1,0 +1,9 @@
+# python.library.unittest#unittest.TestCase.assertRaisesRegex
+
+assertRaisesRegex(exception, regex, callable, *args, **kwds)  
+assertRaisesRegex(exception, regex, *, msg=None)  
+Like assertRaises() but also tests that regex matches on the string representation of the raised exception. regex may be a regular expression object or a string containing a regular expression suitable for use by re.search(). Examples: self.assertRaisesRegex(ValueError, "invalid literal for.*XYZ'$",
+                       int, 'XYZ')
+ or: with self.assertRaisesRegex(ValueError, 'literal'):
+   int('XYZ')
+  New in version 3.1: Added under the name assertRaisesRegexp.   Changed in version 3.2: Renamed to assertRaisesRegex().   Changed in version 3.3: Added the msg keyword argument when used as a context manager.

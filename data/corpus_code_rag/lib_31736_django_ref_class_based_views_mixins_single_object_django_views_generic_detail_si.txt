@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.slug_url_kwarg
+
+slug_url_kwarg  
+The name of the URLConf keyword argument that contains the slug. By default, slug_url_kwarg is 'slug'.

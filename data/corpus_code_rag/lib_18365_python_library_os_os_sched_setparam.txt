@@ -1,0 +1,4 @@
+# python.library.os#os.sched_setparam
+
+os.sched_setparam(pid, param)  
+Set a scheduling parameters for the process with PID pid. A pid of 0 means the calling process. param is a sched_param instance.

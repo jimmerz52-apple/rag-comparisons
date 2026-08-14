@@ -1,0 +1,11 @@
+# tensorflow.compat.v1.flags.tf_decorator.tf_stack.stacktracetransform
+
+tf.compat.v1.flags.tf_decorator.tf_stack.StackTraceTransform Base class for stack trace transformation functions.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.tf_decorator.tf_stack.StackTraceTransform  Methods reset View source 
+reset()
+ __enter__ View source 
+__enter__()
+ __exit__ View source 
+__exit__(
+    unused_type, unused_value, unused_traceback
+)

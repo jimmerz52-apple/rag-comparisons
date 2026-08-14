@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.mutatedy
+
+mutatedy()[source]
+ 
+Return whether the y-limits have changed since init.

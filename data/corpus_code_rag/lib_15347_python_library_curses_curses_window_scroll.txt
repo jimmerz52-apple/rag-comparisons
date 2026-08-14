@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.scroll
+
+window.scroll([lines=1])  
+Scroll the screen or scrolling region upward by lines lines.

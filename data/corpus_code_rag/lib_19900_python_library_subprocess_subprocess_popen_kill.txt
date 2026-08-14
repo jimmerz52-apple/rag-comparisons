@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.Popen.kill
+
+Popen.kill()  
+Kills the child. On POSIX OSs the function sends SIGKILL to the child. On Windows kill() is an alias for terminate().

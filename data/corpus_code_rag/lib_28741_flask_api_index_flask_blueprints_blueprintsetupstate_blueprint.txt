@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.blueprint
+
+blueprint  
+a reference to the blueprint that created this setup state.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.setswitchinterval
+
+test.support.setswitchinterval(interval)  
+Set the sys.setswitchinterval() to the given interval. Defines a minimum interval for Android systems to prevent the system from hanging.

@@ -1,0 +1,14 @@
+# pygame.ref.mask#pygame.mask.Mask.scale
+
+scale() 
+ Resizes a mask scale((width, height)) -> Mask  Creates a new Mask of the requested size with its bits scaled from this mask.     
+Parameters:
+
+size (tuple(int, int) or list[int, int]) -- the width and height (size) of the mask to create  
+Returns:
+a new Mask object with its bits scaled from this mask  
+Return type:
+Mask  
+Raises:
+
+ValueError -- if width < 0 or height < 0

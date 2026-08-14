@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.easter.__call__
+
+pandas.tseries.offsets.Easter.__call__   Easter.__call__(*args, **kwargs)
+ 
+Call self as a function.

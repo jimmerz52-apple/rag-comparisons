@@ -1,0 +1,3 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.FigureCanvasSVG.fixed_dpi
+
+fixed_dpi=72

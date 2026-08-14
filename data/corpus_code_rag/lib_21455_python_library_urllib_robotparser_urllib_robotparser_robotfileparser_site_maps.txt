@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.site_maps
+
+site_maps()  
+Returns the contents of the Sitemap parameter from robots.txt in the form of a list(). If there is no such parameter or the robots.txt entry for this parameter has invalid syntax, return None.  New in version 3.8.

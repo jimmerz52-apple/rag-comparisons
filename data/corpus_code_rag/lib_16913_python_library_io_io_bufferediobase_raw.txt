@@ -1,0 +1,4 @@
+# python.library.io#io.BufferedIOBase.raw
+
+raw  
+The underlying raw stream (a RawIOBase instance) that BufferedIOBase deals with. This is not part of the BufferedIOBase API and may not exist on some implementations.

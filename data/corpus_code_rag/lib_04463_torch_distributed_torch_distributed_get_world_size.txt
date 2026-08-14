@@ -1,0 +1,7 @@
+# torch.distributed#torch.distributed.get_world_size
+
+torch.distributed.get_world_size(group=None) [source]
+ 
+Returns the number of processes in the current process group  Parameters 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used.  Returns 
+The world size of the process group -1, if not part of the group

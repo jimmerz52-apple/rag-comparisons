@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.less_equal_
+
+less_equal_(other) → Tensor  
+In-place version of less_equal().

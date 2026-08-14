@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.__format__
+
+datetime.__format__(format)  
+Same as datetime.strftime(). This makes it possible to specify a format string for a datetime object in formatted string literals and when using str.format(). For a complete list of formatting directives, see strftime() and strptime() Behavior.

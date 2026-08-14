@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.impute.iterativeimputer#sklearn.impute.IterativeImputer.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Fits the imputer on X and return the transformed X.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+Input data, where “n_samples” is the number of samples and “n_features” is the number of features.  
+yignored. 
+  Returns 
+ 
+Xtarray-like, shape (n_samples, n_features) 
+
+The imputed input data.

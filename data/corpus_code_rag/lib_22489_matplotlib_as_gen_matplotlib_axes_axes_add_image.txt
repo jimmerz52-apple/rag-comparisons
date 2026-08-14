@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_image
+
+matplotlib.axes.Axes.add_image   Axes.add_image(image)[source]
+ 
+Add an AxesImage to the Axes; return the image. 
+  Examples using matplotlib.axes.Axes.add_image
+ 
+   Image Nonuniform

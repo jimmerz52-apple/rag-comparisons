@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.exec_command.filepath_from_subprocess_output
+
+numpy.distutils.exec_command.filepath_from_subprocess_output   distutils.exec_command.filepath_from_subprocess_output(output)[source]
+ 
+Convert bytes in the encoding used by a subprocess into a filesystem-appropriate str. Inherited from exec_command, and possibly incorrect.

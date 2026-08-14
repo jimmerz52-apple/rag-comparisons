@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.expressions#django.contrib.postgres.expressions.ArraySubquery
+
+class ArraySubquery(queryset)

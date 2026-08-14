@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.close
+
+close() 
+ Closes the PixelArray, and releases Surface lock. transpose() -> PixelArray  This method is for explicitly closing the PixelArray, and releasing a lock on the Suface.  New in pygame 1.9.4.

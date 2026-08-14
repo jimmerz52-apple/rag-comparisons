@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Lookup.lhs
+
+lhs  
+The left-hand side - what is being looked up. The object typically follows the Query Expression API. It may also be a plain value.

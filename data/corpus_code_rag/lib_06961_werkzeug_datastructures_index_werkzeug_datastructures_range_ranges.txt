@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Range.ranges
+
+ranges  
+A list of (begin, end) tuples for the range header provided. The ranges are non-inclusive.

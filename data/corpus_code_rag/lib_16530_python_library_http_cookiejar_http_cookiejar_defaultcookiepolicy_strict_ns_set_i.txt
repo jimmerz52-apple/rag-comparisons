@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.strict_ns_set_initial_dollar
+
+DefaultCookiePolicy.strict_ns_set_initial_dollar  
+Ignore cookies in Set-Cookie: headers that have names starting with '$'.

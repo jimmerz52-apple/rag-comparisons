@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_text
+
+set_text(s)[source]
+ 
+Set the text string s. It may contain newlines (\n) or math in LaTeX syntax.  Parameters 
+ 
+sobject
+
+
+Any object gets converted to its str representation, except for None which is converted to an empty string.

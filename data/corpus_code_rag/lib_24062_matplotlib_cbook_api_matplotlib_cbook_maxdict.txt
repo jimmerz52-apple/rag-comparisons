@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.maxdict
+
+classmatplotlib.cbook.maxdict(maxsize)[source]
+ 
+Bases: dict A dictionary with a maximum size. Notes This doesn't override all the relevant methods to constrain the size, just __setitem__, so use with caution.

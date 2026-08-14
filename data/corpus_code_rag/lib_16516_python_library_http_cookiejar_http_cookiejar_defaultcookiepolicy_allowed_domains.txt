@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.allowed_domains
+
+DefaultCookiePolicy.allowed_domains()  
+Return None, or the sequence of allowed domains (as a tuple).

@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__array_priority__
+
+numpy.ma.MaskedArray.__array_priority__ attribute   ma.MaskedArray.__array_priority__ = 15

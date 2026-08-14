@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.get_fontconfig_pattern
+
+get_fontconfig_pattern()[source]
+ 
+Get a fontconfig pattern suitable for looking up the font as specified with fontconfig's fc-match utility. This support does not depend on fontconfig; we are merely borrowing its pattern syntax for use here.

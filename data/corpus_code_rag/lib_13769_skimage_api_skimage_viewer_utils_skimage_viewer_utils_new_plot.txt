@@ -1,0 +1,15 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.new_plot
+
+skimage.viewer.utils.new_plot(parent=None, subplot_kw=None, **fig_kw) [source]
+ 
+Return new figure and axes.  Parameters 
+ 
+parentQtWidget 
+
+Qt widget that displays the plot objects. If None, you must manually call canvas.setParent and pass the parent widget.  
+subplot_kwdict 
+
+Keyword arguments passed matplotlib.figure.Figure.add_subplot.  
+fig_kwdict 
+
+Keyword arguments passed matplotlib.figure.Figure.

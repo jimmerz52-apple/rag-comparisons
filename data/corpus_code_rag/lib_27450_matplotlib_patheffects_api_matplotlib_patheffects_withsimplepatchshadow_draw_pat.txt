@@ -1,0 +1,5 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.withSimplePatchShadow.draw_path
+
+draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Overrides the standard draw_path to add the shadow offset and necessary color changes for the shadow.

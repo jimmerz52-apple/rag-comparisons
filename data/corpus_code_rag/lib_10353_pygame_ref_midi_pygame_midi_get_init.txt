@@ -1,0 +1,9 @@
+# pygame.ref.midi#pygame.midi.get_init
+
+pygame.midi.get_init() 
+ returns True if the midi module is currently initialized get_init() -> bool  Gets the initialization state of the pygame.midi module.     
+Returns:
+
+True if the pygame.midi module is currently initialized.  
+Return type:
+bool     New in pygame 1.9.5.

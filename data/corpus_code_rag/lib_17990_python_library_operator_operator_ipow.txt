@@ -1,0 +1,5 @@
+# python.library.operator#operator.ipow
+
+operator.ipow(a, b)  
+operator.__ipow__(a, b)  
+a = ipow(a, b) is equivalent to a **= b.

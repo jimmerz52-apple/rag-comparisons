@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transformed_distribution.TransformedDistribution.cdf
+
+cdf(value) [source]
+ 
+Computes the cumulative distribution function by inverting the transform(s) and computing the score of the base distribution.

@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Node.prev
+
+property prev  
+Returns the previous Node in the linked list of Nodes.  Returns 
+The previous Node in the linked list of Nodes.

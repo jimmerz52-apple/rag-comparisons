@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.Interpreter.fetch_attr
+
+fetch_attr(target) [source]
+ 
+Fetch an attribute from the Module hierarchy of self.module.  Parameters 
+target (str) – The fully-qualfiied name of the attribute to fetch  Returns 
+The value of the attribute.  Return type 
+Any

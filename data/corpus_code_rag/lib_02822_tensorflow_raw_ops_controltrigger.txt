@@ -1,0 +1,17 @@
+# tensorflow.raw_ops.controltrigger
+
+tf.raw_ops.ControlTrigger Does nothing. Serves as a control trigger for scheduling.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.ControlTrigger  
+tf.raw_ops.ControlTrigger(
+    name=None
+)
+ Only useful as a placeholder for control edges.
+ 
+
+
+ Args
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   The created Operation.

@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.get_gid
+
+get_gid()[source]
+ 
+Return the object identifier if one is set, None otherwise.

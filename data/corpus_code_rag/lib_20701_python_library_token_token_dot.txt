@@ -1,0 +1,4 @@
+# python.library.token#token.DOT
+
+token.DOT  
+Token value for ".".

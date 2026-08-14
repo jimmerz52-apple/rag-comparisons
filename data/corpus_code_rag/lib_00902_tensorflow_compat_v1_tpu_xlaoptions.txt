@@ -1,0 +1,12 @@
+# tensorflow.compat.v1.tpu.xlaoptions
+
+tf.compat.v1.tpu.XLAOptions XLA compilation options. 
+tf.compat.v1.tpu.XLAOptions(
+    use_spmd_for_xla_partitioning=True
+)
+
+ 
+
+
+ Attributes
+  use_spmd_for_xla_partitioning   Boolean. Whether to use XLA's SPMD partitioner instead of MPMD partitioner when compiler partitioning is requested.

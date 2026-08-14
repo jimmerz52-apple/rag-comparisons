@@ -1,0 +1,65 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput
+
+classmatplotlib.blocking_input.BlockingMouseInput(fig, mouse_add=MouseButton.LEFT, mouse_pop=MouseButton.RIGHT, mouse_stop=MouseButton.MIDDLE)[source]
+ 
+Bases: matplotlib.blocking_input.BlockingInput Callable for retrieving mouse clicks in a blocking way. This class will also retrieve keypresses and map them to mouse clicks: delete and backspace are a right click, enter is like a middle click, and all others are like a left click.   add_click(event)[source]
+ 
+Add the coordinates of an event to the list of clicks.  Parameters 
+ 
+eventMouseEvent
+
+   
+   button_add=1[source]
+
+   button_pop=3[source]
+
+   button_stop=2[source]
+
+   cleanup(event=None)[source]
+ 
+ Parameters 
+ 
+eventMouseEvent, optional
+
+
+Not used     
+   key_event()[source]
+ 
+Process a key press event, mapping keys to appropriate mouse clicks. 
+   mouse_event()[source]
+ 
+Process a mouse click event. 
+   mouse_event_add(event)[source]
+ 
+Process an button-1 event (add a click if inside axes).  Parameters 
+ 
+eventMouseEvent
+
+   
+   mouse_event_pop(event)[source]
+ 
+Process an button-3 event (remove the last click).  Parameters 
+ 
+eventMouseEvent
+
+   
+   mouse_event_stop(event)[source]
+ 
+Process an button-2 event (end blocking input).  Parameters 
+ 
+eventMouseEvent
+
+   
+   pop(event, index=- 1)[source]
+ 
+Remove a click and the associated event from the list of clicks. Defaults to the last click. 
+   pop_click(event, index=- 1)[source]
+ 
+Remove a click (by default, the last) from the list of clicks.  Parameters 
+ 
+eventMouseEvent
+
+   
+   post_event()[source]
+ 
+Process an event.

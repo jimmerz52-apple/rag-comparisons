@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.getweakrefcount
+
+weakref.getweakrefcount(object)  
+Return the number of weak references and proxies which refer to object.

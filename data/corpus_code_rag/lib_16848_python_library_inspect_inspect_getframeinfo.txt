@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.getframeinfo
+
+inspect.getframeinfo(frame, context=1)  
+Get information about a frame or traceback object. A named tuple Traceback(filename, lineno, function, code_context, index) is returned.

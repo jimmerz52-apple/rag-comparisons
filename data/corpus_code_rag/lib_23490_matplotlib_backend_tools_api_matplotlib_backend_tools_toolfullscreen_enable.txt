@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolFullScreen.enable
+
+enable(event)[source]
+ 
+Enable the toggle tool. trigger calls this method when toggled is False.

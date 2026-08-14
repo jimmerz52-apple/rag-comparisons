@@ -1,0 +1,13 @@
+# django.ref.forms.fields#django.forms.SplitDateTimeField
+
+class SplitDateTimeField(**kwargs)  
+ Default widget: SplitDateTimeWidget
+ Empty value: None
+ Normalizes to: A Python datetime.datetime object. Validates that the given value is a datetime.datetime or string formatted in a particular datetime format. Error message keys: required, invalid, invalid_date, invalid_time
+  Takes two optional arguments:  
+input_date_formats  
+A list of formats used to attempt to convert a string to a valid datetime.date object. 
+ If no input_date_formats argument is provided, the default input formats for DateField are used.  
+input_time_formats  
+A list of formats used to attempt to convert a string to a valid datetime.time object. 
+ If no input_time_formats argument is provided, the default input formats for TimeField are used.

@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Handle.cancel
+
+cancel()  
+Cancel the callback. If the callback has already been canceled or executed, this method has no effect.

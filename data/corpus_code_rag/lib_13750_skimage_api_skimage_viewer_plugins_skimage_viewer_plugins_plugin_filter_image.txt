@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.filter_image
+
+filter_image(*widget_arg) [source]
+ 
+Call image_filter with widget args and kwargs Note: display_filtered_image is automatically called.

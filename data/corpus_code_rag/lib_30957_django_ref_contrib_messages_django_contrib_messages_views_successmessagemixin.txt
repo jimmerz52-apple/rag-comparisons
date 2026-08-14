@@ -1,0 +1,6 @@
+# django.ref.contrib.messages#django.contrib.messages.views.SuccessMessageMixin
+
+class views.SuccessMessageMixin  
+Adds a success message attribute to FormView based classes  
+get_success_message(cleaned_data)  
+cleaned_data is the cleaned data from the form which is used for string formatting

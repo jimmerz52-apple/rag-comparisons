@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axes.axes.cla
+
+matplotlib.axes.Axes.cla   Axes.cla()[source]
+ 
+Clear the Axes. 
+  Examples using matplotlib.axes.Axes.cla
+ 
+   pyplot animation   
+
+   Data Browser

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.greater_equal
+
+tf.experimental.numpy.greater_equal TensorFlow variant of NumPy's greater_equal. 
+tf.experimental.numpy.greater_equal(
+    x1, x2
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.greater_equal.

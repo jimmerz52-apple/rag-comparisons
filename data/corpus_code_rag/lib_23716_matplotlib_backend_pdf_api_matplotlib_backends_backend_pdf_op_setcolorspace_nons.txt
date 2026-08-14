@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Op.setcolorspace_nonstroke
+
+setcolorspace_nonstroke=(b'cs',)[source]

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.argmax
+
+argmax(dim=None, keepdim=False) → LongTensor  
+See torch.argmax()

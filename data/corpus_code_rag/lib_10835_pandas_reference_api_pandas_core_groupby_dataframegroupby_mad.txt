@@ -1,0 +1,19 @@
+# pandas.reference.api.pandas.core.groupby.dataframegroupby.mad
+
+pandas.core.groupby.DataFrameGroupBy.mad   propertyDataFrameGroupBy.mad
+ 
+Return the mean absolute deviation of the values over the requested axis.  Parameters 
+ 
+axis:{index (0), columns (1)}
+
+
+Axis for the function to be applied on.  
+skipna:bool, default True
+
+
+Exclude NA/null values when computing the result.  
+level:int or level name, default None
+
+
+If the axis is a MultiIndex (hierarchical), count along a particular level, collapsing into a Series.    Returns 
+ Series or DataFrame (if level specified)

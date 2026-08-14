@@ -1,0 +1,8 @@
+# werkzeug.utils.index#werkzeug.utils.append_slash_redirect
+
+werkzeug.utils.append_slash_redirect(environ, code=301)  
+Redirects to the same URL but with a slash appended. The behavior of this function is undefined if the path ends with a slash already.  Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environment for the request that triggers the redirect. 
+code (int) – the status code for the redirect.   Return type 
+Response

@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.semi_supervised.labelpropagation#sklearn.semi_supervised.LabelPropagation.fit
+
+fit(X, y) [source]
+ 
+Fit a semi-supervised label propagation model based All the input data is provided matrix X (labeled and unlabeled) and corresponding label matrix y with a dedicated marker value for unlabeled samples.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+A matrix of shape (n_samples, n_samples) will be created from this.  
+yarray-like of shape (n_samples,) 
+
+n_labeled_samples (unlabeled points are marked as -1) All unlabeled samples will be transductively assigned labels.    Returns 
+ 
+selfobject

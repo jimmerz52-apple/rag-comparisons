@@ -1,0 +1,4 @@
+# python.library.test#test.support.unload
+
+test.support.unload(name)  
+Delete name from sys.modules.

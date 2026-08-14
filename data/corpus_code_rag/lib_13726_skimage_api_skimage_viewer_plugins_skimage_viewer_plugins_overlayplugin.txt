@@ -1,0 +1,47 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.OverlayPlugin
+
+class skimage.viewer.plugins.OverlayPlugin(**kwargs) [source]
+ 
+Bases: skimage.viewer.plugins.base.Plugin Plugin for ImageViewer that displays an overlay on top of main image. The base Plugin class displays the filtered image directly on the viewer. OverlayPlugin will instead overlay an image with a transparent colormap. See base Plugin class for additional details.  Attributes 
+ 
+overlayarray 
+
+Overlay displayed on top of image. This overlay defaults to a color map with alpha values varying linearly from 0 to 1.  
+colorint 
+
+Color of overlay.      
+__init__(**kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+attach(image_viewer) [source]
+ 
+Attach the plugin to an ImageViewer. Note that the ImageViewer will automatically call this method when the plugin is added to the ImageViewer. For example: viewer += Plugin(...)
+ Also note that attach automatically calls the filter function so that the image matches the filtered value specified by attached widgets. 
+  
+closeEvent(event) [source]
+ 
+On close disconnect all artists and events from ImageViewer. Note that artists must be appended to self.artists. 
+  
+property color 
+  
+colors = {'cyan': (0, 1, 1), 'green': (0, 1, 0), 'red': (1, 0, 0), 'yellow': (1, 1, 0)} 
+  
+display_filtered_image(image) [source]
+ 
+Display filtered image as an overlay on top of image in viewer. 
+  
+property filtered_image  
+Return filtered image. This “filtered image” is used when saving from the plugin. 
+  
+output() [source]
+ 
+Return the overlaid image.  Returns 
+ 
+overlayarray, same shape as image 
+
+The overlay currently displayed.  
+dataNone 
+   
+  
+property overlay

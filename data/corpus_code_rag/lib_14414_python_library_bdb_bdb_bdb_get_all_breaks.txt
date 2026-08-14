@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.get_all_breaks
+
+get_all_breaks()  
+Return all breakpoints that are set.

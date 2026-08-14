@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_selection.variancethreshold#sklearn.feature_selection.VarianceThreshold.fit
+
+fit(X, y=None) [source]
+ 
+Learn empirical variances from X.  Parameters 
+ 
+X{array-like, sparse matrix}, shape (n_samples, n_features) 
+
+Sample vectors from which to compute variances.  
+yany, default=None 
+
+Ignored. This parameter exists only for compatibility with sklearn.pipeline.Pipeline.    Returns 
+ self

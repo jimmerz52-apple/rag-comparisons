@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Compat32.header_source_parse
+
+header_source_parse(sourcelines)  
+The name is parsed as everything up to the ‘:’ and returned unmodified. The value is determined by stripping leading whitespace off the remainder of the first line, joining all subsequent lines together, and stripping any trailing carriage return or linefeed characters.

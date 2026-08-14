@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.CharField.strip
+
+strip  
+If True (default), the value will be stripped of leading and trailing whitespace.

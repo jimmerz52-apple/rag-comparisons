@@ -1,0 +1,10 @@
+# torch.generated.torch.nn.utils.prune.pruningcontainer#torch.nn.utils.prune.PruningContainer.compute_mask
+
+compute_mask(t, default_mask) [source]
+ 
+Applies the latest method by computing the new partial masks and returning its combination with the default_mask. The new partial mask should be computed on the entries or channels that were not zeroed out by the default_mask. Which portions of the tensor t the new mask will be calculated from depends on the PRUNING_TYPE (handled by the type handler):  for ‘unstructured’, the mask will be computed from the raveled list of nonmasked entries; for ‘structured’, the mask will be computed from the nonmasked channels in the tensor; for ‘global’, the mask will be computed across all entries.   Parameters 
+ 
+t (torch.Tensor) – tensor representing the parameter to prune (of same dimensions as default_mask). 
+default_mask (torch.Tensor) – mask from previous pruning iteration.   Returns 
+new mask that combines the effects of the default_mask and the new mask from the current pruning method (of same dimensions as default_mask and t).  Return type 
+mask (torch.Tensor)

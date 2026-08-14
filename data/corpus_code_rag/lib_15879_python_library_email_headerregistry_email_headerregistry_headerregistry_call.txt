@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.HeaderRegistry.__call__
+
+__call__(name, value)  
+Retrieves the specialized header associated with name from the registry (using default_class if name does not appear in the registry) and composes it with base_class to produce a class, calls the constructed class’s constructor, passing it the same argument list, and finally returns the class instance created thereby.

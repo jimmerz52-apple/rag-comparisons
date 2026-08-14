@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerStem.get_ydata
+
+get_ydata(legend, xdescent, ydescent, width, height, fontsize)[source]

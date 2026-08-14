@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.report_memory
+
+matplotlib.cbook.report_memory(i=0)[source]
+ 
+[Deprecated] Return the memory consumed by the process. Notes  Deprecated since version 3.5.

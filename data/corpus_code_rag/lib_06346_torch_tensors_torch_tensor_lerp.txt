@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.lerp_
+
+lerp_(end, weight) → Tensor  
+In-place version of lerp()

@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.infj
+
+cmath.infj  
+Complex number with zero real part and positive infinity imaginary part. Equivalent to complex(0.0, float('inf')).  New in version 3.6.

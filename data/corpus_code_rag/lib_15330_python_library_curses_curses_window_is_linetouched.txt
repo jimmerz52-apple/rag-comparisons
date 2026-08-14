@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.is_linetouched
+
+window.is_linetouched(line)  
+Return True if the specified line was modified since the last call to refresh(); otherwise return False. Raise a curses.error exception if line is not valid for the given window.

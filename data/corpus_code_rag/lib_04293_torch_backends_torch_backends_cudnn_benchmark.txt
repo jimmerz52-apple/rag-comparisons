@@ -1,0 +1,4 @@
+# torch.backends#torch.backends.cudnn.benchmark
+
+torch.backends.cudnn.benchmark  
+A bool that, if True, causes cuDNN to benchmark multiple convolution algorithms and select the fastest.

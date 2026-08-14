@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IXUSR
+
+stat.S_IXUSR  
+Owner has execute permission.

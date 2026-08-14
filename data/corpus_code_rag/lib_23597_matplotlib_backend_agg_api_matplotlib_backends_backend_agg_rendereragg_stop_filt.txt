@@ -1,0 +1,7 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.stop_filter
+
+stop_filter(post_processing)[source]
+ 
+Save the plot in the current canvas as a image and apply the post_processing function.  def post_processing(image, dpi):
+
+# ny, nx, depth = image.shape # image (numpy array) has RGBA channels and has a depth of 4. ... # create a new_image (numpy array of 4 channels, size can be # different). The resulting image may have offsets from # lower-left corner of the original image return new_image, offset_x, offset_y   The saved renderer is restored and the returned image from post_processing is plotted (using draw_image) on it.

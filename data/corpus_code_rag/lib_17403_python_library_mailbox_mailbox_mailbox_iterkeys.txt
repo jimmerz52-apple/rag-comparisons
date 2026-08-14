@@ -1,0 +1,5 @@
+# python.library.mailbox#mailbox.Mailbox.iterkeys
+
+iterkeys()  
+keys()  
+Return an iterator over all keys if called as iterkeys() or return a list of keys if called as keys().

@@ -1,0 +1,4 @@
+# python.library.test#test.support.get_original_stdout
+
+test.support.get_original_stdout()  
+Return the original stdout set by record_original_stdout() or sys.stdout if it’s not set.

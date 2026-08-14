@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.find
+
+find(header)  
+Return the index of the header in the set or return -1 if not found.  Parameters 
+header – the header to be looked up.

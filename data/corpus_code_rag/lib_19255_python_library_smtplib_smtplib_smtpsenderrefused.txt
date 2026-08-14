@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPSenderRefused
+
+exception smtplib.SMTPSenderRefused  
+Sender address refused. In addition to the attributes set by on all SMTPResponseException exceptions, this sets ‘sender’ to the string that the SMTP server refused.

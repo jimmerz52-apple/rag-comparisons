@@ -1,0 +1,4 @@
+# python.library.os#os.EX_UNAVAILABLE
+
+os.EX_UNAVAILABLE  
+Exit code that means that a required service is unavailable. Availability: Unix.

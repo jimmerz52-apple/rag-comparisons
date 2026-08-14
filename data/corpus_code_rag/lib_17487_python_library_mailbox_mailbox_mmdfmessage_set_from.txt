@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MMDFMessage.set_from
+
+set_from(from_, time_=None)  
+Set the “From ” line to from_, which should be specified without a leading “From ” or trailing newline. For convenience, time_ may be specified and will be formatted appropriately and appended to from_. If time_ is specified, it should be a time.struct_time instance, a tuple suitable for passing to time.strftime(), or True (to use time.gmtime()).

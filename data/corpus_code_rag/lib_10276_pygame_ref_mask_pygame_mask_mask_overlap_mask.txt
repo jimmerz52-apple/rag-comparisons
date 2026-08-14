@@ -1,0 +1,16 @@
+# pygame.ref.mask#pygame.mask.Mask.overlap_mask
+
+overlap_mask() 
+ Returns a mask of the overlapping set bits overlap_mask(othermask, offset) -> Mask  Returns a Mask, the same size as this mask, containing the overlapping set bits between this mask and othermask.     
+Parameters:
+
+ 
+othermask (Mask) -- the other mask to overlap with this mask 
+offset (tuple(int, int) or list[int, int]) -- the offset of othermask from this mask, for more details refer to the Mask offset notes
+    
+Returns:
+
+a newly created Mask with the overlapping bits set   
+Return type:
+
+Mask

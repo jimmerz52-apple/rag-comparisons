@@ -1,0 +1,15 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolLineHandles.closest
+
+closest(x, y)[source]
+ 
+Return index and pixel distance to closest handle.  Parameters 
+ 
+x, yfloat
+
+
+x, y position from which the distance will be calculated to determinate the closest handle    Returns 
+ 
+index, distanceindex of the handle and its distance from
+
+
+position x, y

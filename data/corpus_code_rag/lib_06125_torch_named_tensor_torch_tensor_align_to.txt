@@ -1,0 +1,11 @@
+# torch.named_tensor#torch.Tensor.align_to
+
+align_to(*names) [source]
+ 
+Permutes the dimensions of the self tensor to match the order specified in names, adding size-one dims for any new names. All of the dims of self must be named in order to use this method. The resulting tensor is a view on the original tensor. All dimension names of self must be present in names. names may contain additional names that are not in self.names; the output tensor has a size-one dimension for each of those new names. names may contain up to one Ellipsis (...). The Ellipsis is expanded to be equal to all dimension names of self that are not mentioned in names, in the order that they appear in self. Python 2 does not support Ellipsis but one may use a string literal instead ('...').  Parameters 
+names (iterable of str) – The desired dimension ordering of the output tensor. May contain up to one Ellipsis that is expanded to all unmentioned dim names of self.   Examples: >>> tensor = torch.randn(2, 2, 2, 2, 2, 2)
+>>> named_tensor = tensor.refine_names('A', 'B', 'C', 'D', 'E', 'F')
+
+# Move the F and E dims to the front while keeping the rest in order
+>>> named_tensor.align_to('F', 'E', ...)
+  Warning The named tensor API is experimental and subject to change.

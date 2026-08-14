@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.pause
+
+pause() 
+ temporarily stop audio playback pause() -> None  Temporarily stop audio playback on the CD. The playback can be resumed at the same point with the CD.resume() method. If the CD is not playing this method does nothing. Note, track 0 is the first track on the CD. Track numbers start at zero.

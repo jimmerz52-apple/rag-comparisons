@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.get_mods
+
+pygame.key.get_mods() 
+ determine which modifier keys are being held get_mods() -> int  Returns a single integer representing a bitmask of all the modifier keys being held. Using bitwise operators you can test if specific modifier keys are pressed.

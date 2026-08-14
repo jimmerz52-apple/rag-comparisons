@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.Task.done
+
+done()  
+Return True if the Task is done. A Task is done when the wrapped coroutine either returned a value, raised an exception, or the Task was cancelled.

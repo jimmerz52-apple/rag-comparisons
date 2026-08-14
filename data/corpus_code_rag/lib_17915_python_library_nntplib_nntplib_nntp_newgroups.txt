@@ -1,0 +1,9 @@
+# python.library.nntplib#nntplib.NNTP.newgroups
+
+NNTP.newgroups(date, *, file=None)  
+Send a NEWGROUPS command. The date argument should be a datetime.date or datetime.datetime object. Return a pair (response, groups) where groups is a list representing the groups that are new since the given date. If file is supplied, though, then groups will be empty. >>> from datetime import date, timedelta
+>>> resp, groups = s.newgroups(date.today() - timedelta(days=3))
+>>> len(groups) 
+85
+>>> groups[0] 
+GroupInfo(group='gmane.network.tor.devel', last='4', first='1', flag='m')

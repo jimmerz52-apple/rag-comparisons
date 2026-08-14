@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_WOW64_32KEY
+
+winreg.KEY_WOW64_32KEY  
+Indicates that an application on 64-bit Windows should operate on the 32-bit registry view.

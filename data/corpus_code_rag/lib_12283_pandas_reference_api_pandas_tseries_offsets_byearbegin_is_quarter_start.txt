@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearbegin.is_quarter_start
+
+pandas.tseries.offsets.BYearBegin.is_quarter_start   BYearBegin.is_quarter_start()

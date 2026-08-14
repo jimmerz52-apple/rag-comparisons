@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.Q
+
+class Q

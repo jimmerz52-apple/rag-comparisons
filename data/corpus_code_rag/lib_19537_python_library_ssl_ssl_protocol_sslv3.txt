@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.PROTOCOL_SSLv3
+
+ssl.PROTOCOL_SSLv3  
+Selects SSL version 3 as the channel encryption protocol. This protocol is not be available if OpenSSL is compiled with the OPENSSL_NO_SSLv3 flag.  Warning SSL version 3 is insecure. Its use is highly discouraged.   Deprecated since version 3.6: OpenSSL has deprecated all version specific protocols. Use the default protocol PROTOCOL_TLS with flags like OP_NO_SSLv3 instead.

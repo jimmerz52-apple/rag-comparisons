@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.isdir
+
+os.path.isdir(path)  
+Return True if path is an existing directory. This follows symbolic links, so both islink() and isdir() can be true for the same path.  Changed in version 3.6: Accepts a path-like object.

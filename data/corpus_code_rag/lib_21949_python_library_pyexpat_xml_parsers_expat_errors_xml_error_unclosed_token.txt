@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_UNCLOSED_TOKEN
+
+xml.parsers.expat.errors.XML_ERROR_UNCLOSED_TOKEN  
+Some token (such as a start tag) was not closed before the end of the stream or the next token was encountered.

@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.nvtx.range_push
+
+torch.cuda.nvtx.range_push(msg) [source]
+ 
+Pushes a range onto a stack of nested range span. Returns zero-based depth of the range that is started.  Parameters 
+msg (string) – ASCII message to associate with range

@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.output_transaction
+
+BaseCommand.output_transaction  
+A boolean indicating whether the command outputs SQL statements; if True, the output will automatically be wrapped with BEGIN; and COMMIT;. Default value is False.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.can_pan
+
+matplotlib.axes.Axes.can_pan   Axes.can_pan()[source]
+ 
+Return whether this Axes supports any pan/zoom button functionality.

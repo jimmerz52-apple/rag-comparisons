@@ -1,0 +1,14 @@
+# python.library.decimal#decimal.Decimal.number_class
+
+number_class(context=None)  
+Return a string describing the class of the operand. The returned value is one of the following ten strings.  
+"-Infinity", indicating that the operand is negative infinity. 
+"-Normal", indicating that the operand is a negative normal number. 
+"-Subnormal", indicating that the operand is negative and subnormal. 
+"-Zero", indicating that the operand is a negative zero. 
+"+Zero", indicating that the operand is a positive zero. 
+"+Subnormal", indicating that the operand is positive and subnormal. 
+"+Normal", indicating that the operand is a positive normal number. 
+"+Infinity", indicating that the operand is positive infinity. 
+"NaN", indicating that the operand is a quiet NaN (Not a Number). 
+"sNaN", indicating that the operand is a signaling NaN.

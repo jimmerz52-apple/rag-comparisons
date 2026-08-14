@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.MIMEVersionHeader.version
+
+version  
+The version number as a string, with any whitespace and/or comments removed.

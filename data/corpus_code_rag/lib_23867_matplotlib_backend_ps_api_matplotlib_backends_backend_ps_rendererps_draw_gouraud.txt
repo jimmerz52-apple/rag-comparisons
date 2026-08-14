@@ -1,0 +1,18 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.RendererPS.draw_gouraud_triangles
+
+draw_gouraud_triangles(gc, points, colors, trans)[source]
+ 
+Draw a series of Gouraud triangles.  Parameters 
+ 
+points(N, 3, 2) array-like
+
+
+Array of N (x, y) points for the triangles.  
+colors(N, 3, 4) array-like
+
+
+Array of N RGBA colors for each point of the triangles.  
+transformmatplotlib.transforms.Transform
+
+
+An affine transform to apply to the points.

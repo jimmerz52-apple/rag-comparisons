@@ -1,0 +1,21 @@
+# matplotlib._as_gen.matplotlib.axes.axes.twinx
+
+matplotlib.axes.Axes.twinx   Axes.twinx()[source]
+ 
+Create a twin Axes sharing the xaxis. Create a new Axes with an invisible x-axis and an independent y-axis positioned opposite to the original one (i.e. at right). The x-axis autoscale setting will be inherited from the original Axes. To ensure that the tick marks of both y-axes align, see LinearLocator.  Returns 
+ Axes
+
+The newly created Axes instance     Notes For those who are 'picking' artists while using twinx, pick events are only called for the artists in the top-most Axes. 
+  Examples using matplotlib.axes.Axes.twinx
+ 
+   Axes box aspect   
+
+   Plots with different scales   
+
+   Parasite Simple   
+
+   Parasite axis demo   
+
+   Multiple Yaxis With Spines   
+
+   Basic Usage

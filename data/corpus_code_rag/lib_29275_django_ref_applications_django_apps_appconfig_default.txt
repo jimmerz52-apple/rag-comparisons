@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.AppConfig.default
+
+AppConfig.default  
+ New in Django 3.2.  Set this attribute to False to prevent Django from selecting a configuration class automatically. This is useful when apps.py defines only one AppConfig subclass but you don’t want Django to use it by default. Set this attribute to True to tell Django to select a configuration class automatically. This is useful when apps.py defines more than one AppConfig subclass and you want Django to use one of them by default. By default, this attribute isn’t set.

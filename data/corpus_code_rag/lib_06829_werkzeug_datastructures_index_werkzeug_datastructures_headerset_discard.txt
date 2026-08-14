@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.discard
+
+discard(header)  
+Like remove() but ignores errors.  Parameters 
+header – the header to be discarded.

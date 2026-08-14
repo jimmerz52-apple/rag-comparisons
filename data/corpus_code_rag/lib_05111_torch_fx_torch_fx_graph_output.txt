@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.Graph.output
+
+output(result, type_expr=None) [source]
+ 
+Insert an output Node into the Graph. An output node represents a return statement in Python code. result is the value that should be returned.  Parameters 
+ 
+result (Argument) – The value to be returned. 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have.     Note The same insertion point and type expression rules apply for this method as Graph.create_node.

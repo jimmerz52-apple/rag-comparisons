@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.save
+
+save(name, content, max_length=None)  
+Saves a new file using the storage system, preferably with the name specified. If there already exists a file with this name name, the storage system may modify the filename as necessary to get a unique name. The actual name of the stored file will be returned. The max_length argument is passed along to get_available_name(). The content argument must be an instance of django.core.files.File or a file-like object that can be wrapped in File.

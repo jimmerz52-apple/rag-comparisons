@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.runeval
+
+runeval(expr, globals=None, locals=None)  
+Debug an expression executed via the eval() function. globals and locals have the same meaning as in run().

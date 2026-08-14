@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.operations#django.contrib.postgres.operations.CreateCollation
+
+class CreateCollation(name, locale, *, provider='libc', deterministic=True)  
+Creates a collation with the given name, locale and provider. Set the deterministic parameter to False to create a non-deterministic collation, such as for case-insensitive filtering.

@@ -1,0 +1,3 @@
+# matplotlib.ticker_api#matplotlib.ticker.TickHelper.create_dummy_axis
+
+create_dummy_axis(**kwargs)[source]

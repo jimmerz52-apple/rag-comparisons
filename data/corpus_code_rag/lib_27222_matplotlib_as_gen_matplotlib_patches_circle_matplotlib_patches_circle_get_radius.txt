@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.circle#matplotlib.patches.Circle.get_radius
+
+get_radius()[source]
+ 
+Return the radius of the circle.

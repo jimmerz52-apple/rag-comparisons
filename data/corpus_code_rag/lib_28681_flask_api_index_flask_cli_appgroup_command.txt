@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.AppGroup.command
+
+command(*args, **kwargs)  
+This works exactly like the method of the same name on a regular click.Group but it wraps callbacks in with_appcontext() unless it’s disabled by passing with_appcontext=False.

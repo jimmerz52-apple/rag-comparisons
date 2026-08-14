@@ -1,0 +1,4 @@
+# python.library.json#json.JSONDecodeError.colno
+
+colno  
+The column corresponding to pos.

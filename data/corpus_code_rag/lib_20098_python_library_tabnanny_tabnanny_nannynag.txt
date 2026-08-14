@@ -1,0 +1,4 @@
+# python.library.tabnanny#tabnanny.NannyNag
+
+exception tabnanny.NannyNag  
+Raised by process_tokens() if detecting an ambiguous indent. Captured and handled in check().

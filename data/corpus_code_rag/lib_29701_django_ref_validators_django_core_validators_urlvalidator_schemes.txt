@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.URLValidator.schemes
+
+schemes  
+URL/URI scheme list to validate against. If not provided, the default list is ['http', 'https', 'ftp', 'ftps']. As a reference, the IANA website provides a full list of valid URI schemes.

@@ -1,0 +1,9 @@
+# numpy.reference.arrays.scalars#numpy.clongdouble
+
+class numpy.clongdouble[source]
+ 
+Complex number type composed of two extended-precision floating-point numbers.  Character code 
+'G'  Alias 
+numpy.clongfloat  Alias 
+numpy.longcomplex  Alias on this platform (Linux x86_64) 
+numpy.complex256: Complex number type composed of 2 128-bit extended-precision floating-point numbers.

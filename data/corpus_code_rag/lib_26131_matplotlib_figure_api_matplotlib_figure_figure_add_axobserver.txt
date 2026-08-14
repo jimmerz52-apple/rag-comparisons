@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.add_axobserver
+
+add_axobserver(func)[source]
+ 
+Whenever the Axes state change, func(self) will be called.

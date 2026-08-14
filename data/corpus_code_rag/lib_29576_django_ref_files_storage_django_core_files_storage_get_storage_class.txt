@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.get_storage_class
+
+get_storage_class(import_path=None)  
+Returns a class or module which implements the storage API. When called without the import_path parameter get_storage_class will return the current default storage system as defined by DEFAULT_FILE_STORAGE. If import_path is provided, get_storage_class will attempt to import the class or module from the given path and will return it if successful. An exception will be raised if the import is unsuccessful.

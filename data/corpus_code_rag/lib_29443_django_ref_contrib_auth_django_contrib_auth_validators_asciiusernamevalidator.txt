@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.validators.ASCIIUsernameValidator
+
+class validators.ASCIIUsernameValidator  
+A field validator allowing only ASCII letters and numbers, in addition to @, ., +, -, and _.

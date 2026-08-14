@@ -1,0 +1,9 @@
+# python.library.pathlib#pathlib.Path.read_bytes
+
+Path.read_bytes()  
+Return the binary contents of the pointed-to file as a bytes object: >>> p = Path('my_binary_file')
+>>> p.write_bytes(b'Binary file contents')
+20
+>>> p.read_bytes()
+b'Binary file contents'
+  New in version 3.5.

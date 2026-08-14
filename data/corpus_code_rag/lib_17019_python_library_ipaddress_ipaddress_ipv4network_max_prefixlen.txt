@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.max_prefixlen
+
+max_prefixlen  
+Refer to the corresponding attribute documentation in IPv4Address.

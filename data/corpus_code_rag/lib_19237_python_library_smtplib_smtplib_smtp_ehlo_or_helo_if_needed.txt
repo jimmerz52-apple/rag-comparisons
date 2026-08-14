@@ -1,0 +1,8 @@
+# python.library.smtplib#smtplib.SMTP.ehlo_or_helo_if_needed
+
+SMTP.ehlo_or_helo_if_needed()  
+This method calls ehlo() and/or helo() if there has been no previous EHLO or HELO command this session. It tries ESMTP EHLO first.  
+SMTPHeloError
+
+
+The server didn’t reply properly to the HELO greeting.

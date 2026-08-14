@@ -1,0 +1,4 @@
+# python.library.os#os.killpg
+
+os.killpg(pgid, sig)  
+Send the signal sig to the process group pgid. Raises an auditing event os.killpg with arguments pgid, sig. Availability: Unix.

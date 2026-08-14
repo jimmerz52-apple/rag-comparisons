@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.ColorHistogram.name
+
+name = 'Color Histogram'

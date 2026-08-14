@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.ma.maskedarray.dump
+
+numpy.ma.MaskedArray.dump method   ma.MaskedArray.dump(file)
+ 
+Dump a pickle of the array to the specified file. The array can be read back with pickle.load or numpy.load.  Parameters 
+ 
+filestr or Path
+
+
+A string naming the dump file.  Changed in version 1.17.0: pathlib.Path objects are now accepted.

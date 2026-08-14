@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.eq
+
+eq(other) → Tensor  
+See torch.eq()

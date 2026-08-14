@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.SliderBase.reset
+
+reset()[source]
+ 
+Reset the slider to the initial value.

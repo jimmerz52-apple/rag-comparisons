@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.max
+
+numpy.ndarray.max method   ndarray.max(axis=None, out=None, keepdims=False, initial=<no value>, where=True)
+ 
+Return the maximum along a given axis. Refer to numpy.amax for full documentation.  See also  numpy.amax
+
+equivalent function

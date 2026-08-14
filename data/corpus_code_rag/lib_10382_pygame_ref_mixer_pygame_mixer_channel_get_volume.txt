@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.get_volume
+
+get_volume() 
+ get the volume of the playing channel get_volume() -> value  Return the volume of the channel for the current playing sound. This does not take into account stereo separation used by Channel.set_volume(). The Sound object also has its own volume which is mixed with the channel.

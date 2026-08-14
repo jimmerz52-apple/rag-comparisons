@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.copy
+
+copy() 
+ copy the rectangle copy() -> Rect  Returns a new rectangle having the same position and size as the original. New in pygame 1.9

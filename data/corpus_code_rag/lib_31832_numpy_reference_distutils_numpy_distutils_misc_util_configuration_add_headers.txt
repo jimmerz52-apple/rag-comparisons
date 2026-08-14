@@ -1,0 +1,10 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.add_headers
+
+add_headers(*files)[source]
+ 
+Add installable headers to configuration. Add the given sequence of files to the beginning of the headers list. By default, headers will be installed under <python- include>/<self.name.replace(‘.’,’/’)>/ directory. If an item of files is a tuple, then its first argument specifies the actual installation location relative to the <python-include> path.  Parameters 
+ 
+filesstr or seq
+
+
+Argument(s) can be either:  2-sequence (<includedir suffix>,<path to header file(s)>) path(s) to header file(s) where python includedir suffix will default to package name.

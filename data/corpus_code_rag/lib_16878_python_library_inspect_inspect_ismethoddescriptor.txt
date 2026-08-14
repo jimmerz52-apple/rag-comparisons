@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.ismethoddescriptor
+
+inspect.ismethoddescriptor(object)  
+Return True if the object is a method descriptor, but not if ismethod(), isclass(), isfunction() or isbuiltin() are true. This, for example, is true of int.__add__. An object passing this test has a __get__() method but not a __set__() method, but beyond that the set of attributes varies. A __name__ attribute is usually sensible, and __doc__ often is. Methods implemented via descriptors that also pass one of the other tests return False from the ismethoddescriptor() test, simply because the other tests promise more – you can, e.g., count on having the __func__ attribute (etc) when an object passes ismethod().

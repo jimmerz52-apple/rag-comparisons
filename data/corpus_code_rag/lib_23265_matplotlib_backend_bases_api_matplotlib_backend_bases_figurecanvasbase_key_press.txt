@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.key_press_event
+
+key_press_event(key, guiEvent=None)[source]
+ 
+Pass a KeyEvent to all functions connected to key_press_event.

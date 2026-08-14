@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_size
+
+get_size()[source]
+ 
+Alias for get_fontsize.

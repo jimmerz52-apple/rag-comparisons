@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_va
+
+set_va(align)[source]
+ 
+Alias for set_verticalalignment.

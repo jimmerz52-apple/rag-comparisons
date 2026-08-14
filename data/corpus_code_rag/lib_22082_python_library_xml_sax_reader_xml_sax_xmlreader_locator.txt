@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.Locator
+
+class xml.sax.xmlreader.Locator  
+Interface for associating a SAX event with a document location. A locator object will return valid results only during calls to DocumentHandler methods; at any other time, the results are unpredictable. If information is not available, methods may return None.

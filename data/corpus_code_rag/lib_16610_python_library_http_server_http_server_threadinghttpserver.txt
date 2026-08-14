@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.ThreadingHTTPServer
+
+class http.server.ThreadingHTTPServer(server_address, RequestHandlerClass)  
+This class is identical to HTTPServer but uses threads to handle requests by using the ThreadingMixIn. This is useful to handle web browsers pre-opening sockets, on which HTTPServer would wait indefinitely.  New in version 3.7.

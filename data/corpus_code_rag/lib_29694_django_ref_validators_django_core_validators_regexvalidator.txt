@@ -1,0 +1,26 @@
+# django.ref.validators#django.core.validators.RegexValidator
+
+class RegexValidator(regex=None, message=None, code=None, inverse_match=None, flags=0)  
+   
+Parameters:
+
+ 
+regex – If not None, overrides regex. Can be a regular expression string or a pre-compiled regular expression. 
+message – If not None, overrides message. 
+code – If not None, overrides code. 
+inverse_match – If not None, overrides inverse_match. 
+flags – If not None, overrides flags. In that case, regex must be a regular expression string, or TypeError is raised.     A RegexValidator searches the provided value for a given regular expression with re.search(). By default, raises a ValidationError with message and code if a match is not found. Its behavior can be inverted by setting inverse_match to True, in which case the ValidationError is raised when a match is found.  
+regex  
+The regular expression pattern to search for within the provided value, using re.search(). This may be a string or a pre-compiled regular expression created with re.compile(). Defaults to the empty string, which will be found in every possible value. 
+  
+message  
+The error message used by ValidationError if validation fails. Defaults to "Enter a valid value". 
+  
+code  
+The error code used by ValidationError if validation fails. Defaults to "invalid". 
+  
+inverse_match  
+The match mode for regex. Defaults to False. 
+  
+flags  
+The regex flags used when compiling the regular expression string regex. If regex is a pre-compiled regular expression, and flags is overridden, TypeError is raised. Defaults to 0.

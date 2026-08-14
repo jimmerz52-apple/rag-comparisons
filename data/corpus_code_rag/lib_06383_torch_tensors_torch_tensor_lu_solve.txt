@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.lu_solve
+
+lu_solve(LU_data, LU_pivots) → Tensor  
+See torch.lu_solve()

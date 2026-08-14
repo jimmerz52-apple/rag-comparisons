@@ -1,0 +1,4 @@
+# python.library.tkinter.dnd#tkinter.dnd.dnd_start
+
+tkinter.dnd.dnd_start(source, event)  
+Factory function for drag-and-drop process.

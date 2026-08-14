@@ -1,0 +1,4 @@
+# torch.nn.functional#torch.nn.functional.elu_
+
+torch.nn.functional.elu_(input, alpha=1.) → Tensor  
+In-place version of elu().

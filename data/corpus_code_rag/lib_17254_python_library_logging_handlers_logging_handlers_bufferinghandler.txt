@@ -1,0 +1,12 @@
+# python.library.logging.handlers#logging.handlers.BufferingHandler
+
+class logging.handlers.BufferingHandler(capacity)  
+Initializes the handler with a buffer of the specified capacity. Here, capacity means the number of logging records buffered.  
+emit(record)  
+Append the record to the buffer. If shouldFlush() returns true, call flush() to process the buffer. 
+  
+flush()  
+You can override this to implement custom flushing behavior. This version just zaps the buffer to empty. 
+  
+shouldFlush(record)  
+Return True if the buffer is up to capacity. This method can be overridden to implement custom flushing strategies.

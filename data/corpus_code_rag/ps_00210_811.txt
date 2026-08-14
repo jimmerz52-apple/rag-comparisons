@@ -1,0 +1,7 @@
+# 811
+Task: 811
+
+# Write a function to check if two lists of tuples are identical or not.
+def check_identical(test_list1, test_list2):
+  res = test_list1 == test_list2
+  return (res)

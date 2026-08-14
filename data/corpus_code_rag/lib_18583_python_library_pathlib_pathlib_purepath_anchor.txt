@@ -1,0 +1,11 @@
+# python.library.pathlib#pathlib.PurePath.anchor
+
+PurePath.anchor  
+The concatenation of the drive and root: >>> PureWindowsPath('c:/Program Files/').anchor
+'c:\\'
+>>> PureWindowsPath('c:Program Files/').anchor
+'c:'
+>>> PurePosixPath('/etc').anchor
+'/'
+>>> PureWindowsPath('//host/share').anchor
+'\\\\host\\share\\'

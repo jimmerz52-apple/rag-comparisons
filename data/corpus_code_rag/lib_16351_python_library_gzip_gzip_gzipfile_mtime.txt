@@ -1,0 +1,4 @@
+# python.library.gzip#gzip.GzipFile.mtime
+
+mtime  
+When decompressing, the value of the last modification time field in the most recently read header may be read from this attribute, as an integer. The initial value before reading any headers is None. All gzip compressed streams are required to contain this timestamp field. Some programs, such as gunzip, make use of the timestamp. The format is the same as the return value of time.time() and the st_mtime attribute of the object returned by os.stat().

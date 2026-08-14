@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.linear_model.theilsenregressor#sklearn.linear_model.TheilSenRegressor.fit
+
+fit(X, y) [source]
+ 
+Fit linear model.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Training data.  
+yndarray of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+selfreturns an instance of self.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.semi_supervised.selftrainingclassifier#sklearn.semi_supervised.SelfTrainingClassifier.predict
+
+predict(X) [source]
+ 
+Predict the classes of X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Array representing the data.    Returns 
+ 
+yndarray of shape (n_samples,) 
+
+Array with predicted labels.

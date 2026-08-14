@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.markers.markerstyle#matplotlib.markers.MarkerStyle.set_marker
+
+set_marker(marker)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

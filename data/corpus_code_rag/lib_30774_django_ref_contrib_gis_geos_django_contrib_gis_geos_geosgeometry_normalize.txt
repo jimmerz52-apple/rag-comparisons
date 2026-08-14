@@ -1,0 +1,9 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.normalize
+
+GEOSGeometry.normalize()  
+Converts this geometry to canonical form: >>> g = MultiPoint(Point(0, 0), Point(2, 2), Point(1, 1))
+>>> print(g)
+MULTIPOINT (0 0, 2 2, 1 1)
+>>> g.normalize()
+>>> print(g)
+MULTIPOINT (2 2, 1 1, 0 0)

@@ -1,0 +1,4 @@
+# python.library.plistlib#plistlib.loads
+
+plistlib.loads(data, *, fmt=None, dict_type=dict)  
+Load a plist from a bytes object. See load() for an explanation of the keyword arguments.  New in version 3.4.

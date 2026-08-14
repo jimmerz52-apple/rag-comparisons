@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.writeInfoDict
+
+writeInfoDict()[source]
+ 
+Write out the info dictionary, checking it for good form

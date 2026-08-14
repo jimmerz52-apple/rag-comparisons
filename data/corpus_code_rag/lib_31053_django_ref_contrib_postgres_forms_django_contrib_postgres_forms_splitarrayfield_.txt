@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.SplitArrayField.size
+
+size  
+This is the fixed number of times the underlying field will be used.

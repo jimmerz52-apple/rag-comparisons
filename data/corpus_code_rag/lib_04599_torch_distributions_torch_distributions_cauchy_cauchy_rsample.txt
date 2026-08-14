@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.cauchy.Cauchy.rsample
+
+rsample(sample_shape=torch.Size([])) [source]

@@ -1,0 +1,3 @@
+# torch.generated.torch.jit.scriptfunction#torch.jit.ScriptFunction.save
+
+save(self: torch._C.ScriptFunction, filename: str, _extra_files: Dict[str, str] = {}) → None

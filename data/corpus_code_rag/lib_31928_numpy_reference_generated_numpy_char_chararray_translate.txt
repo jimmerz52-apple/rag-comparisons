@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.translate
+
+numpy.char.chararray.translate method   char.chararray.translate(table, deletechars=None)[source]
+ 
+For each element in self, return a copy of the string where all characters occurring in the optional argument deletechars are removed, and the remaining characters have been mapped through the given translation table.  See also  char.translate

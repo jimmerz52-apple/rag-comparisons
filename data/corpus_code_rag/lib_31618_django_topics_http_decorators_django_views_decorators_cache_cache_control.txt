@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.cache.cache_control
+
+cache_control(**kwargs)  
+This decorator patches the response’s Cache-Control header by adding all of the keyword arguments to it. See patch_cache_control() for the details of the transformation.

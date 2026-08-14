@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.delete
+
+FTP.delete(filename)  
+Remove the file named filename from the server. If successful, returns the text of the response, otherwise raises error_perm on permission errors or error_reply on other errors.

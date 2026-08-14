@@ -1,0 +1,3 @@
+# django.topics.serialization#django.core.serializers.json.DjangoJSONEncoder
+
+class django.core.serializers.json.DjangoJSONEncoder

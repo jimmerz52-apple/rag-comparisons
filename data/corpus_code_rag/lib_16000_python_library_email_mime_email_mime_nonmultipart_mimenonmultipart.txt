@@ -1,0 +1,4 @@
+# python.library.email.mime#email.mime.nonmultipart.MIMENonMultipart
+
+class email.mime.nonmultipart.MIMENonMultipart  
+Module: email.mime.nonmultipart A subclass of MIMEBase, this is an intermediate base class for MIME messages that are not multipart. The primary purpose of this class is to prevent the use of the attach() method, which only makes sense for multipart messages. If attach() is called, a MultipartConversionError exception is raised.

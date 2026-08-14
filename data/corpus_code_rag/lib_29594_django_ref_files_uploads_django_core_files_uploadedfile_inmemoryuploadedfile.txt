@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.InMemoryUploadedFile
+
+class InMemoryUploadedFile  
+A file uploaded into memory (i.e. stream-to-memory). This class is used by the MemoryFileUploadHandler.

@@ -1,0 +1,14 @@
+# pygame.ref.mask#pygame.mask.Mask.connected_component
+
+connected_component() 
+ Returns a mask containing a connected component connected_component() -> Mask connected_component((x, y)) -> Mask  A connected component is a group (1 or more) of connected set bits (orthogonally and diagonally). The SAUF algorithm, which checks 8 point connectivity, is used to find a connected component in the mask. By default this method will return a Mask containing the largest connected component in the mask. Optionally, a bit coordinate can be specified and the connected component containing it will be returned. If the bit at the given location is not set, the returned Mask will be empty (no bits set).     
+Parameters:
+
+pos (tuple(int, int) or list[int, int]) -- (optional) selects the connected component that contains the bit at this position  
+Returns:
+a Mask object (same size as this mask) with the largest connected component from this mask, if this mask has no bits set then an empty mask will be returnedIf the pos parameter is provided then the mask returned will have the connected component that contains this position. An empty mask will be returned if the pos parameter selects an unset bit.   
+Return type:
+Mask  
+Raises:
+
+IndexError -- if the optional pos parameter is outside of the mask's bounds

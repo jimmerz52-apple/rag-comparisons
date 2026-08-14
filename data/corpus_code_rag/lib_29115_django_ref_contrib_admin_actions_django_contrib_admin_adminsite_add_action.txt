@@ -1,0 +1,7 @@
+# django.ref.contrib.admin.actions#django.contrib.admin.AdminSite.add_action
+
+AdminSite.add_action(action, name=None)  
+Some actions are best if they’re made available to any object in the admin site – the export action defined above would be a good candidate. You can make an action globally available using AdminSite.add_action(). For example: from django.contrib import admin
+
+admin.site.add_action(export_selected_objects)
+ This makes the export_selected_objects action globally available as an action named “export_selected_objects”. You can explicitly give the action a name – good if you later want to programmatically remove the action – by passing a second argument to AdminSite.add_action(): admin.site.add_action(export_selected_objects, 'export_selected')

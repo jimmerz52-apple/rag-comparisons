@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.copysign
+
+copysign(other) → Tensor  
+See torch.copysign()

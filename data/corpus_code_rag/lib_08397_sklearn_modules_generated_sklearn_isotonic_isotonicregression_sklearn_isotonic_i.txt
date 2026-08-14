@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.isotonic.isotonicregression#sklearn.isotonic.IsotonicRegression.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit the model using X, y as training data.  Parameters 
+ 
+Xarray-like of shape (n_samples,) or (n_samples, 1) 
+
+Training data.  Changed in version 0.24: Also accepts 2d array with 1 feature.   
+yarray-like of shape (n_samples,) 
+
+Training target.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Weights. If set to None, all weights will be set to 1 (equal weights).    Returns 
+ 
+selfobject 
+
+Returns an instance of self.     Notes X is stored for future use, as transform needs X to interpolate new input data.

@@ -1,0 +1,9 @@
+# 680
+Task: 680
+
+# Write a python function to check whether a sequence of numbers has an increasing trend or not.
+def increasing_trend(nums):
+    if (sorted(nums)== nums):
+        return True
+    else:
+        return False

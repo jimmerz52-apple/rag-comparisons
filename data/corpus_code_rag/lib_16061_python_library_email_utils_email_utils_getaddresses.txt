@@ -1,0 +1,10 @@
+# python.library.email.utils#email.utils.getaddresses
+
+email.utils.getaddresses(fieldvalues)  
+This method returns a list of 2-tuples of the form returned by parseaddr(). fieldvalues is a sequence of header field values as might be returned by Message.get_all. Here’s a simple example that gets all the recipients of a message: from email.utils import getaddresses
+
+tos = msg.get_all('to', [])
+ccs = msg.get_all('cc', [])
+resent_tos = msg.get_all('resent-to', [])
+resent_ccs = msg.get_all('resent-cc', [])
+all_recipients = getaddresses(tos + ccs + resent_tos + resent_ccs)

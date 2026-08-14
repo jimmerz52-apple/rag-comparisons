@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.dirichlet.Dirichlet.log_prob
+
+log_prob(value) [source]

@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.dispatcher.handle_error
+
+handle_error()  
+Called when an exception is raised and not otherwise handled. The default version prints a condensed traceback.

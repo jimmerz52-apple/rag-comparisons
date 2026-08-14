@@ -1,0 +1,33 @@
+# matplotlib._as_gen.matplotlib.axes.axes.autoscale_view
+
+matplotlib.axes.Axes.autoscale_view   Axes.autoscale_view(tight=None, scalex=True, scaley=True)[source]
+ 
+Autoscale the view limits using the data limits.  Parameters 
+ 
+tightbool or None
+
+
+If True, only expand the axis limits using the margins. Note that unlike for autoscale, tight=True does not set the margins to zero. If False and rcParams["axes.autolimit_mode"] (default: 'data') is 'round_numbers', then after expansion by the margins, further expand the axis limits using the axis major locator. If None (the default), reuse the value set in the previous call to autoscale_view (the initial value is False, but the default style sets rcParams["axes.autolimit_mode"] (default: 'data') to 'data', in which case this behaves like True).  
+scalexbool, default: True
+
+
+Whether to autoscale the x axis.  
+scaleybool, default: True
+
+
+Whether to autoscale the y axis.     Notes The autoscaling preserves any preexisting axis direction reversal. The data limits are not updated automatically when artist data are changed after the artist has been added to an Axes instance. In that case, use matplotlib.axes.Axes.relim() prior to calling autoscale_view. If the views of the Axes are fixed, e.g. via set_xlim, they will not be changed by autoscale_view(). See matplotlib.axes.Axes.autoscale() for an alternative. 
+  Examples using matplotlib.axes.Axes.autoscale_view
+ 
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Compound path   
+
+   Ellipse Collection   
+
+   Packed-bubble chart   
+
+   Group barchart with units   
+
+   Textbox   
+
+   Autoscaling

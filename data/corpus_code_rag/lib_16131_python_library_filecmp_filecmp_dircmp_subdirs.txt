@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.subdirs
+
+subdirs  
+A dictionary mapping names in common_dirs to dircmp objects.

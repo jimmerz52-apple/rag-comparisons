@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.related_model
+
+Field.related_model  
+Points to the model the field relates to. For example, Author in ForeignKey(Author, on_delete=models.CASCADE). The related_model for a GenericForeignKey is always None.

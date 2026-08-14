@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_facecolor
+
+set_facecolor(color)[source]
+ 
+Set the face color of the Figure rectangle.  Parameters 
+ 
+colorcolor

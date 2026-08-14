@@ -1,0 +1,15 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_hparams
+
+add_hparams(hparam_dict, metric_dict, hparam_domain_discrete=None, run_name=None) [source]
+ 
+Add a set of hyperparameters to be compared in TensorBoard.  Parameters 
+ 
+hparam_dict (dict) – Each key-value pair in the dictionary is the name of the hyper parameter and it’s corresponding value. The type of the value can be one of bool, string, float, int, or None. 
+metric_dict (dict) – Each key-value pair in the dictionary is the name of the metric and it’s corresponding value. Note that the key used here should be unique in the tensorboard record. Otherwise the value you added by add_scalar will be displayed in hparam plugin. In most cases, this is unwanted. 
+hparam_domain_discrete – (Optional[Dict[str, List[Any]]]) A dictionary that contains names of the hyperparameters and all discrete values they can hold 
+run_name (str) – Name of the run, to be included as part of the logdir. If unspecified, will use current timestamp.    Examples: from torch.utils.tensorboard import SummaryWriter
+with SummaryWriter() as w:
+    for i in range(5):
+        w.add_hparams({'lr': 0.1*i, 'bsize': i},
+                      {'hparam/accuracy': 10*i, 'hparam/loss': 10*i})
+ Expected result:

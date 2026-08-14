@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.minibatchsparsepca#sklearn.decomposition.MiniBatchSparsePCA.transform
+
+transform(X) [source]
+ 
+Least Squares projection of the data onto the sparse components. To avoid instability issues in case the system is under-determined, regularization can be applied (Ridge regression) via the ridge_alpha parameter. Note that Sparse PCA components orthogonality is not enforced as in PCA hence one cannot use a simple linear projection.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Test data to be transformed, must have the same number of features as the data used to train the model.    Returns 
+ 
+X_newndarray of shape (n_samples, n_components) 
+
+Transformed data.

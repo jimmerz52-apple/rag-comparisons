@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.timezone.fromutc
+
+timezone.fromutc(dt)  
+Return dt + offset. The dt argument must be an aware datetime instance, with tzinfo set to self.

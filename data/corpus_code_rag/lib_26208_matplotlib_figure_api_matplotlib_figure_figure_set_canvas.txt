@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_canvas
+
+set_canvas(canvas)[source]
+ 
+Set the canvas that contains the figure  Parameters 
+ 
+canvasFigureCanvas

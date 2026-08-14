@@ -1,0 +1,88 @@
+# matplotlib._as_gen.matplotlib.colors.colormap
+
+matplotlib.colors.Colormap   classmatplotlib.colors.Colormap(name, N=256)[source]
+ 
+Bases: object Baseclass for all scalar to RGBA mappings. Typically, Colormap instances are used to convert data values (floats) from the interval [0, 1] to the RGBA color that the respective Colormap represents. For scaling of data into the [0, 1] interval see matplotlib.colors.Normalize. Subclasses of matplotlib.cm.ScalarMappable make heavy use of this data -> normalize -> map-to-color processing chain.  Parameters 
+ 
+namestr
+
+
+The name of the colormap.  
+Nint
+
+
+The number of rgb quantization levels.       __call__(X, alpha=None, bytes=False)[source]
+ 
+ Parameters 
+ 
+Xfloat or int, ndarray or scalar
+
+
+The data value(s) to convert to RGBA. For floats, X should be in the interval [0.0, 1.0] to return the RGBA values X*100 percent along the Colormap line. For integers, X should be in the interval [0, Colormap.N) to return RGBA values indexed from the Colormap with index X.  
+alphafloat or array-like or None
+
+
+Alpha must be a scalar between 0 and 1, a sequence of such floats with shape matching X, or None.  
+bytesbool
+
+
+If False (default), the returned RGBA values will be floats in the interval [0, 1] otherwise they will be uint8s in the interval [0, 255].    Returns 
+ Tuple of RGBA values if X is scalar, otherwise an array of
+RGBA values with a shape of X.shape + (4, ).
+   
+   colorbar_extend
+ 
+When this colormap exists on a scalar mappable and colorbar_extend is not False, colorbar creation will pick up colorbar_extend as the default value for the extend keyword in the matplotlib.colorbar.Colorbar constructor. 
+   copy()[source]
+ 
+Return a copy of the colormap. 
+   get_bad()[source]
+ 
+Get the color for masked values. 
+   get_over()[source]
+ 
+Get the color for high out-of-range values. 
+   get_under()[source]
+ 
+Get the color for low out-of-range values. 
+   is_gray()[source]
+ 
+Return whether the colormap is grayscale. 
+   reversed(name=None)[source]
+ 
+Return a reversed instance of the Colormap.  Note This function is not implemented for base class.   Parameters 
+ 
+namestr, optional
+
+
+The name for the reversed colormap. If it's None the name will be the name of the parent colormap + "_r".      See also  LinearSegmentedColormap.reversed
+ListedColormap.reversed
+  
+   set_bad(color='k', alpha=None)[source]
+ 
+Set the color for masked values. 
+   set_extremes(*, bad=None, under=None, over=None)[source]
+ 
+Set the colors for masked (bad) values and, when norm.clip =
+False, low (under) and high (over) out-of-range values. 
+   set_over(color='k', alpha=None)[source]
+ 
+Set the color for high out-of-range values. 
+   set_under(color='k', alpha=None)[source]
+ 
+Set the color for low out-of-range values. 
+   with_extremes(*, bad=None, under=None, over=None)[source]
+ 
+Return a copy of the colormap, for which the colors for masked (bad) values and, when norm.clip = False, low (under) and high (over) out-of-range values, have been set accordingly. 
+ 
+  Examples using matplotlib.colors.Colormap
+ 
+   Multicolored lines   
+
+   Creating a colormap from a list of colors   
+
+   Left ventricle bullseye   
+
+   Customized Colorbars Tutorial   
+
+   Creating Colormaps in Matplotlib

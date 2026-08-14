@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.monthbegin.is_month_start
+
+pandas.tseries.offsets.MonthBegin.is_month_start   MonthBegin.is_month_start()

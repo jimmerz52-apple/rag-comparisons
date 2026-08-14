@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.min_mag
+
+min_mag(other, context=None)  
+Similar to the min() method, but the comparison is done using the absolute values of the operands.

@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.fileno
+
+HTTPResponse.fileno()  
+Return the fileno of the underlying socket.

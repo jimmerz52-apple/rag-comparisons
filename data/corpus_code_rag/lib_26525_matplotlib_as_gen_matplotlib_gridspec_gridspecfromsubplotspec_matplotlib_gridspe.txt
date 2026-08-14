@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecfromsubplotspec#matplotlib.gridspec.GridSpecFromSubplotSpec.get_subplot_params
+
+get_subplot_params(figure=None)[source]
+ 
+Return a dictionary of subplot layout parameters.

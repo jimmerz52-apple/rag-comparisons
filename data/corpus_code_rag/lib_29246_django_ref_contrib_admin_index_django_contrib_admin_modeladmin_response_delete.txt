@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.response_delete
+
+ModelAdmin.response_delete(request, obj_display, obj_id)  
+Determines the HttpResponse for the delete_view() stage. response_delete is called after the object has been deleted. You can override it to change the default behavior after the object has been deleted. obj_display is a string with the name of the deleted object. obj_id is the serialized identifier used to retrieve the object to be deleted.

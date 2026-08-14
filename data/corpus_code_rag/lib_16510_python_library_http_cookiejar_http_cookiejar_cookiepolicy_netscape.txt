@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookiePolicy.netscape
+
+CookiePolicy.netscape  
+Implement Netscape protocol.

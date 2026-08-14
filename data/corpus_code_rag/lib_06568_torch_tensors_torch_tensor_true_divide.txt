@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.true_divide
+
+true_divide(value) → Tensor  
+See torch.true_divide()

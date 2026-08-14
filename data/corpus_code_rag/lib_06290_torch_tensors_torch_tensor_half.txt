@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.half
+
+half(memory_format=torch.preserve_format) → Tensor  
+self.half() is equivalent to self.to(torch.float16). See to().  Parameters 
+memory_format (torch.memory_format, optional) – the desired memory format of returned Tensor. Default: torch.preserve_format.

@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.axes.axes.drag_pan
+
+matplotlib.axes.Axes.drag_pan   Axes.drag_pan(button, key, x, y)[source]
+ 
+Called when the mouse moves during a pan operation.  Parameters 
+ 
+buttonMouseButton
+
+
+The pressed mouse button.  
+keystr or None
+
+
+The pressed key, if any.  
+x, yfloat
+
+
+The mouse coordinates in display coords.     Notes This is intended to be overridden by new projection types.

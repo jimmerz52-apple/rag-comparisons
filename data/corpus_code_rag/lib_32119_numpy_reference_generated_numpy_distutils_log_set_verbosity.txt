@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.distutils.log.set_verbosity
+
+numpy.distutils.log.set_verbosity   distutils.log.set_verbosity(v, force=False)[source]

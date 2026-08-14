@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.unit
+
+staticunit()[source]
+ 
+Create a new unit Bbox from (0, 0) to (1, 1).

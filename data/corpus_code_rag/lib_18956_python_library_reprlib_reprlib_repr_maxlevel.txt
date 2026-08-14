@@ -1,0 +1,4 @@
+# python.library.reprlib#reprlib.Repr.maxlevel
+
+Repr.maxlevel  
+Depth limit on the creation of recursive representations. The default is 6.

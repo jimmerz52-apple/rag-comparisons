@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.max_mag
+
+max_mag(other, context=None)  
+Similar to the max() method, but the comparison is done using the absolute values of the operands.

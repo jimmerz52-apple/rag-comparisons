@@ -1,0 +1,12 @@
+# python.library.itertools#itertools.dropwhile
+
+itertools.dropwhile(predicate, iterable)  
+Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element. Note, the iterator does not produce any output until the predicate first becomes false, so it may have a lengthy start-up time. Roughly equivalent to: def dropwhile(predicate, iterable):
+    # dropwhile(lambda x: x<5, [1,4,6,4,1]) --> 6 4 1
+    iterable = iter(iterable)
+    for x in iterable:
+        if not predicate(x):
+            yield x
+            break
+    for x in iterable:
+        yield x

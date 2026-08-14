@@ -1,0 +1,9 @@
+# 967
+Task: 967
+
+# Write a python function to accept the strings which contains all vowels.
+def check(string): 
+  if len(set(string).intersection("AEIOUaeiou"))>=5: 
+    return ('accepted') 
+  else: 
+    return ("not accepted")

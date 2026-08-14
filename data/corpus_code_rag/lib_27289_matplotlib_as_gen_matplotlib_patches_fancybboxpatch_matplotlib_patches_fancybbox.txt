@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_height
+
+set_height(h)[source]
+ 
+Set the rectangle height.  Parameters 
+ 
+hfloat

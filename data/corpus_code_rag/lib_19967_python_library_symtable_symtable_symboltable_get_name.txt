@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_name
+
+get_name()  
+Return the table’s name. This is the name of the class if the table is for a class, the name of the function if the table is for a function, or 'top' if the table is global (get_type() returns 'module').

@@ -1,0 +1,25 @@
+# matplotlib.cbook_api#matplotlib.cbook.violin_stats
+
+matplotlib.cbook.violin_stats(X, method, points=100, quantiles=None)[source]
+ 
+Return a list of dictionaries of data which can be used to draw a series of violin plots. See the Returns section below to view the required keys of the dictionary. Users can skip this function and pass a user-defined set of dictionaries with the same keys to violinplot instead of using Matplotlib to do the calculations. See the Returns section below for the keys that must be present in the dictionaries.  Parameters 
+ 
+Xarray-like
+
+
+Sample data that will be used to produce the gaussian kernel density estimates. Must have 2 or fewer dimensions.  
+methodcallable
+
+
+The method used to calculate the kernel density estimate for each column of data. When called via method(v, coords), it should return a vector of the values of the KDE evaluated at the values specified in coords.  
+pointsint, default: 100
+
+
+Defines the number of points to evaluate each of the gaussian kernel density estimates at.  
+quantilesarray-like, default: None
+
+
+Defines (if not None) a list of floats in interval [0, 1] for each column of data, which represents the quantiles that will be rendered for that column of data. Must have 2 or fewer dimensions. 1D array will be treated as a singleton list containing them.    Returns 
+ list of dict
+
+A list of dictionaries containing the results for each column of data. The dictionaries contain at least the following:  coords: A list of scalars containing the coordinates this particular kernel density estimate was evaluated at. vals: A list of scalars containing the values of the kernel density estimate at each of the coordinates given in coords. mean: The mean value for this column of data. median: The median value for this column of data. min: The minimum value for this column of data. max: The maximum value for this column of data. quantiles: The quantile values for this column of data.

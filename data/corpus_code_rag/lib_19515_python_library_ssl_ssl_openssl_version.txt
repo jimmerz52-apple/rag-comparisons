@@ -1,0 +1,6 @@
+# python.library.ssl#ssl.OPENSSL_VERSION
+
+ssl.OPENSSL_VERSION  
+The version string of the OpenSSL library loaded by the interpreter: >>> ssl.OPENSSL_VERSION
+'OpenSSL 1.0.2k  26 Jan 2017'
+  New in version 3.2.

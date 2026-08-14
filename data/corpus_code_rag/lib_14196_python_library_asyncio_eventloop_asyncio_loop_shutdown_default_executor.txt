@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.shutdown_default_executor
+
+coroutine loop.shutdown_default_executor()  
+Schedule the closure of the default executor and wait for it to join all of the threads in the ThreadPoolExecutor. After calling this method, a RuntimeError will be raised if loop.run_in_executor() is called while using the default executor. Note that there is no need to call this function when asyncio.run() is used.  New in version 3.9.

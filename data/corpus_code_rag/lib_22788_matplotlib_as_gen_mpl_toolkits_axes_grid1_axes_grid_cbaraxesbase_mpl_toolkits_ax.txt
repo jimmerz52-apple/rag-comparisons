@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.cbaraxesbase#mpl_toolkits.axes_grid1.axes_grid.CbarAxesBase.toggle_label
+
+toggle_label(b)[source]

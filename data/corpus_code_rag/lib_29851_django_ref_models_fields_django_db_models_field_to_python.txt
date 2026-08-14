@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.to_python
+
+to_python(value)  
+Converts the value into the correct Python object. It acts as the reverse of value_to_string(), and is also called in clean(). See Converting values to Python objects for usage.

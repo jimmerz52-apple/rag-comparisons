@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.post
+
+pygame.event.post() 
+ place a new event on the queue post(Event) -> None  Places the given event at the end of the event queue. This is usually used for placing pygame.USEREVENT events on the queue. Although any type of event can be placed, if using the system event types your program should be sure to create the standard attributes with appropriate values. If the event queue is full a pygame.error is raised. Caution: In pygame 2.0, calling this function with event types defined by pygame (such as pygame.KEYDOWN) may put events into the SDL2 event queue. In this case, an error may be raised if standard attributes of that event are missing or have incompatible values, and unexpected properties may be silently omitted. In order to avoid this behaviour, custom event properties should be used with custom event types. This behaviour is not guaranteed.

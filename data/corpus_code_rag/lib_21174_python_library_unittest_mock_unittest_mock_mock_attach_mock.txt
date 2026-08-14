@@ -1,0 +1,4 @@
+# python.library.unittest.mock#unittest.mock.Mock.attach_mock
+
+attach_mock(mock, attribute)  
+Attach a mock as an attribute of this one, replacing its name and parent. Calls to the attached mock will be recorded in the method_calls and mock_calls attributes of this one.

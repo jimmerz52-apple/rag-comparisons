@@ -1,0 +1,69 @@
+# sklearn.modules.generated.sklearn.inspection.permutation_importance
+
+sklearn.inspection.permutation_importance  
+sklearn.inspection.permutation_importance(estimator, X, y, *, scoring=None, n_repeats=5, n_jobs=None, random_state=None, sample_weight=None) [source]
+ 
+Permutation importance for feature evaluation [BRE]. The estimator is required to be a fitted estimator. X can be the data set used to train the estimator or a hold-out set. The permutation importance of a feature is calculated as follows. First, a baseline metric, defined by scoring, is evaluated on a (potentially different) dataset defined by the X. Next, a feature column from the validation set is permuted and the metric is evaluated again. The permutation importance is defined to be the difference between the baseline metric and metric from permutating the feature column. Read more in the User Guide.  Parameters 
+ 
+estimatorobject 
+
+An estimator that has already been fitted and is compatible with scorer.  
+Xndarray or DataFrame, shape (n_samples, n_features) 
+
+Data on which permutation importance will be computed.  
+yarray-like or None, shape (n_samples, ) or (n_samples, n_classes) 
+
+Targets for supervised or None for unsupervised.  
+scoringstring, callable or None, default=None 
+
+Scorer to use. It can be a single string (see The scoring parameter: defining model evaluation rules) or a callable (see Defining your scoring strategy from metric functions). If None, the estimator’s default scorer is used.  
+n_repeatsint, default=5 
+
+Number of times to permute a feature.  
+n_jobsint or None, default=None 
+
+Number of jobs to run in parallel. The computation is done by computing permutation score for each columns and parallelized over the columns. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.  
+random_stateint, RandomState instance, default=None 
+
+Pseudo-random number generator to control the permutations of each feature. Pass an int to get reproducible results across function calls. See :term: Glossary <random_state>.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights used in scoring.  New in version 0.24.     Returns 
+ 
+resultBunch 
+
+Dictionary-like object, with the following attributes.  
+importances_meanndarray, shape (n_features, ) 
+
+Mean of feature importance over n_repeats.  
+importances_stdndarray, shape (n_features, ) 
+
+Standard deviation over n_repeats.  
+importancesndarray, shape (n_features, n_repeats) 
+
+Raw permutation importance scores.       References  
+BRE  
+L. Breiman, “Random Forests”, Machine Learning, 45(1), 5-32, 2001. https://doi.org/10.1023/A:1010933404324   Examples >>> from sklearn.linear_model import LogisticRegression
+>>> from sklearn.inspection import permutation_importance
+>>> X = [[1, 9, 9],[1, 9, 9],[1, 9, 9],
+...      [0, 9, 9],[0, 9, 9],[0, 9, 9]]
+>>> y = [1, 1, 1, 0, 0, 0]
+>>> clf = LogisticRegression().fit(X, y)
+>>> result = permutation_importance(clf, X, y, n_repeats=10,
+...                                 random_state=0)
+>>> result.importances_mean
+array([0.4666..., 0.       , 0.       ])
+>>> result.importances_std
+array([0.2211..., 0.       , 0.       ])
+ 
+ Examples using sklearn.inspection.permutation_importance
+ 
+  Release Highlights for scikit-learn 0.22  
+
+  Feature importances with forests of trees  
+
+  Gradient Boosting regression  
+
+  Permutation Importance with Multicollinear or Correlated Features  
+
+  Permutation Importance vs Random Forest Feature Importance (MDI)

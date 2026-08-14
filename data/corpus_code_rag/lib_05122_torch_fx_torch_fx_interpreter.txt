@@ -1,0 +1,131 @@
+# torch.fx#torch.fx.Interpreter
+
+class torch.fx.Interpreter(module) [source]
+ 
+An Interpreter executes an FX graph Node-by-Node. This pattern can be useful for many things, including writing code transformations as well as analysis passes. Methods in the Interpreter class can be overridden to customize the behavior of execution. The map of overrideable methods in terms of call hierarchy: run()
+    +-- run_node
+        +-- placeholder()
+        +-- get_attr()
+        +-- call_function()
+        +-- call_method()
+        +-- call_module()
+        +-- output()
+ Example Suppose we want to swap all instances of torch.neg with torch.sigmoid and vice versa (including their Tensor method equivalents). We could subclass Interpreter like so: class NegSigmSwapInterpreter(Interpreter):
+    def call_function(self, target : Target,
+                      args : Tuple, kwargs : Dict) -> Any:
+        if target == torch.sigmoid:
+            return torch.neg(*args, **kwargs)
+        return super().call_function(n)
+
+    def call_method(self, target : Target,
+                    args : Tuple, kwargs : Dict) -> Any:
+        if target == 'neg':
+            call_self, *args_tail = args
+            return call_self.sigmoid(*args_tail, **kwargs)
+        return super().call_method(n)
+
+def fn(x):
+    return torch.sigmoid(x).neg()
+
+gm = torch.fx.symbolic_trace(fn)
+input = torch.randn(3, 4)
+result = NegSigmSwapInterpreter(gm).run(input)
+torch.testing.assert_allclose(result, torch.neg(input).sigmoid())
+  Parameters 
+module (GraphModule) – The module to be executed    
+call_function(target, args, kwargs) [source]
+ 
+Execute a call_function node and return the result.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation     Return
+
+Any: The value returned by the function invocation   
+  
+call_method(target, args, kwargs) [source]
+ 
+Execute a call_method node and return the result.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation     Return
+
+Any: The value returned by the method invocation   
+  
+call_module(target, args, kwargs) [source]
+ 
+Execute a call_module node and return the result.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation     Return
+
+Any: The value returned by the module invocation   
+  
+fetch_args_kwargs_from_env(n) [source]
+ 
+Fetch the concrete values of args and kwargs of node n from the current execution environment.  Parameters 
+n (Node) – The node for which args and kwargs should be fetched.  Returns 
+args and kwargs with concrete values for n.  Return type 
+Tuple[Tuple, Dict]   
+  
+fetch_attr(target) [source]
+ 
+Fetch an attribute from the Module hierarchy of self.module.  Parameters 
+target (str) – The fully-qualfiied name of the attribute to fetch  Returns 
+The value of the attribute.  Return type 
+Any   
+  
+get_attr(target, args, kwargs) [source]
+ 
+Execute a get_attr node. Will retrieve an attribute value from the Module hierarchy of self.module.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation   Returns 
+The value of the attribute that was retrieved  Return type 
+Any   
+  
+map_nodes_to_values(args, n) [source]
+ 
+Recursively descend through args and look up the concrete value for each Node in the current execution environment.  Parameters 
+ 
+args (Argument) – Data structure within which to look up concrete values 
+n (Node) – Node to which args belongs. This is only used for error reporting.    
+  
+output(target, args, kwargs) [source]
+ 
+Execute an output node. This really just retrieves the value referenced by the output node and returns it.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation   Returns 
+The return value referenced by the output node  Return type 
+Any   
+  
+placeholder(target, args, kwargs) [source]
+ 
+Execute a placeholder node. Note that this is stateful: Interpreter maintains an internal iterator over arguments passed to run and this method returns next() on that iterator.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation   Returns 
+The argument value that was retrieved.  Return type 
+Any   
+  
+run(*args, initial_env=None) [source]
+ 
+Run module via interpretation and return the result.  Parameters 
+ 
+*args – The arguments to the Module to run, in positional order 
+initial_env (Optional[Dict[Node, Any]]) – An optional starting environment for execution. This is a dict mapping Node to any value. This can be used, for example, to pre-populate results for certain Nodes so as to do only partial evaluation within the interpreter.   Returns 
+The value returned from executing the Module  Return type 
+Any   
+  
+run_node(n) [source]
+ 
+Run a specific node n and return the result. Calls into placeholder, get_attr, call_function, call_method, call_module, or output depending on node.op  Parameters 
+n (Node) – The Node to execute  Returns 
+The result of executing n  Return type 
+Any

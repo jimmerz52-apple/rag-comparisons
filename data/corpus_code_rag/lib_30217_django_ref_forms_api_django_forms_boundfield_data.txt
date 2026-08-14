@@ -1,0 +1,9 @@
+# django.ref.forms.api#django.forms.BoundField.data
+
+BoundField.data  
+This property returns the data for this BoundField extracted by the widget’s value_from_datadict() method, or None if it wasn’t given: >>> unbound_form = ContactForm()
+>>> print(unbound_form['subject'].data)
+None
+>>> bound_form = ContactForm(data={'subject': 'My Subject'})
+>>> print(bound_form['subject'].data)
+My Subject

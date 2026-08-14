@@ -1,0 +1,14 @@
+# numpy.reference.generated.numpy.lib.format.header_data_from_array_1_0
+
+numpy.lib.format.header_data_from_array_1_0   lib.format.header_data_from_array_1_0(array)[source]
+ 
+Get the dictionary of header metadata from a numpy.ndarray.  Parameters 
+ 
+arraynumpy.ndarray
+
+  Returns 
+ 
+ddict
+
+
+This has the appropriate entries for writing its string representation to the header of the file.

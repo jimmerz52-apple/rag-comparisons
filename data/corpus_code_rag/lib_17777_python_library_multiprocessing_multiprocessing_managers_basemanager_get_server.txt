@@ -1,0 +1,8 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseManager.get_server
+
+get_server()  
+Returns a Server object which represents the actual server under the control of the Manager. The Server object supports the serve_forever() method: >>> from multiprocessing.managers import BaseManager
+>>> manager = BaseManager(address=('', 50000), authkey=b'abc')
+>>> server = manager.get_server()
+>>> server.serve_forever()
+ Server additionally has an address attribute.

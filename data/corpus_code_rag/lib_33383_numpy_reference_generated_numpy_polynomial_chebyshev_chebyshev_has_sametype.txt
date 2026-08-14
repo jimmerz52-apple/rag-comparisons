@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebyshev.has_sametype
+
+numpy.polynomial.chebyshev.Chebyshev.has_sametype method   polynomial.chebyshev.Chebyshev.has_sametype(other)[source]
+ 
+Check if types match.  New in version 1.7.0.   Parameters 
+ 
+otherobject
+
+
+Class instance.    Returns 
+ 
+boolboolean
+
+
+True if other is same class as self

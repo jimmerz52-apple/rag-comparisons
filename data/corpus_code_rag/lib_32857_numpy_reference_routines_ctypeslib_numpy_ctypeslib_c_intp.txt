@@ -1,0 +1,5 @@
+# numpy.reference.routines.ctypeslib#numpy.ctypeslib.c_intp
+
+class numpy.ctypeslib.c_intp
+ 
+A ctypes signed integer type of the same size as numpy.intp. Depending on the platform, it can be an alias for either c_int, c_long or c_longlong.

@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.LabelCommand.label
+
+LabelCommand.label  
+A string describing the arbitrary arguments passed to the command. The string is used in the usage text and error messages of the command. Defaults to 'label'.

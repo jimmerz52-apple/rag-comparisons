@@ -1,0 +1,35 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.RendererCairo.draw_text
+
+draw_text(gc, x, y, s, prop, angle, ismath=False, mtext=None)[source]
+ 
+Draw the text instance.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+xfloat
+
+
+The x location of the text in display coords.  
+yfloat
+
+
+The y location of the text baseline in display coords.  
+sstr
+
+
+The text string.  
+propmatplotlib.font_manager.FontProperties
+
+
+The font properties.  
+anglefloat
+
+
+The rotation angle in degrees anti-clockwise.  
+mtextmatplotlib.text.Text
+
+
+The original text object to be rendered.     Notes Note for backend implementers: When you are trying to determine if you have gotten your bounding box right (which is what enables the text layout/alignment to work properly), it helps to change the line in text.py: if 0: bbox_artist(self, renderer)
+ to if 1, and then the actual bounding box will be plotted along with your text.

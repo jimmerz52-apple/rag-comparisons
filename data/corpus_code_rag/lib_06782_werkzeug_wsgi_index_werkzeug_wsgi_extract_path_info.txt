@@ -1,0 +1,20 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.extract_path_info
+
+werkzeug.wsgi.extract_path_info(environ_or_baseurl, path_or_url, charset='utf-8', errors='werkzeug.url_quote', collapse_http_schemes=True)  
+Extracts the path info from the given URL (or WSGI environment) and path. The path info returned is a string. The URLs might also be IRIs. If the path info could not be determined, None is returned. Some examples: >>> extract_path_info('http://example.com/app', '/app/hello')
+'/hello'
+>>> extract_path_info('http://example.com/app',
+...                   'https://example.com/app/hello')
+'/hello'
+>>> extract_path_info('http://example.com/app',
+...                   'https://example.com/app/hello',
+...                   collapse_http_schemes=False) is None
+True
+ Instead of providing a base URL you can also pass a WSGI environment.  Parameters 
+ 
+environ_or_baseurl (Union[str, WSGIEnvironment]) – a WSGI environment dict, a base URL or base IRI. This is the root of the application. 
+path_or_url (Union[str, werkzeug.urls._URLTuple]) – an absolute path from the server root, a relative path (in which case it’s the path info) or a full URL. 
+charset (str) – the charset for byte data in URLs 
+errors (str) – the error handling on decode 
+collapse_http_schemes (bool) – if set to False the algorithm does not assume that http and https on the same server point to the same resource.   Return type 
+Optional[str]    Changelog Changed in version 0.15: The errors parameter defaults to leaving invalid bytes quoted instead of replacing them.   New in version 0.6.

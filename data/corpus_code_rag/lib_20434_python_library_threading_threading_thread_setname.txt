@@ -1,0 +1,5 @@
+# python.library.threading#threading.Thread.setName
+
+getName()  
+setName()  
+Old getter/setter API for name; use it directly as a property instead.

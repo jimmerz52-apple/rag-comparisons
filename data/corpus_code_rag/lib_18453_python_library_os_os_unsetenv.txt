@@ -1,0 +1,4 @@
+# python.library.os#os.unsetenv
+
+os.unsetenv(key)  
+Unset (delete) the environment variable named key. Such changes to the environment affect subprocesses started with os.system(), popen() or fork() and execv(). Deletion of items in os.environ is automatically translated into a corresponding call to unsetenv(); however, calls to unsetenv() don’t update os.environ, so it is actually preferable to delete items of os.environ. Raises an auditing event os.unsetenv with argument key.  Changed in version 3.9: The function is now always available and is also available on Windows.

@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.collidelistall
+
+collidelistall() 
+ test if all rectangles in a list intersect collidelistall(list) -> indices  Returns a list of all the indices that contain rectangles that collide with the Rect. If no intersecting rectangles are found, an empty list is returned.

@@ -1,0 +1,9 @@
+# tensorflow.train.int64list
+
+tf.train.Int64List     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.Int64List 
+ 
+
+
+ Attributes
+  value   repeated int64 value

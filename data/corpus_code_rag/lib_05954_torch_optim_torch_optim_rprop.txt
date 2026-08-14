@@ -1,0 +1,14 @@
+# torch.optim#torch.optim.Rprop
+
+class torch.optim.Rprop(params, lr=0.01, etas=(0.5, 1.2), step_sizes=(1e-06, 50)) [source]
+ 
+Implements the resilient backpropagation algorithm.  Parameters 
+ 
+params (iterable) – iterable of parameters to optimize or dicts defining parameter groups 
+lr (float, optional) – learning rate (default: 1e-2) 
+etas (Tuple[float, float], optional) – pair of (etaminus, etaplis), that are multiplicative increase and decrease factors (default: (0.5, 1.2)) 
+step_sizes (Tuple[float, float], optional) – a pair of minimal and maximal allowed step sizes (default: (1e-6, 50))     
+step(closure=None) [source]
+ 
+Performs a single optimization step.  Parameters 
+closure (callable, optional) – A closure that reevaluates the model and returns the loss.

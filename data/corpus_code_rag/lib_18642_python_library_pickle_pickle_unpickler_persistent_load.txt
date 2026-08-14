@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.Unpickler.persistent_load
+
+persistent_load(pid)  
+Raise an UnpicklingError by default. If defined, persistent_load() should return the object specified by the persistent ID pid. If an invalid persistent ID is encountered, an UnpicklingError should be raised. See Persistence of External Objects for details and examples of uses.

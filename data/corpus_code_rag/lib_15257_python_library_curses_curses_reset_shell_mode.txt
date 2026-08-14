@@ -1,0 +1,4 @@
+# python.library.curses#curses.reset_shell_mode
+
+curses.reset_shell_mode()  
+Restore the terminal to “shell” mode, as previously saved by def_shell_mode().

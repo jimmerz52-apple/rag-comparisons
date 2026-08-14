@@ -1,0 +1,4 @@
+# python.library.struct#struct.Struct.unpack
+
+unpack(buffer)  
+Identical to the unpack() function, using the compiled format. The buffer’s size in bytes must equal size.

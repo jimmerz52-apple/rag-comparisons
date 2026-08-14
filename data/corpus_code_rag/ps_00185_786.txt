@@ -1,0 +1,8 @@
+# 786
+Task: 786
+
+# Write a function to locate the right insertion point for a specified value in sorted order.
+import bisect
+def right_insertion(a, x):
+    i = bisect.bisect_right(a, x)
+    return i

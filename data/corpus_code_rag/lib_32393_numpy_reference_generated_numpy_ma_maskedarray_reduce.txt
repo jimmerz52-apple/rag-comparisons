@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__reduce__
+
+numpy.ma.MaskedArray.__reduce__ method   ma.MaskedArray.__reduce__()[source]
+ 
+Return a 3-tuple for pickling a MaskedArray.

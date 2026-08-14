@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.hasChildNodes
+
+Node.hasChildNodes()  
+Return True if the node has any child nodes.

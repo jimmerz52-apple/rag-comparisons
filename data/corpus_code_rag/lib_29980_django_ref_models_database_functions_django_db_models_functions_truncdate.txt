@@ -1,0 +1,8 @@
+# django.ref.models.database-functions#django.db.models.functions.TruncDate
+
+class TruncDate(expression, tzinfo=None, **extra)  
+ 
+lookup_name = 'date' 
+  
+output_field = DateField() 
+  Changed in Django 3.2: The tzinfo parameter was added.

@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.InterpolationDepthError
+
+exception configparser.InterpolationDepthError  
+Exception raised when string interpolation cannot be completed because the number of iterations exceeds MAX_INTERPOLATION_DEPTH. Subclass of InterpolationError.

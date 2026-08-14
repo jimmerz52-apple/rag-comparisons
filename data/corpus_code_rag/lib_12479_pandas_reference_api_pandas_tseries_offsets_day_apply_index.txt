@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.day.apply_index
+
+pandas.tseries.offsets.Day.apply_index   Day.apply_index(other)

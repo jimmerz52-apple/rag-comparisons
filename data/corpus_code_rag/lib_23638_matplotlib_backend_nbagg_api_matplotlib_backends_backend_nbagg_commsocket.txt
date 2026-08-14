@@ -1,0 +1,13 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.CommSocket
+
+classmatplotlib.backends.backend_nbagg.CommSocket(manager)[source]
+ 
+Bases: object Manages the Comm connection between IPython and the browser (client). Comms are 2 way, with the CommSocket being able to publish a message via the send_json method, and handle a message with on_message. On the JS side figure.send_message and figure.ws.onmessage do the sending and receiving respectively.   is_open()[source]
+
+   on_close()[source]
+
+   on_message(message)[source]
+
+   send_binary(blob)[source]
+
+   send_json(content)[source]

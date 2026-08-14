@@ -1,0 +1,22 @@
+# sklearn.modules.generated.sklearn.gaussian_process.gaussianprocessclassifier#sklearn.gaussian_process.GaussianProcessClassifier.log_marginal_likelihood
+
+log_marginal_likelihood(theta=None, eval_gradient=False, clone_kernel=True) [source]
+ 
+Returns log-marginal likelihood of theta for training data. In the case of multi-class classification, the mean log-marginal likelihood of the one-versus-rest classifiers are returned.  Parameters 
+ 
+thetaarray-like of shape (n_kernel_params,), default=None 
+
+Kernel hyperparameters for which the log-marginal likelihood is evaluated. In the case of multi-class classification, theta may be the hyperparameters of the compound kernel or of an individual kernel. In the latter case, all individual kernel get assigned the same theta values. If None, the precomputed log_marginal_likelihood of self.kernel_.theta is returned.  
+eval_gradientbool, default=False 
+
+If True, the gradient of the log-marginal likelihood with respect to the kernel hyperparameters at position theta is returned additionally. Note that gradient computation is not supported for non-binary classification. If True, theta must not be None.  
+clone_kernelbool, default=True 
+
+If True, the kernel attribute is copied. If False, the kernel attribute is modified, but may result in a performance improvement.    Returns 
+ 
+log_likelihoodfloat 
+
+Log-marginal likelihood of theta for training data.  
+log_likelihood_gradientndarray of shape (n_kernel_params,), optional 
+
+Gradient of the log-marginal likelihood with respect to the kernel hyperparameters at position theta. Only returned when eval_gradient is True.

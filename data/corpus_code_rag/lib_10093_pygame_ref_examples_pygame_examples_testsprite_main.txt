@@ -1,0 +1,9 @@
+# pygame.ref.examples#pygame.examples.testsprite.main
+
+testsprite.main() 
+ show lots of sprites moving around testsprite.main(update_rects = True, use_static = False, use_FastRenderGroup = False, screen_dims = [640, 480], use_alpha = False, flags = 0) -> None  Optional keyword arguments: update_rects - use the RenderUpdate sprite group class
+use_static - include non-moving images
+use_FastRenderGroup - Use the FastRenderGroup sprite group
+screen_dims - pygame window dimensions
+use_alpha - use alpha blending
+flags - additional display mode flags Like the testsprite.c that comes with SDL, this pygame version shows lots of sprites moving around. If run as a stand-alone program then no command line arguments are taken.

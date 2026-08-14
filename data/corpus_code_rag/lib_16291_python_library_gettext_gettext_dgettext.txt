@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.dgettext
+
+gettext.dgettext(domain, message)  
+Like gettext(), but look the message up in the specified domain.

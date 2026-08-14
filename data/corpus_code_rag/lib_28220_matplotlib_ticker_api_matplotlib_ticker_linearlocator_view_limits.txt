@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LinearLocator.view_limits
+
+view_limits(vmin, vmax)[source]
+ 
+Try to choose the view limits intelligently.

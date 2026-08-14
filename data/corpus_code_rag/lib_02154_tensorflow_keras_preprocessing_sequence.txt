@@ -1,0 +1,3 @@
+# tensorflow.keras.preprocessing.sequence
+
+Module: tf.keras.preprocessing.sequence Utilities for preprocessing sequence data. Classes class TimeseriesGenerator: Utility class for generating batches of temporal data. Functions make_sampling_table(...): Generates a word rank-based probabilistic sampling table. pad_sequences(...): Pads sequences to the same length. skipgrams(...): Generates skipgram word pairs.

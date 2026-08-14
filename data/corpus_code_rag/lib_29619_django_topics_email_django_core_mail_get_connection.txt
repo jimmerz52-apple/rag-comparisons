@@ -1,0 +1,3 @@
+# django.topics.email#django.core.mail.get_connection
+
+get_connection(backend=None, fail_silently=False, *args, **kwargs)

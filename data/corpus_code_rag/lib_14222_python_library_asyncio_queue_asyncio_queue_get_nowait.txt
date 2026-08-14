@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.Queue.get_nowait
+
+get_nowait()  
+Return an item if one is immediately available, else raise QueueEmpty.

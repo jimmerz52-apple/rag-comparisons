@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.value_from_object
+
+value_from_object(obj)  
+Returns the field’s value for the given model instance. This method is often used by value_to_string().

@@ -1,0 +1,4 @@
+# python.library.parser#parser.ST.issuite
+
+ST.issuite()  
+Same as issuite(st).

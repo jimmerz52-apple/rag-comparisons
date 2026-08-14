@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.minute.copy
+
+pandas.tseries.offsets.Minute.copy   Minute.copy()

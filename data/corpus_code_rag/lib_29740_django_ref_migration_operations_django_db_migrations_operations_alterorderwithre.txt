@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AlterOrderWithRespectTo
+
+class AlterOrderWithRespectTo(name, order_with_respect_to)

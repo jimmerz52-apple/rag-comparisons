@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.interactive
+
+matplotlib.interactive(b)[source]
+ 
+Set whether to redraw after every plotting command (e.g. pyplot.xlabel).

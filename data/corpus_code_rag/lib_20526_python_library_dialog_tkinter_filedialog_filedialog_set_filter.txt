@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.set_filter
+
+set_filter(dir, pat)  
+Set the file filter.

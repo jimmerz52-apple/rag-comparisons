@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__deepcopy__
+
+numpy.ma.MaskedArray.__deepcopy__ method   ma.MaskedArray.__deepcopy__(memo, /) → Deep copy of array.[source]
+ 
+Used if copy.deepcopy is called on an array.

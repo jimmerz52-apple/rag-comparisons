@@ -1,0 +1,16 @@
+# numpy.reference.random.generated.numpy.random.get_state
+
+numpy.random.get_state   random.get_state()
+ 
+Return a tuple representing the internal state of the generator. For more details, see set_state.  Parameters 
+ 
+legacybool, optional
+
+
+Flag indicating to return a legacy tuple state when the BitGenerator is MT19937, instead of a dict.    Returns 
+ 
+out{tuple(str, ndarray of 624 uints, int, int, float), dict}
+
+
+The returned tuple has the following items:  the string ‘MT19937’. a 1-D array of 624 unsigned integer keys. an integer pos. an integer has_gauss. a float cached_gaussian.  If legacy is False, or the BitGenerator is not MT19937, then state is returned as a dictionary.      See also  set_state
+  Notes set_state and get_state are not needed to work with any of the random distributions in NumPy. If the internal state is manually altered, the user should know exactly what he/she is doing.

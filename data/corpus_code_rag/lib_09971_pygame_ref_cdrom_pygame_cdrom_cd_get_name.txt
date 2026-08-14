@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_name
+
+get_name() 
+ the system name of the cdrom drive get_name() -> name  Return the string name of the drive. This is the system name used to represent the drive. It is often the drive letter or device name. This method can work on an uninitialized CD.

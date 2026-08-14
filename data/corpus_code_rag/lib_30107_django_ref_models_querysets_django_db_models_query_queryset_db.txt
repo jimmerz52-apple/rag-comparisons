@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.db
+
+db  
+The database that will be used if this query is executed now.

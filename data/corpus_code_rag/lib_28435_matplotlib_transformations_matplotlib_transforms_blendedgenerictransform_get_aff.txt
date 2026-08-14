@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BlendedGenericTransform.get_affine
+
+get_affine()[source]
+ 
+Get the affine part of this transform.

@@ -1,0 +1,7 @@
+# 544
+Task: 544
+
+# Write a function to flatten the tuple list to a string.
+def flatten_tuple(test_list):
+  res = ' '.join([idx for tup in test_list for idx in tup])
+  return (res)

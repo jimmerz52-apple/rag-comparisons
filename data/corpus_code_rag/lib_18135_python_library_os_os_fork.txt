@@ -1,0 +1,4 @@
+# python.library.os#os.fork
+
+os.fork()  
+Fork a child process. Return 0 in the child and the child’s process id in the parent. If an error occurs OSError is raised. Note that some platforms including FreeBSD <= 6.3 and Cygwin have known issues when using fork() from a thread. Raises an auditing event os.fork with no arguments.  Changed in version 3.8: Calling fork() in a subinterpreter is no longer supported (RuntimeError is raised).   Warning See ssl for applications that use the SSL module with fork().  Availability: Unix.

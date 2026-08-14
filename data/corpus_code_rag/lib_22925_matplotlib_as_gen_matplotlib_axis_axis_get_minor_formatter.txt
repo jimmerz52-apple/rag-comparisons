@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_minor_formatter
+
+matplotlib.axis.Axis.get_minor_formatter   Axis.get_minor_formatter()[source]
+ 
+Get the formatter of the minor ticker.

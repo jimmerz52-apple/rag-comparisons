@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.read_binary
+
+importlib.resources.read_binary(package, resource)  
+Read and return the contents of the resource within package as bytes. package is either a name or a module object which conforms to the Package requirements. resource is the name of the resource to open within package; it may not contain path separators and it may not have sub-resources (i.e. it cannot be a directory). This function returns the contents of the resource as bytes.

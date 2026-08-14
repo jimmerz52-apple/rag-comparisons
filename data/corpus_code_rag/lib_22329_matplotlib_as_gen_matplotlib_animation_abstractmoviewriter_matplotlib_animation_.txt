@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.abstractmoviewriter#matplotlib.animation.AbstractMovieWriter.grab_frame
+
+abstractgrab_frame(**savefig_kwargs)[source]
+ 
+Grab the image information from the figure and save as a movie frame. All keyword arguments in savefig_kwargs are passed on to the savefig call that saves the figure.

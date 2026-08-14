@@ -1,0 +1,4 @@
+# python.library.dis#dis.opname
+
+dis.opname  
+Sequence of operation names, indexable using the bytecode.

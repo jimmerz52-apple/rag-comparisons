@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.remove_writer
+
+loop.remove_writer(fd)  
+Stop monitoring the fd file descriptor for write availability.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.addSubTest
+
+addSubTest(test, subtest, outcome)  
+Called when a subtest finishes. test is the test case corresponding to the test method. subtest is a custom TestCase instance describing the subtest. If outcome is None, the subtest succeeded. Otherwise, it failed with an exception where outcome is a tuple of the form returned by sys.exc_info(): (type, value, traceback). The default implementation does nothing when the outcome is a success, and records subtest failures as normal failures.  New in version 3.4.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.isinf
+
+tf.experimental.numpy.isinf TensorFlow variant of NumPy's isinf. 
+tf.experimental.numpy.isinf(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.isinf.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.strides
+
+numpy.generic.strides attribute   generic.strides
+ 
+Tuple of bytes steps in each dimension.

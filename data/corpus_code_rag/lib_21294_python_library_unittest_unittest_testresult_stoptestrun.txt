@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.stopTestRun
+
+stopTestRun()  
+Called once after all tests are executed.  New in version 3.1.

@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.get_fontext_synonyms
+
+matplotlib.font_manager.get_fontext_synonyms(fontext)[source]
+ 
+Return a list of file extensions extensions that are synonyms for the given file extension fileext.

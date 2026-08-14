@@ -1,0 +1,11 @@
+# django.ref.forms.fields#django.forms.SlugField
+
+class SlugField(**kwargs)  
+ Default widget: TextInput
+ Empty value: Whatever you’ve given as empty_value. Normalizes to: A string. Uses validate_slug or validate_unicode_slug to validate that the given value contains only letters, numbers, underscores, and hyphens. Error messages: required, invalid
+  This field is intended for use in representing a model SlugField in forms. Takes two optional parameters:  
+allow_unicode  
+A boolean instructing the field to accept Unicode letters in addition to ASCII letters. Defaults to False. 
+  
+empty_value  
+The value to use to represent “empty”. Defaults to an empty string.

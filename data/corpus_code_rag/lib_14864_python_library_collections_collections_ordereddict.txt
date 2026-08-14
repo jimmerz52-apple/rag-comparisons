@@ -1,0 +1,16 @@
+# python.library.collections#collections.OrderedDict
+
+class collections.OrderedDict([items])  
+Return an instance of a dict subclass that has methods specialized for rearranging dictionary order.  New in version 3.1.   
+popitem(last=True)  
+The popitem() method for ordered dictionaries returns and removes a (key, value) pair. The pairs are returned in LIFO order if last is true or FIFO order if false. 
+  
+move_to_end(key, last=True)  
+Move an existing key to either end of an ordered dictionary. The item is moved to the right end if last is true (the default) or to the beginning if last is false. Raises KeyError if the key does not exist: >>> d = OrderedDict.fromkeys('abcde')
+>>> d.move_to_end('b')
+>>> ''.join(d.keys())
+'acdeb'
+>>> d.move_to_end('b', last=False)
+>>> ''.join(d.keys())
+'bacde'
+  New in version 3.2.

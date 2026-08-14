@@ -1,0 +1,10 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.comment
+
+comment(comment)[source]
+ 
+Add a comment to the output stream.  Parameters 
+ 
+commentstr
+
+
+Comment text.

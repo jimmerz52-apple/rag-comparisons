@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.headers
+
+headers  
+Holds an instance of the class specified by the MessageClass class variable. This instance parses and manages the headers in the HTTP request. The parse_headers() function from http.client is used to parse the headers and it requires that the HTTP request provide a valid RFC 2822 style header.

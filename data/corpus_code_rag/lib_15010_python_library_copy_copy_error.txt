@@ -1,0 +1,4 @@
+# python.library.copy#copy.Error
+
+exception copy.Error  
+Raised for module specific errors.

@@ -1,0 +1,5 @@
+# python.library.subprocess#subprocess.STARTUPINFO.dwFlags
+
+dwFlags  
+A bit field that determines whether certain STARTUPINFO attributes are used when the process creates a window. si = subprocess.STARTUPINFO()
+si.dwFlags = subprocess.STARTF_USESTDHANDLES | subprocess.STARTF_USESHOWWINDOW

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.Traversable
+
+class importlib.abc.Traversable  
+An object with a subset of pathlib.Path methods suitable for traversing directories and opening files.  New in version 3.9.

@@ -1,0 +1,5 @@
+# django.ref.models.options#django.db.models.Options.app_label
+
+Options.app_label  
+If a model is defined outside of an application in INSTALLED_APPS, it must declare which app it belongs to: app_label = 'myapp'
+ If you want to represent a model with the format app_label.object_name or app_label.model_name you can use model._meta.label or model._meta.label_lower respectively.

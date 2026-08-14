@@ -1,0 +1,4 @@
+# python.library.glob#glob.iglob
+
+glob.iglob(pathname, *, recursive=False)  
+Return an iterator which yields the same values as glob() without actually storing them all simultaneously. Raises an auditing event glob.glob with arguments pathname, recursive.

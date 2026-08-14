@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TextTestResult
+
+class unittest.TextTestResult(stream, descriptions, verbosity)  
+A concrete implementation of TestResult used by the TextTestRunner.  New in version 3.2: This class was previously named _TextTestResult. The old name still exists as an alias but is deprecated.

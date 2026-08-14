@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.unexpectedSuccesses
+
+unexpectedSuccesses  
+A list containing TestCase instances that were marked as expected failures, but succeeded.

@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.get_valid_name
+
+get_valid_name(name)  
+Returns a filename based on the name parameter that’s suitable for use on the target storage system.

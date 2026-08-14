@@ -1,0 +1,4 @@
+# python.library.logging#logging.info
+
+logging.info(msg, *args, **kwargs)  
+Logs a message with level INFO on the root logger. The arguments are interpreted as for debug().

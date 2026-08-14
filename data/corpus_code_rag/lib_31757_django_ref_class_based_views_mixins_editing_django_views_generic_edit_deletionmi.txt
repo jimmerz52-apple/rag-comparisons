@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.DeletionMixin.get_success_url
+
+get_success_url()  
+Returns the url to redirect to when the nominated object has been successfully deleted. Returns success_url by default.

@@ -1,0 +1,8 @@
+# python.library.inspect#inspect.Signature.from_callable
+
+classmethod from_callable(obj, *, follow_wrapped=True)  
+Return a Signature (or its subclass) object for a given callable obj. Pass follow_wrapped=False to get a signature of obj without unwrapping its __wrapped__ chain. This method simplifies subclassing of Signature: class MySignature(Signature):
+    pass
+sig = MySignature.from_callable(min)
+assert isinstance(sig, MySignature)
+  New in version 3.5.

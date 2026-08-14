@@ -1,0 +1,187 @@
+# matplotlib.text_api#matplotlib.text.Annotation
+
+classmatplotlib.text.Annotation(text, xy, xytext=None, xycoords='data', textcoords=None, arrowprops=None, annotation_clip=None, **kwargs)[source]
+ 
+Bases: matplotlib.text.Text, matplotlib.text._AnnotationBase An Annotation is a Text that can refer to a specific position xy. Optionally an arrow pointing from the text to xy can be drawn.  Attributes 
+ xy
+
+The annotated position.  xycoords
+
+The coordinate system for xy.  arrow_patch
+
+A FancyArrowPatch to point from xytext to xy.     Annotate the point xy with text text. In the simplest form, the text is placed at xy. Optionally, the text can be displayed in another position xytext. An arrow pointing from the text to the annotated point xy can then be added by defining arrowprops.  Parameters 
+ 
+textstr
+
+
+The text of the annotation.  
+xy(float, float)
+
+
+The point (x, y) to annotate. The coordinate system is determined by xycoords.  
+xytext(float, float), default: xy
+
+
+The position (x, y) to place the text at. The coordinate system is determined by textcoords.  
+xycoordsstr or Artist or Transform or callable or (float, float), default: 'data'
+
+
+The coordinate system that xy is given in. The following types of values are supported:  
+One of the following strings:   
+Value Description   
+'figure points' Points from the lower left of the figure  
+'figure pixels' Pixels from the lower left of the figure  
+'figure fraction' Fraction of figure from lower left  
+'subfigure points' Points from the lower left of the subfigure  
+'subfigure pixels' Pixels from the lower left of the subfigure  
+'subfigure fraction' Fraction of subfigure from lower left  
+'axes points' Points from lower left corner of axes  
+'axes pixels' Pixels from lower left corner of axes  
+'axes fraction' Fraction of axes from lower left  
+'data' Use the coordinate system of the object being annotated (default)  
+'polar' (theta, r) if not native 'data' coordinates   Note that 'subfigure pixels' and 'figure pixels' are the same for the parent figure, so users who want code that is usable in a subfigure can use 'subfigure pixels'.  An Artist: xy is interpreted as a fraction of the artist's Bbox. E.g. (0, 0) would be the lower left corner of the bounding box and (0.5, 1) would be the center top of the bounding box. A Transform to transform xy to screen coordinates. 
+A function with one of the following signatures: def transform(renderer) -> Bbox
+def transform(renderer) -> Transform
+ where renderer is a RendererBase subclass. The result of the function is interpreted like the Artist and Transform cases above.  A tuple (xcoords, ycoords) specifying separate coordinate systems for x and y. xcoords and ycoords must each be of one of the above described types.  See Advanced Annotations for more details.  
+textcoordsstr or Artist or Transform or callable or (float, float), default: value of xycoords
+
+
+The coordinate system that xytext is given in. All xycoords values are valid as well as the following strings:   
+Value Description   
+'offset points' Offset (in points) from the xy value  
+'offset pixels' Offset (in pixels) from the xy value    
+arrowpropsdict, optional
+
+
+The properties used to draw a FancyArrowPatch arrow between the positions xy and xytext. Defaults to None, i.e. no arrow is drawn. For historical reasons there are two different ways to specify arrows, "simple" and "fancy": Simple arrow: If arrowprops does not contain the key 'arrowstyle' the allowed keys are:   
+Key Description   
+width The width of the arrow in points  
+headwidth The width of the base of the arrow head in points  
+headlength The length of the arrow head in points  
+shrink Fraction of total length to shrink from both ends  
+? Any key to matplotlib.patches.FancyArrowPatch   The arrow is attached to the edge of the text box, the exact position (corners or centers) depending on where it's pointing to. Fancy arrow: This is used if 'arrowstyle' is provided in the arrowprops. Valid keys are the following FancyArrowPatch parameters:   
+Key Description   
+arrowstyle the arrow style  
+connectionstyle the connection style  
+relpos see below; default is (0.5, 0.5)  
+patchA default is bounding box of the text  
+patchB default is None  
+shrinkA default is 2 points  
+shrinkB default is 2 points  
+mutation_scale default is text size (in points)  
+mutation_aspect default is 1.  
+? any key for matplotlib.patches.PathPatch   The exact starting point position of the arrow is defined by relpos. It's a tuple of relative coordinates of the text box, where (0, 0) is the lower left corner and (1, 1) is the upper right corner. Values <0 and >1 are supported and specify points outside the text box. By default (0.5, 0.5) the starting point is centered in the text box.  
+annotation_clipbool or None, default: None
+
+
+Whether to draw the annotation when the annotation point xy is outside the axes area.  If True, the annotation will only be drawn when xy is within the axes. If False, the annotation will always be drawn. If None, the annotation will only be drawn when xy is within the axes and xycoords is 'data'.   **kwargs
+
+Additional kwargs are passed to Text.    Returns 
+ Annotation
+    See also  Advanced Annotations
+    propertyanncoords
+ 
+The coordinate system to use for Annotation.xyann. 
+   contains(event)[source]
+ 
+Return whether the mouse event occurred inside the axis-aligned bounding-box of the text. 
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   get_anncoords()[source]
+ 
+Return the coordinate system to use for Annotation.xyann. See also xycoords in Annotation. 
+   get_tightbbox(renderer)[source]
+ 
+Like Artist.get_window_extent, but includes any clipping.  Parameters 
+ 
+rendererRendererBase subclass
+
+
+renderer that will be used to draw the figures (i.e. fig.canvas.get_renderer())    Returns 
+ Bbox
+
+The enclosing bounding box (in figure pixel coordinates).     
+   get_window_extent(renderer=None)[source]
+ 
+Return the Bbox bounding the text, in display units. In addition to being used internally, this is useful for specifying clickable regions in a png file on a web page.  Parameters 
+ 
+rendererRenderer, optional
+
+
+A renderer is needed to compute the bounding box. If the artist has already been drawn, the renderer is cached; thus, it is only necessary to pass this argument when calling get_window_extent before the first draw. In practice, it is usually easier to trigger a draw first (e.g. by saving the figure).  
+dpifloat, optional
+
+
+The dpi value for computing the bbox, defaults to self.figure.dpi (not the renderer dpi); should be set e.g. if to match regions with a figure saved with a custom dpi value.     
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, anncoords=<UNSET>, annotation_clip=<UNSET>, backgroundcolor=<UNSET>, bbox=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, fontfamily=<UNSET>, fontproperties=<UNSET>, fontsize=<UNSET>, fontstretch=<UNSET>, fontstyle=<UNSET>, fontvariant=<UNSET>, fontweight=<UNSET>, gid=<UNSET>, horizontalalignment=<UNSET>, in_layout=<UNSET>, label=<UNSET>, linespacing=<UNSET>, math_fontfamily=<UNSET>, multialignment=<UNSET>, parse_math=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, position=<UNSET>, rasterized=<UNSET>, rotation=<UNSET>, rotation_mode=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, text=<UNSET>, transform=<UNSET>, transform_rotates_text=<UNSET>, url=<UNSET>, usetex=<UNSET>, verticalalignment=<UNSET>, visible=<UNSET>, wrap=<UNSET>, x=<UNSET>, y=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+anncoords unknown  
+annotation_clip bool or None  
+backgroundcolor color  
+bbox dict with properties for patches.FancyBboxPatch  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color or c color  
+figure unknown  
+fontfamily or family {FONTNAME, 'serif', 'sans-serif', 'cursive', 'fantasy', 'monospace'}  
+fontproperties or font or font_properties font_manager.FontProperties or str or pathlib.Path  
+fontsize or size float or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}  
+fontstretch or stretch {a numeric value in range 0-1000, 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded', 'ultra-expanded'}  
+fontstyle or style {'normal', 'italic', 'oblique'}  
+fontvariant or variant {'normal', 'small-caps'}  
+fontweight or weight {a numeric value in range 0-1000, 'ultralight', 'light', 'normal', 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'}  
+gid str  
+horizontalalignment or ha {'center', 'right', 'left'}  
+in_layout bool  
+label object  
+linespacing float (multiple of font size)  
+math_fontfamily str  
+multialignment or ma {'left', 'right', 'center'}  
+parse_math bool  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+position (float, float)  
+rasterized bool  
+rotation float or {'vertical', 'horizontal'}  
+rotation_mode {None, 'default', 'anchor'}  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+text object  
+transform Transform  
+transform_rotates_text bool  
+url str  
+usetex bool or None  
+verticalalignment or va {'center', 'top', 'bottom', 'baseline', 'center_baseline'}  
+visible bool  
+wrap bool  
+x float  
+y float  
+zorder float   
+   set_anncoords(coords)[source]
+ 
+Set the coordinate system to use for Annotation.xyann. See also xycoords in Annotation. 
+   set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure
+
+   
+   update_positions(renderer)[source]
+ 
+Update the pixel positions of the annotation text and the arrow patch. 
+   propertyxyann
+ 
+The text position. See also xytext in Annotation. 
+   propertyxycoords

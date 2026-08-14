@@ -1,0 +1,6 @@
+# python.library.winreg#winreg.ExpandEnvironmentStrings
+
+winreg.ExpandEnvironmentStrings(str)  
+Expands environment variable placeholders %NAME% in strings like REG_EXPAND_SZ: >>> ExpandEnvironmentStrings('%windir%')
+'C:\\Windows'
+ Raises an auditing event winreg.ExpandEnvironmentStrings with argument str.

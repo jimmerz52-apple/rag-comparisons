@@ -1,0 +1,61 @@
+# matplotlib._as_gen.matplotlib.colors.listedcolormap
+
+matplotlib.colors.ListedColormap   classmatplotlib.colors.ListedColormap(colors, name='from_list', N=None)[source]
+ 
+Bases: matplotlib.colors.Colormap Colormap object generated from a list of colors. This may be most useful when indexing directly into a colormap, but it can also be used to generate special colormaps for ordinary mapping.  Parameters 
+ 
+colorslist, array
+
+
+List of Matplotlib color specifications, or an equivalent Nx3 or Nx4 floating point array (N rgb or rgba values).  
+namestr, optional
+
+
+String to identify the colormap.  
+Nint, optional
+
+
+Number of entries in the map. The default is None, in which case there is one colormap entry for each element in the list of colors. If N < len(colors)
+ the list will be truncated at N. If N > len(colors)
+ the list will be extended by repetition.      Parameters 
+ 
+namestr
+
+
+The name of the colormap.  
+Nint
+
+
+The number of rgb quantization levels.       reversed(name=None)[source]
+ 
+Return a reversed instance of the Colormap.  Parameters 
+ 
+namestr, optional
+
+
+The name for the reversed colormap. If it's None the name will be the name of the parent colormap + "_r".    Returns 
+ ListedColormap
+
+A reversed instance of the colormap.     
+ 
+  Examples using matplotlib.colors.ListedColormap
+ 
+   Multicolored lines   
+
+   Layer Images   
+
+   QuadMesh Demo   
+
+   Histograms   
+
+   Time Series Histogram   
+
+   Nested pie charts   
+
+   Bar chart on polar axis   
+
+   Left ventricle bullseye   
+
+   Customized Colorbars Tutorial   
+
+   Creating Colormaps in Matplotlib

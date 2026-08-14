@@ -1,0 +1,4 @@
+# python.library.functools#functools.partial.keywords
+
+partial.keywords  
+The keyword arguments that will be supplied when the partial object is called.

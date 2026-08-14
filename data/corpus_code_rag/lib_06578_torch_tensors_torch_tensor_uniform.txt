@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.uniform_
+
+uniform_(from=0, to=1) → Tensor  
+Fills self tensor with numbers sampled from the continuous uniform distribution:  P(x)=1to−fromP(x) = \dfrac{1}{\text{to} - \text{from}}

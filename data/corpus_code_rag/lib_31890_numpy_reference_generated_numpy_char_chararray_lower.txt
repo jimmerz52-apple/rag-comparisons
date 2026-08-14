@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.lower
+
+numpy.char.chararray.lower method   char.chararray.lower()[source]
+ 
+Return an array with the elements of self converted to lowercase.  See also  char.lower

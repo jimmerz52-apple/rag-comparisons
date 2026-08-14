@@ -1,0 +1,4 @@
+# python.library.webbrowser#webbrowser.open_new
+
+webbrowser.open_new(url)  
+Open url in a new window of the default browser, if possible, otherwise, open url in the only browser window.

@@ -1,0 +1,6 @@
+# python.library.email.headerregistry#email.headerregistry.SingleAddressHeader
+
+class email.headerregistry.SingleAddressHeader  
+A subclass of AddressHeader that adds one additional attribute:  
+address  
+The single address encoded by the header value. If the header value actually contains more than one address (which would be a violation of the RFC under the default policy), accessing this attribute will result in a ValueError.

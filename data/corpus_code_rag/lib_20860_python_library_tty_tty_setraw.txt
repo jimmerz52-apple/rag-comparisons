@@ -1,0 +1,4 @@
+# python.library.tty#tty.setraw
+
+tty.setraw(fd, when=termios.TCSAFLUSH)  
+Change the mode of the file descriptor fd to raw. If when is omitted, it defaults to termios.TCSAFLUSH, and is passed to termios.tcsetattr().

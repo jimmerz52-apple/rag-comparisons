@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.linear_model.ridgeclassifier#sklearn.linear_model.RidgeClassifier.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit Ridge classifier model.  Parameters 
+ 
+X{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Training data.  
+yndarray of shape (n_samples,) 
+
+Target values.  
+sample_weightfloat or ndarray of shape (n_samples,), default=None 
+
+Individual weights for each sample. If given a float, every sample will have the same weight.  New in version 0.17: sample_weight support to Classifier.     Returns 
+ 
+selfobject 
+
+Instance of the estimator.

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.LineCollection.set_facecolors
+
+set_facecolors(c)[source]
+ 
+Alias for set_facecolor.

@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.geom_typeid
+
+GEOSGeometry.geom_typeid  
+Returns the GEOS geometry type identification number. The following table shows the value for each geometry type:   
+Geometry ID   
+Point 0  
+LineString 1  
+LinearRing 2  
+Polygon 3  
+MultiPoint 4  
+MultiLineString 5  
+MultiPolygon 6  
+GeometryCollection 7

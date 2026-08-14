@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.poly1d.deriv
+
+numpy.poly1d.deriv method   poly1d.deriv(m=1)[source]
+ 
+Return a derivative of this polynomial. Refer to polyder for full documentation.  See also  polyder
+
+equivalent function

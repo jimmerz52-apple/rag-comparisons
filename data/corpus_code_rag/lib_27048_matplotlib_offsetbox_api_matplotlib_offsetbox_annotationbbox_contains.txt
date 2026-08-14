@@ -1,0 +1,18 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnnotationBbox.contains
+
+contains(mouseevent)[source]
+ 
+Test whether the artist contains the mouse event.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details.

@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.mode
+
+mode  
+A read-only property for the mode of a normal distribution.

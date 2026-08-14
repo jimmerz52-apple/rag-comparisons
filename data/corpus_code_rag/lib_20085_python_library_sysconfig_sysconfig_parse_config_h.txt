@@ -1,0 +1,4 @@
+# python.library.sysconfig#sysconfig.parse_config_h
+
+sysconfig.parse_config_h(fp[, vars])  
+Parse a config.h-style file. fp is a file-like object pointing to the config.h-like file. A dictionary containing name/value pairs is returned. If an optional dictionary is passed in as the second argument, it is used instead of a new dictionary, and updated with the values read in the file.

@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogitFormatter.set_minor_threshold
+
+set_minor_threshold(minor_threshold)[source]
+ 
+Set the threshold for labelling minors ticks.  Parameters 
+ 
+minor_thresholdint
+
+
+Maximum number of locations for labelling some minor ticks. This parameter have no effect if minor is False.

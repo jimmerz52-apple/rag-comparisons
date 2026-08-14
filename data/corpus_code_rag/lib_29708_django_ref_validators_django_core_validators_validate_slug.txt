@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.validate_slug
+
+validate_slug  
+A RegexValidator instance that ensures a value consists of only letters, numbers, underscores or hyphens.

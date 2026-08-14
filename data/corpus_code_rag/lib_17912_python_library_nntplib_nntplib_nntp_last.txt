@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.last
+
+NNTP.last()  
+Send a LAST command. Return as for stat().

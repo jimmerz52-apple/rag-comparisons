@@ -1,0 +1,5 @@
+# flask.api.index#flask.ctx.RequestContext.push
+
+push()  
+Binds the request context to the current context.  Return type 
+None

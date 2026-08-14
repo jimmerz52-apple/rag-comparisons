@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.multinomial
+
+torch.distributions.constraints.multinomial  
+alias of torch.distributions.constraints._Multinomial

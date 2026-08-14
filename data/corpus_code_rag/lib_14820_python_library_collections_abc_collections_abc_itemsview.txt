@@ -1,0 +1,7 @@
+# python.library.collections.abc#collections.abc.ItemsView
+
+class collections.abc.MappingView  
+class collections.abc.ItemsView  
+class collections.abc.KeysView  
+class collections.abc.ValuesView  
+ABCs for mapping, items, keys, and values views.

@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.Parser.parse
+
+parse(fp, headersonly=False)  
+Read all the data from the text-mode file-like object fp, parse the resulting text, and return the root message object. fp must support both the readline() and the read() methods on file-like objects. Other than the text mode requirement, this method operates like BytesParser.parse().

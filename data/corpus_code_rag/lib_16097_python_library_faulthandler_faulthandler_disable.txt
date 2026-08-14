@@ -1,0 +1,4 @@
+# python.library.faulthandler#faulthandler.disable
+
+faulthandler.disable()  
+Disable the fault handler: uninstall the signal handlers installed by enable().

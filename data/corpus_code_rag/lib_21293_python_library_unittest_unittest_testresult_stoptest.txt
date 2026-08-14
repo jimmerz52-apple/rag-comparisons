@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.stopTest
+
+stopTest(test)  
+Called after the test case test has been executed, regardless of the outcome.

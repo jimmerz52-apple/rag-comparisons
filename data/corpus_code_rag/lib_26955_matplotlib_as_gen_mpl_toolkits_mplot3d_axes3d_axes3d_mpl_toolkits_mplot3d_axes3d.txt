@@ -1,0 +1,14 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.mouse_init
+
+mouse_init(rotate_btn=1, zoom_btn=3)[source]
+ 
+Set the mouse buttons for 3D rotation and zooming.  Parameters 
+ 
+rotate_btnint or list of int, default: 1
+
+
+The mouse button or buttons to use for 3D rotation of the axes.  
+zoom_btnint or list of int, default: 3
+
+
+The mouse button or buttons to use to zoom the 3D axes.

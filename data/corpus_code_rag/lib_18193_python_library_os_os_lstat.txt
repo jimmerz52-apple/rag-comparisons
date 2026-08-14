@@ -1,0 +1,5 @@
+# python.library.os#os.lstat
+
+os.lstat(path, *, dir_fd=None)  
+Perform the equivalent of an lstat() system call on the given path. Similar to stat(), but does not follow symbolic links. Return a stat_result object. On platforms that do not support symbolic links, this is an alias for stat(). As of Python 3.3, this is equivalent to os.stat(path, dir_fd=dir_fd,
+follow_symlinks=False). This function can also support paths relative to directory descriptors.  See also The stat() function.   Changed in version 3.2: Added support for Windows 6.0 (Vista) symbolic links.   Changed in version 3.3: Added the dir_fd parameter.   Changed in version 3.6: Accepts a path-like object.   Changed in version 3.8: On Windows, now opens reparse points that represent another path (name surrogates), including symbolic links and directory junctions. Other kinds of reparse points are resolved by the operating system as for stat().

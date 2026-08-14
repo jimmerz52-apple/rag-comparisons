@@ -1,0 +1,4 @@
+# python.library.os#os.POSIX_SPAWN_DUP2
+
+os.POSIX_SPAWN_DUP2  
+(os.POSIX_SPAWN_DUP2, fd, new_fd) Performs os.dup2(fd, new_fd).

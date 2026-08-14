@@ -1,0 +1,3 @@
+# django.ref.contrib.staticfiles#django.contrib.staticfiles.storage.ManifestStaticFilesStorage.file_hash
+
+storage.ManifestStaticFilesStorage.file_hash(name, content=None)

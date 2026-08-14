@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.offset
+
+offset  
+start index of operation within bytecode sequence

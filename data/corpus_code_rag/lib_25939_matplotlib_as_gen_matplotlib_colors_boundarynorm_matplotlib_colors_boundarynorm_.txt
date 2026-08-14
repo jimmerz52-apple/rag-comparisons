@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.colors.boundarynorm#matplotlib.colors.BoundaryNorm.inverse
+
+inverse(value)[source]
+ 
+ Raises 
+ ValueError
+
+BoundaryNorm is not invertible, so calling this method will always raise an error

@@ -1,0 +1,12 @@
+# python.library.importlib#importlib.abc.MetaPathFinder
+
+class importlib.abc.MetaPathFinder  
+An abstract base class representing a meta path finder. For compatibility, this is a subclass of Finder.  New in version 3.3.   
+find_spec(fullname, path, target=None)  
+An abstract method for finding a spec for the specified module. If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a spec cannot be found, None is returned. When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return. importlib.util.spec_from_loader() may be useful for implementing concrete MetaPathFinders.  New in version 3.4.  
+  
+find_module(fullname, path)  
+A legacy method for finding a loader for the specified module. If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a loader cannot be found, None is returned. If find_spec() is defined, backwards-compatible functionality is provided.  Changed in version 3.4: Returns None when called instead of raising NotImplementedError. Can use find_spec() to provide functionality.   Deprecated since version 3.4: Use find_spec() instead.  
+  
+invalidate_caches()  
+An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.invalidate_caches() when invalidating the caches of all finders on sys.meta_path.  Changed in version 3.4: Returns None when called instead of NotImplemented.

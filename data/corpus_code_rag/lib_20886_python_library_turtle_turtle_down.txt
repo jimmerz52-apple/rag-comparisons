@@ -1,0 +1,6 @@
+# python.library.turtle#turtle.down
+
+turtle.pendown()  
+turtle.pd()  
+turtle.down()  
+Pull the pen down – drawing when moving.

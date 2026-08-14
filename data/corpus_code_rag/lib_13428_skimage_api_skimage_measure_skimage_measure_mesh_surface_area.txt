@@ -1,0 +1,22 @@
+# skimage.api.skimage.measure#skimage.measure.mesh_surface_area
+
+skimage.measure.mesh_surface_area(verts, faces) [source]
+ 
+Compute surface area, given vertices & triangular faces  Parameters 
+ 
+verts(V, 3) array of floats 
+
+Array containing (x, y, z) coordinates for V unique mesh vertices.  
+faces(F, 3) array of ints 
+
+List of length-3 lists of integers, referencing vertex coordinates as provided in verts    Returns 
+ 
+areafloat 
+
+Surface area of mesh. Units now [coordinate units] ** 2.      See also  
+skimage.measure.marching_cubes
+
+
+skimage.measure.marching_cubes_classic
+
+  Notes The arguments expected by this function are the first two outputs from skimage.measure.marching_cubes. For unit correct output, ensure correct spacing was passed to skimage.measure.marching_cubes. This algorithm works properly only if the faces provided are all triangles.

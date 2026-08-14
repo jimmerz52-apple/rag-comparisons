@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.after_app_request
+
+after_app_request(f)  
+Like Flask.after_request() but for a blueprint. Such a function is executed after each request, even if outside of the blueprint.  Parameters 
+f (Callable[[Response], Response]) –   Return type 
+Callable[[Response], Response]

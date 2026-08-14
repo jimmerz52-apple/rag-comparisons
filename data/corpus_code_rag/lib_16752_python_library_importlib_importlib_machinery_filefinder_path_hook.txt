@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.FileFinder.path_hook
+
+classmethod path_hook(*loader_details)  
+A class method which returns a closure for use on sys.path_hooks. An instance of FileFinder is returned by the closure using the path argument given to the closure directly and loader_details indirectly. If the argument to the closure is not an existing directory, ImportError is raised.

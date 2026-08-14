@@ -1,0 +1,4 @@
+# django.ref.contrib.flatpages#django.contrib.flatpages.sitemaps.FlatPageSitemap
+
+class FlatPageSitemap  
+The sitemaps.FlatPageSitemap class looks at all publicly visible flatpages defined for the current SITE_ID (see the sites documentation) and creates an entry in the sitemap. These entries include only the location attribute – not lastmod, changefreq or priority.

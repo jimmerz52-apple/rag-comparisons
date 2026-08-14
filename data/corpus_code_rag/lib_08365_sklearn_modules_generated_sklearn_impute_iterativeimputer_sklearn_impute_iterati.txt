@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.impute.iterativeimputer#sklearn.impute.IterativeImputer.transform
+
+transform(X) [source]
+ 
+Imputes all missing values in X. Note that this is stochastic, and that if random_state is not fixed, repeated calls, or permuted input, will yield different results.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input data to complete.    Returns 
+ 
+Xtarray-like, shape (n_samples, n_features) 
+
+The imputed input data.

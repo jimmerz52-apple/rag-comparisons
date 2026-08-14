@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.SaveFileDialog.ok_command
+
+ok_command()  
+Test whether or not the selection points to a valid file that is not a directory. Confirmation is required if an already existing file is selected.

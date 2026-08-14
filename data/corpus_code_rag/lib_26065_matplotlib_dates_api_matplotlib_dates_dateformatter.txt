@@ -1,0 +1,18 @@
+# matplotlib.dates_api#matplotlib.dates.DateFormatter
+
+classmatplotlib.dates.DateFormatter(fmt, tz=None, *, usetex=None)[source]
+ 
+Bases: matplotlib.ticker.Formatter Format a tick (in days since the epoch) with a strftime format string.  Parameters 
+ 
+fmtstr
+
+
+strftime format string  
+tzdatetime.tzinfo, default: rcParams["timezone"] (default: 'UTC')
+
+
+Ticks timezone.  
+usetexbool, default: rcParams["text.usetex"] (default: False)
+
+
+To enable/disable the use of TeX's math mode for rendering the results of the formatter.       set_tzinfo(tz)[source]

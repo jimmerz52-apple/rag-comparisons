@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.FigureCanvasPgf.print_pgf
+
+print_pgf(fname_or_fh, **kwargs)[source]
+ 
+Output pgf macros for drawing the figure so it can be included and rendered in latex documents.

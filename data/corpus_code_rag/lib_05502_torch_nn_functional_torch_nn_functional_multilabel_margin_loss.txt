@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.multilabel_margin_loss
+
+torch.nn.functional.multilabel_margin_loss(input, target, size_average=None, reduce=None, reduction='mean') → Tensor [source]
+ 
+See MultiLabelMarginLoss for details.

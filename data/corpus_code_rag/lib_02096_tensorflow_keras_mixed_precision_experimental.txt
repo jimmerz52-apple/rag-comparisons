@@ -1,0 +1,3 @@
+# tensorflow.keras.mixed_precision.experimental
+
+Module: tf.keras.mixed_precision.experimental Public API for tf.keras.mixed_precision.experimental namespace. Classes class LossScaleOptimizer: An deprecated optimizer that applies loss scaling. class Policy: A deprecated dtype policy for a Keras layer. Functions get_layer_policy(...): Returns the dtype policy of a layer. global_policy(...): Returns the global dtype policy. set_policy(...): Sets the global dtype policy.

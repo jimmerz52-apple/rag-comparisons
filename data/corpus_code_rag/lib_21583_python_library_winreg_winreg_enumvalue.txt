@@ -1,0 +1,8 @@
+# python.library.winreg#winreg.EnumValue
+
+winreg.EnumValue(key, index)  
+Enumerates values of an open registry key, returning a tuple. key is an already open key, or one of the predefined HKEY_* constants. index is an integer that identifies the index of the value to retrieve. The function retrieves the name of one subkey each time it is called. It is typically called repeatedly, until an OSError exception is raised, indicating no more values. The result is a tuple of 3 items:   
+Index Meaning   
+0 A string that identifies the value name  
+1 An object that holds the value data, and whose type depends on the underlying registry type  
+2 An integer that identifies the type of the value data (see table in docs for SetValueEx())   Raises an auditing event winreg.EnumValue with arguments key, index.  Changed in version 3.3: See above.

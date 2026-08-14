@@ -1,0 +1,13 @@
+# tensorflow.lite.representativedataset
+
+tf.lite.RepresentativeDataset     View source on GitHub    Representative dataset to evaluate optimizations.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.lite.RepresentativeDataset  
+tf.lite.RepresentativeDataset(
+    input_gen
+)
+ A representative dataset that can be used to evaluate optimizations by the converter. E.g. converter can use these examples to estimate (min, max) ranges by calibrating the model on inputs. This can allow converter to quantize a converted floating point model.
+ 
+
+
+ Args
+  input_gen   an input generator that can be used to generate input samples for the model. This must be a callable object that returns an object that supports the iter() protocol (e.g. a generator function). The elements generated must have same type and shape as inputs to the model.

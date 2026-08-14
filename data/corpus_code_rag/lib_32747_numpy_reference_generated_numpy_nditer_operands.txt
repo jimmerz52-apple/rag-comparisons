@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.operands
+
+numpy.nditer.operands attribute   nditer.operands
+ 
+operands[Slice] The array(s) to be iterated over. Valid only before the iterator is closed.

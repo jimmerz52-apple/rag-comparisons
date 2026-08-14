@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.storlines
+
+FTP.storlines(cmd, fp, callback=None)  
+Store a file in line mode. cmd should be an appropriate STOR command (see storbinary()). Lines are read until EOF from the file object fp (opened in binary mode) using its readline() method to provide the data to be stored. callback is an optional single parameter callable that is called on each line after it is sent.

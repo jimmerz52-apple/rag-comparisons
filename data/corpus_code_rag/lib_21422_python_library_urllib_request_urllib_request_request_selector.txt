@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.selector
+
+Request.selector  
+The URI path. If the Request uses a proxy, then selector will be the full URL that is passed to the proxy.

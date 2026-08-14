@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_aspect
+
+matplotlib.axes.Axes.get_aspect   Axes.get_aspect()[source]
+ 
+Return the aspect ratio of the axes scaling. This is either "auto" or a float giving the ratio of y/x-scale.

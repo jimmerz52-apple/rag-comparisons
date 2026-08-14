@@ -1,0 +1,4 @@
+# python.library.queue#queue.Queue.get_nowait
+
+Queue.get_nowait()  
+Equivalent to get(False).

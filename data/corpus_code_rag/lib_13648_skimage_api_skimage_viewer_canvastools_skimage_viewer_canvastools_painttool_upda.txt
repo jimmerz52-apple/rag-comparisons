@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.PaintTool.update_cursor
+
+update_cursor(x, y) [source]

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.BaseDeleteView
+
+class django.views.generic.edit.BaseDeleteView  
+A base view for deleting an object instance. It is not intended to be used directly, but rather as a parent class of the django.views.generic.edit.DeleteView. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.edit.DeletionMixin django.views.generic.edit.FormMixin django.views.generic.detail.BaseDetailView   Changed in Django 4.0: In older versions, BaseDeleteView does not inherit from FormMixin.

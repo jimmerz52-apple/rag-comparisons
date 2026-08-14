@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.is_color_like
+
+matplotlib.colors.is_color_like   matplotlib.colors.is_color_like(c)[source]
+ 
+Return whether c can be interpreted as an RGB(A) color.

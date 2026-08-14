@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.continuous_bernoulli.ContinuousBernoulli.support
+
+support = Interval(lower_bound=0.0, upper_bound=1.0)

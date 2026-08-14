@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.NavigationToolbar2.drag_zoom
+
+drag_zoom(event)[source]
+ 
+Callback for dragging in zoom mode.

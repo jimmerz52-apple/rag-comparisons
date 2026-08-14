@@ -1,0 +1,7 @@
+# numpy.reference.arrays.scalars#numpy.ushort
+
+class numpy.ushort[source]
+ 
+Unsigned integer type, compatible with C unsigned short.  Character code 
+'H'  Alias on this platform (Linux x86_64) 
+numpy.uint16: 16-bit unsigned integer (0 to 65_535).

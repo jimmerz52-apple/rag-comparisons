@@ -1,0 +1,4 @@
+# python.library.csv#csv.QUOTE_NONNUMERIC
+
+csv.QUOTE_NONNUMERIC  
+Instructs writer objects to quote all non-numeric fields. Instructs the reader to convert all non-quoted fields to type float.

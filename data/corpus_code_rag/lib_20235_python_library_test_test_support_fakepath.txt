@@ -1,0 +1,4 @@
+# python.library.test#test.support.FakePath
+
+class test.support.FakePath(path)  
+Simple path-like object. It implements the __fspath__() method which just returns the path argument. If path is an exception, it will be raised in __fspath__().

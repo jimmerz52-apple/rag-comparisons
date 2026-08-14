@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.util.resolve_name
+
+importlib.util.resolve_name(name, package)  
+Resolve a relative module name to an absolute one. If name has no leading dots, then name is simply returned. This allows for usage such as importlib.util.resolve_name('sys', __spec__.parent) without doing a check to see if the package argument is needed. ImportError is raised if name is a relative module name but package is a false value (e.g. None or the empty string). ImportError is also raised a relative name would escape its containing package (e.g. requesting ..bacon from within the spam package).  New in version 3.3.   Changed in version 3.9: To improve consistency with import statements, raise ImportError instead of ValueError for invalid relative import attempts.

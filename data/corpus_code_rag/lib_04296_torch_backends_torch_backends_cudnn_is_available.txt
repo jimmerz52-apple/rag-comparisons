@@ -1,0 +1,5 @@
+# torch.backends#torch.backends.cudnn.is_available
+
+torch.backends.cudnn.is_available() [source]
+ 
+Returns a bool indicating if CUDNN is currently available.

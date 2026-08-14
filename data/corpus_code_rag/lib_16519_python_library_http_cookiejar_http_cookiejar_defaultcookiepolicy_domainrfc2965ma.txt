@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.DomainRFC2965Match
+
+DefaultCookiePolicy.DomainRFC2965Match  
+When setting cookies, require a full RFC 2965 domain-match.

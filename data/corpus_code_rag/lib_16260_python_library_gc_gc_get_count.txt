@@ -1,0 +1,5 @@
+# python.library.gc#gc.get_count
+
+gc.get_count()  
+Return the current collection counts as a tuple of (count0, count1,
+count2).

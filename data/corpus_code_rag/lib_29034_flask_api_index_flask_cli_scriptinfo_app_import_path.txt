@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.ScriptInfo.app_import_path
+
+app_import_path  
+Optionally the import path for the Flask application.

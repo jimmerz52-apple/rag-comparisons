@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.UnimplementedFileMode
+
+exception http.client.UnimplementedFileMode  
+A subclass of HTTPException.

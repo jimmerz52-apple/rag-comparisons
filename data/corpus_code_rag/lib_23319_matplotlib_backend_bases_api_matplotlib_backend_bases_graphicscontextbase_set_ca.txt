@@ -1,0 +1,7 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_capstyle
+
+set_capstyle(cs)[source]
+ 
+Set how to draw endpoints of lines.  Parameters 
+ 
+csCapStyle or {'butt', 'projecting', 'round'}

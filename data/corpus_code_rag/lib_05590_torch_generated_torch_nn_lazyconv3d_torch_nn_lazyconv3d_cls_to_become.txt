@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.lazyconv3d#torch.nn.LazyConv3d.cls_to_become
+
+cls_to_become  
+alias of Conv3d

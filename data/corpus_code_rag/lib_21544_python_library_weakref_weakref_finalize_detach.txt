@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.finalize.detach
+
+detach()  
+If self is alive then mark it as dead and return the tuple (obj, func, args, kwargs). If self is dead then return None.

@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolHandles.set_data
+
+set_data(pts, y=None)[source]
+ 
+Set x and y positions of handles.

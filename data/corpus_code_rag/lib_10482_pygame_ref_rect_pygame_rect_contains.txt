@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.contains
+
+contains() 
+ test if one rectangle is inside another contains(Rect) -> bool  Returns true when the argument is completely inside the Rect.

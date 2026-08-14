@@ -1,0 +1,12 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.delete_cookie
+
+delete_cookie(key, path='/', domain=None, secure=False, httponly=False, samesite=None)  
+Delete a cookie. Fails silently if key doesn’t exist.  Parameters 
+ 
+key (str) – the key (name) of the cookie to be deleted. 
+path (str) – if the cookie that should be deleted was limited to a path, the path has to be defined here. 
+domain (Optional[str]) – if the cookie that should be deleted was limited to a domain, that domain has to be defined here. 
+secure (bool) – If True, the cookie will only be available via HTTPS. 
+httponly (bool) – Disallow JavaScript access to the cookie. 
+samesite (Optional[str]) – Limit the scope of the cookie to only be attached to requests that are “same-site”.   Return type 
+None

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.join
+
+numpy.char.chararray.join method   char.chararray.join(seq)[source]
+ 
+Return a string which is the concatenation of the strings in the sequence seq.  See also  char.join

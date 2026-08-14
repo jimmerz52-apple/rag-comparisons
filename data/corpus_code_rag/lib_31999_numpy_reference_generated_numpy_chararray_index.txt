@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.index
+
+numpy.chararray.index method   chararray.index(sub, start=0, end=None)[source]
+ 
+Like find, but raises ValueError when the substring is not found.  See also  char.index

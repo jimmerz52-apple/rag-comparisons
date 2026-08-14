@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.int32dtype
+
+pandas.Int32Dtype   classpandas.Int32Dtype[source]
+ 
+An ExtensionDtype for int32 integer data.  Changed in version 1.0.0: Now uses pandas.NA as its missing value, rather than numpy.nan.  Attributes       
+None     Methods       
+None

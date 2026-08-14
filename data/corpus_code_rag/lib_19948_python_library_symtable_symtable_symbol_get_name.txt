@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.get_name
+
+get_name()  
+Return the symbol’s name.

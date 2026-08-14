@@ -1,0 +1,4 @@
+# python.library.imghdr#imghdr.tests
+
+imghdr.tests  
+A list of functions performing the individual tests. Each function takes two arguments: the byte-stream and an open file-like object. When what() is called with a byte-stream, the file-like object will be None. The test function should return a string describing the image type if the test succeeded, or None if it failed.

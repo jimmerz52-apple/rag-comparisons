@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.has_key
+
+has_key(key)  
+ Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use key in data instead.

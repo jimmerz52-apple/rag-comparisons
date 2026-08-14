@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.get_folder
+
+get_folder(folder)  
+Return an MH instance representing the folder whose name is folder. A NoSuchMailboxError exception is raised if the folder does not exist.

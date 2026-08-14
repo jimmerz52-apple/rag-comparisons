@@ -1,0 +1,8 @@
+# torch.data#torch.utils.data.SubsetRandomSampler
+
+class torch.utils.data.SubsetRandomSampler(indices, generator=None) [source]
+ 
+Samples elements randomly from a given list of indices, without replacement.  Parameters 
+ 
+indices (sequence) – a sequence of indices 
+generator (Generator) – Generator used in sampling.

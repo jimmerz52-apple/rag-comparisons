@@ -1,0 +1,5 @@
+# matplotlib.cm_api#matplotlib.cm.ScalarMappable.colorbar
+
+colorbar
+ 
+The last colorbar associated with this ScalarMappable. May be None.

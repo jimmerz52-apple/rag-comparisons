@@ -1,0 +1,12 @@
+# django.ref.forms.widgets#django.forms.CheckboxSelectMultiple
+
+class CheckboxSelectMultiple  
+ 
+template_name: 'django/forms/widgets/checkbox_select.html'
+ 
+option_template_name: 'django/forms/widgets/checkbox_option.html'
+  Similar to SelectMultiple, but rendered as a list of checkboxes: <div>
+  <div><input type="checkbox" name="..." ></div>
+  ...
+</div>
+ The outer <div> container receives the id attribute of the widget, if defined, or BoundField.auto_id otherwise.  Changed in Django 4.0: So they are announced more concisely by screen readers, checkboxes were changed to render in <div> tags.

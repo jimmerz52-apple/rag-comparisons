@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseNotFound
+
+class HttpResponseNotFound  
+Acts just like HttpResponse but uses a 404 status code.

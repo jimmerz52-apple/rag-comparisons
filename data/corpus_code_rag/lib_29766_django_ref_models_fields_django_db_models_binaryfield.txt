@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.BinaryField
+
+class BinaryField(max_length=None, **options)

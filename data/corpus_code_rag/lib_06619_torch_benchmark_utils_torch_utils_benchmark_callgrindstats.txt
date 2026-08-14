@@ -1,0 +1,27 @@
+# torch.benchmark_utils#torch.utils.benchmark.CallgrindStats
+
+class torch.utils.benchmark.CallgrindStats(task_spec, number_per_run, built_with_debug_symbols, baseline_inclusive_stats, baseline_exclusive_stats, stmt_inclusive_stats, stmt_exclusive_stats) [source]
+ 
+Top level container for Callgrind results collected by Timer. Manipulation is generally done using the FunctionCounts class, which is obtained by calling CallgrindStats.stats(…). Several convenience methods are provided as well; the most significant is CallgrindStats.as_standardized().  
+as_standardized() [source]
+ 
+Strip library names and some prefixes from function strings. When comparing two different sets of instruction counts, on stumbling block can be path prefixes. Callgrind includes the full filepath when reporting a function (as it should). However, this can cause issues when diffing profiles. If a key component such as Python or PyTorch was built in separate locations in the two profiles, which can result in something resembling: 23234231 /tmp/first_build_dir/thing.c:foo(...)
+ 9823794 /tmp/first_build_dir/thing.c:bar(...)
+  ...
+   53453 .../aten/src/Aten/...:function_that_actually_changed(...)
+  ...
+ -9823794 /tmp/second_build_dir/thing.c:bar(...)
+-23234231 /tmp/second_build_dir/thing.c:foo(...)
+ Stripping prefixes can ameliorate this issue by regularizing the strings and causing better cancellation of equivilent call sites when diffing. 
+  
+counts(*, denoise=False) [source]
+ 
+Returns the total number of instructions executed. See FunctionCounts.denoise() for an explation of the denoise arg. 
+  
+delta(other, inclusive=False, subtract_baselines=True) [source]
+ 
+Diff two sets of counts. One common reason to collect instruction counts is to determine the the effect that a particular change will have on the number of instructions needed to perform some unit of work. If a change increases that number, the next logical question is “why”. This generally involves looking at what part if the code increased in instruction count. This function automates that process so that one can easily diff counts on both an inclusive and exclusive basis. The subtract_baselines argument allows one to disable baseline correction, though in most cases it shouldn’t matter as the baselines are expected to more or less cancel out. 
+  
+stats(inclusive=False) [source]
+ 
+Returns detailed function counts. Conceptually, the FunctionCounts returned can be thought of as a tuple of (count, path_and_function_name) tuples. inclusive matches the semantics of callgrind. If True, the counts include instructions executed by children. inclusive=True is useful for identifying hot spots in code; inclusive=False is useful for reducing noise when diffing counts from two different runs. (See CallgrindStats.delta(…) for more details)

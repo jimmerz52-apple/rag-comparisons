@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.set_italic
+
+set_italic() 
+ enable fake rendering of italic text set_italic(bool) -> None  Enables fake rendering of italic text. This is a fake skewing of the font that doesn't look good on many font types. If possible load the font from a real italic font file. While italic the font will have a different width than when normal. This can be mixed with the bold and underline modes.  Note This is the same as the italic attribute.

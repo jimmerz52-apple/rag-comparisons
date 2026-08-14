@@ -1,0 +1,4 @@
+# flask.config.index#JSONIFY_PRETTYPRINT_REGULAR
+
+JSONIFY_PRETTYPRINT_REGULAR  
+jsonify responses will be output with newlines, spaces, and indentation for easier reading by humans. Always enabled in debug mode. Default: False

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.hasAttributeNS
+
+Element.hasAttributeNS(namespaceURI, localName)  
+Return True if the element has an attribute named by namespaceURI and localName.

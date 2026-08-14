@@ -1,0 +1,6 @@
+# django.topics.auth.customizing#django.contrib.auth.models.BaseUserManager.make_random_password
+
+make_random_password(length=10, allowed_chars='abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789')  
+Returns a random password with the given length and given string of allowed characters. Note that the default value of allowed_chars doesn’t contain letters that can cause user confusion, including:  
+i, l, I, and 1 (lowercase letter i, lowercase letter L, uppercase letter i, and the number one) 
+o, O, and 0 (lowercase letter o, uppercase letter o, and zero)

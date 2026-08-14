@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredDirty.change_layer
+
+change_layer() 
+ changes the layer of the sprite change_layer(sprite, new_layer) -> None  sprite must have been added to the renderer. It is not checked.

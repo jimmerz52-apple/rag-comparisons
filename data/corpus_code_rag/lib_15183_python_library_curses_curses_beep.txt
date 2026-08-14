@@ -1,0 +1,4 @@
+# python.library.curses#curses.beep
+
+curses.beep()  
+Emit a short attention sound.

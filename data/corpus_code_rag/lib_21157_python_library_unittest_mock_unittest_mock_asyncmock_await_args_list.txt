@@ -1,0 +1,15 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.await_args_list
+
+await_args_list  
+This is a list of all the awaits made to the mock object in sequence (so the length of the list is the number of times it has been awaited). Before any awaits have been made it is an empty list. >>> mock = AsyncMock()
+>>> async def main(*args):
+...     await mock(*args)
+...
+>>> mock.await_args_list
+[]
+>>> asyncio.run(main('foo'))
+>>> mock.await_args_list
+[call('foo')]
+>>> asyncio.run(main('bar'))
+>>> mock.await_args_list
+[call('foo'), call('bar')]

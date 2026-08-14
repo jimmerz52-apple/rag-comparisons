@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.metagraphdef.metainfodef.functionaliasesentry
+
+tf.compat.v1.MetaGraphDef.MetaInfoDef.FunctionAliasesEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   string value

@@ -1,0 +1,5 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.get_canvas_width_height
+
+get_canvas_width_height()[source]
+ 
+Return the canvas width and height in display coords.

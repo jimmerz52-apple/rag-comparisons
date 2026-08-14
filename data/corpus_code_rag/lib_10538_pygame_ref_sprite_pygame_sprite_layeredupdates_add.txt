@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.add
+
+add() 
+ add a sprite or sequence of sprites to a group add(*sprites, **kwargs) -> None  If the sprite(s) have an attribute layer then that is used for the layer. If **kwargs contains 'layer' then the sprite(s) will be added to that argument (overriding the sprite layer attribute). If neither is passed then the sprite(s) will be added to the default layer.

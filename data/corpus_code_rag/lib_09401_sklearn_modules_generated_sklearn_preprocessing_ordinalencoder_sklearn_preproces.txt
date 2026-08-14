@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.ordinalencoder#sklearn.preprocessing.OrdinalEncoder.fit
+
+fit(X, y=None) [source]
+ 
+Fit the OrdinalEncoder to X.  Parameters 
+ 
+Xarray-like, shape [n_samples, n_features] 
+
+The data to determine the categories of each feature.  
+yNone 
+
+Ignored. This parameter exists only for compatibility with Pipeline.    Returns 
+ self

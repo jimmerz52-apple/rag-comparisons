@@ -1,0 +1,4 @@
+# python.library.test#test.support.print_warning
+
+test.support.print_warning(msg)  
+Print a warning into sys.__stderr__. Format the message as: f"Warning -- {msg}". If msg is made of multiple lines, add "Warning -- " prefix to each line.  New in version 3.9.

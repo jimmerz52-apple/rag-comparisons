@@ -1,0 +1,4 @@
+# python.library.heapq#heapq.heapify
+
+heapq.heapify(x)  
+Transform list x into a heap, in-place, in linear time.

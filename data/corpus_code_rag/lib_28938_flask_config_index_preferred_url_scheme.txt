@@ -1,0 +1,4 @@
+# flask.config.index#PREFERRED_URL_SCHEME
+
+PREFERRED_URL_SCHEME  
+Use this scheme for generating external URLs when not in a request context. Default: 'http'

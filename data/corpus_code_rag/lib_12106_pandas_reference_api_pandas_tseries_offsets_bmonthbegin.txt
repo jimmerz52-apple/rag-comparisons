@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.bmonthbegin
+
+pandas.tseries.offsets.BMonthBegin   pandas.tseries.offsets.BMonthBegin
+ 
+alias of pandas._libs.tslibs.offsets.BusinessMonthBegin

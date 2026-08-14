@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.SafeExceptionReporterFilter.get_post_parameters
+
+get_post_parameters(request)  
+Returns the filtered dictionary of POST parameters. Sensitive values are replaced with cleansed_substitute.

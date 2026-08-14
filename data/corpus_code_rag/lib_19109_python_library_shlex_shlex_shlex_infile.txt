@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.infile
+
+shlex.infile  
+The name of the current input file, as initially set at class instantiation time or stacked by later source requests. It may be useful to examine this when constructing error messages.

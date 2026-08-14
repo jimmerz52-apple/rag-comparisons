@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.view_as
+
+view_as(other) → Tensor  
+View this tensor as the same size as other. self.view_as(other) is equivalent to self.view(other.size()). Please see view() for more information about view.  Parameters 
+other (torch.Tensor) – The result tensor has the same size as other.

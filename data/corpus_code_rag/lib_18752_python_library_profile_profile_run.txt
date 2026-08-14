@@ -1,0 +1,5 @@
+# python.library.profile#profile.run
+
+profile.run(command, filename=None, sort=-1)  
+This function takes a single argument that can be passed to the exec() function, and an optional file name. In all cases this routine executes: exec(command, __main__.__dict__, __main__.__dict__)
+ and gathers profiling statistics from the execution. If no file name is present, then this function automatically creates a Stats instance and prints a simple profiling report. If the sort value is specified, it is passed to this Stats instance to control how the results are sorted.

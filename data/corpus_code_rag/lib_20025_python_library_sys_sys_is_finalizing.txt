@@ -1,0 +1,4 @@
+# python.library.sys#sys.is_finalizing
+
+sys.is_finalizing()  
+Return True if the Python interpreter is shutting down, False otherwise.  New in version 3.5.

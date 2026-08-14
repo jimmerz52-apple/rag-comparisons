@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_palette_at
+
+get_palette_at() 
+ get the color for a single entry in a palette get_palette_at(index) -> RGB  Returns the red, green, and blue color values for a single index in a Surface palette. The index should be a value from 0 to 255.  New in pygame 1.9: Returning Color(with length 3) instance instead of a tuple.

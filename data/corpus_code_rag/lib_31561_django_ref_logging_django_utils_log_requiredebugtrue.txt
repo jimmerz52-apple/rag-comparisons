@@ -1,0 +1,4 @@
+# django.ref.logging#django.utils.log.RequireDebugTrue
+
+class RequireDebugTrue  
+This filter is similar to RequireDebugFalse, except that records are passed only when DEBUG is True.

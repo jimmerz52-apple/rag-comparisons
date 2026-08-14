@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.bgcolor
+
+bgcolor 
+ default background color bgcolor -> Color  Gets or sets the default background rendering color. Initially it is unset and text will render with a transparent background by default. Applies to render() and render_to().

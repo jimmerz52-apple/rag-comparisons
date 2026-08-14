@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.htmlwriter#matplotlib.animation.HTMLWriter.supported_formats
+
+supported_formats=['png', 'jpeg', 'tiff', 'svg']

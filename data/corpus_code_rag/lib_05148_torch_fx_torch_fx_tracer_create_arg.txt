@@ -1,0 +1,9 @@
+# torch.fx#torch.fx.Tracer.create_arg
+
+create_arg(a) [source]
+ 
+A method to specify the behavior of tracing when preparing values to be used as arguments to nodes in the Graph. By default, the behavior includes:  Iterate through collection types (e.g. tuple, list, dict) and recursively call create_args on the elements. Given a Proxy object, return a reference to the underlying IR Node
+ 
+Given a non-Proxy Tensor object, emit IR for various cases:  For a Parameter, emit a get_attr node referring to that Parameter For a non-Parameter Tensor, store the Tensor away in a special attribute referring to that attribute.    This method can be overridden to support more types.  Parameters 
+a (Any) – The value to be emitted as an Argument in the Graph.  Returns 
+The value a converted into the appropriate Argument

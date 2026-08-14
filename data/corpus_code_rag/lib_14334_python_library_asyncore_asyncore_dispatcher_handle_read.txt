@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.dispatcher.handle_read
+
+handle_read()  
+Called when the asynchronous loop detects that a read() call on the channel’s socket will succeed.

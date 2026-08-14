@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.get_sequences
+
+get_sequences()  
+Return a dictionary of sequence names mapped to key lists. If there are no sequences, the empty dictionary is returned.

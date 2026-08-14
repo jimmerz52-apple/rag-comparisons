@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.BaseCookie.value_encode
+
+BaseCookie.value_encode(val)  
+Return a tuple (real_value, coded_value). val can be any type, but coded_value will always be converted to a string. This method does no encoding in BaseCookie — it exists so it can be overridden. In general, it should be the case that value_encode() and value_decode() are inverses on the range of value_decode.

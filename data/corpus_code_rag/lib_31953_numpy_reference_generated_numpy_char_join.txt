@@ -1,0 +1,17 @@
+# numpy.reference.generated.numpy.char.join
+
+numpy.char.join   char.join(sep, seq)[source]
+ 
+Return a string which is the concatenation of the strings in the sequence seq. Calls str.join element-wise.  Parameters 
+ 
+separray_like of str or unicode
+
+
+seqarray_like of str or unicode
+
+  Returns 
+ 
+outndarray
+
+
+Output array of str or unicode, depending on input types      See also  str.join

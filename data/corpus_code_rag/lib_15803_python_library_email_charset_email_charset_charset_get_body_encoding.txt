@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.get_body_encoding
+
+get_body_encoding()  
+Return the content transfer encoding used for body encoding. This is either the string quoted-printable or base64 depending on the encoding used, or it is a function, in which case you should call the function with a single argument, the Message object being encoded. The function should then set the Content-Transfer-Encoding header itself to whatever is appropriate. Returns the string quoted-printable if body_encoding is QP, returns the string base64 if body_encoding is BASE64, and returns the string 7bit otherwise.

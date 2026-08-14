@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.set
+
+set(section, option, value)  
+If the given section exists, set the given option to the specified value; otherwise raise NoSectionError. option and value must be strings; if not, TypeError is raised.

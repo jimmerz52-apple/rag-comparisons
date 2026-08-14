@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer#skimage.viewer.ImageViewer.update_image
+
+update_image(image) [source]
+ 
+Update displayed image. This method can be overridden or extended in subclasses and plugins to react to image changes.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.poly1d.__call__
+
+numpy.poly1d.__call__ method   poly1d.__call__(val)[source]
+ 
+Call self as a function.

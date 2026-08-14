@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.is_anchored
+
+pandas.tseries.offsets.BusinessHour.is_anchored   BusinessHour.is_anchored()

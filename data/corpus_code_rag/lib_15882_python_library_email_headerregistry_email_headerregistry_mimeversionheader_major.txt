@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.MIMEVersionHeader.major
+
+major  
+The major version number as an integer

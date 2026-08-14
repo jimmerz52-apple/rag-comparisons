@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.njoin
+
+numpy.distutils.misc_util.njoin(*path)[source]
+ 
+Join two or more pathname components + - convert a /-separated pathname to one using the OS’s path separator. - resolve  and  from path. Either passing n arguments as in njoin(‘a’,’b’), or a sequence of n names as in njoin([‘a’,’b’]) is handled, or a mixture of such arguments.

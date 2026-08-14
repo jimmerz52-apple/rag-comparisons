@@ -1,0 +1,14 @@
+# matplotlib_configuration_api#matplotlib.rc_file
+
+matplotlib.rc_file(fname, *, use_default_template=True)[source]
+ 
+Update rcParams from file. Style-blacklisted rcParams (defined in matplotlib.style.core.STYLE_BLACKLIST) are not updated.  Parameters 
+ 
+fnamestr or path-like
+
+
+A file with Matplotlib rc settings.  
+use_default_templatebool
+
+
+If True, initialize with default parameters before updating with those in the given file. If False, the current configuration persists and only the parameters specified in the file are updated.

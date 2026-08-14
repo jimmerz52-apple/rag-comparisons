@@ -1,0 +1,6 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.dict
+
+dict()  
+dict(mapping)  
+dict(sequence)  
+Create a shared dict object and return a proxy for it.

@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.response.addinfourl.info
+
+info()  
+ Deprecated since version 3.9: Deprecated in favor of headers.

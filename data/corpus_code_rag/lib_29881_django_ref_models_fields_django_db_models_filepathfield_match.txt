@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.FilePathField.match
+
+FilePathField.match  
+Optional. A regular expression, as a string, that FilePathField will use to filter filenames. Note that the regex will be applied to the base filename, not the full path. Example: "foo.*\.txt$", which will match a file called foo23.txt but not bar.txt or foo23.png.

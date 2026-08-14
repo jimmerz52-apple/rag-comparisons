@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.cat.codes
+
+pandas.Series.cat.codes   Series.cat.codes
+ 
+Return Series of codes as well as the index.

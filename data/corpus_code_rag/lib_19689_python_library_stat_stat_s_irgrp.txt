@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IRGRP
+
+stat.S_IRGRP  
+Group has read permission.

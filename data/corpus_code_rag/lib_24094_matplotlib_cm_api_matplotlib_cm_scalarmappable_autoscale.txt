@@ -1,0 +1,5 @@
+# matplotlib.cm_api#matplotlib.cm.ScalarMappable.autoscale
+
+autoscale()[source]
+ 
+Autoscale the scalar limits on the norm instance using the current array

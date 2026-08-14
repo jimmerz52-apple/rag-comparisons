@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.saved_model.utils
+
+Module: tf.compat.v1.saved_model.utils SavedModel utility functions. Utility functions to assist with setup and construction of the SavedModel proto. Functions build_tensor_info(...): Utility function to build TensorInfo proto from a Tensor. (deprecated) get_tensor_from_tensor_info(...): Returns the Tensor or CompositeTensor described by a TensorInfo proto. (deprecated)

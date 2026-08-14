@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.relpath
+
+os.path.relpath(path, start=os.curdir)  
+Return a relative filepath to path either from the current directory or from an optional start directory. This is a path computation: the filesystem is not accessed to confirm the existence or nature of path or start. On Windows, ValueError is raised when path and start are on different drives. start defaults to os.curdir. Availability: Unix, Windows.  Changed in version 3.6: Accepts a path-like object.

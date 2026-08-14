@@ -1,0 +1,4 @@
+# python.library.logging#logging.Formatter.formatStack
+
+formatStack(stack_info)  
+Formats the specified stack information (a string as returned by traceback.print_stack(), but with the last newline removed) as a string. This default implementation just returns the input value.

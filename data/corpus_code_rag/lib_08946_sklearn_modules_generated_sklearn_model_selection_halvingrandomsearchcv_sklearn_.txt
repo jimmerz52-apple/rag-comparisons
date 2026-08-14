@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.model_selection.halvingrandomsearchcv#sklearn.model_selection.HalvingRandomSearchCV.transform
+
+transform(X) [source]
+ 
+Call transform on the estimator with the best found parameters. Only available if the underlying estimator supports transform and refit=True.  Parameters 
+ 
+Xindexable, length n_samples 
+
+Must fulfill the input assumptions of the underlying estimator.

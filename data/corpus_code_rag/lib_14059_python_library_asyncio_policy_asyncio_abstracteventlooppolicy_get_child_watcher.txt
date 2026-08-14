@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractEventLoopPolicy.get_child_watcher
+
+get_child_watcher()  
+Get a child process watcher object. Return a watcher object implementing the AbstractChildWatcher interface. This function is Unix specific.

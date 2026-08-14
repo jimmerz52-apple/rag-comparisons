@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_BINARY
+
+winreg.REG_BINARY  
+Binary data in any form.

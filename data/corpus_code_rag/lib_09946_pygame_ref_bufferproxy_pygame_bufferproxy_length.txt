@@ -1,0 +1,4 @@
+# pygame.ref.bufferproxy#pygame.BufferProxy.length
+
+length 
+ The size, in bytes, of the exported buffer. length -> int  The number of valid bytes of data exported. For discontinuous data, that is data which is not a single block of memory, the bytes within the gaps are excluded from the count. This property is equivalent to the Py_buffer C struct len field.

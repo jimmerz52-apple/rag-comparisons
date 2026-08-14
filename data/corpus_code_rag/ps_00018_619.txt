@@ -1,0 +1,14 @@
+# 619
+Task: 619
+
+# Write a function to move all the numbers in it to the given string.
+def move_num(test_str):
+  res = ''
+  dig = ''
+  for ele in test_str:
+    if ele.isdigit():
+      dig += ele
+    else:
+      res += ele
+  res += dig
+  return (res)

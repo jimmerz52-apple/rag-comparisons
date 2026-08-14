@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.BaseHandler.close
+
+BaseHandler.close()  
+Remove any parents.

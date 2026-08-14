@@ -1,0 +1,5 @@
+# python.library.operator#operator.add
+
+operator.add(a, b)  
+operator.__add__(a, b)  
+Return a + b, for a and b numbers.

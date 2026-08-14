@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.modulelist#torch.nn.ModuleList.append
+
+append(module) [source]
+ 
+Appends a given module to the end of the list.  Parameters 
+module (nn.Module) – module to append

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ImmutableList
+
+class werkzeug.datastructures.ImmutableList(iterable=(), /)  
+An immutable list.  Changelog New in version 0.5.   Private

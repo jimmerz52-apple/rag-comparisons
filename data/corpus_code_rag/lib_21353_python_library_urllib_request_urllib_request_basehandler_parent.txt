@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.BaseHandler.parent
+
+BaseHandler.parent  
+A valid OpenerDirector, which can be used to open using a different protocol, or handle errors.

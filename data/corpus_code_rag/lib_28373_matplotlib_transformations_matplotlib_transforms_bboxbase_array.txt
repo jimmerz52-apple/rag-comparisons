@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.__array__
+
+__array__(*args, **kwargs)[source]

@@ -1,0 +1,9 @@
+# python.library.pathlib#pathlib.PurePath.as_uri
+
+PurePath.as_uri()  
+Represent the path as a file URI. ValueError is raised if the path isn’t absolute. >>> p = PurePosixPath('/etc/passwd')
+>>> p.as_uri()
+'file:///etc/passwd'
+>>> p = PureWindowsPath('c:/Windows')
+>>> p.as_uri()
+'file:///c:/Windows'

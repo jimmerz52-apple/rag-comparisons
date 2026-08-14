@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.get_gridspec
+
+get_gridspec()[source]
+ 
+Return the GridSpec instance associated with the subplot.

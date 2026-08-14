@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.owner
+
+Path.owner()  
+Return the name of the user owning the file. KeyError is raised if the file’s uid isn’t found in the system database.

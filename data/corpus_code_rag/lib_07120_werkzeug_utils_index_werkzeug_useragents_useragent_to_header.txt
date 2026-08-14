@@ -1,0 +1,5 @@
+# werkzeug.utils.index#werkzeug.useragents.UserAgent.to_header
+
+to_header()  
+Convert to a header value.  Return type 
+str

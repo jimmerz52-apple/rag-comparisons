@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.get_context_object_name
+
+get_context_object_name(obj)  
+Return the context variable name that will be used to contain the data that this view is manipulating. If context_object_name is not set, the context name will be constructed from the model_name of the model that the queryset is composed from. For example, the model Article would have context object named 'article'.

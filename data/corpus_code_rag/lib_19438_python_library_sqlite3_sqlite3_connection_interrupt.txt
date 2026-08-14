@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Connection.interrupt
+
+interrupt()  
+You can call this method from a different thread to abort any queries that might be executing on the connection. The query will then abort and the caller will get an exception.

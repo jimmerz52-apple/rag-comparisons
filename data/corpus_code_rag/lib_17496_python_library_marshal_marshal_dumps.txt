@@ -1,0 +1,4 @@
+# python.library.marshal#marshal.dumps
+
+marshal.dumps(value[, version])  
+Return the bytes object that would be written to a file by dump(value, file). The value must be a supported type. Raise a ValueError exception if value has (or contains an object that has) an unsupported type. The version argument indicates the data format that dumps should use (see below).

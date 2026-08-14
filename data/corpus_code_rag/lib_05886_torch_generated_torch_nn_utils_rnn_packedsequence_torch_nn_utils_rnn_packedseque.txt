@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.index
+
+index()  
+Return first index of value. Raises ValueError if the value is not present.

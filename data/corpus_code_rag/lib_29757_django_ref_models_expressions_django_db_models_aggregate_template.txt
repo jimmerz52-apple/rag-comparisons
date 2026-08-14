@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Aggregate.template
+
+template  
+A class attribute, as a format string, that describes the SQL that is generated for this aggregate. Defaults to '%(function)s(%(distinct)s%(expressions)s)'.

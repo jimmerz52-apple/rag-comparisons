@@ -1,0 +1,45 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.YearArchiveView
+
+class YearArchiveView  
+A yearly archive page showing all available months in a given year. Objects with a date in the future are not displayed unless you set allow_future to True. Ancestors (MRO)  django.views.generic.list.MultipleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.dates.BaseYearArchiveView django.views.generic.dates.YearMixin django.views.generic.dates.BaseDateListView django.views.generic.list.MultipleObjectMixin django.views.generic.dates.DateMixin django.views.generic.base.View   
+make_object_list  
+A boolean specifying whether to retrieve the full list of objects for this year and pass those to the template. If True, the list of objects will be made available to the context. If False, the None queryset will be used as the object list. By default, this is False. 
+  
+get_make_object_list()  
+Determine if an object list will be returned as part of the context. Returns make_object_list by default. 
+ Context In addition to the context provided by django.views.generic.list.MultipleObjectMixin (via django.views.generic.dates.BaseDateListView), the template’s context will be:  
+date_list: A QuerySet object containing all months that have objects available according to queryset, represented as datetime.datetime objects, in ascending order. 
+year: A date object representing the given year. 
+next_year: A date object representing the first day of the next year, according to allow_empty and allow_future. 
+previous_year: A date object representing the first day of the previous year, according to allow_empty and allow_future.  Notes  Uses a default template_name_suffix of _archive_year.  Example myapp/views.py: from django.views.generic.dates import YearArchiveView
+
+from myapp.models import Article
+
+class ArticleYearArchiveView(YearArchiveView):
+    queryset = Article.objects.all()
+    date_field = "pub_date"
+    make_object_list = True
+    allow_future = True
+ Example myapp/urls.py: from django.urls import path
+
+from myapp.views import ArticleYearArchiveView
+
+urlpatterns = [
+    path('<int:year>/',
+         ArticleYearArchiveView.as_view(),
+         name="article_year_archive"),
+]
+ Example myapp/article_archive_year.html: <ul>
+    {% for date in date_list %}
+        <li>{{ date|date }}</li>
+    {% endfor %}
+</ul>
+
+<div>
+    <h1>All Articles for {{ year|date:"Y" }}</h1>
+    {% for obj in object_list %}
+        <p>
+            {{ obj.title }} - {{ obj.pub_date|date:"F j, Y" }}
+        </p>
+    {% endfor %}
+</div>

@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.mutated
+
+mutated()[source]
+ 
+Return whether the bbox has changed since init.

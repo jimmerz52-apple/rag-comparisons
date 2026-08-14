@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.cross_decomposition.cca#sklearn.cross_decomposition.CCA.transform
+
+transform(X, Y=None, copy=True) [source]
+ 
+Apply the dimension reduction.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Samples to transform.  
+Yarray-like of shape (n_samples, n_targets), default=None 
+
+Target vectors.  
+copybool, default=True 
+
+Whether to copy X and Y, or perform in-place normalization.    Returns 
+ 
+x_scores if Y is not given, (x_scores, y_scores) otherwise.

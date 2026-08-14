@@ -1,0 +1,29 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.FormView
+
+class django.views.generic.edit.FormView  
+A view that displays a form. On error, redisplays the form with validation errors; on success, redirects to a new URL. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.base.TemplateResponseMixin django.views.generic.edit.BaseFormView django.views.generic.edit.FormMixin django.views.generic.edit.ProcessFormView django.views.generic.base.View  Example myapp/forms.py: from django import forms
+
+class ContactForm(forms.Form):
+    name = forms.CharField()
+    message = forms.CharField(widget=forms.Textarea)
+
+    def send_email(self):
+        # send email using the self.cleaned_data dictionary
+        pass
+ Example myapp/views.py: from myapp.forms import ContactForm
+from django.views.generic.edit import FormView
+
+class ContactFormView(FormView):
+    template_name = 'contact.html'
+    form_class = ContactForm
+    success_url = '/thanks/'
+
+    def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
+        form.send_email()
+        return super().form_valid(form)
+ Example myapp/contact.html: <form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Send message">
+</form>

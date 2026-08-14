@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestLoader.loadTestsFromNames
+
+loadTestsFromNames(names, module=None)  
+Similar to loadTestsFromName(), but takes a sequence of names rather than a single name. The return value is a test suite which supports all the tests defined for each name.

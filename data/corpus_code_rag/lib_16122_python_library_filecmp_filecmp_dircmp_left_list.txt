@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.left_list
+
+left_list  
+Files and subdirectories in a, filtered by hide and ignore.

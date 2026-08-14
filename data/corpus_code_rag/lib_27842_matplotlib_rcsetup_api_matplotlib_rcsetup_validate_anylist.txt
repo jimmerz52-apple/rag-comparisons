@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_anylist
+
+matplotlib.rcsetup.validate_anylist(s)[source]

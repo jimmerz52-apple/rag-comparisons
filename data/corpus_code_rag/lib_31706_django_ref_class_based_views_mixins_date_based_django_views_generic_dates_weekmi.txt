@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.WeekMixin.get_prev_week
+
+get_prev_week(date)  
+Returns a date object containing the first day of the week before the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

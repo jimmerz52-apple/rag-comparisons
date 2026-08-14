@@ -1,0 +1,13 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.afmFontProperty
+
+matplotlib.font_manager.afmFontProperty(fontpath, font)[source]
+ 
+Extract information from an AFM font file.  Parameters 
+ 
+fontAFM
+
+
+The AFM font file from which information will be extracted.    Returns 
+ FontEntry
+
+The extracted font properties.

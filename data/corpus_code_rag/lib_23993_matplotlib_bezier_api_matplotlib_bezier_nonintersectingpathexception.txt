@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.NonIntersectingPathException
+
+exceptionmatplotlib.bezier.NonIntersectingPathException[source]
+ 
+Bases: ValueError

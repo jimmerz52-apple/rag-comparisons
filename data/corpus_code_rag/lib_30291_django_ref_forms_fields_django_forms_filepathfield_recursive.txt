@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.FilePathField.recursive
+
+recursive  
+If False (the default) only the direct contents of path will be offered as choices. If True, the directory will be descended into recursively and all descendants will be listed as choices.

@@ -1,0 +1,15 @@
+# numpy.reference.random.generator#numpy.random.Generator
+
+class numpy.random.Generator(bit_generator)
+ 
+Container for the BitGenerators. Generator exposes a number of methods for generating random numbers drawn from a variety of probability distributions. In addition to the distribution-specific arguments, each method takes a keyword argument size that defaults to None. If size is None, then a single value is generated and returned. If size is an integer, then a 1-D array filled with generated values is returned. If size is a tuple, then an array with that shape is filled and returned. The function numpy.random.default_rng will instantiate a Generator with numpy’s default BitGenerator. No Compatibility Guarantee Generator does not provide a version compatibility guarantee. In particular, as better algorithms evolve the bit stream may change.  Parameters 
+ 
+bit_generatorBitGenerator
+
+
+BitGenerator to use as the core generator.      See also  default_rng
+
+Recommended constructor for Generator.    Notes The Python stdlib module random contains pseudo-random number generator with a number of methods that are similar to the ones available in Generator. It uses Mersenne Twister, and this bit generator can be accessed using MT19937. Generator, besides being NumPy-aware, has the advantage that it provides a much larger number of probability distributions to choose from. Examples >>> from numpy.random import Generator, PCG64
+>>> rng = Generator(PCG64())
+>>> rng.standard_normal()
+-0.203  # random

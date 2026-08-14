@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.FileHandler.emit
+
+emit(record)  
+Outputs the record to the file.

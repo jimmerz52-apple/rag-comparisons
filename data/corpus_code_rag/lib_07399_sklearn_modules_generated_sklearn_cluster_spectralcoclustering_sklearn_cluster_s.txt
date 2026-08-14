@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.cluster.spectralcoclustering#sklearn.cluster.SpectralCoclustering.fit
+
+fit(X, y=None) [source]
+ 
+Creates a biclustering for X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+yIgnored

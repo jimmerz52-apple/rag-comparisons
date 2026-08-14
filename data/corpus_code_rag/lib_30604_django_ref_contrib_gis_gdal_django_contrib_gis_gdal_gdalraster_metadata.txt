@@ -1,0 +1,12 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.metadata
+
+metadata  
+The metadata of this raster, represented as a nested dictionary. The first-level key is the metadata domain. The second-level contains the metadata item names and values from each domain. To set or update a metadata item, pass the corresponding metadata item to the method using the nested structure described above. Only keys that are in the specified dictionary are updated; the rest of the metadata remains unchanged. To remove a metadata item, use None as the metadata value. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.metadata
+{}
+>>> rst.metadata = {'DEFAULT': {'OWNER': 'Django', 'VERSION': '1.0'}}
+>>> rst.metadata
+{'DEFAULT': {'OWNER': 'Django', 'VERSION': '1.0'}}
+>>> rst.metadata = {'DEFAULT': {'OWNER': None, 'VERSION': '2.0'}}
+>>> rst.metadata
+{'DEFAULT': {'VERSION': '2.0'}}

@@ -1,0 +1,9 @@
+# torch.generated.torch.quasirandom.sobolengine#torch.quasirandom.SobolEngine.draw
+
+draw(n=1, out=None, dtype=torch.float32) [source]
+ 
+Function to draw a sequence of n points from a Sobol sequence. Note that the samples are dependent on the previous samples. The size of the result is (n,dimension)(n, dimension) .  Parameters 
+ 
+n (Int, optional) – The length of sequence of points to draw. Default: 1 
+out (Tensor, optional) – The output tensor 
+dtype (torch.dtype, optional) – the desired data type of the returned tensor. Default: torch.float32

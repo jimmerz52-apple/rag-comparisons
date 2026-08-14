@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.functions#django.contrib.gis.db.models.functions.AsWKT
+
+class AsWKT(expression, **extra)

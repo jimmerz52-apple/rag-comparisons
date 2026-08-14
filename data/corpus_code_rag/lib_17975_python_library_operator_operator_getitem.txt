@@ -1,0 +1,5 @@
+# python.library.operator#operator.getitem
+
+operator.getitem(a, b)  
+operator.__getitem__(a, b)  
+Return the value of a at index b.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_offset_text
+
+matplotlib.axis.Axis.get_offset_text   Axis.get_offset_text()[source]
+ 
+Return the axis offsetText as a Text instance.

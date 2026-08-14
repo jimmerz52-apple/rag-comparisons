@@ -1,0 +1,17 @@
+# python.library.unittest.mock#unittest.mock.Mock.return_value
+
+return_value  
+Set this to configure the value returned by calling the mock: >>> mock = Mock()
+>>> mock.return_value = 'fish'
+>>> mock()
+'fish'
+ The default return value is a mock object and you can configure it in the normal way: >>> mock = Mock()
+>>> mock.return_value.attribute = sentinel.Attribute
+>>> mock.return_value()
+<Mock name='mock()()' id='...'>
+>>> mock.return_value.assert_called_with()
+ return_value can also be set in the constructor: >>> mock = Mock(return_value=3)
+>>> mock.return_value
+3
+>>> mock()
+3

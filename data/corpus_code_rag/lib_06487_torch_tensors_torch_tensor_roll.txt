@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.roll
+
+roll(shifts, dims) → Tensor  
+See torch.roll()

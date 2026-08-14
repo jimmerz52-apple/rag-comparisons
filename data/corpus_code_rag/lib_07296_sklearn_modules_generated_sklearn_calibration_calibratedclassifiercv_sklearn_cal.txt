@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.calibration.calibratedclassifiercv#sklearn.calibration.CalibratedClassifierCV.predict_proba
+
+predict_proba(X) [source]
+ 
+Calibrated probabilities of classification. This function returns calibrated probabilities of classification according to each class on an array of test vectors X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The samples.    Returns 
+ 
+Cndarray of shape (n_samples, n_classes) 
+
+The predicted probas.

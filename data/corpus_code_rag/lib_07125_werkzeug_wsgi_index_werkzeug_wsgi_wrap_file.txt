@@ -1,0 +1,9 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.wrap_file
+
+werkzeug.wsgi.wrap_file(environ, file, buffer_size=8192)  
+Wraps a file. This uses the WSGI server’s file wrapper if available or otherwise the generic FileWrapper.  Changelog New in version 0.5.  If the file wrapper from the WSGI server is used it’s important to not iterate over it from inside the application but to pass it through unchanged. If you want to pass out a file wrapper inside a response object you have to set Response.direct_passthrough to True. More information about file wrappers are available in PEP 333.  Parameters 
+ 
+file (BinaryIO) – a file-like object with a read() method. 
+buffer_size (int) – number of bytes for one iteration. 
+environ (WSGIEnvironment) –    Return type 
+Iterable[bytes]

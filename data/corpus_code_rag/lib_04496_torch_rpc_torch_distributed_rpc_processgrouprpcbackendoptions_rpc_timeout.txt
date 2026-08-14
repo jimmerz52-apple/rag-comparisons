@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.ProcessGroupRpcBackendOptions.rpc_timeout
+
+property rpc_timeout  
+A float indicating the timeout to use for all RPCs. If an RPC does not complete in this timeframe, it will complete with an exception indicating that it has timed out.

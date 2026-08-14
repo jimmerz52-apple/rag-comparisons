@@ -1,0 +1,91 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Op
+
+classmatplotlib.backends.backend_pdf.Op(value)[source]
+ 
+Bases: matplotlib.backends.backend_pdf.Operator, enum.Enum An enumeration.   begin_text=(b'BT',)[source]
+
+   clip=b'W'[source]
+
+   close_fill_stroke=b'b'[source]
+
+   close_stroke=b's'[source]
+
+   closepath=(b'h',)[source]
+
+   concat_matrix=b'cm'[source]
+
+   curveto=b'c'[source]
+
+   end_text=b'ET'[source]
+
+   endpath=b'n'[source]
+
+   fill=b'f'[source]
+
+   fill_stroke=b'B'[source]
+
+   grestore=b'Q'[source]
+
+   gsave=(b'q',)[source]
+
+   lineto=b'l'[source]
+
+   moveto=(b'm',)[source]
+
+   op
+
+   classmethodpaint_path(fill, stroke)[source]
+ 
+Return the PDF operator to paint a path.  Parameters 
+ 
+fillbool
+
+
+Fill the path with the fill color.  
+strokebool
+
+
+Stroke the outline of the path with the line color.     
+   rectangle=b're'[source]
+
+   selectfont=b'Tf'[source]
+
+   setcolor_nonstroke=b'scn'[source]
+
+   setcolor_stroke=b'SCN'[source]
+
+   setcolorspace_nonstroke=(b'cs',)[source]
+
+   setcolorspace_stroke=b'CS'[source]
+
+   setdash=(b'd',)[source]
+
+   setgray_nonstroke=b'g'[source]
+
+   setgray_stroke=(b'G',)[source]
+
+   setgstate=b'gs'[source]
+
+   setlinecap=b'J'[source]
+
+   setlinejoin=b'j'[source]
+
+   setlinewidth=b'w'[source]
+
+   setrgb_nonstroke=(b'rg',)[source]
+
+   setrgb_stroke=b'RG'[source]
+
+   shading=b'sh'[source]
+
+   show=b'Tj'[source]
+
+   showkern=b'TJ'[source]
+
+   stroke=b'S'[source]
+
+   textmatrix=(b'Tm',)[source]
+
+   textpos=b'Td'[source]
+
+   use_xobject=b'Do'[source]

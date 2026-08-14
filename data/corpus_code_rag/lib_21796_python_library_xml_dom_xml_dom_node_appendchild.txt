@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.appendChild
+
+Node.appendChild(newChild)  
+Add a new child node to this node at the end of the list of children, returning newChild. If the node was already in the tree, it is removed first.

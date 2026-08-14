@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Event.ipc_handle
+
+ipc_handle() [source]
+ 
+Returns an IPC handle of this event. If not recorded yet, the event will use the current device.

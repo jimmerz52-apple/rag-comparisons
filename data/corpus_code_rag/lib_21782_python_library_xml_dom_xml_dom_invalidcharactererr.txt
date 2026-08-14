@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.InvalidCharacterErr
+
+exception xml.dom.InvalidCharacterErr  
+This exception is raised when a string parameter contains a character that is not permitted in the context it’s being used in by the XML 1.0 recommendation. For example, attempting to create an Element node with a space in the element type name will cause this error to be raised.

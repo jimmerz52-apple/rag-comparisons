@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.set_url
+
+set_url(url)  
+Sets the URL referring to a robots.txt file.

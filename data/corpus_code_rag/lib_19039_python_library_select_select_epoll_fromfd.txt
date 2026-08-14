@@ -1,0 +1,4 @@
+# python.library.select#select.epoll.fromfd
+
+epoll.fromfd(fd)  
+Create an epoll object from a given file descriptor.

@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.get_debug
+
+loop.get_debug()  
+Get the debug mode (bool) of the event loop. The default value is True if the environment variable PYTHONASYNCIODEBUG is set to a non-empty string, False otherwise.

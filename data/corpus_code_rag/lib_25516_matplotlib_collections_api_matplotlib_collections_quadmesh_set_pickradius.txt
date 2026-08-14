@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.set_pickradius
+
+set_pickradius(pr)[source]
+ 
+Set the pick radius used for containment tests.  Parameters 
+ 
+prfloat
+
+
+Pick radius, in points.

@@ -1,0 +1,14 @@
+# matplotlib.dviread#matplotlib.dviread.find_tex_file
+
+matplotlib.dviread.find_tex_file(filename, format=<deprecated parameter>)[source]
+ 
+Find a file in the texmf tree. Calls kpsewhich which is an interface to the kpathsea library [1]. Most existing TeX distributions on Unix-like systems use kpathsea. It is also available as part of MikTeX, a popular distribution on Windows. If the file is not found, an empty string is returned.  Parameters 
+ 
+filenamestr or path-like
+
+
+formatstr or bytes
+
+
+Used as the value of the --format option to kpsewhich. Could be e.g. 'tfm' or 'vf' to limit the search to that type of files. Deprecated.     References  1 
+Kpathsea documentation The library that kpsewhich is part of.

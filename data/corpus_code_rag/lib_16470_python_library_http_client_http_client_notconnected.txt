@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.NotConnected
+
+exception http.client.NotConnected  
+A subclass of HTTPException.

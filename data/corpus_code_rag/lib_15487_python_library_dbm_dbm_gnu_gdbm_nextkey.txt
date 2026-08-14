@@ -1,0 +1,7 @@
+# python.library.dbm#dbm.gnu.gdbm.nextkey
+
+gdbm.nextkey(key)  
+Returns the key that follows key in the traversal. The following code prints every key in the database db, without having to create a list in memory that contains them all: k = db.firstkey()
+while k != None:
+    print(k)
+    k = db.nextkey(k)

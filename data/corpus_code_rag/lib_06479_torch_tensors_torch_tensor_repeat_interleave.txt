@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.repeat_interleave
+
+repeat_interleave(repeats, dim=None) → Tensor  
+See torch.repeat_interleave().

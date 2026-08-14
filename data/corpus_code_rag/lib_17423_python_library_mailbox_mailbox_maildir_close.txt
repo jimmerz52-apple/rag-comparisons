@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Maildir.close
+
+close()  
+Maildir instances do not keep any open files and the underlying mailboxes do not support locking, so this method does nothing.

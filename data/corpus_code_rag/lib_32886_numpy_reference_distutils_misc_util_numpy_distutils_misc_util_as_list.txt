@@ -1,0 +1,3 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.as_list
+
+numpy.distutils.misc_util.as_list(seq)[source]

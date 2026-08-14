@@ -1,0 +1,11 @@
+# python.library.unittest.mock#unittest.mock.Mock.assert_called_once_with
+
+assert_called_once_with(*args, **kwargs)  
+Assert that the mock was called exactly once and that that call was with the specified arguments. >>> mock = Mock(return_value=None)
+>>> mock('foo', bar='baz')
+>>> mock.assert_called_once_with('foo', bar='baz')
+>>> mock('other', bar='values')
+>>> mock.assert_called_once_with('other', bar='values')
+Traceback (most recent call last):
+  ...
+AssertionError: Expected 'mock' to be called once. Called 2 times.

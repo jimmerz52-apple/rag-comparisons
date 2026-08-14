@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.date
+
+NNTP.date()  
+Return a pair (response, date). date is a datetime object containing the current date and time of the server.

@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.liquid.main
+
+liquid.main() 
+ display an animated liquid effect liquid.main() -> None  This example was created in a quick comparison with the BlitzBasic gaming language. Nonetheless, it demonstrates a quick 8-bit setup (with colormap).

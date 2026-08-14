@@ -1,0 +1,5 @@
+# matplotlib._api_api#matplotlib._api.check_isinstance
+
+matplotlib._api.check_isinstance(_types, **kwargs)[source]
+ 
+For each key, value pair in kwargs, check that value is an instance of one of _types; if not, raise an appropriate TypeError. As a special case, a None entry in _types is treated as NoneType. Examples >>> _api.check_isinstance((SomeClass, None), arg=arg)

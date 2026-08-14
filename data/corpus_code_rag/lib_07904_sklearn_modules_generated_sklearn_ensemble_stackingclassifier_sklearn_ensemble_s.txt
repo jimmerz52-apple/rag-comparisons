@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingclassifier#sklearn.ensemble.StackingClassifier.decision_function
+
+decision_function(X) [source]
+ 
+Predict decision function for samples in X using final_estimator_.decision_function.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+decisionsndarray of shape (n_samples,), (n_samples, n_classes), or (n_samples, n_classes * (n_classes-1) / 2) 
+
+The decision function computed the final estimator.

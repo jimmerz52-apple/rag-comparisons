@@ -1,0 +1,11 @@
+# flask.api.index#flask.Blueprint.route
+
+route(rule, **options)  
+Decorate a view function to register it with the given URL rule and options. Calls add_url_rule(), which has more details about the implementation. @app.route("/")
+def index():
+    return "Hello, World!"
+ See URL Route Registrations. The endpoint name for the route defaults to the name of the view function if the endpoint parameter isn’t passed. The methods parameter defaults to ["GET"]. HEAD and OPTIONS are added automatically.  Parameters 
+ 
+rule (str) – The URL rule string. 
+options (Any) – Extra options passed to the Rule object.   Return type 
+Callable

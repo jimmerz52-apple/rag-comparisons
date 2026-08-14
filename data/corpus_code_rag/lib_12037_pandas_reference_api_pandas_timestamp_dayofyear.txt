@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.timestamp.dayofyear
+
+pandas.Timestamp.dayofyear   Timestamp.dayofyear
+ 
+Return the day of the year. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.day_of_year
+74

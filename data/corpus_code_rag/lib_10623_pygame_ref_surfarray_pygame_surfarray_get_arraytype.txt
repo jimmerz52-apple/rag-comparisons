@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.get_arraytype
+
+pygame.surfarray.get_arraytype() 
+ Gets the currently active array type. get_arraytype () -> str  DEPRECATED: Returns the currently active array type. This will be a value of the get_arraytypes() tuple and indicates which type of array module is used for the array creation.  New in pygame 1.8.

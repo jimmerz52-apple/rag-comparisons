@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.update_params
+
+update_params()[source]
+ 
+[Deprecated] Update the subplot position from self.figure.subplotpars. Notes  Deprecated since version 3.4.

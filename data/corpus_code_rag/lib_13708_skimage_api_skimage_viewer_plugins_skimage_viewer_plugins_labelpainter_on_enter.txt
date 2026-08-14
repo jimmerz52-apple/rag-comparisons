@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LabelPainter.on_enter
+
+on_enter(overlay) [source]

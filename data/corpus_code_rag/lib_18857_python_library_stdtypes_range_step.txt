@@ -1,0 +1,4 @@
+# python.library.stdtypes#range.step
+
+step  
+The value of the step parameter (or 1 if the parameter was not supplied)

@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.compress_type
+
+ZipInfo.compress_type  
+Type of compression for the archive member.

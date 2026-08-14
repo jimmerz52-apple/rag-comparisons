@@ -1,0 +1,6 @@
+# python.library.nntplib#nntplib.NNTPError
+
+exception nntplib.NNTPError  
+Derived from the standard exception Exception, this is the base class for all exceptions raised by the nntplib module. Instances of this class have the following attribute:  
+response  
+The response of the server if available, as a str object.

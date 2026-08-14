@@ -1,0 +1,5 @@
+# tensorflow.config.experimental.disable_mlir_bridge
+
+tf.config.experimental.disable_mlir_bridge Disables experimental MLIR-Based TensorFlow Compiler Bridge.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.config.experimental.disable_mlir_bridge  
+tf.config.experimental.disable_mlir_bridge()

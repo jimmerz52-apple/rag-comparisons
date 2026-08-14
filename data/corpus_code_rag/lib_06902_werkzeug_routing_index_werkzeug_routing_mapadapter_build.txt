@@ -1,0 +1,30 @@
+# werkzeug.routing.index#werkzeug.routing.MapAdapter.build
+
+build(endpoint, values=None, method=None, force_external=False, append_unknown=True, url_scheme=None)  
+Building URLs works pretty much the other way round. Instead of match you call build and pass it the endpoint and a dict of arguments for the placeholders. The build function also accepts an argument called force_external which, if you set it to True will force external URLs. Per default external URLs (include the server name) will only be used if the target URL is on a different subdomain. >>> m = Map([
+...     Rule('/', endpoint='index'),
+...     Rule('/downloads/', endpoint='downloads/index'),
+...     Rule('/downloads/<int:id>', endpoint='downloads/show')
+... ])
+>>> urls = m.bind("example.com", "/")
+>>> urls.build("index", {})
+'/'
+>>> urls.build("downloads/show", {'id': 42})
+'/downloads/42'
+>>> urls.build("downloads/show", {'id': 42}, force_external=True)
+'http://example.com/downloads/42'
+ Because URLs cannot contain non ASCII data you will always get bytes back. Non ASCII characters are urlencoded with the charset defined on the map instance. Additional values are converted to strings and appended to the URL as URL querystring parameters: >>> urls.build("index", {'q': 'My Searchstring'})
+'/?q=My+Searchstring'
+ When processing those additional values, lists are furthermore interpreted as multiple values (as per werkzeug.datastructures.MultiDict): >>> urls.build("index", {'q': ['a', 'b', 'c']})
+'/?q=a&q=b&q=c'
+ Passing a MultiDict will also add multiple values: >>> urls.build("index", MultiDict((('p', 'z'), ('q', 'a'), ('q', 'b'))))
+'/?p=z&q=a&q=b'
+ If a rule does not exist when building a BuildError exception is raised. The build method accepts an argument called method which allows you to specify the method you want to have an URL built for if you have different methods for the same endpoint specified.  Parameters 
+ 
+endpoint (str) – the endpoint of the URL to build. 
+values (Optional[Mapping[str, Any]]) – the values for the URL to build. Unhandled values are appended to the URL as query parameters. 
+method (Optional[str]) – the HTTP method for the rule if there are different URLs for different methods on the same endpoint. 
+force_external (bool) – enforce full canonical external URLs. If the URL scheme is not provided, this will generate a protocol-relative URL. 
+append_unknown (bool) – unknown parameters are appended to the generated URL as query string argument. Disable this if you want the builder to ignore those. 
+url_scheme (Optional[str]) – Scheme to use in place of the bound url_scheme.   Return type 
+str    Changed in version 2.0: Added the url_scheme parameter.   Changelog New in version 0.6: Added the append_unknown parameter.

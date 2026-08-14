@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.Font.cget
+
+cget(option)  
+Retrieve an attribute of the font.

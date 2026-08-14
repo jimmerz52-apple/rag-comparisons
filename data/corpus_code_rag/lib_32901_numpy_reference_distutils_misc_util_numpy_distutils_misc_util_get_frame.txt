@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_frame
+
+numpy.distutils.misc_util.get_frame(level=0)[source]
+ 
+Return frame object from call stack with given level.

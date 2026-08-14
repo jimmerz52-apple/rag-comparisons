@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostclassifier#sklearn.ensemble.AdaBoostClassifier.staged_predict
+
+staged_predict(X) [source]
+ 
+Return staged predictions for X. The predicted class of an input sample is computed as the weighted mean prediction of the classifiers in the ensemble. This generator method yields the ensemble prediction after each iteration of boosting and therefore allows monitoring, such as to determine the prediction on a test set after each boost.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input samples. Sparse matrix can be CSC, CSR, COO, DOK, or LIL. COO, DOK, and LIL are converted to CSR.    Yields 
+ 
+ygenerator of ndarray of shape (n_samples,) 
+
+The predicted classes.

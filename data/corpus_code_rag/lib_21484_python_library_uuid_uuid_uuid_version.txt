@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.version
+
+UUID.version  
+The UUID version number (1 through 5, meaningful only when the variant is RFC_4122).

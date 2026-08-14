@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Snapshot.compare_to
+
+compare_to(old_snapshot: Snapshot, key_type: str, cumulative: bool=False)  
+Compute the differences with an old snapshot. Get statistics as a sorted list of StatisticDiff instances grouped by key_type. See the Snapshot.statistics() method for key_type and cumulative parameters. The result is sorted from the biggest to the smallest by: absolute value of StatisticDiff.size_diff, StatisticDiff.size, absolute value of StatisticDiff.count_diff, Statistic.count and then by StatisticDiff.traceback.

@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.transpose
+
+transpose() 
+ Exchanges the x and y axis. transpose() -> PixelArray  This method returns a new view of the pixel array with the rows and columns swapped. So for a (w, h) sized array a (h, w) slice is returned. If an array is one dimensional, then a length 1 x dimension is added, resulting in a 2D pixel array.  New in pygame 1.9.2.

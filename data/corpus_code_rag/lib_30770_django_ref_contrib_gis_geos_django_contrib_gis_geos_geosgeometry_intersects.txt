@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.intersects
+
+GEOSGeometry.intersects(other)  
+Returns True if GEOSGeometry.disjoint() is False.

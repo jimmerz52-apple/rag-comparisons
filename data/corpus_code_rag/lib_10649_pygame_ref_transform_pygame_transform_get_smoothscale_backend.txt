@@ -1,0 +1,4 @@
+# pygame.ref.transform#pygame.transform.get_smoothscale_backend
+
+pygame.transform.get_smoothscale_backend() 
+ return smoothscale filter version in use: 'GENERIC', 'MMX', or 'SSE' get_smoothscale_backend() -> String  Shows whether or not smoothscale is using MMX or SSE acceleration. If no acceleration is available then "GENERIC" is returned. For a x86 processor the level of acceleration to use is determined at runtime. This function is provided for pygame testing and debugging.

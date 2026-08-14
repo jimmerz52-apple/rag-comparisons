@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.utils.validation.has_fit_parameter
+
+sklearn.utils.validation.has_fit_parameter  
+sklearn.utils.validation.has_fit_parameter(estimator, parameter) [source]
+ 
+Checks whether the estimator’s fit method supports the given parameter.  Parameters 
+ 
+estimatorobject 
+
+An estimator to inspect.  
+parameterstr 
+
+The searched parameter.    Returns 
+ is_parameter: bool
+
+Whether the parameter was found to be a named parameter of the estimator’s fit method.     Examples >>> from sklearn.svm import SVC
+>>> has_fit_parameter(SVC(), "sample_weight")
+True

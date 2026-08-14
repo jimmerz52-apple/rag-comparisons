@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.summarymetadata.plugindata
+
+tf.compat.v1.SummaryMetadata.PluginData A ProtocolMessage
+ 
+
+
+ Attributes
+  content   bytes content  
+  plugin_name   string plugin_name

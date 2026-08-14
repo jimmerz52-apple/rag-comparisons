@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.from_polar
+
+from_polar() 
+ Sets x and y from a polar coordinates tuple. from_polar((r, phi)) -> None  Sets x and y from a tuple (r, phi) where r is the radial distance, and phi is the azimuthal angle.

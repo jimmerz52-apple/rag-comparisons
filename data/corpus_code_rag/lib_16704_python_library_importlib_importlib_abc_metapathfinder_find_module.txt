@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.MetaPathFinder.find_module
+
+find_module(fullname, path)  
+A legacy method for finding a loader for the specified module. If this is a top-level import, path will be None. Otherwise, this is a search for a subpackage or module and path will be the value of __path__ from the parent package. If a loader cannot be found, None is returned. If find_spec() is defined, backwards-compatible functionality is provided.  Changed in version 3.4: Returns None when called instead of raising NotImplementedError. Can use find_spec() to provide functionality.   Deprecated since version 3.4: Use find_spec() instead.

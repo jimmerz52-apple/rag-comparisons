@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.access_control_max_age
+
+access_control_max_age  
+The maximum age in seconds the access control settings can be cached for.

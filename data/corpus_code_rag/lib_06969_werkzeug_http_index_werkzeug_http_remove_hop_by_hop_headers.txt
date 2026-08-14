@@ -1,0 +1,6 @@
+# werkzeug.http.index#werkzeug.http.remove_hop_by_hop_headers
+
+werkzeug.http.remove_hop_by_hop_headers(headers)  
+Remove all HTTP/1.1 “Hop-by-Hop” headers from a list or Headers object. This operation works in-place.  Changelog New in version 0.5.   Parameters 
+headers (Union[werkzeug.datastructures.Headers, List[Tuple[str, str]]]) – a list or Headers object.  Return type 
+None

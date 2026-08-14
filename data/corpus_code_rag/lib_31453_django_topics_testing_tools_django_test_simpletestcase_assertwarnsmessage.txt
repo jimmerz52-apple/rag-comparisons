@@ -1,0 +1,5 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertWarnsMessage
+
+SimpleTestCase.assertWarnsMessage(expected_warning, expected_message, callable, *args, **kwargs)  
+SimpleTestCase.assertWarnsMessage(expected_warning, expected_message)  
+Analogous to SimpleTestCase.assertRaisesMessage() but for assertWarnsRegex() instead of assertRaisesRegex().

@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.iscoroutine
+
+asyncio.iscoroutine(obj)  
+Return True if obj is a coroutine object. This method is different from inspect.iscoroutine() because it returns True for generator-based coroutines.

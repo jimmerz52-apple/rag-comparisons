@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.exponential_
+
+exponential_(lambd=1, *, generator=None) → Tensor  
+Fills self tensor with elements drawn from the exponential distribution:  f(x)=λe−λxf(x) = \lambda e^{-\lambda x}

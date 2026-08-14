@@ -1,0 +1,9 @@
+# django.ref.forms.widgets#django.forms.HiddenInput
+
+class HiddenInput  
+ 
+input_type: 'hidden'
+ 
+template_name: 'django/forms/widgets/hidden.html'
+ Renders as: <input type="hidden" ...>
+  Note that there also is a MultipleHiddenInput widget that encapsulates a set of hidden input elements.

@@ -1,0 +1,5 @@
+# python.library.xml.sax.handler#xml.sax.handler.ContentHandler.startElementNS
+
+ContentHandler.startElementNS(name, qname, attrs)  
+Signals the start of an element in namespace mode. The name parameter contains the name of the element type as a (uri,
+localname) tuple, the qname parameter contains the raw XML 1.0 name used in the source document, and the attrs parameter holds an instance of the AttributesNS interface (see The AttributesNS Interface) containing the attributes of the element. If no namespace is associated with the element, the uri component of name will be None. The object passed as attrs may be re-used by the parser; holding on to a reference to it is not a reliable way to keep a copy of the attributes. To keep a copy of the attributes, use the copy() method of the attrs object. Parsers may set the qname parameter to None, unless the feature_namespace_prefixes feature is activated.

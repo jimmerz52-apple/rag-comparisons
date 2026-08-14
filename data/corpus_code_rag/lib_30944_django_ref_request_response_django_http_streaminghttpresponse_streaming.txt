@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.StreamingHttpResponse.streaming
+
+StreamingHttpResponse.streaming  
+This is always True.

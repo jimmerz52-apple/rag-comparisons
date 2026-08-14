@@ -1,0 +1,7 @@
+# matplotlib.units_api#matplotlib.units.Registry
+
+classmatplotlib.units.Registry[source]
+ 
+Bases: dict Register types with conversion interface.   get_converter(x)[source]
+ 
+Get the converter interface instance for x, or None.

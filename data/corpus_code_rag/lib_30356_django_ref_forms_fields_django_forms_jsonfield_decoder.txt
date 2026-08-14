@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.JSONField.decoder
+
+decoder  
+A json.JSONDecoder subclass to deserialize the input. Your deserialization may need to account for the fact that you can’t be certain of the input type. For example, you run the risk of returning a datetime that was actually a string that just happened to be in the same format chosen for datetimes. The decoder can be used to validate the input. If json.JSONDecodeError is raised during the deserialization, a ValidationError will be raised. Defaults to json.JSONDecoder.

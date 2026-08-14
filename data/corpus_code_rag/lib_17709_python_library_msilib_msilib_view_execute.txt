@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.View.Execute
+
+View.Execute(params)  
+Execute the SQL query of the view, through MSIViewExecute(). If params is not None, it is a record describing actual values of the parameter tokens in the query.

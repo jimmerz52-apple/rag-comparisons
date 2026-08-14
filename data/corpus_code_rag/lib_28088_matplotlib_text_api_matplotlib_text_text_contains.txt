@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.contains
+
+contains(mouseevent)[source]
+ 
+Return whether the mouse event occurred inside the axis-aligned bounding-box of the text.

@@ -1,0 +1,8 @@
+# werkzeug.http.index#werkzeug.http.parse_content_range_header
+
+werkzeug.http.parse_content_range_header(value, on_update=None)  
+Parses a range header into a ContentRange object or None if parsing is not possible.  Changelog New in version 0.7.   Parameters 
+ 
+value (Optional[str]) – a content range header to be parsed. 
+on_update (Optional[Callable[[werkzeug.datastructures.ContentRange], None]]) – an optional callable that is called every time a value on the ContentRange object is changed.   Return type 
+Optional[werkzeug.datastructures.ContentRange]

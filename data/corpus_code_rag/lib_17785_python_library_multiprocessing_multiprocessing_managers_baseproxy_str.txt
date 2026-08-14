@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseProxy.__str__
+
+__str__()  
+Return the representation of the referent.

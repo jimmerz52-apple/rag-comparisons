@@ -1,0 +1,18 @@
+# python.library.inspect#inspect.signature
+
+inspect.signature(callable, *, follow_wrapped=True)  
+Return a Signature object for the given callable: >>> from inspect import signature
+>>> def foo(a, *, b:int, **kwargs):
+...     pass
+
+>>> sig = signature(foo)
+
+>>> str(sig)
+'(a, *, b:int, **kwargs)'
+
+>>> str(sig.parameters['b'])
+'b:int'
+
+>>> sig.parameters['b'].annotation
+<class 'int'>
+ Accepts a wide range of Python callables, from plain functions and classes to functools.partial() objects. Raises ValueError if no signature can be provided, and TypeError if that type of object is not supported. A slash(/) in the signature of a function denotes that the parameters prior to it are positional-only. For more info, see the FAQ entry on positional-only parameters.  New in version 3.5: follow_wrapped parameter. Pass False to get a signature of callable specifically (callable.__wrapped__ will not be used to unwrap decorated callables.)   Note Some callables may not be introspectable in certain implementations of Python. For example, in CPython, some built-in functions defined in C provide no metadata about their arguments.

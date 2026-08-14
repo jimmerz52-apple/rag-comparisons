@@ -1,0 +1,11 @@
+# torch.fx#torch.fx.Graph.call_method
+
+call_method(method_name, args=None, kwargs=None, type_expr=None) [source]
+ 
+Insert a call_method Node into the Graph. A call_method node represents a call to a given method on the 0th element of args.  Parameters 
+ 
+method_name (str) – The name of the method to apply to the self argument. For example, if args[0] is a Node representing a Tensor, then to call relu() on that Tensor, pass relu to method_name. 
+args (Optional[Tuple[Argument, ..]]) – The positional arguments to be passed to the called method. Note that this should include a self argument. 
+kwargs (Optional[Dict[str, Argument]]) – The keyword arguments to be passed to the called method 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have.   Returns 
+The newly created and inserted call_method node.    Note The same insertion point and type expression rules apply for this method as Graph.create_node().

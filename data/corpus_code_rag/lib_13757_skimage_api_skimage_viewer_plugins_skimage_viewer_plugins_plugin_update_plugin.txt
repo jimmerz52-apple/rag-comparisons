@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.update_plugin
+
+update_plugin(name, value) [source]
+ 
+Update keyword parameters of the plugin itself. These parameters will typically be implemented as class properties so that they update the image or some other component.

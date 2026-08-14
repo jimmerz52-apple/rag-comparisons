@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cos_
+
+cos_() → Tensor  
+In-place version of cos()

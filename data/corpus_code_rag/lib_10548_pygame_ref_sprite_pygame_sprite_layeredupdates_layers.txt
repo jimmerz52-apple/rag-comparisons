@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.layers
+
+layers() 
+ returns a list of layers defined (unique), sorted from bottom up. layers() -> layers

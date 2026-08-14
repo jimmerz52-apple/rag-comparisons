@@ -1,0 +1,7 @@
+# django.ref.contrib.auth#django.contrib.auth.models.Group.permissions
+
+permissions  
+Many-to-many field to Permission: group.permissions.set([permission_list])
+group.permissions.add(permission, permission, ...)
+group.permissions.remove(permission, permission, ...)
+group.permissions.clear()

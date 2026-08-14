@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.simpledialog.Dialog.buttonbox
+
+buttonbox()  
+Default behaviour adds OK and Cancel buttons. Override for custom button layouts.

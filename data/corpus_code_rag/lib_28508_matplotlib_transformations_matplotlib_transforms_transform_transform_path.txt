@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.transform_path
+
+transform_path(path)[source]
+ 
+Apply the transform to Path path, returning a new Path. In some cases, this transform may insert curves into the path that began as line segments.

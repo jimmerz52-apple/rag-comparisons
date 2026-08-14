@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.reverse
+
+audioop.reverse(fragment, width)  
+Reverse the samples in a fragment and returns the modified fragment.

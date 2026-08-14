@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.decomposition.latentdirichletallocation#sklearn.decomposition.LatentDirichletAllocation.partial_fit
+
+partial_fit(X, y=None) [source]
+ 
+Online VB with Mini-Batch update.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+yIgnored 
+  Returns 
+ self

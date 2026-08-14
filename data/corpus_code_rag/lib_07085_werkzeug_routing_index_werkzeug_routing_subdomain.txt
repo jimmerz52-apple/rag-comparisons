@@ -1,0 +1,16 @@
+# werkzeug.routing.index#werkzeug.routing.Subdomain
+
+class werkzeug.routing.Subdomain(subdomain, rules)  
+All URLs provided by this factory have the subdomain set to a specific domain. For example if you want to use the subdomain for the current language this can be a good setup: url_map = Map([
+    Rule('/', endpoint='#select_language'),
+    Subdomain('<string(length=2):lang_code>', [
+        Rule('/', endpoint='index'),
+        Rule('/about', endpoint='about'),
+        Rule('/help', endpoint='help')
+    ])
+])
+ All the rules except for the '#select_language' endpoint will now listen on a two letter long subdomain that holds the language code for the current request.  Parameters 
+ 
+subdomain (str) –  
+rules (Iterable[Rule]) –    Return type 
+None

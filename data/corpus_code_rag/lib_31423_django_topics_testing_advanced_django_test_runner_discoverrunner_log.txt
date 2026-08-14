@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.log
+
+DiscoverRunner.log(msg, level=None)  
+ New in Django 4.0.  If a logger is set, logs the message at the given integer logging level (e.g. logging.DEBUG, logging.INFO, or logging.WARNING). Otherwise, the message is printed to the console, respecting the current verbosity. For example, no message will be printed if the verbosity is 0, INFO and above will be printed if the verbosity is at least 1, and DEBUG will be printed if it is at least 2. The level defaults to logging.INFO.

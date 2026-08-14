@@ -1,0 +1,4 @@
+# python.library.test#test.support.EnvironmentVarGuard.set
+
+EnvironmentVarGuard.set(envvar, value)  
+Temporarily set the environment variable envvar to the value of value.

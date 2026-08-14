@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.rpop
+
+POP3.rpop(user)  
+Use RPOP authentication (similar to UNIX r-commands) to log into POP3 server.

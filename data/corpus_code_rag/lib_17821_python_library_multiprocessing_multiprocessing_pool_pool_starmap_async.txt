@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.Pool.starmap_async
+
+starmap_async(func, iterable[, chunksize[, callback[, error_callback]]])  
+A combination of starmap() and map_async() that iterates over iterable of iterables and calls func with the iterables unpacked. Returns a result object.  New in version 3.3.

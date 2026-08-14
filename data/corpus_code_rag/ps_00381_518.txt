@@ -1,0 +1,8 @@
+# 518
+Task: 518
+
+# Write a function to find the square root of a perfect number.
+import math
+def sqrt_root(num):
+ sqrt_root = math.pow(num, 0.5)
+ return sqrt_root

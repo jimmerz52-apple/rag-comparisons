@@ -1,0 +1,4 @@
+# flask.config.index#PRESERVE_CONTEXT_ON_EXCEPTION
+
+PRESERVE_CONTEXT_ON_EXCEPTION  
+Don’t pop the request context when an exception occurs. If not set, this is true if DEBUG is true. This allows debuggers to introspect the request data on errors, and should normally not need to be set directly. Default: None

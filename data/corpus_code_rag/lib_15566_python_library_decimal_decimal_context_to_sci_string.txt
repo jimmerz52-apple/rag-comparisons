@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.to_sci_string
+
+to_sci_string(x)  
+Converts a number to a string using scientific notation.

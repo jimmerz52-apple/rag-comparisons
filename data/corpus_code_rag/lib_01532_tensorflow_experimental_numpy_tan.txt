@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.tan
+
+tf.experimental.numpy.tan TensorFlow variant of NumPy's tan. 
+tf.experimental.numpy.tan(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.tan.

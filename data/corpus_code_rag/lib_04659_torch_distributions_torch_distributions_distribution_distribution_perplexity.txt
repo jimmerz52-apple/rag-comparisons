@@ -1,0 +1,6 @@
+# torch.distributions#torch.distributions.distribution.Distribution.perplexity
+
+perplexity() [source]
+ 
+Returns perplexity of distribution, batched over batch_shape.  Returns 
+Tensor of shape batch_shape.

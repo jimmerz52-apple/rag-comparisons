@@ -1,0 +1,8 @@
+# django.ref.utils#django.utils.text.slugify
+
+slugify(value, allow_unicode=False)  
+Converts a string to a URL slug by:  Converting to ASCII if allow_unicode is False (the default). Converting to lowercase. Removing characters that aren’t alphanumerics, underscores, hyphens, or whitespace. Replacing any whitespace or repeated dashes with single dashes. Removing leading and trailing whitespace, dashes, and underscores.  For example: >>> slugify(' Joel is a slug ')
+'joel-is-a-slug'
+ If you want to allow Unicode characters, pass allow_unicode=True. For example: >>> slugify('你好 World', allow_unicode=True)
+'你好-world'
+  Changed in Django 3.2: In older versions, leading and trailing dashes and underscores are not removed.

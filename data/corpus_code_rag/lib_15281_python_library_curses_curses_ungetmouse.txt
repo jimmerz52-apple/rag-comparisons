@@ -1,0 +1,4 @@
+# python.library.curses#curses.ungetmouse
+
+curses.ungetmouse(id, x, y, z, bstate)  
+Push a KEY_MOUSE event onto the input queue, associating the given state data with it.

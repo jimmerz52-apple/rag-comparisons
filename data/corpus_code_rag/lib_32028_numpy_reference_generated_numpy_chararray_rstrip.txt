@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.rstrip
+
+numpy.chararray.rstrip method   chararray.rstrip(chars=None)[source]
+ 
+For each element in self, return a copy with the trailing characters removed.  See also  char.rstrip

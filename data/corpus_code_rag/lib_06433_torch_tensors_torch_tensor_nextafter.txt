@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.nextafter
+
+nextafter(other) → Tensor  
+See torch.nextafter()

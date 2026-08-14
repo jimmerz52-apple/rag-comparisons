@@ -1,0 +1,18 @@
+# python.library.exceptions#OSError
+
+exception OSError([arg])  
+exception OSError(errno, strerror[, filename[, winerror[, filename2]]])  
+This exception is raised when a system function returns a system-related error, including I/O failures such as “file not found” or “disk full” (not for illegal argument types or other incidental errors). The second form of the constructor sets the corresponding attributes, described below. The attributes default to None if not specified. For backwards compatibility, if three arguments are passed, the args attribute contains only a 2-tuple of the first two constructor arguments. The constructor often actually returns a subclass of OSError, as described in OS exceptions below. The particular subclass depends on the final errno value. This behaviour only occurs when constructing OSError directly or via an alias, and is not inherited when subclassing.  
+errno  
+A numeric error code from the C variable errno. 
+  
+winerror  
+Under Windows, this gives you the native Windows error code. The errno attribute is then an approximate translation, in POSIX terms, of that native error code. Under Windows, if the winerror constructor argument is an integer, the errno attribute is determined from the Windows error code, and the errno argument is ignored. On other platforms, the winerror argument is ignored, and the winerror attribute does not exist. 
+  
+strerror  
+The corresponding error message, as provided by the operating system. It is formatted by the C functions perror() under POSIX, and FormatMessage() under Windows. 
+  
+filename  
+filename2  
+For exceptions that involve a file system path (such as open() or os.unlink()), filename is the file name passed to the function. For functions that involve two file system paths (such as os.rename()), filename2 corresponds to the second file name passed to the function. 
+  Changed in version 3.3: EnvironmentError, IOError, WindowsError, socket.error, select.error and mmap.error have been merged into OSError, and the constructor may return a subclass.   Changed in version 3.4: The filename attribute is now the original file name passed to the function, instead of the name encoded to or decoded from the filesystem encoding. Also, the filename2 constructor argument and attribute was added.

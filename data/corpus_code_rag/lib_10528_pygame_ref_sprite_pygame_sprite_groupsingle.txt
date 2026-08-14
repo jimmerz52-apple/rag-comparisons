@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.GroupSingle
+
+pygame.sprite.GroupSingle() 
+ Group container that holds a single sprite. GroupSingle(sprite=None) -> GroupSingle  The GroupSingle container only holds a single Sprite. When a new Sprite is added, the old one is removed. There is a special property, GroupSingle.sprite, that accesses the Sprite that this Group contains. It can be None when the Group is empty. The property can also be assigned to add a Sprite into the GroupSingle container.

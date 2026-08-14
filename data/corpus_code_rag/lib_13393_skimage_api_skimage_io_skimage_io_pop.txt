@@ -1,0 +1,9 @@
+# skimage.api.skimage.io#skimage.io.pop
+
+skimage.io.pop() [source]
+ 
+Pop an image from the shared image stack.  Returns 
+ 
+imgndarray 
+
+Image popped from the stack.

@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseBadRequest
+
+class HttpResponseBadRequest  
+Acts just like HttpResponse but uses a 400 status code.

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.memmap.flush
+
+numpy.memmap.flush method   memmap.flush()[source]
+ 
+Write any changes in the array to the file on disk. For further information, see memmap.  Parameters 
+ None
+    See also  memmap

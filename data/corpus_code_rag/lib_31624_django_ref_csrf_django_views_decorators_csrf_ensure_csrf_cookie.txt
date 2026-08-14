@@ -1,0 +1,4 @@
+# django.ref.csrf#django.views.decorators.csrf.ensure_csrf_cookie
+
+ensure_csrf_cookie(view)  
+This decorator forces a view to send the CSRF cookie.

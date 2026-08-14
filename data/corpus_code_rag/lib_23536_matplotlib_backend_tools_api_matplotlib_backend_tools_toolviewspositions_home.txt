@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolViewsPositions.home
+
+home()[source]
+ 
+Recall the first view and position from the stack.

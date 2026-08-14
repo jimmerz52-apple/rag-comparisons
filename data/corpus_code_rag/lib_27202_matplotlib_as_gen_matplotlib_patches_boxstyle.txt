@@ -1,0 +1,236 @@
+# matplotlib._as_gen.matplotlib.patches.boxstyle
+
+matplotlib.patches.BoxStyle   classmatplotlib.patches.BoxStyle(stylename, **kw)[source]
+ 
+Bases: matplotlib.patches._Style BoxStyle is a container class which defines several boxstyle classes, which are used for FancyBboxPatch. A style object can be created as: BoxStyle.Round(pad=0.2)
+ or: BoxStyle("Round", pad=0.2)
+ or: BoxStyle("Round, pad=0.2")
+ The following boxstyle classes are defined.   
+Class Name Attrs   
+Square square pad=0.3  
+Circle circle pad=0.3  
+LArrow larrow pad=0.3  
+RArrow rarrow pad=0.3  
+DArrow darrow pad=0.3  
+Round round pad=0.3, rounding_size=None  
+Round4 round4 pad=0.3, rounding_size=None  
+Sawtooth sawtooth pad=0.3, tooth_size=None  
+Roundtooth roundtooth pad=0.3, tooth_size=None   An instance of any boxstyle class is an callable object, whose call signature is: __call__(self, x0, y0, width, height, mutation_size)
+ and returns a Path instance. x0, y0, width and height specify the location and size of the box to be drawn. mutation_scale determines the overall size of the mutation (by which I mean the transformation of the rectangle to the fancy box). Return the instance of the subclass with the given style name.   classCircle(pad=0.3)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A circular box.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classDArrow(pad=0.3)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A box in the shape of a two-way arrow.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classLArrow(pad=0.3)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A box in the shape of a left-pointing arrow.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classRArrow(pad=0.3)[source]
+ 
+Bases: matplotlib.patches.BoxStyle.LArrow A box in the shape of a right-pointing arrow.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classRound(pad=0.3, rounding_size=None)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A box with round corners.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.  
+rounding_sizefloat, default: pad
+
+
+Radius of the corners.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classRound4(pad=0.3, rounding_size=None)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A box with rounded edges.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.  
+rounding_sizefloat, default: pad/2
+
+
+Rounding of edges.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classRoundtooth(pad=0.3, tooth_size=None)[source]
+ 
+Bases: matplotlib.patches.BoxStyle.Sawtooth A box with a rounded sawtooth outline.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.  
+tooth_sizefloat, default: pad/2
+
+
+Size of the sawtooth.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classSawtooth(pad=0.3, tooth_size=None)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A box with a sawtooth outline.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.  
+tooth_sizefloat, default: pad/2
+
+
+Size of the sawtooth.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+   classSquare(pad=0.3)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A square box.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path
+   
+ 
+ 
+  Examples using matplotlib.patches.BoxStyle
+ 
+   Reference for Matplotlib artists

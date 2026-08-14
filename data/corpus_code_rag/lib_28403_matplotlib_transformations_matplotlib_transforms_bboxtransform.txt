@@ -1,0 +1,18 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransform
+
+classmatplotlib.transforms.BboxTransform(boxin, boxout, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase BboxTransform linearly transforms points from one Bbox to another. Create a new BboxTransform that linearly transforms points from boxin to boxout.   __init__(boxin, boxout, **kwargs)[source]
+ 
+Create a new BboxTransform that linearly transforms points from boxin to boxout. 
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform. 
+   is_separable=True
+ 
+True if this transform is separable in the x- and y- dimensions.

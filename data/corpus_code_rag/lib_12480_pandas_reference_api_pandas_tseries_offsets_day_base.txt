@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.day.base
+
+pandas.tseries.offsets.Day.base   Day.base
+ 
+Returns a copy of the calling offset object with n=1 and all other attributes equal.

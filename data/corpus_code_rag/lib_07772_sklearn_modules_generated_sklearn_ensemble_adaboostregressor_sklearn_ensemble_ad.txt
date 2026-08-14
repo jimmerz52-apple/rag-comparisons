@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostregressor#sklearn.ensemble.AdaBoostRegressor.staged_predict
+
+staged_predict(X) [source]
+ 
+Return staged predictions for X. The predicted regression value of an input sample is computed as the weighted median prediction of the classifiers in the ensemble. This generator method yields the ensemble prediction after each iteration of boosting and therefore allows monitoring, such as to determine the prediction on a test set after each boost.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples.    Yields 
+ 
+ygenerator of ndarray of shape (n_samples,) 
+
+The predicted regression values.

@@ -1,0 +1,5 @@
+# matplotlib.units_api#matplotlib.units.ConversionError
+
+exceptionmatplotlib.units.ConversionError[source]
+ 
+Bases: TypeError

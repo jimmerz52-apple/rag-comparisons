@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.vboxdivider#mpl_toolkits.axes_grid1.axes_divider.VBoxDivider.new_locator
+
+new_locator(ny, ny1=None)[source]
+ 
+Create a new AxesLocator for the specified cell.  Parameters 
+ 
+ny, ny1int
+
+
+Integers specifying the row-position of the cell. When ny1 is None, a single ny-th row is specified. Otherwise location of rows spanning between ny to ny1 (but excluding ny1-th row) is specified.

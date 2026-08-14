@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.ticks#mpl_toolkits.axisartist.axis_artist.Ticks.set_tick_out
+
+set_tick_out(b)[source]
+ 
+Set whether ticks are drawn inside or outside the axes.

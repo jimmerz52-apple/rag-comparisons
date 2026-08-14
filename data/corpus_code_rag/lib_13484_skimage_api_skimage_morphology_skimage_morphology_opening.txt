@@ -1,0 +1,32 @@
+# skimage.api.skimage.morphology#skimage.morphology.opening
+
+skimage.morphology.opening(image, selem=None, out=None) [source]
+ 
+Return greyscale morphological opening of an image. The morphological opening on an image is defined as an erosion followed by a dilation. Opening can remove small bright spots (i.e. “salt”) and connect small dark cracks. This tends to “open” up (dark) gaps between (bright) features.  Parameters 
+ 
+imagendarray 
+
+Image array.  
+selemndarray, optional 
+
+The neighborhood expressed as an array of 1’s and 0’s. If None, use cross-shaped structuring element (connectivity=1).  
+outndarray, optional 
+
+The array to store the result of the morphology. If None is passed, a new array will be allocated.    Returns 
+ 
+openingarray, same shape and type as image 
+
+The result of the morphological opening.     Examples >>> # Open up gap between two bright regions (but also shrink regions)
+>>> import numpy as np
+>>> from skimage.morphology import square
+>>> bad_connection = np.array([[1, 0, 0, 0, 1],
+...                            [1, 1, 0, 1, 1],
+...                            [1, 1, 1, 1, 1],
+...                            [1, 1, 0, 1, 1],
+...                            [1, 0, 0, 0, 1]], dtype=np.uint8)
+>>> opening(bad_connection, square(3))
+array([[0, 0, 0, 0, 0],
+       [1, 1, 0, 1, 1],
+       [1, 1, 0, 1, 1],
+       [1, 1, 0, 1, 1],
+       [0, 0, 0, 0, 0]], dtype=uint8)

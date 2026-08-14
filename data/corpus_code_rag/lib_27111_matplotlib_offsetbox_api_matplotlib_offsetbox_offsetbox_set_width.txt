@@ -1,0 +1,7 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetBox.set_width
+
+set_width(width)[source]
+ 
+Set the width of the box.  Parameters 
+ 
+widthfloat

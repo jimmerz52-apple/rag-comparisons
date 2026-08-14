@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Server.is_serving
+
+is_serving()  
+Return True if the server is accepting new connections.  New in version 3.7.

@@ -1,0 +1,5 @@
+# django.ref.models.options#django.db.models.Options.verbose_name_plural
+
+Options.verbose_name_plural  
+The plural name for the object: verbose_name_plural = "stories"
+ If this isn’t given, Django will use verbose_name + "s".

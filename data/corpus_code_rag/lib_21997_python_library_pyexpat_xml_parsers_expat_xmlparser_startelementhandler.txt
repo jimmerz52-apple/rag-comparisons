@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.StartElementHandler
+
+xmlparser.StartElementHandler(name, attributes)  
+Called for the start of every element. name is a string containing the element name, and attributes is the element attributes. If ordered_attributes is true, this is a list (see ordered_attributes for a full description). Otherwise it’s a dictionary mapping names to values.

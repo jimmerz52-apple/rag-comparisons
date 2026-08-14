@@ -1,0 +1,6 @@
+# torch.fx#torch.fx.Graph.lint
+
+lint(root=None) [source]
+ 
+Runs various checks on this Graph to make sure it is well-formed. In particular: - Checks Nodes have correct ownership (owned by this graph) - Checks Nodes appear in topological order - If root is provided, checks that targets exist in root  Parameters 
+root (Optional[torch.nn.Module]) – The root module with which to check for targets. This is equivalent to the root argument that is passed when constructing a GraphModule.

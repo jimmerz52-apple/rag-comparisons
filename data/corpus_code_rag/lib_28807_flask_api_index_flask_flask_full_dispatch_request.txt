@@ -1,0 +1,5 @@
+# flask.api.index#flask.Flask.full_dispatch_request
+
+full_dispatch_request()  
+Dispatches the request and on top of that performs request pre and postprocessing as well as HTTP exception catching and error handling.  Changelog New in version 0.7.   Return type 
+flask.wrappers.Response

@@ -1,0 +1,4 @@
+# python.library.fcntl#fcntl.flock
+
+fcntl.flock(fd, operation)  
+Perform the lock operation operation on file descriptor fd (file objects providing a fileno() method are accepted as well). See the Unix manual flock(2) for details. (On some systems, this function is emulated using fcntl().) If the flock() fails, an OSError exception is raised. Raises an auditing event fcntl.flock with arguments fd, operation.

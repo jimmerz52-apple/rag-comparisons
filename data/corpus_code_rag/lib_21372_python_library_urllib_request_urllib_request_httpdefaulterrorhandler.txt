@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPDefaultErrorHandler
+
+class urllib.request.HTTPDefaultErrorHandler  
+A class which defines a default handler for HTTP error responses; all responses are turned into HTTPError exceptions.

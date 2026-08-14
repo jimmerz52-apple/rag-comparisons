@@ -1,0 +1,4 @@
+# python.library.operator#operator.length_hint
+
+operator.length_hint(obj, default=0)  
+Return an estimated length for the object o. First try to return its actual length, then an estimate using object.__length_hint__(), and finally return the default value.  New in version 3.4.

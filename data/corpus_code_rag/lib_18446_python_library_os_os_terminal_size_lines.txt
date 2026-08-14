@@ -1,0 +1,4 @@
+# python.library.os#os.terminal_size.lines
+
+lines  
+Height of the terminal window in characters.

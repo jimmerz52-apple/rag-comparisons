@@ -1,0 +1,7 @@
+# 827
+Task: 827
+
+# Write a function to sum a specific column of a list in a given list of lists.
+def sum_column(list1, C):
+    result = sum(row[C] for row in list1)
+    return result

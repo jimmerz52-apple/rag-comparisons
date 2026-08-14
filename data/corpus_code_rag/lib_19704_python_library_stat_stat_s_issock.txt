@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISSOCK
+
+stat.S_ISSOCK(mode)  
+Return non-zero if the mode is from a socket.

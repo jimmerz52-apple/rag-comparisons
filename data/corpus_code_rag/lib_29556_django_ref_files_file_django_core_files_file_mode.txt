@@ -1,0 +1,4 @@
+# django.ref.files.file#django.core.files.File.mode
+
+mode  
+The read/write mode for the file.

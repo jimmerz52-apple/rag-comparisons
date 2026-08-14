@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_markerfacecolor
+
+get_markerfacecolor()[source]
+ 
+Return the marker face color. See also set_markerfacecolor.

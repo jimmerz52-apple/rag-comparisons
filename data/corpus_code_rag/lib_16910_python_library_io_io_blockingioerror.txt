@@ -1,0 +1,4 @@
+# python.library.io#io.BlockingIOError
+
+exception io.BlockingIOError  
+This is a compatibility alias for the builtin BlockingIOError exception.

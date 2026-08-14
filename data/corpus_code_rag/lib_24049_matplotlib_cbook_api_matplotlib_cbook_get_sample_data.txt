@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.get_sample_data
+
+matplotlib.cbook.get_sample_data(fname, asfileobj=True, *, np_load=False)[source]
+ 
+Return a sample data file. fname is a path relative to the mpl-data/sample_data directory. If asfileobj is True return a file object, otherwise just a file path. Sample data files are stored in the 'mpl-data/sample_data' directory within the Matplotlib package. If the filename ends in .gz, the file is implicitly ungzipped. If the filename ends with .npy or .npz, asfileobj is True, and np_load is True, the file is loaded with numpy.load. np_load currently defaults to False but will default to True in a future release.

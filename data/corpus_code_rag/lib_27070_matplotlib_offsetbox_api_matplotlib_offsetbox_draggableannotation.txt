@@ -1,0 +1,7 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DraggableAnnotation
+
+classmatplotlib.offsetbox.DraggableAnnotation(annotation, use_blit=False)[source]
+ 
+Bases: matplotlib.offsetbox.DraggableBase   save_offset()[source]
+
+   update_offset(dx, dy)[source]

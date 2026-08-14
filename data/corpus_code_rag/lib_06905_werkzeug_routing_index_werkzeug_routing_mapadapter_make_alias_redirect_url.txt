@@ -1,0 +1,11 @@
+# werkzeug.routing.index#werkzeug.routing.MapAdapter.make_alias_redirect_url
+
+make_alias_redirect_url(path, endpoint, values, method, query_args)  
+Internally called to make an alias redirect URL.  Parameters 
+ 
+path (str) –  
+endpoint (str) –  
+values (Mapping[str, Any]) –  
+method (str) –  
+query_args (Union[Mapping[str, Any], str]) –    Return type 
+str

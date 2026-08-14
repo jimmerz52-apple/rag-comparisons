@@ -1,0 +1,7 @@
+# django.ref.contrib.auth#django.contrib.auth.signals.user_login_failed
+
+user_login_failed()  
+Sent when the user failed to login successfully  
+sender  The name of the module used for authentication. 
+credentials  A dictionary of keyword arguments containing the user credentials that were passed to authenticate() or your own custom authentication backend. Credentials matching a set of ‘sensitive’ patterns, (including password) will not be sent in the clear as part of the signal. 
+request  The HttpRequest object, if one was provided to authenticate().

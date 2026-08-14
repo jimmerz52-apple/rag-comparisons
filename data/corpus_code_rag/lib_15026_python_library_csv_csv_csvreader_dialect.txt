@@ -1,0 +1,4 @@
+# python.library.csv#csv.csvreader.dialect
+
+csvreader.dialect  
+A read-only description of the dialect in use by the parser.

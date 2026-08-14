@@ -1,0 +1,3 @@
+# torch#torch.torch.default_generator
+
+torch.default_generator Returns the default CPU torch.Generator

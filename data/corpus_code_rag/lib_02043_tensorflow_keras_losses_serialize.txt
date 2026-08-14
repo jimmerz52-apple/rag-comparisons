@@ -1,0 +1,17 @@
+# tensorflow.keras.losses.serialize
+
+tf.keras.losses.serialize     View source on GitHub    Serializes loss function or Loss instance.  View aliases  Main aliases 
+tf.losses.serialize Compat aliases for migration See Migration guide for more details. tf.compat.v1.keras.losses.serialize  
+tf.keras.losses.serialize(
+    loss
+)
+
+ 
+
+
+ Arguments
+  loss   A Keras Loss instance or a loss function.   
+ 
+
+
+ Returns   Loss configuration dictionary.

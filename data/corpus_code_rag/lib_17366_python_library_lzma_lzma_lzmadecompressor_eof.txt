@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.LZMADecompressor.eof
+
+eof  
+True if the end-of-stream marker has been reached.

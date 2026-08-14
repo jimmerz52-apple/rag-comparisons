@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.less
+
+tf.experimental.numpy.less TensorFlow variant of NumPy's less. 
+tf.experimental.numpy.less(
+    x1, x2
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.less.

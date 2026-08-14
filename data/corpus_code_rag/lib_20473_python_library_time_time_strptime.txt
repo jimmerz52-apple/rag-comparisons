@@ -1,0 +1,8 @@
+# python.library.time#time.strptime
+
+time.strptime(string[, format])  
+Parse a string representing a time according to a format. The return value is a struct_time as returned by gmtime() or localtime(). The format parameter uses the same directives as those used by strftime(); it defaults to "%a %b %d %H:%M:%S %Y" which matches the formatting returned by ctime(). If string cannot be parsed according to format, or if it has excess data after parsing, ValueError is raised. The default values used to fill in any missing data when more accurate values cannot be inferred are (1900, 1, 1, 0, 0, 0, 0, 1, -1). Both string and format must be strings. For example: >>> import time
+>>> time.strptime("30 Nov 00", "%d %b %y")   
+time.struct_time(tm_year=2000, tm_mon=11, tm_mday=30, tm_hour=0, tm_min=0,
+                 tm_sec=0, tm_wday=3, tm_yday=335, tm_isdst=-1)
+ Support for the %Z directive is based on the values contained in tzname and whether daylight is true. Because of this, it is platform-specific except for recognizing UTC and GMT which are always known (and are considered to be non-daylight savings timezones). Only the directives specified in the documentation are supported. Because strftime() is implemented per platform it can sometimes offer more directives than those listed. But strptime() is independent of any platform and thus does not necessarily support all directives available that are not documented as supported.

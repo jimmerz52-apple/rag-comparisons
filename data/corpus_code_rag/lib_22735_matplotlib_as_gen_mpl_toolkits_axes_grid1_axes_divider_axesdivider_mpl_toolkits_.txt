@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.axesdivider#mpl_toolkits.axes_grid1.axes_divider.AxesDivider.append_axes
+
+append_axes(position, size, pad=None, add_to_figure=<deprecated parameter>, **kwargs)[source]
+ 
+Create an axes at the given position with the same height (or width) of the main axes.  position
+
+["left"|"right"|"bottom"|"top"]   size and pad should be axes_grid.axes_size compatible.

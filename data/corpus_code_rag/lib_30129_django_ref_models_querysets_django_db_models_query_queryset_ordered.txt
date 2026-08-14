@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.ordered
+
+ordered  
+True if the QuerySet is ordered — i.e. has an order_by() clause or a default ordering on the model. False otherwise.

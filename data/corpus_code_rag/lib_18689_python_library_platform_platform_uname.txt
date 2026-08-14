@@ -1,0 +1,4 @@
+# python.library.platform#platform.uname
+
+platform.uname()  
+Fairly portable uname interface. Returns a namedtuple() containing six attributes: system, node, release, version, machine, and processor. Note that this adds a sixth attribute (processor) not present in the os.uname() result. Also, the attribute names are different for the first two attributes; os.uname() names them sysname and nodename. Entries which cannot be determined are set to ''.  Changed in version 3.3: Result changed from a tuple to a namedtuple.

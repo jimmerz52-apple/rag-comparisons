@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.pipeline.featureunion#sklearn.pipeline.FeatureUnion.fit_transform
+
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit all transformers, transform the data and concatenate results.  Parameters 
+ 
+Xiterable or array-like, depending on transformers 
+
+Input data to be transformed.  
+yarray-like of shape (n_samples, n_outputs), default=None 
+
+Targets for supervised learning.    Returns 
+ 
+X_tarray-like or sparse matrix of shape (n_samples, sum_n_components) 
+
+hstack of results of transformers. sum_n_components is the sum of n_components (output dimension) over transformers.

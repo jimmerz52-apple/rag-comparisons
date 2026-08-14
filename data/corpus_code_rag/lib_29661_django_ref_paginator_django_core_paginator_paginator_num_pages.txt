@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.num_pages
+
+Paginator.num_pages  
+The total number of pages.

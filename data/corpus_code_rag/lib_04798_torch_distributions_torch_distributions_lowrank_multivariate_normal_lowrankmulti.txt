@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal.arg_constraints
+
+arg_constraints = {'cov_diag': IndependentConstraint(GreaterThan(lower_bound=0.0), 1), 'cov_factor': IndependentConstraint(Real(), 2), 'loc': IndependentConstraint(Real(), 1)}

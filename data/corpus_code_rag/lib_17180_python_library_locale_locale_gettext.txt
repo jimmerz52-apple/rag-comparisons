@@ -1,0 +1,3 @@
+# python.library.locale#locale.gettext
+
+locale.gettext(msg)

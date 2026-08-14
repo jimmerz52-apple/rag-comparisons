@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.axesy#mpl_toolkits.axes_grid1.axes_size.AxesY.get_size
+
+get_size(renderer)[source]

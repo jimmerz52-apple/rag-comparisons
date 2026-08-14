@@ -1,0 +1,4 @@
+# python.library.test#test.support.TransientResource
+
+class test.support.TransientResource(exc, **kwargs)  
+Instances are a context manager that raises ResourceDenied if the specified exception type is raised. Any keyword arguments are treated as attribute/value pairs to be compared against any exception raised within the with statement. Only if all pairs match properly against attributes on the exception is ResourceDenied raised.

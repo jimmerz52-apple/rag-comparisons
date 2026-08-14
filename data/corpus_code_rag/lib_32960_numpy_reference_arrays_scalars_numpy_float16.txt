@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.float16
+
+numpy.float16[source]
+ 
+alias of numpy.half

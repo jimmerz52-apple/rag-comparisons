@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Semaphore
+
+class multiprocessing.Semaphore([value])  
+A semaphore object: a close analog of threading.Semaphore. A solitary difference from its close analog exists: its acquire method’s first argument is named block, as is consistent with Lock.acquire().

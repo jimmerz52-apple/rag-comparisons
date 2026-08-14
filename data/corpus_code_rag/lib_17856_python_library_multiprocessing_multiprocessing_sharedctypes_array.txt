@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.sharedctypes.Array
+
+multiprocessing.sharedctypes.Array(typecode_or_type, size_or_initializer, *, lock=True)  
+The same as RawArray() except that depending on the value of lock a process-safe synchronization wrapper may be returned instead of a raw ctypes array. If lock is True (the default) then a new lock object is created to synchronize access to the value. If lock is a Lock or RLock object then that will be used to synchronize access to the value. If lock is False then access to the returned object will not be automatically protected by a lock, so it will not necessarily be “process-safe”. Note that lock is a keyword-only argument.

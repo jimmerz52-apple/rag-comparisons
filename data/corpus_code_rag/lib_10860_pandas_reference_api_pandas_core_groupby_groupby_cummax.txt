@@ -1,0 +1,11 @@
+# pandas.reference.api.pandas.core.groupby.groupby.cummax
+
+pandas.core.groupby.GroupBy.cummax   finalGroupBy.cummax(axis=0, **kwargs)[source]
+ 
+Cumulative max for each group.  Returns 
+ Series or DataFrame
+    See also  Series.groupby
+
+Apply a function groupby to a Series.  DataFrame.groupby
+
+Apply a function groupby to each row or column of a DataFrame.

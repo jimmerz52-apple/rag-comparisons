@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.countvectorizer#sklearn.feature_extraction.text.CountVectorizer.get_feature_names
+
+get_feature_names() [source]
+ 
+Array mapping from feature integer indices to feature name.  Returns 
+ 
+feature_nameslist 
+
+A list of feature names.

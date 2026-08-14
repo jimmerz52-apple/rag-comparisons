@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.difference_update
+
+difference_update(*others)  
+set -= other | ...  
+Update the set, removing elements found in others.

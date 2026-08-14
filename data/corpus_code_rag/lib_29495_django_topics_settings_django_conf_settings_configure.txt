@@ -1,0 +1,3 @@
+# django.topics.settings#django.conf.settings.configure
+
+django.conf.settings.configure(default_settings, **settings)

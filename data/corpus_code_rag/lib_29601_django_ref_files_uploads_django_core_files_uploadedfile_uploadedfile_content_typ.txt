@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.content_type_extra
+
+UploadedFile.content_type_extra  
+A dictionary containing extra parameters passed to the content-type header. This is typically provided by services, such as Google App Engine, that intercept and handle file uploads on your behalf. As a result your handler may not receive the uploaded file content, but instead a URL or other pointer to the file (see RFC 2388).

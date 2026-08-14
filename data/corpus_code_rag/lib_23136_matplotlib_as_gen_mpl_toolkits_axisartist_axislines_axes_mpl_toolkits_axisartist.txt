@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axes#mpl_toolkits.axisartist.axislines.Axes.new_fixed_axis
+
+new_fixed_axis(loc, offset=None)[source]

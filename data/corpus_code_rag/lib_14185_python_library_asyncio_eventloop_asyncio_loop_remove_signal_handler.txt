@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.remove_signal_handler
+
+loop.remove_signal_handler(sig)  
+Remove the handler for the sig signal. Return True if the signal handler was removed, or False if no handler was set for the given signal. Availability: Unix.

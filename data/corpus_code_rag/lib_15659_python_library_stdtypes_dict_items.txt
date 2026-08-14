@@ -1,0 +1,4 @@
+# python.library.stdtypes#dict.items
+
+items()  
+Return a new view of the dictionary’s items ((key, value) pairs). See the documentation of view objects.

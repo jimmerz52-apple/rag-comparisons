@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriterregistry#matplotlib.animation.MovieWriterRegistry.is_available
+
+is_available(name)[source]
+ 
+Check if given writer is available by name.  Parameters 
+ 
+namestr
+
+  Returns 
+ bool

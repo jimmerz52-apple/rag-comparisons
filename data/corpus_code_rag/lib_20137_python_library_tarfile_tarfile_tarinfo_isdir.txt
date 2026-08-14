@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.isdir
+
+TarInfo.isdir()  
+Return True if it is a directory.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ModelFormMixin.form_valid
+
+form_valid(form)  
+Saves the form instance, sets the current object for the view, and redirects to get_success_url().

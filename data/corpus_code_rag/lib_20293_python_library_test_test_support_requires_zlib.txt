@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_zlib
+
+@test.support.requires_zlib  
+Decorator for skipping tests if zlib doesn’t exist.

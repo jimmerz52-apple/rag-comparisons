@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.get_init
+
+pygame.mixer.get_init() 
+ test if the mixer is initialized get_init() -> (frequency, format, channels)  If the mixer is initialized, this returns the playback arguments it is using. If the mixer has not been initialized this returns None.

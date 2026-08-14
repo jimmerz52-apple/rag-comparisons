@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.ordinalencoder#sklearn.preprocessing.OrdinalEncoder.transform
+
+transform(X) [source]
+ 
+Transform X to ordinal codes.  Parameters 
+ 
+Xarray-like, shape [n_samples, n_features] 
+
+The data to encode.    Returns 
+ 
+X_outsparse matrix or a 2-d array 
+
+Transformed input.

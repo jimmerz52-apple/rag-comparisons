@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingContourLabeler.pop_click
+
+pop_click(event, index=- 1)[source]
+ 
+Remove a click (by default, the last) from the list of clicks.  Parameters 
+ 
+eventMouseEvent

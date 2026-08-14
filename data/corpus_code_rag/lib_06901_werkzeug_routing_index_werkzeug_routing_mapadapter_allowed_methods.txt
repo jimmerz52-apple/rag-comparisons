@@ -1,0 +1,6 @@
+# werkzeug.routing.index#werkzeug.routing.MapAdapter.allowed_methods
+
+allowed_methods(path_info=None)  
+Returns the valid methods that match for a given path.  Changelog New in version 0.7.   Parameters 
+path_info (Optional[str]) –   Return type 
+Iterable[str]

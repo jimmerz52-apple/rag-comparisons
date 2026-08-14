@@ -1,0 +1,26 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.SimpleLineShadow
+
+classmatplotlib.patheffects.SimpleLineShadow(offset=(2, - 2), shadow_color='k', alpha=0.3, rho=0.3, **kwargs)[source]
+ 
+Bases: matplotlib.patheffects.AbstractPathEffect A simple shadow via a line.  Parameters 
+ 
+offset(float, float), default: (2, -2)
+
+
+The (x, y) offset to apply to the path, in points.  
+shadow_colorcolor, default: 'black'
+
+
+The shadow color. A value of None takes the original artist's color with a scale factor of rho.  
+alphafloat, default: 0.3
+
+
+The alpha transparency of the created shadow patch.  
+rhofloat, default: 0.3
+
+
+A scale factor to apply to the rgbFace color if shadow_color is None.  **kwargs
+
+Extra keywords are stored and passed through to AbstractPathEffect._update_gc().       draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Overrides the standard draw_path to add the shadow offset and necessary color changes for the shadow.

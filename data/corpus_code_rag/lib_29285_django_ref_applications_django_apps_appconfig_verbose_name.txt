@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.AppConfig.verbose_name
+
+AppConfig.verbose_name  
+Human-readable name for the application, e.g. “Administration”. This attribute defaults to label.title().

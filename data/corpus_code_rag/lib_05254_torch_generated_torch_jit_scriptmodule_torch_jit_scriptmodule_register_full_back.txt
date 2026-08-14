@@ -1,0 +1,7 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.register_full_backward_hook
+
+register_full_backward_hook(hook)  
+Registers a backward hook on the module. The hook will be called every time the gradients with respect to module inputs are computed. The hook should have the following signature: hook(module, grad_input, grad_output) -> tuple(Tensor) or None
+ The grad_input and grad_output are tuples that contain the gradients with respect to the inputs and outputs respectively. The hook should not modify its arguments, but it can optionally return a new gradient with respect to the input that will be used in place of grad_input in subsequent computations. grad_input will only correspond to the inputs given as positional arguments and all kwarg arguments are ignored. Entries in grad_input and grad_output will be None for all non-Tensor arguments.  Warning Modifying inputs or outputs inplace is not allowed when using backward hooks and will raise an error.   Returns 
+a handle that can be used to remove the added hook by calling handle.remove()  Return type 
+torch.utils.hooks.RemovableHandle

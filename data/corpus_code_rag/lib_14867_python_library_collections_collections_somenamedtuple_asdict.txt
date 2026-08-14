@@ -1,0 +1,7 @@
+# python.library.collections#collections.somenamedtuple._asdict
+
+somenamedtuple._asdict()  
+Return a new dict which maps field names to their corresponding values: >>> p = Point(x=11, y=22)
+>>> p._asdict()
+{'x': 11, 'y': 22}
+  Changed in version 3.1: Returns an OrderedDict instead of a regular dict.   Changed in version 3.8: Returns a regular dict instead of an OrderedDict. As of Python 3.7, regular dicts are guaranteed to be ordered. If the extra features of OrderedDict are required, the suggested remediation is to cast the result to the desired type: OrderedDict(nt._asdict()).

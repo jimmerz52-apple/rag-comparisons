@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.is_multipart
+
+is_multipart()  
+Return True if the message’s payload is a list of sub-Message objects, otherwise return False. When is_multipart() returns False, the payload should be a string object (which might be a CTE encoded binary payload). (Note that is_multipart() returning True does not necessarily mean that “msg.get_content_maintype() == ‘multipart’” will return the True. For example, is_multipart will return True when the Message is of type message/rfc822.)

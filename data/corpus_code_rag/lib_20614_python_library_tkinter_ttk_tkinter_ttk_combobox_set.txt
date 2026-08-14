@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Combobox.set
+
+set(value)  
+Sets the value of the combobox to value.

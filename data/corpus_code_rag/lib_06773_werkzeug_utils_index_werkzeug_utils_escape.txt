@@ -1,0 +1,6 @@
+# werkzeug.utils.index#werkzeug.utils.escape
+
+werkzeug.utils.escape(s)  
+Replace &, <, >, ", and ' with HTML-safe sequences. None is escaped to an empty string.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use MarkupSafe instead.   Parameters 
+s (Any) –   Return type 
+str

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.url_value_preprocessors
+
+url_value_preprocessors: t.Dict[AppOrBlueprintKey, t.List[URLValuePreprocessorCallable]]  
+A data structure of functions to call to modify the keyword arguments passed to the view function, in the format {scope: [functions]}. The scope key is the name of a blueprint the functions are active for, or None for all requests. To register a function, use the url_value_preprocessor() decorator. This data structure is internal. It should not be modified directly and its format may change at any time.

@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.is_canonical
+
+is_canonical()  
+Return True if the argument is canonical and False otherwise. Currently, a Decimal instance is always canonical, so this operation always returns True.

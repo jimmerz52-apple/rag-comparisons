@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__rshift__
+
+numpy.ndarray.__rshift__ method   ndarray.__rshift__(value, /)
+ 
+Return self>>value.

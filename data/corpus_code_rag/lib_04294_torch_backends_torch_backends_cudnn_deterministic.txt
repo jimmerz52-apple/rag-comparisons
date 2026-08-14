@@ -1,0 +1,4 @@
+# torch.backends#torch.backends.cudnn.deterministic
+
+torch.backends.cudnn.deterministic  
+A bool that, if True, causes cuDNN to only use deterministic convolution algorithms. See also torch.are_deterministic_algorithms_enabled() and torch.use_deterministic_algorithms().

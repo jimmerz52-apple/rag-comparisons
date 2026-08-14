@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.Etop
+
+Etop()  
+Returns a value equal to Emax - prec + 1.

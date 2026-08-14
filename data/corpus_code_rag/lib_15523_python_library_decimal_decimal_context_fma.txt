@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.fma
+
+fma(x, y, z)  
+Returns x multiplied by y, plus z.

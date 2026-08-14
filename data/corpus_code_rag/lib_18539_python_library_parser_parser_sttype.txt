@@ -1,0 +1,4 @@
+# python.library.parser#parser.STType
+
+parser.STType  
+The type of the objects returned by expr(), suite() and sequence2st().

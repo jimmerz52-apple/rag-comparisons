@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.Meter
+
+class tkinter.tix.Meter  
+The Meter widget can be used to show the progress of a background job which may take a long time to execute.

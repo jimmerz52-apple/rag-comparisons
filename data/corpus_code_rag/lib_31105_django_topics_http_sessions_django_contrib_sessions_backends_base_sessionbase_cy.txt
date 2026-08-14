@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.cycle_key
+
+cycle_key()  
+Creates a new session key while retaining the current session data. django.contrib.auth.login() calls this method to mitigate against session fixation.

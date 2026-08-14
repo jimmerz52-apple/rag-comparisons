@@ -1,0 +1,30 @@
+# matplotlib.ticker_api#matplotlib.ticker.SymmetricalLogLocator
+
+classmatplotlib.ticker.SymmetricalLogLocator(transform=None, subs=None, linthresh=None, base=None)[source]
+ 
+Bases: matplotlib.ticker.Locator Determine the tick locations for symmetric log axes.  Parameters 
+ 
+transformSymmetricalLogTransform, optional
+
+
+If set, defines the base and linthresh of the symlog transform.  
+base, linthreshfloat, optional
+
+
+The base and linthresh of the symlog transform, as documented for SymmetricalLogScale. These parameters are only used if transform is not set.  
+subssequence of float, default: [1]
+
+
+The multiples of integer powers of the base where ticks are placed, i.e., ticks are placed at [sub * base**i for i in ... for sub in subs].     Notes Either transform, or both base and linthresh, must be given.   set_params(subs=None, numticks=None)[source]
+ 
+Set parameters within this locator. 
+   tick_values(vmin, vmax)[source]
+ 
+Return the values of the located ticks given vmin and vmax.  Note To get tick locations with the vmin and vmax values defined automatically for the associated axis simply call the Locator instance: >>> print(type(loc))
+<type 'Locator'>
+>>> print(loc())
+[1, 2, 3, 4]
+  
+   view_limits(vmin, vmax)[source]
+ 
+Try to choose the view limits intelligently.

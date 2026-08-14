@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.is_anonymous
+
+is_anonymous  
+Read-only attribute which is always False. This is a way of differentiating User and AnonymousUser objects. Generally, you should prefer using is_authenticated to this attribute.

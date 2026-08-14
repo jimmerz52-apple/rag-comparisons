@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.url_default_functions
+
+url_default_functions: t.Dict[AppOrBlueprintKey, t.List[URLDefaultCallable]]  
+A data structure of functions to call to modify the keyword arguments when generating URLs, in the format {scope: [functions]}. The scope key is the name of a blueprint the functions are active for, or None for all requests. To register a function, use the url_defaults() decorator. This data structure is internal. It should not be modified directly and its format may change at any time.

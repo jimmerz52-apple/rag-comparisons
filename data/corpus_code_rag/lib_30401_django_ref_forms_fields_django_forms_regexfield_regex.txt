@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.RegexField.regex
+
+regex  
+A regular expression specified either as a string or a compiled regular expression object.

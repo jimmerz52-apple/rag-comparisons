@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.adpcm2lin
+
+audioop.adpcm2lin(adpcmfragment, width, state)  
+Decode an Intel/DVI ADPCM coded fragment to a linear fragment. See the description of lin2adpcm() for details on ADPCM coding. Return a tuple (sample, newstate) where the sample has the width specified in width.

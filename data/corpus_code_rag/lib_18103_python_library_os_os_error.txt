@@ -1,0 +1,4 @@
+# python.library.os#os.error
+
+exception os.error  
+An alias for the built-in OSError exception.

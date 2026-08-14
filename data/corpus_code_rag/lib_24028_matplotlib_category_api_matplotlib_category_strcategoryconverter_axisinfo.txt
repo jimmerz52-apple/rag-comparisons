@@ -1,0 +1,17 @@
+# matplotlib.category_api#matplotlib.category.StrCategoryConverter.axisinfo
+
+staticaxisinfo(unit, axis)[source]
+ 
+Set the default axis ticks and labels.  Parameters 
+ 
+unitUnitData
+
+
+object string unit information for value  
+axisAxis
+
+
+axis for which information is being set  Note axis is not used     Returns 
+ AxisInfo
+
+Information to support default tick labeling

@@ -1,0 +1,18 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.update_from_data_xy
+
+update_from_data_xy(xy, ignore=None, updatex=True, updatey=True)[source]
+ 
+Update the bounds of the Bbox based on the passed in data. After updating, the bounds will have positive width and height; x0 and y0 will be the minimal values.  Parameters 
+ 
+xyndarray
+
+
+A numpy array of 2D points.  
+ignorebool, optional
+
+
+ When True, ignore the existing bounds of the Bbox. When False, include the existing bounds of the Bbox. When None, use the last value passed to ignore().   
+updatex, updateybool, default: True
+
+
+When True, update the x/y values.

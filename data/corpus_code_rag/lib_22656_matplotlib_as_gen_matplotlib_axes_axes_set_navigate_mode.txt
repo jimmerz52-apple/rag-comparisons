@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_navigate_mode
+
+matplotlib.axes.Axes.set_navigate_mode   Axes.set_navigate_mode(b)[source]
+ 
+Set the navigation toolbar button status.  Warning this is not a user-API function.

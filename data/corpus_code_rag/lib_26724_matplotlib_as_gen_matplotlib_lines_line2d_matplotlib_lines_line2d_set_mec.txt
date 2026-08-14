@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_mec
+
+set_mec(ec)[source]
+ 
+Alias for set_markeredgecolor.

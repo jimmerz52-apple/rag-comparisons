@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.RangeBoundary.inclusive_upper
+
+inclusive_upper  
+If False (default), the upper bound is exclusive ')', otherwise it’s inclusive ']'.

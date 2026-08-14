@@ -1,0 +1,11 @@
+# flask.api.index#flask.Config.from_file
+
+from_file(filename, load, silent=False)  
+Update the values in the config from a file that is loaded using the load parameter. The loaded data is passed to the from_mapping() method. import toml
+app.config.from_file("config.toml", load=toml.load)
+  Parameters 
+ 
+filename (str) – The path to the data file. This can be an absolute path or relative to the config root path. 
+load (Callable[[Reader], Mapping] where Reader implements a read method.) – A callable that takes a file handle and returns a mapping of loaded data from the file. 
+silent (bool) – Ignore the file if it doesn’t exist.   Return type 
+bool    New in version 2.0.

@@ -1,0 +1,17 @@
+# numpy.reference.generated.numpy.polynomial.hermite_e.hermemulx
+
+numpy.polynomial.hermite_e.hermemulx   polynomial.hermite_e.hermemulx(c)[source]
+ 
+Multiply a Hermite series by x. Multiply the Hermite series c by x, where x is the independent variable.  Parameters 
+ 
+carray_like
+
+
+1-D array of Hermite series coefficients ordered from low to high.    Returns 
+ 
+outndarray
+
+
+Array representing the result of the multiplication.     Notes The multiplication uses the recursion relationship for Hermite polynomials in the form  \[xP_i(x) = (P_{i + 1}(x) + iP_{i - 1}(x)))\] Examples >>> from numpy.polynomial.hermite_e import hermemulx
+>>> hermemulx([1, 2, 3])
+array([2.,  7.,  2.,  3.])

@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.Engine.select_template
+
+Engine.select_template(template_name_list)  
+Like get_template(), except it takes a list of names and returns the first template that was found.

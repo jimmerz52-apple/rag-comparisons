@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.transpose
+
+transpose(dim0, dim1) → Tensor  
+See torch.transpose()

@@ -1,0 +1,17 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axisartisthelperrectlinear#mpl_toolkits.axisartist.axislines.AxisArtistHelperRectlinear.Floating
+
+classFloating(axes, nth_coord, passingthrough_point, axis_direction='bottom')[source]
+ 
+Bases: mpl_toolkits.axisartist.axislines.AxisArtistHelper.Floating   get_axislabel_pos_angle(axes)[source]
+ 
+Return the label reference position in transAxes. get_label_transform() returns a transform of (transAxes+offset) 
+   get_axislabel_transform(axes)[source]
+
+   get_line(axes)[source]
+
+   get_line_transform(axes)[source]
+
+   get_tick_iterators(axes)[source]
+ 
+tick_loc, tick_angle, tick_label 
+   get_tick_transform(axes)[source]

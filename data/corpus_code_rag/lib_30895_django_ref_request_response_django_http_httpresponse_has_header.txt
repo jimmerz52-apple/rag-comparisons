@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.has_header
+
+HttpResponse.has_header(header)  
+Returns True or False based on a case-insensitive check for a header with the given name.

@@ -1,0 +1,10 @@
+# django.ref.models.fields#django.db.models.ManyToManyField.through
+
+ManyToManyField.through  
+Django will automatically generate a table to manage many-to-many relationships. However, if you want to manually specify the intermediary table, you can use the through option to specify the Django model that represents the intermediate table that you want to use. The most common use for this option is when you want to associate extra data with a many-to-many relationship.  Note If you don’t want multiple associations between the same instances, add a UniqueConstraint including the from and to fields. Django’s automatically generated many-to-many tables include such a constraint.   Note Recursive relationships using an intermediary model can’t determine the reverse accessors names, as they would be the same. You need to set a related_name to at least one of them. If you’d prefer Django not to create a backwards relation, set related_name to '+'.  If you don’t specify an explicit through model, there is still an implicit through model class you can use to directly access the table created to hold the association. It has three fields to link the models. If the source and target models differ, the following fields are generated:  
+id: the primary key of the relation. 
+<containing_model>_id: the id of the model that declares the ManyToManyField. 
+<other_model>_id: the id of the model that the ManyToManyField points to.  If the ManyToManyField points from and to the same model, the following fields are generated:  
+id: the primary key of the relation. 
+from_<model>_id: the id of the instance which points at the model (i.e. the source instance). 
+to_<model>_id: the id of the instance to which the relationship points (i.e. the target model instance).  This class can be used to query associated records for a given model instance like a normal model: Model.m2mfield.through.objects.all()

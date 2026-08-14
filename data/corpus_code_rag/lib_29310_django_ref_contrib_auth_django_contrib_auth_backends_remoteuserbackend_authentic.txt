@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.RemoteUserBackend.authenticate
+
+authenticate(request, remote_user)  
+The username passed as remote_user is considered trusted. This method returns the user object with the given username, creating a new user object if create_unknown_user is True. Returns None if create_unknown_user is False and a User object with the given username is not found in the database. request is an HttpRequest and may be None if it wasn’t provided to authenticate() (which passes it on to the backend).

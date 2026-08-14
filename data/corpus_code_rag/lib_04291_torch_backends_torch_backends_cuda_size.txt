@@ -1,0 +1,4 @@
+# torch.backends#torch.backends.cuda.size
+
+size  
+A readonly int that shows the number of plans currently in the cuFFT plan cache.

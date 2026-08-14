@@ -1,0 +1,12 @@
+# torch.distributed#torch.distributed.gather
+
+torch.distributed.gather(tensor, gather_list=None, dst=0, group=None, async_op=False) [source]
+ 
+Gathers a list of tensors in a single process.  Parameters 
+ 
+tensor (Tensor) – Input tensor. 
+gather_list (list[Tensor], optional) – List of appropriately-sized tensors to use for gathered data (default is None, must be specified on the destination rank) 
+dst (int, optional) – Destination rank (default is 0) 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+async_op (bool, optional) – Whether this op should be an async op   Returns 
+Async work handle, if async_op is set to True. None, if not async_op or if not part of the group

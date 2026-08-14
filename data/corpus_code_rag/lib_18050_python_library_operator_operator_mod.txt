@@ -1,0 +1,5 @@
+# python.library.operator#operator.__mod__
+
+operator.mod(a, b)  
+operator.__mod__(a, b)  
+Return a % b.

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.OrderedMultiDict
+
+class werkzeug.datastructures.OrderedMultiDict(mapping=None)  
+Works like a regular MultiDict but preserves the order of the fields. To convert the ordered multi dict into a list you can use the items() method and pass it multi=True. In general an OrderedMultiDict is an order of magnitude slower than a MultiDict.  note Due to a limitation in Python you cannot convert an ordered multi dict into a regular dict by using dict(multidict). Instead you have to use the to_dict() method, otherwise the internal bucket objects are exposed.

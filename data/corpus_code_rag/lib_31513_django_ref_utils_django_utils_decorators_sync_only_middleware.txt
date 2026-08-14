@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.decorators.sync_only_middleware
+
+sync_only_middleware(middleware) [source]
+ 
+Marks a middleware as synchronous-only. (The default in Django, but this allows you to future-proof if the default ever changes in a future release.)

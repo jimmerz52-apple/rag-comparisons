@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.identity
+
+staticidentity()[source]
+ 
+Return a new Affine2D object that is the identity transform. Unless this transform will be mutated later on, consider using the faster IdentityTransform class instead.

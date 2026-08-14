@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentTypeManager.get_for_models
+
+get_for_models(*models, for_concrete_models=True)  
+Takes a variadic number of model classes, and returns a dictionary mapping the model classes to the ContentType instances representing them. for_concrete_models=False allows fetching the ContentType of proxy models.

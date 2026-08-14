@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.SkipTest
+
+exception unittest.SkipTest(reason)  
+This exception is raised to skip a test. Usually you can use TestCase.skipTest() or one of the skipping decorators instead of raising this directly.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.trunc_
+
+trunc_() → Tensor  
+In-place version of trunc()

@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.score_samples
+
+score_samples(X) [source]
+ 
+Apply transforms, and score_samples of the final estimator.  Parameters 
+ 
+Xiterable 
+
+Data to predict on. Must fulfill input requirements of first step of the pipeline.    Returns 
+ 
+y_scorendarray of shape (n_samples,)

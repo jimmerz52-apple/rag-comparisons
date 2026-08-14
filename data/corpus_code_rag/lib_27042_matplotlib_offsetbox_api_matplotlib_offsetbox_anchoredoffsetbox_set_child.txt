@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnchoredOffsetbox.set_child
+
+set_child(child)[source]
+ 
+Set the child to be anchored.

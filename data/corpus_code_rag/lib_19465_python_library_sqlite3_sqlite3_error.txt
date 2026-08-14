@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Error
+
+exception sqlite3.Error  
+The base class of the other exceptions in this module. It is a subclass of Exception.

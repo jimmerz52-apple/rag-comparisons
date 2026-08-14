@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Lock
+
+Lock()  
+Create a shared threading.Lock object and return a proxy for it.

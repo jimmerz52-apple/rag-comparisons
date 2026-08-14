@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.get_default_font
+
+pygame.font.get_default_font() 
+ get the filename of the default font get_default_font() -> string  Return the filename of the system font. This is not the full path to the file. This file can usually be found in the same directory as the font module, but it can also be bundled in separate archives.

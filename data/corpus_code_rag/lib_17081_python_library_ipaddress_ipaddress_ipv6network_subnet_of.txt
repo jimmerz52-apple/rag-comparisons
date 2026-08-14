@@ -1,0 +1,3 @@
+# python.library.ipaddress#ipaddress.IPv6Network.subnet_of
+
+subnet_of(other)

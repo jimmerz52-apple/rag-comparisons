@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.dummy.dummyclassifier#sklearn.dummy.DummyClassifier.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Return log probability estimates for the test vectors X.  Parameters 
+ 
+X{array-like, object with finite length or shape} 
+
+Training data, requires length = n_samples    Returns 
+ 
+Pndarray of shape (n_samples, n_classes) or list of such arrays 
+
+Returns the log probability of the sample for each class in the model, where classes are ordered arithmetically for each output.

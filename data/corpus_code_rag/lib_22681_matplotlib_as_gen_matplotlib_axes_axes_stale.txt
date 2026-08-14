@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.stale
+
+matplotlib.axes.Axes.stale   propertyAxes.stale
+ 
+Whether the artist is 'stale' and needs to be re-drawn for the output to match the internal state of the artist.

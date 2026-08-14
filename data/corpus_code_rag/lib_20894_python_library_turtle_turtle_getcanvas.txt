@@ -1,0 +1,6 @@
+# python.library.turtle#turtle.getcanvas
+
+turtle.getcanvas()  
+Return the Canvas of this TurtleScreen. Useful for insiders who know what to do with a Tkinter Canvas. >>> cv = screen.getcanvas()
+>>> cv
+<turtle.ScrolledCanvas object ...>

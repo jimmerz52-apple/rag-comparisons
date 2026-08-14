@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.PathEntryFinder.find_spec
+
+find_spec(fullname, target=None)  
+An abstract method for finding a spec for the specified module. The finder will search for the module only within the path entry to which it is assigned. If a spec cannot be found, None is returned. When passed in, target is a module object that the finder may use to make a more educated guess about what spec to return. importlib.util.spec_from_loader() may be useful for implementing concrete PathEntryFinders.  New in version 3.4.

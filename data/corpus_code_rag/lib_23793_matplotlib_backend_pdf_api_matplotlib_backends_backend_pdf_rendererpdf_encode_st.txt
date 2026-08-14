@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.RendererPdf.encode_string
+
+encode_string(s, fonttype)[source]

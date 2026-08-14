@@ -1,0 +1,4 @@
+# python.library.asyncio-stream#asyncio.StreamReader.readexactly
+
+coroutine readexactly(n)  
+Read exactly n bytes. Raise an IncompleteReadError if EOF is reached before n can be read. Use the IncompleteReadError.partial attribute to get the partially read data.

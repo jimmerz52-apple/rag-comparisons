@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.db.SessionStore.create_model_instance
+
+create_model_instance(data)  
+Returns a new instance of the session model object, which represents the current session state. Overriding this method provides the ability to modify session model data before it’s saved to database.

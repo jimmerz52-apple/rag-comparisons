@@ -1,0 +1,5 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.show
+
+matplotlib.backends.backend_nbagg.show(block=None)[source]
+ 
+Show all figures. show blocks by calling mainloop if block is True, or if it is None and we are neither in IPython's %pylab mode, nor in interactive mode.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.buffer
+
+buffer  
+If set to true, sys.stdout and sys.stderr will be buffered in between startTest() and stopTest() being called. Collected output will only be echoed onto the real sys.stdout and sys.stderr if the test fails or errors. Any output is also attached to the failure / error message.  New in version 3.2.

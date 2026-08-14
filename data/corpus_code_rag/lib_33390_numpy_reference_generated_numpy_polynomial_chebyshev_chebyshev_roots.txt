@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebyshev.roots
+
+numpy.polynomial.chebyshev.Chebyshev.roots method   polynomial.chebyshev.Chebyshev.roots()[source]
+ 
+Return the roots of the series polynomial. Compute the roots for the series. Note that the accuracy of the roots decrease the further outside the domain they lie.  Returns 
+ 
+rootsndarray
+
+
+Array containing the roots of the series.

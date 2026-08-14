@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.DomainLiberal
+
+DefaultCookiePolicy.DomainLiberal  
+Equivalent to 0 (ie. all of the above Netscape domain strictness flags switched off).

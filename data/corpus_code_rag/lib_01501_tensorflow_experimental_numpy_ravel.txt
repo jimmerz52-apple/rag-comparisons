@@ -1,0 +1,8 @@
+# tensorflow.experimental.numpy.ravel
+
+tf.experimental.numpy.ravel TensorFlow variant of NumPy's ravel.  View aliases  Main aliases 
+tf.experimental.numpy.ndarray.ravel  
+tf.experimental.numpy.ravel(
+    a
+)
+ Unsupported arguments: order. See the NumPy documentation for numpy.ravel.

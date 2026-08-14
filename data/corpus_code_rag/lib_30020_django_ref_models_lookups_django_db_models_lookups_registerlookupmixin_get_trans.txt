@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.lookups.RegisterLookupMixin.get_transform
+
+get_transform(transform_name)  
+Returns a Transform named transform_name. The default implementation looks recursively on all parent classes to check if any has the registered transform named transform_name, returning the first match.

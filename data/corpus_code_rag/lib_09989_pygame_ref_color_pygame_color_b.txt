@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.b
+
+b 
+ Gets or sets the blue value of the Color. b -> int  The blue value of the Color.

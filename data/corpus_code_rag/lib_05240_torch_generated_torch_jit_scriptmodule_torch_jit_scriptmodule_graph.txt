@@ -1,0 +1,4 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.graph
+
+property graph  
+Returns a string representation of the internal graph for the forward method. See Interpreting Graphs for details.

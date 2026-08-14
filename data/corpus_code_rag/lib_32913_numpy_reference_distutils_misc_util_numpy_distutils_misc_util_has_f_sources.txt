@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.has_f_sources
+
+numpy.distutils.misc_util.has_f_sources(sources)[source]
+ 
+Return True if sources contains Fortran files

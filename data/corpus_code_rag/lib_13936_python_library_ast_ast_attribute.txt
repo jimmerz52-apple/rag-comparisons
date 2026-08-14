@@ -1,0 +1,9 @@
+# python.library.ast#ast.Attribute
+
+class ast.Attribute(value, attr, ctx)  
+Attribute access, e.g. d.keys. value is a node, typically a Name. attr is a bare string giving the name of the attribute, and ctx is Load, Store or Del according to how the attribute is acted on. >>> print(ast.dump(ast.parse('snake.colour', mode='eval'), indent=4))
+Expression(
+    body=Attribute(
+        value=Name(id='snake', ctx=Load()),
+        attr='colour',
+        ctx=Load()))

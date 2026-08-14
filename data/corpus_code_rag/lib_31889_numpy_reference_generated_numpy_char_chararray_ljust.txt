@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.ljust
+
+numpy.char.chararray.ljust method   char.chararray.ljust(width, fillchar=' ')[source]
+ 
+Return an array with the elements of self left-justified in a string of length width.  See also  char.ljust

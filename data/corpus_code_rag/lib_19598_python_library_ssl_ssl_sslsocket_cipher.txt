@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.cipher
+
+SSLSocket.cipher()  
+Returns a three-value tuple containing the name of the cipher being used, the version of the SSL protocol that defines its use, and the number of secret bits being used. If no connection has been established, returns None.

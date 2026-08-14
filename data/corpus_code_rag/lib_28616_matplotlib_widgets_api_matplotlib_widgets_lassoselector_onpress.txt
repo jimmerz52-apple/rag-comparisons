@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.LassoSelector.onpress
+
+onpress(event)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.samefile
+
+os.path.samefile(path1, path2)  
+Return True if both pathname arguments refer to the same file or directory. This is determined by the device number and i-node number and raises an exception if an os.stat() call on either pathname fails. Availability: Unix, Windows.  Changed in version 3.2: Added Windows support.   Changed in version 3.4: Windows now uses the same implementation as all other platforms.   Changed in version 3.6: Accepts a path-like object.

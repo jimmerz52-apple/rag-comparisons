@@ -1,0 +1,6 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.add_widget
+
+add_widget(widget) [source]
+ 
+Add widget to plugin. Alternatively, Plugin’s __add__ method is overloaded to add widgets: plugin += Widget(...)
+ Widgets can adjust required or optional arguments of filter function or parameters for the plugin. This is specified by the Widget’s ptype.

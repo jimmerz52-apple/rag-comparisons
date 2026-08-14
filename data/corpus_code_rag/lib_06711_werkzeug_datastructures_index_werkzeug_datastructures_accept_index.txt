@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Accept.index
+
+index(key)  
+Get the position of an entry or raise ValueError.  Parameters 
+key – The key to be looked up.    Changelog Changed in version 0.5: This used to raise IndexError, which was inconsistent with the list API.

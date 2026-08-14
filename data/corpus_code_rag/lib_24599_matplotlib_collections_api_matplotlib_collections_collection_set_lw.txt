@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.Collection.set_lw
+
+set_lw(lw)[source]
+ 
+Alias for set_linewidth.

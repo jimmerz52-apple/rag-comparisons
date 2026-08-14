@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_pickradius
+
+set_pickradius(d)[source]
+ 
+Set the pick radius used for containment tests. See contains for more details.  Parameters 
+ 
+dfloat
+
+
+Pick radius, in points.

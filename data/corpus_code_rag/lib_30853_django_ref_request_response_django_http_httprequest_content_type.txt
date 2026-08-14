@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.content_type
+
+HttpRequest.content_type  
+A string representing the MIME type of the request, parsed from the CONTENT_TYPE header.

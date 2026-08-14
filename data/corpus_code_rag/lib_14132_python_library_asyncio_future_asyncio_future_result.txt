@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.result
+
+result()  
+Return the result of the Future. If the Future is done and has a result set by the set_result() method, the result value is returned. If the Future is done and has an exception set by the set_exception() method, this method raises the exception. If the Future has been cancelled, this method raises a CancelledError exception. If the Future’s result isn’t yet available, this method raises a InvalidStateError exception.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.min
+
+min(dim=None, keepdim=False) -> Tensor or (Tensor, Tensor)  
+See torch.min()

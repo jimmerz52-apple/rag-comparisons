@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.OptionMenu
+
+class tkinter.tix.OptionMenu  
+The OptionMenu creates a menu button of options.

@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.Context
+
+class Context(dict_=None)  
+The constructor of django.template.Context takes an optional argument — a dictionary mapping variable names to variable values. For details, see Playing with Context objects below.

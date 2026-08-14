@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.decomposition.kernelpca#sklearn.decomposition.KernelPCA.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Transform X back to original space.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_components) 
+  Returns 
+ 
+X_newndarray of shape (n_samples, n_features) 
+   References “Learning to Find Pre-Images”, G BakIr et al, 2004.

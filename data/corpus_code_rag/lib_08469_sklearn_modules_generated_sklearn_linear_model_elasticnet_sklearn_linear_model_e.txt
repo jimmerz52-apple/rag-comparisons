@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.linear_model.elasticnet#sklearn.linear_model.ElasticNet.sparse_coef_
+
+property sparse_coef_  
+Sparse representation of the fitted coef_.

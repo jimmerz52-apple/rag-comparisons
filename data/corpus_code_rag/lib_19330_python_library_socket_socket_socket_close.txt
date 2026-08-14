@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.close
+
+socket.close()  
+Mark the socket closed. The underlying system resource (e.g. a file descriptor) is also closed when all file objects from makefile() are closed. Once that happens, all future operations on the socket object will fail. The remote end will receive no more data (after queued data is flushed). Sockets are automatically closed when they are garbage-collected, but it is recommended to close() them explicitly, or to use a with statement around them.  Changed in version 3.6: OSError is now raised if an error occurs when the underlying close() call is made.   Note close() releases the resource associated with a connection but does not necessarily close the connection immediately. If you want to close the connection in a timely fashion, call shutdown() before close().

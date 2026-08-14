@@ -1,0 +1,10 @@
+# torch.distributed#torch.distributed.barrier
+
+torch.distributed.barrier(group=None, async_op=False, device_ids=None) [source]
+ 
+Synchronizes all processes. This collective blocks processes until the whole group enters this function, if async_op is False, or if async work handle is called on wait().  Parameters 
+ 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+async_op (bool, optional) – Whether this op should be an async op 
+device_ids ([int], optional) – List of device/GPU ids. Valid only for NCCL backend.   Returns 
+Async work handle, if async_op is set to True. None, if not async_op or if not part of the group

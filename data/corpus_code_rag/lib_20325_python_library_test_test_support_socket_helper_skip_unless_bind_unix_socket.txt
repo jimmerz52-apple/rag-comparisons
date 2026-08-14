@@ -1,0 +1,4 @@
+# python.library.test#test.support.socket_helper.skip_unless_bind_unix_socket
+
+@test.support.socket_helper.skip_unless_bind_unix_socket  
+A decorator for running tests that require a functional bind() for Unix sockets.

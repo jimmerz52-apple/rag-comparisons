@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolViewsPositions.push_current
+
+push_current(figure=None)[source]
+ 
+Push the current view limits and position onto their respective stacks.

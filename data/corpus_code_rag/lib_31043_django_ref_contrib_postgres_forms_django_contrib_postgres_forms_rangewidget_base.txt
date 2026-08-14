@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.RangeWidget.base_widget
+
+base_widget  
+A RangeWidget comprises a 2-tuple of base_widget.

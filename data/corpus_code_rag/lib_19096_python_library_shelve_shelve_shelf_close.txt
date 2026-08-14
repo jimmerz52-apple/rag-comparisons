@@ -1,0 +1,4 @@
+# python.library.shelve#shelve.Shelf.close
+
+Shelf.close()  
+Synchronize and close the persistent dict object. Operations on a closed shelf will fail with a ValueError.

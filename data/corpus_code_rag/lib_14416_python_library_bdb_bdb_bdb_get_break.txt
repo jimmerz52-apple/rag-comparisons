@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.get_break
+
+get_break(filename, lineno)  
+Check if there is a breakpoint for lineno of filename.

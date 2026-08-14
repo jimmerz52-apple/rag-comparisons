@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.memory_snapshot
+
+torch.cuda.memory_snapshot() [source]
+ 
+Returns a snapshot of the CUDA memory allocator state across all devices. Interpreting the output of this function requires familiarity with the memory allocator internals.  Note See Memory management for more details about GPU memory management.

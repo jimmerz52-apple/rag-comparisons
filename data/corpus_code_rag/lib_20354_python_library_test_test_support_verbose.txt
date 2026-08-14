@@ -1,0 +1,4 @@
+# python.library.test#test.support.verbose
+
+test.support.verbose  
+True when verbose output is enabled. Should be checked when more detailed information is desired about a running test. verbose is set by test.regrtest.

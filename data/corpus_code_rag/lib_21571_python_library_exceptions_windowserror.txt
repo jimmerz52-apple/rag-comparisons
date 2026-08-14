@@ -1,0 +1,4 @@
+# python.library.exceptions#WindowsError
+
+exception WindowsError  
+Only available on Windows.

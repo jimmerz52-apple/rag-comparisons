@@ -1,0 +1,3 @@
+# django.topics.templates#django.template.backends.django.DjangoTemplates
+
+class DjangoTemplates

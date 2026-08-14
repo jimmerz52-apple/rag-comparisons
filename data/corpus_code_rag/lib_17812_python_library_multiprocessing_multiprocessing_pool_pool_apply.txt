@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.pool.Pool.apply
+
+apply(func[, args[, kwds]])  
+Call func with arguments args and keyword arguments kwds. It blocks until the result is ready. Given this blocks, apply_async() is better suited for performing work in parallel. Additionally, func is only executed in one of the workers of the pool.

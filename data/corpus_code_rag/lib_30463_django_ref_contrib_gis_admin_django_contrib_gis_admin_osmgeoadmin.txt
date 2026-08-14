@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.admin#django.contrib.gis.admin.OSMGeoAdmin
+
+class OSMGeoAdmin  
+A subclass of GeoModelAdmin that uses a Spherical Mercator projection with OpenStreetMap street data tiles.  Deprecated since version 4.0: This class is deprecated. Use GISModelAdmin instead.

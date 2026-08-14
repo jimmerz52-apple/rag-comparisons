@@ -1,0 +1,4 @@
+# torch.generated.torch.arcsinh#torch.arcsinh
+
+torch.arcsinh(input, *, out=None) → Tensor  
+Alias for torch.asinh().

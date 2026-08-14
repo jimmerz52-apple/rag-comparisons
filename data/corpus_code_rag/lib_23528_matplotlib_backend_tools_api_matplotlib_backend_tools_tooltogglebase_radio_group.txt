@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolToggleBase.radio_group
+
+radio_group=None
+ 
+Attribute to group 'radio' like tools (mutually exclusive). str that identifies the group or None if not belonging to a group.

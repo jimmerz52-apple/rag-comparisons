@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.Task.get_coro
+
+get_coro()  
+Return the coroutine object wrapped by the Task.  New in version 3.8.

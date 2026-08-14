@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.get_sound
+
+get_sound() 
+ get the currently playing Sound get_sound() -> Sound  Return the actual Sound object currently playing on this channel. If the channel is idle None is returned.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearend.apply_index
+
+pandas.tseries.offsets.BYearEnd.apply_index   BYearEnd.apply_index(other)

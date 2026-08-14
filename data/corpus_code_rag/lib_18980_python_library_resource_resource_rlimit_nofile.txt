@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_NOFILE
+
+resource.RLIMIT_NOFILE  
+The maximum number of open file descriptors for the current process.

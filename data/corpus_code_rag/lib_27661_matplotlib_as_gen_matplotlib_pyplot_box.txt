@@ -1,0 +1,11 @@
+# matplotlib._as_gen.matplotlib.pyplot.box
+
+matplotlib.pyplot.box   matplotlib.pyplot.box(on=None)[source]
+ 
+Turn the axes box on or off on the current axes.  Parameters 
+ 
+onbool or None
+
+
+The new Axes box state. If None, toggle the state.      See also  matplotlib.axes.Axes.set_frame_on()
+matplotlib.axes.Axes.get_frame_on()

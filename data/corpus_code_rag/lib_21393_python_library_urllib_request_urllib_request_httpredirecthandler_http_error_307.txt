@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPRedirectHandler.http_error_307
+
+HTTPRedirectHandler.http_error_307(req, fp, code, msg, hdrs)  
+The same as http_error_301(), but called for the ‘temporary redirect’ response.

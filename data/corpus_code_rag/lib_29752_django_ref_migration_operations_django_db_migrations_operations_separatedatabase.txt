@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.SeparateDatabaseAndState
+
+class SeparateDatabaseAndState(database_operations=None, state_operations=None)

@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.decomposition.latentdirichletallocation#sklearn.decomposition.LatentDirichletAllocation.score
+
+score(X, y=None) [source]
+ 
+Calculate approximate log-likelihood as score.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.  
+yIgnored 
+  Returns 
+ 
+scorefloat 
+
+Use approximate bound as score.

@@ -1,0 +1,9 @@
+# torch.generated.torch.nn.module#torch.nn.Module.register_buffer
+
+register_buffer(name, tensor, persistent=True) [source]
+ 
+Adds a buffer to the module. This is typically used to register a buffer that should not to be considered a model parameter. For example, BatchNorm’s running_mean is not a parameter, but is part of the module’s state. Buffers, by default, are persistent and will be saved alongside parameters. This behavior can be changed by setting persistent to False. The only difference between a persistent buffer and a non-persistent buffer is that the latter will not be a part of this module’s state_dict. Buffers can be accessed as attributes using given names.  Parameters 
+ 
+name (string) – name of the buffer. The buffer can be accessed from this module using the given name 
+tensor (Tensor) – buffer to be registered. 
+persistent (bool) – whether the buffer is part of this module’s state_dict.    Example: >>> self.register_buffer('running_mean', torch.zeros(num_features))

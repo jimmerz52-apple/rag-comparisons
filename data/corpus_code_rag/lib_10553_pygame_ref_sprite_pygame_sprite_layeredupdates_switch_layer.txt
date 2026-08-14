@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.switch_layer
+
+switch_layer() 
+ switches the sprites from layer1 to layer2 switch_layer(layer1_nr, layer2_nr) -> None  The layers number must exist, it is not checked.

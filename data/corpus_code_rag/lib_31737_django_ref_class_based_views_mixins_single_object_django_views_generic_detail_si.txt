@@ -1,0 +1,12 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectTemplateResponseMixin
+
+class django.views.generic.detail.SingleObjectTemplateResponseMixin  
+A mixin class that performs template-based response rendering for views that operate upon a single object instance. Requires that the view it is mixed with provides self.object, the object instance that the view is operating on. self.object will usually be, but is not required to be, an instance of a Django model. It may be None if the view is in the process of constructing a new instance. Extends  TemplateResponseMixin  Methods and Attributes  
+template_name_field  
+The field on the current object instance that can be used to determine the name of a candidate template. If either template_name_field itself or the value of the template_name_field on the current object instance is None, the object will not be used for a candidate template name. 
+  
+template_name_suffix  
+The suffix to append to the auto-generated candidate template name. Default suffix is _detail. 
+  
+get_template_names()  
+Returns a list of candidate template names. Returns the following list:  the value of template_name on the view (if provided) the contents of the template_name_field field on the object instance that the view is operating upon (if available) <app_label>/<model_name><template_name_suffix>.html

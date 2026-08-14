@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.SND_MEMORY
+
+winsound.SND_MEMORY  
+The sound parameter to PlaySound() is a memory image of a WAV file, as a bytes-like object.  Note This module does not support playing from a memory image asynchronously, so a combination of this flag and SND_ASYNC will raise RuntimeError.

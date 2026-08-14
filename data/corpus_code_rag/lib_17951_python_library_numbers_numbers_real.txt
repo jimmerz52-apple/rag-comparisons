@@ -1,0 +1,4 @@
+# python.library.numbers#numbers.Real
+
+class numbers.Real  
+To Complex, Real adds the operations that work on real numbers. In short, those are: a conversion to float, math.trunc(), round(), math.floor(), math.ceil(), divmod(), //, %, <, <=, >, and >=. Real also provides defaults for complex(), real, imag, and conjugate().

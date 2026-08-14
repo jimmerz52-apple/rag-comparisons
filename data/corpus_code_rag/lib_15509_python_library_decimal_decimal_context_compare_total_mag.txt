@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.compare_total_mag
+
+compare_total_mag(x, y)  
+Compares two operands using their abstract representation, ignoring sign.

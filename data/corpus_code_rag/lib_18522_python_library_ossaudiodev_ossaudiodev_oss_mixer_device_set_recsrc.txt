@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.set_recsrc
+
+oss_mixer_device.set_recsrc(bitmask)  
+Call this function to specify a recording source. Returns a bitmask indicating the new recording source (or sources) if successful; raises OSError if an invalid source was specified. To set the current recording source to the microphone input: mixer.setrecsrc (1 << ossaudiodev.SOUND_MIXER_MIC)

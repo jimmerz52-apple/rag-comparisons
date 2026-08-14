@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.rangeindex.from_range
+
+pandas.RangeIndex.from_range   classmethodRangeIndex.from_range(data, name=None, dtype=None)[source]
+ 
+Create RangeIndex from a range object.  Returns 
+ RangeIndex

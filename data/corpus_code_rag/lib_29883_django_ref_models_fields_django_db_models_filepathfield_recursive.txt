@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.FilePathField.recursive
+
+FilePathField.recursive  
+Optional. Either True or False. Default is False. Specifies whether all subdirectories of path should be included

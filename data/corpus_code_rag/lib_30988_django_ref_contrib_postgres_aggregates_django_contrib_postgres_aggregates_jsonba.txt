@@ -1,0 +1,30 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.JSONBAgg
+
+class JSONBAgg(expressions, distinct=False, filter=None, default=None, ordering=(), **extra)  
+Returns the input values as a JSON array, or default if there are no values. You can query the result using key and index lookups.  
+distinct  
+ New in Django 3.2.  An optional boolean argument that determines if array values will be distinct. Defaults to False. 
+  
+ordering  
+ New in Django 3.2.  An optional string of a field name (with an optional "-" prefix which indicates descending order) or an expression (or a tuple or list of strings and/or expressions) that specifies the ordering of the elements in the result list. Examples are the same as for ArrayAgg.ordering. 
+ Usage example: class Room(models.Model):
+    number = models.IntegerField(unique=True)
+
+class HotelReservation(model.Model):
+    room = models.ForeignKey('Room', on_delete=models.CASCADE)
+    start = models.DateTimeField()
+    end = models.DateTimeField()
+    requirements = models.JSONField(blank=True, null=True)
+
+>>> from django.contrib.postgres.aggregates import JSONBAgg
+>>> Room.objects.annotate(
+...     requirements=JSONBAgg(
+...         'hotelreservation__requirements',
+...         ordering='-hotelreservation__start',
+...     )
+... ).filter(requirements__0__sea_view=True).values('number', 'requirements')
+<QuerySet [{'number': 102, 'requirements': [
+    {'parking': False, 'sea_view': True, 'double_bed': False},
+    {'parking': True, 'double_bed': True}
+]}]>
+  Deprecated since version 4.0: If there are no rows and default is not provided, JSONBAgg returns an empty list instead of None. This behavior is deprecated and will be removed in Django 5.0. If you need it, explicitly set default to Value('[]').

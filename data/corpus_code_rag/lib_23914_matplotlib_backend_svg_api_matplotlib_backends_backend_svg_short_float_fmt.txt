@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.short_float_fmt
+
+matplotlib.backends.backend_svg.short_float_fmt(x)[source]
+ 
+Create a short string representation of a float, which is %f formatting with trailing zeros and the decimal point removed.

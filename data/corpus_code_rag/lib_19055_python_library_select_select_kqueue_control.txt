@@ -1,0 +1,5 @@
+# python.library.select#select.kqueue.control
+
+kqueue.control(changelist, max_events[, timeout]) → eventlist  
+Low level interface to kevent  changelist must be an iterable of kevent objects or None
+ max_events must be 0 or a positive integer timeout in seconds (floats possible); the default is None, to wait forever   Changed in version 3.5: The function is now retried with a recomputed timeout when interrupted by a signal, except if the signal handler raises an exception (see PEP 475 for the rationale), instead of raising InterruptedError.

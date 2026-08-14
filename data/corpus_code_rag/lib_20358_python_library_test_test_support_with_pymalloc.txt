@@ -1,0 +1,4 @@
+# python.library.test#test.support.with_pymalloc
+
+test.support.with_pymalloc()  
+Return _testcapi.WITH_PYMALLOC.

@@ -1,0 +1,26 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.math_to_image
+
+matplotlib.mathtext.math_to_image(s, filename_or_obj, prop=None, dpi=None, format=None)[source]
+ 
+Given a math expression, renders it in a closely-clipped bounding box to an image file.  Parameters 
+ 
+sstr
+
+
+A math expression. The math portion must be enclosed in dollar signs.  
+filename_or_objstr or path-like or file-like
+
+
+Where to write the image data.  
+propFontProperties, optional
+
+
+The size and style of the text.  
+dpifloat, optional
+
+
+The output dpi. If not set, the dpi is determined as for Figure.savefig.  
+formatstr, optional
+
+
+The output format, e.g., 'svg', 'pdf', 'ps' or 'png'. If not set, the format is determined as for Figure.savefig.

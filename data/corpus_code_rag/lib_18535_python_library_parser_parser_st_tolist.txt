@@ -1,0 +1,4 @@
+# python.library.parser#parser.ST.tolist
+
+ST.tolist(line_info=False, col_info=False)  
+Same as st2list(st, line_info, col_info).

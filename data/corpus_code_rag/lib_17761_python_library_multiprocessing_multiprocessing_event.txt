@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Event
+
+class multiprocessing.Event  
+A clone of threading.Event.

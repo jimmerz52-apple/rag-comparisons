@@ -1,0 +1,12 @@
+# tensorflow.compat.v1.flags.listserializer
+
+tf.compat.v1.flags.ListSerializer Base class for generating string representations of a flag value. Inherits From: ArgumentSerializer  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.ListSerializer  
+tf.compat.v1.flags.ListSerializer(
+    list_sep
+)
+ Methods serialize 
+serialize(
+    value
+)
+ See base class.

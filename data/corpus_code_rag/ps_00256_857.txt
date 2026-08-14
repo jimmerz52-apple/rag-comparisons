@@ -1,0 +1,7 @@
+# 857
+Task: 857
+
+# Write a function to list out the list of given strings individually using map function.
+def listify_list(list1):
+  result = list(map(list,list1)) 
+  return result

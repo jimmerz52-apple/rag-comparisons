@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Range.make_content_range
+
+make_content_range(length)  
+Creates a ContentRange object from the current range and given content length.

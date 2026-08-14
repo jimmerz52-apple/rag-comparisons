@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer
+
+class xdrlib.Packer  
+Packer is the class for packing data into XDR representation. The Packer class is instantiated with no arguments.

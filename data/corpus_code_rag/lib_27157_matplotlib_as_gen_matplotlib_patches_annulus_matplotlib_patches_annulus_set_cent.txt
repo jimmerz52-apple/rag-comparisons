@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.set_center
+
+set_center(xy)[source]
+ 
+Set the center of the annulus.  Parameters 
+ 
+xy(float, float)

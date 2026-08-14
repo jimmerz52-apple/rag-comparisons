@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.interval.mid
+
+pandas.Interval.mid   Interval.mid
+ 
+Return the midpoint of the Interval.

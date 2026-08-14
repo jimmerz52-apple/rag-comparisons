@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.bquarterbegin.isanchored
+
+pandas.tseries.offsets.BQuarterBegin.isAnchored   BQuarterBegin.isAnchored()

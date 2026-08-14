@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGILL
+
+signal.SIGILL  
+Illegal instruction.

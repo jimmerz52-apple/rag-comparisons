@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_list_select_related
+
+ModelAdmin.get_list_select_related(request)  
+The get_list_select_related method is given the HttpRequest and should return a boolean or list as ModelAdmin.list_select_related does.

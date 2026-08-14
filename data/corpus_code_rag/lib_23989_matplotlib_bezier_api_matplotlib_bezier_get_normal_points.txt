@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.get_normal_points
+
+matplotlib.bezier.get_normal_points(cx, cy, cos_t, sin_t, length)[source]
+ 
+For a line passing through (cx, cy) and having an angle t, return locations of the two points located along its perpendicular line at the distance of length.

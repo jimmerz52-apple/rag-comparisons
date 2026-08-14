@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.urlconf
+
+HttpRequest.urlconf  
+This will be used as the root URLconf for the current request, overriding the ROOT_URLCONF setting. See How Django processes a request for details. urlconf can be set to None to revert any changes made by previous middleware and return to using the ROOT_URLCONF.

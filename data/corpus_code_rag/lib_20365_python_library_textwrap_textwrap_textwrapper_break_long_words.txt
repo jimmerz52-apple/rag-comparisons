@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.break_long_words
+
+break_long_words  
+(default: True) If true, then words longer than width will be broken in order to ensure that no lines are longer than width. If it is false, long words will not be broken, and some lines may be longer than width. (Long words will be put on a line by themselves, in order to minimize the amount by which width is exceeded.)

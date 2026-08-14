@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.lagcompanion
+
+numpy.polynomial.laguerre.lagcompanion   polynomial.laguerre.lagcompanion(c)[source]
+ 
+Return the companion matrix of c. The usual companion matrix of the Laguerre polynomials is already symmetric when c is a basis Laguerre polynomial, so no scaling is applied.  Parameters 
+ 
+carray_like
+
+
+1-D array of Laguerre series coefficients ordered from low to high degree.    Returns 
+ 
+matndarray
+
+
+Companion matrix of dimensions (deg, deg).     Notes  New in version 1.7.0.

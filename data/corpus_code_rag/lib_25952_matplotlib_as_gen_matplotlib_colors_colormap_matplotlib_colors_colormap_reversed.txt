@@ -1,0 +1,11 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.reversed
+
+reversed(name=None)[source]
+ 
+Return a reversed instance of the Colormap.  Note This function is not implemented for base class.   Parameters 
+ 
+namestr, optional
+
+
+The name for the reversed colormap. If it's None the name will be the name of the parent colormap + "_r".      See also  LinearSegmentedColormap.reversed
+ListedColormap.reversed

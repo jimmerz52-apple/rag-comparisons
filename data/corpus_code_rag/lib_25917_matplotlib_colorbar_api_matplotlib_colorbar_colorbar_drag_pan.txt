@@ -1,0 +1,3 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.drag_pan
+
+drag_pan(button, key, x, y)[source]

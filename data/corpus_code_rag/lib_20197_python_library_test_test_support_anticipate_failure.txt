@@ -1,0 +1,4 @@
+# python.library.test#test.support.anticipate_failure
+
+@test.support.anticipate_failure(condition)  
+A decorator to conditionally mark tests with unittest.expectedFailure(). Any use of this decorator should have an associated comment identifying the relevant tracker issue.

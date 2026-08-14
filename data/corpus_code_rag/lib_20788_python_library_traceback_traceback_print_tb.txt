@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.print_tb
+
+traceback.print_tb(tb, limit=None, file=None)  
+Print up to limit stack trace entries from traceback object tb (starting from the caller’s frame) if limit is positive. Otherwise, print the last abs(limit) entries. If limit is omitted or None, all entries are printed. If file is omitted or None, the output goes to sys.stderr; otherwise it should be an open file or file-like object to receive the output.  Changed in version 3.5: Added negative limit support.

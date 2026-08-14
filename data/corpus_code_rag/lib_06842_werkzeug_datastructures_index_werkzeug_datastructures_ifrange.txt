@@ -1,0 +1,12 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.IfRange
+
+class werkzeug.datastructures.IfRange(etag=None, date=None)  
+Very simple object that represents the If-Range header in parsed form. It will either have neither a etag or date or one of either but never both.  Changelog New in version 0.7.   
+date  
+The date in parsed format or None. 
+  
+etag  
+The etag parsed and unquoted. Ranges always operate on strong etags so the weakness information is not necessary. 
+  
+to_header()  
+Converts the object back into an HTTP header.

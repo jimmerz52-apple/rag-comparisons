@@ -1,0 +1,7 @@
+# python.library.urllib.error#urllib.error.URLError
+
+exception urllib.error.URLError  
+The handlers raise this exception (or derived exceptions) when they run into a problem. It is a subclass of OSError.  
+reason  
+The reason for this error. It can be a message string or another exception instance. 
+  Changed in version 3.3: URLError has been made a subclass of OSError instead of IOError.

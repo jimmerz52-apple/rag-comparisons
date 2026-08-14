@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.decomposition
+
+unicodedata.decomposition(chr)  
+Returns the character decomposition mapping assigned to the character chr as string. An empty string is returned in case no such mapping is defined.

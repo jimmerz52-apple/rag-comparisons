@@ -1,0 +1,4 @@
+# django.topics.db.transactions#django.db.transaction.savepoint_rollback
+
+savepoint_rollback(sid, using=None)  
+Rolls back the transaction to savepoint sid.

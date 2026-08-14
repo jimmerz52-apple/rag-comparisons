@@ -1,0 +1,12 @@
+# python.library.pathlib#pathlib.Path.exists
+
+Path.exists()  
+Whether the path points to an existing file or directory: >>> Path('.').exists()
+True
+>>> Path('setup.py').exists()
+True
+>>> Path('/etc').exists()
+True
+>>> Path('nonexistentfile').exists()
+False
+  Note If the path points to a symlink, exists() returns whether the symlink points to an existing file or directory.

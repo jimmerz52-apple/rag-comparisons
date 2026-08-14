@@ -1,0 +1,4 @@
+# python.library.crypt#crypt.METHOD_BLOWFISH
+
+crypt.METHOD_BLOWFISH  
+Another Modular Crypt Format method with 22 character salt and 31 character hash based on the Blowfish cipher.  New in version 3.7.

@@ -1,0 +1,4 @@
+# python.library.exceptions#IsADirectoryError
+
+exception IsADirectoryError  
+Raised when a file operation (such as os.remove()) is requested on a directory. Corresponds to errno EISDIR.

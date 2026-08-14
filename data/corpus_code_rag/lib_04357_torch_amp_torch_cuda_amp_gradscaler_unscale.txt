@@ -1,0 +1,12 @@
+# torch.amp#torch.cuda.amp.GradScaler.unscale_
+
+unscale_(optimizer) [source]
+ 
+Divides (“unscales”) the optimizer’s gradient tensors by the scale factor. unscale_() is optional, serving cases where you need to modify or inspect gradients between the backward pass(es) and step(). If unscale_() is not called explicitly, gradients will be unscaled automatically during step(). Simple example, using unscale_() to enable clipping of unscaled gradients: ...
+scaler.scale(loss).backward()
+scaler.unscale_(optimizer)
+torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm)
+scaler.step(optimizer)
+scaler.update()
+  Parameters 
+optimizer (torch.optim.Optimizer) – Optimizer that owns the gradients to be unscaled.    Note unscale_() does not incur a CPU-GPU sync.   Warning unscale_() should only be called once per optimizer per step() call, and only after all gradients for that optimizer’s assigned parameters have been accumulated. Calling unscale_() twice for a given optimizer between each step() triggers a RuntimeError.   Warning unscale_() may unscale sparse gradients out of place, replacing the .grad attribute.

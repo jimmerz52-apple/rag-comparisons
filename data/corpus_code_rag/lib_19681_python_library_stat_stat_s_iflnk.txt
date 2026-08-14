@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IFLNK
+
+stat.S_IFLNK  
+Symbolic link.

@@ -1,0 +1,4 @@
+# python.library.os#os.getpgrp
+
+os.getpgrp()  
+Return the id of the current process group. Availability: Unix.

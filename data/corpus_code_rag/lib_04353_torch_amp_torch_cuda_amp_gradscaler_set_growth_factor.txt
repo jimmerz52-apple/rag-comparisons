@@ -1,0 +1,6 @@
+# torch.amp#torch.cuda.amp.GradScaler.set_growth_factor
+
+set_growth_factor(new_factor) [source]
+ 
+ Parameters 
+new_scale (float) – Value to use as the new scale growth factor.

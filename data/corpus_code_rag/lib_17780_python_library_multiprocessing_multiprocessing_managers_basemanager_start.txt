@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseManager.start
+
+start([initializer[, initargs]])  
+Start a subprocess to start the manager. If initializer is not None then the subprocess will call initializer(*initargs) when it starts.

@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.filename
+
+ZipFile.filename  
+Name of the ZIP file.

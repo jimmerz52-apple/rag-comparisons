@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer#skimage.viewer.ImageViewer.dock_areas
+
+dock_areas = {'bottom': None, 'left': None, 'right': None, 'top': None}

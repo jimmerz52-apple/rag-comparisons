@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.minmaxscaler#sklearn.preprocessing.MinMaxScaler.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Undo the scaling of X according to feature_range.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input data that will be transformed. It cannot be sparse.    Returns 
+ 
+Xtndarray of shape (n_samples, n_features) 
+
+Transformed data.

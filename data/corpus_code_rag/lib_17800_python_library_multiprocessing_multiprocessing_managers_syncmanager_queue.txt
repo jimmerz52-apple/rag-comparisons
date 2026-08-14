@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Queue
+
+Queue([maxsize])  
+Create a shared queue.Queue object and return a proxy for it.

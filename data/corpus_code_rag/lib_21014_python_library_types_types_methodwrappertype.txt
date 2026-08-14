@@ -1,0 +1,4 @@
+# python.library.types#types.MethodWrapperType
+
+types.MethodWrapperType  
+The type of bound methods of some built-in data types and base classes. For example it is the type of object().__str__.  New in version 3.7.

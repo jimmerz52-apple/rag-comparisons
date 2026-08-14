@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.device
+
+device  
+Is the torch.device where this Tensor is.

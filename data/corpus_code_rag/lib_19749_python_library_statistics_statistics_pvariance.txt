@@ -1,0 +1,17 @@
+# python.library.statistics#statistics.pvariance
+
+statistics.pvariance(data, mu=None)  
+Return the population variance of data, a non-empty sequence or iterable of real-valued numbers. Variance, or second moment about the mean, is a measure of the variability (spread or dispersion) of data. A large variance indicates that the data is spread out; a small variance indicates it is clustered closely around the mean. If the optional second argument mu is given, it is typically the mean of the data. It can also be used to compute the second moment around a point that is not the mean. If it is missing or None (the default), the arithmetic mean is automatically calculated. Use this function to calculate the variance from the entire population. To estimate the variance from a sample, the variance() function is usually a better choice. Raises StatisticsError if data is empty. Examples: >>> data = [0.0, 0.25, 0.25, 1.25, 1.5, 1.75, 2.75, 3.25]
+>>> pvariance(data)
+1.25
+ If you have already calculated the mean of your data, you can pass it as the optional second argument mu to avoid recalculation: >>> mu = mean(data)
+>>> pvariance(data, mu)
+1.25
+ Decimals and Fractions are supported: >>> from decimal import Decimal as D
+>>> pvariance([D("27.5"), D("30.25"), D("30.25"), D("34.5"), D("41.75")])
+Decimal('24.815')
+
+>>> from fractions import Fraction as F
+>>> pvariance([F(1, 4), F(5, 4), F(1, 2)])
+Fraction(13, 72)
+  Note When called with the entire population, this gives the population variance σ². When called on a sample instead, this is the biased sample variance s², also known as variance with N degrees of freedom. If you somehow know the true population mean μ, you may use this function to calculate the variance of a sample, giving the known population mean as the second argument. Provided the data points are a random sample of the population, the result will be an unbiased estimate of the population variance.

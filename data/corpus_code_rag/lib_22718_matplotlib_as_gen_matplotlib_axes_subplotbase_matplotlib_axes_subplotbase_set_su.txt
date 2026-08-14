@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.subplotbase#matplotlib.axes.SubplotBase.set_subplotspec
+
+set_subplotspec(subplotspec)[source]
+ 
+Set the SubplotSpec. instance associated with the subplot.

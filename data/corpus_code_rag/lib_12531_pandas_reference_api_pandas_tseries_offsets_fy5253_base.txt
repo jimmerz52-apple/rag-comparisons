@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.fy5253.base
+
+pandas.tseries.offsets.FY5253.base   FY5253.base
+ 
+Returns a copy of the calling offset object with n=1 and all other attributes equal.

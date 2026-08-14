@@ -1,0 +1,14 @@
+# pygame.ref.mask#pygame.mask.Mask.get_at
+
+get_at() 
+ Gets the bit at the given position get_at((x, y)) -> int      
+Parameters:
+
+pos (tuple(int, int) or list[int, int]) -- the position of the bit to get  
+Returns:
+1 if the bit is set, 0 if the bit is not set  
+Return type:
+int  
+Raises:
+
+IndexError -- if the position is outside of the mask's bounds

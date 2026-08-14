@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.app
+
+Module: tf.compat.v1.app Generic entry point script. Modules flags module: Import router for absl.flags. See https://github.com/abseil/abseil-py Functions run(...): Runs the program with an optional 'main' function and 'argv' list.

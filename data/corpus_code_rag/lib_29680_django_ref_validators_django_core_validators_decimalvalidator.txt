@@ -1,0 +1,7 @@
+# django.ref.validators#django.core.validators.DecimalValidator
+
+class DecimalValidator(max_digits, decimal_places)  
+Raises ValidationError with the following codes:  
+'max_digits' if the number of digits is larger than max_digits. 
+'max_decimal_places' if the number of decimals is larger than decimal_places. 
+'max_whole_digits' if the number of whole digits is larger than the difference between max_digits and decimal_places.

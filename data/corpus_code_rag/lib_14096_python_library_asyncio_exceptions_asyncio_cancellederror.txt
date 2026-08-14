@@ -1,0 +1,4 @@
+# python.library.asyncio-exceptions#asyncio.CancelledError
+
+exception asyncio.CancelledError  
+The operation has been cancelled. This exception can be caught to perform custom operations when asyncio Tasks are cancelled. In almost all situations the exception must be re-raised.  Changed in version 3.8: CancelledError is now a subclass of BaseException.

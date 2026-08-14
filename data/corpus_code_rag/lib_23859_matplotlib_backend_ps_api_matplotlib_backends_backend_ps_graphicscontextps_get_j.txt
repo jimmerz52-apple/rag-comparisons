@@ -1,0 +1,5 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.GraphicsContextPS.get_joinstyle
+
+get_joinstyle()[source]
+ 
+Return the JoinStyle.

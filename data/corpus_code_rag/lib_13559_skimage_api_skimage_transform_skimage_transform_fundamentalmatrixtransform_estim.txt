@@ -1,0 +1,16 @@
+# skimage.api.skimage.transform#skimage.transform.FundamentalMatrixTransform.estimate
+
+estimate(src, dst) [source]
+ 
+Estimate fundamental matrix using 8-point algorithm. The 8-point algorithm requires at least 8 corresponding point pairs for a well-conditioned solution, otherwise the over-determined solution is estimated.  Parameters 
+ 
+src(N, 2) array 
+
+Source coordinates.  
+dst(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.

@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.has_section
+
+has_section(section)  
+Indicates whether the named section is present in the configuration. The default section is not acknowledged.

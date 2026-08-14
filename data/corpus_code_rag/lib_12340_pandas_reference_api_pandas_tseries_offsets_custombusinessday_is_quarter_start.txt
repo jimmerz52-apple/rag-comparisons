@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.is_quarter_start
+
+pandas.tseries.offsets.CustomBusinessDay.is_quarter_start   CustomBusinessDay.is_quarter_start()

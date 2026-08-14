@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.argmax
+
+tf.experimental.numpy.argmax TensorFlow variant of NumPy's argmax. 
+tf.experimental.numpy.argmax(
+    a, axis=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.argmax.

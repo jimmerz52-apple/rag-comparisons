@@ -1,0 +1,7 @@
+# torch.nn.functional#torch.nn.functional.multi_margin_loss
+
+torch.nn.functional.multi_margin_loss(input, target, p=1, margin=1.0, weight=None, size_average=None, reduce=None, reduction='mean') [source]
+ 
+ multi_margin_loss(input, target, p=1, margin=1, weight=None, size_average=None,
+
+reduce=None, reduction=’mean’) -> Tensor   See MultiMarginLoss for details.

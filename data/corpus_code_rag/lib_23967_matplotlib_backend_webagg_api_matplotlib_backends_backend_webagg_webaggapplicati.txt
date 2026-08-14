@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.WebAggApplication.MplJs
+
+classMplJs(application:tornado.web.Application, request:tornado.httputil.HTTPServerRequest, **kwargs:Any)[source]
+ 
+Bases: tornado.web.RequestHandler   get()[source]

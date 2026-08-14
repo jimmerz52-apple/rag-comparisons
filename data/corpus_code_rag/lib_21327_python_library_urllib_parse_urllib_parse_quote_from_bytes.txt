@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.quote_from_bytes
+
+urllib.parse.quote_from_bytes(bytes, safe='/')  
+Like quote(), but accepts a bytes object rather than a str, and does not perform string-to-bytes encoding. Example: quote_from_bytes(b'a&\xef') yields 'a%26%EF'.

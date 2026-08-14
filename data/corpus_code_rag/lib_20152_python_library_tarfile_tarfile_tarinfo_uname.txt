@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.uname
+
+TarInfo.uname  
+User name.

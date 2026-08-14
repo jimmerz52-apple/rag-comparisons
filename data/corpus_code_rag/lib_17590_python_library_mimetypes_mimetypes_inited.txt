@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.inited
+
+mimetypes.inited  
+Flag indicating whether or not the global data structures have been initialized. This is set to True by init().

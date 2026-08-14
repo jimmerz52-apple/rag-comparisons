@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.PyDLL._handle
+
+PyDLL._handle  
+The system handle used to access the library.

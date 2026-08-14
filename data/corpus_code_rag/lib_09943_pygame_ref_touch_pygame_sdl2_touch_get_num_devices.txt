@@ -1,0 +1,4 @@
+# pygame.ref.touch#pygame._sdl2.touch.get_num_devices
+
+pygame._sdl2.touch.get_num_devices() 
+ get the number of touch devices get_num_devices() -> int  Return the number of available touch devices.

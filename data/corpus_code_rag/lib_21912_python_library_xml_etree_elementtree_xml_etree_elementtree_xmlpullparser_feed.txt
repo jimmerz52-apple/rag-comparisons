@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.XMLPullParser.feed
+
+feed(data)  
+Feed the given bytes data to the parser.

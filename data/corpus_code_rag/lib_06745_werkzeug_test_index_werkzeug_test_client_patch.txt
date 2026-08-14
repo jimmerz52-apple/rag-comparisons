@@ -1,0 +1,8 @@
+# werkzeug.test.index#werkzeug.test.Client.patch
+
+patch(*args, **kw)  
+Call open() with method set to PATCH.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse

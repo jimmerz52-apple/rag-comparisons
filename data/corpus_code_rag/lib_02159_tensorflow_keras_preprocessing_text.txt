@@ -1,0 +1,3 @@
+# tensorflow.keras.preprocessing.text
+
+Module: tf.keras.preprocessing.text Utilities for text input preprocessing. Classes class Tokenizer: Text tokenization utility class. Functions hashing_trick(...): Converts a text to a sequence of indexes in a fixed-size hashing space. one_hot(...): One-hot encodes a text into a list of word indexes of size n. text_to_word_sequence(...): Converts a text to a sequence of words (or tokens). tokenizer_from_json(...): Parses a JSON tokenizer configuration file and returns a

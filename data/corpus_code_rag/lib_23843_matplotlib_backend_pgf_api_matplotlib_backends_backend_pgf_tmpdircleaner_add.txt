@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.TmpDirCleaner.add
+
+staticadd(tmpdir)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

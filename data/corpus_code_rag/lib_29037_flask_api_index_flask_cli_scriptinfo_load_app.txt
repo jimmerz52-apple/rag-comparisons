@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.ScriptInfo.load_app
+
+load_app()  
+Loads the Flask app (if not yet loaded) and returns it. Calling this multiple times will just result in the already loaded app to be returned.

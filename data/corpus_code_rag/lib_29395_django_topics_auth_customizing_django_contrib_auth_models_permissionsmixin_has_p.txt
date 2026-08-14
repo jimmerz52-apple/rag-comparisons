@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.PermissionsMixin.has_perms
+
+has_perms(perm_list, obj=None)  
+Returns True if the user has each of the specified permissions, where each perm is in the format "<app label>.<permission codename>". If User.is_active and is_superuser are both True, this method always returns True. If obj is passed in, this method won’t check for permissions for the model, but for the specific object.

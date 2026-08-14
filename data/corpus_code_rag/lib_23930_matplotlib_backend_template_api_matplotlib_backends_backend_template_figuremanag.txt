@@ -1,0 +1,5 @@
+# matplotlib.backend_template_api#matplotlib.backends.backend_template.FigureManager
+
+matplotlib.backends.backend_template.FigureManager[source]
+ 
+alias of matplotlib.backends.backend_template.FigureManagerTemplate

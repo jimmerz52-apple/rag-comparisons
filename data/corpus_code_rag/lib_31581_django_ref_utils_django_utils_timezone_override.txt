@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.override
+
+override(timezone)  
+This is a Python context manager that sets the current time zone on entry with activate(), and restores the previously active time zone on exit. If the timezone argument is None, the current time zone is unset on entry with deactivate() instead. override is also usable as a function decorator.

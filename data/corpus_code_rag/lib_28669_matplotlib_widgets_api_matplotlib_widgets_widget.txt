@@ -1,0 +1,20 @@
+# matplotlib.widgets_api#matplotlib.widgets.Widget
+
+classmatplotlib.widgets.Widget[source]
+ 
+Bases: object Abstract base class for GUI neutral widgets.   propertyactive
+ 
+Is the widget active? 
+   drawon=True
+
+   eventson=True
+
+   get_active()[source]
+ 
+Get whether the widget is active. 
+   ignore(event)[source]
+ 
+Return whether event should be ignored. This method should be called at the beginning of any event callback. 
+   set_active(active)[source]
+ 
+Set whether the widget is active.

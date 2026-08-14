@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ForeignKey.db_constraint
+
+ForeignKey.db_constraint  
+Controls whether or not a constraint should be created in the database for this foreign key. The default is True, and that’s almost certainly what you want; setting this to False can be very bad for data integrity. That said, here are some scenarios where you might want to do this:  You have legacy data that is not valid. You’re sharding your database.  If this is set to False, accessing a related object that doesn’t exist will raise its DoesNotExist exception.

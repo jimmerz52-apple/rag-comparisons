@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MaildirMessage.set_info
+
+set_info(info)  
+Set “info” to info, which should be a string.

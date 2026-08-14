@@ -1,0 +1,23 @@
+# skimage.api.skimage.feature#skimage.feature.corner_kitchen_rosenfeld
+
+skimage.feature.corner_kitchen_rosenfeld(image, mode='constant', cval=0) [source]
+ 
+Compute Kitchen and Rosenfeld corner measure response image. The corner measure is calculated as follows: (imxx * imy**2 + imyy * imx**2 - 2 * imxy * imx * imy)
+    / (imx**2 + imy**2)
+ Where imx and imy are the first and imxx, imxy, imyy the second derivatives.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+mode{‘constant’, ‘reflect’, ‘wrap’, ‘nearest’, ‘mirror’}, optional 
+
+How to handle values outside the image borders.  
+cvalfloat, optional 
+
+Used in conjunction with mode ‘constant’, the value outside the image boundaries.    Returns 
+ 
+responsendarray 
+
+Kitchen and Rosenfeld response image.     References  
+1  
+Kitchen, L., & Rosenfeld, A. (1982). Gray-level corner detection. Pattern recognition letters, 1(2), 95-102. DOI:10.1016/0167-8655(82)90020-4

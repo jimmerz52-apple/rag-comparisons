@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.lastweekofmonth.base
+
+pandas.tseries.offsets.LastWeekOfMonth.base   LastWeekOfMonth.base
+ 
+Returns a copy of the calling offset object with n=1 and all other attributes equal.

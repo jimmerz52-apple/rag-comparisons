@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.dt.timetz
+
+pandas.Series.dt.timetz   Series.dt.timetz
+ 
+Returns numpy array of datetime.time objects with timezone information. The time part of the Timestamps.

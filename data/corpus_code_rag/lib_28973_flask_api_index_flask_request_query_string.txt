@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.query_string
+
+query_string  
+The part of the URL after the “?”. This is the raw value, use args for the parsed values.

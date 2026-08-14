@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.DocXMLRPCServer
+
+class xmlrpc.server.DocXMLRPCServer(addr, requestHandler=DocXMLRPCRequestHandler, logRequests=True, allow_none=False, encoding=None, bind_and_activate=True, use_builtin_types=True)  
+Create a new server instance. All parameters have the same meaning as for SimpleXMLRPCServer; requestHandler defaults to DocXMLRPCRequestHandler.  Changed in version 3.3: The use_builtin_types flag was added.

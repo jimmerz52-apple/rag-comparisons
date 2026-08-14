@@ -1,0 +1,15 @@
+# django.topics.testing.tools#django.test.Client.get
+
+get(path, data=None, follow=False, secure=False, **extra)  
+Makes a GET request on the provided path and returns a Response object, which is documented below. The key-value pairs in the data dictionary are used to create a GET data payload. For example: >>> c = Client()
+>>> c.get('/customers/details/', {'name': 'fred', 'age': 7})
+ …will result in the evaluation of a GET request equivalent to: /customers/details/?name=fred&age=7
+ The extra keyword arguments parameter can be used to specify headers to be sent in the request. For example: >>> c = Client()
+>>> c.get('/customers/details/', {'name': 'fred', 'age': 7},
+...       HTTP_ACCEPT='application/json')
+ …will send the HTTP header HTTP_ACCEPT to the details view, which is a good way to test code paths that use the django.http.HttpRequest.accepts() method.  CGI specification The headers sent via **extra should follow CGI specification. For example, emulating a different “Host” header as sent in the HTTP request from the browser to the server should be passed as HTTP_HOST.  If you already have the GET arguments in URL-encoded form, you can use that encoding instead of using the data argument. For example, the previous GET request could also be posed as: >>> c = Client()
+>>> c.get('/customers/details/?name=fred&age=7')
+ If you provide a URL with both an encoded GET data and a data argument, the data argument will take precedence. If you set follow to True the client will follow any redirects and a redirect_chain attribute will be set in the response object containing tuples of the intermediate urls and status codes. If you had a URL /redirect_me/ that redirected to /next/, that redirected to /final/, this is what you’d see: >>> response = c.get('/redirect_me/', follow=True)
+>>> response.redirect_chain
+[('http://testserver/next/', 302), ('http://testserver/final/', 302)]
+ If you set secure to True the client will emulate an HTTPS request.

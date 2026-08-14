@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.distance_to
+
+distance_to() 
+ calculates the Euclidean distance to a given vector. distance_to(Vector3) -> float

@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogLocator.base
+
+base(base)[source]
+ 
+Set the log base (major tick every base**i, i integer).

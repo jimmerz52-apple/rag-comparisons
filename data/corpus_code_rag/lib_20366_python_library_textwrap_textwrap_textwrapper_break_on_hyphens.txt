@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.break_on_hyphens
+
+break_on_hyphens  
+(default: True) If true, wrapping will occur preferably on whitespaces and right after hyphens in compound words, as it is customary in English. If false, only whitespaces will be considered as potentially good places for line breaks, but you need to set break_long_words to false if you want truly insecable words. Default behaviour in previous versions was to always allow breaking hyphenated words.

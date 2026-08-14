@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.mean
+
+numpy.ndarray.mean method   ndarray.mean(axis=None, dtype=None, out=None, keepdims=False, *, where=True)
+ 
+Returns the average of the array elements along given axis. Refer to numpy.mean for full documentation.  See also  numpy.mean
+
+equivalent function

@@ -1,0 +1,4 @@
+# python.library.exceptions#ConnectionError
+
+exception ConnectionError  
+A base class for connection-related issues. Subclasses are BrokenPipeError, ConnectionAbortedError, ConnectionRefusedError and ConnectionResetError.

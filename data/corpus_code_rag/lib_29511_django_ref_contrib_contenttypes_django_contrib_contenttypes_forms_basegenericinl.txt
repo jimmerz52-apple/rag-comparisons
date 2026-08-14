@@ -1,0 +1,3 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.forms.BaseGenericInlineFormSet
+
+class BaseGenericInlineFormSet

@@ -1,0 +1,9 @@
+# torch.rpc#torch.distributed.rpc.WorkerInfo
+
+class torch.distributed.rpc.WorkerInfo  
+A structure that encapsulates information of a worker in the system. Contains the name and ID of the worker. This class is not meant to be constructed directly, rather, an instance can be retrieved through get_worker_info() and the result can be passed in to functions such as rpc_sync(), rpc_async(), remote() to avoid copying a string on every invocation.  
+property id  
+Globally unique id to identify the worker. 
+  
+property name  
+The name of the worker.

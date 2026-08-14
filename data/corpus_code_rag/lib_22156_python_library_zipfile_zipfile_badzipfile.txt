@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.BadZipFile
+
+exception zipfile.BadZipFile  
+The error raised for bad ZIP files.  New in version 3.2.

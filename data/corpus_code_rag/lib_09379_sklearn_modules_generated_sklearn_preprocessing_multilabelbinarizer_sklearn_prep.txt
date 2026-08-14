@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.multilabelbinarizer#sklearn.preprocessing.MultiLabelBinarizer.inverse_transform
+
+inverse_transform(yt) [source]
+ 
+Transform the given indicator matrix into label sets.  Parameters 
+ 
+yt{ndarray, sparse matrix} of shape (n_samples, n_classes) 
+
+A matrix containing only 1s ands 0s.    Returns 
+ 
+ylist of tuples 
+
+The set of labels for each sample such that y[i] consists of classes_[j] for each yt[i, j] == 1.

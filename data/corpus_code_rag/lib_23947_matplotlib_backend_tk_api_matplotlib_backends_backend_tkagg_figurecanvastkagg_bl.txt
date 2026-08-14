@@ -1,0 +1,5 @@
+# matplotlib.backend_tk_api#matplotlib.backends.backend_tkagg.FigureCanvasTkAgg.blit
+
+blit(bbox=None)[source]
+ 
+Blit the canvas in bbox (default entire canvas).

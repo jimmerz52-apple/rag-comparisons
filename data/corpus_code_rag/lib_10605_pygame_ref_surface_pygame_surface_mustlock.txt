@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.mustlock
+
+mustlock() 
+ test if the Surface requires locking mustlock() -> bool  Returns True if the Surface is required to be locked to access pixel data. Usually pure software Surfaces do not require locking. This method is rarely needed, since it is safe and quickest to just lock all Surfaces as needed. All pygame functions will automatically lock and unlock the Surface data as needed. If a section of code is going to make calls that will repeatedly lock and unlock the Surface many times, it can be helpful to wrap the block inside a lock and unlock pair.

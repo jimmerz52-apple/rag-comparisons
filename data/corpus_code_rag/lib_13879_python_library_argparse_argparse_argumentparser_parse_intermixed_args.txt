@@ -1,0 +1,3 @@
+# python.library.argparse#argparse.ArgumentParser.parse_intermixed_args
+
+ArgumentParser.parse_intermixed_args(args=None, namespace=None)

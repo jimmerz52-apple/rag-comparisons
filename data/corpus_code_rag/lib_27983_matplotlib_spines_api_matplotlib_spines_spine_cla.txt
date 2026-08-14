@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.cla
+
+cla()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

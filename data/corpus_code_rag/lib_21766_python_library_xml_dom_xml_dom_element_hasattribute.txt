@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.hasAttribute
+
+Element.hasAttribute(name)  
+Return True if the element has an attribute named by name.

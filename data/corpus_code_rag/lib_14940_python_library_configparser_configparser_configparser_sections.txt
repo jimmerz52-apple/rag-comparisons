@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.sections
+
+sections()  
+Return a list of the sections available; the default section is not included in the list.

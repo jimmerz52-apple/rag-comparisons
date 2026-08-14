@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.arrays.intervalarray.closed
+
+pandas.arrays.IntervalArray.closed   propertyIntervalArray.closed
+ 
+Whether the intervals are closed on the left-side, right-side, both or neither.

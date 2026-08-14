@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.app_index_template
+
+AdminSite.app_index_template  
+Path to a custom template that will be used by the admin site app index view.

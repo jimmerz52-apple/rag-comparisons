@@ -1,0 +1,4 @@
+# python.library.random#random.getstate
+
+random.getstate()  
+Return an object capturing the current internal state of the generator. This object can be passed to setstate() to restore the state.

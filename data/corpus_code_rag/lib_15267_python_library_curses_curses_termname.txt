@@ -1,0 +1,4 @@
+# python.library.curses#curses.termname
+
+curses.termname()  
+Return the value of the environment variable TERM, as a bytes object, truncated to 14 characters.

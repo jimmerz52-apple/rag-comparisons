@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.is_interactive
+
+matplotlib.is_interactive()[source]
+ 
+Return whether to redraw after every plotting command.  Note This function is only intended for use in backends. End users should use pyplot.isinteractive instead.

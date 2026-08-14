@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.get_points
+
+get_points()[source]
+ 
+Get the points of the bounding box directly as a numpy array of the form: [[x0, y0], [x1, y1]].

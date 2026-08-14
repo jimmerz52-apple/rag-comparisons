@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ormqr
+
+ormqr(input2, input3, left=True, transpose=False) → Tensor  
+See torch.ormqr()

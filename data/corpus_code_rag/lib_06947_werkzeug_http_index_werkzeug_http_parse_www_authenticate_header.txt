@@ -1,0 +1,9 @@
+# werkzeug.http.index#werkzeug.http.parse_www_authenticate_header
+
+werkzeug.http.parse_www_authenticate_header(value, on_update=None)  
+Parse an HTTP WWW-Authenticate header into a WWWAuthenticate object.  Parameters 
+ 
+value (Optional[str]) – a WWW-Authenticate header to parse. 
+on_update (Optional[Callable[[werkzeug.datastructures.WWWAuthenticate], None]]) – an optional callable that is called every time a value on the WWWAuthenticate object is changed.   Returns 
+a WWWAuthenticate object.  Return type 
+werkzeug.datastructures.WWWAuthenticate

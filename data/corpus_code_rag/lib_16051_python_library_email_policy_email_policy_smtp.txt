@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.SMTP
+
+email.policy.SMTP  
+Suitable for serializing messages in conformance with the email RFCs. Like default, but with linesep set to \r\n, which is RFC compliant.

@@ -1,0 +1,4 @@
+# pygame.ref.overlay#pygame.Overlay.get_hardware
+
+get_hardware() 
+ test if the Overlay is hardware accelerated get_hardware(rect) -> int  Returns a True value when the Overlay is hardware accelerated. If the platform does not support acceleration, software rendering is used.

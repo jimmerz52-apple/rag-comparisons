@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.mul_
+
+mul_(value) → Tensor  
+In-place version of mul().

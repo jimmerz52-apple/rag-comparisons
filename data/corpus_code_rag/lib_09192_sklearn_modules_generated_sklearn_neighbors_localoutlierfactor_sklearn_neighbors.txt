@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.neighbors.localoutlierfactor#sklearn.neighbors.LocalOutlierFactor.fit
+
+fit(X, y=None) [source]
+ 
+Fit the local outlier factor detector from the training dataset.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) or (n_samples, n_samples) if metric=’precomputed’ 
+
+Training data.  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+selfLocalOutlierFactor 
+
+The fitted local outlier factor detector.

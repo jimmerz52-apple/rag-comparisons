@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.test_client_class
+
+test_client_class: Optional[Type[FlaskClient]] = None  
+the test client that is used with when test_client is used.  Changelog New in version 0.7.

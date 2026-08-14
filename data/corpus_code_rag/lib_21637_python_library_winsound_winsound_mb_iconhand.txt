@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.MB_ICONHAND
+
+winsound.MB_ICONHAND  
+Play the SystemHand sound.

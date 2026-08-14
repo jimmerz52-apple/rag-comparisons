@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.rotate
+
+rotate(theta)[source]
+ 
+Add a rotation (in radians) to this transform in place. Returns self, so this method can easily be chained with more calls to rotate(), rotate_deg(), translate() and scale().

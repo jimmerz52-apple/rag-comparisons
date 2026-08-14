@@ -1,0 +1,4 @@
+# python.library.os#os.extsep
+
+os.extsep  
+The character which separates the base filename from the extension; for example, the '.' in os.py. Also available via os.path.

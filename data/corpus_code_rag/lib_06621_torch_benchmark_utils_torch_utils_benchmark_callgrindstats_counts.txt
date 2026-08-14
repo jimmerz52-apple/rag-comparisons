@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.CallgrindStats.counts
+
+counts(*, denoise=False) [source]
+ 
+Returns the total number of instructions executed. See FunctionCounts.denoise() for an explation of the denoise arg.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.monthbegin.isanchored
+
+pandas.tseries.offsets.MonthBegin.isAnchored   MonthBegin.isAnchored()

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.squeeze
+
+numpy.ndarray.squeeze method   ndarray.squeeze(axis=None)
+ 
+Remove axes of length one from a. Refer to numpy.squeeze for full documentation.  See also  numpy.squeeze
+
+equivalent function

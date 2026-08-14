@@ -1,0 +1,3 @@
+# matplotlib.textpath_api#matplotlib.textpath.TextToPath.get_text_width_height_descent
+
+get_text_width_height_descent(s, prop, ismath)[source]

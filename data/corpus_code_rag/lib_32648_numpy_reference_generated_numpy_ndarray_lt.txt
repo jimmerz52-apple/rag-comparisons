@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__lt__
+
+numpy.ndarray.__lt__ method   ndarray.__lt__(value, /)
+ 
+Return self<value.

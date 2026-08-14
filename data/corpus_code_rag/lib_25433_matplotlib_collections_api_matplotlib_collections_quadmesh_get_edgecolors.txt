@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.get_edgecolors
+
+get_edgecolors()[source]
+ 
+Alias for get_edgecolor.

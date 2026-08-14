@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.MultipleLocator.view_limits
+
+view_limits(dmin, dmax)[source]
+ 
+Set the view limits to the nearest multiples of base that contain the data.

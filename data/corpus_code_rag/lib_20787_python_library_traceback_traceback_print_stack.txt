@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.print_stack
+
+traceback.print_stack(f=None, limit=None, file=None)  
+Print up to limit stack trace entries (starting from the invocation point) if limit is positive. Otherwise, print the last abs(limit) entries. If limit is omitted or None, all entries are printed. The optional f argument can be used to specify an alternate stack frame to start. The optional file argument has the same meaning as for print_tb().  Changed in version 3.5: Added negative limit support.

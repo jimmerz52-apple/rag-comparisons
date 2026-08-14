@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.RunSQL
+
+class RunSQL(sql, reverse_sql=None, state_operations=None, hints=None, elidable=False)

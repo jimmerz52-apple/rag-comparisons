@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_TLSv1_2
+
+ssl.HAS_TLSv1_2  
+Whether the OpenSSL library has built-in support for the TLS 1.2 protocol.  New in version 3.7.

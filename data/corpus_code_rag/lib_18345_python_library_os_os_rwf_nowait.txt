@@ -1,0 +1,4 @@
+# python.library.os#os.RWF_NOWAIT
+
+os.RWF_NOWAIT  
+Do not wait for data which is not immediately available. If this flag is specified, the system call will return instantly if it would have to read data from the backing storage or wait for a lock. If some data was successfully read, it will return the number of bytes read. If no bytes were read, it will return -1 and set errno to errno.EAGAIN. Availability: Linux 4.14 and newer.  New in version 3.7.

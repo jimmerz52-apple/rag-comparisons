@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes._CData.from_buffer_copy
+
+from_buffer_copy(source[, offset])  
+This method creates a ctypes instance, copying the buffer from the source object buffer which must be readable. The optional offset parameter specifies an offset into the source buffer in bytes; the default is zero. If the source buffer is not large enough a ValueError is raised. Raises an auditing event ctypes.cdata/buffer with arguments pointer, size, offset.

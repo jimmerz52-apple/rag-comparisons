@@ -1,0 +1,9 @@
+# torch.nn.quantized#torch.nn.quantized.InstanceNorm1d
+
+class torch.nn.quantized.InstanceNorm1d(num_features, weight, bias, scale, zero_point, eps=1e-05, momentum=0.1, affine=False, track_running_stats=False) [source]
+ 
+This is the quantized version of InstanceNorm1d.  Additional args:
+
+ 
+scale - quantization scale of the output, type: double. 
+zero_point - quantization zero point of the output, type: long.

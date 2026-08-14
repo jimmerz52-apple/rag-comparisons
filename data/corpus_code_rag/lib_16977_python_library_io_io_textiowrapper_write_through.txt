@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOWrapper.write_through
+
+write_through  
+Whether writes are passed immediately to the underlying binary buffer.  New in version 3.7.

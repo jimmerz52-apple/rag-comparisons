@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ClabelText.get_rotation
+
+get_rotation()[source]
+ 
+Return the text angle in degrees between 0 and 360.

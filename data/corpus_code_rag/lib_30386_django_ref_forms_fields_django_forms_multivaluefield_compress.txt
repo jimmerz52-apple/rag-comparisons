@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.MultiValueField.compress
+
+compress(data_list)  
+Takes a list of valid values and returns a “compressed” version of those values – in a single value. For example, SplitDateTimeField is a subclass which combines a time field and a date field into a datetime object. This method must be implemented in the subclasses.

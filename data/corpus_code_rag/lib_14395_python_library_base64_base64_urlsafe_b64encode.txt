@@ -1,0 +1,4 @@
+# python.library.base64#base64.urlsafe_b64encode
+
+base64.urlsafe_b64encode(s)  
+Encode bytes-like object s using the URL- and filesystem-safe alphabet, which substitutes - instead of + and _ instead of / in the standard Base64 alphabet, and return the encoded bytes. The result can still contain =.

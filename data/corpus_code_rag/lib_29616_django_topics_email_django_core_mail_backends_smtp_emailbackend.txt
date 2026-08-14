@@ -1,0 +1,23 @@
+# django.topics.email#django.core.mail.backends.smtp.EmailBackend
+
+class backends.smtp.EmailBackend(host=None, port=None, username=None, password=None, use_tls=None, fail_silently=False, use_ssl=None, timeout=None, ssl_keyfile=None, ssl_certfile=None, **kwargs)  
+This is the default backend. Email will be sent through a SMTP server. The value for each argument is retrieved from the matching setting if the argument is None:  
+host: EMAIL_HOST
+ 
+port: EMAIL_PORT
+ 
+username: EMAIL_HOST_USER
+ 
+password: EMAIL_HOST_PASSWORD
+ 
+use_tls: EMAIL_USE_TLS
+ 
+use_ssl: EMAIL_USE_SSL
+ 
+timeout: EMAIL_TIMEOUT
+ 
+ssl_keyfile: EMAIL_SSL_KEYFILE
+ 
+ssl_certfile: EMAIL_SSL_CERTFILE
+  The SMTP backend is the default configuration inherited by Django. If you want to specify it explicitly, put the following in your settings: EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+ If unspecified, the default timeout will be the one provided by socket.getdefaulttimeout(), which defaults to None (no timeout).

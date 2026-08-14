@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_zorder
+
+get_zorder()[source]
+ 
+Return the artist's zorder.

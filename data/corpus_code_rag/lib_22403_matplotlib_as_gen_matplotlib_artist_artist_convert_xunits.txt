@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.convert_xunits
+
+matplotlib.artist.Artist.convert_xunits   Artist.convert_xunits(x)[source]
+ 
+Convert x using the unit type of the xaxis. If the artist is not in contained in an Axes or if the xaxis does not have units, x itself is returned.

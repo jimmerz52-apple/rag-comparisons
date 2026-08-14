@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.pwd
+
+FTP.pwd()  
+Return the pathname of the current directory on the server.

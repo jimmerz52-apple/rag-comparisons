@@ -1,0 +1,4 @@
+# python.library.hmac#hmac.HMAC.digest_size
+
+HMAC.digest_size  
+The size of the resulting HMAC digest in bytes.

@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.get_source
+
+get_source(fullname)  
+Return the source code for the specified module. Raise ZipImportError if the module couldn’t be found, return None if the archive does contain the module, but has no source for it.

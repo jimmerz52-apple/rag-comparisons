@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse#matplotlib.patches.Ellipse.get_angle
+
+get_angle()[source]
+ 
+Return the angle of the ellipse.

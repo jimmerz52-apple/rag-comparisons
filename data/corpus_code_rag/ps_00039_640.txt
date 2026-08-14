@@ -1,0 +1,8 @@
+# 640
+Task: 640
+
+# Write a function to remove the parenthesis area in a string.
+import re
+def remove_parenthesis(items):
+ for item in items:
+    return (re.sub(r" ?\([^)]+\)", "", item))

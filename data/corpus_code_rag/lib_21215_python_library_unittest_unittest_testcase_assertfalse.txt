@@ -1,0 +1,6 @@
+# python.library.unittest#unittest.TestCase.assertFalse
+
+assertTrue(expr, msg=None)  
+assertFalse(expr, msg=None)  
+Test that expr is true (or false). Note that this is equivalent to bool(expr) is True and not to expr
+is True (use assertIs(expr, True) for the latter). This method should also be avoided when more specific methods are available (e.g. assertEqual(a, b) instead of assertTrue(a == b)), because they provide a better error message in case of failure.

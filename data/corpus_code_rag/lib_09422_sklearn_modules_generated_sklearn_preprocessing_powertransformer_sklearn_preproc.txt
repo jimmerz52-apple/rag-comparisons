@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.powertransformer#sklearn.preprocessing.PowerTransformer.transform
+
+transform(X) [source]
+ 
+Apply the power transform to each feature using the fitted lambdas.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data to be transformed using a power transformation.    Returns 
+ 
+X_transndarray of shape (n_samples, n_features) 
+
+The transformed data.

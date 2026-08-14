@@ -1,0 +1,41 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.PdfPages
+
+classmatplotlib.backends.backend_pgf.PdfPages(filename, *, keep_empty=True, metadata=None)[source]
+ 
+Bases: object A multi-page PDF file using the pgf backend Examples >>> import matplotlib.pyplot as plt
+>>> # Initialize:
+>>> with PdfPages('foo.pdf') as pdf:
+...     # As many times as you like, create a figure fig and save it:
+...     fig = plt.figure()
+...     pdf.savefig(fig)
+...     # When no figure is specified the current figure is saved
+...     pdf.savefig()
+ Create a new PdfPages object.  Parameters 
+ 
+filenamestr or path-like
+
+
+Plots using PdfPages.savefig will be written to a file at this location. Any older file with the same name is overwritten.  
+keep_emptybool, default: True
+
+
+If set to False, then empty pdf files will be deleted automatically when closed.  
+metadatadict, optional
+
+
+Information dictionary object (see PDF reference section 10.2.1 'Document Information Dictionary'), e.g.: {'Creator': 'My software', 'Author': 'Me', 'Title': 'Awesome'}. The standard keys are 'Title', 'Author', 'Subject', 'Keywords', 'Creator', 'Producer', 'CreationDate', 'ModDate', and 'Trapped'. Values have been predefined for 'Creator', 'Producer' and 'CreationDate'. They can be removed by setting them to None. Note that some versions of LaTeX engines may ignore the 'Producer' key and set it to themselves.       close()[source]
+ 
+Finalize this object, running LaTeX in a temporary directory and moving the final pdf file to filename. 
+   get_pagecount()[source]
+ 
+Return the current number of pages in the multipage pdf file. 
+   keep_empty
+
+   savefig(figure=None, **kwargs)[source]
+ 
+Save a Figure to this file as a new page. Any other keyword arguments are passed to savefig.  Parameters 
+ 
+figureFigure or int, default: the active figure
+
+
+The figure, or index of the figure, that is saved to the file.

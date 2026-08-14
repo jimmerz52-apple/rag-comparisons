@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.BitOr
+
+class BitOr(expression, filter=None, default=None, **extra)  
+Returns an int of the bitwise OR of all non-null input values, or default if all values are null.

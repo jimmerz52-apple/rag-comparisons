@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.remove_option
+
+remove_option(section, option)  
+Remove the specified option from the specified section. If the section does not exist, raise NoSectionError. If the option existed to be removed, return True; otherwise return False.

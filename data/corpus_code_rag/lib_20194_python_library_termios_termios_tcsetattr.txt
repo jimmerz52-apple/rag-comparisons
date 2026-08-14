@@ -1,0 +1,4 @@
+# python.library.termios#termios.tcsetattr
+
+termios.tcsetattr(fd, when, attributes)  
+Set the tty attributes for file descriptor fd from the attributes, which is a list like the one returned by tcgetattr(). The when argument determines when the attributes are changed: TCSANOW to change immediately, TCSADRAIN to change after transmitting all queued output, or TCSAFLUSH to change after transmitting all queued output and discarding all queued input.

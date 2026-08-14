@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.CreateKey
+
+winreg.CreateKey(key, sub_key)  
+Creates or opens the specified key, returning a handle object. key is an already open key, or one of the predefined HKEY_* constants. sub_key is a string that names the key this method opens or creates. If key is one of the predefined keys, sub_key may be None. In that case, the handle returned is the same key handle passed in to the function. If the key already exists, this function opens the existing key. The return value is the handle of the opened key. If the function fails, an OSError exception is raised. Raises an auditing event winreg.CreateKey with arguments key, sub_key, access. Raises an auditing event winreg.OpenKey/result with argument key.  Changed in version 3.3: See above.

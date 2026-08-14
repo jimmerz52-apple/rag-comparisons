@@ -1,0 +1,20 @@
+# werkzeug.urls.index#werkzeug.urls.BytesURL
+
+class werkzeug.urls.BytesURL(scheme, netloc, path, query, fragment)  
+Represents a parsed URL in bytes. Create new instance of _URLTuple(scheme, netloc, path, query, fragment)  Parameters 
+ 
+scheme (str) –  
+netloc (str) –  
+path (str) –  
+query (str) –  
+fragment (str) –      
+decode(charset='utf-8', errors='replace')  
+Decodes the URL to a tuple made out of strings. The charset is only being used for the path, query and fragment.  Parameters 
+ 
+charset (str) –  
+errors (str) –    Return type 
+werkzeug.urls.URL   
+  
+encode_netloc()  
+Returns the netloc unchanged as bytes.  Return type 
+bytes

@@ -1,0 +1,33 @@
+# matplotlib._as_gen.matplotlib.colors.lightsource#matplotlib.colors.LightSource.blend_hsv
+
+blend_hsv(rgb, intensity, hsv_max_sat=None, hsv_max_val=None, hsv_min_val=None, hsv_min_sat=None)[source]
+ 
+Take the input data array, convert to HSV values in the given colormap, then adjust those color values to give the impression of a shaded relief map with a specified light source. RGBA values are returned, which can then be used to plot the shaded image with imshow. The color of the resulting image will be darkened by moving the (s, v) values (in hsv colorspace) toward (hsv_min_sat, hsv_min_val) in the shaded regions, or lightened by sliding (s, v) toward (hsv_max_sat, hsv_max_val) in regions that are illuminated. The default extremes are chose so that completely shaded points are nearly black (s = 1, v = 0) and completely illuminated points are nearly white (s = 0, v = 1).  Parameters 
+ 
+rgbndarray
+
+
+An MxNx3 RGB array of floats ranging from 0 to 1 (color image).  
+intensityndarray
+
+
+An MxNx1 array of floats ranging from 0 to 1 (grayscale image).  
+hsv_max_satnumber, default: 1
+
+
+The maximum saturation value that the intensity map can shift the output image to.  
+hsv_min_satnumber, optional
+
+
+The minimum saturation value that the intensity map can shift the output image to. Defaults to 0.  
+hsv_max_valnumber, optional
+
+
+The maximum value ("v" in "hsv") that the intensity map can shift the output image to. Defaults to 1.  
+hsv_min_valnumber, optional
+
+
+The minimum value ("v" in "hsv") that the intensity map can shift the output image to. Defaults to 0.    Returns 
+ ndarray
+
+An MxNx3 RGB array representing the combined images.

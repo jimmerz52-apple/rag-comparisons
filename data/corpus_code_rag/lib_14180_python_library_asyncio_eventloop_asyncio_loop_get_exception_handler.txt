@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.get_exception_handler
+
+loop.get_exception_handler()  
+Return the current exception handler, or None if no custom exception handler was set.  New in version 3.5.2.

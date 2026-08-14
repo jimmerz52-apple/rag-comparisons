@@ -1,0 +1,4 @@
+# python.library.xml.sax.handler#xml.sax.handler.EntityResolver
+
+class xml.sax.handler.EntityResolver  
+Basic interface for resolving entities. If you create an object implementing this interface, then register the object with your Parser, the parser will call the method in your object to resolve all external entities.

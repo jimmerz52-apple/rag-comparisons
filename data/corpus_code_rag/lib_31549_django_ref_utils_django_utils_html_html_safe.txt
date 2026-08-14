@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.html.html_safe
+
+html_safe()  
+The __html__() method on a class helps non-Django templates detect classes whose output doesn’t require HTML escaping. This decorator defines the __html__() method on the decorated class by wrapping __str__() in mark_safe(). Ensure the __str__() method does indeed return text that doesn’t require HTML escaping.

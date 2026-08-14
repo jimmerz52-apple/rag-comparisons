@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Table.get_celld
+
+get_celld()[source]
+ 
+Return a dict of cells in the table mapping (row, column) to Cells. Notes You can also directly index into the Table object to access individual cells: cell = table[row, col]

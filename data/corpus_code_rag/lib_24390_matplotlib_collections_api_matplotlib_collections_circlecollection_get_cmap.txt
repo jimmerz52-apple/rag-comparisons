@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.get_cmap
+
+get_cmap()[source]
+ 
+Return the Colormap instance.

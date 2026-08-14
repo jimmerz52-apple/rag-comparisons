@@ -1,0 +1,5 @@
+# python.library.operator#operator.pos
+
+operator.pos(obj)  
+operator.__pos__(obj)  
+Return obj positive (+obj).

@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_numtracks
+
+get_numtracks() 
+ the number of tracks on the cdrom get_numtracks() -> count  Return the number of tracks on the cdrom in the drive. This will return zero of the drive is empty or has no tracks.

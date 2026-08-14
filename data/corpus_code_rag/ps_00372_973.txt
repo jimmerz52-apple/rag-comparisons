@@ -1,0 +1,7 @@
+# 973
+Task: 973
+
+# Write a python function to left rotate the string.
+def left_rotate(s,d):
+    tmp = s[d : ] + s[0 : d]
+    return tmp

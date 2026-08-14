@@ -1,0 +1,9 @@
+# matplotlib._api_api#matplotlib._api.caching_module_getattr
+
+matplotlib._api.caching_module_getattr(cls)[source]
+ 
+Helper decorator for implementing module-level __getattr__ as a class. This decorator must be used at the module toplevel as follows: @caching_module_getattr
+class __getattr__:  # The class *must* be named ``__getattr__``.
+    @property  # Only properties are taken into account.
+    def name(self): ...
+ The __getattr__ class will be replaced by a __getattr__ function such that trying to access name on the module will resolve the corresponding property (which may be decorated e.g. with _api.deprecated for deprecating module globals). The properties are all implicitly cached. Moreover, a suitable AttributeError is generated and raised if no property with the given name exists.

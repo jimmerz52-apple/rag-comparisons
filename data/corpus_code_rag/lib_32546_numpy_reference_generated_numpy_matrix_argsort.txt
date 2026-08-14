@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.matrix.argsort
+
+numpy.matrix.argsort method   matrix.argsort(axis=- 1, kind=None, order=None)
+ 
+Returns the indices that would sort this array. Refer to numpy.argsort for full documentation.  See also  numpy.argsort
+
+equivalent function

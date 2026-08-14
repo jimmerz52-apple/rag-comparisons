@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.BaseSelector.get_map
+
+abstractmethod get_map()  
+Return a mapping of file objects to selector keys. This returns a Mapping instance mapping registered file objects to their associated SelectorKey instance.

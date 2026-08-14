@@ -1,0 +1,11 @@
+# python.library.stdtypes#memoryview.tolist
+
+tolist()  
+Return the data in the buffer as a list of elements. >>> memoryview(b'abc').tolist()
+[97, 98, 99]
+>>> import array
+>>> a = array.array('d', [1.1, 2.2, 3.3])
+>>> m = memoryview(a)
+>>> m.tolist()
+[1.1, 2.2, 3.3]
+  Changed in version 3.3: tolist() now supports all single character native formats in struct module syntax as well as multi-dimensional representations.

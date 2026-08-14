@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.requires_migrations_checks
+
+BaseCommand.requires_migrations_checks  
+A boolean; if True, the command prints a warning if the set of migrations on disk don’t match the migrations in the database. A warning doesn’t prevent the command from executing. Default value is False.

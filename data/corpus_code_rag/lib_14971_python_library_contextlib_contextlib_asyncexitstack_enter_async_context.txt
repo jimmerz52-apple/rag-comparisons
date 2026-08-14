@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.AsyncExitStack.enter_async_context
+
+enter_async_context(cm)  
+Similar to enter_context() but expects an asynchronous context manager.

@@ -1,0 +1,4 @@
+# python.library.typing#typing.SupportsComplex
+
+class typing.SupportsComplex  
+An ABC with one abstract method __complex__.

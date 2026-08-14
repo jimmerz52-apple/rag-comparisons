@@ -1,0 +1,9 @@
+# matplotlib.cbook_api#matplotlib.cbook.flatten
+
+matplotlib.cbook.flatten(seq, scalarp=<function is_scalar_or_string>)[source]
+ 
+Return a generator of flattened nested containers. For example: >>> from matplotlib.cbook import flatten
+>>> l = (('John', ['Hunter']), (1, 23), [[([42, (5, 23)], )]])
+>>> print(list(flatten(l)))
+['John', 'Hunter', 1, 23, 42, 5, 23]
+ By: Composite of Holger Krekel and Luther Blissett From: https://code.activestate.com/recipes/121294/ and Recipe 1.12 in cookbook

@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_list_display
+
+ModelAdmin.get_list_display(request)  
+The get_list_display method is given the HttpRequest and is expected to return a list or tuple of field names that will be displayed on the changelist view as described above in the ModelAdmin.list_display section.

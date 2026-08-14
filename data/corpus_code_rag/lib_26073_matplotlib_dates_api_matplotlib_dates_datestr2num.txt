@@ -1,0 +1,14 @@
+# matplotlib.dates_api#matplotlib.dates.datestr2num
+
+matplotlib.dates.datestr2num(d, default=None)[source]
+ 
+Convert a date string to a datenum using dateutil.parser.parse.  Parameters 
+ 
+dstr or sequence of str
+
+
+The dates to convert.  
+defaultdatetime.datetime, optional
+
+
+The default date to use when fields are missing in d.

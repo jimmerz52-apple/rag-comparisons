@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.nano.copy
+
+pandas.tseries.offsets.Nano.copy   Nano.copy()

@@ -1,0 +1,4 @@
+# python.library.cgi#cgi.print_directory
+
+cgi.print_directory()  
+Format the current directory in HTML.

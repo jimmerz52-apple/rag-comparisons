@@ -1,0 +1,4 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer.default_tags
+
+default_tags = [<class 'flask.json.tag.TagDict'>, <class 'flask.json.tag.PassDict'>, <class 'flask.json.tag.TagTuple'>, <class 'flask.json.tag.PassList'>, <class 'flask.json.tag.TagBytes'>, <class 'flask.json.tag.TagMarkup'>, <class 'flask.json.tag.TagUUID'>, <class 'flask.json.tag.TagDateTime'>]  
+Tag classes to bind when creating the serializer. Other tags can be added later using register().

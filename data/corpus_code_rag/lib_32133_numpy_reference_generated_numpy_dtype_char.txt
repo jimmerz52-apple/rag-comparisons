@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.dtype.char
+
+numpy.dtype.char attribute   dtype.char
+ 
+A unique character code for each of the 21 different built-in types. Examples >>> x = np.dtype(float)
+>>> x.char
+'d'

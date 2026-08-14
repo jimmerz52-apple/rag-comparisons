@@ -1,0 +1,44 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Accept
+
+class werkzeug.datastructures.Accept(values=())  
+An Accept object is just a list subclass for lists of (value, quality) tuples. It is automatically sorted by specificity and quality. All Accept objects work similar to a list but provide extra functionality for working with the data. Containment checks are normalized to the rules of that header: >>> a = CharsetAccept([('ISO-8859-1', 1), ('utf-8', 0.7)])
+>>> a.best
+'ISO-8859-1'
+>>> 'iso-8859-1' in a
+True
+>>> 'UTF8' in a
+True
+>>> 'utf7' in a
+False
+ To get the quality for an item you can use normal item lookup: >>> print a['utf-8']
+0.7
+>>> a['utf7']
+0
+  Changelog Changed in version 1.0.0: Accept internal values are no longer ordered alphabetically for equal quality tags. Instead the initial order is preserved.   Changed in version 0.5: Accept objects are forced immutable now.   
+property best  
+The best match as value. 
+  
+best_match(matches, default=None)  
+Returns the best match from a list of possible matches based on the specificity and quality of the client. If two items have the same quality and specificity, the one is returned that comes first.  Parameters 
+ 
+matches – a list of matches to check for 
+default – the value that is returned if none match    
+  
+find(key)  
+Get the position of an entry or return -1.  Parameters 
+key – The key to be looked up.   
+  
+index(key)  
+Get the position of an entry or raise ValueError.  Parameters 
+key – The key to be looked up.    Changelog Changed in version 0.5: This used to raise IndexError, which was inconsistent with the list API.  
+
+  
+quality(key)  
+Returns the quality of the key.  Changelog New in version 0.6: In previous versions you had to use the item-lookup syntax (eg: obj[key] instead of obj.quality(key))  
+
+  
+to_header()  
+Convert the header set into an HTTP header string. 
+  
+values()  
+Iterate over all values.

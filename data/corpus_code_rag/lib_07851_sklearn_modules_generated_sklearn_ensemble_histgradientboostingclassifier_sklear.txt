@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.histgradientboostingclassifier#sklearn.ensemble.HistGradientBoostingClassifier.staged_predict_proba
+
+staged_predict_proba(X) [source]
+ 
+Predict class probabilities at each iteration. This method allows monitoring (i.e. determine error on testing set) after each stage.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input samples.    Yields 
+ 
+ygenerator of ndarray of shape (n_samples,) 
+
+The predicted class probabilities of the input samples, for each iteration.

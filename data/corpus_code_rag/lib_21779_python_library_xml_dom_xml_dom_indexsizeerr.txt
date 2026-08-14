@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.IndexSizeErr
+
+exception xml.dom.IndexSizeErr  
+Raised when an index or size parameter to a method is negative or exceeds the allowed values.

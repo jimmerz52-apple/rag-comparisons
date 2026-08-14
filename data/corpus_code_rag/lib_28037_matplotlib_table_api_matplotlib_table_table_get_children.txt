@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Table.get_children
+
+get_children()[source]
+ 
+Return the Artists contained by the table.

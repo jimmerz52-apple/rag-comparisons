@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.convert_yunits
+
+matplotlib.artist.Artist.convert_yunits   Artist.convert_yunits(y)[source]
+ 
+Convert y using the unit type of the yaxis. If the artist is not in contained in an Axes or if the yaxis does not have units, y itself is returned.

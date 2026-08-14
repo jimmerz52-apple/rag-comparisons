@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.RemoteDisconnected
+
+exception http.client.RemoteDisconnected  
+A subclass of ConnectionResetError and BadStatusLine. Raised by HTTPConnection.getresponse() when the attempt to read the response results in no data read from the connection, indicating that the remote end has closed the connection.  New in version 3.5: Previously, BadStatusLine('') was raised.

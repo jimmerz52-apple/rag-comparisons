@@ -1,0 +1,22 @@
+# python.library.contextlib#contextlib.AsyncExitStack
+
+class contextlib.AsyncExitStack  
+An asynchronous context manager, similar to ExitStack, that supports combining both synchronous and asynchronous context managers, as well as having coroutines for cleanup logic. The close() method is not implemented, aclose() must be used instead.  
+enter_async_context(cm)  
+Similar to enter_context() but expects an asynchronous context manager. 
+  
+push_async_exit(exit)  
+Similar to push() but expects either an asynchronous context manager or a coroutine function. 
+  
+push_async_callback(callback, /, *args, **kwds)  
+Similar to callback() but expects a coroutine function. 
+  
+aclose()  
+Similar to close() but properly handles awaitables. 
+ Continuing the example for asynccontextmanager(): async with AsyncExitStack() as stack:
+    connections = [await stack.enter_async_context(get_connection())
+        for i in range(5)]
+    # All opened connections will automatically be released at the end of
+    # the async with statement, even if attempts to open a connection
+    # later in the list raise an exception.
+  New in version 3.7.

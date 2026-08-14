@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.ccompiler_show_customization
+
+numpy.distutils.ccompiler.CCompiler_show_customization   distutils.ccompiler.CCompiler_show_customization(self)[source]
+ 
+Print the compiler customizations to stdout.  Parameters 
+ None
+  Returns 
+ None
+   Notes Printing is only done if the distutils log threshold is < 2.

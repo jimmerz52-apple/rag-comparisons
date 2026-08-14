@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.remove
+
+remove()[source]
+ 
+Remove this colorbar from the figure. If the colorbar was created with use_gridspec=True the previous gridspec is restored.

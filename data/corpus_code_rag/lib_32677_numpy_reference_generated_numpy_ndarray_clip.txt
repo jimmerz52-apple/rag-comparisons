@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.clip
+
+numpy.ndarray.clip method   ndarray.clip(min=None, max=None, out=None, **kwargs)
+ 
+Return an array whose values are limited to [min, max]. One of max or min must be given. Refer to numpy.clip for full documentation.  See also  numpy.clip
+
+equivalent function

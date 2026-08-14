@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.BaseHeader.fold
+
+fold(*, policy)  
+Return a string containing linesep characters as required to correctly fold the header according to policy. A cte_type of 8bit will be treated as if it were 7bit, since headers may not contain arbitrary binary data. If utf8 is False, non-ASCII data will be RFC 2047 encoded.

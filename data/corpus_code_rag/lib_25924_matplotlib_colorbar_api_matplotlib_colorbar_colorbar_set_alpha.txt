@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.set_alpha
+
+set_alpha(alpha)[source]
+ 
+Set the transparency between 0 (transparent) and 1 (opaque). If an array is provided, alpha will be set to None to use the transparency values associated with the colormap.

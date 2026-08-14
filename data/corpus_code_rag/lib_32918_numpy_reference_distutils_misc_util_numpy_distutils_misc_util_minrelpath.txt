@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.minrelpath
+
+numpy.distutils.misc_util.minrelpath(path)[source]
+ 
+Resolve  and ‘.’ from path.

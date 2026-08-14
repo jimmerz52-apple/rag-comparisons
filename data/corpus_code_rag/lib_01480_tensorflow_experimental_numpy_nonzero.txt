@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.nonzero
+
+tf.experimental.numpy.nonzero TensorFlow variant of NumPy's nonzero. 
+tf.experimental.numpy.nonzero(
+    a
+)
+ See the NumPy documentation for numpy.nonzero.

@@ -1,0 +1,14 @@
+# matplotlib.cm_api#matplotlib.cm.get_cmap
+
+matplotlib.cm.get_cmap(name=None, lut=None)[source]
+ 
+Get a colormap instance, defaulting to rc values if name is None. Colormaps added with register_cmap() take precedence over built-in colormaps.  Parameters 
+ 
+namematplotlib.colors.Colormap or str or None, default: None
+
+
+If a Colormap instance, it will be returned. Otherwise, the name of a colormap known to Matplotlib, which will be resampled by lut. The default, None, means rcParams["image.cmap"] (default: 'viridis').  
+lutint or None, default: None
+
+
+If name is not already a Colormap instance and lut is not None, the colormap will be resampled to have lut entries in the lookup table.     Notes Currently, this returns the global colormap object, which is deprecated. In Matplotlib 3.5, you will no longer be able to modify the global colormaps in-place.

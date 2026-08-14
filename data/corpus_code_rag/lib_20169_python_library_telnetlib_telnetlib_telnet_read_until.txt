@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.read_until
+
+Telnet.read_until(expected, timeout=None)  
+Read until a given byte string, expected, is encountered or until timeout seconds have passed. When no match is found, return whatever is available instead, possibly empty bytes. Raise EOFError if the connection is closed and no cooked data is available.

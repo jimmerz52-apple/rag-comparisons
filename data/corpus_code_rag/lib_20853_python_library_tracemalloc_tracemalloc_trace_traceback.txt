@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Trace.traceback
+
+traceback  
+Traceback where the memory block was allocated, Traceback instance.

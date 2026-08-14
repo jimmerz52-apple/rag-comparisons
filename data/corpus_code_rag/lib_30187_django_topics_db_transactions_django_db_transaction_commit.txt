@@ -1,0 +1,3 @@
+# django.topics.db.transactions#django.db.transaction.commit
+
+commit(using=None)

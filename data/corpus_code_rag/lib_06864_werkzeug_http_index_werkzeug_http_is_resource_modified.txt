@@ -1,0 +1,12 @@
+# werkzeug.http.index#werkzeug.http.is_resource_modified
+
+werkzeug.http.is_resource_modified(environ, etag=None, data=None, last_modified=None, ignore_if_range=True)  
+Convenience method for conditional requests.  Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environment of the request to be checked. 
+etag (Optional[str]) – the etag for the response for comparison. 
+data (Optional[bytes]) – or alternatively the data of the response to automatically generate an etag using generate_etag(). 
+last_modified (Optional[Union[datetime.datetime, str]]) – an optional date of the last modification. 
+ignore_if_range (bool) – If False, If-Range header will be taken into account.   Returns 
+True if the resource was modified, otherwise False.  Return type 
+bool    Changed in version 2.0: SHA-1 is used to generate an etag value for the data. MD5 may not be available in some environments.   Changelog Changed in version 1.0.0: The check is run for methods other than GET and HEAD.

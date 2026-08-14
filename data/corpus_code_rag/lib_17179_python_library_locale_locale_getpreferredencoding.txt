@@ -1,0 +1,4 @@
+# python.library.locale#locale.getpreferredencoding
+
+locale.getpreferredencoding(do_setlocale=True)  
+Return the encoding used for text data, according to user preferences. User preferences are expressed differently on different systems, and might not be available programmatically on some systems, so this function only returns a guess. On some systems, it is necessary to invoke setlocale() to obtain the user preferences, so this function is not thread-safe. If invoking setlocale is not necessary or desired, do_setlocale should be set to False. On Android or in the UTF-8 mode (-X utf8 option), always return 'UTF-8', the locale and the do_setlocale argument are ignored.  Changed in version 3.7: The function now always returns UTF-8 on Android or if the UTF-8 mode is enabled.

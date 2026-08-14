@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logit_
+
+logit_() → Tensor  
+In-place version of logit()

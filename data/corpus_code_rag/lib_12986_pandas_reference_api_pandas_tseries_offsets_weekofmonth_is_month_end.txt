@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.weekofmonth.is_month_end
+
+pandas.tseries.offsets.WeekOfMonth.is_month_end   WeekOfMonth.is_month_end()

@@ -1,0 +1,4 @@
+# python.library.profile#pstats.Stats.add
+
+add(*filenames)  
+This method of the Stats class accumulates additional profiling information into the current profiling object. Its arguments should refer to filenames created by the corresponding version of profile.run() or cProfile.run(). Statistics for identically named (re: file, line, name) functions are automatically accumulated into single function statistics.

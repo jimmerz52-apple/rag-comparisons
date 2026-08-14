@@ -1,0 +1,4 @@
+# python.library.os#os.sync
+
+os.sync()  
+Force write of everything to disk. Availability: Unix.  New in version 3.3.

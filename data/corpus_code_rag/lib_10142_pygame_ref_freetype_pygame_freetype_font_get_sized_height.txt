@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.get_sized_height
+
+get_sized_height() 
+ The scaled height of the font in pixels get_sized_height(<size>=0) -> int  Returns the height of the font. This is the average value of all glyphs in the font. It is not adjusted for strong or rotation.

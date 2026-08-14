@@ -1,0 +1,5 @@
+# torch.distributed#torch.distributed.is_initialized
+
+torch.distributed.is_initialized() [source]
+ 
+Checking if the default process group has been initialized

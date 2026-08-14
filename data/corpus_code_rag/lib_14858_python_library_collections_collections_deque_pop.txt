@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.pop
+
+pop()  
+Remove and return an element from the right side of the deque. If no elements are present, raises an IndexError.

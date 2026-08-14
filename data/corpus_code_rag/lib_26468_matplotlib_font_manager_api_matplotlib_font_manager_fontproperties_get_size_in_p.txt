@@ -1,0 +1,3 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.get_size_in_points
+
+get_size_in_points()[source]

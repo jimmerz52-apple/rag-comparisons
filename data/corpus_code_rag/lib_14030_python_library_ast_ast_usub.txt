@@ -1,0 +1,11 @@
+# python.library.ast#ast.USub
+
+class ast.UAdd  
+class ast.USub  
+class ast.Not  
+class ast.Invert  
+Unary operator tokens. Not is the not keyword, Invert is the ~ operator. >>> print(ast.dump(ast.parse('not x', mode='eval'), indent=4))
+Expression(
+    body=UnaryOp(
+        op=Not(),
+        operand=Name(id='x', ctx=Load())))

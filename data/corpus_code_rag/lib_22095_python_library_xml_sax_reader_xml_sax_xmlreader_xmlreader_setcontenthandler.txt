@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.setContentHandler
+
+XMLReader.setContentHandler(handler)  
+Set the current ContentHandler. If no ContentHandler is set, content events will be discarded.

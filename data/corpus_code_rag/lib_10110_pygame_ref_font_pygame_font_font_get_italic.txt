@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.get_italic
+
+get_italic() 
+ check if the text will be rendered italic get_italic() -> bool  Return True when the font italic rendering mode is enabled.  Note This is the same as the italic attribute.

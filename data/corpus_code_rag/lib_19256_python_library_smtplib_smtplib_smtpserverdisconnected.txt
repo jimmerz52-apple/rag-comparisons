@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPServerDisconnected
+
+exception smtplib.SMTPServerDisconnected  
+This exception is raised when the server unexpectedly disconnects, or when an attempt is made to use the SMTP instance before connecting it to a server.

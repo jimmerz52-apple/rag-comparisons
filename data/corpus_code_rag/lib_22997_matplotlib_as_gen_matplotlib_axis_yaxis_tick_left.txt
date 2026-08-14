@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.tick_left
+
+matplotlib.axis.YAxis.tick_left   YAxis.tick_left()[source]
+ 
+Move ticks and ticklabels (if present) to the left of the axes. 
+  Examples using matplotlib.axis.YAxis.tick_left
+ 
+   Bachelor's degrees by gender   
+
+   Set default y-axis tick labels on the right

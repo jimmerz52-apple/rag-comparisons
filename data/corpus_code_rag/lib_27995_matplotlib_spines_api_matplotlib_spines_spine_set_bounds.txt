@@ -1,0 +1,14 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.set_bounds
+
+set_bounds(low=None, high=None)[source]
+ 
+Set the spine bounds.  Parameters 
+ 
+lowfloat or None, optional
+
+
+The lower spine bound. Passing None leaves the limit unchanged. The bounds may also be passed as the tuple (low, high) as the first positional argument.  
+highfloat or None, optional
+
+
+The higher spine bound. Passing None leaves the limit unchanged.

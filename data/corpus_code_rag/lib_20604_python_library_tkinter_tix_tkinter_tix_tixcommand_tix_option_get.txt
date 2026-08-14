@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.tixCommand.tix_option_get
+
+tixCommand.tix_option_get(name)  
+Gets the options maintained by the Tix scheme mechanism.

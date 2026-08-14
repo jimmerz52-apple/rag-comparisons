@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.default_config_dict
+
+numpy.distutils.misc_util.default_config_dict(name=None, parent_name=None, local_path=None)[source]
+ 
+Return a configuration dictionary for usage in configuration() function defined in file setup_<name>.py.

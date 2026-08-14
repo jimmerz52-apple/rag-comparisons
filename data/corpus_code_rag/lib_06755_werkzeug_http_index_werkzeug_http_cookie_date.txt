@@ -1,0 +1,6 @@
+# werkzeug.http.index#werkzeug.http.cookie_date
+
+werkzeug.http.cookie_date(expires=None)  
+Format a datetime object or timestamp into an RFC 2822 date string for Set-Cookie expires.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use http_date() instead.   Parameters 
+expires (Optional[Union[datetime.datetime, datetime.date, int, float, time.struct_time]]) –   Return type 
+str

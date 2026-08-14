@@ -1,0 +1,4 @@
+# python.library.queue#queue.Full
+
+exception queue.Full  
+Exception raised when non-blocking put() (or put_nowait()) is called on a Queue object which is full.

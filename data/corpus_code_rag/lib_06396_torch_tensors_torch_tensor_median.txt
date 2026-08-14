@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.median
+
+median(dim=None, keepdim=False) -> (Tensor, LongTensor)  
+See torch.median()

@@ -1,0 +1,7 @@
+# python.library.sys#sys.int_info
+
+sys.int_info  
+A named tuple that holds information about Python’s internal representation of integers. The attributes are read only.   
+Attribute Explanation   
+bits_per_digit number of bits held in each digit. Python integers are stored internally in base 2**int_info.bits_per_digit  
+sizeof_digit size in bytes of the C type used to represent a digit    New in version 3.1.

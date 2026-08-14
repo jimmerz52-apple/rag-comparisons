@@ -1,0 +1,19 @@
+# matplotlib._as_gen.matplotlib.colors.linearsegmentedcolormap#matplotlib.colors.LinearSegmentedColormap.from_list
+
+staticfrom_list(name, colors, N=256, gamma=1.0)[source]
+ 
+Create a LinearSegmentedColormap from a list of colors.  Parameters 
+ 
+namestr
+
+
+The name of the colormap.  
+colorsarray-like of colors or array-like of (value, color)
+
+
+If only colors are given, they are equidistantly mapped from the range \([0, 1]\); i.e. 0 maps to colors[0] and 1 maps to colors[-1]. If (value, color) pairs are given, the mapping is from value to color. This can be used to divide the range unevenly.  
+Nint
+
+
+The number of rgb quantization levels.  
+gammafloat

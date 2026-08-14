@@ -1,0 +1,4 @@
+# python.library.contextvars#contextvars.Context.get
+
+get(var[, default])  
+Return the value for var if var has the value in the context object. Return default otherwise. If default is not given, return None.

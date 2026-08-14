@@ -1,0 +1,4 @@
+# python.library.email.errors#email.errors.HeaderParseError
+
+exception email.errors.HeaderParseError  
+Raised under some error conditions when parsing the RFC 5322 headers of a message, this class is derived from MessageParseError. The set_boundary() method will raise this error if the content type is unknown when the method is called. Header may raise this error for certain base64 decoding errors, and when an attempt is made to create a header that appears to contain an embedded header (that is, there is what is supposed to be a continuation line that has no leading whitespace and looks like a header).

@@ -1,0 +1,36 @@
+# torch.optim#torch.optim.Optimizer
+
+class torch.optim.Optimizer(params, defaults) [source]
+ 
+Base class for all optimizers.  Warning Parameters need to be specified as collections that have a deterministic ordering that is consistent between runs. Examples of objects that don’t satisfy those properties are sets and iterators over values of dictionaries.   Parameters 
+ 
+params (iterable) – an iterable of torch.Tensor s or dict s. Specifies what Tensors should be optimized. 
+defaults – (dict): a dict containing default values of optimization options (used when a parameter group doesn’t specify them).     
+add_param_group(param_group) [source]
+ 
+Add a param group to the Optimizer s param_groups. This can be useful when fine tuning a pre-trained network as frozen layers can be made trainable and added to the Optimizer as training progresses.  Parameters 
+ 
+param_group (dict) – Specifies what Tensors should be optimized along with group 
+optimization options. (specific) –     
+  
+load_state_dict(state_dict) [source]
+ 
+Loads the optimizer state.  Parameters 
+state_dict (dict) – optimizer state. Should be an object returned from a call to state_dict().   
+  
+state_dict() [source]
+ 
+Returns the state of the optimizer as a dict. It contains two entries:  
+ state - a dict holding current optimization state. Its content
+
+differs between optimizer classes.    param_groups - a dict containing all parameter groups  
+  
+step(closure) [source]
+ 
+Performs a single optimization step (parameter update).  Parameters 
+closure (callable) – A closure that reevaluates the model and returns the loss. Optional for most optimizers.    Note Unless otherwise specified, this function should not modify the .grad field of the parameters.  
+  
+zero_grad(set_to_none=False) [source]
+ 
+Sets the gradients of all optimized torch.Tensor s to zero.  Parameters 
+set_to_none (bool) – instead of setting to zero, set the grads to None. This will in general have lower memory footprint, and can modestly improve performance. However, it changes certain behaviors. For example: 1. When the user tries to access a gradient and perform manual ops on it, a None attribute or a Tensor full of 0s will behave differently. 2. If the user requests zero_grad(set_to_none=True) followed by a backward pass, .grads are guaranteed to be None for params that did not receive a gradient. 3. torch.optim optimizers have a different behavior if the gradient is 0 or None (in one case it does the step with a gradient of 0 and in the other it skips the step altogether).

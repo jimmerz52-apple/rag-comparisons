@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_UNDECLARING_PREFIX
+
+xml.parsers.expat.errors.XML_ERROR_UNDECLARING_PREFIX  
+The document attempted to remove the namespace declaration associated with a prefix.

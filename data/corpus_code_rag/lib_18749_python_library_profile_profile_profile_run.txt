@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.run
+
+run(cmd)  
+Profile the cmd via exec().

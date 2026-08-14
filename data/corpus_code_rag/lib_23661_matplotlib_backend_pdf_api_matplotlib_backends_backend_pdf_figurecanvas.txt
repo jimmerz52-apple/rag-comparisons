@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.FigureCanvas
+
+matplotlib.backends.backend_pdf.FigureCanvas[source]
+ 
+alias of matplotlib.backends.backend_pdf.FigureCanvasPdf

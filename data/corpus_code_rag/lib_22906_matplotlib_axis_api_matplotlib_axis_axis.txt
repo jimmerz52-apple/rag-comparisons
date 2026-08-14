@@ -1,0 +1,57 @@
+# matplotlib.axis_api#matplotlib.axis.Axis
+
+classmatplotlib.axis.Axis(axes, pickradius=15)[source]
+ 
+Base class for XAxis and YAxis.  Attributes 
+ 
+isDefault_labelbool
+
+
+axesmatplotlib.axes.Axes
+
+
+The Axes instance the artist resides in, or None.  
+majormatplotlib.axis.Ticker
+
+
+Determines the major tick positions and their label format.  
+minormatplotlib.axis.Ticker
+
+
+Determines the minor tick positions and their label format.  
+callbacksmatplotlib.cbook.CallbackRegistry
+
+
+labelText
+
+
+The axis label.  
+labelpadfloat
+
+
+The distance between the axis label and the tick labels. Defaults to rcParams["axes.labelpad"] (default: 4.0) = 4.  
+offsetTextText
+
+
+A Text object containing the data offset of the ticks (if any).  
+pickradiusfloat
+
+
+The acceptance radius for containment tests. See also Axis.contains.  
+majorTickslist of Tick
+
+
+The major ticks.  
+minorTickslist of Tick
+
+
+The minor ticks.      Parameters 
+ 
+axesmatplotlib.axes.Axes
+
+
+The Axes to which the created Axis belongs.  
+pickradiusfloat
+
+
+The acceptance radius for containment tests. See also Axis.contains.

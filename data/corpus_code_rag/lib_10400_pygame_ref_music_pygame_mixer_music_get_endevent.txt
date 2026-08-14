@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.get_endevent
+
+pygame.mixer.music.get_endevent() 
+ get the event a channel sends when playback stops get_endevent() -> type  Returns the event type to be sent every time the music finishes playback. If there is no endevent the function returns pygame.NOEVENT.

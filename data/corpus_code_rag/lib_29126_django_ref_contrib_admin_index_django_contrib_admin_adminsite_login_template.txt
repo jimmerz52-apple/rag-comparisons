@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.login_template
+
+AdminSite.login_template  
+Path to a custom template that will be used by the admin site login view.

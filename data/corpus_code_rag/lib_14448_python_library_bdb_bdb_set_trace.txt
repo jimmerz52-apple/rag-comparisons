@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.set_trace
+
+bdb.set_trace()  
+Start debugging with a Bdb instance from caller’s frame.

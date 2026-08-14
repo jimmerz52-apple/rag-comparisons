@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.StatisticDiff.size_diff
+
+size_diff  
+Difference of total size of memory blocks in bytes between the old and the new snapshots (int): 0 if the memory blocks have been allocated in the new snapshot.

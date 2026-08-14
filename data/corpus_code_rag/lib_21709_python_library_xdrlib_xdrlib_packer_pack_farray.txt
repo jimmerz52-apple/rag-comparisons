@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_farray
+
+Packer.pack_farray(n, array, pack_item)  
+Packs a fixed length list (array) of homogeneous items. n is the length of the list; it is not packed into the buffer, but a ValueError exception is raised if len(array) is not equal to n. As above, pack_item is the function used to pack each element.

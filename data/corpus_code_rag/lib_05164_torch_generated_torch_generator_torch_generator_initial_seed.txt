@@ -1,0 +1,6 @@
+# torch.generated.torch.generator#torch.Generator.initial_seed
+
+initial_seed() → int  
+Returns the initial seed for generating random numbers. Example: >>> g_cpu = torch.Generator()
+>>> g_cpu.initial_seed()
+2147483647

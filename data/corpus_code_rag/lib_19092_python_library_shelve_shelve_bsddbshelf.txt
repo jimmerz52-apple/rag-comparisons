@@ -1,0 +1,4 @@
+# python.library.shelve#shelve.BsdDbShelf
+
+class shelve.BsdDbShelf(dict, protocol=None, writeback=False, keyencoding='utf-8')  
+A subclass of Shelf which exposes first(), next(), previous(), last() and set_location() which are available in the third-party bsddb module from pybsddb but not in other database modules. The dict object passed to the constructor must support those methods. This is generally accomplished by calling one of bsddb.hashopen(), bsddb.btopen() or bsddb.rnopen(). The optional protocol, writeback, and keyencoding parameters have the same interpretation as for the Shelf class.

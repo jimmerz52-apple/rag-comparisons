@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.nbytes
+
+pandas.Index.nbytes   propertyIndex.nbytes
+ 
+Return the number of bytes in the underlying data.

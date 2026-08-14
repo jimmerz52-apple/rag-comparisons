@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.maskedarray.repeat
+
+numpy.ma.MaskedArray.repeat method   ma.MaskedArray.repeat(repeats, axis=None)[source]
+ 
+Repeat elements of an array. Refer to numpy.repeat for full documentation.  See also  numpy.repeat
+
+equivalent function

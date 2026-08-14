@@ -1,0 +1,4 @@
+# django.topics.db.transactions#django.db.transaction.savepoint_commit
+
+savepoint_commit(sid, using=None)  
+Releases savepoint sid. The changes performed since the savepoint was created become part of the transaction.

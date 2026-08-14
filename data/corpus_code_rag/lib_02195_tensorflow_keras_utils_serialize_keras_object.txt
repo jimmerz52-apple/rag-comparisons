@@ -1,0 +1,7 @@
+# tensorflow.keras.utils.serialize_keras_object
+
+tf.keras.utils.serialize_keras_object     View source on GitHub    Serialize a Keras object into a JSON-compatible representation.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.utils.serialize_keras_object  
+tf.keras.utils.serialize_keras_object(
+    instance
+)

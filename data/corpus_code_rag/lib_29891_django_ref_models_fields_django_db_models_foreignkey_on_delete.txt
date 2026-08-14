@@ -1,0 +1,10 @@
+# django.ref.models.fields#django.db.models.ForeignKey.on_delete
+
+ForeignKey.on_delete  
+When an object referenced by a ForeignKey is deleted, Django will emulate the behavior of the SQL constraint specified by the on_delete argument. For example, if you have a nullable ForeignKey and you want it to be set null when the referenced object is deleted: user = models.ForeignKey(
+    User,
+    models.SET_NULL,
+    blank=True,
+    null=True,
+)
+ on_delete doesn’t create an SQL constraint in the database. Support for database-level cascade options may be implemented later.

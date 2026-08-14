@@ -1,0 +1,11 @@
+# python.library.pathlib#pathlib.PurePath.root
+
+PurePath.root  
+A string representing the (local or global) root, if any: >>> PureWindowsPath('c:/Program Files/').root
+'\\'
+>>> PureWindowsPath('c:Program Files/').root
+''
+>>> PurePosixPath('/etc').root
+'/'
+ UNC shares always have a root: >>> PureWindowsPath('//host/share').root
+'\\'

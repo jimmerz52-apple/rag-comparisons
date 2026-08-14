@@ -1,0 +1,6 @@
+# python.library.os#os.P_PGID
+
+os.P_PID  
+os.P_PGID  
+os.P_ALL  
+These are the possible values for idtype in waitid(). They affect how id is interpreted. Availability: Unix.  New in version 3.3.

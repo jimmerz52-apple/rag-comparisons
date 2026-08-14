@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidfvectorizer#sklearn.feature_extraction.text.TfidfVectorizer.build_tokenizer
+
+build_tokenizer() [source]
+ 
+Return a function that splits a string into a sequence of tokens.  Returns 
+ tokenizer: callable
+
+A function to split a string into a sequence of tokens.

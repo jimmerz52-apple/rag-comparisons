@@ -1,0 +1,9 @@
+# werkzeug.utils.index#werkzeug.utils.bind_arguments
+
+werkzeug.utils.bind_arguments(func, args, kwargs)  
+Bind the arguments provided into a dict. When passed a function, a tuple of arguments and a dict of keyword arguments bind_arguments returns a dict of names as the function would see it. This can be useful to implement a cache decorator that uses the function arguments to build the cache key based on the values of the arguments.  Parameters 
+ 
+func – the function the arguments should be bound for. 
+args – tuple of positional arguments. 
+kwargs – a dict of keyword arguments.   Returns 
+a dict of bound keyword arguments.    Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use Signature.bind() instead.

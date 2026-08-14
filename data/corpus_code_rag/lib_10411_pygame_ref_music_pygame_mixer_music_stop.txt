@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.stop
+
+pygame.mixer.music.stop() 
+ stop the music playback stop() -> None  Stops the music playback if it is currently playing. It Won't Unload the music.

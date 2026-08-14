@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.driver
+
+driver  
+The name of the GDAL driver used to handle the input file. For GDALRasters created from a file, the driver type is detected automatically. The creation of rasters from scratch is an in-memory raster by default ('MEM'), but can be altered as needed. For instance, use GTiff for a GeoTiff file. For a list of file types, see also the GDAL Raster Formats list. An in-memory raster is created through the following example: >>> GDALRaster({'width': 10, 'height': 10, 'srid': 4326}).driver.name
+'MEM'
+ A file based GeoTiff raster is created through the following example: >>> import tempfile
+>>> rstfile = tempfile.NamedTemporaryFile(suffix='.tif')
+>>> rst = GDALRaster({'driver': 'GTiff', 'name': rstfile.name, 'srid': 4326,
+...                   'width': 255, 'height': 255, 'nr_of_bands': 1})
+>>> rst.name
+'/tmp/tmp7x9H4J.tif'           # The exact filename will be different on your computer
+>>> rst.driver.name
+'GTiff'

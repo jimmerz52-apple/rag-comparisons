@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.common_dirs
+
+common_dirs  
+Subdirectories in both a and b.

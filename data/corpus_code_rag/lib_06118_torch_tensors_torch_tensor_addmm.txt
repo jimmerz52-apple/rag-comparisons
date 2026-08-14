@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.addmm_
+
+addmm_(mat1, mat2, *, beta=1, alpha=1) → Tensor  
+In-place version of addmm()

@@ -1,0 +1,4 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.template_name
+
+BaseFormSet.template_name  
+ New in Django 4.0.  The name of the template used when calling __str__ or render(). This template renders the formset’s management form and then each form in the formset as per the template defined by the form’s template_name. This is a proxy of as_table by default.

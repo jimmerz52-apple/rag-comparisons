@@ -1,0 +1,20 @@
+# django.topics.auth.default#django.contrib.auth.forms.AuthenticationForm.confirm_login_allowed
+
+confirm_login_allowed(user)  
+By default, AuthenticationForm rejects users whose is_active flag is set to False. You may override this behavior with a custom policy to determine which users can log in. Do this with a custom form that subclasses AuthenticationForm and overrides the confirm_login_allowed() method. This method should raise a ValidationError if the given user may not log in. For example, to allow all users to log in regardless of “active” status: from django.contrib.auth.forms import AuthenticationForm
+
+class AuthenticationFormWithInactiveUsersOkay(AuthenticationForm):
+    def confirm_login_allowed(self, user):
+        pass
+ (In this case, you’ll also need to use an authentication backend that allows inactive users, such as AllowAllUsersModelBackend.) Or to allow only some active users to log in: class PickyAuthenticationForm(AuthenticationForm):
+    def confirm_login_allowed(self, user):
+        if not user.is_active:
+            raise ValidationError(
+                _("This account is inactive."),
+                code='inactive',
+            )
+        if user.username.startswith('b'):
+            raise ValidationError(
+                _("Sorry, accounts starting with 'b' aren't welcome here."),
+                code='no_b_users',
+            )

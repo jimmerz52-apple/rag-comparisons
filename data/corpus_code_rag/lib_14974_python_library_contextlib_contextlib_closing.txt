@@ -1,0 +1,18 @@
+# python.library.contextlib#contextlib.closing
+
+contextlib.closing(thing)  
+Return a context manager that closes thing upon completion of the block. This is basically equivalent to: from contextlib import contextmanager
+
+@contextmanager
+def closing(thing):
+    try:
+        yield thing
+    finally:
+        thing.close()
+ And lets you write code like this: from contextlib import closing
+from urllib.request import urlopen
+
+with closing(urlopen('http://www.python.org')) as page:
+    for line in page:
+        print(line)
+ without needing to explicitly close page. Even if an error occurs, page.close() will be called when the with block is exited.

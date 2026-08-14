@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.GraphicsContextPdf.commands
+
+commands=((('_cliprect', '_clippath'), <function GraphicsContextPdf.clip_cmd>), (('_alpha', '_forced_alpha', '_effective_alphas'), <function GraphicsContextPdf.alpha_cmd>), (('_capstyle',), <function GraphicsContextPdf.capstyle_cmd>), (('_fillcolor',), <function GraphicsContextPdf.fillcolor_cmd>), (('_joinstyle',), <function GraphicsContextPdf.joinstyle_cmd>), (('_linewidth',), <function GraphicsContextPdf.linewidth_cmd>), (('_dashes',), <function GraphicsContextPdf.dash_cmd>), (('_rgb',), <function GraphicsContextPdf.rgb_cmd>), (('_hatch', '_hatch_color'), <function GraphicsContextPdf.hatch_cmd>))

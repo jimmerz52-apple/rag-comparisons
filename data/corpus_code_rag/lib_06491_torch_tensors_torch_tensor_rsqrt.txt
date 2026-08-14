@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.rsqrt
+
+rsqrt() → Tensor  
+See torch.rsqrt()

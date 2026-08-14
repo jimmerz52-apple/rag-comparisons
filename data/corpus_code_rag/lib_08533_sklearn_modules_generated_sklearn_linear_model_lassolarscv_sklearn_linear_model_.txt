@@ -1,0 +1,158 @@
+# sklearn.modules.generated.sklearn.linear_model.lassolarscv#sklearn.linear_model.LassoLarsCV
+
+class sklearn.linear_model.LassoLarsCV(*, fit_intercept=True, verbose=False, max_iter=500, normalize=True, precompute='auto', cv=None, max_n_alphas=1000, n_jobs=None, eps=2.220446049250313e-16, copy_X=True, positive=False) [source]
+ 
+Cross-validated Lasso, using the LARS algorithm. See glossary entry for cross-validation estimator. The optimization objective for Lasso is: (1 / (2 * n_samples)) * ||y - Xw||^2_2 + alpha * ||w||_1
+ Read more in the User Guide.  Parameters 
+ 
+fit_interceptbool, default=True 
+
+whether to calculate the intercept for this model. If set to false, no intercept will be used in calculations (i.e. data is expected to be centered).  
+verbosebool or int, default=False 
+
+Sets the verbosity amount.  
+max_iterint, default=500 
+
+Maximum number of iterations to perform.  
+normalizebool, default=True 
+
+This parameter is ignored when fit_intercept is set to False. If True, the regressors X will be normalized before regression by subtracting the mean and dividing by the l2-norm. If you wish to standardize, please use StandardScaler before calling fit on an estimator with normalize=False.  
+precomputebool or ‘auto’ , default=’auto’ 
+
+Whether to use a precomputed Gram matrix to speed up calculations. If set to 'auto' let us decide. The Gram matrix cannot be passed as argument since we will use only subsets of X.  
+cvint, cross-validation generator or an iterable, default=None 
+
+Determines the cross-validation splitting strategy. Possible inputs for cv are:  None, to use the default 5-fold cross-validation, integer, to specify the number of folds. 
+CV splitter, An iterable yielding (train, test) splits as arrays of indices.  For integer/None inputs, KFold is used. Refer User Guide for the various cross-validation strategies that can be used here.  Changed in version 0.22: cv default value if None changed from 3-fold to 5-fold.   
+max_n_alphasint, default=1000 
+
+The maximum number of points on the path used to compute the residuals in the cross-validation  
+n_jobsint or None, default=None 
+
+Number of CPUs to use during the cross validation. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.  
+epsfloat, default=np.finfo(float).eps 
+
+The machine-precision regularization in the computation of the Cholesky diagonal factors. Increase this for very ill-conditioned systems. Unlike the tol parameter in some iterative optimization-based algorithms, this parameter does not control the tolerance of the optimization.  
+copy_Xbool, default=True 
+
+If True, X will be copied; else, it may be overwritten.  
+positivebool, default=False 
+
+Restrict coefficients to be >= 0. Be aware that you might want to remove fit_intercept which is set True by default. Under the positive restriction the model coefficients do not converge to the ordinary-least-squares solution for small values of alpha. Only coefficients up to the smallest alpha value (alphas_[alphas_ >
+0.].min() when fit_path=True) reached by the stepwise Lars-Lasso algorithm are typically in congruence with the solution of the coordinate descent Lasso estimator. As a consequence using LassoLarsCV only makes sense for problems where a sparse solution is expected and/or reached.    Attributes 
+ 
+coef_array-like of shape (n_features,) 
+
+parameter vector (w in the formulation formula)  
+intercept_float 
+
+independent term in decision function.  
+coef_path_array-like of shape (n_features, n_alphas) 
+
+the varying values of the coefficients along the path  
+alpha_float 
+
+the estimated regularization parameter alpha  
+alphas_array-like of shape (n_alphas,) 
+
+the different values of alpha along the path  
+cv_alphas_array-like of shape (n_cv_alphas,) 
+
+all the values of alpha along the path for the different folds  
+mse_path_array-like of shape (n_folds, n_cv_alphas) 
+
+the mean square error on left-out for each fold along the path (alpha values given by cv_alphas)  
+n_iter_array-like or int 
+
+the number of iterations run by Lars with the optimal alpha.  
+active_list of int 
+
+Indices of active variables at the end of the path.      See also  
+lars_path, LassoLars, LarsCV, LassoCV
+
+  Notes The object solves the same problem as the LassoCV object. However, unlike the LassoCV, it find the relevant alphas values by itself. In general, because of this property, it will be more stable. However, it is more fragile to heavily multicollinear datasets. It is more efficient than the LassoCV if only a small number of features are selected compared to the total number, for instance if there are very few samples compared to the number of features. Examples >>> from sklearn.linear_model import LassoLarsCV
+>>> from sklearn.datasets import make_regression
+>>> X, y = make_regression(noise=4.0, random_state=0)
+>>> reg = LassoLarsCV(cv=5).fit(X, y)
+>>> reg.score(X, y)
+0.9992...
+>>> reg.alpha_
+0.0484...
+>>> reg.predict(X[:1,])
+array([-77.8723...])
+ Methods  
+fit(X, y) Fit the model using X, y as training data.  
+get_params([deep]) Get parameters for this estimator.  
+predict(X) Predict using the linear model.  
+score(X, y[, sample_weight]) Return the coefficient of determination \(R^2\) of the prediction.  
+set_params(**params) Set the parameters of this estimator.    
+fit(X, y) [source]
+ 
+Fit the model using X, y as training data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.  
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+selfobject 
+
+returns an instance of self.     
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+predict(X) [source]
+ 
+Predict using the linear model.  Parameters 
+ 
+Xarray-like or sparse matrix, shape (n_samples, n_features) 
+
+Samples.    Returns 
+ 
+Carray, shape (n_samples,) 
+
+Returns predicted values.     
+  
+score(X, y, sample_weight=None) [source]
+ 
+Return the coefficient of determination \(R^2\) of the prediction. The coefficient \(R^2\) is defined as \((1 - \frac{u}{v})\), where \(u\) is the residual sum of squares ((y_true - y_pred)
+** 2).sum() and \(v\) is the total sum of squares ((y_true -
+y_true.mean()) ** 2).sum(). The best possible score is 1.0 and it can be negative (because the model can be arbitrarily worse). A constant model that always predicts the expected value of y, disregarding the input features, would get a \(R^2\) score of 0.0.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples. For some estimators this may be a precomputed kernel matrix or a list of generic objects instead with shape (n_samples, n_samples_fitted), where n_samples_fitted is the number of samples used in the fitting for the estimator.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True values for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+\(R^2\) of self.predict(X) wrt. y.     Notes The \(R^2\) score used when calling score on a regressor uses multioutput='uniform_average' from version 0.23 to keep consistent with default value of r2_score. This influences the score method of all the multioutput regressors (except for MultiOutputRegressor). 
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.

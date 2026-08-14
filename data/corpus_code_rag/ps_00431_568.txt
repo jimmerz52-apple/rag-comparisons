@@ -1,0 +1,7 @@
+# 568
+Task: 568
+
+# Write a function to create a list of empty dictionaries.
+def empty_list(length):
+ empty_list = [{} for _ in range(length)]
+ return empty_list

@@ -1,0 +1,4 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.languages
+
+languages  
+ New in Django 3.2.  Optional. A sequence of language codes to use for generating alternate links when i18n is enabled. Defaults to LANGUAGES.

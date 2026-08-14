@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.getmodule
+
+inspect.getmodule(object)  
+Try to guess which module an object was defined in.

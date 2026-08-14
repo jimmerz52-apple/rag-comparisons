@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.NotationDeclHandler
+
+xmlparser.NotationDeclHandler(notationName, base, systemId, publicId)  
+Called for notation declarations. notationName, base, and systemId, and publicId are strings if given. If the public identifier is omitted, publicId will be None.

@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_ps_distiller
+
+matplotlib.rcsetup.validate_ps_distiller(s)[source]

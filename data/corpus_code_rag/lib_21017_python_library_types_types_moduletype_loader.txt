@@ -1,0 +1,4 @@
+# python.library.types#types.ModuleType.__loader__
+
+__loader__  
+The loader which loaded the module. Defaults to None. This attribute is to match importlib.machinery.ModuleSpec.loader as stored in the attr:__spec__ object.  Note A future version of Python may stop setting this attribute by default. To guard against this potential change, preferrably read from the __spec__ attribute instead or use getattr(module, "__loader__", None) if you explicitly need to use this attribute.   Changed in version 3.4: Defaults to None. Previously the attribute was optional.

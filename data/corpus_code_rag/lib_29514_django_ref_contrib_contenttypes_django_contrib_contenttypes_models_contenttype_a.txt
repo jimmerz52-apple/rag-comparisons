@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentType.app_label
+
+app_label  
+The name of the application the model is part of. This is taken from the app_label attribute of the model, and includes only the last part of the application’s Python import path; django.contrib.contenttypes, for example, becomes an app_label of contenttypes.

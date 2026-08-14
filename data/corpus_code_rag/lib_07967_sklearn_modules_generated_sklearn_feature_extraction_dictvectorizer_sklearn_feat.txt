@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.feature_extraction.dictvectorizer#sklearn.feature_extraction.DictVectorizer.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Learn a list of feature name -> indices mappings and transform X. Like fit(X) followed by transform(X), but does not require materializing X in memory.  Parameters 
+ 
+XMapping or iterable over Mappings 
+
+Dict(s) or Mapping(s) from feature names (arbitrary Python objects) to feature values (strings or convertible to dtype).  Changed in version 0.24: Accepts multiple string values for one categorical feature.   
+y(ignored) 
+  Returns 
+ 
+Xa{array, sparse matrix} 
+
+Feature vectors; always 2-d.

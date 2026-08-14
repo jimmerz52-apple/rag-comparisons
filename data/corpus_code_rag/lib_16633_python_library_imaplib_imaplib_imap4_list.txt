@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.list
+
+IMAP4.list([directory[, pattern]])  
+List mailbox names in directory matching pattern. directory defaults to the top-level mail folder, and pattern defaults to match anything. Returned data contains a list of LIST responses.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.isalpha
+
+numpy.chararray.isalpha method   chararray.isalpha()[source]
+ 
+Returns true for each element if all characters in the string are alphabetic and there is at least one character, false otherwise.  See also  char.isalpha

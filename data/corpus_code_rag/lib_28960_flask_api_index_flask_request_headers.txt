@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.headers
+
+headers  
+The headers received with the request.

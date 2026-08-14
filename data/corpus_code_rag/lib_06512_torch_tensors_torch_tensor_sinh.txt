@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sinh_
+
+sinh_() → Tensor  
+In-place version of sinh()

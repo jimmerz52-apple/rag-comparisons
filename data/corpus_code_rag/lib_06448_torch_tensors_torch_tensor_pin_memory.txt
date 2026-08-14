@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.pin_memory
+
+pin_memory() → Tensor  
+Copies the tensor to pinned memory, if it’s not already pinned.

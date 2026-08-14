@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.binarizer#sklearn.preprocessing.Binarizer.transform
+
+transform(X, copy=None) [source]
+ 
+Binarize each element of X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data to binarize, element by element. scipy.sparse matrices should be in CSR format to avoid an un-necessary copy.  
+copybool 
+
+Copy the input X or not.    Returns 
+ 
+X_tr{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Transformed array.

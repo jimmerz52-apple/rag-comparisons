@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DebugRunner
+
+class doctest.DebugRunner(checker=None, verbose=None, optionflags=0)  
+A subclass of DocTestRunner that raises an exception as soon as a failure is encountered. If an unexpected exception occurs, an UnexpectedException exception is raised, containing the test, the example, and the original exception. If the output doesn’t match, then a DocTestFailure exception is raised, containing the test, the example, and the actual output. For information about the constructor parameters and methods, see the documentation for DocTestRunner in section Advanced API.

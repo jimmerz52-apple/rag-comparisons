@@ -1,0 +1,9 @@
+# werkzeug.utils.index#werkzeug.useragents.UserAgent
+
+class werkzeug.useragents.UserAgent(environ_or_string)  
+Represents a parsed user agent header value. This uses a basic parser to try to extract some information from the header.  Parameters 
+environ_or_string (t.Union[str, WSGIEnvironment]) – The header value to parse, or a WSGI environ containing the header.  Return type 
+None    Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Subclass werkzeug.user_agent.UserAgent (note the new module name) to use a dedicated parser instead.   Changed in version 2.0: Passing a WSGI environ is deprecated and will be removed in 2.1.   
+to_header()  
+Convert to a header value.  Return type 
+str

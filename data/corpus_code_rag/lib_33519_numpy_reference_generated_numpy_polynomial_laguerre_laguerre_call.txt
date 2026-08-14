@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.laguerre.__call__
+
+numpy.polynomial.laguerre.Laguerre.__call__ method   polynomial.laguerre.Laguerre.__call__(arg)[source]
+ 
+Call self as a function.

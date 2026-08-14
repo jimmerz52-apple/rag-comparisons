@@ -1,0 +1,19 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_adjustable
+
+matplotlib.axes.Axes.set_adjustable   Axes.set_adjustable(adjustable, share=False)[source]
+ 
+Set how the Axes adjusts to achieve the required aspect ratio.  Parameters 
+ 
+adjustable{'box', 'datalim'}
+
+
+If 'box', change the physical dimensions of the Axes. If 'datalim', change the x or y data limits.  
+sharebool, default: False
+
+
+If True, apply the settings to all shared Axes.      See also  matplotlib.axes.Axes.set_aspect
+
+For a description of aspect handling.    Notes Shared Axes (of which twinned Axes are a special case) impose restrictions on how aspect ratios can be imposed. For twinned Axes, use 'datalim'. For Axes that share both x and y, use 'box'. Otherwise, either 'datalim' or 'box' may be used. These limitations are partly a requirement to avoid over-specification, and partly a result of the particular implementation we are currently using, in which the adjustments for aspect ratios are done sequentially and independently on each Axes as it is drawn. 
+  Examples using matplotlib.axes.Axes.set_adjustable
+ 
+   Loglog Aspect

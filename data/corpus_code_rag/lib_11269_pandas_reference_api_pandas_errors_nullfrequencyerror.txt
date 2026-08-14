@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.nullfrequencyerror
+
+pandas.errors.NullFrequencyError   exceptionpandas.errors.NullFrequencyError[source]
+ 
+Error raised when a null freq attribute is used in an operation that needs a non-null frequency, particularly DatetimeIndex.shift, TimedeltaIndex.shift, PeriodIndex.shift.

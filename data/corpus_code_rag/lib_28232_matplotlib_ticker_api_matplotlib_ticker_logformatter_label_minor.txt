@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogFormatter.label_minor
+
+label_minor(labelOnlyBase)[source]
+ 
+Switch minor tick labeling on or off.  Parameters 
+ 
+labelOnlyBasebool
+
+
+If True, label ticks only at integer powers of base.

@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.SET_NULL
+
+SET_NULL  
+Set the ForeignKey null; this is only possible if null is True.

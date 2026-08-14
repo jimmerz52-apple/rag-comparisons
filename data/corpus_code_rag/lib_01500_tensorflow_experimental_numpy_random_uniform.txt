@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.random.uniform
+
+tf.experimental.numpy.random.uniform TensorFlow variant of NumPy's random.uniform. 
+tf.experimental.numpy.random.uniform(
+    low=0.0, high=1.0, size=None
+)
+ See the NumPy documentation for numpy.random.uniform.

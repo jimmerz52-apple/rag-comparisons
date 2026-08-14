@@ -1,0 +1,3 @@
+# python.library.gettext#gettext.dpgettext
+
+gettext.dpgettext(domain, context, message)

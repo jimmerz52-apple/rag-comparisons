@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.http.require_GET
+
+require_GET()  
+Decorator to require that a view only accepts the GET method.

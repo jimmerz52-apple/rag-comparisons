@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.required_db_features
+
+Options.required_db_features  
+List of database features that the current connection should have so that the model is considered during the migration phase. For example, if you set this list to ['gis_enabled'], the model will only be synchronized on GIS-enabled databases. It’s also useful to skip some models when testing with several database backends. Avoid relations between models that may or may not be created as the ORM doesn’t handle this.

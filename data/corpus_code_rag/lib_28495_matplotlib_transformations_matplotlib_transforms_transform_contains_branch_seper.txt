@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.contains_branch_seperately
+
+contains_branch_seperately(other_transform)[source]
+ 
+Return whether the given branch is a sub-tree of this transform on each separate dimension. A common use for this method is to identify if a transform is a blended transform containing an axes' data transform. e.g.: x_isdata, y_isdata = trans.contains_branch_seperately(ax.transData)

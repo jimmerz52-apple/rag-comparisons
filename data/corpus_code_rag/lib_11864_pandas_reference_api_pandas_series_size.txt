@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.size
+
+pandas.Series.size   propertySeries.size
+ 
+Return the number of elements in the underlying data.

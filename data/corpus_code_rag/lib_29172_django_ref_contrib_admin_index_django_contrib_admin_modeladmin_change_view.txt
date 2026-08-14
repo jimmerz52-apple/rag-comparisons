@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.change_view
+
+ModelAdmin.change_view(request, object_id, form_url='', extra_context=None)  
+Django view for the model instance editing page. See note below.

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.AlertDescription
+
+class ssl.AlertDescription  
+enum.IntEnum collection of ALERT_DESCRIPTION_* constants.  New in version 3.6.

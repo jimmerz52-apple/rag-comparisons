@@ -1,0 +1,7 @@
+# python.library.unittest#unittest.TestCase.tearDownClass
+
+tearDownClass()  
+A class method called after tests in an individual class have run. tearDownClass is called with the class as the only argument and must be decorated as a classmethod(): @classmethod
+def tearDownClass(cls):
+    ...
+ See Class and Module Fixtures for more details.  New in version 3.2.

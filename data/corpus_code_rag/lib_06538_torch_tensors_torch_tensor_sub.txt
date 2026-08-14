@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sub_
+
+sub_(other, *, alpha=1) → Tensor  
+In-place version of sub()

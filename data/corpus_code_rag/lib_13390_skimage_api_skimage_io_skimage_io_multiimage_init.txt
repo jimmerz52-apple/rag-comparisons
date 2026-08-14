@@ -1,0 +1,5 @@
+# skimage.api.skimage.io#skimage.io.MultiImage.__init__
+
+__init__(filename, conserve_memory=True, dtype=None, **imread_kwargs) [source]
+ 
+Load a multi-img.

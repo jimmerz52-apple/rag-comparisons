@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.beta.Beta.has_rsample
+
+has_rsample = True

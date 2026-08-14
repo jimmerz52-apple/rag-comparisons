@@ -1,0 +1,16 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator
+
+mpl_toolkits.axes_grid1.inset_locator A collection of functions and objects for creating or placing inset axes.  Classes  
+AnchoredLocatorBase(bbox_to_anchor, ...[, ...]) 
+ Parameters    
+AnchoredSizeLocator(bbox_to_anchor, x_size, ...) 
+ Parameters    
+AnchoredZoomLocator(parent_axes, zoom, loc) 
+ Parameters    
+BboxConnector(bbox1, bbox2, loc1[, loc2]) Connect two bboxes with a straight line.  
+BboxConnectorPatch(bbox1, bbox2, loc1a, ...) Connect two bboxes with a quadrilateral.  
+BboxPatch(bbox, **kwargs) Patch showing the shape bounded by a Bbox.  
+InsetPosition(parent, lbwh) An object for positioning an inset axes.     Functions  
+inset_axes(parent_axes, width, height[, ...]) Create an inset axes with a given width and height.  
+mark_inset(parent_axes, inset_axes, loc1, ...) Draw a box to mark the location of an area represented by an inset axes.  
+zoomed_inset_axes(parent_axes, zoom[, loc, ...]) Create an anchored inset axes by scaling a parent axes.

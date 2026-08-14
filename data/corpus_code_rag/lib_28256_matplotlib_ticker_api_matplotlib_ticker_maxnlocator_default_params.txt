@@ -1,0 +1,3 @@
+# matplotlib.ticker_api#matplotlib.ticker.MaxNLocator.default_params
+
+default_params={'integer': False, 'min_n_ticks': 2, 'nbins': 10, 'prune': None, 'steps': None, 'symmetric': False}

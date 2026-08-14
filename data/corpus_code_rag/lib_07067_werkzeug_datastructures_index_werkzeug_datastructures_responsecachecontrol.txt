@@ -1,0 +1,33 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ResponseCacheControl
+
+class werkzeug.datastructures.ResponseCacheControl(values=(), on_update=None)  
+A cache control for responses. Unlike RequestCacheControl this is mutable and gives access to response-relevant cache control headers. To get a header of the ResponseCacheControl object again you can convert the object into a string or call the to_header() method. If you plan to subclass it and add your own items have a look at the sourcecode for that class.  Changelog New in version 0.5: In previous versions a CacheControl class existed that was used both for request and response.   
+no_cache  
+accessor for ‘no-cache’ 
+  
+no_store  
+accessor for ‘no-store’ 
+  
+max_age  
+accessor for ‘max-age’ 
+  
+no_transform  
+accessor for ‘no-transform’ 
+  
+property immutable  
+accessor for ‘immutable’ 
+  
+property must_revalidate  
+accessor for ‘must-revalidate’ 
+  
+property private  
+accessor for ‘private’ 
+  
+property proxy_revalidate  
+accessor for ‘proxy-revalidate’ 
+  
+property public  
+accessor for ‘public’ 
+  
+property s_maxage  
+accessor for ‘s-maxage’

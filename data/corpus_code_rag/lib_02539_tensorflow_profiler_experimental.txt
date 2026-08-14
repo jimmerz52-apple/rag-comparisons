@@ -1,0 +1,3 @@
+# tensorflow.profiler.experimental
+
+Module: tf.profiler.experimental Public API for tf.profiler.experimental namespace. Modules client module: Public API for tf.profiler.experimental.client namespace. server module: Public API for tf.profiler.experimental.server namespace. Classes class Profile: Context-manager profile API. class ProfilerOptions: Options for finer control over the profiler. class Trace: Context manager that generates a trace event in the profiler. Functions start(...): Start profiling TensorFlow performance. stop(...): Stops the current profiling session.

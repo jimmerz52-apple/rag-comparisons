@@ -1,0 +1,169 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingregressor
+
+sklearn.ensemble.StackingRegressor  
+class sklearn.ensemble.StackingRegressor(estimators, final_estimator=None, *, cv=None, n_jobs=None, passthrough=False, verbose=0) [source]
+ 
+Stack of estimators with a final regressor. Stacked generalization consists in stacking the output of individual estimator and use a regressor to compute the final prediction. Stacking allows to use the strength of each individual estimator by using their output as input of a final estimator. Note that estimators_ are fitted on the full X while final_estimator_ is trained using cross-validated predictions of the base estimators using cross_val_predict. Read more in the User Guide.  New in version 0.22.   Parameters 
+ 
+estimatorslist of (str, estimator) 
+
+Base estimators which will be stacked together. Each element of the list is defined as a tuple of string (i.e. name) and an estimator instance. An estimator can be set to ‘drop’ using set_params.  
+final_estimatorestimator, default=None 
+
+A regressor which will be used to combine the base estimators. The default regressor is a RidgeCV.  
+cvint, cross-validation generator or an iterable, default=None 
+
+Determines the cross-validation splitting strategy used in cross_val_predict to train final_estimator. Possible inputs for cv are:  None, to use the default 5-fold cross validation, integer, to specify the number of folds in a (Stratified) KFold, An object to be used as a cross-validation generator, An iterable yielding train, test splits.  For integer/None inputs, if the estimator is a classifier and y is either binary or multiclass, StratifiedKFold is used. In all other cases, KFold is used. Refer User Guide for the various cross-validation strategies that can be used here.  Note A larger number of split will provide no benefits if the number of training samples is large enough. Indeed, the training time will increase. cv is not used for model evaluation but for prediction.   
+n_jobsint, default=None 
+
+The number of jobs to run in parallel for fit of all estimators. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.  
+passthroughbool, default=False 
+
+When False, only the predictions of estimators will be used as training data for final_estimator. When True, the final_estimator is trained on the predictions as well as the original training data.  
+verboseint, default=0 
+
+Verbosity level.    Attributes 
+ 
+estimators_list of estimator 
+
+The elements of the estimators parameter, having been fitted on the training data. If an estimator has been set to 'drop', it will not appear in estimators_.  
+named_estimators_Bunch 
+
+Attribute to access any fitted sub-estimators by name.  
+final_estimator_estimator 
+
+The regressor to stacked the base estimators fitted.     References  
+1  
+Wolpert, David H. “Stacked generalization.” Neural networks 5.2 (1992): 241-259.   Examples >>> from sklearn.datasets import load_diabetes
+>>> from sklearn.linear_model import RidgeCV
+>>> from sklearn.svm import LinearSVR
+>>> from sklearn.ensemble import RandomForestRegressor
+>>> from sklearn.ensemble import StackingRegressor
+>>> X, y = load_diabetes(return_X_y=True)
+>>> estimators = [
+...     ('lr', RidgeCV()),
+...     ('svr', LinearSVR(random_state=42))
+... ]
+>>> reg = StackingRegressor(
+...     estimators=estimators,
+...     final_estimator=RandomForestRegressor(n_estimators=10,
+...                                           random_state=42)
+... )
+>>> from sklearn.model_selection import train_test_split
+>>> X_train, X_test, y_train, y_test = train_test_split(
+...     X, y, random_state=42
+... )
+>>> reg.fit(X_train, y_train).score(X_test, y_test)
+0.3...
+ Methods  
+fit(X, y[, sample_weight]) Fit the estimators.  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_params([deep]) Get the parameters of an estimator from the ensemble.  
+predict(X, **predict_params) Predict target for X.  
+score(X, y[, sample_weight]) Return the coefficient of determination \(R^2\) of the prediction.  
+set_params(**params) Set the parameters of an estimator from the ensemble.  
+transform(X) Return the predictions for X for each estimator.    
+fit(X, y, sample_weight=None) [source]
+ 
+Fit the estimators.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Note that this is supported only if all underlying estimators support sample weights.    Returns 
+ 
+selfobject 
+   
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_params(deep=True) [source]
+ 
+Get the parameters of an estimator from the ensemble. Returns the parameters given in the constructor as well as the estimators contained within the estimators parameter.  Parameters 
+ 
+deepbool, default=True 
+
+Setting it to True gets the various estimators and the parameters of the estimators as well.     
+  
+property n_features_in_  
+Number of features seen during fit. 
+  
+predict(X, **predict_params) [source]
+ 
+Predict target for X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.  
+**predict_paramsdict of str -> obj 
+
+Parameters to the predict called by the final_estimator. Note that this may be used to return uncertainties from some estimators with return_std or return_cov. Be aware that it will only accounts for uncertainty in the final estimator.    Returns 
+ 
+y_predndarray of shape (n_samples,) or (n_samples, n_output) 
+
+Predicted targets.     
+  
+score(X, y, sample_weight=None) [source]
+ 
+Return the coefficient of determination \(R^2\) of the prediction. The coefficient \(R^2\) is defined as \((1 - \frac{u}{v})\), where \(u\) is the residual sum of squares ((y_true - y_pred)
+** 2).sum() and \(v\) is the total sum of squares ((y_true -
+y_true.mean()) ** 2).sum(). The best possible score is 1.0 and it can be negative (because the model can be arbitrarily worse). A constant model that always predicts the expected value of y, disregarding the input features, would get a \(R^2\) score of 0.0.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples. For some estimators this may be a precomputed kernel matrix or a list of generic objects instead with shape (n_samples, n_samples_fitted), where n_samples_fitted is the number of samples used in the fitting for the estimator.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True values for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+\(R^2\) of self.predict(X) wrt. y.     Notes The \(R^2\) score used when calling score on a regressor uses multioutput='uniform_average' from version 0.23 to keep consistent with default value of r2_score. This influences the score method of all the multioutput regressors (except for MultiOutputRegressor). 
+  
+set_params(**params) [source]
+ 
+Set the parameters of an estimator from the ensemble. Valid parameter keys can be listed with get_params(). Note that you can directly set the parameters of the estimators contained in estimators.  Parameters 
+ 
+**paramskeyword arguments 
+
+Specific parameters using e.g. set_params(parameter_name=new_value). In addition, to setting the parameters of the estimator, the individual estimator of the estimators can also be set, or can be removed by setting them to ‘drop’.     
+  
+transform(X) [source]
+ 
+Return the predictions for X for each estimator.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ 
+y_predsndarray of shape (n_samples, n_estimators) 
+
+Prediction outputs for each estimator.     
+ 
+ Examples using sklearn.ensemble.StackingRegressor
+ 
+  Combine predictors using stacking

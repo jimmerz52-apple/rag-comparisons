@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.length
+
+GEOSGeometry.length  
+Returns the length of this geometry (e.g., 0 for a Point, the length of a LineString, or the circumference of a Polygon).

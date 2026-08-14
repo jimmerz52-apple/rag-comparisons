@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.where
+
+where(condition, y) → Tensor  
+self.where(condition, y) is equivalent to torch.where(condition, self, y). See torch.where()

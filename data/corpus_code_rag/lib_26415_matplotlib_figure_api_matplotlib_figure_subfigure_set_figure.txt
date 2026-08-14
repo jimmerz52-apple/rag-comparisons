@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.set_figure
+
+set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure

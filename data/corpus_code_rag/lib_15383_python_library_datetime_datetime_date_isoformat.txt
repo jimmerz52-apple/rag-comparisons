@@ -1,0 +1,7 @@
+# python.library.datetime#datetime.date.isoformat
+
+date.isoformat()  
+Return a string representing the date in ISO 8601 format, YYYY-MM-DD: >>> from datetime import date
+>>> date(2002, 12, 4).isoformat()
+'2002-12-04'
+ This is the inverse of date.fromisoformat().

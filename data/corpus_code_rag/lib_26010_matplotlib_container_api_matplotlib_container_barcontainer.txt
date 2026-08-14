@@ -1,0 +1,22 @@
+# matplotlib.container_api#matplotlib.container.BarContainer
+
+classmatplotlib.container.BarContainer(*args, **kwargs)[source]
+ 
+Bases: matplotlib.container.Container Container for the artists of bar plots (e.g. created by Axes.bar). The container can be treated as a tuple of the patches themselves. Additionally, you can access these and further parameters by the attributes.  Attributes 
+ 
+patcheslist of Rectangle
+
+
+The artists of the bars.  
+errorbarNone or ErrorbarContainer
+
+
+A container for the error bar artists if error bars are present. None otherwise.  
+datavaluesNone or array-like
+
+
+The underlying data values corresponding to the bars.  
+orientation{'vertical', 'horizontal'}, default: None
+
+
+If 'vertical', the bars are assumed to be vertical. If 'horizontal', the bars are assumed to be horizontal.

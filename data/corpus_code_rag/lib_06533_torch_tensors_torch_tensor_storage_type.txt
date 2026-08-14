@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.storage_type
+
+storage_type() → type  
+Returns the type of the underlying storage.

@@ -1,0 +1,11 @@
+# werkzeug.http.index#werkzeug.http.parse_options_header
+
+werkzeug.http.parse_options_header(value, multiple=False)  
+Parse a Content-Type like header into a tuple with the content type and the options: >>> parse_options_header('text/html; charset=utf8')
+('text/html', {'charset': 'utf8'})
+ This should not be used to parse Cache-Control like headers that use a slightly different format. For these headers use the parse_dict_header() function.  Changelog Changed in version 0.15: RFC 2231 parameter continuations are handled.   New in version 0.5.   Parameters 
+ 
+value (Optional[str]) – the header to parse. 
+multiple (bool) – Whether try to parse and return multiple MIME types   Returns 
+(mimetype, options) or (mimetype, options, mimetype, options, …) if multiple=True  Return type 
+Union[Tuple[str, Dict[str, str]], Tuple[Any, …]]

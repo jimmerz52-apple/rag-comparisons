@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.Output.set_instrument
+
+set_instrument() 
+ select an instrument, with a value between 0 and 127 set_instrument(instrument_id, channel=0) -> None  Select an instrument.

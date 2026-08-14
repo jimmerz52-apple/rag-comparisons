@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.http_version
+
+http_version  
+If origin_server is true, this string attribute is used to set the HTTP version of the response set to the client. It defaults to "1.0".

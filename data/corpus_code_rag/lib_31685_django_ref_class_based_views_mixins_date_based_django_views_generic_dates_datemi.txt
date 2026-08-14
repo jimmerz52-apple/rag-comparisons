@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DateMixin.get_date_field
+
+get_date_field()  
+Returns the name of the field that contains the date data that this view will operate on. Returns date_field by default.

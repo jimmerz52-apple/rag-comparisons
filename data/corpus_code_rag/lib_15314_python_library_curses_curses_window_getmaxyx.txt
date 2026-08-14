@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.getmaxyx
+
+window.getmaxyx()  
+Return a tuple (y, x) of the height and width of the window.

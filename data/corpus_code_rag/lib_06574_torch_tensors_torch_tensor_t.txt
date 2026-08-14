@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.t_
+
+t_() → Tensor  
+In-place version of t()

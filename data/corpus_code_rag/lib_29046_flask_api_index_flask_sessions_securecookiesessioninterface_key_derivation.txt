@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.key_derivation
+
+key_derivation = 'hmac'  
+the name of the itsdangerous supported key derivation. The default is hmac.

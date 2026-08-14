@@ -1,0 +1,9 @@
+# flask.api.index#flask.Request.from_values
+
+classmethod from_values(*args, **kwargs)  
+Create a new request object based on the values provided. If environ is given missing values are filled from there. This method is useful for small scripts when you need to simulate a request from an URL. Do not use this method for unittesting, there is a full featured client object (Client) that allows to create multipart requests, support for cookies etc. This accepts the same options as the EnvironBuilder.  Changelog Changed in version 0.5: This method now accepts the same arguments as EnvironBuilder. Because of this the environ parameter is now called environ_overrides.   Returns 
+request object  Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+werkzeug.wrappers.request.Request

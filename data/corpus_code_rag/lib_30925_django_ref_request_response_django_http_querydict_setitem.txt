@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.__setitem__
+
+QueryDict.__setitem__(key, value)  
+Sets the given key to [value] (a list whose single element is value). Note that this, as other dictionary functions that have side effects, can only be called on a mutable QueryDict (such as one that was created via QueryDict.copy()).

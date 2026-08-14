@@ -1,0 +1,5 @@
+# python.library.curses.ascii#curses.ascii.isalnum
+
+curses.ascii.isalnum(c)  
+Checks for an ASCII alphanumeric character; it is equivalent to isalpha(c) or
+isdigit(c).

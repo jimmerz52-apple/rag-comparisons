@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIterator.__iter__
+
+__iter__()  
+Yields 2-tuple choices, in the (value, label) format used by ChoiceField.choices. The first value element is a ModelChoiceIteratorValue instance.

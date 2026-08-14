@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.decode
+
+numpy.char.chararray.decode method   char.chararray.decode(encoding=None, errors=None)[source]
+ 
+Calls str.decode element-wise.  See also  char.decode

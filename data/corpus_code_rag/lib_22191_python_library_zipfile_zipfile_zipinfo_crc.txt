@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.CRC
+
+ZipInfo.CRC  
+CRC-32 of the uncompressed file.

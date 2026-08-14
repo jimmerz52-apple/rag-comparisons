@@ -1,0 +1,24 @@
+# skimage.api.skimage.exposure#skimage.exposure.match_histograms
+
+skimage.exposure.match_histograms(image, reference, *, multichannel=False) [source]
+ 
+Adjust an image so that its cumulative histogram matches that of another. The adjustment is applied separately for each channel.  Parameters 
+ 
+imagendarray 
+
+Input image. Can be gray-scale or in color.  
+referencendarray 
+
+Image to match histogram of. Must have the same number of channels as image.  
+multichannelbool, optional 
+
+Apply the matching separately for each channel.    Returns 
+ 
+matchedndarray 
+
+Transformed input image.    Raises 
+ ValueError
+
+Thrown when the number of channels in the input image and the reference differ.     References  
+1  
+http://paulbourke.net/miscellaneous/equalisation/

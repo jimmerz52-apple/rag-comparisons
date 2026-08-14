@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_orientation
+
+get_orientation()[source]
+ 
+Return the orientation of the event line ('horizontal' or 'vertical').

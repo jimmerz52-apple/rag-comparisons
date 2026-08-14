@@ -1,0 +1,21 @@
+# python.library.turtle#turtle.setpos
+
+turtle.goto(x, y=None)  
+turtle.setpos(x, y=None)  
+turtle.setposition(x, y=None)  
+ Parameters 
+ 
+x – a number or a pair/vector of numbers 
+y – a number or None
+    If y is None, x must be a pair of coordinates or a Vec2D (e.g. as returned by pos()). Move turtle to an absolute position. If the pen is down, draw line. Do not change the turtle’s orientation.  >>> tp = turtle.pos()
+ >>> tp
+ (0.00,0.00)
+ >>> turtle.setpos(60,30)
+ >>> turtle.pos()
+ (60.00,30.00)
+ >>> turtle.setpos((20,80))
+ >>> turtle.pos()
+ (20.00,80.00)
+ >>> turtle.setpos(tp)
+ >>> turtle.pos()
+ (0.00,0.00)

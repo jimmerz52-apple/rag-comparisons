@@ -1,0 +1,4 @@
+# python.library.test#test.support.TEST_HTTP_URL
+
+test.support.TEST_HTTP_URL  
+Define the URL of a dedicated HTTP server for the network tests.

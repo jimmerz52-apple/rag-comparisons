@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.normal_
+
+normal_(mean=0, std=1, *, generator=None) → Tensor  
+Fills self tensor with elements samples from the normal distribution parameterized by mean and std.

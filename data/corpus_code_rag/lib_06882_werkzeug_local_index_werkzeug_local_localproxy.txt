@@ -1,0 +1,27 @@
+# werkzeug.local.index#werkzeug.local.LocalProxy
+
+class werkzeug.local.LocalProxy(local, name=None)  
+A proxy to the object bound to a Local. All operations on the proxy are forwarded to the bound object. If no object is bound, a RuntimeError is raised. from werkzeug.local import Local
+l = Local()
+
+# a proxy to whatever l.user is set to
+user = l("user")
+
+from werkzeug.local import LocalStack
+_request_stack = LocalStack()
+
+# a proxy to _request_stack.top
+request = _request_stack()
+
+# a proxy to the session attribute of the request proxy
+session = LocalProxy(lambda: request.session)
+ __repr__ and __class__ are forwarded, so repr(x) and isinstance(x, cls) will look like the proxied object. Use issubclass(type(x), LocalProxy) to check if an object is a proxy. repr(user)  # <User admin>
+isinstance(user, User)  # True
+issubclass(type(user), LocalProxy)  # True
+  Parameters 
+ 
+local – The Local or callable that provides the proxied object. 
+name – The attribute name to look up on a Local. Not used if a callable is given.     Changed in version 2.0: Updated proxied attributes and methods to reflect the current data model.   Changelog Changed in version 0.6.1: The class can be instantiated with a callable.   
+_get_current_object()  
+Return the current object. This is useful if you want the real object behind the proxy at a time for performance reasons or because you want to pass the object into a different context.  Return type 
+Any

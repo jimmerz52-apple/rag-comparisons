@@ -1,0 +1,10 @@
+# torch.generated.torch.nn.utils.prune.l1unstructured#torch.nn.utils.prune.L1Unstructured.apply
+
+classmethod apply(module, name, amount, importance_scores=None) [source]
+ 
+Adds the forward pre-hook that enables pruning on the fly and the reparametrization of a tensor in terms of the original tensor and the pruning mask.  Parameters 
+ 
+module (nn.Module) – module containing the tensor to prune 
+name (str) – parameter name within module on which pruning will act. 
+amount (int or float) – quantity of parameters to prune. If float, should be between 0.0 and 1.0 and represent the fraction of parameters to prune. If int, it represents the absolute number of parameters to prune. 
+importance_scores (torch.Tensor) – tensor of importance scores (of same shape as module parameter) used to compute mask for pruning. The values in this tensor indicate the importance of the corresponding elements in the parameter being pruned. If unspecified or None, the module parameter will be used in its place.

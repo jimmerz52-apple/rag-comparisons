@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.nelement
+
+nelement() → int  
+Alias for numel()

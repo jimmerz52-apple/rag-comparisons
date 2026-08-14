@@ -1,0 +1,13 @@
+# werkzeug.routing.index#werkzeug.routing.Map.bind
+
+bind(server_name, script_name=None, subdomain=None, url_scheme='http', default_method='GET', path_info=None, query_args=None)  
+Return a new MapAdapter with the details specified to the call. Note that script_name will default to '/' if not further specified or None. The server_name at least is a requirement because the HTTP RFC requires absolute URLs for redirects and so all redirect exceptions raised by Werkzeug will contain the full canonical URL. If no path_info is passed to match() it will use the default path info passed to bind. While this doesn’t really make sense for manual bind calls, it’s useful if you bind a map to a WSGI environment which already contains the path info. subdomain will default to the default_subdomain for this map if no defined. If there is no default_subdomain you cannot use the subdomain feature.  Changelog Changed in version 1.0: If url_scheme is ws or wss, only WebSocket rules will match.   Changed in version 0.15: path_info defaults to '/' if None.   Changed in version 0.8: query_args can be a string.   Changed in version 0.7: Added query_args.   Parameters 
+ 
+server_name (str) –  
+script_name (Optional[str]) –  
+subdomain (Optional[str]) –  
+url_scheme (str) –  
+default_method (str) –  
+path_info (Optional[str]) –  
+query_args (Optional[Union[Mapping[str, Any], str]]) –    Return type 
+werkzeug.routing.MapAdapter

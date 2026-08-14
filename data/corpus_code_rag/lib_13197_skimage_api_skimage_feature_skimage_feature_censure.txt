@@ -1,0 +1,75 @@
+# skimage.api.skimage.feature#skimage.feature.CENSURE
+
+class skimage.feature.CENSURE(min_scale=1, max_scale=7, mode='DoB', non_max_threshold=0.15, line_threshold=10) [source]
+ 
+Bases: skimage.feature.util.FeatureDetector CENSURE keypoint detector.  
+min_scaleint, optional 
+
+Minimum scale to extract keypoints from.  
+max_scaleint, optional 
+
+Maximum scale to extract keypoints from. The keypoints will be extracted from all the scales except the first and the last i.e. from the scales in the range [min_scale + 1, max_scale - 1]. The filter sizes for different scales is such that the two adjacent scales comprise of an octave.  
+mode{‘DoB’, ‘Octagon’, ‘STAR’}, optional 
+
+Type of bi-level filter used to get the scales of the input image. Possible values are ‘DoB’, ‘Octagon’ and ‘STAR’. The three modes represent the shape of the bi-level filters i.e. box(square), octagon and star respectively. For instance, a bi-level octagon filter consists of a smaller inner octagon and a larger outer octagon with the filter weights being uniformly negative in both the inner octagon while uniformly positive in the difference region. Use STAR and Octagon for better features and DoB for better performance.  
+non_max_thresholdfloat, optional 
+
+Threshold value used to suppress maximas and minimas with a weak magnitude response obtained after Non-Maximal Suppression.  
+line_thresholdfloat, optional 
+
+Threshold for rejecting interest points which have ratio of principal curvatures greater than this value.   References  
+1  
+Motilal Agrawal, Kurt Konolige and Morten Rufus Blas “CENSURE: Center Surround Extremas for Realtime Feature Detection and Matching”, https://link.springer.com/chapter/10.1007/978-3-540-88693-8_8 DOI:10.1007/978-3-540-88693-8_8  
+2  
+Adam Schmidt, Marek Kraft, Michal Fularz and Zuzanna Domagala “Comparative Assessment of Point Feature Detectors and Descriptors in the Context of Robot Navigation” http://yadda.icm.edu.pl/yadda/element/bwmeta1.element.baztech-268aaf28-0faf-4872-a4df-7e2e61cb364c/c/Schmidt_comparative.pdf DOI:10.1.1.465.1117   Examples >>> from skimage.data import astronaut
+>>> from skimage.color import rgb2gray
+>>> from skimage.feature import CENSURE
+>>> img = rgb2gray(astronaut()[100:300, 100:300])
+>>> censure = CENSURE()
+>>> censure.detect(img)
+>>> censure.keypoints
+array([[  4, 148],
+       [ 12,  73],
+       [ 21, 176],
+       [ 91,  22],
+       [ 93,  56],
+       [ 94,  22],
+       [ 95,  54],
+       [100,  51],
+       [103,  51],
+       [106,  67],
+       [108,  15],
+       [117,  20],
+       [122,  60],
+       [125,  37],
+       [129,  37],
+       [133,  76],
+       [145,  44],
+       [146,  94],
+       [150, 114],
+       [153,  33],
+       [154, 156],
+       [155, 151],
+       [184,  63]])
+>>> censure.scales
+array([2, 6, 6, 2, 4, 3, 2, 3, 2, 6, 3, 2, 2, 3, 2, 2, 2, 3, 2, 2, 4, 2,
+       2])
+  Attributes 
+ 
+keypoints(N, 2) array 
+
+Keypoint coordinates as (row, col).  
+scales(N, ) array 
+
+Corresponding scales.      
+__init__(min_scale=1, max_scale=7, mode='DoB', non_max_threshold=0.15, line_threshold=10) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+detect(image) [source]
+ 
+Detect CENSURE keypoints along with the corresponding scale.  Parameters 
+ 
+image2D ndarray 
+
+Input image.

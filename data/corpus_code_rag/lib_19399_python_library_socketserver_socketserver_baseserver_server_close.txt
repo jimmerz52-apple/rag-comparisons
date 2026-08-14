@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.server_close
+
+server_close()  
+Clean up the server. May be overridden.

@@ -1,0 +1,11 @@
+# python.library.ast#ast.FunctionDef
+
+class ast.FunctionDef(name, args, body, decorator_list, returns, type_comment)  
+A function definition.  
+name is a raw string of the function name. 
+args is a arguments node. 
+body is the list of nodes inside the function. 
+decorator_list is the list of decorators to be applied, stored outermost first (i.e. the first in the list will be applied last). 
+returns is the return annotation.   
+type_comment  
+type_comment is an optional string with the type annotation as a comment.

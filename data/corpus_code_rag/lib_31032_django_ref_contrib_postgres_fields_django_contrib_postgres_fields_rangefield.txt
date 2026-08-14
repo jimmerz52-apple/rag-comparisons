@@ -1,0 +1,12 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.RangeField
+
+class RangeField(**options)  
+Base class for model range fields.  
+base_field  
+The model field class to use. 
+  
+range_type  
+The psycopg2 range type to use. 
+  
+form_field  
+The form field class to use. Should be a subclass of django.contrib.postgres.forms.BaseRangeField.

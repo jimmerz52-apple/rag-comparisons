@@ -1,0 +1,12 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.CombinedMultiDict
+
+class werkzeug.datastructures.CombinedMultiDict(dicts=None)  
+A read only MultiDict that you can pass multiple MultiDict instances as sequence and it will combine the return values of all wrapped dicts: >>> from werkzeug.datastructures import CombinedMultiDict, MultiDict
+>>> post = MultiDict([('foo', 'bar')])
+>>> get = MultiDict([('blub', 'blah')])
+>>> combined = CombinedMultiDict([get, post])
+>>> combined['foo']
+'bar'
+>>> combined['blub']
+'blah'
+ This works for all read operations and will raise a TypeError for methods that usually change data which isn’t possible. From Werkzeug 0.3 onwards, the KeyError raised by this class is also a subclass of the BadRequest HTTP exception and will render a page for a 400 BAD REQUEST if caught in a catch-all for HTTP exceptions.

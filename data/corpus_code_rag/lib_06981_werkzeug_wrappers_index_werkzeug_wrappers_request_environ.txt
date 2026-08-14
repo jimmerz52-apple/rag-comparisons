@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.environ
+
+environ: WSGIEnvironment  
+The WSGI environment containing HTTP headers and information from the WSGI server.

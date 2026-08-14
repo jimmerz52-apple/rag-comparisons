@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.grid#mpl_toolkits.axes_grid1.axes_grid.Grid.set_axes_pad
+
+set_axes_pad(axes_pad)[source]
+ 
+Set the padding between the axes.  Parameters 
+ 
+axes_pad(float, float)
+
+
+The padding (horizontal pad, vertical pad) in inches.

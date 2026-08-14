@@ -1,0 +1,4 @@
+# python.library.token#token.COLONEQUAL
+
+token.COLONEQUAL  
+Token value for ":=".

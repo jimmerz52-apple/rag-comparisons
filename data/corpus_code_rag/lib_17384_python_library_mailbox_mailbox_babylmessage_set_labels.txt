@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.BabylMessage.set_labels
+
+set_labels(labels)  
+Set the list of labels on the message to labels.

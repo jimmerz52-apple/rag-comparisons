@@ -1,0 +1,50 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LineProfile
+
+class skimage.viewer.plugins.LineProfile(maxdist=10, epsilon='deprecated', limits='image', **kwargs) [source]
+ 
+Bases: skimage.viewer.plugins.plotplugin.PlotPlugin Plugin to compute interpolated intensity under a scan line on an image. See PlotPlugin and Plugin classes for additional details.  Parameters 
+ 
+maxdistfloat 
+
+Maximum pixel distance allowed when selecting end point of scan line.  
+limitstuple or {None, ‘image’, ‘dtype’} 
+
+(minimum, maximum) intensity limits for plotted profile. The following special values are defined: None : rescale based on min/max intensity along selected scan line. ‘image’ : fixed scale based on min/max intensity in image. ‘dtype’ : fixed scale based on min/max intensity of image dtype.      
+__init__(maxdist=10, epsilon='deprecated', limits='image', **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+attach(image_viewer) [source]
+ 
+Attach the plugin to an ImageViewer. Note that the ImageViewer will automatically call this method when the plugin is added to the ImageViewer. For example: viewer += Plugin(...)
+ Also note that attach automatically calls the filter function so that the image matches the filtered value specified by attached widgets. 
+  
+get_profiles() [source]
+ 
+Return intensity profile of the selected line.  Returns 
+ end_points: (2, 2) array
+
+The positions ((x1, y1), (x2, y2)) of the line ends.  profile: list of 1d arrays
+
+Profile of intensity values. Length 1 (grayscale) or 3 (rgb).     
+  
+help() [source]
+
+  
+line_changed(end_points) [source]
+
+  
+name = 'Line Profile' 
+  
+output() [source]
+ 
+Return the drawn line and the resulting scan.  Returns 
+ 
+line_image(M, N) uint8 array, same shape as image 
+
+An array of 0s with the scanned line set to 255. If the linewidth of the line tool is greater than 1, sets the values within the profiled polygon to 128.  
+scan(P,) or (P, 3) array of int or float 
+
+The line scan values across the image.     
+  
+reset_axes(scan_data) [source]

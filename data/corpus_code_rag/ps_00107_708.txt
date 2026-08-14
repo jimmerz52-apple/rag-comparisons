@@ -1,0 +1,7 @@
+# 708
+Task: 708
+
+# Write a python function to convert a string to a list.
+def Convert(string): 
+    li = list(string.split(" ")) 
+    return li

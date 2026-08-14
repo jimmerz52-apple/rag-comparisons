@@ -1,0 +1,5 @@
+# python.library.textwrap#textwrap.fill
+
+textwrap.fill(text, width=70, **kwargs)  
+Wraps the single paragraph in text, and returns a single string containing the wrapped paragraph. fill() is shorthand for "\n".join(wrap(text, ...))
+ In particular, fill() accepts exactly the same keyword arguments as wrap().

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.BaseDateListView.date_list_period
+
+date_list_period  
+Optional A string defining the aggregation period for date_list. It must be one of 'year' (default), 'month', or 'day'.

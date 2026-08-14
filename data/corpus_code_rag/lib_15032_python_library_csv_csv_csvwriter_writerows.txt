@@ -1,0 +1,4 @@
+# python.library.csv#csv.csvwriter.writerows
+
+csvwriter.writerows(rows)  
+Write all elements in rows (an iterable of row objects as described above) to the writer’s file object, formatted according to the current dialect.

@@ -1,0 +1,143 @@
+# sklearn.modules.generated.sklearn.preprocessing.polynomialfeatures
+
+sklearn.preprocessing.PolynomialFeatures  
+class sklearn.preprocessing.PolynomialFeatures(degree=2, *, interaction_only=False, include_bias=True, order='C') [source]
+ 
+Generate polynomial and interaction features. Generate a new feature matrix consisting of all polynomial combinations of the features with degree less than or equal to the specified degree. For example, if an input sample is two dimensional and of the form [a, b], the degree-2 polynomial features are [1, a, b, a^2, ab, b^2].  Parameters 
+ 
+degreeint, default=2 
+
+The degree of the polynomial features.  
+interaction_onlybool, default=False 
+
+If true, only interaction features are produced: features that are products of at most degree distinct input features (so not x[1] ** 2, x[0] * x[2] ** 3, etc.).  
+include_biasbool, default=True 
+
+If True (default), then include a bias column, the feature in which all polynomial powers are zero (i.e. a column of ones - acts as an intercept term in a linear model).  
+order{‘C’, ‘F’}, default=’C’ 
+
+Order of output array in the dense case. ‘F’ order is faster to compute, but may slow down subsequent estimators.  New in version 0.21.     Attributes 
+ 
+powers_ndarray of shape (n_output_features, n_input_features) 
+
+powers_[i, j] is the exponent of the jth input in the ith output.  
+n_input_features_int 
+
+The total number of input features.  
+n_output_features_int 
+
+The total number of polynomial output features. The number of output features is computed by iterating over all suitably sized combinations of input features.     Notes Be aware that the number of features in the output array scales polynomially in the number of features of the input array, and exponentially in the degree. High degrees can cause overfitting. See examples/linear_model/plot_polynomial_interpolation.py Examples >>> import numpy as np
+>>> from sklearn.preprocessing import PolynomialFeatures
+>>> X = np.arange(6).reshape(3, 2)
+>>> X
+array([[0, 1],
+       [2, 3],
+       [4, 5]])
+>>> poly = PolynomialFeatures(2)
+>>> poly.fit_transform(X)
+array([[ 1.,  0.,  1.,  0.,  0.,  1.],
+       [ 1.,  2.,  3.,  4.,  6.,  9.],
+       [ 1.,  4.,  5., 16., 20., 25.]])
+>>> poly = PolynomialFeatures(interaction_only=True)
+>>> poly.fit_transform(X)
+array([[ 1.,  0.,  1.,  0.],
+       [ 1.,  2.,  3.,  6.],
+       [ 1.,  4.,  5., 20.]])
+ Methods  
+fit(X[, y]) Compute number of output features.  
+fit_transform(X[, y]) Fit to data, then transform it.  
+get_feature_names([input_features]) Return feature names for output features  
+get_params([deep]) Get parameters for this estimator.  
+set_params(**params) Set the parameters of this estimator.  
+transform(X) Transform data to polynomial features    
+fit(X, y=None) [source]
+ 
+Compute number of output features.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted transformer.     
+  
+fit_transform(X, y=None, **fit_params) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs), default=None 
+
+Target values (None for unsupervised transformations).  
+**fit_paramsdict 
+
+Additional fit parameters.    Returns 
+ 
+X_newndarray array of shape (n_samples, n_features_new) 
+
+Transformed array.     
+  
+get_feature_names(input_features=None) [source]
+ 
+Return feature names for output features  Parameters 
+ 
+input_featureslist of str of shape (n_features,), default=None 
+
+String names for input features if available. By default, “x0”, “x1”, … “xn_features” is used.    Returns 
+ 
+output_feature_nameslist of str of shape (n_output_features,) 
+   
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+  
+transform(X) [source]
+ 
+Transform data to polynomial features  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data to transform, row by row. Prefer CSR over CSC for sparse input (for speed), but CSC is required if the degree is 4 or higher. If the degree is less than 4 and the input format is CSC, it will be converted to CSR, have its polynomial features generated, then converted back to CSC. If the degree is 2 or 3, the method described in “Leveraging Sparsity to Speed Up Polynomial Feature Expansions of CSR Matrices Using K-Simplex Numbers” by Andrew Nystrom and John Hughes is used, which is much faster than the method used on CSC input. For this reason, a CSC input will be converted to CSR, and the output will be converted back to CSC prior to being returned, hence the preference of CSR.    Returns 
+ 
+XP{ndarray, sparse matrix} of shape (n_samples, NP) 
+
+The matrix of features, where NP is the number of polynomial features generated from the combination of inputs. If a sparse matrix is provided, it will be converted into a sparse csr_matrix.     
+ 
+ Examples using sklearn.preprocessing.PolynomialFeatures
+ 
+  Release Highlights for scikit-learn 0.24  
+
+  Polynomial interpolation  
+
+  Robust linear estimator fitting  
+
+  Poisson regression and non-normal loss  
+
+  Underfitting vs. Overfitting

@@ -1,0 +1,4 @@
+# python.library.exceptions#UnicodeError.end
+
+end  
+The index after the last invalid data in object.

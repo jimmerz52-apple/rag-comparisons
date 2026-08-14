@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.core.resample.resampler.count
+
+pandas.core.resample.Resampler.count   Resampler.count()[source]
+ 
+Compute count of group, excluding missing values.  Returns 
+ Series or DataFrame
+
+Count of values within each group.      See also  Series.groupby
+
+Apply a function groupby to a Series.  DataFrame.groupby
+
+Apply a function groupby to each row or column of a DataFrame.

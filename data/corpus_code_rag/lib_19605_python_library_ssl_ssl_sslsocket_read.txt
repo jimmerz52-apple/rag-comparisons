@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.read
+
+SSLSocket.read(len=1024, buffer=None)  
+Read up to len bytes of data from the SSL socket and return the result as a bytes instance. If buffer is specified, then read into the buffer instead, and return the number of bytes read. Raise SSLWantReadError or SSLWantWriteError if the socket is non-blocking and the read would block. As at any time a re-negotiation is possible, a call to read() can also cause write operations.  Changed in version 3.5: The socket timeout is no more reset each time bytes are received or sent. The socket timeout is now to maximum total duration to read up to len bytes.   Deprecated since version 3.6: Use recv() instead of read().

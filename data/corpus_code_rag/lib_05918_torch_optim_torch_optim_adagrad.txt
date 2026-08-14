@@ -1,0 +1,15 @@
+# torch.optim#torch.optim.Adagrad
+
+class torch.optim.Adagrad(params, lr=0.01, lr_decay=0, weight_decay=0, initial_accumulator_value=0, eps=1e-10) [source]
+ 
+Implements Adagrad algorithm. It has been proposed in Adaptive Subgradient Methods for Online Learning and Stochastic Optimization.  Parameters 
+ 
+params (iterable) – iterable of parameters to optimize or dicts defining parameter groups 
+lr (float, optional) – learning rate (default: 1e-2) 
+lr_decay (float, optional) – learning rate decay (default: 0) 
+weight_decay (float, optional) – weight decay (L2 penalty) (default: 0) 
+eps (float, optional) – term added to the denominator to improve numerical stability (default: 1e-10)     
+step(closure=None) [source]
+ 
+Performs a single optimization step.  Parameters 
+closure (callable, optional) – A closure that reevaluates the model and returns the loss.

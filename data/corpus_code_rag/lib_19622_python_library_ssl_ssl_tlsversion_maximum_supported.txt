@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.TLSVersion.MAXIMUM_SUPPORTED
+
+TLSVersion.MAXIMUM_SUPPORTED  
+The minimum or maximum supported SSL or TLS version. These are magic constants. Their values don’t reflect the lowest and highest available TLS/SSL versions.

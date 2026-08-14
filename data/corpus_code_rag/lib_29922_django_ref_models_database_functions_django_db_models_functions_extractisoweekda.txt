@@ -1,0 +1,5 @@
+# django.ref.models.database-functions#django.db.models.functions.ExtractIsoWeekDay
+
+class ExtractIsoWeekDay(expression, tzinfo=None, **extra)  
+Returns the ISO-8601 week day with day 1 being Monday and day 7 being Sunday.  
+lookup_name = 'iso_week_day'

@@ -1,0 +1,17 @@
+# matplotlib.dates_api#matplotlib.dates.drange
+
+matplotlib.dates.drange(dstart, dend, delta)[source]
+ 
+Return a sequence of equally spaced Matplotlib dates. The dates start at dstart and reach up to, but not including dend. They are spaced by delta.  Parameters 
+ 
+dstart, denddatetime
+
+
+The date limits.  
+deltadatetime.timedelta
+
+
+Spacing of the dates.    Returns 
+ numpy.array
+
+A list floats representing Matplotlib dates.

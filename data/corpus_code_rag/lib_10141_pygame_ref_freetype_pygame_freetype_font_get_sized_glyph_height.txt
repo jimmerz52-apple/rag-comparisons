@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.get_sized_glyph_height
+
+get_sized_glyph_height() 
+ The scaled bounding box height of the font in pixels get_sized_glyph_height(<size>=0) -> int  Return the glyph bounding box height of the font in pixels. This is the average value of all glyphs in the font. It is not adjusted for strong or rotation.

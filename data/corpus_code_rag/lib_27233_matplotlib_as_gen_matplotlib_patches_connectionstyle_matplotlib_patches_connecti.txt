@@ -1,0 +1,11 @@
+# matplotlib._as_gen.matplotlib.patches.connectionstyle#matplotlib.patches.ConnectionStyle.Angle
+
+classAngle(angleA=90, angleB=0, rad=0.0)[source]
+ 
+Bases: matplotlib.patches.ConnectionStyle._Base Creates a piecewise continuous quadratic Bezier path between two points. The path has a one passing-through point placed at the intersecting point of two lines which cross the start and end point, and have a slope of angleA and angleB, respectively. The connecting edges are rounded with rad.  angleA
+
+starting angle of the path  angleB
+
+ending angle of the path  rad
+
+rounding radius of the edge     connect(posA, posB)[source]

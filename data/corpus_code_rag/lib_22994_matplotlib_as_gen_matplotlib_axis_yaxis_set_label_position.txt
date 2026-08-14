@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.set_label_position
+
+matplotlib.axis.YAxis.set_label_position   YAxis.set_label_position(position)[source]
+ 
+Set the label position (left or right)  Parameters 
+ 
+position{'left', 'right'}

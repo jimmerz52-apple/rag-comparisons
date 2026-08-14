@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.start_text_input
+
+pygame.key.start_text_input() 
+ start handling Unicode text input events start_text_input() -> None  Start receiving pygame.TEXTEDITING and pygame.TEXTINPUT events. A pygame.TEXTEDITING event is received when an IME composition is started or changed. It contains the composition text, length, and editing start position within the composition (attributes text, length, and start, respectively). When the composition is committed (or non-IME input is received), a pygame.TEXTINPUT event is generated. Text input events handling is on by default.  New in pygame 2.0.0.

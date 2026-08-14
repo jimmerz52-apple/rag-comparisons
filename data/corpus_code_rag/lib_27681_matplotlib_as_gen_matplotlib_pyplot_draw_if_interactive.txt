@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.draw_if_interactive
+
+matplotlib.pyplot.draw_if_interactive   matplotlib.pyplot.draw_if_interactive()[source]
+ 
+Redraw the current figure if in interactive mode.  Warning End users will typically not have to call this function because the the interactive mode takes care of this.

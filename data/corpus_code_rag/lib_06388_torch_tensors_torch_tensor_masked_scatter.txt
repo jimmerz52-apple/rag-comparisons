@@ -1,0 +1,7 @@
+# torch.tensors#torch.Tensor.masked_scatter_
+
+masked_scatter_(mask, source)  
+Copies elements from source into self tensor at positions where the mask is True. The shape of mask must be broadcastable with the shape of the underlying tensor. The source should have at least as many elements as the number of ones in mask  Parameters 
+ 
+mask (BoolTensor) – the boolean mask 
+source (Tensor) – the tensor to copy from     Note The mask operates on the self tensor, not on the given source tensor.

@@ -1,0 +1,13 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.set_figure
+
+set_figure(figure, update_tools=True)[source]
+ 
+Bind the given figure to the tools.  Parameters 
+ 
+figureFigure
+
+
+update_toolsbool, default: True
+
+
+Force tools to update figure.

@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_int16
+
+class ctypes.c_int16  
+Represents the C 16-bit signed int datatype. Usually an alias for c_short.

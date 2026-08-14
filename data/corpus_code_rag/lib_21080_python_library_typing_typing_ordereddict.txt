@@ -1,0 +1,4 @@
+# python.library.typing#typing.OrderedDict
+
+class typing.OrderedDict(collections.OrderedDict, MutableMapping[KT, VT])  
+A generic version of collections.OrderedDict.  New in version 3.7.2.   Deprecated since version 3.9: collections.OrderedDict now supports []. See PEP 585 and Generic Alias Type.

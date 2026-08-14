@@ -1,0 +1,3 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetImage.set_zoom
+
+set_zoom(zoom)[source]

@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.FileCookieJar.revert
+
+FileCookieJar.revert(filename=None, ignore_discard=False, ignore_expires=False)  
+Clear all cookies and reload cookies from a saved file. revert() can raise the same exceptions as load(). If there is a failure, the object’s state will not be altered.

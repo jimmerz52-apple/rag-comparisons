@@ -1,0 +1,13 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.save_formset
+
+ModelAdmin.save_formset(request, form, formset, change)  
+The save_formset method is given the HttpRequest, the parent ModelForm instance and a boolean value based on whether it is adding or changing the parent object. For example, to attach request.user to each changed formset model instance: class ArticleAdmin(admin.ModelAdmin):
+    def save_formset(self, request, form, formset, change):
+        instances = formset.save(commit=False)
+        for obj in formset.deleted_objects:
+            obj.delete()
+        for instance in instances:
+            instance.user = request.user
+            instance.save()
+        formset.save_m2m()
+ See also Saving objects in the formset.

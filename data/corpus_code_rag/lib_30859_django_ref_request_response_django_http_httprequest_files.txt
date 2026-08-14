@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.FILES
+
+HttpRequest.FILES  
+A dictionary-like object containing all uploaded files. Each key in FILES is the name from the <input type="file" name="">. Each value in FILES is an UploadedFile. See Managing files for more information. FILES will only contain data if the request method was POST and the <form> that posted to the request had enctype="multipart/form-data". Otherwise, FILES will be a blank dictionary-like object.

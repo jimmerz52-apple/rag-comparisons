@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.InspectLoader.load_module
+
+load_module(fullname)  
+Implementation of Loader.load_module().  Deprecated since version 3.4: use exec_module() instead.

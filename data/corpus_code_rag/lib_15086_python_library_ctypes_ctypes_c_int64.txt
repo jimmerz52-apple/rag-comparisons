@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_int64
+
+class ctypes.c_int64  
+Represents the C 64-bit signed int datatype. Usually an alias for c_longlong.

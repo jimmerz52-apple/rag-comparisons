@@ -1,0 +1,4 @@
+# python.library.token#token.STAR
+
+token.STAR  
+Token value for "*".

@@ -1,0 +1,6 @@
+# python.library.pprint#pprint.saferepr
+
+pprint.saferepr(object)  
+Return a string representation of object, protected against recursive data structures. If the representation of object exposes a recursive entry, the recursive reference will be represented as <Recursion on typename with
+id=number>. The representation is not otherwise formatted. >>> pprint.saferepr(stuff)
+"[<Recursion on list with id=...>, 'spam', 'eggs', 'lumberjack', 'knights', 'ni']"

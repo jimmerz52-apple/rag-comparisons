@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.splitx
+
+splitx(*args)[source]
+ 
+Return a list of new Bbox objects formed by splitting the original one with vertical lines at fractional positions given by args.

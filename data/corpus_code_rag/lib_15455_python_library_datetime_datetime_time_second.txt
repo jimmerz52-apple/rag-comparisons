@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.time.second
+
+time.second  
+In range(60).

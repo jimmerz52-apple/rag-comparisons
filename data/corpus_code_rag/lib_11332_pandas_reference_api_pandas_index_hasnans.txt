@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.hasnans
+
+pandas.Index.hasnans   Index.hasnans
+ 
+Return True if there are any NaNs. Enables various performance speedups.

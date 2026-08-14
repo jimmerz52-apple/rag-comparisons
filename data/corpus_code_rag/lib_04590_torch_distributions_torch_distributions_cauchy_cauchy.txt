@@ -1,0 +1,38 @@
+# torch.distributions#torch.distributions.cauchy.Cauchy
+
+class torch.distributions.cauchy.Cauchy(loc, scale, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Samples from a Cauchy (Lorentz) distribution. The distribution of the ratio of independent normally distributed random variables with means 0 follows a Cauchy distribution. Example: >>> m = Cauchy(torch.tensor([0.0]), torch.tensor([1.0]))
+>>> m.sample()  # sample from a Cauchy distribution with loc=0 and scale=1
+tensor([ 2.3214])
+  Parameters 
+ 
+loc (float or Tensor) – mode or median of the distribution. 
+scale (float or Tensor) – half width at half maximum.     
+arg_constraints = {'loc': Real(), 'scale': GreaterThan(lower_bound=0.0)} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(value) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+support = Real() 
+  
+property variance

@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder.start_ns
+
+start_ns(prefix, uri)  
+Is called whenever the parser encounters a new namespace declaration, before the start() callback for the opening element that defines it. prefix is '' for the default namespace and the declared namespace prefix name otherwise. uri is the namespace URI.  New in version 3.8.

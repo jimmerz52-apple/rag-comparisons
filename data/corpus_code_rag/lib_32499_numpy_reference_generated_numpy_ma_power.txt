@@ -1,0 +1,6 @@
+# numpy.reference.generated.numpy.ma.power
+
+numpy.ma.power   ma.power(a, b, third=None)[source]
+ 
+Returns element-wise base array raised to power from second array. This is the masked array version of numpy.power. For details see numpy.power.  See also  numpy.power
+  Notes The out argument to numpy.power is not supported, third has to be None.

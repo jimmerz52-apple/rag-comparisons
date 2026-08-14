@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.mpl_axes.simpleaxisartist#mpl_toolkits.axes_grid1.mpl_axes.SimpleAxisArtist.set_label
+
+set_label(txt)[source]
+ 
+Set a label that will be displayed in the legend.  Parameters 
+ 
+sobject
+
+
+s will be converted to a string by calling str.

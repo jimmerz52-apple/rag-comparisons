@@ -1,0 +1,4 @@
+# python.library.token#token.MINEQUAL
+
+token.MINEQUAL  
+Token value for "-=".

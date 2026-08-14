@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.ensemble.baggingregressor#sklearn.ensemble.BaggingRegressor.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+ Build a Bagging ensemble of estimators from the training
+
+set (X, y).    Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrices are accepted only if they are supported by the base estimator.  
+yarray-like of shape (n_samples,) 
+
+The target values (class labels in classification, real numbers in regression).  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Note that this is supported only if the base estimator supports sample weighting.    Returns 
+ 
+selfobject

@@ -1,0 +1,4 @@
+# python.library.netrc#netrc.netrc.macros
+
+netrc.macros  
+Dictionary mapping macro names to string lists.

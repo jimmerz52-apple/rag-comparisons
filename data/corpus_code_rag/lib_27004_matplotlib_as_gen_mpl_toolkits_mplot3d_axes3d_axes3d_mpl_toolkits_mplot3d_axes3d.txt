@@ -1,0 +1,14 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.update_datalim
+
+update_datalim(xys, **kwargs)[source]
+ 
+Extend the dataLim Bbox to include the given points. If no data is set currently, the Bbox will ignore its limits and set the bound to be the bounds of the xydata (xys). Otherwise, it will compute the bounds of the union of its current data and the data in xys.  Parameters 
+ 
+xys2D array-like
+
+
+The points to include in the data limits Bbox. This can be either a list of (x, y) tuples or a Nx2 array.  
+updatex, updateybool, default: True
+
+
+Whether to update the x/y limits.

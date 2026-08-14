@@ -1,0 +1,4 @@
+# werkzeug.utils.index#werkzeug.user_agent.UserAgent.string
+
+string: str  
+The original header value.

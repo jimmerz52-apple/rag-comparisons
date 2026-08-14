@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.mixture.gaussianmixture#sklearn.mixture.GaussianMixture.predict
+
+predict(X) [source]
+ 
+Predict the labels for the data samples in X using trained model.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+List of n_features-dimensional data points. Each row corresponds to a single data point.    Returns 
+ 
+labelsarray, shape (n_samples,) 
+
+Component labels.

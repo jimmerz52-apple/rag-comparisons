@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.twinx
+
+matplotlib.pyplot.twinx   matplotlib.pyplot.twinx(ax=None)[source]
+ 
+Make and return a second axes that shares the x-axis. The new axes will overlay ax (or the current axes if ax is None), and its ticks will be on the right. Examples Plots with different scales

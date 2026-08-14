@@ -1,0 +1,4 @@
+# python.library.token#token.COMMENT
+
+token.COMMENT  
+Token value used to indicate a comment.

@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Dialog.radiogroup
+
+radiogroup(name, x, y, width, height, attributes, property, text, next_control)  
+Add and return a RadioButtonGroup control.

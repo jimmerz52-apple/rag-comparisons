@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.escapedquotes
+
+shlex.escapedquotes  
+Characters in quotes that will interpret escape characters defined in escape. This is only used in POSIX mode, and includes just '"' by default.

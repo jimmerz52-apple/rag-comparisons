@@ -1,0 +1,7 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedPatchPath.__init__
+
+__init__(patch)[source]
+ 
+ Parameters 
+ 
+patchPatch

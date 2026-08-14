@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.reflect
+
+reflect() 
+ returns a vector reflected of a given normal. reflect(Vector3) -> Vector3  Returns a new vector that points in the direction as if self would bounce of a surface characterized by the given surface normal. The length of the new vector is the same as self's.

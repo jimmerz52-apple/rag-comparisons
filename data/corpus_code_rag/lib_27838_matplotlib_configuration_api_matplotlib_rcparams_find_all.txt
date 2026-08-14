@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.RcParams.find_all
+
+find_all(pattern)[source]
+ 
+Return the subset of this RcParams dictionary whose keys match, using re.search(), the given pattern.  Note Changes to the returned dictionary are not propagated to the parent RcParams dictionary.

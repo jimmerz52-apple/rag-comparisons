@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.ulonglong
+
+class numpy.ulonglong[source]
+ 
+Signed integer type, compatible with C unsigned long long.  Character code 
+'Q'

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.is_quarter_end
+
+pandas.tseries.offsets.BusinessHour.is_quarter_end   BusinessHour.is_quarter_end()

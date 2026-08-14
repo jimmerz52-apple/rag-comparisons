@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessday.apply_index
+
+pandas.tseries.offsets.BusinessDay.apply_index   BusinessDay.apply_index(other)

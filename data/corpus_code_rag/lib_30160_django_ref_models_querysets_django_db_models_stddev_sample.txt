@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.StdDev.sample
+
+sample  
+By default, StdDev returns the population standard deviation. However, if sample=True, the return value will be the sample standard deviation.

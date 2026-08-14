@@ -1,0 +1,4 @@
+# python.library.gc#gc.disable
+
+gc.disable()  
+Disable automatic garbage collection.

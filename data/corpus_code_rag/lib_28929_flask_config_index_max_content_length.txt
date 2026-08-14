@@ -1,0 +1,4 @@
+# flask.config.index#MAX_CONTENT_LENGTH
+
+MAX_CONTENT_LENGTH  
+Don’t read more than this many bytes from the incoming request data. If not set and the request does not specify a CONTENT_LENGTH, no data will be read for security. Default: None

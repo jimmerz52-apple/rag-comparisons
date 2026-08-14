@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.powertransformer#sklearn.preprocessing.PowerTransformer.fit
+
+fit(X, y=None) [source]
+ 
+Estimate the optimal parameter lambda for each feature. The optimal lambda parameter for minimizing skewness is estimated on each feature independently using maximum likelihood.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data used to estimate the optimal transformation parameters.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted transformer.

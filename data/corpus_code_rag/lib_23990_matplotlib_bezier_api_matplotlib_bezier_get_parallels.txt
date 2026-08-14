@@ -1,0 +1,5 @@
+# matplotlib.bezier_api#matplotlib.bezier.get_parallels
+
+matplotlib.bezier.get_parallels(bezier2, width)[source]
+ 
+Given the quadratic Bezier control points bezier2, returns control points of quadratic Bezier lines roughly parallel to given one separated by width.

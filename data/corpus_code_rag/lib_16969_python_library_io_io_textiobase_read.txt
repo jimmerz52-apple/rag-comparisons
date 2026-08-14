@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOBase.read
+
+read(size=-1)  
+Read and return at most size characters from the stream as a single str. If size is negative or None, reads until EOF.

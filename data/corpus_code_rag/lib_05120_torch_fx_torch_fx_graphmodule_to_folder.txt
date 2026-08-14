@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.GraphModule.to_folder
+
+to_folder(folder, module_name='FxModule') [source]
+ 
+Dumps out module to folder with module_name so that it can be imported with from <folder> import <module_name>  Parameters 
+ 
+folder (Union[str, os.PathLike]) – The folder to write the code out to 
+module_name (str) – Top-level name to use for the Module while writing out the code

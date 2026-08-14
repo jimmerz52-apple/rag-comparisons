@@ -1,0 +1,4 @@
+# python.library.platform#platform.win32_edition
+
+platform.win32_edition()  
+Returns a string representing the current Windows edition. Possible values include but are not limited to 'Enterprise', 'IoTUAP', 'ServerStandard', and 'nanoserver'.  New in version 3.8.

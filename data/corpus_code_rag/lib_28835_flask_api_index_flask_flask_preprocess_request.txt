@@ -1,0 +1,5 @@
+# flask.api.index#flask.Flask.preprocess_request
+
+preprocess_request()  
+Called before the request is dispatched. Calls url_value_preprocessors registered with the app and the current blueprint (if any). Then calls before_request_funcs registered with the app and the blueprint. If any before_request() handler returns a non-None value, the value is handled as if it was the return value from the view, and further request handling is stopped.  Return type 
+Optional[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], WSGIApplication]]

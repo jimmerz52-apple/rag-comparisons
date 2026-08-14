@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Address.is_reserved
+
+is_reserved  
+True if the address is otherwise IETF reserved.

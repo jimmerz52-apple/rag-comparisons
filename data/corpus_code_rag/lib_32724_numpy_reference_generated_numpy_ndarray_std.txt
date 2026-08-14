@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.std
+
+numpy.ndarray.std method   ndarray.std(axis=None, dtype=None, out=None, ddof=0, keepdims=False, *, where=True)
+ 
+Returns the standard deviation of the array elements along given axis. Refer to numpy.std for full documentation.  See also  numpy.std
+
+equivalent function

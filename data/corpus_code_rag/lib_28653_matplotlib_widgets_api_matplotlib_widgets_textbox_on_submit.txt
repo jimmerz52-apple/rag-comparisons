@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.TextBox.on_submit
+
+on_submit(func)[source]
+ 
+When the user hits enter or leaves the submission box, call this func with event. A connection id is returned which can be used to disconnect.

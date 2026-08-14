@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.is_superuser
+
+is_superuser  
+Boolean. Designates that this user has all permissions without explicitly assigning them.

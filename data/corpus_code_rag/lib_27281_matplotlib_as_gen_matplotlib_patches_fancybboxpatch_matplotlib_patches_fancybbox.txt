@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.get_mutation_scale
+
+get_mutation_scale()[source]
+ 
+Return the mutation scale.

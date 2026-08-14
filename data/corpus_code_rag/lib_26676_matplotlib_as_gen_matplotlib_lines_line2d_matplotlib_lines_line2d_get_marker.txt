@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_marker
+
+get_marker()[source]
+ 
+Return the line marker. See also set_marker.

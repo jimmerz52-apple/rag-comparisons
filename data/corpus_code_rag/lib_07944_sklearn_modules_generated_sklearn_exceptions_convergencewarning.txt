@@ -1,0 +1,23 @@
+# sklearn.modules.generated.sklearn.exceptions.convergencewarning
+
+sklearn.exceptions.ConvergenceWarning  
+class sklearn.exceptions.ConvergenceWarning [source]
+ 
+Custom warning to capture convergence problems  Changed in version 0.18: Moved from sklearn.utils.   Attributes 
+ args
+   Methods  
+with_traceback Exception.with_traceback(tb) – set self.__traceback__ to tb and return self.    
+with_traceback()  
+Exception.with_traceback(tb) – set self.__traceback__ to tb and return self. 
+ 
+ Examples using sklearn.exceptions.ConvergenceWarning
+ 
+  Multiclass sparse logistic regression on 20newgroups  
+
+  Early stopping of Stochastic Gradient Descent  
+
+  Visualization of MLP weights on MNIST  
+
+  Compare Stochastic learning strategies for MLPClassifier  
+
+  Feature discretization

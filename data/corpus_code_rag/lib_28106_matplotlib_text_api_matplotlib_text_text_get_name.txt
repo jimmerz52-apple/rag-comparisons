@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_name
+
+get_name()[source]
+ 
+Alias for get_fontname.

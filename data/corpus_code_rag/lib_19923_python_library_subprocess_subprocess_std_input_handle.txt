@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.STD_INPUT_HANDLE
+
+subprocess.STD_INPUT_HANDLE  
+The standard input device. Initially, this is the console input buffer, CONIN$.

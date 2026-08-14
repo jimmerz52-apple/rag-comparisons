@@ -1,0 +1,4 @@
+# torch.benchmark_utils#torch.utils.benchmark.Measurement.significant_figures
+
+property significant_figures  
+Approximate significant figure estimate. This property is intended to give a convenient way to estimate the precision of a measurement. It only uses the interquartile region to estimate statistics to try to mitigate skew from the tails, and uses a static z value of 1.645 since it is not expected to be used for small values of n, so z can approximate t. The significant figure estimation used in conjunction with the trim_sigfig method to provide a more human interpretable data summary. __repr__ does not use this method; it simply displays raw values. Significant figure estimation is intended for Compare.

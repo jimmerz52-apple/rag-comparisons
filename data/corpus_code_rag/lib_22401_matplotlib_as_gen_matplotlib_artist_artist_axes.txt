@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.axes
+
+matplotlib.artist.Artist.axes   propertyArtist.axes
+ 
+The Axes instance the artist resides in, or None.

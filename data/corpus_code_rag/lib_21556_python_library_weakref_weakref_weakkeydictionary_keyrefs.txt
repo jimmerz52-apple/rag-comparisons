@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.WeakKeyDictionary.keyrefs
+
+WeakKeyDictionary.keyrefs()  
+Return an iterable of the weak references to the keys.

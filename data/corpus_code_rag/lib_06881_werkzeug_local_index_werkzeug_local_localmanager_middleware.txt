@@ -1,0 +1,9 @@
+# werkzeug.local.index#werkzeug.local.LocalManager.middleware
+
+middleware(func)  
+Like make_middleware but for decorating functions. Example usage: @manager.middleware
+def application(environ, start_response):
+    ...
+ The difference to make_middleware is that the function passed will have all the arguments copied from the inner application (name, docstring, module).  Parameters 
+func (WSGIApplication) –   Return type 
+WSGIApplication

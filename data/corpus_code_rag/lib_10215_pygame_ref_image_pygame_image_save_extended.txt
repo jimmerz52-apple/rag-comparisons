@@ -1,0 +1,4 @@
+# pygame.ref.image#pygame.image.save_extended
+
+pygame.image.save_extended() 
+ save a png/jpg image to file (or file-like object) save_extended(Surface, filename) -> None save_extended(Surface, fileobj, namehint="") -> None  This will save your Surface as either a PNG or JPEG image. Incase the image is being saved to a file-like object, this function uses the namehint argument to determine the format of the file being saved. Saves to JPEG incase the namehint was not specified while saving to file-like object. From version 2.0.1, this function is always available, but raises an error if extended image formats are not supported. Previously, this function may or may not be available, depending on the state of extended image format support.  Changed in pygame 2.0.1.

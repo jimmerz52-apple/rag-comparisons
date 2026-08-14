@@ -1,0 +1,4 @@
+# pygame.ref.pixelarray#pygame.PixelArray.shape
+
+shape 
+ Returns the array size. shape -> tuple of int's  A tuple or length ndim giving the length of each dimension. Analogous to Surface.get_size().  New in pygame 1.9.2.

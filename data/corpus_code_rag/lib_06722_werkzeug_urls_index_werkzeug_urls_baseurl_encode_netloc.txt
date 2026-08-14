@@ -1,0 +1,5 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.encode_netloc
+
+encode_netloc()  
+Encodes the netloc part to an ASCII safe URL as bytes.  Return type 
+str

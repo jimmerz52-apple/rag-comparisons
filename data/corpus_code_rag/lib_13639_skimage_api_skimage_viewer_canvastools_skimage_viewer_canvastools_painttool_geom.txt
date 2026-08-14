@@ -1,0 +1,4 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.PaintTool.geometry
+
+property geometry  
+Geometry information that gets passed to callback functions.

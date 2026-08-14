@@ -1,0 +1,13 @@
+# matplotlib.widgets_api#matplotlib.widgets.CheckButtons.set_active
+
+set_active(index)[source]
+ 
+Toggle (activate or deactivate) a check button by index. Callbacks will be triggered if eventson is True.  Parameters 
+ 
+indexint
+
+
+Index of the check button to toggle.    Raises 
+ ValueError
+
+If index is invalid.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.getextenthelper
+
+mpl_toolkits.axes_grid1.axes_size.GetExtentHelper   classmpl_toolkits.axes_grid1.axes_size.GetExtentHelper(ax, direction)[source]
+ 
+Bases: object   __call__(renderer)[source]
+ 
+Call self as a function.

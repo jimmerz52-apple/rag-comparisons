@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_draggable
+
+get_draggable()[source]
+ 
+Return True if the legend is draggable, False otherwise.

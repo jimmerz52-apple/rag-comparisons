@@ -1,0 +1,67 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontManager
+
+classmatplotlib.font_manager.FontManager(size=None, weight='normal')[source]
+ 
+Bases: object On import, the FontManager singleton instance creates a list of ttf and afm fonts and caches their FontProperties. The FontManager.findfont method does a nearest neighbor search to find the font that most closely matches the specification. If no good enough match is found, the default font is returned.   addfont(path)[source]
+ 
+Cache the properties of the font at path to make it available to the FontManager. The type of font is inferred from the path suffix.  Parameters 
+ 
+pathstr or path-like
+
+   
+   propertydefaultFont
+
+   findfont(prop, fontext='ttf', directory=None, fallback_to_default=True, rebuild_if_missing=True)[source]
+ 
+Find a font that most closely matches the given font properties.  Parameters 
+ 
+propstr or FontProperties
+
+
+The font properties to search for. This can be either a FontProperties object or a string defining a fontconfig patterns.  
+fontext{'ttf', 'afm'}, default: 'ttf'
+
+
+The extension of the font file:  'ttf': TrueType and OpenType fonts (.ttf, .ttc, .otf) 'afm': Adobe Font Metrics (.afm)   
+directorystr, optional
+
+
+If given, only search this directory and its subdirectories.  
+fallback_to_defaultbool
+
+
+If True, will fallback to the default font family (usually "DejaVu Sans" or "Helvetica") if the first lookup hard-fails.  
+rebuild_if_missingbool
+
+
+Whether to rebuild the font cache and search again if the first match appears to point to a nonexisting font (i.e., the font cache contains outdated entries).    Returns 
+ str
+
+The filename of the best matching font.     Notes This performs a nearest neighbor search. Each font is given a similarity score to the target font properties. The first font with the highest score is returned. If no matches below a certain threshold are found, the default font (usually DejaVu Sans) is returned. The result is cached, so subsequent lookups don't have to perform the O(n) nearest neighbor search. See the W3C Cascading Style Sheet, Level 1 documentation for a description of the font finding algorithm. 
+   staticget_default_size()[source]
+ 
+Return the default font size. 
+   get_default_weight()[source]
+ 
+Return the default font weight. 
+   score_family(families, family2)[source]
+ 
+Return a match score between the list of font families in families and the font family name family2. An exact match at the head of the list returns 0.0. A match further down the list will return between 0 and 1. No match will return 1.0. 
+   score_size(size1, size2)[source]
+ 
+Return a match score between size1 and size2. If size2 (the size specified in the font file) is 'scalable', this function always returns 0.0, since any font size can be generated. Otherwise, the result is the absolute distance between size1 and size2, normalized so that the usual range of font sizes (6pt - 72pt) will lie between 0.0 and 1.0. 
+   score_stretch(stretch1, stretch2)[source]
+ 
+Return a match score between stretch1 and stretch2. The result is the absolute value of the difference between the CSS numeric values of stretch1 and stretch2, normalized between 0.0 and 1.0. 
+   score_style(style1, style2)[source]
+ 
+Return a match score between style1 and style2. An exact match returns 0.0. A match between 'italic' and 'oblique' returns 0.1. No match returns 1.0. 
+   score_variant(variant1, variant2)[source]
+ 
+Return a match score between variant1 and variant2. An exact match returns 0.0, otherwise 1.0. 
+   score_weight(weight1, weight2)[source]
+ 
+Return a match score between weight1 and weight2. The result is 0.0 if both weight1 and weight 2 are given as strings and have the same value. Otherwise, the result is the absolute value of the difference between the CSS numeric values of weight1 and weight2, normalized between 0.05 and 1.0. 
+   set_default_weight(weight)[source]
+ 
+Set the default font weight. The initial value is 'normal'.

@@ -1,0 +1,3 @@
+# python.library.typing#typing.get_args
+
+typing.get_args(tp)

@@ -1,0 +1,16 @@
+# skimage.api.skimage.transform#skimage.transform.FundamentalMatrixTransform.residuals
+
+residuals(src, dst) [source]
+ 
+Compute the Sampson distance. The Sampson distance is the first approximation to the geometric error.  Parameters 
+ 
+src(N, 2) array 
+
+Source coordinates.  
+dst(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+residuals(N, ) array 
+
+Sampson distance.

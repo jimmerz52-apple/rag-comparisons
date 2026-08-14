@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_helper_curvelinear.fixedaxisartisthelper#mpl_toolkits.axisartist.grid_helper_curvelinear.FixedAxisArtistHelper.change_tick_coord
+
+change_tick_coord(coord_number=None)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

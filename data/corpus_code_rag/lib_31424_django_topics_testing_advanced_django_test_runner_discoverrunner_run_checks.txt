@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.run_checks
+
+DiscoverRunner.run_checks(databases)  
+Runs the system checks on the test databases.

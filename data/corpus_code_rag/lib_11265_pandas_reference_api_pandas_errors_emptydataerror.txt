@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.emptydataerror
+
+pandas.errors.EmptyDataError   exceptionpandas.errors.EmptyDataError[source]
+ 
+Exception that is thrown in pd.read_csv (by both the C and Python engines) when empty data or header is encountered.

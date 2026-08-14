@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.distance
+
+GEOSGeometry.distance(geom)  
+Returns the distance between the closest points on this geometry and the given geom (another GEOSGeometry object).  Note GEOS distance calculations are linear – in other words, GEOS does not perform a spherical calculation even if the SRID specifies a geographic coordinate system.

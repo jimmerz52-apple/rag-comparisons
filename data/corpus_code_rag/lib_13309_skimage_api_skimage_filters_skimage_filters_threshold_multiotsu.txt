@@ -1,0 +1,31 @@
+# skimage.api.skimage.filters#skimage.filters.threshold_multiotsu
+
+skimage.filters.threshold_multiotsu(image, classes=3, nbins=256) [source]
+ 
+Generate classes-1 threshold values to divide gray levels in image. The threshold values are chosen to maximize the total sum of pairwise variances between the thresholded graylevel classes. See Notes and [1] for more details.  Parameters 
+ 
+image(N, M) ndarray 
+
+Grayscale input image.  
+classesint, optional 
+
+Number of classes to be thresholded, i.e. the number of resulting regions.  
+nbinsint, optional 
+
+Number of bins used to calculate the histogram. This value is ignored for integer arrays.    Returns 
+ 
+thresharray 
+
+Array containing the threshold values for the desired classes.    Raises 
+ ValueError
+
+If image contains less grayscale value then the desired number of classes.     Notes This implementation relies on a Cython function whose complexity is \(O\left(\frac{Ch^{C-1}}{(C-1)!}\right)\), where \(h\) is the number of histogram bins and \(C\) is the number of classes desired. The input image must be grayscale. References  
+1  
+Liao, P-S., Chen, T-S. and Chung, P-C., “A fast algorithm for multilevel thresholding”, Journal of Information Science and Engineering 17 (5): 713-727, 2001. Available at: <https://ftp.iis.sinica.edu.tw/JISE/2001/200109_01.pdf> DOI:10.6688/JISE.2001.17.5.1  
+2  
+Tosa, Y., “Multi-Otsu Threshold”, a java plugin for ImageJ. Available at: <http://imagej.net/plugins/download/Multi_OtsuThreshold.java>   Examples >>> from skimage.color import label2rgb
+>>> from skimage import data
+>>> image = data.camera()
+>>> thresholds = threshold_multiotsu(image)
+>>> regions = np.digitize(image, bins=thresholds)
+>>> regions_colorized = label2rgb(regions)

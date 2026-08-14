@@ -1,0 +1,32 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.add_data_dir
+
+add_data_dir(data_path)[source]
+ 
+Recursively add files under data_path to data_files list. Recursively add files under data_path to the list of data_files to be installed (and distributed). The data_path can be either a relative path-name, or an absolute path-name, or a 2-tuple where the first argument shows where in the install directory the data directory should be installed to.  Parameters 
+ 
+data_pathseq or str
+
+
+Argument can be either  2-sequence (<datadir suffix>, <path to data directory>) path to data directory where python datadir suffix defaults to package dir.      Notes Rules for installation paths: foo/bar -> (foo/bar, foo/bar) -> parent/foo/bar
+(gun, foo/bar) -> parent/gun
+foo/* -> (foo/a, foo/a), (foo/b, foo/b) -> parent/foo/a, parent/foo/b
+(gun, foo/*) -> (gun, foo/a), (gun, foo/b) -> gun
+(gun/*, foo/*) -> parent/gun/a, parent/gun/b
+/foo/bar -> (bar, /foo/bar) -> parent/bar
+(gun, /foo/bar) -> parent/gun
+(fun/*/gun/*, sun/foo/bar) -> parent/fun/foo/gun/bar
+ Examples For example suppose the source directory contains fun/foo.dat and fun/bar/car.dat: >>> self.add_data_dir('fun')                       
+>>> self.add_data_dir(('sun', 'fun'))              
+>>> self.add_data_dir(('gun', '/full/path/to/fun'))
+ Will install data-files to the locations: <package install directory>/
+  fun/
+    foo.dat
+    bar/
+      car.dat
+  sun/
+    foo.dat
+    bar/
+      car.dat
+  gun/
+    foo.dat
+    car.dat

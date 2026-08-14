@@ -1,0 +1,4 @@
+# python.library.locale#locale.format
+
+locale.format(format, val, grouping=False, monetary=False)  
+Please note that this function works like format_string() but will only work for exactly one %char specifier. For example, '%f' and '%.0f' are both valid specifiers, but '%f KiB' is not. For whole format strings, use format_string().  Deprecated since version 3.7: Use format_string() instead.

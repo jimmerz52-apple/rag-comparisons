@@ -1,0 +1,14 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.assert_any_await
+
+assert_any_await(*args, **kwargs)  
+Assert the mock has ever been awaited with the specified arguments. >>> mock = AsyncMock()
+>>> async def main(*args, **kwargs):
+...     await mock(*args, **kwargs)
+...
+>>> asyncio.run(main('foo', bar='bar'))
+>>> asyncio.run(main('hello'))
+>>> mock.assert_any_await('foo', bar='bar')
+>>> mock.assert_any_await('other')
+Traceback (most recent call last):
+...
+AssertionError: mock('other') await not found

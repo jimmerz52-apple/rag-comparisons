@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Feature.set_current
+
+set_current()  
+Make this feature the current feature of msilib. New components are automatically added to the default feature, unless a feature is explicitly specified.

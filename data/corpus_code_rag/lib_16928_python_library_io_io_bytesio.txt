@@ -1,0 +1,20 @@
+# python.library.io#io.BytesIO
+
+class io.BytesIO([initial_bytes])  
+A binary stream using an in-memory bytes buffer. It inherits BufferedIOBase. The buffer is discarded when the close() method is called. The optional argument initial_bytes is a bytes-like object that contains initial data. BytesIO provides or overrides these methods in addition to those from BufferedIOBase and IOBase:  
+getbuffer()  
+Return a readable and writable view over the contents of the buffer without copying them. Also, mutating the view will transparently update the contents of the buffer: >>> b = io.BytesIO(b"abcdef")
+>>> view = b.getbuffer()
+>>> view[2:4] = b"56"
+>>> b.getvalue()
+b'ab56ef'
+  Note As long as the view exists, the BytesIO object cannot be resized or closed.   New in version 3.2.  
+  
+getvalue()  
+Return bytes containing the entire contents of the buffer. 
+  
+read1([size])  
+In BytesIO, this is the same as read().  Changed in version 3.7: The size argument is now optional.  
+  
+readinto1(b)  
+In BytesIO, this is the same as readinto().  New in version 3.5.

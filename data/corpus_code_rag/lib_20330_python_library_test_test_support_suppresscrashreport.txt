@@ -1,0 +1,4 @@
+# python.library.test#test.support.SuppressCrashReport
+
+class test.support.SuppressCrashReport  
+A context manager used to try to prevent crash dialog popups on tests that are expected to crash a subprocess. On Windows, it disables Windows Error Reporting dialogs using SetErrorMode. On UNIX, resource.setrlimit() is used to set resource.RLIMIT_CORE’s soft limit to 0 to prevent coredump file creation. On both platforms, the old value is restored by __exit__().

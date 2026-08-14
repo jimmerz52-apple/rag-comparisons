@@ -1,0 +1,9 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetBox.get_offset
+
+get_offset(width, height, xdescent, ydescent, renderer)[source]
+ 
+Return the offset as a tuple (x, y). The extent parameters have to be provided to handle the case where the offset is dynamically determined by a callable (see set_offset).  Parameters 
+ width, height, xdescent, ydescent
+
+Extent parameters.  
+rendererRendererBase subclass

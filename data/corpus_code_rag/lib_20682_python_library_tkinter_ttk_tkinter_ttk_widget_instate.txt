@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Widget.instate
+
+instate(statespec, callback=None, *args, **kw)  
+Test the widget’s state. If a callback is not specified, returns True if the widget state matches statespec and False otherwise. If callback is specified then it is called with args if widget state matches statespec.

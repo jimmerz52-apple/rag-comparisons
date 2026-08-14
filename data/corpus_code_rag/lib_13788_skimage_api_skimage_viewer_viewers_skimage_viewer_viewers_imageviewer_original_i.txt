@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.viewers#skimage.viewer.viewers.ImageViewer.original_image_changed
+
+original_image_changed = None

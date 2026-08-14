@@ -1,0 +1,15 @@
+# flask.api.index#flask.send_from_directory
+
+flask.send_from_directory(directory, path, filename=None, **kwargs)  
+Send a file from within a directory using send_file(). @app.route("/uploads/<path:name>")
+def download_file(name):
+    return send_from_directory(
+        app.config['UPLOAD_FOLDER'], name, as_attachment=True
+    )
+ This is a secure way to serve files from a folder, such as static files or uploads. Uses safe_join() to ensure the path coming from the client is not maliciously crafted to point outside the specified directory. If the final path does not point to an existing regular file, raises a 404 NotFound error.  Parameters 
+ 
+directory (str) – The directory that path must be located under. 
+path (str) – The path to the file to send, relative to directory. 
+kwargs (Any) – Arguments to pass to send_file(). 
+filename (Optional[str]) –    Return type 
+Response    Changed in version 2.0: path replaces the filename parameter.   New in version 2.0: Moved the implementation to Werkzeug. This is now a wrapper to pass some Flask-specific arguments.   Changelog New in version 0.5.

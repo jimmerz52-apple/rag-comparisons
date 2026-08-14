@@ -1,0 +1,6 @@
+# python.library.ssl#ssl.ALERT_DESCRIPTION_INTERNAL_ERROR
+
+ssl.ALERT_DESCRIPTION_HANDSHAKE_FAILURE  
+ssl.ALERT_DESCRIPTION_INTERNAL_ERROR  
+ALERT_DESCRIPTION_*  
+Alert Descriptions from RFC 5246 and others. The IANA TLS Alert Registry contains this list and references to the RFCs where their meaning is defined. Used as the return value of the callback function in SSLContext.set_servername_callback().  New in version 3.4.

@@ -1,0 +1,4 @@
+# python.library.socket#socket.send_fds
+
+socket.send_fds(sock, buffers, fds[, flags[, address]])  
+Send the list of file descriptors fds over an AF_UNIX socket sock. The fds parameter is a sequence of file descriptors. Consult sendmsg() for the documentation of these parameters. Availability: Unix supporting sendmsg() and SCM_RIGHTS mechanism.  New in version 3.9.

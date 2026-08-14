@@ -1,0 +1,13 @@
+# numpy.reference.generated.numpy.lib.format.write_array_header_1_0
+
+numpy.lib.format.write_array_header_1_0   lib.format.write_array_header_1_0(fp, d)[source]
+ 
+Write the header for an array using the 1.0 format.  Parameters 
+ 
+fpfilelike object
+
+
+ddict
+
+
+This has the appropriate entries for writing its string representation to the header of the file.

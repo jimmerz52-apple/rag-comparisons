@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axis.tick.set_url
+
+matplotlib.axis.Tick.set_url   Tick.set_url(url)[source]
+ 
+Set the url of label1 and label2.  Parameters 
+ 
+urlstr

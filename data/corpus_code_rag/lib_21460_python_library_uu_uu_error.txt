@@ -1,0 +1,4 @@
+# python.library.uu#uu.Error
+
+exception uu.Error  
+Subclass of Exception, this can be raised by uu.decode() under various situations, such as described above, but also including a badly formatted header, or truncated input file.

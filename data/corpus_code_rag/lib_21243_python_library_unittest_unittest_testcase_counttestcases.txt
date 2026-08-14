@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.countTestCases
+
+countTestCases()  
+Return the number of tests represented by this test object. For TestCase instances, this will always be 1.

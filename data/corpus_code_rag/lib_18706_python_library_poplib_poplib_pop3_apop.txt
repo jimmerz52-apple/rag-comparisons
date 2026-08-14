@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.apop
+
+POP3.apop(user, secret)  
+Use the more secure APOP authentication to log into the POP3 server.

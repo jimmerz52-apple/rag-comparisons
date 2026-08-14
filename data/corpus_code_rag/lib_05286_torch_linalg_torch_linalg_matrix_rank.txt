@@ -1,0 +1,39 @@
+# torch.linalg#torch.linalg.matrix_rank
+
+torch.linalg.matrix_rank(input, tol=None, hermitian=False, *, out=None) → Tensor  
+Computes the numerical rank of a matrix input, or of each matrix in a batched input. The matrix rank is computed as the number of singular values (or absolute eigenvalues when hermitian is True) that are greater than the specified tol threshold. If tol is not specified, tol is set to S.max(dim=-1)*max(input.shape[-2:])*eps, where S is the singular values (or absolute eigenvalues when hermitian is True), and eps is the epsilon value for the datatype of input. The epsilon value can be obtained using the eps attribute of torch.finfo. Supports input of float, double, cfloat and cdouble dtypes.  Note When given inputs on a CUDA device, this function synchronizes that device with the CPU.   Note The matrix rank is computed using singular value decomposition (see torch.linalg.svd()) by default. If hermitian is True, then input is assumed to be Hermitian (symmetric if real-valued), and the computation is done by obtaining the eigenvalues (see torch.linalg.eigvalsh()).   Parameters 
+ 
+input (Tensor) – the input matrix of size (m, n) or the batch of matrices of size (*, m, n) where * is one or more batch dimensions. 
+tol (float, optional) – the tolerance value. Default is None
+ 
+hermitian (bool, optional) – indicates whether input is Hermitian. Default is False.   Keyword Arguments 
+out (Tensor, optional) – tensor to write the output to. Default is None.   Examples: >>> a = torch.eye(10)
+>>> torch.linalg.matrix_rank(a)
+tensor(10)
+>>> b = torch.eye(10)
+>>> b[0, 0] = 0
+>>> torch.linalg.matrix_rank(b)
+tensor(9)
+
+>>> a = torch.randn(4, 3, 2)
+>>> torch.linalg.matrix_rank(a)
+tensor([2, 2, 2, 2])
+
+>>> a = torch.randn(2, 4, 2, 3)
+>>> torch.linalg.matrix_rank(a)
+tensor([[2, 2, 2, 2],
+        [2, 2, 2, 2]])
+
+>>> a = torch.randn(2, 4, 3, 3, dtype=torch.complex64)
+>>> torch.linalg.matrix_rank(a)
+tensor([[3, 3, 3, 3],
+        [3, 3, 3, 3]])
+>>> torch.linalg.matrix_rank(a, hermitian=True)
+tensor([[3, 3, 3, 3],
+        [3, 3, 3, 3]])
+>>> torch.linalg.matrix_rank(a, tol=1.0)
+tensor([[3, 2, 2, 2],
+        [1, 2, 1, 2]])
+>>> torch.linalg.matrix_rank(a, tol=1.0, hermitian=True)
+tensor([[2, 2, 2, 1],
+        [1, 2, 2, 2]])

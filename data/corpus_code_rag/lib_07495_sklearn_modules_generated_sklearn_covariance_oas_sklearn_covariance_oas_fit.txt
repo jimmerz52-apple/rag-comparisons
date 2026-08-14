@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.covariance.oas#sklearn.covariance.OAS.fit
+
+fit(X, y=None) [source]
+ 
+Fit the Oracle Approximating Shrinkage covariance model according to the given training data and parameters.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data, where n_samples is the number of samples and n_features is the number of features.  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+selfobject

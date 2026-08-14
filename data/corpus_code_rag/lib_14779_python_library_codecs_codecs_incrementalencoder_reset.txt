@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.IncrementalEncoder.reset
+
+reset()  
+Reset the encoder to the initial state. The output is discarded: call .encode(object, final=True), passing an empty byte or text string if necessary, to reset the encoder and to get the output.

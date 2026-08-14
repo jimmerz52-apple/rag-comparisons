@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.BaseHeader.name
+
+name  
+The name of the header (the portion of the field before the ‘:’). This is exactly the value passed in the header_factory call for name; that is, case is preserved.

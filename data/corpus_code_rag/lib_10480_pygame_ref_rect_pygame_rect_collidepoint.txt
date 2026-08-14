@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.collidepoint
+
+collidepoint() 
+ test if a point is inside a rectangle collidepoint(x, y) -> bool collidepoint((x,y)) -> bool  Returns true if the given point is inside the rectangle. A point along the right or bottom edge is not considered to be inside the rectangle.  Note For collision detection between a rect and a line the clipline() method can be used.

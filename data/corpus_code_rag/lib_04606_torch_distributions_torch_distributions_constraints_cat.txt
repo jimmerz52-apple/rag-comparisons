@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.cat
+
+torch.distributions.constraints.cat  
+alias of torch.distributions.constraints._Cat

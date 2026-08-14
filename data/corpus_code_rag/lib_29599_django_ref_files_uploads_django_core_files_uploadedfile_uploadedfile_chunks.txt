@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.chunks
+
+UploadedFile.chunks(chunk_size=None)  
+A generator returning chunks of the file. If multiple_chunks() is True, you should use this method in a loop instead of read(). In practice, it’s often easiest to use chunks() all the time. Looping over chunks() instead of using read() ensures that large files don’t overwhelm your system’s memory.

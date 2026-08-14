@@ -1,0 +1,5 @@
+# python.library.ssl#ssl.SSLContext.verify_flags
+
+SSLContext.verify_flags  
+The flags for certificate verification operations. You can set flags like VERIFY_CRL_CHECK_LEAF by ORing them together. By default OpenSSL does neither require nor verify certificate revocation lists (CRLs). Available only with openssl version 0.9.8+.  New in version 3.4.   Changed in version 3.6: SSLContext.verify_flags returns VerifyFlags flags: >>> ssl.create_default_context().verify_flags  
+<VerifyFlags.VERIFY_X509_TRUSTED_FIRST: 32768>

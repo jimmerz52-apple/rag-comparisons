@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.bernoullirbm#sklearn.neural_network.BernoulliRBM.gibbs
+
+gibbs(v) [source]
+ 
+Perform one Gibbs sampling step.  Parameters 
+ 
+vndarray of shape (n_samples, n_features) 
+
+Values of the visible layer to start from.    Returns 
+ 
+v_newndarray of shape (n_samples, n_features) 
+
+Values of the visible layer after one Gibbs step.

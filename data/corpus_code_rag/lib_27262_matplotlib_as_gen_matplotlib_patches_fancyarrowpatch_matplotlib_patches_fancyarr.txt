@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.get_connectionstyle
+
+get_connectionstyle()[source]
+ 
+Return the ConnectionStyle used.

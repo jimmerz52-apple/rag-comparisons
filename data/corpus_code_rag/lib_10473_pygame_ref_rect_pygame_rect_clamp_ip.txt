@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.clamp_ip
+
+clamp_ip() 
+ moves the rectangle inside another, in place clamp_ip(Rect) -> None  Same as the Rect.clamp() method, but operates in place.

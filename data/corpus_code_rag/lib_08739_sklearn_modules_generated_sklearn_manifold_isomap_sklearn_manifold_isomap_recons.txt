@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.manifold.isomap#sklearn.manifold.Isomap.reconstruction_error
+
+reconstruction_error() [source]
+ 
+Compute the reconstruction error for the embedding.  Returns 
+ 
+reconstruction_errorfloat 
+   Notes The cost function of an isomap embedding is E = frobenius_norm[K(D) - K(D_fit)] / n_samples Where D is the matrix of distances for the input data X, D_fit is the matrix of distances for the output embedding X_fit, and K is the isomap kernel: K(D) = -0.5 * (I - 1/n_samples) * D^2 * (I - 1/n_samples)

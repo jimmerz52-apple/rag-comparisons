@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.getsource
+
+inspect.getsource(object)  
+Return the text of the source code for an object. The argument may be a module, class, method, function, traceback, frame, or code object. The source code is returned as a single string. An OSError is raised if the source code cannot be retrieved.  Changed in version 3.3: OSError is raised instead of IOError, now an alias of the former.

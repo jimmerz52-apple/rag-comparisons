@@ -1,0 +1,5 @@
+# torch.nn.qat#torch.nn.qat.Conv2d.from_float
+
+classmethod from_float(mod) [source]
+ 
+Create a qat module from a float module or qparams_dict Args: mod a float module, either produced by torch.quantization utilities or directly from user

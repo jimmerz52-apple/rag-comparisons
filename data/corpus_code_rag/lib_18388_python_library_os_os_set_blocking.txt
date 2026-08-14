@@ -1,0 +1,4 @@
+# python.library.os#os.set_blocking
+
+os.set_blocking(fd, blocking)  
+Set the blocking mode of the specified file descriptor. Set the O_NONBLOCK flag if blocking is False, clear the flag otherwise. See also get_blocking() and socket.socket.setblocking(). Availability: Unix.  New in version 3.5.

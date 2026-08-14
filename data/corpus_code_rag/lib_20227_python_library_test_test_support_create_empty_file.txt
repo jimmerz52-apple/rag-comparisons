@@ -1,0 +1,4 @@
+# python.library.test#test.support.create_empty_file
+
+test.support.create_empty_file(filename)  
+Create an empty file with filename. If it already exists, truncate it.

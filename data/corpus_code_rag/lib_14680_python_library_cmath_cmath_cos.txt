@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.cos
+
+cmath.cos(x)  
+Return the cosine of x.

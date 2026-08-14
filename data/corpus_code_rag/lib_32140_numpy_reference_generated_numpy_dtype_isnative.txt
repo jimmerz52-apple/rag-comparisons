@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.isnative
+
+numpy.dtype.isnative attribute   dtype.isnative
+ 
+Boolean indicating whether the byte order of this dtype is native to the platform.

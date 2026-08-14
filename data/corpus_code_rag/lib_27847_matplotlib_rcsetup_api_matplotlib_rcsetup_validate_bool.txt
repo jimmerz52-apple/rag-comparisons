@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_bool
+
+matplotlib.rcsetup.validate_bool(b)[source]
+ 
+Convert b to bool or raise.

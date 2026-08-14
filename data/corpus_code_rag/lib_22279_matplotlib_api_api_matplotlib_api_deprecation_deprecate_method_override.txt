@@ -1,0 +1,16 @@
+# matplotlib._api_api#matplotlib._api.deprecation.deprecate_method_override
+
+matplotlib._api.deprecation.deprecate_method_override(method, obj, *, allow_empty=False, **kwargs)[source]
+ 
+Return obj.method with a deprecation if it was overridden, else None.  Parameters 
+ method
+
+An unbound method, i.e. an expression of the form Class.method_name. Remember that within the body of a method, one can always use __class__ to refer to the class that is currently being defined.  obj
+
+Either an object of the class where method is defined, or a subclass of that class.  
+allow_emptybool, default: False
+
+
+Whether to allow overrides by "empty" methods without emitting a warning.  **kwargs
+
+Additional parameters passed to warn_deprecated to generate the deprecation warning; must at least include the "since" key.

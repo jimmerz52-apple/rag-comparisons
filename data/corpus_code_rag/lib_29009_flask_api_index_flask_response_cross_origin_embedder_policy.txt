@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.cross_origin_embedder_policy
+
+cross_origin_embedder_policy  
+Prevents a document from loading any cross-origin resources that do not explicitly grant the document permission. Values must be a member of the werkzeug.http.COEP enum.

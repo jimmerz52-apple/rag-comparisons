@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Server.wait_closed
+
+coroutine wait_closed()  
+Wait until the close() method completes.

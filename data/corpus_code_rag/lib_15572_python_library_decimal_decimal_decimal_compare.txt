@@ -1,0 +1,7 @@
+# python.library.decimal#decimal.Decimal.compare
+
+compare(other, context=None)  
+Compare the values of two Decimal instances. compare() returns a Decimal instance, and if either operand is a NaN then the result is a NaN: a or b is a NaN  ==> Decimal('NaN')
+a < b            ==> Decimal('-1')
+a == b           ==> Decimal('0')
+a > b            ==> Decimal('1')

@@ -1,0 +1,4 @@
+# python.library.os#os.tcsetpgrp
+
+os.tcsetpgrp(fd, pg)  
+Set the process group associated with the terminal given by fd (an open file descriptor as returned by os.open()) to pg. Availability: Unix.

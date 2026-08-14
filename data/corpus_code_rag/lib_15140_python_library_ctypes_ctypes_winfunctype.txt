@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.WINFUNCTYPE
+
+ctypes.WINFUNCTYPE(restype, *argtypes, use_errno=False, use_last_error=False)  
+Windows only: The returned function prototype creates functions that use the stdcall calling convention, except on Windows CE where WINFUNCTYPE() is the same as CFUNCTYPE(). The function will release the GIL during the call. use_errno and use_last_error have the same meaning as above.

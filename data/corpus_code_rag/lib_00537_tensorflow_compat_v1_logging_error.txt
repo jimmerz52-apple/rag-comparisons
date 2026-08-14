@@ -1,0 +1,6 @@
+# tensorflow.compat.v1.logging.error
+
+tf.compat.v1.logging.error 
+tf.compat.v1.logging.error(
+    msg, *args, **kwargs
+)

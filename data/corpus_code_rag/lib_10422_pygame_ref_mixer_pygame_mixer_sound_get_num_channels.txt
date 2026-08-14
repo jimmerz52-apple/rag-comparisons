@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Sound.get_num_channels
+
+get_num_channels() 
+ count how many times this Sound is playing get_num_channels() -> count  Return the number of active channels this sound is playing on.

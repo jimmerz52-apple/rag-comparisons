@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.get_full_name
+
+get_full_name()  
+Returns the first_name plus the last_name, with a space in between.

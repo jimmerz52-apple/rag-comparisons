@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Notebook.identify
+
+identify(x, y)  
+Returns the name of the tab element at position x, y, or the empty string if none.

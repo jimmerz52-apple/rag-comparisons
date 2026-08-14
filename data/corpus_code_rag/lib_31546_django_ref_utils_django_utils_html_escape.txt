@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.html.escape
+
+escape(text)  
+Returns the given text with ampersands, quotes and angle brackets encoded for use in HTML. The input is first coerced to a string and the output has mark_safe() applied.

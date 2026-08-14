@@ -1,0 +1,4 @@
+# python.library.threading#threading.Barrier.n_waiting
+
+n_waiting  
+The number of threads currently waiting in the barrier.

@@ -1,0 +1,4 @@
+# python.library.struct#struct.Struct.pack_into
+
+pack_into(buffer, offset, v1, v2, ...)  
+Identical to the pack_into() function, using the compiled format.

@@ -1,0 +1,6 @@
+# werkzeug.local.index#werkzeug.local.LocalStack.push
+
+push(obj)  
+Pushes a new item to the stack  Parameters 
+obj (Any) –   Return type 
+List[Any]

@@ -1,0 +1,4 @@
+# pygame.ref.pixelcopy#pygame.pixelcopy.array_to_surface
+
+pygame.pixelcopy.array_to_surface() 
+ copy an array object to a surface array_to_surface(<surface>, <array>) -> None  See pygame.surfarray.blit_array().

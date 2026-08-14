@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.ensemble.stackingregressor#sklearn.ensemble.StackingRegressor.n_features_in_
+
+property n_features_in_  
+Number of features seen during fit.

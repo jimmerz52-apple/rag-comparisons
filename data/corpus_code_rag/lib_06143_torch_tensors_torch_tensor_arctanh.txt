@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.arctanh_
+
+arctanh_(other) → Tensor  
+In-place version of arctanh()

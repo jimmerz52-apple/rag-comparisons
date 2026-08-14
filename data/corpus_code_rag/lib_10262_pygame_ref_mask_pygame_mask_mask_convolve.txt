@@ -1,0 +1,17 @@
+# pygame.ref.mask#pygame.mask.Mask.convolve
+
+convolve() 
+ Returns the convolution of this mask with another mask convolve(othermask) -> Mask convolve(othermask, outputmask=None, offset=(0, 0)) -> Mask  Convolve this mask with the given othermask.     
+Parameters:
+
+ 
+othermask (Mask) -- mask to convolve this mask with 
+outputmask (Mask or NoneType) -- (optional) mask for output (default is None) 
+offset (tuple(int, int) or list[int, int]) -- the offset of othermask from this mask, (default is (0, 0))    
+Returns:
+
+a Mask with the (i - offset[0], j - offset[1]) bit set, if shifting othermask (such that its bottom right corner is at (i, j)) causes it to overlap with this mask If an outputmask is specified, the output is drawn onto it and it is returned. Otherwise a mask of size (MAX(0, width + othermask's
+width - 1), MAX(0, height + othermask's height - 1)) is created and returned.   
+Return type:
+
+Mask

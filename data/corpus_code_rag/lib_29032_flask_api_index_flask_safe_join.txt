@@ -1,0 +1,9 @@
+# flask.api.index#flask.safe_join
+
+flask.safe_join(directory, *pathnames)  
+Safely join zero or more untrusted path components to a base directory to avoid escaping the base directory.  Parameters 
+ 
+directory (str) – The trusted base directory. 
+pathnames (str) – The untrusted path components relative to the base directory.   Returns 
+A safe path, otherwise None.  Return type 
+str

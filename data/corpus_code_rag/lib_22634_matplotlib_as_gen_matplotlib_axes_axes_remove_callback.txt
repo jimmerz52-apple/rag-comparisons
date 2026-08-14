@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.remove_callback
+
+matplotlib.axes.Axes.remove_callback   Axes.remove_callback(oid)[source]
+ 
+Remove a callback based on its observer id.  See also  add_callback

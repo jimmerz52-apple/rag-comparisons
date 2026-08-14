@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.arg
+
+arg  
+numeric argument to operation (if any), otherwise None

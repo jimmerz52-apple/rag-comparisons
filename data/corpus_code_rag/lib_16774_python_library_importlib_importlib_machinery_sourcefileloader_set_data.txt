@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourceFileLoader.set_data
+
+set_data(path, data)  
+Concrete implementation of importlib.abc.SourceLoader.set_data().

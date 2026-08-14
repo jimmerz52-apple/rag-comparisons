@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.FilePathField.match
+
+match  
+A regular expression pattern; only files with names matching this expression will be allowed as choices.

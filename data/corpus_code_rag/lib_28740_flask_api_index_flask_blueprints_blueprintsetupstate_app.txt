@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.app
+
+app  
+a reference to the current application

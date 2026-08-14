@@ -1,0 +1,4 @@
+# python.library.os#os.supports_bytes_environ
+
+os.supports_bytes_environ  
+True if the native OS type of the environment is bytes (eg. False on Windows).  New in version 3.2.

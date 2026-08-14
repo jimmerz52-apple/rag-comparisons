@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.nextSibling
+
+Node.nextSibling  
+The node that immediately follows this one with the same parent. See also previousSibling. If this is the last child of the parent, this attribute will be None. This is a read-only attribute.

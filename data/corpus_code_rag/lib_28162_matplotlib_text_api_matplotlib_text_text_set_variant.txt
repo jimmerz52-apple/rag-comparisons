@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_variant
+
+set_variant(variant)[source]
+ 
+Alias for set_fontvariant.

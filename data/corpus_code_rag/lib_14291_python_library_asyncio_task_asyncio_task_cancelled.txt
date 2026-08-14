@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.Task.cancelled
+
+cancelled()  
+Return True if the Task is cancelled. The Task is cancelled when the cancellation was requested with cancel() and the wrapped coroutine propagated the CancelledError exception thrown into it.

@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.SimpleHTTPRequestHandler.server_version
+
+server_version  
+This will be "SimpleHTTP/" + __version__, where __version__ is defined at the module level.

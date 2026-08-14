@@ -1,0 +1,4 @@
+# python.library.os#os.WTERMSIG
+
+os.WTERMSIG(status)  
+Return the number of the signal that caused the process to terminate. This function should be employed only if WIFSIGNALED() is true. Availability: Unix.

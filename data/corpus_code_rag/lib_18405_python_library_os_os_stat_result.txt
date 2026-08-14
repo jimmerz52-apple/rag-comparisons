@@ -1,0 +1,79 @@
+# python.library.os#os.stat_result
+
+class os.stat_result  
+Object whose attributes correspond roughly to the members of the stat structure. It is used for the result of os.stat(), os.fstat() and os.lstat(). Attributes:  
+st_mode  
+File mode: file type and file mode bits (permissions). 
+  
+st_ino  
+Platform dependent, but if non-zero, uniquely identifies the file for a given value of st_dev. Typically:  the inode number on Unix, the file index on Windows  
+  
+st_dev  
+Identifier of the device on which this file resides. 
+  
+st_nlink  
+Number of hard links. 
+  
+st_uid  
+User identifier of the file owner. 
+  
+st_gid  
+Group identifier of the file owner. 
+  
+st_size  
+Size of the file in bytes, if it is a regular file or a symbolic link. The size of a symbolic link is the length of the pathname it contains, without a terminating null byte. 
+ Timestamps:  
+st_atime  
+Time of most recent access expressed in seconds. 
+  
+st_mtime  
+Time of most recent content modification expressed in seconds. 
+  
+st_ctime  
+Platform dependent:  the time of most recent metadata change on Unix, the time of creation on Windows, expressed in seconds.  
+  
+st_atime_ns  
+Time of most recent access expressed in nanoseconds as an integer. 
+  
+st_mtime_ns  
+Time of most recent content modification expressed in nanoseconds as an integer. 
+  
+st_ctime_ns  
+Platform dependent:  the time of most recent metadata change on Unix, the time of creation on Windows, expressed in nanoseconds as an integer.  
+  Note The exact meaning and resolution of the st_atime, st_mtime, and st_ctime attributes depend on the operating system and the file system. For example, on Windows systems using the FAT or FAT32 file systems, st_mtime has 2-second resolution, and st_atime has only 1-day resolution. See your operating system documentation for details. Similarly, although st_atime_ns, st_mtime_ns, and st_ctime_ns are always expressed in nanoseconds, many systems do not provide nanosecond precision. On systems that do provide nanosecond precision, the floating-point object used to store st_atime, st_mtime, and st_ctime cannot preserve all of it, and as such will be slightly inexact. If you need the exact timestamps you should always use st_atime_ns, st_mtime_ns, and st_ctime_ns.  On some Unix systems (such as Linux), the following attributes may also be available:  
+st_blocks  
+Number of 512-byte blocks allocated for file. This may be smaller than st_size/512 when the file has holes. 
+  
+st_blksize  
+“Preferred” blocksize for efficient file system I/O. Writing to a file in smaller chunks may cause an inefficient read-modify-rewrite. 
+  
+st_rdev  
+Type of device if an inode device. 
+  
+st_flags  
+User defined flags for file. 
+ On other Unix systems (such as FreeBSD), the following attributes may be available (but may be only filled out if root tries to use them):  
+st_gen  
+File generation number. 
+  
+st_birthtime  
+Time of file creation. 
+ On Solaris and derivatives, the following attributes may also be available:  
+st_fstype  
+String that uniquely identifies the type of the filesystem that contains the file. 
+ On Mac OS systems, the following attributes may also be available:  
+st_rsize  
+Real size of the file. 
+  
+st_creator  
+Creator of the file. 
+  
+st_type  
+File type. 
+ On Windows systems, the following attributes are also available:  
+st_file_attributes  
+Windows file attributes: dwFileAttributes member of the BY_HANDLE_FILE_INFORMATION structure returned by GetFileInformationByHandle(). See the FILE_ATTRIBUTE_* constants in the stat module. 
+  
+st_reparse_tag  
+When st_file_attributes has the FILE_ATTRIBUTE_REPARSE_POINT set, this field contains the tag identifying the type of reparse point. See the IO_REPARSE_TAG_* constants in the stat module. 
+ The standard module stat defines functions and constants that are useful for extracting information from a stat structure. (On Windows, some items are filled with dummy values.) For backward compatibility, a stat_result instance is also accessible as a tuple of at least 10 integers giving the most important (and portable) members of the stat structure, in the order st_mode, st_ino, st_dev, st_nlink, st_uid, st_gid, st_size, st_atime, st_mtime, st_ctime. More items may be added at the end by some implementations. For compatibility with older Python versions, accessing stat_result as a tuple always returns integers.  New in version 3.3: Added the st_atime_ns, st_mtime_ns, and st_ctime_ns members.   New in version 3.5: Added the st_file_attributes member on Windows.   Changed in version 3.5: Windows now returns the file index as st_ino when available.   New in version 3.7: Added the st_fstype member to Solaris/derivatives.   New in version 3.8: Added the st_reparse_tag member on Windows.   Changed in version 3.8: On Windows, the st_mode member now identifies special files as S_IFCHR, S_IFIFO or S_IFBLK as appropriate.

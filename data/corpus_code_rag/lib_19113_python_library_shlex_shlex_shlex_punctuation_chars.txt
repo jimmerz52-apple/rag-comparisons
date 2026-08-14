@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.punctuation_chars
+
+shlex.punctuation_chars  
+A read-only property. Characters that will be considered punctuation. Runs of punctuation characters will be returned as a single token. However, note that no semantic validity checking will be performed: for example, ‘>>>’ could be returned as a token, even though it may not be recognised as such by shells.  New in version 3.6.

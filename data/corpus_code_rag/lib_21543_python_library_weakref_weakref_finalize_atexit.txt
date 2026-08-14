@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.finalize.atexit
+
+atexit  
+A writable boolean property which by default is true. When the program exits, it calls all remaining live finalizers for which atexit is true. They are called in reverse order of creation.

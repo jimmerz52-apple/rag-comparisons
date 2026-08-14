@@ -1,0 +1,18 @@
+# flask.api.index#flask.copy_current_request_context
+
+flask.copy_current_request_context(f)  
+A helper function that decorates a function to retain the current request context. This is useful when working with greenlets. The moment the function is decorated a copy of the request context is created and then pushed when the function is called. The current session is also included in the copied request context. Example: import gevent
+from flask import copy_current_request_context
+
+@app.route('/')
+def index():
+    @copy_current_request_context
+    def do_some_work():
+        # do some work here, it can access flask.request or
+        # flask.session like you would otherwise in the view function.
+        ...
+    gevent.spawn(do_some_work)
+    return 'Regular response'
+  Changelog New in version 0.10.   Parameters 
+f (Callable) –   Return type 
+Callable

@@ -1,0 +1,23 @@
+# skimage.api.skimage.metrics#skimage.metrics.hausdorff_distance
+
+skimage.metrics.hausdorff_distance(image0, image1) [source]
+ 
+Calculate the Hausdorff distance between nonzero elements of given images. The Hausdorff distance [1] is the maximum distance between any point on image0 and its nearest point on image1, and vice-versa.  Parameters 
+ 
+image0, image1ndarray 
+
+Arrays where True represents a point that is included in a set of points. Both arrays must have the same shape.    Returns 
+ 
+distancefloat 
+
+The Hausdorff distance between coordinates of nonzero pixels in image0 and image1, using the Euclidian distance.     References  
+1  
+http://en.wikipedia.org/wiki/Hausdorff_distance   Examples >>> points_a = (3, 0)
+>>> points_b = (6, 0)
+>>> shape = (7, 1)
+>>> image_a = np.zeros(shape, dtype=bool)
+>>> image_b = np.zeros(shape, dtype=bool)
+>>> image_a[points_a] = True
+>>> image_b[points_b] = True
+>>> hausdorff_distance(image_a, image_b)
+3.0

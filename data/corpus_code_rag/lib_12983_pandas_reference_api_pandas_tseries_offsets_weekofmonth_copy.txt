@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.weekofmonth.copy
+
+pandas.tseries.offsets.WeekOfMonth.copy   WeekOfMonth.copy()

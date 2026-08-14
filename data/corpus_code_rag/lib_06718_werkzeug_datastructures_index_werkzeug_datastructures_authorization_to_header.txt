@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Authorization.to_header
+
+to_header()  
+Convert to a string value for an Authorization header.  New in version 2.0: Added to support passing authorization to the test client.

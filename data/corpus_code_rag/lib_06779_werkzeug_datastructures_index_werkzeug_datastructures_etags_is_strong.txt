@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ETags.is_strong
+
+is_strong(etag)  
+Check if an etag is strong.

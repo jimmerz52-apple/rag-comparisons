@@ -1,0 +1,36 @@
+# skimage.api.skimage.feature#skimage.feature.corner_moravec
+
+skimage.feature.corner_moravec(image, window_size=1) [source]
+ 
+Compute Moravec corner measure response image. This is one of the simplest corner detectors and is comparatively fast but has several limitations (e.g. not rotation invariant).  Parameters 
+ 
+imagendarray 
+
+Input image.  
+window_sizeint, optional 
+
+Window size.    Returns 
+ 
+responsendarray 
+
+Moravec response image.     References  
+1  
+https://en.wikipedia.org/wiki/Corner_detection   Examples >>> from skimage.feature import corner_moravec
+>>> square = np.zeros([7, 7])
+>>> square[3, 3] = 1
+>>> square.astype(int)
+array([[0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0]])
+>>> corner_moravec(square).astype(int)
+array([[0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 1, 1, 1, 0, 0],
+       [0, 0, 1, 2, 1, 0, 0],
+       [0, 0, 1, 1, 1, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0]])

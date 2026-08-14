@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.unique
+
+pandas.api.extensions.ExtensionArray.unique   ExtensionArray.unique()[source]
+ 
+Compute the ExtensionArray of unique values.  Returns 
+ 
+uniques:ExtensionArray

@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.Locator.getColumnNumber
+
+Locator.getColumnNumber()  
+Return the column number where the current event begins.

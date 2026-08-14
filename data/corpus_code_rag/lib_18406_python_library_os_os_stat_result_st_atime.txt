@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_atime
+
+st_atime  
+Time of most recent access expressed in seconds.

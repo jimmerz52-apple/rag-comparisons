@@ -1,0 +1,10 @@
+# flask.api.index#flask.Flask.wsgi_app
+
+wsgi_app(environ, start_response)  
+The actual WSGI application. This is not implemented in __call__() so that middlewares can be applied without losing a reference to the app object. Instead of doing this: app = MyMiddleware(app)
+ It’s a better idea to do this instead: app.wsgi_app = MyMiddleware(app.wsgi_app)
+ Then you still have the original application object around and can continue to call methods on it.  Changelog Changed in version 0.7: Teardown events for the request and app contexts are called even if an unhandled error occurs. Other events may not be called depending on when an error occurs during dispatch. See Callbacks and Errors.   Parameters 
+ 
+environ (dict) – A WSGI environment. 
+start_response (Callable) – A callable accepting a status code, a list of headers, and an optional exception context to start the response.   Return type 
+Any

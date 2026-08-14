@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.linear_model.lassolars#sklearn.linear_model.LassoLars.fit
+
+fit(X, y, Xy=None) [source]
+ 
+Fit the model using X, y as training data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.  
+yarray-like of shape (n_samples,) or (n_samples, n_targets) 
+
+Target values.  
+Xyarray-like of shape (n_samples,) or (n_samples, n_targets), default=None 
+
+Xy = np.dot(X.T, y) that can be precomputed. It is useful only when the Gram matrix is precomputed.    Returns 
+ 
+selfobject 
+
+returns an instance of self.

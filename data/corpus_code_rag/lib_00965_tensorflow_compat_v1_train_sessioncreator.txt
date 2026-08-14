@@ -1,0 +1,5 @@
+# tensorflow.compat.v1.train.sessioncreator
+
+tf.compat.v1.train.SessionCreator A factory for tf.Session. Methods create_session View source 
+@abc.abstractmethod
+create_session()

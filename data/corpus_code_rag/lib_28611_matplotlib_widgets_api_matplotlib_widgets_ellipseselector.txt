@@ -1,0 +1,49 @@
+# matplotlib.widgets_api#matplotlib.widgets.EllipseSelector
+
+classmatplotlib.widgets.EllipseSelector(ax, onselect, drawtype=<deprecated parameter>, minspanx=0, minspany=0, useblit=False, lineprops=<deprecated parameter>, props=None, spancoords='data', button=None, grab_range=10, handle_props=None, interactive=False, state_modifier_keys=None, drag_from_anywhere=False, ignore_event_outside=False)[source]
+ 
+Bases: matplotlib.widgets.RectangleSelector Select an elliptical region of an axes. For the cursor to remain responsive you must keep a reference to it. Press and release events triggered at the same coordinates outside the selection will clear the selector, except when ignore_event_outside=True.  Parameters 
+ 
+axAxes
+
+ The parent axes for the widget.  onselectfunction
+
+
+A callback function that is called after a release event and the selection is created, changed or removed. It must have the signature: def onselect(eclick: MouseEvent, erelease: MouseEvent)
+ where eclick and erelease are the mouse click and release MouseEvents that start and complete the selection.  minspanxfloat, default: 0
+
+
+Selections with an x-span less than or equal to minspanx are removed (when already existing) or cancelled.  minspanyfloat, default: 0
+
+
+Selections with an y-span less than or equal to minspanx are removed (when already existing) or cancelled.  useblitbool, default: False
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  propsdict, optional
+
+
+Properties with which the ellipse is drawn. See matplotlib.patches.Patch for valid properties. Default: dict(facecolor='red', edgecolor='black', alpha=0.2, fill=True)  spancoords{"data", "pixels"}, default: "data"
+
+
+Whether to interpret minspanx and minspany in data or in pixel coordinates.  buttonMouseButton, list of MouseButton, default: all buttons
+
+
+Button(s) that trigger rectangle selection.  grab_rangefloat, default: 10
+
+
+Distance in pixels within which the interactive tool handles can be activated.  handle_propsdict, optional
+
+
+Properties with which the interactive handles (marker artists) are drawn. See the marker arguments in matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams except for the default value of markeredgecolor which will be the same as the edgecolor property in props.  interactivebool, default: False
+
+
+Whether to draw a set of handles that allow interaction with the widget after it is drawn.  state_modifier_keysdict, optional
+
+
+Keyboard modifiers which affect the widget's behavior. Values amend the defaults.  "move": Move the existing shape, default: no modifier. "clear": Clear the current shape, default: "escape". "square": Make the shape square, default: "shift". "center": Make the initial point the center of the shape, default: "ctrl".  "square" and "center" can be combined.  drag_from_anywherebool, default: False
+
+
+If True, the widget can be moved by clicking anywhere within its bounds.  ignore_event_outsidebool, default: False
+
+
+If True, the event triggered outside the span selector will be ignored.       Examples Rectangle and ellipse selectors   propertydraw_shape[source]

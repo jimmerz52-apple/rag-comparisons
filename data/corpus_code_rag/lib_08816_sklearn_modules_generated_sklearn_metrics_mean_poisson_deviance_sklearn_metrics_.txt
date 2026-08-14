@@ -1,0 +1,23 @@
+# sklearn.modules.generated.sklearn.metrics.mean_poisson_deviance#sklearn.metrics.mean_poisson_deviance
+
+sklearn.metrics.mean_poisson_deviance(y_true, y_pred, *, sample_weight=None) [source]
+ 
+Mean Poisson deviance regression loss. Poisson deviance is equivalent to the Tweedie deviance with the power parameter power=1. Read more in the User Guide.  Parameters 
+ 
+y_truearray-like of shape (n_samples,) 
+
+Ground truth (correct) target values. Requires y_true >= 0.  
+y_predarray-like of shape (n_samples,) 
+
+Estimated target values. Requires y_pred > 0.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+lossfloat 
+
+A non-negative floating point value (the best value is 0.0).     Examples >>> from sklearn.metrics import mean_poisson_deviance
+>>> y_true = [2, 0, 1, 4]
+>>> y_pred = [0.5, 0.5, 2., 2.]
+>>> mean_poisson_deviance(y_true, y_pred)
+1.4260...

@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.get_sprite
+
+get_sprite() 
+ returns the sprite at the index idx from the groups sprites get_sprite(idx) -> sprite  Raises IndexOutOfBounds if the idx is not within range.

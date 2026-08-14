@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueHandler.emit
+
+emit(record)  
+Enqueues the result of preparing the LogRecord. Should an exception occur (e.g. because a bounded queue has filled up), the handleError() method is called to handle the error. This can result in the record silently being dropped (if logging.raiseExceptions is False) or a message printed to sys.stderr (if logging.raiseExceptions is True).

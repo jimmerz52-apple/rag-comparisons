@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.getAttributeNode
+
+Element.getAttributeNode(attrname)  
+Return the Attr node for the attribute named by attrname.

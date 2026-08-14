@@ -1,0 +1,6 @@
+# torch.multiprocessing#torch.multiprocessing.set_sharing_strategy
+
+torch.multiprocessing.set_sharing_strategy(new_strategy) [source]
+ 
+Sets the strategy for sharing CPU tensors.  Parameters 
+new_strategy (str) – Name of the selected strategy. Should be one of the values returned by get_all_sharing_strategies().

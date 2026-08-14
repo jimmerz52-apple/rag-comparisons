@@ -1,0 +1,4 @@
+# python.library.os#os.setpgid
+
+os.setpgid(pid, pgrp)  
+Call the system call setpgid() to set the process group id of the process with id pid to the process group with id pgrp. See the Unix manual for the semantics. Availability: Unix.

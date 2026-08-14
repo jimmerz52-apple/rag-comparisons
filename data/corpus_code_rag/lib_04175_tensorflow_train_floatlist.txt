@@ -1,0 +1,9 @@
+# tensorflow.train.floatlist
+
+tf.train.FloatList     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.FloatList 
+ 
+
+
+ Attributes
+  value   repeated float value

@@ -1,0 +1,4 @@
+# python.library.xml.dom.minidom#xml.dom.minidom.Node.toprettyxml
+
+Node.toprettyxml(indent="\t", newl="\n", encoding=None, standalone=None)  
+Return a pretty-printed version of the document. indent specifies the indentation string and defaults to a tabulator; newl specifies the string emitted at the end of each line and defaults to \n. The encoding argument behaves like the corresponding argument of toxml(). The standalone argument behaves exactly as in writexml().  Changed in version 3.8: The toprettyxml() method now preserves the attribute order specified by the user.

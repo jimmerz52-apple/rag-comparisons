@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.kbinsdiscretizer#sklearn.preprocessing.KBinsDiscretizer.inverse_transform
+
+inverse_transform(Xt) [source]
+ 
+Transform discretized data back to original feature space. Note that this function does not regenerate the original data due to discretization rounding.  Parameters 
+ 
+Xtarray-like of shape (n_samples, n_features) 
+
+Transformed data in the binned space.    Returns 
+ 
+Xinvndarray, dtype={np.float32, np.float64} 
+
+Data in the original feature space.

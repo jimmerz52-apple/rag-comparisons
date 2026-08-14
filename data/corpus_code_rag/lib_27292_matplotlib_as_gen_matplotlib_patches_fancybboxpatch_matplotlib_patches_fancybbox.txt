@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_width
+
+set_width(w)[source]
+ 
+Set the rectangle width.  Parameters 
+ 
+wfloat

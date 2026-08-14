@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.patches.polygon#matplotlib.patches.Polygon.set_closed
+
+set_closed(closed)[source]
+ 
+Set whether the polygon is closed.  Parameters 
+ 
+closedbool
+
+
+True if the polygon is closed

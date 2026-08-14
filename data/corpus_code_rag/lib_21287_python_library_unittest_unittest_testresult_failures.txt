@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.failures
+
+failures  
+A list containing 2-tuples of TestCase instances and strings holding formatted tracebacks. Each tuple represents a test where a failure was explicitly signalled using the TestCase.assert*() methods.

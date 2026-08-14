@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.axis_name
+
+matplotlib.axis.YAxis.axis_name   YAxis.axis_name='y'
+ 
+Read-only name identifying the axis.

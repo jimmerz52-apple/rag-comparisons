@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.localtime
+
+localtime(value=None, timezone=None)  
+Converts an aware datetime to a different time zone, by default the current time zone. When value is omitted, it defaults to now(). This function doesn’t work on naive datetimes; use make_aware() instead.

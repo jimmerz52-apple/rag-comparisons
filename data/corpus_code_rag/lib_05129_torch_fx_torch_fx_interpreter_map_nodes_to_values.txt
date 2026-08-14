@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.Interpreter.map_nodes_to_values
+
+map_nodes_to_values(args, n) [source]
+ 
+Recursively descend through args and look up the concrete value for each Node in the current execution environment.  Parameters 
+ 
+args (Argument) – Data structure within which to look up concrete values 
+n (Node) – Node to which args belongs. This is only used for error reporting.

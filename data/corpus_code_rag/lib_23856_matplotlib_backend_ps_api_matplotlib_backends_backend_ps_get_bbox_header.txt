@@ -1,0 +1,5 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.get_bbox_header
+
+matplotlib.backends.backend_ps.get_bbox_header(lbrt, rotated=False)[source]
+ 
+Return a postscript header string for the given bbox lbrt=(l, b, r, t). Optionally, return rotate command.

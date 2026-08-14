@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.window_height
+
+turtle.window_height()  
+Return the height of the turtle window. >>> screen.window_height()
+480

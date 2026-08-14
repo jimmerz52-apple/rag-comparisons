@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseRequestHandler.handle
+
+handle()  
+This function must do all the work required to service a request. The default implementation does nothing. Several instance attributes are available to it; the request is available as self.request; the client address as self.client_address; and the server instance as self.server, in case it needs access to per-server information. The type of self.request is different for datagram or stream services. For stream services, self.request is a socket object; for datagram services, self.request is a pair of string and socket.

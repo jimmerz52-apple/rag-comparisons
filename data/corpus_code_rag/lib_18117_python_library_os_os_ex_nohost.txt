@@ -1,0 +1,4 @@
+# python.library.os#os.EX_NOHOST
+
+os.EX_NOHOST  
+Exit code that means a specified host did not exist. Availability: Unix.

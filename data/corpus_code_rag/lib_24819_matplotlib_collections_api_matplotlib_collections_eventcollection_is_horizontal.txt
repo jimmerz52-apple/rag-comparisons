@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.is_horizontal
+
+is_horizontal()[source]
+ 
+True if the eventcollection is horizontal, False if vertical.

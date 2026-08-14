@@ -1,0 +1,7 @@
+# tensorflow.keras.regularizers.get
+
+tf.keras.regularizers.get     View source on GitHub    Retrieve a regularizer instance from a config or identifier.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.regularizers.get  
+tf.keras.regularizers.get(
+    identifier
+)

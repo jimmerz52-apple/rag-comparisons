@@ -1,0 +1,4 @@
+# pygame.ref.sndarray#pygame.sndarray.array
+
+pygame.sndarray.array() 
+ copy Sound samples into an array array(Sound) -> array  Creates a new array for the sound data and copies the samples. The array will always be in the format returned from pygame.mixer.get_init().

@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.serializer
+
+serializer = <flask.json.tag.TaggedJSONSerializer object>  
+A python serializer for the payload. The default is a compact JSON derived serializer with support for some extra Python types such as datetime objects or tuples.

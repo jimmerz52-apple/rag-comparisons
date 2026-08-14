@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.q_scale
+
+q_scale() → float  
+Given a Tensor quantized by linear(affine) quantization, returns the scale of the underlying quantizer().

@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.is_relation
+
+Field.is_relation  
+Boolean flag that indicates if a field contains references to one or more other models for its functionality (e.g. ForeignKey, ManyToManyField, OneToOneField, etc.).

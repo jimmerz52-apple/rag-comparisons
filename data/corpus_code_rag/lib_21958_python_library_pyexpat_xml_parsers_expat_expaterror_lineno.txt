@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.ExpatError.lineno
+
+ExpatError.lineno  
+Line number on which the error was detected. The first line is numbered 1.

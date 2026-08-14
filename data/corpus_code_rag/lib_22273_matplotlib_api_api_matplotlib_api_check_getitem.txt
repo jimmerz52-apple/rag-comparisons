@@ -1,0 +1,5 @@
+# matplotlib._api_api#matplotlib._api.check_getitem
+
+matplotlib._api.check_getitem(_mapping, **kwargs)[source]
+ 
+kwargs must consist of a single key, value pair. If key is in _mapping, return _mapping[value]; else, raise an appropriate ValueError. Examples >>> _api.check_getitem({"foo": "bar"}, arg=arg)

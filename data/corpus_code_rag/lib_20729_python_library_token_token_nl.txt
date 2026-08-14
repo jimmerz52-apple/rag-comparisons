@@ -1,0 +1,4 @@
+# python.library.token#token.NL
+
+token.NL  
+Token value used to indicate a non-terminating newline. The NEWLINE token indicates the end of a logical line of Python code; NL tokens are generated when a logical line of code is continued over multiple physical lines.

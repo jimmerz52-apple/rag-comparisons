@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.NullHandler.emit
+
+emit(record)  
+This method does nothing.

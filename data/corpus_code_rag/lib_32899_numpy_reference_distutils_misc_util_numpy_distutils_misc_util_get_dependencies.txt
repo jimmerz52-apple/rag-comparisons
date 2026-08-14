@@ -1,0 +1,3 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_dependencies
+
+numpy.distutils.misc_util.get_dependencies(sources)[source]

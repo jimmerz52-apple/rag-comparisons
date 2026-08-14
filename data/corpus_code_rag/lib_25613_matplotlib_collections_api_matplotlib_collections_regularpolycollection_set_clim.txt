@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.RegularPolyCollection.set_clim
+
+set_clim(vmin=None, vmax=None)[source]
+ 
+Set the norm limits for image scaling.  Parameters 
+ 
+vmin, vmaxfloat
+
+
+The limits. The limits may also be passed as a tuple (vmin, vmax) as a single positional argument.

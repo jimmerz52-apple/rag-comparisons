@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.set_patchA
+
+set_patchA(patchA)[source]
+ 
+Set the tail patch.  Parameters 
+ 
+patchApatches.Patch

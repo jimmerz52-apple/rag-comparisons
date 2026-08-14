@@ -1,0 +1,4 @@
+# python.library._thread#_thread.allocate_lock
+
+_thread.allocate_lock()  
+Return a new lock object. Methods of locks are described below. The lock is initially unlocked.

@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.FilteredRelation.condition
+
+condition  
+A Q object to control the filtering.

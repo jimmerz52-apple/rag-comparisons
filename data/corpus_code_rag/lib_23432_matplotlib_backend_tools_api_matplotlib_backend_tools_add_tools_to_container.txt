@@ -1,0 +1,14 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.add_tools_to_container
+
+matplotlib.backend_tools.add_tools_to_container(container, tools=[['navigation', ['home', 'back', 'forward']], ['zoompan', ['pan', 'zoom', 'subplots']], ['io', ['save', 'help']]])[source]
+ 
+Add multiple tools to the container.  Parameters 
+ 
+containerContainer
+
+
+backend_bases.ToolContainerBase object that will get the tools added.  
+toolslist, optional
+
+
+List in the form [[group1, [tool1, tool2 ...]], [group2, [...]]] where the tools [tool1, tool2, ...] will display in group1. See add_tool for details.

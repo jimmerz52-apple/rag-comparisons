@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.stop_text_input
+
+pygame.key.stop_text_input() 
+ stop handling Unicode text input events stop_text_input() -> None  Stop receiving pygame.TEXTEDITING and pygame.TEXTINPUT events. Text input events handling is on by default  New in pygame 2.0.0.

@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.FilePathField
+
+class FilePathField(path='', match=None, recursive=False, allow_files=True, allow_folders=False, max_length=100, **options)

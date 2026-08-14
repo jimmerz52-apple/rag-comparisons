@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.remote_user
+
+remote_user  
+If the server supports user authentication, and the script is protected, this attribute contains the username the user has authenticated as.

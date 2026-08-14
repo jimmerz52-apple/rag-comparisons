@@ -1,0 +1,4 @@
+# python.library.curses#curses.endwin
+
+curses.endwin()  
+De-initialize the library, and return terminal to normal status.

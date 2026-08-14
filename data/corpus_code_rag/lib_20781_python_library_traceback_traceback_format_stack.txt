@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.format_stack
+
+traceback.format_stack(f=None, limit=None)  
+A shorthand for format_list(extract_stack(f, limit)).

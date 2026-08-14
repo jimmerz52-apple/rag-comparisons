@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetImage.draw
+
+draw(renderer)[source]
+ 
+Update the location of children if necessary and draw them to the given renderer.

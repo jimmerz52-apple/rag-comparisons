@@ -1,0 +1,10 @@
+# tensorflow.compat.v1.runmetadata.functiongraphs
+
+tf.compat.v1.RunMetadata.FunctionGraphs A ProtocolMessage
+ 
+
+
+ Attributes
+  partition_graphs   repeated GraphDef partition_graphs  
+  post_optimization_graph   GraphDef post_optimization_graph  
+  pre_optimization_graph   GraphDef pre_optimization_graph

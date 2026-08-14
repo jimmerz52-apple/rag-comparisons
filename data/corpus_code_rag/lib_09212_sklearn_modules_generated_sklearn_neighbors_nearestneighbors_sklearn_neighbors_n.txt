@@ -1,0 +1,31 @@
+# sklearn.modules.generated.sklearn.neighbors.nearestneighbors#sklearn.neighbors.NearestNeighbors.kneighbors_graph
+
+kneighbors_graph(X=None, n_neighbors=None, mode='connectivity') [source]
+ 
+Computes the (weighted) graph of k-Neighbors for points in X  Parameters 
+ 
+Xarray-like of shape (n_queries, n_features), or (n_queries, n_indexed) if metric == ‘precomputed’, default=None 
+
+The query point or points. If not provided, neighbors of each indexed point are returned. In this case, the query point is not considered its own neighbor. For metric='precomputed' the shape should be (n_queries, n_indexed). Otherwise the shape should be (n_queries, n_features).  
+n_neighborsint, default=None 
+
+Number of neighbors for each sample. The default is the value passed to the constructor.  
+mode{‘connectivity’, ‘distance’}, default=’connectivity’ 
+
+Type of returned matrix: ‘connectivity’ will return the connectivity matrix with ones and zeros, in ‘distance’ the edges are Euclidean distance between points.    Returns 
+ 
+Asparse-matrix of shape (n_queries, n_samples_fit) 
+
+n_samples_fit is the number of samples in the fitted data A[i, j] is assigned the weight of edge that connects i to j. The matrix is of CSR format.      See also  
+NearestNeighbors.radius_neighbors_graph
+
+  Examples >>> X = [[0], [3], [1]]
+>>> from sklearn.neighbors import NearestNeighbors
+>>> neigh = NearestNeighbors(n_neighbors=2)
+>>> neigh.fit(X)
+NearestNeighbors(n_neighbors=2)
+>>> A = neigh.kneighbors_graph(X)
+>>> A.toarray()
+array([[1., 0., 1.],
+       [0., 1., 1.],
+       [1., 0., 1.]])

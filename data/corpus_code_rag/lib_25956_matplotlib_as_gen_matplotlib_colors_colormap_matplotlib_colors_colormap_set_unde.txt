@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.set_under
+
+set_under(color='k', alpha=None)[source]
+ 
+Set the color for low out-of-range values.

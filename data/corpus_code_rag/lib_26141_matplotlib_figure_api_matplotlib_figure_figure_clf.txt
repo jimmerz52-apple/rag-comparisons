@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.clf
+
+clf(keep_observers=False)[source]
+ 
+Clear the figure. Set keep_observers to True if, for example, a gui widget is tracking the Axes in the figure.

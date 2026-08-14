@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.indexes#django.contrib.postgres.indexes.GistIndex
+
+class GistIndex(*expressions, buffering=None, fillfactor=None, **options)  
+Creates a GiST index. These indexes are automatically created on spatial fields with spatial_index=True. They’re also useful on other types, such as HStoreField or the range fields. To use this index on data types not in the built-in gist operator classes, you need to activate the btree_gist extension on PostgreSQL. You can install it using the BtreeGistExtension migration operation. Set the buffering parameter to True or False to manually enable or disable buffering build of the index. Provide an integer value from 10 to 100 to the fillfactor parameter to tune how packed the index pages will be. PostgreSQL’s default is 90.  Changed in Django 3.2: Positional argument *expressions was added in order to support functional indexes.

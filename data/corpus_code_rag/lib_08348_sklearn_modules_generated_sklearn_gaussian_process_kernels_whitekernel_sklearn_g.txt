@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.whitekernel#sklearn.gaussian_process.kernels.WhiteKernel.clone_with_theta
+
+clone_with_theta(theta) [source]
+ 
+Returns a clone of self with given hyperparameters theta.  Parameters 
+ 
+thetandarray of shape (n_dims,) 
+
+The hyperparameters

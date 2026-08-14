@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.RendererSVG.open_group
+
+open_group(s, gid=None)[source]
+ 
+Open a grouping element with label s and gid (if set) as id. Only used by the SVG renderer.

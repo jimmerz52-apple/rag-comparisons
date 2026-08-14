@@ -1,0 +1,6 @@
+# torch.amp#torch.cuda.amp.GradScaler.set_growth_interval
+
+set_growth_interval(new_interval) [source]
+ 
+ Parameters 
+new_interval (int) – Value to use as the new growth interval.

@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.DateTimeField.input_formats
+
+input_formats  
+A list of formats used to attempt to convert a string to a valid datetime.datetime object, in addition to ISO 8601 formats.

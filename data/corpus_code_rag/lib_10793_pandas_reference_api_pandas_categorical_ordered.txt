@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.categorical.ordered
+
+pandas.Categorical.ordered   propertyCategorical.ordered
+ 
+Whether the categories have an ordered relationship.

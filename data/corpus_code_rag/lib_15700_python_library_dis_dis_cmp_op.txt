@@ -1,0 +1,4 @@
+# python.library.dis#dis.cmp_op
+
+dis.cmp_op  
+Sequence of all compare operation names.

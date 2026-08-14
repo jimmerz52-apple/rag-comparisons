@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_numhats
+
+get_numhats() 
+ get the number of hat controls on a Joystick get_numhats() -> int  Returns the number of joystick hats on a Joystick. Hat devices are like miniature digital joysticks on a joystick. Each hat has two axes of input. The pygame.JOYHATMOTION event is generated when the hat changes position. The position attribute for the event contains a pair of values that are either -1, 0, or 1. A position of (0, 0) means the hat is centered.

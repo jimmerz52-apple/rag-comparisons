@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.second.is_on_offset
+
+pandas.tseries.offsets.Second.is_on_offset   Second.is_on_offset()

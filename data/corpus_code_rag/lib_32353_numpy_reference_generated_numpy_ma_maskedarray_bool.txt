@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__bool__
+
+numpy.ma.MaskedArray.__bool__ method   ma.MaskedArray.__bool__(/)
+ 
+self != 0

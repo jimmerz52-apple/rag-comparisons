@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_SINGLE_ECDH_USE
+
+ssl.OP_SINGLE_ECDH_USE  
+Prevents re-use of the same ECDH key for distinct SSL sessions. This improves forward secrecy but requires more computational resources. This option only applies to server sockets.  New in version 3.3.

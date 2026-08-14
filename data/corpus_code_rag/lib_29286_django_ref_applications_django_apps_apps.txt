@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.apps
+
+apps  
+The application registry provides the following public API. Methods that aren’t listed below are considered private and may change without notice.

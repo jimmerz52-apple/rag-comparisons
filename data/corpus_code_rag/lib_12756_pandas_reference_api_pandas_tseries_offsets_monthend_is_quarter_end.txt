@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.monthend.is_quarter_end
+
+pandas.tseries.offsets.MonthEnd.is_quarter_end   MonthEnd.is_quarter_end()

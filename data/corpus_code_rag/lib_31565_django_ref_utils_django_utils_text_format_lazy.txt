@@ -1,0 +1,11 @@
+# django.ref.utils#django.utils.text.format_lazy
+
+format_lazy(format_string, *args, **kwargs)  
+A version of str.format() for when format_string, args, and/or kwargs contain lazy objects. The first argument is the string to be formatted. For example: from django.utils.text import format_lazy
+from django.utils.translation import pgettext_lazy
+
+urlpatterns = [
+    path(format_lazy('{person}/<int:pk>/', person=pgettext_lazy('URL', 'person')),
+         PersonDetailView.as_view()),
+]
+ This example allows translators to translate part of the URL. If “person” is translated to “persona”, the regular expression will match persona/(?P<pk>\d+)/$, e.g. persona/5/.

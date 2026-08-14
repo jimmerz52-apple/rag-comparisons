@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.div
+
+div(value, *, rounding_mode=None) → Tensor  
+See torch.div()

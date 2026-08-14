@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Server.close
+
+close()  
+Stop serving: close listening sockets and set the sockets attribute to None. The sockets that represent existing incoming client connections are left open. The server is closed asynchronously, use the wait_closed() coroutine to wait until the server is closed.

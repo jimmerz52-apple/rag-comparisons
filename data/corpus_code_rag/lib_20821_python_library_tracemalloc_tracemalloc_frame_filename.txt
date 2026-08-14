@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Frame.filename
+
+filename  
+Filename (str).

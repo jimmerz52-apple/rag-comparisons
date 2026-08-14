@@ -1,0 +1,14 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.text3d#mpl_toolkits.mplot3d.art3d.Text3D.set_position_3d
+
+set_position_3d(xyz, zdir=None)[source]
+ 
+Set the (x, y, z) position of the text.  Parameters 
+ 
+xyz(float, float, float)
+
+
+The position in 3D space.  
+zdir{'x', 'y', 'z', None, 3-tuple}
+
+
+The direction of the text. If unspecified, the zdir will not be changed.

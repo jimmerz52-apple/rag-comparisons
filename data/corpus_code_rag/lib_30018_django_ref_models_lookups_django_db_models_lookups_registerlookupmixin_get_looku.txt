@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.lookups.RegisterLookupMixin.get_lookup
+
+get_lookup(lookup_name)  
+Returns the Lookup named lookup_name registered in the class. The default implementation looks recursively on all parent classes and checks if any has a registered lookup named lookup_name, returning the first match.

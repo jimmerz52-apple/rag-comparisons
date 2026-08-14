@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.get_surface
+
+pygame.display.get_surface() 
+ Get a reference to the currently set display surface get_surface() -> Surface  Return a reference to the currently set display Surface. If no display mode has been set this will return None.

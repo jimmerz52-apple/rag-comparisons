@@ -1,0 +1,20 @@
+# matplotlib.mlab_api#matplotlib.mlab.detrend_mean
+
+matplotlib.mlab.detrend_mean(x, axis=None)[source]
+ 
+Return x minus the mean(x).  Parameters 
+ 
+xarray or sequence
+
+
+Array or sequence containing the data Can have any dimensionality  
+axisint
+
+
+The axis along which to take the mean. See numpy.mean for a description of this argument.      See also  detrend_linear
+
+Another detrend algorithm.  detrend_none
+
+Another detrend algorithm.  detrend
+
+A wrapper around all the detrend algorithms.

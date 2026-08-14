@@ -1,0 +1,14 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.peek_path_info
+
+werkzeug.wsgi.peek_path_info(environ, charset='utf-8', errors='replace')  
+Returns the next segment on the PATH_INFO or None if there is none. Works like pop_path_info() without modifying the environment: >>> env = {'SCRIPT_NAME': '/foo', 'PATH_INFO': '/a/b'}
+>>> peek_path_info(env)
+'a'
+>>> peek_path_info(env)
+'a'
+ If the charset is set to None bytes are returned.  Changelog Changed in version 0.9: The path is now decoded and a charset and encoding parameter can be provided.   New in version 0.5.   Parameters 
+ 
+environ (WSGIEnvironment) – the WSGI environment that is checked. 
+charset (str) –  
+errors (str) –    Return type 
+Optional[str]

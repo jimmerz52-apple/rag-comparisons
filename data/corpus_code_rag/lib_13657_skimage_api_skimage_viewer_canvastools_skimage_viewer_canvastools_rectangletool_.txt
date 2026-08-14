@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.RectangleTool.on_mouse_release
+
+on_mouse_release(event) [source]

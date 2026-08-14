@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.RadioButtons.set_active
+
+set_active(index)[source]
+ 
+Select button with number index. Callbacks will be triggered if eventson is True.

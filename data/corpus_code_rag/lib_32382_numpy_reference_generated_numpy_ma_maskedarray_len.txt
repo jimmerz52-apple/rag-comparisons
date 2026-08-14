@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__len__
+
+numpy.ma.MaskedArray.__len__ method   ma.MaskedArray.__len__(/)
+ 
+Return len(self).

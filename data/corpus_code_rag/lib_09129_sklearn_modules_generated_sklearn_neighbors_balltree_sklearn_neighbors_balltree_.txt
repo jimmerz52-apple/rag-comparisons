@@ -1,0 +1,7 @@
+# sklearn.modules.generated.sklearn.neighbors.balltree#sklearn.neighbors.BallTree.get_n_calls
+
+get_n_calls(self)  
+Get number of calls.  Returns 
+ n_calls: int
+
+number of distance computation calls

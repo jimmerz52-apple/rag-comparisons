@@ -1,0 +1,4 @@
+# django.topics.signing#django.core.signing.loads
+
+loads(string, key=None, salt='django.core.signing', serializer=JSONSerializer, max_age=None)  
+Reverse of dumps(), raises BadSignature if signature fails. Checks max_age (in seconds) if given.

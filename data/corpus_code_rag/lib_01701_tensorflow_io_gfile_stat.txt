@@ -1,0 +1,23 @@
+# tensorflow.io.gfile.stat
+
+tf.io.gfile.stat     View source on GitHub    Returns file statistics for a given path.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.io.gfile.stat  
+tf.io.gfile.stat(
+    path
+)
+
+ 
+
+
+ Args
+  path   string, path to a file   
+ 
+
+
+ Returns   FileStatistics struct that contains information about the path  
+
+ 
+
+
+ Raises
+  errors.OpError   If the operation fails.

@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.unsubscribe
+
+IMAP4.unsubscribe(mailbox)  
+Unsubscribe from old mailbox.

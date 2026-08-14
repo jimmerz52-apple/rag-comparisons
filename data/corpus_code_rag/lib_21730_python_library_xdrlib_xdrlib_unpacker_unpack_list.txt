@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.unpack_list
+
+Unpacker.unpack_list(unpack_item)  
+Unpacks and returns a list of homogeneous items. The list is unpacked one element at a time by first unpacking an unsigned integer flag. If the flag is 1, then the item is unpacked and appended to the list. A flag of 0 indicates the end of the list. unpack_item is the function that is called to unpack the items.

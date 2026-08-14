@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_DATA
+
+resource.RLIMIT_DATA  
+The maximum size (in bytes) of the process’s heap.

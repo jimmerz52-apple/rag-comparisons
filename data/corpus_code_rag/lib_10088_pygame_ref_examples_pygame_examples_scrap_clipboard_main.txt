@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.scrap_clipboard.main
+
+scrap_clipboard.main() 
+ access the clipboard scrap_clipboard.main() -> None  A simple demonstration example for the clipboard support.

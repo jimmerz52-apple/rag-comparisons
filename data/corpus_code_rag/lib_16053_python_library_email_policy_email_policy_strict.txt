@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.strict
+
+email.policy.strict  
+Convenience instance. The same as default except that raise_on_defect is set to True. This allows any policy to be made strict by writing: somepolicy + policy.strict

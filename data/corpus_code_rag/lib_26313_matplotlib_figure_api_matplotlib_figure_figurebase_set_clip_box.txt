@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.set_clip_box
+
+set_clip_box(clipbox)[source]
+ 
+Set the artist's clip Bbox.  Parameters 
+ 
+clipboxBbox

@@ -1,0 +1,4 @@
+# python.library.math#math.factorial
+
+math.factorial(x)  
+Return x factorial as an integer. Raises ValueError if x is not integral or is negative.  Deprecated since version 3.9: Accepting floats with integral values (like 5.0) is deprecated.

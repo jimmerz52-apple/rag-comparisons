@@ -1,0 +1,5 @@
+# torch.futures#torch.futures.Future.done
+
+done() [source]
+ 
+Return True if this Future is done. A Future is done if it has a result or an exception.

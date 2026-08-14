@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIteratorValue.instance
+
+instance  
+The model instance from the queryset. The instance can be accessed in custom ChoiceWidget.create_option() implementations to adjust the rendered HTML.

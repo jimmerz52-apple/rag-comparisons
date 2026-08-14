@@ -1,0 +1,40 @@
+# python.library.ast#ast.SetComp
+
+class ast.ListComp(elt, generators)  
+class ast.SetComp(elt, generators)  
+class ast.GeneratorExp(elt, generators)  
+class ast.DictComp(key, value, generators)  
+List and set comprehensions, generator expressions, and dictionary comprehensions. elt (or key and value) is a single node representing the part that will be evaluated for each item. generators is a list of comprehension nodes. >>> print(ast.dump(ast.parse('[x for x in numbers]', mode='eval'), indent=4))
+Expression(
+    body=ListComp(
+        elt=Name(id='x', ctx=Load()),
+        generators=[
+            comprehension(
+                target=Name(id='x', ctx=Store()),
+                iter=Name(id='numbers', ctx=Load()),
+                ifs=[],
+                is_async=0)]))
+>>> print(ast.dump(ast.parse('{x: x**2 for x in numbers}', mode='eval'), indent=4))
+Expression(
+    body=DictComp(
+        key=Name(id='x', ctx=Load()),
+        value=BinOp(
+            left=Name(id='x', ctx=Load()),
+            op=Pow(),
+            right=Constant(value=2)),
+        generators=[
+            comprehension(
+                target=Name(id='x', ctx=Store()),
+                iter=Name(id='numbers', ctx=Load()),
+                ifs=[],
+                is_async=0)]))
+>>> print(ast.dump(ast.parse('{x for x in numbers}', mode='eval'), indent=4))
+Expression(
+    body=SetComp(
+        elt=Name(id='x', ctx=Load()),
+        generators=[
+            comprehension(
+                target=Name(id='x', ctx=Store()),
+                iter=Name(id='numbers', ctx=Load()),
+                ifs=[],
+                is_async=0)]))

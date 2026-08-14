@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.CGIHTTPRequestHandler.cgi_directories
+
+cgi_directories  
+This defaults to ['/cgi-bin', '/htbin'] and describes directories to treat as containing CGI scripts.

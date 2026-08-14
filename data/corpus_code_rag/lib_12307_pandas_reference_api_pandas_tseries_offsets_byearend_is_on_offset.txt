@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearend.is_on_offset
+
+pandas.tseries.offsets.BYearEnd.is_on_offset   BYearEnd.is_on_offset()

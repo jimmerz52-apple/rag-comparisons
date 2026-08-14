@@ -1,0 +1,3 @@
+# django.ref.contrib.staticfiles#django.contrib.staticfiles.urls.staticfiles_urlpatterns
+
+urls.staticfiles_urlpatterns()

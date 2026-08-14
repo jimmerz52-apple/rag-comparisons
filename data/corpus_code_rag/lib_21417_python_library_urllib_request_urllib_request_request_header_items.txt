@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.header_items
+
+Request.header_items()  
+Return a list of tuples (header_name, header_value) of the Request headers.

@@ -1,0 +1,15 @@
+# python.library.reprlib#reprlib.recursive_repr
+
+@reprlib.recursive_repr(fillvalue="...")  
+Decorator for __repr__() methods to detect recursive calls within the same thread. If a recursive call is made, the fillvalue is returned, otherwise, the usual __repr__() call is made. For example: >>> from reprlib import recursive_repr
+>>> class MyList(list):
+...     @recursive_repr()
+...     def __repr__(self):
+...         return '<' + '|'.join(map(repr, self)) + '>'
+...
+>>> m = MyList('abc')
+>>> m.append(m)
+>>> m.append('x')
+>>> print(m)
+<'a'|'b'|'c'|...|'x'>
+  New in version 3.2.

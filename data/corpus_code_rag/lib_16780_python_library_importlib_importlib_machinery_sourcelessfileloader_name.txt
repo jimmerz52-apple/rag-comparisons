@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourcelessFileLoader.name
+
+name  
+The name of the module the loader will handle.

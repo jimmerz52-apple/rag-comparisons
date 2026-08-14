@@ -1,0 +1,10 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.list_display_links
+
+ModelAdmin.list_display_links  
+Use list_display_links to control if and which fields in list_display should be linked to the “change” page for an object. By default, the change list page will link the first column – the first field specified in list_display – to the change page for each item. But list_display_links lets you change this:  Set it to None to get no links at all.  
+Set it to a list or tuple of fields (in the same format as list_display) whose columns you want converted to links. You can specify one or many fields. As long as the fields appear in list_display, Django doesn’t care how many (or how few) fields are linked. The only requirement is that if you want to use list_display_links in this fashion, you must define list_display.   In this example, the first_name and last_name fields will be linked on the change list page: class PersonAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'last_name', 'birthday')
+    list_display_links = ('first_name', 'last_name')
+ In this example, the change list page grid will have no links: class AuditEntryAdmin(admin.ModelAdmin):
+    list_display = ('timestamp', 'message')
+    list_display_links = None

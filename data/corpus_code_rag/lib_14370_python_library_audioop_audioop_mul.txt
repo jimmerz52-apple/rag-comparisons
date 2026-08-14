@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.mul
+
+audioop.mul(fragment, width, factor)  
+Return a fragment that has all samples in the original fragment multiplied by the floating-point value factor. Samples are truncated in case of overflow.

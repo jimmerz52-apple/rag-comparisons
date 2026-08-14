@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.expsinesquared#sklearn.gaussian_process.kernels.ExpSineSquared.hyperparameter_length_scale
+
+property hyperparameter_length_scale  
+Returns the length scale

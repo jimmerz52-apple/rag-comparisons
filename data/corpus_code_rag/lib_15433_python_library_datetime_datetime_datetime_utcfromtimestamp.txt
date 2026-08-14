@@ -1,0 +1,6 @@
+# python.library.datetime#datetime.datetime.utcfromtimestamp
+
+classmethod datetime.utcfromtimestamp(timestamp)  
+Return the UTC datetime corresponding to the POSIX timestamp, with tzinfo None. (The resulting object is naive.) This may raise OverflowError, if the timestamp is out of the range of values supported by the platform C gmtime() function, and OSError on gmtime() failure. It’s common for this to be restricted to years in 1970 through 2038. To get an aware datetime object, call fromtimestamp(): datetime.fromtimestamp(timestamp, timezone.utc)
+ On the POSIX compliant platforms, it is equivalent to the following expression: datetime(1970, 1, 1, tzinfo=timezone.utc) + timedelta(seconds=timestamp)
+ except the latter formula always supports the full years range: between MINYEAR and MAXYEAR inclusive.  Warning Because naive datetime objects are treated by many datetime methods as local times, it is preferred to use aware datetimes to represent times in UTC. As such, the recommended way to create an object representing a specific timestamp in UTC is by calling datetime.fromtimestamp(timestamp, tz=timezone.utc).   Changed in version 3.3: Raise OverflowError instead of ValueError if the timestamp is out of the range of values supported by the platform C gmtime() function. Raise OSError instead of ValueError on gmtime() failure.

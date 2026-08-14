@@ -1,0 +1,4 @@
+# python.library.pprint#pprint.PrettyPrinter.pformat
+
+PrettyPrinter.pformat(object)  
+Return the formatted representation of object. This takes into account the options passed to the PrettyPrinter constructor.

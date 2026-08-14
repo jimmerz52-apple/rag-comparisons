@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.get_hatch_color
+
+get_hatch_color()[source]
+ 
+Get the hatch color.

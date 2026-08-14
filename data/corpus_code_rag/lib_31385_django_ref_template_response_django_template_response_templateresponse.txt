@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.TemplateResponse
+
+class TemplateResponse  
+TemplateResponse is a subclass of SimpleTemplateResponse that knows about the current HttpRequest.

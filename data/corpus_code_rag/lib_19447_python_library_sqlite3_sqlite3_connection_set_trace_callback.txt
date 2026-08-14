@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Connection.set_trace_callback
+
+set_trace_callback(trace_callback)  
+Registers trace_callback to be called for each SQL statement that is actually executed by the SQLite backend. The only argument passed to the callback is the statement (as string) that is being executed. The return value of the callback is ignored. Note that the backend does not only run statements passed to the Cursor.execute() methods. Other sources include the transaction management of the Python module and the execution of triggers defined in the current database. Passing None as trace_callback will disable the trace callback.  New in version 3.3.

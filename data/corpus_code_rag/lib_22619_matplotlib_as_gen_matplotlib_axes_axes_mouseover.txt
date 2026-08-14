@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.mouseover
+
+matplotlib.axes.Axes.mouseover   propertyAxes.mouseover
+ 
+If this property is set to True, the artist will be queried for custom context information when the mouse cursor moves over it. See also get_cursor_data(), ToolCursorPosition and NavigationToolbar2.

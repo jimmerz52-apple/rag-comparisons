@@ -1,0 +1,33 @@
+# skimage.api.skimage.draw#skimage.draw.disk
+
+skimage.draw.disk(center, radius, *, shape=None) [source]
+ 
+Generate coordinates of pixels within circle.  Parameters 
+ 
+centertuple 
+
+Center coordinate of disk.  
+radiusdouble 
+
+Radius of disk.  
+shapetuple, optional 
+
+Image shape which is used to determine the maximum extent of output pixel coordinates. This is useful for disks that exceed the image size. If None, the full extent of the disk is used. Must be at least length 2. Only the first two values are used to determine the extent of the input image.    Returns 
+ 
+rr, ccndarray of int 
+
+Pixel coordinates of disk. May be used to directly index into an array, e.g. img[rr, cc] = 1.     Examples >>> from skimage.draw import disk
+>>> img = np.zeros((10, 10), dtype=np.uint8)
+>>> rr, cc = disk((4, 4), 5)
+>>> img[rr, cc] = 1
+>>> img
+array([[0, 0, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+       [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+       [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+       [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+       [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+       [1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+       [0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+       [0, 0, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], dtype=uint8)

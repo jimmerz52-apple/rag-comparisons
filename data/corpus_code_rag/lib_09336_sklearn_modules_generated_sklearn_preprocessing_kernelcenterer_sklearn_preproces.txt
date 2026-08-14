@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.preprocessing.kernelcenterer#sklearn.preprocessing.KernelCenterer.transform
+
+transform(K, copy=True) [source]
+ 
+Center kernel matrix.  Parameters 
+ 
+Kndarray of shape (n_samples1, n_samples2) 
+
+Kernel matrix.  
+copybool, default=True 
+
+Set to False to perform inplace computation.    Returns 
+ 
+K_newndarray of shape (n_samples1, n_samples2)

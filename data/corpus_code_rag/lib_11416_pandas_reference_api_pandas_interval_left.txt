@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.interval.left
+
+pandas.Interval.left   Interval.left
+ 
+Left bound for the interval.

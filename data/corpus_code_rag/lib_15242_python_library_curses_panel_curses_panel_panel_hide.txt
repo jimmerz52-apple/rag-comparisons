@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.hide
+
+Panel.hide()  
+Hide the panel. This does not delete the object, it just makes the window on screen invisible.

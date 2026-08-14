@@ -1,0 +1,4 @@
+# django.ref.files.file#django.core.files.images.ImageFile.width
+
+width  
+Width of the image in pixels.

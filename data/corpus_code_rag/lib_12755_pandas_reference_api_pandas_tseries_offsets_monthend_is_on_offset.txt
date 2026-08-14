@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.monthend.is_on_offset
+
+pandas.tseries.offsets.MonthEnd.is_on_offset   MonthEnd.is_on_offset()

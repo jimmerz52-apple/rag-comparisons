@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.timeout
+
+timeout  
+Timeout duration, measured in seconds, or None if no timeout is desired. If handle_request() receives no incoming requests within the timeout period, the handle_timeout() method is called.

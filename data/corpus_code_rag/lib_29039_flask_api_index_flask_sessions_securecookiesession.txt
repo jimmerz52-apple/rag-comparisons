@@ -1,0 +1,25 @@
+# flask.api.index#flask.sessions.SecureCookieSession
+
+class flask.sessions.SecureCookieSession(initial=None)  
+Base class for sessions based on signed cookies. This session backend will set the modified and accessed attributes. It cannot reliably track whether a session is new (vs. empty), so new remains hard coded to False.  Parameters 
+initial (Any) –   Return type 
+None    
+accessed = False  
+header, which allows caching proxies to cache different pages for different users. 
+  
+get(key, default=None)  
+Return the value for key if key is in the dictionary, else default.  Parameters 
+ 
+key (str) –  
+default (Optional[Any]) –    Return type 
+Any   
+  
+modified = False  
+When data is changed, this is set to True. Only the session dictionary itself is tracked; if the session contains mutable data (for example a nested dict) then this must be set to True manually when modifying that data. The session cookie will only be written to the response if this is True. 
+  
+setdefault(key, default=None)  
+Insert key with a value of default if key is not in the dictionary. Return the value for key if key is in the dictionary, else default.  Parameters 
+ 
+key (str) –  
+default (Optional[Any]) –    Return type 
+Any

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.maxabsscaler#sklearn.preprocessing.MaxAbsScaler.transform
+
+transform(X) [source]
+ 
+Scale the data  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data that should be scaled.    Returns 
+ 
+X_tr{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Transformed array.

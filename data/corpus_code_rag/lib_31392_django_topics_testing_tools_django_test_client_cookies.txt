@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Client.cookies
+
+Client.cookies  
+A Python SimpleCookie object, containing the current values of all the client cookies. See the documentation of the http.cookies module for more.

@@ -1,0 +1,21 @@
+# python.library.importlib#importlib.machinery.SourcelessFileLoader
+
+class importlib.machinery.SourcelessFileLoader(fullname, path)  
+A concrete implementation of importlib.abc.FileLoader which can import bytecode files (i.e. no source code files exist). Please note that direct use of bytecode files (and thus not source code files) inhibits your modules from being usable by all Python implementations or new versions of Python which change the bytecode format.  New in version 3.3.   
+name  
+The name of the module the loader will handle. 
+  
+path  
+The path to the bytecode file. 
+  
+is_package(fullname)  
+Determines if the module is a package based on path. 
+  
+get_code(fullname)  
+Returns the code object for name created from path. 
+  
+get_source(fullname)  
+Returns None as bytecode files have no source when this loader is used. 
+  
+load_module(name=None) 
+ Concrete implementation of importlib.abc.Loader.load_module() where specifying the name of the module to load is optional.  Deprecated since version 3.6: Use importlib.abc.Loader.exec_module() instead.

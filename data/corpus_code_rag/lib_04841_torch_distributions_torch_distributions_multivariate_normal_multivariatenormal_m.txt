@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.multivariate_normal.MultivariateNormal.mean
+
+property mean

@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.complex_double
+
+complex_double()  
+Casts this storage to complex double type

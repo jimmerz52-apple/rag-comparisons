@@ -1,0 +1,18 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.key_press_handler
+
+matplotlib.backend_bases.key_press_handler(event, canvas=None, toolbar=None)[source]
+ 
+Implement the default Matplotlib key bindings for the canvas and toolbar described at Navigation keyboard shortcuts.  Parameters 
+ 
+eventKeyEvent
+
+
+A key press/release event.  
+canvasFigureCanvasBase, default: event.canvas
+
+
+The backend-specific canvas instance. This parameter is kept for back-compatibility, but, if set, should always be equal to event.canvas.  
+toolbarNavigationToolbar2, default: event.canvas.toolbar
+
+
+The navigation cursor toolbar. This parameter is kept for back-compatibility, but, if set, should always be equal to event.canvas.toolbar.

@@ -1,0 +1,17 @@
+# python.library.datetime#datetime.datetime.fromisoformat
+
+classmethod datetime.fromisoformat(date_string)  
+Return a datetime corresponding to a date_string in one of the formats emitted by date.isoformat() and datetime.isoformat(). Specifically, this function supports strings in the format: YYYY-MM-DD[*HH[:MM[:SS[.fff[fff]]]][+HH:MM[:SS[.ffffff]]]]
+ where * can match any single character.  Caution This does not support parsing arbitrary ISO 8601 strings - it is only intended as the inverse operation of datetime.isoformat(). A more full-featured ISO 8601 parser, dateutil.parser.isoparse is available in the third-party package dateutil.  Examples: >>> from datetime import datetime
+>>> datetime.fromisoformat('2011-11-04')
+datetime.datetime(2011, 11, 4, 0, 0)
+>>> datetime.fromisoformat('2011-11-04T00:05:23')
+datetime.datetime(2011, 11, 4, 0, 5, 23)
+>>> datetime.fromisoformat('2011-11-04 00:05:23.283')
+datetime.datetime(2011, 11, 4, 0, 5, 23, 283000)
+>>> datetime.fromisoformat('2011-11-04 00:05:23.283+00:00')
+datetime.datetime(2011, 11, 4, 0, 5, 23, 283000, tzinfo=datetime.timezone.utc)
+>>> datetime.fromisoformat('2011-11-04T00:05:23+04:00')   
+datetime.datetime(2011, 11, 4, 0, 5, 23,
+    tzinfo=datetime.timezone(datetime.timedelta(seconds=14400)))
+  New in version 3.7.

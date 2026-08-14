@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Sized
+
+class collections.abc.Sized  
+ABC for classes that provide the __len__() method.

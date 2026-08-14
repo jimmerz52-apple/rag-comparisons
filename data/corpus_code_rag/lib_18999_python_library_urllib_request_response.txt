@@ -1,0 +1,4 @@
+# python.library.urllib.request#response
+
+BaseHandler.<protocol>_response(req, response)  
+This method is not defined in BaseHandler, but subclasses should define it if they want to post-process responses of the given protocol. This method, if defined, will be called by the parent OpenerDirector. req will be a Request object. response will be an object implementing the same interface as the return value of urlopen(). The return value should implement the same interface as the return value of urlopen().

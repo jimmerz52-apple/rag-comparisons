@@ -1,0 +1,24 @@
+# matplotlib._as_gen.matplotlib.pyplot.rc
+
+matplotlib.pyplot.rc   matplotlib.pyplot.rc(group, **kwargs)[source]
+ 
+Set the current rcParams. group is the grouping for the rc, e.g., for lines.linewidth the group is lines, for axes.facecolor, the group is axes, and so on. Group may also be a list or tuple of group names, e.g., (xtick, ytick). kwargs is a dictionary attribute name/value pairs, e.g.,: rc('lines', linewidth=2, color='r')
+ sets the current rcParams and is equivalent to: rcParams['lines.linewidth'] = 2
+rcParams['lines.color'] = 'r'
+ The following aliases are available to save typing for interactive users:   
+Alias Property   
+'lw' 'linewidth'  
+'ls' 'linestyle'  
+'c' 'color'  
+'fc' 'facecolor'  
+'ec' 'edgecolor'  
+'mew' 'markeredgewidth'  
+'aa' 'antialiased'   Thus you could abbreviate the above call as: rc('lines', lw=2, c='r')
+ Note you can use python's kwargs dictionary facility to store dictionaries of default parameters. e.g., you can customize the font rc as follows: font = {'family' : 'monospace',
+        'weight' : 'bold',
+        'size'   : 'larger'}
+rc('font', **font)  # pass in the font dict as kwargs
+ This enables you to easily switch between several configurations. Use matplotlib.style.use('default') or rcdefaults() to restore the default rcParams after changes. Notes Similar functionality is available by using the normal dict interface, i.e. rcParams.update({"lines.linewidth": 2, ...}) (but rcParams.update does not support abbreviations or grouping). 
+  Examples using matplotlib.pyplot.rc
+ 
+   Styling with cycler

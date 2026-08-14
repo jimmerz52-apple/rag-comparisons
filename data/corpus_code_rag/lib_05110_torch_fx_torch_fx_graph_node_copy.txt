@@ -1,0 +1,14 @@
+# torch.fx#torch.fx.Graph.node_copy
+
+node_copy(node, arg_transform=<function Graph.<lambda>>) [source]
+ 
+Copy a node from one graph into another. arg_transform needs to transform arguments from the graph of node to the graph of self. Example: # Copying all the nodes in `g` into `new_graph`
+g : torch.fx.Graph = ...
+new_graph = torch.fx.graph()
+value_remap = {}
+for node in g.nodes:
+    value_remap[node] = new_graph.node_copy(node, lambda n : value_remap[n])
+  Parameters 
+ 
+node (Node) – The node to copy into self. 
+arg_transform (Callable[[Node], Argument]) – A function that transforms Node arguments in node’s args and kwargs into the equivalent argument in self. In the simplest case, this should retrieve a value out of a table mapping Nodes in the original graph to self.

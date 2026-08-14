@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_COOKIE_PATH
+
+SESSION_COOKIE_PATH  
+The path that the session cookie will be valid for. If not set, the cookie will be valid underneath APPLICATION_ROOT or / if that is not set. Default: None

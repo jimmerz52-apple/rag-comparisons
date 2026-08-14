@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.optionerror
+
+pandas.errors.OptionError   exceptionpandas.errors.OptionError[source]
+ 
+Exception for pandas.options, backwards compatible with KeyError checks.

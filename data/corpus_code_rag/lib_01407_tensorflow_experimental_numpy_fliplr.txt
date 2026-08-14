@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.fliplr
+
+tf.experimental.numpy.fliplr TensorFlow variant of NumPy's fliplr. 
+tf.experimental.numpy.fliplr(
+    m
+)
+ See the NumPy documentation for numpy.fliplr.

@@ -1,0 +1,27 @@
+# werkzeug.local.index#werkzeug.local.LocalStack
+
+class werkzeug.local.LocalStack  
+This class works similar to a Local but keeps a stack of objects instead. This is best explained with an example: >>> ls = LocalStack()
+>>> ls.push(42)
+>>> ls.top
+42
+>>> ls.push(23)
+>>> ls.top
+23
+>>> ls.pop()
+23
+>>> ls.top
+42
+ They can be force released by using a LocalManager or with the release_local() function but the correct way is to pop the item from the stack after using. When the stack is empty it will no longer be bound to the current context (and as such released). By calling the stack without arguments it returns a proxy that resolves to the topmost item on the stack.  Changelog New in version 0.6.1.   Return type 
+None    
+pop()  
+Removes the topmost item from the stack, will return the old value or None if the stack was already empty.  Return type 
+Any   
+  
+push(obj)  
+Pushes a new item to the stack  Parameters 
+obj (Any) –   Return type 
+List[Any]   
+  
+property top: Any  
+The topmost item on the stack. If the stack is empty, None is returned.

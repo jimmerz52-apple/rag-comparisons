@@ -1,0 +1,3 @@
+# python.library.tkinter.messagebox#tkinter.messagebox.showinfo
+
+tkinter.messagebox.showinfo(title=None, message=None, **options)

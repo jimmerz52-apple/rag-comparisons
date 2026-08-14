@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.hidden
+
+Panel.hidden()  
+Returns True if the panel is hidden (not visible), False otherwise.

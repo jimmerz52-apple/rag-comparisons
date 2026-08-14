@@ -1,0 +1,28 @@
+# django.ref.class-based-views.generic-display#django.views.generic.detail.DetailView
+
+class django.views.generic.detail.DetailView  
+While this view is executing, self.object will contain the object that the view is operating upon. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.detail.SingleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.detail.BaseDetailView django.views.generic.detail.SingleObjectMixin django.views.generic.base.View  Method Flowchart  setup() dispatch() http_method_not_allowed() get_template_names() get_slug_field() get_queryset() get_object() get_context_object_name() get_context_data() get() render_to_response()  Example myapp/views.py: from django.utils import timezone
+from django.views.generic.detail import DetailView
+
+from articles.models import Article
+
+class ArticleDetailView(DetailView):
+
+    model = Article
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['now'] = timezone.now()
+        return context
+ Example myapp/urls.py: from django.urls import path
+
+from article.views import ArticleDetailView
+
+urlpatterns = [
+    path('<slug:slug>/', ArticleDetailView.as_view(), name='article-detail'),
+]
+ Example myapp/article_detail.html: <h1>{{ object.headline }}</h1>
+<p>{{ object.content }}</p>
+<p>Reporter: {{ object.reporter }}</p>
+<p>Published: {{ object.pub_date|date }}</p>
+<p>Date: {{ now|date }}</p>

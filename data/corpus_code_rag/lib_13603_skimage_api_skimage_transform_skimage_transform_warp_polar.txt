@@ -1,0 +1,38 @@
+# skimage.api.skimage.transform#skimage.transform.warp_polar
+
+skimage.transform.warp_polar(image, center=None, *, radius=None, output_shape=None, scaling='linear', multichannel=False, **kwargs) [source]
+ 
+Remap image to polar or log-polar coordinates space.  Parameters 
+ 
+imagendarray 
+
+Input image. Only 2-D arrays are accepted by default. If multichannel=True, 3-D arrays are accepted and the last axis is interpreted as multiple channels.  
+centertuple (row, col), optional 
+
+Point in image that represents the center of the transformation (i.e., the origin in cartesian space). Values can be of type float. If no value is given, the center is assumed to be the center point of the image.  
+radiusfloat, optional 
+
+Radius of the circle that bounds the area to be transformed.  
+output_shapetuple (row, col), optional 
+
+scaling{‘linear’, ‘log’}, optional 
+
+Specify whether the image warp is polar or log-polar. Defaults to ‘linear’.  
+multichannelbool, optional 
+
+Whether the image is a 3-D array in which the third axis is to be interpreted as multiple channels. If set to False (default), only 2-D arrays are accepted.  
+**kwargskeyword arguments 
+
+Passed to transform.warp.    Returns 
+ 
+warpedndarray 
+
+The polar or log-polar warped image.     Examples Perform a basic polar warp on a grayscale image: >>> from skimage import data
+>>> from skimage.transform import warp_polar
+>>> image = data.checkerboard()
+>>> warped = warp_polar(image)
+ Perform a log-polar warp on a grayscale image: >>> warped = warp_polar(image, scaling='log')
+ Perform a log-polar warp on a grayscale image while specifying center, radius, and output shape: >>> warped = warp_polar(image, (100,100), radius=100,
+...                     output_shape=image.shape, scaling='log')
+ Perform a log-polar warp on a color image: >>> image = data.astronaut()
+>>> warped = warp_polar(image, scaling='log', multichannel=True)

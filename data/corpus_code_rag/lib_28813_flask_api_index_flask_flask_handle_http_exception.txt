@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.handle_http_exception
+
+handle_http_exception(e)  
+Handles an HTTP exception. By default this will invoke the registered error handlers and fall back to returning the exception as response.  Changelog Changed in version 1.0.3: RoutingException, used internally for actions such as slash redirects during routing, is not passed to error handlers.   Changed in version 1.0: Exceptions are looked up by code and by MRO, so HTTPExcpetion subclasses can be handled with a catch-all handler for the base HTTPException.   New in version 0.3.   Parameters 
+e (werkzeug.exceptions.HTTPException) –   Return type 
+Union[werkzeug.exceptions.HTTPException, Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], WSGIApplication]

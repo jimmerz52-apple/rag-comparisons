@@ -1,0 +1,16 @@
+# python.library.smtplib#smtplib.SMTP.starttls
+
+SMTP.starttls(keyfile=None, certfile=None, context=None)  
+Put the SMTP connection in TLS (Transport Layer Security) mode. All SMTP commands that follow will be encrypted. You should then call ehlo() again. If keyfile and certfile are provided, they are used to create an ssl.SSLContext. Optional context parameter is an ssl.SSLContext object; This is an alternative to using a keyfile and a certfile and if specified both keyfile and certfile should be None. If there has been no previous EHLO or HELO command this session, this method tries ESMTP EHLO first.  Deprecated since version 3.6: keyfile and certfile are deprecated in favor of context. Please use ssl.SSLContext.load_cert_chain() instead, or let ssl.create_default_context() select the system’s trusted CA certificates for you.   
+SMTPHeloError
+
+
+The server didn’t reply properly to the HELO greeting.  
+SMTPNotSupportedError
+
+
+The server does not support the STARTTLS extension.  
+RuntimeError
+
+
+SSL/TLS support is not available to your Python interpreter.    Changed in version 3.3: context was added.   Changed in version 3.4: The method now supports hostname check with SSLContext.check_hostname and Server Name Indicator (see HAS_SNI).   Changed in version 3.5: The error raised for lack of STARTTLS support is now the SMTPNotSupportedError subclass instead of the base SMTPException.

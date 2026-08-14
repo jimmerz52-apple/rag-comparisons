@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_DEV
+
+stat.ST_DEV  
+Device inode resides on.

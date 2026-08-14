@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.pin_memory
+
+pin_memory()  
+Copies the storage to pinned memory, if it’s not already pinned.

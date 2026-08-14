@@ -1,0 +1,4 @@
+# pygame.ref.bufferproxy#pygame.BufferProxy.raw
+
+raw 
+ A copy of the exported buffer as a single block of bytes. raw -> bytes  The buffer data as a str/bytes object. Any gaps in the exported data are removed.

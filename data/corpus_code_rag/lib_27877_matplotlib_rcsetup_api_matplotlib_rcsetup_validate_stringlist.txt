@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_stringlist
+
+matplotlib.rcsetup.validate_stringlist(s)[source]
+ 
+return a list of strings

@@ -1,0 +1,9 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.RangeWidget
+
+class RangeWidget(base_widget, attrs=None)  
+Widget used by all of the range fields. Based on MultiWidget. RangeWidget has one required argument:  
+base_widget  
+A RangeWidget comprises a 2-tuple of base_widget. 
+  
+decompress(value)  
+Takes a single “compressed” value of a field, for example a DateRangeField, and returns a tuple representing a lower and upper bound.

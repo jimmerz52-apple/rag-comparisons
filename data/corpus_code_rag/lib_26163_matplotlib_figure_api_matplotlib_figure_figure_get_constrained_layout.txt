@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_constrained_layout
+
+get_constrained_layout()[source]
+ 
+Return whether constrained layout is being used. See Constrained Layout Guide.

@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.ExFileSelectBox
+
+class tkinter.tix.ExFileSelectBox  
+The ExFileSelectBox widget is usually embedded in a tixExFileSelectDialog widget. It provides a convenient method for the user to select files. The style of the ExFileSelectBox widget is very similar to the standard file dialog on MS Windows 3.1.

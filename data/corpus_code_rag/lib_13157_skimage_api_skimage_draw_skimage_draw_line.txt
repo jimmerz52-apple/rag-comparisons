@@ -1,0 +1,30 @@
+# skimage.api.skimage.draw#skimage.draw.line
+
+skimage.draw.line(r0, c0, r1, c1) [source]
+ 
+Generate line pixel coordinates.  Parameters 
+ 
+r0, c0int 
+
+Starting position (row, column).  
+r1, c1int 
+
+End position (row, column).    Returns 
+ 
+rr, cc(N,) ndarray of int 
+
+Indices of pixels that belong to the line. May be used to directly index into an array, e.g. img[rr, cc] = 1.     Notes Anti-aliased line generator is available with line_aa. Examples >>> from skimage.draw import line
+>>> img = np.zeros((10, 10), dtype=np.uint8)
+>>> rr, cc = line(1, 1, 8, 8)
+>>> img[rr, cc] = 1
+>>> img
+array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], dtype=uint8)

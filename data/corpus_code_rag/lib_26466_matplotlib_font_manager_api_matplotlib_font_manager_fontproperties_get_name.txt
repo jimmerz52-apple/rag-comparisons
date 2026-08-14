@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.get_name
+
+get_name()[source]
+ 
+Return the name of the font that best matches the font properties.

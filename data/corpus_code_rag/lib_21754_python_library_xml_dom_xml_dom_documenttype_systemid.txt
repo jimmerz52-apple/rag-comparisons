@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.DocumentType.systemId
+
+DocumentType.systemId  
+The system identifier for the external subset of the document type definition. This will be a URI as a string, or None.

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.compressed
+
+numpy.ma.compressed   ma.compressed(x)[source]
+ 
+Return all the non-masked data as a 1-D array. This function is equivalent to calling the “compressed” method of a ma.MaskedArray, see ma.MaskedArray.compressed for details.  See also  ma.MaskedArray.compressed
+
+Equivalent method.

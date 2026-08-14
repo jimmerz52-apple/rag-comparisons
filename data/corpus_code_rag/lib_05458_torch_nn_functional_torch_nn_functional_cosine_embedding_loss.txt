@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.cosine_embedding_loss
+
+torch.nn.functional.cosine_embedding_loss(input1, input2, target, margin=0, size_average=None, reduce=None, reduction='mean') → Tensor [source]
+ 
+See CosineEmbeddingLoss for details.

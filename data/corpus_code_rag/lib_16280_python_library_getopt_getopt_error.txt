@@ -1,0 +1,4 @@
+# python.library.getopt#getopt.error
+
+exception getopt.error  
+Alias for GetoptError; for backward compatibility.

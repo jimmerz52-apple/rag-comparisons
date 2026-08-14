@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.width
+
+width  
+(default: 70) The maximum length of wrapped lines. As long as there are no individual words in the input text longer than width, TextWrapper guarantees that no output line will be longer than width characters.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.milli.is_on_offset
+
+pandas.tseries.offsets.Milli.is_on_offset   Milli.is_on_offset()

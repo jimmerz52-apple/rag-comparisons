@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.FileSystemStorage.directory_permissions_mode
+
+directory_permissions_mode  
+The file system permissions that the directory will receive when it is saved. Defaults to FILE_UPLOAD_DIRECTORY_PERMISSIONS.

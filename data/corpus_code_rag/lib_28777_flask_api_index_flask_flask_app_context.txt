@@ -1,0 +1,7 @@
+# flask.api.index#flask.Flask.app_context
+
+app_context()  
+Create an AppContext. Use as a with block to push the context, which will make current_app point at this application. An application context is automatically pushed by RequestContext.push() when handling a request, and when running a CLI command. Use this to manually create a context outside of these situations. with app.app_context():
+    init_db()
+ See The Application Context.  Changelog New in version 0.9.   Return type 
+flask.ctx.AppContext

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Range.to_header
+
+to_header()  
+Converts the object back into an HTTP header.

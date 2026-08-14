@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.keys
+
+keys()  
+Returns the elements attribute names as a list. The names are returned in an arbitrary order.

@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.select_jinja_autoescape
+
+select_jinja_autoescape(filename)  
+Returns True if autoescaping should be active for the given template name. If no template name is given, returns True.  Changelog New in version 0.5.   Parameters 
+filename (str) –   Return type 
+bool

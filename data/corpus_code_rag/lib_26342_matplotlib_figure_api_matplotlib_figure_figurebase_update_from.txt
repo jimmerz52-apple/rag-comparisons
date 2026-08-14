@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.update_from
+
+update_from(other)[source]
+ 
+Copy properties from other to self.

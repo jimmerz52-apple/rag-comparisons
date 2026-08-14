@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.unquote
+
+urllib.parse.unquote(string, encoding='utf-8', errors='replace')  
+Replace %xx escapes with their single-character equivalent. The optional encoding and errors parameters specify how to decode percent-encoded sequences into Unicode characters, as accepted by the bytes.decode() method. string may be either a str or a bytes object. encoding defaults to 'utf-8'. errors defaults to 'replace', meaning invalid sequences are replaced by a placeholder character. Example: unquote('/El%20Ni%C3%B1o/') yields '/El Niño/'.  Changed in version 3.9: string parameter supports bytes and str objects (previously only str).

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.datetimeindex.time
+
+pandas.DatetimeIndex.time   propertyDatetimeIndex.time
+ 
+Returns numpy array of datetime.time objects. The time part of the Timestamps.

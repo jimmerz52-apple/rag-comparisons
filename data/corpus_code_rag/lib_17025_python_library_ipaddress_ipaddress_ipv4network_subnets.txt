@@ -1,0 +1,18 @@
+# python.library.ipaddress#ipaddress.IPv4Network.subnets
+
+subnets(prefixlen_diff=1, new_prefix=None)  
+The subnets that join to make the current network definition, depending on the argument values. prefixlen_diff is the amount our prefix length should be increased by. new_prefix is the desired new prefix of the subnets; it must be larger than our prefix. One and only one of prefixlen_diff and new_prefix must be set. Returns an iterator of network objects. >>> list(ip_network('192.0.2.0/24').subnets())
+[IPv4Network('192.0.2.0/25'), IPv4Network('192.0.2.128/25')]
+>>> list(ip_network('192.0.2.0/24').subnets(prefixlen_diff=2))  
+[IPv4Network('192.0.2.0/26'), IPv4Network('192.0.2.64/26'),
+ IPv4Network('192.0.2.128/26'), IPv4Network('192.0.2.192/26')]
+>>> list(ip_network('192.0.2.0/24').subnets(new_prefix=26))  
+[IPv4Network('192.0.2.0/26'), IPv4Network('192.0.2.64/26'),
+ IPv4Network('192.0.2.128/26'), IPv4Network('192.0.2.192/26')]
+>>> list(ip_network('192.0.2.0/24').subnets(new_prefix=23))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+    raise ValueError('new prefix must be longer')
+ValueError: new prefix must be longer
+>>> list(ip_network('192.0.2.0/24').subnets(new_prefix=25))
+[IPv4Network('192.0.2.0/25'), IPv4Network('192.0.2.128/25')]

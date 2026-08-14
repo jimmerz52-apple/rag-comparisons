@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.rrelu
+
+torch.nn.functional.rrelu(input, lower=1./8, upper=1./3, training=False, inplace=False) → Tensor [source]
+ 
+Randomized leaky ReLU. See RReLU for more details.

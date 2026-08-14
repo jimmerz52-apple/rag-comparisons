@@ -1,0 +1,4 @@
+# python.library.test#test.support.LARGEST
+
+test.support.LARGEST  
+Object that is greater than anything (except itself). Used to test mixed type comparison.

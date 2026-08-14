@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MMDF.get_file
+
+get_file(key)  
+Using the file after calling flush() or close() on the MMDF instance may yield unpredictable results or raise an exception.

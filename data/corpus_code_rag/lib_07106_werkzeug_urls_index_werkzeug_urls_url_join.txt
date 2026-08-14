@@ -1,0 +1,9 @@
+# werkzeug.urls.index#werkzeug.urls.url_join
+
+werkzeug.urls.url_join(base, url, allow_fragments=True)  
+Join a base URL and a possibly relative URL to form an absolute interpretation of the latter.  Parameters 
+ 
+base (Union[str, Tuple[str, str, str, str, str]]) – the base URL for the join operation. 
+url (Union[str, Tuple[str, str, str, str, str]]) – the URL to join. 
+allow_fragments (bool) – indicates whether fragments should be allowed.   Return type 
+str

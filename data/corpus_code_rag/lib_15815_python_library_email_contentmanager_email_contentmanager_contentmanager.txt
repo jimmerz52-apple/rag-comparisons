@@ -1,0 +1,17 @@
+# python.library.email.contentmanager#email.contentmanager.ContentManager
+
+class email.contentmanager.ContentManager  
+Base class for content managers. Provides the standard registry mechanisms to register converters between MIME content and other representations, as well as the get_content and set_content dispatch methods.  
+get_content(msg, *args, **kw)  
+Look up a handler function based on the mimetype of msg (see next paragraph), call it, passing through all arguments, and return the result of the call. The expectation is that the handler will extract the payload from msg and return an object that encodes information about the extracted data. To find the handler, look for the following keys in the registry, stopping with the first one found:  the string representing the full MIME type (maintype/subtype) the string representing the maintype
+ the empty string  If none of these keys produce a handler, raise a KeyError for the full MIME type. 
+  
+set_content(msg, obj, *args, **kw)  
+If the maintype is multipart, raise a TypeError; otherwise look up a handler function based on the type of obj (see next paragraph), call clear_content() on the msg, and call the handler function, passing through all arguments. The expectation is that the handler will transform and store obj into msg, possibly making other changes to msg as well, such as adding various MIME headers to encode information needed to interpret the stored data. To find the handler, obtain the type of obj (typ = type(obj)), and look for the following keys in the registry, stopping with the first one found:  the type itself (typ) the type’s fully qualified name (typ.__module__ + '.' +
+typ.__qualname__). the type’s qualname (typ.__qualname__) the type’s name (typ.__name__).  If none of the above match, repeat all of the checks above for each of the types in the MRO (typ.__mro__). Finally, if no other key yields a handler, check for a handler for the key None. If there is no handler for None, raise a KeyError for the fully qualified name of the type. Also add a MIME-Version header if one is not present (see also MIMEPart). 
+  
+add_get_handler(key, handler)  
+Record the function handler as the handler for key. For the possible values of key, see get_content(). 
+  
+add_set_handler(typekey, handler)  
+Record handler as the function to call when an object of a type matching typekey is passed to set_content(). For the possible values of typekey, see set_content().

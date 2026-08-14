@@ -1,0 +1,40 @@
+# python.library.ast#ast.Try
+
+class ast.Try(body, handlers, orelse, finalbody)  
+try blocks. All attributes are list of nodes to execute, except for handlers, which is a list of ExceptHandler nodes. >>> print(ast.dump(ast.parse("""
+... try:
+...    ...
+... except Exception:
+...    ...
+... except OtherException as e:
+...    ...
+... else:
+...    ...
+... finally:
+...    ...
+... """), indent=4))
+Module(
+    body=[
+        Try(
+            body=[
+                Expr(
+                    value=Constant(value=Ellipsis))],
+            handlers=[
+                ExceptHandler(
+                    type=Name(id='Exception', ctx=Load()),
+                    body=[
+                        Expr(
+                            value=Constant(value=Ellipsis))]),
+                ExceptHandler(
+                    type=Name(id='OtherException', ctx=Load()),
+                    name='e',
+                    body=[
+                        Expr(
+                            value=Constant(value=Ellipsis))])],
+            orelse=[
+                Expr(
+                    value=Constant(value=Ellipsis))],
+            finalbody=[
+                Expr(
+                    value=Constant(value=Ellipsis))])],
+    type_ignores=[])

@@ -1,0 +1,8 @@
+# python.library.turtle#turtle.filling
+
+turtle.filling()  
+Return fillstate (True if filling, False else).  >>> turtle.begin_fill()
+ >>> if turtle.filling():
+ ...    turtle.pensize(5)
+ ... else:
+ ...    turtle.pensize(3)

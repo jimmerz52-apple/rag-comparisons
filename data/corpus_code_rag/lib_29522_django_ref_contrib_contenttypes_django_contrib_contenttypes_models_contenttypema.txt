@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentTypeManager.get_for_id
+
+get_for_id(id)  
+Lookup a ContentType by ID. Since this method uses the same shared cache as get_for_model(), it’s preferred to use this method over the usual ContentType.objects.get(pk=id)

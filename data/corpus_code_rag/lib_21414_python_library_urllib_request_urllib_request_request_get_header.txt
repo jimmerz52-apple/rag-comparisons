@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.get_header
+
+Request.get_header(header_name, default=None)  
+Return the value of the given header. If the header is not present, return the default value.

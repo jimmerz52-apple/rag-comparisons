@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.get_page
+
+Paginator.get_page(number)  
+Returns a Page object with the given 1-based index, while also handling out of range and invalid page numbers. If the page isn’t a number, it returns the first page. If the page number is negative or greater than the number of pages, it returns the last page. Raises an EmptyPage exception only if you specify Paginator(..., allow_empty_first_page=False) and the object_list is empty.

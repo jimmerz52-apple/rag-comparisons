@@ -1,0 +1,4 @@
+# django.topics.templates#django.template.backends.base.Template.render
+
+Template.render(context=None, request=None)  
+Renders this template with a given context. If context is provided, it must be a dict. If it isn’t provided, the engine will render the template with an empty context. If request is provided, it must be an HttpRequest. Then the engine must make it, as well as the CSRF token, available in the template. How this is achieved is up to each backend.

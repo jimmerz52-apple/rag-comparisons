@@ -1,0 +1,7 @@
+# matplotlib.widgets_api#matplotlib.widgets.RangeSlider.set_val
+
+set_val(val)[source]
+ 
+Set slider value to val.  Parameters 
+ 
+valtuple or array-like of float

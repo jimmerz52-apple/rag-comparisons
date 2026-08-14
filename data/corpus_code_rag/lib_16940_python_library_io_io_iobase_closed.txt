@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.closed
+
+closed  
+True if the stream is closed.

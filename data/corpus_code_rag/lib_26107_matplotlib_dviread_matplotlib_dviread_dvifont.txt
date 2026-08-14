@@ -1,0 +1,38 @@
+# matplotlib.dviread#matplotlib.dviread.DviFont
+
+classmatplotlib.dviread.DviFont(scale, tfm, texname, vf)[source]
+ 
+Bases: object Encapsulation of a font that a DVI file can refer to. This class holds a font's texname and size, supports comparison, and knows the widths of glyphs in the same units as the AFM file. There are also internal attributes (for use by dviread.py) that are not used for comparison. The size is in Adobe points (converted from TeX points).  Parameters 
+ 
+scalefloat
+
+
+Factor by which the font is scaled from its natural size.  
+tfmTfm
+
+
+TeX font metrics for this font  
+texnamebytes
+
+
+Name of the font as used internally by TeX and friends, as an ASCII bytestring. This is usually very different from any external font names; PsfontsMap can be used to find the external name of the font.  
+vfVf
+
+
+A TeX "virtual font" file, or None if this font is not virtual.    Attributes 
+ 
+texnamebytes
+
+
+sizefloat
+
+
+Size of the font in Adobe points, converted from the slightly smaller TeX points.  
+widthslist
+
+
+Widths of glyphs in glyph-space units, typically 1/1000ths of the point size.       size
+
+   texname
+
+   widths

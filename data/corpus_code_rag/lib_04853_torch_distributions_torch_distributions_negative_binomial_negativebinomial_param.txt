@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.negative_binomial.NegativeBinomial.param_shape
+
+property param_shape

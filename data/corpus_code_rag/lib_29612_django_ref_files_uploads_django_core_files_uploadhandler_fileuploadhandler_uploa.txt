@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadhandler.FileUploadHandler.upload_complete
+
+FileUploadHandler.upload_complete()  
+Callback signaling that the entire upload (all files) has completed.

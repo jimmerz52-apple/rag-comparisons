@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Grouper.join
+
+join(a, *args)[source]
+ 
+Join given arguments into the same set. Accepts one or more arguments.

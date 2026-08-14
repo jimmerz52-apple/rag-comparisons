@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPServer.channel_class
+
+channel_class  
+Override this in subclasses to use a custom SMTPChannel for managing SMTP clients.

@@ -1,0 +1,12 @@
+# pygame.ref.sprite#pygame.sprite.spritecollide
+
+pygame.sprite.spritecollide() 
+ Find sprites in a group that intersect another sprite. spritecollide(sprite, group, dokill, collided = None) -> Sprite_list  Return a list containing all Sprites in a Group that intersect with another Sprite. Intersection is determined by comparing the Sprite.rect attribute of each Sprite. The dokill argument is a bool. If set to True, all Sprites that collide will be removed from the Group. The collided argument is a callback function used to calculate if two sprites are colliding. it should take two sprites as values, and return a bool value indicating if they are colliding. If collided is not passed, all sprites must have a "rect" value, which is a rectangle of the sprite area, which will be used to calculate the collision. collided callables: collide_rect, collide_rect_ratio, collide_circle,
+collide_circle_ratio, collide_mask Example: 
+# See if the Sprite block has collided with anything in the Group block_list
+# The True flag will remove the sprite in block_list
+blocks_hit_list = pygame.sprite.spritecollide(player, block_list, True)
+
+# Check the list of colliding sprites, and add one to the score for each one
+for block in blocks_hit_list:
+    score +=1

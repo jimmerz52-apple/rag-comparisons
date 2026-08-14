@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.get_count
+
+pygame.midi.get_count() 
+ gets the number of devices. get_count() -> num_devices  Device ids range from 0 to get_count() - 1

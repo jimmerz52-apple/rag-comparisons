@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.fully_containsy
+
+fully_containsy(y)[source]
+ 
+Return whether y is in the open (y0, y1) interval.

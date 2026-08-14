@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.action_time
+
+LogEntry.action_time  
+The date and time of the action.

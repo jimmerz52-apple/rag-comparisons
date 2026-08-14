@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.get_offset
+
+get_offset()[source]
+ 
+Return scientific notation, plus offset.

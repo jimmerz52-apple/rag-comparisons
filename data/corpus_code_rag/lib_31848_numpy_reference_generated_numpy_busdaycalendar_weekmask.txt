@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.busdaycalendar.weekmask
+
+numpy.busdaycalendar.weekmask attribute   busdaycalendar.weekmask
+ 
+A copy of the seven-element boolean mask indicating valid days.

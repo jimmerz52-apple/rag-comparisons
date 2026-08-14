@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.digamma_
+
+digamma_() → Tensor  
+In-place version of digamma()

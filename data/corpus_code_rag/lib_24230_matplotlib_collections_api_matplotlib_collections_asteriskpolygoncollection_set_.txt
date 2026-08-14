@@ -1,0 +1,9 @@
+# matplotlib.collections_api#matplotlib.collections.AsteriskPolygonCollection.set_urls
+
+set_urls(urls)[source]
+ 
+ Parameters 
+ 
+urlslist of str or None
+
+   Notes URLs are currently only implemented by the SVG backend. They are ignored by all other backends.

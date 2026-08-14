@@ -1,0 +1,4 @@
+# flask.config.index#USE_X_SENDFILE
+
+USE_X_SENDFILE  
+When serving files, set the X-Sendfile header instead of serving the data with Flask. Some web servers, such as Apache, recognize this and serve the data more efficiently. This only makes sense when using such a server. Default: False

@@ -1,0 +1,4 @@
+# werkzeug.utils.index#werkzeug.utils.header_property
+
+class werkzeug.utils.header_property(name, default=None, load_func=None, dump_func=None, read_only=None, doc=None)  
+Like environ_property but for headers.

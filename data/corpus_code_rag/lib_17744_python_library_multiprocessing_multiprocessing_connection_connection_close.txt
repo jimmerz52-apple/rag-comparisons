@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.connection.Connection.close
+
+close()  
+Close the connection. This is called automatically when the connection is garbage collected.

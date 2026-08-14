@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.namereplace_errors
+
+codecs.namereplace_errors(exception)  
+Implements the 'namereplace' error handling (for encoding with text encodings only): the unencodable character is replaced by a \N{...} escape sequence.  New in version 3.5.

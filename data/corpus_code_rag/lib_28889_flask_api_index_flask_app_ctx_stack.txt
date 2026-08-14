@@ -1,0 +1,4 @@
+# flask.api.index#flask._app_ctx_stack
+
+flask._app_ctx_stack  
+The internal LocalStack that holds AppContext instances. Typically, the current_app and g proxies should be accessed instead of the stack. Extensions can access the contexts on the stack as a namespace to store data.  Changelog New in version 0.9.

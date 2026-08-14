@@ -1,0 +1,5 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolEvent
+
+classmatplotlib.backend_managers.ToolEvent(name, sender, tool, data=None)[source]
+ 
+Bases: object Event for tool manipulation (add/remove).

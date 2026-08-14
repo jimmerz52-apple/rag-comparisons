@@ -1,0 +1,23 @@
+# matplotlib.path_api#matplotlib.path.get_path_collection_extents
+
+matplotlib.path.get_path_collection_extents(master_transform, paths, transforms, offsets, offset_transform)[source]
+ 
+Given a sequence of Paths, Transforms objects, and offsets, as found in a PathCollection, returns the bounding box that encapsulates all of them.  Parameters 
+ 
+master_transformTransform
+
+
+Global transformation applied to all paths.  
+pathslist of Path
+
+
+transformslist of Affine2D
+
+
+offsets(N, 2) array-like
+
+
+offset_transformAffine2D
+
+
+Transform applied to the offsets before offsetting the path.     Notes The way that paths, transforms and offsets are combined follows the same method as for collections: Each is iterated over independently, so if you have 3 paths, 2 transforms and 1 offset, their combinations are as follows: (A, A, A), (B, B, A), (C, A, A)

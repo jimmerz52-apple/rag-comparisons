@@ -1,0 +1,4 @@
+# python.library.site#site.getsitepackages
+
+site.getsitepackages()  
+Return a list containing all global site-packages directories.  New in version 3.2.

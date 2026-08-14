@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.ErrorList.template_name_text
+
+template_name_text  
+ New in Django 4.0.  The name of the template used when calling as_text(). By default this is 'django/forms/errors/list/text.html'. This template renders the errors as a list of bullet points.

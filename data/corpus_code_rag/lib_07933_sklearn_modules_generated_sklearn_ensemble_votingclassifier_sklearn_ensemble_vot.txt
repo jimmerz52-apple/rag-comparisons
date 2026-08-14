@@ -1,0 +1,21 @@
+# sklearn.modules.generated.sklearn.ensemble.votingclassifier#sklearn.ensemble.VotingClassifier.transform
+
+transform(X) [source]
+ 
+Return class labels or probabilities for X for each estimator.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.    Returns 
+ probabilities_or_labels
+
+ 
+If voting='soft' and flatten_transform=True: 
+
+returns ndarray of shape (n_classifiers, n_samples * n_classes), being class probabilities calculated by each classifier.  
+If voting='soft' and `flatten_transform=False: 
+
+ndarray of shape (n_classifiers, n_samples, n_classes)  
+If voting='hard': 
+
+ndarray of shape (n_samples, n_classifiers), being class labels predicted by each classifier.

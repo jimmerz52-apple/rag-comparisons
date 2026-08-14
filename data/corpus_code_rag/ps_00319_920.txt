@@ -1,0 +1,7 @@
+# 920
+Task: 920
+
+# Write a function to remove all tuples with all none values in the given tuple list.
+def remove_tuple(test_list):
+  res = [sub for sub in test_list if not all(ele == None for ele in sub)]
+  return (str(res))

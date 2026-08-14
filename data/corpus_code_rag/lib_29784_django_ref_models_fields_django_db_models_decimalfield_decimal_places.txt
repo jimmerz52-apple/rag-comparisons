@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.DecimalField.decimal_places
+
+DecimalField.decimal_places  
+The number of decimal places to store with the number.

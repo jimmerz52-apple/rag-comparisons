@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.delete_confirmation_template
+
+ModelAdmin.delete_confirmation_template  
+Path to a custom template, used by delete_view() for displaying a confirmation page when deleting one or more objects.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_url
+
+matplotlib.artist.Artist.get_url   Artist.get_url()[source]
+ 
+Return the url.

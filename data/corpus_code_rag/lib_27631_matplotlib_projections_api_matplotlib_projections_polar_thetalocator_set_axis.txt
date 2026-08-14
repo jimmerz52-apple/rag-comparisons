@@ -1,0 +1,3 @@
+# matplotlib.projections_api#matplotlib.projections.polar.ThetaLocator.set_axis
+
+set_axis(axis)[source]

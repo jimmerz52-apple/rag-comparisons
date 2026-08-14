@@ -1,0 +1,149 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.anchored_artists.anchoreddirectionarrows
+
+mpl_toolkits.axes_grid1.anchored_artists.AnchoredDirectionArrows   classmpl_toolkits.axes_grid1.anchored_artists.AnchoredDirectionArrows(transform, label_x, label_y, length=0.15, fontsize=0.08, loc='upper left', angle=0, aspect_ratio=1, pad=0.4, borderpad=0.4, frameon=False, color='w', alpha=1, sep_x=0.01, sep_y=0, fontproperties=None, back_length=0.15, head_width=10, head_length=15, tail_width=2, text_props=None, arrow_props=None, **kwargs)[source]
+ 
+Bases: matplotlib.offsetbox.AnchoredOffsetbox Draw two perpendicular arrows to indicate directions.  Parameters 
+ 
+transformmatplotlib.transforms.Transform
+
+
+The transformation object for the coordinate system in use, i.e., matplotlib.axes.Axes.transAxes.  
+label_x, label_ystr
+
+
+Label text for the x and y arrows  
+lengthfloat, default: 0.15
+
+
+Length of the arrow, given in coordinates of transform.  
+fontsizefloat, default: 0.08
+
+
+Size of label strings, given in coordinates of transform.  
+locstr, default: 'upper left'
+
+
+Location of this ellipse. Valid locations are 'upper left', 'upper center', 'upper right', 'center left', 'center', 'center right', 'lower left', 'lower center, 'lower right'. For backward compatibility, numeric values are accepted as well. See the parameter loc of Legend for details.  
+anglefloat, default: 0
+
+
+The angle of the arrows in degrees.  
+aspect_ratiofloat, default: 1
+
+
+The ratio of the length of arrow_x and arrow_y. Negative numbers can be used to change the direction.  
+padfloat, default: 0.4
+
+
+Padding around the labels and arrows, in fraction of the font size.  
+borderpadfloat, default: 0.4
+
+
+Border padding, in fraction of the font size.  
+frameonbool, default: False
+
+
+If True, draw a box around the arrows and labels.  
+colorstr, default: 'white'
+
+
+Color for the arrows and labels.  
+alphafloat, default: 1
+
+
+Alpha values of the arrows and labels  
+sep_x, sep_yfloat, default: 0.01 and 0 respectively
+
+
+Separation between the arrows and labels in coordinates of transform.  
+fontpropertiesmatplotlib.font_manager.FontProperties, optional
+
+
+Font properties for the label text.  
+back_lengthfloat, default: 0.15
+
+
+Fraction of the arrow behind the arrow crossing.  
+head_widthfloat, default: 10
+
+
+Width of arrow head, sent to ArrowStyle.  
+head_lengthfloat, default: 15
+
+
+Length of arrow head, sent to ArrowStyle.  
+tail_widthfloat, default: 2
+
+
+Width of arrow tail, sent to ArrowStyle.  
+text_props, arrow_propsdict
+
+
+Properties of the text and arrows, passed to textpath.TextPath and patches.FancyArrowPatch.  **kwargs
+
+Keyword arguments forwarded to AnchoredOffsetbox.     Notes If prop is passed as a keyword argument, but fontproperties is not, then prop is be assumed to be the intended fontproperties. Using both prop and fontproperties is not supported. Examples >>> import matplotlib.pyplot as plt
+>>> import numpy as np
+>>> from mpl_toolkits.axes_grid1.anchored_artists import (
+...     AnchoredDirectionArrows)
+>>> fig, ax = plt.subplots()
+>>> ax.imshow(np.random.random((10, 10)))
+>>> arrows = AnchoredDirectionArrows(ax.transAxes, '111', '110')
+>>> ax.add_artist(arrows)
+>>> fig.show()
+ Using several of the optional parameters, creating downward pointing arrow and high contrast text labels. >>> import matplotlib.font_manager as fm
+>>> fontprops = fm.FontProperties(family='monospace')
+>>> arrows = AnchoredDirectionArrows(ax.transAxes, 'East', 'South',
+...                                  loc='lower left', color='k',
+...                                  aspect_ratio=-1, sep_x=0.02,
+...                                  sep_y=-0.01,
+...                                  text_props={'ec':'w', 'fc':'k'},
+...                                  fontproperties=fontprops)
+  Attributes 
+ 
+arrow_x, arrow_ymatplotlib.patches.FancyArrowPatch
+
+
+Arrow x and y  
+text_path_x, text_path_ymatplotlib.textpath.TextPath
+
+
+Path for arrow labels  
+p_x, p_ymatplotlib.patches.PathPatch
+
+
+Patch for arrow labels  
+boxmatplotlib.offsetbox.AuxTransformBox
+
+
+Container for the arrows and labels.       set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, bbox_to_anchor=<UNSET>, child=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, height=<UNSET>, in_layout=<UNSET>, label=<UNSET>, offset=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+bbox_to_anchor unknown  
+child unknown  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure Figure  
+gid str  
+height float  
+in_layout bool  
+label object  
+offset (float, float) or callable  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+zorder float   
+ 
+  Examples using mpl_toolkits.axes_grid1.anchored_artists.AnchoredDirectionArrows
+ 
+   Anchored Direction Arrow

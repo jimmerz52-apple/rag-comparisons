@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogitFormatter.set_locs
+
+set_locs(locs)[source]
+ 
+Set the locations of the ticks. This method is called before computing the tick labels because some formatters need to know all tick locations to do so.

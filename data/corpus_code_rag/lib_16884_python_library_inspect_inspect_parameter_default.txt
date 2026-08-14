@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.Parameter.default
+
+default  
+The default value for the parameter. If the parameter has no default value, this attribute is set to Parameter.empty.

@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.raise_exception
+
+raise_exception  
+If this attribute is set to True, a PermissionDenied exception is raised when the conditions are not met. When False (the default), anonymous users are redirected to the login page.

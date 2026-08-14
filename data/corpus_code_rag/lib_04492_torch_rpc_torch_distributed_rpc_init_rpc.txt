@@ -1,0 +1,11 @@
+# torch.rpc#torch.distributed.rpc.init_rpc
+
+torch.distributed.rpc.init_rpc(name, backend=None, rank=-1, world_size=None, rpc_backend_options=None) [source]
+ 
+Initializes RPC primitives such as the local RPC agent and distributed autograd, which immediately makes the current process ready to send and receive RPCs.  Parameters 
+ 
+name (str) – a globally unique name of this node. (e.g., Trainer3, ParameterServer2, Master, Worker1) Name can only contain number, alphabet, underscore, colon, and/or dash, and must be shorter than 128 characters. 
+backend (BackendType, optional) – The type of RPC backend implementation. Supported values include BackendType.TENSORPIPE (the default) and BackendType.PROCESS_GROUP. See Backends for more information. 
+rank (int) – a globally unique id/rank of this node. 
+world_size (int) – The number of workers in the group. 
+rpc_backend_options (RpcBackendOptions, optional) – The options passed to the RpcAgent constructor. It must be an agent-specific subclass of RpcBackendOptions and contains agent-specific initialization configurations. By default, for all agents, it sets the default timeout to 60 seconds and performs the rendezvous with an underlying process group initialized using init_method = "env://", meaning that environment variables MASTER_ADDR and MASTER_PORT need to be set properly. See Backends for more information and find which options are available.

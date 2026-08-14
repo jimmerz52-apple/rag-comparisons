@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.set_frameon
+
+set_frameon(b)[source]
+ 
+Set the figure's background patch visibility, i.e. whether the figure background will be drawn. Equivalent to Figure.patch.set_visible().  Parameters 
+ 
+bbool

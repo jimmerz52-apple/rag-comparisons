@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.TimeoutError
+
+exception multiprocessing.TimeoutError  
+Raised by methods with a timeout when the timeout expires.

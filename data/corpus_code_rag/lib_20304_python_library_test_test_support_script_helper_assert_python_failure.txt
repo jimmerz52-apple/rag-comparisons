@@ -1,0 +1,5 @@
+# python.library.test#test.support.script_helper.assert_python_failure
+
+test.support.script_helper.assert_python_failure(*args, **env_vars)  
+Assert that running the interpreter with args and optional environment variables env_vars fails (rc != 0) and return a (return code,
+stdout, stderr) tuple. See assert_python_ok() for more options.  Changed in version 3.9: The function no longer strips whitespaces from stderr.

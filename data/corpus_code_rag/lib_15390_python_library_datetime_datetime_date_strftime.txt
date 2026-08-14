@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.date.strftime
+
+date.strftime(format)  
+Return a string representing the date, controlled by an explicit format string. Format codes referring to hours, minutes or seconds will see 0 values. For a complete list of formatting directives, see strftime() and strptime() Behavior.

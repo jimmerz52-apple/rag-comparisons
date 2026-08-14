@@ -1,0 +1,10 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet
+
+class QuerySet(model=None, query=None, using=None, hints=None)  
+Usually when you’ll interact with a QuerySet you’ll use it by chaining filters. To make this work, most QuerySet methods return new querysets. These methods are covered in detail later in this section. The QuerySet class has two public attributes you can use for introspection:  
+ordered  
+True if the QuerySet is ordered — i.e. has an order_by() clause or a default ordering on the model. False otherwise. 
+  
+db  
+The database that will be used if this query is executed now. 
+  Note The query parameter to QuerySet exists so that specialized query subclasses can reconstruct internal query state. The value of the parameter is an opaque representation of that query state and is not part of a public API.

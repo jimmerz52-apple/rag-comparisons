@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.cpu_baseline_names
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.cpu_baseline_names method   distutils.ccompiler_opt.CCompilerOpt.cpu_baseline_names()[source]
+ 
+return a list of final CPU baseline feature names

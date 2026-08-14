@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.SMTPUTF8
+
+email.policy.SMTPUTF8  
+The same as SMTP except that utf8 is True. Useful for serializing messages to a message store without using encoded words in the headers. Should only be used for SMTP transmission if the sender or recipient addresses have non-ASCII characters (the smtplib.SMTP.send_message() method handles this automatically).

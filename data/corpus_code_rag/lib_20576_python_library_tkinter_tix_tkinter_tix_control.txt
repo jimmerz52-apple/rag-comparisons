@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.Control
+
+class tkinter.tix.Control  
+The Control widget is also known as the SpinBox widget. The user can adjust the value by pressing the two arrow buttons or by entering the value directly into the entry. The new value will be checked against the user-defined upper and lower limits.

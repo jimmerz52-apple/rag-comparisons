@@ -1,0 +1,16 @@
+# pandas.reference.api.pandas.series.str.ljust
+
+pandas.Series.str.ljust   Series.str.ljust(width, fillchar=' ')[source]
+ 
+Pad right side of strings in the Series/Index. Equivalent to str.ljust().  Parameters 
+ 
+width:int
+
+
+Minimum width of resulting string; additional characters will be filled with fillchar.  
+fillchar:str
+
+
+Additional character for filling, default is whitespace.    Returns 
+ 
+filled:Series/Index of objects.

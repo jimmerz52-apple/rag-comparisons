@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.open
+
+open(name, mode='rb')  
+Opens the file given by name. Note that although the returned file is guaranteed to be a File object, it might actually be some subclass. In the case of remote file storage this means that reading/writing could be quite slow, so be warned.

@@ -1,0 +1,12 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.axesx
+
+mpl_toolkits.axes_grid1.axes_size.AxesX   classmpl_toolkits.axes_grid1.axes_size.AxesX(axes, aspect=1.0, ref_ax=None)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base Scaled size whose relative part corresponds to the data width of the axes multiplied by the aspect.   get_size(renderer)[source]
+
+ 
+  Examples using mpl_toolkits.axes_grid1.axes_size.AxesX
+ 
+   HBoxDivider demo   
+
+   Simple Axes Divider 3

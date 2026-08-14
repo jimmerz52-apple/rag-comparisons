@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.label
+
+Options.label  
+Representation of the object, returns app_label.object_name, e.g. 'polls.Question'.

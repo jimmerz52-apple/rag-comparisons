@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.poly3dcollection#mpl_toolkits.mplot3d.art3d.Poly3DCollection.set_verts
+
+set_verts(verts, closed=True)[source]
+ 
+Set 3D vertices.

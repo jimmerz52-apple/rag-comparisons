@@ -1,0 +1,7 @@
+# python.library.socket#socket.SIO_RCVALL
+
+socket.SIO_RCVALL  
+socket.SIO_KEEPALIVE_VALS  
+socket.SIO_LOOPBACK_FAST_PATH  
+RCVALL_*  
+Constants for Windows’ WSAIoctl(). The constants are used as arguments to the ioctl() method of socket objects.  Changed in version 3.6: SIO_LOOPBACK_FAST_PATH was added.

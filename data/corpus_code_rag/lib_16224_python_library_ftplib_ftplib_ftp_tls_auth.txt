@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP_TLS.auth
+
+FTP_TLS.auth()  
+Set up a secure control connection by using TLS or SSL, depending on what is specified in the ssl_version attribute.  Changed in version 3.4: The method now supports hostname check with ssl.SSLContext.check_hostname and Server Name Indication (see ssl.HAS_SNI).

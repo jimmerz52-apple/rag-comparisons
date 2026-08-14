@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.url_prefix
+
+url_prefix  
+The prefix that should be used for all URLs defined on the blueprint.

@@ -1,0 +1,18 @@
+# matplotlib._as_gen.matplotlib.patches.arrowstyle#matplotlib.patches.ArrowStyle.BracketCurve
+
+classBracketCurve(widthA=1.0, lengthA=0.2, angleA=None)[source]
+ 
+Bases: matplotlib.patches.ArrowStyle._Curve An arrow with an outward square bracket at its start and a head at the end.  Parameters 
+ 
+widthAfloat, default: 1.0
+
+
+Width of the bracket.  
+lengthAfloat, default: 0.2
+
+
+Length of the bracket.  
+angleAfloat, default: 0 degrees
+
+
+Orientation of the bracket, as a counterclockwise angle. 0 degrees means perpendicular to the line.       arrow=']->'

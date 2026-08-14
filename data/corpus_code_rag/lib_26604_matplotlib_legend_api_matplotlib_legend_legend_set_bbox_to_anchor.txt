@@ -1,0 +1,15 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.set_bbox_to_anchor
+
+set_bbox_to_anchor(bbox, transform=None)[source]
+ 
+Set the bbox that the legend will be anchored to.  Parameters 
+ 
+bboxBboxBase or tuple
+
+
+The bounding box can be specified in the following ways:  A BboxBase instance A tuple of (left, bottom, width, height) in the given transform (normalized axes coordinate if None) A tuple of (left, bottom) where the width and height will be assumed to be zero. 
+None, to remove the bbox anchoring, and use the parent bbox.   
+transformTransform, optional
+
+
+A transform to apply to the bounding box. If not specified, this will use a transform to the bounding box of the parent.

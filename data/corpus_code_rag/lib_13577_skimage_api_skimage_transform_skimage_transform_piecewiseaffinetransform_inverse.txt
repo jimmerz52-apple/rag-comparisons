@@ -1,0 +1,13 @@
+# skimage.api.skimage.transform#skimage.transform.PiecewiseAffineTransform.inverse
+
+inverse(coords) [source]
+ 
+Apply inverse transformation. Coordinates outside of the mesh will be set to - 1.  Parameters 
+ 
+coords(N, 2) array 
+
+Source coordinates.    Returns 
+ 
+coords(N, 2) array 
+
+Transformed coordinates.

@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.RemoveConstraint
+
+class RemoveConstraint(model_name, name)

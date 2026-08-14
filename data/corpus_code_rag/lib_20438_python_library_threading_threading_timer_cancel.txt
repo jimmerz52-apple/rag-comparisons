@@ -1,0 +1,4 @@
+# python.library.threading#threading.Timer.cancel
+
+cancel()  
+Stop the timer, and cancel the execution of the timer’s action. This will only work if the timer is still in its waiting stage.

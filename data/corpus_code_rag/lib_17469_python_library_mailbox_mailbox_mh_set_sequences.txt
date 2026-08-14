@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.set_sequences
+
+set_sequences(sequences)  
+Re-define the sequences that exist in the mailbox based upon sequences, a dictionary of names mapped to key lists, like returned by get_sequences().

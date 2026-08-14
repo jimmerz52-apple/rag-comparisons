@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.num_coords
+
+GEOSGeometry.num_coords  
+Returns the number of coordinates in the geometry.

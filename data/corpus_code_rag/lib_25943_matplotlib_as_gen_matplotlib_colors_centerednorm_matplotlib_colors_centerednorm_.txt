@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.centerednorm#matplotlib.colors.CenteredNorm.autoscale_None
+
+autoscale_None(A)[source]
+ 
+Set vmin and vmax.

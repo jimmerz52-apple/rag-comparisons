@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.exponential.Exponential.log_prob
+
+log_prob(value) [source]

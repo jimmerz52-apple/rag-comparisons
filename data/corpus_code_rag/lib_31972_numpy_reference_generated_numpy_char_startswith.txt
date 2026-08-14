@@ -1,0 +1,21 @@
+# numpy.reference.generated.numpy.char.startswith
+
+numpy.char.startswith   char.startswith(a, prefix, start=0, end=None)[source]
+ 
+Returns a boolean array which is True where the string element in a starts with prefix, otherwise False. Calls str.startswith element-wise.  Parameters 
+ 
+aarray_like of str or unicode
+
+
+prefixstr
+
+
+start, endint, optional
+
+
+With optional start, test beginning at that position. With optional end, stop comparing at that position.    Returns 
+ 
+outndarray
+
+
+Array of booleans      See also  str.startswith

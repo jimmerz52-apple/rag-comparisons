@@ -1,0 +1,4 @@
+# python.library.stdtypes#str.count
+
+str.count(sub[, start[, end]])  
+Return the number of non-overlapping occurrences of substring sub in the range [start, end]. Optional arguments start and end are interpreted as in slice notation.

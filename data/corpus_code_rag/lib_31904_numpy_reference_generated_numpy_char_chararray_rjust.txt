@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.rjust
+
+numpy.char.chararray.rjust method   char.chararray.rjust(width, fillchar=' ')[source]
+ 
+Return an array with the elements of self right-justified in a string of length width.  See also  char.rjust

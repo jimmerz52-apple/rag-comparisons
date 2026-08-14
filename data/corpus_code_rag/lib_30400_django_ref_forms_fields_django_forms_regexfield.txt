@@ -1,0 +1,11 @@
+# django.ref.forms.fields#django.forms.RegexField
+
+class RegexField(**kwargs)  
+ Default widget: TextInput
+ Empty value: Whatever you’ve given as empty_value. Normalizes to: A string. Uses RegexValidator to validate that the given value matches a certain regular expression. Error message keys: required, invalid
+  Takes one required argument:  
+regex  
+A regular expression specified either as a string or a compiled regular expression object. 
+ Also takes max_length, min_length, strip, and empty_value which work just as they do for CharField.  
+strip  
+Defaults to False. If enabled, stripping will be applied before the regex validation.

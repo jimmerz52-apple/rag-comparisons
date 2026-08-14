@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.argsort
+
+numpy.record.argsort method   record.argsort()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.argsort.

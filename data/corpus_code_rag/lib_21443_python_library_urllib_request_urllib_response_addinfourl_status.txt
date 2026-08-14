@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.response.addinfourl.status
+
+status  
+ New in version 3.9.  Status code returned by server.

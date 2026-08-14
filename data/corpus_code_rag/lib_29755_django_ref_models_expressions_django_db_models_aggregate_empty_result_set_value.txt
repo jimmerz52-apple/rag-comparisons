@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Aggregate.empty_result_set_value
+
+empty_result_set_value  
+ New in Django 4.0.  Override empty_result_set_value to None since most aggregate functions result in NULL when applied to an empty result set.

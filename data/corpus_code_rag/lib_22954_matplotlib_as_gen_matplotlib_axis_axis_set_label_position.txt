@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_label_position
+
+matplotlib.axis.Axis.set_label_position   Axis.set_label_position(position)[source]
+ 
+Set the label position (top or bottom)  Parameters 
+ 
+position{'top', 'bottom'}
+
+   
+  Examples using matplotlib.axis.Axis.set_label_position
+ 
+   Title positioning

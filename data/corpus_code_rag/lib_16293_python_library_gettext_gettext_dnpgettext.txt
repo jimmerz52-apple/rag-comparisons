@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.dnpgettext
+
+gettext.dnpgettext(domain, context, singular, plural, n)  
+Similar to the corresponding functions without the p in the prefix (that is, gettext(), dgettext(), ngettext(), dngettext()), but the translation is restricted to the given message context.  New in version 3.8.

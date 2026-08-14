@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.add_tables
+
+msilib.add_tables(database, module)  
+Add all table content from module to database. module must contain an attribute tables listing all tables for which content should be added, and one attribute per table that has the actual content. This is typically used to install the sequence tables.

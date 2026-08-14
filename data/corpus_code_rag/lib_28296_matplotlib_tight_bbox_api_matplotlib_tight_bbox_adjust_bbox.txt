@@ -1,0 +1,5 @@
+# matplotlib.tight_bbox_api#matplotlib.tight_bbox.adjust_bbox
+
+matplotlib.tight_bbox.adjust_bbox(fig, bbox_inches, fixed_dpi=None)[source]
+ 
+Temporarily adjust the figure so that only the specified area (bbox_inches) is saved. It modifies fig.bbox, fig.bbox_inches, fig.transFigure._boxout, and fig.patch. While the figure size changes, the scale of the original figure is conserved. A function which restores the original values are returned.

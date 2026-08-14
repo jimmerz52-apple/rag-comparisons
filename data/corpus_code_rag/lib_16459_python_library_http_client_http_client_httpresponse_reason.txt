@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.reason
+
+HTTPResponse.reason  
+Reason phrase returned by server.

@@ -1,0 +1,228 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch
+
+matplotlib.patches.FancyBboxPatch   classmatplotlib.patches.FancyBboxPatch(xy, width, height, boxstyle='round', bbox_transmuter=<deprecated parameter>, mutation_scale=1, mutation_aspect=1, **kwargs)[source]
+ 
+Bases: matplotlib.patches.Patch A fancy box around a rectangle with lower left at xy = (x, y) with specified width and height. FancyBboxPatch is similar to Rectangle, but it draws a fancy box around the rectangle. The transformation of the rectangle box to the fancy box is delegated to the style classes defined in BoxStyle.  Parameters 
+ 
+xyfloat, float
+
+
+The lower left corner of the box.  
+widthfloat
+
+
+The width of the box.  
+heightfloat
+
+
+The height of the box.  
+boxstylestr or matplotlib.patches.BoxStyle
+
+
+The style of the fancy box. This can either be a BoxStyle instance or a string of the style name and optionally comma seprarated attributes (e.g. "Round, pad=0.2"). This string is passed to BoxStyle to construct a BoxStyle object. See there for a full documentation. The following box styles are available:   
+Class Name Attrs   
+Square square pad=0.3  
+Circle circle pad=0.3  
+LArrow larrow pad=0.3  
+RArrow rarrow pad=0.3  
+DArrow darrow pad=0.3  
+Round round pad=0.3, rounding_size=None  
+Round4 round4 pad=0.3, rounding_size=None  
+Sawtooth sawtooth pad=0.3, tooth_size=None  
+Roundtooth roundtooth pad=0.3, tooth_size=None    
+mutation_scalefloat, default: 1
+
+
+Scaling factor applied to the attributes of the box style (e.g. pad or rounding_size).  
+mutation_aspectfloat, default: 1
+
+
+The height of the rectangle will be squeezed by this value before the mutation and the mutated box will be stretched by the inverse of it. For example, this allows different horizontal and vertical padding.    Other Parameters 
+ 
+**kwargsPatch properties
+
+
+  
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float         get_bbox()[source]
+ 
+Return the Bbox. 
+   get_boxstyle()[source]
+ 
+Return the boxstyle object. 
+   get_height()[source]
+ 
+Return the height of the rectangle. 
+   get_mutation_aspect()[source]
+ 
+Return the aspect ratio of the bbox mutation. 
+   get_mutation_scale()[source]
+ 
+Return the mutation scale. 
+   get_path()[source]
+ 
+Return the mutated path of the rectangle. 
+   get_width()[source]
+ 
+Return the width of the rectangle. 
+   get_x()[source]
+ 
+Return the left coord of the rectangle. 
+   get_y()[source]
+ 
+Return the bottom coord of the rectangle. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, bounds=<UNSET>, boxstyle=<UNSET>, capstyle=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, height=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, mutation_aspect=<UNSET>, mutation_scale=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, width=<UNSET>, x=<UNSET>, y=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool or None  
+bounds unknown  
+boxstyle [ 'square' | 'circle' | 'larrow' | 'rarrow' | 'darrow' | 'round' | 'round4' | 'sawtooth' | 'roundtooth' ]  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+height float  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+mutation_aspect float  
+mutation_scale float  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+width float  
+x float  
+y float  
+zorder float   
+   set_bounds(*args)[source]
+ 
+Set the bounds of the rectangle. Call signatures: set_bounds(left, bottom, width, height)
+set_bounds((left, bottom, width, height))
+  Parameters 
+ 
+left, bottomfloat
+
+
+The coordinates of the bottom left corner of the rectangle.  
+width, heightfloat
+
+
+The width/height of the rectangle.     
+   set_boxstyle(boxstyle=None, **kwargs)[source]
+ 
+Set the box style. Most box styles can be further configured using attributes. Attributes from the previous box style are not reused. Without argument (or with boxstyle=None), the available box styles are returned as a human-readable string.  Parameters 
+ 
+boxstylestr or matplotlib.patches.BoxStyle
+
+
+The style of the fancy box. This can either be a BoxStyle instance or a string of the style name and optionally comma seprarated attributes (e.g. "Round, pad=0.2"). This string is passed to BoxStyle to construct a BoxStyle object. See there for a full documentation. The following box styles are available:   
+Class Name Attrs   
+Square square pad=0.3  
+Circle circle pad=0.3  
+LArrow larrow pad=0.3  
+RArrow rarrow pad=0.3  
+DArrow darrow pad=0.3  
+Round round pad=0.3, rounding_size=None  
+Round4 round4 pad=0.3, rounding_size=None  
+Sawtooth sawtooth pad=0.3, tooth_size=None  
+Roundtooth roundtooth pad=0.3, tooth_size=None    **kwargs
+
+Additional attributes for the box style. See the table above for supported parameters.     Examples set_boxstyle("round,pad=0.2")
+set_boxstyle("round", pad=0.2)
+ 
+   set_height(h)[source]
+ 
+Set the rectangle height.  Parameters 
+ 
+hfloat
+
+   
+   set_mutation_aspect(aspect)[source]
+ 
+Set the aspect ratio of the bbox mutation.  Parameters 
+ 
+aspectfloat
+
+   
+   set_mutation_scale(scale)[source]
+ 
+Set the mutation scale.  Parameters 
+ 
+scalefloat
+
+   
+   set_width(w)[source]
+ 
+Set the rectangle width.  Parameters 
+ 
+wfloat
+
+   
+   set_x(x)[source]
+ 
+Set the left coord of the rectangle.  Parameters 
+ 
+xfloat
+
+   
+   set_y(y)[source]
+ 
+Set the bottom coord of the rectangle.  Parameters 
+ 
+yfloat
+
+   
+ 
+  Examples using matplotlib.patches.FancyBboxPatch
+ 
+   Reference for Matplotlib artists   
+
+   Drawing fancy boxes   
+
+   Annotate Text Arrow

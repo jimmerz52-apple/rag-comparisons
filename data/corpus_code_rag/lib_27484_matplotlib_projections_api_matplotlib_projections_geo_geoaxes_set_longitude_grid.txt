@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.set_longitude_grid
+
+set_longitude_grid(degrees)[source]
+ 
+Set the number of degrees between each longitude grid.

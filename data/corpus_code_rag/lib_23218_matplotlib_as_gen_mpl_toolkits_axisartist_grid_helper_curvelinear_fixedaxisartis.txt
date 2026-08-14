@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_helper_curvelinear.fixedaxisartisthelper#mpl_toolkits.axisartist.grid_helper_curvelinear.FixedAxisArtistHelper.get_tick_iterators
+
+get_tick_iterators(axes)[source]
+ 
+tick_loc, tick_angle, tick_label

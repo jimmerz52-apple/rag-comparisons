@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.handle_request
+
+handle_request()  
+Process a single request. This function calls the following methods in order: get_request(), verify_request(), and process_request(). If the user-provided handle() method of the handler class raises an exception, the server’s handle_error() method will be called. If no request is received within timeout seconds, handle_timeout() will be called and handle_request() will return.

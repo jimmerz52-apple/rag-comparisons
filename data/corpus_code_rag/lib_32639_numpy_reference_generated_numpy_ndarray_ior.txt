@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__ior__
+
+numpy.ndarray.__ior__ method   ndarray.__ior__(value, /)
+ 
+Return self|=value.

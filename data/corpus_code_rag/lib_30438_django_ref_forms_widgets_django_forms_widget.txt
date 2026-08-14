@@ -1,0 +1,47 @@
+# django.ref.forms.widgets#django.forms.Widget
+
+class Widget(attrs=None)  
+This abstract class cannot be rendered, but provides the basic attribute attrs. You may also implement or override the render() method on custom widgets.  
+attrs  
+A dictionary containing HTML attributes to be set on the rendered widget. >>> from django import forms
+>>> name = forms.TextInput(attrs={'size': 10, 'title': 'Your name'})
+>>> name.render('name', 'A name')
+'<input title="Your name" type="text" name="name" value="A name" size="10">'
+ If you assign a value of True or False to an attribute, it will be rendered as an HTML5 boolean attribute: >>> name = forms.TextInput(attrs={'required': True})
+>>> name.render('name', 'A name')
+'<input name="name" type="text" value="A name" required>'
+>>>
+>>> name = forms.TextInput(attrs={'required': False})
+>>> name.render('name', 'A name')
+'<input name="name" type="text" value="A name">'
+ 
+  
+supports_microseconds  
+An attribute that defaults to True. If set to False, the microseconds part of datetime and time values will be set to 0. 
+  
+format_value(value)  
+Cleans and returns a value for use in the widget template. value isn’t guaranteed to be valid input, therefore subclass implementations should program defensively. 
+  
+get_context(name, value, attrs)  
+Returns a dictionary of values to use when rendering the widget template. By default, the dictionary contains a single key, 'widget', which is a dictionary representation of the widget containing the following keys:  
+'name': The name of the field from the name argument. 
+'is_hidden': A boolean indicating whether or not this widget is hidden. 
+'required': A boolean indicating whether or not the field for this widget is required. 
+'value': The value as returned by format_value(). 
+'attrs': HTML attributes to be set on the rendered widget. The combination of the attrs attribute and the attrs argument. 
+'template_name': The value of self.template_name.  Widget subclasses can provide custom context values by overriding this method. 
+  
+id_for_label(id_)  
+Returns the HTML ID attribute of this widget for use by a <label>, given the ID of the field. Returns None if an ID isn’t available. This hook is necessary because some widgets have multiple HTML elements and, thus, multiple IDs. In that case, this method should return an ID value that corresponds to the first ID in the widget’s tags. 
+  
+render(name, value, attrs=None, renderer=None)  
+Renders a widget to HTML using the given renderer. If renderer is None, the renderer from the FORM_RENDERER setting is used. 
+  
+value_from_datadict(data, files, name)  
+Given a dictionary of data and this widget’s name, returns the value of this widget. files may contain data coming from request.FILES. Returns None if a value wasn’t provided. Note also that value_from_datadict may be called more than once during handling of form data, so if you customize it and add expensive processing, you should implement some caching mechanism yourself. 
+  
+value_omitted_from_data(data, files, name)  
+Given data and files dictionaries and this widget’s name, returns whether or not there’s data or files for the widget. The method’s result affects whether or not a field in a model form falls back to its default. Special cases are CheckboxInput, CheckboxSelectMultiple, and SelectMultiple, which always return False because an unchecked checkbox and unselected <select multiple> don’t appear in the data of an HTML form submission, so it’s unknown whether or not the user submitted a value. 
+  
+use_required_attribute(initial)  
+Given a form field’s initial value, returns whether or not the widget can be rendered with the required HTML attribute. Forms use this method along with Field.required and Form.use_required_attribute to determine whether or not to display the required attribute for each field. By default, returns False for hidden widgets and True otherwise. Special cases are FileInput and ClearableFileInput, which return False when initial is set, and CheckboxSelectMultiple, which always returns False because browser validation would require all checkboxes to be checked instead of at least one. Override this method in custom widgets that aren’t compatible with browser validation. For example, a WSYSIWG text editor widget backed by a hidden textarea element may want to always return False to avoid browser validation on the hidden field.

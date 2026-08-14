@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.get_position
+
+get_position()[source]
+ 
+Return the spine position.

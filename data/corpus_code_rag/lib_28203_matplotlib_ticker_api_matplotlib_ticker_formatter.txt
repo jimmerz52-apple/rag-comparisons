@@ -1,0 +1,23 @@
+# matplotlib.ticker_api#matplotlib.ticker.Formatter
+
+classmatplotlib.ticker.Formatter[source]
+ 
+Bases: matplotlib.ticker.TickHelper Create a string based on a tick value and location.   staticfix_minus(s)[source]
+ 
+Some classes may want to replace a hyphen for minus with the proper unicode symbol (U+2212) for typographical correctness. This is a helper method to perform such a replacement when it is enabled via rcParams["axes.unicode_minus"] (default: True). 
+   format_data(value)[source]
+ 
+Return the full string representation of the value with the position unspecified. 
+   format_data_short(value)[source]
+ 
+Return a short string version of the tick value. Defaults to the position-independent long value. 
+   format_ticks(values)[source]
+ 
+Return the tick labels for all the ticks at once. 
+   get_offset()[source]
+
+   locs=[]
+
+   set_locs(locs)[source]
+ 
+Set the locations of the ticks. This method is called before computing the tick labels because some formatters need to know all tick locations to do so.

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.replaceChild
+
+Node.replaceChild(newChild, oldChild)  
+Replace an existing node with a new node. It must be the case that oldChild is a child of this node; if not, ValueError is raised.

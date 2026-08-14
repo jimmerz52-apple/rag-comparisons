@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_autoscale_on
+
+set_autoscale_on(b)[source]
+ 
+Set whether autoscaling is applied to each axis on the next draw or call to Axes.autoscale_view.  Parameters 
+ 
+bbool

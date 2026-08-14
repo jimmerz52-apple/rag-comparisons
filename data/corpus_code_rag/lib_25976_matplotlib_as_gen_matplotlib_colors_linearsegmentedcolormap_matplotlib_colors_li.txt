@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.linearsegmentedcolormap#matplotlib.colors.LinearSegmentedColormap.set_gamma
+
+set_gamma(gamma)[source]
+ 
+Set a new gamma value and regenerate colormap.

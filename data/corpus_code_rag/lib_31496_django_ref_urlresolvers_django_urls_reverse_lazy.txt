@@ -1,0 +1,3 @@
+# django.ref.urlresolvers#django.urls.reverse_lazy
+
+reverse_lazy(viewname, urlconf=None, args=None, kwargs=None, current_app=None)

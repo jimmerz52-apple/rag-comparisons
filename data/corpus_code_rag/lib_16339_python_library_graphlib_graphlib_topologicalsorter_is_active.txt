@@ -1,0 +1,8 @@
+# python.library.graphlib#graphlib.TopologicalSorter.is_active
+
+is_active()  
+Returns True if more progress can be made and False otherwise. Progress can be made if cycles do not block the resolution and either there are still nodes ready that haven’t yet been returned by TopologicalSorter.get_ready() or the number of nodes marked TopologicalSorter.done() is less than the number that have been returned by TopologicalSorter.get_ready(). The __bool__() method of this class defers to this function, so instead of: if ts.is_active():
+    ...
+ it is possible to simply do: if ts:
+    ...
+ Raises ValueError if called without calling prepare() previously.

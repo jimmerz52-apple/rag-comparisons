@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.getDTDHandler
+
+XMLReader.getDTDHandler()  
+Return the current DTDHandler.

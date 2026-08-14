@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.strict_errors
+
+codecs.strict_errors(exception)  
+Implements the 'strict' error handling: each encoding or decoding error raises a UnicodeError.

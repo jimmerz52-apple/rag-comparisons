@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.bernoullirbm#sklearn.neural_network.BernoulliRBM.score_samples
+
+score_samples(X) [source]
+ 
+Compute the pseudo-likelihood of X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Values of the visible layer. Must be all-boolean (not checked).    Returns 
+ 
+pseudo_likelihoodndarray of shape (n_samples,) 
+
+Value of the pseudo-likelihood (proxy for likelihood).     Notes This method is not deterministic: it computes a quantity called the free energy on X, then on a randomly corrupted version of X, and returns the log of the logistic function of the difference.

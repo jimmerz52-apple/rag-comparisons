@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.is_staff
+
+is_staff  
+Boolean. Designates whether this user can access the admin site.

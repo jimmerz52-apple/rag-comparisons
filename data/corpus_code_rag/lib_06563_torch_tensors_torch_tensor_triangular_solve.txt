@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.triangular_solve
+
+triangular_solve(A, upper=True, transpose=False, unitriangular=False) -> (Tensor, Tensor)  
+See torch.triangular_solve()

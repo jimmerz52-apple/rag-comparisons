@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_markeredgecolor
+
+get_markeredgecolor()[source]
+ 
+Return the marker edge color. See also set_markeredgecolor.

@@ -1,0 +1,15 @@
+# pandas.reference.api.pandas.errors.duplicatelabelerror
+
+pandas.errors.DuplicateLabelError   exceptionpandas.errors.DuplicateLabelError[source]
+ 
+Error raised when an operation would introduce duplicate labels.  New in version 1.2.0.  Examples 
+>>> s = pd.Series([0, 1, 2], index=['a', 'b', 'c']).set_flags(
+...     allows_duplicate_labels=False
+... )
+>>> s.reindex(['a', 'a', 'b'])
+Traceback (most recent call last):
+   ...
+DuplicateLabelError: Index has duplicates.
+      positions
+label
+a        [0, 1]

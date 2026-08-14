@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_clip_box
+
+matplotlib.artist.Artist.get_clip_box   Artist.get_clip_box()[source]
+ 
+Return the clipbox.

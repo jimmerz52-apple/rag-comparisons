@@ -1,0 +1,4 @@
+# python.library.time#time.thread_time_ns
+
+time.thread_time_ns() → int  
+Similar to thread_time() but return time as nanoseconds.  New in version 3.7.

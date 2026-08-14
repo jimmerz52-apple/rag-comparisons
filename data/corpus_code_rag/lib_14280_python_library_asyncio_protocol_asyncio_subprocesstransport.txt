@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport
+
+class asyncio.SubprocessTransport(BaseTransport)  
+An abstraction to represent a connection between a parent and its child OS process. Instances of the SubprocessTransport class are returned from event loop methods loop.subprocess_shell() and loop.subprocess_exec().

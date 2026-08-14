@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.peek
+
+pygame.event.peek() 
+ test if event types are waiting on the queue peek(eventtype=None) -> bool peek(eventtype=None, pump=True) -> bool  Returns True if there are any events of the given type waiting on the queue. If a sequence of event types is passed, this will return True if any of those events are on the queue. If pump is True (the default), then pygame.event.pump() will be called.  Changed in pygame 1.9.5: Added pump argument

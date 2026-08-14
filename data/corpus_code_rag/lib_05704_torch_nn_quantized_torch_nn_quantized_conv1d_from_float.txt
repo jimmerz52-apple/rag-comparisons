@@ -1,0 +1,6 @@
+# torch.nn.quantized#torch.nn.quantized.Conv1d.from_float
+
+classmethod from_float(mod) [source]
+ 
+Creates a quantized module from a float module or qparams_dict.  Parameters 
+mod (Module) – a float module, either produced by torch.quantization utilities or provided by the user

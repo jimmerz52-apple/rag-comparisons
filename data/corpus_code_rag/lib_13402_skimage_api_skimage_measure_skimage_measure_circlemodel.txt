@@ -1,0 +1,64 @@
+# skimage.api.skimage.measure#skimage.measure.CircleModel
+
+class skimage.measure.CircleModel [source]
+ 
+Bases: skimage.measure.fit.BaseModel Total least squares estimator for 2D circles. The functional model of the circle is: r**2 = (x - xc)**2 + (y - yc)**2
+ This estimator minimizes the squared distances from all points to the circle: min{ sum((r - sqrt((x_i - xc)**2 + (y_i - yc)**2))**2) }
+ A minimum number of 3 points is required to solve for the parameters. Examples >>> t = np.linspace(0, 2 * np.pi, 25)
+>>> xy = CircleModel().predict_xy(t, params=(2, 3, 4))
+>>> model = CircleModel()
+>>> model.estimate(xy)
+True
+>>> tuple(np.round(model.params, 5))
+(2.0, 3.0, 4.0)
+>>> res = model.residuals(xy)
+>>> np.abs(np.round(res, 9))
+array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0.])
+  Attributes 
+ 
+paramstuple 
+
+Circle model parameters in the following order xc, yc, r.      
+__init__() [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+estimate(data) [source]
+ 
+Estimate circle model from data using total least squares.  Parameters 
+ 
+data(N, 2) array 
+
+N points with (x, y) coordinates, respectively.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.     
+  
+predict_xy(t, params=None) [source]
+ 
+Predict x- and y-coordinates using the estimated model.  Parameters 
+ 
+tarray 
+
+Angles in circle in radians. Angles start to count from positive x-axis to positive y-axis in a right-handed system.  
+params(3, ) array, optional 
+
+Optional custom parameter set.    Returns 
+ 
+xy(…, 2) array 
+
+Predicted x- and y-coordinates.     
+  
+residuals(data) [source]
+ 
+Determine residuals of data to model. For each point the shortest distance to the circle is returned.  Parameters 
+ 
+data(N, 2) array 
+
+N points with (x, y) coordinates, respectively.    Returns 
+ 
+residuals(N, ) array 
+
+Residual for each data point.

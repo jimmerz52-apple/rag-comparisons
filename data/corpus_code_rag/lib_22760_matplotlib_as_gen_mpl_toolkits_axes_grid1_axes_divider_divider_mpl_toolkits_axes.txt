@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.divider#mpl_toolkits.axes_grid1.axes_divider.Divider.set_anchor
+
+set_anchor(anchor)[source]
+ 
+ Parameters 
+ 
+anchor(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}
+
+
+Either an (x, y) pair of relative coordinates (0 is left or bottom, 1 is right or top), 'C' (center), or a cardinal direction ('SW', southwest, is bottom left, etc.).      See also  Axes.set_anchor

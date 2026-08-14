@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.encoding.filepath_to_uri
+
+filepath_to_uri(path) [source]
+ 
+Convert a file system path to a URI portion that is suitable for inclusion in a URL. The path is assumed to be either UTF-8 bytes, string, or a Path. This method will encode certain characters that would normally be recognized as special characters for URIs. Note that this method does not encode the ‘ character, as it is a valid character within URIs. See encodeURIComponent() JavaScript function for more details. Returns an ASCII string containing the encoded result.

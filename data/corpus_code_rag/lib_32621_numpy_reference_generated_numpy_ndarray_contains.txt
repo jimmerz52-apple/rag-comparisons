@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__contains__
+
+numpy.ndarray.__contains__ method   ndarray.__contains__(key, /)
+ 
+Return key in self.

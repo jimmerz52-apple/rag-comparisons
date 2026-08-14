@@ -1,0 +1,4 @@
+# python.library.random#random.randint
+
+random.randint(a, b)  
+Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).

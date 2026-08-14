@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.log_date_time_string
+
+log_date_time_string()  
+Returns the current date and time, formatted for logging.

@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.SplitResult
+
+class urllib.parse.SplitResult(scheme, netloc, path, query, fragment)  
+Concrete class for urlsplit() results containing str data. The encode() method returns a SplitResultBytes instance.

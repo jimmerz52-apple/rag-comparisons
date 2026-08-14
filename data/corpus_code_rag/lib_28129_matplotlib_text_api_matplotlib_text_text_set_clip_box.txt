@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_clip_box
+
+set_clip_box(clipbox)[source]
+ 
+Set the artist's clip Bbox.  Parameters 
+ 
+clipboxBbox

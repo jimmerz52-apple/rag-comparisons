@@ -1,0 +1,4 @@
+# python.library.time#time.time_ns
+
+time.time_ns() → int  
+Similar to time() but returns time as an integer number of nanoseconds since the epoch.  New in version 3.7.

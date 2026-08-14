@@ -1,0 +1,9 @@
+# matplotlib._as_gen.matplotlib.pyplot.polar
+
+matplotlib.pyplot.polar   matplotlib.pyplot.polar(*args, **kwargs)[source]
+ 
+Make a polar plot. call signature: polar(theta, r, **kwargs)
+ Multiple theta, r arguments are supported, with format strings, as in plot. 
+  Examples using matplotlib.pyplot.polar
+ 
+   transforms.offset_copy

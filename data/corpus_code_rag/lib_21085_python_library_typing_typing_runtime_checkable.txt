@@ -1,0 +1,9 @@
+# python.library.typing#typing.runtime_checkable
+
+@typing.runtime_checkable  
+Mark a protocol class as a runtime protocol. Such a protocol can be used with isinstance() and issubclass(). This raises TypeError when applied to a non-protocol class. This allows a simple-minded structural check, very similar to “one trick ponies” in collections.abc such as Iterable. For example: @runtime_checkable
+class Closable(Protocol):
+    def close(self): ...
+
+assert isinstance(open('/some/file'), Closable)
+  Note runtime_checkable() will check only the presence of the required methods, not their type signatures! For example, builtins.complex implements __float__(), therefore it passes an issubclass() check against SupportsFloat. However, the complex.__float__ method exists only to raise a TypeError with a more informative message.   New in version 3.8.

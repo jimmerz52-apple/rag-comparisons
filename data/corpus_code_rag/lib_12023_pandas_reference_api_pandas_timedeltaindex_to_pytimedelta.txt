@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.timedeltaindex.to_pytimedelta
+
+pandas.TimedeltaIndex.to_pytimedelta   TimedeltaIndex.to_pytimedelta(*args, **kwargs)[source]
+ 
+Return Timedelta Array/Index as object ndarray of datetime.timedelta objects.  Returns 
+ 
+timedeltas:ndarray[object]

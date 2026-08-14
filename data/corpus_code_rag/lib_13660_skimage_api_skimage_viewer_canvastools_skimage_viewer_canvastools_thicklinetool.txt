@@ -1,0 +1,42 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.ThickLineTool
+
+class skimage.viewer.canvastools.ThickLineTool(manager, on_move=None, on_enter=None, on_release=None, on_change=None, maxdist=10, line_props=None, handle_props=None) [source]
+ 
+Bases: skimage.viewer.canvastools.linetool.LineTool Widget for line selection in a plot. The thickness of the line can be varied using the mouse scroll wheel, or with the ‘+’ and ‘-‘ keys.  Parameters 
+ 
+managerViewer or PlotPlugin. 
+
+Skimage viewer or plot plugin object.  
+on_movefunction 
+
+Function called whenever a control handle is moved. This function must accept the end points of line as the only argument.  
+on_releasefunction 
+
+Function called whenever the control handle is released.  
+on_enterfunction 
+
+Function called whenever the “enter” key is pressed.  
+on_changefunction 
+
+Function called whenever the line thickness is changed.  
+maxdistfloat 
+
+Maximum pixel distance allowed when selecting control handle.  
+line_propsdict 
+
+Properties for matplotlib.lines.Line2D.  
+handle_propsdict 
+
+Marker properties for the handles (also see matplotlib.lines.Line2D).    Attributes 
+ 
+end_points2D array 
+
+End points of line ((x1, y1), (x2, y2)).      
+__init__(manager, on_move=None, on_enter=None, on_release=None, on_change=None, maxdist=10, line_props=None, handle_props=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+on_key_press(event) [source]
+
+  
+on_scroll(event) [source]

@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Filter.domain
+
+domain  
+Address space of a memory block (int or None). tracemalloc uses the domain 0 to trace memory allocations made by Python. C extensions can use other domains to trace other resources.

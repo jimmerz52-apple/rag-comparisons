@@ -1,0 +1,9 @@
+# torch.fx#torch.fx.Graph.graph_copy
+
+graph_copy(g, val_map) [source]
+ 
+Copy all nodes from a given graph into self.  Parameters 
+ 
+g (Graph) – The source graph from which to copy Nodes. 
+val_map (Dict[Node, Node]) – a dictionary that will be populated with a mapping from nodes in g to nodes in self. Note that val_map can be passed in with values in it already to override copying of certain values.   Returns 
+The value in self that is now equivalent to the output value in g, if g had an output node. None otherwise.

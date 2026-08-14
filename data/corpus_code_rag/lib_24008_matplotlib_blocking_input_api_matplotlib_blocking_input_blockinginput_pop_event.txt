@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingInput.pop_event
+
+pop_event(index=- 1)[source]
+ 
+Remove an event from the event list -- by default, the last. Note that this does not check that there are events, much like the normal pop method. If no events exist, this will throw an exception.

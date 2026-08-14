@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.sequence
+
+msilib.sequence  
+This module contains table contents for the standard sequence tables: AdminExecuteSequence, AdminUISequence, AdvtExecuteSequence, InstallExecuteSequence, and InstallUISequence.

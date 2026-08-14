@@ -1,0 +1,4 @@
+# flask.config.index#TRAP_HTTP_EXCEPTIONS
+
+TRAP_HTTP_EXCEPTIONS  
+If there is no handler for an HTTPException-type exception, re-raise it to be handled by the interactive debugger instead of returning it as a simple error response. Default: False

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.matrix.conjugate
+
+numpy.matrix.conjugate method   matrix.conjugate()
+ 
+Return the complex conjugate, element-wise. Refer to numpy.conjugate for full documentation.  See also  numpy.conjugate
+
+equivalent function

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.semimonthbegin.is_quarter_start
+
+pandas.tseries.offsets.SemiMonthBegin.is_quarter_start   SemiMonthBegin.is_quarter_start()

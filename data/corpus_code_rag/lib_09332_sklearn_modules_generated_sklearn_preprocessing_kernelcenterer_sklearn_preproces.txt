@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.kernelcenterer#sklearn.preprocessing.KernelCenterer.fit
+
+fit(K, y=None) [source]
+ 
+Fit KernelCenterer  Parameters 
+ 
+Kndarray of shape (n_samples, n_samples) 
+
+Kernel matrix.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted transformer.

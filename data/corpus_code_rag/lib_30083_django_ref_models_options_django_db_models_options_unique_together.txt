@@ -1,0 +1,6 @@
+# django.ref.models.options#django.db.models.Options.unique_together
+
+Options.unique_together  
+ Use UniqueConstraint with the constraints option instead. UniqueConstraint provides more functionality than unique_together. unique_together may be deprecated in the future.  Sets of field names that, taken together, must be unique: unique_together = [['driver', 'restaurant']]
+ This is a list of lists that must be unique when considered together. It’s used in the Django admin and is enforced at the database level (i.e., the appropriate UNIQUE statements are included in the CREATE TABLE statement). For convenience, unique_together can be a single list when dealing with a single set of fields: unique_together = ['driver', 'restaurant']
+ A ManyToManyField cannot be included in unique_together. (It’s not clear what that would even mean!) If you need to validate uniqueness related to a ManyToManyField, try using a signal or an explicit through model. The ValidationError raised during model validation when the constraint is violated has the unique_together error code.

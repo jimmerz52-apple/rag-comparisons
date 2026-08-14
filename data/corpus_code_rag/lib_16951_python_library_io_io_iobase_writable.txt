@@ -1,0 +1,4 @@
+# python.library.io#io.IOBase.writable
+
+writable()  
+Return True if the stream supports writing. If False, write() and truncate() will raise OSError.

@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.gnu.gdbm.firstkey
+
+gdbm.firstkey()  
+It’s possible to loop over every key in the database using this method and the nextkey() method. The traversal is ordered by gdbm’s internal hash values, and won’t be sorted by the key values. This method returns the starting key.

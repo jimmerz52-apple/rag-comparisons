@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.NullLocator.tick_values
+
+tick_values(vmin, vmax)[source]
+ 
+Return the locations of the ticks.  Note Because the values are Null, vmin and vmax are not used in this method.

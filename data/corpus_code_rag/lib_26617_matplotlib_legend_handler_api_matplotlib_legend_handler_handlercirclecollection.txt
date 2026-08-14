@@ -1,0 +1,16 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerCircleCollection
+
+classmatplotlib.legend_handler.HandlerCircleCollection(yoffsets=None, sizes=None, **kwargs)[source]
+ 
+Handler for CircleCollections.  Parameters 
+ 
+numpointsint
+
+
+Number of points to show in legend entry.  
+yoffsetsarray of floats
+
+
+Length numpoints list of y offsets for each point in legend entry.  **kwargs
+
+Keyword arguments forwarded to HandlerNpoints.       create_collection(orig_handle, sizes, offsets, transOffset)[source]

@@ -1,0 +1,4 @@
+# pygame.ref.fastevent#pygame.fastevent.get
+
+pygame.fastevent.get() 
+ get all events from the queue get() -> list of Events  This will get all the messages and remove them from the queue.

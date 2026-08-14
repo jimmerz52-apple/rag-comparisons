@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.in_table_c21
+
+stringprep.in_table_c21(code)  
+Determine whether code is in tableC.2.1 (ASCII control characters).

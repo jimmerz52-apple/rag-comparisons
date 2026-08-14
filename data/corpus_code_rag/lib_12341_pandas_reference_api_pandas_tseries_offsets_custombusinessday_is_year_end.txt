@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessday.is_year_end
+
+pandas.tseries.offsets.CustomBusinessDay.is_year_end   CustomBusinessDay.is_year_end()

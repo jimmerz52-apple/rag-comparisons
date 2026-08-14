@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Maildir.add_folder
+
+add_folder(folder)  
+Create a folder whose name is folder and return a Maildir instance representing it.

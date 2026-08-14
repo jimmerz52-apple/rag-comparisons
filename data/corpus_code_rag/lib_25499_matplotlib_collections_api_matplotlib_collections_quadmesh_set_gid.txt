@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.set_gid
+
+set_gid(gid)[source]
+ 
+Set the (group) id for the artist.  Parameters 
+ 
+gidstr

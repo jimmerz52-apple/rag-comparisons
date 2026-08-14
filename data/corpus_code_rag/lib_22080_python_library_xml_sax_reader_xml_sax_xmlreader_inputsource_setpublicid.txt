@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.InputSource.setPublicId
+
+InputSource.setPublicId(id)  
+Sets the public identifier of this InputSource.

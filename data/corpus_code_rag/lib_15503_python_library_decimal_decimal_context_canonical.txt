@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.canonical
+
+canonical(x)  
+Returns the same Decimal object x.

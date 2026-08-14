@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontproperties
+
+set_fontproperties(fp)[source]
+ 
+Set the font properties that control the text.  Parameters 
+ 
+fpfont_manager.FontProperties or str or pathlib.Path
+
+
+If a str, it is interpreted as a fontconfig pattern parsed by FontProperties. If a pathlib.Path, it is interpreted as the absolute path to a font file.

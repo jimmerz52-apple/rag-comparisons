@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.isnumeric
+
+numpy.chararray.isnumeric method   chararray.isnumeric()[source]
+ 
+For each element in self, return True if there are only numeric characters in the element.  See also  char.isnumeric

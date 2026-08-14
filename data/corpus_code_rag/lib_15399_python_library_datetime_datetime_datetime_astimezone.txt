@@ -1,0 +1,11 @@
+# python.library.datetime#datetime.datetime.astimezone
+
+datetime.astimezone(tz=None)  
+Return a datetime object with new tzinfo attribute tz, adjusting the date and time data so the result is the same UTC time as self, but in tz’s local time. If provided, tz must be an instance of a tzinfo subclass, and its utcoffset() and dst() methods must not return None. If self is naive, it is presumed to represent time in the system timezone. If called without arguments (or with tz=None) the system local timezone is assumed for the target timezone. The .tzinfo attribute of the converted datetime instance will be set to an instance of timezone with the zone name and offset obtained from the OS. If self.tzinfo is tz, self.astimezone(tz) is equal to self: no adjustment of date or time data is performed. Else the result is local time in the timezone tz, representing the same UTC time as self: after astz = dt.astimezone(tz), astz - astz.utcoffset() will have the same date and time data as dt - dt.utcoffset(). If you merely want to attach a time zone object tz to a datetime dt without adjustment of date and time data, use dt.replace(tzinfo=tz). If you merely want to remove the time zone object from an aware datetime dt without conversion of date and time data, use dt.replace(tzinfo=None). Note that the default tzinfo.fromutc() method can be overridden in a tzinfo subclass to affect the result returned by astimezone(). Ignoring error cases, astimezone() acts like: def astimezone(self, tz):
+    if self.tzinfo is tz:
+        return self
+    # Convert self to UTC, and attach the new time zone object.
+    utc = (self - self.utcoffset()).replace(tzinfo=tz)
+    # Convert from UTC to tz's local time.
+    return tz.fromutc(utc)
+  Changed in version 3.3: tz now can be omitted.   Changed in version 3.6: The astimezone() method can now be called on naive instances that are presumed to represent system local time.

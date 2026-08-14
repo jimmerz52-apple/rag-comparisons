@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.is_dir
+
+Path.is_dir()  
+Return True if the path points to a directory (or a symbolic link pointing to a directory), False if it points to another kind of file. False is also returned if the path doesn’t exist or is a broken symlink; other errors (such as permission errors) are propagated.

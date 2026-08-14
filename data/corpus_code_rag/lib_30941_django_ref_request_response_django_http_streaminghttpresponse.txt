@@ -1,0 +1,3 @@
+# django.ref.request-response#django.http.StreamingHttpResponse
+
+class StreamingHttpResponse

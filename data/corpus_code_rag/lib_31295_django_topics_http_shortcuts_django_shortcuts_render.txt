@@ -1,0 +1,4 @@
+# django.topics.http.shortcuts#django.shortcuts.render
+
+render(request, template_name, context=None, content_type=None, status=None, using=None)  
+Combines a given template with a given context dictionary and returns an HttpResponse object with that rendered text. Django does not provide a shortcut function which returns a TemplateResponse because the constructor of TemplateResponse offers the same level of convenience as render().

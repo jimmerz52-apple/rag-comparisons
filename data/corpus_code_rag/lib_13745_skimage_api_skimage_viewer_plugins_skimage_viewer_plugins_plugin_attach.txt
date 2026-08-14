@@ -1,0 +1,6 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.attach
+
+attach(image_viewer) [source]
+ 
+Attach the plugin to an ImageViewer. Note that the ImageViewer will automatically call this method when the plugin is added to the ImageViewer. For example: viewer += Plugin(...)
+ Also note that attach automatically calls the filter function so that the image matches the filtered value specified by attached widgets.

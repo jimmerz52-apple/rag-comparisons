@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.VERIFY_X509_TRUSTED_FIRST
+
+ssl.VERIFY_X509_TRUSTED_FIRST  
+Possible value for SSLContext.verify_flags. It instructs OpenSSL to prefer trusted certificates when building the trust chain to validate a certificate. This flag is enabled by default.  New in version 3.4.4.

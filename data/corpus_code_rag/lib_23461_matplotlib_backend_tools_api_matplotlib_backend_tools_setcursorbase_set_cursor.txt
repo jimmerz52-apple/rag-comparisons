@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.SetCursorBase.set_cursor
+
+set_cursor(cursor)[source]
+ 
+[Deprecated] Set the cursor. Notes  Deprecated since version 3.5.

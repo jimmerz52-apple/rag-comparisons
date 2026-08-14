@@ -1,0 +1,26 @@
+# pygame.ref.sprite#pygame.sprite.Group
+
+pygame.sprite.Group 
+ A container class to hold and manage multiple Sprite objects. Group(*sprites) -> Group  A simple container for Sprite objects. This class can be inherited to create containers with more specific behaviors. The constructor takes any number of Sprite arguments to add to the Group. The group supports the following standard Python operations: in      test if a Sprite is contained
+len     the number of Sprites contained
+bool    test if any Sprites are contained
+iter    iterate through all the Sprites The Sprites in the Group are not ordered, so drawing and iterating the Sprites is in no particular order.   sprites() 
+ list of the Sprites this Group contains sprites() -> sprite_list  Return a list of all the Sprites this group contains. You can also get an iterator from the group, but you cannot iterate over a Group while modifying it. 
+   copy() 
+ duplicate the Group copy() -> Group  Creates a new Group with all the same Sprites as the original. If you have subclassed Group, the new object will have the same (sub-)class as the original. This only works if the derived class's constructor takes the same arguments as the Group class's. 
+   add() 
+ add Sprites to this Group add(*sprites) -> None  Add any number of Sprites to this Group. This will only add Sprites that are not already members of the Group. Each sprite argument can also be a iterator containing Sprites. 
+   remove() 
+ remove Sprites from the Group remove(*sprites) -> None  Remove any number of Sprites from the Group. This will only remove Sprites that are already members of the Group. Each sprite argument can also be a iterator containing Sprites. 
+   has() 
+ test if a Group contains Sprites has(*sprites) -> bool  Return True if the Group contains all of the given sprites. This is similar to using the "in" operator on the Group ("if sprite in group: ..."), which tests if a single Sprite belongs to a Group. Each sprite argument can also be a iterator containing Sprites. 
+   update() 
+ call the update method on contained Sprites update(*args, **kwargs) -> None  Calls the update() method on all Sprites in the Group. The base Sprite class has an update method that takes any number of arguments and does nothing. The arguments passed to Group.update() will be passed to each Sprite. There is no way to get the return value from the Sprite.update() methods. 
+   draw() 
+ blit the Sprite images draw(Surface) -> None  Draws the contained Sprites to the Surface argument. This uses the Sprite.image attribute for the source surface, and Sprite.rect for the position. The Group does not keep sprites in any order, so the draw order is arbitrary. 
+   clear() 
+ draw a background over the Sprites clear(Surface_dest, background) -> None  Erases the Sprites used in the last Group.draw() call. The destination Surface is cleared by filling the drawn Sprite positions with the background. The background is usually a Surface image the same dimensions as the destination Surface. However, it can also be a callback function that takes two arguments; the destination Surface and an area to clear. The background callback function will be called several times each clear. Here is an example callback that will clear the Sprites with solid red: def clear_callback(surf, rect):
+    color = 255, 0, 0
+    surf.fill(color, rect) 
+   empty() 
+ remove all Sprites empty() -> None  Removes all Sprites from this Group.

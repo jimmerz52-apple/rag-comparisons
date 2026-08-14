@@ -1,0 +1,14 @@
+# torch.generated.torch.nn.elu#torch.nn.ELU
+
+class torch.nn.ELU(alpha=1.0, inplace=False) [source]
+ 
+Applies the element-wise function:  ELU(x)={x, if x>0α∗(exp⁡(x)−1), if x≤0\text{ELU}(x) = \begin{cases} x, & \text{ if } x > 0\\ \alpha * (\exp(x) - 1), & \text{ if } x \leq 0 \end{cases}  
+ Parameters 
+ 
+alpha – the α\alpha  value for the ELU formulation. Default: 1.0 
+inplace – can optionally do the operation in-place. Default: False
+     Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.ELU()
+>>> input = torch.randn(2)
+>>> output = m(input)

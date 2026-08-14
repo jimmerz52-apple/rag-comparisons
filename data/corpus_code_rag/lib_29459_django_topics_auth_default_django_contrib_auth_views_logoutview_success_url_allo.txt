@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LogoutView.success_url_allowed_hosts
+
+success_url_allowed_hosts  
+A set of hosts, in addition to request.get_host(), that are safe for redirecting after logout. Defaults to an empty set.

@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.StreamWriter.reset
+
+reset()  
+Resets the codec buffers used for keeping internal state. Calling this method should ensure that the data on the output is put into a clean state that allows appending of new fresh data without having to rescan the whole stream to recover state.

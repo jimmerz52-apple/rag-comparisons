@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Dialog.checkbox
+
+checkbox(name, x, y, width, height, attributes, property, text, next_control)  
+Add and return a CheckBox control.

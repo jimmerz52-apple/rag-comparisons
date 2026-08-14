@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.unload
+
+pygame.mixer.music.unload() 
+ Unload the currently loaded music to free up resources unload() -> None  This closes resources like files for any music that may be loaded.  New in pygame 2.0.0.

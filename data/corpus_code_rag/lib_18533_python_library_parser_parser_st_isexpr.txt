@@ -1,0 +1,4 @@
+# python.library.parser#parser.ST.isexpr
+
+ST.isexpr()  
+Same as isexpr(st).

@@ -1,0 +1,4 @@
+# python.library.io#io.IncrementalNewlineDecoder
+
+class io.IncrementalNewlineDecoder  
+A helper codec that decodes newlines for universal newlines mode. It inherits codecs.IncrementalDecoder.

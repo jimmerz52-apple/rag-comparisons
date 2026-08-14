@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.set_title
+
+set_title(title, prop=None)[source]
+ 
+Set the legend title. Fontproperties can be optionally set with prop parameter.

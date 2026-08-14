@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Combobox.current
+
+current(newindex=None)  
+If newindex is specified, sets the combobox value to the element position newindex. Otherwise, returns the index of the current value or -1 if the current value is not in the values list.

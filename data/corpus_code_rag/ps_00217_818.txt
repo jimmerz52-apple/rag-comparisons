@@ -1,0 +1,9 @@
+# 818
+Task: 818
+
+# Write a python function to count lower case letters in a given string.
+def lower_ctr(str):
+      lower_ctr= 0
+      for i in range(len(str)):
+          if str[i] >= 'a' and str[i] <= 'z': lower_ctr += 1     
+      return  lower_ctr

@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.invalidate
+
+invalidate()[source]
+ 
+Invalidate this TransformNode and triggers an invalidation of its ancestors. Should be called any time the transform changes.

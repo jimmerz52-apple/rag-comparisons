@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__xor__
+
+numpy.ma.MaskedArray.__xor__ method   ma.MaskedArray.__xor__(value, /)
+ 
+Return self^value.

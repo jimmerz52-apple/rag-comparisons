@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.greater
+
+tf.experimental.numpy.greater TensorFlow variant of NumPy's greater. 
+tf.experimental.numpy.greater(
+    x1, x2
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.greater.

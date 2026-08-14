@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getmark
+
+Wave_read.getmark(id)  
+Raise an error.

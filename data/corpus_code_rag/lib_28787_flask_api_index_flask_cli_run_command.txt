@@ -1,0 +1,8 @@
+# flask.api.index#flask.cli.run_command
+
+flask.cli.run_command = <Command run>  
+Run a local development server. This server is for development purposes only. It does not provide the stability, security, or performance of production WSGI servers. The reloader and debugger are enabled by default if FLASK_ENV=development or FLASK_DEBUG=1.  Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+Any

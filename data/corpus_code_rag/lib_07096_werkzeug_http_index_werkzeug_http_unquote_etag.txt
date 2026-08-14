@@ -1,0 +1,11 @@
+# werkzeug.http.index#werkzeug.http.unquote_etag
+
+werkzeug.http.unquote_etag(etag)  
+Unquote a single etag: >>> unquote_etag('W/"bar"')
+('bar', True)
+>>> unquote_etag('"bar"')
+('bar', False)
+  Parameters 
+etag (Optional[str]) – the etag identifier to unquote.  Returns 
+a (etag, weak) tuple.  Return type 
+Union[Tuple[str, bool], Tuple[None, None]]

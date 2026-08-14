@@ -1,0 +1,13 @@
+# tensorflow.io.raggedfeature.rowsplits
+
+tf.io.RaggedFeature.RowSplits RowSplits(key,)  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.io.RaggedFeature.RowSplits  
+tf.io.RaggedFeature.RowSplits(
+    key
+)
+
+ 
+
+
+ Attributes
+  key

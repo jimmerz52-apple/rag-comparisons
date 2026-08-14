@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.fit
+
+fit() 
+ resize and move a rectangle with aspect ratio fit(Rect) -> Rect  Returns a new rectangle that is moved and resized to fit another. The aspect ratio of the original Rect is preserved, so the new rectangle may be smaller than the target in either width or height.

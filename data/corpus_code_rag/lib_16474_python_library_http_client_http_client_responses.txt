@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.responses
+
+http.client.responses  
+This dictionary maps the HTTP 1.1 status codes to the W3C names. Example: http.client.responses[http.client.NOT_FOUND] is 'Not Found'.

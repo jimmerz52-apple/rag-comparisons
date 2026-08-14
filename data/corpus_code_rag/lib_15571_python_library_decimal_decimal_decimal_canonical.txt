@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.canonical
+
+canonical()  
+Return the canonical encoding of the argument. Currently, the encoding of a Decimal instance is always canonical, so this operation returns its argument unchanged.

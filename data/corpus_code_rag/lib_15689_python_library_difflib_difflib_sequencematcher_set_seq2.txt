@@ -1,0 +1,4 @@
+# python.library.difflib#difflib.SequenceMatcher.set_seq2
+
+set_seq2(b)  
+Set the second sequence to be compared. The first sequence to be compared is not changed.

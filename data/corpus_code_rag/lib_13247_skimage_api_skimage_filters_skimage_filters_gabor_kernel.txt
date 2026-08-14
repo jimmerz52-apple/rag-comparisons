@@ -1,0 +1,44 @@
+# skimage.api.skimage.filters#skimage.filters.gabor_kernel
+
+skimage.filters.gabor_kernel(frequency, theta=0, bandwidth=1, sigma_x=None, sigma_y=None, n_stds=3, offset=0) [source]
+ 
+Return complex 2D Gabor filter kernel. Gabor kernel is a Gaussian kernel modulated by a complex harmonic function. Harmonic function consists of an imaginary sine function and a real cosine function. Spatial frequency is inversely proportional to the wavelength of the harmonic and to the standard deviation of a Gaussian kernel. The bandwidth is also inversely proportional to the standard deviation.  Parameters 
+ 
+frequencyfloat 
+
+Spatial frequency of the harmonic function. Specified in pixels.  
+thetafloat, optional 
+
+Orientation in radians. If 0, the harmonic is in the x-direction.  
+bandwidthfloat, optional 
+
+The bandwidth captured by the filter. For fixed bandwidth, sigma_x and sigma_y will decrease with increasing frequency. This value is ignored if sigma_x and sigma_y are set by the user.  
+sigma_x, sigma_yfloat, optional 
+
+Standard deviation in x- and y-directions. These directions apply to the kernel before rotation. If theta = pi/2, then the kernel is rotated 90 degrees so that sigma_x controls the vertical direction.  
+n_stdsscalar, optional 
+
+The linear size of the kernel is n_stds (3 by default) standard deviations  
+offsetfloat, optional 
+
+Phase offset of harmonic function in radians.    Returns 
+ 
+gcomplex array 
+
+Complex filter kernel.     References  
+1  
+https://en.wikipedia.org/wiki/Gabor_filter  
+2  
+https://web.archive.org/web/20180127125930/http://mplab.ucsd.edu/tutorials/gabor.pdf   Examples >>> from skimage.filters import gabor_kernel
+>>> from skimage import io
+>>> from matplotlib import pyplot as plt  
+ >>> gk = gabor_kernel(frequency=0.2)
+>>> plt.figure()        
+>>> io.imshow(gk.real)  
+>>> io.show()           
+ >>> # more ripples (equivalent to increasing the size of the
+>>> # Gaussian spread)
+>>> gk = gabor_kernel(frequency=0.2, bandwidth=0.1)
+>>> plt.figure()        
+>>> io.imshow(gk.real)  
+>>> io.show()

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.get_zminorticklabels
+
+get_zminorticklabels()[source]
+ 
+Return the zaxis' minor tick labels, as a list of Text.

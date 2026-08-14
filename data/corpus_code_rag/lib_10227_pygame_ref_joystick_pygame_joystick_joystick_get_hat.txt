@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_hat
+
+get_hat() 
+ get the position of a joystick hat get_hat(hat_number) -> x, y  Returns the current position of a position hat. The position is given as two values representing the x and y position for the hat. (0, 0) means centered. A value of -1 means left/down and a value of 1 means right/up: so (-1, 0) means left; (1, 0) means right; (0, 1) means up; (1, 1) means upper-right; etc. This value is digital, i.e., each coordinate can be -1, 0 or 1 but never in-between. The hat number must be between 0 and get_numhats() - 1.

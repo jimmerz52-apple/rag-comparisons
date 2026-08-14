@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.is_optimized
+
+is_optimized()  
+Return True if the locals in this table can be optimized.

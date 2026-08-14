@@ -1,0 +1,7 @@
+# django.ref.forms.fields#django.forms.UUIDField
+
+class UUIDField(**kwargs)  
+ Default widget: TextInput
+ Empty value: None
+ Normalizes to: A UUID object. Error message keys: required, invalid
+  This field will accept any string format accepted as the hex argument to the UUID constructor.

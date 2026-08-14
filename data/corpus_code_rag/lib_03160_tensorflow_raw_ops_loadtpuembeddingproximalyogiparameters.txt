@@ -1,0 +1,26 @@
+# tensorflow.raw_ops.loadtpuembeddingproximalyogiparameters
+
+tf.raw_ops.LoadTPUEmbeddingProximalYogiParameters  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.LoadTPUEmbeddingProximalYogiParameters  
+tf.raw_ops.LoadTPUEmbeddingProximalYogiParameters(
+    parameters, v, m, num_shards, shard_id, table_id=-1, table_name='',
+    config='', name=None
+)
+
+ 
+
+
+ Args
+  parameters   A Tensor of type float32.  
+  v   A Tensor of type float32.  
+  m   A Tensor of type float32.  
+  num_shards   An int.  
+  shard_id   An int.  
+  table_id   An optional int. Defaults to -1.  
+  table_name   An optional string. Defaults to "".  
+  config   An optional string. Defaults to "".  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   The created Operation.

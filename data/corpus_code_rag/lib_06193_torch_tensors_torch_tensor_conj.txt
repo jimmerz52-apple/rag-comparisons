@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.conj
+
+conj() → Tensor  
+See torch.conj()

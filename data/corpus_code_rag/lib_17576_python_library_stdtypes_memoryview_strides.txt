@@ -1,0 +1,4 @@
+# python.library.stdtypes#memoryview.strides
+
+strides  
+A tuple of integers the length of ndim giving the size in bytes to access each element for each dimension of the array.  Changed in version 3.3: An empty tuple instead of None when ndim = 0.

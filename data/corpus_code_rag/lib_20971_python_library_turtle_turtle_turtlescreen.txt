@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.TurtleScreen
+
+class turtle.TurtleScreen(cv)  
+ Parameters 
+cv – a tkinter.Canvas   Provides screen oriented methods like setbg() etc. that are described above.

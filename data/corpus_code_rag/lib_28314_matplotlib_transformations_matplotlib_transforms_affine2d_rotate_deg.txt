@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.rotate_deg
+
+rotate_deg(degrees)[source]
+ 
+Add a rotation (in degrees) to this transform in place. Returns self, so this method can easily be chained with more calls to rotate(), rotate_deg(), translate() and scale().

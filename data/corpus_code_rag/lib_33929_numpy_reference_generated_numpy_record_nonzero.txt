@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.nonzero
+
+numpy.record.nonzero method   record.nonzero()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.nonzero.

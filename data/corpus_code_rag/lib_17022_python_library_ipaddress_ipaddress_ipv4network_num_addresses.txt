@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.num_addresses
+
+num_addresses  
+The total number of addresses in the network.

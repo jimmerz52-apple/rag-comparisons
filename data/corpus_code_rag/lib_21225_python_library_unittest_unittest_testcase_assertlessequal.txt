@@ -1,0 +1,9 @@
+# python.library.unittest#unittest.TestCase.assertLessEqual
+
+assertGreater(first, second, msg=None)  
+assertGreaterEqual(first, second, msg=None)  
+assertLess(first, second, msg=None)  
+assertLessEqual(first, second, msg=None)  
+Test that first is respectively >, >=, < or <= than second depending on the method name. If not, the test will fail: >>> self.assertGreaterEqual(3, 4)
+AssertionError: "3" unexpectedly not greater than or equal to "4"
+  New in version 3.1.

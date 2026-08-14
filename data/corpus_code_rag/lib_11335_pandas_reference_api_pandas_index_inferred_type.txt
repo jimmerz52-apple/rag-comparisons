@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.inferred_type
+
+pandas.Index.inferred_type   Index.inferred_type
+ 
+Return a string of the type inferred from the values.

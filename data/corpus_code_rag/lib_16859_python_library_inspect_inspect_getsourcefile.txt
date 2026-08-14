@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.getsourcefile
+
+inspect.getsourcefile(object)  
+Return the name of the Python source file in which an object was defined. This will fail with a TypeError if the object is a built-in module, class, or function.

@@ -1,0 +1,13 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.set_foreground
+
+set_foreground(fg, isRGBA=False)[source]
+ 
+Set the foreground color.  Parameters 
+ 
+fgcolor
+
+
+isRGBAbool
+
+
+If fg is known to be an (r, g, b, a) tuple, isRGBA can be set to True to improve performance.

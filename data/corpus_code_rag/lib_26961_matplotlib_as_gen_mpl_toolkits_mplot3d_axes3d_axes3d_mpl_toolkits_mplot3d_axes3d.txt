@@ -1,0 +1,20 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.plot_wireframe
+
+plot_wireframe(X, Y, Z, *args, **kwargs)[source]
+ 
+Plot a 3D wireframe.  Note The rcount and ccount kwargs, which both default to 50, determine the maximum number of samples used in each direction. If the input data is larger, it will be downsampled (by slicing) to these numbers of points.   Parameters 
+ 
+X, Y, Z2D arrays
+
+
+Data values.  
+rcount, ccountint
+
+
+Maximum number of samples used in each direction. If the input data is larger, it will be downsampled (by slicing) to these numbers of points. Setting a count to zero causes the data to be not sampled in the corresponding direction, producing a 3D line plot rather than a wireframe plot. Defaults to 50.  
+rstride, cstrideint
+
+
+Downsampling stride in each direction. These arguments are mutually exclusive with rcount and ccount. If only one of rstride or cstride is set, the other defaults to 1. Setting a stride to zero causes the data to be not sampled in the corresponding direction, producing a 3D line plot rather than a wireframe plot. 'classic' mode uses a default of rstride = cstride = 1 instead of the new default of rcount = ccount = 50.  **kwargs
+
+Other arguments are forwarded to Line3DCollection.

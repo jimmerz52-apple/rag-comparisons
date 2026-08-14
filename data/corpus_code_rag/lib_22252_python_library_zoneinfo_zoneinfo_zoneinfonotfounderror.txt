@@ -1,0 +1,4 @@
+# python.library.zoneinfo#zoneinfo.ZoneInfoNotFoundError
+
+exception zoneinfo.ZoneInfoNotFoundError  
+Raised when construction of a ZoneInfo object fails because the specified key could not be found on the system. This is a subclass of KeyError.

@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.get_prep_value
+
+get_prep_value(value)  
+value is the current value of the model’s attribute, and the method should return data in a format that has been prepared for use as a parameter in a query. See Converting Python objects to query values for usage.

@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Record.SetStream
+
+Record.SetStream(field, value)  
+Set field to the contents of the file named value, through MsiRecordSetStream(). field must be an integer; value a string.

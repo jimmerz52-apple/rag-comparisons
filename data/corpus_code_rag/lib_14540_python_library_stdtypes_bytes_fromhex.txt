@@ -1,0 +1,6 @@
+# python.library.stdtypes#bytes.fromhex
+
+classmethod fromhex(string)  
+This bytes class method returns a bytes object, decoding the given string object. The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored. >>> bytes.fromhex('2Ef0 F1f2  ')
+b'.\xf0\xf1\xf2'
+  Changed in version 3.7: bytes.fromhex() now skips all ASCII whitespace in the string, not just spaces.

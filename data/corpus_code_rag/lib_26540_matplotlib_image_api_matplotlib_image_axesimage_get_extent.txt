@@ -1,0 +1,5 @@
+# matplotlib.image_api#matplotlib.image.AxesImage.get_extent
+
+get_extent()[source]
+ 
+Return the image extent as tuple (left, right, bottom, top).

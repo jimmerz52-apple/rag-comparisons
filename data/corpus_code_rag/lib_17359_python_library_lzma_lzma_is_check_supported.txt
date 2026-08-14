@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.is_check_supported
+
+lzma.is_check_supported(check)  
+Return True if the given integrity check is supported on this system. CHECK_NONE and CHECK_CRC32 are always supported. CHECK_CRC64 and CHECK_SHA256 may be unavailable if you are using a version of liblzma that was compiled with a limited feature set.

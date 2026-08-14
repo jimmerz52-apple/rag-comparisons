@@ -1,0 +1,5 @@
+# werkzeug.filesystem.index#werkzeug.filesystem.get_filesystem_encoding
+
+werkzeug.filesystem.get_filesystem_encoding()  
+Returns the filesystem encoding that should be used. Note that this is different from the Python understanding of the filesystem encoding which might be deeply flawed. Do not use this value against Python’s string APIs because it might be different. See The Filesystem for the exact behavior. The concept of a filesystem encoding in generally is not something you should rely on. As such if you ever need to use this function except for writing wrapper code reconsider.  Return type 
+str

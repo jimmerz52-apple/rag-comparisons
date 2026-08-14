@@ -1,0 +1,13 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_color
+
+set_color(c)[source]
+ 
+Set both the edgecolor and the facecolor.  Parameters 
+ 
+ccolor
+
+    See also  
+Patch.set_facecolor, Patch.set_edgecolor
+
+
+For setting the edge or face color individually.

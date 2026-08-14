@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__array_wrap__
+
+numpy.ndarray.__array_wrap__ method   ndarray.__array_wrap__(array, [context, ]/)
+ 
+Returns a view of array with the same type as self.

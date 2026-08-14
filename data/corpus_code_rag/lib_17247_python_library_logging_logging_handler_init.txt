@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.__init__
+
+__init__(level=NOTSET)  
+Initializes the Handler instance by setting its level, setting the list of filters to the empty list and creating a lock (using createLock()) for serializing access to an I/O mechanism.

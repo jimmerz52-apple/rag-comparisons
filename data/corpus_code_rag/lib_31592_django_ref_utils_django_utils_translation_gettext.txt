@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.gettext
+
+gettext(message)  
+Translates message and returns it as a string.

@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.read_environ
+
+wsgiref.handlers.read_environ()  
+Transcode CGI variables from os.environ to PEP 3333 “bytes in unicode” strings, returning a new dictionary. This function is used by CGIHandler and IISCGIHandler in place of directly using os.environ, which is not necessarily WSGI-compliant on all platforms and web servers using Python 3 – specifically, ones where the OS’s actual environment is Unicode (i.e. Windows), or ones where the environment is bytes, but the system encoding used by Python to decode it is anything other than ISO-8859-1 (e.g. Unix systems using UTF-8). If you are implementing a CGI-based handler of your own, you probably want to use this routine instead of just copying values out of os.environ directly.  New in version 3.2.

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.timezone.dst
+
+timezone.dst(dt)  
+Always returns None.

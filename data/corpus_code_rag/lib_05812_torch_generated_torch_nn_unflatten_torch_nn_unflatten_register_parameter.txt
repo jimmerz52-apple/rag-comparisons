@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.unflatten#torch.nn.Unflatten.register_parameter
+
+register_parameter(name, param)  
+Adds a parameter to the module. The parameter can be accessed as an attribute using given name.  Parameters 
+ 
+name (string) – name of the parameter. The parameter can be accessed from this module using the given name 
+param (Parameter) – parameter to be added to the module.

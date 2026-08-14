@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.format_data_short
+
+format_data_short(value)[source]
+ 
+Return a short string version of the tick value. Defaults to the position-independent long value.

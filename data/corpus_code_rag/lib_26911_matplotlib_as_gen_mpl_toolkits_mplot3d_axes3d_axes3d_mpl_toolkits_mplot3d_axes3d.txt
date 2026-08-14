@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.autoscale_view
+
+autoscale_view(tight=None, scalex=True, scaley=True, scalez=True)[source]
+ 
+Autoscale the view limits using the data limits. See matplotlib.axes.Axes.autoscale_view() for documentation. Note that this function applies to the 3D axes, and as such adds the scalez to the function arguments.

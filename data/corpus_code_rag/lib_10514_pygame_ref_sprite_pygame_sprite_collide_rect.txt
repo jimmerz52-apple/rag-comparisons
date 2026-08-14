@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.collide_rect
+
+pygame.sprite.collide_rect() 
+ Collision detection between two sprites, using rects. collide_rect(left, right) -> bool  Tests for collision between two sprites. Uses the pygame rect colliderect function to calculate the collision. Intended to be passed as a collided callback function to the *collide functions. Sprites must have a "rect" attributes.  New in pygame 1.8.

@@ -1,0 +1,3 @@
+# tensorflow.distribute.experimental.coordinator
+
+Module: tf.distribute.experimental.coordinator Public API for tf.distribute.experimental.coordinator namespace. Classes class ClusterCoordinator: An object to schedule and coordinate remote function execution. class PerWorkerValues: A container that holds a list of values, one value per worker. class RemoteValue: An asynchronously available value of a scheduled function.

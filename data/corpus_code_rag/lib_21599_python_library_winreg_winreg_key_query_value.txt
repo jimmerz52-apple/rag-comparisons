@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.KEY_QUERY_VALUE
+
+winreg.KEY_QUERY_VALUE  
+Required to query the values of a registry key.

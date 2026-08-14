@@ -1,0 +1,4 @@
+# python.library.binascii#binascii.b2a_hqx
+
+binascii.b2a_hqx(data)  
+Perform hexbin4 binary-to-ASCII translation and return the resulting string. The argument should already be RLE-coded, and have a length divisible by 3 (except possibly the last fragment).  Deprecated since version 3.9.

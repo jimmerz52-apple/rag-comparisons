@@ -1,0 +1,92 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG
+
+class skimage.future.graph.RAG(label_image=None, connectivity=1, data=None, **attr) [source]
+ 
+Bases: networkx.classes.graph.Graph The Region Adjacency Graph (RAG) of an image, subclasses networx.Graph  Parameters 
+ 
+label_imagearray of int 
+
+An initial segmentation, with each region labeled as a different integer. Every unique value in label_image will correspond to a node in the graph.  
+connectivityint in {1, …, label_image.ndim}, optional 
+
+The connectivity between pixels in label_image. For a 2D image, a connectivity of 1 corresponds to immediate neighbors up, down, left, and right, while a connectivity of 2 also includes diagonal neighbors. See scipy.ndimage.generate_binary_structure.  
+datanetworkx Graph specification, optional 
+
+Initial or additional edges to pass to the NetworkX Graph constructor. See networkx.Graph. Valid edge specifications include edge list (list of tuples), NumPy arrays, and SciPy sparse matrices.  
+**attrkeyword arguments, optional 
+
+Additional attributes to add to the graph.      
+__init__(label_image=None, connectivity=1, data=None, **attr) [source]
+ 
+Initialize a graph with edges, name, or graph attributes.  Parameters 
+ 
+incoming_graph_datainput graph (optional, default: None) 
+
+Data to initialize graph. If None (default) an empty graph is created. The data can be an edge list, or any NetworkX graph object. If the corresponding optional Python packages are installed the data can also be a NumPy matrix or 2d ndarray, a SciPy sparse matrix, or a PyGraphviz graph.  
+attrkeyword arguments, optional (default= no attributes) 
+
+Attributes to add to graph as key=value pairs.      See also  
+convert 
+  Examples >>> G = nx.Graph()  # or DiGraph, MultiGraph, MultiDiGraph, etc
+>>> G = nx.Graph(name="my graph")
+>>> e = [(1, 2), (2, 3), (3, 4)]  # list of edges
+>>> G = nx.Graph(e)
+ Arbitrary graph attribute pairs (key=value) may be assigned >>> G = nx.Graph(e, day="Friday")
+>>> G.graph
+{'day': 'Friday'}
+ 
+  
+add_edge(u, v, attr_dict=None, **attr) [source]
+ 
+Add an edge between u and v while updating max node id.  See also networkx.Graph.add_edge().  
+  
+add_node(n, attr_dict=None, **attr) [source]
+ 
+Add node n while updating the maximum node id.  See also networkx.Graph.add_node().  
+  
+copy() [source]
+ 
+Copy the graph with its max node id.  See also networkx.Graph.copy().  
+  
+fresh_copy() [source]
+ 
+Return a fresh copy graph with the same data structure. A fresh copy has no nodes, edges or graph attributes. It is the same data structure as the current graph. This method is typically used to create an empty version of the graph. This is required when subclassing Graph with networkx v2 and does not cause problems for v1. Here is more detail from the network migrating from 1.x to 2.x document: With the new GraphViews (SubGraph, ReversedGraph, etc)
+you can't assume that ``G.__class__()`` will create a new
+instance of the same graph type as ``G``. In fact, the
+call signature for ``__class__`` differs depending on
+whether ``G`` is a view or a base class. For v2.x you
+should use ``G.fresh_copy()`` to create a null graph of
+the correct type---ready to fill with nodes and edges.
+ 
+  
+merge_nodes(src, dst, weight_func=<function min_weight>, in_place=True, extra_arguments=[], extra_keywords={}) [source]
+ 
+Merge node src and dst. The new combined node is adjacent to all the neighbors of src and dst. weight_func is called to decide the weight of edges incident on the new node.  Parameters 
+ 
+src, dstint 
+
+Nodes to be merged.  
+weight_funccallable, optional 
+
+Function to decide the attributes of edges incident on the new node. For each neighbor n for src and `dst, weight_func will be called as follows: weight_func(src, dst, n, *extra_arguments, **extra_keywords). src, dst and n are IDs of vertices in the RAG object which is in turn a subclass of networkx.Graph. It is expected to return a dict of attributes of the resulting edge.  
+in_placebool, optional 
+
+If set to True, the merged node has the id dst, else merged node has a new id which is returned.  
+extra_argumentssequence, optional 
+
+The sequence of extra positional arguments passed to weight_func.  
+extra_keywordsdictionary, optional 
+
+The dict of keyword arguments passed to the weight_func.    Returns 
+ 
+idint 
+
+The id of the new node.     Notes If in_place is False the resulting node has a new id, rather than dst. 
+  
+next_id() [source]
+ 
+Returns the id for the new node to be inserted. The current implementation returns one more than the maximum id.  Returns 
+ 
+idint 
+
+The id of the new node to be inserted.

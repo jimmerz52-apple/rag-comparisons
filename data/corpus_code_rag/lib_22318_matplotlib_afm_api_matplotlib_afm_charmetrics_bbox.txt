@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.CharMetrics.bbox
+
+bbox
+ 
+The bbox of the character (B) as a tuple (llx, lly, urx, ury).

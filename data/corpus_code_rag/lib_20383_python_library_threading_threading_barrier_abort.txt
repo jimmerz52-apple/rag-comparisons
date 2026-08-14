@@ -1,0 +1,4 @@
+# python.library.threading#threading.Barrier.abort
+
+abort()  
+Put the barrier into a broken state. This causes any active or future calls to wait() to fail with the BrokenBarrierError. Use this for example if one of the threads needs to abort, to avoid deadlocking the application. It may be preferable to simply create the barrier with a sensible timeout value to automatically guard against one of the threads going awry.

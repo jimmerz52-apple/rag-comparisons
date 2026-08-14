@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.lerp
+
+lerp() 
+ returns a linear interpolation to the given vector. lerp(Vector3, float) -> Vector3  Returns a Vector which is a linear interpolation between self and the given Vector. The second parameter determines how far between self an other the result is going to be. It must be a value between 0 and 1, where 0 means self and 1 means other will be returned.

@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.replace_header
+
+replace_header(_name, _value)  
+Replace a header. Replace the first header found in the message that matches _name, retaining header order and field name case. If no matching header was found, a KeyError is raised.

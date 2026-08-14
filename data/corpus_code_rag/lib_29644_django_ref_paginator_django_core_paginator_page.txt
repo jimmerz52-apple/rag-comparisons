@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Page
+
+class Page(object_list, number, paginator)  
+A page acts like a sequence of Page.object_list when using len() or iterating it directly.

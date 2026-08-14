@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.expressions.RowRange.frame_type
+
+frame_type  
+This attribute is set to 'ROWS'.

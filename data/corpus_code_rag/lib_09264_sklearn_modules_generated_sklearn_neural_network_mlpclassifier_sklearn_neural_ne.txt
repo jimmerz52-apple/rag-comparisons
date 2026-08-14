@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.neural_network.mlpclassifier#sklearn.neural_network.MLPClassifier.fit
+
+fit(X, y) [source]
+ 
+Fit the model to data matrix X and target(s) y.  Parameters 
+ 
+Xndarray or sparse matrix of shape (n_samples, n_features) 
+
+The input data.  
+yndarray of shape (n_samples,) or (n_samples, n_outputs) 
+
+The target values (class labels in classification, real numbers in regression).    Returns 
+ 
+selfreturns a trained MLP model.

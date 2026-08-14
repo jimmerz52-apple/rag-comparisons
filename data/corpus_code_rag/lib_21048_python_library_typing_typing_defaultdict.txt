@@ -1,0 +1,4 @@
+# python.library.typing#typing.DefaultDict
+
+class typing.DefaultDict(collections.defaultdict, MutableMapping[KT, VT])  
+A generic version of collections.defaultdict.  New in version 3.5.2.   Deprecated since version 3.9: collections.defaultdict now supports []. See PEP 585 and Generic Alias Type.

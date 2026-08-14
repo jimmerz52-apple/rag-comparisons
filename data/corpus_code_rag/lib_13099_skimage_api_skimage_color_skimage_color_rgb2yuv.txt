@@ -1,0 +1,18 @@
+# skimage.api.skimage.color#skimage.color.rgb2yuv
+
+skimage.color.rgb2yuv(rgb) [source]
+ 
+RGB to YUV color space conversion.  Parameters 
+ 
+rgb(…, 3) array_like 
+
+The image in RGB format. Final dimension denotes channels.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in YUV format. Same dimensions as input.    Raises 
+ ValueError
+
+If rgb is not at least 2-D with shape (…, 3).     Notes Y is between 0 and 1. Use YCbCr instead of YUV for the color space commonly used by video codecs, where Y ranges from 16 to 235. References  
+1  
+https://en.wikipedia.org/wiki/YUV

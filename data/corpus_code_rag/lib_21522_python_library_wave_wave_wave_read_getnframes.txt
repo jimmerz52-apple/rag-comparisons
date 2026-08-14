@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getnframes
+
+Wave_read.getnframes()  
+Returns number of audio frames.

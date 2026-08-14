@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.unlink
+
+Path.unlink(missing_ok=False)  
+Remove this file or symbolic link. If the path points to a directory, use Path.rmdir() instead. If missing_ok is false (the default), FileNotFoundError is raised if the path does not exist. If missing_ok is true, FileNotFoundError exceptions will be ignored (same behavior as the POSIX rm -f command).  Changed in version 3.8: The missing_ok parameter was added.

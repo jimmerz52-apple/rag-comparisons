@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.session_interface
+
+session_interface = <flask.sessions.SecureCookieSessionInterface object>  
+the session interface to use. By default an instance of SecureCookieSessionInterface is used here.  Changelog New in version 0.8.

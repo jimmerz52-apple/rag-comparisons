@@ -1,0 +1,6 @@
+# python.library.importlib#importlib.abc.Finder
+
+class importlib.abc.Finder  
+An abstract base class representing a finder.  Deprecated since version 3.3: Use MetaPathFinder or PathEntryFinder instead.   
+abstractmethod find_module(fullname, path=None)  
+An abstract method for finding a loader for the specified module. Originally specified in PEP 302, this method was meant for use in sys.meta_path and in the path-based import subsystem.  Changed in version 3.4: Returns None when called instead of raising NotImplementedError.

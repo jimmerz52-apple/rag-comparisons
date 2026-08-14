@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.Example.lineno
+
+lineno  
+The line number within the string containing this example where the example begins. This line number is zero-based with respect to the beginning of the containing string.

@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_fopaque
+
+Packer.pack_fopaque(n, data)  
+Packs a fixed length opaque data stream, similarly to pack_fstring().

@@ -1,0 +1,19 @@
+# python.library.re#re.error
+
+exception re.error(msg, pattern=None, pos=None)  
+Exception raised when a string passed to one of the functions here is not a valid regular expression (for example, it might contain unmatched parentheses) or when some other error occurs during compilation or matching. It is never an error if a string contains no match for a pattern. The error instance has the following additional attributes:  
+msg  
+The unformatted error message. 
+  
+pattern  
+The regular expression pattern. 
+  
+pos  
+The index in pattern where compilation failed (may be None). 
+  
+lineno  
+The line corresponding to pos (may be None). 
+  
+colno  
+The column corresponding to pos (may be None). 
+  Changed in version 3.5: Added additional attributes.

@@ -1,0 +1,78 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Layer
+
+class Layer  
+Layer is a wrapper for a layer of data in a DataSource object. You never create a Layer object directly. Instead, you retrieve them from a DataSource object, which is essentially a standard Python container of Layer objects. For example, you can access a specific layer by its index (e.g. ds[0] to access the first layer), or you can iterate over all the layers in the container in a for loop. The Layer itself acts as a container for geometric features. Typically, all the features in a given layer have the same geometry type. The geom_type property of a layer is an OGRGeomType that identifies the feature type. We can use it to print out some basic information about each layer in a DataSource: >>> for layer in ds:
+...     print('Layer "%s": %i %ss' % (layer.name, len(layer), layer.geom_type.name))
+...
+Layer "cities": 3 Points
+ The example output is from the cities data source, loaded above, which evidently contains one layer, called "cities", which contains three point features. For simplicity, the examples below assume that you’ve stored that layer in the variable layer: >>> layer = ds[0]
+  
+name 
+ Returns the name of this layer in the data source. >>> layer.name
+'cities'
+  
+num_feat 
+ Returns the number of features in the layer. Same as len(layer): >>> layer.num_feat
+3
+  
+geom_type 
+ Returns the geometry type of the layer, as an OGRGeomType object: >>> layer.geom_type.name
+'Point'
+  
+num_fields 
+ Returns the number of fields in the layer, i.e the number of fields of data associated with each feature in the layer: >>> layer.num_fields
+4
+  
+fields 
+ Returns a list of the names of each of the fields in this layer: >>> layer.fields
+['Name', 'Population', 'Density', 'Created']
+ Returns a list of the data types of each of the fields in this layer. These are subclasses of Field, discussed below: >>> [ft.__name__ for ft in layer.field_types]
+['OFTString', 'OFTReal', 'OFTReal', 'OFTDate']
+  
+field_widths 
+ Returns a list of the maximum field widths for each of the fields in this layer: >>> layer.field_widths
+[80, 11, 24, 10]
+  
+field_precisions 
+ Returns a list of the numeric precisions for each of the fields in this layer. This is meaningless (and set to zero) for non-numeric fields: >>> layer.field_precisions
+[0, 0, 15, 0]
+  
+extent 
+ Returns the spatial extent of this layer, as an Envelope object: >>> layer.extent.tuple
+(-104.609252, 29.763374, -95.23506, 38.971823)
+  
+srs 
+ Property that returns the SpatialReference associated with this layer: >>> print(layer.srs)
+GEOGCS["GCS_WGS_1984",
+    DATUM["WGS_1984",
+        SPHEROID["WGS_1984",6378137,298.257223563]],
+    PRIMEM["Greenwich",0],
+    UNIT["Degree",0.017453292519943295]]
+ If the Layer has no spatial reference information associated with it, None is returned.  
+spatial_filter 
+ Property that may be used to retrieve or set a spatial filter for this layer. A spatial filter can only be set with an OGRGeometry instance, a 4-tuple extent, or None. When set with something other than None, only features that intersect the filter will be returned when iterating over the layer: >>> print(layer.spatial_filter)
+None
+>>> print(len(layer))
+3
+>>> [feat.get('Name') for feat in layer]
+['Pueblo', 'Lawrence', 'Houston']
+>>> ks_extent = (-102.051, 36.99, -94.59, 40.00) # Extent for state of Kansas
+>>> layer.spatial_filter = ks_extent
+>>> len(layer)
+1
+>>> [feat.get('Name') for feat in layer]
+['Lawrence']
+>>> layer.spatial_filter = None
+>>> len(layer)
+3
+  
+get_fields() 
+ A method that returns a list of the values of a given field for each feature in the layer: >>> layer.get_fields('Name')
+['Pueblo', 'Lawrence', 'Houston']
+  
+get_geoms(geos=False) 
+ A method that returns a list containing the geometry of each feature in the layer. If the optional argument geos is set to True then the geometries are converted to GEOSGeometry objects. Otherwise, they are returned as OGRGeometry objects: >>> [pt.tuple for pt in layer.get_geoms()]
+[(-104.609252, 38.255001), (-95.23506, 38.971823), (-95.363151, 29.763374)]
+  
+test_capability(capability) 
+ Returns a boolean indicating whether this layer supports the given capability (a string). Examples of valid capability strings include: 'RandomRead', 'SequentialWrite', 'RandomWrite', 'FastSpatialFilter', 'FastFeatureCount', 'FastGetExtent', 'CreateField', 'Transactions', 'DeleteFeature', and 'FastSetNextByIndex'.

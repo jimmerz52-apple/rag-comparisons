@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.update
+
+update(props)[source]
+ 
+Update this artist's properties from the dict props.  Parameters 
+ 
+propsdict

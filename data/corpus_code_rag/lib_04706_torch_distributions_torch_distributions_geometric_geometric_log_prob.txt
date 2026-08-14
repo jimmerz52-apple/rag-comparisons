@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.geometric.Geometric.log_prob
+
+log_prob(value) [source]

@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.unpack_double
+
+Unpacker.unpack_double()  
+Unpacks a double-precision floating point number, similarly to unpack_float().

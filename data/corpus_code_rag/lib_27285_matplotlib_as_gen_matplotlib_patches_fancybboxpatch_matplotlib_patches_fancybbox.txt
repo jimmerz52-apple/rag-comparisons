@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.get_y
+
+get_y()[source]
+ 
+Return the bottom coord of the rectangle.

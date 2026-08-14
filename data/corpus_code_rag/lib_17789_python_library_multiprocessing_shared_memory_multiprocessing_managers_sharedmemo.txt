@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.managers.SharedMemoryManager.SharedMemory
+
+SharedMemory(size)  
+Create and return a new SharedMemory object with the specified size in bytes.

@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.SessionInterface.get_cookie_name
+
+get_cookie_name(app)  
+Returns the name of the session cookie. Uses app.session_cookie_name which is set to SESSION_COOKIE_NAME  Parameters 
+app (Flask) –   Return type 
+str

@@ -1,0 +1,11 @@
+# werkzeug.urls.index#werkzeug.urls.url_quote_plus
+
+werkzeug.urls.url_quote_plus(string, charset='utf-8', errors='strict', safe='')  
+URL encode a single string with the given encoding and convert whitespace to “+”.  Parameters 
+ 
+s – The string to quote. 
+charset (str) – The charset to be used. 
+safe (str) – An optional sequence of safe characters. 
+string (str) –  
+errors (str) –    Return type 
+str

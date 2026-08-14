@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_palette
+
+get_palette() 
+ get the color index palette for an 8-bit Surface get_palette() -> [RGB, RGB, RGB, ...]  Return a list of up to 256 color elements that represent the indexed colors used in an 8-bit Surface. The returned list is a copy of the palette, and changes will have no effect on the Surface. Returning a list of Color(with length 3) instances instead of tuples.  New in pygame 1.9.

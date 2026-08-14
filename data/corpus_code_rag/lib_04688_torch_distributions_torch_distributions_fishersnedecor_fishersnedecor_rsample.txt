@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.fishersnedecor.FisherSnedecor.rsample
+
+rsample(sample_shape=torch.Size([])) [source]

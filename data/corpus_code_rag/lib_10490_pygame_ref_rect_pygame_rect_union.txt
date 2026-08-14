@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.union
+
+union() 
+ joins two rectangles into one union(Rect) -> Rect  Returns a new rectangle that completely covers the area of the two provided rectangles. There may be area inside the new Rect that is not covered by the originals.

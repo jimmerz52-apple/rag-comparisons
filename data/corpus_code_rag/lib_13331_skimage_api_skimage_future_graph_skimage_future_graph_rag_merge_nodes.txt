@@ -1,0 +1,25 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG.merge_nodes
+
+merge_nodes(src, dst, weight_func=<function min_weight>, in_place=True, extra_arguments=[], extra_keywords={}) [source]
+ 
+Merge node src and dst. The new combined node is adjacent to all the neighbors of src and dst. weight_func is called to decide the weight of edges incident on the new node.  Parameters 
+ 
+src, dstint 
+
+Nodes to be merged.  
+weight_funccallable, optional 
+
+Function to decide the attributes of edges incident on the new node. For each neighbor n for src and `dst, weight_func will be called as follows: weight_func(src, dst, n, *extra_arguments, **extra_keywords). src, dst and n are IDs of vertices in the RAG object which is in turn a subclass of networkx.Graph. It is expected to return a dict of attributes of the resulting edge.  
+in_placebool, optional 
+
+If set to True, the merged node has the id dst, else merged node has a new id which is returned.  
+extra_argumentssequence, optional 
+
+The sequence of extra positional arguments passed to weight_func.  
+extra_keywordsdictionary, optional 
+
+The dict of keyword arguments passed to the weight_func.    Returns 
+ 
+idint 
+
+The id of the new node.     Notes If in_place is False the resulting node has a new id, rather than dst.

@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.BaseWidget.__init__
+
+__init__(name, ptype=None, callback=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

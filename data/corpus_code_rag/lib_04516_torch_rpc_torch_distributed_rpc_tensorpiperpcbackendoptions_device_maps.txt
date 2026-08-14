@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.TensorPipeRpcBackendOptions.device_maps
+
+property device_maps  
+The device map locations.

@@ -1,0 +1,5 @@
+# python.library.bisect#bisect.insort
+
+bisect.insort_right(a, x, lo=0, hi=len(a))  
+bisect.insort(a, x, lo=0, hi=len(a))  
+Similar to insort_left(), but inserting x in a after any existing entries of x.

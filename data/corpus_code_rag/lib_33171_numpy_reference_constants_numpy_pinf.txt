@@ -1,0 +1,5 @@
+# numpy.reference.constants#numpy.PINF
+
+numpy.PINF
+ 
+IEEE 754 floating point representation of (positive) infinity. Use inf because Inf, Infinity, PINF and infty are aliases for inf. For more details, see inf. See Also inf

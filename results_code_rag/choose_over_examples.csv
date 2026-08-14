@@ -1,0 +1,131 @@
+question,gold,hotpot_type,choose,choose_method,choose_score,over,over_method,over_score,margin,rule
+"Complete the following Python function. Return only the full function implementation.
+
+from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""","from typing import List
+
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """""" Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """"""
+    for idx, elem in enumerate(numbers):
+        for idx2, elem2 in enumerate(numbers):
+            if idx != idx2:
+                distance = abs(elem - elem2)
+                if distance < threshold:
+                    return True
+
+    return False",humaneval,Vector + rerank,rerank_semantic,0.5597560975609757,Semantic (vector),semantic_rag,0.0,0.5597560975609757,"On this question, Vector + rerank beat Semantic (vector)."
+"Complete the following Python function. Return only the full function implementation.
+
+from typing import List
+
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """""" Filter an input list of strings only for ones that contain given substring
+    >>> filter_by_substring([], 'a')
+    []
+    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""","from typing import List
+
+
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """""" Filter an input list of strings only for ones that contain given substring
+    >>> filter_by_substring([], 'a')
+    []
+    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
+    """"""
+    return [x for x in strings if substring in x]",humaneval,Semantic (vector),semantic_rag,0.4861111111111111,Vector + rerank,rerank_semantic,0.0416666666666666,0.44444444444444453,"On this question, Semantic (vector) beat Vector + rerank."
+"Complete the following Python function. Return only the full function implementation.
+
+from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""","from typing import List
+
+
+def below_zero(operations: List[int]) -> bool:
+    """""" You're given a list of deposit and withdrawal operations on a bank account that starts with
+    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and
+    at that point function should return True. Otherwise it should return False.
+    >>> below_zero([1, 2, 3])
+    False
+    >>> below_zero([1, 2, -4, 5])
+    True
+    """"""
+    balance = 0
+
+    for op in operations:
+        balance += op
+        if balance < 0:
+            return True
+
+    return False",humaneval,Semantic (vector),semantic_rag,0.5833333333333334,Vector + rerank,rerank_semantic,0.2638888888888889,0.3194444444444445,"On this question, Semantic (vector) beat Vector + rerank."
+"Write a Python function for the following problem. Return only code.
+
+Write a function to count the most common words in a dictionary.","from collections import Counter
+def count_common(words):
+  word_counts = Counter(words)
+  top_four = word_counts.most_common(4)
+  return (top_four)",mbpp,Vector + rerank,rerank_semantic,0.5125,Semantic (vector),semantic_rag,0.2,0.31249999999999994,"On this question, Vector + rerank beat Semantic (vector)."
+"Write a Python function for the following problem. Return only code.
+
+Write a function to split a string at lowercase letters.","import re
+def split_lowerstring(text):
+ return (re.findall('[a-z][^a-z]*', text))",mbpp,Vector + rerank,rerank_semantic,0.475,Semantic (vector),semantic_rag,0.275,0.19999999999999996,"On this question, Vector + rerank beat Semantic (vector)."
+"Write a Python function for the following problem. Return only code.
+
+Write a function to sort a given matrix in ascending order according to the sum of its rows.","def sort_matrix(M):
+    result = sorted(M, key=sum)
+    return result",mbpp,Semantic (vector),semantic_rag,0.3,Vector + rerank,rerank_semantic,0.125,0.175,"On this question, Semantic (vector) beat Vector + rerank."
+"Complete the following Python function. Return only the full function implementation.
+
+from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""","from typing import List
+
+
+def mean_absolute_deviation(numbers: List[float]) -> float:
+    """""" For a given list of input numbers, calculate Mean Absolute Deviation
+    around the mean of this dataset.
+    Mean Absolute Deviation is the average absolute difference between each
+    element and a centerpoint (mean in this case):
+    MAD = average | x - x_mean |
+    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])
+    1.0
+    """"""
+    mean = sum(numbers) / len(numbers)
+    return sum(abs(x - mean) for x in numbers) / len(numbers)",humaneval,Vector + rerank,rerank_semantic,0.4671052631578947,Semantic (vector),semantic_rag,0.3071428571428571,0.15996240601503758,"On this question, Vector + rerank beat Semantic (vector)."

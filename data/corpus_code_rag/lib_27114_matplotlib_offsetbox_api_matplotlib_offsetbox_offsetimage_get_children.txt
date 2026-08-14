@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetImage.get_children
+
+get_children()[source]
+ 
+Return a list of the child Artists.

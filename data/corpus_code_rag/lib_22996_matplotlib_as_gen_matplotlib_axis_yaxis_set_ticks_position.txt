@@ -1,0 +1,19 @@
+# matplotlib._as_gen.matplotlib.axis.yaxis.set_ticks_position
+
+matplotlib.axis.YAxis.set_ticks_position   YAxis.set_ticks_position(position)[source]
+ 
+Set the ticks position.  Parameters 
+ 
+position{'left', 'right', 'both', 'default', 'none'}
+
+
+'both' sets the ticks to appear on both positions, but does not change the tick labels. 'default' resets the tick positions to the default: ticks on both positions, labels at left. 'none' can be used if you don't want any ticks. 'none' and 'both' affect only the ticks, not the labels.     
+  Examples using matplotlib.axis.YAxis.set_ticks_position
+ 
+   Spine Placement   
+
+   Spines   
+
+   Custom spine bounds   
+
+   Dropped spines

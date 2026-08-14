@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.ProtocolError.errmsg
+
+errmsg  
+The error message or diagnostic string.

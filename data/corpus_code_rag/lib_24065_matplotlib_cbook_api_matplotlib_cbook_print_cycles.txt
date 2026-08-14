@@ -1,0 +1,14 @@
+# matplotlib.cbook_api#matplotlib.cbook.print_cycles
+
+matplotlib.cbook.print_cycles(objects, outstream=<_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>, show_progress=False)[source]
+ 
+Print loops of cyclic references in the given objects. It is often useful to pass in gc.garbage to find the cycles that are preventing some objects from being garbage collected.  Parameters 
+ objects
+
+A list of objects to find cycles in.  outstream
+
+The stream for output.  
+show_progressbool
+
+
+If True, print the number of objects reached as they are found.

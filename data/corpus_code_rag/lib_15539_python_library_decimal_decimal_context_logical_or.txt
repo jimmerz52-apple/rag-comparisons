@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.logical_or
+
+logical_or(x, y)  
+Applies the logical operation or between each operand’s digits.

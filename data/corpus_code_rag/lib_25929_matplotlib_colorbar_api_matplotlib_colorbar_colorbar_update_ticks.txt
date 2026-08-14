@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.update_ticks
+
+update_ticks()[source]
+ 
+Setup the ticks and ticklabels. This should not be needed by users.

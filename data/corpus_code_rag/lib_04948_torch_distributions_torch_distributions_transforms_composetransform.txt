@@ -1,0 +1,8 @@
+# torch.distributions#torch.distributions.transforms.ComposeTransform
+
+class torch.distributions.transforms.ComposeTransform(parts, cache_size=0) [source]
+ 
+Composes multiple transforms in a chain. The transforms being composed are responsible for caching.  Parameters 
+ 
+parts (list of Transform) – A list of transforms to compose. 
+cache_size (int) – Size of cache. If zero, no caching is done. If one, the latest single value is cached. Only 0 and 1 are supported.

@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.clongfloat
+
+numpy.clongfloat[source]
+ 
+alias of numpy.clongdouble

@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.DatagramProtocol
+
+class asyncio.DatagramProtocol(BaseProtocol)  
+The base class for implementing datagram (UDP) protocols.

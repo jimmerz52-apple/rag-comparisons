@@ -1,0 +1,5 @@
+# matplotlib.container_api#matplotlib.container.Container.get_label
+
+get_label()[source]
+ 
+Return the label used for this artist in the legend.

@@ -1,0 +1,4 @@
+# python.library.random#random.choice
+
+random.choice(seq)  
+Return a random element from the non-empty sequence seq. If seq is empty, raises IndexError.

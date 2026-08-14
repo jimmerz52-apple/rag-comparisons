@@ -1,0 +1,4 @@
+# python.library.sys#sys.getdefaultencoding
+
+sys.getdefaultencoding()  
+Return the name of the current default string encoding used by the Unicode implementation.

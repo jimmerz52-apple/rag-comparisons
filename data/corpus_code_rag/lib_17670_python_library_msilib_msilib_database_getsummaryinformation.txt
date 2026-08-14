@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Database.GetSummaryInformation
+
+Database.GetSummaryInformation(count)  
+Return a new summary information object, by calling MsiGetSummaryInformation(). count is the maximum number of updated values.

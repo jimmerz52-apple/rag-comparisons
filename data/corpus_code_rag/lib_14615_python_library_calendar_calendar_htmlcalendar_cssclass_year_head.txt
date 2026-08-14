@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.HTMLCalendar.cssclass_year_head
+
+cssclass_year_head  
+The CSS class for the table head for the whole year (used by formatyear()). The default value is "year".  New in version 3.7.

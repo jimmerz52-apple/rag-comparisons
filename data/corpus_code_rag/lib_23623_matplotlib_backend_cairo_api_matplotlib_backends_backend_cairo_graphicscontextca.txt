@@ -1,0 +1,5 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_linewidth
+
+set_linewidth(w)[source]
+ 
+Set the linewidth in points.

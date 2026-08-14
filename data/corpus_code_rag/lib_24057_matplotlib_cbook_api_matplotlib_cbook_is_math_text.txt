@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.is_math_text
+
+matplotlib.cbook.is_math_text(s)[source]
+ 
+Return whether the string s contains math expressions. This is done by checking whether s contains an even number of non-escaped dollar signs.

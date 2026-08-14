@@ -1,0 +1,15 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerPatch
+
+classmatplotlib.legend_handler.HandlerPatch(patch_func=None, **kwargs)[source]
+ 
+Handler for Patch instances.  Parameters 
+ 
+patch_funccallable, optional
+
+
+The function that creates the legend key artist. patch_func should have the signature: def patch_func(legend=legend, orig_handle=orig_handle,
+               xdescent=xdescent, ydescent=ydescent,
+               width=width, height=height, fontsize=fontsize)
+ Subsequently the created artist will have its update_prop method called and the appropriate transform will be applied.  **kwargs
+
+Keyword arguments forwarded to HandlerBase.       create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]

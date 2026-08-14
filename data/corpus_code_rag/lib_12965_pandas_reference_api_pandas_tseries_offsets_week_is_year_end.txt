@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.week.is_year_end
+
+pandas.tseries.offsets.Week.is_year_end   Week.is_year_end()

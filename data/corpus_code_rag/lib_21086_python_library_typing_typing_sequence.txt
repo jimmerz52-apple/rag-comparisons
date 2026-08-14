@@ -1,0 +1,4 @@
+# python.library.typing#typing.Sequence
+
+class typing.Sequence(Reversible[T_co], Collection[T_co])  
+A generic version of collections.abc.Sequence.  Deprecated since version 3.9: collections.abc.Sequence now supports []. See PEP 585 and Generic Alias Type.

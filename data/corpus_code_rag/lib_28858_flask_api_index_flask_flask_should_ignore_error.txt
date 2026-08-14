@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.should_ignore_error
+
+should_ignore_error(error)  
+This is called to figure out if an error should be ignored or not as far as the teardown system is concerned. If this function returns True then the teardown handlers will not be passed the error.  Changelog New in version 0.10.   Parameters 
+error (Optional[BaseException]) –   Return type 
+bool

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.base
+
+numpy.generic.base attribute   generic.base
+ 
+Scalar attribute identical to the corresponding array attribute. Please see ndarray.base.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.EXTENSION_SUFFIXES
+
+importlib.machinery.EXTENSION_SUFFIXES  
+A list of strings representing the recognized file suffixes for extension modules.  New in version 3.3.

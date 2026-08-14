@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.dtype
+
+pandas.Index.dtype   Index.dtype
+ 
+Return the dtype object of the underlying data.

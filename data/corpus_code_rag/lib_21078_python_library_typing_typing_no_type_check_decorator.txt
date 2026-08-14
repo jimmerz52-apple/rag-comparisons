@@ -1,0 +1,4 @@
+# python.library.typing#typing.no_type_check_decorator
+
+@typing.no_type_check_decorator  
+Decorator to give another decorator the no_type_check() effect. This wraps the decorator with something that wraps the decorated function in no_type_check().

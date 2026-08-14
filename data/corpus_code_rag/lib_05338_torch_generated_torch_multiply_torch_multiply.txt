@@ -1,0 +1,4 @@
+# torch.generated.torch.multiply#torch.multiply
+
+torch.multiply(input, other, *, out=None)  
+Alias for torch.mul().

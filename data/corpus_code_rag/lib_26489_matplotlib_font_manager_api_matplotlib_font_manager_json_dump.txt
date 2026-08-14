@@ -1,0 +1,6 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.json_dump
+
+matplotlib.font_manager.json_dump(data, filename)[source]
+ 
+Dump FontManager data as JSON to the file named filename.  See also  json_load
+  Notes File paths that are children of the Matplotlib data path (typically, fonts shipped with Matplotlib) are stored relative to that data path (to remain valid across virtualenvs). This function temporarily locks the output file to prevent multiple processes from overwriting one another's output.

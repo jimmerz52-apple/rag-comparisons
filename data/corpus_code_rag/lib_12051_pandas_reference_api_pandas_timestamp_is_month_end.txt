@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.timestamp.is_month_end
+
+pandas.Timestamp.is_month_end   Timestamp.is_month_end
+ 
+Return True if date is last day of month. Examples 
+>>> ts = pd.Timestamp(2020, 3, 14)
+>>> ts.is_month_end
+False
+  
+>>> ts = pd.Timestamp(2020, 12, 31)
+>>> ts.is_month_end
+True

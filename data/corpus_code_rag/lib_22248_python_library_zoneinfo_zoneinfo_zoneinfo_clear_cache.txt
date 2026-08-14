@@ -1,0 +1,4 @@
+# python.library.zoneinfo#zoneinfo.ZoneInfo.clear_cache
+
+classmethod ZoneInfo.clear_cache(*, only_keys=None)  
+A method for invalidating the cache on the ZoneInfo class. If no arguments are passed, all caches are invalidated and the next call to the primary constructor for each key will return a new instance. If an iterable of key names is passed to the only_keys parameter, only the specified keys will be removed from the cache. Keys passed to only_keys but not found in the cache are ignored.  Warning Invoking this function may change the semantics of datetimes using ZoneInfo in surprising ways; this modifies process-wide global state and thus may have wide-ranging effects. Only use it if you know that you need to.

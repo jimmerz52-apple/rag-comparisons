@@ -1,0 +1,10 @@
+# tensorflow.experimental.numpy.issubdtype
+
+tf.experimental.numpy.issubdtype Returns True if first argument is a typecode lower/equal in type hierarchy. 
+tf.experimental.numpy.issubdtype(
+    arg1, arg2
+)
+ Parameters arg1, arg2 : dtype_like dtype or string representing a typecode. Returns out : bool See Also issubsctype, issubclass_ numpy.core.numerictypes : Overview of numpy type hierarchy. Examples >>> np.issubdtype('S1', np.string_)
+True
+>>> np.issubdtype(np.float64, np.float32)
+False

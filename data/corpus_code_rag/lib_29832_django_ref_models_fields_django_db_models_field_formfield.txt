@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.formfield
+
+formfield(form_class=None, choices_form_class=None, **kwargs)  
+Returns the default django.forms.Field of this field for ModelForm. By default, if both form_class and choices_form_class are None, it uses CharField. If the field has choices and choices_form_class isn’t specified, it uses TypedChoiceField. See Specifying the form field for a model field for usage.

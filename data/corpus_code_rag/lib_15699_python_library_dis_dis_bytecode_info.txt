@@ -1,0 +1,4 @@
+# python.library.dis#dis.Bytecode.info
+
+info()  
+Return a formatted multi-line string with detailed information about the code object, like code_info().

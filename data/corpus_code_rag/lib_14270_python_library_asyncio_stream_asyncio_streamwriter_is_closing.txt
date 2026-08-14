@@ -1,0 +1,4 @@
+# python.library.asyncio-stream#asyncio.StreamWriter.is_closing
+
+is_closing()  
+Return True if the stream is closed or in the process of being closed.  New in version 3.7.

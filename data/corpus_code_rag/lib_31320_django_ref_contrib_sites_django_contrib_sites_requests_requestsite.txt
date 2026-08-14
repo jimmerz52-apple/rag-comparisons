@@ -1,0 +1,6 @@
+# django.ref.contrib.sites#django.contrib.sites.requests.RequestSite
+
+class requests.RequestSite  
+A class that shares the primary interface of Site (i.e., it has domain and name attributes) but gets its data from a Django HttpRequest object rather than from a database.  
+__init__(request)  
+Sets the name and domain attributes to the value of get_host().

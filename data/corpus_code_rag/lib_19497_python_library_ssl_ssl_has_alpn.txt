@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_ALPN
+
+ssl.HAS_ALPN  
+Whether the OpenSSL library has built-in support for the Application-Layer Protocol Negotiation TLS extension as described in RFC 7301.  New in version 3.5.

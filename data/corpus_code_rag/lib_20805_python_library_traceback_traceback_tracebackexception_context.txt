@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.__context__
+
+__context__  
+A TracebackException of the original __context__.

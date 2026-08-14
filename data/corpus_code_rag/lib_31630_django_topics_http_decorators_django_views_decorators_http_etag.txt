@@ -1,0 +1,3 @@
+# django.topics.http.decorators#django.views.decorators.http.etag
+
+etag(etag_func)

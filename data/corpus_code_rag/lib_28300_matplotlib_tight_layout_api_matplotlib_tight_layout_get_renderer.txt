@@ -1,0 +1,3 @@
+# matplotlib.tight_layout_api#matplotlib.tight_layout.get_renderer
+
+matplotlib.tight_layout.get_renderer(fig)[source]

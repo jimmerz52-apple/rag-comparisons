@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.covariance.ellipticenvelope#sklearn.covariance.EllipticEnvelope.correct_covariance
+
+correct_covariance(data) [source]
+ 
+Apply a correction to raw Minimum Covariance Determinant estimates. Correction using the empirical correction factor suggested by Rousseeuw and Van Driessen in [RVD].  Parameters 
+ 
+dataarray-like of shape (n_samples, n_features) 
+
+The data matrix, with p features and n samples. The data set must be the one which was used to compute the raw estimates.    Returns 
+ 
+covariance_correctedndarray of shape (n_features, n_features) 
+
+Corrected robust covariance estimate.     References  
+RVD  
+A Fast Algorithm for the Minimum Covariance Determinant Estimator, 1999, American Statistical Association and the American Society for Quality, TECHNOMETRICS

@@ -1,0 +1,3 @@
+# django.howto.custom-template-tags#django.template.Library.simple_tag
+
+django.template.Library.simple_tag()

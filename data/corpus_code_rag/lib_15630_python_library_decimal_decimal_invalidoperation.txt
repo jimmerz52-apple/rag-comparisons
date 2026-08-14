@@ -1,0 +1,12 @@
+# python.library.decimal#decimal.InvalidOperation
+
+class decimal.InvalidOperation  
+An invalid operation was performed. Indicates that an operation was requested that does not make sense. If not trapped, returns NaN. Possible causes include: Infinity - Infinity
+0 * Infinity
+Infinity / Infinity
+x % 0
+Infinity % x
+sqrt(-x) and x > 0
+0 ** 0
+x ** (non-integer)
+x ** Infinity

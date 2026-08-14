@@ -1,0 +1,7 @@
+# torch.nn.functional#torch.nn.functional.adaptive_max_pool1d
+
+torch.nn.functional.adaptive_max_pool1d(*args, **kwargs)  
+Applies a 1D adaptive max pooling over an input signal composed of several input planes. See AdaptiveMaxPool1d for details and output shape.  Parameters 
+ 
+output_size – the target output size (single integer) 
+return_indices – whether to return pooling indices. Default: False

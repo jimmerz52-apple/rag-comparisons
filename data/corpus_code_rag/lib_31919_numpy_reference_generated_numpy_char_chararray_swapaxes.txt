@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.char.chararray.swapaxes
+
+numpy.char.chararray.swapaxes method   char.chararray.swapaxes(axis1, axis2)
+ 
+Return a view of the array with axis1 and axis2 interchanged. Refer to numpy.swapaxes for full documentation.  See also  numpy.swapaxes
+
+equivalent function

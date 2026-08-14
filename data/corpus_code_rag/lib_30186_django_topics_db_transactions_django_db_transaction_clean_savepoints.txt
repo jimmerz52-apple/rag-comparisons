@@ -1,0 +1,4 @@
+# django.topics.db.transactions#django.db.transaction.clean_savepoints
+
+clean_savepoints(using=None)  
+Resets the counter used to generate unique savepoint IDs.

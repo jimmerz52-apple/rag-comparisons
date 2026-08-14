@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.is_cached
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.is_cached method   distutils.ccompiler_opt.CCompilerOpt.is_cached()[source]
+ 
+Returns True if the class loaded from the cache file

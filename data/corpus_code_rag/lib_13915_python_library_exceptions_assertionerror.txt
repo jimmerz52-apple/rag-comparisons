@@ -1,0 +1,4 @@
+# python.library.exceptions#AssertionError
+
+exception AssertionError  
+Raised when an assert statement fails.

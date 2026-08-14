@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.HAVE_THREADS
+
+decimal.HAVE_THREADS  
+The value is True. Deprecated, because Python now always has threads.

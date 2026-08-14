@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_in_layout
+
+matplotlib.artist.Artist.get_in_layout   Artist.get_in_layout()[source]
+ 
+Return boolean flag, True if artist is included in layout calculations. E.g. Constrained Layout Guide, Figure.tight_layout(), and fig.savefig(fname, bbox_inches='tight').

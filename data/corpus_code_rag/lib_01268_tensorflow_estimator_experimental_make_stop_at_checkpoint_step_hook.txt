@@ -1,0 +1,7 @@
+# tensorflow.estimator.experimental.make_stop_at_checkpoint_step_hook
+
+tf.estimator.experimental.make_stop_at_checkpoint_step_hook     View source on GitHub    Creates a proper StopAtCheckpointStepHook based on chief status.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.estimator.experimental.make_stop_at_checkpoint_step_hook  
+tf.estimator.experimental.make_stop_at_checkpoint_step_hook(
+    estimator, last_step, wait_after_file_check_secs=30
+)

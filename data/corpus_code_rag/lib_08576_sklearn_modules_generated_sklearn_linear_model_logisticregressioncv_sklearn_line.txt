@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.linear_model.logisticregressioncv#sklearn.linear_model.LogisticRegressionCV.score
+
+score(X, y, sample_weight=None) [source]
+ 
+Returns the score using the scoring option on the given test data and labels.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples.  
+yarray-like of shape (n_samples,) 
+
+True labels for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+Score of self.predict(X) wrt. y.

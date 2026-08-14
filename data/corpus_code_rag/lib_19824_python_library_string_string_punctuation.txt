@@ -1,0 +1,4 @@
+# python.library.string#string.punctuation
+
+string.punctuation  
+String of ASCII characters which are considered punctuation characters in the C locale: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~.

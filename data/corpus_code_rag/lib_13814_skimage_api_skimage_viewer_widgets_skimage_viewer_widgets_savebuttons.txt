@@ -1,0 +1,13 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.SaveButtons
+
+class skimage.viewer.widgets.SaveButtons(name='Save to:', default_format='png') [source]
+ 
+Bases: skimage.viewer.widgets.core.BaseWidget Buttons to save image to io.stack or to a file.  
+__init__(name='Save to:', default_format='png') [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+save_to_file(filename=None) [source]
+
+  
+save_to_stack() [source]

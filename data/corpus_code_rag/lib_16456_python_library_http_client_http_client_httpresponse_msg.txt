@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.msg
+
+HTTPResponse.msg  
+A http.client.HTTPMessage instance containing the response headers. http.client.HTTPMessage is a subclass of email.message.Message.

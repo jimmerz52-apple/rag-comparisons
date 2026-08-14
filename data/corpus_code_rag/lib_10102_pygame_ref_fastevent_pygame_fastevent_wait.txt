@@ -1,0 +1,4 @@
+# pygame.ref.fastevent#pygame.fastevent.wait
+
+pygame.fastevent.wait() 
+ wait for an event wait() -> Event  Returns the current event on the queue. If there are no messages waiting on the queue, this will not return until one is available. Sometimes it is important to use this wait to get events from the queue, it will allow your application to idle when the user isn't doing anything with it.

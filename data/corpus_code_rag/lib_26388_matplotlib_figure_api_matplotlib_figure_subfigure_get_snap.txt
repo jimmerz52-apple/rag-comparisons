@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.get_snap
+
+get_snap()[source]
+ 
+Return the snap setting. See set_snap for details.

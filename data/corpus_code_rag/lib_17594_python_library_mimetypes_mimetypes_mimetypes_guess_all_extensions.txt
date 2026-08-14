@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.MimeTypes.guess_all_extensions
+
+guess_all_extensions(type, strict=True)  
+Similar to the guess_all_extensions() function, using the tables stored as part of the object.

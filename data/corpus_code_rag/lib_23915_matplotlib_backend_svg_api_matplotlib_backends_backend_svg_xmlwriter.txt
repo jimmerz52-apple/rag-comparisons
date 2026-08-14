@@ -1,0 +1,51 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter
+
+classmatplotlib.backends.backend_svg.XMLWriter(file)[source]
+ 
+Bases: object  Parameters 
+ 
+filewritable text file-like object
+
+     close(id)[source]
+ 
+Close open elements, up to (and including) the element identified by the given identifier.  Parameters 
+ id
+
+Element identifier, as returned by the start() method.     
+   comment(comment)[source]
+ 
+Add a comment to the output stream.  Parameters 
+ 
+commentstr
+
+
+Comment text.     
+   data(text)[source]
+ 
+Add character data to the output stream.  Parameters 
+ 
+textstr
+
+
+Character data.     
+   element(tag, text=None, attrib={}, **extra)[source]
+ 
+Add an entire element. This is the same as calling start(), data(), and end() in sequence. The text argument can be omitted. 
+   end(tag=None, indent=True)[source]
+ 
+Close the current element (opened by the most recent call to start()).  Parameters 
+ tag
+
+Element tag. If given, the tag must match the start tag. If omitted, the current element is closed.     
+   flush()[source]
+ 
+Flush the output stream. 
+   start(tag, attrib={}, **extra)[source]
+ 
+Open a new element. Attributes can be given as keyword arguments, or as a string/string dictionary. The method returns an opaque identifier that can be passed to the close() method, to close all open elements up to and including this one.  Parameters 
+ tag
+
+Element tag.  attrib
+
+Attribute dictionary. Alternatively, attributes can be given as keyword arguments.    Returns 
+ An element identifier.

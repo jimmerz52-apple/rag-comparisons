@@ -1,0 +1,4 @@
+# python.library.token#token.DOUBLESTAR
+
+token.DOUBLESTAR  
+Token value for "**".

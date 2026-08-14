@@ -1,0 +1,4 @@
+# python.library.curses#curses.get_escdelay
+
+curses.get_escdelay()  
+Retrieves the value set by set_escdelay().  New in version 3.9.

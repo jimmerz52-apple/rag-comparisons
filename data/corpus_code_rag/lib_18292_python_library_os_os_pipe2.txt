@@ -1,0 +1,4 @@
+# python.library.os#os.pipe2
+
+os.pipe2(flags)  
+Create a pipe with flags set atomically. flags can be constructed by ORing together one or more of these values: O_NONBLOCK, O_CLOEXEC. Return a pair of file descriptors (r, w) usable for reading and writing, respectively. Availability: some flavors of Unix.  New in version 3.3.

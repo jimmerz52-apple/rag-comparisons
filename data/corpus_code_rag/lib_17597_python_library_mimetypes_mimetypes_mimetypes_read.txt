@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.MimeTypes.read
+
+read(filename, strict=True)  
+Load MIME information from a file named filename. This uses readfp() to parse the file. If strict is True, information will be added to list of standard types, else to the list of non-standard types.

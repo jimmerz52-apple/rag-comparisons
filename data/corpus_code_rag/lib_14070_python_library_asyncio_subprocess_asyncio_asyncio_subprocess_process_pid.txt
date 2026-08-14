@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.Process.pid
+
+pid  
+Process identification number (PID). Note that for processes created by the create_subprocess_shell() function, this attribute is the PID of the spawned shell.

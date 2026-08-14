@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_button
+
+get_button() 
+ get the current button state get_button(button) -> bool  Returns the current state of a joystick button.

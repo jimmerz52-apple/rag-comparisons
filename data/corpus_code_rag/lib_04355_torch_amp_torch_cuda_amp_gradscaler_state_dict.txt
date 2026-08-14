@@ -1,0 +1,10 @@
+# torch.amp#torch.cuda.amp.GradScaler.state_dict
+
+state_dict() [source]
+ 
+Returns the state of the scaler as a dict. It contains five entries:  
+"scale" - a Python float containing the current scale 
+"growth_factor" - a Python float containing the current growth factor 
+"backoff_factor" - a Python float containing the current backoff factor 
+"growth_interval" - a Python int containing the current growth interval 
+"_growth_tracker" - a Python int containing the number of recent consecutive unskipped steps.  If this instance is not enabled, returns an empty dict.  Note If you wish to checkpoint the scaler’s state after a particular iteration, state_dict() should be called after update().

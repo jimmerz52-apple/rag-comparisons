@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_children
+
+matplotlib.artist.Artist.get_children   Artist.get_children()[source]
+ 
+Return a list of the child Artists of this Artist.

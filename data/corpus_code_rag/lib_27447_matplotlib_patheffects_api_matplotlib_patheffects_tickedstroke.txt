@@ -1,0 +1,26 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.TickedStroke
+
+classmatplotlib.patheffects.TickedStroke(offset=(0, 0), spacing=10.0, angle=45.0, length=1.4142135623730951, **kwargs)[source]
+ 
+Bases: matplotlib.patheffects.AbstractPathEffect A line-based PathEffect which draws a path with a ticked style. This line style is frequently used to represent constraints in optimization. The ticks may be used to indicate that one side of the line is invalid or to represent a closed boundary of a domain (i.e. a wall or the edge of a pipe). The spacing, length, and angle of ticks can be controlled. This line style is sometimes referred to as a hatched line. See also the contour demo example. See also the contours in optimization example.  Parameters 
+ 
+offset(float, float), default: (0, 0)
+
+
+The (x, y) offset to apply to the path, in points.  
+spacingfloat, default: 10.0
+
+
+The spacing between ticks in points.  
+anglefloat, default: 45.0
+
+
+The angle between the path and the tick in degrees. The angle is measured as if you were an ant walking along the curve, with zero degrees pointing directly ahead, 90 to your left, -90 to your right, and 180 behind you.  
+lengthfloat, default: 1.414
+
+
+The length of the tick relative to spacing. Recommended length = 1.414 (sqrt(2)) when angle=45, length=1.0 when angle=90 and length=2.0 when angle=60.  **kwargs
+
+Extra keywords are stored and passed through to AbstractPathEffect._update_gc().     Examples See TickedStroke patheffect.   draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Draw the path with updated gc.

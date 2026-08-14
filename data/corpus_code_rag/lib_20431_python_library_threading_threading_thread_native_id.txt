@@ -1,0 +1,4 @@
+# python.library.threading#threading.Thread.native_id
+
+native_id  
+The native integral thread ID of this thread. This is a non-negative integer, or None if the thread has not been started. See the get_native_id() function. This represents the Thread ID (TID) as assigned to the thread by the OS (kernel). Its value may be used to uniquely identify this particular thread system-wide (until the thread terminates, after which the value may be recycled by the OS).  Note Similar to Process IDs, Thread IDs are only valid (guaranteed unique system-wide) from the time the thread is created until the thread has been terminated.  Availability: Requires get_native_id() function.  New in version 3.8.

@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_init
+
+get_init() 
+ check if the Joystick is initialized get_init() -> bool  Return True if the Joystick object is currently initialised.

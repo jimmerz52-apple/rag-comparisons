@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.finish_request
+
+finish_request(request, client_address)  
+Actually processes the request by instantiating RequestHandlerClass and calling its handle() method.

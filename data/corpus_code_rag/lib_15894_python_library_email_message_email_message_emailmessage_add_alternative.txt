@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.add_alternative
+
+add_alternative(*args, content_manager=None, **kw)  
+If the message is a multipart/alternative, create a new message object, pass all of the arguments to its set_content() method, and attach() it to the multipart. If the message is a non-multipart or multipart/related, call make_alternative() and then proceed as above. If the message is any other type of multipart, raise a TypeError. If content_manager is not specified, use the content_manager specified by the current policy.

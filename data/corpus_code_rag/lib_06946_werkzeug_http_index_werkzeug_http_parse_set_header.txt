@@ -1,0 +1,16 @@
+# werkzeug.http.index#werkzeug.http.parse_set_header
+
+werkzeug.http.parse_set_header(value, on_update=None)  
+Parse a set-like header and return a HeaderSet object: >>> hs = parse_set_header('token, "quoted value"')
+ The return value is an object that treats the items case-insensitively and keeps the order of the items: >>> 'TOKEN' in hs
+True
+>>> hs.index('quoted value')
+1
+>>> hs
+HeaderSet(['token', 'quoted value'])
+ To create a header from the HeaderSet again, use the dump_header() function.  Parameters 
+ 
+value (Optional[str]) – a set header to be parsed. 
+on_update (Optional[Callable[[werkzeug.datastructures.HeaderSet], None]]) – an optional callable that is called every time a value on the HeaderSet object is changed.   Returns 
+a HeaderSet  Return type 
+werkzeug.datastructures.HeaderSet

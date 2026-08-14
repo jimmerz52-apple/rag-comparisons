@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.multioutput.multioutputclassifier#sklearn.multioutput.MultiOutputClassifier.score
+
+score(X, y) [source]
+ 
+Returns the mean accuracy on the given test data and labels.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples  
+yarray-like of shape (n_samples, n_outputs) 
+
+True values for X    Returns 
+ 
+scoresfloat 
+
+accuracy_score of self.predict(X) versus y

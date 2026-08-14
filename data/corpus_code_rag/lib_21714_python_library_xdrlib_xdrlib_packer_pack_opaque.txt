@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_opaque
+
+Packer.pack_opaque(data)  
+Packs a variable length opaque data string, similarly to pack_string().

@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isprint
+
+curses.ascii.isprint(c)  
+Checks for any ASCII printable character including space.

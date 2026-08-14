@@ -1,0 +1,16 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.set_label
+
+set_label(label, *, loc=None, **kwargs)[source]
+ 
+Add a label to the long axis of the colorbar.  Parameters 
+ 
+labelstr
+
+
+The label text.  
+locstr, optional
+
+
+The location of the label.  For horizontal orientation one of {'left', 'center', 'right'} For vertical orientation one of {'bottom', 'center', 'top'}  Defaults to rcParams["xaxis.labellocation"] (default: 'center') or rcParams["yaxis.labellocation"] (default: 'center') depending on the orientation.  **kwargs
+
+Keyword arguments are passed to set_xlabel / set_ylabel. Supported keywords are labelpad and Text properties.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.MonthMixin.get_month_format
+
+get_month_format()  
+Returns the strftime() format to use when parsing the month. Returns month_format by default.

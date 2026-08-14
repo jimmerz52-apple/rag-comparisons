@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.neighbors.balltree#sklearn.neighbors.BallTree.reset_n_calls
+
+reset_n_calls(self)  
+Reset number of calls to 0.

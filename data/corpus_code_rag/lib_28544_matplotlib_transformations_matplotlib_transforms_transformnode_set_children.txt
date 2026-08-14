@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.set_children
+
+set_children(*children)[source]
+ 
+Set the children of the transform, to let the invalidation system know which transforms can invalidate this transform. Should be called from the constructor of any transforms that depend on other transforms.

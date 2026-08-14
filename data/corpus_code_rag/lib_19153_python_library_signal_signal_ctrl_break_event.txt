@@ -1,0 +1,4 @@
+# python.library.signal#signal.CTRL_BREAK_EVENT
+
+signal.CTRL_BREAK_EVENT  
+The signal corresponding to the Ctrl+Break keystroke event. This signal can only be used with os.kill(). Availability: Windows.  New in version 3.2.

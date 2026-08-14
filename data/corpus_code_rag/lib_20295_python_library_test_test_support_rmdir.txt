@@ -1,0 +1,4 @@
+# python.library.test#test.support.rmdir
+
+test.support.rmdir(filename)  
+Call os.rmdir() on filename. On Windows platforms, this is wrapped with a wait loop that checks for the existence of the file.

@@ -1,0 +1,6 @@
+# python.library.pathlib#pathlib.Path
+
+class pathlib.Path(*pathsegments)  
+A subclass of PurePath, this class represents concrete paths of the system’s path flavour (instantiating it creates either a PosixPath or a WindowsPath): >>> Path('setup.py')
+PosixPath('setup.py')
+ pathsegments is specified similarly to PurePath.

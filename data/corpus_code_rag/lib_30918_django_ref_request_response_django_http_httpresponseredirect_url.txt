@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseRedirect.url
+
+url  
+This read-only attribute represents the URL the response will redirect to (equivalent to the Location response header).

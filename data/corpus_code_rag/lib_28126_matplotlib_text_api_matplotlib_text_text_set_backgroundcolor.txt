@@ -1,0 +1,11 @@
+# matplotlib.text_api#matplotlib.text.Text.set_backgroundcolor
+
+set_backgroundcolor(color)[source]
+ 
+Set the background color of the text by updating the bbox.  Parameters 
+ 
+colorcolor
+
+    See also  set_bbox
+
+To change the position of the bounding box

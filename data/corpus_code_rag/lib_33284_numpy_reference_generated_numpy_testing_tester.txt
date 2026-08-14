@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.testing.tester
+
+numpy.testing.Tester   numpy.testing.Tester[source]
+ 
+alias of numpy.testing._private.nosetester.NoseTester

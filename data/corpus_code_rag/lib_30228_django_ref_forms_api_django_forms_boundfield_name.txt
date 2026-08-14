@@ -1,0 +1,8 @@
+# django.ref.forms.api#django.forms.BoundField.name
+
+BoundField.name  
+The name of this field in the form: >>> f = ContactForm()
+>>> print(f['subject'].name)
+subject
+>>> print(f['message'].name)
+message

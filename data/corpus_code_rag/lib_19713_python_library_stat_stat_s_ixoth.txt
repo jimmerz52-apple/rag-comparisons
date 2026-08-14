@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IXOTH
+
+stat.S_IXOTH  
+Others have execute permission.

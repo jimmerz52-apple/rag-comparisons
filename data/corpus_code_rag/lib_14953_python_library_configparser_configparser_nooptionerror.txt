@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.NoOptionError
+
+exception configparser.NoOptionError  
+Exception raised when a specified option is not found in the specified section.

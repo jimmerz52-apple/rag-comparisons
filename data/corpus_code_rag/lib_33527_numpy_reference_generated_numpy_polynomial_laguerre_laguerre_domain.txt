@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.laguerre.domain
+
+numpy.polynomial.laguerre.Laguerre.domain attribute   polynomial.laguerre.Laguerre.domain = array([0, 1])

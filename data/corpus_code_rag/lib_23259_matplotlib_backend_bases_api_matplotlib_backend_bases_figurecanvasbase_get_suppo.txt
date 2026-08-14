@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.get_supported_filetypes_grouped
+
+classmethodget_supported_filetypes_grouped()[source]
+ 
+Return a dict of savefig file formats supported by this backend, where the keys are a file type name, such as 'Joint Photographic Experts Group', and the values are a list of filename extensions used for that filetype, such as ['jpg', 'jpeg'].

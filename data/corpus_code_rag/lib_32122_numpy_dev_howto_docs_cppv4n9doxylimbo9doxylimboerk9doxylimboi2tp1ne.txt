@@ -1,0 +1,5 @@
+# numpy.dev.howto-docs#_CPPv4N9DoxyLimbo9DoxyLimboERK9DoxyLimboI2Tp1NE
+
+DoxyLimbo(constDoxyLimbo<Tp,N>&l)
+ 
+Set Default behavior for copy the limbo.

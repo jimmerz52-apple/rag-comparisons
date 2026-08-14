@@ -1,0 +1,4 @@
+# python.library.io#io.BytesIO.getvalue
+
+getvalue()  
+Return bytes containing the entire contents of the buffer.

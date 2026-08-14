@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.cursors.main
+
+cursors.main() 
+ display two different custom cursors cursors.main() -> None  Display an arrow or circle with crossbar cursor.

@@ -1,0 +1,3 @@
+# tensorflow.lite.experimental
+
+Module: tf.lite.experimental Public API for tf.lite.experimental namespace. Functions load_delegate(...): Returns loaded Delegate object.

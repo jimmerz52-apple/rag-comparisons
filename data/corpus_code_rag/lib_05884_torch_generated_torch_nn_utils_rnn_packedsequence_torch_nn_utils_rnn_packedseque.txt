@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.count
+
+count()  
+Return number of occurrences of value.

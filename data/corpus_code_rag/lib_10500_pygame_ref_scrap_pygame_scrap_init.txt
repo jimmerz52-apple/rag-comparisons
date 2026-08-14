@@ -1,0 +1,7 @@
+# pygame.ref.scrap#pygame.scrap.init
+
+pygame.scrap.init() 
+ Initializes the scrap module. init() -> None  Initialize the scrap module.     
+Raises:
+
+pygame.error -- if unable to initialize scrap module        Note The scrap module requires pygame.display.set_mode() be called before being initialized.

@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_name
+
+get_name() 
+ get the Joystick system name get_name() -> string  Returns the system name for this joystick device. It is unknown what name the system will give to the Joystick, but it should be a unique name that identifies the device. This method can safely be called while the Joystick is not initialized.

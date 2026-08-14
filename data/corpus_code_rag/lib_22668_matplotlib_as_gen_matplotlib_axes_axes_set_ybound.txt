@@ -1,0 +1,15 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_ybound
+
+matplotlib.axes.Axes.set_ybound   Axes.set_ybound(lower=None, upper=None)[source]
+ 
+Set the lower and upper numerical bounds of the y-axis. This method will honor axis inversion regardless of parameter order. It will not change the autoscaling setting (get_autoscaley_on()).  Parameters 
+ 
+lower, upperfloat or None
+
+
+The lower and upper bounds. If None, the respective axis bound is not modified.      See also  get_ybound
+
+get_ylim, set_ylim
+
+
+invert_yaxis, yaxis_inverted

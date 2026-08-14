@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_DWORD_BIG_ENDIAN
+
+winreg.REG_DWORD_BIG_ENDIAN  
+A 32-bit number in big-endian format.

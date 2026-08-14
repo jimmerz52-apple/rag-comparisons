@@ -1,0 +1,4 @@
+# python.library.test#test.support.make_bad_fd
+
+test.support.make_bad_fd()  
+Create an invalid file descriptor by opening and closing a temporary file, and returning its descriptor.

@@ -1,0 +1,4 @@
+# django.ref.files.file#django.core.files.File.file
+
+file  
+The underlying file object that this class wraps.  Be careful with this attribute in subclasses. Some subclasses of File, including ContentFile and FieldFile, may replace this attribute with an object other than a Python file object. In these cases, this attribute may itself be a File subclass (and not necessarily the same subclass). Whenever possible, use the attributes and methods of the subclass itself rather than the those of the subclass’s file attribute.

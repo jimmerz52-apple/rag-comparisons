@@ -1,0 +1,11 @@
+# torch.generated.torch.nn.selu#torch.nn.SELU
+
+class torch.nn.SELU(inplace=False) [source]
+ 
+Applied element-wise, as:  SELU(x)=scale∗(max⁡(0,x)+min⁡(0,α∗(exp⁡(x)−1)))\text{SELU}(x) = \text{scale} * (\max(0,x) + \min(0, \alpha * (\exp(x) - 1)))  
+with α=1.6732632423543772848170429916717\alpha = 1.6732632423543772848170429916717  and scale=1.0507009873554804934193349852946\text{scale} = 1.0507009873554804934193349852946 . More details can be found in the paper Self-Normalizing Neural Networks .  Parameters 
+inplace (bool, optional) – can optionally do the operation in-place. Default: False    Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.SELU()
+>>> input = torch.randn(2)
+>>> output = m(input)

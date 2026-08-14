@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.atan_
+
+atan_() → Tensor  
+In-place version of atan()

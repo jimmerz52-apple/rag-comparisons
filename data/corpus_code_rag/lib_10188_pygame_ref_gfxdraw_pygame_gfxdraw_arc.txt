@@ -1,0 +1,21 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.arc
+
+pygame.gfxdraw.arc() 
+ draw an arc arc(surface, x, y, r, start_angle, stop_angle, color) -> None  Draws an arc on the given surface. For an arc with its endpoints connected to its center use pie(). The two angle arguments are given in degrees and indicate the start and stop positions of the arc. The arc is drawn in a clockwise direction from the start_angle to the stop_angle. If start_angle == stop_angle, nothing will be drawn     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+x (int) -- x coordinate of the center of the arc 
+y (int) -- y coordinate of the center of the arc 
+r (int) -- radius of the arc 
+start_angle (int) -- start angle in degrees 
+stop_angle (int) -- stop angle in degrees 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType      Note This function uses degrees while the pygame.draw.arc() function uses radians.

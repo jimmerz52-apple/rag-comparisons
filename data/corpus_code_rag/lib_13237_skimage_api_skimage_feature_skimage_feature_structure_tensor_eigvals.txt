@@ -1,0 +1,31 @@
+# skimage.api.skimage.feature#skimage.feature.structure_tensor_eigvals
+
+skimage.feature.structure_tensor_eigvals(Axx, Axy, Ayy) [source]
+ 
+Compute eigenvalues of structure tensor.  Parameters 
+ 
+Axxndarray 
+
+Element of the structure tensor for each pixel in the input image.  
+Axyndarray 
+
+Element of the structure tensor for each pixel in the input image.  
+Ayyndarray 
+
+Element of the structure tensor for each pixel in the input image.    Returns 
+ 
+l1ndarray 
+
+Larger eigen value for each input matrix.  
+l2ndarray 
+
+Smaller eigen value for each input matrix.     Examples >>> from skimage.feature import structure_tensor, structure_tensor_eigvals
+>>> square = np.zeros((5, 5))
+>>> square[2, 2] = 1
+>>> Arr, Arc, Acc = structure_tensor(square, sigma=0.1, order='rc')
+>>> structure_tensor_eigvals(Acc, Arc, Arr)[0]
+array([[0., 0., 0., 0., 0.],
+       [0., 2., 4., 2., 0.],
+       [0., 4., 0., 4., 0.],
+       [0., 2., 4., 2., 0.],
+       [0., 0., 0., 0., 0.]])

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.micro.is_year_start
+
+pandas.tseries.offsets.Micro.is_year_start   Micro.is_year_start()

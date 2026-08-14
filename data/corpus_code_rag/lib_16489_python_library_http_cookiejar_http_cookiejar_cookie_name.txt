@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.name
+
+Cookie.name  
+Cookie name (a string).

@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.svm.svc#sklearn.svm.SVC.predict_log_proba
+
+property predict_log_proba  
+Compute log probabilities of possible outcomes for samples in X. The model need to have probability information computed at training time: fit with attribute probability set to True.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) or (n_samples_test, n_samples_train) 
+
+For kernel=”precomputed”, the expected shape of X is (n_samples_test, n_samples_train).    Returns 
+ 
+Tndarray of shape (n_samples, n_classes) 
+
+Returns the log-probabilities of the sample for each class in the model. The columns correspond to the classes in sorted order, as they appear in the attribute classes_.     Notes The probability model is created using cross validation, so the results can be slightly different than those obtained by predict. Also, it will produce meaningless results on very small datasets.

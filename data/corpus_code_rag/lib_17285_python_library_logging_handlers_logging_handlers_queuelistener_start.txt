@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueListener.start
+
+start()  
+Starts the listener. This starts up a background thread to monitor the queue for LogRecords to process.

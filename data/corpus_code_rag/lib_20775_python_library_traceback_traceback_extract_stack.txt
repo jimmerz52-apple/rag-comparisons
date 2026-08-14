@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.extract_stack
+
+traceback.extract_stack(f=None, limit=None)  
+Extract the raw traceback from the current stack frame. The return value has the same format as for extract_tb(). The optional f and limit arguments have the same meaning as for print_stack().

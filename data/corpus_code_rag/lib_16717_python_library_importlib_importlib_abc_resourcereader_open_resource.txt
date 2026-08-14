@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.ResourceReader.open_resource
+
+abstractmethod open_resource(resource)  
+Returns an opened, file-like object for binary reading of the resource. If the resource cannot be found, FileNotFoundError is raised.

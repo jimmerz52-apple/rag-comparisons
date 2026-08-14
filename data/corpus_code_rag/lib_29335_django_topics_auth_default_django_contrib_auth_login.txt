@@ -1,0 +1,16 @@
+# django.topics.auth.default#django.contrib.auth.login
+
+login(request, user, backend=None)  
+To log a user in, from a view, use login(). It takes an HttpRequest object and a User object. login() saves the user’s ID in the session, using Django’s session framework. Note that any data set during the anonymous session is retained in the session after a user logs in. This example shows how you might use both authenticate() and login(): from django.contrib.auth import authenticate, login
+
+def my_view(request):
+    username = request.POST['username']
+    password = request.POST['password']
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+        login(request, user)
+        # Redirect to a success page.
+        ...
+    else:
+        # Return an 'invalid login' error message.
+        ...

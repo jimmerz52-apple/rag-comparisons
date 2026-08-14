@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Lookup.rhs
+
+rhs  
+The right-hand side - what lhs is being compared against. It can be a plain value, or something that compiles into SQL, typically an F() object or a QuerySet.

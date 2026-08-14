@@ -1,0 +1,4 @@
+# python.library.csv#csv.field_size_limit
+
+csv.field_size_limit([new_limit])  
+Returns the current maximum field size allowed by the parser. If new_limit is given, this becomes the new limit.

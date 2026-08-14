@@ -1,0 +1,8 @@
+# tensorflow.compat.v1.profiler.adviceproto.checker
+
+tf.compat.v1.profiler.AdviceProto.Checker A ProtocolMessage
+ 
+
+
+ Attributes
+  reports   repeated string reports

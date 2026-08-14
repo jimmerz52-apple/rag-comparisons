@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.set_mods
+
+pygame.key.set_mods() 
+ temporarily set which modifier keys are pressed set_mods(int) -> None  Create a bitmask of the modifier key constants you want to impose on your program.

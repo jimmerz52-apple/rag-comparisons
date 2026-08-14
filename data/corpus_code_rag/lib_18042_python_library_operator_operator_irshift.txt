@@ -1,0 +1,5 @@
+# python.library.operator#operator.__irshift__
+
+operator.irshift(a, b)  
+operator.__irshift__(a, b)  
+a = irshift(a, b) is equivalent to a >>= b.

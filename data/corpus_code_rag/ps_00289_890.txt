@@ -1,0 +1,9 @@
+# 890
+Task: 890
+
+# Write a python function to find the index of an extra element present in one sorted array.
+def find_Extra(arr1,arr2,n) : 
+    for i in range(0, n) : 
+        if (arr1[i] != arr2[i]) : 
+            return i 
+    return n

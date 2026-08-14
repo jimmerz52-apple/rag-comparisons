@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.set_semimajor
+
+set_semimajor(a)[source]
+ 
+Set the semi-major axis a of the annulus.  Parameters 
+ 
+afloat

@@ -1,0 +1,12 @@
+# python.library.statistics#statistics.median_grouped
+
+statistics.median_grouped(data, interval=1)  
+Return the median of grouped continuous data, calculated as the 50th percentile, using interpolation. If data is empty, StatisticsError is raised. data can be a sequence or iterable. >>> median_grouped([52, 52, 53, 54])
+52.5
+ In the following example, the data are rounded, so that each value represents the midpoint of data classes, e.g. 1 is the midpoint of the class 0.5–1.5, 2 is the midpoint of 1.5–2.5, 3 is the midpoint of 2.5–3.5, etc. With the data given, the middle value falls somewhere in the class 3.5–4.5, and interpolation is used to estimate it: >>> median_grouped([1, 2, 2, 3, 4, 4, 4, 4, 4, 5])
+3.7
+ Optional argument interval represents the class interval, and defaults to 1. Changing the class interval naturally will change the interpolation: >>> median_grouped([1, 3, 3, 5, 7], interval=1)
+3.25
+>>> median_grouped([1, 3, 3, 5, 7], interval=2)
+3.5
+ This function does not check whether the data points are at least interval apart.  CPython implementation detail: Under some circumstances, median_grouped() may coerce data points to floats. This behaviour is likely to change in the future.   See also  “Statistics for the Behavioral Sciences”, Frederick J Gravetter and Larry B Wallnau (8th Edition). The SSMEDIAN function in the Gnome Gnumeric spreadsheet, including this discussion.

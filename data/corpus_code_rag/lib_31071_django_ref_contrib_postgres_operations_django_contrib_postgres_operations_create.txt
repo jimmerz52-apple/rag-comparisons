@@ -1,0 +1,6 @@
+# django.ref.contrib.postgres.operations#django.contrib.postgres.operations.CreateExtension
+
+class CreateExtension(name)  
+An Operation subclass which installs a PostgreSQL extension. For common extensions, use one of the more specific subclasses below.  
+name  
+This is a required argument. The name of the extension to be installed.

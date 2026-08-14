@@ -1,0 +1,5 @@
+# matplotlib.tri_api#matplotlib.tri.Triangulation.get_trifinder
+
+get_trifinder()[source]
+ 
+Return the default matplotlib.tri.TriFinder of this triangulation, creating it if necessary. This allows the same TriFinder object to be easily shared.

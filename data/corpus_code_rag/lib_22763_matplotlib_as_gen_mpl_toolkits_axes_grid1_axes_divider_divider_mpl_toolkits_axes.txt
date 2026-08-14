@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.divider#mpl_toolkits.axes_grid1.axes_divider.Divider.set_locator
+
+set_locator(_locator)[source]

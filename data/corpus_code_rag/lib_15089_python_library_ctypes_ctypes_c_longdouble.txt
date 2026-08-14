@@ -1,0 +1,5 @@
+# python.library.ctypes#ctypes.c_longdouble
+
+class ctypes.c_longdouble  
+Represents the C long double datatype. The constructor accepts an optional float initializer. On platforms where sizeof(long double) ==
+sizeof(double) it is an alias to c_double.

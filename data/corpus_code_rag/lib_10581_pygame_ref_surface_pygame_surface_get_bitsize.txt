@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_bitsize
+
+get_bitsize() 
+ get the bit depth of the Surface pixel format get_bitsize() -> int  Returns the number of bits used to represent each pixel. This value may not exactly fill the number of bytes used per pixel. For example a 15 bit Surface still requires a full 2 bytes.

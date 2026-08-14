@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setpos
+
+aifc.setpos(pos)  
+Seek to the specified frame number.

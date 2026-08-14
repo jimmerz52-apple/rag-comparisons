@@ -1,0 +1,4 @@
+# python.library.hmac#hmac.HMAC.block_size
+
+HMAC.block_size  
+The internal block size of the hash algorithm in bytes.  New in version 3.4.

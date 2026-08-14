@@ -1,0 +1,16 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_units
+
+matplotlib.axis.Axis.set_units   Axis.set_units(u)[source]
+ 
+Set the units for axis.  Parameters 
+ 
+uunits tag
+
+   Notes The units of any shared axis will also be updated. 
+  Examples using matplotlib.axis.Axis.set_units
+ 
+   Artist tests   
+
+   Group barchart with units   
+
+   Unit handling

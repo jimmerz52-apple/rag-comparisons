@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_selection.sequentialfeatureselector#sklearn.feature_selection.SequentialFeatureSelector.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Reverse the transformation operation  Parameters 
+ 
+Xarray of shape [n_samples, n_selected_features] 
+
+The input samples.    Returns 
+ 
+X_rarray of shape [n_samples, n_original_features] 
+
+X with columns of zeros inserted where features would have been removed by transform.

@@ -1,0 +1,35 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.Slider
+
+class skimage.viewer.widgets.Slider(name, low=0.0, high=1.0, value=None, value_type='float', ptype='kwarg', callback=None, max_edit_width=60, orientation='horizontal', update_on='release') [source]
+ 
+Bases: skimage.viewer.widgets.core.BaseWidget Slider widget for adjusting numeric parameters.  Parameters 
+ 
+namestr 
+
+Name of slider parameter. If this parameter is passed as a keyword argument, it must match the name of that keyword argument (spaces are replaced with underscores). In addition, this name is displayed as the name of the slider.  
+low, highfloat 
+
+Range of slider values.  
+valuefloat 
+
+Default slider value. If None, use midpoint between low and high.  
+value_type{‘float’ | ‘int’}, optional 
+
+Numeric type of slider value.  
+ptype{‘kwarg’ | ‘arg’ | ‘plugin’}, optional 
+
+Parameter type.  
+callbackcallable f(widget_name, value), optional 
+
+Callback function called in response to slider changes. Note: This function is typically set (overridden) when the widget is added to a plugin.  
+orientation{‘horizontal’ | ‘vertical’}, optional 
+
+Slider orientation.  
+update_on{‘release’ | ‘move’}, optional 
+
+Control when callback function is called: on slider move or release.      
+__init__(name, low=0.0, high=1.0, value=None, value_type='float', ptype='kwarg', callback=None, max_edit_width=60, orientation='horizontal', update_on='release') [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+property val

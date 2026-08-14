@@ -1,0 +1,3 @@
+# python.library.ipaddress#ipaddress.IPv6Network.address_exclude
+
+address_exclude(network)

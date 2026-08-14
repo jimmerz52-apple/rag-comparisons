@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.bquarterbegin.apply_index
+
+pandas.tseries.offsets.BQuarterBegin.apply_index   BQuarterBegin.apply_index(other)

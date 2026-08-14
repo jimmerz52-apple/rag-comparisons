@@ -1,0 +1,7 @@
+# django.ref.request-response#django.http.HttpRequest.method
+
+HttpRequest.method  
+A string representing the HTTP method used in the request. This is guaranteed to be uppercase. For example: if request.method == 'GET':
+    do_something()
+elif request.method == 'POST':
+    do_something_else()

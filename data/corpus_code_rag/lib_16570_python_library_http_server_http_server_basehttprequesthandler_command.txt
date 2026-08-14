@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.command
+
+command  
+Contains the command (request type). For example, 'GET'.

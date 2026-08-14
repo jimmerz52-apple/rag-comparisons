@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertJSONNotEqual
+
+SimpleTestCase.assertJSONNotEqual(raw, expected_data, msg=None)  
+Asserts that the JSON fragments raw and expected_data are not equal. See assertJSONEqual() for further details. Output in case of error can be customized with the msg argument.

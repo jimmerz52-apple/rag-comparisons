@@ -1,0 +1,8 @@
+# pygame.ref.event#pygame.event.EventType
+
+pygame.event.EventType 
+ pygame object for representing events  A pygame object that represents an event. User event instances are created with an pygame.event.Event() function call. The EventType type is not directly callable. EventType instances support attribute assignment and deletion.   type 
+ event type identifier. type -> int  Read-only. The event type identifier. For user created event objects, this is the type argument passed to pygame.event.Event(). For example, some predefined event identifiers are QUIT and MOUSEMOTION. 
+   __dict__ 
+ event attribute dictionary __dict__ -> dict  Read-only. The event type specific attributes of an event. The dict attribute is a synonym for backward compatibility. For example, the attributes of a KEYDOWN event would be unicode, key, and mod 
+  New in pygame 1.9.2: Mutable attributes.

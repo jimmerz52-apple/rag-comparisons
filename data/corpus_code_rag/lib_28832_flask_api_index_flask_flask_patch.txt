@@ -1,0 +1,8 @@
+# flask.api.index#flask.Flask.patch
+
+patch(rule, **options)  
+Shortcut for route() with methods=["PATCH"].  New in version 2.0.   Parameters 
+ 
+rule (str) –  
+options (Any) –    Return type 
+Callable

@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.get_data
+
+get_data(pathname)  
+Return the data associated with pathname. Raise OSError if the file wasn’t found.  Changed in version 3.3: IOError used to be raised instead of OSError.

@@ -1,0 +1,5 @@
+# python.library.unittest#unittest.TestCase.assertIn
+
+assertIn(member, container, msg=None)  
+assertNotIn(member, container, msg=None)  
+Test that member is (or is not) in container.  New in version 3.1.

@@ -1,0 +1,13 @@
+# pandas.reference.api.pandas.index.groupby
+
+pandas.Index.groupby   finalIndex.groupby(values)[source]
+ 
+Group the index labels by a given array of values.  Parameters 
+ 
+values:array
+
+
+Values used to determine the groups.    Returns 
+ dict
+
+{group name -> group labels}

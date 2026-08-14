@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.HeaderRegistry.map_to_type
+
+map_to_type(self, name, cls)  
+name is the name of the header to be mapped. It will be converted to lower case in the registry. cls is the specialized class to be used, along with base_class, to create the class used to instantiate headers that match name.

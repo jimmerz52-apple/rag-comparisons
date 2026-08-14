@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.close
+
+loop.close()  
+Close the event loop. The loop must not be running when this function is called. Any pending callbacks will be discarded. This method clears all queues and shuts down the executor, but does not wait for the executor to finish. This method is idempotent and irreversible. No other methods should be called after the event loop is closed.

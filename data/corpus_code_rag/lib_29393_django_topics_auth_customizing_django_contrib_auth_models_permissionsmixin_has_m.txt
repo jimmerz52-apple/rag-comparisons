@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.PermissionsMixin.has_module_perms
+
+has_module_perms(package_name)  
+Returns True if the user has any permissions in the given package (the Django app label). If User.is_active and is_superuser are both True, this method always returns True.

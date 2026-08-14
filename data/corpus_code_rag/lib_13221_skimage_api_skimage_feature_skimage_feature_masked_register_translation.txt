@@ -1,0 +1,5 @@
+# skimage.api.skimage.feature#skimage.feature.masked_register_translation
+
+skimage.feature.masked_register_translation(src_image, target_image, src_mask, target_mask=None, overlap_ratio=0.3) [source]
+ 
+Deprecated function. Use skimage.registration.phase_cross_correlation instead.

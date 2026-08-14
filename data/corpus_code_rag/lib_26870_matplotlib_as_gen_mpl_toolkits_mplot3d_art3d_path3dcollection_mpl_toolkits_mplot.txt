@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.path3dcollection#mpl_toolkits.mplot3d.art3d.Path3DCollection.set_depthshade
+
+set_depthshade(depthshade)[source]
+ 
+Set whether depth shading is performed on collection members.  Parameters 
+ 
+depthshadebool
+
+
+Whether to shade the patches in order to give the appearance of depth.

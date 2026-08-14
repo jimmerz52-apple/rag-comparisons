@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.backslashreplace_errors
+
+codecs.backslashreplace_errors(exception)  
+Implements the 'backslashreplace' error handling (for text encodings only): malformed data is replaced by a backslashed escape sequence.

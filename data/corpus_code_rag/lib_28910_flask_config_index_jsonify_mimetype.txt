@@ -1,0 +1,4 @@
+# flask.config.index#JSONIFY_MIMETYPE
+
+JSONIFY_MIMETYPE  
+The mimetype of jsonify responses. Default: 'application/json'

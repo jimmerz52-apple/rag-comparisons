@@ -1,0 +1,10 @@
+# torch.distributed#torch.distributed.HashStore
+
+class torch.distributed.HashStore  
+A thread-safe store implementation based on an underlying hashmap. This store can be used within the same process (for example, by other threads), but cannot be used across processes.  Example::
+
+>>> import torch.distributed as dist
+>>> store = dist.HashStore()
+>>> # store can be used from other threads
+>>> # Use any of the store methods after initialization
+>>> store.set("first_key", "first_value")

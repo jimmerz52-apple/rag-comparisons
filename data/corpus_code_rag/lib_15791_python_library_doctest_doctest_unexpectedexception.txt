@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.UnexpectedException
+
+exception doctest.UnexpectedException(test, example, exc_info)  
+An exception raised by DocTestRunner to signal that a doctest example raised an unexpected exception. The constructor arguments are used to initialize the attributes of the same names.

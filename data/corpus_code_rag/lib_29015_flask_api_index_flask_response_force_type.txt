@@ -1,0 +1,15 @@
+# flask.api.index#flask.Response.force_type
+
+classmethod force_type(response, environ=None)  
+Enforce that the WSGI response is a response object of the current type. Werkzeug will use the Response internally in many situations like the exceptions. If you call get_response() on an exception you will get back a regular Response object, even if you are using a custom subclass. This method can enforce a given response type, and it will also convert arbitrary WSGI callables into response objects if an environ is provided: # convert a Werkzeug response object into an instance of the
+# MyResponseClass subclass.
+response = MyResponseClass.force_type(response)
+
+# convert any WSGI application into a response object
+response = MyResponseClass.force_type(response, environ)
+ This is especially useful if you want to post-process responses in the main dispatcher and use functionality provided by your subclass. Keep in mind that this will modify response objects in place if possible!  Parameters 
+ 
+response (Response) – a response object or wsgi application. 
+environ (Optional[WSGIEnvironment]) – a WSGI environment object.   Returns 
+a response object.  Return type 
+Response

@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureManagerBase.button_press
+
+button_press(event)[source]
+ 
+[Deprecated] The default Matplotlib button actions for extra mouse buttons. Notes  Deprecated since version 3.4.

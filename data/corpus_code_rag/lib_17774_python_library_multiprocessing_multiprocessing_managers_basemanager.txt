@@ -1,0 +1,29 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseManager
+
+class multiprocessing.managers.BaseManager([address[, authkey]])  
+Create a BaseManager object. Once created one should call start() or get_server().serve_forever() to ensure that the manager object refers to a started manager process. address is the address on which the manager process listens for new connections. If address is None then an arbitrary one is chosen. authkey is the authentication key which will be used to check the validity of incoming connections to the server process. If authkey is None then current_process().authkey is used. Otherwise authkey is used and it must be a byte string.  
+start([initializer[, initargs]])  
+Start a subprocess to start the manager. If initializer is not None then the subprocess will call initializer(*initargs) when it starts. 
+  
+get_server()  
+Returns a Server object which represents the actual server under the control of the Manager. The Server object supports the serve_forever() method: >>> from multiprocessing.managers import BaseManager
+>>> manager = BaseManager(address=('', 50000), authkey=b'abc')
+>>> server = manager.get_server()
+>>> server.serve_forever()
+ Server additionally has an address attribute. 
+  
+connect()  
+Connect a local manager object to a remote manager process: >>> from multiprocessing.managers import BaseManager
+>>> m = BaseManager(address=('127.0.0.1', 50000), authkey=b'abc')
+>>> m.connect()
+ 
+  
+shutdown()  
+Stop the process used by the manager. This is only available if start() has been used to start the server process. This can be called multiple times. 
+  
+register(typeid[, callable[, proxytype[, exposed[, method_to_typeid[, create_method]]]]])  
+A classmethod which can be used for registering a type or callable with the manager class. typeid is a “type identifier” which is used to identify a particular type of shared object. This must be a string. callable is a callable used for creating objects for this type identifier. If a manager instance will be connected to the server using the connect() method, or if the create_method argument is False then this can be left as None. proxytype is a subclass of BaseProxy which is used to create proxies for shared objects with this typeid. If None then a proxy class is created automatically. exposed is used to specify a sequence of method names which proxies for this typeid should be allowed to access using BaseProxy._callmethod(). (If exposed is None then proxytype._exposed_ is used instead if it exists.) In the case where no exposed list is specified, all “public methods” of the shared object will be accessible. (Here a “public method” means any attribute which has a __call__() method and whose name does not begin with '_'.) method_to_typeid is a mapping used to specify the return type of those exposed methods which should return a proxy. It maps method names to typeid strings. (If method_to_typeid is None then proxytype._method_to_typeid_ is used instead if it exists.) If a method’s name is not a key of this mapping or if the mapping is None then the object returned by the method will be copied by value. create_method determines whether a method should be created with name typeid which can be used to tell the server process to create a new shared object and return a proxy for it. By default it is True. 
+ BaseManager instances also have one read-only property:  
+address  
+The address used by the manager. 
+  Changed in version 3.3: Manager objects support the context management protocol – see Context Manager Types. __enter__() starts the server process (if it has not already started) and then returns the manager object. __exit__() calls shutdown(). In previous versions __enter__() did not start the manager’s server process if it was not already started.

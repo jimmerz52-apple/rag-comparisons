@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.CacheFTPHandler
+
+class urllib.request.CacheFTPHandler  
+Open FTP URLs, keeping a cache of open FTP connections to minimize delays.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.logit
+
+logit() → Tensor  
+See torch.logit()

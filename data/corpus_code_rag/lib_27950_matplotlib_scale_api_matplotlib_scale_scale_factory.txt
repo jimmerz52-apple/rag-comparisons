@@ -1,0 +1,10 @@
+# matplotlib.scale_api#matplotlib.scale.scale_factory
+
+matplotlib.scale.scale_factory(scale, axis, **kwargs)[source]
+ 
+Return a scale class by name.  Parameters 
+ 
+scale{'function', 'functionlog', 'linear', 'log', 'logit', 'symlog'}
+
+
+axismatplotlib.axis.Axis

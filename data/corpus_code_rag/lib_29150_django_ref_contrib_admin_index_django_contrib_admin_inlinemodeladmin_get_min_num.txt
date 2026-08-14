@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.get_min_num
+
+InlineModelAdmin.get_min_num(request, obj=None, **kwargs)  
+Returns the minimum number of inline forms to use. By default, returns the InlineModelAdmin.min_num attribute. Override this method to programmatically determine the minimum number of inline forms. For example, this may be based on the model instance (passed as the keyword argument obj).

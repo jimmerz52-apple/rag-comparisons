@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.RenderClear
+
+pygame.sprite.RenderClear 
+ Same as pygame.sprite.Group  This class is an alias to pygame.sprite.Group(). It has no additional functionality.

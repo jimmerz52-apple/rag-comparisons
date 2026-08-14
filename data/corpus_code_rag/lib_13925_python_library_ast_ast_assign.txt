@@ -1,0 +1,28 @@
+# python.library.ast#ast.Assign
+
+class ast.Assign(targets, value, type_comment)  
+An assignment. targets is a list of nodes, and value is a single node. Multiple nodes in targets represents assigning the same value to each. Unpacking is represented by putting a Tuple or List within targets.  
+type_comment  
+type_comment is an optional string with the type annotation as a comment. 
+ >>> print(ast.dump(ast.parse('a = b = 1'), indent=4)) # Multiple assignment
+Module(
+    body=[
+        Assign(
+            targets=[
+                Name(id='a', ctx=Store()),
+                Name(id='b', ctx=Store())],
+            value=Constant(value=1))],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('a,b = c'), indent=4)) # Unpacking
+Module(
+    body=[
+        Assign(
+            targets=[
+                Tuple(
+                    elts=[
+                        Name(id='a', ctx=Store()),
+                        Name(id='b', ctx=Store())],
+                    ctx=Store())],
+            value=Name(id='c', ctx=Load()))],
+    type_ignores=[])

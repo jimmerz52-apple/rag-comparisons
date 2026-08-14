@@ -1,0 +1,20 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.ArchiveIndexView
+
+class ArchiveIndexView  
+A top-level index page showing the “latest” objects, by date. Objects with a date in the future are not included unless you set allow_future to True. Ancestors (MRO)  django.views.generic.list.MultipleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.dates.BaseArchiveIndexView django.views.generic.dates.BaseDateListView django.views.generic.list.MultipleObjectMixin django.views.generic.dates.DateMixin django.views.generic.base.View  Context In addition to the context provided by django.views.generic.list.MultipleObjectMixin (via django.views.generic.dates.BaseDateListView), the template’s context will be:  
+date_list: A QuerySet object containing all years that have objects available according to queryset, represented as datetime.datetime objects, in descending order.  Notes  Uses a default context_object_name of latest. Uses a default template_name_suffix of _archive. Defaults to providing date_list by year, but this can be altered to month or day using the attribute date_list_period. This also applies to all subclass views.  Example myapp/urls.py: from django.urls import path
+from django.views.generic.dates import ArchiveIndexView
+
+from myapp.models import Article
+
+urlpatterns = [
+    path('archive/',
+         ArchiveIndexView.as_view(model=Article, date_field="pub_date"),
+         name="article_archive"),
+]
+ Example myapp/article_archive.html: <ul>
+    {% for article in latest %}
+        <li>{{ article.pub_date }}: {{ article.title }}</li>
+    {% endfor %}
+</ul>
+ This will output all articles.

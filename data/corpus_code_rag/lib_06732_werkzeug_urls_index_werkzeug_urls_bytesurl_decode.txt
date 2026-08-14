@@ -1,0 +1,8 @@
+# werkzeug.urls.index#werkzeug.urls.BytesURL.decode
+
+decode(charset='utf-8', errors='replace')  
+Decodes the URL to a tuple made out of strings. The charset is only being used for the path, query and fragment.  Parameters 
+ 
+charset (str) –  
+errors (str) –    Return type 
+werkzeug.urls.URL

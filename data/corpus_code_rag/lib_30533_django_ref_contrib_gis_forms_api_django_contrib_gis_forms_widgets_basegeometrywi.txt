@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.BaseGeometryWidget.geom_type
+
+BaseGeometryWidget.geom_type  
+The OpenGIS geometry type, generally set by the form field.

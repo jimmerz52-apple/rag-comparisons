@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.utf8
+
+utf8  
+If False, follow RFC 5322, supporting non-ASCII characters in headers by encoding them as “encoded words”. If True, follow RFC 6532 and use utf-8 encoding for headers. Messages formatted in this way may be passed to SMTP servers that support the SMTPUTF8 extension (RFC 6531).

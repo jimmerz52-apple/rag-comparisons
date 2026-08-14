@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.format_exception
+
+traceback.format_exception(etype, value, tb, limit=None, chain=True)  
+Format a stack trace and the exception information. The arguments have the same meaning as the corresponding arguments to print_exception(). The return value is a list of strings, each ending in a newline and some containing internal newlines. When these lines are concatenated and printed, exactly the same text is printed as does print_exception().  Changed in version 3.5: The etype argument is ignored and inferred from the type of value.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__setitem__
+
+numpy.ndarray.__setitem__ method   ndarray.__setitem__(key, value, /)
+ 
+Set self[key] to value.

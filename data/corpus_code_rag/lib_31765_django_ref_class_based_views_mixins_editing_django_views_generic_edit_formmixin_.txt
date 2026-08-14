@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.FormMixin.get_form_class
+
+get_form_class()  
+Retrieve the form class to instantiate. By default form_class.

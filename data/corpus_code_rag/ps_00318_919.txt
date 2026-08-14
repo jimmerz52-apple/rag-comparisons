@@ -1,0 +1,9 @@
+# 919
+Task: 919
+
+# Write a python function to multiply all items in the list.
+def multiply_list(items):
+    tot = 1
+    for x in items:
+        tot *= x
+    return tot

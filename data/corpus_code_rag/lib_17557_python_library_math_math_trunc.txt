@@ -1,0 +1,4 @@
+# python.library.math#math.trunc
+
+math.trunc(x)  
+Return the Real value x truncated to an Integral (usually an integer). Delegates to x.__trunc__().

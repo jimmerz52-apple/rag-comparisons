@@ -1,0 +1,5 @@
+# python.library.operator#operator.ixor
+
+operator.ixor(a, b)  
+operator.__ixor__(a, b)  
+a = ixor(a, b) is equivalent to a ^= b.

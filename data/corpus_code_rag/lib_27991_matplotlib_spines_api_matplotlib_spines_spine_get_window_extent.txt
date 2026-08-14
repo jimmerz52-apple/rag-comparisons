@@ -1,0 +1,6 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.get_window_extent
+
+get_window_extent(renderer=None)[source]
+ 
+Return the window extent of the spines in display space, including padding for ticks (but not their labels)  See also  matplotlib.axes.Axes.get_tightbbox
+matplotlib.axes.Axes.get_window_extent

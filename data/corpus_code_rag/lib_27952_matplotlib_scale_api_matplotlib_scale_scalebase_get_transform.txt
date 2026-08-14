@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.ScaleBase.get_transform
+
+get_transform()[source]
+ 
+Return the Transform object associated with this scale.

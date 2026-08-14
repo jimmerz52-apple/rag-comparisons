@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.vertical
+
+vertical 
+ Font vertical mode vertical -> bool  Gets or sets whether the characters are laid out vertically rather than horizontally. May be useful when rendering Kanji or some other vertical script. Set to True to switch to a vertical text layout. The default is False, place horizontally. Note that the Font class does not automatically determine script orientation. Vertical layout must be selected explicitly. Also note that several font formats (especially bitmap based ones) don't contain the necessary metrics to draw glyphs vertically, so drawing in those cases will give unspecified results.

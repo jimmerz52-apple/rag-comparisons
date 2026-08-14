@@ -1,0 +1,6 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_size.fraction
+
+mpl_toolkits.axes_grid1.axes_size.Fraction   classmpl_toolkits.axes_grid1.axes_size.Fraction(fraction, ref_size)[source]
+ 
+Bases: mpl_toolkits.axes_grid1.axes_size._Base An instance whose size is a fraction of the ref_size. >>> s = Fraction(0.3, AxesX(ax))
+   get_size(renderer)[source]

@@ -1,0 +1,8 @@
+# python.library.stdtypes#genericalias.__parameters__
+
+genericalias.__parameters__  
+This attribute is a lazily computed tuple (possibly empty) of unique type variables found in __args__: >>> from typing import TypeVar
+
+>>> T = TypeVar('T')
+>>> list[T].__parameters__
+(~T,)

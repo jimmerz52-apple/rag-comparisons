@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.method
+
+method  
+The method the request was made with, such as GET.

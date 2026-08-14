@@ -1,0 +1,8 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.formfield_for_manytomany
+
+ModelAdmin.formfield_for_manytomany(db_field, request, **kwargs)  
+Like the formfield_for_foreignkey method, the formfield_for_manytomany method can be overridden to change the default formfield for a many to many field. For example, if an owner can own multiple cars and cars can belong to multiple owners – a many to many relationship – you could filter the Car foreign key field to only display the cars owned by the User: class MyModelAdmin(admin.ModelAdmin):
+    def formfield_for_manytomany(self, db_field, request, **kwargs):
+        if db_field.name == "cars":
+            kwargs["queryset"] = Car.objects.filter(owner=request.user)
+        return super().formfield_for_manytomany(db_field, request, **kwargs)

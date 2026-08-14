@@ -1,0 +1,11 @@
+# python.library.stdtypes#str.rstrip
+
+str.rstrip([chars])  
+Return a copy of the string with trailing characters removed. The chars argument is a string specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace. The chars argument is not a suffix; rather, all combinations of its values are stripped: >>> '   spacious   '.rstrip()
+'   spacious'
+>>> 'mississippi'.rstrip('ipz')
+'mississ'
+ See str.removesuffix() for a method that will remove a single suffix string rather than all of a set of characters. For example: >>> 'Monty Python'.rstrip(' Python')
+'M'
+>>> 'Monty Python'.removesuffix(' Python')
+'Monty'

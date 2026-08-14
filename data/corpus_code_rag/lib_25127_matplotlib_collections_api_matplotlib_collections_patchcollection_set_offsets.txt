@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection.set_offsets
+
+set_offsets(offsets)[source]
+ 
+Set the offsets for the collection.  Parameters 
+ 
+offsets(N, 2) or (2,) array-like

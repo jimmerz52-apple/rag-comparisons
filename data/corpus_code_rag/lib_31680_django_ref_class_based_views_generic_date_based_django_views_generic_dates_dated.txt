@@ -1,0 +1,12 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.DateDetailView
+
+class DateDetailView  
+A page representing an individual object. If the object has a date value in the future, the view will throw a 404 error by default, unless you set allow_future to True. Ancestors (MRO)  django.views.generic.detail.SingleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.dates.BaseDateDetailView django.views.generic.dates.YearMixin django.views.generic.dates.MonthMixin django.views.generic.dates.DayMixin django.views.generic.dates.DateMixin django.views.generic.detail.BaseDetailView django.views.generic.detail.SingleObjectMixin django.views.generic.base.View  Context  Includes the single object associated with the model specified in the DateDetailView.  Notes  Uses a default template_name_suffix of _detail.  Example myapp/urls.py: from django.urls import path
+from django.views.generic.dates import DateDetailView
+
+urlpatterns = [
+    path('<int:year>/<str:month>/<int:day>/<int:pk>/',
+         DateDetailView.as_view(model=Article, date_field="pub_date"),
+         name="archive_date_detail"),
+]
+ Example myapp/article_detail.html: <h1>{{ object.title }}</h1>

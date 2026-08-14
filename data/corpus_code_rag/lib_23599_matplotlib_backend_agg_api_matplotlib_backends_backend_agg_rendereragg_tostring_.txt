@@ -1,0 +1,3 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.tostring_rgb
+
+tostring_rgb()[source]

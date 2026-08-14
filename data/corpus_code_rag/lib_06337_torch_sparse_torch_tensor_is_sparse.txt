@@ -1,0 +1,4 @@
+# torch.sparse#torch.Tensor.is_sparse
+
+is_sparse  
+Is True if the Tensor uses sparse storage layout, False otherwise.

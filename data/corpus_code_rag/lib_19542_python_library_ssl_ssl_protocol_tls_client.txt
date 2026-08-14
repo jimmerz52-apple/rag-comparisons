@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.PROTOCOL_TLS_CLIENT
+
+ssl.PROTOCOL_TLS_CLIENT  
+Auto-negotiate the highest protocol version like PROTOCOL_TLS, but only support client-side SSLSocket connections. The protocol enables CERT_REQUIRED and check_hostname by default.  New in version 3.6.

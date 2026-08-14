@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.r
+
+r 
+ Gets or sets the red value of the Color. r -> int  The red value of the Color.

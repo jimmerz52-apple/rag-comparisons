@@ -1,0 +1,37 @@
+# matplotlib.widgets_api#matplotlib.widgets.LassoSelector
+
+classmatplotlib.widgets.LassoSelector(ax, onselect=None, useblit=True, props=None, button=None)[source]
+ 
+Bases: matplotlib.widgets._SelectorWidget Selection curve of an arbitrary shape. For the selector to remain responsive you must keep a reference to it. The selected path can be used in conjunction with contains_point to select data points from an image. In contrast to Lasso, LassoSelector is written with an interface similar to RectangleSelector and SpanSelector, and will continue to interact with the axes until disconnected. Example usage: ax = plt.subplot()
+ax.plot(x, y)
+
+def onselect(verts):
+    print(verts)
+lasso = LassoSelector(ax, onselect)
+  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+onselectfunction
+
+
+Whenever the lasso is released, the onselect function is called and passed the vertices of the selected path.  
+useblitbool, default: True
+
+
+Whether to use blitting for faster drawing (if supported by the backend).  
+propsdict, optional
+
+
+Properties with which the line is drawn, see matplotlib.lines.Line2D for valid properties. Default values are defined in mpl.rcParams.  
+buttonMouseButton or list of MouseButton, optional
+
+
+The mouse buttons used for rectangle selection. Default is None, which corresponds to all buttons.       onpress(event)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   onrelease(event)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

@@ -1,0 +1,73 @@
+# matplotlib._as_gen.matplotlib.gridspec.subplotspec
+
+matplotlib.gridspec.SubplotSpec   classmatplotlib.gridspec.SubplotSpec(gridspec, num1, num2=None)[source]
+ 
+Bases: object The location of a subplot in a GridSpec.  Note Likely, you'll never instantiate a SubplotSpec yourself. Instead you will typically obtain one from a GridSpec using item-access.   Parameters 
+ 
+gridspecGridSpec
+
+
+The GridSpec, which the subplot is referencing.  
+num1, num2int
+
+
+The subplot will occupy the num1-th cell of the given gridspec. If num2 is provided, the subplot will span between num1-th cell and num2-th cell inclusive. The index starts from 0.       propertycolspan
+ 
+The columns spanned by this subplot, as a range object. 
+   get_geometry()[source]
+ 
+Return the subplot geometry as tuple (n_rows, n_cols, start, stop). The indices start and stop define the range of the subplot within the GridSpec. stop is inclusive (i.e. for a single cell start == stop). 
+   get_gridspec()[source]
+
+   get_position(figure, return_all=<deprecated parameter>)[source]
+ 
+Update the subplot position from figure.subplotpars. 
+   get_topmost_subplotspec()[source]
+ 
+Return the topmost SubplotSpec instance associated with the subplot. 
+   is_first_col()[source]
+
+   is_first_row()[source]
+
+   is_last_col()[source]
+
+   is_last_row()[source]
+
+   propertynum2
+
+   propertyrowspan
+ 
+The rows spanned by this subplot, as a range object. 
+   subgridspec(nrows, ncols, **kwargs)[source]
+ 
+Create a GridSpec within this subplot. The created GridSpecFromSubplotSpec will have this SubplotSpec as a parent.  Parameters 
+ 
+nrowsint
+
+
+Number of rows in grid.  
+ncolsint
+
+
+Number or columns in grid.    Returns 
+ GridSpecFromSubplotSpec
+  Other Parameters 
+ **kwargs
+
+All other parameters are passed to GridSpecFromSubplotSpec.      See also  matplotlib.pyplot.subplots
+  Examples Adding three subplots in the space occupied by a single subplot: fig = plt.figure()
+gs0 = fig.add_gridspec(3, 1)
+ax1 = fig.add_subplot(gs0[0])
+ax2 = fig.add_subplot(gs0[1])
+gssub = gs0[2].subgridspec(1, 3)
+for i in range(3):
+    fig.add_subplot(gssub[0, i])
+ 
+ 
+  Examples using matplotlib.gridspec.SubplotSpec
+ 
+   Nested GridSpecs   
+
+   Constrained Layout Guide   
+
+   Arranging multiple Axes in a Figure

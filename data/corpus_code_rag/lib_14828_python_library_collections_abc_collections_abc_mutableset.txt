@@ -1,0 +1,5 @@
+# python.library.collections.abc#collections.abc.MutableSet
+
+class collections.abc.Set  
+class collections.abc.MutableSet  
+ABCs for read-only and mutable sets.

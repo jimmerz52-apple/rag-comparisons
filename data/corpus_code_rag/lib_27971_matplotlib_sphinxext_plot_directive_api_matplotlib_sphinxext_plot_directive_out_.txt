@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.out_of_date
+
+matplotlib.sphinxext.plot_directive.out_of_date(original, derived, includes=None)[source]
+ 
+Return whether derived is out-of-date relative to original or any of the RST files included in it using the RST include directive (includes). derived and original are full paths, and includes is optionally a list of full paths which may have been included in the original.

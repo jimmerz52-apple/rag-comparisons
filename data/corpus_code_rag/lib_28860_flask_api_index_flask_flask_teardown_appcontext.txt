@@ -1,0 +1,10 @@
+# flask.api.index#flask.Flask.teardown_appcontext
+
+teardown_appcontext(f)  
+Registers a function to be called when the application context ends. These functions are typically also called when the request context is popped. Example: ctx = app.app_context()
+ctx.push()
+...
+ctx.pop()
+ When ctx.pop() is executed in the above example, the teardown functions are called just before the app context moves from the stack of active contexts. This becomes relevant if you are using such constructs in tests. Since a request context typically also manages an application context it would also be called when you pop a request context. When a teardown function was called because of an unhandled exception it will be passed an error object. If an errorhandler() is registered, it will handle the exception and the teardown will not receive it. The return values of teardown functions are ignored.  Changelog New in version 0.9.   Parameters 
+f (Callable[[Optional[BaseException]], flask.wrappers.Response]) –   Return type 
+Callable[[Optional[BaseException]], flask.wrappers.Response]

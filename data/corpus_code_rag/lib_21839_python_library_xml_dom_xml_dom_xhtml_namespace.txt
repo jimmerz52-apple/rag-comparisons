@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.XHTML_NAMESPACE
+
+xml.dom.XHTML_NAMESPACE  
+The URI of the XHTML namespace as defined by XHTML 1.0: The Extensible HyperText Markup Language (section 3.1.1).

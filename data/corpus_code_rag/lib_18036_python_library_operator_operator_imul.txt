@@ -1,0 +1,5 @@
+# python.library.operator#operator.__imul__
+
+operator.imul(a, b)  
+operator.__imul__(a, b)  
+a = imul(a, b) is equivalent to a *= b.

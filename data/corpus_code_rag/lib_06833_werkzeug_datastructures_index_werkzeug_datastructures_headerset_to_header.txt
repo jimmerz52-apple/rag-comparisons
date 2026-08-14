@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.to_header
+
+to_header()  
+Convert the header set into an HTTP header string.

@@ -1,0 +1,5 @@
+# matplotlib.docstring_api#matplotlib.docstring.copy
+
+matplotlib.docstring.copy(source)[source]
+ 
+Copy a docstring from another source function (if present).

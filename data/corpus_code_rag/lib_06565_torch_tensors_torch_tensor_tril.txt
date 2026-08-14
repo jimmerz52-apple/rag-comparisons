@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.tril_
+
+tril_(k=0) → Tensor  
+In-place version of tril()

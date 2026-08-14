@@ -1,0 +1,13 @@
+# python.library.unittest.mock#unittest.mock.AsyncMock.await_count
+
+await_count  
+An integer keeping track of how many times the mock object has been awaited. >>> mock = AsyncMock()
+>>> async def main():
+...     await mock()
+...
+>>> asyncio.run(main())
+>>> mock.await_count
+1
+>>> asyncio.run(main())
+>>> mock.await_count
+2

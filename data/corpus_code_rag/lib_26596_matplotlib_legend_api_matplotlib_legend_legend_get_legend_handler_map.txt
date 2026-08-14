@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_legend_handler_map
+
+get_legend_handler_map()[source]
+ 
+Return the handler map.

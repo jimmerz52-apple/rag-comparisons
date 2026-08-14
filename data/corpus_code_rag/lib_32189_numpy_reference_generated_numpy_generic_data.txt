@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.data
+
+numpy.generic.data attribute   generic.data
+ 
+Pointer to start of data.

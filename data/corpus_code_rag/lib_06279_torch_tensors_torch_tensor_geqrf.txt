@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.geqrf
+
+geqrf() -> (Tensor, Tensor)  
+See torch.geqrf()

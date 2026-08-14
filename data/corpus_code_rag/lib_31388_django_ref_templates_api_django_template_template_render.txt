@@ -1,0 +1,13 @@
+# django.ref.templates.api#django.template.Template.render
+
+Template.render(context)  
+Call the Template object’s render() method with a Context to “fill” the template: >>> from django.template import Context, Template
+>>> template = Template("My name is {{ my_name }}.")
+
+>>> context = Context({"my_name": "Adrian"})
+>>> template.render(context)
+"My name is Adrian."
+
+>>> context = Context({"my_name": "Dolores"})
+>>> template.render(context)
+"My name is Dolores."

@@ -1,0 +1,4 @@
+# python.library.tkinter.dnd#tkinter.dnd.DndHandler.finish
+
+finish(event, commit=0)  
+Execute end of drag-and-drop functions.

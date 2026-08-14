@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.top_panel
+
+curses.panel.top_panel()  
+Returns the top panel in the panel stack.

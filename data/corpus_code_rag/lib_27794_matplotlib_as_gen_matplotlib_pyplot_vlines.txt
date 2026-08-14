@@ -1,0 +1,37 @@
+# matplotlib._as_gen.matplotlib.pyplot.vlines
+
+matplotlib.pyplot.vlines   matplotlib.pyplot.vlines(x, ymin, ymax, colors=None, linestyles='solid', label='', *, data=None, **kwargs)[source]
+ 
+Plot vertical lines at each x from ymin to ymax.  Parameters 
+ 
+xfloat or array-like
+
+
+x-indexes where to plot the lines.  
+ymin, ymaxfloat or array-like
+
+
+Respective beginning and end of each line. If scalars are provided, all lines will have same length.  
+colorslist of colors, default: rcParams["lines.color"] (default: 'C0')
+
+
+linestyles{'solid', 'dashed', 'dashdot', 'dotted'}, optional
+
+
+labelstr, default: ''
+
+  Returns 
+ LineCollection
+  Other Parameters 
+ 
+dataindexable object, optional
+
+
+If given, the following parameters also accept a string s, which is interpreted as data[s] (unless this raises an exception): x, ymin, ymax, colors  
+**kwargsLineCollection properties.
+
+    See also  hlines
+
+horizontal lines  axvline
+
+vertical line across the Axes

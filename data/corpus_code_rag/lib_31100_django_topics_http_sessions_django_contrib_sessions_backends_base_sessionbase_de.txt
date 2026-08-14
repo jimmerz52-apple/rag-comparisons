@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.__delitem__
+
+__delitem__(key)  
+Example: del request.session['fav_color']. This raises KeyError if the given key isn’t already in the session.

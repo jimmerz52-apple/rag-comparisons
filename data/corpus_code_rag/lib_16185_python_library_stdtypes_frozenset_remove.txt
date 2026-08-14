@@ -1,0 +1,4 @@
+# python.library.stdtypes#frozenset.remove
+
+remove(elem)  
+Remove element elem from the set. Raises KeyError if elem is not contained in the set.

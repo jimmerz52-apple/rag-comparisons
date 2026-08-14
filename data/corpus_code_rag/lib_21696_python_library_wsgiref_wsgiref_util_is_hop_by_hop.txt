@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.util.is_hop_by_hop
+
+wsgiref.util.is_hop_by_hop(header_name)  
+Return True if ‘header_name’ is an HTTP/1.1 “Hop-by-Hop” header, as defined by RFC 2616.

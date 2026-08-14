@@ -1,0 +1,13 @@
+# matplotlib._as_gen.matplotlib.animation.animation#matplotlib.animation.Animation.to_html5_video
+
+to_html5_video(embed_limit=None)[source]
+ 
+Convert the animation to an HTML5 <video> tag. This saves the animation as an h264 video, encoded in base64 directly into the HTML5 video tag. This respects rcParams["animation.writer"] (default: 'ffmpeg') and rcParams["animation.bitrate"] (default: -1). This also makes use of the interval to control the speed, and uses the repeat parameter to decide whether to loop.  Parameters 
+ 
+embed_limitfloat, optional
+
+
+Limit, in MB, of the returned animation. No animation is created if the limit is exceeded. Defaults to rcParams["animation.embed_limit"] (default: 20.0) = 20.0.    Returns 
+ str
+
+An HTML5 video tag with the animation embedded as base64 encoded h264 video. If the embed_limit is exceeded, this returns the string "Video too large to embed."

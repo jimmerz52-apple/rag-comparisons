@@ -1,0 +1,20 @@
+# django.topics.auth.default#django.contrib.auth.decorators.permission_required
+
+permission_required(perm, login_url=None, raise_exception=False)  
+It’s a relatively common task to check whether a user has a particular permission. For that reason, Django provides a shortcut for that case: the permission_required() decorator.: from django.contrib.auth.decorators import permission_required
+
+@permission_required('polls.add_choice')
+def my_view(request):
+    ...
+ Just like the has_perm() method, permission names take the form "<app label>.<permission codename>" (i.e. polls.add_choice for a permission on a model in the polls application). The decorator may also take an iterable of permissions, in which case the user must have all of the permissions in order to access the view. Note that permission_required() also takes an optional login_url parameter: from django.contrib.auth.decorators import permission_required
+
+@permission_required('polls.add_choice', login_url='/loginpage/')
+def my_view(request):
+    ...
+ As in the login_required() decorator, login_url defaults to settings.LOGIN_URL. If the raise_exception parameter is given, the decorator will raise PermissionDenied, prompting the 403 (HTTP Forbidden) view instead of redirecting to the login page. If you want to use raise_exception but also give your users a chance to login first, you can add the login_required() decorator: from django.contrib.auth.decorators import login_required, permission_required
+
+@login_required
+@permission_required('polls.add_choice', raise_exception=True)
+def my_view(request):
+    ...
+ This also avoids a redirect loop when LoginView’s redirect_authenticated_user=True and the logged-in user doesn’t have all of the required permissions.

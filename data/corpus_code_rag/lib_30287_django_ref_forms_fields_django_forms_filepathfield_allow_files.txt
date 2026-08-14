@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.FilePathField.allow_files
+
+allow_files  
+Optional. Either True or False. Default is True. Specifies whether files in the specified location should be included. Either this or allow_folders must be True.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.monthend.copy
+
+pandas.tseries.offsets.MonthEnd.copy   MonthEnd.copy()

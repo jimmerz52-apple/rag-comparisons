@@ -1,0 +1,12 @@
+# django.ref.forms.api#django.forms.BoundField.initial
+
+BoundField.initial  
+Use BoundField.initial to retrieve initial data for a form field. It retrieves the data from Form.initial if present, otherwise trying Field.initial. Callable values are evaluated. See Initial form values for more examples. BoundField.initial caches its return value, which is useful especially when dealing with callables whose return values can change (e.g. datetime.now or uuid.uuid4): >>> from datetime import datetime
+>>> class DatedCommentForm(CommentForm):
+...     created = forms.DateTimeField(initial=datetime.now)
+>>> f = DatedCommentForm()
+>>> f['created'].initial
+datetime.datetime(2021, 7, 27, 9, 5, 54)
+>>> f['created'].initial
+datetime.datetime(2021, 7, 27, 9, 5, 54)
+ Using BoundField.initial is recommended over get_initial_for_field().

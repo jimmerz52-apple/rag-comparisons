@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.colormap#matplotlib.colors.Colormap.colorbar_extend
+
+colorbar_extend
+ 
+When this colormap exists on a scalar mappable and colorbar_extend is not False, colorbar creation will pick up colorbar_extend as the default value for the extend keyword in the matplotlib.colorbar.Colorbar constructor.

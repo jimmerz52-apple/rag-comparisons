@@ -1,0 +1,10 @@
+# torch.overrides#torch.overrides.get_testing_overrides
+
+torch.overrides.get_testing_overrides() [source]
+ 
+Return a dict containing dummy overrides for all overridable functions  Returns 
+A dictionary that maps overridable functions in the PyTorch API to lambda functions that have the same signature as the real function and unconditionally return -1. These lambda functions are useful for testing API coverage for a type that defines __torch_function__.  Return type 
+Dict[Callable, Callable]   Examples >>> import inspect
+>>> my_add = torch.overrides.get_testing_overrides()[torch.add]
+>>> inspect.signature(my_add)
+<Signature (input, other, out=None)>

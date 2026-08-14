@@ -1,0 +1,12 @@
+# flask.api.index#flask.json.JSONEncoder
+
+class flask.json.JSONEncoder(*, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, sort_keys=False, indent=None, separators=None, default=None)  
+The default JSON encoder. Handles extra types compared to the built-in json.JSONEncoder.  
+datetime.datetime and datetime.date are serialized to RFC 822 strings. This is the same as the HTTP date format. 
+uuid.UUID is serialized to a string. 
+dataclasses.dataclass is passed to dataclasses.asdict(). 
+Markup (or any object with a __html__ method) will call the __html__ method to get a string.  Assign a subclass of this to flask.Flask.json_encoder or flask.Blueprint.json_encoder to override the default.  
+default(o)  
+Convert o to a JSON serializable type. See json.JSONEncoder.default(). Python does not support overriding how basic types like str or list are serialized, they are handled before this method.  Parameters 
+o (Any) –   Return type 
+Any

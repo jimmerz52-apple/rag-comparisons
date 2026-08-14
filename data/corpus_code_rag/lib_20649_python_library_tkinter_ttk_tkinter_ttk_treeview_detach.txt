@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.detach
+
+detach(*items)  
+Unlinks all of the specified items from the tree. The items and all of their descendants are still present, and may be reinserted at another point in the tree, but will not be displayed. The root item may not be detached.

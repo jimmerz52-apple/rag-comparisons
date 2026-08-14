@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CalledProcessError.cmd
+
+cmd  
+Command that was used to spawn the child process.

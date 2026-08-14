@@ -1,0 +1,6 @@
+# pygame.ref.examples#pygame.examples.fastevents.main
+
+fastevents.main() 
+ stress test the fastevents module fastevents.main() -> None  This is a stress test for the fastevents module.  
+ Fast events does not appear faster!   
+ So far it looks like normal pygame.event is faster by up to two times. So maybe fastevent isn't fast at all. Tested on Windows XP SP2 Athlon, and FreeBSD. However... on my Debian Duron 850 machine fastevents is faster.

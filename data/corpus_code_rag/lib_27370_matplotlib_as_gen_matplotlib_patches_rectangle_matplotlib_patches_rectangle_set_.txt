@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.set_y
+
+set_y(y)[source]
+ 
+Set the bottom coordinate of the rectangle.

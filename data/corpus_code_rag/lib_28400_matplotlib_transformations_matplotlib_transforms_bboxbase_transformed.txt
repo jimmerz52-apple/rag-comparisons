@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.transformed
+
+transformed(transform)[source]
+ 
+Construct a Bbox by statically transforming this one by transform.

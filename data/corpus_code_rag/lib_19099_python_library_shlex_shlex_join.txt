@@ -1,0 +1,7 @@
+# python.library.shlex#shlex.join
+
+shlex.join(split_command)  
+Concatenate the tokens of the list split_command and return a string. This function is the inverse of split(). >>> from shlex import join
+>>> print(join(['echo', '-n', 'Multiple words']))
+echo -n 'Multiple words'
+ The returned value is shell-escaped to protect against injection vulnerabilities (see quote()).  New in version 3.8.

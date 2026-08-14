@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLCertVerificationError.verify_code
+
+verify_code  
+A numeric error number that denotes the verification error.

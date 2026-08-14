@@ -1,0 +1,5 @@
+# numpy.reference.maskedarray.baseclass#numpy.ma.masked_print_options
+
+numpy.ma.masked_print_options
+ 
+String used in lieu of missing data when a masked array is printed. By default, this string is '--'.

@@ -1,0 +1,23 @@
+# numpy.reference.generated.numpy.ma.transpose
+
+numpy.ma.transpose   ma.transpose(a, axes=None)[source]
+ 
+Permute the dimensions of an array. This function is exactly equivalent to numpy.transpose.  See also  numpy.transpose
+
+Equivalent function in top-level NumPy module.    Examples >>> import numpy.ma as ma
+>>> x = ma.arange(4).reshape((2,2))
+>>> x[1, 1] = ma.masked
+>>> x
+masked_array(
+  data=[[0, 1],
+        [2, --]],
+  mask=[[False, False],
+        [False,  True]],
+  fill_value=999999)
+ >>> ma.transpose(x)
+masked_array(
+  data=[[0, 2],
+        [1, --]],
+  mask=[[False, False],
+        [False,  True]],
+  fill_value=999999)

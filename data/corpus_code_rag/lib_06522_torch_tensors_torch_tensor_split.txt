@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.split
+
+split(split_size, dim=0) [source]
+ 
+See torch.split()

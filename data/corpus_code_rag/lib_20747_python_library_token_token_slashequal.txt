@@ -1,0 +1,4 @@
+# python.library.token#token.SLASHEQUAL
+
+token.SLASHEQUAL  
+Token value for "/=".

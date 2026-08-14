@@ -1,0 +1,26 @@
+# matplotlib.axis_api#matplotlib.axis.Tick
+
+classmatplotlib.axis.Tick(axes, loc, *, size=None, width=None, color=None, tickdir=None, pad=None, labelsize=None, labelcolor=None, zorder=None, gridOn=None, tick1On=True, tick2On=True, label1On=True, label2On=False, major=True, labelrotation=0, grid_color=None, grid_linestyle=None, grid_linewidth=None, grid_alpha=None, **kw)[source]
+ 
+Abstract base class for the axis ticks, grid lines and labels. Ticks mark a position on an Axis. They contain two lines as markers and two labels; one each for the bottom and top positions (in case of an XAxis) or for the left and right positions (in case of a YAxis).  Attributes 
+ 
+tick1lineLine2D
+
+
+The left/bottom tick marker.  
+tick2lineLine2D
+
+
+The right/top tick marker.  
+gridlineLine2D
+
+
+The grid line associated with the label position.  
+label1Text
+
+
+The left/bottom tick label.  
+label2Text
+
+
+The right/top tick label.     bbox is the Bound2D bounding box in display coords of the Axes loc is the tick location in data coords size is the tick size in points

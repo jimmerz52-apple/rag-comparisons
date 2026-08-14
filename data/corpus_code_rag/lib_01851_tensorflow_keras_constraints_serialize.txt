@@ -1,0 +1,7 @@
+# tensorflow.keras.constraints.serialize
+
+tf.keras.constraints.serialize     View source on GitHub     View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.constraints.serialize  
+tf.keras.constraints.serialize(
+    constraint
+)

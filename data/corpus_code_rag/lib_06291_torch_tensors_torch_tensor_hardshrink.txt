@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.hardshrink
+
+hardshrink(lambd=0.5) → Tensor  
+See torch.nn.functional.hardshrink()

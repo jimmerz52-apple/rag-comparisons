@@ -1,0 +1,3 @@
+# tensorflow.keras.layers.experimental
+
+Module: tf.keras.layers.experimental Public API for tf.keras.layers.experimental namespace. Modules preprocessing module: Public API for tf.keras.layers.experimental.preprocessing namespace. Classes class EinsumDense: A layer that uses tf.einsum as the backing computation. class RandomFourierFeatures: Layer that projects its inputs into a random feature space. class SyncBatchNormalization: Normalize and scale inputs or activations synchronously across replicas.

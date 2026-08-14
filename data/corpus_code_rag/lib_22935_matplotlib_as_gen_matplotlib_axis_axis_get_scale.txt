@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_scale
+
+matplotlib.axis.Axis.get_scale   Axis.get_scale()[source]
+ 
+Return this Axis' scale (as a str).

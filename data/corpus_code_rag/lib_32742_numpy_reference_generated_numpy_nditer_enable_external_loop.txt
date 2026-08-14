@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.enable_external_loop
+
+numpy.nditer.enable_external_loop method   nditer.enable_external_loop()
+ 
+When the “external_loop” was not used during construction, but is desired, this modifies the iterator to behave as if the flag was specified.

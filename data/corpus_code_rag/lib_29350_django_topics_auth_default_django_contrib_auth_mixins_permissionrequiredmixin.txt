@@ -1,0 +1,15 @@
+# django.topics.auth.default#django.contrib.auth.mixins.PermissionRequiredMixin
+
+class PermissionRequiredMixin  
+This mixin, just like the permission_required decorator, checks whether the user accessing a view has all given permissions. You should specify the permission (or an iterable of permissions) using the permission_required parameter: from django.contrib.auth.mixins import PermissionRequiredMixin
+
+class MyView(PermissionRequiredMixin, View):
+    permission_required = 'polls.add_choice'
+    # Or multiple of permissions:
+    permission_required = ('polls.view_choice', 'polls.change_choice')
+ You can set any of the parameters of AccessMixin to customize the handling of unauthorized users. You may also override these methods:  
+get_permission_required()  
+Returns an iterable of permission names used by the mixin. Defaults to the permission_required attribute, converted to a tuple if necessary. 
+  
+has_permission()  
+Returns a boolean denoting whether the current user has permission to execute the decorated view. By default, this returns the result of calling has_perms() with the list of permissions returned by get_permission_required().

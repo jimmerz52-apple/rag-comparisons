@@ -1,0 +1,8 @@
+# 727
+Task: 727
+
+# Write a function to remove all characters except letters and numbers using regex
+import re 
+def remove_char(S):
+  result = re.sub('[\W_]+', '', S) 
+  return result

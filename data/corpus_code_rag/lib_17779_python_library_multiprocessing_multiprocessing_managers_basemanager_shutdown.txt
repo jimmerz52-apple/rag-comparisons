@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseManager.shutdown
+
+shutdown()  
+Stop the process used by the manager. This is only available if start() has been used to start the server process. This can be called multiple times.

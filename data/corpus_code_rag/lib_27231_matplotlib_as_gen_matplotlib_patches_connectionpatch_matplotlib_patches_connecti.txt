@@ -1,0 +1,13 @@
+# matplotlib._as_gen.matplotlib.patches.connectionpatch#matplotlib.patches.ConnectionPatch.set_annotation_clip
+
+set_annotation_clip(b)[source]
+ 
+Set the clipping behavior.  Parameters 
+ 
+bbool or None
+
+
+ 
+False: The annotation will always be drawn regardless of its position. 
+True: The annotation will only be drawn if self.xy is inside the axes. 
+None: The annotation will only be drawn if self.xy is inside the axes and self.xycoords == "data".

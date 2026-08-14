@@ -1,0 +1,8 @@
+# pygame.ref.mask#pygame.mask.Mask.invert
+
+invert() 
+ Flips all the bits invert() -> None  Flips all of the bits in the mask. All the set bits are cleared to 0 and all the unset bits are set to 1.     
+Returns:
+None  
+Return type:
+NoneType

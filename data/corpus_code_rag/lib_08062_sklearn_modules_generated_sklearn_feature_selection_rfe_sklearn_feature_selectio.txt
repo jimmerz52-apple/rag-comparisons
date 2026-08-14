@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_selection.rfe#sklearn.feature_selection.RFE.predict_log_proba
+
+predict_log_proba(X) [source]
+ 
+Predict class log-probabilities for X.  Parameters 
+ 
+Xarray of shape [n_samples, n_features] 
+
+The input samples.    Returns 
+ 
+parray of shape (n_samples, n_classes) 
+
+The class log-probabilities of the input samples. The order of the classes corresponds to that in the attribute classes_.

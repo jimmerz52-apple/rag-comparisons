@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadhandler.FileUploadHandler.upload_interrupted
+
+FileUploadHandler.upload_interrupted()  
+ New in Django 3.2.  Callback signaling that the upload was interrupted, e.g. when the user closed their browser during file upload.

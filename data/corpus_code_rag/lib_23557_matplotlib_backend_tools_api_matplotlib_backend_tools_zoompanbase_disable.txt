@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ZoomPanBase.disable
+
+disable(event)[source]
+ 
+Release the canvas and disconnect press/release events.

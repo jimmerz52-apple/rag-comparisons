@@ -1,0 +1,18 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.view_init
+
+view_init(elev=None, azim=None, vertical_axis='z')[source]
+ 
+Set the elevation and azimuth of the axes in degrees (not radians). This can be used to rotate the axes programmatically.  Parameters 
+ 
+elevfloat, default: None
+
+
+The elevation angle in the vertical plane in degrees. If None then the initial value as specified in the Axes3D constructor is used.  
+azimfloat, default: None
+
+
+The azimuth angle in the horizontal plane in degrees. If None then the initial value as specified in the Axes3D constructor is used.  
+vertical_axis{"z", "x", "y"}, default: "z"
+
+
+The axis to align vertically. azim rotates about this axis.

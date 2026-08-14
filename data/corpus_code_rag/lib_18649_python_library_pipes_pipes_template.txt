@@ -1,0 +1,4 @@
+# python.library.pipes#pipes.Template
+
+class pipes.Template  
+An abstraction of a pipeline.

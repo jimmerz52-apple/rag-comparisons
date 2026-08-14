@@ -1,0 +1,7 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.WKTReader
+
+class WKTReader  
+Example: >>> from django.contrib.gis.geos import WKTReader
+>>> wkt_r = WKTReader()
+>>> wkt_r.read('POINT(1 1)')
+<Point object at 0x103a88b50>

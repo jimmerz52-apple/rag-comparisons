@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.session_class
+
+session_class  
+alias of flask.sessions.SecureCookieSession

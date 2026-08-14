@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__xor__
+
+numpy.ndarray.__xor__ method   ndarray.__xor__(value, /)
+ 
+Return self^value.

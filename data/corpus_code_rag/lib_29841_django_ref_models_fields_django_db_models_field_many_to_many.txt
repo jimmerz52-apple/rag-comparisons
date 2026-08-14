@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.many_to_many
+
+Field.many_to_many  
+Boolean flag that is True if the field has a many-to-many relation; False otherwise. The only field included with Django where this is True is ManyToManyField.

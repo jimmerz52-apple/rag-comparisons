@@ -1,0 +1,22 @@
+# skimage.api.skimage.draw#skimage.draw.ellipsoid_stats
+
+skimage.draw.ellipsoid_stats(a, b, c) [source]
+ 
+Calculates analytical surface area and volume for ellipsoid with semimajor axes aligned with grid dimensions of specified spacing.  Parameters 
+ 
+afloat 
+
+Length of semimajor axis aligned with x-axis.  
+bfloat 
+
+Length of semimajor axis aligned with y-axis.  
+cfloat 
+
+Length of semimajor axis aligned with z-axis.    Returns 
+ 
+volfloat 
+
+Calculated volume of ellipsoid.  
+surffloat 
+
+Calculated surface area of ellipsoid.

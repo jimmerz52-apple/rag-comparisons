@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.BaseDateListView.allow_empty
+
+allow_empty  
+A boolean specifying whether to display the page if no objects are available. If this is True and no objects are available, the view will display an empty page instead of raising a 404. This is identical to django.views.generic.list.MultipleObjectMixin.allow_empty, except for the default value, which is False.

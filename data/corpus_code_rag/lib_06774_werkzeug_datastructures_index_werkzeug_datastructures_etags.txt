@@ -1,0 +1,24 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ETags
+
+class werkzeug.datastructures.ETags(strong_etags=None, weak_etags=None, star_tag=False)  
+A set that can be used to check if one etag is present in a collection of etags.  
+as_set(include_weak=False)  
+Convert the ETags object into a python set. Per default all the weak etags are not part of this set. 
+  
+contains(etag)  
+Check if an etag is part of the set ignoring weak tags. It is also possible to use the in operator. 
+  
+contains_raw(etag)  
+When passed a quoted tag it will check if this tag is part of the set. If the tag is weak it is checked against weak and strong tags, otherwise strong only. 
+  
+contains_weak(etag)  
+Check if an etag is part of the set including weak and strong tags. 
+  
+is_strong(etag)  
+Check if an etag is strong. 
+  
+is_weak(etag)  
+Check if an etag is weak. 
+  
+to_header()  
+Convert the etags set into a HTTP header string.

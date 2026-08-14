@@ -1,0 +1,38 @@
+# skimage.api.skimage.draw#skimage.draw.polygon_perimeter
+
+skimage.draw.polygon_perimeter(r, c, shape=None, clip=False) [source]
+ 
+Generate polygon perimeter coordinates.  Parameters 
+ 
+r(N,) ndarray 
+
+Row coordinates of vertices of polygon.  
+c(N,) ndarray 
+
+Column coordinates of vertices of polygon.  
+shapetuple, optional 
+
+Image shape which is used to determine maximum extents of output pixel coordinates. This is useful for polygons that exceed the image size. If None, the full extents of the polygon is used. Must be at least length 2. Only the first two values are used to determine the extent of the input image.  
+clipbool, optional 
+
+Whether to clip the polygon to the provided shape. If this is set to True, the drawn figure will always be a closed polygon with all edges visible.    Returns 
+ 
+rr, ccndarray of int 
+
+Pixel coordinates of polygon. May be used to directly index into an array, e.g. img[rr, cc] = 1.     Examples >>> from skimage.draw import polygon_perimeter
+>>> img = np.zeros((10, 10), dtype=np.uint8)
+>>> rr, cc = polygon_perimeter([5, -1, 5, 10],
+...                            [-1, 5, 11, 5],
+...                            shape=img.shape, clip=True)
+>>> img[rr, cc] = 1
+>>> img
+array([[0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 1, 0, 0, 0, 1, 0, 0],
+       [0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+       [0, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+       [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+       [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+       [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+       [0, 1, 1, 0, 0, 0, 0, 0, 0, 1],
+       [0, 0, 0, 1, 0, 0, 0, 1, 1, 0],
+       [0, 0, 0, 0, 1, 1, 1, 0, 0, 0]], dtype=uint8)

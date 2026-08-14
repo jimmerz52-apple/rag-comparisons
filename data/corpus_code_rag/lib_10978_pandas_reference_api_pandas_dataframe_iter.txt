@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.dataframe.__iter__
+
+pandas.DataFrame.__iter__   DataFrame.__iter__()[source]
+ 
+Iterate over info axis.  Returns 
+ iterator
+
+Info axis as iterator.

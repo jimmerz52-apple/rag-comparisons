@@ -1,0 +1,17 @@
+# tensorflow.compat.v1.flags.listparser
+
+tf.compat.v1.flags.ListParser Parser for a comma-separated list of strings. Inherits From: BaseListParser, ArgumentParser  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.ListParser  
+tf.compat.v1.flags.ListParser()
+ Methods flag_type 
+flag_type()
+ See base class. parse 
+parse(
+    argument
+)
+ Parses argument as comma-separated list of strings.
+ 
+
+
+ Class Variables
+  syntactic_help   ''

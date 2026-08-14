@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.is_imported
+
+is_imported()  
+Return True if the symbol is created from an import statement.

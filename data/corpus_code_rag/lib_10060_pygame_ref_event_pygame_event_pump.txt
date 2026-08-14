@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.pump
+
+pygame.event.pump() 
+ internally process pygame event handlers pump() -> None  For each frame of your game, you will need to make some sort of call to the event queue. This ensures your program can internally interact with the rest of the operating system. If you are not using other event functions in your game, you should call pygame.event.pump() to allow pygame to handle internal actions. This function is not necessary if your program is consistently processing events on the queue through the other pygame.event functions. There are important things that must be dealt with internally in the event queue. The main window may need to be repainted or respond to the system. If you fail to make a call to the event queue for too long, the system may decide your program has locked up.  Caution This function should only be called in the thread that initialized pygame.display.

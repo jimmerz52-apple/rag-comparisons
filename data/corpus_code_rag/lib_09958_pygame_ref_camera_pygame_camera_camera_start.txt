@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.start
+
+start() 
+ opens, initializes, and starts capturing start() -> None  Opens the camera device, attempts to initialize it, and begins recording images to a buffer. The camera must be started before any of the below functions can be used.

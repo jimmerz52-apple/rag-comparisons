@@ -1,0 +1,4 @@
+# python.library.os#os.altsep
+
+os.altsep  
+An alternative character used by the operating system to separate pathname components, or None if only one separator character exists. This is set to '/' on Windows systems where sep is a backslash. Also available via os.path.

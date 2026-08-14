@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.ewkt
+
+GEOSGeometry.ewkt  
+Returns the “extended” Well-Known Text of the geometry. This representation is specific to PostGIS and is a superset of the OGC WKT standard. [1] Essentially the SRID is prepended to the WKT representation, for example SRID=4326;POINT(5 23).  Note The output from this property does not include the 3dm, 3dz, and 4d information that PostGIS supports in its EWKT representations.

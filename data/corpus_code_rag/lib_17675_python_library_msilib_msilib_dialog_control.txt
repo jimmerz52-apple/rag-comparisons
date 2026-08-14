@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Dialog.control
+
+control(name, type, x, y, width, height, attributes, property, text, control_next, help)  
+Return a new Control object. An entry in the Control table is made with the specified parameters. This is a generic method; for specific types, specialized methods are provided.

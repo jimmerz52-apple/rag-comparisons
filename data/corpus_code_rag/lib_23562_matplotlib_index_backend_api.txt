@@ -1,0 +1,3 @@
+# matplotlib.index_backend_api
+
+matplotlib.backends  backend_mixed backend_template backend_agg backend_cairo backend_gtk3agg, backend_gtk3cairo backend_gtk4agg, backend_gtk4cairo backend_nbagg backend_pdf backend_pgf backend_ps backend_qtagg, backend_qtcairo backend_svg backend_tkagg, backend_tkcairo backend_webagg backend_wxagg, backend_wxcairo

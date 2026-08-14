@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.STARTUPINFO.hStdInput
+
+hStdInput  
+If dwFlags specifies STARTF_USESTDHANDLES, this attribute is the standard input handle for the process. If STARTF_USESTDHANDLES is not specified, the default for standard input is the keyboard buffer.

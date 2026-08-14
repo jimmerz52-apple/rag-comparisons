@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.normal.Normal.expand
+
+expand(batch_shape, _instance=None) [source]

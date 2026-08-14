@@ -1,0 +1,20 @@
+# flask.api.index#flask.Flask.test_request_context
+
+test_request_context(*args, **kwargs)  
+Create a RequestContext for a WSGI environment created from the given values. This is mostly useful during testing, where you may want to run a function that uses request data without dispatching a full request. See The Request Context. Use a with block to push the context, which will make request point at the request for the created environment. with test_request_context(...):
+    generate_report()
+ When using the shell, it may be easier to push and pop the context manually to avoid indentation. ctx = app.test_request_context(...)
+ctx.push()
+...
+ctx.pop()
+ Takes the same arguments as Werkzeug’s EnvironBuilder, with some defaults from the application. See the linked Werkzeug docs for most of the available arguments. Flask-specific behavior is listed here.  Parameters 
+ 
+path – URL path being requested. 
+base_url – Base URL where the app is being served, which path is relative to. If not given, built from PREFERRED_URL_SCHEME, subdomain, SERVER_NAME, and APPLICATION_ROOT. 
+subdomain – Subdomain name to append to SERVER_NAME. 
+url_scheme – Scheme to use instead of PREFERRED_URL_SCHEME. 
+data – The request body, either as a string or a dict of form keys and values. 
+json – If given, this is serialized as JSON and passed as data. Also defaults content_type to application/json. 
+args (Any) – other positional arguments passed to EnvironBuilder. 
+kwargs (Any) – other keyword arguments passed to EnvironBuilder.   Return type 
+flask.ctx.RequestContext

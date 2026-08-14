@@ -1,0 +1,5 @@
+# python.library.xmlrpc.client#xmlrpc.client.loads
+
+xmlrpc.client.loads(data, use_datetime=False, use_builtin_types=False)  
+Convert an XML-RPC request or response into Python objects, a (params,
+methodname). params is a tuple of argument; methodname is a string, or None if no method name is present in the packet. If the XML-RPC packet represents a fault condition, this function will raise a Fault exception. The use_builtin_types flag can be used to cause date/time values to be presented as datetime.datetime objects and binary data to be presented as bytes objects; this flag is false by default. The obsolete use_datetime flag is similar to use_builtin_types but it applies only to date/time values.  Changed in version 3.3: The use_builtin_types flag was added.

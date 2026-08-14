@@ -1,0 +1,26 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.rec_append_fields
+
+numpy.lib.recfunctions.rec_append_fields(base, names, data, dtypes=None)[source]
+ 
+Add new fields to an existing array. The names of the fields are given with the names arguments, the corresponding values with the data arguments. If a single field is appended, names, data and dtypes do not have to be lists but just values.  Parameters 
+ 
+basearray
+
+
+Input array to extend.  
+namesstring, sequence
+
+
+String or sequence of strings corresponding to the names of the new fields.  
+dataarray or sequence of arrays
+
+
+Array or sequence of arrays storing the fields to add to the base.  
+dtypessequence of datatypes, optional
+
+
+Datatype or sequence of datatypes. If None, the datatypes are estimated from the data.    Returns 
+ 
+appended_arraynp.recarray
+
+    See also  append_fields

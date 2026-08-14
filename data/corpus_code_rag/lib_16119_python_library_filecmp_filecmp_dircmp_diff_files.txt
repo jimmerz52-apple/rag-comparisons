@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.diff_files
+
+diff_files  
+Files which are in both a and b, whose contents differ according to the class’s file comparison operator.

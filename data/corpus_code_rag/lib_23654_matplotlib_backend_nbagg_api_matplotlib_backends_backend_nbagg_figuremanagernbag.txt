@@ -1,0 +1,5 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.FigureManagerNbAgg.reshow
+
+reshow()[source]
+ 
+A special method to re-show the figure in the notebook.

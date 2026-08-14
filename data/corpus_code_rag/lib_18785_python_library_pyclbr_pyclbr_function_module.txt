@@ -1,0 +1,4 @@
+# python.library.pyclbr#pyclbr.Function.module
+
+Function.module  
+The name of the module defining the function described.

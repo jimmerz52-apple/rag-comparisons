@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IWUSR
+
+stat.S_IWUSR  
+Owner has write permission.

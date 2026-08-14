@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.isnan
+
+cmath.isnan(x)  
+Return True if either the real or the imaginary part of x is a NaN, and False otherwise.

@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.NavigationToolbar2.pan
+
+pan(*args)[source]
+ 
+Toggle the pan/zoom tool. Pan with left button, zoom with right.

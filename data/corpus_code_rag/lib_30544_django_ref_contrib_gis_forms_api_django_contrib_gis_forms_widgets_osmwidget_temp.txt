@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.OSMWidget.template_name
+
+template_name  
+gis/openlayers-osm.html

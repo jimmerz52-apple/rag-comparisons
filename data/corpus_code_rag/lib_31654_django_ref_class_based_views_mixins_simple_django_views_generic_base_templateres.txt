@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.TemplateResponseMixin.render_to_response
+
+render_to_response(context, **response_kwargs)  
+Returns a self.response_class instance. If any keyword arguments are provided, they will be passed to the constructor of the response class. Calls get_template_names() to obtain the list of template names that will be searched looking for an existent template.

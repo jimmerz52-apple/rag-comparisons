@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.period.year
+
+pandas.Period.year   Period.year
+ 
+Return the year this Period falls on.

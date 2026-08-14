@@ -1,0 +1,4 @@
+# python.library.pipes#pipes.Template.clone
+
+Template.clone()  
+Return a new, equivalent, pipeline template.

@@ -1,0 +1,3 @@
+# python.library.tkinter.colorchooser#tkinter.colorchooser.Chooser
+
+class tkinter.colorchooser.Chooser(master=None, **options)

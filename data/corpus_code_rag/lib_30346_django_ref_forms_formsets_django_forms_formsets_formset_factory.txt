@@ -1,0 +1,4 @@
+# django.ref.forms.formsets#django.forms.formsets.formset_factory
+
+formset_factory(form, formset=BaseFormSet, extra=1, can_order=False, can_delete=False, max_num=None, validate_max=False, min_num=None, validate_min=False, absolute_max=None, can_delete_extra=True, renderer=None)  
+Returns a FormSet class for the given form class. See formsets for example usage.  Changed in Django 3.2: The absolute_max and can_delete_extra arguments were added.   Changed in Django 4.0: The renderer argument was added.

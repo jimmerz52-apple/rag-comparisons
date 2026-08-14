@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.upper
+
+numpy.char.chararray.upper method   char.chararray.upper()[source]
+ 
+Return an array with the elements of self converted to uppercase.  See also  char.upper

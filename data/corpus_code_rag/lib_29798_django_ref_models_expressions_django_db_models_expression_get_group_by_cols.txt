@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.get_group_by_cols
+
+get_group_by_cols(alias=None)  
+Responsible for returning the list of columns references by this expression. get_group_by_cols() should be called on any nested expressions. F() objects, in particular, hold a reference to a column. The alias parameter will be None unless the expression has been annotated and is used for grouping.

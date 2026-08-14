@@ -1,0 +1,4 @@
+# python.library.test#test.support.missing_compiler_executable
+
+test.support.missing_compiler_executable(cmd_names=[])  
+Check for the existence of the compiler executables whose names are listed in cmd_names or all the compiler executables when cmd_names is empty and return the first missing executable or None when none is found missing.

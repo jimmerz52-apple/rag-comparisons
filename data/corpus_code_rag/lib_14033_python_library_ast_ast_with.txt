@@ -1,0 +1,6 @@
+# python.library.ast#ast.With
+
+class ast.With(items, body, type_comment)  
+A with block. items is a list of withitem nodes representing the context managers, and body is the indented block inside the context.  
+type_comment  
+type_comment is an optional string with the type annotation as a comment.

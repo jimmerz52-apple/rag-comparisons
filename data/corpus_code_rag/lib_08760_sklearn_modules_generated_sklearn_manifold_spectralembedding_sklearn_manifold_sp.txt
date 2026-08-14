@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.manifold.spectralembedding#sklearn.manifold.SpectralEmbedding.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Fit the model from data in X and transform X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vector, where n_samples is the number of samples and n_features is the number of features. If affinity is “precomputed” X : {array-like, sparse matrix} of shape (n_samples, n_samples), Interpret X as precomputed adjacency graph computed from samples.  
+yIgnored 
+  Returns 
+ 
+X_newarray-like of shape (n_samples, n_components)

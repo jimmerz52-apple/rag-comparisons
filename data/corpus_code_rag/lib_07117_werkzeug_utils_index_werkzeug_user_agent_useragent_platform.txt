@@ -1,0 +1,4 @@
+# werkzeug.utils.index#werkzeug.user_agent.UserAgent.platform
+
+platform: Optional[str] = None  
+The OS name, if it could be parsed from the string.

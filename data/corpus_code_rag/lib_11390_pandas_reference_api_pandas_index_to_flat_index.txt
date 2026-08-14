@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.index.to_flat_index
+
+pandas.Index.to_flat_index   Index.to_flat_index()[source]
+ 
+Identity method. This is implemented for compatibility with subclass implementations when chaining.  Returns 
+ pd.Index
+
+Caller.      See also  MultiIndex.to_flat_index
+
+Subclass implementation.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.MAX_Py_ssize_t
+
+test.support.MAX_Py_ssize_t  
+Set to sys.maxsize for big memory tests.

@@ -1,0 +1,14 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseProxy._callmethod
+
+_callmethod(methodname[, args[, kwds]])  
+Call and return the result of a method of the proxy’s referent. If proxy is a proxy whose referent is obj then the expression proxy._callmethod(methodname, args, kwds)
+ will evaluate the expression getattr(obj, methodname)(*args, **kwds)
+ in the manager’s process. The returned value will be a copy of the result of the call or a proxy to a new shared object – see documentation for the method_to_typeid argument of BaseManager.register(). If an exception is raised by the call, then is re-raised by _callmethod(). If some other exception is raised in the manager’s process then this is converted into a RemoteError exception and is raised by _callmethod(). Note in particular that an exception will be raised if methodname has not been exposed. An example of the usage of _callmethod(): >>> l = manager.list(range(10))
+>>> l._callmethod('__len__')
+10
+>>> l._callmethod('__getitem__', (slice(2, 7),)) # equivalent to l[2:7]
+[2, 3, 4, 5, 6]
+>>> l._callmethod('__getitem__', (20,))          # equivalent to l[20]
+Traceback (most recent call last):
+...
+IndexError: list index out of range

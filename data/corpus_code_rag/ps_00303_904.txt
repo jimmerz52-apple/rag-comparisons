@@ -1,0 +1,9 @@
+# 904
+Task: 904
+
+# Write a function to return true if the given number is even else return false.
+def even_num(x):
+  if x%2==0:
+     return True
+  else:
+    return False

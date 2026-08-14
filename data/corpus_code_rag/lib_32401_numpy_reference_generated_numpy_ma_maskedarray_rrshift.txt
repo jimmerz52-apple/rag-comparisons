@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rrshift__
+
+numpy.ma.MaskedArray.__rrshift__ method   ma.MaskedArray.__rrshift__(value, /)
+ 
+Return value>>self.

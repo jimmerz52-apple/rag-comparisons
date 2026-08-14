@@ -1,0 +1,7 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontManager.addfont
+
+addfont(path)[source]
+ 
+Cache the properties of the font at path to make it available to the FontManager. The type of font is inferred from the path suffix.  Parameters 
+ 
+pathstr or path-like

@@ -1,0 +1,6 @@
+# torch.amp#torch.cuda.amp.GradScaler.set_backoff_factor
+
+set_backoff_factor(new_factor) [source]
+ 
+ Parameters 
+new_scale (float) – Value to use as the new scale backoff factor.

@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.model
+
+Field.model  
+Returns the model on which the field is defined. If a field is defined on a superclass of a model, model will refer to the superclass, not the class of the instance.

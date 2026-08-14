@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.core.groupby.groupby.__iter__
+
+pandas.core.groupby.GroupBy.__iter__   GroupBy.__iter__()[source]
+ 
+Groupby iterator.  Returns 
+ Generator yielding sequence of (name, subsetted object)
+for each group

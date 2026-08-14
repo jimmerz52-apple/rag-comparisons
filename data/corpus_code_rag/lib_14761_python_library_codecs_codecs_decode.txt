@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.decode
+
+codecs.decode(obj, encoding='utf-8', errors='strict')  
+Decodes obj using the codec registered for encoding. Errors may be given to set the desired error handling scheme. The default error handler is 'strict' meaning that decoding errors raise ValueError (or a more codec specific subclass, such as UnicodeDecodeError). Refer to Codec Base Classes for more information on codec error handling.

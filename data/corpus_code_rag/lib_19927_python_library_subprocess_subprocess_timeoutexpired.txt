@@ -1,0 +1,19 @@
+# python.library.subprocess#subprocess.TimeoutExpired
+
+exception subprocess.TimeoutExpired  
+Subclass of SubprocessError, raised when a timeout expires while waiting for a child process.  
+cmd  
+Command that was used to spawn the child process. 
+  
+timeout  
+Timeout in seconds. 
+  
+output  
+Output of the child process if it was captured by run() or check_output(). Otherwise, None. 
+  
+stdout  
+Alias for output, for symmetry with stderr. 
+  
+stderr  
+Stderr output of the child process if it was captured by run(). Otherwise, None. 
+  New in version 3.3.   Changed in version 3.5: stdout and stderr attributes added

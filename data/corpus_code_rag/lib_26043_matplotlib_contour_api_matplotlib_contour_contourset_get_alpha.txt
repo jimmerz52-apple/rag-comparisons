@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourSet.get_alpha
+
+get_alpha()[source]
+ 
+Return alpha to be applied to all ContourSet artists.

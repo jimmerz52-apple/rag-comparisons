@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.max_unpool2d
+
+torch.nn.functional.max_unpool2d(input, indices, kernel_size, stride=None, padding=0, output_size=None) [source]
+ 
+Computes a partial inverse of MaxPool2d. See MaxUnpool2d for details.

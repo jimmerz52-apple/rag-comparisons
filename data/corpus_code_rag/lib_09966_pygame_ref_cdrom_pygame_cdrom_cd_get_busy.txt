@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_busy
+
+get_busy() 
+ true if the drive is playing audio get_busy() -> bool  Returns True if the drive busy playing back audio.

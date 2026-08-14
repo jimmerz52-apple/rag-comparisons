@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.apps.get_app_configs
+
+apps.get_app_configs()  
+Returns an iterable of AppConfig instances.

@@ -1,0 +1,20 @@
+# skimage.api.skimage.morphology#skimage.morphology.octagon
+
+skimage.morphology.octagon(m, n, dtype=<class 'numpy.uint8'>) [source]
+ 
+Generates an octagon shaped structuring element. For a given size of (m) horizontal and vertical sides and a given (n) height or width of slanted sides octagon is generated. The slanted sides are 45 or 135 degrees to the horizontal axis and hence the widths and heights are equal.  Parameters 
+ 
+mint 
+
+The size of the horizontal and vertical sides.  
+nint 
+
+The height or width of the slanted sides.    Returns 
+ 
+selemndarray 
+
+The structuring element where elements of the neighborhood are 1 and 0 otherwise.    Other Parameters 
+ 
+dtypedata-type 
+
+The data type of the structuring element.

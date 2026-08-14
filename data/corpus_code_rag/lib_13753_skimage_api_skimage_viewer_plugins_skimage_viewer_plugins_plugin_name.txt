@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.name
+
+name = 'Plugin'

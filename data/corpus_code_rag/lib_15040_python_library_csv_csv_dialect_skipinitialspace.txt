@@ -1,0 +1,4 @@
+# python.library.csv#csv.Dialect.skipinitialspace
+
+Dialect.skipinitialspace  
+When True, whitespace immediately following the delimiter is ignored. The default is False.

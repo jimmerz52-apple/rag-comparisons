@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser
+
+class html.parser.HTMLParser(*, convert_charrefs=True)  
+Create a parser instance able to parse invalid markup. If convert_charrefs is True (the default), all character references (except the ones in script/style elements) are automatically converted to the corresponding Unicode characters. An HTMLParser instance is fed HTML data and calls handler methods when start tags, end tags, text, comments, and other markup elements are encountered. The user should subclass HTMLParser and override its methods to implement the desired behavior. This parser does not check that end tags match start tags or call the end-tag handler for elements which are closed implicitly by closing an outer element.  Changed in version 3.4: convert_charrefs keyword argument added.   Changed in version 3.5: The default value for argument convert_charrefs is now True.

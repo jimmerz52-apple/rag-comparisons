@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ne
+
+ne(other) → Tensor  
+See torch.ne().

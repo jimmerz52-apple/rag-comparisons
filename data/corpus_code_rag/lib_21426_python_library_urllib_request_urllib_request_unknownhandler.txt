@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.UnknownHandler
+
+class urllib.request.UnknownHandler  
+A catch-all class to handle unknown URLs.

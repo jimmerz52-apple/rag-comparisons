@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.east_asian_width
+
+unicodedata.east_asian_width(chr)  
+Returns the east asian width assigned to the character chr as string.

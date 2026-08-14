@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.get_family
+
+get_family()[source]
+ 
+Return a list of font names that comprise the font family.

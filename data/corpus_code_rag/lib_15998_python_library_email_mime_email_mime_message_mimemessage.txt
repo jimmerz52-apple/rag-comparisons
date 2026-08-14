@@ -1,0 +1,4 @@
+# python.library.email.mime#email.mime.message.MIMEMessage
+
+class email.mime.message.MIMEMessage(_msg, _subtype='rfc822', *, policy=compat32)  
+Module: email.mime.message A subclass of MIMENonMultipart, the MIMEMessage class is used to create MIME objects of main type message. _msg is used as the payload, and must be an instance of class Message (or a subclass thereof), otherwise a TypeError is raised. Optional _subtype sets the subtype of the message; it defaults to rfc822. Optional policy argument defaults to compat32.  Changed in version 3.6: Added policy keyword-only parameter.

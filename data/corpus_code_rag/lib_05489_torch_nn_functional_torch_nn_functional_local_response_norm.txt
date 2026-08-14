@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.local_response_norm
+
+torch.nn.functional.local_response_norm(input, size, alpha=0.0001, beta=0.75, k=1.0) [source]
+ 
+Applies local response normalization over an input signal composed of several input planes, where channels occupy the second dimension. Applies normalization across channels. See LocalResponseNorm for details.

@@ -1,0 +1,8 @@
+# flask.api.index#flask.request_started
+
+flask.request_started  
+This signal is sent when the request context is set up, before any request processing happens. Because the request context is already bound, the subscriber can access the request with the standard global proxies such as request. Example subscriber: def log_request(sender, **extra):
+    sender.logger.debug('Request context is set up')
+
+from flask import request_started
+request_started.connect(log_request, app)

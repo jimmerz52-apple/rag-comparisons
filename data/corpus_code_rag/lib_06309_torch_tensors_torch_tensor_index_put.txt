@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.index_put
+
+index_put(tensor1, indices, values, accumulate=False) → Tensor  
+Out-place version of index_put_(). tensor1 corresponds to self in torch.Tensor.index_put_().

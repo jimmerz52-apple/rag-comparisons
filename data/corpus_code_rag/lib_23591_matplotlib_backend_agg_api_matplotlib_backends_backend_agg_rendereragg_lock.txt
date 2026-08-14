@@ -1,0 +1,3 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.lock
+
+lock=<unlocked _thread.RLock object owner=0 count=0>

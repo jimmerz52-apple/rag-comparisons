@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_clip_on
+
+matplotlib.artist.Artist.get_clip_on   Artist.get_clip_on()[source]
+ 
+Return whether the artist uses clipping.

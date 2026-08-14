@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Group.add
+
+add() 
+ add Sprites to this Group add(*sprites) -> None  Add any number of Sprites to this Group. This will only add Sprites that are not already members of the Group. Each sprite argument can also be a iterator containing Sprites.

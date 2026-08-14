@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.AbstractContextManager
+
+class contextlib.AbstractContextManager  
+An abstract base class for classes that implement object.__enter__() and object.__exit__(). A default implementation for object.__enter__() is provided which returns self while object.__exit__() is an abstract method which by default returns None. See also the definition of Context Manager Types.  New in version 3.6.

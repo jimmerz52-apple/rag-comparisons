@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.remove_multi_index
+
+numpy.nditer.remove_multi_index method   nditer.remove_multi_index()
+ 
+When the “multi_index” flag was specified, this removes it, allowing the internal iteration structure to be optimized further.

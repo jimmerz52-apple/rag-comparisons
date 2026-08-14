@@ -1,0 +1,13 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.TypeConversionDict.get
+
+get(key, default=None, type=None)  
+Return the default value if the requested data doesn’t exist. If type is provided and is a callable it should convert the value, return it or raise a ValueError if that is not possible. In this case the function will return the default as if the value was not found: >>> d = TypeConversionDict(foo='42', bar='blub')
+>>> d.get('foo', type=int)
+42
+>>> d.get('bar', -1, type=int)
+-1
+  Parameters 
+ 
+key – The key to be looked up. 
+default – The default value to be returned if the key can’t be looked up. If not further specified None is returned. 
+type – A callable that is used to cast the value in the MultiDict. If a ValueError is raised by this callable the default value is returned.

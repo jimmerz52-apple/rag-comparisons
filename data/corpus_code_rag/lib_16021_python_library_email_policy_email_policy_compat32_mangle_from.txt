@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Compat32.mangle_from_
+
+mangle_from_  
+The default is True.

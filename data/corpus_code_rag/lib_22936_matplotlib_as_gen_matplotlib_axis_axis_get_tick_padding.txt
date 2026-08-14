@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_tick_padding
+
+matplotlib.axis.Axis.get_tick_padding   Axis.get_tick_padding()[source]

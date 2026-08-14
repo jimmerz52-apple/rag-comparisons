@@ -1,0 +1,9 @@
+# django.ref.models.class#django.db.models.Model.objects
+
+Model.objects  
+Each non-abstract Model class must have a Manager instance added to it. Django ensures that in your model class you have at least a default Manager specified. If you don’t add your own Manager, Django will add an attribute objects containing default Manager instance. If you add your own Manager instance attribute, the default one does not appear. Consider the following example: from django.db import models
+
+class Person(models.Model):
+    # Add manager with another name
+    people = models.Manager()
+ For more details on model managers see Managers and Retrieving objects.

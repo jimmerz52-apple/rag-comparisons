@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.get_path
+
+get_path()[source]
+ 
+Return the path of this patch.

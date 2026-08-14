@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.PolyCollection.set_path_effects
+
+set_path_effects(path_effects)[source]
+ 
+Set the path effects.  Parameters 
+ 
+path_effectsAbstractPathEffect

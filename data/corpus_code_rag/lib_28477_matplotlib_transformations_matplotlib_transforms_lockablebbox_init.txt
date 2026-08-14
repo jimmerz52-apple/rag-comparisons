@@ -1,0 +1,26 @@
+# matplotlib.transformations#matplotlib.transforms.LockableBbox.__init__
+
+__init__(bbox, x0=None, y0=None, x1=None, y1=None, **kwargs)[source]
+ 
+ Parameters 
+ 
+bboxBbox
+
+
+The child bounding box to wrap.  
+x0float or None
+
+
+The locked value for x0, or None to leave unlocked.  
+y0float or None
+
+
+The locked value for y0, or None to leave unlocked.  
+x1float or None
+
+
+The locked value for x1, or None to leave unlocked.  
+y1float or None
+
+
+The locked value for y1, or None to leave unlocked.

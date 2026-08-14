@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.html.conditional_escape
+
+conditional_escape(text)  
+Similar to escape(), except that it doesn’t operate on pre-escaped strings, so it will not double escape.

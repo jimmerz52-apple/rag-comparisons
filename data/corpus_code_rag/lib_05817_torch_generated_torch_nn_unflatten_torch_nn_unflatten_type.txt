@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.unflatten#torch.nn.Unflatten.type
+
+type(dst_type)  
+Casts all parameters and buffers to dst_type.  Parameters 
+dst_type (type or string) – the desired type  Returns 
+self  Return type 
+Module

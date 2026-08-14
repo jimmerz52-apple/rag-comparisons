@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.le
+
+le(other) → Tensor  
+See torch.le().

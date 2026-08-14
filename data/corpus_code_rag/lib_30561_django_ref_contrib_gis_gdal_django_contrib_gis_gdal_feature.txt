@@ -1,0 +1,29 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Feature
+
+class Feature  
+Feature wraps an OGR feature. You never create a Feature object directly. Instead, you retrieve them from a Layer object. Each feature consists of a geometry and a set of fields containing additional properties. The geometry of a field is accessible via its geom property, which returns an OGRGeometry object. A Feature behaves like a standard Python container for its fields, which it returns as Field objects: you can access a field directly by its index or name, or you can iterate over a feature’s fields, e.g. in a for loop.  
+geom 
+ Returns the geometry for this feature, as an OGRGeometry object: >>> city.geom.tuple
+(-104.609252, 38.255001)
+  
+get 
+ A method that returns the value of the given field (specified by name) for this feature, not a Field wrapper object: >>> city.get('Population')
+102121
+  
+geom_type 
+ Returns the type of geometry for this feature, as an OGRGeomType object. This will be the same for all features in a given layer and is equivalent to the Layer.geom_type property of the Layer object the feature came from.  
+num_fields 
+ Returns the number of fields of data associated with the feature. This will be the same for all features in a given layer and is equivalent to the Layer.num_fields property of the Layer object the feature came from.  
+fields 
+ Returns a list of the names of the fields of data associated with the feature. This will be the same for all features in a given layer and is equivalent to the Layer.fields property of the Layer object the feature came from.  
+fid 
+ Returns the feature identifier within the layer: >>> city.fid
+0
+  
+layer_name 
+ Returns the name of the Layer that the feature came from. This will be the same for all features in a given layer: >>> city.layer_name
+'cities'
+  
+index 
+ A method that returns the index of the given field name. This will be the same for all features in a given layer: >>> city.index('Population')
+1

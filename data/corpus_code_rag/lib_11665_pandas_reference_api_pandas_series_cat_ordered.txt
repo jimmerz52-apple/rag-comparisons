@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.cat.ordered
+
+pandas.Series.cat.ordered   Series.cat.ordered
+ 
+Whether the categories have an ordered relationship.

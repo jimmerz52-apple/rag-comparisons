@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.choose
+
+numpy.ndarray.choose method   ndarray.choose(choices, out=None, mode='raise')
+ 
+Use an index array to construct a new array from a set of choices. Refer to numpy.choose for full documentation.  See also  numpy.choose
+
+equivalent function

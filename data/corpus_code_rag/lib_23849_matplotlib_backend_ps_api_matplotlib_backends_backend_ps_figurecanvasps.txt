@@ -1,0 +1,17 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.FigureCanvasPS
+
+classmatplotlib.backends.backend_ps.FigureCanvasPS(figure=None)[source]
+ 
+Bases: matplotlib.backend_bases.FigureCanvasBase   draw()[source]
+ 
+Render the Figure. It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk. 
+   filetypes={'eps': 'Encapsulated Postscript', 'ps': 'Postscript'}
+
+   fixed_dpi=72
+
+   get_default_filetype()[source]
+ 
+Return the default savefig file format as specified in rcParams["savefig.format"] (default: 'png'). The returned string does not include a period. This method is overridden in backends that only support a single file type. 
+   print_eps(outfile, *args, **kwargs)[source]
+
+   print_ps(outfile, *args, **kwargs)[source]

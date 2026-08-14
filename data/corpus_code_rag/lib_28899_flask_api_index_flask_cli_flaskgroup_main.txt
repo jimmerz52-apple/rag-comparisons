@@ -1,0 +1,10 @@
+# flask.api.index#flask.cli.FlaskGroup.main
+
+main(*args, **kwargs)  
+This is the way to invoke a script with all the bells and whistles as a command line application. This will always terminate the application after a call. If this is not wanted, SystemExit needs to be caught. This method is also available by directly calling the instance of a Command.  Parameters 
+ 
+args – the arguments that should be used for parsing. If not provided, sys.argv[1:] is used. 
+prog_name – the program name that should be used. By default the program name is constructed by taking the file name from sys.argv[0]. 
+complete_var – the environment variable that controls the bash completion support. The default is "_<prog_name>_COMPLETE" with prog_name in uppercase. 
+standalone_mode – the default behavior is to invoke the script in standalone mode. Click will then handle exceptions and convert them into error messages and the function will never return but shut down the interpreter. If this is set to False they will be propagated to the caller and the return value of this function is the return value of invoke(). 
+extra – extra keyword arguments are forwarded to the context constructor. See Context for more information.     Changed in version 8.0: When taking arguments from sys.argv on Windows, glob patterns, user dir, and env vars are expanded.   Changed in version 3.0: Added the standalone_mode parameter.

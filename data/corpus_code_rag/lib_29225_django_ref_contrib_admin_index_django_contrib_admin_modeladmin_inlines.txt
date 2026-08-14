@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.inlines
+
+ModelAdmin.inlines  
+See InlineModelAdmin objects below as well as ModelAdmin.get_formsets_with_inlines().

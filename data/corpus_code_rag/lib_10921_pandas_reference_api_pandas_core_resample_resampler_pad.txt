@@ -1,0 +1,16 @@
+# pandas.reference.api.pandas.core.resample.resampler.pad
+
+pandas.core.resample.Resampler.pad   Resampler.pad(limit=None)[source]
+ 
+Forward fill the values.  Parameters 
+ 
+limit:int, optional
+
+
+Limit of how many values to fill.    Returns 
+ An upsampled Series.
+    See also  Series.fillna
+
+Fill NA/NaN values using the specified method.  DataFrame.fillna
+
+Fill NA/NaN values using the specified method.

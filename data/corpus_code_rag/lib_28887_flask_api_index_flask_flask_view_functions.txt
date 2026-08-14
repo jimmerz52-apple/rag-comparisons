@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.view_functions
+
+view_functions: t.Dict[str, t.Callable]  
+A dictionary mapping endpoint names to view functions. To register a view function, use the route() decorator. This data structure is internal. It should not be modified directly and its format may change at any time.

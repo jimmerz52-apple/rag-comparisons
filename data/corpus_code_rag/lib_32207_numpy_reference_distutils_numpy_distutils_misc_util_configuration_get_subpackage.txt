@@ -1,0 +1,18 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.get_subpackage
+
+get_subpackage(subpackage_name, subpackage_path=None, parent_name=None, caller_level=1)[source]
+ 
+Return list of subpackage configurations.  Parameters 
+ 
+subpackage_namestr or None
+
+
+Name of the subpackage to get the configuration. ‘*’ in subpackage_name is handled as a wildcard.  
+subpackage_pathstr
+
+
+If None, then the path is assumed to be the local path plus the subpackage_name. If a setup.py file is not found in the subpackage_path, then a default configuration is used.  
+parent_namestr
+
+
+Parent name.

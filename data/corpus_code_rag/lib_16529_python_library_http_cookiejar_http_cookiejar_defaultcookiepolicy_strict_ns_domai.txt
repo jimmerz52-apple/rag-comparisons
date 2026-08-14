@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.strict_ns_domain
+
+DefaultCookiePolicy.strict_ns_domain  
+Flags indicating how strict to be with domain-matching rules for Netscape cookies. See below for acceptable values.

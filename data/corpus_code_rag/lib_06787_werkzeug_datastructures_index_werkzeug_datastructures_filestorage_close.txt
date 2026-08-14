@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.FileStorage.close
+
+close()  
+Close the underlying file if possible.

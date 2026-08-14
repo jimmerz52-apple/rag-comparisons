@@ -1,0 +1,4 @@
+# python.library.readline#readline.redisplay
+
+readline.redisplay()  
+Change what’s displayed on the screen to reflect the current contents of the line buffer. This calls rl_redisplay() in the underlying library.

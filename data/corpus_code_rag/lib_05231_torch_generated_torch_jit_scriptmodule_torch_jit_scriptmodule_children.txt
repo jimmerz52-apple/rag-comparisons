@@ -1,0 +1,5 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.children
+
+children()  
+Returns an iterator over immediate children modules.  Yields 
+Module – a child module

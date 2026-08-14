@@ -1,0 +1,4 @@
+# flask.api.index#flask.Request.scheme
+
+scheme  
+The URL scheme of the protocol the request used, such as https or wss.

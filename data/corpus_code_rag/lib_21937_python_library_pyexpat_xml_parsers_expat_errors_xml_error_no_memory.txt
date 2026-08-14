@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_NO_MEMORY
+
+xml.parsers.expat.errors.XML_ERROR_NO_MEMORY  
+Expat was not able to allocate memory internally.

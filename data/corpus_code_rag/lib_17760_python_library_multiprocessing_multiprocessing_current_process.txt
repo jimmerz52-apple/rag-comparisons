@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.current_process
+
+multiprocessing.current_process()  
+Return the Process object corresponding to the current process. An analogue of threading.current_thread().

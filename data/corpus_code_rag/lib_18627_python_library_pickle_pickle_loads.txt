@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.loads
+
+pickle.loads(data, /, *, fix_imports=True, encoding="ASCII", errors="strict", buffers=None)  
+Return the reconstituted object hierarchy of the pickled representation data of an object. data must be a bytes-like object. The protocol version of the pickle is detected automatically, so no protocol argument is needed. Bytes past the pickled representation of the object are ignored. Arguments file, fix_imports, encoding, errors, strict and buffers have the same meaning as in the Unpickler constructor.  Changed in version 3.8: The buffers argument was added.

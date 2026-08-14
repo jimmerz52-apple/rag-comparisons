@@ -1,0 +1,11 @@
+# flask.api.index#flask.Flask.endpoint
+
+endpoint(endpoint)  
+Decorate a view function to register it for the given endpoint. Used if a rule is added without a view_func with add_url_rule(). app.add_url_rule("/ex", endpoint="example")
+
+@app.endpoint("example")
+def example():
+    ...
+  Parameters 
+endpoint (str) – The endpoint name to associate with the view function.  Return type 
+Callable

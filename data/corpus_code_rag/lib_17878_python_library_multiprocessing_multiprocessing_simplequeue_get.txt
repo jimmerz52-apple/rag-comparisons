@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.SimpleQueue.get
+
+get()  
+Remove and return an item from the queue.

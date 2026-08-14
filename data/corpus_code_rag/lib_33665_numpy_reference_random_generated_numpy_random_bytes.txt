@@ -1,0 +1,18 @@
+# numpy.reference.random.generated.numpy.random.bytes
+
+numpy.random.bytes   random.bytes(length)
+ 
+Return random bytes.  Note New code should use the bytes method of a default_rng() instance instead; please see the Quick Start.   Parameters 
+ 
+lengthint
+
+
+Number of random bytes.    Returns 
+ 
+outbytes
+
+
+String of length length.      See also  Generator.bytes
+
+which should be used for new code.    Examples >>> np.random.bytes(10)
+b' eh\x85\x022SZ\xbf\xa4' #random

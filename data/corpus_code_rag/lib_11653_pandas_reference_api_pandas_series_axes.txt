@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.axes
+
+pandas.Series.axes   propertySeries.axes
+ 
+Return a list of the row axis labels.

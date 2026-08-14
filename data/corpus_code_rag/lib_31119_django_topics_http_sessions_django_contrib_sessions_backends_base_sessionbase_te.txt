@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.test_cookie_worked
+
+test_cookie_worked()  
+Returns either True or False, depending on whether the user’s browser accepted the test cookie. Due to the way cookies work, you’ll have to call set_test_cookie() on a previous, separate page request. See Setting test cookies below for more information.

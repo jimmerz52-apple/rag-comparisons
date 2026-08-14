@@ -1,0 +1,21 @@
+# skimage.api.skimage.metrics#skimage.metrics.peak_signal_noise_ratio
+
+skimage.metrics.peak_signal_noise_ratio(image_true, image_test, *, data_range=None) [source]
+ 
+Compute the peak signal to noise ratio (PSNR) for an image.  Parameters 
+ 
+image_truendarray 
+
+Ground-truth image, same shape as im_test.  
+image_testndarray 
+
+Test image.  
+data_rangeint, optional 
+
+The data range of the input image (distance between minimum and maximum possible values). By default, this is estimated from the image data-type.    Returns 
+ 
+psnrfloat 
+
+The PSNR metric.     Notes  Changed in version 0.16: This function was renamed from skimage.measure.compare_psnr to skimage.metrics.peak_signal_noise_ratio.  References  
+1  
+https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio

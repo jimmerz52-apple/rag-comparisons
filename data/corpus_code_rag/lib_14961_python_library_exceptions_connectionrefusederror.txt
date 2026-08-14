@@ -1,0 +1,4 @@
+# python.library.exceptions#ConnectionRefusedError
+
+exception ConnectionRefusedError  
+A subclass of ConnectionError, raised when a connection attempt is refused by the peer. Corresponds to errno ECONNREFUSED.

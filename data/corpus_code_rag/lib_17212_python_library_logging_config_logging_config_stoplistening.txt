@@ -1,0 +1,4 @@
+# python.library.logging.config#logging.config.stopListening
+
+logging.config.stopListening()  
+Stops the listening server which was created with a call to listen(). This is typically called before calling join() on the return value from listen().

@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.open
+
+classmethod TarFile.open(...)  
+Alternative constructor. The tarfile.open() function is actually a shortcut to this classmethod.

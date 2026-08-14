@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.artistanimation#matplotlib.animation.ArtistAnimation.__init__
+
+__init__(fig, artists, *args, **kwargs)[source]

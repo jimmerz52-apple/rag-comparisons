@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetImage.get_extent
+
+get_extent(renderer)[source]
+ 
+Return a tuple width, height, xdescent, ydescent of the box.

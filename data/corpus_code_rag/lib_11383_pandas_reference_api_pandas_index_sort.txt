@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.sort
+
+pandas.Index.sort   finalIndex.sort(*args, **kwargs)[source]
+ 
+Use sort_values instead.

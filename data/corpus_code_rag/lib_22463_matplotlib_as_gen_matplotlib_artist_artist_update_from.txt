@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.update_from
+
+matplotlib.artist.Artist.update_from   Artist.update_from(other)[source]
+ 
+Copy properties from other to self.

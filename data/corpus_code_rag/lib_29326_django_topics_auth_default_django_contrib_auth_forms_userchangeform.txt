@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.forms.UserChangeForm
+
+class UserChangeForm  
+A form used in the admin interface to change a user’s information and permissions.

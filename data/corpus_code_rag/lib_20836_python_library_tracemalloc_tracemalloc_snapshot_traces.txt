@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Snapshot.traces
+
+traces  
+Traces of all memory blocks allocated by Python: sequence of Trace instances. The sequence has an undefined order. Use the Snapshot.statistics() method to get a sorted list of statistics.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.set_patchB
+
+set_patchB(patchB)[source]
+ 
+Set the head patch.  Parameters 
+ 
+patchBpatches.Patch

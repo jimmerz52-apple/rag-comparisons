@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.CharField.min_length
+
+min_length  
+If provided, these arguments ensure that the string is at most or at least the given length.

@@ -1,0 +1,7 @@
+# python.library.pathlib#pathlib.Path.expanduser
+
+Path.expanduser()  
+Return a new path with expanded ~ and ~user constructs, as returned by os.path.expanduser(): >>> p = PosixPath('~/films/Monty Python')
+>>> p.expanduser()
+PosixPath('/home/eric/films/Monty Python')
+  New in version 3.5.

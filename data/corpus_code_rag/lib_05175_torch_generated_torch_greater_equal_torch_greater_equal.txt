@@ -1,0 +1,4 @@
+# torch.generated.torch.greater_equal#torch.greater_equal
+
+torch.greater_equal(input, other, *, out=None) → Tensor  
+Alias for torch.ge().

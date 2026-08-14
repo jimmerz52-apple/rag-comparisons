@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.set_errno
+
+ctypes.set_errno(value)  
+Set the current value of the ctypes-private copy of the system errno variable in the calling thread to value and return the previous value. Raises an auditing event ctypes.set_errno with argument errno.

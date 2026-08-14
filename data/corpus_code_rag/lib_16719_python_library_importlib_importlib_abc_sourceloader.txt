@@ -1,0 +1,34 @@
+# python.library.importlib#importlib.abc.SourceLoader
+
+class importlib.abc.SourceLoader  
+An abstract base class for implementing source (and optionally bytecode) file loading. The class inherits from both ResourceLoader and ExecutionLoader, requiring the implementation of:  ResourceLoader.get_data() 
+ 
+ExecutionLoader.get_filename()
+
+
+Should only return the path to the source file; sourceless loading is not supported.     The abstract methods defined by this class are to add optional bytecode file support. Not implementing these optional methods (or causing them to raise NotImplementedError) causes the loader to only work with source code. Implementing the methods allows the loader to work with source and bytecode files; it does not allow for sourceless loading where only bytecode is provided. Bytecode files are an optimization to speed up loading by removing the parsing step of Python’s compiler, and so no bytecode-specific API is exposed.  
+path_stats(path)  
+Optional abstract method which returns a dict containing metadata about the specified path. Supported dictionary keys are:  
+'mtime' (mandatory): an integer or floating-point number representing the modification time of the source code; 
+'size' (optional): the size in bytes of the source code.  Any other keys in the dictionary are ignored, to allow for future extensions. If the path cannot be handled, OSError is raised.  New in version 3.3.   Changed in version 3.4: Raise OSError instead of NotImplementedError.  
+  
+path_mtime(path)  
+Optional abstract method which returns the modification time for the specified path.  Deprecated since version 3.3: This method is deprecated in favour of path_stats(). You don’t have to implement it, but it is still available for compatibility purposes. Raise OSError if the path cannot be handled.   Changed in version 3.4: Raise OSError instead of NotImplementedError.  
+  
+set_data(path, data)  
+Optional abstract method which writes the specified bytes to a file path. Any intermediate directories which do not exist are to be created automatically. When writing to the path fails because the path is read-only (errno.EACCES/PermissionError), do not propagate the exception.  Changed in version 3.4: No longer raises NotImplementedError when called.  
+  
+get_code(fullname)  
+Concrete implementation of InspectLoader.get_code(). 
+  
+exec_module(module)  
+Concrete implementation of Loader.exec_module().  New in version 3.4.  
+  
+load_module(fullname)  
+Concrete implementation of Loader.load_module().  Deprecated since version 3.4: Use exec_module() instead.  
+  
+get_source(fullname)  
+Concrete implementation of InspectLoader.get_source(). 
+  
+is_package(fullname)  
+Concrete implementation of InspectLoader.is_package(). A module is determined to be a package if its file path (as provided by ExecutionLoader.get_filename()) is a file named __init__ when the file extension is removed and the module name itself does not end in __init__.

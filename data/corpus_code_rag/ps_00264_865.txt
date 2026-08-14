@@ -1,0 +1,7 @@
+# 865
+Task: 865
+
+# Write a function to print n-times a list using map function.
+def ntimes_list(nums,n):
+    result = map(lambda x:n*x, nums) 
+    return list(result)

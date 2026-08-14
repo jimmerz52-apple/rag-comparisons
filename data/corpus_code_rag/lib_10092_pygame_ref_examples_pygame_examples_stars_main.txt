@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.stars.main
+
+stars.main() 
+ run a simple starfield example stars.main() -> None  A simple starfield example. You can change the center of perspective by leftclicking the mouse on the screen.

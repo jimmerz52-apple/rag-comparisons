@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.update_default_handler_map
+
+classmethodupdate_default_handler_map(handler_map)[source]
+ 
+A class method to update the default handler map.

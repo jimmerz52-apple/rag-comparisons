@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.multivariate_normal.MultivariateNormal.arg_constraints
+
+arg_constraints = {'covariance_matrix': PositiveDefinite(), 'loc': IndependentConstraint(Real(), 1), 'precision_matrix': PositiveDefinite(), 'scale_tril': LowerCholesky()}

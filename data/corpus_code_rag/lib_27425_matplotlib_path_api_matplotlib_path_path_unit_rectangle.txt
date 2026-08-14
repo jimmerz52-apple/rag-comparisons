@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.unit_rectangle
+
+classmethodunit_rectangle()[source]
+ 
+Return a Path instance of the unit rectangle from (0, 0) to (1, 1).

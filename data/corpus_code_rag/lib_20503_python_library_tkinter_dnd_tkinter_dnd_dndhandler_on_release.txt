@@ -1,0 +1,4 @@
+# python.library.tkinter.dnd#tkinter.dnd.DndHandler.on_release
+
+on_release(event)  
+Signal end of drag when the release pattern is triggered.

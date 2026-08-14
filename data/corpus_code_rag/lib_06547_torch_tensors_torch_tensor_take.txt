@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.take
+
+take(indices) → Tensor  
+See torch.take()

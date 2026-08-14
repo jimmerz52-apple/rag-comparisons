@@ -1,0 +1,18 @@
+# torch.benchmark_utils#torch.utils.benchmark.FunctionCounts
+
+class torch.utils.benchmark.FunctionCounts(_data, inclusive, _linewidth=None) [source]
+ 
+Container for manipulating Callgrind results.  It supports:
+
+ Addition and subtraction to combine or diff results. Tuple-like indexing. A denoise function which strips CPython calls which are known to be non-deterministic and quite noisy. Two higher order methods (filter and transform) for custom manipulation.     
+denoise() [source]
+ 
+Remove known noisy instructions. Several instructions in the CPython interpreter are rather noisy. These instructions involve unicode to dictionary lookups which Python uses to map variable names. FunctionCounts is generally a content agnostic container, however this is sufficiently important for obtaining reliable results to warrant an exception. 
+  
+filter(filter_fn) [source]
+ 
+Keep only the elements where filter_fn applied to function name returns True. 
+  
+transform(map_fn) [source]
+ 
+Apply map_fn to all of the function names. This can be used to regularize function names (e.g. stripping irrelevant parts of the file path), coalesce entries by mapping multiple functions to the same name (in which case the counts are added together), etc.

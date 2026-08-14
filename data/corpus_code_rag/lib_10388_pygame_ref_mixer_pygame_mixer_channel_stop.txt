@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.stop
+
+stop() 
+ stop playback on a Channel stop() -> None  Stop sound playback on a channel. After playback is stopped the channel becomes available for new Sounds to play on it.

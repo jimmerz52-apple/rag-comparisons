@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.lt_
+
+lt_(other) → Tensor  
+In-place version of lt().

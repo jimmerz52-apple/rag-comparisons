@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.ReadError
+
+exception tarfile.ReadError  
+Is raised when a tar archive is opened, that either cannot be handled by the tarfile module or is somehow invalid.

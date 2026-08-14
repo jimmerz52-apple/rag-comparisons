@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.ufunc.ntypes
+
+numpy.ufunc.ntypes attribute   ufunc.ntypes
+ 
+The number of types. The number of numerical NumPy types - of which there are 18 total - on which the ufunc can operate.  See also  numpy.ufunc.types
+  Examples >>> np.add.ntypes
+18
+>>> np.multiply.ntypes
+18
+>>> np.power.ntypes
+17
+>>> np.exp.ntypes
+7
+>>> np.remainder.ntypes
+14

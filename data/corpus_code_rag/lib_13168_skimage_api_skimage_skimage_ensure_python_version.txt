@@ -1,0 +1,3 @@
+# skimage.api.skimage#skimage.ensure_python_version
+
+skimage.ensure_python_version(min_version) [source]

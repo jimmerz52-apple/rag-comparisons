@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.concrete
+
+Field.concrete  
+Boolean flag that indicates if the field has a database column associated with it.

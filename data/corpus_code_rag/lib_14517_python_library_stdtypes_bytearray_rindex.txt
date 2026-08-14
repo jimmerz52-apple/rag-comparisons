@@ -1,0 +1,5 @@
+# python.library.stdtypes#bytearray.rindex
+
+bytes.rindex(sub[, start[, end]])  
+bytearray.rindex(sub[, start[, end]])  
+Like rfind() but raises ValueError when the subsequence sub is not found. The subsequence to search for may be any bytes-like object or an integer in the range 0 to 255.  Changed in version 3.3: Also accept an integer in the range 0 to 255 as the subsequence.

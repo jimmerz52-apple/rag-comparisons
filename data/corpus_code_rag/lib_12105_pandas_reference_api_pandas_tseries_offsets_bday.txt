@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.bday
+
+pandas.tseries.offsets.BDay   pandas.tseries.offsets.BDay
+ 
+alias of pandas._libs.tslibs.offsets.BusinessDay

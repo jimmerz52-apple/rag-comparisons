@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.flatten#torch.nn.Flatten.requires_grad_
+
+requires_grad_(requires_grad=True)  
+Change if autograd should record operations on parameters in this module. This method sets the parameters’ requires_grad attributes in-place. This method is helpful for freezing part of the module for finetuning or training parts of a model individually (e.g., GAN training).  Parameters 
+requires_grad (bool) – whether autograd should record operations on parameters in this module. Default: True.  Returns 
+self  Return type 
+Module

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedelta.microseconds
+
+pandas.Timedelta.microseconds   Timedelta.microseconds
+ 
+Number of microseconds (>= 0 and less than 1 second).

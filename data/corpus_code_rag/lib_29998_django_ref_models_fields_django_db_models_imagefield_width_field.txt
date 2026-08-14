@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ImageField.width_field
+
+ImageField.width_field  
+Name of a model field which will be auto-populated with the width of the image each time the model instance is saved.

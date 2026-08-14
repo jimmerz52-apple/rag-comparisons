@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.get_error
+
+pygame.freetype.get_error() 
+ Return the latest FreeType error get_error() -> str get_error() -> None  Return a description of the last error which occurred in the FreeType2 library, or None if no errors have occurred.

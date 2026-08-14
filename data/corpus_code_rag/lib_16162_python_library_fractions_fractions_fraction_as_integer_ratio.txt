@@ -1,0 +1,4 @@
+# python.library.fractions#fractions.Fraction.as_integer_ratio
+
+as_integer_ratio()  
+Return a tuple of two integers, whose ratio is equal to the Fraction and with a positive denominator.  New in version 3.8.

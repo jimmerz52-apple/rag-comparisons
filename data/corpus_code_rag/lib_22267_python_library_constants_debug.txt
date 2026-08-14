@@ -1,0 +1,4 @@
+# python.library.constants#__debug__
+
+__debug__  
+This constant is true if Python was not started with an -O option. See also the assert statement.

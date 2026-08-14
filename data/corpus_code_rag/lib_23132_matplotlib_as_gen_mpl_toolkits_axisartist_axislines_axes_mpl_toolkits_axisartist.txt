@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axes#mpl_toolkits.axisartist.axislines.Axes.get_children
+
+get_children()[source]
+ 
+Return a list of the child Artists of this Artist.

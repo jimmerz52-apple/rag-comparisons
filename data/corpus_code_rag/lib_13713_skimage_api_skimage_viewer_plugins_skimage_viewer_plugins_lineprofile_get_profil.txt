@@ -1,0 +1,10 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LineProfile.get_profiles
+
+get_profiles() [source]
+ 
+Return intensity profile of the selected line.  Returns 
+ end_points: (2, 2) array
+
+The positions ((x1, y1), (x2, y2)) of the line ends.  profile: list of 1d arrays
+
+Profile of intensity values. Length 1 (grayscale) or 3 (rgb).

@@ -1,0 +1,9 @@
+# django.ref.forms.widgets#django.forms.NumberInput
+
+class NumberInput  
+ 
+input_type: 'number'
+ 
+template_name: 'django/forms/widgets/number.html'
+ Renders as: <input type="number" ...>
+  Beware that not all browsers support entering localized numbers in number input types. Django itself avoids using them for fields having their localize property set to True.

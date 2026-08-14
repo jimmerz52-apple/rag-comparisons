@@ -1,0 +1,5 @@
+# python.library.traceback#traceback.print_exc
+
+traceback.print_exc(limit=None, file=None, chain=True)  
+This is a shorthand for print_exception(*sys.exc_info(), limit, file,
+chain).

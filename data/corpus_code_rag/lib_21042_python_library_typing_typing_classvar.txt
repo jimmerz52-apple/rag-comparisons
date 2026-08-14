@@ -1,0 +1,10 @@
+# python.library.typing#typing.ClassVar
+
+typing.ClassVar  
+Special type construct to mark class variables. As introduced in PEP 526, a variable annotation wrapped in ClassVar indicates that a given attribute is intended to be used as a class variable and should not be set on instances of that class. Usage: class Starship:
+    stats: ClassVar[dict[str, int]] = {} # class variable
+    damage: int = 10                     # instance variable
+ ClassVar accepts only types and cannot be further subscribed. ClassVar is not a class itself, and should not be used with isinstance() or issubclass(). ClassVar does not change Python runtime behavior, but it can be used by third-party type checkers. For example, a type checker might flag the following code as an error: enterprise_d = Starship(3000)
+enterprise_d.stats = {} # Error, setting class variable on instance
+Starship.stats = {}     # This is OK
+  New in version 3.5.3.

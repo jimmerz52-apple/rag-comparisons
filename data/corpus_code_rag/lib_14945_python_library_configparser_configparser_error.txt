@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.Error
+
+exception configparser.Error  
+Base class for all other configparser exceptions.

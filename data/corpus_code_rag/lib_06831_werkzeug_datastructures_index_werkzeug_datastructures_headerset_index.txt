@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.index
+
+index(header)  
+Return the index of the header in the set or raise an IndexError.  Parameters 
+header – the header to be looked up.

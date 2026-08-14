@@ -1,0 +1,10 @@
+# matplotlib_configuration_api#matplotlib.matplotlib_fname
+
+matplotlib.matplotlib_fname()[source]
+ 
+Get the location of the config file. The file location is determined in the following order  $PWD/matplotlibrc 
+$MATPLOTLIBRC if it is not a directory $MATPLOTLIBRC/matplotlibrc $MPLCONFIGDIR/matplotlibrc 
+ On Linux,
+
+ 
+$XDG_CONFIG_HOME/matplotlib/matplotlibrc (if $XDG_CONFIG_HOME is defined) or $HOME/.config/matplotlib/matplotlibrc (if $XDG_CONFIG_HOME is not defined)     On other platforms, - $HOME/.matplotlib/matplotlibrc if $HOME is defined Lastly, it looks in $MATPLOTLIBDATA/matplotlibrc, which should always exist.

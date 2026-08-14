@@ -1,0 +1,22 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.trigger_tool
+
+trigger_tool(name, sender=None, canvasevent=None, data=None)[source]
+ 
+Trigger a tool and emit the tool_trigger_{name} event.  Parameters 
+ 
+namestr
+
+
+Name of the tool.  
+senderobject
+
+
+Object that wishes to trigger the tool.  
+canvaseventEvent
+
+
+Original Canvas event or None.  
+dataobject
+
+
+Extra data to pass to the tool when triggering.

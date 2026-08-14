@@ -1,0 +1,19 @@
+# flask.api.index#flask.views.MethodView
+
+class flask.views.MethodView  
+A class-based view that dispatches request methods to the corresponding class methods. For example, if you implement a get method, it will be used to handle GET requests. class CounterAPI(MethodView):
+    def get(self):
+        return session.get('counter', 0)
+
+    def post(self):
+        session['counter'] = session.get('counter', 0) + 1
+        return 'OK'
+
+app.add_url_rule('/counter', view_func=CounterAPI.as_view('counter'))
+  
+dispatch_request(*args, **kwargs)  
+Subclasses have to override this method to implement the actual view function code. This method is called with all the arguments from the URL rule.  Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, …]]], List[Tuple[str, Union[str, List[str], Tuple[str, …]]]]]], WSGIApplication]

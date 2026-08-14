@@ -1,0 +1,4 @@
+# torch.fx#torch.fx.GraphModule.graph
+
+property graph  
+Return the Graph underlying this GraphModule

@@ -1,0 +1,5 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.get_context
+
+BaseFormSet.get_context()  
+ New in Django 4.0.  Returns the context for rendering a formset in a template. The available context is:  
+formset : The instance of the formset.

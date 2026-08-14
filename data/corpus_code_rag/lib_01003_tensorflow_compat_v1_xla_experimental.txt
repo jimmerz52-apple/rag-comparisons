@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.xla.experimental
+
+Module: tf.compat.v1.xla.experimental Public API for tf.xla.experimental namespace. Functions compile(...): Builds an operator that compiles and runs computation with XLA. (deprecated) jit_scope(...): Enable or disable JIT compilation of operators within the scope.

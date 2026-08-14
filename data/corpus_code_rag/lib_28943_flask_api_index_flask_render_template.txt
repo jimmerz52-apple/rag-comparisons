@@ -1,0 +1,8 @@
+# flask.api.index#flask.render_template
+
+flask.render_template(template_name_or_list, **context)  
+Renders a template from the template folder with the given context.  Parameters 
+ 
+template_name_or_list (Union[str, List[str]]) – the name of the template to be rendered, or an iterable with template names the first one existing will be rendered 
+context (Any) – the variables that should be available in the context of the template.   Return type 
+str

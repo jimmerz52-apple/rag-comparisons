@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__neg__
+
+numpy.ndarray.__neg__ method   ndarray.__neg__(/)
+ 
+-self

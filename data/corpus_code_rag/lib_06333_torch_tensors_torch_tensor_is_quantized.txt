@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.is_quantized
+
+is_quantized  
+Is True if the Tensor is quantized, False otherwise.

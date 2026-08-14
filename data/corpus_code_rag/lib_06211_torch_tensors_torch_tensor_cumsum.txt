@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cumsum_
+
+cumsum_(dim, dtype=None) → Tensor  
+In-place version of cumsum()

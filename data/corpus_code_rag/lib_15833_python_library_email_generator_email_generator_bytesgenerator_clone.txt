@@ -1,0 +1,4 @@
+# python.library.email.generator#email.generator.BytesGenerator.clone
+
+clone(fp)  
+Return an independent clone of this BytesGenerator instance with the exact same option settings, and fp as the new outfp.

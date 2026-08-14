@@ -1,0 +1,4 @@
+# python.library.signal#signal.ITIMER_VIRTUAL
+
+signal.ITIMER_VIRTUAL  
+Decrements interval timer only when the process is executing, and delivers SIGVTALRM upon expiration.

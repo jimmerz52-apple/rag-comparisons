@@ -1,0 +1,6 @@
+# matplotlib.lines_api
+
+matplotlib.lines 2D lines with support for a variety of line styles, markers, colors, etc.  Classes  
+Line2D(xdata, ydata[, linewidth, linestyle, ...]) A line - the line can have both a solid linestyle connecting all the vertices, and a marker at each vertex.  
+VertexSelector(line) Manage the callbacks to maintain a list of selected vertices for Line2D.     Functions  
+segment_hits(cx, cy, x, y, radius) Return the indices of the segments in the polyline with coordinates (cx, cy) that are within a distance radius of the point (x, y).

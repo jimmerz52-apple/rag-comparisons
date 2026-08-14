@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.tag
+
+tag  
+A string identifying what kind of data this element represents (the element type, in other words).

@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.RendererSVG.close_group
+
+close_group(s)[source]
+ 
+Close a grouping element with label s. Only used by the SVG renderer.

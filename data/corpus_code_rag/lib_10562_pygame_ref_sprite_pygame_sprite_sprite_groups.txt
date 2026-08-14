@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Sprite.groups
+
+groups() 
+ list of Groups that contain this Sprite groups() -> group_list  Return a list of all the Groups that contain this Sprite.

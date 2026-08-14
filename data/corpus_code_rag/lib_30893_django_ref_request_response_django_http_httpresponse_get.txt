@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.get
+
+HttpResponse.get(header, alternate=None)  
+Returns the value for the given header, or an alternate if the header doesn’t exist.

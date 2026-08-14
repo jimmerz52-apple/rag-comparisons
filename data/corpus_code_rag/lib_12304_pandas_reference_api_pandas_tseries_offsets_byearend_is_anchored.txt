@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearend.is_anchored
+
+pandas.tseries.offsets.BYearEnd.is_anchored   BYearEnd.is_anchored()

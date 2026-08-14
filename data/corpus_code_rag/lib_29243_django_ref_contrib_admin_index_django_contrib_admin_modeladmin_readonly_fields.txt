@@ -1,0 +1,21 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.readonly_fields
+
+ModelAdmin.readonly_fields  
+By default the admin shows all fields as editable. Any fields in this option (which should be a list or tuple) will display its data as-is and non-editable; they are also excluded from the ModelForm used for creating and editing. Note that when specifying ModelAdmin.fields or ModelAdmin.fieldsets the read-only fields must be present to be shown (they are ignored otherwise). If readonly_fields is used without defining explicit ordering through ModelAdmin.fields or ModelAdmin.fieldsets they will be added last after all editable fields. A read-only field can not only display data from a model’s field, it can also display the output of a model’s method or a method of the ModelAdmin class itself. This is very similar to the way ModelAdmin.list_display behaves. This provides a way to use the admin interface to provide feedback on the status of the objects being edited, for example: from django.contrib import admin
+from django.utils.html import format_html_join
+from django.utils.safestring import mark_safe
+
+class PersonAdmin(admin.ModelAdmin):
+    readonly_fields = ('address_report',)
+
+    # description functions like a model field's verbose_name
+    @admin.display(description='Address')
+    def address_report(self, instance):
+        # assuming get_full_address() returns a list of strings
+        # for each line of the address and you want to separate each
+        # line by a linebreak
+        return format_html_join(
+            mark_safe('<br>'),
+            '{}',
+            ((line,) for line in instance.get_full_address()),
+        ) or mark_safe("<span class='errors'>I can't determine this address.</span>")

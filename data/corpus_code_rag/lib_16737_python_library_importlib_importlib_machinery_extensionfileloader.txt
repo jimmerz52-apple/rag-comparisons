@@ -1,0 +1,27 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader
+
+class importlib.machinery.ExtensionFileLoader(fullname, path)  
+A concrete implementation of importlib.abc.ExecutionLoader for extension modules. The fullname argument specifies the name of the module the loader is to support. The path argument is the path to the extension module’s file.  New in version 3.3.   
+name  
+Name of the module the loader supports. 
+  
+path  
+Path to the extension module. 
+  
+create_module(spec)  
+Creates the module object from the given specification in accordance with PEP 489.  New in version 3.5.  
+  
+exec_module(module)  
+Initializes the given module object in accordance with PEP 489.  New in version 3.5.  
+  
+is_package(fullname)  
+Returns True if the file path points to a package’s __init__ module based on EXTENSION_SUFFIXES. 
+  
+get_code(fullname)  
+Returns None as extension modules lack a code object. 
+  
+get_source(fullname)  
+Returns None as extension modules do not have source code. 
+  
+get_filename(fullname)  
+Returns path.  New in version 3.4.

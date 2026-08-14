@@ -1,0 +1,5 @@
+# django.ref.files.file#django.core.files.File.open
+
+open(mode=None) [source]
+ 
+Open or reopen the file (which also does File.seek(0)). The mode argument allows the same values as Python’s built-in open(). When reopening a file, mode will override whatever mode the file was originally opened with; None means to reopen with the original mode. It can be used as a context manager, e.g. with file.open() as f:.

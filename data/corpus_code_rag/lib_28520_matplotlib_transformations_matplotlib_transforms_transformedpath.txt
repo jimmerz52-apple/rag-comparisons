@@ -1,0 +1,34 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedPath
+
+classmatplotlib.transforms.TransformedPath(path, transform)[source]
+ 
+Bases: matplotlib.transforms.TransformNode A TransformedPath caches a non-affine transformed copy of the Path. This cached copy is automatically updated when the non-affine part of the transform changes.  Note Paths are considered immutable by this class. Any update to the path's vertices/codes will not trigger a transform recomputation.   Parameters 
+ 
+pathPath
+
+
+transformTransform
+
+     __init__(path, transform)[source]
+ 
+ Parameters 
+ 
+pathPath
+
+
+transformTransform
+
+   
+   __module__='matplotlib.transforms'
+
+   get_affine()[source]
+
+   get_fully_transformed_path()[source]
+ 
+Return a fully-transformed copy of the child path. 
+   get_transformed_path_and_affine()[source]
+ 
+Return a copy of the child path, with the non-affine part of the transform already applied, along with the affine part of the path necessary to complete the transformation. 
+   get_transformed_points_and_affine()[source]
+ 
+Return a copy of the child path, with the non-affine part of the transform already applied, along with the affine part of the path necessary to complete the transformation. Unlike get_transformed_path_and_affine(), no interpolation will be performed.

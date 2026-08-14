@@ -1,0 +1,3 @@
+# tensorflow.summary.experimental
+
+Module: tf.summary.experimental Public API for tf.summary.experimental namespace. Functions get_step(...): Returns the default summary step for the current thread. set_step(...): Sets the default summary step for the current thread. summary_scope(...): Experimental context manager for use when defining a custom summary op. write_raw_pb(...): Writes a summary using raw tf.compat.v1.Summary protocol buffers.

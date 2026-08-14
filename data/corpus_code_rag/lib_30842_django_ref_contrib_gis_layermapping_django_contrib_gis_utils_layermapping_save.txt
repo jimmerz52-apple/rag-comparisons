@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.layermapping#django.contrib.gis.utils.LayerMapping.save
+
+LayerMapping.save(verbose=False, fid_range=False, step=False, progress=False, silent=False, stream=sys.stdout, strict=False)

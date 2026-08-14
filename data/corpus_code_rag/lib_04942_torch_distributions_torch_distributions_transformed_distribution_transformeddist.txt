@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transformed_distribution.TransformedDistribution.log_prob
+
+log_prob(value) [source]
+ 
+Scores the sample by inverting the transform(s) and computing the score using the score of the base distribution and the log abs det jacobian.

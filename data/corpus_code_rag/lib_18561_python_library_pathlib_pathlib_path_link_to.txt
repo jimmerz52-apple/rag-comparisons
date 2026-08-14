@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.link_to
+
+Path.link_to(target)  
+Make target a hard link to this path.  Warning This function does not make this path a hard link to target, despite the implication of the function and argument names. The argument order (target, link) is the reverse of Path.symlink_to(), but matches that of os.link().   New in version 3.8.

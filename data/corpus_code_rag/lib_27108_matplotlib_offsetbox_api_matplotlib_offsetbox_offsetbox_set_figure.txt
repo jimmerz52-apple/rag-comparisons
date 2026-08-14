@@ -1,0 +1,7 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.OffsetBox.set_figure
+
+set_figure(fig)[source]
+ 
+Set the Figure for the OffsetBox and all its children.  Parameters 
+ 
+figFigure

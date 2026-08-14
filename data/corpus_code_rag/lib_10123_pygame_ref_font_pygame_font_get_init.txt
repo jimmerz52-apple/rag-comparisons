@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.get_init
+
+pygame.font.get_init() 
+ true if the font module is initialized get_init() -> bool  Test if the font module is initialized or not.

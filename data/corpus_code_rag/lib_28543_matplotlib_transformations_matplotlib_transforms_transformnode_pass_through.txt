@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.pass_through
+
+pass_through=False
+ 
+If pass_through is True, all ancestors will always be invalidated, even if 'self' is already invalid.

@@ -1,0 +1,4 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.SharedMemory.close
+
+close()  
+Closes access to the shared memory from this instance. In order to ensure proper cleanup of resources, all instances should call close() once the instance is no longer needed. Note that calling close() does not cause the shared memory block itself to be destroyed.

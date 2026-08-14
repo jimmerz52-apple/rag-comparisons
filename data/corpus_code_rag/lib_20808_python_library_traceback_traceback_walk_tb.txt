@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.walk_tb
+
+traceback.walk_tb(tb)  
+Walk a traceback following tb_next yielding the frame and line number for each frame. This helper is used with StackSummary.extract().  New in version 3.5.

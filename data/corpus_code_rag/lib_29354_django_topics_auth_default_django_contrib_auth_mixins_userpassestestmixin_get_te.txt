@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.UserPassesTestMixin.get_test_func
+
+get_test_func()  
+You can also override the get_test_func() method to have the mixin use a differently named function for its checks (instead of test_func()).

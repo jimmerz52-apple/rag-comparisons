@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.quit
+
+pygame.midi.quit() 
+ uninitialize the midi module quit() -> None  Uninitializes the pygame.midi module. If pygame.midi.init() was called to initialize the pygame.midi module, then this function will be called automatically when your program exits. It is safe to call this function more than once.

@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.init
+
+init() 
+ initialize the Joystick init() -> None  Initialize the joystick, if it has been closed. It is safe to call this even if the joystick is already initialized.  Deprecated since pygame 2.0.0: In future it will not be possible to reinitialise a closed Joystick object. Will be removed in Pygame 2.1.

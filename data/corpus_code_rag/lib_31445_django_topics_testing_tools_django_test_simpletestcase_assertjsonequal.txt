@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertJSONEqual
+
+SimpleTestCase.assertJSONEqual(raw, expected_data, msg=None)  
+Asserts that the JSON fragments raw and expected_data are equal. Usual JSON non-significant whitespace rules apply as the heavyweight is delegated to the json library. Output in case of error can be customized with the msg argument.

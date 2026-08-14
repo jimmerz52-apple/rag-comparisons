@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_SNI
+
+ssl.HAS_SNI  
+Whether the OpenSSL library has built-in support for the Server Name Indication extension (as defined in RFC 6066).  New in version 3.2.

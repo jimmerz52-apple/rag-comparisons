@@ -1,0 +1,4 @@
+# python.library.threading#threading.Event.is_set
+
+is_set()  
+Return True if and only if the internal flag is true.

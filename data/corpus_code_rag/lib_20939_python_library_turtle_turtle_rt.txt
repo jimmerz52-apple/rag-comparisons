@@ -1,0 +1,10 @@
+# python.library.turtle#turtle.rt
+
+turtle.right(angle)  
+turtle.rt(angle)  
+ Parameters 
+angle – a number (integer or float)   Turn turtle right by angle units. (Units are by default degrees, but can be set via the degrees() and radians() functions.) Angle orientation depends on the turtle mode, see mode(). >>> turtle.heading()
+22.0
+>>> turtle.right(45)
+>>> turtle.heading()
+337.0

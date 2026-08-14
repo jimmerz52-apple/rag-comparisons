@@ -1,0 +1,3 @@
+# matplotlib.dates_api#matplotlib.dates.RRuleLocator.get_unit_generic
+
+staticget_unit_generic(freq)[source]

@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.elu
+
+torch.nn.functional.elu(input, alpha=1.0, inplace=False) [source]
+ 
+Applies element-wise, ELU(x)=max⁡(0,x)+min⁡(0,α∗(exp⁡(x)−1))\text{ELU}(x) = \max(0,x) + \min(0, \alpha * (\exp(x) - 1)) . See ELU for more details.

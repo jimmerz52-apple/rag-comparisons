@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.get_fonts
+
+pygame.font.get_fonts() 
+ get all available fonts get_fonts() -> list of strings  Returns a list of all the fonts available on the system. The names of the fonts will be set to lowercase with all spaces and punctuation removed. This works on most systems, but some will return an empty list if they cannot find fonts.

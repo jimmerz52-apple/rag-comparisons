@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.expandtabs
+
+numpy.char.chararray.expandtabs method   char.chararray.expandtabs(tabsize=8)[source]
+ 
+Return a copy of each string element where all tab characters are replaced by one or more spaces.  See also  char.expandtabs

@@ -1,0 +1,9 @@
+# python.library.unittest.mock#unittest.mock.Mock.called
+
+called  
+A boolean representing whether or not the mock object has been called: >>> mock = Mock(return_value=None)
+>>> mock.called
+False
+>>> mock()
+>>> mock.called
+True

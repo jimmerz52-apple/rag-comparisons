@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.get_width
+
+get_width()[source]
+ 
+Return the width (thickness) of the annulus ring.

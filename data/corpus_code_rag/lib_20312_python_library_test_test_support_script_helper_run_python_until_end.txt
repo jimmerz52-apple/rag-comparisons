@@ -1,0 +1,4 @@
+# python.library.test#test.support.script_helper.run_python_until_end
+
+test.support.script_helper.run_python_until_end(*args, **env_vars)  
+Set up the environment based on env_vars for running the interpreter in a subprocess. The values can include __isolated, __cleanenv, __cwd, and TERM.  Changed in version 3.9: The function no longer strips whitespaces from stderr.

@@ -1,0 +1,27 @@
+# sklearn.modules.generated.sklearn.covariance.empirical_covariance
+
+sklearn.covariance.empirical_covariance  
+sklearn.covariance.empirical_covariance(X, *, assume_centered=False) [source]
+ 
+Computes the Maximum likelihood covariance estimator  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Data from which to compute the covariance estimate  
+assume_centeredbool, default=False 
+
+If True, data will not be centered before computation. Useful when working with data whose mean is almost, but not exactly zero. If False, data will be centered before computation.    Returns 
+ 
+covariancendarray of shape (n_features, n_features) 
+
+Empirical covariance (Maximum Likelihood Estimator).     Examples >>> from sklearn.covariance import empirical_covariance
+>>> X = [[1,1,1],[1,1,1],[1,1,1],
+...      [0,0,0],[0,0,0],[0,0,0]]
+>>> empirical_covariance(X)
+array([[0.25, 0.25, 0.25],
+       [0.25, 0.25, 0.25],
+       [0.25, 0.25, 0.25]])
+ 
+ Examples using sklearn.covariance.empirical_covariance
+ 
+  Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood

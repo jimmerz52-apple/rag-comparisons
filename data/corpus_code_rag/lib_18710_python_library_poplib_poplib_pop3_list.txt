@@ -1,0 +1,5 @@
+# python.library.poplib#poplib.POP3.list
+
+POP3.list([which])  
+Request message list, result is in the form (response, ['mesg_num octets',
+...], octets). If which is set, it is the message to list.

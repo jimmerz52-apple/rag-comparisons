@@ -1,0 +1,22 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.inset_locator.bboxconnector#mpl_toolkits.axes_grid1.inset_locator.BboxConnector.get_bbox_edge_pos
+
+staticget_bbox_edge_pos(bbox, loc)[source]
+ 
+Helper function to obtain the location of a corner of a bbox  Parameters 
+ 
+bboxmatplotlib.transforms.Bbox
+
+
+loc{1, 2, 3, 4}
+
+
+Corner of bbox. Valid values are: 'upper right'  : 1,
+'upper left'   : 2,
+'lower left'   : 3,
+'lower right'  : 4
+    Returns 
+ 
+x, yfloat
+
+
+Coordinates of the corner specified by loc.

@@ -1,0 +1,46 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.unstructured_to_structured
+
+numpy.lib.recfunctions.unstructured_to_structured(arr, dtype=None, names=None, align=False, copy=False, casting='unsafe')[source]
+ 
+Converts an n-D unstructured array into an (n-1)-D structured array. The last dimension of the input array is converted into a structure, with number of field-elements equal to the size of the last dimension of the input array. By default all output fields have the input array’s dtype, but an output structured dtype with an equal number of fields-elements can be supplied instead. Nested fields, as well as each element of any subarray fields, all count towards the number of field-elements.  Parameters 
+ 
+arrndarray
+
+
+Unstructured array or dtype to convert.  
+dtypedtype, optional
+
+
+The structured dtype of the output array  
+nameslist of strings, optional
+
+
+If dtype is not supplied, this specifies the field names for the output dtype, in order. The field dtypes will be the same as the input array.  
+alignboolean, optional
+
+
+Whether to create an aligned memory layout.  
+copybool, optional
+
+
+See copy argument to ndarray.astype. If true, always return a copy. If false, and dtype requirements are satisfied, a view is returned.  
+casting{‘no’, ‘equiv’, ‘safe’, ‘same_kind’, ‘unsafe’}, optional
+
+
+See casting argument of ndarray.astype. Controls what kind of data casting may occur.    Returns 
+ 
+structuredndarray
+
+
+Structured array with fewer dimensions.     Examples >>> from numpy.lib import recfunctions as rfn
+>>> dt = np.dtype([('a', 'i4'), ('b', 'f4,u2'), ('c', 'f4', 2)])
+>>> a = np.arange(20).reshape((4,5))
+>>> a
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14],
+       [15, 16, 17, 18, 19]])
+>>> rfn.unstructured_to_structured(a, dt)
+array([( 0, ( 1.,  2), [ 3.,  4.]), ( 5, ( 6.,  7), [ 8.,  9.]),
+       (10, (11., 12), [13., 14.]), (15, (16., 17), [18., 19.])],
+      dtype=[('a', '<i4'), ('b', [('f0', '<f4'), ('f1', '<u2')]), ('c', '<f4', (2,))])

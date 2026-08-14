@@ -1,0 +1,4 @@
+# python.library.re#re.Match.lastindex
+
+Match.lastindex  
+The integer index of the last matched capturing group, or None if no group was matched at all. For example, the expressions (a)b, ((a)(b)), and ((ab)) will have lastindex == 1 if applied to the string 'ab', while the expression (a)(b) will have lastindex == 2, if applied to the same string.

@@ -1,0 +1,6 @@
+# torch.rpc#torch.distributed.optim.DistributedOptimizer.step
+
+step(context_id) [source]
+ 
+Performs a single optimization step. This will call torch.optim.Optimizer.step() on each worker containing parameters to be optimized, and will block until all workers return. The provided context_id will be used to retrieve the corresponding context that contains the gradients that should be applied to the parameters.  Parameters 
+context_id – the autograd context id for which we should run the optimizer step.

@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Combobox.get
+
+get()  
+Returns the current value of the combobox.

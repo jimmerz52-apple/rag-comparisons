@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.flush
+
+flush([offset[, size]])  
+Flushes changes made to the in-memory copy of a file back to disk. Without use of this call there is no guarantee that changes are written back before the object is destroyed. If offset and size are specified, only changes to the given range of bytes will be flushed to disk; otherwise, the whole extent of the mapping is flushed. offset must be a multiple of the PAGESIZE or ALLOCATIONGRANULARITY. None is returned to indicate success. An exception is raised when the call failed.  Changed in version 3.8: Previously, a nonzero value was returned on success; zero was returned on error under Windows. A zero value was returned on success; an exception was raised on error under Unix.

@@ -1,0 +1,26 @@
+# matplotlib.transformations#matplotlib.transforms.offset_copy
+
+matplotlib.transforms.offset_copy(trans, fig=None, x=0.0, y=0.0, units='inches')[source]
+ 
+Return a new transform with an added offset.  Parameters 
+ 
+transTransform subclass
+
+
+Any transform, to which offset will be applied.  
+figFigure, default: None
+
+
+Current figure. It can be None if units are 'dots'.  
+x, yfloat, default: 0.0
+
+
+The offset to apply.  
+units{'inches', 'points', 'dots'}, default: 'inches'
+
+
+Units of the offset.    Returns 
+ 
+Transform subclass
+
+Transform with applied offset.

@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.search#django.contrib.postgres.search.TrigramDistance
+
+class TrigramDistance(expression, string, **extra)

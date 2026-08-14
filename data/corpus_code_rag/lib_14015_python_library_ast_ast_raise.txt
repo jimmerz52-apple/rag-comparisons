@@ -1,0 +1,10 @@
+# python.library.ast#ast.Raise
+
+class ast.Raise(exc, cause)  
+A raise statement. exc is the exception object to be raised, normally a Call or Name, or None for a standalone raise. cause is the optional part for y in raise x from y. >>> print(ast.dump(ast.parse('raise x from y'), indent=4))
+Module(
+    body=[
+        Raise(
+            exc=Name(id='x', ctx=Load()),
+            cause=Name(id='y', ctx=Load()))],
+    type_ignores=[])

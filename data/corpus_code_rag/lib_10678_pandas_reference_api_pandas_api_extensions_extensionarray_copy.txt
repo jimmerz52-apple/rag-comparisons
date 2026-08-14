@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.copy
+
+pandas.api.extensions.ExtensionArray.copy   ExtensionArray.copy()[source]
+ 
+Return a copy of the array.  Returns 
+ ExtensionArray

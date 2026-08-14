@@ -1,0 +1,4 @@
+# python.library.re#re.Match.endpos
+
+Match.endpos  
+The value of endpos which was passed to the search() or match() method of a regex object. This is the index into the string beyond which the RE engine will not go.

@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.Group.name
+
+name  
+Required. 150 characters or fewer. Any characters are permitted. Example: 'Awesome Users'.

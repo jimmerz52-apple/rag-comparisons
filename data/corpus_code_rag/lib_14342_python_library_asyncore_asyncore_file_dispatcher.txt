@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.file_dispatcher
+
+class asyncore.file_dispatcher  
+A file_dispatcher takes a file descriptor or file object along with an optional map argument and wraps it for use with the poll() or loop() functions. If provided a file object or anything with a fileno() method, that method will be called and passed to the file_wrapper constructor. Availability: Unix.

@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.minmax
+
+audioop.minmax(fragment, width)  
+Return a tuple consisting of the minimum and maximum values of all samples in the sound fragment.

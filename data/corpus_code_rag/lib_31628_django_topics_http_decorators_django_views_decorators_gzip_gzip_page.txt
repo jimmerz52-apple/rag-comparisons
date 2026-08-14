@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.gzip.gzip_page
+
+gzip_page()  
+This decorator compresses content if the browser allows gzip compression. It sets the Vary header accordingly, so that caches will base their storage on the Accept-Encoding header.

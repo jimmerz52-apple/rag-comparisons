@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axisartist#mpl_toolkits.axisartist.axis_artist.AxisArtist.get_transform
+
+get_transform()[source]
+ 
+Return the Transform instance used by this artist.

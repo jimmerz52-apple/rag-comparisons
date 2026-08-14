@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPCookieProcessor.cookiejar
+
+HTTPCookieProcessor.cookiejar  
+The http.cookiejar.CookieJar in which cookies are stored.

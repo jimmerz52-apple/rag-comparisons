@@ -1,0 +1,13 @@
+# numpy.reference.generated.numpy.dtype.ndim
+
+numpy.dtype.ndim attribute   dtype.ndim
+ 
+Number of dimensions of the sub-array if this data type describes a sub-array, and 0 otherwise.  New in version 1.13.0.  Examples >>> x = np.dtype(float)
+>>> x.ndim
+0
+ >>> x = np.dtype((float, 8))
+>>> x.ndim
+1
+ >>> x = np.dtype(('i4', (3, 4)))
+>>> x.ndim
+2

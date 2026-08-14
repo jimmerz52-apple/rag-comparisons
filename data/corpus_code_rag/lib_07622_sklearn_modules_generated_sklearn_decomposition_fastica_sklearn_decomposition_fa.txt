@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.decomposition.fastica#sklearn.decomposition.FastICA.transform
+
+transform(X, copy=True) [source]
+ 
+Recover the sources from X (apply the unmixing matrix).  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Data to transform, where n_samples is the number of samples and n_features is the number of features.  
+copybool, default=True 
+
+If False, data passed to fit can be overwritten. Defaults to True.    Returns 
+ 
+X_newndarray of shape (n_samples, n_components)

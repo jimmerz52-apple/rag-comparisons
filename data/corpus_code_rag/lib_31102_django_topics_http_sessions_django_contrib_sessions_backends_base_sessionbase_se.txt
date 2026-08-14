@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.__setitem__
+
+__setitem__(key, value)  
+Example: request.session['fav_color'] = 'blue'

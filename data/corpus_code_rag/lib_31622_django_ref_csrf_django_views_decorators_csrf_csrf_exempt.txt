@@ -1,0 +1,9 @@
+# django.ref.csrf#django.views.decorators.csrf.csrf_exempt
+
+csrf_exempt(view)  
+This decorator marks a view as being exempt from the protection ensured by the middleware. Example: from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
+def my_view(request):
+    return HttpResponse('Hello world')

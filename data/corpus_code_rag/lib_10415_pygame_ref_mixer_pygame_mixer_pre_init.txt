@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.pre_init
+
+pygame.mixer.pre_init() 
+ preset the mixer init arguments pre_init(frequency=44100, size=-16, channels=2, buffer=512, devicename=None) -> None  Call pre_init to change the defaults used when the real pygame.mixer.init() is called. Keyword arguments are accepted. The best way to set custom mixer playback values is to call pygame.mixer.pre_init() before calling the top level pygame.init(). For backward compatibility argument values of zero are replaced with the startup defaults.  Changed in pygame 1.8: The default buffersize was changed from 1024 to 3072.   Changed in pygame 1.9.1: The default buffersize was changed from 3072 to 4096.   Changed in pygame 2.0.0: The default buffersize was changed from 4096 to 512. The default frequency changed to 44100 from 22050.

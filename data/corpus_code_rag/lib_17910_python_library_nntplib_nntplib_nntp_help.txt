@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.help
+
+NNTP.help(*, file=None)  
+Send a HELP command. Return a pair (response, list) where list is a list of help strings.

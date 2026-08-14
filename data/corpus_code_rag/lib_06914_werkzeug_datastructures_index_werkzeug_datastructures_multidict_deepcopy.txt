@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.deepcopy
+
+deepcopy(memo=None)  
+Return a deep copy of this object.

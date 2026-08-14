@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.robustscaler#sklearn.preprocessing.RobustScaler.fit
+
+fit(X, y=None) [source]
+ 
+Compute the median and quantiles to be used for scaling.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data used to compute the median and quantiles used for later scaling along the features axis.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted scaler.

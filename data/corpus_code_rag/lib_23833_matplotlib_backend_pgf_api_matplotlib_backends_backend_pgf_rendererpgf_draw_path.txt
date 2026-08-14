@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.RendererPgf.draw_path
+
+draw_path(gc, path, transform, rgbFace=None)[source]
+ 
+Draw a Path instance using the given affine transform.

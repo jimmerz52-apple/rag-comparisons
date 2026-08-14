@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.float128
+
+numpy.float96
+  numpy.float128[source]
+ 
+Alias for numpy.longdouble, named after its size in bits. The existence of these aliases depends on the platform.

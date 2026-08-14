@@ -1,0 +1,48 @@
+# matplotlib._as_gen.matplotlib.pyplot.xlabel
+
+matplotlib.pyplot.xlabel   matplotlib.pyplot.xlabel(xlabel, fontdict=None, labelpad=None, *, loc=None, **kwargs)[source]
+ 
+Set the label for the x-axis.  Parameters 
+ 
+xlabelstr
+
+
+The label text.  
+labelpadfloat, default: rcParams["axes.labelpad"] (default: 4.0)
+
+
+Spacing in points from the Axes bounding box including ticks and tick labels. If None, the previous value is left as is.  
+loc{'left', 'center', 'right'}, default: rcParams["xaxis.labellocation"] (default: 'center')
+
+
+The label position. This is a high-level alternative for passing parameters x and horizontalalignment.    Other Parameters 
+ 
+**kwargsText properties
+
+
+Text properties control the appearance of the label.      See also  text
+
+Documents the properties supported by Text.    
+  Examples using matplotlib.pyplot.xlabel
+ 
+   Scatter Symbol   
+
+   Multiple subplots   
+
+   Controlling style of text and labels using a dictionary   
+
+   Infinite lines   
+
+   Pyplot Mathtext   
+
+   Pyplot Text   
+
+   Solarized Light stylesheet   
+
+   Findobj Demo   
+
+   Custom scale   
+
+   Basic Usage   
+
+   Pyplot tutorial

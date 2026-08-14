@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.set_width
+
+set_width(width)[source]
+ 
+Set the width (thickness) of the annulus ring. The width is measured inwards from the outer ellipse.  Parameters 
+ 
+widthfloat

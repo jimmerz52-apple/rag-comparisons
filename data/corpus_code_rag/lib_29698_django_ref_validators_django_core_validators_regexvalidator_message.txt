@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.RegexValidator.message
+
+message  
+The error message used by ValidationError if validation fails. Defaults to "Enter a valid value".

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DateMixin.date_field
+
+date_field  
+The name of the DateField or DateTimeField in the QuerySet’s model that the date-based archive should use to determine the list of objects to display on the page. When time zone support is enabled and date_field is a DateTimeField, dates are assumed to be in the current time zone. Otherwise, the queryset could include objects from the previous or the next day in the end user’s time zone.  Warning In this situation, if you have implemented per-user time zone selection, the same URL may show a different set of objects, depending on the end user’s time zone. To avoid this, you should use a DateField as the date_field attribute.

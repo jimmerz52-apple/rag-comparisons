@@ -1,0 +1,8 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.geotransform
+
+geotransform  
+The affine transformation matrix used to georeference the source, as a tuple of six coefficients which map pixel/line coordinates into georeferenced space using the following relationship: Xgeo = GT(0) + Xpixel*GT(1) + Yline*GT(2)
+Ygeo = GT(3) + Xpixel*GT(4) + Yline*GT(5)
+ The same values can be retrieved by accessing the origin (indices 0 and 3), scale (indices 1 and 5) and skew (indices 2 and 4) properties. The default is [0.0, 1.0, 0.0, 0.0, 0.0, -1.0]. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.geotransform
+[0.0, 1.0, 0.0, 0.0, 0.0, -1.0]

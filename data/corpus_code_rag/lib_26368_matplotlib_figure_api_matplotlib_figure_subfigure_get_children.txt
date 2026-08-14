@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.get_children
+
+get_children()[source]
+ 
+Get a list of artists contained in the figure.

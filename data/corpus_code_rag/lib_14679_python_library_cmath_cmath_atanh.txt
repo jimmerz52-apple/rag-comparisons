@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.atanh
+
+cmath.atanh(x)  
+Return the inverse hyperbolic tangent of x. There are two branch cuts: One extends from 1 along the real axis to ∞, continuous from below. The other extends from -1 along the real axis to -∞, continuous from above.

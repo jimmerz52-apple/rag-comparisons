@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.get_username
+
+get_username()  
+Returns the username for the user. Since the User model can be swapped out, you should use this method instead of referencing the username attribute directly.

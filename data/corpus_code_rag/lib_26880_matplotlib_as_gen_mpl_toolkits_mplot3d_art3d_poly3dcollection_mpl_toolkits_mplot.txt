@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.poly3dcollection#mpl_toolkits.mplot3d.art3d.Poly3DCollection.do_3d_projection
+
+do_3d_projection(renderer=<deprecated parameter>)[source]
+ 
+Perform the 3D projection for this object.

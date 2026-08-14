@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.CallbackRegistry.disconnect
+
+disconnect(cid)[source]
+ 
+Disconnect the callback registered with callback id cid. No error is raised if such a callback does not exist.

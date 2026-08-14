@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.absolute_
+
+absolute_() → Tensor  
+In-place version of absolute() Alias for abs_()

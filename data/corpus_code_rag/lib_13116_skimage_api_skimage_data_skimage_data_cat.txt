@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.cat
+
+skimage.data.cat() [source]
+ 
+Chelsea the cat. An example with texture, prominent edges in horizontal and diagonal directions, as well as features of differing scales.  Returns 
+ 
+chelsea(300, 451, 3) uint8 ndarray 
+
+Chelsea image.     Notes No copyright restrictions. CC0 by the photographer (Stefan van der Walt).

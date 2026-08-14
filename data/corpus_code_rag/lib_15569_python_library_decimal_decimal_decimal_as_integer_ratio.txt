@@ -1,0 +1,6 @@
+# python.library.decimal#decimal.Decimal.as_integer_ratio
+
+as_integer_ratio()  
+Return a pair (n, d) of integers that represent the given Decimal instance as a fraction, in lowest terms and with a positive denominator: >>> Decimal('-3.14').as_integer_ratio()
+(-157, 50)
+ The conversion is exact. Raise OverflowError on infinities and ValueError on NaNs.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.second
+
+pandas.PeriodIndex.second   propertyPeriodIndex.second
+ 
+The second of the period.

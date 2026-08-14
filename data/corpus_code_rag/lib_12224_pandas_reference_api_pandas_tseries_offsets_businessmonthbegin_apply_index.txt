@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessmonthbegin.apply_index
+
+pandas.tseries.offsets.BusinessMonthBegin.apply_index   BusinessMonthBegin.apply_index(other)

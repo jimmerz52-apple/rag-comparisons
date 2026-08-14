@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.RRef.confirmed_by_owner
+
+confirmed_by_owner(self: torch._C._distributed_rpc.PyRRef) → bool  
+Returns whether this RRef has been confirmed by the owner. OwnerRRef always returns true, while UserRRef only returns true when the owner knowns about this UserRRef.

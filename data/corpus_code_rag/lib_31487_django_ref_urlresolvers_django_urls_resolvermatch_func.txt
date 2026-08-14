@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.func
+
+func  
+The view function that would be used to serve the URL

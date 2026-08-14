@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.is_rendered
+
+SimpleTemplateResponse.is_rendered  
+A boolean indicating whether the response content has been rendered.

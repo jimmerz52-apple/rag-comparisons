@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Frame.lineno
+
+lineno  
+Line number (int).

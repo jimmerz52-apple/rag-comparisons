@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.accumulatornumaccumulated
+
+tf.raw_ops.AccumulatorNumAccumulated Returns the number of gradients aggregated in the given accumulators.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.AccumulatorNumAccumulated  
+tf.raw_ops.AccumulatorNumAccumulated(
+    handle, name=None
+)
+
+ 
+
+
+ Args
+  handle   A Tensor of type mutable string. The handle to an accumulator.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type int32.

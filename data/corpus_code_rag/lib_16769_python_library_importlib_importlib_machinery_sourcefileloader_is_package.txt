@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourceFileLoader.is_package
+
+is_package(fullname)  
+Return True if path appears to be for a package.

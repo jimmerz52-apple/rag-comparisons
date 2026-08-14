@@ -1,0 +1,20 @@
+# matplotlib.cm_api#matplotlib.cm.register_cmap
+
+matplotlib.cm.register_cmap(name=None, cmap=None, *, override_builtin=False)[source]
+ 
+Add a colormap to the set recognized by get_cmap(). Register a new colormap to be accessed by name LinearSegmentedColormap('swirly', data, lut)
+register_cmap(cmap=swirly_cmap)
+  Parameters 
+ 
+namestr, optional
+
+
+The name that can be used in get_cmap() or rcParams["image.cmap"] (default: 'viridis') If absent, the name will be the name attribute of the cmap.  
+cmapmatplotlib.colors.Colormap
+
+
+Despite being the second argument and having a default value, this is a required argument.  
+override_builtinbool
+
+
+Allow built-in colormaps to be overridden by a user-supplied colormap. Please do not use this unless you are sure you need it.     Notes Registering a colormap stores a reference to the colormap object which can currently be modified and inadvertently change the global colormap state. This behavior is deprecated and in Matplotlib 3.5 the registered colormap will be immutable.

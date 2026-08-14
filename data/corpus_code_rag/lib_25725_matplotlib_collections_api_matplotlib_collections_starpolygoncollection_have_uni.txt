@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.have_units
+
+have_units()[source]
+ 
+Return whether units are set on any axis.

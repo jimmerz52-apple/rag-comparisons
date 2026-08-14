@@ -1,0 +1,3 @@
+# django.topics.http.decorators#django.views.decorators.http.condition
+
+condition(etag_func=None, last_modified_func=None)

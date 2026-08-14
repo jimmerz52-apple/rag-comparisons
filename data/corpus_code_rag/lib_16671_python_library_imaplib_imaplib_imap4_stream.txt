@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4_stream
+
+class imaplib.IMAP4_stream(command)  
+This is a subclass derived from IMAP4 that connects to the stdin/stdout file descriptors created by passing command to subprocess.Popen().

@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.parent_process
+
+multiprocessing.parent_process()  
+Return the Process object corresponding to the parent process of the current_process(). For the main process, parent_process will be None.  New in version 3.8.

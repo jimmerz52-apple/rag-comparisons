@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIG_IGN
+
+signal.SIG_IGN  
+This is another standard signal handler, which will simply ignore the given signal.

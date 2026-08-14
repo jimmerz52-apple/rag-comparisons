@@ -1,0 +1,7 @@
+# torch.rpc#torch.distributed.rpc.get_worker_info
+
+torch.distributed.rpc.get_worker_info(worker_name=None) [source]
+ 
+Get WorkerInfo of a given worker name. Use this WorkerInfo to avoid passing an expensive string on every invocation.  Parameters 
+worker_name (str) – the string name of a worker. If None, return the the id of the current worker. (default None)  Returns 
+WorkerInfo instance for the given worker_name or WorkerInfo of the current worker if worker_name is None.

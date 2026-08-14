@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.ColorbarPatch
+
+classmatplotlib.colorbar.ColorbarPatch(ax, mappable=None, *, cmap=None, norm=None, alpha=None, values=None, boundaries=None, orientation='vertical', ticklocation='auto', extend=None, spacing='uniform', ticks=None, format=None, drawedges=False, filled=True, extendfrac=None, extendrect=False, label='')[source]
+ 
+Bases: matplotlib.colorbar.Colorbar [Deprecated] Notes  Deprecated since version 3.4:

@@ -1,0 +1,12 @@
+# tensorflow.distribute.reduceop
+
+tf.distribute.ReduceOp     View source on GitHub    Indicates how a set of values should be reduced.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.distribute.ReduceOp   
+SUM: Add all the values. 
+MEAN: Take the arithmetic mean ("average") of the values. 
+ 
+
+
+ Class Variables
+  MEAN   tf.distribute.ReduceOp  
+  SUM   tf.distribute.ReduceOp

@@ -1,0 +1,4 @@
+# python.library.typing#typing.SupportsFloat
+
+class typing.SupportsFloat  
+An ABC with one abstract method __float__.

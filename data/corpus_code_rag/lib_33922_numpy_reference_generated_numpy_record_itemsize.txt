@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.itemsize
+
+numpy.record.itemsize attribute   record.itemsize
+ 
+The length of one element in bytes.

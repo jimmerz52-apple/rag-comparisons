@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.svm.oneclasssvm#sklearn.svm.OneClassSVM.decision_function
+
+decision_function(X) [source]
+ 
+Signed distance to the separating hyperplane. Signed distance is positive for an inlier and negative for an outlier.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+decndarray of shape (n_samples,) 
+
+Returns the decision function of the samples.

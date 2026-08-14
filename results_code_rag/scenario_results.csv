@@ -1,0 +1,3 @@
+method,query_type,mean_composite_score
+rerank_semantic,local,0.30240104526187933
+semantic_rag,local,0.2702391170964139

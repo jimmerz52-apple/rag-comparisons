@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CREATE_NEW_CONSOLE
+
+subprocess.CREATE_NEW_CONSOLE  
+The new process has a new console, instead of inheriting its parent’s console (the default).

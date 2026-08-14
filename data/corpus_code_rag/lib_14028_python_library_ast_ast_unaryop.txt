@@ -1,0 +1,4 @@
+# python.library.ast#ast.UnaryOp
+
+class ast.UnaryOp(op, operand)  
+A unary operation. op is the operator, and operand any expression node.

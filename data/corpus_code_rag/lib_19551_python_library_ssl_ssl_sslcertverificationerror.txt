@@ -1,0 +1,9 @@
+# python.library.ssl#ssl.SSLCertVerificationError
+
+exception ssl.SSLCertVerificationError  
+A subclass of SSLError raised when certificate validation has failed.  New in version 3.7.   
+verify_code  
+A numeric error number that denotes the verification error. 
+  
+verify_message  
+A human readable string of the verification error.

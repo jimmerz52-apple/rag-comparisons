@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getmark
+
+aifc.getmark(id)  
+Return the tuple as described in getmarkers() for the mark with the given id.

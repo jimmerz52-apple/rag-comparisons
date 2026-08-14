@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.get_children
+
+get_children(item=None)  
+Returns the list of children belonging to item. If item is not specified, returns root children.

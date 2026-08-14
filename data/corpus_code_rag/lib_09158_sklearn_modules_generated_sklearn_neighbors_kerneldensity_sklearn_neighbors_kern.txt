@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neighbors.kerneldensity#sklearn.neighbors.KernelDensity.score_samples
+
+score_samples(X) [source]
+ 
+Evaluate the log density model on the data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+An array of points to query. Last dimension should match dimension of training data (n_features).    Returns 
+ 
+densityndarray of shape (n_samples,) 
+
+The array of log(density) evaluations. These are normalized to be probability densities, so values will be low for high-dimensional data.

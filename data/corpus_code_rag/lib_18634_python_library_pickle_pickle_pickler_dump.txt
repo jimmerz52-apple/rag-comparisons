@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.Pickler.dump
+
+dump(obj)  
+Write the pickled representation of obj to the open file object given in the constructor.

@@ -1,0 +1,4 @@
+# python.library.typing#typing.Deque
+
+class typing.Deque(deque, MutableSequence[T])  
+A generic version of collections.deque.  New in version 3.5.4.   New in version 3.6.1.   Deprecated since version 3.9: collections.deque now supports []. See PEP 585 and Generic Alias Type.

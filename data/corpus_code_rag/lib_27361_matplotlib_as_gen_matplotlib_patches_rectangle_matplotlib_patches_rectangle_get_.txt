@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.get_xy
+
+get_xy()[source]
+ 
+Return the left and bottom coords of the rectangle as a tuple.

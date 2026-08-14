@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.int
+
+UUID.int  
+The UUID as a 128-bit integer.

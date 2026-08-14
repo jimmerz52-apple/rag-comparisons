@@ -1,0 +1,31 @@
+# skimage.api.skimage.color#skimage.color.deltaE_ciede2000
+
+skimage.color.deltaE_ciede2000(lab1, lab2, kL=1, kC=1, kH=1) [source]
+ 
+Color difference as given by the CIEDE 2000 standard. CIEDE 2000 is a major revision of CIDE94. The perceptual calibration is largely based on experience with automotive paint on smooth surfaces.  Parameters 
+ 
+lab1array_like 
+
+reference color (Lab colorspace)  
+lab2array_like 
+
+comparison color (Lab colorspace)  
+kLfloat (range), optional 
+
+lightness scale factor, 1 for “acceptably close”; 2 for “imperceptible” see deltaE_cmc  
+kCfloat (range), optional 
+
+chroma scale factor, usually 1  
+kHfloat (range), optional 
+
+hue scale factor, usually 1    Returns 
+ 
+deltaEarray_like 
+
+The distance between lab1 and lab2     Notes CIEDE 2000 assumes parametric weighting factors for the lightness, chroma, and hue (kL, kC, kH respectively). These default to 1. References  
+1  
+https://en.wikipedia.org/wiki/Color_difference  
+2  
+http://www.ece.rochester.edu/~gsharma/ciede2000/ciede2000noteCRNA.pdf DOI:10.1364/AO.33.008069  
+3  
+M. Melgosa, J. Quesada, and E. Hita, “Uniformity of some recent color metrics tested with an accurate color-difference tolerance dataset,” Appl. Opt. 33, 8069-8077 (1994).

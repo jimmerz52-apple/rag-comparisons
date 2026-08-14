@@ -1,0 +1,7 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.Point
+
+class Point(x=None, y=None, z=None, srid=None)  
+Point objects are instantiated using arguments that represent the component coordinates of the point or with a single sequence coordinates. For example, the following are equivalent: >>> pnt = Point(5, 23)
+>>> pnt = Point([5, 23])
+ Empty Point objects may be instantiated by passing no arguments or an empty sequence. The following are equivalent: >>> pnt = Point()
+>>> pnt = Point([])

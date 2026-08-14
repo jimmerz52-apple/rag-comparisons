@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CREATE_NEW_PROCESS_GROUP
+
+subprocess.CREATE_NEW_PROCESS_GROUP  
+A Popen creationflags parameter to specify that a new process group will be created. This flag is necessary for using os.kill() on the subprocess. This flag is ignored if CREATE_NEW_CONSOLE is specified.

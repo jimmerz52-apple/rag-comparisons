@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_tight_layout
+
+get_tight_layout()[source]
+ 
+Return whether tight_layout is called when drawing.

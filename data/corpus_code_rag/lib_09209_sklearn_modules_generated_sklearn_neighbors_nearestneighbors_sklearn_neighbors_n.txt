@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.neighbors.nearestneighbors#sklearn.neighbors.NearestNeighbors.fit
+
+fit(X, y=None) [source]
+ 
+Fit the nearest neighbors estimator from the training dataset.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) or (n_samples, n_samples) if metric=’precomputed’ 
+
+Training data.  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+selfNearestNeighbors 
+
+The fitted nearest neighbors estimator.

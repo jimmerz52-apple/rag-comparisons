@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.core.groupby.groupby.groups
+
+pandas.core.groupby.GroupBy.groups   propertyGroupBy.groups
+ 
+Dict {group name -> group labels}.

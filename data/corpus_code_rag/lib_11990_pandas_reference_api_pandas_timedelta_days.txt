@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedelta.days
+
+pandas.Timedelta.days   Timedelta.days
+ 
+Number of days.

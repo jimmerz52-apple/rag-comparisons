@@ -1,0 +1,9 @@
+# pygame.ref.examples#pygame.examples.midi.main
+
+midi.main() 
+ run a midi example midi.main(mode='output', device_id=None) -> None  Arguments: mode - if 'output' run a midi keyboard output example
+          'input' run a midi event logger input example
+          'list' list available midi devices
+       (default 'output')
+device_id - midi device number; if None then use the default midi input or
+            output device for the system The output example shows how to translate mouse clicks or computer keyboard events into midi notes. It implements a rudimentary button widget and state machine. The input example shows how to translate midi input to pygame events. With the use of a virtual midi patch cord the output and input examples can be run as separate processes and connected so the keyboard output is displayed on a console. new to pygame 1.9.0

@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.neighbors.radiusneighborstransformer#sklearn.neighbors.RadiusNeighborsTransformer.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training set.  
+yignored 
+  Returns 
+ 
+Xtsparse matrix of shape (n_samples, n_samples) 
+
+Xt[i, j] is assigned the weight of edge that connects i to j. Only the neighbors have an explicit value. The diagonal is always explicit. The matrix is of CSR format.

@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.RRef.owner_name
+
+owner_name(self: torch._C._distributed_rpc.PyRRef) → str  
+Returns worker name of the node that owns this RRef.

@@ -1,0 +1,3 @@
+# matplotlib.widgets_api#matplotlib.widgets.MultiCursor.onmove
+
+onmove(event)[source]

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.parasiteaxesauxtransbase#mpl_toolkits.axes_grid1.parasite_axes.ParasiteAxesAuxTransBase.update_viewlim
+
+update_viewlim()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

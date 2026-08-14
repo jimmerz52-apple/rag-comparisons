@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_finite
+
+is_finite(x)  
+Returns True if x is finite; otherwise returns False.

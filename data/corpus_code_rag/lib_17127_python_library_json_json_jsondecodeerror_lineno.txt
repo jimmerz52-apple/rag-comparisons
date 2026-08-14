@@ -1,0 +1,4 @@
+# python.library.json#json.JSONDecodeError.lineno
+
+lineno  
+The line corresponding to pos.

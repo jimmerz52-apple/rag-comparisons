@@ -1,0 +1,32 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_thetagrids
+
+set_thetagrids(angles, labels=None, fmt=None, **kwargs)[source]
+ 
+Set the theta gridlines in a polar plot.  Parameters 
+ 
+anglestuple with floats, degrees
+
+
+The angles of the theta gridlines.  
+labelstuple with strings or None
+
+
+The labels to use at each theta gridline. The projections.polar.ThetaFormatter will be used if None.  
+fmtstr or None
+
+
+Format string used in matplotlib.ticker.FormatStrFormatter. For example '%f'. Note that the angle that is used is in radians.    Returns 
+ 
+lineslist of lines.Line2D
+
+
+The theta gridlines.  
+labelslist of text.Text
+
+
+The tick labels.    Other Parameters 
+ **kwargs
+
+kwargs are optional Text properties for the labels.      See also  PolarAxes.set_rgrids
+Axis.get_gridlines
+Axis.get_ticklabels

@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.commonpath
+
+os.path.commonpath(paths)  
+Return the longest common sub-path of each pathname in the sequence paths. Raise ValueError if paths contain both absolute and relative pathnames, the paths are on the different drives or if paths is empty. Unlike commonprefix(), this returns a valid path. Availability: Unix, Windows.  New in version 3.5.   Changed in version 3.6: Accepts a sequence of path-like objects.

@@ -1,0 +1,4 @@
+# python.library.urllib.error#urllib.error.URLError.reason
+
+reason  
+The reason for this error. It can be a message string or another exception instance.

@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.attroff
+
+window.attroff(attr)  
+Remove attribute attr from the “background” set applied to all writes to the current window.

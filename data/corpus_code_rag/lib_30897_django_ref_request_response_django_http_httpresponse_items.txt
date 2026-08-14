@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.items
+
+HttpResponse.items()  
+Acts like dict.items() for HTTP headers on the response.

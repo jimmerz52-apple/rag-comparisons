@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.unsqueeze
+
+unsqueeze(dim) → Tensor  
+See torch.unsqueeze()

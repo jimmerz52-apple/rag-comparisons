@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.lagweight
+
+numpy.polynomial.laguerre.lagweight   polynomial.laguerre.lagweight(x)[source]
+ 
+Weight function of the Laguerre polynomials. The weight function is \(exp(-x)\) and the interval of integration is \([0, \inf]\). The Laguerre polynomials are orthogonal, but not normalized, with respect to this weight function.  Parameters 
+ 
+xarray_like
+
+
+Values at which the weight function will be computed.    Returns 
+ 
+wndarray
+
+
+The weight function at x.     Notes  New in version 1.7.0.

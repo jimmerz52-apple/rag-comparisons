@@ -1,0 +1,8 @@
+# 830
+Task: 830
+
+# Write a function to round up a number to specific digits.
+import math
+def round_up(a, digits):
+    n = 10**-digits
+    return round(math.ceil(a / n) * n, digits)

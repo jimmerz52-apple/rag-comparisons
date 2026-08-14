@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.EnvironHeaders
+
+class werkzeug.datastructures.EnvironHeaders(environ)  
+Read only version of the headers from a WSGI environment. This provides the same interface as Headers and is constructed from a WSGI environment. From Werkzeug 0.3 onwards, the KeyError raised by this class is also a subclass of the BadRequest HTTP exception and will render a page for a 400 BAD REQUEST if caught in a catch-all for HTTP exceptions.

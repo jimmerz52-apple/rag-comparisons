@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Style.theme_create
+
+theme_create(themename, parent=None, settings=None)  
+Create a new theme. It is an error if themename already exists. If parent is specified, the new theme will inherit styles, elements and layouts from the parent theme. If settings are present they are expected to have the same syntax used for theme_settings().

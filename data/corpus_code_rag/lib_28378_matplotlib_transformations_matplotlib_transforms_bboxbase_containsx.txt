@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.containsx
+
+containsx(x)[source]
+ 
+Return whether x is in the closed (x0, x1) interval.

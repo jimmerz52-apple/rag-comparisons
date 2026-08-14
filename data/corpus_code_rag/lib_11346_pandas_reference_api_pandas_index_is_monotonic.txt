@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.is_monotonic
+
+pandas.Index.is_monotonic   propertyIndex.is_monotonic
+ 
+Alias for is_monotonic_increasing.

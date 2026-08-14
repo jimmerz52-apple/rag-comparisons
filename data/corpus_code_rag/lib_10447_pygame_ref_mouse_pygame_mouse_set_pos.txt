@@ -1,0 +1,4 @@
+# pygame.ref.mouse#pygame.mouse.set_pos
+
+pygame.mouse.set_pos() 
+ set the mouse cursor position set_pos([x, y]) -> None  Set the current mouse position to arguments given. If the mouse cursor is visible it will jump to the new coordinates. Moving the mouse will generate a new pygame.MOUSEMOTION event.

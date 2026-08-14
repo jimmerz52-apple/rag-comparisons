@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.count
+
+Paginator.count  
+The total number of objects, across all pages.  Note When determining the number of objects contained in object_list, Paginator will first try calling object_list.count(). If object_list has no count() method, then Paginator will fall back to using len(object_list). This allows objects, such as QuerySet, to use a more efficient count() method when available.

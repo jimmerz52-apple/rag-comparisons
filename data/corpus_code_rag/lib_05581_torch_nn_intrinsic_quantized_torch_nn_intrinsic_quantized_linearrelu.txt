@@ -1,0 +1,10 @@
+# torch.nn.intrinsic.quantized#torch.nn.intrinsic.quantized.LinearReLU
+
+class torch.nn.intrinsic.quantized.LinearReLU(in_features, out_features, bias=True, dtype=torch.qint8) [source]
+ 
+A LinearReLU module fused from Linear and ReLU modules We adopt the same interface as torch.nn.quantized.Linear.  Variables 
+as torch.nn.quantized.Linear (Same) –    Examples: >>> m = nn.intrinsic.LinearReLU(20, 30)
+>>> input = torch.randn(128, 20)
+>>> output = m(input)
+>>> print(output.size())
+torch.Size([128, 30])

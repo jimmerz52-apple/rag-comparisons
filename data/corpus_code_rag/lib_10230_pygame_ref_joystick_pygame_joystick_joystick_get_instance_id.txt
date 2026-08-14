@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_instance_id
+
+get_instance_id() → int 
+ get the joystick instance id get_instance_id() -> int  Get the joystick instance ID. This matches the instance_id field that is given in joystick events.  New in pygame 2.0.0dev11.

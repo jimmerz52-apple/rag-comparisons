@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.Group.display_name
+
+display_name  
+The display_name of the group. If it is None and there is exactly one Address in addresses, then the Group represents a single address that is not in a group.

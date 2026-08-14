@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.hostaxesbase#mpl_toolkits.axes_grid1.parasite_axes.HostAxesBase.get_aux_axes
+
+get_aux_axes(tr=None, viewlim_mode='equal', axes_class=<class 'mpl_toolkits.axes_grid1.mpl_axes.Axes'>)[source]
+ 
+Add a parasite axes to this host. Despite this method's name, this should actually be thought of as an add_parasite_axes method. tr may be Transform, in which case the following relation will hold: parasite.transData = tr + host.transData. Alternatively, it may be None (the default), no special relationship will hold between the parasite's and the host's transData.

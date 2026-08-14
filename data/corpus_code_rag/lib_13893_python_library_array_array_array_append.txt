@@ -1,0 +1,4 @@
+# python.library.array#array.array.append
+
+array.append(x)  
+Append a new item with value x to the end of the array.

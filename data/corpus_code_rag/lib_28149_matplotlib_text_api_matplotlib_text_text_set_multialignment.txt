@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_multialignment
+
+set_multialignment(align)[source]
+ 
+Set the text alignment for multiline texts. The layout of the bounding box of all the lines is determined by the horizontalalignment and verticalalignment properties. This property controls the alignment of the text lines within that box.  Parameters 
+ 
+align{'left', 'right', 'center'}

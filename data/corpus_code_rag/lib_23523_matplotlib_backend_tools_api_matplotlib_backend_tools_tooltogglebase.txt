@@ -1,0 +1,32 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolToggleBase
+
+classmatplotlib.backend_tools.ToolToggleBase(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Toggleable tool. Every time it is triggered, it switches between enable and disable.  Parameters 
+ ``*args``
+
+Variable length argument to be used by the Tool.  ``**kwargs``
+
+toggled if present and True, sets the initial state of the Tool Arbitrary keyword arguments to be consumed by the Tool       cursor=None
+ 
+Cursor to use when the tool is active. 
+   default_toggled=False
+ 
+Default of toggled state. 
+   disable(event=None)[source]
+ 
+Disable the toggle tool. trigger call this method when toggled is True. This can happen in different circumstances.  Click on the toolbar tool button. Call to matplotlib.backend_managers.ToolManager.trigger_tool. Another ToolToggleBase derived tool is triggered (from the same ToolManager).  
+   enable(event=None)[source]
+ 
+Enable the toggle tool. trigger calls this method when toggled is False. 
+   radio_group=None
+ 
+Attribute to group 'radio' like tools (mutually exclusive). str that identifies the group or None if not belonging to a group. 
+   set_figure(figure)[source]
+
+   propertytoggled
+ 
+State of the toggled tool. 
+   trigger(sender, event, data=None)[source]
+ 
+Calls enable or disable based on toggled value.

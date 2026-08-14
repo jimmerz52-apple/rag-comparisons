@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.legendre.legendre.has_sametype
+
+numpy.polynomial.legendre.Legendre.has_sametype method   polynomial.legendre.Legendre.has_sametype(other)[source]
+ 
+Check if types match.  New in version 1.7.0.   Parameters 
+ 
+otherobject
+
+
+Class instance.    Returns 
+ 
+boolboolean
+
+
+True if other is same class as self

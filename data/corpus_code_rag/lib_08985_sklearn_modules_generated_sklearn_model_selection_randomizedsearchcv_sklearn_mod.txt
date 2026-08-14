@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.model_selection.randomizedsearchcv#sklearn.model_selection.RandomizedSearchCV.predict_proba
+
+predict_proba(X) [source]
+ 
+Call predict_proba on the estimator with the best found parameters. Only available if refit=True and the underlying estimator supports predict_proba.  Parameters 
+ 
+Xindexable, length n_samples 
+
+Must fulfill the input assumptions of the underlying estimator.

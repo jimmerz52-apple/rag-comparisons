@@ -1,0 +1,5 @@
+# numpy.reference.random.generated.numpy.random.ranf
+
+numpy.random.ranf   random.ranf()
+ 
+This is an alias of random_sample. See random_sample for the complete documentation.

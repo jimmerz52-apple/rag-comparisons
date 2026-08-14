@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOBase.buffer
+
+buffer  
+The underlying binary buffer (a BufferedIOBase instance) that TextIOBase deals with. This is not part of the TextIOBase API and may not exist in some implementations.

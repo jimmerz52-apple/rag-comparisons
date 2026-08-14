@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.rotated
+
+rotated(radians)[source]
+ 
+Return the axes-aligned bounding box that bounds the result of rotating this Bbox by an angle of radians.

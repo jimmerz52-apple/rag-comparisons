@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.DateTimeField
+
+class DateTimeField(auto_now=False, auto_now_add=False, **options)

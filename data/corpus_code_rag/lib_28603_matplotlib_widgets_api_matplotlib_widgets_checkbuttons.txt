@@ -1,0 +1,56 @@
+# matplotlib.widgets_api#matplotlib.widgets.CheckButtons
+
+classmatplotlib.widgets.CheckButtons(ax, labels, actives=None)[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral set of check buttons. For the check buttons to remain responsive you must keep a reference to this object. Connect to the CheckButtons with the on_clicked method.  Attributes 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+labelslist of Text
+
+
+rectangleslist of Rectangle
+
+
+lineslist of (Line2D, Line2D) pairs
+
+
+List of lines for the x's in the check boxes. These lines exist for each box, but have set_visible(False) when its box is not checked.     Add check buttons to matplotlib.axes.Axes instance ax.  Parameters 
+ 
+axAxes
+
+
+The parent axes for the widget.  
+labelslist of str
+
+
+The labels of the check buttons.  
+activeslist of bool, optional
+
+
+The initial check states of the buttons. The list must have the same length as labels. If not given, all buttons are unchecked.       propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the observer with connection id cid. 
+   get_status()[source]
+ 
+Return a tuple of the status (True/False) of all of the check buttons. 
+   propertyobservers[source]
+
+   on_clicked(func)[source]
+ 
+Connect the callback function func to button click events. Returns a connection id, which can be used to disconnect the callback. 
+   set_active(index)[source]
+ 
+Toggle (activate or deactivate) a check button by index. Callbacks will be triggered if eventson is True.  Parameters 
+ 
+indexint
+
+
+Index of the check button to toggle.    Raises 
+ ValueError
+
+If index is invalid.

@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.LockDraw.available
+
+available(o)[source]
+ 
+Return whether drawing is available to o.

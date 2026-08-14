@@ -1,0 +1,13 @@
+# skimage.api.skimage.measure#skimage.measure.LineModelND.estimate
+
+estimate(data) [source]
+ 
+Estimate line model from data. This minimizes the sum of shortest (orthogonal) distances from the given data points to the estimated line.  Parameters 
+ 
+data(N, dim) array 
+
+N points in a space of dimensionality dim >= 2.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.

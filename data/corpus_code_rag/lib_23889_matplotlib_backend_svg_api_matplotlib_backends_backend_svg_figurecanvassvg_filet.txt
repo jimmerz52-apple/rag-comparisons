@@ -1,0 +1,3 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.FigureCanvasSVG.filetypes
+
+filetypes={'svg': 'Scalable Vector Graphics', 'svgz': 'Scalable Vector Graphics'}

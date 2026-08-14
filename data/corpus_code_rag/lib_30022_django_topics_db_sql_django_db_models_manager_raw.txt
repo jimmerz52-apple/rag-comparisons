@@ -1,0 +1,3 @@
+# django.topics.db.sql#django.db.models.Manager.raw
+
+Manager.raw(raw_query, params=(), translations=None)

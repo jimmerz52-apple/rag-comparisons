@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Channel.fadeout
+
+fadeout() 
+ stop playback after fading channel out fadeout(time) -> None  Stop playback of a channel after fading out the sound over the given time argument in milliseconds.

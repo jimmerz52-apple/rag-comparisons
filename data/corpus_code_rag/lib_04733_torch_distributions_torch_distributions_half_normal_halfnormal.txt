@@ -1,0 +1,37 @@
+# torch.distributions#torch.distributions.half_normal.HalfNormal
+
+class torch.distributions.half_normal.HalfNormal(scale, validate_args=None) [source]
+ 
+Bases: torch.distributions.transformed_distribution.TransformedDistribution Creates a half-normal distribution parameterized by scale where: X ~ Normal(0, scale)
+Y = |X| ~ HalfNormal(scale)
+ Example: >>> m = HalfNormal(torch.tensor([1.0]))
+>>> m.sample()  # half-normal distributed with scale=1
+tensor([ 0.1046])
+  Parameters 
+scale (float or Tensor) – scale of the full Normal distribution    
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {'scale': GreaterThan(lower_bound=0.0)} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(prob) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+property scale 
+  
+support = GreaterThan(lower_bound=0.0) 
+  
+property variance

@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.multideviceiteratortostringhandle
+
+tf.raw_ops.MultiDeviceIteratorToStringHandle Produces a string handle for the given MultiDeviceIterator.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.MultiDeviceIteratorToStringHandle  
+tf.raw_ops.MultiDeviceIteratorToStringHandle(
+    multi_device_iterator, name=None
+)
+
+ 
+
+
+ Args
+  multi_device_iterator   A Tensor of type resource. A MultiDeviceIterator resource.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type string.

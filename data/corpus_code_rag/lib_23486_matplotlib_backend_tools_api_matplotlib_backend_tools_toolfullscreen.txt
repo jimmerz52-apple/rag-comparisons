@@ -1,0 +1,16 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolFullScreen
+
+classmatplotlib.backend_tools.ToolFullScreen(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.ToolToggleBase Tool to toggle full screen.   default_keymap=['f', 'ctrl+f']
+ 
+Keymap to associate with this tool. list[str]: List of keys that will trigger this tool when a keypress event is emitted on self.figure.canvas. 
+   description='Toggle fullscreen mode'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   disable(event)[source]
+ 
+Disable the toggle tool. trigger call this method when toggled is True. This can happen in different circumstances.  Click on the toolbar tool button. Call to matplotlib.backend_managers.ToolManager.trigger_tool. Another ToolToggleBase derived tool is triggered (from the same ToolManager).  
+   enable(event)[source]
+ 
+Enable the toggle tool. trigger calls this method when toggled is False.

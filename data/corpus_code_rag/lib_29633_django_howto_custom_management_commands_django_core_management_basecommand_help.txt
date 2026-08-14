@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.help
+
+BaseCommand.help  
+A short description of the command, which will be printed in the help message when the user runs the command python manage.py help <command>.

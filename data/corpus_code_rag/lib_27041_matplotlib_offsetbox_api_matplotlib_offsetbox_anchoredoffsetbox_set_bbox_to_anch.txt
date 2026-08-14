@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnchoredOffsetbox.set_bbox_to_anchor
+
+set_bbox_to_anchor(bbox, transform=None)[source]
+ 
+Set the bbox that the box is anchored to. bbox can be a Bbox instance, a list of [left, bottom, width, height], or a list of [left, bottom] where the width and height will be assumed to be zero. The bbox will be transformed to display coordinate by the given transform.

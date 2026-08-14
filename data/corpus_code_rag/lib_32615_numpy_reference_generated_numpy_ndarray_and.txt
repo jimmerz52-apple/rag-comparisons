@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__and__
+
+numpy.ndarray.__and__ method   ndarray.__and__(value, /)
+ 
+Return self&value.

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.dateparse.parse_datetime
+
+parse_datetime(value)  
+Parses a string and returns a datetime.datetime. UTC offsets are supported; if value describes one, the result’s tzinfo attribute is a datetime.timezone instance.

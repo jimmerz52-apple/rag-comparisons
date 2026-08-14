@@ -1,0 +1,4 @@
+# python.library.test#test.support.bytecode_helper.BytecodeTestCase.assertInBytecode
+
+BytecodeTestCase.assertInBytecode(x, opname, argval=_UNSPECIFIED)  
+Return instr if opname is found, otherwise throws AssertionError.

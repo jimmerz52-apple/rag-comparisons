@@ -1,0 +1,41 @@
+# python.library.asyncio-stream#asyncio.StreamWriter
+
+class asyncio.StreamWriter  
+Represents a writer object that provides APIs to write data to the IO stream. It is not recommended to instantiate StreamWriter objects directly; use open_connection() and start_server() instead.  
+write(data)  
+The method attempts to write the data to the underlying socket immediately. If that fails, the data is queued in an internal write buffer until it can be sent. The method should be used along with the drain() method: stream.write(data)
+await stream.drain()
+ 
+  
+writelines(data)  
+The method writes a list (or any iterable) of bytes to the underlying socket immediately. If that fails, the data is queued in an internal write buffer until it can be sent. The method should be used along with the drain() method: stream.writelines(lines)
+await stream.drain()
+ 
+  
+close()  
+The method closes the stream and the underlying socket. The method should be used along with the wait_closed() method: stream.close()
+await stream.wait_closed()
+ 
+  
+can_write_eof()  
+Return True if the underlying transport supports the write_eof() method, False otherwise. 
+  
+write_eof()  
+Close the write end of the stream after the buffered write data is flushed. 
+  
+transport  
+Return the underlying asyncio transport. 
+  
+get_extra_info(name, default=None)  
+Access optional transport information; see BaseTransport.get_extra_info() for details. 
+  
+coroutine drain()  
+Wait until it is appropriate to resume writing to the stream. Example: writer.write(data)
+await writer.drain()
+ This is a flow control method that interacts with the underlying IO write buffer. When the size of the buffer reaches the high watermark, drain() blocks until the size of the buffer is drained down to the low watermark and writing can be resumed. When there is nothing to wait for, the drain() returns immediately. 
+  
+is_closing()  
+Return True if the stream is closed or in the process of being closed.  New in version 3.7.  
+  
+coroutine wait_closed()  
+Wait until the stream is closed. Should be called after close() to wait until the underlying connection is closed.  New in version 3.7.

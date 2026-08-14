@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cross
+
+cross(other, dim=-1) → Tensor  
+See torch.cross()

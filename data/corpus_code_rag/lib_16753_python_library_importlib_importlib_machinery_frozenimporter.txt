@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.FrozenImporter
+
+class importlib.machinery.FrozenImporter  
+An importer for frozen modules. This class implements the importlib.abc.MetaPathFinder and importlib.abc.InspectLoader ABCs. Only class methods are defined by this class to alleviate the need for instantiation.  Changed in version 3.4: Gained create_module() and exec_module() methods.

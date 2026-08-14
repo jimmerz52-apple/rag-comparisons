@@ -1,0 +1,4 @@
+# python.library.os#os.SCHED_FIFO
+
+os.SCHED_FIFO  
+A First In First Out scheduling policy.

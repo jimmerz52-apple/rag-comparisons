@@ -1,0 +1,21 @@
+# python.library.email.iterators#email.iterators._structure
+
+email.iterators._structure(msg, fp=None, level=0, include_default=False)  
+Prints an indented representation of the content types of the message object structure. For example: >>> msg = email.message_from_file(somefile)
+>>> _structure(msg)
+multipart/mixed
+    text/plain
+    text/plain
+    multipart/digest
+        message/rfc822
+            text/plain
+        message/rfc822
+            text/plain
+        message/rfc822
+            text/plain
+        message/rfc822
+            text/plain
+        message/rfc822
+            text/plain
+    text/plain
+ Optional fp is a file-like object to print the output to. It must be suitable for Python’s print() function. level is used internally. include_default, if true, prints the default type as well.

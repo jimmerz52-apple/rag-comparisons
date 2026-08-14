@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.is_authenticated
+
+is_authenticated  
+Read-only attribute which is always True (as opposed to AnonymousUser.is_authenticated which is always False). This is a way to tell if the user has been authenticated. This does not imply any permissions and doesn’t check if the user is active or has a valid session. Even though normally you will check this attribute on request.user to find out whether it has been populated by the AuthenticationMiddleware (representing the currently logged-in user), you should know this attribute is True for any User instance.

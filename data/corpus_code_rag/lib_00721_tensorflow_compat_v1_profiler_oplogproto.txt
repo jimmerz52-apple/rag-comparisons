@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.profiler.oplogproto
+
+tf.compat.v1.profiler.OpLogProto A ProtocolMessage
+ 
+
+
+ Attributes
+  id_to_string   repeated IdToStringEntry id_to_string  
+  log_entries   repeated OpLogEntry log_entries    Child Classes class IdToStringEntry

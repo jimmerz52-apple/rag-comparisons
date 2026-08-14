@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_frame_on
+
+matplotlib.axes.Axes.set_frame_on   Axes.set_frame_on(b)[source]
+ 
+Set whether the Axes rectangle patch is drawn.  Parameters 
+ 
+bbool

@@ -1,0 +1,6 @@
+# 858
+Task: 858
+
+# Write a function to count number of lists in a given list of lists and square the count.
+def count_list(input_list): 
+    return (len(input_list))**2

@@ -1,0 +1,25 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerStem
+
+classmatplotlib.legend_handler.HandlerStem(marker_pad=0.3, numpoints=None, bottom=None, yoffsets=None, **kwargs)[source]
+ 
+Handler for plots produced by stem.  Parameters 
+ 
+marker_padfloat, default: 0.3
+
+
+Padding between points in legend entry.  
+numpointsint, optional
+
+
+Number of points to show in legend entry.  
+bottomfloat, optional
+
+
+yoffsetsarray of floats, optional
+
+
+Length numpoints list of y offsets for each point in legend entry.  **kwargs
+
+Keyword arguments forwarded to HandlerNpointsYoffsets.       create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]
+
+   get_ydata(legend, xdescent, ydescent, width, height, fontsize)[source]

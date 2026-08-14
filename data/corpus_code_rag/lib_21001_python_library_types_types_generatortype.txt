@@ -1,0 +1,4 @@
+# python.library.types#types.GeneratorType
+
+types.GeneratorType  
+The type of generator-iterator objects, created by generator functions.

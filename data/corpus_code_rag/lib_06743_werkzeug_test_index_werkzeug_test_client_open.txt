@@ -1,0 +1,11 @@
+# werkzeug.test.index#werkzeug.test.Client.open
+
+open(*args, as_tuple=False, buffered=False, follow_redirects=False, **kwargs)  
+Generate an environ dict from the given arguments, make a request to the application using it, and return the response.  Parameters 
+ 
+args (Any) – Passed to EnvironBuilder to create the environ for the request. If a single arg is passed, it can be an existing EnvironBuilder or an environ dict. 
+buffered (bool) – Convert the iterator returned by the app into a list. If the iterator has a close() method, it is called automatically. 
+follow_redirects (bool) – Make additional requests to follow HTTP redirects until a non-redirect status is returned. TestResponse.history lists the intermediate responses. 
+as_tuple (bool) –  
+kwargs (Any) –    Return type 
+werkzeug.test.TestResponse    Changed in version 2.0: as_tuple is deprecated and will be removed in Werkzeug 2.1. Use TestResponse.request and request.environ instead.   Changed in version 2.0: The request input stream is closed when calling response.close(). Input streams for redirects are automatically closed.   Changelog Changed in version 0.5: If a dict is provided as file in the dict for the data parameter the content type has to be called content_type instead of mimetype. This change was made for consistency with werkzeug.FileWrapper.   Changed in version 0.5: Added the follow_redirects parameter.

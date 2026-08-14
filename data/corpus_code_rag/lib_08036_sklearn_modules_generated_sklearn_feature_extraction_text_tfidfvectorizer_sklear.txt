@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidfvectorizer#sklearn.feature_extraction.text.TfidfVectorizer.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Return terms per document with nonzero entries in X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document-term matrix.    Returns 
+ 
+X_invlist of arrays of shape (n_samples,) 
+
+List of arrays of terms.

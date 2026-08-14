@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingInput.cleanup
+
+cleanup()[source]
+ 
+Disconnect all callbacks.

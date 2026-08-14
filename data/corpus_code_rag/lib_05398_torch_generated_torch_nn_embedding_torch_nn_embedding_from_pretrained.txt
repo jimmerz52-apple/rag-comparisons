@@ -1,0 +1,20 @@
+# torch.generated.torch.nn.embedding#torch.nn.Embedding.from_pretrained
+
+classmethod from_pretrained(embeddings, freeze=True, padding_idx=None, max_norm=None, norm_type=2.0, scale_grad_by_freq=False, sparse=False) [source]
+ 
+Creates Embedding instance from given 2-dimensional FloatTensor.  Parameters 
+ 
+embeddings (Tensor) – FloatTensor containing weights for the Embedding. First dimension is being passed to Embedding as num_embeddings, second as embedding_dim. 
+freeze (boolean, optional) – If True, the tensor does not get updated in the learning process. Equivalent to embedding.weight.requires_grad = False. Default: True
+ 
+padding_idx (int, optional) – See module initialization documentation. 
+max_norm (float, optional) – See module initialization documentation. 
+norm_type (float, optional) – See module initialization documentation. Default 2. 
+scale_grad_by_freq (boolean, optional) – See module initialization documentation. Default False. 
+sparse (bool, optional) – See module initialization documentation.    Examples: >>> # FloatTensor containing pretrained weights
+>>> weight = torch.FloatTensor([[1, 2.3, 3], [4, 5.1, 6.3]])
+>>> embedding = nn.Embedding.from_pretrained(weight)
+>>> # Get embeddings for index 1
+>>> input = torch.LongTensor([1])
+>>> embedding(input)
+tensor([[ 4.0000,  5.1000,  6.3000]])

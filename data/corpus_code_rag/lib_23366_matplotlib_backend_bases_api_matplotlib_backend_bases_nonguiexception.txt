@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.NonGuiException
+
+exceptionmatplotlib.backend_bases.NonGuiException[source]
+ 
+Bases: Exception Raised when trying show a figure in a non-GUI backend.

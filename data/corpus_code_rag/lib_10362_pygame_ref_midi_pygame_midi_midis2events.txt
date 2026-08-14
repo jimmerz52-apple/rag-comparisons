@@ -1,0 +1,9 @@
+# pygame.ref.midi#pygame.midi.midis2events
+
+pygame.midi.midis2events() 
+ converts midi events to pygame events midis2events(midi_events, device_id) -> [Event, ...]  Takes a sequence of midi events and returns list of pygame events. The midi_events data is expected to be a sequence of ((status, data1, data2, data3), timestamp) midi events (all values required).     
+Returns:
+a list of pygame events of event type MIDIIN
+  
+Return type:
+list

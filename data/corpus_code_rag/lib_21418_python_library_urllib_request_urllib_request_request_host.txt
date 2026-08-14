@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.host
+
+Request.host  
+The URI authority, typically a host, but may also contain a port separated by a colon.

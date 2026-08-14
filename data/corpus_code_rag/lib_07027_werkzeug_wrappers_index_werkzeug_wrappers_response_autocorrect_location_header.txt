@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.autocorrect_location_header
+
+autocorrect_location_header = True  
+Should this response object correct the location header to be RFC conformant? This is true by default.  Changelog New in version 0.8.

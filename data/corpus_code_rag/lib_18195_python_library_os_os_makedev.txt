@@ -1,0 +1,4 @@
+# python.library.os#os.makedev
+
+os.makedev(major, minor)  
+Compose a raw device number from the major and minor device numbers.

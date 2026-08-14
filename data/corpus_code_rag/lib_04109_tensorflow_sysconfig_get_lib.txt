@@ -1,0 +1,10 @@
+# tensorflow.sysconfig.get_lib
+
+tf.sysconfig.get_lib     View source on GitHub    Get the directory containing the TensorFlow framework library.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.sysconfig.get_lib  
+tf.sysconfig.get_lib()
+
+ 
+
+
+ Returns   The directory as string.

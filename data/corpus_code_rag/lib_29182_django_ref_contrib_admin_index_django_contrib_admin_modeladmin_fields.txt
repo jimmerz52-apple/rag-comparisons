@@ -1,0 +1,8 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.fields
+
+ModelAdmin.fields  
+Use the fields option to make simple layout changes in the forms on the “add” and “change” pages such as showing only a subset of available fields, modifying their order, or grouping them into rows. For example, you could define a simpler version of the admin form for the django.contrib.flatpages.models.FlatPage model as follows: class FlatPageAdmin(admin.ModelAdmin):
+    fields = ('url', 'title', 'content')
+ In the above example, only the fields url, title and content will be displayed, sequentially, in the form. fields can contain values defined in ModelAdmin.readonly_fields to be displayed as read-only. For more complex layout needs, see the fieldsets option. The fields option accepts the same types of values as list_display, except that callables aren’t accepted. Names of model and model admin methods will only be used if they’re listed in readonly_fields. To display multiple fields on the same line, wrap those fields in their own tuple. In this example, the url and title fields will display on the same line and the content field will be displayed below them on its own line: class FlatPageAdmin(admin.ModelAdmin):
+    fields = (('url', 'title'), 'content')
+  Note This fields option should not be confused with the fields dictionary key that is within the fieldsets option, as described in the next section.  If neither fields nor fieldsets options are present, Django will default to displaying each field that isn’t an AutoField and has editable=True, in a single fieldset, in the same order as the fields are defined in the model.

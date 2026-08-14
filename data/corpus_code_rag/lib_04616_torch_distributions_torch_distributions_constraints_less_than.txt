@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.less_than
+
+torch.distributions.constraints.less_than  
+alias of torch.distributions.constraints._LessThan

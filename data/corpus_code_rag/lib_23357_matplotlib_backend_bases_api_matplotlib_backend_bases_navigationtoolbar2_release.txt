@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.NavigationToolbar2.release_zoom
+
+release_zoom(event)[source]
+ 
+Callback for mouse button release in zoom to rect mode.

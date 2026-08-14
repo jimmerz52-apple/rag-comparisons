@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isfunction
+
+inspect.isfunction(object)  
+Return True if the object is a Python function, which includes functions created by a lambda expression.

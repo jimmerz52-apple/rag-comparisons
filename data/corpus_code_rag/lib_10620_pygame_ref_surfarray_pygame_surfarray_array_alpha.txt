@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.array_alpha
+
+pygame.surfarray.array_alpha() 
+ Copy pixel alphas into a 2d array array_alpha(Surface) -> array  Copy the pixel alpha values (degree of transparency) from a Surface into a 2D array. This will work for any type of Surface format. Surfaces without a pixel alpha will return an array with all opaque values. This function will temporarily lock the Surface as pixels are copied (see the pygame.Surface.lock() - lock the Surface memory for pixel access method).

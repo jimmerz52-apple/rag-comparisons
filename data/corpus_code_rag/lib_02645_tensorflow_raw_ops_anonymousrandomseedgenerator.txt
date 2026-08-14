@@ -1,0 +1,20 @@
+# tensorflow.raw_ops.anonymousrandomseedgenerator
+
+tf.raw_ops.AnonymousRandomSeedGenerator  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.AnonymousRandomSeedGenerator  
+tf.raw_ops.AnonymousRandomSeedGenerator(
+    seed, seed2, name=None
+)
+
+ 
+
+
+ Args
+  seed   A Tensor of type int64.  
+  seed2   A Tensor of type int64.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A tuple of Tensor objects (handle, deleter).     handle   A Tensor of type resource.  
+  deleter   A Tensor of type variant.

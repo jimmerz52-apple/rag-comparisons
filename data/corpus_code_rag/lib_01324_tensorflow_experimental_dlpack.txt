@@ -1,0 +1,3 @@
+# tensorflow.experimental.dlpack
+
+Module: tf.experimental.dlpack Public API for tf.experimental.dlpack namespace. Functions from_dlpack(...): Returns the Tensorflow eager tensor. to_dlpack(...): Returns the dlpack capsule representing the tensor.

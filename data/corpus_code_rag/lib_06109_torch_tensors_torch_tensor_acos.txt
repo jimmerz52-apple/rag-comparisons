@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.acos_
+
+acos_() → Tensor  
+In-place version of acos()

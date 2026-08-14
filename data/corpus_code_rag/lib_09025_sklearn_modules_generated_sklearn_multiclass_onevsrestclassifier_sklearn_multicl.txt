@@ -1,0 +1,172 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsrestclassifier#sklearn.multiclass.OneVsRestClassifier
+
+class sklearn.multiclass.OneVsRestClassifier(estimator, *, n_jobs=None) [source]
+ 
+One-vs-the-rest (OvR) multiclass strategy. Also known as one-vs-all, this strategy consists in fitting one classifier per class. For each classifier, the class is fitted against all the other classes. In addition to its computational efficiency (only n_classes classifiers are needed), one advantage of this approach is its interpretability. Since each class is represented by one and one classifier only, it is possible to gain knowledge about the class by inspecting its corresponding classifier. This is the most commonly used strategy for multiclass classification and is a fair default choice. OneVsRestClassifier can also be used for multilabel classification. To use this feature, provide an indicator matrix for the target y when calling .fit. In other words, the target labels should be formatted as a 2D binary (0/1) matrix, where [i, j] == 1 indicates the presence of label j in sample i. This estimator uses the binary relevance method to perform multilabel classification, which involves training one binary classifier independently for each label. Read more in the User Guide.  Parameters 
+ 
+estimatorestimator object 
+
+An estimator object implementing fit and one of decision_function or predict_proba.  
+n_jobsint, default=None 
+
+The number of jobs to use for the computation: the n_classes one-vs-rest problems are computed in parallel. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.  Changed in version v0.20: n_jobs default changed from 1 to None     Attributes 
+ 
+estimators_list of n_classes estimators 
+
+Estimators used for predictions.  
+coef_ndarray of shape (1, n_features) or (n_classes, n_features) 
+
+Coefficient of the features in the decision function. This attribute exists only if the estimators_ defines coef_.  Deprecated since version 0.24: This attribute is deprecated in 0.24 and will be removed in 1.1 (renaming of 0.26). If you use this attribute in RFE or SelectFromModel, you may pass a callable to the importance_getter parameter that extracts feature the importances from estimators_.   
+intercept_ndarray of shape (1, 1) or (n_classes, 1) 
+
+If y is binary, the shape is (1, 1) else (n_classes, 1) This attribute exists only if the estimators_ defines intercept_.  Deprecated since version 0.24: This attribute is deprecated in 0.24 and will be removed in 1.1 (renaming of 0.26). If you use this attribute in RFE or SelectFromModel, you may pass a callable to the importance_getter parameter that extracts feature the importances from estimators_.   
+classes_array, shape = [n_classes] 
+
+Class labels.  
+n_classes_int 
+
+Number of classes.  
+label_binarizer_LabelBinarizer object 
+
+Object used to transform multiclass labels to binary labels and vice-versa.  
+multilabel_boolean 
+
+Whether this is a multilabel classifier      See also  
+sklearn.multioutput.MultiOutputClassifier
+
+
+Alternate way of extending an estimator for multilabel classification.  
+sklearn.preprocessing.MultiLabelBinarizer
+
+
+Transform iterable of iterables to binary indicator matrix.    Examples >>> import numpy as np
+>>> from sklearn.multiclass import OneVsRestClassifier
+>>> from sklearn.svm import SVC
+>>> X = np.array([
+...     [10, 10],
+...     [8, 10],
+...     [-5, 5.5],
+...     [-5.4, 5.5],
+...     [-20, -20],
+...     [-15, -20]
+... ])
+>>> y = np.array([0, 0, 1, 1, 2, 2])
+>>> clf = OneVsRestClassifier(SVC()).fit(X, y)
+>>> clf.predict([[-19, -20], [9, 9], [-5, 5]])
+array([2, 0, 1])
+ Methods  
+decision_function(X) Returns the distance of each sample from the decision boundary for each class.  
+fit(X, y) Fit underlying estimators.  
+get_params([deep]) Get parameters for this estimator.  
+partial_fit(X, y[, classes]) Partially fit underlying estimators  
+predict(X) Predict multi-class targets using underlying estimators.  
+predict_proba(X) Probability estimates.  
+score(X, y[, sample_weight]) Return the mean accuracy on the given test data and labels.  
+set_params(**params) Set the parameters of this estimator.    
+decision_function(X) [source]
+ 
+Returns the distance of each sample from the decision boundary for each class. This can only be used with estimators which implement the decision_function method.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Tarray-like of shape (n_samples, n_classes) or (n_samples,) for binary classification. 
+
+ Changed in version 0.19: output shape changed to (n_samples,) to conform to scikit-learn conventions for binary classification.      
+  
+fit(X, y) [source]
+ 
+Fit underlying estimators.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.  
+y(sparse) array-like of shape (n_samples,) or (n_samples, n_classes) 
+
+Multi-class targets. An indicator matrix turns on multilabel classification.    Returns 
+ self
+   
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+property multilabel_  
+Whether this is a multilabel classifier 
+  
+partial_fit(X, y, classes=None) [source]
+ 
+Partially fit underlying estimators Should be used when memory is inefficient to train all data. Chunks of data can be passed in several iteration.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.  
+y(sparse) array-like of shape (n_samples,) or (n_samples, n_classes) 
+
+Multi-class targets. An indicator matrix turns on multilabel classification.  
+classesarray, shape (n_classes, ) 
+
+Classes across all calls to partial_fit. Can be obtained via np.unique(y_all), where y_all is the target vector of the entire dataset. This argument is only required in the first call of partial_fit and can be omitted in the subsequent calls.    Returns 
+ self
+   
+  
+predict(X) [source]
+ 
+Predict multi-class targets using underlying estimators.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.    Returns 
+ 
+y(sparse) array-like of shape (n_samples,) or (n_samples, n_classes) 
+
+Predicted multi-class targets.     
+  
+predict_proba(X) [source]
+ 
+Probability estimates. The returned estimates for all classes are ordered by label of classes. Note that in the multilabel case, each sample can have any number of labels. This returns the marginal probability that the given sample has the label in question. For example, it is entirely consistent that two labels both have a 90% probability of applying to a given sample. In the single label multiclass case, the rows of the returned matrix sum to 1.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+T(sparse) array-like of shape (n_samples, n_classes) 
+
+Returns the probability of the sample for each class in the model, where classes are ordered as they are in self.classes_.     
+  
+score(X, y, sample_weight=None) [source]
+ 
+Return the mean accuracy on the given test data and labels. In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True labels for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+Mean accuracy of self.predict(X) wrt. y.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.

@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.audio
+
+Module: tf.compat.v1.audio Public API for tf.audio namespace. Functions decode_wav(...): Decode a 16-bit PCM WAV file to a float tensor. encode_wav(...): Encode audio data using the WAV file format.

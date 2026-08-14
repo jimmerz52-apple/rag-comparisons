@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.retr
+
+POP3.retr(which)  
+Retrieve whole message number which, and set its seen flag. Result is in form (response, ['line', ...], octets).

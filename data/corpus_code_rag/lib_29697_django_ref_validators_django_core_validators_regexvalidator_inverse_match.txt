@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.RegexValidator.inverse_match
+
+inverse_match  
+The match mode for regex. Defaults to False.

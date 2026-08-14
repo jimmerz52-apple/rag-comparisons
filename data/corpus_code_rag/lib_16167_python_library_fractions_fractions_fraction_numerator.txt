@@ -1,0 +1,4 @@
+# python.library.fractions#fractions.Fraction.numerator
+
+numerator  
+Numerator of the Fraction in lowest term.

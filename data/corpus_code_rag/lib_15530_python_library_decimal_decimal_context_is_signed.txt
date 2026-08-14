@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_signed
+
+is_signed(x)  
+Returns True if x is negative; otherwise returns False.

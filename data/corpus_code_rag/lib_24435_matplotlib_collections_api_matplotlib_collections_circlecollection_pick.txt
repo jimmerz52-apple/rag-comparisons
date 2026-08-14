@@ -1,0 +1,6 @@
+# matplotlib.collections_api#matplotlib.collections.CircleCollection.pick
+
+pick(mouseevent)[source]
+ 
+Process a pick event. Each child artist will fire a pick event if mouseevent is over the artist and the artist has picker set.  See also  
+set_picker, get_picker, pickable

@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.set_useLocale
+
+set_useLocale(val)[source]
+ 
+Set whether to use locale settings for decimal sign and positive sign.  Parameters 
+ 
+valbool or None
+
+
+None resets to rcParams["axes.formatter.use_locale"] (default: False).

@@ -1,0 +1,19 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.each_context
+
+AdminSite.each_context(request)  
+Returns a dictionary of variables to put in the template context for every page in the admin site. Includes the following variables and values by default:  
+site_header: AdminSite.site_header  
+site_title: AdminSite.site_title  
+site_url: AdminSite.site_url  
+has_permission: AdminSite.has_permission()  
+available_apps: a list of applications from the application registry available for the current user. Each entry in the list is a dict representing an application with the following keys:  
+app_label: the application label 
+app_url: the URL of the application index in the admin 
+has_module_perms: a boolean indicating if displaying and accessing of the module’s index page is permitted for the current user 
+models: a list of the models available in the application  Each model is a dict with the following keys:  
+model: the model class 
+object_name: class name of the model 
+name: plural name of the model 
+perms: a dict tracking add, change, delete, and view permissions 
+admin_url: admin changelist URL for the model 
+add_url: admin URL to add a new model instance     Changed in Django 4.0: The model variable for each model was added.

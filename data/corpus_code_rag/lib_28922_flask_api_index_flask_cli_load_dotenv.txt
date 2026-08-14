@@ -1,0 +1,6 @@
+# flask.api.index#flask.cli.load_dotenv
+
+flask.cli.load_dotenv(path=None)  
+Load “dotenv” files in order of precedence to set environment variables. If an env var is already set it is not overwritten, so earlier files in the list are preferred over later files. This is a no-op if python-dotenv is not installed.  Parameters 
+path – Load the file at this location instead of searching.  Returns 
+True if a file was loaded.    Changed in version 2.0: When loading the env files, set the default encoding to UTF-8.   Changelog Changed in version 1.1.0: Returns False when python-dotenv is not installed, or when the given path isn’t a file.   New in version 1.0.

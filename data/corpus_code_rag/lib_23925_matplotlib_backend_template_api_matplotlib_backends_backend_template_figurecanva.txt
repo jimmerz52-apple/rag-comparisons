@@ -1,0 +1,20 @@
+# matplotlib.backend_template_api#matplotlib.backends.backend_template.FigureCanvasTemplate
+
+classmatplotlib.backends.backend_template.FigureCanvasTemplate(figure=None)[source]
+ 
+Bases: matplotlib.backend_bases.FigureCanvasBase The canvas the figure renders into. Calls the draw and print fig methods, creates the renderers, etc. Note: GUI templates will want to connect events for button presses, mouse movements and key presses to functions that call the base class methods button_press_event, button_release_event, motion_notify_event, key_press_event, and key_release_event. See the implementations of the interactive backends for examples.  Attributes 
+ 
+figurematplotlib.figure.Figure
+
+
+A high-level Figure instance       draw()[source]
+ 
+Draw the figure using the renderer. It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk. 
+   filetypes={'eps': 'Encapsulated Postscript', 'foo': 'My magic Foo format', 'jpeg': 'Joint Photographic Experts Group', 'jpg': 'Joint Photographic Experts Group', 'pdf': 'Portable Document Format', 'pgf': 'PGF code for LaTeX', 'png': 'Portable Network Graphics', 'ps': 'Postscript', 'raw': 'Raw RGBA bitmap', 'rgba': 'Raw RGBA bitmap', 'svg': 'Scalable Vector Graphics', 'svgz': 'Scalable Vector Graphics', 'tif': 'Tagged Image File Format', 'tiff': 'Tagged Image File Format'}
+
+   get_default_filetype()[source]
+ 
+Return the default savefig file format as specified in rcParams["savefig.format"] (default: 'png'). The returned string does not include a period. This method is overridden in backends that only support a single file type. 
+   print_foo(filename, *args, **kwargs)[source]
+ 
+Write out format foo. This method is normally called via Figure.savefig and FigureCanvasBase.print_figure, which take care of setting the figure facecolor, edgecolor, and dpi to the desired output values, and will restore them to the original values. Therefore, print_foo does not need to handle these settings.

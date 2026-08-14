@@ -1,0 +1,14 @@
+# flask.api.index#flask.ctx.AppContext
+
+class flask.ctx.AppContext(app)  
+The application context binds an application object implicitly to the current thread or greenlet, similar to how the RequestContext binds request information. The application context is also implicitly created if a request context is created but the application is not on top of the individual application context.  Parameters 
+app (Flask) –   Return type 
+None    
+pop(exc=<object object>)  
+Pops the app context.  Parameters 
+exc (Optional[BaseException]) –   Return type 
+None   
+  
+push()  
+Binds the app context to the current context.  Return type 
+None

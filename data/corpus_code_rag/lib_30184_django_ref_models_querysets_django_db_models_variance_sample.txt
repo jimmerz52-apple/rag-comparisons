@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.Variance.sample
+
+sample  
+By default, Variance returns the population variance. However, if sample=True, the return value will be the sample variance.

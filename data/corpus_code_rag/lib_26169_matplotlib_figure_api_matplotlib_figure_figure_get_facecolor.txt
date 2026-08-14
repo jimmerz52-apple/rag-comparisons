@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_facecolor
+
+get_facecolor()[source]
+ 
+Get the face color of the Figure rectangle.

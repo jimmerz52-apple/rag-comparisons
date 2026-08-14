@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.cfloat
+
+numpy.cfloat[source]
+ 
+alias of numpy.cdouble

@@ -1,0 +1,5 @@
+# numpy.user.basics.rec#numpy.lib.recfunctions.rec_drop_fields
+
+numpy.lib.recfunctions.rec_drop_fields(base, drop_names)[source]
+ 
+Returns a new numpy.recarray with fields in drop_names dropped.

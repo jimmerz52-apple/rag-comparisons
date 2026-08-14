@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.truncatedsvd#sklearn.decomposition.TruncatedSVD.transform
+
+transform(X) [source]
+ 
+Perform dimensionality reduction on X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+New data.    Returns 
+ 
+X_newndarray of shape (n_samples, n_components) 
+
+Reduced version of X. This will always be a dense array.

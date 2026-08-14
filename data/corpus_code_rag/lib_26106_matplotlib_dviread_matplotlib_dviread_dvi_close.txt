@@ -1,0 +1,5 @@
+# matplotlib.dviread#matplotlib.dviread.Dvi.close
+
+close()[source]
+ 
+Close the underlying file if it is open.

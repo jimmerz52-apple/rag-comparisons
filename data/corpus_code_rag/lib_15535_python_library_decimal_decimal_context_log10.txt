@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.log10
+
+log10(x)  
+Returns the base 10 logarithm of x.

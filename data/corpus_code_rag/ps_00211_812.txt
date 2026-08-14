@@ -1,0 +1,7 @@
+# 812
+Task: 812
+
+# Write a function to abbreviate 'road' as 'rd.' in a given string.
+import re
+def road_rd(street):
+  return (re.sub('Road$', 'Rd.', street))

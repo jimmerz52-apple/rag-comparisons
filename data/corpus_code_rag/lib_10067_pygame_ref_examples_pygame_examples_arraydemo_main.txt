@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.arraydemo.main
+
+arraydemo.main() 
+ show various surfarray effects arraydemo.main(arraytype=None) -> None  Another example filled with various surfarray effects. It requires the surfarray and image modules to be installed. This little demo can also make a good starting point for any of your own tests with surfarray The arraytype parameter is deprecated; passing any value besides 'numpy' will raise ValueError.

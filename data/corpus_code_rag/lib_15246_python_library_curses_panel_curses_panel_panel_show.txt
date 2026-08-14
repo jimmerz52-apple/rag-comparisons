@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.show
+
+Panel.show()  
+Display the panel (which might have been hidden).

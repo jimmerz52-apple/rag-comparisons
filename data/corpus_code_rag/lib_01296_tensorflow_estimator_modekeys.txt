@@ -1,0 +1,14 @@
+# tensorflow.estimator.modekeys
+
+tf.estimator.ModeKeys     View source on GitHub    Standard names for Estimator model modes.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.estimator.ModeKeys  The following standard keys are defined:  
+TRAIN: training/fitting mode. 
+EVAL: testing/evaluation mode. 
+PREDICT: predication/inference mode. 
+ 
+
+
+ Class Variables
+  EVAL   'eval'  
+  PREDICT   'infer'  
+  TRAIN   'train'

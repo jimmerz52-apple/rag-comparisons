@@ -1,0 +1,3 @@
+# werkzeug.middleware.index
+
+Middleware A WSGI middleware is a WSGI application that wraps another application in order to observe or change its behavior. Werkzeug provides some middleware for common use cases.  X-Forwarded-For Proxy Fix Serve Shared Static Files Application Dispatcher Basic HTTP Proxy WSGI Protocol Linter Application Profiler  The interactive debugger is also a middleware that can be applied manually, although it is typically used automatically with the development server.

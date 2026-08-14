@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.hideturtle
+
+turtle.hideturtle()  
+turtle.ht()  
+Make the turtle invisible. It’s a good idea to do this while you’re in the middle of doing some complex drawing, because hiding the turtle speeds up the drawing observably. >>> turtle.hideturtle()

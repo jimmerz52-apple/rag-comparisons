@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.beta.Beta.arg_constraints
+
+arg_constraints = {'concentration0': GreaterThan(lower_bound=0.0), 'concentration1': GreaterThan(lower_bound=0.0)}

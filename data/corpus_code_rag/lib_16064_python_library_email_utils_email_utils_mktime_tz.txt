@@ -1,0 +1,4 @@
+# python.library.email.utils#email.utils.mktime_tz
+
+email.utils.mktime_tz(tuple)  
+Turn a 10-tuple as returned by parsedate_tz() into a UTC timestamp (seconds since the Epoch). If the timezone item in the tuple is None, assume local time.

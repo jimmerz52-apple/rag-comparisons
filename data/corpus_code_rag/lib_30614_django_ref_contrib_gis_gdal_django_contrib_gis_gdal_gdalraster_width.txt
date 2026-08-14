@@ -1,0 +1,5 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.width
+
+width  
+The width of the source in pixels (X-axis). >>> GDALRaster({'width': 10, 'height': 20, 'srid': 4326}).width
+10

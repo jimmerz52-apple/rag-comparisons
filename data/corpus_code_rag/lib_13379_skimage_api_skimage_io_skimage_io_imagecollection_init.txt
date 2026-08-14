@@ -1,0 +1,5 @@
+# skimage.api.skimage.io#skimage.io.ImageCollection.__init__
+
+__init__(load_pattern, conserve_memory=True, load_func=None, **load_func_kwargs) [source]
+ 
+Load and manage a collection of images.

@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.dircmp.same_files
+
+same_files  
+Files which are identical in both a and b, using the class’s file comparison operator.

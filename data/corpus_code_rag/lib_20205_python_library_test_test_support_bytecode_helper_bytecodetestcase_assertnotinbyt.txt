@@ -1,0 +1,4 @@
+# python.library.test#test.support.bytecode_helper.BytecodeTestCase.assertNotInBytecode
+
+BytecodeTestCase.assertNotInBytecode(x, opname, argval=_UNSPECIFIED)  
+Throws AssertionError if opname is found.

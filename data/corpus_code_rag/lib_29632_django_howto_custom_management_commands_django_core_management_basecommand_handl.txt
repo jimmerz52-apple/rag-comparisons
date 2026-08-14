@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.handle
+
+BaseCommand.handle(*args, **options)  
+The actual logic of the command. Subclasses must implement this method. It may return a string which will be printed to stdout (wrapped by BEGIN; and COMMIT; if output_transaction is True).

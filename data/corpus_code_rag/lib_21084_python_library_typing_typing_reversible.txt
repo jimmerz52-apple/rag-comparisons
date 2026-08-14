@@ -1,0 +1,4 @@
+# python.library.typing#typing.Reversible
+
+class typing.Reversible(Iterable[T_co])  
+A generic version of collections.abc.Reversible.  Deprecated since version 3.9: collections.abc.Reversible now supports []. See PEP 585 and Generic Alias Type.

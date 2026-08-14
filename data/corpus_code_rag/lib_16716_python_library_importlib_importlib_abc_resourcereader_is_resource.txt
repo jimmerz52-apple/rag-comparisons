@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.ResourceReader.is_resource
+
+abstractmethod is_resource(name)  
+Returns True if the named name is considered a resource. FileNotFoundError is raised if name does not exist.

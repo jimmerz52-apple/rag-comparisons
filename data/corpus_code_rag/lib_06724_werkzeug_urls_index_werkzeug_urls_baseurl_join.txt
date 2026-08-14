@@ -1,0 +1,8 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.join
+
+join(*args, **kwargs)  
+Joins this URL with another one. This is just a convenience function for calling into url_join() and then parsing the return value again.  Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+werkzeug.urls.BaseURL

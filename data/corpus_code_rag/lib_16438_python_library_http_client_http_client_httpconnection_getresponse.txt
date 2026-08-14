@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPConnection.getresponse
+
+HTTPConnection.getresponse()  
+Should be called after a request is sent to get the response from the server. Returns an HTTPResponse instance.  Note Note that you must have read the whole response before you can send a new request to the server.   Changed in version 3.5: If a ConnectionError or subclass is raised, the HTTPConnection object will be ready to reconnect when a new request is sent.

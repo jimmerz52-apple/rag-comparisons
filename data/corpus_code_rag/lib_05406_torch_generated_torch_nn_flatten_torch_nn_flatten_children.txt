@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.flatten#torch.nn.Flatten.children
+
+children()  
+Returns an iterator over immediate children modules.  Yields 
+Module – a child module

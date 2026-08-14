@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.OffsetFrom.set_unit
+
+set_unit(unit)[source]
+ 
+Set the unit for input to the transform used by __call__.  Parameters 
+ 
+unit{'points', 'pixels'}

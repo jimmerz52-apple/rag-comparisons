@@ -1,0 +1,9 @@
+# skimage.api.skimage.feature#skimage.feature.CENSURE.detect
+
+detect(image) [source]
+ 
+Detect CENSURE keypoints along with the corresponding scale.  Parameters 
+ 
+image2D ndarray 
+
+Input image.

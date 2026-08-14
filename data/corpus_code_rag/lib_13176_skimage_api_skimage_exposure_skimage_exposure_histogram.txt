@@ -1,0 +1,33 @@
+# skimage.api.skimage.exposure#skimage.exposure.histogram
+
+skimage.exposure.histogram(image, nbins=256, source_range='image', normalize=False) [source]
+ 
+Return histogram of image. Unlike numpy.histogram, this function returns the centers of bins and does not rebin integer arrays. For integer arrays, each integer value has its own bin, which improves speed and intensity-resolution. The histogram is computed on the flattened image: for color images, the function should be used separately on each channel to obtain a histogram for each color channel.  Parameters 
+ 
+imagearray 
+
+Input image.  
+nbinsint, optional 
+
+Number of bins used to calculate histogram. This value is ignored for integer arrays.  
+source_rangestring, optional 
+
+‘image’ (default) determines the range from the input image. ‘dtype’ determines the range from the expected range of the images of that data type.  
+normalizebool, optional 
+
+If True, normalize the histogram by the sum of its values.    Returns 
+ 
+histarray 
+
+The values of the histogram.  
+bin_centersarray 
+
+The values at the center of the bins.      See also  
+cumulative_distribution
+
+  Examples >>> from skimage import data, exposure, img_as_float
+>>> image = img_as_float(data.camera())
+>>> np.histogram(image, bins=2)
+(array([ 93585, 168559]), array([0. , 0.5, 1. ]))
+>>> exposure.histogram(image, nbins=2)
+(array([ 93585, 168559]), array([0.25, 0.75]))

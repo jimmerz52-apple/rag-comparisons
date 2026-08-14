@@ -1,0 +1,7 @@
+# 878
+Task: 878
+
+# Write a function to check if the given tuple contains only k elements.
+def check_tuples(test_tuple, K):
+  res = all(ele in K for ele in test_tuple)
+  return (res)

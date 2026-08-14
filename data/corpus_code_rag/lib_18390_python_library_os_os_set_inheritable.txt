@@ -1,0 +1,4 @@
+# python.library.os#os.set_inheritable
+
+os.set_inheritable(fd, inheritable)  
+Set the “inheritable” flag of the specified file descriptor.

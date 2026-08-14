@@ -1,0 +1,3 @@
+# django.topics.i18n.translation#django.views.i18n.set_language
+
+set_language(request)

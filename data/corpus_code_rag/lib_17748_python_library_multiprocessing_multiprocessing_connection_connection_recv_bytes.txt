@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.connection.Connection.recv_bytes
+
+recv_bytes([maxlength])  
+Return a complete message of byte data sent from the other end of the connection as a string. Blocks until there is something to receive. Raises EOFError if there is nothing left to receive and the other end has closed. If maxlength is specified and the message is longer than maxlength then OSError is raised and the connection will no longer be readable.  Changed in version 3.3: This function used to raise IOError, which is now an alias of OSError.

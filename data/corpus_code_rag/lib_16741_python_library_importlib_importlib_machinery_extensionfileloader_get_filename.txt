@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.get_filename
+
+get_filename(fullname)  
+Returns path.  New in version 3.4.

@@ -1,0 +1,4 @@
+# python.library.fractions#fractions.Fraction.__ceil__
+
+__ceil__()  
+Returns the least int >= self. This method can also be accessed through the math.ceil() function.

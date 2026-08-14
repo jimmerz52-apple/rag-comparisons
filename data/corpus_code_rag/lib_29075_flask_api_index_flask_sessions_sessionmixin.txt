@@ -1,0 +1,12 @@
+# flask.api.index#flask.sessions.SessionMixin
+
+class flask.sessions.SessionMixin  
+Expands a basic dictionary with session attributes.  
+accessed = True  
+Some implementations can detect when session data is read or written and set this when that happens. The mixin default is hard coded to True. 
+  
+modified = True  
+Some implementations can detect changes to the session and set this when that happens. The mixin default is hard coded to True. 
+  
+property permanent: bool  
+This reflects the '_permanent' key in the dict.

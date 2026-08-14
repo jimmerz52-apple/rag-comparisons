@@ -1,0 +1,40 @@
+# skimage.api.skimage.transform#skimage.transform.hough_circle_peaks
+
+skimage.transform.hough_circle_peaks(hspaces, radii, min_xdistance=1, min_ydistance=1, threshold=None, num_peaks=inf, total_num_peaks=inf, normalize=False) [source]
+ 
+Return peaks in a circle Hough transform. Identifies most prominent circles separated by certain distances in given Hough spaces. Non-maximum suppression with different sizes is applied separately in the first and second dimension of the Hough space to identify peaks. For circles with different radius but close in distance, only the one with highest peak is kept.  Parameters 
+ 
+hspaces(N, M) array 
+
+Hough spaces returned by the hough_circle function.  
+radii(M,) array 
+
+Radii corresponding to Hough spaces.  
+min_xdistanceint, optional 
+
+Minimum distance separating centers in the x dimension.  
+min_ydistanceint, optional 
+
+Minimum distance separating centers in the y dimension.  
+thresholdfloat, optional 
+
+Minimum intensity of peaks in each Hough space. Default is 0.5 * max(hspace).  
+num_peaksint, optional 
+
+Maximum number of peaks in each Hough space. When the number of peaks exceeds num_peaks, only num_peaks coordinates based on peak intensity are considered for the corresponding radius.  
+total_num_peaksint, optional 
+
+Maximum number of peaks. When the number of peaks exceeds num_peaks, return num_peaks coordinates based on peak intensity.  
+normalizebool, optional 
+
+If True, normalize the accumulator by the radius to sort the prominent peaks.    Returns 
+ 
+accum, cx, cy, radtuple of array 
+
+Peak values in Hough space, x and y center coordinates and radii.     Notes Circles with bigger radius have higher peaks in Hough space. If larger circles are preferred over smaller ones, normalize should be False. Otherwise, circles will be returned in the order of decreasing voting number. Examples >>> from skimage import transform, draw
+>>> img = np.zeros((120, 100), dtype=int)
+>>> radius, x_0, y_0 = (20, 99, 50)
+>>> y, x = draw.circle_perimeter(y_0, x_0, radius)
+>>> img[x, y] = 1
+>>> hspaces = transform.hough_circle(img, radius)
+>>> accum, cx, cy, rad = hough_circle_peaks(hspaces, [radius,])

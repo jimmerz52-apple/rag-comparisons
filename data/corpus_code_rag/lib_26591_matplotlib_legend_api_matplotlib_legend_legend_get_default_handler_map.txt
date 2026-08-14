@@ -1,0 +1,5 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.get_default_handler_map
+
+classmethodget_default_handler_map()[source]
+ 
+A class method that returns the default handler map.

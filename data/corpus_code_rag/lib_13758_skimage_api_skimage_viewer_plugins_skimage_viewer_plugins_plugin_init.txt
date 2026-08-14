@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.__init__
+
+__init__(image_filter=None, height=0, width=400, useblit=True, dock='bottom') [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

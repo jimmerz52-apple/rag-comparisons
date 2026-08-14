@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.NavigationToolbar2.draw_rubberband
+
+draw_rubberband(event, x0, y0, x1, y1)[source]
+ 
+Draw a rectangle rubberband to indicate zoom limits. Note that it is not guaranteed that x0 <= x1 and y0 <= y1.

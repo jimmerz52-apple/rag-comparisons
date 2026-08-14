@@ -1,0 +1,5 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.on_exhausted
+
+on_exhausted()  
+This is called when the stream tries to read past the limit. The return value of this function is returned from the reading function.  Return type 
+bytes

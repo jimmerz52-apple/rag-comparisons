@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv6Interface.with_hostmask
+
+with_hostmask  
+Refer to the corresponding attribute documentation in IPv4Interface.

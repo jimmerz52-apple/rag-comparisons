@@ -1,0 +1,8 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.get_json
+
+get_json(force=False, silent=False)  
+Parse data as JSON. Useful during testing. If the mimetype does not indicate JSON (application/json, see is_json()), this returns None. Unlike Request.get_json(), the result is not cached.  Parameters 
+ 
+force (bool) – Ignore the mimetype and always try to parse JSON. 
+silent (bool) – Silence parsing errors and return None instead.   Return type 
+Optional[Any]

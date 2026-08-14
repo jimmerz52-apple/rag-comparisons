@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.sub
+
+Pattern.sub(repl, string, count=0)  
+Identical to the sub() function, using the compiled pattern.

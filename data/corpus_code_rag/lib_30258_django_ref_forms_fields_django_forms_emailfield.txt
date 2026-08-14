@@ -1,0 +1,6 @@
+# django.ref.forms.fields#django.forms.EmailField
+
+class EmailField(**kwargs)  
+ Default widget: EmailInput
+ Empty value: Whatever you’ve given as empty_value. Normalizes to: A string. Uses EmailValidator to validate that the given value is a valid email address, using a moderately complex regular expression. Error message keys: required, invalid
+  Has three optional arguments max_length, min_length, and empty_value which work just as they do for CharField.

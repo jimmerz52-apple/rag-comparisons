@@ -1,0 +1,6 @@
+# python.library.statistics#statistics.fmean
+
+statistics.fmean(data)  
+Convert data to floats and compute the arithmetic mean. This runs faster than the mean() function and it always returns a float. The data may be a sequence or iterable. If the input dataset is empty, raises a StatisticsError. >>> fmean([3.5, 4.0, 5.25])
+4.25
+  New in version 3.8.

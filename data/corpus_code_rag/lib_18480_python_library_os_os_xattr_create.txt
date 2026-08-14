@@ -1,0 +1,4 @@
+# python.library.os#os.XATTR_CREATE
+
+os.XATTR_CREATE  
+This is a possible value for the flags argument in setxattr(). It indicates the operation must create an attribute.

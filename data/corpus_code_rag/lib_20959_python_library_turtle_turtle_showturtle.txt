@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.showturtle
+
+turtle.showturtle()  
+turtle.st()  
+Make the turtle visible. >>> turtle.showturtle()

@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPErrorProcessor.http_response
+
+HTTPErrorProcessor.http_response(request, response)  
+Process HTTP error responses. For 200 error codes, the response object is returned immediately. For non-200 error codes, this simply passes the job on to the http_error_<type>() handler methods, via OpenerDirector.error(). Eventually, HTTPDefaultErrorHandler will raise an HTTPError if no other handler handles the error.

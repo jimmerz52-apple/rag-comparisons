@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.defaultTestLoader
+
+unittest.defaultTestLoader  
+Instance of the TestLoader class intended to be shared. If no customization of the TestLoader is needed, this instance can be used instead of repeatedly creating new instances.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.is_signed
+
+is_signed() → bool  
+Returns True if the data type of self is a signed data type.

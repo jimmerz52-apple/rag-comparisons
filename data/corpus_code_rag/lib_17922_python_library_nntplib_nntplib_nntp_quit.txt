@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.quit
+
+NNTP.quit()  
+Send a QUIT command and close the connection. Once this method has been called, no other methods of the NNTP object should be called.

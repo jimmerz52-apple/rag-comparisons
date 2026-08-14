@@ -1,0 +1,11 @@
+# numpy.reference.generated.numpy.broadcast.iters
+
+numpy.broadcast.iters attribute   broadcast.iters
+ 
+tuple of iterators along self’s “components.” Returns a tuple of numpy.flatiter objects, one for each “component” of self.  See also  numpy.flatiter
+  Examples >>> x = np.array([1, 2, 3])
+>>> y = np.array([[4], [5], [6]])
+>>> b = np.broadcast(x, y)
+>>> row, col = b.iters
+>>> next(row), next(col)
+(1, 4)

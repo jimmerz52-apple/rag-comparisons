@@ -1,0 +1,6 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Driver
+
+class Driver(dr_input)  
+The Driver class is used internally to wrap an OGR DataSource driver.  
+driver_count 
+ Returns the number of OGR vector drivers currently registered.

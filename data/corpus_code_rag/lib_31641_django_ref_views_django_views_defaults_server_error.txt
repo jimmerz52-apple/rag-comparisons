@@ -1,0 +1,3 @@
+# django.ref.views#django.views.defaults.server_error
+
+defaults.server_error(request, template_name='500.html')

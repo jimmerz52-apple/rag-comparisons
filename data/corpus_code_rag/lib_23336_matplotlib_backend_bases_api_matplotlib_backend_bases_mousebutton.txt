@@ -1,0 +1,13 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.MouseButton
+
+classmatplotlib.backend_bases.MouseButton(value)[source]
+ 
+Bases: enum.IntEnum An enumeration.   BACK=8[source]
+
+   FORWARD=9[source]
+
+   LEFT=1[source]
+
+   MIDDLE=2[source]
+
+   RIGHT=3[source]

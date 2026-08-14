@@ -1,0 +1,28 @@
+# skimage.api.skimage.measure#skimage.measure.perimeter_crofton
+
+skimage.measure.perimeter_crofton(image, directions=4) [source]
+ 
+Calculate total Crofton perimeter of all objects in binary image.  Parameters 
+ 
+image(N, M) ndarray 
+
+2D image. If image is not binary, all values strictly greater than zero are considered as the object.  
+directions2 or 4, optional 
+
+Number of directions used to approximate the Crofton perimeter. By default, 4 is used: it should be more accurate than 2. Computation time is the same in both cases.    Returns 
+ 
+perimeterfloat 
+
+Total perimeter of all objects in binary image.     Notes This measure is based on Crofton formula [1], which is a measure from integral geometry. It is defined for general curve length evaluation via a double integral along all directions. In a discrete space, 2 or 4 directions give a quite good approximation, 4 being more accurate than 2 for more complex shapes. Similar to perimeter(), this function returns an approximation of the perimeter in continuous space. References  
+1  
+https://en.wikipedia.org/wiki/Crofton_formula  
+2  
+S. Rivollier. Analyse d’image geometrique et morphometrique par diagrammes de forme et voisinages adaptatifs generaux. PhD thesis, 2010. Ecole Nationale Superieure des Mines de Saint-Etienne. https://tel.archives-ouvertes.fr/tel-00560838   Examples >>> from skimage import data, util
+>>> from skimage.measure import label
+>>> # coins image (binary)
+>>> img_coins = data.coins() > 110
+>>> # total perimeter of all objects in the image
+>>> perimeter_crofton(img_coins, directions=2)  
+8144.578...
+>>> perimeter_crofton(img_coins, directions=4)  
+7837.077...

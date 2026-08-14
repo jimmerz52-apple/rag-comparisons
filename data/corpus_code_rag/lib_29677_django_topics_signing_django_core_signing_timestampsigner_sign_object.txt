@@ -1,0 +1,4 @@
+# django.topics.signing#django.core.signing.TimestampSigner.sign_object
+
+sign_object(obj, serializer=JSONSerializer, compress=False)  
+ New in Django 3.2.  Encode, optionally compress, append current timestamp, and sign complex data structure (e.g. list, tuple, or dictionary).

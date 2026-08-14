@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.get_nonstandard_attr
+
+Cookie.get_nonstandard_attr(name, default=None)  
+If cookie has the named cookie-attribute, return its value. Otherwise, return default.

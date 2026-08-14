@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.stop
+
+stop() 
+ stop audio playback stop() -> None  Stops playback of audio from the cdrom. This will also lose the current playback position. This method does nothing if the drive isn't already playing audio.

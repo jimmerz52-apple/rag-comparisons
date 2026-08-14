@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISWHT
+
+stat.S_ISWHT(mode)  
+Return non-zero if the mode is from a whiteout.  New in version 3.4.

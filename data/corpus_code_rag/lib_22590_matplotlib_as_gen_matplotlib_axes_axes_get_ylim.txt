@@ -1,0 +1,20 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_ylim
+
+matplotlib.axes.Axes.get_ylim   Axes.get_ylim()[source]
+ 
+Return the y-axis view limits.  Returns 
+ 
+bottom, top(float, float)
+
+
+The current y-axis limits in data coordinates.      See also  set_ylim
+
+set_ybound, get_ybound
+
+
+invert_yaxis, yaxis_inverted
+
+  Notes The y-axis may be inverted, in which case the bottom value will be greater than the top value. 
+  Examples using matplotlib.axes.Axes.get_ylim
+ 
+   Line, Poly and RegularPoly Collection with autoscaling

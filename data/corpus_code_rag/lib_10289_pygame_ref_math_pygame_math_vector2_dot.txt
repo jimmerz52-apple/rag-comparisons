@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.dot
+
+dot() 
+ calculates the dot- or scalar-product with the other vector dot(Vector2) -> float

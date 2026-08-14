@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.register_optionflag
+
+doctest.register_optionflag(name)  
+Create a new option flag with a given name, and return the new flag’s integer value. register_optionflag() can be used when subclassing OutputChecker or DocTestRunner to create new options that are supported by your subclasses. register_optionflag() should always be called using the following idiom: MY_FLAG = register_optionflag('MY_FLAG')

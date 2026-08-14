@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.IdentityTransform.__str__
+
+__str__()[source]
+ 
+Return str(self).

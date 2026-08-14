@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.RemoteUserBackend.clean_username
+
+clean_username(username)  
+Performs any cleaning on the username (e.g. stripping LDAP DN information) prior to using it to get or create a user object. Returns the cleaned username.

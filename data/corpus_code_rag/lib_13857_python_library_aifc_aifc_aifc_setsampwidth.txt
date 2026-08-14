@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setsampwidth
+
+aifc.setsampwidth(width)  
+Specify the size in bytes of audio samples.

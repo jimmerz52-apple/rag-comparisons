@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.error
+
+exception IMAP4.error  
+Exception raised on any errors. The reason for the exception is passed to the constructor as a string.

@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.get_fontsize
+
+get_fontsize()[source]
+ 
+Return the cell fontsize.

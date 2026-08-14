@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.records
+
+records  
+A list of logging.LogRecord objects of the matching log messages.

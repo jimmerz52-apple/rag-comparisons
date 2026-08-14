@@ -1,0 +1,4 @@
+# python.library.contextvars#contextvars.Context.values
+
+values()  
+Return a list of all variables’ values in the context object.

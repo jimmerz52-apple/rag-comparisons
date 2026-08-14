@@ -1,0 +1,9 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontstretch
+
+set_fontstretch(stretch)[source]
+ 
+Set the font stretch (horizontal condensation or expansion).  Parameters 
+ 
+stretch{a numeric value in range 0-1000, 'ultra-condensed', 'extra-condensed', 'condensed', 'semi-condensed', 'normal', 'semi-expanded', 'expanded', 'extra-expanded', 'ultra-expanded'}
+
+    See also  font_manager.FontProperties.set_stretch

@@ -1,0 +1,135 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict
+
+class werkzeug.datastructures.MultiDict(mapping=None)  
+A MultiDict is a dictionary subclass customized to deal with multiple values for the same key which is for example used by the parsing functions in the wrappers. This is necessary because some HTML form elements pass multiple values for the same key. MultiDict implements all standard dictionary methods. Internally, it saves all values for a key as a list, but the standard dict access methods will only return the first value for a key. If you want to gain access to the other values, too, you have to use the list methods as explained below. Basic Usage: >>> d = MultiDict([('a', 'b'), ('a', 'c')])
+>>> d
+MultiDict([('a', 'b'), ('a', 'c')])
+>>> d['a']
+'b'
+>>> d.getlist('a')
+['b', 'c']
+>>> 'a' in d
+True
+ It behaves like a normal dict thus all dict functions will only return the first value when multiple values for one key are found. From Werkzeug 0.3 onwards, the KeyError raised by this class is also a subclass of the BadRequest HTTP exception and will render a page for a 400 BAD REQUEST if caught in a catch-all for HTTP exceptions. A MultiDict can be constructed from an iterable of (key, value) tuples, a dict, a MultiDict or from Werkzeug 0.2 onwards some keyword parameters.  Parameters 
+mapping – the initial value for the MultiDict. Either a regular dict, an iterable of (key, value) tuples or None.    
+add(key, value)  
+Adds a new value for the key.  Changelog New in version 0.6.   Parameters 
+ 
+key – the key for the value. 
+value – the value to add.    
+  
+clear() → None. Remove all items from D. 
+  
+copy()  
+Return a shallow copy of this object. 
+  
+deepcopy(memo=None)  
+Return a deep copy of this object. 
+  
+fromkeys(value=None, /)  
+Create a new dictionary with keys from iterable and values set to value. 
+  
+get(key, default=None, type=None)  
+Return the default value if the requested data doesn’t exist. If type is provided and is a callable it should convert the value, return it or raise a ValueError if that is not possible. In this case the function will return the default as if the value was not found: >>> d = TypeConversionDict(foo='42', bar='blub')
+>>> d.get('foo', type=int)
+42
+>>> d.get('bar', -1, type=int)
+-1
+  Parameters 
+ 
+key – The key to be looked up. 
+default – The default value to be returned if the key can’t be looked up. If not further specified None is returned. 
+type – A callable that is used to cast the value in the MultiDict. If a ValueError is raised by this callable the default value is returned.    
+  
+getlist(key, type=None)  
+Return the list of items for a given key. If that key is not in the MultiDict, the return value will be an empty list. Just like get, getlist accepts a type parameter. All items will be converted with the callable defined there.  Parameters 
+ 
+key – The key to be looked up. 
+type – A callable that is used to cast the value in the MultiDict. If a ValueError is raised by this callable the value will be removed from the list.   Returns 
+a list of all the values for the key.   
+  
+items(multi=False)  
+Return an iterator of (key, value) pairs.  Parameters 
+multi – If set to True the iterator returned will have a pair for each value of each key. Otherwise it will only contain pairs for the first value of each key.   
+  
+keys() → a set-like object providing a view on D’s keys 
+  
+lists()  
+Return a iterator of (key, values) pairs, where values is the list of all values associated with the key. 
+  
+listvalues()  
+Return an iterator of all values associated with a key. Zipping keys() and this is the same as calling lists(): >>> d = MultiDict({"foo": [1, 2, 3]})
+>>> zip(d.keys(), d.listvalues()) == d.lists()
+True
+ 
+  
+pop(key, default=no value)  
+Pop the first item for a list on the dict. Afterwards the key is removed from the dict, so additional values are discarded: >>> d = MultiDict({"foo": [1, 2, 3]})
+>>> d.pop("foo")
+1
+>>> "foo" in d
+False
+  Parameters 
+ 
+key – the key to pop. 
+default – if provided the value to return if the key was not in the dictionary.    
+  
+popitem()  
+Pop an item from the dict. 
+  
+popitemlist()  
+Pop a (key, list) tuple from the dict. 
+  
+poplist(key)  
+Pop the list for a key from the dict. If the key is not in the dict an empty list is returned.  Changelog Changed in version 0.5: If the key does no longer exist a list is returned instead of raising an error.  
+
+  
+setdefault(key, default=None)  
+Returns the value for the key if it is in the dict, otherwise it returns default and sets that value for key.  Parameters 
+ 
+key – The key to be looked up. 
+default – The default value to be returned if the key is not in the dict. If not further specified it’s None.    
+  
+setlist(key, new_list)  
+Remove the old values for a key and add new ones. Note that the list you pass the values in will be shallow-copied before it is inserted in the dictionary. >>> d = MultiDict()
+>>> d.setlist('foo', ['1', '2'])
+>>> d['foo']
+'1'
+>>> d.getlist('foo')
+['1', '2']
+  Parameters 
+ 
+key – The key for which the values are set. 
+new_list – An iterable with the new values for the key. Old values are removed first.    
+  
+setlistdefault(key, default_list=None)  
+Like setdefault but sets multiple values. The list returned is not a copy, but the list that is actually used internally. This means that you can put new values into the dict by appending items to the list: >>> d = MultiDict({"foo": 1})
+>>> d.setlistdefault("foo").extend([2, 3])
+>>> d.getlist("foo")
+[1, 2, 3]
+  Parameters 
+ 
+key – The key to be looked up. 
+default_list – An iterable of default values. It is either copied (in case it was a list) or converted into a list before returned.   Returns 
+a list   
+  
+to_dict(flat=True)  
+Return the contents as regular dict. If flat is True the returned dict will only have the first item present, if flat is False all values will be returned as lists.  Parameters 
+flat – If set to False the dict returned will have lists with all the values in it. Otherwise it will only contain the first value for each key.  Returns 
+a dict   
+  
+update(mapping)  
+update() extends rather than replaces existing key lists: >>> a = MultiDict({'x': 1})
+>>> b = MultiDict({'x': 2, 'y': 3})
+>>> a.update(b)
+>>> a
+MultiDict([('y', 3), ('x', 1), ('x', 2)])
+ If the value list for a key in other_dict is empty, no new values will be added to the dict and the key will not be created: >>> x = {'empty_list': []}
+>>> y = MultiDict()
+>>> y.update(x)
+>>> y
+MultiDict([])
+ 
+  
+values()  
+Returns an iterator of the first value on every key’s value list.

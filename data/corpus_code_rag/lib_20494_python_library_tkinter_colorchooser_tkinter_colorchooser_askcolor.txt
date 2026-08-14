@@ -1,0 +1,4 @@
+# python.library.tkinter.colorchooser#tkinter.colorchooser.askcolor
+
+tkinter.colorchooser.askcolor(color=None, **options)  
+Create a color choosing dialog. A call to this method will show the window, wait for the user to make a selection, and return the selected color (or None) to the caller.

@@ -1,0 +1,8 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.LatexManager
+
+classmatplotlib.backends.backend_pgf.LatexManager[source]
+ 
+Bases: object The LatexManager opens an instance of the LaTeX application for determining the metrics of text elements. The LaTeX environment can be modified by setting fonts and/or a custom preamble in rcParams.   get_width_height_descent(text, prop)[source]
+ 
+Get the width, total height, and descent (in TeX points) for a text typeset by the current LaTeX environment. 
+   propertystr_cache[source]

@@ -1,0 +1,14 @@
+# matplotlib.cbook_api#matplotlib.cbook.index_of
+
+matplotlib.cbook.index_of(y)[source]
+ 
+A helper function to create reasonable x values for the given y. This is used for plotting (x, y) if x values are not explicitly given. First try y.index (assuming y is a pandas.Series), if that fails, use range(len(y)). This will be extended in the future to deal with more types of labeled data.  Parameters 
+ 
+yfloat or array-like
+
+  Returns 
+ 
+x, yndarray
+
+
+The x and y values to plot.

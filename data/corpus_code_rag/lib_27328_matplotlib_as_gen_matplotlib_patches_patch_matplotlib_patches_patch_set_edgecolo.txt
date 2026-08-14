@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_edgecolor
+
+set_edgecolor(color)[source]
+ 
+Set the patch edge color.  Parameters 
+ 
+colorcolor or None

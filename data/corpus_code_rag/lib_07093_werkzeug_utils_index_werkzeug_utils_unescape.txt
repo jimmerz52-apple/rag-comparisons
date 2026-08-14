@@ -1,0 +1,6 @@
+# werkzeug.utils.index#werkzeug.utils.unescape
+
+werkzeug.utils.unescape(s)  
+The reverse of escape(). This unescapes all the HTML entities, not only those inserted by escape.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use MarkupSafe instead.   Parameters 
+s (str) –   Return type 
+str

@@ -1,0 +1,15 @@
+# python.library.turtle#turtle.colormode
+
+turtle.colormode(cmode=None)  
+ Parameters 
+cmode – one of the values 1.0 or 255   Return the colormode or set it to 1.0 or 255. Subsequently r, g, b values of color triples have to be in the range 0..cmode. >>> screen.colormode(1)
+>>> turtle.pencolor(240, 160, 80)
+Traceback (most recent call last):
+     ...
+TurtleGraphicsError: bad color sequence: (240, 160, 80)
+>>> screen.colormode()
+1.0
+>>> screen.colormode(255)
+>>> screen.colormode()
+255
+>>> turtle.pencolor(240,160,80)

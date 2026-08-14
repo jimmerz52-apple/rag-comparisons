@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.symeig
+
+symeig(eigenvectors=False, upper=True) -> (Tensor, Tensor)  
+See torch.symeig()

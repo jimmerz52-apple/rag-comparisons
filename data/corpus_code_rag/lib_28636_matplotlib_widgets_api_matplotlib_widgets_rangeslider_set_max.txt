@@ -1,0 +1,7 @@
+# matplotlib.widgets_api#matplotlib.widgets.RangeSlider.set_max
+
+set_max(max)[source]
+ 
+Set the lower value of the slider to max.  Parameters 
+ 
+maxfloat

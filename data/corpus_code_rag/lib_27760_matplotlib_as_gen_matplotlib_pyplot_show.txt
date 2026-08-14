@@ -1,0 +1,1069 @@
+# matplotlib._as_gen.matplotlib.pyplot.show
+
+matplotlib.pyplot.show   matplotlib.pyplot.show(*, block=None)[source]
+ 
+Display all open figures.  Parameters 
+ 
+blockbool, optional
+
+
+Whether to wait for all figures to be closed before returning. If True block and run the GUI main loop until all figure windows are closed. If False ensure that all figure windows are displayed and return immediately. In this case, you are responsible for ensuring that the event loop is running to have responsive figures. Defaults to True in non-interactive mode and to False in interactive mode (see pyplot.isinteractive).      See also  ion
+
+Enable interactive mode, which shows / updates the figure after every plotting command, so that calling show() is not necessary.  ioff
+
+Disable interactive mode.  savefig
+
+Save the figure to an image file instead of showing it on screen.    Notes Saving figures to file and showing a window at the same time If you want an image file as well as a user interface window, use pyplot.savefig before pyplot.show. At the end of (a blocking) show() the figure is closed and thus unregistered from pyplot. Calling pyplot.savefig afterwards would save a new and thus empty figure. This limitation of command order does not apply if the show is non-blocking or if you keep a reference to the figure and use Figure.savefig. Auto-show in jupyter notebooks The jupyter backends (activated via %matplotlib inline, %matplotlib notebook, or %matplotlib widget), call show() at the end of every cell by default. Thus, you usually don't have to call it explicitly there. 
+  Examples using matplotlib.pyplot.show
+ 
+   Bar Label Demo   
+
+   Stacked bar chart   
+
+   Grouped bar chart with labels   
+
+   Horizontal bar chart   
+
+   Broken Barh   
+
+   CapStyle   
+
+   Plotting categorical variables   
+
+   Plotting the coherence of two signals   
+
+   CSD Demo   
+
+   Curve with error band   
+
+   Errorbar limit selection   
+
+   Errorbar subsampling   
+
+   EventCollection Demo   
+
+   Eventplot Demo   
+
+   Filled polygon   
+
+   Fill Between and Alpha   
+
+   Fill Betweenx Demo   
+
+   Hatch-filled histograms   
+
+   Bar chart with gradients   
+
+   Hat graph   
+
+   Discrete distribution as horizontal bar chart   
+
+   JoinStyle   
+
+   Customizing dashed line styles   
+
+   Lines with a ticked patheffect   
+
+   Linestyles   
+
+   Marker reference   
+
+   Markevery Demo   
+
+   prop_cycle property markevery in rcParams   
+
+   Plotting masked and NaN values   
+
+   Multicolored lines   
+
+   Psd Demo   
+
+   Scatter Custom Symbol   
+
+   Scatter Demo2   
+
+   Scatter plot with histograms   
+
+   Scatter Masked   
+
+   Scatter plot with pie chart markers   
+
+   Marker examples   
+
+   Scatter Symbol   
+
+   Scatter plots with a legend   
+
+   Simple Plot   
+
+   Using span_where   
+
+   Spectrum Representations   
+
+   Stackplots and streamgraphs   
+
+   Stairs Demo   
+
+   Stem Plot   
+
+   Step Demo   
+
+   Creating a timeline with lines, dates, and text   
+
+   hlines and vlines   
+
+   Cross- and Auto-Correlation Demo   
+
+   Affine transform of an image   
+
+   Wind Barbs   
+
+   Barcode   
+
+   Contour Corner Mask   
+
+   Contour Demo   
+
+   Contour Image   
+
+   Contour Label Demo   
+
+   Contourf Demo   
+
+   Contourf Hatching   
+
+   Contourf and log color scale   
+
+   Contouring the solution space of optimizations   
+
+   BboxImage Demo   
+
+   Figimage Demo   
+
+   Creating annotated heatmaps   
+
+   Image antialiasing   
+
+   Clipping images with patches   
+
+   Image Demo   
+
+   Image Masked   
+
+   Image Nonuniform   
+
+   Blend transparency with color in 2D images   
+
+   Modifying the coordinate formatter   
+
+   Interpolations for imshow   
+
+   Contour plot of irregularly spaced data   
+
+   Layer Images   
+
+   Matshow   
+
+   Multi Image   
+
+   Pcolor Demo   
+
+   pcolormesh grids and shading   
+
+   pcolormesh   
+
+   Streamplot   
+
+   QuadMesh Demo   
+
+   Advanced quiver and quiverkey functions   
+
+   Quiver Simple Demo   
+
+   Shading example   
+
+   Spectrogram Demo   
+
+   Spy Demos   
+
+   Tricontour Demo   
+
+   Tricontour Smooth Delaunay   
+
+   Tricontour Smooth User   
+
+   Trigradient Demo   
+
+   Triinterp Demo   
+
+   Tripcolor Demo   
+
+   Triplot Demo   
+
+   Watermark image   
+
+   Aligning Labels   
+
+   Axes box aspect   
+
+   Axes Demo   
+
+   Controlling view limits using margins and sticky_edges   
+
+   Axes Props   
+
+   Axes Zoom Effect   
+
+   axhspan Demo   
+
+   Equal axis aspect ratio   
+
+   Axis Label Position   
+
+   Broken Axis   
+
+   Placing Colorbars   
+
+   Resizing axes with constrained layout   
+
+   Resizing axes with tight layout   
+
+   Different scales on the same axes   
+
+   Figure size in different units   
+
+   Figure labels: suptitle, supxlabel, supylabel   
+
+   Creating adjacent subplots   
+
+   Geographic Projections   
+
+   Combining two subplots using subplots and GridSpec   
+
+   Using Gridspec to make multi-column/row subplot layouts   
+
+   Nested Gridspecs   
+
+   Invert Axes   
+
+   Managing multiple figures in pyplot   
+
+   Secondary Axis   
+
+   Sharing axis limits and views   
+
+   Shared Axis   
+
+   Figure subfigures   
+
+   Multiple subplots   
+
+   Subplots spacings and margins   
+
+   Creating multiple subplots using plt.subplots   
+
+   Plots with different scales   
+
+   Zoom region inset axes   
+
+   Percentiles as horizontal bar chart   
+
+   Artist customization in box plots   
+
+   Box plots with custom fill colors   
+
+   Boxplots   
+
+   Box plot vs. violin plot comparison   
+
+   Boxplot drawer function   
+
+   Plot a confidence ellipse of a two-dimensional dataset   
+
+   Violin plot customization   
+
+   Errorbar function   
+
+   Different ways of specifying error bars   
+
+   Including upper and lower limits in error bars   
+
+   Creating boxes from error bars using PatchCollection   
+
+   Hexagonal binned plot   
+
+   Histograms   
+
+   Using histograms to plot a cumulative distribution   
+
+   Some features of the histogram (hist) function   
+
+   Demo of the histogram function's different histtype settings   
+
+   The histogram (hist) function with multiple data sets   
+
+   Producing multiple histograms side by side   
+
+   Time Series Histogram   
+
+   Violin plot basics   
+
+   Basic pie chart   
+
+   Pie Demo2   
+
+   Bar of pie   
+
+   Nested pie charts   
+
+   Labeling a pie and a donut   
+
+   Bar chart on polar axis   
+
+   Polar plot   
+
+   Polar Legend   
+
+   Scatter plot on polar axis   
+
+   Using accented text in matplotlib   
+
+   Scale invariant angle label   
+
+   Annotating Plots   
+
+   Arrow Demo   
+
+   Auto-wrapping text   
+
+   Composing Custom Legends   
+
+   Date tick labels   
+
+   Custom tick formatter for time series   
+
+   AnnotationBbox demo   
+
+   Using a text as a Path   
+
+   Text Rotation Mode   
+
+   The difference between \dfrac and \frac   
+
+   Labeling ticks using engineering notation   
+
+   Annotation arrow style reference   
+
+   Styling text boxes   
+
+   Figure legend demo   
+
+   Configuring the font family   
+
+   Using a ttf font file in Matplotlib   
+
+   Font table   
+
+   Fonts demo (object-oriented style)   
+
+   Fonts demo (keyword arguments)   
+
+   Labelling subplots   
+
+   Legend using pre-defined labels   
+
+   Legend Demo   
+
+   Artist within an artist   
+
+   Convert texts to images   
+
+   Mathtext   
+
+   Mathtext Examples   
+
+   Math fontfamily   
+
+   Multiline   
+
+   Placing text boxes   
+
+   Rainbow text   
+
+   STIX Fonts   
+
+   Rendering math equations using TeX   
+
+   Precise text layout   
+
+   Controlling style of text and labels using a dictionary   
+
+   Default text rotation demonstration   
+
+   Text Rotation Relative To Line   
+
+   Title positioning   
+
+   Unicode minus   
+
+   Usetex Baseline Test   
+
+   Usetex Fonteffects   
+
+   Text watermark   
+
+   Align y-labels   
+
+   Annotate Transform   
+
+   Annotating a plot   
+
+   Annotation Polar   
+
+   Programmatically controlling subplot adjustment   
+
+   Infinite lines   
+
+   Boxplot Demo   
+
+   Dollar Ticks   
+
+   Fig Axes Customize Simple   
+
+   Simple axes labels   
+
+   Adding lines to figures   
+
+   plot() format string   
+
+   Pyplot Mathtext   
+
+   Pyplot Simple   
+
+   Pyplot Text   
+
+   Pyplot Three   
+
+   Pyplot Two Subplots   
+
+   Text Commands   
+
+   Text Layout   
+
+   Color Demo   
+
+   Color by y-value   
+
+   Colors in the default property cycle   
+
+   Colorbar   
+
+   Colormap reference   
+
+   Creating a colormap from a list of colors   
+
+   List of named colors   
+
+   Arrow guide   
+
+   Reference for Matplotlib artists   
+
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Compound path   
+
+   Dolphins   
+
+   Mmh Donuts!!!   
+
+   Ellipse Collection   
+
+   Ellipse Demo   
+
+   Drawing fancy boxes   
+
+   Hatch demo   
+
+   Line Collection   
+
+   Circles, Wedges and Polygons   
+
+   PathPatch object   
+
+   Bezier Curve   
+
+   Scatter plot   
+
+   Bayesian Methods for Hackers style sheet   
+
+   Dark background style sheet   
+
+   FiveThirtyEight style sheet   
+
+   ggplot style sheet   
+
+   Grayscale style sheet   
+
+   Solarized Light stylesheet   
+
+   Style sheets reference   
+
+   Anchored Direction Arrow   
+
+   Axes Divider   
+
+   Demo Axes Grid   
+
+   Axes Grid2   
+
+   HBoxDivider demo   
+
+   Showing RGB channels using RGBAxes   
+
+   Adding a colorbar to inset axes   
+
+   Colorbar with AxesDivider   
+
+   Controlling the position and size of colorbars with Inset Axes   
+
+   Per-row or per-column colorbars   
+
+   Axes with a fixed physical size   
+
+   Setting a fixed aspect on ImageGrid cells   
+
+   Inset Locator Demo   
+
+   Inset Locator Demo2   
+
+   Make Room For Ylabel Using Axesgrid   
+
+   Parasite Simple   
+
+   Parasite Simple2   
+
+   Scatter Histogram (Locatable Axes)   
+
+   Simple Anchored Artists   
+
+   Simple Axes Divider 1   
+
+   Simple Axes Divider 3   
+
+   Simple ImageGrid   
+
+   Simple ImageGrid 2   
+
+   Simple Axisline4   
+
+   Simple Colorbar   
+
+   Axis Direction   
+
+   axis_direction demo   
+
+   Axis line styles   
+
+   Curvilinear grid demo   
+
+   Demo CurveLinear Grid2   
+
+   mpl_toolkits.axisartist.floating_axes features   
+
+   floating_axis demo   
+
+   Parasite Axes demo   
+
+   Parasite axis demo   
+
+   Ticklabel alignment   
+
+   Ticklabel direction   
+
+   Simple Axis Direction01   
+
+   Simple Axis Direction03   
+
+   Simple Axis Pad   
+
+   Custom spines with axisartist   
+
+   Simple Axisline   
+
+   Simple Axisline3   
+
+   Anatomy of a figure   
+
+   Bachelor's degrees by gender   
+
+   Firefox   
+
+   Integral as the area under a curve   
+
+   Shaded & power normalized rendering   
+
+   XKCD   
+
+   Decay   
+
+   Animated histogram   
+
+   The Bayes update   
+
+   The double pendulum problem   
+
+   Animated image using a precomputed list of images   
+
+   Pausing and Resuming an Animation   
+
+   Rain simulation   
+
+   Animated 3D random walk   
+
+   Animated line plot   
+
+   Oscilloscope   
+
+   MATPLOTLIB UNCHAINED   
+
+   Close Event   
+
+   Mouse move and click events   
+
+   Data Browser   
+
+   Figure/Axes enter and leave events   
+
+   Interactive functions   
+
+   Image Slices Viewer   
+
+   Keypress event   
+
+   Lasso Demo   
+
+   Legend Picking   
+
+   Looking Glass   
+
+   Path Editor   
+
+   Pick Event Demo   
+
+   Pick Event Demo2   
+
+   Poly Editor   
+
+   Pong   
+
+   Resampling Data   
+
+   Timers   
+
+   Trifinder Event Demo   
+
+   Viewlims   
+
+   Zoom Window   
+
+   Frontpage contour example   
+
+   Anchored Artists   
+
+   Changing colors of lines intersecting a box   
+
+   Manual Contour   
+
+   Coords Report   
+
+   Cross hair cursor   
+
+   Custom projection   
+
+   Customize Rc   
+
+   AGG filter   
+
+   Ribbon Box   
+
+   Fill Spiral   
+
+   Findobj Demo   
+
+   Building histograms using Rectangles and PolyCollections   
+
+   Plotting with keywords   
+
+   Matplotlib logo   
+
+   Multiprocess   
+
+   Packed-bubble chart   
+
+   Patheffect Demo   
+
+   Pythonic Matplotlib   
+
+   Set and get properties   
+
+   Table Demo   
+
+   TickedStroke patheffect   
+
+   transforms.offset_copy   
+
+   Zorder Demo   
+
+   Plot 2D data on 3D plot   
+
+   Demo of 3D bar charts   
+
+   Create 2D bar graphs in different planes   
+
+   3D box surface plot   
+
+   Demonstrates plotting contour (level) curves in 3D   
+
+   Demonstrates plotting contour (level) curves in 3D using the extend3d option   
+
+   Projecting contour profiles onto a graph   
+
+   Filled contours   
+
+   Projecting filled contour onto a graph   
+
+   Custom hillshading in a 3D surface plot   
+
+   3D errorbars   
+
+   Create 3D histogram of 2D data   
+
+   Parametric Curve   
+
+   Lorenz Attractor   
+
+   2D and 3D Axes in same Figure   
+
+   Automatic Text Offsetting   
+
+   Draw flat objects in 3D plot   
+
+   Generate polygons to fill under 3D line graph   
+
+   3D quiver plot   
+
+   3D scatterplot   
+
+   3D stem   
+
+   3D plots as subplots   
+
+   3D surface (colormap)   
+
+   3D surface (solid color)   
+
+   3D surface (checkerboard)   
+
+   3D surface with polar coordinates   
+
+   Text annotations in 3D   
+
+   Triangular 3D contour plot   
+
+   Triangular 3D filled contour plot   
+
+   Triangular 3D surfaces   
+
+   More triangular 3D surfaces   
+
+   3D voxel / volumetric plot   
+
+   3D voxel plot of the numpy logo   
+
+   3D voxel / volumetric plot with rgb colors   
+
+   3D voxel / volumetric plot with cylindrical coordinates   
+
+   3D wireframe plot   
+
+   3D wireframe plots in one direction   
+
+   Loglog Aspect   
+
+   Custom scale   
+
+   Log Bar   
+
+   Log Demo   
+
+   Log Axis   
+
+   Logit Demo   
+
+   Exploring normalizations   
+
+   Scales   
+
+   Symlog Demo   
+
+   Hillshading   
+
+   Anscombe's quartet   
+
+   Hinton diagrams   
+
+   Left ventricle bullseye   
+
+   MRI   
+
+   MRI With EEG   
+
+   Radar chart (aka spider or star chart)   
+
+   The Sankey class   
+
+   Long chain of connections using Sankey   
+
+   Rankine power cycle   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Topographic hillshading   
+
+   Centered spines with arrows   
+
+   Multiple Yaxis With Spines   
+
+   Spine Placement   
+
+   Spines   
+
+   Custom spine bounds   
+
+   Dropped spines   
+
+   Automatically setting tick positions   
+
+   Centering labels between ticks   
+
+   Colorbar Tick Labelling   
+
+   Custom Ticker1   
+
+   Formatting date ticks using ConciseDateFormatter   
+
+   Date Demo Convert   
+
+   Placing date ticks using recurrence rules   
+
+   Date Index Formatter   
+
+   Date Precision and Epochs   
+
+   Major and minor ticks   
+
+   The default tick formatter   
+
+   Tick formatters   
+
+   Tick locators   
+
+   Set default y-axis tick labels on the right   
+
+   Setting tick labels from a list of values   
+
+   Set default x-axis tick labels on the top   
+
+   Rotating custom tick labels   
+
+   Annotation with units   
+
+   Artist tests   
+
+   Bar demo with units   
+
+   Group barchart with units   
+
+   Ellipse With Units   
+
+   Evans test   
+
+   Radian ticks   
+
+   Inches and Centimeters   
+
+   Unit handling   
+
+   pyplot with GTK3   
+
+   pyplot with GTK4   
+
+   Tool Manager   
+
+   Anchored Box04   
+
+   Annotate Explain   
+
+   Annotate Simple01   
+
+   Annotate Simple02   
+
+   Annotate Simple03   
+
+   Annotate Simple04   
+
+   Annotate Simple Coord01   
+
+   Annotate Simple Coord02   
+
+   Annotate Simple Coord03   
+
+   Annotate Text Arrow   
+
+   Interactive Adjustment of Colormap Range   
+
+   Colormap Normalizations   
+
+   Colormap Normalizations Symlognorm   
+
+   Connect Simple01   
+
+   Connection styles for annotations   
+
+   Custom box styles   
+
+   subplot2grid demo   
+
+   GridSpec demo   
+
+   Nested GridSpecs   
+
+   Simple Annotate01   
+
+   Simple Legend01   
+
+   Simple Legend02   
+
+   Annotated Cursor   
+
+   Buttons   
+
+   Check Buttons   
+
+   Cursor   
+
+   Lasso Selector   
+
+   Menu   
+
+   Mouse Cursor   
+
+   Multicursor   
+
+   Polygon Selector   
+
+   Radio Buttons   
+
+   Thresholding an Image with RangeSlider   
+
+   Rectangle and ellipse selectors   
+
+   Slider   
+
+   Snapping Sliders to Discrete Values   
+
+   Span Selector   
+
+   Textbox   
+
+   Pyplot tutorial   
+
+   The Lifecycle of a Plot   
+
+   Customizing Matplotlib with style sheets and rcParams   
+
+   Artist tutorial   
+
+   Legend guide   
+
+   Styling with cycler   
+
+   Constrained Layout Guide   
+
+   Tight Layout guide   
+
+   Arranging multiple Axes in a Figure   
+
+   origin and extent in imshow   
+
+   Faster rendering by using blitting   
+
+   Path Tutorial   
+
+   Path effects guide   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Customized Colorbars Tutorial   
+
+   Creating Colormaps in Matplotlib   
+
+   Colormap Normalization   
+
+   Choosing Colormaps in Matplotlib   
+
+   Text in Matplotlib Plots   
+
+   Text properties and layout   
+
+   plot(x, y)   
+
+   scatter(x, y)   
+
+   bar(x, height) / barh(y, width)   
+
+   stem(x, y)   
+
+   step(x, y)   
+
+   fill_between(x, y1, y2)   
+
+   imshow(Z)   
+
+   pcolormesh(X, Y, Z)   
+
+   contour(X, Y, Z)   
+
+   contourf(X, Y, Z)   
+
+   barbs(X, Y, U, V)   
+
+   quiver(X, Y, U, V)   
+
+   streamplot(X, Y, U, V)   
+
+   hist(x)   
+
+   boxplot(X)   
+
+   errorbar(x, y, yerr, xerr)   
+
+   violinplot(D)   
+
+   eventplot(D)   
+
+   hist2d(x, y)   
+
+   hexbin(x, y, C)   
+
+   pie(x)   
+
+   tricontour(x, y, z)   
+
+   tricontourf(x, y, z)   
+
+   tripcolor(x, y, z)   
+
+   triplot(x, y)

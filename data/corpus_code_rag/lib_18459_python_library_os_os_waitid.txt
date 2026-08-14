@@ -1,0 +1,4 @@
+# python.library.os#os.waitid
+
+os.waitid(idtype, id, options)  
+Wait for the completion of one or more child processes. idtype can be P_PID, P_PGID, P_ALL, or P_PIDFD on Linux. id specifies the pid to wait on. options is constructed from the ORing of one or more of WEXITED, WSTOPPED or WCONTINUED and additionally may be ORed with WNOHANG or WNOWAIT. The return value is an object representing the data contained in the siginfo_t structure, namely: si_pid, si_uid, si_signo, si_status, si_code or None if WNOHANG is specified and there are no children in a waitable state. Availability: Unix.  New in version 3.3.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriterregistry#matplotlib.animation.MovieWriterRegistry.list
+
+list()[source]
+ 
+Get a list of available MovieWriters.

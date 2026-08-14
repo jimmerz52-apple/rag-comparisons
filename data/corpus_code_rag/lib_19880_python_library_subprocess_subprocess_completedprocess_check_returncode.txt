@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.CompletedProcess.check_returncode
+
+check_returncode()  
+If returncode is non-zero, raise a CalledProcessError.

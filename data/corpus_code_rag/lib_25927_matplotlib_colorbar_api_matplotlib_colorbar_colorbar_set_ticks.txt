@@ -1,0 +1,20 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.set_ticks
+
+set_ticks(ticks, update_ticks=<deprecated parameter>, labels=None, *, minor=False, **kwargs)[source]
+ 
+Set tick locations.  Parameters 
+ 
+tickslist of floats
+
+
+List of tick locations.  
+labelslist of str, optional
+
+
+List of tick labels. If not set, the labels show the data value.  
+minorbool, default: False
+
+
+If False, set the major ticks; if True, the minor ticks.  **kwargs
+
+Text properties for the labels. These take effect only if you pass labels. In other cases, please use tick_params.

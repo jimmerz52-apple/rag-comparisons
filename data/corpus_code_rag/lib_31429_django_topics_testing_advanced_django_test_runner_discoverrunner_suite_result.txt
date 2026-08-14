@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.suite_result
+
+DiscoverRunner.suite_result(suite, result, **kwargs)  
+Computes and returns a return code based on a test suite, and the result from that test suite.

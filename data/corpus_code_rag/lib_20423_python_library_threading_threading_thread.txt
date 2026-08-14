@@ -1,0 +1,35 @@
+# python.library.threading#threading.Thread
+
+class threading.Thread(group=None, target=None, name=None, args=(), kwargs={}, *, daemon=None)  
+This constructor should always be called with keyword arguments. Arguments are: group should be None; reserved for future extension when a ThreadGroup class is implemented. target is the callable object to be invoked by the run() method. Defaults to None, meaning nothing is called. name is the thread name. By default, a unique name is constructed of the form “Thread-N” where N is a small decimal number. args is the argument tuple for the target invocation. Defaults to (). kwargs is a dictionary of keyword arguments for the target invocation. Defaults to {}. If not None, daemon explicitly sets whether the thread is daemonic. If None (the default), the daemonic property is inherited from the current thread. If the subclass overrides the constructor, it must make sure to invoke the base class constructor (Thread.__init__()) before doing anything else to the thread.  Changed in version 3.3: Added the daemon argument.   
+start()  
+Start the thread’s activity. It must be called at most once per thread object. It arranges for the object’s run() method to be invoked in a separate thread of control. This method will raise a RuntimeError if called more than once on the same thread object. 
+  
+run()  
+Method representing the thread’s activity. You may override this method in a subclass. The standard run() method invokes the callable object passed to the object’s constructor as the target argument, if any, with positional and keyword arguments taken from the args and kwargs arguments, respectively. 
+  
+join(timeout=None)  
+Wait until the thread terminates. This blocks the calling thread until the thread whose join() method is called terminates – either normally or through an unhandled exception – or until the optional timeout occurs. When the timeout argument is present and not None, it should be a floating point number specifying a timeout for the operation in seconds (or fractions thereof). As join() always returns None, you must call is_alive() after join() to decide whether a timeout happened – if the thread is still alive, the join() call timed out. When the timeout argument is not present or None, the operation will block until the thread terminates. A thread can be join()ed many times. join() raises a RuntimeError if an attempt is made to join the current thread as that would cause a deadlock. It is also an error to join() a thread before it has been started and attempts to do so raise the same exception. 
+  
+name  
+A string used for identification purposes only. It has no semantics. Multiple threads may be given the same name. The initial name is set by the constructor. 
+  
+getName()  
+setName()  
+Old getter/setter API for name; use it directly as a property instead. 
+  
+ident  
+The ‘thread identifier’ of this thread or None if the thread has not been started. This is a nonzero integer. See the get_ident() function. Thread identifiers may be recycled when a thread exits and another thread is created. The identifier is available even after the thread has exited. 
+  
+native_id  
+The native integral thread ID of this thread. This is a non-negative integer, or None if the thread has not been started. See the get_native_id() function. This represents the Thread ID (TID) as assigned to the thread by the OS (kernel). Its value may be used to uniquely identify this particular thread system-wide (until the thread terminates, after which the value may be recycled by the OS).  Note Similar to Process IDs, Thread IDs are only valid (guaranteed unique system-wide) from the time the thread is created until the thread has been terminated.  Availability: Requires get_native_id() function.  New in version 3.8.  
+  
+is_alive()  
+Return whether the thread is alive. This method returns True just before the run() method starts until just after the run() method terminates. The module function enumerate() returns a list of all alive threads. 
+  
+daemon  
+A boolean value indicating whether this thread is a daemon thread (True) or not (False). This must be set before start() is called, otherwise RuntimeError is raised. Its initial value is inherited from the creating thread; the main thread is not a daemon thread and therefore all threads created in the main thread default to daemon = False. The entire Python program exits when no alive non-daemon threads are left. 
+  
+isDaemon()  
+setDaemon()  
+Old getter/setter API for daemon; use it directly as a property instead.

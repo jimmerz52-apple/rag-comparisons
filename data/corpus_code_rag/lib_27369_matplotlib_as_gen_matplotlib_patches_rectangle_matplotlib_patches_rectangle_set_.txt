@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.set_xy
+
+set_xy(xy)[source]
+ 
+Set the left and bottom coordinates of the rectangle.  Parameters 
+ 
+xy(float, float)

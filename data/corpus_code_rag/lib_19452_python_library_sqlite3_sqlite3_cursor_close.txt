@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Cursor.close
+
+close()  
+Close the cursor now (rather than whenever __del__ is called). The cursor will be unusable from this point forward; a ProgrammingError exception will be raised if any operation is attempted with the cursor.

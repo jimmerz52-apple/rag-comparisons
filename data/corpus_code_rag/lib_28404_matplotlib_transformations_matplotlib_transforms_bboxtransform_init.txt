@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransform.__init__
+
+__init__(boxin, boxout, **kwargs)[source]
+ 
+Create a new BboxTransform that linearly transforms points from boxin to boxout.

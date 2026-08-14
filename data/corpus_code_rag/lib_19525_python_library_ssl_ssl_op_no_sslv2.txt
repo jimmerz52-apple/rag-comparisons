@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_NO_SSLv2
+
+ssl.OP_NO_SSLv2  
+Prevents an SSLv2 connection. This option is only applicable in conjunction with PROTOCOL_TLS. It prevents the peers from choosing SSLv2 as the protocol version.  New in version 3.2.   Deprecated since version 3.6: SSLv2 is deprecated

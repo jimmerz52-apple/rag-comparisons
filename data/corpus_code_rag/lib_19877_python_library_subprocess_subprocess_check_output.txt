@@ -1,0 +1,10 @@
+# python.library.subprocess#subprocess.check_output
+
+subprocess.check_output(args, *, stdin=None, stderr=None, shell=False, cwd=None, encoding=None, errors=None, universal_newlines=None, timeout=None, text=None, **other_popen_kwargs)  
+Run command with arguments and return its output. If the return code was non-zero it raises a CalledProcessError. The CalledProcessError object will have the return code in the returncode attribute and any output in the output attribute. This is equivalent to: run(..., check=True, stdout=PIPE).stdout
+ The arguments shown above are merely some common ones. The full function signature is largely the same as that of run() - most arguments are passed directly through to that interface. One API deviation from run() behavior exists: passing input=None will behave the same as input=b'' (or input='', depending on other arguments) rather than using the parent’s standard input file handle. By default, this function will return the data as encoded bytes. The actual encoding of the output data may depend on the command being invoked, so the decoding to text will often need to be handled at the application level. This behaviour may be overridden by setting text, encoding, errors, or universal_newlines to True as described in Frequently Used Arguments and run(). To also capture standard error in the result, use stderr=subprocess.STDOUT: >>> subprocess.check_output(
+...     "ls non_existent_file; exit 0",
+...     stderr=subprocess.STDOUT,
+...     shell=True)
+'ls: non_existent_file: No such file or directory\n'
+  New in version 3.1.   Changed in version 3.3: timeout was added.   Changed in version 3.4: Support for the input keyword argument was added.   Changed in version 3.6: encoding and errors were added. See run() for details.   New in version 3.7: text was added as a more readable alias for universal_newlines.

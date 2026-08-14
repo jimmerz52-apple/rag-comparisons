@@ -1,0 +1,4 @@
+# python.library.pprint#pprint.isrecursive
+
+pprint.isrecursive(object)  
+Determine if object requires a recursive representation.

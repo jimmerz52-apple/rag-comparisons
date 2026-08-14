@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPNotSupportedError
+
+exception smtplib.SMTPNotSupportedError  
+The command or option attempted is not supported by the server.  New in version 3.5.

@@ -18,8 +18,15 @@ from rag_benchmark.memory_structures import ParentChildRAG, PropositionRAG, Rapt
 from rag_benchmark.modern_rag import AdaptiveRAGRouter, HybridDenseSparseRAG, RerankSemanticRAG
 from rag_benchmark.llm_factory import TrackedLLMClient, clone_client_for_ledger, create_tracked_client
 from rag_benchmark.metrics import AccuracyEvaluator, AccuracyResult, load_eval_questions
+from rag_benchmark.retrieval import retrieval_scores
 from rag_benchmark.semantic_rag import SemanticRAG
 from rag_benchmark.token_tracker import TokenLedger
+
+
+def _col_sum(frame: pd.DataFrame, name: str) -> int:
+    if name not in frame.columns:
+        return 0
+    return int(pd.to_numeric(frame[name], errors="coerce").fillna(0).sum())
 
 
 @dataclass
@@ -31,6 +38,7 @@ class MethodRunResult:
     elapsed_seconds: float
     index_seconds: float = 0.0
     query_latencies: list[float] = field(default_factory=list)
+    per_query_tokens: list[dict[str, int]] = field(default_factory=list)
 
 
 class BenchmarkRunner:
@@ -51,12 +59,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "semantic_rag", rag.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "semantic_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "semantic_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def _run_graph_method(
@@ -183,7 +192,7 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "hybrid_rag",
             rag.query,
             client,
@@ -194,7 +203,8 @@ class BenchmarkRunner:
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "hybrid_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "hybrid_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_lightrag(self) -> MethodRunResult:
@@ -208,7 +218,7 @@ class BenchmarkRunner:
         runner.build_index()
         index_seconds = time.perf_counter() - index_start
         try:
-            answers, accuracy, query_latencies = self._evaluate_method(
+            answers, accuracy, query_latencies, token_rows = self._evaluate_method(
                 "light_rag",
                 runner.query,
                 client,
@@ -218,7 +228,8 @@ class BenchmarkRunner:
             runner.close()
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "light_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "light_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_hybrid_dense_sparse(self) -> MethodRunResult:
@@ -230,12 +241,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "hybrid_dense_sparse", rag.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "hybrid_dense_sparse", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "hybrid_dense_sparse", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_rerank_semantic(self) -> MethodRunResult:
@@ -247,12 +259,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "rerank_semantic", rag.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "rerank_semantic", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "rerank_semantic", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_adaptive(self) -> MethodRunResult:
@@ -271,7 +284,7 @@ class BenchmarkRunner:
         router = AdaptiveRAGRouter(
             semantic=semantic, hybrid_fn=hybrid.query, config=self.config
         )
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "adaptive_rag",
             router.query,
             client,
@@ -279,7 +292,8 @@ class BenchmarkRunner:
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "adaptive_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "adaptive_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_frontier(self) -> MethodRunResult:
@@ -292,7 +306,7 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "frontier_rag",
             rag.query,
             client,
@@ -305,7 +319,8 @@ class BenchmarkRunner:
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "frontier_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "frontier_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_hipporag(self) -> MethodRunResult:
@@ -318,12 +333,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         runner.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "hippo_rag", runner.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "hippo_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "hippo_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_raptor(self) -> MethodRunResult:
@@ -335,12 +351,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "raptor_rag", rag.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "raptor_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "raptor_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_parent_child(self) -> MethodRunResult:
@@ -352,12 +369,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "parent_child_rag", rag.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "parent_child_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "parent_child_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_proposition(self) -> MethodRunResult:
@@ -369,12 +387,13 @@ class BenchmarkRunner:
         index_start = time.perf_counter()
         rag.build_index()
         index_seconds = time.perf_counter() - index_start
-        answers, accuracy, query_latencies = self._evaluate_method(
+        answers, accuracy, query_latencies, token_rows = self._evaluate_method(
             "proposition_rag", rag.query, client
         )
         elapsed = time.perf_counter() - start
         return MethodRunResult(
-            "proposition_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies
+            "proposition_rag", answers, accuracy, ledger, elapsed, index_seconds, query_latencies,
+            per_query_tokens=token_rows,
         )
 
     def run_all(self, methods: list[str] | None = None) -> list[MethodRunResult]:
@@ -418,6 +437,13 @@ class BenchmarkRunner:
             )
         return results
 
+    def _ledger_totals(client: Any) -> tuple[int, int, int]:
+        ledger = getattr(client, "ledger", None)
+        if ledger is None:
+            return (0, 0, 0)
+        t = ledger.total()
+        return (int(t.prompt_tokens), int(t.completion_tokens), int(t.total_tokens))
+
     def _evaluate_method(
         self,
         method: str,
@@ -429,17 +455,74 @@ class BenchmarkRunner:
         answers: list[dict[str, Any]] = []
         accuracy: list[AccuracyResult] = []
         query_latencies: list[float] = []
+        token_rows: list[dict[str, int]] = []
         total = len(self.questions)
         checkpoint_every = 25 if total >= 500 else max(5, min(25, total // 5 or 5))
         out_dir = self.config.results_dir()
         out_dir.mkdir(parents=True, exist_ok=True)
         ckpt_path = out_dir / f"_checkpoint_{method}_accuracy.csv"
+        done_ids: set[str] = set()
+        if ckpt_path.exists() and ckpt_path.stat().st_size > 3:
+            prev = pd.read_csv(ckpt_path)
+            for _, r in prev.iterrows():
+                qid = str(r.get("question_id"))
+                rationale = str(r.get("judge_rationale") or "")
+                if rationale.startswith("error"):
+                    continue
+                done_ids.add(qid)
+                accuracy.append(
+                    AccuracyResult(
+                        question_id=qid,
+                        method=str(r.get("method") or method),
+                        query_type=str(r.get("query_type") or "local"),
+                        llm_judge_score=float(r["llm_judge_score"])
+                        if pd.notna(r.get("llm_judge_score"))
+                        else 0.0,
+                        token_f1=float(r["token_f1"]) if pd.notna(r.get("token_f1")) else 0.0,
+                        exact_match=bool(r.get("exact_match")),
+                        contains_answer=bool(r.get("contains_answer")),
+                        retrieval_recall=float(r["retrieval_recall"])
+                        if "retrieval_recall" in r and pd.notna(r.get("retrieval_recall"))
+                        else None,
+                        retrieval_precision=float(r["retrieval_precision"])
+                        if "retrieval_precision" in r and pd.notna(r.get("retrieval_precision"))
+                        else None,
+                        gold_in_context=bool(r.get("gold_in_context"))
+                        if "gold_in_context" in r and pd.notna(r.get("gold_in_context"))
+                        else None,
+                        evidence_override=bool(r.get("evidence_override"))
+                        if "evidence_override" in r and pd.notna(r.get("evidence_override"))
+                        else None,
+                    )
+                )
+                query_latencies.append(float(r.get("query_latency_seconds") or 0.0))
+                token_rows.append(
+                    {
+                        "query_prompt_tokens": int(r.get("query_prompt_tokens") or 0),
+                        "query_completion_tokens": int(r.get("query_completion_tokens") or 0),
+                        "eval_prompt_tokens": int(r.get("eval_prompt_tokens") or 0),
+                        "eval_completion_tokens": int(r.get("eval_completion_tokens") or 0),
+                        "prompt_tokens": int(r.get("prompt_tokens") or 0),
+                        "completion_tokens": int(r.get("completion_tokens") or 0),
+                        "total_tokens": int(r.get("total_tokens") or 0),
+                    }
+                )
+                answers.append({"question_id": qid, "resumed": True})
+            if done_ids:
+                print(
+                    f"  [{method}] resume: {len(done_ids)}/{total} already scored — skipping",
+                    flush=True,
+                )
 
         for i, question in enumerate(self.questions, start=1):
+            if str(question.id) in done_ids:
+                continue
+            snap0 = self._ledger_totals(client)
             try:
                 query_start = time.perf_counter()
                 result = query_fn(question.question)
                 query_latencies.append(time.perf_counter() - query_start)
+                snap_q = self._ledger_totals(client)
                 row = {
                     "question_id": question.id,
                     "question": question.question,
@@ -452,10 +535,33 @@ class BenchmarkRunner:
                 if extra_fields:
                     row.update(extra_fields(result))
                 answers.append(row)
-                accuracy.append(
-                    evaluator.evaluate(
-                        method=method, question=question, prediction=result.answer
-                    )
+                acc_item = evaluator.evaluate(
+                    method=method, question=question, prediction=result.answer
+                )
+                chunks = getattr(result, "retrieved_chunks", None) or []
+                rs = retrieval_scores(
+                    gold_titles=question.supporting_titles,
+                    chunks=list(chunks) if chunks else [],
+                    gold_answer=question.expected_answer,
+                )
+                acc_item.retrieval_recall = rs["retrieval_recall"]
+                acc_item.retrieval_precision = rs["retrieval_precision"]
+                acc_item.gold_in_context = rs["gold_in_context"]
+                acc_item.evidence_override = bool(
+                    rs["gold_in_context"] and not acc_item.contains_answer
+                )
+                accuracy.append(acc_item)
+                snap1 = self._ledger_totals(client)
+                token_rows.append(
+                    {
+                        "query_prompt_tokens": snap_q[0] - snap0[0],
+                        "query_completion_tokens": snap_q[1] - snap0[1],
+                        "eval_prompt_tokens": snap1[0] - snap_q[0],
+                        "eval_completion_tokens": snap1[1] - snap_q[1],
+                        "prompt_tokens": snap1[0] - snap0[0],
+                        "completion_tokens": snap1[1] - snap0[1],
+                        "total_tokens": snap1[2] - snap0[2],
+                    }
                 )
             except Exception as exc:  # noqa: BLE001 — keep thousand-scale runs alive
                 print(f"  [{method}] ERROR on {question.id}: {exc!r}", flush=True)
@@ -481,17 +587,30 @@ class BenchmarkRunner:
                         judge_rationale=f"error: {exc!r}",
                     )
                 )
+                token_rows.append(
+                    {
+                        "query_prompt_tokens": 0,
+                        "query_completion_tokens": 0,
+                        "eval_prompt_tokens": 0,
+                        "eval_completion_tokens": 0,
+                        "prompt_tokens": 0,
+                        "completion_tokens": 0,
+                        "total_tokens": 0,
+                    }
+                )
             if i == 1 or i % 25 == 0 or i == total:
                 mean_c = sum(a.composite_score() for a in accuracy) / len(accuracy)
+                last_tok = token_rows[-1]["total_tokens"] if token_rows else 0
                 print(
                     f"  [{method}] {i}/{total}  "
                     f"last_latency={query_latencies[-1]:.1f}s  "
+                    f"last_tokens={last_tok}  "
                     f"running_composite={mean_c:.3f}",
                     flush=True,
                 )
             if i % checkpoint_every == 0 or i == total:
                 rows = []
-                for item, lat in zip(accuracy, query_latencies):
+                for item, lat, tok in zip(accuracy, query_latencies, token_rows):
                     rows.append(
                         {
                             "method": item.method,
@@ -505,12 +624,16 @@ class BenchmarkRunner:
                             "generative_score": item.generative_score(),
                             "extractive_score": item.extractive_score(),
                             "query_latency_seconds": lat,
+                            "retrieval_recall": item.retrieval_recall,
+                            "retrieval_precision": item.retrieval_precision,
+                            "gold_in_context": item.gold_in_context,
+                            "evidence_override": item.evidence_override,
+                            **tok,
                         }
                     )
                 pd.DataFrame(rows).to_csv(ckpt_path, index=False)
-                # Publish live partial scores into accuracy_results for the dashboard
                 self._publish_live_accuracy(method=method, checkpoint=ckpt_path)
-        return answers, accuracy, query_latencies
+        return answers, accuracy, query_latencies, token_rows
 
     def _publish_live_accuracy(self, *, method: str, checkpoint: Path) -> None:
         """Merge checkpoint into accuracy_results.csv so Pages/dashboard can show thousands mid-run."""
@@ -533,6 +656,21 @@ class BenchmarkRunner:
                 if "query_latency_seconds" in g.columns
                 else pd.Series(dtype=float)
             )
+            tok_q = (
+                float(g["total_tokens"].mean())
+                if "total_tokens" in g.columns
+                else 0.0
+            )
+            prompt_q = (
+                float(g["prompt_tokens"].mean())
+                if "prompt_tokens" in g.columns
+                else 0.0
+            )
+            completion_q = (
+                float(g["completion_tokens"].mean())
+                if "completion_tokens" in g.columns
+                else 0.0
+            )
             summary_rows.append(
                 {
                     "method": m,
@@ -541,7 +679,24 @@ class BenchmarkRunner:
                     "mean_token_f1": float(g["token_f1"].mean()),
                     "exact_match_rate": float(g["exact_match"].mean()),
                     "contains_answer_rate": float(g["contains_answer"].mean()),
-                    "tokens_per_query": 0.0,
+                    "mean_retrieval_recall": float(g["retrieval_recall"].mean())
+                    if "retrieval_recall" in g.columns
+                    and g["retrieval_recall"].notna().any()
+                    else None,
+                    "gold_in_context_rate": float(g["gold_in_context"].mean())
+                    if "gold_in_context" in g.columns
+                    and g["gold_in_context"].notna().any()
+                    else None,
+                    "evidence_override_rate": float(g["evidence_override"].mean())
+                    if "evidence_override" in g.columns
+                    and g["evidence_override"].notna().any()
+                    else None,
+                    "tokens_per_query": tok_q,
+                    "prompt_tokens_per_query": prompt_q,
+                    "completion_tokens_per_query": completion_q,
+                    "total_tokens": float(g["total_tokens"].sum()) if "total_tokens" in g.columns else 0.0,
+                    "prompt_tokens": float(g["prompt_tokens"].sum()) if "prompt_tokens" in g.columns else 0.0,
+                    "completion_tokens": float(g["completion_tokens"].sum()) if "completion_tokens" in g.columns else 0.0,
                     "n_scored": int(g["question_id"].nunique()),
                     "mean_query_latency_seconds": float(lat.mean()) if len(lat) else 0.0,
                     "p50_query_latency_seconds": float(lat.quantile(0.50)) if len(lat) else 0.0,
@@ -553,6 +708,56 @@ class BenchmarkRunner:
             live_lat = merged[["method", "question_id", "query_latency_seconds"]].copy()
             live_lat["question_index"] = range(len(live_lat))
             live_lat.to_csv(self.config.results_dir() / "latency_results.csv", index=False)
+        if "total_tokens" in merged.columns:
+            tok_rows = []
+            live_methods = set()
+            for m, g in merged.groupby("method"):
+                if g["total_tokens"].fillna(0).sum() <= 0:
+                    continue
+                live_methods.add(m)
+                n = max(int(g["question_id"].nunique()), 1)
+                q_prompt = _col_sum(g, "query_prompt_tokens")
+                q_comp = _col_sum(g, "query_completion_tokens")
+                e_prompt = _col_sum(g, "eval_prompt_tokens")
+                e_comp = _col_sum(g, "eval_completion_tokens")
+                tok_rows.append(
+                    {
+                        "method": m,
+                        "phase": "query",
+                        "prompt_tokens": q_prompt,
+                        "completion_tokens": q_comp,
+                        "total_tokens": q_prompt + q_comp,
+                        "calls": n,
+                    }
+                )
+                tok_rows.append(
+                    {
+                        "method": m,
+                        "phase": "evaluation",
+                        "prompt_tokens": e_prompt,
+                        "completion_tokens": e_comp,
+                        "total_tokens": e_prompt + e_comp,
+                        "calls": n,
+                    }
+                )
+                tok_rows.append(
+                    {
+                        "method": m,
+                        "phase": "__total__",
+                        "prompt_tokens": _col_sum(g, "prompt_tokens"),
+                        "completion_tokens": _col_sum(g, "completion_tokens"),
+                        "total_tokens": _col_sum(g, "total_tokens"),
+                        "calls": n,
+                    }
+                )
+            tok_path = self.config.results_dir() / "token_results.csv"
+            new_tok = pd.DataFrame(tok_rows)
+            if tok_path.exists() and tok_path.stat().st_size > 3 and live_methods:
+                old_tok = pd.read_csv(tok_path)
+                old_tok = old_tok[~old_tok["method"].isin(live_methods)]
+                new_tok = pd.concat([old_tok, new_tok], ignore_index=True)
+            if not new_tok.empty:
+                new_tok.to_csv(tok_path, index=False)
         meta = {
             "live_partial": True,
             "updated_method": method,
@@ -593,6 +798,19 @@ class BenchmarkRunner:
                 [{"composite_score": item.composite_score()} for item in result.accuracy]
             )
             latency_series = pd.Series(result.query_latencies)
+            n_q = max(len(result.accuracy), 1)
+            ledger_total = result.ledger.total()
+            index_tokens = 0
+            index_prompt = 0
+            index_completion = 0
+            for phase, usage in result.ledger.by_phase.items():
+                if "index" in str(phase).lower():
+                    index_tokens += usage.total_tokens
+                    index_prompt += usage.prompt_tokens
+                    index_completion += usage.completion_tokens
+            serving_tokens = ledger_total.total_tokens - index_tokens
+            serving_prompt = ledger_total.prompt_tokens - index_prompt
+            serving_completion = ledger_total.completion_tokens - index_completion
             rows.append(
                 {
                     "method": result.method,
@@ -630,9 +848,10 @@ class BenchmarkRunner:
                             [{"s": 1.0 if item.contains_answer else 0.0} for item in result.accuracy]
                         )["s"].mean()
                     ),
-                    "total_tokens": result.ledger.total().total_tokens,
-                    "prompt_tokens": result.ledger.total().prompt_tokens,
-                    "completion_tokens": result.ledger.total().completion_tokens,
+                    "total_tokens": serving_tokens,
+                    "prompt_tokens": serving_prompt,
+                    "completion_tokens": serving_completion,
+                    "index_tokens": index_tokens,
                     "estimated_cost_usd": result.ledger.estimate_cost_usd(config.pricing),
                     "index_seconds": result.index_seconds,
                     "mean_query_latency_seconds": float(latency_series.mean())
@@ -642,8 +861,9 @@ class BenchmarkRunner:
                     if len(latency_series)
                     else 0.0,
                     "total_elapsed_seconds": result.elapsed_seconds,
-                    "tokens_per_query": result.ledger.total().total_tokens
-                    / max(len(result.accuracy), 1),
+                    "tokens_per_query": serving_tokens / n_q,
+                    "prompt_tokens_per_query": serving_prompt / n_q,
+                    "completion_tokens_per_query": serving_completion / n_q,
                 }
             )
         return pd.DataFrame(rows)
@@ -652,7 +872,8 @@ class BenchmarkRunner:
     def to_accuracy_frame(results: list[MethodRunResult]) -> pd.DataFrame:
         rows: list[dict[str, Any]] = []
         for result in results:
-            for item in result.accuracy:
+            token_rows = result.per_query_tokens or [{}] * len(result.accuracy)
+            for item, tok in zip(result.accuracy, token_rows):
                 rows.append(
                     {
                         "method": item.method,
@@ -665,6 +886,7 @@ class BenchmarkRunner:
                         "composite_score": item.composite_score(),
                         "generative_score": item.generative_score(),
                         "extractive_score": item.extractive_score(),
+                        **tok,
                     }
                 )
         return pd.DataFrame(rows)

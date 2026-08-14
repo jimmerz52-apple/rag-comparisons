@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_minor_locator
+
+matplotlib.axis.Axis.get_minor_locator   Axis.get_minor_locator()[source]
+ 
+Get the locator of the minor ticker.

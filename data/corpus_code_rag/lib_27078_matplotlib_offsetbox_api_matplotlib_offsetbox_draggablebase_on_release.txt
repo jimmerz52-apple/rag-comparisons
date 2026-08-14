@@ -1,0 +1,3 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DraggableBase.on_release
+
+on_release(event)[source]

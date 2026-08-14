@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.EllipseCollection.set_edgecolor
+
+set_edgecolor(c)[source]
+ 
+Set the edgecolor(s) of the collection.  Parameters 
+ 
+ccolor or list of colors or 'face'
+
+
+The collection edgecolor(s). If a sequence, the patches cycle through it. If 'face', match the facecolor.

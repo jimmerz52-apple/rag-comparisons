@@ -1,0 +1,17 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.update_from_path
+
+update_from_path(path, ignore=None, updatex=True, updatey=True)[source]
+ 
+Update the bounds of the Bbox to contain the vertices of the provided path. After updating, the bounds will have positive width and height; x0 and y0 will be the minimal values.  Parameters 
+ 
+pathPath
+
+
+ignorebool, optional
+
+
+ when True, ignore the existing bounds of the Bbox. when False, include the existing bounds of the Bbox. when None, use the last value passed to ignore().   
+updatex, updateybool, default: True
+
+
+When True, update the x/y values.

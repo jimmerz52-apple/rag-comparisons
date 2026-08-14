@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerCircleCollection.create_collection
+
+create_collection(orig_handle, sizes, offsets, transOffset)[source]

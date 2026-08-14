@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.is_secure
+
+HttpRequest.is_secure()  
+Returns True if the request is secure; that is, if it was made with HTTPS.

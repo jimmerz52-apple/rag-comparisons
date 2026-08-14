@@ -1,0 +1,9 @@
+# torch.generated.torch.nn.parallel.distributeddataparallel#torch.nn.parallel.DistributedDataParallel.no_sync
+
+no_sync() [source]
+ 
+A context manager to disable gradient synchronizations across DDP processes. Within this context, gradients will be accumulated on module variables, which will later be synchronized in the first forward-backward pass exiting the context. Example: >>> ddp = torch.nn.parallel.DistributedDataParallel(model, pg)
+>>> with ddp.no_sync():
+>>>   for input in inputs:
+>>>     ddp(input).backward()  # no synchronization, accumulate grads
+>>> ddp(another_input).backward()  # synchronize grads

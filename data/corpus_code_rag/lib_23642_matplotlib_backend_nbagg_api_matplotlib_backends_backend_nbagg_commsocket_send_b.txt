@@ -1,0 +1,3 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.CommSocket.send_binary
+
+send_binary(blob)[source]

@@ -1,0 +1,4 @@
+# python.library.zlib#zlib.error
+
+exception zlib.error  
+Exception raised on compression and decompression errors.

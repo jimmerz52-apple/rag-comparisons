@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.nametofont
+
+tkinter.font.nametofont(name)  
+Return a Font representation of a tk named font.

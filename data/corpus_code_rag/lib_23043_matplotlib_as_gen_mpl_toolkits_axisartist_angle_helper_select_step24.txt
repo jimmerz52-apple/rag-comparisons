@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.select_step24
+
+mpl_toolkits.axisartist.angle_helper.select_step24   mpl_toolkits.axisartist.angle_helper.select_step24(v1, v2, nv, include_last=True, threshold_factor=3600)[source]

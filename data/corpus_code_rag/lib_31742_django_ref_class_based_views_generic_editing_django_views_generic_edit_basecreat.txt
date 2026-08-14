@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.BaseCreateView.get
+
+get(request, *args, **kwargs)  
+Sets the current object instance (self.object) to None.

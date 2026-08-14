@@ -1,0 +1,4 @@
+# pygame.ref.image#pygame.image.load_basic
+
+pygame.image.load_basic() 
+ load new BMP image from a file (or file-like object) load_basic(file) -> Surface  Load an image from a file source. You can pass either a filename or a Python file-like object. This function only supports loading "basic" image format, ie BMP format. This function is always available, no matter how pygame was built.

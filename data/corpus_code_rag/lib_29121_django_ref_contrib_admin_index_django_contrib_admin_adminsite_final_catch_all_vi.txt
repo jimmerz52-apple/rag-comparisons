@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.final_catch_all_view
+
+AdminSite.final_catch_all_view  
+ New in Django 3.2.  A boolean value that determines whether to add a final catch-all view to the admin that redirects unauthenticated users to the login page. By default, it is set to True.  Warning Setting this to False is not recommended as the view protects against a potential model enumeration privacy issue.

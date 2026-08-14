@@ -1,0 +1,7 @@
+# 613
+Task: 613
+
+# Write a function to find the maximum value in record list as tuple attribute in the given tuple list.
+def maximum_value(test_list):
+  res = [(key, max(lst)) for key, lst in test_list]
+  return (res)

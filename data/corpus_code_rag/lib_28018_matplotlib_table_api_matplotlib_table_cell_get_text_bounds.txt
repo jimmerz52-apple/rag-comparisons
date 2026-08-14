@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.get_text_bounds
+
+get_text_bounds(renderer)[source]
+ 
+Return the text bounds as (x, y, width, height) in table coordinates.

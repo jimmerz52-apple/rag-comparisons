@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_units
+
+matplotlib.axis.Axis.get_units   Axis.get_units()[source]
+ 
+Return the units for axis.

@@ -1,0 +1,22 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_minor_locator
+
+matplotlib.axis.Axis.set_minor_locator   Axis.set_minor_locator(locator)[source]
+ 
+Set the locator of the minor ticker.  Parameters 
+ 
+locatorLocator
+
+   
+  Examples using matplotlib.axis.Axis.set_minor_locator
+ 
+   Secondary Axis   
+
+   Date tick labels   
+
+   Anatomy of a figure   
+
+   Centering labels between ticks   
+
+   Date Demo Convert   
+
+   Major and minor ticks

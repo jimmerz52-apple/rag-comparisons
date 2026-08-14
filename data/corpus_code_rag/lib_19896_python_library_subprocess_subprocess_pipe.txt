@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.PIPE
+
+subprocess.PIPE  
+Special value that can be used as the stdin, stdout or stderr argument to Popen and indicates that a pipe to the standard stream should be opened. Most useful with Popen.communicate().

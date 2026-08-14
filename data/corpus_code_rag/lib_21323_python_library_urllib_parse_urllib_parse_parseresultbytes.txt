@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.ParseResultBytes
+
+class urllib.parse.ParseResultBytes(scheme, netloc, path, params, query, fragment)  
+Concrete class for urlparse() results containing bytes data. The decode() method returns a ParseResult instance.  New in version 3.2.

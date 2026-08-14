@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.maskedarray.clip
+
+numpy.ma.MaskedArray.clip method   ma.MaskedArray.clip(min=None, max=None, out=None, **kwargs)
+ 
+Return an array whose values are limited to [min, max]. One of max or min must be given. Refer to numpy.clip for full documentation.  See also  numpy.clip
+
+equivalent function

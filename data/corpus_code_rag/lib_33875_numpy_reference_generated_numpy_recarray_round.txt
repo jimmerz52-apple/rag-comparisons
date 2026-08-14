@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.round
+
+numpy.recarray.round method   recarray.round(decimals=0, out=None)
+ 
+Return a with each element rounded to the given number of decimals. Refer to numpy.around for full documentation.  See also  numpy.around
+
+equivalent function

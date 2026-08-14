@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.teardown_appcontext_funcs
+
+teardown_appcontext_funcs: t.List[TeardownCallable]  
+A list of functions that are called when the application context is destroyed. Since the application context is also torn down if the request ends this is the place to store code that disconnects from databases.  Changelog New in version 0.9.

@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.init
+
+pygame.init() 
+ initialize all imported pygame modules init() -> (numpass, numfail)  Initialize all imported pygame modules. No exceptions will be raised if a module fails, but the total number if successful and failed inits will be returned as a tuple. You can always initialize individual modules manually, but pygame.init() is a convenient way to get everything started. The init() functions for individual modules will raise exceptions when they fail. You may want to initialize the different modules separately to speed up your program or to not use modules your game does not require. It is safe to call this init() more than once as repeated calls will have no effect. This is true even if you have pygame.quit() all the modules.

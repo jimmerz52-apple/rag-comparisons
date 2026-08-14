@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.ZipImportError
+
+exception zipimport.ZipImportError  
+Exception raised by zipimporter objects. It’s a subclass of ImportError, so it can be caught as ImportError, too.

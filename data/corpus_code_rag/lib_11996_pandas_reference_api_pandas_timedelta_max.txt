@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.timedelta.max
+
+pandas.Timedelta.max   Timedelta.max=Timedelta('106751 days 23:47:16.854775807')

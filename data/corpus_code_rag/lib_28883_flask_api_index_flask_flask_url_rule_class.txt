@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.url_rule_class
+
+url_rule_class  
+alias of werkzeug.routing.Rule

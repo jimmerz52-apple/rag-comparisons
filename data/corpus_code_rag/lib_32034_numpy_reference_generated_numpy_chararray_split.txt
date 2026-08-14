@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.split
+
+numpy.chararray.split method   chararray.split(sep=None, maxsplit=None)[source]
+ 
+For each element in self, return a list of the words in the string, using sep as the delimiter string.  See also  char.split

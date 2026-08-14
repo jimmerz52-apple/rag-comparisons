@@ -1,0 +1,9 @@
+# python.library.collections#collections.somenamedtuple._replace
+
+somenamedtuple._replace(**kwargs)  
+Return a new instance of the named tuple replacing specified fields with new values: >>> p = Point(x=11, y=22)
+>>> p._replace(x=33)
+Point(x=33, y=22)
+
+>>> for partnum, record in inventory.items():
+...     inventory[partnum] = record._replace(price=newprices[partnum], timestamp=time.now())

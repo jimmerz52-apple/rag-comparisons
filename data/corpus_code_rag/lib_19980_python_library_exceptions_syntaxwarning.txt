@@ -1,0 +1,4 @@
+# python.library.exceptions#SyntaxWarning
+
+exception SyntaxWarning  
+Base class for warnings about dubious syntax.

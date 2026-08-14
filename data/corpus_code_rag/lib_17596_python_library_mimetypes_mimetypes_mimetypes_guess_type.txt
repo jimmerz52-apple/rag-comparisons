@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.MimeTypes.guess_type
+
+guess_type(url, strict=True)  
+Similar to the guess_type() function, using the tables stored as part of the object.

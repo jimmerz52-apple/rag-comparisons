@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.metrics
+
+metrics() 
+ gets the metrics for each character in the passed string metrics(text) -> list  The list contains tuples for each character, which contain the minimum X offset, the maximum X offset, the minimum Y offset, the maximum Y offset and the advance offset (bearing plus width) of the character. [(minx, maxx, miny, maxy, advance), (minx, maxx, miny, maxy, advance), ...]. None is entered in the list for each unrecognized character.

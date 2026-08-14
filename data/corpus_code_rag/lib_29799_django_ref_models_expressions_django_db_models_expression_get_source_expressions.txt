@@ -1,0 +1,5 @@
+# django.ref.models.expressions#django.db.models.Expression.get_source_expressions
+
+get_source_expressions()  
+Returns an ordered list of inner expressions. For example: >>> Sum(F('foo')).get_source_expressions()
+[F('foo')]

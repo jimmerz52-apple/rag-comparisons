@@ -1,0 +1,8 @@
+# flask.api.index#flask.Config.from_mapping
+
+from_mapping(mapping=None, **kwargs)  
+Updates the config like update() ignoring items with non-upper keys.  Changelog New in version 0.11.   Parameters 
+ 
+mapping (Optional[Mapping[str, Any]]) –  
+kwargs (Any) –    Return type 
+bool

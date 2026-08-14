@@ -1,0 +1,10 @@
+# 677
+Task: 677
+
+# Write a function to check if the triangle is valid or not.
+def validity_triangle(a,b,c):
+ total = a + b + c
+ if total == 180:
+    return True
+ else:
+    return False

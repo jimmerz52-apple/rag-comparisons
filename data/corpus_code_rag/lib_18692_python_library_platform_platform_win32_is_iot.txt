@@ -1,0 +1,4 @@
+# python.library.platform#platform.win32_is_iot
+
+platform.win32_is_iot()  
+Return True if the Windows edition returned by win32_edition() is recognized as an IoT edition.  New in version 3.8.

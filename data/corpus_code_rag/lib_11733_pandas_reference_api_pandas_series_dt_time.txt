@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.dt.time
+
+pandas.Series.dt.time   Series.dt.time
+ 
+Returns numpy array of datetime.time objects. The time part of the Timestamps.

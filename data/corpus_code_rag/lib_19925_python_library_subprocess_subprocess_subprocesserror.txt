@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.SubprocessError
+
+exception subprocess.SubprocessError  
+Base class for all other exceptions from this module.  New in version 3.3.

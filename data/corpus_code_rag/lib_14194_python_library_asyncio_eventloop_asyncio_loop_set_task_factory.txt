@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.set_task_factory
+
+loop.set_task_factory(factory)  
+Set a task factory that will be used by loop.create_task(). If factory is None the default task factory will be set. Otherwise, factory must be a callable with the signature matching (loop, coro), where loop is a reference to the active event loop, and coro is a coroutine object. The callable must return a asyncio.Future-compatible object.

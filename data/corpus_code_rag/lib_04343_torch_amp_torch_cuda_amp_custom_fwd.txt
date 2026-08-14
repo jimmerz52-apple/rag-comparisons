@@ -1,0 +1,6 @@
+# torch.amp#torch.cuda.amp.custom_fwd
+
+torch.cuda.amp.custom_fwd(fwd=None, **kwargs) [source]
+ 
+Helper decorator for forward methods of custom autograd functions (subclasses of torch.autograd.Function). See the example page for more detail.  Parameters 
+cast_inputs (torch.dtype or None, optional, default=None) – If not None, when forward runs in an autocast-enabled region, casts incoming floating-point CUDA Tensors to the target dtype (non-floating-point Tensors are not affected), then executes forward with autocast disabled. If None, forward’s internal ops execute with the current autocast state.    Note If the decorated forward is called outside an autocast-enabled region, custom_fwd is a no-op and cast_inputs has no effect.

@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.decodejsonexample
+
+tf.raw_ops.DecodeJSONExample Convert JSON-encoded Example records to binary protocol buffer strings.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.DecodeJSONExample  
+tf.raw_ops.DecodeJSONExample(
+    json_examples, name=None
+)
+ This op translates a tensor containing Example records, encoded using the standard JSON mapping, into a tensor containing the same records encoded as binary protocol buffers. The resulting tensor can then be fed to any of the other Example-parsing ops.
+ 
+
+
+ Args
+  json_examples   A Tensor of type string. Each string is a JSON object serialized according to the JSON mapping of the Example proto.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type string.

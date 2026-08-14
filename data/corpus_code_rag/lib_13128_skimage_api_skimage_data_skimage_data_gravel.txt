@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.gravel
+
+skimage.data.gravel() [source]
+ 
+Gravel  Returns 
+ 
+gravel(512, 512) uint8 image 
+
+Grayscale gravel sample.     Notes The original image was downloaded from CC0Textures and licensed under the Creative Commons CC0 License. The downloaded image was then rescaled to (1024, 1024), then the top left (512, 512) pixel region was cropped prior to converting the image to grayscale and uint8 data type. The result was saved using the PNG format.

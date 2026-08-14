@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.get_build_temp_dir
+
+get_build_temp_dir()[source]
+ 
+Return a path to a temporary directory where temporary files should be placed.

@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.__getitem__
+
+__getitem__(name)  
+Return the value of the named header field. name does not include the colon field separator. If the header is missing, None is returned; a KeyError is never raised. Note that if the named field appears more than once in the message’s headers, exactly which of those field values will be returned is undefined. Use the get_all() method to get the values of all the extant headers named name. Using the standard (non-compat32) policies, the returned value is an instance of a subclass of email.headerregistry.BaseHeader.

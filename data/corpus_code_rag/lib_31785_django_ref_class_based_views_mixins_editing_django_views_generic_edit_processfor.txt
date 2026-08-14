@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ProcessFormView.post
+
+post(request, *args, **kwargs)  
+Constructs a form, checks the form for validity, and handles it accordingly.

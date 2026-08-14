@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.asksaveasfilename
+
+tkinter.filedialog.asksaveasfilename(**options)  
+Create a SaveAs dialog and return the selected filename.

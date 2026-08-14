@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BufferedProtocol.eof_received
+
+BufferedProtocol.eof_received()  
+See the documentation of the protocol.eof_received() method.

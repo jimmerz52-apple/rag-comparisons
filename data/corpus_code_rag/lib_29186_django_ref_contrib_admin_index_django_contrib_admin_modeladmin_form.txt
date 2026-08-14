@@ -1,0 +1,17 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.form
+
+ModelAdmin.form  
+By default a ModelForm is dynamically created for your model. It is used to create the form presented on both the add/change pages. You can easily provide your own ModelForm to override any default form behavior on the add/change pages. Alternatively, you can customize the default form rather than specifying an entirely new one by using the ModelAdmin.get_form() method. For an example see the section Adding custom validation to the admin.  Note If you define the Meta.model attribute on a ModelForm, you must also define the Meta.fields attribute (or the Meta.exclude attribute). However, since the admin has its own way of defining fields, the Meta.fields attribute will be ignored. If the ModelForm is only going to be used for the admin, the easiest solution is to omit the Meta.model attribute, since ModelAdmin will provide the correct model to use. Alternatively, you can set fields = [] in the Meta class to satisfy the validation on the ModelForm.   Note If your ModelForm and ModelAdmin both define an exclude option then ModelAdmin takes precedence: from django import forms
+from django.contrib import admin
+from myapp.models import Person
+
+class PersonForm(forms.ModelForm):
+
+    class Meta:
+        model = Person
+        exclude = ['name']
+
+class PersonAdmin(admin.ModelAdmin):
+    exclude = ['age']
+    form = PersonForm
+ In the above example, the “age” field will be excluded but the “name” field will be included in the generated form.

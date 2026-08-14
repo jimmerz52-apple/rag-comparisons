@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.rad2deg
+
+rad2deg() → Tensor  
+See torch.rad2deg()

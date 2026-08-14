@@ -1,0 +1,10 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.FigureCanvas
+
+class skimage.viewer.utils.FigureCanvas(figure, **kwargs) [source]
+ 
+Bases: object Canvas for displaying images.  
+__init__(figure, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+resizeEvent(event) [source]

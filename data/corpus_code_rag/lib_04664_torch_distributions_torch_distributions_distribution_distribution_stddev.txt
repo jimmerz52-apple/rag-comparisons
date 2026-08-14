@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.stddev
+
+property stddev  
+Returns the standard deviation of the distribution.

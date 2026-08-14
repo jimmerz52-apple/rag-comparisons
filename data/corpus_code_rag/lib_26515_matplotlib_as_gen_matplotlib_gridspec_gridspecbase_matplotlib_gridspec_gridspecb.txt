@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.get_geometry
+
+get_geometry()[source]
+ 
+Return a tuple containing the number of rows and columns in the grid.

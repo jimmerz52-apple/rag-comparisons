@@ -1,0 +1,16 @@
+# skimage.api.skimage.transform#skimage.transform.PiecewiseAffineTransform.estimate
+
+estimate(src, dst) [source]
+ 
+Estimate the transformation from a set of corresponding points. Number of source and destination coordinates must match.  Parameters 
+ 
+src(N, 2) array 
+
+Source coordinates.  
+dst(N, 2) array 
+
+Destination coordinates.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.

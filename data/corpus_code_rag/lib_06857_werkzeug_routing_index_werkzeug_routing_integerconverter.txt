@@ -1,0 +1,13 @@
+# werkzeug.routing.index#werkzeug.routing.IntegerConverter
+
+class werkzeug.routing.IntegerConverter(map, fixed_digits=0, min=None, max=None, signed=False)  
+This converter only accepts integer values: Rule("/page/<int:page>")
+ By default it only accepts unsigned, positive values. The signed parameter will enable signed, negative values. Rule("/page/<int(signed=True):page>")
+  Parameters 
+ 
+map (Map) – The Map. 
+fixed_digits (int) – The number of fixed digits in the URL. If you set this to 4 for example, the rule will only match if the URL looks like /0001/. The default is variable length. 
+min (Optional[int]) – The minimal value. 
+max (Optional[int]) – The maximal value. 
+signed (bool) – Allow signed (negative) values.   Return type 
+None    Changelog New in version 0.15: The signed parameter.

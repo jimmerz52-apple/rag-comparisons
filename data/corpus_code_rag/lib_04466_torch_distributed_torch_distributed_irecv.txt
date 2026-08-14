@@ -1,0 +1,11 @@
+# torch.distributed#torch.distributed.irecv
+
+torch.distributed.irecv(tensor, src=None, group=None, tag=0) [source]
+ 
+Receives a tensor asynchronously.  Parameters 
+ 
+tensor (Tensor) – Tensor to fill with received data. 
+src (int, optional) – Source rank. Will receive from any process if unspecified. 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+tag (int, optional) – Tag to match recv with remote send   Returns 
+A distributed request object. None, if not part of the group

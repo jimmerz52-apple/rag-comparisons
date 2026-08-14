@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.actions
+
+ModelAdmin.actions  
+A list of actions to make available on the change list page. See Admin actions for details.

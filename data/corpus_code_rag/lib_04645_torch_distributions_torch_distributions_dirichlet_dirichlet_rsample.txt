@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.dirichlet.Dirichlet.rsample
+
+rsample(sample_shape=()) [source]

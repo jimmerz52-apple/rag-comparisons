@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_x
+
+set_x(x)[source]
+ 
+Set the left coord of the rectangle.  Parameters 
+ 
+xfloat

@@ -1,0 +1,4 @@
+# python.library.socket#socket.gethostbyaddr
+
+socket.gethostbyaddr(ip_address)  
+Return a triple (hostname, aliaslist, ipaddrlist) where hostname is the primary host name responding to the given ip_address, aliaslist is a (possibly empty) list of alternative host names for the same address, and ipaddrlist is a list of IPv4/v6 addresses for the same interface on the same host (most likely containing only a single address). To find the fully qualified domain name, use the function getfqdn(). gethostbyaddr() supports both IPv4 and IPv6. Raises an auditing event socket.gethostbyaddr with argument ip_address.

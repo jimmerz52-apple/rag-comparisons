@@ -1,0 +1,11 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.get_current_url
+
+werkzeug.wsgi.get_current_url(environ, root_only=False, strip_querystring=False, host_only=False, trusted_hosts=None)  
+Recreate the URL for a request from the parts in a WSGI environment. The URL is an IRI, not a URI, so it may contain Unicode characters. Use iri_to_uri() to convert it to ASCII.  Parameters 
+ 
+environ (WSGIEnvironment) – The WSGI environment to get the URL parts from. 
+root_only (bool) – Only build the root path, don’t include the remaining path or query string. 
+strip_querystring (bool) – Don’t include the query string. 
+host_only (bool) – Only build the scheme and host. 
+trusted_hosts (Optional[Iterable[str]]) – A list of trusted host names to validate the host against.   Return type 
+str

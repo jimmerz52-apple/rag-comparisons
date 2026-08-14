@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.proxy
+
+Options.proxy  
+If proxy = True, a model which subclasses another model will be treated as a proxy model.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestLoader.suiteClass
+
+suiteClass  
+Callable object that constructs a test suite from a list of tests. No methods on the resulting object are needed. The default value is the TestSuite class. This affects all the loadTestsFrom*() methods.

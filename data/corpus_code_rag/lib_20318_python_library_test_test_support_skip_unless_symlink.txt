@@ -1,0 +1,4 @@
+# python.library.test#test.support.skip_unless_symlink
+
+@test.support.skip_unless_symlink  
+A decorator for running tests that require support for symbolic links.

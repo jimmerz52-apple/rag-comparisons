@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.get_output_charset
+
+get_output_charset()  
+Return the output character set. This is the output_charset attribute if that is not None, otherwise it is input_charset.

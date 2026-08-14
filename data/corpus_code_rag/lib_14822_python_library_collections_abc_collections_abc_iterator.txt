@@ -1,0 +1,4 @@
+# python.library.collections.abc#collections.abc.Iterator
+
+class collections.abc.Iterator  
+ABC for classes that provide the __iter__() and __next__() methods. See also the definition of iterator.

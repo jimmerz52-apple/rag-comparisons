@@ -1,0 +1,17 @@
+# django.ref.contrib.admin.index#django.contrib.admin.register
+
+register(*models, site=django.contrib.admin.sites.site)  
+There is also a decorator for registering your ModelAdmin classes: from django.contrib import admin
+from .models import Author
+
+@admin.register(Author)
+class AuthorAdmin(admin.ModelAdmin):
+    pass
+ It’s given one or more model classes to register with the ModelAdmin. If you’re using a custom AdminSite, pass it using the site keyword argument: from django.contrib import admin
+from .models import Author, Editor, Reader
+from myproject.admin_site import custom_admin_site
+
+@admin.register(Author, Reader, Editor, site=custom_admin_site)
+class PersonAdmin(admin.ModelAdmin):
+    pass
+ You can’t use this decorator if you have to reference your model admin class in its __init__() method, e.g. super(PersonAdmin, self).__init__(*args, **kwargs). You can use super().__init__(*args, **kwargs).

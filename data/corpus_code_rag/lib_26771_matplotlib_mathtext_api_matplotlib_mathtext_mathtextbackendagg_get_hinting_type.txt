@@ -1,0 +1,5 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackendAgg.get_hinting_type
+
+get_hinting_type()[source]
+ 
+Get the FreeType hinting type to use with this particular backend.

@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.MultiCursor.clear
+
+clear(event)[source]
+ 
+Clear the cursor.

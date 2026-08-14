@@ -1,0 +1,51 @@
+# django.ref.models.expressions#django.db.models.Expression
+
+class Expression  
+ 
+contains_aggregate  
+Tells Django that this expression contains an aggregate and that a GROUP BY clause needs to be added to the query. 
+  
+contains_over_clause  
+Tells Django that this expression contains a Window expression. It’s used, for example, to disallow window function expressions in queries that modify data. 
+  
+filterable  
+Tells Django that this expression can be referenced in QuerySet.filter(). Defaults to True. 
+  
+window_compatible  
+Tells Django that this expression can be used as the source expression in Window. Defaults to False. 
+  
+empty_result_set_value  
+ New in Django 4.0.  Tells Django which value should be returned when the expression is used to apply a function over an empty result set. Defaults to NotImplemented which forces the expression to be computed on the database. 
+  
+resolve_expression(query=None, allow_joins=True, reuse=None, summarize=False, for_save=False)  
+Provides the chance to do any pre-processing or validation of the expression before it’s added to the query. resolve_expression() must also be called on any nested expressions. A copy() of self should be returned with any necessary transformations. query is the backend query implementation. allow_joins is a boolean that allows or denies the use of joins in the query. reuse is a set of reusable joins for multi-join scenarios. summarize is a boolean that, when True, signals that the query being computed is a terminal aggregate query. for_save is a boolean that, when True, signals that the query being executed is performing a create or update. 
+  
+get_source_expressions()  
+Returns an ordered list of inner expressions. For example: >>> Sum(F('foo')).get_source_expressions()
+[F('foo')]
+ 
+  
+set_source_expressions(expressions)  
+Takes a list of expressions and stores them such that get_source_expressions() can return them. 
+  
+relabeled_clone(change_map)  
+Returns a clone (copy) of self, with any column aliases relabeled. Column aliases are renamed when subqueries are created. relabeled_clone() should also be called on any nested expressions and assigned to the clone. change_map is a dictionary mapping old aliases to new aliases. Example: def relabeled_clone(self, change_map):
+    clone = copy.copy(self)
+    clone.expression = self.expression.relabeled_clone(change_map)
+    return clone
+ 
+  
+convert_value(value, expression, connection)  
+A hook allowing the expression to coerce value into a more appropriate type. expression is the same as self. 
+  
+get_group_by_cols(alias=None)  
+Responsible for returning the list of columns references by this expression. get_group_by_cols() should be called on any nested expressions. F() objects, in particular, hold a reference to a column. The alias parameter will be None unless the expression has been annotated and is used for grouping. 
+  
+asc(nulls_first=False, nulls_last=False)  
+Returns the expression ready to be sorted in ascending order. nulls_first and nulls_last define how null values are sorted. See Using F() to sort null values for example usage. 
+  
+desc(nulls_first=False, nulls_last=False)  
+Returns the expression ready to be sorted in descending order. nulls_first and nulls_last define how null values are sorted. See Using F() to sort null values for example usage. 
+  
+reverse_ordering()  
+Returns self with any modifications required to reverse the sort order within an order_by call. As an example, an expression implementing NULLS LAST would change its value to be NULLS FIRST. Modifications are only required for expressions that implement sort order like OrderBy. This method is called when reverse() is called on a queryset.

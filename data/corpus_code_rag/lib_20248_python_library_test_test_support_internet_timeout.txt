@@ -1,0 +1,4 @@
+# python.library.test#test.support.INTERNET_TIMEOUT
+
+test.support.INTERNET_TIMEOUT  
+Timeout in seconds for network requests going to the Internet. The timeout is short enough to prevent a test to wait for too long if the Internet request is blocked for whatever reason. Usually, a timeout using INTERNET_TIMEOUT should not mark a test as failed, but skip the test instead: see transient_internet(). Its default value is 1 minute. See also LOOPBACK_TIMEOUT.

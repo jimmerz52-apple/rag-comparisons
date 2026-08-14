@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_COOKIE_SECURE
+
+SESSION_COOKIE_SECURE  
+Browsers will only send cookies with requests over HTTPS if the cookie is marked “secure”. The application must be served over HTTPS for this to make sense. Default: False

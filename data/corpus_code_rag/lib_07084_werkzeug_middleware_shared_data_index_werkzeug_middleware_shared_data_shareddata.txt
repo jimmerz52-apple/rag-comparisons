@@ -1,0 +1,6 @@
+# werkzeug.middleware.shared_data.index#werkzeug.middleware.shared_data.SharedDataMiddleware.is_allowed
+
+is_allowed(filename)  
+Subclasses can override this method to disallow the access to certain files. However by providing disallow in the constructor this method is overwritten.  Parameters 
+filename (str) –   Return type 
+bool

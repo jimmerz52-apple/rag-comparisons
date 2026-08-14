@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Response.content
+
+content  
+The body of the response, as a bytestring. This is the final page content as rendered by the view, or any error message.

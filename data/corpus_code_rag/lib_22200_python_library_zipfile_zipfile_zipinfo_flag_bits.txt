@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.flag_bits
+
+ZipInfo.flag_bits  
+ZIP flag bits.

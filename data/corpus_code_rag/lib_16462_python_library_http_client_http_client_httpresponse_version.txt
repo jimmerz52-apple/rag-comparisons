@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPResponse.version
+
+HTTPResponse.version  
+HTTP protocol version used by server. 10 for HTTP/1.0, 11 for HTTP/1.1.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.mode
+
+mode(dim=None, keepdim=False) -> (Tensor, LongTensor)  
+See torch.mode()

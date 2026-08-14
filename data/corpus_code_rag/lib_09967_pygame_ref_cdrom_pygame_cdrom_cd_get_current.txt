@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_current
+
+get_current() 
+ the current audio playback position get_current() -> track, seconds  Returns both the current track and time of that track. This method works when the drive is either playing or paused. Note, track 0 is the first track on the CD. Track numbers start at zero.

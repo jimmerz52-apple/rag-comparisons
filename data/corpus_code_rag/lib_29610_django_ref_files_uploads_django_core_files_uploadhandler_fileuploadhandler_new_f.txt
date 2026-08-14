@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadhandler.FileUploadHandler.new_file
+
+FileUploadHandler.new_file(field_name, file_name, content_type, content_length, charset, content_type_extra)  
+Callback signaling that a new file upload is starting. This is called before any data has been fed to any upload handlers. field_name is a string name of the file <input> field. file_name is the filename provided by the browser. content_type is the MIME type provided by the browser – E.g. 'image/jpeg'. content_length is the length of the image given by the browser. Sometimes this won’t be provided and will be None. charset is the character set (i.e. utf8) given by the browser. Like content_length, this sometimes won’t be provided. content_type_extra is extra information about the file from the content-type header. See UploadedFile.content_type_extra. This method may raise a StopFutureHandlers exception to prevent future handlers from handling this file.

@@ -1,0 +1,4 @@
+# python.library.tkinter.font#tkinter.font.Font.measure
+
+measure(text, displayof=None)  
+Return amount of space the text would occupy on the specified display when formatted in the current font. If no display is specified then the main application window is assumed.

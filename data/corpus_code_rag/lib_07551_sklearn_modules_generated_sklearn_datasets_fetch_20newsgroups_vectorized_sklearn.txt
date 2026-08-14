@@ -1,0 +1,48 @@
+# sklearn.modules.generated.sklearn.datasets.fetch_20newsgroups_vectorized#sklearn.datasets.fetch_20newsgroups_vectorized
+
+sklearn.datasets.fetch_20newsgroups_vectorized(*, subset='train', remove=(), data_home=None, download_if_missing=True, return_X_y=False, normalize=True, as_frame=False) [source]
+ 
+Load and vectorize the 20 newsgroups dataset (classification). Download it if necessary. This is a convenience function; the transformation is done using the default settings for CountVectorizer. For more advanced usage (stopword filtering, n-gram extraction, etc.), combine fetch_20newsgroups with a custom CountVectorizer, HashingVectorizer, TfidfTransformer or TfidfVectorizer. The resulting counts are normalized using sklearn.preprocessing.normalize unless normalize is set to False.  
+Classes 20  
+Samples total 18846  
+Dimensionality 130107  
+Features real   Read more in the User Guide.  Parameters 
+ 
+subset{‘train’, ‘test’, ‘all’}, default=’train’ 
+
+Select the dataset to load: ‘train’ for the training set, ‘test’ for the test set, ‘all’ for both, with shuffled ordering.  
+removetuple, default=() 
+
+May contain any subset of (‘headers’, ‘footers’, ‘quotes’). Each of these are kinds of text that will be detected and removed from the newsgroup posts, preventing classifiers from overfitting on metadata. ‘headers’ removes newsgroup headers, ‘footers’ removes blocks at the ends of posts that look like signatures, and ‘quotes’ removes lines that appear to be quoting another post.  
+data_homestr, default=None 
+
+Specify an download and cache folder for the datasets. If None, all scikit-learn data is stored in ‘~/scikit_learn_data’ subfolders.  
+download_if_missingbool, default=True 
+
+If False, raise an IOError if the data is not locally available instead of trying to download the data from the source site.  
+return_X_ybool, default=False 
+
+If True, returns (data.data, data.target) instead of a Bunch object.  New in version 0.20.   
+normalizebool, default=True 
+
+If True, normalizes each document’s feature vector to unit norm using sklearn.preprocessing.normalize.  New in version 0.22.   
+as_framebool, default=False 
+
+If True, the data is a pandas DataFrame including columns with appropriate dtypes (numeric, string, or categorical). The target is a pandas DataFrame or Series depending on the number of target_columns.  New in version 0.24.     Returns 
+ 
+bunchBunch 
+
+Dictionary-like object, with the following attributes.  data: {sparse matrix, dataframe} of shape (n_samples, n_features)
+
+The input data matrix. If as_frame is True, data is a pandas DataFrame with sparse columns.  target: {ndarray, series} of shape (n_samples,)
+
+The target labels. If as_frame is True, target is a pandas Series.  target_names: list of shape (n_classes,)
+
+The names of target classes.  DESCR: str
+
+The full description of the dataset.  frame: dataframe of shape (n_samples, n_features + 1)
+
+Only present when as_frame=True. Pandas DataFrame with data and target.  New in version 0.24.     
+(data, target)tuple if return_X_y is True 
+
+data and target would be of the format defined in the Bunch description above.  New in version 0.20.

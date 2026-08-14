@@ -1,0 +1,3 @@
+# django.topics.signals#django.dispatch.Signal.disconnect
+
+Signal.disconnect(receiver=None, sender=None, dispatch_uid=None) [source]

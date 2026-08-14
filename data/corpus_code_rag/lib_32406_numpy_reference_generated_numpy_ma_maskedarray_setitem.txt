@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__setitem__
+
+numpy.ma.MaskedArray.__setitem__ method   ma.MaskedArray.__setitem__(indx, value)[source]
+ 
+x.__setitem__(i, y) <==> x[i]=y Set item described by index. If value is masked, masks those locations.

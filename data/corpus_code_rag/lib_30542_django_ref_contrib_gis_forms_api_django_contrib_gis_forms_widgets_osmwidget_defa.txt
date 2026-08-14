@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.OSMWidget.default_lon
+
+default_lon  
+The default center latitude and longitude are 47 and 5, respectively, which is a location in eastern France.

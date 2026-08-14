@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Text.data
+
+Text.data  
+The content of the text node as a string.

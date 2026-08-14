@@ -1,0 +1,18 @@
+# matplotlib.dates_api#matplotlib.dates.MicrosecondLocator
+
+classmatplotlib.dates.MicrosecondLocator(interval=1, tz=None)[source]
+ 
+Bases: matplotlib.dates.DateLocator Make ticks on regular intervals of one or more microsecond(s).  Note By default, Matplotlib uses a floating point representation of time in days since the epoch, so plotting data with microsecond time resolution does not work well for dates that are far (about 70 years) from the epoch (check with get_epoch). If you want sub-microsecond resolution time plots, it is strongly recommended to use floating point seconds, not datetime-like time representation. If you really must use datetime.datetime() or similar and still need microsecond precision, change the time origin via dates.set_epoch to something closer to the dates being plotted. See Date Precision and Epochs.  interval is the interval between each iteration. For example, if interval=2, mark every second microsecond.   set_axis(axis)[source]
+
+   set_data_interval(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   set_view_interval(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:   
+   tick_values(vmin, vmax)[source]
+ 
+Return the values of the located ticks given vmin and vmax.  Note To get tick locations with the vmin and vmax values defined automatically for the associated axis simply call the Locator instance: >>> print(type(loc))
+<type 'Locator'>
+>>> print(loc())
+[1, 2, 3, 4]

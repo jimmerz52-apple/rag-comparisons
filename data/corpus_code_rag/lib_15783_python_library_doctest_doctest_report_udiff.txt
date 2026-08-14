@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.REPORT_UDIFF
+
+doctest.REPORT_UDIFF  
+When specified, failures that involve multi-line expected and actual outputs are displayed using a unified diff.

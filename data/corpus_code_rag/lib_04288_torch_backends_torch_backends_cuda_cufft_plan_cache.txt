@@ -1,0 +1,12 @@
+# torch.backends#torch.backends.cuda.cufft_plan_cache
+
+torch.backends.cuda.cufft_plan_cache  
+cufft_plan_cache caches the cuFFT plans  
+size  
+A readonly int that shows the number of plans currently in the cuFFT plan cache. 
+  
+max_size  
+A int that controls cache capacity of cuFFT plan. 
+  
+clear()  
+Clears the cuFFT plan cache.

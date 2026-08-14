@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.get_source
+
+get_source(fullname)  
+Returns None as extension modules do not have source code.

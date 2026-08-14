@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.diag_embed
+
+diag_embed(offset=0, dim1=-2, dim2=-1) → Tensor  
+See torch.diag_embed()

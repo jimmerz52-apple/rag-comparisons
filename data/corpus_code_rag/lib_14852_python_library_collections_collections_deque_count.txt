@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.count
+
+count(x)  
+Count the number of deque elements equal to x.  New in version 3.2.

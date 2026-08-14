@@ -1,0 +1,16 @@
+# python.library.time#time.struct_time
+
+class time.struct_time  
+The type of the time value sequence returned by gmtime(), localtime(), and strptime(). It is an object with a named tuple interface: values can be accessed by index and by attribute name. The following values are present:   
+Index Attribute Values   
+0 tm_year (for example, 1993)  
+1 tm_mon range [1, 12]  
+2 tm_mday range [1, 31]  
+3 tm_hour range [0, 23]  
+4 tm_min range [0, 59]  
+5 tm_sec range [0, 61]; see (2) in strftime() description  
+6 tm_wday range [0, 6], Monday is 0  
+7 tm_yday range [1, 366]  
+8 tm_isdst 0, 1 or -1; see below  
+N/A tm_zone abbreviation of timezone name  
+N/A tm_gmtoff offset east of UTC in seconds   Note that unlike the C structure, the month value is a range of [1, 12], not [0, 11]. In calls to mktime(), tm_isdst may be set to 1 when daylight savings time is in effect, and 0 when it is not. A value of -1 indicates that this is not known, and will usually result in the correct state being filled in. When a tuple with an incorrect length is passed to a function expecting a struct_time, or having elements of the wrong type, a TypeError is raised.

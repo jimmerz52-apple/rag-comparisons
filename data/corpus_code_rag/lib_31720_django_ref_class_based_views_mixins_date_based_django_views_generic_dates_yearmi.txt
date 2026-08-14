@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.YearMixin.year_format
+
+year_format  
+The strftime() format to use when parsing the year. By default, this is '%Y'.

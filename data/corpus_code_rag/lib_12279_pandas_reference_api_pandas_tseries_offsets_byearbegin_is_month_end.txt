@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearbegin.is_month_end
+
+pandas.tseries.offsets.BYearBegin.is_month_end   BYearBegin.is_month_end()

@@ -1,0 +1,4 @@
+# python.library.token#token.ISEOF
+
+token.ISEOF(x)  
+Return True if x is the marker indicating the end of input.

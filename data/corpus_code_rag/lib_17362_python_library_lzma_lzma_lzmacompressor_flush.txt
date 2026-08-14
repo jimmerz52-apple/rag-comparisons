@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.LZMACompressor.flush
+
+flush()  
+Finish the compression process, returning a bytes object containing any data stored in the compressor’s internal buffers. The compressor cannot be used after this method has been called.

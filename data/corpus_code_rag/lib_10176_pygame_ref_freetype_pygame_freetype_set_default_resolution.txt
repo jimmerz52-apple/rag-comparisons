@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.set_default_resolution
+
+pygame.freetype.set_default_resolution() 
+ Set the default pixel size in dots per inch for the module set_default_resolution([resolution])  Set the default pixel size, in dots per inch, for the module. If the optional argument is omitted or zero the resolution is reset to 72 DPI.

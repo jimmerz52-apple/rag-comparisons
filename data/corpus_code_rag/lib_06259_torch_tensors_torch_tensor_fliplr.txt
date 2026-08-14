@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.fliplr
+
+fliplr() → Tensor  
+See torch.fliplr()

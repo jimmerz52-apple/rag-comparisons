@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.sparse
+
+pandas.Series.sparse   Series.sparse()[source]
+ 
+Accessor for SparseSparse from other sparse matrix data types.

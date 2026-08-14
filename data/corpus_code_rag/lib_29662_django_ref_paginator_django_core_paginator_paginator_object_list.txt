@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.object_list
+
+Paginator.object_list  
+Required. A list, tuple, QuerySet, or other sliceable object with a count() or __len__() method. For consistent pagination, QuerySets should be ordered, e.g. with an order_by() clause or with a default ordering on the model.  Performance issues paginating large QuerySets If you’re using a QuerySet with a very large number of items, requesting high page numbers might be slow on some databases, because the resulting LIMIT/OFFSET query needs to count the number of OFFSET records which takes longer as the page number gets higher.

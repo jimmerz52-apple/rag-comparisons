@@ -1,0 +1,4 @@
+# python.library.reprlib#reprlib.Repr.repr
+
+Repr.repr(obj)  
+The equivalent to the built-in repr() that uses the formatting imposed by the instance.

@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontsize
+
+set_fontsize(fontsize)[source]
+ 
+Set the font size.  Parameters 
+ 
+fontsizefloat or {'xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'}
+
+
+If float, the fontsize in points. The string values denote sizes relative to the default font size.      See also  font_manager.FontProperties.set_size

@@ -1,0 +1,5 @@
+# numpy.reference.arrays.classes#numpy.class.__array_priority__
+
+class.__array_priority__
+ 
+The value of this attribute is used to determine what type of object to return in situations where there is more than one possibility for the Python type of the returned object. Subclasses inherit a default value of 0.0 for this attribute.  Note For ufuncs, it is hoped to eventually deprecate this method in favour of __array_ufunc__.

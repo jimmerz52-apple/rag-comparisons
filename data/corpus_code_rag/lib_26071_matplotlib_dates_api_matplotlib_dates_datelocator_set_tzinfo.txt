@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.DateLocator.set_tzinfo
+
+set_tzinfo(tz)[source]
+ 
+Set time zone info.

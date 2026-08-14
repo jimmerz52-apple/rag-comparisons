@@ -1,0 +1,9 @@
+# python.library.stdtypes#bytearray.removeprefix
+
+bytes.removeprefix(prefix, /)  
+bytearray.removeprefix(prefix, /)  
+If the binary data starts with the prefix string, return bytes[len(prefix):]. Otherwise, return a copy of the original binary data: >>> b'TestHook'.removeprefix(b'Test')
+b'Hook'
+>>> b'BaseTestCase'.removeprefix(b'Test')
+b'BaseTestCase'
+ The prefix may be any bytes-like object.  Note The bytearray version of this method does not operate in place - it always produces a new object, even if no changes were made.   New in version 3.9.

@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_char
+
+class ctypes.c_char  
+Represents the C char datatype, and interprets the value as a single character. The constructor accepts an optional string initializer, the length of the string must be exactly one character.

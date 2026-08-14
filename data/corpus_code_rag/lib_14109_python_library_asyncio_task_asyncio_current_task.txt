@@ -1,0 +1,4 @@
+# python.library.asyncio-task#asyncio.current_task
+
+asyncio.current_task(loop=None)  
+Return the currently running Task instance, or None if no task is running. If loop is None get_running_loop() is used to get the current loop.  New in version 3.7.

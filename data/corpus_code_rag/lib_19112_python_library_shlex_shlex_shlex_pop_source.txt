@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.pop_source
+
+shlex.pop_source()  
+Pop the last-pushed input source from the input stack. This is the same method used internally when the lexer reaches EOF on a stacked input stream.

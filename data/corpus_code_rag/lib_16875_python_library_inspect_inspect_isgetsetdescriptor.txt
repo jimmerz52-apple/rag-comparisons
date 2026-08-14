@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isgetsetdescriptor
+
+inspect.isgetsetdescriptor(object)  
+Return True if the object is a getset descriptor.  CPython implementation detail: getsets are attributes defined in extension modules via PyGetSetDef structures. For Python implementations without such types, this method will always return False.

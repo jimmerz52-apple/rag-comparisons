@@ -1,0 +1,22 @@
+# skimage.api.skimage.color#skimage.color.hed2rgb
+
+skimage.color.hed2rgb(hed) [source]
+ 
+Haematoxylin-Eosin-DAB (HED) to RGB color space conversion.  Parameters 
+ 
+hed(…, 3) array_like 
+
+The image in the HED color space. Final dimension denotes channels.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in RGB. Same dimensions as input.    Raises 
+ ValueError
+
+If hed is not at least 2-D with shape (…, 3).     References  
+1  
+A. C. Ruifrok and D. A. Johnston, “Quantification of histochemical staining by color deconvolution.,” Analytical and quantitative cytology and histology / the International Academy of Cytology [and] American Society of Cytology, vol. 23, no. 4, pp. 291-9, Aug. 2001.   Examples >>> from skimage import data
+>>> from skimage.color import rgb2hed, hed2rgb
+>>> ihc = data.immunohistochemistry()
+>>> ihc_hed = rgb2hed(ihc)
+>>> ihc_rgb = hed2rgb(ihc_hed)

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedelta.components
+
+pandas.Timedelta.components   Timedelta.components
+ 
+Return a components namedtuple-like.

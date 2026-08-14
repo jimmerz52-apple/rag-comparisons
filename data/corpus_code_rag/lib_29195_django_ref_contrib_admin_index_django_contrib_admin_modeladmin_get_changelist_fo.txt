@@ -1,0 +1,12 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_changelist_form
+
+ModelAdmin.get_changelist_form(request, **kwargs)  
+Returns a ModelForm class for use in the Formset on the changelist page. To use a custom form, for example: from django import forms
+
+class MyForm(forms.ModelForm):
+    pass
+
+class MyModelAdmin(admin.ModelAdmin):
+    def get_changelist_form(self, request, **kwargs):
+        return MyForm
+  Note If you define the Meta.model attribute on a ModelForm, you must also define the Meta.fields attribute (or the Meta.exclude attribute). However, ModelAdmin ignores this value, overriding it with the ModelAdmin.list_editable attribute. The easiest solution is to omit the Meta.model attribute, since ModelAdmin will provide the correct model to use.

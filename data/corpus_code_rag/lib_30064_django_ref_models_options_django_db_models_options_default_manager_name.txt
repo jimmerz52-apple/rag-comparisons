@@ -1,0 +1,4 @@
+# django.ref.models.options#django.db.models.Options.default_manager_name
+
+Options.default_manager_name  
+The name of the manager to use for the model’s _default_manager.

@@ -1,0 +1,12 @@
+# python.library.msilib#msilib.Control
+
+class msilib.Control(dlg, name)  
+Base class of the dialog controls. dlg is the dialog object the control belongs to, and name is the control’s name.  
+event(event, argument, condition=1, ordering=None)  
+Make an entry into the ControlEvent table for this control. 
+  
+mapping(event, attribute)  
+Make an entry into the EventMapping table for this control. 
+  
+condition(action, condition)  
+Make an entry into the ControlCondition table for this control.

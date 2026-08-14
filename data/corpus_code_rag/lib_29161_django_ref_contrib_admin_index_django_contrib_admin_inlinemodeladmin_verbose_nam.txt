@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.verbose_name_plural
+
+InlineModelAdmin.verbose_name_plural  
+An override to the verbose_name_plural from the model’s inner Meta class. If this isn’t given and the InlineModelAdmin.verbose_name is defined, Django will use InlineModelAdmin.verbose_name + 's'.  Changed in Django 4.0: The fallback to InlineModelAdmin.verbose_name was added.

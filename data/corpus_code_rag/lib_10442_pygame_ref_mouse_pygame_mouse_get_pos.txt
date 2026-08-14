@@ -1,0 +1,4 @@
+# pygame.ref.mouse#pygame.mouse.get_pos
+
+pygame.mouse.get_pos() 
+ get the mouse cursor position get_pos() -> (x, y)  Returns the x and y position of the mouse cursor. The position is relative to the top-left corner of the display. The cursor position can be located outside of the display window, but is always constrained to the screen.

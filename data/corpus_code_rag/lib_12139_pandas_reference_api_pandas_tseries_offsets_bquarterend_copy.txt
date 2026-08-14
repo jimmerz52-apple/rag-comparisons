@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.bquarterend.copy
+
+pandas.tseries.offsets.BQuarterEnd.copy   BQuarterEnd.copy()

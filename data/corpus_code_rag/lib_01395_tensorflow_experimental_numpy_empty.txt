@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.empty
+
+tf.experimental.numpy.empty TensorFlow variant of NumPy's empty. 
+tf.experimental.numpy.empty(
+    shape, dtype=float
+)
+ See the NumPy documentation for numpy.empty.

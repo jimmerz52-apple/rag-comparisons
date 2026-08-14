@@ -1,0 +1,6 @@
+# flask.api.index#flask.ctx.RequestContext.pop
+
+pop(exc=<object object>)  
+Pops the request context and unbinds it by doing that. This will also trigger the execution of functions registered by the teardown_request() decorator.  Changelog Changed in version 0.9: Added the exc argument.   Parameters 
+exc (Optional[BaseException]) –   Return type 
+None

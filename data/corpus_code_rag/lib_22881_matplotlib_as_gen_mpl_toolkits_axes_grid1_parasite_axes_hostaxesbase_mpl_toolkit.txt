@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.hostaxesbase#mpl_toolkits.axes_grid1.parasite_axes.HostAxesBase.draw
+
+draw(renderer)[source]

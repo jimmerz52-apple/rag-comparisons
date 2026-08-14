@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.isreg
+
+TarInfo.isreg()  
+Same as isfile().

@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.element
+
+element(tag, text=None, attrib={}, **extra)[source]
+ 
+Add an entire element. This is the same as calling start(), data(), and end() in sequence. The text argument can be omitted.

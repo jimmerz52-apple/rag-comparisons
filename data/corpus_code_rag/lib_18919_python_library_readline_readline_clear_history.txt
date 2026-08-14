@@ -1,0 +1,4 @@
+# python.library.readline#readline.clear_history
+
+readline.clear_history()  
+Clear the current history. This calls clear_history() in the underlying library. The Python function only exists if Python was compiled for a version of the library that supports it.

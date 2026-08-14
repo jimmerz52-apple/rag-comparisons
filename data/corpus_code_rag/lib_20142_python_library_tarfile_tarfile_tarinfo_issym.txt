@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.issym
+
+TarInfo.issym()  
+Return True if it is a symbolic link.

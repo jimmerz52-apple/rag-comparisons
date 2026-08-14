@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LabelPainter.__init__
+
+__init__(max_radius=20, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

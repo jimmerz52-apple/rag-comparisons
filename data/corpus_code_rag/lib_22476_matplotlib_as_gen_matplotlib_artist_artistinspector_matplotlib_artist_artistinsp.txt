@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artistinspector#matplotlib.artist.ArtistInspector.properties
+
+properties()[source]
+ 
+Return a dictionary mapping property name -> value.

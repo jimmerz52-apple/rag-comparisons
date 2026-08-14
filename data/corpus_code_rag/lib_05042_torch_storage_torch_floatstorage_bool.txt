@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.bool
+
+bool()  
+Casts this storage to bool type

@@ -1,0 +1,4 @@
+# python.library.time#time.clock_gettime_ns
+
+time.clock_gettime_ns(clk_id) → int  
+Similar to clock_gettime() but return time as nanoseconds. Availability: Unix.  New in version 3.7.

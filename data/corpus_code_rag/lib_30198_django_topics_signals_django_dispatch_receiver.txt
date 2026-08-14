@@ -1,0 +1,8 @@
+# django.topics.signals#django.dispatch.receiver
+
+receiver(signal) [source]
+ 
+   
+Parameters:
+
+signal – A signal or a list of signals to connect a function to.

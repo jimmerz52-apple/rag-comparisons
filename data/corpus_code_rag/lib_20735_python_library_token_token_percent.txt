@@ -1,0 +1,4 @@
+# python.library.token#token.PERCENT
+
+token.PERCENT  
+Token value for "%".

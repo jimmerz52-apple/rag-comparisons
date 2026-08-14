@@ -1,0 +1,30 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_aspect
+
+set_aspect(aspect, adjustable=None, anchor=None, share=False)[source]
+ 
+Set the aspect ratios. Axes 3D does not current support any aspect but 'auto' which fills the axes with the data limits. To simulate having equal aspect in data space, set the ratio of your data limits to match the value of get_box_aspect. To control box aspect ratios use set_box_aspect.  Parameters 
+ 
+aspect{'auto'}
+
+
+Possible values:   
+value description   
+'auto' automatic; fill the position rectangle with data.    
+adjustableNone
+
+
+Currently ignored by Axes3D If not None, this defines which parameter will be adjusted to meet the required aspect. See set_adjustable for further details.  
+anchorNone or str or 2-tuple of float, optional
+
+
+If not None, this defines where the Axes will be drawn if there is extra space due to aspect constraints. The most common way to to specify the anchor are abbreviations of cardinal directions:   
+value description   
+'C' centered  
+'SW' lower left corner  
+'S' middle of bottom edge  
+'SE' lower right corner  
+etc.    See set_anchor for further details.  
+sharebool, default: False
+
+
+If True, apply the settings to all shared Axes.      See also  mpl_toolkits.mplot3d.axes3d.Axes3D.set_box_aspect

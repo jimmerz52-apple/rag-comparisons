@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.CITextField
+
+class CITextField(**options)  
+These fields subclass CharField, EmailField, and TextField, respectively. max_length won’t be enforced in the database since citext behaves similar to PostgreSQL’s text type.

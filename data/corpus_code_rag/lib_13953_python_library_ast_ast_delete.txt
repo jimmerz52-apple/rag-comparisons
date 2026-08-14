@@ -1,0 +1,12 @@
+# python.library.ast#ast.Delete
+
+class ast.Delete(targets)  
+Represents a del statement. targets is a list of nodes, such as Name, Attribute or Subscript nodes. >>> print(ast.dump(ast.parse('del x,y,z'), indent=4))
+Module(
+    body=[
+        Delete(
+            targets=[
+                Name(id='x', ctx=Del()),
+                Name(id='y', ctx=Del()),
+                Name(id='z', ctx=Del())])],
+    type_ignores=[])

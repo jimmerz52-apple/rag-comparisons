@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.set_positions
+
+set_positions(posA, posB)[source]
+ 
+Set the begin and end positions of the connecting path.  Parameters 
+ 
+posA, posBNone, tuple
+
+
+(x, y) coordinates of arrow tail and arrow head respectively. If None use current value.

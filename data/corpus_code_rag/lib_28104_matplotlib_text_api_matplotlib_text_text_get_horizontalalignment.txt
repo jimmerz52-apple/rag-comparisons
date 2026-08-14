@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_horizontalalignment
+
+get_horizontalalignment()[source]
+ 
+Return the horizontal alignment as a string. Will be one of 'left', 'center' or 'right'.

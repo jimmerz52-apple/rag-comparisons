@@ -1,0 +1,4 @@
+# flask.api.index#flask.appcontext_popped
+
+flask.appcontext_popped  
+This signal is sent when an application context is popped. The sender is the application. This usually falls in line with the appcontext_tearing_down signal.  Changelog New in version 0.10.

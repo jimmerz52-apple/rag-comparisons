@@ -1,0 +1,15 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.figimage
+
+skimage.viewer.utils.figimage(image, scale=1, dpi=None, **kwargs) [source]
+ 
+Return figure and axes with figure tightly surrounding image. Unlike pyplot.figimage, this actually plots onto an axes object, which fills the figure. Plotting the image onto an axes allows for subsequent overlays of axes artists.  Parameters 
+ 
+imagearray 
+
+image to plot  
+scalefloat 
+
+If scale is 1, the figure and axes have the same dimension as the image. Smaller values of scale will shrink the figure.  
+dpiint 
+
+Dots per inch for figure. If None, use the default rcParam.

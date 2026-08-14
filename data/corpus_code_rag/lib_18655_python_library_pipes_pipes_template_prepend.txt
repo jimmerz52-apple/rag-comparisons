@@ -1,0 +1,4 @@
+# python.library.pipes#pipes.Template.prepend
+
+Template.prepend(cmd, kind)  
+Add a new action at the beginning. See append() for explanations of the arguments.

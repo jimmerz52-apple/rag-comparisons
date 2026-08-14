@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.get_label_width
+
+get_label_width(lev, fmt, fsize)[source]
+ 
+[Deprecated] Return the width of the label in points. Notes  Deprecated since version 3.5.

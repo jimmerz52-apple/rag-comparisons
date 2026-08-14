@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.LZMADecompressor.unused_data
+
+unused_data  
+Data found after the end of the compressed stream. Before the end of the stream is reached, this will be b"".

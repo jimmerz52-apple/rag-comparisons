@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.HTTPErrorProcessor
+
+class urllib.request.HTTPErrorProcessor  
+Process HTTP error responses.

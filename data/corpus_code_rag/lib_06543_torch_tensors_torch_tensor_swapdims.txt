@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.swapdims
+
+swapdims(dim0, dim1) → Tensor  
+See torch.swapdims()

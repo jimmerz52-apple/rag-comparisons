@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.use_sticky_edges
+
+matplotlib.axes.Axes.use_sticky_edges   propertyAxes.use_sticky_edges
+ 
+When autoscaling, whether to obey all Artist.sticky_edges. Default is True. Setting this to False ensures that the specified margins will be applied, even if the plot includes an image, for example, which would otherwise force a view limit to coincide with its data limit. The changing this property does not change the plot until autoscale or autoscale_view is called.

@@ -1,0 +1,8 @@
+# django.topics.testing.tools#django.test.TransactionTestCase.assertNumQueries
+
+TransactionTestCase.assertNumQueries(num, func, *args, **kwargs)  
+Asserts that when func is called with *args and **kwargs that num database queries are executed. If a "using" key is present in kwargs it is used as the database alias for which to check the number of queries: self.assertNumQueries(7, using='non_default_db')
+ If you wish to call a function with a using parameter you can do it by wrapping the call with a lambda to add an extra parameter: self.assertNumQueries(7, lambda: my_function(using=7))
+ You can also use this as a context manager: with self.assertNumQueries(2):
+    Person.objects.create(name="Aaron")
+    Person.objects.create(name="Daniel")

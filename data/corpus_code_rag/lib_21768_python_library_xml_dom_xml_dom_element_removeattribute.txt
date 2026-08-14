@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.removeAttribute
+
+Element.removeAttribute(name)  
+Remove an attribute by name. If there is no matching attribute, a NotFoundErr is raised.

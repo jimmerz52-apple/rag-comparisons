@@ -1,0 +1,17 @@
+# python.library.socket#socket.SOMAXCONN
+
+SO_*  
+socket.SOMAXCONN  
+MSG_*  
+SOL_*  
+SCM_*  
+IPPROTO_*  
+IPPORT_*  
+INADDR_*  
+IP_*  
+IPV6_*  
+EAI_*  
+AI_*  
+NI_*  
+TCP_*  
+Many constants of these forms, documented in the Unix documentation on sockets and/or the IP protocol, are also defined in the socket module. They are generally used in arguments to the setsockopt() and getsockopt() methods of socket objects. In most cases, only those symbols that are defined in the Unix header files are defined; for a few symbols, default values are provided.  Changed in version 3.6: SO_DOMAIN, SO_PROTOCOL, SO_PEERSEC, SO_PASSSEC, TCP_USER_TIMEOUT, TCP_CONGESTION were added.   Changed in version 3.6.5: On Windows, TCP_FASTOPEN, TCP_KEEPCNT appear if run-time Windows supports.   Changed in version 3.7: TCP_NOTSENT_LOWAT was added. On Windows, TCP_KEEPIDLE, TCP_KEEPINTVL appear if run-time Windows supports.

@@ -1,0 +1,12 @@
+# matplotlib.units_api#matplotlib.units.DecimalConverter
+
+classmatplotlib.units.DecimalConverter[source]
+ 
+Bases: matplotlib.units.ConversionInterface Converter for decimal.Decimal data to float.   staticconvert(value, unit, axis)[source]
+ 
+Convert Decimals to floats. The unit and axis arguments are not used.  Parameters 
+ 
+valuedecimal.Decimal or iterable
+
+
+Decimal or list of Decimal need to be converted

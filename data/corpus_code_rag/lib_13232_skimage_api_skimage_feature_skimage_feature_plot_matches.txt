@@ -1,0 +1,36 @@
+# skimage.api.skimage.feature#skimage.feature.plot_matches
+
+skimage.feature.plot_matches(ax, image1, image2, keypoints1, keypoints2, matches, keypoints_color='k', matches_color=None, only_matches=False, alignment='horizontal') [source]
+ 
+Plot matched features.  Parameters 
+ 
+axmatplotlib.axes.Axes 
+
+Matches and image are drawn in this ax.  
+image1(N, M [, 3]) array 
+
+First grayscale or color image.  
+image2(N, M [, 3]) array 
+
+Second grayscale or color image.  
+keypoints1(K1, 2) array 
+
+First keypoint coordinates as (row, col).  
+keypoints2(K2, 2) array 
+
+Second keypoint coordinates as (row, col).  
+matches(Q, 2) array 
+
+Indices of corresponding matches in first and second set of descriptors, where matches[:, 0] denote the indices in the first and matches[:, 1] the indices in the second set of descriptors.  
+keypoints_colormatplotlib color, optional 
+
+Color for keypoint locations.  
+matches_colormatplotlib color, optional 
+
+Color for lines which connect keypoint matches. By default the color is chosen randomly.  
+only_matchesbool, optional 
+
+Whether to only plot matches and not plot the keypoint locations.  
+alignment{‘horizontal’, ‘vertical’}, optional 
+
+Whether to show images side by side, 'horizontal', or one above the other, 'vertical'.

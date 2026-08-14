@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.offset
+
+offset  
+For syntax errors - the offset into the text where the error occurred.

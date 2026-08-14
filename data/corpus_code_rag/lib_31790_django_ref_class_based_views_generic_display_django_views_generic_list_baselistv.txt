@@ -1,0 +1,6 @@
+# django.ref.class-based-views.generic-display#django.views.generic.list.BaseListView
+
+class django.views.generic.list.BaseListView  
+A base view for displaying a list of objects. It is not intended to be used directly, but rather as a parent class of the django.views.generic.list.ListView or other views representing lists of objects. Ancestors (MRO) This view inherits methods and attributes from the following views:  django.views.generic.list.MultipleObjectMixin django.views.generic.base.View  Methods  
+get(request, *args, **kwargs)  
+Adds object_list to the context. If allow_empty is True then display an empty list. If allow_empty is False then raise a 404 error.

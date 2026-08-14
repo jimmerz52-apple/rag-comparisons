@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.set_transform
+
+matplotlib.artist.Artist.set_transform   Artist.set_transform(t)[source]
+ 
+Set the artist transform.  Parameters 
+ 
+tTransform

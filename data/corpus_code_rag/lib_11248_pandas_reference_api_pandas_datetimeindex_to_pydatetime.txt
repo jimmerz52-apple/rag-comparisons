@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.datetimeindex.to_pydatetime
+
+pandas.DatetimeIndex.to_pydatetime   DatetimeIndex.to_pydatetime(*args, **kwargs)[source]
+ 
+Return Datetime Array/Index as object ndarray of datetime.datetime objects.  Returns 
+ 
+datetimes:ndarray[object]

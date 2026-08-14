@@ -1,0 +1,4 @@
+# django.ref.logging#django.utils.log.AdminEmailHandler.send_mail
+
+send_mail(subject, message, *args, **kwargs)  
+Sends emails to admin users. To customize this behavior, you can subclass the AdminEmailHandler class and override this method.

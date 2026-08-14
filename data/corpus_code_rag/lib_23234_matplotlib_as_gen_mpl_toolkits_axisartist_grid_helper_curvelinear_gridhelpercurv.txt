@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_helper_curvelinear.gridhelpercurvelinear#mpl_toolkits.axisartist.grid_helper_curvelinear.GridHelperCurveLinear.new_floating_axis
+
+new_floating_axis(nth_coord, value, axes=None, axis_direction='bottom')[source]

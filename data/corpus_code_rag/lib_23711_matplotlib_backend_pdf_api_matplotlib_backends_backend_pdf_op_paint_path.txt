@@ -1,0 +1,14 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Op.paint_path
+
+classmethodpaint_path(fill, stroke)[source]
+ 
+Return the PDF operator to paint a path.  Parameters 
+ 
+fillbool
+
+
+Fill the path with the fill color.  
+strokebool
+
+
+Stroke the outline of the path with the line color.

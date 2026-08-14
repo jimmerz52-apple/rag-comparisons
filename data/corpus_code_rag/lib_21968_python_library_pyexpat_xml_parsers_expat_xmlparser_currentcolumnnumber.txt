@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.CurrentColumnNumber
+
+xmlparser.CurrentColumnNumber  
+Current column number in the parser input.

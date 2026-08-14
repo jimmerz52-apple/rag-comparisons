@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.Signature.parameters
+
+parameters  
+An ordered mapping of parameters’ names to the corresponding Parameter objects. Parameters appear in strict definition order, including keyword-only parameters.  Changed in version 3.7: Python only explicitly guaranteed that it preserved the declaration order of keyword-only parameters as of version 3.7, although in practice this order had always been preserved in Python 3.

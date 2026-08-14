@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.is_multithread
+
+is_multithread  
+boolean that is True if the application is served by a multithreaded WSGI server.

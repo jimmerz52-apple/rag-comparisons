@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.__setitem__
+
+__setitem__(key, message)  
+Replace the message corresponding to key with message. Raise a KeyError exception if no message already corresponds to key. As with add(), parameter message may be a Message instance, an email.message.Message instance, a string, a byte string, or a file-like object (which should be open in binary mode). If message is an instance of the appropriate format-specific Message subclass (e.g., if it’s an mboxMessage instance and this is an mbox instance), its format-specific information is used. Otherwise, the format-specific information of the message that currently corresponds to key is left unchanged.

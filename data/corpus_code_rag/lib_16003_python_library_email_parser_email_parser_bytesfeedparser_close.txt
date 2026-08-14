@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.BytesFeedParser.close
+
+close()  
+Complete the parsing of all previously fed data and return the root message object. It is undefined what happens if feed() is called after this method has been called.

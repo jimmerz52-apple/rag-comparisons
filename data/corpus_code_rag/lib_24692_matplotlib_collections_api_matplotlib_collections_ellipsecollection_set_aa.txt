@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EllipseCollection.set_aa
+
+set_aa(aa)[source]
+ 
+Alias for set_antialiased.

@@ -1,0 +1,5 @@
+# skimage.api.skimage.transform#skimage.transform.AffineTransform.__init__
+
+__init__(matrix=None, scale=None, rotation=None, shear=None, translation=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.AffineBase.is_affine
+
+is_affine=True

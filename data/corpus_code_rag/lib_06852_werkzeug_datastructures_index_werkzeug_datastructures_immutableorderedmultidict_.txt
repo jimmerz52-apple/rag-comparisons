@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ImmutableOrderedMultiDict.copy
+
+copy()  
+Return a shallow mutable copy of this object. Keep in mind that the standard library’s copy() function is a no-op for this class like for any other python immutable type (eg: tuple).

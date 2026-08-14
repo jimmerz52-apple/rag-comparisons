@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.make_axes_area_auto_adjustable
+
+mpl_toolkits.axes_grid1.axes_divider.make_axes_area_auto_adjustable   mpl_toolkits.axes_grid1.axes_divider.make_axes_area_auto_adjustable(ax, use_axes=None, pad=0.1, adjust_dirs=None)[source]
+
+  Examples using mpl_toolkits.axes_grid1.axes_divider.make_axes_area_auto_adjustable
+ 
+   Make Room For Ylabel Using Axesgrid

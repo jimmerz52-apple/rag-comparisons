@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIG_SETMASK
+
+signal.SIG_SETMASK  
+A possible value for the how parameter to pthread_sigmask() indicating that the signal mask is to be replaced.  New in version 3.3.

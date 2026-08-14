@@ -1,0 +1,7 @@
+# pygame.ref.key#pygame.key.set_repeat
+
+pygame.key.set_repeat() 
+ control how held keys are repeated set_repeat() -> None set_repeat(delay) -> None set_repeat(delay, interval) -> None  When the keyboard repeat is enabled, keys that are held down will generate multiple pygame.KEYDOWN events. The delay parameter is the number of milliseconds before the first repeated pygame.KEYDOWN event will be sent. After that, another pygame.KEYDOWN event will be sent every interval milliseconds. If a delay value is provided and an interval value is not provided or is 0, then the interval will be set to the same value as delay. To disable key repeat call this function with no arguments or with delay set to 0. When pygame is initialized the key repeat is disabled.     
+Raises:
+
+ValueError -- if delay or interval is < 0     Changed in pygame 2.0.0: A ValueError is now raised (instead of a pygame.error) if delay or interval is < 0.

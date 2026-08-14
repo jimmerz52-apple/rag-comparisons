@@ -1,0 +1,7 @@
+# torch.cpp_extension#torch.utils.cpp_extension.include_paths
+
+torch.utils.cpp_extension.include_paths(cuda=False) [source]
+ 
+Get the include paths required to build a C++ or CUDA extension.  Parameters 
+cuda – If True, includes CUDA-specific include paths.  Returns 
+A list of include path strings.

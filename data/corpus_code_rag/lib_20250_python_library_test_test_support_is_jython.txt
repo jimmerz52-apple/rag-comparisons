@@ -1,0 +1,4 @@
+# python.library.test#test.support.is_jython
+
+test.support.is_jython  
+True if the running interpreter is Jython.

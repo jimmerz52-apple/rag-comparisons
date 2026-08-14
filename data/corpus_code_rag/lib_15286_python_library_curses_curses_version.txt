@@ -1,0 +1,4 @@
+# python.library.curses#curses.version
+
+curses.version  
+A bytes object representing the current version of the module. Also available as __version__.

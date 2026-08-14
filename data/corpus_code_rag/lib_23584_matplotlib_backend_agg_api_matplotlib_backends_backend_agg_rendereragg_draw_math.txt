@@ -1,0 +1,5 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.draw_mathtext
+
+draw_mathtext(gc, x, y, s, prop, angle)[source]
+ 
+Draw mathtext using matplotlib.mathtext.

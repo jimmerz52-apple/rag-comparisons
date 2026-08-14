@@ -1,0 +1,4 @@
+# python.library.base64#base64.b32encode
+
+base64.b32encode(s)  
+Encode the bytes-like object s using Base32 and return the encoded bytes.

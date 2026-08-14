@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.minorticks_on
+
+minorticks_on()[source]
+ 
+Turn on colorbar minor ticks.

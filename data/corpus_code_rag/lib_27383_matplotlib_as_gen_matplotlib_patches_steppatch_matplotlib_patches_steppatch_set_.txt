@@ -1,0 +1,14 @@
+# matplotlib._as_gen.matplotlib.patches.steppatch#matplotlib.patches.StepPatch.set_data
+
+set_data(values=None, edges=None, baseline=None)[source]
+ 
+Set StepPatch values, edges and baseline.  Parameters 
+ 
+values1D array-like or None
+
+
+Will not update values, if passing None  
+edges1D array-like, optional
+
+
+baselinefloat, 1D array-like or None

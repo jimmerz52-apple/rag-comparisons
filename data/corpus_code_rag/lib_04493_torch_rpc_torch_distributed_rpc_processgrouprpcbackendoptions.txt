@@ -1,0 +1,16 @@
+# torch.rpc#torch.distributed.rpc.ProcessGroupRpcBackendOptions
+
+class torch.distributed.rpc.ProcessGroupRpcBackendOptions  
+The backend options class for ProcessGroupAgent, which is derived from RpcBackendOptions.  Parameters 
+ 
+num_send_recv_threads (int, optional) – The number of threads in the thread-pool used by ProcessGroupAgent (default: 4). 
+rpc_timeout (float, optional) – The default timeout, in seconds, for RPC requests (default: 60 seconds). If the RPC has not completed in this timeframe, an exception indicating so will be raised. Callers can override this timeout for individual RPCs in rpc_sync() and rpc_async() if necessary. 
+init_method (str, optional) – The URL to initialize ProcessGroupGloo (default: env://).     
+property init_method  
+URL specifying how to initialize the process group. Default is env:// 
+  
+property num_send_recv_threads  
+The number of threads in the thread-pool used by ProcessGroupAgent. 
+  
+property rpc_timeout  
+A float indicating the timeout to use for all RPCs. If an RPC does not complete in this timeframe, it will complete with an exception indicating that it has timed out.

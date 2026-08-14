@@ -1,0 +1,3 @@
+# matplotlib.widgets_api#matplotlib.widgets.ToolHandles.set_visible
+
+set_visible(val)[source]

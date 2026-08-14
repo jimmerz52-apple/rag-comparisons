@@ -1,0 +1,54 @@
+{
+  "methods": [
+    {
+      "method": "semantic_rag",
+      "mean_composite_score": 0.2702391170964139,
+      "mean_generative_score": 0.4025,
+      "mean_extractive_score": 0.1379782341928278,
+      "mean_llm_judge": 0.505,
+      "mean_token_f1": 0.2759564683856556,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.3,
+      "total_tokens": 138091,
+      "prompt_tokens": 135768,
+      "completion_tokens": 2323,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 3.535680291999597,
+      "mean_query_latency_seconds": 2.474348618948716,
+      "p95_query_latency_seconds": 5.0346823666594025,
+      "total_elapsed_seconds": 80.89711212500697,
+      "tokens_per_query": 6904.55
+    },
+    {
+      "method": "rerank_semantic",
+      "mean_composite_score": 0.30240104526187933,
+      "mean_generative_score": 0.45499999999999996,
+      "mean_extractive_score": 0.1498020905237586,
+      "mean_llm_judge": 0.4600000000000001,
+      "mean_token_f1": 0.2996041810475172,
+      "exact_match_rate": 0.0,
+      "contains_answer_rate": 0.45,
+      "total_tokens": 136351,
+      "prompt_tokens": 133761,
+      "completion_tokens": 2590,
+      "estimated_cost_usd": 0.0,
+      "index_seconds": 3.1692507920088246,
+      "mean_query_latency_seconds": 5.746949918702012,
+      "p95_query_latency_seconds": 15.878483022932778,
+      "total_elapsed_seconds": 188.89471529098228,
+      "tokens_per_query": 6817.55
+    }
+  ],
+  "scenarios": [
+    {
+      "method": "rerank_semantic",
+      "query_type": "local",
+      "mean_composite_score": 0.30240104526187933
+    },
+    {
+      "method": "semantic_rag",
+      "query_type": "local",
+      "mean_composite_score": 0.2702391170964139
+    }
+  ]
+}

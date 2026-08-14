@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.dim
+
+dim() → int  
+Returns the number of dimensions of self tensor.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.SourceFileLoader.name
+
+name  
+The name of the module that this loader will handle.

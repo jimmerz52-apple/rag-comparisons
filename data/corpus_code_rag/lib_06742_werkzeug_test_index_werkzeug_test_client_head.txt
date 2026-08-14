@@ -1,0 +1,8 @@
+# werkzeug.test.index#werkzeug.test.Client.head
+
+head(*args, **kw)  
+Call open() with method set to HEAD.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse

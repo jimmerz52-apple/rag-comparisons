@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.OutputChecker.output_difference
+
+output_difference(example, got, optionflags)  
+Return a string describing the differences between the expected output for a given example (example) and the actual output (got). optionflags is the set of option flags used to compare want and got.

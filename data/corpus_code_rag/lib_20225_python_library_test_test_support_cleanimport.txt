@@ -1,0 +1,5 @@
+# python.library.test#test.support.CleanImport
+
+class test.support.CleanImport(*module_names)  
+A context manager to force import to return a new module reference. This is useful for testing module-level behaviors, such as the emission of a DeprecationWarning on import. Example usage: with CleanImport('foo'):
+    importlib.import_module('foo')  # New reference.

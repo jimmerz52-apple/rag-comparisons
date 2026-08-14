@@ -1,0 +1,21 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.BaseDateListView
+
+class BaseDateListView  
+A base class that provides common behavior for all date-based views. There won’t normally be a reason to instantiate BaseDateListView; instantiate one of the subclasses instead. While this view (and its subclasses) are executing, self.object_list will contain the list of objects that the view is operating upon, and self.date_list will contain the list of dates for which data is available. Mixins  DateMixin MultipleObjectMixin  Methods and Attributes  
+allow_empty  
+A boolean specifying whether to display the page if no objects are available. If this is True and no objects are available, the view will display an empty page instead of raising a 404. This is identical to django.views.generic.list.MultipleObjectMixin.allow_empty, except for the default value, which is False. 
+  
+date_list_period  
+Optional A string defining the aggregation period for date_list. It must be one of 'year' (default), 'month', or 'day'. 
+  
+get_dated_items()  
+Returns a 3-tuple containing (date_list, object_list, extra_context). date_list is the list of dates for which data is available. object_list is the list of objects. extra_context is a dictionary of context data that will be added to any context data provided by the MultipleObjectMixin. 
+  
+get_dated_queryset(**lookup)  
+Returns a queryset, filtered using the query arguments defined by lookup. Enforces any restrictions on the queryset, such as allow_empty and allow_future. 
+  
+get_date_list_period()  
+Returns the aggregation period for date_list. Returns date_list_period by default. 
+  
+get_date_list(queryset, date_type=None, ordering='ASC')  
+Returns the list of dates of type date_type for which queryset contains entries. For example, get_date_list(qs, 'year') will return the list of years for which qs has entries. If date_type isn’t provided, the result of get_date_list_period() is used. date_type and ordering are passed to QuerySet.dates().

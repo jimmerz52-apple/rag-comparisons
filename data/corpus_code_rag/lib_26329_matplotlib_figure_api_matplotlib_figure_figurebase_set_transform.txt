@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.set_transform
+
+set_transform(t)[source]
+ 
+Set the artist transform.  Parameters 
+ 
+tTransform

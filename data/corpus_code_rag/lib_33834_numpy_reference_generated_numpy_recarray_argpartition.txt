@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.argpartition
+
+numpy.recarray.argpartition method   recarray.argpartition(kth, axis=- 1, kind='introselect', order=None)
+ 
+Returns the indices that would partition this array. Refer to numpy.argpartition for full documentation.  New in version 1.8.0.   See also  numpy.argpartition
+
+equivalent function

@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.safe_first_element
+
+matplotlib.cbook.safe_first_element(obj)[source]
+ 
+Return the first element in obj. This is an type-independent way of obtaining the first element, supporting both index access and the iterator protocol.

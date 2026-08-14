@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.proj3d.transform
+
+mpl_toolkits.mplot3d.proj3d.transform   mpl_toolkits.mplot3d.proj3d.transform(xs, ys, zs, M)[source]
+ 
+Transform the points by the projection matrix

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DateMixin.get_allow_future
+
+get_allow_future()  
+Determine whether to include “future” objects on this page, where “future” means objects in which the field specified in date_field is greater than the current date/time. Returns allow_future by default.

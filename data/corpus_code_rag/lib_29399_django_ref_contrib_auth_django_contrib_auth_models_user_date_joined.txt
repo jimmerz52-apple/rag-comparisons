@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.User.date_joined
+
+date_joined  
+A datetime designating when the account was created. Is set to the current date/time by default when the account is created.

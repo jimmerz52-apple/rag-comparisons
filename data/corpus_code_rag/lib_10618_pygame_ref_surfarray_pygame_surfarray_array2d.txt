@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.array2d
+
+pygame.surfarray.array2d() 
+ Copy pixels into a 2d array array2d(Surface) -> array  Copy the mapped (raw) pixels from a Surface into a 2D array. The bit depth of the surface will control the size of the integer values, and will work for any type of pixel format. This function will temporarily lock the Surface as pixels are copied (see the pygame.Surface.lock() - lock the Surface memory for pixel access method).

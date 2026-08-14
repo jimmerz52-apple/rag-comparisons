@@ -1,0 +1,6 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.buffer_with_style
+
+GEOSGeometry.buffer_with_style(width, quadsegs=8, end_cap_style=1, join_style=1, mitre_limit=5.0)  
+Same as buffer(), but allows customizing the style of the buffer.  
+end_cap_style can be round (1), flat (2), or square (3). 
+join_style can be round (1), mitre (2), or bevel (3). Mitre ratio limit (mitre_limit) only affects mitered join style.

@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.ring
+
+GEOSGeometry.ring  
+Returns a boolean indicating whether the geometry is a LinearRing.

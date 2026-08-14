@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer#skimage.viewer.CollectionViewer.keyPressEvent
+
+keyPressEvent(event) [source]

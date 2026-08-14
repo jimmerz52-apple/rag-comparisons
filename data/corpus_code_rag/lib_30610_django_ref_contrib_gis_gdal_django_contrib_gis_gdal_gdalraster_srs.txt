@@ -1,0 +1,9 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALRaster.srs
+
+srs  
+The spatial reference system of the raster, as a SpatialReference instance. The SRS can be changed by setting it to an other SpatialReference or providing any input that is accepted by the SpatialReference constructor. >>> rst = GDALRaster({'width': 10, 'height': 20, 'srid': 4326})
+>>> rst.srs.srid
+4326
+>>> rst.srs = 3086
+>>> rst.srs.srid
+3086

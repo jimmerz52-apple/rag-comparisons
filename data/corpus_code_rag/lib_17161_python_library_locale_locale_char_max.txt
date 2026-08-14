@@ -1,0 +1,4 @@
+# python.library.locale#locale.CHAR_MAX
+
+locale.CHAR_MAX  
+This is a symbolic constant used for different values returned by localeconv().

@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_usetex
+
+get_usetex()[source]
+ 
+Return whether this Text object uses TeX for rendering.

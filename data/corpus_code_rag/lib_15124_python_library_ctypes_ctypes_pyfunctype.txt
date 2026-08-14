@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.PYFUNCTYPE
+
+ctypes.PYFUNCTYPE(restype, *argtypes)  
+The returned function prototype creates functions that use the Python calling convention. The function will not release the GIL during the call.

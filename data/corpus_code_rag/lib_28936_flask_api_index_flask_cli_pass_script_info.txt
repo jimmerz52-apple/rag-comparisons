@@ -1,0 +1,6 @@
+# flask.api.index#flask.cli.pass_script_info
+
+flask.cli.pass_script_info(f)  
+Marks a function so that an instance of ScriptInfo is passed as first argument to the click callback.  Parameters 
+f (click.decorators.F) –   Return type 
+click.decorators.F

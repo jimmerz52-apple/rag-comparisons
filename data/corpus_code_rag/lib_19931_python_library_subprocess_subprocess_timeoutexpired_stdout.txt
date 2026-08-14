@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.TimeoutExpired.stdout
+
+stdout  
+Alias for output, for symmetry with stderr.

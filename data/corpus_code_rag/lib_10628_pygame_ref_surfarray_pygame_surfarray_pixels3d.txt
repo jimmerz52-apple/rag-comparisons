@@ -1,0 +1,4 @@
+# pygame.ref.surfarray#pygame.surfarray.pixels3d
+
+pygame.surfarray.pixels3d() 
+ Reference pixels into a 3d array pixels3d(Surface) -> array  Create a new 3D array that directly references the pixel values in a Surface. Any changes to the array will affect the pixels in the Surface. This is a fast operation since no data is copied. This will only work on Surfaces that have 24-bit or 32-bit formats. Lower pixel formats cannot be referenced. The Surface this references will remain locked for the lifetime of the array (see the pygame.Surface.lock() - lock the Surface memory for pixel access method).

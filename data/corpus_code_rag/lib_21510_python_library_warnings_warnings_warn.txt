@@ -1,0 +1,6 @@
+# python.library.warnings#warnings.warn
+
+warnings.warn(message, category=None, stacklevel=1, source=None)  
+Issue a warning, or maybe ignore it or raise an exception. The category argument, if given, must be a warning category class; it defaults to UserWarning. Alternatively, message can be a Warning instance, in which case category will be ignored and message.__class__ will be used. In this case, the message text will be str(message). This function raises an exception if the particular warning issued is changed into an error by the warnings filter. The stacklevel argument can be used by wrapper functions written in Python, like this: def deprecation(message):
+    warnings.warn(message, DeprecationWarning, stacklevel=2)
+ This makes the warning refer to deprecation()’s caller, rather than to the source of deprecation() itself (since the latter would defeat the purpose of the warning message). source, if supplied, is the destroyed object which emitted a ResourceWarning.  Changed in version 3.6: Added source parameter.

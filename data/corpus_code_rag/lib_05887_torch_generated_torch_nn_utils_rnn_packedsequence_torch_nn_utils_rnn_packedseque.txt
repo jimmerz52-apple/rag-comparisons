@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.is_cuda
+
+property is_cuda  
+Returns true if self.data stored on a gpu

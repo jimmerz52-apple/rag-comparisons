@@ -1,0 +1,8 @@
+# python.library.stdtypes#memoryview.obj
+
+obj  
+The underlying object of the memoryview: >>> b  = bytearray(b'xyz')
+>>> m = memoryview(b)
+>>> m.obj is b
+True
+  New in version 3.3.

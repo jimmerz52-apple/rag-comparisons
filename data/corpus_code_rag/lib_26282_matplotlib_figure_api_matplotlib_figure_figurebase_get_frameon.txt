@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.get_frameon
+
+get_frameon()[source]
+ 
+Return the figure's background patch visibility, i.e. whether the figure background will be drawn. Equivalent to Figure.patch.get_visible().

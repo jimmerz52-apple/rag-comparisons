@@ -1,0 +1,104 @@
+# werkzeug.test.index#werkzeug.test.Client
+
+class werkzeug.test.Client(application, response_wrapper=None, use_cookies=True, allow_subdomain_redirects=False)  
+This class allows you to send requests to a wrapped application. The use_cookies parameter indicates whether cookies should be stored and sent for subsequent requests. This is True by default, but passing False will disable this behaviour. If you want to request some subdomain of your application you may set allow_subdomain_redirects to True as if not no external redirects are allowed.  Changed in version 2.0: response_wrapper is always a subclass of :class:TestResponse.   Changelog Changed in version 0.5: Added the use_cookies parameter.   Parameters 
+ 
+application (WSGIApplication) –  
+response_wrapper (Optional[Type[Response]]) –  
+use_cookies (bool) –  
+allow_subdomain_redirects (bool) –    Return type 
+None    
+set_cookie(server_name, key, value='', max_age=None, expires=None, path='/', domain=None, secure=False, httponly=False, samesite=None, charset='utf-8')  
+Sets a cookie in the client’s cookie jar. The server name is required and has to match the one that is also passed to the open call.  Parameters 
+ 
+server_name (str) –  
+key (str) –  
+value (str) –  
+max_age (Optional[Union[datetime.timedelta, int]]) –  
+expires (Optional[Union[str, datetime.datetime, int, float]]) –  
+path (str) –  
+domain (Optional[str]) –  
+secure (bool) –  
+httponly (bool) –  
+samesite (Optional[str]) –  
+charset (str) –    Return type 
+None   
+  
+delete_cookie(server_name, key, path='/', domain=None, secure=False, httponly=False, samesite=None)  
+Deletes a cookie in the test client.  Parameters 
+ 
+server_name (str) –  
+key (str) –  
+path (str) –  
+domain (Optional[str]) –  
+secure (bool) –  
+httponly (bool) –  
+samesite (Optional[str]) –    Return type 
+None   
+  
+open(*args, as_tuple=False, buffered=False, follow_redirects=False, **kwargs)  
+Generate an environ dict from the given arguments, make a request to the application using it, and return the response.  Parameters 
+ 
+args (Any) – Passed to EnvironBuilder to create the environ for the request. If a single arg is passed, it can be an existing EnvironBuilder or an environ dict. 
+buffered (bool) – Convert the iterator returned by the app into a list. If the iterator has a close() method, it is called automatically. 
+follow_redirects (bool) – Make additional requests to follow HTTP redirects until a non-redirect status is returned. TestResponse.history lists the intermediate responses. 
+as_tuple (bool) –  
+kwargs (Any) –    Return type 
+werkzeug.test.TestResponse    Changed in version 2.0: as_tuple is deprecated and will be removed in Werkzeug 2.1. Use TestResponse.request and request.environ instead.   Changed in version 2.0: The request input stream is closed when calling response.close(). Input streams for redirects are automatically closed.   Changelog Changed in version 0.5: If a dict is provided as file in the dict for the data parameter the content type has to be called content_type instead of mimetype. This change was made for consistency with werkzeug.FileWrapper.   Changed in version 0.5: Added the follow_redirects parameter.  
+
+  
+get(*args, **kw)  
+Call open() with method set to GET.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+post(*args, **kw)  
+Call open() with method set to POST.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+put(*args, **kw)  
+Call open() with method set to PUT.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+delete(*args, **kw)  
+Call open() with method set to DELETE.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+patch(*args, **kw)  
+Call open() with method set to PATCH.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+options(*args, **kw)  
+Call open() with method set to OPTIONS.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+head(*args, **kw)  
+Call open() with method set to HEAD.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse   
+  
+trace(*args, **kw)  
+Call open() with method set to TRACE.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse

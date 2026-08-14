@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.count_nonzero
+
+tf.experimental.numpy.count_nonzero TensorFlow variant of NumPy's count_nonzero. 
+tf.experimental.numpy.count_nonzero(
+    a, axis=None
+)
+ Unsupported arguments: keepdims. See the NumPy documentation for numpy.count_nonzero.

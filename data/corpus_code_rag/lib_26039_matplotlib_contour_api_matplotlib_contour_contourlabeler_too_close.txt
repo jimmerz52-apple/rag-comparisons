@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.too_close
+
+too_close(x, y, lw)[source]
+ 
+Return whether a label is already near this location.

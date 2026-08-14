@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_size
+
+set_size(fontsize)[source]
+ 
+Alias for set_fontsize.

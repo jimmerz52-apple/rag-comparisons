@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.clear_bpbynumber
+
+clear_bpbynumber(arg)  
+Delete the breakpoint which has the index arg in the Breakpoint.bpbynumber. If arg is not numeric or out of range, return an error message.

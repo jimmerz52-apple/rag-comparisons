@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.colors.get_named_colors_mapping
+
+matplotlib.colors.get_named_colors_mapping   matplotlib.colors.get_named_colors_mapping()[source]
+ 
+Return the global mapping of names to named colors.

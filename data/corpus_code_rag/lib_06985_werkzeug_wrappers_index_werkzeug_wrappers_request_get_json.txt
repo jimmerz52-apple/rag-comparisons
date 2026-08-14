@@ -1,0 +1,9 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.get_json
+
+get_json(force=False, silent=False, cache=True)  
+Parse data as JSON. If the mimetype does not indicate JSON (application/json, see is_json()), this returns None. If parsing fails, on_json_loading_failed() is called and its return value is used as the return value.  Parameters 
+ 
+force (bool) – Ignore the mimetype and always try to parse JSON. 
+silent (bool) – Silence parsing errors and return None instead. 
+cache (bool) – Store the parsed JSON to return for subsequent calls.   Return type 
+Optional[Any]

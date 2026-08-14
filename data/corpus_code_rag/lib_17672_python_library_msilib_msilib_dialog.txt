@@ -1,0 +1,24 @@
+# python.library.msilib#msilib.Dialog
+
+class msilib.Dialog(db, name, x, y, w, h, attr, title, first, default, cancel)  
+Return a new Dialog object. An entry in the Dialog table is made, with the specified coordinates, dialog attributes, title, name of the first, default, and cancel controls.  
+control(name, type, x, y, width, height, attributes, property, text, control_next, help)  
+Return a new Control object. An entry in the Control table is made with the specified parameters. This is a generic method; for specific types, specialized methods are provided. 
+  
+text(name, x, y, width, height, attributes, text)  
+Add and return a Text control. 
+  
+bitmap(name, x, y, width, height, text)  
+Add and return a Bitmap control. 
+  
+line(name, x, y, width, height)  
+Add and return a Line control. 
+  
+pushbutton(name, x, y, width, height, attributes, text, next_control)  
+Add and return a PushButton control. 
+  
+radiogroup(name, x, y, width, height, attributes, property, text, next_control)  
+Add and return a RadioButtonGroup control. 
+  
+checkbox(name, x, y, width, height, attributes, property, text, next_control)  
+Add and return a CheckBox control.

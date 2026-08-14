@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.metrics.detcurvedisplay#sklearn.metrics.DetCurveDisplay.plot
+
+plot(ax=None, *, name=None, **kwargs) [source]
+ 
+Plot visualization.  Parameters 
+ 
+axmatplotlib axes, default=None 
+
+Axes object to plot on. If None, a new figure and axes is created.  
+namestr, default=None 
+
+Name of DET curve for labeling. If None, use the name of the estimator.    Returns 
+ 
+displayDetCurveDisplay 
+
+Object that stores computed values.

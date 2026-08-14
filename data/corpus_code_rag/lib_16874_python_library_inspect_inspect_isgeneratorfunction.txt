@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isgeneratorfunction
+
+inspect.isgeneratorfunction(object)  
+Return True if the object is a Python generator function.  Changed in version 3.8: Functions wrapped in functools.partial() now return True if the wrapped function is a Python generator function.

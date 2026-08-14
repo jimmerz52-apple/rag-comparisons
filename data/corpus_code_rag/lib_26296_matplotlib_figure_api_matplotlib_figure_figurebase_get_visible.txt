@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.get_visible
+
+get_visible()[source]
+ 
+Return the visibility.

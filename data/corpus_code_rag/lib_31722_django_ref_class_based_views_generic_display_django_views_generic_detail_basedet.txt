@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-display#django.views.generic.detail.BaseDetailView.get
+
+get(request, *args, **kwargs)  
+Adds object to the context.

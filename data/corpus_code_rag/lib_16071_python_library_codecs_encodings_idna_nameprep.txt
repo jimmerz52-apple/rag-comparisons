@@ -1,0 +1,4 @@
+# python.library.codecs#encodings.idna.nameprep
+
+encodings.idna.nameprep(label)  
+Return the nameprepped version of label. The implementation currently assumes query strings, so AllowUnassigned is true.

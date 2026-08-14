@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.play
+
+play() 
+ start playing audio play(track, start=None, end=None) -> None  Playback audio from an audio cdrom in the drive. Besides the track number argument, you can also pass a starting and ending time for playback. The start and end time are in seconds, and can limit the section of an audio track played. If you pass a start time but no end, the audio will play to the end of the track. If you pass a start time and 'None' for the end time, the audio will play to the end of the entire disc. See the CD.get_numtracks() and CD.get_track_audio() to find tracks to playback. Note, track 0 is the first track on the CD. Track numbers start at zero.

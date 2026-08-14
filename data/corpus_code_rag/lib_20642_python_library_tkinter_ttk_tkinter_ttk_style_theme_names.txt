@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Style.theme_names
+
+theme_names()  
+Returns a list of all known themes.

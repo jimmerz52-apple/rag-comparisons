@@ -1,0 +1,12 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.floating_axes.fixedaxisartisthelper
+
+mpl_toolkits.axisartist.floating_axes.FixedAxisArtistHelper   classmpl_toolkits.axisartist.floating_axes.FixedAxisArtistHelper(grid_helper, side, nth_coord_ticks=None)[source]
+ 
+Bases: mpl_toolkits.axisartist.grid_helper_curvelinear.FloatingAxisArtistHelper  nth_coord = along which coordinate value varies.
+
+nth_coord = 0 -> x axis, nth_coord = 1 -> y axis     get_line(axes)[source]
+
+   get_tick_iterators(axes)[source]
+ 
+tick_loc, tick_angle, tick_label, (optionally) tick_label 
+   update_lim(axes)[source]

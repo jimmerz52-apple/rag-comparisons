@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.add_view
+
+ModelAdmin.add_view(request, form_url='', extra_context=None)  
+Django view for the model instance addition page. See note below.

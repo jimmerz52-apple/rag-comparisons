@@ -1,0 +1,6 @@
+# 536
+Task: 536
+
+# Write a function to select the nth items of a list.
+def nth_items(list,n):
+ return list[::n]

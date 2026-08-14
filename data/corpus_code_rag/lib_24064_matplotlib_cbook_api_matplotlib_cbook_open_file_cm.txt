@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.open_file_cm
+
+matplotlib.cbook.open_file_cm(path_or_file, mode='r', encoding=None)[source]
+ 
+Pass through file objects and context-manage path-likes.

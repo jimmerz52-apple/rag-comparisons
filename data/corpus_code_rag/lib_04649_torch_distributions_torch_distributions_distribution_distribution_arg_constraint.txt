@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.arg_constraints
+
+property arg_constraints  
+Returns a dictionary from argument names to Constraint objects that should be satisfied by each argument of this distribution. Args that are not tensors need not appear in this dict.

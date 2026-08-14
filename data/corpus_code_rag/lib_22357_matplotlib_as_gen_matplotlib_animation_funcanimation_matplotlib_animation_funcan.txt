@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.funcanimation#matplotlib.animation.FuncAnimation.new_frame_seq
+
+new_frame_seq()[source]
+ 
+Return a new sequence of frame information.

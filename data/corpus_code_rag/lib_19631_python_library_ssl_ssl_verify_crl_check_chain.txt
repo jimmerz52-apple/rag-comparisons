@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.VERIFY_CRL_CHECK_CHAIN
+
+ssl.VERIFY_CRL_CHECK_CHAIN  
+Possible value for SSLContext.verify_flags. In this mode, CRLs of all certificates in the peer cert chain are checked.  New in version 3.4.

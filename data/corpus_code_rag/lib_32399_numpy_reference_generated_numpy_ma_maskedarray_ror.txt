@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ror__
+
+numpy.ma.MaskedArray.__ror__ method   ma.MaskedArray.__ror__(value, /)
+ 
+Return value|self.

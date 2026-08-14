@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.SelectorKey.fd
+
+fd  
+Underlying file descriptor.

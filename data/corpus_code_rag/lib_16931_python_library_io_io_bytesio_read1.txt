@@ -1,0 +1,4 @@
+# python.library.io#io.BytesIO.read1
+
+read1([size])  
+In BytesIO, this is the same as read().  Changed in version 3.7: The size argument is now optional.

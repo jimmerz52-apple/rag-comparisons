@@ -1,0 +1,117 @@
+# matplotlib._as_gen.matplotlib.quiver.quiverkey
+
+matplotlib.quiver.QuiverKey   classmatplotlib.quiver.QuiverKey(Q, X, Y, U, label, *, angle=0, coordinates='axes', color=None, labelsep=0.1, labelpos='N', labelcolor=None, fontproperties=None, **kw)[source]
+ 
+Bases: matplotlib.artist.Artist Labelled arrow for use as a quiver plot scale key. Add a key to a quiver plot. The positioning of the key depends on X, Y, coordinates, and labelpos. If labelpos is 'N' or 'S', X, Y give the position of the middle of the key arrow. If labelpos is 'E', X, Y positions the head, and if labelpos is 'W', X, Y positions the tail; in either of these two cases, X, Y is somewhere in the middle of the arrow+label key object.  Parameters 
+ 
+Qmatplotlib.quiver.Quiver
+
+
+A Quiver object as returned by a call to quiver().  
+X, Yfloat
+
+
+The location of the key.  
+Ufloat
+
+
+The length of the key.  
+labelstr
+
+
+The key label (e.g., length and units of the key).  
+anglefloat, default: 0
+
+
+The angle of the key arrow, in degrees anti-clockwise from the x-axis.  
+coordinates{'axes', 'figure', 'data', 'inches'}, default: 'axes'
+
+
+Coordinate system and units for X, Y: 'axes' and 'figure' are normalized coordinate systems with (0, 0) in the lower left and (1, 1) in the upper right; 'data' are the axes data coordinates (used for the locations of the vectors in the quiver plot itself); 'inches' is position in the figure in inches, with (0, 0) at the lower left corner.  
+colorcolor
+
+
+Overrides face and edge colors from Q.  
+labelpos{'N', 'S', 'E', 'W'}
+
+
+Position the label above, below, to the right, to the left of the arrow, respectively.  
+labelsepfloat, default: 0.1
+
+
+Distance in inches between the arrow and the label.  
+labelcolorcolor, default: rcParams["text.color"] (default: 'black')
+
+
+Label color.  
+fontpropertiesdict, optional
+
+
+A dictionary with keyword arguments accepted by the FontProperties initializer: family, style, variant, size, weight.  **kwargs
+
+Any additional keyword arguments are used to override vector properties taken from Q.       contains(mouseevent)[source]
+ 
+Test whether the artist contains the mouse event.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details.     
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   halign={'E': 'left', 'N': 'center', 'S': 'center', 'W': 'right'}
+
+   pivot={'E': 'tip', 'N': 'middle', 'S': 'middle', 'W': 'tail'}
+
+   remove()[source]
+ 
+Remove the artist from the figure if possible. The effect will not be visible until the figure is redrawn, e.g., with FigureCanvasBase.draw_idle. Call relim to update the axes limits if desired. Note: relim will not see collections even if the collection was added to the axes with autolim = True. Note: there is no support for removing the artist's legend entry. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, label=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure unknown  
+gid str  
+in_layout bool  
+label object  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   
+   set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure
+
+   
+   valign={'E': 'center', 'N': 'bottom', 'S': 'top', 'W': 'center'}
+
+ 
+  Examples using matplotlib.quiver.QuiverKey
+ 
+   Advanced quiver and quiverkey functions

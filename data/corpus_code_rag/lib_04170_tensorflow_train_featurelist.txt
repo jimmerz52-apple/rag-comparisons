@@ -1,0 +1,9 @@
+# tensorflow.train.featurelist
+
+tf.train.FeatureList     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.FeatureList 
+ 
+
+
+ Attributes
+  feature   repeated Feature feature

@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.getwche
+
+msvcrt.getwche()  
+Wide char variant of getche(), returning a Unicode value.

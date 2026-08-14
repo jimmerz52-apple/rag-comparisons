@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.PicklingError
+
+exception pickle.PicklingError  
+Error raised when an unpicklable object is encountered by Pickler. It inherits PickleError. Refer to What can be pickled and unpickled? to learn what kinds of objects can be pickled.

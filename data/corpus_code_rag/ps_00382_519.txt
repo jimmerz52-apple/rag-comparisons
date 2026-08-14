@@ -1,0 +1,8 @@
+# 519
+Task: 519
+
+# Write a function to calculate volume of a tetrahedron.
+import math
+def volume_tetrahedron(num):
+	volume = (num ** 3 / (6 * math.sqrt(2)))	
+	return round(volume, 2)

@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.set_allowed
+
+pygame.event.set_allowed() 
+ control which events are allowed on the queue set_allowed(type) -> None set_allowed(typelist) -> None set_allowed(None) -> None  The given event types are allowed to appear on the event queue. By default, all event types can be placed on the queue. It is safe to enable an event type multiple times. If None is passed as the argument, ALL of the event types are allowed to be placed on the queue.

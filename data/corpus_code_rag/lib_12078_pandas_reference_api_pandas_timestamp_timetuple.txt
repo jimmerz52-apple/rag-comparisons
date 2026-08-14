@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timestamp.timetuple
+
+pandas.Timestamp.timetuple   Timestamp.timetuple()
+ 
+Return time tuple, compatible with time.localtime().

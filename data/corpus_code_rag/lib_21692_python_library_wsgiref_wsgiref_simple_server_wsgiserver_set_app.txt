@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.simple_server.WSGIServer.set_app
+
+set_app(application)  
+Sets the callable application as the WSGI application that will receive requests.

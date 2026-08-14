@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.normalize_ip
+
+normalize_ip() 
+ normalizes the vector in place so that its length is 1. normalize_ip() -> None  Normalizes the vector so that it has length equal to 1. The direction of the vector is not changed.

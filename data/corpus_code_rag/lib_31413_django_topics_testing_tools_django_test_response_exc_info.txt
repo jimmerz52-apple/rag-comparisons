@@ -1,0 +1,7 @@
+# django.topics.testing.tools#django.test.Response.exc_info
+
+exc_info  
+A tuple of three values that provides information about the unhandled exception, if any, that occurred during the view. The values are (type, value, traceback), the same as returned by Python’s sys.exc_info(). Their meanings are:  
+type: The type of the exception. 
+value: The exception instance. 
+traceback: A traceback object which encapsulates the call stack at the point where the exception originally occurred.  If no exception occurred, then exc_info will be None.

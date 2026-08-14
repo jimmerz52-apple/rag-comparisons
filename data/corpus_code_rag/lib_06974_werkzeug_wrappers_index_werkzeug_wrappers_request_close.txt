@@ -1,0 +1,5 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.close
+
+close()  
+Closes associated resources of this request object. This closes all file handles explicitly. You can also use the request object in a with statement which will automatically close it.  Changelog New in version 0.9.   Return type 
+None

@@ -1,0 +1,9 @@
+# torch.overrides#torch.overrides.has_torch_function
+
+torch.overrides.has_torch_function()  
+Check for __torch_function__ implementations in the elements of an iterable. Considers exact Tensor s and Parameter s non-dispatchable. :param relevant_args: Iterable or aguments to check for __torch_function__ methods. :type relevant_args: iterable  Returns 
+True if any of the elements of relevant_args have __torch_function__ implementations, False otherwise.  Return type 
+bool    See also  
+torch.is_tensor_like() 
+
+Checks if something is a Tensor-like, including an exact Tensor.

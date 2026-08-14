@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.ProjectionRegistry.register
+
+register(*projections)[source]
+ 
+Register a new set of projections.

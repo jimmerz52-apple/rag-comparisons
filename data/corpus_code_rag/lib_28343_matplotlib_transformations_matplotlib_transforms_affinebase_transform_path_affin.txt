@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.AffineBase.transform_path_affine
+
+transform_path_affine(path)[source]
+ 
+Apply the affine part of this transform to Path path, returning a new Path. transform_path(path) is equivalent to transform_path_affine(transform_path_non_affine(values)).

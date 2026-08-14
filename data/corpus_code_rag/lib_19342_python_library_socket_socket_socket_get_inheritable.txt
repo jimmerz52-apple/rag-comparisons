@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.get_inheritable
+
+socket.get_inheritable()  
+Get the inheritable flag of the socket’s file descriptor or socket’s handle: True if the socket can be inherited in child processes, False if it cannot.  New in version 3.4.

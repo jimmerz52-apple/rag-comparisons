@@ -1,0 +1,23 @@
+# numpy.reference.generated.numpy.ndarray.__setstate__
+
+numpy.ndarray.__setstate__ method   ndarray.__setstate__(state, /)
+ 
+For unpickling. The state argument must be a sequence that contains the following elements:  Parameters 
+ 
+versionint
+
+
+optional pickle version. If omitted defaults to 0.  
+shapetuple
+
+
+dtypedata-type
+
+
+isFortranbool
+
+
+rawdatastring or list
+
+
+a binary string with the data (or a list if ‘a’ is an object array)

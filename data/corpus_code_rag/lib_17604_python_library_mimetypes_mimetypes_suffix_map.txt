@@ -1,0 +1,4 @@
+# python.library.mimetypes#mimetypes.suffix_map
+
+mimetypes.suffix_map  
+Dictionary mapping suffixes to suffixes. This is used to allow recognition of encoded files for which the encoding and the type are indicated by the same extension. For example, the .tgz extension is mapped to .tar.gz to allow the encoding and type to be recognized separately.

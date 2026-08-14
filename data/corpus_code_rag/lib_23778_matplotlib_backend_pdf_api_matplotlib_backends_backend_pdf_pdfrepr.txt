@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.pdfRepr
+
+matplotlib.backends.backend_pdf.pdfRepr(obj)[source]
+ 
+Map Python objects to PDF syntax.

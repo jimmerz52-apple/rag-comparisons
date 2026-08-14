@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.ROUND_UP
+
+decimal.ROUND_UP  
+Round away from zero.

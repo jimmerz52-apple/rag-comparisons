@@ -1,0 +1,10 @@
+# torch.nn.functional#torch.nn.functional.pixel_unshuffle
+
+torch.nn.functional.pixel_unshuffle(input, downscale_factor) → Tensor  
+Reverses the PixelShuffle operation by rearranging elements in a tensor of shape (∗,C,H×r,W×r)(*, C, H \times r, W \times r)  to a tensor of shape (∗,C×r2,H,W)(*, C \times r^2, H, W) , where r is the downscale_factor. See PixelUnshuffle for details.  Parameters 
+ 
+input (Tensor) – the input tensor 
+downscale_factor (int) – factor to increase spatial resolution by    Examples: >>> input = torch.randn(1, 1, 12, 12)
+>>> output = torch.nn.functional.pixel_unshuffle(input, 3)
+>>> print(output.size())
+torch.Size([1, 9, 4, 4])

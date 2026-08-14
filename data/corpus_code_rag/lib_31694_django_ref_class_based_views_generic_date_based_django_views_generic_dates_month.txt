@@ -1,0 +1,43 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.MonthArchiveView
+
+class MonthArchiveView  
+A monthly archive page showing all objects in a given month. Objects with a date in the future are not displayed unless you set allow_future to True. Ancestors (MRO)  django.views.generic.list.MultipleObjectTemplateResponseMixin django.views.generic.base.TemplateResponseMixin django.views.generic.dates.BaseMonthArchiveView django.views.generic.dates.YearMixin django.views.generic.dates.MonthMixin django.views.generic.dates.BaseDateListView django.views.generic.list.MultipleObjectMixin django.views.generic.dates.DateMixin django.views.generic.base.View  Context In addition to the context provided by MultipleObjectMixin (via BaseDateListView), the template’s context will be:  
+date_list: A QuerySet object containing all days that have objects available in the given month, according to queryset, represented as datetime.datetime objects, in ascending order. 
+month: A date object representing the given month. 
+next_month: A date object representing the first day of the next month, according to allow_empty and allow_future. 
+previous_month: A date object representing the first day of the previous month, according to allow_empty and allow_future.  Notes  Uses a default template_name_suffix of _archive_month.  Example myapp/views.py: from django.views.generic.dates import MonthArchiveView
+
+from myapp.models import Article
+
+class ArticleMonthArchiveView(MonthArchiveView):
+    queryset = Article.objects.all()
+    date_field = "pub_date"
+    allow_future = True
+ Example myapp/urls.py: from django.urls import path
+
+from myapp.views import ArticleMonthArchiveView
+
+urlpatterns = [
+    # Example: /2012/08/
+    path('<int:year>/<int:month>/',
+         ArticleMonthArchiveView.as_view(month_format='%m'),
+         name="archive_month_numeric"),
+    # Example: /2012/aug/
+    path('<int:year>/<str:month>/',
+         ArticleMonthArchiveView.as_view(),
+         name="archive_month"),
+]
+ Example myapp/article_archive_month.html: <ul>
+    {% for article in object_list %}
+        <li>{{ article.pub_date|date:"F j, Y" }}: {{ article.title }}</li>
+    {% endfor %}
+</ul>
+
+<p>
+    {% if previous_month %}
+        Previous Month: {{ previous_month|date:"F Y" }}
+    {% endif %}
+    {% if next_month %}
+        Next Month: {{ next_month|date:"F Y" }}
+    {% endif %}
+</p>

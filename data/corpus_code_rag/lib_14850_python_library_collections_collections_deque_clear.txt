@@ -1,0 +1,4 @@
+# python.library.collections#collections.deque.clear
+
+clear()  
+Remove all elements from the deque leaving it with length 0.

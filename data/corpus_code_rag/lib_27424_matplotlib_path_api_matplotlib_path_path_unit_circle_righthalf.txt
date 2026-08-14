@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.unit_circle_righthalf
+
+classmethodunit_circle_righthalf()[source]
+ 
+Return a Path of the right half of a unit circle. See Path.circle for the reference on the approximation used.

@@ -1,0 +1,7 @@
+# 667
+Task: 667
+
+# Write a python function to count number of vowels in the string.
+def Check_Vow(string, vowels): 
+    final = [each for each in string if each in vowels] 
+    return(len(final))

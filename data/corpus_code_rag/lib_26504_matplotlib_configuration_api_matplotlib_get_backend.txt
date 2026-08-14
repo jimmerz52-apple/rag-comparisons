@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.get_backend
+
+matplotlib.get_backend()[source]
+ 
+Return the name of the current backend.  See also  matplotlib.use

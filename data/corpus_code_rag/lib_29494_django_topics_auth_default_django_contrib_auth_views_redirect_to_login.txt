@@ -1,0 +1,7 @@
+# django.topics.auth.default#django.contrib.auth.views.redirect_to_login
+
+redirect_to_login(next, login_url=None, redirect_field_name='next')  
+Redirects to the login page, and then back to another URL after a successful login. Required arguments:  
+next: The URL to redirect to after a successful login.  Optional arguments:  
+login_url: The URL of the login page to redirect to. Defaults to settings.LOGIN_URL if not supplied. 
+redirect_field_name: The name of a GET field containing the URL to redirect to after log out. Overrides next if the given GET parameter is passed.

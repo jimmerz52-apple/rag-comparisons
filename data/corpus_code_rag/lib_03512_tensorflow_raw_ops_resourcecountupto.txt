@@ -1,0 +1,20 @@
+# tensorflow.raw_ops.resourcecountupto
+
+tf.raw_ops.ResourceCountUpTo Increments variable pointed to by 'resource' until it reaches 'limit'.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.ResourceCountUpTo  
+tf.raw_ops.ResourceCountUpTo(
+    resource, limit, T, name=None
+)
+
+ 
+
+
+ Args
+  resource   A Tensor of type resource. Should be from a scalar Variable node.  
+  limit   An int. If incrementing ref would bring it above limit, instead generates an 'OutOfRange' error.  
+  T   A tf.DType from: tf.int32, tf.int64.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type T.

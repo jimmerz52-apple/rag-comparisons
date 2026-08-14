@@ -1,0 +1,8 @@
+# torch.pipeline#torch.distributed.pipeline.sync.Pipe.forward
+
+forward(input) [source]
+ 
+Processes a single input mini-batch through the pipe and returns an RRef pointing to the output. Pipe is a fairly transparent module wrapper. It doesn’t modify the input and output signature of the underlying module. But there’s type restriction. Input and output have to be a Tensor or a sequence of tensors. This restriction is applied at partition boundaries too. The input tensor is split into multiple micro-batches based on the chunks parameter used to initialize Pipe. The batch size is assumed to be the first dimension of the tensor and if the batch size is less than chunks, the number of micro-batches is equal to the batch size.  Parameters 
+input (torch.Tensor or sequence of Tensor) – input mini-batch  Returns 
+RRef to the output of the mini-batch  Raises 
+TypeError – input is not a tensor or sequence of tensors.

@@ -1,0 +1,7 @@
+# tensorflow.compat.v1.flags.define_string
+
+tf.compat.v1.flags.DEFINE_string Registers a flag whose value can be any string.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.DEFINE_string  
+tf.compat.v1.flags.DEFINE_string(
+    name, default, help, flag_values=_flagvalues.FLAGS, **args
+)

@@ -1,0 +1,63 @@
+# django.ref.forms.widgets#django.forms.RadioSelect
+
+class RadioSelect  
+ 
+template_name: 'django/forms/widgets/radio.html'
+ 
+option_template_name: 'django/forms/widgets/radio_option.html'
+  Similar to Select, but rendered as a list of radio buttons within <div> tags: <div>
+  <div><input type="radio" name="..."></div>
+  ...
+</div>
+  Changed in Django 4.0: So they are announced more concisely by screen readers, radio buttons were changed to render in <div> tags.  For more granular control over the generated markup, you can loop over the radio buttons in the template. Assuming a form myform with a field beatles that uses a RadioSelect as its widget: <fieldset>
+    <legend>{{ myform.beatles.label }}</legend>
+    {% for radio in myform.beatles %}
+    <div class="myradio">
+        {{ radio }}
+    </div>
+    {% endfor %}
+</fieldset>
+ This would generate the following HTML: <fieldset>
+    <legend>Radio buttons</legend>
+    <div class="myradio">
+        <label for="id_beatles_0"><input id="id_beatles_0" name="beatles" type="radio" value="john" required> John</label>
+    </div>
+    <div class="myradio">
+        <label for="id_beatles_1"><input id="id_beatles_1" name="beatles" type="radio" value="paul" required> Paul</label>
+    </div>
+    <div class="myradio">
+        <label for="id_beatles_2"><input id="id_beatles_2" name="beatles" type="radio" value="george" required> George</label>
+    </div>
+    <div class="myradio">
+        <label for="id_beatles_3"><input id="id_beatles_3" name="beatles" type="radio" value="ringo" required> Ringo</label>
+    </div>
+</fieldset>
+ That included the <label> tags. To get more granular, you can use each radio button’s tag, choice_label and id_for_label attributes. For example, this template… <fieldset>
+    <legend>{{ myform.beatles.label }}</legend>
+    {% for radio in myform.beatles %}
+    <label for="{{ radio.id_for_label }}">
+        {{ radio.choice_label }}
+        <span class="radio">{{ radio.tag }}</span>
+    </label>
+    {% endfor %}
+</fieldset>
+ …will result in the following HTML: <fieldset>
+    <legend>Radio buttons</legend>
+    <label for="id_beatles_0">
+        John
+        <span class="radio"><input id="id_beatles_0" name="beatles" type="radio" value="john" required></span>
+    </label>
+    <label for="id_beatles_1">
+        Paul
+        <span class="radio"><input id="id_beatles_1" name="beatles" type="radio" value="paul" required></span>
+    </label>
+    <label for="id_beatles_2">
+        George
+        <span class="radio"><input id="id_beatles_2" name="beatles" type="radio" value="george" required></span>
+    </label>
+    <label for="id_beatles_3">
+        Ringo
+        <span class="radio"><input id="id_beatles_3" name="beatles" type="radio" value="ringo" required></span>
+    </label>
+</fieldset>
+ If you decide not to loop over the radio buttons – e.g., if your template includes {{ myform.beatles }} – they’ll be output in a <div> with <div> tags, as above. The outer <div> container receives the id attribute of the widget, if defined, or BoundField.auto_id otherwise. When looping over the radio buttons, the label and input tags include for and id attributes, respectively. Each radio button has an id_for_label attribute to output the element’s ID.

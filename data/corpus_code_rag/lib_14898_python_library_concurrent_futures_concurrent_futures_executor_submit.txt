@@ -1,0 +1,6 @@
+# python.library.concurrent.futures#concurrent.futures.Executor.submit
+
+submit(fn, /, *args, **kwargs)  
+Schedules the callable, fn, to be executed as fn(*args **kwargs) and returns a Future object representing the execution of the callable. with ThreadPoolExecutor(max_workers=1) as executor:
+    future = executor.submit(pow, 323, 1235)
+    print(future.result())

@@ -1,0 +1,4 @@
+# python.library.zoneinfo#zoneinfo.ZoneInfo.from_file
+
+classmethod ZoneInfo.from_file(fobj, /, key=None)  
+Constructs a ZoneInfo object from a file-like object returning bytes (e.g. a file opened in binary mode or an io.BytesIO object). Unlike the primary constructor, this always constructs a new object. The key parameter sets the name of the zone for the purposes of __str__() and __repr__(). Objects created via this constructor cannot be pickled (see pickling).

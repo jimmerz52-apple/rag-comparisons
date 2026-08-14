@@ -1,0 +1,4 @@
+# python.library.test#test.support.fs_is_case_insensitive
+
+test.support.fs_is_case_insensitive(directory)  
+Return True if the file system for directory is case-insensitive.

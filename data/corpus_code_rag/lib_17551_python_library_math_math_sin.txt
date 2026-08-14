@@ -1,0 +1,4 @@
+# python.library.math#math.sin
+
+math.sin(x)  
+Return the sine of x radians.

@@ -1,0 +1,4 @@
+# torch.backends#torch.backends.cuda.matmul.allow_tf32
+
+torch.backends.cuda.matmul.allow_tf32  
+A bool that controls whether TensorFloat-32 tensor cores may be used in matrix multiplications on Ampere or newer GPUs. See TensorFloat-32(TF32) on Ampere devices.

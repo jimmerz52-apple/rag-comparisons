@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.ErrorByteIndex
+
+xmlparser.ErrorByteIndex  
+Byte index at which an error occurred.

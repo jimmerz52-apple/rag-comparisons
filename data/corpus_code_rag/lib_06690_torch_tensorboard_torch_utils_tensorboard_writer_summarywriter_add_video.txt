@@ -1,0 +1,13 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_video
+
+add_video(tag, vid_tensor, global_step=None, fps=4, walltime=None) [source]
+ 
+Add video data to summary. Note that this requires the moviepy package.  Parameters 
+ 
+tag (string) – Data identifier 
+vid_tensor (torch.Tensor) – Video data 
+global_step (int) – Global step value to record 
+fps (float or int) – Frames per second 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event     Shape:
+
+vid_tensor: (N,T,C,H,W)(N, T, C, H, W) . The values should lie in [0, 255] for type uint8 or [0, 1] for type float.

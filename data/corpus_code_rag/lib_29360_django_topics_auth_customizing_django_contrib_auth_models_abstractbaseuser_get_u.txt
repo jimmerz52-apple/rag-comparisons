@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.AbstractBaseUser.get_username
+
+get_username()  
+Returns the value of the field nominated by USERNAME_FIELD.

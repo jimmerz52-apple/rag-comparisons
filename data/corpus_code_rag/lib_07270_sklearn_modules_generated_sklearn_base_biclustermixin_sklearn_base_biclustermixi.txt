@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.base.biclustermixin#sklearn.base.BiclusterMixin.get_indices
+
+get_indices(i) [source]
+ 
+Row and column indices of the i’th bicluster. Only works if rows_ and columns_ attributes exist.  Parameters 
+ 
+iint 
+
+The index of the cluster.    Returns 
+ 
+row_indndarray, dtype=np.intp 
+
+Indices of rows in the dataset that belong to the bicluster.  
+col_indndarray, dtype=np.intp 
+
+Indices of columns in the dataset that belong to the bicluster.

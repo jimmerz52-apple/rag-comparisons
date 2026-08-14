@@ -1,0 +1,4 @@
+# django.ref.contrib.contenttypes#django.contrib.contenttypes.models.ContentType.get_object_for_this_type
+
+ContentType.get_object_for_this_type(**kwargs)  
+Takes a set of valid lookup arguments for the model the ContentType represents, and does a get() lookup on that model, returning the corresponding object.

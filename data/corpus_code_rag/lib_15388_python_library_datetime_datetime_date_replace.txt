@@ -1,0 +1,7 @@
+# python.library.datetime#datetime.date.replace
+
+date.replace(year=self.year, month=self.month, day=self.day)  
+Return a date with the same value, except for those parameters given new values by whichever keyword arguments are specified. Example: >>> from datetime import date
+>>> d = date(2002, 12, 31)
+>>> d.replace(day=26)
+datetime.date(2002, 12, 26)

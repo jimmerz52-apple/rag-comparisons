@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.in_axes
+
+matplotlib.axes.Axes.in_axes   Axes.in_axes(mouseevent)[source]
+ 
+Return whether the given event (in display coords) is in the Axes.

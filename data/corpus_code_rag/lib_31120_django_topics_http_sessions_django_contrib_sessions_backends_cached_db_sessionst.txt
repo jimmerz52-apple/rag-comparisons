@@ -1,0 +1,6 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.cached_db.SessionStore
+
+class backends.cached_db.SessionStore  
+Implements cached database-backed session store.  
+cache_key_prefix  
+A prefix added to a session key to build a cache key string.

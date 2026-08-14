@@ -1,0 +1,4 @@
+# python.library.select#select.epoll.fileno
+
+epoll.fileno()  
+Return the file descriptor number of the control fd.

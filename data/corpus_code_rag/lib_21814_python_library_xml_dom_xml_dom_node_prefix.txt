@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.prefix
+
+Node.prefix  
+The part of the tagName preceding the colon if there is one, else the empty string. The value is a string, or None.

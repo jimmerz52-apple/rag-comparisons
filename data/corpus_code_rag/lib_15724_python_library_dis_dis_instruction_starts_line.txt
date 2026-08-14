@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.starts_line
+
+starts_line  
+line started by this opcode (if any), otherwise None

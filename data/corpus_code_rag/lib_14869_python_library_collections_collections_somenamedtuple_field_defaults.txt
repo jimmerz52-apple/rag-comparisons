@@ -1,0 +1,8 @@
+# python.library.collections#collections.somenamedtuple._field_defaults
+
+somenamedtuple._field_defaults  
+Dictionary mapping field names to default values. >>> Account = namedtuple('Account', ['type', 'balance'], defaults=[0])
+>>> Account._field_defaults
+{'balance': 0}
+>>> Account('premium')
+Account(type='premium', balance=0)

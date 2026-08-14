@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.tell
+
+Wave_read.tell()  
+Return current file pointer position.

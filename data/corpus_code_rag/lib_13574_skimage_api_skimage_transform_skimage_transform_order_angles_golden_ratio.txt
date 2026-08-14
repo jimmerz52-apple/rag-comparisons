@@ -1,0 +1,17 @@
+# skimage.api.skimage.transform#skimage.transform.order_angles_golden_ratio
+
+skimage.transform.order_angles_golden_ratio(theta) [source]
+ 
+Order angles to reduce the amount of correlated information in subsequent projections.  Parameters 
+ 
+theta1D array of floats 
+
+Projection angles in degrees. Duplicate angles are not allowed.    Returns 
+ 
+indices_generatorgenerator yielding unsigned integers 
+
+The returned generator yields indices into theta such that theta[indices] gives the approximate golden ratio ordering of the projections. In total, len(theta) indices are yielded. All non-negative integers < len(theta) are yielded exactly once.     Notes The method used here is that of the golden ratio introduced by T. Kohler. References  
+1  
+Kohler, T. “A projection access scheme for iterative reconstruction based on the golden section.” Nuclear Science Symposium Conference Record, 2004 IEEE. Vol. 6. IEEE, 2004.  
+2  
+Winkelmann, Stefanie, et al. “An optimal radial profile order based on the Golden Ratio for time-resolved MRI.” Medical Imaging, IEEE Transactions on 26.1 (2007): 68-76.

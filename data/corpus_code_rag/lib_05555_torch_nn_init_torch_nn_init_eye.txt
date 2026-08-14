@@ -1,0 +1,7 @@
+# torch.nn.init#torch.nn.init.eye_
+
+torch.nn.init.eye_(tensor) [source]
+ 
+Fills the 2-dimensional input Tensor with the identity matrix. Preserves the identity of the inputs in Linear layers, where as many inputs are preserved as possible.  Parameters 
+tensor – a 2-dimensional torch.Tensor   Examples >>> w = torch.empty(3, 5)
+>>> nn.init.eye_(w)

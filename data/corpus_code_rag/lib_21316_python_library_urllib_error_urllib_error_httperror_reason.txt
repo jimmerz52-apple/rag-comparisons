@@ -1,0 +1,4 @@
+# python.library.urllib.error#urllib.error.HTTPError.reason
+
+reason  
+This is usually a string explaining the reason for this error.

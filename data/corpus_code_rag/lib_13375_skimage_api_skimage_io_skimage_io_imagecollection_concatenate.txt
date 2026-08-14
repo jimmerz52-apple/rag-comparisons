@@ -1,0 +1,13 @@
+# skimage.api.skimage.io#skimage.io.ImageCollection.concatenate
+
+concatenate() [source]
+ 
+Concatenate all images in the collection into an array.  Returns 
+ 
+arnp.ndarray 
+
+An array having one more dimension than the images in self.    Raises 
+ ValueError
+
+If images in the ImageCollection don’t have identical shapes.      See also  
+concatenate_images

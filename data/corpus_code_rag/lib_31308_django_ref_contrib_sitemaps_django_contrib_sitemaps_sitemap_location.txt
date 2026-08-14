@@ -1,0 +1,7 @@
+# django.ref.contrib.sitemaps#django.contrib.sitemaps.Sitemap.location
+
+location  
+Optional. Either a method or attribute. If it’s a method, it should return the absolute path for a given object as returned by items(). If it’s an attribute, its value should be a string representing an absolute path to use for every object returned by items(). In both cases, “absolute path” means a URL that doesn’t include the protocol or domain. Examples:  Good: '/foo/bar/'
+ Bad: 'example.com/foo/bar/'
+ Bad: 'https://example.com/foo/bar/'
+  If location isn’t provided, the framework will call the get_absolute_url() method on each object as returned by items(). To specify a protocol other than 'http', use protocol.

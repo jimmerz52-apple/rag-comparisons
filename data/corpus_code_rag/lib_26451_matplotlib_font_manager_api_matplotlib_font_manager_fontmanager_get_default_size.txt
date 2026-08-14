@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontManager.get_default_size
+
+staticget_default_size()[source]
+ 
+Return the default font size.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.skipTest
+
+skipTest(reason)  
+Calling this during a test method or setUp() skips the current test. See Skipping tests and expected failures for more information.  New in version 3.1.

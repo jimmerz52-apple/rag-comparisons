@@ -1,0 +1,7 @@
+# matplotlib.ticker_api#matplotlib.ticker.FuncFormatter
+
+classmatplotlib.ticker.FuncFormatter(func)[source]
+ 
+Bases: matplotlib.ticker.Formatter Use a user-defined function for formatting. The function should take in two inputs (a tick value x and a position pos), and return a string containing the corresponding tick label.   get_offset()[source]
+
+   set_offset_string(ofs)[source]

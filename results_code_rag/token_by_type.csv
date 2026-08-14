@@ -1,0 +1,5 @@
+method,question_type,n,mean_question_tokens,mean_gold_tokens,mean_composite,mean_judge,mean_latency_s,p95_latency_s,method_label
+semantic_rag,humaneval,10,114.1,144.3,0.3158529058174994,0.38,3.693093566695461,7.350017283705524,Semantic (vector)
+rerank_semantic,humaneval,10,114.1,144.3,0.34191882183166633,0.37,6.813656174810603,16.014899501917533,Vector + rerank
+semantic_rag,mbpp,10,27.8,57.7,0.2246253283753284,0.63,1.2556036712019705,2.073611418917425,Semantic (vector)
+rerank_semantic,mbpp,10,27.8,57.7,0.2628832686920922,0.55,4.680243662593421,7.544091651745838,Vector + rerank

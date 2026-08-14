@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setparams
+
+aifc.setparams(nchannels, sampwidth, framerate, comptype, compname)  
+Set all the above parameters at once. The argument is a tuple consisting of the various parameters. This means that it is possible to use the result of a getparams() call as argument to setparams().

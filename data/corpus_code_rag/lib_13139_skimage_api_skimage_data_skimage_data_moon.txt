@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.moon
+
+skimage.data.moon() [source]
+ 
+Surface of the moon. This low-contrast image of the surface of the moon is useful for illustrating histogram equalization and contrast stretching.  Returns 
+ 
+moon(512, 512) uint8 ndarray 
+
+Moon image.

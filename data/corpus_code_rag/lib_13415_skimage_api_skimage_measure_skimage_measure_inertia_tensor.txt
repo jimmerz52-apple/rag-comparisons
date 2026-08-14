@@ -1,0 +1,20 @@
+# skimage.api.skimage.measure#skimage.measure.inertia_tensor
+
+skimage.measure.inertia_tensor(image, mu=None) [source]
+ 
+Compute the inertia tensor of the input image.  Parameters 
+ 
+imagearray 
+
+The input image.  
+muarray, optional 
+
+The pre-computed central moments of image. The inertia tensor computation requires the central moments of the image. If an application requires both the central moments and the inertia tensor (for example, skimage.measure.regionprops), then it is more efficient to pre-compute them and pass them to the inertia tensor call.    Returns 
+ 
+Tarray, shape (image.ndim, image.ndim) 
+
+The inertia tensor of the input image. \(T_{i, j}\) contains the covariance of image intensity along axes \(i\) and \(j\).     References  
+1  
+https://en.wikipedia.org/wiki/Moment_of_inertia#Inertia_tensor  
+2  
+Bernd Jähne. Spatio-Temporal Image Processing: Theory and Scientific Applications. (Chapter 8: Tensor Methods) Springer, 1993.

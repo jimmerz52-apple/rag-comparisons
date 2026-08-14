@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.ediff1d
+
+numpy.ma.ediff1d   ma.ediff1d(arr, to_end=None, to_begin=None)[source]
+ 
+Compute the differences between consecutive elements of an array. This function is the equivalent of numpy.ediff1d that takes masked values into account, see numpy.ediff1d for details.  See also  numpy.ediff1d
+
+Equivalent function for ndarrays.

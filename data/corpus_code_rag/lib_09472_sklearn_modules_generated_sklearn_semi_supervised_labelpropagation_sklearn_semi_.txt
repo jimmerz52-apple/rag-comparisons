@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.semi_supervised.labelpropagation#sklearn.semi_supervised.LabelPropagation.predict_proba
+
+predict_proba(X) [source]
+ 
+Predict probability for each possible outcome. Compute the probability estimates for each single sample in X and each possible outcome seen during training (categorical distribution).  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+probabilitiesndarray of shape (n_samples, n_classes) 
+
+Normalized probability distributions across class labels.

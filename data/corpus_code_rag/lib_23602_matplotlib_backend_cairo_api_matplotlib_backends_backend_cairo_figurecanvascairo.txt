@@ -1,0 +1,21 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.FigureCanvasCairo
+
+classmatplotlib.backends.backend_cairo.FigureCanvasCairo(figure=None)[source]
+ 
+Bases: matplotlib.backend_bases.FigureCanvasBase   copy_from_bbox(bbox)[source]
+
+   print_pdf(fobj, *, orientation='portrait')
+
+   print_png(fobj)[source]
+
+   print_ps(fobj, *, orientation='portrait')
+
+   print_raw(fobj)[source]
+
+   print_rgba(fobj)[source]
+
+   print_svg(fobj, *, orientation='portrait')
+
+   print_svgz(fobj, *, orientation='portrait')
+
+   restore_region(region)[source]

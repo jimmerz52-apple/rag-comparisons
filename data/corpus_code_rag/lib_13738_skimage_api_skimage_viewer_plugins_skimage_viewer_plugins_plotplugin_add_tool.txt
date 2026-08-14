@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.PlotPlugin.add_tool
+
+add_tool(tool) [source]

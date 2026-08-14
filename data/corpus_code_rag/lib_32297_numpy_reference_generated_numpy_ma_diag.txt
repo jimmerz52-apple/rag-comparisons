@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.diag
+
+numpy.ma.diag   ma.diag(v, k=0)[source]
+ 
+Extract a diagonal or construct a diagonal array. This function is the equivalent of numpy.diag that takes masked values into account, see numpy.diag for details.  See also  numpy.diag
+
+Equivalent function for ndarrays.

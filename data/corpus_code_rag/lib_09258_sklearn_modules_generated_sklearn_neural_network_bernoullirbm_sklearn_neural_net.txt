@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.bernoullirbm#sklearn.neural_network.BernoulliRBM.partial_fit
+
+partial_fit(X, y=None) [source]
+ 
+Fit the model to the data X which should contain a partial segment of the data.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Training data.    Returns 
+ 
+selfBernoulliRBM 
+
+The fitted model.

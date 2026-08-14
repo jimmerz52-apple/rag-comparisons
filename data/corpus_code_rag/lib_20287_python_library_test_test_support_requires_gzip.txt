@@ -1,0 +1,4 @@
+# python.library.test#test.support.requires_gzip
+
+@test.support.requires_gzip  
+Decorator for skipping tests if gzip doesn’t exist.

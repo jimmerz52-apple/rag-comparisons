@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.view_name
+
+view_name  
+The name of the view that matches the URL, including the namespace if there is one.

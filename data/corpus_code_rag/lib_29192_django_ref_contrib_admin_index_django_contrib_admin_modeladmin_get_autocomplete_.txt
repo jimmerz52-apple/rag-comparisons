@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_autocomplete_fields
+
+ModelAdmin.get_autocomplete_fields(request)  
+The get_autocomplete_fields() method is given the HttpRequest and is expected to return a list or tuple of field names that will be displayed with an autocomplete widget as described above in the ModelAdmin.autocomplete_fields section.

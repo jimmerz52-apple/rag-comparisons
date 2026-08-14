@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.ScaleBase.limit_range_for_scale
+
+limit_range_for_scale(vmin, vmax, minpos)[source]
+ 
+Return the range vmin, vmax, restricted to the domain supported by this scale (if any). minpos should be the minimum positive value in the data. This is used by log scales to determine a minimum value.

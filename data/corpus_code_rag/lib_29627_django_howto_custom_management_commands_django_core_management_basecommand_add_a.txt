@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.add_arguments
+
+BaseCommand.add_arguments(parser)  
+Entry point to add parser arguments to handle command line arguments passed to the command. Custom commands should override this method to add both positional and optional arguments accepted by the command. Calling super() is not needed when directly subclassing BaseCommand.

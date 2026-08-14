@@ -1,0 +1,4 @@
+# python.library.py_compile#py_compile.PycInvalidationMode.TIMESTAMP
+
+TIMESTAMP  
+The .pyc file includes the timestamp and size of the source file, which Python will compare against the metadata of the source file at runtime to determine if the .pyc file needs to be regenerated.

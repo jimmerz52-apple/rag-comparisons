@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.filter_command
+
+filter_command(event=None)  
+Filter the files by directory.

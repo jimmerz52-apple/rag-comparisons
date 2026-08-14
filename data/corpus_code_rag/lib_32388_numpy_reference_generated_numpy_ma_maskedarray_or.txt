@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__or__
+
+numpy.ma.MaskedArray.__or__ method   ma.MaskedArray.__or__(value, /)
+ 
+Return self|value.

@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.ParseResult
+
+class urllib.parse.ParseResult(scheme, netloc, path, params, query, fragment)  
+Concrete class for urlparse() results containing str data. The encode() method returns a ParseResultBytes instance.

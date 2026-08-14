@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.BaseSelector.get_key
+
+get_key(fileobj)  
+Return the key associated with a registered file object. This returns the SelectorKey instance associated to this file object, or raises KeyError if the file object is not registered.

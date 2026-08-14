@@ -1,0 +1,9 @@
+# numpy.reference.generated.numpy.ma.maskedarray.any
+
+numpy.ma.MaskedArray.any method   ma.MaskedArray.any(axis=None, out=None, keepdims=<no value>)[source]
+ 
+Returns True if any of the elements of a evaluate to True. Masked values are considered as False during computation. Refer to numpy.any for full documentation.  See also  numpy.ndarray.any
+
+corresponding function for ndarrays  numpy.any
+
+equivalent function

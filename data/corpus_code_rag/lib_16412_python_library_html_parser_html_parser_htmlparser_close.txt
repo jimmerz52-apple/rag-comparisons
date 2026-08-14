@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.close
+
+HTMLParser.close()  
+Force processing of all buffered data as if it were followed by an end-of-file mark. This method may be redefined by a derived class to define additional processing at the end of the input, but the redefined version should always call the HTMLParser base class method close().

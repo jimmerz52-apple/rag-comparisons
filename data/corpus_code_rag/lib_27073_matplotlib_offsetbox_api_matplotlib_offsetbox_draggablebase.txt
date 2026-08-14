@@ -1,0 +1,31 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DraggableBase
+
+classmatplotlib.offsetbox.DraggableBase(ref_artist, use_blit=False)[source]
+ 
+Bases: object Helper base class for a draggable artist (legend, offsetbox). Derived classes must override the following methods: def save_offset(self):
+    '''
+    Called when the object is picked for dragging; should save the
+    reference position of the artist.
+    '''
+
+def update_offset(self, dx, dy):
+    '''
+    Called during the dragging; (*dx*, *dy*) is the pixel offset from
+    the point where the mouse drag started.
+    '''
+ Optionally, you may override the following method: def finalize_offset(self):
+    '''Called when the mouse is released.'''
+ In the current implementation of DraggableLegend and DraggableAnnotation, update_offset places the artists in display coordinates, and finalize_offset recalculates their position in axes coordinate and set a relevant attribute.   disconnect()[source]
+ 
+Disconnect the callbacks. 
+   finalize_offset()[source]
+
+   on_motion(evt)[source]
+
+   on_pick(evt)[source]
+
+   on_release(event)[source]
+
+   save_offset()[source]
+
+   update_offset(dx, dy)[source]

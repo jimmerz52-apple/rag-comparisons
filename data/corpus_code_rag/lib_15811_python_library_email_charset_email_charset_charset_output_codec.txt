@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.output_codec
+
+output_codec  
+The name of the Python codec used to convert Unicode to the output_charset. If no conversion codec is necessary, this attribute will have the same value as the input_codec.

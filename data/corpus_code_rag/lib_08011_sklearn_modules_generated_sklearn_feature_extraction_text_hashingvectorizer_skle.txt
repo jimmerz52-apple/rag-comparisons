@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.hashingvectorizer#sklearn.feature_extraction.text.HashingVectorizer.fit
+
+fit(X, y=None) [source]
+ 
+Does nothing: this transformer is stateless.  Parameters 
+ 
+Xndarray of shape [n_samples, n_features] 
+
+Training data.

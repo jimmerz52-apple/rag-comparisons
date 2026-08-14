@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.LockDraw.isowner
+
+isowner(o)[source]
+ 
+Return whether o owns this lock.

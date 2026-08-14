@@ -1,0 +1,4 @@
+# python.library.string#string.Formatter.convert_field
+
+convert_field(value, conversion)  
+Converts the value (returned by get_field()) given a conversion type (as in the tuple returned by the parse() method). The default version understands ‘s’ (str), ‘r’ (repr) and ‘a’ (ascii) conversion types.

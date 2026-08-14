@@ -1,0 +1,5 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.remove
+
+remove(header)  
+Remove a header from the set. This raises an KeyError if the header is not in the set.  Changelog Changed in version 0.5: In older versions a IndexError was raised instead of a KeyError if the object was missing.   Parameters 
+header – the header to be removed.

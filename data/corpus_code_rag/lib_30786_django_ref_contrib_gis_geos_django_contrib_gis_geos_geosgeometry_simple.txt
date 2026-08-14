@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.simple
+
+GEOSGeometry.simple  
+Returns a boolean indicating whether the geometry is ‘simple’. A geometry is simple if and only if it does not intersect itself (except at boundary points). For example, a LineString object is not simple if it intersects itself. Thus, LinearRing and Polygon objects are always simple because they do cannot intersect themselves, by definition.

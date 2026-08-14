@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.amin
+
+amin(dim=None, keepdim=False) → Tensor  
+See torch.amin()

@@ -1,0 +1,4 @@
+# python.library.sys#sys.getdlopenflags
+
+sys.getdlopenflags()  
+Return the current value of the flags that are used for dlopen() calls. Symbolic names for the flag values can be found in the os module (RTLD_xxx constants, e.g. os.RTLD_LAZY). Availability: Unix.

@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.earliest
+
+earliest(*fields)

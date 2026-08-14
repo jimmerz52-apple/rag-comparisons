@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_mixer_device.reccontrols
+
+oss_mixer_device.reccontrols()  
+Returns a bitmask specifying the mixer controls that may be used to record. See the code example for controls() for an example of reading from a bitmask.

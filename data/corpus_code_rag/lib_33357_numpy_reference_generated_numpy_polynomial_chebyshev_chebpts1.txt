@@ -1,0 +1,16 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebpts1
+
+numpy.polynomial.chebyshev.chebpts1   polynomial.chebyshev.chebpts1(npts)[source]
+ 
+Chebyshev points of the first kind. The Chebyshev points of the first kind are the points cos(x), where x = [pi*(k + .5)/npts for k in range(npts)].  Parameters 
+ 
+nptsint
+
+
+Number of sample points desired.    Returns 
+ 
+ptsndarray
+
+
+The Chebyshev points of the first kind.      See also  chebpts2
+  Notes  New in version 1.5.0.

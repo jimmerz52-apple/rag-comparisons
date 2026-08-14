@@ -1,0 +1,28 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolViewsPositions
+
+classmatplotlib.backend_tools.ToolViewsPositions(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Auxiliary Tool to handle changes in views and positions. Runs in the background and should get used by all the tools that need to access the figure's history of views and positions, e.g.  ToolZoom ToolPan ToolHome ToolBack ToolForward    add_figure(figure)[source]
+ 
+Add the current figure to the stack of views and positions. 
+   back()[source]
+ 
+Back one step in the stack of views and positions. 
+   clear(figure)[source]
+ 
+Reset the axes stack. 
+   forward()[source]
+ 
+Forward one step in the stack of views and positions. 
+   home()[source]
+ 
+Recall the first view and position from the stack. 
+   push_current(figure=None)[source]
+ 
+Push the current view limits and position onto their respective stacks. 
+   update_home_views(figure=None)[source]
+ 
+Make sure that self.home_views has an entry for all axes present in the figure. 
+   update_view()[source]
+ 
+Update the view limits and position for each axes from the current stack position. If any axes are present in the figure that aren't in the current stack position, use the home view limits for those axes and don't update any positions.

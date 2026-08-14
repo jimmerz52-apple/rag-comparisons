@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.size
+
+numpy.generic.size attribute   generic.size
+ 
+The number of elements in the gentype.

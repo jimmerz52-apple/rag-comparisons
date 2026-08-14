@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Transform.bilateral
+
+bilateral  
+A boolean indicating whether this transformation should apply to both lhs and rhs. Bilateral transformations will be applied to rhs in the same order as they appear in the lookup expression. By default it is set to False. For example usage, see How to write custom lookups.

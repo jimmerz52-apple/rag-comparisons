@@ -1,0 +1,15 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.formfield_overrides
+
+ModelAdmin.formfield_overrides  
+This provides a quick-and-dirty way to override some of the Field options for use in the admin. formfield_overrides is a dictionary mapping a field class to a dict of arguments to pass to the field at construction time. Since that’s a bit abstract, let’s look at a concrete example. The most common use of formfield_overrides is to add a custom widget for a certain type of field. So, imagine we’ve written a RichTextEditorWidget that we’d like to use for large text fields instead of the default <textarea>. Here’s how we’d do that: from django.contrib import admin
+from django.db import models
+
+# Import our custom widget and our model from where they're defined
+from myapp.models import MyModel
+from myapp.widgets import RichTextEditorWidget
+
+class MyModelAdmin(admin.ModelAdmin):
+    formfield_overrides = {
+        models.TextField: {'widget': RichTextEditorWidget},
+    }
+ Note that the key in the dictionary is the actual field class, not a string. The value is another dictionary; these arguments will be passed to the form field’s __init__() method. See The Forms API for details.  Warning If you want to use a custom widget with a relation field (i.e. ForeignKey or ManyToManyField), make sure you haven’t included that field’s name in raw_id_fields, radio_fields, or autocomplete_fields. formfield_overrides won’t let you change the widget on relation fields that have raw_id_fields, radio_fields, or autocomplete_fields set. That’s because raw_id_fields, radio_fields, and autocomplete_fields imply custom widgets of their own.

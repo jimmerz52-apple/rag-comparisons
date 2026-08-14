@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.cumsum
+
+tf.experimental.numpy.cumsum TensorFlow variant of NumPy's cumsum. 
+tf.experimental.numpy.cumsum(
+    a, axis=None, dtype=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.cumsum.

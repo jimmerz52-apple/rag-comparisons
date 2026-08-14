@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.is_dir
+
+Path.is_dir()  
+Return True if the current context references a directory.

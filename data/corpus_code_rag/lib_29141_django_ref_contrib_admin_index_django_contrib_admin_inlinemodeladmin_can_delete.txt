@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.can_delete
+
+InlineModelAdmin.can_delete  
+Specifies whether or not inline objects can be deleted in the inline. Defaults to True.

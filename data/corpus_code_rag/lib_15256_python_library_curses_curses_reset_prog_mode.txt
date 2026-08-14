@@ -1,0 +1,4 @@
+# python.library.curses#curses.reset_prog_mode
+
+curses.reset_prog_mode()  
+Restore the terminal to “program” mode, as previously saved by def_prog_mode().

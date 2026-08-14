@@ -1,0 +1,5 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.make_dvi
+
+make_dvi(tex, fontsize)[source]
+ 
+Generate a dvi file containing latex's layout of tex string. Return the file name.

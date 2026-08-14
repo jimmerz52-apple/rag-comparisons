@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axisartisthelper#mpl_toolkits.axisartist.axislines.AxisArtistHelper.Fixed.get_axislabel_pos_angle
+
+get_axislabel_pos_angle(axes)[source]
+ 
+Return the label reference position in transAxes. get_label_transform() returns a transform of (transAxes+offset)

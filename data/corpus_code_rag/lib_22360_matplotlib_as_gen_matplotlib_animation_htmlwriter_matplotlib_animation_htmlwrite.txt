@@ -1,0 +1,26 @@
+# matplotlib._as_gen.matplotlib.animation.htmlwriter#matplotlib.animation.HTMLWriter.__init__
+
+__init__(fps=30, codec=None, bitrate=None, extra_args=None, metadata=None, embed_frames=False, default_mode='loop', embed_limit=None)[source]
+ 
+ Parameters 
+ 
+fpsint, default: 5
+
+
+Movie frame rate (per second).  
+codecstr or None, default: rcParams["animation.codec"] (default: 'h264')
+
+
+The codec to use.  
+bitrateint, default: rcParams["animation.bitrate"] (default: -1)
+
+
+The bitrate of the movie, in kilobits per second. Higher values means higher quality movies, but increase the file size. A value of -1 lets the underlying movie encoder select the bitrate.  
+extra_argslist of str or None, optional
+
+
+Extra command-line arguments passed to the underlying movie encoder. The default, None, means to use rcParams["animation.[name-of-encoder]_args"] for the builtin writers.  
+metadatadict[str, str], default: {}
+
+
+A dictionary of keys and values for metadata to include in the output file. Some keys that may be of use include: title, artist, genre, subject, copyright, srcform, comment.

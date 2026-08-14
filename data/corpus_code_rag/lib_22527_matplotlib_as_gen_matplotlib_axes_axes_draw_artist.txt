@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.axes.axes.draw_artist
+
+matplotlib.axes.Axes.draw_artist   Axes.draw_artist(a)[source]
+ 
+Efficiently redraw a single artist. This method can only be used after an initial draw of the figure, because that creates and caches the renderer needed here. 
+  Examples using matplotlib.axes.Axes.draw_artist
+ 
+   Faster rendering by using blitting

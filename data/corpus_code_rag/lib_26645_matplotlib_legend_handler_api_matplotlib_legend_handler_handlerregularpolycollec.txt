@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerRegularPolyCollection.update_prop
+
+update_prop(legend_handle, orig_handle, legend)[source]

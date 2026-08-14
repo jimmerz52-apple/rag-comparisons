@@ -1,0 +1,4 @@
+# python.library.select#select.devpoll.modify
+
+devpoll.modify(fd[, eventmask])  
+This method does an unregister() followed by a register(). It is (a bit) more efficient that doing the same explicitly.

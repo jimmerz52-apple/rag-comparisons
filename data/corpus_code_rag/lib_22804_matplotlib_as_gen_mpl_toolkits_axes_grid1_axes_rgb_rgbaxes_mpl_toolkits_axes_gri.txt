@@ -1,0 +1,25 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_rgb.rgbaxes#mpl_toolkits.axes_grid1.axes_rgb.RGBAxes.imshow_rgb
+
+imshow_rgb(r, g, b, **kwargs)[source]
+ 
+Create the four images {rgb, r, g, b}.  Parameters 
+ 
+r, g, barray-like
+
+
+The red, green, and blue arrays.  
+kwargsimshow kwargs
+
+
+kwargs get unpacked into the imshow calls for the four images.    Returns 
+ 
+rgbmatplotlib.image.AxesImage
+
+
+rmatplotlib.image.AxesImage
+
+
+gmatplotlib.image.AxesImage
+
+
+bmatplotlib.image.AxesImage

@@ -1,0 +1,17 @@
+# pandas.reference.api.pandas.series.to_period
+
+pandas.Series.to_period   Series.to_period(freq=None, copy=True)[source]
+ 
+Convert Series from DatetimeIndex to PeriodIndex.  Parameters 
+ 
+freq:str, default None
+
+
+Frequency associated with the PeriodIndex.  
+copy:bool, default True
+
+
+Whether or not to return a copy.    Returns 
+ Series
+
+Series with index converted to PeriodIndex.

@@ -1,0 +1,4 @@
+# python.library.stat#stat.SF_NOUNLINK
+
+stat.SF_NOUNLINK  
+The file may not be renamed or deleted.

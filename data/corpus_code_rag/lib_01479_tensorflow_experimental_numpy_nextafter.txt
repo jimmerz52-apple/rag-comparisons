@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.nextafter
+
+tf.experimental.numpy.nextafter TensorFlow variant of NumPy's nextafter. 
+tf.experimental.numpy.nextafter(
+    x1, x2
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.nextafter.

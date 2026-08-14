@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.set_reserved
+
+pygame.mixer.set_reserved() 
+ reserve channels from being automatically used set_reserved(count) -> None  The mixer can reserve any number of channels that will not be automatically selected for playback by Sounds. If sounds are currently playing on the reserved channels they will not be stopped. This allows the application to reserve a specific number of channels for important sounds that must not be dropped or have a guaranteed channel to play on.

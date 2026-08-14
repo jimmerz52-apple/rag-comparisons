@@ -1,0 +1,11 @@
+# flask.api.index#flask.abort
+
+flask.abort(status, *args, **kwargs)  
+Raises an HTTPException for the given status code or WSGI application. If a status code is given, it will be looked up in the list of exceptions and will raise that exception. If passed a WSGI application, it will wrap it in a proxy WSGI exception and raise that: abort(404)  # 404 Not Found
+abort(Response('Hello World'))
+  Parameters 
+ 
+status (Union[int, Response]) –  
+args (Any) –  
+kwargs (Any) –    Return type 
+NoReturn

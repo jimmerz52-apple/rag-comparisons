@@ -1,0 +1,6 @@
+# flask.api.index#flask.sessions.NullSession
+
+class flask.sessions.NullSession(initial=None)  
+Class used to generate nicer error messages if sessions are not available. Will still allow read-only access to the empty session but fail on setting.  Parameters 
+initial (Any) –   Return type 
+None

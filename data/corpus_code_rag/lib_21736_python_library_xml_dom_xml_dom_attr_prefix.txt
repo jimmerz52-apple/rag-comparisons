@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Attr.prefix
+
+Attr.prefix  
+The part of the name preceding the colon if there is one, else the empty string.

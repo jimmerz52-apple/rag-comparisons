@@ -1,0 +1,24 @@
+# tensorflow.experimental.register_filesystem_plugin
+
+tf.experimental.register_filesystem_plugin Loads a TensorFlow FileSystem plugin.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.experimental.register_filesystem_plugin  
+tf.experimental.register_filesystem_plugin(
+    plugin_location
+)
+
+ 
+
+
+ Args
+  plugin_location   Path to the plugin. Relative or absolute filesystem plugin path to a dynamic library file.   
+ 
+
+
+ Returns   None  
+
+ 
+
+
+ Raises
+  OSError   When the file to be loaded is not found.  
+  RuntimeError   when unable to load the library.

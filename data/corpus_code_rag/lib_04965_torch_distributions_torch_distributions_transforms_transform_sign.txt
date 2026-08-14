@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.transforms.Transform.sign
+
+property sign  
+Returns the sign of the determinant of the Jacobian, if applicable. In general this only makes sense for bijective transforms.

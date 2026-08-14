@@ -1,0 +1,4 @@
+# python.library.os#os.getpid
+
+os.getpid()  
+Return the current process id.

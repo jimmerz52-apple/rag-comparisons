@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.minus
+
+minus(x)  
+Minus corresponds to the unary prefix minus operator in Python.

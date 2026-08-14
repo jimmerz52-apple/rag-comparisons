@@ -1,0 +1,6 @@
+# matplotlib._as_gen.matplotlib.pyplot.clim
+
+matplotlib.pyplot.clim   matplotlib.pyplot.clim(vmin=None, vmax=None)[source]
+ 
+Set the color limits of the current image. If either vmin or vmax is None, the image min/max respectively will be used for color scaling. If you want to set the clim of multiple images, use set_clim on every image, for example: for im in gca().get_images():
+    im.set_clim(0, 0.5)

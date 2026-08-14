@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.BaseProxy.__repr__
+
+__repr__()  
+Return a representation of the proxy object.

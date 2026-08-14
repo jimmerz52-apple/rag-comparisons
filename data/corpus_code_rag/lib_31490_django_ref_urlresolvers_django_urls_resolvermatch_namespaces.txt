@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.namespaces
+
+namespaces  
+The list of individual namespace components in the full instance namespace for the URL pattern that matches the URL. i.e., if the namespace is foo:bar, then namespaces will be ['foo', 'bar'].

@@ -1,0 +1,4 @@
+# python.library.unittest.mock#unittest.mock.NonCallableMock
+
+class unittest.mock.NonCallableMock(spec=None, wraps=None, name=None, spec_set=None, **kwargs)  
+A non-callable version of Mock. The constructor parameters have the same meaning of Mock, with the exception of return_value and side_effect which have no meaning on a non-callable mock.

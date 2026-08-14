@@ -1,0 +1,5 @@
+# torch.autograd#torch.autograd.function._ContextMethodMixin.save_for_backward
+
+save_for_backward(*tensors) [source]
+ 
+Saves given tensors for a future call to backward(). This should be called at most once, and only from inside the forward() method. Later, saved tensors can be accessed through the saved_tensors attribute. Before returning them to the user, a check is made to ensure they weren’t used in any in-place operation that modified their content. Arguments can also be None.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.MetaPathFinder.invalidate_caches
+
+invalidate_caches()  
+An optional method which, when called, should invalidate any internal cache used by the finder. Used by importlib.invalidate_caches() when invalidating the caches of all finders on sys.meta_path.  Changed in version 3.4: Returns None when called instead of NotImplemented.

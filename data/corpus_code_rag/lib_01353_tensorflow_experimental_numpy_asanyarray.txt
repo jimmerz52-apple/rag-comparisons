@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.asanyarray
+
+tf.experimental.numpy.asanyarray TensorFlow variant of NumPy's asanyarray. 
+tf.experimental.numpy.asanyarray(
+    a, dtype=None
+)
+ Unsupported arguments: order. See the NumPy documentation for numpy.asanyarray.

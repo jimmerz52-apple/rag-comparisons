@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.get_zmajorticklabels
+
+get_zmajorticklabels()[source]
+ 
+Return the zaxis' major tick labels, as a list of Text.

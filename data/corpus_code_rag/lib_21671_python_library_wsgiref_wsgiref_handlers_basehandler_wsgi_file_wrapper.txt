@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.wsgi_file_wrapper
+
+wsgi_file_wrapper  
+A wsgi.file_wrapper factory, or None. The default value of this attribute is the wsgiref.util.FileWrapper class.

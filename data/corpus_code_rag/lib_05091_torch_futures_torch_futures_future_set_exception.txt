@@ -1,0 +1,16 @@
+# torch.futures#torch.futures.Future.set_exception
+
+set_exception(result) [source]
+ 
+Set an exception for this Future, which will mark this Future as completed with an error and trigger all attached callbacks. Note that when calling wait()/value() on this Future, the exception set here will be raised inline.  Parameters 
+result (BaseException) – the exception for this Future.    Example::
+
+>>> import torch
+>>>
+>>> fut = torch.futures.Future()
+>>> fut.set_exception(ValueError("foo"))
+>>> fut.wait()
+>>>
+>>> # Output:
+>>> # This will run after the future has finished.
+>>> ValueError: foo

@@ -1,0 +1,5 @@
+# python.library.stdtypes#bytes.startswith
+
+bytes.startswith(prefix[, start[, end]])  
+bytearray.startswith(prefix[, start[, end]])  
+Return True if the binary data starts with the specified prefix, otherwise return False. prefix can also be a tuple of prefixes to look for. With optional start, test beginning at that position. With optional end, stop comparing at that position. The prefix(es) to search for may be any bytes-like object.

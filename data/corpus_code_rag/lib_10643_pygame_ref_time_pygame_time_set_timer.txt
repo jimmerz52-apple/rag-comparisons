@@ -1,0 +1,4 @@
+# pygame.ref.time#pygame.time.set_timer
+
+pygame.time.set_timer() 
+ repeatedly create an event on the event queue set_timer(eventid, milliseconds) -> None set_timer(eventid, milliseconds, once) -> None  Set an event type to appear on the event queue every given number of milliseconds. The first event will not appear until the amount of time has passed. Every event type can have a separate timer attached to it. It is best to use the value between pygame.USEREVENT and pygame.NUMEVENTS. To disable the timer for an event, set the milliseconds argument to 0. If the once argument is True, then only send the timer once.  New in pygame 2.0.0.dev3: once argument added.

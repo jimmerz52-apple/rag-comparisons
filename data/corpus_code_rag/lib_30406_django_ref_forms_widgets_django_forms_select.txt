@@ -1,0 +1,11 @@
+# django.ref.forms.widgets#django.forms.Select
+
+class Select  
+ 
+template_name: 'django/forms/widgets/select.html'
+ 
+option_template_name: 'django/forms/widgets/select_option.html'
+ Renders as: <select><option ...>...</select>
+   
+choices  
+This attribute is optional when the form field does not have a choices attribute. If it does, it will override anything you set here when the attribute is updated on the Field.

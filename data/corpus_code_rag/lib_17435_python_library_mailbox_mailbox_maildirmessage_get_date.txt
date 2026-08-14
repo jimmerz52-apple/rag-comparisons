@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MaildirMessage.get_date
+
+get_date()  
+Return the delivery date of the message as a floating-point number representing seconds since the epoch.

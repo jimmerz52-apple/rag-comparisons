@@ -1,0 +1,5 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackendPdf.render_glyph
+
+render_glyph(ox, oy, info)[source]
+ 
+Draw a glyph described by info to the reference point (ox, oy).

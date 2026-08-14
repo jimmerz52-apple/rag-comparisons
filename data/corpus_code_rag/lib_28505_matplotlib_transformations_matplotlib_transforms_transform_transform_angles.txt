@@ -1,0 +1,23 @@
+# matplotlib.transformations#matplotlib.transforms.Transform.transform_angles
+
+transform_angles(angles, pts, radians=False, pushoff=1e-05)[source]
+ 
+Transform a set of angles anchored at specific locations.  Parameters 
+ 
+angles(N,) array-like
+
+
+The angles to transform.  
+pts(N, 2) array-like
+
+
+The points where the angles are anchored.  
+radiansbool, default: False
+
+
+Whether angles are radians or degrees.  
+pushofffloat
+
+
+For each point in pts and angle in angles, the transformed angle is computed by transforming a segment of length pushoff starting at that point and making that angle relative to the horizontal axis, and measuring the angle between the horizontal axis and the transformed segment.    Returns 
+ (N,) array

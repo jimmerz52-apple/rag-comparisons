@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.JSONBAgg.ordering
+
+ordering  
+ New in Django 3.2.  An optional string of a field name (with an optional "-" prefix which indicates descending order) or an expression (or a tuple or list of strings and/or expressions) that specifies the ordering of the elements in the result list. Examples are the same as for ArrayAgg.ordering.

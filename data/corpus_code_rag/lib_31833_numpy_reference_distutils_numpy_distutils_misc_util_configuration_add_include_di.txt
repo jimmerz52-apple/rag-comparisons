@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.add_include_dirs
+
+add_include_dirs(*paths)[source]
+ 
+Add paths to configuration include directories. Add the given sequence of paths to the beginning of the include_dirs list. This list will be visible to all extension modules of the current package.

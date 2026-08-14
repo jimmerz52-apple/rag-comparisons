@@ -1,0 +1,5 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.PathPatchEffect.draw_path
+
+draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Derived should override this method. The arguments are the same as matplotlib.backend_bases.RendererBase.draw_path() except the first argument is a renderer.

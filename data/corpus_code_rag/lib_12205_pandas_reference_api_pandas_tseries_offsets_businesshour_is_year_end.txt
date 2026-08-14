@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businesshour.is_year_end
+
+pandas.tseries.offsets.BusinessHour.is_year_end   BusinessHour.is_year_end()

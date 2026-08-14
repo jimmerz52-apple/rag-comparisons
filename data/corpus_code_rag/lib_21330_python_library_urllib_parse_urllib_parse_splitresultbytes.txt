@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.SplitResultBytes
+
+class urllib.parse.SplitResultBytes(scheme, netloc, path, query, fragment)  
+Concrete class for urlsplit() results containing bytes data. The decode() method returns a SplitResult instance.  New in version 3.2.

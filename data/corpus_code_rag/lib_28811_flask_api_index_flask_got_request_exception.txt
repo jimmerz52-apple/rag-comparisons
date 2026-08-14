@@ -1,0 +1,15 @@
+# flask.api.index#flask.got_request_exception
+
+flask.got_request_exception  
+This signal is sent when an unhandled exception happens during request processing, including when debugging. The exception is passed to the subscriber as exception. This signal is not sent for HTTPException, or other exceptions that have error handlers registered, unless the exception was raised from an error handler. This example shows how to do some extra logging if a theoretical SecurityException was raised: from flask import got_request_exception
+
+def log_security_exception(sender, exception, **extra):
+    if not isinstance(exception, SecurityException):
+        return
+
+    security_logger.exception(
+        f"SecurityException at {request.url!r}",
+        exc_info=exception,
+    )
+
+got_request_exception.connect(log_security_exception, app)

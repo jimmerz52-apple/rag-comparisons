@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transformed_distribution.TransformedDistribution.icdf
+
+icdf(value) [source]
+ 
+Computes the inverse cumulative distribution function using transform(s) and computing the score of the base distribution.

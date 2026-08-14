@@ -1,0 +1,8 @@
+# matplotlib.image_api#matplotlib.image.pil_to_array
+
+matplotlib.image.pil_to_array(pilImage)[source]
+ 
+Load a PIL image and return it as a numpy int array.  Returns 
+ numpy.array
+
+The array shape depends on the image type:  (M, N) for grayscale images. (M, N, 3) for RGB images. (M, N, 4) for RGBA images.

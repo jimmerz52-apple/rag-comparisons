@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.copy
+
+copy()[source]
+ 
+Return a copy of self.

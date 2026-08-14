@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.models.UserManager.create_user
+
+create_user(username, email=None, password=None, **extra_fields)  
+Creates, saves and returns a User. The username and password are set as given. The domain portion of email is automatically converted to lowercase, and the returned User object will have is_active set to True. If no password is provided, set_unusable_password() will be called. The extra_fields keyword arguments are passed through to the User’s __init__ method to allow setting arbitrary fields on a custom user model. See Creating users for example usage.

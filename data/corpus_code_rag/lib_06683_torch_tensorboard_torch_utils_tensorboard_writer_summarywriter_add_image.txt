@@ -1,0 +1,28 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_image
+
+add_image(tag, img_tensor, global_step=None, walltime=None, dataformats='CHW') [source]
+ 
+Add image data to summary. Note that this requires the pillow package.  Parameters 
+ 
+tag (string) – Data identifier 
+img_tensor (torch.Tensor, numpy.array, or string/blobname) – Image data 
+global_step (int) – Global step value to record 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event     Shape:
+
+img_tensor: Default is (3,H,W)(3, H, W) . You can use torchvision.utils.make_grid() to convert a batch of tensor into 3xHxW format or call add_images and let us do the job. Tensor with (1,H,W)(1, H, W) , (H,W)(H, W) , (H,W,3)(H, W, 3)  is also suitable as long as corresponding dataformats argument is passed, e.g. CHW, HWC, HW.   Examples: from torch.utils.tensorboard import SummaryWriter
+import numpy as np
+img = np.zeros((3, 100, 100))
+img[0] = np.arange(0, 10000).reshape(100, 100) / 10000
+img[1] = 1 - np.arange(0, 10000).reshape(100, 100) / 10000
+
+img_HWC = np.zeros((100, 100, 3))
+img_HWC[:, :, 0] = np.arange(0, 10000).reshape(100, 100) / 10000
+img_HWC[:, :, 1] = 1 - np.arange(0, 10000).reshape(100, 100) / 10000
+
+writer = SummaryWriter()
+writer.add_image('my_image', img, 0)
+
+# If you have non-default dimension setting, set the dataformats argument.
+writer.add_image('my_image_HWC', img_HWC, 0, dataformats='HWC')
+writer.close()
+ Expected result:

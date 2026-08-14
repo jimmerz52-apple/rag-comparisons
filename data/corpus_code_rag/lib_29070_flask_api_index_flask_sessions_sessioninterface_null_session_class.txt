@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SessionInterface.null_session_class
+
+null_session_class  
+make_null_session() will look here for the class that should be created when a null session is requested. Likewise the is_null_session() method will perform a typecheck against this type. alias of flask.sessions.NullSession

@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.get_version
+
+get_version(version_file=None, version_variable=None)[source]
+ 
+Try to get version string of a package. Return a version string of the current package or None if the version information could not be detected. Notes This method scans files named __version__.py, <packagename>_version.py, version.py, and __svn_version__.py for string variables version, __version__, and <packagename>_version, until a version number is found.

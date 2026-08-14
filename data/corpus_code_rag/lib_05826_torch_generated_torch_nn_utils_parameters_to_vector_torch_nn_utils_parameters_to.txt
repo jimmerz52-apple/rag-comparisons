@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.utils.parameters_to_vector#torch.nn.utils.parameters_to_vector
+
+torch.nn.utils.parameters_to_vector(parameters) [source]
+ 
+Convert parameters to one vector  Parameters 
+parameters (Iterable[Tensor]) – an iterator of Tensors that are the parameters of a model.  Returns 
+The parameters represented by a single vector

@@ -1,0 +1,3 @@
+# python.library.gettext#gettext.ldgettext
+
+gettext.ldgettext(domain, message)

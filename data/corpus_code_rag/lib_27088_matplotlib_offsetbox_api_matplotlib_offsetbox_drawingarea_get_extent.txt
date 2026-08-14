@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DrawingArea.get_extent
+
+get_extent(renderer)[source]
+ 
+Return width, height, xdescent, ydescent of box.

@@ -1,0 +1,5 @@
+# tensorflow.keras.backend.reset_uids
+
+tf.keras.backend.reset_uids     View source on GitHub    Resets graph identifiers.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.backend.reset_uids  
+tf.keras.backend.reset_uids()

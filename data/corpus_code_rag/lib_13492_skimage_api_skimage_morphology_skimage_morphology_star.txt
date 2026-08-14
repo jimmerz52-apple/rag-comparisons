@@ -1,0 +1,17 @@
+# skimage.api.skimage.morphology#skimage.morphology.star
+
+skimage.morphology.star(a, dtype=<class 'numpy.uint8'>) [source]
+ 
+Generates a star shaped structuring element. Start has 8 vertices and is an overlap of square of size 2*a + 1 with its 45 degree rotated version. The slanted sides are 45 or 135 degrees to the horizontal axis.  Parameters 
+ 
+aint 
+
+Parameter deciding the size of the star structural element. The side of the square array returned is 2*a + 1 + 2*floor(a / 2).    Returns 
+ 
+selemndarray 
+
+The structuring element where elements of the neighborhood are 1 and 0 otherwise.    Other Parameters 
+ 
+dtypedata-type 
+
+The data type of the structuring element.

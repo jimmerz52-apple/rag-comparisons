@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.NodeList.length
+
+NodeList.length  
+The number of nodes in the sequence.

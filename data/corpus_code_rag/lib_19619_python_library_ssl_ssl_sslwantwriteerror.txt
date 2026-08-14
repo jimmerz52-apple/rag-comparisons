@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLWantWriteError
+
+exception ssl.SSLWantWriteError  
+A subclass of SSLError raised by a non-blocking SSL socket when trying to read or write data, but more data needs to be sent on the underlying TCP transport before the request can be fulfilled.  New in version 3.3.

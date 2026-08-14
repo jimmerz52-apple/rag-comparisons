@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__delitem__
+
+numpy.ma.MaskedArray.__delitem__ method   ma.MaskedArray.__delitem__(key, /)
+ 
+Delete self[key].

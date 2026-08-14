@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.trace
+
+tf.experimental.numpy.trace TensorFlow variant of NumPy's trace. 
+tf.experimental.numpy.trace(
+    a, offset=0, axis1=0, axis2=1, dtype=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.trace.

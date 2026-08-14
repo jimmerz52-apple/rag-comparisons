@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.artist.kwdoc
+
+matplotlib.artist.kwdoc   matplotlib.artist.kwdoc(artist)[source]
+ 
+Inspect an Artist class (using ArtistInspector) and return information about its settable properties and their current values.  Parameters 
+ 
+artistArtist or an iterable of Artists
+
+  Returns 
+ str
+
+The settable properties of artist, as plain text if rcParams["docstring.hardcopy"] (default: False) is False and as a rst table (intended for use in Sphinx) if it is True.

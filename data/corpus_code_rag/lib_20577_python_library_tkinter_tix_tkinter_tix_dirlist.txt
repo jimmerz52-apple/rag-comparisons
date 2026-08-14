@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.DirList
+
+class tkinter.tix.DirList  
+The DirList widget displays a list view of a directory, its previous directories and its sub-directories. The user can choose one of the directories displayed in the list or change to another directory.

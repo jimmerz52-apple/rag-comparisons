@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.data
+
+numpy.chararray.data attribute   chararray.data
+ 
+Python buffer object pointing to the start of the array’s data.

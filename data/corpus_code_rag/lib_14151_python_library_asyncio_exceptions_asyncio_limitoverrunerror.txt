@@ -1,0 +1,6 @@
+# python.library.asyncio-exceptions#asyncio.LimitOverrunError
+
+exception asyncio.LimitOverrunError  
+Reached the buffer size limit while looking for a separator. Raised by the asyncio stream APIs.  
+consumed  
+The total number of to be consumed bytes.

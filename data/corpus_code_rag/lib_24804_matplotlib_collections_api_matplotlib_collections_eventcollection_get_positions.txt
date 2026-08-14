@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.get_positions
+
+get_positions()[source]
+ 
+Return an array containing the floating-point values of the positions.

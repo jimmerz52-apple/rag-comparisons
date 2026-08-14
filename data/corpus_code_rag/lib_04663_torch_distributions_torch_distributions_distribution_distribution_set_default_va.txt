@@ -1,0 +1,6 @@
+# torch.distributions#torch.distributions.distribution.Distribution.set_default_validate_args
+
+static set_default_validate_args(value) [source]
+ 
+Sets whether validation is enabled or disabled. The default behavior mimics Python’s assert statement: validation is on by default, but is disabled if Python is run in optimized mode (via python -O). Validation may be expensive, so you may want to disable it once a model is working.  Parameters 
+value (bool) – Whether to enable validation.

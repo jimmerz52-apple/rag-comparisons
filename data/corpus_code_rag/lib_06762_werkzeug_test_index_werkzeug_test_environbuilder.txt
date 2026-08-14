@@ -1,0 +1,95 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder
+
+class werkzeug.test.EnvironBuilder(path='/', base_url=None, query_string=None, method='GET', input_stream=None, content_type=None, content_length=None, errors_stream=None, multithread=False, multiprocess=False, run_once=False, headers=None, data=None, environ_base=None, environ_overrides=None, charset='utf-8', mimetype=None, json=None, auth=None)  
+This class can be used to conveniently create a WSGI environment for testing purposes. It can be used to quickly create WSGI environments or request objects from arbitrary data. The signature of this class is also used in some other places as of Werkzeug 0.5 (create_environ(), Response.from_values(), Client.open()). Because of this most of the functionality is available through the constructor alone. Files and regular form data can be manipulated independently of each other with the form and files attributes, but are passed with the same argument to the constructor: data. data can be any of these values:  a str or bytes object: The object is converted into an input_stream, the content_length is set and you have to provide a content_type. 
+a dict or MultiDict: The keys have to be strings. The values have to be either any of the following objects, or a list of any of the following objects:  a file-like object: These are converted into FileStorage objects automatically. a tuple: The add_file() method is called with the key and the unpacked tuple items as positional arguments. a str: The string is set as form data for the associated key.   a file-like object: The object content is loaded in memory and then handled like a regular str or a bytes.   Parameters 
+ 
+path (str) – the path of the request. In the WSGI environment this will end up as PATH_INFO. If the query_string is not defined and there is a question mark in the path everything after it is used as query string. 
+base_url (Optional[str]) – the base URL is a URL that is used to extract the WSGI URL scheme, host (server name + server port) and the script root (SCRIPT_NAME). 
+query_string (Optional[Union[Mapping[str, str], str]]) – an optional string or dict with URL parameters. 
+method (str) – the HTTP method to use, defaults to GET. 
+input_stream (Optional[BinaryIO]) – an optional input stream. Do not specify this and data. As soon as an input stream is set you can’t modify args and files unless you set the input_stream to None again. 
+content_type (Optional[str]) – The content type for the request. As of 0.5 you don’t have to provide this when specifying files and form data via data. 
+content_length (Optional[int]) – The content length for the request. You don’t have to specify this when providing data via data. 
+errors_stream (Optional[TextIO]) – an optional error stream that is used for wsgi.errors. Defaults to stderr. 
+multithread (bool) – controls wsgi.multithread. Defaults to False. 
+multiprocess (bool) – controls wsgi.multiprocess. Defaults to False. 
+run_once (bool) – controls wsgi.run_once. Defaults to False. 
+headers (Optional[Union[werkzeug.datastructures.Headers, Iterable[Tuple[str, str]]]]) – an optional list or Headers object of headers. 
+data (Optional[Union[BinaryIO, str, bytes, Mapping[str, Any]]]) – a string or dict of form data or a file-object. See explanation above. 
+json (Optional[Mapping[str, Any]]) – An object to be serialized and assigned to data. Defaults the content type to "application/json". Serialized with the function assigned to json_dumps. 
+environ_base (Optional[Mapping[str, Any]]) – an optional dict of environment defaults. 
+environ_overrides (Optional[Mapping[str, Any]]) – an optional dict of environment overrides. 
+charset (str) – the charset used to encode string data. 
+auth (Optional[Union[werkzeug.datastructures.Authorization, Tuple[str, str]]]) – An authorization object to use for the Authorization header value. A (username, password) tuple is a shortcut for Basic authorization. 
+mimetype (Optional[str]) –    Return type 
+None    Changed in version 2.0: REQUEST_URI and RAW_URI is the full raw URI including the query string, not only the path.   Changed in version 2.0: The default request_class is Request instead of BaseRequest.   New in version 2.0: Added the auth parameter.   Changelog New in version 0.15: The json param and json_dumps() method.   New in version 0.15: The environ has keys REQUEST_URI and RAW_URI containing the path before perecent-decoding. This is not part of the WSGI PEP, but many WSGI servers include it.   Changed in version 0.6: path and base_url can now be unicode strings that are encoded with iri_to_uri().   
+server_protocol = 'HTTP/1.1'  
+the server protocol to use. defaults to HTTP/1.1 
+  
+wsgi_version = (1, 0)  
+the wsgi version to use. defaults to (1, 0) 
+  
+request_class  
+alias of werkzeug.wrappers.request.Request 
+  
+static json_dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, **kw)  
+The serialization function used when json is passed. 
+  
+classmethod from_environ(environ, **kwargs)  
+Turn an environ dict back into a builder. Any extra kwargs override the args extracted from the environ.  Changed in version 2.0: Path and query values are passed through the WSGI decoding dance to avoid double encoding.   Changelog New in version 0.15.   Parameters 
+ 
+environ (WSGIEnvironment) –  
+kwargs (Any) –    Return type 
+EnvironBuilder   
+  
+property base_url: str  
+The base URL is used to extract the URL scheme, host name, port, and root path. 
+  
+property content_type: Optional[str]  
+The content type for the request. Reflected from and to the headers. Do not set if you set files or form for auto detection. 
+  
+property mimetype: Optional[str]  
+The mimetype (content type without charset etc.)  Changelog New in version 0.14.  
+
+  
+property mimetype_params: Mapping[str, str]  
+The mimetype parameters as dict. For example if the content type is text/html; charset=utf-8 the params would be {'charset': 'utf-8'}.  Changelog New in version 0.14.  
+
+  
+property content_length: Optional[int]  
+The content length as integer. Reflected from and to the headers. Do not set if you set files or form for auto detection. 
+  
+property form: werkzeug.datastructures.MultiDict  
+A MultiDict of form values. 
+  
+property files: werkzeug.datastructures.FileMultiDict  
+A FileMultiDict of uploaded files. Use add_file() to add new files. 
+  
+property input_stream: Optional[BinaryIO]  
+An optional input stream. This is mutually exclusive with setting form and files, setting it will clear those. Do not provide this if the method is not POST or another method that has a body. 
+  
+property query_string: str  
+The query string. If you set this to a string args will no longer be available. 
+  
+property args: werkzeug.datastructures.MultiDict  
+The URL arguments as MultiDict. 
+  
+property server_name: str  
+The server name (read-only, use host to set) 
+  
+property server_port: int  
+The server port as integer (read-only, use host to set) 
+  
+close()  
+Closes all files. If you put real file objects into the files dict you can call this method to automatically close them all in one go.  Return type 
+None   
+  
+get_environ()  
+Return the built environ.  Changelog Changed in version 0.15: The content type and length headers are set based on input stream detection. Previously this only set the WSGI keys.   Return type 
+WSGIEnvironment   
+  
+get_request(cls=None)  
+Returns a request with the data. If the request class is not specified request_class is used.  Parameters 
+cls (Optional[Type[werkzeug.wrappers.request.Request]]) – The request wrapper to use.  Return type 
+werkzeug.wrappers.request.Request

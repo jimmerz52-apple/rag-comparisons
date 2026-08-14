@@ -1,0 +1,9 @@
+# skimage.api.skimage.feature#skimage.feature.ORB.detect_and_extract
+
+detect_and_extract(image) [source]
+ 
+Detect oriented FAST keypoints and extract rBRIEF descriptors. Note that this is faster than first calling detect and then extract.  Parameters 
+ 
+image2D array 
+
+Input image.

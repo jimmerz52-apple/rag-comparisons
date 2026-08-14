@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.model-api#django.contrib.gis.db.models.LineStringField
+
+class LineStringField

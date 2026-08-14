@@ -1,0 +1,13 @@
+# matplotlib.dates_api#matplotlib.dates.num2epoch
+
+matplotlib.dates.num2epoch(d)[source]
+ 
+[Deprecated] Convert days since Matplotlib epoch to UNIX time.  Parameters 
+ 
+dlist of floats
+
+
+Time in days since Matplotlib epoch (see get_epoch()).    Returns 
+ numpy.array
+
+Time in seconds since 1970-01-01.     Notes  Deprecated since version 3.5.

@@ -1,0 +1,5 @@
+# django.ref.applications#django.apps.AppConfig.models_module
+
+AppConfig.models_module  
+Module containing the models, e.g. <module 'django.contrib.admin.models'
+from 'django/contrib/admin/models.py'>. It may be None if the application doesn’t contain a models module. Note that the database related signals such as pre_migrate and post_migrate are only emitted for applications that have a models module.

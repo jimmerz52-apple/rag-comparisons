@@ -1,0 +1,91 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers
+
+class werkzeug.datastructures.Headers([defaults])  
+An object that stores some headers. It has a dict-like interface, but is ordered, can store the same key multiple times, and iterating yields (key, value) pairs instead of only keys. This data structure is useful if you want a nicer way to handle WSGI headers which are stored as tuples in a list. From Werkzeug 0.3 onwards, the KeyError raised by this class is also a subclass of the BadRequest HTTP exception and will render a page for a 400 BAD REQUEST if caught in a catch-all for HTTP exceptions. Headers is mostly compatible with the Python wsgiref.headers.Headers class, with the exception of __getitem__. wsgiref will return None for headers['missing'], whereas Headers will raise a KeyError. To create a new Headers object pass it a list or dict of headers which are used as default values. This does not reuse the list passed to the constructor for internal usage.  Parameters 
+defaults – The list of default values for the Headers.    Changelog Changed in version 0.9: This data structure now stores unicode values similar to how the multi dicts do it. The main difference is that bytes can be set as well which will automatically be latin1 decoded.   Changed in version 0.9: The linked() function was removed without replacement as it was an API that does not support the changes to the encoding model.   
+add(_key, _value, **kw)  
+Add a new header tuple to the list. Keyword arguments can specify additional parameters for the header value, with underscores converted to dashes: >>> d = Headers()
+>>> d.add('Content-Type', 'text/plain')
+>>> d.add('Content-Disposition', 'attachment', filename='foo.png')
+ The keyword argument dumping uses dump_options_header() behind the scenes.  Changelog New in version 0.4.1: keyword arguments were added for wsgiref compatibility.  
+
+  
+add_header(_key, _value, **_kw)  
+Add a new header tuple to the list. An alias for add() for compatibility with the wsgiref add_header() method. 
+  
+clear()  
+Clears all headers. 
+  
+extend(*args, **kwargs)  
+Extend headers in this object with items from another object containing header items as well as keyword arguments. To replace existing keys instead of extending, use update() instead. If provided, the first argument can be another Headers object, a MultiDict, dict, or iterable of pairs.  Changelog Changed in version 1.0: Support MultiDict. Allow passing kwargs.  
+
+  
+get(key, default=None, type=None, as_bytes=False)  
+Return the default value if the requested data doesn’t exist. If type is provided and is a callable it should convert the value, return it or raise a ValueError if that is not possible. In this case the function will return the default as if the value was not found: >>> d = Headers([('Content-Length', '42')])
+>>> d.get('Content-Length', type=int)
+42
+  Changelog New in version 0.9: Added support for as_bytes.   Parameters 
+ 
+key – The key to be looked up. 
+default – The default value to be returned if the key can’t be looked up. If not further specified None is returned. 
+type – A callable that is used to cast the value in the Headers. If a ValueError is raised by this callable the default value is returned. 
+as_bytes – return bytes instead of strings.    
+  
+get_all(name)  
+Return a list of all the values for the named field. This method is compatible with the wsgiref get_all() method. 
+  
+getlist(key, type=None, as_bytes=False)  
+Return the list of items for a given key. If that key is not in the Headers, the return value will be an empty list. Just like get(), getlist() accepts a type parameter. All items will be converted with the callable defined there.  Changelog New in version 0.9: Added support for as_bytes.   Parameters 
+ 
+key – The key to be looked up. 
+type – A callable that is used to cast the value in the Headers. If a ValueError is raised by this callable the value will be removed from the list. 
+as_bytes – return bytes instead of strings.   Returns 
+a list of all the values for the key.   
+  
+has_key(key)  
+ Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use key in data instead.  
+  
+pop(key=None, default=no value)  
+Removes and returns a key or index.  Parameters 
+key – The key to be popped. If this is an integer the item at that position is removed, if it’s a string the value for that key is. If the key is omitted or None the last item is removed.  Returns 
+an item.   
+  
+popitem()  
+Removes a key or index and returns a (key, value) item. 
+  
+remove(key)  
+Remove a key.  Parameters 
+key – The key to be removed.   
+  
+set(_key, _value, **kw)  
+Remove all header tuples for key and add a new one. The newly added key either appears at the end of the list if there was no entry or replaces the first one. Keyword arguments can specify additional parameters for the header value, with underscores converted to dashes. See add() for more information.  Changelog Changed in version 0.6.1: set() now accepts the same arguments as add().   Parameters 
+ 
+key – The key to be inserted. 
+value – The value to be inserted.    
+  
+setdefault(key, default)  
+Return the first value for the key if it is in the headers, otherwise set the header to the value given by default and return that.  Parameters 
+ 
+key – The header key to get. 
+default – The value to set for the key if it is not in the headers.    
+  
+setlist(key, values)  
+Remove any existing values for a header and add new ones.  Parameters 
+ 
+key – The header key to set. 
+values – An iterable of values to set for the key.     Changelog New in version 1.0.  
+
+  
+setlistdefault(key, default)  
+Return the list of values for the key if it is in the headers, otherwise set the header to the list of values given by default and return that. Unlike MultiDict.setlistdefault(), modifying the returned list will not affect the headers.  Parameters 
+ 
+key – The header key to get. 
+default – An iterable of values to set for the key if it is not in the headers.     Changelog New in version 1.0.  
+
+  
+to_wsgi_list()  
+Convert the headers into a list suitable for WSGI.  Returns 
+list   
+  
+update(*args, **kwargs)  
+Replace headers in this object with items from another headers object and keyword arguments. To extend existing keys instead of replacing, use extend() instead. If provided, the first argument can be another Headers object, a MultiDict, dict, or iterable of pairs.  Changelog New in version 1.0.

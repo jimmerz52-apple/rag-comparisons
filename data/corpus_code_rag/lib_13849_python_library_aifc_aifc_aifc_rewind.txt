@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.rewind
+
+aifc.rewind()  
+Rewind the read pointer. The next readframes() will start from the beginning.

@@ -1,0 +1,53 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.LineTool
+
+class skimage.viewer.canvastools.LineTool(manager, on_move=None, on_release=None, on_enter=None, maxdist=10, line_props=None, handle_props=None, **kwargs) [source]
+ 
+Bases: skimage.viewer.canvastools.base.CanvasToolBase Widget for line selection in a plot.  Parameters 
+ 
+managerViewer or PlotPlugin. 
+
+Skimage viewer or plot plugin object.  
+on_movefunction 
+
+Function called whenever a control handle is moved. This function must accept the end points of line as the only argument.  
+on_releasefunction 
+
+Function called whenever the control handle is released.  
+on_enterfunction 
+
+Function called whenever the “enter” key is pressed.  
+maxdistfloat 
+
+Maximum pixel distance allowed when selecting control handle.  
+line_propsdict 
+
+Properties for matplotlib.lines.Line2D.  
+handle_propsdict 
+
+Marker properties for the handles (also see matplotlib.lines.Line2D).    Attributes 
+ 
+end_points2D array 
+
+End points of line ((x1, y1), (x2, y2)).      
+__init__(manager, on_move=None, on_release=None, on_enter=None, maxdist=10, line_props=None, handle_props=None, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+property end_points 
+  
+property geometry  
+Geometry information that gets passed to callback functions. 
+  
+hit_test(event) [source]
+
+  
+on_mouse_press(event) [source]
+
+  
+on_mouse_release(event) [source]
+
+  
+on_move(event) [source]
+
+  
+update(x=None, y=None) [source]

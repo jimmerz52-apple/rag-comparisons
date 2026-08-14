@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.cpu
+
+cpu()  
+Returns a CPU copy of this storage if it’s not already on the CPU

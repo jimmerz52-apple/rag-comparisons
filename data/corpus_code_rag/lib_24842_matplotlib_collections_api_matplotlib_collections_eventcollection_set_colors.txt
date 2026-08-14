@@ -1,0 +1,10 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.set_colors
+
+set_colors(c)[source]
+ 
+Set the edgecolor(s) of the LineCollection.  Parameters 
+ 
+ccolor or list of colors
+
+
+Single color (all lines have same color), or a sequence of rgba tuples; if it is a sequence the lines will cycle through the sequence.

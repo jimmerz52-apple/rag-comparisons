@@ -1,0 +1,3 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.dict_append
+
+numpy.distutils.misc_util.dict_append(d, **kws)[source]

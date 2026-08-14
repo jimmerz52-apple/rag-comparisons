@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.bool
+
+bool(memory_format=torch.preserve_format) → Tensor  
+self.bool() is equivalent to self.to(torch.bool). See to().  Parameters 
+memory_format (torch.memory_format, optional) – the desired memory format of returned Tensor. Default: torch.preserve_format.

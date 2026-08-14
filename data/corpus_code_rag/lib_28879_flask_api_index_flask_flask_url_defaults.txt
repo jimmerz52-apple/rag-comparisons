@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.url_defaults
+
+url_defaults(f)  
+Callback function for URL defaults for all view functions of the application. It’s called with the endpoint and values and should update the values passed in place.  Parameters 
+f (Callable[[str, dict], None]) –   Return type 
+Callable[[str, dict], None]

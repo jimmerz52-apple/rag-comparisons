@@ -1,0 +1,22 @@
+# matplotlib._as_gen.matplotlib.patches.connectionstyle#matplotlib.patches.ConnectionStyle.Bar
+
+classBar(armA=0.0, armB=0.0, fraction=0.3, angle=None)[source]
+ 
+Bases: matplotlib.patches.ConnectionStyle._Base A line with angle between A and B with armA and armB. One of the arms is extended so that they are connected in a right angle. The length of armA is determined by (armA + fraction x AB distance). Same for armB.  Parameters 
+ 
+armAfloat
+
+
+minimum length of armA  
+armBfloat
+
+
+minimum length of armB  
+fractionfloat
+
+
+a fraction of the distance between two points that will be added to armA and armB.  
+anglefloat or None
+
+
+angle of the connecting line (if None, parallel to A and B)       connect(posA, posB)[source]

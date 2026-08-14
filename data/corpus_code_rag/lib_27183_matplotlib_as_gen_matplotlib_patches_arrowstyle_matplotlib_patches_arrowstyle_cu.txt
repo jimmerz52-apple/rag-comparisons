@@ -1,0 +1,46 @@
+# matplotlib._as_gen.matplotlib.patches.arrowstyle#matplotlib.patches.ArrowStyle.CurveAB
+
+classCurveAB(head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None)[source]
+ 
+Bases: matplotlib.patches.ArrowStyle._Curve An arrow with heads both at the begin and the end point.  Parameters 
+ 
+head_lengthfloat, default: 0.4
+
+
+Length of the arrow head, relative to mutation_scale.  
+head_widthfloat, default: 0.2
+
+
+Width of the arrow head, relative to mutation_scale.  
+widthAfloat, default: 1.0
+
+
+Width of the bracket at the beginning of the arrow  
+widthBfloat, default: 1.0
+
+
+Width of the bracket at the end of the arrow  
+lengthAfloat, default: 0.2
+
+
+Length of the bracket at the beginning of the arrow  
+lengthBfloat, default: 0.2
+
+
+Length of the bracket at the end of the arrow  
+angleAfloat, default 0
+
+
+Orientation of the bracket at the beginning, as a counterclockwise angle. 0 degrees means perpendicular to the line.  
+angleBfloat, default 0
+
+
+Orientation of the bracket at the beginning, as a counterclockwise angle. 0 degrees means perpendicular to the line.  
+scaleAfloat, default mutation_size
+
+
+The mutation_size for the beginning bracket  
+scaleBfloat, default mutation_size
+
+
+The mutation_size for the end bracket       arrow='<->'

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.mean
+
+tf.experimental.numpy.mean TensorFlow variant of NumPy's mean. 
+tf.experimental.numpy.mean(
+    a, axis=None, dtype=None, keepdims=None
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.mean.

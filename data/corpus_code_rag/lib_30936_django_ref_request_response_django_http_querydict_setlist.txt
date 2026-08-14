@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.setlist
+
+QueryDict.setlist(key, list_)  
+Sets the given key to list_ (unlike __setitem__()).

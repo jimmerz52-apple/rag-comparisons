@@ -1,0 +1,9 @@
+# python.library.turtle#turtle.isvisible
+
+turtle.isvisible()  
+Return True if the Turtle is shown, False if it’s hidden. >>> turtle.hideturtle()
+>>> turtle.isvisible()
+False
+>>> turtle.showturtle()
+>>> turtle.isvisible()
+True

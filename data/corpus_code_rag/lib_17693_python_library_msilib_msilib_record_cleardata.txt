@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Record.ClearData
+
+Record.ClearData()  
+Set all fields of the record to 0, through MsiRecordClearData().

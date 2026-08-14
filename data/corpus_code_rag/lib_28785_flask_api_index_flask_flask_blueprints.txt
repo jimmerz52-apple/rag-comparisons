@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.blueprints
+
+blueprints: t.Dict[str, ‘Blueprint’]  
+Maps registered blueprint names to blueprint objects. The dict retains the order the blueprints were registered in. Blueprints can be registered multiple times, this dict does not track how often they were attached.  Changelog New in version 0.7.

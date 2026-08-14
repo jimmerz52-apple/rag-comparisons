@@ -1,0 +1,4 @@
+# django.topics.testing.advanced#django.test.runner.DiscoverRunner.run_tests
+
+DiscoverRunner.run_tests(test_labels, **kwargs)  
+Run the test suite. test_labels allows you to specify which tests to run and supports several formats (see DiscoverRunner.build_suite() for a list of supported formats).  Deprecated since version 4.0: extra_tests is a list of extra TestCase instances to add to the suite that is executed by the test runner. These extra tests are run in addition to those discovered in the modules listed in test_labels.  This method should return the number of tests that failed.

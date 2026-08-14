@@ -1,0 +1,12 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.update_axes_image
+
+skimage.viewer.utils.update_axes_image(image_axes, image) [source]
+ 
+Update the image displayed by an image plot. This sets the image plot’s array and updates its shape appropriately  Parameters 
+ 
+image_axesmatplotlib.image.AxesImage 
+
+Image axes to update.  
+imagearray 
+
+Image array.

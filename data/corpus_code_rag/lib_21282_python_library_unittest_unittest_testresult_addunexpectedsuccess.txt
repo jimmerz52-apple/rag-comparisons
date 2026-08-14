@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.addUnexpectedSuccess
+
+addUnexpectedSuccess(test)  
+Called when the test case test was marked with the expectedFailure() decorator, but succeeded. The default implementation appends the test to the instance’s unexpectedSuccesses attribute.

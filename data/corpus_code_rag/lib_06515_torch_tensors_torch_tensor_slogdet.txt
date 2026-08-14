@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.slogdet
+
+slogdet() -> (Tensor, Tensor)  
+See torch.slogdet()

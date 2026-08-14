@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_usetex
+
+set_usetex(usetex)[source]
+ 
+ Parameters 
+ 
+usetexbool or None
+
+
+Whether to render using TeX, None means to use rcParams["text.usetex"] (default: False).

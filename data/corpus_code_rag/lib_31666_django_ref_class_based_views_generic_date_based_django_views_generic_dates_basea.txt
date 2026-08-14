@@ -1,0 +1,3 @@
+# django.ref.class-based-views.generic-date-based#django.views.generic.dates.BaseArchiveIndexView
+
+class BaseArchiveIndexView

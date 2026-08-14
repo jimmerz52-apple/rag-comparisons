@@ -1,0 +1,13 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo.set_foreground
+
+set_foreground(fg, isRGBA=None)[source]
+ 
+Set the foreground color.  Parameters 
+ 
+fgcolor
+
+
+isRGBAbool
+
+
+If fg is known to be an (r, g, b, a) tuple, isRGBA can be set to True to improve performance.

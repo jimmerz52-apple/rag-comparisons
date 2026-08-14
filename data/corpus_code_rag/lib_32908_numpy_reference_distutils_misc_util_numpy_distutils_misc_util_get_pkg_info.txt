@@ -1,0 +1,25 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.get_pkg_info
+
+numpy.distutils.misc_util.get_pkg_info(pkgname, dirs=None)[source]
+ 
+Return library info for the given package.  Parameters 
+ 
+pkgnamestr
+
+
+Name of the package (should match the name of the .ini file, without the extension, e.g. foo for the file foo.ini).  
+dirssequence, optional
+
+
+If given, should be a sequence of additional directories where to look for npy-pkg-config files. Those directories are searched prior to the NumPy directory.    Returns 
+ 
+pkginfoclass instance
+
+
+The LibraryInfo instance containing the build information.    Raises 
+ PkgNotFound
+
+If the package is not found.      See also  
+Configuration.add_npy_pkg_config, Configuration.add_installed_library
+
+get_info

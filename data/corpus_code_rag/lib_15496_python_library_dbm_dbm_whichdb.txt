@@ -1,0 +1,4 @@
+# python.library.dbm#dbm.whichdb
+
+dbm.whichdb(filename)  
+This function attempts to guess which of the several simple database modules available — dbm.gnu, dbm.ndbm or dbm.dumb — should be used to open a given file. Returns one of the following values: None if the file can’t be opened because it’s unreadable or doesn’t exist; the empty string ('') if the file’s format can’t be guessed; or a string containing the required module name, such as 'dbm.ndbm' or 'dbm.gnu'.

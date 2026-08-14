@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.add_fallback
+
+add_fallback(fallback)  
+Add fallback as the fallback object for the current translation object. A translation object should consult the fallback if it cannot provide a translation for a given message.

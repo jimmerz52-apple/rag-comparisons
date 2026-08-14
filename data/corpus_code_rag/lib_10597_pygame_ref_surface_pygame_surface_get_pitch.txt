@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_pitch
+
+get_pitch() 
+ get the number of bytes used per Surface row get_pitch() -> int  Return the number of bytes separating each row in the Surface. Surfaces in video memory are not always linearly packed. Subsurfaces will also have a larger pitch than their real width. This value is not needed for normal pygame usage.

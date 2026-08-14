@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.sum
+
+numpy.record.sum method   record.sum()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.sum.

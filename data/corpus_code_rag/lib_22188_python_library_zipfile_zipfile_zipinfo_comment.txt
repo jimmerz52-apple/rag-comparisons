@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.comment
+
+ZipInfo.comment  
+Comment for the individual archive member as a bytes object.

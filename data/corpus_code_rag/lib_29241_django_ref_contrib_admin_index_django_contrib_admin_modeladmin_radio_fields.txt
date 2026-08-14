@@ -1,0 +1,6 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.radio_fields
+
+ModelAdmin.radio_fields  
+By default, Django’s admin uses a select-box interface (<select>) for fields that are ForeignKey or have choices set. If a field is present in radio_fields, Django will use a radio-button interface instead. Assuming group is a ForeignKey on the Person model: class PersonAdmin(admin.ModelAdmin):
+    radio_fields = {"group": admin.VERTICAL}
+ You have the choice of using HORIZONTAL or VERTICAL from the django.contrib.admin module. Don’t include a field in radio_fields unless it’s a ForeignKey or has choices set.

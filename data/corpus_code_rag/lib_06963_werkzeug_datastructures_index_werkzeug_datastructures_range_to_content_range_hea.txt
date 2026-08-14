@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Range.to_content_range_header
+
+to_content_range_header(length)  
+Converts the object into Content-Range HTTP header, based on given length

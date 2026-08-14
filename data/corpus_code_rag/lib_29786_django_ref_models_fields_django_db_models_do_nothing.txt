@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.DO_NOTHING
+
+DO_NOTHING  
+Take no action. If your database backend enforces referential integrity, this will cause an IntegrityError unless you manually add an SQL ON DELETE constraint to the database field.

@@ -1,0 +1,25 @@
+# sklearn.modules.generated.sklearn.tree.extratreeregressor#sklearn.tree.ExtraTreeRegressor.cost_complexity_pruning_path
+
+cost_complexity_pruning_path(X, y, sample_weight=None) [source]
+ 
+Compute the pruning path during Minimal Cost-Complexity Pruning. See Minimal Cost-Complexity Pruning for details on the pruning process.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csc_matrix.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+The target values (class labels) as integers or strings.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, then samples are equally weighted. Splits that would create child nodes with net zero or negative weight are ignored while searching for a split in each node. Splits are also ignored if they would result in any single class carrying a negative weight in either child node.    Returns 
+ 
+ccp_pathBunch 
+
+Dictionary-like object, with the following attributes.  
+ccp_alphasndarray 
+
+Effective alphas of subtree during pruning.  
+impuritiesndarray 
+
+Sum of the impurities of the subtree leaves for the corresponding alpha value in ccp_alphas.

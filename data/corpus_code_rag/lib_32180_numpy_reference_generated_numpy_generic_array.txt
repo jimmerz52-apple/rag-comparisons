@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.__array__
+
+numpy.generic.__array__ method   generic.__array__()
+ 
+sc.__array__(dtype) return 0-dim array from scalar with specified dtype

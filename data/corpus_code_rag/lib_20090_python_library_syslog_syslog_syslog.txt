@@ -1,0 +1,5 @@
+# python.library.syslog#syslog.syslog
+
+syslog.syslog(message)  
+syslog.syslog(priority, message)  
+Send the string message to the system logger. A trailing newline is added if necessary. Each message is tagged with a priority composed of a facility and a level. The optional priority argument, which defaults to LOG_INFO, determines the message priority. If the facility is not encoded in priority using logical-or (LOG_INFO | LOG_USER), the value given in the openlog() call is used. If openlog() has not been called prior to the call to syslog(), openlog() will be called with no arguments. Raises an auditing event syslog.syslog with arguments priority, message.

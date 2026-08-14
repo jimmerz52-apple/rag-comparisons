@@ -1,0 +1,4 @@
+# django.ref.forms.widgets#django.forms.Widget.value_omitted_from_data
+
+value_omitted_from_data(data, files, name)  
+Given data and files dictionaries and this widget’s name, returns whether or not there’s data or files for the widget. The method’s result affects whether or not a field in a model form falls back to its default. Special cases are CheckboxInput, CheckboxSelectMultiple, and SelectMultiple, which always return False because an unchecked checkbox and unselected <select multiple> don’t appear in the data of an HTML form submission, so it’s unknown whether or not the user submitted a value.

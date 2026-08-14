@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.intersection_update
+
+intersection_update(*others)  
+set &= other & ...  
+Update the set, keeping only elements found in it and all others.

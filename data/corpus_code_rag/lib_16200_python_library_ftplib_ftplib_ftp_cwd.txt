@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.cwd
+
+FTP.cwd(pathname)  
+Set the current directory on the server.

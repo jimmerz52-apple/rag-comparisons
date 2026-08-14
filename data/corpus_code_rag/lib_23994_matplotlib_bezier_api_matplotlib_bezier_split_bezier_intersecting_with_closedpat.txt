@@ -1,0 +1,21 @@
+# matplotlib.bezier_api#matplotlib.bezier.split_bezier_intersecting_with_closedpath
+
+matplotlib.bezier.split_bezier_intersecting_with_closedpath(bezier, inside_closedpath, tolerance=0.01)[source]
+ 
+Split a Bezier curve into two at the intersection with a closed path.  Parameters 
+ 
+bezier(N, 2) array-like
+
+
+Control points of the Bezier segment. See BezierSegment.  
+inside_closedpathcallable
+
+
+A function returning True if a given point (x, y) is inside the closed path. See also find_bezier_t_intersecting_with_closedpath.  
+tolerancefloat
+
+
+The tolerance for the intersection. See also find_bezier_t_intersecting_with_closedpath.    Returns 
+ left, right
+
+Lists of control points for the two Bezier segments.

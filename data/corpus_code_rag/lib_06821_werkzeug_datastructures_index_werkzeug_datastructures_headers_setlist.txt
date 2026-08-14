@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.setlist
+
+setlist(key, values)  
+Remove any existing values for a header and add new ones.  Parameters 
+ 
+key – The header key to set. 
+values – An iterable of values to set for the key.     Changelog New in version 1.0.

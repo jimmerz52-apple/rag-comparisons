@@ -1,0 +1,4 @@
+# flask.api.index#flask.signals.signals_available
+
+signals.signals_available  
+True if the signaling system is available. This is the case when blinker is installed.

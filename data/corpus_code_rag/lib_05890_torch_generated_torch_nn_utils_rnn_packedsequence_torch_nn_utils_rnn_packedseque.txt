@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.to
+
+to(*args, **kwargs) [source]
+ 
+Performs dtype and/or device conversion on self.data. It has similar signature as torch.Tensor.to(), except optional arguments like non_blocking and copy should be passed as kwargs, not args, or they will not apply to the index tensors.  Note If the self.data Tensor already has the correct torch.dtype and torch.device, then self is returned. Otherwise, returns a copy with the desired configuration.

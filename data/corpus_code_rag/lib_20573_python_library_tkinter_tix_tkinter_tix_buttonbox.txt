@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.ButtonBox
+
+class tkinter.tix.ButtonBox  
+The ButtonBox widget creates a box of buttons, such as is commonly used for Ok Cancel.

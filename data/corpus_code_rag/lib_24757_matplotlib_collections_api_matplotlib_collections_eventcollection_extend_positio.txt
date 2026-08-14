@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.extend_positions
+
+extend_positions(position)[source]
+ 
+Add one or more events at the specified positions.

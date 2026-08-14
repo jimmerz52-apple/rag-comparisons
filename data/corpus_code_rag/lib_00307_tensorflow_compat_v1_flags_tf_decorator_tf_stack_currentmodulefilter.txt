@@ -1,0 +1,15 @@
+# tensorflow.compat.v1.flags.tf_decorator.tf_stack.currentmodulefilter
+
+tf.compat.v1.flags.tf_decorator.tf_stack.CurrentModuleFilter Filters stack frames from the module where this is used (best effort). Inherits From: StackTraceFilter, StackTraceTransform  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.tf_decorator.tf_stack.CurrentModuleFilter  
+tf.compat.v1.flags.tf_decorator.tf_stack.CurrentModuleFilter()
+ Methods get_filtered_filenames View source 
+get_filtered_filenames()
+ reset View source 
+reset()
+ __enter__ View source 
+__enter__()
+ __exit__ View source 
+__exit__(
+    unused_type, unused_value, unused_traceback
+)

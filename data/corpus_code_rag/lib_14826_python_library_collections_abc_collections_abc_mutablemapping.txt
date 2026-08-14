@@ -1,0 +1,5 @@
+# python.library.collections.abc#collections.abc.MutableMapping
+
+class collections.abc.Mapping  
+class collections.abc.MutableMapping  
+ABCs for read-only and mutable mappings.

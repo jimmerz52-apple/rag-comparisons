@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie
+
+class http.cookiejar.Cookie  
+This class represents Netscape, RFC 2109 and RFC 2965 cookies. It is not expected that users of http.cookiejar construct their own Cookie instances. Instead, if necessary, call make_cookies() on a CookieJar instance.

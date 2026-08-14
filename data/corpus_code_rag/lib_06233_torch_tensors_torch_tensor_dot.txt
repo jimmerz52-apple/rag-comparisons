@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.dot
+
+dot(other) → Tensor  
+See torch.dot()

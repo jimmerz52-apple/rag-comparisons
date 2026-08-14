@@ -1,0 +1,32 @@
+# sklearn.modules.generated.sklearn.neighbors.localoutlierfactor#sklearn.neighbors.LocalOutlierFactor.kneighbors
+
+kneighbors(X=None, n_neighbors=None, return_distance=True) [source]
+ 
+Finds the K-neighbors of a point. Returns indices of and distances to the neighbors of each point.  Parameters 
+ 
+Xarray-like, shape (n_queries, n_features), or (n_queries, n_indexed) if metric == ‘precomputed’, default=None 
+
+The query point or points. If not provided, neighbors of each indexed point are returned. In this case, the query point is not considered its own neighbor.  
+n_neighborsint, default=None 
+
+Number of neighbors required for each sample. The default is the value passed to the constructor.  
+return_distancebool, default=True 
+
+Whether or not to return the distances.    Returns 
+ 
+neigh_distndarray of shape (n_queries, n_neighbors) 
+
+Array representing the lengths to points, only present if return_distance=True  
+neigh_indndarray of shape (n_queries, n_neighbors) 
+
+Indices of the nearest points in the population matrix.     Examples In the following example, we construct a NearestNeighbors class from an array representing our data set and ask who’s the closest point to [1,1,1] >>> samples = [[0., 0., 0.], [0., .5, 0.], [1., 1., .5]]
+>>> from sklearn.neighbors import NearestNeighbors
+>>> neigh = NearestNeighbors(n_neighbors=1)
+>>> neigh.fit(samples)
+NearestNeighbors(n_neighbors=1)
+>>> print(neigh.kneighbors([[1., 1., 1.]]))
+(array([[0.5]]), array([[2]]))
+ As you can see, it returns [[0.5]], and [[2]], which means that the element is at distance 0.5 and is the third element of samples (indexes start at 0). You can also query for multiple points: >>> X = [[0., 1., 0.], [1., 0., 1.]]
+>>> neigh.kneighbors(X, return_distance=False)
+array([[1],
+       [2]]...)

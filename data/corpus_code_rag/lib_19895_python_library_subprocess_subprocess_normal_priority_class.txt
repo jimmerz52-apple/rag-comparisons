@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.NORMAL_PRIORITY_CLASS
+
+subprocess.NORMAL_PRIORITY_CLASS  
+A Popen creationflags parameter to specify that a new process will have an normal priority. (default)  New in version 3.7.

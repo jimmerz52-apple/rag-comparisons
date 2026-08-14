@@ -1,0 +1,5 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.style
+
+BaseCommand.style  
+An instance attribute that helps create colored output when writing to stdout or stderr. For example: self.stdout.write(self.style.SUCCESS('...'))
+ See Syntax coloring to learn how to modify the color palette and to see the available styles (use uppercased versions of the “roles” described in that section). If you pass the --no-color option when running your command, all self.style() calls will return the original string uncolored.

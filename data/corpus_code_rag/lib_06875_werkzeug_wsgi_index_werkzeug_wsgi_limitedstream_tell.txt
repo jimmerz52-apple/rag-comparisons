@@ -1,0 +1,5 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.tell
+
+tell()  
+Returns the position of the stream.  Changelog New in version 0.9.   Return type 
+int

@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.decomposition.factoranalysis#sklearn.decomposition.FactorAnalysis.get_precision
+
+get_precision() [source]
+ 
+Compute data precision matrix with the FactorAnalysis model.  Returns 
+ 
+precisionndarray of shape (n_features, n_features) 
+
+Estimated precision of data.

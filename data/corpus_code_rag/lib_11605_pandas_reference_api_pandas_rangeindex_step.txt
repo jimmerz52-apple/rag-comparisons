@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.rangeindex.step
+
+pandas.RangeIndex.step   propertyRangeIndex.step
+ 
+The value of the step parameter (1 if this was not supplied).

@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.SimpleQueue.put
+
+put(item)  
+Put item into the queue.

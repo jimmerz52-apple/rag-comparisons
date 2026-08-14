@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.empty
+
+GEOSGeometry.empty  
+Returns whether or not the set of points in the geometry is empty.

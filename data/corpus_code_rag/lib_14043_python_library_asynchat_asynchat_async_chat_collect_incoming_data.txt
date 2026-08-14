@@ -1,0 +1,4 @@
+# python.library.asynchat#asynchat.async_chat.collect_incoming_data
+
+async_chat.collect_incoming_data(data)  
+Called with data holding an arbitrary amount of received data. The default method, which must be overridden, raises a NotImplementedError exception.

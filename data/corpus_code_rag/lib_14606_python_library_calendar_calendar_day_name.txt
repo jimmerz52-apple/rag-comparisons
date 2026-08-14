@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.day_name
+
+calendar.day_name  
+An array that represents the days of the week in the current locale.

@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.zeroslike
+
+tf.raw_ops.ZerosLike Returns a tensor of zeros with the same shape and type as x.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.ZerosLike  
+tf.raw_ops.ZerosLike(
+    x, name=None
+)
+
+ 
+
+
+ Args
+  x   A Tensor. a tensor of type T.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor. Has the same type as x.

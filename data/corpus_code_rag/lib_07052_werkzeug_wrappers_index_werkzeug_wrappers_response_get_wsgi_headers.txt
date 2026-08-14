@@ -1,0 +1,7 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.get_wsgi_headers
+
+get_wsgi_headers(environ)  
+This is automatically called right before the response is started and returns headers modified for the given environment. It returns a copy of the headers from the response with some modifications applied if necessary. For example the location header (if present) is joined with the root URL of the environment. Also the content length is automatically set to zero here for certain status codes.  Changelog Changed in version 0.6: Previously that function was called fix_headers and modified the response object in place. Also since 0.6, IRIs in location and content-location headers are handled properly. Also starting with 0.6, Werkzeug will attempt to set the content length if it is able to figure it out on its own. This is the case if all the strings in the response iterable are already encoded and the iterable is buffered.   Parameters 
+environ (WSGIEnvironment) – the WSGI environment of the request.  Returns 
+returns a new Headers object.  Return type 
+werkzeug.datastructures.Headers

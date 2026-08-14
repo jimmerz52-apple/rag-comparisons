@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.second.is_anchored
+
+pandas.tseries.offsets.Second.is_anchored   Second.is_anchored()

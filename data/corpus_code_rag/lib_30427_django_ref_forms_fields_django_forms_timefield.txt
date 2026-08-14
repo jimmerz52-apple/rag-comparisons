@@ -1,0 +1,10 @@
+# django.ref.forms.fields#django.forms.TimeField
+
+class TimeField(**kwargs)  
+ Default widget: TimeInput
+ Empty value: None
+ Normalizes to: A Python datetime.time object. Validates that the given value is either a datetime.time or string formatted in a particular time format. Error message keys: required, invalid
+  Takes one optional argument:  
+input_formats  
+A list of formats used to attempt to convert a string to a valid datetime.time object. 
+ If no input_formats argument is provided, the default input formats are taken from TIME_INPUT_FORMATS if USE_L10N is False, or from the active locale format TIME_INPUT_FORMATS key if localization is enabled. See also format localization.

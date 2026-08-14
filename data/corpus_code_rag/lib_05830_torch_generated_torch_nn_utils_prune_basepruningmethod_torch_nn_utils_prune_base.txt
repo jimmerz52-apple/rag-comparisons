@@ -1,0 +1,13 @@
+# torch.generated.torch.nn.utils.prune.basepruningmethod#torch.nn.utils.prune.BasePruningMethod.compute_mask
+
+abstract compute_mask(t, default_mask) [source]
+ 
+Computes and returns a mask for the input tensor t. Starting from a base default_mask (which should be a mask of ones if the tensor has not been pruned yet), generate a random mask to apply on top of the default_mask according to the specific pruning method recipe.  Parameters 
+ 
+t (torch.Tensor) – tensor representing the importance scores of the 
+to prune. (parameter) –  
+default_mask (torch.Tensor) – Base mask from previous pruning 
+that need to be respected after the new mask is (iterations,) –  
+Same dims as t. (applied.) –    Returns 
+mask to apply to t, of same dims as t  Return type 
+mask (torch.Tensor)

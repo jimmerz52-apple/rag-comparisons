@@ -1,0 +1,7 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.set_rmin
+
+set_rmin(rmin)[source]
+ 
+Set the inner radial limit.  Parameters 
+ 
+rminfloat

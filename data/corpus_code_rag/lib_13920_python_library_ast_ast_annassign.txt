@@ -1,0 +1,45 @@
+# python.library.ast#ast.AnnAssign
+
+class ast.AnnAssign(target, annotation, value, simple)  
+An assignment with a type annotation. target is a single node and can be a Name, a Attribute or a Subscript. annotation is the annotation, such as a Constant or Name node. value is a single optional node. simple is a boolean integer set to True for a Name node in target that do not appear in between parenthesis and are hence pure names and not expressions. >>> print(ast.dump(ast.parse('c: int'), indent=4))
+Module(
+    body=[
+        AnnAssign(
+            target=Name(id='c', ctx=Store()),
+            annotation=Name(id='int', ctx=Load()),
+            simple=1)],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('(a): int = 1'), indent=4)) # Annotation with parenthesis
+Module(
+    body=[
+        AnnAssign(
+            target=Name(id='a', ctx=Store()),
+            annotation=Name(id='int', ctx=Load()),
+            value=Constant(value=1),
+            simple=0)],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('a.b: int'), indent=4)) # Attribute annotation
+Module(
+    body=[
+        AnnAssign(
+            target=Attribute(
+                value=Name(id='a', ctx=Load()),
+                attr='b',
+                ctx=Store()),
+            annotation=Name(id='int', ctx=Load()),
+            simple=0)],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('a[1]: int'), indent=4)) # Subscript annotation
+Module(
+    body=[
+        AnnAssign(
+            target=Subscript(
+                value=Name(id='a', ctx=Load()),
+                slice=Constant(value=1),
+                ctx=Store()),
+            annotation=Name(id='int', ctx=Load()),
+            simple=0)],
+    type_ignores=[])

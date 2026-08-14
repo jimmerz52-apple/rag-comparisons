@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.linear_model.ransacregressor#sklearn.linear_model.RANSACRegressor.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit estimator using RANSAC algorithm.  Parameters 
+ 
+Xarray-like or sparse matrix, shape [n_samples, n_features] 
+
+Training data.  
+yarray-like of shape (n_samples,) or (n_samples, n_targets) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Individual weights for each sample raises error if sample_weight is passed and base_estimator fit method does not support it.  New in version 0.18.     Raises 
+ ValueError
+
+If no valid consensus set could be found. This occurs if is_data_valid and is_model_valid return False for all max_trials randomly chosen sub-samples.

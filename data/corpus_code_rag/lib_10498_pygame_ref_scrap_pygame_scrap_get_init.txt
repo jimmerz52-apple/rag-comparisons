@@ -1,0 +1,9 @@
+# pygame.ref.scrap#pygame.scrap.get_init
+
+pygame.scrap.get_init() 
+ Returns True if the scrap module is currently initialized. get_init() -> bool  Gets the scrap module's initialization state.     
+Returns:
+
+True if the pygame.scrap module is currently initialized, False otherwise  
+Return type:
+bool     New in pygame 1.9.5.

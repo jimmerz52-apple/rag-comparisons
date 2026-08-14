@@ -1,0 +1,20 @@
+# django.ref.forms.fields#django.forms.FilePathField
+
+class FilePathField(**kwargs)  
+ Default widget: Select
+ Empty value: '' (an empty string) Normalizes to: A string. Validates that the selected choice exists in the list of choices. Error message keys: required, invalid_choice
+  The field allows choosing from files inside a certain directory. It takes five extra arguments; only path is required:  
+path  
+The absolute path to the directory whose contents you want listed. This directory must exist. 
+  
+recursive  
+If False (the default) only the direct contents of path will be offered as choices. If True, the directory will be descended into recursively and all descendants will be listed as choices. 
+  
+match  
+A regular expression pattern; only files with names matching this expression will be allowed as choices. 
+  
+allow_files  
+Optional. Either True or False. Default is True. Specifies whether files in the specified location should be included. Either this or allow_folders must be True. 
+  
+allow_folders  
+Optional. Either True or False. Default is False. Specifies whether folders in the specified location should be included. Either this or allow_files must be True.

@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ZoomPanBase.enable
+
+enable(event)[source]
+ 
+Connect press/release events and lock the canvas.

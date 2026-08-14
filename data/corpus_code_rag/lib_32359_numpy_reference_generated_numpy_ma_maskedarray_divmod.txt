@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__divmod__
+
+numpy.ma.MaskedArray.__divmod__ method   ma.MaskedArray.__divmod__(value, /)
+ 
+Return divmod(self, value).

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_UNBOUND_PREFIX
+
+xml.parsers.expat.errors.XML_ERROR_UNBOUND_PREFIX  
+An undeclared prefix was found when namespace processing was enabled.

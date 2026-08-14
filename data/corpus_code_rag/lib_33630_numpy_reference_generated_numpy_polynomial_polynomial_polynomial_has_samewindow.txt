@@ -1,0 +1,15 @@
+# numpy.reference.generated.numpy.polynomial.polynomial.polynomial.has_samewindow
+
+numpy.polynomial.polynomial.Polynomial.has_samewindow method   polynomial.polynomial.Polynomial.has_samewindow(other)[source]
+ 
+Check if windows match.  New in version 1.6.0.   Parameters 
+ 
+otherclass instance
+
+
+The other class must have the window attribute.    Returns 
+ 
+boolboolean
+
+
+True if the windows are the same, False otherwise.

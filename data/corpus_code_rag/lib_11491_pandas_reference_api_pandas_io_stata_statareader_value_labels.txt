@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.io.stata.statareader.value_labels
+
+pandas.io.stata.StataReader.value_labels   StataReader.value_labels()[source]
+ 
+Return a dict, associating each variable name a dict, associating each value its corresponding label.  Returns 
+ dict

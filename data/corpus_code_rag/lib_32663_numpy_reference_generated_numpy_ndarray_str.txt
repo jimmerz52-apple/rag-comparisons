@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__str__
+
+numpy.ndarray.__str__ method   ndarray.__str__(/)
+ 
+Return str(self).

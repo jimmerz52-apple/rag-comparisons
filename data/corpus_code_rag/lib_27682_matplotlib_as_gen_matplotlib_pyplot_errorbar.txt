@@ -1,0 +1,105 @@
+# matplotlib._as_gen.matplotlib.pyplot.errorbar
+
+matplotlib.pyplot.errorbar   matplotlib.pyplot.errorbar(x, y, yerr=None, xerr=None, fmt='', ecolor=None, elinewidth=None, capsize=None, barsabove=False, lolims=False, uplims=False, xlolims=False, xuplims=False, errorevery=1, capthick=None, *, data=None, **kwargs)[source]
+ 
+Plot y versus x as lines and/or markers with attached errorbars. x, y define the data locations, xerr, yerr define the errorbar sizes. By default, this draws the data markers/lines as well the errorbars. Use fmt='none' to draw errorbars without any data markers.  Parameters 
+ 
+x, yfloat or array-like
+
+
+The data positions.  
+xerr, yerrfloat or array-like, shape(N,) or shape(2, N), optional
+
+
+The errorbar sizes:  scalar: Symmetric +/- values for all data points. shape(N,): Symmetric +/-values for each data point. shape(2, N): Separate - and + values for each bar. First row contains the lower errors, the second row contains the upper errors. 
+None: No errorbar.  Note that all error arrays should have positive values. See Different ways of specifying error bars for an example on the usage of xerr and yerr.  
+fmtstr, default: ''
+
+
+The format for the data points / data lines. See plot for details. Use 'none' (case insensitive) to plot errorbars without any data markers.  
+ecolorcolor, default: None
+
+
+The color of the errorbar lines. If None, use the color of the line connecting the markers.  
+elinewidthfloat, default: None
+
+
+The linewidth of the errorbar lines. If None, the linewidth of the current style is used.  
+capsizefloat, default: rcParams["errorbar.capsize"] (default: 0.0)
+
+
+The length of the error bar caps in points.  
+capthickfloat, default: None
+
+
+An alias to the keyword argument markeredgewidth (a.k.a. mew). This setting is a more sensible name for the property that controls the thickness of the error bar cap in points. For backwards compatibility, if mew or markeredgewidth are given, then they will over-ride capthick. This may change in future releases.  
+barsabovebool, default: False
+
+
+If True, will plot the errorbars above the plot symbols. Default is below.  
+lolims, uplims, xlolims, xuplimsbool, default: False
+
+
+These arguments can be used to indicate that a value gives only upper/lower limits. In that case a caret symbol is used to indicate this. lims-arguments may be scalars, or array-likes of the same length as xerr and yerr. To use limits with inverted axes, set_xlim or set_ylim must be called before errorbar(). Note the tricky parameter names: setting e.g. lolims to True means that the y-value is a lower limit of the True value, so, only an upward-pointing arrow will be drawn!  
+erroreveryint or (int, int), default: 1
+
+
+draws error bars on a subset of the data. errorevery =N draws error bars on the points (x[::N], y[::N]). errorevery =(start, N) draws error bars on the points (x[start::N], y[start::N]). e.g. errorevery=(6, 3) adds error bars to the data at (x[6], x[9], x[12], x[15], ...). Used to avoid overlapping error bars when two series share x-axis values.    Returns 
+ ErrorbarContainer
+
+The container contains:  plotline: Line2D instance of x, y plot markers and/or line. caplines: A tuple of Line2D instances of the error bar caps. barlinecols: A tuple of LineCollection with the horizontal and vertical error ranges.     Other Parameters 
+ 
+dataindexable object, optional
+
+
+If given, the following parameters also accept a string s, which is interpreted as data[s] (unless this raises an exception): x, y, xerr, yerr  **kwargs
+
+All other keyword arguments are passed on to the plot call drawing the markers. For example, this code makes big red squares with thick green edges: x, y, yerr = rand(3, 10)
+errorbar(x, y, yerr, marker='s', mfc='red',
+         mec='green', ms=20, mew=4)
+ where mfc, mec, ms and mew are aliases for the longer property names, markerfacecolor, markeredgecolor, markersize and markeredgewidth. Valid kwargs for the marker properties are Line2D properties:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color or c color  
+dash_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+dash_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+dashes sequence of floats (on/off ink in points) or (None, None)  
+data (2, N) array or two 1D arrays  
+drawstyle or ds {'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'  
+figure Figure  
+fillstyle {'full', 'left', 'right', 'bottom', 'top', 'none'}  
+gid str  
+in_layout bool  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float  
+marker marker style string, Path or MarkerStyle  
+markeredgecolor or mec color  
+markeredgewidth or mew float  
+markerfacecolor or mfc color  
+markerfacecoloralt or mfcalt color  
+markersize or ms float  
+markevery None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]  
+path_effects AbstractPathEffect  
+picker float or callable[[Artist, Event], tuple[bool, dict]]  
+pickradius float  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+solid_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+solid_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+transform unknown  
+url str  
+visible bool  
+xdata 1D array  
+ydata 1D array  
+zorder float       
+  Examples using matplotlib.pyplot.errorbar
+ 
+   Errorbar limit selection

@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.HTTP
+
+email.policy.HTTP  
+Suitable for serializing headers with for use in HTTP traffic. Like SMTP except that max_line_length is set to None (unlimited).

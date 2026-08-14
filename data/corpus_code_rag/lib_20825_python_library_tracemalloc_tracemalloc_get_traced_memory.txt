@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.get_traced_memory
+
+tracemalloc.get_traced_memory()  
+Get the current size and peak size of memory blocks traced by the tracemalloc module as a tuple: (current: int, peak: int).

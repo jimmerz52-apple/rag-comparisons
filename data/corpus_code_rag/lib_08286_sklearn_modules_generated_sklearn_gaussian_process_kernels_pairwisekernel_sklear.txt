@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.pairwisekernel#sklearn.gaussian_process.kernels.PairwiseKernel.hyperparameters
+
+property hyperparameters  
+Returns a list of all hyperparameter specifications.

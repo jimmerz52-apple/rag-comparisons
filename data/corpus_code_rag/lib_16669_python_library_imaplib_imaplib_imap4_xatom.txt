@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.xatom
+
+IMAP4.xatom(name[, ...])  
+Allow simple extension commands notified by server in CAPABILITY response.

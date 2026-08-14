@@ -1,0 +1,60 @@
+# django.ref.forms.widgets#django.forms.MultiWidget
+
+class MultiWidget(widgets, attrs=None)  
+A widget that is composed of multiple widgets. MultiWidget works hand in hand with the MultiValueField. MultiWidget has one required argument:  
+widgets  
+An iterable containing the widgets needed. For example: >>> from django.forms import MultiWidget, TextInput
+>>> widget = MultiWidget(widgets=[TextInput, TextInput])
+>>> widget.render('name', ['john', 'paul'])
+'<input type="text" name="name_0" value="john"><input type="text" name="name_1" value="paul">'
+ You may provide a dictionary in order to specify custom suffixes for the name attribute on each subwidget. In this case, for each (key, widget) pair, the key will be appended to the name of the widget in order to generate the attribute value. You may provide the empty string ('') for a single key, in order to suppress the suffix for one widget. For example: >>> widget = MultiWidget(widgets={'': TextInput, 'last': TextInput})
+>>> widget.render('name', ['john', 'paul'])
+'<input type="text" name="name" value="john"><input type="text" name="name_last" value="paul">'
+ 
+ And one required method:  
+decompress(value)  
+This method takes a single “compressed” value from the field and returns a list of “decompressed” values. The input value can be assumed valid, but not necessarily non-empty. This method must be implemented by the subclass, and since the value may be empty, the implementation must be defensive. The rationale behind “decompression” is that it is necessary to “split” the combined value of the form field into the values for each widget. An example of this is how SplitDateTimeWidget turns a datetime value into a list with date and time split into two separate values: from django.forms import MultiWidget
+
+class SplitDateTimeWidget(MultiWidget):
+
+    # ...
+
+    def decompress(self, value):
+        if value:
+            return [value.date(), value.time()]
+        return [None, None]
+  Tip Note that MultiValueField has a complementary method compress() with the opposite responsibility - to combine cleaned values of all member fields into one.  
+ It provides some custom context:  
+get_context(name, value, attrs)  
+In addition to the 'widget' key described in Widget.get_context(), MultiWidget adds a widget['subwidgets'] key. These can be looped over in the widget template: {% for subwidget in widget.subwidgets %}
+    {% include subwidget.template_name with widget=subwidget %}
+{% endfor %}
+ 
+ Here’s an example widget which subclasses MultiWidget to display a date with the day, month, and year in different select boxes. This widget is intended to be used with a DateField rather than a MultiValueField, thus we have implemented value_from_datadict(): from datetime import date
+from django import forms
+
+class DateSelectorWidget(forms.MultiWidget):
+    def __init__(self, attrs=None):
+        days = [(day, day) for day in range(1, 32)]
+        months = [(month, month) for month in range(1, 13)]
+        years = [(year, year) for year in [2018, 2019, 2020]]
+        widgets = [
+            forms.Select(attrs=attrs, choices=days),
+            forms.Select(attrs=attrs, choices=months),
+            forms.Select(attrs=attrs, choices=years),
+        ]
+        super().__init__(widgets, attrs)
+
+    def decompress(self, value):
+        if isinstance(value, date):
+            return [value.day, value.month, value.year]
+        elif isinstance(value, str):
+            year, month, day = value.split('-')
+            return [day, month, year]
+        return [None, None, None]
+
+    def value_from_datadict(self, data, files, name):
+        day, month, year = super().value_from_datadict(data, files, name)
+        # DateField expects a single string that it can parse into a date.
+        return '{}-{}-{}'.format(year, month, day)
+ The constructor creates several Select widgets in a list. The super() method uses this list to set up the widget. The required method decompress() breaks up a datetime.date value into the day, month, and year values corresponding to each widget. If an invalid date was selected, such as the non-existent 30th February, the DateField passes this method a string instead, so that needs parsing. The final return handles when value is None, meaning we don’t have any defaults for our subwidgets. The default implementation of value_from_datadict() returns a list of values corresponding to each Widget. This is appropriate when using a MultiWidget with a MultiValueField. But since we want to use this widget with a DateField, which takes a single value, we have overridden this method. The implementation here combines the data from the subwidgets into a string in the format that DateField expects.

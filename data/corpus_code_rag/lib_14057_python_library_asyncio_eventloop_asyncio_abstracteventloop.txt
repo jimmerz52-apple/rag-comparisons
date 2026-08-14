@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.AbstractEventLoop
+
+class asyncio.AbstractEventLoop  
+Abstract base class for asyncio-compliant event loops. The Event Loop Methods section lists all methods that an alternative implementation of AbstractEventLoop should have defined.

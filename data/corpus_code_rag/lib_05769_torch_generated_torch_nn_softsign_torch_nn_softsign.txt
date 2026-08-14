@@ -1,0 +1,10 @@
+# torch.generated.torch.nn.softsign#torch.nn.Softsign
+
+class torch.nn.Softsign [source]
+ 
+Applies the element-wise function:  SoftSign(x)=x1+∣x∣\text{SoftSign}(x) = \frac{x}{ 1 + |x|}  
+ Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.Softsign()
+>>> input = torch.randn(2)
+>>> output = m(input)

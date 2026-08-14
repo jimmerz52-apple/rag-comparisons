@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.switch_orientation
+
+switch_orientation()[source]
+ 
+Switch the orientation of the event line, either from vertical to horizontal or vice versus.

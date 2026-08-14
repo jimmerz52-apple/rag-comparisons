@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.prelu
+
+torch.nn.functional.prelu(input, weight) → Tensor [source]
+ 
+Applies element-wise the function PReLU(x)=max⁡(0,x)+weight∗min⁡(0,x)\text{PReLU}(x) = \max(0,x) + \text{weight} * \min(0,x)  where weight is a learnable parameter. See PReLU for more details.

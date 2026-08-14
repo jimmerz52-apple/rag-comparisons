@@ -1,0 +1,8 @@
+# python.library.ipaddress#ipaddress.IPv4Network.address_exclude
+
+address_exclude(network)  
+Computes the network definitions resulting from removing the given network from this one. Returns an iterator of network objects. Raises ValueError if network is not completely contained in this network. >>> n1 = ip_network('192.0.2.0/28')
+>>> n2 = ip_network('192.0.2.1/32')
+>>> list(n1.address_exclude(n2))  
+[IPv4Network('192.0.2.8/29'), IPv4Network('192.0.2.4/30'),
+ IPv4Network('192.0.2.2/31'), IPv4Network('192.0.2.0/32')]

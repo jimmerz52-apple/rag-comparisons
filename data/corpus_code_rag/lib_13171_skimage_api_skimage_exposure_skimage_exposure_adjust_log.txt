@@ -1,0 +1,24 @@
+# skimage.api.skimage.exposure#skimage.exposure.adjust_log
+
+skimage.exposure.adjust_log(image, gain=1, inv=False) [source]
+ 
+Performs Logarithmic correction on the input image. This function transforms the input image pixelwise according to the equation O = gain*log(1 + I) after scaling each pixel to the range 0 to 1. For inverse logarithmic correction, the equation is O = gain*(2**I - 1).  Parameters 
+ 
+imagendarray 
+
+Input image.  
+gainfloat, optional 
+
+The constant multiplier. Default value is 1.  
+invfloat, optional 
+
+If True, it performs inverse logarithmic correction, else correction will be logarithmic. Defaults to False.    Returns 
+ 
+outndarray 
+
+Logarithm corrected output image.      See also  
+adjust_gamma
+
+  References  
+1  
+http://www.ece.ucsb.edu/Faculty/Manjunath/courses/ece178W03/EnhancePart1.pdf

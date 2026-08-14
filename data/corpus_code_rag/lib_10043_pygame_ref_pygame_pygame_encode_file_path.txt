@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.encode_file_path
+
+pygame.encode_file_path() 
+ Encode a Unicode or bytes object as a file system path encode_file_path([obj [, etype]]) -> bytes or None  obj: If Unicode, encode; if bytes, return unaltered; if anything else, return None; if not given, raise SyntaxError. etype (exception type): If given, the exception type to raise for an encoding error. The default is UnicodeEncodeError, as returned by PyUnicode_AsEncodedString(). This function is used to encode file paths in pygame. Encoding is to the codec as returned by sys.getfilesystemencoding(). Keyword arguments are supported.  New in pygame 1.9.2: (primarily for use in unit tests)

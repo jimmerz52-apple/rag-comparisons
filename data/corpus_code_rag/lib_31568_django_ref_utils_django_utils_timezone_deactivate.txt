@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.deactivate
+
+deactivate()  
+Unsets the current time zone.

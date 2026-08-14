@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.next
+
+TarFile.next()  
+Return the next member of the archive as a TarInfo object, when TarFile is opened for reading. Return None if there is no more available.

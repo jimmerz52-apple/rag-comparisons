@@ -1,0 +1,15 @@
+# matplotlib._as_gen.matplotlib.axes.axes.relim
+
+matplotlib.axes.Axes.relim   Axes.relim(visible_only=False)[source]
+ 
+Recompute the data limits based on current artists. At present, Collection instances are not supported.  Parameters 
+ 
+visible_onlybool, default: False
+
+
+Whether to exclude invisible artists.     
+  Examples using matplotlib.axes.Axes.relim
+ 
+   Packed-bubble chart   
+
+   Textbox

@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.getpos
+
+HTMLParser.getpos()  
+Return current line number and offset.

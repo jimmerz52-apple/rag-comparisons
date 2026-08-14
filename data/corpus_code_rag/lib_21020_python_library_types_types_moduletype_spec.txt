@@ -1,0 +1,4 @@
+# python.library.types#types.ModuleType.__spec__
+
+__spec__  
+A record of the the module’s import-system-related state. Expected to be an instance of importlib.machinery.ModuleSpec.  New in version 3.4.

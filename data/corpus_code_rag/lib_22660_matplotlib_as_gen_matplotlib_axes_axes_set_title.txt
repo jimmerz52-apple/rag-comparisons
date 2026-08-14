@@ -1,0 +1,314 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_title
+
+matplotlib.axes.Axes.set_title   Axes.set_title(label, fontdict=None, loc=None, pad=None, *, y=None, **kwargs)[source]
+ 
+Set a title for the Axes. Set one of the three available Axes titles. The available titles are positioned above the Axes in the center, flush with the left edge, and flush with the right edge.  Parameters 
+ 
+labelstr
+
+
+Text to use for the title  
+fontdictdict
+
+
+A dictionary controlling the appearance of the title text, the default fontdict is: {'fontsize': rcParams['axes.titlesize'],
+ 'fontweight': rcParams['axes.titleweight'],
+ 'color': rcParams['axes.titlecolor'],
+ 'verticalalignment': 'baseline',
+ 'horizontalalignment': loc}
+  
+loc{'center', 'left', 'right'}, default: rcParams["axes.titlelocation"] (default: 'center')
+
+
+Which title to set.  
+yfloat, default: rcParams["axes.titley"] (default: None)
+
+
+Vertical Axes loation for the title (1.0 is the top). If None (the default), y is determined automatically to avoid decorators on the Axes.  
+padfloat, default: rcParams["axes.titlepad"] (default: 6.0)
+
+
+The offset of the title from the top of the Axes, in points.    Returns 
+ Text
+
+The matplotlib text instance representing the title    Other Parameters 
+ 
+**kwargsText properties
+
+
+Other keyword arguments are text properties, see Text for a list of valid text properties.     
+  Examples using matplotlib.axes.Axes.set_title
+ 
+   Bar Label Demo   
+
+   Stacked bar chart   
+
+   Grouped bar chart with labels   
+
+   Horizontal bar chart   
+
+   Errorbar subsampling   
+
+   EventCollection Demo   
+
+   Fill Between and Alpha   
+
+   Filling the area between lines   
+
+   Fill Betweenx Demo   
+
+   Hat graph   
+
+   Markevery Demo   
+
+   Psd Demo   
+
+   Scatter Demo2   
+
+   Using span_where   
+
+   Stackplots and streamgraphs   
+
+   hlines and vlines   
+
+   Contour Corner Mask   
+
+   Contour Demo   
+
+   Contour Label Demo   
+
+   Contourf Demo   
+
+   Creating annotated heatmaps   
+
+   Image antialiasing   
+
+   Image Demo   
+
+   Image Masked   
+
+   Image Nonuniform   
+
+   Interpolations for imshow   
+
+   Contour plot of irregularly spaced data   
+
+   Pcolor Demo   
+
+   pcolormesh grids and shading   
+
+   pcolormesh   
+
+   Streamplot   
+
+   Advanced quiver and quiverkey functions   
+
+   Tricontour Demo   
+
+   Tricontour Smooth Delaunay   
+
+   Tricontour Smooth User   
+
+   Trigradient Demo   
+
+   Tripcolor Demo   
+
+   Triplot Demo   
+
+   Axes Demo   
+
+   Controlling view limits using margins and sticky_edges   
+
+   Resizing axes with constrained layout   
+
+   Resizing axes with tight layout   
+
+   Figure labels: suptitle, supxlabel, supylabel   
+
+   Invert Axes   
+
+   Secondary Axis   
+
+   Figure subfigures   
+
+   Creating multiple subplots using plt.subplots   
+
+   Box plots with custom fill colors   
+
+   Plot a confidence ellipse of a two-dimensional dataset   
+
+   Violin plot customization   
+
+   Different ways of specifying error bars   
+
+   Including upper and lower limits in error bars   
+
+   Hexagonal binned plot   
+
+   Using histograms to plot a cumulative distribution   
+
+   Some features of the histogram (hist) function   
+
+   The histogram (hist) function with multiple data sets   
+
+   Bar of pie   
+
+   Labeling a pie and a donut   
+
+   Polar plot   
+
+   Using accented text in matplotlib   
+
+   Scale invariant angle label   
+
+   Date tick labels   
+
+   Custom tick formatter for time series   
+
+   Labeling ticks using engineering notation   
+
+   Using a ttf font file in Matplotlib   
+
+   Labelling subplots   
+
+   Legend Demo   
+
+   Mathtext   
+
+   Math fontfamily   
+
+   Multiline   
+
+   Rendering math equations using TeX   
+
+   Title positioning   
+
+   Boxplot Demo   
+
+   Simple axes labels   
+
+   Text Commands   
+
+   Color Demo   
+
+   Creating a colormap from a list of colors   
+
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Compound path   
+
+   Mmh Donuts!!!   
+
+   Line Collection   
+
+   Bezier Curve   
+
+   Bayesian Methods for Hackers style sheet   
+
+   Dark background style sheet   
+
+   FiveThirtyEight style sheet   
+
+   Make Room For Ylabel Using Axesgrid   
+
+   Axis Direction   
+
+   Anatomy of a figure   
+
+   XKCD   
+
+   pyplot animation   
+
+   Data Browser   
+
+   Image Slices Viewer   
+
+   Keypress event   
+
+   Lasso Demo   
+
+   Legend Picking   
+
+   Looking Glass   
+
+   Path Editor   
+
+   Pick Event Demo2   
+
+   Poly Editor   
+
+   Trifinder Event Demo   
+
+   Viewlims   
+
+   Cross hair cursor   
+
+   Packed-bubble chart   
+
+   Pythonic Matplotlib   
+
+   Rasterization for vector graphics   
+
+   Zorder Demo   
+
+   Demo of 3D bar charts   
+
+   Lorenz Attractor   
+
+   3D wireframe plots in one direction   
+
+   Loglog Aspect   
+
+   Exploring normalizations   
+
+   Scales   
+
+   Radar chart (aka spider or star chart)   
+
+   Topographic hillshading   
+
+   Spine Placement   
+
+   Spines   
+
+   Dropped spines   
+
+   Colorbar Tick Labelling   
+
+   Date Precision and Epochs   
+
+   Set default x-axis tick labels on the top   
+
+   Artist tests   
+
+   Group barchart with units   
+
+   Evans test   
+
+   Interactive Adjustment of Colormap Range   
+
+   Annotated Cursor   
+
+   Rectangle and ellipse selectors   
+
+   Span Selector   
+
+   Basic Usage   
+
+   Image tutorial   
+
+   Artist tutorial   
+
+   Styling with cycler   
+
+   Constrained Layout Guide   
+
+   Tight Layout guide   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Colormap Normalization   
+
+   Text in Matplotlib Plots

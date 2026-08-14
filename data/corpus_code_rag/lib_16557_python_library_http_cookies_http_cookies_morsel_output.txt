@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.output
+
+Morsel.output(attrs=None, header='Set-Cookie:')  
+Return a string representation of the Morsel, suitable to be sent as an HTTP header. By default, all the attributes are included, unless attrs is given, in which case it should be a list of attributes to use. header is by default "Set-Cookie:".

@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.runctx
+
+runctx(cmd, globals, locals)  
+Profile the cmd via exec() with the specified global and local environment.

@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.kwargs
+
+kwargs  
+The keyword arguments that would be passed to the view function, as parsed from the URL.

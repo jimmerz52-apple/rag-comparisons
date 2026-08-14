@@ -1,0 +1,4 @@
+# flask.config.index#PROPAGATE_EXCEPTIONS
+
+PROPAGATE_EXCEPTIONS  
+Exceptions are re-raised rather than being handled by the app’s error handlers. If not set, this is implicitly true if TESTING or DEBUG is enabled. Default: None

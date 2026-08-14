@@ -1,0 +1,8 @@
+# python.library.hashlib#hashlib.pbkdf2_hmac
+
+hashlib.pbkdf2_hmac(hash_name, password, salt, iterations, dklen=None)  
+The function provides PKCS#5 password-based key derivation function 2. It uses HMAC as pseudorandom function. The string hash_name is the desired name of the hash digest algorithm for HMAC, e.g. ‘sha1’ or ‘sha256’. password and salt are interpreted as buffers of bytes. Applications and libraries should limit password to a sensible length (e.g. 1024). salt should be about 16 or more bytes from a proper source, e.g. os.urandom(). The number of iterations should be chosen based on the hash algorithm and computing power. As of 2013, at least 100,000 iterations of SHA-256 are suggested. dklen is the length of the derived key. If dklen is None then the digest size of the hash algorithm hash_name is used, e.g. 64 for SHA-512. >>> import hashlib
+>>> dk = hashlib.pbkdf2_hmac('sha256', b'password', b'salt', 100000)
+>>> dk.hex()
+'0394a2ede332c9a13eb82e9b24631604c31df978b4e2f0fbd2c549944f9d79a5'
+  New in version 3.4.   Note A fast implementation of pbkdf2_hmac is available with OpenSSL. The Python implementation uses an inline version of hmac. It is about three times slower and doesn’t release the GIL.

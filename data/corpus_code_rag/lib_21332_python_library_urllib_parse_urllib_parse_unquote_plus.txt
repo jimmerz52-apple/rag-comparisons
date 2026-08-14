@@ -1,0 +1,4 @@
+# python.library.urllib.parse#urllib.parse.unquote_plus
+
+urllib.parse.unquote_plus(string, encoding='utf-8', errors='replace')  
+Like unquote(), but also replace plus signs with spaces, as required for unquoting HTML form values. string must be a str. Example: unquote_plus('/El+Ni%C3%B1o/') yields '/El Niño/'.

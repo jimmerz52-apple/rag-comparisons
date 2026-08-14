@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_id
+
+get_id() 
+ get the device index (deprecated) get_id() -> int  Returns the original device index for this device. This is the same value that was passed to the Joystick() constructor. This method can safely be called while the Joystick is not initialized.  Deprecated since pygame 2.0.0: The original device index is not useful in pygame 2. Use get_instance_id() instead. Will be removed in Pygame 2.1.

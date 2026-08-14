@@ -1,0 +1,14 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.BoolOr
+
+class BoolOr(expression, filter=None, default=None, **extra)  
+Returns True if at least one input value is true, default if all values are null or if there are no values, otherwise False. Usage example: class Comment(models.Model):
+    body = models.TextField()
+    published = models.BooleanField()
+    rank = models.IntegerField()
+
+>>> from django.db.models import Q
+>>> from django.contrib.postgres.aggregates import BoolOr
+>>> Comment.objects.aggregate(boolor=BoolOr('published'))
+{'boolor': True}
+>>> Comment.objects.aggregate(boolor=BoolOr(Q(rank__gt=2)))
+{'boolor': False}

@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.files_select_event
+
+files_select_event(event)  
+Event handler for single-click event on file.

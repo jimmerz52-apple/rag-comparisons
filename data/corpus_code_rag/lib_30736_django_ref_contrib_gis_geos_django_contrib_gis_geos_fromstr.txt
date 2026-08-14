@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.fromstr
+
+fromstr(string, srid=None)  
+   
+Parameters:
+
+ 
+string (str) – string that contains spatial data 
+srid (int) – spatial reference identifier    
+Return type:
+
+a GEOSGeometry corresponding to the spatial data in the string    fromstr(string, srid) is equivalent to GEOSGeometry(string, srid). Example: >>> from django.contrib.gis.geos import fromstr
+>>> pnt = fromstr('POINT(-90.5 29.5)', srid=4326)

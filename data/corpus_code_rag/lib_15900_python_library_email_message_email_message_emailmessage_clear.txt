@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.clear
+
+clear()  
+Remove the payload and all of the headers.

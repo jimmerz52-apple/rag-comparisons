@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.DefaultCookiePolicy.DomainStrict
+
+DefaultCookiePolicy.DomainStrict  
+Equivalent to DomainStrictNoDots|DomainStrictNonDomain.

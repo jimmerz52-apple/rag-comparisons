@@ -1,0 +1,35 @@
+# skimage.api.skimage.restoration#skimage.restoration.denoise_tv_chambolle
+
+skimage.restoration.denoise_tv_chambolle(image, weight=0.1, eps=0.0002, n_iter_max=200, multichannel=False) [source]
+ 
+Perform total-variation denoising on n-dimensional images.  Parameters 
+ 
+imagendarray of ints, uints or floats 
+
+Input data to be denoised. image can be of any numeric type, but it is cast into an ndarray of floats for the computation of the denoised image.  
+weightfloat, optional 
+
+Denoising weight. The greater weight, the more denoising (at the expense of fidelity to input).  
+epsfloat, optional 
+
+Relative difference of the value of the cost function that determines the stop criterion. The algorithm stops when: (E_(n-1) - E_n) < eps * E_0  
+n_iter_maxint, optional 
+
+Maximal number of iterations used for the optimization.  
+multichannelbool, optional 
+
+Apply total-variation denoising separately for each channel. This option should be true for color images, otherwise the denoising is also applied in the channels dimension.    Returns 
+ 
+outndarray 
+
+Denoised image.     Notes Make sure to set the multichannel parameter appropriately for color images. The principle of total variation denoising is explained in https://en.wikipedia.org/wiki/Total_variation_denoising The principle of total variation denoising is to minimize the total variation of the image, which can be roughly described as the integral of the norm of the image gradient. Total variation denoising tends to produce “cartoon-like” images, that is, piecewise-constant images. This code is an implementation of the algorithm of Rudin, Fatemi and Osher that was proposed by Chambolle in [1]. References  
+1  
+A. Chambolle, An algorithm for total variation minimization and applications, Journal of Mathematical Imaging and Vision, Springer, 2004, 20, 89-97.   Examples 2D example on astronaut image: >>> from skimage import color, data
+>>> img = color.rgb2gray(data.astronaut())[:50, :50]
+>>> img += 0.5 * img.std() * np.random.randn(*img.shape)
+>>> denoised_img = denoise_tv_chambolle(img, weight=60)
+ 3D example on synthetic data: >>> x, y, z = np.ogrid[0:20, 0:20, 0:20]
+>>> mask = (x - 22)**2 + (y - 20)**2 + (z - 17)**2 < 8**2
+>>> mask = mask.astype(float)
+>>> mask += 0.2*np.random.randn(*mask.shape)
+>>> res = denoise_tv_chambolle(mask, weight=100)

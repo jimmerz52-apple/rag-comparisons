@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.BoundedSemaphore
+
+class asyncio.BoundedSemaphore(value=1, *, loop=None)  
+A bounded semaphore object. Not thread-safe. Bounded Semaphore is a version of Semaphore that raises a ValueError in release() if it increases the internal counter above the initial value.  Deprecated since version 3.8, will be removed in version 3.10: The loop parameter.

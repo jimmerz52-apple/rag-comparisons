@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_PUBLICID
+
+xml.parsers.expat.errors.XML_ERROR_PUBLICID  
+Characters were found in the public id that are not allowed.

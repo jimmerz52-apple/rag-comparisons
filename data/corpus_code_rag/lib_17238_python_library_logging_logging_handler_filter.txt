@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.filter
+
+filter(record)  
+Apply this handler’s filters to the record and return True if the record is to be processed. The filters are consulted in turn, until one of them returns a false value. If none of them return a false value, the record will be emitted. If one returns a false value, the handler will not emit the record.

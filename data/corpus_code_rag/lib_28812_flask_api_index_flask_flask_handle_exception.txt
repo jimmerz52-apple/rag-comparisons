@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.handle_exception
+
+handle_exception(e)  
+Handle an exception that did not have an error handler associated with it, or that was raised from an error handler. This always causes a 500 InternalServerError. Always sends the got_request_exception signal. If propagate_exceptions is True, such as in debug mode, the error will be re-raised so that the debugger can display it. Otherwise, the original exception is logged, and an InternalServerError is returned. If an error handler is registered for InternalServerError or 500, it will be used. For consistency, the handler will always receive the InternalServerError. The original unhandled exception is available as e.original_exception.  Changelog Changed in version 1.1.0: Always passes the InternalServerError instance to the handler, setting original_exception to the unhandled error.   Changed in version 1.1.0: after_request functions and other finalization is done even for the default 500 response when there is no handler.   New in version 0.3.   Parameters 
+e (Exception) –   Return type 
+flask.wrappers.Response

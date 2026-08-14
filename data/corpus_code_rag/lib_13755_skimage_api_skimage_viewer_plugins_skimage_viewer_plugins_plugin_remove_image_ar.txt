@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.remove_image_artists
+
+remove_image_artists() [source]
+ 
+Remove artists that are connected to the image viewer.

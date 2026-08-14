@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.polynomial.chebyshev.chebyshev.__call__
+
+numpy.polynomial.chebyshev.Chebyshev.__call__ method   polynomial.chebyshev.Chebyshev.__call__(arg)[source]
+ 
+Call self as a function.

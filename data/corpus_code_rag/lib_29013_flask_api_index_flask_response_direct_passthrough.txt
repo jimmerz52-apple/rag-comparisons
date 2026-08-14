@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.direct_passthrough
+
+direct_passthrough  
+Pass the response body directly through as the WSGI iterable. This can be used when the body is a binary file or other iterator of bytes, to skip some unnecessary checks. Use send_file() instead of setting this manually.

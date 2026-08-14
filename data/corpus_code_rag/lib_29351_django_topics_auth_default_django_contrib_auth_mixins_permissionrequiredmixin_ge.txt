@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.PermissionRequiredMixin.get_permission_required
+
+get_permission_required()  
+Returns an iterable of permission names used by the mixin. Defaults to the permission_required attribute, converted to a tuple if necessary.

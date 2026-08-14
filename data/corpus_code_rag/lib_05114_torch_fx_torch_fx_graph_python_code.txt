@@ -1,0 +1,7 @@
+# torch.fx#torch.fx.Graph.python_code
+
+python_code(root_module) [source]
+ 
+Turn this Graph into valid Python code.  Parameters 
+root_module (str) – The name of the root module on which to look-up qualified name targets. This is usually ‘self’.  Returns 
+The string source code generated from this Graph.

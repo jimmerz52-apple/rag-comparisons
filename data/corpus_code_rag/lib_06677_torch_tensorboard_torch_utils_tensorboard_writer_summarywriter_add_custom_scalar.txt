@@ -1,0 +1,10 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_custom_scalars
+
+add_custom_scalars(layout) [source]
+ 
+Create special chart by collecting charts tags in ‘scalars’. Note that this function can only be called once for each SummaryWriter() object. Because it only provides metadata to tensorboard, the function can be called before or after the training loop.  Parameters 
+layout (dict) – {categoryName: charts}, where charts is also a dictionary {chartName: ListOfProperties}. The first element in ListOfProperties is the chart’s type (one of Multiline or Margin) and the second element should be a list containing the tags you have used in add_scalar function, which will be collected into the new chart.   Examples: layout = {'Taiwan':{'twse':['Multiline',['twse/0050', 'twse/2330']]},
+             'USA':{ 'dow':['Margin',   ['dow/aaa', 'dow/bbb', 'dow/ccc']],
+                  'nasdaq':['Margin',   ['nasdaq/aaa', 'nasdaq/bbb', 'nasdaq/ccc']]}}
+
+writer.add_custom_scalars(layout)

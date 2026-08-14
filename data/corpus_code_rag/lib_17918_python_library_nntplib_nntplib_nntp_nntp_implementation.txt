@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.nntp_implementation
+
+NNTP.nntp_implementation  
+A string describing the software name and version of the NNTP server, or None if not advertised by the server.  New in version 3.2.

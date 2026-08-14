@@ -1,0 +1,5 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.post_event
+
+post_event()[source]
+ 
+Process an event.

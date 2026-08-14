@@ -1,0 +1,10 @@
+# pygame.ref.scrap#pygame.scrap.lost
+
+pygame.scrap.lost() 
+ Indicates if the clipboard ownership has been lost by the pygame application. lost() -> bool  Indicates if the clipboard ownership has been lost by the pygame application.     
+Returns:
+
+True, if the clipboard ownership has been lost by the pygame application, False if the pygame application still owns the clipboard  
+Return type:
+bool    if pygame.scrap.lost():
+    print("The clipboard is in use by another application.")

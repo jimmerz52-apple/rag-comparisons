@@ -1,0 +1,6 @@
+# python.library.selectors#selectors.KqueueSelector
+
+class selectors.KqueueSelector  
+select.kqueue()-based selector.  
+fileno()  
+This returns the file descriptor used by the underlying select.kqueue() object.

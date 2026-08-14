@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.experimental
+
+Module: tf.compat.v1.experimental Public API for tf.experimental namespace. Classes class Optional: Represents a value that may or may not be present. Functions async_clear_error(...): Clear pending operations and error statuses in async execution. async_scope(...): Context manager for grouping async operations. function_executor_type(...): Context manager for setting the executor of eager defined functions. output_all_intermediates(...): Whether to output all intermediates from functional control flow ops. register_filesystem_plugin(...): Loads a TensorFlow FileSystem plugin.

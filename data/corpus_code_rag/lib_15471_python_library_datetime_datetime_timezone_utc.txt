@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.timezone.utc
+
+timezone.utc  
+The UTC timezone, timezone(timedelta(0)).

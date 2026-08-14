@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.get_expire_at_browser_close
+
+get_expire_at_browser_close()  
+Returns either True or False, depending on whether the user’s session cookie will expire when the user’s web browser is closed.

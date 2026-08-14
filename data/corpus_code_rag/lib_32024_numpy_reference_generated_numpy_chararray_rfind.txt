@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.rfind
+
+numpy.chararray.rfind method   chararray.rfind(sub, start=0, end=None)[source]
+ 
+For each element in self, return the highest index in the string where substring sub is found, such that sub is contained within [start, end].  See also  char.rfind

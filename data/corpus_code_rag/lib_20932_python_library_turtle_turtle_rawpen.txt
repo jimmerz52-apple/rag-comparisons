@@ -1,0 +1,6 @@
+# python.library.turtle#turtle.RawPen
+
+class turtle.RawTurtle(canvas)  
+class turtle.RawPen(canvas)  
+ Parameters 
+canvas – a tkinter.Canvas, a ScrolledCanvas or a TurtleScreen   Create a turtle. The turtle has all methods described above as “methods of Turtle/RawTurtle”.

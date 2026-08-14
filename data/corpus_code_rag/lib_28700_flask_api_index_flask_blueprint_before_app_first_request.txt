@@ -1,0 +1,6 @@
+# flask.api.index#flask.Blueprint.before_app_first_request
+
+before_app_first_request(f)  
+Like Flask.before_first_request(). Such a function is executed before the first request to the application.  Parameters 
+f (Callable[[], None]) –   Return type 
+Callable[[], None]

@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.axis.tick.get_tickdir
+
+matplotlib.axis.Tick.get_tickdir   Tick.get_tickdir()[source]

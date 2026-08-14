@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_fontweight
+
+matplotlib.rcsetup.validate_fontweight(s)[source]

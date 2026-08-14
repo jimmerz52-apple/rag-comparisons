@@ -1,0 +1,6 @@
+# matplotlib._as_gen.matplotlib.artist.artist.pickable
+
+matplotlib.artist.Artist.pickable   Artist.pickable()[source]
+ 
+Return whether the artist is pickable.  See also  
+set_picker, get_picker, pick

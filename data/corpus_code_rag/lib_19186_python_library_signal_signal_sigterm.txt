@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGTERM
+
+signal.SIGTERM  
+Termination signal.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.gaussian_process.gaussianprocessclassifier#sklearn.gaussian_process.GaussianProcessClassifier.predict_proba
+
+predict_proba(X) [source]
+ 
+Return probability estimates for the test vector X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) or list of object 
+
+Query points where the GP is evaluated for classification.    Returns 
+ 
+Carray-like of shape (n_samples, n_classes) 
+
+Returns the probability of the samples for each class in the model. The columns correspond to the classes in sorted order, as they appear in the attribute classes_.

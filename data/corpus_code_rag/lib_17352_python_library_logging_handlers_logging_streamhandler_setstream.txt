@@ -1,0 +1,6 @@
+# python.library.logging.handlers#logging.StreamHandler.setStream
+
+setStream(stream)  
+Sets the instance’s stream to the specified value, if it is different. The old stream is flushed before the new stream is set.  Parameters 
+stream – The stream that the handler should use.  Returns 
+the old stream, if the stream was changed, or None if it wasn’t.    New in version 3.7.

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.RegularPolyCollection.get_urls
+
+get_urls()[source]
+ 
+Return a list of URLs, one for each element of the collection. The list contains None for elements without a URL. See Hyperlinks for an example.

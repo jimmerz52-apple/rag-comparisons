@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.get_filename
+
+get_filename(fullname)  
+Return the value __file__ would be set to if the specified module was imported. Raise ZipImportError if the module couldn’t be found.  New in version 3.1.

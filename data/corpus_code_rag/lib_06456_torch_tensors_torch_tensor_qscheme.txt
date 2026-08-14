@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.qscheme
+
+qscheme() → torch.qscheme  
+Returns the quantization scheme of a given QTensor.

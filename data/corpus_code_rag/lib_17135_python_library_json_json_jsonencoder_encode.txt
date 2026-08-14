@@ -1,0 +1,5 @@
+# python.library.json#json.JSONEncoder.encode
+
+encode(o)  
+Return a JSON string representation of a Python data structure, o. For example: >>> json.JSONEncoder().encode({"foo": ["bar", "baz"]})
+'{"foo": ["bar", "baz"]}'

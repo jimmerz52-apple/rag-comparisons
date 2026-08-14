@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.atan2
+
+atan2(other) → Tensor  
+See torch.atan2()

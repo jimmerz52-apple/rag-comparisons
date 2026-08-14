@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.new_compiler
+
+numpy.distutils.ccompiler.new_compiler   distutils.ccompiler.new_compiler(plat=None, compiler=None, verbose=None, dry_run=0, force=0)[source]

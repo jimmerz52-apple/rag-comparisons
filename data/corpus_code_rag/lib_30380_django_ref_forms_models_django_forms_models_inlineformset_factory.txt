@@ -1,0 +1,4 @@
+# django.ref.forms.models#django.forms.models.inlineformset_factory
+
+inlineformset_factory(parent_model, model, form=ModelForm, formset=BaseInlineFormSet, fk_name=None, fields=None, exclude=None, extra=3, can_order=False, can_delete=True, max_num=None, formfield_callback=None, widgets=None, validate_max=False, localized_fields=None, labels=None, help_texts=None, error_messages=None, min_num=None, validate_min=False, field_classes=None, absolute_max=None, can_delete_extra=True, renderer=None)  
+Returns an InlineFormSet using modelformset_factory() with defaults of formset=BaseInlineFormSet, can_delete=True, and extra=3. If your model has more than one ForeignKey to the parent_model, you must specify a fk_name. See Inline formsets for example usage.  Changed in Django 3.2: The absolute_max and can_delete_extra arguments were added.   Changed in Django 4.0: The renderer argument was added.

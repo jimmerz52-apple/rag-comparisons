@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.encoding
+
+window.encoding  
+Encoding used to encode method arguments (Unicode strings and characters). The encoding attribute is inherited from the parent window when a subwindow is created, for example with window.subwin(). By default, the locale encoding is used (see locale.getpreferredencoding()).  New in version 3.3.

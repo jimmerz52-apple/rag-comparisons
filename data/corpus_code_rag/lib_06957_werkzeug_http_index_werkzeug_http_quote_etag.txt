@@ -1,0 +1,8 @@
+# werkzeug.http.index#werkzeug.http.quote_etag
+
+werkzeug.http.quote_etag(etag, weak=False)  
+Quote an etag.  Parameters 
+ 
+etag (str) – the etag to quote. 
+weak (bool) – set to True to tag it “weak”.   Return type 
+str

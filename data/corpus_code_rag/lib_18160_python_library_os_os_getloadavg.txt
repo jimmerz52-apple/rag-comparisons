@@ -1,0 +1,4 @@
+# python.library.os#os.getloadavg
+
+os.getloadavg()  
+Return the number of processes in the system run queue averaged over the last 1, 5, and 15 minutes or raises OSError if the load average was unobtainable. Availability: Unix.

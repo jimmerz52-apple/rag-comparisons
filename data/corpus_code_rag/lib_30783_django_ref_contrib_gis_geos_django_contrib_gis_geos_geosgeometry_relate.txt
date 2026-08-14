@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.relate
+
+GEOSGeometry.relate(other)  
+Returns the DE-9IM intersection matrix (a string) representing the topological relationship between this geometry and the other.

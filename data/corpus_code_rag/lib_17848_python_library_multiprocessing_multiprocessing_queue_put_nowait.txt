@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Queue.put_nowait
+
+put_nowait(obj)  
+Equivalent to put(obj, False).

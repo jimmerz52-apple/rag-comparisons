@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.whitespace_split
+
+shlex.whitespace_split  
+If True, tokens will only be split in whitespaces. This is useful, for example, for parsing command lines with shlex, getting tokens in a similar way to shell arguments. When used in combination with punctuation_chars, tokens will be split on whitespace in addition to those characters.  Changed in version 3.8: The punctuation_chars attribute was made compatible with the whitespace_split attribute.

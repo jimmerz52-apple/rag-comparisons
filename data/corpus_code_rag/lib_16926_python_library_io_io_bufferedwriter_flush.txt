@@ -1,0 +1,4 @@
+# python.library.io#io.BufferedWriter.flush
+
+flush()  
+Force bytes held in the buffer into the raw stream. A BlockingIOError should be raised if the raw stream blocks.

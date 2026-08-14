@@ -1,0 +1,3 @@
+# matplotlib.testing_api#matplotlib.testing.decorators.check_freetype_version
+
+matplotlib.testing.decorators.check_freetype_version(ver)[source]

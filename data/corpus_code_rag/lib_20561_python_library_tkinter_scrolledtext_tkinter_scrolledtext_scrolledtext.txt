@@ -1,0 +1,9 @@
+# python.library.tkinter.scrolledtext#tkinter.scrolledtext.ScrolledText
+
+class tkinter.scrolledtext.ScrolledText(master=None, **kw)  
+ 
+frame  
+The frame which surrounds the text and scroll bar widgets. 
+  
+vbar  
+The scroll bar widget.

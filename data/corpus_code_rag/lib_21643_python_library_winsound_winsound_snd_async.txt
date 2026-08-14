@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.SND_ASYNC
+
+winsound.SND_ASYNC  
+Return immediately, allowing sounds to play asynchronously.

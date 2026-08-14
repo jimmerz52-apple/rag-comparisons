@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LogScale.limit_range_for_scale
+
+limit_range_for_scale(vmin, vmax, minpos)[source]
+ 
+Limit the domain to positive values.

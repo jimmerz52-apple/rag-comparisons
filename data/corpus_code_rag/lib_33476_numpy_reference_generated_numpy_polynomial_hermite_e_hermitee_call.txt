@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.polynomial.hermite_e.hermitee.__call__
+
+numpy.polynomial.hermite_e.HermiteE.__call__ method   polynomial.hermite_e.HermiteE.__call__(arg)[source]
+ 
+Call self as a function.

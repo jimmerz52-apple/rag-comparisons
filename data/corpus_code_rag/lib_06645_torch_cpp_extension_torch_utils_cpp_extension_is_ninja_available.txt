@@ -1,0 +1,5 @@
+# torch.cpp_extension#torch.utils.cpp_extension.is_ninja_available
+
+torch.utils.cpp_extension.is_ninja_available() [source]
+ 
+Returns True if the ninja build system is available on the system, False otherwise.

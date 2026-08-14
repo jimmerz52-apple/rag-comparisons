@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.i0
+
+i0() → Tensor  
+See torch.i0()

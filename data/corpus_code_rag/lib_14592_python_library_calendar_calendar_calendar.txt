@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.calendar
+
+calendar.calendar(year, w=2, l=1, c=6, m=3)  
+Returns a 3-column calendar for an entire year as a multi-line string using the formatyear() of the TextCalendar class.

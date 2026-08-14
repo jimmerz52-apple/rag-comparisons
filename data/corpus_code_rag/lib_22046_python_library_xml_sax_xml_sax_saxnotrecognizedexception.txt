@@ -1,0 +1,4 @@
+# python.library.xml.sax#xml.sax.SAXNotRecognizedException
+
+exception xml.sax.SAXNotRecognizedException(msg, exception=None)  
+Subclass of SAXException raised when a SAX XMLReader is confronted with an unrecognized feature or property. SAX applications and extensions may use this class for similar purposes.

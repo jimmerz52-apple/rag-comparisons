@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.correct_gamma
+
+correct_gamma() 
+ Applies a certain gamma value to the Color. correct_gamma (gamma) -> Color  Applies a certain gamma value to the Color and returns a new Color with the adjusted RGBA values.

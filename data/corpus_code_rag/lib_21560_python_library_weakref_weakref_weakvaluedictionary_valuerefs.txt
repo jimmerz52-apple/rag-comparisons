@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.WeakValueDictionary.valuerefs
+
+WeakValueDictionary.valuerefs()  
+Return an iterable of the weak references to the values.

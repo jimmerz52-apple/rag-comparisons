@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_underline_thickness
+
+get_underline_thickness()[source]
+ 
+Return the underline thickness as float.

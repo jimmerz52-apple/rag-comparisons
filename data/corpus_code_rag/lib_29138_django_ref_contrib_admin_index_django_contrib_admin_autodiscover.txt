@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.autodiscover
+
+autodiscover()  
+This function attempts to import an admin module in each installed application. Such modules are expected to register models with the admin. Typically you won’t need to call this function directly as AdminConfig calls it when Django starts.

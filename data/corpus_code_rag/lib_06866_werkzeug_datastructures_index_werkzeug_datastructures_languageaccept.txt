@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.LanguageAccept
+
+class werkzeug.datastructures.LanguageAccept(values=())  
+Like Accept but with normalization for language tags.

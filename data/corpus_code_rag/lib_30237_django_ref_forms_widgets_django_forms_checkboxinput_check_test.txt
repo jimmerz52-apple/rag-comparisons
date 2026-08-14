@@ -1,0 +1,4 @@
+# django.ref.forms.widgets#django.forms.CheckboxInput.check_test
+
+check_test  
+A callable that takes the value of the CheckboxInput and returns True if the checkbox should be checked for that value.

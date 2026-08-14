@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.decomposition.factoranalysis#sklearn.decomposition.FactorAnalysis.fit
+
+fit(X, y=None) [source]
+ 
+Fit the FactorAnalysis model to X using SVD based approach  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data.  
+yIgnored 
+  Returns 
+ self

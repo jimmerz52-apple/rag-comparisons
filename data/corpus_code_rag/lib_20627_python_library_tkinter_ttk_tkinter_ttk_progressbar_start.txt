@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Progressbar.start
+
+start(interval=None)  
+Begin autoincrement mode: schedules a recurring timer event that calls Progressbar.step() every interval milliseconds. If omitted, interval defaults to 50 milliseconds.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__isub__
+
+numpy.ndarray.__isub__ method   ndarray.__isub__(value, /)
+ 
+Return self-=value.

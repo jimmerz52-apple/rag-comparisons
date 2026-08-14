@@ -1,0 +1,8 @@
+# flask.api.index#flask.Response.add_etag
+
+add_etag(overwrite=False, weak=False)  
+Add an etag for the current response if there is none yet.  Changed in version 2.0: SHA-1 is used to generate the value. MD5 may not be available in some environments.   Parameters 
+ 
+overwrite (bool) –  
+weak (bool) –    Return type 
+None

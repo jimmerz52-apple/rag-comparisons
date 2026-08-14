@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.base_session.BaseSessionManager.encode
+
+encode(session_dict)  
+Returns the given session dictionary serialized and encoded as a string. Encoding is performed by the session store class tied to a model class.

@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.get_sdl_byteorder
+
+pygame.get_sdl_byteorder() 
+ get the byte order of SDL get_sdl_byteorder() -> int  Returns the byte order of the SDL library. It returns 1234 for little endian byte order and 4321 for big endian byte order.  New in pygame 1.8.

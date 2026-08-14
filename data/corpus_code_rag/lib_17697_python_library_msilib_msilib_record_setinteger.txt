@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Record.SetInteger
+
+Record.SetInteger(field, value)  
+Set field to value through MsiRecordSetInteger(). Both field and value must be an integer.

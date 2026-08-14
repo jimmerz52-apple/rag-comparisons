@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Barrier
+
+class multiprocessing.Barrier(parties[, action[, timeout]])  
+A barrier object: a clone of threading.Barrier.  New in version 3.3.

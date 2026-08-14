@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.apps.SimpleAdminConfig.default_site
+
+default_site  
+A dotted import path to the default admin site’s class or to a callable that returns a site instance. Defaults to 'django.contrib.admin.sites.AdminSite'. See Overriding the default admin site for usage.

@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.set_zorder
+
+set_zorder(level)[source]
+ 
+Set the zorder for the artist. Artists with lower zorder values are drawn first.  Parameters 
+ 
+levelfloat

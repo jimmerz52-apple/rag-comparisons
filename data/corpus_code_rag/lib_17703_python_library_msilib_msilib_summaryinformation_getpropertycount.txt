@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.SummaryInformation.GetPropertyCount
+
+SummaryInformation.GetPropertyCount()  
+Return the number of summary properties, through MsiSummaryInfoGetPropertyCount().

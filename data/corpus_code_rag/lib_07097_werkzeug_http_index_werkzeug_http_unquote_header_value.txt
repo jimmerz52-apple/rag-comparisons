@@ -1,0 +1,8 @@
+# werkzeug.http.index#werkzeug.http.unquote_header_value
+
+werkzeug.http.unquote_header_value(value, is_filename=False)  
+Unquotes a header value. (Reversal of quote_header_value()). This does not use the real unquoting but what browsers are actually using for quoting.  Changelog New in version 0.5.   Parameters 
+ 
+value (str) – the header value to unquote. 
+is_filename (bool) – The value represents a filename or path.   Return type 
+str

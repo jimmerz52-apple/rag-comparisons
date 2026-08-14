@@ -1,0 +1,34 @@
+# python.library.inspect#inspect.Signature
+
+class inspect.Signature(parameters=None, *, return_annotation=Signature.empty)  
+A Signature object represents the call signature of a function and its return annotation. For each parameter accepted by the function it stores a Parameter object in its parameters collection. The optional parameters argument is a sequence of Parameter objects, which is validated to check that there are no parameters with duplicate names, and that the parameters are in the right order, i.e. positional-only first, then positional-or-keyword, and that parameters with defaults follow parameters without defaults. The optional return_annotation argument, can be an arbitrary Python object, is the “return” annotation of the callable. Signature objects are immutable. Use Signature.replace() to make a modified copy.  Changed in version 3.5: Signature objects are picklable and hashable.   
+empty  
+A special class-level marker to specify absence of a return annotation. 
+  
+parameters  
+An ordered mapping of parameters’ names to the corresponding Parameter objects. Parameters appear in strict definition order, including keyword-only parameters.  Changed in version 3.7: Python only explicitly guaranteed that it preserved the declaration order of keyword-only parameters as of version 3.7, although in practice this order had always been preserved in Python 3.  
+  
+return_annotation  
+The “return” annotation for the callable. If the callable has no “return” annotation, this attribute is set to Signature.empty. 
+  
+bind(*args, **kwargs)  
+Create a mapping from positional and keyword arguments to parameters. Returns BoundArguments if *args and **kwargs match the signature, or raises a TypeError. 
+  
+bind_partial(*args, **kwargs)  
+Works the same way as Signature.bind(), but allows the omission of some required arguments (mimics functools.partial() behavior.) Returns BoundArguments, or raises a TypeError if the passed arguments do not match the signature. 
+  
+replace(*[, parameters][, return_annotation])  
+Create a new Signature instance based on the instance replace was invoked on. It is possible to pass different parameters and/or return_annotation to override the corresponding properties of the base signature. To remove return_annotation from the copied Signature, pass in Signature.empty. >>> def test(a, b):
+...     pass
+>>> sig = signature(test)
+>>> new_sig = sig.replace(return_annotation="new return anno")
+>>> str(new_sig)
+"(a, b) -> 'new return anno'"
+ 
+  
+classmethod from_callable(obj, *, follow_wrapped=True)  
+Return a Signature (or its subclass) object for a given callable obj. Pass follow_wrapped=False to get a signature of obj without unwrapping its __wrapped__ chain. This method simplifies subclassing of Signature: class MySignature(Signature):
+    pass
+sig = MySignature.from_callable(min)
+assert isinstance(sig, MySignature)
+  New in version 3.5.

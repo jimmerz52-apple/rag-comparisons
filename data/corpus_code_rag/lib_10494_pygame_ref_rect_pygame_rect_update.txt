@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.update
+
+update() 
+ sets the position and size of the rectangle update(left, top, width, height) -> None update((left, top), (width, height)) -> None update(object) -> None  Sets the position and size of the rectangle, in place. See parameters for pygame.Rect() for the parameters of this function.  New in pygame 2.0.1.

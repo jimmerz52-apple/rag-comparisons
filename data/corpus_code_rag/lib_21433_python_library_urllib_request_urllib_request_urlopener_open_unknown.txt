@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.URLopener.open_unknown
+
+open_unknown(fullurl, data=None)  
+Overridable interface to open unknown URL types.

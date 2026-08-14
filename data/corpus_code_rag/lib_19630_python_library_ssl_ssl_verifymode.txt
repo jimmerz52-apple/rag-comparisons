@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.VerifyMode
+
+class ssl.VerifyMode  
+enum.IntEnum collection of CERT_* constants.  New in version 3.6.

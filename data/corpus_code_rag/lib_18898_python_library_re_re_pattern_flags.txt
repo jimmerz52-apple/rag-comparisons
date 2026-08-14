@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.flags
+
+Pattern.flags  
+The regex matching flags. This is a combination of the flags given to compile(), any (?...) inline flags in the pattern, and implicit flags such as UNICODE if the pattern is a Unicode string.

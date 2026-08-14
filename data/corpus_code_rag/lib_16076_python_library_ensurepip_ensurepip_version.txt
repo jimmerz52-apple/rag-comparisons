@@ -1,0 +1,4 @@
+# python.library.ensurepip#ensurepip.version
+
+ensurepip.version()  
+Returns a string specifying the bundled version of pip that will be installed when bootstrapping an environment.

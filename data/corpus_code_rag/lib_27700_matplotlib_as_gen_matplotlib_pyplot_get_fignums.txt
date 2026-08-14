@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.get_fignums
+
+matplotlib.pyplot.get_fignums   matplotlib.pyplot.get_fignums()[source]
+ 
+Return a list of existing figure numbers.

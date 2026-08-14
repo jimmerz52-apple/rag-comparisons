@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolViewsPositions.add_figure
+
+add_figure(figure)[source]
+ 
+Add the current figure to the stack of views and positions.

@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.FileHandler
+
+class urllib.request.FileHandler  
+Open local files.

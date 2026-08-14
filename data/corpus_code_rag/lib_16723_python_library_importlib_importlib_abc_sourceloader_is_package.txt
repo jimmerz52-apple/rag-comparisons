@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.SourceLoader.is_package
+
+is_package(fullname)  
+Concrete implementation of InspectLoader.is_package(). A module is determined to be a package if its file path (as provided by ExecutionLoader.get_filename()) is a file named __init__ when the file extension is removed and the module name itself does not end in __init__.

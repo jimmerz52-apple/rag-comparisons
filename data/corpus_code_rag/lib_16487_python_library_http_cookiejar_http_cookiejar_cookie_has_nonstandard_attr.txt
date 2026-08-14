@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.has_nonstandard_attr
+
+Cookie.has_nonstandard_attr(name)  
+Return True if cookie has the named cookie-attribute.

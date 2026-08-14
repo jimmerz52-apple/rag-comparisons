@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnchoredOffsetbox.get_extent
+
+get_extent(renderer)[source]
+ 
+Return the extent of the box as (width, height, x, y). This is the extent of the child plus the padding.

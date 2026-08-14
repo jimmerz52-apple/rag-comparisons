@@ -1,0 +1,5 @@
+# python.library.statistics#statistics.pstdev
+
+statistics.pstdev(data, mu=None)  
+Return the population standard deviation (the square root of the population variance). See pvariance() for arguments and other details. >>> pstdev([1.5, 2.5, 2.5, 2.75, 3.25, 4.75])
+0.986893273527251

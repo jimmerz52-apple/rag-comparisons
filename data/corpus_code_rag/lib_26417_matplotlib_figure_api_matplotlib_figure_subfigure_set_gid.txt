@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.set_gid
+
+set_gid(gid)[source]
+ 
+Set the (group) id for the artist.  Parameters 
+ 
+gidstr

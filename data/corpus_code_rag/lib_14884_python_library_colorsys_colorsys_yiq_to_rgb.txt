@@ -1,0 +1,4 @@
+# python.library.colorsys#colorsys.yiq_to_rgb
+
+colorsys.yiq_to_rgb(y, i, q)  
+Convert the color from YIQ coordinates to RGB coordinates.

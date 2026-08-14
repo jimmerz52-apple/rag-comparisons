@@ -1,0 +1,4 @@
+# python.library.json#json.loads
+
+json.loads(s, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw)  
+Deserialize s (a str, bytes or bytearray instance containing a JSON document) to a Python object using this conversion table. The other arguments have the same meaning as in load(). If the data being deserialized is not a valid JSON document, a JSONDecodeError will be raised.  Changed in version 3.6: s can now be of type bytes or bytearray. The input encoding should be UTF-8, UTF-16 or UTF-32.   Changed in version 3.9: The keyword argument encoding has been removed.

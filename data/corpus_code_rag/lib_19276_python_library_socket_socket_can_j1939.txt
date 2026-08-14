@@ -1,0 +1,4 @@
+# python.library.socket#socket.CAN_J1939
+
+socket.CAN_J1939  
+CAN_J1939, in the CAN protocol family, is the SAE J1939 protocol. J1939 constants, documented in the Linux documentation. Availability: Linux >= 5.4.  New in version 3.9.

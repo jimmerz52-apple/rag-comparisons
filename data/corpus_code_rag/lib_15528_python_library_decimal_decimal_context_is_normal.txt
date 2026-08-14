@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_normal
+
+is_normal(x)  
+Returns True if x is a normal number; otherwise returns False.

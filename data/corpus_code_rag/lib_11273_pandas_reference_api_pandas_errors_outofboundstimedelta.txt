@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.outofboundstimedelta
+
+pandas.errors.OutOfBoundsTimedelta   exceptionpandas.errors.OutOfBoundsTimedelta
+ 
+Raised when encountering a timedelta value that cannot be represented as a timedelta64[ns].

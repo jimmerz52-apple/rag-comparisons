@@ -1,0 +1,7 @@
+# pygame.ref.touch#pygame._sdl2.touch.get_device
+
+pygame._sdl2.touch.get_device() 
+ get the a touch device id for a given index get_device(index) -> touchid      
+Parameters:
+
+index (int) -- This number is at least 0 and less than the number of devices.    Return an integer id associated with the given index.

@@ -1,0 +1,5 @@
+# matplotlib.backend_webagg_api#matplotlib.backends.backend_webagg.FigureCanvasWebAgg
+
+classmatplotlib.backends.backend_webagg.FigureCanvasWebAgg(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backends.backend_webagg_core.FigureCanvasWebAggCore

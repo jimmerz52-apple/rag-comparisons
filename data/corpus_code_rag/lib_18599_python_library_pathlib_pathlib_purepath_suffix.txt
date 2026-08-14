@@ -1,0 +1,9 @@
+# python.library.pathlib#pathlib.PurePath.suffix
+
+PurePath.suffix  
+The file extension of the final component, if any: >>> PurePosixPath('my/library/setup.py').suffix
+'.py'
+>>> PurePosixPath('my/library.tar.gz').suffix
+'.gz'
+>>> PurePosixPath('my/library').suffix
+''

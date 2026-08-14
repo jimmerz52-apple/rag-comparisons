@@ -1,0 +1,4 @@
+# python.library.stdtypes#object.__dict__
+
+object.__dict__  
+A dictionary or other mapping object used to store an object’s (writable) attributes.

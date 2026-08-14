@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.timedelta.total_seconds
+
+pandas.Timedelta.total_seconds   Timedelta.total_seconds()
+ 
+Total seconds in the duration.

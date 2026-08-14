@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.onehotencoder#sklearn.preprocessing.OneHotEncoder.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Convert the data back to the original representation. In case unknown categories are encountered (all zeros in the one-hot encoding), None is used to represent this category.  Parameters 
+ 
+Xarray-like or sparse matrix, shape [n_samples, n_encoded_features] 
+
+The transformed data.    Returns 
+ 
+X_trarray-like, shape [n_samples, n_features] 
+
+Inverse transformed array.

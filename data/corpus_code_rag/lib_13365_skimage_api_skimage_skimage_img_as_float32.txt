@@ -1,0 +1,16 @@
+# skimage.api.skimage#skimage.img_as_float32
+
+skimage.img_as_float32(image, force_copy=False) [source]
+ 
+Convert an image to single-precision (32-bit) floating point format.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+force_copybool, optional 
+
+Force a copy of the data, irrespective of its current dtype.    Returns 
+ 
+outndarray of float32 
+
+Output image.     Notes The range of a floating point image is [0.0, 1.0] or [-1.0, 1.0] when converting from unsigned or signed datatypes, respectively. If the input image has a float type, intensity values are not modified and can be outside the ranges [0.0, 1.0] or [-1.0, 1.0].

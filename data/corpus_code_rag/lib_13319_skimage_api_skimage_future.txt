@@ -1,0 +1,135 @@
+# skimage.api.skimage.future
+
+Module: future Functionality with an experimental API. Although you can count on the functions in this package being around in the future, the API may change with any version update and will not follow the skimage two-version deprecation path. Therefore, use the functions herein with care, and do not use them in production code that will depend on updated skimage versions.  
+skimage.future.fit_segmenter(labels, …) Segmentation using labeled parts of the image and a classifier.  
+skimage.future.manual_lasso_segmentation(image) Return a label image based on freeform selections made with the mouse.  
+skimage.future.manual_polygon_segmentation(image) Return a label image based on polygon selections made with the mouse.  
+skimage.future.predict_segmenter(features, clf) Segmentation of images using a pretrained classifier.  
+skimage.future.TrainableSegmenter([clf, …]) Estimator for classifying pixels.  
+skimage.future.graph    fit_segmenter  
+skimage.future.fit_segmenter(labels, features, clf) [source]
+ 
+Segmentation using labeled parts of the image and a classifier.  Parameters 
+ 
+labelsndarray of ints 
+
+Image of labels. Labels >= 1 correspond to the training set and label 0 to unlabeled pixels to be segmented.  
+featuresndarray 
+
+Array of features, with the first dimension corresponding to the number of features, and the other dimensions correspond to labels.shape.  
+clfclassifier object 
+
+classifier object, exposing a fit and a predict method as in scikit-learn’s API, for example an instance of RandomForestClassifier or LogisticRegression classifier.    Returns 
+ 
+clfclassifier object 
+
+classifier trained on labels    Raises 
+ 
+NotFittedError if self.clf has not been fitted yet (use self.fit). 
+   
+ Examples using skimage.future.fit_segmenter
+ 
+  Trainable segmentation using local features and random forests   manual_lasso_segmentation  
+skimage.future.manual_lasso_segmentation(image, alpha=0.4, return_all=False) [source]
+ 
+Return a label image based on freeform selections made with the mouse.  Parameters 
+ 
+image(M, N[, 3]) array 
+
+Grayscale or RGB image.  
+alphafloat, optional 
+
+Transparency value for polygons drawn over the image.  
+return_allbool, optional 
+
+If True, an array containing each separate polygon drawn is returned. (The polygons may overlap.) If False (default), latter polygons “overwrite” earlier ones where they overlap.    Returns 
+ 
+labelsarray of int, shape ([Q, ]M, N) 
+
+The segmented regions. If mode is ‘separate’, the leading dimension of the array corresponds to the number of regions that the user drew.     Notes Press and hold the left mouse button to draw around each object. Examples >>> from skimage import data, future, io
+>>> camera = data.camera()
+>>> mask = future.manual_lasso_segmentation(camera)  
+>>> io.imshow(mask)  
+>>> io.show()  
+ 
+ manual_polygon_segmentation  
+skimage.future.manual_polygon_segmentation(image, alpha=0.4, return_all=False) [source]
+ 
+Return a label image based on polygon selections made with the mouse.  Parameters 
+ 
+image(M, N[, 3]) array 
+
+Grayscale or RGB image.  
+alphafloat, optional 
+
+Transparency value for polygons drawn over the image.  
+return_allbool, optional 
+
+If True, an array containing each separate polygon drawn is returned. (The polygons may overlap.) If False (default), latter polygons “overwrite” earlier ones where they overlap.    Returns 
+ 
+labelsarray of int, shape ([Q, ]M, N) 
+
+The segmented regions. If mode is ‘separate’, the leading dimension of the array corresponds to the number of regions that the user drew.     Notes Use left click to select the vertices of the polygon and right click to confirm the selection once all vertices are selected. Examples >>> from skimage import data, future, io
+>>> camera = data.camera()
+>>> mask = future.manual_polygon_segmentation(camera)  
+>>> io.imshow(mask)  
+>>> io.show()  
+ 
+ predict_segmenter  
+skimage.future.predict_segmenter(features, clf) [source]
+ 
+Segmentation of images using a pretrained classifier.  Parameters 
+ 
+featuresndarray 
+
+Array of features, with the last dimension corresponding to the number of features, and the other dimensions are compatible with the shape of the image to segment, or a flattened image.  
+clfclassifier object 
+
+trained classifier object, exposing a predict method as in scikit-learn’s API, for example an instance of RandomForestClassifier or LogisticRegression classifier. The classifier must be already trained, for example with skimage.segmentation.fit_segmenter().    Returns 
+ 
+outputndarray 
+
+Labeled array, built from the prediction of the classifier.     
+ Examples using skimage.future.predict_segmenter
+ 
+  Trainable segmentation using local features and random forests   TrainableSegmenter  
+class skimage.future.TrainableSegmenter(clf=None, features_func=None) [source]
+ 
+Bases: object Estimator for classifying pixels.  Parameters 
+ 
+clfclassifier object, optional 
+
+classifier object, exposing a fit and a predict method as in scikit-learn’s API, for example an instance of RandomForestClassifier or LogisticRegression classifier.  
+features_funcfunction, optional 
+
+function computing features on all pixels of the image, to be passed to the classifier. The output should be of shape (m_features, *labels.shape). If None, skimage.segmentation.multiscale_basic_features() is used.     Methods  
+fit(image, labels) Train classifier using partially labeled (annotated) image.  
+predict(image) Segment new image using trained internal classifier.    
+compute_features     
+__init__(clf=None, features_func=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+compute_features(image) [source]
+
+  
+fit(image, labels) [source]
+ 
+Train classifier using partially labeled (annotated) image.  Parameters 
+ 
+imagendarray 
+
+Input image, which can be grayscale or multichannel, and must have a number of dimensions compatible with self.features_func.  
+labelsndarray of ints 
+
+Labeled array of shape compatible with image (same shape for a single-channel image). Labels >= 1 correspond to the training set and label 0 to unlabeled pixels to be segmented.     
+  
+predict(image) [source]
+ 
+Segment new image using trained internal classifier.  Parameters 
+ 
+imagendarray 
+
+Input image, which can be grayscale or multichannel, and must have a number of dimensions compatible with self.features_func.    Raises 
+ 
+NotFittedError if self.clf has not been fitted yet (use self.fit).

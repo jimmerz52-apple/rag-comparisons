@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.startTest
+
+startTest(test)  
+Called when the test case test is about to be run.

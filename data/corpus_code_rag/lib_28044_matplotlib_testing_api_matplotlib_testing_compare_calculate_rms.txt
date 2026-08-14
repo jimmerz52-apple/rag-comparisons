@@ -1,0 +1,5 @@
+# matplotlib.testing_api#matplotlib.testing.compare.calculate_rms
+
+matplotlib.testing.compare.calculate_rms(expected_image, actual_image)[source]
+ 
+Calculate the per-pixel errors, then compute the root mean square error.

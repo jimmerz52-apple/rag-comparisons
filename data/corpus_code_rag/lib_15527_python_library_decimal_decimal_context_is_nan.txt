@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_nan
+
+is_nan(x)  
+Returns True if x is a qNaN or sNaN; otherwise returns False.

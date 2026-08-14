@@ -1,0 +1,22 @@
+# sklearn.modules.generated.sklearn.model_selection.predefinedsplit#sklearn.model_selection.PredefinedSplit.split
+
+split(X=None, y=None, groups=None) [source]
+ 
+Generate indices to split data into training and test set.  Parameters 
+ 
+Xobject 
+
+Always ignored, exists for compatibility.  
+yobject 
+
+Always ignored, exists for compatibility.  
+groupsobject 
+
+Always ignored, exists for compatibility.    Yields 
+ 
+trainndarray 
+
+The training set indices for that split.  
+testndarray 
+
+The testing set indices for that split.

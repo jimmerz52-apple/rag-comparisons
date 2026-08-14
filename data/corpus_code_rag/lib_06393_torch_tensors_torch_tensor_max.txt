@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.max
+
+max(dim=None, keepdim=False) -> Tensor or (Tensor, Tensor)  
+See torch.max()

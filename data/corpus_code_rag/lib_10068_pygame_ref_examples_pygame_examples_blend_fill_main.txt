@@ -1,0 +1,4 @@
+# pygame.ref.examples#pygame.examples.blend_fill.main
+
+blend_fill.main() 
+ demonstrate the various surface.fill method blend options blend_fill.main() -> None  A interactive demo that lets one choose which BLEND_xxx option to apply to a surface.

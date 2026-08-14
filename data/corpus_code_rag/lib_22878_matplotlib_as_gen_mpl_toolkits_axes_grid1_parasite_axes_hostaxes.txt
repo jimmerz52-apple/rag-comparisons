@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.parasite_axes.hostaxes
+
+mpl_toolkits.axes_grid1.parasite_axes.HostAxes   mpl_toolkits.axes_grid1.parasite_axes.HostAxes[source]
+ 
+alias of mpl_toolkits.axes_grid1.parasite_axes.AxesHostAxes

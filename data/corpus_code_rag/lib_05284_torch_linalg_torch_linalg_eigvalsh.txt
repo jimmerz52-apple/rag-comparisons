@@ -1,0 +1,32 @@
+# torch.linalg#torch.linalg.eigvalsh
+
+torch.linalg.eigvalsh(input, UPLO='L', *, out=None) → Tensor  
+Computes the eigenvalues of a complex Hermitian (or real symmetric) matrix input, or of each such matrix in a batched input. The eigenvalues are returned in ascending order. Since the matrix or matrices in input are assumed to be Hermitian, the imaginary part of their diagonals is always treated as zero. When UPLO is “L”, its default value, only the lower triangular part of each matrix is used in the computation. When UPLO is “U” only the upper triangular part of each matrix is used. Supports input of float, double, cfloat and cdouble dtypes.  Note When given inputs on a CUDA device, this function synchronizes that device with the CPU.   Note The eigenvalues are computed using LAPACK’s syevd and heevd routines for CPU inputs, and MAGMA’s syevd and heevd routines for CUDA inputs.   Note The eigenvalues of real symmetric or complex Hermitian matrices are always real.   Note This function doesn’t support backpropagation, please use torch.linalg.eigh() instead, which also computes the eigenvectors.   Note See torch.linalg.eigh() for a related function that computes both eigenvalues and eigenvectors.   Parameters 
+ 
+input (Tensor) – the Hermitian n times n matrix or the batch of such matrices of size (*, n, n) where * is one or more batch dimensions. 
+UPLO ('L', 'U', optional) – controls whether to use the upper-triangular or the lower-triangular part of input in the computations. Default is 'L'.   Keyword Arguments 
+out (Tensor, optional) – tensor to write the output to. Default is None.   Examples: >>> a = torch.randn(2, 2, dtype=torch.complex128)
+>>> a = a + a.t().conj()  # creates a Hermitian matrix
+>>> a
+tensor([[2.9228+0.0000j, 0.2029-0.0862j],
+        [0.2029+0.0862j, 0.3464+0.0000j]], dtype=torch.complex128)
+>>> w = torch.linalg.eigvalsh(a)
+>>> w
+tensor([0.3277, 2.9415], dtype=torch.float64)
+
+>>> a = torch.randn(3, 2, 2, dtype=torch.float64)
+>>> a = a + a.transpose(-2, -1)  # creates a symmetric matrix
+>>> a
+tensor([[[ 2.8050, -0.3850],
+        [-0.3850,  3.2376]],
+
+        [[-1.0307, -2.7457],
+        [-2.7457, -1.7517]],
+
+        [[ 1.7166,  2.2207],
+        [ 2.2207, -2.0898]]], dtype=torch.float64)
+>>> w = torch.linalg.eigvalsh(a)
+>>> w
+tensor([[ 2.5797,  3.4629],
+        [-4.1605,  1.3780],
+        [-3.1113,  2.7381]], dtype=torch.float64)

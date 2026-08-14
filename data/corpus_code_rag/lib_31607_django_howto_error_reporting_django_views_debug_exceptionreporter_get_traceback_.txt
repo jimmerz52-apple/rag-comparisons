@@ -1,0 +1,11 @@
+# django.howto.error-reporting#django.views.debug.ExceptionReporter.get_traceback_data
+
+get_traceback_data()  
+Return a dictionary containing traceback information. This is the main extension point for customizing exception reports, for example: from django.views.debug import ExceptionReporter
+
+
+class CustomExceptionReporter(ExceptionReporter):
+    def get_traceback_data(self):
+        data = super().get_traceback_data()
+        # ... remove/add something here ...
+        return data

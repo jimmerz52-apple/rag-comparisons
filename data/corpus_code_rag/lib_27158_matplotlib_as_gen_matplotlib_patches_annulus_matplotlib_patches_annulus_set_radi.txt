@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.set_radii
+
+set_radii(r)[source]
+ 
+Set the semi-major (a) and semi-minor radii (b) of the annulus.  Parameters 
+ 
+rfloat or (float, float)
+
+
+The radius, or semi-axes:  If float: radius of the outer circle. If two floats: semi-major and -minor axes of outer ellipse.

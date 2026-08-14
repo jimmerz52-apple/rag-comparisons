@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.splitlines
+
+numpy.char.chararray.splitlines method   char.chararray.splitlines(keepends=None)[source]
+ 
+For each element in self, return a list of the lines in the element, breaking at line boundaries.  See also  char.splitlines

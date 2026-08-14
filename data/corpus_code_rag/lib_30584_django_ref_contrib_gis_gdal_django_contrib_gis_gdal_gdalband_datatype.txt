@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALBand.datatype
+
+datatype(as_string=False)  
+The data type contained in the band, as an integer constant between 0 (Unknown) and 11. If as_string is True, the data type is returned as a string with the following possible values: GDT_Unknown, GDT_Byte, GDT_UInt16, GDT_Int16, GDT_UInt32, GDT_Int32, GDT_Float32, GDT_Float64, GDT_CInt16, GDT_CInt32, GDT_CFloat32, and GDT_CFloat64.

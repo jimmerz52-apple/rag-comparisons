@@ -1,0 +1,4 @@
+# python.library.locale#locale.delocalize
+
+locale.delocalize(string)  
+Converts a string into a normalized number string, following the LC_NUMERIC settings.  New in version 3.5.

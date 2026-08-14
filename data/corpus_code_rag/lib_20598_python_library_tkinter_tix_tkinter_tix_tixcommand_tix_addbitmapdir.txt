@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.tixCommand.tix_addbitmapdir
+
+tixCommand.tix_addbitmapdir(directory)  
+Tix maintains a list of directories under which the tix_getimage() and tix_getbitmap() methods will search for image files. The standard bitmap directory is $TIX_LIBRARY/bitmaps. The tix_addbitmapdir() method adds directory into this list. By using this method, the image files of an applications can also be located using the tix_getimage() or tix_getbitmap() method.

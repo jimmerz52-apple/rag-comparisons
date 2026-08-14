@@ -1,0 +1,15 @@
+# matplotlib._as_gen.matplotlib.patches.boxstyle#matplotlib.patches.BoxStyle.DArrow.__call__
+
+__call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path

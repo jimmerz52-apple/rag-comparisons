@@ -1,0 +1,16 @@
+# skimage.api.skimage.transform#skimage.transform.matrix_transform
+
+skimage.transform.matrix_transform(coords, matrix) [source]
+ 
+Apply 2D matrix transform.  Parameters 
+ 
+coords(N, 2) array 
+
+x, y coordinates to transform  
+matrix(3, 3) array 
+
+Homogeneous transformation matrix.    Returns 
+ 
+coords(N, 2) array 
+
+Transformed coordinates.

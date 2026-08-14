@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.unpack_fopaque
+
+Unpacker.unpack_fopaque(n)  
+Unpacks and returns a fixed length opaque data stream, similarly to unpack_fstring().

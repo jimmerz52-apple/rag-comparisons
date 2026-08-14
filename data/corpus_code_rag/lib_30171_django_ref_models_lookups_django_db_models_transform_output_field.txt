@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.Transform.output_field
+
+output_field  
+Defines the class this transformation outputs. It must be a Field instance. By default is the same as its lhs.output_field.

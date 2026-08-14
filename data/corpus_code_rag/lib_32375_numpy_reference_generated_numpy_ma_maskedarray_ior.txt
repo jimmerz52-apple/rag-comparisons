@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__ior__
+
+numpy.ma.MaskedArray.__ior__ method   ma.MaskedArray.__ior__(value, /)
+ 
+Return self|=value.

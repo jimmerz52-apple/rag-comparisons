@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.convert_mesh_to_paths
+
+staticconvert_mesh_to_paths(meshWidth, meshHeight, coordinates)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.module#torch.nn.Module.cpu
+
+cpu() [source]
+ 
+Moves all model parameters and buffers to the CPU.  Returns 
+self  Return type 
+Module

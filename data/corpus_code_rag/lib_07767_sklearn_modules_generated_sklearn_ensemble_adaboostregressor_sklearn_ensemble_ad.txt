@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostregressor#sklearn.ensemble.AdaBoostRegressor.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Build a boosted regressor from the training set (X, y).  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrix can be CSC, CSR, COO, DOK, or LIL. COO, DOK, and LIL are converted to CSR.  
+yarray-like of shape (n_samples,) 
+
+The target values (real numbers).  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights. If None, the sample weights are initialized to 1 / n_samples.    Returns 
+ 
+selfobject

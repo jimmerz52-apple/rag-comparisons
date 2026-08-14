@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.Cookie.comment
+
+Cookie.comment  
+String comment from the server explaining the function of this cookie, or None.

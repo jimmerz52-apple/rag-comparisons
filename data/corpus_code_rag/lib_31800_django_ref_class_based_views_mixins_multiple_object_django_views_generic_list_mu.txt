@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.get_paginate_by
+
+get_paginate_by(queryset)  
+Returns the number of items to paginate by, or None for no pagination. By default this returns the value of paginate_by.

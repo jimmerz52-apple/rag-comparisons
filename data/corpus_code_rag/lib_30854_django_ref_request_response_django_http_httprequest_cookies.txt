@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpRequest.COOKIES
+
+HttpRequest.COOKIES  
+A dictionary containing all cookies. Keys and values are strings.

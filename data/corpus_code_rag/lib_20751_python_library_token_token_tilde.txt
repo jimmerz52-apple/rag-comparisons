@@ -1,0 +1,4 @@
+# python.library.token#token.TILDE
+
+token.TILDE  
+Token value for "~".

@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_finder
+
+mpl_toolkits.axisartist.grid_finder  Classes  
+DictFormatter(format_dict[, formatter]) format_dict : dictionary for format strings to be used.  
+ExtremeFinderSimple(nx, ny) A helper class to figure out the range of grid lines that need to be drawn.  
+FixedLocator(locs)   
+FormatterPrettyPrint([useMathText])   
+GridFinder(transform[, extreme_finder, ...]) transform : transform from the image coordinate (which will be the transData of the axes to the world coordinate.  
+MaxNLocator([nbins, steps, trim, integer, ...]) 
+ Parameters

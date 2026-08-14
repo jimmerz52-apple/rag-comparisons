@@ -1,0 +1,4 @@
+# django.ref.forms.api#django.forms.BoundField.label
+
+BoundField.label  
+The label of the field. This is used in label_tag().

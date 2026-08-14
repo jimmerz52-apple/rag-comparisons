@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.Widget.ignore
+
+ignore(event)[source]
+ 
+Return whether event should be ignored. This method should be called at the beginning of any event callback.

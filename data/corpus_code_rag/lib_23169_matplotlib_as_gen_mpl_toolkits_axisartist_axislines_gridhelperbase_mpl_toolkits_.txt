@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.gridhelperbase#mpl_toolkits.axisartist.axislines.GridHelperBase.valid
+
+valid()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

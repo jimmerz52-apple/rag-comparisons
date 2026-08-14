@@ -1,0 +1,5 @@
+# python.library.operator#operator.rshift
+
+operator.rshift(a, b)  
+operator.__rshift__(a, b)  
+Return a shifted right by b.

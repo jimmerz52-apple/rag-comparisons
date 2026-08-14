@@ -1,0 +1,4 @@
+# python.library.ast#ast.get_source_segment
+
+ast.get_source_segment(source, node, *, padded=False)  
+Get source code segment of the source that generated node. If some location information (lineno, end_lineno, col_offset, or end_col_offset) is missing, return None. If padded is True, the first line of a multi-line statement will be padded with spaces to match its original position.  New in version 3.8.

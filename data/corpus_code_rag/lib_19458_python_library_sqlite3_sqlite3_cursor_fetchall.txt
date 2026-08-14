@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Cursor.fetchall
+
+fetchall()  
+Fetches all (remaining) rows of a query result, returning a list. Note that the cursor’s arraysize attribute can affect the performance of this operation. An empty list is returned when no rows are available.

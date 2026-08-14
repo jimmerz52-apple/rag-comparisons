@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTP.nntp_version
+
+NNTP.nntp_version  
+An integer representing the version of the NNTP protocol supported by the server. In practice, this should be 2 for servers advertising RFC 3977 compliance and 1 for others.  New in version 3.2.

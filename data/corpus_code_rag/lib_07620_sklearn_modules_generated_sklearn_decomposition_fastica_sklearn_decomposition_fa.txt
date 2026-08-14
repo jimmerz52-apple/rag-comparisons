@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.decomposition.fastica#sklearn.decomposition.FastICA.inverse_transform
+
+inverse_transform(X, copy=True) [source]
+ 
+Transform the sources back to the mixed data (apply mixing matrix).  Parameters 
+ 
+Xarray-like of shape (n_samples, n_components) 
+
+Sources, where n_samples is the number of samples and n_components is the number of components.  
+copybool, default=True 
+
+If False, data passed to fit are overwritten. Defaults to True.    Returns 
+ 
+X_newndarray of shape (n_samples, n_features)

@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer.tag
+
+tag(value)  
+Convert a value to a tagged representation if necessary.  Parameters 
+value (Any) –   Return type 
+Dict[str, Any]

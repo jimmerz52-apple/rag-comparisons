@@ -1,0 +1,16 @@
+# python.library.socket#socket.socket.recvmsg_into
+
+socket.recvmsg_into(buffers[, ancbufsize[, flags]])  
+Receive normal data and ancillary data from the socket, behaving as recvmsg() would, but scatter the non-ancillary data into a series of buffers instead of returning a new bytes object. The buffers argument must be an iterable of objects that export writable buffers (e.g. bytearray objects); these will be filled with successive chunks of the non-ancillary data until it has all been written or there are no more buffers. The operating system may set a limit (sysconf() value SC_IOV_MAX) on the number of buffers that can be used. The ancbufsize and flags arguments have the same meaning as for recvmsg(). The return value is a 4-tuple: (nbytes, ancdata, msg_flags,
+address), where nbytes is the total number of bytes of non-ancillary data written into the buffers, and ancdata, msg_flags and address are the same as for recvmsg(). Example: >>> import socket
+>>> s1, s2 = socket.socketpair()
+>>> b1 = bytearray(b'----')
+>>> b2 = bytearray(b'0123456789')
+>>> b3 = bytearray(b'--------------')
+>>> s1.send(b'Mary had a little lamb')
+22
+>>> s2.recvmsg_into([b1, memoryview(b2)[2:9], b3])
+(22, [], 0, None)
+>>> [b1, b2, b3]
+[bytearray(b'Mary'), bytearray(b'01 had a 9'), bytearray(b'little lamb---')]
+ Availability: most Unix platforms, possibly others.  New in version 3.3.

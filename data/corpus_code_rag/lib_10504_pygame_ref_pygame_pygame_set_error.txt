@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.set_error
+
+pygame.set_error() 
+ set the current error message set_error(error_msg) -> None  SDL maintains an internal error message. This message will usually be given to you when pygame.error() is raised, so this function will rarely be needed.

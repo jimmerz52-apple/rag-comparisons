@@ -1,0 +1,4 @@
+# python.library.os#os.ftruncate
+
+os.ftruncate(fd, length)  
+Truncate the file corresponding to file descriptor fd, so that it is at most length bytes in size. As of Python 3.3, this is equivalent to os.truncate(fd, length). Raises an auditing event os.truncate with arguments fd, length. Availability: Unix, Windows.  Changed in version 3.5: Added support for Windows

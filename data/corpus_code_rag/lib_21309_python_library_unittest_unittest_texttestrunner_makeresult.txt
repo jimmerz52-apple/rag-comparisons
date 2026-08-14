@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TextTestRunner._makeResult
+
+_makeResult()  
+This method returns the instance of TestResult used by run(). It is not intended to be called directly, but can be overridden in subclasses to provide a custom TestResult. _makeResult() instantiates the class or callable passed in the TextTestRunner constructor as the resultclass argument. It defaults to TextTestResult if no resultclass is provided. The result class is instantiated with the following arguments: stream, descriptions, verbosity

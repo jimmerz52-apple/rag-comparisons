@@ -1,0 +1,9 @@
+# tensorflow.train.byteslist
+
+tf.train.BytesList     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.BytesList 
+ 
+
+
+ Attributes
+  value   repeated bytes value

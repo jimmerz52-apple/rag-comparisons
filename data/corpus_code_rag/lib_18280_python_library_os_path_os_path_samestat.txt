@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.samestat
+
+os.path.samestat(stat1, stat2)  
+Return True if the stat tuples stat1 and stat2 refer to the same file. These structures may have been returned by os.fstat(), os.lstat(), or os.stat(). This function implements the underlying comparison used by samefile() and sameopenfile(). Availability: Unix, Windows.  Changed in version 3.4: Added Windows support.   Changed in version 3.6: Accepts a path-like object.

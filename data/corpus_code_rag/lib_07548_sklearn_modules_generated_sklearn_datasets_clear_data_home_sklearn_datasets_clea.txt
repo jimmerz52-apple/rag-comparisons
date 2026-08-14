@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.datasets.clear_data_home#sklearn.datasets.clear_data_home
+
+sklearn.datasets.clear_data_home(data_home=None) [source]
+ 
+Delete all the content of the data home cache.  Parameters 
+ 
+data_homestr, default=None 
+
+The path to scikit-learn data directory. If None, the default path is ~/sklearn_learn_data.

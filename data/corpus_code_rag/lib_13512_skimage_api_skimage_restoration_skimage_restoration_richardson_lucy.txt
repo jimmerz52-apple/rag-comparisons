@@ -1,0 +1,32 @@
+# skimage.api.skimage.restoration#skimage.restoration.richardson_lucy
+
+skimage.restoration.richardson_lucy(image, psf, iterations=50, clip=True, filter_epsilon=None) [source]
+ 
+Richardson-Lucy deconvolution.  Parameters 
+ 
+imagendarray 
+
+Input degraded image (can be N dimensional).  
+psfndarray 
+
+The point spread function.  
+iterationsint, optional 
+
+Number of iterations. This parameter plays the role of regularisation.  
+clipboolean, optional 
+
+True by default. If true, pixel value of the result above 1 or under -1 are thresholded for skimage pipeline compatibility.  filter_epsilon: float, optional
+
+Value below which intermediate results become 0 to avoid division by small numbers.    Returns 
+ 
+im_deconvndarray 
+
+The deconvolved image.     References  
+1  
+https://en.wikipedia.org/wiki/Richardson%E2%80%93Lucy_deconvolution   Examples >>> from skimage import img_as_float, data, restoration
+>>> camera = img_as_float(data.camera())
+>>> from scipy.signal import convolve2d
+>>> psf = np.ones((5, 5)) / 25
+>>> camera = convolve2d(camera, psf, 'same')
+>>> camera += 0.1 * camera.std() * np.random.standard_normal(camera.shape)
+>>> deconvolved = restoration.richardson_lucy(camera, psf, 5)

@@ -1,0 +1,4 @@
+# python.library.html.parser#html.parser.HTMLParser.reset
+
+HTMLParser.reset()  
+Reset the instance. Loses all unprocessed data. This is called implicitly at instantiation time.

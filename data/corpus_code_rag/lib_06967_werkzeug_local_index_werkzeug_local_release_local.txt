@@ -1,0 +1,11 @@
+# werkzeug.local.index#werkzeug.local.release_local
+
+werkzeug.local.release_local(local)  
+Releases the contents of the local for the current context. This makes it possible to use locals without a manager. Example: >>> loc = Local()
+>>> loc.foo = 42
+>>> release_local(loc)
+>>> hasattr(loc, 'foo')
+False
+ With this function one can release Local objects as well as LocalStack objects. However it is not possible to release data held by proxies that way, one always has to retain a reference to the underlying local object in order to be able to release it.  Changelog New in version 0.6.1.   Parameters 
+local (Union[werkzeug.local.Local, werkzeug.local.LocalStack]) –   Return type 
+None

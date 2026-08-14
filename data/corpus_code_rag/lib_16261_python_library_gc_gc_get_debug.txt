@@ -1,0 +1,4 @@
+# python.library.gc#gc.get_debug
+
+gc.get_debug()  
+Return the debugging flags currently set.

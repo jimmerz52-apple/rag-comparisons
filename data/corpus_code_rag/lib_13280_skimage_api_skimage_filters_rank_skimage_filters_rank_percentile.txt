@@ -1,0 +1,28 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.percentile
+
+skimage.filters.rank.percentile(image, selem, out=None, mask=None, shift_x=False, shift_y=False, p0=0) [source]
+ 
+Return local percentile of an image. Returns the value of the p0 lower percentile of the local greyvalue distribution. Only greyvalues between percentiles [p0, p1] are considered in the filter.  Parameters 
+ 
+image2-D array (uint8, uint16) 
+
+Input image.  
+selem2-D array 
+
+The neighborhood expressed as a 2-D array of 1’s and 0’s.  
+out2-D array (same dtype as input) 
+
+If None, a new array is allocated.  
+maskndarray 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_yint 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).  
+p0float in [0, …, 1] 
+
+Set the percentile value.    Returns 
+ 
+out2-D array (same dtype as input image) 
+
+Output image.

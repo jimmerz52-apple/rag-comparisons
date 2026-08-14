@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.SimpleArrayField.min_length
+
+min_length  
+This is an optional argument which validates that the array reaches at least the stated length.

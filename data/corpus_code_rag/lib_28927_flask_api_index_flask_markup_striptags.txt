@@ -1,0 +1,7 @@
+# flask.api.index#flask.Markup.striptags
+
+striptags()  
+unescape() the markup, remove tags, and normalize whitespace to single spaces. >>> Markup("Main &raquo;        <em>About</em>").striptags()
+'Main » About'
+  Return type 
+str

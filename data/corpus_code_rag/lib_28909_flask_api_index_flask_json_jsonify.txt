@@ -1,0 +1,22 @@
+# flask.api.index#flask.json.jsonify
+
+flask.json.jsonify(*args, **kwargs)  
+Serialize data to JSON and wrap it in a Response with the application/json mimetype. Uses dumps() to serialize the data, but args and kwargs are treated as data rather than arguments to json.dumps().  Single argument: Treated as a single value. Multiple arguments: Treated as a list of values. jsonify(1, 2, 3) is the same as jsonify([1, 2, 3]). Keyword arguments: Treated as a dict of values. jsonify(data=data, errors=errors) is the same as jsonify({"data": data, "errors": errors}). Passing both arguments and keyword arguments is not allowed as it’s not clear what should happen.  from flask import jsonify
+
+@app.route("/users/me")
+def get_current_user():
+    return jsonify(
+        username=g.user.username,
+        email=g.user.email,
+        id=g.user.id,
+    )
+ Will return a JSON response like this: {
+  "username": "admin",
+  "email": "admin@localhost",
+  "id": 42
+}
+ The default output omits indents and spaces after separators. In debug mode or if JSONIFY_PRETTYPRINT_REGULAR is True, the output will be formatted to be easier to read.  Changelog Changed in version 0.11: Added support for serializing top-level arrays. This introduces a security risk in ancient browsers. See JSON Security.   New in version 0.2.   Parameters 
+ 
+args (Any) –  
+kwargs (Any) –    Return type 
+Response

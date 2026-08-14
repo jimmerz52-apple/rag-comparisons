@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.FigureCanvas.__init__
+
+__init__(figure, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

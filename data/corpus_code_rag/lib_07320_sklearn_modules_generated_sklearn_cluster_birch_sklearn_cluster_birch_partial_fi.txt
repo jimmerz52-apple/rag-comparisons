@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.cluster.birch#sklearn.cluster.Birch.partial_fit
+
+partial_fit(X=None, y=None) [source]
+ 
+Online learning. Prevents rebuilding of CFTree from scratch.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features), default=None 
+
+Input data. If X is not provided, only the global clustering step is done.  
+yIgnored 
+
+Not used, present here for API consistency by convention.    Returns 
+ self
+
+Fitted estimator.

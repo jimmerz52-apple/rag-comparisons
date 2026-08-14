@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.gridhelperbase#mpl_toolkits.axisartist.axislines.GridHelperBase.update_lim
+
+update_lim(axes)[source]

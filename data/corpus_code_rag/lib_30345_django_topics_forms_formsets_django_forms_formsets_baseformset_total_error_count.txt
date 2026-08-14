@@ -1,0 +1,3 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.total_error_count
+
+BaseFormSet.total_error_count()

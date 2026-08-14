@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.remove_overlapping_locs
+
+matplotlib.axis.Axis.remove_overlapping_locs   propertyAxis.remove_overlapping_locs
+ 
+If minor ticker locations that overlap with major ticker locations should be trimmed.

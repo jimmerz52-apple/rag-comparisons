@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.half_cauchy.HalfCauchy.arg_constraints
+
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {'scale': GreaterThan(lower_bound=0.0)}

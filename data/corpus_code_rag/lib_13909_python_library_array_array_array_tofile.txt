@@ -1,0 +1,4 @@
+# python.library.array#array.array.tofile
+
+array.tofile(f)  
+Write all items (as machine values) to the file object f.

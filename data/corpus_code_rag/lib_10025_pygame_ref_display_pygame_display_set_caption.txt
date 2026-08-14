@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.set_caption
+
+pygame.display.set_caption() 
+ Set the current window caption set_caption(title, icontitle=None) -> None  If the display has a window title, this function will change the name on the window. Some systems support an alternate shorter title to be used for minimized displays.

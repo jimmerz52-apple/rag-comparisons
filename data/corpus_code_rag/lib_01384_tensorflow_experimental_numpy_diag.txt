@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.diag
+
+tf.experimental.numpy.diag TensorFlow variant of NumPy's diag. 
+tf.experimental.numpy.diag(
+    v, k=0
+)
+ Raises an error if input is not 1- or 2-d. See the NumPy documentation for numpy.diag.

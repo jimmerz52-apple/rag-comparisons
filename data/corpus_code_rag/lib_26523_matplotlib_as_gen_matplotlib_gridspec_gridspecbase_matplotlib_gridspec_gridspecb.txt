@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.subplots
+
+subplots(*, sharex=False, sharey=False, squeeze=True, subplot_kw=None)[source]
+ 
+Add all subplots specified by this GridSpec to its parent figure. See Figure.subplots for detailed documentation.

@@ -1,0 +1,7 @@
+# tensorflow.compat.as_str
+
+tf.compat.as_str  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.compat.as_str  
+tf.compat.as_str(
+    bytes_or_text, encoding='utf-8'
+)

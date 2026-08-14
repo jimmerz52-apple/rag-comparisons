@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_xticklines
+
+matplotlib.axes.Axes.get_xticklines   Axes.get_xticklines(minor=False)[source]
+ 
+Return the xaxis' tick lines as a list of Line2Ds.

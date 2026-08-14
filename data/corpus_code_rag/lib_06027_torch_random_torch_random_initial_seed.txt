@@ -1,0 +1,5 @@
+# torch.random#torch.random.initial_seed
+
+torch.random.initial_seed() [source]
+ 
+Returns the initial seed for generating random numbers as a Python long.

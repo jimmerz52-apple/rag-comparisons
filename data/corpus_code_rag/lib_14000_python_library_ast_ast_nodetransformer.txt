@@ -1,0 +1,14 @@
+# python.library.ast#ast.NodeTransformer
+
+class ast.NodeTransformer  
+A NodeVisitor subclass that walks the abstract syntax tree and allows modification of nodes. The NodeTransformer will walk the AST and use the return value of the visitor methods to replace or remove the old node. If the return value of the visitor method is None, the node will be removed from its location, otherwise it is replaced with the return value. The return value may be the original node in which case no replacement takes place. Here is an example transformer that rewrites all occurrences of name lookups (foo) to data['foo']: class RewriteName(NodeTransformer):
+
+    def visit_Name(self, node):
+        return Subscript(
+            value=Name(id='data', ctx=Load()),
+            slice=Constant(value=node.id),
+            ctx=node.ctx
+        )
+ Keep in mind that if the node you’re operating on has child nodes you must either transform the child nodes yourself or call the generic_visit() method for the node first. For nodes that were part of a collection of statements (that applies to all statement nodes), the visitor may also return a list of nodes rather than just a single node. If NodeTransformer introduces new nodes (that weren’t part of original tree) without giving them location information (such as lineno), fix_missing_locations() should be called with the new sub-tree to recalculate the location information: tree = ast.parse('foo', mode='eval')
+new_tree = fix_missing_locations(RewriteName().visit(tree))
+ Usually you use the transformer like this: node = YourTransformer().visit(node)

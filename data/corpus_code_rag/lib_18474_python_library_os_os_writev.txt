@@ -1,0 +1,4 @@
+# python.library.os#os.writev
+
+os.writev(fd, buffers)  
+Write the contents of buffers to file descriptor fd. buffers must be a sequence of bytes-like objects. Buffers are processed in array order. Entire contents of the first buffer is written before proceeding to the second, and so on. Returns the total number of bytes actually written. The operating system may set a limit (sysconf() value 'SC_IOV_MAX') on the number of buffers that can be used. Availability: Unix.  New in version 3.3.

@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.rfile
+
+rfile  
+An io.BufferedIOBase input stream, ready to read from the start of the optional input data.

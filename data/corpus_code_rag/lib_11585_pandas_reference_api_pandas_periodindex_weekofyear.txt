@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.weekofyear
+
+pandas.PeriodIndex.weekofyear   propertyPeriodIndex.weekofyear
+ 
+The week ordinal of the year.

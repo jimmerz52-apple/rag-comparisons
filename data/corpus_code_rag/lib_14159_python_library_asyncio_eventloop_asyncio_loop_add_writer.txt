@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.add_writer
+
+loop.add_writer(fd, callback, *args)  
+Start monitoring the fd file descriptor for write availability and invoke callback with the specified arguments once fd is available for writing. Use functools.partial() to pass keyword arguments to callback.

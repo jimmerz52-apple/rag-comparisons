@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.OverlayPlugin.__init__
+
+__init__(**kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

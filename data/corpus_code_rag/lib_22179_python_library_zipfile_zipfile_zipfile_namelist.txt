@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.namelist
+
+ZipFile.namelist()  
+Return a list of archive members by name.

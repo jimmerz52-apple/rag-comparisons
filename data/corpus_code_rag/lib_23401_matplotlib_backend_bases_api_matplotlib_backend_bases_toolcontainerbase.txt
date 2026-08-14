@@ -1,0 +1,91 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.ToolContainerBase
+
+classmatplotlib.backend_bases.ToolContainerBase(toolmanager)[source]
+ 
+Bases: object Base class for all tool containers, e.g. toolbars.  Attributes 
+ 
+toolmanagerToolManager
+
+
+The tools with which this ToolContainer wants to communicate.       add_tool(tool, group, position=- 1)[source]
+ 
+Add a tool to this container.  Parameters 
+ 
+tooltool_like
+
+
+The tool to add, see ToolManager.get_tool.  
+groupstr
+
+
+The name of the group to add this tool to.  
+positionint, default: -1
+
+
+The position within the group to place this tool.     
+   add_toolitem(name, group, position, image, description, toggle)[source]
+ 
+Add a toolitem to the container. This method must be implemented per backend. The callback associated with the button click event, must be exactly self.trigger_tool(name).  Parameters 
+ 
+namestr
+
+
+Name of the tool to add, this gets used as the tool's ID and as the default label of the buttons.  
+groupstr
+
+
+Name of the group that this tool belongs to.  
+positionint
+
+
+Position of the tool within its group, if -1 it goes at the end.  
+imagestr
+
+
+Filename of the image for the button or None.  
+descriptionstr
+
+
+Description of the tool, used for the tooltips.  
+togglebool
+
+
+ 
+True : The button is a toggle (change the pressed/unpressed state between consecutive clicks). 
+False : The button is a normal button (returns to unpressed state after release).      
+   remove_toolitem(name)[source]
+ 
+Remove a toolitem from the ToolContainer. This method must get implemented per backend. Called when ToolManager emits a tool_removed_event.  Parameters 
+ 
+namestr
+
+
+Name of the tool to remove.     
+   set_message(s)[source]
+ 
+Display a message on the toolbar.  Parameters 
+ 
+sstr
+
+
+Message text.     
+   toggle_toolitem(name, toggled)[source]
+ 
+Toggle the toolitem without firing event.  Parameters 
+ 
+namestr
+
+
+Id of the tool to toggle.  
+toggledbool
+
+
+Whether to set this tool as toggled or not.     
+   trigger_tool(name)[source]
+ 
+Trigger the tool.  Parameters 
+ 
+namestr
+
+
+Name (id) of the tool triggered from within the container.

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.WWWAuthenticate.set_digest
+
+set_digest(realm, nonce, qop=('auth'), opaque=None, algorithm=None, stale=False)  
+Clear the auth info and enable digest auth.

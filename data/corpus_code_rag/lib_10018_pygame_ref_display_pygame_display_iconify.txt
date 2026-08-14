@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.iconify
+
+pygame.display.iconify() 
+ Iconify the display surface iconify() -> bool  Request the window for the display surface be iconified or hidden. Not all systems and displays support an iconified display. The function will return True if successful. When the display is iconified pygame.display.get_active() will return False. The event queue should receive an ACTIVEEVENT event when the window has been iconified. Additionally, the event queue also recieves a WINDOWEVENT_MINIMIZED event when the window has been iconified on pygame 2.

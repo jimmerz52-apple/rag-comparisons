@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.set_icon
+
+pygame.display.set_icon() 
+ Change the system image for the display window set_icon(Surface) -> None  Sets the runtime icon the system will use to represent the display window. All windows default to a simple pygame logo for the window icon. You can pass any surface, but most systems want a smaller image around 32x32. The image can have colorkey transparency which will be passed to the system. Some systems do not allow the window icon to change after it has been shown. This function can be called before pygame.display.set_mode() to create the icon before the display mode is set.

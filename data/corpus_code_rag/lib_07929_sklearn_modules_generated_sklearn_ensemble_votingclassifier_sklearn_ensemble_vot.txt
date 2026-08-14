@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.votingclassifier#sklearn.ensemble.VotingClassifier.predict
+
+predict(X) [source]
+ 
+Predict class labels for X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples.    Returns 
+ 
+majarray-like of shape (n_samples,) 
+
+Predicted class labels.

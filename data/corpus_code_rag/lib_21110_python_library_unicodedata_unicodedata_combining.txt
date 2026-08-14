@@ -1,0 +1,4 @@
+# python.library.unicodedata#unicodedata.combining
+
+unicodedata.combining(chr)  
+Returns the canonical combining class assigned to the character chr as integer. Returns 0 if no combining class is defined.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.storage
+
+storage() → torch.Storage  
+Returns the underlying storage.

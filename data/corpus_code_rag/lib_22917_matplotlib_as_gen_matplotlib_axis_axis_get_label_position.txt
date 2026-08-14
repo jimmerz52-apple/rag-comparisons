@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_label_position
+
+matplotlib.axis.Axis.get_label_position   Axis.get_label_position()[source]
+ 
+Return the label position (top or bottom)

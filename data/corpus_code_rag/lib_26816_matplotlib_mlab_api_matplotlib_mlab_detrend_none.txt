@@ -1,0 +1,20 @@
+# matplotlib.mlab_api#matplotlib.mlab.detrend_none
+
+matplotlib.mlab.detrend_none(x, axis=None)[source]
+ 
+Return x: no detrending.  Parameters 
+ 
+xany object
+
+
+An object containing the data  
+axisint
+
+
+This parameter is ignored. It is included for compatibility with detrend_mean      See also  detrend_mean
+
+Another detrend algorithm.  detrend_linear
+
+Another detrend algorithm.  detrend
+
+A wrapper around all the detrend algorithms.

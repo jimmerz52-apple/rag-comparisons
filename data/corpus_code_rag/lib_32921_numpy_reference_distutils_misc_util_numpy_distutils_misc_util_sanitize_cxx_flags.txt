@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.sanitize_cxx_flags
+
+numpy.distutils.misc_util.sanitize_cxx_flags(cxxflags)[source]
+ 
+Some flags are valid for C but not C++. Prune them.

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.datetime.time
+
+datetime.time()  
+Return time object with same hour, minute, second, microsecond and fold. tzinfo is None. See also method timetz().  Changed in version 3.6: The fold value is copied to the returned time object.

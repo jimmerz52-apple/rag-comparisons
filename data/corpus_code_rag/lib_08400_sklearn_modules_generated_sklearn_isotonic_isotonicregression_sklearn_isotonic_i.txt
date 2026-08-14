@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.isotonic.isotonicregression#sklearn.isotonic.IsotonicRegression.predict
+
+predict(T) [source]
+ 
+Predict new data by linear interpolation.  Parameters 
+ 
+Tarray-like of shape (n_samples,) or (n_samples, 1) 
+
+Data to transform.    Returns 
+ 
+y_predndarray of shape (n_samples,) 
+
+Transformed data.

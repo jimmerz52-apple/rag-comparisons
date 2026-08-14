@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.FileStorage.headers
+
+headers  
+The multipart headers as Headers object. This usually contains irrelevant information but in combination with custom multipart requests the raw headers might be interesting.  Changelog New in version 0.6.

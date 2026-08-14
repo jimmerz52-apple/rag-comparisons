@@ -1,0 +1,3 @@
+# python.library.dialog#tkinter.filedialog.askdirectory
+
+tkinter.filedialog.askdirectory(**options)

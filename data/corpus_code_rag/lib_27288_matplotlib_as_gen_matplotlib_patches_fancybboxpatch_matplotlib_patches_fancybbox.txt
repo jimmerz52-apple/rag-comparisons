@@ -1,0 +1,23 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_boxstyle
+
+set_boxstyle(boxstyle=None, **kwargs)[source]
+ 
+Set the box style. Most box styles can be further configured using attributes. Attributes from the previous box style are not reused. Without argument (or with boxstyle=None), the available box styles are returned as a human-readable string.  Parameters 
+ 
+boxstylestr or matplotlib.patches.BoxStyle
+
+
+The style of the fancy box. This can either be a BoxStyle instance or a string of the style name and optionally comma seprarated attributes (e.g. "Round, pad=0.2"). This string is passed to BoxStyle to construct a BoxStyle object. See there for a full documentation. The following box styles are available:   
+Class Name Attrs   
+Square square pad=0.3  
+Circle circle pad=0.3  
+LArrow larrow pad=0.3  
+RArrow rarrow pad=0.3  
+DArrow darrow pad=0.3  
+Round round pad=0.3, rounding_size=None  
+Round4 round4 pad=0.3, rounding_size=None  
+Sawtooth sawtooth pad=0.3, tooth_size=None  
+Roundtooth roundtooth pad=0.3, tooth_size=None    **kwargs
+
+Additional attributes for the box style. See the table above for supported parameters.     Examples set_boxstyle("round,pad=0.2")
+set_boxstyle("round", pad=0.2)

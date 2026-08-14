@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.kernel_approximation.skewedchi2sampler#sklearn.kernel_approximation.SkewedChi2Sampler.fit
+
+fit(X, y=None) [source]
+ 
+Fit the model with X. Samples random projection according to n_features.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+Training data, where n_samples in the number of samples and n_features is the number of features.    Returns 
+ 
+selfobject 
+
+Returns the transformer.

@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LinearScale.get_transform
+
+get_transform()[source]
+ 
+Return the transform for linear scaling, which is just the IdentityTransform.

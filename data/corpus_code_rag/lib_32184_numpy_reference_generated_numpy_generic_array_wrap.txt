@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.__array_wrap__
+
+numpy.generic.__array_wrap__ method   generic.__array_wrap__()
+ 
+sc.__array_wrap__(obj) return scalar from array

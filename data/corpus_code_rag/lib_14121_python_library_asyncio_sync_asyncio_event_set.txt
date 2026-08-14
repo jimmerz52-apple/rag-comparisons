@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Event.set
+
+set()  
+Set the event. All tasks waiting for event to be set will be immediately awakened.

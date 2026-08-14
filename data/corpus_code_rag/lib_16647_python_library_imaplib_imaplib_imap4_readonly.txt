@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.readonly
+
+exception IMAP4.readonly  
+This exception is raised when a writable mailbox has its status changed by the server. This is a sub-class of IMAP4.error. Some other client now has write permission, and the mailbox will need to be re-opened to re-obtain write permission.

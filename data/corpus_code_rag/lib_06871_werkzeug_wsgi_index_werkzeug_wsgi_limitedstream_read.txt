@@ -1,0 +1,6 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.LimitedStream.read
+
+read(size=None)  
+Read size bytes or if size is not provided everything is read.  Parameters 
+size (Optional[int]) – the number of bytes read.  Return type 
+bytes

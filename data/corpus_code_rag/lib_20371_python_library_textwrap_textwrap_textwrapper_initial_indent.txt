@@ -1,0 +1,4 @@
+# python.library.textwrap#textwrap.TextWrapper.initial_indent
+
+initial_indent  
+(default: '') String that will be prepended to the first line of wrapped output. Counts towards the length of the first line. The empty string is not indented.

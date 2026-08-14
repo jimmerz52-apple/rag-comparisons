@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.xaxis.axis_name
+
+matplotlib.axis.XAxis.axis_name   XAxis.axis_name='x'
+ 
+Read-only name identifying the axis.

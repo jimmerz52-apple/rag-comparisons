@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.timedelta64
+
+class numpy.timedelta64[source]
+ 
+A timedelta stored as a 64-bit integer. See Datetimes and Timedeltas for more information.  Character code 
+'m'

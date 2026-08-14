@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.SummaryInformation.SetProperty
+
+SummaryInformation.SetProperty(field, value)  
+Set a property through MsiSummaryInfoSetProperty(). field can have the same values as in GetProperty(), value is the new value of the property. Possible value types are integer and string.

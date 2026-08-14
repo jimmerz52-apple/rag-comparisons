@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.PathCollection.set_capstyle
+
+set_capstyle(cs)[source]
+ 
+Set the CapStyle for the collection (for all its elements).  Parameters 
+ 
+csCapStyle or {'butt', 'projecting', 'round'}

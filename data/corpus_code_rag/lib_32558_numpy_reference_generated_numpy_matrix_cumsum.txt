@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.matrix.cumsum
+
+numpy.matrix.cumsum method   matrix.cumsum(axis=None, dtype=None, out=None)
+ 
+Return the cumulative sum of the elements along the given axis. Refer to numpy.cumsum for full documentation.  See also  numpy.cumsum
+
+equivalent function

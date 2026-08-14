@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.ProcessingInstruction.data
+
+ProcessingInstruction.data  
+The content of the processing instruction following the first whitespace character.

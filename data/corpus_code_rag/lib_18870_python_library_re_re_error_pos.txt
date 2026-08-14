@@ -1,0 +1,4 @@
+# python.library.re#re.error.pos
+
+pos  
+The index in pattern where compilation failed (may be None).

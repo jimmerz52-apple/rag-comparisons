@@ -1,0 +1,5 @@
+# matplotlib._api_api#matplotlib._api.deprecation.mplDeprecation
+
+matplotlib._api.deprecation.mplDeprecation[source]
+ 
+alias of matplotlib._api.deprecation.MatplotlibDeprecationWarning

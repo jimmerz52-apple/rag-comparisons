@@ -1,0 +1,4 @@
+# python.library.sys#sys.path_importer_cache
+
+sys.path_importer_cache  
+A dictionary acting as a cache for finder objects. The keys are paths that have been passed to sys.path_hooks and the values are the finders that are found. If a path is a valid file system path but no finder is found on sys.path_hooks then None is stored. Originally specified in PEP 302.  Changed in version 3.3: None is stored instead of imp.NullImporter when no finder is found.

@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.linear_model.passiveaggressiveclassifier#sklearn.linear_model.PassiveAggressiveClassifier.partial_fit
+
+partial_fit(X, y, classes=None) [source]
+ 
+Fit linear model with Passive Aggressive algorithm.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Subset of the training data  
+ynumpy array of shape [n_samples] 
+
+Subset of the target values  
+classesarray, shape = [n_classes] 
+
+Classes across all calls to partial_fit. Can be obtained by via np.unique(y_all), where y_all is the target vector of the entire dataset. This argument is required for the first call to partial_fit and can be omitted in the subsequent calls. Note that y doesn’t need to contain all labels in classes.    Returns 
+ 
+selfreturns an instance of self.

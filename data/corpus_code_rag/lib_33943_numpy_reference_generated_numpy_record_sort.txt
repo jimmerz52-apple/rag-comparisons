@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.sort
+
+numpy.record.sort method   record.sort()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.sort.

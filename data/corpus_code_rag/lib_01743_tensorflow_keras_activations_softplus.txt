@@ -1,0 +1,23 @@
+# tensorflow.keras.activations.softplus
+
+tf.keras.activations.softplus     View source on GitHub    Softplus activation function, softplus(x) = log(exp(x) + 1).  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.activations.softplus  
+tf.keras.activations.softplus(
+    x
+)
+ Example Usage: 
+a = tf.constant([-20, -1.0, 0.0, 1.0, 20], dtype = tf.float32)
+b = tf.keras.activations.softplus(a)
+b.numpy()
+array([2.0611537e-09, 3.1326166e-01, 6.9314718e-01, 1.3132616e+00,
+         2.0000000e+01], dtype=float32)
+
+ 
+
+
+ Arguments
+  x   Input tensor.   
+ 
+
+
+ Returns   The softplus activation: log(exp(x) + 1).

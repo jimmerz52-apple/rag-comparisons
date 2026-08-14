@@ -1,0 +1,10 @@
+# tensorflow.train.jobdef.tasksentry
+
+tf.train.JobDef.TasksEntry     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.JobDef.TasksEntry 
+ 
+
+
+ Attributes
+  key   int32 key  
+  value   string value

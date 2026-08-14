@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.layers.experimental
+
+Module: tf.compat.v1.layers.experimental Public API for tf.layers.experimental namespace. Functions keras_style_scope(...): Use Keras-style variable management. set_keras_style(...): Use Keras-style variable management.

@@ -1,0 +1,4 @@
+# python.library.timeit#timeit.default_timer
+
+timeit.default_timer()  
+The default timer, which is always time.perf_counter().  Changed in version 3.3: time.perf_counter() is now the default timer.

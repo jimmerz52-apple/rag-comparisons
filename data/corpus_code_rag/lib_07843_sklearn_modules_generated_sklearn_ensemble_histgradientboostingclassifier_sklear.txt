@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.ensemble.histgradientboostingclassifier#sklearn.ensemble.HistGradientBoostingClassifier.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit the gradient boosting model.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input samples.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples,) default=None 
+
+Weights of training data.  New in version 0.23.     Returns 
+ 
+selfobject

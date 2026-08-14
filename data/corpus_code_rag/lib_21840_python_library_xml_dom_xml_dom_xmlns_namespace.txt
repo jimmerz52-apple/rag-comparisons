@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.XMLNS_NAMESPACE
+
+xml.dom.XMLNS_NAMESPACE  
+The namespace URI for namespace declarations, as defined by Document Object Model (DOM) Level 2 Core Specification (section 1.1.8).

@@ -1,0 +1,6 @@
+# pygame.ref.music#pygame.mixer.music.queue
+
+pygame.mixer.music.queue() 
+ queue a sound file to follow the current queue(filename) -> None  This will load a sound file and queue it. A queued sound file will begin as soon as the current sound naturally ends. Only one sound can be queued at a time. Queuing a new sound while another sound is queued will result in the new sound becoming the queued sound. Also, if the current sound is ever stopped or changed, the queued sound will be lost. The following example will play music by Bach six times, then play music by Mozart once: pygame.mixer.music.load('bach.ogg')
+pygame.mixer.music.play(5)        # Plays six times, not five!
+pygame.mixer.music.queue('mozart.ogg')

@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.LabelEntry
+
+class tkinter.tix.LabelEntry  
+The LabelEntry widget packages an entry widget and a label into one mega widget. It can be used to simplify the creation of “entry-form” type of interface.

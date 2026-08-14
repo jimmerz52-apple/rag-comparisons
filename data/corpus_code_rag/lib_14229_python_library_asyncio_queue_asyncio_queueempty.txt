@@ -1,0 +1,4 @@
+# python.library.asyncio-queue#asyncio.QueueEmpty
+
+exception asyncio.QueueEmpty  
+This exception is raised when the get_nowait() method is called on an empty queue.

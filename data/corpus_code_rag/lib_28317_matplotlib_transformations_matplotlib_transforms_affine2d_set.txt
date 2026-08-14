@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Affine2D.set
+
+set(other)[source]
+ 
+Set this transformation from the frozen copy of another Affine2DBase object.

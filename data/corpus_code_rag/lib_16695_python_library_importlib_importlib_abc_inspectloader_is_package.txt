@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.InspectLoader.is_package
+
+is_package(fullname)  
+An abstract method to return a true value if the module is a package, a false value otherwise. ImportError is raised if the loader cannot find the module.  Changed in version 3.4: Raises ImportError instead of NotImplementedError.

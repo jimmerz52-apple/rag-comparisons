@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.AllowAllUsersRemoteUserBackend
+
+class AllowAllUsersRemoteUserBackend  
+Same as RemoteUserBackend except that it doesn’t reject inactive users because user_can_authenticate always returns True.

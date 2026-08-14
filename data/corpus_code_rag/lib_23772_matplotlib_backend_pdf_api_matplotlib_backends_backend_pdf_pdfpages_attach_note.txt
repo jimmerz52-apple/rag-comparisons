@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfPages.attach_note
+
+attach_note(text, positionRect=[- 100, - 100, 0, 0])[source]
+ 
+Add a new text note to the page to be saved next. The optional positionRect specifies the position of the new note on the page. It is outside the page per default to make sure it is invisible on printouts.

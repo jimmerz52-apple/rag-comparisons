@@ -1,0 +1,5 @@
+# python.library.threading#threading.Thread.setDaemon
+
+isDaemon()  
+setDaemon()  
+Old getter/setter API for daemon; use it directly as a property instead.

@@ -1,0 +1,4 @@
+# python.library.base64#base64.b85decode
+
+base64.b85decode(b)  
+Decode the base85-encoded bytes-like object or ASCII string b and return the decoded bytes. Padding is implicitly removed, if necessary.  New in version 3.4.

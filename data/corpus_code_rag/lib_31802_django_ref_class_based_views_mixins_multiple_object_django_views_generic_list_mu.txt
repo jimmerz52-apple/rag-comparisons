@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.get_paginator
+
+get_paginator(queryset, per_page, orphans=0, allow_empty_first_page=True)  
+Returns an instance of the paginator to use for this view. By default, instantiates an instance of paginator_class.

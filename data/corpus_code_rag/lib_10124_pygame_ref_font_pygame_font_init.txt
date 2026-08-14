@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.init
+
+pygame.font.init() 
+ initialize the font module init() -> None  This method is called automatically by pygame.init(). It initializes the font module. The module must be initialized before any other functions will work. It is safe to call this function more than once.

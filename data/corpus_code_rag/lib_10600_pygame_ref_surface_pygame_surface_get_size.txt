@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_size
+
+get_size() 
+ get the dimensions of the Surface get_size() -> (width, height)  Return the width and height of the Surface in pixels.

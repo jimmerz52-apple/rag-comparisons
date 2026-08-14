@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.rmdir
+
+Path.rmdir()  
+Remove this directory. The directory must be empty.

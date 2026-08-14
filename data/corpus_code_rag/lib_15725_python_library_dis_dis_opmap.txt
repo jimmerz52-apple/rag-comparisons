@@ -1,0 +1,4 @@
+# python.library.dis#dis.opmap
+
+dis.opmap  
+Dictionary mapping operation names to bytecodes.

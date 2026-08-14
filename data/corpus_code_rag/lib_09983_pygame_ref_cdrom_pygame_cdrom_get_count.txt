@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.get_count
+
+pygame.cdrom.get_count() 
+ number of cd drives on the system get_count() -> count  Return the number of cd drives on the system. When you create CD objects you need to pass an integer id that must be lower than this count. The count will be 0 if there are no drives on the system.

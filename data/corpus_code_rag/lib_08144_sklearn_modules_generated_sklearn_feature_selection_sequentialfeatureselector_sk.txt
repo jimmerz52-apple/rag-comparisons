@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.feature_selection.sequentialfeatureselector#sklearn.feature_selection.SequentialFeatureSelector.fit
+
+fit(X, y) [source]
+ 
+Learn the features to select.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training vectors.  
+yarray-like of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+selfobject

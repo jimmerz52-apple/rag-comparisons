@@ -1,0 +1,4 @@
+# flask.api.index#flask.cli.FlaskGroup.list_commands
+
+list_commands(ctx)  
+Returns a list of subcommand names in the order they should appear.

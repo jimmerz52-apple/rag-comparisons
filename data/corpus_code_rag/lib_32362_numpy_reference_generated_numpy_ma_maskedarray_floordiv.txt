@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__floordiv__
+
+numpy.ma.MaskedArray.__floordiv__ method   ma.MaskedArray.__floordiv__(other)[source]
+ 
+Divide other into self, and return a new masked array.

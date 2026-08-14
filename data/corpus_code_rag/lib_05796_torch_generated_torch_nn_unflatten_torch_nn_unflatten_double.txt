@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.unflatten#torch.nn.Unflatten.double
+
+double()  
+Casts all floating point parameters and buffers to double datatype.  Returns 
+self  Return type 
+Module

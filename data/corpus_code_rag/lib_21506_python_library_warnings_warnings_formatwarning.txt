@@ -1,0 +1,4 @@
+# python.library.warnings#warnings.formatwarning
+
+warnings.formatwarning(message, category, filename, lineno, line=None)  
+Format a warning the standard way. This returns a string which may contain embedded newlines and ends in a newline. line is a line of source code to be included in the warning message; if line is not supplied, formatwarning() will try to read the line specified by filename and lineno.

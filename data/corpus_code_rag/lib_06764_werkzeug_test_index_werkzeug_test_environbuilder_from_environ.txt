@@ -1,0 +1,8 @@
+# werkzeug.test.index#werkzeug.test.EnvironBuilder.from_environ
+
+classmethod from_environ(environ, **kwargs)  
+Turn an environ dict back into a builder. Any extra kwargs override the args extracted from the environ.  Changed in version 2.0: Path and query values are passed through the WSGI decoding dance to avoid double encoding.   Changelog New in version 0.15.   Parameters 
+ 
+environ (WSGIEnvironment) –  
+kwargs (Any) –    Return type 
+EnvironBuilder

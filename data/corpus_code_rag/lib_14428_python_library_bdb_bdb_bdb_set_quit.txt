@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.set_quit
+
+set_quit()  
+Set the quitting attribute to True. This raises BdbQuit in the next call to one of the dispatch_*() methods.

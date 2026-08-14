@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.PowerTransform
+
+class torch.distributions.transforms.PowerTransform(exponent, cache_size=0) [source]
+ 
+Transform via the mapping y=xexponenty = x^{\text{exponent}} .

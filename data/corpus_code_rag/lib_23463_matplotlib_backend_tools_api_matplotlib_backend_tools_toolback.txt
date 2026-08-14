@@ -1,0 +1,13 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolBack
+
+classmatplotlib.backend_tools.ToolBack(toolmanager, name)[source]
+ 
+Bases: matplotlib.backend_tools.ViewsPositionsBase Move back up the view limits stack.   default_keymap=['left', 'c', 'backspace', 'MouseButton.BACK']
+ 
+Keymap to associate with this tool. list[str]: List of keys that will trigger this tool when a keypress event is emitted on self.figure.canvas. 
+   description='Back to previous view'
+ 
+Description of the Tool. str: Tooltip used if the Tool is included in a Toolbar. 
+   image='back'
+ 
+Filename of the image. str: Filename of the image to use in a Toolbar. If None, the name is used as a label in the toolbar button.

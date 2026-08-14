@@ -1,0 +1,4 @@
+# python.library.weakref#weakref.getweakrefs
+
+weakref.getweakrefs(object)  
+Return a list of all weak reference and proxy objects which refer to object.

@@ -1,0 +1,4 @@
+# python.library.os#os.sched_param.sched_priority
+
+sched_priority  
+The scheduling priority for a scheduling policy.

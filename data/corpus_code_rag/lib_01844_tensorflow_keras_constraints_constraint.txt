@@ -1,0 +1,10 @@
+# tensorflow.keras.constraints.constraint
+
+tf.keras.constraints.Constraint     View source on GitHub     View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.constraints.Constraint  Methods get_config View source 
+get_config()
+ __call__ View source 
+__call__(
+    w
+)
+ Call self as a function.

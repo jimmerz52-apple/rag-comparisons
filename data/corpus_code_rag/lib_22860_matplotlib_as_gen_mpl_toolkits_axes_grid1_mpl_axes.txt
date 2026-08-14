@@ -1,0 +1,6 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.mpl_axes
+
+mpl_toolkits.axes_grid1.mpl_axes  Classes  
+Axes(fig, rect, *[, facecolor, frameon, ...]) Build an Axes in a figure.  
+SimpleAxisArtist(axis, axisnum, spine)   
+SimpleChainedObjects(objects)

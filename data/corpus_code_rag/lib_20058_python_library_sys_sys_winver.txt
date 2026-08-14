@@ -1,0 +1,4 @@
+# python.library.sys#sys.winver
+
+sys.winver  
+The version number used to form registry keys on Windows platforms. This is stored as string resource 1000 in the Python DLL. The value is normally the first three characters of version. It is provided in the sys module for informational purposes; modifying this value has no effect on the registry keys used by Python. Availability: Windows.

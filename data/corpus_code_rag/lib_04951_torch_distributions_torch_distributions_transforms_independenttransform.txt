@@ -1,0 +1,8 @@
+# torch.distributions#torch.distributions.transforms.IndependentTransform
+
+class torch.distributions.transforms.IndependentTransform(base_transform, reinterpreted_batch_ndims, cache_size=0) [source]
+ 
+Wrapper around another transform to treat reinterpreted_batch_ndims-many extra of the right most dimensions as dependent. This has no effect on the forward or backward transforms, but does sum out reinterpreted_batch_ndims-many of the rightmost dimensions in log_abs_det_jacobian().  Parameters 
+ 
+base_transform (Transform) – A base transform. 
+reinterpreted_batch_ndims (int) – The number of extra rightmost dimensions to treat as dependent.

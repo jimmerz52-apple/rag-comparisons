@@ -1,0 +1,8 @@
+# torch.generated.torch.signbit#torch.signbit
+
+torch.signbit(input, *, out=None) → Tensor  
+Tests if each element of input has its sign bit set (is less than zero) or not.  Parameters 
+input (Tensor) – the input tensor.  Keyword Arguments 
+out (Tensor, optional) – the output tensor.   Example: >>> a = torch.tensor([0.7, -1.2, 0., 2.3])
+>>> torch.signbit(a)
+tensor([ False, True,  False,  False])

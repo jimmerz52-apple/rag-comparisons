@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.set_selection
+
+set_selection(file)  
+Update the current file selection to file.

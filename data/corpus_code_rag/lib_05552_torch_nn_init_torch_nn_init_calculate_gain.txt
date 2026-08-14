@@ -1,0 +1,16 @@
+# torch.nn.init#torch.nn.init.calculate_gain
+
+torch.nn.init.calculate_gain(nonlinearity, param=None) [source]
+ 
+Return the recommended gain value for the given nonlinearity function. The values are as follows:   
+nonlinearity gain   
+Linear / Identity 11   
+Conv{1,2,3}D 11   
+Sigmoid 11   
+Tanh 53\frac{5}{3}   
+ReLU 2\sqrt{2}   
+Leaky Relu 21+negative_slope2\sqrt{\frac{2}{1 + \text{negative\_slope}^2}}   
+SELU 34\frac{3}{4}     Parameters 
+ 
+nonlinearity – the non-linear function (nn.functional name) 
+param – optional parameter for the non-linear function    Examples >>> gain = nn.init.calculate_gain('leaky_relu', 0.2)  # leaky_relu with negative_slope=0.2

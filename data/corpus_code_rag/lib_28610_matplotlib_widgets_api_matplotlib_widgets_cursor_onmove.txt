@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.Cursor.onmove
+
+onmove(event)[source]
+ 
+Internal event handler to draw the cursor when the mouse moves.

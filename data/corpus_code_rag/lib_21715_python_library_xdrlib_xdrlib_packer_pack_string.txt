@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Packer.pack_string
+
+Packer.pack_string(s)  
+Packs a variable length string, s. The length of the string is first packed as an unsigned integer, then the string data is packed with pack_fstring().

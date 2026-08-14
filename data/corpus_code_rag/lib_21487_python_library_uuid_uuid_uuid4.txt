@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.uuid4
+
+uuid.uuid4()  
+Generate a random UUID.

@@ -1,0 +1,7 @@
+# 551
+Task: 551
+
+# Write a function to extract a specified column from a given nested list.
+def extract_column(list1, n):
+   result = [i.pop(n) for i in list1]
+   return result

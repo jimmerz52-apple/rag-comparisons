@@ -1,0 +1,4 @@
+# python.library.test#test.support.socket_helper.transient_internet
+
+test.support.socket_helper.transient_internet(resource_name, *, timeout=30.0, errnos=())  
+A context manager that raises ResourceDenied when various issues with the internet connection manifest themselves as exceptions.

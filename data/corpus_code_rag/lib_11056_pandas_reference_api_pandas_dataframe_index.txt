@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.dataframe.index
+
+pandas.DataFrame.index   DataFrame.index
+ 
+The index (row labels) of the DataFrame.

@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_aspect
+
+matplotlib.rcsetup.validate_aspect(s)[source]

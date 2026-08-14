@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.IntegerRangeField
+
+class IntegerRangeField(**options)  
+Stores a range of integers. Based on an IntegerField. Represented by an int4range in the database and a NumericRange in Python. Regardless of the bounds specified when saving the data, PostgreSQL always returns a range in a canonical form that includes the lower bound and excludes the upper bound, that is [).

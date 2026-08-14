@@ -1,0 +1,6 @@
+# torch.optim#torch.optim.lr_scheduler.LambdaLR.load_state_dict
+
+load_state_dict(state_dict) [source]
+ 
+Loads the schedulers state. When saving or loading the scheduler, please make sure to also save or load the state of the optimizer.  Parameters 
+state_dict (dict) – scheduler state. Should be an object returned from a call to state_dict().

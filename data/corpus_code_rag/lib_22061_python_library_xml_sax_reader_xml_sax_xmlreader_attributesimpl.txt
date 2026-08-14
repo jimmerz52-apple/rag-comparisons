@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.AttributesImpl
+
+class xml.sax.xmlreader.AttributesImpl(attrs)  
+This is an implementation of the Attributes interface (see section The Attributes Interface). This is a dictionary-like object which represents the element attributes in a startElement() call. In addition to the most useful dictionary operations, it supports a number of other methods as described by the interface. Objects of this class should be instantiated by readers; attrs must be a dictionary-like object containing a mapping from attribute names to attribute values.

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__float__
+
+numpy.ma.MaskedArray.__float__ method   ma.MaskedArray.__float__()[source]
+ 
+Convert to float.

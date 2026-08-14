@@ -1,0 +1,3 @@
+# matplotlib.spines_api#matplotlib.spines.Spines.from_dict
+
+classmethodfrom_dict(d)[source]

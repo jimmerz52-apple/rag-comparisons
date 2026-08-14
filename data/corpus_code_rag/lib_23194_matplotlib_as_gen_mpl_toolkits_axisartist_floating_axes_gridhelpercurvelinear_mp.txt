@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.floating_axes.gridhelpercurvelinear#mpl_toolkits.axisartist.floating_axes.GridHelperCurveLinear.get_gridlines
+
+get_gridlines(which='major', axis='both')[source]
+ 
+Return list of grid lines as a list of paths (list of points). which : "major" or "minor" axis : "both", "x" or "y"

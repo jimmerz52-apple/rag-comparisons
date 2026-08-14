@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_subnormal
+
+is_subnormal(x)  
+Returns True if x is subnormal; otherwise returns False.

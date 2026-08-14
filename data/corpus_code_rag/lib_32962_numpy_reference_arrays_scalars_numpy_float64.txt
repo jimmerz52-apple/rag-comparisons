@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.float64
+
+numpy.float64[source]
+ 
+alias of numpy.double

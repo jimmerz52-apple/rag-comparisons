@@ -1,0 +1,103 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile
+
+classmatplotlib.backends.backend_pdf.PdfFile(filename, metadata=None)[source]
+ 
+Bases: object PDF file object.  Parameters 
+ 
+filenamestr or path-like or file-like
+
+
+Output target; if a string, a file will be opened for writing.  
+metadatadict from strings to strings and dates
+
+
+Information dictionary object (see PDF reference section 10.2.1 'Document Information Dictionary'), e.g.: {'Creator': 'My software', 'Author': 'Me', 'Title': 'Awesome'}. The standard keys are 'Title', 'Author', 'Subject', 'Keywords', 'Creator', 'Producer', 'CreationDate', 'ModDate', and 'Trapped'. Values have been predefined for 'Creator', 'Producer' and 'CreationDate'. They can be removed by setting them to None.       addGouraudTriangles(points, colors)[source]
+ 
+Add a Gouraud triangle shading.  Parameters 
+ 
+pointsnp.ndarray
+
+
+Triangle vertices, shape (n, 3, 2) where n = number of triangles, 3 = vertices, 2 = x, y.  
+colorsnp.ndarray
+
+
+Vertex colors, shape (n, 3, 1) or (n, 3, 4) as with points, but last dimension is either (gray,) or (r, g, b, alpha).    Returns 
+ Name, Reference
+   
+   alphaState(alpha)[source]
+ 
+Return name of an ExtGState that sets alpha to the given value. 
+   beginStream(id, len, extra=None, png=None)[source]
+
+   close()[source]
+ 
+Flush all buffers and free all resources. 
+   createType1Descriptor(t1font, fontfile)[source]
+
+   dviFontName(dvifont)[source]
+ 
+Given a dvi font object, return a name suitable for Op.selectfont. This registers the font information in self.dviFontInfo if not yet registered. 
+   embedTTF(filename, characters)[source]
+ 
+Embed the TTF font from the named file into the document. 
+   endStream()[source]
+
+   finalize()[source]
+ 
+Write out the various deferred objects and the pdf end matter. 
+   fontName(fontprop)[source]
+ 
+Select a font based on fontprop and return a name suitable for Op.selectfont. If fontprop is a string, it will be interpreted as the filename of the font. 
+   hatchPattern(hatch_style)[source]
+
+   imageObject(image)[source]
+ 
+Return name of an image XObject representing the given image. 
+   markerObject(path, trans, fill, stroke, lw, joinstyle, capstyle)[source]
+ 
+Return name of a marker XObject representing the given path. 
+   newPage(width, height)[source]
+
+   newTextnote(text, positionRect=[- 100, - 100, 0, 0])[source]
+
+   output(*data)[source]
+
+   pathCollectionObject(gc, path, trans, padding, filled, stroked)[source]
+
+   staticpathOperations(path, transform, clip=None, simplify=None, sketch=None)[source]
+
+   recordXref(id)[source]
+
+   reserveObject(name='')[source]
+ 
+Reserve an ID for an indirect object. The name is used for debugging in case we forget to print out the object with writeObject. 
+   write(data)[source]
+
+   writeExtGSTates()[source]
+
+   writeFonts()[source]
+
+   writeGouraudTriangles()[source]
+
+   writeHatches()[source]
+
+   writeImages()[source]
+
+   writeInfoDict()[source]
+ 
+Write out the info dictionary, checking it for good form 
+   writeMarkers()[source]
+
+   writeObject(object, contents)[source]
+
+   writePath(path, transform, clip=False, sketch=None)[source]
+
+   writePathCollectionTemplates()[source]
+
+   writeTrailer()[source]
+ 
+Write out the PDF trailer. 
+   writeXref()[source]
+ 
+Write out the xref table.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.grid#mpl_toolkits.axes_grid1.axes_grid.Grid.get_geometry
+
+get_geometry()[source]
+ 
+Return the number of rows and columns of the grid as (nrows, ncols).

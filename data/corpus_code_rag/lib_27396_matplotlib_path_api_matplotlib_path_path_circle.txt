@@ -1,0 +1,18 @@
+# matplotlib.path_api#matplotlib.path.Path.circle
+
+classmethodcircle(center=(0.0, 0.0), radius=1.0, readonly=False)[source]
+ 
+Return a Path representing a circle of a given radius and center.  Parameters 
+ 
+center(float, float), default: (0, 0)
+
+
+The center of the circle.  
+radiusfloat, default: 1
+
+
+The radius of the circle.  
+readonlybool
+
+
+Whether the created path should have the "readonly" argument set when creating the Path instance.     Notes The circle is approximated using 8 cubic Bezier curves, as described in Lancaster, Don. Approximating a Circle or an Ellipse Using Four Bezier Cubic Splines.

@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.api.extensions.extensiondtype.empty
+
+pandas.api.extensions.ExtensionDtype.empty   ExtensionDtype.empty(shape)[source]
+ 
+Construct an ExtensionArray of this dtype with the given shape. Analogous to numpy.empty.  Parameters 
+ 
+shape:int or tuple[int]
+
+  Returns 
+ ExtensionArray

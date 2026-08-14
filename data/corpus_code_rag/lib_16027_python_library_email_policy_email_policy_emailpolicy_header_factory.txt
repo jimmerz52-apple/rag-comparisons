@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.header_factory
+
+header_factory  
+A callable that takes two arguments, name and value, where name is a header field name and value is an unfolded header field value, and returns a string subclass that represents that header. A default header_factory (see headerregistry) is provided that supports custom parsing for the various address and date RFC 5322 header field types, and the major MIME header field stypes. Support for additional custom parsing will be added in the future.

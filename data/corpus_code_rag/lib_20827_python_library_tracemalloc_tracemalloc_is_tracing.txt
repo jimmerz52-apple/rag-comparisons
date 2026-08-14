@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.is_tracing
+
+tracemalloc.is_tracing()  
+True if the tracemalloc module is tracing Python memory allocations, False otherwise. See also start() and stop() functions.

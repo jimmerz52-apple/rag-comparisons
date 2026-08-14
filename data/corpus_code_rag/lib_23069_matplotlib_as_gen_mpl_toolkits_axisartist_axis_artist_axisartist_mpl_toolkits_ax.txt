@@ -1,0 +1,14 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axisartist#mpl_toolkits.axisartist.axis_artist.AxisArtist.set_axis_direction
+
+set_axis_direction(axis_direction)[source]
+ 
+Adjust the direction, text angle, text alignment of ticklabels, labels following the matplotlib convention for the rectangle axes. The axis_direction must be one of [left, right, bottom, top].   
+property left bottom right top   
+ticklabels location "-" "+" "+" "-"  
+axislabel location "-" "+" "+" "-"  
+ticklabels angle 90 0 -90 180  
+ticklabel va center baseline center baseline  
+ticklabel ha right center right center  
+axislabel angle 180 0 0 180  
+axislabel va center top center bottom  
+axislabel ha right center right center   Note that the direction "+" and "-" are relative to the direction of the increasing coordinate. Also, the text angles are actually relative to (90 + angle of the direction to the ticklabel), which gives 0 for bottom axis.

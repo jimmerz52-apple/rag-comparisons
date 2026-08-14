@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.linear_model.ransacregressor#sklearn.linear_model.RANSACRegressor.predict
+
+predict(X) [source]
+ 
+Predict using the estimated model. This is a wrapper for estimator_.predict(X).  Parameters 
+ 
+Xnumpy array of shape [n_samples, n_features] 
+  Returns 
+ 
+yarray, shape = [n_samples] or [n_samples, n_targets] 
+
+Returns predicted values.

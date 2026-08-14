@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSession.accessed
+
+accessed = False  
+header, which allows caching proxies to cache different pages for different users.

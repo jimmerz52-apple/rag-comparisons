@@ -1,0 +1,6 @@
+# flask.api.index#flask.Markup.escape
+
+classmethod escape(s)  
+Escape a string. Calls escape() and ensures that for subclasses the correct type is returned.  Parameters 
+s (Any) –   Return type 
+markupsafe.Markup

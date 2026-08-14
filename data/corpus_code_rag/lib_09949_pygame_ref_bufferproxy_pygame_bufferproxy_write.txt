@@ -1,0 +1,4 @@
+# pygame.ref.bufferproxy#pygame.BufferProxy.write
+
+write() 
+ Write raw bytes to object buffer. write(buffer, offset=0)  Overwrite bytes in the parent object's data. The data must be C or F contiguous, otherwise a ValueError is raised. Argument buffer is a str/bytes object. An optional offset gives a start position, in bytes, within the buffer where overwriting begins. If the offset is negative or greater that or equal to the buffer proxy's length value, an IndexException is raised. If len(buffer) > proxy.length + offset, a ValueError is raised.

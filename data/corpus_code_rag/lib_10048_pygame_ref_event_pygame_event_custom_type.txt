@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.custom_type
+
+pygame.event.custom_type() 
+ make custom user event type custom_type() -> int  Reserves a pygame.USEREVENT for a custom use. If too many events are made a pygame.error is raised.  New in pygame 2.0.0.dev3.

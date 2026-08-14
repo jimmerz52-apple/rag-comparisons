@@ -1,0 +1,6 @@
+# python.library.ast#ast.Constant
+
+class ast.Constant(value)  
+A constant value. The value attribute of the Constant literal contains the Python object it represents. The values represented can be simple types such as a number, string or None, but also immutable container types (tuples and frozensets) if all of their elements are constant. >>> print(ast.dump(ast.parse('123', mode='eval'), indent=4))
+Expression(
+    body=Constant(value=123))

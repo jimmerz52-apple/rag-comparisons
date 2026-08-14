@@ -1,0 +1,3 @@
+# django.ref.views#django.views.defaults.bad_request
+
+defaults.bad_request(request, exception, template_name='400.html')

@@ -1,0 +1,4 @@
+# python.library.filecmp#filecmp.clear_cache
+
+filecmp.clear_cache()  
+Clear the filecmp cache. This may be useful if a file is compared so quickly after it is modified that it is within the mtime resolution of the underlying filesystem.  New in version 3.4.

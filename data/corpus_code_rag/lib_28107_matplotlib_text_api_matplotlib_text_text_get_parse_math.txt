@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_parse_math
+
+get_parse_math()[source]
+ 
+Return whether mathtext parsing is considered for this Text.

@@ -1,0 +1,6 @@
+# python.library.re#re.Match.groupdict
+
+Match.groupdict(default=None)  
+Return a dictionary containing all the named subgroups of the match, keyed by the subgroup name. The default argument is used for groups that did not participate in the match; it defaults to None. For example: >>> m = re.match(r"(?P<first_name>\w+) (?P<last_name>\w+)", "Malcolm Reynolds")
+>>> m.groupdict()
+{'first_name': 'Malcolm', 'last_name': 'Reynolds'}

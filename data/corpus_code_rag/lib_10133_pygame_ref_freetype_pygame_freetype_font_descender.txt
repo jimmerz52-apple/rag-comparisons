@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.descender
+
+descender 
+ The unscaled descent of the font in font units descender -> int  Read only. Return the height in font units for the font descent. The descent is the number of units from the font's baseline to the bottom of the bounding box.

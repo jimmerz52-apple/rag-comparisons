@@ -1,0 +1,22 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Range
+
+class werkzeug.datastructures.Range(units, ranges)  
+Represents a Range header. All methods only support only bytes as the unit. Stores a list of ranges if given, but the methods only work if only one range is provided.  Raises 
+ValueError – If the ranges provided are invalid.    Changelog Changed in version 0.15: The ranges passed in are validated.   New in version 0.7.   
+make_content_range(length)  
+Creates a ContentRange object from the current range and given content length. 
+  
+range_for_length(length)  
+If the range is for bytes, the length is not None and there is exactly one range and it is satisfiable it returns a (start, stop) tuple, otherwise None. 
+  
+ranges  
+A list of (begin, end) tuples for the range header provided. The ranges are non-inclusive. 
+  
+to_content_range_header(length)  
+Converts the object into Content-Range HTTP header, based on given length 
+  
+to_header()  
+Converts the object back into an HTTP header. 
+  
+units  
+The units of this range. Usually “bytes”.

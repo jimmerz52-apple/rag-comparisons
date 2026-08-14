@@ -1,0 +1,4 @@
+# python.library.test#test.support.wait_threads_exit
+
+test.support.wait_threads_exit(timeout=60.0)  
+Context manager to wait until all threads created in the with statement exit.

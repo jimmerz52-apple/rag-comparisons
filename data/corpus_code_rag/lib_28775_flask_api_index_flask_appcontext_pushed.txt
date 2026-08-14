@@ -1,0 +1,18 @@
+# flask.api.index#flask.appcontext_pushed
+
+flask.appcontext_pushed  
+This signal is sent when an application context is pushed. The sender is the application. This is usually useful for unittests in order to temporarily hook in information. For instance it can be used to set a resource early onto the g object. Example usage: from contextlib import contextmanager
+from flask import appcontext_pushed
+
+@contextmanager
+def user_set(app, user):
+    def handler(sender, **kwargs):
+        g.user = user
+    with appcontext_pushed.connected_to(handler, app):
+        yield
+ And in the testcode: def test_user_me(self):
+    with user_set(app, 'john'):
+        c = app.test_client()
+        resp = c.get('/users/me')
+        assert resp.data == 'username=john'
+  Changelog New in version 0.10.

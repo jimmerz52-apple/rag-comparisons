@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.SourceLoader.get_code
+
+get_code(fullname)  
+Concrete implementation of InspectLoader.get_code().

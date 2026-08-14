@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.vertexselector#matplotlib.lines.VertexSelector.onpick
+
+onpick(event)[source]
+ 
+When the line is picked, update the set of selected indices.

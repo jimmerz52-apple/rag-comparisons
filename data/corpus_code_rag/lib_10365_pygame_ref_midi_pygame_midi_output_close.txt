@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.Output.close
+
+close() 
+ closes a midi stream, flushing any pending buffers. close() -> None  PortMidi attempts to close open streams when the application exits.  Note This is particularly difficult under Windows.

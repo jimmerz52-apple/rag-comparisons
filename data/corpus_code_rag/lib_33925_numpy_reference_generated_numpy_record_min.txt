@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.min
+
+numpy.record.min method   record.min()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.min.

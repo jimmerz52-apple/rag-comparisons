@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.update_units
+
+matplotlib.axis.Axis.update_units   Axis.update_units(data)[source]
+ 
+Introspect data for units converter and update the axis.converter instance if necessary. Return True if data is registered for unit conversion.

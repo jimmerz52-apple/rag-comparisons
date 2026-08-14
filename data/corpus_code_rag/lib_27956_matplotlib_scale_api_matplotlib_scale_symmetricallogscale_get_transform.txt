@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.SymmetricalLogScale.get_transform
+
+get_transform()[source]
+ 
+Return the SymmetricalLogTransform associated with this scale.

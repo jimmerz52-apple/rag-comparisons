@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.hyperparameter#sklearn.gaussian_process.kernels.Hyperparameter.count
+
+count(value, /)  
+Return number of occurrences of value.

@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.next_minus
+
+next_minus(x)  
+Returns the largest representable number smaller than x.

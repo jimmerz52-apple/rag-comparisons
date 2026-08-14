@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.polynomial.polyutils.rankwarning
+
+numpy.polynomial.polyutils.RankWarning   exception polynomial.polyutils.RankWarning[source]
+ 
+Issued by chebfit when the design matrix is rank deficient.

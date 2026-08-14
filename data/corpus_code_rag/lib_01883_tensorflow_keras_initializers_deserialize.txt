@@ -1,0 +1,7 @@
+# tensorflow.keras.initializers.deserialize
+
+tf.keras.initializers.deserialize     View source on GitHub    Return an Initializer object from its config.  View aliases  Main aliases 
+tf.initializers.deserialize Compat aliases for migration See Migration guide for more details. tf.compat.v1.keras.initializers.deserialize  
+tf.keras.initializers.deserialize(
+    config, custom_objects=None
+)

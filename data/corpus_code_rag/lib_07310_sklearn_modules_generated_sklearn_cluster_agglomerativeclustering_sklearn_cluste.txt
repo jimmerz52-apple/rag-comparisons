@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cluster.agglomerativeclustering#sklearn.cluster.AgglomerativeClustering.fit
+
+fit(X, y=None) [source]
+ 
+Fit the hierarchical clustering from features, or distance matrix.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) or (n_samples, n_samples) 
+
+Training instances to cluster, or distances between instances if affinity='precomputed'.  
+yIgnored 
+
+Not used, present here for API consistency by convention.    Returns 
+ self

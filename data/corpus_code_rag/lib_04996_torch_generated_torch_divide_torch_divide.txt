@@ -1,0 +1,4 @@
+# torch.generated.torch.divide#torch.divide
+
+torch.divide(input, other, *, rounding_mode=None, out=None) → Tensor  
+Alias for torch.div().

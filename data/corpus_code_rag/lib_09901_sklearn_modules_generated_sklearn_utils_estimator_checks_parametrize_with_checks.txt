@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.utils.estimator_checks.parametrize_with_checks#sklearn.utils.estimator_checks.parametrize_with_checks
+
+sklearn.utils.estimator_checks.parametrize_with_checks(estimators) [source]
+ 
+Pytest specific decorator for parametrizing estimator checks. The id of each check is set to be a pprint version of the estimator and the name of the check with its keyword arguments. This allows to use pytest -k to specify which tests to run: pytest test_check_estimators.py -k check_estimators_fit_returns_self
+  Parameters 
+ 
+estimatorslist of estimators instances 
+
+Estimators to generated checks for.  Changed in version 0.24: Passing a class was deprecated in version 0.23, and support for classes was removed in 0.24. Pass an instance instead.   New in version 0.24.     Returns 
+ 
+decoratorpytest.mark.parametrize 
+   Examples >>> from sklearn.utils.estimator_checks import parametrize_with_checks
+>>> from sklearn.linear_model import LogisticRegression
+>>> from sklearn.tree import DecisionTreeRegressor
+ >>> @parametrize_with_checks([LogisticRegression(),
+...                           DecisionTreeRegressor()])
+... def test_sklearn_compatible_estimator(estimator, check):
+...     check(estimator)

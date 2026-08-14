@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.tick.is_on_offset
+
+pandas.tseries.offsets.Tick.is_on_offset   Tick.is_on_offset()

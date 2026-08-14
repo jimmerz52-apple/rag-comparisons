@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.gamma.Gamma.expand
+
+expand(batch_shape, _instance=None) [source]

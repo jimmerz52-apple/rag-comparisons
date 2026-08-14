@@ -1,0 +1,5 @@
+# python.library.msvcrt#msvcrt.LK_NBLCK
+
+msvcrt.LK_NBLCK  
+msvcrt.LK_NBRLCK  
+Locks the specified bytes. If the bytes cannot be locked, OSError is raised.

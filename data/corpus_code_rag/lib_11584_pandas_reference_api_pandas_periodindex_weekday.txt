@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.periodindex.weekday
+
+pandas.PeriodIndex.weekday   propertyPeriodIndex.weekday
+ 
+The day of the week with Monday=0, Sunday=6.

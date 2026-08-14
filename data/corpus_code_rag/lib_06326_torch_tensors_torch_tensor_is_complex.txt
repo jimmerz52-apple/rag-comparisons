@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.is_complex
+
+is_complex() → bool  
+Returns True if the data type of self is a complex data type.

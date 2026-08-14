@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_gid
+
+get_gid()[source]
+ 
+Return the group id.

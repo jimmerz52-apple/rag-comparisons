@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.floating_axes.floatingaxisartisthelper
+
+mpl_toolkits.axisartist.floating_axes.FloatingAxisArtistHelper   classmpl_toolkits.axisartist.floating_axes.FloatingAxisArtistHelper(grid_helper, nth_coord, value, axis_direction=None)[source]
+ 
+Bases: mpl_toolkits.axisartist.grid_helper_curvelinear.FloatingAxisArtistHelper  nth_coord = along which coordinate value varies.
+
+nth_coord = 0 -> x axis, nth_coord = 1 -> y axis

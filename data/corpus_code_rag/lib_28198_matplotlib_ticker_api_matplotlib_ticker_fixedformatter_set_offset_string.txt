@@ -1,0 +1,3 @@
+# matplotlib.ticker_api#matplotlib.ticker.FixedFormatter.set_offset_string
+
+set_offset_string(ofs)[source]

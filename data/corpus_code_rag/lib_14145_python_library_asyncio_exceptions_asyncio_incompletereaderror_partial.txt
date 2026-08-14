@@ -1,0 +1,4 @@
+# python.library.asyncio-exceptions#asyncio.IncompleteReadError.partial
+
+partial  
+A string of bytes read before the end of stream was reached.

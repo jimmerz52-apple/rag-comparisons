@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.featurehasher#sklearn.feature_extraction.FeatureHasher.transform
+
+transform(raw_X) [source]
+ 
+Transform a sequence of instances to a scipy.sparse matrix.  Parameters 
+ 
+raw_Xiterable over iterable over raw features, length = n_samples 
+
+Samples. Each sample must be iterable an (e.g., a list or tuple) containing/generating feature names (and optionally values, see the input_type constructor argument) which will be hashed. raw_X need not support the len function, so it can be the result of a generator; n_samples is determined on the fly.    Returns 
+ 
+Xsparse matrix of shape (n_samples, n_features) 
+
+Feature matrix, for use with estimators or further transformers.

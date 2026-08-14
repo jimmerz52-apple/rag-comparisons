@@ -1,0 +1,17 @@
+# matplotlib._as_gen.matplotlib.colors.lightsource#matplotlib.colors.LightSource.blend_soft_light
+
+blend_soft_light(rgb, intensity)[source]
+ 
+Combine an rgb image with an intensity map using "soft light" blending, using the "pegtop" formula.  Parameters 
+ 
+rgbndarray
+
+
+An MxNx3 RGB array of floats ranging from 0 to 1 (color image).  
+intensityndarray
+
+
+An MxNx1 array of floats ranging from 0 to 1 (grayscale image).    Returns 
+ ndarray
+
+An MxNx3 RGB array representing the combined images.

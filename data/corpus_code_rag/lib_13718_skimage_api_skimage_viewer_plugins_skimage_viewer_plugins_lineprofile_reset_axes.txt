@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.LineProfile.reset_axes
+
+reset_axes(scan_data) [source]

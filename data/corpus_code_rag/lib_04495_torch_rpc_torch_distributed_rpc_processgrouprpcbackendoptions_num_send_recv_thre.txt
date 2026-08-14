@@ -1,0 +1,4 @@
+# torch.rpc#torch.distributed.rpc.ProcessGroupRpcBackendOptions.num_send_recv_threads
+
+property num_send_recv_threads  
+The number of threads in the thread-pool used by ProcessGroupAgent.

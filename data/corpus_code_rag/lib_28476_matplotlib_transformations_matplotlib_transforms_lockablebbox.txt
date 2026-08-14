@@ -1,0 +1,68 @@
+# matplotlib.transformations#matplotlib.transforms.LockableBbox
+
+classmatplotlib.transforms.LockableBbox(bbox, x0=None, y0=None, x1=None, y1=None, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.BboxBase A Bbox where some elements may be locked at certain values. When the child bounding box changes, the bounds of this bbox will update accordingly with the exception of the locked elements.  Parameters 
+ 
+bboxBbox
+
+
+The child bounding box to wrap.  
+x0float or None
+
+
+The locked value for x0, or None to leave unlocked.  
+y0float or None
+
+
+The locked value for y0, or None to leave unlocked.  
+x1float or None
+
+
+The locked value for x1, or None to leave unlocked.  
+y1float or None
+
+
+The locked value for y1, or None to leave unlocked.       __init__(bbox, x0=None, y0=None, x1=None, y1=None, **kwargs)[source]
+ 
+ Parameters 
+ 
+bboxBbox
+
+
+The child bounding box to wrap.  
+x0float or None
+
+
+The locked value for x0, or None to leave unlocked.  
+y0float or None
+
+
+The locked value for y0, or None to leave unlocked.  
+x1float or None
+
+
+The locked value for x1, or None to leave unlocked.  
+y1float or None
+
+
+The locked value for y1, or None to leave unlocked.     
+   __module__='matplotlib.transforms'
+
+   __str__()[source]
+ 
+Return str(self). 
+   get_points()[source]
+
+   propertylocked_x0
+ 
+float or None: The value used for the locked x0. 
+   propertylocked_x1
+ 
+float or None: The value used for the locked x1. 
+   propertylocked_y0
+ 
+float or None: The value used for the locked y0. 
+   propertylocked_y1
+ 
+float or None: The value used for the locked y1.

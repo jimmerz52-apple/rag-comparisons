@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.mixture.gaussianmixture#sklearn.mixture.GaussianMixture.score_samples
+
+score_samples(X) [source]
+ 
+Compute the weighted log probabilities for each sample.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+List of n_features-dimensional data points. Each row corresponds to a single data point.    Returns 
+ 
+log_probarray, shape (n_samples,) 
+
+Log probabilities of each data point in X.

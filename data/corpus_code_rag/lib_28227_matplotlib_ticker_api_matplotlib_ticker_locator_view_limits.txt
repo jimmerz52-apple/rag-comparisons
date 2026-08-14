@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.Locator.view_limits
+
+view_limits(vmin, vmax)[source]
+ 
+Select a scale for the range from vmin to vmax. Subclasses should override this method to change locator behaviour.

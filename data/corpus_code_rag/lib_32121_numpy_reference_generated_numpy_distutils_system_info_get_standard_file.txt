@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.system_info.get_standard_file
+
+numpy.distutils.system_info.get_standard_file   distutils.system_info.get_standard_file(fname)[source]
+ 
+Returns a list of files named ‘fname’ from 1) System-wide directory (directory-location of this module) 2) Users HOME directory (os.environ[‘HOME’]) 3) Local directory

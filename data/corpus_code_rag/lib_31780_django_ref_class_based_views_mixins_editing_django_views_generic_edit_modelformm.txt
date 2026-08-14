@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ModelFormMixin.get_success_url
+
+get_success_url()  
+Determine the URL to redirect to when the form is successfully validated. Returns django.views.generic.edit.ModelFormMixin.success_url if it is provided; otherwise, attempts to use the get_absolute_url() of the object.

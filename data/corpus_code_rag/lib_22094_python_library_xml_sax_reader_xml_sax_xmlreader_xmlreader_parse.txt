@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.XMLReader.parse
+
+XMLReader.parse(source)  
+Process an input source, producing SAX events. The source object can be a system identifier (a string identifying the input source – typically a file name or a URL), a pathlib.Path or path-like object, or an InputSource object. When parse() returns, the input is completely processed, and the parser object can be discarded or reset.  Changed in version 3.5: Added support of character streams.   Changed in version 3.8: Added support of path-like objects.

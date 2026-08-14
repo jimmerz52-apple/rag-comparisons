@@ -1,0 +1,5 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG.add_node
+
+add_node(n, attr_dict=None, **attr) [source]
+ 
+Add node n while updating the maximum node id.  See also networkx.Graph.add_node().

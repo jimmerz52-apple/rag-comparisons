@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.premul_alpha
+
+premul_alpha() 
+ returns a Color where the r,g,b components have been multiplied by the alpha. premul_alpha() -> Color  Returns a new Color where each of the red, green and blue colour channels have been multiplied by the alpha channel of the original color. The alpha channel remains unchanged. This is useful when working with the BLEND_PREMULTIPLIED blending mode flag for pygame.Surface.blit(), which assumes that all surfaces using it are using pre-multiplied alpha colors.  New in pygame 2.0.0.

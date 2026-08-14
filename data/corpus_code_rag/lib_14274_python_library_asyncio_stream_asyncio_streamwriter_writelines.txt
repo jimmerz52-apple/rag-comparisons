@@ -1,0 +1,5 @@
+# python.library.asyncio-stream#asyncio.StreamWriter.writelines
+
+writelines(data)  
+The method writes a list (or any iterable) of bytes to the underlying socket immediately. If that fails, the data is queued in an internal write buffer until it can be sent. The method should be used along with the drain() method: stream.writelines(lines)
+await stream.drain()

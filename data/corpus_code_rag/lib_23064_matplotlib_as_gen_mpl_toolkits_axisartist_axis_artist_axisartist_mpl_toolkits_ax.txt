@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axisartist#mpl_toolkits.axisartist.axis_artist.AxisArtist.get_helper
+
+get_helper()[source]
+ 
+Return axis artist helper instance.

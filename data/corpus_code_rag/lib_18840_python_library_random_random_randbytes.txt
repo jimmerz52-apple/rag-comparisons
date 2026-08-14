@@ -1,0 +1,4 @@
+# python.library.random#random.randbytes
+
+random.randbytes(n)  
+Generate n random bytes. This method should not be used for generating security tokens. Use secrets.token_bytes() instead.  New in version 3.9.

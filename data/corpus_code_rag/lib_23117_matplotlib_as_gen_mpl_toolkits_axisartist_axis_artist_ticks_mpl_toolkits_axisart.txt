@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.ticks#mpl_toolkits.axisartist.axis_artist.Ticks.set_color
+
+set_color(color)[source]
+ 
+Set the color of the line.  Parameters 
+ 
+colorcolor

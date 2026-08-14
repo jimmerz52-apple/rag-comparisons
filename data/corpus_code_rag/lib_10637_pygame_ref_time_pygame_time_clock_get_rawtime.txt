@@ -1,0 +1,4 @@
+# pygame.ref.time#pygame.time.Clock.get_rawtime
+
+get_rawtime() 
+ actual time used in the previous tick get_rawtime() -> milliseconds  Similar to Clock.get_time(), but does not include any time used while Clock.tick() was delaying to limit the framerate.

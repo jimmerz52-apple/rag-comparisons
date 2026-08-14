@@ -1,0 +1,5 @@
+# matplotlib.backend_template_api#matplotlib.backends.backend_template.FigureManagerTemplate
+
+classmatplotlib.backends.backend_template.FigureManagerTemplate(canvas, num)[source]
+ 
+Bases: matplotlib.backend_bases.FigureManagerBase Helper class for pyplot mode, wraps everything up into a neat bundle. For non-interactive backends, the base class is sufficient.

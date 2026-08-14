@@ -1,0 +1,45 @@
+# matplotlib.cbook_api#matplotlib.cbook.CallbackRegistry
+
+classmatplotlib.cbook.CallbackRegistry(exception_handler=<function _exception_printer>)[source]
+ 
+Bases: object Handle registering, processing, blocking, and disconnecting for a set of signals and callbacks: >>> def oneat(x):
+...    print('eat', x)
+>>> def ondrink(x):
+...    print('drink', x)
+ >>> from matplotlib.cbook import CallbackRegistry
+>>> callbacks = CallbackRegistry()
+ >>> id_eat = callbacks.connect('eat', oneat)
+>>> id_drink = callbacks.connect('drink', ondrink)
+ >>> callbacks.process('drink', 123)
+drink 123
+>>> callbacks.process('eat', 456)
+eat 456
+>>> callbacks.process('be merry', 456) # nothing will be called
+ >>> callbacks.disconnect(id_eat)
+>>> callbacks.process('eat', 456)      # nothing will be called
+ >>> with callbacks.blocked(signal='drink'):
+...     callbacks.process('drink', 123) # nothing will be called
+>>> callbacks.process('drink', 123)
+drink 123
+ In practice, one should always disconnect all callbacks when they are no longer needed to avoid dangling references (and thus memory leaks). However, real code in Matplotlib rarely does so, and due to its design, it is rather difficult to place this kind of code. To get around this, and prevent this class of memory leaks, we instead store weak references to bound methods only, so when the destination object needs to die, the CallbackRegistry won't keep it alive.  Parameters 
+ 
+exception_handlercallable, optional
+
+
+If not None, exception_handler must be a function that takes an Exception as single parameter. It gets called with any Exception raised by the callbacks during CallbackRegistry.process, and may either re-raise the exception or handle it in another manner. The default handler prints the exception (with traceback.print_exc) if an interactive event loop is running; it re-raises the exception if no interactive event loop is running.       blocked(*, signal=None)
+ 
+Block callback signals from being processed. A context manager to temporarily block/disable callback signals from being processed by the registered listeners.  Parameters 
+ 
+signalstr, optional
+
+
+The callback signal to block. The default is to block all signals.     
+   connect(signal, func)[source]
+ 
+Register func to be called when signal signal is generated. 
+   disconnect(cid)[source]
+ 
+Disconnect the callback registered with callback id cid. No error is raised if such a callback does not exist. 
+   process(s, *args, **kwargs)[source]
+ 
+Process signal s. All of the functions registered to receive callbacks on s will be called with *args and **kwargs.

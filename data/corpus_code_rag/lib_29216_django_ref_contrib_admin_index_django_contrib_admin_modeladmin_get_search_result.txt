@@ -1,0 +1,20 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_search_results
+
+ModelAdmin.get_search_results(request, queryset, search_term)  
+The get_search_results method modifies the list of objects displayed into those that match the provided search term. It accepts the request, a queryset that applies the current filters, and the user-provided search term. It returns a tuple containing a queryset modified to implement the search, and a boolean indicating if the results may contain duplicates. The default implementation searches the fields named in ModelAdmin.search_fields. This method may be overridden with your own custom search method. For example, you might wish to search by an integer field, or use an external tool such as Solr or Haystack. You must establish if the queryset changes implemented by your search method may introduce duplicates into the results, and return True in the second element of the return value. For example, to search by name and age, you could use: class PersonAdmin(admin.ModelAdmin):
+    list_display = ('name', 'age')
+    search_fields = ('name',)
+
+    def get_search_results(self, request, queryset, search_term):
+        queryset, may_have_duplicates = super().get_search_results(
+            request, queryset, search_term,
+        )
+        try:
+            search_term_as_int = int(search_term)
+        except ValueError:
+            pass
+        else:
+            queryset |= self.model.objects.filter(age=search_term_as_int)
+        return queryset, may_have_duplicates
+ This implementation is more efficient than search_fields =
+('name', '=age') which results in a string comparison for the numeric field, for example ... OR UPPER("polls_choice"."votes"::text) = UPPER('4') on PostgreSQL.

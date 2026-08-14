@@ -1,0 +1,32 @@
+# python.library.ipaddress#ipaddress.IPv4Interface
+
+class ipaddress.IPv4Interface(address)  
+Construct an IPv4 interface. The meaning of address is as in the constructor of IPv4Network, except that arbitrary host addresses are always accepted. IPv4Interface is a subclass of IPv4Address, so it inherits all the attributes from that class. In addition, the following attributes are available:  
+ip  
+The address (IPv4Address) without network information. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.ip
+IPv4Address('192.0.2.5')
+ 
+  
+network  
+The network (IPv4Network) this interface belongs to. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.network
+IPv4Network('192.0.2.0/24')
+ 
+  
+with_prefixlen  
+A string representation of the interface with the mask in prefix notation. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.with_prefixlen
+'192.0.2.5/24'
+ 
+  
+with_netmask  
+A string representation of the interface with the network as a net mask. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.with_netmask
+'192.0.2.5/255.255.255.0'
+ 
+  
+with_hostmask  
+A string representation of the interface with the network as a host mask. >>> interface = IPv4Interface('192.0.2.5/24')
+>>> interface.with_hostmask
+'192.0.2.5/0.0.0.255'

@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.colors.to_rgb
+
+matplotlib.colors.to_rgb   matplotlib.colors.to_rgb(c)[source]
+ 
+Convert c to an RGB color, silently dropping the alpha channel. 
+  Examples using matplotlib.colors.to_rgb
+ 
+   List of named colors

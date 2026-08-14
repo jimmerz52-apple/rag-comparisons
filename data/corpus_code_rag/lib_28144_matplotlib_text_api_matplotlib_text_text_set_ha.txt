@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_ha
+
+set_ha(align)[source]
+ 
+Alias for set_horizontalalignment.

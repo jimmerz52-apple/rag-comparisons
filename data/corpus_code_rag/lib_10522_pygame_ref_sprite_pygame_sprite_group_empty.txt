@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Group.empty
+
+empty() 
+ remove all Sprites empty() -> None  Removes all Sprites from this Group.

@@ -1,0 +1,6 @@
+# flask.api.index#flask.Response.get_data
+
+get_data(as_text=False)  
+The string representation of the response body. Whenever you call this property the response iterable is encoded and flattened. This can lead to unwanted behavior if you stream big data. This behavior can be disabled by setting implicit_sequence_conversion to False. If as_text is set to True the return value will be a decoded string.  Changelog New in version 0.9.   Parameters 
+as_text (bool) –   Return type 
+Union[bytes, str]

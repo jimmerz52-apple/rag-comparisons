@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.identchars
+
+Cmd.identchars  
+The string of characters accepted for the command prefix.

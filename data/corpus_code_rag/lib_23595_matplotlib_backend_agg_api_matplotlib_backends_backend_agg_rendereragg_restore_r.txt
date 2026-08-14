@@ -1,0 +1,8 @@
+# matplotlib.backend_agg_api#matplotlib.backends.backend_agg.RendererAgg.restore_region
+
+restore_region(region, bbox=None, xy=None)[source]
+ 
+Restore the saved region. If bbox (instance of BboxBase, or its extents) is given, only the region specified by the bbox will be restored. xy (a pair of floats) optionally specifies the new position (the LLC of the original region, not the LLC of the bbox) where the region will be restored. >>> region = renderer.copy_from_bbox()
+>>> x1, y1, x2, y2 = region.get_extents()
+>>> renderer.restore_region(region, bbox=(x1+dx, y1, x2, y2),
+...                         xy=(x1-dx, y1))

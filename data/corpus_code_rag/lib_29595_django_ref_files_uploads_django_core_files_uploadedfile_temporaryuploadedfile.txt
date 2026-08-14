@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.TemporaryUploadedFile
+
+class TemporaryUploadedFile  
+A file uploaded to a temporary location (i.e. stream-to-disk). This class is used by the TemporaryFileUploadHandler. In addition to the methods from UploadedFile, it has one additional method:

@@ -1,0 +1,4 @@
+# python.library.array#array.array.remove
+
+array.remove(x)  
+Remove the first occurrence of x from the array.

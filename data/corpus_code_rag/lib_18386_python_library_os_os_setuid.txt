@@ -1,0 +1,4 @@
+# python.library.os#os.setuid
+
+os.setuid(uid)  
+Set the current process’s user id. Availability: Unix.

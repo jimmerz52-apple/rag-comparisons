@@ -1,0 +1,152 @@
+# sklearn.modules.generated.sklearn.covariance.oas
+
+sklearn.covariance.OAS  
+class sklearn.covariance.OAS(*, store_precision=True, assume_centered=False) [source]
+ 
+Oracle Approximating Shrinkage Estimator Read more in the User Guide. OAS is a particular form of shrinkage described in “Shrinkage Algorithms for MMSE Covariance Estimation” Chen et al., IEEE Trans. on Sign. Proc., Volume 58, Issue 10, October 2010. The formula used here does not correspond to the one given in the article. In the original article, formula (23) states that 2/p is multiplied by Trace(cov*cov) in both the numerator and denominator, but this operation is omitted because for a large p, the value of 2/p is so small that it doesn’t affect the value of the estimator.  Parameters 
+ 
+store_precisionbool, default=True 
+
+Specify if the estimated precision is stored.  
+assume_centeredbool, default=False 
+
+If True, data will not be centered before computation. Useful when working with data whose mean is almost, but not exactly zero. If False (default), data will be centered before computation.    Attributes 
+ 
+covariance_ndarray of shape (n_features, n_features) 
+
+Estimated covariance matrix.  
+location_ndarray of shape (n_features,) 
+
+Estimated location, i.e. the estimated mean.  
+precision_ndarray of shape (n_features, n_features) 
+
+Estimated pseudo inverse matrix. (stored only if store_precision is True)  
+shrinkage_float 
+
+coefficient in the convex combination used for the computation of the shrunk estimate. Range is [0, 1].     Notes The regularised covariance is: (1 - shrinkage) * cov + shrinkage * mu * np.identity(n_features) where mu = trace(cov) / n_features and shrinkage is given by the OAS formula (see References) References “Shrinkage Algorithms for MMSE Covariance Estimation” Chen et al., IEEE Trans. on Sign. Proc., Volume 58, Issue 10, October 2010. Examples >>> import numpy as np
+>>> from sklearn.covariance import OAS
+>>> from sklearn.datasets import make_gaussian_quantiles
+>>> real_cov = np.array([[.8, .3],
+...                      [.3, .4]])
+>>> rng = np.random.RandomState(0)
+>>> X = rng.multivariate_normal(mean=[0, 0],
+...                             cov=real_cov,
+...                             size=500)
+>>> oas = OAS().fit(X)
+>>> oas.covariance_
+array([[0.7533..., 0.2763...],
+       [0.2763..., 0.3964...]])
+>>> oas.precision_
+array([[ 1.7833..., -1.2431... ],
+       [-1.2431...,  3.3889...]])
+>>> oas.shrinkage_
+0.0195...
+ Methods  
+error_norm(comp_cov[, norm, scaling, squared]) Computes the Mean Squared Error between two covariance estimators.  
+fit(X[, y]) Fit the Oracle Approximating Shrinkage covariance model according to the given training data and parameters.  
+get_params([deep]) Get parameters for this estimator.  
+get_precision() Getter for the precision matrix.  
+mahalanobis(X) Computes the squared Mahalanobis distances of given observations.  
+score(X_test[, y]) Computes the log-likelihood of a Gaussian data set with self.covariance_ as an estimator of its covariance matrix.  
+set_params(**params) Set the parameters of this estimator.    
+error_norm(comp_cov, norm='frobenius', scaling=True, squared=True) [source]
+ 
+Computes the Mean Squared Error between two covariance estimators. (In the sense of the Frobenius norm).  Parameters 
+ 
+comp_covarray-like of shape (n_features, n_features) 
+
+The covariance to compare with.  
+norm{“frobenius”, “spectral”}, default=”frobenius” 
+
+The type of norm used to compute the error. Available error types: - ‘frobenius’ (default): sqrt(tr(A^t.A)) - ‘spectral’: sqrt(max(eigenvalues(A^t.A)) where A is the error (comp_cov - self.covariance_).  
+scalingbool, default=True 
+
+If True (default), the squared error norm is divided by n_features. If False, the squared error norm is not rescaled.  
+squaredbool, default=True 
+
+Whether to compute the squared error norm or the error norm. If True (default), the squared error norm is returned. If False, the error norm is returned.    Returns 
+ 
+resultfloat 
+
+The Mean Squared Error (in the sense of the Frobenius norm) between self and comp_cov covariance estimators.     
+  
+fit(X, y=None) [source]
+ 
+Fit the Oracle Approximating Shrinkage covariance model according to the given training data and parameters.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training data, where n_samples is the number of samples and n_features is the number of features.  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+selfobject 
+   
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+get_precision() [source]
+ 
+Getter for the precision matrix.  Returns 
+ 
+precision_array-like of shape (n_features, n_features) 
+
+The precision matrix associated to the current covariance object.     
+  
+mahalanobis(X) [source]
+ 
+Computes the squared Mahalanobis distances of given observations.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The observations, the Mahalanobis distances of the which we compute. Observations are assumed to be drawn from the same distribution than the data used in fit.    Returns 
+ 
+distndarray of shape (n_samples,) 
+
+Squared Mahalanobis distances of the observations.     
+  
+score(X_test, y=None) [source]
+ 
+Computes the log-likelihood of a Gaussian data set with self.covariance_ as an estimator of its covariance matrix.  Parameters 
+ 
+X_testarray-like of shape (n_samples, n_features) 
+
+Test data of which we compute the likelihood, where n_samples is the number of samples and n_features is the number of features. X_test is assumed to be drawn from the same distribution than the data used in fit (including centering).  
+yIgnored 
+
+Not used, present for API consistency by convention.    Returns 
+ 
+resfloat 
+
+The likelihood of the data set with self.covariance_ as an estimator of its covariance matrix.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+ 
+ Examples using sklearn.covariance.OAS
+ 
+  Normal, Ledoit-Wolf and OAS Linear Discriminant Analysis for classification  
+
+  Ledoit-Wolf vs OAS estimation  
+
+  Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood

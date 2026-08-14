@@ -1,0 +1,11 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.align_labels
+
+align_labels(axs=None)[source]
+ 
+Align the xlabels and ylabels of subplots with the same subplots row or column (respectively) if label alignment is being done automatically (i.e. the label position is not manually set). Alignment persists for draw events after this is called.  Parameters 
+ 
+axslist of Axes
+
+
+Optional list (or ndarray) of Axes to align the labels. Default is to align all Axes on the figure.      See also  matplotlib.figure.Figure.align_xlabels
+matplotlib.figure.Figure.align_ylabels

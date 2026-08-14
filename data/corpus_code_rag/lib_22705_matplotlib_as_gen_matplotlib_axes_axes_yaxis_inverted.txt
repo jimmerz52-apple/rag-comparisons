@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.yaxis_inverted
+
+matplotlib.axes.Axes.yaxis_inverted   Axes.yaxis_inverted()[source]
+ 
+Return whether the yaxis is oriented in the "inverse" direction. The "normal" direction is increasing to the right for the x-axis and to the top for the y-axis; the "inverse" direction is increasing to the left for the x-axis and to the bottom for the y-axis.

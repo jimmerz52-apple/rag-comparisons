@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.animation#matplotlib.animation.Animation.resume
+
+resume()[source]
+ 
+Resume the animation.

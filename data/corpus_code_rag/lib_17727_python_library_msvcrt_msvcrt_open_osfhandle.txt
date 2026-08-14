@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.open_osfhandle
+
+msvcrt.open_osfhandle(handle, flags)  
+Create a C runtime file descriptor from the file handle handle. The flags parameter should be a bitwise OR of os.O_APPEND, os.O_RDONLY, and os.O_TEXT. The returned file descriptor may be used as a parameter to os.fdopen() to create a file object. Raises an auditing event msvcrt.open_osfhandle with arguments handle, flags.

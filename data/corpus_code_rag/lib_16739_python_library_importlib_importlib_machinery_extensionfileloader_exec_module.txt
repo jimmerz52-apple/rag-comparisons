@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.exec_module
+
+exec_module(module)  
+Initializes the given module object in accordance with PEP 489.  New in version 3.5.

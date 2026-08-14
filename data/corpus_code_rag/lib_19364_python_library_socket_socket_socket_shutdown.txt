@@ -1,0 +1,4 @@
+# python.library.socket#socket.socket.shutdown
+
+socket.shutdown(how)  
+Shut down one or both halves of the connection. If how is SHUT_RD, further receives are disallowed. If how is SHUT_WR, further sends are disallowed. If how is SHUT_RDWR, further sends and receives are disallowed.

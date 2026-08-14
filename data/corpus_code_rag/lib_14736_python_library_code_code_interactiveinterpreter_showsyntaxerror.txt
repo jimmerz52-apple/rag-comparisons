@@ -1,0 +1,4 @@
+# python.library.code#code.InteractiveInterpreter.showsyntaxerror
+
+InteractiveInterpreter.showsyntaxerror(filename=None)  
+Display the syntax error that just occurred. This does not display a stack trace because there isn’t one for syntax errors. If filename is given, it is stuffed into the exception instead of the default filename provided by Python’s parser, because it always uses '<string>' when reading from a string. The output is written by the write() method.

@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.get_gencode_flags
+
+torch.cuda.get_gencode_flags() [source]
+ 
+Returns NVCC gencode flags this library were compiled with.

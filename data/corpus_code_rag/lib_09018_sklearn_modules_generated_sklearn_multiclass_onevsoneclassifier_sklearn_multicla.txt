@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsoneclassifier#sklearn.multiclass.OneVsOneClassifier.decision_function
+
+decision_function(X) [source]
+ 
+Decision function for the OneVsOneClassifier. The decision values for the samples are computed by adding the normalized sum of pair-wise classification confidence levels to the votes in order to disambiguate between the decision values when the votes for all the classes are equal leading to a tie.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Yarray-like of shape (n_samples, n_classes) or (n_samples,) for binary classification. 
+
+ Changed in version 0.19: output shape changed to (n_samples,) to conform to scikit-learn conventions for binary classification.

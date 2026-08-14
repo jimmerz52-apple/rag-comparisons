@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.HIGHEST_PROTOCOL
+
+pickle.HIGHEST_PROTOCOL  
+An integer, the highest protocol version available. This value can be passed as a protocol value to functions dump() and dumps() as well as the Pickler constructor.

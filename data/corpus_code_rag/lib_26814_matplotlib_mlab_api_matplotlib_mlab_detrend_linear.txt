@@ -1,0 +1,16 @@
+# matplotlib.mlab_api#matplotlib.mlab.detrend_linear
+
+matplotlib.mlab.detrend_linear(y)[source]
+ 
+Return x minus best fit line; 'linear' detrending.  Parameters 
+ 
+y0-D or 1-D array or sequence
+
+
+Array or sequence containing the data      See also  detrend_mean
+
+Another detrend algorithm.  detrend_none
+
+Another detrend algorithm.  detrend
+
+A wrapper around all the detrend algorithms.

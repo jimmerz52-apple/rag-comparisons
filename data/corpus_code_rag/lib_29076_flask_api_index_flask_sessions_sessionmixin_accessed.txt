@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SessionMixin.accessed
+
+accessed = True  
+Some implementations can detect when session data is read or written and set this when that happens. The mixin default is hard coded to True.

@@ -1,0 +1,10 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.ToolContainerBase.remove_toolitem
+
+remove_toolitem(name)[source]
+ 
+Remove a toolitem from the ToolContainer. This method must get implemented per backend. Called when ToolManager emits a tool_removed_event.  Parameters 
+ 
+namestr
+
+
+Name of the tool to remove.

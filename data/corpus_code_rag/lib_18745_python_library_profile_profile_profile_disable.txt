@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.disable
+
+disable()  
+Stop collecting profiling data. Only in cProfile.

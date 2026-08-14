@@ -1,0 +1,12 @@
+# pygame.ref.mask#pygame.mask.Mask.copy
+
+copy() 
+ Returns a new copy of the mask copy() -> Mask      
+Returns:
+a new copy of this mask, the new mask will have the same width, height, and set/unset bits as the original  
+Return type:
+Mask     Note If a mask subclass needs to copy any instance specific attributes then it should override the __copy__() method. The overridden __copy__() method needs to call super().__copy__() and then copy the required data as in the following example code. class SubMask(pygame.mask.Mask):
+    def __copy__(self):
+        new_mask = super().__copy__()
+        # Do any SubMask attribute copying here.
+        return new_mask   New in pygame 2.0.0.

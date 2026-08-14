@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.update_bbox_position_size
+
+update_bbox_position_size(renderer)[source]
+ 
+Update the location and the size of the bbox. This method should be used when the position and size of the bbox needs to be updated before actually drawing the bbox.

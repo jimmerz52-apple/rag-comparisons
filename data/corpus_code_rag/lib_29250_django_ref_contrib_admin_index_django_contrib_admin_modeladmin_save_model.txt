@@ -1,0 +1,9 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.save_model
+
+ModelAdmin.save_model(request, obj, form, change)  
+The save_model method is given the HttpRequest, a model instance, a ModelForm instance, and a boolean value based on whether it is adding or changing the object. Overriding this method allows doing pre- or post-save operations. Call super().save_model() to save the object using Model.save(). For example to attach request.user to the object prior to saving: from django.contrib import admin
+
+class ArticleAdmin(admin.ModelAdmin):
+    def save_model(self, request, obj, form, change):
+        obj.user = request.user
+        super().save_model(request, obj, form, change)

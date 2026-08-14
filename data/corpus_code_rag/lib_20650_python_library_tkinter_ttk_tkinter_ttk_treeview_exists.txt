@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.exists
+
+exists(item)  
+Returns True if the specified item is present in the tree.

@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.unescape_doctest
+
+matplotlib.sphinxext.plot_directive.unescape_doctest(text)[source]
+ 
+[Deprecated] Extract code from a piece of text, which contains either Python code or doctests. Notes  Deprecated since version 3.5.

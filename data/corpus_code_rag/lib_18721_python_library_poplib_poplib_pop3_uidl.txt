@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.uidl
+
+POP3.uidl(which=None)  
+Return message digest (unique id) list. If which is specified, result contains the unique id for that message in the form 'response mesgnum uid, otherwise result is list (response, ['mesgnum uid', ...], octets).

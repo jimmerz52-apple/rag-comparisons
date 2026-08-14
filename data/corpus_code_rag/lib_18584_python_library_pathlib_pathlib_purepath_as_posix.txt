@@ -1,0 +1,8 @@
+# python.library.pathlib#pathlib.PurePath.as_posix
+
+PurePath.as_posix()  
+Return a string representation of the path with forward slashes (/): >>> p = PureWindowsPath('c:\\windows')
+>>> str(p)
+'c:\\windows'
+>>> p.as_posix()
+'c:/windows'

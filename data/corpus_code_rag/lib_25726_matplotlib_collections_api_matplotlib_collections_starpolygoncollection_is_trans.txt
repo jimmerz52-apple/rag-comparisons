@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.StarPolygonCollection.is_transform_set
+
+is_transform_set()[source]
+ 
+Return whether the Artist has an explicitly set transform. This is True after set_transform has been called.

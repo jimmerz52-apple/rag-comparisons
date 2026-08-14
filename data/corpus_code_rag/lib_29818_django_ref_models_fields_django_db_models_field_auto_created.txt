@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.auto_created
+
+Field.auto_created  
+Boolean flag that indicates if the field was automatically created, such as the OneToOneField used by model inheritance.

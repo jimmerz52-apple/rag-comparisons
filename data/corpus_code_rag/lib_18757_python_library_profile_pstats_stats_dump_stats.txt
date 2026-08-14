@@ -1,0 +1,4 @@
+# python.library.profile#pstats.Stats.dump_stats
+
+dump_stats(filename)  
+Save the data loaded into the Stats object to a file named filename. The file is created if it does not exist, and is overwritten if it already exists. This is equivalent to the method of the same name on the profile.Profile and cProfile.Profile classes.

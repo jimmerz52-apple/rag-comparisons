@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.covariance.ellipticenvelope#sklearn.covariance.EllipticEnvelope.score_samples
+
+score_samples(X) [source]
+ 
+Compute the negative Mahalanobis distances.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+negative_mahal_distancesarray-like of shape (n_samples,) 
+
+Opposite of the Mahalanobis distances.

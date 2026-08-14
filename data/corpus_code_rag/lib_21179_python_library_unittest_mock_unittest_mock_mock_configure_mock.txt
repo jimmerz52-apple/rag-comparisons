@@ -1,0 +1,23 @@
+# python.library.unittest.mock#unittest.mock.Mock.configure_mock
+
+configure_mock(**kwargs)  
+Set attributes on the mock through keyword arguments. Attributes plus return values and side effects can be set on child mocks using standard dot notation and unpacking a dictionary in the method call: >>> mock = Mock()
+>>> attrs = {'method.return_value': 3, 'other.side_effect': KeyError}
+>>> mock.configure_mock(**attrs)
+>>> mock.method()
+3
+>>> mock.other()
+Traceback (most recent call last):
+  ...
+KeyError
+ The same thing can be achieved in the constructor call to mocks: >>> attrs = {'method.return_value': 3, 'other.side_effect': KeyError}
+>>> mock = Mock(some_attribute='eggs', **attrs)
+>>> mock.some_attribute
+'eggs'
+>>> mock.method()
+3
+>>> mock.other()
+Traceback (most recent call last):
+  ...
+KeyError
+ configure_mock() exists to make it easier to do configuration after the mock has been created.

@@ -1,0 +1,10 @@
+# torch.distributed#torch.distributed.send
+
+torch.distributed.send(tensor, dst, group=None, tag=0) [source]
+ 
+Sends a tensor synchronously.  Parameters 
+ 
+tensor (Tensor) – Tensor to send. 
+dst (int) – Destination rank. 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+tag (int, optional) – Tag to match send with remote recv

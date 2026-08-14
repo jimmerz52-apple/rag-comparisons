@@ -1,0 +1,6 @@
+# torch.optim#torch.optim.lr_scheduler.MultiplicativeLR.load_state_dict
+
+load_state_dict(state_dict) [source]
+ 
+Loads the schedulers state.  Parameters 
+state_dict (dict) – scheduler state. Should be an object returned from a call to state_dict().

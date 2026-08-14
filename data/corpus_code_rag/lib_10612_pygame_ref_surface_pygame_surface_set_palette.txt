@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.set_palette
+
+set_palette() 
+ set the color palette for an 8-bit Surface set_palette([RGB, RGB, RGB, ...]) -> None  Set the full palette for an 8-bit Surface. This will replace the colors in the existing palette. A partial palette can be passed and only the first colors in the original palette will be changed. This function has no effect on a Surface with more than 8-bits per pixel.

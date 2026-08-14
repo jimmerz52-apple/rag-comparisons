@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.FilePathField.path
+
+path  
+The absolute path to the directory whose contents you want listed. This directory must exist.

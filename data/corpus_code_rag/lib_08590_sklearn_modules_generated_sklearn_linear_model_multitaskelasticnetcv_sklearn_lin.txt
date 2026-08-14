@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.linear_model.multitaskelasticnetcv#sklearn.linear_model.MultiTaskElasticNetCV.fit
+
+fit(X, y) [source]
+ 
+Fit linear model with coordinate descent. Fit is on grid of alphas and best alpha estimated by cross-validation.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data. Pass directly as Fortran-contiguous data to avoid unnecessary memory duplication. If y is mono-output, X can be sparse.  
+yarray-like of shape (n_samples,) or (n_samples, n_targets) 
+
+Target values.

@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.CreateRecord
+
+msilib.CreateRecord(count)  
+Return a new record object by calling MSICreateRecord(). count is the number of fields of the record.

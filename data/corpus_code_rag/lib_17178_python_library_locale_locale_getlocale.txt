@@ -1,0 +1,4 @@
+# python.library.locale#locale.getlocale
+
+locale.getlocale(category=LC_CTYPE)  
+Returns the current setting for the given locale category as sequence containing language code, encoding. category may be one of the LC_* values except LC_ALL. It defaults to LC_CTYPE. Except for the code 'C', the language code corresponds to RFC 1766. language code and encoding may be None if their values cannot be determined.

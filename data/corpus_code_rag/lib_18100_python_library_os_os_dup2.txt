@@ -1,0 +1,4 @@
+# python.library.os#os.dup2
+
+os.dup2(fd, fd2, inheritable=True)  
+Duplicate file descriptor fd to fd2, closing the latter first if necessary. Return fd2. The new file descriptor is inheritable by default or non-inheritable if inheritable is False.  Changed in version 3.4: Add the optional inheritable parameter.   Changed in version 3.7: Return fd2 on success. Previously, None was always returned.

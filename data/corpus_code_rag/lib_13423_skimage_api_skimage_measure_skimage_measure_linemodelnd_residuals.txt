@@ -1,0 +1,16 @@
+# skimage.api.skimage.measure#skimage.measure.LineModelND.residuals
+
+residuals(data, params=None) [source]
+ 
+Determine residuals of data to model. For each point, the shortest (orthogonal) distance to the line is returned. It is obtained by projecting the data onto the line.  Parameters 
+ 
+data(N, dim) array 
+
+N points in a space of dimension dim.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+residuals(N, ) array 
+
+Residual for each data point.

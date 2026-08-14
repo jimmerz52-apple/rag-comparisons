@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.registerResult
+
+unittest.registerResult(result)  
+Register a TestResult object for control-c handling. Registering a result stores a weak reference to it, so it doesn’t prevent the result from being garbage collected. Registering a TestResult object has no side-effects if control-c handling is not enabled, so test frameworks can unconditionally register all results they create independently of whether or not handling is enabled.

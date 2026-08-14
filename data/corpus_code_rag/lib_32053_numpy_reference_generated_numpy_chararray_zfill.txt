@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.zfill
+
+numpy.chararray.zfill method   chararray.zfill(width)[source]
+ 
+Return the numeric string left-filled with zeros in a string of length width.  See also  char.zfill

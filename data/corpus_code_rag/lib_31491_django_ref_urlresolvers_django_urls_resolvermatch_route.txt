@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.route
+
+route  
+The route of the matching URL pattern. For example, if path('users/<id>/', ...) is the matching pattern, route will contain 'users/<id>/'.

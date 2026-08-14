@@ -1,0 +1,50 @@
+# matplotlib._as_gen.matplotlib.pyplot.ylabel
+
+matplotlib.pyplot.ylabel   matplotlib.pyplot.ylabel(ylabel, fontdict=None, labelpad=None, *, loc=None, **kwargs)[source]
+ 
+Set the label for the y-axis.  Parameters 
+ 
+ylabelstr
+
+
+The label text.  
+labelpadfloat, default: rcParams["axes.labelpad"] (default: 4.0)
+
+
+Spacing in points from the Axes bounding box including ticks and tick labels. If None, the previous value is left as is.  
+loc{'bottom', 'center', 'top'}, default: rcParams["yaxis.labellocation"] (default: 'center')
+
+
+The label position. This is a high-level alternative for passing parameters y and horizontalalignment.    Other Parameters 
+ 
+**kwargsText properties
+
+
+Text properties control the appearance of the label.      See also  text
+
+Documents the properties supported by Text.    
+  Examples using matplotlib.pyplot.ylabel
+ 
+   Scatter Symbol   
+
+   Multiple subplots   
+
+   Controlling style of text and labels using a dictionary   
+
+   Pyplot Mathtext   
+
+   Pyplot Simple   
+
+   Pyplot Text   
+
+   Solarized Light stylesheet   
+
+   Findobj Demo   
+
+   Table Demo   
+
+   Custom scale   
+
+   Basic Usage   
+
+   Pyplot tutorial

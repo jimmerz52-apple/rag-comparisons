@@ -1,0 +1,6 @@
+# django.ref.forms.widgets#django.forms.ClearableFileInput
+
+class ClearableFileInput  
+ 
+template_name: 'django/forms/widgets/clearable_file_input.html'
+ Renders as: <input type="file" ...> with an additional checkbox input to clear the field’s value, if the field is not required and has initial data.

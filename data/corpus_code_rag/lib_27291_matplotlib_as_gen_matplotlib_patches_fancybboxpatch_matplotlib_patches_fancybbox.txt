@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.patches.fancybboxpatch#matplotlib.patches.FancyBboxPatch.set_mutation_scale
+
+set_mutation_scale(scale)[source]
+ 
+Set the mutation scale.  Parameters 
+ 
+scalefloat

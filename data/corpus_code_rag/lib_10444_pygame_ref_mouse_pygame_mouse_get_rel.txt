@@ -1,0 +1,4 @@
+# pygame.ref.mouse#pygame.mouse.get_rel
+
+pygame.mouse.get_rel() 
+ get the amount of mouse movement get_rel() -> (x, y)  Returns the amount of movement in x and y since the previous call to this function. The relative movement of the mouse cursor is constrained to the edges of the screen, but see the virtual input mouse mode for a way around this. Virtual input mode is described at the top of the page.

@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.next
+
+next(item)  
+Returns the identifier of item’s next sibling, or ‘’ if item is the last child of its parent.

@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGABRT
+
+signal.SIGABRT  
+Abort signal from abort(3).

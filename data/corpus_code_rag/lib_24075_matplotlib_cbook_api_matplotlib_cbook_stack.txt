@@ -1,0 +1,34 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack
+
+classmatplotlib.cbook.Stack(default=None)[source]
+ 
+Bases: object Stack of elements with a movable cursor. Mimics home/back/forward in a web browser.   back()[source]
+ 
+Move the position back and return the current element. 
+   bubble(o)[source]
+ 
+Raise all references of o to the top of the stack, and return it.  Raises 
+ ValueError
+
+If o is not in the stack.     
+   clear()[source]
+ 
+Empty the stack. 
+   empty()[source]
+ 
+Return whether the stack is empty. 
+   forward()[source]
+ 
+Move the position forward and return the current element. 
+   home()[source]
+ 
+Push the first element onto the top of the stack. The first element is returned. 
+   push(o)[source]
+ 
+Push o to the stack at current position. Discard all later elements. o is returned. 
+   remove(o)[source]
+ 
+Remove o from the stack.  Raises 
+ ValueError
+
+If o is not in the stack.

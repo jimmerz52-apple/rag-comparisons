@@ -1,0 +1,4 @@
+# python.library.os#os.strerror
+
+os.strerror(code)  
+Return the error message corresponding to the error code in code. On platforms where strerror() returns NULL when given an unknown error number, ValueError is raised.

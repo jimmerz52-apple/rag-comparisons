@@ -1,0 +1,7 @@
+# django.ref.models.querysets#django.db.models.StdDev
+
+class StdDev(expression, output_field=None, sample=False, filter=None, default=None, **extra)  
+Returns the standard deviation of the data in the provided expression.  Default alias: <field>__stddev
+ Return type: float if input is int, otherwise same as input field, or output_field if supplied  Has one optional argument:  
+sample  
+By default, StdDev returns the population standard deviation. However, if sample=True, the return value will be the sample standard deviation.

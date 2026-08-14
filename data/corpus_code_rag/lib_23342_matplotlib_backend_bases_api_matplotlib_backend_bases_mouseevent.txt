@@ -1,0 +1,26 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.MouseEvent
+
+classmatplotlib.backend_bases.MouseEvent(name, canvas, x, y, button=None, key=None, step=0, dblclick=False, guiEvent=None)[source]
+ 
+Bases: matplotlib.backend_bases.LocationEvent A mouse event ('button_press_event', 'button_release_event', 'scroll_event', 'motion_notify_event'). A MouseEvent has a number of special attributes in addition to those defined by the parent Event and LocationEvent classes. Examples def on_press(event):
+    print('you pressed', event.button, event.xdata, event.ydata)
+
+cid = fig.canvas.mpl_connect('button_press_event', on_press)
+  Attributes 
+ 
+buttonNone or MouseButton or {'up', 'down'}
+
+
+The button pressed. 'up' and 'down' are used for scroll events. Note that LEFT and RIGHT actually refer to the "primary" and "secondary" buttons, i.e. if the user inverts their left and right buttons ("left-handed setting") then the LEFT button will be the one physically on the right.  
+keyNone or str
+
+
+The key pressed when the mouse event triggered, e.g. 'shift'. See KeyEvent.  Warning This key is currently obtained from the last 'key_press_event' or 'key_release_event' that occurred within the canvas. Thus, if the last change of keyboard state occurred while the canvas did not have focus, this attribute will be wrong.   
+stepfloat
+
+
+The number of scroll steps (positive for 'up', negative for 'down'). This applies only to 'scroll_event' and defaults to 0 otherwise.  
+dblclickbool
+
+
+Whether the event is a double-click. This applies only to 'button_press_event' and is False otherwise. In particular, it's not used in 'button_release_event'.

@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.get_created_time
+
+get_created_time(name)  
+Returns a datetime of the creation time of the file. For storage systems unable to return the creation time this will raise NotImplementedError. If USE_TZ is True, returns an aware datetime, otherwise returns a naive datetime in the local timezone.

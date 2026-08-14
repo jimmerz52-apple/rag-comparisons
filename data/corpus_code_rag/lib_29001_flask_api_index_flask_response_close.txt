@@ -1,0 +1,5 @@
+# flask.api.index#flask.Response.close
+
+close()  
+Close the wrapped response if possible. You can also use the object in a with statement which will automatically close it.  Changelog New in version 0.9: Can now be used in a with statement.   Return type 
+None

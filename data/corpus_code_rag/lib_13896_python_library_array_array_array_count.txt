@@ -1,0 +1,4 @@
+# python.library.array#array.array.count
+
+array.count(x)  
+Return the number of occurrences of x in the array.

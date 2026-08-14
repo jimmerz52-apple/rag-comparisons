@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.FileFinder.invalidate_caches
+
+invalidate_caches()  
+Clear out the internal cache.

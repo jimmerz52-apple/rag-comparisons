@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.max
+
+numpy.recarray.max method   recarray.max(axis=None, out=None, keepdims=False, initial=<no value>, where=True)
+ 
+Return the maximum along a given axis. Refer to numpy.amax for full documentation.  See also  numpy.amax
+
+equivalent function

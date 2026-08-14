@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.encoding.force_str
+
+force_str(s, encoding='utf-8', strings_only=False, errors='strict') [source]
+ 
+Similar to smart_str(), except that lazy instances are resolved to strings, rather than kept as lazy objects. If strings_only is True, don’t convert (some) non-string-like objects.

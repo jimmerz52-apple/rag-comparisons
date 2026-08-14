@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.nditer.close
+
+numpy.nditer.close method   nditer.close()
+ 
+Resolve all writeback semantics in writeable operands.  New in version 1.15.0.   See also  Modifying Array Values

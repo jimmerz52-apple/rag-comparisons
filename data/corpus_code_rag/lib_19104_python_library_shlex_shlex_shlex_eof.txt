@@ -1,0 +1,4 @@
+# python.library.shlex#shlex.shlex.eof
+
+shlex.eof  
+Token used to determine end of file. This will be set to the empty string (''), in non-POSIX mode, and to None in POSIX mode.

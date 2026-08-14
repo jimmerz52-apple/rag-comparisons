@@ -1,0 +1,16 @@
+# django.ref.models.fields#django.db.models.ForeignKey.related_query_name
+
+ForeignKey.related_query_name  
+The name to use for the reverse filter name from the target model. It defaults to the value of related_name or default_related_name if set, otherwise it defaults to the name of the model: # Declare the ForeignKey with related_query_name
+class Tag(models.Model):
+    article = models.ForeignKey(
+        Article,
+        on_delete=models.CASCADE,
+        related_name="tags",
+        related_query_name="tag",
+    )
+    name = models.CharField(max_length=255)
+
+# That's now the name of the reverse filter
+Article.objects.filter(tag__name="important")
+ Like related_name, related_query_name supports app label and class interpolation via some special syntax.

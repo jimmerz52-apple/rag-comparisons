@@ -1,0 +1,5 @@
+# torch.optim#torch.optim.lr_scheduler.LambdaLR.state_dict
+
+state_dict() [source]
+ 
+Returns the state of the scheduler as a dict. It contains an entry for every variable in self.__dict__ which is not the optimizer. The learning rate lambda functions will only be saved if they are callable objects and not if they are functions or lambdas. When saving or loading the scheduler, please make sure to also save or load the state of the optimizer.

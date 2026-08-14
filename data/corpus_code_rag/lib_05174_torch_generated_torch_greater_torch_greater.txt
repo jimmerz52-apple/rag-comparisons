@@ -1,0 +1,4 @@
+# torch.generated.torch.greater#torch.greater
+
+torch.greater(input, other, *, out=None) → Tensor  
+Alias for torch.gt().

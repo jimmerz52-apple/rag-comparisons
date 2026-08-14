@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.addExpectedFailure
+
+addExpectedFailure(test, err)  
+Called when the test case test fails or errors, but was marked with the expectedFailure() decorator. The default implementation appends a tuple (test, formatted_err) to the instance’s expectedFailures attribute, where formatted_err is a formatted traceback derived from err.

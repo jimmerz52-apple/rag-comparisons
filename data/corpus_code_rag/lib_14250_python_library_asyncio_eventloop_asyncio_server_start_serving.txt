@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.Server.start_serving
+
+coroutine start_serving()  
+Start accepting connections. This method is idempotent, so it can be called when the server is already being serving. The start_serving keyword-only parameter to loop.create_server() and asyncio.start_server() allows creating a Server object that is not accepting connections initially. In this case Server.start_serving(), or Server.serve_forever() can be used to make the Server start accepting connections.  New in version 3.7.

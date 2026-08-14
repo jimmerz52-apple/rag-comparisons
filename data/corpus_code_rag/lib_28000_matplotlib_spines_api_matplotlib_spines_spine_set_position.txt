@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.set_position
+
+set_position(position)[source]
+ 
+Set the position of the spine. Spine position is specified by a 2 tuple of (position type, amount). The position types are:  'outward': place the spine out from the data area by the specified number of points. (Negative values place the spine inwards.) 'axes': place the spine at the specified Axes coordinate (0 to 1). 'data': place the spine at the specified data coordinate.  Additionally, shorthand notations define a special positions:  'center' -> ('axes', 0.5) 'zero' -> ('data', 0.0)

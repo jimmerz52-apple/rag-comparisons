@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.AppCommand.handle_app_config
+
+AppCommand.handle_app_config(app_config, **options)  
+Perform the command’s actions for app_config, which will be an AppConfig instance corresponding to an application label given on the command line.

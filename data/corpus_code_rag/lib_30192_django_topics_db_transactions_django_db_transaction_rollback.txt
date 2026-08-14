@@ -1,0 +1,3 @@
+# django.topics.db.transactions#django.db.transaction.rollback
+
+rollback(using=None)

@@ -1,0 +1,4 @@
+# python.library.code#code.InteractiveConsole
+
+class code.InteractiveConsole(locals=None, filename="<console>")  
+Closely emulate the behavior of the interactive Python interpreter. This class builds on InteractiveInterpreter and adds prompting using the familiar sys.ps1 and sys.ps2, and input buffering.

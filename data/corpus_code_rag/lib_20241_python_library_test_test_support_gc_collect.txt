@@ -1,0 +1,4 @@
+# python.library.test#test.support.gc_collect
+
+test.support.gc_collect()  
+Force as many objects as possible to be collected. This is needed because timely deallocation is not guaranteed by the garbage collector. This means that __del__ methods may be called later than expected and weakrefs may remain alive for longer than expected.

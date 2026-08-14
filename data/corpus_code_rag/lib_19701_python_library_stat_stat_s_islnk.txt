@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_ISLNK
+
+stat.S_ISLNK(mode)  
+Return non-zero if the mode is from a symbolic link.

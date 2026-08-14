@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.expm1
+
+tf.experimental.numpy.expm1 TensorFlow variant of NumPy's expm1. 
+tf.experimental.numpy.expm1(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.expm1.

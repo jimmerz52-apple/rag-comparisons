@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.path
+
+path 
+ Font file path path -> unicode  Read only. Returns the path of the loaded font file

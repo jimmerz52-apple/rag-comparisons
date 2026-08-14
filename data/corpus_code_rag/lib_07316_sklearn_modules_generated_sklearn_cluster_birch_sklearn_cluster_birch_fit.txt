@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.cluster.birch#sklearn.cluster.Birch.fit
+
+fit(X, y=None) [source]
+ 
+Build a CF Tree for the input data.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Input data.  
+yIgnored 
+
+Not used, present here for API consistency by convention.    Returns 
+ self
+
+Fitted estimator.

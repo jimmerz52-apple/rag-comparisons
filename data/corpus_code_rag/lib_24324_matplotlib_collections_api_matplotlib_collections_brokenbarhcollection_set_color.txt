@@ -1,0 +1,13 @@
+# matplotlib.collections_api#matplotlib.collections.BrokenBarHCollection.set_color
+
+set_color(c)[source]
+ 
+Set both the edgecolor and the facecolor.  Parameters 
+ 
+ccolor or list of rgba tuples
+
+    See also  
+Collection.set_facecolor, Collection.set_edgecolor
+
+
+For setting the edge or face color individually.

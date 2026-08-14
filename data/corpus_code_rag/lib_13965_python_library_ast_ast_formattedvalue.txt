@@ -1,0 +1,7 @@
+# python.library.ast#ast.FormattedValue
+
+class ast.FormattedValue(value, conversion, format_spec)  
+Node representing a single formatting field in an f-string. If the string contains a single formatting field and nothing else the node can be isolated otherwise it appears in JoinedStr.  
+value is any expression node (such as a literal, a variable, or a function call). 
+conversion is an integer:  -1: no formatting 115: !s string formatting 114: !r repr formatting 97: !a ascii formatting   
+format_spec is a JoinedStr node representing the formatting of the value, or None if no format was specified. Both conversion and format_spec can be set at the same time.

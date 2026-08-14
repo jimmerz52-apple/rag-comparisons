@@ -1,0 +1,9 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axislabel#mpl_toolkits.axisartist.axis_artist.AxisLabel.set_axis_direction
+
+set_axis_direction(d)[source]
+ 
+Adjust the text angle and text alignment of axis label according to the matplotlib convention.   
+property left bottom right top   
+axislabel angle 180 0 0 180  
+axislabel va center top center bottom  
+axislabel ha right center right center   Note that the text angles are actually relative to (90 + angle of the direction to the ticklabel), which gives 0 for bottom axis.

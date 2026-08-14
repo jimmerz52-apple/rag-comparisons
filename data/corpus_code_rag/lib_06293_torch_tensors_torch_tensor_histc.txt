@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.histc
+
+histc(bins=100, min=0, max=0) → Tensor  
+See torch.histc()

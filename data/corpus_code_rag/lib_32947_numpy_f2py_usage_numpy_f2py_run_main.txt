@@ -1,0 +1,19 @@
+# numpy.f2py.usage#numpy.f2py.run_main
+
+numpy.f2py.run_main(comline_list)[source]
+ 
+Equivalent to running: f2py <args>
+ where <args>=string.join(<list>,' '), but in Python. Unless -h is used, this function returns a dictionary containing information on generated modules and their dependencies on source files. For example, the command f2py -m scalar scalar.f can be executed from Python as follows You cannot build extension modules with this function, that is, using -c is not allowed. Use compile command instead Examples >>> import numpy.f2py
+>>> r = numpy.f2py.run_main(['-m','scalar','doc/source/f2py/scalar.f'])
+Reading fortran codes...
+        Reading file 'doc/source/f2py/scalar.f' (format:fix,strict)
+Post-processing...
+        Block: scalar
+                        Block: FOO
+Building modules...
+        Building module "scalar"...
+        Wrote C/API module "scalar" to file "./scalarmodule.c"
+>>> print(r)
+{'scalar': {'h': ['/home/users/pearu/src_cvs/f2py/src/fortranobject.h'],
+	 'csrc': ['./scalarmodule.c', 
+                  '/home/users/pearu/src_cvs/f2py/src/fortranobject.c']}}

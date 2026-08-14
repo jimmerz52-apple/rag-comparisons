@@ -1,0 +1,10 @@
+# werkzeug.http.index#werkzeug.http.parse_cookie
+
+werkzeug.http.parse_cookie(header, charset='utf-8', errors='replace', cls=None)  
+Parse a cookie from a string or WSGI environ. The same key can be provided multiple times, the values are stored in-order. The default MultiDict will have the first value first, and all values can be retrieved with MultiDict.getlist().  Parameters 
+ 
+header (Optional[Union[WSGIEnvironment, str, bytes]]) – The cookie header as a string, or a WSGI environ dict with a HTTP_COOKIE key. 
+charset (str) – The charset for the cookie values. 
+errors (str) – The error behavior for the charset decoding. 
+cls (Optional[Type[ds.MultiDict]]) – A dict-like class to store the parsed cookies in. Defaults to MultiDict.   Return type 
+ds.MultiDict[str, str]    Changelog Changed in version 1.0.0: Returns a MultiDict instead of a TypeConversionDict.   Changed in version 0.5: Returns a TypeConversionDict instead of a regular dict. The cls parameter was added.

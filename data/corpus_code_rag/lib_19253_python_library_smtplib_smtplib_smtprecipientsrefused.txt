@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTPRecipientsRefused
+
+exception smtplib.SMTPRecipientsRefused  
+All recipient addresses refused. The errors for each recipient are accessible through the attribute recipients, which is a dictionary of exactly the same sort as SMTP.sendmail() returns.

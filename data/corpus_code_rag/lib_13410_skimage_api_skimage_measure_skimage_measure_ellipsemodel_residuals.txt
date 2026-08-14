@@ -1,0 +1,13 @@
+# skimage.api.skimage.measure#skimage.measure.EllipseModel.residuals
+
+residuals(data) [source]
+ 
+Determine residuals of data to model. For each point the shortest distance to the ellipse is returned.  Parameters 
+ 
+data(N, 2) array 
+
+N points with (x, y) coordinates, respectively.    Returns 
+ 
+residuals(N, ) array 
+
+Residual for each data point.

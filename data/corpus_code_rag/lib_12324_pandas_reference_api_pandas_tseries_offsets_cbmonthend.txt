@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.tseries.offsets.cbmonthend
+
+pandas.tseries.offsets.CBMonthEnd   pandas.tseries.offsets.CBMonthEnd
+ 
+alias of pandas._libs.tslibs.offsets.CustomBusinessMonthEnd

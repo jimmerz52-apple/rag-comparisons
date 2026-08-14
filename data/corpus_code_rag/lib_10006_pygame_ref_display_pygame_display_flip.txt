@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.flip
+
+pygame.display.flip() 
+ Update the full display Surface to the screen flip() -> None  This will update the contents of the entire display. If your display mode is using the flags pygame.HWSURFACE and pygame.DOUBLEBUF, this will wait for a vertical retrace and swap the surfaces. If you are using a different type of display mode, it will simply update the entire contents of the surface. When using an pygame.OPENGL display mode this will perform a gl buffer swap.

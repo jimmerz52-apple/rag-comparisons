@@ -1,0 +1,8 @@
+# python.library.tokenize#tokenize.TokenError
+
+exception tokenize.TokenError  
+Raised when either a docstring or expression that may be split over several lines is not completed anywhere in the file, for example: """Beginning of
+docstring
+ or: [1,
+ 2,
+ 3

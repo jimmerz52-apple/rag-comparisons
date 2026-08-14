@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.real
+
+tf.experimental.numpy.real TensorFlow variant of NumPy's real. 
+tf.experimental.numpy.real(
+    val
+)
+ See the NumPy documentation for numpy.real.

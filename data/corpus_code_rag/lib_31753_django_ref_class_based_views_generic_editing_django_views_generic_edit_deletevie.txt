@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.DeleteView.form_class
+
+form_class  
+ New in Django 4.0.  Inherited from BaseDeleteView. The form class that will be used to confirm the request. By default django.forms.Form, resulting in an empty form that is always valid. By providing your own Form subclass, you can add additional requirements, such as a confirmation checkbox, for example.

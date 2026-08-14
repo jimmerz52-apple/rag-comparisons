@@ -1,0 +1,17 @@
+# tensorflow.raw_ops.dummyseedgenerator
+
+tf.raw_ops.DummySeedGenerator  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.DummySeedGenerator  
+tf.raw_ops.DummySeedGenerator(
+    name=None
+)
+
+ 
+
+
+ Args
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type resource.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.annulus#matplotlib.patches.Annulus.get_angle
+
+get_angle()[source]
+ 
+Return the angle of the annulus.

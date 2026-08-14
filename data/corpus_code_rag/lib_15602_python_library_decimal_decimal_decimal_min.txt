@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.min
+
+min(other, context=None)  
+Like min(self, other) except that the context rounding rule is applied before returning and that NaN values are either signaled or ignored (depending on the context and whether they are signaling or quiet).

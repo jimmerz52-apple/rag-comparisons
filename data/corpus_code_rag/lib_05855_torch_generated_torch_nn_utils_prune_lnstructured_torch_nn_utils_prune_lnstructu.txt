@@ -1,0 +1,11 @@
+# torch.generated.torch.nn.utils.prune.lnstructured#torch.nn.utils.prune.LnStructured.compute_mask
+
+compute_mask(t, default_mask) [source]
+ 
+Computes and returns a mask for the input tensor t. Starting from a base default_mask (which should be a mask of ones if the tensor has not been pruned yet), generate a mask to apply on top of the default_mask by zeroing out the channels along the specified dim with the lowest Ln-norm.  Parameters 
+ 
+t (torch.Tensor) – tensor representing the parameter to prune 
+default_mask (torch.Tensor) – Base mask from previous pruning iterations, that need to be respected after the new mask is applied. Same dims as t.   Returns 
+mask to apply to t, of same dims as t  Return type 
+mask (torch.Tensor)  Raises 
+IndexError – if self.dim >= len(t.shape)

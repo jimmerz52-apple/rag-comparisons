@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.put
+
+numpy.record.put method   record.put()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.put.

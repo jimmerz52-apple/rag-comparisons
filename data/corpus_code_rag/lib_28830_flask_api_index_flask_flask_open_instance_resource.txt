@@ -1,0 +1,8 @@
+# flask.api.index#flask.Flask.open_instance_resource
+
+open_instance_resource(resource, mode='rb')  
+Opens a resource from the application’s instance folder (instance_path). Otherwise works like open_resource(). Instance resources can also be opened for writing.  Parameters 
+ 
+resource (str) – the name of the resource. To access resources within subfolders use forward slashes as separator. 
+mode (str) – resource file opening mode, default is ‘rb’.   Return type 
+IO

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.StartNamespaceDeclHandler
+
+xmlparser.StartNamespaceDeclHandler(prefix, uri)  
+Called when an element contains a namespace declaration. Namespace declarations are processed before the StartElementHandler is called for the element on which declarations are placed.

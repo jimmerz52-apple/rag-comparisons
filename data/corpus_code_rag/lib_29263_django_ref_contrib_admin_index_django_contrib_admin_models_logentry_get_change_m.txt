@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.get_change_message
+
+LogEntry.get_change_message()  
+Formats and translates change_message into the current user language. Messages created before Django 1.10 will always be displayed in the language in which they were logged.

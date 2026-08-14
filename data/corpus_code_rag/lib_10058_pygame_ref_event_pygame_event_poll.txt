@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.poll
+
+pygame.event.poll() 
+ get a single event from the queue poll() -> EventType instance  Returns a single event from the queue. If the event queue is empty an event of type pygame.NOEVENT will be returned immediately. The returned event is removed from the queue.  Caution This function should only be called in the thread that initialized pygame.display.

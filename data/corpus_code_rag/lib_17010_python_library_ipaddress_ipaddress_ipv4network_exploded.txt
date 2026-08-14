@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv4Network.exploded
+
+exploded  
+A string representation of the network, with the mask in prefix notation. with_prefixlen and compressed are always the same as str(network). exploded uses the exploded form the network address.

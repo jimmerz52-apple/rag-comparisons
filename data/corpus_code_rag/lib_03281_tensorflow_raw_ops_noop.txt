@@ -1,0 +1,17 @@
+# tensorflow.raw_ops.noop
+
+tf.raw_ops.NoOp Does nothing. Only useful as a placeholder for control edges.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.NoOp  
+tf.raw_ops.NoOp(
+    name=None
+)
+
+ 
+
+
+ Args
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   The created Operation.

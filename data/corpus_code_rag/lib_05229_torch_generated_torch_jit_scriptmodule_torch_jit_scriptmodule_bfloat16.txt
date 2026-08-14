@@ -1,0 +1,6 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.bfloat16
+
+bfloat16()  
+Casts all floating point parameters and buffers to bfloat16 datatype.  Returns 
+self  Return type 
+Module

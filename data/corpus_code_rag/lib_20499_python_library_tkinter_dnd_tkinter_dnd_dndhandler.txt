@@ -1,0 +1,15 @@
+# python.library.tkinter.dnd#tkinter.dnd.DndHandler
+
+class tkinter.dnd.DndHandler(source, event)  
+The DndHandler class handles drag-and-drop events tracking Motion and ButtonRelease events on the root of the event widget.  
+cancel(event=None)  
+Cancel the drag-and-drop process. 
+  
+finish(event, commit=0)  
+Execute end of drag-and-drop functions. 
+  
+on_motion(event)  
+Inspect area below mouse for target objects while drag is performed. 
+  
+on_release(event)  
+Signal end of drag when the release pattern is triggered.

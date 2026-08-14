@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_CTIME
+
+stat.ST_CTIME  
+The “ctime” as reported by the operating system. On some systems (like Unix) is the time of the last metadata change, and, on others (like Windows), is the creation time (see platform documentation for details).

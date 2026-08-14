@@ -1,0 +1,7 @@
+# python.library.sys#sys.__excepthook__
+
+sys.__breakpointhook__  
+sys.__displayhook__  
+sys.__excepthook__  
+sys.__unraisablehook__  
+These objects contain the original values of breakpointhook, displayhook, excepthook, and unraisablehook at the start of the program. They are saved so that breakpointhook, displayhook and excepthook, unraisablehook can be restored in case they happen to get replaced with broken or alternative objects.  New in version 3.7: __breakpointhook__   New in version 3.8: __unraisablehook__

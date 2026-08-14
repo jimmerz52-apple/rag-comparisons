@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_zorder
+
+get_zorder()[source]
+ 
+Return the artist's zorder.

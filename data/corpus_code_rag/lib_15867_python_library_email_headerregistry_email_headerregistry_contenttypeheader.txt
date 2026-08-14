@@ -1,0 +1,10 @@
+# python.library.email.headerregistry#email.headerregistry.ContentTypeHeader
+
+class email.headerregistry.ContentTypeHeader  
+A ParameterizedMIMEHeader class that handles the Content-Type header.  
+content_type  
+The content type string, in the form maintype/subtype. 
+  
+maintype 
+  
+subtype

@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.distribution.Distribution.variance
+
+property variance  
+Returns the variance of the distribution.

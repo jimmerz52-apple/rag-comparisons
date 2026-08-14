@@ -1,0 +1,124 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnnotationBbox
+
+classmatplotlib.offsetbox.AnnotationBbox(offsetbox, xy, xybox=None, xycoords='data', boxcoords=None, frameon=True, pad=0.4, annotation_clip=None, box_alignment=(0.5, 0.5), bboxprops=None, arrowprops=None, fontsize=None, **kwargs)[source]
+ 
+Bases: matplotlib.artist.Artist, matplotlib.text._AnnotationBase Container for an OffsetBox referring to a specific position xy. Optionally an arrow pointing from the offsetbox to xy can be drawn. This is like Annotation, but with OffsetBox instead of Text.  Parameters 
+ 
+offsetboxOffsetBox
+
+
+xy(float, float)
+
+
+The point (x, y) to annotate. The coordinate system is determined by xycoords.  
+xybox(float, float), default: xy
+
+
+The position (x, y) to place the text at. The coordinate system is determined by boxcoords.  
+xycoordsstr or Artist or Transform or callable or (float, float), default: 'data'
+
+
+The coordinate system that xy is given in. See the parameter xycoords in Annotation for a detailed description.  
+boxcoordsstr or Artist or Transform or callable or (float, float), default: value of xycoords
+
+
+The coordinate system that xybox is given in. See the parameter textcoords in Annotation for a detailed description.  
+frameonbool, default: True
+
+
+Whether to draw a frame around the box.  
+padfloat, default: 0.4
+
+
+Padding around the offsetbox.  
+box_alignment(float, float)
+
+
+A tuple of two floats for a vertical and horizontal alignment of the offset box w.r.t. the boxcoords. The lower-left corner is (0, 0) and upper-right corner is (1, 1).  **kwargs
+
+Other parameters are identical to Annotation.       propertyanncoords
+
+   contains(mouseevent)[source]
+ 
+Test whether the artist contains the mouse event.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+An artist-specific dictionary of details of the event context, such as which points are contained in the pick radius. See the individual Artist subclasses for details.     
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   get_children()[source]
+ 
+Return a list of the child Artists of this Artist. 
+   get_fontsize()[source]
+ 
+Return the fontsize in points. 
+   get_tightbbox(renderer)[source]
+ 
+Like Artist.get_window_extent, but includes any clipping.  Parameters 
+ 
+rendererRendererBase subclass
+
+
+renderer that will be used to draw the figures (i.e. fig.canvas.get_renderer())    Returns 
+ Bbox
+
+The enclosing bounding box (in figure pixel coordinates).     
+   get_window_extent(renderer)[source]
+ 
+Get the artist's bounding box in display space. The bounding box' width and height are nonnegative. Subclasses should override for inclusion in the bounding box "tight" calculation. Default is to return an empty bounding box at 0, 0. Be careful when using this function, the results will not update if the artist window extent of the artist changes. The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure). This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly. 
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, annotation_clip=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, fontsize=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, label=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+annotation_clip bool or None  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+figure unknown  
+fontsize unknown  
+gid str  
+in_layout bool  
+label object  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   
+   set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure
+
+   
+   set_fontsize(s=None)[source]
+ 
+Set the fontsize in points. If s is not given, reset to rcParams["legend.fontsize"] (default: 'medium'). 
+   update_positions(renderer)[source]
+ 
+Update the pixel positions of the annotated point and the text. 
+   propertyxyann
+
+   zorder=3

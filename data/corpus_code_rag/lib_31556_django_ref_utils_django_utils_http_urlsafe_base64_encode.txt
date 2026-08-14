@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.http.urlsafe_base64_encode
+
+urlsafe_base64_encode(s) [source]
+ 
+Encodes a bytestring to a base64 string for use in URLs, stripping any trailing equal signs.

@@ -1,0 +1,12 @@
+# python.library.unittest#unittest.TestCase.assertWarns
+
+assertWarns(warning, callable, *args, **kwds)  
+assertWarns(warning, *, msg=None)  
+Test that a warning is triggered when callable is called with any positional or keyword arguments that are also passed to assertWarns(). The test passes if warning is triggered and fails if it isn’t. Any exception is an error. To catch any of a group of warnings, a tuple containing the warning classes may be passed as warnings. If only the warning and possibly the msg arguments are given, return a context manager so that the code under test can be written inline rather than as a function: with self.assertWarns(SomeWarning):
+    do_something()
+ When used as a context manager, assertWarns() accepts the additional keyword argument msg. The context manager will store the caught warning object in its warning attribute, and the source line which triggered the warnings in the filename and lineno attributes. This can be useful if the intention is to perform additional checks on the warning caught: with self.assertWarns(SomeWarning) as cm:
+    do_something()
+
+self.assertIn('myfile.py', cm.filename)
+self.assertEqual(320, cm.lineno)
+ This method works regardless of the warning filters in place when it is called.  New in version 3.2.   Changed in version 3.3: Added the msg keyword argument when used as a context manager.

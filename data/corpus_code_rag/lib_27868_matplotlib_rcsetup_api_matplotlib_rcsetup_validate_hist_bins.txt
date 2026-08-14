@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_hist_bins
+
+matplotlib.rcsetup.validate_hist_bins(s)[source]

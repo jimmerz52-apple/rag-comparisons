@@ -1,0 +1,7 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.set
+
+set(_key, _value, **kw)  
+Remove all header tuples for key and add a new one. The newly added key either appears at the end of the list if there was no entry or replaces the first one. Keyword arguments can specify additional parameters for the header value, with underscores converted to dashes. See add() for more information.  Changelog Changed in version 0.6.1: set() now accepts the same arguments as add().   Parameters 
+ 
+key – The key to be inserted. 
+value – The value to be inserted.

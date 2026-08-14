@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.DecimalField.max_digits
+
+max_digits  
+The maximum number of digits (those before the decimal point plus those after the decimal point, with leading zeros stripped) permitted in the value.

@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.HTMLCalendar.cssclass_month
+
+cssclass_month  
+The CSS class for the whole month’s table (used by formatmonth()). The default value is "month".  New in version 3.7.

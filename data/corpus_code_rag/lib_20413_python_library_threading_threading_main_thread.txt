@@ -1,0 +1,4 @@
+# python.library.threading#threading.main_thread
+
+threading.main_thread()  
+Return the main Thread object. In normal conditions, the main thread is the thread from which the Python interpreter was started.  New in version 3.4.

@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.pipeline.featureunion#sklearn.pipeline.FeatureUnion.fit
+
+fit(X, y=None, **fit_params) [source]
+ 
+Fit all transformers using X.  Parameters 
+ 
+Xiterable or array-like, depending on transformers 
+
+Input data, used to fit transformers.  
+yarray-like of shape (n_samples, n_outputs), default=None 
+
+Targets for supervised learning.    Returns 
+ 
+selfFeatureUnion 
+
+This estimator

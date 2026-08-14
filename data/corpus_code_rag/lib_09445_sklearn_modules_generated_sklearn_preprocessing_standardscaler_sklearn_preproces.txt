@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.preprocessing.standardscaler#sklearn.preprocessing.StandardScaler.fit
+
+fit(X, y=None, sample_weight=None) [source]
+ 
+Compute the mean and std to be used for later scaling.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data used to compute the mean and standard deviation used for later scaling along the features axis.  
+yNone 
+
+Ignored.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Individual weights for each sample.  New in version 0.24: parameter sample_weight support to StandardScaler.     Returns 
+ 
+selfobject 
+
+Fitted scaler.

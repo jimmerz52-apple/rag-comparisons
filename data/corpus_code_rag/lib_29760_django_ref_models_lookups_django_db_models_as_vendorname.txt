@@ -1,0 +1,4 @@
+# django.ref.models.lookups#django.db.models.as_vendorname
+
+as_vendorname(compiler, connection)  
+Works like as_sql() method. When an expression is compiled by compiler.compile(), Django will first try to call as_vendorname(), where vendorname is the vendor name of the backend used for executing the query. The vendorname is one of postgresql, oracle, sqlite, or mysql for Django’s built-in backends.

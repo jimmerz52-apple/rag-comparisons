@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.run
+
+run(result=None)  
+Run the test, collecting the result into the TestResult object passed as result. If result is omitted or None, a temporary result object is created (by calling the defaultTestResult() method) and used. The result object is returned to run()’s caller. The same effect may be had by simply calling the TestCase instance.  Changed in version 3.3: Previous versions of run did not return the result. Neither did calling an instance.

@@ -1,0 +1,4 @@
+# werkzeug.filesystem.index#werkzeug.filesystem.BrokenFilesystemWarning
+
+class werkzeug.filesystem.BrokenFilesystemWarning  
+The warning used by Werkzeug to signal a broken filesystem. Will only be used once per runtime.

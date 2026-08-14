@@ -1,0 +1,4 @@
+# python.library.typing#typing.Container
+
+class typing.Container(Generic[T_co])  
+A generic version of collections.abc.Container.  Deprecated since version 3.9: collections.abc.Container now supports []. See PEP 585 and Generic Alias Type.

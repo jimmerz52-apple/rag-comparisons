@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGCHLD
+
+signal.SIGCHLD  
+Child process stopped or terminated. Availability: Unix.

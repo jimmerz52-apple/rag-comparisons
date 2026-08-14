@@ -1,0 +1,4 @@
+# python.library.threading#threading.Lock.locked
+
+locked()  
+Return true if the lock is acquired.

@@ -1,0 +1,3 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.replace_method
+
+numpy.distutils.ccompiler.replace_method   distutils.ccompiler.replace_method(klass, method_name, func)[source]

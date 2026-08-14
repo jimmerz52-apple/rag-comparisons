@@ -1,0 +1,6 @@
+# torch.optim#torch.optim.Optimizer.step
+
+step(closure) [source]
+ 
+Performs a single optimization step (parameter update).  Parameters 
+closure (callable) – A closure that reevaluates the model and returns the loss. Optional for most optimizers.    Note Unless otherwise specified, this function should not modify the .grad field of the parameters.

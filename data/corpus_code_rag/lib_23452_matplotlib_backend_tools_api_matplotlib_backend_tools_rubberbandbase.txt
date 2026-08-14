@@ -1,0 +1,13 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.RubberbandBase
+
+classmatplotlib.backend_tools.RubberbandBase(toolmanager, name)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Draw and remove a rubberband.   draw_rubberband(*data)[source]
+ 
+Draw rubberband. This method must get implemented per backend. 
+   remove_rubberband()[source]
+ 
+Remove rubberband. This method should get implemented per backend. 
+   trigger(sender, event, data)[source]
+ 
+Call draw_rubberband or remove_rubberband based on data.

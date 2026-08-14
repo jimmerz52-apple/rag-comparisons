@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.data
+
+Request.data  
+The entity body for the request, or None if not specified.  Changed in version 3.4: Changing value of Request.data now deletes “Content-Length” header if it was previously set or calculated.

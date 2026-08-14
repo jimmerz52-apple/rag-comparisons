@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.week.is_on_offset
+
+pandas.tseries.offsets.Week.is_on_offset   Week.is_on_offset()

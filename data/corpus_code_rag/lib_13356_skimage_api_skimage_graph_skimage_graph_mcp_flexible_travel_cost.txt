@@ -1,0 +1,4 @@
+# skimage.api.skimage.graph#skimage.graph.MCP_Flexible.travel_cost
+
+travel_cost(old_cost, new_cost, offset_length)  
+This method calculates the travel cost for going from the current node to the next. The default implementation returns new_cost. Overload this method to adapt the behaviour of the algorithm.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_navigate
+
+matplotlib.axes.Axes.set_navigate   Axes.set_navigate(b)[source]
+ 
+Set whether the Axes responds to navigation toolbar commands.  Parameters 
+ 
+bbool

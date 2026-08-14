@@ -1,0 +1,7 @@
+# python.library.stdtypes#memoryview.hex
+
+hex([sep[, bytes_per_sep]])  
+Return a string object containing two hexadecimal digits for each byte in the buffer. >>> m = memoryview(b"abc")
+>>> m.hex()
+'616263'
+  New in version 3.5.   Changed in version 3.8: Similar to bytes.hex(), memoryview.hex() now supports optional sep and bytes_per_sep parameters to insert separators between bytes in the hex output.

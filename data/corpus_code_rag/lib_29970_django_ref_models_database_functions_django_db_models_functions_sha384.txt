@@ -1,0 +1,3 @@
+# django.ref.models.database-functions#django.db.models.functions.SHA384
+
+class SHA384(expression, **extra)

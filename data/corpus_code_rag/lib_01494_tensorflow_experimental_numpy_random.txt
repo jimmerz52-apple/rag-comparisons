@@ -1,0 +1,3 @@
+# tensorflow.experimental.numpy.random
+
+Module: tf.experimental.numpy.random Public API for tf.experimental.numpy.random namespace. Functions rand(...): TensorFlow variant of NumPy's random.rand. randint(...): TensorFlow variant of NumPy's random.randint. randn(...): TensorFlow variant of NumPy's random.randn. random(...): TensorFlow variant of NumPy's random.random. seed(...): TensorFlow variant of NumPy's random.seed. uniform(...): TensorFlow variant of NumPy's random.uniform.

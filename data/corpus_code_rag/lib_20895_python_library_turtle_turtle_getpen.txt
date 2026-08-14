@@ -1,0 +1,8 @@
+# python.library.turtle#turtle.getpen
+
+turtle.getturtle()  
+turtle.getpen()  
+Return the Turtle object itself. Only reasonable use: as a function to return the “anonymous turtle”: >>> pet = getturtle()
+>>> pet.fd(50)
+>>> pet
+<turtle.Turtle object at 0x...>

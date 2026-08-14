@@ -1,0 +1,4 @@
+# python.library.threading#threading.Event.clear
+
+clear()  
+Reset the internal flag to false. Subsequently, threads calling wait() will block until set() is called to set the internal flag to true again.

@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray._values_for_argsort
+
+pandas.api.extensions.ExtensionArray._values_for_argsort   ExtensionArray._values_for_argsort()[source]
+ 
+Return values for sorting.  Returns 
+ ndarray
+
+The transformed values should maintain the ordering between values within the array.      See also  ExtensionArray.argsort
+
+Return the indices that would sort this array.

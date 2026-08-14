@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.is_type_compatible
+
+pandas.Index.is_type_compatible   Index.is_type_compatible(kind)[source]
+ 
+Whether the index type is compatible with the provided type.

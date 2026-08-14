@@ -1,0 +1,22 @@
+# pandas.reference.api.pandas.series.str.rfind
+
+pandas.Series.str.rfind   Series.str.rfind(sub, start=0, end=None)[source]
+ 
+Return highest indexes in each strings in the Series/Index. Each of returned indexes corresponds to the position where the substring is fully contained between [start:end]. Return -1 on failure. Equivalent to standard str.rfind().  Parameters 
+ 
+sub:str
+
+
+Substring being searched.  
+start:int
+
+
+Left edge index.  
+end:int
+
+
+Right edge index.    Returns 
+ Series or Index of int.
+    See also  find
+
+Return lowest indexes in each strings.

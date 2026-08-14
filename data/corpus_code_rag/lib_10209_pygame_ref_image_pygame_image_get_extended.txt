@@ -1,0 +1,4 @@
+# pygame.ref.image#pygame.image.get_extended
+
+pygame.image.get_extended() 
+ test if extended image formats can be loaded get_extended() -> bool  If pygame is built with extended image formats this function will return True. It is still not possible to determine which formats will be available, but generally you will be able to load them all.

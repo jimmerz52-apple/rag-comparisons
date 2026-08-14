@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.context
+
+SSLSocket.context  
+The SSLContext object this SSL socket is tied to. If the SSL socket was created using the deprecated wrap_socket() function (rather than SSLContext.wrap_socket()), this is a custom context object created for this SSL socket.  New in version 3.2.

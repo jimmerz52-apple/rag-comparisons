@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.sorted_indices
+
+property sorted_indices  
+Alias for field number 2

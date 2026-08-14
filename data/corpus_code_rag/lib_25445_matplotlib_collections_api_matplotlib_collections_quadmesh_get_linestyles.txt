@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.get_linestyles
+
+get_linestyles()[source]
+ 
+Alias for get_linestyle.

@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.semi_supervised.selftrainingclassifier#sklearn.semi_supervised.SelfTrainingClassifier.fit
+
+fit(X, y) [source]
+ 
+Fits this SelfTrainingClassifier to a dataset.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Array representing the data.  
+y{array-like, sparse matrix} of shape (n_samples,) 
+
+Array representing the labels. Unlabeled samples should have the label -1.    Returns 
+ 
+selfobject 
+
+Returns an instance of self.

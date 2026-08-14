@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_height_char
+
+get_height_char(c, isord=False)[source]
+ 
+Get the bounding box (ink) height of character c (space is 0).

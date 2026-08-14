@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.multioutput.classifierchain#sklearn.multioutput.ClassifierChain.decision_function
+
+decision_function(X) [source]
+ 
+Evaluate the decision_function of the models in the chain.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Y_decisionarray-like of shape (n_samples, n_classes) 
+
+Returns the decision function of the sample for each model in the chain.

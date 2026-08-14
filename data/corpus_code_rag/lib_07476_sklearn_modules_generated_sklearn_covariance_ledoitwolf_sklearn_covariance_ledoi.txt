@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.covariance.ledoitwolf#sklearn.covariance.LedoitWolf.mahalanobis
+
+mahalanobis(X) [source]
+ 
+Computes the squared Mahalanobis distances of given observations.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The observations, the Mahalanobis distances of the which we compute. Observations are assumed to be drawn from the same distribution than the data used in fit.    Returns 
+ 
+distndarray of shape (n_samples,) 
+
+Squared Mahalanobis distances of the observations.

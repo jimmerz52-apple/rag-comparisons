@@ -1,0 +1,5 @@
+# python.library.operator#operator.matmul
+
+operator.matmul(a, b)  
+operator.__matmul__(a, b)  
+Return a @ b.  New in version 3.5.

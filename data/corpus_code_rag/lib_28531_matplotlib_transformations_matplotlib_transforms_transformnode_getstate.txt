@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.__getstate__
+
+__getstate__()[source]

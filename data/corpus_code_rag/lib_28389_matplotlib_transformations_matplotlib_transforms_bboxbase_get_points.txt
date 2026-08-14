@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.get_points
+
+get_points()[source]

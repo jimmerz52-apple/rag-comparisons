@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.set_lineoffset
+
+set_lineoffset(lineoffset)[source]
+ 
+Set the offset of the lines used to mark each event.

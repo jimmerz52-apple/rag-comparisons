@@ -1,0 +1,4 @@
+# python.library.smtplib#smtplib.SMTP.quit
+
+SMTP.quit()  
+Terminate the SMTP session and close the connection. Return the result of the SMTP QUIT command.

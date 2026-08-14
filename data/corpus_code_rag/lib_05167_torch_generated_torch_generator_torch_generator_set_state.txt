@@ -1,0 +1,7 @@
+# torch.generated.torch.generator#torch.Generator.set_state
+
+set_state(new_state) → void  
+Sets the Generator state.  Parameters 
+new_state (torch.ByteTensor) – The desired state.   Example: >>> g_cpu = torch.Generator()
+>>> g_cpu_other = torch.Generator()
+>>> g_cpu.set_state(g_cpu_other.get_state())

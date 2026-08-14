@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.dequantize
+
+dequantize() → Tensor  
+Given a quantized Tensor, dequantize it and return the dequantized float Tensor.

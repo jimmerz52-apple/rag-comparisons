@@ -1,0 +1,4 @@
+# python.library.base64#base64.b16decode
+
+base64.b16decode(s, casefold=False)  
+Decode the Base16 encoded bytes-like object or ASCII string s and return the decoded bytes. Optional casefold is a flag specifying whether a lowercase alphabet is acceptable as input. For security purposes, the default is False. A binascii.Error is raised if s is incorrectly padded or if there are non-alphabet characters present in the input.

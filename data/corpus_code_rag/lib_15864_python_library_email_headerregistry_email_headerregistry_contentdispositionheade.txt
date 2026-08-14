@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.ContentDispositionHeader.content_disposition
+
+content_disposition  
+inline and attachment are the only valid values in common use.

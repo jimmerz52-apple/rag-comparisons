@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Response.templates
+
+templates  
+A list of Template instances used to render the final content, in the order they were rendered. For each template in the list, use template.name to get the template’s file name, if the template was loaded from a file. (The name is a string such as 'admin/index.html'.)  Not using Django templates? This attribute is only populated when using the DjangoTemplates backend. If you’re using another template engine, template_name may be a suitable alternative if you only need the name of the template used for rendering.

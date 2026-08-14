@@ -1,0 +1,6 @@
+# 679
+Task: 679
+
+# Write a function to access dictionary key’s element by index.
+def access_key(ditionary,key):
+  return list(ditionary)[key]

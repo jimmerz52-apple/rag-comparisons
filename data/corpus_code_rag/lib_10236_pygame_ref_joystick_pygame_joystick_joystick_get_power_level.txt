@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_power_level
+
+get_power_level() → str 
+ get the approximate power status of the device get_power_level() -> str  Get a string giving the power status of the device. One of: empty, low, medium, full, wired, max, or unknown.  New in pygame 2.0.0dev11.

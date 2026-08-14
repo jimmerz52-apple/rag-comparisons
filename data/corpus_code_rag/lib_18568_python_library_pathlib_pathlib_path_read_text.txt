@@ -1,0 +1,9 @@
+# python.library.pathlib#pathlib.Path.read_text
+
+Path.read_text(encoding=None, errors=None)  
+Return the decoded contents of the pointed-to file as a string: >>> p = Path('my_text_file')
+>>> p.write_text('Text file contents')
+18
+>>> p.read_text()
+'Text file contents'
+ The file is opened and then closed. The optional parameters have the same meaning as in open().  New in version 3.5.

@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.make_compound_path_from_polys
+
+classmethodmake_compound_path_from_polys(XY)[source]
+ 
+Make a compound path object to draw a number of polygons with equal numbers of sides XY is a (numpolys x numsides x 2) numpy array of vertices. Return object is a Path. (Source code, png, pdf)

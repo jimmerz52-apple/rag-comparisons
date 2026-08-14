@@ -1,0 +1,12 @@
+# pygame.ref.touch#pygame._sdl2.touch.get_finger
+
+pygame._sdl2.touch.get_finger() 
+ get information about an active finger get_finger(touchid, index) -> int      
+Parameters:
+
+ 
+touchid (int) -- The touch device id. 
+index (int) -- The index of the finger to return information about, between 0 and the number of active fingers.      Return a dict for the finger index active on touchid. The dict contains these keys: id         the id of the finger (an integer).
+x          the normalized x position of the finger, between 0 and 1.
+y          the normalized y position of the finger, between 0 and 1.
+pressure   the amount of pressure applied by the finger, between 0 and 1.

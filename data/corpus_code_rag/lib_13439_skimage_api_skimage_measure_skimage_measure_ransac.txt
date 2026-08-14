@@ -1,0 +1,98 @@
+# skimage.api.skimage.measure#skimage.measure.ransac
+
+skimage.measure.ransac(data, model_class, min_samples, residual_threshold, is_data_valid=None, is_model_valid=None, max_trials=100, stop_sample_num=inf, stop_residuals_sum=0, stop_probability=1, random_state=None, initial_inliers=None) [source]
+ 
+Fit a model to data with the RANSAC (random sample consensus) algorithm. RANSAC is an iterative algorithm for the robust estimation of parameters from a subset of inliers from the complete data set. Each iteration performs the following tasks:  Select min_samples random samples from the original data and check whether the set of data is valid (see is_data_valid). Estimate a model to the random subset (model_cls.estimate(*data[random_subset]) and check whether the estimated model is valid (see is_model_valid). Classify all data as inliers or outliers by calculating the residuals to the estimated model (model_cls.residuals(*data)) - all data samples with residuals smaller than the residual_threshold are considered as inliers. Save estimated model as best model if number of inlier samples is maximal. In case the current estimated model has the same number of inliers, it is only considered as the best model if it has less sum of residuals.  These steps are performed either a maximum number of times or until one of the special stop criteria are met. The final model is estimated using all inlier samples of the previously determined best model.  Parameters 
+ 
+data[list, tuple of] (N, …) array 
+
+Data set to which the model is fitted, where N is the number of data points and the remaining dimension are depending on model requirements. If the model class requires multiple input data arrays (e.g. source and destination coordinates of skimage.transform.AffineTransform), they can be optionally passed as tuple or list. Note, that in this case the functions estimate(*data), residuals(*data), is_model_valid(model, *random_data) and is_data_valid(*random_data) must all take each data array as separate arguments.  
+model_classobject 
+
+Object with the following object methods:  success = estimate(*data) residuals(*data)  where success indicates whether the model estimation succeeded (True or None for success, False for failure).  
+min_samplesint in range (0, N) 
+
+The minimum number of data points to fit a model to.  
+residual_thresholdfloat larger than 0 
+
+Maximum distance for a data point to be classified as an inlier.  
+is_data_validfunction, optional 
+
+This function is called with the randomly selected data before the model is fitted to it: is_data_valid(*random_data).  
+is_model_validfunction, optional 
+
+This function is called with the estimated model and the randomly selected data: is_model_valid(model, *random_data), .  
+max_trialsint, optional 
+
+Maximum number of iterations for random sample selection.  
+stop_sample_numint, optional 
+
+Stop iteration if at least this number of inliers are found.  
+stop_residuals_sumfloat, optional 
+
+Stop iteration if sum of residuals is less than or equal to this threshold.  
+stop_probabilityfloat in range [0, 1], optional 
+
+RANSAC iteration stops if at least one outlier-free set of the training data is sampled with probability >= stop_probability, depending on the current best model’s inlier ratio and the number of trials. This requires to generate at least N samples (trials): N >= log(1 - probability) / log(1 - e**m) where the probability (confidence) is typically set to a high value such as 0.99, e is the current fraction of inliers w.r.t. the total number of samples, and m is the min_samples value.  
+random_stateint, RandomState instance or None, optional 
+
+If int, random_state is the seed used by the random number generator; If RandomState instance, random_state is the random number generator; If None, the random number generator is the RandomState instance used by np.random.  
+initial_inliersarray-like of bool, shape (N,), optional 
+
+Initial samples selection for model estimation    Returns 
+ 
+modelobject 
+
+Best model with largest consensus set.  
+inliers(N, ) array 
+
+Boolean mask of inliers classified as True.     References  
+1  
+“RANSAC”, Wikipedia, https://en.wikipedia.org/wiki/RANSAC   Examples Generate ellipse data without tilt and add noise: >>> t = np.linspace(0, 2 * np.pi, 50)
+>>> xc, yc = 20, 30
+>>> a, b = 5, 10
+>>> x = xc + a * np.cos(t)
+>>> y = yc + b * np.sin(t)
+>>> data = np.column_stack([x, y])
+>>> np.random.seed(seed=1234)
+>>> data += np.random.normal(size=data.shape)
+ Add some faulty data: >>> data[0] = (100, 100)
+>>> data[1] = (110, 120)
+>>> data[2] = (120, 130)
+>>> data[3] = (140, 130)
+ Estimate ellipse model using all available data: >>> model = EllipseModel()
+>>> model.estimate(data)
+True
+>>> np.round(model.params)  
+array([ 72.,  75.,  77.,  14.,   1.])
+ Estimate ellipse model using RANSAC: >>> ransac_model, inliers = ransac(data, EllipseModel, 20, 3, max_trials=50)
+>>> abs(np.round(ransac_model.params))
+array([20., 30.,  5., 10.,  0.])
+>>> inliers 
+array([False, False, False, False,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True], dtype=bool)
+>>> sum(inliers) > 40
+True
+ RANSAC can be used to robustly estimate a geometric transformation. In this section, we also show how to use a proportion of the total samples, rather than an absolute number. >>> from skimage.transform import SimilarityTransform
+>>> np.random.seed(0)
+>>> src = 100 * np.random.rand(50, 2)
+>>> model0 = SimilarityTransform(scale=0.5, rotation=1, translation=(10, 20))
+>>> dst = model0(src)
+>>> dst[0] = (10000, 10000)
+>>> dst[1] = (-100, 100)
+>>> dst[2] = (50, 50)
+>>> ratio = 0.5  # use half of the samples
+>>> min_samples = int(ratio * len(src))
+>>> model, inliers = ransac((src, dst), SimilarityTransform, min_samples, 10,
+...                         initial_inliers=np.ones(len(src), dtype=bool))
+>>> inliers
+array([False, False, False,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True,  True])

@@ -1,0 +1,6 @@
+# skimage.api.skimage.graph#skimage.graph.MCP_Geometric
+
+class skimage.graph.MCP_Geometric(costs, offsets=None, fully_connected=True)  
+Bases: skimage.graph._mcp.MCP Find distance-weighted minimum cost paths through an n-d costs array. See the documentation for MCP for full details. This class differs from MCP in that the cost of a path is not simply the sum of the costs along that path. This class instead assumes that the costs array contains at each position the “cost” of a unit distance of travel through that position. For example, a move (in 2-d) from (1, 1) to (1, 2) is assumed to originate in the center of the pixel (1, 1) and terminate in the center of (1, 2). The entire move is of distance 1, half through (1, 1) and half through (1, 2); thus the cost of that move is (1/2)*costs[1,1] + (1/2)*costs[1,2]. On the other hand, a move from (1, 1) to (2, 2) is along the diagonal and is sqrt(2) in length. Half of this move is within the pixel (1, 1) and the other half in (2, 2), so the cost of this move is calculated as (sqrt(2)/2)*costs[1,1] + (sqrt(2)/2)*costs[2,2]. These calculations don’t make a lot of sense with offsets of magnitude greater than 1. Use the sampling argument in order to deal with anisotropic data.  
+__init__(costs, offsets=None, fully_connected=True, sampling=None)  
+See class documentation.

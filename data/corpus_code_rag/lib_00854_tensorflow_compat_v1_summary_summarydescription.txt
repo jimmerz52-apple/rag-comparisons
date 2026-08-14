@@ -1,0 +1,8 @@
+# tensorflow.compat.v1.summary.summarydescription
+
+tf.compat.v1.summary.SummaryDescription A ProtocolMessage
+ 
+
+
+ Attributes
+  type_hint   string type_hint

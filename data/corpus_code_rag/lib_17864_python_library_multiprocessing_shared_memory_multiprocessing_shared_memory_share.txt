@@ -1,0 +1,15 @@
+# python.library.multiprocessing.shared_memory#multiprocessing.shared_memory.ShareableList
+
+class multiprocessing.shared_memory.ShareableList(sequence=None, *, name=None)  
+Provides a mutable list-like object where all values stored within are stored in a shared memory block. This constrains storable values to only the int, float, bool, str (less than 10M bytes each), bytes (less than 10M bytes each), and None built-in data types. It also notably differs from the built-in list type in that these lists can not change their overall length (i.e. no append, insert, etc.) and do not support the dynamic creation of new ShareableList instances via slicing. sequence is used in populating a new ShareableList full of values. Set to None to instead attach to an already existing ShareableList by its unique shared memory name. name is the unique name for the requested shared memory, as described in the definition for SharedMemory. When attaching to an existing ShareableList, specify its shared memory block’s unique name while leaving sequence set to None.  
+count(value)  
+Returns the number of occurrences of value. 
+  
+index(value)  
+Returns first index position of value. Raises ValueError if value is not present. 
+  
+format  
+Read-only attribute containing the struct packing format used by all currently stored values. 
+  
+shm  
+The SharedMemory instance where the values are stored.

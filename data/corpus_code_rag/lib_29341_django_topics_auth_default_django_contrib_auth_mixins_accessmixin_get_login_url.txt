@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.mixins.AccessMixin.get_login_url
+
+get_login_url()  
+Returns the URL that users who don’t pass the test will be redirected to. Returns login_url if set, or settings.LOGIN_URL otherwise.

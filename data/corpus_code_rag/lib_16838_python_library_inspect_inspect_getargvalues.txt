@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.getargvalues
+
+inspect.getargvalues(frame)  
+Get information about arguments passed into a particular frame. A named tuple ArgInfo(args, varargs, keywords, locals) is returned. args is a list of the argument names. varargs and keywords are the names of the * and ** arguments or None. locals is the locals dictionary of the given frame.  Note This function was inadvertently marked as deprecated in Python 3.5.

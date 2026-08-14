@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.polynomialfeatures#sklearn.preprocessing.PolynomialFeatures.fit
+
+fit(X, y=None) [source]
+ 
+Compute number of output features.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted transformer.

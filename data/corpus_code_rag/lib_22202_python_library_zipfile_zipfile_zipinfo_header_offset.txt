@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.header_offset
+
+ZipInfo.header_offset  
+Byte offset to the file header.

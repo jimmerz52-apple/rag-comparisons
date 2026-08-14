@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.greater_than_eq
+
+torch.distributions.constraints.greater_than_eq  
+alias of torch.distributions.constraints._GreaterThanEq

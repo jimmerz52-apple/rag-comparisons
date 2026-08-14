@@ -1,0 +1,5 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.mingw32
+
+numpy.distutils.misc_util.mingw32()[source]
+ 
+Return true when using mingw32 environment.

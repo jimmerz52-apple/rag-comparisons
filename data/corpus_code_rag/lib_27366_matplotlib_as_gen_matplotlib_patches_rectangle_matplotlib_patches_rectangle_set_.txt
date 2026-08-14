@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.set_height
+
+set_height(h)[source]
+ 
+Set the height of the rectangle.

@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.get_useMathText
+
+get_useMathText()[source]
+ 
+Return whether to use fancy math formatting.  See also  ScalarFormatter.set_useMathText

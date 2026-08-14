@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.get_ordering
+
+get_ordering()  
+Returns a string (or iterable of strings) that defines the ordering that will be applied to the queryset. Returns ordering by default.

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.cluster.affinitypropagation#sklearn.cluster.AffinityPropagation.predict
+
+predict(X) [source]
+ 
+Predict the closest cluster each sample in X belongs to.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+New data to predict. If a sparse matrix is provided, it will be converted into a sparse csr_matrix.    Returns 
+ 
+labelsndarray of shape (n_samples,) 
+
+Cluster labels.

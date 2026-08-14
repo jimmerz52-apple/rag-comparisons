@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.min_num
+
+InlineModelAdmin.min_num  
+This controls the minimum number of forms to show in the inline. See modelformset_factory() for more information. InlineModelAdmin.get_min_num() also allows you to customize the minimum number of displayed forms.

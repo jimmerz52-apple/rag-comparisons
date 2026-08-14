@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.mutatedx
+
+mutatedx()[source]
+ 
+Return whether the x-limits have changed since init.

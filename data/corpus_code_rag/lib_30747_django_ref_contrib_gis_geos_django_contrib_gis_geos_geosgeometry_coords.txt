@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.coords
+
+GEOSGeometry.coords  
+Returns the coordinates of the geometry as a tuple.

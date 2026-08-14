@@ -1,0 +1,4 @@
+# python.library.curses#curses.echo
+
+curses.echo()  
+Enter echo mode. In echo mode, each character input is echoed to the screen as it is entered.

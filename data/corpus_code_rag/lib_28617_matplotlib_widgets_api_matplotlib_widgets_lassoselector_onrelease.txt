@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.LassoSelector.onrelease
+
+onrelease(event)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

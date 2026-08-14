@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.skip
+
+@unittest.skip(reason)  
+Unconditionally skip the decorated test. reason should describe why the test is being skipped.

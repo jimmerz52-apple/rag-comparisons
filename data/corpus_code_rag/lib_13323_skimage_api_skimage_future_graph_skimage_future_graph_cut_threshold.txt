@@ -1,0 +1,29 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.cut_threshold
+
+skimage.future.graph.cut_threshold(labels, rag, thresh, in_place=True) [source]
+ 
+Combine regions separated by weight less than threshold. Given an image’s labels and its RAG, output new labels by combining regions whose nodes are separated by a weight less than the given threshold.  Parameters 
+ 
+labelsndarray 
+
+The array of labels.  
+ragRAG 
+
+The region adjacency graph.  
+threshfloat 
+
+The threshold. Regions connected by edges with smaller weights are combined.  
+in_placebool 
+
+If set, modifies rag in place. The function will remove the edges with weights less that thresh. If set to False the function makes a copy of rag before proceeding.    Returns 
+ 
+outndarray 
+
+The new labelled array.     References  
+1  
+Alain Tremeau and Philippe Colantoni “Regions Adjacency Graph Applied To Color Image Segmentation” DOI:10.1109/83.841950   Examples >>> from skimage import data, segmentation
+>>> from skimage.future import graph
+>>> img = data.astronaut()
+>>> labels = segmentation.slic(img)
+>>> rag = graph.rag_mean_color(img, labels)
+>>> new_labels = graph.cut_threshold(labels, rag, 10)

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DayMixin.get_next_day
+
+get_next_day(date)  
+Returns a date object containing the next valid day after the date provided. This function can also return None or raise an Http404 exception, depending on the values of allow_empty and allow_future.

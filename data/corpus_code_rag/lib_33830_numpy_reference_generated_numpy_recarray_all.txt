@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.all
+
+numpy.recarray.all method   recarray.all(axis=None, out=None, keepdims=False, *, where=True)
+ 
+Returns True if all elements evaluate to True. Refer to numpy.all for full documentation.  See also  numpy.all
+
+equivalent function

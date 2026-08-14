@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.move_ip
+
+move_ip() 
+ moves the rectangle, in place move_ip(x, y) -> None  Same as the Rect.move() method, but operates in place.

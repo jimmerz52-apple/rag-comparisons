@@ -1,0 +1,4 @@
+# python.library.pdb#pdb.pm
+
+pdb.pm()  
+Enter post-mortem debugging of the traceback found in sys.last_traceback.

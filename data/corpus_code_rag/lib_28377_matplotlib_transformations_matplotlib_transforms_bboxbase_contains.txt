@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.contains
+
+contains(x, y)[source]
+ 
+Return whether (x, y) is in the bounding box or on its edge.

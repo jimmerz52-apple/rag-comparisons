@@ -1,0 +1,4 @@
+# python.library.ast#ast.increment_lineno
+
+ast.increment_lineno(node, n=1)  
+Increment the line number and end line number of each node in the tree starting at node by n. This is useful to “move code” to a different location in a file.

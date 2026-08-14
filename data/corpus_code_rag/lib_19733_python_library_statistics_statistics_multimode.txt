@@ -1,0 +1,8 @@
+# python.library.statistics#statistics.multimode
+
+statistics.multimode(data)  
+Return a list of the most frequently occurring values in the order they were first encountered in the data. Will return more than one result if there are multiple modes or an empty list if the data is empty: >>> multimode('aabbbbccddddeeffffgg')
+['b', 'd', 'f']
+>>> multimode('')
+[]
+  New in version 3.8.

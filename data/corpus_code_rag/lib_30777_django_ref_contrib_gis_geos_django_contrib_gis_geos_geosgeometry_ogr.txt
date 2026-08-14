@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.ogr
+
+GEOSGeometry.ogr  
+Returns an OGRGeometry object corresponding to the GEOS geometry.

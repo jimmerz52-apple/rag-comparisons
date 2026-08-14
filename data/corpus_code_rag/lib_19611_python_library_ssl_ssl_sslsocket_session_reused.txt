@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.session_reused
+
+SSLSocket.session_reused  
+ New in version 3.6.

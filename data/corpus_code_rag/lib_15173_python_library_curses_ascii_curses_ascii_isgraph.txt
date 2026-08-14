@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isgraph
+
+curses.ascii.isgraph(c)  
+Checks for ASCII any printable character except space.

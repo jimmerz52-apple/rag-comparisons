@@ -1,0 +1,61 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogitFormatter
+
+classmatplotlib.ticker.LogitFormatter(*, use_overline=False, one_half='\x0crac{1}{2}', minor=False, minor_threshold=25, minor_number=6)[source]
+ 
+Bases: matplotlib.ticker.Formatter Probability formatter (using Math text).  Parameters 
+ 
+use_overlinebool, default: False
+
+
+If x > 1/2, with x = 1-v, indicate if x should be displayed as $overline{v}$. The default is to display $1-v$.  
+one_halfstr, default: r"frac{1}{2}"
+
+
+The string used to represent 1/2.  
+minorbool, default: False
+
+
+Indicate if the formatter is formatting minor ticks or not. Basically minor ticks are not labelled, except when only few ticks are provided, ticks with most space with neighbor ticks are labelled. See other parameters to change the default behavior.  
+minor_thresholdint, default: 25
+
+
+Maximum number of locs for labelling some minor ticks. This parameter have no effect if minor is False.  
+minor_numberint, default: 6
+
+
+Number of ticks which are labelled when the number of ticks is below the threshold.       format_data_short(value)[source]
+ 
+Return a short string version of the tick value. Defaults to the position-independent long value. 
+   set_locs(locs)[source]
+ 
+Set the locations of the ticks. This method is called before computing the tick labels because some formatters need to know all tick locations to do so. 
+   set_minor_number(minor_number)[source]
+ 
+Set the number of minor ticks to label when some minor ticks are labelled.  Parameters 
+ 
+minor_numberint
+
+
+Number of ticks which are labelled when the number of ticks is below the threshold.     
+   set_minor_threshold(minor_threshold)[source]
+ 
+Set the threshold for labelling minors ticks.  Parameters 
+ 
+minor_thresholdint
+
+
+Maximum number of locations for labelling some minor ticks. This parameter have no effect if minor is False.     
+   set_one_half(one_half)[source]
+ 
+Set the way one half is displayed.  one_halfstr, default: r"frac{1}{2}"
+
+
+The string used to represent 1/2.   
+   use_overline(use_overline)[source]
+ 
+Switch display mode with overline for labelling p>1/2.  Parameters 
+ 
+use_overlinebool, default: False
+
+
+If x > 1/2, with x = 1-v, indicate if x should be displayed as $overline{v}$. The default is to display $1-v$.

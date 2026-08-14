@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.TimedRotatingFileHandler.emit
+
+emit(record)  
+Outputs the record to the file, catering for rollover as described above.

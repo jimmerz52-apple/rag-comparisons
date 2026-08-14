@@ -1,0 +1,7 @@
+# python.library.decimal#decimal.Context.power
+
+power(x, y, modulo=None)  
+Return x to the power of y, reduced modulo modulo if given. With two arguments, compute x**y. If x is negative then y must be integral. The result will be inexact unless y is integral and the result is finite and can be expressed exactly in ‘precision’ digits. The rounding mode of the context is used. Results are always correctly-rounded in the Python version. Decimal(0) ** Decimal(0) results in InvalidOperation, and if InvalidOperation is not trapped, then results in Decimal('NaN').  Changed in version 3.3: The C module computes power() in terms of the correctly-rounded exp() and ln() functions. The result is well-defined but only “almost always correctly-rounded”.  With three arguments, compute (x**y) % modulo. For the three argument form, the following restrictions on the arguments hold:  all three arguments must be integral 
+y must be nonnegative at least one of x or y must be nonzero 
+modulo must be nonzero and have at most ‘precision’ digits  The value resulting from Context.power(x, y, modulo) is equal to the value that would be obtained by computing (x**y)
+% modulo with unbounded precision, but is computed more efficiently. The exponent of the result is zero, regardless of the exponents of x, y and modulo. The result is always exact.

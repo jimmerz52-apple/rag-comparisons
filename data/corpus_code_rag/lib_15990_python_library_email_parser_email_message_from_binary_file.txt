@@ -1,0 +1,4 @@
+# python.library.email.parser#email.message_from_binary_file
+
+email.message_from_binary_file(fp, _class=None, *, policy=policy.compat32)  
+Return a message object structure tree from an open binary file object. This is equivalent to BytesParser().parse(fp). _class and policy are interpreted as with the BytesParser class constructor.  New in version 3.2.   Changed in version 3.3: Removed the strict argument. Added the policy keyword.

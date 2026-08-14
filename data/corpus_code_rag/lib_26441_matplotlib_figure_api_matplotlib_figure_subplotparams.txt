@@ -1,0 +1,33 @@
+# matplotlib.figure_api#matplotlib.figure.SubplotParams
+
+classmatplotlib.figure.SubplotParams(left=None, bottom=None, right=None, top=None, wspace=None, hspace=None)[source]
+ 
+A class to hold the parameters for a subplot. Defaults are given by rcParams["figure.subplot.[name]"].  Parameters 
+ 
+leftfloat
+
+
+The position of the left edge of the subplots, as a fraction of the figure width.  
+rightfloat
+
+
+The position of the right edge of the subplots, as a fraction of the figure width.  
+bottomfloat
+
+
+The position of the bottom edge of the subplots, as a fraction of the figure height.  
+topfloat
+
+
+The position of the top edge of the subplots, as a fraction of the figure height.  
+wspacefloat
+
+
+The width of the padding between subplots, as a fraction of the average Axes width.  
+hspacefloat
+
+
+The height of the padding between subplots, as a fraction of the average Axes height.       update(left=None, bottom=None, right=None, top=None, wspace=None, hspace=None)[source]
+ 
+Update the dimensions of the passed parameters. None means unchanged. 
+   propertyvalidate[source]

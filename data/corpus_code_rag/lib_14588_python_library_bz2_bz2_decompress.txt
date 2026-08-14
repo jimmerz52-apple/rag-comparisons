@@ -1,0 +1,4 @@
+# python.library.bz2#bz2.decompress
+
+bz2.decompress(data)  
+Decompress data, a bytes-like object. If data is the concatenation of multiple compressed streams, decompress all of the streams. For incremental decompression, use a BZ2Decompressor instead.  Changed in version 3.3: Support for multi-stream inputs was added.

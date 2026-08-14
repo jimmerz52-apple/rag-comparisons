@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.open
+
+IMAP4.open(host, port, timeout=None)  
+Opens socket to port at host. The optional timeout parameter specifies a timeout in seconds for the connection attempt. If timeout is not given or is None, the global default socket timeout is used. Also note that if the timeout parameter is set to be zero, it will raise a ValueError to reject creating a non-blocking socket. This method is implicitly called by the IMAP4 constructor. The connection objects established by this method will be used in the IMAP4.read(), IMAP4.readline(), IMAP4.send(), and IMAP4.shutdown() methods. You may override this method. Raises an auditing event imaplib.open with arguments self, host, port.  Changed in version 3.9: The timeout parameter was added.

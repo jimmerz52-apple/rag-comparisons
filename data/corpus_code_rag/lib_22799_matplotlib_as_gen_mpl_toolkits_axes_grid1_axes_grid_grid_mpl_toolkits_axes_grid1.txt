@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.grid#mpl_toolkits.axes_grid1.axes_grid.Grid.set_label_mode
+
+set_label_mode(mode)[source]
+ 
+Define which axes have tick labels.  Parameters 
+ 
+mode{"L", "1", "all"}
+
+
+The label mode:  "L": All axes on the left column get vertical tick labels; all axes on the bottom row get horizontal tick labels. "1": Only the bottom left axes is labelled. "all": all axes are labelled.

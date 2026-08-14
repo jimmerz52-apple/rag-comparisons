@@ -1,0 +1,9 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axis3d.axis#mpl_toolkits.mplot3d.axis3d.Axis.draw
+
+draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses.

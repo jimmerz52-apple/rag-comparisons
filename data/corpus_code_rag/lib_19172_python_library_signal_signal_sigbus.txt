@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGBUS
+
+signal.SIGBUS  
+Bus error (bad memory access). Availability: Unix.

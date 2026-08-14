@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.CallgrindStats.delta
+
+delta(other, inclusive=False, subtract_baselines=True) [source]
+ 
+Diff two sets of counts. One common reason to collect instruction counts is to determine the the effect that a particular change will have on the number of instructions needed to perform some unit of work. If a change increases that number, the next logical question is “why”. This generally involves looking at what part if the code increased in instruction count. This function automates that process so that one can easily diff counts on both an inclusive and exclusive basis. The subtract_baselines argument allows one to disable baseline correction, though in most cases it shouldn’t matter as the baselines are expected to more or less cancel out.

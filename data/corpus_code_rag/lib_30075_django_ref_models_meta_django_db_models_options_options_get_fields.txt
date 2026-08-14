@@ -1,0 +1,42 @@
+# django.ref.models.meta#django.db.models.options.Options.get_fields
+
+Options.get_fields(include_parents=True, include_hidden=False)  
+Returns a tuple of fields associated with a model. get_fields() accepts two parameters that can be used to control which fields are returned:  
+include_parents  
+True by default. Recursively includes fields defined on parent classes. If set to False, get_fields() will only search for fields declared directly on the current model. Fields from models that directly inherit from abstract models or proxy classes are considered to be local, not on the parent. 
+include_hidden  
+False by default. If set to True, get_fields() will include fields that are used to back other field’s functionality. This will also include any fields that have a related_name (such as ManyToManyField, or ForeignKey) that start with a “+”.  >>> from django.contrib.auth.models import User
+>>> User._meta.get_fields()
+(<ManyToOneRel: admin.logentry>,
+ <django.db.models.fields.AutoField: id>,
+ <django.db.models.fields.CharField: password>,
+ <django.db.models.fields.DateTimeField: last_login>,
+ <django.db.models.fields.BooleanField: is_superuser>,
+ <django.db.models.fields.CharField: username>,
+ <django.db.models.fields.CharField: first_name>,
+ <django.db.models.fields.CharField: last_name>,
+ <django.db.models.fields.EmailField: email>,
+ <django.db.models.fields.BooleanField: is_staff>,
+ <django.db.models.fields.BooleanField: is_active>,
+ <django.db.models.fields.DateTimeField: date_joined>,
+ <django.db.models.fields.related.ManyToManyField: groups>,
+ <django.db.models.fields.related.ManyToManyField: user_permissions>)
+
+# Also include hidden fields.
+>>> User._meta.get_fields(include_hidden=True)
+(<ManyToOneRel: auth.user_groups>,
+ <ManyToOneRel: auth.user_user_permissions>,
+ <ManyToOneRel: admin.logentry>,
+ <django.db.models.fields.AutoField: id>,
+ <django.db.models.fields.CharField: password>,
+ <django.db.models.fields.DateTimeField: last_login>,
+ <django.db.models.fields.BooleanField: is_superuser>,
+ <django.db.models.fields.CharField: username>,
+ <django.db.models.fields.CharField: first_name>,
+ <django.db.models.fields.CharField: last_name>,
+ <django.db.models.fields.EmailField: email>,
+ <django.db.models.fields.BooleanField: is_staff>,
+ <django.db.models.fields.BooleanField: is_active>,
+ <django.db.models.fields.DateTimeField: date_joined>,
+ <django.db.models.fields.related.ManyToManyField: groups>,
+ <django.db.models.fields.related.ManyToManyField: user_permissions>)

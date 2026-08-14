@@ -1,0 +1,5 @@
+# python.library.datetime#datetime.datetime.fromordinal
+
+classmethod datetime.fromordinal(ordinal)  
+Return the datetime corresponding to the proleptic Gregorian ordinal, where January 1 of year 1 has ordinal 1. ValueError is raised unless 1
+<= ordinal <= datetime.max.toordinal(). The hour, minute, second and microsecond of the result are all 0, and tzinfo is None.

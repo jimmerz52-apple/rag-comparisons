@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessday.is_on_offset
+
+pandas.tseries.offsets.BusinessDay.is_on_offset   BusinessDay.is_on_offset()

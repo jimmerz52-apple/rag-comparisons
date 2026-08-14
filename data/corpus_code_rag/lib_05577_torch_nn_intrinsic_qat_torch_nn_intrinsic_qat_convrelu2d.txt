@@ -1,0 +1,6 @@
+# torch.nn.intrinsic.qat#torch.nn.intrinsic.qat.ConvReLU2d
+
+class torch.nn.intrinsic.qat.ConvReLU2d(in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, groups=1, bias=True, padding_mode='zeros', qconfig=None) [source]
+ 
+A ConvReLU2d module is a fused module of Conv2d and ReLU, attached with FakeQuantize modules for weight for quantization aware training. We combined the interface of Conv2d and BatchNorm2d.  Variables 
+~ConvReLU2d.weight_fake_quant – fake quant module for weight

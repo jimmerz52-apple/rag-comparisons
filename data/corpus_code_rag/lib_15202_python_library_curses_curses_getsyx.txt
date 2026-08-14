@@ -1,0 +1,4 @@
+# python.library.curses#curses.getsyx
+
+curses.getsyx()  
+Return the current coordinates of the virtual screen cursor as a tuple (y, x). If leaveok is currently True, then return (-1, -1).

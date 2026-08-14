@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.functiontransformer#sklearn.preprocessing.FunctionTransformer.transform
+
+transform(X) [source]
+ 
+Transform X using the forward function.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+Input array.    Returns 
+ 
+X_outarray-like, shape (n_samples, n_features) 
+
+Transformed input.

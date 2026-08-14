@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.series.dt.tz
+
+pandas.Series.dt.tz   Series.dt.tz
+ 
+Return the timezone.  Returns 
+ datetime.tzinfo, pytz.tzinfo.BaseTZInfo, dateutil.tz.tz.tzfile, or None
+
+Returns None when the array is tz-naive.

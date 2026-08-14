@@ -1,0 +1,25 @@
+# torch.distributed#torch.distributed.gather_object
+
+torch.distributed.gather_object(obj, object_gather_list=None, dst=0, group=None) [source]
+ 
+Gathers picklable objects from the whole group in a single process. Similar to gather(), but Python objects can be passed in. Note that the object must be picklable in order to be gathered.  Parameters 
+ 
+obj (Any) – Input object. Must be picklable. 
+object_gather_list (list[Any]) – Output list. On the dst rank, it should be correctly sized as the size of the group for this collective and will contain the output. Must be None on non-dst ranks. (default is None) 
+dst (int, optional) – Destination rank. (default is 0) 
+group – (ProcessGroup, optional): The process group to work on. If None, the default process group will be used. Default is None.   Returns 
+None. On the dst rank, object_gather_list will contain the output of the collective.    Note Note that this API differs slightly from the gather collective since it does not provide an async_op handle and thus will be a blocking call.   Note Note that this API is not supported when using the NCCL backend.   Warning gather_object() uses pickle module implicitly, which is known to be insecure. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling. Only call this function with data you trust.   Example::
+
+>>> # Note: Process group initialization omitted on each rank.
+>>> import torch.distributed as dist
+>>> # Assumes world_size of 3.
+>>> gather_objects = ["foo", 12, {1: 2}] # any picklable object
+>>> output = [None for _ in gather_objects]
+>>> dist.gather_object(
+        gather_objects[dist.get_rank()],
+        output if dist.get_rank() == 0 else None,
+        dst=0
+    )
+>>> # On rank 0
+>>> output
+['foo', 12, {1: 2}]

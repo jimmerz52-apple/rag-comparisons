@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.MemoryHandler.setTarget
+
+setTarget(target)  
+Sets the target handler for this handler.

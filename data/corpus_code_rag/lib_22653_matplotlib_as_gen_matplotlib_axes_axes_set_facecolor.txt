@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_facecolor
+
+matplotlib.axes.Axes.set_facecolor   Axes.set_facecolor(color)[source]
+ 
+Set the facecolor of the Axes.  Parameters 
+ 
+colorcolor
+
+   
+  Examples using matplotlib.axes.Axes.set_facecolor
+ 
+   Color Demo

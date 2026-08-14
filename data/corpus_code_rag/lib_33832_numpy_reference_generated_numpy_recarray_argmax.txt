@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.argmax
+
+numpy.recarray.argmax method   recarray.argmax(axis=None, out=None)
+ 
+Return indices of the maximum values along the given axis. Refer to numpy.argmax for full documentation.  See also  numpy.argmax
+
+equivalent function

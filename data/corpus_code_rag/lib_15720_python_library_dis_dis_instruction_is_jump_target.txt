@@ -1,0 +1,4 @@
+# python.library.dis#dis.Instruction.is_jump_target
+
+is_jump_target  
+True if other code jumps to here, otherwise False

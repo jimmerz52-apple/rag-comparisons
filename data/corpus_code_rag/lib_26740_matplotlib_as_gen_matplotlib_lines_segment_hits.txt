@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.segment_hits
+
+matplotlib.lines.segment_hits   matplotlib.lines.segment_hits(cx, cy, x, y, radius)[source]
+ 
+Return the indices of the segments in the polyline with coordinates (cx, cy) that are within a distance radius of the point (x, y).

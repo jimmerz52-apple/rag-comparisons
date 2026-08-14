@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.CannotSendRequest
+
+exception http.client.CannotSendRequest  
+A subclass of ImproperConnectionState.

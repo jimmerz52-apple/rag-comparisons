@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.save_related
+
+ModelAdmin.save_related(request, form, formsets, change)  
+The save_related method is given the HttpRequest, the parent ModelForm instance, the list of inline formsets and a boolean value based on whether the parent is being added or changed. Here you can do any pre- or post-save operations for objects related to the parent. Note that at this point the parent object and its form have already been saved.

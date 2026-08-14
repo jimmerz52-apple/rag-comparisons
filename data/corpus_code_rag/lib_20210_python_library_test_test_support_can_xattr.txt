@@ -1,0 +1,4 @@
+# python.library.test#test.support.can_xattr
+
+test.support.can_xattr()  
+Return True if the OS supports xattr, False otherwise.

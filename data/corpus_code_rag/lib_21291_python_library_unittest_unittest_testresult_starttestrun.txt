@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.startTestRun
+
+startTestRun()  
+Called once before any tests are executed.  New in version 3.1.

@@ -1,0 +1,4 @@
+# python.library.os#os.remove
+
+os.remove(path, *, dir_fd=None)  
+Remove (delete) the file path. If path is a directory, an IsADirectoryError is raised. Use rmdir() to remove directories. If the file does not exist, a FileNotFoundError is raised. This function can support paths relative to directory descriptors. On Windows, attempting to remove a file that is in use causes an exception to be raised; on Unix, the directory entry is removed but the storage allocated to the file is not made available until the original file is no longer in use. This function is semantically identical to unlink(). Raises an auditing event os.remove with arguments path, dir_fd.  New in version 3.3: The dir_fd argument.   Changed in version 3.6: Accepts a path-like object.

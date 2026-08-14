@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.getint
+
+getint(section, option, *, raw=False, vars=None[, fallback])  
+A convenience method which coerces the option in the specified section to an integer. See get() for explanation of raw, vars and fallback.

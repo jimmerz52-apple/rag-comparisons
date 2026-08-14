@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Stream.write
+
+write(data)[source]
+ 
+Write some data on the stream.

@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.clrtobot
+
+window.clrtobot()  
+Erase from cursor to the end of the window: all lines below the cursor are deleted, and then the equivalent of clrtoeol() is performed.

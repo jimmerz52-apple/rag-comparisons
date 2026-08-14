@@ -1,0 +1,5 @@
+# python.library.imaplib#imaplib.IMAP4.thread
+
+IMAP4.thread(threading_algorithm, charset, search_criterion[, ...])  
+The thread command is a variant of search with threading semantics for the results. Returned data contains a space separated list of thread members. Thread members consist of zero or more messages numbers, delimited by spaces, indicating successive parent and child. Thread has two arguments before the search_criterion argument(s); a threading_algorithm, and the searching charset. Note that unlike search, the searching charset argument is mandatory. There is also a uid thread command which corresponds to thread the way that uid
+search corresponds to search. The thread command first searches the mailbox for messages that match the given searching criteria using the charset argument for the interpretation of strings in the searching criteria. It then returns the matching messages threaded according to the specified threading algorithm. This is an IMAP4rev1 extension command.

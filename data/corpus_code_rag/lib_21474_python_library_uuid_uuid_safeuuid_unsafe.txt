@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.SafeUUID.unsafe
+
+unsafe  
+The UUID was not generated in a multiprocessing-safe way.

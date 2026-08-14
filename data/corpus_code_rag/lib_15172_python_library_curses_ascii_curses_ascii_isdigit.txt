@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isdigit
+
+curses.ascii.isdigit(c)  
+Checks for an ASCII decimal digit, '0' through '9'. This is equivalent to c in string.digits.

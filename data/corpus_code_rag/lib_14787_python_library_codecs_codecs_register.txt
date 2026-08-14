@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.register
+
+codecs.register(search_function)  
+Register a codec search function. Search functions are expected to take one argument, being the encoding name in all lower case letters with hyphens and spaces converted to underscores, and return a CodecInfo object. In case a search function cannot find a given encoding, it should return None.  Changed in version 3.9: Hyphens and spaces are converted to underscore.   Note Search function registration is not currently reversible, which may cause problems in some cases, such as unit testing or module reloading.

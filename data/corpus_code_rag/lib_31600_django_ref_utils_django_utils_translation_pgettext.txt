@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.pgettext
+
+pgettext(context, message)  
+Translates message given the context and returns it as a string. For more information, see Contextual markers.

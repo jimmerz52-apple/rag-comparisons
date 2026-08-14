@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ContentRange.set
+
+set(start, stop, length=None, units='bytes')  
+Simple method to update the ranges.

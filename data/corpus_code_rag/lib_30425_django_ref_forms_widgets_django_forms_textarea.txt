@@ -1,0 +1,6 @@
+# django.ref.forms.widgets#django.forms.Textarea
+
+class Textarea  
+ 
+template_name: 'django/forms/widgets/textarea.html'
+ Renders as: <textarea>...</textarea>

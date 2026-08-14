@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.has_delete_permission
+
+InlineModelAdmin.has_delete_permission(request, obj=None)  
+Should return True if deleting an inline object is permitted, False otherwise. obj is the parent object being edited.

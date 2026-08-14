@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.model_selection.randomizedsearchcv#sklearn.model_selection.RandomizedSearchCV.score
+
+score(X, y=None) [source]
+ 
+Returns the score on the given data, if the estimator has been refit. This uses the score defined by scoring where provided, and the best_estimator_.score method otherwise.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Input data, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples, n_output) or (n_samples,), default=None 
+
+Target relative to X for classification or regression; None for unsupervised learning.    Returns 
+ 
+scorefloat

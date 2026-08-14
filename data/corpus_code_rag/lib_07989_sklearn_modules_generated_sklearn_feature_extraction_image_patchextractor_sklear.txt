@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.image.patchextractor#sklearn.feature_extraction.image.PatchExtractor.transform
+
+transform(X) [source]
+ 
+Transforms the image samples in X into a matrix of patch data.  Parameters 
+ 
+Xndarray of shape (n_samples, image_height, image_width) or (n_samples, image_height, image_width, n_channels) 
+
+Array of images from which to extract patches. For color images, the last dimension specifies the channel: a RGB image would have n_channels=3.    Returns 
+ 
+patchesarray of shape (n_patches, patch_height, patch_width) or (n_patches, patch_height, patch_width, n_channels) 
+
+The collection of patches extracted from the images, where n_patches is either n_samples * max_patches or the total number of patches that can be extracted.

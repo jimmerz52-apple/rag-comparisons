@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.keras.datasets.boston_housing
+
+Module: tf.compat.v1.keras.datasets.boston_housing Boston housing price regression dataset. Functions load_data(...): Loads the Boston Housing dataset.

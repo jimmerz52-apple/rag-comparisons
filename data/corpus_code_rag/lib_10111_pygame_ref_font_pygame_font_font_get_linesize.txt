@@ -1,0 +1,4 @@
+# pygame.ref.font#pygame.font.Font.get_linesize
+
+get_linesize() 
+ get the line space of the font text get_linesize() -> int  Return the height in pixels for a line of text with the font. When rendering multiple lines of text this is the recommended amount of space between lines.

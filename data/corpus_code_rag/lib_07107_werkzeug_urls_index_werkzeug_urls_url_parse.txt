@@ -1,0 +1,9 @@
+# werkzeug.urls.index#werkzeug.urls.url_parse
+
+werkzeug.urls.url_parse(url, scheme=None, allow_fragments=True)  
+Parses a URL from a string into a URL tuple. If the URL is lacking a scheme it can be provided as second argument. Otherwise, it is ignored. Optionally fragments can be stripped from the URL by setting allow_fragments to False. The inverse of this function is url_unparse().  Parameters 
+ 
+url (str) – the URL to parse. 
+scheme (Optional[str]) – the default schema to use if the URL is schemaless. 
+allow_fragments (bool) – if set to False a fragment will be removed from the URL.   Return type 
+werkzeug.urls.BaseURL

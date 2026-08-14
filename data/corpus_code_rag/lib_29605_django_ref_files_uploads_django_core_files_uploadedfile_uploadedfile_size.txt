@@ -1,0 +1,4 @@
+# django.ref.files.uploads#django.core.files.uploadedfile.UploadedFile.size
+
+UploadedFile.size  
+The size, in bytes, of the uploaded file.

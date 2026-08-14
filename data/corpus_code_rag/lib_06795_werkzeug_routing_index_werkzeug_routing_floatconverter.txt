@@ -1,0 +1,12 @@
+# werkzeug.routing.index#werkzeug.routing.FloatConverter
+
+class werkzeug.routing.FloatConverter(map, min=None, max=None, signed=False)  
+This converter only accepts floating point values: Rule("/probability/<float:probability>")
+ By default it only accepts unsigned, positive values. The signed parameter will enable signed, negative values. Rule("/offset/<float(signed=True):offset>")
+  Parameters 
+ 
+map (Map) – The Map. 
+min (Optional[float]) – The minimal value. 
+max (Optional[float]) – The maximal value. 
+signed (bool) – Allow signed (negative) values.   Return type 
+None    Changelog New in version 0.15: The signed parameter.

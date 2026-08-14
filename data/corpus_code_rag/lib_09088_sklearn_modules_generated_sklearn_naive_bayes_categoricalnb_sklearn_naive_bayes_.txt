@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.naive_bayes.categoricalnb#sklearn.naive_bayes.CategoricalNB.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit Naive Bayes classifier according to X, y  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features. Here, each feature of X is assumed to be from a different categorical distribution. It is further assumed that all categories of each feature are represented by the numbers 0, …, n - 1, where n refers to the total number of categories for the given feature. This can, for instance, be achieved with the help of OrdinalEncoder.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples), default=None 
+
+Weights applied to individual samples (1. for unweighted).    Returns 
+ 
+selfobject

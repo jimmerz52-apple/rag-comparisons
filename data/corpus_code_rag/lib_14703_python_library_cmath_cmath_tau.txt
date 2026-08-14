@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.tau
+
+cmath.tau  
+The mathematical constant τ, as a float.  New in version 3.6.

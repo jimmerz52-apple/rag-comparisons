@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.shutdown
+
+shutdown()  
+Tell the serve_forever() loop to stop and wait until it does. shutdown() must be called while serve_forever() is running in a different thread otherwise it will deadlock.

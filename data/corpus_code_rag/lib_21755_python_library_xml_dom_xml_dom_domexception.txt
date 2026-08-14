@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.DOMException
+
+exception xml.dom.DOMException  
+Base exception class used for all specific DOM exceptions. This exception class cannot be directly instantiated.

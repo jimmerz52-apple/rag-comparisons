@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.getsize
+
+getsize()  
+Returns the size of the chunk.

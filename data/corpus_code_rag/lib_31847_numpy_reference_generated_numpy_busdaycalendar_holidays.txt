@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.busdaycalendar.holidays
+
+numpy.busdaycalendar.holidays attribute   busdaycalendar.holidays
+ 
+A copy of the holiday array indicating additional invalid days.

@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.cross_decomposition.plssvd#sklearn.cross_decomposition.PLSSVD.fit_transform
+
+fit_transform(X, y=None) [source]
+ 
+Learn and apply the dimensionality reduction.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Training samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_targets), default=None 
+
+Targets.    Returns 
+ 
+outarray-like or tuple of array-like 
+
+The transformed data X_tranformed if Y is not None, (X_transformed, Y_transformed) otherwise.

@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.complex128
+
+numpy.complex128[source]
+ 
+alias of numpy.cdouble

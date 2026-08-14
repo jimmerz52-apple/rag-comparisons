@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.core.groupby.seriesgroupby.is_monotonic_decreasing
+
+pandas.core.groupby.SeriesGroupBy.is_monotonic_decreasing   propertySeriesGroupBy.is_monotonic_decreasing
+ 
+Return boolean if values in the object are monotonic_decreasing.  Returns 
+ bool

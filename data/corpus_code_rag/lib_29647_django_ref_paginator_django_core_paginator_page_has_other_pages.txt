@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Page.has_other_pages
+
+Page.has_other_pages()  
+Returns True if there’s a next or previous page.

@@ -1,0 +1,4 @@
+# python.library.logging#logging.Handler.close
+
+close()  
+Tidy up any resources used by the handler. This version does no output but removes the handler from an internal list of handlers which is closed when shutdown() is called. Subclasses should ensure that this gets called from overridden close() methods.

@@ -1,0 +1,6 @@
+# torch.distributions#torch.distributions.distribution.Distribution.icdf
+
+icdf(value) [source]
+ 
+Returns the inverse cumulative density/mass function evaluated at value.  Parameters 
+value (Tensor) –

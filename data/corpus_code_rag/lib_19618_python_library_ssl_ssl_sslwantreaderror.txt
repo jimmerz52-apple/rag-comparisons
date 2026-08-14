@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLWantReadError
+
+exception ssl.SSLWantReadError  
+A subclass of SSLError raised by a non-blocking SSL socket when trying to read or write data, but more data needs to be received on the underlying TCP transport before the request can be fulfilled.  New in version 3.3.

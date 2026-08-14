@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.Storage.delete
+
+delete(name)  
+Deletes the file referenced by name. If deletion is not supported on the target storage system this will raise NotImplementedError instead.

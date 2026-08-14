@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.get_rasterized
+
+get_rasterized()[source]
+ 
+Return whether the artist is to be rasterized.

@@ -1,0 +1,5 @@
+# python.library.readline#readline.set_completer_delims
+
+readline.set_completer_delims(string)  
+readline.get_completer_delims()  
+Set or get the word delimiters for completion. These determine the start of the word to be considered for completion (the completion scope). These functions access the rl_completer_word_break_characters variable in the underlying library.

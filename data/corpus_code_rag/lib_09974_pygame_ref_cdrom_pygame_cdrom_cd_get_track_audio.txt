@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_track_audio
+
+get_track_audio() 
+ true if the cdrom track has audio data get_track_audio(track) -> bool  Determine if a track on a cdrom contains audio data. You can also call CD.num_tracks() and CD.get_all() to determine more information about the cdrom. Note, track 0 is the first track on the CD. Track numbers start at zero.

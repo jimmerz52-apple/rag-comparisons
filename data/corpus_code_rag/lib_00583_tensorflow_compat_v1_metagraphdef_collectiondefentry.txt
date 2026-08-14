@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.metagraphdef.collectiondefentry
+
+tf.compat.v1.MetaGraphDef.CollectionDefEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   CollectionDef value

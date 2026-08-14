@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ceil
+
+ceil() → Tensor  
+See torch.ceil()

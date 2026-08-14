@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.get
+
+get(name, failobj=None)  
+Return the value of the named header field. This is identical to __getitem__() except that optional failobj is returned if the named header is missing (defaults to None).

@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.model_selection.halvinggridsearchcv#sklearn.model_selection.HalvingGridSearchCV.predict
+
+predict(X) [source]
+ 
+Call predict on the estimator with the best found parameters. Only available if refit=True and the underlying estimator supports predict.  Parameters 
+ 
+Xindexable, length n_samples 
+
+Must fulfill the input assumptions of the underlying estimator.

@@ -1,0 +1,11 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.feature_sorted
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.feature_sorted method   distutils.ccompiler_opt.CCompilerOpt.feature_sorted(names, reverse=False)[source]
+ 
+Sort a list of CPU features ordered by the lowest interest.  Parameters 
+ ‘names’: sequence
+
+sequence of supported feature names in uppercase.  ‘reverse’: bool, optional
+
+If true, the sorted features is reversed. (highest interest)    Returns 
+ list, sorted CPU features

@@ -1,0 +1,10 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.Normal
+
+classmatplotlib.patheffects.Normal(offset=(0.0, 0.0))[source]
+ 
+Bases: matplotlib.patheffects.AbstractPathEffect The "identity" PathEffect. The Normal PathEffect's sole purpose is to draw the original artist with no special path effect.  Parameters 
+ 
+offset(float, float), default: (0, 0)
+
+
+The (x, y) offset to apply to the path, measured in points.

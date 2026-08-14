@@ -1,0 +1,4 @@
+# python.library.xml.sax.reader#xml.sax.xmlreader.AttributesNS.getQNameByName
+
+AttributesNS.getQNameByName(name)  
+Return the qualified name for a (namespace, localname) pair.

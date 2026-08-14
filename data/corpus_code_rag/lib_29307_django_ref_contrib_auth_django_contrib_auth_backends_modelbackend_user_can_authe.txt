@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.ModelBackend.user_can_authenticate
+
+user_can_authenticate()  
+Returns whether the user is allowed to authenticate. To match the behavior of AuthenticationForm which prohibits inactive users from logging in, this method returns False for users with is_active=False. Custom user models that don’t have an is_active field are allowed.

@@ -1,0 +1,4 @@
+# python.library.socket#socket.if_indextoname
+
+socket.if_indextoname(if_index)  
+Return a network interface name corresponding to an interface index number. OSError if no interface with the given index exists. Availability: Unix, Windows.  New in version 3.3.   Changed in version 3.8: Windows support was added.   See also “Interface name” is a name as documented in if_nameindex().

@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.vary.vary_on_headers
+
+vary_on_headers(*headers)  
+The Vary header defines which request headers a cache mechanism should take into account when building its cache key. See using vary headers.

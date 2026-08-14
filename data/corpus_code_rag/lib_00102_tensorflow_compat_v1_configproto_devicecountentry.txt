@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.configproto.devicecountentry
+
+tf.compat.v1.ConfigProto.DeviceCountEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   int32 value

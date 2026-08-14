@@ -1,0 +1,20 @@
+# skimage.api.skimage.filters#skimage.filters.try_all_threshold
+
+skimage.filters.try_all_threshold(image, figsize=(8, 5), verbose=True) [source]
+ 
+Returns a figure comparing the outputs of different thresholding methods.  Parameters 
+ 
+image(N, M) ndarray 
+
+Input image.  
+figsizetuple, optional 
+
+Figure size (in inches).  
+verbosebool, optional 
+
+Print function name for each method.    Returns 
+ 
+fig, axtuple 
+
+Matplotlib figure and axes.     Notes The following algorithms are used:  isodata li mean minimum otsu triangle yen  Examples >>> from skimage.data import text
+>>> fig, ax = try_all_threshold(text(), figsize=(10, 6), verbose=False)

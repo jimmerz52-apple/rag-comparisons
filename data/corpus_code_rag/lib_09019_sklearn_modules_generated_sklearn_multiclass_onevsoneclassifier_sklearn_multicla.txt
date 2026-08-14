@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsoneclassifier#sklearn.multiclass.OneVsOneClassifier.fit
+
+fit(X, y) [source]
+ 
+Fit underlying estimators.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.  
+yarray-like of shape (n_samples,) 
+
+Multi-class targets.    Returns 
+ self

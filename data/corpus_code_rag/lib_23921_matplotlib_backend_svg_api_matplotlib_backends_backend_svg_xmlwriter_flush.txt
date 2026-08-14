@@ -1,0 +1,5 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.flush
+
+flush()[source]
+ 
+Flush the output stream.

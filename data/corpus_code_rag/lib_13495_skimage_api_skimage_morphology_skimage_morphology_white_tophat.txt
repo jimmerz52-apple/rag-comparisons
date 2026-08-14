@@ -1,0 +1,37 @@
+# skimage.api.skimage.morphology#skimage.morphology.white_tophat
+
+skimage.morphology.white_tophat(image, selem=None, out=None) [source]
+ 
+Return white top hat of an image. The white top hat of an image is defined as the image minus its morphological opening. This operation returns the bright spots of the image that are smaller than the structuring element.  Parameters 
+ 
+imagendarray 
+
+Image array.  
+selemndarray, optional 
+
+The neighborhood expressed as an array of 1’s and 0’s. If None, use cross-shaped structuring element (connectivity=1).  
+outndarray, optional 
+
+The array to store the result of the morphology. If None is passed, a new array will be allocated.    Returns 
+ 
+outarray, same shape and type as image 
+
+The result of the morphological white top hat.      See also  
+black_tophat
+
+  References  
+1  
+https://en.wikipedia.org/wiki/Top-hat_transform   Examples >>> # Subtract grey background from bright peak
+>>> import numpy as np
+>>> from skimage.morphology import square
+>>> bright_on_grey = np.array([[2, 3, 3, 3, 2],
+...                            [3, 4, 5, 4, 3],
+...                            [3, 5, 9, 5, 3],
+...                            [3, 4, 5, 4, 3],
+...                            [2, 3, 3, 3, 2]], dtype=np.uint8)
+>>> white_tophat(bright_on_grey, square(3))
+array([[0, 0, 0, 0, 0],
+       [0, 0, 1, 0, 0],
+       [0, 1, 5, 1, 0],
+       [0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 0]], dtype=uint8)

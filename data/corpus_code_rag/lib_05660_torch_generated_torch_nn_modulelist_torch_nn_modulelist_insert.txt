@@ -1,0 +1,8 @@
+# torch.generated.torch.nn.modulelist#torch.nn.ModuleList.insert
+
+insert(index, module) [source]
+ 
+Insert a given module before a given index in the list.  Parameters 
+ 
+index (int) – index to insert. 
+module (nn.Module) – module to insert

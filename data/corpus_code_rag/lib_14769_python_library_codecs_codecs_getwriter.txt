@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.getwriter
+
+codecs.getwriter(encoding)  
+Look up the codec for the given encoding and return its StreamWriter class or factory function. Raises a LookupError in case the encoding cannot be found.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_label
+
+matplotlib.artist.Artist.get_label   Artist.get_label()[source]
+ 
+Return the label used for this artist in the legend.

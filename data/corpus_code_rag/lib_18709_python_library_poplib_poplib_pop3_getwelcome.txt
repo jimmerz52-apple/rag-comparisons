@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.getwelcome
+
+POP3.getwelcome()  
+Returns the greeting string sent by the POP3 server.

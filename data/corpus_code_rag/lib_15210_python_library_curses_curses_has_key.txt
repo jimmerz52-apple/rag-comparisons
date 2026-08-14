@@ -1,0 +1,4 @@
+# python.library.curses#curses.has_key
+
+curses.has_key(ch)  
+Take a key value ch, and return True if the current terminal type recognizes a key with that value.

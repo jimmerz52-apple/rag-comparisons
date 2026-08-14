@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.Loader.exec_module
+
+exec_module(module)  
+An abstract method that executes the module in its own namespace when a module is imported or reloaded. The module should already be initialized when exec_module() is called. When this method exists, create_module() must be defined.  New in version 3.4.   Changed in version 3.6: create_module() must also be defined.

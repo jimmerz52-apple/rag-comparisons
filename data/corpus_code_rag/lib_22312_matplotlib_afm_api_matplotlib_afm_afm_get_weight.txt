@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_weight
+
+get_weight()[source]
+ 
+Return the font weight, e.g., 'Bold' or 'Roman'.

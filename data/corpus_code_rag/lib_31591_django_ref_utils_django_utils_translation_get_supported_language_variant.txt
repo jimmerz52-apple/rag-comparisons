@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.get_supported_language_variant
+
+get_supported_language_variant(lang_code, strict=False)  
+Returns lang_code if it’s in the LANGUAGES setting, possibly selecting a more generic variant. For example, 'es' is returned if lang_code is 'es-ar' and 'es' is in LANGUAGES but 'es-ar' isn’t. If strict is False (the default), a country-specific variant may be returned when neither the language code nor its generic variant is found. For example, if only 'es-co' is in LANGUAGES, that’s returned for lang_codes like 'es' and 'es-ar'. Those matches aren’t returned if strict=True. Raises LookupError if nothing is found.

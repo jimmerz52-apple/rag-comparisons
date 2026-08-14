@@ -1,0 +1,4 @@
+# python.library.curses#curses.def_shell_mode
+
+curses.def_shell_mode()  
+Save the current terminal mode as the “shell” mode, the mode when the running program is not using curses. (Its counterpart is the “program” mode, when the program is using curses capabilities.) Subsequent calls to reset_shell_mode() will restore this mode.

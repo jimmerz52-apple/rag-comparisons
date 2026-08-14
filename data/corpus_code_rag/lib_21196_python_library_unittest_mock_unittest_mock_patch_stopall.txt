@@ -1,0 +1,4 @@
+# python.library.unittest.mock#unittest.mock.patch.stopall
+
+patch.stopall()  
+Stop all active patches. Only stops patches started with start.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.sinh
+
+tf.experimental.numpy.sinh TensorFlow variant of NumPy's sinh. 
+tf.experimental.numpy.sinh(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.sinh.

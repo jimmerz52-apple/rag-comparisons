@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.View.setup
+
+setup(request, *args, **kwargs)  
+Performs key view initialization prior to dispatch(). If overriding this method, you must call super().

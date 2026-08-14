@@ -1,0 +1,4 @@
+# python.library.curses#curses.flash
+
+curses.flash()  
+Flash the screen. That is, change it to reverse-video and then change it back in a short interval. Some people prefer such as ‘visible bell’ to the audible attention signal produced by beep().

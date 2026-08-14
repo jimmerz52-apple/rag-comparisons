@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.can_zoom
+
+can_zoom()[source]
+ 
+Return whether this axes supports the zoom box button functionality. This axes object does not support interactive zoom box.

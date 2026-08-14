@@ -1,0 +1,18 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ViewsPositionsBase.trigger
+
+trigger(sender, event, data=None)[source]
+ 
+Called when this tool gets used. This method is called by ToolManager.trigger_tool.  Parameters 
+ 
+eventEvent
+
+
+The canvas event that caused this tool to be called.  
+senderobject
+
+
+Object that requested the tool to be triggered.  
+dataobject
+
+
+Extra data.

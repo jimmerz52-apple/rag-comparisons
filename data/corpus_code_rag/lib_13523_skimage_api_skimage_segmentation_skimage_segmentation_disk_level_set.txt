@@ -1,0 +1,20 @@
+# skimage.api.skimage.segmentation#skimage.segmentation.disk_level_set
+
+skimage.segmentation.disk_level_set(image_shape, *, center=None, radius=None) [source]
+ 
+Create a disk level set with binary values.  Parameters 
+ 
+image_shapetuple of positive integers 
+
+Shape of the image  
+centertuple of positive integers, optional 
+
+Coordinates of the center of the disk given in (row, column). If not given, it defaults to the center of the image.  
+radiusfloat, optional 
+
+Radius of the disk. If not given, it is set to the 75% of the smallest image dimension.    Returns 
+ 
+outarray with shape image_shape 
+
+Binary level set of the disk with the given radius and center.      See also  
+checkerboard_level_set

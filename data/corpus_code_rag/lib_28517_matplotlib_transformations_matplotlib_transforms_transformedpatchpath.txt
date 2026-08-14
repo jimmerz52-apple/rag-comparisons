@@ -1,0 +1,16 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedPatchPath
+
+classmatplotlib.transforms.TransformedPatchPath(patch)[source]
+ 
+Bases: matplotlib.transforms.TransformedPath A TransformedPatchPath caches a non-affine transformed copy of the Patch. This cached copy is automatically updated when the non-affine part of the transform or the patch changes.  Parameters 
+ 
+patchPatch
+
+     __init__(patch)[source]
+ 
+ Parameters 
+ 
+patchPatch
+
+   
+   __module__='matplotlib.transforms'

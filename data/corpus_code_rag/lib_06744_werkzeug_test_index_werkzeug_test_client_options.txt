@@ -1,0 +1,8 @@
+# werkzeug.test.index#werkzeug.test.Client.options
+
+options(*args, **kw)  
+Call open() with method set to OPTIONS.  Parameters 
+ 
+args (Any) –  
+kw (Any) –    Return type 
+werkzeug.test.TestResponse

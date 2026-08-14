@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.setscrreg
+
+window.setscrreg(top, bottom)  
+Set the scrolling region from line top to line bottom. All scrolling actions will take place in this region.

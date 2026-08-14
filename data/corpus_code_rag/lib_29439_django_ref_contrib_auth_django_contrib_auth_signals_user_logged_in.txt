@@ -1,0 +1,7 @@
+# django.ref.contrib.auth#django.contrib.auth.signals.user_logged_in
+
+user_logged_in()  
+Sent when a user logs in successfully. Arguments sent with this signal:  
+sender  The class of the user that just logged in. 
+request  The current HttpRequest instance. 
+user  The user instance that just logged in.

@@ -1,0 +1,4 @@
+# python.library.platform#platform.node
+
+platform.node()  
+Returns the computer’s network name (may not be fully qualified!). An empty string is returned if the value cannot be determined.

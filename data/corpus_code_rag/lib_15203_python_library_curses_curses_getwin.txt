@@ -1,0 +1,4 @@
+# python.library.curses#curses.getwin
+
+curses.getwin(file)  
+Read window related data stored in the file by an earlier putwin() call. The routine then creates and initializes a new window using that data, returning the new window object.

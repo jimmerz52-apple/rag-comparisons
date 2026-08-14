@@ -1,0 +1,18 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.ToolContainerBase.add_tool
+
+add_tool(tool, group, position=- 1)[source]
+ 
+Add a tool to this container.  Parameters 
+ 
+tooltool_like
+
+
+The tool to add, see ToolManager.get_tool.  
+groupstr
+
+
+The name of the group to add this tool to.  
+positionint, default: -1
+
+
+The position within the group to place this tool.

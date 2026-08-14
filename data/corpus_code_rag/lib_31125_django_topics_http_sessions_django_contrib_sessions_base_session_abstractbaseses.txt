@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.base_session.AbstractBaseSession.expire_date
+
+expire_date  
+A datetime designating when the session expires. Expired sessions are not available to a user, however, they may still be stored in the database until the clearsessions management command is run.

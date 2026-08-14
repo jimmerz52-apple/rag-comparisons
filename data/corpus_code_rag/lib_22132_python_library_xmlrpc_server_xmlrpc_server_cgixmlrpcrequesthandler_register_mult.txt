@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.CGIXMLRPCRequestHandler.register_multicall_functions
+
+CGIXMLRPCRequestHandler.register_multicall_functions()  
+Register the XML-RPC multicall function system.multicall.

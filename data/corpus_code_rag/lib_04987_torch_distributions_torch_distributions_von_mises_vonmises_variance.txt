@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.von_mises.VonMises.variance
+
+variance [source]
+ 
+The provided variance is the circular one.

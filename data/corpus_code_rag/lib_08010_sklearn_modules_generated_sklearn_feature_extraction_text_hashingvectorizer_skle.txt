@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.hashingvectorizer#sklearn.feature_extraction.text.HashingVectorizer.decode
+
+decode(doc) [source]
+ 
+Decode the input into a string of unicode symbols. The decoding strategy depends on the vectorizer parameters.  Parameters 
+ 
+docstr 
+
+The string to decode.    Returns 
+ doc: str
+
+A string of unicode symbols.

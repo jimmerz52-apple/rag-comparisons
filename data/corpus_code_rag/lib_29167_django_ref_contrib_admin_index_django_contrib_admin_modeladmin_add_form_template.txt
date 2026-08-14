@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.add_form_template
+
+ModelAdmin.add_form_template  
+Path to a custom template, used by add_view().

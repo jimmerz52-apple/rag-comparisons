@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.formatterhms#mpl_toolkits.axisartist.angle_helper.FormatterHMS.fmt_d_ms
+
+fmt_d_ms='$%s%d^\\mathrm{h}\\,%02d.%s^\\mathrm{m}$'

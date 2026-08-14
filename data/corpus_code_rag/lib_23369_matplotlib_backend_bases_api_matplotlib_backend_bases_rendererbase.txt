@@ -1,0 +1,177 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.RendererBase
+
+classmatplotlib.backend_bases.RendererBase[source]
+ 
+Bases: object An abstract base class to handle drawing/rendering operations. The following methods must be implemented in the backend for full functionality (though just implementing draw_path() alone would give a highly capable backend):  draw_path() draw_image() draw_gouraud_triangle()  The following methods should be implemented in the backend for optimization reasons:  draw_text() draw_markers() draw_path_collection() draw_quad_mesh()    close_group(s)[source]
+ 
+Close a grouping element with label s. Only used by the SVG renderer. 
+   draw_gouraud_triangle(gc, points, colors, transform)[source]
+ 
+Draw a Gouraud-shaded triangle.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+points(3, 2) array-like
+
+
+Array of (x, y) points for the triangle.  
+colors(3, 4) array-like
+
+
+RGBA colors for each point of the triangle.  
+transformmatplotlib.transforms.Transform
+
+
+An affine transform to apply to the points.     
+   draw_gouraud_triangles(gc, triangles_array, colors_array, transform)[source]
+ 
+Draw a series of Gouraud triangles.  Parameters 
+ 
+points(N, 3, 2) array-like
+
+
+Array of N (x, y) points for the triangles.  
+colors(N, 3, 4) array-like
+
+
+Array of N RGBA colors for each point of the triangles.  
+transformmatplotlib.transforms.Transform
+
+
+An affine transform to apply to the points.     
+   draw_image(gc, x, y, im, transform=None)[source]
+ 
+Draw an RGBA image.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+A graphics context with clipping information.  
+xscalar
+
+
+The distance in physical units (i.e., dots or pixels) from the left hand side of the canvas.  
+yscalar
+
+
+The distance in physical units (i.e., dots or pixels) from the bottom side of the canvas.  
+im(N, M, 4) array-like of np.uint8
+
+
+An array of RGBA pixels.  
+transformmatplotlib.transforms.Affine2DBase
+
+
+If and only if the concrete backend is written such that option_scale_image() returns True, an affine transformation (i.e., an Affine2DBase) may be passed to draw_image(). The translation vector of the transformation is given in physical units (i.e., dots or pixels). Note that the transformation does not override x and y, and has to be applied before translating the result by x and y (this can be accomplished by adding x and y to the translation vector defined by transform).     
+   draw_markers(gc, marker_path, marker_trans, path, trans, rgbFace=None)[source]
+ 
+Draw a marker at each of path's vertices (excluding control points). This provides a fallback implementation of draw_markers that makes multiple calls to draw_path(). Some backends may want to override this method in order to draw the marker only once and reuse it multiple times.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+marker_transmatplotlib.transforms.Transform
+
+
+An affine transform applied to the marker.  
+transmatplotlib.transforms.Transform
+
+
+An affine transform applied to the path.     
+   draw_path(gc, path, transform, rgbFace=None)[source]
+ 
+Draw a Path instance using the given affine transform. 
+   draw_path_collection(gc, master_transform, paths, all_transforms, offsets, offsetTrans, facecolors, edgecolors, linewidths, linestyles, antialiaseds, urls, offset_position)[source]
+ 
+Draw a collection of paths selecting drawing properties from the lists facecolors, edgecolors, linewidths, linestyles and antialiaseds. offsets is a list of offsets to apply to each of the paths. The offsets in offsets are first transformed by offsetTrans before being applied. offset_position is unused now, but the argument is kept for backwards compatibility. This provides a fallback implementation of draw_path_collection() that makes multiple calls to draw_path(). Some backends may want to override this in order to render each set of path data only once, and then reference that path multiple times with the different offsets, colors, styles etc. The generator methods _iter_collection_raw_paths() and _iter_collection() are provided to help with (and standardize) the implementation across backends. It is highly recommended to use those generators, so that changes to the behavior of draw_path_collection() can be made globally. 
+   draw_quad_mesh(gc, master_transform, meshWidth, meshHeight, coordinates, offsets, offsetTrans, facecolors, antialiased, edgecolors)[source]
+ 
+Fallback implementation of draw_quad_mesh() that generates paths and then calls draw_path_collection(). 
+   draw_tex(gc, x, y, s, prop, angle, *, mtext=None)[source]
+
+   draw_text(gc, x, y, s, prop, angle, ismath=False, mtext=None)[source]
+ 
+Draw the text instance.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+xfloat
+
+
+The x location of the text in display coords.  
+yfloat
+
+
+The y location of the text baseline in display coords.  
+sstr
+
+
+The text string.  
+propmatplotlib.font_manager.FontProperties
+
+
+The font properties.  
+anglefloat
+
+
+The rotation angle in degrees anti-clockwise.  
+mtextmatplotlib.text.Text
+
+
+The original text object to be rendered.     Notes Note for backend implementers: When you are trying to determine if you have gotten your bounding box right (which is what enables the text layout/alignment to work properly), it helps to change the line in text.py: if 0: bbox_artist(self, renderer)
+ to if 1, and then the actual bounding box will be plotted along with your text. 
+   flipy()[source]
+ 
+Return whether y values increase from top to bottom. Note that this only affects drawing of texts and images. 
+   get_canvas_width_height()[source]
+ 
+Return the canvas width and height in display coords. 
+   get_image_magnification()[source]
+ 
+Get the factor by which to magnify images passed to draw_image(). Allows a backend to have images at a different resolution to other artists. 
+   get_texmanager()[source]
+ 
+Return the TexManager instance. 
+   get_text_width_height_descent(s, prop, ismath)[source]
+ 
+Get the width, height, and descent (offset from the bottom to the baseline), in display coords, of the string s with FontProperties prop. 
+   new_gc()[source]
+ 
+Return an instance of a GraphicsContextBase. 
+   open_group(s, gid=None)[source]
+ 
+Open a grouping element with label s and gid (if set) as id. Only used by the SVG renderer. 
+   option_image_nocomposite()[source]
+ 
+Return whether image composition by Matplotlib should be skipped. Raster backends should usually return False (letting the C-level rasterizer take care of image composition); vector backends should usually return not rcParams["image.composite_image"]. 
+   option_scale_image()[source]
+ 
+Return whether arbitrary affine transformations in draw_image() are supported (True for most vector backends). 
+   points_to_pixels(points)[source]
+ 
+Convert points to display units. You need to override this function (unless your backend doesn't have a dpi, e.g., postscript or svg). Some imaging systems assume some value for pixels per inch: points to pixels = points * pixels_per_inch/72 * dpi/72
+  Parameters 
+ 
+pointsfloat or array-like
+
+
+a float or a numpy array of float    Returns 
+ Points converted to pixels
+   
+   start_filter()[source]
+ 
+Switch to a temporary renderer for image filtering effects. Currently only supported by the agg renderer. 
+   start_rasterizing()[source]
+ 
+Switch to the raster renderer. Used by MixedModeRenderer. 
+   stop_filter(filter_func)[source]
+ 
+Switch back to the original renderer. The contents of the temporary renderer is processed with the filter_func and is drawn on the original renderer as an image. Currently only supported by the agg renderer. 
+   stop_rasterizing()[source]
+ 
+Switch back to the vector renderer and draw the contents of the raster renderer as an image on the vector renderer. Used by MixedModeRenderer.

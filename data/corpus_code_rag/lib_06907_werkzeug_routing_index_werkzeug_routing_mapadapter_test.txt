@@ -1,0 +1,8 @@
+# werkzeug.routing.index#werkzeug.routing.MapAdapter.test
+
+test(path_info=None, method=None)  
+Test if a rule would match. Works like match but returns True if the URL matches, or False if it does not exist.  Parameters 
+ 
+path_info (Optional[str]) – the path info to use for matching. Overrides the path info specified on binding. 
+method (Optional[str]) – the HTTP method used for matching. Overrides the method specified on binding.   Return type 
+bool

@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LogitTransform.transform_non_affine
+
+transform_non_affine(a)[source]
+ 
+logit transform (base 10), masked or clipped

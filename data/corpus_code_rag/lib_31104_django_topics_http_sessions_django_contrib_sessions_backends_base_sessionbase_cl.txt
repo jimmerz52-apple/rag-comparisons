@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.clear_expired
+
+clear_expired()  
+Removes expired sessions from the session store. This class method is called by clearsessions.

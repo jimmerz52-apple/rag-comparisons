@@ -1,0 +1,4 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.save
+
+save(f, _extra_files={})  
+See torch.jit.save for details.

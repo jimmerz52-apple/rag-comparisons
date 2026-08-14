@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnnotationBbox.set_fontsize
+
+set_fontsize(s=None)[source]
+ 
+Set the fontsize in points. If s is not given, reset to rcParams["legend.fontsize"] (default: 'medium').

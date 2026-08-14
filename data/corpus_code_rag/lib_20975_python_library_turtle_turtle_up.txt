@@ -1,0 +1,6 @@
+# python.library.turtle#turtle.up
+
+turtle.penup()  
+turtle.pu()  
+turtle.up()  
+Pull the pen up – no drawing when moving.

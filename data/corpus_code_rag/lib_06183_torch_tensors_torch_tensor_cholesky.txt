@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cholesky
+
+cholesky(upper=False) → Tensor  
+See torch.cholesky()

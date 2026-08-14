@@ -1,0 +1,9 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_form
+
+ModelAdmin.get_form(request, obj=None, **kwargs)  
+Returns a ModelForm class for use in the admin add and change views, see add_view() and change_view(). The base implementation uses modelform_factory() to subclass form, modified by attributes such as fields and exclude. So, for example, if you wanted to offer additional fields to superusers, you could swap in a different base form like so: class MyModelAdmin(admin.ModelAdmin):
+    def get_form(self, request, obj=None, **kwargs):
+        if request.user.is_superuser:
+            kwargs['form'] = MySuperuserForm
+        return super().get_form(request, obj, **kwargs)
+ You may also return a custom ModelForm class directly.

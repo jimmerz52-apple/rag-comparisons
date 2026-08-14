@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTPProtocolError
+
+exception nntplib.NNTPProtocolError  
+Exception raised when a reply is received from the server that does not begin with a digit in the range 1–5.

@@ -1,0 +1,4 @@
+# python.library.os#os.SCHED_OTHER
+
+os.SCHED_OTHER  
+The default scheduling policy.

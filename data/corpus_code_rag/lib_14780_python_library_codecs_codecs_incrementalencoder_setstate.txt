@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.IncrementalEncoder.setstate
+
+setstate(state)  
+Set the state of the encoder to state. state must be an encoder state returned by getstate().

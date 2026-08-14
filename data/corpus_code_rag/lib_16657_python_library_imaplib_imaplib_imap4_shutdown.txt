@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.shutdown
+
+IMAP4.shutdown()  
+Close connection established in open. This method is implicitly called by IMAP4.logout(). You may override this method.

@@ -1,0 +1,4 @@
+# python.library.zlib#zlib.Compress.copy
+
+Compress.copy()  
+Returns a copy of the compression object. This can be used to efficiently compress a set of data that share a common initial prefix.

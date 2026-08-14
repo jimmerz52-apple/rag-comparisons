@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.memmove
+
+ctypes.memmove(dst, src, count)  
+Same as the standard C memmove library function: copies count bytes from src to dst. dst and src must be integers or ctypes instances that can be converted to pointers.

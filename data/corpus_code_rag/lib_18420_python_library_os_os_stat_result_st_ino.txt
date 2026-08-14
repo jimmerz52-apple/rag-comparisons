@@ -1,0 +1,4 @@
+# python.library.os#os.stat_result.st_ino
+
+st_ino  
+Platform dependent, but if non-zero, uniquely identifies the file for a given value of st_dev. Typically:  the inode number on Unix, the file index on Windows

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.searchsorted
+
+numpy.recarray.searchsorted method   recarray.searchsorted(v, side='left', sorter=None)
+ 
+Find indices where elements of v should be inserted in a to maintain order. For full documentation, see numpy.searchsorted  See also  numpy.searchsorted
+
+equivalent function

@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_color_or_inherit
+
+matplotlib.rcsetup.validate_color_or_inherit(s)[source]
+ 
+Return a valid color arg.

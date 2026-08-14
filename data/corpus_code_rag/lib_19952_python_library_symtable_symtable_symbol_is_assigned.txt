@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.is_assigned
+
+is_assigned()  
+Return True if the symbol is assigned to in its block.

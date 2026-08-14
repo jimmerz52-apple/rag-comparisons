@@ -1,0 +1,8 @@
+# flask.api.index#flask.Blueprint.register_error_handler
+
+register_error_handler(code_or_exception, f)  
+Alternative error attach function to the errorhandler() decorator that is more straightforward to use for non decorator usage.  Changelog New in version 0.7.   Parameters 
+ 
+code_or_exception (Union[Type[Exception], int]) –  
+f (Callable[[Exception], Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], Union[Headers, Dict[str, Union[str, List[str], Tuple[str, ...]]], List[Tuple[str, Union[str, List[str], Tuple[str, ...]]]]]], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int], Tuple[Union[Response, AnyStr, Dict[str, Any], Generator[AnyStr, None, None]], int, Union[Headers, Dict[str, Union[str, List[str], Tuple[str, ...]]], List[Tuple[str, Union[str, List[str], Tuple[str, ...]]]]]], WSGIApplication]]) –    Return type 
+None

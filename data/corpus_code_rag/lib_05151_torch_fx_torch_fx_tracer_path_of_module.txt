@@ -1,0 +1,6 @@
+# torch.fx#torch.fx.Tracer.path_of_module
+
+path_of_module(mod) [source]
+ 
+Helper method to find the qualified name of mod in the Module hierarchy of root. For example, if root has a submodule named foo, which has a submodule named bar, passing bar into this function will return the string “foo.bar”.  Parameters 
+mod (str) – The Module to retrieve the qualified name for.

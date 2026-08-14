@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.linear_spine
+
+classmethodlinear_spine(axes, spine_type, **kwargs)[source]
+ 
+Create and return a linear Spine.

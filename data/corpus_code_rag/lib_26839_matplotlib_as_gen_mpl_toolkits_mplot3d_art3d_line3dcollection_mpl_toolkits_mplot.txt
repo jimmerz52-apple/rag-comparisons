@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.line3dcollection#mpl_toolkits.mplot3d.art3d.Line3DCollection.do_3d_projection
+
+do_3d_projection(renderer=<deprecated parameter>)[source]
+ 
+Project the points according to renderer matrix.

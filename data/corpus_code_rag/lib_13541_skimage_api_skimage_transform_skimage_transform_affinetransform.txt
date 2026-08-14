@@ -1,0 +1,44 @@
+# skimage.api.skimage.transform#skimage.transform.AffineTransform
+
+class skimage.transform.AffineTransform(matrix=None, scale=None, rotation=None, shear=None, translation=None) [source]
+ 
+Bases: skimage.transform._geometric.ProjectiveTransform 2D affine transformation. Has the following form: X = a0*x + a1*y + a2 =
+  = sx*x*cos(rotation) - sy*y*sin(rotation + shear) + a2
+
+Y = b0*x + b1*y + b2 =
+  = sx*x*sin(rotation) + sy*y*cos(rotation + shear) + b2
+ where sx and sy are scale factors in the x and y directions, and the homogeneous transformation matrix is: [[a0  a1  a2]
+ [b0  b1  b2]
+ [0   0    1]]
+  Parameters 
+ 
+matrix(3, 3) array, optional 
+
+Homogeneous transformation matrix.  
+scale{s as float or (sx, sy) as array, list or tuple}, optional 
+
+Scale factor(s). If a single value, it will be assigned to both sx and sy.  New in version 0.17: Added support for supplying a single scalar value.   
+rotationfloat, optional 
+
+Rotation angle in counter-clockwise direction as radians.  
+shearfloat, optional 
+
+Shear angle in counter-clockwise direction as radians.  
+translation(tx, ty) as array, list or tuple, optional 
+
+Translation parameters.    Attributes 
+ 
+params(3, 3) array 
+
+Homogeneous transformation matrix.      
+__init__(matrix=None, scale=None, rotation=None, shear=None, translation=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+property rotation 
+  
+property scale 
+  
+property shear 
+  
+property translation

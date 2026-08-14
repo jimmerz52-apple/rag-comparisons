@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.dateoffset.apply
+
+pandas.tseries.offsets.DateOffset.apply   DateOffset.apply()

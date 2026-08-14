@@ -1,0 +1,4 @@
+# python.library.resource#resource.RUSAGE_THREAD
+
+resource.RUSAGE_THREAD  
+Pass to getrusage() to request resources consumed by the current thread. May not be available on all systems.  New in version 3.2.

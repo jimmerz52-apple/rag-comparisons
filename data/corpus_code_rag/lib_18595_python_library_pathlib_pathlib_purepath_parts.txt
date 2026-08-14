@@ -1,0 +1,11 @@
+# python.library.pathlib#pathlib.PurePath.parts
+
+PurePath.parts  
+A tuple giving access to the path’s various components: >>> p = PurePath('/usr/bin/python3')
+>>> p.parts
+('/', 'usr', 'bin', 'python3')
+
+>>> p = PureWindowsPath('c:/Program Files/PSF')
+>>> p.parts
+('c:\\', 'Program Files', 'PSF')
+ (note how the drive and local root are regrouped in a single part)

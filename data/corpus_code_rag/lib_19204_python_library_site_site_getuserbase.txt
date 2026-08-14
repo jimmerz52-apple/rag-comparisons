@@ -1,0 +1,4 @@
+# python.library.site#site.getuserbase
+
+site.getuserbase()  
+Return the path of the user base directory, USER_BASE. If it is not initialized yet, this function will also set it, respecting PYTHONUSERBASE.  New in version 3.2.

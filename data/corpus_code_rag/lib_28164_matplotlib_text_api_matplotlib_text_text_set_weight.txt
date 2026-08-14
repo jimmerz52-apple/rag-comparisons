@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.set_weight
+
+set_weight(weight)[source]
+ 
+Alias for set_fontweight.

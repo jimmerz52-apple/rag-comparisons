@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.LatexError
+
+exceptionmatplotlib.backends.backend_pgf.LatexError(message, latex_output='')[source]
+ 
+Bases: Exception

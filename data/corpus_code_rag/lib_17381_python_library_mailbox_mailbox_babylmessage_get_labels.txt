@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.BabylMessage.get_labels
+
+get_labels()  
+Return a list of labels on the message.

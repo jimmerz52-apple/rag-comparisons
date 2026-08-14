@@ -1,0 +1,18 @@
+# python.library.ssl#ssl.MemoryBIO
+
+class ssl.MemoryBIO  
+A memory buffer that can be used to pass data between Python and an SSL protocol instance.  
+pending  
+Return the number of bytes currently in the memory buffer. 
+  
+eof  
+A boolean indicating whether the memory BIO is current at the end-of-file position. 
+  
+read(n=-1)  
+Read up to n bytes from the memory buffer. If n is not specified or negative, all bytes are returned. 
+  
+write(buf)  
+Write the bytes from buf to the memory BIO. The buf argument must be an object supporting the buffer protocol. The return value is the number of bytes written, which is always equal to the length of buf. 
+  
+write_eof()  
+Write an EOF marker to the memory BIO. After this method has been called, it is illegal to call write(). The attribute eof will become true after all data currently in the buffer has been read.

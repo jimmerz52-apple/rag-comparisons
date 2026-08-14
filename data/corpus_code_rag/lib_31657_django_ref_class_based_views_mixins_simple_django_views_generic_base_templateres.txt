@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.TemplateResponseMixin.template_name
+
+template_name  
+The full name of a template to use as defined by a string. Not defining a template_name will raise a django.core.exceptions.ImproperlyConfigured exception.

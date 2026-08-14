@@ -1,0 +1,4 @@
+# python.library.hashlib#hashlib.hash.block_size
+
+hash.block_size  
+The internal block size of the hash algorithm in bytes.

@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.series.is_unique
+
+pandas.Series.is_unique   propertySeries.is_unique
+ 
+Return boolean if values in the object are unique.  Returns 
+ bool

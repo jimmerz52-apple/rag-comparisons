@@ -1,0 +1,4 @@
+# python.library.winsound#winsound.SND_PURGE
+
+winsound.SND_PURGE  
+Stop playing all instances of the specified sound.  Note This flag is not supported on modern Windows platforms.

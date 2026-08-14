@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.profiler.oplogproto.idtostringentry
+
+tf.compat.v1.profiler.OpLogProto.IdToStringEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   int64 key  
+  value   string value

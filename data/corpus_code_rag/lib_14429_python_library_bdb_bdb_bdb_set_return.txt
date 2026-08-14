@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.set_return
+
+set_return(frame)  
+Stop when returning from the given frame.

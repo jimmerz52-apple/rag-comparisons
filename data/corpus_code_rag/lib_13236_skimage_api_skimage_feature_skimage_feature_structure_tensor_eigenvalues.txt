@@ -1,0 +1,25 @@
+# skimage.api.skimage.feature#skimage.feature.structure_tensor_eigenvalues
+
+skimage.feature.structure_tensor_eigenvalues(A_elems) [source]
+ 
+Compute eigenvalues of structure tensor.  Parameters 
+ 
+A_elemslist of ndarray 
+
+The upper-diagonal elements of the structure tensor, as returned by structure_tensor.    Returns 
+ ndarray
+
+The eigenvalues of the structure tensor, in decreasing order. The eigenvalues are the leading dimension. That is, the coordinate [i, j, k] corresponds to the ith-largest eigenvalue at position (j, k).      See also  
+structure_tensor
+
+  Examples >>> from skimage.feature import structure_tensor
+>>> from skimage.feature import structure_tensor_eigenvalues
+>>> square = np.zeros((5, 5))
+>>> square[2, 2] = 1
+>>> A_elems = structure_tensor(square, sigma=0.1, order='rc')
+>>> structure_tensor_eigenvalues(A_elems)[0]
+array([[0., 0., 0., 0., 0.],
+       [0., 2., 4., 2., 0.],
+       [0., 4., 0., 4., 0.],
+       [0., 2., 4., 2., 0.],
+       [0., 0., 0., 0., 0.]])

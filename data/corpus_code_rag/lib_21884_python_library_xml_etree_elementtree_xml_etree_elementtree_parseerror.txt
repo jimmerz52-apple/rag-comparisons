@@ -1,0 +1,9 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.ParseError
+
+class xml.etree.ElementTree.ParseError  
+XML parse error, raised by the various parsing methods in this module when parsing fails. The string representation of an instance of this exception will contain a user-friendly error message. In addition, it will have the following attributes available:  
+code  
+A numeric error code from the expat parser. See the documentation of xml.parsers.expat for the list of error codes and their meanings. 
+  
+position  
+A tuple of line, column numbers, specifying where the error occurred.

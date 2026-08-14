@@ -1,0 +1,4 @@
+# python.library.tokenize#tokenize.generate_tokens
+
+tokenize.generate_tokens(readline)  
+Tokenize a source reading unicode strings instead of bytes. Like tokenize(), the readline argument is a callable returning a single line of input. However, generate_tokens() expects readline to return a str object rather than bytes. The result is an iterator yielding named tuples, exactly like tokenize(). It does not yield an ENCODING token.

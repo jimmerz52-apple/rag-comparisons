@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.compose.transformedtargetregressor#sklearn.compose.TransformedTargetRegressor.predict
+
+predict(X) [source]
+ 
+Predict using the base regressor, applying inverse. The regressor is used to predict and the inverse_func or inverse_transform is applied before returning the prediction.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Samples.    Returns 
+ 
+y_hatndarray of shape (n_samples,) 
+
+Predicted values.

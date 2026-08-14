@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.measure#django.contrib.gis.measure.Distance.__getattr__
+
+__getattr__(unit_att)

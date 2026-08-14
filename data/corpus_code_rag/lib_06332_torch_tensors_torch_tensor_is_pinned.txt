@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.is_pinned
+
+is_pinned()  
+Returns true if this tensor resides in pinned memory.

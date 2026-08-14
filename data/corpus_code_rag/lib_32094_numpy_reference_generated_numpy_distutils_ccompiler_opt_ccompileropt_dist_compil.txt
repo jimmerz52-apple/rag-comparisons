@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.dist_compile
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.dist_compile method   distutils.ccompiler_opt.CCompilerOpt.dist_compile(sources, flags, ccompiler=None, **kwargs)[source]
+ 
+Wrap CCompiler.compile()

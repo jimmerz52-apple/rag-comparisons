@@ -1,0 +1,7 @@
+# matplotlib.mathtext_api#matplotlib.mathtext.MathtextBackendBitmap
+
+classmatplotlib.mathtext.MathtextBackendBitmap[source]
+ 
+Bases: matplotlib.mathtext.MathtextBackendAgg [Deprecated] Notes  Deprecated since version 3.4:     get_results(box, used_characters)[source]
+ 
+Return a backend-specific tuple to return to the backend after all processing is done.

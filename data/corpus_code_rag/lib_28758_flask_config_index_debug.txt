@@ -1,0 +1,4 @@
+# flask.config.index#DEBUG
+
+DEBUG  
+Whether debug mode is enabled. When using flask run to start the development server, an interactive debugger will be shown for unhandled exceptions, and the server will be reloaded when code changes. The debug attribute maps to this config key. This is enabled when ENV is 'development' and is overridden by the FLASK_DEBUG environment variable. It may not behave as expected if set in code. Do not enable debug mode when deploying in production. Default: True if ENV is 'development', or False otherwise.

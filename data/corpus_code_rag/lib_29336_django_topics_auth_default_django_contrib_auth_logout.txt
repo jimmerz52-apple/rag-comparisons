@@ -1,0 +1,9 @@
+# django.topics.auth.default#django.contrib.auth.logout
+
+logout(request)  
+To log out a user who has been logged in via django.contrib.auth.login(), use django.contrib.auth.logout() within your view. It takes an HttpRequest object and has no return value. Example: from django.contrib.auth import logout
+
+def logout_view(request):
+    logout(request)
+    # Redirect to a success page.
+ Note that logout() doesn’t throw any errors if the user wasn’t logged in. When you call logout(), the session data for the current request is completely cleaned out. All existing data is removed. This is to prevent another person from using the same web browser to log in and have access to the previous user’s session data. If you want to put anything into the session that will be available to the user immediately after logging out, do that after calling django.contrib.auth.logout().

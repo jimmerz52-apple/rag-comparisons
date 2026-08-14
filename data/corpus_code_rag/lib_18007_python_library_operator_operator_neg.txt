@@ -1,0 +1,5 @@
+# python.library.operator#operator.neg
+
+operator.neg(obj)  
+operator.__neg__(obj)  
+Return obj negated (-obj).

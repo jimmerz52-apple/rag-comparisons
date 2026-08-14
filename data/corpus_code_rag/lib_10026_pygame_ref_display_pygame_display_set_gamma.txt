@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.set_gamma
+
+pygame.display.set_gamma() 
+ Change the hardware gamma ramps set_gamma(red, green=None, blue=None) -> bool  Set the red, green, and blue gamma values on the display hardware. If the green and blue arguments are not passed, they will both be the same as red. Not all systems and hardware support gamma ramps, if the function succeeds it will return True. A gamma value of 1.0 creates a linear color table. Lower values will darken the display and higher values will brighten.

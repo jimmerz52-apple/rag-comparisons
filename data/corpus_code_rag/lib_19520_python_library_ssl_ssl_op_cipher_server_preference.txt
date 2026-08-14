@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_CIPHER_SERVER_PREFERENCE
+
+ssl.OP_CIPHER_SERVER_PREFERENCE  
+Use the server’s cipher ordering preference, rather than the client’s. This option has no effect on client sockets and SSLv2 server sockets.  New in version 3.3.

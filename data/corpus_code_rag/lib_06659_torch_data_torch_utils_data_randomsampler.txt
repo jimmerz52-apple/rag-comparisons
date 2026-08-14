@@ -1,0 +1,10 @@
+# torch.data#torch.utils.data.RandomSampler
+
+class torch.utils.data.RandomSampler(data_source, replacement=False, num_samples=None, generator=None) [source]
+ 
+Samples elements randomly. If without replacement, then sample from a shuffled dataset. If with replacement, then user can specify num_samples to draw.  Parameters 
+ 
+data_source (Dataset) – dataset to sample from 
+replacement (bool) – samples are drawn on-demand with replacement if True, default=``False`` 
+num_samples (int) – number of samples to draw, default=`len(dataset)`. This argument is supposed to be specified only when replacement is True. 
+generator (Generator) – Generator used in sampling.

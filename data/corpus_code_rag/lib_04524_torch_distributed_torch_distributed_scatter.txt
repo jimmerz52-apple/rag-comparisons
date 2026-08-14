@@ -1,0 +1,12 @@
+# torch.distributed#torch.distributed.scatter
+
+torch.distributed.scatter(tensor, scatter_list=None, src=0, group=None, async_op=False) [source]
+ 
+Scatters a list of tensors to all processes in a group. Each process will receive exactly one tensor and store its data in the tensor argument.  Parameters 
+ 
+tensor (Tensor) – Output tensor. 
+scatter_list (list[Tensor]) – List of tensors to scatter (default is None, must be specified on the source rank) 
+src (int) – Source rank (default is 0) 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+async_op (bool, optional) – Whether this op should be an async op   Returns 
+Async work handle, if async_op is set to True. None, if not async_op or if not part of the group

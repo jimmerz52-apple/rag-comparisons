@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.sinc
+
+tf.experimental.numpy.sinc TensorFlow variant of NumPy's sinc. 
+tf.experimental.numpy.sinc(
+    x
+)
+ See the NumPy documentation for numpy.sinc.

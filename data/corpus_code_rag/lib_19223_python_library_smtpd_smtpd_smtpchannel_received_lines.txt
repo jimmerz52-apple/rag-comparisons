@@ -1,0 +1,4 @@
+# python.library.smtpd#smtpd.SMTPChannel.received_lines
+
+received_lines  
+Holds a list of the line strings (decoded using UTF-8) received from the client. The lines have their "\r\n" line ending translated to "\n".

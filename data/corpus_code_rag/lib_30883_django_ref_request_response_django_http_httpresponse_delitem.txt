@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.__delitem__
+
+HttpResponse.__delitem__(header)  
+Deletes the header with the given name. Fails silently if the header doesn’t exist. Case-insensitive.

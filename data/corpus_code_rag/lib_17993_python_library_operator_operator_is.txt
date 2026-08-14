@@ -1,0 +1,4 @@
+# python.library.operator#operator.is_
+
+operator.is_(a, b)  
+Return a is b. Tests object identity.

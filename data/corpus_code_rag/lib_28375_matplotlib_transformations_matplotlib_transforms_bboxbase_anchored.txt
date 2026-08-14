@@ -1,0 +1,14 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.anchored
+
+anchored(c, container=None)[source]
+ 
+Return a copy of the Bbox anchored to c within container.  Parameters 
+ 
+c(float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}
+
+
+Either an (x, y) pair of relative coordinates (0 is left or bottom, 1 is right or top), 'C' (center), or a cardinal direction ('SW', southwest, is bottom left, etc.).  
+containerBbox, optional
+
+
+The box within which the Bbox is positioned; it defaults to the initial Bbox.      See also  Axes.set_anchor

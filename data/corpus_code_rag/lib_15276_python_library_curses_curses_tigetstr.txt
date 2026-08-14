@@ -1,0 +1,4 @@
+# python.library.curses#curses.tigetstr
+
+curses.tigetstr(capname)  
+Return the value of the string capability corresponding to the terminfo capability name capname as a bytes object. Return None if capname is not a terminfo “string capability”, or is canceled or absent from the terminal description.

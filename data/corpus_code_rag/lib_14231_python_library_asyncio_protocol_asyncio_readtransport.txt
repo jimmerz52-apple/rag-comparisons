@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.ReadTransport
+
+class asyncio.ReadTransport(BaseTransport)  
+A base transport for read-only connections. Instances of the ReadTransport class are returned from the loop.connect_read_pipe() event loop method and are also used by subprocess-related methods like loop.subprocess_exec().

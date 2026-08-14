@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.nameattrlist.attrentry
+
+tf.compat.v1.NameAttrList.AttrEntry A ProtocolMessage
+ 
+
+
+ Attributes
+  key   string key  
+  value   AttrValue value

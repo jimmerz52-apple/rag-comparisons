@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.view
+
+numpy.record.view method   record.view()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.view.

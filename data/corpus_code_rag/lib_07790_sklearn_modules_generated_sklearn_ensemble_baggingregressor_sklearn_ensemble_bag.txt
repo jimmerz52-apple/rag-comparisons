@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.baggingregressor#sklearn.ensemble.BaggingRegressor.predict
+
+predict(X) [source]
+ 
+Predict regression target for X. The predicted regression target of an input sample is computed as the mean predicted regression targets of the estimators in the ensemble.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrices are accepted only if they are supported by the base estimator.    Returns 
+ 
+yndarray of shape (n_samples,) 
+
+The predicted values.

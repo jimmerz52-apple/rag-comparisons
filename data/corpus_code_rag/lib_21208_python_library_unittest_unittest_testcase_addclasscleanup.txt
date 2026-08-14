@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestCase.addClassCleanup
+
+classmethod addClassCleanup(function, /, *args, **kwargs)  
+Add a function to be called after tearDownClass() to cleanup resources used during the test class. Functions will be called in reverse order to the order they are added (LIFO). They are called with any arguments and keyword arguments passed into addClassCleanup() when they are added. If setUpClass() fails, meaning that tearDownClass() is not called, then any cleanup functions added will still be called.  New in version 3.8.

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_NOT_SUSPENDED
+
+xml.parsers.expat.errors.XML_ERROR_NOT_SUSPENDED  
+An attempt to resume the parser was made when the parser had not been suspended.

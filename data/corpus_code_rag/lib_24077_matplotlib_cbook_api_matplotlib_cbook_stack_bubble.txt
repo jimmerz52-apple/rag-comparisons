@@ -1,0 +1,8 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.bubble
+
+bubble(o)[source]
+ 
+Raise all references of o to the top of the stack, and return it.  Raises 
+ ValueError
+
+If o is not in the stack.

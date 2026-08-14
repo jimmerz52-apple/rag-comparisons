@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolViewsPositions.update_view
+
+update_view()[source]
+ 
+Update the view limits and position for each axes from the current stack position. If any axes are present in the figure that aren't in the current stack position, use the home view limits for those axes and don't update any positions.

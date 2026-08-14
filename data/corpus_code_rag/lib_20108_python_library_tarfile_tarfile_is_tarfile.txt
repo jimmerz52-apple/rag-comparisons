@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.is_tarfile
+
+tarfile.is_tarfile(name)  
+Return True if name is a tar archive file, that the tarfile module can read. name may be a str, file, or file-like object.  Changed in version 3.9: Support for file and file-like objects.

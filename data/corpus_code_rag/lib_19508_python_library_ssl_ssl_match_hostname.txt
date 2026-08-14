@@ -1,0 +1,11 @@
+# python.library.ssl#ssl.match_hostname
+
+ssl.match_hostname(cert, hostname)  
+Verify that cert (in decoded format as returned by SSLSocket.getpeercert()) matches the given hostname. The rules applied are those for checking the identity of HTTPS servers as outlined in RFC 2818, RFC 5280 and RFC 6125. In addition to HTTPS, this function should be suitable for checking the identity of servers in various SSL-based protocols such as FTPS, IMAPS, POPS and others. CertificateError is raised on failure. On success, the function returns nothing: >>> cert = {'subject': ((('commonName', 'example.com'),),)}
+>>> ssl.match_hostname(cert, "example.com")
+>>> ssl.match_hostname(cert, "example.org")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/py3k/Lib/ssl.py", line 130, in match_hostname
+ssl.CertificateError: hostname 'example.org' doesn't match 'example.com'
+  New in version 3.2.   Changed in version 3.3.3: The function now follows RFC 6125, section 6.4.3 and does neither match multiple wildcards (e.g. *.*.com or *a*.example.org) nor a wildcard inside an internationalized domain names (IDN) fragment. IDN A-labels such as www*.xn--pthon-kva.org are still supported, but x*.python.org no longer matches xn--tda.python.org.   Changed in version 3.5: Matching of IP addresses, when present in the subjectAltName field of the certificate, is now supported.   Changed in version 3.7: The function is no longer used to TLS connections. Hostname matching is now performed by OpenSSL. Allow wildcard when it is the leftmost and the only character in that segment. Partial wildcards like www*.example.com are no longer supported.   Deprecated since version 3.7.

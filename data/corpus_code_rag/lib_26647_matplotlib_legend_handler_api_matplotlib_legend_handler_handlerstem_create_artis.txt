@@ -1,0 +1,3 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerStem.create_artists
+
+create_artists(legend, orig_handle, xdescent, ydescent, width, height, fontsize, trans)[source]

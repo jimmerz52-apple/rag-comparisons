@@ -1,0 +1,11 @@
+# torch.sparse#torch.sparse.addmm
+
+torch.sparse.addmm(mat, mat1, mat2, beta=1.0, alpha=1.0) [source]
+ 
+This function does exact same thing as torch.addmm() in the forward, except that it supports backward for sparse matrix mat1. mat1 need to have sparse_dim = 2. Note that the gradients of mat1 is a coalesced sparse tensor.  Parameters 
+ 
+mat (Tensor) – a dense matrix to be added 
+mat1 (Tensor) – a sparse matrix to be multiplied 
+mat2 (Tensor) – a dense matrix to be multiplied 
+beta (Number, optional) – multiplier for mat (β\beta ) 
+alpha (Number, optional) – multiplier for mat1@mat2mat1 @ mat2  (α\alpha )

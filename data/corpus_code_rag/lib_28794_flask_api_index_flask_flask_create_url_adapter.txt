@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.create_url_adapter
+
+create_url_adapter(request)  
+Creates a URL adapter for the given request. The URL adapter is created at a point where the request context is not yet set up so the request is passed explicitly.  Changelog Changed in version 1.0: SERVER_NAME no longer implicitly enables subdomain matching. Use subdomain_matching instead.   Changed in version 0.9: This can now also be called without a request object when the URL adapter is created for the application context.   New in version 0.6.   Parameters 
+request (Optional[flask.wrappers.Request]) –   Return type 
+Optional[werkzeug.routing.MapAdapter]

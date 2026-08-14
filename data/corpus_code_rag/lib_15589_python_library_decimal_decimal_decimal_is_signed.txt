@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.is_signed
+
+is_signed()  
+Return True if the argument has a negative sign and False otherwise. Note that zeros and NaNs can both carry signs.

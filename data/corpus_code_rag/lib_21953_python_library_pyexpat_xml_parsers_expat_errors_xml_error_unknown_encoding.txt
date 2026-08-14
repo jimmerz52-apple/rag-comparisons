@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_UNKNOWN_ENCODING
+
+xml.parsers.expat.errors.XML_ERROR_UNKNOWN_ENCODING  
+The document encoding is not supported by Expat.

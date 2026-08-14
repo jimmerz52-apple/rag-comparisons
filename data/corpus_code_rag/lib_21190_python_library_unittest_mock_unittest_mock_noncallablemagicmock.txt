@@ -1,0 +1,4 @@
+# python.library.unittest.mock#unittest.mock.NonCallableMagicMock
+
+class unittest.mock.NonCallableMagicMock(*args, **kw)  
+A non-callable version of MagicMock. The constructor parameters have the same meaning as for MagicMock, with the exception of return_value and side_effect which have no meaning on a non-callable mock.

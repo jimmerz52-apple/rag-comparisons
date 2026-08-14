@@ -1,0 +1,22 @@
+# pygame.ref.draw#pygame.draw.line
+
+pygame.draw.line() 
+ draw a straight line line(surface, color, start_pos, end_pos, width) -> Rect line(surface, color, start_pos, end_pos, width=1) -> Rect  Draws a straight line on the given surface. There are no endcaps. For thick lines the ends are squared off.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+color (Color or int or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+ 
+start_pos (tuple(int or float, int or float) or list(int or float, int or float) or Vector2(int or float, int or float)) -- start position of the line, (x, y) 
+end_pos (tuple(int or float, int or float) or list(int or float, int or float) or Vector2(int or float, int or float)) -- end position of the line, (x, y) 
+width (int) -- (optional) used for line thickness  if width >= 1, used for line thickness (default is 1) if width < 1, nothing will be drawn    Note When using width values > 1, lines will grow as follows. For odd width values, the thickness of each line grows with the original line being in the center. For even width values, the thickness of each line grows with the original line being offset from the center (as there is no exact center line drawn). As a result, lines with a slope < 1 (horizontal-ish) will have 1 more pixel of thickness below the original line (in the y direction). Lines with a slope >= 1 (vertical-ish) will have 1 more pixel of thickness to the right of the original line (in the x direction).      
+Returns:
+
+a rect bounding the changed pixels, if nothing is drawn the bounding rect's position will be the start_pos parameter value (float values will be truncated) and its width and height will be 0   
+Return type:
+
+Rect   
+Raises:
+
+TypeError -- if start_pos or end_pos is not a sequence of two numbers      Changed in pygame 2.0.0: Added support for keyword arguments.

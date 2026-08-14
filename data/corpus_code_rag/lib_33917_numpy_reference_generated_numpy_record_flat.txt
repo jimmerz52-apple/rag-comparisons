@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.flat
+
+numpy.record.flat attribute   record.flat
+ 
+A 1-D view of the scalar.

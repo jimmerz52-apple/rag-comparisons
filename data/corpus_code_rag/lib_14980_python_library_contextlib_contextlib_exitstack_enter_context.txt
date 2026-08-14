@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.ExitStack.enter_context
+
+enter_context(cm)  
+Enters a new context manager and adds its __exit__() method to the callback stack. The return value is the result of the context manager’s own __enter__() method. These context managers may suppress exceptions just as they normally would if used directly as part of a with statement.

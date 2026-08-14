@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.site_title
+
+AdminSite.site_title  
+The text to put at the end of each admin page’s <title> (a string). By default, this is “Django site admin”.

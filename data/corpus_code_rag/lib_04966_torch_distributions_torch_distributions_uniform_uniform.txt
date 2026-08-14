@@ -1,0 +1,40 @@
+# torch.distributions#torch.distributions.uniform.Uniform
+
+class torch.distributions.uniform.Uniform(low, high, validate_args=None) [source]
+ 
+Bases: torch.distributions.distribution.Distribution Generates uniformly distributed random samples from the half-open interval [low, high). Example: >>> m = Uniform(torch.tensor([0.0]), torch.tensor([5.0]))
+>>> m.sample()  # uniformly distributed in the range [0.0, 5.0)
+tensor([ 2.3418])
+  Parameters 
+ 
+low (float or Tensor) – lower range (inclusive). 
+high (float or Tensor) – upper range (exclusive).     
+arg_constraints = {'high': Dependent(), 'low': Dependent()} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(value) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+property stddev 
+  
+property support 
+  
+property variance

@@ -1,0 +1,4 @@
+# python.library.asynchat#asynchat.async_chat.found_terminator
+
+async_chat.found_terminator()  
+Called when the incoming data stream matches the termination condition set by set_terminator(). The default method, which must be overridden, raises a NotImplementedError exception. The buffered input data should be available via an instance attribute.

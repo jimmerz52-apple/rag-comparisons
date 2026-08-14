@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.InlineModelAdmin.max_num
+
+InlineModelAdmin.max_num  
+This controls the maximum number of forms to show in the inline. This doesn’t directly correlate to the number of objects, but can if the value is small enough. See Limiting the number of editable objects for more information. InlineModelAdmin.get_max_num() also allows you to customize the maximum number of extra forms.

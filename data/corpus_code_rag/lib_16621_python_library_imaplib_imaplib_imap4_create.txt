@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.create
+
+IMAP4.create(mailbox)  
+Create new mailbox named mailbox.

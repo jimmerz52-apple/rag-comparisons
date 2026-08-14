@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isspace
+
+curses.ascii.isspace(c)  
+Checks for ASCII white-space characters; space, line feed, carriage return, form feed, horizontal tab, vertical tab.

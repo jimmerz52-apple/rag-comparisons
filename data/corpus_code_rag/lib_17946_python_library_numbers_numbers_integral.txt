@@ -1,0 +1,4 @@
+# python.library.numbers#numbers.Integral
+
+class numbers.Integral  
+Subtypes Rational and adds a conversion to int. Provides defaults for float(), numerator, and denominator. Adds abstract methods for ** and bit-string operations: <<, >>, &, ^, |, ~.

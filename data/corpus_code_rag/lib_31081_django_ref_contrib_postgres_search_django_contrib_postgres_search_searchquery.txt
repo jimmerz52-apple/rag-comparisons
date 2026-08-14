@@ -1,0 +1,3 @@
+# django.ref.contrib.postgres.search#django.contrib.postgres.search.SearchQuery
+
+class SearchQuery(value, config=None, search_type='plain')

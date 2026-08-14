@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.__len__
+
+__len__()  
+Return the total number of headers, including duplicates.

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_NO_ELEMENTS
+
+xml.parsers.expat.errors.XML_ERROR_NO_ELEMENTS  
+The document contains no elements (XML requires all documents to contain exactly one top-level element)..

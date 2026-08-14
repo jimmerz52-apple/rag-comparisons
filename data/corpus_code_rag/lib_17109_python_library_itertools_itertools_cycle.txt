@@ -1,0 +1,13 @@
+# python.library.itertools#itertools.cycle
+
+itertools.cycle(iterable)  
+Make an iterator returning elements from the iterable and saving a copy of each. When the iterable is exhausted, return elements from the saved copy. Repeats indefinitely. Roughly equivalent to: def cycle(iterable):
+    # cycle('ABCD') --> A B C D A B C D A B C D ...
+    saved = []
+    for element in iterable:
+        yield element
+        saved.append(element)
+    while saved:
+        for element in saved:
+              yield element
+ Note, this member of the toolkit may require significant auxiliary storage (depending on the length of the iterable).

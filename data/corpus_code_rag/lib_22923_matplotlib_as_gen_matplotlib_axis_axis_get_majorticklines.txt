@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_majorticklines
+
+matplotlib.axis.Axis.get_majorticklines   Axis.get_majorticklines()[source]
+ 
+Return this Axis' major tick lines as a list of Line2Ds.

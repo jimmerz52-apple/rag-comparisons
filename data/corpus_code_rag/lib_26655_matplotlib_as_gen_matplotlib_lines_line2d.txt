@@ -1,0 +1,591 @@
+# matplotlib._as_gen.matplotlib.lines.line2d
+
+matplotlib.lines.Line2D   classmatplotlib.lines.Line2D(xdata, ydata, linewidth=None, linestyle=None, color=None, marker=None, markersize=None, markeredgewidth=None, markeredgecolor=None, markerfacecolor=None, markerfacecoloralt='none', fillstyle=None, antialiased=None, dash_capstyle=None, solid_capstyle=None, dash_joinstyle=None, solid_joinstyle=None, pickradius=5, drawstyle=None, markevery=None, **kwargs)[source]
+ 
+Bases: matplotlib.artist.Artist A line - the line can have both a solid linestyle connecting all the vertices, and a marker at each vertex. Additionally, the drawing of the solid line is influenced by the drawstyle, e.g., one can create "stepped" lines in various styles. Create a Line2D instance with x and y data in sequences of xdata, ydata. Additional keyword arguments are Line2D properties:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color or c color  
+dash_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+dash_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+dashes sequence of floats (on/off ink in points) or (None, None)  
+data (2, N) array or two 1D arrays  
+drawstyle or ds {'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'  
+figure Figure  
+fillstyle {'full', 'left', 'right', 'bottom', 'top', 'none'}  
+gid str  
+in_layout bool  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float  
+marker marker style string, Path or MarkerStyle  
+markeredgecolor or mec color  
+markeredgewidth or mew float  
+markerfacecolor or mfc color  
+markerfacecoloralt or mfcalt color  
+markersize or ms float  
+markevery None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]  
+path_effects AbstractPathEffect  
+picker float or callable[[Artist, Event], tuple[bool, dict]]  
+pickradius float  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+solid_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+solid_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+transform unknown  
+url str  
+visible bool  
+xdata 1D array  
+ydata 1D array  
+zorder float   See set_linestyle() for a description of the line styles, set_marker() for a description of the markers, and set_drawstyle() for a description of the draw styles.   contains(mouseevent)[source]
+ 
+Test whether mouseevent occurred on the line. An event is deemed to have occurred "on" the line if it is less than self.pickradius (default: 5 points) away from it. Use get_pickradius or set_pickradius to get or set the pick radius.  Parameters 
+ 
+mouseeventmatplotlib.backend_bases.MouseEvent
+
+  Returns 
+ 
+containsbool
+
+
+Whether any values are within the radius.  
+detailsdict
+
+
+A dictionary {'ind': pointlist}, where pointlist is a list of points of the line that are within the pickradius around the event position. TODO: sort returned indices by distance     
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   drawStyleKeys=['default', 'steps-mid', 'steps-pre', 'steps-post', 'steps']
+
+   drawStyles={'default': '_draw_lines', 'steps': '_draw_steps_pre', 'steps-mid': '_draw_steps_mid', 'steps-post': '_draw_steps_post', 'steps-pre': '_draw_steps_pre'}
+
+   fillStyles=('full', 'left', 'right', 'bottom', 'top', 'none')
+
+   filled_markers=('o', 'v', '^', '<', '>', '8', 's', 'p', '*', 'h', 'H', 'D', 'd', 'P', 'X')
+
+   get_aa()[source]
+ 
+Alias for get_antialiased. 
+   get_antialiased()[source]
+ 
+Return whether antialiased rendering is used. 
+   get_c()[source]
+ 
+Alias for get_color. 
+   get_color()[source]
+ 
+Return the line color. See also set_color. 
+   get_dash_capstyle()[source]
+ 
+Return the CapStyle for dashed lines. See also set_dash_capstyle. 
+   get_dash_joinstyle()[source]
+ 
+Return the JoinStyle for dashed lines. See also set_dash_joinstyle. 
+   get_data(orig=True)[source]
+ 
+Return the line data as an (xdata, ydata) pair. If orig is True, return the original data. 
+   get_drawstyle()[source]
+ 
+Return the drawstyle. See also set_drawstyle. 
+   get_ds()[source]
+ 
+Alias for get_drawstyle. 
+   get_fillstyle()[source]
+ 
+Return the marker fill style. See also set_fillstyle. 
+   get_linestyle()[source]
+ 
+Return the linestyle. See also set_linestyle. 
+   get_linewidth()[source]
+ 
+Return the linewidth in points. See also set_linewidth. 
+   get_ls()[source]
+ 
+Alias for get_linestyle. 
+   get_lw()[source]
+ 
+Alias for get_linewidth. 
+   get_marker()[source]
+ 
+Return the line marker. See also set_marker. 
+   get_markeredgecolor()[source]
+ 
+Return the marker edge color. See also set_markeredgecolor. 
+   get_markeredgewidth()[source]
+ 
+Return the marker edge width in points. See also set_markeredgewidth. 
+   get_markerfacecolor()[source]
+ 
+Return the marker face color. See also set_markerfacecolor. 
+   get_markerfacecoloralt()[source]
+ 
+Return the alternate marker face color. See also set_markerfacecoloralt. 
+   get_markersize()[source]
+ 
+Return the marker size in points. See also set_markersize. 
+   get_markevery()[source]
+ 
+Return the markevery setting for marker subsampling. See also set_markevery. 
+   get_mec()[source]
+ 
+Alias for get_markeredgecolor. 
+   get_mew()[source]
+ 
+Alias for get_markeredgewidth. 
+   get_mfc()[source]
+ 
+Alias for get_markerfacecolor. 
+   get_mfcalt()[source]
+ 
+Alias for get_markerfacecoloralt. 
+   get_ms()[source]
+ 
+Alias for get_markersize. 
+   get_path()[source]
+ 
+Return the Path associated with this line. 
+   get_pickradius()[source]
+ 
+Return the pick radius used for containment tests. See contains for more details. 
+   get_solid_capstyle()[source]
+ 
+Return the CapStyle for solid lines. See also set_solid_capstyle. 
+   get_solid_joinstyle()[source]
+ 
+Return the JoinStyle for solid lines. See also set_solid_joinstyle. 
+   get_window_extent(renderer)[source]
+ 
+Get the artist's bounding box in display space. The bounding box' width and height are nonnegative. Subclasses should override for inclusion in the bounding box "tight" calculation. Default is to return an empty bounding box at 0, 0. Be careful when using this function, the results will not update if the artist window extent of the artist changes. The extent can change due to any changes in the transform stack, such as changing the axes limits, the figure size, or the canvas used (as is done when saving a figure). This can lead to unexpected behavior where interactive figures will look fine on the screen, but will save incorrectly. 
+   get_xdata(orig=True)[source]
+ 
+Return the xdata. If orig is True, return the original data, else the processed data. 
+   get_xydata()[source]
+ 
+Return the xy data as a Nx2 numpy array. 
+   get_ydata(orig=True)[source]
+ 
+Return the ydata. If orig is True, return the original data, else the processed data. 
+   is_dashed()[source]
+ 
+Return whether line has a dashed linestyle. A custom linestyle is assumed to be dashed, we do not inspect the onoffseq directly. See also set_linestyle. 
+   lineStyles={'': '_draw_nothing', ' ': '_draw_nothing', '-': '_draw_solid', '--': '_draw_dashed', '-.': '_draw_dash_dot', ':': '_draw_dotted', 'None': '_draw_nothing'}
+
+   markers={'.': 'point', ',': 'pixel', 'o': 'circle', 'v': 'triangle_down', '^': 'triangle_up', '<': 'triangle_left', '>': 'triangle_right', '1': 'tri_down', '2': 'tri_up', '3': 'tri_left', '4': 'tri_right', '8': 'octagon', 's': 'square', 'p': 'pentagon', '*': 'star', 'h': 'hexagon1', 'H': 'hexagon2', '+': 'plus', 'x': 'x', 'D': 'diamond', 'd': 'thin_diamond', '|': 'vline', '_': 'hline', 'P': 'plus_filled', 'X': 'x_filled', 0: 'tickleft', 1: 'tickright', 2: 'tickup', 3: 'tickdown', 4: 'caretleft', 5: 'caretright', 6: 'caretup', 7: 'caretdown', 8: 'caretleftbase', 9: 'caretrightbase', 10: 'caretupbase', 11: 'caretdownbase', 'None': 'nothing', None: 'nothing', ' ': 'nothing', '': 'nothing'}
+
+   propertypickradius
+ 
+Return the pick radius used for containment tests. See contains for more details. 
+   recache(always=False)[source]
+
+   recache_always()[source]
+
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, dash_capstyle=<UNSET>, dash_joinstyle=<UNSET>, dashes=<UNSET>, data=<UNSET>, drawstyle=<UNSET>, fillstyle=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, marker=<UNSET>, markeredgecolor=<UNSET>, markeredgewidth=<UNSET>, markerfacecolor=<UNSET>, markerfacecoloralt=<UNSET>, markersize=<UNSET>, markevery=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, pickradius=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, solid_capstyle=<UNSET>, solid_joinstyle=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, xdata=<UNSET>, ydata=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased bool  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+dash_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+dash_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+dashes sequence of floats (on/off ink in points) or (None, None)  
+data (2, N) array or two 1D arrays  
+drawstyle {'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'  
+figure Figure  
+fillstyle {'full', 'left', 'right', 'bottom', 'top', 'none'}  
+gid str  
+in_layout bool  
+label object  
+linestyle {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth float  
+marker marker style string, Path or MarkerStyle  
+markeredgecolor color  
+markeredgewidth float  
+markerfacecolor color  
+markerfacecoloralt color  
+markersize float  
+markevery None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]  
+path_effects AbstractPathEffect  
+picker float or callable[[Artist, Event], tuple[bool, dict]]  
+pickradius float  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+solid_capstyle CapStyle or {'butt', 'projecting', 'round'}  
+solid_joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+transform unknown  
+url str  
+visible bool  
+xdata 1D array  
+ydata 1D array  
+zorder float   
+   set_aa(b)[source]
+ 
+Alias for set_antialiased. 
+   set_antialiased(b)[source]
+ 
+Set whether to use antialiased rendering.  Parameters 
+ 
+bbool
+
+   
+   set_c(color)[source]
+ 
+Alias for set_color. 
+   set_color(color)[source]
+ 
+Set the color of the line.  Parameters 
+ 
+colorcolor
+
+   
+   set_dash_capstyle(s)[source]
+ 
+How to draw the end caps if the line is is_dashed.  Parameters 
+ 
+sCapStyle or {'butt', 'projecting', 'round'}
+
+   
+   set_dash_joinstyle(s)[source]
+ 
+How to join segments of the line if it is_dashed.  Parameters 
+ 
+sJoinStyle or {'miter', 'round', 'bevel'}
+
+   
+   set_dashes(seq)[source]
+ 
+Set the dash sequence. The dash sequence is a sequence of floats of even length describing the length of dashes and spaces in points. For example, (5, 2, 1, 2) describes a sequence of 5 point and 1 point dashes separated by 2 point spaces.  Parameters 
+ 
+seqsequence of floats (on/off ink in points) or (None, None)
+
+
+If seq is empty or (None, None), the linestyle will be set to solid.     
+   set_data(*args)[source]
+ 
+Set the x and y data.  Parameters 
+ 
+*args(2, N) array or two 1D arrays
+
+   
+   set_drawstyle(drawstyle)[source]
+ 
+Set the drawstyle of the plot. The drawstyle determines how the points are connected.  Parameters 
+ 
+drawstyle{'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'
+
+
+For 'default', the points are connected with straight lines. The steps variants connect the points with step-like lines, i.e. horizontal lines with vertical steps. They differ in the location of the step:  'steps-pre': The step is at the beginning of the line segment, i.e. the line will be at the y-value of point to the right. 'steps-mid': The step is halfway between the points. 'steps-post: The step is at the end of the line segment, i.e. the line will be at the y-value of the point to the left. 'steps' is equal to 'steps-pre' and is maintained for backward-compatibility.  For examples see Step Demo.     
+   set_ds(drawstyle)[source]
+ 
+Alias for set_drawstyle. 
+   set_fillstyle(fs)[source]
+ 
+Set the marker fill style.  Parameters 
+ 
+fs{'full', 'left', 'right', 'bottom', 'top', 'none'}
+
+
+Possible values:  'full': Fill the whole marker with the markerfacecolor. 'left', 'right', 'bottom', 'top': Fill the marker half at the given side with the markerfacecolor. The other half of the marker is filled with markerfacecoloralt. 'none': No filling.  For examples see Marker fill styles.     
+   set_linestyle(ls)[source]
+ 
+Set the linestyle of the line.  Parameters 
+ 
+ls{'-', '--', '-.', ':', '', (offset, on-off-seq), ...}
+
+
+Possible values:  
+A string:   
+linestyle description   
+'-' or 'solid' solid line  
+'--' or 'dashed' dashed line  
+'-.' or 'dashdot' dash-dotted line  
+':' or 'dotted' dotted line  
+'none', 'None', ' ', or '' draw nothing    
+Alternatively a dash tuple of the following form can be provided: (offset, onoffseq)
+ where onoffseq is an even length tuple of on and off ink in points. See also set_dashes().   For examples see Linestyles.     
+   set_linewidth(w)[source]
+ 
+Set the line width in points.  Parameters 
+ 
+wfloat
+
+
+Line width, in points.     
+   set_ls(ls)[source]
+ 
+Alias for set_linestyle. 
+   set_lw(w)[source]
+ 
+Alias for set_linewidth. 
+   set_marker(marker)[source]
+ 
+Set the line marker.  Parameters 
+ 
+markermarker style string, Path or MarkerStyle
+
+
+See markers for full description of possible arguments.     
+   set_markeredgecolor(ec)[source]
+ 
+Set the marker edge color.  Parameters 
+ 
+eccolor
+
+   
+   set_markeredgewidth(ew)[source]
+ 
+Set the marker edge width in points.  Parameters 
+ 
+ewfloat
+
+
+Marker edge width, in points.     
+   set_markerfacecolor(fc)[source]
+ 
+Set the marker face color.  Parameters 
+ 
+fccolor
+
+   
+   set_markerfacecoloralt(fc)[source]
+ 
+Set the alternate marker face color.  Parameters 
+ 
+fccolor
+
+   
+   set_markersize(sz)[source]
+ 
+Set the marker size in points.  Parameters 
+ 
+szfloat
+
+
+Marker size, in points.     
+   set_markevery(every)[source]
+ 
+Set the markevery property to subsample the plot when using markers. e.g., if every=5, every 5-th marker will be plotted.  Parameters 
+ 
+everyNone or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]
+
+
+Which markers to plot.  
+every=None: every point will be plotted. 
+every=N: every N-th marker will be plotted starting with marker 0. 
+every=(start, N): every N-th marker, starting at index start, will be plotted. 
+every=slice(start, end, N): every N-th marker, starting at index start, up to but not including index end, will be plotted. 
+every=[i, j, m, ...]: only markers at the given indices will be plotted. 
+every=[True, False, True, ...]: only positions that are True will be plotted. The list must have the same length as the data points. 
+every=0.1, (i.e. a float): markers will be spaced at approximately equal visual distances along the line; the distance along the line between markers is determined by multiplying the display-coordinate distance of the axes bounding-box diagonal by the value of every. 
+every=(0.5, 0.1) (i.e. a length-2 tuple of float): similar to every=0.1 but the first marker will be offset along the line by 0.5 multiplied by the display-coordinate-diagonal-distance along the line.  For examples see Markevery Demo.     Notes Setting markevery will still only draw markers at actual data points. While the float argument form aims for uniform visual spacing, it has to coerce from the ideal spacing to the nearest available data point. Depending on the number and distribution of data points, the result may still not look evenly spaced. When using a start offset to specify the first marker, the offset will be from the first data point which may be different from the first the visible data point if the plot is zoomed in. If zooming in on a plot when using float arguments then the actual data points that have markers will change because the distance between markers is always determined from the display-coordinates axes-bounding-box-diagonal regardless of the actual axes data limits. 
+   set_mec(ec)[source]
+ 
+Alias for set_markeredgecolor. 
+   set_mew(ew)[source]
+ 
+Alias for set_markeredgewidth. 
+   set_mfc(fc)[source]
+ 
+Alias for set_markerfacecolor. 
+   set_mfcalt(fc)[source]
+ 
+Alias for set_markerfacecoloralt. 
+   set_ms(sz)[source]
+ 
+Alias for set_markersize. 
+   set_picker(p)[source]
+ 
+Set the event picker details for the line.  Parameters 
+ 
+pfloat or callable[[Artist, Event], tuple[bool, dict]]
+
+
+If a float, it is used as the pick radius in points.     
+   set_pickradius(d)[source]
+ 
+Set the pick radius used for containment tests. See contains for more details.  Parameters 
+ 
+dfloat
+
+
+Pick radius, in points.     
+   set_solid_capstyle(s)[source]
+ 
+How to draw the end caps if the line is solid (not is_dashed)  Parameters 
+ 
+sCapStyle or {'butt', 'projecting', 'round'}
+
+   
+   set_solid_joinstyle(s)[source]
+ 
+How to join segments if the line is solid (not is_dashed).  Parameters 
+ 
+sJoinStyle or {'miter', 'round', 'bevel'}
+
+   
+   set_transform(t)[source]
+ 
+Set the artist transform.  Parameters 
+ 
+tTransform
+
+   
+   set_xdata(x)[source]
+ 
+Set the data array for x.  Parameters 
+ 
+x1D array
+
+   
+   set_ydata(y)[source]
+ 
+Set the data array for y.  Parameters 
+ 
+y1D array
+
+   
+   update_from(other)[source]
+ 
+Copy properties from other to self. 
+   validCap=('butt', 'projecting', 'round')
+
+   validJoin=('miter', 'round', 'bevel')
+
+   zorder=2
+
+ 
+  Examples using matplotlib.lines.Line2D
+ 
+   Customizing dashed line styles   
+
+   Stem Plot   
+
+   Figure labels: suptitle, supxlabel, supylabel   
+
+   Boxplots   
+
+   Scale invariant angle label   
+
+   Annotating Plots   
+
+   Composing Custom Legends   
+
+   Annotation arrow style reference   
+
+   Figure legend demo   
+
+   Legend Demo   
+
+   Artist within an artist   
+
+   Annotating a plot   
+
+   Annotation Polar   
+
+   Fig Axes Customize Simple   
+
+   Simple axes labels   
+
+   Adding lines to figures   
+
+   Reference for Matplotlib artists   
+
+   PathPatch object   
+
+   Parasite Simple   
+
+   Parasite Axes demo   
+
+   Parasite axis demo   
+
+   Bachelor's degrees by gender   
+
+   Decay   
+
+   The double pendulum problem   
+
+   Animated line plot   
+
+   Oscilloscope   
+
+   MATPLOTLIB UNCHAINED   
+
+   Data Browser   
+
+   Legend Picking   
+
+   Looking Glass   
+
+   Pick Event Demo   
+
+   Pick Event Demo2   
+
+   Poly Editor   
+
+   Resampling Data   
+
+   Anchored Artists   
+
+   Cross hair cursor   
+
+   Patheffect Demo   
+
+   Set and get properties   
+
+   SVG Filter Line   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Multiple Yaxis With Spines   
+
+   Artist tests   
+
+   Simple Legend02   
+
+   Annotated Cursor   
+
+   Buttons   
+
+   Check Buttons   
+
+   Radio Buttons   
+
+   Thresholding an Image with RangeSlider   
+
+   Slider   
+
+   Snapping Sliders to Discrete Values   
+
+   Span Selector   
+
+   Textbox   
+
+   Basic Usage   
+
+   Pyplot tutorial   
+
+   Artist tutorial   
+
+   Legend guide   
+
+   Faster rendering by using blitting   
+
+   Transformations Tutorial

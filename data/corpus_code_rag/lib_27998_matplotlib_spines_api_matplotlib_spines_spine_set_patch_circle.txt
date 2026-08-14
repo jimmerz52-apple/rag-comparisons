@@ -1,0 +1,5 @@
+# matplotlib.spines_api#matplotlib.spines.Spine.set_patch_circle
+
+set_patch_circle(center, radius)[source]
+ 
+Set the spine to be circular.

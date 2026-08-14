@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_linewidth
+
+get_linewidth()[source]
+ 
+Return the linewidth in points. See also set_linewidth.

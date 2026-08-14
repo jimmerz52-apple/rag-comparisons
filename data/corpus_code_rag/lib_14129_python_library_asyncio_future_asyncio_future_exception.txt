@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.exception
+
+exception()  
+Return the exception that was set on this Future. The exception (or None if no exception was set) is returned only if the Future is done. If the Future has been cancelled, this method raises a CancelledError exception. If the Future isn’t done yet, this method raises an InvalidStateError exception.

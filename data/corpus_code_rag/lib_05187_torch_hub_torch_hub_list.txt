@@ -1,0 +1,10 @@
+# torch.hub#torch.hub.list
+
+torch.hub.list(github, force_reload=False) [source]
+ 
+List all entrypoints available in github hubconf.  Parameters 
+ 
+github (string) – a string with format “repo_owner/repo_name[:tag_name]” with an optional tag/branch. The default branch is master if not specified. Example: ‘pytorch/vision[:hub]’ 
+force_reload (bool, optional) – whether to discard the existing cache and force a fresh download. Default is False.   Returns 
+a list of available entrypoint names  Return type 
+entrypoints   Example >>> entrypoints = torch.hub.list('pytorch/vision', force_reload=True)

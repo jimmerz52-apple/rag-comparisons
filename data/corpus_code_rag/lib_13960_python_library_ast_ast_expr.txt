@@ -1,0 +1,11 @@
+# python.library.ast#ast.Expr
+
+class ast.Expr(value)  
+When an expression, such as a function call, appears as a statement by itself with its return value not used or stored, it is wrapped in this container. value holds one of the other nodes in this section, a Constant, a Name, a Lambda, a Yield or YieldFrom node. >>> print(ast.dump(ast.parse('-a'), indent=4))
+Module(
+    body=[
+        Expr(
+            value=UnaryOp(
+                op=USub(),
+                operand=Name(id='a', ctx=Load())))],
+    type_ignores=[])

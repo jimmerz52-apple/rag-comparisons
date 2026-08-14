@@ -1,0 +1,5 @@
+# flask.config.index#SERVER_NAME
+
+SERVER_NAME  
+Inform the application what host and port it is bound to. Required for subdomain route matching support. If set, will be used for the session cookie domain if SESSION_COOKIE_DOMAIN is not set. Modern web browsers will not allow setting cookies for domains without a dot. To use a domain locally, add any names that should route to the app to your hosts file. 127.0.0.1 localhost.dev
+ If set, url_for can generate external URLs with only an application context instead of a request context. Default: None

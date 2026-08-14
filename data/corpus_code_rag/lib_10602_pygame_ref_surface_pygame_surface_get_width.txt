@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_width
+
+get_width() 
+ get the width of the Surface get_width() -> width  Return the width of the Surface in pixels.

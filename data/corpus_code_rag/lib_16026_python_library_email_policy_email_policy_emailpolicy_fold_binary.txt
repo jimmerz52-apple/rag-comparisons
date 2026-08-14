@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.EmailPolicy.fold_binary
+
+fold_binary(name, value)  
+The same as fold() if cte_type is 7bit, except that the returned value is bytes. If cte_type is 8bit, non-ASCII binary data is converted back into bytes. Headers with binary data are not refolded, regardless of the refold_header setting, since there is no way to know whether the binary data consists of single byte characters or multibyte characters.

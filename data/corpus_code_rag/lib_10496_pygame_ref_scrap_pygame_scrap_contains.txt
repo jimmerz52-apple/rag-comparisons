@@ -1,0 +1,15 @@
+# pygame.ref.scrap#pygame.scrap.contains
+
+pygame.scrap.contains() 
+ Checks whether data for a given type is available in the clipboard. contains(type) -> bool  Checks whether data for the given type is currently available in the clipboard.     
+Parameters:
+
+type (string) -- data type to check availability of  
+Returns:
+
+True if data for the passed type is available in the clipboard, False otherwise  
+Return type:
+bool    if pygame.scrap.contains(pygame.SCRAP_TEXT):
+    print("There is text in the clipboard.")
+if pygame.scrap.contains("own_data_type"):
+    print("There is stuff in the clipboard.")

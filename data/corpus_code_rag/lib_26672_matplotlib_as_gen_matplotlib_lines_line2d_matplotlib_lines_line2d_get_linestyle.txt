@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_linestyle
+
+get_linestyle()[source]
+ 
+Return the linestyle. See also set_linestyle.

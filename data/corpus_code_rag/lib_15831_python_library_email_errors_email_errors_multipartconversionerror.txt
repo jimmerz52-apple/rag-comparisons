@@ -1,0 +1,4 @@
+# python.library.email.errors#email.errors.MultipartConversionError
+
+exception email.errors.MultipartConversionError  
+Raised when a payload is added to a Message object using add_payload(), but the payload is already a scalar and the message’s Content-Type main type is not either multipart or missing. MultipartConversionError multiply inherits from MessageError and the built-in TypeError. Since Message.add_payload() is deprecated, this exception is rarely raised in practice. However the exception may also be raised if the attach() method is called on an instance of a class derived from MIMENonMultipart (e.g. MIMEImage).

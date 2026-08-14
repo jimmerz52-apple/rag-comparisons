@@ -1,0 +1,4 @@
+# django.topics.forms.formsets#django.forms.formsets.BaseFormSet.as_ul
+
+BaseFormSet.as_ul()  
+Renders the formset with the template_name_ul template.

@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.io.formats.style.styler.set_caption
+
+pandas.io.formats.style.Styler.set_caption   Styler.set_caption(caption)[source]
+ 
+Set the text added to a <caption> HTML element.  Parameters 
+ 
+caption:str, tuple
+
+
+For HTML output either the string input is used or the first element of the tuple. For LaTeX the string input provides a caption and the additional tuple input allows for full captions and short captions, in that order.    Returns 
+ 
+self:Styler

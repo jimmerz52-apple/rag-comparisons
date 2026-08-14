@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.get_buffer
+
+Unpacker.get_buffer()  
+Returns the current unpack data buffer as a string.

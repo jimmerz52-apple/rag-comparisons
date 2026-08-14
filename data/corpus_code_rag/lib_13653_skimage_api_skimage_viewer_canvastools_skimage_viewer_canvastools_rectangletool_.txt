@@ -1,0 +1,4 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.RectangleTool.edge_centers
+
+property edge_centers  
+Midpoint of rectangle edges from left, moving clockwise.

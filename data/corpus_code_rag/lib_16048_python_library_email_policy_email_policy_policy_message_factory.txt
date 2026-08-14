@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Policy.message_factory
+
+message_factory  
+A factory function for constructing a new empty message object. Used by the parser when building messages. Defaults to None, in which case Message is used.  New in version 3.6.

@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.variant
+
+UUID.variant  
+The UUID variant, which determines the internal layout of the UUID. This will be one of the constants RESERVED_NCS, RFC_4122, RESERVED_MICROSOFT, or RESERVED_FUTURE.

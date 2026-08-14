@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.cache.get_cache_key
+
+get_cache_key(request, key_prefix=None, method='GET', cache=None)  
+Returns a cache key based on the request path. It can be used in the request phase because it pulls the list of headers to take into account from the global path registry and uses those to build a cache key to check against. If there is no headerlist stored, the page needs to be rebuilt, so this function returns None.

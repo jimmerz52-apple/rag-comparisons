@@ -1,0 +1,4 @@
+# python.library.csv#csv.DictWriter.writeheader
+
+DictWriter.writeheader()  
+Write a row with the field names (as specified in the constructor) to the writer’s file object, formatted according to the current dialect. Return the return value of the csvwriter.writerow() call used internally.  New in version 3.2.   Changed in version 3.8: writeheader() now also returns the value returned by the csvwriter.writerow() method it uses internally.

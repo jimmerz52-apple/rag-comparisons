@@ -1,0 +1,11 @@
+# python.library.unittest.mock#unittest.mock.Mock.method_calls
+
+method_calls  
+As well as tracking calls to themselves, mocks also track calls to methods and attributes, and their methods and attributes: >>> mock = Mock()
+>>> mock.method()
+<Mock name='mock.method()' id='...'>
+>>> mock.property.method.attribute()
+<Mock name='mock.property.method.attribute()' id='...'>
+>>> mock.method_calls
+[call.method(), call.property.method.attribute()]
+ Members of method_calls are call objects. These can be unpacked as tuples to get at the individual arguments. See calls as tuples.

@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.has_module_permission
+
+ModelAdmin.has_module_permission(request)  
+Should return True if displaying the module on the admin index page and accessing the module’s index page is permitted, False otherwise. Uses User.has_module_perms() by default. Overriding it does not restrict access to the view, add, change, or delete views, has_view_permission(), has_add_permission(), has_change_permission(), and has_delete_permission() should be used for that.

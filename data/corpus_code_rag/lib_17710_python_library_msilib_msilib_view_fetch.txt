@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.View.Fetch
+
+View.Fetch()  
+Return a result record of the query, through calling MsiViewFetch().

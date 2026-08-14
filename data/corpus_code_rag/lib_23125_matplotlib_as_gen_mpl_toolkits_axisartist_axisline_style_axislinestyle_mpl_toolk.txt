@@ -1,0 +1,13 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axisline_style.axislinestyle#mpl_toolkits.axisartist.axisline_style.AxislineStyle.SimpleArrow
+
+classSimpleArrow(size=1)[source]
+ 
+Bases: mpl_toolkits.axisartist.axisline_style.AxislineStyle._Base A simple arrow.  Parameters 
+ 
+sizefloat
+
+
+Size of the arrow as a fraction of the ticklabel size.       ArrowAxisClass[source]
+ 
+alias of mpl_toolkits.axisartist.axisline_style._FancyAxislineStyle.SimpleArrow 
+   new_line(axis_artist, transform)[source]

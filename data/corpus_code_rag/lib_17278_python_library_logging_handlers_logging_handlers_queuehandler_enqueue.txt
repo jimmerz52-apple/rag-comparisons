@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.QueueHandler.enqueue
+
+enqueue(record)  
+Enqueues the record on the queue using put_nowait(); you may want to override this if you want to use blocking behaviour, or a timeout, or a customized queue implementation.

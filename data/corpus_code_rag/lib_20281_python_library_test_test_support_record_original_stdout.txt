@@ -1,0 +1,4 @@
+# python.library.test#test.support.record_original_stdout
+
+test.support.record_original_stdout(stdout)  
+Store the value from stdout. It is meant to hold the stdout at the time the regrtest began.

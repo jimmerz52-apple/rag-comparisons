@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.syncok
+
+window.syncok(flag)  
+If flag is True, then syncup() is called automatically whenever there is a change in the window.

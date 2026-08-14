@@ -1,0 +1,7 @@
+# pandas.reference.api.pandas.series.swapaxes
+
+pandas.Series.swapaxes   Series.swapaxes(axis1, axis2, copy=True)[source]
+ 
+Interchange axes and swap values axes appropriately.  Returns 
+ 
+y:same as input

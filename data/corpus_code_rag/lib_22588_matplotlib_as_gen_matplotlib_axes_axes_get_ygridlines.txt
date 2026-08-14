@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_ygridlines
+
+matplotlib.axes.Axes.get_ygridlines   Axes.get_ygridlines()[source]
+ 
+Return the yaxis' grid lines as a list of Line2Ds.

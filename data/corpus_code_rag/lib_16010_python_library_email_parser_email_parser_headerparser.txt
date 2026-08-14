@@ -1,0 +1,4 @@
+# python.library.email.parser#email.parser.HeaderParser
+
+class email.parser.HeaderParser(_class=None, *, policy=policy.compat32)  
+Exactly like Parser, except that headersonly defaults to True.

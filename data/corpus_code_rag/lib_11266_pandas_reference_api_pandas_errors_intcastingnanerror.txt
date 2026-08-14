@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.errors.intcastingnanerror
+
+pandas.errors.IntCastingNaNError   exceptionpandas.errors.IntCastingNaNError[source]
+ 
+Raised when attempting an astype operation on an array with NaN to an integer dtype.

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLError.library
+
+library  
+A string mnemonic designating the OpenSSL submodule in which the error occurred, such as SSL, PEM or X509. The range of possible values depends on the OpenSSL version.  New in version 3.3.

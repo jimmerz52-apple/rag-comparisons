@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.minorticks_off
+
+matplotlib.pyplot.minorticks_off   matplotlib.pyplot.minorticks_off()[source]
+ 
+Remove minor ticks from the Axes.

@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.UnexpectedException.exc_info
+
+UnexpectedException.exc_info  
+A tuple containing information about the unexpected exception, as returned by sys.exc_info().

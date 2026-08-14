@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LogisticTransform.transform_non_affine
+
+transform_non_affine(a)[source]
+ 
+logistic transform (base 10)

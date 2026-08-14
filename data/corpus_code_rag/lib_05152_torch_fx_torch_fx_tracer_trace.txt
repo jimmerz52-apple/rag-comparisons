@@ -1,0 +1,7 @@
+# torch.fx#torch.fx.Tracer.trace
+
+trace(root, concrete_args=None) [source]
+ 
+Trace root and return the corresponding FX Graph representation. root can either be an nn.Module instance or a Python callable. Note that after this call, self.root may be different from the root passed in here. For example, when a free function is passed to trace(), we will create an nn.Module instance to use as the root and add embedded constants to.  Parameters 
+root (Union[Module, Callable]) – Either a Module or a function to be traced through.  Returns 
+A Graph representing the semantics of the passed-in root.

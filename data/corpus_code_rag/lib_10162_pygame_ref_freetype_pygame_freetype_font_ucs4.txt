@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.ucs4
+
+ucs4 
+ Enable UCS-4 mode ucs4 -> bool  Gets or sets the decoding of Unicode text. By default, the freetype module performs UTF-16 surrogate pair decoding on Unicode text. This allows 32-bit escape sequences ('Uxxxxxxxx') between 0x10000 and 0x10FFFF to represent their corresponding UTF-32 code points on Python interpreters built with a UCS-2 Unicode type (on Windows, for instance). It also means character values within the UTF-16 surrogate area (0xD800 to 0xDFFF) are considered part of a surrogate pair. A malformed surrogate pair will raise a UnicodeEncodeError. Setting ucs4 True turns surrogate pair decoding off, allowing access the full UCS-4 character range to a Python interpreter built with four-byte Unicode character support.

@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.get_caption
+
+pygame.display.get_caption() 
+ Get the current window caption get_caption() -> (title, icontitle)  Returns the title and icontitle for the display Surface. These will often be the same value.

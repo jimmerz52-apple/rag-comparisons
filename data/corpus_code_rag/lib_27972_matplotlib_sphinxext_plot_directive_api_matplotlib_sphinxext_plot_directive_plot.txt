@@ -1,0 +1,7 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.PlotDirective
+
+classmatplotlib.sphinxext.plot_directive.PlotDirective(name, arguments, options, content, lineno, content_offset, block_text, state, state_machine)[source]
+ 
+The .. plot:: directive, as documented in the module's docstring.   run()[source]
+ 
+Run the plot directive.

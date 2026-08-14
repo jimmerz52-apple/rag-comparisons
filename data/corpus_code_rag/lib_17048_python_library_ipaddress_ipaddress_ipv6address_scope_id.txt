@@ -1,0 +1,4 @@
+# python.library.ipaddress#ipaddress.IPv6Address.scope_id
+
+scope_id  
+For scoped addresses as defined by RFC 4007, this property identifies the particular zone of the address’s scope that the address belongs to, as a string. When no scope zone is specified, this property will be None.

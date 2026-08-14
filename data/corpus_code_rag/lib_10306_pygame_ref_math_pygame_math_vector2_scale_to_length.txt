@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.scale_to_length
+
+scale_to_length() 
+ scales the vector to a given length. scale_to_length(float) -> None  Scales the vector so that it has the given length. The direction of the vector is not changed. You can also scale to length 0. If the vector is the zero vector (i.e. has length 0 thus no direction) a ValueError is raised.

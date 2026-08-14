@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.CharField.db_collation
+
+CharField.db_collation  
+ New in Django 3.2.  Optional. The database collation name of the field.  Note Collation names are not standardized. As such, this will not be portable across multiple database backends.   Oracle Oracle supports collations only when the MAX_STRING_SIZE database initialization parameter is set to EXTENDED.

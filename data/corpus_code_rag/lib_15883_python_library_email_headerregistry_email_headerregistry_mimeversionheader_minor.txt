@@ -1,0 +1,4 @@
+# python.library.email.headerregistry#email.headerregistry.MIMEVersionHeader.minor
+
+minor  
+The minor version number as an integer

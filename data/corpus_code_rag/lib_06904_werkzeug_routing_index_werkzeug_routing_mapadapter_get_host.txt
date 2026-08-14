@@ -1,0 +1,6 @@
+# werkzeug.routing.index#werkzeug.routing.MapAdapter.get_host
+
+get_host(domain_part)  
+Figures out the full host name for the given domain part. The domain part is a subdomain in case host matching is disabled or a full host name.  Parameters 
+domain_part (Optional[str]) –   Return type 
+str

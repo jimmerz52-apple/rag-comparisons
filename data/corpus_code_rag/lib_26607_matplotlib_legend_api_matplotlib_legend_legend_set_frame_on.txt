@@ -1,0 +1,7 @@
+# matplotlib.legend_api#matplotlib.legend.Legend.set_frame_on
+
+set_frame_on(b)[source]
+ 
+Set whether the legend box patch is drawn.  Parameters 
+ 
+bbool

@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.g
+
+g 
+ Gets or sets the green value of the Color. g -> int  The green value of the Color.

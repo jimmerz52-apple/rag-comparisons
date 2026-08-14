@@ -1,0 +1,4 @@
+# python.library.stdtypes#dict.keys
+
+keys()  
+Return a new view of the dictionary’s keys. See the documentation of view objects.

@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.resolve_expression
+
+resolve_expression(query=None, allow_joins=True, reuse=None, summarize=False, for_save=False)  
+Provides the chance to do any pre-processing or validation of the expression before it’s added to the query. resolve_expression() must also be called on any nested expressions. A copy() of self should be returned with any necessary transformations. query is the backend query implementation. allow_joins is a boolean that allows or denies the use of joins in the query. reuse is a set of reusable joins for multi-join scenarios. summarize is a boolean that, when True, signals that the query being computed is a terminal aggregate query. for_save is a boolean that, when True, signals that the query being executed is performing a create or update.

@@ -1,0 +1,12 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.set_connectionstyle
+
+set_connectionstyle(connectionstyle, **kw)[source]
+ 
+Set the connection style. Old attributes are forgotten.  Parameters 
+ 
+connectionstylestr or ConnectionStyle or None, optional
+
+
+Can be a string with connectionstyle name with optional comma-separated attributes, e.g.: set_connectionstyle("arc,angleA=0,armA=30,rad=10")
+ Alternatively, the attributes can be provided as keywords, e.g.: set_connectionstyle("arc", angleA=0,armA=30,rad=10)
+ Without any arguments (or with connectionstyle=None), return available styles as a list of strings.

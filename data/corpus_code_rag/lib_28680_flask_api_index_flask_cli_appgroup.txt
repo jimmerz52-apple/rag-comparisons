@@ -1,0 +1,14 @@
+# flask.api.index#flask.cli.AppGroup
+
+class flask.cli.AppGroup(name=None, commands=None, **attrs)  
+This works similar to a regular click Group but it changes the behavior of the command() decorator so that it automatically wraps the functions in with_appcontext(). Not to be confused with FlaskGroup.  Parameters 
+ 
+name (Optional[str]) –  
+commands (Optional[Union[Dict[str, click.core.Command], Sequence[click.core.Command]]]) –  
+attrs (Any) –    Return type 
+None    
+command(*args, **kwargs)  
+This works exactly like the method of the same name on a regular click.Group but it wraps callbacks in with_appcontext() unless it’s disabled by passing with_appcontext=False. 
+  
+group(*args, **kwargs)  
+This works exactly like the method of the same name on a regular click.Group but it defaults the group class to AppGroup.

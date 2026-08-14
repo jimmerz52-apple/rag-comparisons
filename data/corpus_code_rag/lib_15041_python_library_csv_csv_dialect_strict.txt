@@ -1,0 +1,4 @@
+# python.library.csv#csv.Dialect.strict
+
+Dialect.strict  
+When True, raise exception Error on bad CSV input. The default is False.

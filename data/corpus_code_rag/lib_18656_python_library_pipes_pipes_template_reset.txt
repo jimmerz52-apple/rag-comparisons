@@ -1,0 +1,4 @@
+# python.library.pipes#pipes.Template.reset
+
+Template.reset()  
+Restore a pipeline template to its initial state.

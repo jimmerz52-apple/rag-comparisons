@@ -1,0 +1,4 @@
+# python.library.os#os.WNOHANG
+
+os.WNOHANG  
+The option for waitpid() to return immediately if no child process status is available immediately. The function returns (0, 0) in this case. Availability: Unix.

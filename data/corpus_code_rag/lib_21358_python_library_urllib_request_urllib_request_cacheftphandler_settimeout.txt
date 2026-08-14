@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.CacheFTPHandler.setTimeout
+
+CacheFTPHandler.setTimeout(t)  
+Set timeout of connections to t seconds.

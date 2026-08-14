@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.ContentRange.unset
+
+unset()  
+Sets the units to None which indicates that the header should no longer be used.

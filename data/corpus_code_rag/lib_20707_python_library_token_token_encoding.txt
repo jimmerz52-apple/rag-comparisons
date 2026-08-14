@@ -1,0 +1,4 @@
+# python.library.token#token.ENCODING
+
+token.ENCODING  
+Token value that indicates the encoding used to decode the source bytes into text. The first token returned by tokenize.tokenize() will always be an ENCODING token.

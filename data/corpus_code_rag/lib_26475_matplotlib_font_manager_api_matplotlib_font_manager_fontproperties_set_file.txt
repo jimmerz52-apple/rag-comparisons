@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.set_file
+
+set_file(file)[source]
+ 
+Set the filename of the fontfile to use. In this case, all other properties will be ignored.

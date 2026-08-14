@@ -1,0 +1,15 @@
+# torch.generated.torch.nn.leakyrelu#torch.nn.LeakyReLU
+
+class torch.nn.LeakyReLU(negative_slope=0.01, inplace=False) [source]
+ 
+Applies the element-wise function:  LeakyReLU(x)=max⁡(0,x)+negative_slope∗min⁡(0,x)\text{LeakyReLU}(x) = \max(0, x) + \text{negative\_slope} * \min(0, x)  
+or  LeakyRELU(x)={x, if x≥0negative_slope×x, otherwise \text{LeakyRELU}(x) = \begin{cases} x, & \text{ if } x \geq 0 \\ \text{negative\_slope} \times x, & \text{ otherwise } \end{cases}  
+ Parameters 
+ 
+negative_slope – Controls the angle of the negative slope. Default: 1e-2 
+inplace – can optionally do the operation in-place. Default: False
+     Shape:
+
+ Input: (N,∗)(N, *)  where * means, any number of additional dimensions Output: (N,∗)(N, *) , same shape as the input     Examples: >>> m = nn.LeakyReLU(0.1)
+>>> input = torch.randn(2)
+>>> output = m(input)

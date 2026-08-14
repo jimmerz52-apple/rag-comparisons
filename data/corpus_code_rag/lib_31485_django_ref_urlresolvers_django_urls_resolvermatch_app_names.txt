@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.app_names
+
+app_names  
+The list of individual namespace components in the full application namespace for the URL pattern that matches the URL. For example, if the app_name is 'foo:bar', then app_names will be ['foo', 'bar'].

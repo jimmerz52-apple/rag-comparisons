@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.businessmonthend.is_quarter_start
+
+pandas.tseries.offsets.BusinessMonthEnd.is_quarter_start   BusinessMonthEnd.is_quarter_start()

@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.all
+
+numpy.ndarray.all method   ndarray.all(axis=None, out=None, keepdims=False, *, where=True)
+ 
+Returns True if all elements evaluate to True. Refer to numpy.all for full documentation.  See also  numpy.all
+
+equivalent function

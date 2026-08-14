@@ -1,0 +1,5 @@
+# python.library.datetime#datetime.datetime.min
+
+datetime.min  
+The earliest representable datetime, datetime(MINYEAR, 1, 1,
+tzinfo=None).

@@ -1,0 +1,7 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.set_dpi
+
+set_dpi(val)[source]
+ 
+Set the resolution of the figure in dots-per-inch.  Parameters 
+ 
+valfloat

@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.file_requires_unicode
+
+matplotlib.cbook.file_requires_unicode(x)[source]
+ 
+Return whether the given writable file-like object requires Unicode to be written to it.

@@ -1,0 +1,5 @@
+# django.ref.utils#django.utils.safestring.SafeString
+
+class SafeString [source]
+ 
+A str subclass that has been specifically marked as “safe” (requires no further escaping) for HTML output purposes.

@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_color_or_auto
+
+matplotlib.rcsetup.validate_color_or_auto(s)[source]

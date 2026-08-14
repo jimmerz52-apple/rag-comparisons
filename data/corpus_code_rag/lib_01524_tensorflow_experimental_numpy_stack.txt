@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.stack
+
+tf.experimental.numpy.stack TensorFlow variant of NumPy's stack. 
+tf.experimental.numpy.stack(
+    arrays, axis=0
+)
+ Unsupported arguments: out. See the NumPy documentation for numpy.stack.

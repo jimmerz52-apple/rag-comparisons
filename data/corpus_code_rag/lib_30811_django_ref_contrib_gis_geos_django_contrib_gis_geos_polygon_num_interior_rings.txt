@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.Polygon.num_interior_rings
+
+num_interior_rings  
+Returns the number of interior rings in this geometry.

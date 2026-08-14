@@ -1,0 +1,7 @@
+# django.ref.contrib.auth#django.contrib.auth.signals.user_logged_out
+
+user_logged_out()  
+Sent when the logout method is called.  
+sender  As above: the class of the user that just logged out or None if the user was not authenticated. 
+request  The current HttpRequest instance. 
+user  The user instance that just logged out or None if the user was not authenticated.

@@ -1,0 +1,8 @@
+# matplotlib._as_gen.matplotlib.axis.axis.get_minor_ticks
+
+matplotlib.axis.Axis.get_minor_ticks   Axis.get_minor_ticks(numticks=None)[source]
+ 
+Return the list of minor Ticks. 
+  Examples using matplotlib.axis.Axis.get_minor_ticks
+ 
+   Centering labels between ticks

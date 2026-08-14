@@ -1,0 +1,4 @@
+# django.ref.files.file#django.core.files.File.size
+
+size  
+The size of the file in bytes.

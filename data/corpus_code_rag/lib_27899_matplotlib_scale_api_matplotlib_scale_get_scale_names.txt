@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.get_scale_names
+
+matplotlib.scale.get_scale_names()[source]
+ 
+Return the names of the available scales.

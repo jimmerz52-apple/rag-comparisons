@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.setdefault
+
+Morsel.setdefault(key, value=None)  
+Raise an error if key is not a valid RFC 2109 attribute, otherwise behave the same as dict.setdefault().

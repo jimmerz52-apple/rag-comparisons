@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_clip_path
+
+matplotlib.artist.Artist.get_clip_path   Artist.get_clip_path()[source]
+ 
+Return the clip path.

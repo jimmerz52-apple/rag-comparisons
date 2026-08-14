@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.get_config#sklearn.get_config
+
+sklearn.get_config() [source]
+ 
+Retrieve current values for configuration set by set_config  Returns 
+ 
+configdict 
+
+Keys are parameter names that can be passed to set_config.      See also  
+config_context
+
+
+Context manager for global scikit-learn configuration.  
+set_config
+
+
+Set global scikit-learn configuration.

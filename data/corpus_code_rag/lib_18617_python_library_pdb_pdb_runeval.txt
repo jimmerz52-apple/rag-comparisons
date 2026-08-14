@@ -1,0 +1,4 @@
+# python.library.pdb#pdb.runeval
+
+pdb.runeval(expression, globals=None, locals=None)  
+Evaluate the expression (given as a string or a code object) under debugger control. When runeval() returns, it returns the value of the expression. Otherwise this function is similar to run().

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.TemplateResponseMixin.get_template_names
+
+get_template_names()  
+Returns a list of template names to search for when rendering the template. The first template that is found will be used. The default implementation will return a list containing template_name (if it is specified).

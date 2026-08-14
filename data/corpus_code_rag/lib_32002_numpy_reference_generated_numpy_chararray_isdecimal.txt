@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.isdecimal
+
+numpy.chararray.isdecimal method   chararray.isdecimal()[source]
+ 
+For each element in self, return True if there are only decimal characters in the element.  See also  char.isdecimal

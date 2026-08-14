@@ -1,0 +1,5 @@
+# matplotlib.backend_nbagg_api#matplotlib.backends.backend_nbagg.FigureManagerNbAgg.show
+
+show()[source]
+ 
+For GUI backends, show the figure window and redraw. For non-GUI backends, raise an exception, unless running headless (i.e. on Linux with an unset DISPLAY); this exception is converted to a warning in Figure.show.

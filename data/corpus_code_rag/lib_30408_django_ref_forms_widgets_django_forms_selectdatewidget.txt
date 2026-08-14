@@ -1,0 +1,27 @@
+# django.ref.forms.widgets#django.forms.SelectDateWidget
+
+class SelectDateWidget  
+ 
+template_name: 'django/forms/widgets/select_date.html'
+  Wrapper around three Select widgets: one each for month, day, and year. Takes several optional arguments:  
+years  
+An optional list/tuple of years to use in the “year” select box. The default is a list containing the current year and the next 9 years. 
+  
+months  
+An optional dict of months to use in the “months” select box. The keys of the dict correspond to the month number (1-indexed) and the values are the displayed months: MONTHS = {
+    1:_('jan'), 2:_('feb'), 3:_('mar'), 4:_('apr'),
+    5:_('may'), 6:_('jun'), 7:_('jul'), 8:_('aug'),
+    9:_('sep'), 10:_('oct'), 11:_('nov'), 12:_('dec')
+}
+ 
+  
+empty_label  
+If the DateField is not required, SelectDateWidget will have an empty choice at the top of the list (which is --- by default). You can change the text of this label with the empty_label attribute. empty_label can be a string, list, or tuple. When a string is used, all select boxes will each have an empty choice with this label. If empty_label is a list or tuple of 3 string elements, the select boxes will have their own custom label. The labels should be in this order ('year_label', 'month_label', 'day_label'). # A custom empty label with string
+field1 = forms.DateField(widget=SelectDateWidget(empty_label="Nothing"))
+
+# A custom empty label with tuple
+field1 = forms.DateField(
+    widget=SelectDateWidget(
+        empty_label=("Choose Year", "Choose Month", "Choose Day"),
+    ),
+)

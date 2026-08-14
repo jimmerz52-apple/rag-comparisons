@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.getche
+
+msvcrt.getche()  
+Similar to getch(), but the keypress will be echoed if it represents a printable character.

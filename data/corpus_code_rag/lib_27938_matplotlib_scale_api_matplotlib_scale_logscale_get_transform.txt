@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.LogScale.get_transform
+
+get_transform()[source]
+ 
+Return the LogTransform associated with this scale.

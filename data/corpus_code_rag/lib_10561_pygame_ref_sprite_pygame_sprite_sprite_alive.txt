@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Sprite.alive
+
+alive() 
+ does the sprite belong to any groups alive() -> bool  Returns True when the Sprite belongs to one or more Groups.

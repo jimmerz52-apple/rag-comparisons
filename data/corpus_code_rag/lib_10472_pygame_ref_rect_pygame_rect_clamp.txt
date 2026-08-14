@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.clamp
+
+clamp() 
+ moves the rectangle inside another clamp(Rect) -> Rect  Returns a new rectangle that is moved to be completely inside the argument Rect. If the rectangle is too large to fit inside, it is centered inside the argument Rect, but its size is not changed.

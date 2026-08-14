@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.quarterend.is_on_offset
+
+pandas.tseries.offsets.QuarterEnd.is_on_offset   QuarterEnd.is_on_offset()

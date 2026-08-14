@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ManyToManyField.limit_choices_to
+
+ManyToManyField.limit_choices_to  
+Same as ForeignKey.limit_choices_to.

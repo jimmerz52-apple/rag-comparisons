@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.REG_SZ
+
+winreg.REG_SZ  
+A null-terminated string.

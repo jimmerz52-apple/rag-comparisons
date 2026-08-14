@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.userptr
+
+Panel.userptr()  
+Returns the user pointer for the panel. This might be any Python object.

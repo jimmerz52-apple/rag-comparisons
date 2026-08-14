@@ -1,0 +1,7 @@
+# django.ref.request-response#django.http.HttpRequest.user
+
+HttpRequest.user  
+From the AuthenticationMiddleware: An instance of AUTH_USER_MODEL representing the currently logged-in user. If the user isn’t currently logged in, user will be set to an instance of AnonymousUser. You can tell them apart with is_authenticated, like so: if request.user.is_authenticated:
+    ... # Do something for logged-in users.
+else:
+    ... # Do something for anonymous users.

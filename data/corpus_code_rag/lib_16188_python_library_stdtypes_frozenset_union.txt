@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.union
+
+union(*others)  
+set | other | ...  
+Return a new set with elements from the set and all others.

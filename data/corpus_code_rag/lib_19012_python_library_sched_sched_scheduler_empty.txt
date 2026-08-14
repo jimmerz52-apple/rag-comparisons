@@ -1,0 +1,4 @@
+# python.library.sched#sched.scheduler.empty
+
+scheduler.empty()  
+Return True if the event queue is empty.

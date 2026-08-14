@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.subplotdivider#mpl_toolkits.axes_grid1.axes_divider.SubplotDivider.get_geometry
+
+get_geometry()[source]
+ 
+[Deprecated] Get the subplot geometry, e.g., (2, 2, 3). Notes  Deprecated since version 3.4.

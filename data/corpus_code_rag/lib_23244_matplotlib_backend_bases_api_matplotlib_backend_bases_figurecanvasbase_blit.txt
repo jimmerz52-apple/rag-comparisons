@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.blit
+
+blit(bbox=None)[source]
+ 
+Blit the canvas in bbox (default entire canvas).

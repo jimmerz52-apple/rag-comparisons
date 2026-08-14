@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.is_pinned
+
+is_pinned() [source]
+ 
+Returns true if self.data stored on in pinned memory

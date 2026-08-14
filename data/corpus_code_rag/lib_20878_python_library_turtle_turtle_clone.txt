@@ -1,0 +1,5 @@
+# python.library.turtle#turtle.clone
+
+turtle.clone()  
+Create and return a clone of the turtle with same position, heading and turtle properties. >>> mick = Turtle()
+>>> joe = mick.clone()

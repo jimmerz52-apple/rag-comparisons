@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.minute.isanchored
+
+pandas.tseries.offsets.Minute.isAnchored   Minute.isAnchored()

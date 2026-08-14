@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.histgradientboostingclassifier#sklearn.ensemble.HistGradientBoostingClassifier.decision_function
+
+decision_function(X) [source]
+ 
+Compute the decision function of X.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+The input samples.    Returns 
+ 
+decisionndarray, shape (n_samples,) or (n_samples, n_trees_per_iteration) 
+
+The raw predicted values (i.e. the sum of the trees leaves) for each sample. n_trees_per_iteration is equal to the number of classes in multiclass classification.

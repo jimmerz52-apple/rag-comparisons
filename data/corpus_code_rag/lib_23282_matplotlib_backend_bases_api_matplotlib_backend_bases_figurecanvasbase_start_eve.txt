@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.start_event_loop
+
+start_event_loop(timeout=0)[source]
+ 
+Start a blocking event loop. Such an event loop is used by interactive functions, such as ginput and waitforbuttonpress, to wait for events. The event loop blocks until a callback function triggers stop_event_loop, or timeout is reached. If timeout is 0 or negative, never timeout. Only interactive backends need to reimplement this method and it relies on flush_events being properly implemented. Interactive backends should implement this in a more native way.

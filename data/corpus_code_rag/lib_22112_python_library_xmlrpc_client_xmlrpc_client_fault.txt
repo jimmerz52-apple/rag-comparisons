@@ -1,0 +1,9 @@
+# python.library.xmlrpc.client#xmlrpc.client.Fault
+
+class xmlrpc.client.Fault  
+A Fault object encapsulates the content of an XML-RPC fault tag. Fault objects have the following attributes:  
+faultCode  
+A string indicating the fault type. 
+  
+faultString  
+A string containing a diagnostic message associated with the fault.

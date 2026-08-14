@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.one_hot_categorical.OneHotCategorical.log_prob
+
+log_prob(value) [source]

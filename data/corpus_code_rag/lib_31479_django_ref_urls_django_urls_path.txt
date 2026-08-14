@@ -1,0 +1,3 @@
+# django.ref.urls#django.urls.path
+
+path(route, view, kwargs=None, name=None)

@@ -1,0 +1,12 @@
+# matplotlib.category_api#matplotlib.category.StrCategoryFormatter
+
+classmatplotlib.category.StrCategoryFormatter(units_mapping)[source]
+ 
+Bases: matplotlib.ticker.Formatter String representation of the data at every tick.  Parameters 
+ 
+units_mappingdict
+
+
+Mapping of category names (str) to indices (int).       format_ticks(values)[source]
+ 
+Return the tick labels for all the ticks at once.

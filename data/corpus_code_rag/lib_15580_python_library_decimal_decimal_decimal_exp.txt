@@ -1,0 +1,7 @@
+# python.library.decimal#decimal.Decimal.exp
+
+exp(context=None)  
+Return the value of the (natural) exponential function e**x at the given number. The result is correctly rounded using the ROUND_HALF_EVEN rounding mode. >>> Decimal(1).exp()
+Decimal('2.718281828459045235360287471')
+>>> Decimal(321).exp()
+Decimal('2.561702493119680037517373933E+139')

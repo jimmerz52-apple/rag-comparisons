@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__contains__
+
+numpy.ma.MaskedArray.__contains__ method   ma.MaskedArray.__contains__(key, /)
+ 
+Return key in self.

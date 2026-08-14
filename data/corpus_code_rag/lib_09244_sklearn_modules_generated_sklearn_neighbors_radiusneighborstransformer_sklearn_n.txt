@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neighbors.radiusneighborstransformer#sklearn.neighbors.RadiusNeighborsTransformer.fit
+
+fit(X, y=None) [source]
+ 
+Fit the radius neighbors transformer from the training dataset.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) or (n_samples, n_samples) if metric=’precomputed’ 
+
+Training data.    Returns 
+ 
+selfRadiusNeighborsTransformer 
+
+The fitted radius neighbors transformer.

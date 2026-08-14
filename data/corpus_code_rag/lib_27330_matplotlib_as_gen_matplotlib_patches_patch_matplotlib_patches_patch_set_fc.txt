@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.set_fc
+
+set_fc(color)[source]
+ 
+Alias for set_facecolor.

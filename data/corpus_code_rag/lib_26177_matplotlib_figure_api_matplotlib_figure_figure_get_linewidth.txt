@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_linewidth
+
+get_linewidth()[source]
+ 
+Get the line width of the Figure rectangle.

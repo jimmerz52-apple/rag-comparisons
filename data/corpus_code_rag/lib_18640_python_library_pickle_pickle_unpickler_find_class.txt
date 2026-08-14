@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.Unpickler.find_class
+
+find_class(module, name)  
+Import module if necessary and return the object called name from it, where the module and name arguments are str objects. Note, unlike its name suggests, find_class() is also used for finding functions. Subclasses may override this to gain control over what type of objects and how they can be loaded, potentially reducing security risks. Refer to Restricting Globals for details. Raises an auditing event pickle.find_class with arguments module, name.

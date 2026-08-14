@@ -1,0 +1,16 @@
+# matplotlib._as_gen.matplotlib.colors.hsv_to_rgb
+
+matplotlib.colors.hsv_to_rgb   matplotlib.colors.hsv_to_rgb(hsv)[source]
+ 
+Convert hsv values to rgb.  Parameters 
+ 
+hsv(..., 3) array-like
+
+
+All values assumed to be in range [0, 1]    Returns 
+ (..., 3) ndarray
+
+Colors converted to RGB values in range [0, 1]     
+  Examples using matplotlib.colors.hsv_to_rgb
+ 
+   3D voxel / volumetric plot with cylindrical coordinates

@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.tseries.offsets.businessmonthbegin.rollforward
+
+pandas.tseries.offsets.BusinessMonthBegin.rollforward   BusinessMonthBegin.rollforward()
+ 
+Roll provided date forward to next offset only if not on offset.  Returns 
+ TimeStamp
+
+Rolled timestamp if not on offset, otherwise unchanged timestamp.

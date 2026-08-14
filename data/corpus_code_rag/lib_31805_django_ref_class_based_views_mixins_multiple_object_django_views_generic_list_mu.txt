@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectMixin.ordering
+
+ordering  
+A string or list of strings specifying the ordering to apply to the queryset. Valid values are the same as those for order_by().

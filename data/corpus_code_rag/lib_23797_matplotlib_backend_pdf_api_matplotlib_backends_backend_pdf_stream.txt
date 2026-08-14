@@ -1,0 +1,45 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.Stream
+
+classmatplotlib.backends.backend_pdf.Stream(id, len, file, extra=None, png=None)[source]
+ 
+Bases: object PDF stream object. This has no pdfRepr method. Instead, call begin(), then output the contents of the stream by calling write(), and finally call end().  Parameters 
+ 
+idint
+
+
+Object id of the stream.  
+lenReference or None
+
+
+An unused Reference object for the length of the stream; None means to use a memory buffer so the length can be inlined.  
+filePdfFile
+
+
+The underlying object to write the stream to.  
+extradict from Name to anything, or None
+
+
+Extra key-value pairs to include in the stream header.  
+pngdict or None
+
+
+If the data is already png encoded, the decode parameters.       compressobj
+
+   end()[source]
+ 
+Finalize stream. 
+   extra
+
+   file
+
+   id
+
+   len
+
+   pdfFile
+
+   pos
+
+   write(data)[source]
+ 
+Write some data on the stream.

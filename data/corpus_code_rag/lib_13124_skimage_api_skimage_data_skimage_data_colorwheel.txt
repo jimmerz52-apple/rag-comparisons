@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.colorwheel
+
+skimage.data.colorwheel() [source]
+ 
+Color Wheel.  Returns 
+ 
+colorwheel(370, 371, 3) uint8 image 
+
+A colorwheel.

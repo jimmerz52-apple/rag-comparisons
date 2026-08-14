@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport.send_signal
+
+SubprocessTransport.send_signal(signal)  
+Send the signal number to the subprocess, as in subprocess.Popen.send_signal().

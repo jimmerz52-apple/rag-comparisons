@@ -1,0 +1,21 @@
+# matplotlib._api_api#matplotlib._api.check_in_list
+
+matplotlib._api.check_in_list(_values, *, _print_supported_values=True, **kwargs)[source]
+ 
+For each key, value pair in kwargs, check that value is in _values.  Parameters 
+ 
+_valuesiterable
+
+
+Sequence of values to check on.  
+_print_supported_valuesbool, default: True
+
+
+Whether to print _values when raising ValueError.  
+**kwargsdict
+
+
+key, value pairs as keyword arguments to find in _values.    Raises 
+ ValueError
+
+If any value in kwargs is not found in _values.     Examples >>> _api.check_in_list(["foo", "bar"], arg=arg, other_arg=other_arg)

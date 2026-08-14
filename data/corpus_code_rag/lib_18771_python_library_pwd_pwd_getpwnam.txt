@@ -1,0 +1,4 @@
+# python.library.pwd#pwd.getpwnam
+
+pwd.getpwnam(name)  
+Return the password database entry for the given user name.

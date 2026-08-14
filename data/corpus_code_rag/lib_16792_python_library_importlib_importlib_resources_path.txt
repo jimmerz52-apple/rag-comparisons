@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.path
+
+importlib.resources.path(package, resource)  
+Return the path to the resource as an actual file system path. This function returns a context manager for use in a with statement. The context manager provides a pathlib.Path object. Exiting the context manager cleans up any temporary file created when the resource needs to be extracted from e.g. a zip file. package is either a name or a module object which conforms to the Package requirements. resource is the name of the resource to open within package; it may not contain path separators and it may not have sub-resources (i.e. it cannot be a directory).

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.Atom1Feed
+
+class Atom1Feed(SyndicationFeed)  
+Spec: RFC 4287

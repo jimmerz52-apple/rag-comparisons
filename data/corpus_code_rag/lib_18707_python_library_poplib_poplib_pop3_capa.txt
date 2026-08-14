@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.capa
+
+POP3.capa()  
+Query the server’s capabilities as specified in RFC 2449. Returns a dictionary in the form {'name': ['param'...]}.  New in version 3.4.

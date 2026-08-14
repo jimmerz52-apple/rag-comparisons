@@ -1,0 +1,6 @@
+# django.ref.models.relations#django.db.models.fields.related.RelatedManager.set
+
+set(objs, bulk=True, clear=False, through_defaults=None)  
+Replace the set of related objects: >>> new_list = [obj1, obj2, obj3]
+>>> e.related_set.set(new_list)
+ This method accepts a clear argument to control how to perform the operation. If False (the default), the elements missing from the new set are removed using remove() and only the new ones are added. If clear=True, the clear() method is called instead and the whole set is added at once. For ForeignKey objects, the bulk argument is passed on to add() and remove(). For many-to-many relationships, the bulk keyword argument doesn’t exist. Note that since set() is a compound operation, it is subject to race conditions. For instance, new objects may be added to the database in between the call to clear() and the call to add(). For many-to-many relationships set() accepts a list of either model instances or field values, normally primary keys, as the objs argument. Use the through_defaults argument to specify values for the new intermediate model instance(s), if needed. You can use callables as values in the through_defaults dictionary and they will be evaluated once before creating any intermediate instance(s).

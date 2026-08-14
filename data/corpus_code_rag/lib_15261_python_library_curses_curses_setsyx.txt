@@ -1,0 +1,4 @@
+# python.library.curses#curses.setsyx
+
+curses.setsyx(y, x)  
+Set the virtual screen cursor to y, x. If y and x are both -1, then leaveok is set True.

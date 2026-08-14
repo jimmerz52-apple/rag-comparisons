@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.bernoullirbm#sklearn.neural_network.BernoulliRBM.transform
+
+transform(X) [source]
+ 
+Compute the hidden layer activation probabilities, P(h=1|v=X).  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data to be transformed.    Returns 
+ 
+hndarray of shape (n_samples, n_components) 
+
+Latent representations of the data.

@@ -1,0 +1,4 @@
+# python.library.cgi#cgi.test
+
+cgi.test()  
+Robust test CGI script, usable as main program. Writes minimal HTTP headers and formats all information provided to the script in HTML form.

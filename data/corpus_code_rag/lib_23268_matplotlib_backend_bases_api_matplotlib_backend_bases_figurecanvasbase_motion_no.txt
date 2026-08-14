@@ -1,0 +1,16 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.motion_notify_event
+
+motion_notify_event(x, y, guiEvent=None)[source]
+ 
+Callback processing for mouse movement events. Backend derived classes should call this function on any motion-notify-event. This method will call all functions connected to the 'motion_notify_event' with a MouseEvent instance.  Parameters 
+ 
+xfloat
+
+
+The canvas coordinates where 0=left.  
+yfloat
+
+
+The canvas coordinates where 0=bottom.  guiEvent
+
+The native UI event that generated the Matplotlib event.

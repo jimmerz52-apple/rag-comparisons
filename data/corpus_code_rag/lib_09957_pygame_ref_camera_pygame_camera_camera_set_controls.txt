@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.set_controls
+
+set_controls() 
+ changes camera settings if supported by the camera set_controls(hflip = bool, vflip = bool, brightness) -> (hflip = bool, vflip = bool, brightness)  Allows you to change camera settings if the camera supports it. The return values will be the input values if the camera claims it succeeded or the values previously in use if not. Each argument is optional, and the desired one can be chosen by supplying the keyword, like hflip. Note that the actual settings being used by the camera may not be the same as those returned by set_controls.

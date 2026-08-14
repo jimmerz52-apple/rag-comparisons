@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.istitle
+
+numpy.chararray.istitle method   chararray.istitle()[source]
+ 
+Returns true for each element if the element is a titlecased string and there is at least one character, false otherwise.  See also  char.istitle

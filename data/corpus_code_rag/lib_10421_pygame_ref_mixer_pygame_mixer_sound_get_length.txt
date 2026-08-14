@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.Sound.get_length
+
+get_length() 
+ get the length of the Sound get_length() -> seconds  Return the length of this Sound in seconds.

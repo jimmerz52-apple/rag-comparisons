@@ -1,0 +1,14 @@
+# torch.rpc#torch.distributed.rpc.RRef.rpc_sync
+
+rpc_sync(self: torch._C._distributed_rpc.PyRRef, timeout: float = -1.0) → object  
+Create a helper proxy to easily launch an rpc_sync using the owner of the RRef as the destination to run functions on the object referenced by this RRef. More specifically, rref.rpc_sync().func_name(*args, **kwargs) is the same as the following: >>> def run(rref, func_name, args, kwargs):
+>>>   return getattr(rref.local_value(), func_name)(*args, **kwargs)
+>>>
+>>> rpc.rpc_sync(rref.owner(), run, args=(rref, func_name, args, kwargs))
+  Parameters 
+timeout (float, optional) – Timeout for rref.rpc_sync(). If the call does not complete within this timeframe, an exception indicating so will be raised. If this argument is not provided, the default RPC timeout will be used.    Example::
+
+>>> from torch.distributed import rpc
+>>> rref = rpc.remote("worker1", torch.add, args=(torch.zeros(2, 2), 1))
+>>> rref.rpc_sync().size()  # returns torch.Size([2, 2])
+>>> rref.rpc_sync().view(1, 4)  # returns tensor([[1., 1., 1., 1.]])

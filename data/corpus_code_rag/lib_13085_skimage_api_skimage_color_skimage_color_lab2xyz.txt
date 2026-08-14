@@ -1,0 +1,30 @@
+# skimage.api.skimage.color#skimage.color.lab2xyz
+
+skimage.color.lab2xyz(lab, illuminant='D65', observer='2') [source]
+ 
+CIE-LAB to XYZcolor space conversion.  Parameters 
+ 
+lab(…, 3) array_like 
+
+The image in Lab format. Final dimension denotes channels.  
+illuminant{“A”, “D50”, “D55”, “D65”, “D75”, “E”}, optional 
+
+The name of the illuminant (the function is NOT case sensitive).  
+observer{“2”, “10”}, optional 
+
+The aperture angle of the observer.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in XYZ format. Same dimensions as input.    Raises 
+ ValueError
+
+If lab is not at least 2-D with shape (…, 3).  ValueError
+
+If either the illuminant or the observer angle are not supported or unknown.  UserWarning
+
+If any of the pixels are invalid (Z < 0).     Notes By default Observer= 2A, Illuminant= D65. CIE XYZ tristimulus values x_ref = 95.047, y_ref = 100., z_ref = 108.883. See function ‘get_xyz_coords’ for a list of supported illuminants. References  
+1  
+http://www.easyrgb.com/index.php?X=MATH&H=07  
+2  
+https://en.wikipedia.org/wiki/Lab_color_space

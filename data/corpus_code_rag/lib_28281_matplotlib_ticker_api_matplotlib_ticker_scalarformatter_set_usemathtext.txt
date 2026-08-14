@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.set_useMathText
+
+set_useMathText(val)[source]
+ 
+Set whether to use fancy math formatting. If active, scientific notation is formatted as \(1.2 \times 10^3\).  Parameters 
+ 
+valbool or None
+
+
+None resets to rcParams["axes.formatter.use_mathtext"] (default: False).

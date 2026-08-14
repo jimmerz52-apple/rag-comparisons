@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.access_control_allow_headers
+
+access_control_allow_headers  
+Which headers can be sent with the cross origin request.

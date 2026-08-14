@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.compose.transformedtargetregressor#sklearn.compose.TransformedTargetRegressor.fit
+
+fit(X, y, **fit_params) [source]
+ 
+Fit the model according to the given training data.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vector, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+**fit_paramsdict 
+
+Parameters passed to the fit method of the underlying regressor.    Returns 
+ 
+selfobject

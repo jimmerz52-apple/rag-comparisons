@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler.ccompiler_find_executables
+
+numpy.distutils.ccompiler.CCompiler_find_executables   distutils.ccompiler.CCompiler_find_executables(self)[source]
+ 
+Does nothing here, but is called by the get_version method and can be overridden by subclasses. In particular it is redefined in the FCompiler class where more documentation can be found.

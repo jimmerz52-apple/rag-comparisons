@@ -1,0 +1,6 @@
+# torch.amp#torch.cuda.amp.GradScaler.load_state_dict
+
+load_state_dict(state_dict) [source]
+ 
+Loads the scaler state. If this instance is disabled, load_state_dict() is a no-op.  Parameters 
+state_dict (dict) – scaler state. Should be an object returned from a call to state_dict().

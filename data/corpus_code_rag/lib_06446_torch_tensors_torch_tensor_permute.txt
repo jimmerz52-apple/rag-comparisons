@@ -1,0 +1,9 @@
+# torch.tensors#torch.Tensor.permute
+
+permute(*dims) → Tensor  
+Returns a view of the original tensor with its dimensions permuted.  Parameters 
+*dims (int...) – The desired ordering of dimensions   Example >>> x = torch.randn(2, 3, 5)
+>>> x.size()
+torch.Size([2, 3, 5])
+>>> x.permute(2, 0, 1).size()
+torch.Size([5, 2, 3])

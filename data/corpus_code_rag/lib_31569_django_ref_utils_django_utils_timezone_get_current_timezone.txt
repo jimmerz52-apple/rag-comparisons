@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.get_current_timezone
+
+get_current_timezone()  
+Returns a tzinfo instance that represents the current time zone.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_autoscale_on
+
+matplotlib.axes.Axes.get_autoscale_on   Axes.get_autoscale_on()[source]
+ 
+Return True if each axis is autoscaled, False otherwise.

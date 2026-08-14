@@ -1,0 +1,3 @@
+# matplotlib.transformations#matplotlib.transforms.TransformNode.INVALID_NON_AFFINE
+
+INVALID_NON_AFFINE=1

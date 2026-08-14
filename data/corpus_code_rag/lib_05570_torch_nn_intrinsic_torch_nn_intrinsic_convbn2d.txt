@@ -1,0 +1,5 @@
+# torch.nn.intrinsic#torch.nn.intrinsic.ConvBn2d
+
+class torch.nn.intrinsic.ConvBn2d(conv, bn) [source]
+ 
+This is a sequential container which calls the Conv 2d and Batch Norm 2d modules. During quantization this will be replaced with the corresponding fused module.

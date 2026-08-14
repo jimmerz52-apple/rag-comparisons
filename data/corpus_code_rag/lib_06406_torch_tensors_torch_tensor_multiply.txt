@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.multiply
+
+multiply(value) → Tensor  
+See torch.multiply().

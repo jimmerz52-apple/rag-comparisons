@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.get_full_url
+
+Request.get_full_url()  
+Return the URL given in the constructor.  Changed in version 3.4.  Returns Request.full_url

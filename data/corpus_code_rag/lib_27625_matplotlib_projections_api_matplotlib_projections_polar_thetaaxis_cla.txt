@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.ThetaAxis.cla
+
+cla()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.4:

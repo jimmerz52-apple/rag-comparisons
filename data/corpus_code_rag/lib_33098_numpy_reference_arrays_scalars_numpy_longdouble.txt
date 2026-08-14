@@ -1,0 +1,8 @@
+# numpy.reference.arrays.scalars#numpy.longdouble
+
+class numpy.longdouble[source]
+ 
+Extended-precision floating-point number type, compatible with C long double but not necessarily with IEEE 754 quadruple-precision.  Character code 
+'g'  Alias 
+numpy.longfloat  Alias on this platform (Linux x86_64) 
+numpy.float128: 128-bit extended-precision floating-point number type.

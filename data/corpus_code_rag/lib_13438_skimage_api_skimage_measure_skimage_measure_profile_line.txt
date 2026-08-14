@@ -1,0 +1,66 @@
+# skimage.api.skimage.measure#skimage.measure.profile_line
+
+skimage.measure.profile_line(image, src, dst, linewidth=1, order=None, mode=None, cval=0.0, *, reduce_func=<function mean>) [source]
+ 
+Return the intensity profile of an image measured along a scan line.  Parameters 
+ 
+imagendarray, shape (M, N[, C]) 
+
+The image, either grayscale (2D array) or multichannel (3D array, where the final axis contains the channel information).  
+srcarray_like, shape (2, ) 
+
+The coordinates of the start point of the scan line.  
+dstarray_like, shape (2, ) 
+
+The coordinates of the end point of the scan line. The destination point is included in the profile, in contrast to standard numpy indexing.  
+linewidthint, optional 
+
+Width of the scan, perpendicular to the line  
+orderint in {0, 1, 2, 3, 4, 5}, optional 
+
+The order of the spline interpolation, default is 0 if image.dtype is bool and 1 otherwise. The order has to be in the range 0-5. See skimage.transform.warp for detail.  
+mode{‘constant’, ‘nearest’, ‘reflect’, ‘mirror’, ‘wrap’}, optional 
+
+How to compute any values falling outside of the image.  
+cvalfloat, optional 
+
+If mode is ‘constant’, what constant value to use outside the image.  
+reduce_funccallable, optional 
+
+Function used to calculate the aggregation of pixel values perpendicular to the profile_line direction when linewidth > 1. If set to None the unreduced array will be returned.    Returns 
+ 
+return_valuearray 
+
+The intensity profile along the scan line. The length of the profile is the ceil of the computed length of the scan line.     Examples >>> x = np.array([[1, 1, 1, 2, 2, 2]])
+>>> img = np.vstack([np.zeros_like(x), x, x, x, np.zeros_like(x)])
+>>> img
+array([[0, 0, 0, 0, 0, 0],
+       [1, 1, 1, 2, 2, 2],
+       [1, 1, 1, 2, 2, 2],
+       [1, 1, 1, 2, 2, 2],
+       [0, 0, 0, 0, 0, 0]])
+>>> profile_line(img, (2, 1), (2, 4))
+array([1., 1., 2., 2.])
+>>> profile_line(img, (1, 0), (1, 6), cval=4)
+array([1., 1., 1., 2., 2., 2., 4.])
+ The destination point is included in the profile, in contrast to standard numpy indexing. For example: >>> profile_line(img, (1, 0), (1, 6))  # The final point is out of bounds
+array([1., 1., 1., 2., 2., 2., 0.])
+>>> profile_line(img, (1, 0), (1, 5))  # This accesses the full first row
+array([1., 1., 1., 2., 2., 2.])
+ For different reduce_func inputs: >>> profile_line(img, (1, 0), (1, 3), linewidth=3, reduce_func=np.mean)
+array([0.66666667, 0.66666667, 0.66666667, 1.33333333])
+>>> profile_line(img, (1, 0), (1, 3), linewidth=3, reduce_func=np.max)
+array([1, 1, 1, 2])
+>>> profile_line(img, (1, 0), (1, 3), linewidth=3, reduce_func=np.sum)
+array([2, 2, 2, 4])
+ The unreduced array will be returned when reduce_func is None or when reduce_func acts on each pixel value individually. >>> profile_line(img, (1, 2), (4, 2), linewidth=3, order=0,
+...     reduce_func=None)
+array([[1, 1, 2],
+       [1, 1, 2],
+       [1, 1, 2],
+       [0, 0, 0]])
+>>> profile_line(img, (1, 0), (1, 3), linewidth=3, reduce_func=np.sqrt)
+array([[1.        , 1.        , 0.        ],
+       [1.        , 1.        , 0.        ],
+       [1.        , 1.        , 0.        ],
+       [1.41421356, 1.41421356, 0.        ]])

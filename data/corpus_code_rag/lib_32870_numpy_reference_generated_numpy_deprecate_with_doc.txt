@@ -1,0 +1,16 @@
+# numpy.reference.generated.numpy.deprecate_with_doc
+
+numpy.deprecate_with_doc   numpy.deprecate_with_doc(msg)[source]
+ 
+Deprecates a function and includes the deprecation in its docstring. This function is used as a decorator. It returns an object that can be used to issue a DeprecationWarning, by passing the to-be decorated function as argument, this adds warning to the to-be decorated function’s docstring and returns the new function object.  Parameters 
+ 
+msgstr
+
+
+Additional explanation of the deprecation. Displayed in the docstring after the warning.    Returns 
+ 
+objobject
+
+    See also  deprecate
+
+Decorate a function such that it issues a DeprecationWarning

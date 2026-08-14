@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.kbinsdiscretizer#sklearn.preprocessing.KBinsDiscretizer.transform
+
+transform(X) [source]
+ 
+Discretize the data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Data to be discretized.    Returns 
+ 
+Xt{ndarray, sparse matrix}, dtype={np.float32, np.float64} 
+
+Data in the binned space. Will be a sparse matrix if self.encode='onehot' and ndarray otherwise.

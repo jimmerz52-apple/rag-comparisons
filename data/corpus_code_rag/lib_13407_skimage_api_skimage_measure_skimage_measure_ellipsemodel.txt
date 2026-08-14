@@ -1,0 +1,67 @@
+# skimage.api.skimage.measure#skimage.measure.EllipseModel
+
+class skimage.measure.EllipseModel [source]
+ 
+Bases: skimage.measure.fit.BaseModel Total least squares estimator for 2D ellipses. The functional model of the ellipse is: xt = xc + a*cos(theta)*cos(t) - b*sin(theta)*sin(t)
+yt = yc + a*sin(theta)*cos(t) + b*cos(theta)*sin(t)
+d = sqrt((x - xt)**2 + (y - yt)**2)
+ where (xt, yt) is the closest point on the ellipse to (x, y). Thus d is the shortest distance from the point to the ellipse. The estimator is based on a least squares minimization. The optimal solution is computed directly, no iterations are required. This leads to a simple, stable and robust fitting method. The params attribute contains the parameters in the following order: xc, yc, a, b, theta
+ Examples >>> xy = EllipseModel().predict_xy(np.linspace(0, 2 * np.pi, 25),
+...                                params=(10, 15, 4, 8, np.deg2rad(30)))
+>>> ellipse = EllipseModel()
+>>> ellipse.estimate(xy)
+True
+>>> np.round(ellipse.params, 2)
+array([10.  , 15.  ,  4.  ,  8.  ,  0.52])
+>>> np.round(abs(ellipse.residuals(xy)), 5)
+array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0.])
+  Attributes 
+ 
+paramstuple 
+
+Ellipse model parameters in the following order xc, yc, a, b, theta.      
+__init__() [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+estimate(data) [source]
+ 
+Estimate circle model from data using total least squares.  Parameters 
+ 
+data(N, 2) array 
+
+N points with (x, y) coordinates, respectively.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.     References  
+1  
+Halir, R.; Flusser, J. “Numerically stable direct least squares fitting of ellipses”. In Proc. 6th International Conference in Central Europe on Computer Graphics and Visualization. WSCG (Vol. 98, pp. 125-132).   
+  
+predict_xy(t, params=None) [source]
+ 
+Predict x- and y-coordinates using the estimated model.  Parameters 
+ 
+tarray 
+
+Angles in circle in radians. Angles start to count from positive x-axis to positive y-axis in a right-handed system.  
+params(5, ) array, optional 
+
+Optional custom parameter set.    Returns 
+ 
+xy(…, 2) array 
+
+Predicted x- and y-coordinates.     
+  
+residuals(data) [source]
+ 
+Determine residuals of data to model. For each point the shortest distance to the ellipse is returned.  Parameters 
+ 
+data(N, 2) array 
+
+N points with (x, y) coordinates, respectively.    Returns 
+ 
+residuals(N, ) array 
+
+Residual for each data point.

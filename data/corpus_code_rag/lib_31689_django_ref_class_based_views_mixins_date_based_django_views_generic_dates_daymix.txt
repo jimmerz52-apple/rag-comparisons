@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.DayMixin.day_format
+
+day_format  
+The strftime() format to use when parsing the day. By default, this is '%d'.

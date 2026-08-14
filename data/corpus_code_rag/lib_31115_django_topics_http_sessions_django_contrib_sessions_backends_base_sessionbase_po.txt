@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.pop
+
+pop(key, default=__not_given)  
+Example: fav_color = request.session.pop('fav_color', 'blue')

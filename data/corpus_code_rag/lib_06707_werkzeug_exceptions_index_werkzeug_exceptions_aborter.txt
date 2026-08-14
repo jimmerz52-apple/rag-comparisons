@@ -1,0 +1,8 @@
+# werkzeug.exceptions.index#werkzeug.exceptions.Aborter
+
+class werkzeug.exceptions.Aborter(mapping=None, extra=None)  
+When passed a dict of code -> exception items it can be used as callable that raises exceptions. If the first argument to the callable is an integer it will be looked up in the mapping, if it’s a WSGI application it will be raised in a proxy exception. The rest of the arguments are forwarded to the exception constructor.  Parameters 
+ 
+mapping (Optional[Dict[int, Type[werkzeug.exceptions.HTTPException]]]) –  
+extra (Optional[Dict[int, Type[werkzeug.exceptions.HTTPException]]]) –    Return type 
+None

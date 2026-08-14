@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.delaxes
+
+delaxes(ax)[source]
+ 
+Remove the Axes ax from the figure; update the current Axes.

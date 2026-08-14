@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__ipow__
+
+numpy.ndarray.__ipow__ method   ndarray.__ipow__(value, /)
+ 
+Return self**=value.

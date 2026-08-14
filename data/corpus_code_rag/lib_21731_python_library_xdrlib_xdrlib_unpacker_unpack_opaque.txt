@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.unpack_opaque
+
+Unpacker.unpack_opaque()  
+Unpacks and returns a variable length opaque data string, similarly to unpack_string().

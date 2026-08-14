@@ -1,0 +1,15 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_position
+
+matplotlib.axes.Axes.get_position   Axes.get_position(original=False)[source]
+ 
+Return the position of the Axes within the figure as a Bbox.  Parameters 
+ 
+originalbool
+
+
+If True, return the original position. Otherwise return the active position. For an explanation of the positions see set_position.    Returns 
+ Bbox
+   
+  Examples using matplotlib.axes.Axes.get_position
+ 
+   Contour Demo

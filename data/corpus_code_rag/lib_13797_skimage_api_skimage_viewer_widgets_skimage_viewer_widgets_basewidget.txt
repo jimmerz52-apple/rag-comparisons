@@ -1,0 +1,12 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.BaseWidget
+
+class skimage.viewer.widgets.BaseWidget(name, ptype=None, callback=None) [source]
+ 
+Bases: object  
+__init__(name, ptype=None, callback=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+plugin = 'Widget is not attached to a Plugin.' 
+  
+property val

@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Condition
+
+Condition([lock])  
+Create a shared threading.Condition object and return a proxy for it. If lock is supplied then it should be a proxy for a threading.Lock or threading.RLock object.  Changed in version 3.3: The wait_for() method was added.

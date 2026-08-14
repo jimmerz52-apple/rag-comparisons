@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.dirs_select_event
+
+dirs_select_event(event)  
+Event handler for click event on directory.

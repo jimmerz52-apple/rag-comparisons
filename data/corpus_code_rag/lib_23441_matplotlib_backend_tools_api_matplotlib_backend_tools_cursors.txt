@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.cursors
+
+matplotlib.backend_tools.cursors[source]
+ 
+alias of matplotlib.backend_tools.Cursors

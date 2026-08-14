@@ -1,0 +1,7 @@
+# python.library.socket#socket.SOL_RDS
+
+socket.AF_RDS  
+socket.PF_RDS  
+socket.SOL_RDS  
+RDS_*  
+Many constants of these forms, documented in the Linux documentation, are also defined in the socket module. Availability: Linux >= 2.6.30.  New in version 3.3.

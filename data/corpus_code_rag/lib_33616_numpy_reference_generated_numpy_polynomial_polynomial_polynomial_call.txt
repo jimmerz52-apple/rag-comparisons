@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.polynomial.polynomial.polynomial.__call__
+
+numpy.polynomial.polynomial.Polynomial.__call__ method   polynomial.polynomial.Polynomial.__call__(arg)[source]
+ 
+Call self as a function.

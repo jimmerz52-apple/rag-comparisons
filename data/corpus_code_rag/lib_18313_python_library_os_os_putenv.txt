@@ -1,0 +1,4 @@
+# python.library.os#os.putenv
+
+os.putenv(key, value)  
+Set the environment variable named key to the string value. Such changes to the environment affect subprocesses started with os.system(), popen() or fork() and execv(). Assignments to items in os.environ are automatically translated into corresponding calls to putenv(); however, calls to putenv() don’t update os.environ, so it is actually preferable to assign to items of os.environ.  Note On some platforms, including FreeBSD and Mac OS X, setting environ may cause memory leaks. Refer to the system documentation for putenv().  Raises an auditing event os.putenv with arguments key, value.  Changed in version 3.9: The function is now always available.

@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIterator.field
+
+field  
+The instance of ModelChoiceField or ModelMultipleChoiceField to iterate and yield choices.

@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Snapshot.traceback_limit
+
+traceback_limit  
+Maximum number of frames stored in the traceback of traces: result of the get_traceback_limit() when the snapshot was taken.

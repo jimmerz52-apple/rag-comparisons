@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.outer
+
+outer(vec2) → Tensor  
+See torch.outer().

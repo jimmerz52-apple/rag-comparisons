@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.median
+
+median  
+A read-only property for the median of a normal distribution.

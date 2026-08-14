@@ -1,0 +1,8 @@
+# django.ref.forms.widgets#django.forms.SelectMultiple
+
+class SelectMultiple  
+ 
+template_name: 'django/forms/widgets/select.html'
+ 
+option_template_name: 'django/forms/widgets/select_option.html'
+  Similar to Select, but allows multiple selection: <select multiple>...</select>

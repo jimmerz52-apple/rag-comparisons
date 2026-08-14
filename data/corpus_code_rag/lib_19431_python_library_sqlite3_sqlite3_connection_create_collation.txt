@@ -1,0 +1,24 @@
+# python.library.sqlite3#sqlite3.Connection.create_collation
+
+create_collation(name, callable)  
+Creates a collation with the specified name and callable. The callable will be passed two string arguments. It should return -1 if the first is ordered lower than the second, 0 if they are ordered equal and 1 if the first is ordered higher than the second. Note that this controls sorting (ORDER BY in SQL) so your comparisons don’t affect other SQL operations. Note that the callable will get its parameters as Python bytestrings, which will normally be encoded in UTF-8. The following example shows a custom collation that sorts “the wrong way”: import sqlite3
+
+def collate_reverse(string1, string2):
+    if string1 == string2:
+        return 0
+    elif string1 < string2:
+        return 1
+    else:
+        return -1
+
+con = sqlite3.connect(":memory:")
+con.create_collation("reverse", collate_reverse)
+
+cur = con.cursor()
+cur.execute("create table test(x)")
+cur.executemany("insert into test(x) values (?)", [("a",), ("b",)])
+cur.execute("select x from test order by x collate reverse")
+for row in cur:
+    print(row)
+con.close()
+ To remove a collation, call create_collation with None as callable: con.create_collation("reverse", None)

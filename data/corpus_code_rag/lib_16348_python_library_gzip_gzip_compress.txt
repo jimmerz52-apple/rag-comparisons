@@ -1,0 +1,4 @@
+# python.library.gzip#gzip.compress
+
+gzip.compress(data, compresslevel=9, *, mtime=None)  
+Compress the data, returning a bytes object containing the compressed data. compresslevel and mtime have the same meaning as in the GzipFile constructor above.  New in version 3.2.   Changed in version 3.8: Added the mtime parameter for reproducible output.

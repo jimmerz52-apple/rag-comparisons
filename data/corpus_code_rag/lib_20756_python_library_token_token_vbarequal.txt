@@ -1,0 +1,4 @@
+# python.library.token#token.VBAREQUAL
+
+token.VBAREQUAL  
+Token value for "|=".

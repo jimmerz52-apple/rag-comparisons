@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.DEFAULT_PROTOCOL
+
+pickle.DEFAULT_PROTOCOL  
+An integer, the default protocol version used for pickling. May be less than HIGHEST_PROTOCOL. Currently the default protocol is 4, first introduced in Python 3.4 and incompatible with previous versions.  Changed in version 3.0: The default protocol is 3.   Changed in version 3.8: The default protocol is 4.

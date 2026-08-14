@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.add_header
+
+add_header(_key, _value, **_kw)  
+Add a new header tuple to the list. An alias for add() for compatibility with the wsgiref add_header() method.

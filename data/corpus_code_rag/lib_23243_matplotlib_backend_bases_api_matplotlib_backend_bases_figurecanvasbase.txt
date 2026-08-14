@@ -1,0 +1,265 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase
+
+classmatplotlib.backend_bases.FigureCanvasBase(figure=None)[source]
+ 
+Bases: object The canvas the figure renders into.  Attributes 
+ 
+figurematplotlib.figure.Figure
+
+
+A high-level figure instance.       blit(bbox=None)[source]
+ 
+Blit the canvas in bbox (default entire canvas). 
+   propertybutton_pick_id
+
+   button_press_event(x, y, button, dblclick=False, guiEvent=None)[source]
+ 
+Callback processing for mouse button press events. Backend derived classes should call this function on any mouse button press. (x, y) are the canvas coords ((0, 0) is lower left). button and key are as defined in MouseEvent. This method will call all functions connected to the 'button_press_event' with a MouseEvent instance. 
+   button_release_event(x, y, button, guiEvent=None)[source]
+ 
+Callback processing for mouse button release events. Backend derived classes should call this function on any mouse button release. This method will call all functions connected to the 'button_release_event' with a MouseEvent instance.  Parameters 
+ 
+xfloat
+
+
+The canvas coordinates where 0=left.  
+yfloat
+
+
+The canvas coordinates where 0=bottom.  guiEvent
+
+The native UI event that generated the Matplotlib event.     
+   propertycallbacks
+
+   close_event(guiEvent=None)[source]
+ 
+Pass a CloseEvent to all functions connected to close_event. 
+   propertydevice_pixel_ratio
+ 
+The ratio of physical to logical pixels used for the canvas on screen. By default, this is 1, meaning physical and logical pixels are the same size. Subclasses that support High DPI screens may set this property to indicate that said ratio is different. All Matplotlib interaction, unless working directly with the canvas, remains in logical pixels. 
+   draw(*args, **kwargs)[source]
+ 
+Render the Figure. It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk. 
+   draw_event(renderer)[source]
+ 
+Pass a DrawEvent to all functions connected to draw_event. 
+   draw_idle(*args, **kwargs)[source]
+ 
+Request a widget redraw once control returns to the GUI event loop. Even if multiple calls to draw_idle occur before control returns to the GUI event loop, the figure will only be rendered once. Notes Backends may choose to override the method and implement their own strategy to prevent multiple renderings. 
+   enter_notify_event(guiEvent=None, xy=None)[source]
+ 
+Callback processing for the mouse cursor entering the canvas. Backend derived classes should call this function when entering canvas.  Parameters 
+ guiEvent
+
+The native UI event that generated the Matplotlib event.  
+xy(float, float)
+
+
+The coordinate location of the pointer when the canvas is entered.     
+   events=['resize_event', 'draw_event', 'key_press_event', 'key_release_event', 'button_press_event', 'button_release_event', 'scroll_event', 'motion_notify_event', 'pick_event', 'figure_enter_event', 'figure_leave_event', 'axes_enter_event', 'axes_leave_event', 'close_event']
+
+   filetypes={'eps': 'Encapsulated Postscript', 'jpeg': 'Joint Photographic Experts Group', 'jpg': 'Joint Photographic Experts Group', 'pdf': 'Portable Document Format', 'pgf': 'PGF code for LaTeX', 'png': 'Portable Network Graphics', 'ps': 'Postscript', 'raw': 'Raw RGBA bitmap', 'rgba': 'Raw RGBA bitmap', 'svg': 'Scalable Vector Graphics', 'svgz': 'Scalable Vector Graphics', 'tif': 'Tagged Image File Format', 'tiff': 'Tagged Image File Format'}
+
+   fixed_dpi=None
+
+   flush_events()[source]
+ 
+Flush the GUI events for the figure. Interactive backends need to reimplement this method. 
+   get_default_filename()[source]
+ 
+Return a string, which includes extension, suitable for use as a default filename. 
+   classmethodget_default_filetype()[source]
+ 
+Return the default savefig file format as specified in rcParams["savefig.format"] (default: 'png'). The returned string does not include a period. This method is overridden in backends that only support a single file type. 
+   classmethodget_supported_filetypes()[source]
+ 
+Return dict of savefig file formats supported by this backend. 
+   classmethodget_supported_filetypes_grouped()[source]
+ 
+Return a dict of savefig file formats supported by this backend, where the keys are a file type name, such as 'Joint Photographic Experts Group', and the values are a list of filename extensions used for that filetype, such as ['jpg', 'jpeg']. 
+   get_width_height(*, physical=False)[source]
+ 
+Return the figure width and height in integral points or pixels. When the figure is used on High DPI screens (and the backend supports it), the truncation to integers occurs after scaling by the device pixel ratio.  Parameters 
+ 
+physicalbool, default: False
+
+
+Whether to return true physical pixels or logical pixels. Physical pixels may be used by backends that support HiDPI, but still configure the canvas using its actual size.    Returns 
+ 
+width, heightint
+
+
+The size of the figure, in points or pixels, depending on the backend.     
+   get_window_title()[source]
+ 
+[Deprecated] Return the title text of the window containing the figure, or None if there is no window (e.g., a PS backend). Notes  Deprecated since version 3.4.  
+   grab_mouse(ax)[source]
+ 
+Set the child Axes which is grabbing the mouse events. Usually called by the widgets themselves. It is an error to call this if the mouse is already grabbed by another axes. 
+   inaxes(xy)[source]
+ 
+Return the topmost visible Axes containing the point xy.  Parameters 
+ 
+xy(float, float)
+
+
+(x, y) pixel positions from left/bottom of the canvas.    Returns 
+ 
+Axes or None
+
+The topmost visible axes containing the point, or None if no axes.     
+   is_saving()[source]
+ 
+Return whether the renderer is in the process of saving to a file, rather than rendering for an on-screen buffer. 
+   key_press_event(key, guiEvent=None)[source]
+ 
+Pass a KeyEvent to all functions connected to key_press_event. 
+   key_release_event(key, guiEvent=None)[source]
+ 
+Pass a KeyEvent to all functions connected to key_release_event. 
+   leave_notify_event(guiEvent=None)[source]
+ 
+Callback processing for the mouse cursor leaving the canvas. Backend derived classes should call this function when leaving canvas.  Parameters 
+ guiEvent
+
+The native UI event that generated the Matplotlib event.     
+   motion_notify_event(x, y, guiEvent=None)[source]
+ 
+Callback processing for mouse movement events. Backend derived classes should call this function on any motion-notify-event. This method will call all functions connected to the 'motion_notify_event' with a MouseEvent instance.  Parameters 
+ 
+xfloat
+
+
+The canvas coordinates where 0=left.  
+yfloat
+
+
+The canvas coordinates where 0=bottom.  guiEvent
+
+The native UI event that generated the Matplotlib event.     
+   mpl_connect(s, func)[source]
+ 
+Bind function func to event s.  Parameters 
+ 
+sstr
+
+
+One of the following events ids:  'button_press_event' 'button_release_event' 'draw_event' 'key_press_event' 'key_release_event' 'motion_notify_event' 'pick_event' 'resize_event' 'scroll_event' 'figure_enter_event', 'figure_leave_event', 'axes_enter_event', 'axes_leave_event' 'close_event'.   
+funccallable
+
+
+The callback function to be executed, which must have the signature: def func(event: Event) -> Any
+ For the location events (button and key press/release), if the mouse is over the axes, the inaxes attribute of the event will be set to the Axes the event occurs is over, and additionally, the variables xdata and ydata attributes will be set to the mouse location in data coordinates. See KeyEvent and MouseEvent for more info.    Returns 
+ cid
+
+A connection id that can be used with FigureCanvasBase.mpl_disconnect.     Examples def on_press(event):
+    print('you pressed', event.button, event.xdata, event.ydata)
+
+cid = canvas.mpl_connect('button_press_event', on_press)
+ 
+   mpl_disconnect(cid)[source]
+ 
+Disconnect the callback with id cid. Examples cid = canvas.mpl_connect('button_press_event', on_press)
+# ... later
+canvas.mpl_disconnect(cid)
+ 
+   new_timer(interval=None, callbacks=None)[source]
+ 
+Create a new backend-specific subclass of Timer. This is useful for getting periodic events through the backend's native event loop. Implemented only for backends with GUIs.  Parameters 
+ 
+intervalint
+
+
+Timer interval in milliseconds.  
+callbackslist[tuple[callable, tuple, dict]]
+
+
+Sequence of (func, args, kwargs) where func(*args, **kwargs) will be executed by the timer every interval. Callbacks which return False or 0 will be removed from the timer.     Examples >>> timer = fig.canvas.new_timer(callbacks=[(f1, (1,), {'a': 3})])
+ 
+   pick(mouseevent)[source]
+
+   pick_event(mouseevent, artist, **kwargs)[source]
+ 
+Callback processing for pick events. This method will be called by artists who are picked and will fire off PickEvent callbacks registered listeners. Note that artists are not pickable by default (see Artist.set_picker). 
+   print_figure(filename, dpi=None, facecolor=None, edgecolor=None, orientation='portrait', format=None, *, bbox_inches=None, pad_inches=None, bbox_extra_artists=None, backend=None, **kwargs)[source]
+ 
+Render the figure to hardcopy. Set the figure patch face and edge colors. This is useful because some of the GUIs have a gray figure face color background and you'll probably want to override this on hardcopy.  Parameters 
+ 
+filenamestr or path-like or file-like
+
+
+The file where the figure is saved.  
+dpifloat, default: rcParams["savefig.dpi"] (default: 'figure')
+
+
+The dots per inch to save the figure in.  
+facecolorcolor or 'auto', default: rcParams["savefig.facecolor"] (default: 'auto')
+
+
+The facecolor of the figure. If 'auto', use the current figure facecolor.  
+edgecolorcolor or 'auto', default: rcParams["savefig.edgecolor"] (default: 'auto')
+
+
+The edgecolor of the figure. If 'auto', use the current figure edgecolor.  
+orientation{'landscape', 'portrait'}, default: 'portrait'
+
+
+Only currently applies to PostScript printing.  
+formatstr, optional
+
+
+Force a specific file format. If not given, the format is inferred from the filename extension, and if that fails from rcParams["savefig.format"] (default: 'png').  
+bbox_inches'tight' or Bbox, default: rcParams["savefig.bbox"] (default: None)
+
+
+Bounding box in inches: only the given portion of the figure is saved. If 'tight', try to figure out the tight bbox of the figure.  
+pad_inchesfloat, default: rcParams["savefig.pad_inches"] (default: 0.1)
+
+
+Amount of padding around the figure when bbox_inches is 'tight'.  
+bbox_extra_artistslist of Artist, optional
+
+
+A list of extra artists that will be considered when the tight bbox is calculated.  
+backendstr, optional
+
+
+Use a non-default backend to render the file, e.g. to render a png file with the "cairo" backend rather than the default "agg", or a pdf file with the "pgf" backend rather than the default "pdf". Note that the default backend is normally sufficient. See The builtin backends for a list of valid backends for each file format. Custom backends can be referenced as "module://...".     
+   release_mouse(ax)[source]
+ 
+Release the mouse grab held by the Axes ax. Usually called by the widgets. It is ok to call this even if ax doesn't have the mouse grab currently. 
+   required_interactive_framework=None
+
+   resize(w, h)[source]
+ 
+UNUSED: Set the canvas size in pixels. Certain backends may implement a similar method internally, but this is not a requirement of, nor is it used by, Matplotlib itself. 
+   resize_event()[source]
+ 
+Pass a ResizeEvent to all functions connected to resize_event. 
+   scroll_event(x, y, step, guiEvent=None)[source]
+ 
+Callback processing for scroll events. Backend derived classes should call this function on any scroll wheel event. (x, y) are the canvas coords ((0, 0) is lower left). button and key are as defined in MouseEvent. This method will call all functions connected to the 'scroll_event' with a MouseEvent instance. 
+   propertyscroll_pick_id
+
+   set_cursor(cursor)[source]
+ 
+Set the current cursor. This may have no effect if the backend does not display anything. If required by the backend, this method should trigger an update in the backend event loop after the cursor is set, as this method may be called e.g. before a long-running task during which the GUI is not updated.  Parameters 
+ 
+cursorCursors
+
+
+The cursor to display over the canvas. Note: some backends may change the cursor for the entire window.     
+   set_window_title(title)[source]
+ 
+[Deprecated] Set the title text of the window containing the figure. Note that this has no effect if there is no window (e.g., a PS backend). Notes  Deprecated since version 3.4.  
+   start_event_loop(timeout=0)[source]
+ 
+Start a blocking event loop. Such an event loop is used by interactive functions, such as ginput and waitforbuttonpress, to wait for events. The event loop blocks until a callback function triggers stop_event_loop, or timeout is reached. If timeout is 0 or negative, never timeout. Only interactive backends need to reimplement this method and it relies on flush_events being properly implemented. Interactive backends should implement this in a more native way. 
+   stop_event_loop()[source]
+ 
+Stop the current blocking event loop. Interactive backends need to reimplement this to match start_event_loop 
+   supports_blit=False
+
+   switch_backends(FigureCanvasClass)[source]
+ 
+Instantiate an instance of FigureCanvasClass This is used for backend switching, e.g., to instantiate a FigureCanvasPS from a FigureCanvasGTK. Note, deep copying is not done, so any changes to one of the instances (e.g., setting figure size or line props), will be reflected in the other

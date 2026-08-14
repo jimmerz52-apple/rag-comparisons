@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.axesdivider#mpl_toolkits.axes_grid1.axes_divider.AxesDivider.get_anchor
+
+get_anchor()[source]
+ 
+Return the anchor.

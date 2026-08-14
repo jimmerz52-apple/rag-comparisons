@@ -1,0 +1,4 @@
+# python.library.hashlib#hashlib.hash.digest_size
+
+hash.digest_size  
+The size of the resulting hash in bytes.

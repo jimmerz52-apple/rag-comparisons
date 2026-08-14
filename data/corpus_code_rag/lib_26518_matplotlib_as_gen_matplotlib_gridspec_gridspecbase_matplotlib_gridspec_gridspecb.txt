@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecbase#matplotlib.gridspec.GridSpecBase.get_subplot_params
+
+get_subplot_params(figure=None)[source]

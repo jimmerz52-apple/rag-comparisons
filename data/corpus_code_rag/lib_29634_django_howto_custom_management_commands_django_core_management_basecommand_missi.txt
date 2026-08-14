@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.missing_args_message
+
+BaseCommand.missing_args_message  
+If your command defines mandatory positional arguments, you can customize the message error returned in the case of missing arguments. The default is output by argparse (“too few arguments”).

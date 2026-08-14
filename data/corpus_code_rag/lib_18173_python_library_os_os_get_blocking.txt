@@ -1,0 +1,4 @@
+# python.library.os#os.get_blocking
+
+os.get_blocking(fd)  
+Get the blocking mode of the file descriptor: False if the O_NONBLOCK flag is set, True if the flag is cleared. See also set_blocking() and socket.socket.setblocking(). Availability: Unix.  New in version 3.5.

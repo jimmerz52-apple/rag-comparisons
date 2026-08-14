@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.optionalhasvalue
+
+tf.raw_ops.OptionalHasValue Returns true if and only if the given Optional variant has a value.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.OptionalHasValue  
+tf.raw_ops.OptionalHasValue(
+    optional, name=None
+)
+
+ 
+
+
+ Args
+  optional   A Tensor of type variant.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type bool.

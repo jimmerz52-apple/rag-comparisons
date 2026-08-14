@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.get_arrowstyle
+
+get_arrowstyle()[source]
+ 
+Return the arrowstyle object.

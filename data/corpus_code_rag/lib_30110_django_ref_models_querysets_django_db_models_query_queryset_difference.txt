@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.difference
+
+difference(*other_qs)

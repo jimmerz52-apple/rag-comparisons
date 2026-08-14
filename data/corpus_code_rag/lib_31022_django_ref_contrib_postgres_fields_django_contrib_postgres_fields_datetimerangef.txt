@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.DateTimeRangeField
+
+class DateTimeRangeField(**options)  
+Stores a range of timestamps. Based on a DateTimeField. Represented by a tstzrange in the database and a DateTimeTZRange in Python.

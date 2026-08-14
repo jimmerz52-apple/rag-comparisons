@@ -1,0 +1,10 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_linewidth
+
+set_linewidth(w)[source]
+ 
+Set the line width in points.  Parameters 
+ 
+wfloat
+
+
+Line width, in points.

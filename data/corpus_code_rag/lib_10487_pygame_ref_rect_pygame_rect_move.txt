@@ -1,0 +1,4 @@
+# pygame.ref.rect#pygame.Rect.move
+
+move() 
+ moves the rectangle move(x, y) -> Rect  Returns a new rectangle that is moved by the given offset. The x and y arguments can be any integer value, positive or negative.

@@ -1,0 +1,4 @@
+# pygame.ref.touch#pygame._sdl2.touch.get_num_fingers
+
+pygame._sdl2.touch.get_num_fingers() 
+ the number of active fingers for a given touch device get_num_fingers(touchid) -> int  Return the number of fingers active for the touch device whose id is touchid.

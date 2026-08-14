@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.get_distribution
+
+get_distribution()[source]
+ 
+Return the distutils distribution object for self.

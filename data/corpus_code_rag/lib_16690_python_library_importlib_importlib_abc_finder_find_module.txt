@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.Finder.find_module
+
+abstractmethod find_module(fullname, path=None)  
+An abstract method for finding a loader for the specified module. Originally specified in PEP 302, this method was meant for use in sys.meta_path and in the path-based import subsystem.  Changed in version 3.4: Returns None when called instead of raising NotImplementedError.

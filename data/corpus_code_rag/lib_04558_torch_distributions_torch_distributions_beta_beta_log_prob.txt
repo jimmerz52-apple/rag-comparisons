@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.beta.Beta.log_prob
+
+log_prob(value) [source]

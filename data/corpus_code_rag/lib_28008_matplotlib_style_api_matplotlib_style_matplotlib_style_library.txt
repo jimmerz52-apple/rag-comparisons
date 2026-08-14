@@ -1,0 +1,5 @@
+# matplotlib.style_api#matplotlib.style.matplotlib.style.library
+
+matplotlib.style.library
+ 
+A dict mapping from style name to RcParams defining that style. This is meant to be read-only. Use reload_library to update.

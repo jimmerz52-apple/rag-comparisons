@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.name
+
+name 
+ Proper font name. name -> string  Read only. Returns the real (long) name of the font, as recorded in the font file.

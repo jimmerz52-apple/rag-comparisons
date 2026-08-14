@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.is_naive
+
+is_naive(value)  
+Returns True if value is naive, False if it is aware. This function assumes that value is a datetime.

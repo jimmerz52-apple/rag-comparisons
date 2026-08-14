@@ -1,0 +1,5 @@
+# python.library.operator#operator.truediv
+
+operator.truediv(a, b)  
+operator.__truediv__(a, b)  
+Return a / b where 2/3 is .66 rather than 0. This is also known as “true” division.

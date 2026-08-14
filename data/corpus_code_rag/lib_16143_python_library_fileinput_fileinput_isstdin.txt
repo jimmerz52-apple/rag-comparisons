@@ -1,0 +1,4 @@
+# python.library.fileinput#fileinput.isstdin
+
+fileinput.isstdin()  
+Return True if the last line was read from sys.stdin, otherwise return False.

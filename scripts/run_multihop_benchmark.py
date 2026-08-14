@@ -35,7 +35,7 @@ METHODS = [
 
 
 def main() -> None:
-    n_per = int(sys.argv[2]) if len(sys.argv) > 2 else 3
+    n_per = int(sys.argv[2]) if len(sys.argv) > 2 else 50  # 50×3 types = full 150 indexed set
     print(f"Building MultiHop-RAG subset; n_per_type={n_per}; methods={METHODS}")
     built = build_multihop_rag_subset(project_root=ROOT, n_per_type=n_per)
     print(built["meta"])

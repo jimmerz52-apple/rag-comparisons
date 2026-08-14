@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.convert_xunits
+
+convert_xunits(x)[source]
+ 
+Convert x using the unit type of the xaxis. If the artist is not in contained in an Axes or if the xaxis does not have units, x itself is returned.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.option_context.__call__
+
+pandas.option_context.__call__   option_context.__call__(func)[source]
+ 
+Call self as a function.

@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.Plugin.image_viewer
+
+image_viewer = 'Plugin is not attached to ImageViewer'

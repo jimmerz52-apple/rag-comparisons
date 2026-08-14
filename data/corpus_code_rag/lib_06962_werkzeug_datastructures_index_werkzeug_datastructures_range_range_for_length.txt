@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Range.range_for_length
+
+range_for_length(length)  
+If the range is for bytes, the length is not None and there is exactly one range and it is satisfiable it returns a (start, stop) tuple, otherwise None.

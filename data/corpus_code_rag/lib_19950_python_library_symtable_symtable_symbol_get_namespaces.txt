@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.get_namespaces
+
+get_namespaces()  
+Return a list of namespaces bound to this name.

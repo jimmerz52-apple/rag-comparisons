@@ -1,0 +1,4 @@
+# python.library.unittest.mock#unittest.mock.patch.dict
+
+patch.dict(in_dict, values=(), clear=False, **kwargs)  
+Patch a dictionary, or dictionary like object, and restore the dictionary to its original state after the test. in_dict can be a dictionary or a mapping like container. If it is a mapping then it must at least support getting, setting and deleting items plus iterating over keys. in_dict can also be a string specifying the name of the dictionary, which will then be fetched by importing it. values can be a dictionary of values to set in the dictionary. values can also be an iterable of (key, value) pairs. If clear is true then the dictionary will be cleared before the new values are set. patch.dict() can also be called with arbitrary keyword arguments to set values in the dictionary.  Changed in version 3.8: patch.dict() now returns the patched dictionary when used as a context manager.

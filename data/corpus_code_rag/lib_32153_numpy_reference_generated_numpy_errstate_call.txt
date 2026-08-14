@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.errstate.__call__
+
+numpy.errstate.__call__ method   errstate.__call__(func)
+ 
+Call self as a function.

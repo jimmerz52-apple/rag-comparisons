@@ -1,0 +1,4 @@
+# python.library.readline#readline.read_init_file
+
+readline.read_init_file([filename])  
+Execute a readline initialization file. The default filename is the last filename used. This calls rl_read_init_file() in the underlying library.

@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.make_svn_version_py
+
+make_svn_version_py(delete=True)[source]
+ 
+Appends a data function to the data_files list that will generate __svn_version__.py file to the current package directory. Generate package __svn_version__.py file from SVN revision number, it will be removed after python exits but will be available when sdist, etc commands are executed. Notes If __svn_version__.py existed before, nothing is done. This is intended for working with source directories that are in an SVN repository.

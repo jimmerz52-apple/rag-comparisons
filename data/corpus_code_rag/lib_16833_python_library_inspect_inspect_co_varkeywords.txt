@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_VARKEYWORDS
+
+inspect.CO_VARKEYWORDS  
+The code object has a variable keyword parameter (**kwargs-like).

@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractEventLoopPolicy.set_event_loop
+
+set_event_loop(loop)  
+Set the event loop for the current context to loop.

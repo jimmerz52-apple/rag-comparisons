@@ -1,0 +1,5 @@
+# matplotlib.fontconfig_pattern_api#matplotlib.fontconfig_pattern.FontconfigPatternParser.parse
+
+parse(pattern)[source]
+ 
+Parse the given fontconfig pattern and return a dictionary of key/value pairs useful for initializing a font_manager.FontProperties object.

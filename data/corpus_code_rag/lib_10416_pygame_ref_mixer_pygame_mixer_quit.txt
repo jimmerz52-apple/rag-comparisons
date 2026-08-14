@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.quit
+
+pygame.mixer.quit() 
+ uninitialize the mixer quit() -> None  This will uninitialize pygame.mixer. All playback will stop and any loaded Sound objects may not be compatible with the mixer if it is reinitialized later.

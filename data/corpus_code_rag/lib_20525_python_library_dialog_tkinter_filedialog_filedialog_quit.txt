@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.FileDialog.quit
+
+quit(how=None)  
+Exit dialog returning filename, if any.

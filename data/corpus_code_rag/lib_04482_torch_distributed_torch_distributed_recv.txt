@@ -1,0 +1,11 @@
+# torch.distributed#torch.distributed.recv
+
+torch.distributed.recv(tensor, src=None, group=None, tag=0) [source]
+ 
+Receives a tensor synchronously.  Parameters 
+ 
+tensor (Tensor) – Tensor to fill with received data. 
+src (int, optional) – Source rank. Will receive from any process if unspecified. 
+group (ProcessGroup, optional) – The process group to work on. If None, the default process group will be used. 
+tag (int, optional) – Tag to match recv with remote send   Returns 
+Sender rank -1, if not part of the group

@@ -1,0 +1,3 @@
+# torch.futures#torch.futures.Future.value
+
+value(self: torch._C.Future) → object

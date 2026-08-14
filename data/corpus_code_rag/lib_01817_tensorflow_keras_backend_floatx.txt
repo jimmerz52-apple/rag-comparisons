@@ -1,0 +1,13 @@
+# tensorflow.keras.backend.floatx
+
+tf.keras.backend.floatx     View source on GitHub    Returns the default float type, as a string.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.keras.backend.floatx  
+tf.keras.backend.floatx()
+ E.g. 'float16', 'float32', 'float64'.
+ 
+
+
+ Returns   String, the current default float type.  
+ Example: 
+tf.keras.backend.floatx()
+'float32'

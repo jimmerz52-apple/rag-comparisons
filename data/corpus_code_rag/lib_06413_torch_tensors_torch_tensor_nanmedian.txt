@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.nanmedian
+
+nanmedian(dim=None, keepdim=False) -> (Tensor, LongTensor)  
+See torch.nanmedian()

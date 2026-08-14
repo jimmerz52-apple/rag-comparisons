@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_default_bbox_extra_artists
+
+matplotlib.axes.Axes.get_default_bbox_extra_artists   Axes.get_default_bbox_extra_artists()[source]
+ 
+Return a default list of artists that are used for the bounding box calculation. Artists are excluded either by not being visible or artist.set_in_layout(False).

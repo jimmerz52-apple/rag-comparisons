@@ -1,0 +1,4 @@
+# python.library.email.errors#email.errors.MessageError
+
+exception email.errors.MessageError  
+This is the base class for all exceptions that the email package can raise. It is derived from the standard Exception class and defines no additional methods.

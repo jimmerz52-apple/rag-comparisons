@@ -1,0 +1,4 @@
+# python.library.colorsys#colorsys.hls_to_rgb
+
+colorsys.hls_to_rgb(h, l, s)  
+Convert the color from HLS coordinates to RGB coordinates.

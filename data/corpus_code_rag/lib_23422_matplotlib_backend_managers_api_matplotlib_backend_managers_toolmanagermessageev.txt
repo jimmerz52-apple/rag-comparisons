@@ -1,0 +1,5 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManagerMessageEvent
+
+classmatplotlib.backend_managers.ToolManagerMessageEvent(name, sender, message)[source]
+ 
+Bases: object Event carrying messages from toolmanager. Messages usually get displayed to the user by the toolbar.

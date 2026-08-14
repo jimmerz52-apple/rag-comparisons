@@ -1,0 +1,14 @@
+# matplotlib.axis_api#matplotlib.axis.Ticker
+
+classmatplotlib.axis.Ticker[source]
+ 
+A container for the objects defining tick position and format.  Attributes 
+ 
+locatormatplotlib.ticker.Locator subclass
+
+
+Determines the positions of the ticks.  
+formattermatplotlib.ticker.Formatter subclass
+
+
+Determines the format of the tick labels.

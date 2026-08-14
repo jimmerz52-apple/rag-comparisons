@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolToggleBase.cursor
+
+cursor=None
+ 
+Cursor to use when the tool is active.

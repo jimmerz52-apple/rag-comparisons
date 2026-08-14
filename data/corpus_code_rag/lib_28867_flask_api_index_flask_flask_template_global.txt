@@ -1,0 +1,9 @@
+# flask.api.index#flask.Flask.template_global
+
+template_global(name=None)  
+A decorator that is used to register a custom template global function. You can specify a name for the global function, otherwise the function name will be used. Example: @app.template_global()
+def double(n):
+    return 2 * n
+  Changelog New in version 0.10.   Parameters 
+name (Optional[str]) – the optional name of the global function, otherwise the function name will be used.  Return type 
+Callable

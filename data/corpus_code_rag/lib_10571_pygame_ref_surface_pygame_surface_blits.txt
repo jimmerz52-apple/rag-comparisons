@@ -1,0 +1,16 @@
+# pygame.ref.surface#pygame.Surface.blits
+
+blits() 
+ draw many images onto another blits(blit_sequence=(source, dest), ...), doreturn=1) -> [Rect, ...] or None blits((source, dest, area), ...)) -> [Rect, ...] blits((source, dest, area, special_flags), ...)) -> [Rect, ...]  Draws many surfaces onto this Surface. It takes a sequence as input, with each of the elements corresponding to the ones of blit(). It needs at minimum a sequence of (source, dest).     
+Parameters:
+
+ 
+blit_sequence -- a sequence of surfaces and arguments to blit them, they correspond to the blit() arguments 
+doreturn -- if True, return a list of rects of the areas changed, otherwise return None
+    
+Returns:
+
+a list of rects of the areas changed if doreturn is True, otherwise None   
+Return type:
+
+list or None     New in pygame 1.9.4.

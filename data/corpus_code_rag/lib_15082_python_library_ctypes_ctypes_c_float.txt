@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_float
+
+class ctypes.c_float  
+Represents the C float datatype. The constructor accepts an optional float initializer.

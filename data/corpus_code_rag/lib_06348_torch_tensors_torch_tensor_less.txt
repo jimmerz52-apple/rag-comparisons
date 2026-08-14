@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.less_
+
+less_(other) → Tensor  
+In-place version of less().

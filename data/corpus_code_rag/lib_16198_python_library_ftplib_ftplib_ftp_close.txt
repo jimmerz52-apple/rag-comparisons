@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.close
+
+FTP.close()  
+Close the connection unilaterally. This should not be applied to an already closed connection such as after a successful call to quit(). After this call the FTP instance should not be used any more (after a call to close() or quit() you cannot reopen the connection by issuing another login() method).

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.format_coord
+
+matplotlib.axes.Axes.format_coord   Axes.format_coord(x, y)[source]
+ 
+Return a format string formatting the x, y coordinates.

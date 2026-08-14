@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.PlotDirective.run
+
+run()[source]
+ 
+Run the plot directive.

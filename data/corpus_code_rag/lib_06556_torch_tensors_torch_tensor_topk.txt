@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.topk
+
+topk(k, dim=None, largest=True, sorted=True) -> (Tensor, LongTensor)  
+See torch.topk()

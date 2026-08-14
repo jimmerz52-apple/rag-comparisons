@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.get_height
+
+get_height()[source]
+ 
+Return the height of the rectangle.

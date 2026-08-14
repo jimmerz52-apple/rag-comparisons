@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.dtype.__lt__
+
+numpy.dtype.__lt__ method   dtype.__lt__(value, /)
+ 
+Return self<value.

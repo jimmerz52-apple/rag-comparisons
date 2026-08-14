@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.tree.extratreeclassifier#sklearn.tree.ExtraTreeClassifier.get_depth
+
+get_depth() [source]
+ 
+Return the depth of the decision tree. The depth of a tree is the maximum distance between the root and any leaf.  Returns 
+ 
+self.tree_.max_depthint 
+
+The maximum depth of the tree.

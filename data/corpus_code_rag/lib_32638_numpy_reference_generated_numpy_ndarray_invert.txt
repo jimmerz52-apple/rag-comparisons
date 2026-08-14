@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__invert__
+
+numpy.ndarray.__invert__ method   ndarray.__invert__(/)
+ 
+~self

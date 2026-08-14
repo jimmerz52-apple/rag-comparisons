@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.event_name
+
+pygame.event.event_name() 
+ get the string name from an event id event_name(type) -> string  Returns a string representing the name (in CapWords style) of the given event type. "UserEvent" is returned for all values in the user event id range. "Unknown" is returned when the event type does not exist.

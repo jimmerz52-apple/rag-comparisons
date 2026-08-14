@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.sdcafprint
+
+tf.raw_ops.SdcaFprint Computes fingerprints of the input strings.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.SdcaFprint  
+tf.raw_ops.SdcaFprint(
+    input, name=None
+)
+
+ 
+
+
+ Args
+  input   A Tensor of type string. vector of strings to compute fingerprints on.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type int64.

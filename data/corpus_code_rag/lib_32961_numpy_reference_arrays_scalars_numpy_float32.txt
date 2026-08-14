@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.float32
+
+numpy.float32[source]
+ 
+alias of numpy.single

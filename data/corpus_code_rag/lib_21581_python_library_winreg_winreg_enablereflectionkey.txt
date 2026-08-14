@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.EnableReflectionKey
+
+winreg.EnableReflectionKey(key)  
+Restores registry reflection for the specified disabled key. key is an already open key, or one of the predefined HKEY_* constants. Will generally raise NotImplementedError if executed on a 32-bit operating system. Restoring reflection for a key does not affect reflection of any subkeys. Raises an auditing event winreg.EnableReflectionKey with argument key.

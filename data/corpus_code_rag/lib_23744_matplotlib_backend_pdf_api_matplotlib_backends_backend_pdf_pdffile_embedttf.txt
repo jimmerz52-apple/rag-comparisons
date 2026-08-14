@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.embedTTF
+
+embedTTF(filename, characters)[source]
+ 
+Embed the TTF font from the named file into the document.

@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.get_clip_path
+
+get_clip_path()[source]
+ 
+Return the clip path.

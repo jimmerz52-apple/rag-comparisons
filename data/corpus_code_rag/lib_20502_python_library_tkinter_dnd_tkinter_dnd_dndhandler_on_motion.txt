@@ -1,0 +1,4 @@
+# python.library.tkinter.dnd#tkinter.dnd.DndHandler.on_motion
+
+on_motion(event)  
+Inspect area below mouse for target objects while drag is performed.

@@ -1,0 +1,20 @@
+# torch.autograd#torch.autograd.function._ContextMethodMixin
+
+class torch.autograd.function._ContextMethodMixin [source]
+ 
+ 
+mark_dirty(*args) [source]
+ 
+Marks given tensors as modified in an in-place operation. This should be called at most once, only from inside the forward() method, and all arguments should be inputs. Every tensor that’s been modified in-place in a call to forward() should be given to this function, to ensure correctness of our checks. It doesn’t matter whether the function is called before or after modification. 
+  
+mark_non_differentiable(*args) [source]
+ 
+Marks outputs as non-differentiable. This should be called at most once, only from inside the forward() method, and all arguments should be outputs. This will mark outputs as not requiring gradients, increasing the efficiency of backward computation. You still need to accept a gradient for each output in backward(), but it’s always going to be a zero tensor with the same shape as the shape of a corresponding output. This is used e.g. for indices returned from a max Function. 
+  
+save_for_backward(*tensors) [source]
+ 
+Saves given tensors for a future call to backward(). This should be called at most once, and only from inside the forward() method. Later, saved tensors can be accessed through the saved_tensors attribute. Before returning them to the user, a check is made to ensure they weren’t used in any in-place operation that modified their content. Arguments can also be None. 
+  
+set_materialize_grads(value) [source]
+ 
+Sets whether to materialize output grad tensors. Default is true. This should be called only from inside the forward() method If true, undefined output grad tensors will be expanded to tensors full of zeros prior to calling the backward() method.

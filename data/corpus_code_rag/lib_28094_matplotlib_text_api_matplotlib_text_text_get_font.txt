@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_font
+
+get_font()[source]
+ 
+Alias for get_fontproperties.

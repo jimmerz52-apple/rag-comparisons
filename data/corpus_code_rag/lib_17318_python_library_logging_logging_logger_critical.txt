@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.critical
+
+critical(msg, *args, **kwargs)  
+Logs a message with level CRITICAL on this logger. The arguments are interpreted as for debug().

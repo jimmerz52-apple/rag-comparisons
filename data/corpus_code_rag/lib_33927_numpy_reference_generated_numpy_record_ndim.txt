@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.ndim
+
+numpy.record.ndim attribute   record.ndim
+ 
+The number of array dimensions.

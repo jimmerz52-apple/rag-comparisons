@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_autoscalez_on
+
+set_autoscalez_on(b)[source]
+ 
+Set whether the z-axis is autoscaled on the next draw or call to Axes.autoscale_view.  Parameters 
+ 
+bbool

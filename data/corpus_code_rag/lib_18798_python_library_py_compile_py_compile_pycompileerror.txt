@@ -1,0 +1,4 @@
+# python.library.py_compile#py_compile.PyCompileError
+
+exception py_compile.PyCompileError  
+Exception raised when an error occurs while attempting to compile the file.

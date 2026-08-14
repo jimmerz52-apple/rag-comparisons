@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_y
+
+set_y(y)[source]
+ 
+Set the y position of the text.  Parameters 
+ 
+yfloat

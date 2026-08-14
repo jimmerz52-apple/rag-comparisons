@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.add_scripts
+
+add_scripts(*files)[source]
+ 
+Add scripts to configuration. Add the sequence of files to the beginning of the scripts list. Scripts will be installed under the <prefix>/bin/ directory.

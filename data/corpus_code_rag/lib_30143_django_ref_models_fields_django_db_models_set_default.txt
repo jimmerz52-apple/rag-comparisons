@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.SET_DEFAULT
+
+SET_DEFAULT  
+Set the ForeignKey to its default value; a default for the ForeignKey must be set.

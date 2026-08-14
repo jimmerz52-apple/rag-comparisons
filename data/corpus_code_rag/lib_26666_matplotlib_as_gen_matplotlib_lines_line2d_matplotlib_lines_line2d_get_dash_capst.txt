@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_dash_capstyle
+
+get_dash_capstyle()[source]
+ 
+Return the CapStyle for dashed lines. See also set_dash_capstyle.

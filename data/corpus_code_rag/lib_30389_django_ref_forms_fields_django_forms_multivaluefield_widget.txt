@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.MultiValueField.widget
+
+widget  
+Must be a subclass of django.forms.MultiWidget. Default value is TextInput, which probably is not very useful in this case.

@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.page
+
+skimage.data.page() [source]
+ 
+Scanned page. This image of printed text is useful for demonstrations requiring uneven background illumination.  Returns 
+ 
+page(191, 384) uint8 ndarray 
+
+Page image.

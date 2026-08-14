@@ -1,0 +1,4 @@
+# python.library.syslog#syslog.setlogmask
+
+syslog.setlogmask(maskpri)  
+Set the priority mask to maskpri and return the previous mask value. Calls to syslog() with a priority level not set in maskpri are ignored. The default is to log all priorities. The function LOG_MASK(pri) calculates the mask for the individual priority pri. The function LOG_UPTO(pri) calculates the mask for all priorities up to and including pri. Raises an auditing event syslog.setlogmask with argument maskpri.

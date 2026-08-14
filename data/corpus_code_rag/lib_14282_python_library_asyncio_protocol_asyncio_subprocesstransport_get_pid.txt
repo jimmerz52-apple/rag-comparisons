@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.SubprocessTransport.get_pid
+
+SubprocessTransport.get_pid()  
+Return the subprocess process id as an integer.

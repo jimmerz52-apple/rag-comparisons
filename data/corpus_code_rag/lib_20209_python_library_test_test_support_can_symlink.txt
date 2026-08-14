@@ -1,0 +1,4 @@
+# python.library.test#test.support.can_symlink
+
+test.support.can_symlink()  
+Return True if the OS supports symbolic links, False otherwise.

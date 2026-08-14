@@ -1,0 +1,16 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_scalar
+
+add_scalar(tag, scalar_value, global_step=None, walltime=None) [source]
+ 
+Add scalar data to summary.  Parameters 
+ 
+tag (string) – Data identifier 
+scalar_value (float or string/blobname) – Value to save 
+global_step (int) – Global step value to record 
+walltime (float) – Optional override default walltime (time.time()) with seconds after epoch of event    Examples: from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter()
+x = range(100)
+for i in x:
+    writer.add_scalar('y=2x', i * 2, i)
+writer.close()
+ Expected result:

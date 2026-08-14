@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.kbhit
+
+msvcrt.kbhit()  
+Return True if a keypress is waiting to be read.

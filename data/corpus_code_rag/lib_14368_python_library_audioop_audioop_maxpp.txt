@@ -1,0 +1,4 @@
+# python.library.audioop#audioop.maxpp
+
+audioop.maxpp(fragment, width)  
+Return the maximum peak-peak value in the sound fragment.

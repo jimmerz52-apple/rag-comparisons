@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.loaders.base.Loader.get_contents
+
+get_contents(origin)  
+Returns the contents for a template given a Origin instance. This is where a filesystem loader would read contents from the filesystem, or a database loader would read from the database. If a matching template doesn’t exist, this should raise a TemplateDoesNotExist error.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_ydata
+
+set_ydata(y)[source]
+ 
+Set the data array for y.  Parameters 
+ 
+y1D array

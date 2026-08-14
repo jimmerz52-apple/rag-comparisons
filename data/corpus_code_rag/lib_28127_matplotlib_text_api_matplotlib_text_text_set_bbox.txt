@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_bbox
+
+set_bbox(rectprops)[source]
+ 
+Draw a bounding box around self.  Parameters 
+ 
+rectpropsdict with properties for patches.FancyBboxPatch
+
+
+The default boxstyle is 'square'. The mutation scale of the patches.FancyBboxPatch is set to the fontsize.     Examples t.set_bbox(dict(facecolor='red', alpha=0.5))

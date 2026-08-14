@@ -1,0 +1,5 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.get_etag
+
+get_etag()  
+Return a tuple in the form (etag, is_weak). If there is no ETag the return value is (None, None).  Return type 
+Union[Tuple[str, bool], Tuple[None, None]]

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.period.is_leap_year
+
+pandas.Period.is_leap_year   Period.is_leap_year
+ 
+Return True if the period’s year is in a leap year.

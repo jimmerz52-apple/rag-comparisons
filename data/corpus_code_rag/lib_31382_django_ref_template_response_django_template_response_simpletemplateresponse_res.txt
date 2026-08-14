@@ -1,0 +1,4 @@
+# django.ref.template-response#django.template.response.SimpleTemplateResponse.resolve_context
+
+SimpleTemplateResponse.resolve_context(context)  
+Preprocesses context data that will be used for rendering a template. Accepts a dict of context data. By default, returns the same dict. Override this method in order to customize the context.

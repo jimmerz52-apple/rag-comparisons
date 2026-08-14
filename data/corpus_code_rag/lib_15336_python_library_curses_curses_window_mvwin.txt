@@ -1,0 +1,4 @@
+# python.library.curses#curses.window.mvwin
+
+window.mvwin(new_y, new_x)  
+Move the window so its upper-left corner is at (new_y, new_x).

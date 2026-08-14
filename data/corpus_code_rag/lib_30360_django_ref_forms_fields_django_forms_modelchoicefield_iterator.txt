@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceField.iterator
+
+iterator  
+The iterator class used to generate field choices from queryset. By default, ModelChoiceIterator.

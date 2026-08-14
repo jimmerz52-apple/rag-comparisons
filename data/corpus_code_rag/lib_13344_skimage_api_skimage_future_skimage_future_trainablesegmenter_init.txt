@@ -1,0 +1,5 @@
+# skimage.api.skimage.future#skimage.future.TrainableSegmenter.__init__
+
+__init__(clf=None, features_func=None) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

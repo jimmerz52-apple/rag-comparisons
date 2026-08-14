@@ -1,0 +1,21 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.Envelope
+
+class Envelope(*args)  
+Represents an OGR Envelope structure that contains the minimum and maximum X, Y coordinates for a rectangle bounding box. The naming of the variables is compatible with the OGR Envelope C structure.  
+min_x 
+ The value of the minimum X coordinate.  
+min_y 
+ The value of the maximum X coordinate.  
+max_x 
+ The value of the minimum Y coordinate.  
+max_y 
+ The value of the maximum Y coordinate.  
+ur 
+ The upper-right coordinate, as a tuple.  
+ll 
+ The lower-left coordinate, as a tuple.  
+tuple 
+ A tuple representing the envelope.  
+wkt 
+ A string representing this envelope as a polygon in WKT format.  
+expand_to_include(*args)

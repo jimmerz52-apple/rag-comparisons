@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.logout
+
+IMAP4.logout()  
+Shutdown connection to server. Returns server BYE response.  Changed in version 3.8: The method no longer ignores silently arbitrary exceptions.

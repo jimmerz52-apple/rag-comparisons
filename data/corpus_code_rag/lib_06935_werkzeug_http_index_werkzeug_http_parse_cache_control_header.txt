@@ -1,0 +1,10 @@
+# werkzeug.http.index#werkzeug.http.parse_cache_control_header
+
+werkzeug.http.parse_cache_control_header(value, on_update=None, cls=None)  
+Parse a cache control header. The RFC differs between response and request cache control, this method does not. It’s your responsibility to not use the wrong control statements.  Changelog New in version 0.5: The cls was added. If not specified an immutable RequestCacheControl is returned.   Parameters 
+ 
+value (Optional[str]) – a cache control header to be parsed. 
+on_update (Optional[Callable[[werkzeug.http._TAnyCC], None]]) – an optional callable that is called every time a value on the CacheControl object is changed. 
+cls (Optional[Type[werkzeug.http._TAnyCC]]) – the class for the returned object. By default RequestCacheControl is used.   Returns 
+a cls object.  Return type 
+werkzeug.http._TAnyCC

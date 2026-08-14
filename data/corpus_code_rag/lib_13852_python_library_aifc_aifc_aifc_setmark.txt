@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setmark
+
+aifc.setmark(id, pos, name)  
+Add a mark with the given id (larger than 0), and the given name at the given position. This method can be called at any time before close().

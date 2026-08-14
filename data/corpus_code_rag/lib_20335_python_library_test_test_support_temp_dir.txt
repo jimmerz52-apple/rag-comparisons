@@ -1,0 +1,4 @@
+# python.library.test#test.support.temp_dir
+
+test.support.temp_dir(path=None, quiet=False)  
+A context manager that creates a temporary directory at path and yields the directory. If path is None, the temporary directory is created using tempfile.mkdtemp(). If quiet is False, the context manager raises an exception on error. Otherwise, if path is specified and cannot be created, only a warning is issued.

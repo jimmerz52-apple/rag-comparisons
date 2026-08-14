@@ -1,0 +1,4 @@
+# python.library.test#test.support.check_no_resource_warning
+
+test.support.check_no_resource_warning(testcase)  
+Context manager to check that no ResourceWarning was raised. You must remove the object which may emit ResourceWarning before the end of the context manager.

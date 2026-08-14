@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.nmf#sklearn.decomposition.NMF.inverse_transform
+
+inverse_transform(W) [source]
+ 
+Transform data back to its original space.  Parameters 
+ 
+W{ndarray, sparse matrix} of shape (n_samples, n_components) 
+
+Transformed data matrix.    Returns 
+ 
+X{ndarray, sparse matrix} of shape (n_samples, n_features) 
+
+Data matrix of original shape.    New in version 0.18: ..

@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.lookup
+
+lookup(name)  
+Lookup name in the table and return a Symbol instance.

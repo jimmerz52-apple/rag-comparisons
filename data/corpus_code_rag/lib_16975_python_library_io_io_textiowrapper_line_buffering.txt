@@ -1,0 +1,4 @@
+# python.library.io#io.TextIOWrapper.line_buffering
+
+line_buffering  
+Whether line buffering is enabled.

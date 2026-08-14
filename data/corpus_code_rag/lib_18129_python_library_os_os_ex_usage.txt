@@ -1,0 +1,4 @@
+# python.library.os#os.EX_USAGE
+
+os.EX_USAGE  
+Exit code that means the command was used incorrectly, such as when the wrong number of arguments are given. Availability: Unix.

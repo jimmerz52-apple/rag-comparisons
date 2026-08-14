@@ -1,0 +1,5 @@
+# matplotlib.backend_template_api#matplotlib.backends.backend_template.show
+
+matplotlib.backends.backend_template.show(*, block=None)[source]
+ 
+For image backends - is not required. For GUI backends - show() is usually the last line of a pyplot script and tells the backend that it is time to draw. In interactive mode, this should do nothing.

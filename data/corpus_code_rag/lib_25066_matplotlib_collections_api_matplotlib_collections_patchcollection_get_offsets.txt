@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.PatchCollection.get_offsets
+
+get_offsets()[source]
+ 
+Return the offsets for the collection.

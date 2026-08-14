@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.Connection.isolation_level
+
+isolation_level  
+Get or set the current default isolation level. None for autocommit mode or one of “DEFERRED”, “IMMEDIATE” or “EXCLUSIVE”. See section Controlling Transactions for a more detailed explanation.

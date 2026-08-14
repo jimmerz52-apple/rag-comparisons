@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.contains_aggregate
+
+contains_aggregate  
+Tells Django that this expression contains an aggregate and that a GROUP BY clause needs to be added to the query.

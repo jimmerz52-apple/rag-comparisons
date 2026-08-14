@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.conjugate
+
+numpy.record.conjugate method   record.conjugate()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.conjugate.

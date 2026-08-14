@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.TextArea.set_minimumdescent
+
+set_minimumdescent(t)[source]
+ 
+[Deprecated] Set minimumdescent. If True, extent of the single line text is adjusted so that its descent is at least the one of the glyph "p". Notes  Deprecated since version 3.4.

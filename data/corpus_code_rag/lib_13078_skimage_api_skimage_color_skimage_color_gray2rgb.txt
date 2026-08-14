@@ -1,0 +1,16 @@
+# skimage.api.skimage.color#skimage.color.gray2rgb
+
+skimage.color.gray2rgb(image, alpha=None) [source]
+ 
+Create an RGB representation of a gray-level image.  Parameters 
+ 
+imagearray_like 
+
+Input image.  
+alphabool, optional 
+
+Ensure that the output image has an alpha layer. If None, alpha layers are passed through but not created.    Returns 
+ 
+rgb(…, 3) ndarray 
+
+RGB image. A new dimension of length 3 is added to input image.     Notes If the input is a 1-dimensional image of shape (M, ), the output will be shape (M, 3).

@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.immunohistochemistry
+
+skimage.data.immunohistochemistry() [source]
+ 
+Immunohistochemical (IHC) staining with hematoxylin counterstaining. This picture shows colonic glands where the IHC expression of FHL2 protein is revealed with DAB. Hematoxylin counterstaining is applied to enhance the negative parts of the tissue. This image was acquired at the Center for Microscopy And Molecular Imaging (CMMI). No known copyright restrictions.  Returns 
+ 
+immunohistochemistry(512, 512, 3) uint8 ndarray 
+
+Immunohistochemistry image.

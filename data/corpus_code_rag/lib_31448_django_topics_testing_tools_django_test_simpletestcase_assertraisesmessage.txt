@@ -1,0 +1,6 @@
+# django.topics.testing.tools#django.test.SimpleTestCase.assertRaisesMessage
+
+SimpleTestCase.assertRaisesMessage(expected_exception, expected_message, callable, *args, **kwargs)  
+SimpleTestCase.assertRaisesMessage(expected_exception, expected_message)  
+Asserts that execution of callable raises expected_exception and that expected_message is found in the exception’s message. Any other outcome is reported as a failure. It’s a simpler version of unittest.TestCase.assertRaisesRegex() with the difference that expected_message isn’t treated as a regular expression. If only the expected_exception and expected_message parameters are given, returns a context manager so that the code being tested can be written inline rather than as a function: with self.assertRaisesMessage(ValueError, 'invalid literal for int()'):
+    int('a')

@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.getinfo
+
+ZipFile.getinfo(name)  
+Return a ZipInfo object with information about the archive member name. Calling getinfo() for a name not currently contained in the archive will raise a KeyError.

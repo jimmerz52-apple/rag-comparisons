@@ -1,0 +1,4 @@
+# torch.sparse#torch.Tensor.coalesce
+
+coalesce() → Tensor  
+Returns a coalesced copy of self if self is an uncoalesced tensor. Returns self if self is a coalesced tensor.  Warning Throws an error if self is not a sparse COO tensor.

@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.MultiCursor.connect
+
+connect()[source]
+ 
+Connect events.

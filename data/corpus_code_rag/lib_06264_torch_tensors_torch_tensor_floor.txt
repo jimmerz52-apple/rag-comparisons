@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.floor
+
+floor() → Tensor  
+See torch.floor()

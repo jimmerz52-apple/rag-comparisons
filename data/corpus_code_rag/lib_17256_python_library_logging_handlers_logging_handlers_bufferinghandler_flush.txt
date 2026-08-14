@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.BufferingHandler.flush
+
+flush()  
+You can override this to implement custom flushing behavior. This version just zaps the buffer to empty.

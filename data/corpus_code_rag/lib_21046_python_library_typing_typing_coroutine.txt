@@ -1,0 +1,10 @@
+# python.library.typing#typing.Coroutine
+
+class typing.Coroutine(Awaitable[V_co], Generic[T_co, T_contra, V_co])  
+A generic version of collections.abc.Coroutine. The variance and order of type variables correspond to those of Generator, for example: from collections.abc import Coroutine
+c = None # type: Coroutine[list[str], str, int]
+...
+x = c.send('hi') # type: list[str]
+async def bar() -> None:
+    x = await c # type: int
+  New in version 3.5.3.   Deprecated since version 3.9: collections.abc.Coroutine now supports []. See PEP 585 and Generic Alias Type.

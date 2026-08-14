@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.multiclass.onevsrestclassifier#sklearn.multiclass.OneVsRestClassifier.multilabel_
+
+property multilabel_  
+Whether this is a multilabel classifier

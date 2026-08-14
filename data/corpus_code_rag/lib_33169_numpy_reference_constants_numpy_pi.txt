@@ -1,0 +1,5 @@
+# numpy.reference.constants#numpy.pi
+
+numpy.pi
+ 
+pi = 3.1415926535897932384626433... References https://en.wikipedia.org/wiki/Pi

@@ -1,0 +1,5 @@
+# skimage.api.skimage.feature#skimage.feature.CENSURE.__init__
+
+__init__(min_scale=1, max_scale=7, mode='DoB', non_max_threshold=0.15, line_threshold=10) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

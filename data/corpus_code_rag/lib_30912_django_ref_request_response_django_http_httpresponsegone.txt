@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseGone
+
+class HttpResponseGone  
+Acts just like HttpResponse but uses a 410 status code.

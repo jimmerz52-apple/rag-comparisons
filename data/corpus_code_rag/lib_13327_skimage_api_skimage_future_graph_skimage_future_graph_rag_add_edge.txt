@@ -1,0 +1,5 @@
+# skimage.api.skimage.future.graph#skimage.future.graph.RAG.add_edge
+
+add_edge(u, v, attr_dict=None, **attr) [source]
+ 
+Add an edge between u and v while updating max node id.  See also networkx.Graph.add_edge().

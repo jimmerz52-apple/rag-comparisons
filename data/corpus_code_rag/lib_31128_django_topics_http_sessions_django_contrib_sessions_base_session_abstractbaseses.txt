@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.base_session.AbstractBaseSession.session_key
+
+session_key  
+Primary key. The field itself may contain up to 40 characters. The current implementation generates a 32-character string (a random sequence of digits and lowercase ASCII letters).

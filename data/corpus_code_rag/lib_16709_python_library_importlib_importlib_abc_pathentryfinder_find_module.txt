@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.PathEntryFinder.find_module
+
+find_module(fullname)  
+A concrete implementation of Finder.find_module() which is equivalent to self.find_loader(fullname)[0].  Deprecated since version 3.4: Use find_spec() instead.

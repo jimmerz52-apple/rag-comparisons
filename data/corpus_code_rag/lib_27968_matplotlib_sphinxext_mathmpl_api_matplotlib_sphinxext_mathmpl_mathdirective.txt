@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_mathmpl_api#matplotlib.sphinxext.mathmpl.MathDirective
+
+classmatplotlib.sphinxext.mathmpl.MathDirective(name, arguments, options, content, lineno, content_offset, block_text, state, state_machine)[source]
+ 
+The .. mathmpl:: directive, as documented in the module's docstring.

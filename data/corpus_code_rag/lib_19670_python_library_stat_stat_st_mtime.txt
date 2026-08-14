@@ -1,0 +1,4 @@
+# python.library.stat#stat.ST_MTIME
+
+stat.ST_MTIME  
+Time of last modification.

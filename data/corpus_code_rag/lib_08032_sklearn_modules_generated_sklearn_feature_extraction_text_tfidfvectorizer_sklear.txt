@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidfvectorizer#sklearn.feature_extraction.text.TfidfVectorizer.fit_transform
+
+fit_transform(raw_documents, y=None) [source]
+ 
+Learn vocabulary and idf, return document-term matrix. This is equivalent to fit followed by transform, but more efficiently implemented.  Parameters 
+ 
+raw_documentsiterable 
+
+An iterable which yields either str, unicode or file objects.  
+yNone 
+
+This parameter is ignored.    Returns 
+ 
+Xsparse matrix of (n_samples, n_features) 
+
+Tf-idf-weighted document-term matrix.

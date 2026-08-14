@@ -1,0 +1,9 @@
+# 703
+Task: 703
+
+# Write a function to check whether the given key is present in the dictionary or not.
+def is_key_present(d,x):
+  if x in d:
+    return True
+  else:
+     return False

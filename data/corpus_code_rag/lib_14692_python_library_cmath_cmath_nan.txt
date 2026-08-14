@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.nan
+
+cmath.nan  
+A floating-point “not a number” (NaN) value. Equivalent to float('nan').  New in version 3.6.

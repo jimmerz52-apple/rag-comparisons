@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-single-object#django.views.generic.detail.SingleObjectMixin.pk_url_kwarg
+
+pk_url_kwarg  
+The name of the URLConf keyword argument that contains the primary key. By default, pk_url_kwarg is 'pk'.

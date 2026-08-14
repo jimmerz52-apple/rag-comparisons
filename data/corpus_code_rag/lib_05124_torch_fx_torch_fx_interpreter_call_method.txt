@@ -1,0 +1,11 @@
+# torch.fx#torch.fx.Interpreter.call_method
+
+call_method(target, args, kwargs) [source]
+ 
+Execute a call_method node and return the result.  Parameters 
+ 
+target (Target) – The call target for this node. See Node for details on semantics 
+args (Tuple) – Tuple of positional args for this invocation 
+kwargs (Dict) – Dict of keyword arguments for this invocation     Return
+
+Any: The value returned by the method invocation

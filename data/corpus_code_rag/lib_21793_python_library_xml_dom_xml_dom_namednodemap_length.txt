@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.NamedNodeMap.length
+
+NamedNodeMap.length  
+The length of the attribute list.

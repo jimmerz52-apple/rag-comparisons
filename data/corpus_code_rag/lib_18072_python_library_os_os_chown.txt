@@ -1,0 +1,4 @@
+# python.library.os#os.chown
+
+os.chown(path, uid, gid, *, dir_fd=None, follow_symlinks=True)  
+Change the owner and group id of path to the numeric uid and gid. To leave one of the ids unchanged, set it to -1. This function can support specifying a file descriptor, paths relative to directory descriptors and not following symlinks. See shutil.chown() for a higher-level function that accepts names in addition to numeric ids. Raises an auditing event os.chown with arguments path, uid, gid, dir_fd. Availability: Unix.  New in version 3.3: Added support for specifying path as an open file descriptor, and the dir_fd and follow_symlinks arguments.   Changed in version 3.6: Supports a path-like object.

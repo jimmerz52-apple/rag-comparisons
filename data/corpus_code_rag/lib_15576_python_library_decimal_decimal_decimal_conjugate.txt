@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.conjugate
+
+conjugate()  
+Just returns self, this method is only to comply with the Decimal Specification.

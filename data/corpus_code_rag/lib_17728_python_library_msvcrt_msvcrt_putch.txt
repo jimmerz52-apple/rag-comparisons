@@ -1,0 +1,4 @@
+# python.library.msvcrt#msvcrt.putch
+
+msvcrt.putch(char)  
+Print the byte string char to the console without buffering.

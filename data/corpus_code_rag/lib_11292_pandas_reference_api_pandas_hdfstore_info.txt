@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.hdfstore.info
+
+pandas.HDFStore.info   HDFStore.info()[source]
+ 
+Print detailed information on the store.  Returns 
+ str

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.semimonthbegin.is_year_start
+
+pandas.tseries.offsets.SemiMonthBegin.is_year_start   SemiMonthBegin.is_year_start()

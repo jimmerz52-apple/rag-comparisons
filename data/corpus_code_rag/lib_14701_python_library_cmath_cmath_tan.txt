@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.tan
+
+cmath.tan(x)  
+Return the tangent of x.

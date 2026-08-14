@@ -1,0 +1,4 @@
+# python.library.email.contentmanager#email.contentmanager.ContentManager.add_set_handler
+
+add_set_handler(typekey, handler)  
+Record handler as the function to call when an object of a type matching typekey is passed to set_content(). For the possible values of typekey, see set_content().

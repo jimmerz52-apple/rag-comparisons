@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_container
+
+matplotlib.axes.Axes.add_container   Axes.add_container(container)[source]
+ 
+Add a Container to the axes' containers; return the container.

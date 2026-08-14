@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.exp
+
+cmath.exp(x)  
+Return e raised to the power x, where e is the base of natural logarithms.

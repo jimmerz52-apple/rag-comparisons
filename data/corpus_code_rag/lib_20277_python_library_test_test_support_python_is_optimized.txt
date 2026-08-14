@@ -1,0 +1,4 @@
+# python.library.test#test.support.python_is_optimized
+
+test.support.python_is_optimized()  
+Return True if Python was not built with -O0 or -Og.

@@ -1,0 +1,4 @@
+# python.library.struct#struct.Struct.iter_unpack
+
+iter_unpack(buffer)  
+Identical to the iter_unpack() function, using the compiled format. The buffer’s size in bytes must be a multiple of size.  New in version 3.4.

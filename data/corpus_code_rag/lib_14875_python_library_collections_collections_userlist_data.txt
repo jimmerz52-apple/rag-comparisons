@@ -1,0 +1,4 @@
+# python.library.collections#collections.UserList.data
+
+data  
+A real list object used to store the contents of the UserList class.

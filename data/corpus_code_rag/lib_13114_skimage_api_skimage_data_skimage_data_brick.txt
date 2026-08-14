@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.brick
+
+skimage.data.brick() [source]
+ 
+Brick wall.  Returns 
+ 
+brick(512, 512) uint8 image 
+
+A small section of a brick wall.     Notes The original image was downloaded from CC0Textures and licensed under the Creative Commons CC0 License. A perspective transform was then applied to the image, prior to rotating it by 90 degrees, cropping and scaling it to obtain the final image.

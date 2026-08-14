@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.hardshrink
+
+torch.nn.functional.hardshrink(input, lambd=0.5) → Tensor [source]
+ 
+Applies the hard shrinkage function element-wise See Hardshrink for more details.

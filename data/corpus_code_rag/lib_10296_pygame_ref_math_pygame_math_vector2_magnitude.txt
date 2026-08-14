@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.magnitude
+
+magnitude() 
+ returns the Euclidean magnitude of the vector. magnitude() -> float  calculates the magnitude of the vector which follows from the theorem: vec.magnitude() == math.sqrt(vec.x**2 + vec.y**2)

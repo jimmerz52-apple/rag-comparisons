@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.utils.prune.identity#torch.nn.utils.prune.Identity.apply_mask
+
+apply_mask(module)  
+Simply handles the multiplication between the parameter being pruned and the generated mask. Fetches the mask and the original tensor from the module and returns the pruned version of the tensor.  Parameters 
+module (nn.Module) – module containing the tensor to prune  Returns 
+pruned version of the input tensor  Return type 
+pruned_tensor (torch.Tensor)

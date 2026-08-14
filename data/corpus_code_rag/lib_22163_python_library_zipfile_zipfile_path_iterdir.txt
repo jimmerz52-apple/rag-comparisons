@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.Path.iterdir
+
+Path.iterdir()  
+Enumerate the children of the current directory.

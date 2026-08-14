@@ -1,0 +1,4 @@
+# django.ref.files.storage#django.core.files.storage.FileSystemStorage.location
+
+location  
+Absolute path to the directory that will hold the files. Defaults to the value of your MEDIA_ROOT setting.

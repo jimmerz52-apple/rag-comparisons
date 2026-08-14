@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.getbufsize
+
+numpy.getbufsize   numpy.getbufsize()[source]
+ 
+Return the size of the buffer used in ufuncs.  Returns 
+ 
+getbufsizeint
+
+
+Size of ufunc buffer in bytes.

@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.get_rasterized
+
+get_rasterized()[source]
+ 
+Return whether the artist is to be rasterized.

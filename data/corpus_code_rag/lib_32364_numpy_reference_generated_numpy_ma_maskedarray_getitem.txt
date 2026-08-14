@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__getitem__
+
+numpy.ma.MaskedArray.__getitem__ method   ma.MaskedArray.__getitem__(indx)[source]
+ 
+x.__getitem__(y) <==> x[y] Return the item described by i, as a masked array.

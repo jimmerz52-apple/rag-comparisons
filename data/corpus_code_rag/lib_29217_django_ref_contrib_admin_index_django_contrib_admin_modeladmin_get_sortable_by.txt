@@ -1,0 +1,7 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_sortable_by
+
+ModelAdmin.get_sortable_by(request)  
+The get_sortable_by() method is passed the HttpRequest and is expected to return a collection (e.g. list, tuple, or set) of field names that will be sortable in the change list page. Its default implementation returns sortable_by if it’s set, otherwise it defers to get_list_display(). For example, to prevent one or more columns from being sortable: class PersonAdmin(admin.ModelAdmin):
+
+    def get_sortable_by(self, request):
+        return {*self.get_list_display(request)} - {'rank'}

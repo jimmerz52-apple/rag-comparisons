@@ -1,0 +1,43 @@
+# torch.distributions#torch.distributions.normal.Normal
+
+class torch.distributions.normal.Normal(loc, scale, validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Creates a normal (also called Gaussian) distribution parameterized by loc and scale. Example: >>> m = Normal(torch.tensor([0.0]), torch.tensor([1.0]))
+>>> m.sample()  # normally distributed with loc=0 and scale=1
+tensor([ 0.1046])
+  Parameters 
+ 
+loc (float or Tensor) – mean of the distribution (often referred to as mu) 
+scale (float or Tensor) – standard deviation of the distribution (often referred to as sigma)     
+arg_constraints = {'loc': Real(), 'scale': GreaterThan(lower_bound=0.0)} 
+  
+cdf(value) [source]
+
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+icdf(value) [source]
+
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=torch.Size([])) [source]
+
+  
+sample(sample_shape=torch.Size([])) [source]
+
+  
+property stddev 
+  
+support = Real() 
+  
+property variance

@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.shallow
+
+shallow: bool  
+Set when creating the request object. If True, reading from the request body will cause a RuntimeException. Useful to prevent modifying the stream from middleware.

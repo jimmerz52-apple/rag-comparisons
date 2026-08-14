@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.get_params
+
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator. Returns the parameters given in the constructor as well as the estimators contained within the steps of the Pipeline.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsmapping of string to any 
+
+Parameter names mapped to their values.

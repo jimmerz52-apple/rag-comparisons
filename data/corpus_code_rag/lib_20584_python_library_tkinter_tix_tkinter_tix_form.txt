@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.Form
+
+class tkinter.tix.Form  
+The Form geometry manager based on attachment rules for all Tk widgets.

@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.size
+
+size() → torch.Size  
+Returns the size of the self tensor. The returned value is a subclass of tuple. Example: >>> torch.empty(3, 4, 5).size()
+torch.Size([3, 4, 5])

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ProcessFormView.put
+
+put(*args, **kwargs)  
+The PUT action is also handled and passes all parameters through to post().

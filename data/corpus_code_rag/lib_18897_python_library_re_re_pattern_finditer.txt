@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.finditer
+
+Pattern.finditer(string[, pos[, endpos]])  
+Similar to the finditer() function, using the compiled pattern, but also accepts optional pos and endpos parameters that limit the search region like for search().

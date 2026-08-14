@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.DefaultEventLoopPolicy
+
+class asyncio.DefaultEventLoopPolicy  
+The default asyncio policy. Uses SelectorEventLoop on Unix and ProactorEventLoop on Windows. There is no need to install the default policy manually. asyncio is configured to use the default policy automatically.  Changed in version 3.8: On Windows, ProactorEventLoop is now used by default.

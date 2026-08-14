@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.rindex
+
+numpy.chararray.rindex method   chararray.rindex(sub, start=0, end=None)[source]
+ 
+Like rfind, but raises ValueError when the substring sub is not found.  See also  char.rindex

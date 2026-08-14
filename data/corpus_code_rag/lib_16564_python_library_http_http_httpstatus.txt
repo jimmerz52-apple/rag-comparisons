@@ -1,0 +1,16 @@
+# python.library.http#http.HTTPStatus
+
+class http.HTTPStatus  
+ New in version 3.5.  A subclass of enum.IntEnum that defines a set of HTTP status codes, reason phrases and long descriptions written in English. Usage: >>> from http import HTTPStatus
+>>> HTTPStatus.OK
+<HTTPStatus.OK: 200>
+>>> HTTPStatus.OK == 200
+True
+>>> HTTPStatus.OK.value
+200
+>>> HTTPStatus.OK.phrase
+'OK'
+>>> HTTPStatus.OK.description
+'Request fulfilled, document follows'
+>>> list(HTTPStatus)
+[<HTTPStatus.CONTINUE: 100>, <HTTPStatus.SWITCHING_PROTOCOLS: 101>, ...]

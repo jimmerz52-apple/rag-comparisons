@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.ErrorString
+
+xml.parsers.expat.ErrorString(errno)  
+Returns an explanatory string for a given error number errno.

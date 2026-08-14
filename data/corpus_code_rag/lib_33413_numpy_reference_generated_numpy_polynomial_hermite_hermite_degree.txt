@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.hermite.hermite.degree
+
+numpy.polynomial.hermite.Hermite.degree method   polynomial.hermite.Hermite.degree()[source]
+ 
+The degree of the series.  New in version 1.5.0.   Returns 
+ 
+degreeint
+
+
+Degree of the series, one less than the number of coefficients.

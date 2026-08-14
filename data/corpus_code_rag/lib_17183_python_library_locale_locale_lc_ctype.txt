@@ -1,0 +1,4 @@
+# python.library.locale#locale.LC_CTYPE
+
+locale.LC_CTYPE  
+Locale category for the character type functions. Depending on the settings of this category, the functions of module string dealing with case change their behaviour.

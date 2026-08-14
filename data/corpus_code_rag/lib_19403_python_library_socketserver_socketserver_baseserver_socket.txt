@@ -1,0 +1,4 @@
+# python.library.socketserver#socketserver.BaseServer.socket
+
+socket  
+The socket object on which the server will listen for incoming requests.

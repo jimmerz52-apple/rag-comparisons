@@ -1,0 +1,8 @@
+# torch.storage#torch.FloatStorage.from_file
+
+static from_file(filename, shared=False, size=0) → Storage  
+If shared is True, then memory is shared between all processes. All changes are written to the file. If shared is False, then the changes on the storage do not affect the file. size is the number of elements in the storage. If shared is False, then the file must contain at least size * sizeof(Type) bytes (Type is the type of storage). If shared is True the file will be created if needed.  Parameters 
+ 
+filename (str) – file name to map 
+shared (bool) – whether to share memory 
+size (int) – number of elements in the storage

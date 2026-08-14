@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.items
+
+items()  
+Returns the element attributes as a sequence of (name, value) pairs. The attributes are returned in an arbitrary order.

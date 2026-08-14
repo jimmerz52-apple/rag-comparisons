@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.expires
+
+expires  
+The Expires entity-header field gives the date/time after which the response is considered stale. A stale cache entry may not normally be returned by a cache.  Changed in version 2.0: The datetime object is timezone-aware.

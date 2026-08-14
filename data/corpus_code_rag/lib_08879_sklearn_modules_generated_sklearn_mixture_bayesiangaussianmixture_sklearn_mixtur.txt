@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.mixture.bayesiangaussianmixture#sklearn.mixture.BayesianGaussianMixture.sample
+
+sample(n_samples=1) [source]
+ 
+Generate random samples from the fitted Gaussian distribution.  Parameters 
+ 
+n_samplesint, default=1 
+
+Number of samples to generate.    Returns 
+ 
+Xarray, shape (n_samples, n_features) 
+
+Randomly generated sample  
+yarray, shape (nsamples,) 
+
+Component labels

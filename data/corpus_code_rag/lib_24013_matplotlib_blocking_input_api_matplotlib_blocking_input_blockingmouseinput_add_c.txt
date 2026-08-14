@@ -1,0 +1,7 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingMouseInput.add_click
+
+add_click(event)[source]
+ 
+Add the coordinates of an event to the list of clicks.  Parameters 
+ 
+eventMouseEvent

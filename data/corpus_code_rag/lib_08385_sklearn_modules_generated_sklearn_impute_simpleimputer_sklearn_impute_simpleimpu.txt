@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.impute.simpleimputer#sklearn.impute.SimpleImputer.inverse_transform
+
+inverse_transform(X) [source]
+ 
+Convert the data back to the original representation. Inverts the transform operation performed on an array. This operation can only be performed after SimpleImputer is instantiated with add_indicator=True. Note that inverse_transform can only invert the transform in features that have binary indicators for missing values. If a feature has no missing values at fit time, the feature won’t have a binary indicator, and the imputation done at transform time won’t be inverted.  New in version 0.24.   Parameters 
+ 
+Xarray-like of shape (n_samples, n_features + n_features_missing_indicator) 
+
+The imputed data to be reverted to original data. It has to be an augmented array of imputed data and the missing indicator mask.    Returns 
+ 
+X_originalndarray of shape (n_samples, n_features) 
+
+The original X with missing values as it was prior to imputation.

@@ -1,0 +1,4 @@
+# python.library.select#select.kevent.ident
+
+kevent.ident  
+Value used to identify the event. The interpretation depends on the filter but it’s usually the file descriptor. In the constructor ident can either be an int or an object with a fileno() method. kevent stores the integer internally.

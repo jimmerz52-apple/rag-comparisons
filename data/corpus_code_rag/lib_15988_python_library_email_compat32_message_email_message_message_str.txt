@@ -1,0 +1,4 @@
+# python.library.email.compat32-message#email.message.Message.__str__
+
+__str__()  
+Equivalent to as_string(). Allows str(msg) to produce a string containing the formatted message.

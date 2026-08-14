@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.week.apply_index
+
+pandas.tseries.offsets.Week.apply_index   Week.apply_index(other)

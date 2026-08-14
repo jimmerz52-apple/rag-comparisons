@@ -1,0 +1,4 @@
+# python.library.time#time.clock_getres
+
+time.clock_getres(clk_id)  
+Return the resolution (precision) of the specified clock clk_id. Refer to Clock ID Constants for a list of accepted values for clk_id. Availability: Unix.  New in version 3.3.

@@ -1,0 +1,4 @@
+# python.library.test#test.support.join_thread
+
+test.support.join_thread(thread, timeout=30.0)  
+Join a thread within timeout. Raise an AssertionError if thread is still alive after timeout seconds.

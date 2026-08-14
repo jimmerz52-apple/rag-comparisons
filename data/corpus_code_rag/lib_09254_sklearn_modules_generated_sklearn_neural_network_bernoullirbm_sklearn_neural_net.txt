@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.bernoullirbm#sklearn.neural_network.BernoulliRBM.fit
+
+fit(X, y=None) [source]
+ 
+Fit the model to the data X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training data.    Returns 
+ 
+selfBernoulliRBM 
+
+The fitted model.

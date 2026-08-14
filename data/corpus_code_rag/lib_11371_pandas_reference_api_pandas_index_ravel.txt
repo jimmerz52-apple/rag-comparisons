@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.index.ravel
+
+pandas.Index.ravel   finalIndex.ravel(order='C')[source]
+ 
+Return an ndarray of the flattened values of the underlying data.  Returns 
+ numpy.ndarray
+
+Flattened array.      See also  numpy.ndarray.ravel
+
+Return a flattened array.

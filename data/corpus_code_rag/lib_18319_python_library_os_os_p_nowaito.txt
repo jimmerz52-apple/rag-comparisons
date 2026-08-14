@@ -1,0 +1,5 @@
+# python.library.os#os.P_NOWAITO
+
+os.P_NOWAIT  
+os.P_NOWAITO  
+Possible values for the mode parameter to the spawn* family of functions. If either of these values is given, the spawn*() functions will return as soon as the new process has been created, with the process id as the return value. Availability: Unix, Windows.

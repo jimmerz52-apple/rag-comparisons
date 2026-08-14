@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.setpos
+
+Wave_read.setpos(pos)  
+Set the file pointer to the specified position.

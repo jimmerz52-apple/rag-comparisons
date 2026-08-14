@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.equals_exact
+
+GEOSGeometry.equals_exact(other, tolerance=0)  
+Returns true if the two geometries are exactly equal, up to a specified tolerance. The tolerance value should be a floating point number representing the error tolerance in the comparison, e.g., poly1.equals_exact(poly2, 0.001) will compare equality to within one thousandth of a unit.

@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.__suppress_context__
+
+__suppress_context__  
+The __suppress_context__ value from the original exception.

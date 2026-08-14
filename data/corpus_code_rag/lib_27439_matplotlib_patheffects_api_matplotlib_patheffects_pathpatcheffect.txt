@@ -1,0 +1,14 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.PathPatchEffect
+
+classmatplotlib.patheffects.PathPatchEffect(offset=(0, 0), **kwargs)[source]
+ 
+Bases: matplotlib.patheffects.AbstractPathEffect Draws a PathPatch instance whose Path comes from the original PathEffect artist.  Parameters 
+ 
+offset(float, float), default: (0, 0)
+
+
+The (x, y) offset to apply to the path, in points.  **kwargs
+
+All keyword arguments are passed through to the PathPatch constructor. The properties which cannot be overridden are "path", "clip_box" "transform" and "clip_path".       draw_path(renderer, gc, tpath, affine, rgbFace)[source]
+ 
+Derived should override this method. The arguments are the same as matplotlib.backend_bases.RendererBase.draw_path() except the first argument is a renderer.

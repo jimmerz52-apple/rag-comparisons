@@ -1,0 +1,5 @@
+# torch.fx#torch.fx.Graph.print_tabular
+
+print_tabular() [source]
+ 
+Prints the intermediate representation of the graph in tabular format.

@@ -1,0 +1,4 @@
+# python.library.contextvars#contextvars.Context.copy
+
+copy()  
+Return a shallow copy of the context object.

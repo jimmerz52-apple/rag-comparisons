@@ -1,0 +1,7 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.mpl_axes.axes#mpl_toolkits.axes_grid1.mpl_axes.Axes.AxisDict
+
+classAxisDict(axes)[source]
+ 
+Bases: dict   __call__(*v, **kwargs)[source]
+ 
+Call self as a function.

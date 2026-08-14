@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.get_namespace
+
+get_namespace()  
+Return the namespace bound to this name. If more than one namespace is bound, ValueError is raised.

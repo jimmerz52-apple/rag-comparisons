@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.pca#sklearn.decomposition.PCA.score_samples
+
+score_samples(X) [source]
+ 
+Return the log-likelihood of each sample. See. “Pattern Recognition and Machine Learning” by C. Bishop, 12.2.1 p. 574 or http://www.miketipping.com/papers/met-mppca.pdf  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data.    Returns 
+ 
+llndarray of shape (n_samples,) 
+
+Log-likelihood of each sample under the current model.

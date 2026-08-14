@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.ln
+
+ln(x)  
+Returns the natural (base e) logarithm of x.

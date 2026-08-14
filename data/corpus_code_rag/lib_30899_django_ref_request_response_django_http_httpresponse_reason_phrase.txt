@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponse.reason_phrase
+
+HttpResponse.reason_phrase  
+The HTTP reason phrase for the response. It uses the HTTP standard’s default reason phrases. Unless explicitly set, reason_phrase is determined by the value of status_code.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.PathEntryFinder.invalidate_caches
+
+invalidate_caches()  
+An optional method which, when called, should invalidate any internal cache used by the finder. Used by PathFinder.invalidate_caches() when invalidating the caches of all cached finders.

@@ -1,0 +1,4 @@
+# python.library.tkinter#tkinter.Tk
+
+class tkinter.Tk(screenName=None, baseName=None, className='Tk', useTk=1)  
+The Tk class is instantiated without arguments. This creates a toplevel widget of Tk which usually is the main window of an application. Each instance has its own associated Tcl interpreter.

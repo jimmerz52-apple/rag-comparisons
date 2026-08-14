@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.PermissionsMixin.get_all_permissions
+
+get_all_permissions(obj=None)  
+Returns a set of permission strings that the user has, both through group and user permissions. If obj is passed in, only returns the permissions for this specific object.

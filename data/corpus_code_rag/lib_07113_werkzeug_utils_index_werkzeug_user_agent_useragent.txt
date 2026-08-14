@@ -1,0 +1,24 @@
+# werkzeug.utils.index#werkzeug.user_agent.UserAgent
+
+class werkzeug.user_agent.UserAgent(string)  
+Represents a parsed user agent header value. The default implementation does no parsing, only the string attribute is set. A subclass may parse the string to set the common attributes or expose other information. Set werkzeug.wrappers.Request.user_agent_class to use a subclass.  Parameters 
+string (str) – The header value to parse.  Return type 
+None    New in version 2.0: This replaces the previous useragents module, but does not provide a built-in parser.   
+platform: Optional[str] = None  
+The OS name, if it could be parsed from the string. 
+  
+browser: Optional[str] = None  
+The browser name, if it could be parsed from the string. 
+  
+version: Optional[str] = None  
+The browser version, if it could be parsed from the string. 
+  
+language: Optional[str] = None  
+The browser language, if it could be parsed from the string. 
+  
+string: str  
+The original header value. 
+  
+to_header()  
+Convert to a header value.  Return type 
+str

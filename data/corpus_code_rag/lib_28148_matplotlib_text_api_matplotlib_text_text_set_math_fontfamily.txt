@@ -1,0 +1,10 @@
+# matplotlib.text_api#matplotlib.text.Text.set_math_fontfamily
+
+set_math_fontfamily(fontfamily)[source]
+ 
+Set the font family for math text rendered by Matplotlib. This does only affect Matplotlib's own math renderer. It has no effect when rendering with TeX (usetex=True).  Parameters 
+ 
+fontfamilystr
+
+
+The name of the font family. Available font families are defined in the matplotlibrc.template file.      See also  get_math_fontfamily

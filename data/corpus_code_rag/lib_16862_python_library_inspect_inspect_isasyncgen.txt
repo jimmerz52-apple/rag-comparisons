@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isasyncgen
+
+inspect.isasyncgen(object)  
+Return True if the object is an asynchronous generator iterator created by an asynchronous generator function.  New in version 3.6.

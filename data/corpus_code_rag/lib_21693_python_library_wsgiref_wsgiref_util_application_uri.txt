@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.util.application_uri
+
+wsgiref.util.application_uri(environ)  
+Similar to request_uri(), except that the PATH_INFO and QUERY_STRING variables are ignored. The result is the base URI of the application object addressed by the request.

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Headers.popitem
+
+popitem()  
+Removes a key or index and returns a (key, value) item.

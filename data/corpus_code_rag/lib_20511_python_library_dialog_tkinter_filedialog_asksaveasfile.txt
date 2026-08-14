@@ -1,0 +1,4 @@
+# python.library.dialog#tkinter.filedialog.asksaveasfile
+
+tkinter.filedialog.asksaveasfile(mode="w", **options)  
+Create a SaveAs dialog and return a file object opened in write-only mode.

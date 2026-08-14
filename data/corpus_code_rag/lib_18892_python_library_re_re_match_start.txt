@@ -1,0 +1,9 @@
+# python.library.re#re.Match.start
+
+Match.start([group])  
+Match.end([group])  
+Return the indices of the start and end of the substring matched by group; group defaults to zero (meaning the whole matched substring). Return -1 if group exists but did not contribute to the match. For a match object m, and a group g that did contribute to the match, the substring matched by group g (equivalent to m.group(g)) is m.string[m.start(g):m.end(g)]
+ Note that m.start(group) will equal m.end(group) if group matched a null string. For example, after m = re.search('b(c?)', 'cba'), m.start(0) is 1, m.end(0) is 2, m.start(1) and m.end(1) are both 2, and m.start(2) raises an IndexError exception. An example that will remove remove_this from email addresses: >>> email = "tony@tiremove_thisger.net"
+>>> m = re.search("remove_this", email)
+>>> email[:m.start()] + email[m.end():]
+'tony@tiger.net'

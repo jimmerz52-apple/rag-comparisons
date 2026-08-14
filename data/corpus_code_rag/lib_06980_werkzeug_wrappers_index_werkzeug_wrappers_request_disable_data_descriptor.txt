@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.disable_data_descriptor
+
+disable_data_descriptor: Optional[bool] = None  
+Disable the data property to avoid reading from the input stream.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Create the request with shallow=True instead.   Changelog New in version 0.9.

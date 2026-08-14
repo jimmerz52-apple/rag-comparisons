@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_color
+
+set_color(color)[source]
+ 
+Set the foreground color of the text  Parameters 
+ 
+colorcolor

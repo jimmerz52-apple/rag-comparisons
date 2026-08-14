@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.index_select
+
+index_select(dim, index) → Tensor  
+See torch.index_select()

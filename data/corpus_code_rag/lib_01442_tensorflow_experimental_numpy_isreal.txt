@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.isreal
+
+tf.experimental.numpy.isreal TensorFlow variant of NumPy's isreal. 
+tf.experimental.numpy.isreal(
+    x
+)
+ See the NumPy documentation for numpy.isreal.

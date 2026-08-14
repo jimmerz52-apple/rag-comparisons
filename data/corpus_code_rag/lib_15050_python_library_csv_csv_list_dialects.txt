@@ -1,0 +1,4 @@
+# python.library.csv#csv.list_dialects
+
+csv.list_dialects()  
+Return the names of all registered dialects.

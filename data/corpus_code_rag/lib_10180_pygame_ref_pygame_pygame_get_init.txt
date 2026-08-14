@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.get_init
+
+pygame.get_init() 
+ returns True if pygame is currently initialized get_init() -> bool  Returns True if pygame is currently initialized.  New in pygame 1.9.5.

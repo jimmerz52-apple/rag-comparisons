@@ -1,0 +1,12 @@
+# python.library.typing#typing.get_type_hints
+
+typing.get_type_hints(obj, globalns=None, localns=None, include_extras=False)  
+Return a dictionary containing type hints for a function, method, module or class object. This is often the same as obj.__annotations__. In addition, forward references encoded as string literals are handled by evaluating them in globals and locals namespaces. If necessary, Optional[t] is added for function and method annotations if a default value equal to None is set. For a class C, return a dictionary constructed by merging all the __annotations__ along C.__mro__ in reverse order. The function recursively replaces all Annotated[T, ...] with T, unless include_extras is set to True (see Annotated for more information). For example: class Student(NamedTuple):
+    name: Annotated[str, 'some marker']
+
+get_type_hints(Student) == {'name': str}
+get_type_hints(Student, include_extras=False) == {'name': str}
+get_type_hints(Student, include_extras=True) == {
+    'name': Annotated[str, 'some marker']
+}
+  Changed in version 3.9: Added include_extras parameter as part of PEP 593.

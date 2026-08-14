@@ -1,0 +1,4 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState.options
+
+options  
+a dictionary with all options that were passed to the register_blueprint() method.

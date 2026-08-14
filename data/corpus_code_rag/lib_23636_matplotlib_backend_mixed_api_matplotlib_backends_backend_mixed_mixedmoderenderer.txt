@@ -1,0 +1,5 @@
+# matplotlib.backend_mixed_api#matplotlib.backends.backend_mixed.MixedModeRenderer.start_rasterizing
+
+start_rasterizing()[source]
+ 
+Enter "raster" mode. All subsequent drawing commands (until stop_rasterizing is called) will be drawn with the raster backend.

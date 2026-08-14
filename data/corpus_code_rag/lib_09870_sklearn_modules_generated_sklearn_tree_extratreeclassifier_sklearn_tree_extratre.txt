@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.tree.extratreeclassifier#sklearn.tree.ExtraTreeClassifier.predict_proba
+
+predict_proba(X, check_input=True) [source]
+ 
+Predict class probabilities of the input samples X. The predicted class probability is the fraction of samples of the same class in a leaf.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.  
+check_inputbool, default=True 
+
+Allow to bypass several input checking. Don’t use this parameter unless you know what you do.    Returns 
+ 
+probandarray of shape (n_samples, n_classes) or list of n_outputs such arrays if n_outputs > 1 
+
+The class probabilities of the input samples. The order of the classes corresponds to that in the attribute classes_.

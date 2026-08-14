@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.FileStorage.stream
+
+stream  
+The input stream for the uploaded file. This usually points to an open temporary file.

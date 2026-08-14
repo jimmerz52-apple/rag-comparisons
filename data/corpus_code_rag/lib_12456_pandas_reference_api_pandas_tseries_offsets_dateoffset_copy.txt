@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.dateoffset.copy
+
+pandas.tseries.offsets.DateOffset.copy   DateOffset.copy()

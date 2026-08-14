@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.module#torch.nn.Module.forward
+
+forward(*input)  
+Defines the computation performed at every call. Should be overridden by all subclasses.  Note Although the recipe for forward pass needs to be defined within this function, one should call the Module instance afterwards instead of this since the former takes care of running the registered hooks while the latter silently ignores them.

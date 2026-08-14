@@ -1,0 +1,22 @@
+# sklearn.modules.generated.sklearn.covariance.shrunkcovariance#sklearn.covariance.ShrunkCovariance.error_norm
+
+error_norm(comp_cov, norm='frobenius', scaling=True, squared=True) [source]
+ 
+Computes the Mean Squared Error between two covariance estimators. (In the sense of the Frobenius norm).  Parameters 
+ 
+comp_covarray-like of shape (n_features, n_features) 
+
+The covariance to compare with.  
+norm{“frobenius”, “spectral”}, default=”frobenius” 
+
+The type of norm used to compute the error. Available error types: - ‘frobenius’ (default): sqrt(tr(A^t.A)) - ‘spectral’: sqrt(max(eigenvalues(A^t.A)) where A is the error (comp_cov - self.covariance_).  
+scalingbool, default=True 
+
+If True (default), the squared error norm is divided by n_features. If False, the squared error norm is not rescaled.  
+squaredbool, default=True 
+
+Whether to compute the squared error norm or the error norm. If True (default), the squared error norm is returned. If False, the error norm is returned.    Returns 
+ 
+resultfloat 
+
+The Mean Squared Error (in the sense of the Frobenius norm) between self and comp_cov covariance estimators.

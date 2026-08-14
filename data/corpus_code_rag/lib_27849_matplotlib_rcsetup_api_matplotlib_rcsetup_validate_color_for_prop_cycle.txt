@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_color_for_prop_cycle
+
+matplotlib.rcsetup.validate_color_for_prop_cycle(s)[source]

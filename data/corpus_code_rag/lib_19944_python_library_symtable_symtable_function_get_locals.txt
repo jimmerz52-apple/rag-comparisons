@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Function.get_locals
+
+get_locals()  
+Return a tuple containing names of locals in this function.

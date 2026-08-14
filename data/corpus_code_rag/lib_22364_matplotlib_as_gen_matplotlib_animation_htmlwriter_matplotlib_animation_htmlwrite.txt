@@ -1,0 +1,22 @@
+# matplotlib._as_gen.matplotlib.animation.htmlwriter#matplotlib.animation.HTMLWriter.setup
+
+setup(fig, outfile, dpi, frame_dir=None)[source]
+ 
+Setup for writing the movie file.  Parameters 
+ 
+figFigure
+
+
+The figure to grab the rendered frames from.  
+outfilestr
+
+
+The filename of the resulting movie file.  
+dpifloat, default: fig.dpi
+
+
+The dpi of the output file. This, with the figure size, controls the size in pixels of the resulting movie file.  
+frame_prefixstr, optional
+
+
+The filename prefix to use for temporary files. If None (the default), files are written to a temporary directory which is deleted by cleanup; if not None, no temporary files are deleted.

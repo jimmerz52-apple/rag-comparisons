@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.subplotdivider#mpl_toolkits.axes_grid1.axes_divider.SubplotDivider.get_subplotspec
+
+get_subplotspec()[source]
+ 
+Get the SubplotSpec instance.

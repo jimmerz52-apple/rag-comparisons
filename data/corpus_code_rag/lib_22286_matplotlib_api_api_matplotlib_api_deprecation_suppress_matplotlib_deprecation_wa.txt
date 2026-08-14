@@ -1,0 +1,3 @@
+# matplotlib._api_api#matplotlib._api.deprecation.suppress_matplotlib_deprecation_warning
+
+matplotlib._api.deprecation.suppress_matplotlib_deprecation_warning()

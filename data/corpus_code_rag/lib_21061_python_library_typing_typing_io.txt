@@ -1,0 +1,6 @@
+# python.library.typing#typing.IO
+
+class typing.IO  
+class typing.TextIO  
+class typing.BinaryIO  
+Generic type IO[AnyStr] and its subclasses TextIO(IO[str]) and BinaryIO(IO[bytes]) represent the types of I/O streams such as returned by open(). These types are also in the typing.io namespace.

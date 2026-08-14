@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.HttpResponseNotModified
+
+class HttpResponseNotModified  
+The constructor doesn’t take any arguments and no content should be added to this response. Use this to designate that a page hasn’t been modified since the user’s last request (status code 304).

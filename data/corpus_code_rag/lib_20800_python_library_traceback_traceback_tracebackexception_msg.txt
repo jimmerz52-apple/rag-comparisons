@@ -1,0 +1,4 @@
+# python.library.traceback#traceback.TracebackException.msg
+
+msg  
+For syntax errors - the compiler error message.

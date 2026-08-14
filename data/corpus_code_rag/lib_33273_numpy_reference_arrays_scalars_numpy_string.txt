@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.string_
+
+numpy.string_[source]
+ 
+alias of numpy.bytes_

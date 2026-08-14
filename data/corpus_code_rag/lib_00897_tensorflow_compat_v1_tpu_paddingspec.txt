@@ -1,0 +1,9 @@
+# tensorflow.compat.v1.tpu.paddingspec
+
+tf.compat.v1.tpu.PaddingSpec Represents the type of padding policies for tpu.replicate.
+ 
+
+
+ Class Variables
+  AUTO   <PaddingSpec.AUTO: 0>  
+  POWER_OF_TWO   <PaddingSpec.POWER_OF_TWO: 1>

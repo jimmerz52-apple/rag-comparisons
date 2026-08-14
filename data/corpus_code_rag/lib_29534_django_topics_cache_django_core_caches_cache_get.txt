@@ -1,0 +1,5 @@
+# django.topics.cache#django.core.caches.cache.get
+
+cache.get(key, default=None, version=None)  
+>>> cache.get('my_key')
+'hello, world!'

@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Function.get_nonlocals
+
+get_nonlocals()  
+Return a tuple containing names of nonlocals in this function.

@@ -1,0 +1,4 @@
+# python.library.typing#typing.no_type_check
+
+@typing.no_type_check  
+Decorator to indicate that annotations are not type hints. This works as class or function decorator. With a class, it applies recursively to all methods defined in that class (but not to methods defined in its superclasses or subclasses). This mutates the function(s) in place.

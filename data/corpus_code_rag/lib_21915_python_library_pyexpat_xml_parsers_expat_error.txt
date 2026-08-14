@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.error
+
+exception xml.parsers.expat.error  
+Alias for ExpatError.

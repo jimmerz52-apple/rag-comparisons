@@ -1,0 +1,10 @@
+# python.library.turtle#turtle.bgcolor
+
+turtle.bgcolor(*args)  
+ Parameters 
+args – a color string or three numbers in the range 0..colormode or a 3-tuple of such numbers   Set or return background color of the TurtleScreen. >>> screen.bgcolor("orange")
+>>> screen.bgcolor()
+'orange'
+>>> screen.bgcolor("#800080")
+>>> screen.bgcolor()
+(128.0, 0.0, 128.0)

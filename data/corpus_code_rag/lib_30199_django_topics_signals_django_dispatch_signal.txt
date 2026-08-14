@@ -1,0 +1,3 @@
+# django.topics.signals#django.dispatch.Signal
+
+class Signal [source]

@@ -1,0 +1,192 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox
+
+classmatplotlib.transforms.Bbox(points, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.BboxBase A mutable bounding box. Examples Create from known bounds The default constructor takes the boundary "points" [[xmin, ymin],
+[xmax, ymax]]. >>> Bbox([[1, 1], [3, 7]])
+Bbox([[1.0, 1.0], [3.0, 7.0]])
+ Alternatively, a Bbox can be created from the flattened points array, the so-called "extents" (xmin, ymin, xmax, ymax) >>> Bbox.from_extents(1, 1, 3, 7)
+Bbox([[1.0, 1.0], [3.0, 7.0]])
+ or from the "bounds" (xmin, ymin, width, height). >>> Bbox.from_bounds(1, 1, 2, 6)
+Bbox([[1.0, 1.0], [3.0, 7.0]])
+ Create from collections of points The "empty" object for accumulating Bboxs is the null bbox, which is a stand-in for the empty set. >>> Bbox.null()
+Bbox([[inf, inf], [-inf, -inf]])
+ Adding points to the null bbox will give you the bbox of those points. >>> box = Bbox.null()
+>>> box.update_from_data_xy([[1, 1]])
+>>> box
+Bbox([[1.0, 1.0], [1.0, 1.0]])
+>>> box.update_from_data_xy([[2, 3], [3, 2]], ignore=False)
+>>> box
+Bbox([[1.0, 1.0], [3.0, 3.0]])
+ Setting ignore=True is equivalent to starting over from a null bbox. >>> box.update_from_data_xy([[1, 1]], ignore=True)
+>>> box
+Bbox([[1.0, 1.0], [1.0, 1.0]])
+  Warning It is recommended to always specify ignore explicitly. If not, the default value of ignore can be changed at any time by code with access to your Bbox, for example using the method ignore.  Properties of the ``null`` bbox  Note The current behavior of Bbox.null() may be surprising as it does not have all of the properties of the "empty set", and as such does not behave like a "zero" object in the mathematical sense. We may change that in the future (with a deprecation period).  The null bbox is the identity for intersections >>> Bbox.intersection(Bbox([[1, 1], [3, 7]]), Bbox.null())
+Bbox([[1.0, 1.0], [3.0, 7.0]])
+ except with itself, where it returns the full space. >>> Bbox.intersection(Bbox.null(), Bbox.null())
+Bbox([[-inf, -inf], [inf, inf]])
+ A union containing null will always return the full space (not the other set!) >>> Bbox.union([Bbox([[0, 0], [0, 0]]), Bbox.null()])
+Bbox([[-inf, -inf], [inf, inf]])
+  Parameters 
+ 
+pointsndarray
+
+
+A 2x2 numpy array of the form [[x0, y0], [x1, y1]].       __format__(fmt)[source]
+ 
+Default object formatter. 
+   __init__(points, **kwargs)[source]
+ 
+ Parameters 
+ 
+pointsndarray
+
+
+A 2x2 numpy array of the form [[x0, y0], [x1, y1]].     
+   __module__='matplotlib.transforms'
+
+   __repr__()[source]
+ 
+Return repr(self). 
+   __str__()[source]
+ 
+Return str(self). 
+   propertybounds
+ 
+Return (x0, y0, width, height). 
+   staticfrom_bounds(x0, y0, width, height)[source]
+ 
+Create a new Bbox from x0, y0, width and height. width and height may be negative. 
+   staticfrom_extents(*args, minpos=None)[source]
+ 
+Create a new Bbox from left, bottom, right and top. The y-axis increases upwards.  Parameters 
+ 
+left, bottom, right, topfloat
+
+
+The four extents of the bounding box.  
+minposfloat or None
+
+
+If this is supplied, the Bbox will have a minimum positive value set. This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors.     
+   frozen()[source]
+ 
+The base class for anything that participates in the transform tree and needs to invalidate its parents or be invalidated. This includes classes that are not really transforms, such as bounding boxes, since some transforms depend on bounding boxes to compute their values. 
+   get_points()[source]
+ 
+Get the points of the bounding box directly as a numpy array of the form: [[x0, y0], [x1, y1]]. 
+   ignore(value)[source]
+ 
+Set whether the existing bounds of the box should be ignored by subsequent calls to update_from_data_xy().  valuebool
+
+
+ When True, subsequent calls to update_from_data_xy() will ignore the existing bounds of the Bbox. When False, subsequent calls to update_from_data_xy() will include the existing bounds of the Bbox.    
+   propertyintervalx
+ 
+The pair of x coordinates that define the bounding box. This is not guaranteed to be sorted from left to right. 
+   propertyintervaly
+ 
+The pair of y coordinates that define the bounding box. This is not guaranteed to be sorted from bottom to top. 
+   propertyminpos
+ 
+The minimum positive value in both directions within the Bbox. This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum extent instead of p0. 
+   propertyminposx
+ 
+The minimum positive value in the x-direction within the Bbox. This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum x-extent instead of x0. 
+   propertyminposy
+ 
+The minimum positive value in the y-direction within the Bbox. This is useful when dealing with logarithmic scales and other scales where negative bounds result in floating point errors, and will be used as the minimum y-extent instead of y0. 
+   mutated()[source]
+ 
+Return whether the bbox has changed since init. 
+   mutatedx()[source]
+ 
+Return whether the x-limits have changed since init. 
+   mutatedy()[source]
+ 
+Return whether the y-limits have changed since init. 
+   staticnull()[source]
+ 
+Create a new null Bbox from (inf, inf) to (-inf, -inf). 
+   propertyp0
+ 
+The first pair of (x, y) coordinates that define the bounding box. This is not guaranteed to be the bottom-left corner (for that, use min). 
+   propertyp1
+ 
+The second pair of (x, y) coordinates that define the bounding box. This is not guaranteed to be the top-right corner (for that, use max). 
+   set(other)[source]
+ 
+Set this bounding box from the "frozen" bounds of another Bbox. 
+   set_points(points)[source]
+ 
+Set the points of the bounding box directly from a numpy array of the form: [[x0, y0], [x1, y1]]. No error checking is performed, as this method is mainly for internal use. 
+   staticunit()[source]
+ 
+Create a new unit Bbox from (0, 0) to (1, 1). 
+   update_from_data_x(x, ignore=None)[source]
+ 
+Update the x-bounds of the Bbox based on the passed in data. After updating, the bounds will have positive width, and x0 will be the minimal value.  Parameters 
+ 
+xndarray
+
+
+Array of x-values.  
+ignorebool, optional
+
+
+ When True, ignore the existing bounds of the Bbox. When False, include the existing bounds of the Bbox. When None, use the last value passed to ignore().      
+   update_from_data_xy(xy, ignore=None, updatex=True, updatey=True)[source]
+ 
+Update the bounds of the Bbox based on the passed in data. After updating, the bounds will have positive width and height; x0 and y0 will be the minimal values.  Parameters 
+ 
+xyndarray
+
+
+A numpy array of 2D points.  
+ignorebool, optional
+
+
+ When True, ignore the existing bounds of the Bbox. When False, include the existing bounds of the Bbox. When None, use the last value passed to ignore().   
+updatex, updateybool, default: True
+
+
+When True, update the x/y values.     
+   update_from_data_y(y, ignore=None)[source]
+ 
+Update the y-bounds of the Bbox based on the passed in data. After updating, the bounds will have positive height, and y0 will be the minimal value.  Parameters 
+ 
+yndarray
+
+
+Array of y-values.  
+ignorebool, optional
+
+
+ When True, ignore the existing bounds of the Bbox. When False, include the existing bounds of the Bbox. When None, use the last value passed to ignore().      
+   update_from_path(path, ignore=None, updatex=True, updatey=True)[source]
+ 
+Update the bounds of the Bbox to contain the vertices of the provided path. After updating, the bounds will have positive width and height; x0 and y0 will be the minimal values.  Parameters 
+ 
+pathPath
+
+
+ignorebool, optional
+
+
+ when True, ignore the existing bounds of the Bbox. when False, include the existing bounds of the Bbox. when None, use the last value passed to ignore().   
+updatex, updateybool, default: True
+
+
+When True, update the x/y values.     
+   propertyx0
+ 
+The first of the pair of x coordinates that define the bounding box. This is not guaranteed to be less than x1 (for that, use xmin). 
+   propertyx1
+ 
+The second of the pair of x coordinates that define the bounding box. This is not guaranteed to be greater than x0 (for that, use xmax). 
+   propertyy0
+ 
+The first of the pair of y coordinates that define the bounding box. This is not guaranteed to be less than y1 (for that, use ymin). 
+   propertyy1
+ 
+The second of the pair of y coordinates that define the bounding box. This is not guaranteed to be greater than y0 (for that, use ymax).

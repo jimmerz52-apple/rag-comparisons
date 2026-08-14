@@ -1,0 +1,14 @@
+# matplotlib.transformations#matplotlib.transforms.Bbox.update_from_data_x
+
+update_from_data_x(x, ignore=None)[source]
+ 
+Update the x-bounds of the Bbox based on the passed in data. After updating, the bounds will have positive width, and x0 will be the minimal value.  Parameters 
+ 
+xndarray
+
+
+Array of x-values.  
+ignorebool, optional
+
+
+ When True, ignore the existing bounds of the Bbox. When False, include the existing bounds of the Bbox. When None, use the last value passed to ignore().

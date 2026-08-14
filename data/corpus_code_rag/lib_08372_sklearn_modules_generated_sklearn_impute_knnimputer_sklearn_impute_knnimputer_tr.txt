@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.impute.knnimputer#sklearn.impute.KNNImputer.transform
+
+transform(X) [source]
+ 
+Impute all missing values in X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The input data to complete.    Returns 
+ 
+Xarray-like of shape (n_samples, n_output_features) 
+
+The imputed dataset. n_output_features is the number of features that is not always missing during fit.

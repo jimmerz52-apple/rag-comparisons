@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.tick.get_pad
+
+matplotlib.axis.Tick.get_pad   Tick.get_pad()[source]
+ 
+Get the value of the tick label pad in points.

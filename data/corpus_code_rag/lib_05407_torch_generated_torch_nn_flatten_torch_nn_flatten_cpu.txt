@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.flatten#torch.nn.Flatten.cpu
+
+cpu()  
+Moves all model parameters and buffers to the CPU.  Returns 
+self  Return type 
+Module

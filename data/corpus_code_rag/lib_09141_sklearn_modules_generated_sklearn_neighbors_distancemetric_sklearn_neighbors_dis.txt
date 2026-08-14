@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.neighbors.distancemetric#sklearn.neighbors.DistanceMetric.rdist_to_dist
+
+rdist_to_dist()  
+Convert the Reduced distance to the true distance. The reduced distance, defined for some metrics, is a computationally more efficient measure which preserves the rank of the true distance. For example, in the Euclidean distance metric, the reduced distance is the squared-euclidean distance.

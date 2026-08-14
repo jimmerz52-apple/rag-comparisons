@@ -1,0 +1,4 @@
+# python.library.http.client#http.client.HTTPConnection.send
+
+HTTPConnection.send(data)  
+Send data to the server. This should be used directly only after the endheaders() method has been called and before getresponse() is called.

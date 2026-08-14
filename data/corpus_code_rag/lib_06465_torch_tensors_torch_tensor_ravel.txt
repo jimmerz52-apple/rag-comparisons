@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ravel
+
+ravel(input) → Tensor  
+see torch.ravel()

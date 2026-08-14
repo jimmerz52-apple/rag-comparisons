@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_solid_capstyle
+
+set_solid_capstyle(s)[source]
+ 
+How to draw the end caps if the line is solid (not is_dashed)  Parameters 
+ 
+sCapStyle or {'butt', 'projecting', 'round'}

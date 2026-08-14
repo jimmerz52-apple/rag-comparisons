@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.quiver.barbs#matplotlib.quiver.Barbs.set_offsets
+
+set_offsets(xy)[source]
+ 
+Set the offsets for the barb polygons. This saves the offsets passed in and masks them as appropriate for the existing U/V data.  Parameters 
+ 
+xysequence of pairs of floats

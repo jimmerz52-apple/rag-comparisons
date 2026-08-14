@@ -1,0 +1,7 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnnotationBbox.set_figure
+
+set_figure(fig)[source]
+ 
+Set the Figure instance the artist belongs to.  Parameters 
+ 
+figFigure

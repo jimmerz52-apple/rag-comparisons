@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.frombuf
+
+classmethod TarInfo.frombuf(buf, encoding, errors)  
+Create and return a TarInfo object from string buffer buf. Raises HeaderError if the buffer is invalid.

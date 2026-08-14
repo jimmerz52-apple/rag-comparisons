@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.external_attr
+
+ZipInfo.external_attr  
+External file attributes.

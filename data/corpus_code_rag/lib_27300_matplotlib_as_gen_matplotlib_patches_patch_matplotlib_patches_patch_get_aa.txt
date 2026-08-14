@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_aa
+
+get_aa()[source]
+ 
+Alias for get_antialiased.

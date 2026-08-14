@@ -1,0 +1,22 @@
+# matplotlib.blocking_input_api#matplotlib.blocking_input.BlockingInput
+
+classmatplotlib.blocking_input.BlockingInput(fig, eventslist=())[source]
+ 
+Bases: object Callable for retrieving events in a blocking way.   add_event(event)[source]
+ 
+For base class, this just appends an event to events. 
+   cleanup()[source]
+ 
+Disconnect all callbacks. 
+   on_event(event)[source]
+ 
+Event handler; will be passed to the current figure to retrieve events. 
+   pop(index=- 1)[source]
+ 
+Remove an event from the event list -- by default, the last. Note that this does not check that there are events, much like the normal pop method. If no events exist, this will throw an exception. 
+   pop_event(index=- 1)[source]
+ 
+Remove an event from the event list -- by default, the last. Note that this does not check that there are events, much like the normal pop method. If no events exist, this will throw an exception. 
+   post_event()[source]
+ 
+For baseclass, do nothing but collect events.

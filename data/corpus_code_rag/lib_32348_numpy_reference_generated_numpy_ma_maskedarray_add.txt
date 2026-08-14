@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__add__
+
+numpy.ma.MaskedArray.__add__ method   ma.MaskedArray.__add__(other)[source]
+ 
+Add self to other, and return a new masked array.

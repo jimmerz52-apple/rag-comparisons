@@ -1,0 +1,12 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.AbstractPathEffect
+
+classmatplotlib.patheffects.AbstractPathEffect(offset=(0.0, 0.0))[source]
+ 
+Bases: object A base class for path effects. Subclasses should override the draw_path method to add effect functionality.  Parameters 
+ 
+offset(float, float), default: (0, 0)
+
+
+The (x, y) offset to apply to the path, measured in points.       draw_path(renderer, gc, tpath, affine, rgbFace=None)[source]
+ 
+Derived should override this method. The arguments are the same as matplotlib.backend_bases.RendererBase.draw_path() except the first argument is a renderer.

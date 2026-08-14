@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.poly1d.integ
+
+numpy.poly1d.integ method   poly1d.integ(m=1, k=0)[source]
+ 
+Return an antiderivative (indefinite integral) of this polynomial. Refer to polyint for full documentation.  See also  polyint
+
+equivalent function

@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.tseries.offsets.yearend.rollback
+
+pandas.tseries.offsets.YearEnd.rollback   YearEnd.rollback()
+ 
+Roll provided date backward to next offset only if not on offset.  Returns 
+ TimeStamp
+
+Rolled timestamp if not on offset, otherwise unchanged timestamp.

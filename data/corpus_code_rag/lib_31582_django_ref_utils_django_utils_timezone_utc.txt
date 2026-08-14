@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.utc
+
+utc  
+tzinfo instance that represents UTC.

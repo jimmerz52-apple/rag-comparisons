@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.sharedctypes.multiprocessing.Manager
+
+multiprocessing.Manager()  
+Returns a started SyncManager object which can be used for sharing objects between processes. The returned manager object corresponds to a spawned child process and has methods which will create shared objects and return corresponding proxies.

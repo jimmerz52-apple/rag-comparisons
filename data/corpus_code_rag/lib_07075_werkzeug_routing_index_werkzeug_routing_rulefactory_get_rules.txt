@@ -1,0 +1,6 @@
+# werkzeug.routing.index#werkzeug.routing.RuleFactory.get_rules
+
+get_rules(map)  
+Subclasses of RuleFactory have to override this method and return an iterable of rules.  Parameters 
+map (werkzeug.routing.Map) –   Return type 
+Iterable[werkzeug.routing.Rule]

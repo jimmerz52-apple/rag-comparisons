@@ -1,0 +1,4 @@
+# python.library.re#re.Pattern.groups
+
+Pattern.groups  
+The number of capturing groups in the pattern.

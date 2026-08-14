@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.simple_server.WSGIRequestHandler.get_stderr
+
+get_stderr()  
+Return the object that should be used as the wsgi.errors stream. The default implementation just returns sys.stderr.

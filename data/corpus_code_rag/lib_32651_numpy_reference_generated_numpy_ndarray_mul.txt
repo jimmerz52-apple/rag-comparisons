@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__mul__
+
+numpy.ndarray.__mul__ method   ndarray.__mul__(value, /)
+ 
+Return self*value.

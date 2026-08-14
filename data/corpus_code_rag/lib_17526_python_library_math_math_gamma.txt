@@ -1,0 +1,4 @@
+# python.library.math#math.gamma
+
+math.gamma(x)  
+Return the Gamma function at x.  New in version 3.2.

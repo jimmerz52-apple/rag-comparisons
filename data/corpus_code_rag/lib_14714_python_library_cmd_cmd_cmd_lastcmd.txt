@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.lastcmd
+
+Cmd.lastcmd  
+The last nonempty command prefix seen.

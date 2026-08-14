@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.jet
+
+matplotlib.pyplot.jet   matplotlib.pyplot.jet()[source]
+ 
+Set the colormap to 'jet'. This changes the default colormap as well as the colormap of the current image if there is one. See help(colormaps) for more information.

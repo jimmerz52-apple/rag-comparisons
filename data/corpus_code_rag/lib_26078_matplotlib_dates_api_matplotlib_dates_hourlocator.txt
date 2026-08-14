@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.HourLocator
+
+classmatplotlib.dates.HourLocator(byhour=None, interval=1, tz=None)[source]
+ 
+Bases: matplotlib.dates.RRuleLocator Make ticks on occurrences of each hour. Mark every hour in byhour; byhour can be an int or sequence. Default is to tick every hour: byhour=range(24) interval is the interval between each iteration. For example, if interval=2, mark every second occurrence.

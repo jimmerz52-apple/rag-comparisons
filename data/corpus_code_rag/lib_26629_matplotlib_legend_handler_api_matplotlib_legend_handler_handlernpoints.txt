@@ -1,0 +1,18 @@
+# matplotlib.legend_handler_api#matplotlib.legend_handler.HandlerNpoints
+
+classmatplotlib.legend_handler.HandlerNpoints(marker_pad=0.3, numpoints=None, **kwargs)[source]
+ 
+A legend handler that shows numpoints points in the legend entry.  Parameters 
+ 
+marker_padfloat
+
+
+Padding between points in legend entry.  
+numpointsint
+
+
+Number of points to show in legend entry.  **kwargs
+
+Keyword arguments forwarded to HandlerBase.       get_numpoints(legend)[source]
+
+   get_xdata(legend, xdescent, ydescent, width, height, fontsize)[source]

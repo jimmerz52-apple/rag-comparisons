@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.HeaderSet.add
+
+add(header)  
+Add a new header to the set.

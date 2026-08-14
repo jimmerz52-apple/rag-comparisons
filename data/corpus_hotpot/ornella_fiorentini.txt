@@ -1,0 +1,3 @@
+# Ornella Fiorentini
+
+Ornella Fiorentini is an Italian poet and writer born in Ravenna, Italy, living and working in Ravenna, Italy.

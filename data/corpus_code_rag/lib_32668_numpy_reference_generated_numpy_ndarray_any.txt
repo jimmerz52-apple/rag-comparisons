@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.any
+
+numpy.ndarray.any method   ndarray.any(axis=None, out=None, keepdims=False, *, where=True)
+ 
+Returns True if any of the elements of a evaluate to True. Refer to numpy.any for full documentation.  See also  numpy.any
+
+equivalent function

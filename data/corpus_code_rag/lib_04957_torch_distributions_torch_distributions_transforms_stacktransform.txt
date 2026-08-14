@@ -1,0 +1,7 @@
+# torch.distributions#torch.distributions.transforms.StackTransform
+
+class torch.distributions.transforms.StackTransform(tseq, dim=0, cache_size=0) [source]
+ 
+Transform functor that applies a sequence of transforms tseq component-wise to each submatrix at dim in a way compatible with torch.stack().  Example::
+
+x = torch.stack([torch.range(1, 10), torch.range(1, 10)], dim=1) t = StackTransform([ExpTransform(), identity_transform], dim=1) y = t(x)

@@ -1,0 +1,8 @@
+# torch.distributions#torch.distributions.transforms.ReshapeTransform
+
+class torch.distributions.transforms.ReshapeTransform(in_shape, out_shape, cache_size=0) [source]
+ 
+Unit Jacobian transform to reshape the rightmost part of a tensor. Note that in_shape and out_shape must have the same number of elements, just as for torch.Tensor.reshape().  Parameters 
+ 
+in_shape (torch.Size) – The input event shape. 
+out_shape (torch.Size) – The output event shape.

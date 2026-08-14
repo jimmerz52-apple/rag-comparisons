@@ -1,0 +1,4 @@
+# python.library.logging#logging.Logger.addHandler
+
+addHandler(hdlr)  
+Adds the specified handler hdlr to this logger.

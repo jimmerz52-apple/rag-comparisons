@@ -1,0 +1,6 @@
+# python.library.pathlib#pathlib.PosixPath
+
+class pathlib.PosixPath(*pathsegments)  
+A subclass of Path and PurePosixPath, this class represents concrete non-Windows filesystem paths: >>> PosixPath('/etc')
+PosixPath('/etc')
+ pathsegments is specified similarly to PurePath.

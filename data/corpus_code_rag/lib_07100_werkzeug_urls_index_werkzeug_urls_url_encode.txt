@@ -1,0 +1,8 @@
+# werkzeug.urls.index#werkzeug.urls.URL.encode
+
+encode(charset='utf-8', errors='replace')  
+Encodes the URL to a tuple made out of bytes. The charset is only being used for the path, query and fragment.  Parameters 
+ 
+charset (str) –  
+errors (str) –    Return type 
+werkzeug.urls.BytesURL

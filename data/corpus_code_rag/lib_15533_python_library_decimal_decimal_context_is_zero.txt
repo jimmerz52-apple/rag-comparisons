@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.is_zero
+
+is_zero(x)  
+Returns True if x is a zero; otherwise returns False.

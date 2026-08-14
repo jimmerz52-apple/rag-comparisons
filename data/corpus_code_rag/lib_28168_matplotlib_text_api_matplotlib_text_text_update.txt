@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.update
+
+update(kwargs)[source]
+ 
+Update this artist's properties from the dict props.  Parameters 
+ 
+propsdict

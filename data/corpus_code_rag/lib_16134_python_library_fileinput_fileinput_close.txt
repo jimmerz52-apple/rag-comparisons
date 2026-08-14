@@ -1,0 +1,4 @@
+# python.library.fileinput#fileinput.close
+
+fileinput.close()  
+Close the sequence.

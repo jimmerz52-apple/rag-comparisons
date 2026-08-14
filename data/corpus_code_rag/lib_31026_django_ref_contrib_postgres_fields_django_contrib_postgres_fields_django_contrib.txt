@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.django.contrib.postgres.forms.BaseRangeField.range_type
+
+range_type  
+The psycopg2 range type to use.

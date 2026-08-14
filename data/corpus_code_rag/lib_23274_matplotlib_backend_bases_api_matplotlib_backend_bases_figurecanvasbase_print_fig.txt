@@ -1,0 +1,46 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.FigureCanvasBase.print_figure
+
+print_figure(filename, dpi=None, facecolor=None, edgecolor=None, orientation='portrait', format=None, *, bbox_inches=None, pad_inches=None, bbox_extra_artists=None, backend=None, **kwargs)[source]
+ 
+Render the figure to hardcopy. Set the figure patch face and edge colors. This is useful because some of the GUIs have a gray figure face color background and you'll probably want to override this on hardcopy.  Parameters 
+ 
+filenamestr or path-like or file-like
+
+
+The file where the figure is saved.  
+dpifloat, default: rcParams["savefig.dpi"] (default: 'figure')
+
+
+The dots per inch to save the figure in.  
+facecolorcolor or 'auto', default: rcParams["savefig.facecolor"] (default: 'auto')
+
+
+The facecolor of the figure. If 'auto', use the current figure facecolor.  
+edgecolorcolor or 'auto', default: rcParams["savefig.edgecolor"] (default: 'auto')
+
+
+The edgecolor of the figure. If 'auto', use the current figure edgecolor.  
+orientation{'landscape', 'portrait'}, default: 'portrait'
+
+
+Only currently applies to PostScript printing.  
+formatstr, optional
+
+
+Force a specific file format. If not given, the format is inferred from the filename extension, and if that fails from rcParams["savefig.format"] (default: 'png').  
+bbox_inches'tight' or Bbox, default: rcParams["savefig.bbox"] (default: None)
+
+
+Bounding box in inches: only the given portion of the figure is saved. If 'tight', try to figure out the tight bbox of the figure.  
+pad_inchesfloat, default: rcParams["savefig.pad_inches"] (default: 0.1)
+
+
+Amount of padding around the figure when bbox_inches is 'tight'.  
+bbox_extra_artistslist of Artist, optional
+
+
+A list of extra artists that will be considered when the tight bbox is calculated.  
+backendstr, optional
+
+
+Use a non-default backend to render the file, e.g. to render a png file with the "cairo" backend rather than the default "agg", or a pdf file with the "pgf" backend rather than the default "pdf". Note that the default backend is normally sufficient. See The builtin backends for a list of valid backends for each file format. Custom backends can be referenced as "module://...".

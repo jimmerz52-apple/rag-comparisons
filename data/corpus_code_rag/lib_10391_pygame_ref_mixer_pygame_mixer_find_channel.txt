@@ -1,0 +1,4 @@
+# pygame.ref.mixer#pygame.mixer.find_channel
+
+pygame.mixer.find_channel() 
+ find an unused channel find_channel(force=False) -> Channel  This will find and return an inactive Channel object. If there are no inactive Channels this function will return None. If there are no inactive channels and the force argument is True, this will find the Channel with the longest running Sound and return it. If the mixer has reserved channels from pygame.mixer.set_reserved() then those channels will not be returned here.

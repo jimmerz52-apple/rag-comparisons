@@ -1,0 +1,11 @@
+# python.library.ssl#ssl.cert_time_to_seconds
+
+ssl.cert_time_to_seconds(cert_time)  
+Return the time in seconds since the Epoch, given the cert_time string representing the “notBefore” or “notAfter” date from a certificate in "%b %d %H:%M:%S %Y %Z" strptime format (C locale). Here’s an example: >>> import ssl
+>>> timestamp = ssl.cert_time_to_seconds("Jan  5 09:34:43 2018 GMT")
+>>> timestamp  
+1515144883
+>>> from datetime import datetime
+>>> print(datetime.utcfromtimestamp(timestamp))  
+2018-01-05 09:34:43
+ “notBefore” or “notAfter” dates must use GMT (RFC 5280).  Changed in version 3.5: Interpret the input time as a time in UTC as specified by ‘GMT’ timezone in the input string. Local timezone was used previously. Return an integer (no fractions of a second in the input format)

@@ -1,0 +1,4 @@
+# python.library.ast#ast.PyCF_ONLY_AST
+
+ast.PyCF_ONLY_AST  
+Generates and returns an abstract syntax tree instead of returning a compiled code object.

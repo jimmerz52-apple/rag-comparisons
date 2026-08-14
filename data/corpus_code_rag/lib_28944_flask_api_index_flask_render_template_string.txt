@@ -1,0 +1,8 @@
+# flask.api.index#flask.render_template_string
+
+flask.render_template_string(source, **context)  
+Renders a template from the given template source string with the given context. Template variables will be autoescaped.  Parameters 
+ 
+source (str) – the source code of the template to be rendered 
+context (Any) – the variables that should be available in the context of the template.   Return type 
+str

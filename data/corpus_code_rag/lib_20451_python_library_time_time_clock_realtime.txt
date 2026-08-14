@@ -1,0 +1,4 @@
+# python.library.time#time.CLOCK_REALTIME
+
+time.CLOCK_REALTIME  
+System-wide real-time clock. Setting this clock requires appropriate privileges. Availability: Unix.  New in version 3.3.

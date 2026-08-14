@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.UnparsedEntityDeclHandler
+
+xmlparser.UnparsedEntityDeclHandler(entityName, base, systemId, publicId, notationName)  
+Called for unparsed (NDATA) entity declarations. This is only present for version 1.2 of the Expat library; for more recent versions, use EntityDeclHandler instead. (The underlying function in the Expat library has been declared obsolete.)

@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.quit
+
+quit() 
+ uninitialize the Joystick quit() -> None  Close a Joystick object. After this the pygame event queue will no longer receive events from the device. It is safe to call this more than once.

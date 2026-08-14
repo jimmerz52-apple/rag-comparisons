@@ -1,0 +1,18 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.get_xaxis_text2_transform
+
+get_xaxis_text2_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing secondary x-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in data coordinates and the y-direction is in axis coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.

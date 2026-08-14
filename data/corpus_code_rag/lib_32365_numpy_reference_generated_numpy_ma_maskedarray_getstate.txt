@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__getstate__
+
+numpy.ma.MaskedArray.__getstate__ method   ma.MaskedArray.__getstate__()[source]
+ 
+Return the internal state of the masked array, for pickling purposes.

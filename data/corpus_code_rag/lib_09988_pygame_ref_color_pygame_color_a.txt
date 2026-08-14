@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.a
+
+a 
+ Gets or sets the alpha value of the Color. a -> int  The alpha value of the Color.

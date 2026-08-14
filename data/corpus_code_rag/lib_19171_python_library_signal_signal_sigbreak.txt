@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGBREAK
+
+signal.SIGBREAK  
+Interrupt from keyboard (CTRL + BREAK). Availability: Windows.

@@ -1,0 +1,13 @@
+# matplotlib.backend_managers_api#matplotlib.backend_managers.ToolManager.get_tool_keymap
+
+get_tool_keymap(name)[source]
+ 
+Return the keymap associated with the specified tool.  Parameters 
+ 
+namestr
+
+
+Name of the Tool.    Returns 
+ list of str
+
+List of keys associated with the tool.

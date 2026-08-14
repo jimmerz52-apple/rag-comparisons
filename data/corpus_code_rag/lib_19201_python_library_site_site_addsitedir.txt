@@ -1,0 +1,4 @@
+# python.library.site#site.addsitedir
+
+site.addsitedir(sitedir, known_paths=None)  
+Add a directory to sys.path and process its .pth files. Typically used in sitecustomize or usercustomize (see above).

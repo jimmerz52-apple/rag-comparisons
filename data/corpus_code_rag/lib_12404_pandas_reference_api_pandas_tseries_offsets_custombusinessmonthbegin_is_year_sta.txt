@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.custombusinessmonthbegin.is_year_start
+
+pandas.tseries.offsets.CustomBusinessMonthBegin.is_year_start   CustomBusinessMonthBegin.is_year_start()

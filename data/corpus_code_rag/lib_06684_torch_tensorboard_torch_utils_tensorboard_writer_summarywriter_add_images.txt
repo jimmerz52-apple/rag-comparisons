@@ -1,0 +1,24 @@
+# torch.tensorboard#torch.utils.tensorboard.writer.SummaryWriter.add_images
+
+add_images(tag, img_tensor, global_step=None, walltime=None, dataformats='NCHW') [source]
+ 
+Add batched image data to summary. Note that this requires the pillow package.  Parameters 
+ 
+tag (string) – Data identifier 
+img_tensor (torch.Tensor, numpy.array, or string/blobname) – Image data 
+global_step (int) – Global step value to record 
+walltime (float) – Optional override default walltime (time.time()) seconds after epoch of event 
+dataformats (string) – Image data format specification of the form NCHW, NHWC, CHW, HWC, HW, WH, etc.     Shape:
+
+img_tensor: Default is (N,3,H,W)(N, 3, H, W) . If dataformats is specified, other shape will be accepted. e.g. NCHW or NHWC.   Examples: from torch.utils.tensorboard import SummaryWriter
+import numpy as np
+
+img_batch = np.zeros((16, 3, 100, 100))
+for i in range(16):
+    img_batch[i, 0] = np.arange(0, 10000).reshape(100, 100) / 10000 / 16 * i
+    img_batch[i, 1] = (1 - np.arange(0, 10000).reshape(100, 100) / 10000) / 16 * i
+
+writer = SummaryWriter()
+writer.add_images('my_image_batch', img_batch, 0)
+writer.close()
+ Expected result:

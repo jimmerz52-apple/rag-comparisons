@@ -1,0 +1,10 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.get_constrained_layout_pads
+
+get_constrained_layout_pads(relative=False)[source]
+ 
+Get padding for constrained_layout. Returns a list of w_pad, h_pad in inches and wspace and hspace as fractions of the subplot. See Constrained Layout Guide.  Parameters 
+ 
+relativebool
+
+
+If True, then convert from inches to figure relative.

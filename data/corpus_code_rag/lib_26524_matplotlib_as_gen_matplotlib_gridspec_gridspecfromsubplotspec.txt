@@ -1,0 +1,43 @@
+# matplotlib._as_gen.matplotlib.gridspec.gridspecfromsubplotspec
+
+matplotlib.gridspec.GridSpecFromSubplotSpec   classmatplotlib.gridspec.GridSpecFromSubplotSpec(nrows, ncols, subplot_spec, wspace=None, hspace=None, height_ratios=None, width_ratios=None)[source]
+ 
+Bases: matplotlib.gridspec.GridSpecBase GridSpec whose subplot layout parameters are inherited from the location specified by a given SubplotSpec.  Parameters 
+ 
+nrows, ncolsint
+
+
+Number of rows and number of columns of the grid.  
+subplot_specSubplotSpec
+
+
+Spec from which the layout parameters are inherited.  
+wspace, hspacefloat, optional
+
+
+See GridSpec for more details. If not specified default values (from the figure or rcParams) are used.  
+height_ratiosarray-like of length nrows, optional
+
+
+See GridSpecBase for details.  
+width_ratiosarray-like of length ncols, optional
+
+
+See GridSpecBase for details.       get_subplot_params(figure=None)[source]
+ 
+Return a dictionary of subplot layout parameters. 
+   get_topmost_subplotspec()[source]
+ 
+Return the topmost SubplotSpec instance associated with the subplot. 
+ 
+  Examples using matplotlib.gridspec.GridSpecFromSubplotSpec
+ 
+   Resizing axes with constrained layout   
+
+   Nested Gridspecs   
+
+   Nested GridSpecs   
+
+   Constrained Layout Guide   
+
+   Arranging multiple Axes in a Figure

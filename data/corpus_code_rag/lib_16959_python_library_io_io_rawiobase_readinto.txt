@@ -1,0 +1,4 @@
+# python.library.io#io.RawIOBase.readinto
+
+readinto(b)  
+Read bytes into a pre-allocated, writable bytes-like object b, and return the number of bytes read. For example, b might be a bytearray. If the object is in non-blocking mode and no bytes are available, None is returned.

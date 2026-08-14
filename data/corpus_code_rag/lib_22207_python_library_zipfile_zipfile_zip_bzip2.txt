@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZIP_BZIP2
+
+zipfile.ZIP_BZIP2  
+The numeric constant for the BZIP2 compression method. This requires the bz2 module.  New in version 3.3.

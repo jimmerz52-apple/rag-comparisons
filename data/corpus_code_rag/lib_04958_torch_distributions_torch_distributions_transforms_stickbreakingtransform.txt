@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.StickBreakingTransform
+
+class torch.distributions.transforms.StickBreakingTransform(cache_size=0) [source]
+ 
+Transform from unconstrained space to the simplex of one additional dimension via a stick-breaking process. This transform arises as an iterated sigmoid transform in a stick-breaking construction of the Dirichlet distribution: the first logit is transformed via sigmoid to the first probability and the probability of everything else, and then the process recurses. This is bijective and appropriate for use in HMC; however it mixes coordinates together and is less appropriate for optimization.

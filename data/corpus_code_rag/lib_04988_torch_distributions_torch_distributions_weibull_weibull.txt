@@ -1,0 +1,24 @@
+# torch.distributions#torch.distributions.weibull.Weibull
+
+class torch.distributions.weibull.Weibull(scale, concentration, validate_args=None) [source]
+ 
+Bases: torch.distributions.transformed_distribution.TransformedDistribution Samples from a two-parameter Weibull distribution. Example >>> m = Weibull(torch.tensor([1.0]), torch.tensor([1.0]))
+>>> m.sample()  # sample from a Weibull distribution with scale=1, concentration=1
+tensor([ 0.4784])
+  Parameters 
+ 
+scale (float or Tensor) – Scale parameter of distribution (lambda). 
+concentration (float or Tensor) – Concentration parameter of distribution (k/shape).     
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {'concentration': GreaterThan(lower_bound=0.0), 'scale': GreaterThan(lower_bound=0.0)} 
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+property mean 
+  
+support = GreaterThan(lower_bound=0.0) 
+  
+property variance

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.access_control_allow_methods
+
+access_control_allow_methods  
+Which methods can be used for the cross origin request.

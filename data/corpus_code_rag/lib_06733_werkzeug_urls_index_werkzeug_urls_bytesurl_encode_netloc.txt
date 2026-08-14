@@ -1,0 +1,5 @@
+# werkzeug.urls.index#werkzeug.urls.BytesURL.encode_netloc
+
+encode_netloc()  
+Returns the netloc unchanged as bytes.  Return type 
+bytes

@@ -1,0 +1,8 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.dotproduct#sklearn.gaussian_process.kernels.DotProduct.theta
+
+property theta  
+Returns the (flattened, log-transformed) non-fixed hyperparameters. Note that theta are typically the log-transformed values of the kernel’s hyperparameters as this representation of the search space is more amenable for hyperparameter search, as hyperparameters like length-scales naturally live on a log-scale.  Returns 
+ 
+thetandarray of shape (n_dims,) 
+
+The non-fixed, log-transformed hyperparameters of the kernel

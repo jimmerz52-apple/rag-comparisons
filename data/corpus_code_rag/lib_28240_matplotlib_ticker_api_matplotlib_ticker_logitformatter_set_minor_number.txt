@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogitFormatter.set_minor_number
+
+set_minor_number(minor_number)[source]
+ 
+Set the number of minor ticks to label when some minor ticks are labelled.  Parameters 
+ 
+minor_numberint
+
+
+Number of ticks which are labelled when the number of ticks is below the threshold.

@@ -1,0 +1,4 @@
+# python.library.asynchat#asynchat.async_chat.ac_in_buffer_size
+
+ac_in_buffer_size  
+The asynchronous input buffer size (default 4096).

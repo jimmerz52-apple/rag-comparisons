@@ -1,0 +1,4 @@
+# python.library.asyncio-subprocess#asyncio.asyncio.subprocess.Process.stdout
+
+stdout  
+Standard output stream (StreamReader) or None if the process was created with stdout=None.

@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.ExpatError.offset
+
+ExpatError.offset  
+Character offset into the line where the error occurred. The first column is numbered 0.

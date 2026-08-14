@@ -1,0 +1,12 @@
+# python.library.turtle#turtle.settiltangle
+
+turtle.settiltangle(angle)  
+ Parameters 
+angle – a number   Rotate the turtleshape to point in the direction specified by angle, regardless of its current tilt-angle. Do not change the turtle’s heading (direction of movement). >>> turtle.reset()
+>>> turtle.shape("circle")
+>>> turtle.shapesize(5,2)
+>>> turtle.settiltangle(45)
+>>> turtle.fd(50)
+>>> turtle.settiltangle(-45)
+>>> turtle.fd(50)
+  Deprecated since version 3.1.

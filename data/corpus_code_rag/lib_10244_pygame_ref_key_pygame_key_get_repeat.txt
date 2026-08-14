@@ -1,0 +1,4 @@
+# pygame.ref.key#pygame.key.get_repeat
+
+pygame.key.get_repeat() 
+ see how held keys are repeated get_repeat() -> (delay, interval)  Get the delay and interval keyboard repeat values. Refer to pygame.key.set_repeat() for a description of these values.  New in pygame 1.8.

@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.Transform.forward_shape
+
+forward_shape(shape) [source]
+ 
+Infers the shape of the forward computation, given the input shape. Defaults to preserving shape.

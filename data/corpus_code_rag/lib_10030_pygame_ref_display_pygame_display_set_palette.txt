@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.set_palette
+
+pygame.display.set_palette() 
+ Set the display color palette for indexed displays set_palette(palette=None) -> None  This will change the video display color palette for 8-bit displays. This does not change the palette for the actual display Surface, only the palette that is used to display the Surface. If no palette argument is passed, the system default palette will be restored. The palette is a sequence of RGB triplets.

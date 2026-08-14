@@ -1,0 +1,6 @@
+# torch.data#torch.utils.data.ConcatDataset
+
+class torch.utils.data.ConcatDataset(datasets) [source]
+ 
+Dataset as a concatenation of multiple datasets. This class is useful to assemble different existing datasets.  Parameters 
+datasets (sequence) – List of datasets to be concatenated

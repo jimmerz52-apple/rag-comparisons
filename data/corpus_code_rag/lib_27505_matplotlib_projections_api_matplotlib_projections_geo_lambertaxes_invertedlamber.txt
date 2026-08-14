@@ -1,0 +1,21 @@
+# matplotlib.projections_api#matplotlib.projections.geo.LambertAxes.InvertedLambertTransform
+
+classInvertedLambertTransform(center_longitude, center_latitude, resolution)[source]
+ 
+Bases: matplotlib.projections.geo._GeoTransform Create a new geographical transform. Resolution is the number of steps to interpolate between each input line segment to approximate its path in curved space.   has_inverse=True
+ 
+True if this transform has a corresponding inverse transform. 
+   inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy. 
+   transform_non_affine(xy)[source]
+ 
+Apply only the non-affine part of this transformation. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally equivalent to transform(values). In affine transformations, this is always a no-op.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.

@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIMIT_NPROC
+
+resource.RLIMIT_NPROC  
+The maximum number of processes the current process may create.

@@ -1,0 +1,15 @@
+# python.library.exceptions#SyntaxError
+
+exception SyntaxError  
+Raised when the parser encounters a syntax error. This may occur in an import statement, in a call to the built-in functions exec() or eval(), or when reading the initial script or standard input (also interactively). The str() of the exception instance returns only the error message.  
+filename  
+The name of the file the syntax error occurred in. 
+  
+lineno  
+Which line number in the file the error occurred in. This is 1-indexed: the first line in the file has a lineno of 1. 
+  
+offset  
+The column in the line where the error occurred. This is 1-indexed: the first character in the line has an offset of 1. 
+  
+text  
+The source code text involved in the error.

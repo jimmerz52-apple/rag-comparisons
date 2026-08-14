@@ -1,0 +1,26 @@
+# matplotlib._as_gen.matplotlib.patches.boxstyle#matplotlib.patches.BoxStyle.Round4
+
+classRound4(pad=0.3, rounding_size=None)[source]
+ 
+Bases: matplotlib.patches.BoxStyle._Base A box with rounded edges.  Parameters 
+ 
+padfloat, default: 0.3
+
+
+The amount of padding around the original box.  
+rounding_sizefloat, default: pad/2
+
+
+Rounding of edges.       __call__(x0, y0, width, height, mutation_size, mutation_aspect=<deprecated parameter>)[source]
+ 
+Given the location and size of the box, return the path of the box around it.  Parameters 
+ 
+x0, y0, width, heightfloat
+
+
+Location and size of the box.  
+mutation_sizefloat
+
+
+A reference scale for the mutation.    Returns 
+ Path

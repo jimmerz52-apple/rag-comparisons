@@ -1,0 +1,78 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element
+
+class xml.etree.ElementTree.Element(tag, attrib={}, **extra)  
+Element class. This class defines the Element interface, and provides a reference implementation of this interface. The element name, attribute names, and attribute values can be either bytestrings or Unicode strings. tag is the element name. attrib is an optional dictionary, containing element attributes. extra contains additional attributes, given as keyword arguments.  
+tag  
+A string identifying what kind of data this element represents (the element type, in other words). 
+  
+text  
+tail  
+These attributes can be used to hold additional data associated with the element. Their values are usually strings but may be any application-specific object. If the element is created from an XML file, the text attribute holds either the text between the element’s start tag and its first child or end tag, or None, and the tail attribute holds either the text between the element’s end tag and the next tag, or None. For the XML data <a><b>1<c>2<d/>3</c></b>4</a>
+ the a element has None for both text and tail attributes, the b element has text "1" and tail "4", the c element has text "2" and tail None, and the d element has text None and tail "3". To collect the inner text of an element, see itertext(), for example "".join(element.itertext()). Applications may store arbitrary objects in these attributes. 
+  
+attrib  
+A dictionary containing the element’s attributes. Note that while the attrib value is always a real mutable Python dictionary, an ElementTree implementation may choose to use another internal representation, and create the dictionary only if someone asks for it. To take advantage of such implementations, use the dictionary methods below whenever possible. 
+ The following dictionary-like methods work on the element attributes.  
+clear()  
+Resets an element. This function removes all subelements, clears all attributes, and sets the text and tail attributes to None. 
+  
+get(key, default=None)  
+Gets the element attribute named key. Returns the attribute value, or default if the attribute was not found. 
+  
+items()  
+Returns the element attributes as a sequence of (name, value) pairs. The attributes are returned in an arbitrary order. 
+  
+keys()  
+Returns the elements attribute names as a list. The names are returned in an arbitrary order. 
+  
+set(key, value)  
+Set the attribute key on the element to value. 
+ The following methods work on the element’s children (subelements).  
+append(subelement)  
+Adds the element subelement to the end of this element’s internal list of subelements. Raises TypeError if subelement is not an Element. 
+  
+extend(subelements)  
+Appends subelements from a sequence object with zero or more elements. Raises TypeError if a subelement is not an Element.  New in version 3.2.  
+  
+find(match, namespaces=None)  
+Finds the first subelement matching match. match may be a tag name or a path. Returns an element instance or None. namespaces is an optional mapping from namespace prefix to full name. Pass '' as prefix to move all unprefixed tag names in the expression into the given namespace. 
+  
+findall(match, namespaces=None)  
+Finds all matching subelements, by tag name or path. Returns a list containing all matching elements in document order. namespaces is an optional mapping from namespace prefix to full name. Pass '' as prefix to move all unprefixed tag names in the expression into the given namespace. 
+  
+findtext(match, default=None, namespaces=None)  
+Finds text for the first subelement matching match. match may be a tag name or a path. Returns the text content of the first matching element, or default if no element was found. Note that if the matching element has no text content an empty string is returned. namespaces is an optional mapping from namespace prefix to full name. Pass '' as prefix to move all unprefixed tag names in the expression into the given namespace. 
+  
+insert(index, subelement)  
+Inserts subelement at the given position in this element. Raises TypeError if subelement is not an Element. 
+  
+iter(tag=None)  
+Creates a tree iterator with the current element as the root. The iterator iterates over this element and all elements below it, in document (depth first) order. If tag is not None or '*', only elements whose tag equals tag are returned from the iterator. If the tree structure is modified during iteration, the result is undefined.  New in version 3.2.  
+  
+iterfind(match, namespaces=None)  
+Finds all matching subelements, by tag name or path. Returns an iterable yielding all matching elements in document order. namespaces is an optional mapping from namespace prefix to full name.  New in version 3.2.  
+  
+itertext()  
+Creates a text iterator. The iterator loops over this element and all subelements, in document order, and returns all inner text.  New in version 3.2.  
+  
+makeelement(tag, attrib)  
+Creates a new element object of the same type as this element. Do not call this method, use the SubElement() factory function instead. 
+  
+remove(subelement)  
+Removes subelement from the element. Unlike the find* methods this method compares elements based on the instance identity, not on tag value or contents. 
+ Element objects also support the following sequence type methods for working with subelements: __delitem__(), __getitem__(), __setitem__(), __len__(). Caution: Elements with no subelements will test as False. This behavior will change in future versions. Use specific len(elem) or elem is
+None test instead. element = root.find('foo')
+
+if not element:  # careful!
+    print("element not found, or element has no subelements")
+
+if element is None:
+    print("element not found")
+ Prior to Python 3.8, the serialisation order of the XML attributes of elements was artificially made predictable by sorting the attributes by their name. Based on the now guaranteed ordering of dicts, this arbitrary reordering was removed in Python 3.8 to preserve the order in which attributes were originally parsed or created by user code. In general, user code should try not to depend on a specific ordering of attributes, given that the XML Information Set explicitly excludes the attribute order from conveying information. Code should be prepared to deal with any ordering on input. In cases where deterministic XML output is required, e.g. for cryptographic signing or test data sets, canonical serialisation is available with the canonicalize() function. In cases where canonical output is not applicable but a specific attribute order is still desirable on output, code should aim for creating the attributes directly in the desired order, to avoid perceptual mismatches for readers of the code. In cases where this is difficult to achieve, a recipe like the following can be applied prior to serialisation to enforce an order independently from the Element creation: def reorder_attributes(root):
+    for el in root.iter():
+        attrib = el.attrib
+        if len(attrib) > 1:
+            # adjust attribute order, e.g. by sorting
+            attribs = sorted(attrib.items())
+            attrib.clear()
+            attrib.update(attribs)

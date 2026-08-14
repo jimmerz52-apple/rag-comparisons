@@ -1,0 +1,4 @@
+# python.library.curses#curses.setupterm
+
+curses.setupterm(term=None, fd=-1)  
+Initialize the terminal. term is a string giving the terminal name, or None; if omitted or None, the value of the TERM environment variable will be used. fd is the file descriptor to which any initialization sequences will be sent; if not supplied or -1, the file descriptor for sys.stdout will be used.

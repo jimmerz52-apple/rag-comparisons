@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axisartist#mpl_toolkits.axisartist.axis_artist.AxisArtist.set_axisline_style
+
+set_axisline_style(axisline_style=None, **kwargs)[source]
+ 
+Set the axisline style. The new style is completely defined by the passed attributes. Existing style attributes are forgotten.  Parameters 
+ 
+axisline_stylestr or None
+
+
+The line style, e.g. '->', optionally followed by a comma-separated list of attributes. Alternatively, the attributes can be provided as keywords. If None this returns a string containing the available styles.     Examples The following two commands are equal: >>> set_axisline_style("->,size=1.5") >>> set_axisline_style("->", size=1.5)

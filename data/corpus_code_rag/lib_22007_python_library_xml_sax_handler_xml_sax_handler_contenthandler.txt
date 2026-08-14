@@ -1,0 +1,4 @@
+# python.library.xml.sax.handler#xml.sax.handler.ContentHandler
+
+class xml.sax.handler.ContentHandler  
+This is the main callback interface in SAX, and the one most important to applications. The order of events in this interface mirrors the order of the information in the document.

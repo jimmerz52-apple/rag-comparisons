@@ -1,0 +1,3 @@
+# skimage.api.skimage.transform#skimage.transform.AffineTransform.rotation
+
+property rotation

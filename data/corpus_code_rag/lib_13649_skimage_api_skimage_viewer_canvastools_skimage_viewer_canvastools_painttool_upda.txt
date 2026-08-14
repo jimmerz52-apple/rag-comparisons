@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.canvastools#skimage.viewer.canvastools.PaintTool.update_overlay
+
+update_overlay(x, y) [source]

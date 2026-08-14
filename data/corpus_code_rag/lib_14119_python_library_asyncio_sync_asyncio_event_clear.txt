@@ -1,0 +1,4 @@
+# python.library.asyncio-sync#asyncio.Event.clear
+
+clear()  
+Clear (unset) the event. Tasks awaiting on wait() will now block until the set() method is called again.

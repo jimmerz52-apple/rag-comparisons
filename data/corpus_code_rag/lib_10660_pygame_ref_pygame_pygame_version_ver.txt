@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.version.ver
+
+pygame.version.ver 
+ version number as a string ver = '1.2'  This is the version represented as a string. It can contain a micro release number as well, e.g. '1.5.2'

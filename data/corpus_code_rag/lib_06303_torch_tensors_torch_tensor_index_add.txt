@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.index_add
+
+index_add(tensor1, dim, index, tensor2) → Tensor  
+Out-of-place version of torch.Tensor.index_add_(). tensor1 corresponds to self in torch.Tensor.index_add_().

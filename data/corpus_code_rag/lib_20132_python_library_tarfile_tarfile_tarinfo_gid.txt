@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.gid
+
+TarInfo.gid  
+Group ID of the user who originally stored this member.

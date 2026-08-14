@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.Graph.placeholder
+
+placeholder(name, type_expr=None) [source]
+ 
+Insert a placeholder node into the Graph. A placeholder represents a function input.  Parameters 
+ 
+name (str) – A name for the input value. This corresponds to the name of the positional argument to the function this Graph represents. 
+type_expr (Optional[Any]) – an optional type annotation representing the Python type the output of this node will have. This is needed in some cases for proper code generation (e.g. when the function is used subsequently in TorchScript compilation).     Note The same insertion point and type expression rules apply for this method as Graph.create_node.

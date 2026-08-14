@@ -1,0 +1,6 @@
+# python.library.typing#typing.Dict
+
+class typing.Dict(dict, MutableMapping[KT, VT])  
+A generic version of dict. Useful for annotating return types. To annotate arguments it is preferred to use an abstract collection type such as Mapping. This type can be used as follows: def count_words(text: str) -> Dict[str, int]:
+    ...
+  Deprecated since version 3.9: builtins.dict now supports []. See PEP 585 and Generic Alias Type.

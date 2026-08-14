@@ -1,0 +1,4 @@
+# python.library.locale#locale.LC_MONETARY
+
+locale.LC_MONETARY  
+Locale category for formatting of monetary values. The available options are available from the localeconv() function.

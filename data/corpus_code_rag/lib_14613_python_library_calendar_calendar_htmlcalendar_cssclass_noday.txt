@@ -1,0 +1,4 @@
+# python.library.calendar#calendar.HTMLCalendar.cssclass_noday
+
+cssclass_noday  
+The CSS class for a weekday occurring in the previous or coming month.  New in version 3.7.

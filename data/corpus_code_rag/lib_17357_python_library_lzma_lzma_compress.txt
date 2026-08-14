@@ -1,0 +1,4 @@
+# python.library.lzma#lzma.compress
+
+lzma.compress(data, format=FORMAT_XZ, check=-1, preset=None, filters=None)  
+Compress data (a bytes object), returning the compressed data as a bytes object. See LZMACompressor above for a description of the format, check, preset and filters arguments.

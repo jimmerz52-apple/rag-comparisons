@@ -1,0 +1,5 @@
+# python.library.dialog#tkinter.filedialog.askopenfiles
+
+tkinter.filedialog.askopenfile(mode="r", **options)  
+tkinter.filedialog.askopenfiles(mode="r", **options)  
+The above two functions create an Open dialog and return the opened file object(s) in read-only mode.

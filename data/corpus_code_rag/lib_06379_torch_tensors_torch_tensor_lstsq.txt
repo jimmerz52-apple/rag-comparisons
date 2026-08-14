@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.lstsq
+
+lstsq(A) -> (Tensor, Tensor)  
+See torch.lstsq()

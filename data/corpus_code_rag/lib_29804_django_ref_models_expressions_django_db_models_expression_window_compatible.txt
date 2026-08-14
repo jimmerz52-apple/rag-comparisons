@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.window_compatible
+
+window_compatible  
+Tells Django that this expression can be used as the source expression in Window. Defaults to False.

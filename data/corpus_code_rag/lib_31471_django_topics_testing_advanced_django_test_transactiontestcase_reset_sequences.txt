@@ -1,0 +1,11 @@
+# django.topics.testing.advanced#django.test.TransactionTestCase.reset_sequences
+
+TransactionTestCase.reset_sequences  
+Setting reset_sequences = True on a TransactionTestCase will make sure sequences are always reset before the test run: class TestsThatDependsOnPrimaryKeySequences(TransactionTestCase):
+    reset_sequences = True
+
+    def test_animal_pk(self):
+        lion = Animal.objects.create(name="lion", sound="roar")
+        # lion.pk is guaranteed to always be 1
+        self.assertEqual(lion.pk, 1)
+ Unless you are explicitly testing primary keys sequence numbers, it is recommended that you do not hard code primary key values in tests. Using reset_sequences = True will slow down the test, since the primary key reset is a relatively expensive database operation.

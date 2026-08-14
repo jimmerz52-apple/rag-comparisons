@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.volume
+
+ZipInfo.volume  
+Volume number of file header.

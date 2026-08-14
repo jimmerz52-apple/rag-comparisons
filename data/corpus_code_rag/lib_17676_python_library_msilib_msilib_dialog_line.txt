@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Dialog.line
+
+line(name, x, y, width, height)  
+Add and return a Line control.

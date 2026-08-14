@@ -1,0 +1,19 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.colorbar_factory
+
+matplotlib.colorbar.colorbar_factory(cax, mappable, **kwargs)[source]
+ 
+[Deprecated] Create a colorbar on the given axes for the given mappable.  Note This is a low-level function to turn an existing axes into a colorbar axes. Typically, you'll want to use colorbar instead, which automatically handles creation and placement of a suitable axes as well.   Parameters 
+ 
+caxAxes
+
+
+The Axes to turn into a colorbar.  
+mappableScalarMappable
+
+
+The mappable to be described by the colorbar.  **kwargs
+
+Keyword arguments are passed to the respective colorbar class.    Returns 
+ Colorbar
+
+The created colorbar instance.     Notes  Deprecated since version 3.4.

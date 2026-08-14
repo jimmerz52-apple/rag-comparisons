@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.series.keys
+
+pandas.Series.keys   Series.keys()[source]
+ 
+Return alias for index.  Returns 
+ Index
+
+Index of the Series.

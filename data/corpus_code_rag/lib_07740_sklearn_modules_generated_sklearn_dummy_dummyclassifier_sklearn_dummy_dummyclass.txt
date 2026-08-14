@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.dummy.dummyclassifier#sklearn.dummy.DummyClassifier.score
+
+score(X, y, sample_weight=None) [source]
+ 
+Returns the mean accuracy on the given test data and labels. In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.  Parameters 
+ 
+XNone or array-like of shape (n_samples, n_features) 
+
+Test samples. Passing None as test samples gives the same result as passing real test samples, since DummyClassifier operates independently of the sampled observations.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True labels for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+Mean accuracy of self.predict(X) wrt. y.

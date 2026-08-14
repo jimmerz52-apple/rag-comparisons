@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.animation.animation#matplotlib.animation.Animation.new_saved_frame_seq
+
+new_saved_frame_seq()[source]
+ 
+Return a new sequence of saved/cached frame information.

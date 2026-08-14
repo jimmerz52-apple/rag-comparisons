@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_figheight
+
+get_figheight()[source]
+ 
+Return the figure height in inches.

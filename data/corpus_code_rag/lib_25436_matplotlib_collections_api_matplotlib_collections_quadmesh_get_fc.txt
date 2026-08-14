@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.QuadMesh.get_fc
+
+get_fc()[source]
+ 
+Alias for get_facecolor.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.multinomial
+
+multinomial(num_samples, replacement=False, *, generator=None) → Tensor  
+See torch.multinomial()

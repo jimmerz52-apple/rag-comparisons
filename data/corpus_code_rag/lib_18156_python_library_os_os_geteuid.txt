@@ -1,0 +1,4 @@
+# python.library.os#os.geteuid
+
+os.geteuid()  
+Return the current process’s effective user id. Availability: Unix.

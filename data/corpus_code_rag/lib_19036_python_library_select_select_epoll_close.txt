@@ -1,0 +1,4 @@
+# python.library.select#select.epoll.close
+
+epoll.close()  
+Close the control file descriptor of the epoll object.

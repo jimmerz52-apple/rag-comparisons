@@ -1,0 +1,44 @@
+# matplotlib.widgets_api#matplotlib.widgets.Button
+
+classmatplotlib.widgets.Button(ax, label, image=None, color='0.85', hovercolor='0.95')[source]
+ 
+Bases: matplotlib.widgets.AxesWidget A GUI neutral button. For the button to remain responsive you must keep a reference to it. Call on_clicked to connect to the button.  Attributes 
+ ax
+
+The matplotlib.axes.Axes the button renders into.  label
+
+A matplotlib.text.Text instance.  color
+
+The color of the button when not hovering.  hovercolor
+
+The color of the button when hovering.      Parameters 
+ 
+axAxes
+
+
+The Axes instance the button will be placed into.  
+labelstr
+
+
+The button text.  
+imagearray-like or PIL Image
+
+
+The image to place in the button, if not None. The parameter is directly forwarded to imshow.  
+colorcolor
+
+
+The color of the button when not activated.  
+hovercolorcolor
+
+
+The color of the button when the mouse is over it.       propertycnt[source]
+
+   disconnect(cid)[source]
+ 
+Remove the callback function with connection id cid. 
+   propertyobservers[source]
+
+   on_clicked(func)[source]
+ 
+Connect the callback function func to button click events. Returns a connection id, which can be used to disconnect the callback.

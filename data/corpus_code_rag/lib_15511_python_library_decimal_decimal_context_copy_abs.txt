@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.copy_abs
+
+copy_abs(x)  
+Returns a copy of x with the sign set to 0.

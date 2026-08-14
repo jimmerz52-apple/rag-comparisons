@@ -1,0 +1,10 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransformFrom.__init__
+
+__init__(boxin, **kwargs)[source]
+ 
+ Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.

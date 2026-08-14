@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.matrix_power
+
+matrix_power(n) → Tensor  
+See torch.matrix_power()

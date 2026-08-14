@@ -1,0 +1,4 @@
+# python.library.test#test.support.TestFailed
+
+exception test.support.TestFailed  
+Exception to be raised when a test fails. This is deprecated in favor of unittest-based tests and unittest.TestCase’s assertion methods.

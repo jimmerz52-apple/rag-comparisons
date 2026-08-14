@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.StreamWriter.writelines
+
+writelines(list)  
+Writes the concatenated list of strings to the stream (possibly by reusing the write() method). The standard bytes-to-bytes codecs do not support this method.

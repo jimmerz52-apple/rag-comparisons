@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__imul__
+
+numpy.ndarray.__imul__ method   ndarray.__imul__(value, /)
+ 
+Return self*=value.

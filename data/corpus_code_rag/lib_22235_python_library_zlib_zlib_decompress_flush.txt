@@ -1,0 +1,4 @@
+# python.library.zlib#zlib.Decompress.flush
+
+Decompress.flush([length])  
+All pending input is processed, and a bytes object containing the remaining uncompressed output is returned. After calling flush(), the decompress() method cannot be called again; the only realistic action is to delete the object. The optional parameter length sets the initial size of the output buffer.

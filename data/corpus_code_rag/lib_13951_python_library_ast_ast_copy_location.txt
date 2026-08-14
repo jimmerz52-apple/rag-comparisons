@@ -1,0 +1,4 @@
+# python.library.ast#ast.copy_location
+
+ast.copy_location(new_node, old_node)  
+Copy source location (lineno, col_offset, end_lineno, and end_col_offset) from old_node to new_node if possible, and return new_node.

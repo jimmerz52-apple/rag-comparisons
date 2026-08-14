@@ -1,0 +1,4 @@
+# python.library.types#types.MemberDescriptorType
+
+types.MemberDescriptorType  
+The type of objects defined in extension modules with PyMemberDef, such as datetime.timedelta.days. This type is used as descriptor for simple C data members which use standard conversion functions; it has the same purpose as the property type, but for classes defined in extension modules.  CPython implementation detail: In other implementations of Python, this type may be identical to GetSetDescriptorType.

@@ -1,0 +1,4 @@
+# django.topics.http.sessions#django.contrib.sessions.backends.base.SessionBase.delete_test_cookie
+
+delete_test_cookie()  
+Deletes the test cookie. Use this to clean up after yourself.

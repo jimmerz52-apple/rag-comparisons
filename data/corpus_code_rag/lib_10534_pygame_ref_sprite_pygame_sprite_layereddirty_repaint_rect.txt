@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredDirty.repaint_rect
+
+repaint_rect() 
+ repaints the given area repaint_rect(screen_rect) -> None  screen_rect is in screen coordinates.

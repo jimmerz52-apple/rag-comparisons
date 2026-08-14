@@ -1,0 +1,5 @@
+# torch.nn.functional#torch.nn.functional.margin_ranking_loss
+
+torch.nn.functional.margin_ranking_loss(input1, input2, target, margin=0, size_average=None, reduce=None, reduction='mean') → Tensor [source]
+ 
+See MarginRankingLoss for details.

@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_symbols
+
+get_symbols()  
+Return a list of Symbol instances for names in the table.

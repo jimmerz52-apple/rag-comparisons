@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarFile.getmembers
+
+TarFile.getmembers()  
+Return the members of the archive as a list of TarInfo objects. The list has the same order as the members in the archive.

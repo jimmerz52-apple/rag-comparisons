@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.FileFinder.path
+
+path  
+The path the finder will search in.

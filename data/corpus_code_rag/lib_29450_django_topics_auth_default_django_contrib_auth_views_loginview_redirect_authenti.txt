@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LoginView.redirect_authenticated_user
+
+redirect_authenticated_user  
+A boolean that controls whether or not authenticated users accessing the login page will be redirected as if they had just successfully logged in. Defaults to False.  Warning If you enable redirect_authenticated_user, other websites will be able to determine if their visitors are authenticated on your site by requesting redirect URLs to image files on your website. To avoid this “social media fingerprinting” information leakage, host all images and your favicon on a separate domain. Enabling redirect_authenticated_user can also result in a redirect loop when using the permission_required() decorator unless the raise_exception parameter is used.

@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.RESERVED_MICROSOFT
+
+uuid.RESERVED_MICROSOFT  
+Reserved for Microsoft compatibility.

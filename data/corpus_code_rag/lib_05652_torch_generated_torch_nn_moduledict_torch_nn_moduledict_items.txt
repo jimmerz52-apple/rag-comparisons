@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.moduledict#torch.nn.ModuleDict.items
+
+items() [source]
+ 
+Return an iterable of the ModuleDict key/value pairs.

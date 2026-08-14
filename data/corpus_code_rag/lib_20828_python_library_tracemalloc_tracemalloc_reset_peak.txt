@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.reset_peak
+
+tracemalloc.reset_peak()  
+Set the peak size of memory blocks traced by the tracemalloc module to the current size. Do nothing if the tracemalloc module is not tracing memory allocations. This function only modifies the recorded peak size, and does not modify or clear any traces, unlike clear_traces(). Snapshots taken with take_snapshot() before a call to reset_peak() can be meaningfully compared to snapshots taken after the call. See also get_traced_memory().  New in version 3.9.

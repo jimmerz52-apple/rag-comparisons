@@ -1,0 +1,8 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolCursorPosition
+
+classmatplotlib.backend_tools.ToolCursorPosition(*args, **kwargs)[source]
+ 
+Bases: matplotlib.backend_tools.ToolBase Send message with the current pointer position. This tool runs in the background reporting the position of the cursor.   send_message(event)[source]
+ 
+Call matplotlib.backend_managers.ToolManager.message_event. 
+   set_figure(figure)[source]

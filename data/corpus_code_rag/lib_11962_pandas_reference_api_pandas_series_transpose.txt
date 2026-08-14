@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.series.transpose
+
+pandas.Series.transpose   Series.transpose(*args, **kwargs)[source]
+ 
+Return the transpose, which is by definition self.  Returns 
+ %(klass)s

@@ -1,0 +1,5 @@
+# python.library.unittest#unittest.TestResult.addError
+
+addError(test, err)  
+Called when the test case test raises an unexpected exception. err is a tuple of the form returned by sys.exc_info(): (type, value,
+traceback). The default implementation appends a tuple (test, formatted_err) to the instance’s errors attribute, where formatted_err is a formatted traceback derived from err.

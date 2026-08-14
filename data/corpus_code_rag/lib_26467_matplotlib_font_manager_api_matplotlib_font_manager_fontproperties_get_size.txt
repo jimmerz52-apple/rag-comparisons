@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.FontProperties.get_size
+
+get_size()[source]
+ 
+Return the font size.

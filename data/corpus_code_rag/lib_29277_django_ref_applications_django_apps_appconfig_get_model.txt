@@ -1,0 +1,4 @@
+# django.ref.applications#django.apps.AppConfig.get_model
+
+AppConfig.get_model(model_name, require_ready=True)  
+Returns the Model with the given model_name. model_name is case-insensitive. Raises LookupError if no such model exists in this application. Requires the app registry to be fully populated unless the require_ready argument is set to False. require_ready behaves exactly as in apps.get_model().

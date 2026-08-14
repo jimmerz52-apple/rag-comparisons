@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.forms#django.contrib.postgres.forms.SimpleArrayField.max_length
+
+max_length  
+This is an optional argument which validates that the array does not exceed the stated length.

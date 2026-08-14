@@ -1,0 +1,9 @@
+# torch.nn.quantized#torch.nn.quantized.ELU
+
+class torch.nn.quantized.ELU(scale, zero_point, alpha=1.0) [source]
+ 
+This is the quantized equivalent of ELU.  Parameters 
+ 
+scale – quantization scale of the output tensor 
+zero_point – quantization zero point of the output tensor 
+alpha – the alpha constant

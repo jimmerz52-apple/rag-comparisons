@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_images
+
+matplotlib.axes.Axes.get_images   Axes.get_images()[source]
+ 
+Return a list of AxesImages contained by the Axes.

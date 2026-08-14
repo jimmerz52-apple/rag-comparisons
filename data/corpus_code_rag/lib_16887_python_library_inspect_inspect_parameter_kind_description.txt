@@ -1,0 +1,13 @@
+# python.library.inspect#inspect.Parameter.kind.description
+
+kind.description  
+Describes a enum value of Parameter.kind.  New in version 3.8.  Example: print all descriptions of arguments: >>> def foo(a, b, *, c, d=10):
+...     pass
+
+>>> sig = signature(foo)
+>>> for param in sig.parameters.values():
+...     print(param.kind.description)
+positional or keyword
+positional or keyword
+keyword-only
+keyword-only

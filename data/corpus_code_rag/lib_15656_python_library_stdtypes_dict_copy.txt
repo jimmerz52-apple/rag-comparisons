@@ -1,0 +1,4 @@
+# python.library.stdtypes#dict.copy
+
+copy()  
+Return a shallow copy of the dictionary.

@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_floatlist
+
+matplotlib.rcsetup.validate_floatlist(s)[source]
+ 
+return a list of floats

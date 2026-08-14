@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector2.normalize
+
+normalize() 
+ returns a vector with the same direction but length 1. normalize() -> Vector2  Returns a new vector that has length equal to 1 and the same direction as self.

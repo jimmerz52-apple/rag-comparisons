@@ -1,0 +1,10 @@
+# python.library.ast#ast.Set
+
+class ast.Set(elts)  
+A set. elts holds a list of nodes representing the set’s elements. >>> print(ast.dump(ast.parse('{1, 2, 3}', mode='eval'), indent=4))
+Expression(
+    body=Set(
+        elts=[
+            Constant(value=1),
+            Constant(value=2),
+            Constant(value=3)]))

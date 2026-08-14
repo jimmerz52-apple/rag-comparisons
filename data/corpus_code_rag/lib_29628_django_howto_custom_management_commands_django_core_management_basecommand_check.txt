@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.check
+
+BaseCommand.check(app_configs=None, tags=None, display_num_errors=False)  
+Uses the system check framework to inspect the entire Django project for potential problems. Serious problems are raised as a CommandError; warnings are output to stderr; minor notifications are output to stdout. If app_configs and tags are both None, all system checks are performed. tags can be a list of check tags, like compatibility or models.

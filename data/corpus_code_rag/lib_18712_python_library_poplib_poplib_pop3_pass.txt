@@ -1,0 +1,4 @@
+# python.library.poplib#poplib.POP3.pass_
+
+POP3.pass_(password)  
+Send password, response includes message count and mailbox size. Note: the mailbox on the server is locked until quit() is called.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.arrow#matplotlib.patches.Arrow.get_path
+
+get_path()[source]
+ 
+Return the path of this patch.

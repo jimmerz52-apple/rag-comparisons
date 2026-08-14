@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.lastweekofmonth.apply_index
+
+pandas.tseries.offsets.LastWeekOfMonth.apply_index   LastWeekOfMonth.apply_index(other)

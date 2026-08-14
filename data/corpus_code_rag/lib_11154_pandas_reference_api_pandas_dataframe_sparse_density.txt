@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.dataframe.sparse.density
+
+pandas.DataFrame.sparse.density   DataFrame.sparse.density
+ 
+Ratio of non-sparse points to total (dense) data points.

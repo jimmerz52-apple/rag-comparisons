@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.get_language_from_request
+
+get_language_from_request(request, check_path=False)  
+Analyzes the request to find what language the user wants the system to show. Only languages listed in settings.LANGUAGES are taken into account. If the user requests a sublanguage where we have a main language, we send out the main language. If check_path is True, the function first checks the requested URL for whether its path begins with a language code listed in the LANGUAGES setting.

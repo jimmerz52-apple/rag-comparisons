@@ -1,0 +1,4 @@
+# flask.api.index#flask.Blueprint.template_folder
+
+template_folder  
+The path to the templates folder, relative to root_path, to add to the template loader. None if templates should not be added.

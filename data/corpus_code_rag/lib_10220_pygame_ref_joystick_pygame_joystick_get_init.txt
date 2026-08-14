@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.get_init
+
+pygame.joystick.get_init() 
+ Returns True if the joystick module is initialized. get_init() -> bool  Test if the pygame.joystick.init() function has been called.

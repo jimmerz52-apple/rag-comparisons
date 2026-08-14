@@ -1,0 +1,4 @@
+# python.library.socket#socket.AF_LINK
+
+socket.AF_LINK  
+Availability: BSD, OSX.  New in version 3.4.

@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setnframes
+
+aifc.setnframes(nframes)  
+Specify the number of frames that are to be written to the audio file. If this parameter is not set, or not set correctly, the file needs to support seeking.

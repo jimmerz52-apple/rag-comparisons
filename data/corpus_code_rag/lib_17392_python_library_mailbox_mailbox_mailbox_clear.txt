@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.clear
+
+clear()  
+Delete all messages from the mailbox.

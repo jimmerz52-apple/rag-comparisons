@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.abc.SourceLoader.path_mtime
+
+path_mtime(path)  
+Optional abstract method which returns the modification time for the specified path.  Deprecated since version 3.3: This method is deprecated in favour of path_stats(). You don’t have to implement it, but it is still available for compatibility purposes. Raise OSError if the path cannot be handled.   Changed in version 3.4: Raise OSError instead of NotImplementedError.

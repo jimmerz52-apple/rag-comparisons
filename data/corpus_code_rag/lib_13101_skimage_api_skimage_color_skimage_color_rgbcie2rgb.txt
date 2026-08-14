@@ -1,0 +1,22 @@
+# skimage.api.skimage.color#skimage.color.rgbcie2rgb
+
+skimage.color.rgbcie2rgb(rgbcie) [source]
+ 
+RGB CIE to RGB color space conversion.  Parameters 
+ 
+rgbcie(…, 3) array_like 
+
+The image in RGB CIE format. Final dimension denotes channels.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in RGB format. Same dimensions as input.    Raises 
+ ValueError
+
+If rgbcie is not at least 2-D with shape (…, 3).     References  
+1  
+https://en.wikipedia.org/wiki/CIE_1931_color_space   Examples >>> from skimage import data
+>>> from skimage.color import rgb2rgbcie, rgbcie2rgb
+>>> img = data.astronaut()
+>>> img_rgbcie = rgb2rgbcie(img)
+>>> img_rgb = rgbcie2rgb(img_rgbcie)

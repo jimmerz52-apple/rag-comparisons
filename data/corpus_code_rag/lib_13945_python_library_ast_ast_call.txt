@@ -1,0 +1,20 @@
+# python.library.ast#ast.Call
+
+class ast.Call(func, args, keywords, starargs, kwargs)  
+A function call. func is the function, which will often be a Name or Attribute object. Of the arguments:  
+args holds a list of the arguments passed by position. 
+keywords holds a list of keyword objects representing arguments passed by keyword.  When creating a Call node, args and keywords are required, but they can be empty lists. starargs and kwargs are optional. >>> print(ast.dump(ast.parse('func(a, b=c, *d, **e)', mode='eval'), indent=4))
+Expression(
+    body=Call(
+        func=Name(id='func', ctx=Load()),
+        args=[
+            Name(id='a', ctx=Load()),
+            Starred(
+                value=Name(id='d', ctx=Load()),
+                ctx=Load())],
+        keywords=[
+            keyword(
+                arg='b',
+                value=Name(id='c', ctx=Load())),
+            keyword(
+                value=Name(id='e', ctx=Load()))]))

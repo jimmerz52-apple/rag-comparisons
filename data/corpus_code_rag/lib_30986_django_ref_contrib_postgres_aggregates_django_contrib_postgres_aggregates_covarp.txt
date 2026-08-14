@@ -1,0 +1,6 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.CovarPop
+
+class CovarPop(y, x, sample=False, filter=None, default=None)  
+Returns the population covariance as a float, or default if there aren’t any matching rows. Has one optional argument:  
+sample  
+By default CovarPop returns the general population covariance. However, if sample=True, the return value will be the sample population covariance.

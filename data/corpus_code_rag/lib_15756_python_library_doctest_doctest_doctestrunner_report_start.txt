@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTestRunner.report_start
+
+report_start(out, test, example)  
+Report that the test runner is about to process the given example. This method is provided to allow subclasses of DocTestRunner to customize their output; it should not be called directly. example is the example about to be processed. test is the test containing example. out is the output function that was passed to DocTestRunner.run().

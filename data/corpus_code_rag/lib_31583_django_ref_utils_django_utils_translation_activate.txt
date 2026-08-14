@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.activate
+
+activate(language)  
+Fetches the translation object for a given language and activates it as the current translation object for the current thread.

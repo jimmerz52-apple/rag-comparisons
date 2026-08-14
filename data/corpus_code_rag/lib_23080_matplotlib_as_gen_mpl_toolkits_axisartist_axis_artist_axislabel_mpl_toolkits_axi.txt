@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axislabel#mpl_toolkits.axisartist.axis_artist.AxisLabel.get_pad
+
+get_pad()[source]
+ 
+Return the internal pad in points. See set_pad for more details.

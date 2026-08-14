@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.transformer#torch.nn.Transformer.generate_square_subsequent_mask
+
+generate_square_subsequent_mask(sz) [source]
+ 
+Generate a square mask for the sequence. The masked positions are filled with float(‘-inf’). Unmasked positions are filled with float(0.0).

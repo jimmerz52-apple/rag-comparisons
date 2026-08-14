@@ -1,0 +1,5 @@
+# django.ref.models.database-functions#django.db.models.functions.TruncSecond
+
+class TruncSecond(expression, output_field=None, tzinfo=None, is_dst=None, **extra)  
+ 
+kind = 'second'

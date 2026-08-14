@@ -1,0 +1,585 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes
+
+classmatplotlib.projections.polar.PolarAxes(*args, theta_offset=0, theta_direction=1, rlabel_position=22.5, **kwargs)[source]
+ 
+Bases: matplotlib.axes._axes.Axes A polar graph projection, where the input dimensions are theta, r. Theta starts pointing east and goes anti-clockwise. Build an Axes in a figure.  Parameters 
+ 
+figFigure
+
+
+The Axes is built in the Figure fig.  
+rect[left, bottom, width, height]
+
+
+The Axes is built in the rectangle rect. rect is in Figure coordinates.  
+sharex, shareyAxes, optional
+
+
+The x or y axis is shared with the x or y axis in the input Axes.  
+frameonbool, default: True
+
+
+Whether the Axes frame is visible.  
+box_aspectfloat, optional
+
+
+Set a fixed aspect for the Axes box, i.e. the ratio of height to width. See set_box_aspect for details.  **kwargs
+
+Other optional keyword arguments:   
+Property Description   
+adjustable {'box', 'datalim'}  
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+anchor (float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}  
+animated bool  
+aspect {'auto', 'equal'} or float  
+autoscale_on bool  
+autoscalex_on bool  
+autoscaley_on bool  
+axes_locator Callable[[Axes, Renderer], Bbox]  
+axisbelow bool or 'line'  
+box_aspect float or None  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+facecolor or fc color  
+figure Figure  
+frame_on bool  
+gid str  
+in_layout bool  
+label object  
+navigate bool  
+navigate_mode unknown  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+position [left, bottom, width, height] or Bbox  
+prop_cycle unknown  
+rasterization_zorder float or None  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+title str  
+transform Transform  
+url str  
+visible bool  
+xbound unknown  
+xlabel str  
+xlim (bottom: float, top: float)  
+xmargin float greater than -0.5  
+xscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+xticklabels unknown  
+xticks unknown  
+ybound unknown  
+ylabel str  
+ylim (bottom: float, top: float)  
+ymargin float greater than -0.5  
+yscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+yticklabels unknown  
+yticks unknown  
+zorder float      Returns 
+ Axes
+
+The new Axes object.       classInvertedPolarTransform(axis=None, use_rmin=True, _apply_theta_transforms=True)[source]
+ 
+Bases: matplotlib.transforms.Transform The inverse of the polar transform, mapping Cartesian coordinate space x and y back to theta and r.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       has_inverse=True
+ 
+True if this transform has a corresponding inverse transform. 
+   input_dims=2
+ 
+The number of input dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy. 
+   output_dims=2
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   transform_non_affine(xy)[source]
+ 
+Apply only the non-affine part of this transformation. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally equivalent to transform(values). In affine transformations, this is always a no-op.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+ 
+   classPolarAffine(scale_transform, limits)[source]
+ 
+Bases: matplotlib.transforms.Affine2DBase The affine part of the polar projection. Scales the output so that maximum radius rests on the edge of the axes circle. limits is the view limit of the data. The only part of its bounds that is used is the y limits (for the radius limits). The theta range is handled by the non-affine transform.   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform. 
+ 
+   classPolarTransform(axis=None, use_rmin=True, _apply_theta_transforms=True)[source]
+ 
+Bases: matplotlib.transforms.Transform The base polar transform. This handles projection theta and r into Cartesian coordinate space x and y, but does not perform the ultimate affine transformation into the correct position.  Parameters 
+ 
+shorthand_namestr
+
+
+A string representing the "name" of the transform. The name carries no significance other than to improve the readability of str(transform) when DEBUG=True.       has_inverse=True
+ 
+True if this transform has a corresponding inverse transform. 
+   input_dims=2
+ 
+The number of input dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy. 
+   output_dims=2
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass. 
+   transform_non_affine(tr)[source]
+ 
+Apply only the non-affine part of this transformation. transform(values) is always equivalent to transform_affine(transform_non_affine(values)). In non-affine transformations, this is generally equivalent to transform(values). In affine transformations, this is always a no-op.  Parameters 
+ 
+valuesarray
+
+
+The input values as NumPy array of length input_dims or shape (N x input_dims).    Returns 
+ array
+
+The output values as NumPy array of length input_dims or shape (N x output_dims), depending on the input.     
+   transform_path_non_affine(path)[source]
+ 
+Apply the non-affine part of this transform to Path path, returning a new Path. transform_path(path) is equivalent to transform_path_affine(transform_path_non_affine(values)). 
+ 
+   classRadialLocator(base, axes=None)[source]
+ 
+Bases: matplotlib.ticker.Locator Used to locate radius ticks. Ensures that all ticks are strictly positive. For all other tasks, it delegates to the base Locator (which may be different depending on the scale of the r-axis).   nonsingular(vmin, vmax)[source]
+ 
+Adjust a range as needed to avoid singularities. This method gets called during autoscaling, with (v0, v1) set to the data limits on the axes if the axes contains any data, or (-inf, +inf) if not.  If v0 == v1 (possibly up to some floating point slop), this method returns an expanded interval around this value. If (v0, v1) == (-inf, +inf), this method returns appropriate default view limits. Otherwise, (v0, v1) is returned without modification.  
+   set_axis(axis)[source]
+
+   view_limits(vmin, vmax)[source]
+ 
+Select a scale for the range from vmin to vmax. Subclasses should override this method to change locator behaviour. 
+ 
+   classThetaFormatter[source]
+ 
+Bases: matplotlib.ticker.Formatter Used to format the theta tick labels. Converts the native unit of radians into degrees and adds a degree symbol. 
+   classThetaLocator(base)[source]
+ 
+Bases: matplotlib.ticker.Locator Used to locate theta ticks. This will work the same as the base locator except in the case that the view spans the entire circle. In such cases, the previously used default locations of every 45 degrees are returned.   refresh()[source]
+
+   set_axis(axis)[source]
+
+   view_limits(vmin, vmax)[source]
+ 
+Select a scale for the range from vmin to vmax. Subclasses should override this method to change locator behaviour. 
+ 
+   can_pan()[source]
+ 
+Return whether this axes supports the pan/zoom button functionality. For polar axes, this is slightly misleading. Both panning and zooming are performed by the same button. Panning is performed in azimuth while zooming is done along the radial. 
+   can_zoom()[source]
+ 
+Return whether this axes supports the zoom box button functionality. Polar axes do not support zoom boxes. 
+   cla()[source]
+ 
+Clear the Axes. 
+   drag_pan(button, key, x, y)[source]
+ 
+Called when the mouse moves during a pan operation.  Parameters 
+ 
+buttonMouseButton
+
+
+The pressed mouse button.  
+keystr or None
+
+
+The pressed key, if any.  
+x, yfloat
+
+
+The mouse coordinates in display coords.     Notes This is intended to be overridden by new projection types. 
+   draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   end_pan()[source]
+ 
+Called when a pan operation completes (when the mouse button is up.) Notes This is intended to be overridden by new projection types. 
+   format_coord(theta, r)[source]
+ 
+Return a format string formatting the x, y coordinates. 
+   get_data_ratio()[source]
+ 
+Return the aspect ratio of the data itself. For a polar plot, this should always be 1.0 
+   get_rlabel_position()[source]
+ 
+ Returns 
+ float
+
+The theta position of the radius labels in degrees.     
+   get_rmax()[source]
+ 
+ Returns 
+ float
+
+Outer radial limit.     
+   get_rmin()[source]
+ 
+ Returns 
+ float
+
+The inner radial limit.     
+   get_rorigin()[source]
+ 
+ Returns 
+ float
+   
+   get_rsign()[source]
+
+   get_theta_direction()[source]
+ 
+Get the direction in which theta increases.  -1:
+
+Theta increases in the clockwise direction  1:
+
+Theta increases in the counterclockwise direction   
+   get_theta_offset()[source]
+ 
+Get the offset for the location of 0 in radians. 
+   get_thetamax()[source]
+ 
+Return the maximum theta limit in degrees. 
+   get_thetamin()[source]
+ 
+Get the minimum theta limit in degrees. 
+   get_xaxis_text1_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing x-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in data coordinates and the y-direction is in axis coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_xaxis_text2_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing secondary x-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in data coordinates and the y-direction is in axis coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_xaxis_transform(which='grid')[source]
+ 
+Get the transformation used for drawing x-axis labels, ticks and gridlines. The x-direction is in data coordinates and the y-direction is in axis coordinates.  Note This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.  
+   get_yaxis_text1_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing y-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in axis coordinates and the y-direction is in data coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_yaxis_text2_transform(pad)[source]
+ 
+ Returns 
+ 
+transformTransform
+
+
+The transform used for drawing secondart y-axis labels, which will add pad_points of padding (in points) between the axis and the label. The x-direction is in axis coordinates and the y-direction is in data coordinates  
+valign{'center', 'top', 'bottom', 'baseline', 'center_baseline'}
+
+
+The text vertical alignment.  
+halign{'center', 'left', 'right'}
+
+
+The text horizontal alignment.     Notes This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations. 
+   get_yaxis_transform(which='grid')[source]
+ 
+Get the transformation used for drawing y-axis labels, ticks and gridlines. The x-direction is in axis coordinates and the y-direction is in data coordinates.  Note This transformation is primarily used by the Axis class, and is meant to be overridden by new kinds of projections that may need to place axis elements in different locations.  
+   name='polar'
+
+   set(*, adjustable=<UNSET>, agg_filter=<UNSET>, alpha=<UNSET>, anchor=<UNSET>, animated=<UNSET>, aspect=<UNSET>, autoscale_on=<UNSET>, autoscalex_on=<UNSET>, autoscaley_on=<UNSET>, axes_locator=<UNSET>, axisbelow=<UNSET>, box_aspect=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, facecolor=<UNSET>, frame_on=<UNSET>, gid=<UNSET>, in_layout=<UNSET>, label=<UNSET>, navigate=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, position=<UNSET>, prop_cycle=<UNSET>, rasterization_zorder=<UNSET>, rasterized=<UNSET>, rgrids=<UNSET>, rlabel_position=<UNSET>, rlim=<UNSET>, rmax=<UNSET>, rmin=<UNSET>, rorigin=<UNSET>, rscale=<UNSET>, rticks=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, theta_direction=<UNSET>, theta_offset=<UNSET>, theta_zero_location=<UNSET>, thetagrids=<UNSET>, thetalim=<UNSET>, thetamax=<UNSET>, thetamin=<UNSET>, title=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, xbound=<UNSET>, xlabel=<UNSET>, xlim=<UNSET>, xmargin=<UNSET>, xscale=<UNSET>, xticklabels=<UNSET>, xticks=<UNSET>, ybound=<UNSET>, ylabel=<UNSET>, ylim=<UNSET>, ymargin=<UNSET>, yscale=<UNSET>, yticklabels=<UNSET>, yticks=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+adjustable {'box', 'datalim'}  
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+anchor (float, float) or {'C', 'SW', 'S', 'SE', 'E', 'NE', ...}  
+animated bool  
+aspect {'auto', 'equal'} or float  
+autoscale_on bool  
+autoscalex_on bool  
+autoscaley_on bool  
+axes_locator Callable[[Axes, Renderer], Bbox]  
+axisbelow bool or 'line'  
+box_aspect float or None  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+facecolor or fc color  
+figure Figure  
+frame_on bool  
+gid str  
+in_layout bool  
+label object  
+navigate bool  
+navigate_mode unknown  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+position [left, bottom, width, height] or Bbox  
+prop_cycle unknown  
+rasterization_zorder float or None  
+rasterized bool  
+rgrids tuple with floats  
+rlabel_position number  
+rlim unknown  
+rmax float  
+rmin float  
+rorigin float  
+rscale unknown  
+rticks unknown  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+theta_direction unknown  
+theta_offset unknown  
+theta_zero_location str  
+thetagrids tuple with floats, degrees  
+thetalim unknown  
+thetamax unknown  
+thetamin unknown  
+title str  
+transform Transform  
+url str  
+visible bool  
+xbound unknown  
+xlabel str  
+xlim (bottom: float, top: float)  
+xmargin float greater than -0.5  
+xscale {"linear", "log", "symlog", "logit", ...} or ScaleBase  
+xticklabels unknown  
+xticks unknown  
+ybound unknown  
+ylabel str  
+ylim float, optional  
+ymargin float greater than -0.5  
+yscale unknown  
+yticklabels unknown  
+yticks unknown  
+zorder float   
+   set_rgrids(radii, labels=None, angle=None, fmt=None, **kwargs)[source]
+ 
+Set the radial gridlines on a polar plot.  Parameters 
+ 
+radiituple with floats
+
+
+The radii for the radial gridlines  
+labelstuple with strings or None
+
+
+The labels to use at each radial gridline. The matplotlib.ticker.ScalarFormatter will be used if None.  
+anglefloat
+
+
+The angular position of the radius labels in degrees.  
+fmtstr or None
+
+
+Format string used in matplotlib.ticker.FormatStrFormatter. For example '%f'.    Returns 
+ 
+lineslist of lines.Line2D
+
+
+The radial gridlines.  
+labelslist of text.Text
+
+
+The tick labels.    Other Parameters 
+ **kwargs
+
+kwargs are optional Text properties for the labels.      See also  PolarAxes.set_thetagrids
+Axis.get_gridlines
+Axis.get_ticklabels
+  
+   set_rlabel_position(value)[source]
+ 
+Update the theta position of the radius labels.  Parameters 
+ 
+valuenumber
+
+
+The angular position of the radius labels in degrees.     
+   set_rlim(bottom=None, top=None, emit=True, auto=False, **kwargs)[source]
+ 
+See set_ylim. 
+   set_rmax(rmax)[source]
+ 
+Set the outer radial limit.  Parameters 
+ 
+rmaxfloat
+
+   
+   set_rmin(rmin)[source]
+ 
+Set the inner radial limit.  Parameters 
+ 
+rminfloat
+
+   
+   set_rorigin(rorigin)[source]
+ 
+Update the radial origin.  Parameters 
+ 
+roriginfloat
+
+   
+   set_rscale(*args, **kwargs)[source]
+
+   set_rticks(*args, **kwargs)[source]
+
+   set_theta_direction(direction)[source]
+ 
+Set the direction in which theta increases.  clockwise, -1:
+
+Theta increases in the clockwise direction  counterclockwise, anticlockwise, 1:
+
+Theta increases in the counterclockwise direction   
+   set_theta_offset(offset)[source]
+ 
+Set the offset for the location of 0 in radians. 
+   set_theta_zero_location(loc, offset=0.0)[source]
+ 
+Set the location of theta's zero. This simply calls set_theta_offset with the correct value in radians.  Parameters 
+ 
+locstr
+
+
+May be one of "N", "NW", "W", "SW", "S", "SE", "E", or "NE".  
+offsetfloat, default: 0
+
+
+An offset in degrees to apply from the specified loc. Note: this offset is always applied counter-clockwise regardless of the direction setting.     
+   set_thetagrids(angles, labels=None, fmt=None, **kwargs)[source]
+ 
+Set the theta gridlines in a polar plot.  Parameters 
+ 
+anglestuple with floats, degrees
+
+
+The angles of the theta gridlines.  
+labelstuple with strings or None
+
+
+The labels to use at each theta gridline. The projections.polar.ThetaFormatter will be used if None.  
+fmtstr or None
+
+
+Format string used in matplotlib.ticker.FormatStrFormatter. For example '%f'. Note that the angle that is used is in radians.    Returns 
+ 
+lineslist of lines.Line2D
+
+
+The theta gridlines.  
+labelslist of text.Text
+
+
+The tick labels.    Other Parameters 
+ **kwargs
+
+kwargs are optional Text properties for the labels.      See also  PolarAxes.set_rgrids
+Axis.get_gridlines
+Axis.get_ticklabels
+  
+   set_thetalim(*args, **kwargs)[source]
+ 
+Set the minimum and maximum theta values. Can take the following signatures:  
+set_thetalim(minval, maxval): Set the limits in radians. 
+set_thetalim(thetamin=minval, thetamax=maxval): Set the limits in degrees.  where minval and maxval are the minimum and maximum limits. Values are wrapped in to the range \([0, 2\pi]\) (in radians), so for example it is possible to do set_thetalim(-np.pi / 2, np.pi / 2) to have an axes symmetric around 0. A ValueError is raised if the absolute angle difference is larger than a full circle. 
+   set_thetamax(thetamax)[source]
+ 
+Set the maximum theta limit in degrees. 
+   set_thetamin(thetamin)[source]
+ 
+Set the minimum theta limit in degrees. 
+   set_ylim(bottom=None, top=None, emit=True, auto=False, *, ymin=None, ymax=None)[source]
+ 
+Set the data limits for the radial axis.  Parameters 
+ 
+bottomfloat, optional
+
+
+The bottom limit (default: None, which leaves the bottom limit unchanged). The bottom and top ylims may be passed as the tuple (bottom, top) as the first positional argument (or as the bottom keyword argument).  
+topfloat, optional
+
+
+The top limit (default: None, which leaves the top limit unchanged).  
+emitbool, default: True
+
+
+Whether to notify observers of limit change.  
+autobool or None, default: False
+
+
+Whether to turn on autoscaling of the y-axis. True turns on, False turns off, None leaves unchanged.  
+ymin, ymaxfloat, optional
+
+
+These arguments are deprecated and will be removed in a future version. They are equivalent to bottom and top respectively, and it is an error to pass both ymin and bottom or ymax and top.    Returns 
+ 
+bottom, top(float, float)
+
+
+The new y-axis limits in data coordinates.     
+   set_yscale(*args, **kwargs)[source]
+ 
+Set the y-axis scale.  Parameters 
+ 
+value{"linear", "log", "symlog", "logit", ...} or ScaleBase
+
+
+The axis scale type to apply.  **kwargs
+
+Different keyword arguments are accepted, depending on the scale. See the respective class keyword arguments:  matplotlib.scale.LinearScale matplotlib.scale.LogScale matplotlib.scale.SymmetricalLogScale matplotlib.scale.LogitScale matplotlib.scale.FuncScale      Notes By default, Matplotlib supports the above mentioned scales. Additionally, custom scales may be registered using matplotlib.scale.register_scale. These scales can then also be used here. 
+   start_pan(x, y, button)[source]
+ 
+Called when a pan operation has started.  Parameters 
+ 
+x, yfloat
+
+
+The mouse coordinates in display coords.  
+buttonMouseButton
+
+
+The pressed mouse button.     Notes This is intended to be overridden by new projection types.

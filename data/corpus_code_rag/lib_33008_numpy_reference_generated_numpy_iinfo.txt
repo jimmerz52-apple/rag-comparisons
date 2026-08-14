@@ -1,0 +1,40 @@
+# numpy.reference.generated.numpy.iinfo
+
+numpy.iinfo   class numpy.iinfo(type)[source]
+ 
+Machine limits for integer types.  Parameters 
+ 
+int_typeinteger type, dtype, or instance
+
+
+The kind of integer data type to get information about.      See also  finfo
+
+The equivalent for floating point data types.    Examples With types: >>> ii16 = np.iinfo(np.int16)
+>>> ii16.min
+-32768
+>>> ii16.max
+32767
+>>> ii32 = np.iinfo(np.int32)
+>>> ii32.min
+-2147483648
+>>> ii32.max
+2147483647
+ With instances: >>> ii32 = np.iinfo(np.int32(10))
+>>> ii32.min
+-2147483648
+>>> ii32.max
+2147483647
+  Attributes 
+ 
+bitsint
+
+
+The number of bits occupied by the type.  
+minint
+
+
+Minimum value of given dtype.  
+maxint
+
+
+Maximum value of given dtype.

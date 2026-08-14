@@ -1,0 +1,4 @@
+# python.library.enum#enum.IntEnum
+
+class enum.IntEnum  
+Base class for creating enumerated constants that are also subclasses of int.

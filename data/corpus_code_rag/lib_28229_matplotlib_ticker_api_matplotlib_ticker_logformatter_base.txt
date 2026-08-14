@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogFormatter.base
+
+base(base)[source]
+ 
+Change the base for labeling.  Warning Should always match the base used for LogLocator

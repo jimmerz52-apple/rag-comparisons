@@ -1,0 +1,4 @@
+# python.library.email.policy#email.policy.Policy.handle_defect
+
+handle_defect(obj, defect)  
+Handle a defect found on obj. When the email package calls this method, defect will always be a subclass of Defect. The default implementation checks the raise_on_defect flag. If it is True, defect is raised as an exception. If it is False (the default), obj and defect are passed to register_defect().

@@ -1,0 +1,16 @@
+# matplotlib.category_api#matplotlib.category.StrCategoryConverter.default_units
+
+staticdefault_units(data, axis)[source]
+ 
+Set and update the Axis units.  Parameters 
+ 
+datastr or iterable of str
+
+
+axisAxis
+
+
+axis on which the data is plotted    Returns 
+ UnitData
+
+object storing string to integer mapping

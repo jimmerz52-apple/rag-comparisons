@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.read_byte
+
+read_byte()  
+Returns a byte at the current file position as an integer, and advances the file position by 1.

@@ -1,0 +1,21 @@
+# django.ref.contrib.admin.index#django.contrib.admin.StackedInline
+
+class StackedInline  
+The admin interface has the ability to edit models on the same page as a parent model. These are called inlines. Suppose you have these two models: from django.db import models
+
+class Author(models.Model):
+   name = models.CharField(max_length=100)
+
+class Book(models.Model):
+   author = models.ForeignKey(Author, on_delete=models.CASCADE)
+   title = models.CharField(max_length=100)
+ You can edit the books authored by an author on the author page. You add inlines to a model by specifying them in a ModelAdmin.inlines: from django.contrib import admin
+
+class BookInline(admin.TabularInline):
+    model = Book
+
+class AuthorAdmin(admin.ModelAdmin):
+    inlines = [
+        BookInline,
+    ]
+ Django provides two subclasses of InlineModelAdmin and they are:  TabularInline StackedInline  The difference between these two is merely the template used to render them.

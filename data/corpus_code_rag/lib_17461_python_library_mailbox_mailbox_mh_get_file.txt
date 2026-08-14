@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.MH.get_file
+
+get_file(key)  
+Depending upon the host platform, it may not be possible to remove the underlying message while the returned file remains open.

@@ -1,0 +1,4 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.RegrAvgY
+
+class RegrAvgY(y, x, filter=None, default=None)  
+Returns the average of the dependent variable (sum(y)/N) as a float, or default if there aren’t any matching rows.

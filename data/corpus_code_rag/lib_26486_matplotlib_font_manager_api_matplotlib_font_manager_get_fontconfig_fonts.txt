@@ -1,0 +1,5 @@
+# matplotlib.font_manager_api#matplotlib.font_manager.get_fontconfig_fonts
+
+matplotlib.font_manager.get_fontconfig_fonts(fontext='ttf')[source]
+ 
+[Deprecated] List font filenames known to fc-list having the given extension. Notes  Deprecated since version 3.5.

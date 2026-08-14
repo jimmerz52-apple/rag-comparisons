@@ -1,0 +1,4 @@
+# django.ref.contrib.sites#django.contrib.sites.models.Site.name
+
+name  
+A human-readable “verbose” name for the website.

@@ -1,0 +1,7 @@
+# 542
+Task: 542
+
+# Write a function to replace all occurrences of spaces, commas, or dots with a colon in the given string by using regex.
+import re
+def fill_spaces(text):
+  return (re.sub("[ ,.]", ":", text))

@@ -1,0 +1,13 @@
+# django.ref.contrib.gis.measure#django.contrib.gis.measure.Distance
+
+class Distance(**kwargs) [source]
+ 
+To initialize a distance object, pass in a keyword corresponding to the desired unit attribute name set with desired value. For example, the following creates a distance object representing 5 miles: >>> dist = Distance(mi=5)
+  
+__getattr__(unit_att) 
+ Returns the distance value in units corresponding to the given unit attribute. For example: >>> print(dist.km)
+8.04672
+  
+classmethod unit_attname(unit_name) 
+ Returns the distance unit attribute name for the given full unit name. For example: >>> Distance.unit_attname('Mile')
+'mi'

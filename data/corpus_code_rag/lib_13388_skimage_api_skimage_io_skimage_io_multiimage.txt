@@ -1,0 +1,29 @@
+# skimage.api.skimage.io#skimage.io.MultiImage
+
+class skimage.io.MultiImage(filename, conserve_memory=True, dtype=None, **imread_kwargs) [source]
+ 
+Bases: skimage.io.collection.ImageCollection A class containing all frames from multi-frame images.  Parameters 
+ 
+load_patternstr or list of str 
+
+Pattern glob or filenames to load. The path can be absolute or relative.  
+conserve_memorybool, optional 
+
+Whether to conserve memory by only caching a single frame. Default is True.    Other Parameters 
+ 
+load_funccallable 
+
+imread by default. See notes below.     Notes If conserve_memory=True the memory footprint can be reduced, however the performance can be affected because frames have to be read from file more often. The last accessed frame is cached, all other frames will have to be read from file. The current implementation makes use of tifffile for Tiff files and PIL otherwise. Examples >>> from skimage import data_dir
+ >>> img = MultiImage(data_dir + '/multipage.tif') 
+>>> len(img) 
+2
+>>> for frame in img: 
+...     print(frame.shape) 
+(15, 10)
+(15, 10)
+  
+__init__(filename, conserve_memory=True, dtype=None, **imread_kwargs) [source]
+ 
+Load a multi-img. 
+  
+property filename

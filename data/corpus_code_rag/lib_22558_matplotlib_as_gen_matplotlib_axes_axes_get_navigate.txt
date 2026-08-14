@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_navigate
+
+matplotlib.axes.Axes.get_navigate   Axes.get_navigate()[source]
+ 
+Get whether the Axes responds to navigation commands.

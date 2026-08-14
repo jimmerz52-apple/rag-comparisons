@@ -1,0 +1,18 @@
+# skimage.api.skimage.measure#skimage.measure.approximate_polygon
+
+skimage.measure.approximate_polygon(coords, tolerance) [source]
+ 
+Approximate a polygonal chain with the specified tolerance. It is based on the Douglas-Peucker algorithm. Note that the approximated polygon is always within the convex hull of the original polygon.  Parameters 
+ 
+coords(N, 2) array 
+
+Coordinate array.  
+tolerancefloat 
+
+Maximum distance from original points of polygon to approximated polygonal chain. If tolerance is 0, the original coordinate array is returned.    Returns 
+ 
+coords(M, 2) array 
+
+Approximated polygonal chain where M <= N.     References  
+1  
+https://en.wikipedia.org/wiki/Ramer-Douglas-Peucker_algorithm

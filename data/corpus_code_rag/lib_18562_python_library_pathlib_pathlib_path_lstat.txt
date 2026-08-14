@@ -1,0 +1,4 @@
+# python.library.pathlib#pathlib.Path.lstat
+
+Path.lstat()  
+Like Path.stat() but, if the path points to a symbolic link, return the symbolic link’s information rather than its target’s.

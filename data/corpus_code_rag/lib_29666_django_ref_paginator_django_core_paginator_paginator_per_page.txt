@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.per_page
+
+Paginator.per_page  
+Required. The maximum number of items to include on a page, not including orphans (see the orphans optional argument below).

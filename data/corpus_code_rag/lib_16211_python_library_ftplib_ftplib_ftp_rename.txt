@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.rename
+
+FTP.rename(fromname, toname)  
+Rename file fromname on the server to toname.

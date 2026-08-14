@@ -1,0 +1,4 @@
+# python.library.codecs#codecs.iterencode
+
+codecs.iterencode(iterator, encoding, errors='strict', **kwargs)  
+Uses an incremental encoder to iteratively encode the input provided by iterator. This function is a generator. The errors argument (as well as any other keyword argument) is passed through to the incremental encoder. This function requires that the codec accept text str objects to encode. Therefore it does not support bytes-to-bytes encoders such as base64_codec.

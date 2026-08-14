@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.abs
+
+abs(x)  
+Returns the absolute value of x.

@@ -1,0 +1,5 @@
+# matplotlib.texmanager_api#matplotlib.texmanager.TexManager.get_grey
+
+get_grey(tex, fontsize=None, dpi=None)[source]
+ 
+Return the alpha channel.

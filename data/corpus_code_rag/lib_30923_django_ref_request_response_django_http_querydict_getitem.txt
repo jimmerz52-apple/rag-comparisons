@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.__getitem__
+
+QueryDict.__getitem__(key)  
+Returns the value for the given key. If the key has more than one value, it returns the last value. Raises django.utils.datastructures.MultiValueDictKeyError if the key does not exist. (This is a subclass of Python’s standard KeyError, so you can stick to catching KeyError.)

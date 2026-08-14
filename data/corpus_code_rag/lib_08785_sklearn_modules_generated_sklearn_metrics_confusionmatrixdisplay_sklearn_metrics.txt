@@ -1,0 +1,73 @@
+# sklearn.modules.generated.sklearn.metrics.confusionmatrixdisplay#sklearn.metrics.ConfusionMatrixDisplay
+
+class sklearn.metrics.ConfusionMatrixDisplay(confusion_matrix, *, display_labels=None) [source]
+ 
+Confusion Matrix visualization. It is recommend to use plot_confusion_matrix to create a ConfusionMatrixDisplay. All parameters are stored as attributes. Read more in the User Guide.  Parameters 
+ 
+confusion_matrixndarray of shape (n_classes, n_classes) 
+
+Confusion matrix.  
+display_labelsndarray of shape (n_classes,), default=None 
+
+Display labels for plot. If None, display labels are set from 0 to n_classes - 1.    Attributes 
+ 
+im_matplotlib AxesImage 
+
+Image representing the confusion matrix.  
+text_ndarray of shape (n_classes, n_classes), dtype=matplotlib Text, or None 
+
+Array of matplotlib axes. None if include_values is false.  
+ax_matplotlib Axes 
+
+Axes with confusion matrix.  
+figure_matplotlib Figure 
+
+Figure containing the confusion matrix.      See also  
+confusion_matrix
+
+
+Compute Confusion Matrix to evaluate the accuracy of a classification.  
+plot_confusion_matrix
+
+
+Plot Confusion Matrix.    Examples >>> from sklearn.datasets import make_classification
+>>> from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+>>> from sklearn.model_selection import train_test_split
+>>> from sklearn.svm import SVC
+>>> X, y = make_classification(random_state=0)
+>>> X_train, X_test, y_train, y_test = train_test_split(X, y,
+...                                                     random_state=0)
+>>> clf = SVC(random_state=0)
+>>> clf.fit(X_train, y_train)
+SVC(random_state=0)
+>>> predictions = clf.predict(X_test)
+>>> cm = confusion_matrix(y_test, predictions, labels=clf.classes_)
+>>> disp = ConfusionMatrixDisplay(confusion_matrix=cm,
+...                               display_labels=clf.classes_)
+>>> disp.plot() 
+ Methods  
+plot(*[, include_values, cmap, …]) Plot visualization.    
+plot(*, include_values=True, cmap='viridis', xticks_rotation='horizontal', values_format=None, ax=None, colorbar=True) [source]
+ 
+Plot visualization.  Parameters 
+ 
+include_valuesbool, default=True 
+
+Includes values in confusion matrix.  
+cmapstr or matplotlib Colormap, default=’viridis’ 
+
+Colormap recognized by matplotlib.  
+xticks_rotation{‘vertical’, ‘horizontal’} or float, default=’horizontal’ 
+
+Rotation of xtick labels.  
+values_formatstr, default=None 
+
+Format specification for values in confusion matrix. If None, the format specification is ‘d’ or ‘.2g’ whichever is shorter.  
+axmatplotlib axes, default=None 
+
+Axes object to plot on. If None, a new figure and axes is created.  
+colorbarbool, default=True 
+
+Whether or not to add a colorbar to the plot.    Returns 
+ 
+displayConfusionMatrixDisplay

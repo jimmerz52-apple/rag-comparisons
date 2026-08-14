@@ -1,0 +1,3 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.PdfFile.createType1Descriptor
+
+createType1Descriptor(t1font, fontfile)[source]

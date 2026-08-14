@@ -1,0 +1,9 @@
+# python.library.tracemalloc#tracemalloc.Frame
+
+class tracemalloc.Frame  
+Frame of a traceback. The Traceback class is a sequence of Frame instances.  
+filename  
+Filename (str). 
+  
+lineno  
+Line number (int).

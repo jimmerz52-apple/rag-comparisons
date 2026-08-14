@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_exclude
+
+ModelAdmin.get_exclude(request, obj=None)  
+The get_exclude method is given the HttpRequest and the obj being edited (or None on an add form) and is expected to return a list of fields, as described in ModelAdmin.exclude.

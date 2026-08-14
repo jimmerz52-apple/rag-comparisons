@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.geoquerysets#django.contrib.gis.db.models.Union
+
+class Union(geo_field)

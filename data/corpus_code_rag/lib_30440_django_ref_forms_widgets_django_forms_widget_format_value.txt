@@ -1,0 +1,4 @@
+# django.ref.forms.widgets#django.forms.Widget.format_value
+
+format_value(value)  
+Cleans and returns a value for use in the widget template. value isn’t guaranteed to be valid input, therefore subclass implementations should program defensively.

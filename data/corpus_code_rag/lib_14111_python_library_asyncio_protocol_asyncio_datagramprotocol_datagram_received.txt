@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.DatagramProtocol.datagram_received
+
+DatagramProtocol.datagram_received(data, addr)  
+Called when a datagram is received. data is a bytes object containing the incoming data. addr is the address of the peer sending the data; the exact format depends on the transport.

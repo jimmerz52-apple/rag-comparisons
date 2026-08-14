@@ -1,0 +1,4 @@
+# python.library.typing#typing.AbstractSet
+
+class typing.AbstractSet(Sized, Collection[T_co])  
+A generic version of collections.abc.Set.  Deprecated since version 3.9: collections.abc.Set now supports []. See PEP 585 and Generic Alias Type.

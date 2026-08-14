@@ -1,0 +1,6 @@
+# werkzeug.http.index#werkzeug.http.parse_date
+
+werkzeug.http.parse_date(value)  
+Parse an RFC 2822 date into a timezone-aware datetime.datetime object, or None if parsing fails. This is a wrapper for email.utils.parsedate_to_datetime(). It returns None if parsing fails instead of raising an exception, and always returns a timezone-aware datetime object. If the string doesn’t have timezone information, it is assumed to be UTC.  Parameters 
+value (Optional[str]) – A string with a supported date format.  Return type 
+Optional[datetime.datetime]    Changed in version 2.0: Return a timezone-aware datetime object. Use email.utils.parsedate_to_datetime.

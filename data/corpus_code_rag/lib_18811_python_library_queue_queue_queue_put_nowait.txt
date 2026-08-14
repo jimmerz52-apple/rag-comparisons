@@ -1,0 +1,4 @@
+# python.library.queue#queue.Queue.put_nowait
+
+Queue.put_nowait(item)  
+Equivalent to put(item, False).

@@ -1,0 +1,4 @@
+# python.library.codecs#encodings.idna.ToUnicode
+
+encodings.idna.ToUnicode(label)  
+Convert a label to Unicode, as specified in RFC 3490.

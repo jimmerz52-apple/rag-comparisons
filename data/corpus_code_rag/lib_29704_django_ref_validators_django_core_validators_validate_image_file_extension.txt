@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.validate_image_file_extension
+
+validate_image_file_extension  
+Uses Pillow to ensure that value.name (value is a File) has a valid image extension.

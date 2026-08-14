@@ -1,0 +1,4 @@
+# python.library.os#os.SCHED_IDLE
+
+os.SCHED_IDLE  
+Scheduling policy for extremely low priority background tasks.

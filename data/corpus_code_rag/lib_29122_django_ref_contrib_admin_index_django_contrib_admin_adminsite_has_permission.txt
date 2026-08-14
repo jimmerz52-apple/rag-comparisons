@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.AdminSite.has_permission
+
+AdminSite.has_permission(request)  
+Returns True if the user for the given HttpRequest has permission to view at least one page in the admin site. Defaults to requiring both User.is_active and User.is_staff to be True.

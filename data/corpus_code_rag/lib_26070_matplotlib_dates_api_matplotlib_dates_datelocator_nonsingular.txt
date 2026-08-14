@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.DateLocator.nonsingular
+
+nonsingular(vmin, vmax)[source]
+ 
+Given the proposed upper and lower extent, adjust the range if it is too close to being singular (i.e. a range of ~0).

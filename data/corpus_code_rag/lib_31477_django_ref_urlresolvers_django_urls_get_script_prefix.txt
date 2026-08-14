@@ -1,0 +1,3 @@
+# django.ref.urlresolvers#django.urls.get_script_prefix
+
+get_script_prefix()

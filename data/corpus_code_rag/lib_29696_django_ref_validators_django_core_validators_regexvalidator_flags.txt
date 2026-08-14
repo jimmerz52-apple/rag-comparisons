@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.RegexValidator.flags
+
+flags  
+The regex flags used when compiling the regular expression string regex. If regex is a pre-compiled regular expression, and flags is overridden, TypeError is raised. Defaults to 0.

@@ -1,0 +1,21 @@
+# pygame.ref.freetype#pygame.freetype.Font.render_to
+
+render_to() 
+ Render text onto an existing surface render_to(surf, dest, text, fgcolor=None, bgcolor=None, style=STYLE_DEFAULT, rotation=0, size=0) -> Rect  Renders the string text to the pygame.Surface surf, at position dest, a (x, y) surface coordinate pair. If either x or y is not an integer it is converted to one if possible. Any sequence where the first two items are x and y positional elements is accepted, including a Rect instance. As with render(), optional fgcolor, style, rotation, and size argument are available. If a background color bgcolor is given, the text bounding box is first filled with that color. The text is blitted next. Both the background fill and text rendering involve full alpha blits. That is, the alpha values of the foreground, background, and destination target surface all affect the blit. The return value is a rectangle giving the size and position of the rendered text within the surface. If an empty string is passed for text then the returned Rect is zero width and the height of the font. The rect will test False. Optionally, text can be set None, which will re-render text passed to a previous render_to(), get_rect(), render(), render_raw(), or render_raw_to() call. Primarily, this feature is an aid to using render_to() in combination with get_rect(). An example: def word_wrap(surf, text, font, color=(0, 0, 0)):
+    font.origin = True
+    words = text.split(' ')
+    width, height = surf.get_size()
+    line_spacing = font.get_sized_height() + 2
+    x, y = 0, line_spacing
+    space = font.get_rect(' ')
+    for word in words:
+        bounds = font.get_rect(word)
+        if x + bounds.width + bounds.x >= width:
+            x, y = 0, y + line_spacing
+        if x + bounds.width + bounds.x >= width:
+            raise ValueError("word too wide for the surface")
+        if y + bounds.height - bounds.y >= height:
+            raise ValueError("text to long for the surface")
+        font.render_to(surf, (x, y), None, color)
+        x += bounds.width + space.width
+    return x, y When render_to() is called with the same font properties ― size, style, strength, wide, antialiased, vertical, rotation, kerning, and use_bitmap_strikes ― as get_rect(), render_to() will use the layout calculated by get_rect(). Otherwise, render_to() will recalculate the layout if called with a text string or one of the above properties has changed after the get_rect() call. If text is a char (byte) string, then its encoding is assumed to be LATIN1.

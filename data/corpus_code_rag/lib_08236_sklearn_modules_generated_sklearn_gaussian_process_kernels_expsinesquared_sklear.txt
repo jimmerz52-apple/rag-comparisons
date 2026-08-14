@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.expsinesquared#sklearn.gaussian_process.kernels.ExpSineSquared.hyperparameters
+
+property hyperparameters  
+Returns a list of all hyperparameter specifications.

@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.AbstractChildWatcher.remove_child_handler
+
+remove_child_handler(pid)  
+Removes the handler for process with PID equal to pid. The function returns True if the handler was successfully removed, False if there was nothing to remove.

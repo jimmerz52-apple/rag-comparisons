@@ -1,0 +1,44 @@
+# skimage.api.skimage.transform#skimage.transform.swirl
+
+skimage.transform.swirl(image, center=None, strength=1, radius=100, rotation=0, output_shape=None, order=None, mode='reflect', cval=0, clip=True, preserve_range=False) [source]
+ 
+Perform a swirl transformation.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+center(column, row) tuple or (2,) ndarray, optional 
+
+Center coordinate of transformation.  
+strengthfloat, optional 
+
+The amount of swirling applied.  
+radiusfloat, optional 
+
+The extent of the swirl in pixels. The effect dies out rapidly beyond radius.  
+rotationfloat, optional 
+
+Additional rotation applied to the image.    Returns 
+ 
+swirledndarray 
+
+Swirled version of the input.    Other Parameters 
+ 
+output_shapetuple (rows, cols), optional 
+
+Shape of the output image generated. By default the shape of the input image is preserved.  
+orderint, optional 
+
+The order of the spline interpolation, default is 0 if image.dtype is bool and 1 otherwise. The order has to be in the range 0-5. See skimage.transform.warp for detail.  
+mode{‘constant’, ‘edge’, ‘symmetric’, ‘reflect’, ‘wrap’}, optional 
+
+Points outside the boundaries of the input are filled according to the given mode, with ‘constant’ used as the default. Modes match the behaviour of numpy.pad.  
+cvalfloat, optional 
+
+Used in conjunction with mode ‘constant’, the value outside the image boundaries.  
+clipbool, optional 
+
+Whether to clip the output to the range of values of the input image. This is enabled by default, since higher order interpolation may produce values outside the given input range.  
+preserve_rangebool, optional 
+
+Whether to keep the original range of values. Otherwise, the input image is converted according to the conventions of img_as_float. Also see https://scikit-image.org/docs/dev/user_guide/data_types.html

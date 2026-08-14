@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_ssize_t
+
+class ctypes.c_ssize_t  
+Represents the C ssize_t datatype.  New in version 3.2.

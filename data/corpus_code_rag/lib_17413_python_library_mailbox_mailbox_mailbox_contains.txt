@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.__contains__
+
+__contains__(key)  
+Return True if key corresponds to a message, False otherwise.

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.getElementsByTagNameNS
+
+Element.getElementsByTagNameNS(namespaceURI, localName)  
+Same as equivalent method in the Document class.

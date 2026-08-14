@@ -1,0 +1,4 @@
+# python.library.types#types.MappingProxyType.keys
+
+keys()  
+Return a new view of the underlying mapping’s keys.

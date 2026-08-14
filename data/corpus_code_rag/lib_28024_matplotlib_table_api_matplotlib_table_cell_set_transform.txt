@@ -1,0 +1,7 @@
+# matplotlib.table_api#matplotlib.table.Cell.set_transform
+
+set_transform(trans)[source]
+ 
+Set the artist transform.  Parameters 
+ 
+tTransform

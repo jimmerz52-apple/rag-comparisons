@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.movedim
+
+movedim(source, destination) → Tensor  
+See torch.movedim()

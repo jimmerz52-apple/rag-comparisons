@@ -1,0 +1,4 @@
+# python.library.logging#logging.exception
+
+logging.exception(msg, *args, **kwargs)  
+Logs a message with level ERROR on the root logger. The arguments are interpreted as for debug(). Exception info is added to the logging message. This function should only be called from an exception handler.

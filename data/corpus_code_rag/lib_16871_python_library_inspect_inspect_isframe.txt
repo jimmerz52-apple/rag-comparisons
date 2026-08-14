@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isframe
+
+inspect.isframe(object)  
+Return True if the object is a frame.

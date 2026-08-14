@@ -1,0 +1,4 @@
+# pygame.ref.joystick#pygame.joystick.Joystick.get_numballs
+
+get_numballs() 
+ get the number of trackballs on a Joystick get_numballs() -> int  Returns the number of trackball devices on a Joystick. These devices work similar to a mouse but they have no absolute position; they only have relative amounts of movement. The pygame.JOYBALLMOTION event will be sent when the trackball is rolled. It will report the amount of movement on the trackball.

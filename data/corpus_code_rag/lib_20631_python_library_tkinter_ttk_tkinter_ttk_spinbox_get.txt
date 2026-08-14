@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Spinbox.get
+
+get()  
+Returns the current value of the spinbox.

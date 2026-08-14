@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.flatten
+
+flatten(input, start_dim=0, end_dim=-1) → Tensor  
+see torch.flatten()

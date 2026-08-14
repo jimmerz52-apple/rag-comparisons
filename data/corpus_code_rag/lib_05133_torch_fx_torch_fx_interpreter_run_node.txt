@@ -1,0 +1,8 @@
+# torch.fx#torch.fx.Interpreter.run_node
+
+run_node(n) [source]
+ 
+Run a specific node n and return the result. Calls into placeholder, get_attr, call_function, call_method, call_module, or output depending on node.op  Parameters 
+n (Node) – The Node to execute  Returns 
+The result of executing n  Return type 
+Any

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_selection.rfe#sklearn.feature_selection.RFE.decision_function
+
+decision_function(X) [source]
+ 
+Compute the decision function of X.  Parameters 
+ 
+X{array-like or sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+scorearray, shape = [n_samples, n_classes] or [n_samples] 
+
+The decision function of the input samples. The order of the classes corresponds to that in the attribute classes_. Regression and binary classification produce an array of shape [n_samples].

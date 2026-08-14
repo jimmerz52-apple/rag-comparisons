@@ -1,0 +1,5 @@
+# python.library.curses#curses.window.addstr
+
+window.addstr(str[, attr])  
+window.addstr(y, x, str[, attr])  
+Paint the character string str at (y, x) with attributes attr, overwriting anything previously on the display.  Note  Writing outside the window, subwindow, or pad raises curses.error. Attempting to write to the lower right corner of a window, subwindow, or pad will cause an exception to be raised after the string is printed. A bug in ncurses, the backend for this Python module, can cause SegFaults when resizing windows. This is fixed in ncurses-6.1-20190511. If you are stuck with an earlier ncurses, you can avoid triggering this if you do not call addstr() with a str that has embedded newlines. Instead, call addstr() separately for each line.

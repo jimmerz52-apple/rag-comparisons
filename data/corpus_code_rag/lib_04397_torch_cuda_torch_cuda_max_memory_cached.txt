@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.max_memory_cached
+
+torch.cuda.max_memory_cached(device=None) [source]
+ 
+Deprecated; see max_memory_reserved().

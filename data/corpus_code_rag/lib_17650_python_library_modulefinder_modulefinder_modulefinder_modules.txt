@@ -1,0 +1,4 @@
+# python.library.modulefinder#modulefinder.ModuleFinder.modules
+
+modules  
+A dictionary mapping module names to modules. See Example usage of ModuleFinder.

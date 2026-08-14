@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.managers.SyncManager.Namespace
+
+Namespace()  
+Create a shared Namespace object and return a proxy for it.

@@ -1,0 +1,11 @@
+# python.library.smtplib#smtplib.SMTP
+
+class smtplib.SMTP(host='', port=0, local_hostname=None, [timeout, ]source_address=None)  
+An SMTP instance encapsulates an SMTP connection. It has methods that support a full repertoire of SMTP and ESMTP operations. If the optional host and port parameters are given, the SMTP connect() method is called with those parameters during initialization. If specified, local_hostname is used as the FQDN of the local host in the HELO/EHLO command. Otherwise, the local hostname is found using socket.getfqdn(). If the connect() call returns anything other than a success code, an SMTPConnectError is raised. The optional timeout parameter specifies a timeout in seconds for blocking operations like the connection attempt (if not specified, the global default timeout setting will be used). If the timeout expires, socket.timeout is raised. The optional source_address parameter allows binding to some specific source address in a machine with multiple network interfaces, and/or to some specific source TCP port. It takes a 2-tuple (host, port), for the socket to bind to as its source address before connecting. If omitted (or if host or port are '' and/or 0 respectively) the OS default behavior will be used. For normal use, you should only require the initialization/connect, sendmail(), and SMTP.quit() methods. An example is included below. The SMTP class supports the with statement. When used like this, the SMTP QUIT command is issued automatically when the with statement exits. E.g.: >>> from smtplib import SMTP
+>>> with SMTP("domain.org") as smtp:
+...     smtp.noop()
+...
+(250, b'Ok')
+>>>
+
+All commands will raise an auditing event smtplib.SMTP.send with arguments self and data, where data is the bytes about to be sent to the remote host.  Changed in version 3.3: Support for the with statement was added.   Changed in version 3.3: source_address argument was added.   New in version 3.5: The SMTPUTF8 extension (RFC 6531) is now supported.   Changed in version 3.9: If the timeout parameter is set to be zero, it will raise a ValueError to prevent the creation of a non-blocking socket

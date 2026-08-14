@@ -1,0 +1,4 @@
+# python.library.chunk#chunk.Chunk.skip
+
+skip()  
+Skip to the end of the chunk. All further calls to read() for the chunk will return b''. If you are not interested in the contents of the chunk, this method should be called so that the file points to the start of the next chunk.

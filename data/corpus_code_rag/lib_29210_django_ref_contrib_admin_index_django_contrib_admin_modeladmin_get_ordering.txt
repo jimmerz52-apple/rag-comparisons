@@ -1,0 +1,10 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_ordering
+
+ModelAdmin.get_ordering(request)  
+The get_ordering method takes a request as parameter and is expected to return a list or tuple for ordering similar to the ordering attribute. For example: class PersonAdmin(admin.ModelAdmin):
+
+    def get_ordering(self, request):
+        if request.user.is_superuser:
+            return ['name', 'rank']
+        else:
+            return ['name']

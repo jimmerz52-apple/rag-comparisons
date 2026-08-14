@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_cycler
+
+matplotlib.rcsetup.validate_cycler(s)[source]
+ 
+Return a Cycler object from a string repr or the object itself.

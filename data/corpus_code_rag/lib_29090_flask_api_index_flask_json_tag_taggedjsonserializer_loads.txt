@@ -1,0 +1,6 @@
+# flask.api.index#flask.json.tag.TaggedJSONSerializer.loads
+
+loads(value)  
+Load data from a JSON string and deserialized any tagged objects.  Parameters 
+value (str) –   Return type 
+Any

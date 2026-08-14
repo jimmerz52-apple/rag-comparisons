@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.recarray.var
+
+numpy.recarray.var method   recarray.var(axis=None, dtype=None, out=None, ddof=0, keepdims=False, *, where=True)
+ 
+Returns the variance of the array elements, along given axis. Refer to numpy.var for full documentation.  See also  numpy.var
+
+equivalent function

@@ -1,0 +1,4 @@
+# python.library.stdtypes#dict.pop
+
+pop(key[, default])  
+If key is in the dictionary, remove it and return its value, else return default. If default is not given and key is not in the dictionary, a KeyError is raised.

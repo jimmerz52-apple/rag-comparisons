@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.break_here
+
+break_here(frame)  
+This method checks if there is a breakpoint in the filename and line belonging to frame or, at least, in the current function. If the breakpoint is a temporary one, this method deletes it.

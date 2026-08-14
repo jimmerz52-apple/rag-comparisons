@@ -1,0 +1,6 @@
+# matplotlib.container_api#matplotlib.container.Container.pchanged
+
+pchanged()[source]
+ 
+Call all of the registered callbacks. This function is triggered internally when a property is changed.  See also  add_callback
+remove_callback

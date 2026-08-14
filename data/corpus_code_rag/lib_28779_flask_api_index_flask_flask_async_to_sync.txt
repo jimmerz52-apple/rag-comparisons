@@ -1,0 +1,7 @@
+# flask.api.index#flask.Flask.async_to_sync
+
+async_to_sync(func)  
+Return a sync function that will run the coroutine function. result = app.async_to_sync(func)(*args, **kwargs)
+ Override this method to change how the app converts async code to be synchronously callable.  New in version 2.0.   Parameters 
+func (Callable[[...], Coroutine]) –   Return type 
+Callable[[…], Any]

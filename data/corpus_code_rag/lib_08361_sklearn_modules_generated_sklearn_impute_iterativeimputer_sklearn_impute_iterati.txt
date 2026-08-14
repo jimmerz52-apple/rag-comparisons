@@ -1,0 +1,15 @@
+# sklearn.modules.generated.sklearn.impute.iterativeimputer#sklearn.impute.IterativeImputer.fit
+
+fit(X, y=None) [source]
+ 
+Fits the imputer on X and return self.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+Input data, where “n_samples” is the number of samples and “n_features” is the number of features.  
+yignored 
+  Returns 
+ 
+selfobject 
+
+Returns self.

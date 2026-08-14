@@ -1,0 +1,4 @@
+# python.library.curses#curses.pair_number
+
+curses.pair_number(attr)  
+Return the number of the color-pair set by the attribute value attr. color_pair() is the counterpart to this function.

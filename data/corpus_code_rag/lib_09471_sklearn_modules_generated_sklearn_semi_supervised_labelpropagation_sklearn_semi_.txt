@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.semi_supervised.labelpropagation#sklearn.semi_supervised.LabelPropagation.predict
+
+predict(X) [source]
+ 
+Performs inductive inference across the model.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+yndarray of shape (n_samples,) 
+
+Predictions for input data.

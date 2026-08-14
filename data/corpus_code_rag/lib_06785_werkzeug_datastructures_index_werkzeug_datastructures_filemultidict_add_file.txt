@@ -1,0 +1,9 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.FileMultiDict.add_file
+
+add_file(name, file, filename=None, content_type=None)  
+Adds a new file to the dict. file can be a file name or a file-like or a FileStorage object.  Parameters 
+ 
+name – the name of the field. 
+file – a filename or file-like object 
+filename – an optional filename 
+content_type – an optional content type

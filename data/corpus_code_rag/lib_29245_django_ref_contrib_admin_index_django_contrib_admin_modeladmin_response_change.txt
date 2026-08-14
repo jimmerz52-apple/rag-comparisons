@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.response_change
+
+ModelAdmin.response_change(request, obj)  
+Determines the HttpResponse for the change_view() stage. response_change is called after the admin form is submitted and just after the object and all the related instances have been saved. You can override it to change the default behavior after the object has been changed.

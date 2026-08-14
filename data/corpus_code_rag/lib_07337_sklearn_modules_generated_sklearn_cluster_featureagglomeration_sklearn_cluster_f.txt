@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.cluster.featureagglomeration#sklearn.cluster.FeatureAgglomeration.fit
+
+fit(X, y=None, **params) [source]
+ 
+Fit the hierarchical clustering on the data  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data  
+yIgnored 
+  Returns 
+ self

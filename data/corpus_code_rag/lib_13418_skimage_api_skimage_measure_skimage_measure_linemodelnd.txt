@@ -1,0 +1,108 @@
+# skimage.api.skimage.measure#skimage.measure.LineModelND
+
+class skimage.measure.LineModelND [source]
+ 
+Bases: skimage.measure.fit.BaseModel Total least squares estimator for N-dimensional lines. In contrast to ordinary least squares line estimation, this estimator minimizes the orthogonal distances of points to the estimated line. Lines are defined by a point (origin) and a unit vector (direction) according to the following vector equation: X = origin + lambda * direction
+ Examples >>> x = np.linspace(1, 2, 25)
+>>> y = 1.5 * x + 3
+>>> lm = LineModelND()
+>>> lm.estimate(np.stack([x, y], axis=-1))
+True
+>>> tuple(np.round(lm.params, 5))
+(array([1.5 , 5.25]), array([0.5547 , 0.83205]))
+>>> res = lm.residuals(np.stack([x, y], axis=-1))
+>>> np.abs(np.round(res, 9))
+array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0.])
+>>> np.round(lm.predict_y(x[:5]), 3)
+array([4.5  , 4.562, 4.625, 4.688, 4.75 ])
+>>> np.round(lm.predict_x(y[:5]), 3)
+array([1.   , 1.042, 1.083, 1.125, 1.167])
+  Attributes 
+ 
+paramstuple 
+
+Line model parameters in the following order origin, direction.      
+__init__() [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+estimate(data) [source]
+ 
+Estimate line model from data. This minimizes the sum of shortest (orthogonal) distances from the given data points to the estimated line.  Parameters 
+ 
+data(N, dim) array 
+
+N points in a space of dimensionality dim >= 2.    Returns 
+ 
+successbool 
+
+True, if model estimation succeeds.     
+  
+predict(x, axis=0, params=None) [source]
+ 
+Predict intersection of the estimated line model with a hyperplane orthogonal to a given axis.  Parameters 
+ 
+x(n, 1) array 
+
+Coordinates along an axis.  
+axisint 
+
+Axis orthogonal to the hyperplane intersecting the line.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+data(n, m) array 
+
+Predicted coordinates.    Raises 
+ ValueError
+
+If the line is parallel to the given axis.     
+  
+predict_x(y, params=None) [source]
+ 
+Predict x-coordinates for 2D lines using the estimated model. Alias for: predict(y, axis=1)[:, 0]
+  Parameters 
+ 
+yarray 
+
+y-coordinates.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+xarray 
+
+Predicted x-coordinates.     
+  
+predict_y(x, params=None) [source]
+ 
+Predict y-coordinates for 2D lines using the estimated model. Alias for: predict(x, axis=0)[:, 1]
+  Parameters 
+ 
+xarray 
+
+x-coordinates.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+yarray 
+
+Predicted y-coordinates.     
+  
+residuals(data, params=None) [source]
+ 
+Determine residuals of data to model. For each point, the shortest (orthogonal) distance to the line is returned. It is obtained by projecting the data onto the line.  Parameters 
+ 
+data(N, dim) array 
+
+N points in a space of dimension dim.  
+params(2, ) array, optional 
+
+Optional custom parameter set in the form (origin, direction).    Returns 
+ 
+residuals(N, ) array 
+
+Residual for each data point.

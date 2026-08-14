@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.cmy
+
+cmy 
+ Gets or sets the CMY representation of the Color. cmy -> tuple  The CMY representation of the Color. The CMY components are in the ranges C = [0, 1], M = [0, 1], Y = [0, 1]. Note that this will not return the absolutely exact CMY values for the set RGB values in all cases. Due to the RGB mapping from 0-255 and the CMY mapping from 0-1 rounding errors may cause the CMY values to differ slightly from what you might expect.

@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder.end_ns
+
+end_ns(prefix)  
+Is called after the end() callback of an element that declared a namespace prefix mapping, with the name of the prefix that went out of scope.  New in version 3.8.

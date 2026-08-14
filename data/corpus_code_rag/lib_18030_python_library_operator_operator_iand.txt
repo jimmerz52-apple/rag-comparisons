@@ -1,0 +1,5 @@
+# python.library.operator#operator.__iand__
+
+operator.iand(a, b)  
+operator.__iand__(a, b)  
+a = iand(a, b) is equivalent to a &= b.

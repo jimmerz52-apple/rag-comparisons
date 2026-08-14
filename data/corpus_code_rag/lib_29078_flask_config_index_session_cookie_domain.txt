@@ -1,0 +1,4 @@
+# flask.config.index#SESSION_COOKIE_DOMAIN
+
+SESSION_COOKIE_DOMAIN  
+The domain match rule that the session cookie will be valid for. If not set, the cookie will be valid for all subdomains of SERVER_NAME. If False, the cookie’s domain will not be set. Default: None

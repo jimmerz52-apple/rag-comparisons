@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.module#torch.nn.Module.eval
+
+eval() [source]
+ 
+Sets the module in evaluation mode. This has any effect only on certain modules. See documentations of particular modules for details of their behaviors in training/evaluation mode, if they are affected, e.g. Dropout, BatchNorm, etc. This is equivalent with self.train(False).  Returns 
+self  Return type 
+Module

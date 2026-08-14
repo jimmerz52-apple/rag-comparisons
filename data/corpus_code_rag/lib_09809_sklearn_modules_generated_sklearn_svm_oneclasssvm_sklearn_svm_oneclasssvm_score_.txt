@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.svm.oneclasssvm#sklearn.svm.OneClassSVM.score_samples
+
+score_samples(X) [source]
+ 
+Raw scoring function of the samples.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The data matrix.    Returns 
+ 
+score_samplesndarray of shape (n_samples,) 
+
+Returns the (unshifted) scoring function of the samples.

@@ -1,0 +1,44 @@
+# torch.fx#torch.fx.Tracer
+
+class torch.fx.Tracer(autowrap_modules=(<module 'math' from '/home/matti/miniconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so'>, )) [source]
+ 
+Tracer is the class that implements the symbolic tracing functionality of torch.fx.symbolic_trace. A call to symbolic_trace(m) is equivalent to Tracer().trace(m). Tracer can be subclassed to override various behaviors of the tracing process. The different behaviors that can be overridden are described in the docstrings of the methods on this class.  
+call_module(m, forward, args, kwargs) [source]
+ 
+Method that specifies the behavior of this Tracer when it encounters a call to an nn.Module instance. By default, the behavior is to check if the called module is a leaf module via is_leaf_module. If it is, emit a call_module node referring to m in the Graph. Otherwise, call the Module normally, tracing through the operations in its forward function. This method can be overridden to–for example–create nested traced GraphModules, or any other behavior you would want while tracing across Module boundaries. Module boundaries.  Parameters 
+ 
+m (Module) – The module for which a call is being emitted 
+forward (Callable) – The forward() method of the Module to be invoked 
+args (Tuple) – args of the module callsite 
+kwargs (Dict) – kwargs of the module callsite   Returns 
+The return value from the Module call. In the case that a call_module node was emitted, this is a Proxy value. Otherwise, it is whatever value was returned from the Module invocation.   
+  
+create_arg(a) [source]
+ 
+A method to specify the behavior of tracing when preparing values to be used as arguments to nodes in the Graph. By default, the behavior includes:  Iterate through collection types (e.g. tuple, list, dict) and recursively call create_args on the elements. Given a Proxy object, return a reference to the underlying IR Node
+ 
+Given a non-Proxy Tensor object, emit IR for various cases:  For a Parameter, emit a get_attr node referring to that Parameter For a non-Parameter Tensor, store the Tensor away in a special attribute referring to that attribute.    This method can be overridden to support more types.  Parameters 
+a (Any) – The value to be emitted as an Argument in the Graph.  Returns 
+The value a converted into the appropriate Argument   
+  
+create_args_for_root(root_fn, is_module, concrete_args=None) [source]
+ 
+Create placeholder nodes corresponding to the signature of the root Module. This method introspects root’s signature and emits those nodes accordingly, also supporting *args and **kwargs. 
+  
+is_leaf_module(m, module_qualified_name) [source]
+ 
+A method to specify whether a given nn.Module is a “leaf” module. Leaf modules are the atomic units that appear in the IR, referenced by call_module calls. By default, Modules in the PyTorch standard library namespace (torch.nn) are leaf modules. All other modules are traced through and their constituent ops are recorded, unless specified otherwise via this parameter.  Parameters 
+ 
+m (Module) – The module being queried about 
+module_qualified_name (str) – The path to root of this module. For example, if you have a module hierarchy where submodule foo contains submodule bar, which contains submodule baz, that module will appear with the qualified name foo.bar.baz here.    
+  
+path_of_module(mod) [source]
+ 
+Helper method to find the qualified name of mod in the Module hierarchy of root. For example, if root has a submodule named foo, which has a submodule named bar, passing bar into this function will return the string “foo.bar”.  Parameters 
+mod (str) – The Module to retrieve the qualified name for.   
+  
+trace(root, concrete_args=None) [source]
+ 
+Trace root and return the corresponding FX Graph representation. root can either be an nn.Module instance or a Python callable. Note that after this call, self.root may be different from the root passed in here. For example, when a free function is passed to trace(), we will create an nn.Module instance to use as the root and add embedded constants to.  Parameters 
+root (Union[Module, Callable]) – Either a Module or a function to be traced through.  Returns 
+A Graph representing the semantics of the passed-in root.

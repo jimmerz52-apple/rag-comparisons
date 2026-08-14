@@ -1,0 +1,4 @@
+# torch.backends#torch.backends.cudnn.allow_tf32
+
+torch.backends.cudnn.allow_tf32  
+A bool that controls where TensorFloat-32 tensor cores may be used in cuDNN convolutions on Ampere or newer GPUs. See TensorFloat-32(TF32) on Ampere devices.

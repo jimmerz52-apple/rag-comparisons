@@ -1,0 +1,33 @@
+# sklearn.modules.generated.sklearn.feature_selection.f_classif
+
+sklearn.feature_selection.f_classif  
+sklearn.feature_selection.f_classif(X, y) [source]
+ 
+Compute the ANOVA F-value for the provided sample. Read more in the User Guide.  Parameters 
+ 
+X{array-like, sparse matrix} shape = [n_samples, n_features] 
+
+The set of regressors that will be tested sequentially.  
+yarray of shape(n_samples) 
+
+The data matrix.    Returns 
+ 
+Farray, shape = [n_features,] 
+
+The set of F values.  
+pvalarray, shape = [n_features,] 
+
+The set of p-values.      See also  
+chi2
+
+
+Chi-squared stats of non-negative features for classification tasks.  
+f_regression
+
+
+F-value between label/feature for regression tasks.    
+ Examples using sklearn.feature_selection.f_classif
+ 
+  Pipeline Anova SVM  
+
+  Univariate Feature Selection

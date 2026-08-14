@@ -1,0 +1,4 @@
+# tensorflow.compat.v1.logging.get_verbosity
+
+tf.compat.v1.logging.get_verbosity Return how much logging output will be produced. 
+tf.compat.v1.logging.get_verbosity()

@@ -1,0 +1,4 @@
+# python.library.zoneinfo#zoneinfo.ZoneInfo.no_cache
+
+classmethod ZoneInfo.no_cache(key)  
+An alternate constructor that bypasses the constructor’s cache. It is identical to the primary constructor, but returns a new object on each call. This is most likely to be useful for testing or demonstration purposes, but it can also be used to create a system with a different cache invalidation strategy. Objects created via this constructor will also bypass the cache of a deserializing process when unpickled.  Caution Using this constructor may change the semantics of your datetimes in surprising ways, only use it if you know that you need to.

@@ -1,0 +1,12 @@
+# pandas.reference.api.pandas.index.sortlevel
+
+pandas.Index.sortlevel   Index.sortlevel(level=None, ascending=True, sort_remaining=None)[source]
+ 
+For internal compatibility with the Index API. Sort the Index. This is for compat with MultiIndex  Parameters 
+ 
+ascending:bool, default True
+
+
+False to sort in descending order  level, sort_remaining are compat parameters
+  Returns 
+ Index

@@ -1,0 +1,16 @@
+# django.ref.forms.widgets#django.forms.SplitDateTimeWidget
+
+class SplitDateTimeWidget  
+ 
+template_name: 'django/forms/widgets/splitdatetime.html'
+  Wrapper (using MultiWidget) around two widgets: DateInput for the date, and TimeInput for the time. Must be used with SplitDateTimeField rather than DateTimeField. SplitDateTimeWidget has several optional arguments:  
+date_format  
+Similar to DateInput.format 
+  
+time_format  
+Similar to TimeInput.format 
+  
+date_attrs 
+  
+time_attrs  
+Similar to Widget.attrs. A dictionary containing HTML attributes to be set on the rendered DateInput and TimeInput widgets, respectively. If these attributes aren’t set, Widget.attrs is used instead.

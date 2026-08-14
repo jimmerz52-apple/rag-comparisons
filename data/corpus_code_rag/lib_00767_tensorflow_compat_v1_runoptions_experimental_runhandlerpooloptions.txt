@@ -1,0 +1,8 @@
+# tensorflow.compat.v1.runoptions.experimental.runhandlerpooloptions
+
+tf.compat.v1.RunOptions.Experimental.RunHandlerPoolOptions A ProtocolMessage
+ 
+
+
+ Attributes
+  priority   int64 priority

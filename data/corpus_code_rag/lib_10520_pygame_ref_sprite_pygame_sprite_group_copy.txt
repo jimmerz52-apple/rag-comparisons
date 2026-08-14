@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.Group.copy
+
+copy() 
+ duplicate the Group copy() -> Group  Creates a new Group with all the same Sprites as the original. If you have subclassed Group, the new object will have the same (sub-)class as the original. This only works if the derived class's constructor takes the same arguments as the Group class's.

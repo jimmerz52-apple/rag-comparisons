@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.get_code
+
+get_code(fullname)  
+Return the code object for the specified module. Raise ZipImportError if the module couldn’t be found.

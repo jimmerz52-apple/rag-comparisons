@@ -1,0 +1,10 @@
+# python.library.os#os.O_WRONLY
+
+os.O_RDONLY  
+os.O_WRONLY  
+os.O_RDWR  
+os.O_APPEND  
+os.O_CREAT  
+os.O_EXCL  
+os.O_TRUNC  
+The above constants are available on Unix and Windows.

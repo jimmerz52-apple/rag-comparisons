@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.fmod_
+
+fmod_(divisor) → Tensor  
+In-place version of fmod()

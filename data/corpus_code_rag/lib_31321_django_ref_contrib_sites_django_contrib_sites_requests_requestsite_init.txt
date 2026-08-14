@@ -1,0 +1,4 @@
+# django.ref.contrib.sites#django.contrib.sites.requests.RequestSite.__init__
+
+__init__(request)  
+Sets the name and domain attributes to the value of get_host().

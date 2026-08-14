@@ -1,0 +1,4 @@
+# pygame.ref.sndarray#pygame.sndarray.use_arraytype
+
+pygame.sndarray.use_arraytype() 
+ Sets the array system to be used for sound arrays use_arraytype (arraytype) -> None  DEPRECATED: Uses the requested array type for the module functions. The only supported arraytype is 'numpy'. Other values will raise ValueError.

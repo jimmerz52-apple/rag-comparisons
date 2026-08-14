@@ -1,0 +1,34 @@
+# skimage.api.skimage.filters.rank#skimage.filters.rank.entropy
+
+skimage.filters.rank.entropy(image, selem, out=None, mask=None, shift_x=False, shift_y=False, shift_z=False) [source]
+ 
+Local entropy. The entropy is computed using base 2 logarithm i.e. the filter returns the minimum number of bits needed to encode the local gray level distribution.  Parameters 
+ 
+image([P,] M, N) ndarray (uint8, uint16) 
+
+Input image.  
+selemndarray 
+
+The neighborhood expressed as an ndarray of 1’s and 0’s.  
+out([P,] M, N) array (same dtype as input) 
+
+If None, a new array is allocated.  
+maskndarray (integer or float), optional 
+
+Mask array that defines (>0) area of the image included in the local neighborhood. If None, the complete image is used (default).  
+shift_x, shift_y, shift_zint 
+
+Offset added to the structuring element center point. Shift is bounded to the structuring element sizes (center must be inside the given structuring element).    Returns 
+ 
+out([P,] M, N) ndarray (float) 
+
+Output image.     References  
+1  
+https://en.wikipedia.org/wiki/Entropy_(information_theory)   Examples >>> from skimage import data
+>>> from skimage.filters.rank import entropy
+>>> from skimage.morphology import disk, ball
+>>> import numpy as np
+>>> img = data.camera()
+>>> volume = np.random.randint(0, 255, size=(10,10,10), dtype=np.uint8)
+>>> ent = entropy(img, disk(5))
+>>> ent_vol = entropy(volume, ball(5))

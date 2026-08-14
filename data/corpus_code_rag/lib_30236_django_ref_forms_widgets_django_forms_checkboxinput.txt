@@ -1,0 +1,11 @@
+# django.ref.forms.widgets#django.forms.CheckboxInput
+
+class CheckboxInput  
+ 
+input_type: 'checkbox'
+ 
+template_name: 'django/forms/widgets/checkbox.html'
+ Renders as: <input type="checkbox" ...>
+  Takes one optional argument:  
+check_test  
+A callable that takes the value of the CheckboxInput and returns True if the checkbox should be checked for that value.

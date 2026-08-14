@@ -1,0 +1,4 @@
+# python.library.os#os.setregid
+
+os.setregid(rgid, egid)  
+Set the current process’s real and effective group ids. Availability: Unix.

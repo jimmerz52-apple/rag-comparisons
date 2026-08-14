@@ -1,0 +1,4 @@
+# pygame.ref.transform#pygame.transform.scale
+
+pygame.transform.scale() 
+ resize to new resolution scale(Surface, (width, height), DestSurface = None) -> Surface  Resizes the Surface to a new resolution. This is a fast scale operation that does not sample the results. An optional destination surface can be used, rather than have it create a new one. This is quicker if you want to repeatedly scale something. However the destination must be the same size as the (width, height) passed in. Also the destination surface must be the same format.

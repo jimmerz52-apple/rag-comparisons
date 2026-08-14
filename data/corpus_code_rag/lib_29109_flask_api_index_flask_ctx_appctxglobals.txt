@@ -1,0 +1,34 @@
+# flask.api.index#flask.ctx._AppCtxGlobals
+
+class flask.ctx._AppCtxGlobals  
+A plain object. Used as a namespace for storing data during an application context. Creating an app context automatically creates this object, which is made available as the g proxy.   'key' in g
+ 
+Check whether an attribute is present.  Changelog New in version 0.10.  
+
+   iter(g)
+ 
+Return an iterator over the attribute names.  Changelog New in version 0.10.  
+
+  
+get(name, default=None)  
+Get an attribute by name, or a default value. Like dict.get().  Parameters 
+ 
+name (str) – Name of attribute to get. 
+default (Optional[Any]) – Value to return if the attribute is not present.   Return type 
+Any    Changelog New in version 0.10.  
+
+  
+pop(name, default=<object object>)  
+Get and remove an attribute by name. Like dict.pop().  Parameters 
+ 
+name (str) – Name of attribute to pop. 
+default (Any) – Value to return if the attribute is not present, instead of raising a KeyError.   Return type 
+Any    Changelog New in version 0.11.  
+
+  
+setdefault(name, default=None)  
+Get the value of an attribute if it is present, otherwise set and return a default value. Like dict.setdefault().  Parameters 
+ 
+name (str) – Name of attribute to get. 
+default (Optional[Any]) – Value to set and return if the attribute is not present.   Return type 
+Any    Changelog New in version 0.11.

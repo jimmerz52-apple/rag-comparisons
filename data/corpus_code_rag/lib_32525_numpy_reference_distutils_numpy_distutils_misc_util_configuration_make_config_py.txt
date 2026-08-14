@@ -1,0 +1,5 @@
+# numpy.reference.distutils#numpy.distutils.misc_util.Configuration.make_config_py
+
+make_config_py(name='__config__')[source]
+ 
+Generate package __config__.py file containing system_info information used during building the package. This file is installed to the package installation directory.

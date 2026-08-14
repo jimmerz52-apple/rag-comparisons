@@ -1,0 +1,18 @@
+# sklearn.modules.generated.sklearn.linear_model.ridgecv#sklearn.linear_model.RidgeCV.fit
+
+fit(X, y, sample_weight=None) [source]
+ 
+Fit Ridge regression model with cv.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features) 
+
+Training data. If using GCV, will be cast to float64 if necessary.  
+yndarray of shape (n_samples,) or (n_samples, n_targets) 
+
+Target values. Will be cast to X’s dtype if necessary.  
+sample_weightfloat or ndarray of shape (n_samples,), default=None 
+
+Individual weights for each sample. If given a float, every sample will have the same weight.    Returns 
+ 
+selfobject 
+   Notes When sample_weight is provided, the selected hyperparameter may depend on whether we use leave-one-out cross-validation (cv=None or cv=’auto’) or another form of cross-validation, because only leave-one-out cross-validation takes the sample weights into account when computing the validation score.

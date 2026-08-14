@@ -1,0 +1,4 @@
+# python.library.telnetlib#telnetlib.Telnet.mt_interact
+
+Telnet.mt_interact()  
+Multithreaded version of interact().

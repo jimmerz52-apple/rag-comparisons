@@ -1,0 +1,5 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.dotproduct#sklearn.gaussian_process.kernels.DotProduct.is_stationary
+
+is_stationary() [source]
+ 
+Returns whether the kernel is stationary.

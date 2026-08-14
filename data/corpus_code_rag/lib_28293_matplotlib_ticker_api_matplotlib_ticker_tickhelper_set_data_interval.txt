@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.TickHelper.set_data_interval
+
+set_data_interval(vmin, vmax)[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

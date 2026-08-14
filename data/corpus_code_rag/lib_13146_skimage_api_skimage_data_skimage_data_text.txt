@@ -1,0 +1,9 @@
+# skimage.api.skimage.data#skimage.data.text
+
+skimage.data.text() [source]
+ 
+Gray-level “text” image used for corner detection.  Returns 
+ 
+text(172, 448) uint8 ndarray 
+
+Text image.     Notes This image was downloaded from Wikipedia <https://en.wikipedia.org/wiki/File:Corner.png>`__. No known copyright restrictions, released into the public domain.

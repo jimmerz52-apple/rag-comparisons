@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.polyval
+
+tf.experimental.numpy.polyval TensorFlow variant of NumPy's polyval. 
+tf.experimental.numpy.polyval(
+    p, x
+)
+ See the NumPy documentation for numpy.polyval.

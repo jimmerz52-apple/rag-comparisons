@@ -1,0 +1,24 @@
+# python.library.unittest.mock#unittest.mock.Mock.mock_calls
+
+mock_calls  
+mock_calls records all calls to the mock object, its methods, magic methods and return value mocks. >>> mock = MagicMock()
+>>> result = mock(1, 2, 3)
+>>> mock.first(a=3)
+<MagicMock name='mock.first()' id='...'>
+>>> mock.second()
+<MagicMock name='mock.second()' id='...'>
+>>> int(mock)
+1
+>>> result(1)
+<MagicMock name='mock()()' id='...'>
+>>> expected = [call(1, 2, 3), call.first(a=3), call.second(),
+... call.__int__(), call()(1)]
+>>> mock.mock_calls == expected
+True
+ Members of mock_calls are call objects. These can be unpacked as tuples to get at the individual arguments. See calls as tuples.  Note The way mock_calls are recorded means that where nested calls are made, the parameters of ancestor calls are not recorded and so will always compare equal: >>> mock = MagicMock()
+>>> mock.top(a=3).bottom()
+<MagicMock name='mock.top().bottom()' id='...'>
+>>> mock.mock_calls
+[call.top(a=3), call.top().bottom()]
+>>> mock.mock_calls[-1] == call.top(a=-1).bottom()
+True

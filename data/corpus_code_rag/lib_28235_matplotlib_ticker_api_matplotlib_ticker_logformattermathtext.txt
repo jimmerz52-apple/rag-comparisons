@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.LogFormatterMathtext
+
+classmatplotlib.ticker.LogFormatterMathtext(base=10.0, labelOnlyBase=False, minor_thresholds=None, linthresh=None)[source]
+ 
+Bases: matplotlib.ticker.LogFormatter Format values for log axis using exponent = log_base(value).

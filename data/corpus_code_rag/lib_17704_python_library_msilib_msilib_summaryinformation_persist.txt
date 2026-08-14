@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.SummaryInformation.Persist
+
+SummaryInformation.Persist()  
+Write the modified properties to the summary information stream, using MsiSummaryInfoPersist().

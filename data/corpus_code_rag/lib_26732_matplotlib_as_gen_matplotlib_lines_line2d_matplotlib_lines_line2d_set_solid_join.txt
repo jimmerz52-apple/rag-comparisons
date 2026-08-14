@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.set_solid_joinstyle
+
+set_solid_joinstyle(s)[source]
+ 
+How to join segments if the line is solid (not is_dashed).  Parameters 
+ 
+sJoinStyle or {'miter', 'round', 'bevel'}

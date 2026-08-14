@@ -1,0 +1,4 @@
+# python.library.wsgiref#wsgiref.handlers.BaseHandler.traceback_limit
+
+traceback_limit  
+The maximum number of frames to include in tracebacks output by the default log_exception() method. If None, all frames are included.

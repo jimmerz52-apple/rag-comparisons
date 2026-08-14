@@ -1,0 +1,5 @@
+# django.topics.cache#django.core.cache.cache
+
+django.core.cache.cache  
+As a shortcut, the default cache is available as django.core.cache.cache: >>> from django.core.cache import cache
+ This object is equivalent to caches['default'].

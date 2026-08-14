@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.get_edited_object
+
+LogEntry.get_edited_object()  
+A shortcut that returns the referenced object.

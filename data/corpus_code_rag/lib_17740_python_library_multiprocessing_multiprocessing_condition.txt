@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.Condition
+
+class multiprocessing.Condition([lock])  
+A condition variable: an alias for threading.Condition. If lock is specified then it should be a Lock or RLock object from multiprocessing.  Changed in version 3.3: The wait_for() method was added.

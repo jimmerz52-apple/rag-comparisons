@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.MultiValueField.fields
+
+fields  
+A tuple of fields whose values are cleaned and subsequently combined into a single value. Each value of the field is cleaned by the corresponding field in fields – the first value is cleaned by the first field, the second value is cleaned by the second field, etc. Once all fields are cleaned, the list of clean values is combined into a single value by compress().

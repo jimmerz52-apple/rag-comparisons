@@ -1,0 +1,9 @@
+# matplotlib.text_api#matplotlib.text.Text.set_fontweight
+
+set_fontweight(weight)[source]
+ 
+Set the font weight.  Parameters 
+ 
+weight{a numeric value in range 0-1000, 'ultralight', 'light', 'normal', 'regular', 'book', 'medium', 'roman', 'semibold', 'demibold', 'demi', 'bold', 'heavy', 'extra bold', 'black'}
+
+    See also  font_manager.FontProperties.set_weight

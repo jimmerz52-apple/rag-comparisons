@@ -1,0 +1,25 @@
+# python.library.sqlite3#sqlite3.Connection.create_aggregate
+
+create_aggregate(name, num_params, aggregate_class)  
+Creates a user-defined aggregate function. The aggregate class must implement a step method, which accepts the number of parameters num_params (if num_params is -1, the function may take any number of arguments), and a finalize method which will return the final result of the aggregate. The finalize method can return any of the types supported by SQLite: bytes, str, int, float and None. Example: import sqlite3
+
+class MySum:
+    def __init__(self):
+        self.count = 0
+
+    def step(self, value):
+        self.count += value
+
+    def finalize(self):
+        return self.count
+
+con = sqlite3.connect(":memory:")
+con.create_aggregate("mysum", 1, MySum)
+cur = con.cursor()
+cur.execute("create table test(i)")
+cur.execute("insert into test(i) values (1)")
+cur.execute("insert into test(i) values (2)")
+cur.execute("select mysum(i) from test")
+print(cur.fetchone()[0])
+
+con.close()

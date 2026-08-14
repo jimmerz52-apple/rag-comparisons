@@ -1,0 +1,7 @@
+# torch.generated.torch.nn.module#torch.nn.Module.bfloat16
+
+bfloat16() [source]
+ 
+Casts all floating point parameters and buffers to bfloat16 datatype.  Returns 
+self  Return type 
+Module

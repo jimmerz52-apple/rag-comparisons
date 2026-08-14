@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder.pi
+
+pi(target, text)  
+Creates a comment with the given target name and text. If insert_pis is true, this will also add it to the tree.  New in version 3.8.

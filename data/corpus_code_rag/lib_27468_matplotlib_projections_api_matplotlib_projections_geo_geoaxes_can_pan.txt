@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.geo.GeoAxes.can_pan
+
+can_pan()[source]
+ 
+Return whether this axes supports the pan/zoom button functionality. This axes object does not support interactive pan/zoom.

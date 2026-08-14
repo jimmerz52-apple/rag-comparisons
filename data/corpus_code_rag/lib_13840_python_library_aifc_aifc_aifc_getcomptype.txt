@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getcomptype
+
+aifc.getcomptype()  
+Return a bytes array of length 4 describing the type of compression used in the audio file. For AIFF files, the returned value is b'NONE'.

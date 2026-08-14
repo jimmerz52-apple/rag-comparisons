@@ -1,0 +1,10 @@
+# python.library.os#os.O_SEQUENTIAL
+
+os.O_BINARY  
+os.O_NOINHERIT  
+os.O_SHORT_LIVED  
+os.O_TEMPORARY  
+os.O_RANDOM  
+os.O_SEQUENTIAL  
+os.O_TEXT  
+The above constants are only available on Windows.

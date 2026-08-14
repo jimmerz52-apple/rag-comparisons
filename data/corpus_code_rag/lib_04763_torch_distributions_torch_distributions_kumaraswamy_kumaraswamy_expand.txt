@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.kumaraswamy.Kumaraswamy.expand
+
+expand(batch_shape, _instance=None) [source]

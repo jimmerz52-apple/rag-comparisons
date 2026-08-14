@@ -1,0 +1,8 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.XMLPullParser.read_events
+
+read_events()  
+Return an iterator over the events which have been encountered in the data fed to the parser. The iterator yields (event, elem) pairs, where event is a string representing the type of event (e.g. "end") and elem is the encountered Element object, or other context value as follows.  
+start, end: the current Element. 
+comment, pi: the current comment / processing instruction 
+start-ns: a tuple (prefix, uri) naming the declared namespace mapping. 
+end-ns: None (this may change in a future version)  Events provided in a previous call to read_events() will not be yielded again. Events are consumed from the internal queue only when they are retrieved from the iterator, so multiple readers iterating in parallel over iterators obtained from read_events() will have unpredictable results.

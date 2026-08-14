@@ -1,0 +1,4 @@
+# python.library.logging.handlers#logging.handlers.SMTPHandler.emit
+
+emit(record)  
+Formats the record and sends it to the specified addressees.

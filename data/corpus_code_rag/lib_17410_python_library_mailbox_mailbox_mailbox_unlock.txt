@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.unlock
+
+unlock()  
+Release the lock on the mailbox, if any.

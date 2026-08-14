@@ -1,0 +1,4 @@
+# python.library.math#math.isfinite
+
+math.isfinite(x)  
+Return True if x is neither an infinity nor a NaN, and False otherwise. (Note that 0.0 is considered finite.)  New in version 3.2.

@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_locked
+
+get_locked() 
+ test if the Surface is current locked get_locked() -> bool  Returns True when the Surface is locked. It doesn't matter how many times the Surface is locked.

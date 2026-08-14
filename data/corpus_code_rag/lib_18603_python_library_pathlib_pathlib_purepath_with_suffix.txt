@@ -1,0 +1,12 @@
+# python.library.pathlib#pathlib.PurePath.with_suffix
+
+PurePath.with_suffix(suffix)  
+Return a new path with the suffix changed. If the original path doesn’t have a suffix, the new suffix is appended instead. If the suffix is an empty string, the original suffix is removed: >>> p = PureWindowsPath('c:/Downloads/pathlib.tar.gz')
+>>> p.with_suffix('.bz2')
+PureWindowsPath('c:/Downloads/pathlib.tar.bz2')
+>>> p = PureWindowsPath('README')
+>>> p.with_suffix('.txt')
+PureWindowsPath('README.txt')
+>>> p = PureWindowsPath('README.txt')
+>>> p.with_suffix('')
+PureWindowsPath('README')

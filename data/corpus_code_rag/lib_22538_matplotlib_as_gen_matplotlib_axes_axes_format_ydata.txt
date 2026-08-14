@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.format_ydata
+
+matplotlib.axes.Axes.format_ydata   Axes.format_ydata(y)[source]
+ 
+Return y formatted as an y-value. This function will use the fmt_ydata attribute if it is not None, else will fall back on the yaxis major formatter.

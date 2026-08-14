@@ -1,0 +1,4 @@
+# python.library.xml.dom.pulldom#xml.dom.pulldom.default_bufsize
+
+xml.dom.pulldom.default_bufsize  
+Default value for the bufsize parameter to parse(). The value of this variable can be changed before calling parse() and the new value will take effect.

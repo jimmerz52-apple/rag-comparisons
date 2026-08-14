@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.SimpleHTTPRequestHandler.directory
+
+directory  
+If not specified, the directory to serve is the current working directory.  Changed in version 3.9: Accepts a path-like object.

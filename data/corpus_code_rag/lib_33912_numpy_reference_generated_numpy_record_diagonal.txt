@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.diagonal
+
+numpy.record.diagonal method   record.diagonal()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.diagonal.

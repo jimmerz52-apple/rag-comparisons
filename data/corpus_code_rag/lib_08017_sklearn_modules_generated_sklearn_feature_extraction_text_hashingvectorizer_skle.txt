@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.hashingvectorizer#sklearn.feature_extraction.text.HashingVectorizer.transform
+
+transform(X) [source]
+ 
+Transform a sequence of documents to a document-term matrix.  Parameters 
+ 
+Xiterable over raw text documents, length = n_samples 
+
+Samples. Each sample must be a text document (either bytes or unicode strings, file name or file object depending on the constructor argument) which will be tokenized and hashed.    Returns 
+ 
+Xsparse matrix of shape (n_samples, n_features) 
+
+Document-term matrix.

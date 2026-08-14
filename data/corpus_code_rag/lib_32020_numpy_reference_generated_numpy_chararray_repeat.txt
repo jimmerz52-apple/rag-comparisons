@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.chararray.repeat
+
+numpy.chararray.repeat method   chararray.repeat(repeats, axis=None)
+ 
+Repeat elements of an array. Refer to numpy.repeat for full documentation.  See also  numpy.repeat
+
+equivalent function

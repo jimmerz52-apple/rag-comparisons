@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.equal
+
+equal(other) → bool  
+See torch.equal()

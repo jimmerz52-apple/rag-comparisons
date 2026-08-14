@@ -1,0 +1,5 @@
+# matplotlib.colorbar_api#matplotlib.colorbar.Colorbar.draw_all
+
+draw_all()[source]
+ 
+Calculate any free parameters based on the current cmap and norm, and do all the drawing.

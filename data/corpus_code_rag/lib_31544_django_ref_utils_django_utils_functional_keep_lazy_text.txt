@@ -1,0 +1,15 @@
+# django.ref.utils#django.utils.functional.keep_lazy_text
+
+keep_lazy_text(func) [source]
+ 
+A shortcut for keep_lazy(str)(func). If you have a function that returns text and you want to be able to take lazy arguments while delaying their evaluation, you can use this decorator: from django.utils.functional import keep_lazy, keep_lazy_text
+
+# Our previous example was:
+@keep_lazy(str)
+def fancy_utility_function(s, ...):
+    ...
+
+# Which can be rewritten as:
+@keep_lazy_text
+def fancy_utility_function(s, ...):
+    ...

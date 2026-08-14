@@ -1,0 +1,4 @@
+# pygame.ref.mouse#pygame.mouse.get_cursor
+
+pygame.mouse.get_cursor() 
+ get the image of the mouse cursor get_cursor() -> (size, hotspot, xormasks, andmasks)  Get the information about the mouse system cursor. The return value is the same data as the arguments passed into pygame.mouse.set_cursor().  Note This method is unavailable with pygame 2, as SDL2 does not provide the underlying code to implement this method.

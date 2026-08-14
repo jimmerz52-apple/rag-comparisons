@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_read.getsampwidth
+
+Wave_read.getsampwidth()  
+Returns sample width in bytes.

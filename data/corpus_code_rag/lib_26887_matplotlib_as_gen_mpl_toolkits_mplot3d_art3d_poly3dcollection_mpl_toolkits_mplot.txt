@@ -1,0 +1,10 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.poly3dcollection#mpl_toolkits.mplot3d.art3d.Poly3DCollection.set_edgecolor
+
+set_edgecolor(colors)[source]
+ 
+Set the edgecolor(s) of the collection.  Parameters 
+ 
+ccolor or list of colors or 'face'
+
+
+The collection edgecolor(s). If a sequence, the patches cycle through it. If 'face', match the facecolor.

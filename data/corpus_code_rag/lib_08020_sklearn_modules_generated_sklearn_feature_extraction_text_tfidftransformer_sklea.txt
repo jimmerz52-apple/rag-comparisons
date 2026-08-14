@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidftransformer#sklearn.feature_extraction.text.TfidfTransformer.fit
+
+fit(X, y=None) [source]
+ 
+Learn the idf vector (global term weights).  Parameters 
+ 
+Xsparse matrix of shape n_samples, n_features) 
+
+A matrix of term/token counts.

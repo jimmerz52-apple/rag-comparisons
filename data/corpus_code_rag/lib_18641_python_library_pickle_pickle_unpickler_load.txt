@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.Unpickler.load
+
+load()  
+Read the pickled representation of an object from the open file object given in the constructor, and return the reconstituted object hierarchy specified therein. Bytes past the pickled representation of the object are ignored.

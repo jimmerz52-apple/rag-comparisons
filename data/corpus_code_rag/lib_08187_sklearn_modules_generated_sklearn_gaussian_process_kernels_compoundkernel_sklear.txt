@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.compoundkernel#sklearn.gaussian_process.kernels.CompoundKernel.requires_vector_input
+
+property requires_vector_input  
+Returns whether the kernel is defined on discrete structures.

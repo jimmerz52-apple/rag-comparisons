@@ -1,0 +1,7 @@
+# python.library.datetime#datetime.date.fromisoformat
+
+classmethod date.fromisoformat(date_string)  
+Return a date corresponding to a date_string given in the format YYYY-MM-DD: >>> from datetime import date
+>>> date.fromisoformat('2019-12-04')
+datetime.date(2019, 12, 4)
+ This is the inverse of date.isoformat(). It only supports the format YYYY-MM-DD.  New in version 3.7.

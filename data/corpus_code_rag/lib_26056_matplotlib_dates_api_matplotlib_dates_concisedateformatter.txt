@@ -1,0 +1,43 @@
+# matplotlib.dates_api#matplotlib.dates.ConciseDateFormatter
+
+classmatplotlib.dates.ConciseDateFormatter(locator, tz=None, formats=None, offset_formats=None, zero_formats=None, show_offset=True, *, usetex=None)[source]
+ 
+Bases: matplotlib.ticker.Formatter A Formatter which attempts to figure out the best format to use for the date, and to make it as compact as possible, but still be complete. This is most useful when used with the AutoDateLocator: >>> locator = AutoDateLocator()
+>>> formatter = ConciseDateFormatter(locator)
+  Parameters 
+ 
+locatorticker.Locator
+
+
+Locator that this axis is using.  
+tzstr, optional
+
+
+Passed to dates.date2num.  
+formatslist of 6 strings, optional
+
+
+Format strings for 6 levels of tick labelling: mostly years, months, days, hours, minutes, and seconds. Strings use the same format codes as strftime. Default is ['%Y', '%b', '%d', '%H:%M', '%H:%M', '%S.%f']  
+zero_formatslist of 6 strings, optional
+
+
+Format strings for tick labels that are "zeros" for a given tick level. For instance, if most ticks are months, ticks around 1 Jan 2005 will be labeled "Dec", "2005", "Feb". The default is ['', '%Y', '%b', '%b-%d', '%H:%M', '%H:%M']  
+offset_formatslist of 6 strings, optional
+
+
+Format strings for the 6 levels that is applied to the "offset" string found on the right side of an x-axis, or top of a y-axis. Combined with the tick labels this should completely specify the date. The default is: ['', '%Y', '%Y-%b', '%Y-%b-%d', '%Y-%b-%d', '%Y-%b-%d %H:%M']
+  
+show_offsetbool, default: True
+
+
+Whether to show the offset or not.  
+usetexbool, default: rcParams["text.usetex"] (default: False)
+
+
+To enable/disable the use of TeX's math mode for rendering the results of the formatter.     Examples See Formatting date ticks using ConciseDateFormatter (Source code, png, pdf)    Autoformat the date labels. The default format is used to form an initial string, and then redundant elements are removed.   format_data_short(value)[source]
+ 
+Return a short string version of the tick value. Defaults to the position-independent long value. 
+   format_ticks(values)[source]
+ 
+Return the tick labels for all the ticks at once. 
+   get_offset()[source]

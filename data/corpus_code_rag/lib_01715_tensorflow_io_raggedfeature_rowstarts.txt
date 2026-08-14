@@ -1,0 +1,13 @@
+# tensorflow.io.raggedfeature.rowstarts
+
+tf.io.RaggedFeature.RowStarts RowStarts(key,)  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.io.RaggedFeature.RowStarts  
+tf.io.RaggedFeature.RowStarts(
+    key
+)
+
+ 
+
+
+ Attributes
+  key

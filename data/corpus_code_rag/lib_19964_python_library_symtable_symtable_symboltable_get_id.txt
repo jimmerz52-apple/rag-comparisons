@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_id
+
+get_id()  
+Return the table’s identifier.

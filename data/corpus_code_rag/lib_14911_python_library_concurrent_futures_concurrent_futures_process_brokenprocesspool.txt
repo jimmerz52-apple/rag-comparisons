@@ -1,0 +1,4 @@
+# python.library.concurrent.futures#concurrent.futures.process.BrokenProcessPool
+
+exception concurrent.futures.process.BrokenProcessPool  
+Derived from BrokenExecutor (formerly RuntimeError), this exception class is raised when one of the workers of a ProcessPoolExecutor has terminated in a non-clean fashion (for example, if it was killed from the outside).  New in version 3.3.

@@ -1,0 +1,4 @@
+# flask.config.index#SEND_FILE_MAX_AGE_DEFAULT
+
+SEND_FILE_MAX_AGE_DEFAULT  
+When serving files, set the cache control max age to this number of seconds. Can be a datetime.timedelta or an int. Override this value on a per-file basis using get_send_file_max_age() on the application or blueprint. If None, send_file tells the browser to use conditional requests will be used instead of a timed cache, which is usually preferable. Default: None

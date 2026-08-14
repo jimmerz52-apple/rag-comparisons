@@ -1,0 +1,3 @@
+# torch.storage#torch.FloatStorage.element_size
+
+element_size()

@@ -1,0 +1,4 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.CharsetAccept
+
+class werkzeug.datastructures.CharsetAccept(values=())  
+Like Accept but with normalization for charsets.

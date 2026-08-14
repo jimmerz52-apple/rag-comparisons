@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.set_default_executor
+
+loop.set_default_executor(executor)  
+Set executor as the default executor used by run_in_executor(). executor should be an instance of ThreadPoolExecutor.  Deprecated since version 3.8: Using an executor that is not an instance of ThreadPoolExecutor is deprecated and will trigger an error in Python 3.9.  executor must be an instance of concurrent.futures.ThreadPoolExecutor.

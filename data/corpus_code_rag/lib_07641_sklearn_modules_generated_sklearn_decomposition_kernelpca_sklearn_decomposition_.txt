@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.decomposition.kernelpca#sklearn.decomposition.KernelPCA.transform
+
+transform(X) [source]
+ 
+Transform X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+  Returns 
+ 
+X_newndarray of shape (n_samples, n_components)

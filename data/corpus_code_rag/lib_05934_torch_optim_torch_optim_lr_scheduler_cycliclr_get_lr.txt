@@ -1,0 +1,5 @@
+# torch.optim#torch.optim.lr_scheduler.CyclicLR.get_lr
+
+get_lr() [source]
+ 
+Calculates the learning rate at batch index. This function treats self.last_epoch as the last batch index. If self.cycle_momentum is True, this function has a side effect of updating the optimizer’s momentum.

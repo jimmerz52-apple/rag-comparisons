@@ -1,0 +1,4 @@
+# torch.distributions#torch.distributions.constraints.greater_than
+
+torch.distributions.constraints.greater_than  
+alias of torch.distributions.constraints._GreaterThan

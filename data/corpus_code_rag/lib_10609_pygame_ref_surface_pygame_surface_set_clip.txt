@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.set_clip
+
+set_clip() 
+ set the current clipping area of the Surface set_clip(rect) -> None set_clip(None) -> None  Each Surface has an active clipping area. This is a rectangle that represents the only pixels on the Surface that can be modified. If None is passed for the rectangle the full Surface will be available for changes. The clipping area is always restricted to the area of the Surface itself. If the clip rectangle is too large it will be shrunk to fit inside the Surface.

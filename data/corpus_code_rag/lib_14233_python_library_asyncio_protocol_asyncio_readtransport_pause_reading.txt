@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.ReadTransport.pause_reading
+
+ReadTransport.pause_reading()  
+Pause the receiving end of the transport. No data will be passed to the protocol’s protocol.data_received() method until resume_reading() is called.  Changed in version 3.7: The method is idempotent, i.e. it can be called when the transport is already paused or closed.

@@ -1,0 +1,5 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.quote_ps_string
+
+matplotlib.backends.backend_ps.quote_ps_string(s)[source]
+ 
+Quote dangerous characters of S for use in a PostScript string constant.

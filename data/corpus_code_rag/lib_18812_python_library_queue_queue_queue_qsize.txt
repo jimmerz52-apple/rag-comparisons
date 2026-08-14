@@ -1,0 +1,4 @@
+# python.library.queue#queue.Queue.qsize
+
+Queue.qsize()  
+Return the approximate size of the queue. Note, qsize() > 0 doesn’t guarantee that a subsequent get() will not block, nor will qsize() < maxsize guarantee that put() will not block.

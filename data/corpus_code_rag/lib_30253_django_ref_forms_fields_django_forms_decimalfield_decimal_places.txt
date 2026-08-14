@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.DecimalField.decimal_places
+
+decimal_places  
+The maximum number of decimal places permitted.

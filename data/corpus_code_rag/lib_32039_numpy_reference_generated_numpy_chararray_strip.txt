@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.chararray.strip
+
+numpy.chararray.strip method   chararray.strip(chars=None)[source]
+ 
+For each element in self, return a copy with the leading and trailing characters removed.  See also  char.strip

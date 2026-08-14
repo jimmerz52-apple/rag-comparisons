@@ -1,0 +1,4 @@
+# python.library.xdrlib#xdrlib.Unpacker.set_position
+
+Unpacker.set_position(position)  
+Sets the data buffer unpack position to position. You should be careful about using get_position() and set_position().

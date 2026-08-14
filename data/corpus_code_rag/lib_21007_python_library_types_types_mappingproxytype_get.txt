@@ -1,0 +1,4 @@
+# python.library.types#types.MappingProxyType.get
+
+get(key[, default])  
+Return the value for key if key is in the underlying mapping, else default. If default is not given, it defaults to None, so that this method never raises a KeyError.

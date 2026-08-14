@@ -1,0 +1,17 @@
+# numpy.reference.random.generated.numpy.random.randomstate.set_state
+
+numpy.random.RandomState.set_state method   random.RandomState.set_state(state)
+ 
+Set the internal state of the generator from a tuple. For use if one has reason to manually (re-)set the internal state of the bit generator used by the RandomState instance. By default, RandomState uses the “Mersenne Twister”[1] pseudo-random number generating algorithm.  Parameters 
+ 
+state{tuple(str, ndarray of 624 uints, int, int, float), dict}
+
+
+The state tuple has the following items:  the string ‘MT19937’, specifying the Mersenne Twister algorithm. a 1-D array of 624 unsigned integers keys. an integer pos. an integer has_gauss. a float cached_gaussian.  If state is a dictionary, it is directly set using the BitGenerators state property.    Returns 
+ 
+outNone
+
+
+Returns ‘None’ on success.      See also  get_state
+  Notes set_state and get_state are not needed to work with any of the random distributions in NumPy. If the internal state is manually altered, the user should know exactly what he/she is doing. For backwards compatibility, the form (str, array of 624 uints, int) is also accepted although it is missing some information about the cached Gaussian value: state = ('MT19937', keys, pos). References  1 
+M. Matsumoto and T. Nishimura, “Mersenne Twister: A 623-dimensionally equidistributed uniform pseudorandom number generator,” ACM Trans. on Modeling and Computer Simulation, Vol. 8, No. 1, pp. 3-30, Jan. 1998.

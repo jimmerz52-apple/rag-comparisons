@@ -1,0 +1,5 @@
+# torch.amp#torch.cuda.amp.GradScaler.get_growth_factor
+
+get_growth_factor() [source]
+ 
+Returns a Python float containing the scale growth factor.

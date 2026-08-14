@@ -1,0 +1,5 @@
+# matplotlib.tri_api#matplotlib.tri.Triangulation.get_masked_triangles
+
+get_masked_triangles()[source]
+ 
+Return an array of triangles that are not masked.

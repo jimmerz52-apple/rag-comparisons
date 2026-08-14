@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.utils.extmath.density#sklearn.utils.extmath.density
+
+sklearn.utils.extmath.density(w, **kwargs) [source]
+ 
+Compute density of a sparse vector.  Parameters 
+ 
+warray-like 
+
+The sparse vector.    Returns 
+ float
+
+The density of w, between 0 and 1.

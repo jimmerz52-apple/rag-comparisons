@@ -1,0 +1,10 @@
+# werkzeug.wsgi.index#werkzeug.wsgi.get_host
+
+werkzeug.wsgi.get_host(environ, trusted_hosts=None)  
+Return the host for the given WSGI environment. The Host header is preferred, then SERVER_NAME if it’s not set. The returned host will only contain the port if it is different than the standard port for the protocol. Optionally, verify that the host is trusted using host_is_trusted() and raise a SecurityError if it is not.  Parameters 
+ 
+environ (WSGIEnvironment) – A WSGI environment dict. 
+trusted_hosts (Optional[Iterable[str]]) – A list of trusted host names.   Returns 
+Host, with port if necessary.  Raises 
+SecurityError – If the host is not trusted.  Return type 
+str

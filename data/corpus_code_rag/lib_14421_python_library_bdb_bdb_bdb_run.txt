@@ -1,0 +1,4 @@
+# python.library.bdb#bdb.Bdb.run
+
+run(cmd, globals=None, locals=None)  
+Debug a statement executed via the exec() function. globals defaults to __main__.__dict__, locals defaults to globals.

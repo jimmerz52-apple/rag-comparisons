@@ -1,0 +1,4 @@
+# python.library.sqlite3#sqlite3.sqlite_version_info
+
+sqlite3.sqlite_version_info  
+The version number of the run-time SQLite library, as a tuple of integers.

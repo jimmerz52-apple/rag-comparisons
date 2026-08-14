@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedPath.get_fully_transformed_path
+
+get_fully_transformed_path()[source]
+ 
+Return a fully-transformed copy of the child path.

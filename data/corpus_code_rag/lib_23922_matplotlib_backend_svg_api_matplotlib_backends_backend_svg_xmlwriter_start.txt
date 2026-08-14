@@ -1,0 +1,11 @@
+# matplotlib.backend_svg_api#matplotlib.backends.backend_svg.XMLWriter.start
+
+start(tag, attrib={}, **extra)[source]
+ 
+Open a new element. Attributes can be given as keyword arguments, or as a string/string dictionary. The method returns an opaque identifier that can be passed to the close() method, to close all open elements up to and including this one.  Parameters 
+ tag
+
+Element tag.  attrib
+
+Attribute dictionary. Alternatively, attributes can be given as keyword arguments.    Returns 
+ An element identifier.

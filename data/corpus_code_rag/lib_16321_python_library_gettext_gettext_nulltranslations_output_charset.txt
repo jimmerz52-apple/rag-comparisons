@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.output_charset
+
+output_charset()  
+Return the encoding used to return translated messages in lgettext() and lngettext().  Deprecated since version 3.8, will be removed in version 3.10.

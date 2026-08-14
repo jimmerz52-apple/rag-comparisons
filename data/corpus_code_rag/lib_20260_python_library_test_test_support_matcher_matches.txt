@@ -1,0 +1,4 @@
+# python.library.test#test.support.Matcher.matches
+
+matches(self, d, **kwargs)  
+Try to match a single dict with the supplied arguments.

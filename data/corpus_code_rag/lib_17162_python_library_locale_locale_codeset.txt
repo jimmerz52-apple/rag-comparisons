@@ -1,0 +1,4 @@
+# python.library.locale#locale.CODESET
+
+locale.CODESET  
+Get a string with the name of the character encoding used in the selected locale.

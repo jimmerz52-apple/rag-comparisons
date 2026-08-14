@@ -1,0 +1,5 @@
+# matplotlib.path_api#matplotlib.path.Path.intersects_path
+
+intersects_path(other, filled=True)[source]
+ 
+Return whether if this path intersects another given path. If filled is True, then this also returns True if one path completely encloses the other (i.e., the paths are treated as filled).

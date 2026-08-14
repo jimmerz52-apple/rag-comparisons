@@ -1,0 +1,5 @@
+# django.ref.request-response#django.http.QueryDict.__contains__
+
+QueryDict.__contains__(key)  
+Returns True if the given key is set. This lets you do, e.g., if "foo"
+in request.GET.

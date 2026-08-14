@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.day.is_year_start
+
+pandas.tseries.offsets.Day.is_year_start   Day.is_year_start()

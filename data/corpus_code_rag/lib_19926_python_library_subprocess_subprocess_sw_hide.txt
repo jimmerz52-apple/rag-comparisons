@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.SW_HIDE
+
+subprocess.SW_HIDE  
+Hides the window. Another window will be activated.

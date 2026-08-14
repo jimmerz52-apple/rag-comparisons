@@ -1,0 +1,4 @@
+# python.library.turtle#turtle.listen
+
+turtle.listen(xdummy=None, ydummy=None)  
+Set focus on TurtleScreen (in order to collect key-events). Dummy arguments are provided in order to be able to pass listen() to the onclick method.

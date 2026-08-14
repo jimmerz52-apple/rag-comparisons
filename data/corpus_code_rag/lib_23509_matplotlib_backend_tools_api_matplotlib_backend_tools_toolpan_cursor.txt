@@ -1,0 +1,5 @@
+# matplotlib.backend_tools_api#matplotlib.backend_tools.ToolPan.cursor
+
+cursor=4[source]
+ 
+Cursor to use when the tool is active.

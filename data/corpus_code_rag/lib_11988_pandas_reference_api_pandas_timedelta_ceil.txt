@@ -1,0 +1,10 @@
+# pandas.reference.api.pandas.timedelta.ceil
+
+pandas.Timedelta.ceil   Timedelta.ceil(freq)
+ 
+Return a new Timedelta ceiled to this resolution.  Parameters 
+ 
+freq:str
+
+
+Frequency string indicating the ceiling resolution.

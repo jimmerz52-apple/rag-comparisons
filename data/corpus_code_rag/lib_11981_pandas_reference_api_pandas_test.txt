@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.test
+
+pandas.test   pandas.test(extra_args=None)[source]
+ 
+Run the pandas test suite using pytest.

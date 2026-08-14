@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGCLD
+
+signal.SIGCLD  
+Alias to SIGCHLD.

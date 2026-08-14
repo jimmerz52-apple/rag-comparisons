@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.auto_set_font_size
+
+auto_set_font_size(renderer)[source]
+ 
+Shrink font size until the text fits into the cell width.

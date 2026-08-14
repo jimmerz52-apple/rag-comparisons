@@ -1,0 +1,6 @@
+# matplotlib._api_api#matplotlib._api.warn_external
+
+matplotlib._api.warn_external(message, category=None)[source]
+ 
+warnings.warn wrapper that sets stacklevel to "outside Matplotlib". The original emitter of the warning can be obtained by patching this function back to warnings.warn, i.e. _api.warn_external =
+warnings.warn (or functools.partial(warnings.warn, stacklevel=2), etc.).

@@ -1,0 +1,242 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch
+
+matplotlib.patches.FancyArrowPatch   classmatplotlib.patches.FancyArrowPatch(posA=None, posB=None, path=None, arrowstyle='simple', connectionstyle='arc3', patchA=None, patchB=None, shrinkA=2, shrinkB=2, mutation_scale=1, mutation_aspect=1, dpi_cor=<deprecated parameter>, **kwargs)[source]
+ 
+Bases: matplotlib.patches.Patch A fancy arrow patch. It draws an arrow using the ArrowStyle. The head and tail positions are fixed at the specified start and end points of the arrow, but the size and shape (in display coordinates) of the arrow does not change when the axis is moved or zoomed. There are two ways for defining an arrow:  If posA and posB are given, a path connecting two points is created according to connectionstyle. The path will be clipped with patchA and patchB and further shrunken by shrinkA and shrinkB. An arrow is drawn along this resulting path using the arrowstyle parameter. Alternatively if path is provided, an arrow is drawn along this path and patchA, patchB, shrinkA, and shrinkB are ignored.   Parameters 
+ 
+posA, posB(float, float), default: None
+
+
+(x, y) coordinates of arrow tail and arrow head respectively.  
+pathPath, default: None
+
+
+If provided, an arrow is drawn along this path and patchA, patchB, shrinkA, and shrinkB are ignored.  
+arrowstylestr or ArrowStyle, default: 'simple'
+
+
+The ArrowStyle with which the fancy arrow is drawn. If a string, it should be one of the available arrowstyle names, with optional comma-separated attributes. The optional attributes are meant to be scaled with the mutation_scale. The following arrow styles are available:   
+Class Name Attrs   
+Curve - None  
+CurveA <- head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None  
+CurveB -> head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None  
+CurveAB <-> head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None  
+CurveFilledA <|- head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None  
+CurveFilledB -|> head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None  
+CurveFilledAB <|-|> head_length=0.4, head_width=0.2, widthA=1.0, widthB=1.0, lengthA=0.2, lengthB=0.2, angleA=0, angleB=0, scaleA=None, scaleB=None  
+BracketA ]- widthA=1.0, lengthA=0.2, angleA=0  
+BracketB -[ widthB=1.0, lengthB=0.2, angleB=0  
+BracketAB ]-[ widthA=1.0, lengthA=0.2, angleA=0, widthB=1.0, lengthB=0.2, angleB=0  
+BarAB |-| widthA=1.0, angleA=0, widthB=1.0, angleB=0  
+BracketCurve ]-> widthA=1.0, lengthA=0.2, angleA=None  
+CurveBracket <-[ widthB=1.0, lengthB=0.2, angleB=None  
+Simple simple head_length=0.5, head_width=0.5, tail_width=0.2  
+Fancy fancy head_length=0.4, head_width=0.4, tail_width=0.4  
+Wedge wedge tail_width=0.3, shrink_factor=0.5    
+connectionstylestr or ConnectionStyle or None, optional, default: 'arc3'
+
+
+The ConnectionStyle with which posA and posB are connected. If a string, it should be one of the available connectionstyle names, with optional comma-separated attributes. The following connection styles are available:   
+Class Name Attrs   
+Arc3 arc3 rad=0.0  
+Angle3 angle3 angleA=90, angleB=0  
+Angle angle angleA=90, angleB=0, rad=0.0  
+Arc arc angleA=0, angleB=0, armA=None, armB=None, rad=0.0  
+Bar bar armA=0.0, armB=0.0, fraction=0.3, angle=None    
+patchA, patchBPatch, default: None
+
+
+Head and tail patches, respectively.  
+shrinkA, shrinkBfloat, default: 2
+
+
+Shrinking factor of the tail and head of the arrow respectively.  
+mutation_scalefloat, default: 1
+
+
+Value with which attributes of arrowstyle (e.g., head_length) will be scaled.  
+mutation_aspectNone or float, default: None
+
+
+The height of the rectangle will be squeezed by this value before the mutation and the mutated box will be stretched by the inverse of it.  
+dpi_corfloat, default: 1
+
+
+dpi_cor is currently used for linewidth-related things and shrink factor. Mutation scale is affected by this. Deprecated.    Other Parameters 
+ 
+**kwargsPatch properties, optional
+
+
+Here is a list of available Patch properties:   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha unknown  
+animated bool  
+antialiased or aa bool or None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   In contrast to other patches, the default capstyle and joinstyle for FancyArrowPatch are set to "round".       draw(renderer)[source]
+ 
+Draw the Artist (and its children) using the given renderer. This has no effect if the artist is not visible (Artist.get_visible returns False).  Parameters 
+ 
+rendererRendererBase subclass.
+
+   Notes This method is overridden in the Artist subclasses. 
+   get_arrowstyle()[source]
+ 
+Return the arrowstyle object. 
+   get_connectionstyle()[source]
+ 
+Return the ConnectionStyle used. 
+   get_dpi_cor()[source]
+ 
+[Deprecated] dpi_cor is currently used for linewidth-related things and shrink factor. Mutation scale is affected by this.  Returns 
+ scalar
+   Notes  Deprecated since version 3.4.  
+   get_mutation_aspect()[source]
+ 
+Return the aspect ratio of the bbox mutation. 
+   get_mutation_scale()[source]
+ 
+Return the mutation scale.  Returns 
+ scalar
+   
+   get_path()[source]
+ 
+Return the path of the arrow in the data coordinates. 
+   propertyget_path_in_displaycoord[source]
+
+   set(*, agg_filter=<UNSET>, alpha=<UNSET>, animated=<UNSET>, antialiased=<UNSET>, arrowstyle=<UNSET>, capstyle=<UNSET>, clip_box=<UNSET>, clip_on=<UNSET>, clip_path=<UNSET>, color=<UNSET>, connectionstyle=<UNSET>, dpi_cor=<UNSET>, edgecolor=<UNSET>, facecolor=<UNSET>, fill=<UNSET>, gid=<UNSET>, hatch=<UNSET>, in_layout=<UNSET>, joinstyle=<UNSET>, label=<UNSET>, linestyle=<UNSET>, linewidth=<UNSET>, mutation_aspect=<UNSET>, mutation_scale=<UNSET>, patchA=<UNSET>, patchB=<UNSET>, path_effects=<UNSET>, picker=<UNSET>, positions=<UNSET>, rasterized=<UNSET>, sketch_params=<UNSET>, snap=<UNSET>, transform=<UNSET>, url=<UNSET>, visible=<UNSET>, zorder=<UNSET>)[source]
+ 
+Set multiple properties at once. Supported properties are   
+Property Description   
+agg_filter a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array  
+alpha scalar or None  
+animated bool  
+antialiased or aa bool or None  
+arrowstyle None or ArrowStyle or str, default: None  
+capstyle CapStyle or {'butt', 'projecting', 'round'}  
+clip_box Bbox  
+clip_on bool  
+clip_path Patch or (Path, Transform) or None  
+color color  
+connectionstyle str or ConnectionStyle or None, optional  
+dpi_cor unknown  
+edgecolor or ec color or None  
+facecolor or fc color or None  
+figure Figure  
+fill bool  
+gid str  
+hatch {'/', '\', '|', '-', '+', 'x', 'o', 'O', '.', '*'}  
+in_layout bool  
+joinstyle JoinStyle or {'miter', 'round', 'bevel'}  
+label object  
+linestyle or ls {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}  
+linewidth or lw float or None  
+mutation_aspect float  
+mutation_scale float  
+patchA patches.Patch  
+patchB patches.Patch  
+path_effects AbstractPathEffect  
+picker None or bool or float or callable  
+positions unknown  
+rasterized bool  
+sketch_params (scale: float, length: float, randomness: float)  
+snap bool or None  
+transform Transform  
+url str  
+visible bool  
+zorder float   
+   set_arrowstyle(arrowstyle=None, **kw)[source]
+ 
+Set the arrow style. Old attributes are forgotten. Without arguments (or with arrowstyle=None) returns available box styles as a list of strings.  Parameters 
+ 
+arrowstyleNone or ArrowStyle or str, default: None
+
+
+Can be a string with arrowstyle name with optional comma-separated attributes, e.g.: set_arrowstyle("Fancy,head_length=0.2")
+ Alternatively attributes can be provided as keywords, e.g.: set_arrowstyle("fancy", head_length=0.2)
+     
+   set_connectionstyle(connectionstyle, **kw)[source]
+ 
+Set the connection style. Old attributes are forgotten.  Parameters 
+ 
+connectionstylestr or ConnectionStyle or None, optional
+
+
+Can be a string with connectionstyle name with optional comma-separated attributes, e.g.: set_connectionstyle("arc,angleA=0,armA=30,rad=10")
+ Alternatively, the attributes can be provided as keywords, e.g.: set_connectionstyle("arc", angleA=0,armA=30,rad=10)
+ Without any arguments (or with connectionstyle=None), return available styles as a list of strings.     
+   set_dpi_cor(dpi_cor)[source]
+ 
+[Deprecated] dpi_cor is currently used for linewidth-related things and shrink factor. Mutation scale is affected by this.  Parameters 
+ 
+dpi_corfloat
+
+   Notes  Deprecated since version 3.4.  
+   set_mutation_aspect(aspect)[source]
+ 
+Set the aspect ratio of the bbox mutation.  Parameters 
+ 
+aspectfloat
+
+   
+   set_mutation_scale(scale)[source]
+ 
+Set the mutation scale.  Parameters 
+ 
+scalefloat
+
+   
+   set_patchA(patchA)[source]
+ 
+Set the tail patch.  Parameters 
+ 
+patchApatches.Patch
+
+   
+   set_patchB(patchB)[source]
+ 
+Set the head patch.  Parameters 
+ 
+patchBpatches.Patch
+
+   
+   set_positions(posA, posB)[source]
+ 
+Set the begin and end positions of the connecting path.  Parameters 
+ 
+posA, posBNone, tuple
+
+
+(x, y) coordinates of arrow tail and arrow head respectively. If None use current value.     
+ 
+  Examples using matplotlib.patches.FancyArrowPatch
+ 
+   Bar of pie   
+
+   Arrow guide   
+
+   Connect Simple01

@@ -1,0 +1,12 @@
+# django.topics.signals#django.dispatch.Signal.connect
+
+Signal.connect(receiver, sender=None, weak=True, dispatch_uid=None) [source]
+ 
+   
+Parameters:
+
+ 
+receiver – The callback function which will be connected to this signal. See Receiver functions for more information. 
+sender – Specifies a particular sender to receive signals from. See Connecting to signals sent by specific senders for more information. 
+weak – Django stores signal handlers as weak references by default. Thus, if your receiver is a local function, it may be garbage collected. To prevent this, pass weak=False when you call the signal’s connect() method. 
+dispatch_uid – A unique identifier for a signal receiver in cases where duplicate signals may be sent. See Preventing duplicate signals for more information.

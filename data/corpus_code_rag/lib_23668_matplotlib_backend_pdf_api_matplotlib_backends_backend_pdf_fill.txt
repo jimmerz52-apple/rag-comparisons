@@ -1,0 +1,5 @@
+# matplotlib.backend_pdf_api#matplotlib.backends.backend_pdf.fill
+
+matplotlib.backends.backend_pdf.fill(strings, linelen=75)[source]
+ 
+Make one string from sequence of strings, with whitespace in between. The whitespace is chosen to form lines of at most linelen characters, if possible.

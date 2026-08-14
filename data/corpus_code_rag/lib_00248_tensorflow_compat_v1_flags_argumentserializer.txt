@@ -1,0 +1,8 @@
+# tensorflow.compat.v1.flags.argumentserializer
+
+tf.compat.v1.flags.ArgumentSerializer Base class for generating string representations of a flag value.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.app.flags.ArgumentSerializer  Methods serialize 
+serialize(
+    value
+)
+ Returns a serialized string of the value.

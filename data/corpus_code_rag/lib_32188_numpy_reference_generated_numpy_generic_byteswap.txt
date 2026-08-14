@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.generic.byteswap
+
+numpy.generic.byteswap method   generic.byteswap()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.byteswap.

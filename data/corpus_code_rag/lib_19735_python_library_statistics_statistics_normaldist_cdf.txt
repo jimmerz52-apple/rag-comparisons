@@ -1,0 +1,4 @@
+# python.library.statistics#statistics.NormalDist.cdf
+
+cdf(x)  
+Using a cumulative distribution function (cdf), compute the probability that a random variable X will be less than or equal to x. Mathematically, it is written P(X <= x).

@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIG_UNBLOCK
+
+signal.SIG_UNBLOCK  
+A possible value for the how parameter to pthread_sigmask() indicating that signals are to be unblocked.  New in version 3.3.
