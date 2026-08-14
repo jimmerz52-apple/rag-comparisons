@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.preprocessing.maxabsscaler#sklearn.preprocessing.MaxAbsScaler.partial_fit
+
+partial_fit(X, y=None) [source]
+ 
+Online computation of max absolute value of X for later scaling. All of X is processed as a single batch. This is intended for cases when fit is not feasible due to very large number of n_samples or because X is read from a continuous stream.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The data used to compute the mean and standard deviation used for later scaling along the features axis.  
+yNone 
+
+Ignored.    Returns 
+ 
+selfobject 
+
+Fitted scaler.

@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.ImageField.height_field
+
+ImageField.height_field  
+Name of a model field which will be auto-populated with the height of the image each time the model instance is saved.

@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.tagName
+
+Element.tagName  
+The element type name. In a namespace-using document it may have colons in it. The value is a string.

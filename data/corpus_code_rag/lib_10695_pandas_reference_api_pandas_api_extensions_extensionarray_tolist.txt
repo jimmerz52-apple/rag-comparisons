@@ -1,0 +1,6 @@
+# pandas.reference.api.pandas.api.extensions.extensionarray.tolist
+
+pandas.api.extensions.ExtensionArray.tolist   ExtensionArray.tolist()[source]
+ 
+Return a list of the values. These are each a scalar type, which is a Python scalar (for str, int, float) or a pandas scalar (for Timestamp/Timedelta/Interval/Period)  Returns 
+ list

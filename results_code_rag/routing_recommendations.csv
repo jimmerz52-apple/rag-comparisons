@@ -1,0 +1,2 @@
+query_type,scenario,recommended_method,recommended_label,quality,margin_over_next,tie_broke_on_cost,tokens_per_query,guidance
+local,local_factoid,rerank_semantic,Vector + rerank,0.30240104526187933,0.032161928165465425,False,6817.55,Single-entity / comparison factoids → Vector + rerank.

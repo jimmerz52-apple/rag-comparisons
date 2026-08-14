@@ -1,0 +1,4 @@
+# python.library.crypt#crypt.methods
+
+crypt.methods  
+A list of available password hashing algorithms, as crypt.METHOD_* objects. This list is sorted from strongest to weakest.

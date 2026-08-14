@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sinh
+
+sinh() → Tensor  
+See torch.sinh()

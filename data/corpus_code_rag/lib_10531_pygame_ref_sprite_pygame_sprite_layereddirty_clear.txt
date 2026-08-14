@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredDirty.clear
+
+clear() 
+ used to set background clear(surface, bgd) -> None

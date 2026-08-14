@@ -1,0 +1,7 @@
+# matplotlib.collections_api#matplotlib.collections.PolyCollection.set_cmap
+
+set_cmap(cmap)[source]
+ 
+Set the colormap for luminance data.  Parameters 
+ 
+cmapColormap or str or None

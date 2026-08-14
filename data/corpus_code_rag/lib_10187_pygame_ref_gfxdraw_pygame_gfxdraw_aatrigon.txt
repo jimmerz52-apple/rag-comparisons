@@ -1,0 +1,22 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.aatrigon
+
+pygame.gfxdraw.aatrigon() 
+ draw an antialiased trigon/triangle aatrigon(surface, x1, y1, x2, y2, x3, y3, color) -> None  Draws an unfilled antialiased trigon (triangle) on the given surface. An aatrigon can also be drawn using aapolygon() e.g. aapolygon(surface, ((x1, y1), (x2, y2), (x3, y3)), color)     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+x1 (int) -- x coordinate of the first corner of the trigon 
+y1 (int) -- y coordinate of the first corner of the trigon 
+x2 (int) -- x coordinate of the second corner of the trigon 
+y2 (int) -- y coordinate of the second corner of the trigon 
+x3 (int) -- x coordinate of the third corner of the trigon 
+y3 (int) -- y coordinate of the third corner of the trigon 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType

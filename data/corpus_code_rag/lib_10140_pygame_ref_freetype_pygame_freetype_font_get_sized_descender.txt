@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.Font.get_sized_descender
+
+get_sized_descender() 
+ The scaled descent of the font in pixels get_sized_descender(<size>=0) -> int  Return the number of pixels from the font's baseline to the top of the bounding box. It is not adjusted for strong or rotation.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.period.month
+
+pandas.Period.month   Period.month
+ 
+Return the month this Period falls on.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.View.http_method_names
+
+http_method_names  
+The list of HTTP method names that this view will accept. Default: ['get', 'post', 'put', 'patch', 'delete', 'head', 'options', 'trace']

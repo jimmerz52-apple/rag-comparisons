@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.reciprocal
+
+reciprocal() → Tensor  
+See torch.reciprocal()

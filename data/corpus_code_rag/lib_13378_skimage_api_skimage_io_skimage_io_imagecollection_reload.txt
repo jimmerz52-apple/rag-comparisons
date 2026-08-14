@@ -1,0 +1,9 @@
+# skimage.api.skimage.io#skimage.io.ImageCollection.reload
+
+reload(n=None) [source]
+ 
+Clear the image cache.  Parameters 
+ 
+nNone or int 
+
+Clear the cache for this image only. By default, the entire cache is erased.

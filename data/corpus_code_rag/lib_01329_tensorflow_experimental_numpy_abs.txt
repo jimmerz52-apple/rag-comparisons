@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.abs
+
+tf.experimental.numpy.abs TensorFlow variant of NumPy's abs. 
+tf.experimental.numpy.abs(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.abs.

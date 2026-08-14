@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.CO_ASYNC_GENERATOR
+
+inspect.CO_ASYNC_GENERATOR  
+The flag is set when the code object is an asynchronous generator function. When the code object is executed it returns an asynchronous generator object. See PEP 525 for more details.  New in version 3.6.

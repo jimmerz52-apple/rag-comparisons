@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.subsurface
+
+subsurface() 
+ create a new surface that references its parent subsurface(Rect) -> Surface  Returns a new Surface that shares its pixels with its new parent. The new Surface is considered a child of the original. Modifications to either Surface pixels will effect each other. Surface information like clipping area and color keys are unique to each Surface. The new Surface will inherit the palette, color key, and alpha settings from its parent. It is possible to have any number of subsurfaces and subsubsurfaces on the parent. It is also possible to subsurface the display Surface if the display mode is not hardware accelerated. See get_offset() and get_parent() to learn more about the state of a subsurface. A subsurface will have the same class as the parent surface.

@@ -1,0 +1,21 @@
+# django.ref.models.lookups#django.db.models.Lookup
+
+class Lookup  
+A Lookup is a generic class to implement lookups. A lookup is a query expression with a left-hand side, lhs; a right-hand side, rhs; and a lookup_name that is used to produce a boolean comparison between lhs and rhs such as lhs in rhs or lhs > rhs. The primary notation to use a lookup in an expression is <lhs>__<lookup_name>=<rhs>. Lookups can also be used directly in QuerySet filters: Book.objects.filter(LessThan(F('word_count'), 7500))
+ …or annotations: Book.objects.annotate(is_short_story=LessThan(F('word_count'), 7500))
+  
+lhs  
+The left-hand side - what is being looked up. The object typically follows the Query Expression API. It may also be a plain value. 
+  
+rhs  
+The right-hand side - what lhs is being compared against. It can be a plain value, or something that compiles into SQL, typically an F() object or a QuerySet. 
+  
+lookup_name  
+The name of this lookup, used to identify it on parsing query expressions. It cannot contain the string "__". 
+  
+process_lhs(compiler, connection, lhs=None)  
+Returns a tuple (lhs_string, lhs_params), as returned by compiler.compile(lhs). This method can be overridden to tune how the lhs is processed. compiler is an SQLCompiler object, to be used like compiler.compile(lhs) for compiling lhs. The connection can be used for compiling vendor specific SQL. If lhs is not None, use it as the processed lhs instead of self.lhs. 
+  
+process_rhs(compiler, connection)  
+Behaves the same way as process_lhs(), for the right-hand side. 
+  Changed in Django 4.0: Support for using lookups in QuerySet annotations, aggregations, and directly in filters was added.

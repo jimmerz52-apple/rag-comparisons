@@ -1,0 +1,10 @@
+# django.ref.files.file#django.core.files.images.ImageFile
+
+class ImageFile(file_object, name=None) [source]
+ 
+Django provides a built-in class specifically for images. django.core.files.images.ImageFile inherits all the attributes and methods of File, and additionally provides the following:  
+width  
+Width of the image in pixels. 
+  
+height  
+Height of the image in pixels.

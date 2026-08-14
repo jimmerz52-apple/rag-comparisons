@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.as_spherical
+
+as_spherical() 
+ returns a tuple with radial distance, inclination and azimuthal angle. as_spherical() -> (r, theta, phi)  Returns a tuple (r, theta, phi) where r is the radial distance, theta is the inclination angle and phi is the azimuthal angle.

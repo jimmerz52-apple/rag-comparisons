@@ -1,0 +1,4 @@
+# werkzeug.routing.index#werkzeug.routing.Map.lock_class
+
+lock_class()  
+The type of lock to use when updating.  Changelog New in version 1.0.

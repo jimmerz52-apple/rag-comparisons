@@ -1,0 +1,4 @@
+# pygame.ref.math#pygame.math.Vector3.rotate_y_rad
+
+rotate_y_rad() 
+ rotates a vector around the y-axis by the angle in radians. rotate_y_rad(angle) -> Vector3  Returns a vector which has the same length as self but is rotated counterclockwise around the y-axis by the given angle in radians.  New in pygame 2.0.0.

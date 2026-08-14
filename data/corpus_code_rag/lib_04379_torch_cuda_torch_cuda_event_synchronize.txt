@@ -1,0 +1,5 @@
+# torch.cuda#torch.cuda.Event.synchronize
+
+synchronize() [source]
+ 
+Waits for the event to complete. Waits until the completion of all work currently captured in this event. This prevents the CPU thread from proceeding until the event completes.  Note This is a wrapper around cudaEventSynchronize(): see CUDA Event documentation for more info.

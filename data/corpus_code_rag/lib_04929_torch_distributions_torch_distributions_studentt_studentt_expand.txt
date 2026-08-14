@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.studentT.StudentT.expand
+
+expand(batch_shape, _instance=None) [source]

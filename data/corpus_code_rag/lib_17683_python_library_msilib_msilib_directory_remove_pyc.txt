@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Directory.remove_pyc
+
+remove_pyc()  
+Remove .pyc files on uninstall.

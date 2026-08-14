@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.PlotPlugin.__init__
+
+__init__(image_filter=None, height=150, width=400, **kwargs) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

@@ -1,0 +1,4 @@
+# flask.api.index#flask.Flask.url_build_error_handlers
+
+url_build_error_handlers: t.List[t.Callable[[Exception, str, dict], str]]  
+A list of functions that are called when url_for() raises a BuildError. Each function registered here is called with error, endpoint and values. If a function returns None or raises a BuildError the next function is tried.  Changelog New in version 0.9.

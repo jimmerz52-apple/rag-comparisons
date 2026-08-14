@@ -1,0 +1,6 @@
+# torch.generated.torch.nn.module#torch.nn.Module.children
+
+children() [source]
+ 
+Returns an iterator over immediate children modules.  Yields 
+Module – a child module

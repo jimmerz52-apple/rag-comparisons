@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.models.LogEntry.content_type
+
+LogEntry.content_type  
+The ContentType of the modified object.

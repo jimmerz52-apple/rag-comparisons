@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_locks
+
+get_locks() 
+ Gets the locks for the Surface get_locks() -> tuple  Returns the currently existing locks for the Surface.

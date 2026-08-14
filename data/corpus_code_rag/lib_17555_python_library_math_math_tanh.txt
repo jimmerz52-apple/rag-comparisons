@@ -1,0 +1,4 @@
+# python.library.math#math.tanh
+
+math.tanh(x)  
+Return the hyperbolic tangent of x.

@@ -1,0 +1,39 @@
+# flask.api.index#flask.blueprints.BlueprintSetupState
+
+class flask.blueprints.BlueprintSetupState(blueprint, app, options, first_registration)  
+Temporary holder object for registering a blueprint with the application. An instance of this class is created by the make_setup_state() method and later passed to all register callback functions.  Parameters 
+ 
+blueprint (Blueprint) –  
+app (Flask) –  
+options (Any) –  
+first_registration (bool) –    Return type 
+None    
+add_url_rule(rule, endpoint=None, view_func=None, **options)  
+A helper method to register a rule (and optionally a view function) to the application. The endpoint is automatically prefixed with the blueprint’s name.  Parameters 
+ 
+rule (str) –  
+endpoint (Optional[str]) –  
+view_func (Optional[Callable]) –  
+options (Any) –    Return type 
+None   
+  
+app  
+a reference to the current application 
+  
+blueprint  
+a reference to the blueprint that created this setup state. 
+  
+first_registration  
+as blueprints can be registered multiple times with the application and not everything wants to be registered multiple times on it, this attribute can be used to figure out if the blueprint was registered in the past already. 
+  
+options  
+a dictionary with all options that were passed to the register_blueprint() method. 
+  
+subdomain  
+The subdomain that the blueprint should be active for, None otherwise. 
+  
+url_defaults  
+A dictionary with URL defaults that is added to each and every URL that was defined with the blueprint. 
+  
+url_prefix  
+The prefix that should be used for all URLs defined on the blueprint.

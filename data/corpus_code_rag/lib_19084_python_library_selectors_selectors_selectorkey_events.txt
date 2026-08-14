@@ -1,0 +1,4 @@
+# python.library.selectors#selectors.SelectorKey.events
+
+events  
+Events that must be waited for on this file object.

@@ -1,0 +1,3 @@
+# tensorflow.distribute.experimental.partitioners
+
+Module: tf.distribute.experimental.partitioners Public API for tf.distribute.experimental.partitioners namespace. Classes class FixedShardsPartitioner: Partitioner that allocates a fixed number of shards. class MaxSizePartitioner: Partitioner that keeps shards below max_shard_bytes. class MinSizePartitioner: Partitioner that allocates a minimum size per shard. class Partitioner: Partitioner base class: all partitiners inherit from this class.

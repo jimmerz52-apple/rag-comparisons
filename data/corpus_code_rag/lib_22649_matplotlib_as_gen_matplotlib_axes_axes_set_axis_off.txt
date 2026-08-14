@@ -1,0 +1,24 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_axis_off
+
+matplotlib.axes.Axes.set_axis_off   Axes.set_axis_off()[source]
+ 
+Turn the x- and y-axis off. This affects the axis lines, ticks, ticklabels, grid and axis labels. 
+  Examples using matplotlib.axes.Axes.set_axis_off
+ 
+   Marker reference   
+
+   Barcode   
+
+   Blend transparency with color in 2D images   
+
+   Nested pie charts   
+
+   Annotation arrow style reference   
+
+   Precise text layout   
+
+   Drawing fancy boxes   
+
+   Choosing Colormaps in Matplotlib   
+
+   Text properties and layout

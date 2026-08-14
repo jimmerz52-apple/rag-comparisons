@@ -1,0 +1,4 @@
+# python.library.mmap#mmap.mmap.closed
+
+closed  
+True if the file is closed.  New in version 3.2.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.ellipse#matplotlib.patches.Ellipse.get_width
+
+get_width()[source]
+ 
+Return the width of the ellipse.

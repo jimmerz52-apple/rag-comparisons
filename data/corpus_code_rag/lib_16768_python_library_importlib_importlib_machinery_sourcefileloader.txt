@@ -1,0 +1,21 @@
+# python.library.importlib#importlib.machinery.SourceFileLoader
+
+class importlib.machinery.SourceFileLoader(fullname, path)  
+A concrete implementation of importlib.abc.SourceLoader by subclassing importlib.abc.FileLoader and providing some concrete implementations of other methods.  New in version 3.3.   
+name  
+The name of the module that this loader will handle. 
+  
+path  
+The path to the source file. 
+  
+is_package(fullname)  
+Return True if path appears to be for a package. 
+  
+path_stats(path)  
+Concrete implementation of importlib.abc.SourceLoader.path_stats(). 
+  
+set_data(path, data)  
+Concrete implementation of importlib.abc.SourceLoader.set_data(). 
+  
+load_module(name=None)  
+Concrete implementation of importlib.abc.Loader.load_module() where specifying the name of the module to load is optional.  Deprecated since version 3.6: Use importlib.abc.Loader.exec_module() instead.

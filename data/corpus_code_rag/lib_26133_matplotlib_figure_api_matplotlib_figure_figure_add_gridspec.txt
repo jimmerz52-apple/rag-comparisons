@@ -1,0 +1,25 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.add_gridspec
+
+add_gridspec(nrows=1, ncols=1, **kwargs)[source]
+ 
+Return a GridSpec that has this figure as a parent. This allows complex layout of Axes in the figure.  Parameters 
+ 
+nrowsint, default: 1
+
+
+Number of rows in grid.  
+ncolsint, default: 1
+
+
+Number or columns in grid.    Returns 
+ GridSpec
+  Other Parameters 
+ **kwargs
+
+Keyword arguments are passed to GridSpec.      See also  matplotlib.pyplot.subplots
+  Examples Adding a subplot that spans two rows: fig = plt.figure()
+gs = fig.add_gridspec(2, 2)
+ax1 = fig.add_subplot(gs[0, 0])
+ax2 = fig.add_subplot(gs[1, 0])
+# spans two rows:
+ax3 = fig.add_subplot(gs[:, 1])

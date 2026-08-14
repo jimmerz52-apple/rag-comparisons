@@ -1,0 +1,17 @@
+# sklearn.modules.generated.sklearn.ensemble.adaboostclassifier#sklearn.ensemble.AdaBoostClassifier.staged_score
+
+staged_score(X, y, sample_weight=None) [source]
+ 
+Return staged scores for X, y. This generator method yields the ensemble score after each iteration of boosting and therefore allows monitoring, such as to determine the score on a test set after each boost.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The training input samples. Sparse matrix can be CSC, CSR, COO, DOK, or LIL. COO, DOK, and LIL are converted to CSR.  
+yarray-like of shape (n_samples,) 
+
+Labels for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Yields 
+ 
+zfloat

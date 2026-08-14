@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredUpdates.get_sprites_from_layer
+
+get_sprites_from_layer() 
+ returns all sprites from a layer, ordered by how they where added get_sprites_from_layer(layer) -> sprites  Returns all sprites from a layer, ordered by how they where added. It uses linear search and the sprites are not removed from layer.

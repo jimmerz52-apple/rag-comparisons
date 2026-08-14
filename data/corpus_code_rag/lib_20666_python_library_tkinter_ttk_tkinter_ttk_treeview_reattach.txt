@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Treeview.reattach
+
+reattach(item, parent, index)  
+An alias for Treeview.move().

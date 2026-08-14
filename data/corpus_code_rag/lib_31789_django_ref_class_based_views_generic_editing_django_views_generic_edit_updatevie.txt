@@ -1,0 +1,4 @@
+# django.ref.class-based-views.generic-editing#django.views.generic.edit.UpdateView.template_name_suffix
+
+template_name_suffix  
+The UpdateView page displayed to a GET request uses a template_name_suffix of '_form'. For example, changing this attribute to '_update_form' for a view updating objects for the example Author model would cause the default template_name to be 'myapp/author_update_form.html'.

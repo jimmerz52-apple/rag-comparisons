@@ -1,0 +1,3 @@
+# tensorflow.compat.v1.debugging.experimental
+
+Module: tf.compat.v1.debugging.experimental Public API for tf.debugging.experimental namespace. Functions disable_dump_debug_info(...): Disable the currently-enabled debugging dumping. enable_dump_debug_info(...): Enable dumping debugging information from a TensorFlow program.

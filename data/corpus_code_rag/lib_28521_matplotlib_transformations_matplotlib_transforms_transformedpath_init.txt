@@ -1,0 +1,10 @@
+# matplotlib.transformations#matplotlib.transforms.TransformedPath.__init__
+
+__init__(path, transform)[source]
+ 
+ Parameters 
+ 
+pathPath
+
+
+transformTransform

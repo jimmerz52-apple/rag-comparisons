@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.fignum_exists
+
+matplotlib.pyplot.fignum_exists   matplotlib.pyplot.fignum_exists(num)[source]
+ 
+Return whether the figure with the given id exists.

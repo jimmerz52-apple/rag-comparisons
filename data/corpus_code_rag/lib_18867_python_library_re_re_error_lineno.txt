@@ -1,0 +1,4 @@
+# python.library.re#re.error.lineno
+
+lineno  
+The line corresponding to pos (may be None).

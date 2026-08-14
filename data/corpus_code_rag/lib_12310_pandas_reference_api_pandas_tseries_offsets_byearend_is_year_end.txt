@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.byearend.is_year_end
+
+pandas.tseries.offsets.BYearEnd.is_year_end   BYearEnd.is_year_end()

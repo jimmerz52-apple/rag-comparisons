@@ -1,0 +1,5 @@
+# torch.backends#torch.backends.openmp.is_available
+
+torch.backends.openmp.is_available() [source]
+ 
+Returns whether PyTorch is built with OpenMP support.

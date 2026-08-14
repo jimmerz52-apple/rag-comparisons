@@ -1,0 +1,6 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.call_on_close
+
+call_on_close(func)  
+Adds a function to the internal list of functions that should be called as part of closing down the response. Since 0.7 this function also returns the function that was passed so that this can be used as a decorator.  Changelog New in version 0.6.   Parameters 
+func (Callable[[], Any]) –   Return type 
+Callable[[], Any]

@@ -1,0 +1,16 @@
+# pygame.ref.mask#pygame.mask.Mask.erase
+
+erase() 
+ Erases a mask from another erase(othermask, offset) -> None  Erases (clears) all bits set in othermask from this mask.     
+Parameters:
+
+ 
+othermask (Mask) -- the mask to erase from this mask 
+offset (tuple(int, int) or list[int, int]) -- the offset of othermask from this mask, for more details refer to the Mask offset notes
+    
+Returns:
+
+None   
+Return type:
+
+NoneType

@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.Example.source
+
+source  
+A string containing the example’s source code. This source code consists of a single Python statement, and always ends with a newline; the constructor adds a newline when necessary.

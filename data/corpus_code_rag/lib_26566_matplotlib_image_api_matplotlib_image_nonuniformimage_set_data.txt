@@ -1,0 +1,14 @@
+# matplotlib.image_api#matplotlib.image.NonUniformImage.set_data
+
+set_data(x, y, A)[source]
+ 
+Set the grid for the pixel centers, and the pixel values.  Parameters 
+ 
+x, y1D array-like
+
+
+Monotonic arrays of shapes (N,) and (M,), respectively, specifying pixel centers.  
+Aarray-like
+
+
+(M, N) ndarray or masked array of values to be colormapped, or (M, N, 3) RGB array, or (M, N, 4) RGBA array.

@@ -1,0 +1,4 @@
+# python.library.time#time.daylight
+
+time.daylight  
+Nonzero if a DST timezone is defined. See note below.

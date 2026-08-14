@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.wrap_future
+
+asyncio.wrap_future(future, *, loop=None)  
+Wrap a concurrent.futures.Future object in a asyncio.Future object.

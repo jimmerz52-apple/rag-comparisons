@@ -1,0 +1,7 @@
+# 869
+Task: 869
+
+# Write a function to remove sublists from a given list of lists, which are outside a given range.
+def remove_list_range(list1, leftrange, rigthrange):
+   result = [i for i in list1 if (min(i)>=leftrange and max(i)<=rigthrange)]
+   return result

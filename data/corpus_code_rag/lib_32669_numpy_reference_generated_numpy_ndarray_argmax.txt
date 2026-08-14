@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ndarray.argmax
+
+numpy.ndarray.argmax method   ndarray.argmax(axis=None, out=None)
+ 
+Return indices of the maximum values along the given axis. Refer to numpy.argmax for full documentation.  See also  numpy.argmax
+
+equivalent function

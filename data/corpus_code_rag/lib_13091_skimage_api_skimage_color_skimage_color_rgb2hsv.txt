@@ -1,0 +1,21 @@
+# skimage.api.skimage.color#skimage.color.rgb2hsv
+
+skimage.color.rgb2hsv(rgb) [source]
+ 
+RGB to HSV color space conversion.  Parameters 
+ 
+rgb(…, 3) array_like 
+
+The image in RGB format. Final dimension denotes channels.    Returns 
+ 
+out(…, 3) ndarray 
+
+The image in HSV format. Same dimensions as input.    Raises 
+ ValueError
+
+If rgb is not at least 2-D with shape (…, 3).     Notes Conversion between RGB and HSV color spaces results in some loss of precision, due to integer arithmetic and rounding [1]. References  
+1  
+https://en.wikipedia.org/wiki/HSL_and_HSV   Examples >>> from skimage import color
+>>> from skimage import data
+>>> img = data.astronaut()
+>>> img_hsv = color.rgb2hsv(img)

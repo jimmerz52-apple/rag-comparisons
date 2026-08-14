@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.tick.get_tick_padding
+
+matplotlib.axis.Tick.get_tick_padding   Tick.get_tick_padding()[source]
+ 
+Get the length of the tick outside of the axes.

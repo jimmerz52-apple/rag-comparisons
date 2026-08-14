@@ -1,0 +1,4 @@
+# python.library.email.header#email.header.Header.__ne__
+
+__ne__(other)  
+This method allows you to compare two Header instances for inequality.

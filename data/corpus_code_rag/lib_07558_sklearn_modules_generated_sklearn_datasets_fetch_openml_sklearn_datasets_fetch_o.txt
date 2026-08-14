@@ -1,0 +1,60 @@
+# sklearn.modules.generated.sklearn.datasets.fetch_openml#sklearn.datasets.fetch_openml
+
+sklearn.datasets.fetch_openml(name: Optional[str] = None, *, version: Union[str, int] = 'active', data_id: Optional[int] = None, data_home: Optional[str] = None, target_column: Optional[Union[str, List]] = 'default-target', cache: bool = True, return_X_y: bool = False, as_frame: Union[str, bool] = 'auto') [source]
+ 
+Fetch dataset from openml by name or dataset id. Datasets are uniquely identified by either an integer ID or by a combination of name and version (i.e. there might be multiple versions of the ‘iris’ dataset). Please give either name or data_id (not both). In case a name is given, a version can also be provided. Read more in the User Guide.  New in version 0.20.   Note EXPERIMENTAL The API is experimental (particularly the return value structure), and might have small backward-incompatible changes without notice or warning in future releases.   Parameters 
+ 
+namestr, default=None 
+
+String identifier of the dataset. Note that OpenML can have multiple datasets with the same name.  
+versionint or ‘active’, default=’active’ 
+
+Version of the dataset. Can only be provided if also name is given. If ‘active’ the oldest version that’s still active is used. Since there may be more than one active version of a dataset, and those versions may fundamentally be different from one another, setting an exact version is highly recommended.  
+data_idint, default=None 
+
+OpenML ID of the dataset. The most specific way of retrieving a dataset. If data_id is not given, name (and potential version) are used to obtain a dataset.  
+data_homestr, default=None 
+
+Specify another download and cache folder for the data sets. By default all scikit-learn data is stored in ‘~/scikit_learn_data’ subfolders.  
+target_columnstr, list or None, default=’default-target’ 
+
+Specify the column name in the data to use as target. If ‘default-target’, the standard target column a stored on the server is used. If None, all columns are returned as data and the target is None. If list (of strings), all columns with these names are returned as multi-target (Note: not all scikit-learn classifiers can handle all types of multi-output combinations)  
+cachebool, default=True 
+
+Whether to cache downloaded datasets using joblib.  
+return_X_ybool, default=False 
+
+If True, returns (data, target) instead of a Bunch object. See below for more information about the data and target objects.  
+as_framebool or ‘auto’, default=’auto’ 
+
+If True, the data is a pandas DataFrame including columns with appropriate dtypes (numeric, string or categorical). The target is a pandas DataFrame or Series depending on the number of target_columns. The Bunch will contain a frame attribute with the target and the data. If return_X_y is True, then (data, target) will be pandas DataFrames or Series as describe above. If as_frame is ‘auto’, the data and target will be converted to DataFrame or Series as if as_frame is set to True, unless the dataset is stored in sparse format.  Changed in version 0.24: The default value of as_frame changed from False to 'auto' in 0.24.     Returns 
+ 
+dataBunch 
+
+Dictionary-like object, with the following attributes.  
+datanp.array, scipy.sparse.csr_matrix of floats, or pandas DataFrame 
+
+The feature matrix. Categorical features are encoded as ordinals.  
+targetnp.array, pandas Series or DataFrame 
+
+The regression target or classification labels, if applicable. Dtype is float if numeric, and object if categorical. If as_frame is True, target is a pandas object.  
+DESCRstr 
+
+The full description of the dataset  
+feature_nameslist 
+
+The names of the dataset columns  target_names: list
+
+The names of the target columns    New in version 0.22.   
+categoriesdict or None 
+
+Maps each categorical feature name to a list of values, such that the value encoded as i is ith in the list. If as_frame is True, this is None.  
+detailsdict 
+
+More metadata from OpenML  
+framepandas DataFrame 
+
+Only present when as_frame=True. DataFrame with data and target.    
+(data, target)tuple if return_X_y is True 
+
+ Note EXPERIMENTAL This interface is experimental and subsequent releases may change attributes without notice (although there should only be minor changes to data and target).  Missing values in the ‘data’ are represented as NaN’s. Missing values in ‘target’ are represented as NaN’s (numerical target) or None (categorical target)

@@ -1,0 +1,11 @@
+# python.library.email.headerregistry#email.headerregistry.AddressHeader
+
+class email.headerregistry.AddressHeader  
+Address headers are one of the most complex structured header types. The AddressHeader class provides a generic interface to any address header. This header type provides the following additional attributes:  
+groups  
+A tuple of Group objects encoding the addresses and groups found in the header value. Addresses that are not part of a group are represented in this list as single-address Groups whose display_name is None. 
+  
+addresses  
+A tuple of Address objects encoding all of the individual addresses from the header value. If the header value contains any groups, the individual addresses from the group are included in the list at the point where the group occurs in the value (that is, the list of addresses is “flattened” into a one dimensional list). 
+ The decoded value of the header will have all encoded words decoded to unicode. idna encoded domain names are also decoded to unicode. The decoded value is set by joining the str value of the elements of the groups attribute with ',
+'. A list of Address and Group objects in any combination may be used to set the value of an address header. Group objects whose display_name is None will be interpreted as single addresses, which allows an address list to be copied with groups intact by using the list obtained from the groups attribute of the source header.

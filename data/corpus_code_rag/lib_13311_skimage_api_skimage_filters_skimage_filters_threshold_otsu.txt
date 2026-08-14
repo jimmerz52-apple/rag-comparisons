@@ -1,0 +1,24 @@
+# skimage.api.skimage.filters#skimage.filters.threshold_otsu
+
+skimage.filters.threshold_otsu(image=None, nbins=256, *, hist=None) [source]
+ 
+Return threshold value based on Otsu’s method. Either image or hist must be provided. If hist is provided, the actual histogram of the image is ignored.  Parameters 
+ 
+image(N, M) ndarray, optional 
+
+Grayscale input image.  
+nbinsint, optional 
+
+Number of bins used to calculate histogram. This value is ignored for integer arrays.  
+histarray, or 2-tuple of arrays, optional 
+
+Histogram from which to determine the threshold, and optionally a corresponding array of bin center intensities. An alternative use of this function is to pass it only hist.    Returns 
+ 
+thresholdfloat 
+
+Upper threshold value. All pixels with an intensity higher than this value are assumed to be foreground.     Notes The input image must be grayscale. References  
+1  
+Wikipedia, https://en.wikipedia.org/wiki/Otsu’s_Method   Examples >>> from skimage.data import camera
+>>> image = camera()
+>>> thresh = threshold_otsu(image)
+>>> binary = image <= thresh

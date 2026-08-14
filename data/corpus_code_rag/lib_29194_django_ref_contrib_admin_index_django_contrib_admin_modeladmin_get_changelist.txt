@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.get_changelist
+
+ModelAdmin.get_changelist(request, **kwargs)  
+Returns the Changelist class to be used for listing. By default, django.contrib.admin.views.main.ChangeList is used. By inheriting this class you can change the behavior of the listing.

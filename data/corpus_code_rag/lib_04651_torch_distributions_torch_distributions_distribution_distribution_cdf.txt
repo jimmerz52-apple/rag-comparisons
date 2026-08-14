@@ -1,0 +1,6 @@
+# torch.distributions#torch.distributions.distribution.Distribution.cdf
+
+cdf(value) [source]
+ 
+Returns the cumulative density/mass function evaluated at value.  Parameters 
+value (Tensor) –

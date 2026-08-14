@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.feeds#django.contrib.gis.feeds.Feed.geometry
+
+geometry(obj)

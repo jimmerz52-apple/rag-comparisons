@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.multiclass.outputcodeclassifier#sklearn.multiclass.OutputCodeClassifier.fit
+
+fit(X, y) [source]
+ 
+Fit underlying estimators.  Parameters 
+ 
+X(sparse) array-like of shape (n_samples, n_features) 
+
+Data.  
+ynumpy array of shape [n_samples] 
+
+Multi-class targets.    Returns 
+ self

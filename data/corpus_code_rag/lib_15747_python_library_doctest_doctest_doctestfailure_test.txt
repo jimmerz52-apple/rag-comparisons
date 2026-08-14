@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTestFailure.test
+
+DocTestFailure.test  
+The DocTest object that was being run when the example failed.

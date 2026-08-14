@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.RedirectView.get_redirect_url
+
+get_redirect_url(*args, **kwargs)  
+Constructs the target URL for redirection. The args and kwargs arguments are positional and/or keyword arguments captured from the URL pattern, respectively. The default implementation uses url as a starting string and performs expansion of % named parameters in that string using the named groups captured in the URL. If url is not set, get_redirect_url() tries to reverse the pattern_name using what was captured in the URL (both named and unnamed groups are used). If requested by query_string, it will also append the query string to the generated URL. Subclasses may implement any behavior they wish, as long as the method returns a redirect-ready URL string.

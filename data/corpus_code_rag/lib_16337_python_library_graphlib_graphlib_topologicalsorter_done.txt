@@ -1,0 +1,4 @@
+# python.library.graphlib#graphlib.TopologicalSorter.done
+
+done(*nodes)  
+Marks a set of nodes returned by TopologicalSorter.get_ready() as processed, unblocking any successor of each node in nodes for being returned in the future by a call to TopologicalSorter.get_ready(). Raises ValueError if any node in nodes has already been marked as processed by a previous call to this method or if a node was not added to the graph by using TopologicalSorter.add(), if called without calling prepare() or if node has not yet been returned by get_ready().

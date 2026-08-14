@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.start_qtapp
+
+skimage.viewer.utils.start_qtapp(app=None) [source]
+ 
+Start Qt mainloop

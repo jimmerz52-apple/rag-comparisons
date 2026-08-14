@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.mkd
+
+FTP.mkd(pathname)  
+Create a new directory on the server.

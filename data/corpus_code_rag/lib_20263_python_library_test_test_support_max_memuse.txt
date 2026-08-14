@@ -1,0 +1,4 @@
+# python.library.test#test.support.max_memuse
+
+test.support.max_memuse  
+Set by set_memlimit() as the memory limit for big memory tests. Limited by MAX_Py_ssize_t.

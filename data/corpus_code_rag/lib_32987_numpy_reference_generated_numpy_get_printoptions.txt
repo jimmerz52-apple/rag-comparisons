@@ -1,0 +1,11 @@
+# numpy.reference.generated.numpy.get_printoptions
+
+numpy.get_printoptions   numpy.get_printoptions()[source]
+ 
+Return the current print options.  Returns 
+ 
+print_optsdict
+
+
+Dictionary of current print options with keys  precision : int threshold : int edgeitems : int linewidth : int suppress : bool nanstr : str infstr : str formatter : dict of callables sign : str  For a full description of these options, see set_printoptions.      See also  
+set_printoptions, printoptions, set_string_function

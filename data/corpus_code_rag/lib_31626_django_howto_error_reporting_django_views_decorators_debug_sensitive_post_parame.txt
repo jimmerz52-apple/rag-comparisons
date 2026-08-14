@@ -1,0 +1,18 @@
+# django.howto.error-reporting#django.views.decorators.debug.sensitive_post_parameters
+
+sensitive_post_parameters(*parameters)  
+If one of your views receives an HttpRequest object with POST parameters susceptible to contain sensitive information, you may prevent the values of those parameters from being included in the error reports using the sensitive_post_parameters decorator: from django.views.decorators.debug import sensitive_post_parameters
+
+@sensitive_post_parameters('pass_word', 'credit_card_number')
+def record_user_profile(request):
+    UserProfile.create(
+        user=request.user,
+        password=request.POST['pass_word'],
+        credit_card=request.POST['credit_card_number'],
+        name=request.POST['name'],
+    )
+    ...
+ In the above example, the values for the pass_word and credit_card_number POST parameters will be hidden and replaced with stars (**********) in the request’s representation inside the error reports, whereas the value of the name parameter will be disclosed. To systematically hide all POST parameters of a request in error reports, do not provide any argument to the sensitive_post_parameters decorator: @sensitive_post_parameters()
+def my_view(request):
+    ...
+ All POST parameters are systematically filtered out of error reports for certain django.contrib.auth.views views (login, password_reset_confirm, password_change, and add_view and user_change_password in the auth admin) to prevent the leaking of sensitive information such as user passwords.

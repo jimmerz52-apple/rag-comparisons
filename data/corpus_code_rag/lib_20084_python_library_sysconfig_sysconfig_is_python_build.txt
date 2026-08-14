@@ -1,0 +1,4 @@
+# python.library.sysconfig#sysconfig.is_python_build
+
+sysconfig.is_python_build()  
+Return True if the running Python interpreter was built from source and is being run from its built location, and not from a location resulting from e.g. running make install or installing via a binary installer.

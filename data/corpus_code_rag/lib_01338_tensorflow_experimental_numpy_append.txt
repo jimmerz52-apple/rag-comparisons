@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.append
+
+tf.experimental.numpy.append TensorFlow variant of NumPy's append. 
+tf.experimental.numpy.append(
+    arr, values, axis=None
+)
+ See the NumPy documentation for numpy.append.

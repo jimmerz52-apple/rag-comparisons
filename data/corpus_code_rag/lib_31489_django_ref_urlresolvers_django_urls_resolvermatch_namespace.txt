@@ -1,0 +1,4 @@
+# django.ref.urlresolvers#django.urls.ResolverMatch.namespace
+
+namespace  
+The instance namespace for the URL pattern that matches the URL.

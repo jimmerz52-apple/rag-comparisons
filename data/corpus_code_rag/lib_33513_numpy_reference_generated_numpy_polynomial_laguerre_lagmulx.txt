@@ -1,0 +1,20 @@
+# numpy.reference.generated.numpy.polynomial.laguerre.lagmulx
+
+numpy.polynomial.laguerre.lagmulx   polynomial.laguerre.lagmulx(c)[source]
+ 
+Multiply a Laguerre series by x. Multiply the Laguerre series c by x, where x is the independent variable.  Parameters 
+ 
+carray_like
+
+
+1-D array of Laguerre series coefficients ordered from low to high.    Returns 
+ 
+outndarray
+
+
+Array representing the result of the multiplication.      See also  
+lagadd, lagsub, lagmul, lagdiv, lagpow
+
+  Notes The multiplication uses the recursion relationship for Laguerre polynomials in the form  \[xP_i(x) = (-(i + 1)*P_{i + 1}(x) + (2i + 1)P_{i}(x) - iP_{i - 1}(x))\] Examples >>> from numpy.polynomial.laguerre import lagmulx
+>>> lagmulx([1, 2, 3])
+array([-1.,  -1.,  11.,  -9.])

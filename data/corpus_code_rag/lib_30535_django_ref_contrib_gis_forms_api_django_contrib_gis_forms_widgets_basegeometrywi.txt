@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.BaseGeometryWidget.map_srid
+
+BaseGeometryWidget.map_srid  
+SRID code used by the map (default is 4326).

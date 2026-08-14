@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.nlst
+
+FTP.nlst(argument[, ...])  
+Return a list of file names as returned by the NLST command. The optional argument is a directory to list (default is the current server directory). Multiple arguments can be used to pass non-standard options to the NLST command.  Note If your server supports the command, mlsd() offers a better API.

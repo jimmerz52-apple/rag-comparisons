@@ -1,0 +1,5 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_colorlist
+
+matplotlib.rcsetup.validate_colorlist(s)[source]
+ 
+return a list of colorspecs

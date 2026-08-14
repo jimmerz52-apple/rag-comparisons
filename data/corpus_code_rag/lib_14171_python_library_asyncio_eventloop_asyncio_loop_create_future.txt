@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.create_future
+
+loop.create_future()  
+Create an asyncio.Future object attached to the event loop. This is the preferred way to create Futures in asyncio. This lets third-party event loops provide alternative implementations of the Future object (with better performance or instrumentation).  New in version 3.5.2.

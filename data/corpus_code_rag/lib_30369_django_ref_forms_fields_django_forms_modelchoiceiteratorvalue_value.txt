@@ -1,0 +1,4 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIteratorValue.value
+
+value  
+The value of the choice. This value is used to render the value attribute of an HTML <option> element.

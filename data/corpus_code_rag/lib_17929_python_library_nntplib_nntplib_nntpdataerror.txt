@@ -1,0 +1,4 @@
+# python.library.nntplib#nntplib.NNTPDataError
+
+exception nntplib.NNTPDataError  
+Exception raised when there is some error in the response data.

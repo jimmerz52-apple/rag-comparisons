@@ -1,0 +1,8 @@
+# django.ref.models.expressions#django.db.models.expressions.ValueRange
+
+class ValueRange(start=None, end=None)  
+ 
+frame_type  
+This attribute is set to 'RANGE'. 
+ PostgreSQL has limited support for ValueRange and only supports use of the standard start and end points, such as CURRENT ROW and UNBOUNDED
+FOLLOWING.

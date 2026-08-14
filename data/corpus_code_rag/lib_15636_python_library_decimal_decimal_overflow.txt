@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Overflow
+
+class decimal.Overflow  
+Numerical overflow. Indicates the exponent is larger than Emax after rounding has occurred. If not trapped, the result depends on the rounding mode, either pulling inward to the largest representable finite number or rounding outward to Infinity. In either case, Inexact and Rounded are also signaled.

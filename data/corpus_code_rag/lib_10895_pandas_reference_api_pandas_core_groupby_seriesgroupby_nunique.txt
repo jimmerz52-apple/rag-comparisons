@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.core.groupby.seriesgroupby.nunique
+
+pandas.core.groupby.SeriesGroupBy.nunique   SeriesGroupBy.nunique(dropna=True)[source]
+ 
+Return number of unique elements in the group.  Returns 
+ Series
+
+Number of unique values within each group.

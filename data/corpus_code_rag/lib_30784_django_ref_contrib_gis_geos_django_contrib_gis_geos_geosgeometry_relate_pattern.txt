@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.relate_pattern
+
+GEOSGeometry.relate_pattern(other, pattern)  
+Returns True if the elements in the DE-9IM intersection matrix for this geometry and the other matches the given pattern – a string of nine characters from the alphabet: {T, F, *, 0}.

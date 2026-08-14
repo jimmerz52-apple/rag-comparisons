@@ -1,0 +1,7 @@
+# django.ref.models.querysets#django.db.models.Sum
+
+class Sum(expression, output_field=None, distinct=False, filter=None, default=None, **extra)  
+Computes the sum of all values of the given expression.  Default alias: <field>__sum
+ Return type: same as input field, or output_field if supplied  Has one optional argument:  
+distinct  
+If distinct=True, Sum returns the sum of unique values. This is the SQL equivalent of SUM(DISTINCT <field>). The default value is False.

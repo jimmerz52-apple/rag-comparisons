@@ -1,0 +1,4 @@
+# python.library.locale#locale.CRNCYSTR
+
+locale.CRNCYSTR  
+Get the currency symbol, preceded by “-” if the symbol should appear before the value, “+” if the symbol should appear after the value, or “.” if the symbol should replace the radix character.

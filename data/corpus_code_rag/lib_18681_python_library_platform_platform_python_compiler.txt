@@ -1,0 +1,4 @@
+# python.library.platform#platform.python_compiler
+
+platform.python_compiler()  
+Returns a string identifying the compiler used for compiling Python.

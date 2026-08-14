@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.automatically_set_content_length
+
+automatically_set_content_length = True  
+Should this response object automatically set the content-length header if possible? This is true by default.  Changelog New in version 0.8.

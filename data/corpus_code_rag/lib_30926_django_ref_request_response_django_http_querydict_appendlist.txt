@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.QueryDict.appendlist
+
+QueryDict.appendlist(key, item)  
+Appends an item to the internal list associated with key.

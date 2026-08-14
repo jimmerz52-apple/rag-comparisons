@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.BaseHandler.default_open
+
+BaseHandler.default_open(req)  
+This method is not defined in BaseHandler, but subclasses should define it if they want to catch all URLs. This method, if implemented, will be called by the parent OpenerDirector. It should return a file-like object as described in the return value of the open() of OpenerDirector, or None. It should raise URLError, unless a truly exceptional thing happens (for example, MemoryError should not be mapped to URLError). This method will be called before any protocol-specific open method.

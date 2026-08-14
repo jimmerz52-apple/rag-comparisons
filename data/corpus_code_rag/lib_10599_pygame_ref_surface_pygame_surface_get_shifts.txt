@@ -1,0 +1,4 @@
+# pygame.ref.surface#pygame.Surface.get_shifts
+
+get_shifts() 
+ the bit shifts needed to convert between a color and a mapped integer get_shifts() -> (R, G, B, A)  Returns the pixel shifts need to convert between each color and a mapped integer. This value is not needed for normal pygame usage.

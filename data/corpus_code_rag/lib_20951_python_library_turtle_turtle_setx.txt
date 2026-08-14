@@ -1,0 +1,9 @@
+# python.library.turtle#turtle.setx
+
+turtle.setx(x)  
+ Parameters 
+x – a number (integer or float)   Set the turtle’s first coordinate to x, leave second coordinate unchanged. >>> turtle.position()
+(0.00,240.00)
+>>> turtle.setx(10)
+>>> turtle.position()
+(10.00,240.00)

@@ -1,0 +1,4 @@
+# pygame.ref.music#pygame.mixer.music.set_volume
+
+pygame.mixer.music.set_volume() 
+ set the music volume set_volume(volume) -> None  Set the volume of the music playback. The volume argument is a float between 0.0 and 1.0 that sets volume. When new music is loaded the volume is reset to full volume.

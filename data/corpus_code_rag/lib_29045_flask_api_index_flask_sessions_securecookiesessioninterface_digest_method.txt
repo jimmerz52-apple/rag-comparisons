@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSessionInterface.digest_method
+
+static digest_method()  
+the hash function to use for the signature. The default is sha1

@@ -1,0 +1,6 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MultiDict.listvalues
+
+listvalues()  
+Return an iterator of all values associated with a key. Zipping keys() and this is the same as calling lists(): >>> d = MultiDict({"foo": [1, 2, 3]})
+>>> zip(d.keys(), d.listvalues()) == d.lists()
+True

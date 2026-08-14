@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_NOT_STANDALONE
+
+xml.parsers.expat.errors.XML_ERROR_NOT_STANDALONE  
+The parser determined that the document was not “standalone” though it declared itself to be in the XML declaration, and the NotStandaloneHandler was set and returned 0.

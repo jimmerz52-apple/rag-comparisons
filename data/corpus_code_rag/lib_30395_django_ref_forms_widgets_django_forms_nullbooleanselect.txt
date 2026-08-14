@@ -1,0 +1,8 @@
+# django.ref.forms.widgets#django.forms.NullBooleanSelect
+
+class NullBooleanSelect  
+ 
+template_name: 'django/forms/widgets/select.html'
+ 
+option_template_name: 'django/forms/widgets/select_option.html'
+  Select widget with options ‘Unknown’, ‘Yes’ and ‘No’

@@ -1,0 +1,6 @@
+# torch.autograd#torch.autograd.profiler.profile.total_average
+
+total_average() [source]
+ 
+Averages all events.  Returns 
+A FunctionEventAvg object.

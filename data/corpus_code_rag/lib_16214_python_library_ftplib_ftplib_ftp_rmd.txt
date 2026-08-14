@@ -1,0 +1,4 @@
+# python.library.ftplib#ftplib.FTP.rmd
+
+FTP.rmd(dirname)  
+Remove the directory named dirname on the server.

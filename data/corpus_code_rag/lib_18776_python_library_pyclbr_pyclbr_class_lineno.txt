@@ -1,0 +1,4 @@
+# python.library.pyclbr#pyclbr.Class.lineno
+
+Class.lineno  
+The line number in the file where the definition starts.

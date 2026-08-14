@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_lineno
+
+get_lineno()  
+Return the number of the first line in the block this table represents.

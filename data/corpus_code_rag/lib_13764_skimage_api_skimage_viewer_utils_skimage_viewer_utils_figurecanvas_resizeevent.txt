@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer.utils#skimage.viewer.utils.FigureCanvas.resizeEvent
+
+resizeEvent(event) [source]

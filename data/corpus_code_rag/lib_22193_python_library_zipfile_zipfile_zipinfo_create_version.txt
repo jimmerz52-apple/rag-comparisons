@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipInfo.create_version
+
+ZipInfo.create_version  
+PKZIP version which created ZIP archive.

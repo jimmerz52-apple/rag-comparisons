@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.index.name
+
+pandas.Index.name   propertyIndex.name
+ 
+Return Index or MultiIndex name.

@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.resources.open_text
+
+importlib.resources.open_text(package, resource, encoding='utf-8', errors='strict')  
+Open for text reading the resource within package. By default, the resource is opened for reading as UTF-8. package is either a name or a module object which conforms to the Package requirements. resource is the name of the resource to open within package; it may not contain path separators and it may not have sub-resources (i.e. it cannot be a directory). encoding and errors have the same meaning as with built-in open(). This function returns a typing.TextIO instance, a text I/O stream open for reading.

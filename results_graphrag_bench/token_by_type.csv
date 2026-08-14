@@ -1,0 +1,17 @@
+method,question_type,n,mean_question_tokens,mean_gold_tokens,mean_composite,mean_judge,mean_latency_s,p95_latency_s,method_label
+frontier_rag,Complex Reasoning,2,26.0,19.5,0.08730158730158726,0.25,4.831429083002149,5.148679758001526,FrontierRAG (adaptive+CRAG)
+hybrid_rag,Complex Reasoning,2,26.0,19.5,0.0785806174957118,0.25,13.077190042007715,13.189654266997241,Hybrid (vec+graph local)
+semantic_rag,Complex Reasoning,2,26.0,19.5,0.147310606060606,0.41500000000000004,5.4101374999881955,5.450834637791559,Semantic (vector)
+rerank_semantic,Complex Reasoning,2,26.0,19.5,0.08730158730158726,0.25,5.1229128955019405,5.685723076433351,Vector + rerank
+frontier_rag,Contextual Summarize,2,31.5,35.0,0.07948717948717945,0.2,6.484695875493344,7.346316537845996,FrontierRAG (adaptive+CRAG)
+hybrid_rag,Contextual Summarize,2,31.5,35.0,0.0421734234234234,0.1,22.615455979001126,23.630915760410424,Hybrid (vec+graph local)
+semantic_rag,Contextual Summarize,2,31.5,35.0,0.06682544757033244,0.165,5.24988781248976,5.591515943741252,Semantic (vector)
+rerank_semantic,Contextual Summarize,2,31.5,35.0,0.07948717948717945,0.2,5.606611291994341,6.108190516999457,Vector + rerank
+frontier_rag,Creative Generation,1,39.0,172.0,0.2341880341880342,0.8,25.017476417007856,25.017476417007856,FrontierRAG (adaptive+CRAG)
+hybrid_rag,Creative Generation,1,39.0,172.0,0.0254237288135593,0.0,18.080640375002982,18.080640375002982,Hybrid (vec+graph local)
+semantic_rag,Creative Generation,1,39.0,172.0,0.1057471264367816,0.4,5.514466416992946,5.514466416992946,Semantic (vector)
+rerank_semantic,Creative Generation,1,39.0,172.0,0.0055555555555555,0.0,2.799850167008117,2.799850167008117,Vector + rerank
+frontier_rag,Fact Retrieval,2,21.0,21.0,0.24770408163265303,0.25,5.822349353999016,8.188983972895949,FrontierRAG (adaptive+CRAG)
+hybrid_rag,Fact Retrieval,2,21.0,21.0,0.17590137857900318,0.5,12.897579645985388,13.209176539881446,Hybrid (vec+graph local)
+semantic_rag,Fact Retrieval,2,21.0,21.0,0.2453125,0.25,6.164821124984883,7.038985536879045,Semantic (vector)
+rerank_semantic,Fact Retrieval,2,21.0,21.0,0.24770408163265303,0.25,6.019475082983263,6.946080320488545,Vector + rerank

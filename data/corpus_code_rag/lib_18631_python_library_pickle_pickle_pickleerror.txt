@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.PickleError
+
+exception pickle.PickleError  
+Common base class for the other pickling exceptions. It inherits Exception.

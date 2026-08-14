@@ -1,0 +1,23 @@
+# matplotlib._as_gen.matplotlib.pyplot.close
+
+matplotlib.pyplot.close   matplotlib.pyplot.close(fig=None)[source]
+ 
+Close a figure window.  Parameters 
+ 
+figNone or int or str or Figure
+
+
+The figure to close. There are a number of ways to specify this:  
+None: the current figure 
+Figure: the given Figure instance 
+int: a figure number 
+str: a figure name 'all': all figures      
+  Examples using matplotlib.pyplot.close
+ 
+   Pipong   
+
+   Multipage PDF   
+
+   Multiprocess   
+
+   Tight Layout guide

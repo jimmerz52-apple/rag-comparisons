@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.Formatter.fix_minus
+
+staticfix_minus(s)[source]
+ 
+Some classes may want to replace a hyphen for minus with the proper unicode symbol (U+2212) for typographical correctness. This is a helper method to perform such a replacement when it is enabled via rcParams["axes.unicode_minus"] (default: True).

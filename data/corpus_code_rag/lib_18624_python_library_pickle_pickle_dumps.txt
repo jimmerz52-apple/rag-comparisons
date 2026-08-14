@@ -1,0 +1,4 @@
+# python.library.pickle#pickle.dumps
+
+pickle.dumps(obj, protocol=None, *, fix_imports=True, buffer_callback=None)  
+Return the pickled representation of the object obj as a bytes object, instead of writing it to a file. Arguments protocol, fix_imports and buffer_callback have the same meaning as in the Pickler constructor.  Changed in version 3.8: The buffer_callback argument was added.

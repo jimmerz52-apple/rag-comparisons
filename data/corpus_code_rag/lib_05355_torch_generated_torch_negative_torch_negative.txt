@@ -1,0 +1,4 @@
+# torch.generated.torch.negative#torch.negative
+
+torch.negative(input, *, out=None) → Tensor  
+Alias for torch.neg()

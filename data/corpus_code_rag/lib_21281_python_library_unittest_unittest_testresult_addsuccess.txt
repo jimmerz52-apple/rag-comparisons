@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.addSuccess
+
+addSuccess(test)  
+Called when the test case test succeeds. The default implementation does nothing.

@@ -1,0 +1,4 @@
+# python.library.argparse#argparse.ArgumentParser.format_help
+
+ArgumentParser.format_help()  
+Return a string containing a help message, including the program usage and information about the arguments registered with the ArgumentParser.

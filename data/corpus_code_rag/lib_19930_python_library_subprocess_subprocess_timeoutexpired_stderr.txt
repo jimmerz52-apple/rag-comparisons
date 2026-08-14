@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.TimeoutExpired.stderr
+
+stderr  
+Stderr output of the child process if it was captured by run(). Otherwise, None.

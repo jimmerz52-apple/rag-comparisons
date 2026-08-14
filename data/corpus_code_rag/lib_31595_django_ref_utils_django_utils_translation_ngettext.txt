@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.ngettext
+
+ngettext(singular, plural, number)  
+Translates singular and plural and returns the appropriate string based on number.

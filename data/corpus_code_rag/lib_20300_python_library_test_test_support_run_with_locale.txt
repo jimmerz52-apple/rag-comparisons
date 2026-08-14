@@ -1,0 +1,4 @@
+# python.library.test#test.support.run_with_locale
+
+@test.support.run_with_locale(catstr, *locales)  
+A decorator for running a function in a different locale, correctly resetting it after it has finished. catstr is the locale category as a string (for example "LC_ALL"). The locales passed will be tried sequentially, and the first valid locale will be used.

@@ -1,0 +1,5 @@
+# matplotlib.cbook_api#matplotlib.cbook.Stack.empty
+
+empty()[source]
+ 
+Return whether the stack is empty.

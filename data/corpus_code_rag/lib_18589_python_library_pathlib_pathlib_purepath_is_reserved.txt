@@ -1,0 +1,8 @@
+# python.library.pathlib#pathlib.PurePath.is_reserved
+
+PurePath.is_reserved()  
+With PureWindowsPath, return True if the path is considered reserved under Windows, False otherwise. With PurePosixPath, False is always returned. >>> PureWindowsPath('nul').is_reserved()
+True
+>>> PurePosixPath('nul').is_reserved()
+False
+ File system calls on reserved paths can fail mysteriously or have unintended effects.

@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.timezone.localdate
+
+localdate(value=None, timezone=None)  
+Uses localtime() to convert an aware datetime to a date() in a different time zone, by default the current time zone. When value is omitted, it defaults to now(). This function doesn’t work on naive datetimes.

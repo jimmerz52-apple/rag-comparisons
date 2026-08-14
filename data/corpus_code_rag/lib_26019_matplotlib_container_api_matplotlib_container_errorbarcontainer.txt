@@ -1,0 +1,14 @@
+# matplotlib.container_api#matplotlib.container.ErrorbarContainer
+
+classmatplotlib.container.ErrorbarContainer(*args, **kwargs)[source]
+ 
+Bases: matplotlib.container.Container Container for the artists of error bars (e.g. created by Axes.errorbar). The container can be treated as the lines tuple itself. Additionally, you can access these and further parameters by the attributes.  Attributes 
+ 
+linestuple
+
+
+Tuple of (data_line, caplines, barlinecols).  data_line : Line2D instance of x, y plot markers and/or line. caplines : tuple of Line2D instances of the error bar caps. barlinecols : list of LineCollection with the horizontal and vertical error ranges.   
+has_xerr, has_yerrbool
+
+
+True if the errorbar has x/y errors.

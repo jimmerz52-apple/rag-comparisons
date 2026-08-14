@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.histgradientboostingregressor#sklearn.ensemble.HistGradientBoostingRegressor.predict
+
+predict(X) [source]
+ 
+Predict values for X.  Parameters 
+ 
+Xarray-like, shape (n_samples, n_features) 
+
+The input samples.    Returns 
+ 
+yndarray, shape (n_samples,) 
+
+The predicted values.

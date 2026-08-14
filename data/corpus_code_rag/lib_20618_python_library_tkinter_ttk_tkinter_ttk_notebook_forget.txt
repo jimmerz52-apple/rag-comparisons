@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Notebook.forget
+
+forget(tab_id)  
+Removes the tab specified by tab_id, unmaps and unmanages the associated window.

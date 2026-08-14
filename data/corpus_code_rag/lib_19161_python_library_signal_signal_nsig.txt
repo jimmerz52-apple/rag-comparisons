@@ -1,0 +1,4 @@
+# python.library.signal#signal.NSIG
+
+signal.NSIG  
+One more than the number of the highest signal number.

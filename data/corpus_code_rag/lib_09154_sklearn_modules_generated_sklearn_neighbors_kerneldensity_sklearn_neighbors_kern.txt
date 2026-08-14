@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.neighbors.kerneldensity#sklearn.neighbors.KernelDensity.fit
+
+fit(X, y=None, sample_weight=None) [source]
+ 
+Fit the Kernel Density model on the data.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+List of n_features-dimensional data points. Each row corresponds to a single data point.  
+yNone 
+
+Ignored. This parameter exists only for compatibility with Pipeline.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+List of sample weights attached to the data X.  New in version 0.20.     Returns 
+ 
+selfobject 
+
+Returns instance of object.

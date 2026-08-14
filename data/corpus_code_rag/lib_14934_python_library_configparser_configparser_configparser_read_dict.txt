@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.ConfigParser.read_dict
+
+read_dict(dictionary, source='<dict>')  
+Load configuration from any object that provides a dict-like items() method. Keys are section names, values are dictionaries with keys and values that should be present in the section. If the used dictionary type preserves order, sections and their keys will be added in order. Values are automatically converted to strings. Optional argument source specifies a context-specific name of the dictionary passed. If not given, <dict> is used. This method can be used to copy state between parsers.  New in version 3.2.

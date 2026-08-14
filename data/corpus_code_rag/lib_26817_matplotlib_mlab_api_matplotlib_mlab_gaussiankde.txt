@@ -1,0 +1,61 @@
+# matplotlib.mlab_api#matplotlib.mlab.GaussianKDE
+
+classmatplotlib.mlab.GaussianKDE(dataset, bw_method=None)[source]
+ 
+Bases: object Representation of a kernel-density estimate using Gaussian kernels.  Parameters 
+ 
+datasetarray-like
+
+
+Datapoints to estimate from. In case of univariate data this is a 1-D array, otherwise a 2D array with shape (# of dims, # of data).  
+bw_methodstr, scalar or callable, optional
+
+
+The method used to calculate the estimator bandwidth. This can be 'scott', 'silverman', a scalar constant or a callable. If a scalar, this will be used directly as kde.factor. If a callable, it should take a GaussianKDE instance as only parameter and return a scalar. If None (default), 'scott' is used.    Attributes 
+ 
+datasetndarray
+
+
+The dataset with which gaussian_kde was initialized.  
+dimint
+
+
+Number of dimensions.  
+num_dpint
+
+
+Number of datapoints.  
+factorfloat
+
+
+The bandwidth factor, obtained from kde.covariance_factor, with which the covariance matrix is multiplied.  
+covariancendarray
+
+
+The covariance matrix of dataset, scaled by the calculated bandwidth (kde.factor).  
+inv_covndarray
+
+
+The inverse of covariance.     Methods  
+kde.evaluate(points) (ndarray) Evaluate the estimated pdf on a provided set of points.  
+kde(points) (ndarray) Same as kde.evaluate(points)     covariance_factor()[source]
+
+   evaluate(points)[source]
+ 
+Evaluate the estimated pdf on a set of points.  Parameters 
+ 
+points(# of dimensions, # of points)-array
+
+
+Alternatively, a (# of dimensions,) vector can be passed in and treated as a single point.    Returns 
+ (# of points,)-array
+
+The values at each point.    Raises 
+ 
+ValueErrorif the dimensionality of the input points is different
+
+
+than the dimensionality of the KDE.     
+   scotts_factor()[source]
+
+   silverman_factor()[source]

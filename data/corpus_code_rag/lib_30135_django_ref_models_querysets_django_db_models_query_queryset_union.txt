@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.union
+
+union(*other_qs, all=False)

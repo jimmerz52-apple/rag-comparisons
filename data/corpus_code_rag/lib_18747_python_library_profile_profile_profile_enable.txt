@@ -1,0 +1,4 @@
+# python.library.profile#profile.Profile.enable
+
+enable()  
+Start collecting profiling data. Only in cProfile.

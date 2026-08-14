@@ -1,0 +1,5 @@
+# python.library.stdtypes#frozenset.symmetric_difference
+
+symmetric_difference(other)  
+set ^ other  
+Return a new set with elements in either the set or other but not both.

@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.wrapdatasetvariant
+
+tf.raw_ops.WrapDatasetVariant  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.WrapDatasetVariant  
+tf.raw_ops.WrapDatasetVariant(
+    input_handle, name=None
+)
+
+ 
+
+
+ Args
+  input_handle   A Tensor of type variant.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type variant.

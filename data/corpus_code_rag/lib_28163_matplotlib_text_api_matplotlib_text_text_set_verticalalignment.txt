@@ -1,0 +1,7 @@
+# matplotlib.text_api#matplotlib.text.Text.set_verticalalignment
+
+set_verticalalignment(align)[source]
+ 
+Set the vertical alignment.  Parameters 
+ 
+align{'center', 'top', 'bottom', 'baseline', 'center_baseline'}

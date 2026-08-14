@@ -1,0 +1,8 @@
+# numpy.reference.generated.numpy.flatiter.base
+
+numpy.flatiter.base attribute   flatiter.base
+ 
+A reference to the array that is iterated over. Examples >>> x = np.arange(5)
+>>> fl = x.flat
+>>> fl.base is x
+True

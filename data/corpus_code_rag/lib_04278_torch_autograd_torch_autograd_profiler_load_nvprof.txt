@@ -1,0 +1,6 @@
+# torch.autograd#torch.autograd.profiler.load_nvprof
+
+torch.autograd.profiler.load_nvprof(path) [source]
+ 
+Opens an nvprof trace file and parses autograd annotations.  Parameters 
+path (str) – path to nvprof trace

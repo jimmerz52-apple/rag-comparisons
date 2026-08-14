@@ -1,0 +1,5 @@
+# matplotlib.backend_bases_api#matplotlib.backend_bases.GraphicsContextBase.restore
+
+restore()[source]
+ 
+Restore the graphics context from the stack - needed only for backends that save graphics contexts on a stack.

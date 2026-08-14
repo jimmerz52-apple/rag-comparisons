@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.TransformWrapper.__init__
+
+__init__(child)[source]
+ 
+child: A Transform instance. This child may later be replaced with set().

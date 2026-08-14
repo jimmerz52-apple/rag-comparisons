@@ -1,0 +1,5 @@
+# python.library.functions#range
+
+class range(stop)  
+class range(start, stop[, step])  
+Rather than being a function, range is actually an immutable sequence type, as documented in Ranges and Sequence Types — list, tuple, range.

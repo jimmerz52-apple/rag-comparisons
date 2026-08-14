@@ -1,0 +1,4 @@
+# python.library.site#site.getusersitepackages
+
+site.getusersitepackages()  
+Return the path of the user-specific site-packages directory, USER_SITE. If it is not initialized yet, this function will also set it, respecting USER_BASE. To determine if the user-specific site-packages was added to sys.path ENABLE_USER_SITE should be used.  New in version 3.2.

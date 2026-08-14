@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Request.json_module
+
+json_module = <module 'json' from '/home/docs/.pyenv/versions/3.7.9/lib/python3.7/json/__init__.py'>  
+A module or other object that has dumps and loads functions that match the API of the built-in json module.

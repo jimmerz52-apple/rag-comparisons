@@ -1,0 +1,6 @@
+# werkzeug.http.index#werkzeug.http.http_date
+
+werkzeug.http.http_date(timestamp=None)  
+Format a datetime object or timestamp into an RFC 2822 date string. This is a wrapper for email.utils.format_datetime(). It assumes naive datetime objects are in UTC instead of raising an exception.  Parameters 
+timestamp (Optional[Union[datetime.datetime, datetime.date, int, float, time.struct_time]]) – The datetime or timestamp to format. Defaults to the current time.  Return type 
+str    Changed in version 2.0: Use email.utils.format_datetime. Accept date objects.

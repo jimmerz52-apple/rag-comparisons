@@ -1,0 +1,4 @@
+# pygame.ref.color#pygame.Color.normalize
+
+normalize() 
+ Returns the normalized RGBA values of the Color. normalize() -> tuple  Returns the normalized RGBA values of the Color as floating point values.

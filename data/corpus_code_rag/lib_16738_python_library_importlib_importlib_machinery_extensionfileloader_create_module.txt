@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.machinery.ExtensionFileLoader.create_module
+
+create_module(spec)  
+Creates the module object from the given specification in accordance with PEP 489.  New in version 3.5.

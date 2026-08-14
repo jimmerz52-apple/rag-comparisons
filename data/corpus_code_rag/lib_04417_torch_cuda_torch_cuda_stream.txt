@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.stream
+
+torch.cuda.stream(stream) [source]
+ 
+Context-manager that selects a given stream. All CUDA kernels queued within its context will be enqueued on a selected stream.  Parameters 
+stream (Stream) – selected stream. This manager is a no-op if it’s None.    Note Streams are per-device. If the selected stream is not on the current device, this function will also change the current device to match the stream.

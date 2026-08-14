@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.SubFigure.get_edgecolor
+
+get_edgecolor()[source]
+ 
+Get the edge color of the Figure rectangle.

@@ -1,0 +1,3 @@
+# django.ref.models.fields#django.db.models.JSONField
+
+class JSONField(encoder=None, decoder=None, **options)

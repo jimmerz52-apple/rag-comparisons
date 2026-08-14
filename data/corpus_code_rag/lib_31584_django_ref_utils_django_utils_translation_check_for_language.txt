@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.check_for_language
+
+check_for_language(lang_code)  
+Checks whether there is a global language file for the given language code (e.g. ‘fr’, ‘pt_BR’). This is used to decide whether a user-provided language is available.

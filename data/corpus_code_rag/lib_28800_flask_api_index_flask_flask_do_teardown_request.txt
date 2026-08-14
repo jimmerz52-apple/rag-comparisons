@@ -1,0 +1,6 @@
+# flask.api.index#flask.Flask.do_teardown_request
+
+do_teardown_request(exc=<object object>)  
+Called after the request is dispatched and the response is returned, right before the request context is popped. This calls all functions decorated with teardown_request(), and Blueprint.teardown_request() if a blueprint handled the request. Finally, the request_tearing_down signal is sent. This is called by RequestContext.pop(), which may be delayed during testing to maintain access to resources.  Parameters 
+exc (Optional[BaseException]) – An unhandled exception raised while dispatching the request. Detected from the current exception information if not passed. Passed to each teardown function.  Return type 
+None    Changelog Changed in version 0.9: Added the exc argument.

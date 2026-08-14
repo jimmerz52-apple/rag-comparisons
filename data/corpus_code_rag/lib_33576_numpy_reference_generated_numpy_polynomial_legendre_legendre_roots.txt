@@ -1,0 +1,10 @@
+# numpy.reference.generated.numpy.polynomial.legendre.legendre.roots
+
+numpy.polynomial.legendre.Legendre.roots method   polynomial.legendre.Legendre.roots()[source]
+ 
+Return the roots of the series polynomial. Compute the roots for the series. Note that the accuracy of the roots decrease the further outside the domain they lie.  Returns 
+ 
+rootsndarray
+
+
+Array containing the roots of the series.

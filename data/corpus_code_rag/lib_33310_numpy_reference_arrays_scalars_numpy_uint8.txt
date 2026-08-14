@@ -1,0 +1,8 @@
+# numpy.reference.arrays.scalars#numpy.uint8
+
+numpy.uint8[source]
+  numpy.uint16
+  numpy.uint32
+  numpy.uint64
+ 
+Alias for the unsigned integer types (one of numpy.ubyte, numpy.ushort, numpy.uintc, numpy.uint and numpy.ulonglong) with the specified number of bits. Compatible with the C99 uint8_t, uint16_t, uint32_t, and uint64_t, respectively.

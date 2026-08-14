@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.Signature.empty
+
+empty  
+A special class-level marker to specify absence of a return annotation.

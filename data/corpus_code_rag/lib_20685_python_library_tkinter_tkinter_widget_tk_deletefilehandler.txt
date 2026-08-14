@@ -1,0 +1,4 @@
+# python.library.tkinter#tkinter.Widget.tk.deletefilehandler
+
+Widget.tk.deletefilehandler(file)  
+Unregisters a file handler.

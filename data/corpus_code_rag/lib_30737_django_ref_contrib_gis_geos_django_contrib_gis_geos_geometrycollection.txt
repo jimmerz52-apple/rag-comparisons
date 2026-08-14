@@ -1,0 +1,6 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GeometryCollection
+
+class GeometryCollection(*args, **kwargs)  
+GeometryCollection objects may be instantiated by passing in other GEOSGeometry as arguments, or a single sequence of GEOSGeometry objects: >>> poly = Polygon( ((0, 0), (0, 1), (1, 1), (0, 0)) )
+>>> gc = GeometryCollection(Point(0, 0), MultiPoint(Point(0, 0), Point(1, 1)), poly)
+>>> gc = GeometryCollection((Point(0, 0), MultiPoint(Point(0, 0), Point(1, 1)), poly))

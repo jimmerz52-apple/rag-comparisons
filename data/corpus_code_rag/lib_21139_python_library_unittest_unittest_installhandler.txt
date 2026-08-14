@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.installHandler
+
+unittest.installHandler()  
+Install the control-c handler. When a signal.SIGINT is received (usually in response to the user pressing control-c) all registered results have stop() called.

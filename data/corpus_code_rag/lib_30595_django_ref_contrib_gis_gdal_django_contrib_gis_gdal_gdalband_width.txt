@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.gdal#django.contrib.gis.gdal.GDALBand.width
+
+width  
+The width of the band in pixels (X-axis).

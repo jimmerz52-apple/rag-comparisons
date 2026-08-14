@@ -1,0 +1,4 @@
+# python.library.tkinter.tix#tkinter.tix.tixCommand.tix_cget
+
+tixCommand.tix_cget(option)  
+Returns the current value of the configuration option given by option. Option may be any of the configuration options.

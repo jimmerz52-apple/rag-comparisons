@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-editing#django.views.generic.edit.ProcessFormView.get
+
+get(request, *args, **kwargs)  
+Renders a response using a context created with get_context_data().

@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndindex.ndincr
+
+numpy.ndindex.ndincr method   ndindex.ndincr()[source]
+ 
+Increment the multi-dimensional index by one. This method is for backward compatibility only: do not use.  Deprecated since version 1.20.0: This method has been advised against since numpy 1.8.0, but only started emitting DeprecationWarning as of this version.

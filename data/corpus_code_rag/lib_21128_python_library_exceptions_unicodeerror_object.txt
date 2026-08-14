@@ -1,0 +1,4 @@
+# python.library.exceptions#UnicodeError.object
+
+object  
+The object the codec was attempting to encode or decode.

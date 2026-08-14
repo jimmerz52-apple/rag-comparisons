@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.sum
+
+sum(dim=None, keepdim=False, dtype=None) → Tensor  
+See torch.sum()

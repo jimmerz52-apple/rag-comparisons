@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.send
+
+IMAP4.send(data)  
+Sends data to the remote server. You may override this method. Raises an auditing event imaplib.send with arguments self, data.

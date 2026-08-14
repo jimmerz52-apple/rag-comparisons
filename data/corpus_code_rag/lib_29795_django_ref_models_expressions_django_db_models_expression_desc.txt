@@ -1,0 +1,4 @@
+# django.ref.models.expressions#django.db.models.Expression.desc
+
+desc(nulls_first=False, nulls_last=False)  
+Returns the expression ready to be sorted in descending order. nulls_first and nulls_last define how null values are sorted. See Using F() to sort null values for example usage.

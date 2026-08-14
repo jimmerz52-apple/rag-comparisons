@@ -1,0 +1,5 @@
+# python.library.cmath#cmath.polar
+
+cmath.polar(x)  
+Return the representation of x in polar coordinates. Returns a pair (r, phi) where r is the modulus of x and phi is the phase of x. polar(x) is equivalent to (abs(x),
+phase(x)).

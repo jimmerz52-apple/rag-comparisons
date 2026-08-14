@@ -1,0 +1,4 @@
+# python.library.token#token.ISNONTERMINAL
+
+token.ISNONTERMINAL(x)  
+Return True for non-terminal token values.

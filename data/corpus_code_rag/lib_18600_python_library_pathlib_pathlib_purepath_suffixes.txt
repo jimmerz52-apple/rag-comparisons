@@ -1,0 +1,9 @@
+# python.library.pathlib#pathlib.PurePath.suffixes
+
+PurePath.suffixes  
+A list of the path’s file extensions: >>> PurePosixPath('my/library.tar.gar').suffixes
+['.tar', '.gar']
+>>> PurePosixPath('my/library.tar.gz').suffixes
+['.tar', '.gz']
+>>> PurePosixPath('my/library').suffixes
+[]

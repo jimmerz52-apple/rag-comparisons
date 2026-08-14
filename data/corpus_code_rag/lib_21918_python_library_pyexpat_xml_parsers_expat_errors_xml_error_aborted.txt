@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.errors.XML_ERROR_ABORTED
+
+xml.parsers.expat.errors.XML_ERROR_ABORTED  
+This should not be reported to Python applications.

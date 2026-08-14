@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.select_related
+
+select_related(*fields)

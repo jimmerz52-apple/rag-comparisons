@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.TreeBuilder.doctype
+
+doctype(name, pubid, system)  
+Handles a doctype declaration. name is the doctype name. pubid is the public identifier. system is the system identifier. This method does not exist on the default TreeBuilder class.  New in version 3.2.

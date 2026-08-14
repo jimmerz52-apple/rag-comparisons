@@ -1,0 +1,4 @@
+# django.ref.class-based-views.base#django.views.generic.base.RedirectView.query_string
+
+query_string  
+Whether to pass along the GET query string to the new location. If True, then the query string is appended to the URL. If False, then the query string is discarded. By default, query_string is False.

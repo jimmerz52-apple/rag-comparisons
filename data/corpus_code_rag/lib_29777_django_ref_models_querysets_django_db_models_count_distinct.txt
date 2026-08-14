@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.Count.distinct
+
+distinct  
+If distinct=True, the count will only include unique instances. This is the SQL equivalent of COUNT(DISTINCT <field>). The default value is False.

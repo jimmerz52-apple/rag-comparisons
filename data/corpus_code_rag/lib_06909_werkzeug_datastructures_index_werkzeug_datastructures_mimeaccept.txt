@@ -1,0 +1,12 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.MIMEAccept
+
+class werkzeug.datastructures.MIMEAccept(values=())  
+Like Accept but with special methods and behavior for mimetypes.  
+property accept_html  
+True if this object accepts HTML. 
+  
+property accept_json  
+True if this object accepts JSON. 
+  
+property accept_xhtml  
+True if this object accepts XHTML.

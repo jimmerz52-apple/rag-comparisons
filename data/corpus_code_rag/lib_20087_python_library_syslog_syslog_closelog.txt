@@ -1,0 +1,4 @@
+# python.library.syslog#syslog.closelog
+
+syslog.closelog()  
+Reset the syslog module values and call the system library closelog(). This causes the module to behave as it does when initially imported. For example, openlog() will be called on the first syslog() call (if openlog() hasn’t already been called), and ident and other openlog() parameters are reset to defaults. Raises an auditing event syslog.closelog with no arguments.

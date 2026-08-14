@@ -1,0 +1,10 @@
+# matplotlib.ticker_api#matplotlib.ticker.AutoMinorLocator
+
+classmatplotlib.ticker.AutoMinorLocator(n=None)[source]
+ 
+Bases: matplotlib.ticker.Locator Dynamically find minor tick positions based on the positions of major ticks. The scale must be linear with major ticks evenly spaced. n is the number of subdivisions of the interval between major ticks; e.g., n=2 will place a single minor tick midway between major ticks. If n is omitted or None, it will be set to 5 or 4.   tick_values(vmin, vmax)[source]
+ 
+Return the values of the located ticks given vmin and vmax.  Note To get tick locations with the vmin and vmax values defined automatically for the associated axis simply call the Locator instance: >>> print(type(loc))
+<type 'Locator'>
+>>> print(loc())
+[1, 2, 3, 4]

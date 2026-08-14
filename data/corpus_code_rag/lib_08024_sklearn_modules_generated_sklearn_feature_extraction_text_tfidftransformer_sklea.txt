@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.feature_extraction.text.tfidftransformer#sklearn.feature_extraction.text.TfidfTransformer.transform
+
+transform(X, copy=True) [source]
+ 
+Transform a count matrix to a tf or tf-idf representation  Parameters 
+ 
+Xsparse matrix of (n_samples, n_features) 
+
+a matrix of term/token counts  
+copybool, default=True 
+
+Whether to copy X and operate on the copy or perform in-place operations.    Returns 
+ 
+vectorssparse matrix of shape (n_samples, n_features)

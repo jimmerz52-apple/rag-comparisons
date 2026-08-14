@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.axes3d.axes3d#mpl_toolkits.mplot3d.axes3d.Axes3D.set_zmargin
+
+set_zmargin(m)[source]
+ 
+Set padding of Z data limits prior to autoscaling. m times the data interval will be added to each end of that interval before it is used in autoscaling. accepts: float in range 0 to 1

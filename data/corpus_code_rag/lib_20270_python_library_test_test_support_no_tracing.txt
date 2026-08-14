@@ -1,0 +1,4 @@
+# python.library.test#test.support.no_tracing
+
+@test.support.no_tracing(func)  
+Decorator to temporarily turn off tracing for the duration of the test.

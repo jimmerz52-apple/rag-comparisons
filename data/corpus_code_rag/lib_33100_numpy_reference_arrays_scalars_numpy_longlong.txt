@@ -1,0 +1,6 @@
+# numpy.reference.arrays.scalars#numpy.longlong
+
+class numpy.longlong[source]
+ 
+Signed integer type, compatible with C long long.  Character code 
+'q'

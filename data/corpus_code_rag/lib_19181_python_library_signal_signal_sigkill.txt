@@ -1,0 +1,4 @@
+# python.library.signal#signal.SIGKILL
+
+signal.SIGKILL  
+Kill signal. It cannot be caught, blocked, or ignored. Availability: Unix.

@@ -1,0 +1,5 @@
+# matplotlib.backend_pgf_api#matplotlib.backends.backend_pgf.FigureCanvasPgf.get_default_filetype
+
+get_default_filetype()[source]
+ 
+Return the default savefig file format as specified in rcParams["savefig.format"] (default: 'png'). The returned string does not include a period. This method is overridden in backends that only support a single file type.

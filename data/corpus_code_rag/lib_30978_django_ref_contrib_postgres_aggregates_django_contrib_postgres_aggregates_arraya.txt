@@ -1,0 +1,14 @@
+# django.ref.contrib.postgres.aggregates#django.contrib.postgres.aggregates.ArrayAgg
+
+class ArrayAgg(expression, distinct=False, filter=None, default=None, ordering=(), **extra)  
+Returns a list of values, including nulls, concatenated into an array, or default if there are no values.  
+distinct  
+An optional boolean argument that determines if array values will be distinct. Defaults to False. 
+  
+ordering  
+An optional string of a field name (with an optional "-" prefix which indicates descending order) or an expression (or a tuple or list of strings and/or expressions) that specifies the ordering of the elements in the result list. Examples: 'some_field'
+'-some_field'
+from django.db.models import F
+F('some_field').desc()
+ 
+  Deprecated since version 4.0: If there are no rows and default is not provided, ArrayAgg returns an empty list instead of None. This behavior is deprecated and will be removed in Django 5.0. If you need it, explicitly set default to Value([]).

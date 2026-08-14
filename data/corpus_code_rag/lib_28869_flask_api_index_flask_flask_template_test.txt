@@ -1,0 +1,14 @@
+# flask.api.index#flask.Flask.template_test
+
+template_test(name=None)  
+A decorator that is used to register custom template test. You can specify a name for the test, otherwise the function name will be used. Example: @app.template_test()
+def is_prime(n):
+    if n == 2:
+        return True
+    for i in range(2, int(math.ceil(math.sqrt(n))) + 1):
+        if n % i == 0:
+            return False
+    return True
+  Changelog New in version 0.10.   Parameters 
+name (Optional[str]) – the optional name of the test, otherwise the function name will be used.  Return type 
+Callable

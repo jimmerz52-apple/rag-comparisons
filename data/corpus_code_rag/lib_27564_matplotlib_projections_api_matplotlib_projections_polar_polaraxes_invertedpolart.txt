@@ -1,0 +1,5 @@
+# matplotlib.projections_api#matplotlib.projections.polar.PolarAxes.InvertedPolarTransform.output_dims
+
+output_dims=2
+ 
+The number of output dimensions of this transform. Must be overridden (with integers) in the subclass.

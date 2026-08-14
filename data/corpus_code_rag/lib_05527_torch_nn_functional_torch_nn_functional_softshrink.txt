@@ -1,0 +1,4 @@
+# torch.nn.functional#torch.nn.functional.softshrink
+
+torch.nn.functional.softshrink(input, lambd=0.5) → Tensor  
+Applies the soft shrinkage function elementwise See Softshrink for more details.

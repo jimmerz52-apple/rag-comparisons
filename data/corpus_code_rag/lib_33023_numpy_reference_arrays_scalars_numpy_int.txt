@@ -1,0 +1,8 @@
+# numpy.reference.arrays.scalars#numpy.int_
+
+class numpy.int_[source]
+ 
+Signed integer type, compatible with Python int and C long.  Character code 
+'l'  Alias on this platform (Linux x86_64) 
+numpy.int64: 64-bit signed integer (-9_223_372_036_854_775_808 to 9_223_372_036_854_775_807).  Alias on this platform (Linux x86_64) 
+numpy.intp: Signed integer large enough to fit pointer, compatible with C intptr_t.

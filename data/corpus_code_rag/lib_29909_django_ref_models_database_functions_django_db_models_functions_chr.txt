@@ -1,0 +1,3 @@
+# django.ref.models.database-functions#django.db.models.functions.Chr
+
+class Chr(expression, **extra)

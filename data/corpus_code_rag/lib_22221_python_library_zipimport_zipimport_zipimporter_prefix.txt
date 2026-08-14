@@ -1,0 +1,4 @@
+# python.library.zipimport#zipimport.zipimporter.prefix
+
+prefix  
+The subpath within the ZIP file where modules are searched. This is the empty string for zipimporter objects which point to the root of the ZIP file.

@@ -1,0 +1,4 @@
+# python.library.ossaudiodev#ossaudiodev.oss_audio_device.nonblock
+
+oss_audio_device.nonblock()  
+Put the device into non-blocking mode. Once in non-blocking mode, there is no way to return it to blocking mode.

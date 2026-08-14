@@ -1,0 +1,4 @@
+# pygame.ref.midi#pygame.midi.get_default_output_id
+
+pygame.midi.get_default_output_id() 
+ gets default output device number get_default_output_id() -> default_id  See get_default_input_id() for usage details.

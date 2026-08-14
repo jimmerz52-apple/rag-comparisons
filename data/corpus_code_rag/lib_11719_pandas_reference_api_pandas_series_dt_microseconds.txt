@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.series.dt.microseconds
+
+pandas.Series.dt.microseconds   Series.dt.microseconds
+ 
+Number of microseconds (>= 0 and less than 1 second) for each element.

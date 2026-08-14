@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_aa
+
+get_aa()[source]
+ 
+Alias for get_antialiased.

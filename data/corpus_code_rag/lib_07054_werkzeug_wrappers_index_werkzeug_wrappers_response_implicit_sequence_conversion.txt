@@ -1,0 +1,4 @@
+# werkzeug.wrappers.index#werkzeug.wrappers.Response.implicit_sequence_conversion
+
+implicit_sequence_conversion = True  
+if set to False accessing properties on the response object will not try to consume the response iterator and convert it into a list.  Changelog New in version 0.6.2: That attribute was previously called implicit_seqence_conversion. (Notice the typo). If you did use this feature, you have to adapt your code to the name change.

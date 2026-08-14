@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.number
+
+class numpy.number[source]
+ 
+Abstract base class of all numeric scalar types.

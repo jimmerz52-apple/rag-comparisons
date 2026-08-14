@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.memset
+
+ctypes.memset(dst, c, count)  
+Same as the standard C memset library function: fills the memory block at address dst with count bytes of value c. dst must be an integer specifying an address, or a ctypes instance.

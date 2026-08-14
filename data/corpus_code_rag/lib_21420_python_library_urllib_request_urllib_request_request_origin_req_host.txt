@@ -1,0 +1,4 @@
+# python.library.urllib.request#urllib.request.Request.origin_req_host
+
+Request.origin_req_host  
+The original host for the request, without port.

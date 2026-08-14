@@ -1,0 +1,4 @@
+# django.ref.models.querysets#django.db.models.Avg.distinct
+
+distinct  
+If distinct=True, Avg returns the mean value of unique values. This is the SQL equivalent of AVG(DISTINCT <field>). The default value is False.

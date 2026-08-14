@@ -1,0 +1,4 @@
+# python.library.tracemalloc#tracemalloc.Trace.size
+
+size  
+Size of the memory block in bytes (int).

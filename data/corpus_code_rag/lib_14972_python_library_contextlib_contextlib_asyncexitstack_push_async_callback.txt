@@ -1,0 +1,4 @@
+# python.library.contextlib#contextlib.AsyncExitStack.push_async_callback
+
+push_async_callback(callback, /, *args, **kwds)  
+Similar to callback() but expects a coroutine function.

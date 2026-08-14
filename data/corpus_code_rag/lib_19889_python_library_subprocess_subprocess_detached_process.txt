@@ -1,0 +1,4 @@
+# python.library.subprocess#subprocess.DETACHED_PROCESS
+
+subprocess.DETACHED_PROCESS  
+A Popen creationflags parameter to specify that a new process will not inherit its parent’s console. This value cannot be used with CREATE_NEW_CONSOLE.  New in version 3.7.

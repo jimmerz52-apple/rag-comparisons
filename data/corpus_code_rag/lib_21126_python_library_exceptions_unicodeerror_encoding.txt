@@ -1,0 +1,4 @@
+# python.library.exceptions#UnicodeError.encoding
+
+encoding  
+The name of the encoding that raised the error.

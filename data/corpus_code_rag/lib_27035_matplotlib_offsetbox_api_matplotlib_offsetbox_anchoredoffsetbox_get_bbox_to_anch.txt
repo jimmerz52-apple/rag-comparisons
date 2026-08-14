@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.AnchoredOffsetbox.get_bbox_to_anchor
+
+get_bbox_to_anchor()[source]
+ 
+Return the bbox that the box is anchored to.

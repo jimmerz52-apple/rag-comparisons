@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.ProcessingInstructionHandler
+
+xmlparser.ProcessingInstructionHandler(target, data)  
+Called for every processing instruction.

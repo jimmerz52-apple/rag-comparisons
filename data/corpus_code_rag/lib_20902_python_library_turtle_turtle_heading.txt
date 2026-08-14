@@ -1,0 +1,7 @@
+# python.library.turtle#turtle.heading
+
+turtle.heading()  
+Return the turtle’s current heading (value depends on the turtle mode, see mode()). >>> turtle.home()
+>>> turtle.left(67)
+>>> turtle.heading()
+67.0

@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.ensemble.votingregressor#sklearn.ensemble.VotingRegressor.transform
+
+transform(X) [source]
+ 
+Return predictions for X for each estimator.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples.    Returns 
+ predictions: ndarray of shape (n_samples, n_classifiers)
+
+Values predicted by each regressor.

@@ -1,0 +1,12 @@
+# python.library.datetime#datetime.time.fromisoformat
+
+classmethod time.fromisoformat(time_string)  
+Return a time corresponding to a time_string in one of the formats emitted by time.isoformat(). Specifically, this function supports strings in the format: HH[:MM[:SS[.fff[fff]]]][+HH:MM[:SS[.ffffff]]]
+  Caution This does not support parsing arbitrary ISO 8601 strings. It is only intended as the inverse operation of time.isoformat().  Examples: >>> from datetime import time
+>>> time.fromisoformat('04:23:01')
+datetime.time(4, 23, 1)
+>>> time.fromisoformat('04:23:01.000384')
+datetime.time(4, 23, 1, 384)
+>>> time.fromisoformat('04:23:01+04:00')
+datetime.time(4, 23, 1, tzinfo=datetime.timezone(datetime.timedelta(seconds=14400)))
+  New in version 3.7.

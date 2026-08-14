@@ -1,0 +1,27 @@
+# matplotlib._as_gen.matplotlib.animation.moviewriterregistry
+
+matplotlib.animation.MovieWriterRegistry   classmatplotlib.animation.MovieWriterRegistry[source]
+ 
+Registry of available writer classes by human readable name.   __init__()[source]
+
+ Methods  
+__init__()   
+is_available(name) Check if given writer is available by name.  
+list() Get a list of available MovieWriters.  
+register(name) Decorator for registering a class under a name.     is_available(name)[source]
+ 
+Check if given writer is available by name.  Parameters 
+ 
+namestr
+
+  Returns 
+ bool
+   
+   list()[source]
+ 
+Get a list of available MovieWriters. 
+   register(name)[source]
+ 
+Decorator for registering a class under a name. Example use: @registry.register(name)
+class Foo:
+    pass

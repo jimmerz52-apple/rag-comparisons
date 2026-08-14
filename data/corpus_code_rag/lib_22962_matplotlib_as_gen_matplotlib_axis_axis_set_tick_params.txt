@@ -1,0 +1,20 @@
+# matplotlib._as_gen.matplotlib.axis.axis.set_tick_params
+
+matplotlib.axis.Axis.set_tick_params   Axis.set_tick_params(which='major', reset=False, **kw)[source]
+ 
+Set appearance parameters for ticks, ticklabels, and gridlines. For documentation of keyword arguments, see matplotlib.axes.Axes.tick_params(). 
+  Examples using matplotlib.axis.Axis.set_tick_params
+ 
+   Violin plot customization   
+
+   Dollar Ticks   
+
+   Scatter Histogram (Locatable Axes)   
+
+   Pythonic Matplotlib   
+
+   Placing date ticks using recurrence rules   
+
+   Date Precision and Epochs   
+
+   Choosing Colormaps in Matplotlib

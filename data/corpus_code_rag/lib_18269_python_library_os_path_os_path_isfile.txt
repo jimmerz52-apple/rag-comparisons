@@ -1,0 +1,4 @@
+# python.library.os.path#os.path.isfile
+
+os.path.isfile(path)  
+Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.  Changed in version 3.6: Accepts a path-like object.

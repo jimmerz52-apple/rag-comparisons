@@ -1,0 +1,9 @@
+# matplotlib.transformations#matplotlib.transforms.BboxTransformToMaxOnly
+
+classmatplotlib.transforms.BboxTransformToMaxOnly(boxout, **kwargs)[source]
+ 
+Bases: matplotlib.transforms.BboxTransformTo BboxTransformTo is a transformation that linearly transforms points from the unit bounding box to a given Bbox with a fixed upper left of (0, 0). Create a new BboxTransformTo that linearly transforms points from the unit bounding box to boxout.   __module__='matplotlib.transforms'
+
+   get_matrix()[source]
+ 
+Get the matrix for the affine part of this transform.

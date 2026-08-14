@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.yearend.is_quarter_start
+
+pandas.tseries.offsets.YearEnd.is_quarter_start   YearEnd.is_quarter_start()

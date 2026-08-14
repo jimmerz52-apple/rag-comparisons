@@ -1,0 +1,4 @@
+# python.library.exceptions#UnicodeError.reason
+
+reason  
+A string describing the specific codec error.

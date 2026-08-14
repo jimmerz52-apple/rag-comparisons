@@ -1,0 +1,4 @@
+# python.library.http.server#http.server.SimpleHTTPRequestHandler.extensions_map
+
+extensions_map  
+A dictionary mapping suffixes into MIME types, contains custom overrides for the default system mappings. The mapping is used case-insensitively, and so should contain only lower-cased keys.  Changed in version 3.9: This dictionary is no longer filled with the default system mappings, but only contains overrides.

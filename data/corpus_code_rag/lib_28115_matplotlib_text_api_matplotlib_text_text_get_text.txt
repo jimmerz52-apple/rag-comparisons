@@ -1,0 +1,5 @@
+# matplotlib.text_api#matplotlib.text.Text.get_text
+
+get_text()[source]
+ 
+Return the text string.

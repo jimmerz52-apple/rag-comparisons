@@ -1,0 +1,4 @@
+# django.howto.custom-management-commands#django.core.management.BaseCommand.suppressed_base_arguments
+
+BaseCommand.suppressed_base_arguments  
+ New in Django 4.0.  The default command options to suppress in the help output. This should be a set of option names (e.g. '--verbosity'). The default values for the suppressed options are still passed.

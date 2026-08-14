@@ -1,0 +1,30 @@
+# matplotlib._as_gen.matplotlib.axes.axes.add_collection
+
+matplotlib.axes.Axes.add_collection   Axes.add_collection(collection, autolim=True)[source]
+ 
+Add a Collection to the Axes; return the collection. 
+  Examples using matplotlib.axes.Axes.add_collection
+ 
+   EventCollection Demo   
+
+   Using span_where   
+
+   Creating boxes from error bars using PatchCollection   
+
+   Reference for Matplotlib artists   
+
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Ellipse Collection   
+
+   Line Collection   
+
+   Circles, Wedges and Polygons   
+
+   Lasso Demo   
+
+   MRI With EEG   
+
+   Artist tests   
+
+   Autoscaling

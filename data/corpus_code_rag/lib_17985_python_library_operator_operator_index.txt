@@ -1,0 +1,5 @@
+# python.library.operator#operator.index
+
+operator.index(a)  
+operator.__index__(a)  
+Return a converted to an integer. Equivalent to a.__index__().

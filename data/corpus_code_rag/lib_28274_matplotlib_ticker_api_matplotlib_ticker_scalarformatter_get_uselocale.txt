@@ -1,0 +1,5 @@
+# matplotlib.ticker_api#matplotlib.ticker.ScalarFormatter.get_useLocale
+
+get_useLocale()[source]
+ 
+Return whether locale settings are used for formatting.  See also  ScalarFormatter.set_useLocale

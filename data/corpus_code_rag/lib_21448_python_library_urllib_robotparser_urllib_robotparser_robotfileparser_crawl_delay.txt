@@ -1,0 +1,4 @@
+# python.library.urllib.robotparser#urllib.robotparser.RobotFileParser.crawl_delay
+
+crawl_delay(useragent)  
+Returns the value of the Crawl-delay parameter from robots.txt for the useragent in question. If there is no such parameter or it doesn’t apply to the useragent specified or the robots.txt entry for this parameter has invalid syntax, return None.  New in version 3.6.

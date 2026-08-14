@@ -1,0 +1,10 @@
+# django.ref.request-response#django.http.QueryDict.urlencode
+
+QueryDict.urlencode(safe=None)  
+Returns a string of the data in query string format. For example: >>> q = QueryDict('a=2&b=3&b=5')
+>>> q.urlencode()
+'a=2&b=3&b=5'
+ Use the safe parameter to pass characters which don’t require encoding. For example: >>> q = QueryDict(mutable=True)
+>>> q['next'] = '/a&b/'
+>>> q.urlencode(safe='/')
+'next=/a%26b/'

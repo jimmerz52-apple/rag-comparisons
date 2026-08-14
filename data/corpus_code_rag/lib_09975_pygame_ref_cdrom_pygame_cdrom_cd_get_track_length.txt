@@ -1,0 +1,4 @@
+# pygame.ref.cdrom#pygame.cdrom.CD.get_track_length
+
+get_track_length() 
+ length of a cdrom track get_track_length(track) -> seconds  Return a floating point value in seconds of the length of the cdrom track. Note, track 0 is the first track on the CD. Track numbers start at zero.

@@ -1,0 +1,8 @@
+# pandas.reference.api.pandas.interval.open_left
+
+pandas.Interval.open_left   Interval.open_left
+ 
+Check if the interval is open on the left side. For the meaning of closed and open see Interval.  Returns 
+ bool
+
+True if the Interval is closed on the left-side.

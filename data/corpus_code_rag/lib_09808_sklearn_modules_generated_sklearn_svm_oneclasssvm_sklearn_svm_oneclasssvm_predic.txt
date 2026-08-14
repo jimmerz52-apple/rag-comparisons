@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.svm.oneclasssvm#sklearn.svm.OneClassSVM.predict
+
+predict(X) [source]
+ 
+Perform classification on samples in X. For a one-class model, +1 or -1 is returned.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) or (n_samples_test, n_samples_train) 
+
+For kernel=”precomputed”, the expected shape of X is (n_samples_test, n_samples_train).    Returns 
+ 
+y_predndarray of shape (n_samples,) 
+
+Class labels for samples in X.

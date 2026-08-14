@@ -1,0 +1,4 @@
+# python.library.asyncio-exceptions#asyncio.TimeoutError
+
+exception asyncio.TimeoutError  
+The operation has exceeded the given deadline.  Important This exception is different from the builtin TimeoutError exception.

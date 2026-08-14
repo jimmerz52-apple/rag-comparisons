@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.PyDLL._name
+
+PyDLL._name  
+The name of the library passed in the constructor.

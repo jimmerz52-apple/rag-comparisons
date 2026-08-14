@@ -1,0 +1,4 @@
+# python.library.cmd#cmd.Cmd.use_rawinput
+
+Cmd.use_rawinput  
+A flag, defaulting to true. If true, cmdloop() uses input() to display a prompt and read the next command; if false, sys.stdout.write() and sys.stdin.readline() are used. (This means that by importing readline, on systems that support it, the interpreter will automatically support Emacs-like line editing and command-history keystrokes.)

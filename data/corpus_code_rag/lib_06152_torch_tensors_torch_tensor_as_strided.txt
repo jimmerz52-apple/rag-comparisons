@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.as_strided
+
+as_strided(size, stride, storage_offset=0) → Tensor  
+See torch.as_strided()

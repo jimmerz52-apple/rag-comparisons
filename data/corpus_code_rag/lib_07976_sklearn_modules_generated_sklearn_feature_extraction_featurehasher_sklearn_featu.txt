@@ -1,0 +1,10 @@
+# sklearn.modules.generated.sklearn.feature_extraction.featurehasher#sklearn.feature_extraction.FeatureHasher.fit
+
+fit(X=None, y=None) [source]
+ 
+No-op. This method doesn’t do anything. It exists purely for compatibility with the scikit-learn transformer API.  Parameters 
+ 
+Xndarray 
+  Returns 
+ 
+selfFeatureHasher

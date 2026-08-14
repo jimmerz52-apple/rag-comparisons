@@ -1,0 +1,4 @@
+# torch.fx#torch.fx.GraphModule.code
+
+property code  
+Return the Python code generated from the Graph underlying this GraphModule.

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLSocket.selected_alpn_protocol
+
+SSLSocket.selected_alpn_protocol()  
+Return the protocol that was selected during the TLS handshake. If SSLContext.set_alpn_protocols() was not called, if the other party does not support ALPN, if this socket does not support any of the client’s proposed protocols, or if the handshake has not happened yet, None is returned.  New in version 3.5.

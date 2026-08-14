@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.distutils.ccompiler_opt.ccompileropt.feature_implies_c
+
+numpy.distutils.ccompiler_opt.CCompilerOpt.feature_implies_c method   distutils.ccompiler_opt.CCompilerOpt.feature_implies_c(names)[source]
+ 
+same as feature_implies() but combining ‘names’

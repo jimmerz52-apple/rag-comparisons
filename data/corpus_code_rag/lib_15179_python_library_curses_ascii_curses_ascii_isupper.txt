@@ -1,0 +1,4 @@
+# python.library.curses.ascii#curses.ascii.isupper
+
+curses.ascii.isupper(c)  
+Checks for an ASCII uppercase letter.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_finder.fixedlocator#mpl_toolkits.axisartist.grid_finder.FixedLocator.__call__
+
+__call__(v1, v2)[source]
+ 
+Call self as a function.

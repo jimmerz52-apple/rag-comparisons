@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.flipud
+
+tf.experimental.numpy.flipud TensorFlow variant of NumPy's flipud. 
+tf.experimental.numpy.flipud(
+    m
+)
+ See the NumPy documentation for numpy.flipud.

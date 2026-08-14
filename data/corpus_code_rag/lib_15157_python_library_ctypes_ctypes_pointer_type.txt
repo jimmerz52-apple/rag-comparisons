@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes._Pointer._type_
+
+_type_  
+Specifies the type pointed to.

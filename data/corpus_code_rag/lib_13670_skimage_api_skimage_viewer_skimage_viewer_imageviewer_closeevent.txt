@@ -1,0 +1,3 @@
+# skimage.api.skimage.viewer#skimage.viewer.ImageViewer.closeEvent
+
+closeEvent(event) [source]

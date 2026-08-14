@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.prepared
+
+GEOSGeometry.prepared  
+Returns a GEOS PreparedGeometry for the contents of this geometry. PreparedGeometry objects are optimized for the contains, intersects, covers, crosses, disjoint, overlaps, touches and within operations. Refer to the Prepared Geometries documentation for more information.

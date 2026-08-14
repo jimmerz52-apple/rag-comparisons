@@ -1,0 +1,36 @@
+# werkzeug.datastructures.index#werkzeug.datastructures.Authorization
+
+class werkzeug.datastructures.Authorization(auth_type, data=None)  
+Represents an Authorization header sent by the client. This is returned by parse_authorization_header(). It can be useful to create the object manually to pass to the test Client.  Changelog Changed in version 0.5: This object became immutable.   
+property cnonce  
+If the server sent a qop-header in the WWW-Authenticate header, the client has to provide this value for HTTP digest auth. See the RFC for more details. 
+  
+property nc  
+The nonce count value transmitted by clients if a qop-header is also transmitted. HTTP digest auth only. 
+  
+property nonce  
+The nonce the server sent for digest auth, sent back by the client. A nonce should be unique for every 401 response for HTTP digest auth. 
+  
+property opaque  
+The opaque header from the server returned unchanged by the client. It is recommended that this string be base64 or hexadecimal data. Digest auth only. 
+  
+property password  
+When the authentication type is basic this is the password transmitted by the client, else None. 
+  
+property qop  
+Indicates what “quality of protection” the client has applied to the message for HTTP digest auth. Note that this is a single token, not a quoted list of alternatives as in WWW-Authenticate. 
+  
+property realm  
+This is the server realm sent back for HTTP digest auth. 
+  
+property response  
+A string of 32 hex digits computed as defined in RFC 2617, which proves that the user knows a password. Digest auth only. 
+  
+to_header()  
+Convert to a string value for an Authorization header.  New in version 2.0: Added to support passing authorization to the test client.  
+  
+property uri  
+The URI from Request-URI of the Request-Line; duplicated because proxies are allowed to change the Request-Line in transit. HTTP digest auth only. 
+  
+property username  
+The username transmitted. This is set for both basic and digest auth all the time.

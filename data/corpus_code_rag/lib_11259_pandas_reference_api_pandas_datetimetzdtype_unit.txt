@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.datetimetzdtype.unit
+
+pandas.DatetimeTZDtype.unit   propertyDatetimeTZDtype.unit
+ 
+The precision of the datetime data.

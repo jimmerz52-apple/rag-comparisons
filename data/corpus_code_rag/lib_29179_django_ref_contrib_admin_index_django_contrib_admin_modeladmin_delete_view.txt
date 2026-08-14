@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.delete_view
+
+ModelAdmin.delete_view(request, object_id, extra_context=None)  
+Django view for the model instance(s) deletion confirmation page. See note below.

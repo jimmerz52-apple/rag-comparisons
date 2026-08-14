@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Node.removeChild
+
+Node.removeChild(oldChild)  
+Remove a child node. oldChild must be a child of this node; if not, ValueError is raised. oldChild is returned on success. If oldChild will not be used further, its unlink() method should be called.

@@ -1,0 +1,4 @@
+# torch.generated.torch.nn.utils.rnn.packedsequence#torch.nn.utils.rnn.PackedSequence.batch_sizes
+
+property batch_sizes  
+Alias for field number 1

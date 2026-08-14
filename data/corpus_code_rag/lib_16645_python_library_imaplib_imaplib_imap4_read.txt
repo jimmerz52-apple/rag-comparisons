@@ -1,0 +1,4 @@
+# python.library.imaplib#imaplib.IMAP4.read
+
+IMAP4.read(size)  
+Reads size bytes from the remote server. You may override this method.

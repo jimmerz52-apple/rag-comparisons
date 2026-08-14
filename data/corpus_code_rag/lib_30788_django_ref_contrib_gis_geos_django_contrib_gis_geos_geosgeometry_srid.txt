@@ -1,0 +1,9 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.srid
+
+GEOSGeometry.srid  
+Property that may be used to retrieve or set the SRID associated with the geometry. For example: >>> pnt = Point(5, 23)
+>>> print(pnt.srid)
+None
+>>> pnt.srid = 4326
+>>> pnt.srid
+4326

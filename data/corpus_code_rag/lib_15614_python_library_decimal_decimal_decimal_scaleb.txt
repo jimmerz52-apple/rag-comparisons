@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.scaleb
+
+scaleb(other, context=None)  
+Return the first operand with exponent adjusted by the second. Equivalently, return the first operand multiplied by 10**other. The second operand must be an integer.

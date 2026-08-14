@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.ExceptionReporter.get_traceback_html
+
+get_traceback_html()  
+Return HTML version of exception report. Used for HTML version of debug 500 HTTP error page.

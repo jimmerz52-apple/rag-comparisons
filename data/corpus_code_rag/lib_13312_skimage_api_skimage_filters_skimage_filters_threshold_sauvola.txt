@@ -1,0 +1,28 @@
+# skimage.api.skimage.filters#skimage.filters.threshold_sauvola
+
+skimage.filters.threshold_sauvola(image, window_size=15, k=0.2, r=None) [source]
+ 
+Applies Sauvola local threshold to an array. Sauvola is a modification of Niblack technique. In the original method a threshold T is calculated for every pixel in the image using the following formula: T = m(x,y) * (1 + k * ((s(x,y) / R) - 1))
+ where m(x,y) and s(x,y) are the mean and standard deviation of pixel (x,y) neighborhood defined by a rectangular window with size w times w centered around the pixel. k is a configurable parameter that weights the effect of standard deviation. R is the maximum standard deviation of a greyscale image.  Parameters 
+ 
+imagendarray 
+
+Input image.  
+window_sizeint, or iterable of int, optional 
+
+Window size specified as a single odd integer (3, 5, 7, …), or an iterable of length image.ndim containing only odd integers (e.g. (1, 5, 5)).  
+kfloat, optional 
+
+Value of the positive parameter k.  
+rfloat, optional 
+
+Value of R, the dynamic range of standard deviation. If None, set to the half of the image dtype range.    Returns 
+ 
+threshold(N, M) ndarray 
+
+Threshold mask. All pixels with an intensity higher than this value are assumed to be foreground.     Notes This algorithm is originally designed for text recognition. References  
+1  
+J. Sauvola and M. Pietikainen, “Adaptive document image binarization,” Pattern Recognition 33(2), pp. 225-236, 2000. DOI:10.1016/S0031-3203(99)00055-2   Examples >>> from skimage import data
+>>> image = data.page()
+>>> t_sauvola = threshold_sauvola(image, window_size=15, k=0.2)
+>>> binary_image = image > t_sauvola

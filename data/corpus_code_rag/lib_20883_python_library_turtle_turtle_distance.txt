@@ -1,0 +1,16 @@
+# python.library.turtle#turtle.distance
+
+turtle.distance(x, y=None)  
+ Parameters 
+ 
+x – a number or a pair/vector of numbers or a turtle instance 
+y – a number if x is a number, else None
+    Return the distance from the turtle to (x,y), the given vector, or the given other turtle, in turtle step units. >>> turtle.home()
+>>> turtle.distance(30,40)
+50.0
+>>> turtle.distance((30,40))
+50.0
+>>> joe = Turtle()
+>>> joe.forward(77)
+>>> turtle.distance(joe)
+77.0

@@ -1,0 +1,8 @@
+# torch.generated.torch.nn.module#torch.nn.Module.register_parameter
+
+register_parameter(name, param) [source]
+ 
+Adds a parameter to the module. The parameter can be accessed as an attribute using given name.  Parameters 
+ 
+name (string) – name of the parameter. The parameter can be accessed from this module using the given name 
+param (Parameter) – parameter to be added to the module.

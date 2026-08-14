@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.char.chararray.isupper
+
+numpy.char.chararray.isupper method   char.chararray.isupper()[source]
+ 
+Returns true for each element if all cased characters in the string are uppercase and there is at least one character, false otherwise.  See also  char.isupper

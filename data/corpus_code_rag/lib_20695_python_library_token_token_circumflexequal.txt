@@ -1,0 +1,4 @@
+# python.library.token#token.CIRCUMFLEXEQUAL
+
+token.CIRCUMFLEXEQUAL  
+Token value for "^=".

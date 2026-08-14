@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axes.axes.get_lines
+
+matplotlib.axes.Axes.get_lines   Axes.get_lines()[source]
+ 
+Return a list of lines contained by the Axes.

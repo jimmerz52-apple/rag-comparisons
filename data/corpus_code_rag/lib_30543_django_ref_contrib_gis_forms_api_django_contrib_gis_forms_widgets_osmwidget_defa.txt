@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.forms-api#django.contrib.gis.forms.widgets.OSMWidget.default_zoom
+
+default_zoom  
+The default map zoom is 12.

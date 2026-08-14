@@ -1,0 +1,4 @@
+# django.topics.http.decorators#django.views.decorators.http.last_modified
+
+last_modified(last_modified_func)  
+These decorators can be used to generate ETag and Last-Modified headers; see conditional view processing.

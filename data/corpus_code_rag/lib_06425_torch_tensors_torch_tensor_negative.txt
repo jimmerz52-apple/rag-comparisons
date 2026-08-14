@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.negative_
+
+negative_() → Tensor  
+In-place version of negative()

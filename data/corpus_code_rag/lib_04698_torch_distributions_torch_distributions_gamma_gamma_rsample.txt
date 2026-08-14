@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.gamma.Gamma.rsample
+
+rsample(sample_shape=torch.Size([])) [source]

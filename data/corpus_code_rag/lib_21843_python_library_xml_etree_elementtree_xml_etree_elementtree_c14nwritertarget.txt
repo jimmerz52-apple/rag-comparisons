@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.C14NWriterTarget
+
+class xml.etree.ElementTree.C14NWriterTarget(write, *, with_comments=False, strip_text=False, rewrite_prefixes=False, qname_aware_tags=None, qname_aware_attrs=None, exclude_attrs=None, exclude_tags=None)  
+A C14N 2.0 writer. Arguments are the same as for the canonicalize() function. This class does not build a tree but translates the callback events directly into a serialised form using the write function.  New in version 3.8.

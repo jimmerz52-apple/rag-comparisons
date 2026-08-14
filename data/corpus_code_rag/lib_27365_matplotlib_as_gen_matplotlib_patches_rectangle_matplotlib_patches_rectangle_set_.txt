@@ -1,0 +1,6 @@
+# matplotlib._as_gen.matplotlib.patches.rectangle#matplotlib.patches.Rectangle.set_bounds
+
+set_bounds(*args)[source]
+ 
+Set the bounds of the rectangle as left, bottom, width, height. The values may be passed as separate parameters or as a tuple: set_bounds(left, bottom, width, height)
+set_bounds((left, bottom, width, height))

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_grid.grid#mpl_toolkits.axes_grid1.axes_grid.Grid.get_vsize_hsize
+
+get_vsize_hsize()[source]
+ 
+[Deprecated] Notes  Deprecated since version 3.5:

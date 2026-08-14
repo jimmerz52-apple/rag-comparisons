@@ -1,0 +1,62 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.GraphicsContextCairo
+
+classmatplotlib.backends.backend_cairo.GraphicsContextCairo(renderer)[source]
+ 
+Bases: matplotlib.backend_bases.GraphicsContextBase   get_rgb()[source]
+ 
+Return a tuple of three or four floats from 0-1. 
+   restore()[source]
+ 
+Restore the graphics context from the stack - needed only for backends that save graphics contexts on a stack. 
+   set_alpha(alpha)[source]
+ 
+Set the alpha value used for blending - not supported on all backends. If alpha=None (the default), the alpha components of the foreground and fill colors will be used to set their respective transparencies (where applicable); otherwise, alpha will override them. 
+   set_antialiased(b)[source]
+ 
+Set whether object should be drawn with antialiased rendering. 
+   set_capstyle(cs)[source]
+ 
+Set how to draw endpoints of lines.  Parameters 
+ 
+csCapStyle or {'butt', 'projecting', 'round'}
+
+   
+   set_clip_path(path)[source]
+ 
+Set the clip path to a TransformedPath or None. 
+   set_clip_rectangle(rectangle)[source]
+ 
+Set the clip rectangle to a Bbox or None. 
+   set_dashes(offset, dashes)[source]
+ 
+Set the dash style for the gc.  Parameters 
+ 
+dash_offsetfloat
+
+
+The offset (usually 0).  
+dash_listarray-like or None
+
+
+The on-off sequence as points. None specifies a solid line.     Notes See p. 107 of to PostScript blue book for more info. 
+   set_foreground(fg, isRGBA=None)[source]
+ 
+Set the foreground color.  Parameters 
+ 
+fgcolor
+
+
+isRGBAbool
+
+
+If fg is known to be an (r, g, b, a) tuple, isRGBA can be set to True to improve performance.     
+   set_joinstyle(js)[source]
+ 
+Set how to draw connections between line segments.  Parameters 
+ 
+jsJoinStyle or {'miter', 'round', 'bevel'}
+
+   
+   set_linewidth(w)[source]
+ 
+Set the linewidth in points.

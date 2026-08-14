@@ -1,0 +1,4 @@
+# python.library.resource#resource.RLIM_INFINITY
+
+resource.RLIM_INFINITY  
+Constant used to represent the limit for an unlimited resource.

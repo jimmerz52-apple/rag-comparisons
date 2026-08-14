@@ -1,0 +1,4 @@
+# python.library.asyncore#asyncore.dispatcher_with_send
+
+class asyncore.dispatcher_with_send  
+A dispatcher subclass which adds simple buffered output capability, useful for simple clients. For more sophisticated usage use asynchat.async_chat.

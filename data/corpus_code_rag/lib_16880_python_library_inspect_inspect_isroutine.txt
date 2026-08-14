@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isroutine
+
+inspect.isroutine(object)  
+Return True if the object is a user-defined or built-in function or method.

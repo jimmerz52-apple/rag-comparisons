@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rpow__
+
+numpy.ma.MaskedArray.__rpow__ method   ma.MaskedArray.__rpow__(other)[source]
+ 
+Raise other to the power self, masking the potential NaNs/Infs

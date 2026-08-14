@@ -1,0 +1,10 @@
+# matplotlib.backend_tk_api#matplotlib.backends.backend_tkagg.FigureCanvasTkAgg
+
+classmatplotlib.backends.backend_tkagg.FigureCanvasTkAgg(figure=None, master=None, resize_callback=<deprecated parameter>)[source]
+ 
+Bases: matplotlib.backends.backend_agg.FigureCanvasAgg, matplotlib.backends._backend_tk.FigureCanvasTk   blit(bbox=None)[source]
+ 
+Blit the canvas in bbox (default entire canvas). 
+   draw()[source]
+ 
+Render the Figure. It is important that this method actually walk the artist tree even if not output is produced because this will trigger deferred work (like computing limits auto-limits and tick values) that users may want access to before saving to disk.

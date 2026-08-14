@@ -1,0 +1,22 @@
+# pandas.reference.api.pandas.series.str.index
+
+pandas.Series.str.index   Series.str.index(sub, start=0, end=None)[source]
+ 
+Return lowest indexes in each string in Series/Index. Each of the returned indexes corresponds to the position where the substring is fully contained between [start:end]. This is the same as str.find except instead of returning -1, it raises a ValueError when the substring is not found. Equivalent to standard str.index.  Parameters 
+ 
+sub:str
+
+
+Substring being searched.  
+start:int
+
+
+Left edge index.  
+end:int
+
+
+Right edge index.    Returns 
+ Series or Index of object
+    See also  rindex
+
+Return highest indexes in each strings.

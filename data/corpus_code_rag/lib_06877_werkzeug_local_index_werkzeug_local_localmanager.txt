@@ -1,0 +1,28 @@
+# werkzeug.local.index#werkzeug.local.LocalManager
+
+class werkzeug.local.LocalManager(locals=None, ident_func=None)  
+Local objects cannot manage themselves. For that you need a local manager. You can pass a local manager multiple locals or add them later y appending them to manager.locals. Every time the manager cleans up, it will clean up all the data left in the locals for this context.  Changed in version 2.0: ident_func is deprecated and will be removed in Werkzeug 2.1.   Changelog Changed in version 0.7: The ident_func parameter was added.   Changed in version 0.6.1: The release_local() function can be used instead of a manager.   Parameters 
+ 
+locals (Optional[Iterable[Union[werkzeug.local.Local, werkzeug.local.LocalStack]]]) –  
+ident_func (None) –    Return type 
+None    
+cleanup()  
+Manually clean up the data in the locals for this context. Call this at the end of the request or use make_middleware().  Return type 
+None   
+  
+get_ident()  
+Return the context identifier the local objects use internally for this context. You cannot override this method to change the behavior but use it to link other context local objects (such as SQLAlchemy’s scoped sessions) to the Werkzeug locals.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1.   Changelog Changed in version 0.7: You can pass a different ident function to the local manager that will then be propagated to all the locals passed to the constructor.   Return type 
+int   
+  
+make_middleware(app)  
+Wrap a WSGI application so that cleaning up happens after request end.  Parameters 
+app (WSGIApplication) –   Return type 
+WSGIApplication   
+  
+middleware(func)  
+Like make_middleware but for decorating functions. Example usage: @manager.middleware
+def application(environ, start_response):
+    ...
+ The difference to make_middleware is that the function passed will have all the arguments copied from the inner application (name, docstring, module).  Parameters 
+func (WSGIApplication) –   Return type 
+WSGIApplication

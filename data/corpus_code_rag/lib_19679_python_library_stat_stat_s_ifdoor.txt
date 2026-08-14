@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IFDOOR
+
+stat.S_IFDOOR  
+Door.  New in version 3.4.

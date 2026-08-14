@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2#sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2
+
+sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2()  
+Inplace row normalize using the l2 norm

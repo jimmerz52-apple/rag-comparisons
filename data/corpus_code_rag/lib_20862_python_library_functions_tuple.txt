@@ -1,0 +1,4 @@
+# python.library.functions#tuple
+
+class tuple([iterable])  
+Rather than being a function, tuple is actually an immutable sequence type, as documented in Tuples and Sequence Types — list, tuple, range.

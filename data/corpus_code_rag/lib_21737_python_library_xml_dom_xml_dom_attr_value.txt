@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Attr.value
+
+Attr.value  
+The text value of the attribute. This is a synonym for the nodeValue attribute.

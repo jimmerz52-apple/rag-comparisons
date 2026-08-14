@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-simple#django.views.generic.base.TemplateResponseMixin.content_type
+
+content_type  
+The content type to use for the response. content_type is passed as a keyword argument to response_class. Default is None – meaning that Django uses 'text/html'.

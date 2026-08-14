@@ -1,0 +1,14 @@
+# python.library.turtle#turtle.onkeyrelease
+
+turtle.onkey(fun, key)  
+turtle.onkeyrelease(fun, key)  
+ Parameters 
+ 
+fun – a function with no arguments or None
+ 
+key – a string: key (e.g. “a”) or key-symbol (e.g. “space”)    Bind fun to key-release event of key. If fun is None, event bindings are removed. Remark: in order to be able to register key-events, TurtleScreen must have the focus. (See method listen().) >>> def f():
+...     fd(50)
+...     lt(60)
+...
+>>> screen.onkey(f, "Up")
+>>> screen.listen()

@@ -1,0 +1,36 @@
+# torch.distributions#torch.distributions.beta.Beta
+
+class torch.distributions.beta.Beta(concentration1, concentration0, validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Beta distribution parameterized by concentration1 and concentration0. Example: >>> m = Beta(torch.tensor([0.5]), torch.tensor([0.5]))
+>>> m.sample()  # Beta distributed with concentration concentration1 and concentration0
+tensor([ 0.1046])
+  Parameters 
+ 
+concentration1 (float or Tensor) – 1st concentration parameter of the distribution (often referred to as alpha) 
+concentration0 (float or Tensor) – 2nd concentration parameter of the distribution (often referred to as beta)     
+arg_constraints = {'concentration0': GreaterThan(lower_bound=0.0), 'concentration1': GreaterThan(lower_bound=0.0)} 
+  
+property concentration0 
+  
+property concentration1 
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=()) [source]
+
+  
+support = Interval(lower_bound=0.0, upper_bound=1.0) 
+  
+property variance

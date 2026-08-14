@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getmarkers
+
+aifc.getmarkers()  
+Return a list of markers in the audio file. A marker consists of a tuple of three elements. The first is the mark ID (an integer), the second is the mark position in frames from the beginning of the data (an integer), the third is the name of the mark (a string).

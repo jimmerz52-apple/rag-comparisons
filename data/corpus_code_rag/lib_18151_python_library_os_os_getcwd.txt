@@ -1,0 +1,4 @@
+# python.library.os#os.getcwd
+
+os.getcwd()  
+Return a string representing the current working directory.

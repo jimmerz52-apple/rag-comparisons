@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.artist.artist.get_snap
+
+matplotlib.artist.Artist.get_snap   Artist.get_snap()[source]
+ 
+Return the snap setting. See set_snap for details.

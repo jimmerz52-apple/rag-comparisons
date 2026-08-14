@@ -1,0 +1,19 @@
+# django.ref.request-response#django.http.HttpRequest.META
+
+HttpRequest.META  
+A dictionary containing all available HTTP headers. Available headers depend on the client and server, but here are some examples:  
+CONTENT_LENGTH – The length of the request body (as a string). 
+CONTENT_TYPE – The MIME type of the request body. 
+HTTP_ACCEPT – Acceptable content types for the response. 
+HTTP_ACCEPT_ENCODING – Acceptable encodings for the response. 
+HTTP_ACCEPT_LANGUAGE – Acceptable languages for the response. 
+HTTP_HOST – The HTTP Host header sent by the client. 
+HTTP_REFERER – The referring page, if any. 
+HTTP_USER_AGENT – The client’s user-agent string. 
+QUERY_STRING – The query string, as a single (unparsed) string. 
+REMOTE_ADDR – The IP address of the client. 
+REMOTE_HOST – The hostname of the client. 
+REMOTE_USER – The user authenticated by the web server, if any. 
+REQUEST_METHOD – A string such as "GET" or "POST". 
+SERVER_NAME – The hostname of the server. 
+SERVER_PORT – The port of the server (as a string).  With the exception of CONTENT_LENGTH and CONTENT_TYPE, as given above, any HTTP headers in the request are converted to META keys by converting all characters to uppercase, replacing any hyphens with underscores and adding an HTTP_ prefix to the name. So, for example, a header called X-Bender would be mapped to the META key HTTP_X_BENDER. Note that runserver strips all headers with underscores in the name, so you won’t see them in META. This prevents header-spoofing based on ambiguity between underscores and dashes both being normalizing to underscores in WSGI environment variables. It matches the behavior of web servers like Nginx and Apache 2.4+. HttpRequest.headers is a simpler way to access all HTTP-prefixed headers, plus CONTENT_LENGTH and CONTENT_TYPE.

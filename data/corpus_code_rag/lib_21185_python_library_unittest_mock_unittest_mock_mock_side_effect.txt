@@ -1,0 +1,34 @@
+# python.library.unittest.mock#unittest.mock.Mock.side_effect
+
+side_effect  
+This can either be a function to be called when the mock is called, an iterable or an exception (class or instance) to be raised. If you pass in a function it will be called with same arguments as the mock and unless the function returns the DEFAULT singleton the call to the mock will then return whatever the function returns. If the function returns DEFAULT then the mock will return its normal value (from the return_value). If you pass in an iterable, it is used to retrieve an iterator which must yield a value on every call. This value can either be an exception instance to be raised, or a value to be returned from the call to the mock (DEFAULT handling is identical to the function case). An example of a mock that raises an exception (to test exception handling of an API): >>> mock = Mock()
+>>> mock.side_effect = Exception('Boom!')
+>>> mock()
+Traceback (most recent call last):
+  ...
+Exception: Boom!
+ Using side_effect to return a sequence of values: >>> mock = Mock()
+>>> mock.side_effect = [3, 2, 1]
+>>> mock(), mock(), mock()
+(3, 2, 1)
+ Using a callable: >>> mock = Mock(return_value=3)
+>>> def side_effect(*args, **kwargs):
+...     return DEFAULT
+...
+>>> mock.side_effect = side_effect
+>>> mock()
+3
+ side_effect can be set in the constructor. Here’s an example that adds one to the value the mock is called with and returns it: >>> side_effect = lambda value: value + 1
+>>> mock = Mock(side_effect=side_effect)
+>>> mock(3)
+4
+>>> mock(-8)
+-7
+ Setting side_effect to None clears it: >>> m = Mock(side_effect=KeyError, return_value=3)
+>>> m()
+Traceback (most recent call last):
+ ...
+KeyError
+>>> m.side_effect = None
+>>> m()
+3

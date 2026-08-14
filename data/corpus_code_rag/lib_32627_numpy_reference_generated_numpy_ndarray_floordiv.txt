@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ndarray.__floordiv__
+
+numpy.ndarray.__floordiv__ method   ndarray.__floordiv__(value, /)
+ 
+Return self//value.

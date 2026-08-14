@@ -1,0 +1,5 @@
+# matplotlib.widgets_api#matplotlib.widgets.Button.disconnect
+
+disconnect(cid)[source]
+ 
+Remove the callback function with connection id cid.

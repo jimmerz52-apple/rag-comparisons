@@ -1,0 +1,4 @@
+# python.library.email.message#email.message.EmailMessage.get_all
+
+get_all(name, failobj=None)  
+Return a list of all the values for the field named name. If there are no such named headers in the message, failobj is returned (defaults to None).

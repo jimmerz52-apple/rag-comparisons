@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.transformed_distribution.TransformedDistribution.arg_constraints
+
+arg_constraints: Dict[str, torch.distributions.constraints.Constraint] = {}

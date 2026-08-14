@@ -1,0 +1,4 @@
+# pygame.ref.freetype#pygame.freetype.was_init
+
+pygame.freetype.was_init() 
+ DEPRECATED: Use get_init() instead. was_init() -> bool  DEPRECATED: Returns True if the pygame.freetype module is currently initialized. Use get_init() instead.

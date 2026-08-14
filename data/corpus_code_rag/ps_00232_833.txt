@@ -1,0 +1,9 @@
+# 833
+Task: 833
+
+# Write a function to get dictionary keys as a list.
+def get_key(dict): 
+    list = [] 
+    for key in dict.keys(): 
+        list.append(key)           
+    return list

@@ -1,0 +1,16 @@
+# matplotlib.figure_api#matplotlib.figure.FigureBase.align_ylabels
+
+align_ylabels(axs=None)[source]
+ 
+Align the ylabels of subplots in the same subplot column if label alignment is being done automatically (i.e. the label position is not manually set). Alignment persists for draw events after this is called. If a label is on the left, it is aligned with labels on Axes that also have their label on the left and that have the same left-most subplot column. If the label is on the right, it is aligned with labels on Axes with the same right-most column.  Parameters 
+ 
+axslist of Axes
+
+
+Optional list (or ndarray) of Axes to align the ylabels. Default is to align all Axes on the figure.      See also  matplotlib.figure.Figure.align_xlabels
+matplotlib.figure.Figure.align_labels
+  Notes This assumes that axs are from the same GridSpec, so that their SubplotSpec positions correspond to figure positions. Examples Example with large yticks labels: fig, axs = plt.subplots(2, 1)
+axs[0].plot(np.arange(0, 1000, 50))
+axs[0].set_ylabel('YLabel 0')
+axs[1].set_ylabel('YLabel 1')
+fig.align_ylabels()

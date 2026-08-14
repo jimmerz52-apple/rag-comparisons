@@ -1,0 +1,17 @@
+# numpy.reference.generated.numpy.char.chararray.fill
+
+numpy.char.chararray.fill method   char.chararray.fill(value)
+ 
+Fill the array with a scalar value.  Parameters 
+ 
+valuescalar
+
+
+All elements of a will be assigned this value.     Examples >>> a = np.array([1, 2])
+>>> a.fill(0)
+>>> a
+array([0, 0])
+>>> a = np.empty(2)
+>>> a.fill(1)
+>>> a
+array([1.,  1.])

@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.lu
+
+lu(pivot=True, get_infos=False) [source]
+ 
+See torch.lu()

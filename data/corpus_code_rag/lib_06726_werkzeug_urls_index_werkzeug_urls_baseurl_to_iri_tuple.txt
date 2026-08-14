@@ -1,0 +1,5 @@
+# werkzeug.urls.index#werkzeug.urls.BaseURL.to_iri_tuple
+
+to_iri_tuple()  
+Returns a URL tuple that holds a IRI. This will try to decode as much information as possible in the URL without losing information similar to how a web browser does it for the URL bar. It’s usually more interesting to directly call uri_to_iri() which will return a string.  Return type 
+werkzeug.urls.BaseURL

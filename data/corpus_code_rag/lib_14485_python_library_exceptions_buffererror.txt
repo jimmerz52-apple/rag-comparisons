@@ -1,0 +1,4 @@
+# python.library.exceptions#BufferError
+
+exception BufferError  
+Raised when a buffer related operation cannot be performed.

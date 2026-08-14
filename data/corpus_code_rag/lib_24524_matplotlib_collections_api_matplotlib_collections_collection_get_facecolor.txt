@@ -1,0 +1,3 @@
+# matplotlib.collections_api#matplotlib.collections.Collection.get_facecolor
+
+get_facecolor()[source]

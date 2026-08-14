@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.Options
+
+class ssl.Options  
+enum.IntFlag collection of OP_* constants.

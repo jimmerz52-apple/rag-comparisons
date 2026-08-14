@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.run_forever
+
+loop.run_forever()  
+Run the event loop until stop() is called. If stop() is called before run_forever() is called, the loop will poll the I/O selector once with a timeout of zero, run all callbacks scheduled in response to I/O events (and those that were already scheduled), and then exit. If stop() is called while run_forever() is running, the loop will run the current batch of callbacks and then exit. Note that new callbacks scheduled by callbacks will not run in this case; instead, they will run the next time run_forever() or run_until_complete() is called.

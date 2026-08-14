@@ -1,0 +1,9 @@
+# tensorflow.train.example
+
+tf.train.Example     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.Example 
+ 
+
+
+ Attributes
+  features   Features features

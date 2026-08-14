@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.preprocessing.labelencoder#sklearn.preprocessing.LabelEncoder.inverse_transform
+
+inverse_transform(y) [source]
+ 
+Transform labels back to original encoding.  Parameters 
+ 
+yndarray of shape (n_samples,) 
+
+Target values.    Returns 
+ 
+yndarray of shape (n_samples,)

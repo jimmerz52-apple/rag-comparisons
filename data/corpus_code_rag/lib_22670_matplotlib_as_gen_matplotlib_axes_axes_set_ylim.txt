@@ -1,0 +1,182 @@
+# matplotlib._as_gen.matplotlib.axes.axes.set_ylim
+
+matplotlib.axes.Axes.set_ylim   Axes.set_ylim(bottom=None, top=None, emit=True, auto=False, *, ymin=None, ymax=None)[source]
+ 
+Set the y-axis view limits.  Parameters 
+ 
+bottomfloat, optional
+
+
+The bottom ylim in data coordinates. Passing None leaves the limit unchanged. The bottom and top ylims may also be passed as the tuple (bottom, top) as the first positional argument (or as the bottom keyword argument).  
+topfloat, optional
+
+
+The top ylim in data coordinates. Passing None leaves the limit unchanged.  
+emitbool, default: True
+
+
+Whether to notify observers of limit change.  
+autobool or None, default: False
+
+
+Whether to turn on autoscaling of the y-axis. True turns on, False turns off, None leaves unchanged.  
+ymin, ymaxfloat, optional
+
+
+They are equivalent to bottom and top respectively, and it is an error to pass both ymin and bottom or ymax and top.    Returns 
+ 
+bottom, top(float, float)
+
+
+The new y-axis limits in data coordinates.      See also  get_ylim
+
+set_ybound, get_ybound
+
+
+invert_yaxis, yaxis_inverted
+
+  Notes The bottom value may be greater than the top value, in which case the y-axis values will decrease from bottom to top. Examples >>> set_ylim(bottom, top)
+>>> set_ylim((bottom, top))
+>>> bottom, top = set_ylim(bottom, top)
+ One limit may be left unchanged. >>> set_ylim(top=top_lim)
+ Limits may be passed in reverse order to flip the direction of the y-axis. For example, suppose y represents depth of the ocean in m. The y-axis limits might be set like the following so 5000 m depth is at the bottom of the plot and the surface, 0 m, is at the top. >>> set_ylim(5000, 0)
+ 
+  Examples using matplotlib.axes.Axes.set_ylim
+ 
+   Broken Barh   
+
+   EventCollection Demo   
+
+   Hat graph   
+
+   Markevery Demo   
+
+   Psd Demo   
+
+   Contouring the solution space of optimizations   
+
+   Image Nonuniform   
+
+   pcolormesh grids and shading   
+
+   Axes Demo   
+
+   Broken Axis   
+
+   Figure labels: suptitle, supxlabel, supylabel   
+
+   Zoom region inset axes   
+
+   Boxplots   
+
+   AnnotationBbox demo   
+
+   Using a text as a Path   
+
+   Annotate Transform   
+
+   Annotating a plot   
+
+   Line, Poly and RegularPoly Collection with autoscaling   
+
+   Mmh Donuts!!!   
+
+   Ellipse Demo   
+
+   Line Collection   
+
+   Inset Locator Demo2   
+
+   Parasite Simple2   
+
+   axis_direction demo   
+
+   Parasite Axes demo   
+
+   Parasite axis demo   
+
+   Simple Axis Pad   
+
+   Simple Axisline   
+
+   Anatomy of a figure   
+
+   Bachelor's degrees by gender   
+
+   Integral as the area under a curve   
+
+   XKCD   
+
+   Decay   
+
+   Animated histogram   
+
+   Rain simulation   
+
+   MATPLOTLIB UNCHAINED   
+
+   Data Browser   
+
+   Path Editor   
+
+   Pick Event Demo2   
+
+   Poly Editor   
+
+   Zoom Window   
+
+   Frontpage contour example   
+
+   Frontpage plot example   
+
+   Custom projection   
+
+   Building histograms using Rectangles and PolyCollections   
+
+   Pythonic Matplotlib   
+
+   SVG Filter Line   
+
+   TickedStroke patheffect   
+
+   Plot 2D data on 3D plot   
+
+   Draw flat objects in 3D plot   
+
+   Text annotations in 3D   
+
+   Loglog Aspect   
+
+   Log Demo   
+
+   MRI With EEG   
+
+   SkewT-logP diagram: using transforms and custom projections   
+
+   Multiple Yaxis With Spines   
+
+   Custom spine bounds   
+
+   Annotation with units   
+
+   Artist tests   
+
+   Annotate Text Arrow   
+
+   Connect Simple01   
+
+   Annotated Cursor   
+
+   Cursor   
+
+   Span Selector   
+
+   Basic Usage   
+
+   Path Tutorial   
+
+   Transformations Tutorial   
+
+   Specifying Colors   
+
+   Choosing Colormaps in Matplotlib

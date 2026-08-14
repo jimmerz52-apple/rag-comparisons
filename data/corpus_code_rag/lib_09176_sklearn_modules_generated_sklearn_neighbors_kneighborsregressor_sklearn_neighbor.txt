@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neighbors.kneighborsregressor#sklearn.neighbors.KNeighborsRegressor.predict
+
+predict(X) [source]
+ 
+Predict the target for the provided data  Parameters 
+ 
+Xarray-like of shape (n_queries, n_features), or (n_queries, n_indexed) if metric == ‘precomputed’ 
+
+Test samples.    Returns 
+ 
+yndarray of shape (n_queries,) or (n_queries, n_outputs), dtype=int 
+
+Target values.

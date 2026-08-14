@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.perioddtype.freq
+
+pandas.PeriodDtype.freq   propertyPeriodDtype.freq
+ 
+The frequency object of this PeriodDtype.

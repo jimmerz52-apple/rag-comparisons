@@ -1,0 +1,24 @@
+# werkzeug.utils.index#werkzeug.utils.invalidate_cached_property
+
+werkzeug.utils.invalidate_cached_property(obj, name)  
+Invalidates the cache for a cached_property: >>> class Test(object):
+...     @cached_property
+...     def magic_number(self):
+...         print("recalculating...")
+...         return 42
+...
+>>> var = Test()
+>>> var.magic_number
+recalculating...
+42
+>>> var.magic_number
+42
+>>> invalidate_cached_property(var, "magic_number")
+>>> var.magic_number
+recalculating...
+42
+ You must pass the name of the cached property as the second argument.  Deprecated since version 2.0: Will be removed in Werkzeug 2.1. Use del obj.name instead.   Parameters 
+ 
+obj (object) –  
+name (str) –    Return type 
+None

@@ -1,0 +1,5 @@
+# matplotlib.afm_api#matplotlib.afm.AFM.get_width_from_char_name
+
+get_width_from_char_name(name)[source]
+ 
+Get the width of the character from a type1 character name.

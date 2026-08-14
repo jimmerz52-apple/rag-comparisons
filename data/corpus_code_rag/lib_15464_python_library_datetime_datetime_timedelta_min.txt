@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.timedelta.min
+
+timedelta.min  
+The most negative timedelta object, timedelta(-999999999).

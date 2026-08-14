@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.get_controls
+
+get_controls() 
+ gets current values of user controls get_controls() -> (hflip = bool, vflip = bool, brightness)  If the camera supports it, get_controls will return the current settings for horizontal and vertical image flip as bools and brightness as an int. If unsupported, it will return the default values of (0, 0, 0). Note that the return values here may be different than those returned by set_controls, though these are more likely to be correct.

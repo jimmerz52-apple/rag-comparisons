@@ -1,0 +1,4 @@
+# django.ref.models.constraints#django.db.models.UniqueConstraint
+
+class UniqueConstraint(*expressions, fields=(), name=None, condition=None, deferrable=None, include=None, opclasses=())  
+Creates a unique constraint in the database.

@@ -1,0 +1,9 @@
+# matplotlib._as_gen.matplotlib.patches.fancyarrowpatch#matplotlib.patches.FancyArrowPatch.set_dpi_cor
+
+set_dpi_cor(dpi_cor)[source]
+ 
+[Deprecated] dpi_cor is currently used for linewidth-related things and shrink factor. Mutation scale is affected by this.  Parameters 
+ 
+dpi_corfloat
+
+   Notes  Deprecated since version 3.4.

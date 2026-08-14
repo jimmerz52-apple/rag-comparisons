@@ -1,0 +1,6 @@
+# python.library.http.server#http.server.BaseHTTPRequestHandler.handle_expect_100
+
+handle_expect_100()  
+When a HTTP/1.1 compliant server receives an Expect: 100-continue request header it responds back with a 100 Continue followed by 200
+OK headers. This method can be overridden to raise an error if the server does not want the client to continue. For e.g. server can chose to send 417
+Expectation Failed as a response header and return False.  New in version 3.2.

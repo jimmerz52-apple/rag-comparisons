@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.week.is_year_start
+
+pandas.tseries.offsets.Week.is_year_start   Week.is_year_start()

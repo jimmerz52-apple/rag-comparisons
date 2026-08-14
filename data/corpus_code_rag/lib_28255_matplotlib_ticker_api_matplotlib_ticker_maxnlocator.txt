@@ -1,0 +1,69 @@
+# matplotlib.ticker_api#matplotlib.ticker.MaxNLocator
+
+classmatplotlib.ticker.MaxNLocator(nbins=None, **kwargs)[source]
+ 
+Bases: matplotlib.ticker.Locator Find nice tick locations with no more than N being within the view limits. Locations beyond the limits are added to support autoscaling.  Parameters 
+ 
+nbinsint or 'auto', default: 10
+
+
+Maximum number of intervals; one less than max number of ticks. If the string 'auto', the number of bins will be automatically determined based on the length of the axis.  
+stepsarray-like, optional
+
+
+Sequence of nice numbers starting with 1 and ending with 10; e.g., [1, 2, 4, 5, 10], where the values are acceptable tick multiples. i.e. for the example, 20, 40, 60 would be an acceptable set of ticks, as would 0.4, 0.6, 0.8, because they are multiples of 2. However, 30, 60, 90 would not be allowed because 3 does not appear in the list of steps.  
+integerbool, default: False
+
+
+If True, ticks will take only integer values, provided at least min_n_ticks integers are found within the view limits.  
+symmetricbool, default: False
+
+
+If True, autoscaling will result in a range symmetric about zero.  
+prune{'lower', 'upper', 'both', None}, default: None
+
+
+Remove edge ticks -- useful for stacked or ganged plots where the upper tick of one axes overlaps with the lower tick of the axes above it, primarily when rcParams["axes.autolimit_mode"] (default: 'data') is 'round_numbers'. If prune=='lower', the smallest tick will be removed. If prune == 'upper', the largest tick will be removed. If prune == 'both', the largest and smallest ticks will be removed. If prune is None, no ticks will be removed.  
+min_n_ticksint, default: 2
+
+
+Relax nbins and integer constraints if necessary to obtain this minimum number of ticks.       default_params={'integer': False, 'min_n_ticks': 2, 'nbins': 10, 'prune': None, 'steps': None, 'symmetric': False}
+
+   set_params(**kwargs)[source]
+ 
+Set parameters for this locator.  Parameters 
+ 
+nbinsint or 'auto', optional
+
+
+see MaxNLocator  
+stepsarray-like, optional
+
+
+see MaxNLocator  
+integerbool, optional
+
+
+see MaxNLocator  
+symmetricbool, optional
+
+
+see MaxNLocator  
+prune{'lower', 'upper', 'both', None}, optional
+
+
+see MaxNLocator  
+min_n_ticksint, optional
+
+
+see MaxNLocator     
+   tick_values(vmin, vmax)[source]
+ 
+Return the values of the located ticks given vmin and vmax.  Note To get tick locations with the vmin and vmax values defined automatically for the associated axis simply call the Locator instance: >>> print(type(loc))
+<type 'Locator'>
+>>> print(loc())
+[1, 2, 3, 4]
+  
+   view_limits(dmin, dmax)[source]
+ 
+Select a scale for the range from vmin to vmax. Subclasses should override this method to change locator behaviour.

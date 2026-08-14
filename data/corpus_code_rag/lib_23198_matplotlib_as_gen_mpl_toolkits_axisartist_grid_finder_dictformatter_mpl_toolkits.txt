@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.grid_finder.dictformatter#mpl_toolkits.axisartist.grid_finder.DictFormatter.__call__
+
+__call__(direction, factor, values)[source]
+ 
+factor is ignored if value is found in the dictionary

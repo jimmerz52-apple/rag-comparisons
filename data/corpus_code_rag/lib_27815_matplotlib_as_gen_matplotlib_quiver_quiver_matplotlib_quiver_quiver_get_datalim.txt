@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.quiver.quiver#matplotlib.quiver.Quiver.get_datalim
+
+get_datalim(transData)[source]

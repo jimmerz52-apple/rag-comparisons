@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.gl_get_attribute
+
+pygame.display.gl_get_attribute() 
+ Get the value for an OpenGL flag for the current display gl_get_attribute(flag) -> value  After calling pygame.display.set_mode() with the pygame.OPENGL flag, it is a good idea to check the value of any requested OpenGL attributes. See pygame.display.gl_set_attribute() for a list of valid flags.

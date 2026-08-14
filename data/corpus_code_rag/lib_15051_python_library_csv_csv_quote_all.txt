@@ -1,0 +1,4 @@
+# python.library.csv#csv.QUOTE_ALL
+
+csv.QUOTE_ALL  
+Instructs writer objects to quote all fields.

@@ -1,0 +1,3 @@
+# django.ref.models.expressions#django.db.models.ExpressionWrapper
+
+class ExpressionWrapper(expression, output_field)

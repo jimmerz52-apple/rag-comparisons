@@ -1,0 +1,23 @@
+# matplotlib.tri_api#matplotlib.tri.UniformTriRefiner.refine_triangulation
+
+refine_triangulation(return_tri_index=False, subdiv=3)[source]
+ 
+Compute an uniformly refined triangulation refi_triangulation of the encapsulated triangulation. This function refines the encapsulated triangulation by splitting each father triangle into 4 child sub-triangles built on the edges midside nodes, recursing subdiv times. In the end, each triangle is hence divided into 4**subdiv child triangles.  Parameters 
+ 
+return_tri_indexbool, default: False
+
+
+Whether an index table indicating the father triangle index of each point is returned.  
+subdivint, default: 3
+
+
+Recursion level for the subdivision. Each triangle is divided into 4**subdiv child triangles; hence, the default results in 64 refined subtriangles for each triangle of the initial triangulation.    Returns 
+ 
+refi_triangulationTriangulation
+
+
+The refined triangulation.  
+found_indexint array
+
+
+Index of the initial triangulation containing triangle, for each point of refi_triangulation. Returned only if return_tri_index is set to True.

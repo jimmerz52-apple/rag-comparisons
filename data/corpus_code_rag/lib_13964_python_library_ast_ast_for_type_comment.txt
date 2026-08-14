@@ -1,0 +1,4 @@
+# python.library.ast#ast.For.type_comment
+
+type_comment  
+type_comment is an optional string with the type annotation as a comment.

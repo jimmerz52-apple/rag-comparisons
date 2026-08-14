@@ -1,0 +1,3 @@
+# django.ref.models.querysets#django.db.models.query.QuerySet.bulk_update
+
+bulk_update(objs, fields, batch_size=None)

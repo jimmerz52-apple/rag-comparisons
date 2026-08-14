@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.binomial.Binomial.enumerate_support
+
+enumerate_support(expand=True) [source]

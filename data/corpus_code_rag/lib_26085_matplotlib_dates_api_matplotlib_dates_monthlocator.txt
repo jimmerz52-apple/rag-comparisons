@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.MonthLocator
+
+classmatplotlib.dates.MonthLocator(bymonth=None, bymonthday=1, interval=1, tz=None)[source]
+ 
+Bases: matplotlib.dates.RRuleLocator Make ticks on occurrences of each month, e.g., 1, 3, 12. Mark every month in bymonth; bymonth can be an int or sequence. Default is range(1, 13), i.e. every month. interval is the interval between each iteration. For example, if interval=2, mark every second occurrence.

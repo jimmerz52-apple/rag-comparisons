@@ -1,0 +1,5 @@
+# django.ref.models.database-functions#django.db.models.functions.ExtractIsoYear
+
+class ExtractIsoYear(expression, tzinfo=None, **extra)  
+Returns the ISO-8601 week-numbering year.  
+lookup_name = 'iso_year'

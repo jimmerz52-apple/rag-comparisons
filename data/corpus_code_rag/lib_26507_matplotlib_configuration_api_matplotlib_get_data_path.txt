@@ -1,0 +1,5 @@
+# matplotlib_configuration_api#matplotlib.get_data_path
+
+matplotlib.get_data_path()[source]
+ 
+Return the path to Matplotlib data.

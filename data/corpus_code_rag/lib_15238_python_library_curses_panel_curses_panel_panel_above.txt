@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.above
+
+Panel.above()  
+Returns the panel above the current panel.

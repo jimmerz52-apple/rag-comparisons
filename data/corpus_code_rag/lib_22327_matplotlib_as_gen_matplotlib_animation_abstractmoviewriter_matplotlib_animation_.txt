@@ -1,0 +1,3 @@
+# matplotlib._as_gen.matplotlib.animation.abstractmoviewriter#matplotlib.animation.AbstractMovieWriter.__init__
+
+__init__(fps=5, metadata=None, codec=None, bitrate=None)[source]

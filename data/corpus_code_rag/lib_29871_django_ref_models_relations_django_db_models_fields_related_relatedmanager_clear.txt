@@ -1,0 +1,6 @@
+# django.ref.models.relations#django.db.models.fields.related.RelatedManager.clear
+
+clear(bulk=True)  
+Removes all objects from the related object set: >>> b = Blog.objects.get(id=1)
+>>> b.entry_set.clear()
+ Note this doesn’t delete the related objects – it just disassociates them. Just like remove(), clear() is only available on ForeignKeys where null=True and it also accepts the bulk keyword argument. For many-to-many relationships, the bulk keyword argument doesn’t exist.

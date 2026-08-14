@@ -1,0 +1,4 @@
+# django.ref.templates.api#django.template.Context.setdefault
+
+Context.setdefault(key, default=None)  
+If key is in the context, returns its value. Otherwise inserts key with a value of default and returns default.

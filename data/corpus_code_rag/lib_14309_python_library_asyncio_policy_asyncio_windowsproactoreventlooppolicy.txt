@@ -1,0 +1,4 @@
+# python.library.asyncio-policy#asyncio.WindowsProactorEventLoopPolicy
+
+class asyncio.WindowsProactorEventLoopPolicy  
+An alternative event loop policy that uses the ProactorEventLoop event loop implementation. Availability: Windows.

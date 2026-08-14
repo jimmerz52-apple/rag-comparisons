@@ -1,0 +1,4 @@
+# python.library.bz2#bz2.BZ2Decompressor.eof
+
+eof  
+True if the end-of-stream marker has been reached.  New in version 3.3.

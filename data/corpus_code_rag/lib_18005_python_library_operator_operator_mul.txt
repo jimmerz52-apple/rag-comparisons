@@ -1,0 +1,5 @@
+# python.library.operator#operator.mul
+
+operator.mul(a, b)  
+operator.__mul__(a, b)  
+Return a * b, for a and b numbers.

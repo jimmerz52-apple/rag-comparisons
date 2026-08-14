@@ -1,0 +1,4 @@
+# python.library.dis#dis.hasjabs
+
+dis.hasjabs  
+Sequence of bytecodes that have an absolute jump target.

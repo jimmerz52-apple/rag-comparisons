@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.union
+
+staticunion(bboxes)[source]
+ 
+Return a Bbox that contains all of the given bboxes.

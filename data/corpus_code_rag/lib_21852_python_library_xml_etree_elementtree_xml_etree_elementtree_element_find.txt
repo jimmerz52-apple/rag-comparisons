@@ -1,0 +1,4 @@
+# python.library.xml.etree.elementtree#xml.etree.ElementTree.Element.find
+
+find(match, namespaces=None)  
+Finds the first subelement matching match. match may be a tag name or a path. Returns an element instance or None. namespaces is an optional mapping from namespace prefix to full name. Pass '' as prefix to move all unprefixed tag names in the expression into the given namespace.

@@ -1,0 +1,7 @@
+# tensorflow.experimental.numpy.negative
+
+tf.experimental.numpy.negative TensorFlow variant of NumPy's negative. 
+tf.experimental.numpy.negative(
+    x
+)
+ Unsupported arguments: out, where, casting, order, dtype, subok, signature, extobj. See the NumPy documentation for numpy.negative.

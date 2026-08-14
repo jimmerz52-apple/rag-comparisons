@@ -1,0 +1,12 @@
+# python.library.pathlib#pathlib.Path.rename
+
+Path.rename(target)  
+Rename this file or directory to the given target, and return a new Path instance pointing to target. On Unix, if target exists and is a file, it will be replaced silently if the user has permission. target can be either a string or another path object: >>> p = Path('foo')
+>>> p.open('w').write('some text')
+9
+>>> target = Path('bar')
+>>> p.rename(target)
+PosixPath('bar')
+>>> target.open().read()
+'some text'
+ The target path may be absolute or relative. Relative paths are interpreted relative to the current working directory, not the directory of the Path object.  Changed in version 3.8: Added return value, return the new Path instance.

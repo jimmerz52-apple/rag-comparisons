@@ -1,0 +1,4 @@
+# pygame.ref.event#pygame.event.set_grab
+
+pygame.event.set_grab() 
+ control the sharing of input devices with other applications set_grab(bool) -> None  When your program runs in a windowed environment, it will share the mouse and keyboard devices with other applications that have focus. If your program sets the event grab to True, it will lock all input into your program. It is best to not always grab the input, since it prevents the user from doing other things on their system.

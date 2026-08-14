@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.CustomUser.get_short_name
+
+get_short_name()  
+Optional. A short, informal identifier for the user such as their first name. If implemented, this replaces the username in the greeting to the user in the header of django.contrib.admin.

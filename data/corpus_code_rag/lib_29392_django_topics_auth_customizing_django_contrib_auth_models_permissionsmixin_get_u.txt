@@ -1,0 +1,4 @@
+# django.topics.auth.customizing#django.contrib.auth.models.PermissionsMixin.get_user_permissions
+
+get_user_permissions(obj=None)  
+Returns a set of permission strings that the user has directly. If obj is passed in, only returns the user permissions for this specific object.

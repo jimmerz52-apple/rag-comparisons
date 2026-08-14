@@ -1,0 +1,19 @@
+# sklearn.modules.generated.sklearn.cluster.kmeans#sklearn.cluster.KMeans.fit_transform
+
+fit_transform(X, y=None, sample_weight=None) [source]
+ 
+Compute clustering and transform X to cluster-distance space. Equivalent to fit(X).transform(X), but more efficiently implemented.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+New data to transform.  
+yIgnored 
+
+Not used, present here for API consistency by convention.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+The weights for each observation in X. If None, all observations are assigned equal weight.    Returns 
+ 
+X_newndarray of shape (n_samples, n_clusters) 
+
+X transformed in the new space.

@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.get_solid_joinstyle
+
+get_solid_joinstyle()[source]
+ 
+Return the JoinStyle for solid lines. See also set_solid_joinstyle.

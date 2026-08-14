@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.PROTOCOL_SSLv2
+
+ssl.PROTOCOL_SSLv2  
+Selects SSL version 2 as the channel encryption protocol. This protocol is not available if OpenSSL is compiled with the OPENSSL_NO_SSL2 flag.  Warning SSL version 2 is insecure. Its use is highly discouraged.   Deprecated since version 3.6: OpenSSL has removed support for SSLv2.

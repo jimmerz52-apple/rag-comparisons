@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.cosh_
+
+cosh_() → Tensor  
+In-place version of cosh()

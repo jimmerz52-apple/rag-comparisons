@@ -1,0 +1,4 @@
+# python.library.test#test.support.bigaddrspacetest
+
+@test.support.bigaddrspacetest(f)  
+Decorator for tests that fill the address space. f is the function to wrap.

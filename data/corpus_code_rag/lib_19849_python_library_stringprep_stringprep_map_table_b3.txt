@@ -1,0 +1,4 @@
+# python.library.stringprep#stringprep.map_table_b3
+
+stringprep.map_table_b3(code)  
+Return the mapped value for code according to tableB.3 (Mapping for case-folding used with no normalization).

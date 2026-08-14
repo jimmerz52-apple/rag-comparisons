@@ -1,0 +1,4 @@
+# python.library.test#test.support.disable_gc
+
+test.support.disable_gc()  
+A context manager that disables the garbage collector upon entry and reenables it upon exit.

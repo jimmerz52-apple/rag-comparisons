@@ -1,0 +1,5 @@
+# django.ref.contrib.postgres.fields#django.contrib.postgres.fields.HStoreField
+
+class HStoreField(**options)  
+A field for storing key-value pairs. The Python data type used is a dict. Keys must be strings, and values may be either strings or nulls (None in Python). To use this field, you’ll need to:  Add 'django.contrib.postgres' in your INSTALLED_APPS. 
+Set up the hstore extension in PostgreSQL.  You’ll see an error like can't adapt type 'dict' if you skip the first step, or type "hstore" does not exist if you skip the second.

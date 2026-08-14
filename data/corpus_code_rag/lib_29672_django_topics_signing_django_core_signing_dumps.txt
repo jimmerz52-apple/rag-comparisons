@@ -1,0 +1,4 @@
+# django.topics.signing#django.core.signing.dumps
+
+dumps(obj, key=None, salt='django.core.signing', serializer=JSONSerializer, compress=False)  
+Returns URL-safe, signed base64 compressed JSON string. Serialized object is signed using TimestampSigner.

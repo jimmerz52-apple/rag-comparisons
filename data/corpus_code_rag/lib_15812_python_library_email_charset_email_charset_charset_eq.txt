@@ -1,0 +1,4 @@
+# python.library.email.charset#email.charset.Charset.__eq__
+
+__eq__(other)  
+This method allows you to compare two Charset instances for equality.

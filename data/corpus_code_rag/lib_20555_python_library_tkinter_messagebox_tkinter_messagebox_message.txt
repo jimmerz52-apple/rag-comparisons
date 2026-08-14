@@ -1,0 +1,4 @@
+# python.library.tkinter.messagebox#tkinter.messagebox.Message
+
+class tkinter.messagebox.Message(master=None, **options)  
+Create a default information message box.

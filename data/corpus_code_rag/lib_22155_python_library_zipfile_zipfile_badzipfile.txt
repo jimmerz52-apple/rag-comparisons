@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.BadZipfile
+
+exception zipfile.BadZipfile  
+Alias of BadZipFile, for compatibility with older Python versions.  Deprecated since version 3.2.

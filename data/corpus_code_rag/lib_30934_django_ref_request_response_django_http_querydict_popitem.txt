@@ -1,0 +1,6 @@
+# django.ref.request-response#django.http.QueryDict.popitem
+
+QueryDict.popitem()  
+Removes an arbitrary member of the dictionary (since there’s no concept of ordering), and returns a two value tuple containing the key and a list of all values for the key. Raises KeyError when called on an empty dictionary. For example: >>> q = QueryDict('a=1&a=2&a=3', mutable=True)
+>>> q.popitem()
+('a', ['1', '2', '3'])

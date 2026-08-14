@@ -1,0 +1,5 @@
+# matplotlib.image_api#matplotlib.image.BboxImage.contains
+
+contains(mouseevent)[source]
+ 
+Test whether the mouse event occurred within the image.

@@ -1,0 +1,28 @@
+# python.library.ast#ast.Load
+
+class ast.Load  
+class ast.Store  
+class ast.Del  
+Variable references can be used to load the value of a variable, to assign a new value to it, or to delete it. Variable references are given a context to distinguish these cases. >>> print(ast.dump(ast.parse('a'), indent=4))
+Module(
+    body=[
+        Expr(
+            value=Name(id='a', ctx=Load()))],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('a = 1'), indent=4))
+Module(
+    body=[
+        Assign(
+            targets=[
+                Name(id='a', ctx=Store())],
+            value=Constant(value=1))],
+    type_ignores=[])
+
+>>> print(ast.dump(ast.parse('del a'), indent=4))
+Module(
+    body=[
+        Delete(
+            targets=[
+                Name(id='a', ctx=Del())])],
+    type_ignores=[])

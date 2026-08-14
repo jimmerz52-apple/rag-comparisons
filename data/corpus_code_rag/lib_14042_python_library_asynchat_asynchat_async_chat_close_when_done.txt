@@ -1,0 +1,4 @@
+# python.library.asynchat#asynchat.async_chat.close_when_done
+
+async_chat.close_when_done()  
+Pushes a None on to the producer queue. When this producer is popped off the queue it causes the channel to be closed.

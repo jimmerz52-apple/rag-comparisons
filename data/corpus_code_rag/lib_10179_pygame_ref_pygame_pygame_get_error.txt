@@ -1,0 +1,4 @@
+# pygame.ref.pygame#pygame.get_error
+
+pygame.get_error() 
+ get the current error message get_error() -> errorstr  SDL maintains an internal error message. This message will usually be given to you when pygame.error() is raised, so this function will rarely be needed.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.i0_
+
+i0_() → Tensor  
+In-place version of i0()

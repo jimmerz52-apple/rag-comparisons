@@ -1,0 +1,4 @@
+# python.library.curses.panel#curses.panel.Panel.replace
+
+Panel.replace(win)  
+Change the window associated with the panel to the window win.

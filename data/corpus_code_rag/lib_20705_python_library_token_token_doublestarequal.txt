@@ -1,0 +1,4 @@
+# python.library.token#token.DOUBLESTAREQUAL
+
+token.DOUBLESTAREQUAL  
+Token value for "**=".

@@ -1,0 +1,7 @@
+# python.library.logging.handlers#logging.handlers.SocketHandler.makePickle
+
+makePickle(record)  
+Pickles the record’s attribute dictionary in binary format with a length prefix, and returns it ready for transmission across the socket. The details of this operation are equivalent to: data = pickle.dumps(record_attr_dict, 1)
+datalen = struct.pack('>L', len(data))
+return datalen + data
+ Note that pickles aren’t completely secure. If you are concerned about security, you may want to override this method to implement a more secure mechanism. For example, you can sign pickles using HMAC and then verify them on the receiving end, or alternatively you can disable unpickling of global objects on the receiving end.

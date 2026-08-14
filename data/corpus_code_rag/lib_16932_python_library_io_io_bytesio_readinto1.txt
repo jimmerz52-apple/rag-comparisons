@@ -1,0 +1,4 @@
+# python.library.io#io.BytesIO.readinto1
+
+readinto1(b)  
+In BytesIO, this is the same as readinto().  New in version 3.5.

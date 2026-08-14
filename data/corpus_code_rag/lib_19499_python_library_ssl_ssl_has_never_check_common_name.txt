@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_NEVER_CHECK_COMMON_NAME
+
+ssl.HAS_NEVER_CHECK_COMMON_NAME  
+Whether the OpenSSL library has built-in support not checking subject common name and SSLContext.hostname_checks_common_name is writeable.  New in version 3.7.

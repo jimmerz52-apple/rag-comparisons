@@ -1,0 +1,4 @@
+# python.library.os#os.setsid
+
+os.setsid()  
+Call the system call setsid(). See the Unix manual for the semantics. Availability: Unix.

@@ -1,0 +1,4 @@
+# python.library.platform#platform.python_build
+
+platform.python_build()  
+Returns a tuple (buildno, builddate) stating the Python build number and date as strings.

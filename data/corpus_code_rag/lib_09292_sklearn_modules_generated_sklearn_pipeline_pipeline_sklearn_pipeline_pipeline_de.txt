@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.pipeline.pipeline#sklearn.pipeline.Pipeline.decision_function
+
+decision_function(X) [source]
+ 
+Apply transforms, and decision_function of the final estimator  Parameters 
+ 
+Xiterable 
+
+Data to predict on. Must fulfill input requirements of first step of the pipeline.    Returns 
+ 
+y_scorearray-like of shape (n_samples, n_classes)

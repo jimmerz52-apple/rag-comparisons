@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.compose.columntransformer#sklearn.compose.ColumnTransformer.transform
+
+transform(X) [source]
+ 
+Transform X separately by each transformer, concatenate results.  Parameters 
+ 
+X{array-like, dataframe} of shape (n_samples, n_features) 
+
+The data to be transformed by subset.    Returns 
+ 
+X_t{array-like, sparse matrix} of shape (n_samples, sum_n_components) 
+
+hstack of results of transformers. sum_n_components is the sum of n_components (output dimension) over transformers. If any result is a sparse matrix, everything will be converted to sparse matrices.

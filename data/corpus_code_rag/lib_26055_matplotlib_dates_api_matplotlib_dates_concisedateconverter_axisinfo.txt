@@ -1,0 +1,5 @@
+# matplotlib.dates_api#matplotlib.dates.ConciseDateConverter.axisinfo
+
+axisinfo(unit, axis)[source]
+ 
+Return the AxisInfo for unit. unit is a tzinfo instance or None. The axis argument is required but not used.

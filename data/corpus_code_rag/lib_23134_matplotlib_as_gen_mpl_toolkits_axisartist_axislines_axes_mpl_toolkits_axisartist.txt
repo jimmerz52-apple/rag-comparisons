@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axislines.axes#mpl_toolkits.axisartist.axislines.Axes.grid
+
+grid(visible=None, which='major', axis='both', **kwargs)[source]
+ 
+Toggle the gridlines, and optionally set the properties of the lines.

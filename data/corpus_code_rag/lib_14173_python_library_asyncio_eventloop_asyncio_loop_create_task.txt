@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.create_task
+
+loop.create_task(coro, *, name=None)  
+Schedule the execution of a Coroutines. Return a Task object. Third-party event loops can use their own subclass of Task for interoperability. In this case, the result type is a subclass of Task. If the name argument is provided and not None, it is set as the name of the task using Task.set_name().  Changed in version 3.8: Added the name parameter.

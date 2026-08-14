@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.ProtocolError.headers
+
+headers  
+A dict containing the headers of the HTTP/HTTPS request that triggered the error.

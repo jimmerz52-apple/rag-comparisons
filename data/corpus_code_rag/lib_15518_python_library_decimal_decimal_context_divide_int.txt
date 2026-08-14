@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.divide_int
+
+divide_int(x, y)  
+Return x divided by y, truncated to an integer.

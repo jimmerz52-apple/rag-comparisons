@@ -1,0 +1,3 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.cyan_text
+
+numpy.distutils.misc_util.cyan_text(s)[source]

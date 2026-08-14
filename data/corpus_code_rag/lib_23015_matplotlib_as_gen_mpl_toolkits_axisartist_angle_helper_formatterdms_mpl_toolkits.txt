@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.angle_helper.formatterdms#mpl_toolkits.axisartist.angle_helper.FormatterDMS.sec_mark
+
+sec_mark='^{\\prime\\prime}'

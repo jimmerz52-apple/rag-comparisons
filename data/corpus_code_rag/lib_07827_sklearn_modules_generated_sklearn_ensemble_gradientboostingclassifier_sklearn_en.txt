@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.gradientboostingclassifier#sklearn.ensemble.GradientBoostingClassifier.staged_decision_function
+
+staged_decision_function(X) [source]
+ 
+Compute decision function of X for each iteration. This method allows monitoring (i.e. determine error on testing set) after each stage.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+scoregenerator of ndarray of shape (n_samples, k) 
+
+The decision function of the input samples, which corresponds to the raw values predicted from the trees of the ensemble . The classes corresponds to that in the attribute classes_. Regression and binary classification are special cases with k == 1, otherwise k==n_classes.

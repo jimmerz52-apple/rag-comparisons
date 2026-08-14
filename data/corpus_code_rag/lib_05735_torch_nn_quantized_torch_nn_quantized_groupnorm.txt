@@ -1,0 +1,9 @@
+# torch.nn.quantized#torch.nn.quantized.GroupNorm
+
+class torch.nn.quantized.GroupNorm(num_groups, num_channels, weight, bias, scale, zero_point, eps=1e-05, affine=True) [source]
+ 
+This is the quantized version of GroupNorm.  Additional args:
+
+ 
+scale - quantization scale of the output, type: double. 
+zero_point - quantization zero point of the output, type: long.

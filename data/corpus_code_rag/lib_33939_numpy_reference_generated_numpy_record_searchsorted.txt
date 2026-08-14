@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.record.searchsorted
+
+numpy.record.searchsorted method   record.searchsorted()
+ 
+Scalar method identical to the corresponding array attribute. Please see ndarray.searchsorted.

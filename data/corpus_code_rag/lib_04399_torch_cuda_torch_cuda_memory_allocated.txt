@@ -1,0 +1,6 @@
+# torch.cuda#torch.cuda.memory_allocated
+
+torch.cuda.memory_allocated(device=None) [source]
+ 
+Returns the current GPU memory occupied by tensors in bytes for a given device.  Parameters 
+device (torch.device or int, optional) – selected device. Returns statistic for the current device, given by current_device(), if device is None (default).    Note This is likely less than the amount shown in nvidia-smi since some unused memory can be held by the caching allocator and some context needs to be created on GPU. See Memory management for more details about GPU memory management.

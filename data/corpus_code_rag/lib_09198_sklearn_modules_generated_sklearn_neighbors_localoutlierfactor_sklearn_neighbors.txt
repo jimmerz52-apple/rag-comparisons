@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.neighbors.localoutlierfactor#sklearn.neighbors.LocalOutlierFactor.score_samples
+
+property score_samples  
+Opposite of the Local Outlier Factor of X. It is the opposite as bigger is better, i.e. large values correspond to inliers. Only available for novelty detection (when novelty is set to True). The argument X is supposed to contain new data: if X contains a point from training, it considers the later in its own neighborhood. Also, the samples in X are not considered in the neighborhood of any point. The score_samples on training data is available by considering the the negative_outlier_factor_ attribute.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The query sample or samples to compute the Local Outlier Factor w.r.t. the training samples.    Returns 
+ 
+opposite_lof_scoresndarray of shape (n_samples,) 
+
+The opposite of the Local Outlier Factor of each input samples. The lower, the more abnormal.

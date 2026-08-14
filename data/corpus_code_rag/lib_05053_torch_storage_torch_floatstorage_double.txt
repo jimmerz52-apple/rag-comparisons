@@ -1,0 +1,4 @@
+# torch.storage#torch.FloatStorage.double
+
+double()  
+Casts this storage to double type

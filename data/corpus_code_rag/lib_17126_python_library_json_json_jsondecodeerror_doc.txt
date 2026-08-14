@@ -1,0 +1,4 @@
+# python.library.json#json.JSONDecodeError.doc
+
+doc  
+The JSON document being parsed.

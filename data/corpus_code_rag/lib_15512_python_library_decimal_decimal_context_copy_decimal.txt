@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.copy_decimal
+
+copy_decimal(num)  
+Return a copy of the Decimal instance num.

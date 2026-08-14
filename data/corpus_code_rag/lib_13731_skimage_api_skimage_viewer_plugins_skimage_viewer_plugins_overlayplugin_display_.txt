@@ -1,0 +1,5 @@
+# skimage.api.skimage.viewer.plugins#skimage.viewer.plugins.OverlayPlugin.display_filtered_image
+
+display_filtered_image(image) [source]
+ 
+Display filtered image as an overlay on top of image in viewer.

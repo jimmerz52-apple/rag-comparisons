@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.isfile
+
+TarInfo.isfile()  
+Return True if the Tarinfo object is a regular file.

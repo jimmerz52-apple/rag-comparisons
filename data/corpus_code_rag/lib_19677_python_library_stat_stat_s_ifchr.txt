@@ -1,0 +1,4 @@
+# python.library.stat#stat.S_IFCHR
+
+stat.S_IFCHR  
+Character device.

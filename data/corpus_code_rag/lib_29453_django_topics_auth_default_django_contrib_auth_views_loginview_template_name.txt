@@ -1,0 +1,4 @@
+# django.topics.auth.default#django.contrib.auth.views.LoginView.template_name
+
+template_name  
+The name of a template to display for the view used to log the user in. Defaults to registration/login.html.

@@ -1,0 +1,5 @@
+# skimage.api.skimage.feature#skimage.feature.ORB.__init__
+
+__init__(downscale=1.2, n_scales=8, n_keypoints=500, fast_n=9, fast_threshold=0.08, harris_k=0.04) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature.

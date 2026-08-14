@@ -1,0 +1,7 @@
+# pygame.ref.mixer#pygame.mixer.Sound.set_volume
+
+set_volume() 
+ set the playback volume for this Sound set_volume(value) -> None  This will set the playback volume (loudness) for this Sound. This will immediately affect the Sound if it is playing. It will also affect any future playback of this Sound.     
+Parameters:
+
+value (float) -- volume in the range of 0.0 to 1.0 (inclusive)  If value < 0.0, the volume will not be changed If value > 1.0, the volume will be set to 1.0

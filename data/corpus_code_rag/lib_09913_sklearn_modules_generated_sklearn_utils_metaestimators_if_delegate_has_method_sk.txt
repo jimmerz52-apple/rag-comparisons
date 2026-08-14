@@ -1,0 +1,9 @@
+# sklearn.modules.generated.sklearn.utils.metaestimators.if_delegate_has_method#sklearn.utils.metaestimators.if_delegate_has_method
+
+sklearn.utils.metaestimators.if_delegate_has_method(delegate) [source]
+ 
+Create a decorator for methods that are delegated to a sub-estimator This enables ducktyping by hasattr returning True according to the sub-estimator.  Parameters 
+ 
+delegatestring, list of strings or tuple of strings 
+
+Name of the sub-estimator that can be accessed as an attribute of the base object. If a list or a tuple of names are provided, the first sub-estimator that is an attribute of the base object will be used.

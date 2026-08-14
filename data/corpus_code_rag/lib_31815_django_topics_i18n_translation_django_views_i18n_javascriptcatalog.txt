@@ -1,0 +1,24 @@
+# django.topics.i18n.translation#django.views.i18n.JavaScriptCatalog
+
+class JavaScriptCatalog  
+A view that produces a JavaScript code library with functions that mimic the gettext interface, plus an array of translation strings. Attributes  
+domain  
+Translation domain containing strings to add in the view output. Defaults to 'djangojs'. 
+  
+packages  
+A list of application names among installed applications. Those apps should contain a locale directory. All those catalogs plus all catalogs found in LOCALE_PATHS (which are always included) are merged into one catalog. Defaults to None, which means that all available translations from all INSTALLED_APPS are provided in the JavaScript output. 
+ Example with default values: from django.views.i18n import JavaScriptCatalog
+
+urlpatterns = [
+    path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+]
+ Example with custom packages: urlpatterns = [
+    path('jsi18n/myapp/',
+         JavaScriptCatalog.as_view(packages=['your.app.label']),
+         name='javascript-catalog'),
+]
+ If your root URLconf uses i18n_patterns(), JavaScriptCatalog must also be wrapped by i18n_patterns() for the catalog to be correctly generated. Example with i18n_patterns(): from django.conf.urls.i18n import i18n_patterns
+
+urlpatterns = i18n_patterns(
+    path('jsi18n/', JavaScriptCatalog.as_view(), name='javascript-catalog'),
+)

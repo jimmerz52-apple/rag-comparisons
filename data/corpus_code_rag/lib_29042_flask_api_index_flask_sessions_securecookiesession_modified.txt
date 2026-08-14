@@ -1,0 +1,4 @@
+# flask.api.index#flask.sessions.SecureCookieSession.modified
+
+modified = False  
+When data is changed, this is set to True. Only the session dictionary itself is tracked; if the session contains mutable data (for example a nested dict) then this must be set to True manually when modifying that data. The session cookie will only be written to the response if this is True.

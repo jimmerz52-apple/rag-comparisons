@@ -1,0 +1,4 @@
+# django.ref.contrib.admin.index#django.contrib.admin.ModelAdmin.filter_vertical
+
+ModelAdmin.filter_vertical  
+Same as filter_horizontal, but uses a vertical display of the filter interface with the box of unselected options appearing above the box of selected options.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.ne_
+
+ne_(other) → Tensor  
+In-place version of ne().

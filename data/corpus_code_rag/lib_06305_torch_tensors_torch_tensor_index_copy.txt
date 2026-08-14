@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.index_copy
+
+index_copy(tensor1, dim, index, tensor2) → Tensor  
+Out-of-place version of torch.Tensor.index_copy_(). tensor1 corresponds to self in torch.Tensor.index_copy_().

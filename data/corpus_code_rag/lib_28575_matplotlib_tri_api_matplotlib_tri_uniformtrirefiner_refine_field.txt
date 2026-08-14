@@ -1,0 +1,27 @@
+# matplotlib.tri_api#matplotlib.tri.UniformTriRefiner.refine_field
+
+refine_field(z, triinterpolator=None, subdiv=3)[source]
+ 
+Refine a field defined on the encapsulated triangulation.  Parameters 
+ 
+z(npoints,) array-like
+
+
+Values of the field to refine, defined at the nodes of the encapsulated triangulation. (n_points is the number of points in the initial triangulation)  
+triinterpolatorTriInterpolator, optional
+
+
+Interpolator used for field interpolation. If not specified, a CubicTriInterpolator will be used.  
+subdivint, default: 3
+
+
+Recursion level for the subdivision. Each triangle is divided into 4**subdiv child triangles.    Returns 
+ 
+refi_triTriangulation
+
+
+The returned refined triangulation.  
+refi_z1D array of length: refi_tri node count.
+
+
+The returned interpolated field (at refi_tri nodes).

@@ -1,0 +1,16 @@
+# flask.api.index#flask.testing.FlaskCliRunner
+
+class flask.testing.FlaskCliRunner(app, **kwargs)  
+A CliRunner for testing a Flask app’s CLI commands. Typically created using test_cli_runner(). See Testing CLI Commands.  Parameters 
+ 
+app (Flask) –  
+kwargs (Any) –    Return type 
+None    
+invoke(cli=None, args=None, **kwargs)  
+Invokes a CLI command in an isolated environment. See CliRunner.invoke for full method documentation. See Testing CLI Commands for examples. If the obj argument is not given, passes an instance of ScriptInfo that knows how to load the Flask app being tested.  Parameters 
+ 
+cli (Optional[Any]) – Command object to invoke. Default is the app’s cli group. 
+args (Optional[Any]) – List of strings to invoke the command with. 
+kwargs (Any) –    Returns 
+a Result object.  Return type 
+Any

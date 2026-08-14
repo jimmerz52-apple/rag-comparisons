@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.barrierincompletesize
+
+tf.raw_ops.BarrierIncompleteSize Computes the number of incomplete elements in the given barrier.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.BarrierIncompleteSize  
+tf.raw_ops.BarrierIncompleteSize(
+    handle, name=None
+)
+
+ 
+
+
+ Args
+  handle   A Tensor of type mutable string. The handle to a barrier.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type int32.

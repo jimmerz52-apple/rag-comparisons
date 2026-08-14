@@ -1,0 +1,4 @@
+# python.library.test#test.support.is_android
+
+test.support.is_android  
+True if the system is Android.

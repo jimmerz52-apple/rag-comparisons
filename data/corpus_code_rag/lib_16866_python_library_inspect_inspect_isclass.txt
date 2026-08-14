@@ -1,0 +1,4 @@
+# python.library.inspect#inspect.isclass
+
+inspect.isclass(object)  
+Return True if the object is a class, whether built-in or created in Python code.

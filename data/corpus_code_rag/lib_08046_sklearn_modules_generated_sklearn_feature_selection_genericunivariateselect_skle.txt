@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.feature_selection.genericunivariateselect#sklearn.feature_selection.GenericUnivariateSelect.get_params
+
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.

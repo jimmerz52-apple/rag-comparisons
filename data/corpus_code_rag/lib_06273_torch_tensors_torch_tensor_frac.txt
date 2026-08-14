@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.frac_
+
+frac_() → Tensor  
+In-place version of frac()

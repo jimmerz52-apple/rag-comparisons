@@ -1,0 +1,18 @@
+# skimage.api.skimage.filters#skimage.filters.threshold_mean
+
+skimage.filters.threshold_mean(image) [source]
+ 
+Return threshold value based on the mean of grayscale values.  Parameters 
+ 
+image(N, M[, …, P]) ndarray 
+
+Grayscale input image.    Returns 
+ 
+thresholdfloat 
+
+Upper threshold value. All pixels with an intensity higher than this value are assumed to be foreground.     References  
+1  
+C. A. Glasbey, “An analysis of histogram-based thresholding algorithms,” CVGIP: Graphical Models and Image Processing, vol. 55, pp. 532-537, 1993. DOI:10.1006/cgip.1993.1040   Examples >>> from skimage.data import camera
+>>> image = camera()
+>>> thresh = threshold_mean(image)
+>>> binary = image > thresh

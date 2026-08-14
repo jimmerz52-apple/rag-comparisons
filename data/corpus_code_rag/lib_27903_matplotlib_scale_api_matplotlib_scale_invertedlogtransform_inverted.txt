@@ -1,0 +1,5 @@
+# matplotlib.scale_api#matplotlib.scale.InvertedLogTransform.inverted
+
+inverted()[source]
+ 
+Return the corresponding inverse transformation. It holds x == self.inverted().transform(self.transform(x)). The return value of this method should be treated as temporary. An update to self does not cause a corresponding update to its inverted copy.

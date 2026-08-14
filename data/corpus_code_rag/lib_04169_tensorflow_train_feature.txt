@@ -1,0 +1,11 @@
+# tensorflow.train.feature
+
+tf.train.Feature     View source on GitHub    A ProtocolMessage  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.train.Feature 
+ 
+
+
+ Attributes
+  bytes_list   BytesList bytes_list  
+  float_list   FloatList float_list  
+  int64_list   Int64List int64_list

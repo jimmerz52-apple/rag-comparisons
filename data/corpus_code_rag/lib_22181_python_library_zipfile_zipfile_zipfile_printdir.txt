@@ -1,0 +1,4 @@
+# python.library.zipfile#zipfile.ZipFile.printdir
+
+ZipFile.printdir()  
+Print a table of contents for the archive to sys.stdout.

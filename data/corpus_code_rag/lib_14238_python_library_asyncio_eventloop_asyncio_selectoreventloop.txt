@@ -1,0 +1,10 @@
+# python.library.asyncio-eventloop#asyncio.SelectorEventLoop
+
+class asyncio.SelectorEventLoop  
+An event loop based on the selectors module. Uses the most efficient selector available for the given platform. It is also possible to manually configure the exact selector implementation to be used: import asyncio
+import selectors
+
+selector = selectors.SelectSelector()
+loop = asyncio.SelectorEventLoop(selector)
+asyncio.set_event_loop(loop)
+ Availability: Unix, Windows.

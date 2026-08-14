@@ -1,0 +1,4 @@
+# python.library.xml.dom.pulldom#xml.dom.pulldom.DOMEventStream.getEvent
+
+getEvent()  
+Return a tuple containing event and the current node as xml.dom.minidom.Document if event equals START_DOCUMENT, xml.dom.minidom.Element if event equals START_ELEMENT or END_ELEMENT or xml.dom.minidom.Text if event equals CHARACTERS. The current node does not contain information about its children, unless expandNode() is called.

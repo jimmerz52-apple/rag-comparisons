@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.dateoffset.onoffset
+
+pandas.tseries.offsets.DateOffset.onOffset   DateOffset.onOffset()

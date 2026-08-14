@@ -1,0 +1,4 @@
+# django.ref.paginator#django.core.paginator.Paginator.allow_empty_first_page
+
+Paginator.allow_empty_first_page  
+Optional. Whether or not the first page is allowed to be empty. If False and object_list is empty, then an EmptyPage error will be raised.

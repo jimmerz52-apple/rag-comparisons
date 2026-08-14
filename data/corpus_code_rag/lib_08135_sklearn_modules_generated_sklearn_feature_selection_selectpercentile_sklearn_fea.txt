@@ -1,0 +1,14 @@
+# sklearn.modules.generated.sklearn.feature_selection.selectpercentile#sklearn.feature_selection.SelectPercentile.fit
+
+fit(X, y) [source]
+ 
+Run score function on (X, y) and get the appropriate features.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+The training input samples.  
+yarray-like of shape (n_samples,) 
+
+The target values (class labels in classification, real numbers in regression).    Returns 
+ 
+selfobject

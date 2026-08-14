@@ -1,0 +1,4 @@
+# python.library.http.cookiejar#http.cookiejar.CookieJar.set_cookie_if_ok
+
+CookieJar.set_cookie_if_ok(cookie, request)  
+Set a Cookie if policy says it’s OK to do so.

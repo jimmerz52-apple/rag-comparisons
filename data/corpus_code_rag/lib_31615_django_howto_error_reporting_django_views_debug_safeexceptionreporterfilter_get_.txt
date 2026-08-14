@@ -1,0 +1,4 @@
+# django.howto.error-reporting#django.views.debug.SafeExceptionReporterFilter.get_traceback_frame_variables
+
+get_traceback_frame_variables(request, tb_frame)  
+Returns the filtered dictionary of local variables for the given traceback frame. Sensitive values are replaced with cleansed_substitute.

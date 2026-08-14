@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.patches.patch#matplotlib.patches.Patch.get_extents
+
+get_extents()[source]
+ 
+Return the Patch's axis-aligned extents as a Bbox.

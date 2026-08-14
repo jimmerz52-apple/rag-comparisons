@@ -1,0 +1,4 @@
+# pygame.ref.camera#pygame.camera.Camera.get_image
+
+get_image() 
+ captures an image as a Surface get_image(Surface = None) -> Surface  Pulls an image off of the buffer as an RGB Surface. It can optionally reuse an existing Surface to save time. The bit-depth of the surface is either 24 bits or the same as the optionally supplied Surface.

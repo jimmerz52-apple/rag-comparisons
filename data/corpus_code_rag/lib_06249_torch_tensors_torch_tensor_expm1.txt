@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.expm1
+
+expm1() → Tensor  
+See torch.expm1()

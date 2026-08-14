@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.FileField.storage
+
+FileField.storage  
+A storage object, or a callable which returns a storage object. This handles the storage and retrieval of your files. See Managing files for details on how to provide this object.

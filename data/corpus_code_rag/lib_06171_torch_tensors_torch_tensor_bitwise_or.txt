@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.bitwise_or
+
+bitwise_or() → Tensor  
+See torch.bitwise_or()

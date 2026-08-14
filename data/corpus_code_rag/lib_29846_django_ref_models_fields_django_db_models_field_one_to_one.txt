@@ -1,0 +1,4 @@
+# django.ref.models.fields#django.db.models.Field.one_to_one
+
+Field.one_to_one  
+Boolean flag that is True if the field has a one-to-one relation, such as a OneToOneField; False otherwise.

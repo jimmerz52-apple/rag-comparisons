@@ -1,0 +1,4 @@
+# python.library.exceptions#Warning
+
+exception Warning  
+Base class for warning categories.

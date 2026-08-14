@@ -1,0 +1,4 @@
+# django.ref.models.constraints#django.db.models.CheckConstraint
+
+class CheckConstraint(*, check, name)  
+Creates a check constraint in the database.

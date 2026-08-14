@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.SymbolTable.get_type
+
+get_type()  
+Return the type of the symbol table. Possible values are 'class', 'module', and 'function'.

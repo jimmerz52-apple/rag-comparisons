@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.feedgenerator.SyndicationFeed.latest_post_date
+
+latest_post_date()  
+Returns the latest pubdate or updateddate for all items in the feed. If no items have either of these attributes this returns the current UTC date/time.

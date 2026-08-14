@@ -1,0 +1,4 @@
+# python.library.xml.dom#xml.dom.Element.getElementsByTagName
+
+Element.getElementsByTagName(tagName)  
+Same as equivalent method in the Document class.

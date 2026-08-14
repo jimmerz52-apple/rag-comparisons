@@ -1,0 +1,30 @@
+# torch.distributions#torch.distributions.dirichlet.Dirichlet
+
+class torch.distributions.dirichlet.Dirichlet(concentration, validate_args=None) [source]
+ 
+Bases: torch.distributions.exp_family.ExponentialFamily Creates a Dirichlet distribution parameterized by concentration concentration. Example: >>> m = Dirichlet(torch.tensor([0.5, 0.5]))
+>>> m.sample()  # Dirichlet distributed with concentrarion concentration
+tensor([ 0.1046,  0.8954])
+  Parameters 
+concentration (Tensor) – concentration parameter of the distribution (often referred to as alpha)    
+arg_constraints = {'concentration': IndependentConstraint(GreaterThan(lower_bound=0.0), 1)} 
+  
+entropy() [source]
+
+  
+expand(batch_shape, _instance=None) [source]
+
+  
+has_rsample = True 
+  
+log_prob(value) [source]
+
+  
+property mean 
+  
+rsample(sample_shape=()) [source]
+
+  
+support = Simplex() 
+  
+property variance

@@ -1,0 +1,4 @@
+# python.library.datetime#datetime.time.hour
+
+time.hour  
+In range(24).

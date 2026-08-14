@@ -1,0 +1,5 @@
+# werkzeug.local.index#werkzeug.local.LocalProxy._get_current_object
+
+_get_current_object()  
+Return the current object. This is useful if you want the real object behind the proxy at a time for performance reasons or because you want to pass the object into a different context.  Return type 
+Any

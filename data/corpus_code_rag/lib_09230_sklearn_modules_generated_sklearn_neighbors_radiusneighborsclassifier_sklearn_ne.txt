@@ -1,0 +1,34 @@
+# sklearn.modules.generated.sklearn.neighbors.radiusneighborsclassifier#sklearn.neighbors.RadiusNeighborsClassifier.radius_neighbors_graph
+
+radius_neighbors_graph(X=None, radius=None, mode='connectivity', sort_results=False) [source]
+ 
+Computes the (weighted) graph of Neighbors for points in X Neighborhoods are restricted the points at a distance lower than radius.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features), default=None 
+
+The query point or points. If not provided, neighbors of each indexed point are returned. In this case, the query point is not considered its own neighbor.  
+radiusfloat, default=None 
+
+Radius of neighborhoods. The default is the value passed to the constructor.  
+mode{‘connectivity’, ‘distance’}, default=’connectivity’ 
+
+Type of returned matrix: ‘connectivity’ will return the connectivity matrix with ones and zeros, in ‘distance’ the edges are Euclidean distance between points.  
+sort_resultsbool, default=False 
+
+If True, in each row of the result, the non-zero entries will be sorted by increasing distances. If False, the non-zero entries may not be sorted. Only used with mode=’distance’.  New in version 0.22.     Returns 
+ 
+Asparse-matrix of shape (n_queries, n_samples_fit) 
+
+n_samples_fit is the number of samples in the fitted data A[i, j] is assigned the weight of edge that connects i to j. The matrix if of format CSR.      See also  
+kneighbors_graph
+
+  Examples >>> X = [[0], [3], [1]]
+>>> from sklearn.neighbors import NearestNeighbors
+>>> neigh = NearestNeighbors(radius=1.5)
+>>> neigh.fit(X)
+NearestNeighbors(radius=1.5)
+>>> A = neigh.radius_neighbors_graph(X)
+>>> A.toarray()
+array([[1., 0., 1.],
+       [0., 1., 0.],
+       [1., 0., 1.]])

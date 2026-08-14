@@ -1,0 +1,68 @@
+# matplotlib.afm_api#matplotlib.afm.AFM
+
+classmatplotlib.afm.AFM(fh)[source]
+ 
+Bases: object Parse the AFM file in file object fh.   propertyfamily_name
+ 
+The font family name, e.g., 'Times'. 
+   get_angle()[source]
+ 
+Return the fontangle as float. 
+   get_bbox_char(c, isord=False)[source]
+
+   get_capheight()[source]
+ 
+Return the cap height as float. 
+   get_familyname()[source]
+ 
+Return the font family name, e.g., 'Times'. 
+   get_fontname()[source]
+ 
+Return the font name, e.g., 'Times-Roman'. 
+   get_fullname()[source]
+ 
+Return the font full name, e.g., 'Times-Roman'. 
+   get_height_char(c, isord=False)[source]
+ 
+Get the bounding box (ink) height of character c (space is 0). 
+   get_horizontal_stem_width()[source]
+ 
+Return the standard horizontal stem width as float, or None if not specified in AFM file. 
+   get_kern_dist(c1, c2)[source]
+ 
+Return the kerning pair distance (possibly 0) for chars c1 and c2. 
+   get_kern_dist_from_name(name1, name2)[source]
+ 
+Return the kerning pair distance (possibly 0) for chars name1 and name2. 
+   get_name_char(c, isord=False)[source]
+ 
+Get the name of the character, i.e., ';' is 'semicolon'. 
+   get_str_bbox(s)[source]
+ 
+Return the string bounding box. 
+   get_str_bbox_and_descent(s)[source]
+ 
+Return the string bounding box and the maximal descent. 
+   get_underline_thickness()[source]
+ 
+Return the underline thickness as float. 
+   get_vertical_stem_width()[source]
+ 
+Return the standard vertical stem width as float, or None if not specified in AFM file. 
+   get_weight()[source]
+ 
+Return the font weight, e.g., 'Bold' or 'Roman'. 
+   get_width_char(c, isord=False)[source]
+ 
+Get the width of the character from the character metric WX field. 
+   get_width_from_char_name(name)[source]
+ 
+Get the width of the character from a type1 character name. 
+   get_xheight()[source]
+ 
+Return the xheight as float. 
+   propertypostscript_name
+
+   string_width_height(s)[source]
+ 
+Return the string width (including kerning) and string height as a (w, h) tuple.

@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.tseries.offsets.micro.copy
+
+pandas.tseries.offsets.Micro.copy   Micro.copy()

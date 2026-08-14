@@ -1,0 +1,4 @@
+# django.ref.utils#django.utils.translation.deactivate
+
+deactivate()  
+Deactivates the currently active translation object so that further _ calls will resolve against the default translation object, again.

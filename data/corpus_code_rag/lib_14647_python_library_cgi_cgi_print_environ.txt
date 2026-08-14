@@ -1,0 +1,4 @@
+# python.library.cgi#cgi.print_environ
+
+cgi.print_environ()  
+Format the shell environment in HTML.

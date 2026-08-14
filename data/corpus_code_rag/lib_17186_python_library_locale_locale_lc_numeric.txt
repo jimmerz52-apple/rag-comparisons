@@ -1,0 +1,4 @@
+# python.library.locale#locale.LC_NUMERIC
+
+locale.LC_NUMERIC  
+Locale category for formatting numbers. The functions format(), atoi(), atof() and str() of the locale module are affected by that category. All other numeric formatting operations are not affected.

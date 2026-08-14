@@ -1,0 +1,4 @@
+# python.library.symtable#symtable.Symbol.is_parameter
+
+is_parameter()  
+Return True if the symbol is a parameter.

@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Table.auto_set_font_size
+
+auto_set_font_size(value=True)[source]
+ 
+Automatically set font size.

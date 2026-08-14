@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.BaseDateListView.get_dated_queryset
+
+get_dated_queryset(**lookup)  
+Returns a queryset, filtered using the query arguments defined by lookup. Enforces any restrictions on the queryset, such as allow_empty and allow_future.

@@ -1,0 +1,4 @@
+# django.ref.contrib.auth#django.contrib.auth.backends.BaseBackend.get_user_permissions
+
+get_user_permissions(user_obj, obj=None)  
+Returns an empty set.

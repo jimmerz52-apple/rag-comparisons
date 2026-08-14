@@ -1,0 +1,3 @@
+# pandas.reference.api.pandas.timedelta.min
+
+pandas.Timedelta.min   Timedelta.min=Timedelta('-106752 days +00:12:43.145224193')

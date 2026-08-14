@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.asin_
+
+asin_() → Tensor  
+In-place version of asin()

@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.getframerate
+
+aifc.getframerate()  
+Return the sampling rate (number of audio frames per second).

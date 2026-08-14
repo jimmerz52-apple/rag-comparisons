@@ -1,0 +1,5 @@
+# python.library.operator#operator.__not__
+
+operator.not_(obj)  
+operator.__not__(obj)  
+Return the outcome of not obj. (Note that there is no __not__() method for object instances; only the interpreter core defines this operation. The result is affected by the __bool__() and __len__() methods.)

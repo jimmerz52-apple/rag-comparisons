@@ -1,0 +1,4 @@
+# python.library.os#os.nice
+
+os.nice(increment)  
+Add increment to the process’s “niceness”. Return the new niceness. Availability: Unix.

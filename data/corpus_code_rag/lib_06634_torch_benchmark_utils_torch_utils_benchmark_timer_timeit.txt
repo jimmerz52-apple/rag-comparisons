@@ -1,0 +1,5 @@
+# torch.benchmark_utils#torch.utils.benchmark.Timer.timeit
+
+timeit(number=1000000) [source]
+ 
+Mirrors the semantics of timeit.Timer.timeit(). Execute the main statement (stmt) number times. https://docs.python.org/3/library/timeit.html#timeit.Timer.timeit

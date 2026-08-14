@@ -1,0 +1,4 @@
+# python.library.asyncio-future#asyncio.Future.remove_done_callback
+
+remove_done_callback(callback)  
+Remove callback from the callbacks list. Returns the number of callbacks removed, which is typically 1, unless a callback was added more than once.

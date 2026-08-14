@@ -1,0 +1,4 @@
+# python.library.mailbox#mailbox.Mailbox.close
+
+close()  
+Flush the mailbox, unlock it if necessary, and close any open files. For some Mailbox subclasses, this method does nothing.

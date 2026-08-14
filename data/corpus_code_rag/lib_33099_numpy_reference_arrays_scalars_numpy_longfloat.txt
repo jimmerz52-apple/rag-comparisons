@@ -1,0 +1,5 @@
+# numpy.reference.arrays.scalars#numpy.longfloat
+
+numpy.longfloat[source]
+ 
+alias of numpy.longdouble

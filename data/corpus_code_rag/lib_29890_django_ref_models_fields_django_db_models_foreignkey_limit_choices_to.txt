@@ -1,0 +1,13 @@
+# django.ref.models.fields#django.db.models.ForeignKey.limit_choices_to
+
+ForeignKey.limit_choices_to  
+Sets a limit to the available choices for this field when this field is rendered using a ModelForm or the admin (by default, all objects in the queryset are available to choose). Either a dictionary, a Q object, or a callable returning a dictionary or Q object can be used. For example: staff_member = models.ForeignKey(
+    User,
+    on_delete=models.CASCADE,
+    limit_choices_to={'is_staff': True},
+)
+ causes the corresponding field on the ModelForm to list only Users that have is_staff=True. This may be helpful in the Django admin. The callable form can be helpful, for instance, when used in conjunction with the Python datetime module to limit selections by date range. For example: def limit_pub_date_choices():
+    return {'pub_date__lte': datetime.date.today()}
+
+limit_choices_to = limit_pub_date_choices
+ If limit_choices_to is or returns a Q object, which is useful for complex queries, then it will only have an effect on the choices available in the admin when the field is not listed in raw_id_fields in the ModelAdmin for the model.  Note If a callable is used for limit_choices_to, it will be invoked every time a new form is instantiated. It may also be invoked when a model is validated, for example by management commands or the admin. The admin constructs querysets to validate its form inputs in various edge cases multiple times, so there is a possibility your callable may be invoked several times.

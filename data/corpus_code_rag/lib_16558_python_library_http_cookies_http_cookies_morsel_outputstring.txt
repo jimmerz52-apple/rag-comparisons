@@ -1,0 +1,4 @@
+# python.library.http.cookies#http.cookies.Morsel.OutputString
+
+Morsel.OutputString(attrs=None)  
+Return a string representing the Morsel, without any surrounding HTTP or JavaScript. The meaning for attrs is the same as in output().

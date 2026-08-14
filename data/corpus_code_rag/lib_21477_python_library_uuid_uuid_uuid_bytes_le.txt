@@ -1,0 +1,4 @@
+# python.library.uuid#uuid.UUID.bytes_le
+
+UUID.bytes_le  
+The UUID as a 16-byte string (with time_low, time_mid, and time_hi_version in little-endian byte order).

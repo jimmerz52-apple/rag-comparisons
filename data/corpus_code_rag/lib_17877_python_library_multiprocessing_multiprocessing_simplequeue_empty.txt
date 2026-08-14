@@ -1,0 +1,4 @@
+# python.library.multiprocessing#multiprocessing.SimpleQueue.empty
+
+empty()  
+Return True if the queue is empty, False otherwise.

@@ -1,0 +1,4 @@
+# python.library.configparser#configparser.InterpolationError
+
+exception configparser.InterpolationError  
+Base class for exceptions raised when problems occur performing string interpolation.

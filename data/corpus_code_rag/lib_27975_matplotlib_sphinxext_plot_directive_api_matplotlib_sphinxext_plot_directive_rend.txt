@@ -1,0 +1,5 @@
+# matplotlib.sphinxext_plot_directive_api#matplotlib.sphinxext.plot_directive.render_figures
+
+matplotlib.sphinxext.plot_directive.render_figures(code, code_path, output_dir, output_base, context, function_name, config, context_reset=False, close_figs=False, code_includes=None)[source]
+ 
+Run a pyplot script and save the images in output_dir. Save the images under output_dir with file names derived from output_base

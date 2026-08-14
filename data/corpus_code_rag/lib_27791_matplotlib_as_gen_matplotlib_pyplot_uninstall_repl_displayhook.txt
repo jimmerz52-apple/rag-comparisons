@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.pyplot.uninstall_repl_displayhook
+
+matplotlib.pyplot.uninstall_repl_displayhook   matplotlib.pyplot.uninstall_repl_displayhook()[source]
+ 
+Uninstall the Matplotlib display hook.  Warning Need IPython >= 2 for this to work. For IPython < 2 will raise a NotImplementedError   Warning If you are using vanilla python and have installed another display hook, this will reset sys.displayhook to what ever function was there when Matplotlib installed its displayhook, possibly discarding your changes.

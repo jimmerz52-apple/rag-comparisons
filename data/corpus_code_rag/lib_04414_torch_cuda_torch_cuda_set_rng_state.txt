@@ -1,0 +1,8 @@
+# torch.cuda#torch.cuda.set_rng_state
+
+torch.cuda.set_rng_state(new_state, device='cuda') [source]
+ 
+Sets the random number generator state of the specified GPU.  Parameters 
+ 
+new_state (torch.ByteTensor) – The desired state 
+device (torch.device or int, optional) – The device to set the RNG state. Default: 'cuda' (i.e., torch.device('cuda'), the current CUDA device).

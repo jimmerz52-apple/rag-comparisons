@@ -1,0 +1,4 @@
+# python.library.locale#locale.T_FMT_AMPM
+
+locale.T_FMT_AMPM  
+Get a format string for time.strftime() to represent time in the am/pm format.

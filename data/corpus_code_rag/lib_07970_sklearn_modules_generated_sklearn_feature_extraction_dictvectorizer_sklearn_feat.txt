@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.feature_extraction.dictvectorizer#sklearn.feature_extraction.DictVectorizer.inverse_transform
+
+inverse_transform(X, dict_type=<class 'dict'>) [source]
+ 
+Transform array or sparse matrix X back to feature mappings. X must have been produced by this DictVectorizer’s transform or fit_transform method; it may only have passed through transformers that preserve the number of features and their order. In the case of one-hot/one-of-K coding, the constructed feature names and values are returned rather than the original ones.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Sample matrix.  
+dict_typetype, default=dict 
+
+Constructor for feature mappings. Must conform to the collections.Mapping API.    Returns 
+ 
+Dlist of dict_type objects of shape (n_samples,) 
+
+Feature mappings for the samples in X.

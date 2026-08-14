@@ -1,0 +1,5 @@
+# torch.dlpack#torch.utils.dlpack.to_dlpack
+
+torch.utils.dlpack.to_dlpack(tensor) → PyCapsule  
+Returns a DLPack representing the tensor.  Parameters 
+tensor – a tensor to be exported   The dlpack shares the tensors memory. Note that each dlpack can only be consumed once.

@@ -1,0 +1,7 @@
+# matplotlib._as_gen.matplotlib.artist.artist.set_url
+
+matplotlib.artist.Artist.set_url   Artist.set_url(url)[source]
+ 
+Set the url for the artist.  Parameters 
+ 
+urlstr

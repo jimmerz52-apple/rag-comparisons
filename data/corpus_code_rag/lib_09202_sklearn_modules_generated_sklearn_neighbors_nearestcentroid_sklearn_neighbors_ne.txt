@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.neighbors.nearestcentroid#sklearn.neighbors.NearestCentroid.fit
+
+fit(X, y) [source]
+ 
+Fit the NearestCentroid model according to the given training data.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vector, where n_samples is the number of samples and n_features is the number of features. Note that centroid shrinking cannot be used with sparse matrices.  
+yarray-like of shape (n_samples,) 
+
+Target values (integers)

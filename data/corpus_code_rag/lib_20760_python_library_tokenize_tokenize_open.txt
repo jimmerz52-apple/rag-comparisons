@@ -1,0 +1,4 @@
+# python.library.tokenize#tokenize.open
+
+tokenize.open(filename)  
+Open a file in read only mode using the encoding detected by detect_encoding().  New in version 3.2.

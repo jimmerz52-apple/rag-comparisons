@@ -1,0 +1,5 @@
+# matplotlib.transformations#matplotlib.transforms.BboxBase.translated
+
+translated(tx, ty)[source]
+ 
+Construct a Bbox by translating this one by tx and ty.

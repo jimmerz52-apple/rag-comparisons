@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.neural_network.mlpregressor#sklearn.neural_network.MLPRegressor.partial_fit
+
+property partial_fit  
+Update the model with a single iteration over the given data.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input data.  
+yndarray of shape (n_samples,) 
+
+The target values.    Returns 
+ 
+selfreturns a trained MLP model.

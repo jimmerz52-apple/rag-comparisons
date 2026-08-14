@@ -1,0 +1,4 @@
+# python.library.gettext#gettext.NullTranslations.set_output_charset
+
+set_output_charset(charset)  
+Change the encoding used to return translated messages.  Deprecated since version 3.8, will be removed in version 3.10.

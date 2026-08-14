@@ -1,0 +1,4 @@
+# python.library.test#test.support.run_doctest
+
+test.support.run_doctest(module, verbosity=None, optionflags=0)  
+Run doctest.testmod() on the given module. Return (failure_count, test_count). If verbosity is None, doctest.testmod() is run with verbosity set to verbose. Otherwise, it is run with verbosity set to None. optionflags is passed as optionflags to doctest.testmod().

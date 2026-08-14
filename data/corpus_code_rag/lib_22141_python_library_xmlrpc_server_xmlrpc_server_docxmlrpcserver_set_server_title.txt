@@ -1,0 +1,4 @@
+# python.library.xmlrpc.server#xmlrpc.server.DocXMLRPCServer.set_server_title
+
+DocXMLRPCServer.set_server_title(server_title)  
+Set the title used in the generated HTML documentation. This title will be used inside the HTML “title” element.

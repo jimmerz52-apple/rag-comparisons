@@ -1,0 +1,7 @@
+# numpy.reference.generated.numpy.ma.sort
+
+numpy.ma.sort   ma.sort(a, axis=- 1, kind=None, order=None, endwith=True, fill_value=None)[source]
+ 
+Return a sorted copy of the masked array. Equivalent to creating a copy of the array and applying the MaskedArray sort() method. Refer to MaskedArray.sort for the full documentation  See also  MaskedArray.sort
+
+equivalent method

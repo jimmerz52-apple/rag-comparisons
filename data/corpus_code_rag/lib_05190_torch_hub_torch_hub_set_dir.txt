@@ -1,0 +1,6 @@
+# torch.hub#torch.hub.set_dir
+
+torch.hub.set_dir(d) [source]
+ 
+Optionally set the Torch Hub directory used to save downloaded models & weights.  Parameters 
+d (string) – path to a local folder to save downloaded models & weights.

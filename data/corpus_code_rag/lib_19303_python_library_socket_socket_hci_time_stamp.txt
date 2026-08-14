@@ -1,0 +1,6 @@
+# python.library.socket#socket.HCI_TIME_STAMP
+
+socket.HCI_FILTER  
+socket.HCI_TIME_STAMP  
+socket.HCI_DATA_DIR  
+For use with BTPROTO_HCI. HCI_FILTER is not available for NetBSD or DragonFlyBSD. HCI_TIME_STAMP and HCI_DATA_DIR are not available for FreeBSD, NetBSD, or DragonFlyBSD.

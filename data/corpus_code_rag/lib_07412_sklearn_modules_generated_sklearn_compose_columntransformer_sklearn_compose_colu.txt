@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.compose.columntransformer#sklearn.compose.ColumnTransformer.get_params
+
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator. Returns the parameters given in the constructor as well as the estimators contained within the transformers of the ColumnTransformer.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.

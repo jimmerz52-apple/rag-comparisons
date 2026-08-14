@@ -1,0 +1,4 @@
+# python.library.doctest#doctest.DocTest.examples
+
+examples  
+A list of Example objects encoding the individual interactive Python examples that should be run by this test.

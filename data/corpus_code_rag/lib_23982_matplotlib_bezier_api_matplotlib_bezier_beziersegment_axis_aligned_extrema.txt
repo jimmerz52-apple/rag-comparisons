@@ -1,0 +1,14 @@
+# matplotlib.bezier_api#matplotlib.bezier.BezierSegment.axis_aligned_extrema
+
+axis_aligned_extrema()[source]
+ 
+Return the dimension and location of the curve's interior extrema. The extrema are the points along the curve where one of its partial derivatives is zero.  Returns 
+ 
+dimsarray of int
+
+
+Index \(i\) of the partial derivative which is zero at each interior extrema.  
+dzerosarray of float
+
+
+Of same size as dims. The \(t\) such that \(d/dx_i B(t) = 0\)

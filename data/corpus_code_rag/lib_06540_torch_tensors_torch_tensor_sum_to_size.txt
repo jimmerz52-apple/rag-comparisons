@@ -1,0 +1,5 @@
+# torch.tensors#torch.Tensor.sum_to_size
+
+sum_to_size(*size) → Tensor  
+Sum this tensor to size. size must be broadcastable to this tensor size.  Parameters 
+size (int...) – a sequence of integers defining the shape of the output tensor.

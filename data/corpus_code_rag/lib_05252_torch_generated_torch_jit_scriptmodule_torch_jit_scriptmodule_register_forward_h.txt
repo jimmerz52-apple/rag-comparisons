@@ -1,0 +1,7 @@
+# torch.generated.torch.jit.scriptmodule#torch.jit.ScriptModule.register_forward_hook
+
+register_forward_hook(hook)  
+Registers a forward hook on the module. The hook will be called every time after forward() has computed an output. It should have the following signature: hook(module, input, output) -> None or modified output
+ The input contains only the positional arguments given to the module. Keyword arguments won’t be passed to the hooks and only to the forward. The hook can modify the output. It can modify the input inplace but it will not have effect on forward since this is called after forward() is called.  Returns 
+a handle that can be used to remove the added hook by calling handle.remove()  Return type 
+torch.utils.hooks.RemovableHandle

@@ -1,0 +1,3 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.project
+
+GEOSGeometry.project(point)

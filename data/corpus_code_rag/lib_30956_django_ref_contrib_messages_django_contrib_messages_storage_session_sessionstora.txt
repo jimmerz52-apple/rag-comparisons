@@ -1,0 +1,4 @@
+# django.ref.contrib.messages#django.contrib.messages.storage.session.SessionStorage
+
+class storage.session.SessionStorage  
+This class stores all messages inside of the request’s session. Therefore it requires Django’s contrib.sessions application.

@@ -1,0 +1,12 @@
+# sklearn.modules.generated.sklearn.multioutput.multioutputclassifier#sklearn.multioutput.MultiOutputClassifier.predict_proba
+
+property predict_proba  
+Probability estimates. Returns prediction probabilities for each class of each output. This method will raise a ValueError if any of the estimators do not have predict_proba.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Data    Returns 
+ 
+parray of shape (n_samples, n_classes), or a list of n_outputs such arrays if n_outputs > 1. 
+
+The class probabilities of the input samples. The order of the classes corresponds to that in the attribute classes_.  Changed in version 0.19: This function now returns a list of arrays where the length of the list is n_outputs, and each array is (n_samples, n_classes) for that particular output.

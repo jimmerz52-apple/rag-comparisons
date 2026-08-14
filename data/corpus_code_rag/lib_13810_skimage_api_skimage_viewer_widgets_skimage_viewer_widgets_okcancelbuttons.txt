@@ -1,0 +1,13 @@
+# skimage.api.skimage.viewer.widgets#skimage.viewer.widgets.OKCancelButtons
+
+class skimage.viewer.widgets.OKCancelButtons(button_width=80) [source]
+ 
+Bases: skimage.viewer.widgets.core.BaseWidget Buttons that close the parent plugin. OK will replace the original image with the current (filtered) image. Cancel will just close the plugin.  
+__init__(button_width=80) [source]
+ 
+Initialize self. See help(type(self)) for accurate signature. 
+  
+close_plugin() [source]
+
+  
+update_original_image() [source]

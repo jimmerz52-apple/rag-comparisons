@@ -1,0 +1,16 @@
+# sklearn.modules.generated.sklearn.cluster.optics#sklearn.cluster.OPTICS.fit
+
+fit(X, y=None) [source]
+ 
+Perform OPTICS clustering. Extracts an ordered list of points and reachability distances, and performs initial clustering using max_eps distance specified at OPTICS object instantiation.  Parameters 
+ 
+Xndarray of shape (n_samples, n_features), or (n_samples, n_samples) if metric=’precomputed’ 
+
+A feature array, or array of distances between samples if metric=’precomputed’.  
+yignored 
+
+Ignored.    Returns 
+ 
+selfinstance of OPTICS 
+
+The instance.

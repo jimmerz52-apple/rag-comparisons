@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-date-based#django.views.generic.dates.WeekMixin.get_week_format
+
+get_week_format()  
+Returns the strftime() format to use when parsing the week. Returns week_format by default.

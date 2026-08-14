@@ -1,0 +1,3 @@
+# numpy.reference.distutils.misc_util#numpy.distutils.misc_util.red_text
+
+numpy.distutils.misc_util.red_text(s)[source]

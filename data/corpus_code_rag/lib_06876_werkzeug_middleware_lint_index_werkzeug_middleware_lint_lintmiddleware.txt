@@ -1,0 +1,7 @@
+# werkzeug.middleware.lint.index#werkzeug.middleware.lint.LintMiddleware
+
+class werkzeug.middleware.lint.LintMiddleware(app)  
+Warns about common errors in the WSGI and HTTP behavior of the server and wrapped application. Some of the issues it checks are:  invalid status codes non-bytes sent to the WSGI server strings returned from the WSGI application non-empty conditional responses unquoted etags relative URLs in the Location header unsafe calls to wsgi.input unclosed iterators  Error information is emitted using the warnings module.  Parameters 
+app (WSGIApplication) – The WSGI application to wrap.  Return type 
+None   from werkzeug.middleware.lint import LintMiddleware
+app = LintMiddleware(app)

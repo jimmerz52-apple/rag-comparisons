@@ -1,0 +1,4 @@
+# werkzeug.utils.index#werkzeug.user_agent.UserAgent.browser
+
+browser: Optional[str] = None  
+The browser name, if it could be parsed from the string.

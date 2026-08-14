@@ -1,0 +1,13 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_rgb.make_rgb_axes
+
+mpl_toolkits.axes_grid1.axes_rgb.make_rgb_axes   mpl_toolkits.axes_grid1.axes_rgb.make_rgb_axes(ax, pad=0.01, axes_class=None, **kwargs)[source]
+ 
+ Parameters 
+ 
+padfloat
+
+
+Fraction of the axes height.     
+  Examples using mpl_toolkits.axes_grid1.axes_rgb.make_rgb_axes
+ 
+   Showing RGB channels using RGBAxes

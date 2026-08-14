@@ -1,0 +1,4 @@
+# sklearn.modules.generated.sklearn.gaussian_process.kernels.exponentiation#sklearn.gaussian_process.kernels.Exponentiation.hyperparameters
+
+property hyperparameters  
+Returns a list of all hyperparameter.

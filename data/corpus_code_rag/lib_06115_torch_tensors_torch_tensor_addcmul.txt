@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.addcmul
+
+addcmul(tensor1, tensor2, *, value=1) → Tensor  
+See torch.addcmul()

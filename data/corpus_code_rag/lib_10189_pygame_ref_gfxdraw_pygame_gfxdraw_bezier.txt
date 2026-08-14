@@ -1,0 +1,25 @@
+# pygame.ref.gfxdraw#pygame.gfxdraw.bezier
+
+pygame.gfxdraw.bezier() 
+ draw a Bezier curve bezier(surface, points, steps, color) -> None  Draws a Bézier curve on the given surface.     
+Parameters:
+
+ 
+surface (Surface) -- surface to draw on 
+points (tuple(coordinate) or list(coordinate)) -- a sequence of 3 or more (x, y) coordinates used to form a curve, where each coordinate in the sequence must be a tuple/list/pygame.math.Vector2 of 2 ints/floats (float values will be truncated) 
+steps (int) -- number of steps for the interpolation, the minimum is 2 
+color (Color or tuple(int, int, int, [int])) -- color to draw with, the alpha value is optional if using a tuple (RGB[A])
+    
+Returns:
+
+None   
+Return type:
+
+NoneType   
+Raises:
+
+ 
+ValueError -- if steps < 2
+ 
+ValueError -- if len(points) < 3 (must have at least 3 points) 
+IndexError -- if len(coordinate) < 2 (each coordinate must have at least 2 items)

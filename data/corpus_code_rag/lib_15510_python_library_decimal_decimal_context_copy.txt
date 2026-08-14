@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Context.copy
+
+copy()  
+Return a duplicate of the context.

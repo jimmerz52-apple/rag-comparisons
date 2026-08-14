@@ -1,0 +1,4 @@
+# python.library.pyexpat#xml.parsers.expat.xmlparser.EndElementHandler
+
+xmlparser.EndElementHandler(name)  
+Called for the end of every element.

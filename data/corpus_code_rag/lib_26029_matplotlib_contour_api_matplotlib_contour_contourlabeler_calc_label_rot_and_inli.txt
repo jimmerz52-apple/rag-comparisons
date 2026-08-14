@@ -1,0 +1,5 @@
+# matplotlib.contour_api#matplotlib.contour.ContourLabeler.calc_label_rot_and_inline
+
+calc_label_rot_and_inline(slc, ind, lw, lc=None, spacing=5)[source]
+ 
+Calculate the appropriate label rotation given the linecontour coordinates in screen units, the index of the label location and the label width. If lc is not None or empty, also break contours and compute inlining. spacing is the empty space to leave around the label, in pixels. Both tasks are done together to avoid calculating path lengths multiple times, which is relatively costly. The method used here involves computing the path length along the contour in pixel coordinates and then looking approximately (label width / 2) away from central point to determine rotation and then to break contour if desired.

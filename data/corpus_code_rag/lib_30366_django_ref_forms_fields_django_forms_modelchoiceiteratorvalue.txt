@@ -1,0 +1,12 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIteratorValue
+
+class ModelChoiceIteratorValue(value, instance)  
+Two arguments are required:  
+value  
+The value of the choice. This value is used to render the value attribute of an HTML <option> element. 
+  
+instance  
+The model instance from the queryset. The instance can be accessed in custom ChoiceWidget.create_option() implementations to adjust the rendered HTML. 
+ ModelChoiceIteratorValue has the following method:  
+__str__()  
+Return value as a string to be rendered in HTML.

@@ -1,0 +1,4 @@
+# django.ref.class-based-views.mixins-multiple-object#django.views.generic.list.MultipleObjectTemplateResponseMixin.template_name_suffix
+
+template_name_suffix  
+The suffix to append to the auto-generated candidate template name. Default suffix is _list.

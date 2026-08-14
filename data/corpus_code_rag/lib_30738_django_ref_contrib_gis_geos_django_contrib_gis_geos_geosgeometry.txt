@@ -1,0 +1,9 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry
+
+class GEOSGeometry(geo_input, srid=None)  
+   
+Parameters:
+
+ 
+geo_input – Geometry input value (string or buffer) 
+srid (int) – spatial reference identifier

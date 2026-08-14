@@ -1,0 +1,4 @@
+# python.library.select#select.epoll.register
+
+epoll.register(fd[, eventmask])  
+Register a fd descriptor with the epoll object.

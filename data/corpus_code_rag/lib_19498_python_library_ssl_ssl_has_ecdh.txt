@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.HAS_ECDH
+
+ssl.HAS_ECDH  
+Whether the OpenSSL library has built-in support for the Elliptic Curve-based Diffie-Hellman key exchange. This should be true unless the feature was explicitly disabled by the distributor.  New in version 3.3.

@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestLoader.testMethodPrefix
+
+testMethodPrefix  
+String giving the prefix of method names which will be interpreted as test methods. The default value is 'test'. This affects getTestCaseNames() and all the loadTestsFrom*() methods.

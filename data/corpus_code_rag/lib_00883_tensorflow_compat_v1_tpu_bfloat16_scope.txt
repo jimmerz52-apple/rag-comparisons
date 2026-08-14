@@ -1,0 +1,8 @@
+# tensorflow.compat.v1.tpu.bfloat16_scope
+
+tf.compat.v1.tpu.bfloat16_scope Scope class for bfloat16 variables so that the model uses custom getter. 
+@tf_contextlib.contextmanager
+tf.compat.v1.tpu.bfloat16_scope(
+    name=None
+)
+ This enables variables to be read as bfloat16 type when using get_variable.

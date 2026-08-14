@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Control.mapping
+
+mapping(event, attribute)  
+Make an entry into the EventMapping table for this control.

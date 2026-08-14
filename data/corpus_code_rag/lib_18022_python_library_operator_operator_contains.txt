@@ -1,0 +1,5 @@
+# python.library.operator#operator.__contains__
+
+operator.contains(a, b)  
+operator.__contains__(a, b)  
+Return the outcome of the test b in a. Note the reversed operands.

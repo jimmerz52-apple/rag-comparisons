@@ -1,0 +1,18 @@
+# tensorflow.raw_ops.queuesize
+
+tf.raw_ops.QueueSize Computes the number of elements in the given queue.  View aliases  Compat aliases for migration 
+See Migration guide for more details. tf.compat.v1.raw_ops.QueueSize  
+tf.raw_ops.QueueSize(
+    handle, name=None
+)
+
+ 
+
+
+ Args
+  handle   A Tensor of type mutable string. The handle to a queue.  
+  name   A name for the operation (optional).   
+ 
+
+
+ Returns   A Tensor of type int32.

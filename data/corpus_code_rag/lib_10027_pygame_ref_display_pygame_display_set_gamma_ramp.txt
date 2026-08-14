@@ -1,0 +1,4 @@
+# pygame.ref.display#pygame.display.set_gamma_ramp
+
+pygame.display.set_gamma_ramp() 
+ Change the hardware gamma ramps with a custom lookup set_gamma_ramp(red, green, blue) -> bool  Set the red, green, and blue gamma ramps with an explicit lookup table. Each argument should be sequence of 256 integers. The integers should range between 0 and 0xffff. Not all systems and hardware support gamma ramps, if the function succeeds it will return True.

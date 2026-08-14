@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.FileResponse.set_headers
+
+FileResponse.set_headers(open_file)  
+This method is automatically called during the response initialization and set various headers (Content-Length, Content-Type, and Content-Disposition) depending on open_file.

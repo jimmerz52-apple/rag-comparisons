@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.WriteTransport.writelines
+
+WriteTransport.writelines(list_of_data)  
+Write a list (or any iterable) of data bytes to the transport. This is functionally equivalent to calling write() on each element yielded by the iterable, but may be implemented more efficiently.

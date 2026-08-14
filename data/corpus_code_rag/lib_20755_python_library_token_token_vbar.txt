@@ -1,0 +1,4 @@
+# python.library.token#token.VBAR
+
+token.VBAR  
+Token value for "|".

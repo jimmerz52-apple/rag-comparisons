@@ -1,0 +1,4 @@
+# django.ref.validators#django.core.validators.validate_ipv6_address
+
+validate_ipv6_address  
+Uses django.utils.ipv6 to check the validity of an IPv6 address.

@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.nanquantile
+
+nanquantile(q, dim=None, keepdim=False) → Tensor  
+See torch.nanquantile()

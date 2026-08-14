@@ -1,0 +1,3 @@
+# skimage.api.skimage.future#skimage.future.TrainableSegmenter.compute_features
+
+compute_features(image) [source]

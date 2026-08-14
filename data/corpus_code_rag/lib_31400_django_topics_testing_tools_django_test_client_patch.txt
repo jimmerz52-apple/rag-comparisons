@@ -1,0 +1,4 @@
+# django.topics.testing.tools#django.test.Client.patch
+
+patch(path, data='', content_type='application/octet-stream', follow=False, secure=False, **extra)  
+Makes a PATCH request on the provided path and returns a Response object. Useful for testing RESTful interfaces. The follow, secure and extra arguments act the same as for Client.get().

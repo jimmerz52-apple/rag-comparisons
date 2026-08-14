@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.arctanh
+
+arctanh() → Tensor  
+See torch.arctanh()

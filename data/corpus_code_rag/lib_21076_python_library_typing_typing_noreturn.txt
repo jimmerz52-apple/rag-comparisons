@@ -1,0 +1,8 @@
+# python.library.typing#typing.NoReturn
+
+typing.NoReturn  
+Special type indicating that a function never returns. For example: from typing import NoReturn
+
+def stop() -> NoReturn:
+    raise RuntimeError('no way')
+  New in version 3.5.4.   New in version 3.6.2.

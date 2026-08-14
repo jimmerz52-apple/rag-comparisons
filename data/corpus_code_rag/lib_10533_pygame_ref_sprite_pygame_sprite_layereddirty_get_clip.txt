@@ -1,0 +1,4 @@
+# pygame.ref.sprite#pygame.sprite.LayeredDirty.get_clip
+
+get_clip() 
+ clip the area where to draw. Just pass None (default) to reset the clip get_clip() -> Rect

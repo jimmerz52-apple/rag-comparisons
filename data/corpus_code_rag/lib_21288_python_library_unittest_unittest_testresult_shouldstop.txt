@@ -1,0 +1,4 @@
+# python.library.unittest#unittest.TestResult.shouldStop
+
+shouldStop  
+Set to True when the execution of tests should stop by stop().

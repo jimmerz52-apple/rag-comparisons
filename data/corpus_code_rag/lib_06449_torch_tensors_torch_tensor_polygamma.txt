@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.polygamma
+
+polygamma(n) → Tensor  
+See torch.polygamma()

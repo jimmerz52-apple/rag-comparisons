@@ -1,0 +1,8 @@
+# 854
+Task: 854
+
+# Write a function which accepts an arbitrary list and converts it to a heap using heap queue algorithm.
+import heapq as hq
+def raw_heap(rawheap):
+  hq.heapify(rawheap)
+  return rawheap

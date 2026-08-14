@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.maskedarray.__rmod__
+
+numpy.ma.MaskedArray.__rmod__ method   ma.MaskedArray.__rmod__(value, /)
+ 
+Return value%self.

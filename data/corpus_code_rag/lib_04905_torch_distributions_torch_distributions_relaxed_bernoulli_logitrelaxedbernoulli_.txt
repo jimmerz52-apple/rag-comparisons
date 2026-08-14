@@ -1,0 +1,3 @@
+# torch.distributions#torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli.log_prob
+
+log_prob(value) [source]

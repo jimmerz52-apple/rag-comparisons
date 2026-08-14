@@ -1,0 +1,4 @@
+# python.library.ctypes#ctypes.c_int8
+
+class ctypes.c_int8  
+Represents the C 8-bit signed int datatype. Usually an alias for c_byte.

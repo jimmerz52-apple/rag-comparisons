@@ -1,0 +1,4 @@
+# python.library.signal#signal.strsignal
+
+signal.strsignal(signalnum)  
+Return the system description of the signal signalnum, such as “Interrupt”, “Segmentation fault”, etc. Returns None if the signal is not recognized.  New in version 3.8.

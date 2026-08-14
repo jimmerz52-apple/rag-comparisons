@@ -1,0 +1,4 @@
+# torch.tensors#torch.Tensor.hypot_
+
+hypot_(other) → Tensor  
+In-place version of hypot()

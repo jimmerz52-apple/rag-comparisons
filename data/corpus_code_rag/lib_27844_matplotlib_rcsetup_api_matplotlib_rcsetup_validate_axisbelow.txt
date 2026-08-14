@@ -1,0 +1,3 @@
+# matplotlib.rcsetup_api#matplotlib.rcsetup.validate_axisbelow
+
+matplotlib.rcsetup.validate_axisbelow(s)[source]

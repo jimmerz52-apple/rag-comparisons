@@ -1,0 +1,14 @@
+# torch.distributions#torch.distributions.chi2.Chi2
+
+class torch.distributions.chi2.Chi2(df, validate_args=None) [source]
+ 
+Bases: torch.distributions.gamma.Gamma Creates a Chi2 distribution parameterized by shape parameter df. This is exactly equivalent to Gamma(alpha=0.5*df, beta=0.5) Example: >>> m = Chi2(torch.tensor([1.0]))
+>>> m.sample()  # Chi2 distributed with shape df=1
+tensor([ 0.1046])
+  Parameters 
+df (float or Tensor) – shape parameter of the distribution    
+arg_constraints = {'df': GreaterThan(lower_bound=0.0)} 
+  
+property df 
+  
+expand(batch_shape, _instance=None) [source]

@@ -1,0 +1,5 @@
+# torch.generated.torch.nn.flatten#torch.nn.Flatten.zero_grad
+
+zero_grad(set_to_none=False)  
+Sets gradients of all model parameters to zero. See similar function under torch.optim.Optimizer for more context.  Parameters 
+set_to_none (bool) – instead of setting to zero, set the grads to None. See torch.optim.Optimizer.zero_grad() for details.

@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.loop.stop
+
+loop.stop()  
+Stop the event loop.

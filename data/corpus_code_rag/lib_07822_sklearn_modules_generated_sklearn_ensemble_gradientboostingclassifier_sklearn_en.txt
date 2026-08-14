@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.ensemble.gradientboostingclassifier#sklearn.ensemble.GradientBoostingClassifier.predict
+
+predict(X) [source]
+ 
+Predict class for X.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+The input samples. Internally, it will be converted to dtype=np.float32 and if a sparse matrix is provided to a sparse csr_matrix.    Returns 
+ 
+yndarray of shape (n_samples,) 
+
+The predicted values.

@@ -1,0 +1,3 @@
+# matplotlib.patheffects_api#matplotlib.patheffects.PathEffectRenderer.copy_with_path_effect
+
+copy_with_path_effect(path_effects)[source]

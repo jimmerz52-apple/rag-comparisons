@@ -1,0 +1,4 @@
+# python.library.importlib#importlib.find_loader
+
+importlib.find_loader(name, path=None)  
+Find the loader for a module, optionally within the specified path. If the module is in sys.modules, then sys.modules[name].__loader__ is returned (unless the loader would be None or is not set, in which case ValueError is raised). Otherwise a search using sys.meta_path is done. None is returned if no loader is found. A dotted name does not have its parents implicitly imported as that requires loading them and that may not be desired. To properly import a submodule you will need to import all parent packages of the submodule and use the correct argument to path.  New in version 3.3.   Changed in version 3.4: If __loader__ is not set, raise ValueError, just like when the attribute is set to None.   Deprecated since version 3.4: Use importlib.util.find_spec() instead.

@@ -1,0 +1,7 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.MultiPolygon
+
+class MultiPolygon(*args, **kwargs)  
+MultiPolygon objects may be instantiated by passing Polygon objects as arguments, or a single sequence of Polygon objects: >>> p1 = Polygon( ((0, 0), (0, 1), (1, 1), (0, 0)) )
+>>> p2 = Polygon( ((1, 1), (1, 2), (2, 2), (1, 1)) )
+>>> mp = MultiPolygon(p1, p2)
+>>> mp = MultiPolygon([p1, p2])

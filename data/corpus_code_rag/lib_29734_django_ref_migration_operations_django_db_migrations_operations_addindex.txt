@@ -1,0 +1,3 @@
+# django.ref.migration-operations#django.db.migrations.operations.AddIndex
+
+class AddIndex(model_name, index)

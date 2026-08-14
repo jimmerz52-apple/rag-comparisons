@@ -1,0 +1,4 @@
+# python.library.cmath#cmath.asin
+
+cmath.asin(x)  
+Return the arc sine of x. This has the same branch cuts as acos().

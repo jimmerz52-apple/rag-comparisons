@@ -1,0 +1,4 @@
+# python.library.winreg#winreg.HKEY_CURRENT_CONFIG
+
+winreg.HKEY_CURRENT_CONFIG  
+Contains information about the current hardware profile of the local computer system.

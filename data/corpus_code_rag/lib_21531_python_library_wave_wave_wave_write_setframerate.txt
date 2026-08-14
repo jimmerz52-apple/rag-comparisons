@@ -1,0 +1,4 @@
+# python.library.wave#wave.Wave_write.setframerate
+
+Wave_write.setframerate(n)  
+Set the frame rate to n.  Changed in version 3.2: A non-integral input to this method is rounded to the nearest integer.

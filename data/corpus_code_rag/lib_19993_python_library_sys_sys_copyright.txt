@@ -1,0 +1,4 @@
+# python.library.sys#sys.copyright
+
+sys.copyright  
+A string containing the copyright pertaining to the Python interpreter.

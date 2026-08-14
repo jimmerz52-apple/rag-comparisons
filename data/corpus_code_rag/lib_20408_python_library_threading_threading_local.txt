@@ -1,0 +1,4 @@
+# python.library.threading#threading.local
+
+class threading.local  
+A class that represents thread-local data. For more details and extensive examples, see the documentation string of the _threading_local module.

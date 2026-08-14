@@ -1,0 +1,5 @@
+# numpy.reference.generated.numpy.ma.masked_array
+
+numpy.ma.masked_array   numpy.ma.masked_array[source]
+ 
+alias of numpy.ma.core.MaskedArray

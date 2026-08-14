@@ -1,0 +1,6 @@
+# matplotlib.collections_api#matplotlib.collections.RegularPolyCollection.pickable
+
+pickable()[source]
+ 
+Return whether the artist is pickable.  See also  
+set_picker, get_picker, pick

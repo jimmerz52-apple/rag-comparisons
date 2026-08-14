@@ -1,0 +1,43 @@
+# skimage.api.skimage.feature#skimage.feature.corner_fast
+
+skimage.feature.corner_fast(image, n=12, threshold=0.15) [source]
+ 
+Extract FAST corners for a given image.  Parameters 
+ 
+image2D ndarray 
+
+Input image.  
+nint, optional 
+
+Minimum number of consecutive pixels out of 16 pixels on the circle that should all be either brighter or darker w.r.t testpixel. A point c on the circle is darker w.r.t test pixel p if Ic < Ip - threshold and brighter if Ic > Ip + threshold. Also stands for the n in FAST-n corner detector.  
+thresholdfloat, optional 
+
+Threshold used in deciding whether the pixels on the circle are brighter, darker or similar w.r.t. the test pixel. Decrease the threshold when more corners are desired and vice-versa.    Returns 
+ 
+responsendarray 
+
+FAST corner response image.     References  
+1  
+Rosten, E., & Drummond, T. (2006, May). Machine learning for high-speed corner detection. In European conference on computer vision (pp. 430-443). Springer, Berlin, Heidelberg. DOI:10.1007/11744023_34 http://www.edwardrosten.com/work/rosten_2006_machine.pdf  
+2  
+Wikipedia, “Features from accelerated segment test”, https://en.wikipedia.org/wiki/Features_from_accelerated_segment_test   Examples >>> from skimage.feature import corner_fast, corner_peaks
+>>> square = np.zeros((12, 12))
+>>> square[3:9, 3:9] = 1
+>>> square.astype(int)
+array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]])
+>>> corner_peaks(corner_fast(square, 9), min_distance=1)
+array([[3, 3],
+       [3, 8],
+       [8, 3],
+       [8, 8]])

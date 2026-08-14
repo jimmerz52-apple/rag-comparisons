@@ -1,0 +1,3 @@
+# matplotlib.backend_ps_api#matplotlib.backends.backend_ps.RendererPS.set_linedash
+
+set_linedash(offset, seq, store=True)[source]

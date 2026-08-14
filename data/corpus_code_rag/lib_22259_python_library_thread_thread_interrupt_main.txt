@@ -1,0 +1,4 @@
+# python.library._thread#_thread.interrupt_main
+
+_thread.interrupt_main()  
+Simulate the effect of a signal.SIGINT signal arriving in the main thread. A thread can use this function to interrupt the main thread. If signal.SIGINT isn’t handled by Python (it was set to signal.SIG_DFL or signal.SIG_IGN), this function does nothing.

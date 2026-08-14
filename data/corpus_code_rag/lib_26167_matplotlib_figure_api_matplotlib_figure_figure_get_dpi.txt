@@ -1,0 +1,5 @@
+# matplotlib.figure_api#matplotlib.figure.Figure.get_dpi
+
+get_dpi()[source]
+ 
+Return the resolution in dots per inch as a float.

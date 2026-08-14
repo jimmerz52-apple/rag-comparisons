@@ -1,0 +1,3 @@
+# matplotlib._as_gen.mpl_toolkits.axisartist.axis_artist.axislabel#mpl_toolkits.axisartist.axis_artist.AxisLabel.set_default_angle
+
+set_default_angle(d)[source]

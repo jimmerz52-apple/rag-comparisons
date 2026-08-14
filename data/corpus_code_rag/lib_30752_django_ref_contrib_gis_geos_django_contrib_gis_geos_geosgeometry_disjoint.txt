@@ -1,0 +1,4 @@
+# django.ref.contrib.gis.geos#django.contrib.gis.geos.GEOSGeometry.disjoint
+
+GEOSGeometry.disjoint(other)  
+Returns True if the DE-9IM intersection matrix for the two geometries is FF*FF****.

@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.SSLContext.hostname_checks_common_name
+
+SSLContext.hostname_checks_common_name  
+Whether check_hostname falls back to verify the cert’s subject common name in the absence of a subject alternative name extension (default: true).  Note Only writeable with OpenSSL 1.1.0 or higher.   New in version 3.7.   Changed in version 3.9.3: The flag had no effect with OpenSSL before version 1.1.1k. Python 3.8.9, 3.9.3, and 3.10 include workarounds for previous versions.

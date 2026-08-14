@@ -1,0 +1,19 @@
+# django.ref.contrib.admin.index#django.contrib.admin.display
+
+display(*, boolean=None, ordering=None, description=None, empty_value=None)  
+ New in Django 3.2.  This decorator can be used for setting specific attributes on custom display functions that can be used with list_display or readonly_fields: @admin.display(
+    boolean=True,
+    ordering='-publish_date',
+    description='Is Published?',
+)
+def is_published(self, obj):
+    return obj.publish_date is not None
+ This is equivalent to setting some attributes (with the original, longer names) on the function directly: def is_published(self, obj):
+    return obj.publish_date is not None
+is_published.boolean = True
+is_published.admin_order_field = '-publish_date'
+is_published.short_description = 'Is Published?'
+ Also note that the empty_value decorator parameter maps to the empty_value_display attribute assigned directly to the function. It cannot be used in conjunction with boolean – they are mutually exclusive. Use of this decorator is not compulsory to make a display function, but it can be useful to use it without arguments as a marker in your source to identify the purpose of the function: @admin.display
+def published_year(self, obj):
+    return obj.publish_date.year
+ In this case it will add no attributes to the function.

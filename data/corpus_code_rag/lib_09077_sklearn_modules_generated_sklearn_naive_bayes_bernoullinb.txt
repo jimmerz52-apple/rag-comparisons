@@ -1,0 +1,179 @@
+# sklearn.modules.generated.sklearn.naive_bayes.bernoullinb
+
+sklearn.naive_bayes.BernoulliNB  
+class sklearn.naive_bayes.BernoulliNB(*, alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None) [source]
+ 
+Naive Bayes classifier for multivariate Bernoulli models. Like MultinomialNB, this classifier is suitable for discrete data. The difference is that while MultinomialNB works with occurrence counts, BernoulliNB is designed for binary/boolean features. Read more in the User Guide.  Parameters 
+ 
+alphafloat, default=1.0 
+
+Additive (Laplace/Lidstone) smoothing parameter (0 for no smoothing).  
+binarizefloat or None, default=0.0 
+
+Threshold for binarizing (mapping to booleans) of sample features. If None, input is presumed to already consist of binary vectors.  
+fit_priorbool, default=True 
+
+Whether to learn class prior probabilities or not. If false, a uniform prior will be used.  
+class_priorarray-like of shape (n_classes,), default=None 
+
+Prior probabilities of the classes. If specified the priors are not adjusted according to the data.    Attributes 
+ 
+class_count_ndarray of shape (n_classes) 
+
+Number of samples encountered for each class during fitting. This value is weighted by the sample weight when provided.  
+class_log_prior_ndarray of shape (n_classes) 
+
+Log probability of each class (smoothed).  
+classes_ndarray of shape (n_classes,) 
+
+Class labels known to the classifier  
+coef_ndarray of shape (n_classes, n_features) 
+
+Mirrors feature_log_prob_ for interpreting BernoulliNB as a linear model.  
+feature_count_ndarray of shape (n_classes, n_features) 
+
+Number of samples encountered for each (class, feature) during fitting. This value is weighted by the sample weight when provided.  
+feature_log_prob_ndarray of shape (n_classes, n_features) 
+
+Empirical log probability of features given a class, P(x_i|y).  
+intercept_ndarray of shape (n_classes,) 
+
+Mirrors class_log_prior_ for interpreting BernoulliNB as a linear model.  
+n_features_int 
+
+Number of features of each sample.     References C.D. Manning, P. Raghavan and H. Schuetze (2008). Introduction to Information Retrieval. Cambridge University Press, pp. 234-265. https://nlp.stanford.edu/IR-book/html/htmledition/the-bernoulli-model-1.html A. McCallum and K. Nigam (1998). A comparison of event models for naive Bayes text classification. Proc. AAAI/ICML-98 Workshop on Learning for Text Categorization, pp. 41-48. V. Metsis, I. Androutsopoulos and G. Paliouras (2006). Spam filtering with naive Bayes – Which naive Bayes? 3rd Conf. on Email and Anti-Spam (CEAS). Examples >>> import numpy as np
+>>> rng = np.random.RandomState(1)
+>>> X = rng.randint(5, size=(6, 100))
+>>> Y = np.array([1, 2, 3, 4, 4, 5])
+>>> from sklearn.naive_bayes import BernoulliNB
+>>> clf = BernoulliNB()
+>>> clf.fit(X, Y)
+BernoulliNB()
+>>> print(clf.predict(X[2:3]))
+[3]
+ Methods  
+fit(X, y[, sample_weight]) Fit Naive Bayes classifier according to X, y  
+get_params([deep]) Get parameters for this estimator.  
+partial_fit(X, y[, classes, sample_weight]) Incremental fit on a batch of samples.  
+predict(X) Perform classification on an array of test vectors X.  
+predict_log_proba(X) Return log-probability estimates for the test vector X.  
+predict_proba(X) Return probability estimates for the test vector X.  
+score(X, y[, sample_weight]) Return the mean accuracy on the given test data and labels.  
+set_params(**params) Set the parameters of this estimator.    
+fit(X, y, sample_weight=None) [source]
+ 
+Fit Naive Bayes classifier according to X, y  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Weights applied to individual samples (1. for unweighted).    Returns 
+ 
+selfobject 
+   
+  
+get_params(deep=True) [source]
+ 
+Get parameters for this estimator.  Parameters 
+ 
+deepbool, default=True 
+
+If True, will return the parameters for this estimator and contained subobjects that are estimators.    Returns 
+ 
+paramsdict 
+
+Parameter names mapped to their values.     
+  
+partial_fit(X, y, classes=None, sample_weight=None) [source]
+ 
+Incremental fit on a batch of samples. This method is expected to be called several times consecutively on different chunks of a dataset so as to implement out-of-core or online learning. This is especially useful when the whole dataset is too big to fit in memory at once. This method has some performance overhead hence it is better to call partial_fit on chunks of data that are as large as possible (as long as fitting in the memory budget) to hide the overhead.  Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Training vectors, where n_samples is the number of samples and n_features is the number of features.  
+yarray-like of shape (n_samples,) 
+
+Target values.  
+classesarray-like of shape (n_classes), default=None 
+
+List of all the classes that can possibly appear in the y vector. Must be provided at the first call to partial_fit, can be omitted in subsequent calls.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Weights applied to individual samples (1. for unweighted).    Returns 
+ 
+selfobject 
+   
+  
+predict(X) [source]
+ 
+Perform classification on an array of test vectors X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Cndarray of shape (n_samples,) 
+
+Predicted target values for X     
+  
+predict_log_proba(X) [source]
+ 
+Return log-probability estimates for the test vector X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Carray-like of shape (n_samples, n_classes) 
+
+Returns the log-probability of the samples for each class in the model. The columns correspond to the classes in sorted order, as they appear in the attribute classes_.     
+  
+predict_proba(X) [source]
+ 
+Return probability estimates for the test vector X.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+  Returns 
+ 
+Carray-like of shape (n_samples, n_classes) 
+
+Returns the probability of the samples for each class in the model. The columns correspond to the classes in sorted order, as they appear in the attribute classes_.     
+  
+score(X, y, sample_weight=None) [source]
+ 
+Return the mean accuracy on the given test data and labels. In multi-label classification, this is the subset accuracy which is a harsh metric since you require for each sample that each label set be correctly predicted.  Parameters 
+ 
+Xarray-like of shape (n_samples, n_features) 
+
+Test samples.  
+yarray-like of shape (n_samples,) or (n_samples, n_outputs) 
+
+True labels for X.  
+sample_weightarray-like of shape (n_samples,), default=None 
+
+Sample weights.    Returns 
+ 
+scorefloat 
+
+Mean accuracy of self.predict(X) wrt. y.     
+  
+set_params(**params) [source]
+ 
+Set the parameters of this estimator. The method works on simple estimators as well as on nested objects (such as Pipeline). The latter have parameters of the form <component>__<parameter> so that it’s possible to update each component of a nested object.  Parameters 
+ 
+**paramsdict 
+
+Estimator parameters.    Returns 
+ 
+selfestimator instance 
+
+Estimator instance.     
+ 
+ Examples using sklearn.naive_bayes.BernoulliNB
+ 
+  Hashing feature transformation using Totally Random Trees  
+
+  Classification of text documents using sparse features

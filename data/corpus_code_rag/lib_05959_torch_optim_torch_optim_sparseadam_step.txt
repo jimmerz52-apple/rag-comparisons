@@ -1,0 +1,6 @@
+# torch.optim#torch.optim.SparseAdam.step
+
+step(closure=None) [source]
+ 
+Performs a single optimization step.  Parameters 
+closure (callable, optional) – A closure that reevaluates the model and returns the loss.

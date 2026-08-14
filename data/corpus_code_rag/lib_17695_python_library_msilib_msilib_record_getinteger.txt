@@ -1,0 +1,4 @@
+# python.library.msilib#msilib.Record.GetInteger
+
+Record.GetInteger(field)  
+Return the value of field as an integer where possible. field must be an integer.

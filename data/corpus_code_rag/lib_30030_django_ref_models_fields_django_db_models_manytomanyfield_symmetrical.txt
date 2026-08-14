@@ -1,0 +1,8 @@
+# django.ref.models.fields#django.db.models.ManyToManyField.symmetrical
+
+ManyToManyField.symmetrical  
+Only used in the definition of ManyToManyFields on self. Consider the following model: from django.db import models
+
+class Person(models.Model):
+    friends = models.ManyToManyField("self")
+ When Django processes this model, it identifies that it has a ManyToManyField on itself, and as a result, it doesn’t add a person_set attribute to the Person class. Instead, the ManyToManyField is assumed to be symmetrical – that is, if I am your friend, then you are my friend. If you do not want symmetry in many-to-many relationships with self, set symmetrical to False. This will force Django to add the descriptor for the reverse relationship, allowing ManyToManyField relationships to be non-symmetrical.

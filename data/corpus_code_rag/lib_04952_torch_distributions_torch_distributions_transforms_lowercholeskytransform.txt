@@ -1,0 +1,5 @@
+# torch.distributions#torch.distributions.transforms.LowerCholeskyTransform
+
+class torch.distributions.transforms.LowerCholeskyTransform(cache_size=0) [source]
+ 
+Transform from unconstrained matrices to lower-triangular matrices with nonnegative diagonal entries. This is useful for parameterizing positive definite matrices in terms of their Cholesky factorization.

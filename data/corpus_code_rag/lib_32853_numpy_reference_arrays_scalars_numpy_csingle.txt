@@ -1,0 +1,8 @@
+# numpy.reference.arrays.scalars#numpy.csingle
+
+class numpy.csingle[source]
+ 
+Complex number type composed of two single-precision floating-point numbers.  Character code 
+'F'  Alias 
+numpy.singlecomplex  Alias on this platform (Linux x86_64) 
+numpy.complex64: Complex number type composed of 2 32-bit-precision floating-point numbers.

@@ -1,0 +1,7 @@
+# python.library.zoneinfo#zoneinfo.ZoneInfo
+
+class zoneinfo.ZoneInfo(key)  
+A concrete datetime.tzinfo subclass that represents an IANA time zone specified by the string key. Calls to the primary constructor will always return objects that compare identically; put another way, barring cache invalidation via ZoneInfo.clear_cache(), for all values of key, the following assertion will always be true: a = ZoneInfo(key)
+b = ZoneInfo(key)
+assert a is b
+ key must be in the form of a relative, normalized POSIX path, with no up-level references. The constructor will raise ValueError if a non-conforming key is passed. If no file matching key is found, the constructor will raise ZoneInfoNotFoundError.

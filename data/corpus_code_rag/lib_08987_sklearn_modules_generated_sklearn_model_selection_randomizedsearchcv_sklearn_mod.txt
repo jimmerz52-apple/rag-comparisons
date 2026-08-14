@@ -1,0 +1,11 @@
+# sklearn.modules.generated.sklearn.model_selection.randomizedsearchcv#sklearn.model_selection.RandomizedSearchCV.score_samples
+
+score_samples(X) [source]
+ 
+Call score_samples on the estimator with the best found parameters. Only available if refit=True and the underlying estimator supports score_samples.  New in version 0.24.   Parameters 
+ 
+Xiterable 
+
+Data to predict on. Must fulfill input requirements of the underlying estimator.    Returns 
+ 
+y_scorendarray of shape (n_samples,)

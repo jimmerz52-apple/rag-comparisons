@@ -1,0 +1,15 @@
+# matplotlib._as_gen.mpl_toolkits.axes_grid1.axes_divider.divider#mpl_toolkits.axes_grid1.axes_divider.Divider.locate
+
+locate(nx, ny, nx1=None, ny1=None, axes=None, renderer=None)[source]
+ 
+ Parameters 
+ 
+nx, nx1int
+
+
+Integers specifying the column-position of the cell. When nx1 is None, a single nx-th column is specified. Otherwise location of columns spanning between nx to nx1 (but excluding nx1-th column) is specified.  
+ny, ny1int
+
+
+Same as nx and nx1, but for row positions.  axes
+renderer

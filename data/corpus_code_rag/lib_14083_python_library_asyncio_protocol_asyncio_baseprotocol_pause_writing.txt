@@ -1,0 +1,4 @@
+# python.library.asyncio-protocol#asyncio.BaseProtocol.pause_writing
+
+BaseProtocol.pause_writing()  
+Called when the transport’s buffer goes over the high watermark.

@@ -1,0 +1,16 @@
+# werkzeug.urls.index#werkzeug.urls.url_decode_stream
+
+werkzeug.urls.url_decode_stream(stream, charset='utf-8', decode_keys=None, include_empty=True, errors='replace', separator=b'&', cls=None, limit=None, return_iterator=False)  
+Works like url_decode() but decodes a stream. The behavior of stream and limit follows functions like make_line_iter(). The generator of pairs is directly fed to the cls so you can consume the data while it’s parsed.  Parameters 
+ 
+stream (BinaryIO) – a stream with the encoded querystring 
+charset (str) – the charset of the query string. If set to None no decoding will take place. 
+include_empty (bool) – Set to False if you don’t want empty values to appear in the dict. 
+errors (str) – the decoding error behavior. 
+separator (bytes) – the pair separator to be used, defaults to &
+ 
+cls (Optional[Type[ds.MultiDict]]) – an optional dict class to use. If this is not specified or None the default MultiDict is used. 
+limit (Optional[int]) – the content length of the URL data. Not necessary if a limited stream is provided. 
+decode_keys (None) –  
+return_iterator (bool) –    Return type 
+ds.MultiDict[str, str]    Changed in version 2.0: The decode_keys and return_iterator parameters are deprecated and will be removed in Werkzeug 2.1.   Changelog New in version 0.8.

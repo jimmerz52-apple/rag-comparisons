@@ -1,0 +1,9 @@
+# django.ref.forms.fields#django.forms.ModelChoiceIterator
+
+class ModelChoiceIterator(field)  
+The default class assigned to the iterator attribute of ModelChoiceField and ModelMultipleChoiceField. An iterable that yields 2-tuple choices from the queryset. A single argument is required:  
+field  
+The instance of ModelChoiceField or ModelMultipleChoiceField to iterate and yield choices. 
+ ModelChoiceIterator has the following method:  
+__iter__()  
+Yields 2-tuple choices, in the (value, label) format used by ChoiceField.choices. The first value element is a ModelChoiceIteratorValue instance.

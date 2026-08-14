@@ -1,0 +1,3 @@
+# django.topics.email#django.core.mail.send_mail
+
+send_mail(subject, message, from_email, recipient_list, fail_silently=False, auth_user=None, auth_password=None, connection=None, html_message=None)

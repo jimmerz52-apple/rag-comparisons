@@ -1,0 +1,4 @@
+# python.library.aifc#aifc.aifc.setframerate
+
+aifc.setframerate(rate)  
+Specify the sampling frequency in frames per second.

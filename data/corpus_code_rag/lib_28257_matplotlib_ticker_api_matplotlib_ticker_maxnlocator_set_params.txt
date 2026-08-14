@@ -1,0 +1,30 @@
+# matplotlib.ticker_api#matplotlib.ticker.MaxNLocator.set_params
+
+set_params(**kwargs)[source]
+ 
+Set parameters for this locator.  Parameters 
+ 
+nbinsint or 'auto', optional
+
+
+see MaxNLocator  
+stepsarray-like, optional
+
+
+see MaxNLocator  
+integerbool, optional
+
+
+see MaxNLocator  
+symmetricbool, optional
+
+
+see MaxNLocator  
+prune{'lower', 'upper', 'both', None}, optional
+
+
+see MaxNLocator  
+min_n_ticksint, optional
+
+
+see MaxNLocator

@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.preprocessing.onehotencoder#sklearn.preprocessing.OneHotEncoder.fit
+
+fit(X, y=None) [source]
+ 
+Fit OneHotEncoder to X.  Parameters 
+ 
+Xarray-like, shape [n_samples, n_features] 
+
+The data to determine the categories of each feature.  
+yNone 
+
+Ignored. This parameter exists only for compatibility with Pipeline.    Returns 
+ self

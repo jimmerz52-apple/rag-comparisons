@@ -1,0 +1,9 @@
+# python.library.os#os.CLD_CONTINUED
+
+os.CLD_EXITED  
+os.CLD_KILLED  
+os.CLD_DUMPED  
+os.CLD_TRAPPED  
+os.CLD_STOPPED  
+os.CLD_CONTINUED  
+These are the possible values for si_code in the result returned by waitid(). Availability: Unix.  New in version 3.3.   Changed in version 3.9: Added CLD_KILLED and CLD_STOPPED values.

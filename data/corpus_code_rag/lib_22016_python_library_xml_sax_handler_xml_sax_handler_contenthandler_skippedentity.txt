@@ -1,0 +1,4 @@
+# python.library.xml.sax.handler#xml.sax.handler.ContentHandler.skippedEntity
+
+ContentHandler.skippedEntity(name)  
+Receive notification of a skipped entity. The Parser will invoke this method once for each entity skipped. Non-validating processors may skip entities if they have not seen the declarations (because, for example, the entity was declared in an external DTD subset). All processors may skip external entities, depending on the values of the feature_external_ges and the feature_external_pes properties.

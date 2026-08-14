@@ -1,0 +1,4 @@
+# python.library.xmlrpc.client#xmlrpc.client.Binary.data
+
+data  
+The binary data encapsulated by the Binary instance. The data is provided as a bytes object.

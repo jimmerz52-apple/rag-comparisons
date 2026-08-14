@@ -1,0 +1,4 @@
+# python.library.tkinter.ttk#tkinter.ttk.Style.theme_use
+
+theme_use(themename=None)  
+If themename is not given, returns the theme in use. Otherwise, sets the current theme to themename, refreshes all widgets and emits a <<ThemeChanged>> event.

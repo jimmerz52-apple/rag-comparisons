@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.lines.line2d#matplotlib.lines.Line2D.is_dashed
+
+is_dashed()[source]
+ 
+Return whether line has a dashed linestyle. A custom linestyle is assumed to be dashed, we do not inspect the onoffseq directly. See also set_linestyle.

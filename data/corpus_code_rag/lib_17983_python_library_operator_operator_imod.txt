@@ -1,0 +1,5 @@
+# python.library.operator#operator.imod
+
+operator.imod(a, b)  
+operator.__imod__(a, b)  
+a = imod(a, b) is equivalent to a %= b.

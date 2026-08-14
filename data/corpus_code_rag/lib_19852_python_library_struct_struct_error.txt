@@ -1,0 +1,4 @@
+# python.library.struct#struct.error
+
+exception struct.error  
+Exception raised on various occasions; argument is a string describing what is wrong.

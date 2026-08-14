@@ -1,0 +1,105 @@
+# matplotlib.backend_cairo_api#matplotlib.backends.backend_cairo.RendererCairo
+
+classmatplotlib.backends.backend_cairo.RendererCairo(dpi)[source]
+ 
+Bases: matplotlib.backend_bases.RendererBase   draw_image(gc, x, y, im)[source]
+ 
+Draw an RGBA image.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+A graphics context with clipping information.  
+xscalar
+
+
+The distance in physical units (i.e., dots or pixels) from the left hand side of the canvas.  
+yscalar
+
+
+The distance in physical units (i.e., dots or pixels) from the bottom side of the canvas.  
+im(N, M, 4) array-like of np.uint8
+
+
+An array of RGBA pixels.  
+transformmatplotlib.transforms.Affine2DBase
+
+
+If and only if the concrete backend is written such that option_scale_image() returns True, an affine transformation (i.e., an Affine2DBase) may be passed to draw_image(). The translation vector of the transformation is given in physical units (i.e., dots or pixels). Note that the transformation does not override x and y, and has to be applied before translating the result by x and y (this can be accomplished by adding x and y to the translation vector defined by transform).     
+   draw_markers(gc, marker_path, marker_trans, path, transform, rgbFace=None)[source]
+ 
+Draw a marker at each of path's vertices (excluding control points). This provides a fallback implementation of draw_markers that makes multiple calls to draw_path(). Some backends may want to override this method in order to draw the marker only once and reuse it multiple times.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+marker_transmatplotlib.transforms.Transform
+
+
+An affine transform applied to the marker.  
+transmatplotlib.transforms.Transform
+
+
+An affine transform applied to the path.     
+   draw_path(gc, path, transform, rgbFace=None)[source]
+ 
+Draw a Path instance using the given affine transform. 
+   draw_text(gc, x, y, s, prop, angle, ismath=False, mtext=None)[source]
+ 
+Draw the text instance.  Parameters 
+ 
+gcGraphicsContextBase
+
+
+The graphics context.  
+xfloat
+
+
+The x location of the text in display coords.  
+yfloat
+
+
+The y location of the text baseline in display coords.  
+sstr
+
+
+The text string.  
+propmatplotlib.font_manager.FontProperties
+
+
+The font properties.  
+anglefloat
+
+
+The rotation angle in degrees anti-clockwise.  
+mtextmatplotlib.text.Text
+
+
+The original text object to be rendered.     Notes Note for backend implementers: When you are trying to determine if you have gotten your bounding box right (which is what enables the text layout/alignment to work properly), it helps to change the line in text.py: if 0: bbox_artist(self, renderer)
+ to if 1, and then the actual bounding box will be plotted along with your text. 
+   get_canvas_width_height()[source]
+ 
+Return the canvas width and height in display coords. 
+   get_text_width_height_descent(s, prop, ismath)[source]
+ 
+Get the width, height, and descent (offset from the bottom to the baseline), in display coords, of the string s with FontProperties prop. 
+   propertymathtext_parser[source]
+
+   new_gc()[source]
+ 
+Return an instance of a GraphicsContextBase. 
+   points_to_pixels(points)[source]
+ 
+Convert points to display units. You need to override this function (unless your backend doesn't have a dpi, e.g., postscript or svg). Some imaging systems assume some value for pixels per inch: points to pixels = points * pixels_per_inch/72 * dpi/72
+  Parameters 
+ 
+pointsfloat or array-like
+
+
+a float or a numpy array of float    Returns 
+ Points converted to pixels
+   
+   set_ctx_from_surface(surface)[source]
+
+   set_width_height(width, height)[source]

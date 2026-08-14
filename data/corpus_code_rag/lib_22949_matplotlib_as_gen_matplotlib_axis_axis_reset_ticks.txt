@@ -1,0 +1,5 @@
+# matplotlib._as_gen.matplotlib.axis.axis.reset_ticks
+
+matplotlib.axis.Axis.reset_ticks   Axis.reset_ticks()[source]
+ 
+Re-initialize the major and minor Tick lists. Each list starts with a single fresh Tick.

@@ -1,0 +1,5 @@
+# pandas.reference.api.pandas.interval.closed
+
+pandas.Interval.closed   Interval.closed
+ 
+Whether the interval is closed on the left-side, right-side, both or neither.

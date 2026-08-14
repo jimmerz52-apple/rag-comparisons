@@ -1,0 +1,5 @@
+# matplotlib.collections_api#matplotlib.collections.EventCollection.set_linelength
+
+set_linelength(linelength)[source]
+ 
+Set the length of the lines used to mark each event.

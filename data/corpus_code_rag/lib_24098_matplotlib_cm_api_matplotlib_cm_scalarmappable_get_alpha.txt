@@ -1,0 +1,8 @@
+# matplotlib.cm_api#matplotlib.cm.ScalarMappable.get_alpha
+
+get_alpha()[source]
+ 
+ Returns 
+ float
+
+Always returns 1.

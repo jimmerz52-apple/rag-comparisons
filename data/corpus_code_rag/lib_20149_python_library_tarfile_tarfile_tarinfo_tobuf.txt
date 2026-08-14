@@ -1,0 +1,4 @@
+# python.library.tarfile#tarfile.TarInfo.tobuf
+
+TarInfo.tobuf(format=DEFAULT_FORMAT, encoding=ENCODING, errors='surrogateescape')  
+Create a string buffer from a TarInfo object. For information on the arguments see the constructor of the TarFile class.  Changed in version 3.2: Use 'surrogateescape' as the default for the errors argument.

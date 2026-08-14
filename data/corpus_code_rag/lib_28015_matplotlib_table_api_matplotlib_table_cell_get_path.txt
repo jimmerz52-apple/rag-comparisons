@@ -1,0 +1,5 @@
+# matplotlib.table_api#matplotlib.table.Cell.get_path
+
+get_path()[source]
+ 
+Return a Path for the visible_edges.

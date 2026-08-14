@@ -1,0 +1,4 @@
+# python.library.decimal#decimal.Decimal.is_nan
+
+is_nan()  
+Return True if the argument is a (quiet or signaling) NaN and False otherwise.

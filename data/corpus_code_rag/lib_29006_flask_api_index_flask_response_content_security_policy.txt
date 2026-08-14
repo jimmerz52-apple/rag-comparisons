@@ -1,0 +1,4 @@
+# flask.api.index#flask.Response.content_security_policy
+
+content_security_policy  
+The Content-Security-Policy header adds an additional layer of security to help detect and mitigate certain types of attacks.

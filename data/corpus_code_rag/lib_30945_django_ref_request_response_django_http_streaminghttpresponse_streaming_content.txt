@@ -1,0 +1,4 @@
+# django.ref.request-response#django.http.StreamingHttpResponse.streaming_content
+
+StreamingHttpResponse.streaming_content  
+An iterator of the response content, bytestring encoded according to HttpResponse.charset.

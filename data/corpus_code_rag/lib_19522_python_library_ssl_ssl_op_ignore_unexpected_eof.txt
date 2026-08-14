@@ -1,0 +1,4 @@
+# python.library.ssl#ssl.OP_IGNORE_UNEXPECTED_EOF
+
+ssl.OP_IGNORE_UNEXPECTED_EOF  
+Ignore unexpected shutdown of TLS connections. This option is only available with OpenSSL 3.0.0 and later.  New in version 3.10.

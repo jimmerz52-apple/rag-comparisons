@@ -1,0 +1,13 @@
+# sklearn.modules.generated.sklearn.decomposition.latentdirichletallocation#sklearn.decomposition.LatentDirichletAllocation.transform
+
+transform(X) [source]
+ 
+Transform data X according to the fitted model.  Changed in version 0.18: doc_topic_distr is now normalized   Parameters 
+ 
+X{array-like, sparse matrix} of shape (n_samples, n_features) 
+
+Document word matrix.    Returns 
+ 
+doc_topic_distrndarray of shape (n_samples, n_components) 
+
+Document topic distribution for X.

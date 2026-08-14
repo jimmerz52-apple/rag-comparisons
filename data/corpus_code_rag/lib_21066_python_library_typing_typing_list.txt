@@ -1,0 +1,11 @@
+# python.library.typing#typing.List
+
+class typing.List(list, MutableSequence[T])  
+Generic version of list. Useful for annotating return types. To annotate arguments it is preferred to use an abstract collection type such as Sequence or Iterable. This type may be used as follows: T = TypeVar('T', int, float)
+
+def vec2(x: T, y: T) -> List[T]:
+    return [x, y]
+
+def keep_positives(vector: Sequence[T]) -> List[T]:
+    return [item for item in vector if item > 0]
+  Deprecated since version 3.9: builtins.list now supports []. See PEP 585 and Generic Alias Type.

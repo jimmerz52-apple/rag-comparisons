@@ -1,0 +1,5 @@
+# matplotlib._as_gen.mpl_toolkits.mplot3d.art3d.juggle_axes
+
+mpl_toolkits.mplot3d.art3d.juggle_axes   mpl_toolkits.mplot3d.art3d.juggle_axes(xs, ys, zs, zdir)[source]
+ 
+Reorder coordinates so that 2D xs, ys can be plotted in the plane orthogonal to zdir. zdir is normally x, y or z. However, if zdir starts with a '-' it is interpreted as a compensation for rotate_axes.

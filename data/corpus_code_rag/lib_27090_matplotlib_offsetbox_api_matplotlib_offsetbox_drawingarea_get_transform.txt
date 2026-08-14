@@ -1,0 +1,5 @@
+# matplotlib.offsetbox_api#matplotlib.offsetbox.DrawingArea.get_transform
+
+get_transform()[source]
+ 
+Return the Transform applied to the children.

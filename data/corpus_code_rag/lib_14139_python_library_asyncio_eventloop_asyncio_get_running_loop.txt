@@ -1,0 +1,4 @@
+# python.library.asyncio-eventloop#asyncio.get_running_loop
+
+asyncio.get_running_loop()  
+Return the running event loop in the current OS thread. If there is no running event loop a RuntimeError is raised. This function can only be called from a coroutine or a callback.  New in version 3.7.
